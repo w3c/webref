@@ -487,7 +487,7 @@
               "html": "<p>Append <var>group</var> to <var>parentGroup</var>.</p>"
             },
             {
-              "html": "<p>When setting the animation keyframes given <var>transform</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#adjust-the-nested-group-transform\" id=\"ref-for-adjust-the-nested-group-transform\">adjust the nested group transform</a> to <var>transform</var>, given <var>groupContainerElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-transform\" id=\"ref-for-captured-element-old-transform\">old transform</a>, <var>groupContainerElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-width\" id=\"ref-for-captured-element-old-width\">old width</a>, <var>groupContainerElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-height\" id=\"ref-for-captured-element-old-height\">old height</a>, and <var>groupContainerElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-old-box-properties\" id=\"ref-for-captured-element-old-box-properties\">old box properties</a>.</p>"
+              "html": "<p>When setting the animation keyframes given <var>transform</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#multiply\" id=\"ref-for-multiply\">multiply</a> <var>transform</var> by the inverse matrix of <var>groupContainerElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-transform\" id=\"ref-for-captured-element-old-transform\">old transform</a>.</p>"
             }
           ]
         }
@@ -495,7 +495,7 @@
     },
     {
       "name": "additional pseudo-element style update steps (group)",
-      "html": "When <a href=\"https://drafts.csswg.org/css-view-transitions-1/#style-transition-pseudo-elements-algorithm\">updating the style of the transition pseudo-element</a>, perform the following steps before setting the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-group-styles-rule\" id=\"ref-for-captured-element-group-styles-rule\">group styles rule</a>, given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element\" id=\"ref-for-captured-element⑦\">captured element</a> <var>capturedElement</var>, a <var>transform</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition②③\">ViewTransition</a></code> <var>transition</var>:",
+      "html": "When <a href=\"https://drafts.csswg.org/css-view-transitions-1/#style-transition-pseudo-elements-algorithm\">updating the style of the transition pseudo-element</a>, perform the following steps before setting the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-group-styles-rule\" id=\"ref-for-captured-element-group-styles-rule\">group styles rule</a>, given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element\" id=\"ref-for-captured-element⑦\">captured element</a> <var>capturedElement</var>, given a <var>transform</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition②③\">ViewTransition</a></code> <var>transition</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -506,110 +506,12 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>groupContainerElement</var> be <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-named-elements\" id=\"ref-for-viewtransition-named-elements④\">named elements</a>[<var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-containing-group-name\" id=\"ref-for-captured-element-containing-group-name④\">containing group name</a>.</p>"
+              "html": "<p>Let <var>groupContainerElement</var> be <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-named-elements\" id=\"ref-for-viewtransition-named-elements④\">named elements</a>[<var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-containing-group-name\" id=\"ref-for-captured-element-containing-group-name④\">containing group name</a>].</p>"
             },
             {
-              "html": "<p>Let <var>containerRect</var> be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#snapshot-containing-block\" id=\"ref-for-snapshot-containing-block①\">snapshot containing block</a> if <var>capturedElement</var> is the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#document-element\" id=\"ref-for-document-element④\">document element</a>,\notherwise, <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-box\" id=\"ref-for-border-box\">border box</a>.</p>"
-            },
-            {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#adjust-the-nested-group-transform\" id=\"ref-for-adjust-the-nested-group-transform①\">Adjust the nested group transform</a> to <var>transform</var>, given <var>groupContainerElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-transform-from-snapshot-containing-block\" id=\"ref-for-captured-element-transform-from-snapshot-containing-block①\">transform from snapshot containing block</a>, <var>containerRect</var>’s width, <var>containerRect</var>’s height, and <var>groupContainerElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-new-box-properties\" id=\"ref-for-captured-element-new-box-properties\">new box properties</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#multiply\" id=\"ref-for-multiply①\">Multiply</a> <var>transform</var> by the inverse matrix of <var>groupContainerElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-transform-from-snapshot-containing-block\" id=\"ref-for-captured-element-transform-from-snapshot-containing-block①\">transform from snapshot containing block</a>.</p>"
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "compute layered capture style",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#layered-capture-style",
-      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"layered-capture-style\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">layered capture style</dfn> of an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element⑥\">Element</a></code> <var>element</var>:",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>Let <var>propertiesToCapture</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> corresponding to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#layered-capture-properties\" id=\"ref-for-layered-capture-properties\">layered capture properties</a>,</p>"
-        },
-        {
-          "html": ""
-        },
-        {
-          "html": "<p>Let <var>styles</var> be a « ».</p>"
-        },
-        {
-          "html": "<p>For each <var>property</var> in <var>propertiesToCapture</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">append</a> the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate\">concatentation</a> of « <var>property</var>, <code>\":\"</code>, <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑦\">computed value</a> of <var>property</var>, <code>\";\"</code> » to <var>styles</var>.</p>"
-        },
-        {
-          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate①\">concatentation</a> of <var>styles</var>.</p>"
-        }
-      ]
-    },
-    {
-      "name": "additional old capture steps (layered)",
-      "html": "When <a href=\"https://drafts.csswg.org/css-view-transitions-1/#capture-new-state-algorithm\">capturing the old state for an element</a>, perform the following steps given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element\" id=\"ref-for-captured-element⑧\">captured element</a> <var>capturedElement</var> and an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css2/#element\" id=\"ref-for-element⑧\">element</a> <var>element</var>:",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>Set <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-old-layered-capture-style\" id=\"ref-for-captured-element-old-layered-capture-style\">old layered-capture style</a> to <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#layered-capture-style\" id=\"ref-for-layered-capture-style\">layered capture style</a>.</p>"
-        },
-        {
-          "html": "<p>Set <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-old-box-properties\" id=\"ref-for-captured-element-old-box-properties①\">old box properties</a> to <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#layered-capture-geometry\" id=\"ref-for-layered-capture-geometry\">layered capture geometry</a>.</p>"
-        },
-        {
-          "html": "<p>Set <var>capturedElement</var>’s (<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-width\" id=\"ref-for-captured-element-old-width①\">old width</a>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-height\" id=\"ref-for-captured-element-old-height①\">old height</a> to <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#default-group-size\" id=\"ref-for-default-group-size\">default group size</a>.</p>"
-        }
-      ]
-    },
-    {
-      "html": "When capturing an element into a snapshot, only the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#element-contents\" id=\"ref-for-element-contents\">element contents</a> are painted, without the element’s effects and box decorations.\nSpecifically, the element’s <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-backgrounds-3/#propdef-background\" id=\"ref-for-propdef-background①\">background</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-backgrounds-3/#propdef-border\" id=\"ref-for-propdef-border\">border</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-backgrounds-3/#propdef-border-image\" id=\"ref-for-propdef-border-image①\">border-image</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-box-shadow\" id=\"ref-for-propdef-box-shadow②\">box-shadow</a>, and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-ui-4/#propdef-outline\" id=\"ref-for-propdef-outline①\">outline</a> are not painted, and its <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-radius\" id=\"ref-for-propdef-border-radius②\">border-radius</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.fxtf.org/css-masking-1/#propdef-clip-path\" id=\"ref-for-propdef-clip-path③\">clip-path</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.fxtf.org/filter-effects-1/#propdef-filter\" id=\"ref-for-propdef-filter④\">filter</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.fxtf.org/css-masking-1/#propdef-mask\" id=\"ref-for-propdef-mask②\">mask</a>, and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-color-4/#propdef-opacity\" id=\"ref-for-propdef-opacity③\">opacity</a> are not applied.",
-      "rationale": "multiply",
-      "steps": [
-        {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#multiply\" id=\"ref-for-multiply\">Multiply</a> <var>transform</var> with the inverse matrix of <var>parentTransform</var>.</p>"
-        },
-        {
-          "html": "<p>Let (left, top) be the border edge based on <var>boxProperties</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#layered-box-properties-padding-box\" id=\"ref-for-layered-box-properties-padding-box①\">padding box</a> inside (<var>borderBoxWidth</var>, <var>borderBoxHeight</var>).</p>"
-        },
-        {
-          "html": "<p>Translate <var>transform</var> by (-left, -top).</p>"
-        }
-      ]
-    },
-    {
-      "name": "additional pseudo-element setup steps (layered capture keyframes)",
-      "html": "When <a href=\"https://drafts.csswg.org/css-view-transitions-1/#setup-transition-pseudo-elements-algorithm\">setting up the transition pseudo-element</a> for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element\" id=\"ref-for-captured-element⑨\">captured element</a> <var>capturedElement</var>, given a <var>transitionName</var>:",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>Let <var>keyframesName</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate②\">concatentation</a> of « <code>-ua-view-transition-group-anim-</code>, <var>transitionName</var> »</p>"
-        },
-        {
-          "html": "<p>Append <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-old-layered-capture-style\" id=\"ref-for-captured-element-old-layered-capture-style①\">old layered-capture style</a> to the constructed rule for <var>keyframesName</var>.</p>"
-        }
-      ]
-    },
-    {
-      "name": "additional pseudo-element style update steps (layered capture new state)",
-      "html": "When <a href=\"https://drafts.csswg.org/css-view-transitions-1/#style-transition-pseudo-elements-algorithm\">updating the style of the transition pseudo-element</a>, perform the following steps before setting the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-group-styles-rule\" id=\"ref-for-captured-element-group-styles-rule①\">group styles rule</a>, given a <var>transitionName</var>, a <var>capturedElement</var>, <var>width</var>, <var>height</var>, and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element⑨\">Element</a></code> <var>element</var>:",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>Let <var>style</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#layered-capture-style\" id=\"ref-for-layered-capture-style①\">layered capture style</a>.</p>"
-        },
-        {
-          "html": "<p>Set <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-new-box-properties\" id=\"ref-for-captured-element-new-box-properties①\">new box properties</a> to <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#layered-capture-properties\" id=\"ref-for-layered-capture-properties①\">layered capture properties</a>.</p>"
-        },
-        {
-          "html": "<p>Set (<var>width</var>, <var>height</var>) to the <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#default-group-size\" id=\"ref-for-default-group-size①\">default group size</a>.</p>"
-        },
-        {
-          "html": "<p>Append the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate③\">concatentation</a> of « <code>\"::view-transition-group(\"</code>, <var>transitionName</var>, <code>\") {\"</code>, <var>style</var> , <code>\"}\"</code> » to the constructed user-agent stylesheet.</p>"
-        },
-        {
-          "html": "<p>Let (<var>oldContentWidth</var>, <var>oldContentHeight</var>) be (<var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-width\" id=\"ref-for-captured-element-old-width②\">old width</a>, <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-height\" id=\"ref-for-captured-element-old-height②\">old height</a>) if <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-old-box-properties\" id=\"ref-for-captured-element-old-box-properties②\">old box properties</a> is null, otherwise <var>capturedElement</var>’s <span id=\"ref-for-captured-element-old-box-properties③\">old box properties</span>'s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#layered-box-properties-content-box\" id=\"ref-for-layered-box-properties-content-box①\">content box</a>'s size.</p>"
-        },
-        {
-          "html": "<p>Let (<var>newContentWidth</var>, <var>newContentHeight</var>) be (<var>width</var>, <var>height</var>) if <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-new-box-properties\" id=\"ref-for-captured-element-new-box-properties②\">new box properties</a> is null, otherwise <var>capturedElement</var>’s <span id=\"ref-for-captured-element-new-box-properties③\">new box properties</span>'s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#layered-box-properties-content-box\" id=\"ref-for-layered-box-properties-content-box②\">content box</a>'s size.</p>"
-        },
-        {
-          "html": "<p>Append the next string (with replaced variables) to the user agent stylesheet:</p>\n<pre class=\"highlight\"><c- n=\"\">@keyframes</c-> -ua-view-transition-content-geometry-<var>transitionName</var> <c- p=\"\">{</c->\n  from <c- p=\"\">{</c->\n    <c- k=\"\">width</c-><c- p=\"\">:</c-> <var>oldContentWidth</var><c- p=\"\">;</c->\n    <c- k=\"\">height</c-><c- p=\"\">:</c-> <var>oldContentHeight</var><c- p=\"\">;</c->\n  <c- p=\"\">}</c->\n<c- p=\"\">}</c->\n\n:root:<c- nf=\"\">:view-transition-image-pair</c-><c- p=\"\">(</c-><var>transitionName</var><c- p=\"\">)</c-> <c- p=\"\">{</c->\n  <c- k=\"\">position</c-><c- p=\"\">:</c-> relative<c- p=\"\">;</c->\n  <c- k=\"\">inset</c-><c- p=\"\">:</c-> unset<c- p=\"\">;</c->\n  <c- k=\"\">width</c-><c- p=\"\">:</c-> <var>newContentWidth</var><c- p=\"\">;</c->\n  <c- k=\"\">height</c-><c- p=\"\">:</c-> <var>newContentHeight</var><c- p=\"\">;</c->\n  <c- k=\"\">animation-name</c-><c- p=\"\">:</c-> -ua-view-transition-<var>transitionName</var><c- p=\"\">;</c->\n  <c- k=\"\">animation-direction</c-><c- p=\"\">:</c-> inherit<c- p=\"\">;</c->\n  <c- k=\"\">animation-timing-function</c-><c- p=\"\">:</c-> inherit<c- p=\"\">;</c->\n  <c- k=\"\">animation-iteration-count</c-><c- p=\"\">:</c-> inherit<c- p=\"\">;</c->\n  <c- k=\"\">animation-duration</c-><c- p=\"\">:</c-> inherit<c- p=\"\">;</c->\n<c- p=\"\">}</c->\n</pre>"
         }
       ]
     }
