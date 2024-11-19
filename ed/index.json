@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-11-19T00:56:54.470Z",
+  "date": "2024-11-19T06:43:00.138Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -675,7 +675,7 @@
   },
   "stats": {
     "crawled": 644,
-    "errors": 1
+    "errors": 2
   },
   "crawler": "reffy-17.2.10",
   "results": [
@@ -1324,9 +1324,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 18 Nov 2024 23:24:36 GMT"
+        "lastModified": "Tue, 19 Nov 2024 00:58:06 GMT"
       },
-      "date": "18 November 2024",
+      "date": "19 November 2024",
       "algorithms": "algorithms/no-vary-search.json",
       "links": "links/no-vary-search.json",
       "refs": "refs/no-vary-search.json",
@@ -1372,9 +1372,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 18 Nov 2024 23:24:36 GMT"
+        "lastModified": "Tue, 19 Nov 2024 00:58:06 GMT"
       },
-      "date": "18 November 2024",
+      "date": "19 November 2024",
       "algorithms": "algorithms/rfc6265bis.json",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
@@ -4622,7 +4622,8 @@
       },
       "date": "31 October 2024",
       "links": "links/EXT_color_buffer_half_float.json",
-      "idl": "idl/EXT_color_buffer_half_float.idl"
+      "idl": "idl/EXT_color_buffer_half_float.idl",
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_color_buffer_half_float/ triggered HTTP status 521\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:352:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
