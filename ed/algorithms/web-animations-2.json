@@ -646,8 +646,8 @@
       ]
     },
     {
-      "name": "calculate animation progress",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-progress\" id=\"ref-for-animation-progress\">progress</a> of an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation②\">animation</a>, <var>animation</var>, is calculated as follows:",
+      "name": "calculate animation overall progress",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-overallprogress\" id=\"ref-for-animation-overallprogress\">overallProgress</a> of an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation②\">animation</a>, <var>animation</var>, is calculated as follows:",
       "rationale": ".switch",
       "steps": [
         {
@@ -655,19 +655,19 @@
           "steps": [
             {
               "case": "If any of the following are true: animation does not have an associated effect, or animation’s current time is an unresolved time value,",
-              "html": "<p><var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-progress\" id=\"ref-for-animation-progress①\">progress</a> is null.</p>"
+              "html": "<p><var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-overallprogress\" id=\"ref-for-animation-overallprogress①\">overallProgress</a> is null.</p>"
             },
             {
               "case": "If animation’s associated effect end is zero,",
-              "html": "<dl>\n       <dt data-md=\"\">If <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time①⑥\">current time</a> is negative,\n       </dt><dd data-md=\"\">\n        <p><var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-progress\" id=\"ref-for-animation-progress②\">progress</a> is zero.</p>\n       </dd><dt data-md=\"\">Otherwise,\n       </dt><dd data-md=\"\">\n        <p><var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-progress\" id=\"ref-for-animation-progress③\">progress</a> is one.</p>\n      </dd></dl>"
+              "html": "<dl>\n       <dt data-md=\"\">If <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time①⑥\">current time</a> is negative,\n       </dt><dd data-md=\"\">\n        <p><var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-overallprogress\" id=\"ref-for-animation-overallprogress②\">overallProgress</a> is zero.</p>\n       </dd><dt data-md=\"\">Otherwise,\n       </dt><dd data-md=\"\">\n        <p><var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-overallprogress\" id=\"ref-for-animation-overallprogress③\">overallProgress</a> is one.</p>\n      </dd></dl>"
             },
             {
               "case": "If animation’s associated effect end is infinite,",
-              "html": "<p><var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-progress\" id=\"ref-for-animation-progress④\">progress</a> is zero.</p>"
+              "html": "<p><var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-overallprogress\" id=\"ref-for-animation-overallprogress④\">overallProgress</a> is zero.</p>"
             },
             {
               "case": "Otherwise,",
-              "html": "<blockquote> <code><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-progress\" id=\"ref-for-animation-progress⑤\">progress</a> = min(max(<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time①⑦\">current time</a> / <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end①①\">associated effect end</a>, 0), 1) </code> </blockquote>"
+              "html": "<blockquote> <code><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-overallprogress\" id=\"ref-for-animation-overallprogress⑤\">overallProgress</a> = min(max(<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time①⑦\">current time</a> / <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end①①\">associated effect end</a>, 0), 1) </code> </blockquote>"
             }
           ]
         }
@@ -1151,11 +1151,11 @@
     {
       "name": "KeyframeEffect/KeyframeEffect(target, keyframes, options)",
       "href": "https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-keyframeeffect",
-      "html": "Amend step 5 of the procedure to create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-keyframeeffect\" id=\"ref-for-dom-keyframeeffect-keyframeeffect①\">KeyframeEffect</a></code> object as\nfollows:",
+      "html": "Amend step 5 of the procedure to create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-keyframeeffect-source\" id=\"ref-for-dom-keyframeeffect-keyframeeffect-source②\">KeyframeEffect</a></code> object as\nfollows:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>options</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-keyframeeffectoptions\" id=\"ref-for-dictdef-keyframeeffectoptions\">KeyframeEffectOptions</a></code> object,\nassign the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-iterationcomposite\" id=\"ref-for-dom-keyframeeffect-iterationcomposite①\">iterationComposite</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-composite\" id=\"ref-for-dom-keyframeeffect-composite\">composite</a></code>, properties of <var>effect</var> to the\ncorresponding value from <var>options</var>.</p>\n        <p>When assigning these properties, the error-handling defined for the\ncorresponding setters on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-keyframeeffect-source\" id=\"ref-for-dom-keyframeeffect-keyframeeffect-source①\">KeyframeEffect</a></code> interface is applied.\nIf any of those setters require an exception to be thrown\nfor the values specified by <var>options</var>, this procedure must <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①①\">throw</a> the same exception and abort all further steps.</p>"
+          "html": "<p>If <var>options</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-keyframeeffectoptions\" id=\"ref-for-dictdef-keyframeeffectoptions\">KeyframeEffectOptions</a></code> object,\nassign the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-iterationcomposite\" id=\"ref-for-dom-keyframeeffect-iterationcomposite①\">iterationComposite</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-composite\" id=\"ref-for-dom-keyframeeffect-composite\">composite</a></code>, properties of <var>effect</var> to the\ncorresponding value from <var>options</var>.</p>\n        <p>When assigning these properties, the error-handling defined for the\ncorresponding setters on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-keyframeeffect-source\" id=\"ref-for-dom-keyframeeffect-keyframeeffect-source③\">KeyframeEffect</a></code> interface is applied.\nIf any of those setters require an exception to be thrown\nfor the values specified by <var>options</var>, this procedure must <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①①\">throw</a> the same exception and abort all further steps.</p>"
         }
       ]
     }
