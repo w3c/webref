@@ -75,6 +75,9 @@
           "html": "If <var>node</var> is null, this method must behave identically\n            as <code>removeAllRanges()</code> and abort these steps."
         },
         {
+          "html": "If <var>node</var> is a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DocumentType\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"documenttype\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#documenttype\"><code>DocumentType</code></a>, throw an\n                <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"InvalidNodeTypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidnodetypeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidnodetypeerror\"><code>InvalidNodeTypeError</code></a> exception and abort these steps."
+        },
+        {
           "html": "The method must throw an <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"IndexSizeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"indexsizeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#indexsizeerror\"><code>IndexSizeError</code></a> exception if <var>\n              offset</var> is longer than <var>node</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Node\" data-xref-for=\"Node\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-node-length\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-length\">length</a> and\n              abort these steps."
         },
         {
@@ -161,6 +164,9 @@
       "html": "The method must follow these steps:",
       "rationale": "if",
       "steps": [
+        {
+          "html": "If <var>node</var> is a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DocumentType\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"documenttype\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#documenttype\"><code>DocumentType</code></a>, throw an\n                <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"InvalidNodeTypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidnodetypeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidnodetypeerror\"><code>InvalidNodeTypeError</code></a> exception and abort these steps."
+        },
         {
           "html": "If <var>node</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"tree\" data-xref-for=\"tree\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-tree-root\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\">root</a> is not the <a data-cite=\"dom#document\" data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\">document</a>\n            associated with <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>, abort these steps."
         },

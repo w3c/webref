@@ -1281,10 +1281,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dictdef-identityprovidertoken",
-      "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identityprovidertoken",
+      "id": "dictdef-identityassertionresponse",
+      "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identityassertionresponse",
       "linkingText": [
-        "IdentityProviderToken"
+        "IdentityAssertionResponse"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -1471,6 +1471,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "show-a-continuation-dialog",
+      "href": "https://w3c-fedid.github.io/FedCM/#show-a-continuation-dialog",
+      "linkingText": [
+        "show a continuation dialog"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "helper-algorithms",
+        "href": "https://w3c-fedid.github.io/FedCM/#helper-algorithms",
+        "title": "Helper algorithms",
+        "number": "2.2.9"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "fetch-the-config-file-and-show-an-idp-login-dialog",
       "href": "https://w3c-fedid.github.io/FedCM/#fetch-the-config-file-and-show-an-idp-login-dialog",
       "linkingText": [
@@ -1593,6 +1612,46 @@
       "definedIn": "pre"
     },
     {
+      "id": "dictdef-identityresolveoptions",
+      "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identityresolveoptions",
+      "linkingText": [
+        "IdentityResolveOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-identity-provider-interface",
+        "href": "https://w3c-fedid.github.io/FedCM/#browser-api-identity-provider-interface",
+        "title": "The IdentityProvider Interface",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityresolveoptions-accountid",
+      "href": "https://w3c-fedid.github.io/FedCM/#dom-identityresolveoptions-accountid",
+      "linkingText": [
+        "accountId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityResolveOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-identity-provider-interface",
+        "href": "https://w3c-fedid.github.io/FedCM/#browser-api-identity-provider-interface",
+        "title": "The IdentityProvider Interface",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "identityprovider",
       "href": "https://w3c-fedid.github.io/FedCM/#identityprovider",
       "linkingText": [
@@ -1621,6 +1680,72 @@
       "type": "method",
       "for": [
         "IdentityProvider"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-identity-provider-interface",
+        "href": "https://w3c-fedid.github.io/FedCM/#browser-api-identity-provider-interface",
+        "title": "The IdentityProvider Interface",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityprovider-resolve",
+      "href": "https://w3c-fedid.github.io/FedCM/#dom-identityprovider-resolve",
+      "linkingText": [
+        "resolve(token, options)",
+        "resolve(token)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IdentityProvider"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-identity-provider-interface",
+        "href": "https://w3c-fedid.github.io/FedCM/#browser-api-identity-provider-interface",
+        "title": "The IdentityProvider Interface",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityprovider-resolve-token-options-token",
+      "href": "https://w3c-fedid.github.io/FedCM/#dom-identityprovider-resolve-token-options-token",
+      "linkingText": [
+        "token"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IdentityProvider/resolve(token, options)",
+        "IdentityProvider/resolve(token)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-identity-provider-interface",
+        "href": "https://w3c-fedid.github.io/FedCM/#browser-api-identity-provider-interface",
+        "title": "The IdentityProvider Interface",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityprovider-resolve-token-options-options",
+      "href": "https://w3c-fedid.github.io/FedCM/#dom-identityprovider-resolve-token-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IdentityProvider/resolve(token, options)",
+        "IdentityProvider/resolve(token)"
       ],
       "access": "public",
       "informative": false,
@@ -2335,15 +2460,36 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-identityprovidertoken-token",
-      "href": "https://w3c-fedid.github.io/FedCM/#dom-identityprovidertoken-token",
+      "id": "dom-identityassertionresponse-token",
+      "href": "https://w3c-fedid.github.io/FedCM/#dom-identityassertionresponse-token",
       "linkingText": [
         "token"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "IdentityProviderToken"
+        "IdentityAssertionResponse"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-id-assertion-endpoint",
+        "href": "https://w3c-fedid.github.io/FedCM/#idp-api-id-assertion-endpoint",
+        "title": "Identity assertion endpoint",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityassertionresponse-continue_on",
+      "href": "https://w3c-fedid.github.io/FedCM/#dom-identityassertionresponse-continue_on",
+      "linkingText": [
+        "continue_on"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityAssertionResponse"
       ],
       "access": "public",
       "informative": false,

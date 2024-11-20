@@ -791,7 +791,7 @@
       ],
       "Animation": [
         {
-          "fragment": "[Exposed=Window]\npartial interface Animation {\n    attribute CSSNumberish?       startTime;\n    attribute CSSNumberish?       currentTime;\n    readonly attribute double? progress;\n};",
+          "fragment": "[Exposed=Window]\npartial interface Animation {\n    attribute CSSNumberish?       startTime;\n    attribute CSSNumberish?       currentTime;\n    readonly attribute double? overallProgress;\n};",
           "type": "interface",
           "name": "Animation",
           "inheritance": null,
@@ -830,7 +830,7 @@
             },
             {
               "type": "attribute",
-              "name": "progress",
+              "name": "overallProgress",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
@@ -842,7 +842,7 @@
               "extAttrs": [],
               "special": "",
               "readonly": true,
-              "href": "https://drafts.csswg.org/web-animations-2/#dom-animation-progress"
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-animation-overallprogress"
             }
           ],
           "extAttrs": [

@@ -1036,7 +1036,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#gpu"
       },
       "GPURequestAdapterOptions": {
-        "fragment": "dictionary GPURequestAdapterOptions {\n    DOMString featureLevel = \"core\";\n    GPUPowerPreference powerPreference;\n    boolean forceFallbackAdapter = false;\n};",
+        "fragment": "dictionary GPURequestAdapterOptions {\n    DOMString featureLevel = \"core\";\n    GPUPowerPreference powerPreference;\n    boolean forceFallbackAdapter = false;\n    boolean xrCompatible = false;\n};",
         "type": "dictionary",
         "name": "GPURequestAdapterOptions",
         "inheritance": null,
@@ -1094,6 +1094,25 @@
             },
             "required": false,
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpurequestadapteroptions-forcefallbackadapter"
+          },
+          {
+            "type": "field",
+            "name": "xrCompatible",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpurequestadapteroptions-xrcompatible"
           }
         ],
         "extAttrs": [],

@@ -106,16 +106,26 @@
         },
         {
           "html": "If <var>editContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/edit-context/#dfn-is-composing\" class=\"internalDFN\" id=\"ref-for-dfn-is-composing-7\">is composing</a> is true, then:",
-          "ignored": [
-            "Let insertionStart be replacementRangeStart.",
-            "Let insertionEnd be replacementRangeEnd."
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>insertionStart</var> be <var>replacementRangeStart</var>."
+            },
+            {
+              "html": "Let <var>insertionEnd</var> be <var>replacementRangeEnd</var>."
+            }
           ]
         },
         {
           "html": "Otherwise:",
-          "ignored": [
-            "Let insertionStart be selectionStart.",
-            "Let insertionEnd be selectionEnd."
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>insertionStart</var> be <var>selectionStart</var>."
+            },
+            {
+              "html": "Let <var>insertionEnd</var> be <var>selectionEnd</var>."
+            }
           ]
         },
         {
