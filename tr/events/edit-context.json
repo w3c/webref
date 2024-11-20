@@ -7,77 +7,64 @@
     {
       "src": {
         "format": "fire an event phrasing",
-        "href": "https://www.w3.org/TR/edit-context/#extensions-to-the-element-interface"
+        "href": "https://www.w3.org/TR/edit-context/#update-the-editcontext"
       },
-      "href": "https://www.w3.org/TR/edit-context/#extensions-to-the-element-interface",
-      "type": "beforeinput",
-      "interface": "Event"
-    },
-    {
-      "src": {
-        "format": "fire an event phrasing",
-        "href": "https://www.w3.org/TR/edit-context/#extensions-to-the-element-interface"
-      },
-      "href": "https://www.w3.org/TR/edit-context/#extensions-to-the-element-interface",
+      "href": "https://w3c.github.io/uievents/#event-type-compositionstart",
       "type": "compositionstart",
-      "interface": "Event",
-      "targets": [
-        "EditContext"
-      ]
-    },
-    {
-      "src": {
-        "format": "fire an event phrasing",
-        "href": "https://www.w3.org/TR/edit-context/#extensions-to-the-element-interface"
-      },
-      "href": "https://www.w3.org/TR/edit-context/#extensions-to-the-element-interface",
-      "type": "textupdate",
-      "interface": "Event",
-      "targets": [
-        "EditContext"
-      ]
-    },
-    {
-      "src": {
-        "format": "fire an event phrasing",
-        "href": "https://www.w3.org/TR/edit-context/#extensions-to-the-element-interface"
-      },
-      "href": "https://www.w3.org/TR/edit-context/#extensions-to-the-element-interface",
-      "type": "textformateupdate",
-      "interface": "Event"
-    },
-    {
-      "src": {
-        "format": "fire an event phrasing",
-        "href": "https://www.w3.org/TR/edit-context/#extensions-to-the-element-interface"
-      },
-      "href": "https://www.w3.org/TR/edit-context/#extensions-to-the-element-interface",
-      "type": "characterboundsupdate",
-      "interface": "Event",
-      "targets": [
-        "EditContext"
-      ]
-    },
-    {
-      "src": {
-        "format": "fire an event phrasing",
-        "href": "https://www.w3.org/TR/edit-context/#extensions-to-the-element-interface"
-      },
-      "href": "https://www.w3.org/TR/edit-context/#extensions-to-the-element-interface",
-      "type": "compositionend",
-      "interface": "Event",
-      "targets": [
-        "EditContext"
-      ]
-    },
-    {
-      "type": "textformatupdate",
       "targets": [
         "EditContext"
       ],
+      "interface": "CompositionEvent",
+      "isExtension": true
+    },
+    {
       "src": {
-        "format": "IDL eventHandler"
-      }
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/edit-context/#update-the-editcontext"
+      },
+      "href": "https://w3c.github.io/uievents/#event-type-compositionend",
+      "type": "compositionend",
+      "targets": [
+        "EditContext"
+      ],
+      "interface": "CompositionEvent",
+      "isExtension": true
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/edit-context/#dispatch-text-update-event"
+      },
+      "href": "https://www.w3.org/TR/edit-context/#dispatch-text-update-event",
+      "type": "textupdate",
+      "interface": "TextUpdateEvent",
+      "targets": [
+        "EditContext"
+      ]
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/edit-context/#dispatch-text-format-update-event"
+      },
+      "href": "https://www.w3.org/TR/edit-context/#dispatch-text-format-update-event",
+      "type": "textformatupdate",
+      "interface": "TextFormatUpdateEvent",
+      "targets": [
+        "EditContext"
+      ]
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/edit-context/#dispatch-character-bounds-update-event"
+      },
+      "href": "https://www.w3.org/TR/edit-context/#dispatch-character-bounds-update-event",
+      "type": "characterboundsupdate",
+      "interface": "CharacterBoundsUpdateEvent",
+      "targets": [
+        "EditContext"
+      ]
     }
   ]
 }

@@ -11,18 +11,6 @@
       "title": "EditContext API"
     },
     {
-      "id": "abstract",
-      "href": "https://www.w3.org/TR/edit-context/#abstract",
-      "level": 2,
-      "title": "Abstract"
-    },
-    {
-      "id": "sotd",
-      "href": "https://www.w3.org/TR/edit-context/#sotd",
-      "level": 2,
-      "title": "Status of This Document"
-    },
-    {
       "id": "toc",
       "href": "https://www.w3.org/TR/edit-context/#toc",
       "level": 2,
@@ -50,6 +38,48 @@
       "number": "1.2"
     },
     {
+      "id": "editcontext-state",
+      "href": "https://www.w3.org/TR/edit-context/#editcontext-state",
+      "level": 4,
+      "title": "EditContext state",
+      "number": "1.2.1"
+    },
+    {
+      "id": "association-and-activation",
+      "href": "https://www.w3.org/TR/edit-context/#association-and-activation",
+      "level": 4,
+      "title": "Association and activation",
+      "number": "1.2.2"
+    },
+    {
+      "id": "differences-for-an-editcontext-editing-host",
+      "href": "https://www.w3.org/TR/edit-context/#differences-for-an-editcontext-editing-host",
+      "level": 4,
+      "title": "Differences for an EditContext editing host",
+      "number": "1.2.3"
+    },
+    {
+      "id": "editcontext-events",
+      "href": "https://www.w3.org/TR/edit-context/#editcontext-events",
+      "level": 4,
+      "title": "EditContext events",
+      "number": "1.2.4"
+    },
+    {
+      "id": "event-loop-changes",
+      "href": "https://www.w3.org/TR/edit-context/#event-loop-changes",
+      "level": 4,
+      "title": "Event loop changes",
+      "number": "1.2.5"
+    },
+    {
+      "id": "examples",
+      "href": "https://www.w3.org/TR/edit-context/#examples",
+      "level": 4,
+      "title": "Examples",
+      "number": "1.2.6"
+    },
+    {
       "id": "interactions",
       "href": "https://www.w3.org/TR/edit-context/#interactions",
       "level": 3,
@@ -64,60 +94,116 @@
       "number": "2"
     },
     {
-      "id": "extensions-to-the-element-interface",
-      "href": "https://www.w3.org/TR/edit-context/#extensions-to-the-element-interface",
+      "id": "editcontext-api",
+      "href": "https://www.w3.org/TR/edit-context/#editcontext-api",
       "level": 2,
-      "title": "Extensions to the Element interface",
+      "title": "EditContext API",
       "number": "3"
     },
     {
-      "id": "supported-elements",
-      "href": "https://www.w3.org/TR/edit-context/#supported-elements",
+      "id": "extensions-to-the-htmlelement-interface",
+      "href": "https://www.w3.org/TR/edit-context/#extensions-to-the-htmlelement-interface",
       "level": 3,
-      "title": "Supported elements",
+      "title": "Extensions to the HTMLElement interface",
       "number": "3.1"
     },
     {
-      "id": "the-editcontext-interface",
-      "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
-      "level": 2,
-      "title": "The EditContext Interface",
-      "number": "4"
+      "id": "handle-input-for-editcontext",
+      "href": "https://www.w3.org/TR/edit-context/#handle-input-for-editcontext",
+      "level": 4,
+      "title": "Handle input for EditContext",
+      "number": "3.1.1"
     },
     {
-      "id": "editcontext-events",
-      "href": "https://www.w3.org/TR/edit-context/#editcontext-events",
+      "id": "editcontext-handled-inputtype",
+      "href": "https://www.w3.org/TR/edit-context/#editcontext-handled-inputtype",
+      "level": 4,
+      "title": "EditContext-handled inputType",
+      "number": "3.1.2"
+    },
+    {
+      "id": "update-the-editcontext",
+      "href": "https://www.w3.org/TR/edit-context/#update-the-editcontext",
+      "level": 4,
+      "title": "Update the EditContext",
+      "number": "3.1.3"
+    },
+    {
+      "id": "update-the-text-edit-context",
+      "href": "https://www.w3.org/TR/edit-context/#update-the-text-edit-context",
+      "level": 4,
+      "title": "Update the Text Edit Context",
+      "number": "3.1.4"
+    },
+    {
+      "id": "dispatch-text-update-event",
+      "href": "https://www.w3.org/TR/edit-context/#dispatch-text-update-event",
+      "level": 4,
+      "title": "Dispatch text update event",
+      "number": "3.1.5"
+    },
+    {
+      "id": "dispatch-text-format-update-event",
+      "href": "https://www.w3.org/TR/edit-context/#dispatch-text-format-update-event",
+      "level": 4,
+      "title": "Dispatch text format update event",
+      "number": "3.1.6"
+    },
+    {
+      "id": "dispatch-character-bounds-update-event",
+      "href": "https://www.w3.org/TR/edit-context/#dispatch-character-bounds-update-event",
+      "level": 4,
+      "title": "Dispatch character bounds update event",
+      "number": "3.1.7"
+    },
+    {
+      "id": "deactivate-an-editcontext",
+      "href": "https://www.w3.org/TR/edit-context/#deactivate-an-editcontext",
+      "level": 4,
+      "title": "Deactivate an EditContext",
+      "number": "3.1.8"
+    },
+    {
+      "id": "determine-the-active-editcontext",
+      "href": "https://www.w3.org/TR/edit-context/#determine-the-active-editcontext",
+      "level": 4,
+      "title": "Determine the active EditContext",
+      "number": "3.1.9"
+    },
+    {
+      "id": "editcontext-interface-0",
+      "href": "https://www.w3.org/TR/edit-context/#editcontext-interface-0",
+      "level": 3,
+      "title": "EditContext Interface",
+      "number": "3.2"
+    },
+    {
+      "id": "editcontext-events-0",
+      "href": "https://www.w3.org/TR/edit-context/#editcontext-events-0",
       "level": 2,
-      "title": "EditContext events",
-      "number": "5"
+      "title": "EditContext Events",
+      "number": "4"
     },
     {
       "id": "textupdateevent",
       "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
       "level": 3,
       "title": "TextUpdateEvent",
-      "number": "5.1"
+      "number": "4.1"
     },
     {
       "id": "textformatupdateevent",
       "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
       "level": 3,
       "title": "TextFormatUpdateEvent",
-      "number": "5.2"
+      "number": "4.2"
     },
     {
       "id": "characterboundsupdateevent",
       "href": "https://www.w3.org/TR/edit-context/#characterboundsupdateevent",
       "level": 3,
       "title": "CharacterBoundsUpdateEvent",
-      "number": "5.3"
-    },
-    {
-      "id": "privacy-and-security-considerations",
-      "href": "https://www.w3.org/TR/edit-context/#privacy-and-security-considerations",
-      "level": 2,
-      "title": "Privacy and Security Considerations",
-      "number": "6"
+      "number": "4.3"
     },
     {
       "id": "idl-index",
@@ -146,6 +232,13 @@
       "level": 3,
       "title": "Normative references",
       "number": "C.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/edit-context/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "C.2"
     }
   ]
 }

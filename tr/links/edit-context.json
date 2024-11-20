@@ -5,22 +5,46 @@
   },
   "links": {
     "rawlinks": {
-      "https://datatracker.ietf.org/doc/html/bcp14": {},
       "https://dom.spec.whatwg.org/": {
         "anchors": [
-          "eventtarget",
-          "event"
+          "concept-tree-parent",
+          "concept-node-document",
+          "concept-tree-root",
+          "concept-documentfragment-host"
+        ]
+      },
+      "https://drafts.csswg.org/css-values/": {
+        "anchors": [
+          "px"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view/": {
+        "anchors": [
+          "layout-viewport"
+        ]
+      },
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "focused-area-of-the-document"
         ]
       },
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
-          "eventhandler"
+          "fully-active"
         ]
       },
-      "https://html.spec.whatwg.org/multipage/window-object.html": {
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
         "anchors": [
-          "window"
+          "focused",
+          "dom-anchor",
+          "currently-focused-area-of-a-top-level-traversable"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {},
+      "https://w3c.github.io/editing/docs/execCommand/": {
+        "anchors": [
+          "editable"
         ]
       },
       "https://w3c.github.io/uievents/": {
@@ -29,60 +53,103 @@
           "event-type-compositionend"
         ]
       },
-      "https://w3c.github.io/webappsec-secure-contexts/": {},
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
-          "idl-DOMString",
-          "idl-unsigned-long",
           "Exposed",
-          "idl-undefined",
-          "idl-sequence",
-          "idl-boolean"
+          "idl-sequence"
         ]
       },
-      "https://www.rfc-editor.org/rfc/rfc2119": {},
-      "https://www.rfc-editor.org/rfc/rfc8174": {},
-      "https://www.w3.org/2021/Process-20211102/": {
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/geometry-1/": {},
+      "https://www.w3.org/TR/input-events-1/": {},
+      "https://www.w3.org/TR/uievents/": {
         "anchors": [
-          "recs-and-notes"
+          "default-action",
+          "event-type-beforeinput",
+          "event-type-input",
+          "dom-inputevent-inputtype"
         ]
       },
-      "https://www.w3.org/Consortium/Patent-Policy/": {
+      "https://www.w3.org/groups/wg/webediting": {},
+      "https://www.w3.org/groups/wg/webediting/ipr": {},
+      "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
         ]
       },
-      "https://www.w3.org/TR/": {},
-      "https://www.w3.org/TR/css-color-4/": {
+      "https://www.w3.org/policies/process/20231103/": {
         "anchors": [
-          "serializing-sRGB-values"
+          "recs-and-notes"
         ]
-      },
-      "https://www.w3.org/TR/geometry-1/": {
-        "anchors": [
-          "domrect"
-        ]
-      },
-      "https://www.w3.org/groups/wg/webediting": {},
-      "https://www.w3.org/groups/wg/webediting/ipr": {}
+      }
     },
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
-          "concept-event-fire"
+          "concept-document",
+          "document",
+          "concept-element-local-name",
+          "valid-shadow-host-name",
+          "concept-event-fire",
+          "concept-shadow-including-root",
+          "concept-shadow-root",
+          "eventtarget",
+          "dictdef-eventinit",
+          "event"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "node-navigable",
+          "top-level-traversable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "htmlelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "designMode",
+          "editing-host",
+          "attr-contenteditable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "update-the-rendering",
+          "queue-a-global-task",
+          "dom-manipulation-task-source",
+          "concept-relevant-global",
+          "eventhandler"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "assert"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "idl-DOMString",
+          "this",
+          "dfn-throw",
+          "notsupportederror",
+          "idl-DOMException",
           "idl-unsigned-long",
-          "idl-boolean"
+          "idl-undefined"
         ]
       },
       "https://www.w3.org/TR/geometry-1/": {
         "anchors": [
           "domrect"
+        ]
+      },
+      "https://www.w3.org/TR/uievents/": {
+        "anchors": [
+          "compositionevent"
         ]
       }
     }
