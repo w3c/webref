@@ -25,7 +25,7 @@ index 4dc3980d5..4c3af5351 100644
      attribute CSSNumberish?       currentTime;
 -    attribute (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeStart;
 -    attribute (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeEnd;
-     readonly attribute double? progress;
+     readonly attribute double? overallProgress;
  };
  
 @@ -50,8 +48,6 @@ partial dictionary ComputedEffectTiming {
