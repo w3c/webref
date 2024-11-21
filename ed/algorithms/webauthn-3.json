@@ -1431,7 +1431,7 @@
           "html": "<p>Let <var>maxLabels</var> be the maximum number of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#registrable-origin-label\" id=\"ref-for-registrable-origin-label②\">registrable origin labels</a> allowed by client policy.</p>"
         },
         {
-          "html": "Fetch the <code>webauthn</code> well-known URL <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webauthn/#biblio-rfc8615\" title=\"Well-Known Uniform Resource Identifiers (URIs)\">[RFC8615]</a> for the RP ID <var>rpIdRequested</var> (i.e., <code>https://<var>rpIdRequested</var>/.well-known/webauthn</code>).",
+          "html": "Fetch the <code>webauthn</code> well-known URL <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webauthn/#biblio-rfc8615\" title=\"Well-Known Uniform Resource Identifiers (URIs)\">[RFC8615]</a> for the RP ID <var>rpIdRequested</var> (i.e., <code>https://<var>rpIdRequested</var>/.well-known/webauthn</code>) without <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode①\">credentials</a>, without a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer-policy\" id=\"ref-for-concept-request-referrer-policy①\">referrer</a> and using the <code>https:</code> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org#concept-url-scheme\" id=\"ref-for-concept-url-scheme③\">scheme</a>.",
           "rationale": "if",
           "steps": [
             {
