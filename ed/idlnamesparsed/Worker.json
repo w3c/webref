@@ -6,7 +6,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface Worker : EventTarget {\n  constructor((TrustedScriptURL or USVString) scriptURL, optional WorkerOptions options = {});\n\n  undefined terminate();\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
+    "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface Worker : EventTarget {\n  constructor((TrustedScriptURL or USVString) scriptURL, optional WorkerOptions options = {});\n\n  undefined terminate();\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n};",
     "href": "https://html.spec.whatwg.org/multipage/workers.html#worker"
   },
   "extended": [
@@ -16,6 +16,13 @@
         "url": "https://html.spec.whatwg.org/multipage/"
       },
       "fragment": "Worker includes AbstractWorker;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Worker includes MessageEventTarget;"
     }
   ],
   "inheritance": {
@@ -52,6 +59,21 @@
         },
         "fragment": "interface mixin AbstractWorker {\n  attribute EventHandler onerror;\n};",
         "href": "https://html.spec.whatwg.org/multipage/workers.html#abstractworker"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "MessageEventTarget",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin MessageEventTarget {\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#messageeventtarget"
       },
       "extended": [],
       "inheritance": null,

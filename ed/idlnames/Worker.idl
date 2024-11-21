@@ -7,9 +7,10 @@ interface Worker : EventTarget {
 
   undefined postMessage(any message, sequence<object> transfer);
   undefined postMessage(any message, optional StructuredSerializeOptions options = {});
-  attribute EventHandler onmessage;
-  attribute EventHandler onmessageerror;
 };
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 Worker includes AbstractWorker;
+
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+Worker includes MessageEventTarget;

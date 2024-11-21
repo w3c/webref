@@ -7,13 +7,13 @@ interface DedicatedWorkerGlobalScope : WorkerGlobalScope {
   undefined postMessage(any message, optional StructuredSerializeOptions options = {});
 
   undefined close();
-
-  attribute EventHandler onmessage;
-  attribute EventHandler onmessageerror;
 };
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 DedicatedWorkerGlobalScope includes AnimationFrameProvider;
+
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+DedicatedWorkerGlobalScope includes MessageEventTarget;
 
 // Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
 partial interface DedicatedWorkerGlobalScope {

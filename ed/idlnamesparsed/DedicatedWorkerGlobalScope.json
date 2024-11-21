@@ -6,7 +6,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]\ninterface DedicatedWorkerGlobalScope : WorkerGlobalScope {\n  [Replaceable] readonly attribute DOMString name;\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n\n  undefined close();\n\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
+    "fragment": "[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]\ninterface DedicatedWorkerGlobalScope : WorkerGlobalScope {\n  [Replaceable] readonly attribute DOMString name;\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n\n  undefined close();\n};",
     "href": "https://html.spec.whatwg.org/multipage/workers.html#dedicatedworkerglobalscope"
   },
   "extended": [
@@ -16,6 +16,13 @@
         "url": "https://html.spec.whatwg.org/multipage/"
       },
       "fragment": "DedicatedWorkerGlobalScope includes AnimationFrameProvider;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "DedicatedWorkerGlobalScope includes MessageEventTarget;"
     },
     {
       "spec": {
@@ -169,6 +176,21 @@
         },
         "fragment": "interface mixin AnimationFrameProvider {\n  unsigned long requestAnimationFrame(FrameRequestCallback callback);\n  undefined cancelAnimationFrame(unsigned long handle);\n};",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "MessageEventTarget",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin MessageEventTarget {\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#messageeventtarget"
       },
       "extended": [],
       "inheritance": null,

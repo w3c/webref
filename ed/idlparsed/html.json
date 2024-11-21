@@ -34650,8 +34650,51 @@
         "partial": false,
         "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#messagechannel"
       },
+      "MessageEventTarget": {
+        "fragment": "interface mixin MessageEventTarget {\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
+        "type": "interface mixin",
+        "name": "MessageEventTarget",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "onmessage",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#handler-messageeventtarget-onmessage"
+          },
+          {
+            "type": "attribute",
+            "name": "onmessageerror",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#handler-messageeventtarget-onmessageerror"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#messageeventtarget"
+      },
       "MessagePort": {
-        "fragment": "[Exposed=(Window,Worker,AudioWorklet), Transferable]\ninterface MessagePort : EventTarget {\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n  undefined start();\n  undefined close();\n\n  // event handlers\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n  attribute EventHandler onclose;\n};",
+        "fragment": "[Exposed=(Window,Worker,AudioWorklet), Transferable]\ninterface MessagePort : EventTarget {\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n  undefined start();\n  undefined close();\n\n  // event handlers\n  attribute EventHandler onclose;\n};",
         "type": "interface",
         "name": "MessagePort",
         "inheritance": "EventTarget",
@@ -34796,38 +34839,6 @@
             "extAttrs": [],
             "special": "",
             "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messageport-close"
-          },
-          {
-            "type": "attribute",
-            "name": "onmessage",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false,
-            "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#handler-messageport-onmessage"
-          },
-          {
-            "type": "attribute",
-            "name": "onmessageerror",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false,
-            "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#handler-messageport-onmessageerror"
           },
           {
             "type": "attribute",
@@ -35278,7 +35289,7 @@
         "href": "https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope"
       },
       "DedicatedWorkerGlobalScope": {
-        "fragment": "[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]\ninterface DedicatedWorkerGlobalScope : WorkerGlobalScope {\n  [Replaceable] readonly attribute DOMString name;\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n\n  undefined close();\n\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
+        "fragment": "[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]\ninterface DedicatedWorkerGlobalScope : WorkerGlobalScope {\n  [Replaceable] readonly attribute DOMString name;\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n\n  undefined close();\n};",
         "type": "interface",
         "name": "DedicatedWorkerGlobalScope",
         "inheritance": "WorkerGlobalScope",
@@ -35430,38 +35441,6 @@
             "extAttrs": [],
             "special": "",
             "href": "https://html.spec.whatwg.org/multipage/workers.html#dom-dedicatedworkerglobalscope-close"
-          },
-          {
-            "type": "attribute",
-            "name": "onmessage",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false,
-            "href": "https://html.spec.whatwg.org/multipage/workers.html#handler-dedicatedworkerglobalscope-onmessage"
-          },
-          {
-            "type": "attribute",
-            "name": "onmessageerror",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false,
-            "href": "https://html.spec.whatwg.org/multipage/workers.html#handler-dedicatedworkerglobalscope-onmessageerror"
           }
         ],
         "extAttrs": [
@@ -35614,7 +35593,7 @@
         "href": "https://html.spec.whatwg.org/multipage/workers.html#abstractworker"
       },
       "Worker": {
-        "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface Worker : EventTarget {\n  constructor((TrustedScriptURL or USVString) scriptURL, optional WorkerOptions options = {});\n\n  undefined terminate();\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface Worker : EventTarget {\n  constructor((TrustedScriptURL or USVString) scriptURL, optional WorkerOptions options = {});\n\n  undefined terminate();\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n};",
         "type": "interface",
         "name": "Worker",
         "inheritance": "EventTarget",
@@ -35800,38 +35779,6 @@
             "extAttrs": [],
             "special": "",
             "href": "https://html.spec.whatwg.org/multipage/workers.html#dom-worker-postmessage-options"
-          },
-          {
-            "type": "attribute",
-            "name": "onmessage",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false,
-            "href": "https://html.spec.whatwg.org/multipage/workers.html#handler-worker-onmessage"
-          },
-          {
-            "type": "attribute",
-            "name": "onmessageerror",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false,
-            "href": "https://html.spec.whatwg.org/multipage/workers.html#handler-worker-onmessageerror"
           }
         ],
         "extAttrs": [
@@ -41094,6 +41041,22 @@
           "extAttrs": [],
           "target": "DedicatedWorkerGlobalScope",
           "includes": "AnimationFrameProvider"
+        },
+        {
+          "fragment": "DedicatedWorkerGlobalScope includes MessageEventTarget;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "DedicatedWorkerGlobalScope",
+          "includes": "MessageEventTarget"
+        }
+      ],
+      "MessagePort": [
+        {
+          "fragment": "MessagePort includes MessageEventTarget;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "MessagePort",
+          "includes": "MessageEventTarget"
         }
       ],
       "Worker": [
@@ -41103,6 +41066,13 @@
           "extAttrs": [],
           "target": "Worker",
           "includes": "AbstractWorker"
+        },
+        {
+          "fragment": "Worker includes MessageEventTarget;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Worker",
+          "includes": "MessageEventTarget"
         }
       ],
       "SharedWorker": [
@@ -44437,7 +44407,7 @@
         "AnimationFrameProvider",
         "WorkerGlobalScope",
         "StructuredSerializeOptions",
-        "EventHandler"
+        "MessageEventTarget"
       ],
       "MessageEvent": [
         "Event",
@@ -44459,10 +44429,14 @@
       "MessageChannel": [
         "MessagePort"
       ],
+      "MessageEventTarget": [
+        "EventHandler"
+      ],
       "MessagePort": [
         "EventTarget",
         "StructuredSerializeOptions",
-        "EventHandler"
+        "EventHandler",
+        "MessageEventTarget"
       ],
       "StructuredSerializeOptions": [],
       "BroadcastChannel": [
@@ -44481,8 +44455,8 @@
         "TrustedScriptURL",
         "WorkerOptions",
         "StructuredSerializeOptions",
-        "EventHandler",
-        "AbstractWorker"
+        "AbstractWorker",
+        "MessageEventTarget"
       ],
       "WorkerOptions": [
         "WorkerType",

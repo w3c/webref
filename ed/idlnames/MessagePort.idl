@@ -7,7 +7,8 @@ interface MessagePort : EventTarget {
   undefined close();
 
   // event handlers
-  attribute EventHandler onmessage;
-  attribute EventHandler onmessageerror;
   attribute EventHandler onclose;
 };
+
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+MessagePort includes MessageEventTarget;
