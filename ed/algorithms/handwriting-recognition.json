@@ -16,34 +16,40 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>constraint</var> doesn’t have a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#dom-handwritingmodelconstraint-languages\" id=\"ref-for-dom-handwritingmodelconstraint-languages\">languages</a></code> member, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code></p>"
+          "html": "<p>If <var>constraint</var> doesn’t have a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#dom-handwritingmodelconstraint-languages\" id=\"ref-for-dom-handwritingmodelconstraint-languages\">languages</a></code> member, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
         },
         {
-          "html": "Run the following step <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>",
-          "rationale": "if",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "rationale": "convert",
           "steps": [
-            {
-              "html": "<p>If <var>constraint</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#dom-handwritingmodelconstraint-languages\" id=\"ref-for-dom-handwritingmodelconstraint-languages①\">languages</a></code> member is an empty array, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>p</var> with <code>null</code> and abort.</p>"
-            },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#convert-data-format\" id=\"ref-for-convert-data-format\">Convert <var>constraint</var> into a suitable form for handwriting recognizer</a>.</p>"
             },
             {
-              "html": "<p>If the user agent can’t find or create a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer②\">handwriting recognizer</a> that satisfies the converted <var>constraint</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>p</var> with <code>null</code> and abort.</p>"
+              "html": "<p>If any of the following is true:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><var>constraint</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#dom-handwritingmodelconstraint-languages\" id=\"ref-for-dom-handwritingmodelconstraint-languages①\">languages</a></code> member is an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>.</p>\n         </li><li data-md=\"\">\n          <p>The user agent can’t find or create a platform-dependent <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer②\">handwriting recognizer</a> that satisfies the converted <var>constraint</var>.</p>\n        </li></ul>\n        <p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#queues-a-handwriting-recognition-api-task\" id=\"ref-for-queues-a-handwriting-recognition-api-task\">Queue a handwriting recognition API task</a> to resolve <var>p</var> with <code>null</code> and abort the remaining steps.</p>"
             },
             {
-              "html": "<p>Let <var>result</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#dictdef-handwritingrecognizerqueryresult\" id=\"ref-for-dictdef-handwritingrecognizerqueryresult①\">HandwritingRecognizerQueryResult</a></code></p>"
-            },
-            {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#convert-data-format\" id=\"ref-for-convert-data-format①\">Convert the handwriting recognizer’s feature description</a>, and fills in all members of <var>result</var>,.</p>"
-            },
-            {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">Resolve</a> <var>p</var> with <var>result</var>.</p>"
+              "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#queues-a-handwriting-recognition-api-task\" id=\"ref-for-queues-a-handwriting-recognition-api-task①\">queue a handwriting recognition API task</a> to:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>result</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#dictdef-handwritingrecognizerqueryresult\" id=\"ref-for-dictdef-handwritingrecognizerqueryresult①\">HandwritingRecognizerQueryResult</a></code></p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#convert-data-format\" id=\"ref-for-convert-data-format①\">Convert the handwriting recognizer’s feature description</a>, and populate all members of <var>result</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">Resolve</a> <var>p</var> with <var>result</var>.</p>"
+                }
+              ]
             }
           ]
+        },
+        {
+          "html": "<p>Return <var>p</var>.</p>"
         }
       ]
     },
@@ -53,37 +59,49 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>constraint</var> doesn’t have a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#dom-handwritingmodelconstraint-languages\" id=\"ref-for-dom-handwritingmodelconstraint-languages②\">languages</a></code> member, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code></p>"
+          "html": "<p>If <var>constraint</var> doesn’t have a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#dom-handwritingmodelconstraint-languages\" id=\"ref-for-dom-handwritingmodelconstraint-languages②\">languages</a></code> member, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a>.</p>"
         },
         {
-          "html": "Run the following step <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>",
-          "rationale": "if",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
+          "rationale": "convert",
           "steps": [
             {
-              "html": "<p>If <var>constraint</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#dom-handwritingmodelconstraint-languages\" id=\"ref-for-dom-handwritingmodelconstraint-languages③\">languages</a></code> is an empty array, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>p</var> with a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dom-domexception-name\" id=\"ref-for-dom-domexception-name\">name</a></code> attribute is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror\">\"NotSupportedError\"</a></code> and abort.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#convert-data-format\" id=\"ref-for-convert-data-format②\">Convert <var>constraint</var> into a suitable form</a> for creating a platform-dependent <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer④\">handwriting recognizer</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#convert-data-format\" id=\"ref-for-convert-data-format②\">Convert <var>constraint</var> into a suitable form</a> for <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer④\">handwriting recognizer</a>.</p>"
-            },
-            {
-              "html": "<p>If the user agent can’t find a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer⑤\">handwriting recognizer</a> that satisfies the converted <var>constraint</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>p</var> with a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dom-domexception-name\" id=\"ref-for-dom-domexception-name①\">name</a></code> attribute is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror①\">\"NotSupportedError\"</a></code> and abort.</p>"
-            },
-            {
-              "html": "<p>If creating a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer⑥\">handwriting recognizer</a> would cause the user agent to exceed its limit for total number of active recognizer, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>p</var> with a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dom-domexception-name\" id=\"ref-for-dom-domexception-name②\">name</a></code> attribute is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror\" id=\"ref-for-quotaexceedederror\">\"QuotaExceededError\"</a></code>.</p>"
-            },
-            {
-              "html": "<p>If the user agent can’t prepare <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer⑦\">handwriting recognizer</a> to perform recognitions, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>p</var> with a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code> object whose name depending on the failure cause and abort:</p>\n        <ul>\n         <li data-md=\"\">\n          <p>If the web application shouldn’t retry, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#operationerror\" id=\"ref-for-operationerror\">\"OperationError\"</a></code>.</p>\n         </li><li data-md=\"\">\n          <p>Otherwise <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#unknownerror\" id=\"ref-for-unknownerror\">\"UnknownError\"</a></code>.</p>\n        </li></ul>"
-            },
-            {
-              "html": "<p>Let <var>result</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingrecognizer\" id=\"ref-for-handwritingrecognizer⑤\">HandwritingRecognizer</a></code> object, whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingrecognizer-active\" id=\"ref-for-handwritingrecognizer-active\">active</a> flag is <code>true</code></p>"
-            },
-            {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve③\">Resolve</a> <var>p</var> with <var>result</var>.</p>"
+              "html": "<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#queues-a-handwriting-recognition-api-task\" id=\"ref-for-queues-a-handwriting-recognition-api-task②\">Queue a Handwriting Recognition API task</a> to:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If the user agent can’t create or prepare a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer⑤\">handwriting recognizer</a> to perform recognitions, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>p</var> with a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> according to the failure cause:</p>\n          <ul>\n           <li data-md=\"\">\n            <p>If <var>constraint</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#dom-handwritingmodelconstraint-languages\" id=\"ref-for-dom-handwritingmodelconstraint-languages③\">languages</a></code> is an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror\">\"NotSupportedError\"</a></code>.</p>\n           </li><li data-md=\"\">\n            <p>If the user agent can’t find a platform-dependent <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer⑥\">handwriting recognizer</a> that satisfies the converted <var>constraint</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror①\">\"NotSupportedError\"</a></code>.</p>\n           </li><li data-md=\"\">\n            <p>If creating a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer⑦\">handwriting recognizer</a> would cause the user agent to exceed its limit for total number of active recognizer, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror\" id=\"ref-for-quotaexceedederror\">\"QuotaExceededError\"</a></code>.</p>\n           </li><li data-md=\"\">\n            <p>If the web application can retry calling this method, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#operationerror\" id=\"ref-for-operationerror\">OperationError</a></code>.</p>\n           </li><li data-md=\"\">\n            <p>For all other failure causes, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#unknownerror\" id=\"ref-for-unknownerror\">\"UnknownError\"</a></code></p>\n          </li></ul>"
+                },
+                {
+                  "html": "Otherwise:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>result</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingrecognizer\" id=\"ref-for-handwritingrecognizer⑤\">HandwritingRecognizer</a></code> object.</p>"
+                    },
+                    {
+                      "html": "<p>Associate <var>result</var> with the platform-dependent <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer⑧\">handwriting recognizer</a> created in the previous step.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>result</var>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingrecognizer-active\" id=\"ref-for-handwritingrecognizer-active\">active</a> flag to <code>true</code>.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>p</var> with <var>result</var>.</p>"
+                    }
+                  ]
+                }
+              ]
             }
           ]
+        },
+        {
+          "html": "<p>Return <var>p</var></p>"
         }
       ]
     },
@@ -93,10 +111,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <code>this</code>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingrecognizer-active\" id=\"ref-for-handwritingrecognizer-active④\">active</a> flag isn’t <code>true</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code> object, whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dom-domexception-name\" id=\"ref-for-dom-domexception-name③\">name</a></code> member is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">\"InvalidStateError\"</a></code> and abort.</p>"
+          "html": "<p>If <code>this</code>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingrecognizer-active\" id=\"ref-for-handwritingrecognizer-active④\">active</a> flag isn’t <code>true</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> object, whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dom-domexception-name\" id=\"ref-for-dom-domexception-name\">name</a></code> member is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">\"InvalidStateError\"</a></code> and abort.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#convert-data-format\" id=\"ref-for-convert-data-format③\">Convert the provided <var>hints</var> to format suitable</a> for <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer⑨\">handwriting recognizer</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#convert-data-format\" id=\"ref-for-convert-data-format③\">Convert the provided <var>hints</var> to format suitable</a> for <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer①⓪\">handwriting recognizer</a>.</p>"
         },
         {
           "html": "<p>Create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingdrawing\" id=\"ref-for-handwritingdrawing⑤\">HandwritingDrawing</a></code> as <var>result</var>, store the converted hint in it if necessary.</p>"
@@ -105,7 +123,7 @@
           "html": "<p>Set <var>result</var>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingdrawing-recognizer\" id=\"ref-for-handwritingdrawing-recognizer\">recognizer</a> to <code>this</code>.</p>"
         },
         {
-          "html": "<p>Set <code>this</code>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingdrawing-strokes\" id=\"ref-for-handwritingdrawing-strokes\">strokes</a> to an new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>.</p>"
+          "html": "<p>Set <code>this</code>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingdrawing-strokes\" id=\"ref-for-handwritingdrawing-strokes\">strokes</a> to an new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a>.</p>"
         },
         {
           "html": "<p>Return <var>result</var>.</p>"
@@ -134,7 +152,7 @@
           "html": "<p>Create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingstroke\" id=\"ref-for-handwritingstroke①⓪\">HandwritingStroke</a></code> object, let it be <var>result</var>.</p>"
         },
         {
-          "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingstroke-points\" id=\"ref-for-handwritingstroke-points①\">points</a> to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a>.</p>"
+          "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingstroke-points\" id=\"ref-for-handwritingstroke-points①\">points</a> to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a>.</p>"
         },
         {
           "html": "<p>Return <var>result</var>.</p>"
@@ -147,19 +165,19 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>point</var> doesn’t has a <code>x</code> member, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code> and abort.</p>"
+          "html": "<p>If <var>point</var> doesn’t has a <code>x</code> member, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code> and abort.</p>"
         },
         {
-          "html": "<p>If <var>point</var>.<code>x</code> isn’t a number, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code> and abort.</p>"
+          "html": "<p>If <var>point</var>.<code>x</code> isn’t a number, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code> and abort.</p>"
         },
         {
-          "html": "<p>If <var>point</var> doesn’t has a <code>y</code> member, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④\">TypeError</a></code> and abort.</p>"
+          "html": "<p>If <var>point</var> doesn’t has a <code>y</code> member, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④\">TypeError</a></code> and abort.</p>"
         },
         {
-          "html": "<p>If <var>point</var>.<code>y</code> isn’t a number, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑤\">TypeError</a></code> and abort.</p>"
+          "html": "<p>If <var>point</var>.<code>y</code> isn’t a number, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑤\">TypeError</a></code> and abort.</p>"
         },
         {
-          "html": "<p>If <var>point</var> has a <code>t</code> member, and <code>t</code> isn’t a number, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑥\">TypeError</a></code> and abort.</p>"
+          "html": "<p>If <var>point</var> has a <code>t</code> member, and <code>t</code> isn’t a number, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑥\">TypeError</a></code> and abort.</p>"
         },
         {
           "html": "<p>Let <var>p</var> be a new object,</p>"
@@ -184,7 +202,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>result</var> be a new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a></p>"
+          "html": "<p>Let <var>result</var> be a new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a></p>"
         },
         {
           "html": "For each <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingstroke-points\" id=\"ref-for-handwritingstroke-points③\">points</a> as <var>p</var>",
@@ -228,7 +246,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>stroke</var> isn’t an instance of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingstroke\" id=\"ref-for-handwritingstroke①②\">HandwritingStroke</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑦\">TypeError</a></code> and abort.</p>"
+          "html": "<p>If <var>stroke</var> isn’t an instance of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingstroke\" id=\"ref-for-handwritingstroke①②\">HandwritingStroke</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑦\">TypeError</a></code> and abort.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> a reference to <var>stroke</var> to <code>this</code>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingdrawing-strokes\" id=\"ref-for-handwritingdrawing-strokes①\">strokes</a>.</p>"
@@ -241,7 +259,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>stroke</var> isn’t an instance of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingstroke\" id=\"ref-for-handwritingstroke①③\">HandwritingStroke</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑧\">TypeError</a></code> and abort.</p>"
+          "html": "<p>If <var>stroke</var> isn’t an instance of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingstroke\" id=\"ref-for-handwritingstroke①③\">HandwritingStroke</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑧\">TypeError</a></code> and abort.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">Remove</a> items <code>this</code>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingdrawing-strokes\" id=\"ref-for-handwritingdrawing-strokes②\">strokes</a> if the item is the same object as <var>stroke</var></p>"
@@ -254,7 +272,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>result</var> be a new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a></p>"
+          "html": "<p>Let <var>result</var> be a new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a></p>"
         },
         {
           "html": "For each <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingdrawing-strokes\" id=\"ref-for-handwritingdrawing-strokes③\">strokes</a> as <var>s</var>",
@@ -286,26 +304,26 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <code>this</code>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingdrawing-recognizer\" id=\"ref-for-handwritingdrawing-recognizer①\">recognizer</a>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingrecognizer-active\" id=\"ref-for-handwritingrecognizer-active⑧\">active</a> isn’t true, return a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">\"InvalidStateError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code>.</p>"
+          "html": "<p>If <code>this</code>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingdrawing-recognizer\" id=\"ref-for-handwritingdrawing-recognizer①\">recognizer</a>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingrecognizer-active\" id=\"ref-for-handwritingrecognizer-active⑧\">active</a> isn’t true, return a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with②\">a promise rejected with</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">\"InvalidStateError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>If <code>this</code>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingdrawing-strokes\" id=\"ref-for-handwritingdrawing-strokes⑤\">strokes</a> is empty, return a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with\">a promise resolved with</a> a new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>.</p>"
+          "html": "<p>If <code>this</code>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingdrawing-strokes\" id=\"ref-for-handwritingdrawing-strokes⑤\">strokes</a> is empty, return a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with\">a promise resolved with</a> a new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#convert-data-format\" id=\"ref-for-convert-data-format④\">Convert <code>this</code> drawing into a format suitable</a> for <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer②⓪\">handwriting recognizer</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#convert-data-format\" id=\"ref-for-convert-data-format④\">Convert <code>this</code> drawing into a format suitable</a> for <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer②①\">handwriting recognizer</a>.</p>"
         },
         {
           "html": "Let <var>p</var> be a new Promise, run the following step <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>",
           "rationale": "send",
           "steps": [
             {
-              "html": "<p>Send the converted drawing to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer②①\">handwriting recognizer</a>.</p>"
+              "html": "<p>Send the converted drawing to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer②②\">handwriting recognizer</a>.</p>"
             },
             {
-              "html": "<p>Wait for <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer②②\">handwriting recognizer</a> to return its predictions.</p>"
+              "html": "<p>Wait for <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer②③\">handwriting recognizer</a> to return its predictions.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#queues-a-handwriting-recognition-api-task\" id=\"ref-for-queues-a-handwriting-recognition-api-task\">Queue a Handwriting Recognition API task</a> to perform the following steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#queues-a-handwriting-recognition-api-task\" id=\"ref-for-queues-a-handwriting-recognition-api-task③\">Queue a Handwriting Recognition API task</a> to perform the following steps:",
               "rationale": "let",
               "steps": [
                 {
