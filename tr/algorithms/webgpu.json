@@ -350,10 +350,10 @@
               "html": "<p>Set <var>adapter</var> to an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#adapter\" id=\"ref-for-adapter②⑧\">adapter</a> chosen according to\nthe rules in <a href=\"https://www.w3.org/TR/webgpu/#adapter-selection\">§ 4.2.2 Adapter Selection</a> and the criteria in <var>options</var>,\nadhering to <a href=\"https://www.w3.org/TR/webgpu/#adapter-capability-guarantees\">§ 4.2.1 Adapter Capability Guarantees</a>.</p>\n           <p>The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#supported-limits\" id=\"ref-for-supported-limits⑥\">supported limits</a> of the adapter must adhere to the requirements\ndefined in <a href=\"https://www.w3.org/TR/webgpu/#limits\">§ 3.6.2 Limits</a>.</p>"
             },
             {
-              "html": "<p>If <var>adapter</var> meets the criteria of a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fallback-adapter\" id=\"ref-for-fallback-adapter②\">fallback adapter</a> set <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-adapter-fallback-slot\" id=\"ref-for-dom-adapter-fallback-slot\" data-timeline=\"device\">[[fallback]]</a></code> to <code>true</code>.</p>"
+              "html": "<p>If <var>adapter</var> meets the criteria of a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fallback-adapter\" id=\"ref-for-fallback-adapter②\">fallback adapter</a> set <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-adapter-fallback-slot\" id=\"ref-for-dom-adapter-fallback-slot\" data-timeline=\"const\">[[fallback]]</a></code> to <code>true</code>.</p>"
             },
             {
-              "html": "<p>Set <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-adapter-xrcompatible-slot\" id=\"ref-for-dom-adapter-xrcompatible-slot\" data-timeline=\"device\">[[xrCompatible]]</a></code> to <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurequestadapteroptions-xrcompatible\" id=\"ref-for-dom-gpurequestadapteroptions-xrcompatible\">xrCompatible</a></code>.</p>"
+              "html": "<p>Set <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-adapter-xrcompatible-slot\" id=\"ref-for-dom-adapter-xrcompatible-slot\" data-timeline=\"const\">[[xrCompatible]]</a></code> to <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurequestadapteroptions-xrcompatible\" id=\"ref-for-dom-gpurequestadapteroptions-xrcompatible\">xrCompatible</a></code>.</p>"
             }
           ],
           "additional": [
@@ -469,7 +469,7 @@
                   "html": "<p><var>key</var> <var>must</var> be the name of a member of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#supported-limits\" id=\"ref-for-supported-limits⑦\">supported limits</a>.</p>"
                 },
                 {
-                  "html": "<p><var>value</var> <var>must</var> be no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#limit-better\" id=\"ref-for-limit-better①⓪\">better</a> than <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-adapter-limits-slot\" id=\"ref-for-dom-adapter-limits-slot①\" data-timeline=\"device\">[[limits]]</a></code>[<var>key</var>].</p>"
+                  "html": "<p><var>value</var> <var>must</var> be no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#limit-better\" id=\"ref-for-limit-better①⓪\">better</a> than <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-adapter-limits-slot\" id=\"ref-for-dom-adapter-limits-slot①\" data-timeline=\"const\">[[limits]]</a></code>[<var>key</var>].</p>"
                 },
                 {
                   "html": "<p>If <var>key</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#limit-class\" id=\"ref-for-limit-class②\">class</a> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#limit-class-alignment\" id=\"ref-for-limit-class-alignment③\">alignment</a>, <var>value</var> <var>must</var> be a power of 2 less than 2<sup>32</sup>.</p>"
