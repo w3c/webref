@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-11-24T18:43:56.375Z",
+  "date": "2024-11-25T00:53:32.036Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -30,7 +30,7 @@
   },
   "stats": {
     "crawled": 644,
-    "errors": 1
+    "errors": 6
   },
   "crawler": "reffy-17.2.10",
   "results": [
@@ -3895,6 +3895,7 @@
       "date": "31 October 2024",
       "links": "links/EXT_blend_minmax.json",
       "idl": "idl/EXT_blend_minmax.idl",
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_blend_minmax/ triggered HTTP status 521\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:352:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)",
       "idlparsed": "idlparsed/EXT_blend_minmax.json"
     },
     {
@@ -4150,6 +4151,7 @@
       "date": "31 October 2024",
       "links": "links/EXT_float_blend.json",
       "idl": "idl/EXT_float_blend.idl",
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_float_blend/ triggered HTTP status 521\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:352:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)",
       "idlparsed": "idlparsed/EXT_float_blend.json"
     },
     {
@@ -4252,6 +4254,7 @@
       "date": "31 October 2024",
       "links": "links/EXT_shader_texture_lod.json",
       "idl": "idl/EXT_shader_texture_lod.idl",
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/ triggered HTTP status 521\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:352:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 75)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:373:21)",
       "idlparsed": "idlparsed/EXT_shader_texture_lod.json"
     },
     {
@@ -4303,6 +4306,7 @@
       "date": "31 October 2024",
       "links": "links/EXT_sRGB.json",
       "idl": "idl/EXT_sRGB.idl",
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_sRGB/ triggered HTTP status 521\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:352:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 76)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:373:21)",
       "idlparsed": "idlparsed/EXT_sRGB.json"
     },
     {
@@ -24265,7 +24269,7 @@
       ],
       "crawled": "https://drafts.csswg.org/cssom-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 23 Nov 2024 21:01:44 GMT"
+        "lastModified": "Sat, 23 Nov 2024 21:01:45 GMT"
       },
       "generator": "bikeshed",
       "date": "1 October 2024",
@@ -27567,7 +27571,8 @@
       "refs": "refs/mathml4.json",
       "dfns": "dfns/mathml4.json",
       "headings": "headings/mathml4.json",
-      "ids": "ids/mathml4.json"
+      "ids": "ids/mathml4.json",
+      "error": "Error: Loading https://w3c.github.io/mathml/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:352:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 479)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:373:21)"
     },
     {
       "url": "https://www.w3.org/TR/media-capabilities/",
