@@ -448,11 +448,11 @@
     {
       "name": "IPv6 parser",
       "href": "https://url.spec.whatwg.org/#concept-ipv6-parser",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-ipv6-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IPv6 parser</dfn> takes a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string⑤\">scalar value string</a> <var>input</var> and then runs these steps. They return failure or an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①②\">IPv6 address</a>.",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-ipv6-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IPv6 parser</dfn> takes a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string⑤\">scalar value string</a> <var>input</var> and then runs these steps. They return failure or an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①③\">IPv6 address</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>address</var> be a new <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①③\">IPv6 address</a> whose <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-piece\" id=\"ref-for-concept-ipv6-piece\">IPv6 pieces</a> are all 0. </p>"
+          "html": "<p>Let <var>address</var> be a new <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①④\">IPv6 address</a> whose <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-piece\" id=\"ref-for-concept-ipv6-piece\">pieces</a> are all 0. </p>"
         },
         {
           "html": "<p>Let <var>pieceIndex</var> be 0. </p>"
@@ -654,7 +654,7 @@
           "html": "<p>If <var>host</var> is an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv4\" id=\"ref-for-concept-ipv4①④\">IPv4 address</a>, return the result of\n running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv4-serializer\" id=\"ref-for-concept-ipv4-serializer\">IPv4 serializer</a> on <var>host</var>. </p>"
         },
         {
-          "html": "<p>Otherwise, if <var>host</var> is an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①④\">IPv6 address</a>, return U+005B ([), followed by the\n result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-serializer\" id=\"ref-for-concept-ipv6-serializer\">IPv6 serializer</a> on <var>host</var>, followed by U+005D (]). </p>"
+          "html": "<p>Otherwise, if <var>host</var> is an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①⑤\">IPv6 address</a>, return U+005B ([), followed by the\n result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-serializer\" id=\"ref-for-concept-ipv6-serializer\">IPv6 serializer</a> on <var>host</var>, followed by U+005D (]). </p>"
         },
         {
           "html": "<p>Otherwise, <var>host</var> is a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain\" id=\"ref-for-concept-domain⑨\">domain</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#opaque-host\" id=\"ref-for-opaque-host①④\">opaque host</a>, or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#empty-host\" id=\"ref-for-empty-host①\">empty host</a>,\n return <var>host</var>. </p>"
@@ -696,23 +696,20 @@
     {
       "name": "IPv6 serializer",
       "href": "https://url.spec.whatwg.org/#concept-ipv6-serializer",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-ipv6-serializer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IPv6 serializer</dfn> takes an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①⑤\">IPv6 address</a> <var>address</var> and then runs these steps. They return an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string①①\">ASCII string</a>.",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-ipv6-serializer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IPv6 serializer</dfn> takes an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①⑥\">IPv6 address</a> <var>address</var> and then runs these steps. They return an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string①①\">ASCII string</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>output</var> be the empty string. </p>"
         },
         {
-          "html": "<p>Let <var>compress</var> be an index to the first <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-piece\" id=\"ref-for-concept-ipv6-piece①\">IPv6 piece</a> in the first longest\n  sequences of <var>address</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-piece\" id=\"ref-for-concept-ipv6-piece②\">IPv6 pieces</a> that are 0. </p>"
-        },
-        {
-          "html": "<p>If there is no sequence of <var>address</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-piece\" id=\"ref-for-concept-ipv6-piece③\">IPv6 pieces</a> that are 0 that is\n longer than 1, then set <var>compress</var> to null. </p>"
+          "html": "<p>Let <var>compress</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#find-the-ipv6-address-compressed-piece-index\" id=\"ref-for-find-the-ipv6-address-compressed-piece-index\">finding the IPv6 address compressed piece index</a> given <var>address</var>. </p>"
         },
         {
           "html": "<p>Let <var>ignore0</var> be false. </p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>pieceIndex</var> in the range 0 to 7, inclusive:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>pieceIndex</var> of <var>address</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-piece\" id=\"ref-for-concept-ipv6-piece①\">pieces</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-get-the-indices\" id=\"ref-for-list-get-the-indices\">indices</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -726,7 +723,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>separator</var> be \"<code>::</code>\" if <var>pieceIndex</var> is 0, and\n     U+003A (:) otherwise. </p>"
+                  "html": "<p>Let <var>separator</var> be \"<code>::</code>\" if <var>pieceIndex</var> is 0; otherwise\n     U+003A (:). </p>"
                 },
                 {
                   "html": "<p>Append <var>separator</var> to <var>output</var>. </p>"
@@ -746,6 +743,65 @@
         },
         {
           "html": "<p>Return <var>output</var>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "find the IPv6 address compressed piece index",
+      "href": "https://url.spec.whatwg.org/#find-the-ipv6-address-compressed-piece-index",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-the-ipv6-address-compressed-piece-index\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find the IPv6 address compressed piece index</dfn> given an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①⑦\">IPv6 address</a> <var>address</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>longestIndex</var> be null. </p>"
+        },
+        {
+          "html": "<p>Let <var>longestSize</var> be 1. </p>"
+        },
+        {
+          "html": "<p>Let <var>foundIndex</var> be null. </p>"
+        },
+        {
+          "html": "<p>Let <var>foundSize</var> be 0. </p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>pieceIndex</var> of <var>address</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-piece\" id=\"ref-for-concept-ipv6-piece②\">pieces</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-get-the-indices\" id=\"ref-for-list-get-the-indices①\">indices</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>address</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-piece\" id=\"ref-for-concept-ipv6-piece③\">pieces</a>[<var>pieceIndex</var>] is not 0:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>foundSize</var> is greater than <var>longestSize</var>, then set <var>longestIndex</var> to <var>foundIndex</var> and <var>longestSize</var> to <var>foundSize</var>. </p>"
+                },
+                {
+                  "html": "Set <var>foundIndex</var> to null."
+                },
+                {
+                  "html": "Set <var>foundSize</var> to 0."
+                }
+              ]
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>foundIndex</var> is null, then set <var>foundIndex</var> to <var>pieceIndex</var>. </p>"
+                },
+                {
+                  "html": "<p>Increment <var>foundSize</var> by 1. </p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>foundSize</var> is greater than <var>longestSize</var>, then return <var>foundIndex</var>. </p>"
+        },
+        {
+          "html": "<p>Return <var>longestIndex</var>. </p>"
         }
       ]
     },
@@ -1336,7 +1392,7 @@
                               "html": "<p>Let <var>port</var> be the mathematical integer value that is represented\n         by <var>buffer</var> in radix-10 using <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-digit\" id=\"ref-for-ascii-digit⑧\">ASCII digits</a> for digits with values\n         0 through 9. </p>"
                             },
                             {
-                              "html": "<p>If <var>port</var> is greater than 2<sup>16</sup>&nbsp;−&nbsp;1, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#port-out-of-range\" id=\"ref-for-port-out-of-range\">port-out-of-range</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④④\">validation error</a>, return failure. </p>"
+                              "html": "<p>If <var>port</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#16-bit-unsigned-integer\" id=\"ref-for-16-bit-unsigned-integer③\">16-bit unsigned integer</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#port-out-of-range\" id=\"ref-for-port-out-of-range\">port-out-of-range</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④④\">validation error</a>, return failure. </p>"
                             },
                             {
                               "html": "<p>Set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port⑨\">port</a> to null, if <var>port</var> is <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②⑧\">scheme</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#default-port\" id=\"ref-for-default-port③\">default port</a>; otherwise to <var>port</var>. </p>"
@@ -1820,7 +1876,7 @@
           "html": "<p>Let <var>output</var> be the empty string. </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>segment</var> of <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path②⑧\">path</a>: append\n U+002F (/) followed by <var>segment</var> to <var>output</var>. </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>segment</var> of <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path②⑧\">path</a>: append\n U+002F (/) followed by <var>segment</var> to <var>output</var>. </p>"
         },
         {
           "html": "<p>Return <var>output</var>. </p>"
@@ -1920,7 +1976,7 @@
           "html": "<p>Let <var>output</var> be an initially empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a> of name-value tuples where\n both name and value hold a string. </p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> byte sequence <var>bytes</var> in <var>sequences</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> byte sequence <var>bytes</var> in <var>sequences</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1961,7 +2017,7 @@
           "html": "<p>Let <var>output</var> be the empty string. </p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>tuple</var> of <var>tuples</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>tuple</var> of <var>tuples</var>:",
           "rationale": "assert",
           "steps": [
             {
@@ -2375,7 +2431,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var>init</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence③\">sequence</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">for each</a> <var>innerSequence</var> of <var>init</var>:",
+          "html": "If <var>init</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence③\">sequence</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">for each</a> <var>innerSequence</var> of <var>init</var>:",
           "rationale": "if",
           "steps": [
             {
