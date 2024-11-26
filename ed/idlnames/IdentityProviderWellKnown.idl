@@ -1,4 +1,6 @@
 // Source: Federated Credential Management API (https://www.w3.org/TR/fedcm-1/)
 dictionary IdentityProviderWellKnown {
-  required sequence<USVString> provider_urls;
+  sequence<USVString> provider_urls;
+  USVString accounts_endpoint;
+  USVString login_url;
 };

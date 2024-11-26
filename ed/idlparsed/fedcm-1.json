@@ -412,7 +412,7 @@
         "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderrequestoptions"
       },
       "IdentityProviderWellKnown": {
-        "fragment": "dictionary IdentityProviderWellKnown {\n  required sequence<USVString> provider_urls;\n};",
+        "fragment": "dictionary IdentityProviderWellKnown {\n  sequence<USVString> provider_urls;\n  USVString accounts_endpoint;\n  USVString login_url;\n};",
         "type": "dictionary",
         "name": "IdentityProviderWellKnown",
         "inheritance": null,
@@ -439,8 +439,40 @@
               ]
             },
             "default": null,
-            "required": true,
+            "required": false,
             "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-provider_urls"
+          },
+          {
+            "type": "field",
+            "name": "accounts_endpoint",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-accounts_endpoint"
+          },
+          {
+            "type": "field",
+            "name": "login_url",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-login_url"
           }
         ],
         "extAttrs": [],

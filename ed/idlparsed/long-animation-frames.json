@@ -560,7 +560,17 @@
         "href": "https://w3c.github.io/long-animation-frames/#performancescripttiming"
       }
     },
-    "idlExtendedNames": {},
+    "idlExtendedNames": {
+      "PerformanceLongAnimationFrameTiming": [
+        {
+          "fragment": "PerformanceLongAnimationFrameTiming includes PaintTimingMixin;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "PerformanceLongAnimationFrameTiming",
+          "includes": "PaintTimingMixin"
+        }
+      ]
+    },
     "globals": {},
     "exposed": {
       "Window": [
@@ -572,7 +582,8 @@
       "PerformanceLongAnimationFrameTiming": [
         "PerformanceEntry",
         "DOMHighResTimeStamp",
-        "PerformanceScriptTiming"
+        "PerformanceScriptTiming",
+        "PaintTimingMixin"
       ],
       "PerformanceScriptTiming": [
         "PerformanceEntry",

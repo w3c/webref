@@ -14,3 +14,6 @@ interface PerformanceLongAnimationFrameTiming : PerformanceEntry {
     [SameObject] readonly attribute FrozenArray<PerformanceScriptTiming> scripts;
     [Default] object toJSON();
 };
+
+// Source: Long Animation Frames API (https://w3c.github.io/long-animation-frames/)
+PerformanceLongAnimationFrameTiming includes PaintTimingMixin;

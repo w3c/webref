@@ -620,13 +620,16 @@
           "html": "<p>Set <var>rootUrl</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path\">path</a> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> «\".well-known\", \"web-identity\"».</p>"
         },
         {
-          "html": "<p>Let <var>config</var>, <var>configInWellKnown</var> both be null.</p>"
+          "html": "<p>Let <var>config</var>, <var>wellKnown</var>, <var>accounts_url</var>, and <var>login_url</var> be null.</p>"
+        },
+        {
+          "html": "<p>Let <var>skipWellKnown</var> be false.</p>"
         },
         {
           "html": "<p>Let <var>rpOrigin</var> be <var>globalObject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window⑤\">associated Document</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin④\">origin</a>.</p>"
         },
         {
-          "html": "<p>If <var>rpOrigin</var> is not an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque\">opaque origin</a>, and <var>rootUrl</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host②\">host</a> is equal\nto <var>rpOrigin</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-registrable-domain\" id=\"ref-for-host-registrable-domain①\">registrable domain</a>, and <var>rootUrl</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②\">scheme</a> is\nequal to <var>rpOrigin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme\">scheme</a>, set <var>configInWellKnown</var> to true.</p>"
+          "html": "<p>If <var>rpOrigin</var> is not an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque\">opaque origin</a>, and <var>rootUrl</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host②\">host</a> is equal\nto <var>rpOrigin</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-registrable-domain\" id=\"ref-for-host-registrable-domain①\">registrable domain</a>, and <var>rootUrl</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②\">scheme</a> is\nequal to <var>rpOrigin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme\">scheme</a>, set <var>skipWellKnown</var> to true.</p>"
         },
         {
           "html": "Otherwise:",
@@ -636,20 +639,17 @@
               "html": "<p>Let <var>wellKnownRequest</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">request</a> as follows:</p>\n        <dl>\n         <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url①\">URL</a>\n         </dt><dd data-md=\"\">\n          <p><var>rootUrl</var></p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①\">client</a>\n         </dt><dd data-md=\"\">\n          <p>null</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-window\" id=\"ref-for-concept-request-window①\">window</a>\n         </dt><dd data-md=\"\">\n          <p>\"no-window\"</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-service-workers-mode\" id=\"ref-for-request-service-workers-mode①\">service-workers mode</a>\n         </dt><dd data-md=\"\">\n          <p>\"none\"</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination①\">destination</a>\n         </dt><dd data-md=\"\">\n          <p>\"webidentity\"</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin①\">origin</a>\n         </dt><dd data-md=\"\">\n          <p>a unique <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque①\">opaque origin</a></p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list①\">header list</a>\n         </dt><dd data-md=\"\">\n          <p>a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> containing a single <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header①\">header</a> with <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\" id=\"ref-for-concept-header-name①\">name</a> set to <code>Accept</code> and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-value\" id=\"ref-for-concept-header-value①\">value</a> set to <code>application/json</code></p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer-policy\" id=\"ref-for-concept-request-referrer-policy\">referrer policy</a>\n         </dt><dd data-md=\"\">\n          <p>\"no-referrer\"</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode①\">credentials mode</a>\n         </dt><dd data-md=\"\">\n          <p>\"omit\"</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode①\">mode</a>\n         </dt><dd data-md=\"\">\n          <p>\"no-cors\"</p>\n        </dd></dl>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#fetch-request\" id=\"ref-for-fetch-request①\">Fetch request</a> with <var>wellKnownRequest</var> and <var>globalObject</var>, and with <var>processResponseConsumeBody</var> set to the following steps given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a> <var>response</var> and <var>responseBody</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#fetch-request\" id=\"ref-for-fetch-request①\">Fetch request</a> with <var>wellKnownRequest</var> and <var>globalObject</var>, and with <var>processResponseConsumeBody</var> set to the following steps, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a> <var>response</var> and <var>responseBody</var>:",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>json</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#extract-the-json-fetch-response\" id=\"ref-for-extract-the-json-fetch-response①\">extract the JSON fetch response</a> from <var>response</var> and <var>responseBody</var>.</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value①\">Convert</a> <var>json</var> to an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderwellknown\" id=\"ref-for-dictdef-identityproviderwellknown\">IdentityProviderWellKnown</a></code>, <var>discovery</var>.</p>"
+                  "html": "<p>Set <var>wellKnown</var> to the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value①\">converting</a> <var>json</var> to an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderwellknown\" id=\"ref-for-dictdef-identityproviderwellknown\">IdentityProviderWellKnown</a></code>.</p>"
                 },
                 {
-                  "html": "<p>If one of the previous two steps threw an exception, or if the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> of <var>discovery</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-provider_urls\" id=\"ref-for-dom-identityproviderwellknown-provider_urls\">provider_urls</a></code>\"] is\ngreater than 1, set <var>configInWellKnown</var> to false.</p>"
-                },
-                {
-                  "html": "<p>Otherwise, set to <var>configInWellKnown</var> to true if <var>discovery</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-provider_urls\" id=\"ref-for-dom-identityproviderwellknown-provider_urls①\">provider_urls</a></code>\"][0] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is\">is</a> equal to <var>provider</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderconfig-configurl\" id=\"ref-for-dom-identityproviderconfig-configurl⑨\">configURL</a></code>, and to false otherwise.</p>"
+                  "html": "<p>If one of the previous two steps threw an exception, or if the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> of <var>wellKnown</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-provider_urls\" id=\"ref-for-dom-identityproviderwellknown-provider_urls\">provider_urls</a></code>\"] is\ngreater than 1, set <var>wellKnown</var> to failure.</p>"
                 }
               ]
             }
@@ -672,18 +672,63 @@
               "html": "<p>If one of the previous two steps threw an exception, set <var>config</var> to failure.</p>"
             },
             {
-              "html": "<p>Set <var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-login_url\" id=\"ref-for-dom-identityproviderapiconfig-login_url\">login_url</a></code> to the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#computing-the-manifest-url\" id=\"ref-for-computing-the-manifest-url①\">computing\nthe manifest URL</a> with <var>provider</var>, <var>config</var> and <var>globalObject</var>.</p>"
+              "html": "<p>Set <var>login_url</var> to the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#computing-the-manifest-url\" id=\"ref-for-computing-the-manifest-url①\">computing the manifest URL</a> with <var>provider</var>, <var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-login_url\" id=\"ref-for-dom-identityproviderapiconfig-login_url\">login_url</a></code>, and <var>globalObject</var>.</p>"
             },
             {
-              "html": "<p>If <var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-login_url\" id=\"ref-for-dom-identityproviderapiconfig-login_url①\">login_url</a></code> is null, return failure.</p>"
+              "html": "<p>Set <var>accounts_url</var> to the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#computing-the-manifest-url\" id=\"ref-for-computing-the-manifest-url②\">computing the manifest URL</a> with <var>provider</var>, <var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-accounts_endpoint\" id=\"ref-for-dom-identityproviderapiconfig-accounts_endpoint\">accounts_endpoint</a></code>, and <var>globalObject</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>login_url</var> or <var>accounts_url</var> is failure, set <var>config</var> to failure.</p>"
             }
           ]
         },
         {
-          "html": "<p>Wait for both <var>config</var> and <var>configInWellKnown</var> to be set.</p>"
+          "html": "<p>Wait for <var>config</var> to be set.</p>"
         },
         {
-          "html": "<p>If <var>configInWellKnown</var> is true, return <var>config</var>. Otherwise, return failure.</p>"
+          "html": "<p>If <var>config</var> is failure, return failure.</p>"
+        },
+        {
+          "html": "<p>If <var>skipWellKnown</var> is true, return <var>config</var>.</p>"
+        },
+        {
+          "html": "<p>Wait for <var>wellKnown</var> to be set.</p>"
+        },
+        {
+          "html": "<p>If <var>wellKnown</var> is failure, return failure.</p>"
+        },
+        {
+          "html": "If <var>wellKnown</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-accounts_endpoint\" id=\"ref-for-dom-identityproviderwellknown-accounts_endpoint\">accounts_endpoint</a></code> and <var>wellKnown</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-login_url\" id=\"ref-for-dom-identityproviderwellknown-login_url\">login_url</a></code> are set:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>well_known_accounts_url</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#computing-the-manifest-url\" id=\"ref-for-computing-the-manifest-url③\">computing the manifest URL</a> with <var>provider</var>, <var>wellKnown</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-accounts_endpoint\" id=\"ref-for-dom-identityproviderwellknown-accounts_endpoint①\">accounts_endpoint</a></code>,\nand <var>globalObject</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>well_known_login_url</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#computing-the-manifest-url\" id=\"ref-for-computing-the-manifest-url④\">computing the manifest URL</a> with <var>provider</var>, <var>wellKnown</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-login_url\" id=\"ref-for-dom-identityproviderwellknown-login_url①\">login_url</a></code>, and <var>globalObject</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>well_known_accounts_url</var> is not <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-equals\" id=\"ref-for-concept-url-equals\">equal</a> to <var>accounts_url</var>, return failure.</p>"
+            },
+            {
+              "html": "<p>If <var>well_known_login_url</var> is not <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-equals\" id=\"ref-for-concept-url-equals①\">equal</a> to <var>login_url</var>, return failure.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>allowed_config_url</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#computing-the-manifest-url\" id=\"ref-for-computing-the-manifest-url⑤\">computing the manifest URL</a> with <var>provider</var>, <var>wellKnown</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-provider_urls\" id=\"ref-for-dom-identityproviderwellknown-provider_urls①\">provider_urls</a></code>[0], and <var>globalObject</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>allowed_config_url</var> is not <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-equals\" id=\"ref-for-concept-url-equals②\">equal</a> to <var>configUrl</var>, return failure.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>config</var>.</p>"
         }
       ]
     },
@@ -694,7 +739,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>accountsUrl</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#computing-the-manifest-url\" id=\"ref-for-computing-the-manifest-url②\">computing the manifest URL</a> given <var>provider</var>, <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-accounts_endpoint\" id=\"ref-for-dom-identityproviderapiconfig-accounts_endpoint①\">accounts_endpoint</a></code>\"], and <var>globalObject</var>.</p>"
+          "html": "<p>Let <var>accountsUrl</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#computing-the-manifest-url\" id=\"ref-for-computing-the-manifest-url⑥\">computing the manifest URL</a> given <var>provider</var>, <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-accounts_endpoint\" id=\"ref-for-dom-identityproviderapiconfig-accounts_endpoint②\">accounts_endpoint</a></code>\"], and <var>globalObject</var>.</p>"
         },
         {
           "html": "<p>If <var>accountsUrl</var> is failure, return an empty list.</p>"
@@ -760,11 +805,11 @@
     {
       "name": "fetch an identity assertion",
       "href": "https://w3c-fedid.github.io/FedCM/#fetch-an-identity-assertion",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-an-identity-assertion\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch an identity assertion</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString②③\">USVString</a></code> <var>accountId</var>, a boolean <var>disclosureTextShown</var>, a boolean <var>isAutoSelected</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderrequestoptions\" id=\"ref-for-dictdef-identityproviderrequestoptions④\">IdentityProviderRequestOptions</a></code> <var>provider</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderapiconfig\" id=\"ref-for-dictdef-identityproviderapiconfig③\">IdentityProviderAPIConfig</a></code> <var>config</var>,\n    and <var>globalObject</var>, run the following steps. This returns an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#identitycredential\" id=\"ref-for-identitycredential①⓪\">IdentityCredential</a></code> or failure.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-an-identity-assertion\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch an identity assertion</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString②⑤\">USVString</a></code> <var>accountId</var>, a boolean <var>disclosureTextShown</var>, a boolean <var>isAutoSelected</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderrequestoptions\" id=\"ref-for-dictdef-identityproviderrequestoptions④\">IdentityProviderRequestOptions</a></code> <var>provider</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderapiconfig\" id=\"ref-for-dictdef-identityproviderapiconfig③\">IdentityProviderAPIConfig</a></code> <var>config</var>,\n    and <var>globalObject</var>, run the following steps. This returns an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#identitycredential\" id=\"ref-for-identitycredential①⓪\">IdentityCredential</a></code> or failure.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>tokenUrl</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#computing-the-manifest-url\" id=\"ref-for-computing-the-manifest-url③\">computing the manifest URL</a> given <var>provider</var>, <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-id_assertion_endpoint\" id=\"ref-for-dom-identityproviderapiconfig-id_assertion_endpoint①\">id_assertion_endpoint</a></code>\"], and <var>globalObject</var>.</p>"
+          "html": "<p>Let <var>tokenUrl</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#computing-the-manifest-url\" id=\"ref-for-computing-the-manifest-url⑦\">computing the manifest URL</a> given <var>provider</var>, <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-id_assertion_endpoint\" id=\"ref-for-dom-identityproviderapiconfig-id_assertion_endpoint①\">id_assertion_endpoint</a></code>\"], and <var>globalObject</var>.</p>"
         },
         {
           "html": "<p>If <var>tokenUrl</var> is failure, return failure.</p>"
@@ -944,7 +989,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>clientMetadataUrl</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#computing-the-manifest-url\" id=\"ref-for-computing-the-manifest-url④\">computing the manifest URL</a> given <var>provider</var>, <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-client_metadata_endpoint\" id=\"ref-for-dom-identityproviderapiconfig-client_metadata_endpoint①\">client_metadata_endpoint</a></code>\"], and <var>globalObject</var>.</p>"
+          "html": "<p>Let <var>clientMetadataUrl</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#computing-the-manifest-url\" id=\"ref-for-computing-the-manifest-url⑧\">computing the manifest URL</a> given <var>provider</var>, <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-client_metadata_endpoint\" id=\"ref-for-dom-identityproviderapiconfig-client_metadata_endpoint①\">client_metadata_endpoint</a></code>\"], and <var>globalObject</var>.</p>"
         },
         {
           "html": "<p>If <var>clientMetadataUrl</var> is failure, return failure.</p>"
@@ -981,7 +1026,7 @@
     {
       "name": "parse url",
       "href": "https://w3c-fedid.github.io/FedCM/#parse-url",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse url</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString②⑧\">USVString</a></code> <var>stringUrl</var>, a <var>globalObject</var>, and an optional <var>baseUrl</var> (default null), run the following steps. This returns a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url②\">URL</a> or failure.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse url</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString③⓪\">USVString</a></code> <var>stringUrl</var>, a <var>globalObject</var>, and an optional <var>baseUrl</var> (default null), run the following steps. This returns a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url②\">URL</a> or failure.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1022,7 +1067,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>configUrl</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#parse-url\" id=\"ref-for-parse-url⑥\">parse url</a> with <var>provider</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderconfig-configurl\" id=\"ref-for-dom-identityproviderconfig-configurl①⓪\">configURL</a></code> and <var>globalObject</var>.</p>"
+          "html": "<p>Let <var>configUrl</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#parse-url\" id=\"ref-for-parse-url⑥\">parse url</a> with <var>provider</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderconfig-configurl\" id=\"ref-for-dom-identityproviderconfig-configurl⑨\">configURL</a></code> and <var>globalObject</var>.</p>"
         },
         {
           "html": "<p>Let <var>manifestUrl</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#parse-url\" id=\"ref-for-parse-url⑦\">parse url</a> given <var>manifestString</var> (the relative\nURL), <var>globalObject</var>, and <var>configUrl</var> (the base URL).</p>"
@@ -1086,13 +1131,13 @@
           "html": "<p>Let <var>loginUrl</var> be null.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task④\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source③\">DOM manipulation task source</a> given <var>globalObject</var> to set <var>loginUrl</var> to the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser②\">url parser</a> with <var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-login_url\" id=\"ref-for-dom-identityproviderapiconfig-login_url②\">login_url</a></code>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task④\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source③\">DOM manipulation task source</a> given <var>globalObject</var> to set <var>loginUrl</var> to the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser②\">url parser</a> with <var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-login_url\" id=\"ref-for-dom-identityproviderapiconfig-login_url①\">login_url</a></code>.</p>"
         },
         {
           "html": "<p>Wait until <var>loginUrl</var> is not null.</p>"
         },
         {
-          "html": "<p class=\"assertion\">Assert: <var>loginUrl</var> is not failure (the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑥\">user agent</a> has previously checked that <var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-login_url\" id=\"ref-for-dom-identityproviderapiconfig-login_url③\">login_url</a></code> is a valid URL).</p>"
+          "html": "<p class=\"assertion\">Assert: <var>loginUrl</var> is not failure (the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑥\">user agent</a> has previously checked that <var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-login_url\" id=\"ref-for-dom-identityproviderapiconfig-login_url②\">login_url</a></code> is a valid URL).</p>"
         },
         {
           "html": "<p>Let <var>queryList</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>.</p>"
@@ -1132,7 +1177,7 @@
               "html": "<p>Close the traversable.</p>"
             },
             {
-              "html": "<p>Let <var>loginStatus</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#get-the-login-status\" id=\"ref-for-get-the-login-status①\">get the login status</a> with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑦\">origin</a> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-login_url\" id=\"ref-for-dom-identityproviderapiconfig-login_url④\">login_url</a></code>.</p>"
+              "html": "<p>Let <var>loginStatus</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#get-the-login-status\" id=\"ref-for-get-the-login-status①\">get the login status</a> with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑦\">origin</a> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-login_url\" id=\"ref-for-dom-identityproviderapiconfig-login_url③\">login_url</a></code>.</p>"
             },
             {
               "html": "<p>If <var>loginStatus</var> is <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#logged-in\" id=\"ref-for-logged-in②\">logged-in</a>, return success.</p>"
@@ -1240,7 +1285,7 @@
           "html": "<p>If there does not exist an account <var>account</var> such that <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#connected-accounts-set\" id=\"ref-for-connected-accounts-set①②\">connected accounts set</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑨\">contains</a> the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#compute-the-connected-account-key\" id=\"ref-for-compute-the-connected-account-key③\">compute the connected account key</a> given <var>account</var>, <var>provider</var>, and <var>globalObject</var>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑨\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror①④\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑦\">DOMException</a></code>. This check can be performed by iterating over the <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#connected-accounts-set\" id=\"ref-for-connected-accounts-set①③\">connected accounts set</a> or by keeping a separate data structure to make this lookup fast.</p>"
         },
         {
-          "html": "<p>Let <var>configUrl</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#parse-url\" id=\"ref-for-parse-url⑧\">parse url</a> with <var>provider</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderconfig-configurl\" id=\"ref-for-dom-identityproviderconfig-configurl①②\">configURL</a></code> and <var>globalObject</var>.</p>"
+          "html": "<p>Let <var>configUrl</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#parse-url\" id=\"ref-for-parse-url⑧\">parse url</a> with <var>provider</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderconfig-configurl\" id=\"ref-for-dom-identityproviderconfig-configurl①①\">configURL</a></code> and <var>globalObject</var>.</p>"
         },
         {
           "html": "<p>If <var>configUrl</var> is failure, throw an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑧\">DOMException</a></code>.</p>"
