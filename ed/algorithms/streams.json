@@ -5918,7 +5918,19 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>returnValue</var> be the result of performing <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultcontroller-strategysizealgorithm\" id=\"ref-for-writablestreamdefaultcontroller-strategysizealgorithm②\">[[strategySizeAlgorithm]]</a>, passing in <var>chunk</var>,\n  and interpreting the result as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type②\">completion record</a>.</p>"
+          "html": "If <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultcontroller-strategysizealgorithm\" id=\"ref-for-writablestreamdefaultcontroller-strategysizealgorithm②\">[[strategySizeAlgorithm]]</a> is undefined, then:",
+          "rationale": "assert",
+          "steps": [
+            {
+              "html": "<p class=\"assertion\">Assert: <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultcontroller-stream\" id=\"ref-for-writablestreamdefaultcontroller-stream⑤\">[[stream]]</a>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-state\" id=\"ref-for-writablestream-state③②\">[[state]]</a> is \"<code>erroring</code>\" or\n  \"<code>errored</code>\".</p>"
+            },
+            {
+              "html": "<p>Return 1.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>returnValue</var> be the result of performing <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultcontroller-strategysizealgorithm\" id=\"ref-for-writablestreamdefaultcontroller-strategysizealgorithm③\">[[strategySizeAlgorithm]]</a>, passing in <var>chunk</var>,\n  and interpreting the result as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type②\">completion record</a>.</p>"
         },
         {
           "html": "If <var>returnValue</var> is an abrupt completion,",
@@ -5955,7 +5967,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>stream</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultcontroller-stream\" id=\"ref-for-writablestreamdefaultcontroller-stream⑤\">[[stream]]</a>.</p>"
+          "html": "<p>Let <var>stream</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultcontroller-stream\" id=\"ref-for-writablestreamdefaultcontroller-stream⑥\">[[stream]]</a>.</p>"
         },
         {
           "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#writable-stream-mark-close-request-in-flight\" id=\"ref-for-writable-stream-mark-close-request-in-flight\">WritableStreamMarkCloseRequestInFlight</a>(<var>stream</var>).</p>"
@@ -5999,7 +6011,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>stream</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultcontroller-stream\" id=\"ref-for-writablestreamdefaultcontroller-stream⑥\">[[stream]]</a>.</p>"
+          "html": "<p>Let <var>stream</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultcontroller-stream\" id=\"ref-for-writablestreamdefaultcontroller-stream⑦\">[[stream]]</a>.</p>"
         },
         {
           "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#writable-stream-mark-first-write-request-in-flight\" id=\"ref-for-writable-stream-mark-first-write-request-in-flight\">WritableStreamMarkFirstWriteRequestInFlight</a>(<var>stream</var>).</p>"
@@ -6015,7 +6027,7 @@
               "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#writable-stream-finish-in-flight-write\" id=\"ref-for-writable-stream-finish-in-flight-write\">WritableStreamFinishInFlightWrite</a>(<var>stream</var>).</p>"
             },
             {
-              "html": "<p>Let <var>state</var> be <var>stream</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-state\" id=\"ref-for-writablestream-state③②\">[[state]]</a>.</p>"
+              "html": "<p>Let <var>state</var> be <var>stream</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-state\" id=\"ref-for-writablestream-state③③\">[[state]]</a>.</p>"
             },
             {
               "html": "<p class=\"assertion\">Assert: <var>state</var> is \"<code>writable</code>\" or \"<code>erroring</code>\".</p>"
@@ -6045,7 +6057,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>stream</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-state\" id=\"ref-for-writablestream-state③③\">[[state]]</a> is \"<code>writable</code>\", perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#writable-stream-default-controller-clear-algorithms\" id=\"ref-for-writable-stream-default-controller-clear-algorithms③\">WritableStreamDefaultControllerClearAlgorithms</a>(<var>controller</var>).</p>"
+              "html": "<p>If <var>stream</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-state\" id=\"ref-for-writablestream-state③④\">[[state]]</a> is \"<code>writable</code>\", perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#writable-stream-default-controller-clear-algorithms\" id=\"ref-for-writable-stream-default-controller-clear-algorithms③\">WritableStreamDefaultControllerClearAlgorithms</a>(<var>controller</var>).</p>"
             },
             {
               "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#writable-stream-finish-in-flight-write-with-error\" id=\"ref-for-writable-stream-finish-in-flight-write-with-error\">WritableStreamFinishInFlightWriteWithError</a>(<var>stream</var>, <var>reason</var>).</p>"
@@ -6076,10 +6088,10 @@
           ]
         },
         {
-          "html": "<p>Let <var>stream</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultcontroller-stream\" id=\"ref-for-writablestreamdefaultcontroller-stream⑦\">[[stream]]</a>.</p>"
+          "html": "<p>Let <var>stream</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultcontroller-stream\" id=\"ref-for-writablestreamdefaultcontroller-stream⑧\">[[stream]]</a>.</p>"
         },
         {
-          "html": "If ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#writable-stream-close-queued-or-in-flight\" id=\"ref-for-writable-stream-close-queued-or-in-flight①①\">WritableStreamCloseQueuedOrInFlight</a>(<var>stream</var>) is false and <var>stream</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-state\" id=\"ref-for-writablestream-state③④\">[[state]]</a> is \"<code>writable</code>\",",
+          "html": "If ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#writable-stream-close-queued-or-in-flight\" id=\"ref-for-writable-stream-close-queued-or-in-flight①①\">WritableStreamCloseQueuedOrInFlight</a>(<var>stream</var>) is false and <var>stream</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-state\" id=\"ref-for-writablestream-state③⑤\">[[state]]</a> is \"<code>writable</code>\",",
           "rationale": "let",
           "steps": [
             {
@@ -6592,7 +6604,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>stream</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstream-writable\" id=\"ref-for-transformstream-writable⑥\">[[writable]]</a>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-state\" id=\"ref-for-writablestream-state③⑤\">[[state]]</a> is \"<code>writable</code>\".</p>"
+          "html": "<p class=\"assertion\">Assert: <var>stream</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstream-writable\" id=\"ref-for-transformstream-writable⑥\">[[writable]]</a>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-state\" id=\"ref-for-writablestream-state③⑥\">[[state]]</a> is \"<code>writable</code>\".</p>"
         },
         {
           "html": "<p>Let <var>controller</var> be <var>stream</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstream-controller\" id=\"ref-for-transformstream-controller⑦\">[[controller]]</a>.</p>"
@@ -6615,7 +6627,7 @@
                   "html": "<p>Let <var>writable</var> be <var>stream</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstream-writable\" id=\"ref-for-transformstream-writable⑦\">[[writable]]</a>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>state</var> be <var>writable</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-state\" id=\"ref-for-writablestream-state③⑥\">[[state]]</a>.</p>"
+                  "html": "<p>Let <var>state</var> be <var>writable</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-state\" id=\"ref-for-writablestream-state③⑦\">[[state]]</a>.</p>"
                 },
                 {
                   "html": "<p>If <var>state</var> is \"<code>erroring</code>\", throw <var>writable</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-storederror\" id=\"ref-for-writablestream-storederror①⑥\">[[storedError]]</a>.</p>"
@@ -6804,7 +6816,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>writable</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-state\" id=\"ref-for-writablestream-state③⑦\">[[state]]</a> is \"<code>errored</code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⓪\">reject</a> <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstreamdefaultcontroller-finishpromise\" id=\"ref-for-transformstreamdefaultcontroller-finishpromise①⑦\">[[finishPromise]]</a> with <var>writable</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-storederror\" id=\"ref-for-writablestream-storederror①⑦\">[[storedError]]</a>.</p>"
+                  "html": "<p>If <var>writable</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-state\" id=\"ref-for-writablestream-state③⑧\">[[state]]</a> is \"<code>errored</code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⓪\">reject</a> <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstreamdefaultcontroller-finishpromise\" id=\"ref-for-transformstreamdefaultcontroller-finishpromise①⑦\">[[finishPromise]]</a> with <var>writable</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-storederror\" id=\"ref-for-writablestream-storederror①⑦\">[[storedError]]</a>.</p>"
                 },
                 {
                   "html": "Otherwise:",
