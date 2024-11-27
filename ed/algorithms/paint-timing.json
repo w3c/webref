@@ -118,6 +118,12 @@
           "html": "<p>Let <var>reportedPaints</var> be the <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#set-of-previously-reported-paints\" id=\"ref-for-set-of-previously-reported-paints①\">set of previously reported paints</a>.</p>"
         },
         {
+          "html": "<p>Let <var>frameTimingInfo</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frame/#current-frame-timing-info\" id=\"ref-for-current-frame-timing-info\">current frame timing info</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frame/#current-frame-timing-info\" id=\"ref-for-current-frame-timing-info①\">current frame timing info</a> to null.</p>"
+        },
+        {
           "html": "Let <var>flushPaintTimings</var> be the following steps:",
           "rationale": "if",
           "steps": [
@@ -138,6 +144,9 @@
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#report-element-timing\" id=\"ref-for-report-element-timing\">Report element timing</a> given <var>document</var>, <var>paintTimingInfo</var>, <var>paintedImages</var> and <var>paintedTextNodes</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>frameTimingInfo</var> is not null, then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frame/#queue-a-long-animation-frame-entry\" id=\"ref-for-queue-a-long-animation-frame-entry\">queue a long animation frame entry</a> given <var>document</var>, <var>frameTimingInfo</var>, and <var>paintTimingInfo</var>.</p>"
             }
           ]
         },
