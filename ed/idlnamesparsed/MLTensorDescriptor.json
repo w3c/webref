@@ -1,0 +1,29 @@
+{
+  "name": "MLTensorDescriptor",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Neural Network API",
+      "url": "https://www.w3.org/TR/webnn/"
+    },
+    "fragment": "dictionary MLTensorDescriptor : MLOperandDescriptor {\n  boolean readable = false;\n  boolean writable = false;\n};",
+    "href": "https://webmachinelearning.github.io/webnn/#dictdef-mltensordescriptor"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "MLOperandDescriptor",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "dictionary MLOperandDescriptor {\n  required MLOperandDataType dataType;\n  required sequence<[EnforceRange] unsigned long> shape;\n};",
+      "href": "https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

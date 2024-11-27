@@ -6,7 +6,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {\n  Promise<MLComputeResult> compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n\n  MLOpSupportLimits opSupportLimits();\n};",
+    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {\n  // ISSUE(791): compute() will soon be removed in favor of dispatch().\n  Promise<MLComputeResult> compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n  undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);\n\n  Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);\n\n  Promise<ArrayBuffer> readTensor(MLTensor tensor);\n  Promise<undefined> readTensor(MLTensor tensor, AllowSharedBufferSource outputData);\n\n  undefined writeTensor(MLTensor tensor, AllowSharedBufferSource inputData);\n\n  MLOpSupportLimits opSupportLimits();\n};",
     "href": "https://webmachinelearning.github.io/webnn/#mlcontext"
   },
   "extended": [],

@@ -18,13 +18,15 @@
           "ML",
           "MLContext",
           "MLGraph",
-          "MLOperand"
+          "MLOperand",
+          "MLTensor"
         ],
         "DedicatedWorker": [
           "ML",
           "MLContext",
           "MLGraph",
-          "MLOperand"
+          "MLOperand",
+          "MLTensor"
         ]
       }
     },
@@ -318,6 +320,38 @@
         "extAttrs": [],
         "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlnamedarraybufferviews"
       },
+      "MLNamedTensors": {
+        "fragment": "typedef record<USVString, MLTensor> MLNamedTensors;",
+        "type": "typedef",
+        "name": "MLNamedTensors",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "record",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLTensor"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlnamedtensors"
+      },
       "MLComputeResult": {
         "fragment": "dictionary MLComputeResult {\n  MLNamedArrayBufferViews inputs;\n  MLNamedArrayBufferViews outputs;\n};",
         "type": "dictionary",
@@ -362,7 +396,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlcomputeresult"
       },
       "MLContext": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {\n  Promise<MLComputeResult> compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n\n  MLOpSupportLimits opSupportLimits();\n};",
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {\n  // ISSUE(791): compute() will soon be removed in favor of dispatch().\n  Promise<MLComputeResult> compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n  undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);\n\n  Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);\n\n  Promise<ArrayBuffer> readTensor(MLTensor tensor);\n  Promise<undefined> readTensor(MLTensor tensor, AllowSharedBufferSource outputData);\n\n  undefined writeTensor(MLTensor tensor, AllowSharedBufferSource inputData);\n\n  MLOpSupportLimits opSupportLimits();\n};",
         "type": "interface",
         "name": "MLContext",
         "inheritance": null,
@@ -440,6 +474,262 @@
             "extAttrs": [],
             "special": "",
             "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-compute"
+          },
+          {
+            "type": "operation",
+            "name": "dispatch",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "graph",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLGraph"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "inputs",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLNamedTensors"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "outputs",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLNamedTensors"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-dispatch"
+          },
+          {
+            "type": "operation",
+            "name": "createTensor",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLTensor"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "descriptor",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLTensorDescriptor"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-createtensor"
+          },
+          {
+            "type": "operation",
+            "name": "readTensor",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ArrayBuffer"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "tensor",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLTensor"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-readtensor"
+          },
+          {
+            "type": "operation",
+            "name": "readTensor",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "tensor",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLTensor"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "outputData",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AllowSharedBufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-readtensor-tensor-outputdata"
+          },
+          {
+            "type": "operation",
+            "name": "writeTensor",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "tensor",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLTensor"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "inputData",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AllowSharedBufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-writetensor"
           },
           {
             "type": "operation",
@@ -994,6 +1284,178 @@
         },
         "extAttrs": [],
         "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlnumber"
+      },
+      "MLTensorDescriptor": {
+        "fragment": "dictionary MLTensorDescriptor : MLOperandDescriptor {\n  boolean readable = false;\n  boolean writable = false;\n};",
+        "type": "dictionary",
+        "name": "MLTensorDescriptor",
+        "inheritance": "MLOperandDescriptor",
+        "members": [
+          {
+            "type": "field",
+            "name": "readable",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mltensordescriptor-readable"
+          },
+          {
+            "type": "field",
+            "name": "writable",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mltensordescriptor-writable"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mltensordescriptor"
+      },
+      "MLTensor": {
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLTensor {\n  readonly attribute MLOperandDataType dataType;\n  readonly attribute FrozenArray<unsigned long> shape;\n  readonly attribute boolean readable;\n  readonly attribute boolean writable;\n\n  undefined destroy();\n};",
+        "type": "interface",
+        "name": "MLTensor",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "dataType",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLOperandDataType"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mltensor-datatype"
+          },
+          {
+            "type": "attribute",
+            "name": "shape",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mltensor-shape"
+          },
+          {
+            "type": "attribute",
+            "name": "readable",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mltensor-readable"
+          },
+          {
+            "type": "attribute",
+            "name": "writable",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mltensor-writable"
+          },
+          {
+            "type": "operation",
+            "name": "destroy",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mltensor-destroy"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#mltensor"
       },
       "MLNamedOperands": {
         "fragment": "typedef record<USVString, MLOperand> MLNamedOperands;",
@@ -12082,6 +12544,7 @@
         "MLContext",
         "MLGraph",
         "MLOperand",
+        "MLTensor",
         "MLGraphBuilder"
       ],
       "DedicatedWorker": [
@@ -12089,6 +12552,7 @@
         "MLContext",
         "MLGraph",
         "MLOperand",
+        "MLTensor",
         "MLGraphBuilder"
       ]
     },
@@ -12118,6 +12582,11 @@
         "MLComputeResult",
         "MLGraph",
         "MLNamedArrayBufferViews",
+        "MLNamedTensors",
+        "MLTensor",
+        "MLTensorDescriptor",
+        "ArrayBuffer",
+        "AllowSharedBufferSource",
         "MLOpSupportLimits"
       ],
       "MLOpSupportLimits": [
@@ -12157,6 +12626,12 @@
         "MLOperandDataType"
       ],
       "MLOperatorOptions": [],
+      "MLTensorDescriptor": [
+        "MLOperandDescriptor"
+      ],
+      "MLTensor": [
+        "MLOperandDataType"
+      ],
       "MLGraphBuilder": [
         "MLContext",
         "MLOperand",
@@ -12341,7 +12816,9 @@
     },
     "externalDependencies": [
       "GPUDevice",
-      "ArrayBufferView"
+      "ArrayBufferView",
+      "ArrayBuffer",
+      "AllowSharedBufferSource"
     ],
     "hasObsoleteIdl": false
   }
