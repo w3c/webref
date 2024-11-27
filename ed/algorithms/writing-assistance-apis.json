@@ -359,10 +359,10 @@
               ]
             },
             {
-              "html": "<p>Let <var>availableLanguages</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#current-summarizer-language-availability-map\" id=\"ref-for-current-summarizer-language-availability-map\">current summarizer language availability map</a>.</p>"
+              "html": "<p>Let « <var>readilyAvailableLanguages</var>, <var>afterDownloadAvailableLanguages</var> » be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#current-summarizer-language-availabilities\" id=\"ref-for-current-summarizer-language-availabilities\">current summarizer language availabilities</a>.</p>"
             },
             {
-              "html": "If <var>availableLanguages</var> is null, or <var>availableCreateOptions</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values\">values</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> null, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑤\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source⑤\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a> to perform the following steps:",
+              "html": "If <var>readilyAvailableLanguages</var> is null, <var>afterDownloadAvailableLanguages</var> is null, or <var>availableCreateOptions</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values\">values</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> null, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑤\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source⑤\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a> to perform the following steps:",
               "rationale": "reject",
               "steps": [
                 {
@@ -375,7 +375,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>capabilitiesObject</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities\" id=\"ref-for-aisummarizercapabilities①\">AISummarizerCapabilities</a></code> object, created in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑥\">relevant realm</a>, with</p>\n          <dl class=\"props\">\n           <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-available-create-options\" id=\"ref-for-aisummarizercapabilities-available-create-options\">available create options</a>\n           </dt><dd data-md=\"\">\n            <p><var>availableCreateOptions</var></p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-available-languages\" id=\"ref-for-aisummarizercapabilities-available-languages\">available languages</a>\n           </dt><dd data-md=\"\">\n            <p><var>availableLanguages</var></p>\n          </dd></dl>"
+                  "html": "<p>Let <var>capabilitiesObject</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities\" id=\"ref-for-aisummarizercapabilities①\">AISummarizerCapabilities</a></code> object, created in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑥\">relevant realm</a>, with</p>\n          <dl class=\"props\">\n           <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-available-create-options\" id=\"ref-for-aisummarizercapabilities-available-create-options\">available create options</a>\n           </dt><dd data-md=\"\">\n            <p><var>availableCreateOptions</var></p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-readily-available-languages\" id=\"ref-for-aisummarizercapabilities-readily-available-languages\">readily available languages</a>\n           </dt><dd data-md=\"\">\n            <p><var>readilyAvailableLanguages</var></p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-after-download-available-languages\" id=\"ref-for-aisummarizercapabilities-after-download-available-languages\">after-download available languages</a>\n           </dt><dd data-md=\"\">\n            <p><var>afterDownloadAvailableLanguages</var></p>\n          </dd></dl>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>promise</var> with <var>capabilitiesObject</var>.</p>"
@@ -393,13 +393,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-available-languages\" id=\"ref-for-aisummarizercapabilities-available-languages①\">available languages</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-is-empty\" id=\"ref-for-map-is-empty\">are empty</a>, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-no\" id=\"ref-for-dom-aicapabilityavailability-no②\">no</a></code>\".</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-readily-available-languages\" id=\"ref-for-aisummarizercapabilities-readily-available-languages①\">readily available languages</a> and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-after-download-available-languages\" id=\"ref-for-aisummarizercapabilities-after-download-available-languages①\">after-download available languages</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-is-empty\" id=\"ref-for-map-is-empty\">are empty</a>, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-no\" id=\"ref-for-dom-aicapabilityavailability-no①\">no</a></code>\".</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>'s all of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-available-create-options\" id=\"ref-for-aisummarizercapabilities-available-create-options①\">available create options</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values②\">values</a> are \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-no\" id=\"ref-for-dom-aicapabilityavailability-no③\">no</a></code>\", then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-no\" id=\"ref-for-dom-aicapabilityavailability-no④\">no</a></code>\".</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>'s all of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-available-create-options\" id=\"ref-for-aisummarizercapabilities-available-create-options①\">available create options</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values①\">values</a> are \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-no\" id=\"ref-for-dom-aicapabilityavailability-no②\">no</a></code>\", then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-no\" id=\"ref-for-dom-aicapabilityavailability-no③\">no</a></code>\".</p>"
         },
         {
-          "html": "<p>If all of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-available-create-options\" id=\"ref-for-aisummarizercapabilities-available-create-options②\">available create options</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values③\">values</a> or all of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-available-languages\" id=\"ref-for-aisummarizercapabilities-available-languages②\">available languages</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values④\">values</a> are \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-after-download\" id=\"ref-for-dom-aicapabilityavailability-after-download①\">after-download</a></code>\", then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-after-download\" id=\"ref-for-dom-aicapabilityavailability-after-download②\">after-download</a></code>\".</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-readily-available-languages\" id=\"ref-for-aisummarizercapabilities-readily-available-languages②\">readily available languages</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-is-empty\" id=\"ref-for-map-is-empty①\">are empty</a>, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-after-download\" id=\"ref-for-dom-aicapabilityavailability-after-download①\">after-download</a></code>\".</p>"
         },
         {
           "html": "<p>Return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-readily\" id=\"ref-for-dom-aicapabilityavailability-readily②\">readily</a></code>\".</p>"
@@ -413,7 +413,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-available-create-options\" id=\"ref-for-aisummarizercapabilities-available-create-options③\">available create options</a>[(<var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-type\" id=\"ref-for-dom-aisummarizercreatecoreoptions-type⑤\">type</a></code>\"], <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-format\" id=\"ref-for-dom-aisummarizercreatecoreoptions-format⑤\">format</a></code>\"], <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-length\" id=\"ref-for-dom-aisummarizercreatecoreoptions-length⑤\">length</a></code>\"])].</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-available-create-options\" id=\"ref-for-aisummarizercapabilities-available-create-options②\">available create options</a>[(<var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-type\" id=\"ref-for-dom-aisummarizercreatecoreoptions-type⑤\">type</a></code>\"], <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-format\" id=\"ref-for-dom-aisummarizercreatecoreoptions-format⑤\">format</a></code>\"], <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-length\" id=\"ref-for-dom-aisummarizercreatecoreoptions-length⑤\">length</a></code>\"])].</p>"
         }
       ]
     },
@@ -424,21 +424,39 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-available-languages\" id=\"ref-for-aisummarizercapabilities-available-languages③\">available languages</a>[<var>languageTag</var>], or \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-no\" id=\"ref-for-dom-aicapabilityavailability-no⑤\">no</a></code>\" if no such <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry\">entry</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">exists</a>.</p>"
+          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma402/#sec-isstructurallyvalidlanguagetag\" id=\"ref-for-sec-isstructurallyvalidlanguagetag\">IsStructurallyValidLanguageTag</a>(<var>languageTag</var>) is false, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>languageTag</var> to <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma402/#sec-canonicalizeunicodelocaleid\" id=\"ref-for-sec-canonicalizeunicodelocaleid\">CanonicalizeUnicodeLocaleId</a>(<var>languageTag</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>bestReadilyAvailableMatch</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma402/#sec-lookupmatchinglocalebybestfit\" id=\"ref-for-sec-lookupmatchinglocalebybestfit\">LookupMatchingLocaleByBestFit</a>(<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-readily-available-languages\" id=\"ref-for-aisummarizercapabilities-readily-available-languages③\">readily available languages</a>, <var>languageTag</var>).</p>"
+        },
+        {
+          "html": "<p>If <var>bestReadilyAvailableMatch</var> is not undefined, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-readily\" id=\"ref-for-dom-aicapabilityavailability-readily③\">readily</a></code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>bestAfterDownloadAvailableMatch</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma402/#sec-lookupmatchinglocalebybestfit\" id=\"ref-for-sec-lookupmatchinglocalebybestfit①\">LookupMatchingLocaleByBestFit</a>(<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-after-download-available-languages\" id=\"ref-for-aisummarizercapabilities-after-download-available-languages②\">after-download available languages</a>, <var>languageTag</var>).</p>"
+        },
+        {
+          "html": "<p>If <var>bestAfterDownloadAvailableMatch</var> is not undefined, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-after-download\" id=\"ref-for-dom-aicapabilityavailability-after-download②\">after-download</a></code>\".</p>"
+        },
+        {
+          "html": "<p>Return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-no\" id=\"ref-for-dom-aicapabilityavailability-no④\">no</a></code>\".</p>"
         }
       ]
     },
     {
       "name": "current summarizer create options availability",
       "href": "https://wicg.github.io/writing-assistance-apis/#current-summarizer-create-options-availability",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"current-summarizer-create-options-availability\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">current summarizer create options availability</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#enumdef-aisummarizertype\" id=\"ref-for-enumdef-aisummarizertype⑤\">AISummarizerType</a></code> <var>type</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#enumdef-aisummarizerformat\" id=\"ref-for-enumdef-aisummarizerformat⑤\">AISummarizerFormat</a></code> <var>format</var>, and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#enumdef-aisummarizerlength\" id=\"ref-for-enumdef-aisummarizerlength⑤\">AISummarizerLength</a></code> <var>length</var>, is given by the following steps. They return an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#enumdef-aicapabilityavailability\" id=\"ref-for-enumdef-aicapabilityavailability⑥\">AICapabilityAvailability</a></code> value or null.",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"current-summarizer-create-options-availability\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">current summarizer create options availability</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#enumdef-aisummarizertype\" id=\"ref-for-enumdef-aisummarizertype⑤\">AISummarizerType</a></code> <var>type</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#enumdef-aisummarizerformat\" id=\"ref-for-enumdef-aisummarizerformat⑤\">AISummarizerFormat</a></code> <var>format</var>, and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#enumdef-aisummarizerlength\" id=\"ref-for-enumdef-aisummarizerlength⑤\">AISummarizerLength</a></code> <var>length</var>, is given by the following steps. They return an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#enumdef-aicapabilityavailability\" id=\"ref-for-enumdef-aicapabilityavailability⑤\">AICapabilityAvailability</a></code> value or null.",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑥\">in parallel</a>.</p>"
         },
         {
-          "html": "<p>If the user agent supports summarizing text into the type of summary described by <var>type</var>, in the format described by <var>format</var>, and with the length guidance given by <var>length</var> without performing any downloading operations, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-readily\" id=\"ref-for-dom-aicapabilityavailability-readily③\">readily</a></code>\".</p>"
+          "html": "<p>If the user agent supports summarizing text into the type of summary described by <var>type</var>, in the format described by <var>format</var>, and with the length guidance given by <var>length</var> without performing any downloading operations, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-readily\" id=\"ref-for-dom-aicapabilityavailability-readily④\">readily</a></code>\".</p>"
         },
         {
           "html": "<p>If the user agent believes it can summarize text according to <var>type</var>, <var>format</var>, and <var>length</var>, but only after performing a download (e.g., of an AI model or fine-tuning), then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-after-download\" id=\"ref-for-dom-aicapabilityavailability-after-download③\">after-download</a></code>\".</p>"
@@ -447,51 +465,66 @@
           "html": "<p>If there is some error attempting to determine whether the user agent supports summarizing text, which the user agent believes to be transient (such that re-querying the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#current-summarizer-create-options-availability\" id=\"ref-for-current-summarizer-create-options-availability③\">current summarizer create options availability</a> could stop producing such an error), then return null.</p>"
         },
         {
-          "html": "<p>Otherwise, return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-no\" id=\"ref-for-dom-aicapabilityavailability-no⑥\">no</a></code>\".</p>"
+          "html": "<p>Otherwise, return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-no\" id=\"ref-for-dom-aicapabilityavailability-no⑤\">no</a></code>\".</p>"
         }
       ]
     },
     {
-      "name": "current summarizer language availability map",
-      "href": "https://wicg.github.io/writing-assistance-apis/#current-summarizer-language-availability-map",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"current-summarizer-language-availability-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">current summarizer language availability map</dfn> is given by the following steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a> from strings representing BCP 47 language tags to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#enumdef-aicapabilityavailability\" id=\"ref-for-enumdef-aicapabilityavailability⑦\">AICapabilityAvailability</a></code> values, or null. <a data-link-type=\"biblio\" href=\"https://wicg.github.io/writing-assistance-apis/#biblio-rfc5646\" title=\"Tags for Identifying Languages\">[RFC5646]</a>",
+      "name": "current summarizer language availabilities",
+      "href": "https://wicg.github.io/writing-assistance-apis/#current-summarizer-language-availabilities",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"current-summarizer-language-availabilities\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">current summarizer language availabilities</dfn> are given by the following steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> containing two <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">items</a>; the items each are <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">sets</a> of strings representing <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma402/#sec-language-tags\" id=\"ref-for-sec-language-tags\">Unicode canonicalized locale identifier</a>, or null. <a data-link-type=\"biblio\" href=\"https://wicg.github.io/writing-assistance-apis/#biblio-ecma-402\" title=\"ECMAScript Internationalization API Specification\">[ECMA-402]</a>",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑦\">in parallel</a>.</p>"
         },
         {
-          "html": "<p>If there is some error attempting to determine whether the user agent supports summarizing text, which the user agent believes to be transient (such that re-querying the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#current-summarizer-create-options-availability\" id=\"ref-for-current-summarizer-create-options-availability④\">current summarizer create options availability</a> could stop producing such an error), then return null.</p>"
+          "html": "<p>If there is some error attempting to determine whether the user agent supports summarizing text, which the user agent believes to be transient (such that re-querying the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#current-summarizer-language-availabilities\" id=\"ref-for-current-summarizer-language-availabilities①\">current summarizer language availabilities</a> could stop producing such an error), then return « null, null ».</p>"
         },
         {
-          "html": "<p>Let <var>availableLanguages</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④\">map</a>.</p>"
+          "html": "<p>Let <var>readilyAvailableLanguages</var> and <var>afterDownloadAvailableLanguages</var> be empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③\">sets</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> human language for which the user agent supports summarizing text written in that language, without performing any downloading operations:",
-          "rationale": "let",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> human language <var>languageTag</var>, represented as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma402/#sec-language-tags\" id=\"ref-for-sec-language-tags①\">Unicode canonicalized locale identifier</a>, for which the user agent supports summarizing text written in that language, without performing any downloading operations:",
+          "rationale": "append",
           "steps": [
             {
-              "html": "<p>Let <var>languageTag</var> be that language, represented as a BCP 47 language tag string. </p>"
-            },
-            {
-              "html": "<p>Set <var>availableLanguages</var>[<var>languageTag</var>] to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-readily\" id=\"ref-for-dom-aicapabilityavailability-readily④\">readily</a></code>\".</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>languageTag</var> to <var>readilyAvailableLanguages</var>.</p>"
             }
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> human language for which the user agent believes it can summarize text written in that language, but only after performing a download (e.g., of an AI model or fine-tuning):",
-          "rationale": "let",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> human language <var>languageTag</var>, represented as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma402/#sec-language-tags\" id=\"ref-for-sec-language-tags②\">Unicode canonicalized locale identifier</a>, for which the user agent believes it can summarize text written in that language, but only after performing a download (e.g., of an AI model or fine-tuning):",
+          "rationale": "assert",
           "steps": [
             {
-              "html": "<p>Let <var>languageTag</var> be that language, represented as a BCP 47 language tag string. </p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑨\">Assert</a>: <var>readilyAvailableLanguages</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contain</a> <var>languageTag</var>.</p>"
             },
             {
-              "html": "<p>Set <var>availableLanguages</var>[<var>languageTag</var>] to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-after-download\" id=\"ref-for-dom-aicapabilityavailability-after-download④\">after-download</a></code>\".</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> <var>languageTag</var> to <var>afterDownloadAvailableLanguages</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return <var>availableLanguages</var>.</p>"
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-union\" id=\"ref-for-set-union\">union</a> of <var>readilyAvailableLanguages</var> and <var>afterDownloadAvailableLanguages</var> does not meet the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#language-tag-set-completeness-rules\" id=\"ref-for-language-tag-set-completeness-rules\">language tag set completeness rules</a>, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>missingLanguageTags</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④\">set</a> of missing language tags necessary to meet the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#language-tag-set-completeness-rules\" id=\"ref-for-language-tag-set-completeness-rules①\">language tag set completeness rules</a>.</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>languageTag</var> of <var>missingLanguageTags</var>:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p><span id=\"readily-or-after-download-implementation-defined\"></span> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append②\">Append</a> <var>languageTag</var> to either <var>readilyAvailableLanguages</var> or <var>afterDownloadAvailableLanguages</var>. Which of the two sets to append to is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a>, and should be guided by considerations similar to that of <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma402/#sec-lookupmatchinglocalebybestfit\" id=\"ref-for-sec-lookupmatchinglocalebybestfit②\">LookupMatchingLocaleByBestFit</a> in terms of keeping \"best fallback languages\" together.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return « <var>readilyAvailableLanguages</var>, <var>afterDownloadAvailableLanguages</var> ».</p>"
         }
       ]
     },
