@@ -8,7 +8,8 @@ interface MLGraphBuilder {
   MLOperand input(USVString name, MLOperandDescriptor descriptor);
 
   // Create an operand for a graph constant.
-  MLOperand constant(MLOperandDescriptor descriptor, ArrayBufferView bufferView);
+  MLOperand constant(MLOperandDescriptor descriptor,
+                     AllowSharedBufferSource buffer);
 
   // Create a scalar operand from the specified number of the specified type.
   MLOperand constant(MLOperandDataType type, MLNumber value);

@@ -1490,7 +1490,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlnamedoperands"
       },
       "MLGraphBuilder": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(USVString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor, ArrayBufferView bufferView);\n\n  // Create a scalar operand from the specified number of the specified type.\n  MLOperand constant(MLOperandDataType type, MLNumber value);\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n};",
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(USVString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor,\n                     AllowSharedBufferSource buffer);\n\n  // Create a scalar operand from the specified number of the specified type.\n  MLOperand constant(MLOperandDataType type, MLNumber value);\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n};",
         "type": "interface",
         "name": "MLGraphBuilder",
         "inheritance": null,
@@ -1597,7 +1597,7 @@
               },
               {
                 "type": "argument",
-                "name": "bufferView",
+                "name": "buffer",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -1605,7 +1605,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ArrayBufferView"
+                  "idlType": "AllowSharedBufferSource"
                 },
                 "default": null,
                 "optional": false,
@@ -12636,7 +12636,7 @@
         "MLContext",
         "MLOperand",
         "MLOperandDescriptor",
-        "ArrayBufferView",
+        "AllowSharedBufferSource",
         "MLOperandDataType",
         "MLNumber",
         "MLGraph",

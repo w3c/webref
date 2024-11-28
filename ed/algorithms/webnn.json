@@ -782,7 +782,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/constant(descriptor, bufferView)",
+      "name": "MLGraphBuilder/constant(descriptor, buffer)",
       "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-constant",
       "rationale": ".algorithm",
       "steps": [
@@ -793,7 +793,7 @@
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperanddescriptor-check-dimensions\" id=\"ref-for-mloperanddescriptor-check-dimensions①\">checking dimensions</a> given <var>descriptor</var> returns false, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⑥\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑧\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#validate-buffer-with-descriptor\" id=\"ref-for-validate-buffer-with-descriptor⑤\">validating buffer with descriptor</a> given <var>bufferView</var> and <var>descriptor</var> returns false, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⑦\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑨\">TypeError</a></code>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#validate-buffer-with-descriptor\" id=\"ref-for-validate-buffer-with-descriptor⑤\">validating buffer with descriptor</a> given <var>buffer</var> and <var>descriptor</var> returns false, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⑦\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑨\">TypeError</a></code>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -803,7 +803,7 @@
               "html": "<p>Let <var>operand</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand①\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a> and <var>descriptor</var>.</p>"
             },
             {
-              "html": "<p>Let <var>bytes</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy①\">getting a copy of the bytes held by the buffer source</a> given <var>bufferView</var>.</p>"
+              "html": "<p>Let <var>bytes</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy①\">getting a copy of the bytes held by the buffer source</a> given <var>buffer</var>.</p>"
             },
             {
               "html": "<p>Add <var>operand</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mlgraphbuilder-graph\" id=\"ref-for-mlgraphbuilder-graph②\">graph</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#computational-graph-constants\" id=\"ref-for-computational-graph-constants\">constants</a> with <var>bytes</var> as value.</p>"
@@ -949,7 +949,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>graphImpl</var> be the result of converting <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mlgraphbuilder-graph\" id=\"ref-for-mlgraphbuilder-graph⑦\">graph</a> with <var>operands</var>, <var>operators</var>, <var>inputs</var>, and <var>outputs</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values③\">values</a> into an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined④\">implementation-defined</a> format which can be interpreted by the underlying platform.",
+              "html": "Let <var>graphImpl</var> be the result of converting <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mlgraphbuilder-graph\" id=\"ref-for-mlgraphbuilder-graph⑥\">graph</a> with <var>operands</var>, <var>operators</var>, <var>inputs</var>, and <var>outputs</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values③\">values</a> into an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined④\">implementation-defined</a> format which can be interpreted by the underlying platform.",
               "rationale": "if",
               "steps": [
                 {
