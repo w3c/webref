@@ -663,6 +663,25 @@
       "definedIn": "pre"
     },
     {
+      "id": "typedefdef-mlnamedtensors",
+      "href": "https://www.w3.org/TR/webnn/#typedefdef-mlnamedtensors",
+      "linkingText": [
+        "MLNamedTensors"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext",
+        "title": "MLContext interface",
+        "number": "7.3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-mlcomputeresult",
       "href": "https://www.w3.org/TR/webnn/#dictdef-mlcomputeresult",
       "linkingText": [
@@ -768,6 +787,27 @@
       "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-powerpreference-slot",
       "linkingText": [
         "[[powerPreference]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MLContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext",
+        "title": "MLContext interface",
+        "number": "7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mlcontext-timeline-slot",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-timeline-slot",
+      "linkingText": [
+        "[[timeline]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -907,6 +947,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "validate-tensors-with-descriptors",
+      "href": "https://www.w3.org/TR/webnn/#validate-tensors-with-descriptors",
+      "linkingText": [
+        "validate tensors with descriptors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext",
+        "title": "MLContext interface",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "execute-graph",
       "href": "https://www.w3.org/TR/webnn/#execute-graph",
       "linkingText": [
@@ -1031,6 +1090,300 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-mlcontext-dispatch-graph-inputs-outputs-graph",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-dispatch-graph-inputs-outputs-graph",
+      "linkingText": [
+        "graph"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLContext/dispatch(graph, inputs, outputs)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-dispatch",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-dispatch",
+        "title": "dispatch()",
+        "number": "7.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlcontext-dispatch-graph-inputs-outputs-inputs",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-dispatch-graph-inputs-outputs-inputs",
+      "linkingText": [
+        "inputs"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLContext/dispatch(graph, inputs, outputs)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-dispatch",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-dispatch",
+        "title": "dispatch()",
+        "number": "7.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlcontext-dispatch-graph-inputs-outputs-outputs",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-dispatch-graph-inputs-outputs-outputs",
+      "linkingText": [
+        "outputs"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLContext/dispatch(graph, inputs, outputs)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-dispatch",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-dispatch",
+        "title": "dispatch()",
+        "number": "7.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlcontext-dispatch",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-dispatch",
+      "linkingText": [
+        "dispatch(graph, inputs, outputs)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MLContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-dispatch",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-dispatch",
+        "title": "dispatch()",
+        "number": "7.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlcontext-createtensor-descriptor-descriptor",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-createtensor-descriptor-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLContext/createTensor(descriptor)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-createtensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-createtensor",
+        "title": "createTensor()",
+        "number": "7.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlcontext-createtensor",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-createtensor",
+      "linkingText": [
+        "createTensor(descriptor)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MLContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-createtensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-createtensor",
+        "title": "createTensor()",
+        "number": "7.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlcontext-readtensor-tensor-tensor",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-readtensor-tensor-tensor",
+      "linkingText": [
+        "tensor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLContext/readTensor(tensor)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-readtensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-readtensor",
+        "title": "readTensor(tensor)",
+        "number": "7.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlcontext-readtensor",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-readtensor",
+      "linkingText": [
+        "readTensor(tensor)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MLContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-readtensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-readtensor",
+        "title": "readTensor(tensor)",
+        "number": "7.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlcontext-readtensor-tensor-outputdata-tensor",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-readtensor-tensor-outputdata-tensor",
+      "linkingText": [
+        "tensor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLContext/readTensor(tensor, outputData)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-readtensor-byob",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-readtensor-byob",
+        "title": "readTensor(tensor, outputData)",
+        "number": "7.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlcontext-readtensor-tensor-outputdata-outputdata",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-readtensor-tensor-outputdata-outputdata",
+      "linkingText": [
+        "outputData"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLContext/readTensor(tensor, outputData)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-readtensor-byob",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-readtensor-byob",
+        "title": "readTensor(tensor, outputData)",
+        "number": "7.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlcontext-readtensor-tensor-outputdata",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-readtensor-tensor-outputdata",
+      "linkingText": [
+        "readTensor(tensor, outputData)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MLContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-readtensor-byob",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-readtensor-byob",
+        "title": "readTensor(tensor, outputData)",
+        "number": "7.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlcontext-writetensor-tensor-inputdata-tensor",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-writetensor-tensor-inputdata-tensor",
+      "linkingText": [
+        "tensor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLContext/writeTensor(tensor, inputData)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-writetensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-writetensor",
+        "title": "writeTensor()",
+        "number": "7.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlcontext-writetensor-tensor-inputdata-inputdata",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-writetensor-tensor-inputdata-inputdata",
+      "linkingText": [
+        "inputData"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLContext/writeTensor(tensor, inputData)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-writetensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-writetensor",
+        "title": "writeTensor()",
+        "number": "7.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlcontext-writetensor",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-writetensor",
+      "linkingText": [
+        "writeTensor(tensor, inputData)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MLContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-writetensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-writetensor",
+        "title": "writeTensor()",
+        "number": "7.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dictdef-mlopsupportlimits",
       "href": "https://www.w3.org/TR/webnn/#dictdef-mlopsupportlimits",
       "linkingText": [
@@ -1045,7 +1398,7 @@
         "id": "api-mlcontext-opsupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-opsupportlimits-dictionary",
         "title": "MLOpSupportLimits dictionary",
-        "number": "7.3.3.1"
+        "number": "7.3.8.1"
       },
       "definedIn": "pre"
     },
@@ -1066,7 +1419,7 @@
         "id": "api-mlcontext-opsupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-opsupportlimits-dictionary",
         "title": "MLOpSupportLimits dictionary",
-        "number": "7.3.3.1"
+        "number": "7.3.8.1"
       },
       "definedIn": "dt"
     },
@@ -1087,7 +1440,7 @@
         "id": "api-mlcontext-opsupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-opsupportlimits-dictionary",
         "title": "MLOpSupportLimits dictionary",
-        "number": "7.3.3.1"
+        "number": "7.3.8.1"
       },
       "definedIn": "dt"
     },
@@ -1108,7 +1461,7 @@
         "id": "api-mlcontext-opsupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-opsupportlimits-dictionary",
         "title": "MLOpSupportLimits dictionary",
-        "number": "7.3.3.1"
+        "number": "7.3.8.1"
       },
       "definedIn": "dt"
     },
@@ -1129,7 +1482,7 @@
         "id": "api-mlcontext-opsupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-opsupportlimits-dictionary",
         "title": "MLOpSupportLimits dictionary",
-        "number": "7.3.3.1"
+        "number": "7.3.8.1"
       },
       "definedIn": "dt"
     },
@@ -1148,7 +1501,7 @@
         "id": "api-mlcontext-supportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-supportlimits-dictionary",
         "title": "MLSupportLimits dictionary",
-        "number": "7.3.3.2"
+        "number": "7.3.8.2"
       },
       "definedIn": "pre"
     },
@@ -1169,7 +1522,7 @@
         "id": "api-mlcontext-supportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-supportlimits-dictionary",
         "title": "MLSupportLimits dictionary",
-        "number": "7.3.3.2"
+        "number": "7.3.8.2"
       },
       "definedIn": "dt"
     },
@@ -1188,7 +1541,7 @@
         "id": "api-mlcontext-binarysupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-binarysupportlimits-dictionary",
         "title": "MLBinarySupportLimits dictionary",
-        "number": "7.3.3.3"
+        "number": "7.3.8.3"
       },
       "definedIn": "pre"
     },
@@ -1209,7 +1562,7 @@
         "id": "api-mlcontext-binarysupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-binarysupportlimits-dictionary",
         "title": "MLBinarySupportLimits dictionary",
-        "number": "7.3.3.3"
+        "number": "7.3.8.3"
       },
       "definedIn": "dt"
     },
@@ -1230,7 +1583,7 @@
         "id": "api-mlcontext-binarysupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-binarysupportlimits-dictionary",
         "title": "MLBinarySupportLimits dictionary",
-        "number": "7.3.3.3"
+        "number": "7.3.8.3"
       },
       "definedIn": "dt"
     },
@@ -1251,7 +1604,7 @@
         "id": "api-mlcontext-binarysupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-binarysupportlimits-dictionary",
         "title": "MLBinarySupportLimits dictionary",
-        "number": "7.3.3.3"
+        "number": "7.3.8.3"
       },
       "definedIn": "dt"
     },
@@ -1270,7 +1623,7 @@
         "id": "api-mlcontext-singleinputsupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-singleinputsupportlimits-dictionary",
         "title": "MLSingleInputSupportLimits dictionary",
-        "number": "7.3.3.4"
+        "number": "7.3.8.4"
       },
       "definedIn": "pre"
     },
@@ -1291,7 +1644,7 @@
         "id": "api-mlcontext-singleinputsupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-singleinputsupportlimits-dictionary",
         "title": "MLSingleInputSupportLimits dictionary",
-        "number": "7.3.3.4"
+        "number": "7.3.8.4"
       },
       "definedIn": "dt"
     },
@@ -1312,7 +1665,7 @@
         "id": "api-mlcontext-singleinputsupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-singleinputsupportlimits-dictionary",
         "title": "MLSingleInputSupportLimits dictionary",
-        "number": "7.3.3.4"
+        "number": "7.3.8.4"
       },
       "definedIn": "dt"
     },
@@ -2249,6 +2602,336 @@
       "definedIn": "prose"
     },
     {
+      "id": "dictdef-mltensordescriptor",
+      "href": "https://www.w3.org/TR/webnn/#dictdef-mltensordescriptor",
+      "linkingText": [
+        "MLTensorDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mltensordescriptor",
+        "href": "https://www.w3.org/TR/webnn/#api-mltensordescriptor",
+        "title": "MLTensorDescriptor dictionary",
+        "number": "7.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mltensordescriptor-readable",
+      "href": "https://www.w3.org/TR/webnn/#dom-mltensordescriptor-readable",
+      "linkingText": [
+        "readable"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLTensorDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mltensordescriptor",
+        "href": "https://www.w3.org/TR/webnn/#api-mltensordescriptor",
+        "title": "MLTensorDescriptor dictionary",
+        "number": "7.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mltensordescriptor-writable",
+      "href": "https://www.w3.org/TR/webnn/#dom-mltensordescriptor-writable",
+      "linkingText": [
+        "writable"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLTensorDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mltensordescriptor",
+        "href": "https://www.w3.org/TR/webnn/#api-mltensordescriptor",
+        "title": "MLTensorDescriptor dictionary",
+        "number": "7.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "mltensor",
+      "href": "https://www.w3.org/TR/webnn/#mltensor",
+      "linkingText": [
+        "MLTensor"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mltensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mltensor",
+        "title": "MLTensor interface",
+        "number": "7.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mltensor-context-slot",
+      "href": "https://www.w3.org/TR/webnn/#dom-mltensor-context-slot",
+      "linkingText": [
+        "[[context]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MLTensor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mltensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mltensor",
+        "title": "MLTensor interface",
+        "number": "7.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mltensor-descriptor-slot",
+      "href": "https://www.w3.org/TR/webnn/#dom-mltensor-descriptor-slot",
+      "linkingText": [
+        "[[descriptor]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MLTensor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mltensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mltensor",
+        "title": "MLTensor interface",
+        "number": "7.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mltensor-isdestroyed-slot",
+      "href": "https://www.w3.org/TR/webnn/#dom-mltensor-isdestroyed-slot",
+      "linkingText": [
+        "[[isDestroyed]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MLTensor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mltensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mltensor",
+        "title": "MLTensor interface",
+        "number": "7.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mltensor-data-slot",
+      "href": "https://www.w3.org/TR/webnn/#dom-mltensor-data-slot",
+      "linkingText": [
+        "[[data]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MLTensor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mltensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mltensor",
+        "title": "MLTensor interface",
+        "number": "7.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "mltensor-datatype",
+      "href": "https://www.w3.org/TR/webnn/#mltensor-datatype",
+      "linkingText": [
+        "dataType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MLTensor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-mltensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mltensor",
+        "title": "MLTensor interface",
+        "number": "7.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "mltensor-shape",
+      "href": "https://www.w3.org/TR/webnn/#mltensor-shape",
+      "linkingText": [
+        "shape"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MLTensor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-mltensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mltensor",
+        "title": "MLTensor interface",
+        "number": "7.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mltensor-datatype",
+      "href": "https://www.w3.org/TR/webnn/#dom-mltensor-datatype",
+      "linkingText": [
+        "dataType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MLTensor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mltensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mltensor",
+        "title": "MLTensor interface",
+        "number": "7.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mltensor-shape",
+      "href": "https://www.w3.org/TR/webnn/#dom-mltensor-shape",
+      "linkingText": [
+        "shape"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MLTensor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mltensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mltensor",
+        "title": "MLTensor interface",
+        "number": "7.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mltensor-readable",
+      "href": "https://www.w3.org/TR/webnn/#dom-mltensor-readable",
+      "linkingText": [
+        "readable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MLTensor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mltensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mltensor",
+        "title": "MLTensor interface",
+        "number": "7.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mltensor-writable",
+      "href": "https://www.w3.org/TR/webnn/#dom-mltensor-writable",
+      "linkingText": [
+        "writable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MLTensor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mltensor",
+        "href": "https://www.w3.org/TR/webnn/#api-mltensor",
+        "title": "MLTensor interface",
+        "number": "7.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-an-mltensor",
+      "href": "https://www.w3.org/TR/webnn/#create-an-mltensor",
+      "linkingText": [
+        "create an MLTensor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-mltensor-create",
+        "href": "https://www.w3.org/TR/webnn/#api-mltensor-create",
+        "title": "Creating an MLTensor",
+        "number": "7.8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mltensor-destroy",
+      "href": "https://www.w3.org/TR/webnn/#dom-mltensor-destroy",
+      "linkingText": [
+        "destroy()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MLTensor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mltensor-destroy",
+        "href": "https://www.w3.org/TR/webnn/#api-mltensor-destroy",
+        "title": "destroy()",
+        "number": "7.8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "typedefdef-mlnamedoperands",
       "href": "https://www.w3.org/TR/webnn/#typedefdef-mlnamedoperands",
       "linkingText": [
@@ -2263,7 +2946,7 @@
         "id": "api-mlgraphbuilder",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder",
         "title": "MLGraphBuilder interface",
-        "number": "7.7"
+        "number": "7.9"
       },
       "definedIn": "pre"
     },
@@ -2282,7 +2965,7 @@
         "id": "api-mlgraphbuilder",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder",
         "title": "MLGraphBuilder interface",
-        "number": "7.7"
+        "number": "7.9"
       },
       "definedIn": "pre"
     },
@@ -2303,7 +2986,7 @@
         "id": "api-mlgraphbuilder",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder",
         "title": "MLGraphBuilder interface",
-        "number": "7.7"
+        "number": "7.9"
       },
       "definedIn": "dt"
     },
@@ -2324,7 +3007,7 @@
         "id": "api-mlgraphbuilder",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder",
         "title": "MLGraphBuilder interface",
-        "number": "7.7"
+        "number": "7.9"
       },
       "definedIn": "dt"
     },
@@ -2345,7 +3028,7 @@
         "id": "api-mlgraphbuilder-constructor",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-constructor",
         "title": "MLGraphBuilder constructor",
-        "number": "7.7.1"
+        "number": "7.9.1"
       },
       "definedIn": "prose"
     },
@@ -2367,7 +3050,7 @@
         "id": "api-mlgraphbuilder-constructor",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-constructor",
         "title": "MLGraphBuilder constructor",
-        "number": "7.7.1"
+        "number": "7.9.1"
       },
       "definedIn": "prose"
     },
@@ -2388,7 +3071,7 @@
         "id": "api-mlgraphbuilder-input",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-input",
         "title": "input operands",
-        "number": "7.7.2"
+        "number": "7.9.2"
       },
       "definedIn": "prose"
     },
@@ -2409,7 +3092,7 @@
         "id": "api-mlgraphbuilder-input",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-input",
         "title": "input operands",
-        "number": "7.7.2"
+        "number": "7.9.2"
       },
       "definedIn": "prose"
     },
@@ -2430,49 +3113,49 @@
         "id": "api-mlgraphbuilder-input",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-input",
         "title": "input operands",
-        "number": "7.7.2"
+        "number": "7.9.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-constant-descriptor-bufferview-descriptor",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-constant-descriptor-bufferview-descriptor",
+      "id": "dom-mlgraphbuilder-constant-descriptor-buffer-descriptor",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-constant-descriptor-buffer-descriptor",
       "linkingText": [
         "descriptor"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/constant(descriptor, bufferView)"
+        "MLGraphBuilder/constant(descriptor, buffer)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "api-mlgraphbuilder-constant-bufferview",
-        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-constant-bufferview",
-        "title": "constant(descriptor, bufferView)",
-        "number": "7.7.3.1"
+        "id": "api-mlgraphbuilder-constant-buffer",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-constant-buffer",
+        "title": "constant(descriptor, buffer)",
+        "number": "7.9.3.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-constant-descriptor-bufferview-bufferview",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-constant-descriptor-bufferview-bufferview",
+      "id": "dom-mlgraphbuilder-constant-descriptor-buffer-buffer",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-constant-descriptor-buffer-buffer",
       "linkingText": [
-        "bufferView"
+        "buffer"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/constant(descriptor, bufferView)"
+        "MLGraphBuilder/constant(descriptor, buffer)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "api-mlgraphbuilder-constant-bufferview",
-        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-constant-bufferview",
-        "title": "constant(descriptor, bufferView)",
-        "number": "7.7.3.1"
+        "id": "api-mlgraphbuilder-constant-buffer",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-constant-buffer",
+        "title": "constant(descriptor, buffer)",
+        "number": "7.9.3.1"
       },
       "definedIn": "prose"
     },
@@ -2480,7 +3163,7 @@
       "id": "dom-mlgraphbuilder-constant",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-constant",
       "linkingText": [
-        "constant(descriptor, bufferView)"
+        "constant(descriptor, buffer)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -2490,10 +3173,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "api-mlgraphbuilder-constant-bufferview",
-        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-constant-bufferview",
-        "title": "constant(descriptor, bufferView)",
-        "number": "7.7.3.1"
+        "id": "api-mlgraphbuilder-constant-buffer",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-constant-buffer",
+        "title": "constant(descriptor, buffer)",
+        "number": "7.9.3.1"
       },
       "definedIn": "prose"
     },
@@ -2514,7 +3197,7 @@
         "id": "api-mlgraphbuilder-constant-type-value",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-constant-type-value",
         "title": "constant(type, value)",
-        "number": "7.7.3.2"
+        "number": "7.9.3.2"
       },
       "definedIn": "prose"
     },
@@ -2535,7 +3218,7 @@
         "id": "api-mlgraphbuilder-constant-type-value",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-constant-type-value",
         "title": "constant(type, value)",
-        "number": "7.7.3.2"
+        "number": "7.9.3.2"
       },
       "definedIn": "prose"
     },
@@ -2556,7 +3239,7 @@
         "id": "api-mlgraphbuilder-constant-type-value",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-constant-type-value",
         "title": "constant(type, value)",
-        "number": "7.7.3.2"
+        "number": "7.9.3.2"
       },
       "definedIn": "prose"
     },
@@ -2577,7 +3260,7 @@
         "id": "api-mlgraphbuilder-build",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-build",
         "title": "build method",
-        "number": "7.7.4"
+        "number": "7.9.4"
       },
       "definedIn": "prose"
     },
@@ -2598,7 +3281,7 @@
         "id": "api-mlgraphbuilder-build",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-build",
         "title": "build method",
-        "number": "7.7.4"
+        "number": "7.9.4"
       },
       "definedIn": "prose"
     },
@@ -2617,7 +3300,7 @@
         "id": "api-mlgraphbuilder-argminmax",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-argminmax",
         "title": "argMin/argMax operations",
-        "number": "7.7.5"
+        "number": "7.9.5"
       },
       "definedIn": "pre"
     },
@@ -2638,7 +3321,7 @@
         "id": "api-mlgraphbuilder-argminmax",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-argminmax",
         "title": "argMin/argMax operations",
-        "number": "7.7.5"
+        "number": "7.9.5"
       },
       "definedIn": "dt"
     },
@@ -2659,7 +3342,7 @@
         "id": "api-mlgraphbuilder-argminmax",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-argminmax",
         "title": "argMin/argMax operations",
-        "number": "7.7.5"
+        "number": "7.9.5"
       },
       "definedIn": "dt"
     },
@@ -2681,7 +3364,7 @@
         "id": "api-mlgraphbuilder-argminmax",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-argminmax",
         "title": "argMin/argMax operations",
-        "number": "7.7.5"
+        "number": "7.9.5"
       },
       "definedIn": "prose"
     },
@@ -2703,7 +3386,7 @@
         "id": "api-mlgraphbuilder-argminmax",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-argminmax",
         "title": "argMin/argMax operations",
-        "number": "7.7.5"
+        "number": "7.9.5"
       },
       "definedIn": "prose"
     },
@@ -2725,7 +3408,7 @@
         "id": "api-mlgraphbuilder-argminmax",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-argminmax",
         "title": "argMin/argMax operations",
-        "number": "7.7.5"
+        "number": "7.9.5"
       },
       "definedIn": "prose"
     },
@@ -2746,7 +3429,7 @@
         "id": "api-mlgraphbuilder-argminmax",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-argminmax",
         "title": "argMin/argMax operations",
-        "number": "7.7.5"
+        "number": "7.9.5"
       },
       "definedIn": "dt"
     },
@@ -2767,7 +3450,7 @@
         "id": "api-mlgraphbuilder-argminmax",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-argminmax",
         "title": "argMin/argMax operations",
-        "number": "7.7.5"
+        "number": "7.9.5"
       },
       "definedIn": "dt"
     },
@@ -2788,7 +3471,7 @@
         "id": "api-mlgraphbuilder-argminmax",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-argminmax",
         "title": "argMin/argMax operations",
-        "number": "7.7.5"
+        "number": "7.9.5"
       },
       "definedIn": "prose"
     },
@@ -2810,7 +3493,7 @@
         "id": "api-mlgraphbuilder-argminmax",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-argminmax",
         "title": "argMin/argMax operations",
-        "number": "7.7.5"
+        "number": "7.9.5"
       },
       "definedIn": "prose"
     },
@@ -2832,7 +3515,7 @@
         "id": "api-mlgraphbuilder-argminmax",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-argminmax",
         "title": "argMin/argMax operations",
-        "number": "7.7.5"
+        "number": "7.9.5"
       },
       "definedIn": "prose"
     },
@@ -2851,7 +3534,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "pre"
     },
@@ -2870,7 +3553,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "pre"
     },
@@ -2891,7 +3574,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "dt"
     },
@@ -2912,7 +3595,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "dt"
     },
@@ -2933,7 +3616,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "dt"
     },
@@ -2954,7 +3637,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "dt"
     },
@@ -2975,7 +3658,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "prose"
     },
@@ -2996,7 +3679,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "prose"
     },
@@ -3017,7 +3700,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "prose"
     },
@@ -3038,7 +3721,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "prose"
     },
@@ -3059,7 +3742,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "dt"
     },
@@ -3080,7 +3763,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "dt"
     },
@@ -3101,7 +3784,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "dt"
     },
@@ -3122,7 +3805,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "dt"
     },
@@ -3143,7 +3826,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "dt"
     },
@@ -3164,7 +3847,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "dt"
     },
@@ -3185,7 +3868,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "dt"
     },
@@ -3207,7 +3890,7 @@
         "id": "api-mlgraphbuilder-batchnorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
         "title": "batchNormalization",
-        "number": "7.7.6"
+        "number": "7.9.6"
       },
       "definedIn": "prose"
     },
@@ -3228,7 +3911,7 @@
         "id": "api-mlgraphbuilder-cast",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-cast",
         "title": "cast",
-        "number": "7.7.7"
+        "number": "7.9.7"
       },
       "definedIn": "prose"
     },
@@ -3249,7 +3932,7 @@
         "id": "api-mlgraphbuilder-cast",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-cast",
         "title": "cast",
-        "number": "7.7.7"
+        "number": "7.9.7"
       },
       "definedIn": "prose"
     },
@@ -3270,7 +3953,7 @@
         "id": "api-mlgraphbuilder-cast",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-cast",
         "title": "cast",
-        "number": "7.7.7"
+        "number": "7.9.7"
       },
       "definedIn": "prose"
     },
@@ -3291,7 +3974,7 @@
         "id": "api-mlgraphbuilder-cast",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-cast",
         "title": "cast",
-        "number": "7.7.7"
+        "number": "7.9.7"
       },
       "definedIn": "dt"
     },
@@ -3313,7 +3996,7 @@
         "id": "api-mlgraphbuilder-cast",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-cast",
         "title": "cast",
-        "number": "7.7.7"
+        "number": "7.9.7"
       },
       "definedIn": "prose"
     },
@@ -3332,7 +4015,7 @@
         "id": "api-mlgraphbuilder-clamp",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-clamp",
         "title": "clamp",
-        "number": "7.7.8"
+        "number": "7.9.8"
       },
       "definedIn": "pre"
     },
@@ -3353,7 +4036,7 @@
         "id": "api-mlgraphbuilder-clamp",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-clamp",
         "title": "clamp",
-        "number": "7.7.8"
+        "number": "7.9.8"
       },
       "definedIn": "dt"
     },
@@ -3374,7 +4057,7 @@
         "id": "api-mlgraphbuilder-clamp",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-clamp",
         "title": "clamp",
-        "number": "7.7.8"
+        "number": "7.9.8"
       },
       "definedIn": "dt"
     },
@@ -3395,7 +4078,7 @@
         "id": "api-mlgraphbuilder-clamp",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-clamp",
         "title": "clamp",
-        "number": "7.7.8"
+        "number": "7.9.8"
       },
       "definedIn": "prose"
     },
@@ -3416,7 +4099,7 @@
         "id": "api-mlgraphbuilder-clamp",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-clamp",
         "title": "clamp",
-        "number": "7.7.8"
+        "number": "7.9.8"
       },
       "definedIn": "prose"
     },
@@ -3437,7 +4120,7 @@
         "id": "api-mlgraphbuilder-clamp",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-clamp",
         "title": "clamp",
-        "number": "7.7.8"
+        "number": "7.9.8"
       },
       "definedIn": "dt"
     },
@@ -3459,7 +4142,7 @@
         "id": "api-mlgraphbuilder-clamp",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-clamp",
         "title": "clamp",
-        "number": "7.7.8"
+        "number": "7.9.8"
       },
       "definedIn": "prose"
     },
@@ -3478,7 +4161,7 @@
         "id": "api-mlgraphbuilder-concat",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-concat",
         "title": "concat",
-        "number": "7.7.9"
+        "number": "7.9.9"
       },
       "definedIn": "pre"
     },
@@ -3499,7 +4182,7 @@
         "id": "api-mlgraphbuilder-concat",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-concat",
         "title": "concat",
-        "number": "7.7.9"
+        "number": "7.9.9"
       },
       "definedIn": "prose"
     },
@@ -3520,7 +4203,7 @@
         "id": "api-mlgraphbuilder-concat",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-concat",
         "title": "concat",
-        "number": "7.7.9"
+        "number": "7.9.9"
       },
       "definedIn": "prose"
     },
@@ -3541,7 +4224,7 @@
         "id": "api-mlgraphbuilder-concat",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-concat",
         "title": "concat",
-        "number": "7.7.9"
+        "number": "7.9.9"
       },
       "definedIn": "prose"
     },
@@ -3562,7 +4245,7 @@
         "id": "api-mlgraphbuilder-concat",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-concat",
         "title": "concat",
-        "number": "7.7.9"
+        "number": "7.9.9"
       },
       "definedIn": "dt"
     },
@@ -3583,7 +4266,7 @@
         "id": "api-mlgraphbuilder-concat",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-concat",
         "title": "concat",
-        "number": "7.7.9"
+        "number": "7.9.9"
       },
       "definedIn": "dt"
     },
@@ -3604,7 +4287,7 @@
         "id": "api-mlgraphbuilder-concat",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-concat",
         "title": "concat",
-        "number": "7.7.9"
+        "number": "7.9.9"
       },
       "definedIn": "dt"
     },
@@ -3626,7 +4309,7 @@
         "id": "api-mlgraphbuilder-concat",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-concat",
         "title": "concat",
-        "number": "7.7.9"
+        "number": "7.9.9"
       },
       "definedIn": "prose"
     },
@@ -3645,7 +4328,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "pre"
     },
@@ -3666,7 +4349,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "pre"
     },
@@ -3687,7 +4370,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "pre"
     },
@@ -3708,7 +4391,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "pre"
     },
@@ -3729,7 +4412,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "pre"
     },
@@ -3748,7 +4431,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "pre"
     },
@@ -3767,7 +4450,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "pre"
     },
@@ -3788,7 +4471,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "dt"
     },
@@ -3809,7 +4492,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "dt"
     },
@@ -3830,7 +4513,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "dt"
     },
@@ -3851,7 +4534,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "dt"
     },
@@ -3872,7 +4555,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "dt"
     },
@@ -3893,7 +4576,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "dt"
     },
@@ -3914,7 +4597,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "dt"
     },
@@ -3935,7 +4618,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "prose"
     },
@@ -3956,7 +4639,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "prose"
     },
@@ -3977,7 +4660,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "prose"
     },
@@ -3998,7 +4681,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "dt"
     },
@@ -4019,7 +4702,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "dt"
     },
@@ -4040,7 +4723,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "dt"
     },
@@ -4061,7 +4744,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "dt"
     },
@@ -4082,7 +4765,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "dt"
     },
@@ -4103,7 +4786,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "prose"
     },
@@ -4124,7 +4807,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "prose"
     },
@@ -4146,7 +4829,7 @@
         "id": "api-mlgraphbuilder-conv2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
         "title": "conv2d",
-        "number": "7.7.10"
+        "number": "7.9.10"
       },
       "definedIn": "prose"
     },
@@ -4165,7 +4848,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "pre"
     },
@@ -4186,7 +4869,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "pre"
     },
@@ -4207,7 +4890,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "pre"
     },
@@ -4228,7 +4911,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "pre"
     },
@@ -4247,7 +4930,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "pre"
     },
@@ -4268,7 +4951,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "dt"
     },
@@ -4289,7 +4972,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "dt"
     },
@@ -4310,7 +4993,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "dt"
     },
@@ -4331,7 +5014,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "dt"
     },
@@ -4352,7 +5035,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "dt"
     },
@@ -4373,7 +5056,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "dt"
     },
@@ -4394,7 +5077,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "dt"
     },
@@ -4415,7 +5098,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "dt"
     },
@@ -4436,7 +5119,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "dt"
     },
@@ -4457,7 +5140,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "prose"
     },
@@ -4478,7 +5161,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "prose"
     },
@@ -4499,7 +5182,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "prose"
     },
@@ -4520,7 +5203,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "dt"
     },
@@ -4541,7 +5224,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "prose"
     },
@@ -4562,7 +5245,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "prose"
     },
@@ -4584,7 +5267,7 @@
         "id": "api-mlgraphbuilder-convtranspose2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
         "title": "convTranspose2d",
-        "number": "7.7.11"
+        "number": "7.9.11"
       },
       "definedIn": "prose"
     },
@@ -4611,7 +5294,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "prose"
     },
@@ -4638,7 +5321,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "prose"
     },
@@ -4665,7 +5348,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "prose"
     },
@@ -4686,7 +5369,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "dt"
     },
@@ -4707,7 +5390,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "dt"
     },
@@ -4728,7 +5411,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "dt"
     },
@@ -4749,7 +5432,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "dt"
     },
@@ -4770,7 +5453,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "dt"
     },
@@ -4791,7 +5474,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "dt"
     },
@@ -4812,7 +5495,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "dt"
     },
@@ -4833,7 +5516,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "prose"
     },
@@ -4855,7 +5538,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "prose"
     },
@@ -4877,7 +5560,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "prose"
     },
@@ -4899,7 +5582,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "prose"
     },
@@ -4921,7 +5604,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "prose"
     },
@@ -4943,7 +5626,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "prose"
     },
@@ -4965,7 +5648,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "prose"
     },
@@ -4987,7 +5670,7 @@
         "id": "api-mlgraphbuilder-binary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
         "title": "Element-wise binary operations",
-        "number": "7.7.12"
+        "number": "7.9.12"
       },
       "definedIn": "prose"
     },
@@ -5006,7 +5689,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "pre"
     },
@@ -5032,7 +5715,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "prose"
     },
@@ -5058,7 +5741,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "prose"
     },
@@ -5084,7 +5767,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "prose"
     },
@@ -5105,7 +5788,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "dt"
     },
@@ -5126,7 +5809,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "dt"
     },
@@ -5147,7 +5830,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "dt"
     },
@@ -5168,7 +5851,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "dt"
     },
@@ -5189,7 +5872,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "dt"
     },
@@ -5210,7 +5893,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "dt"
     },
@@ -5231,7 +5914,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "dt"
     },
@@ -5252,7 +5935,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "dt"
     },
@@ -5273,7 +5956,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "prose"
     },
@@ -5295,7 +5978,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "prose"
     },
@@ -5317,7 +6000,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "prose"
     },
@@ -5339,7 +6022,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "prose"
     },
@@ -5361,7 +6044,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "prose"
     },
@@ -5383,7 +6066,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "prose"
     },
@@ -5405,7 +6088,7 @@
         "id": "api-mlgraphbuilder-logical",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
         "title": "Element-wise logical operations",
-        "number": "7.7.13"
+        "number": "7.9.13"
       },
       "definedIn": "prose"
     },
@@ -5438,7 +6121,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "prose"
     },
@@ -5471,7 +6154,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "prose"
     },
@@ -5492,7 +6175,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "dt"
     },
@@ -5513,7 +6196,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "dt"
     },
@@ -5534,7 +6217,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "dt"
     },
@@ -5555,7 +6238,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "dt"
     },
@@ -5576,7 +6259,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "dt"
     },
@@ -5597,7 +6280,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "dt"
     },
@@ -5618,7 +6301,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "dt"
     },
@@ -5639,7 +6322,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "dt"
     },
@@ -5660,7 +6343,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "dt"
     },
@@ -5681,7 +6364,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "dt"
     },
@@ -5702,7 +6385,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "dt"
     },
@@ -5723,7 +6406,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "dt"
     },
@@ -5744,7 +6427,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "dt"
     },
@@ -5765,7 +6448,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "prose"
     },
@@ -5787,7 +6470,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "prose"
     },
@@ -5809,7 +6492,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "prose"
     },
@@ -5831,7 +6514,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "prose"
     },
@@ -5853,7 +6536,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "prose"
     },
@@ -5875,7 +6558,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "prose"
     },
@@ -5897,7 +6580,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "prose"
     },
@@ -5919,7 +6602,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "prose"
     },
@@ -5941,7 +6624,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "prose"
     },
@@ -5963,7 +6646,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "prose"
     },
@@ -5985,7 +6668,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "prose"
     },
@@ -6007,7 +6690,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "prose"
     },
@@ -6029,7 +6712,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "prose"
     },
@@ -6051,7 +6734,7 @@
         "id": "api-mlgraphbuilder-unary",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
         "title": "Element-wise unary operations",
-        "number": "7.7.14"
+        "number": "7.9.14"
       },
       "definedIn": "prose"
     },
@@ -6070,7 +6753,7 @@
         "id": "api-mlgraphbuilder-elu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-elu",
         "title": "elu",
-        "number": "7.7.15"
+        "number": "7.9.15"
       },
       "definedIn": "pre"
     },
@@ -6091,7 +6774,7 @@
         "id": "api-mlgraphbuilder-elu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-elu",
         "title": "elu",
-        "number": "7.7.15"
+        "number": "7.9.15"
       },
       "definedIn": "dt"
     },
@@ -6112,7 +6795,7 @@
         "id": "api-mlgraphbuilder-elu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-elu",
         "title": "elu",
-        "number": "7.7.15"
+        "number": "7.9.15"
       },
       "definedIn": "prose"
     },
@@ -6133,7 +6816,7 @@
         "id": "api-mlgraphbuilder-elu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-elu",
         "title": "elu",
-        "number": "7.7.15"
+        "number": "7.9.15"
       },
       "definedIn": "prose"
     },
@@ -6154,7 +6837,7 @@
         "id": "api-mlgraphbuilder-elu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-elu",
         "title": "elu",
-        "number": "7.7.15"
+        "number": "7.9.15"
       },
       "definedIn": "dt"
     },
@@ -6176,7 +6859,7 @@
         "id": "api-mlgraphbuilder-elu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-elu",
         "title": "elu",
-        "number": "7.7.15"
+        "number": "7.9.15"
       },
       "definedIn": "prose"
     },
@@ -6197,7 +6880,7 @@
         "id": "api-mlgraphbuilder-expand",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-expand",
         "title": "expand",
-        "number": "7.7.16"
+        "number": "7.9.16"
       },
       "definedIn": "prose"
     },
@@ -6218,7 +6901,7 @@
         "id": "api-mlgraphbuilder-expand",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-expand",
         "title": "expand",
-        "number": "7.7.16"
+        "number": "7.9.16"
       },
       "definedIn": "prose"
     },
@@ -6239,7 +6922,7 @@
         "id": "api-mlgraphbuilder-expand",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-expand",
         "title": "expand",
-        "number": "7.7.16"
+        "number": "7.9.16"
       },
       "definedIn": "prose"
     },
@@ -6260,7 +6943,7 @@
         "id": "api-mlgraphbuilder-expand",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-expand",
         "title": "expand",
-        "number": "7.7.16"
+        "number": "7.9.16"
       },
       "definedIn": "dt"
     },
@@ -6282,7 +6965,7 @@
         "id": "api-mlgraphbuilder-expand",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-expand",
         "title": "expand",
-        "number": "7.7.16"
+        "number": "7.9.16"
       },
       "definedIn": "prose"
     },
@@ -6301,7 +6984,7 @@
         "id": "api-mlgraphbuilder-gather",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gather",
         "title": "gather",
-        "number": "7.7.17"
+        "number": "7.9.17"
       },
       "definedIn": "pre"
     },
@@ -6320,7 +7003,7 @@
         "id": "api-mlgraphbuilder-gather",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gather",
         "title": "gather",
-        "number": "7.7.17"
+        "number": "7.9.17"
       },
       "definedIn": "pre"
     },
@@ -6341,7 +7024,7 @@
         "id": "api-mlgraphbuilder-gather",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gather",
         "title": "gather",
-        "number": "7.7.17"
+        "number": "7.9.17"
       },
       "definedIn": "dt"
     },
@@ -6362,7 +7045,7 @@
         "id": "api-mlgraphbuilder-gather",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gather",
         "title": "gather",
-        "number": "7.7.17"
+        "number": "7.9.17"
       },
       "definedIn": "prose"
     },
@@ -6383,7 +7066,7 @@
         "id": "api-mlgraphbuilder-gather",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gather",
         "title": "gather",
-        "number": "7.7.17"
+        "number": "7.9.17"
       },
       "definedIn": "prose"
     },
@@ -6404,7 +7087,7 @@
         "id": "api-mlgraphbuilder-gather",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gather",
         "title": "gather",
-        "number": "7.7.17"
+        "number": "7.9.17"
       },
       "definedIn": "prose"
     },
@@ -6425,7 +7108,7 @@
         "id": "api-mlgraphbuilder-gather",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gather",
         "title": "gather",
-        "number": "7.7.17"
+        "number": "7.9.17"
       },
       "definedIn": "dt"
     },
@@ -6446,7 +7129,7 @@
         "id": "api-mlgraphbuilder-gather",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gather",
         "title": "gather",
-        "number": "7.7.17"
+        "number": "7.9.17"
       },
       "definedIn": "dt"
     },
@@ -6467,7 +7150,7 @@
         "id": "api-mlgraphbuilder-gather",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gather",
         "title": "gather",
-        "number": "7.7.17"
+        "number": "7.9.17"
       },
       "definedIn": "dt"
     },
@@ -6488,7 +7171,7 @@
         "id": "api-mlgraphbuilder-gather",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gather",
         "title": "gather",
-        "number": "7.7.17"
+        "number": "7.9.17"
       },
       "definedIn": "dt"
     },
@@ -6510,7 +7193,7 @@
         "id": "api-mlgraphbuilder-gather",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gather",
         "title": "gather",
-        "number": "7.7.17"
+        "number": "7.9.17"
       },
       "definedIn": "prose"
     },
@@ -6531,7 +7214,7 @@
         "id": "api-mlgraphbuilder-gelu-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gelu-method",
         "title": "gelu",
-        "number": "7.7.18"
+        "number": "7.9.18"
       },
       "definedIn": "prose"
     },
@@ -6552,7 +7235,7 @@
         "id": "api-mlgraphbuilder-gelu-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gelu-method",
         "title": "gelu",
-        "number": "7.7.18"
+        "number": "7.9.18"
       },
       "definedIn": "prose"
     },
@@ -6573,7 +7256,7 @@
         "id": "api-mlgraphbuilder-gelu-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gelu-method",
         "title": "gelu",
-        "number": "7.7.18"
+        "number": "7.9.18"
       },
       "definedIn": "dt"
     },
@@ -6595,7 +7278,7 @@
         "id": "api-mlgraphbuilder-gelu-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gelu-method",
         "title": "gelu",
-        "number": "7.7.18"
+        "number": "7.9.18"
       },
       "definedIn": "prose"
     },
@@ -6614,7 +7297,7 @@
         "id": "api-mlgraphbuilder-gemm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gemm",
         "title": "gemm",
-        "number": "7.7.19"
+        "number": "7.9.19"
       },
       "definedIn": "pre"
     },
@@ -6633,7 +7316,7 @@
         "id": "api-mlgraphbuilder-gemm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gemm",
         "title": "gemm",
-        "number": "7.7.19"
+        "number": "7.9.19"
       },
       "definedIn": "pre"
     },
@@ -6654,7 +7337,7 @@
         "id": "api-mlgraphbuilder-gemm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gemm",
         "title": "gemm",
-        "number": "7.7.19"
+        "number": "7.9.19"
       },
       "definedIn": "dt"
     },
@@ -6675,7 +7358,7 @@
         "id": "api-mlgraphbuilder-gemm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gemm",
         "title": "gemm",
-        "number": "7.7.19"
+        "number": "7.9.19"
       },
       "definedIn": "dt"
     },
@@ -6696,7 +7379,7 @@
         "id": "api-mlgraphbuilder-gemm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gemm",
         "title": "gemm",
-        "number": "7.7.19"
+        "number": "7.9.19"
       },
       "definedIn": "dt"
     },
@@ -6717,7 +7400,7 @@
         "id": "api-mlgraphbuilder-gemm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gemm",
         "title": "gemm",
-        "number": "7.7.19"
+        "number": "7.9.19"
       },
       "definedIn": "dt"
     },
@@ -6738,7 +7421,7 @@
         "id": "api-mlgraphbuilder-gemm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gemm",
         "title": "gemm",
-        "number": "7.7.19"
+        "number": "7.9.19"
       },
       "definedIn": "dt"
     },
@@ -6759,7 +7442,7 @@
         "id": "api-mlgraphbuilder-gemm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gemm",
         "title": "gemm",
-        "number": "7.7.19"
+        "number": "7.9.19"
       },
       "definedIn": "prose"
     },
@@ -6780,7 +7463,7 @@
         "id": "api-mlgraphbuilder-gemm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gemm",
         "title": "gemm",
-        "number": "7.7.19"
+        "number": "7.9.19"
       },
       "definedIn": "prose"
     },
@@ -6801,7 +7484,7 @@
         "id": "api-mlgraphbuilder-gemm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gemm",
         "title": "gemm",
-        "number": "7.7.19"
+        "number": "7.9.19"
       },
       "definedIn": "prose"
     },
@@ -6822,7 +7505,7 @@
         "id": "api-mlgraphbuilder-gemm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gemm",
         "title": "gemm",
-        "number": "7.7.19"
+        "number": "7.9.19"
       },
       "definedIn": "dt"
     },
@@ -6843,7 +7526,7 @@
         "id": "api-mlgraphbuilder-gemm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gemm",
         "title": "gemm",
-        "number": "7.7.19"
+        "number": "7.9.19"
       },
       "definedIn": "dt"
     },
@@ -6864,7 +7547,7 @@
         "id": "api-mlgraphbuilder-gemm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gemm",
         "title": "gemm",
-        "number": "7.7.19"
+        "number": "7.9.19"
       },
       "definedIn": "dt"
     },
@@ -6885,7 +7568,7 @@
         "id": "api-mlgraphbuilder-gemm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gemm",
         "title": "gemm",
-        "number": "7.7.19"
+        "number": "7.9.19"
       },
       "definedIn": "dt"
     },
@@ -6906,7 +7589,7 @@
         "id": "api-mlgraphbuilder-gemm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gemm",
         "title": "gemm",
-        "number": "7.7.19"
+        "number": "7.9.19"
       },
       "definedIn": "dt"
     },
@@ -6928,7 +7611,7 @@
         "id": "api-mlgraphbuilder-gemm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gemm",
         "title": "gemm",
-        "number": "7.7.19"
+        "number": "7.9.19"
       },
       "definedIn": "prose"
     },
@@ -6947,7 +7630,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "pre"
     },
@@ -6968,7 +7651,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "pre"
     },
@@ -6989,7 +7672,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "pre"
     },
@@ -7008,7 +7691,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "pre"
     },
@@ -7029,7 +7712,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "pre"
     },
@@ -7050,7 +7733,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "pre"
     },
@@ -7071,7 +7754,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "pre"
     },
@@ -7090,7 +7773,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "pre"
     },
@@ -7111,7 +7794,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "pre"
     },
@@ -7132,7 +7815,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "pre"
     },
@@ -7153,7 +7836,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "pre"
     },
@@ -7172,7 +7855,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "pre"
     },
@@ -7191,7 +7874,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "pre"
     },
@@ -7212,7 +7895,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "dt"
     },
@@ -7233,7 +7916,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "dt"
     },
@@ -7254,7 +7937,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "dt"
     },
@@ -7275,7 +7958,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "dt"
     },
@@ -7296,7 +7979,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "dt"
     },
@@ -7317,7 +8000,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "dt"
     },
@@ -7338,7 +8021,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "dt"
     },
@@ -7359,7 +8042,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "dt"
     },
@@ -7380,7 +8063,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "prose"
     },
@@ -7401,7 +8084,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "prose"
     },
@@ -7422,7 +8105,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "prose"
     },
@@ -7443,7 +8126,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "prose"
     },
@@ -7464,7 +8147,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "prose"
     },
@@ -7485,7 +8168,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "prose"
     },
@@ -7506,7 +8189,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "dt"
     },
@@ -7527,7 +8210,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "dt"
     },
@@ -7548,7 +8231,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "dt"
     },
@@ -7569,7 +8252,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "dt"
     },
@@ -7590,7 +8273,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "dt"
     },
@@ -7611,7 +8294,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "dt"
     },
@@ -7632,7 +8315,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "dt"
     },
@@ -7653,7 +8336,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "dt"
     },
@@ -7675,7 +8358,7 @@
         "id": "api-mlgraphbuilder-gru",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
         "title": "gru",
-        "number": "7.7.20"
+        "number": "7.9.20"
       },
       "definedIn": "prose"
     },
@@ -7694,7 +8377,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "pre"
     },
@@ -7713,7 +8396,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "pre"
     },
@@ -7734,7 +8417,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "dt"
     },
@@ -7755,7 +8438,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "dt"
     },
@@ -7776,7 +8459,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "dt"
     },
@@ -7797,7 +8480,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "dt"
     },
@@ -7818,7 +8501,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "dt"
     },
@@ -7839,7 +8522,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "prose"
     },
@@ -7860,7 +8543,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "prose"
     },
@@ -7881,7 +8564,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "prose"
     },
@@ -7902,7 +8585,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "prose"
     },
@@ -7923,7 +8606,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "prose"
     },
@@ -7944,7 +8627,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "prose"
     },
@@ -7965,7 +8648,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "dt"
     },
@@ -7986,7 +8669,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "dt"
     },
@@ -8007,7 +8690,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "dt"
     },
@@ -8028,7 +8711,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "dt"
     },
@@ -8049,7 +8732,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "dt"
     },
@@ -8070,7 +8753,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "dt"
     },
@@ -8091,7 +8774,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "dt"
     },
@@ -8112,7 +8795,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "dt"
     },
@@ -8134,7 +8817,7 @@
         "id": "api-mlgraphbuilder-grucell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
         "title": "gruCell",
-        "number": "7.7.21"
+        "number": "7.9.21"
       },
       "definedIn": "prose"
     },
@@ -8153,7 +8836,7 @@
         "id": "api-mlgraphbuilder-hard-sigmoid",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-hard-sigmoid",
         "title": "hardSigmoid",
-        "number": "7.7.22"
+        "number": "7.9.22"
       },
       "definedIn": "pre"
     },
@@ -8174,7 +8857,7 @@
         "id": "api-mlgraphbuilder-hard-sigmoid",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-hard-sigmoid",
         "title": "hardSigmoid",
-        "number": "7.7.22"
+        "number": "7.9.22"
       },
       "definedIn": "dt"
     },
@@ -8195,7 +8878,7 @@
         "id": "api-mlgraphbuilder-hard-sigmoid",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-hard-sigmoid",
         "title": "hardSigmoid",
-        "number": "7.7.22"
+        "number": "7.9.22"
       },
       "definedIn": "dt"
     },
@@ -8216,7 +8899,7 @@
         "id": "api-mlgraphbuilder-hard-sigmoid",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-hard-sigmoid",
         "title": "hardSigmoid",
-        "number": "7.7.22"
+        "number": "7.9.22"
       },
       "definedIn": "prose"
     },
@@ -8237,7 +8920,7 @@
         "id": "api-mlgraphbuilder-hard-sigmoid",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-hard-sigmoid",
         "title": "hardSigmoid",
-        "number": "7.7.22"
+        "number": "7.9.22"
       },
       "definedIn": "prose"
     },
@@ -8258,7 +8941,7 @@
         "id": "api-mlgraphbuilder-hard-sigmoid",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-hard-sigmoid",
         "title": "hardSigmoid",
-        "number": "7.7.22"
+        "number": "7.9.22"
       },
       "definedIn": "dt"
     },
@@ -8280,7 +8963,7 @@
         "id": "api-mlgraphbuilder-hard-sigmoid",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-hard-sigmoid",
         "title": "hardSigmoid",
-        "number": "7.7.22"
+        "number": "7.9.22"
       },
       "definedIn": "prose"
     },
@@ -8301,7 +8984,7 @@
         "id": "api-mlgraphbuilder-hard-swish",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-hard-swish",
         "title": "hardSwish",
-        "number": "7.7.23"
+        "number": "7.9.23"
       },
       "definedIn": "prose"
     },
@@ -8322,7 +9005,7 @@
         "id": "api-mlgraphbuilder-hard-swish",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-hard-swish",
         "title": "hardSwish",
-        "number": "7.7.23"
+        "number": "7.9.23"
       },
       "definedIn": "prose"
     },
@@ -8343,7 +9026,7 @@
         "id": "api-mlgraphbuilder-hard-swish",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-hard-swish",
         "title": "hardSwish",
-        "number": "7.7.23"
+        "number": "7.9.23"
       },
       "definedIn": "dt"
     },
@@ -8365,7 +9048,7 @@
         "id": "api-mlgraphbuilder-hard-swish",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-hard-swish",
         "title": "hardSwish",
-        "number": "7.7.23"
+        "number": "7.9.23"
       },
       "definedIn": "prose"
     },
@@ -8384,7 +9067,7 @@
         "id": "api-mlgraphbuilder-instancenorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-instancenorm",
         "title": "instanceNormalization",
-        "number": "7.7.24"
+        "number": "7.9.24"
       },
       "definedIn": "pre"
     },
@@ -8403,7 +9086,7 @@
         "id": "api-mlgraphbuilder-instancenorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-instancenorm",
         "title": "instanceNormalization",
-        "number": "7.7.24"
+        "number": "7.9.24"
       },
       "definedIn": "pre"
     },
@@ -8424,7 +9107,7 @@
         "id": "api-mlgraphbuilder-instancenorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-instancenorm",
         "title": "instanceNormalization",
-        "number": "7.7.24"
+        "number": "7.9.24"
       },
       "definedIn": "dt"
     },
@@ -8445,7 +9128,7 @@
         "id": "api-mlgraphbuilder-instancenorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-instancenorm",
         "title": "instanceNormalization",
-        "number": "7.7.24"
+        "number": "7.9.24"
       },
       "definedIn": "dt"
     },
@@ -8466,7 +9149,7 @@
         "id": "api-mlgraphbuilder-instancenorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-instancenorm",
         "title": "instanceNormalization",
-        "number": "7.7.24"
+        "number": "7.9.24"
       },
       "definedIn": "dt"
     },
@@ -8487,7 +9170,7 @@
         "id": "api-mlgraphbuilder-instancenorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-instancenorm",
         "title": "instanceNormalization",
-        "number": "7.7.24"
+        "number": "7.9.24"
       },
       "definedIn": "dt"
     },
@@ -8508,7 +9191,7 @@
         "id": "api-mlgraphbuilder-instancenorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-instancenorm",
         "title": "instanceNormalization",
-        "number": "7.7.24"
+        "number": "7.9.24"
       },
       "definedIn": "prose"
     },
@@ -8529,7 +9212,7 @@
         "id": "api-mlgraphbuilder-instancenorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-instancenorm",
         "title": "instanceNormalization",
-        "number": "7.7.24"
+        "number": "7.9.24"
       },
       "definedIn": "prose"
     },
@@ -8550,7 +9233,7 @@
         "id": "api-mlgraphbuilder-instancenorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-instancenorm",
         "title": "instanceNormalization",
-        "number": "7.7.24"
+        "number": "7.9.24"
       },
       "definedIn": "dt"
     },
@@ -8571,7 +9254,7 @@
         "id": "api-mlgraphbuilder-instancenorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-instancenorm",
         "title": "instanceNormalization",
-        "number": "7.7.24"
+        "number": "7.9.24"
       },
       "definedIn": "dt"
     },
@@ -8592,7 +9275,7 @@
         "id": "api-mlgraphbuilder-instancenorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-instancenorm",
         "title": "instanceNormalization",
-        "number": "7.7.24"
+        "number": "7.9.24"
       },
       "definedIn": "dt"
     },
@@ -8613,7 +9296,7 @@
         "id": "api-mlgraphbuilder-instancenorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-instancenorm",
         "title": "instanceNormalization",
-        "number": "7.7.24"
+        "number": "7.9.24"
       },
       "definedIn": "dt"
     },
@@ -8634,7 +9317,7 @@
         "id": "api-mlgraphbuilder-instancenorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-instancenorm",
         "title": "instanceNormalization",
-        "number": "7.7.24"
+        "number": "7.9.24"
       },
       "definedIn": "dt"
     },
@@ -8656,7 +9339,7 @@
         "id": "api-mlgraphbuilder-instancenorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-instancenorm",
         "title": "instanceNormalization",
-        "number": "7.7.24"
+        "number": "7.9.24"
       },
       "definedIn": "prose"
     },
@@ -8675,7 +9358,7 @@
         "id": "api-mlgraphbuilder-layernorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-layernorm",
         "title": "layerNormalization",
-        "number": "7.7.25"
+        "number": "7.9.25"
       },
       "definedIn": "pre"
     },
@@ -8696,7 +9379,7 @@
         "id": "api-mlgraphbuilder-layernorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-layernorm",
         "title": "layerNormalization",
-        "number": "7.7.25"
+        "number": "7.9.25"
       },
       "definedIn": "dt"
     },
@@ -8717,7 +9400,7 @@
         "id": "api-mlgraphbuilder-layernorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-layernorm",
         "title": "layerNormalization",
-        "number": "7.7.25"
+        "number": "7.9.25"
       },
       "definedIn": "dt"
     },
@@ -8738,7 +9421,7 @@
         "id": "api-mlgraphbuilder-layernorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-layernorm",
         "title": "layerNormalization",
-        "number": "7.7.25"
+        "number": "7.9.25"
       },
       "definedIn": "dt"
     },
@@ -8759,7 +9442,7 @@
         "id": "api-mlgraphbuilder-layernorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-layernorm",
         "title": "layerNormalization",
-        "number": "7.7.25"
+        "number": "7.9.25"
       },
       "definedIn": "dt"
     },
@@ -8780,7 +9463,7 @@
         "id": "api-mlgraphbuilder-layernorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-layernorm",
         "title": "layerNormalization",
-        "number": "7.7.25"
+        "number": "7.9.25"
       },
       "definedIn": "prose"
     },
@@ -8801,7 +9484,7 @@
         "id": "api-mlgraphbuilder-layernorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-layernorm",
         "title": "layerNormalization",
-        "number": "7.7.25"
+        "number": "7.9.25"
       },
       "definedIn": "prose"
     },
@@ -8822,7 +9505,7 @@
         "id": "api-mlgraphbuilder-layernorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-layernorm",
         "title": "layerNormalization",
-        "number": "7.7.25"
+        "number": "7.9.25"
       },
       "definedIn": "dt"
     },
@@ -8844,7 +9527,7 @@
         "id": "api-mlgraphbuilder-layernorm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-layernorm",
         "title": "layerNormalization",
-        "number": "7.7.25"
+        "number": "7.9.25"
       },
       "definedIn": "prose"
     },
@@ -8863,7 +9546,7 @@
         "id": "api-mlgraphbuilder-leakyrelu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-leakyrelu",
         "title": "leakyRelu",
-        "number": "7.7.26"
+        "number": "7.9.26"
       },
       "definedIn": "pre"
     },
@@ -8884,7 +9567,7 @@
         "id": "api-mlgraphbuilder-leakyrelu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-leakyrelu",
         "title": "leakyRelu",
-        "number": "7.7.26"
+        "number": "7.9.26"
       },
       "definedIn": "dt"
     },
@@ -8905,7 +9588,7 @@
         "id": "api-mlgraphbuilder-leakyrelu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-leakyrelu",
         "title": "leakyRelu",
-        "number": "7.7.26"
+        "number": "7.9.26"
       },
       "definedIn": "prose"
     },
@@ -8926,7 +9609,7 @@
         "id": "api-mlgraphbuilder-leakyrelu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-leakyrelu",
         "title": "leakyRelu",
-        "number": "7.7.26"
+        "number": "7.9.26"
       },
       "definedIn": "prose"
     },
@@ -8947,7 +9630,7 @@
         "id": "api-mlgraphbuilder-leakyrelu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-leakyrelu",
         "title": "leakyRelu",
-        "number": "7.7.26"
+        "number": "7.9.26"
       },
       "definedIn": "dt"
     },
@@ -8969,7 +9652,7 @@
         "id": "api-mlgraphbuilder-leakyrelu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-leakyrelu",
         "title": "leakyRelu",
-        "number": "7.7.26"
+        "number": "7.9.26"
       },
       "definedIn": "prose"
     },
@@ -8988,7 +9671,7 @@
         "id": "api-mlgraphbuilder-linear",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-linear",
         "title": "linear",
-        "number": "7.7.27"
+        "number": "7.9.27"
       },
       "definedIn": "pre"
     },
@@ -9009,7 +9692,7 @@
         "id": "api-mlgraphbuilder-linear",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-linear",
         "title": "linear",
-        "number": "7.7.27"
+        "number": "7.9.27"
       },
       "definedIn": "dt"
     },
@@ -9030,7 +9713,7 @@
         "id": "api-mlgraphbuilder-linear",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-linear",
         "title": "linear",
-        "number": "7.7.27"
+        "number": "7.9.27"
       },
       "definedIn": "dt"
     },
@@ -9051,7 +9734,7 @@
         "id": "api-mlgraphbuilder-linear",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-linear",
         "title": "linear",
-        "number": "7.7.27"
+        "number": "7.9.27"
       },
       "definedIn": "prose"
     },
@@ -9072,7 +9755,7 @@
         "id": "api-mlgraphbuilder-linear",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-linear",
         "title": "linear",
-        "number": "7.7.27"
+        "number": "7.9.27"
       },
       "definedIn": "prose"
     },
@@ -9093,7 +9776,7 @@
         "id": "api-mlgraphbuilder-linear",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-linear",
         "title": "linear",
-        "number": "7.7.27"
+        "number": "7.9.27"
       },
       "definedIn": "dt"
     },
@@ -9115,7 +9798,7 @@
         "id": "api-mlgraphbuilder-linear",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-linear",
         "title": "linear",
-        "number": "7.7.27"
+        "number": "7.9.27"
       },
       "definedIn": "prose"
     },
@@ -9134,7 +9817,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "pre"
     },
@@ -9155,7 +9838,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "pre"
     },
@@ -9176,7 +9859,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "pre"
     },
@@ -9195,7 +9878,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "pre"
     },
@@ -9214,7 +9897,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "pre"
     },
@@ -9235,7 +9918,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9256,7 +9939,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9277,7 +9960,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9298,7 +9981,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9319,7 +10002,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9340,7 +10023,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9361,7 +10044,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9382,7 +10065,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9403,7 +10086,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9424,7 +10107,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "prose"
     },
@@ -9445,7 +10128,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "prose"
     },
@@ -9466,7 +10149,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "prose"
     },
@@ -9487,7 +10170,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "prose"
     },
@@ -9508,7 +10191,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "prose"
     },
@@ -9529,7 +10212,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "prose"
     },
@@ -9550,7 +10233,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9571,7 +10254,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9592,7 +10275,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9613,7 +10296,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9634,7 +10317,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9655,7 +10338,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9676,7 +10359,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9697,7 +10380,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9718,7 +10401,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9739,7 +10422,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "dt"
     },
@@ -9761,7 +10444,7 @@
         "id": "api-mlgraphbuilder-lstm",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
         "title": "lstm",
-        "number": "7.7.28"
+        "number": "7.9.28"
       },
       "definedIn": "prose"
     },
@@ -9780,7 +10463,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "pre"
     },
@@ -9799,7 +10482,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "pre"
     },
@@ -9820,7 +10503,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "dt"
     },
@@ -9841,7 +10524,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "dt"
     },
@@ -9862,7 +10545,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "dt"
     },
@@ -9883,7 +10566,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "dt"
     },
@@ -9904,7 +10587,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "dt"
     },
@@ -9925,7 +10608,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "prose"
     },
@@ -9946,7 +10629,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "prose"
     },
@@ -9967,7 +10650,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "prose"
     },
@@ -9988,7 +10671,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "prose"
     },
@@ -10009,7 +10692,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "prose"
     },
@@ -10030,7 +10713,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "prose"
     },
@@ -10051,7 +10734,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "prose"
     },
@@ -10072,7 +10755,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "dt"
     },
@@ -10093,7 +10776,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "dt"
     },
@@ -10114,7 +10797,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "dt"
     },
@@ -10135,7 +10818,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "dt"
     },
@@ -10156,7 +10839,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "dt"
     },
@@ -10177,7 +10860,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "dt"
     },
@@ -10198,7 +10881,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "dt"
     },
@@ -10219,7 +10902,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "dt"
     },
@@ -10240,7 +10923,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "dt"
     },
@@ -10261,7 +10944,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "dt"
     },
@@ -10283,7 +10966,7 @@
         "id": "api-mlgraphbuilder-lstmcell",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
         "title": "lstmCell",
-        "number": "7.7.29"
+        "number": "7.9.29"
       },
       "definedIn": "prose"
     },
@@ -10304,7 +10987,7 @@
         "id": "api-mlgraphbuilder-matmul",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-matmul",
         "title": "matmul",
-        "number": "7.7.30"
+        "number": "7.9.30"
       },
       "definedIn": "prose"
     },
@@ -10325,7 +11008,7 @@
         "id": "api-mlgraphbuilder-matmul",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-matmul",
         "title": "matmul",
-        "number": "7.7.30"
+        "number": "7.9.30"
       },
       "definedIn": "prose"
     },
@@ -10346,7 +11029,7 @@
         "id": "api-mlgraphbuilder-matmul",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-matmul",
         "title": "matmul",
-        "number": "7.7.30"
+        "number": "7.9.30"
       },
       "definedIn": "prose"
     },
@@ -10367,7 +11050,7 @@
         "id": "api-mlgraphbuilder-matmul",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-matmul",
         "title": "matmul",
-        "number": "7.7.30"
+        "number": "7.9.30"
       },
       "definedIn": "dt"
     },
@@ -10388,7 +11071,7 @@
         "id": "api-mlgraphbuilder-matmul",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-matmul",
         "title": "matmul",
-        "number": "7.7.30"
+        "number": "7.9.30"
       },
       "definedIn": "prose"
     },
@@ -10410,7 +11093,7 @@
         "id": "api-mlgraphbuilder-matmul",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-matmul",
         "title": "matmul",
-        "number": "7.7.30"
+        "number": "7.9.30"
       },
       "definedIn": "prose"
     },
@@ -10429,7 +11112,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pad",
         "title": "pad",
-        "number": "7.7.31"
+        "number": "7.9.31"
       },
       "definedIn": "pre"
     },
@@ -10450,7 +11133,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pad",
         "title": "pad",
-        "number": "7.7.31"
+        "number": "7.9.31"
       },
       "definedIn": "pre"
     },
@@ -10471,7 +11154,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pad",
         "title": "pad",
-        "number": "7.7.31"
+        "number": "7.9.31"
       },
       "definedIn": "pre"
     },
@@ -10492,7 +11175,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pad",
         "title": "pad",
-        "number": "7.7.31"
+        "number": "7.9.31"
       },
       "definedIn": "pre"
     },
@@ -10513,7 +11196,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pad",
         "title": "pad",
-        "number": "7.7.31"
+        "number": "7.9.31"
       },
       "definedIn": "pre"
     },
@@ -10532,7 +11215,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pad",
         "title": "pad",
-        "number": "7.7.31"
+        "number": "7.9.31"
       },
       "definedIn": "pre"
     },
@@ -10553,7 +11236,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pad",
         "title": "pad",
-        "number": "7.7.31"
+        "number": "7.9.31"
       },
       "definedIn": "dt"
     },
@@ -10574,7 +11257,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pad",
         "title": "pad",
-        "number": "7.7.31"
+        "number": "7.9.31"
       },
       "definedIn": "dt"
     },
@@ -10595,7 +11278,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pad",
         "title": "pad",
-        "number": "7.7.31"
+        "number": "7.9.31"
       },
       "definedIn": "prose"
     },
@@ -10616,7 +11299,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pad",
         "title": "pad",
-        "number": "7.7.31"
+        "number": "7.9.31"
       },
       "definedIn": "prose"
     },
@@ -10637,7 +11320,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pad",
         "title": "pad",
-        "number": "7.7.31"
+        "number": "7.9.31"
       },
       "definedIn": "prose"
     },
@@ -10658,7 +11341,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pad",
         "title": "pad",
-        "number": "7.7.31"
+        "number": "7.9.31"
       },
       "definedIn": "prose"
     },
@@ -10679,7 +11362,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pad",
         "title": "pad",
-        "number": "7.7.31"
+        "number": "7.9.31"
       },
       "definedIn": "dt"
     },
@@ -10700,7 +11383,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pad",
         "title": "pad",
-        "number": "7.7.31"
+        "number": "7.9.31"
       },
       "definedIn": "prose"
     },
@@ -10722,7 +11405,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pad",
         "title": "pad",
-        "number": "7.7.31"
+        "number": "7.9.31"
       },
       "definedIn": "prose"
     },
@@ -10741,7 +11424,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "pre"
     },
@@ -10762,7 +11445,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "pre"
     },
@@ -10783,7 +11466,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "pre"
     },
@@ -10802,7 +11485,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "pre"
     },
@@ -10823,7 +11506,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "dt"
     },
@@ -10844,7 +11527,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "dt"
     },
@@ -10865,7 +11548,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "dt"
     },
@@ -10886,7 +11569,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "dt"
     },
@@ -10907,7 +11590,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "dt"
     },
@@ -10928,7 +11611,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "dt"
     },
@@ -10949,7 +11632,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "dt"
     },
@@ -10972,7 +11655,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "prose"
     },
@@ -10995,7 +11678,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "prose"
     },
@@ -11016,7 +11699,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "dt"
     },
@@ -11037,7 +11720,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "dt"
     },
@@ -11058,7 +11741,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "dt"
     },
@@ -11079,7 +11762,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "prose"
     },
@@ -11100,7 +11783,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "prose"
     },
@@ -11122,7 +11805,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "prose"
     },
@@ -11144,7 +11827,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "prose"
     },
@@ -11166,7 +11849,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.32"
+        "number": "7.9.32"
       },
       "definedIn": "prose"
     },
@@ -11185,7 +11868,7 @@
         "id": "api-mlgraphbuilder-prelu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-prelu",
         "title": "prelu",
-        "number": "7.7.33"
+        "number": "7.9.33"
       },
       "definedIn": "pre"
     },
@@ -11206,7 +11889,7 @@
         "id": "api-mlgraphbuilder-prelu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-prelu",
         "title": "prelu",
-        "number": "7.7.33"
+        "number": "7.9.33"
       },
       "definedIn": "prose"
     },
@@ -11227,7 +11910,7 @@
         "id": "api-mlgraphbuilder-prelu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-prelu",
         "title": "prelu",
-        "number": "7.7.33"
+        "number": "7.9.33"
       },
       "definedIn": "prose"
     },
@@ -11248,7 +11931,7 @@
         "id": "api-mlgraphbuilder-prelu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-prelu",
         "title": "prelu",
-        "number": "7.7.33"
+        "number": "7.9.33"
       },
       "definedIn": "prose"
     },
@@ -11269,7 +11952,7 @@
         "id": "api-mlgraphbuilder-prelu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-prelu",
         "title": "prelu",
-        "number": "7.7.33"
+        "number": "7.9.33"
       },
       "definedIn": "dt"
     },
@@ -11290,7 +11973,7 @@
         "id": "api-mlgraphbuilder-prelu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-prelu",
         "title": "prelu",
-        "number": "7.7.33"
+        "number": "7.9.33"
       },
       "definedIn": "dt"
     },
@@ -11311,7 +11994,7 @@
         "id": "api-mlgraphbuilder-prelu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-prelu",
         "title": "prelu",
-        "number": "7.7.33"
+        "number": "7.9.33"
       },
       "definedIn": "dt"
     },
@@ -11332,7 +12015,7 @@
         "id": "api-mlgraphbuilder-prelu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-prelu",
         "title": "prelu",
-        "number": "7.7.33"
+        "number": "7.9.33"
       },
       "definedIn": "dt"
     },
@@ -11354,7 +12037,7 @@
         "id": "api-mlgraphbuilder-prelu",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-prelu",
         "title": "prelu",
-        "number": "7.7.33"
+        "number": "7.9.33"
       },
       "definedIn": "prose"
     },
@@ -11373,7 +12056,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "pre"
     },
@@ -11394,7 +12077,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "dt"
     },
@@ -11415,7 +12098,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "dt"
     },
@@ -11445,7 +12128,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "prose"
     },
@@ -11475,7 +12158,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "prose"
     },
@@ -11496,7 +12179,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "dt"
     },
@@ -11517,7 +12200,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "dt"
     },
@@ -11538,7 +12221,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "dt"
     },
@@ -11559,7 +12242,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "dt"
     },
@@ -11580,7 +12263,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "dt"
     },
@@ -11601,7 +12284,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "dt"
     },
@@ -11622,7 +12305,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "dt"
     },
@@ -11643,7 +12326,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "dt"
     },
@@ -11664,7 +12347,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "dt"
     },
@@ -11685,7 +12368,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "dt"
     },
@@ -11706,7 +12389,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "prose"
     },
@@ -11727,7 +12410,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "prose"
     },
@@ -11749,7 +12432,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "prose"
     },
@@ -11771,7 +12454,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "prose"
     },
@@ -11793,7 +12476,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "prose"
     },
@@ -11815,7 +12498,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "prose"
     },
@@ -11837,7 +12520,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "prose"
     },
@@ -11859,7 +12542,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "prose"
     },
@@ -11881,7 +12564,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "prose"
     },
@@ -11903,7 +12586,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "prose"
     },
@@ -11925,7 +12608,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "prose"
     },
@@ -11947,7 +12630,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.34"
+        "number": "7.9.34"
       },
       "definedIn": "prose"
     },
@@ -11968,7 +12651,7 @@
         "id": "api-mlgraphbuilder-relu-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-relu-method",
         "title": "relu",
-        "number": "7.7.35"
+        "number": "7.9.35"
       },
       "definedIn": "prose"
     },
@@ -11989,7 +12672,7 @@
         "id": "api-mlgraphbuilder-relu-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-relu-method",
         "title": "relu",
-        "number": "7.7.35"
+        "number": "7.9.35"
       },
       "definedIn": "prose"
     },
@@ -12010,7 +12693,7 @@
         "id": "api-mlgraphbuilder-relu-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-relu-method",
         "title": "relu",
-        "number": "7.7.35"
+        "number": "7.9.35"
       },
       "definedIn": "dt"
     },
@@ -12032,7 +12715,7 @@
         "id": "api-mlgraphbuilder-relu-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-relu-method",
         "title": "relu",
-        "number": "7.7.35"
+        "number": "7.9.35"
       },
       "definedIn": "prose"
     },
@@ -12051,7 +12734,7 @@
         "id": "api-mlgraphbuilder-resample2d-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-resample2d-method",
         "title": "resample2d",
-        "number": "7.7.36"
+        "number": "7.9.36"
       },
       "definedIn": "pre"
     },
@@ -12072,7 +12755,7 @@
         "id": "api-mlgraphbuilder-resample2d-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-resample2d-method",
         "title": "resample2d",
-        "number": "7.7.36"
+        "number": "7.9.36"
       },
       "definedIn": "pre"
     },
@@ -12093,7 +12776,7 @@
         "id": "api-mlgraphbuilder-resample2d-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-resample2d-method",
         "title": "resample2d",
-        "number": "7.7.36"
+        "number": "7.9.36"
       },
       "definedIn": "pre"
     },
@@ -12112,7 +12795,7 @@
         "id": "api-mlgraphbuilder-resample2d-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-resample2d-method",
         "title": "resample2d",
-        "number": "7.7.36"
+        "number": "7.9.36"
       },
       "definedIn": "pre"
     },
@@ -12133,7 +12816,7 @@
         "id": "api-mlgraphbuilder-resample2d-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-resample2d-method",
         "title": "resample2d",
-        "number": "7.7.36"
+        "number": "7.9.36"
       },
       "definedIn": "prose"
     },
@@ -12154,7 +12837,7 @@
         "id": "api-mlgraphbuilder-resample2d-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-resample2d-method",
         "title": "resample2d",
-        "number": "7.7.36"
+        "number": "7.9.36"
       },
       "definedIn": "prose"
     },
@@ -12175,7 +12858,7 @@
         "id": "api-mlgraphbuilder-resample2d-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-resample2d-method",
         "title": "resample2d",
-        "number": "7.7.36"
+        "number": "7.9.36"
       },
       "definedIn": "dt"
     },
@@ -12196,7 +12879,7 @@
         "id": "api-mlgraphbuilder-resample2d-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-resample2d-method",
         "title": "resample2d",
-        "number": "7.7.36"
+        "number": "7.9.36"
       },
       "definedIn": "dt"
     },
@@ -12217,7 +12900,7 @@
         "id": "api-mlgraphbuilder-resample2d-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-resample2d-method",
         "title": "resample2d",
-        "number": "7.7.36"
+        "number": "7.9.36"
       },
       "definedIn": "dt"
     },
@@ -12238,7 +12921,7 @@
         "id": "api-mlgraphbuilder-resample2d-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-resample2d-method",
         "title": "resample2d",
-        "number": "7.7.36"
+        "number": "7.9.36"
       },
       "definedIn": "dt"
     },
@@ -12259,7 +12942,7 @@
         "id": "api-mlgraphbuilder-resample2d-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-resample2d-method",
         "title": "resample2d",
-        "number": "7.7.36"
+        "number": "7.9.36"
       },
       "definedIn": "dt"
     },
@@ -12280,7 +12963,7 @@
         "id": "api-mlgraphbuilder-resample2d-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-resample2d-method",
         "title": "resample2d",
-        "number": "7.7.36"
+        "number": "7.9.36"
       },
       "definedIn": "prose"
     },
@@ -12301,7 +12984,7 @@
         "id": "api-mlgraphbuilder-resample2d-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-resample2d-method",
         "title": "resample2d",
-        "number": "7.7.36"
+        "number": "7.9.36"
       },
       "definedIn": "prose"
     },
@@ -12323,7 +13006,7 @@
         "id": "api-mlgraphbuilder-resample2d-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-resample2d-method",
         "title": "resample2d",
-        "number": "7.7.36"
+        "number": "7.9.36"
       },
       "definedIn": "prose"
     },
@@ -12344,7 +13027,7 @@
         "id": "api-mlgraphbuilder-reshape-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reshape-method",
         "title": "reshape",
-        "number": "7.7.37"
+        "number": "7.9.37"
       },
       "definedIn": "prose"
     },
@@ -12365,7 +13048,7 @@
         "id": "api-mlgraphbuilder-reshape-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reshape-method",
         "title": "reshape",
-        "number": "7.7.37"
+        "number": "7.9.37"
       },
       "definedIn": "prose"
     },
@@ -12386,7 +13069,7 @@
         "id": "api-mlgraphbuilder-reshape-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reshape-method",
         "title": "reshape",
-        "number": "7.7.37"
+        "number": "7.9.37"
       },
       "definedIn": "prose"
     },
@@ -12407,7 +13090,7 @@
         "id": "api-mlgraphbuilder-reshape-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reshape-method",
         "title": "reshape",
-        "number": "7.7.37"
+        "number": "7.9.37"
       },
       "definedIn": "dt"
     },
@@ -12429,7 +13112,7 @@
         "id": "api-mlgraphbuilder-reshape-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reshape-method",
         "title": "reshape",
-        "number": "7.7.37"
+        "number": "7.9.37"
       },
       "definedIn": "prose"
     },
@@ -12450,7 +13133,7 @@
         "id": "api-mlgraphbuilder-sigmoid-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-sigmoid-method",
         "title": "sigmoid",
-        "number": "7.7.38"
+        "number": "7.9.38"
       },
       "definedIn": "prose"
     },
@@ -12471,7 +13154,7 @@
         "id": "api-mlgraphbuilder-sigmoid-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-sigmoid-method",
         "title": "sigmoid",
-        "number": "7.7.38"
+        "number": "7.9.38"
       },
       "definedIn": "prose"
     },
@@ -12492,7 +13175,7 @@
         "id": "api-mlgraphbuilder-sigmoid-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-sigmoid-method",
         "title": "sigmoid",
-        "number": "7.7.38"
+        "number": "7.9.38"
       },
       "definedIn": "dt"
     },
@@ -12514,7 +13197,7 @@
         "id": "api-mlgraphbuilder-sigmoid-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-sigmoid-method",
         "title": "sigmoid",
-        "number": "7.7.38"
+        "number": "7.9.38"
       },
       "definedIn": "prose"
     },
@@ -12535,7 +13218,7 @@
         "id": "api-mlgraphbuilder-slice",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-slice",
         "title": "slice",
-        "number": "7.7.39"
+        "number": "7.9.39"
       },
       "definedIn": "prose"
     },
@@ -12556,7 +13239,7 @@
         "id": "api-mlgraphbuilder-slice",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-slice",
         "title": "slice",
-        "number": "7.7.39"
+        "number": "7.9.39"
       },
       "definedIn": "prose"
     },
@@ -12577,7 +13260,7 @@
         "id": "api-mlgraphbuilder-slice",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-slice",
         "title": "slice",
-        "number": "7.7.39"
+        "number": "7.9.39"
       },
       "definedIn": "prose"
     },
@@ -12598,7 +13281,7 @@
         "id": "api-mlgraphbuilder-slice",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-slice",
         "title": "slice",
-        "number": "7.7.39"
+        "number": "7.9.39"
       },
       "definedIn": "prose"
     },
@@ -12619,7 +13302,7 @@
         "id": "api-mlgraphbuilder-slice",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-slice",
         "title": "slice",
-        "number": "7.7.39"
+        "number": "7.9.39"
       },
       "definedIn": "dt"
     },
@@ -12641,7 +13324,7 @@
         "id": "api-mlgraphbuilder-slice",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-slice",
         "title": "slice",
-        "number": "7.7.39"
+        "number": "7.9.39"
       },
       "definedIn": "prose"
     },
@@ -12662,7 +13345,7 @@
         "id": "api-mlgraphbuilder-softmax-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softmax-method",
         "title": "softmax",
-        "number": "7.7.40"
+        "number": "7.9.40"
       },
       "definedIn": "prose"
     },
@@ -12683,7 +13366,7 @@
         "id": "api-mlgraphbuilder-softmax-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softmax-method",
         "title": "softmax",
-        "number": "7.7.40"
+        "number": "7.9.40"
       },
       "definedIn": "prose"
     },
@@ -12704,7 +13387,7 @@
         "id": "api-mlgraphbuilder-softmax-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softmax-method",
         "title": "softmax",
-        "number": "7.7.40"
+        "number": "7.9.40"
       },
       "definedIn": "prose"
     },
@@ -12725,7 +13408,7 @@
         "id": "api-mlgraphbuilder-softmax-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softmax-method",
         "title": "softmax",
-        "number": "7.7.40"
+        "number": "7.9.40"
       },
       "definedIn": "dt"
     },
@@ -12747,7 +13430,7 @@
         "id": "api-mlgraphbuilder-softmax-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softmax-method",
         "title": "softmax",
-        "number": "7.7.40"
+        "number": "7.9.40"
       },
       "definedIn": "prose"
     },
@@ -12768,7 +13451,7 @@
         "id": "api-mlgraphbuilder-softplus-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softplus-method",
         "title": "softplus",
-        "number": "7.7.41"
+        "number": "7.9.41"
       },
       "definedIn": "prose"
     },
@@ -12789,7 +13472,7 @@
         "id": "api-mlgraphbuilder-softplus-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softplus-method",
         "title": "softplus",
-        "number": "7.7.41"
+        "number": "7.9.41"
       },
       "definedIn": "prose"
     },
@@ -12810,7 +13493,7 @@
         "id": "api-mlgraphbuilder-softplus-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softplus-method",
         "title": "softplus",
-        "number": "7.7.41"
+        "number": "7.9.41"
       },
       "definedIn": "dt"
     },
@@ -12832,7 +13515,7 @@
         "id": "api-mlgraphbuilder-softplus-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softplus-method",
         "title": "softplus",
-        "number": "7.7.41"
+        "number": "7.9.41"
       },
       "definedIn": "prose"
     },
@@ -12853,7 +13536,7 @@
         "id": "api-mlgraphbuilder-softsign-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softsign-method",
         "title": "softsign",
-        "number": "7.7.42"
+        "number": "7.9.42"
       },
       "definedIn": "prose"
     },
@@ -12874,7 +13557,7 @@
         "id": "api-mlgraphbuilder-softsign-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softsign-method",
         "title": "softsign",
-        "number": "7.7.42"
+        "number": "7.9.42"
       },
       "definedIn": "prose"
     },
@@ -12895,7 +13578,7 @@
         "id": "api-mlgraphbuilder-softsign-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softsign-method",
         "title": "softsign",
-        "number": "7.7.42"
+        "number": "7.9.42"
       },
       "definedIn": "dt"
     },
@@ -12917,7 +13600,7 @@
         "id": "api-mlgraphbuilder-softsign-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softsign-method",
         "title": "softsign",
-        "number": "7.7.42"
+        "number": "7.9.42"
       },
       "definedIn": "prose"
     },
@@ -12936,7 +13619,7 @@
         "id": "api-mlgraphbuilder-split",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-split",
         "title": "split",
-        "number": "7.7.43"
+        "number": "7.9.43"
       },
       "definedIn": "pre"
     },
@@ -12955,7 +13638,7 @@
         "id": "api-mlgraphbuilder-split",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-split",
         "title": "split",
-        "number": "7.7.43"
+        "number": "7.9.43"
       },
       "definedIn": "pre"
     },
@@ -12976,7 +13659,7 @@
         "id": "api-mlgraphbuilder-split",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-split",
         "title": "split",
-        "number": "7.7.43"
+        "number": "7.9.43"
       },
       "definedIn": "prose"
     },
@@ -12997,7 +13680,7 @@
         "id": "api-mlgraphbuilder-split",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-split",
         "title": "split",
-        "number": "7.7.43"
+        "number": "7.9.43"
       },
       "definedIn": "prose"
     },
@@ -13018,7 +13701,7 @@
         "id": "api-mlgraphbuilder-split",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-split",
         "title": "split",
-        "number": "7.7.43"
+        "number": "7.9.43"
       },
       "definedIn": "prose"
     },
@@ -13039,7 +13722,7 @@
         "id": "api-mlgraphbuilder-split",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-split",
         "title": "split",
-        "number": "7.7.43"
+        "number": "7.9.43"
       },
       "definedIn": "dt"
     },
@@ -13060,7 +13743,7 @@
         "id": "api-mlgraphbuilder-split",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-split",
         "title": "split",
-        "number": "7.7.43"
+        "number": "7.9.43"
       },
       "definedIn": "dt"
     },
@@ -13081,7 +13764,7 @@
         "id": "api-mlgraphbuilder-split",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-split",
         "title": "split",
-        "number": "7.7.43"
+        "number": "7.9.43"
       },
       "definedIn": "dt"
     },
@@ -13102,7 +13785,7 @@
         "id": "api-mlgraphbuilder-split",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-split",
         "title": "split",
-        "number": "7.7.43"
+        "number": "7.9.43"
       },
       "definedIn": "dt"
     },
@@ -13124,7 +13807,7 @@
         "id": "api-mlgraphbuilder-split",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-split",
         "title": "split",
-        "number": "7.7.43"
+        "number": "7.9.43"
       },
       "definedIn": "prose"
     },
@@ -13145,7 +13828,7 @@
         "id": "api-mlgraphbuilder-tanh-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-tanh-method",
         "title": "tanh",
-        "number": "7.7.44"
+        "number": "7.9.44"
       },
       "definedIn": "prose"
     },
@@ -13166,7 +13849,7 @@
         "id": "api-mlgraphbuilder-tanh-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-tanh-method",
         "title": "tanh",
-        "number": "7.7.44"
+        "number": "7.9.44"
       },
       "definedIn": "prose"
     },
@@ -13187,7 +13870,7 @@
         "id": "api-mlgraphbuilder-tanh-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-tanh-method",
         "title": "tanh",
-        "number": "7.7.44"
+        "number": "7.9.44"
       },
       "definedIn": "dt"
     },
@@ -13209,7 +13892,7 @@
         "id": "api-mlgraphbuilder-tanh-method",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-tanh-method",
         "title": "tanh",
-        "number": "7.7.44"
+        "number": "7.9.44"
       },
       "definedIn": "prose"
     },
@@ -13228,7 +13911,7 @@
         "id": "api-mlgraphbuilder-transpose",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-transpose",
         "title": "transpose",
-        "number": "7.7.45"
+        "number": "7.9.45"
       },
       "definedIn": "pre"
     },
@@ -13249,7 +13932,7 @@
         "id": "api-mlgraphbuilder-transpose",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-transpose",
         "title": "transpose",
-        "number": "7.7.45"
+        "number": "7.9.45"
       },
       "definedIn": "dt"
     },
@@ -13270,7 +13953,7 @@
         "id": "api-mlgraphbuilder-transpose",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-transpose",
         "title": "transpose",
-        "number": "7.7.45"
+        "number": "7.9.45"
       },
       "definedIn": "prose"
     },
@@ -13291,7 +13974,7 @@
         "id": "api-mlgraphbuilder-transpose",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-transpose",
         "title": "transpose",
-        "number": "7.7.45"
+        "number": "7.9.45"
       },
       "definedIn": "prose"
     },
@@ -13312,7 +13995,7 @@
         "id": "api-mlgraphbuilder-transpose",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-transpose",
         "title": "transpose",
-        "number": "7.7.45"
+        "number": "7.9.45"
       },
       "definedIn": "dt"
     },
@@ -13334,7 +14017,7 @@
         "id": "api-mlgraphbuilder-transpose",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-transpose",
         "title": "transpose",
-        "number": "7.7.45"
+        "number": "7.9.45"
       },
       "definedIn": "prose"
     },
@@ -13353,7 +14036,7 @@
         "id": "api-mlgraphbuilder-triangular",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-triangular",
         "title": "triangular",
-        "number": "7.7.46"
+        "number": "7.9.46"
       },
       "definedIn": "pre"
     },
@@ -13374,7 +14057,7 @@
         "id": "api-mlgraphbuilder-triangular",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-triangular",
         "title": "triangular",
-        "number": "7.7.46"
+        "number": "7.9.46"
       },
       "definedIn": "dt"
     },
@@ -13395,7 +14078,7 @@
         "id": "api-mlgraphbuilder-triangular",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-triangular",
         "title": "triangular",
-        "number": "7.7.46"
+        "number": "7.9.46"
       },
       "definedIn": "dt"
     },
@@ -13416,7 +14099,7 @@
         "id": "api-mlgraphbuilder-triangular",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-triangular",
         "title": "triangular",
-        "number": "7.7.46"
+        "number": "7.9.46"
       },
       "definedIn": "prose"
     },
@@ -13437,7 +14120,7 @@
         "id": "api-mlgraphbuilder-triangular",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-triangular",
         "title": "triangular",
-        "number": "7.7.46"
+        "number": "7.9.46"
       },
       "definedIn": "prose"
     },
@@ -13458,7 +14141,7 @@
         "id": "api-mlgraphbuilder-triangular",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-triangular",
         "title": "triangular",
-        "number": "7.7.46"
+        "number": "7.9.46"
       },
       "definedIn": "dt"
     },
@@ -13480,7 +14163,7 @@
         "id": "api-mlgraphbuilder-triangular",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-triangular",
         "title": "triangular",
-        "number": "7.7.46"
+        "number": "7.9.46"
       },
       "definedIn": "prose"
     },
@@ -13499,7 +14182,7 @@
         "id": "api-mlgraphbuilder-where",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-where",
         "title": "where",
-        "number": "7.7.47"
+        "number": "7.9.47"
       },
       "definedIn": "pre"
     },
@@ -13520,7 +14203,7 @@
         "id": "api-mlgraphbuilder-where",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-where",
         "title": "where",
-        "number": "7.7.47"
+        "number": "7.9.47"
       },
       "definedIn": "prose"
     },
@@ -13541,7 +14224,7 @@
         "id": "api-mlgraphbuilder-where",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-where",
         "title": "where",
-        "number": "7.7.47"
+        "number": "7.9.47"
       },
       "definedIn": "prose"
     },
@@ -13562,7 +14245,7 @@
         "id": "api-mlgraphbuilder-where",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-where",
         "title": "where",
-        "number": "7.7.47"
+        "number": "7.9.47"
       },
       "definedIn": "prose"
     },
@@ -13583,7 +14266,7 @@
         "id": "api-mlgraphbuilder-where",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-where",
         "title": "where",
-        "number": "7.7.47"
+        "number": "7.9.47"
       },
       "definedIn": "prose"
     },
@@ -13604,7 +14287,7 @@
         "id": "api-mlgraphbuilder-where",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-where",
         "title": "where",
-        "number": "7.7.47"
+        "number": "7.9.47"
       },
       "definedIn": "dt"
     },
@@ -13625,7 +14308,7 @@
         "id": "api-mlgraphbuilder-where",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-where",
         "title": "where",
-        "number": "7.7.47"
+        "number": "7.9.47"
       },
       "definedIn": "dt"
     },
@@ -13646,7 +14329,7 @@
         "id": "api-mlgraphbuilder-where",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-where",
         "title": "where",
-        "number": "7.7.47"
+        "number": "7.9.47"
       },
       "definedIn": "dt"
     },
@@ -13667,7 +14350,7 @@
         "id": "api-mlgraphbuilder-where",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-where",
         "title": "where",
-        "number": "7.7.47"
+        "number": "7.9.47"
       },
       "definedIn": "dt"
     },
@@ -13688,7 +14371,7 @@
         "id": "api-mlgraphbuilder-where",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-where",
         "title": "where",
-        "number": "7.7.47"
+        "number": "7.9.47"
       },
       "definedIn": "dt"
     },
@@ -13710,7 +14393,7 @@
         "id": "api-mlgraphbuilder-where",
         "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-where",
         "title": "where",
-        "number": "7.7.47"
+        "number": "7.9.47"
       },
       "definedIn": "prose"
     },
