@@ -20,16 +20,7 @@
       "https://developer.mozilla.org/en-US/docs/Web/WebDriver/Commands/New_Window": {},
       "https://developer.mozilla.org/en-US/docs/Web/WebDriver/Commands/SetTimeouts": {},
       "https://developer.mozilla.org/en-US/docs/Web/WebDriver/Commands/SetWindowRect": {},
-      "https://dom.spec.whatwg.org/": {
-        "anchors": [
-          "concept-element",
-          "concept-event",
-          "document-element",
-          "connected",
-          "concept-node",
-          "concept-document"
-        ]
-      },
+      "https://dom.spec.whatwg.org/": {},
       "https://drafts.csswg.org/css-box/": {
         "anchors": [
           "visibility-prop"
@@ -208,33 +199,9 @@
         ]
       },
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-        "anchors": [
-          "top-level-browsing-context",
-          "navigable",
-          "node-navigable"
-        ]
-      },
       "https://html.spec.whatwg.org/multipage/dom.html": {
         "anchors": [
           "an-overridden-reload"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
-        "anchors": [
-          "the-source-element"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/form-elements.html": {
-        "anchors": [
-          "the-option-element",
-          "the-optgroup-element",
-          "the-select-element"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-        "anchors": [
-          "the-iframe-element"
         ]
       },
       "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
@@ -250,34 +217,9 @@
           "event-pageshow"
         ]
       },
-      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-        "anchors": [
-          "in-parallel"
-        ]
-      },
       "https://html.spec.whatwg.org/multipage/interaction.html": {
         "anchors": [
           "focus"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/obsolete.html": {
-        "anchors": [
-          "frame"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/sections.html": {
-        "anchors": [
-          "the-address-element"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/webappapis.html": {
-        "anchors": [
-          "prepare-to-run-script",
-          "prepare-to-run-a-callback",
-          "clean-up-after-running-a-callback",
-          "clean-up-after-running-script",
-          "relevant-agent",
-          "pause"
         ]
       },
       "https://httpwg.org/specs/rfc6265.html": {},
@@ -288,10 +230,6 @@
       "https://httpwg.org/specs/rfc7235.html": {},
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "ordered-map",
-          "queue",
-          "struct",
-          "ordered-set",
           "convert-an-infra-value-to-a-json-compatible-javascript-value",
           "convert-a-json-derived-javascript-value-to-an-infra-value"
         ]
@@ -408,19 +346,9 @@
           "should-block-navigation-response"
         ]
       },
-      "https://w3c.github.io/webdriver-bidi/": {
-        "anchors": [
-          "bidi-session"
-        ]
-      },
+      "https://w3c.github.io/webdriver-bidi/": {},
       "https://web.archive.org/web/20070602031929/http://wp.netscape.com/eng/mozilla/2.0/relnotes/demo/proxy-live.html": {},
-      "https://webidl.spec.whatwg.org/": {
-        "anchors": [
-          "a-new-promise",
-          "resolve",
-          "reject"
-        ]
-      },
+      "https://webidl.spec.whatwg.org/": {},
       "https://www.ecma-international.org/ecma-262/5.1/": {
         "anchors": [
           "sec-14.1",
@@ -558,9 +486,13 @@
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
+          "concept-element",
           "concept-event-fire",
+          "concept-event",
+          "document-element",
           "element",
           "concept-node-document",
+          "connected",
           "concept-tree-inclusive-ancestor",
           "concept-tree-inclusive-descendant",
           "concept-tree-descendant",
@@ -568,6 +500,7 @@
           "dom-parentnode-queryselectorall",
           "nodelist",
           "dom-element-getelementsbytagname",
+          "concept-node",
           "dom-node-comparedocumentposition",
           "dom-node-document_position_disconnected",
           "dom-element-hasattribute",
@@ -578,6 +511,7 @@
           "dom-node-textcontent",
           "domtokenlist",
           "htmlcollection",
+          "concept-document",
           "concept-node-remove",
           "dom-event-istrusted"
         ]
@@ -598,9 +532,11 @@
       },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
+          "top-level-browsing-context",
+          "navigable",
           "content-navigable",
           "nav-bc",
-          "navigable"
+          "node-navigable"
         ]
       },
       "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -608,12 +544,17 @@
           "document.title"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "the-source-element"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/form-elements.html": {
         "anchors": [
           "the-textarea-element",
           "the-option-element",
-          "the-select-element",
           "the-optgroup-element",
+          "the-select-element",
           "the-datalist-element",
           "the-output-element"
         ]
@@ -639,6 +580,11 @@
           "frame"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/sections.html": {
+        "anchors": [
+          "the-address-element"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/system-state.html": {
         "anchors": [
           "navigator"
@@ -651,7 +597,13 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
-          "relevant-settings-object"
+          "relevant-settings-object",
+          "prepare-to-run-script",
+          "prepare-to-run-a-callback",
+          "clean-up-after-running-a-callback",
+          "clean-up-after-running-script",
+          "relevant-agent",
+          "pause"
         ]
       },
       "https://html.spec.whatwg.org/multipage/workers.html": {
@@ -664,19 +616,32 @@
           "iteration-while",
           "iteration-continue",
           "map-exists",
+          "ordered-map",
           "map-entry",
           "ascii-lowercase",
+          "queue",
           "ordered-set",
+          "struct",
           "struct-item",
           "list-contain",
           "abort-when",
           "if-aborted",
           "string-length",
-          "struct",
-          "queue",
           "map-getting-the-values",
           "map-set",
           "map-size"
+        ]
+      },
+      "https://w3c.github.io/webdriver-bidi/": {
+        "anchors": [
+          "bidi-session"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "a-new-promise",
+          "resolve",
+          "reject"
         ]
       },
       "https://www.w3.org/TR/FileAPI/": {
