@@ -63,7 +63,7 @@
         "href": "https://wicg.github.io/sanitizer-api/#dictdef-sethtmloptions"
       },
       "Sanitizer": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface Sanitizer {\n  constructor(optional SanitizerConfig config = {});\n  SanitizerConfig get();\n  SanitizerConfig getUnsafe();\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Sanitizer {\n  constructor(optional SanitizerConfig configuration = {});\n\n  // Query configuration:\n  SanitizerConfig get();\n\n  // Modify a Sanitizer’s lists and fields:\n  undefined allowElement(SanitizerElementWithAttributes element);\n  undefined removeElement(SanitizerElement element);\n  undefined replaceElementWithChildren(SanitizerElement element);\n  undefined allowAttribute(SanitizerAttribute attribute);\n  undefined removeAttribute(SanitizerAttribute attribute);\n  undefined setComments(boolean allow);\n  undefined setDataAttributes(boolean allow);\n\n  // Remove markup that executes script. May modify multiple lists:\n  undefined removeUnsafe();\n};",
         "type": "interface",
         "name": "Sanitizer",
         "inheritance": null,
@@ -73,7 +73,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "config",
+                "name": "configuration",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -111,19 +111,250 @@
           },
           {
             "type": "operation",
-            "name": "getUnsafe",
+            "name": "allowElement",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "SanitizerConfig"
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "element",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerElementWithAttributes"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-allowelement"
+          },
+          {
+            "type": "operation",
+            "name": "removeElement",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "element",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerElement"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-removeelement"
+          },
+          {
+            "type": "operation",
+            "name": "replaceElementWithChildren",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "element",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerElement"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-replaceelementwithchildren"
+          },
+          {
+            "type": "operation",
+            "name": "allowAttribute",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "attribute",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerAttribute"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-allowattribute"
+          },
+          {
+            "type": "operation",
+            "name": "removeAttribute",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "attribute",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerAttribute"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-removeattribute"
+          },
+          {
+            "type": "operation",
+            "name": "setComments",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "allow",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-setcomments"
+          },
+          {
+            "type": "operation",
+            "name": "setDataAttributes",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "allow",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-setdataattributes"
+          },
+          {
+            "type": "operation",
+            "name": "removeUnsafe",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-getunsafe"
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-removeunsafe"
           }
         ],
         "extAttrs": [
@@ -580,7 +811,10 @@
         "SanitizerConfig"
       ],
       "Sanitizer": [
-        "SanitizerConfig"
+        "SanitizerConfig",
+        "SanitizerElementWithAttributes",
+        "SanitizerElement",
+        "SanitizerAttribute"
       ],
       "SanitizerElementNamespace": [],
       "SanitizerElementNamespaceWithAttributes": [

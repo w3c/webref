@@ -252,7 +252,7 @@
           "name": "snapped",
           "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-snapped",
           "for": "@container",
-          "value": "none | x | y | block | inline",
+          "value": "none | x | y | block | inline | both",
           "type": "discrete",
           "values": [
             {
@@ -289,6 +289,13 @@
               "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-snapped-inline",
               "type": "value",
               "value": "inline"
+            },
+            {
+              "name": "both",
+              "prose": "snapped container feature matches both if the query container is a snap target for its scroll container in both directions of the snap container.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-snapped-both",
+              "type": "value",
+              "value": "both"
             }
           ]
         },
@@ -296,7 +303,7 @@
           "name": "scrollable",
           "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-scrollable",
           "for": "@container",
-          "value": "none | top | right | bottom | left | block-start | inline-start | block-end | inline-end",
+          "value": "none | top | right | bottom | left | block-start | inline-start | block-end | inline-end | x | y | block | inline",
           "type": "discrete",
           "values": [
             {
@@ -361,6 +368,34 @@
               "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-inline-end",
               "type": "value",
               "value": "inline-end"
+            },
+            {
+              "name": "x",
+              "prose": "The scroll container has horizontally scrollable overflow.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-x",
+              "type": "value",
+              "value": "x"
+            },
+            {
+              "name": "y",
+              "prose": "The scroll container has vertically scrollable overflow.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-y",
+              "type": "value",
+              "value": "y"
+            },
+            {
+              "name": "block",
+              "prose": "The scroll container has scrollable overflow in its block direction.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-block",
+              "type": "value",
+              "value": "block"
+            },
+            {
+              "name": "inline",
+              "prose": "The scroll container has scrollable overflow in its inline direction.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-inline",
+              "type": "value",
+              "value": "inline"
             }
           ]
         }

@@ -177,13 +177,19 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>result</var> be the result of running <a data-link-type=\"abstract-op\" href=\"https://www.unicode.org/reports/tr46/#ToASCII\" id=\"ref-for-ToASCII②\">Unicode ToASCII</a> with <i>domain_name</i> set to <var>domain</var>, <i>UseSTD3ASCIIRules</i> set to <var>beStrict</var>, <i>CheckHyphens</i> set to false, <i>CheckBidi</i> set to true, <i>CheckJoiners</i> set to true, <i>Transitional_Processing</i> set to false,\n  and <i>VerifyDnsLength</i> set to <var>beStrict</var>. <a data-link-type=\"biblio\" href=\"https://url.spec.whatwg.org/#biblio-uts46\" title=\"Unicode IDNA Compatibility Processing\">[UTS46]</a> </p>"
+          "html": "<p>Let <var>result</var> be the result of running <a data-link-type=\"abstract-op\" href=\"https://www.unicode.org/reports/tr46/#ToASCII\" id=\"ref-for-ToASCII②\">Unicode ToASCII</a> with <i>domain_name</i> set to <var>domain</var>, <i>CheckHyphens</i> set to <var>beStrict</var>, <i>CheckBidi</i> set to true, <i>CheckJoiners</i> set to true, <i>UseSTD3ASCIIRules</i> set to <var>beStrict</var>, <i>Transitional_Processing</i> set to false, <i>VerifyDnsLength</i> set to <var>beStrict</var>, and <i>IgnoreInvalidPunycode</i> set to false. <a data-link-type=\"biblio\" href=\"https://url.spec.whatwg.org/#biblio-uts46\" title=\"Unicode IDNA Compatibility Processing\">[UTS46]</a> </p>"
         },
         {
           "html": "<p>If <var>result</var> is a failure value, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error-domain-to-ascii\" id=\"ref-for-validation-error-domain-to-ascii①\">domain-to-ASCII</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③\">validation error</a>,\n return failure. </p>"
         },
         {
           "html": "<p>If <var>result</var> is the empty string, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error-domain-to-ascii\" id=\"ref-for-validation-error-domain-to-ascii②\">domain-to-ASCII</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④\">validation error</a>,\n return failure. </p>"
+        },
+        {
+          "html": "<p>If <var>beStrict</var> is false and <var>result</var> contains a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#forbidden-domain-code-point\" id=\"ref-for-forbidden-domain-code-point①\">forbidden domain code point</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#domain-invalid-code-point\" id=\"ref-for-domain-invalid-code-point\">domain-invalid-code-point</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤\">validation error</a>,\n  return failure. </p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>result</var> does not contain a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#forbidden-domain-code-point\" id=\"ref-for-forbidden-domain-code-point③\">forbidden domain code point</a>. </p>"
         },
         {
           "html": "<p>Return <var>result</var>. </p>"
@@ -197,33 +203,24 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>result</var> be the result of running <a data-link-type=\"abstract-op\" href=\"https://www.unicode.org/reports/tr46/#ToUnicode\" id=\"ref-for-ToUnicode①\">Unicode ToUnicode</a> with <i>domain_name</i> set to <var>domain</var>, <i>CheckHyphens</i> set to false, <i>CheckBidi</i> set to true, <i>CheckJoiners</i> set to true, <i>UseSTD3ASCIIRules</i> set to <var>beStrict</var>, and <i>Transitional_Processing</i> set to\n false. <a data-link-type=\"biblio\" href=\"https://url.spec.whatwg.org/#biblio-uts46\" title=\"Unicode IDNA Compatibility Processing\">[UTS46]</a> </p>"
+          "html": "<p>Let <var>result</var> be the result of running <a data-link-type=\"abstract-op\" href=\"https://www.unicode.org/reports/tr46/#ToUnicode\" id=\"ref-for-ToUnicode①\">Unicode ToUnicode</a> with <i>domain_name</i> set to <var>domain</var>, <i>CheckHyphens</i> set to <var>beStrict</var>, <i>CheckBidi</i> set to true, <i>CheckJoiners</i> set to true, <i>UseSTD3ASCIIRules</i> set to <var>beStrict</var>, <i>Transitional_Processing</i> set to false, and <i>IgnoreInvalidPunycode</i> set to false. <a data-link-type=\"biblio\" href=\"https://url.spec.whatwg.org/#biblio-uts46\" title=\"Unicode IDNA Compatibility Processing\">[UTS46]</a> </p>"
         },
         {
-          "html": "<p>Signify <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#domain-to-unicode\" id=\"ref-for-domain-to-unicode\">domain-to-Unicode</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤\">validation errors</a> for any returned errors, and then,\n return <var>result</var>. </p>"
+          "html": "<p>Signify <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#domain-to-unicode\" id=\"ref-for-domain-to-unicode\">domain-to-Unicode</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑥\">validation errors</a> for any returned errors, and then,\n return <var>result</var>. </p>"
         }
       ]
     },
     {
       "name": "valid domain",
       "href": "https://url.spec.whatwg.org/#valid-domain",
-      "html": "A <var>domain</var> is a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"valid-domain\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">valid domain</dfn> if these steps return success:",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> <var>input</var> is a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"valid-domain\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">valid domain</dfn> if these steps return true:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>result</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain-to-ascii\" id=\"ref-for-concept-domain-to-ascii\">domain to ASCII</a> with <var>domain</var> and true. </p>"
+          "html": "<p>Let <var>domain</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain-to-ascii\" id=\"ref-for-concept-domain-to-ascii\">domain to ASCII</a> with <var>input</var> and true. </p>"
         },
         {
-          "html": "<p>If <var>result</var> is failure, then return failure. </p>"
-        },
-        {
-          "html": "<p>Set <var>result</var> to the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain-to-unicode\" id=\"ref-for-concept-domain-to-unicode\">domain to Unicode</a> with <var>result</var> and true. </p>"
-        },
-        {
-          "html": "<p>If <var>result</var> contains any errors, return failure. </p>"
-        },
-        {
-          "html": "<p>Return success. </p>"
+          "html": "<p>Return false if <var>domain</var> is failure; otherwise true. </p>"
         }
       ]
     },
@@ -238,7 +235,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>input</var> does not end with U+005D (]), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv6-unclosed\" id=\"ref-for-ipv6-unclosed\">IPv6-unclosed</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑥\">validation error</a>, return failure. </p>"
+              "html": "<p>If <var>input</var> does not end with U+005D (]), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv6-unclosed\" id=\"ref-for-ipv6-unclosed\">IPv6-unclosed</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑦\">validation error</a>, return failure. </p>"
             },
             {
               "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-parser\" id=\"ref-for-concept-ipv6-parser\">IPv6 parsing</a> <var>input</var> with its\n   leading U+005B ([) and trailing U+005D (]) removed. </p>"
@@ -259,9 +256,6 @@
         },
         {
           "html": "<p>If <var>asciiDomain</var> is failure, then return failure. </p>"
-        },
-        {
-          "html": "<p>If <var>asciiDomain</var> contains a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#forbidden-domain-code-point\" id=\"ref-for-forbidden-domain-code-point①\">forbidden domain code point</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#domain-invalid-code-point\" id=\"ref-for-domain-invalid-code-point\">domain-invalid-code-point</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑦\">validation error</a>, return failure. </p>"
         },
         {
           "html": "<p>If <var>asciiDomain</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ends-in-a-number-checker\" id=\"ref-for-ends-in-a-number-checker\">ends in a number</a>, then return\n the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv4-parser\" id=\"ref-for-concept-ipv4-parser\">IPv4 parsing</a> <var>asciiDomain</var>. </p>"
@@ -812,7 +806,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>url</var> does not have an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path③\">opaque path</a>. </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>url</var> does not have an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path③\">opaque path</a>. </p>"
         },
         {
           "html": "<p>Let <var>path</var> be <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path④\">path</a>. </p>"
@@ -1003,7 +997,7 @@
                           "rationale": "assert",
                           "steps": [
                             {
-                              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>base</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special③\">is special</a> (and therefore does not have\n         an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path④\">opaque path</a>). </p>"
+                              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>base</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special③\">is special</a> (and therefore does not have\n         an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path④\">opaque path</a>). </p>"
                             },
                             {
                               "html": "<p>Set <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-relative-or-authority-state\" id=\"ref-for-special-relative-or-authority-state\">special relative or authority state</a>. </p>"
@@ -2021,7 +2015,7 @@
           "rationale": "assert",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>tuple</var>’s name and <var>tuple</var>’s value are <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①⓪\">scalar value strings</a>. </p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>tuple</var>’s name and <var>tuple</var>’s value are <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①⓪\">scalar value strings</a>. </p>"
             },
             {
               "html": "<p>Let <var>name</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-percent-encode-after-encoding\" id=\"ref-for-string-percent-encode-after-encoding⑥\">percent-encode after encoding</a> with <var>encoding</var>, <var>tuple</var>’s name, the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#application-x-www-form-urlencoded-percent-encode-set\" id=\"ref-for-application-x-www-form-urlencoded-percent-encode-set②\"><code>application/x-www-form-urlencoded</code> percent-encode set</a>, and true. </p>"
