@@ -6,36 +6,16 @@
   "links": {
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/bcp14": {},
-      "https://dom.spec.whatwg.org/": {
-        "anchors": [
-          "concept-event-constructor-ext"
-        ]
-      },
-      "https://encoding.spec.whatwg.org/": {
-        "anchors": [
-          "utf-8-decode",
-          "utf-8-encode"
-        ]
-      },
+      "https://dom.spec.whatwg.org/": {},
+      "https://encoding.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://html.spec.whatwg.org/multipage/webappapis.html": {
-        "anchors": [
-          "event-handler-idl-attributes",
-          "event-handler-event-type"
-        ]
-      },
       "https://httpwg.org/specs/rfc7231.html": {},
       "https://infra.spec.whatwg.org/": {},
       "https://notifications.spec.whatwg.org/": {},
       "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf": {},
       "https://tc39.es/ecma262/multipage/": {},
-      "https://webidl.spec.whatwg.org/": {
-        "anchors": [
-          "a-new-promise",
-          "dfn-json-types"
-        ]
-      },
+      "https://webidl.spec.whatwg.org/": {},
       "https://websockets.spec.whatwg.org/": {},
       "https://webstore.ansi.org/RecordDetail.aspx?sku=ANSI+X9.62%3a2005": {},
       "https://wicg.github.io/background-sync/spec/": {},
@@ -49,18 +29,8 @@
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/FileAPI/": {},
       "https://www.w3.org/TR/hr-time-3/": {},
-      "https://www.w3.org/TR/permissions/": {
-        "anchors": [
-          "dfn-express-permission"
-        ]
-      },
-      "https://www.w3.org/TR/service-workers/": {
-        "anchors": [
-          "dfn-service-worker",
-          "dfn-service-worker-registration",
-          "fire-functional-event"
-        ]
-      },
+      "https://www.w3.org/TR/permissions/": {},
+      "https://www.w3.org/TR/service-workers/": {},
       "https://www.w3.org/groups/wg/webapps": {},
       "https://www.w3.org/groups/wg/webapps/ipr": {},
       "https://www.w3.org/policies/patent-policy/": {
@@ -72,6 +42,17 @@
       "https://www.w3.org/policies/process/20231103/": {}
     },
     "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-event-constructor-ext"
+        ]
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8-decode",
+          "utf-8-encode"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/infrastructure.html": {
         "anchors": [
           "in-parallel"
@@ -84,7 +65,9 @@
           "queue-a-global-task",
           "networking-task-source",
           "user-interaction-task-source",
-          "eventhandler"
+          "eventhandler",
+          "event-handler-idl-attributes",
+          "event-handler-event-type"
         ]
       },
       "https://infra.spec.whatwg.org/": {
@@ -129,6 +112,7 @@
           "dfn-throw",
           "idl-USVString",
           "idl-record",
+          "dfn-json-types",
           "idl-Uint8Array",
           "idl-any"
         ]
@@ -150,6 +134,7 @@
           "dfn-permission-descriptor-type",
           "dom-permissiondescriptor",
           "dfn-stronger-than",
+          "dfn-express-permission",
           "dom-permissionstate",
           "dfn-request-permission-to-use",
           "dom-permissionstate-denied",
@@ -159,11 +144,14 @@
       },
       "https://www.w3.org/TR/service-workers/": {
         "anchors": [
+          "dfn-service-worker",
           "dfn-active-worker",
+          "dfn-service-worker-registration",
           "serviceworkerregistration",
           "serviceworkerglobalscope",
           "extendableevent",
           "dictdef-extendableeventinit",
+          "fire-functional-event",
           "extendableevent-extend-lifetime-promises"
         ]
       }

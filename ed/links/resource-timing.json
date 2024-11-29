@@ -12,7 +12,6 @@
           "concept-fetch",
           "concept-status",
           "record-connection-timing-info",
-          "response-body-info",
           "dom-requestmode-no-cors",
           "concept-filtered-response-opaque",
           "concept-tao-check",
@@ -29,13 +28,6 @@
         "anchors": [
           "concept-script",
           "same-origin"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/webappapis.html": {
-        "anchors": [
-          "concept-relevant-global",
-          "queue-a-task",
-          "global-object"
         ]
       },
       "https://httpwg.org/specs/rfc9110.html": {
@@ -62,7 +54,6 @@
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
-          "this",
           "es-environment"
         ]
       },
@@ -224,9 +215,11 @@
         "anchors": [
           "concept-settings-object-global",
           "module-script",
+          "concept-relevant-global",
           "eventhandler",
-          "concept-global-object-realm",
-          "concept-relevant-global"
+          "queue-a-task",
+          "global-object",
+          "concept-global-object-realm"
         ]
       },
       "https://html.spec.whatwg.org/multipage/workers.html": {
@@ -250,6 +243,7 @@
           "Default",
           "idl-object",
           "default-tojson-steps",
+          "this",
           "idl-undefined",
           "idl-unsigned-long"
         ]

@@ -6,47 +6,16 @@
   "links": {
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/bcp14": {},
-      "https://dom.spec.whatwg.org/": {
-        "anchors": [
-          "concept-event-fire"
-        ]
-      },
+      "https://dom.spec.whatwg.org/": {},
       "https://github.com/w3c/screen-wake-lock/issues": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-        "anchors": [
-          "in-parallel"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/webappapis.html": {
-        "anchors": [
-          "task-source",
-          "concept-task",
-          "queue-a-global-task",
-          "concept-relevant-global",
-          "event-handler-idl-attributes",
-          "event-handlers",
-          "event-handler-event-type"
-        ]
-      },
-      "https://infra.spec.whatwg.org/": {
-        "anchors": [
-          "ordered-map",
-          "list",
-          "if-aborted"
-        ]
-      },
+      "https://infra.spec.whatwg.org/": {},
       "https://tc39.es/ecma262/multipage/": {
         "anchors": [
           "sec-object-internal-methods-and-internal-slots"
         ]
       },
-      "https://webidl.spec.whatwg.org/": {
-        "anchors": [
-          "this",
-          "a-promise-resolved-with"
-        ]
-      },
+      "https://webidl.spec.whatwg.org/": {},
       "https://wpt.live/screen-wake-lock/wakelock-active-document.https.window.html": {},
       "https://wpt.live/screen-wake-lock/wakelock-disabled-by-permissions-policy.https.sub.html": {},
       "https://wpt.live/screen-wake-lock/wakelock-document-hidden-manual.https.html": {},
@@ -66,12 +35,7 @@
       "https://www.rfc-editor.org/rfc/rfc8174": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/permissions-policy-1/": {},
-      "https://www.w3.org/TR/permissions/": {
-        "anchors": [
-          "dfn-powerful-feature",
-          "dfn-request-permission-to-use"
-        ]
-      },
+      "https://www.w3.org/TR/permissions/": {},
       "https://www.w3.org/TR/wake-lock-use-cases/": {},
       "https://www.w3.org/groups/wg/das": {},
       "https://www.w3.org/groups/wg/das/ipr": {},
@@ -89,7 +53,8 @@
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "document",
-          "eventtarget"
+          "eventtarget",
+          "concept-event-fire"
         ]
       },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
@@ -100,6 +65,11 @@
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
         "anchors": [
           "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
         ]
       },
       "https://html.spec.whatwg.org/multipage/interaction.html": {
@@ -122,15 +92,24 @@
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "current-global-object",
+          "task-source",
+          "concept-task",
           "concept-relevant-global",
-          "eventhandler"
+          "queue-a-global-task",
+          "eventhandler",
+          "event-handler-idl-attributes",
+          "event-handlers",
+          "event-handler-event-type"
         ]
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "list-iterate",
+          "ordered-map",
+          "list",
           "list-is-empty",
-          "list-append"
+          "list-append",
+          "if-aborted"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -145,7 +124,8 @@
           "idl-DOMException",
           "a-new-promise",
           "idl-boolean",
-          "idl-undefined"
+          "idl-undefined",
+          "a-promise-resolved-with"
         ]
       },
       "https://www.w3.org/TR/permissions-policy-1/": {
@@ -156,7 +136,9 @@
       },
       "https://www.w3.org/TR/permissions/": {
         "anchors": [
+          "dfn-powerful-feature",
           "dfn-permission-revocation-algorithm",
+          "dfn-request-permission-to-use",
           "dom-permissionstate-denied"
         ]
       }
