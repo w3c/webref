@@ -1,0 +1,5742 @@
+{
+  "spec": {
+    "title": "WebDriver BiDi",
+    "url": "https://www.w3.org/TR/webdriver-bidi/"
+  },
+  "dfns": [
+    {
+      "id": "wait-queue",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#wait-queue",
+      "linkingText": [
+        "wait queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "awaits",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#awaits",
+      "linkingText": [
+        "awaits"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "resume",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#resume",
+      "linkingText": [
+        "resume"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remote-end-definition",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#remote-end-definition",
+      "linkingText": [
+        "remote end definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "protocol",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#protocol",
+        "title": "Protocol",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "local-end-definition",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#local-end-definition",
+      "linkingText": [
+        "local end definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "protocol",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#protocol",
+        "title": "Protocol",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bidi-flag",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#bidi-flag",
+      "linkingText": [
+        "BiDi flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "session",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#session",
+        "title": "Session",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bidi-session",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#bidi-session",
+      "linkingText": [
+        "BiDi session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "session",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#session",
+        "title": "Session",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "active-bidi-sessions",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#active-bidi-sessions",
+      "linkingText": [
+        "active BiDi sessions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "session",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#session",
+        "title": "Session",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "module",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#module",
+      "linkingText": [
+        "module"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "protocol-modules",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#protocol-modules",
+        "title": "Modules",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "module-module-name",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#module-module-name",
+      "linkingText": [
+        "module name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "module"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "protocol-modules",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#protocol-modules",
+        "title": "Modules",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extension-modules",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#extension-modules",
+      "linkingText": [
+        "extension modules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "protocol-modules",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#protocol-modules",
+        "title": "Modules",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "command",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#command",
+      "linkingText": [
+        "command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "commands",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#commands",
+        "title": "Commands",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "command-command-type",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#command-command-type",
+      "linkingText": [
+        "command type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "command"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "commands",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#commands",
+        "title": "Commands",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "command-command-name",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#command-command-name",
+      "linkingText": [
+        "command name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "command"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "commands",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#commands",
+        "title": "Commands",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "command-command-parameters",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#command-command-parameters",
+      "linkingText": [
+        "command parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "command"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "commands",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#commands",
+        "title": "Commands",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "command-result-type",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#command-result-type",
+      "linkingText": [
+        "result type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "command"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "commands",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#commands",
+        "title": "Commands",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "static-command",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#static-command",
+      "linkingText": [
+        "static command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "commands",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#commands",
+        "title": "Commands",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-of-all-command-names",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#set-of-all-command-names",
+      "linkingText": [
+        "set of all command names"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "commands",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#commands",
+        "title": "Commands",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "errors-no-such-client-window",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#errors-no-such-client-window",
+      "linkingText": [
+        "no such client window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "errors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "errors-no-such-handle",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#errors-no-such-handle",
+      "linkingText": [
+        "no such handle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "errors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "errors-no-such-history-entry",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#errors-no-such-history-entry",
+      "linkingText": [
+        "no such history entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "errors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "errors-no-such-intercept",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#errors-no-such-intercept",
+      "linkingText": [
+        "no such intercept"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "errors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "errors-no-such-node",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#errors-no-such-node",
+      "linkingText": [
+        "no such node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "errors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "errors-no-such-request",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#errors-no-such-request",
+      "linkingText": [
+        "no such request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "errors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "errors-no-such-script",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#errors-no-such-script",
+      "linkingText": [
+        "no such script"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "errors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "errors-no-such-storage-partition",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#errors-no-such-storage-partition",
+      "linkingText": [
+        "no such storage partition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "errors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "errors-no-such-user-context",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#errors-no-such-user-context",
+      "linkingText": [
+        "no such user context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "errors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "errors-unable-to-close-browser",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#errors-unable-to-close-browser",
+      "linkingText": [
+        "unable to close browser"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "errors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "errors-unable-to-set-cookie",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#errors-unable-to-set-cookie",
+      "linkingText": [
+        "unable to set cookie"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "errors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "errors-underspecified-storage-partition",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#errors-underspecified-storage-partition",
+      "linkingText": [
+        "underspecified storage partition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "errors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "errors-unable-to-set-file-input",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#errors-unable-to-set-file-input",
+      "linkingText": [
+        "unable to set file input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "errors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "event",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#event",
+      "linkingText": [
+        "event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#events",
+        "title": "Events",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-event-type",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#event-event-type",
+      "linkingText": [
+        "event type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#events",
+        "title": "Events",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-event-name",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#event-event-name",
+      "linkingText": [
+        "event name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#events",
+        "title": "Events",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-event-parameters",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#event-event-parameters",
+      "linkingText": [
+        "event parameters."
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#events",
+        "title": "Events",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-remote-end-event-trigger",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger",
+      "linkingText": [
+        "remote end event trigger"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#events",
+        "title": "Events",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-remote-end-subscribe-steps",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#event-remote-end-subscribe-steps",
+      "linkingText": [
+        "remote end subscribe steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#events",
+        "title": "Events",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-subscribe-priority",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#event-subscribe-priority",
+      "linkingText": [
+        "subscribe priority"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#events",
+        "title": "Events",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-global-event-set",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#event-global-event-set",
+      "linkingText": [
+        "global event set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#events",
+        "title": "Events",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-in-the-default-event-set",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#event-in-the-default-event-set",
+      "linkingText": [
+        "in the default event set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#events",
+        "title": "Events",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-navigable-event-map",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#event-navigable-event-map",
+      "linkingText": [
+        "navigable event map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#events",
+        "title": "Events",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-enabled-navigables",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#event-enabled-navigables",
+      "linkingText": [
+        "event enabled navigables"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#events",
+        "title": "Events",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-of-sessions-for-which-an-event-is-enabled",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled",
+      "linkingText": [
+        "set of sessions for which an event is enabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#events",
+        "title": "Events",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-is-enabled",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#event-is-enabled",
+      "linkingText": [
+        "event is enabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#events",
+        "title": "Events",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-set-of-event-names",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#obtain-a-set-of-event-names",
+      "linkingText": [
+        "obtain a set of event names"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#events",
+        "title": "Events",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "websocket-listener",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#websocket-listener",
+      "linkingText": [
+        "WebSocket listener"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "listener-host",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#listener-host",
+      "linkingText": [
+        "host"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "listener"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "listener-port",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#listener-port",
+      "linkingText": [
+        "port"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "listener"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "listener-secure-flag",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#listener-secure-flag",
+      "linkingText": [
+        "secure flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "listener"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "list-of-websocket-resources",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#list-of-websocket-resources",
+      "linkingText": [
+        "list of WebSocket resources"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "active-listeners",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#active-listeners",
+      "linkingText": [
+        "active listeners"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "websocket-connections-not-associated-with-a-session",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#websocket-connections-not-associated-with-a-session",
+      "linkingText": [
+        "WebSocket connections not associated with a session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "websocket-connection",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#websocket-connection",
+      "linkingText": [
+        "WebSocket connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "session-websocket-connections",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#session-websocket-connections",
+      "linkingText": [
+        "session WebSocket connections"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "associated-with-connection",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#associated-with-connection",
+      "linkingText": [
+        "associated with connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "construct-a-websocket-resource-name",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#construct-a-websocket-resource-name",
+      "linkingText": [
+        "construct a WebSocket resource name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "construct-a-websocket-url",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#construct-a-websocket-url",
+      "linkingText": [
+        "construct a WebSocket URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-a-session-id-for-a-websocket-resource",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-a-session-id-for-a-websocket-resource",
+      "linkingText": [
+        "get a session ID for a WebSocket resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "start-listening-for-a-websocket-connection",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#start-listening-for-a-websocket-connection",
+      "linkingText": [
+        "start listening for a WebSocket connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "handle-an-incoming-message",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#handle-an-incoming-message",
+      "linkingText": [
+        "handle an incoming message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-related-navigables",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-related-navigables",
+      "linkingText": [
+        "get related navigables"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "emit-an-event",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#emit-an-event",
+      "linkingText": [
+        "emit an event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "send-an-error-response",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#send-an-error-response",
+      "linkingText": [
+        "send an error response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "handle-a-connection-closing",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#handle-a-connection-closing",
+      "linkingText": [
+        "handle a connection closing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-the-websocket-connections",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#close-the-websocket-connections",
+      "linkingText": [
+        "close the WebSocket connections"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "supports-bidi-only-sessions",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#supports-bidi-only-sessions",
+      "linkingText": [
+        "supports BiDi-only sessions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "establishing",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#establishing",
+        "title": "Establishing a Connection",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sandbox-map",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#sandbox-map",
+      "linkingText": [
+        "sandbox map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sandbox",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#sandbox",
+        "title": "Sandboxed Script Execution",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-or-create-a-sandbox-realm",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-or-create-a-sandbox-realm",
+      "linkingText": [
+        "get or create a sandbox realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sandbox-realm",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#sandbox-realm",
+        "title": "Sandbox Realms",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-sandbox-realm",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#create-a-sandbox-realm",
+      "linkingText": [
+        "create a sandbox realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sandbox-realm",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#sandbox-realm",
+        "title": "Sandbox Realms",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-a-sandbox-name",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-a-sandbox-name",
+      "linkingText": [
+        "get a sandbox name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sandbox-realm",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#sandbox-realm",
+        "title": "Sandbox Realms",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sandboxproxy",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#sandboxproxy",
+      "linkingText": [
+        "SandboxProxy"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sandbox-proxy",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#sandbox-proxy",
+        "title": "Sandbox Proxy Objects",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "unwrapped",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#unwrapped",
+      "linkingText": [
+        "unwrapped"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sandbox-proxy",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#sandbox-proxy",
+        "title": "Sandbox Proxy Objects",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sandboxwindowproxy",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#sandboxwindowproxy",
+      "linkingText": [
+        "SandboxWindowProxy"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sandbox-sandboxwindowproxy",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#sandbox-sandboxwindowproxy",
+        "title": "SandboxWindowProxy",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "user-context",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#user-context",
+      "linkingText": [
+        "user context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "user-contexts",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#user-contexts",
+        "title": "User Contexts",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "user-context-user-context-id",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#user-context-user-context-id",
+      "linkingText": [
+        "user context id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "user context"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "user-contexts",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#user-contexts",
+        "title": "User Contexts",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "associated-user-context",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#associated-user-context",
+      "linkingText": [
+        "associated user context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "user-contexts",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#user-contexts",
+        "title": "User Contexts",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "empty-user-context",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#empty-user-context",
+      "linkingText": [
+        "empty user context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "user-contexts",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#user-contexts",
+        "title": "User Contexts",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "default-user-context",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#default-user-context",
+      "linkingText": [
+        "default user context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "user-contexts",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#user-contexts",
+        "title": "User Contexts",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-of-user-contexts",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#set-of-user-contexts",
+      "linkingText": [
+        "set of user contexts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "user-contexts",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#user-contexts",
+        "title": "User Contexts",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-user-context",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-user-context",
+      "linkingText": [
+        "get user context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "user-contexts",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#user-contexts",
+        "title": "User Contexts",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "modules-session",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#modules-session",
+      "linkingText": [
+        "session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "modules"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-session",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-session",
+        "title": "The session Module",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "end-the-session",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#end-the-session",
+      "linkingText": [
+        "end the session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-session-definition",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-session-definition",
+        "title": "Definition",
+        "number": "7.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cleanup-the-session",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cleanup-the-session",
+      "linkingText": [
+        "cleanup the session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-session-definition",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-session-definition",
+        "title": "Definition",
+        "number": "7.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cleanup-remote-end-state",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cleanup-remote-end-state",
+      "linkingText": [
+        "cleanup remote end state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-session-definition",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-session-definition",
+        "title": "Definition",
+        "number": "7.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "update-the-event-map",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#update-the-event-map",
+      "linkingText": [
+        "update the event map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-session-definition",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-session-definition",
+        "title": "Definition",
+        "number": "7.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "websocket-url",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#websocket-url",
+      "linkingText": [
+        "WebSocket URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-session-CapabilityRequest",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-session-CapabilityRequest",
+        "title": "The session.CapabilityRequest Type",
+        "number": "7.1.2.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "commands-sessionstatus",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-sessionstatus",
+      "linkingText": [
+        "session.status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-session-status",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-session-status",
+        "title": "The session.status Command",
+        "number": "7.1.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-sessionnew",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-sessionnew",
+      "linkingText": [
+        "session.new"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-session-new",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-session-new",
+        "title": "The session.new Command",
+        "number": "7.1.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-sessionend",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-sessionend",
+      "linkingText": [
+        "session.end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-session-end",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-session-end",
+        "title": "The session.end Command",
+        "number": "7.1.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-sessionsubscribe",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-sessionsubscribe",
+      "linkingText": [
+        "session.subscribe"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-session-subscribe",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-session-subscribe",
+        "title": "The session.subscribe Command",
+        "number": "7.1.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-sessionunsubscribe",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-sessionunsubscribe",
+      "linkingText": [
+        "session.unsubscribe"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-session-unsubscribe",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-session-unsubscribe",
+        "title": "The session.unsubscribe Command",
+        "number": "7.1.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "modules-browser",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#modules-browser",
+      "linkingText": [
+        "browser"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "modules"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-browser",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browser",
+        "title": "The browser Module",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "client-window",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#client-window",
+      "linkingText": [
+        "client window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-browser-window",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browser-window",
+        "title": "Windows",
+        "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "client-window-id",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#client-window-id",
+      "linkingText": [
+        "client window id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-browser-window",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browser-window",
+        "title": "Windows",
+        "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "client-window-x-coordinate",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#client-window-x-coordinate",
+      "linkingText": [
+        "x-coordinate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "client window"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-browser-window",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browser-window",
+        "title": "Windows",
+        "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "client-window-y-coordinate",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#client-window-y-coordinate",
+      "linkingText": [
+        "y-coordinate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "client window"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-browser-window",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browser-window",
+        "title": "Windows",
+        "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "client-window-width",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#client-window-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "client window"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-browser-window",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browser-window",
+        "title": "Windows",
+        "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "client-window-height",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#client-window-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "client window"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-browser-window",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browser-window",
+        "title": "Windows",
+        "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "maximize-the-client-window",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#maximize-the-client-window",
+      "linkingText": [
+        "maximize the client window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-browser-window",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browser-window",
+        "title": "Windows",
+        "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "maximize-client-window-is-supported",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#maximize-client-window-is-supported",
+      "linkingText": [
+        "maximize client window is supported"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-browser-window",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browser-window",
+        "title": "Windows",
+        "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "minimize-the-client-window",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#minimize-the-client-window",
+      "linkingText": [
+        "minimize the client window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-browser-window",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browser-window",
+        "title": "Windows",
+        "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "minimize-client-window-is-supported",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#minimize-client-window-is-supported",
+      "linkingText": [
+        "minimize client window is supported"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-browser-window",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browser-window",
+        "title": "Windows",
+        "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "restore-the-client-window",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#restore-the-client-window",
+      "linkingText": [
+        "restore the client window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-browser-window",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browser-window",
+        "title": "Windows",
+        "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "restore-client-window-is-supported",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#restore-client-window-is-supported",
+      "linkingText": [
+        "restore client window is supported"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-browser-window",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browser-window",
+        "title": "Windows",
+        "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-client-window-state",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-client-window-state",
+      "linkingText": [
+        "get the client window state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-browser-window",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browser-window",
+        "title": "Windows",
+        "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-the-client-window-state",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#set-the-client-window-state",
+      "linkingText": [
+        "set the client window state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-browser-window",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browser-window",
+        "title": "Windows",
+        "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-client-window-info",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-client-window-info",
+      "linkingText": [
+        "get the client window info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-browser-ClientWindowInfo",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-browser-ClientWindowInfo",
+        "title": "The browser.ClientWindowInfo Type",
+        "number": "7.2.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browserclose",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browserclose",
+      "linkingText": [
+        "browser.close"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browser-close",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browser-close",
+        "title": "The browser.close Command",
+        "number": "7.2.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsercreateusercontext",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browsercreateusercontext",
+      "linkingText": [
+        "browser.createUserContext"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browser-createUserContext",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browser-createUserContext",
+        "title": "The browser.createUserContext Command",
+        "number": "7.2.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsergetclientwindows",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browsergetclientwindows",
+      "linkingText": [
+        "browser.getClientWindows"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browser-getClientWindows",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browser-getClientWindows",
+        "title": "The browser.getClientWindows Command",
+        "number": "7.2.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsergetusercontexts",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browsergetusercontexts",
+      "linkingText": [
+        "browser.getUserContexts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browser-getUserContexts",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browser-getUserContexts",
+        "title": "The browser.getUserContexts Command",
+        "number": "7.2.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browserremoveusercontext",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browserremoveusercontext",
+      "linkingText": [
+        "browser.removeUserContext"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browser-removeUserContext",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browser-removeUserContext",
+        "title": "The browser.removeUserContext Command",
+        "number": "7.2.4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsersetclientwindowstate",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browsersetclientwindowstate",
+      "linkingText": [
+        "browser.setClientWindowState"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browser-setClientWindowState",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browser-setClientWindowState",
+        "title": "The browser.setClientWindowState Command",
+        "number": "7.2.4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "modules-browsingcontext",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#modules-browsingcontext",
+      "linkingText": [
+        "browsingContext"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "modules"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browsingContext",
+        "title": "The browsingContext Module",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-navigation-status",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-navigation-status",
+      "linkingText": [
+        "WebDriver navigation status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browsingContext",
+        "title": "The browsingContext Module",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigation-status-id",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#navigation-status-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebDriver navigation status"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browsingContext",
+        "title": "The browsingContext Module",
+        "number": "7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "navigation-status-status",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#navigation-status-status",
+      "linkingText": [
+        "status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebDriver navigation status"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browsingContext",
+        "title": "The browsingContext Module",
+        "number": "7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "navigation-status-canceled",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#navigation-status-canceled",
+      "linkingText": [
+        "canceled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browsingContext",
+        "title": "The browsingContext Module",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigation-status-pending",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#navigation-status-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browsingContext",
+        "title": "The browsingContext Module",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigation-status-complete",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#navigation-status-complete",
+      "linkingText": [
+        "complete"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browsingContext",
+        "title": "The browsingContext Module",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigation-status-url",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#navigation-status-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebDriver navigation status"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browsingContext",
+        "title": "The browsingContext Module",
+        "number": "7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "device-pixel-ratio-overrides",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#device-pixel-ratio-overrides",
+      "linkingText": [
+        "device pixel ratio overrides"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext-definition",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-browsingContext-definition",
+        "title": "Definition",
+        "number": "7.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigable-id",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#navigable-id",
+      "linkingText": [
+        "navigable id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "type-browsingContext-Browsingcontext",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-browsingContext-Browsingcontext",
+        "title": "The browsingContext.BrowsingContext Type",
+        "number": "7.3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "associated-storage-partition",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#associated-storage-partition",
+      "linkingText": [
+        "associated storage partition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-browsingContext-Browsingcontext",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-browsingContext-Browsingcontext",
+        "title": "The browsingContext.BrowsingContext Type",
+        "number": "7.3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "original-opener",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#original-opener",
+      "linkingText": [
+        "original opener"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-browsingContext-Browsingcontext",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-browsingContext-Browsingcontext",
+        "title": "The browsingContext.BrowsingContext Type",
+        "number": "7.3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-a-navigable",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-a-navigable",
+      "linkingText": [
+        "get a navigable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "type-browsingContext-Browsingcontext",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-browsingContext-Browsingcontext",
+        "title": "The browsingContext.BrowsingContext Type",
+        "number": "7.3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-parent-navigable",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-parent-navigable",
+      "linkingText": [
+        "get the parent navigable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-browsingContext-Info",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-browsingContext-Info",
+        "title": "The browsingContext.Info Type",
+        "number": "7.3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-child-navigables",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-child-navigables",
+      "linkingText": [
+        "get the child navigables"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-browsingContext-Info",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-browsingContext-Info",
+        "title": "The browsingContext.Info Type",
+        "number": "7.3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-navigable-info",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-navigable-info",
+      "linkingText": [
+        "get the navigable info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-browsingContext-Info",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-browsingContext-Info",
+        "title": "The browsingContext.Info Type",
+        "number": "7.3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "await-a-navigation",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#await-a-navigation",
+      "linkingText": [
+        "await a navigation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-browsingContext-Info",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-browsingContext-Info",
+        "title": "The browsingContext.Info Type",
+        "number": "7.3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-navigation-info",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-navigation-info",
+      "linkingText": [
+        "get the navigation info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-browsingContext-NavigationInfo",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-browsingContext-NavigationInfo",
+        "title": "The browsingContext.NavigationInfo Type",
+        "number": "7.3.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsingcontextactivate",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browsingcontextactivate",
+      "linkingText": [
+        "browsingContext.activate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-activate",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-activate",
+        "title": "The browsingContext.activate Command",
+        "number": "7.3.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "activate-a-navigable",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#activate-a-navigable",
+      "linkingText": [
+        "activate a navigable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-activate",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-activate",
+        "title": "The browsingContext.activate Command",
+        "number": "7.3.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsingcontextcapturescreenshot",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browsingcontextcapturescreenshot",
+      "linkingText": [
+        "browsingContext.captureScreenshot"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-captureScreenshot",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-captureScreenshot",
+        "title": "The browsingContext.captureScreenshot Command",
+        "number": "7.3.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "normalize-rect",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#normalize-rect",
+      "linkingText": [
+        "normalize rect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-captureScreenshot",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-captureScreenshot",
+        "title": "The browsingContext.captureScreenshot Command",
+        "number": "7.3.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "rectangle-intersection",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#rectangle-intersection",
+      "linkingText": [
+        "rectangle intersection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-captureScreenshot",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-captureScreenshot",
+        "title": "The browsingContext.captureScreenshot Command",
+        "number": "7.3.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "render-document-to-a-canvas",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#render-document-to-a-canvas",
+      "linkingText": [
+        "render document to a canvas"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-captureScreenshot",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-captureScreenshot",
+        "title": "The browsingContext.captureScreenshot Command",
+        "number": "7.3.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "encode-a-canvas-as-base64",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#encode-a-canvas-as-base64",
+      "linkingText": [
+        "encode a canvas as Base64"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-captureScreenshot",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-captureScreenshot",
+        "title": "The browsingContext.captureScreenshot Command",
+        "number": "7.3.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-origin-rectangle",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-origin-rectangle",
+      "linkingText": [
+        "get the origin rectangle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-captureScreenshot",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-captureScreenshot",
+        "title": "The browsingContext.captureScreenshot Command",
+        "number": "7.3.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsingcontextclose",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browsingcontextclose",
+      "linkingText": [
+        "browsingContext.close"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-close",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-close",
+        "title": "The browsingContext.close Command",
+        "number": "7.3.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsingcontextcreate",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browsingcontextcreate",
+      "linkingText": [
+        "browsingContext.create"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-create",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-create",
+        "title": "The browsingContext.create Command",
+        "number": "7.3.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsingcontextgettree",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browsingcontextgettree",
+      "linkingText": [
+        "browsingContext.getTree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-getTree",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-getTree",
+        "title": "The browsingContext.getTree Command",
+        "number": "7.3.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsingcontexthandleuserprompt",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browsingcontexthandleuserprompt",
+      "linkingText": [
+        "browsingContext.handleUserPrompt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-handleUserPrompt",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-handleUserPrompt",
+        "title": "The browsingContext.handleUserPrompt Command",
+        "number": "7.3.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsingcontextlocatenodes",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browsingcontextlocatenodes",
+      "linkingText": [
+        "browsingContext.locateNodes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-locateNodes",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-locateNodes",
+        "title": "The browsingContext.locateNodes Command",
+        "number": "7.3.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "locate-nodes-using-css",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#locate-nodes-using-css",
+      "linkingText": [
+        "locate nodes using CSS"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-locateNodes",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-locateNodes",
+        "title": "The browsingContext.locateNodes Command",
+        "number": "7.3.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "locate-nodes-using-xpath",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#locate-nodes-using-xpath",
+      "linkingText": [
+        "locate nodes using XPath"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-locateNodes",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-locateNodes",
+        "title": "The browsingContext.locateNodes Command",
+        "number": "7.3.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "locate-nodes-using-inner-text",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#locate-nodes-using-inner-text",
+      "linkingText": [
+        "locate nodes using inner text"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-locateNodes",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-locateNodes",
+        "title": "The browsingContext.locateNodes Command",
+        "number": "7.3.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "collect-nodes-using-accessibility-attributes",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#collect-nodes-using-accessibility-attributes",
+      "linkingText": [
+        "collect nodes using accessibility attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-locateNodes",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-locateNodes",
+        "title": "The browsingContext.locateNodes Command",
+        "number": "7.3.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "locate-nodes-using-accessibility-attributes",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#locate-nodes-using-accessibility-attributes",
+      "linkingText": [
+        "locate nodes using accessibility attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-locateNodes",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-locateNodes",
+        "title": "The browsingContext.locateNodes Command",
+        "number": "7.3.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsingcontextnavigate",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browsingcontextnavigate",
+      "linkingText": [
+        "browsingContext.navigate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-navigate",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-navigate",
+        "title": "The browsingContext.navigate Command",
+        "number": "7.3.3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsingcontextprint",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browsingcontextprint",
+      "linkingText": [
+        "browsingContext.print"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-print",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-print",
+        "title": "The browsingContext.print Command",
+        "number": "7.3.3.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsingcontextreload",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browsingcontextreload",
+      "linkingText": [
+        "browsingContext.reload"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-reload",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-reload",
+        "title": "The browsingContext.reload Command",
+        "number": "7.3.3.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsingcontextsetviewport",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browsingcontextsetviewport",
+      "linkingText": [
+        "browsingContext.setViewport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-setViewport",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-setViewport",
+        "title": "The browsingContext.setViewport Command",
+        "number": "7.3.3.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsingcontexttraversehistory",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-browsingcontexttraversehistory",
+      "linkingText": [
+        "browsingContext.traverseHistory"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-traverseHistory",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-traverseHistory",
+        "title": "The browsingContext.traverseHistory Command",
+        "number": "7.3.3.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-page-show",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-page-show",
+      "linkingText": [
+        "WebDriver BiDi page show"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-traverseHistory",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-traverseHistory",
+        "title": "The browsingContext.traverseHistory Command",
+        "number": "7.3.3.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-pop-state",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-pop-state",
+      "linkingText": [
+        "WebDriver BiDi pop state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-traverseHistory",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-browsingContext-traverseHistory",
+        "title": "The browsingContext.traverseHistory Command",
+        "number": "7.3.3.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "recursively-emit-context-created-events",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#recursively-emit-context-created-events",
+      "linkingText": [
+        "Recursively emit context created events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-browsingContext-contextCreated",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-browsingContext-contextCreated",
+        "title": "The browsingContext.contextCreated Event",
+        "number": "7.3.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "emit-a-context-created-event",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#emit-a-context-created-event",
+      "linkingText": [
+        "Emit a context created event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-browsingContext-contextCreated",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-browsingContext-contextCreated",
+        "title": "The browsingContext.contextCreated Event",
+        "number": "7.3.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-navigable-created",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigable-created",
+      "linkingText": [
+        "WebDriver BiDi navigable created"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-browsingContext-contextCreated",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-browsingContext-contextCreated",
+        "title": "The browsingContext.contextCreated Event",
+        "number": "7.3.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-navigable-destroyed",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigable-destroyed",
+      "linkingText": [
+        "WebDriver BiDi navigable destroyed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-browsingContext-contextDestroyed",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-browsingContext-contextDestroyed",
+        "title": "The browsingContext.contextDestroyed Event",
+        "number": "7.3.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-navigation-started",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-started",
+      "linkingText": [
+        "WebDriver BiDi navigation started"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-browsingContext-navigationStarted",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-browsingContext-navigationStarted",
+        "title": "The browsingContext.navigationStarted Event",
+        "number": "7.3.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-fragment-navigated",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-fragment-navigated",
+      "linkingText": [
+        "WebDriver BiDi fragment navigated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-browsingContext-fragmentNavigated",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-browsingContext-fragmentNavigated",
+        "title": "The browsingContext.fragmentNavigated Event",
+        "number": "7.3.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-history-updated",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-history-updated",
+      "linkingText": [
+        "WebDriver BiDi history updated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-browsingContext-historyUpdated",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-browsingContext-historyUpdated",
+        "title": "The browsingContext.historyUpdated Event",
+        "number": "7.3.4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-dom-content-loaded",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-dom-content-loaded",
+      "linkingText": [
+        "WebDriver BiDi DOM content loaded"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-browsingContext-domContentLoaded",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-browsingContext-domContentLoaded",
+        "title": "The browsingContext.domContentLoaded Event",
+        "number": "7.3.4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-load-complete",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-load-complete",
+      "linkingText": [
+        "WebDriver BiDi load complete"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-browsingContext-load",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-browsingContext-load",
+        "title": "The browsingContext.load Event",
+        "number": "7.3.4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-download-started",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-download-started",
+      "linkingText": [
+        "WebDriver BiDi download started"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-browsingContext-downoadWillBegin",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-browsingContext-downoadWillBegin",
+        "title": "The browsingContext.downloadWillBegin Event",
+        "number": "7.3.4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-navigation-aborted",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-aborted",
+      "linkingText": [
+        "WebDriver BiDi navigation aborted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-browsingContext-navigationAborted",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-browsingContext-navigationAborted",
+        "title": "The browsingContext.navigationAborted Event",
+        "number": "7.3.4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-navigation-failed",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-failed",
+      "linkingText": [
+        "WebDriver BiDi navigation failed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-browsingContext-navigationFailed",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-browsingContext-navigationFailed",
+        "title": "The browsingContext.navigationFailed Event",
+        "number": "7.3.4.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-user-prompt-closed",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-user-prompt-closed",
+      "linkingText": [
+        "WebDriver BiDi user prompt closed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-browsingContext-userPromptClosed",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-browsingContext-userPromptClosed",
+        "title": "The browsingContext.userPromptClosed Event",
+        "number": "7.3.4.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-user-prompt-opened",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-user-prompt-opened",
+      "linkingText": [
+        "WebDriver BiDi user prompt opened"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-browsingContext-userPromptOpened",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-browsingContext-userPromptOpened",
+        "title": "The browsingContext.userPromptOpened Event",
+        "number": "7.3.4.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "modules-network",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#modules-network",
+      "linkingText": [
+        "network"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "modules"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-network",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-network",
+        "title": "The network Module",
+        "number": "7.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "before-request-sent-map",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#before-request-sent-map",
+      "linkingText": [
+        "before request sent map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-network-definition",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-network-definition",
+        "title": "Definition",
+        "number": "7.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "default-cache-behavior",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#default-cache-behavior",
+      "linkingText": [
+        "default cache behavior"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-network-definition",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-network-definition",
+        "title": "Definition",
+        "number": "7.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigable-cache-behavior-map",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map",
+      "linkingText": [
+        "navigable cache behavior map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-network-definition",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-network-definition",
+        "title": "Definition",
+        "number": "7.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "network-intercept",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#network-intercept",
+      "linkingText": [
+        "network intercept"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-intercepts",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-intercepts",
+        "title": "Network Intercepts",
+        "number": "7.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "intercept-map",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#intercept-map",
+      "linkingText": [
+        "intercept map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-intercepts",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-intercepts",
+        "title": "Network Intercepts",
+        "number": "7.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "blocked-request-map",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#blocked-request-map",
+      "linkingText": [
+        "blocked request map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-intercepts",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-intercepts",
+        "title": "Network Intercepts",
+        "number": "7.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-network-intercepts",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-network-intercepts",
+      "linkingText": [
+        "get the network intercepts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-intercepts",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-intercepts",
+        "title": "Network Intercepts",
+        "number": "7.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "update-the-response",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#update-the-response",
+      "linkingText": [
+        "update the response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-intercepts",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-intercepts",
+        "title": "Network Intercepts",
+        "number": "7.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extract-challenges",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#extract-challenges",
+      "linkingText": [
+        "extract challenges"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-AuthChallenge",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-AuthChallenge",
+        "title": "The network.AuthChallenge Type",
+        "number": "7.4.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "process-a-network-event",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#process-a-network-event",
+      "linkingText": [
+        "process a network event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-BaseParameters",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BaseParameters",
+        "title": "The network.BaseParameters Type",
+        "number": "7.4.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "deserialize-protocol-bytes",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#deserialize-protocol-bytes",
+      "linkingText": [
+        "deserialize protocol bytes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-BytesValue",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BytesValue",
+        "title": "The network.BytesValue Type",
+        "number": "7.4.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-protocol-bytes",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#serialize-protocol-bytes",
+      "linkingText": [
+        "serialize protocol bytes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-BytesValue",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BytesValue",
+        "title": "The network.BytesValue Type",
+        "number": "7.4.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-cookie",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#serialize-cookie",
+      "linkingText": [
+        "serialize cookie"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-Cookie",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Cookie",
+        "title": "The network.Cookie Type",
+        "number": "7.4.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-cookie-header",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#serialize-cookie-header",
+      "linkingText": [
+        "serialize cookie header"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-CookieHeader",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-CookieHeader",
+        "title": "The network.CookieHeader Type",
+        "number": "7.4.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-fetch-timings",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-fetch-timings",
+      "linkingText": [
+        "get the fetch timings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-FetchTimingInfo",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-FetchTimingInfo",
+        "title": "The network.FetchTimingInfo Type",
+        "number": "7.4.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-header",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#serialize-header",
+      "linkingText": [
+        "serialize header"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-Header",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Header",
+        "title": "The network.Header Type",
+        "number": "7.4.3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "deserialize-header",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#deserialize-header",
+      "linkingText": [
+        "deserialize header"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-Header",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Header",
+        "title": "The network.Header Type",
+        "number": "7.4.3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-initiator",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-initiator",
+      "linkingText": [
+        "get the initiator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-Initiator",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Initiator",
+        "title": "The network.Initiator Type",
+        "number": "7.4.3.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-id",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#request-id",
+      "linkingText": [
+        "request id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "type-network-Request",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Request",
+        "title": "The network.Request Type",
+        "number": "7.4.3.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-request-data",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-request-data",
+      "linkingText": [
+        "get the request data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-RequestData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-RequestData",
+        "title": "The network.RequestData Type",
+        "number": "7.4.3.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-response-content-info",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-response-content-info",
+      "linkingText": [
+        "get the response content info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-ResponseContent",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseContent",
+        "title": "The network.ResponseContent Type",
+        "number": "7.4.3.13"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-protocol",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-protocol",
+      "linkingText": [
+        "get the protocol"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-ResponseData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseData",
+        "title": "The network.ResponseData Type",
+        "number": "7.4.3.14"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-response-data",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-response-data",
+      "linkingText": [
+        "get the response data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-ResponseData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseData",
+        "title": "The network.ResponseData Type",
+        "number": "7.4.3.14"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-an-integer",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#serialize-an-integer",
+      "linkingText": [
+        "serialize an integer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-SetCookieHeader",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-SetCookieHeader",
+        "title": "The network.SetCookieHeader Type",
+        "number": "7.4.3.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-set-cookie-header",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#serialize-set-cookie-header",
+      "linkingText": [
+        "serialize set-cookie header"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-SetCookieHeader",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-SetCookieHeader",
+        "title": "The network.SetCookieHeader Type",
+        "number": "7.4.3.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "unescape-url-pattern",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#unescape-url-pattern",
+      "linkingText": [
+        "unescape URL pattern"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-UrlPattern",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
+        "title": "The network.UrlPattern Type",
+        "number": "7.4.3.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-url-pattern",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#parse-url-pattern",
+      "linkingText": [
+        "parse URL pattern"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-UrlPattern",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
+        "title": "The network.UrlPattern Type",
+        "number": "7.4.3.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "match-url-pattern",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#match-url-pattern",
+      "linkingText": [
+        "match URL pattern"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-UrlPattern",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
+        "title": "The network.UrlPattern Type",
+        "number": "7.4.3.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-networkaddintercept",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-networkaddintercept",
+      "linkingText": [
+        "network.addIntercept"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-addIntercept",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addIntercept",
+        "title": "The network.addIntercept Command",
+        "number": "7.4.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-networkcontinuerequest",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-networkcontinuerequest",
+      "linkingText": [
+        "network.continueRequest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-continueRequest",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueRequest",
+        "title": "The network.continueRequest Command",
+        "number": "7.4.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-networkcontinueresponse",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-networkcontinueresponse",
+      "linkingText": [
+        "network.continueResponse"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-continueResponse",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueResponse",
+        "title": "The network.continueResponse Command",
+        "number": "7.4.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-networkcontinuewithauth",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-networkcontinuewithauth",
+      "linkingText": [
+        "network.continueWithAuth"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-continueWithAuth",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueWithAuth",
+        "title": "The network.continueWithAuth Command",
+        "number": "7.4.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-networkfailrequest",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-networkfailrequest",
+      "linkingText": [
+        "network.failRequest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-failRequest",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-failRequest",
+        "title": "The network.failRequest Command",
+        "number": "7.4.4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-networkprovideresponse",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-networkprovideresponse",
+      "linkingText": [
+        "network.provideResponse"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-provideResponse",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-provideResponse",
+        "title": "The network.provideResponse Command",
+        "number": "7.4.4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-networkremoveintercept",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-networkremoveintercept",
+      "linkingText": [
+        "network.removeIntercept"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-removeIntercept",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-removeIntercept",
+        "title": "The network.removeIntercept Command",
+        "number": "7.4.4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-networksetcachebehavior",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-networksetcachebehavior",
+      "linkingText": [
+        "network.setCacheBehavior"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-setCacheBehavior",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-setCacheBehavior",
+        "title": "The network.setCacheBehavior Command",
+        "number": "7.4.4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-cache-behavior",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-cache-behavior",
+      "linkingText": [
+        "WebDriver BiDi cache behavior"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-setCacheBehavior",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-setCacheBehavior",
+        "title": "The network.setCacheBehavior Command",
+        "number": "7.4.4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigable-cache-behavior",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior",
+      "linkingText": [
+        "navigable cache behavior"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-setCacheBehavior",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-setCacheBehavior",
+        "title": "The network.setCacheBehavior Command",
+        "number": "7.4.4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-auth-required",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-auth-required",
+      "linkingText": [
+        "WebDriver BiDi auth required"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-network-authRequired",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-authRequired",
+        "title": "The network.authRequired Event",
+        "number": "7.4.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-before-request-sent",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-before-request-sent",
+      "linkingText": [
+        "WebDriver BiDi before request sent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-network-beforeSendRequest",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-beforeSendRequest",
+        "title": "The network.beforeRequestSent Event",
+        "number": "7.4.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-fetch-error",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-fetch-error",
+      "linkingText": [
+        "WebDriver BiDi fetch error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-network-fetchError",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-fetchError",
+        "title": "The network.fetchError Event",
+        "number": "7.4.5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-response-completed",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-response-completed",
+      "linkingText": [
+        "WebDriver BiDi response completed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-network-responseCompleted",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-responseCompleted",
+        "title": "The network.responseCompleted Event",
+        "number": "7.4.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-response-started",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-response-started",
+      "linkingText": [
+        "WebDriver BiDi response started"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-network-responseStarted",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-responseStarted",
+        "title": "The network.responseStarted Event",
+        "number": "7.4.5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "modules-script",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#modules-script",
+      "linkingText": [
+        "script"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "modules"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-script",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-script",
+        "title": "The script Module",
+        "number": "7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "preload-script",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#preload-script",
+      "linkingText": [
+        "Preload script"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "preload-scripts",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#preload-scripts",
+        "title": "Preload Scripts",
+        "number": "7.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "preload-script-map",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#preload-script-map",
+      "linkingText": [
+        "preload script map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "preload-scripts",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#preload-scripts",
+        "title": "Preload Scripts",
+        "number": "7.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "run-webdriver-bidi-preload-scripts",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#run-webdriver-bidi-preload-scripts",
+      "linkingText": [
+        "run WebDriver BiDi preload scripts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preload-scripts",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#preload-scripts",
+        "title": "Preload Scripts",
+        "number": "7.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scriptchannel",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#scriptchannel",
+      "linkingText": [
+        "script.Channel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-Channel",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-Channel",
+        "title": "The script.Channel Type",
+        "number": "7.5.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-channel",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#create-a-channel",
+      "linkingText": [
+        "create a channel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-ChannelValue",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-ChannelValue",
+        "title": "The script.ChannelValue Type",
+        "number": "7.5.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-exception-details",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-exception-details",
+      "linkingText": [
+        "get exception details"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-ExceptionDetails",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-ExceptionDetails",
+        "title": "The script.ExceptionDetails Type",
+        "number": "7.5.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "handle-object-map",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#handle-object-map",
+      "linkingText": [
+        "handle object map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-Handle",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-Handle",
+        "title": "The script.Handle Type",
+        "number": "7.5.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scriptlocalvalue",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#scriptlocalvalue",
+      "linkingText": [
+        "script.LocalValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "type-script-LocalValue",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-LocalValue",
+        "title": "The script.LocalValue Type",
+        "number": "7.5.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "deserialize-key-value-list",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#deserialize-key-value-list",
+      "linkingText": [
+        "deserialize key-value list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-LocalValue",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-LocalValue",
+        "title": "The script.LocalValue Type",
+        "number": "7.5.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "deserialize-value-list",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#deserialize-value-list",
+      "linkingText": [
+        "deserialize value list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-LocalValue",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-LocalValue",
+        "title": "The script.LocalValue Type",
+        "number": "7.5.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "deserialize-local-value",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#deserialize-local-value",
+      "linkingText": [
+        "deserialize local value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-LocalValue",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-LocalValue",
+        "title": "The script.LocalValue Type",
+        "number": "7.5.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "realm-id",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#realm-id",
+      "linkingText": [
+        "realm id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "type-script-Realm",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-Realm",
+        "title": "The script.Realm Type",
+        "number": "7.5.3.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-a-realm",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-a-realm",
+      "linkingText": [
+        "get a realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-Realm",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-Realm",
+        "title": "The script.Realm Type",
+        "number": "7.5.3.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scriptprimitiveprotocolvalue",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#scriptprimitiveprotocolvalue",
+      "linkingText": [
+        "script.PrimitiveProtocolValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-PrimitiveProtocolValue",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-PrimitiveProtocolValue",
+        "title": "The script.PrimitiveProtocolValue Type",
+        "number": "7.5.3.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-primitive-protocol-value",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#serialize-primitive-protocol-value",
+      "linkingText": [
+        "serialize primitive protocol value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-PrimitiveProtocolValue",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-PrimitiveProtocolValue",
+        "title": "The script.PrimitiveProtocolValue Type",
+        "number": "7.5.3.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "deserialize-primitive-protocol-value",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#deserialize-primitive-protocol-value",
+      "linkingText": [
+        "deserialize primitive protocol value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-PrimitiveProtocolValue",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-PrimitiveProtocolValue",
+        "title": "The script.PrimitiveProtocolValue Type",
+        "number": "7.5.3.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-navigable",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-navigable",
+      "linkingText": [
+        "get the navigable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-RealmInfo",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-RealmInfo",
+        "title": "The script.RealmInfo Type",
+        "number": "7.5.3.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-workers-owners",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-workers-owners",
+      "linkingText": [
+        "get the worker’s owners"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-RealmInfo",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-RealmInfo",
+        "title": "The script.RealmInfo Type",
+        "number": "7.5.3.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-realm-info",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-realm-info",
+      "linkingText": [
+        "get the realm info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-RealmInfo",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-RealmInfo",
+        "title": "The script.RealmInfo Type",
+        "number": "7.5.3.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scriptremotereference",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#scriptremotereference",
+      "linkingText": [
+        "script.RemoteReference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-RemoteReference",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-RemoteReference",
+        "title": "The script.RemoteReference Type",
+        "number": "7.5.3.13"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "deserialize-remote-reference",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#deserialize-remote-reference",
+      "linkingText": [
+        "deserialize remote reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-RemoteReference",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-RemoteReference",
+        "title": "The script.RemoteReference Type",
+        "number": "7.5.3.13"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "deserialize-remote-object-reference",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#deserialize-remote-object-reference",
+      "linkingText": [
+        "deserialize remote object reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-RemoteReference",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-RemoteReference",
+        "title": "The script.RemoteReference Type",
+        "number": "7.5.3.13"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "deserialize-shared-reference",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#deserialize-shared-reference",
+      "linkingText": [
+        "deserialize shared reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-RemoteReference",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-RemoteReference",
+        "title": "The script.RemoteReference Type",
+        "number": "7.5.3.13"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "handle-for-an-object",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#handle-for-an-object",
+      "linkingText": [
+        "handle for an object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-RemoteValue",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-RemoteValue",
+        "title": "The script.RemoteValue Type",
+        "number": "7.5.3.14"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-shared-id-for-a-node",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-shared-id-for-a-node",
+      "linkingText": [
+        "get shared id for a node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-RemoteValue",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-RemoteValue",
+        "title": "The script.RemoteValue Type",
+        "number": "7.5.3.14"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-internal-ids-if-needed",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#set-internal-ids-if-needed",
+      "linkingText": [
+        "set internal ids if needed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-RemoteValue",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-RemoteValue",
+        "title": "The script.RemoteValue Type",
+        "number": "7.5.3.14"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-as-a-remote-value",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-remote-value",
+      "linkingText": [
+        "serialize as a remote value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-RemoteValue",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-RemoteValue",
+        "title": "The script.RemoteValue Type",
+        "number": "7.5.3.14"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-an-array-like",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#serialize-an-array-like",
+      "linkingText": [
+        "serialize an Array-like"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-RemoteValue",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-RemoteValue",
+        "title": "The script.RemoteValue Type",
+        "number": "7.5.3.14"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-as-a-list",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-list",
+      "linkingText": [
+        "serialize as a list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-RemoteValue",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-RemoteValue",
+        "title": "The script.RemoteValue Type",
+        "number": "7.5.3.14"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-as-a-mapping",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-mapping",
+      "linkingText": [
+        "serialize as a mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-RemoteValue",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-RemoteValue",
+        "title": "The script.RemoteValue Type",
+        "number": "7.5.3.14"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "list-of-stack-frames",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#list-of-stack-frames",
+      "linkingText": [
+        "list of stack frames"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-StackTrace",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-StackTrace",
+        "title": "The script.StackTrace Type",
+        "number": "7.5.3.19"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "stack-frame",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#stack-frame",
+      "linkingText": [
+        "stack frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-StackTrace",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-StackTrace",
+        "title": "The script.StackTrace Type",
+        "number": "7.5.3.19"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "stackframe-script-url",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#stackframe-script-url",
+      "linkingText": [
+        "script url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stackframe"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-StackTrace",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-StackTrace",
+        "title": "The script.StackTrace Type",
+        "number": "7.5.3.19"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "stackframe-function",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#stackframe-function",
+      "linkingText": [
+        "function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stackframe"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-StackTrace",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-StackTrace",
+        "title": "The script.StackTrace Type",
+        "number": "7.5.3.19"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "stackframe-line-number",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#stackframe-line-number",
+      "linkingText": [
+        "line number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stackframe"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-StackTrace",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-StackTrace",
+        "title": "The script.StackTrace Type",
+        "number": "7.5.3.19"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "stackframe-column-number",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#stackframe-column-number",
+      "linkingText": [
+        "column number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stackframe"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-StackTrace",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-StackTrace",
+        "title": "The script.StackTrace Type",
+        "number": "7.5.3.19"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "construct-a-stack-trace",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#construct-a-stack-trace",
+      "linkingText": [
+        "construct a stack trace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-StackTrace",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-StackTrace",
+        "title": "The script.StackTrace Type",
+        "number": "7.5.3.19"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "current-stack-trace",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#current-stack-trace",
+      "linkingText": [
+        "current stack trace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-StackTrace",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-StackTrace",
+        "title": "The script.StackTrace Type",
+        "number": "7.5.3.19"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "stack-trace-for-an-exception",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#stack-trace-for-an-exception",
+      "linkingText": [
+        "stack trace for an exception"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-StackTrace",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-StackTrace",
+        "title": "The script.StackTrace Type",
+        "number": "7.5.3.19"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-source",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-source",
+      "linkingText": [
+        "get the source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-Source",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-Source",
+        "title": "The script.Source Type",
+        "number": "7.5.3.20"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-a-realm-from-a-navigable",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-a-realm-from-a-navigable",
+      "linkingText": [
+        "get a realm from a navigable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-Target",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-Target",
+        "title": "The script.Target Type",
+        "number": "7.5.3.21"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-a-realm-from-a-target",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-a-realm-from-a-target",
+      "linkingText": [
+        "get a realm from a target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-Target",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-script-Target",
+        "title": "The script.Target Type",
+        "number": "7.5.3.21"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-scriptaddpreloadscript",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-scriptaddpreloadscript",
+      "linkingText": [
+        "script.addPreloadScript"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-script-addPreloadScript",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-script-addPreloadScript",
+        "title": "The script.addPreloadScript Command",
+        "number": "7.5.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-scriptdisown",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-scriptdisown",
+      "linkingText": [
+        "script.disown"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-script-disown",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-script-disown",
+        "title": "The script.disown Command",
+        "number": "7.5.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-scriptcallfunction",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-scriptcallfunction",
+      "linkingText": [
+        "script.callFunction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-script-callFunction",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-script-callFunction",
+        "title": "The script.callFunction Command",
+        "number": "7.5.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "deserialize-arguments",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#deserialize-arguments",
+      "linkingText": [
+        "deserialize arguments"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-script-callFunction",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-script-callFunction",
+        "title": "The script.callFunction Command",
+        "number": "7.5.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "evaluate-function-body",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#evaluate-function-body",
+      "linkingText": [
+        "evaluate function body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-script-callFunction",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-script-callFunction",
+        "title": "The script.callFunction Command",
+        "number": "7.5.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-scriptevaluate",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-scriptevaluate",
+      "linkingText": [
+        "script.evaluate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-script-evaluate",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-script-evaluate",
+        "title": "The script.evaluate Command",
+        "number": "7.5.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-scriptgetrealms",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-scriptgetrealms",
+      "linkingText": [
+        "script.getRealms"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-script-getRealms",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-script-getRealms",
+        "title": "The script.getRealms Command",
+        "number": "7.5.4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-scriptremovepreloadscript",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-scriptremovepreloadscript",
+      "linkingText": [
+        "script.removePreloadScript"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-script-removePreloadScript",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-script-removePreloadScript",
+        "title": "The script.removePreloadScript Command",
+        "number": "7.5.4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "emit-a-script-message",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#emit-a-script-message",
+      "linkingText": [
+        "emit a script message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-script-message",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#event-script-message",
+        "title": "The script.message Event",
+        "number": "7.5.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "modules-storage",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#modules-storage",
+      "linkingText": [
+        "storage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "modules"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-storage",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-storage",
+        "title": "The storage Module",
+        "number": "7.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-partition",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#storage-partition",
+      "linkingText": [
+        "storage partition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-storage",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-storage",
+        "title": "The storage Module",
+        "number": "7.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-partition-key",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#storage-partition-key",
+      "linkingText": [
+        "storage partition key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-storage",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-storage",
+        "title": "The storage Module",
+        "number": "7.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "table-of-standard-storage-partition-key-attributes",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#table-of-standard-storage-partition-key-attributes",
+      "linkingText": [
+        "table of standard storage partition key attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-storage-PartitionKey",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-storage-PartitionKey",
+        "title": "The storage.PartitionKey Type",
+        "number": "7.6.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extension-storage-partition-key-attributes",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#extension-storage-partition-key-attributes",
+      "linkingText": [
+        "extension storage partition key attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-storage-PartitionKey",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-storage-PartitionKey",
+        "title": "The storage.PartitionKey Type",
+        "number": "7.6.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "default-values-for-storage-partition-key-attributes",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#default-values-for-storage-partition-key-attributes",
+      "linkingText": [
+        "default values for storage partition key attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-storage-PartitionKey",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-storage-PartitionKey",
+        "title": "The storage.PartitionKey Type",
+        "number": "7.6.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "required-partition-key-attributes",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#required-partition-key-attributes",
+      "linkingText": [
+        "required partition key attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-storage-PartitionKey",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-storage-PartitionKey",
+        "title": "The storage.PartitionKey Type",
+        "number": "7.6.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "deserialize-filter",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#deserialize-filter",
+      "linkingText": [
+        "deserialize filter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-storage-PartitionKey",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-storage-PartitionKey",
+        "title": "The storage.PartitionKey Type",
+        "number": "7.6.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "expand-a-storage-partition-spec",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#expand-a-storage-partition-spec",
+      "linkingText": [
+        "expand a storage partition spec"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-storage-PartitionKey",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-storage-PartitionKey",
+        "title": "The storage.PartitionKey Type",
+        "number": "7.6.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-cookie-store",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-cookie-store",
+      "linkingText": [
+        "get the cookie store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-storage-PartitionKey",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-storage-PartitionKey",
+        "title": "The storage.PartitionKey Type",
+        "number": "7.6.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "match-cookie",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#match-cookie",
+      "linkingText": [
+        "match cookie"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-storage-PartitionKey",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-storage-PartitionKey",
+        "title": "The storage.PartitionKey Type",
+        "number": "7.6.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-matching-cookies",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-matching-cookies",
+      "linkingText": [
+        "get matching cookies"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-storage-PartitionKey",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-storage-PartitionKey",
+        "title": "The storage.PartitionKey Type",
+        "number": "7.6.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-storagegetcookies",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-storagegetcookies",
+      "linkingText": [
+        "storage.getCookies"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-storage-getCookies",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-storage-getCookies",
+        "title": "The storage.getCookies Command",
+        "number": "7.6.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-storagesetcookie",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-storagesetcookie",
+      "linkingText": [
+        "storage.setCookie"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-storage-setCookie",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-storage-setCookie",
+        "title": "The storage.setCookie Command",
+        "number": "7.6.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-storagedeletecookies",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-storagedeletecookies",
+      "linkingText": [
+        "storage.deleteCookies"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-storage-deleteCookies",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-storage-deleteCookies",
+        "title": "The storage.deleteCookies Command",
+        "number": "7.6.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "modules-log",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#modules-log",
+      "linkingText": [
+        "log"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "modules"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-log",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-log",
+        "title": "The log Module",
+        "number": "7.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "log-event-buffer",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#log-event-buffer",
+      "linkingText": [
+        "log event buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-log",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-log",
+        "title": "The log Module",
+        "number": "7.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "buffer-a-log-event",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#buffer-a-log-event",
+      "linkingText": [
+        "buffer a log event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-log",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-log",
+        "title": "The log Module",
+        "number": "7.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "modules-input",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#modules-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "modules"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-input",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#module-input",
+        "title": "The input Module",
+        "number": "7.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "is-inputelementorigin",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#is-inputelementorigin",
+      "linkingText": [
+        "is input.ElementOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-input-origin",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-input-origin",
+        "title": "input.ElementOrigin",
+        "number": "7.8.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-element-from-inputelementorigin-steps",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-element-from-inputelementorigin-steps",
+      "linkingText": [
+        "get Element from input.ElementOrigin steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-input-origin",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-input-origin",
+        "title": "input.ElementOrigin",
+        "number": "7.8.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-inputperformactions",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-inputperformactions",
+      "linkingText": [
+        "input.performActions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-input-performActions",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-input-performActions",
+        "title": "The input.performActions Command",
+        "number": "7.8.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-inputreleaseactions",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-inputreleaseactions",
+      "linkingText": [
+        "input.releaseActions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-input-releaseActions",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-input-releaseActions",
+        "title": "The input.releaseActions Command",
+        "number": "7.8.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-inputsetfiles",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-inputsetfiles",
+      "linkingText": [
+        "input.setFiles"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-input-setFiles",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-input-setFiles",
+        "title": "The input.setFiles Command",
+        "number": "7.8.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "error-reporting-steps",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#error-reporting-steps",
+      "linkingText": [
+        "error reporting steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "patches-html",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#patches-html",
+        "title": "HTML",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "console-steps",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#console-steps",
+      "linkingText": [
+        "console steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "patches-console",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#patches-console",
+        "title": "Console",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

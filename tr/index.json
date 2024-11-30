@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-11-29T01:34:55.688Z",
+  "date": "2024-11-30T01:51:49.217Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -21,7 +21,6 @@
       "client-hint-reliability",
       "no-vary-search",
       "rfc6265bis",
-      "webp",
       "dom",
       "css-typed-om-2",
       "font-metrics-api-1",
@@ -65,7 +64,6 @@
       "notifications",
       "private-aggregation-api",
       "topics",
-      "gpc-spec",
       "nav-tracking-mitigations",
       "private-click-measurement",
       "requestStorageAccessFor",
@@ -161,13 +159,13 @@
       "media-playback-quality",
       "mediacapture-automation",
       "mediacapture-handle-actions",
+      "mediacapture-surface-control",
       "permissions-registry",
       "network-reporting",
       "sparql12-concepts",
       "web-nfc",
       "web-share-target",
       "passkey-endpoints",
-      "webdriver-bidi",
       "webrtc-ice",
       "wasm-core-2-fork-branch-hinting",
       "wasm-js-api-2-fork-content-security-policy",
@@ -280,6 +278,7 @@
       "rfc6266",
       "rfc6386",
       "rfc6454",
+      "rfc6455",
       "rfc6797",
       "rfc7034",
       "rfc7239",
@@ -304,6 +303,7 @@
       "rfc9163",
       "rfc9218",
       "rfc9530",
+      "rfc9649",
       "promises-guide",
       "w3c-patent-policy",
       "w3c-process",
@@ -463,6 +463,7 @@
       "geolocation-sensor",
       "geolocation",
       "geometry-1",
+      "gpc",
       "graphics-aam-1.0",
       "graphics-aria-1.0",
       "gyroscope",
@@ -616,6 +617,7 @@
       "webcodecs-vp9-codec-registration",
       "webcodecs",
       "WebCryptoAPI",
+      "webdriver-bidi",
       "webdriver2",
       "webgpu",
       "webmidi",
@@ -666,10 +668,10 @@
     ]
   },
   "stats": {
-    "crawled": 334,
+    "crawled": 336,
     "errors": 0
   },
-  "crawler": "reffy-17.2.10",
+  "crawler": "reffy-18.0.0",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -715,7 +717,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "29 November 2024",
+      "date": "30 November 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -8415,7 +8417,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-view-transitions-2/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -9223,7 +9225,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/device-posture/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -9470,7 +9472,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/edit-context/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -9826,7 +9828,7 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-stream-mp4/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:39:25 GMT"
+        "lastModified": "Fri, 12 Jul 2024 12:26:25 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
@@ -10882,6 +10884,66 @@
       "dfns": "dfns/geometry-1.json",
       "headings": "headings/geometry-1.json",
       "ids": "ids/geometry-1.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/gpc/",
+      "seriesComposition": "full",
+      "shortname": "gpc",
+      "series": {
+        "shortname": "gpc",
+        "currentSpecification": "gpc",
+        "title": "Global Privacy Control (GPC)",
+        "shortTitle": "GPC",
+        "releaseUrl": "https://www.w3.org/TR/gpc/",
+        "nightlyUrl": "https://w3c.github.io/gpc/"
+      },
+      "formerNames": [
+        "gpc-spec"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Privacy Working Group",
+          "url": "https://www.w3.org/groups/wg/privacy/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/gpc/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/gpc/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/gpc",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Global Privacy Control (GPC)",
+      "source": "w3c",
+      "shortTitle": "GPC",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/gpc/",
+        "https://w3c.github.io/gpc/"
+      ],
+      "crawled": "https://www.w3.org/TR/gpc/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 22 Nov 2024 17:20:21 GMT"
+      },
+      "generator": "respec",
+      "date": "22 November 2024",
+      "revision": "04570c6f624dfe1b92851f61a3bcffce4a31a461",
+      "links": "links/gpc.json",
+      "refs": "refs/gpc.json",
+      "idl": "idl/gpc.idl",
+      "dfns": "dfns/gpc.json",
+      "headings": "headings/gpc.json",
+      "ids": "ids/gpc.json"
     },
     {
       "url": "https://www.w3.org/TR/graphics-aam-1.0/",
@@ -13967,11 +14029,11 @@
       ],
       "crawled": "https://www.w3.org/TR/openscreenprotocol/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 08 Oct 2024 23:16:42 GMT"
+        "lastModified": "Fri, 29 Nov 2024 16:43:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 October 2024",
-      "revision": "886800d8b5e5bc509638a88eb5e56383e02333fa",
+      "date": "29 November 2024",
+      "revision": "a0a747944fbdd3db052384e0e0cb0d63cb3f3313",
       "algorithms": "algorithms/openscreenprotocol.json",
       "links": "links/openscreenprotocol.json",
       "refs": "refs/openscreenprotocol.json",
@@ -14004,7 +14066,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/orientation-event/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -14798,11 +14860,11 @@
       ],
       "crawled": "https://www.w3.org/TR/pointerevents3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 19 Nov 2024 19:01:34 GMT"
+        "lastModified": "Fri, 29 Nov 2024 22:13:54 GMT"
       },
       "generator": "respec",
-      "date": "19 November 2024",
-      "revision": "6800523390644fe2bb7ed2c14174a5d74da658f1",
+      "date": "29 November 2024",
+      "revision": "021c4a951c10ff29fe9b1767fd71901852336e82",
       "algorithms": "algorithms/pointerevents3.json",
       "links": "links/pointerevents3.json",
       "refs": "refs/pointerevents3.json",
@@ -18043,7 +18105,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/uievents-code/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Proposed Recommendation",
         "filename": "Overview.html"
       },
       "title": "UI Events KeyboardEvent code Values",
@@ -18099,7 +18161,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/uievents-key/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Proposed Recommendation",
         "filename": "Overview.html"
       },
       "title": "UI Events KeyboardEvent key Values",
@@ -18289,7 +18351,7 @@
       },
       "title": "User Timing",
       "source": "w3c",
-      "shortTitle": "User Timing 3",
+      "shortTitle": "User Timing",
       "categories": [
         "browser"
       ],
@@ -18462,7 +18524,7 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "title": "Vibration API (Second Edition)",
+      "title": "Vibration API",
       "source": "w3c",
       "shortTitle": "Vibration API",
       "categories": [
@@ -18482,10 +18544,11 @@
       ],
       "crawled": "https://www.w3.org/TR/vibration/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Oct 2016 14:22:28 GMT"
+        "lastModified": "Fri, 29 Nov 2024 14:00:44 GMT"
       },
       "generator": "respec",
-      "date": "18 October 2016",
+      "date": "29 November 2024",
+      "revision": "bd8fb21c94f999a7e207541bbbeeb7680df53328",
       "algorithms": "algorithms/vibration.json",
       "links": "links/vibration.json",
       "refs": "refs/vibration.json",
@@ -19182,7 +19245,7 @@
         }
       ],
       "release": {
-        "url": "https://www.w3.org/TR/webaudio/",
+        "url": "https://www.w3.org/TR/webaudio-1.0/",
         "status": "Recommendation",
         "filename": "Overview.html"
       },
@@ -19194,7 +19257,7 @@
         "sourcePath": "index.bs",
         "filename": "index.html"
       },
-      "title": "Web Audio API 1.1",
+      "title": "Web Audio API",
       "source": "w3c",
       "shortTitle": "Web Audio API",
       "categories": [
@@ -19209,16 +19272,15 @@
       },
       "versions": [
         "https://www.w3.org/TR/webaudio-1.0/",
-        "https://www.w3.org/TR/webaudio/",
         "https://webaudio.github.io/web-audio-api/"
       ],
-      "crawled": "https://www.w3.org/TR/webaudio/",
+      "crawled": "https://www.w3.org/TR/webaudio-1.0/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 01 Nov 2024 21:11:46 GMT"
+        "lastModified": "Tue, 08 Jun 2021 17:24:13 GMT"
       },
       "generator": "bikeshed",
-      "date": "5 November 2024",
-      "revision": "26962420c302c52605b3552531453b933801ef6a",
+      "date": "17 June 2021",
+      "revision": "085538bbdd207934bfca2cc159be877df65d6392",
       "algorithms": "algorithms/webaudio-1.0.json",
       "links": "links/webaudio-1.0.json",
       "refs": "refs/webaudio-1.0.json",
@@ -20327,6 +20389,63 @@
       "dfns": "dfns/WebCryptoAPI.json",
       "headings": "headings/WebCryptoAPI.json",
       "ids": "ids/WebCryptoAPI.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/webdriver-bidi/",
+      "seriesComposition": "full",
+      "shortname": "webdriver-bidi",
+      "series": {
+        "shortname": "webdriver-bidi",
+        "currentSpecification": "webdriver-bidi",
+        "title": "WebDriver BiDi",
+        "shortTitle": "WebDriver BiDi",
+        "releaseUrl": "https://www.w3.org/TR/webdriver-bidi/",
+        "nightlyUrl": "https://w3c.github.io/webdriver-bidi/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Browser Testing and Tools Working Group",
+          "url": "https://www.w3.org/groups/wg/browser-tools-testing/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/webdriver-bidi/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/webdriver-bidi/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/webdriver-bidi",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "WebDriver BiDi",
+      "source": "w3c",
+      "shortTitle": "WebDriver BiDi",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/webdriver-bidi/",
+        "https://w3c.github.io/webdriver-bidi/"
+      ],
+      "crawled": "https://www.w3.org/TR/webdriver-bidi/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 19 Nov 2024 15:44:48 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "21 November 2024",
+      "revision": "46306e803c4555b210a9a784505df9a0d9b0717f",
+      "algorithms": "algorithms/webdriver-bidi.json",
+      "links": "links/webdriver-bidi.json",
+      "refs": "refs/webdriver-bidi.json",
+      "dfns": "dfns/webdriver-bidi.json",
+      "headings": "headings/webdriver-bidi.json",
+      "ids": "ids/webdriver-bidi.json"
     },
     {
       "url": "https://www.w3.org/TR/webdriver2/",
