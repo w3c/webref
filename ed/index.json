@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-12-02T00:51:43.592Z",
+  "date": "2024-12-02T06:44:15.437Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -677,7 +677,7 @@
   },
   "stats": {
     "crawled": 646,
-    "errors": 1
+    "errors": 3
   },
   "crawler": "reffy-18.0.0",
   "results": [
@@ -4529,7 +4529,8 @@
       },
       "date": "31 October 2024",
       "links": "links/EXT_color_buffer_half_float.json",
-      "idl": "idl/EXT_color_buffer_half_float.idl"
+      "idl": "idl/EXT_color_buffer_half_float.idl",
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_color_buffer_half_float/ triggered HTTP status 521\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:352:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
@@ -6279,7 +6280,8 @@
       },
       "date": "31 October 2024",
       "links": "links/WEBGL_draw_instanced_base_vertex_base_instance.json",
-      "idl": "idl/WEBGL_draw_instanced_base_vertex_base_instance.idl"
+      "idl": "idl/WEBGL_draw_instanced_base_vertex_base_instance.idl",
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/ triggered HTTP status 521\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:352:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 103)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:373:21)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/",
@@ -6803,11 +6805,11 @@
       ],
       "crawled": "https://streams.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 29 Nov 2024 08:51:23 GMT"
+        "lastModified": "Mon, 02 Dec 2024 01:45:23 GMT"
       },
       "generator": "bikeshed",
-      "date": "29 November 2024",
-      "revision": "1de47f0ee555d9d5ccefecd55f4bfad155f7f477",
+      "date": "2 December 2024",
+      "revision": "bcc20495fcb7e346375ed0420cba04ebb76a05f6",
       "algorithms": "algorithms/streams.json",
       "links": "links/streams.json",
       "refs": "refs/streams.json",
@@ -36689,10 +36691,10 @@
       ],
       "crawled": "https://w3c.github.io/webrtc-pc/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Nov 2024 14:14:03 GMT"
+        "lastModified": "Mon, 02 Dec 2024 05:25:48 GMT"
       },
       "generator": "respec",
-      "date": "28 November 2024",
+      "date": "02 December 2024",
       "algorithms": "algorithms/webrtc.json",
       "links": "links/webrtc.json",
       "refs": "refs/webrtc.json",
