@@ -9,3 +9,17 @@ interface CaptureController : EventTarget {
 partial interface CaptureController {
   attribute EventHandler oncapturedmousechange;
 };
+
+// Source: Captured Surface Control (https://w3c.github.io/mediacapture-surface-control/)
+partial interface CaptureController {
+  sequence<long> getSupportedZoomLevels();
+  long getZoomLevel();
+  Promise<undefined> setZoomLevel(long zoomLevel);
+  attribute EventHandler oncapturedzoomlevelchange;
+};
+
+// Source: Captured Surface Control (https://w3c.github.io/mediacapture-surface-control/)
+partial interface CaptureController {
+  constructor();
+  Promise<undefined> forwardWheel(HTMLElement element);
+};

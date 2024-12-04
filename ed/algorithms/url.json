@@ -183,13 +183,19 @@
           "html": "<p>If <var>result</var> is a failure value, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error-domain-to-ascii\" id=\"ref-for-validation-error-domain-to-ascii①\">domain-to-ASCII</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③\">validation error</a>,\n return failure. </p>"
         },
         {
-          "html": "<p>If <var>result</var> is the empty string, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error-domain-to-ascii\" id=\"ref-for-validation-error-domain-to-ascii②\">domain-to-ASCII</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④\">validation error</a>,\n return failure. </p>"
+          "html": "If <var>beStrict</var> is false:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>result</var> is the empty string, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error-domain-to-ascii\" id=\"ref-for-validation-error-domain-to-ascii②\">domain-to-ASCII</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④\">validation error</a>,\n   return failure. </p>"
+            },
+            {
+              "html": "<p>If <var>result</var> contains a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#forbidden-domain-code-point\" id=\"ref-for-forbidden-domain-code-point①\">forbidden domain code point</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#domain-invalid-code-point\" id=\"ref-for-domain-invalid-code-point\">domain-invalid-code-point</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤\">validation error</a>, return failure. </p>"
+            }
+          ]
         },
         {
-          "html": "<p>If <var>beStrict</var> is false and <var>result</var> contains a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#forbidden-domain-code-point\" id=\"ref-for-forbidden-domain-code-point①\">forbidden domain code point</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#domain-invalid-code-point\" id=\"ref-for-domain-invalid-code-point\">domain-invalid-code-point</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤\">validation error</a>,\n  return failure. </p>"
-        },
-        {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>result</var> does not contain a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#forbidden-domain-code-point\" id=\"ref-for-forbidden-domain-code-point③\">forbidden domain code point</a>. </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>result</var> is not the empty string and does not contain a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#forbidden-domain-code-point\" id=\"ref-for-forbidden-domain-code-point③\">forbidden domain code point</a>. </p>"
         },
         {
           "html": "<p>Return <var>result</var>. </p>"

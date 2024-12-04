@@ -16,6 +16,20 @@
         "url": "https://screen-share.github.io/captured-mouse-events/"
       },
       "fragment": "partial interface CaptureController {\n  attribute EventHandler oncapturedmousechange;\n};"
+    },
+    {
+      "spec": {
+        "title": "Captured Surface Control",
+        "url": "https://w3c.github.io/mediacapture-surface-control/"
+      },
+      "fragment": "partial interface CaptureController {\n  sequence<long> getSupportedZoomLevels();\n  long getZoomLevel();\n  Promise<undefined> setZoomLevel(long zoomLevel);\n  attribute EventHandler oncapturedzoomlevelchange;\n};"
+    },
+    {
+      "spec": {
+        "title": "Captured Surface Control",
+        "url": "https://w3c.github.io/mediacapture-surface-control/"
+      },
+      "fragment": "partial interface CaptureController {\n  constructor();\n  Promise<undefined> forwardWheel(HTMLElement element);\n};"
     }
   ],
   "inheritance": {

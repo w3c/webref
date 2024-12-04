@@ -259,6 +259,9 @@ partial interface Navigator {
   [SameObject] readonly attribute Geolocation geolocation;
 };
 
+// Source: Global Privacy Control (GPC) (https://www.w3.org/TR/gpc/)
+Navigator includes GlobalPrivacyControl;
+
 // Source: Media Capabilities (https://www.w3.org/TR/media-capabilities/)
 [Exposed=Window]
 partial interface Navigator {
@@ -309,7 +312,7 @@ partial interface Navigator {
   [SecureContext, SameObject] readonly attribute ServiceWorkerContainer serviceWorker;
 };
 
-// Source: Vibration API (Second Edition) (https://www.w3.org/TR/vibration/)
+// Source: Vibration API (https://www.w3.org/TR/vibration/)
 partial interface Navigator {
     boolean vibrate (VibratePattern pattern);
 };

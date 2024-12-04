@@ -32,19 +32,10 @@ interface ML {
   Promise<MLContext> createContext(GPUDevice gpuDevice);
 };
 
-typedef record<USVString, ArrayBufferView> MLNamedArrayBufferViews;
 typedef record<USVString, MLTensor> MLNamedTensors;
-
-dictionary MLComputeResult {
-  MLNamedArrayBufferViews inputs;
-  MLNamedArrayBufferViews outputs;
-};
 
 [SecureContext, Exposed=(Window, DedicatedWorker)]
 interface MLContext {
-  // ISSUE(791): compute() will soon be removed in favor of dispatch().
-  Promise<MLComputeResult> compute(
-      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);
   undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);
 
   Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);

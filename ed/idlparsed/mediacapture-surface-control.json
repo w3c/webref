@@ -1,0 +1,198 @@
+{
+  "spec": {
+    "title": "Captured Surface Control",
+    "url": "https://w3c.github.io/mediacapture-surface-control/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {},
+    "idlExtendedNames": {
+      "CaptureController": [
+        {
+          "fragment": "partial interface CaptureController {\n  sequence<long> getSupportedZoomLevels();\n  long getZoomLevel();\n  Promise<undefined> setZoomLevel(long zoomLevel);\n  attribute EventHandler oncapturedzoomlevelchange;\n};",
+          "type": "interface",
+          "name": "CaptureController",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "getSupportedZoomLevels",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "sequence",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "long"
+                  }
+                ]
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-getsupportedzoomlevels"
+            },
+            {
+              "type": "operation",
+              "name": "getZoomLevel",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "long"
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-getzoomlevel"
+            },
+            {
+              "type": "operation",
+              "name": "setZoomLevel",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "zoomLevel",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "long"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-setzoomlevel"
+            },
+            {
+              "type": "attribute",
+              "name": "oncapturedzoomlevelchange",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false,
+              "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-oncapturedzoomlevelchange"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface CaptureController {\n  constructor();\n  Promise<undefined> forwardWheel(HTMLElement element);\n};",
+          "type": "interface",
+          "name": "CaptureController",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "constructor",
+              "arguments": [],
+              "extAttrs": [],
+              "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-constructor"
+            },
+            {
+              "type": "operation",
+              "name": "forwardWheel",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "element",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "HTMLElement"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-forwardwheel"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "CaptureController": [
+        "EventHandler",
+        "HTMLElement"
+      ]
+    },
+    "externalDependencies": [
+      "CaptureController",
+      "EventHandler",
+      "HTMLElement"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

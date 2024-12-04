@@ -181,16 +181,6 @@
           "dependencies"
         ]
       },
-      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-        "anchors": [
-          "the-embed-element"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/semantics.html": {
-        "anchors": [
-          "the-base-element"
-        ]
-      },
       "https://httpwg.org/specs/rfc9110.html": {},
       "https://id.loc.gov/vocabulary/relators.html": {},
       "https://idpf.github.io/epub-registries/authorities/": {},
@@ -232,8 +222,6 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "string-concatenate",
-          "strip-leading-and-trailing-ascii-whitespace",
-          "strip-and-collapse-ascii-whitespace",
           "html-namespace",
           "ascii-whitespace"
         ]
@@ -245,11 +233,9 @@
       "https://tc39.es/ecma262/multipage/": {},
       "https://url.spec.whatwg.org/": {
         "anchors": [
-          "concept-url-parser",
           "concept-base-url",
           "percent-encode",
-          "absolute-url-string",
-          "path-relative-scheme-less-url-string"
+          "absolute-url-string"
         ]
       },
       "https://w3c.github.io/epub-structural-tests/": {
@@ -1130,7 +1116,8 @@
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
         "anchors": [
           "the-iframe-element",
-          "the-object-element"
+          "the-object-element",
+          "the-embed-element"
         ]
       },
       "https://html.spec.whatwg.org/multipage/image-maps.html": {
@@ -1171,6 +1158,7 @@
       },
       "https://html.spec.whatwg.org/multipage/semantics.html": {
         "anchors": [
+          "the-base-element",
           "the-html-element",
           "attr-meta-name",
           "attr-meta-content"
@@ -1193,7 +1181,9 @@
         "anchors": [
           "scalar-value-string",
           "list",
-          "list-prepend"
+          "list-prepend",
+          "strip-leading-and-trailing-ascii-whitespace",
+          "strip-and-collapse-ascii-whitespace"
         ]
       },
       "https://url.spec.whatwg.org/": {
@@ -1207,6 +1197,7 @@
           "relative-url-with-fragment-string",
           "double-dot-path-segment",
           "valid-url-string",
+          "absolute-url-string",
           "concept-domain",
           "relative-url-string"
         ]

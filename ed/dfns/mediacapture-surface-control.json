@@ -1,0 +1,390 @@
+{
+  "spec": {
+    "title": "Captured Surface Control",
+    "url": "https://w3c.github.io/mediacapture-surface-control/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-captured-surface-control",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-captured-surface-control",
+      "linkingText": [
+        "\"captured-surface-control\""
+      ],
+      "localLinkingText": [],
+      "type": "permission",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "feature-policy-integration",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#feature-policy-integration",
+        "title": "Permissions Policy Integration",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-zoom-level",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-zoom-level",
+      "linkingText": [
+        "zoom level"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "zoom-definition",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#zoom-definition",
+        "title": "Definition of Zoom",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-default-zoom-level",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-default-zoom-level",
+      "linkingText": [
+        "default zoom level"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "zoom-definition",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#zoom-definition",
+        "title": "Definition of Zoom",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-supported-zoom-levels",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-supported-zoom-levels",
+      "linkingText": [
+        "supported zoom levels"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "zoom-definition",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#zoom-definition",
+        "title": "Definition of Zoom",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-permitted-event-types-for-setzoomlevel",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-permitted-event-types-for-setzoomlevel",
+      "linkingText": [
+        "permitted event types for setZoomLevel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permitted-event-types-for-setzoomlevel",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#permitted-event-types-for-setzoomlevel",
+        "title": "Permitted Event Types for setZoomLevel()",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-capturecontroller-getsupportedzoomlevels",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-getsupportedzoomlevels",
+      "linkingText": [
+        "getSupportedZoomLevels()"
+      ],
+      "localLinkingText": [
+        "CaptureController.getSupportedZoomLevels",
+        "CaptureController.getSupportedZoomLevels()",
+        "getSupportedZoomLevels"
+      ],
+      "type": "method",
+      "for": [
+        "CaptureController"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "zoom-control-apis",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#zoom-control-apis",
+        "title": "Zoom-control APIs",
+        "number": "3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-capturecontroller-getzoomlevel",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-getzoomlevel",
+      "linkingText": [
+        "getZoomLevel()"
+      ],
+      "localLinkingText": [
+        "CaptureController.getZoomLevel",
+        "CaptureController.getZoomLevel()",
+        "getZoomLevel"
+      ],
+      "type": "method",
+      "for": [
+        "CaptureController"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "zoom-control-apis",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#zoom-control-apis",
+        "title": "Zoom-control APIs",
+        "number": "3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-capturecontroller-setzoomlevel",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-setzoomlevel",
+      "linkingText": [
+        "setZoomLevel()",
+        "setZoomLevel(zoomLevel)"
+      ],
+      "localLinkingText": [
+        "CaptureController.setZoomLevel",
+        "CaptureController.setZoomLevel()",
+        "setZoomLevel"
+      ],
+      "type": "method",
+      "for": [
+        "CaptureController"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "zoom-control-apis",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#zoom-control-apis",
+        "title": "Zoom-control APIs",
+        "number": "3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-capturecontroller-oncapturedzoomlevelchange",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-oncapturedzoomlevelchange",
+      "linkingText": [
+        "oncapturedzoomlevelchange"
+      ],
+      "localLinkingText": [
+        "CaptureController.oncapturedzoomlevelchange"
+      ],
+      "type": "attribute",
+      "for": [
+        "CaptureController"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "zoom-control-apis",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#zoom-control-apis",
+        "title": "Zoom-control APIs",
+        "number": "3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-capturecontroller-constructor",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-constructor",
+      "linkingText": [
+        "constructor()"
+      ],
+      "localLinkingText": [
+        "CaptureController.constructor",
+        "CaptureController.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "CaptureController"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scrolling-apis",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#scrolling-apis",
+        "title": "Scrolling APIs",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-forwardwheelelement",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-forwardwheelelement",
+      "linkingText": [
+        "[[forwardWheelElement]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CaptureController"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scrolling-apis",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#scrolling-apis",
+        "title": "Scrolling APIs",
+        "number": "4.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-forwardwheeleventlistener",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-forwardwheeleventlistener",
+      "linkingText": [
+        "[[forwardWheelEventListener]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CaptureController"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scrolling-apis",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#scrolling-apis",
+        "title": "Scrolling APIs",
+        "number": "4.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-capturecontroller-forwardwheel",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-forwardwheel",
+      "linkingText": [
+        "forwardWheel()",
+        "forwardWheel(element)"
+      ],
+      "localLinkingText": [
+        "CaptureController.forwardWheel",
+        "CaptureController.forwardWheel()",
+        "forwardWheel"
+      ],
+      "type": "method",
+      "for": [
+        "CaptureController"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scrolling-apis",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#scrolling-apis",
+        "title": "Scrolling APIs",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-actively-capturing",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-actively-capturing",
+      "linkingText": [
+        "actively capturing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subroutine-actively-capturing",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#subroutine-actively-capturing",
+        "title": "Subroutine: Actively capturing",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-is-self-capturing",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-is-self-capturing",
+      "linkingText": [
+        "is self-capturing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subroutine-is-self-capturing",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#subroutine-is-self-capturing",
+        "title": "Subroutine: Is self-capturing",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-supported-display-surface-type",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-supported-display-surface-type",
+      "linkingText": [
+        "supported display surface type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subroutine-supported-display-surface-type",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#subroutine-supported-display-surface-type",
+        "title": "Subroutine: Supported display surface type",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-forward-wheel-event-algorithm",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-forward-wheel-event-algorithm",
+      "linkingText": [
+        "forward wheel event algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subroutine-forward-wheel-event",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#subroutine-forward-wheel-event",
+        "title": "Subroutine: Forward wheel event",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-scale-element-coordinates-algorithm",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-scale-element-coordinates-algorithm",
+      "linkingText": [
+        "scale element coordinates algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subroutine-scale-element-coordinates",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#subroutine-scale-element-coordinates",
+        "title": "Subroutine: Scale element coordinates",
+        "number": "5.5"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

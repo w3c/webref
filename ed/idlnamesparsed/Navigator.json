@@ -348,6 +348,13 @@
     },
     {
       "spec": {
+        "title": "Global Privacy Control (GPC)",
+        "url": "https://www.w3.org/TR/gpc/"
+      },
+      "fragment": "Navigator includes GlobalPrivacyControl;"
+    },
+    {
+      "spec": {
         "title": "Media Capabilities",
         "url": "https://www.w3.org/TR/media-capabilities/"
       },
@@ -411,7 +418,7 @@
     },
     {
       "spec": {
-        "title": "Vibration API (Second Edition)",
+        "title": "Vibration API",
         "url": "https://www.w3.org/TR/vibration/"
       },
       "fragment": "partial interface Navigator {\n    boolean vibrate (VibratePattern pattern);\n};"
@@ -673,6 +680,21 @@
         },
         "fragment": "[\n    SecureContext,\n    Exposed=(Window,Worker)\n] interface mixin NavigatorDeviceMemory {\n    readonly attribute double deviceMemory;\n};",
         "href": "https://www.w3.org/TR/device-memory/#navigatordevicememory"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "GlobalPrivacyControl",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Global Privacy Control (GPC)",
+          "url": "https://www.w3.org/TR/gpc/"
+        },
+        "fragment": "interface mixin GlobalPrivacyControl {\n  readonly attribute boolean globalPrivacyControl;\n};",
+        "href": "https://w3c.github.io/gpc/#dom-globalprivacycontrol"
       },
       "extended": [],
       "inheritance": null,

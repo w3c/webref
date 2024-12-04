@@ -7,11 +7,7 @@
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/bcp14": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {
-        "anchors": [
-          "user-agent"
-        ]
-      },
+      "https://infra.spec.whatwg.org/": {},
       "https://tc39.es/ecma262/multipage/": {},
       "https://w3c.github.io/mediacapture-main/": {
         "anchors": [
@@ -24,29 +20,22 @@
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/mediacapture-streams/": {
         "anchors": [
-          "dfn-source",
           "dfn-device-change-notification-steps"
         ]
       },
       "https://www.w3.org/TR/permissions/": {
         "anchors": [
-          "dfn-request-permission-to-use",
-          "dfn-prompt-the-user-to-choose",
           "set-permission-command"
         ]
       },
       "https://www.w3.org/TR/screen-capture/": {},
       "https://www.w3.org/TR/webdriver2/": {
         "anchors": [
-          "dfn-extension-commands",
-          "dfn-remote-end-steps",
           "dfn-error-code",
-          "dfn-invalid-argument",
           "dfn-current-browsing-context",
           "dfn-no-longer-open",
           "dfn-no-such-window",
           "dfn-handle-any-user-prompts",
-          "dfn-success",
           "dfn-url-variables",
           "dfn-getting-properties"
         ]
@@ -67,6 +56,11 @@
           "in-parallel"
         ]
       },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "user-agent"
+        ]
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "dfn-convert-ecmascript-to-idl-value",
@@ -80,6 +74,7 @@
           "dom-mediadevices",
           "dom-mediadevices-getusermedia",
           "dom-mediadevices-enumeratedevices",
+          "dfn-source",
           "dom-mediadeviceinfo-label",
           "dom-mediatracksupportedconstraints-deviceid",
           "dom-mediatracksupportedconstraints-groupid",
@@ -92,8 +87,10 @@
       },
       "https://www.w3.org/TR/permissions/": {
         "anchors": [
+          "dfn-request-permission-to-use",
           "dfn-permission-state",
-          "dom-permissionstate-prompt"
+          "dom-permissionstate-prompt",
+          "dfn-prompt-the-user-to-choose"
         ]
       },
       "https://www.w3.org/TR/screen-capture/": {
@@ -103,8 +100,12 @@
       },
       "https://www.w3.org/TR/webdriver2/": {
         "anchors": [
+          "dfn-extension-commands",
           "dfn-extension-command-uri-template",
-          "dfn-error"
+          "dfn-remote-end-steps",
+          "dfn-error",
+          "dfn-invalid-argument",
+          "dfn-success"
         ]
       }
     }

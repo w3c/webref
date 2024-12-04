@@ -288,38 +288,6 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#ml"
       },
-      "MLNamedArrayBufferViews": {
-        "fragment": "typedef record<USVString, ArrayBufferView> MLNamedArrayBufferViews;",
-        "type": "typedef",
-        "name": "MLNamedArrayBufferViews",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "record",
-          "nullable": false,
-          "union": false,
-          "idlType": [
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "ArrayBufferView"
-            }
-          ]
-        },
-        "extAttrs": [],
-        "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlnamedarraybufferviews"
-      },
       "MLNamedTensors": {
         "fragment": "typedef record<USVString, MLTensor> MLNamedTensors;",
         "type": "typedef",
@@ -352,129 +320,12 @@
         "extAttrs": [],
         "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlnamedtensors"
       },
-      "MLComputeResult": {
-        "fragment": "dictionary MLComputeResult {\n  MLNamedArrayBufferViews inputs;\n  MLNamedArrayBufferViews outputs;\n};",
-        "type": "dictionary",
-        "name": "MLComputeResult",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "inputs",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLNamedArrayBufferViews"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcomputeresult-inputs"
-          },
-          {
-            "type": "field",
-            "name": "outputs",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLNamedArrayBufferViews"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcomputeresult-outputs"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlcomputeresult"
-      },
       "MLContext": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {\n  // ISSUE(791): compute() will soon be removed in favor of dispatch().\n  Promise<MLComputeResult> compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n  undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);\n\n  Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);\n\n  Promise<ArrayBuffer> readTensor(MLTensor tensor);\n  Promise<undefined> readTensor(MLTensor tensor, AllowSharedBufferSource outputData);\n\n  undefined writeTensor(MLTensor tensor, AllowSharedBufferSource inputData);\n\n  MLOpSupportLimits opSupportLimits();\n};",
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {\n  undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);\n\n  Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);\n\n  Promise<ArrayBuffer> readTensor(MLTensor tensor);\n  Promise<undefined> readTensor(MLTensor tensor, AllowSharedBufferSource outputData);\n\n  undefined writeTensor(MLTensor tensor, AllowSharedBufferSource inputData);\n\n  MLOpSupportLimits opSupportLimits();\n};",
         "type": "interface",
         "name": "MLContext",
         "inheritance": null,
         "members": [
-          {
-            "type": "operation",
-            "name": "compute",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "MLComputeResult"
-                }
-              ]
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "graph",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "MLGraph"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "inputs",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "MLNamedArrayBufferViews"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "outputs",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "MLNamedArrayBufferViews"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-compute"
-          },
           {
             "type": "operation",
             "name": "dispatch",
@@ -12575,13 +12426,8 @@
         "MLContextOptions",
         "GPUDevice"
       ],
-      "MLComputeResult": [
-        "MLNamedArrayBufferViews"
-      ],
       "MLContext": [
-        "MLComputeResult",
         "MLGraph",
-        "MLNamedArrayBufferViews",
         "MLNamedTensors",
         "MLTensor",
         "MLTensorDescriptor",
@@ -12816,7 +12662,6 @@
     },
     "externalDependencies": [
       "GPUDevice",
-      "ArrayBufferView",
       "ArrayBuffer",
       "AllowSharedBufferSource"
     ],
