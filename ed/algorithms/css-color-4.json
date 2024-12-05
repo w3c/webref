@@ -169,22 +169,22 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "if <var>destination</var> has no gamut limits (XYZ-D65, XYZ-D50, Lab, LCH, Oklab, Oklch) convert <var>origin</var> to <var>destination</var> and return it as the gamut mapped color"
+          "html": "if <var>destination</var> has no gamut limits (XYZ-D65, XYZ-D50, Lab, LCH, Oklab, OKLCh) convert <var>origin</var> to <var>destination</var> and return it as the gamut mapped color"
         },
         {
-          "html": "let <var>origin_Oklch</var> be <var>origin</var> converted\n\t\tfrom <var>origin color space</var> to the Oklch color space"
+          "html": "let <var>origin_OKLCh</var> be <var>origin</var> converted\n\t\tfrom <var>origin color space</var> to the OKLCh color space"
         },
         {
-          "html": "if the Lightness of <var>origin_Oklch</var> is greater than or equal to 100%,\n\t\tconvert `oklab(1 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
+          "html": "if the Lightness of <var>origin_OKLCh</var> is greater than or equal to 100%,\n\t\tconvert `oklab(1 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
         },
         {
-          "html": "if the Lightness of <var>origin_Oklch</var> is less than than or equal to 0%,\n\t\tconvert `oklab(0 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
+          "html": "if the Lightness of <var>origin_OKLCh</var> is less than than or equal to 0%,\n\t\tconvert `oklab(0 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
         },
         {
           "html": "let inGamut(<var>color</var>) be a function which returns true if, when passed a color,\n\t\tthat color is inside the gamut of <var>destination</var>.\n\t\tFor HSL and HWB, it returns true if the color is inside the gamut of sRGB."
         },
         {
-          "html": "if inGamut(<var>origin_Oklch</var>) is true, convert <var>origin_Oklch</var> to <var>destination</var> and return it as the gamut mapped color"
+          "html": "if inGamut(<var>origin_OKLCh</var>) is true, convert <var>origin_OKLCh</var> to <var>destination</var> and return it as the gamut mapped color"
         },
         {
           "html": "otherwise, let delta(<var>one</var>, <var>two</var>) be a function which returns the deltaEOK of color <var>one</var> compared to color <var>two</var>"
@@ -199,7 +199,7 @@
           "html": "let clip(<var>color</var>) be a function which converts <var>color</var> to <var>destination</var>,\n\t\tclamps each component to the bounds of the reference range for that component\n\t\tand returns the result"
         },
         {
-          "html": "set <var>current</var> to <var>origin_Oklch</var>"
+          "html": "set <var>current</var> to <var>origin_OKLCh</var>"
         },
         {
           "html": "set <var>clipped</var> to clip(<var>current</var>)"
@@ -220,7 +220,7 @@
           "html": "set <var>min</var> to zero"
         },
         {
-          "html": "set <var>max</var> to the Oklch chroma of <var>origin_Oklch</var>"
+          "html": "set <var>max</var> to the OKLCh chroma of <var>origin_OKLCh</var>"
         },
         {
           "html": "let <var>min_inGamut</var> be a boolean that represents when <var>min</var> is still in gamut, and set it to true"
