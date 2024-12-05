@@ -4934,25 +4934,36 @@
       ]
     },
     {
-      "name": "dispatch actions",
-      "href": "https://w3c.github.io/webdriver/#dfn-dispatch-actions",
-      "html": "To <dfn id=\"dfn-dispatch-actions\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">dispatch actions</dfn> given <var>input\nstate</var>, <var>actions by tick</var>, <var>browsing\ncontext</var>, and <var>actions options</var>:",
+      "name": "wait for an action queue token",
+      "href": "https://w3c.github.io/webdriver/#dfn-wait-for-an-action-queue-token",
+      "html": "To <dfn id=\"dfn-wait-for-an-action-queue-token\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">wait for an action queue token</dfn> given <var>input state</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>token</var> be a new unique identifier.\n\n </p>"
         },
         {
-          "html": "<p>Enqueue <var>token</var> in <var>input state</var>'s <a href=\"https://w3c.github.io/webdriver/#dfn-actions-queue\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-actions-queue-1\">actions\n queue</a>.\n\n </p>"
+          "html": "<p>Enqueue <var>token</var> in <var>input state</var>'s\n  <a href=\"https://w3c.github.io/webdriver/#dfn-actions-queue\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-actions-queue-1\">actions queue</a>.\n\n </p>"
         },
         {
-          "html": "<p>Wait for <var>token</var> to be the first item\n in <var>input state</var>'s <a href=\"https://w3c.github.io/webdriver/#dfn-actions-queue\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-actions-queue-2\">actions queue</a>.\n\n </p>"
+          "html": "<p>Wait for <var>token</var> to be the first item\n  in <var>input state</var>'s <a href=\"https://w3c.github.io/webdriver/#dfn-actions-queue\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-actions-queue-2\">actions queue</a>.\n\n </p>"
+        }
+      ]
+    },
+    {
+      "name": "dispatch actions",
+      "href": "https://w3c.github.io/webdriver/#dfn-dispatch-actions",
+      "html": "To <dfn id=\"dfn-dispatch-actions\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">dispatch actions</dfn> given <var>input\nstate</var>, <var>actions by tick</var>, <var>browsing\ncontext</var>, and <var>actions options</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a href=\"https://w3c.github.io/webdriver/#dfn-wait-for-an-action-queue-token\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-wait-for-an-action-queue-token-1\">Wait for an action queue token</a> with <var>input state</var>.\n\n </p>"
         },
         {
-          "html": "<p>Let <var>actions result</var> be the result of <a href=\"https://w3c.github.io/webdriver/#dfn-dispatch-actions-inner\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-dispatch-actions-inner-1\">dispatch\n actions inner</a> with <var>input state</var>, <var>actions by\n tick</var>, <var>browsing context</var>, and <var>actions options</var>.\n\n </p>"
+          "html": "<p>Let <var>actions result</var> be the result of\n  <a href=\"https://w3c.github.io/webdriver/#dfn-dispatch-actions-inner\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-dispatch-actions-inner-1\">dispatch actions inner</a> with <var>input state</var>, <var>actions by\n  tick</var>, <var>browsing context</var>, and <var>actions options</var>.\n\n </p>"
         },
         {
-          "html": "<p>Dequeue <var>input state</var>'s <a href=\"https://w3c.github.io/webdriver/#dfn-actions-queue\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-actions-queue-3\">actions queue</a>.\n     </p><p>Assert: this returns <var>token</var>\n\n </p>"
+          "html": "<p>Dequeue <var>input state</var>'s <a href=\"https://w3c.github.io/webdriver/#dfn-actions-queue\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-actions-queue-3\">actions queue</a>.\n  </p><p>Assert: this returns <var>token</var>\n\n </p>"
         },
         {
           "html": "<p>Return <var>actions result</var>.\n</p>"
@@ -5538,19 +5549,22 @@
           "html": "<p>If <var>session</var>'s <a href=\"https://w3c.github.io/webdriver/#dfn-current-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-current-browsing-context-85\">current browsing context</a>\n  is <a href=\"https://w3c.github.io/webdriver/#dfn-no-longer-open\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-no-longer-open-52\">no longer open</a>, return <a href=\"https://w3c.github.io/webdriver/#dfn-error\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-249\">error</a> with <a href=\"https://w3c.github.io/webdriver/#dfn-error-code\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-code-224\">error\n  code</a> <a href=\"https://w3c.github.io/webdriver/#dfn-no-such-window\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-no-such-window-53\">no such window</a>.\n\n </p>"
         },
         {
-          "html": "<p>Let <var>input state</var> be the result of <a href=\"https://w3c.github.io/webdriver/#dfn-get-the-input-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-get-the-input-state-4\">get the\n input state</a> with <a href=\"https://w3c.github.io/webdriver/#dfn-sessions\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-sessions-38\">session</a> and <a href=\"https://w3c.github.io/webdriver/#dfn-current-top-level-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-current-top-level-browsing-context-65\">current\n top-level browsing context</a>.\n\n </p>"
+          "html": "<p>Let <var>input state</var> be the result of <a href=\"https://w3c.github.io/webdriver/#dfn-get-the-input-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-get-the-input-state-4\">get the input state</a>\n  with <a href=\"https://w3c.github.io/webdriver/#dfn-sessions\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-sessions-38\">session</a> and <a href=\"https://w3c.github.io/webdriver/#dfn-current-top-level-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-current-top-level-browsing-context-65\">current top-level browsing context</a>.\n\n </p>"
         },
         {
           "html": "<p>Let <var>actions options</var> be a new <a href=\"https://w3c.github.io/webdriver/#dfn-actions-options\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-actions-options-6\">actions options</a>\n  with the <a href=\"https://w3c.github.io/webdriver/#dfn-is-element-origin\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-is-element-origin-7\">is element origin</a> steps set to <a href=\"https://w3c.github.io/webdriver/#dfn-represents-a-web-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-represents-a-web-element-9\">represents a web\n  element</a>, and the <a href=\"https://w3c.github.io/webdriver/#dfn-get-element-origin\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-get-element-origin-6\">get element origin</a> steps set\n  to <a href=\"https://w3c.github.io/webdriver/#dfn-get-a-webelement-origin\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-get-a-webelement-origin-5\">get a WebElement origin</a>.\n\n </p>"
         },
         {
-          "html": "<p>Let <var>undo actions</var> be <var>input\n state</var>'s <a href=\"https://w3c.github.io/webdriver/#dfn-input-cancel-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-input-cancel-list-5\">input cancel list</a> in reverse order.\n\n </p>"
+          "html": "<p><a href=\"https://w3c.github.io/webdriver/#dfn-wait-for-an-action-queue-token\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-wait-for-an-action-queue-token-2\">Wait for an action queue token</a> with <var>input state</var>.\n\n </p>"
         },
         {
-          "html": "<p><a href=\"https://w3c.github.io/webdriver/#dfn-try\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-try-120\">Try</a> to <a href=\"https://w3c.github.io/webdriver/#dfn-dispatch-tick-actions\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-dispatch-tick-actions-4\">dispatch tick actions</a> with arguments\n  <var>undo\n  actions</var>, <code>0</code>,<var>session</var>'s <a href=\"https://w3c.github.io/webdriver/#dfn-current-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-current-browsing-context-86\">current\n  browsing context</a>, and <a href=\"https://w3c.github.io/webdriver/#dfn-actions-options\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-actions-options-7\">actions options</a>.\n\n </p>"
+          "html": "<p>Let <var>undo actions</var> be <var>input\n  state</var>'s <a href=\"https://w3c.github.io/webdriver/#dfn-input-cancel-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-input-cancel-list-5\">input cancel list</a> in reverse order.\n\n </p>"
         },
         {
-          "html": "<p><a href=\"https://w3c.github.io/webdriver/#dfn-reset-the-input-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-reset-the-input-state-1\">Reset the input state</a> with <var>session</var>\n and <var>session</var>'s <a href=\"https://w3c.github.io/webdriver/#dfn-current-top-level-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-current-top-level-browsing-context-66\">current top-level browsing\n context</a>.\n\n </p>"
+          "html": "<p><a href=\"https://w3c.github.io/webdriver/#dfn-try\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-try-120\">Try</a> to <a href=\"https://w3c.github.io/webdriver/#dfn-dispatch-actions\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-dispatch-actions-4\">dispatch actions</a> with <var>input state</var>,\n  <var>undo actions</var>, <a href=\"https://w3c.github.io/webdriver/#dfn-current-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-current-browsing-context-86\">current browsing context</a>,\n  and <var>actions options</var>.\n\n\n </p>"
+        },
+        {
+          "html": "<p><a href=\"https://w3c.github.io/webdriver/#dfn-reset-the-input-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-reset-the-input-state-1\">Reset the input state</a> with <var>session</var>\n  and <var>session</var>'s <a href=\"https://w3c.github.io/webdriver/#dfn-current-top-level-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-current-top-level-browsing-context-66\">current top-level browsing context</a>.\n\n </p>"
         },
         {
           "html": "<p>Return <a href=\"https://w3c.github.io/webdriver/#dfn-success\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-success-116\">success</a> with data <a href=\"https://w3c.github.io/webdriver/#dfn-null\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-null-74\"><code>null</code></a>.\n</p>"
