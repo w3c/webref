@@ -10,15 +10,13 @@
       "http://csrc.nist.gov/publications/nistpubs/800-38a/sp800-38a.pdf": {},
       "http://www.northropgrumman.com/Capabilities/CybersecurityResearchConsortium/": {},
       "http://www.secg.org/sec1-v2.pdf": {},
+      "https://datatracker.ietf.org/doc/draft-irtf-cfrg-det-sigs-with-noise/": {},
       "https://datatracker.ietf.org/doc/html/bcp14": {},
       "https://dom.spec.whatwg.org/": {},
       "https://encoding.spec.whatwg.org/": {},
+      "https://github.com/WICG/webcrypto-secure-curves/issues/27": {},
+      "https://github.com/WICG/webcrypto-secure-curves/issues/28": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://html.spec.whatwg.org/multipage/structured-data.html": {
-        "anchors": [
-          "serializable"
-        ]
-      },
       "https://infra.spec.whatwg.org/": {},
       "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf": {},
       "https://tc39.es/ecma262/multipage/": {},
@@ -29,16 +27,7 @@
           "global-identifier"
         ]
       },
-      "https://webidl.spec.whatwg.org/": {
-        "anchors": [
-          "SameObject",
-          "Exposed",
-          "SecureContext",
-          "idl-promise",
-          "idl-sequence",
-          "EnforceRange"
-        ]
-      },
+      "https://webidl.spec.whatwg.org/": {},
       "https://wiki.whatwg.org/wiki/Crypto": {},
       "https://www.rfc-editor.org/rfc/rfc2119": {},
       "https://www.rfc-editor.org/rfc/rfc2141": {
@@ -65,8 +54,12 @@
       "https://www.rfc-editor.org/rfc/rfc6090": {},
       "https://www.rfc-editor.org/rfc/rfc7517": {},
       "https://www.rfc-editor.org/rfc/rfc7518": {},
+      "https://www.rfc-editor.org/rfc/rfc7748": {},
       "https://www.rfc-editor.org/rfc/rfc8018": {},
+      "https://www.rfc-editor.org/rfc/rfc8032": {},
+      "https://www.rfc-editor.org/rfc/rfc8037": {},
       "https://www.rfc-editor.org/rfc/rfc8174": {},
+      "https://www.rfc-editor.org/rfc/rfc8410": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/IndexedDB/": {},
       "https://www.w3.org/groups/wg/webappsec": {},
@@ -92,6 +85,7 @@
       },
       "https://html.spec.whatwg.org/multipage/structured-data.html": {
         "anchors": [
+          "serializable",
           "serialization-steps",
           "sub-serialization",
           "deserialization-steps",
@@ -101,7 +95,8 @@
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "windoworworkerglobalscope",
-          "concept-relevant-realm"
+          "concept-relevant-realm",
+          "concept-relevant-global"
         ]
       },
       "https://infra.spec.whatwg.org/": {
@@ -122,6 +117,9 @@
           "dfn-throw",
           "dataerror",
           "dfn-get-buffer-source-copy",
+          "SameObject",
+          "Exposed",
+          "SecureContext",
           "idl-Int8Array",
           "idl-Uint8Array",
           "idl-Uint8ClampedArray",
@@ -136,6 +134,7 @@
           "idl-object",
           "idl-boolean",
           "idl-any",
+          "idl-sequence",
           "idl-unsigned-long",
           "this",
           "invalidaccesserror",
@@ -144,6 +143,7 @@
           "exceptiondef-typeerror",
           "notsupportederror",
           "operationerror",
+          "EnforceRange",
           "idl-octet",
           "idl-unsigned-short"
         ]
