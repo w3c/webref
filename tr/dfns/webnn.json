@@ -644,25 +644,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "typedefdef-mlnamedarraybufferviews",
-      "href": "https://www.w3.org/TR/webnn/#typedefdef-mlnamedarraybufferviews",
-      "linkingText": [
-        "MLNamedArrayBufferViews"
-      ],
-      "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcontext",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext",
-        "title": "MLContext interface",
-        "number": "7.3"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "typedefdef-mlnamedtensors",
       "href": "https://www.w3.org/TR/webnn/#typedefdef-mlnamedtensors",
       "linkingText": [
@@ -670,25 +651,6 @@
       ],
       "localLinkingText": [],
       "type": "typedef",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcontext",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext",
-        "title": "MLContext interface",
-        "number": "7.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dictdef-mlcomputeresult",
-      "href": "https://www.w3.org/TR/webnn/#dictdef-mlcomputeresult",
-      "linkingText": [
-        "MLComputeResult"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
       "for": [],
       "access": "public",
       "informative": false,
@@ -886,48 +848,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-mlcomputeresult-inputs",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlcomputeresult-inputs",
-      "linkingText": [
-        "inputs"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLComputeResult"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcontext",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext",
-        "title": "MLContext interface",
-        "number": "7.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-mlcomputeresult-outputs",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlcomputeresult-outputs",
-      "linkingText": [
-        "outputs"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLComputeResult"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcontext",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext",
-        "title": "MLContext interface",
-        "number": "7.3"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "validate-buffer-with-descriptor",
       "href": "https://www.w3.org/TR/webnn/#validate-buffer-with-descriptor",
       "linkingText": [
@@ -966,130 +886,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "execute-graph",
-      "href": "https://www.w3.org/TR/webnn/#execute-graph",
-      "linkingText": [
-        "execute graph"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcontext",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext",
-        "title": "MLContext interface",
-        "number": "7.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "mlnamedarraybufferviews-transfer",
-      "href": "https://www.w3.org/TR/webnn/#mlnamedarraybufferviews-transfer",
-      "linkingText": [
-        "transfer"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "MLNamedArrayBufferViews"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "mlnamedarraybufferviews-transfer-alg",
-        "href": "https://www.w3.org/TR/webnn/#mlnamedarraybufferviews-transfer-alg",
-        "title": "MLNamedArrayBufferViews transfer algorithm",
-        "number": "7.3.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-mlcontext-compute-graph-inputs-outputs-graph",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-compute-graph-inputs-outputs-graph",
-      "linkingText": [
-        "graph"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "MLContext/compute(graph, inputs, outputs)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcontext-compute",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-compute",
-        "title": "compute()",
-        "number": "7.3.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-mlcontext-compute-graph-inputs-outputs-inputs",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-compute-graph-inputs-outputs-inputs",
-      "linkingText": [
-        "inputs"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "MLContext/compute(graph, inputs, outputs)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcontext-compute",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-compute",
-        "title": "compute()",
-        "number": "7.3.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-mlcontext-compute-graph-inputs-outputs-outputs",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-compute-graph-inputs-outputs-outputs",
-      "linkingText": [
-        "outputs"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "MLContext/compute(graph, inputs, outputs)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcontext-compute",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-compute",
-        "title": "compute()",
-        "number": "7.3.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-mlcontext-compute",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-compute",
-      "linkingText": [
-        "compute(graph, inputs, outputs)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "MLContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcontext-compute",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-compute",
-        "title": "compute()",
-        "number": "7.3.2"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dom-mlcontext-dispatch-graph-inputs-outputs-graph",
       "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-dispatch-graph-inputs-outputs-graph",
       "linkingText": [
@@ -1106,7 +902,7 @@
         "id": "api-mlcontext-dispatch",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-dispatch",
         "title": "dispatch()",
-        "number": "7.3.3"
+        "number": "7.3.1"
       },
       "definedIn": "prose"
     },
@@ -1127,7 +923,7 @@
         "id": "api-mlcontext-dispatch",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-dispatch",
         "title": "dispatch()",
-        "number": "7.3.3"
+        "number": "7.3.1"
       },
       "definedIn": "prose"
     },
@@ -1148,7 +944,7 @@
         "id": "api-mlcontext-dispatch",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-dispatch",
         "title": "dispatch()",
-        "number": "7.3.3"
+        "number": "7.3.1"
       },
       "definedIn": "prose"
     },
@@ -1169,7 +965,7 @@
         "id": "api-mlcontext-dispatch",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-dispatch",
         "title": "dispatch()",
-        "number": "7.3.3"
+        "number": "7.3.1"
       },
       "definedIn": "prose"
     },
@@ -1190,7 +986,7 @@
         "id": "api-mlcontext-createtensor",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-createtensor",
         "title": "createTensor()",
-        "number": "7.3.4"
+        "number": "7.3.2"
       },
       "definedIn": "prose"
     },
@@ -1211,7 +1007,7 @@
         "id": "api-mlcontext-createtensor",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-createtensor",
         "title": "createTensor()",
-        "number": "7.3.4"
+        "number": "7.3.2"
       },
       "definedIn": "prose"
     },
@@ -1232,7 +1028,7 @@
         "id": "api-mlcontext-readtensor",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-readtensor",
         "title": "readTensor(tensor)",
-        "number": "7.3.5"
+        "number": "7.3.3"
       },
       "definedIn": "prose"
     },
@@ -1253,7 +1049,7 @@
         "id": "api-mlcontext-readtensor",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-readtensor",
         "title": "readTensor(tensor)",
-        "number": "7.3.5"
+        "number": "7.3.3"
       },
       "definedIn": "prose"
     },
@@ -1274,7 +1070,7 @@
         "id": "api-mlcontext-readtensor-byob",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-readtensor-byob",
         "title": "readTensor(tensor, outputData)",
-        "number": "7.3.6"
+        "number": "7.3.4"
       },
       "definedIn": "prose"
     },
@@ -1295,7 +1091,7 @@
         "id": "api-mlcontext-readtensor-byob",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-readtensor-byob",
         "title": "readTensor(tensor, outputData)",
-        "number": "7.3.6"
+        "number": "7.3.4"
       },
       "definedIn": "prose"
     },
@@ -1316,7 +1112,7 @@
         "id": "api-mlcontext-readtensor-byob",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-readtensor-byob",
         "title": "readTensor(tensor, outputData)",
-        "number": "7.3.6"
+        "number": "7.3.4"
       },
       "definedIn": "prose"
     },
@@ -1337,7 +1133,7 @@
         "id": "api-mlcontext-writetensor",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-writetensor",
         "title": "writeTensor()",
-        "number": "7.3.7"
+        "number": "7.3.5"
       },
       "definedIn": "prose"
     },
@@ -1358,7 +1154,7 @@
         "id": "api-mlcontext-writetensor",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-writetensor",
         "title": "writeTensor()",
-        "number": "7.3.7"
+        "number": "7.3.5"
       },
       "definedIn": "prose"
     },
@@ -1379,7 +1175,7 @@
         "id": "api-mlcontext-writetensor",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-writetensor",
         "title": "writeTensor()",
-        "number": "7.3.7"
+        "number": "7.3.5"
       },
       "definedIn": "prose"
     },
@@ -1398,7 +1194,7 @@
         "id": "api-mlcontext-opsupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-opsupportlimits-dictionary",
         "title": "MLOpSupportLimits dictionary",
-        "number": "7.3.8.1"
+        "number": "7.3.6.1"
       },
       "definedIn": "pre"
     },
@@ -1419,7 +1215,7 @@
         "id": "api-mlcontext-opsupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-opsupportlimits-dictionary",
         "title": "MLOpSupportLimits dictionary",
-        "number": "7.3.8.1"
+        "number": "7.3.6.1"
       },
       "definedIn": "dt"
     },
@@ -1440,7 +1236,7 @@
         "id": "api-mlcontext-opsupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-opsupportlimits-dictionary",
         "title": "MLOpSupportLimits dictionary",
-        "number": "7.3.8.1"
+        "number": "7.3.6.1"
       },
       "definedIn": "dt"
     },
@@ -1461,7 +1257,7 @@
         "id": "api-mlcontext-opsupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-opsupportlimits-dictionary",
         "title": "MLOpSupportLimits dictionary",
-        "number": "7.3.8.1"
+        "number": "7.3.6.1"
       },
       "definedIn": "dt"
     },
@@ -1482,7 +1278,7 @@
         "id": "api-mlcontext-opsupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-opsupportlimits-dictionary",
         "title": "MLOpSupportLimits dictionary",
-        "number": "7.3.8.1"
+        "number": "7.3.6.1"
       },
       "definedIn": "dt"
     },
@@ -1501,7 +1297,7 @@
         "id": "api-mlcontext-supportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-supportlimits-dictionary",
         "title": "MLSupportLimits dictionary",
-        "number": "7.3.8.2"
+        "number": "7.3.6.2"
       },
       "definedIn": "pre"
     },
@@ -1522,7 +1318,7 @@
         "id": "api-mlcontext-supportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-supportlimits-dictionary",
         "title": "MLSupportLimits dictionary",
-        "number": "7.3.8.2"
+        "number": "7.3.6.2"
       },
       "definedIn": "dt"
     },
@@ -1541,7 +1337,7 @@
         "id": "api-mlcontext-binarysupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-binarysupportlimits-dictionary",
         "title": "MLBinarySupportLimits dictionary",
-        "number": "7.3.8.3"
+        "number": "7.3.6.3"
       },
       "definedIn": "pre"
     },
@@ -1562,7 +1358,7 @@
         "id": "api-mlcontext-binarysupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-binarysupportlimits-dictionary",
         "title": "MLBinarySupportLimits dictionary",
-        "number": "7.3.8.3"
+        "number": "7.3.6.3"
       },
       "definedIn": "dt"
     },
@@ -1583,7 +1379,7 @@
         "id": "api-mlcontext-binarysupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-binarysupportlimits-dictionary",
         "title": "MLBinarySupportLimits dictionary",
-        "number": "7.3.8.3"
+        "number": "7.3.6.3"
       },
       "definedIn": "dt"
     },
@@ -1604,7 +1400,7 @@
         "id": "api-mlcontext-binarysupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-binarysupportlimits-dictionary",
         "title": "MLBinarySupportLimits dictionary",
-        "number": "7.3.8.3"
+        "number": "7.3.6.3"
       },
       "definedIn": "dt"
     },
@@ -1623,7 +1419,7 @@
         "id": "api-mlcontext-singleinputsupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-singleinputsupportlimits-dictionary",
         "title": "MLSingleInputSupportLimits dictionary",
-        "number": "7.3.8.4"
+        "number": "7.3.6.4"
       },
       "definedIn": "pre"
     },
@@ -1644,7 +1440,7 @@
         "id": "api-mlcontext-singleinputsupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-singleinputsupportlimits-dictionary",
         "title": "MLSingleInputSupportLimits dictionary",
-        "number": "7.3.8.4"
+        "number": "7.3.6.4"
       },
       "definedIn": "dt"
     },
@@ -1665,7 +1461,7 @@
         "id": "api-mlcontext-singleinputsupportlimits-dictionary",
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-singleinputsupportlimits-dictionary",
         "title": "MLSingleInputSupportLimits dictionary",
-        "number": "7.3.8.4"
+        "number": "7.3.6.4"
       },
       "definedIn": "dt"
     },
