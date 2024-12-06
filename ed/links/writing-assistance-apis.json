@@ -10,6 +10,7 @@
       "https://github.com/WICG/writing-assistance-apis": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://infra.spec.whatwg.org/": {},
+      "https://spec.commonmark.org/": {},
       "https://streams.spec.whatwg.org/": {},
       "https://tc39.es/ecma402/": {},
       "https://w3c.github.io/hr-time/": {},
@@ -80,12 +81,20 @@
           "set-append",
           "set-union",
           "implementation-defined",
-          "string"
+          "string",
+          "struct"
         ]
       },
       "https://streams.spec.whatwg.org/": {
         "anchors": [
-          "readablestream"
+          "readablestream",
+          "readablestream-cancel",
+          "rs-cancel",
+          "readablestream-set-up",
+          "readablestream-set-up-cancelalgorithm",
+          "readablestream-error",
+          "readablestream-enqueue",
+          "readablestream-close"
         ]
       },
       "https://tc39.es/ecma402/": {
@@ -126,7 +135,12 @@
           "resolve",
           "dfn-enumeration-value",
           "exceptiondef-typeerror",
-          "aborterror"
+          "dfn-create-exception",
+          "aborterror",
+          "domexception-name",
+          "notallowederror",
+          "notreadableerror",
+          "quotaexceedederror"
         ]
       },
       "https://xhr.spec.whatwg.org/": {
