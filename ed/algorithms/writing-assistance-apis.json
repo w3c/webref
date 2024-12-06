@@ -143,7 +143,7 @@
                           "html": "<p>Initiate the download process for everything the user agent needs to summarize text according to <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-type\" id=\"ref-for-dom-aisummarizercreatecoreoptions-type①\">type</a></code>\"], <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-format\" id=\"ref-for-dom-aisummarizercreatecoreoptions-format①\">format</a></code>\"], or <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-length\" id=\"ref-for-dom-aisummarizercreatecoreoptions-length①\">length</a></code>\"].</p>"
                         },
                         {
-                          "html": "Run the following steps, by <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when\">abort when</a> <var>abortedDuringDownload</var> becomes true:",
+                          "html": "Run the following steps, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when\">abort when</a> <var>abortedDuringDownload</var> becomes true:",
                           "rationale": "wait",
                           "steps": [
                             {
@@ -300,10 +300,10 @@
               ]
             },
             {
-              "html": "<p>Let <var>summarizer</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer\" id=\"ref-for-aisummarizer①\">AISummarizer</a></code> object, created in <var>promise</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm④\">relevant realm</a>, with</p>\n        <dl class=\"props\">\n         <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-shared-context\" id=\"ref-for-aisummarizer-shared-context\">shared context</a>\n         </dt><dd data-md=\"\">\n          <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreateoptions-sharedcontext\" id=\"ref-for-dom-aisummarizercreateoptions-sharedcontext①\">sharedContext</a></code>\"]</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-summary-type\" id=\"ref-for-aisummarizer-summary-type\">summary type</a>\n         </dt><dd data-md=\"\">\n          <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-type\" id=\"ref-for-dom-aisummarizercreatecoreoptions-type④\">type</a></code>\"]</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-summary-format\" id=\"ref-for-aisummarizer-summary-format\">summary format</a>\n         </dt><dd data-md=\"\">\n          <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-format\" id=\"ref-for-dom-aisummarizercreatecoreoptions-format④\">format</a></code>\"]</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-summary-length\" id=\"ref-for-aisummarizer-summary-length\">summary length</a>\n         </dt><dd data-md=\"\">\n          <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-length\" id=\"ref-for-dom-aisummarizercreatecoreoptions-length④\">length</a></code>\"]</p>\n        </dd></dl>"
+              "html": "<p>Let <var>summarizer</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer\" id=\"ref-for-aisummarizer①\">AISummarizer</a></code> object, created in <var>promise</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm④\">relevant realm</a>, with</p>\n        <dl class=\"props\">\n         <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-shared-context\" id=\"ref-for-aisummarizer-shared-context\">shared context</a>\n         </dt><dd data-md=\"\">\n          <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreateoptions-sharedcontext\" id=\"ref-for-dom-aisummarizercreateoptions-sharedcontext①\">sharedContext</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exists</a>; otherwise null</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-summary-type\" id=\"ref-for-aisummarizer-summary-type\">summary type</a>\n         </dt><dd data-md=\"\">\n          <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-type\" id=\"ref-for-dom-aisummarizercreatecoreoptions-type④\">type</a></code>\"]</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-summary-format\" id=\"ref-for-aisummarizer-summary-format\">summary format</a>\n         </dt><dd data-md=\"\">\n          <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-format\" id=\"ref-for-dom-aisummarizercreatecoreoptions-format④\">format</a></code>\"]</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-summary-length\" id=\"ref-for-aisummarizer-summary-length\">summary length</a>\n         </dt><dd data-md=\"\">\n          <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-length\" id=\"ref-for-dom-aisummarizercreatecoreoptions-length④\">length</a></code>\"]</p>\n        </dd></dl>"
             },
             {
-              "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreateoptions-signal\" id=\"ref-for-dom-aisummarizercreateoptions-signal⑧\">signal</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exists</a>, then <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add①\">add the following abort steps</a> to <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreateoptions-signal\" id=\"ref-for-dom-aisummarizercreateoptions-signal⑨\">signal</a></code>\"]:",
+              "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreateoptions-signal\" id=\"ref-for-dom-aisummarizercreateoptions-signal⑧\">signal</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">exists</a>, then <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add①\">add the following abort steps</a> to <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreateoptions-signal\" id=\"ref-for-dom-aisummarizercreateoptions-signal⑨\">signal</a></code>\"]:",
               "rationale": "destroy",
               "steps": [
                 {
@@ -472,7 +472,7 @@
     {
       "name": "current summarizer language availabilities",
       "href": "https://wicg.github.io/writing-assistance-apis/#current-summarizer-language-availabilities",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"current-summarizer-language-availabilities\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">current summarizer language availabilities</dfn> are given by the following steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> containing two <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">items</a>; the items each are <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">sets</a> of strings representing <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma402/#sec-language-tags\" id=\"ref-for-sec-language-tags\">Unicode canonicalized locale identifier</a>, or null. <a data-link-type=\"biblio\" href=\"https://wicg.github.io/writing-assistance-apis/#biblio-ecma-402\" title=\"ECMAScript Internationalization API Specification\">[ECMA-402]</a>",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"current-summarizer-language-availabilities\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">current summarizer language availabilities</dfn> are given by the following steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> containing two <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">items</a>; the items each are <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">sets</a> of strings representing <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma402/#sec-language-tags\" id=\"ref-for-sec-language-tags\">Unicode canonicalized locale identifiers</a>, or null. <a data-link-type=\"biblio\" href=\"https://wicg.github.io/writing-assistance-apis/#biblio-ecma-402\" title=\"ECMAScript Internationalization API Specification\">[ECMA-402]</a>",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -529,13 +529,526 @@
       ]
     },
     {
-      "name": "AISummarizer/destroy",
-      "href": "https://wicg.github.io/writing-assistance-apis/#aisummarizer-destroy",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"AISummarizer\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"aisummarizer-destroy\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">destroy</dfn> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer\" id=\"ref-for-aisummarizer⑥\">AISummarizer</a></code> <var>summarizer</var>, given a JavaScript value <var>exception</var>:",
+      "name": "AISummarizer/summarize(input, options)",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizer-summarize",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"AISummarizer\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"summarize(input, options)|summarize(input)\" id=\"dom-aisummarizer-summarize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>summarize(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>TODO use <var>summarizer</var> and <var>exception</var>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑦\">relevant global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window②\">Window</a></code> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window②\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active②\">fully active</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with④\">a promise rejected with</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed\">destroyed</a> is true, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑤\">a promise rejected with</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason①\">destruction reason</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal\">signal</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exists</a> and is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted④\">aborted</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑥\">a promise rejected with</a> <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal①\">signal</a></code>\"]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason④\">abort reason</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>abortedDuringSummarization</var> be false.</p>"
+        },
+        {
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal②\">signal</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">exists</a>, then <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add②\">add the following abort steps</a> to <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal③\">signal</a></code>\"]:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>abortedDuringSummarization</var> to true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a> created in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑦\">relevant realm</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>context</var> be <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-context\" id=\"ref-for-dom-aisummarizersummarizeoptions-context\">context</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">exists</a>; otherwise null.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⓪\">In parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>summary</var> be the empty string.</p>"
+            },
+            {
+              "html": "Let <var>chunkProduced</var> be the following steps given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a> <var>chunk</var>:",
+              "rationale": "queue",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑦\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source⑦\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑧\">relevant global object</a> to perform the following steps:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>abortedDuringSummarization</var> is true, then:",
+                      "rationale": "reject",
+                      "steps": [
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑦\">Reject</a> <var>promise</var> with <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal④\">signal</a></code>\"]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason⑤\">abort reason</a>.</p>"
+                        },
+                        {
+                          "html": "<p>Abort these steps.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed①\">destroyed</a> is true, then:",
+                      "rationale": "reject",
+                      "steps": [
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑧\">Reject</a> <var>promise</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason②\">destruction reason</a>.</p>"
+                        },
+                        {
+                          "html": "<p>Abort these steps.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>Append <var>chunk</var> to <var>summary</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Let <var>done</var> be the following steps:",
+              "rationale": "queue",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑧\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source⑧\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑨\">relevant global object</a> to perform the following steps:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>abortedDuringSummarization</var> is true, then:",
+                      "rationale": "reject",
+                      "steps": [
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑨\">Reject</a> <var>promise</var> with <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal⑤\">signal</a></code>\"]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason⑥\">abort reason</a>.</p>"
+                        },
+                        {
+                          "html": "<p>Abort these steps.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed②\">destroyed</a> is true, then:",
+                      "rationale": "reject",
+                      "steps": [
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⓪\">Reject</a> <var>promise</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason③\">destruction reason</a>.</p>"
+                        },
+                        {
+                          "html": "<p>Abort these steps.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">Resolve</a> <var>promise</var> with <var>summary</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Let <var>error</var> be the following steps given <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#summarization-error-information\" id=\"ref-for-summarization-error-information\">summarization error information</a> <var>errorInfo</var>:",
+              "rationale": "queue",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑨\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source⑨\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⓪\">relevant global object</a> to perform the following steps:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>abortedDuringSummarization</var> is true, then:",
+                      "rationale": "reject",
+                      "steps": [
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①①\">Reject</a> <var>promise</var> with <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal⑥\">signal</a></code>\"]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason⑦\">abort reason</a>.</p>"
+                        },
+                        {
+                          "html": "<p>Abort these steps.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>Let <var>exception</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception\">creating</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code> with name given by <var>errorInfo</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#summarization-error-information-error-name\" id=\"ref-for-summarization-error-information-error-name\">error name</a>, using <var>errorInfo</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#summarization-error-information-error-information\" id=\"ref-for-summarization-error-information-error-information\">error information</a> to populate the message appropriately.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①②\">Reject</a> <var>promise</var> with <var>exception</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Let <var>stopProducing</var> be the following steps:",
+              "rationale": "return",
+              "steps": [
+                {
+                  "html": "<p>Return <var>abortedDuringSummarization</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#summarize\" id=\"ref-for-summarize\">Summarize</a> <var>input</var> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-shared-context\" id=\"ref-for-aisummarizer-shared-context②\">shared context</a>, <var>context</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-summary-type\" id=\"ref-for-aisummarizer-summary-type②\">summary type</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-summary-format\" id=\"ref-for-aisummarizer-summary-format②\">summary format</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-summary-length\" id=\"ref-for-aisummarizer-summary-length②\">summary length</a>, <var>chunkProduced</var>, <var>done</var>, <var>error</var>, and <var>stopProducing</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "AISummarizer/summarizeStreaming(input, options)",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizer-summarizestreaming",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"AISummarizer\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"summarizeStreaming(input, options)|summarizeStreaming(input)\" id=\"dom-aisummarizer-summarizestreaming\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>summarizeStreaming(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①①\">relevant global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window③\">Window</a></code> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window③\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active③\">fully active</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">a promise rejected with</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed③\">destroyed</a> is true, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑧\">a promise rejected with</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason④\">destruction reason</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal⑦\">signal</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">exists</a> and is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted⑤\">aborted</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑨\">a promise rejected with</a> <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal⑧\">signal</a></code>\"]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason⑧\">abort reason</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>abortedDuringSummarization</var> be false.</p>"
+        },
+        {
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal①⓪\">signal</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⓪\">exists</a>, then <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add③\">add the following abort steps</a> to <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal①①\">signal</a></code>\"]:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>abortedDuringSummarization</var> to true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>stream</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new③\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream①\">ReadableStream</a></code> created in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④④\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑧\">relevant realm</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>canceledDuringSummarization</var> be false.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up\" id=\"ref-for-readablestream-set-up\">Set up</a> <var>stream</var> with <i><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up-cancelalgorithm\" id=\"ref-for-readablestream-set-up-cancelalgorithm\">cancelAlgorithm</a></i> set to the following steps (ignoring the <var>reason</var> argument):",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>canceledDuringSummarization</var> to true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>context</var> be <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-context\" id=\"ref-for-dom-aisummarizersummarizeoptions-context①\">context</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①\">exists</a>; otherwise null.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①③\">In parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>chunkProduced</var> be the following steps given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> <var>chunk</var>:",
+              "rationale": "queue",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①⓪\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source①⓪\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①②\">relevant global object</a> to perform the following steps:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>abortedDuringSummarization</var> is true, then:",
+                      "rationale": "error",
+                      "steps": [
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error\">Error</a> <var>stream</var> with <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal①②\">signal</a></code>\"]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason⑨\">abort reason</a>.</p>"
+                        },
+                        {
+                          "html": "<p>Abort these steps.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed④\">destroyed</a> is true, then:",
+                      "rationale": "error",
+                      "steps": [
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error①\">Error</a> <var>stream</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason⑤\">destruction reason</a>.</p>"
+                        },
+                        {
+                          "html": "<p>Abort these steps.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-enqueue\" id=\"ref-for-readablestream-enqueue\">Enqueue</a> <var>chunk</var> into <var>stream</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Let <var>done</var> be the following steps:",
+              "rationale": "queue",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source①①\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①③\">relevant global object</a> to perform the following steps:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>abortedDuringSummarization</var> is true, then:",
+                      "rationale": "error",
+                      "steps": [
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error②\">Error</a> <var>stream</var> with <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal①③\">signal</a></code>\"]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⓪\">abort reason</a>.</p>"
+                        },
+                        {
+                          "html": "<p>Abort these steps.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed⑤\">destroyed</a> is true, then:",
+                      "rationale": "error",
+                      "steps": [
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error③\">Error</a> <var>stream</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason⑥\">destruction reason</a>.</p>"
+                        },
+                        {
+                          "html": "<p>Abort these steps.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-close\" id=\"ref-for-readablestream-close\">Close</a> <var>stream</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Let <var>error</var> be the following steps given <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#summarization-error-information\" id=\"ref-for-summarization-error-information①\">summarization error information</a> <var>errorInfo</var>:",
+              "rationale": "queue",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①②\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source①②\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①④\">relevant global object</a> to perform the following steps:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>abortedDuringSummarization</var> is true, then:",
+                      "rationale": "error",
+                      "steps": [
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error④\">Error</a> <var>stream</var> with <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal①④\">signal</a></code>\"]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①①\">abort reason</a>.</p>"
+                        },
+                        {
+                          "html": "<p>Abort these steps.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed⑥\">destroyed</a> is true, then:",
+                      "rationale": "error",
+                      "steps": [
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error⑤\">Error</a> <var>stream</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason⑦\">destruction reason</a>.</p>"
+                        },
+                        {
+                          "html": "<p>Abort these steps.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>Let <var>exception</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception①\">creating</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪\">DOMException</a></code> with name given by <var>errorInfo</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#summarization-error-information-error-name\" id=\"ref-for-summarization-error-information-error-name①\">error name</a>, using <var>errorInfo</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#summarization-error-information-error-information\" id=\"ref-for-summarization-error-information-error-information①\">error information</a> to populate the message appropriately.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error⑥\">Error</a> <var>stream</var> with <var>exception</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Let <var>stopProducing</var> be the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If any of <var>abortedDuringSummarization</var>, <var>canceledDuringSummarization</var>, or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤④\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed⑦\">destroyed</a> are true, then return true.</p>"
+                },
+                {
+                  "html": "<p>Return false.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#summarize\" id=\"ref-for-summarize①\">Summarize</a> <var>input</var> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-shared-context\" id=\"ref-for-aisummarizer-shared-context③\">shared context</a>, <var>context</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-summary-type\" id=\"ref-for-aisummarizer-summary-type③\">summary type</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-summary-format\" id=\"ref-for-aisummarizer-summary-format③\">summary format</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-summary-length\" id=\"ref-for-aisummarizer-summary-length③\">summary length</a>, <var>chunkProduced</var>, <var>done</var>, <var>error</var>, and <var>stopProducing</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>stream</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "summarize",
+      "href": "https://wicg.github.io/writing-assistance-apis/#summarize",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"summarize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">summarize</dfn> a string <var>input</var>, given a string-or-null <var>sharedContext</var>, a string-or-null <var>context</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#enumdef-aisummarizertype\" id=\"ref-for-enumdef-aisummarizertype⑦\">AISummarizerType</a></code> <var>type</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#enumdef-aisummarizerformat\" id=\"ref-for-enumdef-aisummarizerformat⑦\">AISummarizerFormat</a></code> <var>format</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#enumdef-aisummarizerlength\" id=\"ref-for-enumdef-aisummarizerlength⑦\">AISummarizerLength</a></code> <var>length</var>, an algorithm <var>chunkProduced</var> that takes a string and returns nothing, an algorithm <var>done</var> that takes no arguments and returns nothing, an algorithm <var>error</var> that takes <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#summarization-error-information\" id=\"ref-for-summarization-error-information②\">summarization error information</a> and returns nothing, and an algorithm <var>stopProducing</var> that takes no arguments and returns a boolean:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⓪\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①④\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①①\">Assert</a>: the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#current-summarizer-create-options-availability\" id=\"ref-for-current-summarizer-create-options-availability④\">current summarizer create options availability</a> given <var>type</var>, <var>format</var>, and <var>length</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-readily\" id=\"ref-for-dom-aicapabilityavailability-readily⑤\">readily</a></code>\".</p>"
+        },
+        {
+          "html": "<p>In an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> manner, subject to the following guidelines, begin the processs of summarizing <var>input</var> into a string.</p>\n      <p>If they are non-null, <var>sharedContext</var> and <var>context</var> should be used to aid in the summarization by providing context on how the web developer wishes the input to be summarized.</p>\n      <p>The summarization should conform to the guidance given by <var>type</var>, <var>format</var>, and <var>length</var>, in the definitions of each of their enumeration values.</p>"
+        },
+        {
+          "html": "While true:",
+          "rationale": "wait",
+          "steps": [
+            {
+              "html": "<p>Wait for the next chunk of summarization data to be produced, for the summarization process to finish, or for the result of calling <var>stopProducing</var> to become true.</p>"
+            },
+            {
+              "html": "If such a chunk is successfully produced:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let it be represented as a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a> <var>chunk</var>.</p>"
+                },
+                {
+                  "html": "<p>Perform <var>chunkProduced</var> given <var>chunk</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, if the summarization process has finished:",
+              "rationale": "perform",
+              "steps": [
+                {
+                  "html": "<p>Perform <var>done</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break①\">Break</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Otherwise, if <var>stopProducing</var> returns true, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break②\">break</a>.</p>"
+            },
+            {
+              "html": "Otherwise, if an error occurred during summarization:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let the error be represented as <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#summarization-error-information\" id=\"ref-for-summarization-error-information③\">summarization error information</a> <var>errorInfo</var> according to the guidance in <a href=\"https://wicg.github.io/writing-assistance-apis/#summarizer-errors\">§ 3.5 Errors</a>.</p>"
+                },
+                {
+                  "html": "<p>Perform <var>error</var> given <var>errorInfo</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break③\">Break</a>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AISummarizer/destroy",
+      "href": "https://wicg.github.io/writing-assistance-apis/#aisummarizer-destroy",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"AISummarizer\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"aisummarizer-destroy\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">destroy</dfn> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer\" id=\"ref-for-aisummarizer①⓪\">AISummarizer</a></code> <var>summarizer</var>, given a JavaScript value <var>reason</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>summarizer</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed⑧\">destroyed</a> to true.</p>"
+        },
+        {
+          "html": "<p>Set <var>summarizer</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason⑧\">destruction reason</a> to <var>reason</var>.</p>"
+        },
+        {
+          "html": "<p>The user agent should release any resources associated with <var>summarizer</var>, such as AI models loaded during <a data-link-type=\"dfn\" href=\"https://wicg.github.io/writing-assistance-apis/#initialize-the-summarization-model\" id=\"ref-for-initialize-the-summarization-model②\">initialize the summarization model</a>, as long as those resources are not needed for other ongoing operations.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The guidance is dependent on the value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#enumdef-aisummarizertype\" id=\"ref-for-enumdef-aisummarizertype①⓪\">AISummarizerType</a></code>:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "\"tl;dr\"",
+              "html": "<p>The summary should fit within 1 sentence.</p>"
+            },
+            {
+              "case": "\"teaser\"",
+              "html": "<p>The summary should fit within 1 sentence.</p>"
+            },
+            {
+              "case": "\"key-points\"",
+              "html": "<p>The summary should consist of no more than 3 bullet points.</p>"
+            },
+            {
+              "case": "\"headline\"",
+              "html": "<p>The summary should use no more than 12 words.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The guidance is dependent on the value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#enumdef-aisummarizertype\" id=\"ref-for-enumdef-aisummarizertype①①\">AISummarizerType</a></code>:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "\"tl;dr\"",
+              "html": "<p>The summary should fit within 1 short paragraph.</p>"
+            },
+            {
+              "case": "\"teaser\"",
+              "html": "<p>The summary should fit within 1 short paragraph.</p>"
+            },
+            {
+              "case": "\"key-points\"",
+              "html": "<p>The summary should consist of no more than 5 bullet points.</p>"
+            },
+            {
+              "case": "\"headline\"",
+              "html": "<p>The summary should use no more than 17 words.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The guidance is dependent on the value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/writing-assistance-apis/#enumdef-aisummarizertype\" id=\"ref-for-enumdef-aisummarizertype①②\">AISummarizerType</a></code>:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "\"tl;dr\"",
+              "html": "<p>The summary should fit within 1 paragraph.</p>"
+            },
+            {
+              "case": "\"teaser\"",
+              "html": "<p>The summary should fit within 1 paragraph.</p>"
+            },
+            {
+              "case": "\"key-points\"",
+              "html": "<p>The summary should consist of no more than 7 bullet points.</p>"
+            },
+            {
+              "case": "\"headline\"",
+              "html": "<p>The summary should use no more than 22 words.</p>"
+            }
+          ]
         }
       ]
     }
