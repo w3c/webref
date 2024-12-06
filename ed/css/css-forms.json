@@ -5,13 +5,33 @@
   },
   "properties": [],
   "atrules": [],
-  "selectors": [],
-  "values": [],
-  "warnings": [
+  "selectors": [
     {
-      "msg": "Missing definition",
       "name": "::picker()",
+      "prose": "The ::picker() pseudo-element targets the popup picker of form control elements which have popup pickers, such as the select element. It is an element-backed pseudo-element.",
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-picker",
       "value": "::picker( <ident>+ )"
+    },
+    {
+      "name": "::slider-thumb",
+      "prose": "The ::slider-thumb pseudo-element represents the portion that allows the user to adjust the progress of the control. That portion may be omitted for controls where the progress is not adjustable. Disabled controls should provide this portion if the enabled state allows adjusting the progress.",
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-slider-thumb"
+    },
+    {
+      "name": "::slider-track",
+      "prose": "The ::slider-track pseudo-element represents the portion containing both the progressed and unprogressed portions of the control.",
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-slider-track"
+    },
+    {
+      "name": "::slider-fill",
+      "prose": "The ::slider-fill pseudo-element represents the portion containing the progressed portion of the control. When the progress of control is undetermined (like with <progress indeterminate>), the user agent is expected to give this portion an inline-size of zero.",
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-slider-fill"
+    },
+    {
+      "name": "::slider-options-track",
+      "prose": "The ::slider-options-track pseudo-element represents the portion containing the options. It is expected to render at the same width as ::slider-track and underneath it in the block direction. With `appearance: auto`, the user agent may draw tickmarks corresponding to the options given by the associated ` `.",
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-slider-options-track"
     }
-  ]
+  ],
+  "values": []
 }
