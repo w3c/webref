@@ -1040,6 +1040,63 @@
       "definedIn": "pre"
     },
     {
+      "id": "grammardef-report-sha256",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-report-sha256",
+      "linkingText": [
+        "'report-sha256'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-report-sha384",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-report-sha384",
+      "linkingText": [
+        "'report-sha384'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-report-sha512",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-report-sha512",
+      "linkingText": [
+        "'report-sha512'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "grammardef-nonce-source",
       "href": "https://w3c.github.io/webappsec-csp/#grammardef-nonce-source",
       "linkingText": [
@@ -1499,6 +1556,25 @@
         "href": "https://w3c.github.io/webappsec-csp/#should-block-response",
         "title": "Should response to request be blocked by Content Security Policy?",
         "number": "4.1.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "potentially-report-hash",
+      "href": "https://w3c.github.io/webappsec-csp/#potentially-report-hash",
+      "linkingText": [
+        "Potentially report hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "potentially-report-hash",
+        "href": "https://w3c.github.io/webappsec-csp/#potentially-report-hash",
+        "title": "Potentially report hash",
+        "number": "4.1.4"
       },
       "definedIn": "heading"
     },
@@ -1983,6 +2059,149 @@
         "number": "5"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "csp-hash-report",
+      "href": "https://w3c.github.io/webappsec-csp/#csp-hash-report",
+      "linkingText": [
+        "csp hash report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "csp-hash-report-body",
+      "href": "https://w3c.github.io/webappsec-csp/#csp-hash-report-body",
+      "linkingText": [
+        "csp hash report body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "csp-hash-report-body-documenturl",
+      "href": "https://w3c.github.io/webappsec-csp/#csp-hash-report-body-documenturl",
+      "linkingText": [
+        "documentURL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "csp hash report body"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "csp-hash-report-body-subresourceurl",
+      "href": "https://w3c.github.io/webappsec-csp/#csp-hash-report-body-subresourceurl",
+      "linkingText": [
+        "subresourceURL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "csp hash report body"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "csp-hash-report-body-hash",
+      "href": "https://w3c.github.io/webappsec-csp/#csp-hash-report-body-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "csp hash report body"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "csp-hash-report-body-destination",
+      "href": "https://w3c.github.io/webappsec-csp/#csp-hash-report-body-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "csp hash report body"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "csp-hash-report-body-type",
+      "href": "https://w3c.github.io/webappsec-csp/#csp-hash-report-body-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "csp hash report body"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "enumdef-securitypolicyviolationeventdisposition",
