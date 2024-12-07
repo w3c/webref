@@ -5510,6 +5510,48 @@
       "definedIn": "dt"
     },
     {
+      "id": "signal-base-value-cumulative-buyer-time",
+      "href": "https://wicg.github.io/turtledove/#signal-base-value-cumulative-buyer-time",
+      "linkingText": [
+        "cumulative-buyer-time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signal base value"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "signal-base-value",
+        "href": "https://wicg.github.io/turtledove/#signal-base-value",
+        "title": "Signal base value",
+        "number": "5.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "signal-base-value-percent-igs-cumulative-timeout",
+      "href": "https://wicg.github.io/turtledove/#signal-base-value-percent-igs-cumulative-timeout",
+      "linkingText": [
+        "percent-igs-cumulative-timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signal base value"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "signal-base-value",
+        "href": "https://wicg.github.io/turtledove/#signal-base-value",
+        "title": "Signal base value",
+        "number": "5.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "on-event-contribution-entry",
       "href": "https://wicg.github.io/turtledove/#on-event-contribution-entry",
       "linkingText": [
@@ -6038,6 +6080,48 @@
       "definedIn": "dt"
     },
     {
+      "id": "per-participant-metrics-cumulative-timeouts-occurred",
+      "href": "https://wicg.github.io/turtledove/#per-participant-metrics-cumulative-timeouts-occurred",
+      "linkingText": [
+        "cumulative timeouts occurred"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "per participant metrics"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "private-aggregation-metrics-structures",
+        "href": "https://wicg.github.io/turtledove/#private-aggregation-metrics-structures",
+        "title": "Metrics structures",
+        "number": "5.4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "per-participant-metrics-cumulative-buyer-time",
+      "href": "https://wicg.github.io/turtledove/#per-participant-metrics-cumulative-buyer-time",
+      "linkingText": [
+        "cumulative buyer time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "per participant metrics"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "private-aggregation-metrics-structures",
+        "href": "https://wicg.github.io/turtledove/#private-aggregation-metrics-structures",
+        "title": "Metrics structures",
+        "number": "5.4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "per-participant-metrics-script-executions-attempted",
       "href": "https://wicg.github.io/turtledove/#per-participant-metrics-script-executions-attempted",
       "linkingText": [
@@ -6354,6 +6438,25 @@
       "href": "https://wicg.github.io/turtledove/#update-storage-metrics",
       "linkingText": [
         "update storage metrics"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "private-aggregation-algorithms",
+        "href": "https://wicg.github.io/turtledove/#private-aggregation-algorithms",
+        "title": "Algorithms",
+        "number": "5.4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "update-cumulative-buyer-time-metrics",
+      "href": "https://wicg.github.io/turtledove/#update-cumulative-buyer-time-metrics",
+      "linkingText": [
+        "update cumulative buyer time metrics"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -16602,6 +16705,145 @@
         "number": "14.14"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "cumulative-timeout-tracker",
+      "href": "https://wicg.github.io/turtledove/#cumulative-timeout-tracker",
+      "linkingText": [
+        "cumulative timeout tracker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cumul-timeout-tracker",
+        "href": "https://wicg.github.io/turtledove/#cumul-timeout-tracker",
+        "title": "Cumulative timeout tracker",
+        "number": "14.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cumulative-timeout-tracker-remaining",
+      "href": "https://wicg.github.io/turtledove/#cumulative-timeout-tracker-remaining",
+      "linkingText": [
+        "remaining"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cumulative timeout tracker"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cumul-timeout-tracker",
+        "href": "https://wicg.github.io/turtledove/#cumul-timeout-tracker",
+        "title": "Cumulative timeout tracker",
+        "number": "14.15"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "cumulative-timeout-tracker-limit",
+      "href": "https://wicg.github.io/turtledove/#cumulative-timeout-tracker-limit",
+      "linkingText": [
+        "limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cumulative timeout tracker"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cumul-timeout-tracker",
+        "href": "https://wicg.github.io/turtledove/#cumul-timeout-tracker",
+        "title": "Cumulative timeout tracker",
+        "number": "14.15"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "create-a-cumulative-timeout-tracker",
+      "href": "https://wicg.github.io/turtledove/#create-a-cumulative-timeout-tracker",
+      "linkingText": [
+        "create a cumulative timeout tracker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cumul-timeout-tracker",
+        "href": "https://wicg.github.io/turtledove/#cumul-timeout-tracker",
+        "title": "Cumulative timeout tracker",
+        "number": "14.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "expend-cumulative-timeout-time",
+      "href": "https://wicg.github.io/turtledove/#expend-cumulative-timeout-time",
+      "linkingText": [
+        "expend cumulative timeout time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cumul-timeout-tracker",
+        "href": "https://wicg.github.io/turtledove/#cumul-timeout-tracker",
+        "title": "Cumulative timeout tracker",
+        "number": "14.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-effective-timeout",
+      "href": "https://wicg.github.io/turtledove/#compute-effective-timeout",
+      "linkingText": [
+        "compute effective timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cumul-timeout-tracker",
+        "href": "https://wicg.github.io/turtledove/#cumul-timeout-tracker",
+        "title": "Cumulative timeout tracker",
+        "number": "14.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cumulative-timeout-tracker-is-expired",
+      "href": "https://wicg.github.io/turtledove/#cumulative-timeout-tracker-is-expired",
+      "linkingText": [
+        "is expired"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cumulative timeout tracker"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cumul-timeout-tracker",
+        "href": "https://wicg.github.io/turtledove/#cumul-timeout-tracker",
+        "title": "Cumulative timeout tracker",
+        "number": "14.15"
+      },
+      "definedIn": "prose"
     }
   ]
 }
