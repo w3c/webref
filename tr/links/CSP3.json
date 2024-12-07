@@ -95,6 +95,8 @@
         "anchors": [
           "document",
           "element",
+          "concept-document",
+          "concept-document-url",
           "event",
           "dictdef-eventinit",
           "concept-shadow-including-root",
@@ -128,12 +130,14 @@
           "concept-network-error",
           "concept-main-fetch",
           "concept-request-policy-container",
+          "concept-response-body",
+          "concept-request-destination",
           "concept-request-nonce-metadata",
           "concept-request-parser-metadata",
+          "request-destination-script-like",
           "concept-request-method",
           "concept-request-origin",
           "concept-request-window",
-          "concept-request-destination",
           "concept-request-initiator",
           "concept-request-credentials-mode",
           "request-keepalive-flag",
@@ -142,7 +146,6 @@
           "concept-request-redirect-mode",
           "concept-request-mode",
           "concept-fetch",
-          "request-destination-script-like",
           "is-local",
           "concept-request-integrity-metadata",
           "concept-request-redirect-count"
@@ -268,6 +271,7 @@
       },
       "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
         "anchors": [
+          "cors-same-origin",
           "attr-nonce"
         ]
       },
@@ -317,8 +321,11 @@
           "set-append",
           "list-is-empty",
           "ascii-case-insensitive",
+          "list-append",
+          "string-concatenate",
           "list-size",
           "the-range",
+          "struct",
           "ordered-map",
           "serialize-an-infra-value-to-json-bytes",
           "string-is",
@@ -390,6 +397,11 @@
           "visible-to-reportingobservers"
         ]
       },
+      "https://w3c.github.io/webappsec-subresource-integrity": {
+        "anchors": [
+          "apply-algorithm-to-response"
+        ]
+      },
       "https://webassembly.github.io/content-security-policy/js-api/": {
         "anchors": [
           "host-ensure-can-compile-wasm-bytes"
@@ -438,8 +450,8 @@
       },
       "https://www.w3.org/TR/reporting-1/": {
         "anchors": [
-          "reportbody",
           "generate-and-queue-a-report",
+          "reportbody",
           "endpoint"
         ]
       },

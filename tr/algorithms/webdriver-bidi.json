@@ -1423,23 +1423,6 @@
       ]
     },
     {
-      "name": "get the parent navigable",
-      "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-parent-navigable",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-parent-navigable\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the parent navigable</dfn> given <var>navigable</var>:",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>Let <var>parent navigable</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-parent\" id=\"ref-for-nav-parent①\">parent</a>.</p>"
-        },
-        {
-          "html": "<p>If <var>parent navigable</var> is null, then return null.</p>"
-        },
-        {
-          "html": "<p>Return <var>parent navigable</var>.</p>"
-        }
-      ]
-    },
-    {
       "name": "get the child navigables",
       "href": "https://www.w3.org/TR/webdriver-bidi/#get-the-child-navigables",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-child-navigables\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the child navigables</dfn> given <var>navigable</var>: \n    <p>TODO: make this return a list in document order</p>",
@@ -1463,7 +1446,7 @@
           "html": "<p>Let <var>navigable id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id②\">navigable id</a> for <var>navigable</var>.</p>"
         },
         {
-          "html": "<p>Let <var>navigable</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-the-parent-navigable\" id=\"ref-for-get-the-parent-navigable\">get the parent navigable</a> given <var>navigable</var>.</p>"
+          "html": "<p>Let <var>navigable</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-parent\" id=\"ref-for-nav-parent①\">parent</a>.</p>"
         },
         {
           "html": "<p>If <var>navigable</var> is not null let <var>parent id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id③\">navigable id</a> of <var>navigable</var>. Otherwise let <var>parent id</var> be null.</p>"
@@ -2938,7 +2921,7 @@
           "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⑤\">map</a> matching the <code>browsingContext.ContextDestroyed</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
         },
         {
-          "html": "<p>Let <var>related navigables</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①⑨\">set</a> containing the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-the-parent-navigable\" id=\"ref-for-get-the-parent-navigable①\">get the parent navigable</a> with <var>navigable</var>, if that is not\n null, or an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②⓪\">set</a> otherwise.</p>"
+          "html": "<p>Let <var>related navigables</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①⑨\">set</a> containing <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-parent\" id=\"ref-for-nav-parent②\">parent</a>,\n if that is not null, or an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②⓪\">set</a> otherwise.</p>"
         },
         {
           "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled①\">set of sessions for which an event is enabled</a> given \"<code>browsingContext.contextDestroyed</code>\" and <var>related navigables</var>:",
