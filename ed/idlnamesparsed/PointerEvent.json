@@ -4,7 +4,7 @@
   "defined": {
     "spec": {
       "title": "Pointer Events",
-      "url": "https://www.w3.org/TR/pointerevents3/"
+      "url": "https://www.w3.org/TR/pointerevents4/"
     },
     "fragment": "[Exposed=Window]\ninterface PointerEvent : MouseEvent {\n    constructor(DOMString type, optional PointerEventInit eventInitDict = {});\n    readonly        attribute long        pointerId;\n    readonly        attribute double      width;\n    readonly        attribute double      height;\n    readonly        attribute float       pressure;\n    readonly        attribute float       tangentialPressure;\n    readonly        attribute long        tiltX;\n    readonly        attribute long        tiltY;\n    readonly        attribute long        twist;\n    readonly        attribute double      altitudeAngle;\n    readonly        attribute double      azimuthAngle;\n    readonly        attribute DOMString   pointerType;\n    readonly        attribute boolean     isPrimary;\n    readonly        attribute long        persistentDeviceId;\n    [SecureContext] sequence<PointerEvent> getCoalescedEvents();\n    sequence<PointerEvent> getPredictedEvents();\n};",
     "href": "https://w3c.github.io/pointerevents/#dom-pointerevent"
