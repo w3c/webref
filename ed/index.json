@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-12-09T06:46:34.761Z",
+  "date": "2024-12-09T12:51:06.095Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -30,7 +30,7 @@
   },
   "stats": {
     "crawled": 646,
-    "errors": 1
+    "errors": 2
   },
   "crawler": "reffy-18.0.0",
   "results": [
@@ -681,9 +681,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 08 Dec 2024 16:14:55 GMT"
+        "lastModified": "Mon, 09 Dec 2024 11:35:38 GMT"
       },
-      "date": "8 December 2024",
+      "date": "9 December 2024",
       "algorithms": "algorithms/no-vary-search.json",
       "links": "links/no-vary-search.json",
       "refs": "refs/no-vary-search.json",
@@ -729,9 +729,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 08 Dec 2024 16:14:55 GMT"
+        "lastModified": "Mon, 09 Dec 2024 11:35:38 GMT"
       },
-      "date": "8 December 2024",
+      "date": "9 December 2024",
       "algorithms": "algorithms/rfc6265bis.json",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
@@ -2381,11 +2381,11 @@
       ],
       "crawled": "https://fetch.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 05 Nov 2024 08:56:28 GMT"
+        "lastModified": "Mon, 09 Dec 2024 07:50:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "5 November 2024",
-      "revision": "bdb452ef7847a6c394e6914ba13675537eea2180",
+      "date": "9 December 2024",
+      "revision": "0ce45ae44008a91209ead87ff1354cf0c42ce6bd",
       "algorithms": "algorithms/fetch.json",
       "links": "links/fetch.json",
       "refs": "refs/fetch.json",
@@ -2695,9 +2695,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 06 Dec 2024 16:14:37 GMT"
+        "lastModified": "Mon, 09 Dec 2024 07:45:56 GMT"
       },
-      "date": "6 December 2024",
+      "date": "9 December 2024",
       "algorithms": "algorithms/html.json",
       "links": "links/html.json",
       "refs": "refs/html.json",
@@ -8818,11 +8818,11 @@
       ],
       "crawled": "https://webassembly.github.io/function-references/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 04 Sep 2024 08:56:14 GMT"
+        "lastModified": "Mon, 09 Dec 2024 10:44:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "4 September 2024",
-      "revision": "abcd6d1aa8f85864a1e35dfe76de1708fd14f0a8",
+      "date": "9 December 2024",
+      "revision": "74d2ec81d15efd3c0f2fba46a023f376101d8e46",
       "algorithms": "algorithms/wasm-core-2-fork-function-references.json",
       "links": "links/wasm-core-2-fork-function-references.json",
       "refs": "refs/wasm-core-2-fork-function-references.json",
@@ -8873,11 +8873,11 @@
       ],
       "crawled": "https://webassembly.github.io/gc/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 08:15:15 GMT"
+        "lastModified": "Mon, 09 Dec 2024 10:46:12 GMT"
       },
       "generator": "bikeshed",
-      "date": "31 October 2024",
-      "revision": "88463e822fafdf80f33b9eb84f0c489bd5940cf5",
+      "date": "9 December 2024",
+      "revision": "756060f5816c7e2159f4817fbdee76cf52f9c923",
       "algorithms": "algorithms/wasm-core-2-fork-gc.json",
       "links": "links/wasm-core-2-fork-gc.json",
       "refs": "refs/wasm-core-2-fork-gc.json",
@@ -14044,7 +14044,8 @@
       "refs": "refs/writing-assistance-apis.json",
       "dfns": "dfns/writing-assistance-apis.json",
       "headings": "headings/writing-assistance-apis.json",
-      "ids": "ids/writing-assistance-apis.json"
+      "ids": "ids/writing-assistance-apis.json",
+      "error": "Error: Loading https://wicg.github.io/writing-assistance-apis/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:352:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 261)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:373:21)"
     },
     {
       "url": "https://www.iso.org/standard/54989.html",
@@ -27939,10 +27940,10 @@
       ],
       "crawled": "https://w3c.github.io/mediacapture-main/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 05 Dec 2024 15:25:39 GMT"
+        "lastModified": "Mon, 09 Dec 2024 10:48:18 GMT"
       },
       "generator": "respec",
-      "date": "05 December 2024",
+      "date": "09 December 2024",
       "algorithms": "algorithms/mediacapture-streams.json",
       "links": "links/mediacapture-streams.json",
       "refs": "refs/mediacapture-streams.json",
@@ -33905,10 +33906,10 @@
       ],
       "crawled": "https://w3c.github.io/aria/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 28 Oct 2024 16:15:17 GMT"
+        "lastModified": "Mon, 09 Dec 2024 08:49:35 GMT"
       },
       "generator": "respec",
-      "date": "28 October 2024",
+      "date": "09 December 2024",
       "algorithms": "algorithms/wai-aria-1.2.json",
       "links": "links/wai-aria-1.2.json",
       "refs": "refs/wai-aria-1.2.json",
@@ -33969,10 +33970,10 @@
       ],
       "crawled": "https://w3c.github.io/aria/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 28 Oct 2024 16:15:17 GMT"
+        "lastModified": "Mon, 09 Dec 2024 08:49:35 GMT"
       },
       "generator": "respec",
-      "date": "28 October 2024",
+      "date": "09 December 2024",
       "algorithms": "algorithms/wai-aria-1.3.json",
       "links": "links/wai-aria-1.3.json",
       "refs": "refs/wai-aria-1.3.json",
