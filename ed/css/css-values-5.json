@@ -468,12 +468,13 @@
       "name": "<if()>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-if",
       "type": "type",
-      "value": "if( [ <if-condition> : <declaration-value>? ; ]* <if-condition> : <declaration-value>? ';'? )"
+      "value": "if( [ <if-condition> : <declaration-value>? ; ]* <if-condition> : <declaration-value>? ;? )"
     },
     {
       "name": "<if-condition>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-if-condition",
-      "type": "type"
+      "type": "type",
+      "value": "<boolean-expr[ <if-test> ]> | else"
     },
     {
       "name": "<if-test>",
