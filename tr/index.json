@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-12-09T01:35:11.591Z",
+  "date": "2024-12-10T01:51:51.861Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -136,6 +136,7 @@
       "tc39-import-attributes",
       "tc39-intl-duration-format",
       "tc39-intl-locale-info",
+      "tc39-is-error",
       "tc39-iterator-helpers",
       "tc39-json-modules",
       "tc39-json-parse-with-source",
@@ -528,6 +529,7 @@
       "picture-in-picture",
       "png-3",
       "pointerevents3",
+      "pointerevents4",
       "pointerlock-2",
       "presentation-api",
       "proximity",
@@ -668,10 +670,10 @@
     ]
   },
   "stats": {
-    "crawled": 336,
+    "crawled": 337,
     "errors": 0
   },
-  "crawler": "reffy-18.0.0",
+  "crawler": "reffy-18.0.1",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -717,7 +719,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "9 December 2024",
+      "date": "10 December 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -9719,7 +9721,7 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-initdata-registry/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:39:25 GMT"
+        "lastModified": "Fri, 12 Jul 2024 12:26:24 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
@@ -9882,7 +9884,7 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-stream-registry/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:46:58 GMT"
+        "lastModified": "Fri, 12 Jul 2024 12:26:24 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
@@ -14814,13 +14816,14 @@
       "shortname": "pointerevents3",
       "series": {
         "shortname": "pointerevents",
-        "currentSpecification": "pointerevents3",
+        "currentSpecification": "pointerevents4",
         "title": "Pointer Events",
         "shortTitle": "Pointer Events",
         "releaseUrl": "https://www.w3.org/TR/pointerevents/",
         "nightlyUrl": "https://w3c.github.io/pointerevents/"
       },
       "seriesVersion": "3",
+      "seriesNext": "pointerevents4",
       "organization": "W3C",
       "groups": [
         {
@@ -14869,10 +14872,76 @@
       "links": "links/pointerevents3.json",
       "refs": "refs/pointerevents3.json",
       "events": "events/pointerevents3.json",
-      "idl": "idl/pointerevents.idl",
       "dfns": "dfns/pointerevents3.json",
       "headings": "headings/pointerevents3.json",
       "ids": "ids/pointerevents3.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/pointerevents4/",
+      "seriesComposition": "full",
+      "shortname": "pointerevents4",
+      "series": {
+        "shortname": "pointerevents",
+        "currentSpecification": "pointerevents4",
+        "title": "Pointer Events",
+        "shortTitle": "Pointer Events",
+        "releaseUrl": "https://www.w3.org/TR/pointerevents/",
+        "nightlyUrl": "https://w3c.github.io/pointerevents/"
+      },
+      "seriesVersion": "4",
+      "seriesPrevious": "pointerevents3",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Pointer Events Working Group",
+          "url": "https://www.w3.org/groups/wg/pointer-events/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/pointerevents4/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/pointerevents/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/pointerevents",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Pointer Events",
+      "source": "w3c",
+      "shortTitle": "Pointer Events",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "pointerevents"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/pointerevents4/",
+        "https://w3c.github.io/pointerevents/"
+      ],
+      "crawled": "https://www.w3.org/TR/pointerevents4/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 29 Nov 2024 22:12:58 GMT"
+      },
+      "generator": "respec",
+      "date": "29 November 2024",
+      "revision": "ec76bec68850941c88dd48d1bc5652f87bb3780b",
+      "algorithms": "algorithms/pointerevents4.json",
+      "links": "links/pointerevents4.json",
+      "refs": "refs/pointerevents4.json",
+      "events": "events/pointerevents4.json",
+      "idl": "idl/pointerevents.idl",
+      "dfns": "dfns/pointerevents4.json",
+      "headings": "headings/pointerevents4.json",
+      "ids": "ids/pointerevents4.json"
     },
     {
       "url": "https://www.w3.org/TR/pointerlock-2/",
@@ -16745,7 +16814,7 @@
       "groups": [
         {
           "name": "Service Workers Working Group",
-          "url": "https://www.w3.org/sw/"
+          "url": "https://www.w3.org/groups/wg/service-workers/"
         }
       ],
       "release": {
@@ -18513,7 +18582,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vibration/",
-        "status": "Recommendation",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -20411,7 +20480,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/webdriver-bidi/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {

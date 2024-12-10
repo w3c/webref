@@ -1,7 +1,7 @@
 // GENERATED CONTENT - DO NOT EDIT
 // Content was automatically extracted by Reffy into webref
 // (https://github.com/w3c/webref)
-// Source: Pointer Events (https://www.w3.org/TR/pointerevents3/)
+// Source: Pointer Events (https://www.w3.org/TR/pointerevents4/)
 
 dictionary PointerEventInit : MouseEventInit {
     long        pointerId = 0;
@@ -16,6 +16,7 @@ dictionary PointerEventInit : MouseEventInit {
     double      azimuthAngle;
     DOMString   pointerType = "";
     boolean     isPrimary = false;
+    long        persistentDeviceId = 0;
     sequence<PointerEvent> coalescedEvents = [];
     sequence<PointerEvent> predictedEvents = [];
 };
@@ -35,6 +36,7 @@ interface PointerEvent : MouseEvent {
     readonly        attribute double      azimuthAngle;
     readonly        attribute DOMString   pointerType;
     readonly        attribute boolean     isPrimary;
+    readonly        attribute long        persistentDeviceId;
     [SecureContext] sequence<PointerEvent> getCoalescedEvents();
     sequence<PointerEvent> getPredictedEvents();
 };
