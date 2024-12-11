@@ -99,21 +99,21 @@
           "type": "type"
         },
         {
-          "name": "<by-to>",
-          "value": "by | to",
-          "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-by-to",
+          "name": "<command-end-point>",
+          "value": "[ to <position> | by <coordinate-pair> ]",
+          "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-command-end-point",
           "type": "type",
           "values": [
             {
               "name": "by",
-              "prose": "<by-to> = by | to",
+              "prose": "<command-end-point> = [ by <position> | to <coordinate-pair> ]",
               "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-by",
               "type": "value",
               "value": "by"
             },
             {
               "name": "to",
-              "prose": "<by-to> = by | to",
+              "prose": "<command-end-point> = [ by <position> | to <coordinate-pair> ]",
               "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-to",
               "type": "value",
               "value": "to"
@@ -122,79 +122,83 @@
         },
         {
           "name": "<move-command>",
-          "value": "move <by-to> <coordinate-pair>",
+          "value": "move <command-end-point>",
           "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-move-command",
           "type": "type"
         },
         {
           "name": "move",
-          "prose": "<move-command> = move <by-to> <coordinate-pair>",
+          "prose": "<move-command> = move <command-end-point>",
           "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-move",
           "type": "value",
           "value": "move"
         },
         {
           "name": "<line-command>",
-          "value": "line <by-to> <coordinate-pair>",
+          "value": "line <command-end-point>",
           "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-line-command",
           "type": "type"
         },
         {
           "name": "line",
-          "prose": "<line-command> = line <by-to> <coordinate-pair>",
+          "prose": "<line-command> = line <command-end-point>",
           "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-line",
           "type": "value",
           "value": "line"
         },
         {
-          "name": "<hv-line-command>",
-          "value": "[hline | vline] <by-to> <length-percentage>",
-          "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-hv-line-command",
+          "name": "<horizontal-line-command>",
+          "value": "hline [ to [ <length-percentage> | left | center | right | x-start | x-end ] | by <length-percentage> ]",
+          "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-horizontal-line-command",
           "type": "type"
         },
         {
-          "name": "hline",
-          "prose": "<hv-line-command> = [hline | vline] <by-to> <length-percentage>",
-          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-hline",
-          "type": "value",
-          "value": "hline"
-        },
-        {
-          "name": "vline",
-          "prose": "<hv-line-command> = [hline | vline] <by-to> <length-percentage>",
-          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-vline",
-          "type": "value",
-          "value": "vline"
+          "name": "<vertical-line-command>",
+          "value": "vline [ to [ <length-percentage> | top | center | bottom | y-start | y-end ] | by <length-percentage> ]",
+          "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-vertical-line-command",
+          "type": "type"
         },
         {
           "name": "<curve-command>",
-          "value": "curve [<by-to> <coordinate-pair> using <coordinate-pair>{1,2}]",
+          "value": "curve [ [ to <position> && [ with <control-point> [ / <control-point> ]? ] ] | [ by <coordinate-pair> && [ with <relative-control-point> [ / <relative-control-point> ]? ] ] ]",
           "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-curve-command",
           "type": "type"
         },
         {
           "name": "curve",
-          "prose": "<curve-command> = curve [[<by-to> <coordinate-pair>] || [using <coordinate-pair>{1,2}]]",
+          "prose": "<curve-command> = curve [ [ to <position> && with <control-point> [ / <control-point> ]? ] | [ by <coordinate-pair> && with <relative-control-point> [ / <relative-control-point> ]? ] ]",
           "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-curve",
           "type": "value",
           "value": "curve"
         },
         {
           "name": "<smooth-command>",
-          "value": "smooth [[<by-to> <coordinate-pair>] || [using <coordinate-pair>]?]",
+          "value": "smooth [ [ to <position> && [ with <control-point> ]? ] | [ by <coordinate-pair> && [ with <relative-control-point> ]? ] ]",
           "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-smooth-command",
           "type": "type"
         },
         {
           "name": "smooth",
-          "prose": "<smooth-command> = smooth [[<by-to> <coordinate-pair>] || [using <coordinate-pair>]?]",
+          "prose": "<smooth-command> = smooth [ [ to <position> && [with <control-point> ]? ] | [ by <coordinate-pair> && [ with <relative-control-point> ]? ] ]",
           "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-smooth",
           "type": "value",
           "value": "smooth"
         },
         {
+          "name": "<control-point>",
+          "value": "[ <position> | <relative-control-point> ]",
+          "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-control-point",
+          "type": "type"
+        },
+        {
+          "name": "<relative-control-point>",
+          "value": "<coordinate-pair> [ from [ start | end | origin ] ]?",
+          "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-relative-control-point",
+          "type": "type"
+        },
+        {
           "name": "<arc-command>",
-          "value": "arc [[<by-to> <coordinate-pair>] || [of <length-percentage>{1,2}] || <arc-sweep>? || <arc-size>? || [rotate <angle>]?]",
+          "value": "arc [ <command-end-point> && [ of <coordinate-pair> ] && <arc-sweep>? && <arc-size>? && [rotate <angle>]? ]",
           "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-command",
           "type": "type"
         },
@@ -263,7 +267,7 @@
       "prose": "The sequence of <shape-command>s represent further path data commands. Each command’s starting point is the previous command’s ending point.",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-command",
       "type": "type",
-      "value": "<move-command> | <line-command> | <hv-line-command> | <curve-command> | <smooth-command> | <arc-command> | close"
+      "value": "<move-command> | <line-command> | close | <horizontal-line-command> | <vertical-line-command> | <curve-command> | <smooth-command> | <arc-command>"
     }
   ]
 }
