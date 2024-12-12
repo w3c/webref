@@ -5408,7 +5408,13 @@
           ]
         },
         {
-          "html": "<p>Let <var>instance</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-makebasicobject\" id=\"ref-for-sec-makebasicobject②\">MakeBasicObject</a>(\n« [[Prototype]], [[Extensible]], [[Realm]], [[PrimaryInterface]] »).</p>"
+          "html": "<p>Let <var>slots</var> be « [[Prototype]], [[Extensible]], [[Realm]], [[PrimaryInterface]] ».</p>"
+        },
+        {
+          "html": "<p>If <var>interface</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④①\">DOMException</a></code>, append [[ErrorData]] to <var>slots</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>instance</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-makebasicobject\" id=\"ref-for-sec-makebasicobject②\">MakeBasicObject</a>(<var>slots</var>).</p>"
         },
         {
           "html": "<p>Set <var>instance</var>.[[Realm]] to <var>realm</var>.</p>"
@@ -6912,14 +6918,14 @@
     },
     {
       "name": "to create a DOMException",
-      "html": "To <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑥\">create</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④⑥\">DOMException</a></code> given a string <var>name</var>:",
+      "html": "To <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑥\">create</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④⑦\">DOMException</a></code> given a string <var>name</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p class=\"assertion\">Assert: <var>name</var> appears in the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-error-names-table\" id=\"ref-for-dfn-error-names-table②\"><code>DOMException</code> names table</a>.</p>"
         },
         {
-          "html": "<p>Let <var>ex</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④⑦\">DOMException</a></code> created in the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm③\">current realm</a>.</p>"
+          "html": "<p>Let <var>ex</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④⑧\">DOMException</a></code> created in the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm③\">current realm</a>.</p>"
         },
         {
           "html": "<p>Set <var>ex</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#domexception-name\" id=\"ref-for-domexception-name①⓪\">name</a> to <var>name</var>.</p>"
@@ -6934,7 +6940,7 @@
     },
     {
       "name": "to create a DOMException derived interface",
-      "html": "To <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑦\">create</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④⑧\">DOMException</a></code> derived interface given the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②⑤⓪\">interface</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier①⓪④\">identifier</a> <var>type</var> and additional initialization instructions:",
+      "html": "To <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑦\">create</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④⑨\">DOMException</a></code> derived interface given the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②⑤⓪\">interface</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier①⓪④\">identifier</a> <var>type</var> and additional initialization instructions:",
       "rationale": ".algorithm",
       "steps": [
         {

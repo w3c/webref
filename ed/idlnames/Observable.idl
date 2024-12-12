@@ -4,7 +4,7 @@ interface Observable {
   constructor(SubscribeCallback callback);
   undefined subscribe(optional ObserverUnion observer = {}, optional SubscribeOptions options = {});
 
-  // Constructs a native Observable from value if it’s any of the following:
+  // Constructs a native Observable from value if it's any of the following:
   //   - Observable
   //   - AsyncIterable
   //   - Iterable
