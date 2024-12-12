@@ -6,7 +6,7 @@
       "title": "HTML Sanitizer API",
       "url": "https://wicg.github.io/sanitizer-api/"
     },
-    "fragment": "[Exposed=(Window,Worker)]\ninterface Sanitizer {\n  constructor(optional SanitizerConfig configuration = {});\n\n  // Query configuration:\n  SanitizerConfig get();\n\n  // Modify a Sanitizer’s lists and fields:\n  undefined allowElement(SanitizerElementWithAttributes element);\n  undefined removeElement(SanitizerElement element);\n  undefined replaceElementWithChildren(SanitizerElement element);\n  undefined allowAttribute(SanitizerAttribute attribute);\n  undefined removeAttribute(SanitizerAttribute attribute);\n  undefined setComments(boolean allow);\n  undefined setDataAttributes(boolean allow);\n\n  // Remove markup that executes script. May modify multiple lists:\n  undefined removeUnsafe();\n};",
+    "fragment": "[Exposed=(Window,Worker)]\ninterface Sanitizer {\n  constructor(optional (SanitizerConfig or SanitizerPresets) configuration = \"default\");\n\n  // Query configuration:\n  SanitizerConfig get();\n\n  // Modify a Sanitizer’s lists and fields:\n  undefined allowElement(SanitizerElementWithAttributes element);\n  undefined removeElement(SanitizerElement element);\n  undefined replaceElementWithChildren(SanitizerElement element);\n  undefined allowAttribute(SanitizerAttribute attribute);\n  undefined removeAttribute(SanitizerAttribute attribute);\n  undefined setComments(boolean allow);\n  undefined setDataAttributes(boolean allow);\n\n  // Remove markup that executes script. May modify multiple lists:\n  undefined removeUnsafe();\n};",
     "href": "https://wicg.github.io/sanitizer-api/#sanitizer"
   },
   "extended": [],

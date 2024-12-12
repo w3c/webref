@@ -16,8 +16,22 @@
       "functions": {}
     },
     "idlNames": {
+      "SanitizerPresets": {
+        "fragment": "enum SanitizerPresets { \"default\" };",
+        "type": "enum",
+        "name": "SanitizerPresets",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "default",
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerpresets-default"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://wicg.github.io/sanitizer-api/#enumdef-sanitizerpresets"
+      },
       "SetHTMLOptions": {
-        "fragment": "dictionary SetHTMLOptions {\n  (Sanitizer or SanitizerConfig) sanitizer = {};\n};",
+        "fragment": "dictionary SetHTMLOptions {\n  (Sanitizer or SanitizerConfig or SanitizerPresets) sanitizer = \"default\";\n};",
         "type": "dictionary",
         "name": "SetHTMLOptions",
         "inheritance": null,
@@ -48,11 +62,20 @@
                   "nullable": false,
                   "union": false,
                   "idlType": "SanitizerConfig"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerPresets"
                 }
               ]
             },
             "default": {
-              "type": "dictionary"
+              "type": "string",
+              "value": "default"
             },
             "required": false,
             "href": "https://wicg.github.io/sanitizer-api/#dom-sethtmloptions-sanitizer"
@@ -62,8 +85,62 @@
         "partial": false,
         "href": "https://wicg.github.io/sanitizer-api/#dictdef-sethtmloptions"
       },
+      "SetHTMLUnsafeOptions": {
+        "fragment": "dictionary SetHTMLUnsafeOptions {\n  (Sanitizer or SanitizerConfig or SanitizerPresets) sanitizer = {};\n};",
+        "type": "dictionary",
+        "name": "SetHTMLUnsafeOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "sanitizer",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Sanitizer"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerConfig"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerPresets"
+                }
+              ]
+            },
+            "default": {
+              "type": "dictionary"
+            },
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sethtmlunsafeoptions-sanitizer"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/sanitizer-api/#dictdef-sethtmlunsafeoptions"
+      },
       "Sanitizer": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface Sanitizer {\n  constructor(optional SanitizerConfig configuration = {});\n\n  // Query configuration:\n  SanitizerConfig get();\n\n  // Modify a Sanitizer’s lists and fields:\n  undefined allowElement(SanitizerElementWithAttributes element);\n  undefined removeElement(SanitizerElement element);\n  undefined replaceElementWithChildren(SanitizerElement element);\n  undefined allowAttribute(SanitizerAttribute attribute);\n  undefined removeAttribute(SanitizerAttribute attribute);\n  undefined setComments(boolean allow);\n  undefined setDataAttributes(boolean allow);\n\n  // Remove markup that executes script. May modify multiple lists:\n  undefined removeUnsafe();\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Sanitizer {\n  constructor(optional (SanitizerConfig or SanitizerPresets) configuration = \"default\");\n\n  // Query configuration:\n  SanitizerConfig get();\n\n  // Modify a Sanitizer’s lists and fields:\n  undefined allowElement(SanitizerElementWithAttributes element);\n  undefined removeElement(SanitizerElement element);\n  undefined replaceElementWithChildren(SanitizerElement element);\n  undefined allowAttribute(SanitizerAttribute attribute);\n  undefined removeAttribute(SanitizerAttribute attribute);\n  undefined setComments(boolean allow);\n  undefined setDataAttributes(boolean allow);\n\n  // Remove markup that executes script. May modify multiple lists:\n  undefined removeUnsafe();\n};",
         "type": "interface",
         "name": "Sanitizer",
         "inheritance": null,
@@ -80,11 +157,29 @@
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "SanitizerConfig"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "SanitizerConfig"
+                    },
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "SanitizerPresets"
+                    }
+                  ]
                 },
                 "default": {
-                  "type": "dictionary"
+                  "type": "string",
+                  "value": "default"
                 },
                 "optional": true,
                 "variadic": false
@@ -808,10 +903,17 @@
     "dependencies": {
       "SetHTMLOptions": [
         "Sanitizer",
-        "SanitizerConfig"
+        "SanitizerConfig",
+        "SanitizerPresets"
+      ],
+      "SetHTMLUnsafeOptions": [
+        "Sanitizer",
+        "SanitizerConfig",
+        "SanitizerPresets"
       ],
       "Sanitizer": [
         "SanitizerConfig",
+        "SanitizerPresets",
         "SanitizerElementWithAttributes",
         "SanitizerElement",
         "SanitizerAttribute"

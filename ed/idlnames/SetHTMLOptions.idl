@@ -1,4 +1,4 @@
 // Source: HTML Sanitizer API (https://wicg.github.io/sanitizer-api/)
 dictionary SetHTMLOptions {
-  (Sanitizer or SanitizerConfig) sanitizer = {};
+  (Sanitizer or SanitizerConfig or SanitizerPresets) sanitizer = "default";
 };
