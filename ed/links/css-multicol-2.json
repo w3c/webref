@@ -37,30 +37,59 @@
       "https://developer.mozilla.org/en-US/docs/Web/CSS/columns": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/widows": {},
       "https://drafts.csswg.org/css-align/": {},
+      "https://drafts.csswg.org/css-backgrounds/": {},
+      "https://drafts.csswg.org/css-box-3/": {},
       "https://drafts.csswg.org/css-box-4/": {},
+      "https://drafts.csswg.org/css-break-4/": {},
       "https://drafts.csswg.org/css-break/": {},
-      "https://drafts.csswg.org/css-multicol/": {
-        "anchors": [
-          "column-breaks"
-        ]
-      },
+      "https://drafts.csswg.org/css-color-5/": {},
+      "https://drafts.csswg.org/css-display-4/": {},
+      "https://drafts.csswg.org/css-grid-2/": {},
+      "https://drafts.csswg.org/css-multicol/": {},
       "https://drafts.csswg.org/css-overflow-3/": {},
       "https://drafts.csswg.org/css-overflow-5/": {},
-      "https://drafts.csswg.org/css-regions/": {},
+      "https://drafts.csswg.org/css-position-3/": {},
       "https://drafts.csswg.org/css-scroll-snap-1/": {},
       "https://drafts.csswg.org/css-sizing-3/": {},
+      "https://drafts.csswg.org/css-tables-3/": {},
+      "https://drafts.csswg.org/css-transforms/": {},
+      "https://drafts.csswg.org/css-values-3/": {},
       "https://drafts.csswg.org/css-values-4/": {},
       "https://drafts.csswg.org/css-writing-modes-4/": {},
+      "https://drafts.csswg.org/css2/": {},
+      "https://drafts.csswg.org/mediaqueries-5/": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://github.com/w3c/csswg-drafts/issues/10715": {
+        "anchors": [
+          "issuecomment-2379924982"
+        ]
+      },
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
+      "https://www.w3.org/TR/2024/CR-css-multicol-1-20240516/": {},
       "https://www.w3.org/TR/CSS/": {},
+      "https://www.w3.org/TR/CSS2/about.html": {
+        "anchors": [
+          "property-defs"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/tables.html": {
+        "anchors": [
+          "collapsing-borders"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/zindex.html": {},
       "https://www.w3.org/TR/css-cascade/": {
         "anchors": [
           "initial-values",
           "applies-to",
           "inherited-property",
           "computed"
+        ]
+      },
+      "https://www.w3.org/TR/css-values-3/": {
+        "anchors": [
+          "value-defs"
         ]
       },
       "https://www.w3.org/TR/css-values/": {
@@ -80,12 +109,28 @@
           "animation-type"
         ]
       },
+      "https://www.w3.org/WAI/WCAG21/Understanding/reflow.html": {},
+      "https://www.w3.org/WAI/WCAG21/quickref/": {
+        "anchors": [
+          "visual-presentation"
+        ]
+      },
       "https://www.w3.org/policies/process/20231103/": {}
     },
     "autolinks": {
       "https://drafts.csswg.org/css-align-3/": {
         "anchors": [
-          "propdef-column-gap"
+          "propdef-column-gap",
+          "valdef-align-self-normal"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-border",
+          "typedef-line-style",
+          "valdef-line-style-none",
+          "valdef-line-style-hidden",
+          "typedef-line-width"
         ]
       },
       "https://drafts.csswg.org/css-box-4/": {
@@ -97,25 +142,49 @@
         "anchors": [
           "propdef-break-before",
           "propdef-break-after",
-          "propdef-break-inside"
+          "propdef-break-inside",
+          "propdef-orphans"
         ]
       },
-      "https://drafts.csswg.org/css-multicol-1/": {
+      "https://drafts.csswg.org/css-break-4/": {
         "anchors": [
-          "propdef-column-width",
-          "propdef-column-count",
-          "propdef-columns",
-          "multi-column-container",
-          "propdef-column-rule-color",
-          "propdef-column-rule-style",
-          "propdef-column-rule-width",
-          "propdef-column-rule",
-          "propdef-column-fill"
+          "fragmentation-context",
+          "fragmentation-container",
+          "fragment",
+          "fragmentation",
+          "propdef-widows"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-5/": {
+        "anchors": [
+          "typedef-color"
+        ]
+      },
+      "https://drafts.csswg.org/css-display-4/": {
+        "anchors": [
+          "anonymous",
+          "block-formatting-context",
+          "containing-block",
+          "principal-box",
+          "block-container",
+          "independent-formatting-context",
+          "block-level-box",
+          "propdef-display",
+          "out-of-flow",
+          "formatting-context",
+          "containing-block-chain"
+        ]
+      },
+      "https://drafts.csswg.org/css-grid-2/": {
+        "anchors": [
+          "grid-container",
+          "grid-item"
         ]
       },
       "https://drafts.csswg.org/css-overflow-3/": {
         "anchors": [
-          "scroll-container"
+          "scroll-container",
+          "propdef-overflow"
         ]
       },
       "https://drafts.csswg.org/css-overflow-5/": {
@@ -123,9 +192,10 @@
           "selectordef-scroll-marker"
         ]
       },
-      "https://drafts.csswg.org/css-regions-1/": {
+      "https://drafts.csswg.org/css-position-3/": {
         "anchors": [
-          "css-region"
+          "absolute-position",
+          "propdef-position"
         ]
       },
       "https://drafts.csswg.org/css-scroll-snap-1/": {
@@ -137,21 +207,44 @@
       },
       "https://drafts.csswg.org/css-sizing-3/": {
         "anchors": [
+          "propdef-width",
           "available",
           "min-content",
-          "outer-size"
+          "outer-size",
+          "propdef-height",
+          "propdef-max-height"
+        ]
+      },
+      "https://drafts.csswg.org/css-tables-3/": {
+        "anchors": [
+          "table-wrapper-box"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms-1/": {
+        "anchors": [
+          "propdef-transform"
         ]
       },
       "https://drafts.csswg.org/css-values-4/": {
         "anchors": [
+          "css-wide-keywords",
+          "comb-one",
+          "length-value",
           "integer-value",
-          "comb-one"
+          "comb-any",
+          "snap-a-length-as-a-border-width"
         ]
       },
       "https://drafts.csswg.org/css-writing-modes-4/": {
         "anchors": [
-          "inline-axis",
-          "block-axis"
+          "block-axis",
+          "inline-base-direction",
+          "inline-axis"
+        ]
+      },
+      "https://drafts.csswg.org/mediaqueries-5/": {
+        "anchors": [
+          "paged-media"
         ]
       }
     }
