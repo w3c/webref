@@ -296,6 +296,9 @@
               ]
             }
           ]
+        },
+        {
+          "html": "<p>Return <code>\"processed\"</code>.</p>"
         }
       ]
     },
@@ -755,6 +758,9 @@
               ]
             }
           ]
+        },
+        {
+          "html": "<p>Return <code>\"processed\"</code>.</p>"
         }
       ]
     },
@@ -1187,6 +1193,9 @@
               ]
             }
           ]
+        },
+        {
+          "html": "<p>Return <code>\"processed\"</code>.</p>"
         }
       ]
     },
@@ -1664,6 +1673,9 @@
               ]
             }
           ]
+        },
+        {
+          "html": "<p>Return <code>\"processed\"</code>.</p>"
         }
       ]
     },
@@ -2665,7 +2677,7 @@
           "html": "<p>If <var>image</var> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#the-image-argument-is-not-origin-clean\" id=\"ref-for-the-image-argument-is-not-origin-clean\">is not origin-clean</a>, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⓪\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe③⑥\">VideoFrame</a></code>.</p>"
+          "html": "<p>Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe③⑧\">VideoFrame</a></code>.</p>"
         },
         {
           "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/SVG2/embedded.html#InterfaceSVGImageElement\" id=\"ref-for-InterfaceSVGImageElement\">SVGImageElement</a></code>",
@@ -2681,10 +2693,16 @@
               "html": "<p>Let <var>resource</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#media-resource\" id=\"ref-for-media-resource②②\">media resource</a> containing a copy of <var>image</var>’s media data. If this is an animated image, <var>image</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#concept-imagebitmap-bitmap-data\" id=\"ref-for-concept-imagebitmap-bitmap-data\">bitmap data</a> <em class=\"rfc2119\">MUST</em> only be taken from the\ndefault image of the animation (the one that the format defines is\nto be used when animation is not supported or is disabled), or, if\nthere is no such image, the first frame of the animation.</p>"
             },
             {
-              "html": "<p>Let <var>width</var> and <var>height</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-width\" id=\"ref-for-natural-width\">natural width</a> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-height\" id=\"ref-for-natural-height\">natural height</a> of <var>image</var>.</p>"
+              "html": "<p>Let <var>codedWidth</var> and <var>codedHeight</var> be the width and height of <var>resource</var>.</p>"
             },
             {
-              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#videoframe-initialize-frame-with-resource-and-size\" id=\"ref-for-videoframe-initialize-frame-with-resource-and-size\">Initialize Frame With Resource and Size</a> algorithm with <var>init</var>, <var>frame</var>, <var>resource</var>, <var>width</var>, and <var>height</var></p>"
+              "html": "<p>Let <var>baseRotation</var> and <var>baseFlip</var> describe the rotation and flip of <var>image</var> relative to <var>resource</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>defaultDisplayWidth</var> and <var>defaultDisplayHeight</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-width\" id=\"ref-for-natural-width\">natural width</a> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-height\" id=\"ref-for-natural-height\">natural height</a> of <var>image</var>.</p>"
+            },
+            {
+              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#videoframe-initialize-frame-with-resource\" id=\"ref-for-videoframe-initialize-frame-with-resource\">Initialize Frame With Resource</a> algorithm with <var>init</var>, <var>frame</var>, <var>resource</var>, <var>codedWidth</var>, <var>codedHeight</var>, <var>baseRotation</var>, <var>baseFlip</var>, <var>defaultDisplayWidth</var>,\nand <var>defaultDisplayHeight</var>.</p>"
             }
           ],
           "additional": [
@@ -2696,7 +2714,7 @@
                   "html": "<p>If <var>image</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#dom-media-networkstate\" id=\"ref-for-dom-media-networkstate\">networkState</a></code> attribute is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#dom-media-network_empty\" id=\"ref-for-dom-media-network_empty\">NETWORK_EMPTY</a></code>, then throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②①\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③②\">DOMException</a></code>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>currentPlaybackFrame</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe③⑧\">VideoFrame</a></code> at the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#current-playback-position\" id=\"ref-for-current-playback-position\">current\nplayback position</a>.</p>"
+                  "html": "<p>Let <var>currentPlaybackFrame</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe④⓪\">VideoFrame</a></code> at the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#current-playback-position\" id=\"ref-for-current-playback-position\">current\nplayback position</a>.</p>"
                 },
                 {
                   "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-metadata\" id=\"ref-for-dom-videoframeinit-metadata\">metadata</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">exist</a> in <var>init</var>,\nassign <var>currentPlaybackFrame</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-metadata-slot\" id=\"ref-for-dom-videoframe-metadata-slot\">[[metadata]]</a></code> to it.</p>"
@@ -2720,12 +2738,12 @@
                   "html": "<p>Let <var>width</var> be <code>image.width</code> and <var>height</var> be <code>image.height</code>.</p>"
                 },
                 {
-                  "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#videoframe-initialize-frame-with-resource-and-size\" id=\"ref-for-videoframe-initialize-frame-with-resource-and-size①\">Initialize Frame With Resource and Size</a> algorithm with <var>init</var>, <var>frame</var>, <var>resource</var>, <var>width</var>, and <var>height</var>.</p>"
+                  "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#videoframe-initialize-frame-with-resource\" id=\"ref-for-videoframe-initialize-frame-with-resource①\">Initialize Frame With Resource</a> algorithm with <var>init</var>, <var>frame</var>, <var>resource</var>, <var>width</var>, <var>height</var>, <code>0</code>, <code>false</code>, <var>width</var>, and <var>height</var>.</p>"
                 }
               ]
             },
             {
-              "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe③⑨\">VideoFrame</a></code>",
+              "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe④①\">VideoFrame</a></code>",
               "rationale": "run",
               "steps": [
                 {
@@ -2831,7 +2849,7 @@
           "html": "<p>Let <var>resourceVisibleTop</var> be the top offset for the visible rectangle of <var>resource</var>.</p>"
         },
         {
-          "html": "Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe④⓪\">VideoFrame</a></code> object initialized as follows:",
+          "html": "Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe④②\">VideoFrame</a></code> object initialized as follows:",
           "rationale": "assign",
           "steps": [
             {
@@ -2868,10 +2886,43 @@
               ]
             },
             {
-              "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-displaywidth\" id=\"ref-for-dom-videoframebufferinit-displaywidth\">displayWidth</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exists</a>, assign\nit to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot\">[[display width]]</a></code>. Otherwise, assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-width-slot\" id=\"ref-for-dom-videoframe-visible-width-slot③\">[[visible width]]</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot①\">[[display width]]</a></code>.</p>"
+              "html": "<p>Assign the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#videoframe-parse-rotation\" id=\"ref-for-videoframe-parse-rotation\">Parse Rotation</a> algorithm,\nwith <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-rotation\" id=\"ref-for-dom-videoframebufferinit-rotation\">rotation</a></code>, to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot\">[[rotation]]</a></code>.</p>"
             },
             {
-              "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-displayheight\" id=\"ref-for-dom-videoframebufferinit-displayheight\">displayHeight</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">exists</a>, assign\nit to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot\">[[display height]]</a></code>. Otherwise, assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-height-slot\" id=\"ref-for-dom-videoframe-visible-height-slot③\">[[visible height]]</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot①\">[[display height]]</a></code>.</p>"
+              "html": "<p>Assign <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-flip\" id=\"ref-for-dom-videoframebufferinit-flip\">flip</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot\">[[flip]]</a></code>.</p>"
+            },
+            {
+              "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-displaywidth\" id=\"ref-for-dom-videoframebufferinit-displaywidth\">displayWidth</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-displayheight\" id=\"ref-for-dom-videoframebufferinit-displayheight\">displayHeight</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exist</a> in <var>init</var>, assign\nthem to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot\">[[display width]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot\">[[display height]]</a></code> respectively.</p>"
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot①\">[[rotation]]</a></code> is equal to <code>0</code> or <code>180</code>:",
+                  "rationale": "assign",
+                  "steps": [
+                    {
+                      "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-width-slot\" id=\"ref-for-dom-videoframe-visible-width-slot③\">[[visible width]]</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot①\">[[display width]]</a></code>.</p>"
+                    },
+                    {
+                      "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-height-slot\" id=\"ref-for-dom-videoframe-visible-height-slot③\">[[visible height]]</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot①\">[[display height]]</a></code>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "Otherwise:",
+                  "rationale": "assign",
+                  "steps": [
+                    {
+                      "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-height-slot\" id=\"ref-for-dom-videoframe-visible-height-slot④\">[[visible height]]</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot②\">[[display width]]</a></code>.</p>"
+                    },
+                    {
+                      "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-width-slot\" id=\"ref-for-dom-videoframe-visible-width-slot④\">[[visible width]]</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot②\">[[display height]]</a></code>.</p>"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "html": "<p>Assign <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-timestamp\" id=\"ref-for-dom-videoframebufferinit-timestamp\">timestamp</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-duration\" id=\"ref-for-dom-videoframebufferinit-duration\">duration</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-timestamp-slot\" id=\"ref-for-dom-videoframe-timestamp-slot①\">[[timestamp]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-duration-slot\" id=\"ref-for-dom-videoframe-duration-slot①\">[[duration]]</a></code> respectively.</p>"
@@ -2880,7 +2931,7 @@
               "html": "<p>Let <var>colorSpace</var> be <code>undefined</code>.</p>"
             },
             {
-              "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-colorspace\" id=\"ref-for-dom-videoframebufferinit-colorspace\">colorSpace</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑥\">exists</a>, assign its\nvalue to <var>colorSpace</var>.</p>"
+              "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-colorspace\" id=\"ref-for-dom-videoframebufferinit-colorspace\">colorSpace</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">exists</a>, assign its\nvalue to <var>colorSpace</var>.</p>"
             },
             {
               "html": "<p>Assign <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-format\" id=\"ref-for-dom-videoframebufferinit-format②\">format</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-format-slot\" id=\"ref-for-dom-videoframe-format-slot①\">[[format]]</a></code>.</p>"
@@ -2938,7 +2989,7 @@
           "rationale": "assign",
           "steps": [
             {
-              "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-left-slot\" id=\"ref-for-dom-videoframe-visible-left-slot②\">[[visible left]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-top-slot\" id=\"ref-for-dom-videoframe-visible-top-slot②\">[[visible top]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-width-slot\" id=\"ref-for-dom-videoframe-visible-width-slot④\">[[visible width]]</a></code>,\nand <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-height-slot\" id=\"ref-for-dom-videoframe-visible-height-slot④\">[[visible height]]</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectreadonly-x\" id=\"ref-for-dom-domrectreadonly-x②\">x</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectreadonly-y\" id=\"ref-for-dom-domrectreadonly-y②\">y</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectreadonly-width\" id=\"ref-for-dom-domrectreadonly-width②\">width</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectreadonly-height\" id=\"ref-for-dom-domrectreadonly-height②\">height</a></code> respectively.</p>"
+              "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-left-slot\" id=\"ref-for-dom-videoframe-visible-left-slot②\">[[visible left]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-top-slot\" id=\"ref-for-dom-videoframe-visible-top-slot②\">[[visible top]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-width-slot\" id=\"ref-for-dom-videoframe-visible-width-slot⑤\">[[visible width]]</a></code>,\nand <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-height-slot\" id=\"ref-for-dom-videoframe-visible-height-slot⑤\">[[visible height]]</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectreadonly-x\" id=\"ref-for-dom-domrectreadonly-x②\">x</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectreadonly-y\" id=\"ref-for-dom-domrectreadonly-y②\">y</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectreadonly-width\" id=\"ref-for-dom-domrectreadonly-width②\">width</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectreadonly-height\" id=\"ref-for-dom-domrectreadonly-height②\">height</a></code> respectively.</p>"
             }
           ]
         },
@@ -3130,7 +3181,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe④⑧\">VideoFrame</a></code>, constructed as follows:",
+          "html": "Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤①\">VideoFrame</a></code>, constructed as follows:",
           "rationale": "assign",
           "steps": [
             {
@@ -3161,7 +3212,7 @@
               "html": "<p>If <var>displayAspectWidth</var> and <var>displayAspectHeight</var> are provided,\nincrease <var>displayWidth</var> or <var>displayHeight</var> until the ratio of <var>displayWidth</var> to <var>displayHeight</var> matches the ratio of <var>displayAspectWidth</var> to <var>displayAspectHeight</var>.</p>"
             },
             {
-              "html": "<p>Assign <var>codedWidth</var>, <var>codedHeight</var>, <var>visibleLeft</var>, <var>visibleTop</var>, <var>visibleWidth</var>, <var>visibleHeight</var>, <var>displayWidth</var>, and <var>displayHeight</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-coded-width-slot\" id=\"ref-for-dom-videoframe-coded-width-slot④\">[[coded width]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-coded-height-slot\" id=\"ref-for-dom-videoframe-coded-height-slot④\">[[coded height]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-left-slot\" id=\"ref-for-dom-videoframe-visible-left-slot③\">[[visible left]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-top-slot\" id=\"ref-for-dom-videoframe-visible-top-slot③\">[[visible top]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-width-slot\" id=\"ref-for-dom-videoframe-visible-width-slot⑤\">[[visible width]]</a></code>,\nand <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-height-slot\" id=\"ref-for-dom-videoframe-visible-height-slot⑤\">[[visible height]]</a></code> respectively.</p>"
+              "html": "<p>Assign <var>codedWidth</var>, <var>codedHeight</var>, <var>visibleLeft</var>, <var>visibleTop</var>, <var>visibleWidth</var>, <var>visibleHeight</var>, <var>displayWidth</var>, and <var>displayHeight</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-coded-width-slot\" id=\"ref-for-dom-videoframe-coded-width-slot④\">[[coded width]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-coded-height-slot\" id=\"ref-for-dom-videoframe-coded-height-slot④\">[[coded height]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-left-slot\" id=\"ref-for-dom-videoframe-visible-left-slot③\">[[visible left]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-top-slot\" id=\"ref-for-dom-videoframe-visible-top-slot③\">[[visible top]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-width-slot\" id=\"ref-for-dom-videoframe-visible-width-slot⑥\">[[visible width]]</a></code>,\nand <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-height-slot\" id=\"ref-for-dom-videoframe-visible-height-slot⑥\">[[visible height]]</a></code> respectively.</p>"
             },
             {
               "html": "<p>Assign <var>duration</var> and <var>timestamp</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-duration-slot\" id=\"ref-for-dom-videoframe-duration-slot③\">[[duration]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-timestamp-slot\" id=\"ref-for-dom-videoframe-timestamp-slot③\">[[timestamp]]</a></code> respectively.</p>"
@@ -3200,7 +3251,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-visiblerect\" id=\"ref-for-dom-videoframeinit-visiblerect\">visibleRect</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑧\">exists</a>:",
+          "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-visiblerect\" id=\"ref-for-dom-videoframeinit-visiblerect\">visibleRect</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑦\">exists</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -3227,7 +3278,7 @@
           "html": "<p>If <var>codedWidth</var> = 0 or <var>codedHeight</var> = 0,return <code>false</code>.</p>"
         },
         {
-          "html": "<p>If only one of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-displaywidth\" id=\"ref-for-dom-videoframeinit-displaywidth\">displayWidth</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-displayheight\" id=\"ref-for-dom-videoframeinit-displayheight\">displayHeight</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑨\">exists</a>, return <code>false</code>.</p>"
+          "html": "<p>If only one of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-displaywidth\" id=\"ref-for-dom-videoframeinit-displaywidth\">displayWidth</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-displayheight\" id=\"ref-for-dom-videoframeinit-displayheight\">displayHeight</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑧\">exists</a>, return <code>false</code>.</p>"
         },
         {
           "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-displaywidth\" id=\"ref-for-dom-videoframeinit-displaywidth①\">displayWidth</a></code> == <code>0</code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-displayheight\" id=\"ref-for-dom-videoframeinit-displayheight①\">displayHeight</a></code> == <code>0</code>, return <code>false</code>.</p>"
@@ -3256,7 +3307,7 @@
           "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-visiblerect\" id=\"ref-for-dom-videoframebufferinit-visiblerect⑨\">visibleRect</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectinit-x\" id=\"ref-for-dom-domrectinit-x①\">x</a></code> + <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-visiblerect\" id=\"ref-for-dom-videoframebufferinit-visiblerect①⓪\">visibleRect</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectinit-width\" id=\"ref-for-dom-domrectinit-width③\">width</a></code> &gt; <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-codedwidth\" id=\"ref-for-dom-videoframebufferinit-codedwidth④\">codedWidth</a></code>, return <code>false</code>.</p>"
         },
         {
-          "html": "<p>If only one of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-displaywidth\" id=\"ref-for-dom-videoframebufferinit-displaywidth①\">displayWidth</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-displayheight\" id=\"ref-for-dom-videoframebufferinit-displayheight①\">displayHeight</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⓪\">exists</a>, return <code>false</code>.</p>"
+          "html": "<p>If only one of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-displaywidth\" id=\"ref-for-dom-videoframebufferinit-displaywidth①\">displayWidth</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-displayheight\" id=\"ref-for-dom-videoframebufferinit-displayheight①\">displayHeight</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑨\">exists</a>, return <code>false</code>.</p>"
         },
         {
           "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-displaywidth\" id=\"ref-for-dom-videoframebufferinit-displaywidth②\">displayWidth</a></code> = 0 or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-displayheight\" id=\"ref-for-dom-videoframebufferinit-displayheight②\">displayHeight</a></code> = 0, return <code>false</code>.</p>"
@@ -3297,16 +3348,19 @@
           "html": "<p>Let <var>defaultVisibleRect</var> be the result of performing the getter steps\nfor <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visiblerect\" id=\"ref-for-dom-videoframe-visiblerect③\">visibleRect</a></code> on <var>otherFrame</var>.</p>"
         },
         {
-          "html": "<p>Let <var>defaultDisplayWidth</var>, and <var>defaultDisplayHeight</var> be <var>otherFrame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot③\">[[display width]]</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot③\">[[display height]]</a></code> respectively.</p>"
+          "html": "<p>Let <var>baseRotation</var> and <var>baseFlip</var> be <var>otherFrame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot③\">[[rotation]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot②\">[[flip]]</a></code>, respectively.</p>"
         },
         {
-          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#videoframe-initialize-visible-rect-and-display-size\" id=\"ref-for-videoframe-initialize-visible-rect-and-display-size\">Initialize Visible Rect and Display Size</a> algorithm with <var>init</var>, <var>frame</var>, <var>defaultVisibleRect</var>, <var>defaultDisplayWidth</var>, and <var>defaultDisplayHeight</var>.</p>"
+          "html": "<p>Let <var>defaultDisplayWidth</var> and <var>defaultDisplayHeight</var> be <var>otherFrame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot④\">[[display width]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot④\">[[display height]]</a></code>,\nrespectively.</p>"
         },
         {
-          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-duration\" id=\"ref-for-dom-videoframeinit-duration\">duration</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②①\">exists</a> in <var>init</var>, assign it to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-duration-slot\" id=\"ref-for-dom-videoframe-duration-slot④\">[[duration]]</a></code>. Otherwise, assign <var>otherFrame</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-duration\" id=\"ref-for-dom-videoframe-duration②\">duration</a></code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-duration-slot\" id=\"ref-for-dom-videoframe-duration-slot⑤\">[[duration]]</a></code>.</p>"
+          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#videoframe-initialize-visible-rect-orientation-and-display-size\" id=\"ref-for-videoframe-initialize-visible-rect-orientation-and-display-size\">Initialize Visible Rect, Orientation, and Display Size</a> algorithm with <var>init</var>, <var>frame</var>, <var>defaultVisibleRect</var>, <var>baseRotation</var>, <var>baseFlip</var>, <var>defaultDisplayWidth</var>, and <var>defaultDisplayHeight</var>.</p>"
         },
         {
-          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-timestamp\" id=\"ref-for-dom-videoframeinit-timestamp②\">timestamp</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②②\">exists</a> in <var>init</var>, assign it to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-timestamp-slot\" id=\"ref-for-dom-videoframe-timestamp-slot④\">[[timestamp]]</a></code>. Otherwise, assign <var>otherFrame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-timestamp\" id=\"ref-for-dom-videoframe-timestamp④\">timestamp</a></code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-timestamp-slot\" id=\"ref-for-dom-videoframe-timestamp-slot⑤\">[[timestamp]]</a></code>.</p>"
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-duration\" id=\"ref-for-dom-videoframeinit-duration\">duration</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⓪\">exists</a> in <var>init</var>, assign it to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-duration-slot\" id=\"ref-for-dom-videoframe-duration-slot④\">[[duration]]</a></code>. Otherwise, assign <var>otherFrame</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-duration\" id=\"ref-for-dom-videoframe-duration②\">duration</a></code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-duration-slot\" id=\"ref-for-dom-videoframe-duration-slot⑤\">[[duration]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-timestamp\" id=\"ref-for-dom-videoframeinit-timestamp②\">timestamp</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②①\">exists</a> in <var>init</var>, assign it to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-timestamp-slot\" id=\"ref-for-dom-videoframe-timestamp-slot④\">[[timestamp]]</a></code>. Otherwise, assign <var>otherFrame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-timestamp\" id=\"ref-for-dom-videoframe-timestamp④\">timestamp</a></code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-timestamp-slot\" id=\"ref-for-dom-videoframe-timestamp-slot⑤\">[[timestamp]]</a></code>.</p>"
         },
         {
           "html": "<p>Assign <var>format</var> to <var>frame</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-format-slot\" id=\"ref-for-dom-videoframe-format-slot①①\">[[format]]</a></code>.</p>"
@@ -3317,8 +3371,8 @@
       ]
     },
     {
-      "name": "VideoFrame/Initialize Frame With Resource and Size",
-      "href": "https://www.w3.org/TR/webcodecs/#videoframe-initialize-frame-with-resource-and-size",
+      "name": "VideoFrame/Initialize Frame With Resource",
+      "href": "https://www.w3.org/TR/webcodecs/#videoframe-initialize-frame-with-resource",
       "html": "",
       "rationale": "let",
       "steps": [
@@ -3344,13 +3398,13 @@
           "html": "<p>Assign <var>format</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-format-slot\" id=\"ref-for-dom-videoframe-format-slot①②\">[[format]]</a></code></p>"
         },
         {
-          "html": "<p>Assign <var>width</var> and <var>height</var> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-coded-width-slot\" id=\"ref-for-dom-videoframe-coded-width-slot⑥\">[[coded width]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-coded-height-slot\" id=\"ref-for-dom-videoframe-coded-height-slot⑥\">[[coded height]]</a></code> respectively.</p>"
+          "html": "<p>Assign <var>codedWidth</var> and <var>codedHeight</var> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-coded-width-slot\" id=\"ref-for-dom-videoframe-coded-width-slot⑥\">[[coded width]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-coded-height-slot\" id=\"ref-for-dom-videoframe-coded-height-slot⑥\">[[coded height]]</a></code> respectively.</p>"
         },
         {
-          "html": "<p>Let <var>defaultVisibleRect</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#domrect\" id=\"ref-for-domrect\">DOMRect</a></code> constructed with\n«[ \"x:\" → <code>0</code>, \"y\" → <code>0</code>, \"width\" → <var>width</var>, \"height\" → <var>height</var> ]»</p>"
+          "html": "<p>Let <var>defaultVisibleRect</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#domrect\" id=\"ref-for-domrect\">DOMRect</a></code> constructed with\n«[ \"x:\" → <code>0</code>, \"y\" → <code>0</code>, \"width\" → <var>codedWidth</var>, \"height\" → <var>codedHeight</var> ]»</p>"
         },
         {
-          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#videoframe-initialize-visible-rect-and-display-size\" id=\"ref-for-videoframe-initialize-visible-rect-and-display-size①\">Initialize Visible Rect and Display Size</a> algorithm with <var>init</var>, <var>frame</var>, <var>defaultVisibleRect</var>, <var>width</var>, and <var>height</var>.</p>"
+          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#videoframe-initialize-visible-rect-orientation-and-display-size\" id=\"ref-for-videoframe-initialize-visible-rect-orientation-and-display-size①\">Initialize Visible Rect, Orientation, and Display Size</a> algorithm with <var>init</var>, <var>frame</var>, <var>defaultVisibleRect</var>, <var>defaultDisplayWidth</var>, and <var>defaultDisplayHeight</var>.</p>"
         },
         {
           "html": "<p>Assign <code>init</code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-duration\" id=\"ref-for-dom-videoframeinit-duration①\">duration</a></code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-duration-slot\" id=\"ref-for-dom-videoframe-duration-slot⑥\">[[duration]]</a></code>.</p>"
@@ -3367,8 +3421,8 @@
       ]
     },
     {
-      "name": "VideoFrame/Initialize Visible Rect and Display Size",
-      "href": "https://www.w3.org/TR/webcodecs/#videoframe-initialize-visible-rect-and-display-size",
+      "name": "VideoFrame/Initialize Visible Rect, Orientation, and Display Size",
+      "href": "https://www.w3.org/TR/webcodecs/#videoframe-initialize-visible-rect-orientation-and-display-size",
       "html": "",
       "rationale": "let",
       "steps": [
@@ -3376,29 +3430,80 @@
           "html": "<p>Let <var>visibleRect</var> be <var>defaultVisibleRect</var>.</p>"
         },
         {
-          "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-visiblerect\" id=\"ref-for-dom-videoframeinit-visiblerect⑧\">visibleRect</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②③\">exists</a>, assign it to <var>visibleRect</var>.</p>"
+          "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-visiblerect\" id=\"ref-for-dom-videoframeinit-visiblerect⑧\">visibleRect</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②②\">exists</a>, assign it to <var>visibleRect</var>.</p>"
         },
         {
-          "html": "<p>Assign <var>visibleRect</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-x\" id=\"ref-for-dom-domrect-x\">x</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-y\" id=\"ref-for-dom-domrect-y\">y</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-width\" id=\"ref-for-dom-domrect-width\">width</a></code>,\nand <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-height\" id=\"ref-for-dom-domrect-height\">height</a></code>, to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-left-slot\" id=\"ref-for-dom-videoframe-visible-left-slot④\">[[visible left]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-top-slot\" id=\"ref-for-dom-videoframe-visible-top-slot④\">[[visible top]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-width-slot\" id=\"ref-for-dom-videoframe-visible-width-slot⑥\">[[visible width]]</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-height-slot\" id=\"ref-for-dom-videoframe-visible-height-slot⑥\">[[visible height]]</a></code> respectively.</p>"
+          "html": "<p>Assign <var>visibleRect</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-x\" id=\"ref-for-dom-domrect-x\">x</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-y\" id=\"ref-for-dom-domrect-y\">y</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-width\" id=\"ref-for-dom-domrect-width\">width</a></code>,\nand <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-height\" id=\"ref-for-dom-domrect-height\">height</a></code>, to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-left-slot\" id=\"ref-for-dom-videoframe-visible-left-slot④\">[[visible left]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-top-slot\" id=\"ref-for-dom-videoframe-visible-top-slot④\">[[visible top]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-width-slot\" id=\"ref-for-dom-videoframe-visible-width-slot⑦\">[[visible width]]</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-height-slot\" id=\"ref-for-dom-videoframe-visible-height-slot⑦\">[[visible height]]</a></code> respectively.</p>"
         },
         {
-          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-displaywidth\" id=\"ref-for-dom-videoframeinit-displaywidth②\">displayWidth</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-displayheight\" id=\"ref-for-dom-videoframeinit-displayheight②\">displayHeight</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②④\">exist</a> in <var>init</var>, assign them to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot④\">[[display width]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot④\">[[display height]]</a></code> respectively.</p>"
+          "html": "<p>Let <var>rotation</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#videoframe-parse-rotation\" id=\"ref-for-videoframe-parse-rotation①\">Parse Rotation</a> algorithm, with <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-rotation\" id=\"ref-for-dom-videoframeinit-rotation\">rotation</a></code>.</p>"
+        },
+        {
+          "html": "<p>Assign the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#videoframe-add-rotations\" id=\"ref-for-videoframe-add-rotations\">Add Rotations</a> algorithm,\nwith <var>baseRotation</var>, <var>baseFlip</var>, and <var>rotation</var>, to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot④\">[[rotation]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>baseFlip</var> is equal to <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-flip\" id=\"ref-for-dom-videoframeinit-flip\">flip</a></code>, assign <code>false</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot③\">[[flip]]</a></code>. Otherwise, assign <code>true</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot④\">[[flip]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-displaywidth\" id=\"ref-for-dom-videoframeinit-displaywidth②\">displayWidth</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-displayheight\" id=\"ref-for-dom-videoframeinit-displayheight②\">displayHeight</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②③\">exist</a> in <var>init</var>, assign them to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot⑤\">[[display width]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot⑤\">[[display height]]</a></code> respectively.</p>"
         },
         {
           "html": "Otherwise:",
-          "rationale": "let",
+          "rationale": "if",
           "steps": [
             {
-              "html": "<p>Let <var>widthScale</var> be the result of dividing <var>defaultDisplayWidth</var> by <var>defaultVisibleRect</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-width\" id=\"ref-for-dom-domrect-width①\">width</a></code>.</p>"
+              "html": "If <var>baseRotation</var> is equal to <code>0</code> or <code>180</code>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>widthScale</var> be the result of dividing <var>defaultDisplayWidth</var> by <var>defaultVisibleRect</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-width\" id=\"ref-for-dom-domrect-width①\">width</a></code>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>heightScale</var> be the result of dividing <var>defaultDisplayHeight</var> by <var>defaultVisibleRect</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-height\" id=\"ref-for-dom-domrect-height①\">height</a></code>.</p>"
+                }
+              ]
             },
             {
-              "html": "<p>Let <var>heightScale</var> be the result of dividing <var>defaultDisplayHeight</var> by <var>defaultVisibleRect</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-height\" id=\"ref-for-dom-domrect-height①\">height</a></code>.</p>"
+              "html": "Otherwise:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>widthScale</var> be the result of dividing <var>defaultDisplayHeight</var> by <var>defaultVisibleRect</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-width\" id=\"ref-for-dom-domrect-width②\">width</a></code>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>heightScale</var> be the result of dividing <var>defaultDisplayWidth</var> by <var>defaultVisibleRect</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-height\" id=\"ref-for-dom-domrect-height②\">height</a></code>.</p>"
+                }
+              ]
             },
             {
-              "html": "<p>Multiply <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-width-slot\" id=\"ref-for-dom-videoframe-visible-width-slot⑦\">[[visible width]]</a></code> by <var>widthScale</var> and round the result. Assign the rounded result to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot⑤\">[[display width]]</a></code>.</p>"
+              "html": "<p>Let <var>displayWidth</var> be <code>|frame|'s {{VideoFrame/[[visible width]]}} * |widthScale|</code>, rounded\nto the nearest integer.</p>"
             },
             {
-              "html": "<p>Multiply <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-height-slot\" id=\"ref-for-dom-videoframe-visible-height-slot⑦\">[[visible height]]</a></code> by <var>heightScale</var> and round the result. Assign the rounded result to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot⑤\">[[display height]]</a></code>.</p>"
+              "html": "<p>Let <var>displayHeight</var> be <code>|frame|'s {{VideoFrame/[[visible height]]}} * |heightScale|</code>,\nrounded to the nearest integer.</p>"
+            },
+            {
+              "html": "If <var>rotation</var> is equal to <code>0</code> or <code>180</code>:",
+              "rationale": "assign",
+              "steps": [
+                {
+                  "html": "<p>Assign <var>displayWidth</var> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot⑥\">[[display width]]</a></code>.</p>"
+                },
+                {
+                  "html": "<p>Assign <var>displayHeight</var> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot⑥\">[[display height]]</a></code>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "assign",
+              "steps": [
+                {
+                  "html": "<p>Assign <var>displayHeight</var> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot⑦\">[[display width]]</a></code>.</p>"
+                },
+                {
+                  "html": "<p>Assign <var>displayWidth</var> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot⑦\">[[display height]]</a></code>.</p>"
+                }
+              ]
             }
           ]
         }
@@ -3411,7 +3516,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>clone</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe④⑨\">VideoFrame</a></code> initialized as follows:",
+          "html": "Let <var>clone</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤②\">VideoFrame</a></code> initialized as follows:",
           "rationale": "let",
           "steps": [
             {
@@ -3449,10 +3554,47 @@
           "html": "<p>Assign <code>null</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-format\" id=\"ref-for-dom-videoframe-format⑤\">format</a></code>.</p>"
         },
         {
-          "html": "<p>Assign <code>0</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-coded-width-slot\" id=\"ref-for-dom-videoframe-coded-width-slot⑦\">[[coded width]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-coded-height-slot\" id=\"ref-for-dom-videoframe-coded-height-slot⑦\">[[coded height]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-left-slot\" id=\"ref-for-dom-videoframe-visible-left-slot⑤\">[[visible left]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-top-slot\" id=\"ref-for-dom-videoframe-visible-top-slot⑤\">[[visible top]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-width-slot\" id=\"ref-for-dom-videoframe-visible-width-slot⑧\">[[visible width]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-height-slot\" id=\"ref-for-dom-videoframe-visible-height-slot⑧\">[[visible height]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot⑥\">[[display width]]</a></code>,\nand <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot⑥\">[[display height]]</a></code>.</p>"
+          "html": "<p>Assign <code>0</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-coded-width-slot\" id=\"ref-for-dom-videoframe-coded-width-slot⑦\">[[coded width]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-coded-height-slot\" id=\"ref-for-dom-videoframe-coded-height-slot⑦\">[[coded height]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-left-slot\" id=\"ref-for-dom-videoframe-visible-left-slot⑤\">[[visible left]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-top-slot\" id=\"ref-for-dom-videoframe-visible-top-slot⑤\">[[visible top]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-width-slot\" id=\"ref-for-dom-videoframe-visible-width-slot⑧\">[[visible width]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-height-slot\" id=\"ref-for-dom-videoframe-visible-height-slot⑧\">[[visible height]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot⑤\">[[rotation]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot⑧\">[[display width]]</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot⑧\">[[display height]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>Assign <code>false</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot⑤\">[[flip]]</a></code>.</p>"
         },
         {
           "html": "<p>Assign a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dictdef-videoframemetadata\" id=\"ref-for-dictdef-videoframemetadata⑥\">VideoFrameMetadata</a></code> to <var>frame</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-metadata-slot\" id=\"ref-for-dom-videoframe-metadata-slot④\">[[metadata]]</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "VideoFrame/Parse Rotation",
+      "href": "https://www.w3.org/TR/webcodecs/#videoframe-parse-rotation",
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>alignedRotation</var> be the nearest multiple of <code>90</code> to <var>rotation</var>,\nrounding ties towards positive infinity.</p>"
+        },
+        {
+          "html": "<p>Let <var>fullTurns</var> be the greatest multiple of <code>360</code> less than or equal to <var>alignedRotation</var>.</p>"
+        },
+        {
+          "html": "<p>Return <code>|alignedRotation| - |fullTurns|</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "VideoFrame/Add Rotations",
+      "href": "https://www.w3.org/TR/webcodecs/#videoframe-add-rotations",
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>baseFlip</var> is <code>false</code>, let <var>combinedRotation</var> be <code>|baseRotation| + |rotation|</code>. Otherwise, let <var>combinedRotation</var> be <code>|baseRotation| - |rotation|</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>fullTurns</var> be the greatest multiple of <code>360</code> less than or equal to <var>combinedRotation</var>.</p>"
+        },
+        {
+          "html": "<p>Return <code>|combinedRotation| - |fullTurns|</code>.</p>"
         }
       ]
     },
@@ -3469,7 +3611,7 @@
           "html": "<p>Let <var>overrideRect</var> be <code>undefined</code>.</p>"
         },
         {
-          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframecopytooptions-rect\" id=\"ref-for-dom-videoframecopytooptions-rect\">rect</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑤\">exists</a>, assign the\nvalue of <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframecopytooptions-rect\" id=\"ref-for-dom-videoframecopytooptions-rect①\">rect</a></code> to <var>overrideRect</var>.</p>"
+          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframecopytooptions-rect\" id=\"ref-for-dom-videoframecopytooptions-rect\">rect</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②④\">exists</a>, assign the\nvalue of <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframecopytooptions-rect\" id=\"ref-for-dom-videoframecopytooptions-rect①\">rect</a></code> to <var>overrideRect</var>.</p>"
         },
         {
           "html": "<p>Let <var>parsedRect</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#videoframe-parse-visible-rect\" id=\"ref-for-videoframe-parse-visible-rect①\">Parse Visible\nRect</a> algorithm with <var>defaultRect</var>, <var>overrideRect</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-coded-width-slot\" id=\"ref-for-dom-videoframe-coded-width-slot⑧\">[[coded width]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-coded-height-slot\" id=\"ref-for-dom-videoframe-coded-height-slot⑧\">[[coded height]]</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-format-slot\" id=\"ref-for-dom-videoframe-format-slot①③\">[[format]]</a></code>.</p>"
@@ -3481,13 +3623,13 @@
           "html": "<p>Let <var>optLayout</var> be <code>undefined</code>.</p>"
         },
         {
-          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframecopytooptions-layout\" id=\"ref-for-dom-videoframecopytooptions-layout\">layout</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑥\">exists</a>, assign\nits value to <var>optLayout</var>.</p>"
+          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframecopytooptions-layout\" id=\"ref-for-dom-videoframecopytooptions-layout\">layout</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑤\">exists</a>, assign\nits value to <var>optLayout</var>.</p>"
         },
         {
           "html": "<p>Let <var>format</var> be <code>undefined</code>.</p>"
         },
         {
-          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframecopytooptions-format\" id=\"ref-for-dom-videoframecopytooptions-format④\">format</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑦\">exist</a>,\nassign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-format-slot\" id=\"ref-for-dom-videoframe-format-slot①④\">[[format]]</a></code> to <var>format</var>.</p>"
+          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframecopytooptions-format\" id=\"ref-for-dom-videoframecopytooptions-format④\">format</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑥\">exist</a>,\nassign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-format-slot\" id=\"ref-for-dom-videoframe-format-slot①④\">[[format]]</a></code> to <var>format</var>.</p>"
         },
         {
           "html": "<p>Otherwise, if <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframecopytooptions-format\" id=\"ref-for-dom-videoframecopytooptions-format⑤\">format</a></code> is equal to\none of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videopixelformat-rgba\" id=\"ref-for-dom-videopixelformat-rgba①\">RGBA</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videopixelformat-rgbx\" id=\"ref-for-dom-videopixelformat-rgbx①\">RGBX</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videopixelformat-bgra\" id=\"ref-for-dom-videopixelformat-bgra①\">BGRA</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videopixelformat-bgrx\" id=\"ref-for-dom-videopixelformat-bgrx①\">BGRX</a></code>, then assign <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframecopytooptions-format\" id=\"ref-for-dom-videoframecopytooptions-format⑥\">format</a></code> to <var>format</var>,\notherwise return <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror①②\">NotSupportedError</a></code>.</p>"
@@ -3755,7 +3897,7 @@
           "html": "<p>This algorithm <em class=\"rfc2119\">MUST</em> be called only if <var>format</var> is equal to one of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videopixelformat-rgba\" id=\"ref-for-dom-videopixelformat-rgba②\">RGBA</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videopixelformat-rgbx\" id=\"ref-for-dom-videopixelformat-rgbx②\">RGBX</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videopixelformat-bgra\" id=\"ref-for-dom-videopixelformat-bgra②\">BGRA</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videopixelformat-bgrx\" id=\"ref-for-dom-videopixelformat-bgrx②\">BGRX</a></code>.</p>"
         },
         {
-          "html": "Let <var>convertedFrame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⓪\">VideoFrame</a></code>, constructed as follows:",
+          "html": "Let <var>convertedFrame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤③\">VideoFrame</a></code>, constructed as follows:",
           "rationale": "assign",
           "steps": [
             {
@@ -3817,7 +3959,7 @@
           "html": "<p>If <var>value</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#detached\" id=\"ref-for-detached②⑧\">[[Detached]]</a></code> is <code>true</code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror①③\">DataCloneError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④①\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>For all <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤③\">VideoFrame</a></code> internal slots in <var>value</var>, assign the value of\neach internal slot to a field in <var>dataHolder</var> with the same name as the\ninternal slot.</p>"
+          "html": "<p>For all <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑥\">VideoFrame</a></code> internal slots in <var>value</var>, assign the value of\neach internal slot to a field in <var>dataHolder</var> with the same name as the\ninternal slot.</p>"
         },
         {
           "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#close-videoframe\" id=\"ref-for-close-videoframe①\">Close VideoFrame</a> algorithm with <var>value</var>.</p>"
@@ -3829,7 +3971,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<p>For all named fields in <var>dataHolder</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑤\">VideoFrame</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
+          "html": "<p>For all named fields in <var>dataHolder</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑧\">VideoFrame</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
         }
       ]
     },
@@ -3853,7 +3995,7 @@
           "html": "<p>Assign <var>newReference</var> to <var>serialized</var>.[[resource reference]].</p>"
         },
         {
-          "html": "<p>For all remaining <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑦\">VideoFrame</a></code> internal slots (excluding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot①①\">[[resource reference]]</a></code>) in <var>value</var>, assign the value of\neach internal slot to a field in <var>serialized</var> with the same name as the\ninternal slot.</p>"
+          "html": "<p>For all remaining <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥⓪\">VideoFrame</a></code> internal slots (excluding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot①①\">[[resource reference]]</a></code>) in <var>value</var>, assign the value of\neach internal slot to a field in <var>serialized</var> with the same name as the\ninternal slot.</p>"
         }
       ]
     },
@@ -3862,7 +4004,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<p>For all named fields in <var>serialized</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑨\">VideoFrame</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
+          "html": "<p>For all named fields in <var>serialized</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥②\">VideoFrame</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
         }
       ]
     },
@@ -3945,7 +4087,7 @@
           "html": "<p>Assign <code>null</code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-codec-implementation-slot\" id=\"ref-for-dom-imagedecoder-codec-implementation-slot①\">[[codec implementation]]</a></code>.</p>"
         },
         {
-          "html": "<p>If <code>init.preferAnimation</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③①\">exists</a>, assign <code>init.preferAnimation</code> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-prefer-animation-slot\" id=\"ref-for-dom-imagedecoder-prefer-animation-slot\">[[prefer animation]]</a></code> internal slot. Otherwise,\nassign 'null' to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-prefer-animation-slot\" id=\"ref-for-dom-imagedecoder-prefer-animation-slot①\">[[prefer animation]]</a></code> internal slot.</p>"
+          "html": "<p>If <code>init.preferAnimation</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③⓪\">exists</a>, assign <code>init.preferAnimation</code> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-prefer-animation-slot\" id=\"ref-for-dom-imagedecoder-prefer-animation-slot\">[[prefer animation]]</a></code> internal slot. Otherwise,\nassign 'null' to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-prefer-animation-slot\" id=\"ref-for-dom-imagedecoder-prefer-animation-slot①\">[[prefer animation]]</a></code> internal slot.</p>"
         },
         {
           "html": "<p>Assign a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑦\">list</a> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-pending-decode-promises-slot\" id=\"ref-for-dom-imagedecoder-pending-decode-promises-slot\">[[pending decode promises]]</a></code>.</p>"
@@ -4799,10 +4941,10 @@
           ]
         },
         {
-          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoderinit-desiredwidth\" id=\"ref-for-dom-imagedecoderinit-desiredwidth②\">desiredWidth</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③②\">exists</a> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoderinit-desiredheight\" id=\"ref-for-dom-imagedecoderinit-desiredheight②\">desiredHeight</a></code> does not exist, return <code>false</code>.</p>"
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoderinit-desiredwidth\" id=\"ref-for-dom-imagedecoderinit-desiredwidth②\">desiredWidth</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③①\">exists</a> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoderinit-desiredheight\" id=\"ref-for-dom-imagedecoderinit-desiredheight②\">desiredHeight</a></code> does not exist, return <code>false</code>.</p>"
         },
         {
-          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoderinit-desiredheight\" id=\"ref-for-dom-imagedecoderinit-desiredheight③\">desiredHeight</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③③\">exists</a> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoderinit-desiredwidth\" id=\"ref-for-dom-imagedecoderinit-desiredwidth③\">desiredWidth</a></code> does not exist, return <code>false</code>.</p>"
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoderinit-desiredheight\" id=\"ref-for-dom-imagedecoderinit-desiredheight③\">desiredHeight</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③②\">exists</a> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoderinit-desiredwidth\" id=\"ref-for-dom-imagedecoderinit-desiredwidth③\">desiredWidth</a></code> does not exist, return <code>false</code>.</p>"
         },
         {
           "html": "<p>Return <code>true</code>.</p>"
