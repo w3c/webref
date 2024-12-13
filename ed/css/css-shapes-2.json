@@ -105,18 +105,18 @@
           "type": "type",
           "values": [
             {
-              "name": "by",
-              "prose": "<command-end-point> = [ by <position> | to <coordinate-pair> ]",
-              "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-by",
-              "type": "value",
-              "value": "by"
-            },
-            {
               "name": "to",
-              "prose": "<command-end-point> = [ by <position> | to <coordinate-pair> ]",
+              "prose": "<command-end-point> = [ to <position> | by <coordinate-pair> ]",
               "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-to",
               "type": "value",
               "value": "to"
+            },
+            {
+              "name": "by",
+              "prose": "<command-end-point> = [ to <position> | by <coordinate-pair> ]",
+              "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-by",
+              "type": "value",
+              "value": "by"
             }
           ]
         },
