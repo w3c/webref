@@ -1,0 +1,36 @@
+From f34f3416f5230132136ff05344a7a9f809f97208 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Mon, 16 Dec 2024 15:22:46 +0100
+Subject: [PATCH] Expose Web Locks interfaces to SharedStorageWorklet
+
+This integrates the monkey patch made in Shared Storage, pending proper
+integration in Web Locks. No specific issue but patch will fail once done.
+---
+ ed/idl/web-locks.idl | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/ed/idl/web-locks.idl b/ed/idl/web-locks.idl
+index d79e404b9..00648cc3b 100644
+--- a/ed/idl/web-locks.idl
++++ b/ed/idl/web-locks.idl
+@@ -10,7 +10,7 @@ interface mixin NavigatorLocks {
+ Navigator includes NavigatorLocks;
+ WorkerNavigator includes NavigatorLocks;
+ 
+-[SecureContext, Exposed=(Window,Worker)]
++[SecureContext, Exposed=(Window,Worker,SharedStorageWorklet)]
+ interface LockManager {
+   Promise<any> request(DOMString name,
+                        LockGrantedCallback callback);
+@@ -43,7 +43,7 @@ dictionary LockInfo {
+   DOMString clientId;
+ };
+ 
+-[SecureContext, Exposed=(Window,Worker)]
++[SecureContext, Exposed=(Window,Worker,SharedStorageWorklet)]
+ interface Lock {
+   readonly attribute DOMString name;
+   readonly attribute LockMode mode;
+-- 
+2.37.1.windows.1
+
