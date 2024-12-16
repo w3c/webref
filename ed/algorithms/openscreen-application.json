@@ -1,0 +1,65 @@
+{
+  "spec": {
+    "title": "Open Screen Application Protocol",
+    "url": "https://w3c.github.io/openscreenprotocol/application.html"
+  },
+  "algorithms": [
+    {
+      "html": "For additional terms and idioms specific to the <a data-link-type=\"biblio\" href=\"https://w3c.github.io/openscreenprotocol/application.html#biblio-presentation-api\" title=\"Presentation API\">Presentation API</a> or <a data-link-type=\"biblio\" href=\"https://w3c.github.io/openscreenprotocol/application.html#biblio-remote-playback\" title=\"Remote Playback API\">Remote Playback API</a>,\nplease consult the respective specifications.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>A <a data-link-type=\"dfn\" href=\"https://w3c.github.io/openscreenprotocol/application.html#controller\" id=\"ref-for-controller①\">controller</a> must be able to determine if a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/openscreenprotocol/application.html#receiver\" id=\"ref-for-receiver①\">receiver</a> is reasonably\ncapable of rendering a specific <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/presentation-api/#dfn-presentation-request-url\" id=\"ref-for-dfn-presentation-request-url\">presentation request URL</a>.</p>"
+        },
+        {
+          "html": "<p>A controller must be able to start a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/presentation-api/#dfn-receiving-browsing-context\" id=\"ref-for-dfn-receiving-browsing-context①\">presentation</a> on a\nreceiver given a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/presentation-api/#dfn-presentation-request-url\" id=\"ref-for-dfn-presentation-request-url①\">presentation request URL</a> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/presentation-api/#dfn-presentation-identifier\" id=\"ref-for-dfn-presentation-identifier\">presentation\nidentifier</a>.</p>"
+        },
+        {
+          "html": "<p>A controller must be able to create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection\" id=\"ref-for-dom-presentationconnection\">PresentationConnection</a></code> to an\nexisting presentation on the receiver, given its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/presentation-api/#dfn-presentation-request-url\" id=\"ref-for-dfn-presentation-request-url②\">presentation request\nURL</a> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/presentation-api/#dfn-presentation-identifier\" id=\"ref-for-dfn-presentation-identifier①\">presentation identifier</a>.</p>"
+        },
+        {
+          "html": "<p>It must be possible to close a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection\" id=\"ref-for-dom-presentationconnection①\">PresentationConnection</a></code> between a\ncontroller and a presentation, and signal both parties with the reason why\nthe connection was closed.</p>"
+        },
+        {
+          "html": "<p>Multiple controllers must be able to connect to a single presentation\nsimultaneously.</p>"
+        },
+        {
+          "html": "<p>Messages sent by the controller must be delivered to the presentation (or\nvice versa) in a reliable and in-order fashion.</p>"
+        },
+        {
+          "html": "<p>If a message cannot be delivered, then the controller must be\nable to signal the receiver (or vice versa) that the connection should be\nclosed with reason <code>error</code>.</p>"
+        },
+        {
+          "html": "<p>The controller and presentation must be able to send and receive <code>DOMString</code> messages (represented as <code>string</code> type in ECMAScript).</p>"
+        },
+        {
+          "html": "<p>The controller and presentation must be able to send and receive binary\nmessages (represented as <code>Blob</code> objects in HTML5, or <code>ArrayBuffer</code> or <code>ArrayBufferView</code> types in ECMAScript).</p>"
+        },
+        {
+          "html": "<p>The controller must be able to signal to the receiver to\nterminate a presentation, given its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/presentation-api/#dfn-presentation-request-url\" id=\"ref-for-dfn-presentation-request-url③\">presentation request URL</a> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/presentation-api/#dfn-presentation-identifier\" id=\"ref-for-dfn-presentation-identifier②\">presentation identifier</a>.</p>"
+        },
+        {
+          "html": "<p>The receiver must be able to signal all connected controllers\nwhen a presentation is terminated.</p>"
+        }
+      ]
+    },
+    {
+      "html": "As messages are modified or extended over time, certain rules must be followed\nto maintain backwards compatibiilty with agents that understand older versions\nof messages.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If a required field is added to or removed from a message (either to/from the\nmessage directly or indirectly through the field of a field), a new type key\nmust be assigned to the message.  Is is effectively a new message and must not\nbe sent unless the receiving agent is known to understand the new type key.</p>"
+        },
+        {
+          "html": "<p>If an optional field is added to a message (either to the message directly\nor indirectly through the field of a field), the type key may remain unchanged\nif the behavior of older receiving agents that do not understand the added field\nis compatible with newer sending agents that include the field.\nOtherwise, a new type key must be assigned.</p>"
+        },
+        {
+          "html": "<p>If an optional field is removed from a message (either from the message\ndirectly or indirectly through the field of a field), the type key may remain\nunchanged if the behavior of newer receiving agents that do not understand the\nremoved field is compatible with older sending agents that include the field.\nOtherwise, a new type key must be assigned.</p>"
+        },
+        {
+          "html": "<p>Required fields may not be added or removed from array-based messages, such\nas audio-frame.</p>"
+        }
+      ]
+    }
+  ]
+}

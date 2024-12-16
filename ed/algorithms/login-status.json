@@ -1,0 +1,133 @@
+{
+  "spec": {
+    "title": "Login Status API",
+    "url": "https://w3c-fedid.github.io/login-status/"
+  },
+  "algorithms": [
+    {
+      "name": "get the login status",
+      "href": "https://w3c-fedid.github.io/login-status/#get-the-login-status",
+      "html": "To <dfn data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-login-status\">get the login status<a class=\"self-link\" href=\"https://w3c-fedid.github.io/login-status/#get-the-login-status\"></a></dfn> for an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①\">origin</a> <var>origin</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status/#login-status-map\" id=\"ref-for-login-status-map\">Login Status map</a>[<var>origin</var>] exists, return it.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status/#unknown\" id=\"ref-for-unknown\">unknown</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "set the login status",
+      "href": "https://w3c-fedid.github.io/login-status/#set-the-login-status",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-the-login-status\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the login status</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②\">origin</a> <var>origin</var> to\nvalue <var>value</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Assert that <var>value</var> is one of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status/#logged-in\" id=\"ref-for-logged-in\">logged-in</a> or <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status/#logged-out\" id=\"ref-for-logged-out\">logged-out</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status/#login-status-map\" id=\"ref-for-login-status-map①\">Login Status map</a>[<var>origin</var>] to <var>value</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "same-site with its ancestors",
+      "href": "https://w3c-fedid.github.io/login-status/#same-site-with-its-ancestors",
+      "html": "An <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> (<var>settings</var>) is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"same-site with its ancestors\" data-noexport=\"\" id=\"same-site-with-its-ancestors\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">same-site with its\n  ancestors</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> if the following algorithm returns <code>true</code>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a> has no <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a>,\nreturn <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>document</var> be <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated Document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> has no <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#concept-document-bc\" id=\"ref-for-concept-document-bc\">browsing context</a>, return <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>origin</var> be <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>navigable</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable\">node navigable</a>.</p>"
+        },
+        {
+          "html": "While <var>navigable</var> has a non-null <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-parent\" id=\"ref-for-nav-parent\">parent</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>navigable</var> to <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-parent\" id=\"ref-for-nav-parent①\">parent</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site\">same site</a> with <var>origin</var>, return <code>false</code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <code>true</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "process the login status header",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>origin</var> be the response’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url\">URL</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin③\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>client</var> be the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a>'s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a>.</p>"
+        },
+        {
+          "html": "If the request’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination\">destination</a> is not <code>\"document\"</code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>client</var> is null, return.</p>"
+            },
+            {
+              "html": "<p>If <var>origin</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site①\">same site</a> with the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">request</a>'s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a>, return.</p>"
+            },
+            {
+              "html": "<p>If <var>client</var> is not <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status/#same-site-with-its-ancestors\" id=\"ref-for-same-site-with-its-ancestors\">same-site with its ancestors</a>, return.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Assert that <var>value</var> is a tuple.</p>"
+        },
+        {
+          "html": "<p>Let <var>token</var> be the first entry of <var>value</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>token</var> is <code>\"logged-in\"</code>, <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status/#set-the-login-status\" id=\"ref-for-set-the-login-status\">set the login status</a> for <var>origin</var> to <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status/#logged-in\" id=\"ref-for-logged-in①\">logged-in</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>token</var> is <code>\"logged-out\"</code>, <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status/#set-the-login-status\" id=\"ref-for-set-the-login-status①\">set the login status</a> for <var>origin</var> to <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status/#logged-out\" id=\"ref-for-logged-out①\">logged-out</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "setStatus",
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/login-status/#dom-navigatorlogin-setstatus\" id=\"ref-for-dom-navigatorlogin-setstatus\">setStatus()</a></code> is called with argument <var>status</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object\">current settings object</a> is not <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status/#same-site-with-its-ancestors\" id=\"ref-for-same-site-with-its-ancestors①\">same-site with its ancestors</a>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>origin</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object①\">current settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status/#logged-in\" id=\"ref-for-logged-in②\">logged-in</a> if <var>status</var> is <code>\"logged-in\"</code> or <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status/#logged-out\" id=\"ref-for-logged-out②\">logged-out</a> if <var>status</var> is <code>\"logged-out\"</code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status/#set-the-login-status\" id=\"ref-for-set-the-login-status②\">Set the login status</a> for <var>origin</var> to <var>value</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

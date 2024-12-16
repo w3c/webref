@@ -20,8 +20,8 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceElementTiming/toJSON": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceElementTiming/url": {},
       "https://dom.spec.whatwg.org/": {},
+      "https://drafts.csswg.org/css-images-3/": {},
       "https://drafts.fxtf.org/geometry/": {},
-      "https://fetch.spec.whatwg.org/": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://infra.spec.whatwg.org/": {},
       "https://url.spec.whatwg.org/": {},
@@ -43,14 +43,14 @@
           "boundary-point-node"
         ]
       },
+      "https://drafts.csswg.org/css-images-3/": {
+        "anchors": [
+          "natural-size"
+        ]
+      },
       "https://drafts.fxtf.org/geometry-1/": {
         "anchors": [
           "domrectreadonly"
-        ]
-      },
-      "https://fetch.spec.whatwg.org/": {
-        "anchors": [
-          "concept-tao-check"
         ]
       },
       "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
@@ -117,8 +117,12 @@
       "https://w3c.github.io/paint-timing/": {
         "anchors": [
           "timing-eligible",
+          "painttimingmixin",
+          "default-paint-timestamp",
+          "painttimingmixin-paint-timing-info",
           "exposed-for-paint-timing",
           "pending-image-record",
+          "paint-timing-info",
           "pending-image-record-element",
           "pending-image-record-request",
           "pending-image-record-loadtime",

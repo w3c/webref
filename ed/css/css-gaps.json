@@ -1,0 +1,503 @@
+{
+  "spec": {
+    "title": "CSS Gap Decorations Module Level 1",
+    "url": "https://drafts.csswg.org/css-gaps-1/"
+  },
+  "properties": [
+    {
+      "name": "column-rule-break",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-break",
+      "value": "intersection | spanning-item | none",
+      "initial": "spanning-item",
+      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "intersection",
+          "prose": "Gap decorations start and end at every gap intersection point along the centerline of the gap.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-intersection",
+          "type": "value",
+          "value": "intersection"
+        },
+        {
+          "name": "spanning-item",
+          "prose": "Gap decorations start and end at every gap intersection point along the centerline of the gap which is either at an edge of the container or adjacent to a child item spanning across the gap per the steps below.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-spanning-item",
+          "type": "value",
+          "value": "spanning-item"
+        },
+        {
+          "name": "none",
+          "prose": "Gap decorations start and end at gap intersection points which are at an edge of the container only.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-none",
+          "type": "value",
+          "value": "none"
+        }
+      ],
+      "styleDeclaration": [
+        "column-rule-break",
+        "columnRuleBreak"
+      ]
+    },
+    {
+      "name": "row-rule-break",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-break",
+      "value": "intersection | spanning-item | none",
+      "initial": "spanning-item",
+      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "intersection",
+          "prose": "Gap decorations start and end at every gap intersection point along the centerline of the gap.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-intersection",
+          "type": "value",
+          "value": "intersection"
+        },
+        {
+          "name": "spanning-item",
+          "prose": "Gap decorations start and end at every gap intersection point along the centerline of the gap which is either at an edge of the container or adjacent to a child item spanning across the gap per the steps below.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-spanning-item",
+          "type": "value",
+          "value": "spanning-item"
+        },
+        {
+          "name": "none",
+          "prose": "Gap decorations start and end at gap intersection points which are at an edge of the container only.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-none",
+          "type": "value",
+          "value": "none"
+        }
+      ],
+      "styleDeclaration": [
+        "row-rule-break",
+        "rowRuleBreak"
+      ]
+    },
+    {
+      "name": "gap-rule-break",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-gap-rule-break",
+      "value": "<'column-rule-break'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-break and row-rule-break",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "gap-rule-break",
+        "gapRuleBreak"
+      ]
+    },
+    {
+      "name": "column-rule-outset",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-outset",
+      "value": "<length-percentage>",
+      "initial": "50%",
+      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "inherited": "no",
+      "percentages": "refer to the crossing gap width",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "column-rule-outset",
+        "columnRuleOutset"
+      ]
+    },
+    {
+      "name": "row-rule-outset",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-outset",
+      "value": "<length-percentage>",
+      "initial": "50%",
+      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "inherited": "no",
+      "percentages": "refer to the crossing gap width",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "row-rule-outset",
+        "rowRuleOutset"
+      ]
+    },
+    {
+      "name": "gap-rule-outset",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-gap-rule-outset",
+      "value": "<'column-rule-outset'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-outset and row-rule-outset",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "gap-rule-outset",
+        "gapRuleOutset"
+      ]
+    },
+    {
+      "name": "gap-rule-paint-order",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-gap-rule-paint-order",
+      "value": "row-over-column | column-over-row",
+      "initial": "row-over-column",
+      "appliesTo": "grid containers, flex containers, and masonry containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "gap-rule-paint-order",
+        "gapRulePaintOrder"
+      ]
+    },
+    {
+      "name": "column-rule-color",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-color",
+      "value": "<line-color-list> | <auto-line-color-list>",
+      "initial": "curerentcolor",
+      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "<color>",
+          "prose": "Sets the color of gap decorations.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-color-color",
+          "type": "value",
+          "value": "<color>"
+        }
+      ],
+      "styleDeclaration": [
+        "column-rule-color",
+        "columnRuleColor"
+      ]
+    },
+    {
+      "name": "row-rule-color",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-color",
+      "value": "<line-color-list> | <auto-line-color-list>",
+      "initial": "curerentcolor",
+      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "row-rule-color",
+        "rowRuleColor"
+      ]
+    },
+    {
+      "name": "column-rule-style",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-style",
+      "value": "<line-style-list> | <auto-line-style-list>",
+      "initial": "none",
+      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "column-rule-style",
+        "columnRuleStyle"
+      ]
+    },
+    {
+      "name": "row-rule-style",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-style",
+      "value": "<line-style-list> | <auto-line-style-list>",
+      "initial": "none",
+      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "row-rule-style",
+        "rowRuleStyle"
+      ]
+    },
+    {
+      "name": "column-rule-width",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-width",
+      "value": "<line-width-list> | <auto-line-width-list>",
+      "initial": "medium",
+      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "list of absolute lengths, snapped as a border width, or 0 under conditions described below",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "column-rule-width",
+        "columnRuleWidth"
+      ]
+    },
+    {
+      "name": "row-rule-width",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-width",
+      "value": "<line-width-list> | <auto-line-width-list>",
+      "initial": "medium",
+      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "list of absolute lengths, snapped as a border width, or 0 under conditions described below",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "row-rule-width",
+        "rowRuleWidth"
+      ]
+    },
+    {
+      "name": "column-rule",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule",
+      "value": "<gap-rule-list> | <auto-gap-rule-list>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "column-rule",
+        "columnRule"
+      ]
+    },
+    {
+      "name": "row-rule",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule",
+      "value": "<gap-rule-list> | <auto-gap-rule-list>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "row-rule",
+        "rowRule"
+      ]
+    },
+    {
+      "name": "gap-rule-color",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-gap-rule-color",
+      "value": "<'column-rule-color'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-color and row-rule-color",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "gap-rule-color",
+        "gapRuleColor"
+      ]
+    },
+    {
+      "name": "gap-rule-style",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-gap-rule-style",
+      "value": "<'column-rule-style'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-style and row-rule-style",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "gap-rule-style",
+        "gapRuleStyle"
+      ]
+    },
+    {
+      "name": "gap-rule-width",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-gap-rule-width",
+      "value": "<'column-rule-width'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-width and row-rule-width",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "gap-rule-width",
+        "gapRuleWidth"
+      ]
+    },
+    {
+      "name": "gap-rule",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-gap-rule",
+      "value": "<'column-rule'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule and row-rule",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "gap-rule",
+        "gapRule"
+      ]
+    }
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<line-color-list>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-color-list",
+      "type": "type",
+      "value": "[ <line-color-or-repeat> ]+"
+    },
+    {
+      "name": "<auto-line-color-list>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-line-color-list",
+      "type": "type",
+      "value": "[ <line-color-or-repeat> ]* <auto-repeat-line-color> [ <line-color-or-repeat> ]*"
+    },
+    {
+      "name": "<line-color-or-repeat>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-color-or-repeat",
+      "type": "type",
+      "value": "[ <color> | <repeat-line-color> ]"
+    },
+    {
+      "name": "<repeat-line-color>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-repeat-line-color",
+      "type": "type",
+      "value": "repeat( [ <integer [1,∞]> ] , [ <color> ]+ )"
+    },
+    {
+      "name": "<auto-repeat-line-color>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-repeat-line-color",
+      "type": "type",
+      "value": "repeat( auto , [ <color> ]+ )"
+    },
+    {
+      "name": "<line-style-list>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-style-list",
+      "type": "type",
+      "value": "[ <line-style-or-repeat> ]+"
+    },
+    {
+      "name": "<auto-line-style-list>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-line-style-list",
+      "type": "type",
+      "value": "[ <line-style-or-repeat> ]* <auto-repeat-line-style> [ <line-style-or-repeat> ]*"
+    },
+    {
+      "name": "<line-style-or-repeat>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-style-or-repeat",
+      "type": "type",
+      "value": "[ <line-style> | <repeat-line-style> ]"
+    },
+    {
+      "name": "<repeat-line-style>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-repeat-line-style",
+      "type": "type",
+      "value": "repeat( [ <integer [1,∞]> ] , [ <line-style> ]+ )"
+    },
+    {
+      "name": "<auto-repeat-line-style>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-repeat-line-style",
+      "type": "type",
+      "value": "repeat( auto , [ <line-style> ]+ )"
+    },
+    {
+      "name": "<line-width-list>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-width-list",
+      "type": "type",
+      "value": "[ <line-width-or-repeat> ]+"
+    },
+    {
+      "name": "<auto-line-width-list>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-line-width-list",
+      "type": "type",
+      "value": "[ <line-width-or-repeat> ]* <auto-repeat-line-width> [ <line-width-or-repeat> ]*"
+    },
+    {
+      "name": "<line-width-or-repeat>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-width-or-repeat",
+      "type": "type",
+      "value": "[ <line-width> | <repeat-line-width> ]"
+    },
+    {
+      "name": "<repeat-line-width>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-repeat-line-width",
+      "type": "type",
+      "value": "repeat( [ <integer [1,∞]> ] , [ <line-width> ]+ )"
+    },
+    {
+      "name": "<auto-repeat-line-width>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-repeat-line-width",
+      "type": "type",
+      "value": "repeat( auto , [ <line-width> ]+ )"
+    },
+    {
+      "name": "repeat()",
+      "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
+      "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat",
+      "type": "function"
+    },
+    {
+      "name": "<gap-rule-list>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-rule-list",
+      "type": "type",
+      "value": "<gap-rule-or-repeat> [ / <gap-rule-or-repeat> ]*"
+    },
+    {
+      "name": "<auto-gap-rule-list>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-gap-rule-list",
+      "type": "type",
+      "value": "[ [ <gap-rule-or-repeat> ] / ]* <auto-repeat-gap-rule> [ / [ <gap-rule-or-repeat> ] ]*"
+    },
+    {
+      "name": "<gap-rule-or-repeat>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-rule-or-repeat",
+      "type": "type",
+      "value": "[ <gap-rule> | <repeat-gap-rule> ]"
+    },
+    {
+      "name": "<repeat-gap-rule>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-repeat-gap-rule",
+      "type": "type",
+      "value": "repeat( [ <integer [1,∞]> ] , [ <gap-rule> ]# )"
+    },
+    {
+      "name": "<auto-repeat-gap-rule>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-repeat-gap-rule",
+      "type": "type",
+      "value": "repeat( auto , [ <gap-rule> ]# )"
+    },
+    {
+      "name": "<gap-rule>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-rule",
+      "type": "type",
+      "value": "[ <line-width> || <line-style> || <color> ]"
+    }
+  ]
+}
