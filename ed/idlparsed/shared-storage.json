@@ -13,7 +13,8 @@
         ],
         "SharedStorageWorklet": [
           "SharedStorageWorkletGlobalScope",
-          "SharedStorage"
+          "SharedStorage",
+          "SharedStorageWorkletNavigator"
         ]
       }
     },
@@ -288,7 +289,7 @@
         "href": "https://wicg.github.io/shared-storage/#callbackdef-runfunctionforsharedstorageselecturloperation"
       },
       "SharedStorageWorkletGlobalScope": {
-        "fragment": "[Exposed=SharedStorageWorklet, Global=SharedStorageWorklet]\ninterface SharedStorageWorkletGlobalScope : WorkletGlobalScope {\n  undefined register(DOMString name,\n                     Function operationCtor);\n\n  readonly attribute SharedStorage sharedStorage;\n  readonly attribute PrivateAggregation privateAggregation;\n\n  Promise<sequence<StorageInterestGroup>> interestGroups();\n};",
+        "fragment": "[Exposed=SharedStorageWorklet, Global=SharedStorageWorklet]\ninterface SharedStorageWorkletGlobalScope : WorkletGlobalScope {\n  undefined register(DOMString name,\n                     Function operationCtor);\n\n  readonly attribute SharedStorage sharedStorage;\n  readonly attribute PrivateAggregation privateAggregation;\n\n  Promise<sequence<StorageInterestGroup>> interestGroups();\n\n  readonly attribute SharedStorageWorkletNavigator navigator;\n};",
         "type": "interface",
         "name": "SharedStorageWorkletGlobalScope",
         "inheritance": "WorkletGlobalScope",
@@ -407,6 +408,22 @@
             "extAttrs": [],
             "special": "",
             "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-interestgroups"
+          },
+          {
+            "type": "attribute",
+            "name": "navigator",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SharedStorageWorkletNavigator"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-navigator"
           }
         ],
         "extAttrs": [
@@ -1384,6 +1401,26 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://wicg.github.io/shared-storage/#htmlsharedstoragewritableelementutils"
+      },
+      "SharedStorageWorkletNavigator": {
+        "fragment": "[\n  Exposed=SharedStorageWorklet\n] interface SharedStorageWorkletNavigator {};",
+        "type": "interface",
+        "name": "SharedStorageWorkletNavigator",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "SharedStorageWorklet"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#sharedstorageworkletnavigator"
       }
     },
     "idlExtendedNames": {
@@ -1467,6 +1504,15 @@
           "extAttrs": [],
           "partial": true
         }
+      ],
+      "SharedStorageWorkletNavigator": [
+        {
+          "fragment": "SharedStorageWorkletNavigator includes NavigatorLocks;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SharedStorageWorkletNavigator",
+          "includes": "NavigatorLocks"
+        }
       ]
     },
     "globals": {
@@ -1481,7 +1527,8 @@
       ],
       "SharedStorageWorklet": [
         "SharedStorageWorkletGlobalScope",
-        "SharedStorage"
+        "SharedStorage",
+        "SharedStorageWorkletNavigator"
       ]
     },
     "dependencies": {
@@ -1496,7 +1543,8 @@
         "Function",
         "SharedStorage",
         "PrivateAggregation",
-        "StorageInterestGroup"
+        "StorageInterestGroup",
+        "SharedStorageWorkletNavigator"
       ],
       "SharedStorageUrlWithMetadata": [],
       "Window": [
@@ -1525,7 +1573,10 @@
       "HTMLImageElement": [
         "HTMLSharedStorageWritableElementUtils"
       ],
-      "RequestInit": []
+      "RequestInit": [],
+      "SharedStorageWorkletNavigator": [
+        "NavigatorLocks"
+      ]
     },
     "externalDependencies": [
       "FencedFrameConfig",

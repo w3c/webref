@@ -1,0 +1,39 @@
+{
+  "name": "SharedStorageWorkletNavigator",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Shared Storage API",
+      "url": "https://wicg.github.io/shared-storage/"
+    },
+    "fragment": "[\n  Exposed=SharedStorageWorklet\n] interface SharedStorageWorkletNavigator {};",
+    "href": "https://wicg.github.io/shared-storage/#sharedstorageworkletnavigator"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Shared Storage API",
+        "url": "https://wicg.github.io/shared-storage/"
+      },
+      "fragment": "SharedStorageWorkletNavigator includes NavigatorLocks;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "NavigatorLocks",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Web Locks API",
+          "url": "https://www.w3.org/TR/web-locks/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin NavigatorLocks {\n  readonly attribute LockManager locks;\n};",
+        "href": "https://w3c.github.io/web-locks/#navigatorlocks"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

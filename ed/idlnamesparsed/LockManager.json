@@ -6,7 +6,7 @@
       "title": "Web Locks API",
       "url": "https://www.w3.org/TR/web-locks/"
     },
-    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface LockManager {\n  Promise<any> request(DOMString name,\n                       LockGrantedCallback callback);\n  Promise<any> request(DOMString name,\n                       LockOptions options,\n                       LockGrantedCallback callback);\n\n  Promise<LockManagerSnapshot> query();\n};",
+    "fragment": "[SecureContext, Exposed=(Window,Worker,SharedStorageWorklet)]\ninterface LockManager {\n  Promise<any> request(DOMString name,\n                       LockGrantedCallback callback);\n  Promise<any> request(DOMString name,\n                       LockOptions options,\n                       LockGrantedCallback callback);\n\n  Promise<LockManagerSnapshot> query();\n};",
     "href": "https://w3c.github.io/web-locks/#lockmanager"
   },
   "extended": [],

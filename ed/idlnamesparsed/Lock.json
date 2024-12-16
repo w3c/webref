@@ -6,7 +6,7 @@
       "title": "Web Locks API",
       "url": "https://www.w3.org/TR/web-locks/"
     },
-    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface Lock {\n  readonly attribute DOMString name;\n  readonly attribute LockMode mode;\n};",
+    "fragment": "[SecureContext, Exposed=(Window,Worker,SharedStorageWorklet)]\ninterface Lock {\n  readonly attribute DOMString name;\n  readonly attribute LockMode mode;\n};",
     "href": "https://w3c.github.io/web-locks/#lock"
   },
   "extended": [],

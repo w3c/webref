@@ -8,4 +8,6 @@ interface SharedStorageWorkletGlobalScope : WorkletGlobalScope {
   readonly attribute PrivateAggregation privateAggregation;
 
   Promise<sequence<StorageInterestGroup>> interestGroups();
+
+  readonly attribute SharedStorageWorkletNavigator navigator;
 };

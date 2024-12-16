@@ -650,27 +650,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-sharedstorageworkletglobalscope-sharedstorage",
-      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-sharedstorage",
-      "linkingText": [
-        "sharedStorage"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "SharedStorageWorkletGlobalScope"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "request-destination-monkey-patch",
-        "href": "https://wicg.github.io/shared-storage/#request-destination-monkey-patch",
-        "title": "Monkey Patch for request destination",
-        "number": "2.3.1"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-sharedstorageworkletglobalscope-privateaggregation",
       "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-privateaggregation",
       "linkingText": [
@@ -755,6 +734,48 @@
       "definedIn": "prose"
     },
     {
+      "id": "sharedstorageworkletglobalscope-shared-storage-instance",
+      "href": "https://wicg.github.io/shared-storage/#sharedstorageworkletglobalscope-shared-storage-instance",
+      "linkingText": [
+        "shared storage instance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SharedStorageWorkletGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "request-destination-monkey-patch",
+        "href": "https://wicg.github.io/shared-storage/#request-destination-monkey-patch",
+        "title": "Monkey Patch for request destination",
+        "number": "2.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sharedstorageworkletglobalscope-navigator-instance",
+      "href": "https://wicg.github.io/shared-storage/#sharedstorageworkletglobalscope-navigator-instance",
+      "linkingText": [
+        "navigator instance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SharedStorageWorkletGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "request-destination-monkey-patch",
+        "href": "https://wicg.github.io/shared-storage/#request-destination-monkey-patch",
+        "title": "Monkey Patch for request destination",
+        "number": "2.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-sharedstorageworkletglobalscope-register",
       "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-register",
       "linkingText": [
@@ -797,17 +818,38 @@
       "definedIn": "prose"
     },
     {
-      "id": "sharedstorageworkletglobalscope-sharedstorage-getter",
-      "href": "https://wicg.github.io/shared-storage/#sharedstorageworkletglobalscope-sharedstorage-getter",
+      "id": "dom-sharedstorageworkletglobalscope-sharedstorage",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-sharedstorage",
       "linkingText": [
-        "sharedStorage getter"
+        "sharedStorage"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "attribute",
       "for": [
         "SharedStorageWorkletGlobalScope"
       ],
-      "access": "private",
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scope-algo",
+        "href": "https://wicg.github.io/shared-storage/#scope-algo",
+        "title": "SharedStorageWorkletGlobalScope algorithms",
+        "number": "2.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-sharedstorageworkletglobalscope-navigator",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-navigator",
+      "linkingText": [
+        "navigator"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SharedStorageWorkletGlobalScope"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "scope-algo",
@@ -3464,6 +3506,82 @@
       "definedIn": "prose"
     },
     {
+      "id": "shared-storage-lock-managers-map",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-lock-managers-map",
+      "linkingText": [
+        "shared storage lock managers map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "user-agent-associated-state",
+        "href": "https://wicg.github.io/shared-storage/#user-agent-associated-state",
+        "title": "User Agent Associated State",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sharedstorageworkletnavigator",
+      "href": "https://wicg.github.io/shared-storage/#sharedstorageworkletnavigator",
+      "linkingText": [
+        "SharedStorageWorkletNavigator"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-storage-worklet-navigator-interface",
+        "href": "https://wicg.github.io/shared-storage/#shared-storage-worklet-navigator-interface",
+        "title": "SharedStorageWorkletNavigator interface",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "lockmanager",
+      "href": "https://wicg.github.io/shared-storage/#lockmanager",
+      "linkingText": [
+        "LockManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-locks-api-monkey-patches",
+        "href": "https://wicg.github.io/shared-storage/#web-locks-api-monkey-patches",
+        "title": "Web Locks IDLs Monkey Patches",
+        "number": "9.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "lock",
+      "href": "https://wicg.github.io/shared-storage/#lock",
+      "linkingText": [
+        "Lock"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-locks-api-monkey-patches",
+        "href": "https://wicg.github.io/shared-storage/#web-locks-api-monkey-patches",
+        "title": "Web Locks IDLs Monkey Patches",
+        "number": "9.3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "permissionspolicy-shared-storage",
       "href": "https://wicg.github.io/shared-storage/#permissionspolicy-shared-storage",
       "linkingText": [
@@ -3479,8 +3597,7 @@
       "heading": {
         "id": "permission",
         "href": "https://wicg.github.io/shared-storage/#permission",
-        "title": "Permissions Policy Integration",
-        "number": "9"
+        "title": "10. Permissions Policy Integration"
       },
       "definedIn": "prose"
     },
@@ -3500,8 +3617,7 @@
       "heading": {
         "id": "permission",
         "href": "https://wicg.github.io/shared-storage/#permission",
-        "title": "Permissions Policy Integration",
-        "number": "9"
+        "title": "10. Permissions Policy Integration"
       },
       "definedIn": "prose"
     }

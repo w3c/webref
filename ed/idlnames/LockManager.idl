@@ -1,5 +1,5 @@
 // Source: Web Locks API (https://www.w3.org/TR/web-locks/)
-[SecureContext, Exposed=(Window,Worker)]
+[SecureContext, Exposed=(Window,Worker,SharedStorageWorklet)]
 interface LockManager {
   Promise<any> request(DOMString name,
                        LockGrantedCallback callback);

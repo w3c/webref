@@ -14,6 +14,10 @@
         "Worker": [
           "LockManager",
           "Lock"
+        ],
+        "SharedStorageWorklet": [
+          "LockManager",
+          "Lock"
         ]
       }
     },
@@ -53,7 +57,7 @@
         "href": "https://w3c.github.io/web-locks/#navigatorlocks"
       },
       "LockManager": {
-        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface LockManager {\n  Promise<any> request(DOMString name,\n                       LockGrantedCallback callback);\n  Promise<any> request(DOMString name,\n                       LockOptions options,\n                       LockGrantedCallback callback);\n\n  Promise<LockManagerSnapshot> query();\n};",
+        "fragment": "[SecureContext, Exposed=(Window,Worker,SharedStorageWorklet)]\ninterface LockManager {\n  Promise<any> request(DOMString name,\n                       LockGrantedCallback callback);\n  Promise<any> request(DOMString name,\n                       LockOptions options,\n                       LockGrantedCallback callback);\n\n  Promise<LockManagerSnapshot> query();\n};",
         "type": "interface",
         "name": "LockManager",
         "inheritance": null,
@@ -234,6 +238,9 @@
                 },
                 {
                   "value": "Worker"
+                },
+                {
+                  "value": "SharedStorageWorklet"
                 }
               ]
             },
@@ -509,7 +516,7 @@
         "href": "https://w3c.github.io/web-locks/#dictdef-lockinfo"
       },
       "Lock": {
-        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface Lock {\n  readonly attribute DOMString name;\n  readonly attribute LockMode mode;\n};",
+        "fragment": "[SecureContext, Exposed=(Window,Worker,SharedStorageWorklet)]\ninterface Lock {\n  readonly attribute DOMString name;\n  readonly attribute LockMode mode;\n};",
         "type": "interface",
         "name": "Lock",
         "inheritance": null,
@@ -565,6 +572,9 @@
                 },
                 {
                   "value": "Worker"
+                },
+                {
+                  "value": "SharedStorageWorklet"
                 }
               ]
             },
@@ -602,6 +612,10 @@
         "Lock"
       ],
       "Worker": [
+        "LockManager",
+        "Lock"
+      ],
+      "SharedStorageWorklet": [
         "LockManager",
         "Lock"
       ]
