@@ -1,0 +1,28 @@
+From 0e9b836f6073e971dac39fd0c24bf3f47306216c Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Mon, 16 Dec 2024 15:16:50 +0100
+Subject: [PATCH] Drop monkey patches of Web Locks
+
+Pending integration in Web Locks. No specific issue but patch will fail
+once done.
+---
+ ed/idl/shared-storage.idl | 6 ------
+ 1 file changed, 6 deletions(-)
+
+diff --git a/ed/idl/shared-storage.idl b/ed/idl/shared-storage.idl
+index 353292fa8..b6863eff8 100644
+--- a/ed/idl/shared-storage.idl
++++ b/ed/idl/shared-storage.idl
+@@ -114,9 +114,3 @@ partial dictionary RequestInit {
+ ] interface SharedStorageWorkletNavigator {};
+ 
+ SharedStorageWorkletNavigator includes NavigatorLocks;
+-
+-[SecureContext, Exposed=(Window,Worker,SharedStorageWorklet)]
+-interface LockManager {};
+-
+-[SecureContext, Exposed=(Window,Worker,SharedStorageWorklet)]
+-interface Lock {};
+-- 
+2.37.1.windows.1
+
