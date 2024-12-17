@@ -1,0 +1,96 @@
+; GENERATED CONTENT - DO NOT EDIT
+; Content was automatically extracted by Reffy into webref
+; (https://github.com/w3c/webref)
+; Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
+
+bluetooth.BluetoothServiceUuid = text;
+bluetooth.BluetoothManufacturerData = { key: uint, data: tstr };
+
+bluetooth.RequestDevice = text
+
+bluetooth.RequestDeviceInfo = {
+   id: bluetooth.RequestDevice,
+   name: text / null,
+}
+
+bluetooth.RequestDevicePrompt = text
+
+bluetooth.ScanRecord = {
+  ? name: text,
+  ? uuids: [ * bluetooth.BluetoothServiceUuid ],
+  ? appearance: number,
+  ? manufacturerData: [ * bluetooth.BluetoothManufacturerData ],
+}
+
+bluetooth.HandleRequestDevicePrompt = (
+   method: "bluetooth.handleRequestDevicePrompt",
+   params: bluetooth.HandleRequestDevicePromptParameters,
+)
+
+bluetooth.HandleRequestDevicePromptParameters = {
+   context: text,
+   prompt: bluetooth.RequestDevicePrompt,
+   (
+       bluetooth.HandleRequestDevicePromptAcceptParameters //
+       bluetooth.HandleRequestDevicePromptCancelParameters
+   )
+}
+
+bluetooth.HandleRequestDevicePromptAcceptParameters = (
+   accept: true,
+   device: bluetooth.RequestDevice,
+)
+
+bluetooth.HandleRequestDevicePromptCancelParameters = (
+   accept: false,
+)
+
+bluetooth.simulateAdapter = (
+   method: "bluetooth.simulateAdapter",
+   params: bluetooth.SimulateAdapterParameters,
+)
+
+bluetooth.SimulateAdapterParameters = {
+   context: text,
+   state: "absent" / "powered-off" / "powered-on"
+}
+
+bluetooth.SimulatePreconnectedPeripheral = (
+   method: "bluetooth.simulatePreconnectedPeripheral",
+   params: bluetooth.SimulatePreconnectedPeripheralParameters,
+)
+
+bluetooth.SimulatePreconnectedPeripheralParameters = {
+   context: text,
+   address: text,
+   name: text,
+   manufacturerData: [ * bluetooth.BluetoothManufacturerData ],
+   knownServiceUuids: [ * bluetooth.BluetoothServiceUuid ]
+}
+
+bluetooth.SimulateAdvertisement = (
+   method: "bluetooth.simulateAdvertisement",
+   params: bluetooth.SimulateAdvertisementParameters,
+)
+
+bluetooth.SimulateAdvertisementParameters = {
+   context: text,
+   scanEntry: bluetooth.SimulateAdvertisementScanEntryParameters
+}
+
+bluetooth.SimulateAdvertisementScanEntryParameters = {
+   deviceAddress: text,
+   rssi: number,
+   scanRecord: bluetooth.ScanRecord
+}
+
+bluetooth.RequestDevicePromptUpdated = (
+   method: "bluetooth.requestDevicePromptUpdated",
+   params: bluetooth.RequestDevicePromptUpdatedParameters
+)
+
+bluetooth.RequestDevicePromptUpdatedParameters = {
+   context: text,
+   prompt: bluetooth.RequestDevicePrompt,
+   devices: [* bluetooth.RequestDeviceInfo],
+}
