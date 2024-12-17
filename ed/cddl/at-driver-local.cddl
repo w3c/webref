@@ -3,4 +3,96 @@
 ; (https://github.com/w3c/webref)
 ; Source: AT Driver (https://w3c.github.io/at-driver/)
 
-undefined
+Extensible = {
+  *text => any
+}
+
+Message = (
+  CommandResponse //
+  ErrorResponse //
+  Event
+)
+
+CommandResponse = {
+  id: uint,
+  result: ResultData,
+  Extensible,
+}
+
+ErrorResponse = {
+  id: uint / null,
+  error: "unknown error" / "unknown command" / "invalid argument" / "session not created",
+  message: text,
+  ?stacktrace: text,
+  Extensible,
+}
+
+ResultData = (
+  EmptyResult /
+  SessionResult /
+  SettingsResult
+)
+
+EmptyResult = {}
+
+Event = {
+  EventData,
+  Extensible,
+}
+
+EventData = (
+  InteractionEvent
+)
+
+SessionResult = (SessionNewResult)
+
+CapabilitiesRequest = {
+  ?atName: text,
+  ?atVersion: text,
+  ?platformName: text,
+  Extensible,
+}
+
+SessionNewResult = {
+  sessionId: text,
+  capabilities: {
+    atName: text,
+    atVersion: text,
+    platformName: text,
+    Extensible,
+  }
+}
+
+SettingsResult = {
+  SettingsGetSettingsResult
+}
+
+SettingsGetSettingsResult = {
+  settings: [1* SettingsGetSettingsResultItem ],
+}
+
+SettingsGetSettingsResultItem = {
+  name: text,
+  value: any,
+  Extensible,
+}
+
+EmptyResult
+
+SettingsGetSettingsResult
+
+SettingsGetSettingsResult
+
+InteractionEvent = (InteractionCapturedOutputEvent)
+
+InteractionCapturedOutputParameters = {
+  data: text,
+  Extensible,
+}
+
+EmptyResult
+
+InteractionCapturedOutputEvent = {
+  method: "interaction.capturedOutput",
+  params: InteractionCapturedOutputParameters
+}

@@ -3,4 +3,10 @@
 ; (https://github.com/w3c/webref)
 ; Source: Permissions (https://w3c.github.io/permissions/)
 
-undefined
+permissions.PermissionDescriptor = {
+  name: text,
+}
+
+permissions.PermissionState = "granted" / "denied" / "prompt"
+
+EmptyResult

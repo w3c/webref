@@ -3,4 +3,181 @@
 ; (https://github.com/w3c/webref)
 ; Source: AT Driver (https://w3c.github.io/at-driver/)
 
-undefined
+Extensible = {
+  *text => any
+}
+
+Command = {
+  id: uint,
+  CommandData,
+  Extensible,
+}
+
+CommandData = (
+  SessionCommand //
+  SettingsCommand //
+  InteractionCommand
+)
+
+EmptyParams = { Extensible }
+
+Extensible = {
+  *text => any
+}
+
+Message = (
+  CommandResponse //
+  ErrorResponse //
+  Event
+)
+
+CommandResponse = {
+  id: uint,
+  result: ResultData,
+  Extensible,
+}
+
+ErrorResponse = {
+  id: uint / null,
+  error: "unknown error" / "unknown command" / "invalid argument" / "session not created",
+  message: text,
+  ?stacktrace: text,
+  Extensible,
+}
+
+ResultData = (
+  EmptyResult /
+  SessionResult /
+  SettingsResult
+)
+
+EmptyResult = {}
+
+Event = {
+  EventData,
+  Extensible,
+}
+
+EventData = (
+  InteractionEvent
+)
+
+SessionCommand = (SessionNewCommand)
+
+SessionResult = (SessionNewResult)
+
+CapabilitiesRequest = {
+  ?atName: text,
+  ?atVersion: text,
+  ?platformName: text,
+  Extensible,
+}
+
+SessionNewCommand = {
+  method: "session.new",
+  params: {capabilities: CapabilitiesRequestParameters},
+}
+
+CapabilitiesRequestParameters = {
+  ?alwaysMatch: CapabilitiesRequest,
+}
+
+SessionNewResult = {
+  sessionId: text,
+  capabilities: {
+    atName: text,
+    atVersion: text,
+    platformName: text,
+    Extensible,
+  }
+}
+
+SettingsCommand = {
+  SettingsSetSettingsCommand //
+  SettingsGetSettingsCommand //
+  SettingsGetSupportedSettingsCommand
+}
+
+SettingsResult = {
+  SettingsGetSettingsResult
+}
+
+SettingsGetSettingsResult = {
+  settings: [1* SettingsGetSettingsResultItem ],
+}
+
+SettingsGetSettingsResultItem = {
+  name: text,
+  value: any,
+  Extensible,
+}
+
+SettingsSetSettingsCommand = {
+  method: "settings.setSettings",
+  params: SettingsSetSettingsParameters
+}
+
+SettingsSetSettingsParameters = {
+  settings: [1* SettingsSetSettingsParametersItem ],
+}
+
+SettingsSetSettingsParametersItem = {
+  name: text,
+  value: any,
+  Extensible,
+}
+
+EmptyResult
+
+SettingsGetSettingsCommand = {
+  method: "settings.getSettings",
+  params: SettingsGetSettingsParameters
+}
+
+SettingsGetSettingsParameters = {
+  settings: [1* SettingsGetSettingsParametersItem ],
+}
+
+SettingsGetSettingsParametersItem = {
+  name: text,
+  Extensible,
+}
+
+SettingsGetSettingsResult
+
+SettingsGetSupportedSettingsCommand = {
+  method: "settings.getSupportedSettings",
+  params: EmptyParams
+}
+
+SettingsGetSettingsResult
+
+InteractionCommand = (InteractionPressKeysCommand)
+
+InteractionEvent = (InteractionCapturedOutputEvent)
+
+InteractionCapturedOutputParameters = {
+  data: text,
+  Extensible,
+}
+
+InteractionPressKeysCommand = {
+  method: "interaction.pressKeys",
+  params: InteractionPressKeysParameters
+}
+
+InteractionPressKeysParameters = {
+  "keys" => KeyCombination,
+  Extensible,
+}
+
+KeyCombination = [
+  1* text
+]
+
+EmptyResult
+
+InteractionCapturedOutputEvent = {
+  method: "interaction.capturedOutput",
+  params: InteractionCapturedOutputParameters
+}

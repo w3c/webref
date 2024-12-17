@@ -3,4 +3,26 @@
 ; (https://github.com/w3c/webref)
 ; Source: Permissions (https://w3c.github.io/permissions/)
 
-undefined
+PermissionsCommand = (
+  permissions.setPermission
+)
+
+permissions.PermissionDescriptor = {
+  name: text,
+}
+
+permissions.PermissionState = "granted" / "denied" / "prompt"
+
+permissions.setPermission = (
+  method: "permissions.setPermission",
+  params: permissions.SetPermissionParameters
+)
+
+permissions.SetPermissionParameters = {
+  descriptor: permissions.PermissionDescriptor,
+  state: permissions.PermissionState,
+  origin: text,
+  ? userContext: text,
+}
+
+EmptyResult

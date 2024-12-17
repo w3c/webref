@@ -3,4 +3,102 @@
 ; (https://github.com/w3c/webref)
 ; Source: AT Driver (https://w3c.github.io/at-driver/)
 
-undefined
+Extensible = {
+  *text => any
+}
+
+Command = {
+  id: uint,
+  CommandData,
+  Extensible,
+}
+
+CommandData = (
+  SessionCommand //
+  SettingsCommand //
+  InteractionCommand
+)
+
+EmptyParams = { Extensible }
+
+SessionCommand = (SessionNewCommand)
+
+CapabilitiesRequest = {
+  ?atName: text,
+  ?atVersion: text,
+  ?platformName: text,
+  Extensible,
+}
+
+SessionNewCommand = {
+  method: "session.new",
+  params: {capabilities: CapabilitiesRequestParameters},
+}
+
+CapabilitiesRequestParameters = {
+  ?alwaysMatch: CapabilitiesRequest,
+}
+
+SettingsCommand = {
+  SettingsSetSettingsCommand //
+  SettingsGetSettingsCommand //
+  SettingsGetSupportedSettingsCommand
+}
+
+SettingsSetSettingsCommand = {
+  method: "settings.setSettings",
+  params: SettingsSetSettingsParameters
+}
+
+SettingsSetSettingsParameters = {
+  settings: [1* SettingsSetSettingsParametersItem ],
+}
+
+SettingsSetSettingsParametersItem = {
+  name: text,
+  value: any,
+  Extensible,
+}
+
+EmptyResult
+
+SettingsGetSettingsCommand = {
+  method: "settings.getSettings",
+  params: SettingsGetSettingsParameters
+}
+
+SettingsGetSettingsParameters = {
+  settings: [1* SettingsGetSettingsParametersItem ],
+}
+
+SettingsGetSettingsParametersItem = {
+  name: text,
+  Extensible,
+}
+
+SettingsGetSettingsResult
+
+SettingsGetSupportedSettingsCommand = {
+  method: "settings.getSupportedSettings",
+  params: EmptyParams
+}
+
+SettingsGetSettingsResult
+
+InteractionCommand = (InteractionPressKeysCommand)
+
+InteractionPressKeysCommand = {
+  method: "interaction.pressKeys",
+  params: InteractionPressKeysParameters
+}
+
+InteractionPressKeysParameters = {
+  "keys" => KeyCombination,
+  Extensible,
+}
+
+KeyCombination = [
+  1* text
+]
+
+EmptyResult
