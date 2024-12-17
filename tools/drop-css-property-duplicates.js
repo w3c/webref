@@ -86,6 +86,10 @@ const supersededBy = {
   // https://drafts.csswg.org/css-color-hdr/#color-function
   'css-color': 'css-color-hdr',
 
+  // CSS Gap Decorations supersedes CSS Multi-column layout
+  // https://drafts.csswg.org/css-gaps-1/#color-style-width
+  'css-multicol': 'css-gaps',
+
   // See note in https://svgwg.org/specs/strokes/#sotd
   // "In the future, this specification will supersede the SVG 2 Stroke
   // definition, however at this time the SVG 2 Stroke definition must be
