@@ -9,7 +9,15 @@
     "fragment": "[Exposed=Window]\ninterface PerformanceElementTiming : PerformanceEntry {\n    readonly attribute DOMHighResTimeStamp renderTime;\n    readonly attribute DOMHighResTimeStamp loadTime;\n    readonly attribute DOMRectReadOnly intersectionRect;\n    readonly attribute DOMString identifier;\n    readonly attribute unsigned long naturalWidth;\n    readonly attribute unsigned long naturalHeight;\n    readonly attribute DOMString id;\n    readonly attribute Element? element;\n    readonly attribute DOMString url;\n    [Default] object toJSON();\n};",
     "href": "https://wicg.github.io/element-timing/#performanceelementtiming"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Element Timing API",
+        "url": "https://wicg.github.io/element-timing/"
+      },
+      "fragment": "PerformanceElementTiming includes PaintTimingMixin;"
+    }
+  ],
   "inheritance": {
     "name": "PerformanceEntry",
     "type": "interface",
@@ -25,5 +33,21 @@
     "inheritance": null,
     "includes": []
   },
-  "includes": []
+  "includes": [
+    {
+      "name": "PaintTimingMixin",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Paint Timing",
+          "url": "https://www.w3.org/TR/paint-timing/"
+        },
+        "fragment": "[Exposed=Window]\ninterface mixin PaintTimingMixin {\n    readonly attribute DOMHighResTimeStamp paintTime;\n    readonly attribute DOMHighResTimeStamp? presentationTime;\n};",
+        "href": "https://w3c.github.io/paint-timing/#painttimingmixin"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
 }

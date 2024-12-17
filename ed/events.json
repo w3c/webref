@@ -195,7 +195,11 @@
     "type": "advertisementreceived",
     "targets": [
       {
-        "target": "Bluetooth"
+        "target": "BluetoothDevice",
+        "bubbles": true,
+        "bubblingPath": [
+          "Bluetooth"
+        ]
       }
     ],
     "interface": "BluetoothAdvertisingEvent"

@@ -1,0 +1,370 @@
+{
+  "spec": {
+    "title": "Open Screen Network Protocol",
+    "url": "https://w3c.github.io/openscreenprotocol/network.html"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#title",
+      "level": 1,
+      "title": "Open Screen Network Protocol"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.1"
+    },
+    {
+      "id": "requirements",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#requirements",
+      "level": 2,
+      "title": "Requirements",
+      "number": "2"
+    },
+    {
+      "id": "requirements-general",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#requirements-general",
+      "level": 3,
+      "title": "General Requirements",
+      "number": "2.1"
+    },
+    {
+      "id": "requirements-non-functional",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#requirements-non-functional",
+      "level": 3,
+      "title": "Non-Functional Requirements",
+      "number": "2.2"
+    },
+    {
+      "id": "discovery",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#discovery",
+      "level": 2,
+      "title": "Discovery with mDNS",
+      "number": "3"
+    },
+    {
+      "id": "computing-agent-fingerprint",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#computing-agent-fingerprint",
+      "level": 3,
+      "title": "Computing the Agent Fingerprint",
+      "number": "3.1"
+    },
+    {
+      "id": "computing-certificate-serial-number",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#computing-certificate-serial-number",
+      "level": 3,
+      "title": "Computing the Certificate Serial Number",
+      "number": "3.2"
+    },
+    {
+      "id": "computing-agent-hostname",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#computing-agent-hostname",
+      "level": 3,
+      "title": "Computing the Agent Hostname",
+      "number": "3.3"
+    },
+    {
+      "id": "transport",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#transport",
+      "level": 2,
+      "title": "Transport and metadata discovery with QUIC",
+      "number": "4"
+    },
+    {
+      "id": "tls-13",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#tls-13",
+      "level": 3,
+      "title": "TLS 1.3",
+      "number": "4.1"
+    },
+    {
+      "id": "certificates",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#certificates",
+      "level": 3,
+      "title": "Agent Certificates",
+      "number": "4.2"
+    },
+    {
+      "id": "messages",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#messages",
+      "level": 2,
+      "title": "Messages delivery using CBOR and QUIC streams",
+      "number": "5"
+    },
+    {
+      "id": "authentication",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#authentication",
+      "level": 2,
+      "title": "Authentication",
+      "number": "6"
+    },
+    {
+      "id": "authentication-with-spake2",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#authentication-with-spake2",
+      "level": 3,
+      "title": "Authentication with SPAKE2",
+      "number": "6.1"
+    },
+    {
+      "id": "security-privacy",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#security-privacy",
+      "level": 2,
+      "title": "Security and Privacy",
+      "number": "7"
+    },
+    {
+      "id": "threat-models",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#threat-models",
+      "level": 3,
+      "title": "Threat Models",
+      "number": "7.1"
+    },
+    {
+      "id": "passive-network-attackers",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#passive-network-attackers",
+      "level": 4,
+      "title": "Passive Network Attackers",
+      "number": "7.1.1"
+    },
+    {
+      "id": "active-network-attackers",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#active-network-attackers",
+      "level": 4,
+      "title": "Active Network Attackers",
+      "number": "7.1.2"
+    },
+    {
+      "id": "denial-of-service",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#denial-of-service",
+      "level": 4,
+      "title": "Denial of Service",
+      "number": "7.1.3"
+    },
+    {
+      "id": "security-privacy-questions",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#security-privacy-questions",
+      "level": 3,
+      "title": "Open Screen Network Protocol Security and Privacy Considerations",
+      "number": "7.2"
+    },
+    {
+      "id": "personally-identifiable-information",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#personally-identifiable-information",
+      "level": 4,
+      "title": "Personally Identifiable Information & High-Value Data",
+      "number": "7.2.1"
+    },
+    {
+      "id": "cross-origin-state",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#cross-origin-state",
+      "level": 4,
+      "title": "Cross Origin State Considerations",
+      "number": "7.2.2"
+    },
+    {
+      "id": "origin-access-devices",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#origin-access-devices",
+      "level": 4,
+      "title": "Origin Access to Other Devices",
+      "number": "7.2.3"
+    },
+    {
+      "id": "private-browsing-mode",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#private-browsing-mode",
+      "level": 4,
+      "title": "Private Browsing Mode",
+      "number": "7.2.4"
+    },
+    {
+      "id": "persistent-state",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#persistent-state",
+      "level": 4,
+      "title": "Persistent State",
+      "number": "7.2.5"
+    },
+    {
+      "id": "other-considerations",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#other-considerations",
+      "level": 4,
+      "title": "Other Considerations",
+      "number": "7.2.6"
+    },
+    {
+      "id": "security-mitigations",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#security-mitigations",
+      "level": 3,
+      "title": "Mitigation Strategies",
+      "number": "7.3"
+    },
+    {
+      "id": "local-passive-mitigations",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#local-passive-mitigations",
+      "level": 4,
+      "title": "Local passive network attackers",
+      "number": "7.3.1"
+    },
+    {
+      "id": "local-active-mitigations",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#local-active-mitigations",
+      "level": 4,
+      "title": "Local active network attackers",
+      "number": "7.3.2"
+    },
+    {
+      "id": "remote-active-mitigations",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#remote-active-mitigations",
+      "level": 4,
+      "title": "Remote active network attackers",
+      "number": "7.3.3"
+    },
+    {
+      "id": "denial-of-service-mitigations",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#denial-of-service-mitigations",
+      "level": 4,
+      "title": "Denial of service",
+      "number": "7.3.4"
+    },
+    {
+      "id": "malicious-input-mitigations",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#malicious-input-mitigations",
+      "level": 4,
+      "title": "Malicious input",
+      "number": "7.3.5"
+    },
+    {
+      "id": "security-ui",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#security-ui",
+      "level": 3,
+      "title": "User Interface Considerations",
+      "number": "7.4"
+    },
+    {
+      "id": "instance-names",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#instance-names",
+      "level": 4,
+      "title": "Instance and Display Names",
+      "number": "7.4.1"
+    },
+    {
+      "id": "appendix-a",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#appendix-a",
+      "level": 2,
+      "title": "Messages",
+      "number": "A"
+    },
+    {
+      "id": "appendix-b",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#appendix-b",
+      "level": 2,
+      "title": "PSK Encoding Schemes",
+      "number": "B"
+    },
+    {
+      "id": "appendix-c-base-10",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#appendix-c-base-10",
+      "level": 3,
+      "title": "Base-10 Numeric"
+    },
+    {
+      "id": "appendix-c-qr-code",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#appendix-c-qr-code",
+      "level": 3,
+      "title": "QR Code"
+    },
+    {
+      "id": "appendix-c",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#appendix-c",
+      "level": 2,
+      "title": "Entire Flow Chart",
+      "number": "C"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://w3c.github.io/openscreenprotocol/network.html#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

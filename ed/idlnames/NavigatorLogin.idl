@@ -1,0 +1,6 @@
+// Source: Login Status API (https://w3c-fedid.github.io/login-status/)
+[Exposed=Window, SecureContext]
+
+interface NavigatorLogin {
+  Promise<undefined> setStatus(LoginStatus status);
+};

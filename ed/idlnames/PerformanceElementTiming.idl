@@ -12,3 +12,6 @@ interface PerformanceElementTiming : PerformanceEntry {
     readonly attribute DOMString url;
     [Default] object toJSON();
 };
+
+// Source: Element Timing API (https://wicg.github.io/element-timing/)
+PerformanceElementTiming includes PaintTimingMixin;

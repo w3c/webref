@@ -33,6 +33,11 @@ Navigator includes NavigatorConcurrentHardware;
 // Source: Storage Standard (https://storage.spec.whatwg.org/)
 Navigator includes NavigatorStorage;
 
+// Source: Login Status API (https://w3c-fedid.github.io/login-status/)
+partial interface Navigator {
+  [SecureContext] readonly attribute NavigatorLogin login;
+};
+
 // Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
 [SecureContext]
 partial interface Navigator {

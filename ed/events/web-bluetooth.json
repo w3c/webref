@@ -24,9 +24,10 @@
       "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothdeviceeventhandlers-advertisementreceived",
       "type": "advertisementreceived",
       "targets": [
-        "BluetoothDeviceEventHandlers"
+        "BluetoothDevice"
       ],
-      "interface": "BluetoothAdvertisingEvent"
+      "interface": "BluetoothAdvertisingEvent",
+      "bubbles": true
     },
     {
       "src": {
@@ -49,7 +50,7 @@
       "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothdeviceeventhandlers-gattserverdisconnected",
       "type": "gattserverdisconnected",
       "targets": [
-        "BluetoothDeviceEventHandlers"
+        "BluetoothDevice"
       ],
       "interface": "Event",
       "bubbles": true

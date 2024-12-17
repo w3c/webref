@@ -203,6 +203,15 @@
       }
     },
     "idlExtendedNames": {
+      "PerformanceElementTiming": [
+        {
+          "fragment": "PerformanceElementTiming includes PaintTimingMixin;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "PerformanceElementTiming",
+          "includes": "PaintTimingMixin"
+        }
+      ],
       "Element": [
         {
           "fragment": "partial interface Element {\n    [CEReactions] attribute DOMString elementTiming;\n};",
@@ -250,7 +259,8 @@
         "PerformanceEntry",
         "DOMHighResTimeStamp",
         "DOMRectReadOnly",
-        "Element"
+        "Element",
+        "PaintTimingMixin"
       ],
       "Element": []
     },
