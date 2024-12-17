@@ -34,7 +34,7 @@ interface Node : EventTarget {
   [CEReactions] attribute DOMString? textContent;
   [CEReactions] undefined normalize();
 
-  [CEReactions, NewObject] Node cloneNode(optional boolean deep = false);
+  [CEReactions, NewObject] Node cloneNode(optional boolean subtree = false);
   boolean isEqualNode(Node? otherNode);
   boolean isSameNode(Node? otherNode); // legacy alias of ===
 
