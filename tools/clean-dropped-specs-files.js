@@ -26,7 +26,11 @@ async function cleanExtractFolder(folder, crawlResults) {
   for (const filename of dir) {
     const specname = path.basename(filename, path.extname(filename));
     const spec = crawlResults
-      .find(s => s.shortname === specname || s.series?.shortname === specname);
+      .find(s => s.shortname === specname ||
+        s.series?.shortname === specname ||
+        // CDDL extracts may end with CDDL module name
+        s.shortname.startsWith(specname + '-')
+      );
     if (!spec) {
       const fileToDrop = path.join(folder, filename);
       await fs.unlink(fileToDrop);
