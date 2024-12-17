@@ -29,7 +29,7 @@ async function cleanExtractFolder(folder, crawlResults) {
       .find(s => s.shortname === specname ||
         s.series?.shortname === specname ||
         // CDDL extracts may end with CDDL module name
-        s.shortname.startsWith(specname + '-')
+        specname.startsWith(s.shortname + '-')
       );
     if (!spec) {
       const fileToDrop = path.join(folder, filename);
