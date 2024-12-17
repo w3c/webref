@@ -1,0 +1,140 @@
+{
+  "spec": {
+    "title": "Open Screen Network Protocol",
+    "url": "https://www.w3.org/TR/openscreen-network/"
+  },
+  "algorithms": [
+    {
+      "name": "agent fingerprint",
+      "href": "https://www.w3.org/TR/openscreen-network/#agent-fingerprint",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"agent-fingerprint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">agent fingerprint</dfn> of an agent is computed by following these\nsteps:",
+      "rationale": "compute",
+      "steps": [
+        {
+          "html": "<p>Compute the <a href=\"https://www.rfc-editor.org/rfc/rfc7469#section-2.4\">SKPI Fingerprint</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/openscreen-network/#agent-certificate\" id=\"ref-for-agent-certificate\">agent certificate</a> according to <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/openscreen-network/#biblio-rfc7469\" title=\"Public Key Pinning Extension for HTTP\">[RFC7469]</a> using <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/openscreen-network/#biblio-rfc6234\" title=\"US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)\">SHA-256</a> as the hash algorithm.</p>"
+        },
+        {
+          "html": "<p>base64 encode the result of Step 1 according to <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/openscreen-network/#biblio-rfc4648\" title=\"The Base16, Base32, and Base64 Data Encodings\">[RFC4648]</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "certificate serial number",
+      "href": "https://www.w3.org/TR/openscreen-network/#certificate-serial-number",
+      "html": "Let the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"certificate-serial-number\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">certificate serial number</dfn> be the result of the following\nsteps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the agent has never generated an agent certificate:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"certificate-serial-number-base\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">certificate serial number base</dfn> be a 128-bit <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc4122#section-4.4\" id=\"ref-for-section-4.4\">UUID</a>."
+            },
+            {
+              "html": "Let the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"certificate-serial-number-counter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">certificate serial number counter</dfn> be a 32-bit\n        unsigned integer, initially set to 0."
+            }
+          ]
+        },
+        {
+          "html": "Generate a 160-bit value as follows:",
+          "rationale": "increment",
+          "steps": [
+            {
+              "html": "Increment the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/openscreen-network/#certificate-serial-number-counter\" id=\"ref-for-certificate-serial-number-counter\">certificate serial number counter</a> by one."
+            },
+            {
+              "html": "Assign the upper 128 bits to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/openscreen-network/#certificate-serial-number-base\" id=\"ref-for-certificate-serial-number-base\">certificate serial number base</a>."
+            },
+            {
+              "html": "Assign the lower 32 bits to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/openscreen-network/#certificate-serial-number-counter\" id=\"ref-for-certificate-serial-number-counter①\">certificate serial number counter</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "agent hostname",
+      "href": "https://www.w3.org/TR/openscreen-network/#agent-hostname",
+      "html": "Each time the agent changes its DNS-SD <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc6763#section-4.1\" id=\"ref-for-section-4.1\">Service Instance Name</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/openscreen-network/#certificate-serial-number\" id=\"ref-for-certificate-serial-number\">certificate serial number</a> it must compute an <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"agent-hostname\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">agent hostname</dfn> as\nfollows.",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>hexSerialNumber</var> to the <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/openscreen-network/#biblio-rfc4648\" title=\"The Base16, Base32, and Base64 Data Encodings\">base64</a> encoded <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/openscreen-network/#certificate-serial-number\" id=\"ref-for-certificate-serial-number①\">certificate serial number</a>.</p>"
+        },
+        {
+          "html": "Set <var>encodedInstanceName</var> to the result of the following:",
+          "rationale": "replace",
+          "steps": [
+            {
+              "html": "<p>Replace any character in the DNS-SD Instance Name other\nthan <code>[A-Za-z0-9-]</code> with a hyphen <code>-</code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Set <var>encodedDomain</var> to the result of the following:",
+          "rationale": "replace",
+          "steps": [
+            {
+              "html": "<p>Replace any character in the DNS-SD Domain Name other\nthan <code>[A-Za-z0-9-]</code> with a hyphen <code>-</code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/openscreen-network/#agent-hostname\" id=\"ref-for-agent-hostname\">agent hostname</a> to the string <var>hexSerialNumber</var> + <code>.</code> + <var>encodedInstanceName</var> + <code>.</code> + <var>encodedDomain</var></p>"
+        }
+      ]
+    },
+    {
+      "html": "To encode <code>P</code> into a numeric string, follow these steps:",
+      "rationale": "convert",
+      "steps": [
+        {
+          "html": "<p>Convert <code>P</code> to a base-10 integer <code>N</code>.</p>"
+        },
+        {
+          "html": "<p>If <code>N</code> has fewer than 9 digits:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>Zero-pad <code>N</code> on the left with <code>3 - len(N) mod 3</code> digits.</p>\n      </li><li data-md=\"\">\n       <p>Output <code>N</code> in groups of three digits separated by dashes.</p>\n     </li></ul>"
+        },
+        {
+          "html": "<p>If <code>N</code> has more than 9 digits:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>Zero-pad <code>N</code> on the left with <code>4 - len(N) mod 4</code> digits.</p>\n      </li><li data-md=\"\">\n       <p>Output <code>N</code> in groups of four digits separated by dashes.</p>\n     </li></ul>"
+        }
+      ]
+    },
+    {
+      "html": "To decode a string <code>N</code> into a PSK <code>P</code>, follow these steps:",
+      "rationale": "remove",
+      "steps": [
+        {
+          "html": "<p>Remove dashes and leading zeros from <code>N</code>.</p>"
+        },
+        {
+          "html": "<p>Parse <code>N</code> as a base-10 decimal number to obtain <code>P</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To encode a PSK into a QR code, follow these steps:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <code>N</code> to the value of <code>P</code> converted to an ASCII-encoded, hexadecimal string.</p>"
+        },
+        {
+          "html": "<p>Construct a text <a data-link-type=\"dfn\" href=\"https://www.iso.org/standard/62021.html#\" id=\"ref-for-something②\">QR code</a> with the value of <code>N</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To decode a PSK <code>P</code> given a QR code, follow these steps:",
+      "rationale": "parse",
+      "steps": [
+        {
+          "html": "<p>Obtain the string <code>N</code> by decoding the QR code.</p>"
+        },
+        {
+          "html": "<p>Parse <code>N</code> as a hexadecimal number to obtain <code>P</code>.</p>"
+        }
+      ]
+    }
+  ]
+}

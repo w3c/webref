@@ -1,0 +1,419 @@
+{
+  "spec": {
+    "title": "Open Screen Application Protocol",
+    "url": "https://www.w3.org/TR/openscreen-application/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/openscreen-application/#title",
+      "level": 1,
+      "title": "Open Screen Application Protocol"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/openscreen-application/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/openscreen-application/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/openscreen-application/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/openscreen-application/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "terminology",
+      "href": "https://www.w3.org/TR/openscreen-application/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.1"
+    },
+    {
+      "id": "requirements",
+      "href": "https://www.w3.org/TR/openscreen-application/#requirements",
+      "level": 2,
+      "title": "Requirements",
+      "number": "2"
+    },
+    {
+      "id": "requirements-discovery",
+      "href": "https://www.w3.org/TR/openscreen-application/#requirements-discovery",
+      "level": 3,
+      "title": "Agent Discovery Requirements",
+      "number": "2.1"
+    },
+    {
+      "id": "requirements-transport",
+      "href": "https://www.w3.org/TR/openscreen-application/#requirements-transport",
+      "level": 3,
+      "title": "Transport Layer Requirements",
+      "number": "2.2"
+    },
+    {
+      "id": "requirements-presentation-api",
+      "href": "https://www.w3.org/TR/openscreen-application/#requirements-presentation-api",
+      "level": 3,
+      "title": "Presentation API Requirements",
+      "number": "2.3"
+    },
+    {
+      "id": "requirements-remote-playback",
+      "href": "https://www.w3.org/TR/openscreen-application/#requirements-remote-playback",
+      "level": 3,
+      "title": "Remote Playback API Requirements",
+      "number": "2.4"
+    },
+    {
+      "id": "requirements-non-functional",
+      "href": "https://www.w3.org/TR/openscreen-application/#requirements-non-functional",
+      "level": 3,
+      "title": "Non-Functional Requirements",
+      "number": "2.5"
+    },
+    {
+      "id": "metadata",
+      "href": "https://www.w3.org/TR/openscreen-application/#metadata",
+      "level": 2,
+      "title": "Metadata Discovery",
+      "number": "3"
+    },
+    {
+      "id": "messages",
+      "href": "https://www.w3.org/TR/openscreen-application/#messages",
+      "level": 2,
+      "title": "Message delivery using CBOR",
+      "number": "4"
+    },
+    {
+      "id": "message-compatibility",
+      "href": "https://www.w3.org/TR/openscreen-application/#message-compatibility",
+      "level": 3,
+      "title": "Type Key Backwards Compatibility",
+      "number": "4.1"
+    },
+    {
+      "id": "presentation-protocol",
+      "href": "https://www.w3.org/TR/openscreen-application/#presentation-protocol",
+      "level": 2,
+      "title": "Presentation Protocol",
+      "number": "5"
+    },
+    {
+      "id": "presentation-api",
+      "href": "https://www.w3.org/TR/openscreen-application/#presentation-api",
+      "level": 3,
+      "title": "Presentation API",
+      "number": "5.1"
+    },
+    {
+      "id": "time-representation",
+      "href": "https://www.w3.org/TR/openscreen-application/#time-representation",
+      "level": 2,
+      "title": "Representation Of Time",
+      "number": "6"
+    },
+    {
+      "id": "remote-playback-protocol",
+      "href": "https://www.w3.org/TR/openscreen-application/#remote-playback-protocol",
+      "level": 2,
+      "title": "Remote Playback Protocol",
+      "number": "7"
+    },
+    {
+      "id": "remote-playback-state-and-controls",
+      "href": "https://www.w3.org/TR/openscreen-application/#remote-playback-state-and-controls",
+      "level": 3,
+      "title": "Remote Playback State and Controls",
+      "number": "7.1"
+    },
+    {
+      "id": "remote-playback-api",
+      "href": "https://www.w3.org/TR/openscreen-application/#remote-playback-api",
+      "level": 3,
+      "title": "Remote Playback API",
+      "number": "7.2"
+    },
+    {
+      "id": "streaming-protocol",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-protocol",
+      "level": 2,
+      "title": "Streaming Protocol",
+      "number": "8"
+    },
+    {
+      "id": "streaming-protocol-capabilities",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-protocol-capabilities",
+      "level": 3,
+      "title": "Streaming Protocol Capabilities",
+      "number": "8.1"
+    },
+    {
+      "id": "streaming-sessions",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-sessions",
+      "level": 3,
+      "title": "Sessions",
+      "number": "8.2"
+    },
+    {
+      "id": "streaming-audio",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-audio",
+      "level": 3,
+      "title": "Audio",
+      "number": "8.3"
+    },
+    {
+      "id": "streaming-video",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-video",
+      "level": 3,
+      "title": "Video",
+      "number": "8.4"
+    },
+    {
+      "id": "streaming-data",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-data",
+      "level": 3,
+      "title": "Data",
+      "number": "8.5"
+    },
+    {
+      "id": "streaming-feedback",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-feedback",
+      "level": 3,
+      "title": "Feedback",
+      "number": "8.6"
+    },
+    {
+      "id": "streaming-stats",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-stats",
+      "level": 3,
+      "title": "Stats",
+      "number": "8.7"
+    },
+    {
+      "id": "requests-responses-watches",
+      "href": "https://www.w3.org/TR/openscreen-application/#requests-responses-watches",
+      "level": 2,
+      "title": "Requests, Responses, and Watches",
+      "number": "9"
+    },
+    {
+      "id": "protocol-extensions",
+      "href": "https://www.w3.org/TR/openscreen-application/#protocol-extensions",
+      "level": 2,
+      "title": "10. Protocol Extensions"
+    },
+    {
+      "id": "protocol-extension-fields",
+      "href": "https://www.w3.org/TR/openscreen-application/#protocol-extension-fields",
+      "level": 3,
+      "title": "Protocol Extension Fields",
+      "number": "10.1"
+    },
+    {
+      "id": "security-privacy",
+      "href": "https://www.w3.org/TR/openscreen-application/#security-privacy",
+      "level": 2,
+      "title": "11. Security and Privacy"
+    },
+    {
+      "id": "threat-models",
+      "href": "https://www.w3.org/TR/openscreen-application/#threat-models",
+      "level": 3,
+      "title": "Threat Models",
+      "number": "11.1"
+    },
+    {
+      "id": "same-origin-policy-violations",
+      "href": "https://www.w3.org/TR/openscreen-application/#same-origin-policy-violations",
+      "level": 4,
+      "title": "Same-Origin Policy Violations",
+      "number": "11.1.1"
+    },
+    {
+      "id": "security-privacy-questions",
+      "href": "https://www.w3.org/TR/openscreen-application/#security-privacy-questions",
+      "level": 3,
+      "title": "Open Screen Application Protocol Security and Privacy Considerations",
+      "number": "11.2"
+    },
+    {
+      "id": "personally-identifiable-information",
+      "href": "https://www.w3.org/TR/openscreen-application/#personally-identifiable-information",
+      "level": 4,
+      "title": "Personally Identifiable Information & High-Value Data",
+      "number": "11.2.1"
+    },
+    {
+      "id": "cross-origin-state",
+      "href": "https://www.w3.org/TR/openscreen-application/#cross-origin-state",
+      "level": 4,
+      "title": "Cross Origin State Considerations",
+      "number": "11.2.2"
+    },
+    {
+      "id": "origin-access-devices",
+      "href": "https://www.w3.org/TR/openscreen-application/#origin-access-devices",
+      "level": 4,
+      "title": "Origin Access to Other Devices",
+      "number": "11.2.3"
+    },
+    {
+      "id": "private-browsing-mode",
+      "href": "https://www.w3.org/TR/openscreen-application/#private-browsing-mode",
+      "level": 4,
+      "title": "Private Browsing Mode",
+      "number": "11.2.4"
+    },
+    {
+      "id": "persistent-state",
+      "href": "https://www.w3.org/TR/openscreen-application/#persistent-state",
+      "level": 4,
+      "title": "Persistent State",
+      "number": "11.2.5"
+    },
+    {
+      "id": "other-considerations",
+      "href": "https://www.w3.org/TR/openscreen-application/#other-considerations",
+      "level": 4,
+      "title": "Other Considerations",
+      "number": "11.2.6"
+    },
+    {
+      "id": "presentation-api-considerations",
+      "href": "https://www.w3.org/TR/openscreen-application/#presentation-api-considerations",
+      "level": 3,
+      "title": "Presentation API Considerations",
+      "number": "11.3"
+    },
+    {
+      "id": "remote-playback-considerations",
+      "href": "https://www.w3.org/TR/openscreen-application/#remote-playback-considerations",
+      "level": 3,
+      "title": "Remote Playback API Considerations",
+      "number": "11.4"
+    },
+    {
+      "id": "security-mitigations",
+      "href": "https://www.w3.org/TR/openscreen-application/#security-mitigations",
+      "level": 3,
+      "title": "Mitigation Strategies",
+      "number": "11.5"
+    },
+    {
+      "id": "malicious-input-mitigations",
+      "href": "https://www.w3.org/TR/openscreen-application/#malicious-input-mitigations",
+      "level": 4,
+      "title": "Malicious input",
+      "number": "11.5.1"
+    },
+    {
+      "id": "security-ui",
+      "href": "https://www.w3.org/TR/openscreen-application/#security-ui",
+      "level": 3,
+      "title": "User Interface Considerations",
+      "number": "11.6"
+    },
+    {
+      "id": "instance-names",
+      "href": "https://www.w3.org/TR/openscreen-application/#instance-names",
+      "level": 4,
+      "title": "Instance and Display Names",
+      "number": "11.6.1"
+    },
+    {
+      "id": "appendix-a",
+      "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
+      "level": 2,
+      "title": "Messages",
+      "number": "A"
+    },
+    {
+      "id": "appendix-b",
+      "href": "https://www.w3.org/TR/openscreen-application/#appendix-b",
+      "level": 2,
+      "title": "Message Type Key Ranges",
+      "number": "B"
+    },
+    {
+      "id": "appendix-c",
+      "href": "https://www.w3.org/TR/openscreen-application/#appendix-c",
+      "level": 2,
+      "title": "Media Time Conversions",
+      "number": "C"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/openscreen-application/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/openscreen-application/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://www.w3.org/TR/openscreen-application/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/openscreen-application/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/openscreen-application/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/openscreen-application/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/openscreen-application/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://www.w3.org/TR/openscreen-application/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://www.w3.org/TR/openscreen-application/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://www.w3.org/TR/openscreen-application/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

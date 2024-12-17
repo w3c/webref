@@ -1,12 +1,12 @@
 {
   "spec": {
-    "title": "Open Screen Protocol",
-    "url": "https://www.w3.org/TR/openscreenprotocol/"
+    "title": "Open Screen Application Protocol",
+    "url": "https://www.w3.org/TR/openscreen-application/"
   },
   "dfns": [
     {
       "id": "open-screen-protocol-agent",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#open-screen-protocol-agent",
+      "href": "https://www.w3.org/TR/openscreen-application/#open-screen-protocol-agent",
       "linkingText": [
         "open screen protocol agent",
         "osp agent"
@@ -18,7 +18,7 @@
       "informative": false,
       "heading": {
         "id": "terminology",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#terminology",
+        "href": "https://www.w3.org/TR/openscreen-application/#terminology",
         "title": "Terminology",
         "number": "1.1"
       },
@@ -26,7 +26,7 @@
     },
     {
       "id": "controller",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#controller",
+      "href": "https://www.w3.org/TR/openscreen-application/#controller",
       "linkingText": [
         "controller"
       ],
@@ -37,7 +37,7 @@
       "informative": false,
       "heading": {
         "id": "terminology",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#terminology",
+        "href": "https://www.w3.org/TR/openscreen-application/#terminology",
         "title": "Terminology",
         "number": "1.1"
       },
@@ -45,7 +45,7 @@
     },
     {
       "id": "receiver",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#receiver",
+      "href": "https://www.w3.org/TR/openscreen-application/#receiver",
       "linkingText": [
         "receiver"
       ],
@@ -56,7 +56,7 @@
       "informative": false,
       "heading": {
         "id": "terminology",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#terminology",
+        "href": "https://www.w3.org/TR/openscreen-application/#terminology",
         "title": "Terminology",
         "number": "1.1"
       },
@@ -64,7 +64,7 @@
     },
     {
       "id": "media-sender",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#media-sender",
+      "href": "https://www.w3.org/TR/openscreen-application/#media-sender",
       "linkingText": [
         "media sender"
       ],
@@ -75,7 +75,7 @@
       "informative": false,
       "heading": {
         "id": "terminology",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#terminology",
+        "href": "https://www.w3.org/TR/openscreen-application/#terminology",
         "title": "Terminology",
         "number": "1.1"
       },
@@ -83,7 +83,7 @@
     },
     {
       "id": "media-receiver",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#media-receiver",
+      "href": "https://www.w3.org/TR/openscreen-application/#media-receiver",
       "linkingText": [
         "media receiver"
       ],
@@ -94,167 +94,15 @@
       "informative": false,
       "heading": {
         "id": "terminology",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#terminology",
+        "href": "https://www.w3.org/TR/openscreen-application/#terminology",
         "title": "Terminology",
         "number": "1.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "advertising-agent",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#advertising-agent",
-      "linkingText": [
-        "advertising agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "discovery",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#discovery",
-        "title": "Discovery with mDNS",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "display-name",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#display-name",
-      "linkingText": [
-        "display name"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "discovery",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#discovery",
-        "title": "Discovery with mDNS",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "listening-agent",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#listening-agent",
-      "linkingText": [
-        "listening agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "discovery",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#discovery",
-        "title": "Discovery with mDNS",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "agent-fingerprint",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#agent-fingerprint",
-      "linkingText": [
-        "agent fingerprint"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "computing-agent-fingerprint",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#computing-agent-fingerprint",
-        "title": "Computing the Agent Fingerprint",
-        "number": "3.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "agent-certificate",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#agent-certificate",
-      "linkingText": [
-        "agent certificate"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "certificates",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#certificates",
-        "title": "Agent Certificates",
-        "number": "4.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "certificate-serial-number",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#certificate-serial-number",
-      "linkingText": [
-        "certificate serial number"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "certificates",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#certificates",
-        "title": "Agent Certificates",
-        "number": "4.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "certificate-serial-number-base",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#certificate-serial-number-base",
-      "linkingText": [
-        "certificate serial number base"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "certificates",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#certificates",
-        "title": "Agent Certificates",
-        "number": "4.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "certificate-serial-number-counter",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#certificate-serial-number-counter",
-      "linkingText": [
-        "certificate serial number counter"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "certificates",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#certificates",
-        "title": "Agent Certificates",
-        "number": "4.2"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "time-scale",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#time-scale",
+      "href": "https://www.w3.org/TR/openscreen-application/#time-scale",
       "linkingText": [
         "time scale"
       ],
@@ -265,34 +113,15 @@
       "informative": false,
       "heading": {
         "id": "time-representation",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#time-representation",
+        "href": "https://www.w3.org/TR/openscreen-application/#time-representation",
         "title": "Representation Of Time",
-        "number": "8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "suspicious-agent",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#suspicious-agent",
-      "linkingText": [
-        "suspicious agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "local-active-mitigations",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#local-active-mitigations",
-        "title": "Local active network attackers",
-        "number": "13.5.2"
+        "number": "6"
       },
       "definedIn": "prose"
     },
     {
       "id": "verified-display-name",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#verified-display-name",
+      "href": "https://www.w3.org/TR/openscreen-application/#verified-display-name",
       "linkingText": [
         "verified display name"
       ],
@@ -303,15 +132,15 @@
       "informative": false,
       "heading": {
         "id": "instance-names",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#instance-names",
+        "href": "https://www.w3.org/TR/openscreen-application/#instance-names",
         "title": "Instance and Display Names",
-        "number": "13.6.1"
+        "number": "11.6.1"
       },
       "definedIn": "prose"
     },
     {
       "id": "agent-info-request",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#agent-info-request",
+      "href": "https://www.w3.org/TR/openscreen-application/#agent-info-request",
       "linkingText": [
         "agent-info-request"
       ],
@@ -322,7 +151,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -330,7 +159,7 @@
     },
     {
       "id": "agent-info-response",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#agent-info-response",
+      "href": "https://www.w3.org/TR/openscreen-application/#agent-info-response",
       "linkingText": [
         "agent-info-response"
       ],
@@ -341,7 +170,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -349,7 +178,7 @@
     },
     {
       "id": "agent-info-event",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#agent-info-event",
+      "href": "https://www.w3.org/TR/openscreen-application/#agent-info-event",
       "linkingText": [
         "agent-info-event"
       ],
@@ -360,7 +189,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -368,7 +197,7 @@
     },
     {
       "id": "agent-info",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#agent-info",
+      "href": "https://www.w3.org/TR/openscreen-application/#agent-info",
       "linkingText": [
         "agent-info"
       ],
@@ -379,7 +208,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -387,7 +216,7 @@
     },
     {
       "id": "agent-status-request",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#agent-status-request",
+      "href": "https://www.w3.org/TR/openscreen-application/#agent-status-request",
       "linkingText": [
         "agent-status-request"
       ],
@@ -398,7 +227,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -406,7 +235,7 @@
     },
     {
       "id": "agent-status-response",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#agent-status-response",
+      "href": "https://www.w3.org/TR/openscreen-application/#agent-status-response",
       "linkingText": [
         "agent-status-response"
       ],
@@ -417,102 +246,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
-        "title": "Messages",
-        "number": "A"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "auth-capabilities",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#auth-capabilities",
-      "linkingText": [
-        "auth-capabilities"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
-        "title": "Messages",
-        "number": "A"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "auth-initiation-token",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#auth-initiation-token",
-      "linkingText": [
-        "auth-initiation-token"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
-        "title": "Messages",
-        "number": "A"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "auth-spake2-confirmation",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#auth-spake2-confirmation",
-      "linkingText": [
-        "auth-spake2-confirmation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
-        "title": "Messages",
-        "number": "A"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "auth-status",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#auth-status",
-      "linkingText": [
-        "auth-status"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
-        "title": "Messages",
-        "number": "A"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "auth-spake2-handshake",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#auth-spake2-handshake",
-      "linkingText": [
-        "auth-spake2-handshake"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -520,7 +254,7 @@
     },
     {
       "id": "presentation-url-availability-request",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#presentation-url-availability-request",
+      "href": "https://www.w3.org/TR/openscreen-application/#presentation-url-availability-request",
       "linkingText": [
         "presentation-url-availability-request"
       ],
@@ -531,7 +265,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -539,7 +273,7 @@
     },
     {
       "id": "presentation-url-availability-response",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#presentation-url-availability-response",
+      "href": "https://www.w3.org/TR/openscreen-application/#presentation-url-availability-response",
       "linkingText": [
         "presentation-url-availability-response"
       ],
@@ -550,7 +284,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -558,7 +292,7 @@
     },
     {
       "id": "presentation-url-availability-event",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#presentation-url-availability-event",
+      "href": "https://www.w3.org/TR/openscreen-application/#presentation-url-availability-event",
       "linkingText": [
         "presentation-url-availability-event"
       ],
@@ -569,7 +303,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -577,7 +311,7 @@
     },
     {
       "id": "presentation-start-request",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#presentation-start-request",
+      "href": "https://www.w3.org/TR/openscreen-application/#presentation-start-request",
       "linkingText": [
         "presentation-start-request"
       ],
@@ -588,7 +322,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -596,7 +330,7 @@
     },
     {
       "id": "presentation-start-response",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#presentation-start-response",
+      "href": "https://www.w3.org/TR/openscreen-application/#presentation-start-response",
       "linkingText": [
         "presentation-start-response"
       ],
@@ -607,7 +341,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -615,7 +349,7 @@
     },
     {
       "id": "presentation-termination-request",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#presentation-termination-request",
+      "href": "https://www.w3.org/TR/openscreen-application/#presentation-termination-request",
       "linkingText": [
         "presentation-termination-request"
       ],
@@ -626,7 +360,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -634,7 +368,7 @@
     },
     {
       "id": "presentation-termination-response",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#presentation-termination-response",
+      "href": "https://www.w3.org/TR/openscreen-application/#presentation-termination-response",
       "linkingText": [
         "presentation-termination-response"
       ],
@@ -645,7 +379,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -653,7 +387,7 @@
     },
     {
       "id": "presentation-termination-event",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#presentation-termination-event",
+      "href": "https://www.w3.org/TR/openscreen-application/#presentation-termination-event",
       "linkingText": [
         "presentation-termination-event"
       ],
@@ -664,7 +398,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -672,7 +406,7 @@
     },
     {
       "id": "presentation-connection-open-request",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#presentation-connection-open-request",
+      "href": "https://www.w3.org/TR/openscreen-application/#presentation-connection-open-request",
       "linkingText": [
         "presentation-connection-open-request"
       ],
@@ -683,7 +417,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -691,7 +425,7 @@
     },
     {
       "id": "presentation-connection-open-response",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#presentation-connection-open-response",
+      "href": "https://www.w3.org/TR/openscreen-application/#presentation-connection-open-response",
       "linkingText": [
         "presentation-connection-open-response"
       ],
@@ -702,7 +436,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -710,7 +444,7 @@
     },
     {
       "id": "presentation-connection-close-event",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#presentation-connection-close-event",
+      "href": "https://www.w3.org/TR/openscreen-application/#presentation-connection-close-event",
       "linkingText": [
         "presentation-connection-close-event"
       ],
@@ -721,7 +455,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -729,7 +463,7 @@
     },
     {
       "id": "presentation-change-event",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#presentation-change-event",
+      "href": "https://www.w3.org/TR/openscreen-application/#presentation-change-event",
       "linkingText": [
         "presentation-change-event"
       ],
@@ -740,7 +474,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -748,7 +482,7 @@
     },
     {
       "id": "presentation-connection-message",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#presentation-connection-message",
+      "href": "https://www.w3.org/TR/openscreen-application/#presentation-connection-message",
       "linkingText": [
         "presentation-connection-message"
       ],
@@ -759,7 +493,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -767,7 +501,7 @@
     },
     {
       "id": "remote-playback-availability-request",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#remote-playback-availability-request",
+      "href": "https://www.w3.org/TR/openscreen-application/#remote-playback-availability-request",
       "linkingText": [
         "remote-playback-availability-request"
       ],
@@ -778,7 +512,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -786,7 +520,7 @@
     },
     {
       "id": "remote-playback-availability-response",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#remote-playback-availability-response",
+      "href": "https://www.w3.org/TR/openscreen-application/#remote-playback-availability-response",
       "linkingText": [
         "remote-playback-availability-response"
       ],
@@ -797,7 +531,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -805,7 +539,7 @@
     },
     {
       "id": "remote-playback-availability-event",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#remote-playback-availability-event",
+      "href": "https://www.w3.org/TR/openscreen-application/#remote-playback-availability-event",
       "linkingText": [
         "remote-playback-availability-event"
       ],
@@ -816,7 +550,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -824,7 +558,7 @@
     },
     {
       "id": "remote-playback-start-request",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#remote-playback-start-request",
+      "href": "https://www.w3.org/TR/openscreen-application/#remote-playback-start-request",
       "linkingText": [
         "remote-playback-start-request"
       ],
@@ -835,7 +569,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -843,7 +577,7 @@
     },
     {
       "id": "remote-playback-start-response",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#remote-playback-start-response",
+      "href": "https://www.w3.org/TR/openscreen-application/#remote-playback-start-response",
       "linkingText": [
         "remote-playback-start-response"
       ],
@@ -854,7 +588,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -862,7 +596,7 @@
     },
     {
       "id": "remote-playback-termination-request",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#remote-playback-termination-request",
+      "href": "https://www.w3.org/TR/openscreen-application/#remote-playback-termination-request",
       "linkingText": [
         "remote-playback-termination-request"
       ],
@@ -873,7 +607,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -881,7 +615,7 @@
     },
     {
       "id": "remote-playback-termination-response",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#remote-playback-termination-response",
+      "href": "https://www.w3.org/TR/openscreen-application/#remote-playback-termination-response",
       "linkingText": [
         "remote-playback-termination-response"
       ],
@@ -892,7 +626,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -900,7 +634,7 @@
     },
     {
       "id": "remote-playback-termination-event",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#remote-playback-termination-event",
+      "href": "https://www.w3.org/TR/openscreen-application/#remote-playback-termination-event",
       "linkingText": [
         "remote-playback-termination-event"
       ],
@@ -911,7 +645,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -919,7 +653,7 @@
     },
     {
       "id": "remote-playback-modify-request",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#remote-playback-modify-request",
+      "href": "https://www.w3.org/TR/openscreen-application/#remote-playback-modify-request",
       "linkingText": [
         "remote-playback-modify-request"
       ],
@@ -930,7 +664,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -938,7 +672,7 @@
     },
     {
       "id": "remote-playback-modify-response",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#remote-playback-modify-response",
+      "href": "https://www.w3.org/TR/openscreen-application/#remote-playback-modify-response",
       "linkingText": [
         "remote-playback-modify-response"
       ],
@@ -949,7 +683,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -957,7 +691,7 @@
     },
     {
       "id": "remote-playback-state-event",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#remote-playback-state-event",
+      "href": "https://www.w3.org/TR/openscreen-application/#remote-playback-state-event",
       "linkingText": [
         "remote-playback-state-event"
       ],
@@ -968,7 +702,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -976,7 +710,7 @@
     },
     {
       "id": "text-track-cue",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#text-track-cue",
+      "href": "https://www.w3.org/TR/openscreen-application/#text-track-cue",
       "linkingText": [
         "text-track-cue"
       ],
@@ -987,7 +721,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -995,7 +729,7 @@
     },
     {
       "id": "audio-frame",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#audio-frame",
+      "href": "https://www.w3.org/TR/openscreen-application/#audio-frame",
       "linkingText": [
         "audio-frame"
       ],
@@ -1006,7 +740,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -1014,7 +748,7 @@
     },
     {
       "id": "video-frame",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#video-frame",
+      "href": "https://www.w3.org/TR/openscreen-application/#video-frame",
       "linkingText": [
         "video-frame"
       ],
@@ -1025,7 +759,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -1033,7 +767,7 @@
     },
     {
       "id": "data-frame",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#data-frame",
+      "href": "https://www.w3.org/TR/openscreen-application/#data-frame",
       "linkingText": [
         "data-frame"
       ],
@@ -1044,7 +778,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -1052,7 +786,7 @@
     },
     {
       "id": "streaming-capabilities-request",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#streaming-capabilities-request",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-capabilities-request",
       "linkingText": [
         "streaming-capabilities-request"
       ],
@@ -1063,7 +797,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -1071,7 +805,7 @@
     },
     {
       "id": "streaming-capabilities-response",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#streaming-capabilities-response",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-capabilities-response",
       "linkingText": [
         "streaming-capabilities-response"
       ],
@@ -1082,7 +816,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -1090,7 +824,7 @@
     },
     {
       "id": "streaming-session-start-request",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#streaming-session-start-request",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-session-start-request",
       "linkingText": [
         "streaming-session-start-request"
       ],
@@ -1101,7 +835,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -1109,7 +843,7 @@
     },
     {
       "id": "streaming-session-start-response",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#streaming-session-start-response",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-session-start-response",
       "linkingText": [
         "streaming-session-start-response"
       ],
@@ -1120,7 +854,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -1128,7 +862,7 @@
     },
     {
       "id": "streaming-session-modify-request",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#streaming-session-modify-request",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-session-modify-request",
       "linkingText": [
         "streaming-session-modify-request"
       ],
@@ -1139,7 +873,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -1147,7 +881,7 @@
     },
     {
       "id": "streaming-session-modify-response",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#streaming-session-modify-response",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-session-modify-response",
       "linkingText": [
         "streaming-session-modify-response"
       ],
@@ -1158,7 +892,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -1166,7 +900,7 @@
     },
     {
       "id": "streaming-session-terminate-request",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#streaming-session-terminate-request",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-session-terminate-request",
       "linkingText": [
         "streaming-session-terminate-request"
       ],
@@ -1177,7 +911,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -1185,7 +919,7 @@
     },
     {
       "id": "streaming-session-terminate-response",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#streaming-session-terminate-response",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-session-terminate-response",
       "linkingText": [
         "streaming-session-terminate-response"
       ],
@@ -1196,7 +930,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -1204,7 +938,7 @@
     },
     {
       "id": "streaming-session-terminate-event",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#streaming-session-terminate-event",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-session-terminate-event",
       "linkingText": [
         "streaming-session-terminate-event"
       ],
@@ -1215,7 +949,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -1223,7 +957,7 @@
     },
     {
       "id": "audio-encoding-offer",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#audio-encoding-offer",
+      "href": "https://www.w3.org/TR/openscreen-application/#audio-encoding-offer",
       "linkingText": [
         "audio-encoding-offer"
       ],
@@ -1234,7 +968,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -1242,7 +976,7 @@
     },
     {
       "id": "video-encoding-offer",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#video-encoding-offer",
+      "href": "https://www.w3.org/TR/openscreen-application/#video-encoding-offer",
       "linkingText": [
         "video-encoding-offer"
       ],
@@ -1253,7 +987,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -1261,7 +995,7 @@
     },
     {
       "id": "data-encoding-offer",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#data-encoding-offer",
+      "href": "https://www.w3.org/TR/openscreen-application/#data-encoding-offer",
       "linkingText": [
         "data-encoding-offer"
       ],
@@ -1272,7 +1006,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -1280,7 +1014,7 @@
     },
     {
       "id": "streaming-session-sender-stats-event",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#streaming-session-sender-stats-event",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-session-sender-stats-event",
       "linkingText": [
         "streaming-session-sender-stats-event"
       ],
@@ -1291,7 +1025,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },
@@ -1299,7 +1033,7 @@
     },
     {
       "id": "streaming-session-receiver-stats-event",
-      "href": "https://www.w3.org/TR/openscreenprotocol/#streaming-session-receiver-stats-event",
+      "href": "https://www.w3.org/TR/openscreen-application/#streaming-session-receiver-stats-event",
       "linkingText": [
         "streaming-session-receiver-stats-event"
       ],
@@ -1310,7 +1044,7 @@
       "informative": false,
       "heading": {
         "id": "appendix-a",
-        "href": "https://www.w3.org/TR/openscreenprotocol/#appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-application/#appendix-a",
         "title": "Messages",
         "number": "A"
       },

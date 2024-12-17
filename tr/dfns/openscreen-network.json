@@ -1,0 +1,332 @@
+{
+  "spec": {
+    "title": "Open Screen Network Protocol",
+    "url": "https://www.w3.org/TR/openscreen-network/"
+  },
+  "dfns": [
+    {
+      "id": "open-screen-network-protocol-agent",
+      "href": "https://www.w3.org/TR/openscreen-network/#open-screen-network-protocol-agent",
+      "linkingText": [
+        "open screen network protocol agent",
+        "osp agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/openscreen-network/#terminology",
+        "title": "Terminology",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "advertising-agent",
+      "href": "https://www.w3.org/TR/openscreen-network/#advertising-agent",
+      "linkingText": [
+        "advertising agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://www.w3.org/TR/openscreen-network/#discovery",
+        "title": "Discovery with mDNS",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "display-name",
+      "href": "https://www.w3.org/TR/openscreen-network/#display-name",
+      "linkingText": [
+        "display name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://www.w3.org/TR/openscreen-network/#discovery",
+        "title": "Discovery with mDNS",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "listening-agent",
+      "href": "https://www.w3.org/TR/openscreen-network/#listening-agent",
+      "linkingText": [
+        "listening agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://www.w3.org/TR/openscreen-network/#discovery",
+        "title": "Discovery with mDNS",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "agent-fingerprint",
+      "href": "https://www.w3.org/TR/openscreen-network/#agent-fingerprint",
+      "linkingText": [
+        "agent fingerprint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "computing-agent-fingerprint",
+        "href": "https://www.w3.org/TR/openscreen-network/#computing-agent-fingerprint",
+        "title": "Computing the Agent Fingerprint",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "certificate-serial-number",
+      "href": "https://www.w3.org/TR/openscreen-network/#certificate-serial-number",
+      "linkingText": [
+        "certificate serial number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "computing-certificate-serial-number",
+        "href": "https://www.w3.org/TR/openscreen-network/#computing-certificate-serial-number",
+        "title": "Computing the Certificate Serial Number",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "certificate-serial-number-base",
+      "href": "https://www.w3.org/TR/openscreen-network/#certificate-serial-number-base",
+      "linkingText": [
+        "certificate serial number base"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "computing-certificate-serial-number",
+        "href": "https://www.w3.org/TR/openscreen-network/#computing-certificate-serial-number",
+        "title": "Computing the Certificate Serial Number",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "certificate-serial-number-counter",
+      "href": "https://www.w3.org/TR/openscreen-network/#certificate-serial-number-counter",
+      "linkingText": [
+        "certificate serial number counter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "computing-certificate-serial-number",
+        "href": "https://www.w3.org/TR/openscreen-network/#computing-certificate-serial-number",
+        "title": "Computing the Certificate Serial Number",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "agent-hostname",
+      "href": "https://www.w3.org/TR/openscreen-network/#agent-hostname",
+      "linkingText": [
+        "agent hostname"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "computing-agent-hostname",
+        "href": "https://www.w3.org/TR/openscreen-network/#computing-agent-hostname",
+        "title": "Computing the Agent Hostname",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "agent-certificate",
+      "href": "https://www.w3.org/TR/openscreen-network/#agent-certificate",
+      "linkingText": [
+        "agent certificate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "certificates",
+        "href": "https://www.w3.org/TR/openscreen-network/#certificates",
+        "title": "Agent Certificates",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "suspicious-agent",
+      "href": "https://www.w3.org/TR/openscreen-network/#suspicious-agent",
+      "linkingText": [
+        "suspicious agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "local-active-mitigations",
+        "href": "https://www.w3.org/TR/openscreen-network/#local-active-mitigations",
+        "title": "Local active network attackers",
+        "number": "7.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "verified-display-name",
+      "href": "https://www.w3.org/TR/openscreen-network/#verified-display-name",
+      "linkingText": [
+        "verified display name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "instance-names",
+        "href": "https://www.w3.org/TR/openscreen-network/#instance-names",
+        "title": "Instance and Display Names",
+        "number": "7.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "auth-capabilities",
+      "href": "https://www.w3.org/TR/openscreen-network/#auth-capabilities",
+      "linkingText": [
+        "auth-capabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-network/#appendix-a",
+        "title": "Messages",
+        "number": "A"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "auth-initiation-token",
+      "href": "https://www.w3.org/TR/openscreen-network/#auth-initiation-token",
+      "linkingText": [
+        "auth-initiation-token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-network/#appendix-a",
+        "title": "Messages",
+        "number": "A"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "auth-spake2-confirmation",
+      "href": "https://www.w3.org/TR/openscreen-network/#auth-spake2-confirmation",
+      "linkingText": [
+        "auth-spake2-confirmation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-network/#appendix-a",
+        "title": "Messages",
+        "number": "A"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "auth-status",
+      "href": "https://www.w3.org/TR/openscreen-network/#auth-status",
+      "linkingText": [
+        "auth-status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-network/#appendix-a",
+        "title": "Messages",
+        "number": "A"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "auth-spake2-handshake",
+      "href": "https://www.w3.org/TR/openscreen-network/#auth-spake2-handshake",
+      "linkingText": [
+        "auth-spake2-handshake"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "href": "https://www.w3.org/TR/openscreen-network/#appendix-a",
+        "title": "Messages",
+        "number": "A"
+      },
+      "definedIn": "pre"
+    }
+  ]
+}
