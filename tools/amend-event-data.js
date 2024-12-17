@@ -447,6 +447,13 @@ const patches = {
       change: { targets: ['XMLHttpRequest', 'XMLHttpRequestUpload'] }
     }
   ],
+  'web-bluetooth': [
+    {
+      pattern: { type: /^(advertisementreceived|gattserverdisconnected)$/ },
+      matched: 2,
+      change: { targets: ['BluetoothDevice'], bubbles: true }
+    }
+  ],
   'webaudio-1.1': [
     {
       pattern: { type: 'ended' },
