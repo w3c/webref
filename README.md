@@ -31,6 +31,7 @@ More often than not, released versions of specifications are much older than the
 
 The following subfolders in the `curated` branch contain individual machine-readable JSON or text files generated from specifications:
 
+- [`ed/cddl`](https://github.com/w3c/webref/tree/curated/ed/cddl): CDDL modules. If the specification defines a single CDDL module, one file gets created for the specification. If it defines multiple CDDL modules, one file gets created per CDDL module, plus one file named `[shortname]-all.cddl` with all CDDL definitions.
 - [`ed/css`](https://github.com/w3c/webref/tree/curated/ed/css): CSS terms (properties, descriptors, value spaces). One file per specification [series](https://github.com/w3c/browser-specs/#series).
 - [`ed/dfns`](https://github.com/w3c/webref/tree/curated/ed/dfns): `<dfn>` terms, along with metadata such as linking text, access level, namespace. One file per specification.
 - [`ed/elements`](https://github.com/w3c/webref/tree/curated/ed/elements): Markup elements defined, along with the interface that they implement. One file per specification.
@@ -88,6 +89,10 @@ Data curation brings the following guarantees.
 - The `bubblingPath` attribute is only set for target interfaces on which the event bubbles.
 - The `targets` attribute contains the top most interfaces in an inheritance chain, unless bubbling conditions differ. For instance, the list may contain `{ "target": "Element", "bubbles": true }` but not also `{ "target": "HTMLElement", "bubbles": true }` since `HTMLElement` inherits from `Element`.
 - For target interfaces that belong to a bubbling tree, the `targets` attribute only contains the deepest interface in the bubbling tree on which the event may fire and bubble. For instance, the list may contain `{ "target": "HTMLElement", "bubbles": true }`, but not also `{ "target": "Document" }` since event would de facto fire at `Document` through bubbling.
+
+### CDDL extracts
+
+The CDDL extracts currently come with no guarantee whatsoever and may be invalid. Tracked in [#1417](https://github.com/w3c/webref/issues/1417).
 
 ## Known consumers
 
