@@ -1874,7 +1874,7 @@
           "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③①\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store②⑦\">associated store</a> to <var>store</var>.</p>"
         },
         {
-          "html": "<p>If <var>ret</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①⑧\">error</a>, throw an exception. This exception should be a WebAssembly <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror①\">RuntimeError</a></code> exception, unless otherwise indicated by <a href=\"https://webassembly.github.io/js-promise-integration/js-api/#errors\">the WebAssembly error mapping</a>.</p>"
+          "html": "<p>If <var>ret</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①⑧\">error</a>, throw an exception. This exception must be a WebAssembly <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror①\">RuntimeError</a></code> exception, unless otherwise indicated by <a href=\"https://webassembly.github.io/js-promise-integration/js-api/#errors\">the WebAssembly error mapping</a>.</p>"
         },
         {
           "html": "If <var>ret</var> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">THROW</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①\">ref.exn</a> <var>exnaddr</var>, then:",
@@ -2610,13 +2610,13 @@
           "html": "<p class=\"assertion\">Assert: If control reaches here, we have done waiting for suspended imports.</p>"
         },
         {
-          "html": "<p>If the entry for <var>ec</var> in <var>map</var> is not <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#active\" id=\"ref-for-active①\">active</a> then throw a WebAssembly <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror②\">RuntimeError</a></code> exception. Otherwise, remove the entry for <var>ec</var> from <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②\">map</a>.</p>"
+          "html": "<p>If the entry for <var>ec</var> in <var>map</var> is not <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#active\" id=\"ref-for-active①\">active</a> then throw a WebAssembly <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-suspenderror\" id=\"ref-for-exceptiondef-suspenderror\">SuspendError</a></code> exception. Otherwise, remove the entry for <var>ec</var> from <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②\">map</a>.</p>"
         },
         {
           "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⓪\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store③③\">associated store</a> to <var>store</var>.</p>"
         },
         {
-          "html": "<p>If <var>result</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①⑨\">error</a>, throw a WebAssembly <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror③\">RuntimeError</a></code> exception, unless otherwise indicated by <a href=\"https://webassembly.github.io/js-promise-integration/js-api/#errors\">the WebAssembly error mapping</a>.</p>"
+          "html": "<p>If <var>result</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①⑨\">error</a>, throw a WebAssembly <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror②\">RuntimeError</a></code> exception, unless otherwise indicated by <a href=\"https://webassembly.github.io/js-promise-integration/js-api/#errors\">the WebAssembly error mapping</a>.</p>"
         },
         {
           "html": "Otherwise, if <var>result</var> is of the form <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> exnaddr,",
@@ -2727,7 +2727,7 @@
               "rationale": "perform",
               "steps": [
                 {
-                  "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#throw-a-javascript-exception\" id=\"ref-for-throw-a-javascript-exception①\">throw a JavaScript exception</a> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror④\">RuntimeError</a></code> exception.</p>"
+                  "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#throw-a-javascript-exception\" id=\"ref-for-throw-a-javascript-exception①\">throw a JavaScript exception</a> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-suspenderror\" id=\"ref-for-exceptiondef-suspenderror①\">SuspendError</a></code> exception.</p>"
                 }
               ]
             },
@@ -2791,7 +2791,7 @@
                   "rationale": "perform",
                   "steps": [
                     {
-                      "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#throw-a-javascript-exception\" id=\"ref-for-throw-a-javascript-exception②\">throw a JavaScript exception</a> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror⑤\">RuntimeError</a></code>.</p>"
+                      "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#throw-a-javascript-exception\" id=\"ref-for-throw-a-javascript-exception②\">throw a JavaScript exception</a> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-suspenderror\" id=\"ref-for-exceptiondef-suspenderror②\">SuspendError</a></code>.</p>"
                     }
                   ]
                 },
@@ -3367,7 +3367,7 @@
           "html": "<p>Let <var>namespaceObject</var> be the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace-object\" id=\"ref-for-dfn-namespace-object①\">namespace object</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>error</var> of « \"CompileError\", \"LinkError\", \"RuntimeError\" »,",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>error</var> of « \"CompileError\", \"LinkError\", \"RuntimeError\", \"SuspendError\" »,",
           "rationale": "let",
           "steps": [
             {

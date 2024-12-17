@@ -5,9 +5,9 @@
   },
   "properties": [
     {
-      "name": "scroll-start-target",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#propdef-scroll-start-target",
-      "value": "none | auto",
+      "name": "scroll-initial-target",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#propdef-scroll-initial-target",
+      "value": "none | nearest",
       "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -19,21 +19,21 @@
         {
           "name": "none",
           "prose": "The element is not an initial scroll target.",
-          "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-none",
+          "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-initial-target-none",
           "type": "value",
           "value": "none"
         },
         {
-          "name": "auto",
+          "name": "nearest",
           "prose": "The element is potentially an initial scroll target for its nearest scroll container ancestor.",
-          "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-auto",
+          "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-initial-target-nearest",
           "type": "value",
-          "value": "auto"
+          "value": "nearest"
         }
       ],
       "styleDeclaration": [
-        "scroll-start-target",
-        "scrollStartTarget"
+        "scroll-initial-target",
+        "scrollInitialTarget"
       ]
     }
   ],

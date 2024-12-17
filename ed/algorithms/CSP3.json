@@ -2038,17 +2038,17 @@
     {
       "name": "port-part matches",
       "href": "https://w3c.github.io/webappsec-csp/#port-part-matches",
-      "html": "An <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string①⓪\">ASCII string</a> <var>input</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"port-part-matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>port-part</code> matches</dfn> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>url</var> if a CSP source expression that\n  contained the first as a <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-port-part\" id=\"ref-for-grammardef-port-part②\"><code>port-part</code></a> could potentially match a URL containing the latter’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port\">port</a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①②\">scheme</a>. For example, \"80\" <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#port-part-matches\" id=\"ref-for-port-part-matches①\"><code>port-part</code> matches</a> matches http://example.com.",
+      "html": "An <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string①⓪\">ASCII string</a> or null <var>input</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"port-part-matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>port-part</code> matches</dfn> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>url</var> if a CSP source expression that contained the first as a <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-port-part\" id=\"ref-for-grammardef-port-part②\"><code>port-part</code></a> could potentially match a URL containing the latter’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port\">port</a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①②\">scheme</a>. For example, \"80\" <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#port-part-matches\" id=\"ref-for-port-part-matches①\"><code>port-part</code> matches</a> matches http://example.com.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>input</var> is the empty string, \"*\", or a sequence of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-digit\" id=\"ref-for-ascii-digit\">ASCII digits</a>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>input</var> is null, \"*\", or a sequence of one or more <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-digit\" id=\"ref-for-ascii-digit\">ASCII digits</a>.</p>"
         },
         {
           "html": "<p>If <var>input</var> is equal to \"*\", return \"<code>Matches</code>\".</p>"
         },
         {
-          "html": "<p>Let <var>normalizedInput</var> be null if <var>input</var> is the empty string; otherwise <var>input</var> interpreted as decimal number.</p>"
+          "html": "<p>Let <var>normalizedInput</var> be null if <var>input</var> null; otherwise <var>input</var> interpreted as decimal number.</p>"
         },
         {
           "html": "<p>If <var>normalizedInput</var> equals <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port①\">port</a>, return \"<code>Matches</code>\".</p>"
