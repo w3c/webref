@@ -3,10 +3,6 @@
 ; (https://github.com/w3c/webref)
 ; Source: AT Driver (https://w3c.github.io/at-driver/)
 
-Extensible = {
-  *text => any
-}
-
 Message = (
   CommandResponse //
   ErrorResponse //
@@ -43,6 +39,10 @@ Event = {
 EventData = (
   InteractionEvent
 )
+
+Extensible = {
+  *text => any
+}
 
 SessionResult = (SessionNewResult)
 

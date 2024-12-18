@@ -3,10 +3,6 @@
 ; (https://github.com/w3c/webref)
 ; Source: AT Driver (https://w3c.github.io/at-driver/)
 
-Extensible = {
-  *text => any
-}
-
 Command = {
   id: uint,
   CommandData,
@@ -20,6 +16,10 @@ CommandData = (
 )
 
 EmptyParams = { Extensible }
+
+Extensible = {
+  *text => any
+}
 
 SessionCommand = (SessionNewCommand)
 
