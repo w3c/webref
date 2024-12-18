@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-12-18T06:43:50.614Z",
+  "date": "2024-12-18T12:49:27.548Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -683,7 +683,7 @@
   },
   "stats": {
     "crawled": 651,
-    "errors": 17
+    "errors": 26
   },
   "crawler": "reffy-18.1.1",
   "results": [
@@ -2388,7 +2388,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-mixins-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 17 Dec 2024 12:32:22 GMT"
+        "lastModified": "Tue, 17 Dec 2024 12:32:23 GMT"
       },
       "generator": "bikeshed",
       "date": "15 October 2024",
@@ -4510,7 +4510,8 @@
       "date": "31 October 2024",
       "links": "links/ANGLE_instanced_arrays.json",
       "idl": "idl/ANGLE_instanced_arrays.idl",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:478:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 66)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13392:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:472:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_blend_minmax/",
@@ -4561,7 +4562,8 @@
       "date": "31 October 2024",
       "links": "links/EXT_blend_minmax.json",
       "idl": "idl/EXT_blend_minmax.idl",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_blend_minmax/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:478:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 67)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13392:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:472:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
@@ -4612,7 +4614,8 @@
       "date": "31 October 2024",
       "links": "links/EXT_color_buffer_float.json",
       "idl": "idl/EXT_color_buffer_float.idl",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:478:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 68)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13392:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:472:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_half_float/",
@@ -4663,7 +4666,8 @@
       "date": "31 October 2024",
       "links": "links/EXT_color_buffer_half_float.json",
       "idl": "idl/EXT_color_buffer_half_float.idl",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_color_buffer_half_float/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:478:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 69)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13392:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:472:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
@@ -4765,7 +4769,8 @@
       "date": "31 October 2024",
       "links": "links/EXT_disjoint_timer_query.json",
       "idl": "idl/EXT_disjoint_timer_query.idl",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:478:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 71)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13392:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:472:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
@@ -4816,7 +4821,8 @@
       "date": "31 October 2024",
       "links": "links/EXT_float_blend.json",
       "idl": "idl/EXT_float_blend.idl",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_float_blend/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:478:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 72)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13392:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:472:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_frag_depth/",
@@ -4918,7 +4924,8 @@
       "date": "31 October 2024",
       "links": "links/EXT_shader_texture_lod.json",
       "idl": "idl/EXT_shader_texture_lod.idl",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:478:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 74)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13392:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:472:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_sRGB/",
@@ -4969,7 +4976,8 @@
       "date": "31 October 2024",
       "links": "links/EXT_sRGB.json",
       "idl": "idl/EXT_sRGB.idl",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_sRGB/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:478:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 75)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13392:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:472:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
@@ -5020,7 +5028,8 @@
       "date": "31 October 2024",
       "links": "links/EXT_texture_compression_bptc.json",
       "idl": "idl/EXT_texture_compression_bptc.idl",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:478:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 76)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13392:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:472:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_rgtc/",
@@ -15506,9 +15515,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Dec 2024 11:14:14 GMT"
+        "lastModified": "Tue, 17 Dec 2024 12:43:31 GMT"
       },
-      "date": "10 December 2024",
+      "date": "17 December 2024",
       "links": "links/rfc7034.json",
       "ids": "ids/rfc7034.json",
       "cddl": []
@@ -18360,7 +18369,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-2023/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 17 Dec 2024 12:32:22 GMT"
+        "lastModified": "Tue, 17 Dec 2024 12:32:23 GMT"
       },
       "generator": "bikeshed",
       "date": "11 December 2023",
@@ -20423,7 +20432,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-flexbox-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 17 Dec 2024 12:32:22 GMT"
+        "lastModified": "Tue, 17 Dec 2024 12:32:23 GMT"
       },
       "generator": "bikeshed",
       "date": "9 August 2024",
@@ -23623,7 +23632,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-text-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 17 Dec 2024 12:32:22 GMT"
+        "lastModified": "Tue, 17 Dec 2024 12:32:23 GMT"
       },
       "generator": "bikeshed",
       "date": "3 October 2024",
