@@ -1,0 +1,28 @@
+; GENERATED CONTENT - DO NOT EDIT
+; Content was automatically extracted by Reffy into webref
+; (https://github.com/w3c/webref)
+; Source: Permissions (https://www.w3.org/TR/permissions/)
+
+PermissionsCommand = (
+  permissions.setPermission
+)
+
+permissions.PermissionDescriptor = {
+  name: text,
+}
+
+permissions.PermissionState = "granted" / "denied" / "prompt"
+
+permissions.setPermission = (
+  method: "permissions.setPermission",
+  params: permissions.SetPermissionParameters
+)
+
+permissions.SetPermissionParameters = {
+  descriptor: permissions.PermissionDescriptor,
+  state: permissions.PermissionState,
+  origin: text,
+  ? userContext: text,
+}
+
+EmptyResult
