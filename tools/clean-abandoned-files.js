@@ -18,7 +18,8 @@ function checkDir(path, index) {
     const fullname = subdir + "/" + filename
     if (!index.results.find(spec =>
           spec[subdir] === fullname ||
-          spec[subdir]?.find(extract => extract.file === fullname))) {
+          (Array.isArray(spec[subdir]) &&
+            spec[subdir].find(extract => extract.file === fullname)))) {
       fs.unlinkSync(path + "/" + filename);
     }
   }
