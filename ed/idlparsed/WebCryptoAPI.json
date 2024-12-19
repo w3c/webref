@@ -435,7 +435,7 @@
         "href": "https://w3c.github.io/webcrypto/#dom-keyformat"
       },
       "SubtleCrypto": {
-        "fragment": "[SecureContext,Exposed=(Window,Worker)]\ninterface SubtleCrypto {\n  Promise<any> encrypt(AlgorithmIdentifier algorithm,\n                       CryptoKey key,\n                       BufferSource data);\n  Promise<any> decrypt(AlgorithmIdentifier algorithm,\n                       CryptoKey key,\n                       BufferSource data);\n  Promise<any> sign(AlgorithmIdentifier algorithm,\n                    CryptoKey key,\n                    BufferSource data);\n  Promise<any> verify(AlgorithmIdentifier algorithm,\n                      CryptoKey key,\n                      BufferSource signature,\n                      BufferSource data);\n  Promise<any> digest(AlgorithmIdentifier algorithm,\n                      BufferSource data);\n\n  Promise<any> generateKey(AlgorithmIdentifier algorithm,\n                          boolean extractable,\n                          sequence<KeyUsage> keyUsages );\n  Promise<any> deriveKey(AlgorithmIdentifier algorithm,\n                         CryptoKey baseKey,\n                         AlgorithmIdentifier derivedKeyType,\n                         boolean extractable,\n                         sequence<KeyUsage> keyUsages );\n  Promise<ArrayBuffer> deriveBits(AlgorithmIdentifier algorithm,\n                          CryptoKey baseKey,\n                          optional unsigned long? length = null);\n\n  Promise<CryptoKey> importKey(KeyFormat format,\n                         (BufferSource or JsonWebKey) keyData,\n                         AlgorithmIdentifier algorithm,\n                         boolean extractable,\n                         sequence<KeyUsage> keyUsages );\n  Promise<any> exportKey(KeyFormat format, CryptoKey key);\n\n  Promise<any> wrapKey(KeyFormat format,\n                       CryptoKey key,\n                       CryptoKey wrappingKey,\n                       AlgorithmIdentifier wrapAlgorithm);\n  Promise<CryptoKey> unwrapKey(KeyFormat format,\n                         BufferSource wrappedKey,\n                         CryptoKey unwrappingKey,\n                         AlgorithmIdentifier unwrapAlgorithm,\n                         AlgorithmIdentifier unwrappedKeyAlgorithm,\n                         boolean extractable,\n                         sequence<KeyUsage> keyUsages );\n};",
+        "fragment": "[SecureContext,Exposed=(Window,Worker)]\ninterface SubtleCrypto {\n  Promise<ArrayBuffer> encrypt(\n    AlgorithmIdentifier algorithm,\n    CryptoKey key,\n    BufferSource data\n  );\n  Promise<ArrayBuffer> decrypt(\n    AlgorithmIdentifier algorithm,\n    CryptoKey key,\n    BufferSource data\n  );\n  Promise<ArrayBuffer> sign(\n    AlgorithmIdentifier algorithm,\n    CryptoKey key,\n    BufferSource data\n  );\n  Promise<boolean> verify(\n    AlgorithmIdentifier algorithm,\n    CryptoKey key,\n    BufferSource signature,\n    BufferSource data\n  );\n  Promise<ArrayBuffer> digest(\n    AlgorithmIdentifier algorithm,\n    BufferSource data\n  );\n\n  Promise<(CryptoKey or CryptoKeyPair)> generateKey(\n    AlgorithmIdentifier algorithm,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n  Promise<CryptoKey> deriveKey(\n    AlgorithmIdentifier algorithm,\n    CryptoKey baseKey,\n    AlgorithmIdentifier derivedKeyType,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n  Promise<ArrayBuffer> deriveBits(\n    AlgorithmIdentifier algorithm,\n    CryptoKey baseKey,\n    optional unsigned long? length = null\n  );\n\n  Promise<CryptoKey> importKey(\n    KeyFormat format,\n    (BufferSource or JsonWebKey) keyData,\n    AlgorithmIdentifier algorithm,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n  Promise<(ArrayBuffer or JsonWebKey)> exportKey(\n    KeyFormat format,\n    CryptoKey key\n  );\n\n  Promise<ArrayBuffer> wrapKey(\n    KeyFormat format,\n    CryptoKey key,\n    CryptoKey wrappingKey,\n    AlgorithmIdentifier wrapAlgorithm\n  );\n  Promise<CryptoKey> unwrapKey(\n    KeyFormat format,\n    BufferSource wrappedKey,\n    CryptoKey unwrappingKey,\n    AlgorithmIdentifier unwrapAlgorithm,\n    AlgorithmIdentifier unwrappedKeyAlgorithm,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n};",
         "type": "interface",
         "name": "SubtleCrypto",
         "inheritance": null,
@@ -456,7 +456,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "any"
+                  "idlType": "ArrayBuffer"
                 }
               ]
             },
@@ -530,7 +530,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "any"
+                  "idlType": "ArrayBuffer"
                 }
               ]
             },
@@ -604,7 +604,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "any"
+                  "idlType": "ArrayBuffer"
                 }
               ]
             },
@@ -678,7 +678,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "any"
+                  "idlType": "boolean"
                 }
               ]
             },
@@ -768,7 +768,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "any"
+                  "idlType": "ArrayBuffer"
                 }
               ]
             },
@@ -825,8 +825,25 @@
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "any"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": "return-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "CryptoKey"
+                    },
+                    {
+                      "type": "return-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "CryptoKeyPair"
+                    }
+                  ]
                 }
               ]
             },
@@ -909,7 +926,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "any"
+                  "idlType": "CryptoKey"
                 }
               ]
             },
@@ -1231,8 +1248,25 @@
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "any"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": "return-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "ArrayBuffer"
+                    },
+                    {
+                      "type": "return-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "JsonWebKey"
+                    }
+                  ]
                 }
               ]
             },
@@ -1290,7 +1324,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "any"
+                  "idlType": "ArrayBuffer"
                 }
               ]
             },
@@ -2929,11 +2963,12 @@
         "KeyType"
       ],
       "SubtleCrypto": [
+        "ArrayBuffer",
         "AlgorithmIdentifier",
         "CryptoKey",
         "BufferSource",
+        "CryptoKeyPair",
         "KeyUsage",
-        "ArrayBuffer",
         "KeyFormat",
         "JsonWebKey"
       ],
@@ -3037,8 +3072,8 @@
     "externalDependencies": [
       "WindowOrWorkerGlobalScope",
       "ArrayBufferView",
-      "BufferSource",
       "ArrayBuffer",
+      "BufferSource",
       "Uint8Array"
     ],
     "hasObsoleteIdl": false

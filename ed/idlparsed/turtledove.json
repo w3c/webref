@@ -232,7 +232,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-auctionadinterestgroupsize"
       },
       "GenerateBidInterestGroup": {
-        "fragment": "dictionary GenerateBidInterestGroup {\n  required USVString owner;\n  required USVString name;\n\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n\n  record<USVString, sequence<DOMString>> sellerCapabilities;\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicURL;\n  USVString biddingWasmHelperURL;\n  USVString updateURL;\n  USVString trustedBiddingSignalsURL;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  DOMString trustedBiddingSignalsSlotSizeMode = \"none\";\n  long maxTrustedBiddingSignalsURLLength;\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n  record<DOMString, AuctionAdInterestGroupSize> adSizes;\n  record<DOMString, sequence<DOMString>> sizeGroups;\n};",
+        "fragment": "dictionary GenerateBidInterestGroup {\n  required USVString owner;\n  required USVString name;\n\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n\n  record<USVString, sequence<DOMString>> sellerCapabilities;\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicURL;\n  USVString biddingWasmHelperURL;\n  USVString updateURL;\n  USVString trustedBiddingSignalsURL;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  DOMString trustedBiddingSignalsSlotSizeMode = \"none\";\n  long maxTrustedBiddingSignalsURLLength;\n  USVString trustedBiddingSignalsCoordinator;\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n  record<DOMString, AuctionAdInterestGroupSize> adSizes;\n  record<DOMString, sequence<DOMString>> sizeGroups;\n};",
         "type": "dictionary",
         "name": "GenerateBidInterestGroup",
         "inheritance": null,
@@ -505,6 +505,22 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-maxtrustedbiddingsignalsurllength"
+          },
+          {
+            "type": "field",
+            "name": "trustedBiddingSignalsCoordinator",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-trustedbiddingsignalscoordinator"
           },
           {
             "type": "field",
@@ -950,7 +966,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-auctionrealtimereportingconfig"
       },
       "AuctionAdConfig": {
-        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n\n  USVString trustedScoringSignalsURL;\n  long maxTrustedScoringSignalsURLLength;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  Promise<any> sellerSignals;\n  Promise<DOMString?> directFromSellerSignalsHeaderAdSlot;\n  Promise<record<USVString, USVString>?> deprecatedRenderURLReplacements;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  Promise<record<USVString, any>?> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>?> perBuyerTimeouts;\n  Promise<record<USVString, unsigned long long>?> perBuyerCumulativeTimeouts;\n  unsigned long long reportingTimeout;\n  USVString sellerCurrency;\n  Promise<record<USVString, USVString>?> perBuyerCurrencies;\n  record<USVString, unsigned short> perBuyerMultiBidLimits;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n\n  sequence<bigint> auctionReportBuyerKeys;\n  record<DOMString, AuctionReportBuyersConfig> auctionReportBuyers;\n  AuctionReportBuyerDebugModeConfig auctionReportBuyerDebugModeConfig;\n  sequence<DOMString> requiredSellerCapabilities;\n  ProtectedAudiencePrivateAggregationConfig privateAggregationConfig;\n\n  record<DOMString, DOMString> requestedSize;\n  sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  AuctionRealTimeReportingConfig sellerRealTimeReportingConfig;\n  record<USVString, AuctionRealTimeReportingConfig> perBuyerRealTimeReportingConfig;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n\n  Promise<Uint8Array> serverResponse;\n  USVString requestId;\n};",
+        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n\n  USVString trustedScoringSignalsURL;\n  long maxTrustedScoringSignalsURLLength;\n  USVString trustedScoringSignalsCoordinator;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  Promise<any> sellerSignals;\n  Promise<DOMString?> directFromSellerSignalsHeaderAdSlot;\n  Promise<record<USVString, USVString>?> deprecatedRenderURLReplacements;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  Promise<record<USVString, any>?> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>?> perBuyerTimeouts;\n  Promise<record<USVString, unsigned long long>?> perBuyerCumulativeTimeouts;\n  unsigned long long reportingTimeout;\n  USVString sellerCurrency;\n  Promise<record<USVString, USVString>?> perBuyerCurrencies;\n  record<USVString, unsigned short> perBuyerMultiBidLimits;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n\n  sequence<bigint> auctionReportBuyerKeys;\n  record<DOMString, AuctionReportBuyersConfig> auctionReportBuyers;\n  AuctionReportBuyerDebugModeConfig auctionReportBuyerDebugModeConfig;\n  sequence<DOMString> requiredSellerCapabilities;\n  ProtectedAudiencePrivateAggregationConfig privateAggregationConfig;\n\n  record<DOMString, DOMString> requestedSize;\n  sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  AuctionRealTimeReportingConfig sellerRealTimeReportingConfig;\n  record<USVString, AuctionRealTimeReportingConfig> perBuyerRealTimeReportingConfig;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n\n  Promise<Uint8Array> serverResponse;\n  USVString requestId;\n};",
         "type": "dictionary",
         "name": "AuctionAdConfig",
         "inheritance": null,
@@ -1018,6 +1034,22 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-maxtrustedscoringsignalsurllength"
+          },
+          {
+            "type": "field",
+            "name": "trustedScoringSignalsCoordinator",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-trustedscoringsignalscoordinator"
           },
           {
             "type": "field",
