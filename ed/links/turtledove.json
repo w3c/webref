@@ -13,6 +13,7 @@
       "https://encoding.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
+          "cors-safelisted-request-header",
           "infrastructure",
           "http-extensions",
           "fetching"
@@ -52,6 +53,12 @@
       "https://mimesniff.spec.whatwg.org/": {},
       "https://patcg-individual-drafts.github.io/private-aggregation-api/": {},
       "https://privacysandbox.github.io/draft-ietf-bidding-and-auction-services/draft-ietf-bidding-and-auction-services.html": {
+        "anchors": [
+          "name-parsing-a-response",
+          "name-generating-a-request"
+        ]
+      },
+      "https://privacysandbox.github.io/draft-ietf-protected-audience-key-value-service/draft-ietf-protected-audience-key-value-services.html": {
         "anchors": [
           "name-parsing-a-response",
           "name-generating-a-request"
@@ -382,7 +389,8 @@
         "anchors": [
           "javascript-mime-type",
           "json-mime-type",
-          "parameters"
+          "parameters",
+          "mime-type-essence"
         ]
       },
       "https://patcg-individual-drafts.github.io/private-aggregation-api": {
