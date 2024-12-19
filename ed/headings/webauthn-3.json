@@ -967,20 +967,6 @@
       "number": "10.1.4"
     },
     {
-      "id": "prf-extension-test-vectors-webauthn",
-      "href": "https://w3c.github.io/webauthn/#prf-extension-test-vectors-webauthn",
-      "level": 5,
-      "title": "Test vectors: Web Authentication API",
-      "number": "10.1.4.1"
-    },
-    {
-      "id": "prf-extension-test-vectors-ctap",
-      "href": "https://w3c.github.io/webauthn/#prf-extension-test-vectors-ctap",
-      "level": 5,
-      "title": "Test vectors: CTAP2 hmac-secret extension",
-      "number": "10.1.4.2"
-    },
-    {
       "id": "sctn-large-blob-extension",
       "href": "https://w3c.github.io/webauthn/#sctn-large-blob-extension",
       "level": 4,
@@ -1347,10 +1333,149 @@
       "number": "15.1"
     },
     {
+      "id": "sctn-test-vectors",
+      "href": "https://w3c.github.io/webauthn/#sctn-test-vectors",
+      "level": 2,
+      "title": "16. Test Vectors"
+    },
+    {
+      "id": "sctn-test-vectors-attestation-root-cert",
+      "href": "https://w3c.github.io/webauthn/#sctn-test-vectors-attestation-root-cert",
+      "level": 3,
+      "title": "Attestation trust root certificate",
+      "number": "16.1"
+    },
+    {
+      "id": "sctn-test-vectors-none-es256",
+      "href": "https://w3c.github.io/webauthn/#sctn-test-vectors-none-es256",
+      "level": 4,
+      "title": "ES256 Credential with No Attestation",
+      "number": "16.1.1"
+    },
+    {
+      "id": "sctn-test-vectors-packed-self-es256",
+      "href": "https://w3c.github.io/webauthn/#sctn-test-vectors-packed-self-es256",
+      "level": 4,
+      "title": "ES256 Credential with Self Attestation",
+      "number": "16.1.2"
+    },
+    {
+      "id": "sctn-test-vectors-none-es256-crossOrigin",
+      "href": "https://w3c.github.io/webauthn/#sctn-test-vectors-none-es256-crossOrigin",
+      "level": 4,
+      "title": "ES256 Credential with \"crossOrigin\": true in clientDataJSON",
+      "number": "16.1.3"
+    },
+    {
+      "id": "sctn-test-vectors-none-es256-topOrigin",
+      "href": "https://w3c.github.io/webauthn/#sctn-test-vectors-none-es256-topOrigin",
+      "level": 4,
+      "title": "ES256 Credential with \"topOrigin\" in clientDataJSON",
+      "number": "16.1.4"
+    },
+    {
+      "id": "sctn-test-vectors-none-es256-long-credential-id",
+      "href": "https://w3c.github.io/webauthn/#sctn-test-vectors-none-es256-long-credential-id",
+      "level": 4,
+      "title": "ES256 Credential with very long credential ID",
+      "number": "16.1.5"
+    },
+    {
+      "id": "sctn-test-vectors-packed-es256",
+      "href": "https://w3c.github.io/webauthn/#sctn-test-vectors-packed-es256",
+      "level": 4,
+      "title": "Packed Attestation with ES256 Credential",
+      "number": "16.1.6"
+    },
+    {
+      "id": "sctn-test-vectors-packed-es384",
+      "href": "https://w3c.github.io/webauthn/#sctn-test-vectors-packed-es384",
+      "level": 4,
+      "title": "Packed Attestation with ES384 Credential",
+      "number": "16.1.7"
+    },
+    {
+      "id": "sctn-test-vectors-packed-es512",
+      "href": "https://w3c.github.io/webauthn/#sctn-test-vectors-packed-es512",
+      "level": 4,
+      "title": "Packed Attestation with ES512 Credential",
+      "number": "16.1.8"
+    },
+    {
+      "id": "sctn-test-vectors-packed-rs256",
+      "href": "https://w3c.github.io/webauthn/#sctn-test-vectors-packed-rs256",
+      "level": 4,
+      "title": "Packed Attestation with RS256 Credential",
+      "number": "16.1.9"
+    },
+    {
+      "id": "sctn-test-vectors-packed-ed25519",
+      "href": "https://w3c.github.io/webauthn/#sctn-test-vectors-packed-ed25519",
+      "level": 4,
+      "title": "Packed Attestation with Ed25519 Credential",
+      "number": "16.1.10"
+    },
+    {
+      "id": "sctn-test-vectors-tpm-es256",
+      "href": "https://w3c.github.io/webauthn/#sctn-test-vectors-tpm-es256",
+      "level": 4,
+      "title": "TPM Attestation with ES256 Credential",
+      "number": "16.1.11"
+    },
+    {
+      "id": "sctn-test-vectors-android-key-es256",
+      "href": "https://w3c.github.io/webauthn/#sctn-test-vectors-android-key-es256",
+      "level": 4,
+      "title": "Android Key Attestation with ES256 Credential",
+      "number": "16.1.12"
+    },
+    {
+      "id": "sctn-test-vectors-apple-es256",
+      "href": "https://w3c.github.io/webauthn/#sctn-test-vectors-apple-es256",
+      "level": 4,
+      "title": "Apple Anonymous Attestation with ES256 Credential",
+      "number": "16.1.13"
+    },
+    {
+      "id": "sctn-test-vectors-fido-u2f-es256",
+      "href": "https://w3c.github.io/webauthn/#sctn-test-vectors-fido-u2f-es256",
+      "level": 4,
+      "title": "FIDO U2F Attestation with ES256 Credential",
+      "number": "16.1.14"
+    },
+    {
+      "id": "test-vectors-extensions",
+      "href": "https://w3c.github.io/webauthn/#test-vectors-extensions",
+      "level": 3,
+      "title": "Test Vectors for WebAuthn Extensions",
+      "number": "16.2"
+    },
+    {
+      "id": "test-vectors-extensions-prf",
+      "href": "https://w3c.github.io/webauthn/#test-vectors-extensions-prf",
+      "level": 4,
+      "title": "Pseudo-random function extension (prf)",
+      "number": "16.2.1"
+    },
+    {
+      "id": "test-vectors-extensions-prf-webauthn",
+      "href": "https://w3c.github.io/webauthn/#test-vectors-extensions-prf-webauthn",
+      "level": 5,
+      "title": "Web Authentication API",
+      "number": "16.2.1.1"
+    },
+    {
+      "id": "test-vectors-extensions-prf-ctap",
+      "href": "https://w3c.github.io/webauthn/#test-vectors-extensions-prf-ctap",
+      "level": 5,
+      "title": "CTAP2 hmac-secret extension",
+      "number": "16.2.1.2"
+    },
+    {
       "id": "sctn-acknowledgements",
       "href": "https://w3c.github.io/webauthn/#sctn-acknowledgements",
       "level": 2,
-      "title": "16. Acknowledgements"
+      "title": "17. Acknowledgements"
     },
     {
       "id": "index",
