@@ -2776,7 +2776,7 @@
         "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsprfvalues"
       },
       "AuthenticationExtensionsPRFInputs": {
-        "fragment": "dictionary AuthenticationExtensionsPRFInputs {\n    AuthenticationExtensionsPRFValues eval;\n    record<USVString, AuthenticationExtensionsPRFValues> evalByCredential;\n};",
+        "fragment": "dictionary AuthenticationExtensionsPRFInputs {\n    AuthenticationExtensionsPRFValues eval;\n    record<DOMString, AuthenticationExtensionsPRFValues> evalByCredential;\n};",
         "type": "dictionary",
         "name": "AuthenticationExtensionsPRFInputs",
         "inheritance": null,
@@ -2814,7 +2814,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "USVString"
+                  "idlType": "DOMString"
                 },
                 {
                   "type": "dictionary-type",
@@ -3369,7 +3369,7 @@
       ],
       "AuthenticationExtensionsClientInputs": [
         {
-          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  USVString appid;\n};",
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  DOMString appid;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientInputs",
           "inheritance": null,
@@ -3384,7 +3384,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "USVString"
+                "idlType": "DOMString"
               },
               "default": null,
               "required": false,
@@ -3395,7 +3395,7 @@
           "partial": true
         },
         {
-          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  USVString appidExclude;\n};",
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  DOMString appidExclude;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientInputs",
           "inheritance": null,
@@ -3410,7 +3410,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "USVString"
+                "idlType": "DOMString"
               },
               "default": null,
               "required": false,
