@@ -27,6 +27,14 @@ async function applyPatches(rawFolder, outputFolder, type) {
 
   const packages = [
     {
+      name: 'cddl',
+      srcDir: path.join(rawFolder, 'cddl'),
+      dstDir: path.join(outputFolder, 'cddl'),
+      dstDirForCli: [outputFolder, 'cddl'].join('/'),
+      patchDir: path.join(rawFolder, 'cddlpatches'),
+      fileExt: 'cddl'
+    },
+    {
       name: 'css',
       srcDir: path.join(rawFolder, 'css'),
       dstDir: path.join(outputFolder, 'css'),
