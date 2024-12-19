@@ -338,15 +338,17 @@
         },
         {
           "name": "text-before-edge",
+          "prose": "text-before-edge aliasing text-top",
           "href": "https://www.w3.org/TR/css-inline-3/#valdef-alignment-baseline-text-before-edge",
           "type": "value",
-          "value": "text-top"
+          "value": "text-before-edge"
         },
         {
           "name": "text-after-edge",
+          "prose": "text-after-edge aliasing text-bottom",
           "href": "https://www.w3.org/TR/css-inline-3/#valdef-alignment-baseline-text-after-edge",
           "type": "value",
-          "value": "text-bottom"
+          "value": "text-after-edge"
         }
       ],
       "styleDeclaration": [
@@ -587,14 +589,14 @@
         },
         {
           "name": "trim-start",
-          "prose": "For block containers: trim the block-start side of the first formatted line to the specified metric of its root inline box. If there is no such line, or if there is intervening non-zero padding or borders, there is no effect. For inline boxes: trims the block-start side of the box to match its content edge to the metric specified by text-box-edge.",
+          "prose": "For block containers and column boxes: trim the block-start side of the first formatted line to the specified metric of its root inline box. If there is no such line, or if there is intervening non-zero padding or borders, there is no effect. For inline boxes: trims the block-start side of the box to match its content edge to the metric specified by text-box-edge.",
           "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-trim-trim-start",
           "type": "value",
           "value": "trim-start"
         },
         {
           "name": "trim-end",
-          "prose": "For block containers: trim the block-end side of the last formatted line to the specified metric of its root inline box. If there is no such line, or if there is intervening non-zero padding or borders, there is no effect. For inline boxes: trims the block-end side of the box to match its content edge to the metric specified by text-box-edge.",
+          "prose": "For block containers and column boxes: trim the block-end side of the last formatted line to the specified metric of its root inline box. If there is no such line, or if there is intervening non-zero padding or borders, there is no effect. For inline boxes: trims the block-end side of the box to match its content edge to the metric specified by text-box-edge.",
           "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-trim-trim-end",
           "type": "value",
           "value": "trim-end"
@@ -618,7 +620,7 @@
       "value": "auto | <text-edge>",
       "initial": "auto",
       "appliesTo": "block containers and inline boxes",
-      "inherited": "no",
+      "inherited": "yes",
       "percentages": "N/A",
       "computedValue": "the specified keyword",
       "canonicalOrder": "per grammar",
@@ -626,7 +628,7 @@
       "values": [
         {
           "name": "auto",
-          "prose": "This property specifies the metrics to use for text-box-trim effects. Values have the same meanings as for line-fit-edge; the auto keyword uses the value of line-fit-edge on the root inline box of the the affected line box, interpreting leading (the initial value) as text.",
+          "prose": "This property specifies the metrics to use for text-box-trim effects. Values have the same meanings as for line-fit-edge; the auto keyword uses the value of line-fit-edge, interpreting leading (the initial value) as text.",
           "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-edge-auto",
           "type": "value",
           "value": "auto"
@@ -651,7 +653,7 @@
       "values": [
         {
           "name": "normal",
-          "prose": "The content area of the inline box is sized and positioned to fit (possibly hypothetical) text from its first available font. This specification does not specify how. A UA may, e.g., use the maximum ascender and descender of the font. (This would ensure that glyphs with parts above or below the em-box still fall within the content area, but leads to differently sized boxes for different fonts.)",
+          "prose": "The content area of the inline box is sized and positioned to fit (possibly hypothetical) text from its first available font. If text-box-trim indicates trimming, then the specified metric must be used. Otherwise, this specification does not specify how. A UA may, e.g., use the maximum ascender and descender of the font. (This would ensure that glyphs with parts above or below the em-box still fall within the content area, but leads to differently sized boxes for different fonts.)",
           "href": "https://www.w3.org/TR/css-inline-3/#valdef-inline-sizing-normal",
           "type": "value",
           "value": "normal"
@@ -844,7 +846,7 @@
       "prose": "The <text-edge> value, which identifies specific font metrics, expands to",
       "href": "https://www.w3.org/TR/css-inline-3/#typedef-text-edge",
       "type": "type",
-      "value": "[ text | cap | ex | ideographic | ideographic-ink ] [ text | alphabetic | ideographic | ideographic-ink ]?",
+      "value": "[ text | ideographic | ideographic-ink ] | [ text | ideographic | ideographic-ink | cap | ex ] [ text | ideographic | ideographic-ink | alphabetic ]",
       "values": [
         {
           "name": "leading",
