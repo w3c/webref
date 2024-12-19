@@ -179,12 +179,6 @@ session.NewResult = {
   }
 }
 
-EmptyResult
-
-EmptyResult
-
-EmptyResult
-
 BrowserResult = (
    browser.CreateUserContextResult /
    browser.GetUserContextsResult
@@ -208,8 +202,6 @@ browser.UserContextInfo = {
   userContext: browser.UserContext
 }
 
-EmptyResult
-
 browser.CreateUserContextResult = browser.UserContextInfo
 
 browser.GetClientWindowsResult = {
@@ -219,10 +211,6 @@ browser.GetClientWindowsResult = {
 browser.GetUserContextsResult = {
   userContexts: [ + browser.UserContextInfo]
 }
-
-EmptyResult
-
-browser.ClientWindowInfo
 
 BrowsingContextResult = (
   browsingContext.CaptureScreenshotResult /
@@ -307,13 +295,9 @@ browsingContext.NavigationInfo = {
 
 browsingContext.UserPromptType = "alert" / "beforeunload" / "confirm" / "prompt";
 
-EmptyResult
-
 browsingContext.CaptureScreenshotResult = {
   data: text
 }
-
-EmptyResult
 
 browsingContext.CreateResult = {
   context: browsingContext.BrowsingContext
@@ -322,8 +306,6 @@ browsingContext.CreateResult = {
 browsingContext.GetTreeResult = {
   contexts: browsingContext.InfoList
 }
-
-EmptyResult
 
 browsingContext.LocateNodesResult = {
     nodes: [ * script.NodeRemoteValue ]
@@ -337,10 +319,6 @@ browsingContext.NavigateResult = {
 browsingContext.PrintResult = {
   data: text
 }
-
-browsingContext.NavigateResult
-
-EmptyResult
 
 browsingContext.TraverseHistoryResult = {
 }
@@ -548,20 +526,6 @@ network.AddInterceptResult = {
   intercept: network.Intercept
 }
 
-EmptyResult
-
-EmptyResult
-
-EmptyResult
-
-EmptyResult
-
-EmptyResult
-
-EmptyResult
-
-EmptyResult
-
 network.AuthRequired = (
   method: "network.authRequired",
   params: network.AuthRequiredParameters
@@ -571,8 +535,6 @@ network.AuthRequiredParameters = {
   network.BaseParameters,
   response: network.ResponseData
 }
-
-EmptyResult
 
 network.BeforeRequestSent = (
   method: "network.beforeRequestSent",
@@ -1042,17 +1004,9 @@ script.AddPreloadScriptResult = {
   script: script.PreloadScript
 }
 
-EmptyResult
-
-script.EvaluateResult
-
-script.EvaluateResult
-
 script.GetRealmsResult = {
   realms: [*script.RealmInfo]
 }
-
-EmptyResult
 
 script.Message = (
   method: "script.message",
@@ -1145,12 +1099,6 @@ log.EntryAdded = (
  method: "log.entryAdded",
  params: log.Entry,
 )
-
-EmptyResult
-
-EmptyResult
-
-EmptyResult
 
 WebExtensionResult = (
   webExtension.InstallResult

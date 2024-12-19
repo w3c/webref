@@ -232,21 +232,15 @@ session.End = (
   params: EmptyParams
 )
 
-EmptyResult
-
 session.Subscribe = (
   method: "session.subscribe",
   params: session.SubscriptionRequest
 )
 
-EmptyResult
-
 session.Unsubscribe = (
   method: "session.unsubscribe",
   params: session.SubscriptionRequest
 )
-
-EmptyResult
 
 BrowserCommand = (
   browser.Close //
@@ -285,8 +279,6 @@ browser.Close = (
   params: EmptyParams,
 )
 
-EmptyResult
-
 browser.CreateUserContext = (
   method: "browser.createUserContext",
   params: EmptyParams,
@@ -321,8 +313,6 @@ browser.RemoveUserContextParameters = {
   userContext: browser.UserContext
 }
 
-EmptyResult
-
 browser.SetClientWindowState = (
   method: "browser.setClientWindowState",
   params: browser.SetClientWindowStateParameters
@@ -344,8 +334,6 @@ browser.ClientWindowRectState = (
   ? x: js-int,
   ? y: js-int,
 )
-
-browser.ClientWindowInfo
 
 BrowsingContextCommand = (
   browsingContext.Activate //
@@ -456,8 +444,6 @@ browsingContext.ActivateParameters = {
   context: browsingContext.BrowsingContext
 }
 
-EmptyResult
-
 browsingContext.CaptureScreenshot = (
   method: "browsingContext.captureScreenshot",
   params: browsingContext.CaptureScreenshotParameters
@@ -507,8 +493,6 @@ browsingContext.CloseParameters = {
   ? promptUnload: bool .default false
 }
 
-EmptyResult
-
 browsingContext.Create = (
   method: "browsingContext.create",
   params: browsingContext.CreateParameters
@@ -551,8 +535,6 @@ browsingContext.HandleUserPromptParameters = {
   ? accept: bool,
   ? userText: text,
 }
-
-EmptyResult
 
 browsingContext.LocateNodes = (
   method: "browsingContext.locateNodes",
@@ -632,8 +614,6 @@ browsingContext.ReloadParameters = {
   ? wait: browsingContext.ReadinessState,
 }
 
-browsingContext.NavigateResult
-
 browsingContext.SetViewport = (
   method: "browsingContext.setViewport",
   params: browsingContext.SetViewportParameters
@@ -649,8 +629,6 @@ browsingContext.Viewport = {
   width: js-uint,
   height: js-uint,
 }
-
-EmptyResult
 
 browsingContext.TraverseHistory = (
   method: "browsingContext.traverseHistory",
@@ -949,8 +927,6 @@ network.ContinueRequestParameters = {
   ?url: text,
 }
 
-EmptyResult
-
 network.ContinueResponse = (
   method: "network.continueResponse",
   params: network.ContinueResponseParameters
@@ -964,8 +940,6 @@ network.ContinueResponseParameters = {
   ?reasonPhrase: text,
   ?statusCode: js-uint,
 }
-
-EmptyResult
 
 network.ContinueWithAuth = (
   method: "network.continueWithAuth",
@@ -986,8 +960,6 @@ network.ContinueWithAuthNoCredentials = (
   action: "default" / "cancel"
 )
 
-EmptyResult
-
 network.FailRequest = (
   method: "network.failRequest",
   params: network.FailRequestParameters
@@ -996,8 +968,6 @@ network.FailRequest = (
 network.FailRequestParameters = {
   request: network.Request,
 }
-
-EmptyResult
 
 network.ProvideResponse = (
   method: "network.provideResponse",
@@ -1013,8 +983,6 @@ network.ProvideResponseParameters = {
   ?statusCode: js-uint,
 }
 
-EmptyResult
-
 network.RemoveIntercept = (
   method: "network.removeIntercept",
   params: network.RemoveInterceptParameters
@@ -1023,8 +991,6 @@ network.RemoveIntercept = (
 network.RemoveInterceptParameters = {
   intercept: network.Intercept
 }
-
-EmptyResult
 
 network.SetCacheBehavior = (
   method: "network.setCacheBehavior",
@@ -1036,8 +1002,6 @@ network.SetCacheBehaviorParameters = {
   ? contexts: [+browsingContext.BrowsingContext]
 }
 
-EmptyResult
-
 network.AuthRequired = (
   method: "network.authRequired",
   params: network.AuthRequiredParameters
@@ -1047,8 +1011,6 @@ network.AuthRequiredParameters = {
   network.BaseParameters,
   response: network.ResponseData
 }
-
-EmptyResult
 
 network.BeforeRequestSent = (
   method: "network.beforeRequestSent",
@@ -1563,8 +1525,6 @@ script.DisownParameters = {
   target: script.Target;
 }
 
-EmptyResult
-
 script.CallFunction = (
   method: "script.callFunction",
   params: script.CallFunctionParameters
@@ -1581,8 +1541,6 @@ script.CallFunctionParameters = {
   ? userActivation: bool .default false,
 }
 
-script.EvaluateResult
-
 script.Evaluate = (
   method: "script.evaluate",
   params: script.EvaluateParameters
@@ -1596,8 +1554,6 @@ script.EvaluateParameters = {
   ? serializationOptions: script.SerializationOptions,
   ? userActivation: bool .default false,
 }
-
-script.EvaluateResult
 
 script.GetRealms = (
   method: "script.getRealms",
@@ -1621,8 +1577,6 @@ script.RemovePreloadScript = (
 script.RemovePreloadScriptParameters = {
   script: script.PreloadScript
 }
-
-EmptyResult
 
 script.Message = (
   method: "script.message",
@@ -1932,8 +1886,6 @@ input.PointerCommonProperties = (
 
 input.Origin = "viewport" / "pointer" / input.ElementOrigin
 
-EmptyResult
-
 input.ReleaseActions = (
   method: "input.releaseActions",
   params: input.ReleaseActionsParameters
@@ -1942,8 +1894,6 @@ input.ReleaseActions = (
 input.ReleaseActionsParameters = {
   context: browsingContext.BrowsingContext,
 }
-
-EmptyResult
 
 input.SetFiles = (
   method: "input.setFiles",
@@ -1955,8 +1905,6 @@ input.SetFilesParameters = {
   element: script.SharedReference,
   files: [*text]
 }
-
-EmptyResult
 
 WebExtensionCommand = (
   webExtension.Install //
