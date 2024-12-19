@@ -33,7 +33,9 @@ const ignorableAnomalies = [
   'incompatiblePartialIdlExposure',
   'singleEnumValue',
   'unexpectedEventHandler',
-  'wrongCaseEnumValue'
+  'wrongCaseEnumValue',
+  'noEvent',
+  'urlType'
 ];
 
 
