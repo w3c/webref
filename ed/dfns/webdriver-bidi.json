@@ -817,17 +817,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "event-global-event-set",
-      "href": "https://w3c.github.io/webdriver-bidi/#event-global-event-set",
+      "id": "event-subscriptions",
+      "href": "https://w3c.github.io/webdriver-bidi/#event-subscriptions",
       "linkingText": [
-        "global event set"
+        "subscriptions"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
         "event"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "events",
@@ -838,17 +838,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "event-in-the-default-event-set",
-      "href": "https://w3c.github.io/webdriver-bidi/#event-in-the-default-event-set",
+      "id": "event-known-subscription-ids",
+      "href": "https://w3c.github.io/webdriver-bidi/#event-known-subscription-ids",
       "linkingText": [
-        "in the default event set"
+        "known subscription ids"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
         "event"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "events",
@@ -859,17 +859,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "event-navigable-event-map",
-      "href": "https://w3c.github.io/webdriver-bidi/#event-navigable-event-map",
+      "id": "event-subscription",
+      "href": "https://w3c.github.io/webdriver-bidi/#event-subscription",
       "linkingText": [
-        "navigable event map"
+        "subscription"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
         "event"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "events",
@@ -880,14 +880,79 @@
       "definedIn": "prose"
     },
     {
-      "id": "event-enabled-navigables",
-      "href": "https://w3c.github.io/webdriver-bidi/#event-enabled-navigables",
+      "id": "subscription-subscription-id",
+      "href": "https://w3c.github.io/webdriver-bidi/#subscription-subscription-id",
       "linkingText": [
-        "event enabled navigables"
+        "subscription id"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "subscription"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://w3c.github.io/webdriver-bidi/#events",
+        "title": "Events",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "subscription-event-names",
+      "href": "https://w3c.github.io/webdriver-bidi/#subscription-event-names",
+      "linkingText": [
+        "event names"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "subscription"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://w3c.github.io/webdriver-bidi/#events",
+        "title": "Events",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "subscription-top-level-traversable-ids",
+      "href": "https://w3c.github.io/webdriver-bidi/#subscription-top-level-traversable-ids",
+      "linkingText": [
+        "top-level traversable ids"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "subscription"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://w3c.github.io/webdriver-bidi/#events",
+        "title": "Events",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "subscription-global",
+      "href": "https://w3c.github.io/webdriver-bidi/#subscription-global",
+      "linkingText": [
+        "global"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "subscription"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -937,15 +1002,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "obtain-a-set-of-event-names",
-      "href": "https://w3c.github.io/webdriver-bidi/#obtain-a-set-of-event-names",
+      "id": "set-of-top-level-traversables-for-which-an-event-is-enabled",
+      "href": "https://w3c.github.io/webdriver-bidi/#set-of-top-level-traversables-for-which-an-event-is-enabled",
       "linkingText": [
-        "obtain a set of event names"
+        "set of top-level traversables for which an event is enabled"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "events",
@@ -1251,6 +1316,44 @@
       "href": "https://w3c.github.io/webdriver-bidi/#get-related-navigables",
       "linkingText": [
         "get related navigables"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://w3c.github.io/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-navigables-by-ids",
+      "href": "https://w3c.github.io/webdriver-bidi/#get-navigables-by-ids",
+      "linkingText": [
+        "get navigables by ids"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://w3c.github.io/webdriver-bidi/#transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-top-level-traversables",
+      "href": "https://w3c.github.io/webdriver-bidi/#get-top-level-traversables",
+      "linkingText": [
+        "get top-level traversables"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1692,25 +1795,6 @@
       "href": "https://w3c.github.io/webdriver-bidi/#cleanup-remote-end-state",
       "linkingText": [
         "cleanup remote end state"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "module-session-definition",
-        "href": "https://w3c.github.io/webdriver-bidi/#module-session-definition",
-        "title": "Definition",
-        "number": "7.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "update-the-event-map",
-      "href": "https://w3c.github.io/webdriver-bidi/#update-the-event-map",
-      "linkingText": [
-        "update the event map"
       ],
       "localLinkingText": [],
       "type": "dfn",

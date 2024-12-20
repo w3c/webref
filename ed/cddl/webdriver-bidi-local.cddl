@@ -158,6 +158,8 @@ session.UserPromptHandler = {
 
 session.UserPromptHandlerType = "accept" / "dismiss" / "ignore";
 
+session.Subscription = text
+
 session.StatusResult = {
   ready: bool,
   message: text,
@@ -177,6 +179,10 @@ session.NewResult = {
     ? webSocketUrl: text,
     Extensible
   }
+}
+
+session.SubscriptionRequestResult = {
+  subscription: session.Subscription,
 }
 
 BrowserResult = (
