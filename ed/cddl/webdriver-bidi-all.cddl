@@ -187,7 +187,18 @@ session.UserPromptHandler = {
 
 session.UserPromptHandlerType = "accept" / "dismiss" / "ignore";
 
+session.Subscription = text
+
 session.SubscriptionRequest = {
+  events: [+text],
+  ? contexts: [+browsingContext.BrowsingContext],
+}
+
+session.UnsubscribeByIDRequest = {
+  subscriptions: [+session.Subscription],
+}
+
+session.UnsubscribeByAttributesRequest = {
   events: [+text],
   ? contexts: [+browsingContext.BrowsingContext],
 }
@@ -237,9 +248,13 @@ session.Subscribe = (
   params: session.SubscriptionRequest
 )
 
+session.SubscriptionRequestResult = {
+  subscription: session.Subscription,
+}
+
 session.Unsubscribe = (
   method: "session.unsubscribe",
-  params: session.SubscriptionRequest
+  params: session.UnsubscribeByAttributesRequest / session.UnsubscribeByIDRequest,
 )
 
 BrowserCommand = (
