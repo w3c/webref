@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-12-20T06:42:15.411Z",
+  "date": "2024-12-20T12:58:59.258Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -26,7 +26,6 @@
       "css-backgrounds-4",
       "css-borders-4",
       "css-color-6",
-      "css-color-hdr-1",
       "css-conditional-values-1",
       "css-display-4",
       "css-env-1",
@@ -38,7 +37,6 @@
       "css-link-params-1",
       "css-mixins-1",
       "css-multicol-2",
-      "css-overflow-5",
       "css-page-4",
       "css-position-4",
       "css-shapes-2",
@@ -352,6 +350,7 @@
       "css-color-4",
       "css-color-5",
       "css-color-adjust-1",
+      "css-color-hdr-1",
       "css-conditional-3",
       "css-conditional-4",
       "css-conditional-5",
@@ -386,6 +385,7 @@
       "css-nesting-1",
       "css-overflow-3",
       "css-overflow-4",
+      "css-overflow-5",
       "css-overscroll-1",
       "css-page-3",
       "css-page-floats-3",
@@ -683,9 +683,9 @@
   },
   "stats": {
     "crawled": 651,
-    "errors": 2
+    "errors": 5
   },
-  "crawler": "reffy-18.1.1",
+  "crawler": "reffy-18.1.2",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -1762,65 +1762,6 @@
       "cddl": []
     },
     {
-      "url": "https://drafts.csswg.org/css-color-hdr-1/",
-      "seriesComposition": "full",
-      "shortname": "css-color-hdr-1",
-      "series": {
-        "shortname": "css-color-hdr",
-        "currentSpecification": "css-color-hdr-1",
-        "title": "CSS Color HDR",
-        "shortTitle": "CSS Color HDR",
-        "nightlyUrl": "https://drafts.csswg.org/css-color-hdr/"
-      },
-      "seriesVersion": "1",
-      "formerNames": [
-        "css-color-hdr"
-      ],
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
-        }
-      ],
-      "nightly": {
-        "url": "https://drafts.csswg.org/css-color-hdr-1/",
-        "status": "Editor's Draft",
-        "alternateUrls": [
-          "https://w3c.github.io/csswg-drafts/css-color-hdr-1/",
-          "https://w3c.github.io/csswg-drafts/css-color-hdr/"
-        ],
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-color-hdr-1/Overview.bs",
-        "filename": "index.html"
-      },
-      "title": "CSS Color HDR Module Level 1",
-      "source": "spec",
-      "shortTitle": "CSS Color HDR 1",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://drafts.csswg.org/css-color-hdr-1/"
-      ],
-      "crawled": "https://drafts.csswg.org/css-color-hdr-1/",
-      "crawlCacheInfo": {
-        "lastModified": "Thu, 19 Dec 2024 21:32:37 GMT"
-      },
-      "generator": "bikeshed",
-      "date": "11 December 2024",
-      "revision": "d3327219e6f8c1794f6a1302acd76d46c501717a",
-      "algorithms": "algorithms/css-color-hdr-1.json",
-      "links": "links/css-color-hdr-1.json",
-      "refs": "refs/css-color-hdr-1.json",
-      "css": "css/css-color-hdr.json",
-      "dfns": "dfns/css-color-hdr-1.json",
-      "headings": "headings/css-color-hdr-1.json",
-      "ids": "ids/css-color-hdr-1.json",
-      "cddl": []
-    },
-    {
       "url": "https://drafts.csswg.org/css-conditional-values-1/",
       "seriesComposition": "full",
       "shortname": "css-conditional-values-1",
@@ -2461,69 +2402,6 @@
       "dfns": "dfns/css-multicol-2.json",
       "headings": "headings/css-multicol-2.json",
       "ids": "ids/css-multicol-2.json",
-      "cddl": []
-    },
-    {
-      "url": "https://drafts.csswg.org/css-overflow-5/",
-      "seriesComposition": "delta",
-      "shortname": "css-overflow-5",
-      "series": {
-        "shortname": "css-overflow",
-        "currentSpecification": "css-overflow-3",
-        "title": "CSS Overflow",
-        "shortTitle": "CSS Overflow",
-        "releaseUrl": "https://www.w3.org/TR/css-overflow/",
-        "nightlyUrl": "https://drafts.csswg.org/css-overflow/"
-      },
-      "seriesVersion": "5",
-      "seriesPrevious": "css-overflow-4",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
-        }
-      ],
-      "nightly": {
-        "url": "https://drafts.csswg.org/css-overflow-5/",
-        "status": "Editor's Draft",
-        "alternateUrls": [
-          "https://w3c.github.io/csswg-drafts/css-overflow-5/"
-        ],
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-overflow-5/Overview.bs",
-        "filename": "index.html"
-      },
-      "title": "CSS Overflow Module Level 5",
-      "source": "spec",
-      "shortTitle": "CSS Overflow 5",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "css/css-overflow"
-        ]
-      },
-      "versions": [
-        "https://drafts.csswg.org/css-overflow-5/"
-      ],
-      "crawled": "https://drafts.csswg.org/css-overflow-5/",
-      "crawlCacheInfo": {
-        "lastModified": "Thu, 19 Dec 2024 21:32:37 GMT"
-      },
-      "generator": "bikeshed",
-      "date": "13 December 2024",
-      "revision": "d3327219e6f8c1794f6a1302acd76d46c501717a",
-      "algorithms": "algorithms/css-overflow-5.json",
-      "links": "links/css-overflow-5.json",
-      "refs": "refs/css-overflow-5.json",
-      "css": "css/css-overflow-5.json",
-      "dfns": "dfns/css-overflow-5.json",
-      "headings": "headings/css-overflow-5.json",
-      "ids": "ids/css-overflow-5.json",
       "cddl": []
     },
     {
@@ -4455,7 +4333,8 @@
       "links": "links/ESSL.json",
       "headings": "headings/ESSL.json",
       "ids": "ids/ESSL.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:478:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13392:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:472:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
@@ -4761,7 +4640,8 @@
       "date": "31 October 2024",
       "links": "links/EXT_disjoint_timer_query.json",
       "idl": "idl/EXT_disjoint_timer_query.idl",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:478:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13392:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:472:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
@@ -5220,7 +5100,8 @@
       "date": "31 October 2024",
       "links": "links/KHR_parallel_shader_compile.json",
       "idl": "idl/KHR_parallel_shader_compile.idl",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/KHR_parallel_shader_compile/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:478:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13392:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:472:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/OES_draw_buffers_indexed/",
@@ -8107,7 +7988,7 @@
       ],
       "crawled": "https://tc39.es/proposal-set-methods/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 06 Jul 2024 03:17:20 GMT"
+        "lastModified": "Sat, 06 Jul 2024 03:17:19 GMT"
       },
       "date": "6 July 2024",
       "links": "links/tc39-set-methods.json",
@@ -13454,11 +13335,11 @@
       ],
       "crawled": "https://wicg.github.io/sanitizer-api/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 19 Dec 2024 12:09:03 GMT"
+        "lastModified": "Fri, 20 Dec 2024 08:11:35 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 December 2024",
-      "revision": "4497de30fa811dde3ec20139c5f191020d7fdca6",
+      "date": "20 December 2024",
+      "revision": "0e58018b1c7fae3f4950ae4411572acd0f360d3f",
       "algorithms": "algorithms/sanitizer-api.json",
       "links": "links/sanitizer-api.json",
       "refs": "refs/sanitizer-api.json",
@@ -14021,7 +13902,7 @@
       "headings": "headings/speech-api.json",
       "ids": "ids/speech-api.json",
       "cddl": [],
-      "error": "Error: Loading https://wicg.github.io/speech-api/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 246)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
+      "error": "Error: Loading https://wicg.github.io/speech-api/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 244)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://wicg.github.io/storage-buckets/",
@@ -15318,9 +15199,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6386",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 18 Dec 2024 00:46:17 GMT"
+        "lastModified": "Tue, 10 Dec 2024 19:37:46 GMT"
       },
-      "date": "18 December 2024",
+      "date": "10 December 2024",
       "links": "links/rfc6386.json",
       "ids": "ids/rfc6386.json",
       "cddl": []
@@ -15594,9 +15475,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 15 Dec 2024 00:47:22 GMT"
+        "lastModified": "Sat, 07 Dec 2024 21:36:43 GMT"
       },
-      "date": "15 December 2024",
+      "date": "7 December 2024",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json",
       "cddl": []
@@ -15640,9 +15521,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 17 Dec 2024 05:22:55 GMT"
+        "lastModified": "Tue, 10 Dec 2024 04:19:49 GMT"
       },
-      "date": "17 December 2024",
+      "date": "10 December 2024",
       "links": "links/rfc7578.json",
       "ids": "ids/rfc7578.json",
       "cddl": []
@@ -16498,9 +16379,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 19 Dec 2024 20:44:44 GMT"
+        "lastModified": "Fri, 13 Dec 2024 09:36:37 GMT"
       },
-      "date": "19 December 2024",
+      "date": "13 December 2024",
       "algorithms": "algorithms/rfc9163.json",
       "links": "links/rfc9163.json",
       "refs": "refs/rfc9163.json",
@@ -19601,6 +19482,72 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/css-color-hdr-1/",
+      "seriesComposition": "full",
+      "shortname": "css-color-hdr-1",
+      "series": {
+        "shortname": "css-color-hdr",
+        "currentSpecification": "css-color-hdr-1",
+        "title": "CSS Color HDR Module",
+        "shortTitle": "CSS Color HDR",
+        "releaseUrl": "https://www.w3.org/TR/css-color-hdr/",
+        "nightlyUrl": "https://drafts.csswg.org/css-color-hdr/"
+      },
+      "seriesVersion": "1",
+      "formerNames": [
+        "css-color-hdr"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-color-hdr-1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-color-hdr-1/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-color-hdr-1/",
+          "https://w3c.github.io/csswg-drafts/css-color-hdr/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-color-hdr-1/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Color HDR Module Level 1",
+      "source": "w3c",
+      "shortTitle": "CSS Color HDR 1",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/css-color-hdr-1/",
+        "https://drafts.csswg.org/css-color-hdr-1/"
+      ],
+      "crawled": "https://drafts.csswg.org/css-color-hdr-1/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 19 Dec 2024 21:32:37 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "11 December 2024",
+      "revision": "d3327219e6f8c1794f6a1302acd76d46c501717a",
+      "algorithms": "algorithms/css-color-hdr-1.json",
+      "links": "links/css-color-hdr-1.json",
+      "refs": "refs/css-color-hdr-1.json",
+      "css": "css/css-color-hdr.json",
+      "dfns": "dfns/css-color-hdr-1.json",
+      "headings": "headings/css-color-hdr-1.json",
+      "ids": "ids/css-color-hdr-1.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/css-conditional-3/",
       "seriesComposition": "full",
       "shortname": "css-conditional-3",
@@ -21926,6 +21873,75 @@
       "dfns": "dfns/css-overflow-4.json",
       "headings": "headings/css-overflow-4.json",
       "ids": "ids/css-overflow-4.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/css-overflow-5/",
+      "seriesComposition": "delta",
+      "shortname": "css-overflow-5",
+      "series": {
+        "shortname": "css-overflow",
+        "currentSpecification": "css-overflow-3",
+        "title": "CSS Overflow",
+        "shortTitle": "CSS Overflow",
+        "releaseUrl": "https://www.w3.org/TR/css-overflow/",
+        "nightlyUrl": "https://drafts.csswg.org/css-overflow/"
+      },
+      "seriesVersion": "5",
+      "seriesPrevious": "css-overflow-4",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-overflow-5/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-overflow-5/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-overflow-5/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-overflow-5/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Overflow Module Level 5",
+      "source": "w3c",
+      "shortTitle": "CSS Overflow 5",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-overflow"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/css-overflow-5/",
+        "https://drafts.csswg.org/css-overflow-5/"
+      ],
+      "crawled": "https://drafts.csswg.org/css-overflow-5/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 19 Dec 2024 21:32:37 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "13 December 2024",
+      "revision": "d3327219e6f8c1794f6a1302acd76d46c501717a",
+      "algorithms": "algorithms/css-overflow-5.json",
+      "links": "links/css-overflow-5.json",
+      "refs": "refs/css-overflow-5.json",
+      "css": "css/css-overflow-5.json",
+      "dfns": "dfns/css-overflow-5.json",
+      "headings": "headings/css-overflow-5.json",
+      "ids": "ids/css-overflow-5.json",
       "cddl": []
     },
     {
@@ -27306,7 +27322,7 @@
       ],
       "crawled": "https://w3c.github.io/graphics-aam/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 11 Dec 2024 17:52:06 GMT"
+        "lastModified": "Wed, 11 Dec 2024 17:52:05 GMT"
       },
       "generator": "respec",
       "date": "11 December 2024",
@@ -28173,7 +28189,7 @@
       ],
       "crawled": "https://w3c.github.io/IntersectionObserver/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 27 Jun 2024 18:36:19 GMT"
+        "lastModified": "Thu, 27 Jun 2024 18:36:18 GMT"
       },
       "generator": "bikeshed",
       "date": "27 June 2024",
@@ -29955,7 +29971,7 @@
       ],
       "crawled": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 23 Jul 2024 08:09:25 GMT"
+        "lastModified": "Tue, 23 Jul 2024 08:09:24 GMT"
       },
       "generator": "respec",
       "date": "23 July 2024",
@@ -32380,8 +32396,8 @@
       "series": {
         "shortname": "requestidlecallback",
         "currentSpecification": "requestidlecallback",
-        "title": "requestIdleCallback() Cooperative Scheduling of Background Tasks",
-        "shortTitle": "requestIdleCallback() Cooperative Scheduling of Background Tasks",
+        "title": "requestIdleCallback()",
+        "shortTitle": "requestIdleCallback()",
         "releaseUrl": "https://www.w3.org/TR/requestidlecallback/",
         "nightlyUrl": "https://w3c.github.io/requestidlecallback/"
       },
@@ -32407,7 +32423,7 @@
       },
       "title": "requestIdleCallback()",
       "source": "w3c",
-      "shortTitle": "requestIdleCallback() Cooperative Scheduling of Background Tasks",
+      "shortTitle": "requestIdleCallback()",
       "categories": [
         "browser"
       ],
@@ -34925,7 +34941,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vc-data-integrity/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -34981,7 +34997,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vc-data-model-2.0/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -35315,7 +35331,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/wasm-core-2/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "title": "WebAssembly Core Specification",
@@ -35374,7 +35390,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/wasm-js-api-2/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -35440,7 +35456,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/wasm-web-api-2/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -36990,11 +37006,11 @@
       ],
       "crawled": "https://w3c.github.io/webdriver-bidi/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 19 Dec 2024 11:27:23 GMT"
+        "lastModified": "Fri, 20 Dec 2024 09:15:15 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 December 2024",
-      "revision": "4a85452154d7d06c5076ca3796e055c69e1b0d2f",
+      "date": "20 December 2024",
+      "revision": "2a8cb2261f33b08eecf92778782f95d72cc6a641",
       "algorithms": "algorithms/webdriver-bidi.json",
       "links": "links/webdriver-bidi.json",
       "refs": "refs/webdriver-bidi.json",
@@ -37109,7 +37125,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/webgpu/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -38413,7 +38429,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/WGSL/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "title": "WebGPU Shading Language",
