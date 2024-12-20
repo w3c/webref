@@ -1218,27 +1218,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-adapter-xrcompatible-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-adapter-xrcompatible-slot",
-      "linkingText": [
-        "[[xrCompatible]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "adapter"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "adapters",
-        "href": "https://www.w3.org/TR/webgpu/#adapters",
-        "title": "Adapters",
-        "number": "3.5.1"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-adapter-state-slot",
       "href": "https://www.w3.org/TR/webgpu/#dom-adapter-state-slot",
       "linkingText": [
@@ -1430,6 +1409,27 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-device-content-device-slot",
       "linkingText": [
         "[[content device]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "device"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "devices",
+        "href": "https://www.w3.org/TR/webgpu/#devices",
+        "title": "Devices",
+        "number": "3.5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-device-destroy-started-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-device-destroy-started-slot",
+      "linkingText": [
+        "[[destroy started]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -3759,27 +3759,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpurequestadapteroptions-xrcompatible",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpurequestadapteroptions-xrcompatible",
-      "linkingText": [
-        "xrCompatible"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPURequestAdapterOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "adapter-selection",
-        "href": "https://www.w3.org/TR/webgpu/#adapter-selection",
-        "title": "Adapter Selection",
-        "number": "4.2.2"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "gpuadapter",
       "href": "https://www.w3.org/TR/webgpu/#gpuadapter",
       "linkingText": [
@@ -4113,27 +4092,6 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gpudevice-queue",
       "linkingText": [
         "queue"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUDevice"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "gpudevice",
-        "href": "https://www.w3.org/TR/webgpu/#gpudevice",
-        "title": "GPUDevice",
-        "number": "4.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpudevice-adapterinfo",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpudevice-adapterinfo",
-      "linkingText": [
-        "adapterInfo"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -15626,27 +15584,6 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpuvertexformat-uint8",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-uint8",
-      "linkingText": [
-        "\"uint8\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUVertexFormat"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "vertex-formats",
-        "href": "https://www.w3.org/TR/webgpu/#vertex-formats",
-        "title": "Vertex Formats",
-        "number": "10.3.7.1"
-      },
-      "definedIn": "table"
-    },
-    {
       "id": "dom-gpuvertexformat-uint8x2",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-uint8x2",
       "linkingText": [
@@ -15672,27 +15609,6 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-uint8x4",
       "linkingText": [
         "\"uint8x4\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUVertexFormat"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "vertex-formats",
-        "href": "https://www.w3.org/TR/webgpu/#vertex-formats",
-        "title": "Vertex Formats",
-        "number": "10.3.7.1"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dom-gpuvertexformat-sint8",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-sint8",
-      "linkingText": [
-        "\"sint8\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -15752,27 +15668,6 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpuvertexformat-unorm8",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-unorm8",
-      "linkingText": [
-        "\"unorm8\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUVertexFormat"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "vertex-formats",
-        "href": "https://www.w3.org/TR/webgpu/#vertex-formats",
-        "title": "Vertex Formats",
-        "number": "10.3.7.1"
-      },
-      "definedIn": "table"
-    },
-    {
       "id": "dom-gpuvertexformat-unorm8x2",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-unorm8x2",
       "linkingText": [
@@ -15798,27 +15693,6 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-unorm8x4",
       "linkingText": [
         "\"unorm8x4\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUVertexFormat"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "vertex-formats",
-        "href": "https://www.w3.org/TR/webgpu/#vertex-formats",
-        "title": "Vertex Formats",
-        "number": "10.3.7.1"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dom-gpuvertexformat-snorm8",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-snorm8",
-      "linkingText": [
-        "\"snorm8\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -15878,27 +15752,6 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpuvertexformat-uint16",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-uint16",
-      "linkingText": [
-        "\"uint16\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUVertexFormat"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "vertex-formats",
-        "href": "https://www.w3.org/TR/webgpu/#vertex-formats",
-        "title": "Vertex Formats",
-        "number": "10.3.7.1"
-      },
-      "definedIn": "table"
-    },
-    {
       "id": "dom-gpuvertexformat-uint16x2",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-uint16x2",
       "linkingText": [
@@ -15924,27 +15777,6 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-uint16x4",
       "linkingText": [
         "\"uint16x4\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUVertexFormat"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "vertex-formats",
-        "href": "https://www.w3.org/TR/webgpu/#vertex-formats",
-        "title": "Vertex Formats",
-        "number": "10.3.7.1"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dom-gpuvertexformat-sint16",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-sint16",
-      "linkingText": [
-        "\"sint16\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -16004,27 +15836,6 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpuvertexformat-unorm16",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-unorm16",
-      "linkingText": [
-        "\"unorm16\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUVertexFormat"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "vertex-formats",
-        "href": "https://www.w3.org/TR/webgpu/#vertex-formats",
-        "title": "Vertex Formats",
-        "number": "10.3.7.1"
-      },
-      "definedIn": "table"
-    },
-    {
       "id": "dom-gpuvertexformat-unorm16x2",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-unorm16x2",
       "linkingText": [
@@ -16067,27 +15878,6 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpuvertexformat-snorm16",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-snorm16",
-      "linkingText": [
-        "\"snorm16\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUVertexFormat"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "vertex-formats",
-        "href": "https://www.w3.org/TR/webgpu/#vertex-formats",
-        "title": "Vertex Formats",
-        "number": "10.3.7.1"
-      },
-      "definedIn": "table"
-    },
-    {
       "id": "dom-gpuvertexformat-snorm16x2",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-snorm16x2",
       "linkingText": [
@@ -16113,27 +15903,6 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-snorm16x4",
       "linkingText": [
         "\"snorm16x4\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUVertexFormat"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "vertex-formats",
-        "href": "https://www.w3.org/TR/webgpu/#vertex-formats",
-        "title": "Vertex Formats",
-        "number": "10.3.7.1"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dom-gpuvertexformat-float16",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-float16",
-      "linkingText": [
-        "\"float16\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -16449,27 +16218,6 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-unorm10-10-10-2",
       "linkingText": [
         "\"unorm10-10-10-2\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUVertexFormat"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "vertex-formats",
-        "href": "https://www.w3.org/TR/webgpu/#vertex-formats",
-        "title": "Vertex Formats",
-        "number": "10.3.7.1"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dom-gpuvertexformat-unorm8x4-bgra",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexformat-unorm8x4-bgra",
-      "linkingText": [
-        "\"unorm8x4-bgra\""
       ],
       "localLinkingText": [],
       "type": "enum-value",

@@ -13,11 +13,7 @@
       "https://github.com/gpuweb/gpuweb/issues": {},
       "https://github.com/privacycg/storage-partitioning": {},
       "https://github.com/whatwg/html/issues/10112": {},
-      "https://gpuweb.github.io/gpuweb/wgsl/": {
-        "anchors": [
-          "input-output-locations"
-        ]
-      },
+      "https://gpuweb.github.io/cts/": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/canvas.html": {
         "anchors": [
@@ -51,7 +47,7 @@
       },
       "https://lists.w3.org/Archives/Public/public-gpu/": {},
       "https://pcisig.com/": {},
-      "https://registry.khronos.org/vulkan/specs/1.3/html/vkspec.html": {
+      "https://registry.khronos.org/vulkan/specs/latest/html/vkspec.html": {
         "anchors": [
           "textures-lod-and-scale-factor",
           "textures-texel-filtering",
@@ -59,21 +55,17 @@
           "primsrast-lines-bresenham"
         ]
       },
+      "https://registry.khronos.org/webgl/specs/latest/1.0/": {},
       "https://tc39.es/ecma262/multipage/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://www.khronos.org/registry/vulkan/specs/1.2-extensions/man/html/vkCreateDescriptorSetLayout.html": {},
-      "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {},
       "https://www.khronos.org/webgl/": {},
       "https://www.vusec.net/projects/glitch/": {},
-      "https://www.w3.org/Consortium/Patent-Policy/": {
-        "anchors": [
-          "sec-Disclosure"
-        ]
-      },
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/WGSL/": {
         "anchors": [
-          "alignment-and-size"
+          "alignment-and-size",
+          "input-output-locations"
         ]
       },
       "https://www.w3.org/TR/hr-time-3/": {},
@@ -81,17 +73,19 @@
       "https://www.w3.org/TR/mediaqueries-5/": {},
       "https://www.w3.org/TR/service-workers/": {},
       "https://www.w3.org/TR/webcodecs/": {},
-      "https://www.w3.org/TR/webxr/": {},
-      "https://www.w3.org/groups/wg/gpu": {},
-      "https://www.w3.org/groups/wg/gpu/ipr": {},
+      "https://www.w3.org/groups/wg/gpu/": {},
+      "https://www.w3.org/groups/wg/gpu/ipr/": {},
       "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
-          "def-essential"
+          "sec-Requirements",
+          "def-essential",
+          "sec-Disclosure"
         ]
       },
       "https://www.w3.org/policies/process/20231103/": {
         "anchors": [
-          "recs-and-notes"
+          "recs-and-notes",
+          "dfn-wide-review"
         ]
       }
     },
@@ -104,69 +98,6 @@
           "concept-event-fire",
           "event",
           "dictdef-eventinit"
-        ]
-      },
-      "https://gpuweb.github.io/gpuweb/wgsl/": {
-        "anchors": [
-          "built-in-values-position",
-          "address-spaces-workgroup",
-          "language-extension",
-          "pipeline-overridable",
-          "floating-point-conversion",
-          "texturesamplelevel",
-          "attribute-binding",
-          "attribute-group",
-          "shader-module-creation",
-          "shader-creation-error",
-          "program-error",
-          "uncategorized-error",
-          "line-break",
-          "identifier-comparison",
-          "pipeline-overridable-constant-identifier-string",
-          "pipeline-constant-id",
-          "functions-in-a-shader-stage",
-          "type-sampled-texture",
-          "type-depth-texture",
-          "pipeline-overridable-constant-default-value",
-          "pipeline-creation-error",
-          "store-type",
-          "runtime-sized",
-          "sizeof",
-          "interface-of-a-shader",
-          "roundup",
-          "pipeline-creation",
-          "built-in-values-sample_mask",
-          "shader-stage-output",
-          "built-in-values-frag_depth",
-          "built-in-values-clip_distances",
-          "input-output-locations",
-          "built-in-values",
-          "interpolation",
-          "use-dual-source-blending",
-          "scalar-types",
-          "indeterminate-values",
-          "differences-from-ieee754",
-          "invalid-memory-reference",
-          "64-bit-integer",
-          "built-in-values-num_workgroups",
-          "built-in-values-workgroup_id",
-          "built-in-values-local_invocation_id",
-          "built-in-values-global_invocation_id",
-          "built-in-values-local_invocation_index",
-          "sync-builtin-functions",
-          "shader-execution-end",
-          "channel-formats",
-          "interpolation-type-flat",
-          "interpolation-type-linear",
-          "interpolation-type-perspective",
-          "built-in-output-value",
-          "interpolation-type",
-          "interpolate-attr",
-          "shader-stage-input",
-          "f16",
-          "extension-f16",
-          "extension-clip_distances",
-          "extension-dual_source_blending"
         ]
       },
       "https://html.spec.whatwg.org/multipage/canvas.html": {
@@ -269,23 +200,33 @@
           "ordered-set",
           "list-contain",
           "set-append",
-          "list-get-the-indices",
-          "list-empty",
           "list-size",
           "list-iterate",
+          "list-get-the-indices",
           "list-is-empty",
           "map-remove",
-          "iteration-continue",
           "stack",
           "stack-push",
           "stack-pop",
           "list-extend",
+          "iteration-continue",
+          "list-empty",
           "map-clear",
           "byte-sequence-length",
           "list-item"
         ]
       },
-      "https://registry.khronos.org/vulkan/specs/1.3/html/vkspec.html": {},
+      "https://registry.khronos.org/vulkan/specs/latest/html/vkspec.html": {},
+      "https://registry.khronos.org/webgl/specs/latest/1.0/": {
+        "anchors": [
+          "WEBGLCONTEXTATTRIBUTES",
+          "WEBGLRENDERINGCONTEXTBASE",
+          "DOM-WebGLRenderingContext-drawingBufferColorSpace",
+          "DOM-WebGLRenderingContext-drawingBufferWidth",
+          "DOM-WebGLRenderingContext-drawingBufferHeight",
+          "THE_DRAWING_BUFFER"
+        ]
+      },
       "https://tc39.es/ecma262/": {
         "anchors": [
           "agent",
@@ -355,19 +296,68 @@
           "invalidstateerror"
         ]
       },
-      "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {
-        "anchors": [
-          "WEBGLCONTEXTATTRIBUTES",
-          "WEBGLRENDERINGCONTEXTBASE",
-          "DOM-WebGLRenderingContext-drawingBufferColorSpace",
-          "DOM-WebGLRenderingContext-drawingBufferWidth",
-          "DOM-WebGLRenderingContext-drawingBufferHeight",
-          "THE_DRAWING_BUFFER"
-        ]
-      },
       "https://www.w3.org/TR/WGSL/": {
         "anchors": [
-          "interpolation-sampling"
+          "built-in-values-position",
+          "address-spaces-workgroup",
+          "language-extension",
+          "pipeline-overridable",
+          "floating-point-conversion",
+          "texturesamplelevel",
+          "attribute-binding",
+          "attribute-group",
+          "shader-module-creation",
+          "shader-creation-error",
+          "program-error",
+          "uncategorized-error",
+          "line-break",
+          "identifier-comparison",
+          "pipeline-overridable-constant-identifier-string",
+          "pipeline-constant-id",
+          "functions-in-a-shader-stage",
+          "type-sampled-texture",
+          "type-depth-texture",
+          "pipeline-overridable-constant-default-value",
+          "pipeline-creation-error",
+          "store-type",
+          "runtime-sized",
+          "sizeof",
+          "interface-of-a-shader",
+          "roundup",
+          "pipeline-creation",
+          "built-in-values-sample_mask",
+          "shader-stage-output",
+          "built-in-values-frag_depth",
+          "built-in-values-clip_distances",
+          "input-output-locations",
+          "built-in-values",
+          "interpolation",
+          "use-dual-source-blending",
+          "scalar-types",
+          "indeterminate-values",
+          "differences-from-ieee754",
+          "invalid-memory-reference",
+          "64-bit-integer",
+          "built-in-values-num_workgroups",
+          "built-in-values-workgroup_id",
+          "built-in-values-local_invocation_id",
+          "built-in-values-global_invocation_id",
+          "built-in-values-local_invocation_index",
+          "sync-builtin-functions",
+          "shader-execution-end",
+          "channel-formats",
+          "interpolation-type-flat",
+          "interpolation-sampling",
+          "interpolation-type-linear",
+          "interpolation-type-perspective",
+          "built-in-output-value",
+          "interpolation-type",
+          "interpolate-attr",
+          "shader-stage-input",
+          "f16",
+          "extension-f16",
+          "extension-clip_distances",
+          "extension-dual_source_blending"
         ]
       },
       "https://www.w3.org/TR/hr-time-3/": {
@@ -399,11 +389,6 @@
           "dom-videodecoder-decode",
           "dom-videoframe-displaywidth",
           "dom-videoframe-displayheight"
-        ]
-      },
-      "https://www.w3.org/TR/webxr/": {
-        "anchors": [
-          "session"
         ]
       },
       "https://www.w3.org/policies/patent-policy/": {}
