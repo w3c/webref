@@ -92,7 +92,9 @@ Data curation brings the following guarantees.
 
 ### CDDL extracts
 
-The CDDL extracts currently come with no guarantee whatsoever and may be invalid. Tracked in [#1417](https://github.com/w3c/webref/issues/1417).
+- All CDDL files pass CDDL analysis by the version of [Strudy](https://github.com/w3c/strudy) referenced in `package.json`. Said differently, all CDDL files can be parsed by the version of [cddlparser](https://github.com/tidoust/cddlparser) referenced by Strudy.
+
+The CDDL extracts are not released in an NPM package for the time being.
 
 ## Known consumers
 
