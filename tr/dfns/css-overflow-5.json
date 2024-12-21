@@ -1,0 +1,596 @@
+{
+  "spec": {
+    "title": "CSS Overflow Module Level 5",
+    "url": "https://www.w3.org/TR/css-overflow-5/"
+  },
+  "dfns": [
+    {
+      "id": "current-scroll-target",
+      "href": "https://www.w3.org/TR/css-overflow-5/#current-scroll-target",
+      "linkingText": [
+        "current scroll target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scrolling",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scrolling",
+        "title": "Scrolling overflow",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scroll-marker",
+      "href": "https://www.w3.org/TR/css-overflow-5/#scroll-marker",
+      "linkingText": [
+        "scroll marker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scroll-markers",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-markers",
+        "title": "Scroll markers",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scroll-target",
+      "href": "https://www.w3.org/TR/css-overflow-5/#scroll-target",
+      "linkingText": [
+        "scroll target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scroll-markers",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-markers",
+        "title": "Scroll markers",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scroll-marker-group-container",
+      "href": "https://www.w3.org/TR/css-overflow-5/#scroll-marker-group-container",
+      "linkingText": [
+        "scroll marker group container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scroll-marker-grouping",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-marker-grouping",
+        "title": "Scroll marker grouping",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scroll-marker-group",
+      "href": "https://www.w3.org/TR/css-overflow-5/#scroll-marker-group",
+      "linkingText": [
+        "scroll marker group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scroll-marker-grouping",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-marker-grouping",
+        "title": "Scroll marker grouping",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-scroll-marker-group",
+      "href": "https://www.w3.org/TR/css-overflow-5/#propdef-scroll-marker-group",
+      "linkingText": [
+        "scroll-marker-group"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-marker-group-property",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-marker-group-property",
+        "title": "The scroll-marker-group property",
+        "number": "3.1.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-scroll-marker-group-none",
+      "href": "https://www.w3.org/TR/css-overflow-5/#valdef-scroll-marker-group-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-marker-group"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-marker-group-property",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-marker-group-property",
+        "title": "The scroll-marker-group property",
+        "number": "3.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-marker-group-before",
+      "href": "https://www.w3.org/TR/css-overflow-5/#valdef-scroll-marker-group-before",
+      "linkingText": [
+        "before"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-marker-group"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-marker-group-property",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-marker-group-property",
+        "title": "The scroll-marker-group property",
+        "number": "3.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-marker-group-after",
+      "href": "https://www.w3.org/TR/css-overflow-5/#valdef-scroll-marker-group-after",
+      "linkingText": [
+        "after"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-marker-group"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-marker-group-property",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-marker-group-property",
+        "title": "The scroll-marker-group property",
+        "number": "3.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "selectordef-scroll-marker-group",
+      "href": "https://www.w3.org/TR/css-overflow-5/#selectordef-scroll-marker-group",
+      "linkingText": [
+        "::scroll-marker-group"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-marker-group-pseudo",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-marker-group-pseudo",
+        "title": "The ::scroll-marker-group pseudo-element",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "selectordef-scroll-marker",
+      "href": "https://www.w3.org/TR/css-overflow-5/#selectordef-scroll-marker",
+      "linkingText": [
+        "::scroll-marker"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-marker-pseudo",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-marker-pseudo",
+        "title": "The ::scroll-marker pseudo-element",
+        "number": "3.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "selectordef-target-current",
+      "href": "https://www.w3.org/TR/css-overflow-5/#selectordef-target-current",
+      "linkingText": [
+        ":target-current"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "active-scroll-marker",
+        "href": "https://www.w3.org/TR/css-overflow-5/#active-scroll-marker",
+        "title": "Selecting The Active Scroll Marker: the :target-current pseudo-class",
+        "number": "3.1.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "selectordef-scroll-button-scroll-button-direction",
+      "href": "https://www.w3.org/TR/css-overflow-5/#selectordef-scroll-button-scroll-button-direction",
+      "linkingText": [
+        "::scroll-button( <scroll-button-direction> )"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-buttons",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-buttons",
+        "title": "Scroll Buttons",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-scroll-button-direction",
+      "href": "https://www.w3.org/TR/css-overflow-5/#typedef-scroll-button-direction",
+      "linkingText": [
+        "<scroll-button-direction>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-buttons",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-buttons",
+        "title": "Scroll Buttons",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-scroll-button-direction-up",
+      "href": "https://www.w3.org/TR/css-overflow-5/#valdef-scroll-button-direction-up",
+      "linkingText": [
+        "up"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<scroll-button-direction>",
+        "::scroll-button()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-buttons",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-buttons",
+        "title": "Scroll Buttons",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-button-direction-down",
+      "href": "https://www.w3.org/TR/css-overflow-5/#valdef-scroll-button-direction-down",
+      "linkingText": [
+        "down"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<scroll-button-direction>",
+        "::scroll-button()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-buttons",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-buttons",
+        "title": "Scroll Buttons",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-button-direction-left",
+      "href": "https://www.w3.org/TR/css-overflow-5/#valdef-scroll-button-direction-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<scroll-button-direction>",
+        "::scroll-button()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-buttons",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-buttons",
+        "title": "Scroll Buttons",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-button-direction-right",
+      "href": "https://www.w3.org/TR/css-overflow-5/#valdef-scroll-button-direction-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<scroll-button-direction>",
+        "::scroll-button()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-buttons",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-buttons",
+        "title": "Scroll Buttons",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-button-direction-block-start",
+      "href": "https://www.w3.org/TR/css-overflow-5/#valdef-scroll-button-direction-block-start",
+      "linkingText": [
+        "block-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<scroll-button-direction>",
+        "::scroll-button()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-buttons",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-buttons",
+        "title": "Scroll Buttons",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-button-direction-block-end",
+      "href": "https://www.w3.org/TR/css-overflow-5/#valdef-scroll-button-direction-block-end",
+      "linkingText": [
+        "block-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<scroll-button-direction>",
+        "::scroll-button()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-buttons",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-buttons",
+        "title": "Scroll Buttons",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-button-direction-inline-start",
+      "href": "https://www.w3.org/TR/css-overflow-5/#valdef-scroll-button-direction-inline-start",
+      "linkingText": [
+        "inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<scroll-button-direction>",
+        "::scroll-button()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-buttons",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-buttons",
+        "title": "Scroll Buttons",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-button-direction-inline-end",
+      "href": "https://www.w3.org/TR/css-overflow-5/#valdef-scroll-button-direction-inline-end",
+      "linkingText": [
+        "inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<scroll-button-direction>",
+        "::scroll-button()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-buttons",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-buttons",
+        "title": "Scroll Buttons",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-button-direction-prev",
+      "href": "https://www.w3.org/TR/css-overflow-5/#valdef-scroll-button-direction-prev",
+      "linkingText": [
+        "prev"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<scroll-button-direction>",
+        "::scroll-button()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-buttons",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-buttons",
+        "title": "Scroll Buttons",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-button-direction-next",
+      "href": "https://www.w3.org/TR/css-overflow-5/#valdef-scroll-button-direction-next",
+      "linkingText": [
+        "next"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<scroll-button-direction>",
+        "::scroll-button()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-buttons",
+        "href": "https://www.w3.org/TR/css-overflow-5/#scroll-buttons",
+        "title": "Scroll Buttons",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-continue-overflow",
+      "href": "https://www.w3.org/TR/css-overflow-5/#valdef-continue-overflow",
+      "linkingText": [
+        "overflow"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "continue"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "channelling-overflow",
+        "href": "https://www.w3.org/TR/css-overflow-5/#channelling-overflow",
+        "title": "Channeling Overflow: the continue property"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-continue-paginate",
+      "href": "https://www.w3.org/TR/css-overflow-5/#valdef-continue-paginate",
+      "linkingText": [
+        "paginate"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "continue"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "channelling-overflow",
+        "href": "https://www.w3.org/TR/css-overflow-5/#channelling-overflow",
+        "title": "Channeling Overflow: the continue property"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-continue-fragments",
+      "href": "https://www.w3.org/TR/css-overflow-5/#valdef-continue-fragments",
+      "linkingText": [
+        "fragments"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "continue"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "channelling-overflow",
+        "href": "https://www.w3.org/TR/css-overflow-5/#channelling-overflow",
+        "title": "Channeling Overflow: the continue property"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fragment-box",
+      "href": "https://www.w3.org/TR/css-overflow-5/#fragment-box",
+      "linkingText": [
+        "fragment box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fragment-overflow",
+        "href": "https://www.w3.org/TR/css-overflow-5/#fragment-overflow",
+        "title": "Fragmented Overflow"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "selectordef-nth-fragment",
+      "href": "https://www.w3.org/TR/css-overflow-5/#selectordef-nth-fragment",
+      "linkingText": [
+        "::nth-fragment()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fragment-pseudo-element",
+        "href": "https://www.w3.org/TR/css-overflow-5/#fragment-pseudo-element",
+        "title": "The ::nth-fragment() pseudo-element"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

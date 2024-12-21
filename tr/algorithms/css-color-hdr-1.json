@@ -1,0 +1,32 @@
+{
+  "spec": {
+    "title": "CSS Color HDR Module Level 1",
+    "url": "https://www.w3.org/TR/css-color-hdr-1/"
+  },
+  "algorithms": [
+    {
+      "html": "If the specified value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#funcdef-dynamic-range-limit-mix\" id=\"ref-for-funcdef-dynamic-range-limit-mix③\">dynamic-range-limit-mix()</a>, then the computed value is determined by the following algorithm:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>v1</var>, ..., <var>vN</var> be the computed values for the parameters to be mixed.</p>"
+        },
+        {
+          "html": "<p>Let <var>p1</var>, ..., <var>pN</var> be the mixing percentages, normalized to sum to 100%.</p>"
+        },
+        {
+          "html": "<p>Define the contributing percentages as:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>Let <var>p1_standard</var>,...,<var>pN_standard</var> be the percentages for <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-standard\" id=\"ref-for-valdef-dynamic-range-limit-standard①\">standard</a> in <var>v1</var>,...,<var>vN</var></p>\n      </li><li data-md=\"\">\n       <p>Let <var>p1_constrained_high</var>,...,<var>pN_constrained_high</var> be the percentages for <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-constrained-high\" id=\"ref-for-valdef-dynamic-range-limit-constrained-high①\">constrained-high</a> in <var>v1</var>,...,<var>vN</var></p>\n      </li><li data-md=\"\">\n       <p>Let <var>p1_high</var>,...,<var>pN_high</var> be the percentages for <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-high\" id=\"ref-for-valdef-dynamic-range-limit-high①\">high</a> in <var>v1</var>,...,<var>vN</var></p>\n     </li></ul>"
+        },
+        {
+          "html": "<p>Compute the weighted sums as:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><var>p_standard</var>=(<var>p1_standard</var>*<var>p1</var>+...+<var>pN_standard</var>*<var>pN</var>)/100.</p>\n      </li><li data-md=\"\">\n       <p><var>p_constrained_high</var>=(<var>p1_constrained_high</var>*<var>p1</var>+...+<var>pN_constrained_high</var>*<var>pN</var>)/100.</p>\n      </li><li data-md=\"\">\n       <p><var>p_high</var>=(<var>p1_high</var>*<var>p1</var>+...+<var>pN_high</var>*<var>pN</var>)/100.</p>\n     </li></ul>"
+        },
+        {
+          "html": "<p>If <var>p_standard</var>, <var>p_constrained_high</var>, or <var>p_high</var> equals 100%, then the computed value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-standard\" id=\"ref-for-valdef-dynamic-range-limit-standard②\">standard</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-constrained-high\" id=\"ref-for-valdef-dynamic-range-limit-constrained-high②\">constrained-high</a>, or <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-high\" id=\"ref-for-valdef-dynamic-range-limit-high②\">high</a>, respectively.</p>"
+        },
+        {
+          "html": "<p>Otherwise, the computed value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#funcdef-dynamic-range-limit-mix\" id=\"ref-for-funcdef-dynamic-range-limit-mix④\">dynamic-range-limit-mix()</a>, with parameters <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-standard\" id=\"ref-for-valdef-dynamic-range-limit-standard③\">standard</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-constrained-high\" id=\"ref-for-valdef-dynamic-range-limit-constrained-high③\">constrained-high</a>, and <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-high\" id=\"ref-for-valdef-dynamic-range-limit-high③\">high</a>, in that order, and percentages <var>p_standard</var>, <var>p_constrained_high</var>, and <var>p_high</var>, omitting parameters with a percentage equal to 0%.</p>"
+        }
+      ]
+    }
+  ]
+}

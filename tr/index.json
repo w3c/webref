@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-12-20T01:35:29.995Z",
+  "date": "2024-12-21T01:51:03.181Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -27,7 +27,6 @@
       "css-backgrounds-4",
       "css-borders-4",
       "css-color-6",
-      "css-color-hdr-1",
       "css-conditional-values-1",
       "css-display-4",
       "css-env-1",
@@ -39,7 +38,6 @@
       "css-link-params-1",
       "css-mixins-1",
       "css-multicol-2",
-      "css-overflow-5",
       "css-page-4",
       "css-position-4",
       "css-shapes-2",
@@ -353,6 +351,7 @@
       "css-color-4",
       "css-color-5",
       "css-color-adjust-1",
+      "css-color-hdr-1",
       "css-conditional-3",
       "css-conditional-4",
       "css-conditional-5",
@@ -387,6 +386,7 @@
       "css-nesting-1",
       "css-overflow-3",
       "css-overflow-4",
+      "css-overflow-5",
       "css-overscroll-1",
       "css-page-3",
       "css-page-floats-3",
@@ -674,10 +674,10 @@
     ]
   },
   "stats": {
-    "crawled": 338,
+    "crawled": 340,
     "errors": 0
   },
-  "crawler": "reffy-18.1.1",
+  "crawler": "reffy-18.1.2",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -723,7 +723,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "20 December 2024",
+      "date": "21 December 2024",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -3472,6 +3472,72 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/css-color-hdr-1/",
+      "seriesComposition": "full",
+      "shortname": "css-color-hdr-1",
+      "series": {
+        "shortname": "css-color-hdr",
+        "currentSpecification": "css-color-hdr-1",
+        "title": "CSS Color HDR Module",
+        "shortTitle": "CSS Color HDR",
+        "releaseUrl": "https://www.w3.org/TR/css-color-hdr/",
+        "nightlyUrl": "https://drafts.csswg.org/css-color-hdr/"
+      },
+      "seriesVersion": "1",
+      "formerNames": [
+        "css-color-hdr"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-color-hdr-1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-color-hdr-1/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-color-hdr-1/",
+          "https://w3c.github.io/csswg-drafts/css-color-hdr/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-color-hdr-1/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Color HDR Module Level 1",
+      "source": "w3c",
+      "shortTitle": "CSS Color HDR 1",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/css-color-hdr-1/",
+        "https://drafts.csswg.org/css-color-hdr-1/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-color-hdr-1/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 11 Dec 2024 20:33:31 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "17 December 2024",
+      "revision": "97f683a0274c6386a874a31ed1dfa99a6f19b034",
+      "algorithms": "algorithms/css-color-hdr-1.json",
+      "links": "links/css-color-hdr-1.json",
+      "refs": "refs/css-color-hdr-1.json",
+      "css": "css/css-color-hdr.json",
+      "dfns": "dfns/css-color-hdr-1.json",
+      "headings": "headings/css-color-hdr-1.json",
+      "ids": "ids/css-color-hdr-1.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/css-conditional-3/",
       "seriesComposition": "full",
       "shortname": "css-conditional-3",
@@ -5794,6 +5860,75 @@
       "dfns": "dfns/css-overflow-4.json",
       "headings": "headings/css-overflow-4.json",
       "ids": "ids/css-overflow-4.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/css-overflow-5/",
+      "seriesComposition": "delta",
+      "shortname": "css-overflow-5",
+      "series": {
+        "shortname": "css-overflow",
+        "currentSpecification": "css-overflow-3",
+        "title": "CSS Overflow",
+        "shortTitle": "CSS Overflow",
+        "releaseUrl": "https://www.w3.org/TR/css-overflow/",
+        "nightlyUrl": "https://drafts.csswg.org/css-overflow/"
+      },
+      "seriesVersion": "5",
+      "seriesPrevious": "css-overflow-4",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-overflow-5/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-overflow-5/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-overflow-5/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-overflow-5/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Overflow Module Level 5",
+      "source": "w3c",
+      "shortTitle": "CSS Overflow 5",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-overflow"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/css-overflow-5/",
+        "https://drafts.csswg.org/css-overflow-5/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-overflow-5/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 13 Dec 2024 15:56:37 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "17 December 2024",
+      "revision": "8bd3177e7135460e31016be1684138993b1b852b",
+      "algorithms": "algorithms/css-overflow-5.json",
+      "links": "links/css-overflow-5.json",
+      "refs": "refs/css-overflow-5.json",
+      "css": "css/css-overflow-5.json",
+      "dfns": "dfns/css-overflow-5.json",
+      "headings": "headings/css-overflow-5.json",
+      "ids": "ids/css-overflow-5.json",
       "cddl": []
     },
     {
@@ -9635,11 +9770,11 @@
       ],
       "crawled": "https://www.w3.org/TR/edit-context/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 17 Dec 2024 19:39:12 GMT"
+        "lastModified": "Sat, 21 Dec 2024 01:02:08 GMT"
       },
       "generator": "respec",
-      "date": "17 December 2024",
-      "revision": "2632c28f1d8fc60841f633037bcb47c1ea4f8067",
+      "date": "21 December 2024",
+      "revision": "3dedc6e4d24e6cdf8c4c97d5d6af33346e44608d",
       "algorithms": "algorithms/edit-context.json",
       "links": "links/edit-context.json",
       "refs": "refs/edit-context.json",
@@ -14951,11 +15086,11 @@
       ],
       "crawled": "https://www.w3.org/TR/permissions/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 19 Dec 2024 21:36:58 GMT"
+        "lastModified": "Fri, 20 Dec 2024 16:01:24 GMT"
       },
       "generator": "respec",
-      "date": "19 December 2024",
-      "revision": "18a039f089b89b84f4ca0370889537af390b2ba5",
+      "date": "20 December 2024",
+      "revision": "77f8bc702808180da6d1d39fa117bbc483e05ee5",
       "algorithms": "algorithms/permissions.json",
       "links": "links/permissions.json",
       "refs": "refs/permissions.json",
@@ -16268,8 +16403,8 @@
       "series": {
         "shortname": "requestidlecallback",
         "currentSpecification": "requestidlecallback",
-        "title": "requestIdleCallback() Cooperative Scheduling of Background Tasks",
-        "shortTitle": "requestIdleCallback() Cooperative Scheduling of Background Tasks",
+        "title": "requestIdleCallback()",
+        "shortTitle": "requestIdleCallback()",
         "releaseUrl": "https://www.w3.org/TR/requestidlecallback/",
         "nightlyUrl": "https://w3c.github.io/requestidlecallback/"
       },
@@ -16295,7 +16430,7 @@
       },
       "title": "requestIdleCallback()",
       "source": "w3c",
-      "shortTitle": "requestIdleCallback() Cooperative Scheduling of Background Tasks",
+      "shortTitle": "requestIdleCallback()",
       "categories": [
         "browser"
       ],
@@ -18827,7 +18962,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vc-data-integrity/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -18883,7 +19018,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vc-data-model-2.0/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -18904,11 +19039,10 @@
       ],
       "crawled": "https://www.w3.org/TR/vc-data-model-2.0/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 17 Dec 2024 16:20:32 GMT"
+        "lastModified": "Sun, 15 Dec 2024 08:37:08 GMT"
       },
       "generator": "respec",
-      "date": "17 December 2024",
-      "revision": "a78384a16fe9d6ac33e4fc2adfa2a44aa309fe74",
+      "date": "19 December 2024",
       "algorithms": "algorithms/vc-data-model-2.0.json",
       "links": "links/vc-data-model-2.0.json",
       "refs": "refs/vc-data-model-2.0.json",
@@ -19219,7 +19353,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/wasm-core-2/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "title": "WebAssembly Core Specification",
@@ -19278,7 +19412,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/wasm-js-api-2/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -19344,7 +19478,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/wasm-web-api-2/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -20891,11 +21025,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webdriver-bidi/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 19 Dec 2024 11:27:20 GMT"
+        "lastModified": "Fri, 20 Dec 2024 16:01:14 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 December 2024",
-      "revision": "4a85452154d7d06c5076ca3796e055c69e1b0d2f",
+      "date": "20 December 2024",
+      "revision": "e08792b377d83630d697ad881860312ad091ecfe",
       "algorithms": "algorithms/webdriver-bidi.json",
       "links": "links/webdriver-bidi.json",
       "refs": "refs/webdriver-bidi.json",
@@ -21010,7 +21144,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/webgpu/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -22316,7 +22450,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/WGSL/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "title": "WebGPU Shading Language",
