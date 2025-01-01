@@ -34,10 +34,10 @@ import { crawlSpecs } from 'reffy';
  * Remove the spec from curation process
 */
 async function removeFromCuration(spec, curatedFolder) {
-  for (const property of ['css', 'elements', 'events', 'idl']) {
+  for (const property of ['cddl', 'css', 'elements', 'events', 'idl']) {
     if (spec[property] &&
         (typeof spec[property] === 'string') &&
-        spec[property].match(/^[^\/]+\/[^\/]+\.(json|idl)$/)) {
+        spec[property].match(/^[^\/]+\/[^\/]+\.(json|idl|cddl)$/)) {
       const filename = path.join(curatedFolder, spec[property]);
       console.log(`Removing ${spec.standing} ${spec.title} from curation: del ${filename}`);
       await fs.unlink(filename);
@@ -58,7 +58,7 @@ async function cleanCrawlOutcome(spec) {
     // Only consider properties that link to an extract
     if (spec[property] &&
         (typeof spec[property] === 'string') &&
-        spec[property].match(/^[^\/]+\/[^\/]+\.(json|idl)$/)) {
+        spec[property].match(/^[^\/]+\/[^\/]+\.(json|idl|cddl)$/)) {
       try {
         await fs.lstat(path.join(curatedFolder, spec[property]));
       }
