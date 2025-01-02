@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-01-02T00:51:28.241Z",
+  "date": "2025-01-02T06:42:07.504Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -683,7 +683,7 @@
   },
   "stats": {
     "crawled": 651,
-    "errors": 2
+    "errors": 3
   },
   "crawler": "reffy-18.1.2",
   "results": [
@@ -1344,9 +1344,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 31 Dec 2024 00:55:15 GMT"
+        "lastModified": "Thu, 02 Jan 2025 00:55:24 GMT"
       },
-      "date": "31 December 2024",
+      "date": "2 January 2025",
       "algorithms": "algorithms/no-vary-search.json",
       "links": "links/no-vary-search.json",
       "refs": "refs/no-vary-search.json",
@@ -1393,9 +1393,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 31 Dec 2024 00:55:15 GMT"
+        "lastModified": "Thu, 02 Jan 2025 00:55:24 GMT"
       },
-      "date": "31 December 2024",
+      "date": "2 January 2025",
       "algorithms": "algorithms/rfc6265bis.json",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
@@ -39043,7 +39043,8 @@
       "refs": "refs/rfc7232.json",
       "headings": "headings/rfc7232.json",
       "ids": "ids/rfc7232.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://httpwg.org/specs/rfc7232.html triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 647)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.rfc-editor.org/rfc/rfc7233",
