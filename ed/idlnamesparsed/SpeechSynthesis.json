@@ -7,7 +7,7 @@
       "url": "https://wicg.github.io/speech-api/"
     },
     "fragment": "[Exposed=Window]\ninterface SpeechSynthesis : EventTarget {\n    readonly attribute boolean pending;\n    readonly attribute boolean speaking;\n    readonly attribute boolean paused;\n\n    attribute EventHandler onvoiceschanged;\n\n    undefined speak(SpeechSynthesisUtterance utterance);\n    undefined cancel();\n    undefined pause();\n    undefined resume();\n    sequence<SpeechSynthesisVoice> getVoices();\n};",
-    "href": "https://wicg.github.io/speech-api/#speechsynthesis"
+    "href": "https://webaudio.github.io/web-speech-api/#speechsynthesis"
   },
   "extended": [],
   "inheritance": {

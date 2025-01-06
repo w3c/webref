@@ -7,7 +7,7 @@
       "url": "https://wicg.github.io/speech-api/"
     },
     "fragment": "[Exposed=Window]\ninterface SpeechRecognition : EventTarget {\n    constructor();\n\n    // recognition parameters\n    attribute SpeechGrammarList grammars;\n    attribute DOMString lang;\n    attribute boolean continuous;\n    attribute boolean interimResults;\n    attribute unsigned long maxAlternatives;\n\n    // methods to drive the speech interaction\n    undefined start();\n    undefined stop();\n    undefined abort();\n\n    // event methods\n    attribute EventHandler onaudiostart;\n    attribute EventHandler onsoundstart;\n    attribute EventHandler onspeechstart;\n    attribute EventHandler onspeechend;\n    attribute EventHandler onsoundend;\n    attribute EventHandler onaudioend;\n    attribute EventHandler onresult;\n    attribute EventHandler onnomatch;\n    attribute EventHandler onerror;\n    attribute EventHandler onstart;\n    attribute EventHandler onend;\n};",
-    "href": "https://wicg.github.io/speech-api/#speechrecognition"
+    "href": "https://webaudio.github.io/web-speech-api/#speechrecognition"
   },
   "extended": [],
   "inheritance": {
