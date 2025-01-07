@@ -115,7 +115,8 @@ SessionCommand = (
 
 SessionResult = (
    session.NewResult /
-   session.StatusResult
+   session.StatusResult /
+   session.SubscribeResult
 )
 
 session.CapabilitiesRequest = {
@@ -248,7 +249,7 @@ session.Subscribe = (
   params: session.SubscriptionRequest
 )
 
-session.SubscriptionRequestResult = {
+session.SubscribeResult = {
   subscription: session.Subscription,
 }
 
