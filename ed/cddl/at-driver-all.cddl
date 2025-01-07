@@ -123,8 +123,6 @@ SettingsSetSettingsParametersItem = {
   Extensible,
 }
 
-EmptyResult
-
 SettingsGetSettingsCommand = {
   method: "settings.getSettings",
   params: SettingsGetSettingsParameters
@@ -139,14 +137,10 @@ SettingsGetSettingsParametersItem = {
   Extensible,
 }
 
-SettingsGetSettingsResult
-
 SettingsGetSupportedSettingsCommand = {
   method: "settings.getSupportedSettings",
   params: EmptyParams
 }
-
-SettingsGetSettingsResult
 
 InteractionCommand = (InteractionPressKeysCommand)
 
@@ -170,8 +164,6 @@ InteractionPressKeysParameters = {
 KeyCombination = [
   1* text
 ]
-
-EmptyResult
 
 InteractionCapturedOutputEvent = {
   method: "interaction.capturedOutput",
