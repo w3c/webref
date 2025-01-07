@@ -66,22 +66,22 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<dl class=\"switch\">\n              <dt>\n                If the [[|slot|_cached]] internal slot of <var>object</var> is undefined:\n              </dt>\n              <dd>\n                Set the [[|slot|_cached]] internal slot of <var>object</var> to the result\n                of performing type conversion to an ECMAScript object as defined in\n                [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/webcrypto/#bib-webidl\" title=\"Web IDL Standard\">WebIDL</a></cite>] to the contents of the [[<var>slot</var>]]\n                internal slot of <var>object</var>.\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>\n                If the [[<var>slot</var>_cached]] internal slot of <var>object</var> is undefined:\n              </dt>\n              <dd>\n                Set the [[<var>slot</var>_cached]] internal slot of <var>object</var> to the result\n                of performing type conversion to an ECMAScript object as defined in\n                [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/webcrypto/#bib-webidl\" title=\"Web IDL Standard\">WebIDL</a></cite>] to the contents of the [[<var>slot</var>]]\n                internal slot of <var>object</var>.\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
               "operation": "switch",
               "steps": [
                 {
-                  "case": "If the [[|slot|_cached]] internal slot of object is undefined:",
-                  "html": "Set the [[|slot|_cached]] internal slot of <var>object</var> to the result\n                of performing type conversion to an ECMAScript object as defined in\n                [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/webcrypto/#bib-webidl\" title=\"Web IDL Standard\">WebIDL</a></cite>] to the contents of the [[<var>slot</var>]]\n                internal slot of <var>object</var>."
+                  "case": "If the [[slot_cached]] internal slot of object is undefined:",
+                  "html": "Set the [[<var>slot</var>_cached]] internal slot of <var>object</var> to the result\n                of performing type conversion to an ECMAScript object as defined in\n                [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/webcrypto/#bib-webidl\" title=\"Web IDL Standard\">WebIDL</a></cite>] to the contents of the [[<var>slot</var>]]\n                internal slot of <var>object</var>."
                 }
               ]
             }
           ]
         },
         {
-          "html": "Return the contents of the [[|slot|_cached]] internal slot of <var>object</var>."
+          "html": "Return the contents of the [[<var>slot</var>_cached]] internal slot of <var>object</var>."
         }
       ]
     },
