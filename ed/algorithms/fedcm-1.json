@@ -450,6 +450,15 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#set-the-login-status\" id=\"ref-for-set-the-login-status①\">Set the login status</a> for the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑥\">origin</a> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderconfig-configurl\" id=\"ref-for-dom-identityproviderconfig-configurl⑦\">configURL</a></code> to <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#logged-in\" id=\"ref-for-logged-in①\">logged-in</a>.</p>"
         },
         {
+          "html": "For each <var>acc</var> in <var>accountsList</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>acc</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-picture\" id=\"ref-for-dom-identityprovideraccount-picture\">picture</a></code>\"] is present, <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#fetch-the-account-picture\" id=\"ref-for-fetch-the-account-picture\">fetch the account picture</a> with <var>acc</var> and <var>globalObject</var>. If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent③\">user agent</a> displays this picture to\nthe user at any point, it MUST reuse the result of this fetch instead of redownloading\nthe picture.</p>"
+            }
+          ]
+        },
+        {
           "html": "If <var>provider</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderrequestoptions-loginhint\" id=\"ref-for-dom-identityproviderrequestoptions-loginhint①\">loginHint</a></code> is not empty:",
           "rationale": "for",
           "steps": [
@@ -485,15 +494,6 @@
             },
             {
               "html": "<p>If <var>accountList</var> is now empty, go to the <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#mismatch-dialog-step\" id=\"ref-for-mismatch-dialog-step①\">mismatch dialog step</a>.</p>"
-            }
-          ]
-        },
-        {
-          "html": "For each <var>acc</var> in <var>accountsList</var>:",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "<p>If <var>acc</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-picture\" id=\"ref-for-dom-identityprovideraccount-picture\">picture</a></code>\"] is present, <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#fetch-the-account-picture\" id=\"ref-for-fetch-the-account-picture\">fetch the account picture</a> with <var>acc</var> and <var>globalObject</var>.</p>"
             }
           ]
         },
@@ -573,7 +573,7 @@
           ]
         },
         {
-          "html": "<p>Wait until the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑤\">user agent</a>'s dialogs requesting for user choice or permission to be\nclosed, if any are created in the previous steps.</p>"
+          "html": "<p>Wait until the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent④\">user agent</a>'s dialogs requesting for user choice or permission to be\nclosed, if any are created in the previous steps.</p>"
         },
         {
           "html": "<p class=\"assertion\">Assert: <var>account</var> is not null.</p>"
@@ -1137,7 +1137,7 @@
           "html": "<p>Wait until <var>loginUrl</var> is not null.</p>"
         },
         {
-          "html": "<p class=\"assertion\">Assert: <var>loginUrl</var> is not failure (the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑥\">user agent</a> has previously checked that <var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-login_url\" id=\"ref-for-dom-identityproviderapiconfig-login_url②\">login_url</a></code> is a valid URL).</p>"
+          "html": "<p class=\"assertion\">Assert: <var>loginUrl</var> is not failure (the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑤\">user agent</a> has previously checked that <var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-login_url\" id=\"ref-for-dom-identityproviderapiconfig-login_url②\">login_url</a></code> is a valid URL).</p>"
         },
         {
           "html": "<p>Let <var>queryList</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>.</p>"
