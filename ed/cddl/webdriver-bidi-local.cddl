@@ -86,7 +86,8 @@ ErrorCode = "invalid argument" /
 
 SessionResult = (
    session.NewResult /
-   session.StatusResult
+   session.StatusResult /
+   session.SubscribeResult
 )
 
 session.CapabilitiesRequest = {
@@ -181,7 +182,7 @@ session.NewResult = {
   }
 }
 
-session.SubscriptionRequestResult = {
+session.SubscribeResult = {
   subscription: session.Subscription,
 }
 
