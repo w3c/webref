@@ -947,7 +947,10 @@
           ]
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑦\">success</a> with data null.</p>"
+          "html": "<p>Let <var>body</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪\">map</a> matching the <code>session.SubscribeResult</code> production,\n with the <code>subscription</code> field set to <var>subscription</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#subscription-subscription-id\" id=\"ref-for-subscription-subscription-id③\">subscription id</a>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑦\">success</a> with data <var>body</var>.</p>"
         }
       ]
     },
@@ -1054,7 +1057,7 @@
                       "rationale": "let",
                       "steps": [
                         {
-                          "html": "<p>Let <var>event map</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪\">map</a>.</p>"
+                          "html": "<p>Let <var>event map</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①\">map</a>.</p>"
                         },
                         {
                           "html": "For each <var>event name</var> in <var>subscription</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#subscription-event-names\" id=\"ref-for-subscription-event-names⑦\">event names</a>:",
@@ -1091,7 +1094,7 @@
                           "rationale": "let",
                           "steps": [
                             {
-                              "html": "<p>Let <var>partial subscription</var> be a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-subscription\" id=\"ref-for-event-subscription②\">subscription</a> with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#subscription-subscription-id\" id=\"ref-for-subscription-subscription-id③\">subscription id</a> set to <var>subscription</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#subscription-subscription-id\" id=\"ref-for-subscription-subscription-id④\">subscription id</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#subscription-event-names\" id=\"ref-for-subscription-event-names⑧\">event names</a> set to a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②①\">set</a> containing <var>event name</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#subscription-top-level-traversable-ids\" id=\"ref-for-subscription-top-level-traversable-ids⑤\">top-level traversable ids</a> set to <var>remaining top-level traversable ids</var>.</p>"
+                              "html": "<p>Let <var>partial subscription</var> be a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-subscription\" id=\"ref-for-event-subscription②\">subscription</a> with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#subscription-subscription-id\" id=\"ref-for-subscription-subscription-id④\">subscription id</a> set to <var>subscription</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#subscription-subscription-id\" id=\"ref-for-subscription-subscription-id⑤\">subscription id</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#subscription-event-names\" id=\"ref-for-subscription-event-names⑧\">event names</a> set to a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②①\">set</a> containing <var>event name</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#subscription-top-level-traversable-ids\" id=\"ref-for-subscription-top-level-traversable-ids⑤\">top-level traversable ids</a> set to <var>remaining top-level traversable ids</var>.</p>"
                             },
                             {
                               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③\">append</a> <var>partial subscription</var> to <var>new subscriptions</var>.</p>"
@@ -1136,7 +1139,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <var>subscriptions</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain④\">contains</a> <var>subscription</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#subscription-subscription-id\" id=\"ref-for-subscription-subscription-id⑤\">subscription id</a>:",
+                  "html": "If <var>subscriptions</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain④\">contains</a> <var>subscription</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#subscription-subscription-id\" id=\"ref-for-subscription-subscription-id⑥\">subscription id</a>:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -1296,7 +1299,7 @@
           "html": "<p>If <var>client window</var> can receive keyboard input channeled from the operating\n system, let <var>active</var> be true, otherwise let <var>active</var> be false.</p>"
         },
         {
-          "html": "<p>Let <var>client window info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①\">map</a> matching the <code>browser.ClientWindowsInfo</code> production with the <code>clientWindow</code> field set to <var>client window id</var>, <code>state</code> field set to <var>state</var>, the <code>x</code> field set to <var>client window</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window-x-coordinate\" id=\"ref-for-client-window-x-coordinate①\">x-coordinate</a>, the <code>y</code> field set to <var>client\n window</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window-y-coordinate\" id=\"ref-for-client-window-y-coordinate①\">y-coordinate</a>, the <code>width</code> field set to <var>client window</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window-width\" id=\"ref-for-client-window-width④\">width</a>, the <code>height</code> field\n set to <var>client window</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window-height\" id=\"ref-for-client-window-height④\">height</a>, and the <code>active</code> field set to <var>active</var>.</p>"
+          "html": "<p>Let <var>client window info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②\">map</a> matching the <code>browser.ClientWindowsInfo</code> production with the <code>clientWindow</code> field set to <var>client window id</var>, <code>state</code> field set to <var>state</var>, the <code>x</code> field set to <var>client window</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window-x-coordinate\" id=\"ref-for-client-window-x-coordinate①\">x-coordinate</a>, the <code>y</code> field set to <var>client\n window</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window-y-coordinate\" id=\"ref-for-client-window-y-coordinate①\">y-coordinate</a>, the <code>width</code> field set to <var>client window</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window-width\" id=\"ref-for-client-window-width④\">width</a>, the <code>height</code> field\n set to <var>client window</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window-height\" id=\"ref-for-client-window-height④\">height</a>, and the <code>active</code> field set to <var>active</var>.</p>"
         },
         {
           "html": "<p>Return <var>client window info</var></p>"
@@ -1367,7 +1370,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①⓪\">Append</a> <var>user context</var> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-of-user-contexts\" id=\"ref-for-set-of-user-contexts⑥\">set of user contexts</a>.</p>"
         },
         {
-          "html": "<p>Let <var>user context info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②\">map</a> matching the <code>browser.UserContextInfo</code> production with the <code>userContext</code> field set to <var>user context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context-user-context-id\" id=\"ref-for-user-context-user-context-id②\">user context id</a>.</p>"
+          "html": "<p>Let <var>user context info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③\">map</a> matching the <code>browser.UserContextInfo</code> production with the <code>userContext</code> field set to <var>user context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context-user-context-id\" id=\"ref-for-user-context-user-context-id②\">user context id</a>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success①②\">success</a> with data <var>user context info</var>.</p>"
@@ -1410,7 +1413,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③\">map</a> matching the <code>browser.GetClientWindowsResult</code> production with the <code>clientWindows</code> field set to <var>client windows</var>.</p>"
+          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④\">map</a> matching the <code>browser.GetClientWindowsResult</code> production with the <code>clientWindows</code> field set to <var>client windows</var>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success①③\">success</a> with data <var>result</var>.</p>"
@@ -1430,7 +1433,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>user context info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④\">map</a> matching the <code>browser.UserContextInfo</code> production with the <code>userContext</code> field set to <var>user context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context-user-context-id\" id=\"ref-for-user-context-user-context-id③\">user context id</a>.</p>"
+              "html": "<p>Let <var>user context info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑤\">map</a> matching the <code>browser.UserContextInfo</code> production with the <code>userContext</code> field set to <var>user context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context-user-context-id\" id=\"ref-for-user-context-user-context-id③\">user context id</a>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑦\">Append</a> <var>user context info</var> to <var>user contexts</var>.</p>"
@@ -1438,7 +1441,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑤\">map</a> matching the <code>browser.GetUserContextsResult</code> production with the <code>userContexts</code> field set to <var>user contexts</var>.</p>"
+          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑥\">map</a> matching the <code>browser.GetUserContextsResult</code> production with the <code>userContexts</code> field set to <var>user contexts</var>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success①④\">success</a> with data <var>result</var>.</p>"
@@ -1623,7 +1626,7 @@
           "html": "<p>Let <var>client window id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window-id\" id=\"ref-for-client-window-id③\">client window id</a> for <var>top-level\n traversable</var>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window\" id=\"ref-for-client-window②⓪\">client window</a>.</p>"
         },
         {
-          "html": "<p>Let <var>navigable info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑥\">map</a> matching the <code>browsingContext.Info</code> production with the <code>context</code> field set to <var>navigable id</var>, the <code>parent</code> field set to <var>parent id</var> if <var>include parent id</var> is <code>true</code>, or unset otherwise, the <code>url</code> field set to <var>url</var>, the <code>userContext</code> field set\n to <var>user context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context-user-context-id\" id=\"ref-for-user-context-user-context-id④\">user context id</a>, <code>originalOpener</code> field\n set to <var>opener id</var>, the <code>children</code> field set to <var>child infos</var>, and\n the <code>clientWindow</code> field set to <var>client window id</var>.</p>"
+          "html": "<p>Let <var>navigable info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑦\">map</a> matching the <code>browsingContext.Info</code> production with the <code>context</code> field set to <var>navigable id</var>, the <code>parent</code> field set to <var>parent id</var> if <var>include parent id</var> is <code>true</code>, or unset otherwise, the <code>url</code> field set to <var>url</var>, the <code>userContext</code> field set\n to <var>user context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context-user-context-id\" id=\"ref-for-user-context-user-context-id④\">user context id</a>, <code>originalOpener</code> field\n set to <var>opener id</var>, the <code>children</code> field set to <var>child infos</var>, and\n the <code>clientWindow</code> field set to <var>client window id</var>.</p>"
         },
         {
           "html": "<p>Return <var>navigable info</var>.</p>"
@@ -1653,7 +1656,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑦\">map</a> matching the <code>browsingContext.NavigateResult</code> production, with the <code>navigation</code> field set to <var>navigation id</var>, and the <code>url</code> field set to the result of the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer①\">URL serializer</a> given <var>navigate status</var>’s url.</p>"
+              "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑧\">map</a> matching the <code>browsingContext.NavigateResult</code> production, with the <code>navigation</code> field set to <var>navigation id</var>, and the <code>url</code> field set to the result of the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer①\">URL serializer</a> given <var>navigate status</var>’s url.</p>"
             },
             {
               "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success①⑨\">success</a> with data <var>body</var>.</p>"
@@ -1671,7 +1674,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑧\">map</a> matching the <code>browsingContext.NavigateResult</code> production, with the <code>navigation</code> field set to <var>navigation id</var>, and the <code>url</code> field set to the result of the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer②\">URL serializer</a> given <var>navigate status</var>’s url.</p>"
+              "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑨\">map</a> matching the <code>browsingContext.NavigateResult</code> production, with the <code>navigation</code> field set to <var>navigation id</var>, and the <code>url</code> field set to the result of the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer②\">URL serializer</a> given <var>navigate status</var>’s url.</p>"
             },
             {
               "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success②⓪\">success</a> with data <var>body</var>.</p>"
@@ -1688,7 +1691,7 @@
           "html": "<p>If <var>event received</var> is \"<code>navigation failed</code>\"\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors②⓪\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unknown-error\" id=\"ref-for-dfn-unknown-error①\">unknown error</a>.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑨\">map</a> matching the <code>browsingContext.NavigateResult</code> production, with the <code>navigation</code> field set to <var>status</var>’s id, and the <code>url</code> field set to the result of the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer③\">URL serializer</a> given <var>status</var>’s url.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⓪\">map</a> matching the <code>browsingContext.NavigateResult</code> production, with the <code>navigation</code> field set to <var>status</var>’s id, and the <code>url</code> field set to the result of the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer③\">URL serializer</a> given <var>status</var>’s url.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success②①\">success</a> with data <var>body</var>.</p>"
@@ -1714,7 +1717,7 @@
           "html": "<p>Let <var>url</var> be <var>navigation status</var>’s url.</p>"
         },
         {
-          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⓪\">map</a> matching the <code>browsingContext.NavigationInfo</code> production, with the <code>context</code> field set to <var>navigable id</var>, the <code>navigation</code> field set to <var>navigation id</var>, the <code>timestamp</code> field set to <var>timestamp</var>, and the <code>url</code> field set to the result of the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer④\">URL serializer</a> given <var>url</var>.</p>"
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②①\">map</a> matching the <code>browsingContext.NavigationInfo</code> production, with the <code>context</code> field set to <var>navigable id</var>, the <code>navigation</code> field set to <var>navigation id</var>, the <code>timestamp</code> field set to <var>timestamp</var>, and the <code>url</code> field set to the result of the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer④\">URL serializer</a> given <var>url</var>.</p>"
         }
       ]
     },
@@ -2035,7 +2038,7 @@
           "html": "<p>Let <var>encoding result</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑦\">trying</a> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#encode-a-canvas-as-base64\" id=\"ref-for-encode-a-canvas-as-base64\">encode a canvas as\n Base64</a> with <var>canvas</var> and <var>format</var>.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②①\">map</a> matching the <code>browsingContext.CaptureScreenshotResult</code> production, with the <code>data</code> field set to <var>encoding result</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②②\">map</a> matching the <code>browsingContext.CaptureScreenshotResult</code> production, with the <code>data</code> field set to <var>encoding result</var>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success②⑤\">success</a> with data <var>body</var>.</p>"
@@ -2136,7 +2139,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②②\">map</a> matching the <code>browsingContext.CreateResult</code> production, with the <code>context</code> field set to <var>traversable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id⑨\">navigable id</a>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②③\">map</a> matching the <code>browsingContext.CreateResult</code> production, with the <code>context</code> field set to <var>traversable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id⑨\">navigable id</a>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success②⑦\">success</a> with data <var>body</var>.</p>"
@@ -2176,7 +2179,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②③\">map</a> matching the <code>browsingContext.GetTreeResult</code> production, with the <code>contexts</code> field set to <var>navigables infos</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②④\">map</a> matching the <code>browsingContext.GetTreeResult</code> production, with the <code>contexts</code> field set to <var>navigables infos</var>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success②⑧\">success</a> with data <var>body</var>.</p>"
@@ -2619,7 +2622,7 @@
           "html": "<p class=\"assertion\">Assert: <var>maximum returned node count</var> is null or <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⓪\">size</a> of <var>result nodes</var> is less\n than or equal to <var>maximum returned node count</var>.</p>"
         },
         {
-          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">contains</a> \"<code>serializationOptions</code>\",\n let <var>serialization options</var> be <var>command parameters</var>[\"<code>serializationOptions</code>\"].\n Otherwise, let <var>serialization options</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②④\">map</a> matching the <code>script.SerializationOptions</code> production with the fields\n set to their default values.</p>"
+          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">contains</a> \"<code>serializationOptions</code>\",\n let <var>serialization options</var> be <var>command parameters</var>[\"<code>serializationOptions</code>\"].\n Otherwise, let <var>serialization options</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑤\">map</a> matching the <code>script.SerializationOptions</code> production with the fields\n set to their default values.</p>"
         },
         {
           "html": "<p>Let <var>result ownership</var> be \"none\".</p>"
@@ -2632,7 +2635,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>serialized node</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-remote-value\" id=\"ref-for-serialize-as-a-remote-value\">serialize as a remote value</a> with <var>result node</var>, <var>serialization options</var>, <var>result ownership</var>, a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑤\">map</a> as serialization internal map, <var>realm</var> and <var>session</var>.</p>"
+              "html": "<p>Let <var>serialized node</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-remote-value\" id=\"ref-for-serialize-as-a-remote-value\">serialize as a remote value</a> with <var>result node</var>, <var>serialization options</var>, <var>result ownership</var>, a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑥\">map</a> as serialization internal map, <var>realm</var> and <var>session</var>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⑧\">Append</a> <var>serialized node</var> to <var>serialized nodes</var>.</p>"
@@ -2640,7 +2643,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑥\">map</a> matching the <code>browsingContext.LocateNodesResult</code> production, with the <code>nodes</code> field set <var>serialized nodes</var>.</p>"
+          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑦\">map</a> matching the <code>browsingContext.LocateNodesResult</code> production, with the <code>nodes</code> field set <var>serialized nodes</var>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success③⑤\">success</a> with data <var>result</var>.</p>"
@@ -2701,10 +2704,10 @@
           "html": "<p>If the implementation is unable to provide a paginated representation of <var>navigable</var> for any reason then return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors④⓪\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code③⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation⑨\">unsupported operation</a>.</p>"
         },
         {
-          "html": "<p>Let <var>margin</var> be the value of the <code>margin</code> field of <var>command\n parameters</var> if present, or otherwise a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑦\">map</a> matching the <code>browsingContext.PrintMarginParameters</code> with the fields set to\n their default values.</p>"
+          "html": "<p>Let <var>margin</var> be the value of the <code>margin</code> field of <var>command\n parameters</var> if present, or otherwise a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑧\">map</a> matching the <code>browsingContext.PrintMarginParameters</code> with the fields set to\n their default values.</p>"
         },
         {
-          "html": "<p>Let <var>page size</var> be the value of the <code>page</code> field of <var>command\n parameters</var> if present, or otherwise a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑧\">map</a> matching the <code>browsingContext.PrintPageParameters</code> with the fields set to\n their default values.</p>"
+          "html": "<p>Let <var>page size</var> be the value of the <code>page</code> field of <var>command\n parameters</var> if present, or otherwise a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑨\">map</a> matching the <code>browsingContext.PrintPageParameters</code> with the fields set to\n their default values.</p>"
         }
       ]
     },
@@ -2735,7 +2738,7 @@
               "html": "<p>Let <var>encoded data</var> be <var>encoding result</var>’s data.</p>"
             },
             {
-              "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑨\">map</a> matching the <code>browsingContext.PrintResult</code> production, with the <code>data</code> field set to <var>encoded data</var>.</p>"
+              "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⓪\">map</a> matching the <code>browsingContext.PrintResult</code> production, with the <code>data</code> field set to <var>encoded data</var>.</p>"
             },
             {
               "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success③⑥\">success</a> with data <var>body</var>.</p>"
@@ -2923,7 +2926,7 @@
           "html": "<p>TODO: Support waiting for the history traversal to complete.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⓪\">map</a> matching the <code>browsingContext.TraverseHistoryResult</code> production.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③①\">map</a> matching the <code>browsingContext.TraverseHistoryResult</code> production.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success③⑧\">success</a> with data <var>body</var>.</p>"
@@ -2985,7 +2988,7 @@
           "html": "<p>Let <var>params</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-the-navigable-info\" id=\"ref-for-get-the-navigable-info②\">get the navigable info</a> given <var>navigable</var>, 0, and true.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③①\">map</a> matching the <code>browsingContext.ContextCreated</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③②\">map</a> matching the <code>browsingContext.ContextCreated</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#emit-an-event\" id=\"ref-for-emit-an-event\">Emit an event</a> with <var>session</var> and <var>body</var>.</p>"
@@ -3041,7 +3044,7 @@
           "html": "<p>Let <var>params</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-the-navigable-info\" id=\"ref-for-get-the-navigable-info③\">get the navigable info</a>, given <var>navigable</var>, null, and true.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③②\">map</a> matching the <code>browsingContext.ContextDestroyed</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③③\">map</a> matching the <code>browsingContext.ContextDestroyed</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
         },
         {
           "html": "<p>Let <var>related navigables</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②⑥\">set</a> containing <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-parent\" id=\"ref-for-nav-parent②\">parent</a>,\n if that is not null, or an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②⑦\">set</a> otherwise.</p>"
@@ -3097,7 +3100,7 @@
           "html": "<p>Let <var>params</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-the-navigation-info\" id=\"ref-for-get-the-navigation-info\">get the navigation info</a> given <var>navigable</var> and <var>navigation status</var>.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③③\">map</a> matching the <code>browsingContext.NavigationStarted</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③④\">map</a> matching the <code>browsingContext.NavigationStarted</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
         },
         {
           "html": "<p>Let <var>navigation id</var> be <var>navigation status</var>’s id.</p>"
@@ -3129,7 +3132,7 @@
           "html": "<p>Let <var>params</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-the-navigation-info\" id=\"ref-for-get-the-navigation-info①\">get the navigation info</a> given <var>navigable</var> and <var>navigation status</var>.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③④\">map</a> matching the <code>browsingContext.FragmentNavigated</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⑤\">map</a> matching the <code>browsingContext.FragmentNavigated</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
         },
         {
           "html": "<p>Let <var>navigation id</var> be <var>navigation status</var>’s id.</p>"
@@ -3161,10 +3164,10 @@
           "html": "<p>Let <var>url</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer⑤\">URL serializer</a>,\n given <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-bc\" id=\"ref-for-nav-bc\">active browsing context</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①⑥\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-url\" id=\"ref-for-concept-document-url②\">URL</a>.</p>"
         },
         {
-          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⑤\">map</a> matching the <code>browsingContext.HistoryUpdatedParameters</code> production,\n with the <code>url</code> field set to <var>url</var> and\n the <code>context</code> field set to <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①③\">navigable id</a>.</p>"
+          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⑥\">map</a> matching the <code>browsingContext.HistoryUpdatedParameters</code> production,\n with the <code>url</code> field set to <var>url</var> and\n the <code>context</code> field set to <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①③\">navigable id</a>.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⑥\">map</a> matching the <code>browsingContext.HistoryUpdated</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⑦\">map</a> matching the <code>browsingContext.HistoryUpdated</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
         },
         {
           "html": "<p>Let <var>related browsing contexts</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③①\">set</a> containing <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-bc\" id=\"ref-for-nav-bc①\">active browsing context</a>.</p>"
@@ -3190,7 +3193,7 @@
           "html": "<p>Let <var>params</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-the-navigation-info\" id=\"ref-for-get-the-navigation-info②\">get the navigation info</a> given <var>navigable</var> and <var>navigation status</var>.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⑦\">map</a> matching the <code>browsingContext.DomContentLoaded</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⑧\">map</a> matching the <code>browsingContext.DomContentLoaded</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
         },
         {
           "html": "<p>Let <var>related navigables</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③②\">set</a> containing <var>navigable</var>.</p>"
@@ -3222,7 +3225,7 @@
           "html": "<p>Let <var>params</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-the-navigation-info\" id=\"ref-for-get-the-navigation-info③\">get the navigation info</a> given <var>navigable</var> and <var>navigation status</var>.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⑧\">map</a> matching the <code>browsingContext.Load</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⑨\">map</a> matching the <code>browsingContext.Load</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
         },
         {
           "html": "<p>Let <var>related navigables</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③③\">set</a> containing <var>navigable</var>.</p>"
@@ -3254,7 +3257,7 @@
           "html": "<p>Let <var>params</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-the-navigation-info\" id=\"ref-for-get-the-navigation-info④\">get the navigation info</a> given <var>navigable</var> and <var>navigation status</var>.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⑨\">map</a> matching the <code>browsingContext.DownloadWillBegin</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④⓪\">map</a> matching the <code>browsingContext.DownloadWillBegin</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
         },
         {
           "html": "<p>Let <var>navigation id</var> be <var>navigation status</var>’s id.</p>"
@@ -3286,7 +3289,7 @@
           "html": "<p>Let <var>params</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-the-navigation-info\" id=\"ref-for-get-the-navigation-info⑤\">get the navigation info</a> given <var>navigable</var> and <var>navigation status</var>.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④⓪\">map</a> matching the <code>browsingContext.NavigationAborted</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④①\">map</a> matching the <code>browsingContext.NavigationAborted</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
         },
         {
           "html": "<p>Let <var>navigation id</var> be <var>navigation status</var>’s id.</p>"
@@ -3318,7 +3321,7 @@
           "html": "<p>Let <var>params</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-the-navigation-info\" id=\"ref-for-get-the-navigation-info⑥\">get the navigation info</a> given <var>navigable</var> and <var>navigation status</var>.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④①\">map</a> matching the <code>browsingContext.NavigationFailed</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④②\">map</a> matching the <code>browsingContext.NavigationFailed</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
         },
         {
           "html": "<p>Let <var>navigation id</var> be <var>navigation status</var>’s id.</p>"
@@ -3353,10 +3356,10 @@
           "html": "<p>Let <var>navigable id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①④\">navigable id</a> for <var>navigable</var>.</p>"
         },
         {
-          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④②\">map</a> matching the <code>browsingContext.UserPromptClosedParameters</code> production with the <code>context</code> field set to <var>navigable id</var>, the <code>accepted</code> field set to <var>accepted</var>, the <code>type</code> field set to <var>type</var>, and the <code>userText</code> field set to <var>user text</var> if <var>user text</var> is not null or\n omitted otherwise.</p>"
+          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④③\">map</a> matching the <code>browsingContext.UserPromptClosedParameters</code> production with the <code>context</code> field set to <var>navigable id</var>, the <code>accepted</code> field set to <var>accepted</var>, the <code>type</code> field set to <var>type</var>, and the <code>userText</code> field set to <var>user text</var> if <var>user text</var> is not null or\n omitted otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④③\">map</a> matching the <code>BrowsingContextUserPromptClosedEvent</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④④\">map</a> matching the <code>BrowsingContextUserPromptClosedEvent</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
         },
         {
           "html": "<p>Let <var>related navigables</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③⑦\">set</a> containing <var>navigable</var>.</p>"
@@ -3391,10 +3394,10 @@
           "html": "<p>Let <var>handler</var> be <var>handler configuration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-handler\" id=\"ref-for-dfn-handler\">handler</a>.</p>"
         },
         {
-          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④④\">map</a> matching the <code>browsingContext.UserPromptOpenedParameters</code> production with the <code>context</code> field set to <var>navigable id</var>, the <code>type</code> field\n set to <var>type</var>, the <code>message</code> field set to <var>message</var>, the <code>defaultValue</code> field set to <var>default value</var> if <var>default value</var> is\n not null or omitted otherwise, and the <code>handler</code> field set to <var>handler</var>.</p>"
+          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④⑤\">map</a> matching the <code>browsingContext.UserPromptOpenedParameters</code> production with the <code>context</code> field set to <var>navigable id</var>, the <code>type</code> field\n set to <var>type</var>, the <code>message</code> field set to <var>message</var>, the <code>defaultValue</code> field set to <var>default value</var> if <var>default value</var> is\n not null or omitted otherwise, and the <code>handler</code> field set to <var>handler</var>.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④⑤\">map</a> matching the <code>browsingContext.UserPromptOpened</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④⑥\">map</a> matching the <code>browsingContext.UserPromptOpened</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
         },
         {
           "html": "<p>Let <var>related navigables</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③⑧\">set</a> containing <var>navigable</var>.</p>"
@@ -3691,7 +3694,7 @@
                       ]
                     },
                     {
-                      "html": "<p>Let <var>challenge</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④⑧\">map</a> matching the <code>network.AuthChallenge</code> production, with the <code>scheme</code> field set to <var>scheme</var> and the <code>realm</code> field set to <var>realm</var>.</p>"
+                      "html": "<p>Let <var>challenge</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④⑨\">map</a> matching the <code>network.AuthChallenge</code> production, with the <code>scheme</code> field set to <var>scheme</var> and the <code>realm</code> field set to <var>realm</var>.</p>"
                     }
                   ]
                 },
@@ -3750,7 +3753,7 @@
           "html": "<p>If <var>intercepts</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty⑨\">empty</a>, let <var>is blocked</var> be true, otherwise\n let <var>is blocked</var> be false.</p>"
         },
         {
-          "html": "<p>Let <var>params</var> be <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④⑨\">map</a> matching the <code>network.BaseParameters</code> production, with the <code>request</code> field set to <var>request data</var>, the <var>navigation</var> field set to <code>navigation</code>, the <code>context</code> field set to <var>navigable id</var>, the <code>timestamp</code> field set to <var>timestamp</var>, the <code>redirectCount</code> field set to <var>redirect count</var>, the <code>isBlocked</code> field set to <var>is blocked</var>, and <code>intercepts</code> field set to <var>intercepts</var> if <var>is blocked</var> is true, or omitted otherwise.</p>"
+          "html": "<p>Let <var>params</var> be <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤⓪\">map</a> matching the <code>network.BaseParameters</code> production, with the <code>request</code> field set to <var>request data</var>, the <var>navigation</var> field set to <code>navigation</code>, the <code>context</code> field set to <var>navigable id</var>, the <code>timestamp</code> field set to <var>timestamp</var>, the <code>redirectCount</code> field set to <var>redirect count</var>, the <code>isBlocked</code> field set to <var>is blocked</var>, and <code>intercepts</code> field set to <var>intercepts</var> if <var>is blocked</var> is true, or omitted otherwise.</p>"
         },
         {
           "html": "<p>Return <var>params</var></p>"
@@ -3784,10 +3787,10 @@
           "html": "<p>Let <var>text</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode-without-bom-or-fail\" id=\"ref-for-utf-8-decode-without-bom-or-fail\">UTF-8 decode without BOM or fail</a> <var>bytes</var>.</p>"
         },
         {
-          "html": "<p>If <var>text</var> is failure, return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤⓪\">map</a> matching the <code>network.Base64Value</code> production, with <var>value</var> set to <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#forgiving-base64-encode\" id=\"ref-for-forgiving-base64-encode①\">forgiving-base64 encode</a> <var>bytes</var>.</p>"
+          "html": "<p>If <var>text</var> is failure, return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤①\">map</a> matching the <code>network.Base64Value</code> production, with <var>value</var> set to <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#forgiving-base64-encode\" id=\"ref-for-forgiving-base64-encode①\">forgiving-base64 encode</a> <var>bytes</var>.</p>"
         },
         {
-          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤①\">map</a> matching the <code>network.StringValue</code> production,\n with <var>value</var> set to <var>text</var>.</p>"
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤②\">map</a> matching the <code>network.StringValue</code> production,\n with <var>value</var> set to <var>text</var>.</p>"
         }
       ]
     },
@@ -3907,7 +3910,7 @@
           "html": "<p>Let <var>response end</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/resource-timing/#dfn-convert-fetch-timestamp\" id=\"ref-for-dfn-convert-fetch-timestamp①①\">convert fetch timestamp</a> given <var>timings</var>’ <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-timing-info-end-time\" id=\"ref-for-fetch-timing-info-end-time\">end time</a> and <var>global</var>.</p>"
         },
         {
-          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤②\">map</a> matching the <code>network.FetchTimingInfo</code> production\n  with the <code>timeOrigin</code> field set to <var>time origin</var>, the <code>requestTime</code> field set to <var>request time</var>, the <code>redirectStart</code> field set to <var>redirect start</var>, the <code>redirectEnd</code> field set to <var>redirect end</var>, the <code>fetchStart</code> field set to <var>fetch start</var>, the <code>dnsStart</code> field set to <var>DNS start</var>, the <code>dnsEnd</code> field set to <var>DNS end</var>, the <code>connectStart</code> field set to <var>connect\n  start</var>, the <code>connectEnd</code> field set to <var>connect end</var>, the <code>tlsStart</code> field set to <var>TLS start</var>, the <code>requestStart</code> field set to <var>request start</var>, the <code>responseStart</code> field set to <var>response start</var>, and the <code>responseEnd</code> field set to <var>response end</var>.</p>"
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤③\">map</a> matching the <code>network.FetchTimingInfo</code> production\n  with the <code>timeOrigin</code> field set to <var>time origin</var>, the <code>requestTime</code> field set to <var>request time</var>, the <code>redirectStart</code> field set to <var>redirect start</var>, the <code>redirectEnd</code> field set to <var>redirect end</var>, the <code>fetchStart</code> field set to <var>fetch start</var>, the <code>dnsStart</code> field set to <var>DNS start</var>, the <code>dnsEnd</code> field set to <var>DNS end</var>, the <code>connectStart</code> field set to <var>connect\n  start</var>, the <code>connectEnd</code> field set to <var>connect end</var>, the <code>tlsStart</code> field set to <var>TLS start</var>, the <code>requestStart</code> field set to <var>request start</var>, the <code>responseStart</code> field set to <var>response start</var>, and the <code>responseEnd</code> field set to <var>response end</var>.</p>"
         }
       ]
     },
@@ -3964,7 +3967,7 @@
           ]
         },
         {
-          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤③\">map</a> matching the <code>network.Initiator</code> production, the <code>columnNumber</code> field set to <var>column number</var> if it’s not null, or\n omitted otherwise, the <code>lineNumber</code> field set to <var>line number</var> if\n it’s not null, or omitted otherwise and the <code>stackTrace</code> field set\n to <var>stack trace</var> if it’s not null, or omitted otherwise.</p>"
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤④\">map</a> matching the <code>network.Initiator</code> production, the <code>columnNumber</code> field set to <var>column number</var> if it’s not null, or\n omitted otherwise, the <code>lineNumber</code> field set to <var>line number</var> if\n it’s not null, or omitted otherwise and the <code>stackTrace</code> field set\n to <var>stack trace</var> if it’s not null, or omitted otherwise.</p>"
         }
       ]
     },
@@ -4149,7 +4152,7 @@
           "html": "<p>Let <var>auth challenges</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#extract-challenges\" id=\"ref-for-extract-challenges\">extract challenges</a> with <var>response</var>.</p>"
         },
         {
-          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤④\">map</a> matching the <code>network.ResponseData</code> production,\n with the <code>url</code> field set to <var>url</var>, the <code>protocol</code> field\n set to <var>protocol</var>, the <code>status</code> field set to <var>status</var>, the <code>statusText</code> field set to <var>status text</var>, the <code>fromCache</code> field set to <var>from cache</var>, the <code>headers</code> field set to <var>headers</var>, the <code>mimeType</code> field set to <var>mime type</var>, the <code>bytesReceived</code> field set to <var>bytes received</var>, the <code>headersSize</code> field set to <var>headers size</var>, the <code>bodySize</code> field set to <var>body size</var>, <code>content</code> field set to <var>content</var>, and the <code>authChallenges</code> field set to <var>auth challenges</var> if it’s not null, or omitted otherwise.</p>"
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤⑤\">map</a> matching the <code>network.ResponseData</code> production,\n with the <code>url</code> field set to <var>url</var>, the <code>protocol</code> field\n set to <var>protocol</var>, the <code>status</code> field set to <var>status</var>, the <code>statusText</code> field set to <var>status text</var>, the <code>fromCache</code> field set to <var>from cache</var>, the <code>headers</code> field set to <var>headers</var>, the <code>mimeType</code> field set to <var>mime type</var>, the <code>bytesReceived</code> field set to <var>bytes received</var>, the <code>headersSize</code> field set to <var>headers size</var>, the <code>bodySize</code> field set to <var>body size</var>, <code>content</code> field set to <var>content</var>, and the <code>authChallenges</code> field set to <var>auth challenges</var> if it’s not null, or omitted otherwise.</p>"
         }
       ]
     },
@@ -4861,7 +4864,7 @@
           "html": "<p>Set <var>intercept map</var>[<var>intercept</var>] to a struct with <code>url patterns</code> <var>parsed patterns</var>, <code>phases</code> <var>command\n parameters</var>[\"<code>phases</code>\"] and <code>browsingContexts</code> <var>navigables</var>.</p>"
         },
         {
-          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤⑤\">map</a> matching the <code>network.AddInterceptResult</code> production with the <code>intercept</code> field set to <var>intercept</var>.</p>"
+          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤⑥\">map</a> matching the <code>network.AddInterceptResult</code> production with the <code>intercept</code> field set to <var>intercept</var>.</p>"
         }
       ]
     },
@@ -5741,10 +5744,10 @@
           "html": "<p>Let <var>text</var> be an implementation-defined textual description of the error\n represented by <var>record</var>.</p>\n      <p>TODO: Tighten up the requirements here; people will probably try to parse\n this data with regex or something equally bad.</p>"
         },
         {
-          "html": "<p>Let <var>serialization options</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤⑦\">map</a> matching the <code>script.SerializationOptions</code> production with the fields set to\n their default values.</p>"
+          "html": "<p>Let <var>serialization options</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤⑧\">map</a> matching the <code>script.SerializationOptions</code> production with the fields set to\n their default values.</p>"
         },
         {
-          "html": "<p>Let <var>exception</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-remote-value\" id=\"ref-for-serialize-as-a-remote-value①\">serialize as a remote value</a> with <var>record</var>.[[Value]], <var>serialization options</var>, <var>ownership type</var>,\n a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤⑧\">map</a> as serialization internal map, <var>realm</var> and <var>session</var>.</p>"
+          "html": "<p>Let <var>exception</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-remote-value\" id=\"ref-for-serialize-as-a-remote-value①\">serialize as a remote value</a> with <var>record</var>.[[Value]], <var>serialization options</var>, <var>ownership type</var>,\n a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤⑨\">map</a> as serialization internal map, <var>realm</var> and <var>session</var>.</p>"
         },
         {
           "html": "<p>Let <var>stack trace</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#stack-trace-for-an-exception\" id=\"ref-for-stack-trace-for-an-exception\">stack trace for an exception</a> given <var>record</var>.</p>"
@@ -5753,7 +5756,7 @@
           "html": "<p>If <var>stack trace</var> has size of 1 or greater, let <var>line number</var> be value of the <code>lineNumber</code> field in <var>stack trace</var>[0], and let <var>column number</var> be\n the value of the <code>columnNumber</code> field <var>stack trace</var>[0]. Otherwise\n let <var>line number</var> and <var>column number</var> be 0.</p>"
         },
         {
-          "html": "<p>Let <var>exception details</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤⑨\">map</a> matching the <code>script.ExceptionDetails</code> production, with the <code>text</code> field set to <var>text</var>, the <code>exception</code> field set to <var>exception</var>, the <code>lineNumber</code> field set to <var>line number</var>, the <code>columnNumber</code> field set to <var>column number</var>, and the <code>stackTrace</code> field set to <var>stack trace</var>.</p>"
+          "html": "<p>Let <var>exception details</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥⓪\">map</a> matching the <code>script.ExceptionDetails</code> production, with the <code>text</code> field set to <var>text</var>, the <code>exception</code> field set to <var>exception</var>, the <code>lineNumber</code> field set to <var>line number</var>, the <code>columnNumber</code> field set to <var>column number</var>, and the <code>stackTrace</code> field set to <var>stack trace</var>.</p>"
         },
         {
           "html": "<p>Return <var>exception details</var>.</p>"
@@ -5975,14 +5978,14 @@
           "html": "<p>Let <var>remote value</var> be undefined.</p>"
         },
         {
-          "html": "<p>In the following list of conditions and associated steps, run the first set\n of steps for which the associated condition is true, if any:</p>\n      <dl>\n       <dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values\">Type</a>(<var>value</var>) is undefined \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥①\">map</a> matching the <code>script.UndefinedValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition④①\">local end definition</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values①\">Type</a>(<var>value</var>) is Null \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥②\">map</a> matching the <code>script.NullValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition④②\">local end definition</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values②\">Type</a>(<var>value</var>) is String \n       </dt><dd>\n        Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥③\">map</a> matching the <code>script.StringValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition④③\">local end definition</a>, with the <code>value</code> property set to <var>value</var>. \n        \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values③\">Type</a>(<var>value</var>) is Number \n       </dt><dd>\n        \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values④\">Type</a>(<var>value</var>) is Boolean \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥⑤\">map</a> matching the <code>script.BooleanValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition④⑤\">local end definition</a>, with the <code>value</code> property set to <var>value</var>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values⑤\">Type</a>(<var>value</var>) is BigInt \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥⑥\">map</a> matching the <code>script.BigIntValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition④⑥\">local end definition</a>, with the <code>value</code> property set to the result of running the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring\">ToString</a> operation on <var>value</var>. \n      </dd></dl>",
+          "html": "<p>In the following list of conditions and associated steps, run the first set\n of steps for which the associated condition is true, if any:</p>\n      <dl>\n       <dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values\">Type</a>(<var>value</var>) is undefined \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥②\">map</a> matching the <code>script.UndefinedValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition④①\">local end definition</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values①\">Type</a>(<var>value</var>) is Null \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥③\">map</a> matching the <code>script.NullValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition④②\">local end definition</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values②\">Type</a>(<var>value</var>) is String \n       </dt><dd>\n        Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥④\">map</a> matching the <code>script.StringValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition④③\">local end definition</a>, with the <code>value</code> property set to <var>value</var>. \n        \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values③\">Type</a>(<var>value</var>) is Number \n       </dt><dd>\n        \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values④\">Type</a>(<var>value</var>) is Boolean \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥⑥\">map</a> matching the <code>script.BooleanValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition④⑤\">local end definition</a>, with the <code>value</code> property set to <var>value</var>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values⑤\">Type</a>(<var>value</var>) is BigInt \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥⑦\">map</a> matching the <code>script.BigIntValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition④⑥\">local end definition</a>, with the <code>value</code> property set to the result of running the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring\">ToString</a> operation on <var>value</var>. \n      </dd></dl>",
           "rationale": "switch",
           "steps": [
             {
               "html": "<p>Switch on the value of <var>value</var>:</p>\n          <dl>\n           <dt>NaN \n           </dt><dd>Let <var>serialized</var> be <code>\"NaN\"</code> \n           </dd><dt>-0 \n           </dt><dd>Let <var>serialized</var> be <code>\"-0\"</code> \n           </dd><dt>Infinity \n           </dt><dd>Let <var>serialized</var> be <code>\"Infinity\"</code> \n           </dd><dt>-Infinity \n           </dt><dd>Let <var>serialized</var> be <code>\"-Infinity\"</code> \n           </dd><dt>Otherwise: \n           </dt><dd>Let <var>serialized</var> be <var>value</var> \n          </dd></dl>"
             },
             {
-              "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥④\">map</a> matching the <code>script.NumberValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition④④\">local end definition</a>, with the <code>value</code> property set to <var>serialized</var>.</p>"
+              "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥⑤\">map</a> matching the <code>script.NumberValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition④④\">local end definition</a>, with the <code>value</code> property set to <var>serialized</var>.</p>"
             }
           ]
         },
@@ -6151,7 +6154,7 @@
               "html": "<p>Let <var>navigable id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①⑨\">navigable id</a> for <var>navigable</var>.</p>"
             },
             {
-              "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥⑦\">map</a> matching the <code>script.WindowRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, the <code>origin</code> field set to <var>origin</var>, and the <code>context</code> field set to <var>navigable id</var>.</p>"
+              "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥⑧\">map</a> matching the <code>script.WindowRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, the <code>origin</code> field set to <var>origin</var>, and the <code>context</code> field set to <var>navigable id</var>.</p>"
             }
           ],
           "additional": [
@@ -6178,7 +6181,7 @@
                   "html": "<p class=\"assertion\">Assert: <var>sandbox name</var> is not null.</p>"
                 },
                 {
-                  "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥⑧\">map</a> matching the <code>script.WindowRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, the <code>origin</code> field set to <var>origin</var>, the <code>context</code> field set to <var>navigable id</var>,\n and the <code>sandbox</code> field set to <var>sandbox name</var>.</p>"
+                  "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥⑨\">map</a> matching the <code>script.WindowRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, the <code>origin</code> field set to <var>origin</var>, the <code>context</code> field set to <var>navigable id</var>,\n and the <code>sandbox</code> field set to <var>sandbox name</var>.</p>"
                 }
               ]
             },
@@ -6193,7 +6196,7 @@
                   "html": "<p class=\"assertion\">Assert: <var>owners</var> has precisely one item.</p>"
                 },
                 {
-                  "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥⑨\">map</a> matching the <code>script.DedicatedWorkerRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, the <code>origin</code> field\n set to <var>origin</var>, and the <code>owners</code> field set to <var>owners</var>.</p>"
+                  "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦⓪\">map</a> matching the <code>script.DedicatedWorkerRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, the <code>origin</code> field\n set to <var>origin</var>, and the <code>owners</code> field set to <var>owners</var>.</p>"
                 }
               ]
             },
@@ -6202,7 +6205,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦⓪\">map</a> matching the <code>script.SharedWorkerRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, and the <code>origin</code> field\n set to <var>origin</var>.</p>"
+                  "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦①\">map</a> matching the <code>script.SharedWorkerRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, and the <code>origin</code> field\n set to <var>origin</var>.</p>"
                 }
               ]
             },
@@ -6211,7 +6214,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦①\">map</a> matching the <code>script.ServiceWorkerRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, and the <code>origin</code> field\n set to <var>origin</var>.</p>"
+                  "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦②\">map</a> matching the <code>script.ServiceWorkerRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, and the <code>origin</code> field\n set to <var>origin</var>.</p>"
                 }
               ]
             },
@@ -6220,7 +6223,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦②\">map</a> matching the <code>script.WorkerRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, and the <code>origin</code> field set to <var>origin</var>.</p>"
+                  "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦③\">map</a> matching the <code>script.WorkerRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, and the <code>origin</code> field set to <var>origin</var>.</p>"
                 }
               ]
             },
@@ -6229,7 +6232,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦③\">map</a> matching the <code>script.PaintWorkletRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, and the <code>origin</code> field set to <var>origin</var>.</p>"
+                  "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦④\">map</a> matching the <code>script.PaintWorkletRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, and the <code>origin</code> field set to <var>origin</var>.</p>"
                 }
               ]
             },
@@ -6238,7 +6241,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦④\">map</a> matching the <code>script.AudioWorkletRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, and the <code>origin</code> field set to <var>origin</var>.</p>"
+                  "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦⑤\">map</a> matching the <code>script.AudioWorkletRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, and the <code>origin</code> field set to <var>origin</var>.</p>"
                 }
               ]
             },
@@ -6247,7 +6250,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦⑤\">map</a> matching the <code>script.WorkletRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, and the <code>origin</code> field set to <var>origin</var>.</p>"
+                  "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦⑥\">map</a> matching the <code>script.WorkletRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, and the <code>origin</code> field set to <var>origin</var>.</p>"
                 }
               ]
             },
@@ -6448,7 +6451,7 @@
           "html": "<p>Let <var>known object</var> be <code>true</code>, if <var>value</var> is in the <var>serialization internal map</var>, otherwise <code>false</code>.</p>"
         },
         {
-          "html": "<p>In the following list of conditions and associated steps, run the first set\n of steps for which the associated condition is true:</p>\n      <dl>\n       <dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values⑧\">Type</a>(<var>value</var>) is Symbol \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦⑥\">map</a> matching the <code>script.SymbolRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤⓪\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-isarray\" id=\"ref-for-sec-isarray\">IsArray</a>(<var>value</var>) \n       </dt><dd>Let <var>remote value</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-an-array-like\" id=\"ref-for-serialize-an-array-like\">serialize an Array-like</a> with <var>session</var>, <code>script.ArrayRemoteValue</code>, <var>handle id</var>, <var>known object</var>, <var>value</var>, <var>serialization options</var>, <var>ownership type</var>, <var>serialization internal map</var>, <var>realm</var>, and <var>session</var>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-isregexp\" id=\"ref-for-sec-isregexp\">IsRegExp</a>(<var>value</var>) \n       </dt><dd>\n        \n       </dd><dt><var>value</var> has a [[DateValue]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots\">internal slot</a>. \n       </dt><dd>\n        \n       </dd><dt><var>value</var> has a [[MapData]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots①\">internal slot</a> \n       </dt><dd>\n        \n       </dd><dt><var>value</var> has a [[SetData]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots②\">internal slot</a> \n       </dt><dd>\n        \n       </dd><dt><var>value</var> has a [[WeakMapData]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots③\">internal slot</a> \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧②\">map</a> matching the <code>script.WeakMapRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤⑥\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><var>value</var> has a [[WeakSetData]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots④\">internal slot</a> \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧③\">map</a> matching the <code>script.WeakSetRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤⑦\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><var>value</var> has a [[GeneratorState]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots⑤\">internal slot</a> or [[AsyncGeneratorState]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots⑥\">internal slot</a> \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧④\">map</a> matching the <code>script.GeneratorRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤⑧\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><var>value</var> has an [[ErrorData]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots⑦\">internal slot</a> \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧⑤\">map</a> matching the <code>script.ErrorRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤⑨\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><var>value</var> has a [[ProxyHandler]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots⑧\">internal slot</a> and a [[ProxyTarget]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots⑨\">internal slot</a> \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧⑥\">map</a> matching the <code>script.ProxyRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥⓪\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ispromise\" id=\"ref-for-sec-ispromise\">IsPromise</a>(<var>value</var>) \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧⑦\">map</a> matching the <code>script.PromiseRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥①\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><var>value</var> has a [[TypedArrayName]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots①⓪\">internal slot</a> \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧⑧\">map</a> matching the <code>script.TypedArrayRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥②\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><var>value</var> has an [[ArrayBufferData]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots①①\">internal slot</a> \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧⑨\">map</a> matching the <code>script.ArrayBufferRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥③\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><var>value</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" id=\"ref-for-dfn-platform-object\">platform object</a> that implements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#nodelist\" id=\"ref-for-nodelist\">NodeList</a></code> \n       </dt><dd>Let <var>remote value</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-an-array-like\" id=\"ref-for-serialize-an-array-like①\">serialize an Array-like</a> with <code>script.NodeListRemoteValue</code>,<var>handle id</var>, <var>known object</var>, <var>value</var>, <var>serialization options</var>, <var>ownership type</var>, <var>serialization internal map</var>, <var>realm</var>, and <var>session</var>. \n       </dd><dt><var>value</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" id=\"ref-for-dfn-platform-object①\">platform object</a> that implements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#htmlcollection\" id=\"ref-for-htmlcollection\">HTMLCollection</a></code> \n       </dt><dd>Let <var>remote value</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-an-array-like\" id=\"ref-for-serialize-an-array-like②\">serialize an Array-like</a> with <code>script.HTMLCollectionRemoteValue</code>, <var>handle id</var>, <var>known object</var>, <var>value</var>, <var>serialization options</var>, <var>ownership type</var>, <var>known object</var>, <var>serialization internal map</var>, <var>realm</var>, and <var>session</var>. \n       </dd><dt><var>value</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" id=\"ref-for-dfn-platform-object②\">platform object</a> that implements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#node\" id=\"ref-for-node①\">Node</a></code> \n       </dt><dd>\n        \n       </dd><dt><var>value</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" id=\"ref-for-dfn-platform-object③\">platform object</a> that implements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#windowproxy\" id=\"ref-for-windowproxy\">WindowProxy</a></code> \n       </dt><dd>\n        \n       </dd><dt><var>value</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" id=\"ref-for-dfn-platform-object④\">platform object</a> \n       </dt><dd>1. Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨⑤\">map</a> matching the <code>script.ObjectRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥⑦\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-iscallable\" id=\"ref-for-sec-iscallable①\">IsCallable</a>(<var>value</var>) \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨⑥\">map</a> matching the <code>script.FunctionRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥⑧\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt>Otherwise: \n       </dt><dd>\n        \n      </dd></dl>",
+          "html": "<p>In the following list of conditions and associated steps, run the first set\n of steps for which the associated condition is true:</p>\n      <dl>\n       <dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values⑧\">Type</a>(<var>value</var>) is Symbol \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦⑦\">map</a> matching the <code>script.SymbolRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤⓪\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-isarray\" id=\"ref-for-sec-isarray\">IsArray</a>(<var>value</var>) \n       </dt><dd>Let <var>remote value</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-an-array-like\" id=\"ref-for-serialize-an-array-like\">serialize an Array-like</a> with <var>session</var>, <code>script.ArrayRemoteValue</code>, <var>handle id</var>, <var>known object</var>, <var>value</var>, <var>serialization options</var>, <var>ownership type</var>, <var>serialization internal map</var>, <var>realm</var>, and <var>session</var>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-isregexp\" id=\"ref-for-sec-isregexp\">IsRegExp</a>(<var>value</var>) \n       </dt><dd>\n        \n       </dd><dt><var>value</var> has a [[DateValue]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots\">internal slot</a>. \n       </dt><dd>\n        \n       </dd><dt><var>value</var> has a [[MapData]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots①\">internal slot</a> \n       </dt><dd>\n        \n       </dd><dt><var>value</var> has a [[SetData]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots②\">internal slot</a> \n       </dt><dd>\n        \n       </dd><dt><var>value</var> has a [[WeakMapData]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots③\">internal slot</a> \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧③\">map</a> matching the <code>script.WeakMapRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤⑥\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><var>value</var> has a [[WeakSetData]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots④\">internal slot</a> \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧④\">map</a> matching the <code>script.WeakSetRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤⑦\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><var>value</var> has a [[GeneratorState]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots⑤\">internal slot</a> or [[AsyncGeneratorState]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots⑥\">internal slot</a> \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧⑤\">map</a> matching the <code>script.GeneratorRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤⑧\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><var>value</var> has an [[ErrorData]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots⑦\">internal slot</a> \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧⑥\">map</a> matching the <code>script.ErrorRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤⑨\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><var>value</var> has a [[ProxyHandler]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots⑧\">internal slot</a> and a [[ProxyTarget]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots⑨\">internal slot</a> \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧⑦\">map</a> matching the <code>script.ProxyRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥⓪\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ispromise\" id=\"ref-for-sec-ispromise\">IsPromise</a>(<var>value</var>) \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧⑧\">map</a> matching the <code>script.PromiseRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥①\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><var>value</var> has a [[TypedArrayName]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots①⓪\">internal slot</a> \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧⑨\">map</a> matching the <code>script.TypedArrayRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥②\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><var>value</var> has an [[ArrayBufferData]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots①①\">internal slot</a> \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨⓪\">map</a> matching the <code>script.ArrayBufferRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥③\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><var>value</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" id=\"ref-for-dfn-platform-object\">platform object</a> that implements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#nodelist\" id=\"ref-for-nodelist\">NodeList</a></code> \n       </dt><dd>Let <var>remote value</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-an-array-like\" id=\"ref-for-serialize-an-array-like①\">serialize an Array-like</a> with <code>script.NodeListRemoteValue</code>,<var>handle id</var>, <var>known object</var>, <var>value</var>, <var>serialization options</var>, <var>ownership type</var>, <var>serialization internal map</var>, <var>realm</var>, and <var>session</var>. \n       </dd><dt><var>value</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" id=\"ref-for-dfn-platform-object①\">platform object</a> that implements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#htmlcollection\" id=\"ref-for-htmlcollection\">HTMLCollection</a></code> \n       </dt><dd>Let <var>remote value</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-an-array-like\" id=\"ref-for-serialize-an-array-like②\">serialize an Array-like</a> with <code>script.HTMLCollectionRemoteValue</code>, <var>handle id</var>, <var>known object</var>, <var>value</var>, <var>serialization options</var>, <var>ownership type</var>, <var>known object</var>, <var>serialization internal map</var>, <var>realm</var>, and <var>session</var>. \n       </dd><dt><var>value</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" id=\"ref-for-dfn-platform-object②\">platform object</a> that implements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#node\" id=\"ref-for-node①\">Node</a></code> \n       </dt><dd>\n        \n       </dd><dt><var>value</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" id=\"ref-for-dfn-platform-object③\">platform object</a> that implements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#windowproxy\" id=\"ref-for-windowproxy\">WindowProxy</a></code> \n       </dt><dd>\n        \n       </dd><dt><var>value</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" id=\"ref-for-dfn-platform-object④\">platform object</a> \n       </dt><dd>1. Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨⑥\">map</a> matching the <code>script.ObjectRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥⑦\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-iscallable\" id=\"ref-for-sec-iscallable①\">IsCallable</a>(<var>value</var>) \n       </dt><dd>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨⑦\">map</a> matching the <code>script.FunctionRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥⑧\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise. \n       </dd><dt>Otherwise: \n       </dt><dd>\n        \n      </dd></dl>",
           "rationale": "let",
           "steps": [
             {
@@ -6458,10 +6461,10 @@
               "html": "<p>Let <var>flags</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring②\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p①\">Get</a>(<var>value</var>, \"flags\")).</p>"
             },
             {
-              "html": "<p>Let <var>serialized</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦⑦\">map</a> matching the <code>script.RegExpValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤①\">local end definition</a>, with the <code>pattern</code> property set to the <var>pattern</var> and the the <code>flags</code> property set to the <var>flags</var>.</p>"
+              "html": "<p>Let <var>serialized</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦⑧\">map</a> matching the <code>script.RegExpValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤①\">local end definition</a>, with the <code>pattern</code> property set to the <var>pattern</var> and the the <code>flags</code> property set to the <var>flags</var>.</p>"
             },
             {
-              "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦⑧\">map</a> matching the <code>script.RegExpRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤②\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise, and\n the <code>value</code> property set to <var>serialized</var>.</p>"
+              "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦⑨\">map</a> matching the <code>script.RegExpRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤②\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise, and\n the <code>value</code> property set to <var>serialized</var>.</p>"
             }
           ],
           "additional": [
@@ -6476,7 +6479,7 @@
                   "html": "<p class=\"assertion\">Assert: <var>serialized</var> is not a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type④\">throw completion</a>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦⑨\">map</a> matching the <code>script.DateRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤③\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise, and the\n value set to <var>serialized</var>.</p>"
+                  "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧⓪\">map</a> matching the <code>script.DateRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤③\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise, and the\n value set to <var>serialized</var>.</p>"
                 }
               ]
             },
@@ -6485,7 +6488,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧⓪\">map</a> matching the <code>script.MapRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤④\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted\n otherwise.</p>"
+                  "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧①\">map</a> matching the <code>script.MapRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤④\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted\n otherwise.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-internal-ids-if-needed\" id=\"ref-for-set-internal-ids-if-needed\">Set internal ids if needed</a> with <var>serialization internal map</var>, <var>remote value</var> and <var>value</var>.</p>"
@@ -6512,7 +6515,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧①\">map</a> matching the <code>script.SetRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤⑤\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted\n otherwise.</p>"
+                  "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧②\">map</a> matching the <code>script.SetRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤⑤\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted\n otherwise.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-internal-ids-if-needed\" id=\"ref-for-set-internal-ids-if-needed①\">Set internal ids if needed</a> with <var>serialization internal map</var>, <var>remote value</var> and <var>value</var>.</p>"
@@ -6542,7 +6545,7 @@
                   "html": "<p>Let <var>shared id</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-shared-id-for-a-node\" id=\"ref-for-get-shared-id-for-a-node\">get shared id for a node</a> with <var>value</var> and <var>session</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨⓪\">map</a> matching the <code>script.NodeRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥④\">local end definition</a>, with the <code>sharedId</code> property set to <var>shared id</var> if it’s not null, or omitted otherwise, and the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted\n otherwise.</p>"
+                  "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨①\">map</a> matching the <code>script.NodeRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥④\">local end definition</a>, with the <code>sharedId</code> property set to <var>shared id</var> if it’s not null, or omitted otherwise, and the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted\n otherwise.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-internal-ids-if-needed\" id=\"ref-for-set-internal-ids-if-needed②\">Set internal ids if needed</a> with <var>serialization internal map</var>, <var>remote value</var> and <var>value</var>.</p>"
@@ -6555,7 +6558,7 @@
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Let <var>serialized</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨①\">map</a>.</p>"
+                      "html": "<p>Let <var>serialized</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨②\">map</a>.</p>"
                     },
                     {
                       "html": "<p>Set <var>serialized</var>[\"<code>nodeType</code>\"] to <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p②\">Get</a>(<var>value</var>, \"nodeType\").</p>"
@@ -6610,7 +6613,7 @@
                       "rationale": "let",
                       "steps": [
                         {
-                          "html": "<p>Let <var>attributes</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨②\">map</a>.</p>"
+                          "html": "<p>Let <var>attributes</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨③\">map</a>.</p>"
                         },
                         {
                           "html": "For each <var>attribute</var> in <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute\">attribute list</a>:",
@@ -6671,10 +6674,10 @@
                   "html": "<p>Let <var>navigable id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id②①\">navigable id</a> for <var>navigable</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>serialized</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨③\">map</a> matching the <code>script.WindowProxyProperties</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥⑤\">local end\n definition</a> with the <code>context</code> property set to <var>navigable id</var>.</p>"
+                  "html": "<p>Let <var>serialized</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨④\">map</a> matching the <code>script.WindowProxyProperties</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥⑤\">local end\n definition</a> with the <code>context</code> property set to <var>navigable id</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨④\">map</a> matching the <code>script.WindowProxyRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥⑥\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise, and\n the <code>value</code> property set to <var>serialized</var>.</p>"
+                  "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨⑤\">map</a> matching the <code>script.WindowProxyRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥⑥\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise, and\n the <code>value</code> property set to <var>serialized</var>.</p>"
                 }
               ]
             },
@@ -6686,7 +6689,7 @@
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values⑨\">type</a>(<var>value</var>) is Object</p>"
                 },
                 {
-                  "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨⑦\">map</a> matching the <code>script.ObjectRemoteValue</code> production\n in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥⑨\">local end definition</a>, with the <code>handle</code> property set\n to <var>handle id</var> if it’s not null, or omitted otherwise.</p>"
+                  "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨⑧\">map</a> matching the <code>script.ObjectRemoteValue</code> production\n in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑥⑨\">local end definition</a>, with the <code>handle</code> property set\n to <var>handle id</var> if it’s not null, or omitted otherwise.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-internal-ids-if-needed\" id=\"ref-for-set-internal-ids-if-needed③\">Set internal ids if needed</a> with <var>serialization internal map</var>, <var>remote value</var> and <var>value</var>.</p>"
@@ -6722,7 +6725,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨⑧\">map</a> matching <var>production</var>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted\n otherwise.</p>"
+          "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨⑨\">map</a> matching <var>production</var>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted\n otherwise.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-internal-ids-if-needed\" id=\"ref-for-set-internal-ids-if-needed④\">Set internal ids if needed</a> with <var>serialization internal map</var>, <var>remote value</var> and <var>value</var>.</p>"
@@ -6849,7 +6852,7 @@
               "html": "<p>Let <var>url</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer⑨\">URL serializer</a>, given\n  the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL</a> of <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#stackframe-script-url\" id=\"ref-for-stackframe-script-url\">script url</a>.</p>"
             },
             {
-              "html": "<p>Let <var>frame info</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨⑨\">map</a> matching the <code>script.StackFrame</code> production, with the <code>url</code> field set to <var>url</var>, the <code>functionName</code> field set to <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#stackframe-function\" id=\"ref-for-stackframe-function\">function</a>,\n  the <code>lineNumber</code> field set to <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#stackframe-line-number\" id=\"ref-for-stackframe-line-number\">line\n  number</a> and the <code>columnNumber</code> field set to <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#stackframe-column-number\" id=\"ref-for-stackframe-column-number\">column number</a>.</p>"
+              "html": "<p>Let <var>frame info</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪⓪\">map</a> matching the <code>script.StackFrame</code> production, with the <code>url</code> field set to <var>url</var>, the <code>functionName</code> field set to <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#stackframe-function\" id=\"ref-for-stackframe-function\">function</a>,\n  the <code>lineNumber</code> field set to <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#stackframe-line-number\" id=\"ref-for-stackframe-line-number\">line\n  number</a> and the <code>columnNumber</code> field set to <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#stackframe-column-number\" id=\"ref-for-stackframe-column-number\">column number</a>.</p>"
             }
           ]
         },
@@ -6857,7 +6860,7 @@
           "html": "<p>Append <var>frame info</var> to <var>call frames</var>.</p>"
         },
         {
-          "html": "<p>Let <var>stack trace</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪⓪\">map</a> matching the <code>script.StackTrace</code> production, with the <code>callFrames</code> property set to <var>call frames</var>.</p>"
+          "html": "<p>Let <var>stack trace</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪①\">map</a> matching the <code>script.StackTrace</code> production, with the <code>callFrames</code> property set to <var>call frames</var>.</p>"
         },
         {
           "html": "<p>Return <var>stack trace</var>.</p>"
@@ -6909,7 +6912,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>source</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪①\">map</a> matching the <code>script.Source</code> production with the <code>realm</code> field set to <var>realm</var>, and the <code>context</code> field set\n to <var>navigable id</var> if <var>navigable</var> is not null, or unset otherwise.</p>"
+          "html": "<p>Let <var>source</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪②\">map</a> matching the <code>script.Source</code> production with the <code>realm</code> field set to <var>realm</var>, and the <code>context</code> field set\n to <var>navigable id</var> if <var>navigable</var> is not null, or unset otherwise.</p>"
         },
         {
           "html": "<p>Return <var>source</var>.</p>"
@@ -7040,7 +7043,7 @@
           "html": "<p>Set <var>preload script map</var>[<var>script</var>] to a struct with <code>function\n declaration</code> <var>function declaration</var>, <code>arguments</code> <var>arguments</var>, <code>contexts</code> <var>navigables</var>, and <code>sandbox</code> <var>sandbox</var>.</p>"
         },
         {
-          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪②\">map</a> matching the <code>script.AddPreloadScriptResult</code> with the <code>script</code> field set to <var>script</var>.</p>"
+          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪③\">map</a> matching the <code>script.AddPreloadScriptResult</code> with the <code>script</code> field set to <var>script</var>.</p>"
         }
       ]
     },
@@ -7163,7 +7166,7 @@
           "html": "<p>Let <var>await promise</var> be the value of the <code>awaitPromise</code> field of <var>command parameters</var>.</p>"
         },
         {
-          "html": "<p>Let <var>serialization options</var> be the value of the <code>serializationOptions</code> field of <var>command parameters</var>, if present,\n or otherwise a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪③\">map</a> matching the <code>script.SerializationOptions</code> production with the fields set to their default values.</p>"
+          "html": "<p>Let <var>serialization options</var> be the value of the <code>serializationOptions</code> field of <var>command parameters</var>, if present,\n or otherwise a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪④\">map</a> matching the <code>script.SerializationOptions</code> production with the fields set to their default values.</p>"
         },
         {
           "html": "<p>Let <var>result ownership</var> be the value of the <code>resultOwnership</code> field of <var>command parameters</var>, if present, or <code>none</code> otherwise.</p>"
@@ -7185,7 +7188,7 @@
               "html": "<p>Let <var>exception details</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-exception-details\" id=\"ref-for-get-exception-details\">get exception details</a> given <var>realm</var>, <var>function body evaluation status</var>, <var>result ownership</var> and <var>session</var>.</p>"
             },
             {
-              "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪④\">map</a> matching the <code>script.EvaluateResultException</code> production, with the <code>exceptionDetails</code> field set to <var>exception details</var>.</p>"
+              "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪⑤\">map</a> matching the <code>script.EvaluateResultException</code> production, with the <code>exceptionDetails</code> field set to <var>exception details</var>.</p>"
             }
           ]
         },
@@ -7230,7 +7233,7 @@
               "html": "<p>Let <var>exception details</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-exception-details\" id=\"ref-for-get-exception-details①\">get exception details</a> given <var>realm</var>, <var>evaluation status</var>, <var>result ownership</var> and <var>session</var>.</p>"
             },
             {
-              "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪⑤\">map</a> matching the <code>script.EvaluateResultException</code> production, with the <code>exceptionDetails</code> field set to <var>exception details</var>.</p>"
+              "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪⑥\">map</a> matching the <code>script.EvaluateResultException</code> production, with the <code>exceptionDetails</code> field set to <var>exception details</var>.</p>"
             }
           ]
         },
@@ -7238,10 +7241,10 @@
           "html": "<p class=\"assertion\">Assert: <var>evaluation status</var>.[[Type]] is <code>normal</code>.</p>"
         },
         {
-          "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-remote-value\" id=\"ref-for-serialize-as-a-remote-value⑧\">serialize as a remote value</a> with <var>evaluation status</var>.[[Value]], <var>serialization options</var>, <var>result ownership</var>,\n a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪⑥\">map</a> as serialization internal map, <var>realm</var> and <var>session</var>.</p>"
+          "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-remote-value\" id=\"ref-for-serialize-as-a-remote-value⑧\">serialize as a remote value</a> with <var>evaluation status</var>.[[Value]], <var>serialization options</var>, <var>result ownership</var>,\n a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪⑦\">map</a> as serialization internal map, <var>realm</var> and <var>session</var>.</p>"
         },
         {
-          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪⑦\">map</a> matching the <code>script.EvaluateResultSuccess</code> production, with the <code>realm</code> field set to <var>realm id</var>,\n and the <code>result</code> field set to <var>result</var>.</p>"
+          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪⑧\">map</a> matching the <code>script.EvaluateResultSuccess</code> production, with the <code>realm</code> field set to <var>realm id</var>,\n and the <code>result</code> field set to <var>result</var>.</p>"
         }
       ]
     },
@@ -7266,7 +7269,7 @@
           "html": "<p>Let <var>await promise</var> be the value of the <code>awaitPromise</code> field of <var>command parameters</var>.</p>"
         },
         {
-          "html": "<p>Let <var>serialization options</var> be the value of the <code>serializationOptions</code> field of <var>command parameters</var>, if present,\n or otherwise a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪⑧\">map</a> matching the <code>script.SerializationOptions</code> production with the fields set to their default values.</p>"
+          "html": "<p>Let <var>serialization options</var> be the value of the <code>serializationOptions</code> field of <var>command parameters</var>, if present,\n or otherwise a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪⑨\">map</a> matching the <code>script.SerializationOptions</code> production with the fields set to their default values.</p>"
         },
         {
           "html": "<p>Let <var>result ownership</var> be the value of the <code>resultOwnership</code> field of <var>command parameters</var>, if present, or <code>none</code> otherwise.</p>"
@@ -7309,7 +7312,7 @@
               "html": "<p>Let <var>exception details</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-exception-details\" id=\"ref-for-get-exception-details②\">get exception details</a> with <var>realm</var>, <var>evaluation status</var>, <var>result ownership</var> and <var>session</var>.</p>"
             },
             {
-              "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪⑨\">map</a> matching the <code>script.EvaluateResultException</code> production, with the <code>realm</code> field set to <var>realm id</var>, and the <code>exceptionDetails</code> field set to <var>exception details</var>.</p>"
+              "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①⓪\">map</a> matching the <code>script.EvaluateResultException</code> production, with the <code>realm</code> field set to <var>realm id</var>, and the <code>exceptionDetails</code> field set to <var>exception details</var>.</p>"
             }
           ]
         },
@@ -7317,10 +7320,10 @@
           "html": "<p class=\"assertion\">Assert: <var>evaluation status</var>.[[Type]] is <code>normal</code>.</p>"
         },
         {
-          "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-remote-value\" id=\"ref-for-serialize-as-a-remote-value⑨\">serialize as a remote value</a> with <var>evaluation status</var>.[[Value]], <var>serialization options</var>, <var>result ownership</var>,\n a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①⓪\">map</a> as serialization internal map, <var>realm</var> and <var>session</var>.</p>"
+          "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-remote-value\" id=\"ref-for-serialize-as-a-remote-value⑨\">serialize as a remote value</a> with <var>evaluation status</var>.[[Value]], <var>serialization options</var>, <var>result ownership</var>,\n a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①①\">map</a> as serialization internal map, <var>realm</var> and <var>session</var>.</p>"
         },
         {
-          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①①\">map</a> matching the <code>script.EvaluateResultSuccess</code> production, with the with the <code>realm</code> field set to <var>realm id</var>, and\n the <code>result</code> field set to <var>result</var>.</p>"
+          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①②\">map</a> matching the <code>script.EvaluateResultSuccess</code> production, with the with the <code>realm</code> field set to <var>realm id</var>, and\n the <code>result</code> field set to <var>result</var>.</p>"
         }
       ]
     },
@@ -7378,7 +7381,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①②\">map</a> matching the <code>script.GetRealmsResult</code> production,\n with the <code>realms</code> field set to <var>realms</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①③\">map</a> matching the <code>script.GetRealmsResult</code> production,\n with the <code>realms</code> field set to <var>realms</var>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑦③\">success</a> with data <var>body</var>.</p>"
@@ -7424,22 +7427,22 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>channel properties</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤④\">contains</a> \"<code>serializationOptions</code>\", let <var>serialization options</var> be the\n value of the <code>serializationOptions</code> field of <var>channel\n properties</var>. Otherwise let <var>serialization options</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①③\">map</a> matching the <code>script.SerializationOptions</code> production with the\n fields set to their default values.</p>"
+              "html": "<p>If <var>channel properties</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤④\">contains</a> \"<code>serializationOptions</code>\", let <var>serialization options</var> be the\n value of the <code>serializationOptions</code> field of <var>channel\n properties</var>. Otherwise let <var>serialization options</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①④\">map</a> matching the <code>script.SerializationOptions</code> production with the\n fields set to their default values.</p>"
             },
             {
               "html": "<p>Let if <var>channel properties</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤⑤\">contains</a> \"<code>ownership</code>\", let <var>ownership type</var> be <var>channel properties</var>[\"<code>ownership</code>\"]. Otherwise let <var>ownership type</var> be \"<code>none</code>\".</p>"
             },
             {
-              "html": "<p>Let <var>data</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-remote-value\" id=\"ref-for-serialize-as-a-remote-value①⓪\">serialize as a remote value</a> given <var>message</var>, <var>serialization options</var>, <var>ownership type</var>, a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①④\">map</a> as serialization\n internal map and <var>realm</var>.</p>"
+              "html": "<p>Let <var>data</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-remote-value\" id=\"ref-for-serialize-as-a-remote-value①⓪\">serialize as a remote value</a> given <var>message</var>, <var>serialization options</var>, <var>ownership type</var>, a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①⑤\">map</a> as serialization\n internal map and <var>realm</var>.</p>"
             },
             {
               "html": "<p>Let <var>source</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-the-source\" id=\"ref-for-get-the-source\">get the source</a> with <var>realm</var>.</p>"
             },
             {
-              "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①⑤\">map</a> matching the <code>script.MessageParameters</code> production, with the <code>channel</code> field set to <var>channel properties</var>[\"<code>channel</code>\"],\n the <code>data</code> field set to <var>data</var>, and the <code>source</code> field set to <var>source</var>.</p>"
+              "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①⑥\">map</a> matching the <code>script.MessageParameters</code> production, with the <code>channel</code> field set to <var>channel properties</var>[\"<code>channel</code>\"],\n the <code>data</code> field set to <var>data</var>, and the <code>source</code> field set to <var>source</var>.</p>"
             },
             {
-              "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①⑥\">map</a> matching the <code>script.Message</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+              "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①⑦\">map</a> matching the <code>script.Message</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#emit-an-event\" id=\"ref-for-emit-an-event①⑦\">Emit an event</a> with <var>session</var> and <var>body</var>.</p>"
@@ -7466,7 +7469,7 @@
           "html": "<p>Let <var>related navigables</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-related-navigables\" id=\"ref-for-get-related-navigables⑥\">get related navigables</a> given <var>environment settings</var>.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①⑦\">map</a> matching the <code>script.RealmCreated</code> production, with the <code>params</code> field set to <var>realm info</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①⑧\">map</a> matching the <code>script.RealmCreated</code> production, with the <code>params</code> field set to <var>realm info</var>.</p>"
         },
         {
           "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled①⑦\">set of sessions for which an event is enabled</a> given \"<code>script.realmCreated</code>\" and <var>related navigables</var>:",
@@ -7522,7 +7525,7 @@
               "html": "<p>If <var>realm info</var> is null, continue.</p>"
             },
             {
-              "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①⑧\">map</a> matching the <code>script.RealmCreated</code> production, with the <code>params</code> field set to <var>realm info</var>.</p>"
+              "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①⑨\">map</a> matching the <code>script.RealmCreated</code> production, with the <code>params</code> field set to <var>realm info</var>.</p>"
             },
             {
               "html": "If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-is-enabled\" id=\"ref-for-event-is-enabled②\">event is enabled</a> given <var>session</var>,\n \"<code>script.realmCreated</code>\" and <var>related navigables</var>:",
@@ -7559,10 +7562,10 @@
               "html": "<p>Let <var>realm id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#realm-id\" id=\"ref-for-realm-id⑦\">realm id</a> for <var>realm</var>.</p>"
             },
             {
-              "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①⑨\">map</a> matching the <code>script.RealmDestroyedParameters</code> production, with the <code>realm</code> field set of <var>realm id</var>.</p>"
+              "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②⓪\">map</a> matching the <code>script.RealmDestroyedParameters</code> production, with the <code>realm</code> field set of <var>realm id</var>.</p>"
             },
             {
-              "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②⓪\">map</a> matching the <code>script.RealmDestroyed</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+              "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②①\">map</a> matching the <code>script.RealmDestroyed</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
             },
             {
               "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled①⑧\">set of sessions for which an event is enabled</a> given \"<code>script.realmDestroyed</code>\" and <var>related navigables</var>:",
@@ -7585,10 +7588,10 @@
           "html": "<p>Let <var>realm id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#realm-id\" id=\"ref-for-realm-id⑧\">realm id</a> for <var>realm</var>.</p>"
         },
         {
-          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②①\">map</a> matching the <code>script.RealmDestroyedParameters</code> production, with the <code>realm</code> field set to <var>realm id</var>.</p>"
+          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②②\">map</a> matching the <code>script.RealmDestroyedParameters</code> production, with the <code>realm</code> field set to <var>realm id</var>.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②②\">map</a> matching the <code>script.RealmDestroyed</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②③\">map</a> matching the <code>script.RealmDestroyed</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
         },
         {
           "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled①⑨\">set of sessions for which an event is enabled</a> given \"<code>script.realmDestroyed</code>\" and <var>related navigables</var>:",
@@ -7619,10 +7622,10 @@
           "html": "<p>Let <var>realm id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#realm-id\" id=\"ref-for-realm-id⑨\">realm id</a> for <var>realm</var>.</p>"
         },
         {
-          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②③\">map</a> matching the <code>script.RealmDestroyedParameters</code> production, with the <code>realm</code> field set of <var>realm id</var>.</p>"
+          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②④\">map</a> matching the <code>script.RealmDestroyedParameters</code> production, with the <code>realm</code> field set of <var>realm id</var>.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②④\">map</a> matching the <code>script.RealmDestroyed</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②⑤\">map</a> matching the <code>script.RealmDestroyed</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
         }
       ]
     },
@@ -7633,7 +7636,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>deserialized filter</var> to be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②⑦\">map</a>.</p>"
+          "html": "<p>Let <var>deserialized filter</var> to be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②⑧\">map</a>.</p>"
         },
         {
           "html": "For each <var>name</var> → <var>value</var> in <var>filter</var>:",
@@ -7666,7 +7669,7 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>partition spec</var> to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②⑧\">map</a>.</p>"
+              "html": "<p>Set <var>partition spec</var> to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②⑨\">map</a>.</p>"
             }
           ]
         },
@@ -7686,7 +7689,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>partition key</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②⑨\">map</a>.</p>"
+          "html": "<p>Let <var>partition key</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③⓪\">map</a>.</p>"
         },
         {
           "html": "For each <var>name</var> → <var>default value</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#default-values-for-storage-partition-key-attributes\" id=\"ref-for-default-values-for-storage-partition-key-attributes①\">default values for storage partition key attributes</a>:",
@@ -7816,7 +7819,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>filter</var> be the value of the <code>filter</code> field of <var>command parameters</var> if it is present or an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③⓪\">map</a> if it isn’t.</p>"
+          "html": "<p>Let <var>filter</var> be the value of the <code>filter</code> field of <var>command parameters</var> if it is present or an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③①\">map</a> if it isn’t.</p>"
         },
         {
           "html": "<p>Let <var>partition spec</var> be the value of the <code>partition</code> field of <var>command parameters</var> if it is present or null if it isn’t.</p>"
@@ -7846,7 +7849,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③①\">map</a> matching the <code>storage.GetCookiesResult</code> production,\nwith the <code>cookies</code> field set to <var>serialized cookies</var> and the <code>partitionKey</code> field set to <var>partition key</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③②\">map</a> matching the <code>storage.GetCookiesResult</code> production,\nwith the <code>cookies</code> field set to <var>serialized cookies</var> and the <code>partitionKey</code> field set to <var>partition key</var>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑦⑦\">success</a> with data <var>body</var>.</p>"
@@ -7877,7 +7880,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-creating-a-cookie\" id=\"ref-for-dfn-creating-a-cookie\">Create a cookie</a> in <var>store</var> using <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-cookie-name\" id=\"ref-for-dfn-cookie-name\">cookie name</a> <var>cookie spec</var>[\"<code>name</code>\"], <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-cookie-value\" id=\"ref-for-dfn-cookie-value\">cookie value</a> <var>deserialized value</var>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-cookie-domain\" id=\"ref-for-dfn-cookie-domain\">cookie domain</a> <var>cookie spec</var>[\"<code>domain</code>\"], and an attribute-value list of the\nfollowing cookie concepts listed in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-table-for-cookie-conversion\" id=\"ref-for-dfn-table-for-cookie-conversion①\">table for cookie conversion</a>:</p>\n      <dl>\n       <dt><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-cookie-path\" id=\"ref-for-dfn-cookie-path\">Cookie path</a> \n       </dt><dd>\n        <p><var>cookie spec</var>[\"<code>path</code>\"] if it exists, otherwise \"<code>/</code>\". </p>\n       </dd><dt><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-cookie-secure-only\" id=\"ref-for-dfn-cookie-secure-only\">Cookie secure only</a> \n       </dt><dd>\n        <p><var>cookie spec</var>[\"<code>secure</code>\"] if it exists, otherwise false. </p>\n       </dd><dt><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-cookie-http-only\" id=\"ref-for-dfn-cookie-http-only\">Cookie HTTP only</a> \n       </dt><dd>\n        <p><var>cookie spec</var>[\"<code>httpOnly</code>\"] if it exists, otherwise false. </p>\n       </dd><dt><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-cookie-expiry-time\" id=\"ref-for-dfn-cookie-expiry-time\">Cookie expiry time</a> \n       </dt><dd>\n        <p><var>cookie spec</var>[\"<code>expiry</code>\"] if it exists, otherwise leave unset to\n  indicate that this is a session cookie. </p>\n       </dd><dt><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-cookie-same-site\" id=\"ref-for-dfn-cookie-same-site\">Cookie same site</a> \n       </dt><dd>\n        <p><var>cookie spec</var>[\"<code>sameSite</code>\"] if it exists, otherwise leave unset to\n  indicate that no same site policy is defined. </p>\n      </dd></dl>\n      <p>If this step is aborted without inserting a cookie into the cookie store, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧⑦\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-unable-to-set-cookie\" id=\"ref-for-errors-unable-to-set-cookie\">unable to set cookie</a>.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③②\">map</a> matching the <code>storage.SetCookieResult</code> production,\nwith the <code>partitionKey</code> field set to <var>partition key</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③③\">map</a> matching the <code>storage.SetCookieResult</code> production,\nwith the <code>partitionKey</code> field set to <var>partition key</var>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑦⑧\">success</a> with data <var>body</var>.</p>"
@@ -7890,7 +7893,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>filter</var> be the value of the <code>filter</code> field of <var>command parameters</var> if it is present or an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③③\">map</a> if it isn’t.</p>"
+          "html": "<p>Let <var>filter</var> be the value of the <code>filter</code> field of <var>command parameters</var> if it is present or an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③④\">map</a> if it isn’t.</p>"
         },
         {
           "html": "<p>Let <var>partition spec</var> be the value of the <code>partition</code> field of <var>command parameters</var> if it is present or null if it isn’t.</p>"
@@ -7914,7 +7917,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③④\">map</a> matching the <code>storage.DeleteCookiesResult</code> production,\nwith the <code>partitionKey</code> field set to <var>partition key</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③⑤\">map</a> matching the <code>storage.DeleteCookiesResult</code> production,\nwith the <code>partitionKey</code> field set to <var>partition key</var>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑦⑨\">success</a> with data <var>body</var>.</p>"
@@ -8005,14 +8008,14 @@
               "html": "<p>Let <var>serialized args</var> be a new list.</p>"
             },
             {
-              "html": "<p>Let <var>serialization options</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③⑥\">map</a> matching the <code>script.SerializationOptions</code> production with the fields set to\n their default values.</p>"
+              "html": "<p>Let <var>serialization options</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③⑦\">map</a> matching the <code>script.SerializationOptions</code> production with the fields set to\n their default values.</p>"
             },
             {
               "html": "For each <var>arg</var> of <var>args</var>:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>serialized arg</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-remote-value\" id=\"ref-for-serialize-as-a-remote-value①①\">serialize as a remote value</a> with <var>arg</var> as value, <var>serialization options</var>, <code>none</code> as\n  ownership type, a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③⑦\">map</a> as serialization internal map, <var>realm</var> and <var>session</var>.</p>"
+                  "html": "<p>Let <var>serialized arg</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-remote-value\" id=\"ref-for-serialize-as-a-remote-value①①\">serialize as a remote value</a> with <var>arg</var> as value, <var>serialization options</var>, <code>none</code> as\n  ownership type, a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③⑧\">map</a> as serialization internal map, <var>realm</var> and <var>session</var>.</p>"
                 },
                 {
                   "html": "<p>Add <var>serialized arg</var> to <var>serialized args</var>.</p>"
@@ -8026,10 +8029,10 @@
               "html": "<p>If <var>method</var> is \"<code>assert</code>\", \"<code>error</code>\",\n \"<code>trace</code>\", or \"<code>warn</code>\", let <var>stack</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#current-stack-trace\" id=\"ref-for-current-stack-trace①\">current\n stack trace</a>. Otherwise let <var>stack</var> be null.</p>"
             },
             {
-              "html": "<p>Let <var>entry</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③⑧\">map</a> matching the <code>log.ConsoleLogEntry</code> production,\n with the the <code>level</code> field set to <var>level</var>, the <code>text</code> field set to <var>text</var>, the <code>timestamp</code> field set to <var>timestamp</var>, the <code>stackTrace</code> field set to <var>stack</var> if <var>stack</var> is not null, or\n omitted otherwise, the <var>method</var> field set to <var>method</var>, the <code>source</code> field set to <var>source</var> and the <code>args</code> field set to <var>serialized\n args</var>.</p>"
+              "html": "<p>Let <var>entry</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③⑨\">map</a> matching the <code>log.ConsoleLogEntry</code> production,\n with the the <code>level</code> field set to <var>level</var>, the <code>text</code> field set to <var>text</var>, the <code>timestamp</code> field set to <var>timestamp</var>, the <code>stackTrace</code> field set to <var>stack</var> if <var>stack</var> is not null, or\n omitted otherwise, the <var>method</var> field set to <var>method</var>, the <code>source</code> field set to <var>source</var> and the <code>args</code> field set to <var>serialized\n args</var>.</p>"
             },
             {
-              "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③⑨\">map</a> matching the <code>log.EntryAdded</code> production, with\n the <code>params</code> field set to <var>entry</var>.</p>"
+              "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④⓪\">map</a> matching the <code>log.EntryAdded</code> production, with\n the <code>params</code> field set to <var>entry</var>.</p>"
             },
             {
               "html": "<p>Let <var>settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object\">current settings object</a></p>"
@@ -8062,7 +8065,7 @@
           "html": "<p>Let <var>source</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-the-source\" id=\"ref-for-get-the-source②\">get the source</a> given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm③\">current Realm Record</a>.</p>"
         },
         {
-          "html": "<p>Let <var>entry</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④⓪\">map</a> matching the <code>log.JavascriptLogEntry</code> production,\n with <code>level</code> set to \"<code>error</code>\", <code>text</code> set to <var>message</var>, <code>source</code> set to <var>source</var>, and the <code>timestamp</code> field set to <var>timestamp</var>.</p>"
+          "html": "<p>Let <var>entry</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④①\">map</a> matching the <code>log.JavascriptLogEntry</code> production,\n with <code>level</code> set to \"<code>error</code>\", <code>text</code> set to <var>message</var>, <code>source</code> set to <var>source</var>, and the <code>timestamp</code> field set to <var>timestamp</var>.</p>"
         },
         {
           "html": "<p>Let <var>related navigables</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-related-navigables\" id=\"ref-for-get-related-navigables⑨\">get related navigables</a> given <var>settings</var>.</p>"
@@ -8134,7 +8137,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>object</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④①\">map</a> matching the <code>input.ElementOrigin</code> production, return true.</p>"
+          "html": "<p>If <var>object</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④②\">map</a> matching the <code>input.ElementOrigin</code> production, return true.</p>"
         },
         {
           "html": "<p>Return false.</p>"
@@ -8404,7 +8407,7 @@
           "html": "<p>Perform implementation defined steps to install a web extension from <var>extension directory entry</var>. If this fails, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①⓪②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-invalid-web-extension\" id=\"ref-for-errors-invalid-web-extension②\">invalid web extension</a>. Otherwise let <var>extension id</var> be the unique identifier of the newly installed web extension.</p>"
         },
         {
-          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④②\">map</a> matching the <code>webExtension.InstallResult</code> production with the <code>extension</code> field set to <var>extension id</var>.</p>"
+          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④③\">map</a> matching the <code>webExtension.InstallResult</code> production with the <code>extension</code> field set to <var>extension id</var>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑧④\">success</a> with data <var>result</var>.</p>"

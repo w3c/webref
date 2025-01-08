@@ -9,7 +9,6 @@
       "http://standards.iso.org/ittf/PubliclyAvailableStandards/c038615_ISO_IEC_19757-4_2006(E).zip": {},
       "http://standards.iso.org/ittf/PubliclyAvailableStandards/c040833_ISO_IEC_19757-3_2006(E).zip": {},
       "http://standards.iso.org/ittf/PubliclyAvailableStandards/c052348_ISO_IEC_19757-2_2008(E).zip": {},
-      "http://www.iso.org/iso/catalogue_detail?csnumber=40874": {},
       "http://www.microsoft.com/typography/otspec/default.htm": {},
       "https://creativecommons.org/licenses/by-nc/2.5/": {},
       "https://daisy.org/info-help/document-archive/archived-publications/media-overlays-playback-requirements/": {},
@@ -182,16 +181,6 @@
           "dependencies"
         ]
       },
-      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-        "anchors": [
-          "the-embed-element"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/semantics.html": {
-        "anchors": [
-          "the-base-element"
-        ]
-      },
       "https://httpwg.org/specs/rfc9110.html": {},
       "https://id.loc.gov/vocabulary/relators.html": {},
       "https://idpf.github.io/epub-registries/authorities/": {},
@@ -233,8 +222,6 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "string-concatenate",
-          "strip-leading-and-trailing-ascii-whitespace",
-          "strip-and-collapse-ascii-whitespace",
           "html-namespace",
           "ascii-whitespace"
         ]
@@ -246,11 +233,9 @@
       "https://tc39.es/ecma262/multipage/": {},
       "https://url.spec.whatwg.org/": {
         "anchors": [
-          "concept-url-parser",
           "concept-base-url",
           "percent-encode",
-          "absolute-url-string",
-          "path-relative-scheme-less-url-string"
+          "absolute-url-string"
         ]
       },
       "https://www.doi.org/": {},
@@ -259,6 +244,7 @@
       "https://www.iana.org/assignments/media-types/application/zip": {},
       "https://www.iso.org/standard/22412.html": {},
       "https://www.iso.org/standard/26153.html": {},
+      "https://www.iso.org/standard/70907.html": {},
       "https://www.iso.org/standard/73163.html": {},
       "https://www.iso.org/standard/76383.html": {},
       "https://www.iso.org/standard/79110.html": {},
@@ -292,6 +278,7 @@
       },
       "https://www.unicode.org/versions/latest/": {},
       "https://www.w3.org/": {},
+      "https://www.w3.org/2002/09/wbs/myQuestionnaires": {},
       "https://www.w3.org/Graphics/GIF/spec-gif89a.txt": {},
       "https://www.w3.org/Graphics/JPEG/jfif3.pdf": {},
       "https://www.w3.org/TR/": {},
@@ -557,7 +544,7 @@
       "https://www.w3.org/policies/process/20231103/": {
         "anchors": [
           "recs-and-notes",
-          "candidate-correction",
+          "proposed-corrections",
           "allow-new-features"
         ]
       },
@@ -631,7 +618,8 @@
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
         "anchors": [
           "the-iframe-element",
-          "the-object-element"
+          "the-object-element",
+          "the-embed-element"
         ]
       },
       "https://html.spec.whatwg.org/multipage/image-maps.html": {
@@ -672,6 +660,7 @@
       },
       "https://html.spec.whatwg.org/multipage/semantics.html": {
         "anchors": [
+          "the-base-element",
           "the-html-element",
           "attr-meta-name",
           "attr-meta-content"
@@ -694,7 +683,9 @@
         "anchors": [
           "scalar-value-string",
           "list",
-          "list-prepend"
+          "list-prepend",
+          "strip-leading-and-trailing-ascii-whitespace",
+          "strip-and-collapse-ascii-whitespace"
         ]
       },
       "https://url.spec.whatwg.org/": {
@@ -708,6 +699,7 @@
           "relative-url-with-fragment-string",
           "double-dot-path-segment",
           "valid-url-string",
+          "absolute-url-string",
           "concept-domain",
           "relative-url-string"
         ]
