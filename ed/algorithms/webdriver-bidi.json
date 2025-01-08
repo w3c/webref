@@ -1222,7 +1222,7 @@
           "html": "<p>Let <var>current state</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#get-the-client-window-state\" id=\"ref-for-get-the-client-window-state\">get the client window state</a> with <var>window</var>.</p>"
         },
         {
-          "html": "<p>If <var>current state</var> is equal to <var>state</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑨\">success</a> with data null.</p>"
+          "html": "<p>If <var>current state</var> is \"<code>fullscreen</code>\", \"<code>maximized</code>\", or \"<code>minimized</code>\" and is equal to <var>state</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑨\">success</a> with data null.</p>"
         },
         {
           "html": "<p>In the following list of conditions and associated steps, run the first set of steps for which the associated condition is true:</p>\n      <dl>\n       <dt>\"<code>fullscreen</code>\" \n       </dt><dd>If not <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org/#fullscreen-is-supported\" id=\"ref-for-fullscreen-is-supported\">fullscreen is supported</a> return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑧\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑦\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation\">unsupported operation</a>. \n       </dd><dt>\"<code>normal</code>\" \n       </dt><dd>If not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#restore-client-window-is-supported\" id=\"ref-for-restore-client-window-is-supported\">restore client window is supported</a> for <var>window</var> return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation①\">unsupported operation</a>. \n       </dd><dt>\"<code>maximize</code>\" \n       </dt><dd>If not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#maximize-client-window-is-supported\" id=\"ref-for-maximize-client-window-is-supported\">maximize client window is supported</a> for <var>window</var> return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①⓪\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation②\">unsupported operation</a>. \n       </dd><dt>\"<code>minimize</code>\" \n       </dt><dd>If not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#minimize-client-window-is-supported\" id=\"ref-for-minimize-client-window-is-supported\">minimize client window is supported</a> for <var>window</var> return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⓪\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation③\">unsupported operation</a>. \n      </dd></dl>"
@@ -8059,13 +8059,19 @@
           "html": "<p>Let <var>settings</var> be <var>script</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#settings-object\" id=\"ref-for-settings-object①\">settings object</a>.</p>"
         },
         {
+          "html": "<p>Let <var>timestamp</var> be a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-time-values-and-time-range\" id=\"ref-for-sec-time-values-and-time-range③\">time value</a> representing the current date and time in UTC.</p>"
+        },
+        {
           "html": "<p>Let <var>stack</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#stack-trace-for-an-exception\" id=\"ref-for-stack-trace-for-an-exception①\">stack trace for an exception</a> with the exception\n corresponding to the error being reported.</p>"
         },
         {
           "html": "<p>Let <var>source</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#get-the-source\" id=\"ref-for-get-the-source②\">get the source</a> given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm③\">current Realm Record</a>.</p>"
         },
         {
-          "html": "<p>Let <var>entry</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④①\">map</a> matching the <code>log.JavascriptLogEntry</code> production,\n with <code>level</code> set to \"<code>error</code>\", <code>text</code> set to <var>message</var>, <code>source</code> set to <var>source</var>, and the <code>timestamp</code> field set to <var>timestamp</var>.</p>"
+          "html": "<p>Let <var>entry</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④①\">map</a> matching the <code>log.JavascriptLogEntry</code> production,\n with <code>level</code> set to \"<code>error</code>\", <code>text</code> set to <var>message</var>, <code>source</code> set to <var>source</var>, <code>timestamp</code> set to <var>timestamp</var>, and the <code>stackTrace</code> field set to <var>stack</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④②\">map</a> matching the <code>log.EntryAdded</code> production, with\n   the <code>params</code> field set to <var>entry</var>.</p>"
         },
         {
           "html": "<p>Let <var>related navigables</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#get-related-navigables\" id=\"ref-for-get-related-navigables⑨\">get related navigables</a> given <var>settings</var>.</p>"
@@ -8137,7 +8143,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>object</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④②\">map</a> matching the <code>input.ElementOrigin</code> production, return true.</p>"
+          "html": "<p>If <var>object</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④③\">map</a> matching the <code>input.ElementOrigin</code> production, return true.</p>"
         },
         {
           "html": "<p>Return false.</p>"
@@ -8407,7 +8413,7 @@
           "html": "<p>Perform implementation defined steps to install a web extension from <var>extension directory entry</var>. If this fails, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①⓪②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#errors-invalid-web-extension\" id=\"ref-for-errors-invalid-web-extension②\">invalid web extension</a>. Otherwise let <var>extension id</var> be the unique identifier of the newly installed web extension.</p>"
         },
         {
-          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④③\">map</a> matching the <code>webExtension.InstallResult</code> production with the <code>extension</code> field set to <var>extension id</var>.</p>"
+          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④④\">map</a> matching the <code>webExtension.InstallResult</code> production with the <code>extension</code> field set to <var>extension id</var>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑧④\">success</a> with data <var>result</var>.</p>"
