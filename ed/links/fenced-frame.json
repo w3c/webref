@@ -31,7 +31,6 @@
         ]
       },
       "https://github.com/WICG/fenced-frame/issues/116": {},
-      "https://github.com/WICG/fenced-frame/issues/151": {},
       "https://github.com/WICG/fenced-frame/issues/191": {},
       "https://github.com/WICG/fenced-frame/issues/192": {},
       "https://github.com/WICG/fenced-frame/issues/194": {},
@@ -223,6 +222,7 @@
         ]
       },
       "https://webidl.spec.whatwg.org/": {},
+      "https://wicg.github.io/anonymous-iframe/": {},
       "https://wicg.github.io/attribution-reporting-api/": {
         "anchors": [
           "ref-for-request-service-workers-mode"
@@ -468,6 +468,7 @@
       },
       "https://html.spec.whatwg.org/multipage/": {
         "anchors": [
+          "html-element-removing-steps",
           "immediately"
         ]
       },
@@ -562,6 +563,7 @@
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
           "concept-document-bc",
+          "node-navigable",
           "traversable-navigable",
           "browsing-context-group",
           "browsing-context",
@@ -569,10 +571,13 @@
           "nav-traversable",
           "fully-active",
           "nav-window",
-          "node-navigable",
+          "bc-traversable",
+          "nav-document",
+          "inclusive-descendant-navigables",
+          "nav-bc",
+          "destroy-a-child-navigable",
           "creating-a-new-browsing-context",
           "document-base-url",
-          "nav-document",
           "navigable",
           "child-navigable",
           "navigable-container",
@@ -584,12 +589,10 @@
           "creating-a-new-browsing-context-group",
           "nav-active-history-entry",
           "tn-session-history-entries",
-          "inclusive-descendant-navigables",
           "bcg-cross-origin-isolation",
           "cross-origin-isolation-none",
           "nav-container-document",
           "ongoing-navigation",
-          "nav-bc",
           "valid-navigable-target-name-or-keyword",
           "the-rules-for-choosing-a-navigable",
           "system-visibility-state"
@@ -639,6 +642,7 @@
         "anchors": [
           "the-iframe-element",
           "allowed-to-use",
+          "the-iframe-element:html-element-removing-steps",
           "attr-iframe-allow",
           "attr-iframe-src"
         ]
@@ -718,6 +722,7 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
+          "global-object",
           "concept-relevant-global",
           "queue-a-global-task",
           "dom-manipulation-task-source",
@@ -760,11 +765,13 @@
           "string-ends-with",
           "iteration-break",
           "ordered-set",
-          "set-append",
-          "list-contain",
           "iteration-while",
-          "list-extend",
+          "stack-pop",
           "iteration-continue",
+          "list-contain",
+          "map-clear",
+          "set-append",
+          "list-extend",
           "list-prepend",
           "set-union",
           "set-subset"
@@ -859,12 +866,12 @@
           "SameObject",
           "PutForwards",
           "this",
+          "idl-promise",
           "idl-USVString",
           "idl-undefined",
           "new",
           "datacloneerror",
           "idl-DOMException",
-          "idl-promise",
           "idl-record",
           "idl-boolean",
           "idl-sequence",
@@ -876,6 +883,11 @@
           "securityerror",
           "reject",
           "notallowederror"
+        ]
+      },
+      "https://wicg.github.io/anonymous-iframe/": {
+        "anchors": [
+          "page-credentialless-nonce"
         ]
       },
       "https://wicg.github.io/attribution-reporting-api/": {
@@ -912,6 +924,11 @@
           "name-tokens",
           "section-1",
           "boolean"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/syndata.html": {
+        "anchors": [
+          "x21"
         ]
       },
       "https://www.w3.org/TR/CSS21/visuren.html": {
