@@ -14,13 +14,13 @@
           "html": "Let <var>supportedFormats</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array-objects\" id=\"ref-for-sec-array-objects\">Array</a></code>."
         },
         {
-          "html": "If the UA does not support barcode detection, resolve <var>promise</var> with <var>supportedFormats</var> and abort these steps."
+          "html": "If the UA does not support barcode detection, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a> using the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/shape-detection-api/#shape-detection-task-source\" id=\"ref-for-shape-detection-task-source\">shape detection task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>promise</var> with <var>supportedFormats</var> and abort these steps."
         },
         {
           "html": "Enumerate the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/shape-detection-api/#enumdef-barcodeformat\" id=\"ref-for-enumdef-barcodeformat①\">BarcodeFormat</a></code>s that the UA understands as potentially detectable in images. Add these to <var>supportedFormats</var>."
         },
         {
-          "html": "Resolve <var>promise</var> with <var>supportedFormats</var>."
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a> using the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/shape-detection-api/#shape-detection-task-source\" id=\"ref-for-shape-detection-task-source①\">shape detection task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>promise</var> with <var>supportedFormats</var>."
         }
       ]
     }
