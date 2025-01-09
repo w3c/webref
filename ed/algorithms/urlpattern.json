@@ -362,7 +362,7 @@
                   "rationale": "set",
                   "steps": [
                     {
-                      "html": "<p>Set <var>baseURL</var> to the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">parsing</a> <var>baseURLString</var>.</p>"
+                      "html": "<p>Set <var>baseURL</var> to the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser\">basic URL parser</a> on <var>baseURLString</var>.</p>"
                     },
                     {
                       "html": "<p>If <var>baseURL</var> is failure, return null.</p>"
@@ -373,7 +373,7 @@
                   ]
                 },
                 {
-                  "html": "<p>Set <var>url</var> to the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser①\">parsing</a> <var>input</var> given <var>baseURL</var>.</p>"
+                  "html": "<p>Set <var>url</var> to the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①\">basic URL parser</a> on <var>input</var> with <var>baseURL</var>.</p>"
                 },
                 {
                   "html": "<p>If <var>url</var> is failure, return null.</p>"
@@ -1869,10 +1869,10 @@
             },
             {
               "html": "If <var>open token</var> is not null:",
-              "rationale": "set",
+              "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Set <var>prefix</var> be the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#consume-text\" id=\"ref-for-consume-text\">consume text</a> given <var>parser</var>.</p>"
+                  "html": "<p>Let <var>prefix</var> be the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#consume-text\" id=\"ref-for-consume-text\">consume text</a> given <var>parser</var>.</p>"
                 },
                 {
                   "html": "<p>Set <var>name token</var> to the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#try-to-consume-a-token\" id=\"ref-for-try-to-consume-a-token④\">try to consume a token</a> given <var>parser</var> and \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token-type-name\" id=\"ref-for-token-type-name⑦\"><code>name</code></a>\".</p>"
@@ -1887,7 +1887,7 @@
                   "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#consume-a-required-token\" id=\"ref-for-consume-a-required-token\">consume a required token</a> given <var>parser</var> and \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token-type-close\" id=\"ref-for-token-type-close⑥\"><code>close</code></a>\".</p>"
                 },
                 {
-                  "html": "<p>Set <var>modifier token</var> to the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#try-to-consume-a-modifier-token\" id=\"ref-for-try-to-consume-a-modifier-token①\">try to consume a modifier token</a> given <var>parser</var>.</p>"
+                  "html": "<p>Let <var>modifier token</var> be the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#try-to-consume-a-modifier-token\" id=\"ref-for-try-to-consume-a-modifier-token①\">try to consume a modifier token</a> given <var>parser</var>.</p>"
                 },
                 {
                   "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#add-a-part\" id=\"ref-for-add-a-part①\">add a part</a> given <var>parser</var>, <var>prefix</var>, <var>name token</var>, <var>regexp or wildcard token</var>, <var>suffix</var>, and <var>modifier token</var>.</p>"
@@ -2710,7 +2710,7 @@
           "html": "<p>Let <var>dummyURL</var> be a new <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL record</a>.</p>"
         },
         {
-          "html": "<p>Let <var>parseResult</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser④\">basic URL parser</a> given <var>value</var> followed by \"<code>://dummy.test</code>\", with <var>dummyURL</var> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url\">url</a></i>.</p>"
+          "html": "<p>Let <var>parseResult</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser⑥\">basic URL parser</a> given <var>value</var> followed by \"<code>://dummy.test</code>\", with <var>dummyURL</var> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url\">url</a></i>.</p>"
         },
         {
           "html": "<p>If <var>parseResult</var> is failure, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑦\">TypeError</a></code>.</p>"
@@ -2773,7 +2773,7 @@
           "html": "<p>Let <var>dummyURL</var> be a new <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑥\">URL record</a>.</p>"
         },
         {
-          "html": "<p>Let <var>parseResult</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser⑤\">basic URL parser</a> given <var>value</var> with <var>dummyURL</var> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url①\">url</a></i> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#hostname-state\" id=\"ref-for-hostname-state\">hostname state</a> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override①\">state override</a></i>.</p>"
+          "html": "<p>Let <var>parseResult</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser⑦\">basic URL parser</a> given <var>value</var> with <var>dummyURL</var> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url①\">url</a></i> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#hostname-state\" id=\"ref-for-hostname-state\">hostname state</a> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override①\">state override</a></i>.</p>"
         },
         {
           "html": "<p>If <var>parseResult</var> is failure, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑧\">TypeError</a></code>.</p>"
@@ -2825,7 +2825,7 @@
           "html": "<p>If <var>protocolValue</var> was given, then set <var>dummyURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②\">scheme</a> to <var>protocolValue</var>.</p>"
         },
         {
-          "html": "<p>Let <var>parseResult</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser⑦\">basic URL parser</a> given <var>portValue</var> with <var>dummyURL</var> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url②\">url</a></i> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#port-state\" id=\"ref-for-port-state\">port state</a> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override②\">state override</a></i>.</p>"
+          "html": "<p>Let <var>parseResult</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser⑨\">basic URL parser</a> given <var>portValue</var> with <var>dummyURL</var> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url②\">url</a></i> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#port-state\" id=\"ref-for-port-state\">port state</a> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override②\">state override</a></i>.</p>"
         },
         {
           "html": "<p>If <var>parseResult</var> is failure, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①⓪\">TypeError</a></code>.</p>"
@@ -2857,7 +2857,7 @@
           "html": "<p>Let <var>dummyURL</var> be a new <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑨\">URL record</a>.</p>"
         },
         {
-          "html": "<p>Let <var>parseResult</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser⑧\">basic URL parser</a> given <var>modified value</var> with <var>dummyURL</var> as <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url③\">url</a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#path-start-state\" id=\"ref-for-path-start-state\">path start state</a> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override③\">state override</a></i>.</p>"
+          "html": "<p>Let <var>parseResult</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①⓪\">basic URL parser</a> given <var>modified value</var> with <var>dummyURL</var> as <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url③\">url</a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#path-start-state\" id=\"ref-for-path-start-state\">path start state</a> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override③\">state override</a></i>.</p>"
         },
         {
           "html": "<p>If <var>parseResult</var> is failure, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①①\">TypeError</a></code>.</p>"
@@ -2889,7 +2889,7 @@
           "html": "<p>Set <var>dummyURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path\">path</a> to the empty string.</p>"
         },
         {
-          "html": "<p>Let <var>parseResult</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser⑨\">URL parsing</a> given <var>value</var> with <var>dummyURL</var> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url④\">url</a></i> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#cannot-be-a-base-url-path-state\" id=\"ref-for-cannot-be-a-base-url-path-state\">opaque path state</a> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override④\">state override</a></i>.</p>"
+          "html": "<p>Let <var>parseResult</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①①\">URL parsing</a> given <var>value</var> with <var>dummyURL</var> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url④\">url</a></i> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#cannot-be-a-base-url-path-state\" id=\"ref-for-cannot-be-a-base-url-path-state\">opaque path state</a> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override④\">state override</a></i>.</p>"
         },
         {
           "html": "<p>If <var>parseResult</var> is failure, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①②\">TypeError</a></code>.</p>"
@@ -2915,7 +2915,7 @@
           "html": "<p>Set <var>dummyURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query①\">query</a> to the empty string.</p>"
         },
         {
-          "html": "<p>Let <var>parseResult</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①⓪\">basic URL parser</a> given <var>value</var> with <var>dummyURL</var> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url⑤\">url</a></i> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#query-state\" id=\"ref-for-query-state\">query state</a> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override⑤\">state override</a></i>.</p>"
+          "html": "<p>Let <var>parseResult</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①②\">basic URL parser</a> given <var>value</var> with <var>dummyURL</var> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url⑤\">url</a></i> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#query-state\" id=\"ref-for-query-state\">query state</a> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override⑤\">state override</a></i>.</p>"
         },
         {
           "html": "<p>If <var>parseResult</var> is failure, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①③\">TypeError</a></code>.</p>"
@@ -2941,7 +2941,7 @@
           "html": "<p>Set <var>dummyURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment①\">fragment</a> to the empty string.</p>"
         },
         {
-          "html": "<p>Let <var>parseResult</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①①\">basic URL parser</a> given <var>value</var> with <var>dummyURL</var> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url⑥\">url</a></i> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#fragment-state\" id=\"ref-for-fragment-state\">fragment state</a> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override⑥\">state override</a></i>.</p>"
+          "html": "<p>Let <var>parseResult</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①③\">basic URL parser</a> given <var>value</var> with <var>dummyURL</var> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url⑥\">url</a></i> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#fragment-state\" id=\"ref-for-fragment-state\">fragment state</a> as <i><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override⑥\">state override</a></i>.</p>"
         },
         {
           "html": "<p>If <var>parseResult</var> is failure, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①④\">TypeError</a></code>.</p>"
@@ -2992,7 +2992,7 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>baseURL</var> to the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser②\">parsing</a> <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-baseurl\" id=\"ref-for-dom-urlpatterninit-baseurl④\">baseURL</a></code>\"].</p>"
+              "html": "<p>Set <var>baseURL</var> to the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①④\">basic URL parser</a> on <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-baseurl\" id=\"ref-for-dom-urlpatterninit-baseurl④\">baseURL</a></code>\"].</p>"
             },
             {
               "html": "<p>If <var>baseURL</var> is failure, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①⑤\">TypeError</a></code>.</p>"
@@ -3011,7 +3011,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>baseHost</var> be <var>baseURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host②\">host</a>.</p>"
+                  "html": "<p>Let <var>baseHost</var> be the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host-serializer\" id=\"ref-for-concept-host-serializer②\">serialization</a> of <var>baseURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host②\">host</a>.</p>"
                 },
                 {
                   "html": "<p>If <var>baseHost</var> is null, then set <var>baseHost</var> to the empty string.</p>"
