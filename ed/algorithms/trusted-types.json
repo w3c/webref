@@ -157,7 +157,7 @@
           "html": "<p>If <var>input</var> is an instance of <var>expectedType</var>, return stringified <var>input</var> and abort these steps.</p>"
         },
         {
-          "html": "<p>Let <var>requireTrustedTypes</var> be the result of executing <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/trusted-types/dist/spec/#abstract-opdef-does-sink-type-require-trusted-types\" id=\"ref-for-abstract-opdef-does-sink-type-require-trusted-types\">Does sink type require trusted types?</a> algorithm,\npassing <var>global</var>, and <var>sinkGroup</var>.</p>"
+          "html": "<p>Let <var>requireTrustedTypes</var> be the result of executing <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/trusted-types/dist/spec/#abstract-opdef-does-sink-type-require-trusted-types\" id=\"ref-for-abstract-opdef-does-sink-type-require-trusted-types\">Does sink type require trusted types?</a> algorithm,\npassing <var>global</var>, <var>sinkGroup</var>, and true.</p>"
         },
         {
           "html": "<p>If <var>requireTrustedTypes</var> is <code>false</code>, return stringified <var>input</var> and abort these steps.</p>"
@@ -429,12 +429,9 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global③\">global object</a> (<var>global</var>), a string (<var>sinkGroup</var>) this algorithm\nreturns <code>true</code> if the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#injection-sink\" id=\"ref-for-injection-sink②⑤\">injection sink</a> requires a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-type\" id=\"ref-for-trusted-type⑤\">Trusted Type</a>, and <code>false</code> otherwise.",
-      "rationale": "let",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global③\">global object</a> (<var>global</var>), a string (<var>sinkGroup</var>) and a boolean (<var>includeReportOnlyPolicies</var>), this algorithm\nreturns <code>true</code> if the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#injection-sink\" id=\"ref-for-injection-sink②⑤\">injection sink</a> requires a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-type\" id=\"ref-for-trusted-type⑤\">Trusted Type</a>, and <code>false</code> otherwise.",
+      "rationale": "for",
       "steps": [
-        {
-          "html": "<p>Let <var>result</var> be <code>false</code>.</p>"
-        },
         {
           "html": "For each <var>policy</var> in <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list\">CSP list</a>:",
           "rationale": "if",
@@ -449,12 +446,18 @@
               "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value③\">value</a> does not contain a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-types-sink-group\" id=\"ref-for-trusted-types-sink-group③\">trusted-types-sink-group</a> which is a match\nfor <var>sinkGroup</var>, skip to the next <var>policy</var>.</p>"
             },
             {
-              "html": "<p>Set <var>result</var> to <code>true</code>.</p>"
+              "html": "<p>Let <var>enforced</var> be true if <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition\">disposition</a> is <code>\"enforce\"</code>, and false otherwise.</p>"
+            },
+            {
+              "html": "<p>If <var>enforced</var> is true, return true.</p>"
+            },
+            {
+              "html": "<p>If <var>includeReportOnlyPolicies</var> is true, return true.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return <var>result</var>.</p>"
+          "html": "<p>Return false.</p>"
         }
       ]
     },
@@ -515,7 +518,7 @@
               "html": "<p>Execute <a href=\"https://w3c.github.io/webappsec-csp/#report-violation\">Report a violation</a> on <var>violation</var>.</p>"
             },
             {
-              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition\">disposition</a> is <code>\"enforce\"</code>, then set <var>result</var> to <code>\"Blocked\"</code>.</p>"
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①\">disposition</a> is <code>\"enforce\"</code>, then set <var>result</var> to <code>\"Blocked\"</code>.</p>"
             }
           ]
         },
@@ -569,7 +572,7 @@
               "html": "<p>Execute <a href=\"https://w3c.github.io/webappsec-csp/#report-violation\">Report a violation</a> on <var>violation</var>.</p>"
             },
             {
-              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①\">disposition</a> is <code>\"enforce\"</code>, then set <var>result</var> to <code>\"Blocked\"</code>.</p>"
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition②\">disposition</a> is <code>\"enforce\"</code>, then set <var>result</var> to <code>\"Blocked\"</code>.</p>"
             }
           ]
         },
