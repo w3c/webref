@@ -121,7 +121,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface CaptureController {\n  constructor();\n  Promise<undefined> forwardWheel(HTMLElement element);\n};",
+          "fragment": "partial interface CaptureController {\n  constructor();\n  Promise<undefined> forwardWheel(HTMLElement? element);\n};",
           "type": "interface",
           "name": "CaptureController",
           "inheritance": null,
@@ -161,7 +161,7 @@
                     "type": "argument-type",
                     "extAttrs": [],
                     "generic": "",
-                    "nullable": false,
+                    "nullable": true,
                     "union": false,
                     "idlType": "HTMLElement"
                   },
