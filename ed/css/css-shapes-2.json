@@ -166,7 +166,7 @@
         },
         {
           "name": "curve",
-          "prose": "<curve-command> = curve [ [ to <position> && with <control-point> [ / <control-point> ]? ] | [ by <coordinate-pair> && with <relative-control-point> [ / <relative-control-point> ]? ] ]",
+          "prose": "<curve-command> = curve [ [ to <position> with <control-point> [ / <control-point> ]? ] | [ by <coordinate-pair> with <relative-control-point> [ / <relative-control-point> ]? ] ]",
           "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-curve",
           "type": "value",
           "value": "curve"
@@ -179,7 +179,7 @@
         },
         {
           "name": "smooth",
-          "prose": "<smooth-command> = smooth [ [ to <position> && [with <control-point> ]? ] | [ by <coordinate-pair> && [ with <relative-control-point> ]? ] ]",
+          "prose": "<smooth-command> = smooth [ [ to <position> [with <control-point> ]? ] | [ by <coordinate-pair> [ with <relative-control-point> ]? ] ]",
           "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-smooth",
           "type": "value",
           "value": "smooth"
@@ -204,7 +204,7 @@
         },
         {
           "name": "arc",
-          "prose": "<arc-command> = arc [[<by-to> <coordinate-pair>] || [of <length-percentage>{1,2}] || <arc-sweep>? || <arc-size>?|| rotate <angle>? ]",
+          "prose": "<arc-command> = arc <command-end-point> [[of <length-percentage>{1,2}] || <arc-sweep>? || <arc-size>?|| rotate <angle>? ]",
           "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-arc",
           "type": "value",
           "value": "arc",
