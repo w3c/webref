@@ -3428,7 +3428,7 @@
               "rationale": "perform",
               "steps": [
                 {
-                  "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-controller-commit-pull-into-descriptor\" id=\"ref-for-readable-byte-stream-controller-commit-pull-into-descriptor\">ReadableByteStreamControllerCommitPullIntoDescriptor</a>(<var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream⑤\">[[stream]]</a>, <var>filledPullInto</var>).</p>"
+                  "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-controller-commit-pull-into-descriptor\" id=\"ref-for-readable-byte-stream-controller-commit-pull-into-descriptor\">ReadableByteStreamControllerCommitPullIntoDescriptor</a>(<var>stream</var>, <var>filledPullInto</var>).</p>"
                 }
               ]
             }
@@ -3515,7 +3515,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>stream</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream⑥\">[[stream]]</a>.</p>"
+          "html": "<p>Let <var>stream</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream⑤\">[[stream]]</a>.</p>"
         },
         {
           "html": "<p>If <var>stream</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-state\" id=\"ref-for-readablestream-state②⑨\">[[state]]</a> is not \"<code>readable</code>\", return.</p>"
@@ -3610,10 +3610,19 @@
               "html": "<p>Let <var>destStart</var> be <var>pullIntoDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-byte-offset\" id=\"ref-for-pull-into-descriptor-byte-offset③\">byte offset</a> + <var>pullIntoDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-bytes-filled\" id=\"ref-for-pull-into-descriptor-bytes-filled①②\">bytes filled</a>.</p>"
             },
             {
-              "html": "<p class=\"assertion\">Assert: ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#abstract-opdef-cancopydatablockbytes\" id=\"ref-for-abstract-opdef-cancopydatablockbytes\">CanCopyDataBlockBytes</a>(<var>pullIntoDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer①④\">buffer</a>, <var>destStart</var>, <var>headOfQueue</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-buffer\" id=\"ref-for-readable-byte-stream-queue-entry-buffer①\">buffer</a>, <var>headOfQueue</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-byte-offset\" id=\"ref-for-readable-byte-stream-queue-entry-byte-offset①\">byte offset</a>, <var>bytesToCopy</var>) is true.</p>\n        <p class=\"warning\">If this assertion were to fail (due to a bug in this specification or\n  its implementation), then the next step may read from or write to potentially invalid memory.\n  The user agent should always check this assertion, and stop in an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a> manner if it fails (e.g. by crashing the process, or by <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-controller-error\" id=\"ref-for-readable-byte-stream-controller-error①⓪\">erroring the stream</a>). </p>"
+              "html": "<p>Let <var>descriptorBuffer</var> be <var>pullIntoDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer①④\">buffer</a>.</p>"
             },
             {
-              "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-copydatablockbytes\" id=\"ref-for-sec-copydatablockbytes\">CopyDataBlockBytes</a>(<var>pullIntoDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer①⑤\">buffer</a>.[[ArrayBufferData]], <var>destStart</var>, <var>headOfQueue</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-buffer\" id=\"ref-for-readable-byte-stream-queue-entry-buffer②\">buffer</a>.[[ArrayBufferData]], <var>headOfQueue</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-byte-offset\" id=\"ref-for-readable-byte-stream-queue-entry-byte-offset②\">byte offset</a>, <var>bytesToCopy</var>).</p>"
+              "html": "<p>Let <var>queueBuffer</var> be <var>headOfQueue</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-buffer\" id=\"ref-for-readable-byte-stream-queue-entry-buffer①\">buffer</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>queueByteOffset</var> be <var>headOfQueue</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-byte-offset\" id=\"ref-for-readable-byte-stream-queue-entry-byte-offset①\">byte offset</a>.</p>"
+            },
+            {
+              "html": "<p class=\"assertion\">Assert: ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#abstract-opdef-cancopydatablockbytes\" id=\"ref-for-abstract-opdef-cancopydatablockbytes\">CanCopyDataBlockBytes</a>(<var>descriptorBuffer</var>, <var>destStart</var>, <var>queueBuffer</var>, <var>queueByteOffset</var>, <var>bytesToCopy</var>) is true.</p>\n        <p class=\"warning\">If this assertion were to fail (due to a bug in this specification or\n  its implementation), then the next step may read from or write to potentially invalid memory.\n  The user agent should always check this assertion, and stop in an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a> manner if it fails (e.g. by crashing the process, or by <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-controller-error\" id=\"ref-for-readable-byte-stream-controller-error①⓪\">erroring the stream</a>). </p>"
+            },
+            {
+              "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-copydatablockbytes\" id=\"ref-for-sec-copydatablockbytes\">CopyDataBlockBytes</a>(<var>descriptorBuffer</var>.[[ArrayBufferData]], <var>destStart</var>, <var>queueBuffer</var>.[[ArrayBufferData]], <var>queueByteOffset</var>, <var>bytesToCopy</var>).</p>"
             },
             {
               "html": "If <var>headOfQueue</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-byte-length\" id=\"ref-for-readable-byte-stream-queue-entry-byte-length②\">byte length</a> is <var>bytesToCopy</var>,",
@@ -3629,7 +3638,7 @@
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p>Set <var>headOfQueue</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-byte-offset\" id=\"ref-for-readable-byte-stream-queue-entry-byte-offset③\">byte offset</a> to <var>headOfQueue</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-byte-offset\" id=\"ref-for-readable-byte-stream-queue-entry-byte-offset④\">byte offset</a> + <var>bytesToCopy</var>.</p>"
+                  "html": "<p>Set <var>headOfQueue</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-byte-offset\" id=\"ref-for-readable-byte-stream-queue-entry-byte-offset②\">byte offset</a> to <var>headOfQueue</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-byte-offset\" id=\"ref-for-readable-byte-stream-queue-entry-byte-offset③\">byte offset</a> + <var>bytesToCopy</var>.</p>"
                 },
                 {
                   "html": "<p>Set <var>headOfQueue</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-byte-length\" id=\"ref-for-readable-byte-stream-queue-entry-byte-length③\">byte length</a> to <var>headOfQueue</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-byte-length\" id=\"ref-for-readable-byte-stream-queue-entry-byte-length④\">byte length</a> − <var>bytesToCopy</var>.</p>"
@@ -3689,7 +3698,7 @@
           "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-controller-handle-queue-drain\" id=\"ref-for-readable-byte-stream-controller-handle-queue-drain\">ReadableByteStreamControllerHandleQueueDrain</a>(<var>controller</var>).</p>"
         },
         {
-          "html": "<p>Let <var>view</var> be ! <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-construct\" id=\"ref-for-sec-construct③\">Construct</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects\" id=\"ref-for-sec-typedarray-objects⑤\">%Uint8Array%</a></code>, « <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-buffer\" id=\"ref-for-readable-byte-stream-queue-entry-buffer③\">buffer</a>, <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-byte-offset\" id=\"ref-for-readable-byte-stream-queue-entry-byte-offset⑤\">byte offset</a>, <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-byte-length\" id=\"ref-for-readable-byte-stream-queue-entry-byte-length⑥\">byte length</a> »).</p>"
+          "html": "<p>Let <var>view</var> be ! <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-construct\" id=\"ref-for-sec-construct③\">Construct</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects\" id=\"ref-for-sec-typedarray-objects⑤\">%Uint8Array%</a></code>, « <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-buffer\" id=\"ref-for-readable-byte-stream-queue-entry-buffer②\">buffer</a>, <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-byte-offset\" id=\"ref-for-readable-byte-stream-queue-entry-byte-offset④\">byte offset</a>, <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-byte-length\" id=\"ref-for-readable-byte-stream-queue-entry-byte-length⑥\">byte length</a> »).</p>"
         },
         {
           "html": "<p>Perform <var>readRequest</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#read-request-chunk-steps\" id=\"ref-for-read-request-chunk-steps⑥\">chunk steps</a>, given <var>view</var>.</p>"
@@ -3710,7 +3719,7 @@
               "html": "<p>Let <var>firstDescriptor</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-pendingpullintos\" id=\"ref-for-readablebytestreamcontroller-pendingpullintos①⑧\">[[pendingPullIntos]]</a>[0].</p>"
             },
             {
-              "html": "<p>Let <var>view</var> be ! <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-construct\" id=\"ref-for-sec-construct④\">Construct</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects\" id=\"ref-for-sec-typedarray-objects⑥\">%Uint8Array%</a></code>, « <var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer①⑥\">buffer</a>, <var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-byte-offset\" id=\"ref-for-pull-into-descriptor-byte-offset④\">byte offset</a> + <var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-bytes-filled\" id=\"ref-for-pull-into-descriptor-bytes-filled①⑤\">bytes filled</a>, <var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-byte-length\" id=\"ref-for-pull-into-descriptor-byte-length③\">byte length</a> − <var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-bytes-filled\" id=\"ref-for-pull-into-descriptor-bytes-filled①⑥\">bytes filled</a> »).</p>"
+              "html": "<p>Let <var>view</var> be ! <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-construct\" id=\"ref-for-sec-construct④\">Construct</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects\" id=\"ref-for-sec-typedarray-objects⑥\">%Uint8Array%</a></code>, « <var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer①⑤\">buffer</a>, <var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-byte-offset\" id=\"ref-for-pull-into-descriptor-byte-offset④\">byte offset</a> + <var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-bytes-filled\" id=\"ref-for-pull-into-descriptor-bytes-filled①⑤\">bytes filled</a>, <var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-byte-length\" id=\"ref-for-pull-into-descriptor-byte-length③\">byte length</a> − <var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-bytes-filled\" id=\"ref-for-pull-into-descriptor-bytes-filled①⑥\">bytes filled</a> »).</p>"
             },
             {
               "html": "<p>Let <var>byobRequest</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①⓪\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestreambyobrequest\" id=\"ref-for-readablestreambyobrequest⑥\">ReadableStreamBYOBRequest</a></code>.</p>"
@@ -3738,7 +3747,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>state</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream⑦\">[[stream]]</a>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-state\" id=\"ref-for-readablestream-state③⓪\">[[state]]</a>.</p>"
+          "html": "<p>Let <var>state</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream⑥\">[[stream]]</a>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-state\" id=\"ref-for-readablestream-state③⓪\">[[state]]</a>.</p>"
         },
         {
           "html": "<p>If <var>state</var> is \"<code>errored</code>\", return null.</p>"
@@ -3758,7 +3767,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream⑧\">[[stream]]</a>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-state\" id=\"ref-for-readablestream-state③①\">[[state]]</a> is\n  \"<code>readable</code>\".</p>"
+          "html": "<p class=\"assertion\">Assert: <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream⑦\">[[stream]]</a>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-state\" id=\"ref-for-readablestream-state③①\">[[state]]</a> is\n  \"<code>readable</code>\".</p>"
         },
         {
           "html": "If <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-queuetotalsize\" id=\"ref-for-readablebytestreamcontroller-queuetotalsize①③\">[[queueTotalSize]]</a> is 0 and <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-closerequested\" id=\"ref-for-readablebytestreamcontroller-closerequested⑤\">[[closeRequested]]</a> is true,",
@@ -3768,7 +3777,7 @@
               "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-controller-clear-algorithms\" id=\"ref-for-readable-byte-stream-controller-clear-algorithms③\">ReadableByteStreamControllerClearAlgorithms</a>(<var>controller</var>).</p>"
             },
             {
-              "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-stream-close\" id=\"ref-for-readable-stream-close④\">ReadableStreamClose</a>(<var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream⑨\">[[stream]]</a>).</p>"
+              "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-stream-close\" id=\"ref-for-readable-stream-close④\">ReadableStreamClose</a>(<var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream⑧\">[[stream]]</a>).</p>"
             }
           ]
         },
@@ -3851,7 +3860,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>reader</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①⓪\">[[stream]]</a>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-reader\" id=\"ref-for-readablestream-reader①⑧\">[[reader]]</a>.</p>"
+          "html": "<p>Let <var>reader</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream⑨\">[[stream]]</a>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-reader\" id=\"ref-for-readablestream-reader①⑧\">[[reader]]</a>.</p>"
         },
         {
           "html": "<p class=\"assertion\">Assert: <var>reader</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements②①\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestreamdefaultreader\" id=\"ref-for-readablestreamdefaultreader①⑦\">ReadableStreamDefaultReader</a></code>.</p>"
@@ -3883,7 +3892,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>stream</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①①\">[[stream]]</a>.</p>"
+          "html": "<p>Let <var>stream</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①⓪\">[[stream]]</a>.</p>"
         },
         {
           "html": "<p>Let <var>elementSize</var> be 1.</p>"
@@ -3937,7 +3946,7 @@
           "html": "<p>Let <var>buffer</var> be <var>bufferResult</var>.[[Value]].</p>"
         },
         {
-          "html": "<p>Let <var>pullIntoDescriptor</var> be a new <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor\" id=\"ref-for-pull-into-descriptor②\">pull-into descriptor</a> with</p>\n      <dl class=\"props\">\n       <dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer①⑦\">buffer</a> \n       </dt><dd><var>buffer</var> \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer-byte-length\" id=\"ref-for-pull-into-descriptor-buffer-byte-length①\">buffer byte length</a> \n       </dt><dd><var>buffer</var>.[[ArrayBufferByteLength]] \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-byte-offset\" id=\"ref-for-pull-into-descriptor-byte-offset⑤\">byte offset</a> \n       </dt><dd><var>byteOffset</var> \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-byte-length\" id=\"ref-for-pull-into-descriptor-byte-length④\">byte length</a> \n       </dt><dd><var>byteLength</var> \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-bytes-filled\" id=\"ref-for-pull-into-descriptor-bytes-filled①⑦\">bytes filled</a> \n       </dt><dd>0 \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-minimum-fill\" id=\"ref-for-pull-into-descriptor-minimum-fill④\">minimum fill</a> \n       </dt><dd><var>minimumFill</var> \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-element-size\" id=\"ref-for-pull-into-descriptor-element-size⑥\">element size</a> \n       </dt><dd><var>elementSize</var> \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-view-constructor\" id=\"ref-for-pull-into-descriptor-view-constructor③\">view constructor</a> \n       </dt><dd><var>ctor</var> \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-reader-type\" id=\"ref-for-pull-into-descriptor-reader-type⑧\">reader type</a> \n       </dt><dd>\"<code>byob</code>\" \n      </dd></dl>"
+          "html": "<p>Let <var>pullIntoDescriptor</var> be a new <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor\" id=\"ref-for-pull-into-descriptor②\">pull-into descriptor</a> with</p>\n      <dl class=\"props\">\n       <dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer①⑥\">buffer</a> \n       </dt><dd><var>buffer</var> \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer-byte-length\" id=\"ref-for-pull-into-descriptor-buffer-byte-length①\">buffer byte length</a> \n       </dt><dd><var>buffer</var>.[[ArrayBufferByteLength]] \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-byte-offset\" id=\"ref-for-pull-into-descriptor-byte-offset⑤\">byte offset</a> \n       </dt><dd><var>byteOffset</var> \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-byte-length\" id=\"ref-for-pull-into-descriptor-byte-length④\">byte length</a> \n       </dt><dd><var>byteLength</var> \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-bytes-filled\" id=\"ref-for-pull-into-descriptor-bytes-filled①⑦\">bytes filled</a> \n       </dt><dd>0 \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-minimum-fill\" id=\"ref-for-pull-into-descriptor-minimum-fill④\">minimum fill</a> \n       </dt><dd><var>minimumFill</var> \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-element-size\" id=\"ref-for-pull-into-descriptor-element-size⑥\">element size</a> \n       </dt><dd><var>elementSize</var> \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-view-constructor\" id=\"ref-for-pull-into-descriptor-view-constructor③\">view constructor</a> \n       </dt><dd><var>ctor</var> \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-reader-type\" id=\"ref-for-pull-into-descriptor-reader-type⑧\">reader type</a> \n       </dt><dd>\"<code>byob</code>\" \n      </dd></dl>"
         },
         {
           "html": "If <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-pendingpullintos\" id=\"ref-for-readablebytestreamcontroller-pendingpullintos②①\">[[pendingPullIntos]]</a> is not empty,",
@@ -3959,7 +3968,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>emptyView</var> be ! <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-construct\" id=\"ref-for-sec-construct⑤\">Construct</a>(<var>ctor</var>, « <var>pullIntoDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer①⑧\">buffer</a>, <var>pullIntoDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-byte-offset\" id=\"ref-for-pull-into-descriptor-byte-offset⑥\">byte offset</a>, 0 »).</p>"
+              "html": "<p>Let <var>emptyView</var> be ! <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-construct\" id=\"ref-for-sec-construct⑤\">Construct</a>(<var>ctor</var>, « <var>pullIntoDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer①⑦\">buffer</a>, <var>pullIntoDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-byte-offset\" id=\"ref-for-pull-into-descriptor-byte-offset⑥\">byte offset</a>, 0 »).</p>"
             },
             {
               "html": "<p>Perform <var>readIntoRequest</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#read-into-request-close-steps\" id=\"ref-for-read-into-request-close-steps⑤\">close steps</a>, given <var>emptyView</var>.</p>"
@@ -4035,7 +4044,7 @@
           "html": "<p>Let <var>firstDescriptor</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-pendingpullintos\" id=\"ref-for-readablebytestreamcontroller-pendingpullintos②⑤\">[[pendingPullIntos]]</a>[0].</p>"
         },
         {
-          "html": "<p>Let <var>state</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①②\">[[stream]]</a>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-state\" id=\"ref-for-readablestream-state③③\">[[state]]</a>.</p>"
+          "html": "<p>Let <var>state</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①①\">[[stream]]</a>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-state\" id=\"ref-for-readablestream-state③③\">[[state]]</a>.</p>"
         },
         {
           "html": "If <var>state</var> is \"<code>closed</code>\",",
@@ -4062,7 +4071,7 @@
           ]
         },
         {
-          "html": "<p>Set <var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer①⑨\">buffer</a> to ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#transfer-array-buffer\" id=\"ref-for-transfer-array-buffer④\">TransferArrayBuffer</a>(<var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer②⓪\">buffer</a>).</p>"
+          "html": "<p>Set <var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer①⑧\">buffer</a> to ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#transfer-array-buffer\" id=\"ref-for-transfer-array-buffer④\">TransferArrayBuffer</a>(<var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer①⑨\">buffer</a>).</p>"
         },
         {
           "html": "<p>Perform ? <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-controller-respond-internal\" id=\"ref-for-readable-byte-stream-controller-respond-internal\">ReadableByteStreamControllerRespondInternal</a>(<var>controller</var>, <var>bytesWritten</var>).</p>"
@@ -4082,7 +4091,7 @@
           "html": "<p>If <var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-reader-type\" id=\"ref-for-pull-into-descriptor-reader-type⑨\">reader type</a> is \"<code>none</code>\",\n  perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-controller-shift-pending-pull-into\" id=\"ref-for-readable-byte-stream-controller-shift-pending-pull-into③\">ReadableByteStreamControllerShiftPendingPullInto</a>(<var>controller</var>).</p>"
         },
         {
-          "html": "<p>Let <var>stream</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①③\">[[stream]]</a>.</p>"
+          "html": "<p>Let <var>stream</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①②\">[[stream]]</a>.</p>"
         },
         {
           "html": "If ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-stream-has-byob-reader\" id=\"ref-for-readable-stream-has-byob-reader③\">ReadableStreamHasBYOBReader</a>(<var>stream</var>) is true,",
@@ -4092,10 +4101,7 @@
               "html": "<p>Let <var>filledPullIntos</var> be a new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①④\">list</a>.</p>"
             },
             {
-              "html": "<p>Let <var>i</var> be 0.</p>"
-            },
-            {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-while\" id=\"ref-for-iteration-while②\">While</a> <var>i</var> &lt; ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-stream-get-num-read-into-requests\" id=\"ref-for-readable-stream-get-num-read-into-requests\">ReadableStreamGetNumReadIntoRequests</a>(<var>stream</var>),",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-while\" id=\"ref-for-iteration-while②\">While</a> <var>filledPullIntos</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a> &lt; ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-stream-get-num-read-into-requests\" id=\"ref-for-readable-stream-get-num-read-into-requests\">ReadableStreamGetNumReadIntoRequests</a>(<var>stream</var>),",
               "rationale": "let",
               "steps": [
                 {
@@ -4103,9 +4109,6 @@
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑦\">Append</a> <var>pullIntoDescriptor</var> to <var>filledPullIntos</var>.</p>"
-                },
-                {
-                  "html": "<p>Set <var>i</var> to <var>i</var> + 1.</p>"
                 }
               ]
             },
@@ -4149,7 +4152,7 @@
               "rationale": "perform",
               "steps": [
                 {
-                  "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-controller-commit-pull-into-descriptor\" id=\"ref-for-readable-byte-stream-controller-commit-pull-into-descriptor②\">ReadableByteStreamControllerCommitPullIntoDescriptor</a>(<var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①④\">[[stream]]</a>, <var>filledPullInto</var>).</p>"
+                  "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-controller-commit-pull-into-descriptor\" id=\"ref-for-readable-byte-stream-controller-commit-pull-into-descriptor②\">ReadableByteStreamControllerCommitPullIntoDescriptor</a>(<var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①③\">[[stream]]</a>, <var>filledPullInto</var>).</p>"
                 }
               ]
             },
@@ -4175,7 +4178,7 @@
               "html": "<p>Let <var>end</var> be <var>pullIntoDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-byte-offset\" id=\"ref-for-pull-into-descriptor-byte-offset⑦\">byte offset</a> + <var>pullIntoDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-bytes-filled\" id=\"ref-for-pull-into-descriptor-bytes-filled②③\">bytes filled</a>.</p>"
             },
             {
-              "html": "<p>Perform ? <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#abstract-opdef-readablebytestreamcontrollerenqueueclonedchunktoqueue\" id=\"ref-for-abstract-opdef-readablebytestreamcontrollerenqueueclonedchunktoqueue①\">ReadableByteStreamControllerEnqueueClonedChunkToQueue</a>(<var>controller</var>, <var>pullIntoDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer②①\">buffer</a>, <var>end</var> − <var>remainderSize</var>, <var>remainderSize</var>).</p>"
+              "html": "<p>Perform ? <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#abstract-opdef-readablebytestreamcontrollerenqueueclonedchunktoqueue\" id=\"ref-for-abstract-opdef-readablebytestreamcontrollerenqueueclonedchunktoqueue①\">ReadableByteStreamControllerEnqueueClonedChunkToQueue</a>(<var>controller</var>, <var>pullIntoDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer②⓪\">buffer</a>, <var>end</var> − <var>remainderSize</var>, <var>remainderSize</var>).</p>"
             }
           ]
         },
@@ -4186,14 +4189,14 @@
           "html": "<p>Let <var>filledPullIntos</var> be the result of performing\n  ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-controller-process-pull-into-descriptors-using-queue\" id=\"ref-for-readable-byte-stream-controller-process-pull-into-descriptors-using-queue②\">ReadableByteStreamControllerProcessPullIntoDescriptorsUsingQueue</a>(<var>controller</var>).</p>"
         },
         {
-          "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-controller-commit-pull-into-descriptor\" id=\"ref-for-readable-byte-stream-controller-commit-pull-into-descriptor③\">ReadableByteStreamControllerCommitPullIntoDescriptor</a>(<var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①⑤\">[[stream]]</a>, <var>pullIntoDescriptor</var>).</p>"
+          "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-controller-commit-pull-into-descriptor\" id=\"ref-for-readable-byte-stream-controller-commit-pull-into-descriptor③\">ReadableByteStreamControllerCommitPullIntoDescriptor</a>(<var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①④\">[[stream]]</a>, <var>pullIntoDescriptor</var>).</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>filledPullInto</var> of <var>filledPullIntos</var>,",
           "rationale": "perform",
           "steps": [
             {
-              "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-controller-commit-pull-into-descriptor\" id=\"ref-for-readable-byte-stream-controller-commit-pull-into-descriptor④\">ReadableByteStreamControllerCommitPullIntoDescriptor</a>(<var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①⑥\">[[stream]]</a>, <var>filledPullInto</var>).</p>"
+              "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-controller-commit-pull-into-descriptor\" id=\"ref-for-readable-byte-stream-controller-commit-pull-into-descriptor④\">ReadableByteStreamControllerCommitPullIntoDescriptor</a>(<var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①⑤\">[[stream]]</a>, <var>filledPullInto</var>).</p>"
             }
           ]
         }
@@ -4209,13 +4212,13 @@
           "html": "<p>Let <var>firstDescriptor</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-pendingpullintos\" id=\"ref-for-readablebytestreamcontroller-pendingpullintos②⑥\">[[pendingPullIntos]]</a>[0].</p>"
         },
         {
-          "html": "<p class=\"assertion\">Assert: ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#can-transfer-array-buffer\" id=\"ref-for-can-transfer-array-buffer\">CanTransferArrayBuffer</a>(<var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer②②\">buffer</a>) is true.</p>"
+          "html": "<p class=\"assertion\">Assert: ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#can-transfer-array-buffer\" id=\"ref-for-can-transfer-array-buffer\">CanTransferArrayBuffer</a>(<var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer②①\">buffer</a>) is true.</p>"
         },
         {
           "html": "<p>Perform ! <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-controller-invalidate-byob-request\" id=\"ref-for-readable-byte-stream-controller-invalidate-byob-request②\">ReadableByteStreamControllerInvalidateBYOBRequest</a>(<var>controller</var>).</p>"
         },
         {
-          "html": "<p>Let <var>state</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①⑦\">[[stream]]</a>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-state\" id=\"ref-for-readablestream-state③④\">[[state]]</a>.</p>"
+          "html": "<p>Let <var>state</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①⑥\">[[stream]]</a>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-state\" id=\"ref-for-readablestream-state③④\">[[state]]</a>.</p>"
         },
         {
           "html": "If <var>state</var> is \"<code>closed</code>\",",
@@ -4265,7 +4268,7 @@
           "html": "<p>Let <var>firstDescriptor</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-pendingpullintos\" id=\"ref-for-readablebytestreamcontroller-pendingpullintos②⑧\">[[pendingPullIntos]]</a>[0].</p>"
         },
         {
-          "html": "<p>Let <var>state</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①⑧\">[[stream]]</a>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-state\" id=\"ref-for-readablestream-state③⑤\">[[state]]</a>.</p>"
+          "html": "<p>Let <var>state</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①⑦\">[[stream]]</a>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-state\" id=\"ref-for-readablestream-state③⑤\">[[state]]</a>.</p>"
         },
         {
           "html": "If <var>state</var> is \"<code>closed</code>\",",
@@ -4301,7 +4304,7 @@
           "html": "<p>Let <var>viewByteLength</var> be <var>view</var>.[[ByteLength]].</p>"
         },
         {
-          "html": "<p>Set <var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer②③\">buffer</a> to ? <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#transfer-array-buffer\" id=\"ref-for-transfer-array-buffer⑤\">TransferArrayBuffer</a>(<var>view</var>.[[ViewedArrayBuffer]]).</p>"
+          "html": "<p>Set <var>firstDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#pull-into-descriptor-buffer\" id=\"ref-for-pull-into-descriptor-buffer②②\">buffer</a> to ? <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#transfer-array-buffer\" id=\"ref-for-transfer-array-buffer⑤\">TransferArrayBuffer</a>(<var>view</var>.[[ViewedArrayBuffer]]).</p>"
         },
         {
           "html": "<p>Perform ? <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-byte-stream-controller-respond-internal\" id=\"ref-for-readable-byte-stream-controller-respond-internal①\">ReadableByteStreamControllerRespondInternal</a>(<var>controller</var>, <var>viewByteLength</var>).</p>"
@@ -4335,7 +4338,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>stream</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①⑨\">[[stream]]</a>.</p>"
+          "html": "<p>Let <var>stream</var> be <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①⑧\">[[stream]]</a>.</p>"
         },
         {
           "html": "<p>If <var>stream</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-state\" id=\"ref-for-readablestream-state③⑥\">[[state]]</a> is not \"<code>readable</code>\", return false.</p>"
@@ -4388,7 +4391,7 @@
           ]
         },
         {
-          "html": "<p>Set <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream②⓪\">[[stream]]</a> to <var>stream</var>.</p>"
+          "html": "<p>Set <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream\" id=\"ref-for-readablebytestreamcontroller-stream①⑨\">[[stream]]</a> to <var>stream</var>.</p>"
         },
         {
           "html": "<p>Set <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-pullagain\" id=\"ref-for-readablebytestreamcontroller-pullagain④\">[[pullAgain]]</a> and <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablebytestreamcontroller-pulling\" id=\"ref-for-readablebytestreamcontroller-pulling③\">[[pulling]]</a> to false.</p>"
