@@ -143,7 +143,7 @@
     {
       "name": "masonry-fill",
       "href": "https://drafts.csswg.org/css-grid-3/#propdef-masonry-fill",
-      "value": "normal | reverse",
+      "value": "tie-start | tie-end",
       "initial": "normal",
       "appliesTo": "masonry containers",
       "inherited": "no",
@@ -153,18 +153,18 @@
       "animationType": "discrete",
       "values": [
         {
-          "name": "normal",
-          "prose": "Ties are broken by filling the startmost track",
-          "href": "https://drafts.csswg.org/css-grid-3/#valdef-masonry-fill-normal",
+          "name": "tie-start",
+          "prose": "Ties are broken by putting the item in the start-most tied position.",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-masonry-fill-tie-start",
           "type": "value",
-          "value": "normal"
+          "value": "tie-start"
         },
         {
-          "name": "reverse",
-          "prose": "Ties are broken by filling the endmost track.",
-          "href": "https://drafts.csswg.org/css-grid-3/#valdef-masonry-fill-reverse",
+          "name": "tie-end",
+          "prose": "Ties are broken by putting the item in the end-most tied position.",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-masonry-fill-tie-end",
           "type": "value",
-          "value": "reverse"
+          "value": "tie-end"
         }
       ],
       "styleDeclaration": [

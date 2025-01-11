@@ -37,6 +37,7 @@
       },
       "https://drafts.csswg.org/css-align/": {},
       "https://drafts.csswg.org/css-backgrounds/": {},
+      "https://drafts.csswg.org/css-box-3/": {},
       "https://drafts.csswg.org/css-box-4/": {},
       "https://drafts.csswg.org/css-break-4/": {
         "anchors": [
@@ -173,7 +174,8 @@
       },
       "https://www.w3.org/TR/CSS2/visuren.html": {
         "anchors": [
-          "clearance"
+          "clearance",
+          "phantom-line-box"
         ]
       },
       "https://www.w3.org/TR/CSS21/visuren.html": {
@@ -247,18 +249,22 @@
           "propdef-box-shadow"
         ]
       },
-      "https://drafts.csswg.org/css-box-4/": {
+      "https://drafts.csswg.org/css-box-3/": {
         "anchors": [
           "content-edge",
+          "margin-box",
+          "margin-edge",
+          "border-edge"
+        ]
+      },
+      "https://drafts.csswg.org/css-box-4/": {
+        "anchors": [
           "margin",
           "border",
           "padding",
           "content-box",
-          "margin-box",
           "box-box-edge",
           "content-area",
-          "margin-edge",
-          "border-edge",
           "propdef-margin"
         ]
       },
@@ -295,19 +301,23 @@
           "hebrew"
         ]
       },
+      "https://drafts.csswg.org/css-display-3/": {
+        "anchors": [
+          "inline-level-box",
+          "inline-box",
+          "containing-block",
+          "in-flow"
+        ]
+      },
       "https://drafts.csswg.org/css-display-4/": {
         "anchors": [
           "inline-level",
-          "inline-level-box",
           "block-container",
-          "inline-box",
           "atomic-inline",
           "css-text-sequence",
-          "containing-block",
           "anonymous",
           "formatting-context",
           "box-tree",
-          "in-flow",
           "replaced-element",
           "inline-block",
           "out-of-flow",
