@@ -249,6 +249,7 @@ browsingContext.BrowsingContext = text;
 browsingContext.Locator = (
    browsingContext.AccessibilityLocator /
    browsingContext.CssLocator /
+   browsingContext.ContextLocator /
    browsingContext.InnerTextLocator /
    browsingContext.XPathLocator
 )
@@ -264,6 +265,13 @@ browsingContext.AccessibilityLocator = {
 browsingContext.CssLocator = {
    type: "css",
    value: text
+}
+
+browsingContext.ContextLocator = {
+  type: "context",
+  value: {
+    context: browsingContext.BrowsingContext,
+  }
 }
 
 browsingContext.InnerTextLocator = {
