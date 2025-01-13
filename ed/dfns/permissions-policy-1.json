@@ -1108,6 +1108,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-permissionspolicyviolationreportbody-allowattribute",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#dom-permissionspolicyviolationreportbody-allowattribute",
+      "linkingText": [
+        "allowAttribute"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PermissionsPolicyViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-permissions-policy/#reporting",
+        "title": "Reporting",
+        "number": "8"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "permissionspolicyviolationreportbody-featureid",
       "href": "https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-featureid",
       "linkingText": [
@@ -1196,6 +1217,27 @@
       "href": "https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-disposition",
       "linkingText": [
         "disposition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PermissionsPolicyViolationReportBody"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-permissions-policy/#reporting",
+        "title": "Reporting",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "permissionspolicyviolationreportbody-allowattribute",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-allowattribute",
+      "linkingText": [
+        "allowAttribute"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1441,6 +1483,25 @@
       "definedIn": "heading"
     },
     {
+      "id": "check-potential-violation-in-container",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#check-potential-violation-in-container",
+      "linkingText": [
+        "Check potential violation of permissions policy in container"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algo-check-potential-violation-in-container",
+        "href": "https://w3c.github.io/webappsec-permissions-policy/#algo-check-potential-violation-in-container",
+        "title": "Check potential violation of permissions policy in container",
+        "number": "9.12"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "report-permissions-policy-violation",
       "href": "https://w3c.github.io/webappsec-permissions-policy/#report-permissions-policy-violation",
       "linkingText": [
@@ -1455,7 +1516,26 @@
         "id": "algo-report-permissions-policy-violation",
         "href": "https://w3c.github.io/webappsec-permissions-policy/#algo-report-permissions-policy-violation",
         "title": "Generate report for violation of permissions policy on settings",
-        "number": "9.12"
+        "number": "9.13"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "report-potential-permissions-policy-violation",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#report-potential-permissions-policy-violation",
+      "linkingText": [
+        "Generate report for potential violation of permissions policy on settings"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algo-report-potential-permissions-policy-violation",
+        "href": "https://w3c.github.io/webappsec-permissions-policy/#algo-report-potential-permissions-policy-violation",
+        "title": "Generate report for potential violation of permissions policy on settings",
+        "number": "9.14"
       },
       "definedIn": "heading"
     },
@@ -1474,7 +1554,7 @@
         "id": "algo-should-request-be-allowed-to-use-feature",
         "href": "https://w3c.github.io/webappsec-permissions-policy/#algo-should-request-be-allowed-to-use-feature",
         "title": "Should request be allowed to use feature?",
-        "number": "9.13"
+        "number": "9.15"
       },
       "definedIn": "heading"
     },
