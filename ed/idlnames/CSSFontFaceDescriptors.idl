@@ -1,4 +1,4 @@
-// Source: CSS Fonts Module Level 4 (https://www.w3.org/TR/css-fonts-4/)
+// Source: CSS Fonts Module Level 5 (https://www.w3.org/TR/css-fonts-5/)
 [Exposed=Window]
 interface CSSFontFaceDescriptors : CSSStyleDeclaration {
   attribute [LegacyNullToEmptyString] CSSOMString src;
@@ -12,6 +12,10 @@ interface CSSFontFaceDescriptors : CSSStyleDeclaration {
   attribute [LegacyNullToEmptyString] CSSOMString font-stretch;
   attribute [LegacyNullToEmptyString] CSSOMString fontWidth;
   attribute [LegacyNullToEmptyString] CSSOMString font-width;
+  attribute [LegacyNullToEmptyString] CSSOMString fontSize;
+  attribute [LegacyNullToEmptyString] CSSOMString font-size;
+  attribute [LegacyNullToEmptyString] CSSOMString sizeAdjust;
+  attribute [LegacyNullToEmptyString] CSSOMString size-adjust;
   attribute [LegacyNullToEmptyString] CSSOMString unicodeRange;
   attribute [LegacyNullToEmptyString] CSSOMString unicode-range;
   attribute [LegacyNullToEmptyString] CSSOMString fontFeatureSettings;
@@ -30,4 +34,12 @@ interface CSSFontFaceDescriptors : CSSStyleDeclaration {
   attribute [LegacyNullToEmptyString] CSSOMString descent-override;
   attribute [LegacyNullToEmptyString] CSSOMString lineGapOverride;
   attribute [LegacyNullToEmptyString] CSSOMString line-gap-override;
+  attribute [LegacyNullToEmptyString] CSSOMString superscriptPositionOverride;
+  attribute [LegacyNullToEmptyString] CSSOMString superscript-position-override;
+  attribute [LegacyNullToEmptyString] CSSOMString subscriptPositionOverride;
+  attribute [LegacyNullToEmptyString] CSSOMString subscript-position-override;
+  attribute [LegacyNullToEmptyString] CSSOMString superscriptSizeOverride;
+  attribute [LegacyNullToEmptyString] CSSOMString superscript-size-override;
+  attribute [LegacyNullToEmptyString] CSSOMString subscriptSizeOverride;
+  attribute [LegacyNullToEmptyString] CSSOMString subscript-size-override;
 };
