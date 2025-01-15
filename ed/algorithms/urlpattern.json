@@ -3011,10 +3011,10 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>baseHost</var> be the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host-serializer\" id=\"ref-for-concept-host-serializer②\">serialization</a> of <var>baseURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host②\">host</a>.</p>"
+                  "html": "<p>Let <var>baseHost</var> be the empty string.</p>"
                 },
                 {
-                  "html": "<p>If <var>baseHost</var> is null, then set <var>baseHost</var> to the empty string.</p>"
+                  "html": "<p>If <var>baseURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host②\">host</a> is not null, then set <var>baseHost</var> to its <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host-serializer\" id=\"ref-for-concept-host-serializer②\">serialization</a>.</p>"
                 },
                 {
                   "html": "<p>Set <var>result</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-hostname\" id=\"ref-for-dom-urlpatterninit-hostname①②\">hostname</a></code>\"] to the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#process-a-base-url-string\" id=\"ref-for-process-a-base-url-string③\">processing a base URL string</a> given <var>baseHost</var> and <var>type</var>.</p>"
