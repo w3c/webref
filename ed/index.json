@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-01-15T12:48:57.542Z",
+  "date": "2025-01-15T18:40:00.410Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -683,7 +683,7 @@
   },
   "stats": {
     "crawled": 651,
-    "errors": 1
+    "errors": 2
   },
   "crawler": "reffy-18.1.2",
   "results": [
@@ -1926,7 +1926,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-env-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 14 Jan 2025 22:44:01 GMT"
+        "lastModified": "Tue, 14 Jan 2025 22:44:02 GMT"
       },
       "generator": "bikeshed",
       "date": "30 August 2024",
@@ -3852,11 +3852,11 @@
       ],
       "crawled": "https://patcg-individual-drafts.github.io/private-aggregation-api/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 04 Nov 2024 15:41:58 GMT"
+        "lastModified": "Wed, 15 Jan 2025 18:03:28 GMT"
       },
       "generator": "bikeshed",
-      "date": "4 November 2024",
-      "revision": "fee8a42a1045bbd618a6f0baa1b8a8a6b52b2b87",
+      "date": "15 January 2025",
+      "revision": "3433a3e8ff358e3b93a3b57b31ce63204bf8afb4",
       "algorithms": "algorithms/private-aggregation-api.json",
       "links": "links/private-aggregation-api.json",
       "refs": "refs/private-aggregation-api.json",
@@ -8332,11 +8332,11 @@
       ],
       "crawled": "https://urlpattern.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 09 Jan 2025 15:47:52 GMT"
+        "lastModified": "Wed, 15 Jan 2025 16:16:57 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 January 2025",
-      "revision": "7564e2d518aa12c6f38f2987763b13e055164f03",
+      "date": "15 January 2025",
+      "revision": "aa430641f0ed3125b18576f991b14bcad5000591",
       "algorithms": "algorithms/urlpattern.json",
       "links": "links/urlpattern.json",
       "refs": "refs/urlpattern.json",
@@ -23971,7 +23971,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-transforms-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 14 Jan 2025 22:44:01 GMT"
+        "lastModified": "Tue, 14 Jan 2025 22:44:02 GMT"
       },
       "generator": "bikeshed",
       "date": "3 April 2024",
@@ -24248,7 +24248,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-ui-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 14 Jan 2025 22:44:01 GMT"
+        "lastModified": "Tue, 14 Jan 2025 22:44:02 GMT"
       },
       "generator": "bikeshed",
       "date": "27 February 2023",
@@ -28243,10 +28243,10 @@
       ],
       "crawled": "https://w3c.github.io/json-ld-api/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 14 Dec 2024 02:42:35 GMT"
+        "lastModified": "Wed, 15 Jan 2025 17:47:04 GMT"
       },
       "generator": "respec",
-      "date": "14 December 2024",
+      "date": "15 January 2025",
       "algorithms": "algorithms/json-ld11-api.json",
       "links": "links/json-ld11-api.json",
       "refs": "refs/json-ld11-api.json",
@@ -38126,7 +38126,8 @@
       "dfns": "dfns/webxr-hand-input-1.json",
       "headings": "headings/webxr-hand-input-1.json",
       "ids": "ids/webxr-hand-input-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://immersive-web.github.io/webxr-hand-input/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 632)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/webxr-hit-test-1/",
