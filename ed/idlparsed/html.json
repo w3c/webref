@@ -15383,7 +15383,7 @@
         "href": "https://html.spec.whatwg.org/multipage/interactive-elements.html#htmldetailselement"
       },
       "HTMLDialogElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLDialogElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute boolean open;\n  attribute DOMString returnValue;\n  [CEReactions] undefined show();\n  [CEReactions] undefined showModal();\n  [CEReactions] undefined close(optional DOMString returnValue);\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLDialogElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute boolean open;\n  attribute DOMString returnValue;\n  [CEReactions] attribute DOMString closedBy;\n  [CEReactions] undefined show();\n  [CEReactions] undefined showModal();\n  [CEReactions] undefined close(optional DOMString returnValue);\n  [CEReactions] undefined requestClose(optional DOMString returnValue);\n};",
         "type": "interface",
         "name": "HTMLDialogElement",
         "inheritance": "HTMLElement",
@@ -15438,6 +15438,29 @@
             "special": "",
             "readonly": false,
             "href": "https://html.spec.whatwg.org/multipage/interactive-elements.html#dom-dialog-returnvalue"
+          },
+          {
+            "type": "attribute",
+            "name": "closedBy",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false,
+            "href": "https://html.spec.whatwg.org/multipage/interactive-elements.html#dom-dialog-closedby"
           },
           {
             "type": "operation",
@@ -15524,6 +15547,46 @@
             ],
             "special": "",
             "href": "https://html.spec.whatwg.org/multipage/interactive-elements.html#dom-dialog-close"
+          },
+          {
+            "type": "operation",
+            "name": "requestClose",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "returnValue",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "href": "https://html.spec.whatwg.org/multipage/interactive-elements.html#dom-dialog-requestclose"
           }
         ],
         "extAttrs": [
