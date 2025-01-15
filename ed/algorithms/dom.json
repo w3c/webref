@@ -17,7 +17,7 @@
           "html": "<p>Let <var>tokens</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">ordered set</a>. </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>token</var> in <var>inputTokens</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">append</a> <var>token</var> to <var>tokens</var>. </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>token</var> of <var>inputTokens</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">append</a> <var>token</var> to <var>tokens</var>. </p>"
         },
         {
           "html": "Return <var>tokens</var>."
@@ -332,7 +332,7 @@
           "html": "<p>Initialize <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-timestamp\" id=\"ref-for-dom-event-timestamp②\">timeStamp</a></code> attribute to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-relative-high-resolution-coarse-time\" id=\"ref-for-dfn-relative-high-resolution-coarse-time\">relative high resolution coarse time</a> given <var>time</var> and <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>. </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>member</var> → <var>value</var> in <var>dictionary</var>, if <var>event</var> has an attribute whose <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier\">identifier</a> is <var>member</var>, then\n initialize that attribute to <var>value</var>. </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>member</var> → <var>value</var> of <var>dictionary</var>, if <var>event</var> has an attribute whose <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier\">identifier</a> is <var>member</var>, then\n initialize that attribute to <var>value</var>. </p>"
         },
         {
           "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-constructor-ext\" id=\"ref-for-concept-event-constructor-ext\">event constructing steps</a> with <var>event</var> and <var>dictionary</var>. </p>"
@@ -544,6 +544,9 @@
           "html": "<p>Let <var>relatedTarget</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#retarget\" id=\"ref-for-retarget\">retargeting</a> <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-relatedtarget\" id=\"ref-for-event-relatedtarget①\">relatedTarget</a> against <var>target</var>. </p>"
         },
         {
+          "html": "<p>Let <var>clearTargets</var> be false. </p>"
+        },
+        {
           "html": "If <var>target</var> is not <var>relatedTarget</var> or <var>target</var> is <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-relatedtarget\" id=\"ref-for-event-relatedtarget②\">relatedTarget</a>:",
           "rationale": "let",
           "steps": [
@@ -644,13 +647,13 @@
               "html": "<p>Let <var>clearTargetsStruct</var> be the last struct in <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path\" id=\"ref-for-event-path④\">path</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path-shadow-adjusted-target\" id=\"ref-for-event-path-shadow-adjusted-target\">shadow-adjusted target</a> is non-null. </p>"
             },
             {
-              "html": "<p>Let <var>clearTargets</var> be true if <var>clearTargetsStruct</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path-shadow-adjusted-target\" id=\"ref-for-event-path-shadow-adjusted-target①\">shadow-adjusted target</a>, <var>clearTargetsStruct</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path-relatedtarget\" id=\"ref-for-event-path-relatedtarget\">relatedTarget</a>, or an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#eventtarget\" id=\"ref-for-eventtarget②②\">EventTarget</a></code> object in <var>clearTargetsStruct</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path-touch-target-list\" id=\"ref-for-event-path-touch-target-list\">touch target list</a> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node⑦\">node</a> and its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root⑥\">root</a> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-root\" id=\"ref-for-concept-shadow-root③\">shadow root</a>; otherwise false. </p>"
+              "html": "<p>If <var>clearTargetsStruct</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path-shadow-adjusted-target\" id=\"ref-for-event-path-shadow-adjusted-target①\">shadow-adjusted target</a>, <var>clearTargetsStruct</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path-relatedtarget\" id=\"ref-for-event-path-relatedtarget\">relatedTarget</a>, or an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#eventtarget\" id=\"ref-for-eventtarget②②\">EventTarget</a></code> object\n   in <var>clearTargetsStruct</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path-touch-target-list\" id=\"ref-for-event-path-touch-target-list\">touch target list</a> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node⑦\">node</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root⑥\">root</a> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-root\" id=\"ref-for-concept-shadow-root③\">shadow root</a>: set <var>clearTargets</var> to true. </p>"
             },
             {
               "html": "<p>If <var>activationTarget</var> is non-null and <var>activationTarget</var> has <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#eventtarget-legacy-pre-activation-behavior\" id=\"ref-for-eventtarget-legacy-pre-activation-behavior①\">legacy-pre-activation behavior</a>, then run <var>activationTarget</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#eventtarget-legacy-pre-activation-behavior\" id=\"ref-for-eventtarget-legacy-pre-activation-behavior②\">legacy-pre-activation behavior</a>. </p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>struct</var> in <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path\" id=\"ref-for-event-path⑤\">path</a>, in\n    reverse order:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>struct</var> of <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path\" id=\"ref-for-event-path⑤\">path</a>, in\n    reverse order:",
               "rationale": "if",
               "steps": [
                 {
@@ -665,7 +668,7 @@
               ]
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>struct</var> in <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path\" id=\"ref-for-event-path⑥\">path</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>struct</var> of <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path\" id=\"ref-for-event-path⑥\">path</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -817,7 +820,7 @@
           "html": "<p>Let <var>found</var> be false. </p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>listener</var> in <var>listeners</var>, whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-removed\" id=\"ref-for-event-listener-removed②\">removed</a> is false:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>listener</var> of <var>listeners</var>, whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-removed\" id=\"ref-for-event-listener-removed②\">removed</a> is false:",
           "rationale": "if",
           "steps": [
             {
@@ -2647,7 +2650,7 @@
               "rationale": "for",
               "steps": [
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑤\">For each</a> <var>attr</var> in <var>node2</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute④\">attribute list</a>:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑤\">For each</a> <var>attr</var> of <var>node2</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute④\">attribute list</a>:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -4093,7 +4096,7 @@
           "html": "<p>Let <var>names</var> be the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute-qualified-name\" id=\"ref-for-concept-attribute-qualified-name①②\">qualified names</a> of the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute\" id=\"ref-for-concept-attribute⑤⑨\">attributes</a> in this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#namednodemap\" id=\"ref-for-namednodemap⑧\">NamedNodeMap</a></code> object’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-namednodemap-attribute\" id=\"ref-for-concept-namednodemap-attribute⑤\">attribute list</a>, with duplicates omitted, in\n order. </p>"
         },
         {
-          "html": "If this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#namednodemap\" id=\"ref-for-namednodemap⑨\">NamedNodeMap</a></code> object’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-namednodemap-element\" id=\"ref-for-concept-namednodemap-element①\">element</a> is in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#html-namespace\" id=\"ref-for-html-namespace②⑨\">HTML namespace</a> and its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑥④\">node document</a> is an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#html-document\" id=\"ref-for-html-document①⑥\">HTML document</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑥\">for each</a> <var>name</var> in <var>names</var>:",
+          "html": "If this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#namednodemap\" id=\"ref-for-namednodemap⑨\">NamedNodeMap</a></code> object’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-namednodemap-element\" id=\"ref-for-concept-namednodemap-element①\">element</a> is in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#html-namespace\" id=\"ref-for-html-namespace②⑨\">HTML namespace</a> and its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑥④\">node document</a> is an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#html-document\" id=\"ref-for-html-document①⑥\">HTML document</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑥\">for each</a> <var>name</var> of <var>names</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -5577,7 +5580,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑦\">For each</a> <var>token</var> in <var>tokens</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑦\">For each</a> <var>token</var> of <var>tokens</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -5589,7 +5592,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑧\">For each</a> <var>token</var> in <var>tokens</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append⑨\">append</a> <var>token</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①①\">token set</a>. </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑧\">For each</a> <var>token</var> of <var>tokens</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append⑨\">append</a> <var>token</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①①\">token set</a>. </p>"
         },
         {
           "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-update\" id=\"ref-for-concept-dtl-update\">update steps</a>. </p>"
@@ -5603,7 +5606,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑨\">For each</a> <var>token</var> in <var>tokens</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑨\">For each</a> <var>token</var> of <var>tokens</var>:",
           "rationale": "if",
           "steps": [
             {
