@@ -511,7 +511,15 @@
       "prose": "The attr() function substitutes the value of an attribute on an element into a property, similar to how the var() function substitutes a custom property value into a function.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-attr",
       "type": "function",
-      "value": "attr( <attr-name> <attr-type>? , <declaration-value>?)"
+      "value": "attr( <attr-name> <attr-type>? , <declaration-value>?)",
+      "values": [
+        {
+          "name": "type()",
+          "value": "type( <syntax> )",
+          "href": "https://drafts.csswg.org/css-values-5/#funcdef-attr-type",
+          "type": "function"
+        }
+      ]
     },
     {
       "name": "<attr-name>",
@@ -530,6 +538,19 @@
       "prose": "The <attr-unit> production matches any identifier that is an ASCII case-insensitive match for the name of a CSS dimension unit, such as px, or the <delim-token> %. It is not expanded literally here, as the set of units expands over time.",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-attr-unit",
       "type": "type"
+    },
+    {
+      "name": "ident()",
+      "prose": "The ident() function is an arbitrary substitution function that can be used to manually construct <custom-ident> values from several parts.",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-ident",
+      "type": "function",
+      "value": "ident( <ident-arg>+ )"
+    },
+    {
+      "name": "<ident-arg>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-ident-arg",
+      "type": "type",
+      "value": "<string> | <integer> | <ident>"
     },
     {
       "name": "random()",
@@ -599,6 +620,12 @@
     }
   ],
   "warnings": [
+    {
+      "msg": "Duplicate definition",
+      "name": "ident()",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-ident%E2%91%A0",
+      "type": "function"
+    },
     {
       "msg": "Missing definition",
       "name": "]>",
