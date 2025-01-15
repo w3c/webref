@@ -1,0 +1,29 @@
+{
+  "name": "CSSFunctionDescriptors",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Functions and Mixins Module",
+      "url": "https://drafts.csswg.org/css-mixins-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface CSSFunctionDescriptors : CSSStyleDeclaration {\n  attribute [LegacyNullToEmptyString] CSSOMString result;\n};",
+    "href": "https://drafts.csswg.org/css-mixins-1/#cssfunctiondescriptors"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "CSSStyleDeclaration",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "CSS Object Model (CSSOM)",
+        "url": "https://www.w3.org/TR/cssom-1/"
+      },
+      "fragment": "[Exposed=Window]\ninterface CSSStyleDeclaration {\n  [CEReactions] attribute CSSOMString cssText;\n  readonly attribute unsigned long length;\n  getter CSSOMString item(unsigned long index);\n  CSSOMString getPropertyValue(CSSOMString property);\n  CSSOMString getPropertyPriority(CSSOMString property);\n  [CEReactions] undefined setProperty(CSSOMString property, [LegacyNullToEmptyString] CSSOMString value, optional [LegacyNullToEmptyString] CSSOMString priority = \"\");\n  [CEReactions] CSSOMString removeProperty(CSSOMString property);\n  readonly attribute CSSRule? parentRule;\n};",
+      "href": "https://drafts.csswg.org/cssom-1/#cssstyledeclaration"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

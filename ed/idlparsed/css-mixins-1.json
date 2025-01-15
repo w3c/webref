@@ -8,7 +8,9 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "CSSFunctionRule"
+          "CSSFunctionRule",
+          "CSSFunctionDescriptors",
+          "CSSFunctionDeclarations"
         ]
       }
     },
@@ -32,22 +34,132 @@
         ],
         "partial": false,
         "href": "https://drafts.csswg.org/css-mixins-1/#cssfunctionrule"
+      },
+      "CSSFunctionDescriptors": {
+        "fragment": "[Exposed=Window]\ninterface CSSFunctionDescriptors : CSSStyleDeclaration {\n  attribute [LegacyNullToEmptyString] CSSOMString result;\n};",
+        "type": "interface",
+        "name": "CSSFunctionDescriptors",
+        "inheritance": "CSSStyleDeclaration",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "result",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyNullToEmptyString",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-mixins-1/#dom-cssfunctiondescriptors-result"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-mixins-1/#cssfunctiondescriptors"
+      },
+      "CSSFunctionDeclarations": {
+        "fragment": "[Exposed=Window]\ninterface CSSFunctionDeclarations : CSSRule {\n  [SameObject, PutForwards=cssText] readonly attribute CSSFunctionDescriptors style;\n};",
+        "type": "interface",
+        "name": "CSSFunctionDeclarations",
+        "inheritance": "CSSRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "style",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSFunctionDescriptors"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "PutForwards",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "cssText"
+                },
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-mixins-1/#dom-cssfunctiondeclarations-style"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-mixins-1/#cssfunctiondeclarations"
       }
     },
     "idlExtendedNames": {},
     "globals": {},
     "exposed": {
       "Window": [
-        "CSSFunctionRule"
+        "CSSFunctionRule",
+        "CSSFunctionDescriptors",
+        "CSSFunctionDeclarations"
       ]
     },
     "dependencies": {
       "CSSFunctionRule": [
         "CSSGroupingRule"
+      ],
+      "CSSFunctionDescriptors": [
+        "CSSStyleDeclaration",
+        "CSSOMString"
+      ],
+      "CSSFunctionDeclarations": [
+        "CSSRule",
+        "CSSFunctionDescriptors"
       ]
     },
     "externalDependencies": [
-      "CSSGroupingRule"
+      "CSSGroupingRule",
+      "CSSStyleDeclaration",
+      "CSSOMString",
+      "CSSRule"
     ],
     "hasObsoleteIdl": false
   }

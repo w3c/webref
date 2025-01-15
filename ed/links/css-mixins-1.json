@@ -32,13 +32,16 @@
           "processing"
         ]
       },
-      "https://drafts.csswg.org/css-env-1/": {},
-      "https://drafts.csswg.org/css-images-4/": {},
       "https://drafts.csswg.org/css-nesting/": {},
       "https://drafts.csswg.org/css-scoping/": {},
       "https://drafts.csswg.org/css-syntax/": {},
       "https://drafts.csswg.org/css-values-4/": {},
       "https://drafts.csswg.org/css-values-5/": {},
+      "https://drafts.csswg.org/css-variables-1/": {
+        "anchors": [
+          "cycles"
+        ]
+      },
       "https://drafts.csswg.org/css-variables-2/": {},
       "https://drafts.csswg.org/css-variables/": {},
       "https://drafts.csswg.org/cssom/": {},
@@ -64,16 +67,6 @@
           "at-ruledef-media"
         ]
       },
-      "https://drafts.csswg.org/css-env-1/": {
-        "anchors": [
-          "funcdef-env"
-        ]
-      },
-      "https://drafts.csswg.org/css-images-4/": {
-        "anchors": [
-          "funcdef-image-set-type"
-        ]
-      },
       "https://drafts.csswg.org/css-nesting-1/": {
         "anchors": [
           "nested-group-rules",
@@ -90,13 +83,14 @@
         "anchors": [
           "typedef-declaration-rule-list",
           "typedef-declaration-value",
-          "css-descriptor"
+          "typedef-function-token",
+          "css-descriptor",
+          "declaration"
         ]
       },
       "https://drafts.csswg.org/css-values-4/": {
         "anchors": [
           "mult-opt",
-          "typedef-dashed-ident",
           "mult-comma",
           "comb-one",
           "functional-notation",
@@ -108,8 +102,10 @@
           "typedef-syntax-component",
           "typedef-syntax",
           "typedef-syntax-combinator",
-          "funcdef-attr",
-          "invalid-at-computed-value-time"
+          "invalid-at-computed-value-time",
+          "substitute-arbitrary-substitution-function",
+          "arbitrary-substitution-function",
+          "comma-containing-productions"
         ]
       },
       "https://drafts.csswg.org/css-variables-2/": {
@@ -123,7 +119,17 @@
       "https://drafts.csswg.org/cssom-1/": {
         "anchors": [
           "cssgroupingrule",
-          "cssstyledeclaration"
+          "cssstyledeclaration",
+          "cssomstring",
+          "cssrule",
+          "cssstyledeclaration-computed-flag",
+          "cssstyledeclaration-readonly-flag",
+          "concept-declarations-specified-order",
+          "cssstyledeclaration-parent-css-rule",
+          "cssstyledeclaration-owner-node",
+          "serialize-a-css-rule",
+          "css-declaration-block",
+          "serialize-a-css-declaration-block"
         ]
       },
       "https://infra.spec.whatwg.org/": {
@@ -133,7 +139,11 @@
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
-          "Exposed"
+          "Exposed",
+          "LegacyNullToEmptyString",
+          "SameObject",
+          "PutForwards",
+          "this"
         ]
       }
     }
