@@ -1370,6 +1370,20 @@
       "number": "12.3.1.1.13"
     },
     {
+      "id": "subgroup-invocation-id-builtin-value",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroup-invocation-id-builtin-value",
+      "level": 6,
+      "title": "subgroup_invocation_id",
+      "number": "12.3.1.1.14"
+    },
+    {
+      "id": "subgroup-size-builtin-value",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroup-size-builtin-value",
+      "level": 6,
+      "title": "subgroup_size",
+      "number": "12.3.1.1.15"
+    },
+    {
       "id": "user-defined-inputs-outputs",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#user-defined-inputs-outputs",
       "level": 5,
@@ -1662,95 +1676,116 @@
       "number": "14.4"
     },
     {
+      "id": "subgroups",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroups",
+      "level": 3,
+      "title": "Subgroups",
+      "number": "14.5"
+    },
+    {
       "id": "collective-operations",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#collective-operations",
       "level": 3,
       "title": "Collective Operations",
-      "number": "14.5"
+      "number": "14.6"
     },
     {
       "id": "barrier",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#barrier",
       "level": 4,
       "title": "Barriers",
-      "number": "14.5.1"
+      "number": "14.6.1"
     },
     {
       "id": "derivatives",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#derivatives",
       "level": 4,
       "title": "Derivatives",
-      "number": "14.5.2"
+      "number": "14.6.2"
+    },
+    {
+      "id": "subgroup-ops",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroup-ops",
+      "level": 4,
+      "title": "Subgroup Operations",
+      "number": "14.6.3"
+    },
+    {
+      "id": "quad-ops",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#quad-ops",
+      "level": 4,
+      "title": "Quad Operations",
+      "number": "14.6.4"
     },
     {
       "id": "floating-point-evaluation",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#floating-point-evaluation",
       "level": 3,
       "title": "Floating Point Evaluation",
-      "number": "14.6"
+      "number": "14.7"
     },
     {
       "id": "overview-of-ieee-754",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#overview-of-ieee-754",
       "level": 4,
       "title": "Overview of IEEE-754",
-      "number": "14.6.1"
+      "number": "14.7.1"
     },
     {
       "id": "differences-from-ieee754",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#differences-from-ieee754",
       "level": 4,
       "title": "Differences from IEEE-754",
-      "number": "14.6.2"
+      "number": "14.7.2"
     },
     {
       "id": "floating-point-rounding-and-overflow",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#floating-point-rounding-and-overflow",
       "level": 4,
       "title": "Floating Point Rounding and Overflow",
-      "number": "14.6.3"
+      "number": "14.7.3"
     },
     {
       "id": "floating-point-accuracy",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#floating-point-accuracy",
       "level": 4,
       "title": "Floating Point Accuracy",
-      "number": "14.6.4"
+      "number": "14.7.4"
     },
     {
       "id": "concrete-float-accuracy",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#concrete-float-accuracy",
       "level": 5,
       "title": "Accuracy of Concrete Floating Point Expressions",
-      "number": "14.6.4.1"
+      "number": "14.7.4.1"
     },
     {
       "id": "abstract-float-accuracy",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#abstract-float-accuracy",
       "level": 5,
       "title": "Accuracy of AbstractFloat Expressions",
-      "number": "14.6.4.2"
+      "number": "14.7.4.2"
     },
     {
       "id": "reassociation-and-fusion",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#reassociation-and-fusion",
       "level": 4,
       "title": "Reassociation and Fusion",
-      "number": "14.6.5"
+      "number": "14.7.5"
     },
     {
       "id": "floating-point-conversion",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#floating-point-conversion",
       "level": 4,
       "title": "Floating Point Conversion",
-      "number": "14.6.6"
+      "number": "14.7.6"
     },
     {
       "id": "domains-of-floating-point-expressions-and-builtins",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#domains-of-floating-point-expressions-and-builtins",
       "level": 4,
       "title": "Domains of Floating Point Expressions and Built-in Functions",
-      "number": "14.6.7"
+      "number": "14.7.7"
     },
     {
       "id": "grammar",
@@ -2876,6 +2911,195 @@
       "level": 4,
       "title": "workgroupUniformLoad",
       "number": "16.11.4"
+    },
+    {
+      "id": "subgroup-builtin-functions",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroup-builtin-functions",
+      "level": 3,
+      "title": "Subgroup Built-in Functions",
+      "number": "16.12"
+    },
+    {
+      "id": "subgroupadd-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupadd-builtin",
+      "level": 4,
+      "title": "subgroupAdd",
+      "number": "16.12.1"
+    },
+    {
+      "id": "subgroupexclusiveadd-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupexclusiveadd-builtin",
+      "level": 5,
+      "title": "subgroupExclusiveAdd",
+      "number": "16.12.1.1"
+    },
+    {
+      "id": "subgroupinclusiveadd-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupinclusiveadd-builtin",
+      "level": 5,
+      "title": "subgroupInclusiveAdd",
+      "number": "16.12.1.2"
+    },
+    {
+      "id": "subgroupall-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupall-builtin",
+      "level": 4,
+      "title": "subgroupAll",
+      "number": "16.12.2"
+    },
+    {
+      "id": "subgroupand-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupand-builtin",
+      "level": 4,
+      "title": "subgroupAnd",
+      "number": "16.12.3"
+    },
+    {
+      "id": "subgroupany-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupany-builtin",
+      "level": 4,
+      "title": "subgroupAny",
+      "number": "16.12.4"
+    },
+    {
+      "id": "subgroupballot-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupballot-builtin",
+      "level": 4,
+      "title": "subgroupBallot",
+      "number": "16.12.5"
+    },
+    {
+      "id": "subgroupbroadcast-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupbroadcast-builtin",
+      "level": 4,
+      "title": "subgroupBroadcast",
+      "number": "16.12.6"
+    },
+    {
+      "id": "subgroupbroadcastfirst-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupbroadcastfirst-builtin",
+      "level": 5,
+      "title": "subgroupBroadcastFirst",
+      "number": "16.12.6.1"
+    },
+    {
+      "id": "subgroupelect-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupelect-builtin",
+      "level": 4,
+      "title": "subgroupElect",
+      "number": "16.12.7"
+    },
+    {
+      "id": "subgroupmax-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupmax-builtin",
+      "level": 4,
+      "title": "subgroupMax",
+      "number": "16.12.8"
+    },
+    {
+      "id": "subgroupmin-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupmin-builtin",
+      "level": 4,
+      "title": "subgroupMin",
+      "number": "16.12.9"
+    },
+    {
+      "id": "subgroupmul-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupmul-builtin",
+      "level": 4,
+      "title": "subgroupMul",
+      "number": "16.12.10"
+    },
+    {
+      "id": "subgroupexclusivemul-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupexclusivemul-builtin",
+      "level": 5,
+      "title": "subgroupExclusiveMul",
+      "number": "16.12.10.1"
+    },
+    {
+      "id": "subgroupinclusivemul-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupinclusivemul-builtin",
+      "level": 5,
+      "title": "subgroupInclusiveMul",
+      "number": "16.12.10.2"
+    },
+    {
+      "id": "subgroupor-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupor-builtin",
+      "level": 4,
+      "title": "subgroupOr",
+      "number": "16.12.11"
+    },
+    {
+      "id": "subgroupshuffle-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupshuffle-builtin",
+      "level": 4,
+      "title": "subgroupShuffle",
+      "number": "16.12.12"
+    },
+    {
+      "id": "subgroupshuffledown-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupshuffledown-builtin",
+      "level": 5,
+      "title": "subgroupShuffleDown",
+      "number": "16.12.12.1"
+    },
+    {
+      "id": "subgroupshuffleup-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupshuffleup-builtin",
+      "level": 5,
+      "title": "subgroupShuffleUp",
+      "number": "16.12.12.2"
+    },
+    {
+      "id": "subgroupshufflexor-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupshufflexor-builtin",
+      "level": 5,
+      "title": "subgroupShuffleXor",
+      "number": "16.12.12.3"
+    },
+    {
+      "id": "subgroupxor-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroupxor-builtin",
+      "level": 4,
+      "title": "subgroupXor",
+      "number": "16.12.13"
+    },
+    {
+      "id": "quad-builtin-functions",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#quad-builtin-functions",
+      "level": 3,
+      "title": "Quad Operations",
+      "number": "16.13"
+    },
+    {
+      "id": "quadbroadcast-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#quadbroadcast-builtin",
+      "level": 4,
+      "title": "quadBroadcast",
+      "number": "16.13.1"
+    },
+    {
+      "id": "quadswapdiagonal-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#quadswapdiagonal-builtin",
+      "level": 4,
+      "title": "quadSwapDiagonal",
+      "number": "16.13.2"
+    },
+    {
+      "id": "quadswapx-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#quadswapx-builtin",
+      "level": 4,
+      "title": "quadSwapX",
+      "number": "16.13.3"
+    },
+    {
+      "id": "quadswapy-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#quadswapy-builtin",
+      "level": 4,
+      "title": "quadSwapY",
+      "number": "16.13.4"
     },
     {
       "id": "grammar-recursive-descent",
