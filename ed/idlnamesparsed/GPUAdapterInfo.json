@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUAdapterInfo {\n    readonly attribute DOMString vendor;\n    readonly attribute DOMString architecture;\n    readonly attribute DOMString device;\n    readonly attribute DOMString description;\n};",
+    "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUAdapterInfo {\n    readonly attribute DOMString vendor;\n    readonly attribute DOMString architecture;\n    readonly attribute DOMString device;\n    readonly attribute DOMString description;\n    readonly attribute unsigned long subgroupMinSize;\n    readonly attribute unsigned long subgroupMaxSize;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpuadapterinfo"
   },
   "extended": [],

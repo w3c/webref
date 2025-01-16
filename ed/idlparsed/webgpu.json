@@ -781,7 +781,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#gpuwgsllanguagefeatures"
       },
       "GPUAdapterInfo": {
-        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUAdapterInfo {\n    readonly attribute DOMString vendor;\n    readonly attribute DOMString architecture;\n    readonly attribute DOMString device;\n    readonly attribute DOMString description;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUAdapterInfo {\n    readonly attribute DOMString vendor;\n    readonly attribute DOMString architecture;\n    readonly attribute DOMString device;\n    readonly attribute DOMString description;\n    readonly attribute unsigned long subgroupMinSize;\n    readonly attribute unsigned long subgroupMaxSize;\n};",
         "type": "interface",
         "name": "GPUAdapterInfo",
         "inheritance": null,
@@ -849,6 +849,38 @@
             "special": "",
             "readonly": true,
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterinfo-description"
+          },
+          {
+            "type": "attribute",
+            "name": "subgroupMinSize",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterinfo-subgroupminsize"
+          },
+          {
+            "type": "attribute",
+            "name": "subgroupMaxSize",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterinfo-subgroupmaxsize"
           }
         ],
         "extAttrs": [
@@ -1411,7 +1443,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#gpudevicedescriptor"
       },
       "GPUFeatureName": {
-        "fragment": "enum GPUFeatureName {\n    \"depth-clip-control\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-bc-sliced-3d\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"texture-compression-astc-sliced-3d\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n    \"shader-f16\",\n    \"rg11b10ufloat-renderable\",\n    \"bgra8unorm-storage\",\n    \"float32-filterable\",\n    \"float32-blendable\",\n    \"clip-distances\",\n    \"dual-source-blending\",\n};",
+        "fragment": "enum GPUFeatureName {\n    \"depth-clip-control\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-bc-sliced-3d\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"texture-compression-astc-sliced-3d\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n    \"shader-f16\",\n    \"rg11b10ufloat-renderable\",\n    \"bgra8unorm-storage\",\n    \"float32-filterable\",\n    \"float32-blendable\",\n    \"clip-distances\",\n    \"dual-source-blending\",\n    \"subgroups\",\n};",
         "type": "enum",
         "name": "GPUFeatureName",
         "values": [
@@ -1494,6 +1526,11 @@
             "type": "enum-value",
             "value": "dual-source-blending",
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-dual-source-blending"
+          },
+          {
+            "type": "enum-value",
+            "value": "subgroups",
+            "href": "https://gpuweb.github.io/gpuweb/#subgroups"
           }
         ],
         "extAttrs": [],
