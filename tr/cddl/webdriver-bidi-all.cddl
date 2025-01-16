@@ -193,6 +193,7 @@ session.Subscription = text
 session.SubscriptionRequest = {
   events: [+text],
   ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
 }
 
 session.UnsubscribeByIDRequest = {
