@@ -111,7 +111,7 @@
           "html": "<p>If the length of <code><var>pkOptions</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-user\" id=\"ref-for-dom-publickeycredentialcreationoptions-user①\">user</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredentialuserentity-id\" id=\"ref-for-dom-publickeycredentialuserentity-id①\">id</a></code></code> is not between 1 and 64 bytes (inclusive) then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>callerOrigin</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredential-create-origin-options-sameoriginwithancestors-origin\" id=\"ref-for-dom-publickeycredential-create-origin-options-sameoriginwithancestors-origin\">origin</a></code>. If <var>callerOrigin</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque\">opaque origin</a>, throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror②\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>.</p>"
+          "html": "<p>Let <var>callerOrigin</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredential-create-origin-options-sameoriginwithancestors-origin\" id=\"ref-for-dom-publickeycredential-create-origin-options-sameoriginwithancestors-origin\">origin</a></code>. If <var>callerOrigin</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque\">opaque origin</a>, throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror②\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>effectiveDomain</var> be the <var>callerOrigin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-effective-domain\" id=\"ref-for-concept-origin-effective-domain④\">effective domain</a>.\nIf <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-effective-domain\" id=\"ref-for-concept-origin-effective-domain⑤\">effective domain</a> is not a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#valid-domain\" id=\"ref-for-valid-domain①\">valid domain</a>, then throw a\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code>.</p>"
@@ -623,7 +623,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>callerOrigin</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-origin\" id=\"ref-for-dom-publickeycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-origin\">origin</a></code>. If <var>callerOrigin</var> is\nan <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque①\">opaque origin</a>, throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror⑦\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①④\">DOMException</a></code>.</p>"
+          "html": "<p>Let <var>callerOrigin</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-origin\" id=\"ref-for-dom-publickeycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-origin\">origin</a></code>. If <var>callerOrigin</var> is\nan <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque①\">opaque origin</a>, throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror⑦\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①④\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>effectiveDomain</var> be the <var>callerOrigin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-effective-domain\" id=\"ref-for-concept-origin-effective-domain①⓪\">effective domain</a>.\nIf <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-effective-domain\" id=\"ref-for-concept-origin-effective-domain①①\">effective domain</a> is not a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#valid-domain\" id=\"ref-for-valid-domain③\">valid domain</a>, then throw a\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror④\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑤\">DOMException</a></code>.</p>"
@@ -2416,7 +2416,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps①\">remote end steps</a> are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps\" id=\"ref-for-remote-end-steps①\">remote end steps</a> are:",
       "rationale": "if",
       "steps": [
         {
@@ -2488,7 +2488,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps②\">remote end steps</a> are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps\" id=\"ref-for-remote-end-steps②\">remote end steps</a> are:",
       "rationale": "if",
       "steps": [
         {
@@ -2503,7 +2503,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps④\">remote end steps</a> are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps\" id=\"ref-for-remote-end-steps④\">remote end steps</a> are:",
       "rationale": "if",
       "steps": [
         {
@@ -2638,7 +2638,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps⑤\">remote end steps</a> are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps\" id=\"ref-for-remote-end-steps⑤\">remote end steps</a> are:",
       "rationale": "if",
       "steps": [
         {
@@ -2656,7 +2656,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps⑥\">remote end steps</a> are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps\" id=\"ref-for-remote-end-steps⑥\">remote end steps</a> are:",
       "rationale": "if",
       "steps": [
         {
@@ -2677,7 +2677,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps⑦\">remote end steps</a> are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps\" id=\"ref-for-remote-end-steps⑦\">remote end steps</a> are:",
       "rationale": "if",
       "steps": [
         {
@@ -2692,7 +2692,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps⑧\">remote end steps</a> are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps\" id=\"ref-for-remote-end-steps⑧\">remote end steps</a> are:",
       "rationale": "if",
       "steps": [
         {
@@ -2716,7 +2716,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps①⓪\">remote end steps</a> are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps\" id=\"ref-for-remote-end-steps①⓪\">remote end steps</a> are:",
       "rationale": "if",
       "steps": [
         {
