@@ -1,0 +1,29 @@
+{
+  "name": "SharedStorageClearMethod",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Shared Storage API",
+      "url": "https://wicg.github.io/shared-storage/"
+    },
+    "fragment": "[Exposed=(Window, SharedStorageWorklet)]\ninterface SharedStorageClearMethod : SharedStorageModifierMethod {\n  constructor(optional SharedStorageModifierMethodOptions options = {});\n};",
+    "href": "https://wicg.github.io/shared-storage/#sharedstorageclearmethod"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "SharedStorageModifierMethod",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Shared Storage API",
+        "url": "https://wicg.github.io/shared-storage/"
+      },
+      "fragment": "[Exposed=(Window,SharedStorageWorklet)]\ninterface SharedStorageModifierMethod {};",
+      "href": "https://wicg.github.io/shared-storage/#sharedstoragemodifiermethod"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

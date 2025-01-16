@@ -5,14 +5,29 @@
   },
   "idlparsed": {
     "jsNames": {
-      "constructors": {},
+      "constructors": {
+        "Window": [
+          "SharedStorageSetMethod",
+          "SharedStorageAppendMethod",
+          "SharedStorageDeleteMethod",
+          "SharedStorageClearMethod"
+        ],
+        "SharedStorageWorklet": [
+          "SharedStorageSetMethod",
+          "SharedStorageAppendMethod",
+          "SharedStorageDeleteMethod",
+          "SharedStorageClearMethod"
+        ]
+      },
       "functions": {
         "Window": [
           "SharedStorageWorklet",
+          "SharedStorageModifierMethod",
           "SharedStorage"
         ],
         "SharedStorageWorklet": [
           "SharedStorageWorkletGlobalScope",
+          "SharedStorageModifierMethod",
           "SharedStorage",
           "SharedStorageWorkletNavigator"
         ]
@@ -492,8 +507,381 @@
         "partial": false,
         "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstorageurlwithmetadata"
       },
+      "SharedStorageModifierMethod": {
+        "fragment": "[Exposed=(Window,SharedStorageWorklet)]\ninterface SharedStorageModifierMethod {};",
+        "type": "interface",
+        "name": "SharedStorageModifierMethod",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "SharedStorageWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#sharedstoragemodifiermethod"
+      },
+      "SharedStorageSetMethod": {
+        "fragment": "[Exposed=(Window, SharedStorageWorklet)]\ninterface SharedStorageSetMethod : SharedStorageModifierMethod {\n  constructor(DOMString key, DOMString value, optional SharedStorageSetMethodOptions options = {});\n};",
+        "type": "interface",
+        "name": "SharedStorageSetMethod",
+        "inheritance": "SharedStorageModifierMethod",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "key",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SharedStorageSetMethodOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragesetmethod-sharedstoragesetmethod"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "SharedStorageWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#sharedstoragesetmethod"
+      },
+      "SharedStorageAppendMethod": {
+        "fragment": "[Exposed=(Window, SharedStorageWorklet)]\ninterface SharedStorageAppendMethod : SharedStorageModifierMethod {\n  constructor(DOMString key, DOMString value, optional SharedStorageModifierMethodOptions options = {});\n};",
+        "type": "interface",
+        "name": "SharedStorageAppendMethod",
+        "inheritance": "SharedStorageModifierMethod",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "key",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SharedStorageModifierMethodOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageappendmethod-sharedstorageappendmethod"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "SharedStorageWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#sharedstorageappendmethod"
+      },
+      "SharedStorageDeleteMethod": {
+        "fragment": "[Exposed=(Window, SharedStorageWorklet)]\ninterface SharedStorageDeleteMethod : SharedStorageModifierMethod {\n  constructor(DOMString key, optional SharedStorageModifierMethodOptions options = {});\n};",
+        "type": "interface",
+        "name": "SharedStorageDeleteMethod",
+        "inheritance": "SharedStorageModifierMethod",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "key",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SharedStorageModifierMethodOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragedeletemethod-sharedstoragedeletemethod"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "SharedStorageWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#sharedstoragedeletemethod"
+      },
+      "SharedStorageClearMethod": {
+        "fragment": "[Exposed=(Window, SharedStorageWorklet)]\ninterface SharedStorageClearMethod : SharedStorageModifierMethod {\n  constructor(optional SharedStorageModifierMethodOptions options = {});\n};",
+        "type": "interface",
+        "name": "SharedStorageClearMethod",
+        "inheritance": "SharedStorageModifierMethod",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SharedStorageModifierMethodOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageclearmethod-sharedstorageclearmethod"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "SharedStorageWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#sharedstorageclearmethod"
+      },
+      "SharedStorageModifierMethodOptions": {
+        "fragment": "dictionary SharedStorageModifierMethodOptions {\n  DOMString withLock;\n};",
+        "type": "dictionary",
+        "name": "SharedStorageModifierMethodOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "withLock",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragemodifiermethodoptions-withlock"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstoragemodifiermethodoptions"
+      },
+      "SharedStorageSetMethodOptions": {
+        "fragment": "dictionary SharedStorageSetMethodOptions : SharedStorageModifierMethodOptions {\n  boolean ignoreIfPresent;\n};",
+        "type": "dictionary",
+        "name": "SharedStorageSetMethodOptions",
+        "inheritance": "SharedStorageModifierMethodOptions",
+        "members": [
+          {
+            "type": "field",
+            "name": "ignoreIfPresent",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragesetmethodoptions-ignoreifpresent"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstoragesetmethodoptions"
+      },
       "SharedStorage": {
-        "fragment": "[Exposed=(Window,SharedStorageWorklet)]\ninterface SharedStorage {\n  Promise<any> set(DOMString key,\n                   DOMString value,\n                   optional SharedStorageSetMethodOptions options = {});\n  Promise<any> append(DOMString key,\n                      DOMString value);\n  Promise<any> delete(DOMString key);\n  Promise<any> clear();\n\n  [Exposed=Window]\n  Promise<SharedStorageResponse> selectURL(DOMString name,\n                               sequence<SharedStorageUrlWithMetadata> urls,\n                               optional SharedStorageRunOperationMethodOptions options = {});\n\n  [Exposed=Window]\n  Promise<any> run(DOMString name,\n                   optional SharedStorageRunOperationMethodOptions options = {});\n\n  [Exposed=Window]\n  Promise<SharedStorageWorklet> createWorklet(USVString moduleURL, optional SharedStorageWorkletOptions options = {});\n\n  [Exposed=Window]\n  readonly attribute SharedStorageWorklet worklet;\n\n  [Exposed=SharedStorageWorklet]\n  Promise<DOMString> get(DOMString key);\n\n  [Exposed=SharedStorageWorklet]\n  Promise<unsigned long> length();\n\n  [Exposed=SharedStorageWorklet]\n  Promise<double> remainingBudget();\n\n  [Exposed=SharedStorageWorklet]\n  async iterable<DOMString, DOMString>;\n};",
+        "fragment": "[Exposed=(Window,SharedStorageWorklet)]\ninterface SharedStorage {\n  Promise<any> set(DOMString key,\n                   DOMString value,\n                   optional SharedStorageSetMethodOptions options = {});\n  Promise<any> append(DOMString key,\n                      DOMString value,\n                      optional SharedStorageModifierMethodOptions options = {});\n  Promise<any> delete(DOMString key, optional SharedStorageModifierMethodOptions options = {});\n  Promise<any> clear(optional SharedStorageModifierMethodOptions options = {});\n  Promise<any> batchUpdate(sequence<SharedStorageModifierMethod> methods,\n                           optional SharedStorageModifierMethodOptions options = {});\n\n  [Exposed=Window]\n  Promise<SharedStorageResponse> selectURL(DOMString name,\n                               sequence<SharedStorageUrlWithMetadata> urls,\n                               optional SharedStorageRunOperationMethodOptions options = {});\n\n  [Exposed=Window]\n  Promise<any> run(DOMString name,\n                   optional SharedStorageRunOperationMethodOptions options = {});\n\n  [Exposed=Window]\n  Promise<SharedStorageWorklet> createWorklet(USVString moduleURL, optional SharedStorageWorkletOptions options = {});\n\n  [Exposed=Window]\n  readonly attribute SharedStorageWorklet worklet;\n\n  [Exposed=SharedStorageWorklet]\n  Promise<DOMString> get(DOMString key);\n\n  [Exposed=SharedStorageWorklet]\n  Promise<unsigned long> length();\n\n  [Exposed=SharedStorageWorklet]\n  Promise<double> remainingBudget();\n\n  [Exposed=SharedStorageWorklet]\n  async iterable<DOMString, DOMString>;\n};",
         "type": "interface",
         "name": "SharedStorage",
         "inheritance": null,
@@ -626,6 +1014,24 @@
                 "default": null,
                 "optional": false,
                 "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SharedStorageModifierMethodOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
               }
             ],
             "extAttrs": [],
@@ -668,6 +1074,24 @@
                 "default": null,
                 "optional": false,
                 "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SharedStorageModifierMethodOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
               }
             ],
             "extAttrs": [],
@@ -694,10 +1118,98 @@
                 }
               ]
             },
-            "arguments": [],
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SharedStorageModifierMethodOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
             "extAttrs": [],
             "special": "",
             "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-clear"
+          },
+          {
+            "type": "operation",
+            "name": "batchUpdate",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "methods",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "SharedStorageModifierMethod"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SharedStorageModifierMethodOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-batchupdate"
           },
           {
             "type": "operation",
@@ -1139,36 +1651,6 @@
         "partial": false,
         "href": "https://wicg.github.io/shared-storage/#sharedstorage"
       },
-      "SharedStorageSetMethodOptions": {
-        "fragment": "dictionary SharedStorageSetMethodOptions {\n  boolean ignoreIfPresent = false;\n};",
-        "type": "dictionary",
-        "name": "SharedStorageSetMethodOptions",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "ignoreIfPresent",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragesetmethodoptions-ignoreifpresent"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstoragesetmethodoptions"
-      },
       "SharedStoragePrivateAggregationConfig": {
         "fragment": "dictionary SharedStoragePrivateAggregationConfig {\n  USVString aggregationCoordinatorOrigin;\n  USVString contextId;\n  [EnforceRange] unsigned long long filteringIdMaxBytes;\n};",
         "type": "dictionary",
@@ -1523,10 +2005,20 @@
     "exposed": {
       "Window": [
         "SharedStorageWorklet",
+        "SharedStorageModifierMethod",
+        "SharedStorageSetMethod",
+        "SharedStorageAppendMethod",
+        "SharedStorageDeleteMethod",
+        "SharedStorageClearMethod",
         "SharedStorage"
       ],
       "SharedStorageWorklet": [
         "SharedStorageWorkletGlobalScope",
+        "SharedStorageModifierMethod",
+        "SharedStorageSetMethod",
+        "SharedStorageAppendMethod",
+        "SharedStorageDeleteMethod",
+        "SharedStorageClearMethod",
         "SharedStorage",
         "SharedStorageWorkletNavigator"
       ]
@@ -1550,15 +2042,37 @@
       "Window": [
         "SharedStorage"
       ],
+      "SharedStorageModifierMethod": [],
+      "SharedStorageSetMethod": [
+        "SharedStorageModifierMethod",
+        "SharedStorageSetMethodOptions"
+      ],
+      "SharedStorageAppendMethod": [
+        "SharedStorageModifierMethod",
+        "SharedStorageModifierMethodOptions"
+      ],
+      "SharedStorageDeleteMethod": [
+        "SharedStorageModifierMethod",
+        "SharedStorageModifierMethodOptions"
+      ],
+      "SharedStorageClearMethod": [
+        "SharedStorageModifierMethod",
+        "SharedStorageModifierMethodOptions"
+      ],
+      "SharedStorageModifierMethodOptions": [],
+      "SharedStorageSetMethodOptions": [
+        "SharedStorageModifierMethodOptions"
+      ],
       "SharedStorage": [
         "SharedStorageSetMethodOptions",
+        "SharedStorageModifierMethodOptions",
+        "SharedStorageModifierMethod",
         "SharedStorageResponse",
         "SharedStorageUrlWithMetadata",
         "SharedStorageRunOperationMethodOptions",
         "SharedStorageWorklet",
         "SharedStorageWorkletOptions"
       ],
-      "SharedStorageSetMethodOptions": [],
       "SharedStoragePrivateAggregationConfig": [],
       "SharedStorageRunOperationMethodOptions": [
         "SharedStoragePrivateAggregationConfig"

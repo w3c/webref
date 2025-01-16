@@ -1,0 +1,5 @@
+// Source: Shared Storage API (https://wicg.github.io/shared-storage/)
+[Exposed=(Window, SharedStorageWorklet)]
+interface SharedStorageAppendMethod : SharedStorageModifierMethod {
+  constructor(DOMString key, DOMString value, optional SharedStorageModifierMethodOptions options = {});
+};

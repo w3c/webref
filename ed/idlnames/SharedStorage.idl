@@ -5,9 +5,12 @@ interface SharedStorage {
                    DOMString value,
                    optional SharedStorageSetMethodOptions options = {});
   Promise<any> append(DOMString key,
-                      DOMString value);
-  Promise<any> delete(DOMString key);
-  Promise<any> clear();
+                      DOMString value,
+                      optional SharedStorageModifierMethodOptions options = {});
+  Promise<any> delete(DOMString key, optional SharedStorageModifierMethodOptions options = {});
+  Promise<any> clear(optional SharedStorageModifierMethodOptions options = {});
+  Promise<any> batchUpdate(sequence<SharedStorageModifierMethod> methods,
+                           optional SharedStorageModifierMethodOptions options = {});
 
   [Exposed=Window]
   Promise<SharedStorageResponse> selectURL(DOMString name,

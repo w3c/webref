@@ -6,10 +6,24 @@
       "title": "Shared Storage API",
       "url": "https://wicg.github.io/shared-storage/"
     },
-    "fragment": "dictionary SharedStorageSetMethodOptions {\n  boolean ignoreIfPresent = false;\n};",
+    "fragment": "dictionary SharedStorageSetMethodOptions : SharedStorageModifierMethodOptions {\n  boolean ignoreIfPresent;\n};",
     "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstoragesetmethodoptions"
   },
   "extended": [],
-  "inheritance": null,
+  "inheritance": {
+    "name": "SharedStorageModifierMethodOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Shared Storage API",
+        "url": "https://wicg.github.io/shared-storage/"
+      },
+      "fragment": "dictionary SharedStorageModifierMethodOptions {\n  DOMString withLock;\n};",
+      "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstoragemodifiermethodoptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
   "includes": []
 }

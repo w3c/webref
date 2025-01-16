@@ -11,4 +11,8 @@ interface MLContext {
   undefined writeTensor(MLTensor tensor, AllowSharedBufferSource inputData);
 
   MLOpSupportLimits opSupportLimits();
+
+  undefined destroy();
+
+  readonly attribute Promise<MLContextLostInfo> lost;
 };

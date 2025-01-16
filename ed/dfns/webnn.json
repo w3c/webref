@@ -663,6 +663,25 @@
       "definedIn": "pre"
     },
     {
+      "id": "dictdef-mlcontextlostinfo",
+      "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlcontextlostinfo",
+      "linkingText": [
+        "MLContextLostInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlcontext",
+        "title": "MLContext interface",
+        "number": "7.3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "mlcontext",
       "href": "https://webmachinelearning.github.io/webnn/#mlcontext",
       "linkingText": [
@@ -749,6 +768,27 @@
       "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-powerpreference-slot",
       "linkingText": [
         "[[powerPreference]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MLContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlcontext",
+        "title": "MLContext interface",
+        "number": "7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mlcontext-lost-slot",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-lost-slot",
+      "linkingText": [
+        "[[lost]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1466,6 +1506,131 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-mlcontext-destroy",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-destroy",
+      "linkingText": [
+        "destroy()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MLContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-destroy",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlcontext-destroy",
+        "title": "destroy()",
+        "number": "7.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "context-lost",
+      "href": "https://webmachinelearning.github.io/webnn/#context-lost",
+      "linkingText": [
+        "context lost"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-errors",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlcontext-errors",
+        "title": "Errors",
+        "number": "7.3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "mlcontext-lose",
+      "href": "https://webmachinelearning.github.io/webnn/#mlcontext-lose",
+      "linkingText": [
+        "lose"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MLContext"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-errors",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlcontext-errors",
+        "title": "Errors",
+        "number": "7.3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlcontextlostinfo-message",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontextlostinfo-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLContextLostInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-errors",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlcontext-errors",
+        "title": "Errors",
+        "number": "7.3.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mlcontext-lost",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-lost",
+      "linkingText": [
+        "lost"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MLContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-errors",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlcontext-errors",
+        "title": "Errors",
+        "number": "7.3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "mlcontext-is-lost",
+      "href": "https://webmachinelearning.github.io/webnn/#mlcontext-is-lost",
+      "linkingText": [
+        "is lost",
+        "is not lost"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MLContext"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-errors",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlcontext-errors",
+        "title": "Errors",
+        "number": "7.3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "mlgraph",
       "href": "https://webmachinelearning.github.io/webnn/#mlgraph",
       "linkingText": [
@@ -1567,6 +1732,48 @@
         "number": "7.4"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "dom-mlgraph-isdestroyed-slot",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraph-isdestroyed-slot",
+      "linkingText": [
+        "[[isDestroyed]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MLGraph"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraph",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraph",
+        "title": "MLGraph interface",
+        "number": "7.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mlgraph-destroy",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraph-destroy",
+      "linkingText": [
+        "destroy()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MLGraph"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraph-destroy",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraph-destroy",
+        "title": "destroy()",
+        "number": "7.4.1"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "enumdef-mlinputoperandlayout",
@@ -2806,6 +3013,28 @@
         "number": "7.9"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "mlgraphbuilder-can-build",
+      "href": "https://webmachinelearning.github.io/webnn/#mlgraphbuilder-can-build",
+      "linkingText": [
+        "can build",
+        "can not build"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MLGraphBuilder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder",
+        "title": "MLGraphBuilder interface",
+        "number": "7.9"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-mlgraphbuilder-constructor-context-context",

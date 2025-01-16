@@ -1,4 +1,4 @@
 // Source: Shared Storage API (https://wicg.github.io/shared-storage/)
-dictionary SharedStorageSetMethodOptions {
-  boolean ignoreIfPresent = false;
+dictionary SharedStorageSetMethodOptions : SharedStorageModifierMethodOptions {
+  boolean ignoreIfPresent;
 };

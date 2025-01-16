@@ -320,8 +320,35 @@
         "extAttrs": [],
         "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlnamedtensors"
       },
+      "MLContextLostInfo": {
+        "fragment": "dictionary MLContextLostInfo {\n  DOMString message;\n};",
+        "type": "dictionary",
+        "name": "MLContextLostInfo",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "message",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontextlostinfo-message"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlcontextlostinfo"
+      },
       "MLContext": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {\n  undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);\n\n  Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);\n\n  Promise<ArrayBuffer> readTensor(MLTensor tensor);\n  Promise<undefined> readTensor(MLTensor tensor, AllowSharedBufferSource outputData);\n\n  undefined writeTensor(MLTensor tensor, AllowSharedBufferSource inputData);\n\n  MLOpSupportLimits opSupportLimits();\n};",
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {\n  undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);\n\n  Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);\n\n  Promise<ArrayBuffer> readTensor(MLTensor tensor);\n  Promise<undefined> readTensor(MLTensor tensor, AllowSharedBufferSource outputData);\n\n  undefined writeTensor(MLTensor tensor, AllowSharedBufferSource inputData);\n\n  MLOpSupportLimits opSupportLimits();\n\n  undefined destroy();\n\n  readonly attribute Promise<MLContextLostInfo> lost;\n};",
         "type": "interface",
         "name": "MLContext",
         "inheritance": null,
@@ -597,6 +624,47 @@
             "extAttrs": [],
             "special": "",
             "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-opsupportlimits"
+          },
+          {
+            "type": "operation",
+            "name": "destroy",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-destroy"
+          },
+          {
+            "type": "attribute",
+            "name": "lost",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLContextLostInfo"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-lost"
           }
         ],
         "extAttrs": [
@@ -840,11 +908,28 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlsingleinputsupportlimits"
       },
       "MLGraph": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraph {};",
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraph {\n  undefined destroy();\n};",
         "type": "interface",
         "name": "MLGraph",
         "inheritance": null,
-        "members": [],
+        "members": [
+          {
+            "type": "operation",
+            "name": "destroy",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraph-destroy"
+          }
+        ],
         "extAttrs": [
           {
             "type": "extended-attribute",
@@ -12426,6 +12511,7 @@
         "MLContextOptions",
         "GPUDevice"
       ],
+      "MLContextLostInfo": [],
       "MLContext": [
         "MLGraph",
         "MLNamedTensors",
@@ -12433,7 +12519,8 @@
         "MLTensorDescriptor",
         "ArrayBuffer",
         "AllowSharedBufferSource",
-        "MLOpSupportLimits"
+        "MLOpSupportLimits",
+        "MLContextLostInfo"
       ],
       "MLOpSupportLimits": [
         "MLInputOperandLayout",
