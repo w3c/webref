@@ -26,7 +26,7 @@ partial interface AI {
 [Exposed=(Window,Worker), SecureContext]
 interface AISummarizerFactory {
   Promise<AISummarizer> create(optional AISummarizerCreateOptions options = {});
-  Promise<AISummarizerCapabilities> capabilities();
+  Promise<AICapabilityAvailability> available(optional AISummarizerCreateCoreOptions options = {});
 };
 
 [Exposed=(Window,Worker), SecureContext]
@@ -45,23 +45,21 @@ interface AISummarizer {
   readonly attribute AISummarizerFormat format;
   readonly attribute AISummarizerLength length;
 
+  readonly attribute FrozenArray<DOMString>? expectedInputLanguages;
+  readonly attribute FrozenArray<DOMString>? expectedContextLanguages;
+  readonly attribute DOMString? outputLanguage;
+
   undefined destroy();
-};
-
-[Exposed=(Window,Worker), SecureContext]
-interface AISummarizerCapabilities {
-  readonly attribute AICapabilityAvailability available;
-
-  AICapabilityAvailability createOptionsAvailable(
-    optional AISummarizerCreateCoreOptions options = {}
-  );
-  AICapabilityAvailability languageAvailable(DOMString languageTag);
 };
 
 dictionary AISummarizerCreateCoreOptions {
   AISummarizerType type = "key-points";
   AISummarizerFormat format = "markdown";
   AISummarizerLength length = "short";
+
+  sequence<DOMString> expectedInputLanguages;
+  sequence<DOMString> expectedContextLanguages;
+  DOMString outputLanguage;
 };
 
 dictionary AISummarizerCreateOptions : AISummarizerCreateCoreOptions {
@@ -79,3 +77,101 @@ dictionary AISummarizerSummarizeOptions {
 enum AISummarizerType { "tl;dr", "teaser", "key-points", "headline" };
 enum AISummarizerFormat { "plain-text", "markdown" };
 enum AISummarizerLength { "short", "medium", "long" };
+
+[Exposed=(Window,Worker), SecureContext]
+interface AIWriterFactory {
+  Promise<AIWriter> create(optional AIWriterCreateOptions options = {});
+  Promise<AICapabilityAvailability> available(optional AIWriterCreateCoreOptions options = {});
+};
+
+[Exposed=(Window,Worker), SecureContext]
+interface AIWriter {
+  Promise<DOMString> write(DOMString writingTask, optional AIWriterWriteOptions options = {});
+  ReadableStream writeStreaming(DOMString writingTask, optional AIWriterWriteOptions options = {});
+
+  readonly attribute DOMString sharedContext;
+  readonly attribute AIWriterTone tone;
+  readonly attribute AIWriterFormat format;
+  readonly attribute AIWriterLength length;
+
+  readonly attribute FrozenArray<DOMString>? expectedInputLanguages;
+  readonly attribute FrozenArray<DOMString>? expectedContextLanguages;
+  readonly attribute DOMString? outputLanguage;
+
+  undefined destroy();
+};
+
+dictionary AIWriterCreateCoreOptions {
+  AIWriterTone tone = "neutral";
+  AIWriterFormat format = "markdown";
+  AIWriterLength length = "short";
+
+  sequence<DOMString> expectedInputLanguages;
+  sequence<DOMString> expectedContextLanguages;
+  DOMString outputLanguage;
+};
+
+dictionary AIWriterCreateOptions : AIWriterCreateCoreOptions {
+  AbortSignal signal;
+  AICreateMonitorCallback monitor;
+
+  DOMString sharedContext;
+};
+
+dictionary AIWriterWriteOptions {
+  DOMString context;
+  AbortSignal signal;
+};
+
+enum AIWriterTone { "formal", "neutral", "casual" };
+enum AIWriterFormat { "plain-text", "markdown" };
+enum AIWriterLength { "short", "medium", "long" };
+
+[Exposed=(Window,Worker), SecureContext]
+interface AIRewriterFactory {
+  Promise<AIRewriter> create(optional AIRewriterCreateOptions options = {});
+  Promise<AICapabilityAvailability> available(optional AIRewriterCreateCoreOptions options = {});
+};
+
+[Exposed=(Window,Worker), SecureContext]
+interface AIRewriter {
+  Promise<DOMString> rewrite(DOMString input, optional AIRewriterRewriteOptions options = {});
+  ReadableStream rewriteStreaming(DOMString input, optional AIRewriterRewriteOptions options = {});
+
+  readonly attribute DOMString sharedContext;
+  readonly attribute AIRewriterTone tone;
+  readonly attribute AIRewriterFormat format;
+  readonly attribute AIRewriterLength length;
+
+  readonly attribute FrozenArray<DOMString>? expectedInputLanguages;
+  readonly attribute FrozenArray<DOMString>? expectedContextLanguages;
+  readonly attribute DOMString? outputLanguage;
+
+  undefined destroy();
+};
+
+dictionary AIRewriterCreateCoreOptions {
+  AIRewriterTone tone = "as-is";
+  AIRewriterFormat format = "as-is";
+  AIRewriterLength length = "as-is";
+
+  sequence<DOMString> expectedInputLanguages;
+  sequence<DOMString> expectedContextLanguages;
+  DOMString outputLanguage;
+};
+
+dictionary AIRewriterCreateOptions : AIRewriterCreateCoreOptions {
+  AbortSignal signal;
+  AICreateMonitorCallback monitor;
+
+  DOMString sharedContext;
+};
+
+dictionary AIRewriterRewriteOptions {
+  DOMString context;
+  AbortSignal signal;
+};
+
+enum AIRewriterTone { "as-is", "more-formal", "more-casual" };
+enum AIRewriterFormat { "as-is", "plain-text", "markdown" };
+enum AIRewriterLength { "as-is", "shorter", "longer" };
