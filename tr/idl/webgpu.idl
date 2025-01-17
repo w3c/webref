@@ -62,6 +62,8 @@ interface GPUAdapterInfo {
     readonly attribute DOMString architecture;
     readonly attribute DOMString device;
     readonly attribute DOMString description;
+    readonly attribute unsigned long subgroupMinSize;
+    readonly attribute unsigned long subgroupMaxSize;
 };
 
 interface mixin NavigatorGPU {
@@ -81,6 +83,7 @@ dictionary GPURequestAdapterOptions {
     DOMString featureLevel = "core";
     GPUPowerPreference powerPreference;
     boolean forceFallbackAdapter = false;
+    boolean xrCompatible = false;
 };
 
 enum GPUPowerPreference {
@@ -122,12 +125,14 @@ enum GPUFeatureName {
     "float32-blendable",
     "clip-distances",
     "dual-source-blending",
+    "subgroups",
 };
 
 [Exposed=(Window, Worker), SecureContext]
 interface GPUDevice : EventTarget {
     [SameObject] readonly attribute GPUSupportedFeatures features;
     [SameObject] readonly attribute GPUSupportedLimits limits;
+    [SameObject] readonly attribute GPUAdapterInfo adapterInfo;
 
     [SameObject] readonly attribute GPUQueue queue;
 
@@ -570,7 +575,7 @@ GPUPipelineLayout includes GPUObjectBase;
 
 dictionary GPUPipelineLayoutDescriptor
          : GPUObjectDescriptorBase {
-    required sequence<GPUBindGroupLayout> bindGroupLayouts;
+    required sequence<GPUBindGroupLayout?> bindGroupLayouts;
 };
 
 [Exposed=(Window, Worker), SecureContext]
@@ -810,22 +815,31 @@ enum GPUIndexFormat {
 };
 
 enum GPUVertexFormat {
+    "uint8",
     "uint8x2",
     "uint8x4",
+    "sint8",
     "sint8x2",
     "sint8x4",
+    "unorm8",
     "unorm8x2",
     "unorm8x4",
+    "snorm8",
     "snorm8x2",
     "snorm8x4",
+    "uint16",
     "uint16x2",
     "uint16x4",
+    "sint16",
     "sint16x2",
     "sint16x4",
+    "unorm16",
     "unorm16x2",
     "unorm16x4",
+    "snorm16",
     "snorm16x2",
     "snorm16x4",
+    "float16",
     "float16x2",
     "float16x4",
     "float32",
@@ -841,6 +855,7 @@ enum GPUVertexFormat {
     "sint32x3",
     "sint32x4",
     "unorm10-10-10-2",
+    "unorm8x4-bgra",
 };
 
 enum GPUVertexStepMode {
