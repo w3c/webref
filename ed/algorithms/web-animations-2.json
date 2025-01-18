@@ -798,11 +798,11 @@
                   "operation": "switch",
                   "steps": [
                     {
-                      "case": "If the animation effect has a parent group and that parent group is in the before phase, and the fill mode of this animation effect is none or class=\"prop-value\">forwards,",
+                      "case": "If the animation effect has a parent group and that parent group is in the before phase, and the fill mode of this animation effect is none or forwards,",
                       "html": "<p>Return an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved④⑤\">unresolved</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#time-value\" id=\"ref-for-time-value⑧\">time value</a>.</p>"
                     },
                     {
-                      "case": "If the animation effect has a parent group and that parent group is in the after phase, and the fill mode of this animation effect is none or class=\"prop-value\">backwards,",
+                      "case": "If the animation effect has a parent group and that parent group is in the after phase, and the fill mode of this animation effect is none or backwards,",
                       "html": "<p>Return an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved④⑥\">unresolved</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#time-value\" id=\"ref-for-time-value⑨\">time value</a>.</p>"
                     },
                     {
@@ -864,7 +864,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <em>either</em> the <var>current direction</var> is <span> class=\"prop-value\"&gt;forwards</span> or the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate③⑧\">playback rate</a> ≥ 0\n(but <em>not</em> when both conditions are true),\nlet <var>going forwards</var> be true, otherwise it is false.</p>"
+          "html": "<p>If <em>either</em> the <var>current direction</var> is <span class=\"prop-value\">forwards</span> or the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate③⑧\">playback rate</a> ≥ 0\n(but <em>not</em> when both conditions are true),\nlet <var>going forwards</var> be true, otherwise it is false.</p>"
         }
       ]
     },
@@ -1026,7 +1026,7 @@
           "html": "<p>Let <var>timing input</var> be the result corresponding to the first\nmatching condition from below.</p>\n        <dl>\n         <dt data-md=\"\">If <var>options</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-effecttiming\" id=\"ref-for-dictdef-effecttiming②\">EffectTiming</a></code> object,\n         </dt><dd data-md=\"\">\n          <p>Let <var>timing input</var> be <var>options</var>.</p>\n         </dd><dt data-md=\"\">Otherwise (if <var>options</var> is a <code>double</code>),\n         </dt><dd data-md=\"\">\n          <p>Let <var>timing input</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-effecttiming\" id=\"ref-for-dictdef-effecttiming③\">EffectTiming</a></code> object with all members set to their default values\nand <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-effecttiming-duration\" id=\"ref-for-dom-effecttiming-duration③\">duration</a></code> set to <var>options</var>.</p>\n        </dd></dl>"
         },
         {
-          "html": "<p>Call the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-the-timing-properties-of-an-animation-effect\" id=\"ref-for-update-the-timing-properties-of-an-animation-effect\">update the timing properties of an\nanimation effect</a> of <var>group</var> from <var>timing input</var>.</p>\n        <p>If that procedure causes an exception to be thrown, propagate the\nexception and abort this procedure.</p>"
+          "html": "<p>Call the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-the-timing-properties-of-an-animation-effect\" id=\"ref-for-update-the-timing-properties-of-an-animation-effect\">update the timing properties of an animation effect</a> of <var>group</var> from <var>timing input</var>.</p>\n        <p>If that procedure causes an exception to be thrown, propagate the\nexception and abort this procedure.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children③\">Insert</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-groupeffect-groupeffect-children-timing-children\" id=\"ref-for-dom-groupeffect-groupeffect-children-timing-children①\">children</a></code> before <code>null</code>.</p>"
