@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-01-20T06:41:59.752Z",
+  "date": "2025-01-20T09:54:28.670Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -27,7 +27,6 @@
       "css-borders-4",
       "css-color-6",
       "css-conditional-values-1",
-      "css-display-4",
       "css-env-1",
       "css-extensions-1",
       "css-forms-1",
@@ -36,7 +35,6 @@
       "css-images-5",
       "css-link-params-1",
       "css-mixins-1",
-      "css-multicol-2",
       "css-page-4",
       "css-position-4",
       "css-shapes-2",
@@ -153,6 +151,7 @@
       "at-driver",
       "contentEditable",
       "execCommand",
+      "element-timing",
       "gamepad-extensions",
       "long-animation-frames",
       "mathml-aam",
@@ -204,7 +203,6 @@
       "direct-sockets",
       "document-picture-in-picture",
       "document-policy",
-      "element-timing",
       "entries-api",
       "eyedropper-api",
       "fenced-frame",
@@ -293,6 +291,7 @@
       "rfc8288",
       "rfc8297",
       "rfc8470",
+      "rfc8610",
       "rfc8878",
       "rfc8942",
       "rfc9110",
@@ -360,6 +359,7 @@
       "css-content-3",
       "css-counter-styles-3",
       "css-display-3",
+      "css-display-4",
       "css-easing-1",
       "css-easing-2",
       "css-flexbox-1",
@@ -380,6 +380,7 @@
       "css-logical-1",
       "css-masking-1",
       "css-multicol-1",
+      "css-multicol-2",
       "css-namespaces-3",
       "css-nav-1",
       "css-nesting-1",
@@ -682,10 +683,10 @@
     ]
   },
   "stats": {
-    "crawled": 651,
+    "crawled": 652,
     "errors": 1
   },
-  "crawler": "reffy-18.1.2",
+  "crawler": "reffy-18.2.0",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -1453,11 +1454,11 @@
       ],
       "crawled": "https://dom.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 Jan 2025 08:49:32 GMT"
+        "lastModified": "Mon, 20 Jan 2025 09:37:29 GMT"
       },
       "generator": "bikeshed",
-      "date": "15 January 2025",
-      "revision": "369654b7697f08dfd813aee0ce9064ae7b24e3ec",
+      "date": "20 January 2025",
+      "revision": "e6bb17598dc78d31b2c3db86a8d9c568bd11d1de",
       "algorithms": "algorithms/dom.json",
       "links": "links/dom.json",
       "refs": "refs/dom.json",
@@ -1814,68 +1815,6 @@
       "dfns": "dfns/css-conditional-values-1.json",
       "headings": "headings/css-conditional-values-1.json",
       "ids": "ids/css-conditional-values-1.json",
-      "cddl": []
-    },
-    {
-      "url": "https://drafts.csswg.org/css-display-4/",
-      "seriesComposition": "full",
-      "shortname": "css-display-4",
-      "series": {
-        "shortname": "css-display",
-        "currentSpecification": "css-display-3",
-        "title": "CSS Display",
-        "shortTitle": "CSS Display",
-        "releaseUrl": "https://www.w3.org/TR/css-display/",
-        "nightlyUrl": "https://drafts.csswg.org/css-display/"
-      },
-      "seriesVersion": "4",
-      "seriesPrevious": "css-display-3",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
-        }
-      ],
-      "nightly": {
-        "url": "https://drafts.csswg.org/css-display-4/",
-        "status": "Editor's Draft",
-        "alternateUrls": [
-          "https://w3c.github.io/csswg-drafts/css-display-4/"
-        ],
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-display-4/Overview.bs",
-        "filename": "index.html"
-      },
-      "title": "CSS Display Module Level 4",
-      "source": "spec",
-      "shortTitle": "CSS Display 4",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "css/css-display"
-        ]
-      },
-      "versions": [
-        "https://drafts.csswg.org/css-display-4/"
-      ],
-      "crawled": "https://drafts.csswg.org/css-display-4/",
-      "crawlCacheInfo": {
-        "lastModified": "Sat, 18 Jan 2025 00:43:52 GMT"
-      },
-      "generator": "bikeshed",
-      "date": "27 December 2024",
-      "revision": "e104c6ff5bcd9490c50ab8bc1cd9646157e43cfe",
-      "links": "links/css-display-4.json",
-      "refs": "refs/css-display-4.json",
-      "css": "css/css-display.json",
-      "dfns": "dfns/css-display-4.json",
-      "headings": "headings/css-display-4.json",
-      "ids": "ids/css-display-4.json",
       "cddl": []
     },
     {
@@ -2340,68 +2279,6 @@
       "dfns": "dfns/css-mixins-1.json",
       "headings": "headings/css-mixins-1.json",
       "ids": "ids/css-mixins-1.json",
-      "cddl": []
-    },
-    {
-      "url": "https://drafts.csswg.org/css-multicol-2/",
-      "seriesComposition": "delta",
-      "shortname": "css-multicol-2",
-      "series": {
-        "shortname": "css-multicol",
-        "currentSpecification": "css-multicol-1",
-        "title": "CSS Multi-column Layout",
-        "shortTitle": "CSS Multicol",
-        "releaseUrl": "https://www.w3.org/TR/css-multicol/",
-        "nightlyUrl": "https://drafts.csswg.org/css-multicol/"
-      },
-      "seriesVersion": "2",
-      "shortTitle": "CSS Multicol 2",
-      "seriesPrevious": "css-multicol-1",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
-        }
-      ],
-      "nightly": {
-        "url": "https://drafts.csswg.org/css-multicol-2/",
-        "status": "Editor's Draft",
-        "alternateUrls": [
-          "https://w3c.github.io/csswg-drafts/css-multicol-2/"
-        ],
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-multicol-2/Overview.bs",
-        "filename": "index.html"
-      },
-      "title": "CSS Multi-column Layout Module Level 2",
-      "source": "spec",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "css/css-multicol"
-        ]
-      },
-      "versions": [
-        "https://drafts.csswg.org/css-multicol-2/"
-      ],
-      "crawled": "https://drafts.csswg.org/css-multicol-2/",
-      "crawlCacheInfo": {
-        "lastModified": "Sat, 18 Jan 2025 00:43:52 GMT"
-      },
-      "generator": "bikeshed",
-      "date": "17 December 2024",
-      "revision": "e104c6ff5bcd9490c50ab8bc1cd9646157e43cfe",
-      "links": "links/css-multicol-2.json",
-      "refs": "refs/css-multicol-2.json",
-      "css": "css/css-multicol-2.json",
-      "dfns": "dfns/css-multicol-2.json",
-      "headings": "headings/css-multicol-2.json",
-      "ids": "ids/css-multicol-2.json",
       "cddl": []
     },
     {
@@ -3067,7 +2944,7 @@
       "dfns": "dfns/fido-v2.1.json",
       "headings": "headings/fido-v2.1.json",
       "ids": "ids/fido-v2.1.json",
-      "error": "Error: Switch option without <dd> found: authorized, the authenticator sets the minPinLength return value to the current minimum PIN length value.\n        \nhttps://fidoalliance.org/specs/fido-v2.1-ps-20210615/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-algorithms.mjs:550:19\nArray.map (<anonymous>)\nserializeSteps (https://fidoalliance.org/specs/fido-v2.1-ps-20210615/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-algorithms.mjs:544:53)\n    at evaluate (evaluate at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:656:36), <anonymous>:6:28)\n    at #evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:388:19)\n    at async ExecutionContext.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:275:16)\n    at async IsolatedWorld.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/IsolatedWorld.js:97:16)\n    at async CdpFrame.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Frame.js:345:20)\n    at async CdpPage.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Page.js:808:20)\n    at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:656:25)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+      "error": "Error: Switch option without <dd> found: authorized, the authenticator sets the minPinLength return value to the current minimum PIN length value.\n        \nhttps://fidoalliance.org/specs/fido-v2.1-ps-20210615/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-algorithms.mjs:550:19\nArray.map (<anonymous>)\nserializeSteps (https://fidoalliance.org/specs/fido-v2.1-ps-20210615/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-algorithms.mjs:544:53)\n    at evaluate (evaluate at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:656:36), <anonymous>:6:28)\n    at #evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:387:19)\n    at async ExecutionContext.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:274:16)\n    at async IsolatedWorld.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/IsolatedWorld.js:97:16)\n    at async CdpFrame.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Frame.js:345:20)\n    at async CdpPage.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Page.js:808:20)\n    at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:656:25)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://fs.spec.whatwg.org/",
@@ -3319,9 +3196,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 17 Jan 2025 01:19:08 GMT"
+        "lastModified": "Mon, 20 Jan 2025 08:55:10 GMT"
       },
-      "date": "17 January 2025",
+      "date": "20 January 2025",
       "algorithms": "algorithms/html.json",
       "links": "links/html.json",
       "refs": "refs/html.json",
@@ -3685,11 +3562,11 @@
       ],
       "crawled": "https://infra.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 10 Jan 2025 10:24:32 GMT"
+        "lastModified": "Mon, 20 Jan 2025 09:01:48 GMT"
       },
       "generator": "bikeshed",
-      "date": "10 January 2025",
-      "revision": "2c3dbcedcd741806f8b9558dcbda8ce729f504fc",
+      "date": "20 January 2025",
+      "revision": "d48003101f84f836d3058f7bb7ddf55fbf42268e",
       "algorithms": "algorithms/infra.json",
       "links": "links/infra.json",
       "refs": "refs/infra.json",
@@ -3742,11 +3619,11 @@
       ],
       "crawled": "https://mimesniff.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 15 Jul 2024 14:28:18 GMT"
+        "lastModified": "Mon, 20 Jan 2025 08:47:40 GMT"
       },
       "generator": "bikeshed",
-      "date": "15 July 2024",
-      "revision": "b47be44aba066f3ef03864d9ed24eb8c7b533758",
+      "date": "20 January 2025",
+      "revision": "e1d383843d0e08edc428174e9a298a527a10f4a5",
       "algorithms": "algorithms/mimesniff.json",
       "links": "links/mimesniff.json",
       "refs": "refs/mimesniff.json",
@@ -3799,11 +3676,11 @@
       ],
       "crawled": "https://notifications.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 07 Nov 2024 14:52:39 GMT"
+        "lastModified": "Mon, 20 Jan 2025 08:47:25 GMT"
       },
       "generator": "bikeshed",
-      "date": "7 November 2024",
-      "revision": "d7f3e1a5ba09006aafa310608ac7e7a096b2190a",
+      "date": "20 January 2025",
+      "revision": "da830b44d2f8c5889dd8ebdf80b1740029971d17",
       "algorithms": "algorithms/notifications.json",
       "links": "links/notifications.json",
       "refs": "refs/notifications.json",
@@ -7985,7 +7862,7 @@
       ],
       "crawled": "https://tc39.es/proposal-set-methods/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 06 Jul 2024 03:17:20 GMT"
+        "lastModified": "Sat, 06 Jul 2024 03:17:19 GMT"
       },
       "date": "6 July 2024",
       "links": "links/tc39-set-methods.json",
@@ -8567,6 +8444,57 @@
       "cddl": []
     },
     {
+      "url": "https://w3c.github.io/element-timing/",
+      "seriesComposition": "full",
+      "shortname": "element-timing",
+      "series": {
+        "shortname": "element-timing",
+        "currentSpecification": "element-timing",
+        "title": "Element Timing API",
+        "shortTitle": "Element Timing API",
+        "nightlyUrl": "https://w3c.github.io/element-timing/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Performance Working Group",
+          "url": "https://www.w3.org/groups/wg/webperf/"
+        }
+      ],
+      "nightly": {
+        "url": "https://w3c.github.io/element-timing/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/element-timing",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Element Timing API",
+      "source": "spec",
+      "shortTitle": "Element Timing API",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://w3c.github.io/element-timing/"
+      ],
+      "crawled": "https://w3c.github.io/element-timing/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 10 Jan 2025 05:21:07 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "9 January 2025",
+      "algorithms": "algorithms/element-timing.json",
+      "links": "links/element-timing.json",
+      "refs": "refs/element-timing.json",
+      "idl": "idl/element-timing.idl",
+      "dfns": "dfns/element-timing.json",
+      "headings": "headings/element-timing.json",
+      "ids": "ids/element-timing.json",
+      "cddl": []
+    },
+    {
       "url": "https://w3c.github.io/gamepad/extensions.html",
       "seriesComposition": "full",
       "shortname": "gamepad-extensions",
@@ -8743,7 +8671,7 @@
         "filename": "index.html"
       },
       "title": "Media Playback Quality",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Media Playback Quality",
       "categories": [
         "browser"
@@ -9083,8 +9011,8 @@
       "series": {
         "shortname": "web-nfc",
         "currentSpecification": "web-nfc",
-        "title": "Web NFC API",
-        "shortTitle": "Web NFC API",
+        "title": "Web NFC",
+        "shortTitle": "Web NFC",
         "nightlyUrl": "https://w3c.github.io/web-nfc/"
       },
       "organization": "W3C",
@@ -9103,8 +9031,8 @@
         "filename": "index.html"
       },
       "title": "Web NFC",
-      "source": "specref",
-      "shortTitle": "Web NFC API",
+      "source": "spec",
+      "shortTitle": "Web NFC",
       "categories": [
         "browser"
       ],
@@ -9145,6 +9073,7 @@
         "shortTitle": "Web Share Target API",
         "nightlyUrl": "https://w3c.github.io/web-share-target/"
       },
+      "standing": "good",
       "organization": "W3C",
       "groups": [
         {
@@ -9154,19 +9083,18 @@
       ],
       "nightly": {
         "url": "https://w3c.github.io/web-share-target/",
-        "status": "Editor's Draft",
+        "status": "Unofficial Proposal Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/web-share-target",
         "sourcePath": "index.html",
         "filename": "index.html"
       },
       "title": "Web Share Target API",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Web Share Target API",
       "categories": [
         "browser"
       ],
-      "standing": "good",
       "versions": [
         "https://w3c.github.io/web-share-target/"
       ],
@@ -10468,7 +10396,7 @@
         "filename": "index.html"
       },
       "title": "Background Fetch",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Background Fetch",
       "categories": [
         "browser"
@@ -10636,7 +10564,7 @@
         "filename": "index.html"
       },
       "title": "Client Hints Infrastructure",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Client Hints Infrastructure",
       "categories": [
         "browser"
@@ -10752,7 +10680,7 @@
         "filename": "index.html"
       },
       "title": "Cookie Store API",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Cookie Store API",
       "categories": [
         "browser"
@@ -10898,6 +10826,7 @@
         "shortTitle": "CSS Parser API",
         "nightlyUrl": "https://wicg.github.io/css-parser-api/"
       },
+      "standing": "good",
       "organization": "W3C",
       "groups": [
         {
@@ -10907,19 +10836,18 @@
       ],
       "nightly": {
         "url": "https://wicg.github.io/css-parser-api/",
-        "status": "Draft Community Group Report",
+        "status": "Unofficial Proposal Draft",
         "alternateUrls": [],
         "repository": "https://github.com/WICG/css-parser-api",
         "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "CSS Parser API",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "CSS Parser API",
       "categories": [
         "browser"
       ],
-      "standing": "good",
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
         "testPaths": [
@@ -11215,7 +11143,7 @@
       "series": {
         "shortname": "document-picture-in-picture",
         "currentSpecification": "document-picture-in-picture",
-        "title": "Document Picture-in-Picture",
+        "title": "Document Picture-in-Picture Specification",
         "shortTitle": "Document Picture-in-Picture",
         "nightlyUrl": "https://wicg.github.io/document-picture-in-picture/"
       },
@@ -11235,7 +11163,7 @@
         "filename": "index.html"
       },
       "title": "Document Picture-in-Picture Specification",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Document Picture-in-Picture",
       "categories": [
         "browser"
@@ -11293,7 +11221,7 @@
         "filename": "index.html"
       },
       "title": "Document Policy",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Document Policy",
       "categories": [
         "browser"
@@ -11323,63 +11251,6 @@
       "cddl": []
     },
     {
-      "url": "https://wicg.github.io/element-timing/",
-      "seriesComposition": "full",
-      "shortname": "element-timing",
-      "series": {
-        "shortname": "element-timing",
-        "currentSpecification": "element-timing",
-        "title": "Element Timing API",
-        "shortTitle": "Element Timing API",
-        "nightlyUrl": "https://wicg.github.io/element-timing/"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Web Platform Incubator Community Group",
-          "url": "https://www.w3.org/community/wicg/"
-        }
-      ],
-      "nightly": {
-        "url": "https://wicg.github.io/element-timing/",
-        "status": "Draft Community Group Report",
-        "alternateUrls": [],
-        "repository": "https://github.com/WICG/element-timing",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
-      "title": "Element Timing API",
-      "source": "specref",
-      "shortTitle": "Element Timing API",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "element-timing"
-        ]
-      },
-      "versions": [
-        "https://wicg.github.io/element-timing/"
-      ],
-      "crawled": "https://w3c.github.io/element-timing/",
-      "crawlCacheInfo": {
-        "lastModified": "Mon, 06 Jan 2025 10:12:40 GMT"
-      },
-      "generator": "bikeshed",
-      "date": "6 January 2025",
-      "algorithms": "algorithms/element-timing.json",
-      "links": "links/element-timing.json",
-      "refs": "refs/element-timing.json",
-      "idl": "idl/element-timing.idl",
-      "dfns": "dfns/element-timing.json",
-      "headings": "headings/element-timing.json",
-      "ids": "ids/element-timing.json",
-      "cddl": []
-    },
-    {
       "url": "https://wicg.github.io/entries-api/",
       "seriesComposition": "full",
       "shortname": "entries-api",
@@ -11406,7 +11277,7 @@
         "filename": "index.html"
       },
       "title": "File and Directory Entries API",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "File and Directory Entries API",
       "categories": [
         "browser"
@@ -11569,7 +11440,7 @@
         "filename": "index.html"
       },
       "title": "File System Access",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "File System Access",
       "categories": [
         "browser"
@@ -11787,7 +11658,7 @@
         "filename": "index.html"
       },
       "title": "Idle Detection API",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Idle Detection API",
       "categories": [
         "browser"
@@ -11890,14 +11761,14 @@
       ],
       "nightly": {
         "url": "https://wicg.github.io/input-device-capabilities/",
-        "status": "Draft Community Group Report",
+        "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/WICG/input-device-capabilities",
         "sourcePath": "index.html",
         "filename": "index.html"
       },
       "title": "Input Device Capabilities",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Input Device Capabilities",
       "categories": [
         "browser"
@@ -12068,7 +11939,7 @@
         "filename": "isolated-contexts.html"
       },
       "title": "Isolated Contexts",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Isolated Contexts",
       "standing": "good",
       "versions": [
@@ -12116,7 +11987,7 @@
         "filename": "index.html"
       },
       "title": "JS Self-Profiling API",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "JS Self-Profiling API",
       "categories": [
         "browser"
@@ -12173,7 +12044,7 @@
         "filename": "index.html"
       },
       "title": "Keyboard Lock",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Keyboard Lock",
       "categories": [
         "browser"
@@ -12231,7 +12102,7 @@
         "filename": "index.html"
       },
       "title": "Keyboard Map",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Keyboard Map",
       "categories": [
         "browser"
@@ -12269,8 +12140,8 @@
       "series": {
         "shortname": "layout-instability",
         "currentSpecification": "layout-instability",
-        "title": "Layout Instability",
-        "shortTitle": "Layout Instability",
+        "title": "Layout Instability API",
+        "shortTitle": "Layout Instability API",
         "nightlyUrl": "https://wicg.github.io/layout-instability/"
       },
       "organization": "W3C",
@@ -12289,8 +12160,8 @@
         "filename": "index.html"
       },
       "title": "Layout Instability API",
-      "source": "specref",
-      "shortTitle": "Layout Instability",
+      "source": "spec",
+      "shortTitle": "Layout Instability API",
       "categories": [
         "browser"
       ],
@@ -12326,8 +12197,8 @@
       "series": {
         "shortname": "local-font-access",
         "currentSpecification": "local-font-access",
-        "title": "Local Font Access",
-        "shortTitle": "Local Font Access",
+        "title": "Local Font Access API",
+        "shortTitle": "Local Font Access API",
         "nightlyUrl": "https://wicg.github.io/local-font-access/"
       },
       "organization": "W3C",
@@ -12346,8 +12217,8 @@
         "filename": "index.html"
       },
       "title": "Local Font Access API",
-      "source": "specref",
-      "shortTitle": "Local Font Access",
+      "source": "spec",
+      "shortTitle": "Local Font Access API",
       "categories": [
         "browser"
       ],
@@ -12398,7 +12269,7 @@
         "filename": "index.html"
       },
       "title": "Manifest Incubations",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Manifest Incubations",
       "categories": [
         "browser"
@@ -12651,7 +12522,7 @@
         "filename": "index.html"
       },
       "title": "Network Information API",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Network Information API",
       "categories": [
         "browser"
@@ -12810,7 +12681,7 @@
         "filename": "index.html"
       },
       "title": "Page Lifecycle",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Page Lifecycle",
       "categories": [
         "browser"
@@ -12928,7 +12799,7 @@
         "filename": "index.html"
       },
       "title": "Web Periodic Background Synchronization",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Web Periodic Background Synchronization",
       "categories": [
         "browser"
@@ -12987,7 +12858,7 @@
         "filename": "index.html"
       },
       "title": "Requesting Permissions",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Requesting Permissions",
       "categories": [
         "browser"
@@ -13045,7 +12916,7 @@
         "filename": "index.html"
       },
       "title": "Relinquishing Permissions",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Relinquishing Permissions",
       "categories": [
         "browser"
@@ -13140,6 +13011,7 @@
         "shortTitle": "preferCurrentTab",
         "nightlyUrl": "https://wicg.github.io/prefer-current-tab/"
       },
+      "standing": "good",
       "organization": "W3C",
       "groups": [
         {
@@ -13149,19 +13021,18 @@
       ],
       "nightly": {
         "url": "https://wicg.github.io/prefer-current-tab/",
-        "status": "Draft Community Group Report",
+        "status": "Unofficial Proposal Draft",
         "alternateUrls": [],
         "repository": "https://github.com/WICG/prefer-current-tab",
         "sourcePath": "index.html",
         "filename": "index.html"
       },
       "title": "preferCurrentTab",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "preferCurrentTab",
       "categories": [
         "browser"
       ],
-      "standing": "good",
       "versions": [
         "https://wicg.github.io/prefer-current-tab/"
       ],
@@ -13431,7 +13302,7 @@
         "filename": "index.html"
       },
       "title": "Prioritized Task Scheduling",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Prioritized Task Scheduling",
       "categories": [
         "browser"
@@ -13605,7 +13476,7 @@
         "filename": "index.html"
       },
       "title": "Accelerated Shape Detection in Images",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Accelerated Shape Detection in Images",
       "categories": [
         "browser"
@@ -13663,7 +13534,7 @@
         "filename": "text.html"
       },
       "title": "Accelerated Text Detection in Images",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Accelerated Text Detection in Images",
       "categories": [
         "browser"
@@ -13767,7 +13638,7 @@
         "filename": "index.html"
       },
       "title": "Origin-bound one-time codes delivered via SMS",
-      "source": "specref",
+      "source": "spec",
       "categories": [
         "browser"
       ],
@@ -13856,8 +13727,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "Web Platform Incubator Community Group",
-          "url": "https://www.w3.org/community/wicg/"
+          "name": "Audio Community Group",
+          "url": "https://www.w3.org/community/audio-comgp/"
         }
       ],
       "nightly": {
@@ -13869,7 +13740,7 @@
         "filename": "index.html"
       },
       "title": "Web Speech API",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Web Speech API",
       "categories": [
         "browser"
@@ -14255,7 +14126,7 @@
         "filename": "index.html"
       },
       "title": "Web App Launch Handler API",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Web App Launch Handler API",
       "categories": [
         "browser"
@@ -14740,7 +14611,7 @@
         "filename": "index.html"
       },
       "title": "WebUSB API",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "WebUSB API",
       "categories": [
         "browser"
@@ -14799,7 +14670,7 @@
         "filename": "index.html"
       },
       "title": "Window Controls Overlay",
-      "source": "specref",
+      "source": "spec",
       "shortTitle": "Window Controls Overlay",
       "categories": [
         "browser"
@@ -15333,9 +15204,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 17 Jan 2025 13:38:37 GMT"
+        "lastModified": "Fri, 10 Jan 2025 13:31:01 GMT"
       },
-      "date": "17 January 2025",
+      "date": "10 January 2025",
       "links": "links/rfc6797.json",
       "ids": "ids/rfc6797.json",
       "cddl": []
@@ -15425,9 +15296,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 16 Jan 2025 11:05:31 GMT"
+        "lastModified": "Thu, 09 Jan 2025 06:51:20 GMT"
       },
-      "date": "16 January 2025",
+      "date": "9 January 2025",
       "links": "links/rfc7239.json",
       "ids": "ids/rfc7239.json",
       "cddl": []
@@ -15471,9 +15342,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 18 Jan 2025 12:15:29 GMT"
+        "lastModified": "Sat, 11 Jan 2025 05:45:10 GMT"
       },
-      "date": "18 January 2025",
+      "date": "11 January 2025",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json",
       "cddl": []
@@ -15981,6 +15852,53 @@
       "cddl": []
     },
     {
+      "url": "https://www.rfc-editor.org/rfc/rfc8610",
+      "seriesComposition": "full",
+      "shortname": "rfc8610",
+      "series": {
+        "shortname": "rfc8610",
+        "currentSpecification": "rfc8610",
+        "title": "Concise Data Definition Language (CDDL): A Notational Convention to Express Concise Binary Object Representation (CBOR) and JSON Data Structures",
+        "shortTitle": "CDDL",
+        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc8610"
+      },
+      "shortTitle": "CDDL",
+      "organization": "IETF",
+      "groups": [
+        {
+          "name": "Concise Binary Object Representation Maintenance and Extensions Working Group",
+          "url": "https://datatracker.ietf.org/wg/cbor/"
+        }
+      ],
+      "nightly": {
+        "url": "https://www.rfc-editor.org/rfc/rfc8610",
+        "status": "Proposed Standard",
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc8610",
+          "https://tools.ietf.org/html/rfc8610"
+        ],
+        "filename": "rfc8610.html"
+      },
+      "title": "RFC 8610: Concise Data Definition Language (CDDL): A Notational Convention to Express Concise Binary Object Representation (CBOR) and JSON Data Structures",
+      "source": "ietf",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.rfc-editor.org/rfc/rfc8610"
+      ],
+      "crawled": "https://www.rfc-editor.org/rfc/rfc8610",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 14 Jan 2025 02:03:41 GMT"
+      },
+      "date": "14 January 2025",
+      "links": "links/rfc8610.json",
+      "dfns": "dfns/rfc8610.json",
+      "ids": "ids/rfc8610.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.rfc-editor.org/rfc/rfc8878",
       "seriesComposition": "full",
       "shortname": "rfc8878",
@@ -16019,9 +15937,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8878",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 19 Jan 2025 16:27:42 GMT"
+        "lastModified": "Sun, 12 Jan 2025 00:47:59 GMT"
       },
-      "date": "19 January 2025",
+      "date": "12 January 2025",
       "links": "links/rfc8878.json",
       "refs": "refs/rfc8878.json",
       "headings": "headings/rfc8878.json",
@@ -16067,9 +15985,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 Jan 2025 21:40:49 GMT"
+        "lastModified": "Wed, 08 Jan 2025 04:37:26 GMT"
       },
-      "date": "15 January 2025",
+      "date": "8 January 2025",
       "links": "links/rfc8942.json",
       "refs": "refs/rfc8942.json",
       "headings": "headings/rfc8942.json",
@@ -16375,9 +16293,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 17 Jan 2025 05:27:38 GMT"
+        "lastModified": "Thu, 09 Jan 2025 04:36:17 GMT"
       },
-      "date": "17 January 2025",
+      "date": "9 January 2025",
       "algorithms": "algorithms/rfc9163.json",
       "links": "links/rfc9163.json",
       "refs": "refs/rfc9163.json",
@@ -16532,9 +16450,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9649",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 17 Jan 2025 09:38:40 GMT"
+        "lastModified": "Tue, 14 Jan 2025 12:42:52 GMT"
       },
-      "date": "17 January 2025",
+      "date": "14 January 2025",
       "algorithms": "algorithms/rfc9649.json",
       "links": "links/rfc9649.json",
       "refs": "refs/rfc9649.json",
@@ -20168,6 +20086,74 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/css-display-4/",
+      "seriesComposition": "full",
+      "shortname": "css-display-4",
+      "series": {
+        "shortname": "css-display",
+        "currentSpecification": "css-display-3",
+        "title": "CSS Display",
+        "shortTitle": "CSS Display",
+        "releaseUrl": "https://www.w3.org/TR/css-display/",
+        "nightlyUrl": "https://drafts.csswg.org/css-display/"
+      },
+      "seriesVersion": "4",
+      "seriesPrevious": "css-display-3",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-display-4/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-display-4/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-display-4/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-display-4/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Display Module Level 4",
+      "source": "w3c",
+      "shortTitle": "CSS Display 4",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-display"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/css-display-4/",
+        "https://drafts.csswg.org/css-display-4/"
+      ],
+      "crawled": "https://drafts.csswg.org/css-display-4/",
+      "crawlCacheInfo": {
+        "lastModified": "Sat, 18 Jan 2025 00:43:52 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "27 December 2024",
+      "revision": "e104c6ff5bcd9490c50ab8bc1cd9646157e43cfe",
+      "links": "links/css-display-4.json",
+      "refs": "refs/css-display-4.json",
+      "css": "css/css-display.json",
+      "dfns": "dfns/css-display-4.json",
+      "headings": "headings/css-display-4.json",
+      "ids": "ids/css-display-4.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/css-easing-1/",
       "seriesComposition": "full",
       "shortname": "css-easing-1",
@@ -21532,10 +21518,77 @@
       "revision": "e104c6ff5bcd9490c50ab8bc1cd9646157e43cfe",
       "links": "links/css-multicol-1.json",
       "refs": "refs/css-multicol-1.json",
-      "css": "css/css-multicol.json",
       "dfns": "dfns/css-multicol-1.json",
       "headings": "headings/css-multicol-1.json",
       "ids": "ids/css-multicol-1.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/css-multicol-2/",
+      "seriesComposition": "full",
+      "shortname": "css-multicol-2",
+      "series": {
+        "shortname": "css-multicol",
+        "currentSpecification": "css-multicol-1",
+        "title": "CSS Multi-column Layout",
+        "shortTitle": "CSS Multicol",
+        "releaseUrl": "https://www.w3.org/TR/css-multicol/",
+        "nightlyUrl": "https://drafts.csswg.org/css-multicol/"
+      },
+      "seriesVersion": "2",
+      "shortTitle": "CSS Multicol 2",
+      "seriesPrevious": "css-multicol-1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-multicol-2/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-multicol-2/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-multicol-2/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-multicol-2/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Multi-column Layout Module Level 2",
+      "source": "w3c",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-multicol"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/css-multicol-2/",
+        "https://drafts.csswg.org/css-multicol-2/"
+      ],
+      "crawled": "https://drafts.csswg.org/css-multicol-2/",
+      "crawlCacheInfo": {
+        "lastModified": "Sat, 18 Jan 2025 00:43:52 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "17 December 2024",
+      "revision": "e104c6ff5bcd9490c50ab8bc1cd9646157e43cfe",
+      "links": "links/css-multicol-2.json",
+      "refs": "refs/css-multicol-2.json",
+      "css": "css/css-multicol.json",
+      "dfns": "dfns/css-multicol-2.json",
+      "headings": "headings/css-multicol-2.json",
+      "ids": "ids/css-multicol-2.json",
       "cddl": []
     },
     {
@@ -27319,7 +27372,7 @@
       ],
       "crawled": "https://w3c.github.io/graphics-aam/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 11 Dec 2024 17:52:06 GMT"
+        "lastModified": "Wed, 11 Dec 2024 17:52:05 GMT"
       },
       "generator": "respec",
       "date": "11 December 2024",
@@ -27575,7 +27628,7 @@
       ],
       "crawled": "https://w3c.github.io/html-aam/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 16 Jan 2025 14:19:53 GMT"
+        "lastModified": "Thu, 16 Jan 2025 14:19:52 GMT"
       },
       "generator": "respec",
       "date": "16 January 2025",
@@ -29968,7 +30021,7 @@
       ],
       "crawled": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 23 Jul 2024 08:09:25 GMT"
+        "lastModified": "Tue, 23 Jul 2024 08:09:24 GMT"
       },
       "generator": "respec",
       "date": "23 July 2024",
@@ -34938,7 +34991,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vc-data-integrity/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -37122,7 +37175,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/webgpu/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -38426,7 +38479,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/WGSL/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "title": "WebGPU Shading Language",
