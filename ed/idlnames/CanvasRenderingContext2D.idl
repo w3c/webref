@@ -3,9 +3,10 @@
 interface CanvasRenderingContext2D {
   // back-reference to the canvas
   readonly attribute HTMLCanvasElement canvas;
-
-  CanvasRenderingContext2DSettings getContextAttributes();
 };
+
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+CanvasRenderingContext2D includes CanvasSettings;
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 CanvasRenderingContext2D includes CanvasState;

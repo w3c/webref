@@ -1,4 +1,4 @@
-// Source: Element Timing API (https://wicg.github.io/element-timing/)
+// Source: Element Timing API (https://w3c.github.io/element-timing/)
 [Exposed=Window]
 interface PerformanceElementTiming : PerformanceEntry {
     readonly attribute DOMHighResTimeStamp renderTime;
@@ -13,5 +13,5 @@ interface PerformanceElementTiming : PerformanceEntry {
     [Default] object toJSON();
 };
 
-// Source: Element Timing API (https://wicg.github.io/element-timing/)
+// Source: Element Timing API (https://w3c.github.io/element-timing/)
 PerformanceElementTiming includes PaintTimingMixin;

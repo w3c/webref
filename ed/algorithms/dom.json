@@ -1190,20 +1190,20 @@
     {
       "name": "find a slot",
       "href": "https://dom.spec.whatwg.org/#find-a-slot",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"find a slot|finding a slot\" id=\"find-a-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a slot</dfn> for a given <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slotable\" id=\"ref-for-concept-slotable①⓪\">slottable</a> <var>slottable</var> and an optional <i>open flag</i> (unset unless stated otherwise), run these\nsteps:",
-      "rationale": "if",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a slot</dfn> for a given <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slotable\" id=\"ref-for-concept-slotable①⓪\">slottable</a> <var>slottable</var> and an optional\nboolean <var>open</var> (default false):",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>slottable</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent⑦\">parent</a> is null, then return null.</p>"
+          "html": "<p>If <var>slottable</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent⑦\">parent</a> is null, then return null. </p>"
         },
         {
-          "html": "<p>Let <var>shadow</var> be <var>slottable</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent⑧\">parent</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-shadow-root\" id=\"ref-for-concept-element-shadow-root\">shadow root</a>.</p>"
+          "html": "<p>Let <var>shadow</var> be <var>slottable</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent⑧\">parent</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-shadow-root\" id=\"ref-for-concept-element-shadow-root\">shadow root</a>. </p>"
         },
         {
-          "html": "<p>If <var>shadow</var> is null, then return null.</p>"
+          "html": "<p>If <var>shadow</var> is null, then return null. </p>"
         },
         {
-          "html": "<p>If the <i>open flag</i> is set and <var>shadow</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-mode\" id=\"ref-for-shadowroot-mode③\">mode</a> is <em>not</em> \"<code>open</code>\", then return null.</p>"
+          "html": "<p>If <var>open</var> is true and <var>shadow</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-mode\" id=\"ref-for-shadowroot-mode③\">mode</a> is not\n \"<code>open</code>\", then return null. </p>"
         },
         {
           "html": "<p>If <var>shadow</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-slot-assignment\" id=\"ref-for-shadowroot-slot-assignment\">slot assignment</a> is \"<code>manual</code>\", then\n return the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slot\" id=\"ref-for-concept-slot①①\">slot</a> in <var>shadow</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" id=\"ref-for-concept-tree-descendant③\">descendants</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#manually-assigned-nodes\" id=\"ref-for-manually-assigned-nodes\">manually assigned nodes</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain③\">contains</a> <var>slottable</var>, if any; otherwise\n null. </p>"
@@ -1216,11 +1216,11 @@
     {
       "name": "find slottables",
       "href": "https://dom.spec.whatwg.org/#find-slotables",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"find slottables|finding slottables\" id=\"find-slotables\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find slottables</dfn> for a given <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slot\" id=\"ref-for-concept-slot①③\">slot</a> <var>slot</var>, run these steps:",
-      "rationale": "let",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"find-slotables\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find slottables</dfn> for a given <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slot\" id=\"ref-for-concept-slot①③\">slot</a> <var>slot</var>:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>result</var> be an empty list.</p>"
+          "html": "<p>Let <var>result</var> be « ». </p>"
         },
         {
           "html": "<p>Let <var>root</var> be <var>slot</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root①②\">root</a>. </p>"
@@ -1233,11 +1233,8 @@
         },
         {
           "html": "If <var>root</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-slot-assignment\" id=\"ref-for-shadowroot-slot-assignment①\">slot assignment</a> is \"<code>manual</code>\":",
-          "rationale": "let",
+          "rationale": "for",
           "steps": [
-            {
-              "html": "<p>Let <var>result</var> be « ». </p>"
-            },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">For each</a> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slotable\" id=\"ref-for-concept-slotable①①\">slottable</a> <var>slottable</var> of <var>slot</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#manually-assigned-nodes\" id=\"ref-for-manually-assigned-nodes①\">manually assigned nodes</a>, if <var>slottable</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent⑨\">parent</a> is <var>host</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑧\">append</a> <var>slottable</var> to <var>result</var>. </p>"
             }
@@ -1256,30 +1253,30 @@
           ]
         },
         {
-          "html": "<p>Return <var>result</var>.</p>"
+          "html": "<p>Return <var>result</var>. </p>"
         }
       ]
     },
     {
       "name": "find flattened slottables",
       "href": "https://dom.spec.whatwg.org/#find-flattened-slotables",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"find flattened slottables|finding flattened slottables\" id=\"find-flattened-slotables\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find flattened slottables</dfn> for a given <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slot\" id=\"ref-for-concept-slot①④\">slot</a> <var>slot</var>, run these steps:",
-      "rationale": "let",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"find-flattened-slotables\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find flattened slottables</dfn> for a given <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slot\" id=\"ref-for-concept-slot①④\">slot</a> <var>slot</var>:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>result</var> be an empty list.</p>"
+          "html": "<p>Let <var>result</var> be « ». </p>"
         },
         {
-          "html": "<p>If <var>slot</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root①③\">root</a> is not a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-root\" id=\"ref-for-concept-shadow-root①⓪\">shadow root</a>, then return <var>result</var>.</p>"
+          "html": "<p>If <var>slot</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root①③\">root</a> is not a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-root\" id=\"ref-for-concept-shadow-root①⓪\">shadow root</a>, then return <var>result</var>. </p>"
         },
         {
-          "html": "<p>Let <var>slottables</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#find-slotables\" id=\"ref-for-find-slotables\">finding slottables</a> given <var>slot</var>.</p>"
+          "html": "<p>Let <var>slottables</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#find-slotables\" id=\"ref-for-find-slotables\">finding slottables</a> given <var>slot</var>. </p>"
         },
         {
-          "html": "<p>If <var>slottables</var> is the empty list, then append each <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slotable\" id=\"ref-for-concept-slotable①③\">slottable</a> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-child\" id=\"ref-for-concept-tree-child①③\">child</a> of <var>slot</var>, in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order⑨\">tree order</a>, to <var>slottables</var>.</p>"
+          "html": "<p>If <var>slottables</var> is the empty list, then append each <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slotable\" id=\"ref-for-concept-slotable①③\">slottable</a> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-child\" id=\"ref-for-concept-tree-child①③\">child</a> of <var>slot</var>, in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order⑨\">tree order</a>, to <var>slottables</var>. </p>"
         },
         {
-          "html": "For each <var>node</var> in <var>slottables</var>:",
+          "html": "For each <var>node</var> of <var>slottables</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1287,28 +1284,28 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>temporaryResult</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#find-flattened-slotables\" id=\"ref-for-find-flattened-slotables\">finding flattened slottables</a> given <var>node</var>.</p>"
+                  "html": "<p>Let <var>temporaryResult</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#find-flattened-slotables\" id=\"ref-for-find-flattened-slotables\">finding flattened slottables</a> given <var>node</var>. </p>"
                 },
                 {
-                  "html": "<p>Append each <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slotable\" id=\"ref-for-concept-slotable①④\">slottable</a> in <var>temporaryResult</var>, in order, to <var>result</var>.</p>"
+                  "html": "<p>Append each <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slotable\" id=\"ref-for-concept-slotable①④\">slottable</a> in <var>temporaryResult</var>, in order, to <var>result</var>. </p>"
                 }
               ]
             },
             {
-              "html": "<p>Otherwise, append <var>node</var> to <var>result</var>.</p>"
+              "html": "<p>Otherwise, append <var>node</var> to <var>result</var>. </p>"
             }
           ]
         },
         {
-          "html": "<p>Return <var>result</var>.</p>"
+          "html": "<p>Return <var>result</var>. </p>"
         }
       ]
     },
     {
       "name": "assign slottables",
       "href": "https://dom.spec.whatwg.org/#assign-slotables",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"assign-slotables\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">assign slottables</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slot\" id=\"ref-for-concept-slot①⑥\">slot</a> <var>slot</var>,\nrun these steps:",
-      "rationale": "let",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"assign-slotables\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">assign slottables</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slot\" id=\"ref-for-concept-slot①⑥\">slot</a> <var>slot</var>:",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>slottables</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#find-slotables\" id=\"ref-for-find-slotables①\">finding slottables</a> for <var>slot</var>. </p>"
@@ -1320,15 +1317,15 @@
           "html": "<p>Set <var>slot</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#slot-assigned-nodes\" id=\"ref-for-slot-assigned-nodes①\">assigned nodes</a> to <var>slottables</var>. </p>"
         },
         {
-          "html": "<p>For each <var>slottable</var> in <var>slottables</var>, set <var>slottable</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#slotable-assigned-slot\" id=\"ref-for-slotable-assigned-slot②\">assigned slot</a> to <var>slot</var>. </p>"
+          "html": "<p>For each <var>slottable</var> of <var>slottables</var>, set <var>slottable</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#slotable-assigned-slot\" id=\"ref-for-slotable-assigned-slot②\">assigned slot</a> to <var>slot</var>. </p>"
         }
       ]
     },
     {
       "name": "assign a slot",
       "href": "https://dom.spec.whatwg.org/#assign-a-slot",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"assign-a-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">assign a slot</dfn>, given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slotable\" id=\"ref-for-concept-slotable①⑤\">slottable</a> <var>slottable</var>, run these\nsteps:",
-      "rationale": "let",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"assign-a-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">assign a slot</dfn>, given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slotable\" id=\"ref-for-concept-slotable①⑤\">slottable</a> <var>slottable</var>:",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>slot</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#find-a-slot\" id=\"ref-for-find-a-slot①\">finding a slot</a> with <var>slottable</var>. </p>"
@@ -1341,8 +1338,8 @@
     {
       "name": "signal a slot change",
       "href": "https://dom.spec.whatwg.org/#signal-a-slot-change",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"signal-a-slot-change\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">signal a slot change</dfn>, for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slot\" id=\"ref-for-concept-slot①⑨\">slot</a> <var>slot</var>, run these steps:",
-      "rationale": "append",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"signal-a-slot-change\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">signal a slot change</dfn>, for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slot\" id=\"ref-for-concept-slot①⑨\">slot</a> <var>slot</var>:",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append⑥\">Append</a> <var>slot</var> to <var>slot</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-agent\" id=\"ref-for-relevant-agent\">relevant agent</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#signal-slot-list\" id=\"ref-for-signal-slot-list\">signal slots</a>. </p>"

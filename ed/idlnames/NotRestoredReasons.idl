@@ -1,10 +1,10 @@
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 [Exposed=Window]
 interface NotRestoredReasons {
-  readonly attribute DOMString? src;
+  readonly attribute USVString? src;
   readonly attribute DOMString? id;
   readonly attribute DOMString? name;
-  readonly attribute DOMString? url;
+  readonly attribute USVString? url;
   readonly attribute FrozenArray<NotRestoredReasonDetails>? reasons;
   readonly attribute FrozenArray<NotRestoredReasons>? children;
   [Default] object toJSON();

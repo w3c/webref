@@ -15,6 +15,13 @@
         "title": "HTML Standard",
         "url": "https://html.spec.whatwg.org/multipage/"
       },
+      "fragment": "OffscreenCanvasRenderingContext2D includes CanvasSettings;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
       "fragment": "OffscreenCanvasRenderingContext2D includes CanvasState;"
     },
     {
@@ -118,6 +125,21 @@
   ],
   "inheritance": null,
   "includes": [
+    {
+      "name": "CanvasSettings",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin CanvasSettings {\n  // settings\n  CanvasRenderingContext2DSettings getContextAttributes();\n};",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvassettings"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
     {
       "name": "CanvasState",
       "type": "interface mixin",

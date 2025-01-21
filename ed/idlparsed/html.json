@@ -16896,7 +16896,7 @@
         "href": "https://html.spec.whatwg.org/multipage/canvas.html#imagesmoothingquality"
       },
       "CanvasRenderingContext2D": {
-        "fragment": "[Exposed=Window]\ninterface CanvasRenderingContext2D {\n  // back-reference to the canvas\n  readonly attribute HTMLCanvasElement canvas;\n\n  CanvasRenderingContext2DSettings getContextAttributes();\n};",
+        "fragment": "[Exposed=Window]\ninterface CanvasRenderingContext2D {\n  // back-reference to the canvas\n  readonly attribute HTMLCanvasElement canvas;\n};",
         "type": "interface",
         "name": "CanvasRenderingContext2D",
         "inheritance": null,
@@ -16916,7 +16916,28 @@
             "special": "",
             "readonly": true,
             "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-canvas"
-          },
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvasrenderingcontext2d"
+      },
+      "CanvasSettings": {
+        "fragment": "interface mixin CanvasSettings {\n  // settings\n  CanvasRenderingContext2DSettings getContextAttributes();\n};",
+        "type": "interface mixin",
+        "name": "CanvasSettings",
+        "inheritance": null,
+        "members": [
           {
             "type": "operation",
             "name": "getContextAttributes",
@@ -16934,19 +16955,9 @@
             "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-canvas-getcontextattributes"
           }
         ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
+        "extAttrs": [],
         "partial": false,
-        "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvasrenderingcontext2d"
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvassettings"
       },
       "CanvasState": {
         "fragment": "interface mixin CanvasState {\n  // state\n  undefined save(); // push state on state stack\n  undefined restore(); // pop state stack and restore state\n  undefined reset(); // reset the rendering context to its default state\n  boolean isContextLost(); // return whether context is lost\n};",
@@ -29292,7 +29303,7 @@
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#notrestoredreasondetails"
       },
       "NotRestoredReasons": {
-        "fragment": "[Exposed=Window]\ninterface NotRestoredReasons {\n  readonly attribute DOMString? src;\n  readonly attribute DOMString? id;\n  readonly attribute DOMString? name;\n  readonly attribute DOMString? url;\n  readonly attribute FrozenArray<NotRestoredReasonDetails>? reasons;\n  readonly attribute FrozenArray<NotRestoredReasons>? children;\n  [Default] object toJSON();\n};",
+        "fragment": "[Exposed=Window]\ninterface NotRestoredReasons {\n  readonly attribute USVString? src;\n  readonly attribute DOMString? id;\n  readonly attribute DOMString? name;\n  readonly attribute USVString? url;\n  readonly attribute FrozenArray<NotRestoredReasonDetails>? reasons;\n  readonly attribute FrozenArray<NotRestoredReasons>? children;\n  [Default] object toJSON();\n};",
         "type": "interface",
         "name": "NotRestoredReasons",
         "inheritance": null,
@@ -29306,7 +29317,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "USVString"
             },
             "extAttrs": [],
             "special": "",
@@ -29354,7 +29365,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "USVString"
             },
             "extAttrs": [],
             "special": "",
@@ -40104,6 +40115,13 @@
       ],
       "CanvasRenderingContext2D": [
         {
+          "fragment": "CanvasRenderingContext2D includes CanvasSettings;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CanvasRenderingContext2D",
+          "includes": "CanvasSettings"
+        },
+        {
           "fragment": "CanvasRenderingContext2D includes CanvasState;",
           "type": "includes",
           "extAttrs": [],
@@ -40226,6 +40244,13 @@
         }
       ],
       "OffscreenCanvasRenderingContext2D": [
+        {
+          "fragment": "OffscreenCanvasRenderingContext2D includes CanvasSettings;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "OffscreenCanvasRenderingContext2D",
+          "includes": "CanvasSettings"
+        },
         {
           "fragment": "OffscreenCanvasRenderingContext2D includes CanvasState;",
           "type": "includes",
@@ -44042,7 +44067,7 @@
       ],
       "CanvasRenderingContext2D": [
         "HTMLCanvasElement",
-        "CanvasRenderingContext2DSettings",
+        "CanvasSettings",
         "CanvasState",
         "CanvasTransform",
         "CanvasCompositing",
@@ -44059,6 +44084,9 @@
         "CanvasPathDrawingStyles",
         "CanvasTextDrawingStyles",
         "CanvasPath"
+      ],
+      "CanvasSettings": [
+        "CanvasRenderingContext2DSettings"
       ],
       "CanvasState": [],
       "CanvasTransform": [
@@ -44147,6 +44175,7 @@
       ],
       "OffscreenCanvasRenderingContext2D": [
         "OffscreenCanvas",
+        "CanvasSettings",
         "CanvasState",
         "CanvasTransform",
         "CanvasCompositing",
