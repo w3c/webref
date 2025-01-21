@@ -16,7 +16,7 @@ import util from 'node:util';
 import { fileURLToPath } from 'node:url';
 import { execFile as execFileCb } from 'node:child_process';
 import { loadJSON } from './utils.js';
-import { expandCrawlResult } from 'reffy';
+import { expandCrawlResult, isLatestLevelThatPasses } from 'reffy';
 const execFile = util.promisify(execFileCb);
 
 
@@ -247,7 +247,7 @@ async function dropCSSPropertyDuplicates(folder) {
       }
     }, spec.css);
     const json = JSON.stringify(css, null, 2) + '\n';
-    const filename = spec.shortname === spec.series.currentSpecification ?
+    const filename = isLatestLevelThatPasses(spec, index.results, spec => spec.css) ?
       spec.series.shortname :
       spec.shortname
     const pathname = path.join(folder, 'css', filename + '.json');
