@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-01-20T01:34:45.220Z",
+  "date": "2025-01-21T01:51:15.855Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -28,7 +28,6 @@
       "css-borders-4",
       "css-color-6",
       "css-conditional-values-1",
-      "css-display-4",
       "css-env-1",
       "css-extensions-1",
       "css-forms-1",
@@ -37,7 +36,6 @@
       "css-images-5",
       "css-link-params-1",
       "css-mixins-1",
-      "css-multicol-2",
       "css-page-4",
       "css-position-4",
       "css-shapes-2",
@@ -154,6 +152,7 @@
       "at-driver",
       "contentEditable",
       "execCommand",
+      "element-timing",
       "gamepad-extensions",
       "long-animation-frames",
       "mathml-aam",
@@ -205,7 +204,6 @@
       "direct-sockets",
       "document-picture-in-picture",
       "document-policy",
-      "element-timing",
       "entries-api",
       "eyedropper-api",
       "fenced-frame",
@@ -294,6 +292,7 @@
       "rfc8288",
       "rfc8297",
       "rfc8470",
+      "rfc8610",
       "rfc8878",
       "rfc8942",
       "rfc9110",
@@ -361,6 +360,7 @@
       "css-content-3",
       "css-counter-styles-3",
       "css-display-3",
+      "css-display-4",
       "css-easing-1",
       "css-easing-2",
       "css-flexbox-1",
@@ -381,6 +381,7 @@
       "css-logical-1",
       "css-masking-1",
       "css-multicol-1",
+      "css-multicol-2",
       "css-namespaces-3",
       "css-nav-1",
       "css-nesting-1",
@@ -674,10 +675,10 @@
     ]
   },
   "stats": {
-    "crawled": 340,
+    "crawled": 342,
     "errors": 0
   },
-  "crawler": "reffy-18.1.2",
+  "crawler": "reffy-18.2.1",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -723,7 +724,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "20 January 2025",
+      "date": "21 January 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -4158,10 +4159,77 @@
       "revision": "70cd35cf40df68f7167f30747ec7750636288b2e",
       "links": "links/css-display-3.json",
       "refs": "refs/css-display-3.json",
-      "css": "css/css-display.json",
       "dfns": "dfns/css-display-3.json",
       "headings": "headings/css-display-3.json",
       "ids": "ids/css-display-3.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/css-display-4/",
+      "seriesComposition": "full",
+      "shortname": "css-display-4",
+      "series": {
+        "shortname": "css-display",
+        "currentSpecification": "css-display-3",
+        "title": "CSS Display",
+        "shortTitle": "CSS Display",
+        "releaseUrl": "https://www.w3.org/TR/css-display/",
+        "nightlyUrl": "https://drafts.csswg.org/css-display/"
+      },
+      "seriesVersion": "4",
+      "seriesPrevious": "css-display-3",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-display-4/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-display-4/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-display-4/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-display-4/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Display Module Level 4",
+      "source": "w3c",
+      "shortTitle": "CSS Display 4",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-display"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/css-display-4/",
+        "https://drafts.csswg.org/css-display-4/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-display-4/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 17 Dec 2024 12:04:12 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "19 December 2024",
+      "revision": "7f0f0a50a9defe54dc0a12b0789a3da8c10326a0",
+      "links": "links/css-display-4.json",
+      "refs": "refs/css-display-4.json",
+      "css": "css/css-display.json",
+      "dfns": "dfns/css-display-4.json",
+      "headings": "headings/css-display-4.json",
+      "ids": "ids/css-display-4.json",
       "cddl": []
     },
     {
@@ -5526,10 +5594,77 @@
       "revision": "fe1b672eac7355ab2b640e38e99f7c58edcab512",
       "links": "links/css-multicol-1.json",
       "refs": "refs/css-multicol-1.json",
-      "css": "css/css-multicol.json",
       "dfns": "dfns/css-multicol-1.json",
       "headings": "headings/css-multicol-1.json",
       "ids": "ids/css-multicol-1.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/css-multicol-2/",
+      "seriesComposition": "full",
+      "shortname": "css-multicol-2",
+      "series": {
+        "shortname": "css-multicol",
+        "currentSpecification": "css-multicol-1",
+        "title": "CSS Multi-column Layout",
+        "shortTitle": "CSS Multicol",
+        "releaseUrl": "https://www.w3.org/TR/css-multicol/",
+        "nightlyUrl": "https://drafts.csswg.org/css-multicol/"
+      },
+      "seriesVersion": "2",
+      "shortTitle": "CSS Multicol 2",
+      "seriesPrevious": "css-multicol-1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-multicol-2/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-multicol-2/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-multicol-2/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-multicol-2/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Multi-column Layout Module Level 2",
+      "source": "w3c",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-multicol"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/css-multicol-2/",
+        "https://drafts.csswg.org/css-multicol-2/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-multicol-2/",
+      "crawlCacheInfo": {
+        "lastModified": "Sun, 15 Dec 2024 04:53:34 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "19 December 2024",
+      "revision": "f67350729e08c6ea8ccfc404830ea8c3460d1c27",
+      "links": "links/css-multicol-2.json",
+      "refs": "refs/css-multicol-2.json",
+      "css": "css/css-multicol.json",
+      "dfns": "dfns/css-multicol-2.json",
+      "headings": "headings/css-multicol-2.json",
+      "ids": "ids/css-multicol-2.json",
       "cddl": []
     },
     {
@@ -9997,7 +10132,7 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-initdata-registry/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:39:25 GMT"
+        "lastModified": "Fri, 12 Jul 2024 12:26:24 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
@@ -15795,11 +15930,11 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf12-concepts/",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 19 Jan 2025 21:43:28 GMT"
+        "lastModified": "Mon, 20 Jan 2025 16:26:33 GMT"
       },
       "generator": "respec",
-      "date": "19 January 2025",
-      "revision": "729316147dc27c3b1fc35c82c7e275086de8469b",
+      "date": "20 January 2025",
+      "revision": "8b344fa07d873c71a415bbd93fbb839ed9ddf95f",
       "algorithms": "algorithms/rdf12-concepts.json",
       "links": "links/rdf12-concepts.json",
       "refs": "refs/rdf12-concepts.json",
@@ -17594,11 +17729,11 @@
       ],
       "crawled": "https://www.w3.org/TR/sparql12-query/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 27 Dec 2024 09:09:42 GMT"
+        "lastModified": "Mon, 20 Jan 2025 15:47:16 GMT"
       },
       "generator": "respec",
-      "date": "27 December 2024",
-      "revision": "8390906e3c2634bb67e9f2b1f48b269218b55559",
+      "date": "20 January 2025",
+      "revision": "c0737177031dc1a46ea3b7f8253cbcacc8e7639f",
       "algorithms": "algorithms/sparql12-query.json",
       "links": "links/sparql12-query.json",
       "refs": "refs/sparql12-query.json",
@@ -18962,7 +19097,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vc-data-integrity/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -21146,7 +21281,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/webgpu/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -22452,7 +22587,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/WGSL/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "title": "WebGPU Shading Language",

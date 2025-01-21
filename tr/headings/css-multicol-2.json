@@ -1,0 +1,335 @@
+{
+  "spec": {
+    "title": "CSS Multi-column Layout Module Level 2",
+    "url": "https://www.w3.org/TR/css-multicol-2/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/css-multicol-2/#title",
+      "level": 1,
+      "title": "CSS Multi-column Layout Module Level 2"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/css-multicol-2/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/css-multicol-2/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/css-multicol-2/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/css-multicol-2/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "values",
+      "href": "https://www.w3.org/TR/css-multicol-2/#values",
+      "level": 3,
+      "title": "Value Definitions",
+      "number": "1.1"
+    },
+    {
+      "id": "interaction",
+      "href": "https://www.w3.org/TR/css-multicol-2/#interaction",
+      "level": 2,
+      "title": "Module Interactions",
+      "number": "2"
+    },
+    {
+      "id": "the-multi-column-model",
+      "href": "https://www.w3.org/TR/css-multicol-2/#the-multi-column-model",
+      "level": 2,
+      "title": "The multi-column model",
+      "number": "3"
+    },
+    {
+      "id": "the-number-and-width-of-columns",
+      "href": "https://www.w3.org/TR/css-multicol-2/#the-number-and-width-of-columns",
+      "level": 2,
+      "title": "The number and width of columns",
+      "number": "4"
+    },
+    {
+      "id": "cw",
+      "href": "https://www.w3.org/TR/css-multicol-2/#cw",
+      "level": 3,
+      "title": "The Inline Size of Columns: the column-width property",
+      "number": "4.1"
+    },
+    {
+      "id": "cc",
+      "href": "https://www.w3.org/TR/css-multicol-2/#cc",
+      "level": 3,
+      "title": "The Number of Columns: the column-count property",
+      "number": "4.2"
+    },
+    {
+      "id": "columns",
+      "href": "https://www.w3.org/TR/css-multicol-2/#columns",
+      "level": 3,
+      "title": "The column-width and column-count Shorthand: The columns Property",
+      "number": "4.3"
+    },
+    {
+      "id": "pseudo-algorithm",
+      "href": "https://www.w3.org/TR/css-multicol-2/#pseudo-algorithm",
+      "level": 3,
+      "title": "The Pseudo-algorithm",
+      "number": "4.4"
+    },
+    {
+      "id": "stacking-context",
+      "href": "https://www.w3.org/TR/css-multicol-2/#stacking-context",
+      "level": 3,
+      "title": "Stacking Context",
+      "number": "4.5"
+    },
+    {
+      "id": "column-pseudo",
+      "href": "https://www.w3.org/TR/css-multicol-2/#column-pseudo",
+      "level": 3,
+      "title": "Styling Columns: the ::column pseudo-element",
+      "number": "4.6"
+    },
+    {
+      "id": "column-gaps-and-rules",
+      "href": "https://www.w3.org/TR/css-multicol-2/#column-gaps-and-rules",
+      "level": 2,
+      "title": "Column Gaps and Rules",
+      "number": "5"
+    },
+    {
+      "id": "cg",
+      "href": "https://www.w3.org/TR/css-multicol-2/#cg",
+      "level": 3,
+      "title": "Gutters Between Columns: the column-gap property",
+      "number": "5.1"
+    },
+    {
+      "id": "crc",
+      "href": "https://www.w3.org/TR/css-multicol-2/#crc",
+      "level": 3,
+      "title": "The Color of Column Rules: the column-rule-color property",
+      "number": "5.2"
+    },
+    {
+      "id": "crs",
+      "href": "https://www.w3.org/TR/css-multicol-2/#crs",
+      "level": 3,
+      "title": "The Style Of Column Rules: the column-rule-style property",
+      "number": "5.3"
+    },
+    {
+      "id": "crw",
+      "href": "https://www.w3.org/TR/css-multicol-2/#crw",
+      "level": 3,
+      "title": "The Width Of Column Rules: the column-rule-width property",
+      "number": "5.4"
+    },
+    {
+      "id": "cr",
+      "href": "https://www.w3.org/TR/css-multicol-2/#cr",
+      "level": 3,
+      "title": "Column Rule Shorthand: the column-rule property",
+      "number": "5.5"
+    },
+    {
+      "id": "column-breaks",
+      "href": "https://www.w3.org/TR/css-multicol-2/#column-breaks",
+      "level": 2,
+      "title": "Column Breaks",
+      "number": "6"
+    },
+    {
+      "id": "break-before-break-after-break-inside",
+      "href": "https://www.w3.org/TR/css-multicol-2/#break-before-break-after-break-inside",
+      "level": 3,
+      "title": "Controlling Fragmentation: the break-before, break-after, break-inside properties",
+      "number": "6.1"
+    },
+    {
+      "id": "spanning-columns",
+      "href": "https://www.w3.org/TR/css-multicol-2/#spanning-columns",
+      "level": 2,
+      "title": "Spanning columns",
+      "number": "7"
+    },
+    {
+      "id": "column-span",
+      "href": "https://www.w3.org/TR/css-multicol-2/#column-span",
+      "level": 3,
+      "title": "column-span",
+      "number": "7.1"
+    },
+    {
+      "id": "filling-columns",
+      "href": "https://www.w3.org/TR/css-multicol-2/#filling-columns",
+      "level": 2,
+      "title": "Filling Columns",
+      "number": "8"
+    },
+    {
+      "id": "cf",
+      "href": "https://www.w3.org/TR/css-multicol-2/#cf",
+      "level": 3,
+      "title": "Column Balancing: the column-fill property",
+      "number": "8.1"
+    },
+    {
+      "id": "overflow",
+      "href": "https://www.w3.org/TR/css-multicol-2/#overflow",
+      "level": 2,
+      "title": "Overflow",
+      "number": "9"
+    },
+    {
+      "id": "overflow-inside-multicol-elements",
+      "href": "https://www.w3.org/TR/css-multicol-2/#overflow-inside-multicol-elements",
+      "level": 3,
+      "title": "Overflow Inside Multicol Containers",
+      "number": "9.1"
+    },
+    {
+      "id": "pagination-and-overflow-outside-multicol",
+      "href": "https://www.w3.org/TR/css-multicol-2/#pagination-and-overflow-outside-multicol",
+      "level": 3,
+      "title": "Pagination and Overflow Outside Multicol Containers",
+      "number": "9.2"
+    },
+    {
+      "id": "changes",
+      "href": "https://www.w3.org/TR/css-multicol-2/#changes",
+      "level": 2,
+      "title": "Changes",
+      "number": "B"
+    },
+    {
+      "id": "changes-from-multicol1",
+      "href": "https://www.w3.org/TR/css-multicol-2/#changes-from-multicol1",
+      "level": 3,
+      "title": "Changes from the Candidate Recommendation (CR) of CSS-MULTICOL-1 of 16 May 2024"
+    },
+    {
+      "id": "privacy",
+      "href": "https://www.w3.org/TR/css-multicol-2/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/css-multicol-2/#security",
+      "level": 2,
+      "title": "Security Considerations"
+    },
+    {
+      "id": "a11y",
+      "href": "https://www.w3.org/TR/css-multicol-2/#a11y",
+      "level": 2,
+      "title": "Accessibility Considerations"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://www.w3.org/TR/css-multicol-2/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/css-multicol-2/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/css-multicol-2/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://www.w3.org/TR/css-multicol-2/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://www.w3.org/TR/css-multicol-2/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://www.w3.org/TR/css-multicol-2/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://www.w3.org/TR/css-multicol-2/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/css-multicol-2/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/css-multicol-2/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/css-multicol-2/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/css-multicol-2/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://www.w3.org/TR/css-multicol-2/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://www.w3.org/TR/css-multicol-2/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://www.w3.org/TR/css-multicol-2/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://www.w3.org/TR/css-multicol-2/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

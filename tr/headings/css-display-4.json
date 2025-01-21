@@ -1,0 +1,317 @@
+{
+  "spec": {
+    "title": "CSS Display Module Level 4",
+    "url": "https://www.w3.org/TR/css-display-4/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/css-display-4/#title",
+      "level": 1,
+      "title": "CSS Display Module Level 4"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/css-display-4/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/css-display-4/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/css-display-4/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://www.w3.org/TR/css-display-4/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "placement",
+      "href": "https://www.w3.org/TR/css-display-4/#placement",
+      "level": 3,
+      "title": "Module interactions",
+      "number": "1.1"
+    },
+    {
+      "id": "values",
+      "href": "https://www.w3.org/TR/css-display-4/#values",
+      "level": 3,
+      "title": "Value Definitions",
+      "number": "1.2"
+    },
+    {
+      "id": "the-display-properties",
+      "href": "https://www.w3.org/TR/css-display-4/#the-display-properties",
+      "level": 2,
+      "title": "Box Layout Modes: the display property",
+      "number": "2"
+    },
+    {
+      "id": "outer-role",
+      "href": "https://www.w3.org/TR/css-display-4/#outer-role",
+      "level": 3,
+      "title": "Outer Display Roles for Flow Layout: the block, inline, and run-in keywords",
+      "number": "2.1"
+    },
+    {
+      "id": "inner-model",
+      "href": "https://www.w3.org/TR/css-display-4/#inner-model",
+      "level": 3,
+      "title": "Inner Display Layout Models: the flow, flow-root, table, flex, grid, and ruby keywords",
+      "number": "2.2"
+    },
+    {
+      "id": "list-items",
+      "href": "https://www.w3.org/TR/css-display-4/#list-items",
+      "level": 3,
+      "title": "Generating Marker Boxes: the list-item keyword",
+      "number": "2.3"
+    },
+    {
+      "id": "layout-specific-display",
+      "href": "https://www.w3.org/TR/css-display-4/#layout-specific-display",
+      "level": 3,
+      "title": "Layout-Internal Display Types: the table-* and ruby-* keywords",
+      "number": "2.4"
+    },
+    {
+      "id": "box-generation",
+      "href": "https://www.w3.org/TR/css-display-4/#box-generation",
+      "level": 3,
+      "title": "Box Generation: the none and contents keywords",
+      "number": "2.5"
+    },
+    {
+      "id": "legacy-display",
+      "href": "https://www.w3.org/TR/css-display-4/#legacy-display",
+      "level": 3,
+      "title": "Precomposed Inline-level Display Values",
+      "number": "2.6"
+    },
+    {
+      "id": "transformations",
+      "href": "https://www.w3.org/TR/css-display-4/#transformations",
+      "level": 3,
+      "title": "Automatic Box Type Transformations",
+      "number": "2.7"
+    },
+    {
+      "id": "root",
+      "href": "https://www.w3.org/TR/css-display-4/#root",
+      "level": 3,
+      "title": "The Root Element’s Principal Box",
+      "number": "2.8"
+    },
+    {
+      "id": "display-animation",
+      "href": "https://www.w3.org/TR/css-display-4/#display-animation",
+      "level": 3,
+      "title": "Animating and Interpolating display",
+      "number": "2.9"
+    },
+    {
+      "id": "order-property",
+      "href": "https://www.w3.org/TR/css-display-4/#order-property",
+      "level": 2,
+      "title": "Display Order: the order property",
+      "number": "3"
+    },
+    {
+      "id": "quiet-pubrules-1",
+      "href": "https://www.w3.org/TR/css-display-4/#quiet-pubrules-1",
+      "level": 1,
+      "title": "Computer Starter Kit"
+    },
+    {
+      "id": "order-accessibility",
+      "href": "https://www.w3.org/TR/css-display-4/#order-accessibility",
+      "level": 3,
+      "title": "Reordering and Accessibility",
+      "number": "3.1"
+    },
+    {
+      "id": "reading-flow",
+      "href": "https://www.w3.org/TR/css-display-4/#reading-flow",
+      "level": 2,
+      "title": "Reading Order: the reading-flow property",
+      "number": "4"
+    },
+    {
+      "id": "visibility",
+      "href": "https://www.w3.org/TR/css-display-4/#visibility",
+      "level": 2,
+      "title": "Invisibility: the visibility property",
+      "number": "5"
+    },
+    {
+      "id": "run-in-layout",
+      "href": "https://www.w3.org/TR/css-display-4/#run-in-layout",
+      "level": 2,
+      "title": "Run-In Layout",
+      "number": "6"
+    },
+    {
+      "id": "glossary",
+      "href": "https://www.w3.org/TR/css-display-4/#glossary",
+      "level": 2,
+      "title": "Glossary",
+      "number": "A"
+    },
+    {
+      "id": "unbox",
+      "href": "https://www.w3.org/TR/css-display-4/#unbox",
+      "level": 2,
+      "title": "Effects of display: contents on Unusual Elements",
+      "number": "B"
+    },
+    {
+      "id": "unbox-html",
+      "href": "https://www.w3.org/TR/css-display-4/#unbox-html",
+      "level": 3,
+      "title": "HTML Elements"
+    },
+    {
+      "id": "unbox-svg",
+      "href": "https://www.w3.org/TR/css-display-4/#unbox-svg",
+      "level": 3,
+      "title": "SVG Elements"
+    },
+    {
+      "id": "unbox-mathml",
+      "href": "https://www.w3.org/TR/css-display-4/#unbox-mathml",
+      "level": 3,
+      "title": "MathML Elements"
+    },
+    {
+      "id": "box-guidelines",
+      "href": "https://www.w3.org/TR/css-display-4/#box-guidelines",
+      "level": 2,
+      "title": "Box Construction Guidelines for Spec Authors",
+      "number": "C"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://www.w3.org/TR/css-display-4/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "changes",
+      "href": "https://www.w3.org/TR/css-display-4/#changes",
+      "level": 2,
+      "title": "Changes"
+    },
+    {
+      "id": "changes-2020",
+      "href": "https://www.w3.org/TR/css-display-4/#changes-2020",
+      "level": 3,
+      "title": "Additions since Level 3"
+    },
+    {
+      "id": "priv",
+      "href": "https://www.w3.org/TR/css-display-4/#priv",
+      "level": 2,
+      "title": "Privacy Considerations"
+    },
+    {
+      "id": "sec",
+      "href": "https://www.w3.org/TR/css-display-4/#sec",
+      "level": 3,
+      "title": "Security Considerations"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/css-display-4/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/css-display-4/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://www.w3.org/TR/css-display-4/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://www.w3.org/TR/css-display-4/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://www.w3.org/TR/css-display-4/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://www.w3.org/TR/css-display-4/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/css-display-4/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/css-display-4/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/css-display-4/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/css-display-4/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://www.w3.org/TR/css-display-4/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://www.w3.org/TR/css-display-4/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://www.w3.org/TR/css-display-4/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://www.w3.org/TR/css-display-4/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}
