@@ -84,7 +84,7 @@
           "html": "<p>Perform <a href=\"https://www.rfc-editor.org/rfc/rfc3986#section-5\">reference resolution</a> on <var>Patch URI</var> using <var>Initial Font URI</var> as the base URI to\n produce the <var>target URI</var>.</p>"
         },
         {
-          "html": "<p>Retrieve the contents of <var>target URI</var> using the fetching capabilities of the implementing user agent. For web browsers, <a data-link-type=\"biblio\" href=\"https://w3c.github.io/IFT/Overview.html#biblio-fetch\" title=\"Fetch Standard\">[fetch]</a> should be used. When using <a data-link-type=\"biblio\" href=\"https://w3c.github.io/IFT/Overview.html#biblio-fetch\" title=\"Fetch Standard\">[fetch]</a> a request for patches should use the same CORS settings as the initial request for\n the IFT font. This means that for a font loaded via CSS the patch request would follow: <a href=\"https://www.w3.org/TR/css-fonts-4/#font-fetching-requirements\"><cite>CSS Fonts 4</cite> § 4.8.2 Font fetching requirements</a>.</p>"
+          "html": "<p>Retrieve the contents of <var>target URI</var> using the fetching capabilities of the implementing user agent. For web browsers, <a data-link-type=\"biblio\" href=\"https://w3c.github.io/IFT/Overview.html#biblio-fetch\" title=\"Fetch Standard\">[fetch]</a> should be used. When using <a data-link-type=\"biblio\" href=\"https://w3c.github.io/IFT/Overview.html#biblio-fetch\" title=\"Fetch Standard\">[fetch]</a> a request for patches should use the same CORS settings as the initial request for\n the IFT font. This means that for a font loaded via CSS the patch request would follow: <a href=\"https://drafts.csswg.org/css-fonts-4/#font-fetching-requirements\"><cite>CSS Fonts 4</cite> § 4.8.2 Font fetching requirements</a>.</p>"
         },
         {
           "html": "<p>Return the retrieved contents as <var>patch file</var>, or an error if the fetch resulted in an error.</p>"
@@ -120,10 +120,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If the WOFF2 encoding will include a transformed glyf and loca table (<a href=\"https://www.w3.org/TR/WOFF2/#glyf_table_format\"><cite>WOFF 2.0</cite> § 5.1 Transformed glyf table format</a>) then, the incremental\n font should not contain <a href=\"https://w3c.github.io/IFT/Overview.html#table-keyed\">§ 6.2 Table Keyed</a> patches which modify either the glyf or loca table. The WOFF2 format does not\n guarantee the specific bytes that result from decoding a transformed glyf and loca table. <a href=\"https://w3c.github.io/IFT/Overview.html#glyph-keyed\">§ 6.3 Glyph Keyed</a> patches may be used\n in conjunction with a transformed glyf and loca table.</p>"
+          "html": "<p>If the WOFF2 encoding will include a transformed glyf and loca table (<a href=\"https://w3c.github.io/woff/woff2/#glyf_table_format\"><cite>WOFF 2.0</cite> § 5.1 Transformed glyf table format</a>) then, the incremental\n font should not contain <a href=\"https://w3c.github.io/IFT/Overview.html#table-keyed\">§ 6.2 Table Keyed</a> patches which modify either the glyf or loca table. The WOFF2 format does not\n guarantee the specific bytes that result from decoding a transformed glyf and loca table. <a href=\"https://w3c.github.io/IFT/Overview.html#glyph-keyed\">§ 6.3 Glyph Keyed</a> patches may be used\n in conjunction with a transformed glyf and loca table.</p>"
         },
         {
-          "html": "<p>The 'IFT ' and 'IFTX' tables can be processed and brotli encoded by a WOFF2 encoder following the standard process defined in <a href=\"https://www.w3.org/TR/WOFF2/#table_format\"><cite>WOFF 2.0</cite> § 5 Compressed data format</a>.</p>"
+          "html": "<p>The 'IFT ' and 'IFTX' tables can be processed and brotli encoded by a WOFF2 encoder following the standard process defined in <a href=\"https://w3c.github.io/woff/woff2/#table_format\"><cite>WOFF 2.0</cite> § 5 Compressed data format</a>.</p>"
         }
       ]
     },
