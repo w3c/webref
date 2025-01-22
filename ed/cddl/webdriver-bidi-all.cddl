@@ -256,8 +256,10 @@ session.SubscribeResult = {
 
 session.Unsubscribe = (
   method: "session.unsubscribe",
-  params: session.UnsubscribeByAttributesRequest / session.UnsubscribeByIDRequest,
+  params: session.UnsubscribeParameters,
 )
+
+session.UnsubscribeParameters = session.UnsubscribeByAttributesRequest / session.UnsubscribeByIDRequest
 
 BrowserCommand = (
   browser.Close //
