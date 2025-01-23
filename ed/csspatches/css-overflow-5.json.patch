@@ -1,0 +1,26 @@
+From 9990b11a959870124ad064d9de7aacc05b89e615 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 23 Jan 2025 14:22:33 +0100
+Subject: [PATCH] Wrap `*` with single quotes in `::scroll-button` definition
+
+Pending https://github.com/w3c/csswg-drafts/pull/11557
+---
+ ed/css/css-overflow-5.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/css/css-overflow-5.json b/ed/css/css-overflow-5.json
+index 9709334cd..0bf94a517 100644
+--- a/ed/css/css-overflow-5.json
++++ b/ed/css/css-overflow-5.json
+@@ -99,7 +99,7 @@
+     },
+     {
+       "name": "::scroll-button()",
+-      "value": "::scroll-button( * | <scroll-button-direction> )",
++      "value": "::scroll-button( '*' | <scroll-button-direction> )",
+       "href": "https://drafts.csswg.org/css-overflow-5/#selectordef-scroll-button---scroll-button-direction"
+     },
+     {
+-- 
+2.37.1.windows.1
+
