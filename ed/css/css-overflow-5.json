@@ -99,8 +99,8 @@
     },
     {
       "name": "::scroll-button()",
-      "value": "::scroll-button( <scroll-button-direction> )",
-      "href": "https://drafts.csswg.org/css-overflow-5/#selectordef-scroll-button-scroll-button-direction"
+      "value": "::scroll-button( '*' | <scroll-button-direction> )",
+      "href": "https://drafts.csswg.org/css-overflow-5/#selectordef-scroll-button---scroll-button-direction"
     },
     {
       "name": "::nth-fragment()",
@@ -111,7 +111,7 @@
   "values": [
     {
       "name": "<scroll-button-direction>",
-      "prose": "The four ::scroll-button() pseudo-elements are individually selected by the selector’s argument. The possible <scroll-button-direction> values are:",
+      "prose": "The four ::scroll-button() pseudo-elements are individually selected by the selector’s argument. A * arguments selects all four ::scroll-button()s; otherwise the selected pseudo-element is determined by the <scroll-button-direction> value:",
       "href": "https://drafts.csswg.org/css-overflow-5/#typedef-scroll-button-direction",
       "type": "type",
       "values": [

@@ -29,7 +29,7 @@
     },
     "idlNames": {
       "SpeechRecognition": {
-        "fragment": "[Exposed=Window]\ninterface SpeechRecognition : EventTarget {\n    constructor();\n\n    // recognition parameters\n    attribute SpeechGrammarList grammars;\n    attribute DOMString lang;\n    attribute boolean continuous;\n    attribute boolean interimResults;\n    attribute unsigned long maxAlternatives;\n\n    // methods to drive the speech interaction\n    undefined start();\n    undefined stop();\n    undefined abort();\n\n    // event methods\n    attribute EventHandler onaudiostart;\n    attribute EventHandler onsoundstart;\n    attribute EventHandler onspeechstart;\n    attribute EventHandler onspeechend;\n    attribute EventHandler onsoundend;\n    attribute EventHandler onaudioend;\n    attribute EventHandler onresult;\n    attribute EventHandler onnomatch;\n    attribute EventHandler onerror;\n    attribute EventHandler onstart;\n    attribute EventHandler onend;\n};",
+        "fragment": "[Exposed=Window]\ninterface SpeechRecognition : EventTarget {\n    constructor();\n\n    // recognition parameters\n    attribute SpeechGrammarList grammars;\n    attribute DOMString lang;\n    attribute boolean continuous;\n    attribute boolean interimResults;\n    attribute unsigned long maxAlternatives;\n    attribute SpeechRecognitionMode mode;\n\n    // methods to drive the speech interaction\n    undefined start();\n    undefined start(MediaStreamTrack audioTrack);\n    undefined stop();\n    undefined abort();\n    boolean onDeviceWebSpeechAvailable(DOMString lang);\n    boolean installOnDeviceSpeechRecognition(DOMString lang);\n\n    // event methods\n    attribute EventHandler onaudiostart;\n    attribute EventHandler onsoundstart;\n    attribute EventHandler onspeechstart;\n    attribute EventHandler onspeechend;\n    attribute EventHandler onsoundend;\n    attribute EventHandler onaudioend;\n    attribute EventHandler onresult;\n    attribute EventHandler onnomatch;\n    attribute EventHandler onerror;\n    attribute EventHandler onstart;\n    attribute EventHandler onend;\n};",
         "type": "interface",
         "name": "SpeechRecognition",
         "inheritance": "EventTarget",
@@ -121,6 +121,22 @@
             "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-maxalternatives"
           },
           {
+            "type": "attribute",
+            "name": "mode",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SpeechRecognitionMode"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-mode"
+          },
+          {
             "type": "operation",
             "name": "start",
             "idlType": {
@@ -135,6 +151,39 @@
             "extAttrs": [],
             "special": "",
             "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-start"
+          },
+          {
+            "type": "operation",
+            "name": "start",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "audioTrack",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MediaStreamTrack"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-start-audiotrack"
           },
           {
             "type": "operation",
@@ -167,6 +216,72 @@
             "extAttrs": [],
             "special": "",
             "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-abort"
+          },
+          {
+            "type": "operation",
+            "name": "onDeviceWebSpeechAvailable",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "lang",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-ondevicewebspeechavailable"
+          },
+          {
+            "type": "operation",
+            "name": "installOnDeviceSpeechRecognition",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "lang",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-installondevicespeechrecognition"
           },
           {
             "type": "attribute",
@@ -407,6 +522,30 @@
         ],
         "extAttrs": [],
         "href": "https://webaudio.github.io/web-speech-api/#enumdef-speechrecognitionerrorcode"
+      },
+      "SpeechRecognitionMode": {
+        "fragment": "enum SpeechRecognitionMode {\n    \"ondevice-preferred\", // On-device speech recognition if available, otherwise use Cloud speech recognition as a fallback.\n    \"ondevice-only\", // On-device speech recognition only. Returns an error if on-device speech recognition is not available.\n    \"cloud-only\", // Cloud speech recognition only.\n};",
+        "type": "enum",
+        "name": "SpeechRecognitionMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "ondevice-preferred",
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionmode-ondevice-preferred"
+          },
+          {
+            "type": "enum-value",
+            "value": "ondevice-only",
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionmode-ondevice-only"
+          },
+          {
+            "type": "enum-value",
+            "value": "cloud-only",
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionmode-cloud-only"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-speech-api/#enumdef-speechrecognitionmode"
       },
       "SpeechRecognitionErrorEvent": {
         "fragment": "[Exposed=Window]\ninterface SpeechRecognitionErrorEvent : Event {\n    constructor(DOMString type, SpeechRecognitionErrorEventInit eventInitDict);\n    readonly attribute SpeechRecognitionErrorCode error;\n    readonly attribute DOMString message;\n};",
@@ -2142,6 +2281,8 @@
       "SpeechRecognition": [
         "EventTarget",
         "SpeechGrammarList",
+        "SpeechRecognitionMode",
+        "MediaStreamTrack",
         "EventHandler"
       ],
       "SpeechRecognitionErrorEvent": [
@@ -2209,6 +2350,7 @@
     },
     "externalDependencies": [
       "EventTarget",
+      "MediaStreamTrack",
       "EventHandler",
       "Event",
       "EventInit",

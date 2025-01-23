@@ -46,6 +46,69 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-speechrecognition-start-audiotrack-audiotrack",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-start-audiotrack-audiotrack",
+      "linkingText": [
+        "audioTrack"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechRecognition/start(audioTrack)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://webaudio.github.io/web-speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognition-ondevicewebspeechavailable-lang-lang",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-ondevicewebspeechavailable-lang-lang",
+      "linkingText": [
+        "lang"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechRecognition/onDeviceWebSpeechAvailable(lang)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://webaudio.github.io/web-speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognition-installondevicespeechrecognition-lang-lang",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-installondevicespeechrecognition-lang-lang",
+      "linkingText": [
+        "lang"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechRecognition/installOnDeviceSpeechRecognition(lang)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://webaudio.github.io/web-speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-speechrecognition-onaudiostart",
       "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-onaudiostart",
       "linkingText": [
@@ -285,6 +348,88 @@
       "localLinkingText": [],
       "type": "enum",
       "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://webaudio.github.io/web-speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-speechrecognitionmode",
+      "href": "https://webaudio.github.io/web-speech-api/#enumdef-speechrecognitionmode",
+      "linkingText": [
+        "SpeechRecognitionMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://webaudio.github.io/web-speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognitionmode-ondevice-preferred",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionmode-ondevice-preferred",
+      "linkingText": [
+        "\"ondevice-preferred\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechRecognitionMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://webaudio.github.io/web-speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognitionmode-ondevice-only",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionmode-ondevice-only",
+      "linkingText": [
+        "\"ondevice-only\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechRecognitionMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://webaudio.github.io/web-speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognitionmode-cloud-only",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionmode-cloud-only",
+      "linkingText": [
+        "\"cloud-only\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechRecognitionMode"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -961,10 +1106,52 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-speechrecognition-mode",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-attributes",
+        "href": "https://webaudio.github.io/web-speech-api/#speechreco-attributes",
+        "title": "SpeechRecognition Attributes",
+        "number": "4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-speechrecognition-start",
       "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-start",
       "linkingText": [
         "start()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-methods",
+        "href": "https://webaudio.github.io/web-speech-api/#speechreco-methods",
+        "title": "SpeechRecognition Methods",
+        "number": "4.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognition-start-audiotrack",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-start-audiotrack",
+      "linkingText": [
+        "start(audioTrack)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -1007,6 +1194,48 @@
       "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-abort",
       "linkingText": [
         "abort()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-methods",
+        "href": "https://webaudio.github.io/web-speech-api/#speechreco-methods",
+        "title": "SpeechRecognition Methods",
+        "number": "4.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognition-ondevicewebspeechavailable",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-ondevicewebspeechavailable",
+      "linkingText": [
+        "onDeviceWebSpeechAvailable(lang)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-methods",
+        "href": "https://webaudio.github.io/web-speech-api/#speechreco-methods",
+        "title": "SpeechRecognition Methods",
+        "number": "4.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognition-installondevicespeechrecognition",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-installondevicespeechrecognition",
+      "linkingText": [
+        "installOnDeviceSpeechRecognition(lang)"
       ],
       "localLinkingText": [],
       "type": "method",
