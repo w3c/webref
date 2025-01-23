@@ -228,6 +228,31 @@ async function dropCSSPropertyDuplicates(folder) {
     }
   }
 
+  // TEMP (2025-01-23): Auto-drop wrapping "''" in values of properties and
+  // values. Shorthand syntax used to be supported by Bikeshed, but no longer
+  // is starting with v5.0.0. Pending resolution of:
+  // https://github.com/speced/bikeshed/issues/3011
+  // ... or updates made to underlying specs:
+  // css-color-5, css-color-4, css-easing-2, css-fonts-4, css-shapes-1
+  for (const spec of index.results) {
+    if (!spec.css) {
+      continue;
+    }
+    for (const dfnType of ['properties', 'values']) {
+      for (const prop of spec.css[dfnType]) {
+        if (!prop.value) {
+          continue;
+        }
+        const needsSaving = prop.value.match(/''/);
+        if (needsSaving) {
+          console.warn(`- Dropped wrapping quotes in definition of ${prop.name} in ${spec.shortname}`);
+          prop.value = prop.value.replace(/''/g, '');
+          spec.needsSaving = true;
+        }
+      }
+    }
+  }
+
   function getBaseJSON(spec) {
     return {
       spec: {
