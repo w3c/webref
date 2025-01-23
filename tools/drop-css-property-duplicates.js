@@ -238,7 +238,7 @@ async function dropCSSPropertyDuplicates(folder) {
     if (!spec.css) {
       continue;
     }
-    for (const dfnType of ['properties', 'values']) {
+    for (const dfnType of ['properties', 'values', 'atrules']) {
       for (const prop of spec.css[dfnType]) {
         if (!prop.value) {
           continue;
