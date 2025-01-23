@@ -47,7 +47,7 @@
               "html": "Wait for the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a>."
             },
             {
-              "html": "If the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a>'s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-type\" id=\"ref-for-concept-response-type\">type</a> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#dom-responsetype-default\" id=\"ref-for-dom-responsetype-default\">\"default\"</a></code>, attempt to decode the resource as an\n            image."
+              "html": "If the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-type\" id=\"ref-for-concept-response-type\">type</a> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#dom-responsetype-default\" id=\"ref-for-dom-responsetype-default\">\"default\"</a></code>, attempt to decode the resource as an\n            image."
             },
             {
               "html": "If the image format is supported, use the image as the artwork for\n            display in platform UI. Otherwise the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#fetch-image-algorithm\" id=\"ref-for-fetch-image-algorithm②\">fetch image algorithm</a> fails and terminates."
@@ -73,7 +73,7 @@
     {
       "name": "handle media session action",
       "href": "https://w3c.github.io/mediasession/#handle-media-session-action",
-      "html": "When the user agent is notified by a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#media-session-action-source\" id=\"ref-for-media-session-action-source④\">media session action source</a> named <var>source</var> that a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#media-session-action\" id=\"ref-for-media-session-action⑤\">media session action</a> named <var>action</var> has been triggered,\n      the user agent MUST <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">queue a task</a>, using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-user-interaction-task-source\">user interaction task\n      source</a>, to run the following <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-media-session-action\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle media session action</dfn> steps:",
+      "html": "When the user agent is notified by a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#media-session-action-source\" id=\"ref-for-media-session-action-source④\">media session action source</a> named <var>source</var> that a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#media-session-action\" id=\"ref-for-media-session-action⑤\">media session action</a> named <var>action</var> has been triggered,\n      the user agent MUST <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">queue a task</a>, using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-user-interaction-task-source\">user interaction task source</a>, to run the following <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-media-session-action\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle media session action</dfn> steps:",
       "rationale": "let",
       "steps": [
         {
@@ -89,16 +89,16 @@
           "html": "Let <var>actions</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#supported-media-session-actions\" id=\"ref-for-supported-media-session-actions③\">supported media session actions</a>."
         },
         {
-          "html": "If <var>actions</var> does not contain the key <var>action</var>,\n          abort these steps."
+          "html": "If <var>actions</var> does not contain the key <var>action</var>,\n        abort these steps."
         },
         {
-          "html": "Let <var>handler</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#callbackdef-mediasessionactionhandler\" id=\"ref-for-callbackdef-mediasessionactionhandler①\">MediaSessionActionHandler</a></code> associated\n          with the key <var>action</var> in <var>actions</var>."
+          "html": "Let <var>handler</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#callbackdef-mediasessionactionhandler\" id=\"ref-for-callbackdef-mediasessionactionhandler①\">MediaSessionActionHandler</a></code> associated\n        with the key <var>action</var> in <var>actions</var>."
         },
         {
           "html": "Run <var>handler</var> with the <var>details</var> parameter set to: <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dictdef-mediasessionactiondetails\" id=\"ref-for-dictdef-mediasessionactiondetails\">MediaSessionActionDetails</a></code>."
         },
         {
-          "html": "Run the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#activation-notification\" id=\"ref-for-activation-notification\">activation notification</a> steps in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context\" id=\"ref-for-browsing-context④\">browsing\n          context</a> associated with <var>session</var>."
+          "html": "Run the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#activation-notification\" id=\"ref-for-activation-notification\">activation notification</a> steps in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context\" id=\"ref-for-browsing-context④\">browsing context</a> associated with <var>session</var>."
         }
       ]
     },
@@ -130,16 +130,16 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>available actions</var> be an array of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#media-session-action\" id=\"ref-for-media-session-action①①\">media session\n          actions</a>."
+          "html": "Let <var>available actions</var> be an array of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#media-session-action\" id=\"ref-for-media-session-action①①\">media session\n        actions</a>."
         },
         {
-          "html": "If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#active-media-session\" id=\"ref-for-active-media-session②①\">active media session</a> is null, set <var>available\n          actions</var> to the empty array."
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#active-media-session\" id=\"ref-for-active-media-session②①\">active media session</a> is null, set <var>available\n        actions</var> to the empty array."
         },
         {
-          "html": "Otherwise, set the <var>available actions</var> to the list of keys\n          available in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#active-media-session\" id=\"ref-for-active-media-session②②\">active media session</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#supported-media-session-actions\" id=\"ref-for-supported-media-session-actions⑤\">supported media\n          session actions</a>."
+          "html": "Otherwise, set the <var>available actions</var> to the list of keys\n        available in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#active-media-session\" id=\"ref-for-active-media-session②②\">active media session</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#supported-media-session-actions\" id=\"ref-for-supported-media-session-actions⑤\">supported media\n        session actions</a>."
         },
         {
-          "html": "For each <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#media-session-action-source\" id=\"ref-for-media-session-action-source⑥\">media session action source</a> <var>source</var>, run the\n          following substeps:",
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#media-session-action-source\" id=\"ref-for-media-session-action-source⑥\">media session action source</a> <var>source</var>, run the\n        following substeps:",
           "rationale": "if",
           "steps": [
             {
@@ -147,15 +147,15 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#active-media-session\" id=\"ref-for-active-media-session②④\">active media session</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#actual-playback-state\" id=\"ref-for-actual-playback-state③\">actual playback\n                  state</a> is <a class=\"idl-code\" data-link-type=\"enum-value\" href=\"https://w3c.github.io/mediasession/#dom-mediasessionplaybackstate-playing\" id=\"ref-for-dom-mediasessionplaybackstate-playing④\">playing</a>, remove <a class=\"idl-code\" data-link-type=\"enum-value\" href=\"https://w3c.github.io/mediasession/#dom-mediasessionaction-play\" id=\"ref-for-dom-mediasessionaction-play⑤\">play</a> from <var>available\n                  actions</var>."
+                  "html": "If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#active-media-session\" id=\"ref-for-active-media-session②④\">active media session</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#actual-playback-state\" id=\"ref-for-actual-playback-state③\">actual playback\n                state</a> is <a class=\"idl-code\" data-link-type=\"enum-value\" href=\"https://w3c.github.io/mediasession/#dom-mediasessionplaybackstate-playing\" id=\"ref-for-dom-mediasessionplaybackstate-playing④\">playing</a>, remove <a class=\"idl-code\" data-link-type=\"enum-value\" href=\"https://w3c.github.io/mediasession/#dom-mediasessionaction-play\" id=\"ref-for-dom-mediasessionaction-play⑤\">play</a> from <var>available\n                actions</var>."
                 },
                 {
-                  "html": "Otherwise, remove <a class=\"idl-code\" data-link-type=\"enum-value\" href=\"https://w3c.github.io/mediasession/#dom-mediasessionaction-pause\" id=\"ref-for-dom-mediasessionaction-pause⑥\">pause</a> from <var>available\n                  actions</var>."
+                  "html": "Otherwise, remove <a class=\"idl-code\" data-link-type=\"enum-value\" href=\"https://w3c.github.io/mediasession/#dom-mediasessionaction-pause\" id=\"ref-for-dom-mediasessionaction-pause⑥\">pause</a> from <var>available\n                actions</var>."
                 }
               ]
             },
             {
-              "html": "If the <var>source</var> is a UI element created by the user\n              agent, it MAY remove some elements from <var>available\n              actions</var> if there are too many of them compared to the\n              available space."
+              "html": "If the <var>source</var> is a UI element created by the user\n            agent, it MAY remove some elements from <var>available\n            actions</var> if there are too many of them compared to the\n            available space."
             },
             {
               "html": "Notify the <var>source</var> with the updated list of <var>available actions</var>."
@@ -167,17 +167,17 @@
     {
       "name": "MediaSession/metadata",
       "href": "https://w3c.github.io/mediasession/#dom-mediasession-metadata",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MediaSession\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-mediasession-metadata\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>metadata</code></dfn> attribute\n  reflects the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediasession\" id=\"ref-for-mediasession①③\">MediaSession</a></code>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediasession-metadata\" id=\"ref-for-dom-mediasession-metadata④\">metadata</a></code>. On getting, it MUST\n  return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediasession\" id=\"ref-for-mediasession①④\">MediaSession</a></code>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediasession-metadata\" id=\"ref-for-dom-mediasession-metadata⑤\">metadata</a></code>. On setting, it MUST\n  run the following steps with <var>value</var> being the new value being set:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MediaSession\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-mediasession-metadata\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>metadata</code></dfn> attribute\n  reflects the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediasession\" id=\"ref-for-mediasession①③\">MediaSession</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediasession-metadata\" id=\"ref-for-dom-mediasession-metadata④\">metadata</a></code>. On getting, it MUST\n  return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediasession\" id=\"ref-for-mediasession①④\">MediaSession</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediasession-metadata\" id=\"ref-for-dom-mediasession-metadata⑤\">metadata</a></code>. On setting, it MUST\n  run the following steps with <var>value</var> being the new value being set:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediasession\" id=\"ref-for-mediasession①⑤\">MediaSession</a></code>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediasession-metadata\" id=\"ref-for-dom-mediasession-metadata⑥\">metadata</a></code> is not <code>null</code>, set its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-media-session\" id=\"ref-for-mediametadata-media-session\">media session</a> to <code>null</code>."
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediasession\" id=\"ref-for-mediasession①⑤\">MediaSession</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediasession-metadata\" id=\"ref-for-dom-mediasession-metadata⑥\">metadata</a></code> is not <code>null</code>, set its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-media-session\" id=\"ref-for-mediametadata-media-session\">media session</a> to <code>null</code>."
         },
         {
-          "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediasession\" id=\"ref-for-mediasession①⑥\">MediaSession</a></code>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediasession-metadata\" id=\"ref-for-dom-mediasession-metadata⑦\">metadata</a></code> to <var>value</var>."
+          "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediasession\" id=\"ref-for-mediasession①⑥\">MediaSession</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediasession-metadata\" id=\"ref-for-dom-mediasession-metadata⑦\">metadata</a></code> to <var>value</var>."
         },
         {
-          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediasession\" id=\"ref-for-mediasession①⑦\">MediaSession</a></code>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediasession-metadata\" id=\"ref-for-dom-mediasession-metadata⑧\">metadata</a></code> is not <code>null</code>, set its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-media-session\" id=\"ref-for-mediametadata-media-session①\">media session</a> to the current <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediasession\" id=\"ref-for-mediasession①⑧\">MediaSession</a></code>."
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediasession\" id=\"ref-for-mediasession①⑦\">MediaSession</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediasession-metadata\" id=\"ref-for-dom-mediasession-metadata⑧\">metadata</a></code> is not <code>null</code>, set its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-media-session\" id=\"ref-for-mediametadata-media-session①\">media session</a> to the current <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediasession\" id=\"ref-for-mediasession①⑧\">MediaSession</a></code>."
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">In parallel</a>, run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#update-metadata-algorithm\" id=\"ref-for-update-metadata-algorithm①\">update metadata algorithm</a>."
@@ -191,7 +191,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>document</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a>."
+          "html": "Let <var>document</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a>."
         },
         {
           "html": "Let <var>captureKind</var> be \"microphone\"."
@@ -208,7 +208,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>document</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated Document</a>."
+          "html": "Let <var>document</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated Document</a>."
         },
         {
           "html": "Let <var>captureKind</var> be \"camera\"."
@@ -225,7 +225,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>document</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window②\">associated Document</a>."
+          "html": "Let <var>document</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window②\">associated Document</a>."
         },
         {
           "html": "Let <var>captureKind</var> be \"screenshare\"."
@@ -242,7 +242,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise\n      rejected with</a> <a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a>."
+          "html": "If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> <a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a>."
         },
         {
           "html": "If <var>active</var> is <code>true</code> and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#visibility-state\" id=\"ref-for-visibility-state\">visibility state</a> is not \"visible\", the user agent MAY return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> <a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a>."
@@ -255,23 +255,23 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>applyPausePolicy</var> be <code>true</code> if the user agent\n          implements a policy of <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pausing-all-input-sources\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pausing all input sources</dfn> of type <var>captureKind</var> in response to UI and <code>false</code> otherwise."
+              "html": "Let <var>applyPausePolicy</var> be <code>true</code> if the user agent\n        implements a policy of <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pausing-all-input-sources\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pausing all input sources</dfn> of type <var>captureKind</var> in response to UI and <code>false</code> otherwise."
             },
             {
-              "html": "If <var>applyPausePolicy</var> is <code>true</code>, run the following\n          substeps:",
+              "html": "If <var>applyPausePolicy</var> is <code>true</code>, run the following\n        substeps:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "Let <var>currentlyActive</var> be <code>false</code> if the user\n              agent is currently <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#pausing-all-input-sources\" id=\"ref-for-pausing-all-input-sources\">pausing all input sources</a> of type <var>captureKind</var> and <code>true</code> otherwise."
+                  "html": "Let <var>currentlyActive</var> be <code>false</code> if the user\n            agent is currently <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#pausing-all-input-sources\" id=\"ref-for-pausing-all-input-sources\">pausing all input sources</a> of type <var>captureKind</var> and <code>true</code> otherwise."
                 },
                 {
-                  "html": "If <var>active</var> is <var>currentlyActive</var>, resolve <var>p</var> with <code>undefined</code> and abort these steps."
+                  "html": "If <var>active</var> is <var>currentlyActive</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③\">queue a task</a> using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-user-interaction-task-source②\">user interaction task source</a> to resolve <var>p</var> with <code>undefined</code> and abort these steps."
                 },
                 {
-                  "html": "If <var>active</var> is <code>true</code>, the user agent MAY wait\n              to proceed, for instance to prompt the user."
+                  "html": "If <var>active</var> is <code>true</code>, the user agent MAY wait\n            to proceed, for instance to prompt the user."
                 },
                 {
-                  "html": "If the user agent denies the request to update the capture state,\n              reject <var>p</var> with a <a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a> and\n              abort these steps."
+                  "html": "If the user agent denies the request to update the capture state, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④\">queue a task</a> using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-user-interaction-task-source③\">user interaction task source</a> to\n            reject <var>p</var> with a <a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a> and\n            abort these steps."
                 }
               ]
             },
@@ -279,17 +279,17 @@
               "html": "Update the user agent capture state UI according to <var>captureKind</var> and <var>active</var>."
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③\">Queue a task</a> using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-user-interaction-task-source②\">user interaction task source</a> to resolve <var>p</var> with <code>undefined</code>."
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑤\">Queue a task</a> using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-user-interaction-task-source④\">user interaction task source</a> to resolve <var>p</var> with <code>undefined</code>."
             },
             {
-              "html": "If <var>applyPausePolicy</var> is <code>true</code>, run the following\n          substeps:",
+              "html": "If <var>applyPausePolicy</var> is <code>true</code>, run the following\n        substeps:",
               "rationale": "let",
               "steps": [
                 {
                   "html": "Let <var>newMutedState</var> be <code>true</code> if <var>active</var> is <code>false</code> and <code>false</code> otherwise."
                 },
                 {
-                  "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack⑤\">MediaStreamTrack</a></code> whose source is of type <var>captureKind</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④\">queue a task</a>using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-user-interaction-task-source③\">user interaction task source</a> to <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/mediacapture-main/#set-track-muted\" id=\"ref-for-set-track-muted①\">set a track’s muted state</a> to <var>newMutedState</var>."
+                  "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack⑤\">MediaStreamTrack</a></code> whose source is of type <var>captureKind</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑥\">queue a task</a> using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-user-interaction-task-source⑤\">user interaction task source</a> to <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/mediacapture-main/#set-track-muted\" id=\"ref-for-set-track-muted①\">set a track’s muted state</a> to <var>newMutedState</var>."
                 }
               ]
             }
@@ -319,7 +319,7 @@
           "html": "Set <var>metadata</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediametadata-album\" id=\"ref-for-dom-mediametadata-album①\">album</a></code> to <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediametadatainit-album\" id=\"ref-for-dom-mediametadatainit-album\">album</a></code>."
         },
         {
-          "html": "Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#convert-artwork-algorithm\" id=\"ref-for-convert-artwork-algorithm\">convert artwork algorithm</a> with <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediametadatainit-artwork\" id=\"ref-for-dom-mediametadatainit-artwork\">artwork</a></code> as <var>input</var> and set <var>metadata</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-artwork-images\" id=\"ref-for-mediametadata-artwork-images②\">artwork images</a> as the\n      result if it succeeded."
+          "html": "Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#convert-artwork-algorithm\" id=\"ref-for-convert-artwork-algorithm\">convert artwork algorithm</a> with <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediametadatainit-artwork\" id=\"ref-for-dom-mediametadatainit-artwork\">artwork</a></code> as <var>input</var> and set <var>metadata</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-artwork-images\" id=\"ref-for-mediametadata-artwork-images②\">artwork images</a> as the\n    result if it succeeded."
         },
         {
           "html": "Let <var>chapters</var> be an empty list of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#chapterinformation\" id=\"ref-for-chapterinformation①\">ChapterInformation</a></code>."
@@ -376,25 +376,25 @@
     {
       "name": "MediaMetadata/artwork",
       "href": "https://w3c.github.io/mediasession/#dom-mediametadata-artwork",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MediaMetadata\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-mediametadata-artwork\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>artwork</code></dfn> attribute reflects the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediametadata\" id=\"ref-for-mediametadata②⑥\">MediaMetadata</a></code>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-artwork-images\" id=\"ref-for-mediametadata-artwork-images③\">artwork\n  images</a>. On getting, it MUST run the following steps:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MediaMetadata\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-mediametadata-artwork\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>artwork</code></dfn> attribute reflects the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediametadata\" id=\"ref-for-mediametadata②⑥\">MediaMetadata</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-artwork-images\" id=\"ref-for-mediametadata-artwork-images③\">artwork\n  images</a>. On getting, it MUST run the following steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediametadata\" id=\"ref-for-mediametadata②⑦\">MediaMetadata</a></code>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-converted-artwork-images\" id=\"ref-for-mediametadata-converted-artwork-images\">converted artwork images</a> is <code>undefined</code>, run the following steps:",
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediametadata\" id=\"ref-for-mediametadata②⑦\">MediaMetadata</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-converted-artwork-images\" id=\"ref-for-mediametadata-converted-artwork-images\">converted artwork images</a> is <code>undefined</code>, run the following steps:",
           "rationale": "let",
           "steps": [
             {
               "html": "Let <var>frozenArtwork</var> be a JavaScript Array value."
             },
             {
-              "html": "For each <var>entry</var> in the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediametadata\" id=\"ref-for-mediametadata②⑧\">MediaMetadata</a></code>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-artwork-images\" id=\"ref-for-mediametadata-artwork-images④\">artwork images</a>, perform the following steps:",
+              "html": "For each <var>entry</var> in the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediametadata\" id=\"ref-for-mediametadata②⑧\">MediaMetadata</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-artwork-images\" id=\"ref-for-mediametadata-artwork-images④\">artwork images</a>, perform the following steps:",
               "rationale": "let",
               "steps": [
                 {
                   "html": "Let <var>image</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-idl-to-javascript-value\" id=\"ref-for-dfn-convert-idl-to-javascript-value\">converting to a JavaScript object</a> <var>entry</var>."
                 },
                 {
-                  "html": "Perform <a data-link-type=\"dfn\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-setintegritylevel\" id=\"ref-for-sec-setintegritylevel\">SetIntegrityLevel</a>(<var>image</var>,\n              \"<code>frozen</code>\"), to prevent accidental mutation by scripts."
+                  "html": "Perform <a href=\"https://tc39.es/ecma262/#sec-setintegritylevel\"> SetIntegrityLevel</a>(<var>image</var>, \"<code>frozen</code>\"),\n            to prevent accidental mutation by scripts."
                 },
                 {
                   "html": "Push <var>image</var> to <var>frozenArtwork</var>."
@@ -402,51 +402,49 @@
               ]
             },
             {
-              "html": "Perform <a data-link-type=\"dfn\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-setintegritylevel\" id=\"ref-for-sec-setintegritylevel①\">SetIntegrityLevel</a>(<var>frozenArtwork</var>,\n          \"<code>frozen</code>\")."
+              "html": "Perform <a href=\"https://tc39.es/ecma262/#sec-setintegritylevel\"> SetIntegrityLevel</a>(<var>frozenArtwork</var>, \"<code>frozen</code>\")."
             },
             {
-              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediametadata\" id=\"ref-for-mediametadata②⑨\">MediaMetadata</a></code>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-converted-artwork-images\" id=\"ref-for-mediametadata-converted-artwork-images①\">converted artwork images</a> to <var>frozenArtwork</var>."
+              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediametadata\" id=\"ref-for-mediametadata②⑨\">MediaMetadata</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-converted-artwork-images\" id=\"ref-for-mediametadata-converted-artwork-images①\">converted artwork images</a> to <var>frozenArtwork</var>."
             }
           ]
         },
         {
-          "html": "Return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediametadata\" id=\"ref-for-mediametadata③⓪\">MediaMetadata</a></code>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-converted-artwork-images\" id=\"ref-for-mediametadata-converted-artwork-images②\">converted artwork images</a>."
+          "html": "Return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediametadata\" id=\"ref-for-mediametadata③⓪\">MediaMetadata</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-converted-artwork-images\" id=\"ref-for-mediametadata-converted-artwork-images②\">converted artwork images</a>."
         }
       ]
     },
     {
-      "name": "MediaMetadata/artwork",
-      "href": "https://w3c.github.io/mediasession/#dom-mediametadata-artwork",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MediaMetadata\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-mediametadata-artwork\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>artwork</code></dfn> attribute reflects the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediametadata\" id=\"ref-for-mediametadata②⑥\">MediaMetadata</a></code>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-artwork-images\" id=\"ref-for-mediametadata-artwork-images③\">artwork\n  images</a>. On getting, it MUST run the following steps:",
+      "html": "On setting, it MUST run the following steps with <var>value</var> being the\n  new value being set:",
       "rationale": "let",
       "steps": [
         {
           "html": "Let <var>convertedArtwork</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value\">converting</a> <var>value</var> to a sequence of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dictdef-mediaimage\" id=\"ref-for-dictdef-mediaimage⑥\">MediaImage</a></code>."
         },
         {
-          "html": "Run <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#convert-artwork-algorithm\" id=\"ref-for-convert-artwork-algorithm①\">convert artwork algorithm</a> with <var>convertedArtwork</var>, and\n      set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediametadata\" id=\"ref-for-mediametadata③①\">MediaMetadata</a></code>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-artwork-images\" id=\"ref-for-mediametadata-artwork-images⑤\">artwork images</a> as\n      the result if it succeeds."
+          "html": "Run <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#convert-artwork-algorithm\" id=\"ref-for-convert-artwork-algorithm①\">convert artwork algorithm</a> with <var>convertedArtwork</var>, and\n    set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediametadata\" id=\"ref-for-mediametadata③①\">MediaMetadata</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-artwork-images\" id=\"ref-for-mediametadata-artwork-images⑤\">artwork images</a> as\n    the result if it succeeds."
         },
         {
-          "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediametadata\" id=\"ref-for-mediametadata③②\">MediaMetadata</a></code>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-converted-artwork-images\" id=\"ref-for-mediametadata-converted-artwork-images③\">converted artwork images</a> to <code>undefined</code>."
+          "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediametadata\" id=\"ref-for-mediametadata③②\">MediaMetadata</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-converted-artwork-images\" id=\"ref-for-mediametadata-converted-artwork-images③\">converted artwork images</a> to <code>undefined</code>."
         }
       ]
     },
     {
-      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediametadata\" id=\"ref-for-mediametadata③③\">MediaMetadata</a></code>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-title\" id=\"ref-for-mediametadata-title④\">title</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-artist\" id=\"ref-for-mediametadata-artist④\">artist</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-album\" id=\"ref-for-mediametadata-album④\">album</a> or <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-artwork-images\" id=\"ref-for-mediametadata-artwork-images⑥\">artwork images</a> are modified, the user agent MUST run the\n  following steps:",
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediametadata\" id=\"ref-for-mediametadata③③\">MediaMetadata</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-title\" id=\"ref-for-mediametadata-title④\">title</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-artist\" id=\"ref-for-mediametadata-artist④\">artist</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-album\" id=\"ref-for-mediametadata-album④\">album</a> or <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-artwork-images\" id=\"ref-for-mediametadata-artwork-images⑥\">artwork images</a> are modified, the user agent MUST run the\n  following steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If the instance has no associated <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-media-session\" id=\"ref-for-mediametadata-media-session③\">media session</a>, abort\n      these steps."
+          "html": "If the instance has no associated <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-media-session\" id=\"ref-for-mediametadata-media-session③\">media session</a>, abort\n    these steps."
         },
         {
-          "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑤\">queue a task</a> to run the following substeps:",
+          "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑦\">queue a task</a> to run the following substeps:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If the instance no longer has an associated <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-media-session\" id=\"ref-for-mediametadata-media-session④\">media\n          session</a>, abort these steps."
+              "html": "If the instance no longer has an associated <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-media-session\" id=\"ref-for-mediametadata-media-session④\">media\n        session</a>, abort these steps."
             },
             {
-              "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>, run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#update-metadata-algorithm\" id=\"ref-for-update-metadata-algorithm②\">update metadata\n          algorithm</a>."
+              "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>, run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#update-metadata-algorithm\" id=\"ref-for-update-metadata-algorithm②\">update metadata\n        algorithm</a>."
             }
           ]
         }
@@ -455,11 +453,11 @@
     {
       "name": "create a ChapterInformation",
       "href": "https://w3c.github.io/mediasession/#create-a-chapterinformation",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-chapterinformation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#chapterinformation\" id=\"ref-for-chapterinformation⑧\">ChapterInformation</a></code></dfn> with <var>init</var>, run the\n  following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-chapterinformation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#chapterinformation\" id=\"ref-for-chapterinformation⑦\">ChapterInformation</a></code></dfn> with <var>init</var>, run the\n  following steps:",
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>chapterInfo</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#chapterinformation\" id=\"ref-for-chapterinformation⑨\">ChapterInformation</a></code> object."
+          "html": "Let <var>chapterInfo</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#chapterinformation\" id=\"ref-for-chapterinformation⑧\">ChapterInformation</a></code> object."
         },
         {
           "html": "Set <var>chapterInfo</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-chapterinformation-title\" id=\"ref-for-dom-chapterinformation-title①\">title</a></code> to <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-chapterinformationinit-title\" id=\"ref-for-dom-chapterinformationinit-title\">title</a></code>."
@@ -471,7 +469,7 @@
           "html": "Let <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-chapterinformationinit-artwork\" id=\"ref-for-dom-chapterinformationinit-artwork\">artwork</a></code> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#convert-artwork-algorithm\" id=\"ref-for-convert-artwork-algorithm②\">convert artwork algorithm</a> with <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-chapterinformation-artwork\" id=\"ref-for-dom-chapterinformation-artwork①\">artwork</a></code> as <var>input</var>."
         },
         {
-          "html": "Set <var>chapterInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#chapterinformation-artwork-images\" id=\"ref-for-chapterinformation-artwork-images\">artwork\n      images</a> to the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-frozen-array\" id=\"ref-for-dfn-create-frozen-array①\">creating a frozen\n      array</a> from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-chapterinformationinit-artwork\" id=\"ref-for-dom-chapterinformationinit-artwork①\">artwork</a></code>."
+          "html": "Set <var>chapterInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#chapterinformation-artwork-images\" id=\"ref-for-chapterinformation-artwork-images\">artwork\n    images</a> to the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-frozen-array\" id=\"ref-for-dfn-create-frozen-array①\">creating a frozen\n    array</a> from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-chapterinformationinit-artwork\" id=\"ref-for-dom-chapterinformationinit-artwork①\">artwork</a></code>."
         },
         {
           "html": "Return <var>chapterInfo</var>."

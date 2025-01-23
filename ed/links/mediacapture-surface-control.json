@@ -11,7 +11,11 @@
           "dom-event-type"
         ]
       },
-      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/": {
+        "anchors": [
+          "concept-realm-global"
+        ]
+      },
       "https://w3c.github.io/uievents/": {
         "anchors": [
           "idl-wheelevent"
@@ -42,6 +46,7 @@
         "anchors": [
           "event-type-click",
           "event-type-input",
+          "topmost-event-target",
           "mousemove"
         ]
       },
@@ -61,13 +66,13 @@
           "dom-window-event",
           "dom-event-istrusted",
           "dom-event-type",
+          "concept-event-fire",
           "remove-an-event-listener",
           "concept-event-listener",
           "event-listener-callback",
           "callbackdef-eventlistener",
           "event",
           "add-an-event-listener",
-          "concept-event-fire",
           "element"
         ]
       },
@@ -95,7 +100,11 @@
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "eventhandler",
-          "concept-relevant-global"
+          "event-handler-idl-attributes",
+          "event-handler-event-type",
+          "concept-relevant-global",
+          "queue-a-global-task",
+          "user-interaction-task-source"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
