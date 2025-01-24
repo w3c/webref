@@ -10,7 +10,10 @@
         "href": "https://w3c.github.io/mediacapture-surface-control/#zoom-control-apis"
       },
       "href": "https://w3c.github.io/mediacapture-surface-control/#zoom-control-apis",
-      "type": "capturedzoomlevelchange",
+      "type": "zoomlevelchange",
+      "targets": [
+        "CaptureController"
+      ],
       "interface": "Event"
     },
     {
@@ -21,15 +24,6 @@
       "href": "https://w3c.github.io/mediacapture-surface-control/#subroutine-forward-wheel-event",
       "type": "wheel",
       "interface": "WheelEvent"
-    },
-    {
-      "type": "zoomlevelchange",
-      "targets": [
-        "CaptureController"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      }
     }
   ]
 }

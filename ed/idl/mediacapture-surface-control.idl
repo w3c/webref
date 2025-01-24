@@ -6,7 +6,9 @@
 partial interface CaptureController {
   sequence<long> getSupportedZoomLevels();
   long getZoomLevel();
-  Promise<undefined> setZoomLevel(long zoomLevel);
+  Promise<undefined> increaseZoomLevel();
+  Promise<undefined> decreaseZoomLevel();
+  Promise<undefined> resetZoomLevel();
   attribute EventHandler onzoomlevelchange;
 };
 
