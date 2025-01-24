@@ -22,7 +22,7 @@
         "title": "Captured Surface Control",
         "url": "https://w3c.github.io/mediacapture-surface-control/"
       },
-      "fragment": "partial interface CaptureController {\n  sequence<long> getSupportedZoomLevels();\n  long getZoomLevel();\n  Promise<undefined> setZoomLevel(long zoomLevel);\n  attribute EventHandler oncapturedzoomlevelchange;\n};"
+      "fragment": "partial interface CaptureController {\n  sequence<long> getSupportedZoomLevels();\n  long getZoomLevel();\n  Promise<undefined> increaseZoomLevel();\n  Promise<undefined> decreaseZoomLevel();\n  Promise<undefined> resetZoomLevel();\n  attribute EventHandler onzoomlevelchange;\n};"
     },
     {
       "spec": {

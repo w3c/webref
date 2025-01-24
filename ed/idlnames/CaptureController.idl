@@ -14,8 +14,10 @@ partial interface CaptureController {
 partial interface CaptureController {
   sequence<long> getSupportedZoomLevels();
   long getZoomLevel();
-  Promise<undefined> setZoomLevel(long zoomLevel);
-  attribute EventHandler oncapturedzoomlevelchange;
+  Promise<undefined> increaseZoomLevel();
+  Promise<undefined> decreaseZoomLevel();
+  Promise<undefined> resetZoomLevel();
+  attribute EventHandler onzoomlevelchange;
 };
 
 // Source: Captured Surface Control (https://w3c.github.io/mediacapture-surface-control/)

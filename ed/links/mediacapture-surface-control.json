@@ -11,7 +11,11 @@
           "dom-event-type"
         ]
       },
-      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/": {
+        "anchors": [
+          "concept-realm-global"
+        ]
+      },
       "https://w3c.github.io/uievents/": {
         "anchors": [
           "idl-wheelevent"
@@ -42,6 +46,7 @@
         "anchors": [
           "event-type-click",
           "event-type-input",
+          "topmost-event-target",
           "mousemove"
         ]
       },
@@ -58,16 +63,16 @@
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
-          "dom-window-event",
-          "dom-event-istrusted",
-          "dom-event-type",
+          "concept-event-fire",
           "remove-an-event-listener",
           "concept-event-listener",
           "event-listener-callback",
           "callbackdef-eventlistener",
           "event",
           "add-an-event-listener",
-          "concept-event-fire",
+          "dom-window-event",
+          "dom-event-istrusted",
+          "dom-event-type",
           "element"
         ]
       },
@@ -88,14 +93,18 @@
       },
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
-          "window",
-          "concept-document-window"
+          "concept-document-window",
+          "window"
         ]
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "eventhandler",
-          "concept-relevant-global"
+          "event-handler-idl-attributes",
+          "event-handler-event-type",
+          "concept-relevant-global",
+          "queue-a-global-task",
+          "user-interaction-task-source"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -113,6 +122,7 @@
           "dom-domexception-name",
           "notallowederror",
           "resolve",
+          "idl-DOMString",
           "idl-double"
         ]
       },
@@ -140,12 +150,12 @@
       },
       "https://www.w3.org/TR/permissions/": {
         "anchors": [
+          "dfn-getting-the-current-permission-state",
+          "dom-permissionstate-granted",
           "dfn-request-permission-to-use",
           "dom-permissiondescriptor",
           "dom-permissiondescriptor-name",
-          "dom-permissionstate-denied",
-          "dfn-getting-the-current-permission-state",
-          "dom-permissionstate-granted"
+          "dom-permissionstate-denied"
         ]
       },
       "https://www.w3.org/TR/screen-capture/": {

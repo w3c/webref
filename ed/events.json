@@ -878,18 +878,6 @@
     "cancelable": false
   },
   {
-    "type": "capturedzoomlevelchange",
-    "targets": [
-      {
-        "target": "CaptureController"
-      }
-    ],
-    "src": {
-      "format": "IDL eventHandler"
-    },
-    "interface": "Event"
-  },
-  {
     "src": {
       "format": "fire an event phrasing",
       "href": "https://w3c.github.io/mediacapture-handle/identity/#set-capture-handle-config"
@@ -7379,5 +7367,19 @@
     ],
     "cancelable": true,
     "interface": "WheelEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#zoom-control-apis"
+    },
+    "href": "https://w3c.github.io/mediacapture-surface-control/#zoom-control-apis",
+    "type": "zoomlevelchange",
+    "targets": [
+      {
+        "target": "CaptureController"
+      }
+    ],
+    "interface": "Event"
   }
 ]

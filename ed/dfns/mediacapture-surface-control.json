@@ -81,10 +81,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-permitted-event-types-for-setzoomlevel",
-      "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-permitted-event-types-for-setzoomlevel",
+      "id": "dfn-permitted-event-types-for-zoom-setting",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-permitted-event-types-for-zoom-setting",
       "linkingText": [
-        "permitted event types for setZoomLevel"
+        "permitted event types for zoom-setting"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -92,9 +92,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "permitted-event-types-for-setzoomlevel",
-        "href": "https://w3c.github.io/mediacapture-surface-control/#permitted-event-types-for-setzoomlevel",
-        "title": "Permitted Event Types for setZoomLevel()",
+        "id": "permitted-event-types-for-zoom-setting",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#permitted-event-types-for-zoom-setting",
+        "title": "Permitted Event Types for zoom-setting",
         "number": "3.2"
       },
       "definedIn": "prose"
@@ -150,16 +150,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-capturecontroller-setzoomlevel",
-      "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-setzoomlevel",
+      "id": "dom-capturecontroller-increasezoomlevel",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-increasezoomlevel",
       "linkingText": [
-        "setZoomLevel()",
-        "setZoomLevel(zoomLevel)"
+        "increaseZoomLevel()"
       ],
       "localLinkingText": [
-        "CaptureController.setZoomLevel",
-        "CaptureController.setZoomLevel()",
-        "setZoomLevel"
+        "CaptureController.increaseZoomLevel",
+        "CaptureController.increaseZoomLevel()",
+        "increaseZoomLevel"
       ],
       "type": "method",
       "for": [
@@ -176,13 +175,63 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-capturecontroller-oncapturedzoomlevelchange",
-      "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-oncapturedzoomlevelchange",
+      "id": "dom-capturecontroller-decreasezoomlevel",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-decreasezoomlevel",
       "linkingText": [
-        "oncapturedzoomlevelchange"
+        "decreaseZoomLevel()"
       ],
       "localLinkingText": [
-        "CaptureController.oncapturedzoomlevelchange"
+        "CaptureController.decreaseZoomLevel",
+        "CaptureController.decreaseZoomLevel()",
+        "decreaseZoomLevel"
+      ],
+      "type": "method",
+      "for": [
+        "CaptureController"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "zoom-control-apis",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#zoom-control-apis",
+        "title": "Zoom-control APIs",
+        "number": "3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-capturecontroller-resetzoomlevel",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-resetzoomlevel",
+      "linkingText": [
+        "resetZoomLevel()"
+      ],
+      "localLinkingText": [
+        "CaptureController.resetZoomLevel",
+        "CaptureController.resetZoomLevel()",
+        "resetZoomLevel"
+      ],
+      "type": "method",
+      "for": [
+        "CaptureController"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "zoom-control-apis",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#zoom-control-apis",
+        "title": "Zoom-control APIs",
+        "number": "3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-capturecontroller-onzoomlevelchange",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-onzoomlevelchange",
+      "linkingText": [
+        "onzoomlevelchange"
+      ],
+      "localLinkingText": [
+        "CaptureController.onzoomlevelchange"
       ],
       "type": "attribute",
       "for": [
@@ -227,7 +276,7 @@
       "id": "dfn-forwardwheelelement",
       "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-forwardwheelelement",
       "linkingText": [
-        "[[forwardWheelElement]]"
+        "[[ForwardWheelElement]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -248,7 +297,7 @@
       "id": "dfn-forwardwheeleventlistener",
       "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-forwardwheeleventlistener",
       "linkingText": [
-        "[[forwardWheelEventListener]]"
+        "[[ForwardWheelEventListener]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -349,6 +398,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-set-zoom-level-algorithm",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-set-zoom-level-algorithm",
+      "linkingText": [
+        "set zoom level algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subroutine-setting-the-zoom-level",
+        "href": "https://w3c.github.io/mediacapture-surface-control/#subroutine-setting-the-zoom-level",
+        "title": "Subroutine: Setting the zoom level",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-forward-wheel-event-algorithm",
       "href": "https://w3c.github.io/mediacapture-surface-control/#dfn-forward-wheel-event-algorithm",
       "linkingText": [
@@ -363,7 +431,7 @@
         "id": "subroutine-forward-wheel-event",
         "href": "https://w3c.github.io/mediacapture-surface-control/#subroutine-forward-wheel-event",
         "title": "Subroutine: Forward wheel event",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "prose"
     },
@@ -382,7 +450,7 @@
         "id": "subroutine-scale-element-coordinates",
         "href": "https://w3c.github.io/mediacapture-surface-control/#subroutine-scale-element-coordinates",
         "title": "Subroutine: Scale element coordinates",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose"
     }

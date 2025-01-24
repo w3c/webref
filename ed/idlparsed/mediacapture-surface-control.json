@@ -12,7 +12,7 @@
     "idlExtendedNames": {
       "CaptureController": [
         {
-          "fragment": "partial interface CaptureController {\n  sequence<long> getSupportedZoomLevels();\n  long getZoomLevel();\n  Promise<undefined> setZoomLevel(long zoomLevel);\n  attribute EventHandler oncapturedzoomlevelchange;\n};",
+          "fragment": "partial interface CaptureController {\n  sequence<long> getSupportedZoomLevels();\n  long getZoomLevel();\n  Promise<undefined> increaseZoomLevel();\n  Promise<undefined> decreaseZoomLevel();\n  Promise<undefined> resetZoomLevel();\n  attribute EventHandler onzoomlevelchange;\n};",
           "type": "interface",
           "name": "CaptureController",
           "inheritance": null,
@@ -60,7 +60,7 @@
             },
             {
               "type": "operation",
-              "name": "setZoomLevel",
+              "name": "increaseZoomLevel",
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
@@ -78,31 +78,64 @@
                   }
                 ]
               },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "zoomLevel",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
+              "arguments": [],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-increasezoomlevel"
+            },
+            {
+              "type": "operation",
+              "name": "decreaseZoomLevel",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
                     "extAttrs": [],
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "long"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                }
-              ],
+                    "idlType": "undefined"
+                  }
+                ]
+              },
+              "arguments": [],
               "extAttrs": [],
               "special": "",
-              "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-setzoomlevel"
+              "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-decreasezoomlevel"
+            },
+            {
+              "type": "operation",
+              "name": "resetZoomLevel",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-resetzoomlevel"
             },
             {
               "type": "attribute",
-              "name": "oncapturedzoomlevelchange",
+              "name": "onzoomlevelchange",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
@@ -114,7 +147,7 @@
               "extAttrs": [],
               "special": "",
               "readonly": false,
-              "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-oncapturedzoomlevelchange"
+              "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-onzoomlevelchange"
             }
           ],
           "extAttrs": [],
