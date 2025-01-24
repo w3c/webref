@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-01-23T01:35:12.332Z",
+  "date": "2025-01-24T01:37:09.505Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -677,7 +677,7 @@
   },
   "stats": {
     "crawled": 342,
-    "errors": 0
+    "errors": 8
   },
   "crawler": "reffy-18.3.0",
   "results": [
@@ -725,7 +725,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "23 January 2025",
+      "date": "24 January 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -2105,11 +2105,11 @@
       ],
       "crawled": "https://www.w3.org/TR/CSP3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 17 Dec 2024 16:57:55 GMT"
+        "lastModified": "Thu, 23 Jan 2025 16:16:10 GMT"
       },
       "generator": "bikeshed",
-      "date": "17 December 2024",
-      "revision": "268bdff2dfd1bea01f7f09abb46bfb2ed388c497",
+      "date": "23 January 2025",
+      "revision": "b6358ec9683f46f609cef678a33799baf85e001e",
       "algorithms": "algorithms/CSP3.json",
       "links": "links/CSP3.json",
       "refs": "refs/CSP3.json",
@@ -4095,7 +4095,8 @@
       "dfns": "dfns/css-counter-styles-3.json",
       "headings": "headings/css-counter-styles-3.json",
       "ids": "ids/css-counter-styles-3.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/css-counter-styles-3/ triggered HTTP status 522\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 51)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-display-3/",
@@ -11123,7 +11124,8 @@
       "dfns": "dfns/generic-sensor.json",
       "headings": "headings/generic-sensor.json",
       "ids": "ids/generic-sensor.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/generic-sensor/ triggered HTTP status 522\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 156)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/geolocation-sensor/",
@@ -11569,7 +11571,8 @@
       "dfns": "dfns/gyroscope.json",
       "headings": "headings/gyroscope.json",
       "ids": "ids/gyroscope.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/gyroscope/ triggered HTTP status 522\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 163)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/hr-time-3/",
@@ -11749,11 +11752,11 @@
       ],
       "crawled": "https://www.w3.org/TR/html-aria/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 23 Dec 2024 19:09:01 GMT"
+        "lastModified": "Thu, 23 Jan 2025 12:44:07 GMT"
       },
       "generator": "respec",
-      "date": "23 December 2024",
-      "revision": "892a700c8acc9eb2d9d3d893278e0218abd68743",
+      "date": "23 January 2025",
+      "revision": "979fe6bd2c2e375801e00e3d9232b200ebad3064",
       "links": "links/html-aria.json",
       "refs": "refs/html-aria.json",
       "dfns": "dfns/html-aria.json",
@@ -12316,7 +12319,8 @@
       "dfns": "dfns/intersection-observer.json",
       "headings": "headings/intersection-observer.json",
       "ids": "ids/intersection-observer.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/intersection-observer/ triggered HTTP status 522\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 175)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/json-ld11-api/",
@@ -13559,11 +13563,11 @@
       ],
       "crawled": "https://www.w3.org/TR/mediasession/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Dec 2024 10:43:03 GMT"
+        "lastModified": "Thu, 23 Jan 2025 15:15:52 GMT"
       },
       "generator": "bikeshed",
-      "date": "16 December 2024",
-      "revision": "115bf9ebaa7b4c4e76ffc13c7ce6480fa9d89d85",
+      "date": "23 January 2025",
+      "revision": "906d80be45453e1053439a86d3f0abff19683af0",
       "algorithms": "algorithms/mediasession.json",
       "links": "links/mediasession.json",
       "refs": "refs/mediasession.json",
@@ -15442,7 +15446,8 @@
       "dfns": "dfns/pointerevents3.json",
       "headings": "headings/pointerevents3.json",
       "ids": "ids/pointerevents3.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/pointerevents3/ triggered HTTP status 522\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 225)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/pointerevents4/",
@@ -15931,11 +15936,11 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf12-concepts/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Jan 2025 15:19:20 GMT"
+        "lastModified": "Thu, 23 Jan 2025 18:23:23 GMT"
       },
       "generator": "respec",
-      "date": "22 January 2025",
-      "revision": "23dfb055adcf962da3deb82dbedd994c50437407",
+      "date": "23 January 2025",
+      "revision": "f231b670250d7b055ccc4207e593f4e1374aca58",
       "algorithms": "algorithms/rdf12-concepts.json",
       "links": "links/rdf12-concepts.json",
       "refs": "refs/rdf12-concepts.json",
@@ -17573,7 +17578,8 @@
       "refs": "refs/sparql12-federated-query.json",
       "headings": "headings/sparql12-federated-query.json",
       "ids": "ids/sparql12-federated-query.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/sparql12-federated-query/ triggered HTTP status 522\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 259)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/sparql12-graph-store-protocol/",
@@ -19176,11 +19182,11 @@
       ],
       "crawled": "https://www.w3.org/TR/vc-data-model-2.0/",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 19 Jan 2025 19:49:53 GMT"
+        "lastModified": "Thu, 23 Jan 2025 18:39:25 GMT"
       },
       "generator": "respec",
-      "date": "19 January 2025",
-      "revision": "a18b6010963a7da42c9c03ff43b2cc73d1b585ea",
+      "date": "23 January 2025",
+      "revision": "6b76296d366644154907117ac00b919d50be9c13",
       "algorithms": "algorithms/vc-data-model-2.0.json",
       "links": "links/vc-data-model-2.0.json",
       "refs": "refs/vc-data-model-2.0.json",
@@ -21385,7 +21391,8 @@
       "dfns": "dfns/webmidi.json",
       "headings": "headings/webmidi.json",
       "ids": "ids/webmidi.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/webmidi/ triggered HTTP status 522\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 319)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/webnn/",
@@ -22088,7 +22095,8 @@
       "dfns": "dfns/webxr-depth-sensing-1.json",
       "headings": "headings/webxr-depth-sensing-1.json",
       "ids": "ids/webxr-depth-sensing-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/webxr-depth-sensing-1/ triggered HTTP status 522\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 330)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/webxr-dom-overlays-1/",
