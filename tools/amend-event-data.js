@@ -277,12 +277,6 @@ const patches = {
       pattern: { type: 'wheel' },
       matched: 1,
       delete: true
-    },
-    // Pending https://github.com/w3c/mediacapture-surface-control/issues/50
-    {
-      pattern: { type: 'capturedzoomlevelchange' },
-      matched: 1,
-      change: { interface: "Event" }
     }
   ],
   'notifications': [
