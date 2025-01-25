@@ -12,6 +12,7 @@
       "http://wpt.live/dom/observable/tentative/observable-event-target.window.js": {},
       "http://wpt.live/dom/observable/tentative/observable-filter.any.js": {},
       "http://wpt.live/dom/observable/tentative/observable-forEach.any.js": {},
+      "http://wpt.live/dom/observable/tentative/observable-from.any.js": {},
       "http://wpt.live/dom/observable/tentative/observable-inspect.any.js": {},
       "http://wpt.live/dom/observable/tentative/observable-map.any.js": {},
       "http://wpt.live/dom/observable/tentative/observable-map.window.js": {},
@@ -23,6 +24,8 @@
       "https://benlesh.com/": {},
       "https://dom.spec.whatwg.org/": {},
       "https://github.com/WICG/observable/blob/master/security-privacy-questionnaire.md": {},
+      "https://github.com/WICG/observable/issues/125": {},
+      "https://github.com/WICG/observable/issues/191": {},
       "https://github.com/WICG/observable/issues/new": {},
       "https://github.com/w3c/IntersectionObserver/issues/464": {},
       "https://github.com/web-platform-tests/wpt/blob/master/dom/observable/tentative/observable-constructor.any.js": {},
@@ -32,6 +35,7 @@
       "https://github.com/web-platform-tests/wpt/blob/master/dom/observable/tentative/observable-event-target.window.js": {},
       "https://github.com/web-platform-tests/wpt/blob/master/dom/observable/tentative/observable-filter.any.js": {},
       "https://github.com/web-platform-tests/wpt/blob/master/dom/observable/tentative/observable-forEach.any.js": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/dom/observable/tentative/observable-from.any.js": {},
       "https://github.com/web-platform-tests/wpt/blob/master/dom/observable/tentative/observable-inspect.any.js": {},
       "https://github.com/web-platform-tests/wpt/blob/master/dom/observable/tentative/observable-map.any.js": {},
       "https://github.com/web-platform-tests/wpt/blob/master/dom/observable/tentative/observable-map.window.js": {},
@@ -55,6 +59,7 @@
       "https://wpt.fyi/results/dom/observable/tentative/observable-event-target.window.js": {},
       "https://wpt.fyi/results/dom/observable/tentative/observable-filter.any.js": {},
       "https://wpt.fyi/results/dom/observable/tentative/observable-forEach.any.js": {},
+      "https://wpt.fyi/results/dom/observable/tentative/observable-from.any.js": {},
       "https://wpt.fyi/results/dom/observable/tentative/observable-inspect.any.js": {},
       "https://wpt.fyi/results/dom/observable/tentative/observable-map.any.js": {},
       "https://wpt.fyi/results/dom/observable/tentative/observable-map.window.js": {},
@@ -120,6 +125,8 @@
           "list-iterate",
           "struct",
           "struct-item",
+          "iteration-while",
+          "iteration-break",
           "map-exists",
           "boolean",
           "list-contain",
@@ -129,7 +136,28 @@
       },
       "https://tc39.es/ecma262/": {
         "anchors": [
+          "sec-ecmascript-data-types-and-values",
+          "sec-object-type",
+          "sec-returnifabrupt-shorthands",
+          "sec-throwcompletion",
           "current-realm"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/abstract-operations.html": {
+        "anchors": [
+          "sec-getmethod",
+          "sec-getiterator",
+          "sec-iteratorstepvalue"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html": {
+        "anchors": [
+          "sec-ispromise"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
+        "anchors": [
+          "sec-well-known-symbols"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -145,12 +173,15 @@
           "idl-promise",
           "idl-sequence",
           "dfn-callback-function",
+          "dfn-throw",
+          "exceptiondef-typeerror",
+          "dfn-specific-type",
           "new",
+          "react",
           "a-new-promise",
           "reject",
           "resolve",
           "exceptiondef-rangeerror",
-          "exceptiondef-typeerror",
           "idl-DOMString"
         ]
       }

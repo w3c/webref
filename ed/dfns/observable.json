@@ -1154,27 +1154,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-observable-from",
-      "href": "https://wicg.github.io/observable/#dom-observable-from",
-      "linkingText": [
-        "from(value)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "Observable"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "observable-api",
-        "href": "https://wicg.github.io/observable/#observable-api",
-        "title": "The Observable interface",
-        "number": "2.2"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-observable-from-value-value",
       "href": "https://wicg.github.io/observable/#dom-observable-from-value-value",
       "linkingText": [
@@ -1196,15 +1175,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-observable-takeuntil-notifier-notifier",
-      "href": "https://wicg.github.io/observable/#dom-observable-takeuntil-notifier-notifier",
+      "id": "dom-observable-takeuntil-value-value",
+      "href": "https://wicg.github.io/observable/#dom-observable-takeuntil-value-value",
       "linkingText": [
-        "notifier"
+        "value"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "Observable/takeUntil(notifier)"
+        "Observable/takeUntil(value)"
       ],
       "access": "public",
       "informative": false,
@@ -1885,6 +1864,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "observable-convert-to-an-observable",
+      "href": "https://wicg.github.io/observable/#observable-convert-to-an-observable",
+      "linkingText": [
+        "convert to an Observable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Observable"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "observable-supporting-concepts",
+        "href": "https://wicg.github.io/observable/#observable-supporting-concepts",
+        "title": "Supporting concepts",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "observable-subscribe-to-an-observable",
       "href": "https://wicg.github.io/observable/#observable-subscribe-to-an-observable",
       "linkingText": [
@@ -1906,10 +1906,31 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-observable-from",
+      "href": "https://wicg.github.io/observable/#dom-observable-from",
+      "linkingText": [
+        "from(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "observable-from",
+        "href": "https://wicg.github.io/observable/#observable-from",
+        "title": "from()",
+        "number": "2.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-observable-takeuntil",
       "href": "https://wicg.github.io/observable/#dom-observable-takeuntil",
       "linkingText": [
-        "takeUntil(notifier)"
+        "takeUntil(value)"
       ],
       "localLinkingText": [],
       "type": "method",
