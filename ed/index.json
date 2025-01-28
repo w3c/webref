@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-01-28T06:41:22.594Z",
+  "date": "2025-01-28T12:48:42.100Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -685,7 +685,7 @@
   },
   "stats": {
     "crawled": 653,
-    "errors": 1
+    "errors": 16
   },
   "crawler": "reffy-18.3.0",
   "results": [
@@ -1525,7 +1525,8 @@
       "refs": "refs/css-typed-om-2.json",
       "headings": "headings/css-typed-om-2.json",
       "ids": "ids/css-typed-om-2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://drafts.css-houdini.org/font-metrics-api-1/",
@@ -1576,7 +1577,8 @@
       "dfns": "dfns/font-metrics-api-1.json",
       "headings": "headings/font-metrics-api-1.json",
       "ids": "ids/font-metrics-api-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://drafts.csswg.org/css-backgrounds-4/",
@@ -2713,7 +2715,8 @@
       "dfns": "dfns/compositing-2.json",
       "headings": "headings/compositing-2.json",
       "ids": "ids/compositing-2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/compositing-2/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 35)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://drafts.fxtf.org/filter-effects-2/",
@@ -2773,7 +2776,8 @@
       "dfns": "dfns/filter-effects-2.json",
       "headings": "headings/filter-effects-2.json",
       "ids": "ids/filter-effects-2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-2/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 36)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://encoding.spec.whatwg.org/",
@@ -3197,7 +3201,7 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 28 Jan 2025 01:15:35 GMT"
+        "lastModified": "Tue, 28 Jan 2025 08:15:06 GMT"
       },
       "date": "28 January 2025",
       "algorithms": "algorithms/html.json",
@@ -3563,11 +3567,11 @@
       ],
       "crawled": "https://infra.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 20 Jan 2025 09:01:48 GMT"
+        "lastModified": "Tue, 28 Jan 2025 07:25:28 GMT"
       },
       "generator": "bikeshed",
-      "date": "20 January 2025",
-      "revision": "d48003101f84f836d3058f7bb7ddf55fbf42268e",
+      "date": "28 January 2025",
+      "revision": "48531eca699214bb01cb439ee0e5b6d001c9fa95",
       "algorithms": "algorithms/infra.json",
       "links": "links/infra.json",
       "refs": "refs/infra.json",
@@ -4257,9 +4261,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:47 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/ANGLE_instanced_arrays.json",
       "idl": "idl/ANGLE_instanced_arrays.idl",
       "cddl": []
@@ -4308,9 +4312,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_blend_minmax/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:47 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/EXT_blend_minmax.json",
       "idl": "idl/EXT_blend_minmax.idl",
       "cddl": []
@@ -4359,9 +4363,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:47 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/EXT_color_buffer_float.json",
       "idl": "idl/EXT_color_buffer_float.idl",
       "cddl": []
@@ -4410,9 +4414,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_half_float/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/EXT_color_buffer_half_float.json",
       "idl": "idl/EXT_color_buffer_half_float.idl",
       "cddl": []
@@ -4461,9 +4465,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/EXT_disjoint_timer_query_webgl2.json",
       "idl": "idl/EXT_disjoint_timer_query_webgl2.idl",
       "cddl": []
@@ -4512,9 +4516,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/EXT_disjoint_timer_query.json",
       "idl": "idl/EXT_disjoint_timer_query.idl",
       "cddl": []
@@ -4563,9 +4567,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/EXT_float_blend.json",
       "idl": "idl/EXT_float_blend.idl",
       "cddl": []
@@ -4614,9 +4618,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_frag_depth/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/EXT_frag_depth.json",
       "idl": "idl/EXT_frag_depth.idl",
       "cddl": []
@@ -4665,9 +4669,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/EXT_shader_texture_lod.json",
       "idl": "idl/EXT_shader_texture_lod.idl",
       "cddl": []
@@ -4716,9 +4720,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_sRGB/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/EXT_sRGB.json",
       "idl": "idl/EXT_sRGB.idl",
       "cddl": []
@@ -4767,9 +4771,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/EXT_texture_compression_bptc.json",
       "idl": "idl/EXT_texture_compression_bptc.idl",
       "cddl": []
@@ -4818,9 +4822,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_rgtc/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/EXT_texture_compression_rgtc.json",
       "idl": "idl/EXT_texture_compression_rgtc.idl",
       "cddl": []
@@ -4869,9 +4873,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_texture_filter_anisotropic/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/EXT_texture_filter_anisotropic.json",
       "idl": "idl/EXT_texture_filter_anisotropic.idl",
       "cddl": []
@@ -4920,9 +4924,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/EXT_texture_norm16.json",
       "idl": "idl/EXT_texture_norm16.idl",
       "cddl": []
@@ -4971,9 +4975,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/KHR_parallel_shader_compile/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/KHR_parallel_shader_compile.json",
       "idl": "idl/KHR_parallel_shader_compile.idl",
       "cddl": []
@@ -5022,9 +5026,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_draw_buffers_indexed/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/OES_draw_buffers_indexed.json",
       "idl": "idl/OES_draw_buffers_indexed.idl",
       "cddl": []
@@ -5073,9 +5077,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/OES_element_index_uint.json",
       "idl": "idl/OES_element_index_uint.idl",
       "cddl": []
@@ -5124,9 +5128,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_fbo_render_mipmap/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/OES_fbo_render_mipmap.json",
       "idl": "idl/OES_fbo_render_mipmap.idl",
       "cddl": []
@@ -5175,9 +5179,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/OES_standard_derivatives.json",
       "idl": "idl/OES_standard_derivatives.idl",
       "cddl": []
@@ -5226,9 +5230,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/OES_texture_float_linear.json",
       "idl": "idl/OES_texture_float_linear.idl",
       "cddl": []
@@ -5277,9 +5281,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_texture_float/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/OES_texture_float.json",
       "idl": "idl/OES_texture_float.idl",
       "cddl": []
@@ -5328,9 +5332,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_texture_half_float_linear/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/OES_texture_half_float_linear.json",
       "idl": "idl/OES_texture_half_float_linear.idl",
       "cddl": []
@@ -5379,9 +5383,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_texture_half_float/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/OES_texture_half_float.json",
       "idl": "idl/OES_texture_half_float.idl",
       "cddl": []
@@ -5430,9 +5434,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/OES_vertex_array_object.json",
       "idl": "idl/OES_vertex_array_object.idl",
       "cddl": []
@@ -5481,9 +5485,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/OVR_multiview2.json",
       "idl": "idl/OVR_multiview2.idl",
       "cddl": []
@@ -5532,9 +5536,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_blend_equation_advanced_coherent.json",
       "idl": "idl/WEBGL_blend_equation_advanced_coherent.idl",
       "cddl": []
@@ -5583,9 +5587,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_clip_cull_distance/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_clip_cull_distance.json",
       "idl": "idl/WEBGL_clip_cull_distance.idl",
       "cddl": []
@@ -5634,9 +5638,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_color_buffer_float/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_color_buffer_float.json",
       "idl": "idl/WEBGL_color_buffer_float.idl",
       "cddl": []
@@ -5685,9 +5689,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_astc/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_compressed_texture_astc.json",
       "idl": "idl/WEBGL_compressed_texture_astc.idl",
       "cddl": []
@@ -5736,9 +5740,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_compressed_texture_etc.json",
       "idl": "idl/WEBGL_compressed_texture_etc.idl",
       "cddl": []
@@ -5787,9 +5791,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_compressed_texture_etc1.json",
       "idl": "idl/WEBGL_compressed_texture_etc1.idl",
       "cddl": []
@@ -5838,9 +5842,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_compressed_texture_pvrtc.json",
       "idl": "idl/WEBGL_compressed_texture_pvrtc.idl",
       "cddl": []
@@ -5889,9 +5893,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_compressed_texture_s3tc_srgb.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc_srgb.idl",
       "cddl": []
@@ -5940,9 +5944,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_compressed_texture_s3tc.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc.idl",
       "cddl": []
@@ -5991,9 +5995,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_debug_renderer_info.json",
       "idl": "idl/WEBGL_debug_renderer_info.idl",
       "cddl": []
@@ -6042,9 +6046,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_shaders/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_debug_shaders.json",
       "idl": "idl/WEBGL_debug_shaders.idl",
       "cddl": []
@@ -6093,9 +6097,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_depth_texture.json",
       "idl": "idl/WEBGL_depth_texture.idl",
       "cddl": []
@@ -6144,9 +6148,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:48 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_draw_buffers.json",
       "idl": "idl/WEBGL_draw_buffers.idl",
       "cddl": []
@@ -6195,9 +6199,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:49 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_draw_instanced_base_vertex_base_instance.idl",
       "cddl": []
@@ -6246,9 +6250,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:49 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_lose_context.json",
       "idl": "idl/WEBGL_lose_context.idl",
       "cddl": []
@@ -6297,9 +6301,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:49 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_multi_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_multi_draw_instanced_base_vertex_base_instance.idl",
       "cddl": []
@@ -6348,9 +6352,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:49 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_multi_draw.json",
       "idl": "idl/WEBGL_multi_draw.idl",
       "cddl": []
@@ -6399,9 +6403,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 31 Oct 2024 18:14:38 GMT"
+        "lastModified": "Tue, 28 Jan 2025 09:04:49 GMT"
       },
-      "date": "31 October 2024",
+      "date": "28 January 2025",
       "links": "links/WEBGL_provoking_vertex.json",
       "idl": "idl/WEBGL_provoking_vertex.idl",
       "cddl": []
@@ -17701,7 +17705,8 @@
       "dfns": "dfns/compositing-1.json",
       "headings": "headings/compositing-1.json",
       "ids": "ids/compositing-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/compositing-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 317)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/compute-pressure/",
@@ -18407,7 +18412,8 @@
       "dfns": "dfns/css-animation-worklet-1.json",
       "headings": "headings/css-animation-worklet-1.json",
       "ids": "ids/css-animation-worklet-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 328)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-animations-1/",
@@ -21235,7 +21241,8 @@
       "dfns": "dfns/css-layout-api-1.json",
       "headings": "headings/css-layout-api-1.json",
       "ids": "ids/css-layout-api-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-layout-api-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 369)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-line-grid-1/",
@@ -21502,7 +21509,8 @@
       "elements": "elements/css-masking-1.json",
       "headings": "headings/css-masking-1.json",
       "ids": "ids/css-masking-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/css-masking-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 373)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -22308,7 +22316,8 @@
       "dfns": "dfns/css-paint-api-1.json",
       "headings": "headings/css-paint-api-1.json",
       "ids": "ids/css-paint-api-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-paint-api-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 385)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-position-3/",
@@ -22444,7 +22453,8 @@
       "dfns": "dfns/css-properties-values-api-1.json",
       "headings": "headings/css-properties-values-api-1.json",
       "ids": "ids/css-properties-values-api-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-properties-values-api-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 387)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-pseudo-4/",
@@ -24293,7 +24303,8 @@
       "dfns": "dfns/css-typed-om-1.json",
       "headings": "headings/css-typed-om-1.json",
       "ids": "ids/css-typed-om-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 414)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-ui-3/",
@@ -26858,7 +26869,8 @@
       "dfns": "dfns/fill-stroke-3.json",
       "headings": "headings/fill-stroke-3.json",
       "ids": "ids/fill-stroke-3.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/fill-stroke-3/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 453)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/filter-effects-1/",
@@ -26926,7 +26938,8 @@
       "elements": "elements/filter-effects-1.json",
       "headings": "headings/filter-effects-1.json",
       "ids": "ids/filter-effects-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 454)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/fingerprinting-guidance/",
@@ -27307,7 +27320,8 @@
       "dfns": "dfns/geometry-1.json",
       "headings": "headings/geometry-1.json",
       "ids": "ids/geometry-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/geometry-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 460)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/gpc/",
@@ -29717,10 +29731,10 @@
       ],
       "crawled": "https://w3c.github.io/miniapp-manifest/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 14 Nov 2024 13:53:06 GMT"
+        "lastModified": "Tue, 28 Jan 2025 08:01:25 GMT"
       },
       "generator": "respec",
-      "date": "14 November 2024",
+      "date": "28 January 2025",
       "algorithms": "algorithms/miniapp-manifest.json",
       "links": "links/miniapp-manifest.json",
       "refs": "refs/miniapp-manifest.json",
@@ -29772,10 +29786,10 @@
       ],
       "crawled": "https://w3c.github.io/miniapp-packaging/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 23 Oct 2023 11:57:15 GMT"
+        "lastModified": "Tue, 28 Jan 2025 07:58:23 GMT"
       },
       "generator": "respec",
-      "date": "23 October 2023",
+      "date": "28 January 2025",
       "algorithms": "algorithms/miniapp-packaging.json",
       "links": "links/miniapp-packaging.json",
       "refs": "refs/miniapp-packaging.json",
@@ -29911,7 +29925,8 @@
       "dfns": "dfns/motion-1.json",
       "headings": "headings/motion-1.json",
       "ids": "ids/motion-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/motion-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 502)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
