@@ -1652,7 +1652,7 @@
         "href": "https://wicg.github.io/shared-storage/#sharedstorage"
       },
       "SharedStoragePrivateAggregationConfig": {
-        "fragment": "dictionary SharedStoragePrivateAggregationConfig {\n  USVString aggregationCoordinatorOrigin;\n  USVString contextId;\n  [EnforceRange] unsigned long long filteringIdMaxBytes;\n};",
+        "fragment": "dictionary SharedStoragePrivateAggregationConfig {\n  USVString aggregationCoordinatorOrigin;\n  USVString contextId;\n  [EnforceRange] unsigned long long filteringIdMaxBytes;\n  [EnforceRange] unsigned long long maxContributions;\n};",
         "type": "dictionary",
         "name": "SharedStoragePrivateAggregationConfig",
         "inheritance": null,
@@ -1711,6 +1711,29 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageprivateaggregationconfig-filteringidmaxbytes"
+          },
+          {
+            "type": "field",
+            "name": "maxContributions",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageprivateaggregationconfig-maxcontributions"
           }
         ],
         "extAttrs": [],
