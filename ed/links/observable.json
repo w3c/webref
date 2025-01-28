@@ -25,7 +25,7 @@
       "https://dom.spec.whatwg.org/": {},
       "https://github.com/WICG/observable/blob/master/security-privacy-questionnaire.md": {},
       "https://github.com/WICG/observable/issues/125": {},
-      "https://github.com/WICG/observable/issues/191": {},
+      "https://github.com/WICG/observable/issues/127": {},
       "https://github.com/WICG/observable/issues/new": {},
       "https://github.com/w3c/IntersectionObserver/issues/464": {},
       "https://github.com/web-platform-tests/wpt/blob/master/dom/observable/tentative/observable-constructor.any.js": {},
@@ -79,8 +79,8 @@
           "abortsignal-signal-abort",
           "document",
           "abortsignal-aborted",
-          "abortsignal-abort-reason",
           "abortsignal-add",
+          "abortsignal-abort-reason",
           "abortcontroller-signal-abort",
           "create-a-dependent-abort-signal",
           "abortsignal-remove",
@@ -139,7 +139,9 @@
           "sec-ecmascript-data-types-and-values",
           "sec-object-type",
           "sec-returnifabrupt-shorthands",
-          "sec-throwcompletion",
+          "sec-iterator-records",
+          "sec-completion-record-specification-type",
+          "sec-normalcompletion",
           "current-realm"
         ]
       },
@@ -147,11 +149,16 @@
         "anchors": [
           "sec-getmethod",
           "sec-getiterator",
-          "sec-iteratorstepvalue"
+          "sec-iteratornext",
+          "sec-iteratorstepvalue",
+          "sec-iteratorcomplete",
+          "sec-asynciteratorclose",
+          "sec-iteratorclose"
         ]
       },
       "https://tc39.es/ecma262/multipage/control-abstraction-objects.html": {
         "anchors": [
+          "await",
           "sec-ispromise"
         ]
       },
@@ -176,8 +183,10 @@
           "dfn-throw",
           "exceptiondef-typeerror",
           "dfn-specific-type",
-          "new",
+          "a-promise-rejected-with",
+          "a-promise-resolved-with",
           "react",
+          "new",
           "a-new-promise",
           "reject",
           "resolve",

@@ -2648,7 +2648,7 @@
           "html": "<p>Let <var>newReference</var> be a new reference to <var>resource</var>.</p>"
         },
         {
-          "html": "<p>Assign <var>newReference</var> to <var>serialized</var>.[[resource reference]].</p>"
+          "html": "<p>Assign <var>newReference</var> to |serialized.resource reference|.</p>"
         },
         {
           "html": "<p>For all remaining <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata③④\">AudioData</a></code> internal slots (excluding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audiodata-resource-reference-slot\" id=\"ref-for-dom-audiodata-resource-reference-slot⑧\">[[resource reference]]</a></code>) in <var>value</var>, assign the value of\neach internal slot to a field in <var>serialized</var> with the same name as the\ninternal slot.</p>"
@@ -2714,7 +2714,7 @@
                   "html": "<p>If <var>image</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#dom-media-networkstate\" id=\"ref-for-dom-media-networkstate\">networkState</a></code> attribute is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#dom-media-network_empty\" id=\"ref-for-dom-media-network_empty\">NETWORK_EMPTY</a></code>, then throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②①\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③②\">DOMException</a></code>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>currentPlaybackFrame</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④⓪\">VideoFrame</a></code> at the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#current-playback-position\" id=\"ref-for-current-playback-position\">current\nplayback position</a>.</p>"
+                  "html": "<p>Let <var>currentPlaybackFrame</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④⓪\">VideoFrame</a></code> at the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#current-playback-position\" id=\"ref-for-current-playback-position\">current playback position</a>.</p>"
                 },
                 {
                   "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframeinit-metadata\" id=\"ref-for-dom-videoframeinit-metadata\">metadata</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">exist</a> in <var>init</var>,\nassign <var>currentPlaybackFrame</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-metadata-slot\" id=\"ref-for-dom-videoframe-metadata-slot\">[[metadata]]</a></code> to it.</p>"
@@ -2777,7 +2777,7 @@
           "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-visiblerect\" id=\"ref-for-dom-videoframebufferinit-visiblerect\">visibleRect</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①\">exists</a>, assign its\nvalue to <var>overrideRect</var>.</p>"
         },
         {
-          "html": "<p>Let <var>parsedRect</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-parse-visible-rect\" id=\"ref-for-videoframe-parse-visible-rect\">Parse Visible\n    Rect</a> algorithm with <var>defaultRect</var>, <var>overrideRect</var>, <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-codedwidth\" id=\"ref-for-dom-videoframebufferinit-codedwidth②\">codedWidth</a></code>, <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-codedheight\" id=\"ref-for-dom-videoframebufferinit-codedheight\">codedHeight</a></code>, and <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-format\" id=\"ref-for-dom-videoframebufferinit-format\">format</a></code>.</p>"
+          "html": "<p>Let <var>parsedRect</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-parse-visible-rect\" id=\"ref-for-videoframe-parse-visible-rect\">Parse Visible Rect</a> algorithm with <var>defaultRect</var>, <var>overrideRect</var>, <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-codedwidth\" id=\"ref-for-dom-videoframebufferinit-codedwidth②\">codedWidth</a></code>, <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-codedheight\" id=\"ref-for-dom-videoframebufferinit-codedheight\">codedHeight</a></code>, and <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-format\" id=\"ref-for-dom-videoframebufferinit-format\">format</a></code>.</p>"
         },
         {
           "html": "<p>If <var>parsedRect</var> is an exception, return <var>parsedRect</var>.</p>"
@@ -2789,7 +2789,7 @@
           "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-layout\" id=\"ref-for-dom-videoframebufferinit-layout\">layout</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">exists</a>, assign its value\nto <var>optLayout</var>.</p>"
         },
         {
-          "html": "<p>Let <var>combinedLayout</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-compute-layout-and-allocation-size\" id=\"ref-for-videoframe-compute-layout-and-allocation-size\">Compute\nLayout and Allocation Size</a> algorithm with <var>parsedRect</var>, <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-format\" id=\"ref-for-dom-videoframebufferinit-format①\">format</a></code>, and <var>optLayout</var>.</p>"
+          "html": "<p>Let <var>combinedLayout</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-compute-layout-and-allocation-size\" id=\"ref-for-videoframe-compute-layout-and-allocation-size\">Compute Layout and Allocation Size</a> algorithm with <var>parsedRect</var>, <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-format\" id=\"ref-for-dom-videoframebufferinit-format①\">format</a></code>, and <var>optLayout</var>.</p>"
         },
         {
           "html": "<p>If <var>combinedLayout</var> is an exception, throw <var>combinedLayout</var>.</p>"
@@ -3011,7 +3011,7 @@
           "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-format-slot\" id=\"ref-for-dom-videoframe-format-slot④\">[[format]]</a></code> is <code>null</code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror①⓪\">NotSupportedError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑥\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>combinedLayout</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-parse-videoframecopytooptions\" id=\"ref-for-videoframe-parse-videoframecopytooptions\">Parse\nVideoFrameCopyToOptions</a> algorithm with <var>options</var>.</p>"
+          "html": "<p>Let <var>combinedLayout</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-parse-videoframecopytooptions\" id=\"ref-for-videoframe-parse-videoframecopytooptions\">Parse VideoFrameCopyToOptions</a> algorithm with <var>options</var>.</p>"
         },
         {
           "html": "<p>If <var>combinedLayout</var> is an exception, throw <var>combinedLayout</var>.</p>"
@@ -3034,7 +3034,7 @@
           "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-format-slot\" id=\"ref-for-dom-videoframe-format-slot⑤\">[[format]]</a></code> is <code>null</code>, return a promise rejected with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror①①\">NotSupportedError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑧\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>combinedLayout</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-parse-videoframecopytooptions\" id=\"ref-for-videoframe-parse-videoframecopytooptions①\">Parse\nVideoFrameCopyToOptions</a> algorithm with <var>options</var>.</p>"
+          "html": "<p>Let <var>combinedLayout</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-parse-videoframecopytooptions\" id=\"ref-for-videoframe-parse-videoframecopytooptions①\">Parse VideoFrameCopyToOptions</a> algorithm with <var>options</var>.</p>"
         },
         {
           "html": "<p>If <var>combinedLayout</var> is an exception, return a promise rejected with <var>combinedLayout</var>.</p>"
@@ -3074,7 +3074,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let resource be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource②⑥\">media resource</a> referenced by\n[[resource reference]].</p>"
+              "html": "<p>Let resource be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource②⑥\">media resource</a> referenced by <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot①\">[[resource reference]]</a></code>.</p>"
             },
             {
               "html": "<p>Let <var>numPlanes</var> be the number of planes as defined by <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-format-slot\" id=\"ref-for-dom-videoframe-format-slot⑥\">[[format]]</a></code>.</p>"
@@ -3194,7 +3194,7 @@
               "html": "<p>Let <var>resourceReference</var> be a reference to <var>resource</var>.</p>"
             },
             {
-              "html": "<p>Assign <var>resourceReference</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot①\">[[resource reference]]</a></code>.</p>"
+              "html": "<p>Assign <var>resourceReference</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot②\">[[resource reference]]</a></code>.</p>"
             },
             {
               "html": "<p>If <var>output</var> uses a recognized <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#enumdef-videopixelformat\" id=\"ref-for-enumdef-videopixelformat⑦\">VideoPixelFormat</a></code>, assign that format to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-format-slot\" id=\"ref-for-dom-videoframe-format-slot⑦\">[[format]]</a></code>. Otherwise, assign <code>null</code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-format-slot\" id=\"ref-for-dom-videoframe-format-slot⑧\">[[format]]</a></code>.</p>"
@@ -3327,7 +3327,7 @@
           "html": "<p>Let <var>format</var> be <var>otherFrame</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-format\" id=\"ref-for-dom-videoframe-format③\">format</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframeinit-alpha\" id=\"ref-for-dom-videoframeinit-alpha\">alpha</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-alphaoption-discard\" id=\"ref-for-dom-alphaoption-discard②\">discard</a></code>,\nassign <var>otherFrame</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-format\" id=\"ref-for-dom-videoframe-format④\">format</a></code>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#equivalent-opaque-format\" id=\"ref-for-equivalent-opaque-format\">equivalent opaque format</a> <var>format</var>.</p>"
+          "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframeinit-alpha\" id=\"ref-for-dom-videoframeinit-alpha\">alpha</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-alphaoption-discard\" id=\"ref-for-dom-alphaoption-discard②\">discard</a></code>,\nassign <var>otherFrame</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-format\" id=\"ref-for-dom-videoframe-format④\">format</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#equivalent-opaque-format\" id=\"ref-for-equivalent-opaque-format\">equivalent opaque format</a> <var>format</var>.</p>"
         },
         {
           "html": "<p>Let <var>validInit</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#validate-videoframeinit\" id=\"ref-for-validate-videoframeinit\">Validate VideoFrameInit</a> algorithm with <var>format</var> and <var>otherFrame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-coded-width-slot\" id=\"ref-for-dom-videoframe-coded-width-slot⑤\">[[coded width]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-coded-height-slot\" id=\"ref-for-dom-videoframe-coded-height-slot⑤\">[[coded height]]</a></code>.</p>"
@@ -3336,10 +3336,10 @@
           "html": "<p>If <var>validInit</var> is <code>false</code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①⑧\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>resource</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource③⓪\">media resource</a> referenced by <var>otherFrame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot②\">[[resource reference]]</a></code>.</p>"
+          "html": "<p>Let <var>resource</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource③⓪\">media resource</a> referenced by <var>otherFrame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot③\">[[resource reference]]</a></code>.</p>"
         },
         {
-          "html": "<p>Assign a new reference for <var>resource</var> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot③\">[[resource reference]]</a></code>.</p>"
+          "html": "<p>Assign a new reference for <var>resource</var> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot④\">[[resource reference]]</a></code>.</p>"
         },
         {
           "html": "<p>Assign the following attributes from <var>otherFrame</var> to <var>frame</var>: <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-codedwidth\" id=\"ref-for-dom-videoframe-codedwidth④\">codedWidth</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-codedheight\" id=\"ref-for-dom-videoframe-codedheight④\">codedHeight</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-colorspace\" id=\"ref-for-dom-videoframe-colorspace③\">colorSpace</a></code>.</p>"
@@ -3389,7 +3389,7 @@
           "html": "<p>If <var>validInit</var> is <code>false</code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①⑨\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>Assign a new reference for <var>resource</var> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot④\">[[resource reference]]</a></code>.</p>"
+          "html": "<p>Assign a new reference for <var>resource</var> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot⑤\">[[resource reference]]</a></code>.</p>"
         },
         {
           "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframeinit-alpha\" id=\"ref-for-dom-videoframeinit-alpha①\">alpha</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-alphaoption-discard\" id=\"ref-for-dom-alphaoption-discard③\">discard</a></code>, assign <var>format</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#equivalent-opaque-format\" id=\"ref-for-equivalent-opaque-format①\">equivalent opaque format</a> to <var>format</var>.</p>"
@@ -3520,16 +3520,16 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>resource</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource③①\">media resource</a> referenced by <var>frame</var>’s\n[[resource reference]].</p>"
+              "html": "<p>Let <var>resource</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource③①\">media resource</a> referenced by <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot⑥\">[[resource reference]]</a></code>.</p>"
             },
             {
               "html": "<p>Let <var>newReference</var> be a new reference to <var>resource</var>.</p>"
             },
             {
-              "html": "<p>Assign <var>newReference</var> to <var>clone</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot⑤\">[[resource reference]]</a></code>.</p>"
+              "html": "<p>Assign <var>newReference</var> to <var>clone</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot⑦\">[[resource reference]]</a></code>.</p>"
             },
             {
-              "html": "<p>Assign all remaining internal slots of <var>frame</var> (excluding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot⑥\">[[resource reference]]</a></code>) to those of the same name\nin <var>clone</var>.</p>"
+              "html": "<p>Assign all remaining internal slots of <var>frame</var> (excluding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot⑧\">[[resource reference]]</a></code>) to those of the same name\nin <var>clone</var>.</p>"
             }
           ]
         },
@@ -3545,7 +3545,7 @@
       "rationale": "assign",
       "steps": [
         {
-          "html": "<p>Assign <code>null</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot⑦\">[[resource reference]]</a></code>.</p>"
+          "html": "<p>Assign <code>null</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot⑨\">[[resource reference]]</a></code>.</p>"
         },
         {
           "html": "<p>Assign <code>true</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#detached\" id=\"ref-for-detached②⑥\">[[Detached]]</a></code>.</p>"
@@ -3614,7 +3614,7 @@
           "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframecopytooptions-rect\" id=\"ref-for-dom-videoframecopytooptions-rect\">rect</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②④\">exists</a>, assign the\nvalue of <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframecopytooptions-rect\" id=\"ref-for-dom-videoframecopytooptions-rect①\">rect</a></code> to <var>overrideRect</var>.</p>"
         },
         {
-          "html": "<p>Let <var>parsedRect</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-parse-visible-rect\" id=\"ref-for-videoframe-parse-visible-rect①\">Parse Visible\nRect</a> algorithm with <var>defaultRect</var>, <var>overrideRect</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-coded-width-slot\" id=\"ref-for-dom-videoframe-coded-width-slot⑧\">[[coded width]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-coded-height-slot\" id=\"ref-for-dom-videoframe-coded-height-slot⑧\">[[coded height]]</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-format-slot\" id=\"ref-for-dom-videoframe-format-slot①③\">[[format]]</a></code>.</p>"
+          "html": "<p>Let <var>parsedRect</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-parse-visible-rect\" id=\"ref-for-videoframe-parse-visible-rect①\">Parse Visible Rect</a> algorithm with <var>defaultRect</var>, <var>overrideRect</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-coded-width-slot\" id=\"ref-for-dom-videoframe-coded-width-slot⑧\">[[coded width]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-coded-height-slot\" id=\"ref-for-dom-videoframe-coded-height-slot⑧\">[[coded height]]</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-format-slot\" id=\"ref-for-dom-videoframe-format-slot①③\">[[format]]</a></code>.</p>"
         },
         {
           "html": "<p>If <var>parsedRect</var> is an exception, return <var>parsedRect</var>.</p>"
@@ -3635,7 +3635,7 @@
           "html": "<p>Otherwise, if <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframecopytooptions-format\" id=\"ref-for-dom-videoframecopytooptions-format⑤\">format</a></code> is equal to\none of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videopixelformat-rgba\" id=\"ref-for-dom-videopixelformat-rgba①\">RGBA</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videopixelformat-rgbx\" id=\"ref-for-dom-videopixelformat-rgbx①\">RGBX</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videopixelformat-bgra\" id=\"ref-for-dom-videopixelformat-bgra①\">BGRA</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videopixelformat-bgrx\" id=\"ref-for-dom-videopixelformat-bgrx①\">BGRX</a></code>, then assign <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframecopytooptions-format\" id=\"ref-for-dom-videoframecopytooptions-format⑥\">format</a></code> to <var>format</var>,\notherwise return <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror①②\">NotSupportedError</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>combinedLayout</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-compute-layout-and-allocation-size\" id=\"ref-for-videoframe-compute-layout-and-allocation-size①\">Compute\nLayout and Allocation Size</a> algorithm with <var>parsedRect</var>, <var>format</var>,\nand <var>optLayout</var>.</p>"
+          "html": "<p>Let <var>combinedLayout</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-compute-layout-and-allocation-size\" id=\"ref-for-videoframe-compute-layout-and-allocation-size①\">Compute Layout and Allocation Size</a> algorithm with <var>parsedRect</var>, <var>format</var>,\nand <var>optLayout</var>.</p>"
         },
         {
           "html": "<p>Return <var>combinedLayout</var>.</p>"
@@ -3922,10 +3922,10 @@
               "html": "<p>Assign the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#convert-predefinedcolorspace-to-videocolorspace\" id=\"ref-for-convert-predefinedcolorspace-to-videocolorspace\">Convert\nPredefinedColorSpace to VideoColorSpace</a> algorithm with <var>colorSpace</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-color-space-slot\" id=\"ref-for-dom-videoframe-color-space-slot⑤\">[[color space]]</a></code>.</p>"
             },
             {
-              "html": "<p>Let <var>resource</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource③②\">media resource</a> containing the result of\nconversion of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource③③\">media resource</a> referenced by <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot⑧\">[[resource reference]]</a></code> into a color space and pixel\nformat specified by <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-color-space-slot\" id=\"ref-for-dom-videoframe-color-space-slot⑥\">[[color space]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-format-slot\" id=\"ref-for-dom-videoframe-format-slot①⑥\">[[format]]</a></code> respectively.</p>"
+              "html": "<p>Let <var>resource</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource③②\">media resource</a> containing the result of\nconversion of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource③③\">media resource</a> referenced by <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot①⓪\">[[resource reference]]</a></code> into a color space and pixel\nformat specified by <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-color-space-slot\" id=\"ref-for-dom-videoframe-color-space-slot⑥\">[[color space]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-format-slot\" id=\"ref-for-dom-videoframe-format-slot①⑥\">[[format]]</a></code> respectively.</p>"
             },
             {
-              "html": "<p>Assign the reference to <var>resource</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot⑨\">[[resource reference]]</a></code></p>"
+              "html": "<p>Assign the reference to <var>resource</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot①①\">[[resource reference]]</a></code></p>"
             }
           ]
         },
@@ -3986,16 +3986,16 @@
           "html": "<p>If <var>forStorage</var> is <code>true</code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror①⑤\">DataCloneError</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>resource</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource③④\">media resource</a> referenced by <var>value</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot①⓪\">[[resource reference]]</a></code>.</p>"
+          "html": "<p>Let <var>resource</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource③④\">media resource</a> referenced by <var>value</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot①②\">[[resource reference]]</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>newReference</var> be a new reference to <var>resource</var>.</p>"
         },
         {
-          "html": "<p>Assign <var>newReference</var> to <var>serialized</var>.[[resource reference]].</p>"
+          "html": "<p>Assign <var>newReference</var> to |serialized.resource reference|.</p>"
         },
         {
-          "html": "<p>For all remaining <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥⓪\">VideoFrame</a></code> internal slots (excluding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot①①\">[[resource reference]]</a></code>) in <var>value</var>, assign the value of\neach internal slot to a field in <var>serialized</var> with the same name as the\ninternal slot.</p>"
+          "html": "<p>For all remaining <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥⓪\">VideoFrame</a></code> internal slots (excluding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot①③\">[[resource reference]]</a></code>) in <var>value</var>, assign the value of\neach internal slot to a field in <var>serialized</var> with the same name as the\ninternal slot.</p>"
         }
       ]
     },
@@ -4102,7 +4102,7 @@
           "html": "<p>Assign <code>false</code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-closed-slot\" id=\"ref-for-dom-imagedecoder-closed-slot\">[[closed]]</a></code>.</p>"
         },
         {
-          "html": "<p>Assign a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-progressive-frame-generations-slot\" id=\"ref-for-dom-imagedecoder-progressive-frame-generations-slot\">[[progressive frame\ngenerations]]</a></code>.</p>"
+          "html": "<p>Assign a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-progressive-frame-generations-slot\" id=\"ref-for-dom-imagedecoder-progressive-frame-generations-slot\">[[progressive frame generations]]</a></code>.</p>"
         },
         {
           "html": "If <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoderinit-data\" id=\"ref-for-dom-imagedecoderinit-data\">data</a></code> member is of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream\">ReadableStream</a></code>:",
@@ -4191,7 +4191,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>supported</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#imagedecoder-check-type-support\" id=\"ref-for-imagedecoder-check-type-support\">Check Type\nSupport</a> algorithm with <code>init.type</code>.</p>"
+          "html": "<p>Let <var>supported</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#imagedecoder-check-type-support\" id=\"ref-for-imagedecoder-check-type-support\">Check Type Support</a> algorithm with <code>init.type</code>.</p>"
         },
         {
           "html": "<p>If <var>supported</var> is <code>false</code>, run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#imagedecoder-close-imagedecoder\" id=\"ref-for-imagedecoder-close-imagedecoder\">Close ImageDecoder</a> algorithm with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror①④\">NotSupportedError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④⑤\">DOMException</a></code> and return <code>\"processed\"</code>.</p>"
@@ -4249,7 +4249,7 @@
           "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-closed-slot\" id=\"ref-for-dom-imagedecoder-closed-slot①\">[[closed]]</a></code> is <code>true</code>, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①③\">Promise</a></code> rejected with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②⑥\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④⑥\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-imagetracklist-slot\" id=\"ref-for-dom-imagedecoder-imagetracklist-slot③\">[[ImageTrackList]]</a></code>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagetracklist-selected-index-slot\" id=\"ref-for-dom-imagetracklist-selected-index-slot①\">[[selected index]]</a></code> is '-1', return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①④\">Promise</a></code> rejected with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②⑦\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④⑦\">DOMException</a></code>.</p>"
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-imagetracklist-slot\" id=\"ref-for-dom-imagedecoder-imagetracklist-slot③\">[[ImageTrackList]]</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagetracklist-selected-index-slot\" id=\"ref-for-dom-imagetracklist-selected-index-slot①\">[[selected index]]</a></code> is '-1', return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①④\">Promise</a></code> rejected with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②⑦\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④⑦\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>If <var>options</var> is <code>undefined</code>, assign a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dictdef-imagedecodeoptions\" id=\"ref-for-dictdef-imagedecodeoptions①\">ImageDecodeOptions</a></code> to <var>options</var>.</p>"
@@ -4445,7 +4445,7 @@
           "html": "<p>Assign <code>true</code> to <var>selectedTrack</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagetrack-selected-slot\" id=\"ref-for-dom-imagetrack-selected-slot①\">[[selected]]</a></code> internal\nslot.</p>"
         },
         {
-          "html": "<p>Assign <var>selectedTrackIndex</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-internal-selected-track-index-slot\" id=\"ref-for-dom-imagedecoder-internal-selected-track-index-slot①\">[[internal selected track\nindex]]</a></code>.</p>"
+          "html": "<p>Assign <var>selectedTrackIndex</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-internal-selected-track-index-slot\" id=\"ref-for-dom-imagedecoder-internal-selected-track-index-slot①\">[[internal selected track index]]</a></code>.</p>"
         },
         {
           "html": "<p>Assign <code>true</code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-tracks-established-slot\" id=\"ref-for-dom-imagedecoder-tracks-established-slot④\">[[tracks established]]</a></code>.</p>"
@@ -4474,7 +4474,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-encoded-data-slot\" id=\"ref-for-dom-imagedecoder-encoded-data-slot①①\">[[encoded data]]</a></code> identifies a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#primary-image-track\" id=\"ref-for-primary-image-track\">Primary Image\nTrack</a>:",
+          "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-encoded-data-slot\" id=\"ref-for-dom-imagedecoder-encoded-data-slot①①\">[[encoded data]]</a></code> identifies a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#primary-image-track\" id=\"ref-for-primary-image-track\">Primary Image Track</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -4679,7 +4679,7 @@
           "rationale": "complete",
           "steps": [
             {
-              "html": "<p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-encoded-data-slot\" id=\"ref-for-dom-imagedecoder-encoded-data-slot①⑦\">[[encoded data]]</a></code> contains enough bytes to decode <var>encodedFrame</var> to produce an output whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#progressive-image-frame-generation\" id=\"ref-for-progressive-image-frame-generation①\">Progressive Image\nFrame Generation</a> exceeds <var>lastFrameGeneration</var>.</p>"
+              "html": "<p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-encoded-data-slot\" id=\"ref-for-dom-imagedecoder-encoded-data-slot①⑦\">[[encoded data]]</a></code> contains enough bytes to decode <var>encodedFrame</var> to produce an output whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#progressive-image-frame-generation\" id=\"ref-for-progressive-image-frame-generation①\">Progressive Image Frame Generation</a> exceeds <var>lastFrameGeneration</var>.</p>"
             },
             {
               "html": "<p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-encoded-data-slot\" id=\"ref-for-dom-imagedecoder-encoded-data-slot①⑧\">[[encoded data]]</a></code> is found to be malformed.</p>"
@@ -4733,7 +4733,7 @@
               "html": "<p>Let <var>frameGeneration</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#progressive-image-frame-generation\" id=\"ref-for-progressive-image-frame-generation③\">Progressive Image Frame Generation</a> for <var>output</var>.</p>"
             },
             {
-              "html": "<p>Add a new entry to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-progressive-frame-generations-slot\" id=\"ref-for-dom-imagedecoder-progressive-frame-generations-slot④\">[[progressive frame\ngenerations]]</a></code> with key <var>frameIndex</var> and value <var>frameGeneration</var>.</p>"
+              "html": "<p>Add a new entry to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-progressive-frame-generations-slot\" id=\"ref-for-dom-imagedecoder-progressive-frame-generations-slot④\">[[progressive frame generations]]</a></code> with key <var>frameIndex</var> and value <var>frameGeneration</var>.</p>"
             }
           ]
         },
@@ -4907,7 +4907,7 @@
               "html": "<p>Remove all entries from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-imagetracklist-slot\" id=\"ref-for-dom-imagedecoder-imagetracklist-slot⑤\">[[ImageTrackList]]</a></code>.</p>"
             },
             {
-              "html": "<p>Assign <code>-1</code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-imagetracklist-slot\" id=\"ref-for-dom-imagedecoder-imagetracklist-slot⑥\">[[ImageTrackList]]</a></code>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagetracklist-selected-index-slot\" id=\"ref-for-dom-imagetracklist-selected-index-slot③\">[[selected index]]</a></code>.</p>"
+              "html": "<p>Assign <code>-1</code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-imagetracklist-slot\" id=\"ref-for-dom-imagedecoder-imagetracklist-slot⑥\">[[ImageTrackList]]</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagetracklist-selected-index-slot\" id=\"ref-for-dom-imagetracklist-selected-index-slot③\">[[selected index]]</a></code>.</p>"
             }
           ]
         },
@@ -4972,7 +4972,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagetrack-imagedecoder-slot\" id=\"ref-for-dom-imagetrack-imagedecoder-slot①\">[[ImageDecoder]]</a></code>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-closed-slot\" id=\"ref-for-dom-imagedecoder-closed-slot①⓪\">[[closed]]</a></code> slot is <code>true</code>, abort these steps.</p>"
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagetrack-imagedecoder-slot\" id=\"ref-for-dom-imagetrack-imagedecoder-slot①\">[[ImageDecoder]]</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-closed-slot\" id=\"ref-for-dom-imagedecoder-closed-slot①⓪\">[[closed]]</a></code> slot is <code>true</code>, abort these steps.</p>"
         },
         {
           "html": "<p>Let <var>newValue</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#the-given-value\" id=\"ref-for-the-given-value\">the given value</a>.</p>"
@@ -5011,7 +5011,7 @@
           "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#imagedecoder-reset-imagedecoder\" id=\"ref-for-imagedecoder-reset-imagedecoder②\">Reset ImageDecoder</a> algorithm on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagetrack-imagedecoder-slot\" id=\"ref-for-dom-imagetrack-imagedecoder-slot②\">[[ImageDecoder]]</a></code>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#enqueues-a-control-message\" id=\"ref-for-enqueues-a-control-message②②\">Queue a control message</a> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagetrack-imagedecoder-slot\" id=\"ref-for-dom-imagetrack-imagedecoder-slot③\">[[ImageDecoder]]</a></code>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#control-message-queue\" id=\"ref-for-control-message-queue①①\">control message queue</a> to update the internal selected track\nindex with <var>selectedIndex</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#enqueues-a-control-message\" id=\"ref-for-enqueues-a-control-message②②\">Queue a control message</a> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagetrack-imagedecoder-slot\" id=\"ref-for-dom-imagetrack-imagedecoder-slot③\">[[ImageDecoder]]</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#control-message-queue\" id=\"ref-for-control-message-queue①①\">control message queue</a> to update the internal selected track\nindex with <var>selectedIndex</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#process-the-control-message-queue\" id=\"ref-for-process-the-control-message-queue②⑤\">Process the control message queue</a> belonging to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagetrack-imagedecoder-slot\" id=\"ref-for-dom-imagetrack-imagedecoder-slot④\">[[ImageDecoder]]</a></code>.</p>"
@@ -5025,7 +5025,7 @@
       "rationale": "enqueue",
       "steps": [
         {
-          "html": "Enqueue the following steps to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagetrack-imagedecoder-slot\" id=\"ref-for-dom-imagetrack-imagedecoder-slot⑤\">[[ImageDecoder]]</a></code>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-codec-work-queue-slot\" id=\"ref-for-dom-imagedecoder-codec-work-queue-slot④\">[[codec work queue]]</a></code>:",
+          "html": "Enqueue the following steps to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagetrack-imagedecoder-slot\" id=\"ref-for-dom-imagetrack-imagedecoder-slot⑤\">[[ImageDecoder]]</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-codec-work-queue-slot\" id=\"ref-for-dom-imagedecoder-codec-work-queue-slot④\">[[codec work queue]]</a></code>:",
           "rationale": "assign",
           "steps": [
             {
