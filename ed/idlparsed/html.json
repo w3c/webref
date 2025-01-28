@@ -27739,7 +27739,7 @@
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationactivation"
       },
       "NavigateEvent": {
-        "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInitDict);\n\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canIntercept;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute DOMString? downloadRequest;\n  readonly attribute any info;\n  readonly attribute boolean hasUAVisualTransition;\n\n  undefined intercept(optional NavigationInterceptOptions options = {});\n  undefined scroll();\n};",
+        "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInitDict);\n\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canIntercept;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute DOMString? downloadRequest;\n  readonly attribute any info;\n  readonly attribute boolean hasUAVisualTransition;\n  readonly attribute Element? sourceElement;\n\n  undefined intercept(optional NavigationInterceptOptions options = {});\n  undefined scroll();\n};",
         "type": "interface",
         "name": "NavigateEvent",
         "inheritance": "Event",
@@ -27941,6 +27941,22 @@
             "special": "",
             "readonly": true,
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateevent-hasuavisualtransition"
+          },
+          {
+            "type": "attribute",
+            "name": "sourceElement",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Element"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateevent-sourceelement"
           },
           {
             "type": "operation",
@@ -44342,6 +44358,7 @@
         "NavigationDestination",
         "AbortSignal",
         "FormData",
+        "Element",
         "NavigationInterceptOptions"
       ],
       "NavigateEventInit": [
