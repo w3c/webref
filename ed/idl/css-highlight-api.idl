@@ -22,6 +22,14 @@ partial namespace CSS {
 };
 
 [Exposed=Window]
-interface HighlightRegistry {
+partial interface HighlightRegistry {
   maplike<DOMString, Highlight>;
+};
+
+partial interface HighlightRegistry {
+  sequence<Highlight> highlightsFromPoint(float x, float y, optional HighlightsFromPointOptions options = {});
+};
+
+dictionary HighlightsFromPointOptions {
+  sequence<ShadowRoot> shadowRoots = [];
 };
