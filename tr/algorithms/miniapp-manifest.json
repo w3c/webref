@@ -7,11 +7,11 @@
     {
       "name": "process the description member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-description-member",
-      "html": "To <dfn id=\"dfn-process-the-description-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>description</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "html": "To <dfn id=\"dfn-process-the-description-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>description</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"description\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"description\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">manifest</var>[\"description\"] to <var data-type=\"ordered map\">json</var>[\"description\"]."
@@ -21,11 +21,11 @@
     {
       "name": "process the app_id member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-app_id-member",
-      "html": "To <dfn id=\"dfn-process-the-app_id-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>app_id</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "html": "To <dfn id=\"dfn-process-the-app_id-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>app_id</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"app_id\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"app_id\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"app_id\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"app_id\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">manifest</var>[\"app_id\"] to <var data-type=\"ordered map\">json</var>[\"app_id\"]."
@@ -35,11 +35,11 @@
     {
       "name": "process the color_scheme member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-color_scheme-member",
-      "html": "To <dfn id=\"dfn-process-the-color_scheme-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>color_scheme</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"JSON\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "html": "To <dfn id=\"dfn-process-the-color_scheme-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>color_scheme</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"JSON\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"JSON\">json</var>[\"color_scheme\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>,<br>\n            or if <var data-type=\"JSON\">json</var>[\"color_scheme\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, <br>\n            or if <var data-type=\"JSON\">json</var>[\"color_scheme\"] doesn't match one of the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-color-scheme-values\" class=\"internalDFN\" id=\"ref-for-dfn-color-scheme-values-1\">color scheme values</a>, return."
+          "html": "If <var data-type=\"JSON\">json</var>[\"color_scheme\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>,<br>\n            or if <var data-type=\"JSON\">json</var>[\"color_scheme\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, <br>\n            or if <var data-type=\"JSON\">json</var>[\"color_scheme\"] doesn't match one of the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-color-scheme-values\" class=\"internalDFN\" id=\"ref-for-dfn-color-scheme-values-1\">color scheme values</a>, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">manifest</var>[\"color_scheme\"] to <var data-type=\"JSON\">json</var>[\"color_scheme\"]."
@@ -49,24 +49,24 @@
     {
       "name": "process the device_type member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-device_type-member",
-      "html": "To <dfn id=\"dfn-process-the-device_type-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>device_type</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"JSON\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "html": "To <dfn id=\"dfn-process-the-device_type-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>device_type</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"JSON\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"JSON\">json</var>[\"device_type\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"JSON\">json</var>[\"device_type\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>, return."
+          "html": "If <var data-type=\"JSON\">json</var>[\"device_type\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"JSON\">json</var>[\"device_type\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>, return."
         },
         {
-          "html": "Let <var data-type=\"list\">device_type</var> be a new empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+          "html": "Let <var data-type=\"list\">device_type</var> be a new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
         },
         {
-          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"string\">item</var> of <var data-type=\"JSON\">json</var>[\"device_type\"]:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"string\">item</var> of <var data-type=\"JSON\">json</var>[\"device_type\"]:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var data-type=\"string\">item</var> is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
+              "html": "If <var data-type=\"string\">item</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
             },
             {
-              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"string\">item</var> to <var data-type=\"list\">device_type</var>."
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"string\">item</var> to <var data-type=\"list\">device_type</var>."
             }
           ]
         },
@@ -78,30 +78,30 @@
     {
       "name": "process the pages member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-pages-member",
-      "html": "To <dfn id=\"dfn-process-the-pages-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>pages</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "html": "To <dfn id=\"dfn-process-the-pages-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>pages</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"pages\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"pages\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"pages\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"pages\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>, return."
         },
         {
-          "html": "Let <var>pages</var> be a new <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+          "html": "Let <var>pages</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
         },
         {
-          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"string\">item</var> of <var data-type=\"ordered map\">json</var>[\"pages\"]:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"string\">item</var> of <var data-type=\"ordered map\">json</var>[\"pages\"]:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var data-type=\"string\">item</var> is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
+              "html": "If <var data-type=\"string\">item</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
             },
             {
-              "html": "Let <var data-type=\"URL\">url</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"URL Parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a> <var data-type=\"string\">item</var>."
+              "html": "Let <var data-type=\"URL\">url</var> be the result of <a data-link-type=\"dfn\" data-lt=\"URL Parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a> <var data-type=\"string\">item</var>."
             },
             {
-              "html": "If <var data-type=\"URL\">url</var> is failure, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
+              "html": "If <var data-type=\"URL\">url</var> is failure, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
             },
             {
-              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var>pages</var> to <var data-type=\"URL\">url</var>."
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var>pages</var> to <var data-type=\"URL\">url</var>."
             }
           ]
         },
@@ -113,14 +113,14 @@
     {
       "name": "process the platform_version member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-platform_version-member",
-      "html": "To <dfn id=\"dfn-process-the-platform_version-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>platform_version</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "html": "To <dfn id=\"dfn-process-the-platform_version-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>platform_version</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"platform_version\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"platform_version\"] is not an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"platform_version\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"platform_version\"] is not an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>, return."
         },
         {
-          "html": "Let <var data-type=\"ordered map\">platform_version</var> be a new <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>."
+          "html": "Let <var data-type=\"ordered map\">platform_version</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>."
         },
         {
           "html": "<a href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-platform-version-s-min_code-member\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-process-the-platform-version-s-min_code-member-1\">Process the platform version's <code>min_code</code> member</a> passing <var data-type=\"ordered map\">json</var>[\"platform_version\"] and <var data-type=\"ordered map\">platform_version</var>."
@@ -132,7 +132,7 @@
           "html": "<a href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-platform-version-s-release_type-member\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-process-the-platform-version-s-release_type-member-1\">Process the platform version's <code>release_type</code> member</a> passing <var data-type=\"ordered map\">json</var>[\"platform_version\"] and <var data-type=\"ordered map\">platform_version</var>."
         },
         {
-          "html": "If <var data-type=\"ordered map\">platform_version</var>[\"min_code\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, return failure."
+          "html": "If <var data-type=\"ordered map\">platform_version</var>[\"min_code\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, return failure."
         },
         {
           "html": "Set <var data-type=\"ordered map\">manifest</var>[\"platform_version\"] to <var data-type=\"ordered map\">platform_version</var>."
@@ -142,36 +142,36 @@
     {
       "name": "process the req_permissions member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-req_permissions-member",
-      "html": "To <dfn id=\"dfn-process-the-req_permissions-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>req_permissions</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "html": "To <dfn id=\"dfn-process-the-req_permissions-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>req_permissions</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"req_permissions\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"req_permissions\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"req_permissions\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"req_permissions\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>, return."
         },
         {
-          "html": "Let <var data-type=\"list\">permissions</var> be a new <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+          "html": "Let <var data-type=\"list\">permissions</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
         },
         {
-          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"ordered map\">item</var> of <var data-type=\"ordered map\">json</var>[\"req_permissions\"]:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"ordered map\">item</var> of <var data-type=\"ordered map\">json</var>[\"req_permissions\"]:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var data-type=\"ordered map\">item</var> is not an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
+              "html": "If <var data-type=\"ordered map\">item</var> is not an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
             },
             {
-              "html": "Let <var data-type=\"ordered map\">permission</var> be an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>."
+              "html": "Let <var data-type=\"ordered map\">permission</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>."
             },
             {
               "html": "<a href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-permission-resource-s-name-member\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-process-the-permission-resource-s-name-member-1\">Process the permission resource's <code>name</code> member</a> passing <var data-type=\"ordered map\">item</var> and <var data-type=\"ordered map\">permission</var>."
             },
             {
-              "html": "If <var data-type=\"ordered map\">permission</var>[\"name\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
+              "html": "If <var data-type=\"ordered map\">permission</var>[\"name\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
             },
             {
               "html": "<a href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-permission-resource-s-reason-member\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-process-the-permission-resource-s-reason-member-1\">Process the permission resource's <code>reason</code> member</a> passing <var data-type=\"ordered map\">item</var> and <var data-type=\"ordered map\">permission</var>."
             },
             {
-              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"ordered map\">permission</var> to <var data-type=\"list\">permissions</var>."
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"ordered map\">permission</var> to <var data-type=\"list\">permissions</var>."
             }
           ]
         },
@@ -183,14 +183,14 @@
     {
       "name": "process the version member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-version-member",
-      "html": "To <dfn id=\"dfn-process-the-version-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>version</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "html": "To <dfn id=\"dfn-process-the-version-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>version</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"version\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"version\"] is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"version\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"version\"] is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>, return."
         },
         {
-          "html": "Let <var data-type=\"ordered map\">version</var> be a new <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>."
+          "html": "Let <var data-type=\"ordered map\">version</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>."
         },
         {
           "html": "<a href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-version-s-code-member\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-process-the-version-s-code-member-1\">Process the version's <code>code</code> member</a> passing <var data-type=\"ordered map\">json</var>[\"version\"] and <var data-type=\"ordered map\">version</var>."
@@ -206,24 +206,24 @@
     {
       "name": "process the widgets member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-widgets-member",
-      "html": "To <dfn id=\"dfn-process-the-widgets-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>widgets</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "html": "To <dfn id=\"dfn-process-the-widgets-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>widgets</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"widgets\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"widgets\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"widgets\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"widgets\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>, return."
         },
         {
-          "html": "Let <var data-type=\"list\">widgets</var> be a new empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+          "html": "Let <var data-type=\"list\">widgets</var> be a new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
         },
         {
-          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"ordered map\">item</var> of <var data-type=\"ordered map\">json</var>[\"widgets\"]:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"ordered map\">item</var> of <var data-type=\"ordered map\">json</var>[\"widgets\"]:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var data-type=\"ordered map\">item</var> is not an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
+              "html": "If <var data-type=\"ordered map\">item</var> is not an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
             },
             {
-              "html": "Let <var data-type=\"ordered map\">widget</var> be an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>."
+              "html": "Let <var data-type=\"ordered map\">widget</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>."
             },
             {
               "html": "<a href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-widget-s-name-member\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-process-the-widget-s-name-member-1\">Process the widget's <code>name</code> member</a> passing <var data-type=\"ordered map\">item</var> and <var data-type=\"ordered map\">widget</var>."
@@ -235,10 +235,10 @@
               "html": "<a href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-widget-s-min_code-member\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-process-the-widget-s-min_code-member-1\">Process the widget's <code>min_code</code> member</a> passing <var data-type=\"ordered map\">item</var>, <var data-type=\"ordered map\">manifest</var>, and <var data-type=\"ordered map\">widget</var>."
             },
             {
-              "html": "If <var data-type=\"ordered map\">widget</var>[\"name\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">item</var>[\"path\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
+              "html": "If <var data-type=\"ordered map\">widget</var>[\"name\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">item</var>[\"path\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
             },
             {
-              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"ordered map\">widget</var> to <var data-type=\"list\">widgets</var>."
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"ordered map\">widget</var> to <var data-type=\"list\">widgets</var>."
             }
           ]
         },
@@ -250,14 +250,14 @@
     {
       "name": "process the window member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-member",
-      "html": "To <dfn id=\"dfn-process-the-window-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>window</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "html": "To <dfn id=\"dfn-process-the-window-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>window</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"window\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"window\"] is not an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"window\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"window\"] is not an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>, return."
         },
         {
-          "html": "Let <var data-type=\"ordered map\">window</var> be a new <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> «[ \"auto_design_width\" → false, \"background_color\" → \"#ffffff\", \"background_text_style\" → \"dark\", \"design_width\" → 750, \"enable_pull_down_refresh\" → false, \"fullscreen\" → \"false\", \"navigation_bar_background_color\" → \"#000000\", \"navigation_bar_text_style\" → \"white\", \"navigation_bar_title_text\" → \"default\", \"on_reach_bottom_distance\" → 50, \"orientation\" → \"portrait\" ]»."
+          "html": "Let <var data-type=\"ordered map\">window</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> «[ \"auto_design_width\" → false, \"background_color\" → \"#ffffff\", \"background_text_style\" → \"dark\", \"design_width\" → 750, \"enable_pull_down_refresh\" → false, \"fullscreen\" → \"false\", \"navigation_bar_background_color\" → \"#000000\", \"navigation_bar_text_style\" → \"white\", \"navigation_bar_title_text\" → \"default\", \"on_reach_bottom_distance\" → 50, \"orientation\" → \"portrait\" ]»."
         },
         {
           "html": "<a href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-auto_design_width-member\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-process-the-window-s-auto_design_width-member-1\">Process the window's <code>auto_design_width</code> member</a> passing <var data-type=\"ordered map\">json</var>[\"window\"] and <var data-type=\"ordered map\">window</var>."
@@ -306,29 +306,29 @@
     {
       "name": "processing a MiniApp manifest",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-processing-a-miniapp-manifest",
-      "html": "To <dfn data-lt=\"processing a MiniApp manifest|process a MiniApp manifest\" id=\"dfn-processing-a-miniapp-manifest\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process a MiniApp manifest</dfn> at the extension point, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "html": "To <dfn data-lt=\"processing a MiniApp manifest|process a MiniApp manifest\" id=\"dfn-processing-a-miniapp-manifest\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process a MiniApp manifest</dfn> at the extension point, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">manifest</var>[\"name\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"idl\" data-lt=\"TypeError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+          "html": "If <var data-type=\"ordered map\">manifest</var>[\"name\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
         },
         {
-          "html": "If <var data-type=\"ordered map\">manifest</var>[\"icons\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"idl\" data-lt=\"TypeError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+          "html": "If <var data-type=\"ordered map\">manifest</var>[\"icons\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
         },
         {
           "html": "Let <var data-type=\"ordered map\">icons</var> be <var data-type=\"ordered map\">manifest</var>[\"icons\"]."
         },
         {
-          "html": "If <var data-type=\"ordered map\">icons</var>[\"src\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"idl\" data-lt=\"TypeError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+          "html": "If <var data-type=\"ordered map\">icons</var>[\"src\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
         },
         {
-          "html": "If <var data-type=\"ordered map\">manifest</var>[\"icons\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"idl\" data-lt=\"TypeError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+          "html": "If <var data-type=\"ordered map\">manifest</var>[\"icons\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
         },
         {
           "html": "<a href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-app_id-member\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-process-the-app_id-member-1\">Process the <code>app_id</code> member</a> passing <var data-type=\"ordered map\">json</var> and <var data-type=\"ordered map\">manifest</var>."
         },
         {
-          "html": "If <var data-type=\"ordered map\">manifest</var>[\"app_id\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"idl\" data-lt=\"TypeError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+          "html": "If <var data-type=\"ordered map\">manifest</var>[\"app_id\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
         },
         {
           "html": "<a href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-color_scheme-member\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-process-the-color_scheme-member-1\">Process the <code>color_scheme</code> member</a> passing <var data-type=\"ordered map\">json</var> and <var data-type=\"ordered map\">manifest</var>."
@@ -343,13 +343,13 @@
           "html": "<a href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-pages-member\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-process-the-pages-member-1\">Process the <code>pages</code> member</a> passing <var data-type=\"ordered map\">json</var> and <var data-type=\"ordered map\">manifest</var>."
         },
         {
-          "html": "If <var data-type=\"ordered map\">manifest</var>[\"pages\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"idl\" data-lt=\"TypeError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+          "html": "If <var data-type=\"ordered map\">manifest</var>[\"pages\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
         },
         {
           "html": "<a href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-platform_version-member\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-process-the-platform_version-member-1\">Process the <code>platform_version</code> member</a> passing <var data-type=\"ordered map\">json</var> and <var data-type=\"ordered map\">manifest</var>."
         },
         {
-          "html": "If <var data-type=\"ordered map\">manifest</var>[\"platform_version\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"idl\" data-lt=\"TypeError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+          "html": "If <var data-type=\"ordered map\">manifest</var>[\"platform_version\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
         },
         {
           "html": "<a href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-req_permissions-member\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-process-the-req_permissions-member-1\">Process the <code>req_permissions</code> member</a> passing <var data-type=\"ordered map\">json</var> and <var data-type=\"ordered map\">manifest</var>."
@@ -358,7 +358,7 @@
           "html": "<a href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-version-member\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-process-the-version-member-1\">Process the <code>version</code> member</a> passing <var data-type=\"ordered map\">json</var> and <var data-type=\"ordered map\">manifest</var>."
         },
         {
-          "html": "If <var data-type=\"ordered map\">manifest</var>[\"version\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"idl\" data-lt=\"TypeError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+          "html": "If <var data-type=\"ordered map\">manifest</var>[\"version\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
         },
         {
           "html": "<a href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-widgets-member\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-process-the-widgets-member-1\">Process the <code>widgets</code> member</a> passing <var data-type=\"ordered map\">json</var> and <var data-type=\"ordered map\">manifest</var>."
@@ -371,11 +371,11 @@
     {
       "name": "process the platform version's min_code member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-platform-version-s-min_code-member",
-      "html": "To <dfn id=\"dfn-process-the-platform-version-s-min_code-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the platform version's <code>min_code</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">platform_version</var>:",
+      "html": "To <dfn id=\"dfn-process-the-platform-version-s-min_code-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the platform version's <code>min_code</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">platform_version</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"min_code\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"min_code\"] is not a number, return failure."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"min_code\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"min_code\"] is not a number, return failure."
         },
         {
           "html": "Set <var data-type=\"ordered map\">platform_version</var>[\"min_code\"] to <var data-type=\"ordered map\">json</var>[\"min_code\"]."
@@ -385,11 +385,11 @@
     {
       "name": "process the platform version's release_type member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-platform-version-s-release_type-member",
-      "html": "To <dfn id=\"dfn-process-the-platform-version-s-release_type-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the platform version's <code>release_type</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">platform_version</var>:",
+      "html": "To <dfn id=\"dfn-process-the-platform-version-s-release_type-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the platform version's <code>release_type</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">platform_version</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"release_type\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"release_type\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"release_type\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"release_type\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">platform_version</var>[\"release_type\"] to <var data-type=\"ordered map\">json</var>[\"release_type\"]."
@@ -399,11 +399,11 @@
     {
       "name": "process the platform version's target_code member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-platform-version-s-target_code-member",
-      "html": "To <dfn id=\"dfn-process-the-platform-version-s-target_code-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the platform version's <code>target_code</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">platform_version</var>:",
+      "html": "To <dfn id=\"dfn-process-the-platform-version-s-target_code-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the platform version's <code>target_code</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">platform_version</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"target_code\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"target_code\"] is not a number, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"target_code\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"target_code\"] is not a number, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">platform_version</var>[\"target_code\"] to <var data-type=\"ordered map\">json</var>[\"target_code\"]."
@@ -413,11 +413,11 @@
     {
       "name": "process the permission resource's name member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-permission-resource-s-name-member",
-      "html": "To <dfn id=\"dfn-process-the-permission-resource-s-name-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the permission resource's <code>name</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">permission</var>:",
+      "html": "To <dfn id=\"dfn-process-the-permission-resource-s-name-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the permission resource's <code>name</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">permission</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"name\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br> \n            if <var data-type=\"ordered map\">json</var>[\"name\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, or if <var data-type=\"ordered map\">json</var>[\"name\"] is the empty string, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"name\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br> \n            if <var data-type=\"ordered map\">json</var>[\"name\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, or if <var data-type=\"ordered map\">json</var>[\"name\"] is the empty string, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">permission</var>[\"name\"] to <var data-type=\"ordered map\">json</var>[\"name\"]."
@@ -427,11 +427,11 @@
     {
       "name": "process the permission resource's reason member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-permission-resource-s-reason-member",
-      "html": "To <dfn id=\"dfn-process-the-permission-resource-s-reason-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the permission resource's <code>reason</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">permission</var>:",
+      "html": "To <dfn id=\"dfn-process-the-permission-resource-s-reason-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the permission resource's <code>reason</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">permission</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"reason\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br> \n          if <var data-type=\"ordered map\">json</var>[\"reason\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, or if <var data-type=\"ordered map\">json</var>[\"reason\"] is the empty string, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"reason\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br> \n          if <var data-type=\"ordered map\">json</var>[\"reason\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, or if <var data-type=\"ordered map\">json</var>[\"reason\"] is the empty string, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">permission</var>[\"reason\"] to <var data-type=\"ordered map\">json</var>[\"reason\"]."
@@ -441,11 +441,11 @@
     {
       "name": "process the version's code member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-version-s-code-member",
-      "html": "To <dfn id=\"dfn-process-the-version-s-code-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the version's <code>code</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">version</var>:",
+      "html": "To <dfn id=\"dfn-process-the-version-s-code-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the version's <code>code</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">version</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"code\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"code\"] is not a number, return failure."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"code\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"code\"] is not a number, return failure."
         },
         {
           "html": "Let <var data-type=\"number\">version</var> be a number, initially 1."
@@ -461,11 +461,11 @@
     {
       "name": "process the version's name member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-version-s-name-member",
-      "html": "To <dfn id=\"dfn-process-the-version-s-name-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the version's <code>name</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">version</var>:",
+      "html": "To <dfn id=\"dfn-process-the-version-s-name-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the version's <code>name</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">version</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"name\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"name\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return failure."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"name\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"name\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return failure."
         },
         {
           "html": "Set <var data-type=\"ordered map\">version</var>[\"name\"] to <var data-type=\"ordered map\">json</var>[\"name\"]."
@@ -475,11 +475,11 @@
     {
       "name": "process the widget's name member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-widget-s-name-member",
-      "html": "To <dfn id=\"dfn-process-the-widget-s-name-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the widget's <code>name</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">widget</var>:",
+      "html": "To <dfn id=\"dfn-process-the-widget-s-name-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the widget's <code>name</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">widget</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"name\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"name\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"name\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"name\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">widget</var>[\"name\"] to <var data-type=\"ordered map\">json</var>[\"name\"]."
@@ -489,14 +489,14 @@
     {
       "name": "process the widget's path member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-widget-s-path-member",
-      "html": "To <dfn id=\"dfn-process-the-widget-s-path-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the widget's <code>path</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">widget</var>:",
+      "html": "To <dfn id=\"dfn-process-the-widget-s-path-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the widget's <code>path</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">widget</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"path\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"path\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"path\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"path\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
         },
         {
-          "html": "Let <var data-type=\"URL\">url</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"URL Parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a> <var data-type=\"ordered map\">json</var>[\"path\"]."
+          "html": "Let <var data-type=\"URL\">url</var> be the result of <a data-link-type=\"dfn\" data-lt=\"URL Parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a> <var data-type=\"ordered map\">json</var>[\"path\"]."
         },
         {
           "html": "If <var data-type=\"URL\">url</var> is failure, return."
@@ -509,14 +509,14 @@
     {
       "name": "process the widget's min_code member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-widget-s-min_code-member",
-      "html": "To <dfn id=\"dfn-process-the-widget-s-min_code-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the widget's <code>min_code</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">widget</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "html": "To <dfn id=\"dfn-process-the-widget-s-min_code-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the widget's <code>min_code</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">widget</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "Set <var data-type=\"ordered map\">widget</var>[\"min_code\"] to <var data-type=\"ordered map\">manifest</var>[\"min_code\"]."
         },
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"min_code\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"min_code\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"min_code\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"min_code\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">widget</var>[\"min_code\"] to <var data-type=\"ordered map\">json</var>[\"min_code\"]."
@@ -526,11 +526,11 @@
     {
       "name": "process the window's auto_design_width member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-auto_design_width-member",
-      "html": "To <dfn id=\"dfn-process-the-window-s-auto_design_width-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>auto_design_width</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
+      "html": "To <dfn id=\"dfn-process-the-window-s-auto_design_width-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>auto_design_width</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"auto_design_width\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"auto_design_width\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\">boolean</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"auto_design_width\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or if <var data-type=\"ordered map\">json</var>[\"auto_design_width\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\">boolean</a>, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">window</var>[\"auto_design_width\"] to <var data-type=\"ordered map\">json</var>[\"auto_design_width\"]."
@@ -540,11 +540,11 @@
     {
       "name": "process the window's background_text_style member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-background_text_style-member",
-      "html": "To <dfn id=\"dfn-process-the-window-s-background_text_style-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>background_text_style</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
+      "html": "To <dfn id=\"dfn-process-the-window-s-background_text_style-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>background_text_style</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"background_text_style\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br> \n          if <var data-type=\"ordered map\">json</var>[\"background_text_style\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, or<br>\n          if <var data-type=\"ordered map\">json</var>[\"background_text_style\"] doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\">contain</a> one of the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-background-text-style-values\" class=\"internalDFN\" id=\"ref-for-dfn-background-text-style-values-1\">background text style values</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"background_text_style\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br> \n          if <var data-type=\"ordered map\">json</var>[\"background_text_style\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, or<br>\n          if <var data-type=\"ordered map\">json</var>[\"background_text_style\"] doesn't <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\">contain</a> one of the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-background-text-style-values\" class=\"internalDFN\" id=\"ref-for-dfn-background-text-style-values-1\">background text style values</a>, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">window</var>[\"background_text_style\"] to <var data-type=\"ordered map\">json</var>[\"background_text_style\"]."
@@ -554,11 +554,11 @@
     {
       "name": "process the window's design_width member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-design_width-member",
-      "html": "To <dfn id=\"dfn-process-the-window-s-design_width-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>design_width</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
+      "html": "To <dfn id=\"dfn-process-the-window-s-design_width-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>design_width</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"design_width\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br>\n          if <var data-type=\"ordered map\">json</var>[\"design_width\"] is not a number, or if <var data-type=\"ordered map\">json</var>[\"design_width\"] is less than 0, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"design_width\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br>\n          if <var data-type=\"ordered map\">json</var>[\"design_width\"] is not a number, or if <var data-type=\"ordered map\">json</var>[\"design_width\"] is less than 0, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">window</var>[\"design_width\"] to <var data-type=\"ordered map\">json</var>[\"design_width\"]."
@@ -568,11 +568,11 @@
     {
       "name": "process the window's enable_pull_down_refresh member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-enable_pull_down_refresh-member",
-      "html": "To <dfn id=\"dfn-process-the-window-s-enable_pull_down_refresh-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>enable_pull_down_refresh</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
+      "html": "To <dfn id=\"dfn-process-the-window-s-enable_pull_down_refresh-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>enable_pull_down_refresh</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"enable_pull_down_refresh\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <br>\n          or if <var data-type=\"ordered map\">json</var>[\"enable_pull_down_refresh\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\">boolean</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"enable_pull_down_refresh\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <br>\n          or if <var data-type=\"ordered map\">json</var>[\"enable_pull_down_refresh\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\">boolean</a>, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">window</var>[\"enable_pull_down_refresh\"] to <var data-type=\"ordered map\">json</var>[\"enable_pull_down_refresh\"]."
@@ -582,11 +582,11 @@
     {
       "name": "process the window's fullscreen member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-fullscreen-member",
-      "html": "To <dfn id=\"dfn-process-the-window-s-fullscreen-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>fullscreen</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
+      "html": "To <dfn id=\"dfn-process-the-window-s-fullscreen-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>fullscreen</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"fullscreen\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <br>\n            or if <var data-type=\"ordered map\">json</var>[\"fullscreen\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\">boolean</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"fullscreen\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <br>\n            or if <var data-type=\"ordered map\">json</var>[\"fullscreen\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\">boolean</a>, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">window</var>[\"fullscreen\"] to <var data-type=\"ordered map\">json</var>[\"fullscreen\"]."
@@ -596,11 +596,11 @@
     {
       "name": "process the window's navigation_bar_text_style member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-navigation_bar_text_style-member",
-      "html": "To <dfn id=\"dfn-process-the-window-s-navigation_bar_text_style-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>navigation_bar_text_style</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
+      "html": "To <dfn id=\"dfn-process-the-window-s-navigation_bar_text_style-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>navigation_bar_text_style</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"navigation_bar_text_style\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br> \n         if <var data-type=\"ordered map\">json</var>[\"navigation_bar_text_style\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, or<br> \n         if <var data-type=\"ordered map\">json</var>[\"navigation_bar_text_style\"] doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\">contain</a> one of the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-text-style-values\" class=\"internalDFN\" id=\"ref-for-dfn-text-style-values-1\">text style values</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"navigation_bar_text_style\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br> \n         if <var data-type=\"ordered map\">json</var>[\"navigation_bar_text_style\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, or<br> \n         if <var data-type=\"ordered map\">json</var>[\"navigation_bar_text_style\"] doesn't <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\">contain</a> one of the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-text-style-values\" class=\"internalDFN\" id=\"ref-for-dfn-text-style-values-1\">text style values</a>, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">window</var>[\"navigation_bar_text_style\"] to <var data-type=\"ordered map\">json</var>[\"navigation_bar_text_style\"]."
@@ -610,11 +610,11 @@
     {
       "name": "process the window's navigation_bar_title_text member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-navigation_bar_title_text-member",
-      "html": "To <dfn id=\"dfn-process-the-window-s-navigation_bar_title_text-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>navigation_bar_title_text</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
+      "html": "To <dfn id=\"dfn-process-the-window-s-navigation_bar_title_text-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>navigation_bar_title_text</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"navigation_bar_title_text\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br> \n         if <var data-type=\"ordered map\">json</var>[\"navigation_bar_title_text\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"navigation_bar_title_text\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br> \n         if <var data-type=\"ordered map\">json</var>[\"navigation_bar_title_text\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">window</var>[\"navigation_bar_title_text\"] to <var data-type=\"ordered map\">json</var>[\"navigation_bar_title_text\"]."
@@ -624,11 +624,11 @@
     {
       "name": "process the window's navigation_style member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-navigation_style-member",
-      "html": "To <dfn id=\"dfn-process-the-window-s-navigation_style-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>navigation_style</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
+      "html": "To <dfn id=\"dfn-process-the-window-s-navigation_style-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>navigation_style</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"navigation_style\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br> \n            if <var data-type=\"ordered map\">json</var>[\"navigation_style\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, or<br>\n            if <var data-type=\"ordered map\">json</var>[\"navigation_style\"] doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\">contain</a> one of the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-navigation-style-values\" class=\"internalDFN\" id=\"ref-for-dfn-navigation-style-values-1\">navigation style values</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"navigation_style\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br> \n            if <var data-type=\"ordered map\">json</var>[\"navigation_style\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, or<br>\n            if <var data-type=\"ordered map\">json</var>[\"navigation_style\"] doesn't <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\">contain</a> one of the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-navigation-style-values\" class=\"internalDFN\" id=\"ref-for-dfn-navigation-style-values-1\">navigation style values</a>, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">window</var>[\"navigation_style\"] to <var data-type=\"ordered map\">json</var>[\"navigation_style\"]."
@@ -638,11 +638,11 @@
     {
       "name": "process the window's on_reach_bottom_distance member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-on_reach_bottom_distance-member",
-      "html": "To <dfn id=\"dfn-process-the-window-s-on_reach_bottom_distance-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>on_reach_bottom_distance</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
+      "html": "To <dfn id=\"dfn-process-the-window-s-on_reach_bottom_distance-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>on_reach_bottom_distance</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"on_reach_bottom_distance\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br> \n          if <var data-type=\"ordered map\">json</var>[\"on_reach_bottom_distance\"] is not a number, or <br>\n          if <var data-type=\"ordered map\">json</var>[\"on_reach_bottom_distance\"] is less than 0, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"on_reach_bottom_distance\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br> \n          if <var data-type=\"ordered map\">json</var>[\"on_reach_bottom_distance\"] is not a number, or <br>\n          if <var data-type=\"ordered map\">json</var>[\"on_reach_bottom_distance\"] is less than 0, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">window</var>[\"on_reach_bottom_distance\"] to <var data-type=\"ordered map\">json</var>[\"on_reach_bottom_distance\"]."
@@ -652,11 +652,11 @@
     {
       "name": "process the window's orientation member",
       "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-orientation-member",
-      "html": "To <dfn id=\"dfn-process-the-window-s-orientation-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>orientation</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
+      "html": "To <dfn id=\"dfn-process-the-window-s-orientation-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the window's <code>orientation</code> member</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">window</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"ordered map\">json</var>[\"orientation\"] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br>\n            if <var data-type=\"ordered map\">json</var>[\"orientation\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, or<br>\n            if <var data-type=\"ordered map\">json</var>[\"orientation\"] doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\">contain</a> one of the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-orientation-values\" class=\"internalDFN\" id=\"ref-for-dfn-orientation-values-1\">orientation values</a>, return."
+          "html": "If <var data-type=\"ordered map\">json</var>[\"orientation\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, or<br>\n            if <var data-type=\"ordered map\">json</var>[\"orientation\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, or<br>\n            if <var data-type=\"ordered map\">json</var>[\"orientation\"] doesn't <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\">contain</a> one of the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-orientation-values\" class=\"internalDFN\" id=\"ref-for-dfn-orientation-values-1\">orientation values</a>, return."
         },
         {
           "html": "Set <var data-type=\"ordered map\">window</var>[\"orientation\"] to <var data-type=\"ordered map\">json</var>[\"orientation\"]."

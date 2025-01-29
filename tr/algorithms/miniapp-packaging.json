@@ -7,7 +7,7 @@
     {
       "name": "process a MiniApp package",
       "href": "https://www.w3.org/TR/miniapp-packaging/#dfn-process-a-miniapp-package",
-      "html": "To <dfn data-export=\"\" id=\"dfn-process-a-miniapp-package\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process a MiniApp package</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">miniapp_uri</var>, perform the following steps:",
+      "html": "To <dfn data-export=\"\" id=\"dfn-process-a-miniapp-package\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process a MiniApp package</dfn>, given <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">miniapp_uri</var>, perform the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -23,13 +23,13 @@
           "html": "If <var data-type=\"Miniapp package\">miniapp_package</var> is an unzip exception, then return failure."
         },
         {
-          "html": "Let <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var> be the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-processing-the-miniapp-manifest\" class=\"internalDFN\" id=\"ref-for-dfn-processing-the-miniapp-manifest-1\">processing the MiniApp manifest</a> with <var data-type=\"Miniapp package\">miniapp_package</var>."
+          "html": "Let <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var> be the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-processing-the-miniapp-manifest\" class=\"internalDFN\" id=\"ref-for-dfn-processing-the-miniapp-manifest-1\">processing the MiniApp manifest</a> with <var data-type=\"Miniapp package\">miniapp_package</var>."
         },
         {
           "html": "Let <var data-type=\"MiniApp start page\">start_page</var> be the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-preparing-the-platform-runtime\" class=\"internalDFN\" id=\"ref-for-dfn-preparing-the-platform-runtime-1\">preparing the platform runtime</a> with <var data-type=\"URL\">miniapp_uri</var> and <var data-type=\"ordered map\">manifest</var>."
         },
         {
-          "html": "Let <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a> <var data-type=\"string\">locale</var> be the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-extracting-the-locale\" class=\"internalDFN\" id=\"ref-for-dfn-extracting-the-locale-1\">extracting the locale</a>, passing <var data-type=\"ordered map\">manifest</var>."
+          "html": "Let <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a> <var data-type=\"string\">locale</var> be the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-extracting-the-locale\" class=\"internalDFN\" id=\"ref-for-dfn-extracting-the-locale-1\">extracting the locale</a>, passing <var data-type=\"ordered map\">manifest</var>."
         },
         {
           "html": "Launch MiniApp passing <var data-type=\"Miniapp package\">miniapp_package</var>, <var data-type=\"ordered map\">manifest</var>, <var data-type=\"MiniApp start page\">start_page</var>, and <var data-type=\"string\">locale</var>."
@@ -39,7 +39,7 @@
     {
       "name": "retrieving a MiniApp ZIP container",
       "href": "https://www.w3.org/TR/miniapp-packaging/#dfn-retrieving-a-miniapp-zip-container",
-      "html": "To <dfn data-lt=\"retrieving a MiniApp ZIP container|retrieve a MiniApp ZIP container\" data-dfn-type=\"dfn\" id=\"dfn-retrieving-a-miniapp-zip-container\" tabindex=\"0\" aria-haspopup=\"dialog\">retrieve a MiniApp ZIP container</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">miniapp_uri</var>, perform the following steps. They return a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-container\" class=\"internalDFN\" id=\"ref-for-dfn-container-15\">MiniApp ZIP container</a>.",
+      "html": "To <dfn data-lt=\"retrieving a MiniApp ZIP container|retrieve a MiniApp ZIP container\" data-dfn-type=\"dfn\" id=\"dfn-retrieving-a-miniapp-zip-container\" tabindex=\"0\" aria-haspopup=\"dialog\">retrieve a MiniApp ZIP container</dfn>, given <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">miniapp_uri</var>, perform the following steps. They return a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-container\" class=\"internalDFN\" id=\"ref-for-dfn-container-15\">MiniApp ZIP container</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -74,10 +74,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var data-type=\"byte sequence\">magic_numbers</var> be a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a>."
+          "html": "Let <var data-type=\"byte sequence\">magic_numbers</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a>."
         },
         {
-          "html": "Let <var data-type=\"byte sequence\">eocd_pointer</var> be a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> as the result of locating the byte sequence <code>0x06054b50</code> (read as little-endian) in <var data-type=\"MiniApp ZIP container\">miniapp_zip_file</var> that marks the End of the Central Directory [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/miniapp-packaging/#bib-zip\" title=\".ZIP File Format Specification\">ZIP</a></cite>]."
+          "html": "Let <var data-type=\"byte sequence\">eocd_pointer</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> as the result of locating the byte sequence <code>0x06054b50</code> (read as little-endian) in <var data-type=\"MiniApp ZIP container\">miniapp_zip_file</var> that marks the End of the Central Directory [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/miniapp-packaging/#bib-zip\" title=\".ZIP File Format Specification\">ZIP</a></cite>]."
         },
         {
           "html": "Set <var data-type=\"byte sequence\">eocd_pointer</var> to <var data-type=\"byte sequence\">eocd_pointer</var> + 0x00000010."
@@ -99,20 +99,20 @@
     {
       "name": "processing the MiniApp manifest",
       "href": "https://www.w3.org/TR/miniapp-packaging/#dfn-processing-the-miniapp-manifest",
-      "html": "To <dfn data-lt=\"processing the MiniApp manifest|process the MiniApp manifest\" id=\"dfn-processing-the-miniapp-manifest\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the MiniApp manifest</dfn>, given <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-package\" class=\"internalDFN\" id=\"ref-for-dfn-package-23\">MiniApp Package</a> <var data-type=\"MiniApp Package\">miniapp_package</var>, perform the following steps. They return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>.",
+      "html": "To <dfn data-lt=\"processing the MiniApp manifest|process the MiniApp manifest\" id=\"dfn-processing-the-miniapp-manifest\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the MiniApp manifest</dfn>, given <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-package\" class=\"internalDFN\" id=\"ref-for-dfn-package-23\">MiniApp Package</a> <var data-type=\"MiniApp Package\">miniapp_package</var>, perform the following steps. They return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "If <code>manifest.json</code> file does not exist in the package's <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-root-directory\" class=\"internalDFN\" id=\"ref-for-dfn-root-directory-13\">root directory</a>, then return failure."
         },
         {
-          "html": "Let <var data-type=\"ordered map\">manifest_json</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#parse-json-bytes-to-a-javascript-value\">parse JSON from bytes</a>, passing <code>manifest.json</code>."
+          "html": "Let <var data-type=\"ordered map\">manifest_json</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#parse-json-bytes-to-a-javascript-value\">parse JSON from bytes</a>, passing <code>manifest.json</code>."
         },
         {
-          "html": "If <var data-type=\"ordered map\">manifest_json</var> is a parsing exception, or <var data-type=\"ordered map\">manifest_json</var> is not an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>, then return failure."
+          "html": "If <var data-type=\"ordered map\">manifest_json</var> is a parsing exception, or <var data-type=\"ordered map\">manifest_json</var> is not an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>, then return failure."
         },
         {
-          "html": "Let <var data-type=\"ordered map\">manifest</var> be an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>."
+          "html": "Let <var data-type=\"ordered map\">manifest</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>."
         },
         {
           "html": "<a href=\"https://www.w3.org/TR/miniapp-manifest/#dfn-processing-a-miniapp-manifest\" data-link-type=\"dfn\">Process a MiniApp manifest</a>, passing <var data-type=\"ordered map\">manifest_json</var> and <var data-type=\"ordered map\">manifest</var>."
@@ -125,7 +125,7 @@
     {
       "name": "preparing the platform runtime",
       "href": "https://www.w3.org/TR/miniapp-packaging/#dfn-preparing-the-platform-runtime",
-      "html": "To <dfn data-lt=\"preparing the platform runtime|prepare the platform runtime\" id=\"dfn-preparing-the-platform-runtime\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">prepare the platform runtime</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">miniapp_uri</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>, perform the following steps. They return a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-start-page\" class=\"internalDFN\" id=\"ref-for-dfn-start-page-3\">MiniApp start page</a>.",
+      "html": "To <dfn data-lt=\"preparing the platform runtime|prepare the platform runtime\" id=\"dfn-preparing-the-platform-runtime\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">prepare the platform runtime</dfn>, given <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">miniapp_uri</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>, perform the following steps. They return a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-start-page\" class=\"internalDFN\" id=\"ref-for-dfn-start-page-3\">MiniApp start page</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -148,7 +148,7 @@
     {
       "name": "Verify platform compatibility",
       "href": "https://www.w3.org/TR/miniapp-packaging/#dfn-verify-platform-compatibility",
-      "html": "To <dfn data-lt=\"Verify platform compatibility|verify platform compatibility\" id=\"dfn-verify-platform-compatibility\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">verify platform compatibility</dfn>, given <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-package\" class=\"internalDFN\" id=\"ref-for-dfn-package-24\">MiniApp Package</a> <var data-type=\"MiniApp Package\">miniapp_package</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>, perform the following steps:",
+      "html": "To <dfn data-lt=\"Verify platform compatibility|verify platform compatibility\" id=\"dfn-verify-platform-compatibility\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">verify platform compatibility</dfn>, given <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-package\" class=\"internalDFN\" id=\"ref-for-dfn-package-24\">MiniApp Package</a> <var data-type=\"MiniApp Package\">miniapp_package</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>, perform the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -158,7 +158,7 @@
           "html": "If <var data-type=\"ordered map\">platform_required</var> is not compatible with the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-useragent\" class=\"internalDFN\" id=\"ref-for-dfn-useragent-24\">user agent</a> configuration, then return failure."
         },
         {
-          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"URL\">page</var> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> <var data-type=\"ordered map\">manifest</var>[\"pages\"]:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"URL\">page</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> <var data-type=\"ordered map\">manifest</var>[\"pages\"]:",
           "rationale": "if",
           "steps": [
             {
@@ -167,7 +167,7 @@
           ]
         },
         {
-          "html": "If <var data-type=\"ordered map\">manifest</var>[\"widgets\"] <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>, then:<br>\n                        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"URL\">widget_path</var> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> <var data-type=\"ordered map\">manifest</var>[\"widgets\"]:",
+          "html": "If <var data-type=\"ordered map\">manifest</var>[\"widgets\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>, then:<br>\n                        <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"URL\">widget_path</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> <var data-type=\"ordered map\">manifest</var>[\"widgets\"]:",
           "rationale": "if",
           "steps": [
             {
@@ -180,7 +180,7 @@
     {
       "name": "determining the start page",
       "href": "https://www.w3.org/TR/miniapp-packaging/#dfn-determining-the-start-page",
-      "html": "To <dfn data-lt=\"determining the start page|determine the start page\" id=\"dfn-determining-the-start-page\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">determine the start page</dfn>, given <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-package\" class=\"internalDFN\" id=\"ref-for-dfn-package-25\">MiniApp Package</a> <var data-type=\"MiniApp Package\">miniapp_package</var>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">miniapp_uri</var>, and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>, perform the following steps. They return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a>.",
+      "html": "To <dfn data-lt=\"determining the start page|determine the start page\" id=\"dfn-determining-the-start-page\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">determine the start page</dfn>, given <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-package\" class=\"internalDFN\" id=\"ref-for-dfn-package-25\">MiniApp Package</a> <var data-type=\"MiniApp Package\">miniapp_package</var>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">miniapp_uri</var>, and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -197,11 +197,11 @@
     {
       "name": "extracting the start page from URI",
       "href": "https://www.w3.org/TR/miniapp-packaging/#dfn-extracting-the-start-page-from-uri",
-      "html": "To <dfn data-lt=\"extracting the start page from URI|extract the start page from URI\" id=\"dfn-extracting-the-start-page-from-uri\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">extract the start page from URI</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">miniapp_uri</var>, perform the following steps. They return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a>.",
+      "html": "To <dfn data-lt=\"extracting the start page from URI|extract the start page from URI\" id=\"dfn-extracting-the-start-page-from-uri\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">extract the start page from URI</dfn>, given <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">miniapp_uri</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var data-type=\"URL\">start_page</var> be the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-path-segment-string\">URL-path-segment string</a> resulting of <a data-link-type=\"dfn|abstract-op\" data-lt=\"URL Parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parse</a> <var data-type=\"URL\">miniapp_uri</var>."
+          "html": "Let <var data-type=\"URL\">start_page</var> be the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-path-segment-string\">URL-path-segment string</a> resulting of <a data-link-type=\"dfn\" data-lt=\"URL Parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parse</a> <var data-type=\"URL\">miniapp_uri</var>."
         },
         {
           "html": "If <var data-type=\"URL\">start_page</var> is failure, return null."
@@ -214,14 +214,14 @@
     {
       "name": "extracting the start page from manifest",
       "href": "https://www.w3.org/TR/miniapp-packaging/#dfn-extracting-the-start-page-from-manifest",
-      "html": "To <dfn data-lt=\"extracting the start page from manifest|extract the start page from manifest\" id=\"dfn-extracting-the-start-page-from-manifest\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">extract the start page from manifest</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>, perform the following steps. They return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>.",
+      "html": "To <dfn data-lt=\"extracting the start page from manifest|extract the start page from manifest\" id=\"dfn-extracting-the-start-page-from-manifest\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">extract the start page from manifest</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>start_page_id</var> be the empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>."
+          "html": "Let <var>start_page_id</var> be the empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>."
         },
         {
-          "html": "Let <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> <var data-type=\"list\">pages</var> be <var data-type=\"ordered map\">manifest</var>[\"pages\"]."
+          "html": "Let <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> <var data-type=\"list\">pages</var> be <var data-type=\"ordered map\">manifest</var>[\"pages\"]."
         },
         {
           "html": "Return <var data-type=\"list\">pages</var>[0]."
@@ -231,14 +231,14 @@
     {
       "name": "extracting the locale",
       "href": "https://www.w3.org/TR/miniapp-packaging/#dfn-extracting-the-locale",
-      "html": "To <dfn data-lt=\"extracting the locale|extract the locale\" id=\"dfn-extracting-the-locale\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">extract the locale</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>, perform the following steps. They return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>.",
+      "html": "To <dfn data-lt=\"extracting the locale|extract the locale\" id=\"dfn-extracting-the-locale\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">extract the locale</dfn>, given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a> <var data-type=\"string\">locale</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-useragent\" class=\"internalDFN\" id=\"ref-for-dfn-useragent-26\">user agent</a>'s default locale."
+          "html": "Let <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a> <var data-type=\"string\">locale</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-useragent\" class=\"internalDFN\" id=\"ref-for-dfn-useragent-26\">user agent</a>'s default locale."
         },
         {
-          "html": "If <var data-type=\"ordered map\">manifest</var>[\"lang\"] <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>, and if <var data-type=\"ordered map\">manifest</var>[\"lang\"] is supported by the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-useragent\" class=\"internalDFN\" id=\"ref-for-dfn-useragent-27\">user agent</a>, then: <br>\n                        Set <var data-type=\"string\">locale</var> to <var data-type=\"ordered map\">manifest</var>[\"lang\"]."
+          "html": "If <var data-type=\"ordered map\">manifest</var>[\"lang\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>, and if <var data-type=\"ordered map\">manifest</var>[\"lang\"] is supported by the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/miniapp-packaging/#dfn-useragent\" class=\"internalDFN\" id=\"ref-for-dfn-useragent-27\">user agent</a>, then: <br>\n                        Set <var data-type=\"string\">locale</var> to <var data-type=\"ordered map\">manifest</var>[\"lang\"]."
         },
         {
           "html": "Return <var data-type=\"string\">locale</var>."
