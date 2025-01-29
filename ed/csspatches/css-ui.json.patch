@@ -1,6 +1,6 @@
-From 9f7b7ad2d01bd8f06db43ef0b28dc3f71296f278 Mon Sep 17 00:00:00 2001
+From 513373e2297722960f8abcfe501883961965084a Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Mon, 6 Jan 2025 08:11:45 +0100
+Date: Wed, 29 Jan 2025 08:41:24 +0100
 Subject: [PATCH] Drop pointer-events dfn from CSS UI
 
 The definition of `pointer-events` is not yet as complete as that in the SVG
@@ -11,7 +11,7 @@ https://github.com/w3c/csswg-drafts/issues/4438
  1 file changed, 32 deletions(-)
 
 diff --git a/ed/css/css-ui.json b/ed/css/css-ui.json
-index 684bac146..e8ed71344 100644
+index 42f18de79..1ae14241c 100644
 --- a/ed/css/css-ui.json
 +++ b/ed/css/css-ui.json
 @@ -594,38 +594,6 @@
@@ -51,8 +51,8 @@ index 684bac146..e8ed71344 100644
 -      ]
 -    },
      {
-       "name": "accent-color",
-       "href": "https://drafts.csswg.org/css-ui-4/#propdef-accent-color",
+       "name": "interactivity",
+       "href": "https://drafts.csswg.org/css-ui-4/#propdef-interactivity",
 -- 
 2.37.1.windows.1
 
