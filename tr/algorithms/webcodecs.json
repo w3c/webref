@@ -866,7 +866,10 @@
               "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videodecoderconfig-colorspace\" id=\"ref-for-dom-videodecoderconfig-colorspace①\">colorSpace</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a> in the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videodecoder-active-decoder-config-slot\" id=\"ref-for-dom-videodecoder-active-decoder-config-slot②\">[[active decoder config]]</a></code>, assign its value to <var>colorSpace</var>.</p>"
             },
             {
-              "html": "<p>Let <var>frame</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#create-a-videoframe\" id=\"ref-for-create-a-videoframe\">Create a VideoFrame</a> algorithm with <var>output</var>, <var>timestamp</var>, <var>duration</var>, <var>displayAspectWidth</var>, <var>displayAspectHeight</var>, and <var>colorSpace</var>.</p>"
+              "html": "<p>Assign the values of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videodecoderconfig-rotation\" id=\"ref-for-dom-videodecoderconfig-rotation\">rotation</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videodecoderconfig-flip\" id=\"ref-for-dom-videodecoderconfig-flip\">flip</a></code> to <var>rotation</var> and <var>flip</var> respectively.</p>"
+            },
+            {
+              "html": "<p>Let <var>frame</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#create-a-videoframe\" id=\"ref-for-create-a-videoframe\">Create a VideoFrame</a> algorithm with <var>output</var>, <var>timestamp</var>, <var>duration</var>, <var>displayAspectWidth</var>, <var>displayAspectHeight</var>, <var>colorSpace</var>, <var>rotation</var>, and <var>flip</var>.</p>"
             },
             {
               "html": "<p>Invoke <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videodecoder-output-callback-slot\" id=\"ref-for-dom-videodecoder-output-callback-slot①\">[[output callback]]</a></code> with <var>frame</var>.</p>"
@@ -3219,6 +3222,9 @@
             },
             {
               "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-color-space-slot\" id=\"ref-for-dom-videoframe-color-space-slot②\">[[color space]]</a></code> with the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#videoframe-pick-color-space\" id=\"ref-for-videoframe-pick-color-space①\">Pick Color Space</a> algorithm, with <var>colorSpace</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-format-slot\" id=\"ref-for-dom-videoframe-format-slot⑨\">[[format]]</a></code>.</p>"
+            },
+            {
+              "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-rotation\" id=\"ref-for-dom-videoframe-rotation③\">rotation</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-flip\" id=\"ref-for-dom-videoframe-flip③\">flip</a></code> to <var>rotation</var> and <var>flip</var> respectively.</p>"
             }
           ]
         },
@@ -4644,7 +4650,10 @@
               ]
             },
             {
-              "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoderesult-image\" id=\"ref-for-dom-imagedecoderesult-image\">image</a></code> with the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#create-a-videoframe\" id=\"ref-for-create-a-videoframe②\">Create a VideoFrame</a> algorithm with <var>output</var>, <var>timestamp</var>, and <var>duration</var>.</p>"
+              "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-encoded-data-slot\" id=\"ref-for-dom-imagedecoder-encoded-data-slot①⑦\">[[encoded data]]</a></code> contains orientation metadata\ndescribe it as <var>rotation</var> and <var>flip</var>, otherwise set <var>rotation</var> to 0\nand <var>flip</var> to false.</p>"
+            },
+            {
+              "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoderesult-image\" id=\"ref-for-dom-imagedecoderesult-image\">image</a></code> with the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#create-a-videoframe\" id=\"ref-for-create-a-videoframe②\">Create a VideoFrame</a> algorithm with <var>output</var>, <var>timestamp</var>, <var>duration</var>, <var>rotation</var>, and <var>flip</var>.</p>"
             }
           ]
         },
@@ -4679,10 +4688,10 @@
           "rationale": "complete",
           "steps": [
             {
-              "html": "<p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-encoded-data-slot\" id=\"ref-for-dom-imagedecoder-encoded-data-slot①⑦\">[[encoded data]]</a></code> contains enough bytes to decode <var>encodedFrame</var> to produce an output whose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#progressive-image-frame-generation\" id=\"ref-for-progressive-image-frame-generation①\">Progressive Image Frame Generation</a> exceeds <var>lastFrameGeneration</var>.</p>"
+              "html": "<p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-encoded-data-slot\" id=\"ref-for-dom-imagedecoder-encoded-data-slot①⑧\">[[encoded data]]</a></code> contains enough bytes to decode <var>encodedFrame</var> to produce an output whose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#progressive-image-frame-generation\" id=\"ref-for-progressive-image-frame-generation①\">Progressive Image Frame Generation</a> exceeds <var>lastFrameGeneration</var>.</p>"
             },
             {
-              "html": "<p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-encoded-data-slot\" id=\"ref-for-dom-imagedecoder-encoded-data-slot①⑧\">[[encoded data]]</a></code> is found to be malformed.</p>"
+              "html": "<p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-encoded-data-slot\" id=\"ref-for-dom-imagedecoder-encoded-data-slot①⑨\">[[encoded data]]</a></code> is found to be malformed.</p>"
             },
             {
               "html": "<p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-complete\" id=\"ref-for-dom-imagedecoder-complete⑤\">complete</a></code> is <code>true</code>.</p>"
@@ -4693,10 +4702,10 @@
           ]
         },
         {
-          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-encoded-data-slot\" id=\"ref-for-dom-imagedecoder-encoded-data-slot①⑨\">[[encoded data]]</a></code> is found to be malformed, run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#imagedecoder-fatally-reject-bad-data\" id=\"ref-for-imagedecoder-fatally-reject-bad-data②\">Fatally Reject Bad Data</a> algorithm and abort these\nsteps.</p>"
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-encoded-data-slot\" id=\"ref-for-dom-imagedecoder-encoded-data-slot②⓪\">[[encoded data]]</a></code> is found to be malformed, run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#imagedecoder-fatally-reject-bad-data\" id=\"ref-for-imagedecoder-fatally-reject-bad-data②\">Fatally Reject Bad Data</a> algorithm and abort these\nsteps.</p>"
         },
         {
-          "html": "<p>Otherwise, if <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-encoded-data-slot\" id=\"ref-for-dom-imagedecoder-encoded-data-slot②⓪\">[[encoded data]]</a></code> does not contain enough\nbytes to decode <var>encodedFrame</var> to produce an output whose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#progressive-image-frame-generation\" id=\"ref-for-progressive-image-frame-generation②\">Progressive Image Frame Generation</a> exceeds <var>lastFrameGeneration</var>,\nrun the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#imagedecoder-reject-infeasible-decode\" id=\"ref-for-imagedecoder-reject-infeasible-decode①\">Reject Infeasible Decode</a> algorithm with <var>promise</var> and abort these steps.</p>"
+          "html": "<p>Otherwise, if <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-encoded-data-slot\" id=\"ref-for-dom-imagedecoder-encoded-data-slot②①\">[[encoded data]]</a></code> does not contain enough\nbytes to decode <var>encodedFrame</var> to produce an output whose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#progressive-image-frame-generation\" id=\"ref-for-progressive-image-frame-generation②\">Progressive Image Frame Generation</a> exceeds <var>lastFrameGeneration</var>,\nrun the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#imagedecoder-reject-infeasible-decode\" id=\"ref-for-imagedecoder-reject-infeasible-decode①\">Reject Infeasible Decode</a> algorithm with <var>promise</var> and abort these steps.</p>"
         },
         {
           "html": "<p>Attempt to use <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-codec-implementation-slot\" id=\"ref-for-dom-imagedecoder-codec-implementation-slot⑥\">[[codec implementation]]</a></code> to decode <var>encodedFrame</var>.</p>"
@@ -4759,7 +4768,10 @@
           ]
         },
         {
-          "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoderesult-image\" id=\"ref-for-dom-imagedecoderesult-image①\">image</a></code> with the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#create-a-videoframe\" id=\"ref-for-create-a-videoframe③\">Create a VideoFrame</a> algorithm with <var>output</var>, <var>timestamp</var>, and <var>duration</var>.</p>"
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-encoded-data-slot\" id=\"ref-for-dom-imagedecoder-encoded-data-slot②②\">[[encoded data]]</a></code> contains orientation metadata\ndescribe it as <var>rotation</var> and <var>flip</var>, otherwise set <var>rotation</var> to 0\nand <var>flip</var> to false.</p>"
+        },
+        {
+          "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoderesult-image\" id=\"ref-for-dom-imagedecoderesult-image①\">image</a></code> with the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#create-a-videoframe\" id=\"ref-for-create-a-videoframe③\">Create a VideoFrame</a> algorithm with <var>output</var>, <var>timestamp</var>, <var>duration</var>, <var>rotation</var>, and <var>flip</var>.</p>"
         },
         {
           "html": "<p>Remove <var>promise</var> from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoder-pending-decode-promises-slot\" id=\"ref-for-dom-imagedecoder-pending-decode-promises-slot②\">[[pending decode promises]]</a></code>.</p>"
