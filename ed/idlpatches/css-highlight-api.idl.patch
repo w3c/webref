@@ -1,0 +1,26 @@
+From d044c96850e758b04b419eba84ad30e83d716109 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 30 Jan 2025 14:17:10 +0100
+Subject: [PATCH] Drop `partial` from definition of `HighlightRegistry`
+
+Pending https://github.com/w3c/csswg-drafts/pull/11595
+---
+ ed/idl/css-highlight-api.idl | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/idl/css-highlight-api.idl b/ed/idl/css-highlight-api.idl
+index 34ce29eda..61bf6d4ca 100644
+--- a/ed/idl/css-highlight-api.idl
++++ b/ed/idl/css-highlight-api.idl
+@@ -22,7 +22,7 @@ partial namespace CSS {
+ };
+ 
+ [Exposed=Window]
+-partial interface HighlightRegistry {
++interface HighlightRegistry {
+   maplike<DOMString, Highlight>;
+ };
+ 
+-- 
+2.37.1.windows.1
+
