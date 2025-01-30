@@ -595,6 +595,37 @@
       ]
     },
     {
+      "name": "interactivity",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-interactivity",
+      "value": "auto | inert",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "The element’s inertness is determined by the host language. (This will usually mean the element is not inert.)",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-interactivity-auto",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "inert",
+          "prose": "The element is inert.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-interactivity-inert",
+          "type": "value",
+          "value": "inert"
+        }
+      ],
+      "styleDeclaration": [
+        "interactivity"
+      ]
+    },
+    {
       "name": "accent-color",
       "href": "https://drafts.csswg.org/css-ui-4/#propdef-accent-color",
       "value": "auto | <color>",

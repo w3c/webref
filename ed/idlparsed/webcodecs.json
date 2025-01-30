@@ -1856,7 +1856,7 @@
         "href": "https://w3c.github.io/webcodecs/#dictdef-audiodecoderconfig"
       },
       "VideoDecoderConfig": {
-        "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  AllowSharedBufferSource description;\n  [EnforceRange] unsigned long codedWidth;\n  [EnforceRange] unsigned long codedHeight;\n  [EnforceRange] unsigned long displayAspectWidth;\n  [EnforceRange] unsigned long displayAspectHeight;\n  VideoColorSpaceInit colorSpace;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  boolean optimizeForLatency;\n};",
+        "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  AllowSharedBufferSource description;\n  [EnforceRange] unsigned long codedWidth;\n  [EnforceRange] unsigned long codedHeight;\n  [EnforceRange] unsigned long displayAspectWidth;\n  [EnforceRange] unsigned long displayAspectHeight;\n  VideoColorSpaceInit colorSpace;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  boolean optimizeForLatency;\n  double rotation = 0;\n  boolean flip = false;\n};",
         "type": "dictionary",
         "name": "VideoDecoderConfig",
         "inheritance": null,
@@ -2035,6 +2035,44 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-optimizeforlatency"
+          },
+          {
+            "type": "field",
+            "name": "rotation",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-rotation"
+          },
+          {
+            "type": "field",
+            "name": "flip",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-flip"
           }
         ],
         "extAttrs": [],

@@ -95,6 +95,7 @@
       "https://www.w3.org/TR/css-position-3/": {},
       "https://www.w3.org/TR/css-pseudo-4/": {},
       "https://www.w3.org/TR/css-regions-1/": {},
+      "https://www.w3.org/TR/css-scoping-1/": {},
       "https://www.w3.org/TR/css-scroll-anchoring-1/": {},
       "https://www.w3.org/TR/css-scroll-snap-1/": {},
       "https://www.w3.org/TR/css-sizing-3/": {},
@@ -147,6 +148,11 @@
           "fully-styleable"
         ]
       },
+      "https://drafts.csswg.org/css-scoping-1/": {
+        "anchors": [
+          "flat-tree"
+        ]
+      },
       "https://drafts.csswg.org/css-scroll-anchoring-1/": {
         "anchors": [
           "anchor-priority-candidates"
@@ -154,6 +160,8 @@
       },
       "https://drafts.csswg.org/css2/": {
         "anchors": [
+          "selectordef-focus",
+          "selectordef-active",
           "propdef-float"
         ]
       },
@@ -171,6 +179,11 @@
       "https://html.spec.whatwg.org/multipage/form-elements.html": {
         "anchors": [
           "the-button-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "dom-documentorshadowroot-activeelement"
         ]
       },
       "https://html.spec.whatwg.org/multipage/links.html": {
@@ -271,14 +284,16 @@
           "writing-mode",
           "block-start",
           "inline-start",
-          "block-end",
-          "inline-end"
+          "inline-end",
+          "block-end"
         ]
       },
       "https://www.w3.org/TR/selectors-4/": {
         "anchors": [
           "originating-element",
           "disabled-pseudo",
+          "focus-visible-pseudo",
+          "focus-within-pseudo",
           "selector-subject"
         ]
       }

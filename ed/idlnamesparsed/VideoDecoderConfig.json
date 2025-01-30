@@ -6,7 +6,7 @@
       "title": "WebCodecs",
       "url": "https://www.w3.org/TR/webcodecs/"
     },
-    "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  AllowSharedBufferSource description;\n  [EnforceRange] unsigned long codedWidth;\n  [EnforceRange] unsigned long codedHeight;\n  [EnforceRange] unsigned long displayAspectWidth;\n  [EnforceRange] unsigned long displayAspectHeight;\n  VideoColorSpaceInit colorSpace;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  boolean optimizeForLatency;\n};",
+    "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  AllowSharedBufferSource description;\n  [EnforceRange] unsigned long codedWidth;\n  [EnforceRange] unsigned long codedHeight;\n  [EnforceRange] unsigned long displayAspectWidth;\n  [EnforceRange] unsigned long displayAspectHeight;\n  VideoColorSpaceInit colorSpace;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  boolean optimizeForLatency;\n  double rotation = 0;\n  boolean flip = false;\n};",
     "href": "https://w3c.github.io/webcodecs/#dictdef-videodecoderconfig"
   },
   "extended": [],

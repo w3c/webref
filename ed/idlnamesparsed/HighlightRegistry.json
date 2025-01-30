@@ -6,10 +6,17 @@
       "title": "CSS Custom Highlight API Module Level 1",
       "url": "https://www.w3.org/TR/css-highlight-api-1/"
     },
-    "fragment": "[Exposed=Window]\ninterface HighlightRegistry {\n  maplike<DOMString, Highlight>;\n};",
-    "href": "https://drafts.csswg.org/css-highlight-api-1/#highlightregistry"
+    "fragment": "[Exposed=Window]\ninterface HighlightRegistry {\n  maplike<DOMString, Highlight>;\n};"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "CSS Custom Highlight API Module Level 1",
+        "url": "https://www.w3.org/TR/css-highlight-api-1/"
+      },
+      "fragment": "partial interface HighlightRegistry {\n  sequence<Highlight> highlightsFromPoint(float x, float y, optional HighlightsFromPointOptions options = {});\n};"
+    }
+  ],
   "inheritance": null,
   "includes": []
 }
