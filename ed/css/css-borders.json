@@ -967,48 +967,281 @@
     {
       "name": "corner-shape",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-shape",
-      "value": "[ round | angle ]{1,4}",
+      "value": "<corner-shape-value>{1,2} / [ <corner-shape-value>{1,2} ]?",
       "initial": "round",
-      "appliesTo": "all elements, except table element when border-collapse is collapse",
+      "appliesTo": "all elements where border-radius can apply",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete",
-      "values": [
-        {
-          "name": "round",
-          "prose": "Border radii define a convex elliptical curve at the corner.",
-          "href": "https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-round",
-          "type": "value",
-          "value": "round"
-        },
-        {
-          "name": "angle",
-          "prose": "Border radii define a diagonal slice at the corner.",
-          "href": "https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-angle",
-          "type": "value",
-          "value": "angle"
-        }
-      ],
+      "animationType": "see individual properties",
       "styleDeclaration": [
         "corner-shape",
         "cornerShape"
       ]
     },
     {
-      "name": "corners",
-      "href": "https://drafts.csswg.org/css-borders-4/#propdef-corners",
-      "value": "<'corner-shape'> || <'border-radius'>",
-      "initial": "see individual properties",
-      "appliesTo": "see individual properties",
-      "inherited": "see individual properties",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
+      "name": "corner-top-left-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-top-left-shape",
+      "value": "<corner-shape-value>",
+      "initial": "round",
+      "appliesTo": "all elements where border-radius can apply",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the corresponding superellipse() value",
       "canonicalOrder": "per grammar",
+      "animationType": "see superellipse interpolation",
+      "logicalPropertyGroup": "corner-shape",
       "styleDeclaration": [
-        "corners"
+        "corner-top-left-shape",
+        "cornerTopLeftShape"
+      ]
+    },
+    {
+      "name": "corner-top-right-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-top-right-shape",
+      "value": "<corner-shape-value>",
+      "initial": "round",
+      "appliesTo": "all elements where border-radius can apply",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the corresponding superellipse() value",
+      "canonicalOrder": "per grammar",
+      "animationType": "see superellipse interpolation",
+      "logicalPropertyGroup": "corner-shape",
+      "styleDeclaration": [
+        "corner-top-right-shape",
+        "cornerTopRightShape"
+      ]
+    },
+    {
+      "name": "corner-bottom-right-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-right-shape",
+      "value": "<corner-shape-value>",
+      "initial": "round",
+      "appliesTo": "all elements where border-radius can apply",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the corresponding superellipse() value",
+      "canonicalOrder": "per grammar",
+      "animationType": "see superellipse interpolation",
+      "logicalPropertyGroup": "corner-shape",
+      "styleDeclaration": [
+        "corner-bottom-right-shape",
+        "cornerBottomRightShape"
+      ]
+    },
+    {
+      "name": "corner-bottom-left-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-left-shape",
+      "value": "<corner-shape-value>",
+      "initial": "round",
+      "appliesTo": "all elements where border-radius can apply",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the corresponding superellipse() value",
+      "canonicalOrder": "per grammar",
+      "animationType": "see superellipse interpolation",
+      "logicalPropertyGroup": "corner-shape",
+      "styleDeclaration": [
+        "corner-bottom-left-shape",
+        "cornerBottomLeftShape"
+      ]
+    },
+    {
+      "name": "corner-start-start-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-start-start-shape",
+      "value": "<corner-shape-value>",
+      "initial": "round",
+      "appliesTo": "all elements where border-radius can apply",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the corresponding superellipse() value",
+      "canonicalOrder": "per grammar",
+      "animationType": "see superellipse interpolation",
+      "logicalPropertyGroup": "corner-shape",
+      "styleDeclaration": [
+        "corner-start-start-shape",
+        "cornerStartStartShape"
+      ]
+    },
+    {
+      "name": "corner-start-end-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-start-end-shape",
+      "value": "<corner-shape-value>",
+      "initial": "round",
+      "appliesTo": "all elements where border-radius can apply",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the corresponding superellipse() value",
+      "canonicalOrder": "per grammar",
+      "animationType": "see superellipse interpolation",
+      "logicalPropertyGroup": "corner-shape",
+      "styleDeclaration": [
+        "corner-start-end-shape",
+        "cornerStartEndShape"
+      ]
+    },
+    {
+      "name": "corner-end-start-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-end-start-shape",
+      "value": "<corner-shape-value>",
+      "initial": "round",
+      "appliesTo": "all elements where border-radius can apply",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the corresponding superellipse() value",
+      "canonicalOrder": "per grammar",
+      "animationType": "see superellipse interpolation",
+      "logicalPropertyGroup": "corner-shape",
+      "styleDeclaration": [
+        "corner-end-start-shape",
+        "cornerEndStartShape"
+      ]
+    },
+    {
+      "name": "corner-end-end-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-end-end-shape",
+      "value": "<corner-shape-value>",
+      "initial": "round",
+      "appliesTo": "all elements where border-radius can apply",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the corresponding superellipse() value",
+      "canonicalOrder": "per grammar",
+      "animationType": "see superellipse interpolation",
+      "logicalPropertyGroup": "corner-shape",
+      "styleDeclaration": [
+        "corner-end-end-shape",
+        "cornerEndEndShape"
+      ]
+    },
+    {
+      "name": "corner-top-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-top-shape",
+      "value": "<corner-shape-value> [ / <corner-shape-value> ]",
+      "initial": "round",
+      "appliesTo": "all elements where border-radius can apply",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "corner-top-shape",
+        "cornerTopShape"
+      ]
+    },
+    {
+      "name": "corner-right-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-right-shape",
+      "value": "<corner-shape-value> [ / <corner-shape-value> ]",
+      "initial": "round",
+      "appliesTo": "all elements where border-radius can apply",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "corner-right-shape",
+        "cornerRightShape"
+      ]
+    },
+    {
+      "name": "corner-bottom-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-shape",
+      "value": "<corner-shape-value> [ / <corner-shape-value> ]",
+      "initial": "round",
+      "appliesTo": "all elements where border-radius can apply",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "corner-bottom-shape",
+        "cornerBottomShape"
+      ]
+    },
+    {
+      "name": "corner-left-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-left-shape",
+      "value": "<corner-shape-value> [ / <corner-shape-value> ]",
+      "initial": "round",
+      "appliesTo": "all elements where border-radius can apply",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "corner-left-shape",
+        "cornerLeftShape"
+      ]
+    },
+    {
+      "name": "corner-block-start-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-block-start-shape",
+      "value": "<corner-shape-value> [ / <corner-shape-value> ]",
+      "initial": "round",
+      "appliesTo": "all elements where border-radius can apply",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "corner-block-start-shape",
+        "cornerBlockStartShape"
+      ]
+    },
+    {
+      "name": "corner-block-end-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-block-end-shape",
+      "value": "<corner-shape-value> [ / <corner-shape-value> ]",
+      "initial": "round",
+      "appliesTo": "all elements where border-radius can apply",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "corner-block-end-shape",
+        "cornerBlockEndShape"
+      ]
+    },
+    {
+      "name": "corner-inline-start-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-inline-start-shape",
+      "value": "<corner-shape-value> [ / <corner-shape-value> ]",
+      "initial": "round",
+      "appliesTo": "all elements where border-radius can apply",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "corner-inline-start-shape",
+        "cornerInlineStartShape"
+      ]
+    },
+    {
+      "name": "corner-inline-end-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-inline-end-shape",
+      "value": "<corner-shape-value> [ / <corner-shape-value> ]",
+      "initial": "round",
+      "appliesTo": "all elements where border-radius can apply",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "corner-inline-end-shape",
+        "cornerInlineEndShape"
       ]
     },
     {
@@ -1321,6 +1554,62 @@
   "atrules": [],
   "selectors": [],
   "values": [
+    {
+      "name": "<corner-shape-value>",
+      "href": "https://drafts.csswg.org/css-borders-4/#typedef-corner-shape-value",
+      "type": "type",
+      "value": "''round'' | ''scoop'' | ''bevel'' | ''notch'' | ''straight'' | ''squircle'' | superellipse(<number [0,∞]>)",
+      "values": [
+        {
+          "name": "round",
+          "prose": "Border radii define a convex elliptical curve at the corner. Equivalent to superellipse(2).",
+          "href": "https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-value-round",
+          "type": "value",
+          "value": "round"
+        },
+        {
+          "name": "scoop",
+          "prose": "Border radii define a concave elliptical curve at the corner. Equivalent to superellipse(0.5).",
+          "href": "https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-value-scoop",
+          "type": "value",
+          "value": "scoop"
+        },
+        {
+          "name": "bevel",
+          "prose": "Border radii define a diagonal slice at the corner. Equivalent to superellipse(1).",
+          "href": "https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-value-bevel",
+          "type": "value",
+          "value": "bevel"
+        },
+        {
+          "name": "notch",
+          "prose": "Border radii define a concave 90deg angle at the corner. Equivalent to superellipse(0).",
+          "href": "https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-value-notch",
+          "type": "value",
+          "value": "notch"
+        },
+        {
+          "name": "straight",
+          "prose": "Border radii define a convex 90deg angle at the corner. This would have the same visual effect as a border-radius of 0. This is different from having a border-radius of 0 when animating. Equivalent to superellipse(infinity).",
+          "href": "https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-value-straight",
+          "type": "value",
+          "value": "straight"
+        },
+        {
+          "name": "squircle",
+          "prose": "Border radii define a convex curve between an ellipse and an convex angle, equivalent to superellipse(4).",
+          "href": "https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-value-squircle",
+          "type": "value",
+          "value": "squircle"
+        }
+      ]
+    },
+    {
+      "name": "superellipse()",
+      "value": "superellipse( <number> | infinity )",
+      "href": "https://drafts.csswg.org/css-borders-4/#funcdef-superellipse",
+      "type": "function"
+    },
     {
       "name": "<spread-shadow>",
       "href": "https://drafts.csswg.org/css-borders-4/#typedef-spread-shadow",
