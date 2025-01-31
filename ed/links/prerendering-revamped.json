@@ -6,6 +6,7 @@
   "links": {
     "rawlinks": {
       "http://www.w3.org/community/": {},
+      "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-no-vary-search": {},
       "https://dom.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {},
       "https://fullscreen.spec.whatwg.org/": {},
@@ -68,6 +69,7 @@
       "https://w3c.github.io/webdriver-bidi/": {},
       "https://webaudio.github.io/web-audio-api/": {},
       "https://webaudio.github.io/web-midi-api/": {},
+      "https://webaudio.github.io/web-speech-api/": {},
       "https://webbluetoothcg.github.io/web-bluetooth/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://wicg.github.io/background-fetch/": {},
@@ -75,9 +77,7 @@
       "https://wicg.github.io/file-system-access/": {},
       "https://wicg.github.io/idle-detection/": {},
       "https://wicg.github.io/keyboard-lock/": {},
-      "https://wicg.github.io/nav-speculation/no-vary-search.html": {},
       "https://wicg.github.io/serial/": {},
-      "https://wicg.github.io/speech-api/": {},
       "https://wicg.github.io/webhid/": {},
       "https://wicg.github.io/webusb/": {},
       "https://www.w3.org/community/about/agreements/cla/": {},
@@ -155,13 +155,14 @@
         "anchors": [
           "navigable",
           "top-level-traversable",
+          "nav-bc",
+          "auxiliary-browsing-context",
           "node-navigable",
           "creating-a-new-top-level-traversable",
           "nav-document",
           "destroy-a-top-level-traversable",
           "child-navigable",
           "concept-document-bc",
-          "auxiliary-browsing-context",
           "opener-browsing-context",
           "inclusive-descendant-navigables",
           "nav-window",
@@ -515,6 +516,17 @@
           "dom-navigator-requestmidiaccess"
         ]
       },
+      "https://webaudio.github.io/web-speech-api/": {
+        "anchors": [
+          "dom-speechsynthesis-speak",
+          "dom-speechsynthesis-cancel",
+          "dom-speechsynthesis-pause",
+          "dom-speechsynthesis-resume",
+          "dom-speechrecognition-start",
+          "dom-speechrecognition-stop",
+          "dom-speechrecognition-abort"
+        ]
+      },
       "https://webbluetoothcg.github.io/web-bluetooth/": {
         "anchors": [
           "dom-bluetooth-getdevices",
@@ -578,17 +590,6 @@
         "anchors": [
           "dom-serial-requestport",
           "dom-serial-getports"
-        ]
-      },
-      "https://wicg.github.io/speech-api/": {
-        "anchors": [
-          "dom-speechsynthesis-speak",
-          "dom-speechsynthesis-cancel",
-          "dom-speechsynthesis-pause",
-          "dom-speechsynthesis-resume",
-          "dom-speechrecognition-start",
-          "dom-speechrecognition-stop",
-          "dom-speechrecognition-abort"
         ]
       },
       "https://wicg.github.io/webhid/": {
