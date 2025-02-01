@@ -388,6 +388,7 @@ BrowsingContextEvent = (
   browsingContext.HistoryUpdated //
   browsingContext.Load //
   browsingContext.NavigationAborted //
+  browsingContext.NavigationCommitted //
   browsingContext.NavigationFailed //
   browsingContext.NavigationStarted //
   browsingContext.UserPromptClosed //
@@ -717,6 +718,11 @@ browsingContext.DownloadWillBegin = (
 
 browsingContext.NavigationAborted = (
  method: "browsingContext.navigationAborted",
+ params: browsingContext.NavigationInfo
+)
+
+browsingContext.NavigationCommitted = (
+ method: "browsingContext.navigationCommitted",
  params: browsingContext.NavigationInfo
 )
 
