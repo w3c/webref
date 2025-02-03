@@ -64,7 +64,6 @@
       "https://w3c.github.io/web-nfc/": {},
       "https://w3c.github.io/web-share/": {},
       "https://w3c.github.io/webappsec-credential-management/": {},
-      "https://w3c.github.io/webappsec-referrer-policy/": {},
       "https://w3c.github.io/webcrypto/": {},
       "https://w3c.github.io/webdriver-bidi/": {},
       "https://webaudio.github.io/web-audio-api/": {},
@@ -77,6 +76,7 @@
       "https://wicg.github.io/file-system-access/": {},
       "https://wicg.github.io/idle-detection/": {},
       "https://wicg.github.io/keyboard-lock/": {},
+      "https://wicg.github.io/nav-speculation/prefetch.html": {},
       "https://wicg.github.io/serial/": {},
       "https://wicg.github.io/webhid/": {},
       "https://wicg.github.io/webusb/": {},
@@ -275,7 +275,6 @@
         "anchors": [
           "name-data-model",
           "iref-default-url-search-variance",
-          "name-comparing",
           "name-http-header-field-definitio",
           "name-obtain-a-url-search-varianc"
         ]
@@ -288,19 +287,17 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "list",
-          "struct",
-          "struct-item",
           "list-item",
           "user-agent",
           "assert",
-          "list-iterate",
-          "list-append",
-          "list-remove",
           "list-size",
+          "list-remove",
+          "list-iterate",
           "map-iterate",
           "map-set",
           "iteration-continue",
           "iteration-break",
+          "list-append",
           "list-is-empty",
           "list-contain",
           "list-empty",
@@ -480,11 +477,6 @@
           "dom-credentialscontainer-create"
         ]
       },
-      "https://w3c.github.io/webappsec-referrer-policy/": {
-        "anchors": [
-          "referrer-policy"
-        ]
-      },
       "https://w3c.github.io/webcrypto/": {
         "anchors": [
           "dfn-generate-a-random-uuid"
@@ -584,6 +576,21 @@
       "https://wicg.github.io/keyboard-lock/": {
         "anchors": [
           "dom-keyboard-lock"
+        ]
+      },
+      "https://wicg.github.io/nav-speculation/prefetch.html": {
+        "anchors": [
+          "prefetch-record",
+          "prefetch-record-url",
+          "prefetch-record-anonymization-policy",
+          "prefetch-record-referrer-policy",
+          "prefetch-record-no-vary-search-hint",
+          "prefetch-record-label",
+          "prefetch",
+          "prefetch-record-matches-a-url",
+          "document-prefetch-records",
+          "prefetch-record-is-expected-to-match-a-url",
+          "prefetch-record-start-time"
         ]
       },
       "https://wicg.github.io/serial/": {
