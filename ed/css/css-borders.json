@@ -967,7 +967,7 @@
     {
       "name": "corner-shape",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-shape",
-      "value": "<corner-shape-value>{1,2} / [ <corner-shape-value>{1,2} ]?",
+      "value": "<corner-shape-value>{1,2} [ / <corner-shape-value>{1,2} ]?",
       "initial": "round",
       "appliesTo": "all elements where border-radius can apply",
       "inherited": "no",
@@ -1558,7 +1558,7 @@
       "name": "<corner-shape-value>",
       "href": "https://drafts.csswg.org/css-borders-4/#typedef-corner-shape-value",
       "type": "type",
-      "value": "''round'' | ''scoop'' | ''bevel'' | ''notch'' | ''straight'' | ''squircle'' | superellipse(<number [0,∞]>)",
+      "value": "''round'' | ''scoop'' | ''bevel'' | ''notch'' | ''straight'' | ''squircle'' | superellipse(<number [0,∞]> | infinity)",
       "values": [
         {
           "name": "round",
