@@ -112,6 +112,8 @@ The following projects are known to use webref data:
 * [nodysseus](https://gitlab.com/ulysses.codes/nodysseus)
 * [WebIDLPedia](https://dontcallmedom.github.io/webidlpedia/)
 * [Webdex](https://dontcallmedom.github.io/webdex/)
+* [Gost-DOM](https://github.com/gost-dom/browser), a headless browser for Go (early prototype available).
+* [Gost-DOM Webref](https://github.com/gost-dom/webref) exposing parts of the data as native Go objects.
 
 Using webref data in a project that is not yet in the list? Let us know!
 
