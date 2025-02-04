@@ -1,6 +1,6 @@
 // Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
-dictionary AdAuctionData {
-  required USVString requestId;
+dictionary AdAuctionPerSellerData {
+  required USVString seller;
   Uint8Array request;
-  sequence<AdAuctionPerSellerData> requests;
+  DOMString error;
 };

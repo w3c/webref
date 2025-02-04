@@ -75,6 +75,13 @@
     },
     {
       "spec": {
+        "title": "Web Speech API",
+        "url": "https://webaudio.github.io/web-speech-api/"
+      },
+      "fragment": "partial interface Window {\n    [SameObject] readonly attribute SpeechSynthesis speechSynthesis;\n};"
+    },
+    {
+      "spec": {
         "title": "Iframe credentialless",
         "url": "https://wicg.github.io/anonymous-iframe/"
       },
@@ -142,13 +149,6 @@
         "url": "https://wicg.github.io/shared-storage/"
       },
       "fragment": "partial interface Window {\n  [SecureContext] readonly attribute SharedStorage? sharedStorage;\n};"
-    },
-    {
-      "spec": {
-        "title": "Web Speech API",
-        "url": "https://wicg.github.io/speech-api/"
-      },
-      "fragment": "partial interface Window {\n    [SameObject] readonly attribute SpeechSynthesis speechSynthesis;\n};"
     },
     {
       "spec": {

@@ -1,0 +1,215 @@
+{
+  "spec": {
+    "title": "Document-Isolation-Policy",
+    "url": "https://wicg.github.io/document-isolation-policy/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/document-isolation-policy/#title",
+      "level": 1,
+      "title": "Document-Isolation-Policy"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/document-isolation-policy/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/document-isolation-policy/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/document-isolation-policy/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://wicg.github.io/document-isolation-policy/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "recommended-readings",
+      "href": "https://wicg.github.io/document-isolation-policy/#recommended-readings",
+      "level": 3,
+      "title": "Recommended readings",
+      "number": "1.1"
+    },
+    {
+      "id": "dip-html",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-html",
+      "level": 2,
+      "title": "Integration with HMTL",
+      "number": "2"
+    },
+    {
+      "id": "dip-supporting-concepts",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-supporting-concepts",
+      "level": 3,
+      "title": "Supporting concepts when loading web pages",
+      "number": "2.1"
+    },
+    {
+      "id": "dip",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip",
+      "level": 4,
+      "title": "Cross-origin-opener-policies",
+      "number": "2.1.1"
+    },
+    {
+      "id": "dip-bcg-switch",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-bcg-switch",
+      "level": 5,
+      "title": "Browsing context group switches due to cross-origin opener policy",
+      "number": "2.1.1.1"
+    },
+    {
+      "id": "dip-dip",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-dip",
+      "level": 4,
+      "title": "Document Isolation Policies",
+      "number": "2.1.2"
+    },
+    {
+      "id": "dip-headers",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-headers",
+      "level": 5,
+      "title": "The headers",
+      "number": "2.1.2.1"
+    },
+    {
+      "id": "dip-policy-containers",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-policy-containers",
+      "level": 4,
+      "title": "Policy containers",
+      "number": "2.1.3"
+    },
+    {
+      "id": "dip-browsing-contexts",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-browsing-contexts",
+      "level": 3,
+      "title": "Browsing contexts",
+      "number": "2.2"
+    },
+    {
+      "id": "dip-bc",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-bc",
+      "level": 4,
+      "title": "Browsing contexts",
+      "number": "2.2.1"
+    },
+    {
+      "id": "dip-grouping-of-browsing-contexts",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-grouping-of-browsing-contexts",
+      "level": 4,
+      "title": "Grouping of browsing contexts",
+      "number": "2.2.2"
+    },
+    {
+      "id": "dip-document-lifecycle",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-document-lifecycle",
+      "level": 3,
+      "title": "Document lifecycle",
+      "number": "2.3"
+    },
+    {
+      "id": "dip-document-creation",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-document-creation",
+      "level": 4,
+      "title": "Shared document creation infrastructure",
+      "number": "2.3.1"
+    },
+    {
+      "id": "dip-agent-clusters",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-agent-clusters",
+      "level": 3,
+      "title": "Agents and agent clusters",
+      "number": "2.4"
+    },
+    {
+      "id": "dip-fetch",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-fetch",
+      "level": 2,
+      "title": "Integration with Fetch",
+      "number": "3"
+    },
+    {
+      "id": "dip-requests",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-requests",
+      "level": 3,
+      "title": "Requests",
+      "number": "3.1"
+    },
+    {
+      "id": "dip-corp",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-corp",
+      "level": 3,
+      "title": "'Cross-Origin-Resource-Policy' header",
+      "number": "3.2"
+    },
+    {
+      "id": "dip-http-fetch",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-http-fetch",
+      "level": 3,
+      "title": "HTTP-network-or-cache fetch",
+      "number": "3.3"
+    },
+    {
+      "id": "dip-security",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-security",
+      "level": 2,
+      "title": "Security considerations",
+      "number": "4"
+    },
+    {
+      "id": "dip-privacy",
+      "href": "https://wicg.github.io/document-isolation-policy/#dip-privacy",
+      "level": 2,
+      "title": "Privacy considerations",
+      "number": "5"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/document-isolation-policy/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/document-isolation-policy/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/document-isolation-policy/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/document-isolation-policy/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/document-isolation-policy/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://wicg.github.io/document-isolation-policy/#informative",
+      "level": 3,
+      "title": "Informative References"
+    }
+  ]
+}

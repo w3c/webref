@@ -1,7 +1,9 @@
 // Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
 dictionary AdAuctionDataConfig {
-  required USVString seller;
-  required USVString coordinatorOrigin;
+  USVString seller;
+  USVString coordinatorOrigin;
+  sequence<AdAuctionOneSeller> sellers;
+
   unsigned long requestSize;
   record<USVString, AdAuctionDataBuyerConfig> perBuyerConfig;
 };

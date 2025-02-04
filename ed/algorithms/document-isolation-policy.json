@@ -1,0 +1,373 @@
+{
+  "spec": {
+    "title": "Document-Isolation-Policy",
+    "url": "https://wicg.github.io/document-isolation-policy/"
+  },
+  "algorithms": [
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <em>navigationCOOP</em>'s value is \"<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#coop-same-origin-plus-coep\" id=\"ref-for-coop-same-origin-plus-coep①\">same-origin-plus-COEP</a>\", then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <em>crossOriginIsolationMode</em> be either \"<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#cross-origin-isolation-logical\" id=\"ref-for-cross-origin-isolation-logical①\">logical</a>\" or \"<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#cross-origin-isolation-concrete\" id=\"ref-for-cross-origin-isolation-concrete①\">concrete</a>\".\n The choice of which is implementation-defined.</p>"
+            },
+            {
+              "html": "<p>Set <em>newBrowsingContext</em>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#browsing-context-group\" id=\"ref-for-browsing-context-group①\">group</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#bcg-coi-key\" id=\"ref-for-bcg-coi-key①\">agent cluster cross-origin isolation key</a> to\n {<em>coopEnforcementResult</em>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#concept-origin\" id=\"ref-for-concept-origin\">origin</a>, <em>crossOriginIsolationMode</em>}.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "obtain-coi-key",
+      "href": "https://wicg.github.io/document-isolation-policy/#obtain-coi-key",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"obtain-coi-key\" data-noexport=\"\" id=\"obtain-coi-key\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a cross-origin agent cluster isolation\nkey</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given null or a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-struct\" id=\"ref-for-dip-struct\">document isolation policy</a> <em>documentIsolationPolicy</em> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#concept-origin\" id=\"ref-for-concept-origin①\">origin</a> <em>origin</em>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <em>documentIsolationPolicy</em> is null, return null.</p>"
+        },
+        {
+          "html": "<p>If <em>documentIsolationPolicy</em>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-struct-value\" id=\"ref-for-dip-struct-value\">value</a> is\n \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-none\" id=\"ref-for-dip-none②\">none</a>\", then return null.</p>"
+        },
+        {
+          "html": "<p>Let <em>crossOriginIsolationMode</em> be either \"<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#cross-origin-isolation-logical\" id=\"ref-for-cross-origin-isolation-logical②\">logical</a>\" or \"<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#cross-origin-isolation-concrete\" id=\"ref-for-cross-origin-isolation-concrete②\">concrete</a>\".\n The choice of which is implementation-defined.</p>"
+        },
+        {
+          "html": "<p>Let <em>crossOriginIsolationKey</em> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#coi-agent-cluster-key\" id=\"ref-for-coi-agent-cluster-key\">agent cluster\n cross-origin isolation key</a>.</p>"
+        },
+        {
+          "html": "<p>Set <em>crossOriginIsolationKey</em> to {<em>origin</em>, <em>crossOriginIsolationMode</em>}.</p>"
+        },
+        {
+          "html": "<p>Return <em>crossOriginIsolationKey</em>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "obtain-dip",
+      "href": "https://wicg.github.io/document-isolation-policy/#obtain-dip",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"obtain-dip\" data-noexport=\"\" id=\"obtain-dip\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a document isolation policy</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <em>response</em> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#environment\" id=\"ref-for-environment\">environment</a> <em>environment</em>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <em>policy</em> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-struct\" id=\"ref-for-dip-struct②\">document isolation policy</a>.</p>"
+        },
+        {
+          "html": "<p>If <em>environment</em> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#non-secure-context\" id=\"ref-for-non-secure-context\">non-secure context</a>, then return <em>policy</em>.</p>"
+        },
+        {
+          "html": "<p>Let <em>parsedItem</em> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header\">getting a structured field value</a> with <code>Document-Isolation-Policy</code> and \"item\" from <em>response</em>'s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
+        },
+        {
+          "html": "If <em>parsedItem</em> is non-null:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <em>parsedItem</em>[0] is\n  \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-isolate-and-require-corp\" id=\"ref-for-dip-isolate-and-require-corp\">isolate-and-require-corp</a>\" or\n  \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-isolate-and-credentialless\" id=\"ref-for-dip-isolate-and-credentialless\">isolate-and-credentialless</a>\", set <em>policy</em>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-struct-value\" id=\"ref-for-dip-struct-value①\">value</a> to <em>parsedItem</em>[0].</p>"
+            },
+            {
+              "html": "<p>If <em>parsedItem</em>[1][\"report-to\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>, then set <em>policy</em>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-reporting-endpoint\" id=\"ref-for-dip-reporting-endpoint\">reporting endpoint</a> to <em>parsedItem</em>[1][\"report-to\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Set <em>parsedItem</em> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header①\">getting a structured field value</a> with <code>Document-Isolation-Policyi-Report-Only</code> and \"item\" from <em>response</em>'s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list①\">header list</a>.</p>"
+        },
+        {
+          "html": "If <em>parsedItem</em> is non-null:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <em>parsedItem</em>[0] is\n  \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-isolate-and-require-corp\" id=\"ref-for-dip-isolate-and-require-corp①\">isolate-and-require-corp</a>\" or\n  \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-isolate-and-credentialless\" id=\"ref-for-dip-isolate-and-credentialless①\">isolate-and-credentialless</a>\", set <em>policy</em>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-report-only-value\" id=\"ref-for-dip-report-only-value\">report-only value</a> to <em>parsedItem</em>[0].</p>"
+            },
+            {
+              "html": "<p>If <em>parsedItem</em>[1][\"report-to\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a>, then set <em>policy</em>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-report-only-endpoint\" id=\"ref-for-dip-report-only-endpoint\">report-only reporting endpoint</a> to <em>parsedItem</em>[1][\"report-to\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return policy.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <em>clone</em>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#policy-container-dip\" id=\"ref-for-policy-container-dip\">document isolation policy</a> to a copy\n of <em>policyContainer</em>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#policy-container-dip\" id=\"ref-for-policy-container-dip①\">document isolation policy</a>.</p>"
+        },
+        {
+          "html": "<p>Set <em>clone</em>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#policy-container-coi-key\" id=\"ref-for-policy-container-coi-key\">agent cluster cross-origin\n isolation key</a> to a copy of <em>policyContainer</em>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#policy-container-coi-key\" id=\"ref-for-policy-container-coi-key①\">agent cluster cross-origin isolation key</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <em>environment</em> is non-null, then set <em>result</em>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#policy-container-dip\" id=\"ref-for-policy-container-dip②\">document isolation policy</a> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#obtain-dip\" id=\"ref-for-obtain-dip\">obatining a document isolation policy</a> given <em>response</em> and <em>environment</em>.</p>"
+        },
+        {
+          "html": "<p>Set <em>result</em>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#policy-container-coi-key\" id=\"ref-for-policy-container-coi-key②\">agent cluster cross-origin\n isolation key</a> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#obtain-coi-key\" id=\"ref-for-obtain-coi-key\">obtaining a cross-origin\n isolation key</a> given <em>result</em>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#policy-container-dip\" id=\"ref-for-policy-container-dip③\">document isolation\n policy</a> and <em>response</em>'s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#concept-origin\" id=\"ref-for-concept-origin②\">origin</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Add a step 5 to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#creating-a-new-browsing-context\" id=\"ref-for-creating-a-new-browsing-context\">create a new browsing context and document</a> algorithm:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <em>creatorAgentClusterCOIKey</em> be null.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <em>agent</em> be the result of obtaining a similar-origin window agent given <em>origin</em>, <em>group</em>, false, and <em>creatorAgentClusterCOIKey</em>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <em>agentClusterCOIKey</em> is not <em>null</em>, then set <em>key</em> to {<em>origin</em>, <em>agentClusterCOIKey</em>}.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if <em>group’s</em> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#bcg-coi-key\" id=\"ref-for-bcg-coi-key③\">agent cluster cross-origin isolation\n key</a> is not <em>null</em>, then set <em>key</em> to {<em>origin</em>, <em>group’s</em> [=bcg-coi=key|agent\n cluster cross-origin isolation key=]}.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Document-Isolation-Policy allows credentials",
+      "href": "https://wicg.github.io/document-isolation-policy/#document-isolation-policy-allows-credentials",
+      "html": "To check if <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"document-isolation-policy-allows-credentials\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Document-Isolation-Policy allows credentials</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-request\" id=\"ref-for-concept-request-request①\">request</a> <em>request</em>, run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <em>request</em>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a> is not \"no-cors\", then return true.</p>"
+        },
+        {
+          "html": "<p>If <em>request</em>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a> is null, then return true.</p>"
+        },
+        {
+          "html": "<p>If <em>request</em>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①\">client</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#policy-container\" id=\"ref-for-policy-container③\">policy container</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#policy-container-dip\" id=\"ref-for-policy-container-dip④\">document-isolation-policy</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-value\" id=\"ref-for-dip-value③\">value</a> is not\n \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-isolate-and-credentialless\" id=\"ref-for-dip-isolate-and-credentialless②\">isolate-and-credentialless</a>\", then return true.</p>"
+        },
+        {
+          "html": "<p>If <em>request</em>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#concept-origin\" id=\"ref-for-concept-origin⑥\">origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <em>request</em>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\" id=\"ref-for-concept-request-current-url\">current\n URL</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#concept-origin\" id=\"ref-for-concept-origin⑦\">origin</a> and <em>request</em> does not have a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-tainted-origin\" id=\"ref-for-concept-request-tainted-origin\">redirect-tainted origin</a>,\n then return true.</p>"
+        },
+        {
+          "html": "<p>Return false.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <em>documentIsolationPolicy</em> be <em>settingsObject</em>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#policy-container\" id=\"ref-for-policy-container④\">policy container</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#policy-container-dip\" id=\"ref-for-policy-container-dip⑤\">document-isolation-policy</a>.</p>"
+        },
+        {
+          "html": "<p>Let <em>reportOnlyCheck</em> be the the result of the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#cross-origin-resource-policy-internal-check\" id=\"ref-for-cross-origin-resource-policy-internal-check\">cross-origin resource\n policy internal check</a> with <em>origin</em>, <em>embedderPolicy</em>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#embedder-policy-report-only-value\" id=\"ref-for-embedder-policy-report-only-value\">report only value</a>, <em>documentIsolationPolicy</em>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-report-only-value\" id=\"ref-for-dip-report-only-value①\">report only value</a>, <em>response</em>, and <em>forNavigation</em>.</p>"
+        },
+        {
+          "html": "<p>If <em>reportOnlyCheck</em> is \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#corp-check-blocked-coep\" id=\"ref-for-corp-check-blocked-coep\">blocked-by-coep</a>\" or\n \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#corp-check-blocked-coep-dip\" id=\"ref-for-corp-check-blocked-coep-dip\">blocked-by-coep-and-dip</a>\", then <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#queue-a-cross-origin-embedder-policy-corp-violation-report\" id=\"ref-for-queue-a-cross-origin-embedder-policy-corp-violation-report\">queue a\n cross-origin embedder policy CORP violation report</a> with <em>response</em>, <em>settingsObject</em>, <em>destination</em>, and true.</p>"
+        },
+        {
+          "html": "<p>If <em>reportOnlyCheck</em> is \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#corp-check-blocked-dip\" id=\"ref-for-corp-check-blocked-dip\">blocked-by-dip</a>\" or\n \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#corp-check-blocked-coep-dip\" id=\"ref-for-corp-check-blocked-coep-dip①\">blocked-by-coep-and-dip</a>\", then <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#queue-a-document-isolation-policy-corp-violation-report\" id=\"ref-for-queue-a-document-isolation-policy-corp-violation-report\">queue a\n document isolation policy CORP violation report</a> with <em>response</em>, <em>settingsObject</em>, <em>destination</em>, and true.</p>"
+        },
+        {
+          "html": "<p>Let <em>check</em> be the the result of the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#cross-origin-resource-policy-internal-check\" id=\"ref-for-cross-origin-resource-policy-internal-check①\">cross-origin resource\n policy internal check</a> with <em>origin</em>, <em>embedderPolicy</em>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#embedder-policy-value-2\" id=\"ref-for-embedder-policy-value-2\">value</a>, <em>documentIsolationPolicy</em>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-struct-value\" id=\"ref-for-dip-struct-value②\">report value</a>, <em>response</em>, and <em>forNavigation</em>.</p>"
+        },
+        {
+          "html": "<p>If <em>check</em> is \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#corp-check-allowed\" id=\"ref-for-corp-check-allowed\">allowed</a>\", then return <strong>allowed</strong>.</p>"
+        },
+        {
+          "html": "<p>If <em>check</em> is \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#corp-check-blocked-coep\" id=\"ref-for-corp-check-blocked-coep①\">blocked-by-coep</a>\" or\n  \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#corp-check-blocked-coep-dip\" id=\"ref-for-corp-check-blocked-coep-dip②\">blocked-by-coep-and-dip</a>\", then <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#queue-a-cross-origin-embedder-policy-corp-violation-report\" id=\"ref-for-queue-a-cross-origin-embedder-policy-corp-violation-report①\">queue a\n  cross-origin embedder policy CORP violation report</a> with <em>response</em>, <em>settingsObject</em>, <em>destination</em>, and false.</p>"
+        },
+        {
+          "html": "<p>If <em>reportOnlyCheck</em> is \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#corp-check-blocked-dip\" id=\"ref-for-corp-check-blocked-dip①\">blocked-by-dip</a>\" or\n  \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#corp-check-blocked-coep-dip\" id=\"ref-for-corp-check-blocked-coep-dip③\">blocked-by-coep-and-dip</a>\", then <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#queue-a-document-isolation-policy-corp-violation-report\" id=\"ref-for-queue-a-document-isolation-policy-corp-violation-report①\">queue a\n  document isolation policy CORP violation report</a> with <em>response</em>, <em>settingsObject</em>, <em>destination</em>, and false.</p>"
+        },
+        {
+          "html": "<p>Return <strong>blocked</strong>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <em>checkResult</em> be a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#corp-check-result\" id=\"ref-for-corp-check-result\">cross-origin resource policy\n internal check result</a> with value \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#corp-check-blocked\" id=\"ref-for-corp-check-blocked\">blocked</a>\".</p>"
+        },
+        {
+          "html": "If <em>policy</em> is null, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <em>upgradeDueToCOEP</em> be false.</p>"
+            },
+            {
+              "html": "<p>Let <em>upgradeDueToDIP</em> be false.</p>"
+            },
+            {
+              "html": "\"<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#coep-unsafe-none\" id=\"ref-for-coep-unsafe-none\">unsafe-none</a>\"",
+              "rationale": "do",
+              "steps": [
+                {
+                  "html": "<p>Do nothing.</p>"
+                }
+              ],
+              "additional": [
+                {
+                  "html": "\"<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#coep-credentialless\" id=\"ref-for-coep-credentialless\">credentialless</a>\"",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <em>upgradeDueToCOEP</em> to true if:</p>\n            <ul>\n             <li data-md=\"\">\n              <p><em>response</em>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-request-includes-credentials\" id=\"ref-for-response-request-includes-credentials\">request-includes-credentials</a> is true, or</p>\n             </li><li data-md=\"\">\n              <p><em>forNavigation</em> is true.</p>\n            </li></ul>"
+                    }
+                  ]
+                },
+                {
+                  "html": "\"<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#coep-require-corp\" id=\"ref-for-coep-require-corp\">require-corp</a>\"",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <em>upgradeDueToCOEP</em> to true.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "\"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-none\" id=\"ref-for-dip-none③\">dip-none</a>\"",
+              "rationale": "do",
+              "steps": [
+                {
+                  "html": "<p>Do nothing.</p>"
+                }
+              ],
+              "additional": [
+                {
+                  "html": "\"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-isolate-and-credentialless\" id=\"ref-for-dip-isolate-and-credentialless③\">isolate-and-credentialless</a>\"",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <em>upgradeDueToDIP</em> to true if <em>response</em>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-request-includes-credentials\" id=\"ref-for-response-request-includes-credentials①\">request-includes-credentials</a> is true.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "\"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-isolate-and-require-corp\" id=\"ref-for-dip-isolate-and-require-corp②\">isolate-and-require-corp</a>\"",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <em>upgradeDueToDIP</em> to true.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>If <em>upgradeDueToCOEP</em> or <em>upgradeDueToDIP</em> is true, set <em>policy</em> to\n  'same-origin'.</p>"
+            },
+            {
+              "html": "If <em>upgradeDueToCOEP</em> is true, then:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <em>upgradeDueToDIP</em> is true, then set <em>checkResult</em> to\n \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#corp-check-blocked-coep-dip\" id=\"ref-for-corp-check-blocked-coep-dip④\">blocked-by-coep-and-dip</a>\".</p>"
+                },
+                {
+                  "html": "<p>Otherwise, set <em>checkResult</em> to\n \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#corp-check-blocked\" id=\"ref-for-corp-check-blocked①\">blocked-by-coep</a>\".</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Otherwise, if <em>upgradeDueToDIP</em> is true, then set <em>checkResult</em> to\n     \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#corp-check-blocked-dip\" id=\"ref-for-corp-check-blocked-dip②\">blocked-by-dip</a>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "<code>cross-origin</code>",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <em>checkResult</em> to \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#corp-check-allowed\" id=\"ref-for-corp-check-allowed①\">allowed</a>\".</p>"
+            }
+          ],
+          "additional": [
+            {
+              "html": "<code>same-origin</code>",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <em>origin</em> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#same-origin\" id=\"ref-for-same-origin①\">same origin</a> with <em>response</em>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#concept-origin\" id=\"ref-for-concept-origin⑨\">origin</a>,\n  then set <em>checkResult</em> to \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#corp-check-allowed\" id=\"ref-for-corp-check-allowed②\">allowed</a>\".</p>"
+                }
+              ]
+            },
+            {
+              "html": "<code>same-site</code>",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If all of the following are true</p>\n          <ul>\n           <li data-md=\"\">\n            <p><em>origin</em> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#schemelessly-same-site\" id=\"ref-for-schemelessly-same-site\">schemelessly same site</a> with <em>response</em>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url②\">URL</a>’s <em>origin</em></p>\n           </li><li data-md=\"\">\n            <p><em>origin</em>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is \"https\" or <em>response</em>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> is not \"https\"</p>\n          </li></ul>"
+                },
+                {
+                  "html": "<p>then set <em>checkResult</em> to \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#corp-check-allowed\" id=\"ref-for-corp-check-allowed③\">allowed</a>\".</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <em>checkResult</em>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "queue a document isolation policy CORP violation report",
+      "href": "https://wicg.github.io/document-isolation-policy/#queue-a-document-isolation-policy-corp-violation-report",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"queue-a-document-isolation-policy-corp-violation-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">queue a document isolation policy CORP violation report</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②\">response</a> <em>response</em>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <em>settingsObject</em>, a\nstring <em>destination</em>, and a boolean <em>reportOnly</em>, run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <em>endpoint</em> be <em>settingsObject</em>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#policy-container\" id=\"ref-for-policy-container⑤\">policy container</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#policy-container-dip\" id=\"ref-for-policy-container-dip⑥\">document-isolation-policy</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-report-only-endpoint\" id=\"ref-for-dip-report-only-endpoint①\">report only reporting endpoint</a> if <em>reportOnly</em> is true and <em>settingsObject</em>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#policy-container\" id=\"ref-for-policy-container⑥\">policy container</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#policy-container-dip\" id=\"ref-for-policy-container-dip⑦\">document-isolation-policy</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#dip-reporting-endpoint\" id=\"ref-for-dip-reporting-endpoint①\">reporting endpoint</a> otherwise.</p>"
+        },
+        {
+          "html": "<p>Let <em>serializedURL</em> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#serialize-a-response-url-for-reporting\" id=\"ref-for-serialize-a-response-url-for-reporting\">serializing a response URL for\n reporting</a> with <em>response</em>.</p>"
+        },
+        {
+          "html": "<p>Let <em>disposition</em> be \"reporting\" if reportOnly is true; otherwise \"enforce\".</p>"
+        },
+        {
+          "html": "<p>Let <em>body</em> be a new object containing the following properties:</p>\n      <table class=\"def\">\n       <tbody>\n        <tr>\n         <th>\"type\"\n         </th><td>\"corp\" \n        </td></tr><tr>\n         <th>\"blockedURL\"\n         </th><td>serializedURL \n        </td></tr><tr>\n         <th>\"destination\"\n         </th><td>destination \n        </td></tr><tr>\n         <th>\"disposition\"\n         </th><td>disposition \n      </td></tr></tbody></table>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#generate-and-queue-a-report\" id=\"ref-for-generate-and-queue-a-report\">Generate and queue a report</a> for <em>settingsObject</em>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a> given the \"dip\", <em>endpoint</em>, and <em>body</em>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-isolation-policy/#document-isolation-policy-allows-credentials\" id=\"ref-for-document-isolation-policy-allows-credentials\">Document-Isolation-Policy allows credentials</a> with <em>request</em> returns\n false, then set <em>includeCredentials</em> to false.</p>"
+        }
+      ]
+    }
+  ]
+}

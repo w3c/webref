@@ -31,7 +31,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizercreateoptions-signal\" id=\"ref-for-dom-aisummarizercreateoptions-signal\">signal</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a> and is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted\">aborted</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizercreateoptions-signal\" id=\"ref-for-dom-aisummarizercreateoptions-signal①\">signal</a></code>\"]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason\">abort reason</a>.</p>"
@@ -47,24 +47,24 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>monitor</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new②\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aicreatemonitor\" id=\"ref-for-aicreatemonitor②\">AICreateMonitor</a></code> created in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm②\">relevant realm</a>.</p>"
+              "html": "<p>Let <var>monitor</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new②\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aicreatemonitor\" id=\"ref-for-aicreatemonitor②\">AICreateMonitor</a></code> created in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm②\">relevant realm</a>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function\">Invoke</a> <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizercreateoptions-monitor\" id=\"ref-for-dom-aisummarizercreateoptions-monitor①\">monitor</a></code>\"] with « <var>monitor</var> » and \"<code>rethrow</code>\".</p>\n        <p>If this throws an exception <var>e</var>, catch it, and return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with③\">a promise rejected with</a> <var>e</var>.</p>"
             },
             {
-              "html": "Set <var>fireProgressEvent</var> to an algorithm taking arguments <var>loaded</var> and <var>total</var>, which performs the following steps:",
+              "html": "Set <var>fireProgressEvent</var> to an algorithm taking argument <var>loaded</var>, which performs the following steps:",
               "rationale": "assert",
               "steps": [
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> to perform the following steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> to perform the following steps:",
                   "rationale": "fire",
                   "steps": [
                     {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">Fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#eventdef-aicreatemonitor-downloadprogress\" id=\"ref-for-eventdef-aicreatemonitor-downloadprogress\">downloadprogress</a></code> at <var>monitor</var>, using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#progressevent\" id=\"ref-for-progressevent\">ProgressEvent</a></code>, with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#dom-progressevent-loaded\" id=\"ref-for-dom-progressevent-loaded\">loaded</a></code> attribute initialized to <var>loaded</var>, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#dom-progressevent-total\" id=\"ref-for-dom-progressevent-total\">total</a></code> attribute initialized to <var>total</var>, and the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#dom-progressevent-lengthcomputable\" id=\"ref-for-dom-progressevent-lengthcomputable\">lengthComputable</a></code> attribute initialized to true.</p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">Fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#eventdef-aicreatemonitor-downloadprogress\" id=\"ref-for-eventdef-aicreatemonitor-downloadprogress\">downloadprogress</a></code> at <var>monitor</var>, using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#progressevent\" id=\"ref-for-progressevent\">ProgressEvent</a></code>, with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#dom-progressevent-loaded\" id=\"ref-for-dom-progressevent-loaded\">loaded</a></code> attribute initialized to <var>loaded</var>, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#dom-progressevent-total\" id=\"ref-for-dom-progressevent-total\">total</a></code> attribute initialized to 1, and the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#dom-progressevent-lengthcomputable\" id=\"ref-for-dom-progressevent-lengthcomputable\">lengthComputable</a></code> attribute initialized to true.</p>\n            <p class=\"advisement\">This assumes <a href=\"https://github.com/whatwg/xhr/pull/394\">whatwg/xhr#394</a> is merged so that passing non-integer values for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#dom-progressevent-loaded\" id=\"ref-for-dom-progressevent-loaded①\">loaded</a></code> works as expected.</p>"
                     }
                   ]
                 }
@@ -85,7 +85,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> created in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm③\">relevant realm</a>.</p>"
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> created in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm③\">relevant realm</a>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">In parallel</a>:",
@@ -141,16 +141,10 @@
                           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#initialize-the-summarization-model\" id=\"ref-for-initialize-the-summarization-model\">initializing the summarization model</a> given <var>promise</var> and <var>options</var> returns false, then abort these steps.</p>"
                         },
                         {
-                          "html": "<p>Let <var>totalBytes</var> be the total size of the previously-downloaded summarization capabilities, in bytes.</p>"
+                          "html": "<p>Perform <var>fireProgressEvent</var> given 0.</p>"
                         },
                         {
-                          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>totalBytes</var> is greater than 0.</p>"
-                        },
-                        {
-                          "html": "<p>Perform <var>fireProgressEvent</var> given 0 and <var>totalBytes</var>.</p>"
-                        },
-                        {
-                          "html": "<p>Perform <var>fireProgressEvent</var> given <var>totalBytes</var> and <var>totalBytes</var>.</p>"
+                          "html": "<p>Perform <var>fireProgressEvent</var> given 1.</p>"
                         },
                         {
                           "html": "<p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#finalize-summarizer-creation\" id=\"ref-for-finalize-summarizer-creation\">Finalize summarizer creation</a> given <var>promise</var> and <var>options</var>.</p>"
@@ -173,10 +167,10 @@
                               "html": "<p>Wait for the total number of bytes to be downloaded to become determined, and let that number be <var>totalBytes</var>.</p>"
                             },
                             {
-                              "html": "<p>Let <var>lastProgressTime</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock\">monotonic clock</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time\">unsafe current time</a>.</p>"
+                              "html": "<p>Let <var>lastProgressTime</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock\">monotonic clock</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time\">unsafe current time</a>.</p>"
                             },
                             {
-                              "html": "<p>Perform <var>fireProgressEvent</var> given 0 and <var>totalBytes</var>.</p>"
+                              "html": "<p>Perform <var>fireProgressEvent</var> given 0.</p>"
                             },
                             {
                               "html": "While true:",
@@ -187,23 +181,29 @@
                                   "rationale": "if",
                                   "steps": [
                                     {
-                                      "html": "If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock①\">monotonic clock</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time①\">unsafe current time</a> minus <var>lastProgressTime</var> is greater than 50 ms, then:",
+                                      "html": "If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock①\">monotonic clock</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time①\">unsafe current time</a> minus <var>lastProgressTime</var> is greater than 50 ms, then:",
                                       "rationale": "let",
                                       "steps": [
                                         {
                                           "html": "<p>Let <var>bytesSoFar</var> be the number of bytes downloaded so far.</p>"
                                         },
                                         {
-                                          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>bytesSoFar</var> is greater than 0 and less than or equal to <var>totalBytes</var>.</p>"
+                                          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>bytesSoFar</var> is greater than 0 and less than or equal to <var>totalBytes</var>.</p>"
                                         },
                                         {
-                                          "html": "<p>Perform <var>fireProgressEvent</var> given <var>bytesSoFar</var> and <var>totalBytes</var>.</p>"
+                                          "html": "<p>Let <var>rawProgressFraction</var> be <var>bytesSoFar</var> divided by <var>totalBytes</var>.</p>"
+                                        },
+                                        {
+                                          "html": "<p>Let <var>progressFraction</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#eqn-floor\" id=\"ref-for-eqn-floor\">floor</a>(<var>rawProgressFraction</var> × 65,536) ÷ 65,536.</p>"
+                                        },
+                                        {
+                                          "html": "<p>Perform <var>fireProgressEvent</var> given <var>progressFraction</var>.</p>"
                                         },
                                         {
                                           "html": "<p>If <var>bytesSoFar</var> equals <var>totalBytes</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">break</a>.</p>"
                                         },
                                         {
-                                          "html": "<p>Set <var>lastProgressTime</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock②\">monotonic clock</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time②\">unsafe current time</a>.</p>"
+                                          "html": "<p>Set <var>lastProgressTime</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock②\">monotonic clock</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time②\">unsafe current time</a>.</p>"
                                         }
                                       ]
                                     }
@@ -214,7 +214,7 @@
                                   "rationale": "queue",
                                   "steps": [
                                     {
-                                      "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source①\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>.</p>"
+                                      "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source①\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>.</p>"
                                     },
                                     {
                                       "html": "<p>Abort these steps.</p>"
@@ -230,11 +230,11 @@
                           "rationale": "queue",
                           "steps": [
                             {
-                              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task②\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source②\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a> to perform the following steps:",
+                              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task②\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source②\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a> to perform the following steps:",
                               "rationale": "assert",
                               "steps": [
                                 {
-                                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizercreateoptions-signal\" id=\"ref-for-dom-aisummarizercreateoptions-signal④\">signal</a></code>\"]'s is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①\">aborted</a>.</p>"
+                                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizercreateoptions-signal\" id=\"ref-for-dom-aisummarizercreateoptions-signal④\">signal</a></code>\"]'s is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①\">aborted</a>.</p>"
                                 },
                                 {
                                   "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">Reject</a> <var>promise</var> with <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizercreateoptions-signal\" id=\"ref-for-dom-aisummarizercreateoptions-signal⑤\">signal</a></code>\"]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①\">abort reason</a>.</p>"
@@ -272,10 +272,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>.</p>"
         },
         {
-          "html": "<p>Perform any necessary initialization operations for the AI model backing the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent\">user agent</a>'s summarization capabilities.</p>\n      <p>This could include loading the model into memory, loading <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizercreateoptions-sharedcontext\" id=\"ref-for-dom-aisummarizercreateoptions-sharedcontext\">sharedContext</a></code>\"] into the model’s context window, or loading any fine-tunings necessary to support the other options expressed by <var>options</var>.</p>"
+          "html": "<p>Perform any necessary initialization operations for the AI model backing the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent\">user agent</a>’s summarization capabilities.</p>\n      <p>This could include loading the model into memory, loading <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizercreateoptions-sharedcontext\" id=\"ref-for-dom-aisummarizercreateoptions-sharedcontext\">sharedContext</a></code>\"] into the model’s context window, or loading any fine-tunings necessary to support the other options expressed by <var>options</var>.</p>"
         },
         {
           "html": "If initialization failed for any reason, then:",
@@ -301,7 +301,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task④\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source④\">AI task source</a> given <var>promise</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a> to perform the following steps:",
@@ -395,19 +395,19 @@
       ]
     },
     {
-      "name": "AISummarizerFactory/available(options)",
-      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizerfactory-available",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"AISummarizerFactory\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"available(options)|available()\" id=\"dom-aisummarizerfactory-available\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>available(<var>options</var>)</code></dfn> method steps are:",
+      "name": "AISummarizerFactory/availability(options)",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizerfactory-availability",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"AISummarizerFactory\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"availability(options)|availability()\" id=\"dom-aisummarizerfactory-availability\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>availability(<var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active①\">fully active</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with④\">a promise rejected with</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active①\">fully active</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with④\">a promise rejected with</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#validate-and-canonicalize-language-tags\" id=\"ref-for-validate-and-canonicalize-language-tags①\">Validate and canonicalize language tags</a> given <var>options</var>.</p>"
         },
         {
-          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a> created in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑤\">relevant realm</a>.</p>"
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a> created in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑤\">relevant realm</a>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑤\">In parallel</a>:",
@@ -433,7 +433,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑥\">in parallel</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑥\">in parallel</a>.</p>"
         },
         {
           "html": "<p>Let <var>availability</var> be the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#summarizer-non-language-options-availability\" id=\"ref-for-summarizer-non-language-options-availability\">summarizer non-language options availability</a> given <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-type\" id=\"ref-for-dom-aisummarizercreatecoreoptions-type①\">type</a></code>\"], <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-format\" id=\"ref-for-dom-aisummarizercreatecoreoptions-format①\">format</a></code>\"], and <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-length\" id=\"ref-for-dom-aisummarizercreatecoreoptions-length①\">length</a></code>\"].</p>"
@@ -568,7 +568,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: <var>availability</var> is either \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aicapabilityavailability-readily\" id=\"ref-for-dom-aicapabilityavailability-readily②\">readily</a></code>\" or \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aicapabilityavailability-after-download\" id=\"ref-for-dom-aicapabilityavailability-after-download⑥\">after-download</a></code>\".</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: <var>availability</var> is either \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aicapabilityavailability-readily\" id=\"ref-for-dom-aicapabilityavailability-readily②\">readily</a></code>\" or \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aicapabilityavailability-after-download\" id=\"ref-for-dom-aicapabilityavailability-after-download⑥\">after-download</a></code>\".</p>"
         },
         {
           "html": "<p>Return <var>availability</var>.</p>"
@@ -582,7 +582,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑦\">in parallel</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑦\">in parallel</a>.</p>"
         },
         {
           "html": "<p>If there is some error attempting to determine whether the user agent supports summarizing text, which the user agent believes to be transient (such that re-querying the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#summarizer-non-language-options-availability\" id=\"ref-for-summarizer-non-language-options-availability①\">summarizer non-language options availability</a> could stop producing such an error), then return null.</p>"
@@ -605,7 +605,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑨\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑧\">in parallel</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑧\">in parallel</a>.</p>"
         },
         {
           "html": "<p>If there is some error attempting to determine whether the user agent supports summarizing text, which the user agent believes to be transient (such that re-querying the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#summarizer-language-availabilities\" id=\"ref-for-summarizer-language-availabilities①\">summarizer language availabilities</a> could stop producing such an error), then return null.</p>"
@@ -647,7 +647,7 @@
           "rationale": "assert",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⓪\">Assert</a>: <var>readilyAvailableLanguages</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain③\">contain</a> <var>languageTag</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑨\">Assert</a>: <var>readilyAvailableLanguages</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain③\">contain</a> <var>languageTag</var>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append③\">Append</a> <var>languageTag</var> to <var>afterDownloadAvailableLanguages</var>.</p>"
@@ -681,10 +681,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑦\">relevant global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window②\">Window</a></code> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window②\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active②\">fully active</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑤\">a promise rejected with</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑦\">relevant global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window②\">Window</a></code> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window②\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active②\">fully active</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑤\">a promise rejected with</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed\">destroyed</a> is true, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑥\">a promise rejected with</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason①\">destruction reason</a>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed\">destroyed</a> is true, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑥\">a promise rejected with</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason①\">destruction reason</a>.</p>"
         },
         {
           "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal\">signal</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⓪\">exists</a> and is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted④\">aborted</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">a promise rejected with</a> <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal①\">signal</a></code>\"]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason④\">abort reason</a>.</p>"
@@ -702,7 +702,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a> created in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑥\">relevant realm</a>.</p>"
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a> created in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑥\">relevant realm</a>.</p>"
         },
         {
           "html": "<p>Let <var>context</var> be <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-context\" id=\"ref-for-dom-aisummarizersummarizeoptions-context\">context</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">exists</a>; otherwise null.</p>"
@@ -719,7 +719,7 @@
               "rationale": "queue",
               "steps": [
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑤\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source⑤\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑧\">relevant global object</a> to perform the following steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑤\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source⑤\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑧\">relevant global object</a> to perform the following steps:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -735,11 +735,11 @@
                       ]
                     },
                     {
-                      "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed①\">destroyed</a> is true, then:",
+                      "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed①\">destroyed</a> is true, then:",
                       "rationale": "reject",
                       "steps": [
                         {
-                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑧\">Reject</a> <var>promise</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason②\">destruction reason</a>.</p>"
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑧\">Reject</a> <var>promise</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason②\">destruction reason</a>.</p>"
                         },
                         {
                           "html": "<p>Abort these steps.</p>"
@@ -758,7 +758,7 @@
               "rationale": "queue",
               "steps": [
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑥\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source⑥\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②④\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑨\">relevant global object</a> to perform the following steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑥\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source⑥\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑨\">relevant global object</a> to perform the following steps:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -774,11 +774,11 @@
                       ]
                     },
                     {
-                      "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed②\">destroyed</a> is true, then:",
+                      "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed②\">destroyed</a> is true, then:",
                       "rationale": "reject",
                       "steps": [
                         {
-                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⓪\">Reject</a> <var>promise</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason③\">destruction reason</a>.</p>"
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⓪\">Reject</a> <var>promise</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason③\">destruction reason</a>.</p>"
                         },
                         {
                           "html": "<p>Abort these steps.</p>"
@@ -797,7 +797,7 @@
               "rationale": "queue",
               "steps": [
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑦\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source⑦\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⓪\">relevant global object</a> to perform the following steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑦\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source⑦\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⓪\">relevant global object</a> to perform the following steps:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -832,7 +832,7 @@
               ]
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#summarize\" id=\"ref-for-summarize\">Summarize</a> <var>input</var> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-shared-context\" id=\"ref-for-aisummarizer-shared-context②\">shared context</a>, <var>context</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-summary-type\" id=\"ref-for-aisummarizer-summary-type②\">summary type</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-summary-format\" id=\"ref-for-aisummarizer-summary-format②\">summary format</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-summary-length\" id=\"ref-for-aisummarizer-summary-length②\">summary length</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-output-language\" id=\"ref-for-aisummarizer-output-language②\">output language</a>, <var>chunkProduced</var>, <var>done</var>, <var>error</var>, and <var>stopProducing</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#summarize\" id=\"ref-for-summarize\">Summarize</a> <var>input</var> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-shared-context\" id=\"ref-for-aisummarizer-shared-context②\">shared context</a>, <var>context</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-summary-type\" id=\"ref-for-aisummarizer-summary-type②\">summary type</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-summary-format\" id=\"ref-for-aisummarizer-summary-format②\">summary format</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-summary-length\" id=\"ref-for-aisummarizer-summary-length②\">summary length</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-output-language\" id=\"ref-for-aisummarizer-output-language②\">output language</a>, <var>chunkProduced</var>, <var>done</var>, <var>error</var>, and <var>stopProducing</var>.</p>"
             }
           ]
         },
@@ -848,10 +848,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①①\">relevant global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window③\">Window</a></code> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window③\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active③\">fully active</a>, then throw an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨\">DOMException</a></code>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①①\">relevant global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window③\">Window</a></code> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window③\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active③\">fully active</a>, then throw an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed③\">destroyed</a> is true, then throw <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason④\">destruction reason</a>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed③\">destroyed</a> is true, then throw <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason④\">destruction reason</a>.</p>"
         },
         {
           "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal⑦\">signal</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">exists</a> and is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted⑤\">aborted</a>, then throw <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal\" id=\"ref-for-dom-aisummarizersummarizeoptions-signal⑧\">signal</a></code>\"]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason⑧\">abort reason</a>.</p>"
@@ -869,7 +869,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>stream</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new③\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream①\">ReadableStream</a></code> created in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑦\">relevant realm</a>.</p>"
+          "html": "<p>Let <var>stream</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new③\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream①\">ReadableStream</a></code> created in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑦\">relevant realm</a>.</p>"
         },
         {
           "html": "<p>Let <var>canceledDuringSummarization</var> be false.</p>"
@@ -895,7 +895,7 @@
               "rationale": "queue",
               "steps": [
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑧\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source⑧\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①②\">relevant global object</a> to perform the following steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑧\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source⑧\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①②\">relevant global object</a> to perform the following steps:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -911,11 +911,11 @@
                       ]
                     },
                     {
-                      "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed④\">destroyed</a> is true, then:",
+                      "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed④\">destroyed</a> is true, then:",
                       "rationale": "error",
                       "steps": [
                         {
-                          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error①\">Error</a> <var>stream</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason⑤\">destruction reason</a>.</p>"
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error①\">Error</a> <var>stream</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason⑤\">destruction reason</a>.</p>"
                         },
                         {
                           "html": "<p>Abort these steps.</p>"
@@ -934,7 +934,7 @@
               "rationale": "queue",
               "steps": [
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑨\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source⑨\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①③\">relevant global object</a> to perform the following steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑨\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source⑨\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①③\">relevant global object</a> to perform the following steps:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -950,11 +950,11 @@
                       ]
                     },
                     {
-                      "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed⑤\">destroyed</a> is true, then:",
+                      "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed⑤\">destroyed</a> is true, then:",
                       "rationale": "error",
                       "steps": [
                         {
-                          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error③\">Error</a> <var>stream</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason⑥\">destruction reason</a>.</p>"
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error③\">Error</a> <var>stream</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason⑥\">destruction reason</a>.</p>"
                         },
                         {
                           "html": "<p>Abort these steps.</p>"
@@ -973,7 +973,7 @@
               "rationale": "queue",
               "steps": [
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①⓪\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source①⓪\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①④\">relevant global object</a> to perform the following steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①⓪\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source①⓪\">AI task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①④\">relevant global object</a> to perform the following steps:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -989,11 +989,11 @@
                       ]
                     },
                     {
-                      "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④④\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed⑥\">destroyed</a> is true, then:",
+                      "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed⑥\">destroyed</a> is true, then:",
                       "rationale": "error",
                       "steps": [
                         {
-                          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error⑤\">Error</a> <var>stream</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason⑦\">destruction reason</a>.</p>"
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error⑤\">Error</a> <var>stream</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destruction-reason\" id=\"ref-for-aisummarizer-destruction-reason⑦\">destruction reason</a>.</p>"
                         },
                         {
                           "html": "<p>Abort these steps.</p>"
@@ -1015,7 +1015,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If any of <var>abortedDuringSummarization</var>, <var>canceledDuringSummarization</var>, or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed⑦\">destroyed</a> are true, then return true.</p>"
+                  "html": "<p>If any of <var>abortedDuringSummarization</var>, <var>canceledDuringSummarization</var>, or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-destroyed\" id=\"ref-for-aisummarizer-destroyed⑦\">destroyed</a> are true, then return true.</p>"
                 },
                 {
                   "html": "<p>Return false.</p>"
@@ -1023,7 +1023,7 @@
               ]
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#summarize\" id=\"ref-for-summarize①\">Summarize</a> <var>input</var> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-shared-context\" id=\"ref-for-aisummarizer-shared-context③\">shared context</a>, <var>context</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-summary-type\" id=\"ref-for-aisummarizer-summary-type③\">summary type</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-summary-format\" id=\"ref-for-aisummarizer-summary-format③\">summary format</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-summary-length\" id=\"ref-for-aisummarizer-summary-length③\">summary length</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-output-language\" id=\"ref-for-aisummarizer-output-language③\">output language</a>, <var>chunkProduced</var>, <var>done</var>, <var>error</var>, and <var>stopProducing</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#summarize\" id=\"ref-for-summarize①\">Summarize</a> <var>input</var> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-shared-context\" id=\"ref-for-aisummarizer-shared-context③\">shared context</a>, <var>context</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-summary-type\" id=\"ref-for-aisummarizer-summary-type③\">summary type</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-summary-format\" id=\"ref-for-aisummarizer-summary-format③\">summary format</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-summary-length\" id=\"ref-for-aisummarizer-summary-length③\">summary length</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#aisummarizer-output-language\" id=\"ref-for-aisummarizer-output-language③\">output language</a>, <var>chunkProduced</var>, <var>done</var>, <var>error</var>, and <var>stopProducing</var>.</p>"
             }
           ]
         },
@@ -1039,10 +1039,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①①\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑤\">in parallel</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⓪\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑤\">in parallel</a>.</p>"
         },
         {
-          "html": "<p>In an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> manner, subject to the following guidelines, begin the processs of summarizing <var>input</var> into a string.</p>\n      <p>If they are non-null, <var>sharedContext</var> and <var>context</var> should be used to aid in the summarization by providing context on how the web developer wishes the input to be summarized.</p>\n      <p>The summarization should conform to the guidance given by <var>type</var>, <var>format</var>, and <var>length</var>, in the definitions of each of their enumeration values.</p>\n      <p>If <var>outputLanguage</var> is non-null, the summarization should be in that language. Otherwise, it should be in the language of <var>input</var> (which might not match that of <var>context</var> or <var>sharedContext</var>). If <var>input</var> contains multiple languages, or the language of <var>input</var> cannot be detected, then either the output language is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined②\">implementation-defined</a>, or the implementation may treat this as an error, per the guidance in <a href=\"https://webmachinelearning.github.io/writing-assistance-apis/#summarizer-errors\">§ 3.5 Errors</a>.</p>"
+          "html": "<p>In an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> manner, subject to the following guidelines, begin the processs of summarizing <var>input</var> into a string.</p>\n      <p>If they are non-null, <var>sharedContext</var> and <var>context</var> should be used to aid in the summarization by providing context on how the web developer wishes the input to be summarized.</p>\n      <p>If <var>input</var> is the empty string, or otherwise consists of no summarizable content (e.g., only contains whitespace, or control characters), then the resulting summary should be the empty string. In such cases, <var>sharedContext</var>, <var>context</var>, <var>type</var>, <var>format</var>, <var>length</var>, and <var>outputLanguage</var> should be ignored.</p>\n      <p>The summarization should conform to the guidance given by <var>type</var>, <var>format</var>, and <var>length</var>, in the definitions of each of their enumeration values.</p>\n      <p>If <var>outputLanguage</var> is non-null, the summarization should be in that language. Otherwise, it should be in the language of <var>input</var> (which might not match that of <var>context</var> or <var>sharedContext</var>). If <var>input</var> contains multiple languages, or the language of <var>input</var> cannot be detected, then either the output language is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined②\">implementation-defined</a>, or the implementation may treat this as an error, per the guidance in <a href=\"https://webmachinelearning.github.io/writing-assistance-apis/#summarizer-errors\">§ 3.5 Errors</a>.</p>"
         },
         {
           "html": "While true:",

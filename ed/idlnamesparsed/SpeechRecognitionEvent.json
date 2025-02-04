@@ -4,7 +4,7 @@
   "defined": {
     "spec": {
       "title": "Web Speech API",
-      "url": "https://wicg.github.io/speech-api/"
+      "url": "https://webaudio.github.io/web-speech-api/"
     },
     "fragment": "// A full response, which could be interim or final, part of a continuous response or not\n[Exposed=Window]\ninterface SpeechRecognitionEvent : Event {\n    constructor(DOMString type, SpeechRecognitionEventInit eventInitDict);\n    readonly attribute unsigned long resultIndex;\n    readonly attribute SpeechRecognitionResultList results;\n};",
     "href": "https://webaudio.github.io/web-speech-api/#speechrecognitionevent"

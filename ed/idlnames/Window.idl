@@ -94,6 +94,11 @@ partial interface Window {
   [Replaceable, SameObject] readonly attribute External external;
 };
 
+// Source: Web Speech API (https://webaudio.github.io/web-speech-api/)
+partial interface Window {
+    [SameObject] readonly attribute SpeechSynthesis speechSynthesis;
+};
+
 // Source: Iframe credentialless (https://wicg.github.io/anonymous-iframe/)
 partial interface Window {
   readonly attribute boolean credentialless;
@@ -152,11 +157,6 @@ partial interface Window {
 // Source: Shared Storage API (https://wicg.github.io/shared-storage/)
 partial interface Window {
   [SecureContext] readonly attribute SharedStorage? sharedStorage;
-};
-
-// Source: Web Speech API (https://wicg.github.io/speech-api/)
-partial interface Window {
-    [SameObject] readonly attribute SpeechSynthesis speechSynthesis;
 };
 
 // Source: Web App Launch Handler API (https://wicg.github.io/web-app-launch/)

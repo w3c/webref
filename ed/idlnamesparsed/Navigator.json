@@ -197,7 +197,7 @@
         "title": "Protected Audience (formerly FLEDGE)",
         "url": "https://wicg.github.io/turtledove/"
       },
-      "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<AdAuctionData> getInterestGroupAdAuctionData(AdAuctionDataConfig config);\n};"
+      "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<AdAuctionData> getInterestGroupAdAuctionData(optional AdAuctionDataConfig config = {});\n};"
     },
     {
       "spec": {
