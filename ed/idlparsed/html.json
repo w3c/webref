@@ -28025,7 +28025,7 @@
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigateevent"
       },
       "NavigateEventInit": {
-        "fragment": "dictionary NavigateEventInit : EventInit {\n  NavigationType navigationType = \"push\";\n  required NavigationDestination destination;\n  boolean canIntercept = false;\n  boolean userInitiated = false;\n  boolean hashChange = false;\n  required AbortSignal signal;\n  FormData? formData = null;\n  DOMString? downloadRequest = null;\n  any info;\n  boolean hasUAVisualTransition = false;\n};",
+        "fragment": "dictionary NavigateEventInit : EventInit {\n  NavigationType navigationType = \"push\";\n  required NavigationDestination destination;\n  boolean canIntercept = false;\n  boolean userInitiated = false;\n  boolean hashChange = false;\n  required AbortSignal signal;\n  FormData? formData = null;\n  DOMString? downloadRequest = null;\n  any info;\n  boolean hasUAVisualTransition = false;\n  Element? sourceElement = null;\n};",
         "type": "dictionary",
         "name": "NavigateEventInit",
         "inheritance": "EventInit",
@@ -28208,6 +28208,24 @@
             },
             "required": false,
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateeventinit-hasuavisualtransition"
+          },
+          {
+            "type": "field",
+            "name": "sourceElement",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Element"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateeventinit-sourceelement"
           }
         ],
         "extAttrs": [],
@@ -44366,7 +44384,8 @@
         "NavigationType",
         "NavigationDestination",
         "AbortSignal",
-        "FormData"
+        "FormData",
+        "Element"
       ],
       "NavigationInterceptOptions": [
         "NavigationInterceptHandler",

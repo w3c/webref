@@ -338,7 +338,7 @@
           "html": "<p>If <var>has pending ready promise</var> is false,\nlet <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#current-ready-promise\" id=\"ref-for-current-ready-promise⑤\">current ready promise</a> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant Realm</a> of <var>animation</var>.</p>"
         },
         {
-          "html": "Schedule a task to run as soon as <var>animation</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#ready\" id=\"ref-for-ready③\">ready</a>.\nThe task shall perform the following steps:",
+          "html": "So long as the above task is scheduled but has yet to run, <var>animation</var> is described as having a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pending-play-task\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pending play task</dfn>.\nWhile the task is running, however, <var>animation</var> does <em>not</em> have a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#pending-play-task\" id=\"ref-for-pending-play-task⑤\">pending play task</a>.",
           "rationale": "assert",
           "steps": [
             {
@@ -398,8 +398,17 @@
                   ]
                 }
               ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑤\">Resolve</a> <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#current-ready-promise\" id=\"ref-for-current-ready-promise⑥\">current ready promise</a> with <var>animation</var>.</p>"
+            },
+            {
+              "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state\" id=\"ref-for-update-an-animations-finished-state⑤\">update an animation’s finished state</a> for <var>animation</var> with the <var>did seek</var> flag set to false,\nand the <var>synchronously notify</var> flag set to false.</p>"
             }
           ]
+        },
+        {
+          "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state\" id=\"ref-for-update-an-animations-finished-state⑥\">update an animation’s finished state</a> for <var>animation</var> with the <var>did seek</var> flag set to false,\nand the <var>synchronously notify</var> flag set to false.</p>"
         }
       ]
     },
@@ -833,7 +842,7 @@
           "html": "<p>Let <var>original pending playback rate</var> be <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#pending-playback-rate\" id=\"ref-for-pending-playback-rate①④\">pending playback rate</a>.</p>"
         },
         {
-          "html": "<p>Let <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#pending-playback-rate\" id=\"ref-for-pending-playback-rate①⑤\">pending playback rate</a> be\nthe additive inverse of its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#effective-playback-rate\" id=\"ref-for-effective-playback-rate⑥\">effective playback rate</a> (i.e. <code>-effective playback rate</code>).</p>"
+          "html": "<p>Let <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#pending-playback-rate\" id=\"ref-for-pending-playback-rate①⑤\">pending playback rate</a> be\nthe additive inverse of its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#effective-playback-rate\" id=\"ref-for-effective-playback-rate⑥\">effective playback rate</a> (i.e. <code>-<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#effective-playback-rate\" id=\"ref-for-effective-playback-rate⑦\">effective playback rate</a></code>).</p>"
         },
         {
           "html": "<p>Run the steps to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#play-an-animation\" id=\"ref-for-play-an-animation②\">play an animation</a> for <var>animation</var> with the <var>auto-rewind</var> flag set to true.</p>\n      <p>If the steps to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#play-an-animation\" id=\"ref-for-play-an-animation③\">play an animation</a> throw an exception,\nset <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#pending-playback-rate\" id=\"ref-for-pending-playback-rate①⑥\">pending playback rate</a> to <var>original pending playback rate</var> and propagate the exception.</p>"
@@ -890,9 +899,9 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "name": "active time",
+      "href": "https://drafts.csswg.org/web-animations-1/#active-time",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"active-time\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">active time</dfn> is based on the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#local-time\" id=\"ref-for-local-time②①\">local time</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#start-delay\" id=\"ref-for-start-delay①②\">start delay</a>.\n  However, it is only defined\n  when the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect⑥④\">animation effect</a> should produce an output\n  and hence depends on its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode\" id=\"ref-for-fill-mode⑧\">fill mode</a> and phase as follows:",
       "rationale": ".switch",
       "steps": [
         {
@@ -900,7 +909,7 @@
           "steps": [
             {
               "case": "If the animation effect is in the before phase,",
-              "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+              "html": "The result depends on the first matching condition from the following:",
               "rationale": ".switch",
               "steps": [
                 {
@@ -924,7 +933,7 @@
             },
             {
               "case": "If the animation effect is in the after phase,",
-              "html": "<p>The result depends on the first matching condition from the following:</p>\n     <div class=\"switch\">\n      <dl>\n       <dt data-md=\"\">If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode\" id=\"ref-for-fill-mode①⓪\">fill mode</a> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode-forwards\" id=\"ref-for-fill-mode-forwards②\">forwards</a> or <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode-backwards\" id=\"ref-for-fill-mode-backwards③\">backwards</a>,\n       </dt><dd data-md=\"\">\n        <p>Return the result of evaluating <code>max(min(<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#local-time\" id=\"ref-for-local-time②④\">local time</a> − <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#start-delay\" id=\"ref-for-start-delay①⑤\">start delay</a>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#active-duration\" id=\"ref-for-active-duration①⑤\">active duration</a>),\n            0)</code>.</p>\n       </dd><dt data-md=\"\">Otherwise,\n       </dt><dd data-md=\"\">\n        <p>Return an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved⑨③\">unresolved</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#time-value\" id=\"ref-for-time-value④⑤\">time value</a>.</p>\n      </dd></dl>\n     </div>"
+              "html": "<p>The result depends on the first matching condition from the following:</p>\n     <div class=\"switch\">\n      <dl>\n       <dt data-md=\"\">If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode\" id=\"ref-for-fill-mode①⓪\">fill mode</a> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode-forwards\" id=\"ref-for-fill-mode-forwards②\">forwards</a> or <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode-both\" id=\"ref-for-fill-mode-both②\">both</a>,\n       </dt><dd data-md=\"\">\n        <p>Return the result of evaluating <code>max(min(<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#local-time\" id=\"ref-for-local-time②④\">local time</a> − <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#start-delay\" id=\"ref-for-start-delay①⑤\">start delay</a>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#active-duration\" id=\"ref-for-active-duration①⑤\">active duration</a>),\n            0)</code>.</p>\n       </dd><dt data-md=\"\">Otherwise,\n       </dt><dd data-md=\"\">\n        <p>Return an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved⑨③\">unresolved</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#time-value\" id=\"ref-for-time-value④⑤\">time value</a>.</p>\n      </dd></dl>\n     </div>"
             },
             {
               "case": "Otherwise (the local time is unresolved),",
@@ -935,9 +944,9 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "name": "overall progress",
+      "href": "https://drafts.csswg.org/web-animations-1/#overall-progress",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"overall-progress\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">overall progress</dfn> describes\n  the number of iterations that have completed (including partial iterations)\n  and is defined as follows:",
       "rationale": "if",
       "steps": [
         {
@@ -952,9 +961,9 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "name": "simple iteration progress",
+      "href": "https://drafts.csswg.org/web-animations-1/#simple-iteration-progress",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"simple-iteration-progress\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">simple iteration progress</dfn> is a fraction of the progress through the current iteration\n  that ignores transformations to the time introduced by\n  the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#playback-direction\" id=\"ref-for-playback-direction②\">playback direction</a> or <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#easing-function\" id=\"ref-for-easing-function④\">easing functions</a> applied to the effect,\n  and is calculated as follows:",
       "rationale": "if",
       "steps": [
         {
@@ -972,9 +981,9 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "name": "current iteration index",
+      "href": "https://drafts.csswg.org/web-animations-1/#current-iteration-index",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"current iteration index | iteration index\" data-noexport=\"\" id=\"current-iteration-index\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">current iteration index</dfn> can be calculated\n  using the following steps:",
       "rationale": "if",
       "steps": [
         {
@@ -992,9 +1001,9 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "name": "directed progress",
+      "href": "https://drafts.csswg.org/web-animations-1/#directed-progress",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"directed-progress\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">directed progress</dfn> is calculated\n  from the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#simple-iteration-progress\" id=\"ref-for-simple-iteration-progress③\">simple iteration progress</a> using the following steps:",
       "rationale": "if",
       "steps": [
         {
@@ -1041,9 +1050,9 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "name": "transformed progress",
+      "href": "https://drafts.csswg.org/web-animations-1/#transformed-progress",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"transformed-progress\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">transformed progress</dfn> is calculated\n  from the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#directed-progress\" id=\"ref-for-directed-progress③\">directed progress</a> using the following steps:",
       "rationale": "if",
       "steps": [
         {
@@ -1105,9 +1114,7 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#computed-keyframes\" id=\"ref-for-computed-keyframes\">Computed keyframes</a> are produced using the following procedure.\n  Note that this procedure is only performed\n  on a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#keyframe-effect\" id=\"ref-for-keyframe-effect⑧\">keyframe effect</a> having an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#keyframe-effect-effect-target\" id=\"ref-for-keyframe-effect-effect-target⑥\">effect target</a> for which computed property values can be calculated.",
       "rationale": "let",
       "steps": [
         {
@@ -1149,9 +1156,7 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#effect-value\" id=\"ref-for-effect-value③\">effect value</a> of a single property referenced by a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#keyframe-effect\" id=\"ref-for-keyframe-effect①⓪\">keyframe effect</a> as one of its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#target-property\" id=\"ref-for-target-property④\">target properties</a>,\n  for a given <var>iteration progress</var>, <var>iteration index</var> and <var>underlying value</var> is calculated as follows.",
       "rationale": "if",
       "steps": [
         {
@@ -1261,9 +1266,9 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "name": "animation composite order",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-composite-order",
+      "html": "The relative <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-local-lt=\"composite order\" data-lt=\"animation composite order\" id=\"animation-composite-order\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">composite order</dfn> of any two <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#keyframe-effect\" id=\"ref-for-keyframe-effect②④\">keyframe effects</a> <var>A</var> and <var>B</var> within an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#effect-stack\" id=\"ref-for-effect-stack⑤\">effect stack</a> is established by comparing their properties as follows:",
       "rationale": "sort",
       "steps": [
         {
@@ -1284,9 +1289,7 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#composited-value\" id=\"ref-for-composited-value②\">composited value</a> calculated for a CSS <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#target-property\" id=\"ref-for-target-property①①\">target property</a> is applied using the following process:",
       "rationale": "establish",
       "steps": [
         {
@@ -1304,9 +1307,7 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "html": "perform the following steps:",
       "rationale": "set",
       "steps": [
         {
@@ -1330,9 +1331,9 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "name": "Animation/Animation(effect, timeline)",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-animation",
+      "html": "Creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation④\">Animation</a></code> object using the following procedure:",
       "rationale": "let",
       "steps": [
         {
@@ -1400,9 +1401,9 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "name": "EffectTiming/fill",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-fill",
+      "html": "When performing timing calculations\n  the special string value <code>auto</code> is expanded\n  to one of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode\" id=\"ref-for-fill-mode①③\">fill modes</a> recognized by the timing model\n  as follows:",
       "rationale": ".switch",
       "steps": [
         {
@@ -1414,16 +1415,16 @@
             },
             {
               "case": "Otherwise,",
-              "html": "<p>Use <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode-both\" id=\"ref-for-fill-mode-both③\">both</a> as the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode\" id=\"ref-for-fill-mode①⑤\">fill mode</a>.</p>"
+              "html": "<p>Use <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode-both\" id=\"ref-for-fill-mode-both④\">both</a> as the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode\" id=\"ref-for-fill-mode①⑤\">fill mode</a>.</p>"
             }
           ]
         }
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "name": "update the timing properties of an animation effect",
+      "href": "https://drafts.csswg.org/web-animations-1/#update-the-timing-properties-of-an-animation-effect",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-the-timing-properties-of-an-animation-effect\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the timing properties of an animation effect</dfn>, <var>effect</var>,\n  from an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-effecttiming\" id=\"ref-for-dictdef-effecttiming⑧\">EffectTiming</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-optionaleffecttiming\" id=\"ref-for-dictdef-optionaleffecttiming④\">OptionalEffectTiming</a></code> object, <var>input</var>,\n  perform the following steps:",
       "rationale": "if",
       "steps": [
         {
@@ -1444,13 +1445,13 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "name": "KeyframeEffect/KeyframeEffect(target, keyframes, options)",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-keyframeeffect",
+      "html": "Creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#keyframeeffect\" id=\"ref-for-keyframeeffect③\">KeyframeEffect</a></code> object using the following procedure:",
       "rationale": "create",
       "steps": [
         {
-          "html": "<p>Create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#keyframeeffect\" id=\"ref-for-keyframeeffect④\">KeyframeEffect</a></code> object, <var>effect</var>.</p>\n       <p></p>"
+          "html": "<p>Create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#keyframeeffect\" id=\"ref-for-keyframeeffect④\">KeyframeEffect</a></code> object, <var>effect</var>.</p>"
         },
         {
           "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#effect-target-target-element\" id=\"ref-for-effect-target-target-element④\">target element</a> of <var>effect</var> to <var>target</var>.</p>"
@@ -1489,9 +1490,9 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "name": "KeyframeEffect/KeyframeEffect(source)",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-keyframeeffect-source",
+      "html": "Creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#keyframeeffect\" id=\"ref-for-keyframeeffect⑥\">KeyframeEffect</a></code> object\n  with the same properties as <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-keyframeeffect-source-source\" id=\"ref-for-dom-keyframeeffect-keyframeeffect-source-source①\">source</a></code> using the following procedure:",
       "rationale": "create",
       "steps": [
         {
@@ -1503,9 +1504,9 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "name": "KeyframeEffect/pseudo-element parsing",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-pseudo-element-parsing",
+      "html": "On setting,\n  sets the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#effect-target-target-pseudo-selector\" id=\"ref-for-effect-target-target-pseudo-selector⑥\">target pseudo-selector</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①⓪⑨\">animation effect</a> to the result of <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"KeyframeEffect\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-keyframeeffect-pseudo-element-parsing\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>pseudo-element parsing</code></dfn> on the provided value,\n  defined as the following:",
       "rationale": "if",
       "steps": [
         {
@@ -1532,9 +1533,9 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "name": "KeyframeEffect/getKeyframes()",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-getkeyframes",
+      "html": "Since <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#keyframe\" id=\"ref-for-keyframe⑤⓪\">keyframes</a> are represented\n  by a partially open-ended dictionary type\n  that is not currently able to be expressed with WebIDL,\n  the procedure used to prepare the result of this method\n  is defined in prose below:",
       "rationale": "let",
       "steps": [
         {
@@ -1567,7 +1568,7 @@
                   "html": "<p>Let <var>value</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#DOMString-to-es\" id=\"ref-for-DOMString-to-es\">converting</a> <var>IDL value</var> to an ECMAScript String value.</p>"
                 },
                 {
-                  "html": "<p>Call the <a data-link-type=\"dfn\" href=\"http://www.ecma-international.org/ecma-262/6.0/#sec-ordinary-object-internal-methods-and-internal-slots-defineownproperty-p-desc\" id=\"ref-for-sec-ordinary-object-internal-methods-and-internal-slots-defineownproperty-p-desc\">[[DefineOwnProperty]]</a> internal method\n  on <var>output keyframe</var> with property name <var>property name</var>,\n  Property Descriptor {\n    [[Writable]]: <span class=\"esvalue\">true</span>,\n    [[Enumerable]]: <span class=\"esvalue\">true</span>,\n    [[Configurable]]: <span class=\"esvalue\">true</span>,\n    [[Value]]: <var>value</var> }\n  and Boolean flag <span class=\"esvalue\">false.</span></p>"
+                  "html": "<p>Call the <a data-link-type=\"dfn\" href=\"http://www.ecma-international.org/ecma-262/6.0/#sec-ordinary-object-internal-methods-and-internal-slots-defineownproperty-p-desc\" id=\"ref-for-sec-ordinary-object-internal-methods-and-internal-slots-defineownproperty-p-desc\">[[DefineOwnProperty]]</a> internal method\n  on <var>output keyframe</var> with property name <var>property name</var>,\n  Property Descriptor {\n    [[Writable]]: <span class=\"esvalue\">true</span>,\n    [[Enumerable]]: <span class=\"esvalue\">true</span>,\n    [[Configurable]]: <span class=\"esvalue\">true</span>,\n    [[Value]]: <var>value</var> }\n  and Boolean flag <span class=\"esvalue\">false</span>.</p>"
                 }
               ]
             },
@@ -1864,9 +1865,9 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "name": "Animatable/animate(keyframes, options)",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animatable-animate",
+      "html": "Performs the following steps:",
       "rationale": "let",
       "steps": [
         {
@@ -1893,9 +1894,9 @@
       ]
     },
     {
-      "name": "pause an animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "name": "Animatable/getAnimations(options)",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animatable-getanimations",
+      "html": "",
       "rationale": "let",
       "steps": [
         {

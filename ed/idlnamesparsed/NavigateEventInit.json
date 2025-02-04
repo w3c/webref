@@ -6,7 +6,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "dictionary NavigateEventInit : EventInit {\n  NavigationType navigationType = \"push\";\n  required NavigationDestination destination;\n  boolean canIntercept = false;\n  boolean userInitiated = false;\n  boolean hashChange = false;\n  required AbortSignal signal;\n  FormData? formData = null;\n  DOMString? downloadRequest = null;\n  any info;\n  boolean hasUAVisualTransition = false;\n};",
+    "fragment": "dictionary NavigateEventInit : EventInit {\n  NavigationType navigationType = \"push\";\n  required NavigationDestination destination;\n  boolean canIntercept = false;\n  boolean userInitiated = false;\n  boolean hashChange = false;\n  required AbortSignal signal;\n  FormData? formData = null;\n  DOMString? downloadRequest = null;\n  any info;\n  boolean hasUAVisualTransition = false;\n  Element? sourceElement = null;\n};",
     "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigateeventinit"
   },
   "extended": [],

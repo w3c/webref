@@ -1,0 +1,7 @@
+// Source: Web Animations Level 2 (https://www.w3.org/TR/web-animations-2/)
+[Exposed=Window]
+interface AnimationTrigger {
+  constructor(optional AnimationTriggerOptions options = {});
+  attribute AnimationTimeline timeline;
+  attribute AnimationTriggerType type;
+};

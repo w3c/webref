@@ -1,0 +1,40 @@
+{
+  "spec": {
+    "title": "CSS Borders and Box Decorations Module Level 4",
+    "url": "https://drafts.csswg.org/css-borders-4/"
+  },
+  "algorithms": [
+    {
+      "name": "superellipse-exponent-to-interpolation-value",
+      "html": "To interpolate a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value②\">&lt;number [0,∞]&gt;</a> <var>exponent</var> to an interpolation value between 0 and 1:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>exponent</var> is 0, return 0.</p>"
+        },
+        {
+          "html": "<p>If <var>exponent</var> is ∞, return 1.</p>"
+        },
+        {
+          "html": "<p>Return <code>1/(2^(1/<var>exponent</var>))</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "superellipse-exponent-to-interpolation-value",
+      "html": "To convert a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value③\">&lt;number [0,1]&gt;</a> <var>interpolationValue</var> back to a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-exponent\" id=\"ref-for-superellipse-exponent⑤\">superellipse exponent</a>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>interpolationValue</var> is 0, return 0.</p>"
+        },
+        {
+          "html": "<p>If <var>interpolationValue</var> is 1, return ∞.</p>"
+        },
+        {
+          "html": "<p>Return <code>ln(0.5)/ln(<var>interpolationValue</var>)</code>.</p>"
+        }
+      ]
+    }
+  ]
+}

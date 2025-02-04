@@ -8,4 +8,5 @@ dictionary KeyframeAnimationOptions : KeyframeEffectOptions {
 partial dictionary KeyframeAnimationOptions {
     (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeStart = "normal";
     (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeEnd = "normal";
+    AnimationTrigger? trigger;
 };

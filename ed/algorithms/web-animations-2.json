@@ -735,11 +735,11 @@
           "steps": [
             {
               "case": "If the animation effect is a group effect,",
-              "html": "<p>Follow the procedure in <a href=\"https://drafts.csswg.org/web-animations-2/#the-intrinsic-iteration-duration-of-a-group-effect\">§ 3.9.3 The intrinsic\n  iteration duration of a group effect</a></p>"
+              "html": "<p>Follow the procedure in <a href=\"https://drafts.csswg.org/web-animations-2/#the-intrinsic-iteration-duration-of-a-group-effect\">§ 3.10.3 The intrinsic\n  iteration duration of a group effect</a></p>"
             },
             {
               "case": "If the animation effect is a sequence effect,",
-              "html": "<p>Follow the procedure in <a href=\"https://drafts.csswg.org/web-animations-2/#the-intrinsic-iteration-duration-of-a-sequence-effect\">§ 3.9.4.2 The intrinsic\n  iteration duration of a sequence effect</a></p>"
+              "html": "<p>Follow the procedure in <a href=\"https://drafts.csswg.org/web-animations-2/#the-intrinsic-iteration-duration-of-a-sequence-effect\">§ 3.10.4.2 The intrinsic\n  iteration duration of a sequence effect</a></p>"
             },
             {
               "case": "If timeline duration is unresolved or iteration count is zero,",
@@ -869,7 +869,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#intrinsic-iteration-duration\" id=\"ref-for-intrinsic-iteration-duration④\">intrinsic iteration duration</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#group-effect\" id=\"ref-for-group-effect②④\">group\neffect</a> is based on the time when the last <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#child-effect\" id=\"ref-for-child-effect④\">child effect</a> completes\nits <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#active-interval\" id=\"ref-for-active-interval①②\">active interval</a> and depends on the\nnumber of <span id=\"ref-for-child-effect⑤\">child effects</span> as follows.",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#intrinsic-iteration-duration\" id=\"ref-for-intrinsic-iteration-duration④\">intrinsic iteration duration</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#group-effect\" id=\"ref-for-group-effect②④\">group\neffect</a> is based on the time when the last <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#child-effect\" id=\"ref-for-child-effect④\">child effect</a> completes\nits <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-trigger-active-interval\" id=\"ref-for-animation-trigger-active-interval①②\">active interval</a> and depends on the\nnumber of <span id=\"ref-for-child-effect⑤\">child effects</span> as follows.",
       "rationale": ".switch",
       "steps": [
         {
@@ -951,33 +951,199 @@
       ]
     },
     {
+      "name": "animation trigger type/alternate",
+      "href": "https://drafts.csswg.org/web-animations-2/#valdef-animation-trigger-type-alternate",
+      "html": "",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "if the did trigger flag is false,",
+              "html": "<p>The <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/web-animations-2/#valdef-animation-trigger-state-primary\" id=\"ref-for-valdef-animation-trigger-state-primary③\">primary</a> behavior is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#play-an-animation\" id=\"ref-for-play-an-animation③\">triggering</a> the associated animation.</p>"
+            },
+            {
+              "case": "Otherwise,",
+              "html": "<p>The <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/web-animations-2/#valdef-animation-trigger-state-primary\" id=\"ref-for-valdef-animation-trigger-state-primary④\">primary</a> behavior is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#reverse-an-animation\" id=\"ref-for-reverse-an-animation\">reversing</a> the associated animation.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "Depending on its most recent <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-trigger-state\" id=\"ref-for-animation-trigger-state③\">state</a> <var>state</var>, the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-trigger-active-interval\" id=\"ref-for-animation-trigger-active-interval①⑧\">active interval</a> is defined as follows:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "If state is animation trigger state/primary,",
+              "html": "<p>Then <var>interval</var> is set to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#exit-range\" id=\"ref-for-exit-range①\">exit range</a>.</p>"
+            },
+            {
+              "case": "Otherwise,",
+              "html": "<p><var>interval</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#default-range\" id=\"ref-for-default-range①\">default range</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Setting a Trigger of an Animation",
+      "href": "https://drafts.csswg.org/web-animations-2/#setting-a-trigger-of-an-animation",
+      "html": "The procedure of <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"setting-a-trigger-of-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setting a trigger of an animation</dfn> <var>animation</var>,\n    to <var>new trigger</var>, is as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>old trigger</var> be the current <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-trigger\" id=\"ref-for-animation-trigger⑥\">animation trigger</a> of <var>animation</var>, if any.</p>"
+        },
+        {
+          "html": "<p>If <var>new trigger</var> is the same object as <var>old trigger</var>, abort this procedure.</p>"
+        },
+        {
+          "html": "<p>Let the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-trigger\" id=\"ref-for-animation-trigger⑦\">trigger</a> of <var>animation</var> be <var>new trigger</var>.</p>"
+        },
+        {
+          "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#updating-animation-trigger-state\" id=\"ref-for-updating-animation-trigger-state①\">updating animation trigger state</a> for <var>trigger</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "setting timeline of animation trigger",
+      "href": "https://drafts.csswg.org/web-animations-2/#setting-timeline-of-animation-trigger",
+      "html": "The procedure of <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"setting-timeline-of-animation-trigger\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setting timeline of animation trigger</dfn> <var>trigger</var>,\n    to <var>new timeline</var> which may be <code>null</code>, is as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>old timeline</var> be the current <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline①⑦\">timeline</a> of <var>trigger</var>, if any.</p>"
+        },
+        {
+          "html": "<p>If <var>new timeline</var> is the same object as <var>old timeline</var>, abort this procedure.</p>"
+        },
+        {
+          "html": "<p>Let the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline①⑧\">timeline</a> of <var>trigger</var> be <var>new timeline</var>.</p>"
+        },
+        {
+          "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#updating-animation-trigger-state\" id=\"ref-for-updating-animation-trigger-state②\">updating animation trigger state</a> for <var>trigger</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "updating animation trigger state",
+      "href": "https://drafts.csswg.org/web-animations-2/#updating-animation-trigger-state",
+      "html": "The procedure of <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"updating-animation-trigger-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">updating animation trigger state</dfn> <var>state</var> of an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-trigger\" id=\"ref-for-animation-trigger⑧\">animation trigger</a> <var>trigger</var>,\n  with a given a flag <var>did trigger</var>, and an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-trigger-type\" id=\"ref-for-animation-trigger-type②\">animation trigger type</a> <var>type</var>,\n  is as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>did trigger</var> be a boolean flag that is initially false.</p>"
+        },
+        {
+          "html": "<p>Let <var>state</var> be the current <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-trigger-state\" id=\"ref-for-animation-trigger-state④\">state</a> of <var>trigger</var> that is initially <span class=\"css\">animation trigger state/idle</span>.</p>"
+        },
+        {
+          "html": "Set <var>state</var> as follows:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If trigger’s local time is unresolved,",
+                  "html": "<p>Then abort this procedure.</p>"
+                },
+                {
+                  "case": "Otherwise,",
+                  "html": "<dl class=\"switch\">\n         <dt data-md=\"\">If <var>type</var> is <span class=\"css\">animation trigger type/once</span> and <var>did trigger</var> flag is true,\n         </dt><dd data-md=\"\">\n          <p>Then abort this procedure.</p>\n         </dd><dt data-md=\"\">Otherwise,\n         </dt><dd data-md=\"\">\n          <dl class=\"switch\">\n           <dt data-md=\"\">If <var>trigger</var> is inside its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-trigger-active-interval\" id=\"ref-for-animation-trigger-active-interval①⑨\">active interval</a>,\n           </dt><dd data-md=\"\">\n            \n           </dd><dt data-md=\"\">Otherwise,\n           </dt><dd data-md=\"\">\n            <dl class=\"switch\">\n             <dt data-md=\"\">If <var>did trigger</var> flag is true,\n             </dt><dd data-md=\"\">\n              <p>Set <var>state</var> to <span class=\"css\">animation trigger state/inverse</span>.</p>\n            </dd></dl>\n          </dd></dl>\n        </dd></dl>",
+                  "rationale": ".switch",
+                  "steps": [
+                    {
+                      "operation": "switch",
+                      "steps": [
+                        {
+                          "case": "If type is animation trigger type/once and did trigger flag is true,",
+                          "html": "<p>Then abort this procedure.</p>"
+                        },
+                        {
+                          "case": "Otherwise,",
+                          "html": "<dl class=\"switch\">\n           <dt data-md=\"\">If <var>trigger</var> is inside its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-trigger-active-interval\" id=\"ref-for-animation-trigger-active-interval①⑨\">active interval</a>,\n           </dt><dd data-md=\"\">\n            \n           </dd><dt data-md=\"\">Otherwise,\n           </dt><dd data-md=\"\">\n            <dl class=\"switch\">\n             <dt data-md=\"\">If <var>did trigger</var> flag is true,\n             </dt><dd data-md=\"\">\n              <p>Set <var>state</var> to <span class=\"css\">animation trigger state/inverse</span>.</p>\n            </dd></dl>\n          </dd></dl>",
+                          "rationale": ".switch",
+                          "steps": [
+                            {
+                              "operation": "switch",
+                              "steps": [
+                                {
+                                  "case": "If trigger is inside its active interval,",
+                                  "html": "",
+                                  "rationale": "set",
+                                  "steps": [
+                                    {
+                                      "html": "<p>Set <var>state</var> to <span class=\"css\">animation trigger state/primary</span>.</p>"
+                                    },
+                                    {
+                                      "html": "<p>Set <var>did trigger</var> to true.</p>"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "case": "Otherwise,",
+                                  "html": "<dl class=\"switch\">\n             <dt data-md=\"\">If <var>did trigger</var> flag is true,\n             </dt><dd data-md=\"\">\n              <p>Set <var>state</var> to <span class=\"css\">animation trigger state/inverse</span>.</p>\n            </dd></dl>",
+                                  "rationale": ".switch",
+                                  "steps": [
+                                    {
+                                      "operation": "switch",
+                                      "steps": [
+                                        {
+                                          "case": "If did trigger flag is true,",
+                                          "html": "<p>Set <var>state</var> to <span class=\"css\">animation trigger state/inverse</span>.</p>"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "AnimationEffect/before(...effects)",
       "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-before",
-      "html": "Inserts <var>effects</var> before this <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect⑨⑤\">animation effect</a>.",
+      "html": "Inserts <var>effects</var> before this <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect⑨⑦\">animation effect</a>.",
       "rationale": "if",
       "steps": [
         {
           "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group②⑤\">parent group</a>, abort these steps.</p>"
         },
         {
-          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect⑨⑥\">animation effects</a> in <var>effects</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect⑨⑦\">animation effect</span>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span> exception and abort these steps.</p>"
+          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect⑨⑧\">animation effects</a> in <var>effects</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect⑨⑨\">animation effect</span>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span> exception and abort these steps.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children\">Insert</a> <var>effects</var> before\nthis <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect⑨⑧\">animation effect</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children\">Insert</a> <var>effects</var> before\nthis <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①⓪⓪\">animation effect</a>.</p>"
         }
       ]
     },
     {
       "name": "AnimationEffect/after(...effects)",
       "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-after",
-      "html": "Inserts <var>effects</var> after this <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect⑨⑨\">animation effect</a>.",
+      "html": "Inserts <var>effects</var> after this <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①⓪①\">animation effect</a>.",
       "rationale": "if",
       "steps": [
         {
           "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group②⑥\">parent group</a>, abort these steps.</p>"
         },
         {
-          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①⓪⓪\">animation effects</a> in <var>effects</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor②\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect①⓪①\">animation effect</span>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span> exception and abort these steps.</p>"
+          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①⓪②\">animation effects</a> in <var>effects</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor②\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect①⓪③\">animation effect</span>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span> exception and abort these steps.</p>"
         },
         {
           "html": "<p>Let <var>reference child</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#next-sibling-not-included\" id=\"ref-for-next-sibling-not-included\">next sibling of\nthis animation effect not in <var>effects</var></a>.</p>"
@@ -997,13 +1163,13 @@
           "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group②⑦\">parent group</a>, abort these steps.</p>"
         },
         {
-          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①⓪②\">animation effects</a> in <var>effects</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor③\">inclusive ancestor</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group②⑧\">parent group</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span> exception and abort these steps.</p>"
+          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①⓪④\">animation effects</a> in <var>effects</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor③\">inclusive ancestor</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group②⑧\">parent group</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span> exception and abort these steps.</p>"
         },
         {
           "html": "<p>Let <var>reference child</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#next-sibling-not-included\" id=\"ref-for-next-sibling-not-included①\">next sibling of\nthis animation effect not in <var>effects</var></a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#remove-an-animation-effect\" id=\"ref-for-remove-an-animation-effect①\">Remove</a> this <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①⓪③\">animation effect</a> from its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group②⑨\">parent group</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#remove-an-animation-effect\" id=\"ref-for-remove-an-animation-effect①\">Remove</a> this <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①⓪⑤\">animation effect</a> from its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group②⑨\">parent group</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children②\">Insert</a> <var>effects</var> before <var>reference child</var>.</p>"
@@ -1038,7 +1204,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①①⑥\">animation effects</a> in <var>effects</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor④\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect①①⑦\">animation effect</span>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span> exception and abort these steps.</p>"
+          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①①⑧\">animation effects</a> in <var>effects</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor④\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect①①⑨\">animation effect</span>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span> exception and abort these steps.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children④\">Insert</a> <var>effects</var> before\nthe <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#first-child\" id=\"ref-for-first-child①\">first child</a>.</p>"
@@ -1052,7 +1218,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①①⑧\">animation effects</a> in <var>effects</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor⑤\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect①①⑨\">animation effect</span>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⓪\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span> exception and abort these steps.</p>"
+          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①②⓪\">animation effects</a> in <var>effects</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor⑤\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect①②①\">animation effect</span>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⓪\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span> exception and abort these steps.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children⑤\">Insert</a> <var>effects</var> before <code>null</code>.</p>"
@@ -1109,7 +1275,7 @@
     {
       "name": "remove an animation effect",
       "href": "https://drafts.csswg.org/web-animations-2/#remove-an-animation-effect",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"remove an animation effect\" data-noexport=\"\" id=\"remove-an-animation-effect\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove</dfn> a <var>effect</var> from its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group③③\">parent group</a> or <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation③④\">animation</a>, perform the steps corresponding to the first\nmatching condition from below, if any:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"remove an animation effect\" data-noexport=\"\" id=\"remove-an-animation-effect\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove</dfn> a <var>effect</var> from its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group③③\">parent group</a> or <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation③⑧\">animation</a>, perform the steps corresponding to the first\nmatching condition from below, if any:",
       "rationale": ".switch",
       "steps": [
         {
@@ -1121,7 +1287,7 @@
             },
             {
               "case": "If effect is directly associated with an animation,",
-              "html": "<p>Disassociate <var>effect</var> from the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation③⑤\">animation</a>.</p>"
+              "html": "<p>Disassociate <var>effect</var> from the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation③⑨\">animation</a>.</p>"
             }
           ]
         }
@@ -1142,11 +1308,63 @@
     {
       "name": "KeyframeEffect/KeyframeEffect(target, keyframes, options)",
       "href": "https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-keyframeeffect",
-      "html": "Amend step 5 of the procedure to create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-keyframeeffect-source\" id=\"ref-for-dom-keyframeeffect-keyframeeffect-source②\">KeyframeEffect</a></code> object as\nfollows:",
+      "html": "Amend step 5 of the procedure to create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-keyframeeffect\" id=\"ref-for-dom-keyframeeffect-keyframeeffect②\">KeyframeEffect</a></code> object as\nfollows:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>options</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-keyframeeffectoptions\" id=\"ref-for-dictdef-keyframeeffectoptions\">KeyframeEffectOptions</a></code> object,\nassign the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-iterationcomposite\" id=\"ref-for-dom-keyframeeffect-iterationcomposite①\">iterationComposite</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-composite\" id=\"ref-for-dom-keyframeeffect-composite\">composite</a></code>, properties of <var>effect</var> to the\ncorresponding value from <var>options</var>.</p>\n        <p>When assigning these properties, the error-handling defined for the\ncorresponding setters on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-keyframeeffect\" id=\"ref-for-dom-keyframeeffect-keyframeeffect\">KeyframeEffect</a></code> interface is applied.\nIf any of those setters require an exception to be thrown\nfor the values specified by <var>options</var>, this procedure must <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①①\">throw</a> the same exception and abort all further steps.</p>"
+          "html": "<p>If <var>options</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-keyframeeffectoptions\" id=\"ref-for-dictdef-keyframeeffectoptions\">KeyframeEffectOptions</a></code> object,\nassign the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-iterationcomposite\" id=\"ref-for-dom-keyframeeffect-iterationcomposite①\">iterationComposite</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-composite\" id=\"ref-for-dom-keyframeeffect-composite\">composite</a></code>, properties of <var>effect</var> to the\ncorresponding value from <var>options</var>.</p>\n        <p>When assigning these properties, the error-handling defined for the\ncorresponding setters on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-keyframeeffect-source\" id=\"ref-for-dom-keyframeeffect-keyframeeffect-source\">KeyframeEffect</a></code> interface is applied.\nIf any of those setters require an exception to be thrown\nfor the values specified by <var>options</var>, this procedure must <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①①\">throw</a> the same exception and abort all further steps.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Animatable/animate(keyframes, options)",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-animatable-animate",
+      "html": "Amend step 6 of the procedure as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>options</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-keyframeanimationoptions\" id=\"ref-for-dictdef-keyframeanimationoptions\">KeyframeAnimationOptions</a></code> object,\nlet <var>trigger</var> be the <code>trigger</code> member of <var>options</var> or, if <code>trigger</code> member of <var>options</var> is missing,\na newly created <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#animatable-animationtrigger\" id=\"ref-for-animatable-animationtrigger②\">AnimationTrigger</a></code> with an empty <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dictdef-animatable-animationtriggeroptions\" id=\"ref-for-dictdef-animatable-animationtriggeroptions\">AnimationTriggerOptions</a></code> dictionary as its options.</p>"
+        },
+        {
+          "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#setting-a-trigger-of-an-animation\" id=\"ref-for-setting-a-trigger-of-an-animation\">setting a trigger of an animation</a> for <var>animation</var> with the <var>auto-rewind</var> flag set to true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "AnimationTrigger/AnimationTrigger(options)",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtrigger-animationtrigger",
+      "html": "Creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#animatable-animationtrigger\" id=\"ref-for-animatable-animationtrigger⑤\">AnimationTrigger</a></code> object using the following procedure:",
+      "rationale": "create",
+      "steps": [
+        {
+          "html": "<p>Create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#animatable-animationtrigger\" id=\"ref-for-animatable-animationtrigger⑥\">AnimationTrigger</a></code> object, <var>trigger</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>type</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-type\" id=\"ref-for-dom-animationtriggeroptions-type\">type</a></code> property.</p>"
+        },
+        {
+          "html": "<p>Let <var>timeline</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-timeline\" id=\"ref-for-dom-animationtriggeroptions-timeline\">timeline</a></code> property.</p>"
+        },
+        {
+          "html": "<p>Let <var>range start</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-rangestart\" id=\"ref-for-dom-animationtriggeroptions-rangestart\">rangeStart</a></code> property.</p>"
+        },
+        {
+          "html": "<p>Let <var>range end</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-rangeend\" id=\"ref-for-dom-animationtriggeroptions-rangeend\">rangeEnd</a></code> property.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#default-range\" id=\"ref-for-default-range②\">default range</a> of <var>trigger</var> using <var>range start</var> and <var>range end</var>,\n  following the same rules as the KeyframeAnimationOption <a href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeanimationoptions-rangestart\" id=\"ref-for-dom-keyframeanimationoptions-rangestart④\">rangeStart</a> and <a href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeanimationoptions-rangeend\" id=\"ref-for-dom-keyframeanimationoptions-rangeend④\">rangeEnd</a> respectively.</p>"
+        },
+        {
+          "html": "<p>Let <var>exit range start</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-exitrangestart\" id=\"ref-for-dom-animationtriggeroptions-exitrangestart\">exitRangeStart</a></code> property.</p>"
+        },
+        {
+          "html": "<p>Let <var>exit range end</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-exitrangeend\" id=\"ref-for-dom-animationtriggeroptions-exitrangeend\">exitRangeEnd</a></code> property.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#exit-range\" id=\"ref-for-exit-range②\">exit range</a> of <var>trigger</var> using <var>exit range start</var> and <var>exit range end</var>,\n  following the same rules above for <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#default-range\" id=\"ref-for-default-range③\">default range</a>, unless they are set to\n  \"auto\", in which case they are set to their corresponding side\n  of the <span id=\"ref-for-default-range④\">default range</span>.</p>"
+        },
+        {
+          "html": "<p>Run the procedure for <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#setting-timeline-of-animation-trigger\" id=\"ref-for-setting-timeline-of-animation-trigger\">setting timeline of animation trigger</a> on <var>trigger</var> passing <var>timeline</var> as the <var>new timeline</var>.</p>"
         }
       ]
     }
