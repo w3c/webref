@@ -26,7 +26,7 @@ partial interface AI {
 [Exposed=(Window,Worker), SecureContext]
 interface AISummarizerFactory {
   Promise<AISummarizer> create(optional AISummarizerCreateOptions options = {});
-  Promise<AICapabilityAvailability> available(optional AISummarizerCreateCoreOptions options = {});
+  Promise<AICapabilityAvailability> availability(optional AISummarizerCreateCoreOptions options = {});
 };
 
 [Exposed=(Window,Worker), SecureContext]
@@ -81,7 +81,7 @@ enum AISummarizerLength { "short", "medium", "long" };
 [Exposed=(Window,Worker), SecureContext]
 interface AIWriterFactory {
   Promise<AIWriter> create(optional AIWriterCreateOptions options = {});
-  Promise<AICapabilityAvailability> available(optional AIWriterCreateCoreOptions options = {});
+  Promise<AICapabilityAvailability> availability(optional AIWriterCreateCoreOptions options = {});
 };
 
 [Exposed=(Window,Worker), SecureContext]
@@ -130,7 +130,7 @@ enum AIWriterLength { "short", "medium", "long" };
 [Exposed=(Window,Worker), SecureContext]
 interface AIRewriterFactory {
   Promise<AIRewriter> create(optional AIRewriterCreateOptions options = {});
-  Promise<AICapabilityAvailability> available(optional AIRewriterCreateCoreOptions options = {});
+  Promise<AICapabilityAvailability> availability(optional AIRewriterCreateCoreOptions options = {});
 };
 
 [Exposed=(Window,Worker), SecureContext]
