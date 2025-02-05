@@ -113,6 +113,31 @@
       ]
     },
     {
+      "name": "reading-order",
+      "href": "https://drafts.csswg.org/css-display-4/#propdef-reading-order",
+      "value": "<integer>",
+      "initial": "0",
+      "appliesTo": "Direct children of a reading flow container",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified integer",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "<integer>",
+          "prose": "The reading-order property lets the author change where in the reading flow an item is visited, overriding the position set by the reading-flow property on its parent. It takes a single <integer> value, which specifies which ordinal group the item belongs to. Sibling elements are ordered starting from the lowest numbered ordinal group and going up.",
+          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-order-integer",
+          "type": "value",
+          "value": "<integer>"
+        }
+      ],
+      "styleDeclaration": [
+        "reading-order",
+        "readingOrder"
+      ]
+    },
+    {
       "name": "visibility",
       "href": "https://drafts.csswg.org/css-display-4/#propdef-visibility",
       "value": "visible | hidden | collapse",
