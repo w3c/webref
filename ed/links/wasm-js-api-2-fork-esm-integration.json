@@ -5,7 +5,6 @@
   },
   "links": {
     "rawlinks": {
-      "http://ieeexplore.ieee.org/servlet/opac?punumber=4610933": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://encoding.spec.whatwg.org/": {},
       "https://github.com/WebAssembly/spec/issues": {},
@@ -13,10 +12,12 @@
       "https://github.com/WebAssembly/spec/issues?utf8=%E2%9C%93&q=is%3Aissue++": {},
       "https://github.com/whatwg/html/pull/10380": {},
       "https://html.spec.whatwg.org/multipage/": {},
+      "https://ieeexplore.ieee.org/document/8766229": {},
       "https://infra.spec.whatwg.org/": {},
       "https://tc39.es/ecma262/multipage/": {},
       "https://tc39.es/proposal-source-phase-imports/": {},
       "https://webassembly.github.io/spec/core/": {},
+      "https://webassembly.github.io/spec/js-api/": {},
       "https://webassembly.github.io/spec/web-api/index.html": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://www.w3.org/2004/01/pp-impl/101196/status": {},
@@ -127,7 +128,9 @@
         "anchors": [
           "sec-native-error-types-used-in-this-standard-typeerror",
           "sec-returnifabrupt-shorthands",
-          "sec-ecmascript-data-types-and-values",
+          "sec-object-type",
+          "sec-ecmascript-language-types-number-type",
+          "sec-ecmascript-language-types-bigint-type",
           "sec-ordinaryobjectcreate",
           "sec-arraybuffer-objects",
           "sec-native-error-types-used-in-this-standard-rangeerror",
@@ -140,7 +143,8 @@
           "cyclic-module-record",
           "sec-newmoduleenvironment",
           "sec-GetImportedModule",
-          "sec-createdatapropertyorthrow"
+          "sec-createdatapropertyorthrow",
+          "sec-array-exotic-objects"
         ]
       },
       "https://tc39.github.io/proposal-source-phase-imports/": {
@@ -148,6 +152,11 @@
           "sec-properties-of-the-%abstractmodulesource%-prototype-object",
           "sec-%abstractmodulesource%-constructor",
           "sec-HostGetModuleSourceName"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/": {
+        "anchors": [
+          "appending/embedding.html"
         ]
       },
       "https://webassembly.github.io/spec/core/appendix/embedding.html": {
@@ -221,6 +230,11 @@
           "syntax-hostfunc"
         ]
       },
+      "https://webassembly.github.io/spec/core/intro/introduction.html": {
+        "anchors": [
+          "scope"
+        ]
+      },
       "https://webassembly.github.io/spec/core/syntax/conventions.html": {
         "anchors": [
           "grammar-notation"
@@ -238,6 +252,8 @@
           "syntax-numtype",
           "vector-types",
           "syntax-mut",
+          "syntax-memtype",
+          "syntax-limits",
           "syntax-reftype",
           "syntax-tabletype"
         ]
@@ -250,6 +266,13 @@
       "https://webassembly.github.io/spec/core/valid/modules.html": {
         "anchors": [
           "valid-module"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/valid/types.html": {
+        "anchors": [
+          "valid-memtype",
+          "valid-tabletype",
+          "valid-limits"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
