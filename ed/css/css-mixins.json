@@ -17,7 +17,7 @@
           "initial": "n/a (see prose)"
         }
       ],
-      "value": "@function <function-name> <function-parameter-list>? ) [ returns <css-type> ]? { <declaration-rule-list> }",
+      "value": "@function <function-token> <function-parameter>#? ) [ returns <css-type> ]? { <declaration-rule-list> }",
       "values": [
         {
           "name": "type()",
@@ -31,12 +31,6 @@
   "selectors": [],
   "values": [
     {
-      "name": "<function-parameter-list>",
-      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-function-parameter-list",
-      "type": "type",
-      "value": "<function-parameter>#"
-    },
-    {
       "name": "<function-parameter>",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-function-parameter",
       "type": "type",
@@ -47,12 +41,6 @@
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-css-type",
       "type": "type",
       "value": "<syntax-component> | <type()>"
-    },
-    {
-      "name": "<function-name>",
-      "prose": "The <function-name> production is a <function-token>, with the additional restriction that it must start with two dashes (U+002D HYPHEN-MINUS).",
-      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-function-name",
-      "type": "type"
     },
     {
       "name": "<dashed-function>",
