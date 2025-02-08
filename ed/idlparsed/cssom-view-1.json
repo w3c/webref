@@ -657,7 +657,7 @@
         "href": "https://drafts.csswg.org/cssom-view-1/#enumdef-scrolllogicalposition"
       },
       "ScrollIntoViewOptions": {
-        "fragment": "dictionary ScrollIntoViewOptions : ScrollOptions {\n  ScrollLogicalPosition block = \"start\";\n  ScrollLogicalPosition inline = \"nearest\";\n};",
+        "fragment": "dictionary ScrollIntoViewOptions : ScrollOptions {\n  ScrollLogicalPosition block = \"start\";\n  ScrollLogicalPosition inline = \"nearest\";\n  ScrollIntoViewContainer container = \"all\";\n};",
         "type": "dictionary",
         "name": "ScrollIntoViewOptions",
         "inheritance": "ScrollOptions",
@@ -699,11 +699,49 @@
             },
             "required": false,
             "href": "https://drafts.csswg.org/cssom-view-1/#dom-scrollintoviewoptions-inline"
+          },
+          {
+            "type": "field",
+            "name": "container",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ScrollIntoViewContainer"
+            },
+            "default": {
+              "type": "string",
+              "value": "all"
+            },
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-scrollintoviewoptions-container"
           }
         ],
         "extAttrs": [],
         "partial": false,
         "href": "https://drafts.csswg.org/cssom-view-1/#dictdef-scrollintoviewoptions"
+      },
+      "ScrollIntoViewContainer": {
+        "fragment": "enum ScrollIntoViewContainer { \"all\", \"nearest\" };",
+        "type": "enum",
+        "name": "ScrollIntoViewContainer",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "all",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-scrollintoviewcontainer-all"
+          },
+          {
+            "type": "enum-value",
+            "value": "nearest",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-scrollintoviewcontainer-nearest"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/cssom-view-1/#enumdef-scrollintoviewcontainer"
       },
       "CheckVisibilityOptions": {
         "fragment": "dictionary CheckVisibilityOptions {\n    boolean checkOpacity = false;\n    boolean checkVisibilityCSS = false;\n    boolean contentVisibilityAuto = false;\n    boolean opacityProperty = false;\n    boolean visibilityProperty = false;\n};",
@@ -3398,7 +3436,8 @@
       ],
       "ScrollIntoViewOptions": [
         "ScrollOptions",
-        "ScrollLogicalPosition"
+        "ScrollLogicalPosition",
+        "ScrollIntoViewContainer"
       ],
       "CheckVisibilityOptions": [],
       "Element": [
