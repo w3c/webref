@@ -24,8 +24,11 @@
       "http://www.w3.org/TR/css-grid-2/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Masonry_Layout": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/align-tracks": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/justify-tracks": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/masonry-auto-flow": {},
       "https://drafts.csswg.org/css-align": {},
       "https://drafts.csswg.org/css-align-3/": {
         "anchors": [
@@ -47,7 +50,6 @@
       "https://drafts.csswg.org/css-grid-2/": {
         "anchors": [
           "order-accessibility",
-          "track-sizing",
           "subgrids",
           "algo-track-sizing",
           "intrinsic-sizes",
@@ -55,9 +57,11 @@
           "alignment"
         ]
       },
+      "https://drafts.csswg.org/css-grid-3/": {},
       "https://drafts.csswg.org/css-grid/": {},
       "https://drafts.csswg.org/css-multicol/": {},
       "https://drafts.csswg.org/css-sizing-3/": {},
+      "https://drafts.csswg.org/css-text-4/": {},
       "https://drafts.csswg.org/css-values-3/": {},
       "https://drafts.csswg.org/css-values-4/": {},
       "https://drafts.csswg.org/css-writing-modes-3/": {},
@@ -71,13 +75,14 @@
       },
       "https://github.com/w3c/csswg-drafts/issues/10854": {},
       "https://github.com/w3c/csswg-drafts/issues/10869": {},
-      "https://github.com/w3c/csswg-drafts/issues/10883": {},
       "https://github.com/w3c/csswg-drafts/issues/10915": {},
+      "https://github.com/w3c/csswg-drafts/issues/11243": {},
+      "https://github.com/w3c/csswg-drafts/issues/11480": {},
       "https://github.com/w3c/csswg-drafts/issues/4650": {},
       "https://github.com/w3c/csswg-drafts/issues/9326": {},
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
-      "https://www.w3.org/TR/2024/WD-css-grid-3-20240919/": {},
+      "https://www.w3.org/TR/2024/WD-css-grid-3-20241003/": {},
       "https://www.w3.org/TR/CSS/": {},
       "https://www.w3.org/TR/CSS2/about.html": {
         "anchors": [
@@ -99,7 +104,6 @@
       },
       "https://www.w3.org/TR/css-grid-2/": {
         "anchors": [
-          "grid-auto-flow-property",
           "subgrid-item-contribution"
         ]
       },
@@ -159,25 +163,26 @@
       },
       "https://drafts.csswg.org/css-cascade-5/": {
         "anchors": [
-          "used-value",
           "shorthand-property",
-          "computed-value"
+          "longhand"
         ]
       },
       "https://drafts.csswg.org/css-display-4/": {
         "anchors": [
-          "propdef-display",
           "blockify",
           "propdef-reading-flow",
-          "block-level",
-          "flow-layout",
-          "inline-level",
+          "propdef-display",
           "containing-block"
         ]
       },
       "https://drafts.csswg.org/css-flexbox-1/": {
         "anchors": [
-          "flex-layout"
+          "flex-layout",
+          "propdef-flex-flow",
+          "flex-container",
+          "single-line-flex-container",
+          "multi-line-flex-container",
+          "propdef-flex-wrap"
         ]
       },
       "https://drafts.csswg.org/css-gaps-1/": {
@@ -192,37 +197,33 @@
           "grid-container",
           "grid-track",
           "definite-grid-position",
-          "propdef-grid-template-columns",
           "propdef-grid-template-rows",
-          "valdef-grid-template-rows-none",
-          "grid-item-placement-algorithm",
+          "propdef-grid-template-columns",
           "explicit-grid",
           "implicit-grid",
           "propdef-grid-auto-rows",
           "propdef-grid-auto-columns",
-          "typedef-track-list",
-          "typedef-line-name-list",
-          "computed-track-list",
-          "typedef-auto-track-list",
-          "typedef-line-names",
-          "typedef-track-size",
-          "typedef-track-repeat",
-          "typedef-auto-repeat",
-          "propdef-grid-template-areas",
           "valdef-repeat-auto-fill",
           "valdef-repeat-auto-fit",
           "valdef-grid-template-columns-auto",
           "subgrid",
-          "valdef-grid-template-none",
+          "propdef-grid-template-areas",
           "valdef-grid-template-areas-none",
           "automatic-grid-position",
           "grid-placement-property",
-          "propdef-grid-column-start",
-          "propdef-grid-column-end",
-          "propdef-grid-column",
           "grid-area",
-          "propdef-grid",
-          "propdef-grid-template"
+          "valdef-grid-template-rows-none",
+          "implicit-grid-track"
+        ]
+      },
+      "https://drafts.csswg.org/css-grid-3/": {
+        "anchors": [
+          "propdef-masonry-template-tracks",
+          "propdef-masonry-track",
+          "valdef-display-masonry",
+          "propdef-masonry-template-areas",
+          "propdef-masonry-auto-tracks",
+          "propdef-grid-auto-flow"
         ]
       },
       "https://drafts.csswg.org/css-sizing-3/": {
@@ -235,15 +236,17 @@
           "min-content-constraint"
         ]
       },
+      "https://drafts.csswg.org/css-text-4/": {
+        "anchors": [
+          "propdef-text-wrap-style"
+        ]
+      },
       "https://drafts.csswg.org/css-values-4/": {
         "anchors": [
           "css-wide-keywords",
+          "typedef-length-percentage",
           "comb-one",
-          "comb-any",
-          "mult-opt",
-          "mult-zero-plus",
-          "string-value",
-          "typedef-length-percentage"
+          "comb-any"
         ]
       },
       "https://drafts.csswg.org/css-writing-modes-3/": {
@@ -255,10 +258,6 @@
         "anchors": [
           "block-axis",
           "inline-axis",
-          "block-start",
-          "block-end",
-          "inline-start",
-          "inline-end",
           "writing-mode"
         ]
       },

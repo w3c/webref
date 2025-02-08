@@ -768,6 +768,9 @@
           "html": "<p>Let <var>inline</var> be \"<code>nearest</code>\".</p>"
         },
         {
+          "html": "<p>Let <var>container</var> be <code>null</code>.</p>"
+        },
+        {
           "html": "If <var>arg</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dictdef-scrollintoviewoptions\" id=\"ref-for-dictdef-scrollintoviewoptions①\">ScrollIntoViewOptions</a></code> dictionary, then:",
           "rationale": "set",
           "steps": [
@@ -779,6 +782,9 @@
             },
             {
               "html": "<p>Set <var>inline</var> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-scrollintoviewoptions-inline\" id=\"ref-for-dom-scrollintoviewoptions-inline\">inline</a></code> dictionary member of <var>options</var>.</p>"
+            },
+            {
+              "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-scrollintoviewoptions-container\" id=\"ref-for-dom-scrollintoviewoptions-container\">container</a></code> dictionary member of <var>options</var>,\nset <var>container</var> to this element.</p>"
             }
           ]
         },
@@ -789,7 +795,7 @@
           "html": "<p>If the element does not have any associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#box\" id=\"ref-for-box⑧\">box</a>,\nor is not available to user-agent features,\nthen return.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scroll-a-target-into-view\" id=\"ref-for-scroll-a-target-into-view\">Scroll the element into view</a> with <var>behavior</var>, <var>block</var>, and <var>inline</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scroll-a-target-into-view\" id=\"ref-for-scroll-a-target-into-view\">Scroll the element into view</a> with <var>behavior</var>, <var>block</var>, <var>inline</var>, and <var>container</var>.</p>"
         },
         {
           "html": "<p>Optionally perform some other action that brings the element to the user’s attention.</p>"
@@ -1315,46 +1321,58 @@
     {
       "name": "scroll a target into view",
       "href": "https://drafts.csswg.org/cssom-view-1/#scroll-a-target-into-view",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"scroll-a-target-into-view\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">scroll a target into view</dfn> <var>target</var>, which is an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element②\">Element</a>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#pseudo-element\" id=\"ref-for-pseudo-element②\">pseudo-element</a>, or <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②\">Range</a>,\nwith a scroll behavior <var>behavior</var>,\na block flow direction position <var>block</var>,\nand an inline base direction position <var>inline</var>,\nmeans to run these steps for each ancestor element or <a data-link-type=\"dfn\">viewport</a> that establishes\na <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box①④\">scrolling box</a> <var>scrolling box</var>, in order of innermost to outermost <span id=\"ref-for-scrolling-box①⑤\">scrolling box</span>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"scroll-a-target-into-view\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">scroll a target into view</dfn> <var>target</var>, which is an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element②\">Element</a>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#pseudo-element\" id=\"ref-for-pseudo-element②\">pseudo-element</a>, or <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②\">Range</a>,\nwith a scroll behavior <var>behavior</var>,\na block flow direction position <var>block</var>,\nan inline base direction position <var>inline</var>,\nand an optional containing <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute-element\" id=\"ref-for-concept-attribute-element\">Element</a> to stop scrolling after reaching <var>container</var>,\nmeans to run these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑧\">Document</a></code> associated with <var>target</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑨\">Document</a></code> associated with the element or <a data-link-type=\"dfn\">viewport</a> associated with <var>scrolling box</var>, terminate these steps.</p>"
-        },
-        {
-          "html": "<p>Let <var>position</var> be the scroll position resulting from running the steps to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#determine-the-scroll-into-view-position\" id=\"ref-for-determine-the-scroll-into-view-position\">determine the scroll-into-view position</a> of <var>target</var> with <var>behavior</var> as the <var>scroll behavior</var>, <var>block</var> as the <var>block flow position</var>, <var>inline</var> as the <var>inline base direction position</var> and <var>scrolling box</var> as the <var>scrolling box</var>.</p>"
-        },
-        {
-          "html": "<p>If <var>position</var> is the same as <var>scrolling box</var>’s current scroll position, and <var>scrolling box</var> does not have an ongoing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#concept-smooth-scroll\" id=\"ref-for-concept-smooth-scroll④\">smooth scroll</a>, then return.</p>"
-        },
-        {
-          "html": "<dl class=\"switch\">\n       <dt>If <var>scrolling box</var> is associated with an element \n       </dt><dd> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll③\">Perform a scroll</a> of the element’s <var>scrolling box</var> to <var>position</var>, with the element as the associated element and <var>behavior</var> as the scroll behavior. \n       </dd><dt>If <var>scrolling box</var> is associated with a <a data-link-type=\"dfn\">viewport</a> \n       </dt><dd>\n        \n      </dd></dl>",
-          "rationale": ".switch",
+          "html": "For each ancestor element or <a data-link-type=\"dfn\">viewport</a> that establishes a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box①④\">scrolling box</a> <var>scrolling box</var>,\nin order of innermost to outermost <span id=\"ref-for-scrolling-box①⑤\">scrolling box</span>, run these substeps:",
+          "rationale": "if",
           "steps": [
             {
-              "operation": "switch",
+              "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑧\">Document</a></code> associated with <var>target</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑨\">Document</a></code> associated with the element or <a data-link-type=\"dfn\">viewport</a> associated with <var>scrolling box</var>, terminate these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>position</var> be the scroll position resulting from running the steps to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#determine-the-scroll-into-view-position\" id=\"ref-for-determine-the-scroll-into-view-position\">determine the scroll-into-view position</a> of <var>target</var> with <var>behavior</var> as the <var>scroll behavior</var>, <var>block</var> as the <var>block flow position</var>, <var>inline</var> as the <var>inline base direction position</var> and <var>scrolling box</var> as the <var>scrolling box</var>.</p>"
+            },
+            {
+              "html": "If <var>position</var> is not the same as <var>scrolling box</var>’s current scroll position, or <var>scrolling box</var> has an ongoing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#concept-smooth-scroll\" id=\"ref-for-concept-smooth-scroll④\">smooth scroll</a>,",
+              "rationale": "if",
               "steps": [
                 {
-                  "case": "If scrolling box is associated with an element",
-                  "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll③\">Perform a scroll</a> of the element’s <var>scrolling box</var> to <var>position</var>, with the element as the associated element and <var>behavior</var> as the scroll behavior."
-                },
-                {
-                  "case": "If scrolling box is associated with a viewport",
-                  "html": "",
-                  "rationale": "let",
+                  "html": "<dl class=\"switch\">\n           <dt>If <var>scrolling box</var> is associated with an element \n           </dt><dd> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll③\">Perform a scroll</a> of the element’s <var>scrolling box</var> to <var>position</var>, with the element as the associated element and <var>behavior</var> as the scroll behavior. \n           </dd><dt>If <var>scrolling box</var> is associated with a <a data-link-type=\"dfn\">viewport</a> \n           </dt><dd>\n            \n          </dd></dl>",
+                  "rationale": ".switch",
                   "steps": [
                     {
-                      "html": "<p>Let <var>document</var> be the <a data-link-type=\"dfn\">viewport’s</a> associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⓪\">Document</a></code>.</p>"
-                    },
-                    {
-                      "html": "<p>Let <var>root element</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#root-element\" id=\"ref-for-root-element②③\">root element</a>, if there is one, or null otherwise.</p>"
-                    },
-                    {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#viewport-perform-a-scroll\" id=\"ref-for-viewport-perform-a-scroll④\">Perform a scroll</a> of the <a data-link-type=\"dfn\">viewport</a> to <var>position</var>, with <var>root element</var> as the associated element and <var>behavior</var> as the scroll behavior.</p>"
+                      "operation": "switch",
+                      "steps": [
+                        {
+                          "case": "If scrolling box is associated with an element",
+                          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll③\">Perform a scroll</a> of the element’s <var>scrolling box</var> to <var>position</var>, with the element as the associated element and <var>behavior</var> as the scroll behavior."
+                        },
+                        {
+                          "case": "If scrolling box is associated with a viewport",
+                          "html": "",
+                          "rationale": "let",
+                          "steps": [
+                            {
+                              "html": "<p>Let <var>document</var> be the <a data-link-type=\"dfn\">viewport’s</a> associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⓪\">Document</a></code>.</p>"
+                            },
+                            {
+                              "html": "<p>Let <var>root element</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#root-element\" id=\"ref-for-root-element②③\">root element</a>, if there is one, or null otherwise.</p>"
+                            },
+                            {
+                              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#viewport-perform-a-scroll\" id=\"ref-for-viewport-perform-a-scroll④\">Perform a scroll</a> of the <a data-link-type=\"dfn\">viewport</a> to <var>position</var>, with <var>root element</var> as the associated element and <var>behavior</var> as the scroll behavior.</p>"
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
               ]
+            },
+            {
+              "html": "<p>If <var>container</var> is not null and <var>scrolling box</var> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-ancestor\" id=\"ref-for-concept-shadow-including-inclusive-ancestor①\">shadow-including inclusive ancestor</a> of <var>container</var>,\nabort the rest of these steps.</p>"
             }
           ]
         }
