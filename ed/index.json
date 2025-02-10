@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-02-10T06:42:11.894Z",
+  "date": "2025-02-10T12:58:27.913Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -686,7 +686,7 @@
   },
   "stats": {
     "crawled": 654,
-    "errors": 1
+    "errors": 12
   },
   "crawler": "reffy-18.3.1",
   "results": [
@@ -1347,9 +1347,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 09 Feb 2025 16:31:05 GMT"
+        "lastModified": "Mon, 10 Feb 2025 10:45:44 GMT"
       },
-      "date": "9 February 2025",
+      "date": "10 February 2025",
       "algorithms": "algorithms/no-vary-search.json",
       "links": "links/no-vary-search.json",
       "refs": "refs/no-vary-search.json",
@@ -1396,9 +1396,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 09 Feb 2025 16:31:05 GMT"
+        "lastModified": "Mon, 10 Feb 2025 10:45:44 GMT"
       },
-      "date": "9 February 2025",
+      "date": "10 February 2025",
       "algorithms": "algorithms/rfc6265bis.json",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
@@ -1526,7 +1526,8 @@
       "refs": "refs/css-typed-om-2.json",
       "headings": "headings/css-typed-om-2.json",
       "ids": "ids/css-typed-om-2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://drafts.css-houdini.org/font-metrics-api-1/",
@@ -1577,7 +1578,8 @@
       "dfns": "dfns/font-metrics-api-1.json",
       "headings": "headings/font-metrics-api-1.json",
       "ids": "ids/font-metrics-api-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 16)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-backgrounds-4/",
@@ -2775,7 +2777,8 @@
       "dfns": "dfns/filter-effects-2.json",
       "headings": "headings/filter-effects-2.json",
       "ids": "ids/filter-effects-2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-2/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 36)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://encoding.spec.whatwg.org/",
@@ -3051,11 +3054,11 @@
       ],
       "crawled": "https://fullscreen.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 21 Sep 2024 09:07:00 GMT"
+        "lastModified": "Mon, 10 Feb 2025 12:18:59 GMT"
       },
       "generator": "bikeshed",
-      "date": "21 September 2024",
-      "revision": "e0d74721e7e23375a2da15b9655a806b3d66f0f8",
+      "date": "10 February 2025",
+      "revision": "3cd33da1c64777979263fdb63a34bc30df33312a",
       "algorithms": "algorithms/fullscreen.json",
       "links": "links/fullscreen.json",
       "refs": "refs/fullscreen.json",
@@ -18454,7 +18457,8 @@
       "dfns": "dfns/css-animation-worklet-1.json",
       "headings": "headings/css-animation-worklet-1.json",
       "ids": "ids/css-animation-worklet-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 329)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-animations-1/",
@@ -21282,7 +21286,8 @@
       "dfns": "dfns/css-layout-api-1.json",
       "headings": "headings/css-layout-api-1.json",
       "ids": "ids/css-layout-api-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-layout-api-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 370)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-line-grid-1/",
@@ -22355,7 +22360,8 @@
       "dfns": "dfns/css-paint-api-1.json",
       "headings": "headings/css-paint-api-1.json",
       "ids": "ids/css-paint-api-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-paint-api-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 386)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-position-3/",
@@ -22491,7 +22497,8 @@
       "dfns": "dfns/css-properties-values-api-1.json",
       "headings": "headings/css-properties-values-api-1.json",
       "ids": "ids/css-properties-values-api-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-properties-values-api-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 388)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-pseudo-4/",
@@ -24340,7 +24347,8 @@
       "dfns": "dfns/css-typed-om-1.json",
       "headings": "headings/css-typed-om-1.json",
       "ids": "ids/css-typed-om-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 415)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-ui-3/",
@@ -26905,7 +26913,8 @@
       "dfns": "dfns/fill-stroke-3.json",
       "headings": "headings/fill-stroke-3.json",
       "ids": "ids/fill-stroke-3.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/fill-stroke-3/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 454)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/filter-effects-1/",
@@ -26973,7 +26982,8 @@
       "elements": "elements/filter-effects-1.json",
       "headings": "headings/filter-effects-1.json",
       "ids": "ids/filter-effects-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 455)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/fingerprinting-guidance/",
@@ -27354,7 +27364,8 @@
       "dfns": "dfns/geometry-1.json",
       "headings": "headings/geometry-1.json",
       "ids": "ids/geometry-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/geometry-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 461)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
     },
     {
       "url": "https://www.w3.org/TR/gpc/",
@@ -31942,10 +31953,10 @@
       ],
       "crawled": "https://w3c.github.io/rdf-concepts/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 31 Jan 2025 19:07:31 GMT"
+        "lastModified": "Mon, 10 Feb 2025 09:43:47 GMT"
       },
       "generator": "respec",
-      "date": "31 January 2025",
+      "date": "10 February 2025",
       "algorithms": "algorithms/rdf12-concepts.json",
       "links": "links/rdf12-concepts.json",
       "refs": "refs/rdf12-concepts.json",
@@ -33724,10 +33735,10 @@
       ],
       "crawled": "https://w3c.github.io/sparql-query/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 06 Feb 2025 11:15:13 GMT"
+        "lastModified": "Mon, 10 Feb 2025 09:25:15 GMT"
       },
       "generator": "respec",
-      "date": "06 February 2025",
+      "date": "10 February 2025",
       "algorithms": "algorithms/sparql12-query.json",
       "links": "links/sparql12-query.json",
       "refs": "refs/sparql12-query.json",
@@ -37152,11 +37163,11 @@
       ],
       "crawled": "https://w3c.github.io/webdriver-bidi/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 31 Jan 2025 11:33:18 GMT"
+        "lastModified": "Mon, 10 Feb 2025 11:47:48 GMT"
       },
       "generator": "bikeshed",
-      "date": "31 January 2025",
-      "revision": "0713f9c6a836672f929c06bac8b7cdd22eb40498",
+      "date": "10 February 2025",
+      "revision": "198ddaed57bb2a8dec444f4fc11bc76a742bd1be",
       "algorithms": "algorithms/webdriver-bidi.json",
       "links": "links/webdriver-bidi.json",
       "refs": "refs/webdriver-bidi.json",
@@ -37230,11 +37241,11 @@
       ],
       "crawled": "https://w3c.github.io/webdriver/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 31 Jan 2025 15:36:30 GMT"
+        "lastModified": "Mon, 10 Feb 2025 12:05:47 GMT"
       },
       "generator": "respec",
-      "date": "31 January 2025",
-      "revision": "78d3c9b2eb24a32d4ee1d8064dd3444616da9d03",
+      "date": "10 February 2025",
+      "revision": "a67669c5b4bfa4dd3fde8e07ab7ee1ed142dc74c",
       "algorithms": "algorithms/webdriver2.json",
       "links": "links/webdriver2.json",
       "refs": "refs/webdriver2.json",
