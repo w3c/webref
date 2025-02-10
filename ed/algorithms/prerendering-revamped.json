@@ -608,6 +608,19 @@
       ]
     },
     {
+      "name": "clear cache for origin patch",
+      "html": "Modify <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-clear-site-data/#abstract-opdef-clear-cache-for-origin\" id=\"ref-for-abstract-opdef-clear-cache-for-origin\">clear cache for origin</a> to add the following step at the end.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①\">top-level traversable</a> <var>traversable</var> in the user agent’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable-set\" id=\"ref-for-top-level-traversable-set\">top-level traversable set</a>:</p>"
+        },
+        {
+          "html": "<p>If <var>traversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①③\">active document</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin③\">origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin③\">same origin</a> with <var>origin</var>, and <var>traversable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable②⑤\">prerendering traversable</a>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#destroy-a-top-level-traversable\" id=\"ref-for-destroy-a-top-level-traversable⑥\">destroy</a> <var>traversable</var>.</p>"
+        }
+      ]
+    },
+    {
       "name": "get the supported loading modes",
       "href": "https://wicg.github.io/nav-speculation/prerendering.html#get-the-supported-loading-modes",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"get-the-supported-loading-modes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the supported loading modes</dfn> for a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>response</var>:",
