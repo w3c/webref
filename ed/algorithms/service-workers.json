@@ -1278,6 +1278,9 @@
               ]
             },
             {
+              "html": "<p>If running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#check-router-registration-limit%E2%91%A0\" id=\"ref-for-check-router-registration-limit①\">Check Router Registration Limit</a> with <var>allRules</var> returns false, reject <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
+            },
+            {
               "html": "<p>Set <var>serviceWorker</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-list-of-router-rules\" id=\"ref-for-service-worker-list-of-router-rules①\">list of router rules</a> to <var>allRules</var>.</p>"
             },
             {
@@ -1410,7 +1413,7 @@
                               "rationale": "error",
                               "steps": [
                                 {
-                                  "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error\">error</a> <var>newStream</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
+                                  "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error\">error</a> <var>newStream</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code>.</p>"
                                 }
                               ]
                             }
@@ -4499,16 +4502,108 @@
       ]
     },
     {
+      "name": "Check Router Registration Limit",
+      "href": "https://w3c.github.io/ServiceWorker/#check-router-registration-limit%E2%91%A0",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-count-router-condition-result\" id=\"ref-for-dfn-count-router-condition-result\">count router condition result</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-count-router-condition-result-condition-count\" id=\"ref-for-dfn-count-router-condition-result-condition-count\">condition count</a> to 1024.</p>"
+        },
+        {
+          "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-dfn-count-router-condition-result-quota-exceeded\" id=\"ref-for-dfn-dfn-count-router-condition-result-quota-exceeded\">quota exceeded</a> to false.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> <var>rule</var> of <var>routerRules</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>result</var> to be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#count-router-inner-conditions%E2%91%A0\" id=\"ref-for-count-router-inner-conditions①\">Count Router Inner Conditions</a> with <var>rule</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routerrule-condition\" id=\"ref-for-dom-routerrule-condition①\">condition</a></code>\"], <var>result</var>, and 10.</p>"
+            },
+            {
+              "html": "<p>If <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-dfn-count-router-condition-result-quota-exceeded\" id=\"ref-for-dfn-dfn-count-router-condition-result-quota-exceeded①\">quota exceeded</a> is true, return false.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Count Router Inner Conditions",
+      "href": "https://w3c.github.io/ServiceWorker/#count-router-inner-conditions%E2%91%A0",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Decrement <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-count-router-condition-result-condition-count\" id=\"ref-for-dfn-count-router-condition-result-condition-count①\">condition count</a> by one.</p>"
+        },
+        {
+          "html": "If <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-count-router-condition-result-condition-count\" id=\"ref-for-dfn-count-router-condition-result-condition-count②\">condition count</a> is zero, or <var>depth</var> is zero, then:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-dfn-count-router-condition-result-quota-exceeded\" id=\"ref-for-dfn-dfn-count-router-condition-result-quota-exceeded②\">quota exceeded</a> to be true.</p>"
+            },
+            {
+              "html": "<p>Return <var>result</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>condition</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routercondition-or\" id=\"ref-for-dom-routercondition-or⑥\">_or</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②④\">exists</a>, then:",
+          "rationale": "decrement",
+          "steps": [
+            {
+              "html": "<p>Decrement <var>depth</var> by one.</p>"
+            },
+            {
+              "html": "For each <var>orCondition</var> of <var>condition</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routercondition-or\" id=\"ref-for-dom-routercondition-or⑦\">_or</a></code>\"]:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>result</var> to be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#count-router-inner-conditions%E2%91%A0\" id=\"ref-for-count-router-inner-conditions①①\">Count Router Inner Conditions</a> with <var>orCondition</var>, <var>result</var>, and <var>depth</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-dfn-count-router-condition-result-quota-exceeded\" id=\"ref-for-dfn-dfn-count-router-condition-result-quota-exceeded③\">quota exceeded</a> is true, return <var>result</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Else if <var>condition</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routercondition-not\" id=\"ref-for-dom-routercondition-not⑤\">not</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑤\">exists</a>, then:",
+          "rationale": "decrement",
+          "steps": [
+            {
+              "html": "<p>Decrement <var>depth</var> by one.</p>"
+            },
+            {
+              "html": "<p>Set <var>result</var> to be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#count-router-inner-conditions%E2%91%A0\" id=\"ref-for-count-router-inner-conditions①②\">Count Router Inner Conditions</a> with <var>condition</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routercondition-not\" id=\"ref-for-dom-routercondition-not⑥\">not</a></code>\"], <var>result</var>, and <var>depth</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-dfn-count-router-condition-result-quota-exceeded\" id=\"ref-for-dfn-dfn-count-router-condition-result-quota-exceeded④\">quota exceeded</a> is true, return <var>result</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
       "name": "Get Router Source",
       "href": "https://w3c.github.io/ServiceWorker/#get-router-source",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> <var>rule</var> of <var>serviceWorker</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-list-of-router-rules\" id=\"ref-for-service-worker-list-of-router-rules③\">list of router rules</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑧\">For each</a> <var>rule</var> of <var>serviceWorker</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-list-of-router-rules\" id=\"ref-for-service-worker-list-of-router-rules④\">list of router rules</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#match-router-condition\" id=\"ref-for-match-router-condition②\">Match Router Condition</a> algorithm with <var>rule</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routerrule-condition\" id=\"ref-for-dom-routerrule-condition①\">condition</a></code>\"], <var>serviceWorker</var> and <var>request</var> returns true, then return <var>rule</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routerrule-source\" id=\"ref-for-dom-routerrule-source①\">source</a></code>\"].</p>"
+              "html": "<p>If running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#match-router-condition\" id=\"ref-for-match-router-condition②\">Match Router Condition</a> algorithm with <var>rule</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routerrule-condition\" id=\"ref-for-dom-routerrule-condition②\">condition</a></code>\"], <var>serviceWorker</var> and <var>request</var> returns true, then return <var>rule</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routerrule-source\" id=\"ref-for-dom-routerrule-source①\">source</a></code>\"].</p>"
             }
           ]
         },
@@ -4629,7 +4724,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑧\">For each</a> <var>registration</var> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-to-registration-map\" id=\"ref-for-dfn-scope-to-registration-map⑦\">registration map</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values④\">values</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑨\">For each</a> <var>registration</var> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-to-registration-map\" id=\"ref-for-dfn-scope-to-registration-map⑦\">registration map</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values④\">values</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -4898,7 +4993,7 @@
               "html": "<p>Let <var>objectMap</var> be <var>settingsObject</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#environment-settings-object-service-worker-object-map\" id=\"ref-for-environment-settings-object-service-worker-object-map①\">service worker object map</a>.</p>"
             },
             {
-              "html": "<p>If <var>objectMap</var>[<var>worker</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②④\">exist</a>, then abort these steps.</p>"
+              "html": "<p>If <var>objectMap</var>[<var>worker</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑥\">exist</a>, then abort these steps.</p>"
             },
             {
               "html": "<p>Let <var>workerObj</var> be <var>objectMap</var>[<var>worker</var>].</p>"
@@ -4944,7 +5039,7 @@
           "html": "<p>Let <var>scopeStringSet</var> be an empty list.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑨\">For each</a> (<var>entry storage key</var>, <var>entry scope</var>) of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-to-registration-map\" id=\"ref-for-dfn-scope-to-registration-map①⓪\">registration map</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-keys\" id=\"ref-for-map-getting-the-keys⑤\">keys</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⓪\">For each</a> (<var>entry storage key</var>, <var>entry scope</var>) of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-to-registration-map\" id=\"ref-for-dfn-scope-to-registration-map①⓪\">registration map</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-keys\" id=\"ref-for-map-getting-the-keys⑤\">keys</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -5216,7 +5311,7 @@
           "html": "<p>Else, set <var>storage</var> to <var>targetStorage</var>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⓪\">For each</a> <var>requestResponse</var> of <var>storage</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②①\">For each</a> <var>requestResponse</var> of <var>storage</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -5318,7 +5413,7 @@
               "html": "<p>Let <var>resultList</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑧\">list</a>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②①\">For each</a> <var>operation</var> in <var>operations</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②②\">For each</a> <var>operation</var> in <var>operations</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -5341,7 +5436,7 @@
                       "html": "<p>Set <var>requestResponses</var> to the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#query-cache\" id=\"ref-for-query-cache④\">Query Cache</a> with <var>operation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-cache-batch-operation-request\" id=\"ref-for-dfn-cache-batch-operation-request④\">request</a> and <var>operation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-cache-batch-operation-options\" id=\"ref-for-dfn-cache-batch-operation-options②\">options</a>.</p>"
                     },
                     {
-                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②②\">For each</a> <var>requestResponse</var> in <var>requestResponses</var>:",
+                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>requestResponse</var> in <var>requestResponses</var>:",
                       "rationale": "remove",
                       "steps": [
                         {
@@ -5374,7 +5469,7 @@
                       "html": "<p>Set <var>requestResponses</var> to the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#query-cache\" id=\"ref-for-query-cache⑤\">Query Cache</a> with <var>operation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-cache-batch-operation-request\" id=\"ref-for-dfn-cache-batch-operation-request⑥\">request</a>.</p>"
                     },
                     {
-                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>requestResponse</var> of <var>requestResponses</var>:",
+                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②④\">For each</a> <var>requestResponse</var> of <var>requestResponses</var>:",
                       "rationale": "remove",
                       "steps": [
                         {
@@ -5411,7 +5506,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove④\">Remove</a> all the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①③\">items</a> from the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-relevant-request-response-list\" id=\"ref-for-dfn-relevant-request-response-list④\">relevant request response list</a>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②④\">For each</a> <var>requestResponse</var> of <var>backupCache</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑤\">For each</a> <var>requestResponse</var> of <var>backupCache</var>:",
               "rationale": "append",
               "steps": [
                 {
@@ -5450,7 +5545,7 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑤\">For each</a> string <var>requested</var> of <var>record</var>.[[RequestedModules]]:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑥\">For each</a> string <var>requested</var> of <var>record</var>.[[RequestedModules]]:",
           "rationale": "let",
           "steps": [
             {
@@ -5541,7 +5636,7 @@
           "html": "<p>Let <var>map</var> be <var>activeWorker</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-global-object\" id=\"ref-for-dfn-service-worker-global-object②⓪\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope-race-response-map\" id=\"ref-for-serviceworkerglobalscope-race-response-map③\">race response map</a>.</p>"
         },
         {
-          "html": "If <var>map</var>[<var>request</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑤\">exists</a>, then:",
+          "html": "If <var>map</var>[<var>request</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑦\">exists</a>, then:",
           "rationale": "let",
           "steps": [
             {
