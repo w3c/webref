@@ -16765,6 +16765,25 @@
         "extAttrs": [],
         "href": "https://html.spec.whatwg.org/multipage/canvas.html#predefinedcolorspace"
       },
+      "CanvasColorType": {
+        "fragment": "enum CanvasColorType { \"unorm8\", \"float16\" };",
+        "type": "enum",
+        "name": "CanvasColorType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "unorm8",
+            "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvascolortype-unorm8"
+          },
+          {
+            "type": "enum-value",
+            "value": "float16",
+            "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvascolortype-float16"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvascolortype"
+      },
       "CanvasFillRule": {
         "fragment": "enum CanvasFillRule { \"nonzero\", \"evenodd\" };",
         "type": "enum",
@@ -16785,7 +16804,7 @@
         "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvasfillrule"
       },
       "CanvasRenderingContext2DSettings": {
-        "fragment": "dictionary CanvasRenderingContext2DSettings {\n  boolean alpha = true;\n  boolean desynchronized = false;\n  PredefinedColorSpace colorSpace = \"srgb\";\n  boolean willReadFrequently = false;\n};",
+        "fragment": "dictionary CanvasRenderingContext2DSettings {\n  boolean alpha = true;\n  boolean desynchronized = false;\n  PredefinedColorSpace colorSpace = \"srgb\";\n  CanvasColorType colorType = \"unorm8\";\n  boolean willReadFrequently = false;\n};",
         "type": "dictionary",
         "name": "CanvasRenderingContext2DSettings",
         "inheritance": null,
@@ -16846,6 +16865,25 @@
             },
             "required": false,
             "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvasrenderingcontext2dsettings-colorspace"
+          },
+          {
+            "type": "field",
+            "name": "colorType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CanvasColorType"
+            },
+            "default": {
+              "type": "string",
+              "value": "unorm8"
+            },
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvasrenderingcontext2dsettings-colortype"
           },
           {
             "type": "field",
@@ -44097,7 +44135,8 @@
         "OffscreenCanvas"
       ],
       "CanvasRenderingContext2DSettings": [
-        "PredefinedColorSpace"
+        "PredefinedColorSpace",
+        "CanvasColorType"
       ],
       "CanvasRenderingContext2D": [
         "HTMLCanvasElement",
