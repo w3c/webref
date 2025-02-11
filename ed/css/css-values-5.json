@@ -41,8 +41,8 @@
   "selectors": [],
   "values": [
     {
-      "name": "<boolean-expr[]>",
-      "prose": "Several contexts (such as @media, @supports, if(), ...) specify conditions, and allow combining those conditions with boolean logic (and/or/not/grouping). Because they use the same non-trivial recursive syntax structure, the special <boolean-expr[]> production represents this pattern generically.",
+      "name": "<boolean-expr>",
+      "prose": "Several contexts (such as @media, @supports, if(), ...) specify conditions, and allow combining those conditions with boolean logic (and/or/not/grouping). Because they use the same non-trivial recursive syntax structure, the special <boolean-expr> production represents this pattern generically.",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-boolean-expr",
       "type": "type"
     },
@@ -247,28 +247,28 @@
         },
         {
           "name": "y-start",
-          "prose": "Computes the same as the physical edge keyword corresponding to the start/end side in the y-axisy/x axis.",
+          "prose": "Computes the same as the physical edge keyword corresponding to the start/end side in the y/x axis.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-position-y-start",
           "type": "value",
           "value": "y-start"
         },
         {
           "name": "y-end",
-          "prose": "Computes the same as the physical edge keyword corresponding to the start/end side in the y-axisy/x axis.",
+          "prose": "Computes the same as the physical edge keyword corresponding to the start/end side in the y/x axis.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-position-y-end",
           "type": "value",
           "value": "y-end"
         },
         {
           "name": "x-start",
-          "prose": "Computes the same as the physical edge keyword corresponding to the start/end side in the y-axisy/x axis.",
+          "prose": "Computes the same as the physical edge keyword corresponding to the start/end side in the y/x axis.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-position-x-start",
           "type": "value",
           "value": "x-start"
         },
         {
           "name": "x-end",
-          "prose": "Computes the same as the physical edge keyword corresponding to the start/end side in the y-axisy/x axis.",
+          "prose": "Computes the same as the physical edge keyword corresponding to the start/end side in the y/x axis.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-position-x-end",
           "type": "value",
           "value": "x-end"
@@ -541,7 +541,7 @@
     },
     {
       "name": "ident()",
-      "prose": "The ident() function is an arbitrary substitution function that can be used to manually construct <custom-ident> values from several parts.",
+      "prose": "The ident() function represents an <ident>, and can be used to manually construct <custom-ident> values from several parts.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-ident",
       "type": "function",
       "value": "ident( <ident-arg>+ )"
@@ -621,12 +621,6 @@
   ],
   "warnings": [
     {
-      "msg": "Duplicate definition",
-      "name": "ident()",
-      "href": "https://drafts.csswg.org/css-values-5/#funcdef-ident%E2%91%A0",
-      "type": "function"
-    },
-    {
       "msg": "Missing definition",
       "name": "]>",
       "value": "not <boolean-expr-group> | <boolean-expr-group> [ [ and <boolean-expr-group> ]* | [ or <boolean-expr-group> ]* ]"
@@ -644,7 +638,7 @@
     {
       "msg": "Missing definition",
       "name": "mix-function()",
-      "value": "mix-function( <progress>,"
+      "value": "mix-function( <progress>, start-value, end-value )"
     },
     {
       "msg": "Missing definition",

@@ -177,7 +177,7 @@
         "href": "https://w3c.github.io/webappsec-permissions-policy/#permissionspolicy"
       },
       "PermissionsPolicyViolationReportBody": {
-        "fragment": "[Exposed=Window]\ninterface PermissionsPolicyViolationReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString featureId;\n  readonly attribute DOMString? sourceFile;\n  readonly attribute long? lineNumber;\n  readonly attribute long? columnNumber;\n  readonly attribute DOMString disposition;\n  readonly attribute DOMString? allowAttribute;\n};",
+        "fragment": "[Exposed=Window]\ninterface PermissionsPolicyViolationReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString featureId;\n  readonly attribute DOMString? sourceFile;\n  readonly attribute long? lineNumber;\n  readonly attribute long? columnNumber;\n  readonly attribute DOMString disposition;\n  readonly attribute DOMString? allowAttribute;\n  readonly attribute DOMString? srcAttribute;\n};",
         "type": "interface",
         "name": "PermissionsPolicyViolationReportBody",
         "inheritance": "ReportBody",
@@ -300,6 +300,22 @@
             "special": "",
             "readonly": true,
             "href": "https://w3c.github.io/webappsec-permissions-policy/#dom-permissionspolicyviolationreportbody-allowattribute"
+          },
+          {
+            "type": "attribute",
+            "name": "srcAttribute",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-permissions-policy/#dom-permissionspolicyviolationreportbody-srcattribute"
           }
         ],
         "extAttrs": [

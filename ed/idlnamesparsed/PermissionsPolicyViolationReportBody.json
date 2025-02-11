@@ -6,7 +6,7 @@
       "title": "Permissions Policy",
       "url": "https://www.w3.org/TR/permissions-policy-1/"
     },
-    "fragment": "[Exposed=Window]\ninterface PermissionsPolicyViolationReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString featureId;\n  readonly attribute DOMString? sourceFile;\n  readonly attribute long? lineNumber;\n  readonly attribute long? columnNumber;\n  readonly attribute DOMString disposition;\n  readonly attribute DOMString? allowAttribute;\n};",
+    "fragment": "[Exposed=Window]\ninterface PermissionsPolicyViolationReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString featureId;\n  readonly attribute DOMString? sourceFile;\n  readonly attribute long? lineNumber;\n  readonly attribute long? columnNumber;\n  readonly attribute DOMString disposition;\n  readonly attribute DOMString? allowAttribute;\n  readonly attribute DOMString? srcAttribute;\n};",
     "href": "https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody"
   },
   "extended": [],
