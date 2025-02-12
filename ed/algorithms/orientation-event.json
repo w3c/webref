@@ -7,17 +7,17 @@
     {
       "name": "DeviceOrientationEvent/requestPermission(absolute)",
       "href": "https://w3c.github.io/deviceorientation/#dom-deviceorientationevent-requestpermission",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DeviceOrientationEvent\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestPermission(absolute)|requestPermission()\" id=\"dom-deviceorientationevent-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission(<var>absolute</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DeviceOrientationEvent\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestPermission(absolute)|requestPermission()\" id=\"dom-deviceorientationevent-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission(<var>absolute</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>global</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object\">current global object</a>.</p>"
         },
         {
-          "html": "<p>Let <var>hasTransientActivation</var> be true if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a> has <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation\">transient activation</a>, and false otherwise.</p>"
+          "html": "<p>Let <var>hasTransientActivation</var> be true if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a> has <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation\">transient activation</a>, and false otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant Realm</a>.</p>"
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant Realm</a>.</p>"
         },
         {
           "html": "<p>Let <var>permissions</var> be « <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-accelerometer\" id=\"ref-for-permissiondef-accelerometer③\">\"accelerometer\"</a>, <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-gyroscope\" id=\"ref-for-permissiondef-gyroscope③\">\"gyroscope\"</a> ».</p>"
@@ -81,14 +81,14 @@
     {
       "name": "fire an orientation event",
       "href": "https://w3c.github.io/deviceorientation/#fire-an-orientation-event",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-an-orientation-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fire an orientation event</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①\">DOMString</a></code> <var>event</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> <var>window</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-boolean\" id=\"ref-for-idl-boolean③\">boolean</a></code> <var>absolute</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-an-orientation-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fire an orientation event</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①\">DOMString</a></code> <var>event</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> <var>window</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-boolean\" id=\"ref-for-idl-boolean③\">boolean</a></code> <var>absolute</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>orientation</var> be null.</p>"
         },
         {
-          "html": "<p>Let <var>topLevelTraversable</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable\">navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top\">top-level traversable</a>.</p>"
+          "html": "<p>Let <var>topLevelTraversable</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable\">navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top\">top-level traversable</a>.</p>"
         },
         {
           "html": "<p>Let <var>virtualSensorType</var> be \"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#relative-orientation-virtual-sensor-type\" id=\"ref-for-relative-orientation-virtual-sensor-type\">relative-orientation</a></code>\" if <var>absolute</var> is false, and \"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#absolute-orientation-virtual-sensor-type\" id=\"ref-for-absolute-orientation-virtual-sensor-type\">absolute-orientation</a></code>\" otherwise.</p>"
@@ -208,7 +208,7 @@
     },
     {
       "name": "deviceorientation firing steps",
-      "html": "Whenever a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#significant-change-in-orientation\" id=\"ref-for-significant-change-in-orientation②\">significant change in orientation</a> occurs, the user agent must execute the following steps on a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable\">navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window\">active window</a> <var>window</var>:",
+      "html": "Whenever a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#significant-change-in-orientation\" id=\"ref-for-significant-change-in-orientation②\">significant change in orientation</a> occurs, the user agent must execute the following steps on a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable\">navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window\">active window</a> <var>window</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -251,7 +251,7 @@
     },
     {
       "name": "deviceorientationabsolute firing steps",
-      "html": "Whenever a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#significant-change-in-orientation\" id=\"ref-for-significant-change-in-orientation③\">significant change in orientation</a> occurs, the user agent must execute the following steps on a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable①\">navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window①\">active window</a> <var>window</var>:",
+      "html": "Whenever a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#significant-change-in-orientation\" id=\"ref-for-significant-change-in-orientation③\">significant change in orientation</a> occurs, the user agent must execute the following steps on a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable①\">navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window①\">active window</a> <var>window</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -262,17 +262,17 @@
     {
       "name": "DeviceMotionEvent/requestPermission()",
       "href": "https://w3c.github.io/deviceorientation/#dom-devicemotionevent-requestpermission",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DeviceMotionEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-devicemotionevent-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DeviceMotionEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-devicemotionevent-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission()</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>global</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object①\">current global object</a>.</p>"
         },
         {
-          "html": "<p>Let <var>hasTransientActivation</var> be true if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> has <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation①\">transient activation</a>, and false otherwise.</p>"
+          "html": "<p>Let <var>hasTransientActivation</var> be true if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> has <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation①\">transient activation</a>, and false otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant Realm</a>.</p>"
+          "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant Realm</a>.</p>"
         },
         {
           "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
@@ -321,7 +321,7 @@
               ]
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task④\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#device-motion-and-orientation-task-source\" id=\"ref-for-device-motion-and-orientation-task-source④\">device motion and orientation task source</a> given <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>result</var> with <var>permissionState</var>.</p>\n       <p></p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task④\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#device-motion-and-orientation-task-source\" id=\"ref-for-device-motion-and-orientation-task-source④\">device motion and orientation task source</a> given <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>result</var> with <var>permissionState</var>.</p>"
             }
           ]
         },
@@ -332,7 +332,7 @@
     },
     {
       "name": "devicemotion firing steps",
-      "html": "At an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined②\">implementation-defined</a> interval <var>interval</var>, the user agent must execute the following steps on a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable②\">navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window②\">active window</a> <var>window</var>:",
+      "html": "At an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined②\">implementation-defined</a> interval <var>interval</var>, the user agent must execute the following steps on a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable②\">navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window②\">active window</a> <var>window</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -351,7 +351,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>topLevelTraversable</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①\">navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①\">top-level traversable</a>.</p>"
+          "html": "<p>Let <var>topLevelTraversable</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①\">navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①\">top-level traversable</a>.</p>"
         },
         {
           "html": "<p>Let <var>platformLinearAcceleration</var> be null.</p>"
@@ -550,7 +550,7 @@
     {
       "name": "parse orientation data reading",
       "href": "https://w3c.github.io/deviceorientation/#parse-orientation-data-reading",
-      "html": "To perform the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-orientation-data-reading\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse orientation data reading</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm, given a JSON <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object-objects\" id=\"ref-for-sec-object-objects\">Object</a></code> <var>parameters</var>:",
+      "html": "To perform the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-orientation-data-reading\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse orientation data reading</dfn> algorithm, given a JSON <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object-objects\" id=\"ref-for-sec-object-objects\">Object</a></code> <var>parameters</var>:",
       "rationale": ".algorithm",
       "steps": [
         {

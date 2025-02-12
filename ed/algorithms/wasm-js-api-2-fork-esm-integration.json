@@ -57,6 +57,9 @@
           "html": "<p>Set <var>moduleObject</var>.[[Bytes]] to <var>bytes</var>.</p>"
         },
         {
+          "html": "<p>Set <var>moduleObject</var>.[[ModuleRecord]] to null.</p>"
+        },
+        {
           "html": "<p>Return <var>moduleObject</var>.</p>"
         }
       ]
@@ -2240,7 +2243,13 @@
           ]
         },
         {
-          "html": "<p>Return {\n  [[Realm]]: <var>realm</var>,\n  [[Environment]]: ~empty~,\n  [[Namespace]]: ~empty~,\n  [[ModuleSource]]: <var>module</var>,\n  [[HostDefined]]: <var>hostDefined</var>,\n  [[Status]]: \"new\",\n  [[EvaluationError]]: undefined,\n  [[DFSIndex]]: undefined,\n  [[DFSAncestorIndex]]: undefined,\n  [[RequestedModules]]: <var>requestedModules</var>,\n  [[LoadedModules]]: « »,\n  [[CycleRoot]]: ~empty~,\n  [[HasTLA]]: false,\n  [[AsyncEvaluation]]: false,\n  [[TopLevelCapability]]: ~empty~\n  [[AsyncParentModules]]: « »,\n  [[PendingAsyncDependencies]]: ~empty~,\n}.</p>"
+          "html": "<p>Let <var>moduleRecord</var> be {\n  [[Realm]]: <var>realm</var>,\n  [[Environment]]: ~empty~,\n  [[Namespace]]: ~empty~,\n  [[ModuleSource]]: <var>module</var>,\n  [[HostDefined]]: <var>hostDefined</var>,\n  [[Status]]: \"new\",\n  [[EvaluationError]]: undefined,\n  [[DFSIndex]]: undefined,\n  [[DFSAncestorIndex]]: undefined,\n  [[RequestedModules]]: <var>requestedModules</var>,\n  [[LoadedModules]]: « »,\n  [[CycleRoot]]: ~empty~,\n  [[HasTLA]]: false,\n  [[AsyncEvaluation]]: false,\n  [[TopLevelCapability]]: ~empty~\n  [[AsyncParentModules]]: « »,\n  [[PendingAsyncDependencies]]: ~empty~,\n}.</p>"
+        },
+        {
+          "html": "<p>Set <var>module</var>.[[ModuleRecord]] to <var>moduleRecord</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>moduleRecord</var>.</p>"
         }
       ]
     },
@@ -2302,9 +2311,20 @@
       ]
     },
     {
+      "name": "GetModuleSourceKind",
+      "href": "https://webassembly.github.io/esm-integration/js-api/#get-module-source-kind",
+      "html": "<h3 class=\"heading settled\" data-level=\"9.3\" id=\"get-module-source-kind\"><span class=\"secno\">9.3. </span><span class=\"content\">GetModuleSourceKind ( ) Concrete Method</span><a class=\"self-link\" href=\"https://webassembly.github.io/esm-integration/js-api/#get-module-source-kind\"></a></h3>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return \"WebAssembly.Module\".</p>"
+        }
+      ]
+    },
+    {
       "name": "InitializeEnvironment",
       "href": "https://webassembly.github.io/esm-integration/js-api/#module-declaration-environment-setup",
-      "html": "<h3 class=\"heading settled\" data-level=\"9.3\" id=\"module-declaration-environment-setup\"><span class=\"secno\">9.3. </span><span class=\"content\">InitializeEnvironment ( ) Concrete Method</span><a class=\"self-link\" href=\"https://webassembly.github.io/esm-integration/js-api/#module-declaration-environment-setup\"></a></h3>",
+      "html": "<h3 class=\"heading settled\" data-level=\"9.4\" id=\"module-declaration-environment-setup\"><span class=\"secno\">9.4. </span><span class=\"content\">InitializeEnvironment ( ) Concrete Method</span><a class=\"self-link\" href=\"https://webassembly.github.io/esm-integration/js-api/#module-declaration-environment-setup\"></a></h3>",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -2330,7 +2350,7 @@
     {
       "name": "ExecuteModule",
       "href": "https://webassembly.github.io/esm-integration/js-api/#module-execution",
-      "html": "<h3 class=\"heading settled\" data-level=\"9.4\" id=\"module-execution\"><span class=\"secno\">9.4. </span><span class=\"content\">ExecuteModule ( [ <var>promiseCapability</var> ] ) Concrete Method</span><a class=\"self-link\" href=\"https://webassembly.github.io/esm-integration/js-api/#module-execution\"></a></h3>",
+      "html": "<h3 class=\"heading settled\" data-level=\"9.5\" id=\"module-execution\"><span class=\"secno\">9.5. </span><span class=\"content\">ExecuteModule ( [ <var>promiseCapability</var> ] ) Concrete Method</span><a class=\"self-link\" href=\"https://webassembly.github.io/esm-integration/js-api/#module-execution\"></a></h3>",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -2401,6 +2421,54 @@
               "html": "<p>Perform ! <var>record</var>.[[Environment]].InitializeBinding(<var>name</var>, ! Get(<var>instance</var>.[[Exports]], <var>name</var>)).</p>"
             }
           ]
+        }
+      ]
+    },
+    {
+      "html": "WebAssembly Module Records have the following methods:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>specifier</var> is a WebAssembly <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#module\" id=\"ref-for-module①③\">Module</a></code> object with a [[Module]] internal slot,",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>specifier</var>.[[Module]].[[ModuleRecord]] is null,",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>realm</var> be the current agent’s realm record.</p>"
+                },
+                {
+                  "html": "<p>Let <var>requestedModules</var> be a set.</p>"
+                },
+                {
+                  "html": "For each (<var>moduleName</var>, <var>name</var>, <var>type</var>) in <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-module-imports\" id=\"ref-for-embed-module-imports④\">module_imports</a>(<var>specifier</var>.[[Module]]),",
+                  "rationale": "append",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> <var>moduleName</var> to <var>requestedModules</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Let <var>moduleRecord</var> be {\n  [[Realm]]: <var>realm</var>,\n  [[Environment]]: ~empty~,\n  [[Namespace]]: ~empty~,\n  [[ModuleSource]]: <var>module</var>,\n  [[HostDefined]]: ~empty~,\n  [[Status]]: \"new\",\n  [[EvaluationError]]: undefined,\n  [[DFSIndex]]: undefined,\n  [[DFSAncestorIndex]]: undefined,\n  [[RequestedModules]]: <var>requestedModules</var>,\n  [[LoadedModules]]: « »,\n  [[CycleRoot]]: ~empty~,\n  [[HasTLA]]: false,\n  [[AsyncEvaluation]]: false,\n  [[TopLevelCapability]]: ~empty~\n  [[AsyncParentModules]]: « »,\n  [[PendingAsyncDependencies]]: ~empty~,\n}.</p>"
+                },
+                {
+                  "html": "<p>Set <var>module</var>.[[ModuleRecord]] to <var>moduleRecord</var>.</p>"
+                },
+                {
+                  "html": "<p>Return <var>moduleRecord</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Return <var>specifier</var>.[[Module]].[[ModuleRecord]].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return ~not-a-source~.</p>"
         }
       ]
     }

@@ -700,7 +700,7 @@
         "href": "https://drafts.csswg.org/web-animations-2/#dictdef-animatable-animationplaybackeventinit"
       },
       "AnimationTrigger": {
-        "fragment": "[Exposed=Window]\ninterface AnimationTrigger {\n  constructor(optional AnimationTriggerOptions options = {});\n  attribute AnimationTimeline timeline;\n  attribute AnimationTriggerType type;\n};",
+        "fragment": "[Exposed=Window]\ninterface AnimationTrigger {\n  constructor(optional AnimationTriggerOptions options = {});\n  attribute AnimationTimeline timeline;\n  attribute AnimationTriggerType type;\n  attribute any rangeStart;\n  attribute any rangeEnd;\n  attribute any exitRangeStart;\n  attribute any exitRangeEnd;\n};",
         "type": "interface",
         "name": "AnimationTrigger",
         "inheritance": null,
@@ -761,6 +761,70 @@
             "special": "",
             "readonly": false,
             "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtrigger-type"
+          },
+          {
+            "type": "attribute",
+            "name": "rangeStart",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtrigger-rangestart"
+          },
+          {
+            "type": "attribute",
+            "name": "rangeEnd",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtrigger-rangeend"
+          },
+          {
+            "type": "attribute",
+            "name": "exitRangeStart",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtrigger-exitrangestart"
+          },
+          {
+            "type": "attribute",
+            "name": "exitRangeEnd",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtrigger-exitrangeend"
           }
         ],
         "extAttrs": [
@@ -778,7 +842,7 @@
         "href": "https://drafts.csswg.org/web-animations-2/#animatable-animationtrigger"
       },
       "AnimationTriggerOptions": {
-        "fragment": "dictionary AnimationTriggerOptions {\n  AnimationTimeline? timeline;\n  AnimationTriggerType? type = \"once\";\n};",
+        "fragment": "dictionary AnimationTriggerOptions {\n  AnimationTimeline? timeline;\n  AnimationTriggerType? type = \"once\";\n  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeStart = \"normal\";\n  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeEnd = \"normal\";\n  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) exitRangeStart = \"auto\";\n  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) exitRangeEnd = \"auto\";\n};",
         "type": "dictionary",
         "name": "AnimationTriggerOptions",
         "inheritance": null,
@@ -817,6 +881,214 @@
             },
             "required": false,
             "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-type"
+          },
+          {
+            "type": "field",
+            "name": "rangeStart",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TimelineRangeOffset"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumericValue"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSKeywordValue"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "string",
+              "value": "normal"
+            },
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-rangestart"
+          },
+          {
+            "type": "field",
+            "name": "rangeEnd",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TimelineRangeOffset"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumericValue"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSKeywordValue"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "string",
+              "value": "normal"
+            },
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-rangeend"
+          },
+          {
+            "type": "field",
+            "name": "exitRangeStart",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TimelineRangeOffset"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumericValue"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSKeywordValue"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "string",
+              "value": "auto"
+            },
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-exitrangestart"
+          },
+          {
+            "type": "field",
+            "name": "exitRangeEnd",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TimelineRangeOffset"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumericValue"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSKeywordValue"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "string",
+              "value": "auto"
+            },
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-exitrangeend"
           }
         ],
         "extAttrs": [],
@@ -1698,7 +1970,10 @@
       ],
       "AnimationTriggerOptions": [
         "AnimationTimeline",
-        "AnimationTriggerType"
+        "AnimationTriggerType",
+        "TimelineRangeOffset",
+        "CSSNumericValue",
+        "CSSKeywordValue"
       ]
     },
     "externalDependencies": [
