@@ -1,6 +1,6 @@
-From 9afc09a9b0b3c11be7ae1bebe5d3d8400abd58ec Mon Sep 17 00:00:00 2001
+From f15cbabe6dadabe7881e1a1ed5c072e714ea2fe7 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Tue, 4 Feb 2025 13:44:24 +0100
+Date: Wed, 12 Feb 2025 07:55:56 +0100
 Subject: [PATCH] Drop duplicate `fillMode` enum, rollback range changes
 
 The spec is a delta spec and re-defines the `fillMode` enum to change the
@@ -11,13 +11,12 @@ delta spec.
 
 The `rangeStart` and `rangeEnd` definitions are currently invalid, pending:
 https://github.com/w3c/csswg-drafts/pull/9360
-https://github.com/w3c/csswg-drafts/issues/11624
 ---
- ed/idl/web-animations-2.idl | 12 ------------
- 1 file changed, 12 deletions(-)
+ ed/idl/web-animations-2.idl | 4 ----
+ 1 file changed, 4 deletions(-)
 
 diff --git a/ed/idl/web-animations-2.idl b/ed/idl/web-animations-2.idl
-index 6bd3067d5..ad047f573 100644
+index 9f2d3b5a0..c4a0c2532 100644
 --- a/ed/idl/web-animations-2.idl
 +++ b/ed/idl/web-animations-2.idl
 @@ -15,8 +15,6 @@ partial interface Animation {
@@ -38,26 +37,6 @@ index 6bd3067d5..ad047f573 100644
  [Exposed=Window]
  interface GroupEffect {
    constructor(sequence<AnimationEffect>? children,
-@@ -123,19 +119,11 @@ interface AnimationTrigger {
-   constructor(optional AnimationTriggerOptions options = {});
-   attribute AnimationTimeline timeline;
-   attribute AnimationTriggerType type;
--  attribute (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeStart = "normal";
--  attribute (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeEnd = "normal";
--  attribute (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) exitRangeStart = "auto";
--  attribute (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) exitRangeEnd = "auto";
- };
- 
- dictionary AnimationTriggerOptions {
-   AnimationTimeline? timeline;
-   AnimationTriggerType? type = "once";
--  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString)? rangeStart = "normal";
--  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString)? rangeEnd = "normal";
--  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString)? exitRangeStart = "auto";
--  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString)? exitRangeEnd = "auto";
- };
- 
- enum AnimationTriggerType { "once", "repeat", "alternate", "state" };
 -- 
 2.37.1.windows.1
 
