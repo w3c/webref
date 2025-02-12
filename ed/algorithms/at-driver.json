@@ -152,7 +152,7 @@
           "html": "<p>Let <var>listener</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#websocket-listener\" id=\"ref-for-websocket-listener③\">WebSocket listener</a> with <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑤\">implementation-defined</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#websocket-listener-host\" id=\"ref-for-websocket-listener-host\">host</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#websocket-listener-port\" id=\"ref-for-websocket-listener-port\">port</a>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#websocket-listener-secure-flag\" id=\"ref-for-websocket-listener-secure-flag①\">secure flag</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>listener</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end\" id=\"ref-for-remote-end②②\">remote end</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-active-listeners\" id=\"ref-for-remote-end-active-listeners①\">active listeners</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>listener</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end\" id=\"ref-for-remote-end②②\">remote end</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-active-listeners\" id=\"ref-for-remote-end-active-listeners①\">active listeners</a>.</p>"
         },
         {
           "html": "<p>Return <var>listener</var>.</p>"
@@ -595,8 +595,10 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-steps\" id=\"ref-for-remote-end-steps⑤\">remote end steps</a> given <var>session</var> and <var>command parameters</var> are:",
-      "rationale": "try",
+      "name": "press keys",
+      "href": "https://w3c.github.io/at-driver/#press-keys",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"press-keys\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">press keys</dfn> given <var>command parameters</var>:",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#try\" id=\"ref-for-try③\">Try</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#check-that-keyboard-interaction-can-be-simulated\" id=\"ref-for-check-that-keyboard-interaction-can-be-simulated\">check that keyboard interaction can be simulated</a>.</p>"
@@ -630,6 +632,46 @@
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#success\" id=\"ref-for-success①④\">success</a> with data <var>body</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "remote end steps for interaction.userIntent",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-steps\" id=\"ref-for-remote-end-steps⑤\">remote end steps</a> given <var>session</var> and <var>command parameters</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>name</var> be the value of the <code>name</code> field of <var>command\nparameters</var>.</p>"
+        },
+        {
+          "html": "If there is an entry in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#table-of-standard-user-intents\" id=\"ref-for-table-of-standard-user-intents\">table of standard user intents</a> with name <var>name</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>algorithm</var> be the algorithm associated with user intent <var>name</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#table-of-standard-user-intents\" id=\"ref-for-table-of-standard-user-intents①\">table of standard user intents</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, if there is an entry in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-table-of-extension-user-intents\" id=\"ref-for-remote-end-table-of-extension-user-intents\">table of extension user intents</a> with name <var>name</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>algorithm</var> be the algorithm associated with user intent <var>name</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-table-of-extension-user-intents\" id=\"ref-for-remote-end-table-of-extension-user-intents①\">table of extension user intents</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error\" id=\"ref-for-error①③\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code\" id=\"ref-for-error-code⑦\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code-unknown-user-intent\" id=\"ref-for-error-code-unknown-user-intent\">unknown user intent</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return the result of evaluating <var>algorithm</var> given <var>command parameters</var>.</p>"
         }
       ]
     },
