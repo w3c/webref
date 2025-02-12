@@ -10,7 +10,6 @@
           "SpeechRecognition",
           "SpeechRecognitionErrorEvent",
           "SpeechRecognitionEvent",
-          "SpeechGrammarList",
           "SpeechSynthesisUtterance",
           "SpeechSynthesisEvent",
           "SpeechSynthesisErrorEvent"
@@ -21,7 +20,6 @@
           "SpeechRecognitionAlternative",
           "SpeechRecognitionResult",
           "SpeechRecognitionResultList",
-          "SpeechGrammar",
           "SpeechSynthesis",
           "SpeechSynthesisVoice"
         ]
@@ -29,7 +27,7 @@
     },
     "idlNames": {
       "SpeechRecognition": {
-        "fragment": "[Exposed=Window]\ninterface SpeechRecognition : EventTarget {\n    constructor();\n\n    // recognition parameters\n    attribute SpeechGrammarList grammars;\n    attribute DOMString lang;\n    attribute boolean continuous;\n    attribute boolean interimResults;\n    attribute unsigned long maxAlternatives;\n    attribute SpeechRecognitionMode mode;\n\n    // methods to drive the speech interaction\n    undefined start();\n    undefined start(MediaStreamTrack audioTrack);\n    undefined stop();\n    undefined abort();\n    boolean onDeviceWebSpeechAvailable(DOMString lang);\n    boolean installOnDeviceSpeechRecognition(DOMString lang);\n\n    // event methods\n    attribute EventHandler onaudiostart;\n    attribute EventHandler onsoundstart;\n    attribute EventHandler onspeechstart;\n    attribute EventHandler onspeechend;\n    attribute EventHandler onsoundend;\n    attribute EventHandler onaudioend;\n    attribute EventHandler onresult;\n    attribute EventHandler onnomatch;\n    attribute EventHandler onerror;\n    attribute EventHandler onstart;\n    attribute EventHandler onend;\n};",
+        "fragment": "[Exposed=Window]\ninterface SpeechRecognition : EventTarget {\n    constructor();\n\n    // recognition parameters\n    attribute DOMString lang;\n    attribute boolean continuous;\n    attribute boolean interimResults;\n    attribute unsigned long maxAlternatives;\n    attribute SpeechRecognitionMode mode;\n\n    // methods to drive the speech interaction\n    undefined start();\n    undefined start(MediaStreamTrack audioTrack);\n    undefined stop();\n    undefined abort();\n    boolean onDeviceWebSpeechAvailable(DOMString lang);\n    boolean installOnDeviceSpeechRecognition(DOMString lang);\n\n    // event methods\n    attribute EventHandler onaudiostart;\n    attribute EventHandler onsoundstart;\n    attribute EventHandler onspeechstart;\n    attribute EventHandler onspeechend;\n    attribute EventHandler onsoundend;\n    attribute EventHandler onaudioend;\n    attribute EventHandler onresult;\n    attribute EventHandler onnomatch;\n    attribute EventHandler onerror;\n    attribute EventHandler onstart;\n    attribute EventHandler onend;\n};",
         "type": "interface",
         "name": "SpeechRecognition",
         "inheritance": "EventTarget",
@@ -39,22 +37,6 @@
             "arguments": [],
             "extAttrs": [],
             "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-speechrecognition"
-          },
-          {
-            "type": "attribute",
-            "name": "grammars",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "SpeechGrammarList"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false,
-            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-grammars"
           },
           {
             "type": "attribute",
@@ -475,7 +457,7 @@
         "href": "https://webaudio.github.io/web-speech-api/#speechrecognition"
       },
       "SpeechRecognitionErrorCode": {
-        "fragment": "enum SpeechRecognitionErrorCode {\n    \"no-speech\",\n    \"aborted\",\n    \"audio-capture\",\n    \"network\",\n    \"not-allowed\",\n    \"service-not-allowed\",\n    \"bad-grammar\",\n    \"language-not-supported\"\n};",
+        "fragment": "enum SpeechRecognitionErrorCode {\n    \"no-speech\",\n    \"aborted\",\n    \"audio-capture\",\n    \"network\",\n    \"not-allowed\",\n    \"service-not-allowed\",\n    \"language-not-supported\"\n};",
         "type": "enum",
         "name": "SpeechRecognitionErrorCode",
         "values": [
@@ -508,11 +490,6 @@
             "type": "enum-value",
             "value": "service-not-allowed",
             "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionerrorcode-service-not-allowed"
-          },
-          {
-            "type": "enum-value",
-            "value": "bad-grammar",
-            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionerrorcode-bad-grammar"
           },
           {
             "type": "enum-value",
@@ -1029,238 +1006,6 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://webaudio.github.io/web-speech-api/#dictdef-speechrecognitioneventinit"
-      },
-      "SpeechGrammar": {
-        "fragment": "// The object representing a speech grammar\n[Exposed=Window]\ninterface SpeechGrammar {\n    attribute DOMString src;\n    attribute float weight;\n};",
-        "type": "interface",
-        "name": "SpeechGrammar",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "src",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false,
-            "href": "https://webaudio.github.io/web-speech-api/#dom-speechgrammar-src"
-          },
-          {
-            "type": "attribute",
-            "name": "weight",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "float"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false,
-            "href": "https://webaudio.github.io/web-speech-api/#dom-speechgrammar-weight"
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://webaudio.github.io/web-speech-api/#speechgrammar"
-      },
-      "SpeechGrammarList": {
-        "fragment": "// The object representing a speech grammar collection\n[Exposed=Window]\ninterface SpeechGrammarList {\n    constructor();\n    readonly attribute unsigned long length;\n    getter SpeechGrammar item(unsigned long index);\n    undefined addFromURI(DOMString src,\n                    optional float weight = 1.0);\n    undefined addFromString(DOMString string,\n                    optional float weight = 1.0);\n};",
-        "type": "interface",
-        "name": "SpeechGrammarList",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [],
-            "extAttrs": [],
-            "href": "https://webaudio.github.io/web-speech-api/#dom-speechgrammarlist-speechgrammarlist"
-          },
-          {
-            "type": "attribute",
-            "name": "length",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://webaudio.github.io/web-speech-api/#dom-speechgrammarlist-length"
-          },
-          {
-            "type": "operation",
-            "name": "item",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "SpeechGrammar"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "index",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "getter"
-          },
-          {
-            "type": "operation",
-            "name": "addFromURI",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "src",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "weight",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "float"
-                },
-                "default": {
-                  "type": "number",
-                  "value": "1.0"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://webaudio.github.io/web-speech-api/#dom-speechgrammarlist-addfromuri"
-          },
-          {
-            "type": "operation",
-            "name": "addFromString",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "string",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "weight",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "float"
-                },
-                "default": {
-                  "type": "number",
-                  "value": "1.0"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://webaudio.github.io/web-speech-api/#dom-speechgrammarlist-addfromstring"
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://webaudio.github.io/web-speech-api/#speechgrammarlist"
       },
       "SpeechSynthesis": {
         "fragment": "[Exposed=Window]\ninterface SpeechSynthesis : EventTarget {\n    readonly attribute boolean pending;\n    readonly attribute boolean speaking;\n    readonly attribute boolean paused;\n\n    attribute EventHandler onvoiceschanged;\n\n    undefined speak(SpeechSynthesisUtterance utterance);\n    undefined cancel();\n    undefined pause();\n    undefined resume();\n    sequence<SpeechSynthesisVoice> getVoices();\n};",
@@ -2268,8 +2013,6 @@
         "SpeechRecognitionResult",
         "SpeechRecognitionResultList",
         "SpeechRecognitionEvent",
-        "SpeechGrammar",
-        "SpeechGrammarList",
         "SpeechSynthesis",
         "SpeechSynthesisUtterance",
         "SpeechSynthesisEvent",
@@ -2280,7 +2023,6 @@
     "dependencies": {
       "SpeechRecognition": [
         "EventTarget",
-        "SpeechGrammarList",
         "SpeechRecognitionMode",
         "MediaStreamTrack",
         "EventHandler"
@@ -2309,10 +2051,6 @@
       "SpeechRecognitionEventInit": [
         "EventInit",
         "SpeechRecognitionResultList"
-      ],
-      "SpeechGrammar": [],
-      "SpeechGrammarList": [
-        "SpeechGrammar"
       ],
       "SpeechSynthesis": [
         "EventTarget",

@@ -4,7 +4,6 @@ interface SpeechRecognition : EventTarget {
     constructor();
 
     // recognition parameters
-    attribute SpeechGrammarList grammars;
     attribute DOMString lang;
     attribute boolean continuous;
     attribute boolean interimResults;
