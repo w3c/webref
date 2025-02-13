@@ -1278,7 +1278,7 @@
               ]
             },
             {
-              "html": "<p>If running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#check-router-registration-limit%E2%91%A0\" id=\"ref-for-check-router-registration-limit①\">Check Router Registration Limit</a> with <var>allRules</var> returns false, reject <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
+              "html": "<p>If running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#check-router-registration-limit\" id=\"ref-for-check-router-registration-limit\">Check Router Registration Limit</a> with <var>allRules</var> returns false, reject <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
             },
             {
               "html": "<p>Set <var>serviceWorker</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-list-of-router-rules\" id=\"ref-for-service-worker-list-of-router-rules①\">list of router rules</a> to <var>allRules</var>.</p>"
@@ -4503,7 +4503,7 @@
     },
     {
       "name": "Check Router Registration Limit",
-      "href": "https://w3c.github.io/ServiceWorker/#check-router-registration-limit%E2%91%A0",
+      "href": "https://w3c.github.io/ServiceWorker/#check-router-registration-limit",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -4520,7 +4520,7 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>result</var> to be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#count-router-inner-conditions%E2%91%A0\" id=\"ref-for-count-router-inner-conditions①\">Count Router Inner Conditions</a> with <var>rule</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routerrule-condition\" id=\"ref-for-dom-routerrule-condition①\">condition</a></code>\"], <var>result</var>, and 10.</p>"
+              "html": "<p>Set <var>result</var> to be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#count-router-inner-conditions\" id=\"ref-for-count-router-inner-conditions\">Count Router Inner Conditions</a> with <var>rule</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routerrule-condition\" id=\"ref-for-dom-routerrule-condition①\">condition</a></code>\"], <var>result</var>, and 10.</p>"
             },
             {
               "html": "<p>If <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-dfn-count-router-condition-result-quota-exceeded\" id=\"ref-for-dfn-dfn-count-router-condition-result-quota-exceeded①\">quota exceeded</a> is true, return false.</p>"
@@ -4534,7 +4534,7 @@
     },
     {
       "name": "Count Router Inner Conditions",
-      "href": "https://w3c.github.io/ServiceWorker/#count-router-inner-conditions%E2%91%A0",
+      "href": "https://w3c.github.io/ServiceWorker/#count-router-inner-conditions",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -4564,7 +4564,7 @@
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p>Set <var>result</var> to be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#count-router-inner-conditions%E2%91%A0\" id=\"ref-for-count-router-inner-conditions①①\">Count Router Inner Conditions</a> with <var>orCondition</var>, <var>result</var>, and <var>depth</var>.</p>"
+                  "html": "<p>Set <var>result</var> to be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#count-router-inner-conditions\" id=\"ref-for-count-router-inner-conditions①\">Count Router Inner Conditions</a> with <var>orCondition</var>, <var>result</var>, and <var>depth</var>.</p>"
                 },
                 {
                   "html": "<p>If <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-dfn-count-router-condition-result-quota-exceeded\" id=\"ref-for-dfn-dfn-count-router-condition-result-quota-exceeded③\">quota exceeded</a> is true, return <var>result</var>.</p>"
@@ -4581,7 +4581,7 @@
               "html": "<p>Decrement <var>depth</var> by one.</p>"
             },
             {
-              "html": "<p>Set <var>result</var> to be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#count-router-inner-conditions%E2%91%A0\" id=\"ref-for-count-router-inner-conditions①②\">Count Router Inner Conditions</a> with <var>condition</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routercondition-not\" id=\"ref-for-dom-routercondition-not⑥\">not</a></code>\"], <var>result</var>, and <var>depth</var>.</p>"
+              "html": "<p>Set <var>result</var> to be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#count-router-inner-conditions\" id=\"ref-for-count-router-inner-conditions②\">Count Router Inner Conditions</a> with <var>condition</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routercondition-not\" id=\"ref-for-dom-routercondition-not⑥\">not</a></code>\"], <var>result</var>, and <var>depth</var>.</p>"
             },
             {
               "html": "<p>If <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-dfn-count-router-condition-result-quota-exceeded\" id=\"ref-for-dfn-dfn-count-router-condition-result-quota-exceeded④\">quota exceeded</a> is true, return <var>result</var>.</p>"
