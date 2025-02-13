@@ -843,7 +843,7 @@
         "href": "https://w3c.github.io/media-capabilities/#dictdef-mediacapabilitiesencodinginfo"
       },
       "MediaCapabilities": {
-        "fragment": "[Exposed=(Window, Worker)]\ninterface MediaCapabilities {\n  [NewObject] Promise<MediaCapabilitiesDecodingInfo> decodingInfo(MediaDecodingConfiguration configuration);\n  [NewObject] Promise<MediaCapabilitiesEncodingInfo> encodingInfo(MediaEncodingConfiguration configuration);\n};",
+        "fragment": "[Exposed=(Window, Worker)]\ninterface MediaCapabilities {\n  [NewObject] Promise<MediaCapabilitiesDecodingInfo> decodingInfo(\n      MediaDecodingConfiguration configuration);\n  [NewObject] Promise<MediaCapabilitiesEncodingInfo> encodingInfo(\n      MediaEncodingConfiguration configuration);\n};",
         "type": "interface",
         "name": "MediaCapabilities",
         "inheritance": null,

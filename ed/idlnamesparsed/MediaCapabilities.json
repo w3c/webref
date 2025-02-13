@@ -6,7 +6,7 @@
       "title": "Media Capabilities",
       "url": "https://www.w3.org/TR/media-capabilities/"
     },
-    "fragment": "[Exposed=(Window, Worker)]\ninterface MediaCapabilities {\n  [NewObject] Promise<MediaCapabilitiesDecodingInfo> decodingInfo(MediaDecodingConfiguration configuration);\n  [NewObject] Promise<MediaCapabilitiesEncodingInfo> encodingInfo(MediaEncodingConfiguration configuration);\n};",
+    "fragment": "[Exposed=(Window, Worker)]\ninterface MediaCapabilities {\n  [NewObject] Promise<MediaCapabilitiesDecodingInfo> decodingInfo(\n      MediaDecodingConfiguration configuration);\n  [NewObject] Promise<MediaCapabilitiesEncodingInfo> encodingInfo(\n      MediaEncodingConfiguration configuration);\n};",
     "href": "https://w3c.github.io/media-capabilities/#mediacapabilities"
   },
   "extended": [],
