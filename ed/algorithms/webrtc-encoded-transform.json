@@ -97,7 +97,7 @@
           "html": "<p>Let <var>serializedFrame</var> be <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structuredserializewithtransfer\" id=\"ref-for-structuredserializewithtransfer\">StructuredSerializeWithTransfer</a>(<var>frame</var>, « <var>data</var> »).</p>"
         },
         {
-          "html": "<p>Let <var>frameCopy</var> be <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structureddeserialize\" id=\"ref-for-structureddeserialize\">StructuredDeserialize</a>(<var>serializedFrame</var>, <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>).</p>"
+          "html": "<p>Let <var>frameCopy</var> be <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structureddeserializewithtransfer\" id=\"ref-for-structureddeserializewithtransfer\">StructuredDeserializeWithTransfer</a>(<var>serializedFrame</var>, <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>).</p>"
         },
         {
           "html": "<p>Enqueue <var>frameCopy</var> for processing as if it came directly from the encoded data source, by running one of the following steps:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>If <var>rtcObject</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender④\">RTCRtpSender</a></code>, enqueue <var>frameCopy</var> to <var>rtcObject</var>’s packetizer, to be processed <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>.</p>\n      </li><li data-md=\"\">\n       <p>If <var>rtcObject</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver④\">RTCRtpReceiver</a></code>, enqueue <var>frameCopy</var> it to <var>rtcObject</var>’s decoder, to be processed <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>.</p>\n     </li></ul>"
@@ -338,20 +338,20 @@
       ]
     },
     {
-      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#rtcencodedvideoframe\" id=\"ref-for-rtcencodedvideoframe⑤\">RTCEncodedVideoFrame</a></code> objects are serializable objects <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-encoded-transform/#biblio-html\" title=\"HTML Standard\">[HTML]</a>.\nTheir <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps\">serialization steps</a>, given <var>value</var>, <var>serialized</var>, and <var>forStorage</var>, are:",
+      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#rtcencodedvideoframe\" id=\"ref-for-rtcencodedvideoframe⑤\">RTCEncodedVideoFrame</a></code> objects are <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects\" id=\"ref-for-serializable-objects\">serializable objects</a>.\nTheir <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps\">serialization steps</a>, given <var>value</var>, <var>serialized</var>, and <var>forStorage</var>, are:",
       "rationale": "if",
       "steps": [
         {
           "html": "<p>If <var>forStorage</var> is true, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror\">DataCloneError</a></code>.</p>"
         },
         {
-          "html": "<p>Set <var>serialized</var>.<code>[[type]]</code> to the value of <var>value</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-type\" id=\"ref-for-dom-rtcencodedvideoframe-type①\">type</a></code></p>"
+          "html": "<p>Set <var>serialized</var>.<code>[[type]]</code> to the value of <var>value</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-type\" id=\"ref-for-dom-rtcencodedvideoframe-type①\">type</a></code>.</p>"
         },
         {
           "html": "<p>Set <var>serialized</var>.<code>[[metadata]]</code> to an internal representation of <var>value</var>’s metadata.</p>"
         },
         {
-          "html": "<p>Set <var>serialized</var>.<code>[[data]]</code> to <var>value</var>.<code>[[data]]</code></p>"
+          "html": "<p>Set <var>serialized</var>.<code>[[data]]</code> to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-serialization\" id=\"ref-for-sub-serialization\">sub-serialization</a> of <var>value</var>.<code>[[data]]</code>.</p>"
         }
       ]
     },
@@ -360,13 +360,13 @@
       "rationale": "set",
       "steps": [
         {
-          "html": "<p>Set <var>value</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-type\" id=\"ref-for-dom-rtcencodedvideoframe-type②\">type</a></code> to <var>serialized</var>.<code>[[type]]</code></p>"
+          "html": "<p>Set <var>value</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-type\" id=\"ref-for-dom-rtcencodedvideoframe-type②\">type</a></code> to <var>serialized</var>.<code>[[type]]</code>.</p>"
         },
         {
-          "html": "<p>Set <var>value</var>’s metadata to the platform object representation of <var>serialized</var>.<code>[[metadata]]</code></p>"
+          "html": "<p>Set <var>value</var>’s metadata to the platform object representation of <var>serialized</var>.<code>[[metadata]]</code>.</p>"
         },
         {
-          "html": "<p>Set <var>value</var>.<code>[[data]]</code> to <var>serialized</var>.<code>[[data]]</code>.</p>"
+          "html": "<p>Set <var>value</var>.<code>[[data]]</code> to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-deserialization\" id=\"ref-for-sub-deserialization\">sub-deserialization</a> of <var>serialized</var>.<code>[[data]]</code>.</p>"
         }
       ]
     },
@@ -394,7 +394,7 @@
       ]
     },
     {
-      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#rtcencodedaudioframe\" id=\"ref-for-rtcencodedaudioframe⑤\">RTCEncodedAudioFrame</a></code> objects are serializable objects <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-encoded-transform/#biblio-html\" title=\"HTML Standard\">[HTML]</a>.\nTheir <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps①\">serialization steps</a>, given <var>value</var>, <var>serialized</var>, and <var>forStorage</var>, are:",
+      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#rtcencodedaudioframe\" id=\"ref-for-rtcencodedaudioframe⑤\">RTCEncodedAudioFrame</a></code> objects are <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects\" id=\"ref-for-serializable-objects①\">serializable objects</a>.\nTheir <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps①\">serialization steps</a>, given <var>value</var>, <var>serialized</var>, and <var>forStorage</var>, are:",
       "rationale": "if",
       "steps": [
         {
@@ -404,7 +404,7 @@
           "html": "<p>Set <var>serialized</var>.<code>[[metadata]]</code> to an internal representation of <var>value</var>’s metadata.</p>"
         },
         {
-          "html": "<p>Set <var>serialized</var>.<code>[[data]]</code> to <var>value</var>.<code>[[data]]</code></p>"
+          "html": "<p>Set <var>serialized</var>.<code>[[data]]</code> to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-serialization\" id=\"ref-for-sub-serialization①\">sub-serialization</a> of <var>value</var>.<code>[[data]]</code>.</p>"
         }
       ]
     },
@@ -416,7 +416,7 @@
           "html": "<p>Set <var>value</var>’s metadata to the platform object representation of <var>serialized</var>.<code>[[metadata]]</code></p>"
         },
         {
-          "html": "<p>Set <var>value</var>.<code>[[data]]</code> to <var>serialized</var>.<code>[[data]]</code>.</p>"
+          "html": "<p>Set <var>value</var>.<code>[[data]]</code> to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-deserialization\" id=\"ref-for-sub-deserialization①\">sub-deserialization</a> of <var>serialized</var>.<code>[[data]]</code>.</p>"
         }
       ]
     },
@@ -452,13 +452,13 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>transformerOptions</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structureddeserialize\" id=\"ref-for-structureddeserialize①\">StructuredDeserialize</a>(<var>serializedOptions</var>, the current Realm).</p>"
+              "html": "<p>Let <var>transformerOptions</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structureddeserializewithtransfer\" id=\"ref-for-structureddeserializewithtransfer①\">StructuredDeserializeWithTransfer</a>(<var>serializedOptions</var>, the current Realm).</p>"
             },
             {
-              "html": "<p>Let <var>readable</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structureddeserialize\" id=\"ref-for-structureddeserialize②\">StructuredDeserialize</a>(<var>serializedReadable</var>, the current Realm).</p>"
+              "html": "<p>Let <var>readable</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structureddeserializewithtransfer\" id=\"ref-for-structureddeserializewithtransfer②\">StructuredDeserializeWithTransfer</a>(<var>serializedReadable</var>, the current Realm).</p>"
             },
             {
-              "html": "<p>Let <var>writable</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structureddeserialize\" id=\"ref-for-structureddeserialize③\">StructuredDeserialize</a>(<var>serializedWritable</var>, the current Realm).</p>"
+              "html": "<p>Let <var>writable</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structureddeserializewithtransfer\" id=\"ref-for-structureddeserializewithtransfer③\">StructuredDeserializeWithTransfer</a>(<var>serializedWritable</var>, the current Realm).</p>"
             },
             {
               "html": "<p>Let <var>transformer</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#rtcrtpscripttransformer\" id=\"ref-for-rtcrtpscripttransformer①\">RTCRtpScriptTransformer</a></code>.</p>"
