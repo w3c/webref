@@ -9,7 +9,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>illuminance</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#get-value-from-latest-reading\" id=\"ref-for-get-value-from-latest-reading\">get value from latest\n reading</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a> and \"illuminance\" as arguments.</p>"
+          "html": "<p>Let <var>illuminance</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#get-value-from-latest-reading\" id=\"ref-for-get-value-from-latest-reading\">get value from latest reading</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a> and \"illuminance\" as arguments.</p>"
         },
         {
           "html": "<p>Return <var>illuminance</var>.</p>"
@@ -62,13 +62,13 @@
           "html": "<p>Let <var>latestIlluminance</var> be <var>latestReading</var>[\"illuminance\"].</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#eqn-abs\" id=\"ref-for-eqn-abs\">abs</a>(<var>latestIlluminance</var> - <var>newIlluminance</var>) &lt; <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ambient-light/#illuminance-threshold-value\" id=\"ref-for-illuminance-threshold-value③\">illuminance\n threshold value</a>, return false.</p>"
+          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#eqn-abs\" id=\"ref-for-eqn-abs\">abs</a>(<var>latestIlluminance</var> - <var>newIlluminance</var>) &lt; <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ambient-light/#illuminance-threshold-value\" id=\"ref-for-illuminance-threshold-value③\">illuminance threshold value</a>, return false.</p>"
         },
         {
-          "html": "<p>Let <var>roundedNewReading</var> be the result of invoking the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ambient-light/#ambient-light-reading-quantization-algorithm\" id=\"ref-for-ambient-light-reading-quantization-algorithm①\">ambient light\n reading quantization algorithm</a> algorithm with <var>newIlluminance</var>.</p>"
+          "html": "<p>Let <var>roundedNewReading</var> be the result of invoking the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ambient-light/#ambient-light-reading-quantization-algorithm\" id=\"ref-for-ambient-light-reading-quantization-algorithm①\">ambient light reading quantization algorithm</a> algorithm with <var>newIlluminance</var>.</p>"
         },
         {
-          "html": "<p>Let <var>roundedLatestReading</var> be the result of invoking the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ambient-light/#ambient-light-reading-quantization-algorithm\" id=\"ref-for-ambient-light-reading-quantization-algorithm②\">ambient\n light reading quantization algorithm</a> algorithm with <var>latestIlluminance</var>.</p>"
+          "html": "<p>Let <var>roundedLatestReading</var> be the result of invoking the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ambient-light/#ambient-light-reading-quantization-algorithm\" id=\"ref-for-ambient-light-reading-quantization-algorithm②\">ambient light reading quantization algorithm</a> algorithm with <var>latestIlluminance</var>.</p>"
         },
         {
           "html": "<p>If <var>roundedNewReading</var>[\"illuminance\"] and <var>roundedLatestIlluminance</var>[\"illuminance\"]\n are equal, return false.</p>"
@@ -87,7 +87,7 @@
           "html": "<p>Let <var>quantizedReading</var> be <var>reading</var>.</p>"
         },
         {
-          "html": "<p>Set <var>quantizedReading</var>[\"illuminance\"] to the multiple of the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ambient-light/#illuminance-rounding-multiple\" id=\"ref-for-illuminance-rounding-multiple⑦\">illuminance\n rounding multiple</a> that <var>reading</var>[\"illuminance\"] is closest to.</p>"
+          "html": "<p>Set <var>quantizedReading</var>[\"illuminance\"] to the multiple of the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ambient-light/#illuminance-rounding-multiple\" id=\"ref-for-illuminance-rounding-multiple⑦\">illuminance rounding multiple</a> that <var>reading</var>[\"illuminance\"] is closest to.</p>"
         },
         {
           "html": "<p>Return <var>quantizedReading</var>.</p>"

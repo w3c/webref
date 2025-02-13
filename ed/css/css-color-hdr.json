@@ -7,8 +7,8 @@
     {
       "name": "dynamic-range-limit",
       "href": "https://drafts.csswg.org/css-color-hdr-1/#propdef-dynamic-range-limit",
-      "value": "standard | high | constrained-high | <dynamic-range-limit-mix()>",
-      "initial": "high",
+      "value": "standard | no-limit | constrained-high | <dynamic-range-limit-mix()>",
+      "initial": "no-limit",
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
@@ -24,11 +24,11 @@
           "value": "standard"
         },
         {
-          "name": "high",
+          "name": "no-limit",
           "prose": "The highest peak luminance that is displayed is much greater than media white, i.e. the CSS color white; the precise level is not specified.",
-          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-dynamic-range-limit-high",
+          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-dynamic-range-limit-no-limit",
           "type": "value",
-          "value": "high"
+          "value": "no-limit"
         },
         {
           "name": "constrained-high",
