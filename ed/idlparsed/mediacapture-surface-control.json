@@ -12,7 +12,7 @@
     "idlExtendedNames": {
       "CaptureController": [
         {
-          "fragment": "partial interface CaptureController {\n  sequence<long> getSupportedZoomLevels();\n  long getZoomLevel();\n  Promise<undefined> increaseZoomLevel();\n  Promise<undefined> decreaseZoomLevel();\n  Promise<undefined> resetZoomLevel();\n  attribute EventHandler onzoomlevelchange;\n};",
+          "fragment": "partial interface CaptureController {\n  sequence<long> getSupportedZoomLevels();\n  readonly attribute long? zoomLevel;\n  Promise<undefined> increaseZoomLevel();\n  Promise<undefined> decreaseZoomLevel();\n  Promise<undefined> resetZoomLevel();\n  attribute EventHandler onzoomlevelchange;\n};",
           "type": "interface",
           "name": "CaptureController",
           "inheritance": null,
@@ -43,20 +43,20 @@
               "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-getsupportedzoomlevels"
             },
             {
-              "type": "operation",
-              "name": "getZoomLevel",
+              "type": "attribute",
+              "name": "zoomLevel",
               "idlType": {
-                "type": "return-type",
+                "type": "attribute-type",
                 "extAttrs": [],
                 "generic": "",
-                "nullable": false,
+                "nullable": true,
                 "union": false,
                 "idlType": "long"
               },
-              "arguments": [],
               "extAttrs": [],
               "special": "",
-              "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-getzoomlevel"
+              "readonly": true,
+              "href": "https://w3c.github.io/mediacapture-surface-control/#dom-capturecontroller-zoomlevel"
             },
             {
               "type": "operation",

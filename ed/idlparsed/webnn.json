@@ -71,30 +71,6 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#navigatorml"
       },
-      "MLDeviceType": {
-        "fragment": "enum MLDeviceType {\n  \"cpu\",\n  \"gpu\",\n  \"npu\"\n};",
-        "type": "enum",
-        "name": "MLDeviceType",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "cpu",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mldevicetype-cpu"
-          },
-          {
-            "type": "enum-value",
-            "value": "gpu",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mldevicetype-gpu"
-          },
-          {
-            "type": "enum-value",
-            "value": "npu",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mldevicetype-npu"
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mldevicetype"
-      },
       "MLPowerPreference": {
         "fragment": "enum MLPowerPreference {\n  \"default\",\n  \"high-performance\",\n  \"low-power\"\n};",
         "type": "enum",
@@ -120,30 +96,11 @@
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlpowerpreference"
       },
       "MLContextOptions": {
-        "fragment": "dictionary MLContextOptions {\n  MLDeviceType deviceType = \"cpu\";\n  MLPowerPreference powerPreference = \"default\";\n};",
+        "fragment": "dictionary MLContextOptions {\n  MLPowerPreference powerPreference = \"default\";\n};",
         "type": "dictionary",
         "name": "MLContextOptions",
         "inheritance": null,
         "members": [
-          {
-            "type": "field",
-            "name": "deviceType",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLDeviceType"
-            },
-            "default": {
-              "type": "string",
-              "value": "cpu"
-            },
-            "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontextoptions-devicetype"
-          },
           {
             "type": "field",
             "name": "powerPreference",
@@ -12503,7 +12460,6 @@
         "NavigatorML"
       ],
       "MLContextOptions": [
-        "MLDeviceType",
         "MLPowerPreference"
       ],
       "ML": [
