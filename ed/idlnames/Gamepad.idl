@@ -8,6 +8,7 @@ interface Gamepad {
   readonly attribute GamepadMappingType mapping;
   readonly attribute FrozenArray<double> axes;
   readonly attribute FrozenArray<GamepadButton> buttons;
+  readonly attribute FrozenArray<GamepadTouch> touches;
   [SameObject] readonly attribute GamepadHapticActuator vibrationActuator;
 };
 
@@ -16,5 +17,4 @@ partial interface Gamepad {
   readonly attribute GamepadHand hand;
   readonly attribute FrozenArray<GamepadHapticActuator> hapticActuators;
   readonly attribute GamepadPose? pose;
-  readonly attribute FrozenArray<GamepadTouch>? touchEvents;
 };

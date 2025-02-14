@@ -9,7 +9,6 @@
       "functions": {
         "Window": [
           "GamepadPose",
-          "GamepadTouch",
           "GamepadHapticActuator"
         ]
       }
@@ -187,103 +186,12 @@
         ],
         "partial": false,
         "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose"
-      },
-      "GamepadTouch": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface GamepadTouch {\n  readonly attribute unsigned long touchId;\n  readonly attribute octet surfaceId;\n  readonly attribute Float32Array position;\n  readonly attribute Uint32Array? surfaceDimensions;\n};",
-        "type": "interface",
-        "name": "GamepadTouch",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "touchId",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadtouch-touchid"
-          },
-          {
-            "type": "attribute",
-            "name": "surfaceId",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "octet"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadtouch-surfaceid"
-          },
-          {
-            "type": "attribute",
-            "name": "position",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "Float32Array"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadtouch-position"
-          },
-          {
-            "type": "attribute",
-            "name": "surfaceDimensions",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "Uint32Array"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadtouch-surfacedimensions"
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadtouch"
       }
     },
     "idlExtendedNames": {
       "Gamepad": [
         {
-          "fragment": "partial interface Gamepad {\n  readonly attribute GamepadHand hand;\n  readonly attribute FrozenArray<GamepadHapticActuator> hapticActuators;\n  readonly attribute GamepadPose? pose;\n  readonly attribute FrozenArray<GamepadTouch>? touchEvents;\n};",
+          "fragment": "partial interface Gamepad {\n  readonly attribute GamepadHand hand;\n  readonly attribute FrozenArray<GamepadHapticActuator> hapticActuators;\n  readonly attribute GamepadPose? pose;\n};",
           "type": "interface",
           "name": "Gamepad",
           "inheritance": null,
@@ -344,31 +252,6 @@
               "special": "",
               "readonly": true,
               "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepad-pose"
-            },
-            {
-              "type": "attribute",
-              "name": "touchEvents",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "FrozenArray",
-                "nullable": true,
-                "union": false,
-                "idlType": [
-                  {
-                    "type": "attribute-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "GamepadTouch"
-                  }
-                ]
-              },
-              "extAttrs": [],
-              "special": "",
-              "readonly": true,
-              "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepad-touchevents"
             }
           ],
           "extAttrs": [],
@@ -460,7 +343,6 @@
     "exposed": {
       "Window": [
         "GamepadPose",
-        "GamepadTouch",
         "GamepadHapticActuator"
       ]
     },
@@ -468,21 +350,15 @@
       "GamepadPose": [
         "Float32Array"
       ],
-      "GamepadTouch": [
-        "Float32Array",
-        "Uint32Array"
-      ],
       "Gamepad": [
         "GamepadHand",
         "GamepadHapticActuator",
-        "GamepadPose",
-        "GamepadTouch"
+        "GamepadPose"
       ],
       "GamepadHapticActuator": []
     },
     "externalDependencies": [
       "Float32Array",
-      "Uint32Array",
       "Gamepad",
       "GamepadHapticActuator"
     ],

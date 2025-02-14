@@ -21,7 +21,7 @@
     },
     "idlNames": {
       "Gamepad": {
-        "fragment": "[Exposed=Window]\ninterface Gamepad {\n  readonly attribute DOMString id;\n  readonly attribute long index;\n  readonly attribute boolean connected;\n  readonly attribute DOMHighResTimeStamp timestamp;\n  readonly attribute GamepadMappingType mapping;\n  readonly attribute FrozenArray<double> axes;\n  readonly attribute FrozenArray<GamepadButton> buttons;\n  [SameObject] readonly attribute GamepadHapticActuator vibrationActuator;\n};",
+        "fragment": "[Exposed=Window]\ninterface Gamepad {\n  readonly attribute DOMString id;\n  readonly attribute long index;\n  readonly attribute boolean connected;\n  readonly attribute DOMHighResTimeStamp timestamp;\n  readonly attribute GamepadMappingType mapping;\n  readonly attribute FrozenArray<double> axes;\n  readonly attribute FrozenArray<GamepadButton> buttons;\n  readonly attribute FrozenArray<GamepadTouch> touches;\n  [SameObject] readonly attribute GamepadHapticActuator vibrationActuator;\n};",
         "type": "interface",
         "name": "Gamepad",
         "inheritance": null,
@@ -158,6 +158,31 @@
           },
           {
             "type": "attribute",
+            "name": "touches",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GamepadTouch"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepad-touches"
+          },
+          {
+            "type": "attribute",
             "name": "vibrationActuator",
             "idlType": {
               "type": "attribute-type",
@@ -262,6 +287,81 @@
         ],
         "partial": false,
         "href": "https://w3c.github.io/gamepad/#dom-gamepadbutton"
+      },
+      "GamepadTouch": {
+        "fragment": "dictionary GamepadTouch {\n  unsigned long touchId;\n  octet surfaceId;\n  DOMPointReadOnly position;\n  DOMRectReadOnly? surfaceDimensions;\n};",
+        "type": "dictionary",
+        "name": "GamepadTouch",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "touchId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadtouch-touchid"
+          },
+          {
+            "type": "field",
+            "name": "surfaceId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "octet"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadtouch-surfaceid"
+          },
+          {
+            "type": "field",
+            "name": "position",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMPointReadOnly"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadtouch-position"
+          },
+          {
+            "type": "field",
+            "name": "surfaceDimensions",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMRectReadOnly"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadtouch-surfacedimensions"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/gamepad/#dom-gamepadtouch"
       },
       "GamepadMappingType": {
         "fragment": "enum GamepadMappingType {\n  \"\",\n  \"standard\",\n  \"xr-standard\",\n};",
@@ -807,9 +907,14 @@
         "DOMHighResTimeStamp",
         "GamepadMappingType",
         "GamepadButton",
+        "GamepadTouch",
         "GamepadHapticActuator"
       ],
       "GamepadButton": [],
+      "GamepadTouch": [
+        "DOMPointReadOnly",
+        "DOMRectReadOnly"
+      ],
       "GamepadHapticActuator": [
         "GamepadHapticEffectType",
         "GamepadHapticsResult",
@@ -834,6 +939,8 @@
     },
     "externalDependencies": [
       "DOMHighResTimeStamp",
+      "DOMPointReadOnly",
+      "DOMRectReadOnly",
       "Navigator",
       "Event",
       "EventInit",

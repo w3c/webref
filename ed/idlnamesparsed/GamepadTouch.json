@@ -1,13 +1,13 @@
 {
   "name": "GamepadTouch",
-  "type": "interface",
+  "type": "dictionary",
   "defined": {
     "spec": {
-      "title": "Gamepad Extensions",
-      "url": "https://w3c.github.io/gamepad/extensions.html"
+      "title": "Gamepad",
+      "url": "https://www.w3.org/TR/gamepad/"
     },
-    "fragment": "[Exposed=Window, SecureContext]\ninterface GamepadTouch {\n  readonly attribute unsigned long touchId;\n  readonly attribute octet surfaceId;\n  readonly attribute Float32Array position;\n  readonly attribute Uint32Array? surfaceDimensions;\n};",
-    "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadtouch"
+    "fragment": "dictionary GamepadTouch {\n  unsigned long touchId;\n  octet surfaceId;\n  DOMPointReadOnly position;\n  DOMRectReadOnly? surfaceDimensions;\n};",
+    "href": "https://w3c.github.io/gamepad/#dom-gamepadtouch"
   },
   "extended": [],
   "inheritance": null,

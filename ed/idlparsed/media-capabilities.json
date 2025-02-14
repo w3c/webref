@@ -773,7 +773,7 @@
         "href": "https://w3c.github.io/media-capabilities/#dictdef-mediacapabilitiesinfo"
       },
       "MediaCapabilitiesDecodingInfo": {
-        "fragment": "dictionary MediaCapabilitiesDecodingInfo : MediaCapabilitiesInfo {\n  required MediaKeySystemAccess keySystemAccess;\n  MediaDecodingConfiguration configuration;\n};",
+        "fragment": "dictionary MediaCapabilitiesDecodingInfo : MediaCapabilitiesInfo {\n  required MediaKeySystemAccess? keySystemAccess;\n  MediaDecodingConfiguration configuration;\n};",
         "type": "dictionary",
         "name": "MediaCapabilitiesDecodingInfo",
         "inheritance": "MediaCapabilitiesInfo",
@@ -786,7 +786,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "MediaKeySystemAccess"
             },
