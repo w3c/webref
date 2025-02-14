@@ -17,7 +17,16 @@ interface AICreateMonitor : EventTarget {
 
 callback AICreateMonitorCallback = undefined (AICreateMonitor monitor);
 
-enum AICapabilityAvailability { "readily", "after-download", "no" };
+enum AIAvailability {
+  "unavailable",
+  "downloadable",
+  "downloading",
+  "available"
+};
+
+interface mixin AIDestroyable {
+  undefined destroy();
+};
 
 partial interface AI {
   readonly attribute AISummarizerFactory summarizer;
@@ -26,7 +35,7 @@ partial interface AI {
 [Exposed=(Window,Worker), SecureContext]
 interface AISummarizerFactory {
   Promise<AISummarizer> create(optional AISummarizerCreateOptions options = {});
-  Promise<AICapabilityAvailability> availability(optional AISummarizerCreateCoreOptions options = {});
+  Promise<AIAvailability> availability(optional AISummarizerCreateCoreOptions options = {});
 };
 
 [Exposed=(Window,Worker), SecureContext]
@@ -48,9 +57,8 @@ interface AISummarizer {
   readonly attribute FrozenArray<DOMString>? expectedInputLanguages;
   readonly attribute FrozenArray<DOMString>? expectedContextLanguages;
   readonly attribute DOMString? outputLanguage;
-
-  undefined destroy();
 };
+AISummarizer includes AIDestroyable;
 
 dictionary AISummarizerCreateCoreOptions {
   AISummarizerType type = "key-points";
@@ -81,7 +89,7 @@ enum AISummarizerLength { "short", "medium", "long" };
 [Exposed=(Window,Worker), SecureContext]
 interface AIWriterFactory {
   Promise<AIWriter> create(optional AIWriterCreateOptions options = {});
-  Promise<AICapabilityAvailability> availability(optional AIWriterCreateCoreOptions options = {});
+  Promise<AIAvailability> availability(optional AIWriterCreateCoreOptions options = {});
 };
 
 [Exposed=(Window,Worker), SecureContext]
@@ -97,9 +105,8 @@ interface AIWriter {
   readonly attribute FrozenArray<DOMString>? expectedInputLanguages;
   readonly attribute FrozenArray<DOMString>? expectedContextLanguages;
   readonly attribute DOMString? outputLanguage;
-
-  undefined destroy();
 };
+AIWriter includes AIDestroyable;
 
 dictionary AIWriterCreateCoreOptions {
   AIWriterTone tone = "neutral";
@@ -130,7 +137,7 @@ enum AIWriterLength { "short", "medium", "long" };
 [Exposed=(Window,Worker), SecureContext]
 interface AIRewriterFactory {
   Promise<AIRewriter> create(optional AIRewriterCreateOptions options = {});
-  Promise<AICapabilityAvailability> availability(optional AIRewriterCreateCoreOptions options = {});
+  Promise<AIAvailability> availability(optional AIRewriterCreateCoreOptions options = {});
 };
 
 [Exposed=(Window,Worker), SecureContext]
@@ -146,9 +153,8 @@ interface AIRewriter {
   readonly attribute FrozenArray<DOMString>? expectedInputLanguages;
   readonly attribute FrozenArray<DOMString>? expectedContextLanguages;
   readonly attribute DOMString? outputLanguage;
-
-  undefined destroy();
 };
+AIRewriter includes AIDestroyable;
 
 dictionary AIRewriterCreateCoreOptions {
   AIRewriterTone tone = "as-is";

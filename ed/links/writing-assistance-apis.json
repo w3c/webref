@@ -26,7 +26,11 @@
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "eventtarget",
+          "abortcontroller",
           "abortsignal",
+          "create-a-dependent-abort-signal",
+          "abortcontroller-signal",
+          "abortcontroller-signal-abort",
           "abortsignal-aborted",
           "abortsignal-abort-reason",
           "concept-event-fire",
@@ -54,38 +58,39 @@
           "windoworworkerglobalscope",
           "eventhandler",
           "concept-relevant-realm",
-          "concept-task",
           "event-handlers",
           "event-handler-event-type",
           "event-handler-idl-attributes",
           "concept-relevant-global",
+          "concept-agent-event-loop",
           "queue-a-global-task",
+          "concept-realm-global",
           "event-loop",
-          "concept-agent-event-loop"
+          "concept-task"
         ]
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "list",
-          "list-contain",
           "map-exists",
           "assert",
-          "abort-when",
-          "iteration-break",
-          "if-aborted",
-          "user-agent",
           "list-is-empty",
           "ordered-set",
+          "ordered-map",
           "list-iterate",
-          "set-append",
           "list-replace",
-          "iteration-continue",
+          "iteration-break",
           "struct",
           "struct-item",
-          "set-union",
+          "map-getting-the-keys",
+          "string",
           "implementation-defined",
+          "abort-when",
+          "if-aborted",
+          "set-append",
+          "list",
+          "set-union",
           "list-item",
-          "string"
+          "list-contain"
         ]
       },
       "https://streams.spec.whatwg.org/": {
@@ -105,12 +110,18 @@
           "eqn-floor"
         ]
       },
+      "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
+        "anchors": [
+          "realm",
+          "surrounding-agent"
+        ]
+      },
       "https://tc39.es/ecma402/": {
         "anchors": [
-          "sec-isstructurallyvalidlanguagetag",
-          "sec-canonicalizeunicodelocaleid",
           "sec-lookupmatchinglocalebybestfit",
           "sec-language-tags",
+          "sec-isstructurallyvalidlanguagetag",
+          "sec-canonicalizeunicodelocaleid",
           "sec-internal-slots"
         ]
       },
@@ -128,29 +139,32 @@
           "idl-undefined",
           "new",
           "this",
+          "dfn-interface",
+          "include",
+          "aborterror",
+          "idl-DOMException",
           "idl-promise",
           "idl-DOMString",
           "idl-frozen-array",
           "idl-sequence",
           "a-promise-rejected-with",
           "invalidstateerror",
-          "idl-DOMException",
-          "invoke-a-callback-function",
+          "exceptiondef-typeerror",
+          "dfn-create-frozen-array",
           "a-new-promise",
           "reject",
           "unknownerror",
-          "notsupportederror",
-          "networkerror",
-          "operationerror",
-          "dfn-create-frozen-array",
           "resolve",
-          "exceptiondef-typeerror",
-          "dfn-create-exception",
-          "aborterror",
           "domexception-name",
           "notallowederror",
           "notreadableerror",
-          "quotaexceedederror"
+          "notsupportederror",
+          "quotaexceedederror",
+          "invoke-a-callback-function",
+          "networkerror",
+          "operationerror",
+          "implements",
+          "dfn-create-exception"
         ]
       },
       "https://xhr.spec.whatwg.org/": {

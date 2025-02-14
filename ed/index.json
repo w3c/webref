@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-02-14T06:50:35.146Z",
+  "date": "2025-02-14T10:14:10.168Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -160,6 +160,7 @@
       "mediacapture-handle-actions",
       "mediacapture-surface-control",
       "permissions-registry",
+      "ppa",
       "network-reporting",
       "sparql12-concepts",
       "web-nfc",
@@ -185,6 +186,7 @@
       "web-bluetooth",
       "web-bluetooth-scanning",
       "webidl",
+      "writing-assistance-apis",
       "websockets",
       "anonymous-iframe",
       "aom",
@@ -233,6 +235,7 @@
       "observable",
       "overscroll-scrollend-events",
       "page-lifecycle",
+      "paymentlink",
       "performance-measure-memory",
       "periodic-background-sync",
       "permissions-request",
@@ -268,7 +271,6 @@
       "webpackage",
       "webusb",
       "window-controls-overlay",
-      "writing-assistance-apis",
       "iso10918-5",
       "iso18181-2",
       "iso14496-22",
@@ -685,10 +687,10 @@
     ]
   },
   "stats": {
-    "crawled": 654,
-    "errors": 3
+    "crawled": 656,
+    "errors": 1
   },
-  "crawler": "reffy-18.3.1",
+  "crawler": "reffy-18.3.2",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -1347,9 +1349,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Feb 2025 15:46:34 GMT"
+        "lastModified": "Fri, 14 Feb 2025 08:55:36 GMT"
       },
-      "date": "13 February 2025",
+      "date": "14 February 2025",
       "algorithms": "algorithms/no-vary-search.json",
       "links": "links/no-vary-search.json",
       "refs": "refs/no-vary-search.json",
@@ -1396,9 +1398,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Feb 2025 15:46:34 GMT"
+        "lastModified": "Fri, 14 Feb 2025 08:55:36 GMT"
       },
-      "date": "13 February 2025",
+      "date": "14 February 2025",
       "algorithms": "algorithms/rfc6265bis.json",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
@@ -1526,8 +1528,7 @@
       "refs": "refs/css-typed-om-2.json",
       "headings": "headings/css-typed-om-2.json",
       "ids": "ids/css-typed-om-2.json",
-      "cddl": [],
-      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+      "cddl": []
     },
     {
       "url": "https://drafts.css-houdini.org/font-metrics-api-1/",
@@ -1578,8 +1579,7 @@
       "dfns": "dfns/font-metrics-api-1.json",
       "headings": "headings/font-metrics-api-1.json",
       "ids": "ids/font-metrics-api-1.json",
-      "cddl": [],
-      "error": "Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 16)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:401:21)"
+      "cddl": []
     },
     {
       "url": "https://drafts.csswg.org/css-backgrounds-4/",
@@ -8911,6 +8911,58 @@
       "cddl": []
     },
     {
+      "url": "https://w3c.github.io/ppa/",
+      "seriesComposition": "full",
+      "shortname": "ppa",
+      "series": {
+        "shortname": "ppa",
+        "currentSpecification": "ppa",
+        "title": "Privacy-Preserving Attribution",
+        "shortTitle": "Privacy-Preserving Attribution",
+        "nightlyUrl": "https://w3c.github.io/ppa/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/ppa/",
+        "status": "Editor's Draft",
+        "sourcePath": "api.bs",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/ppa",
+        "filename": "index.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Private Advertising Technology Working Group",
+          "url": "https://www.w3.org/groups/wg/pat/"
+        }
+      ],
+      "title": "Privacy-Preserving Attribution: Level 1",
+      "source": "spec",
+      "shortTitle": "Privacy-Preserving Attribution 1",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://w3c.github.io/ppa/"
+      ],
+      "crawled": "https://w3c.github.io/ppa/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 11 Feb 2025 00:19:38 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "11 February 2025",
+      "revision": "764f599aa64d6b751358e94c4db73c31cfdcb5c7",
+      "algorithms": "algorithms/ppa.json",
+      "links": "links/ppa.json",
+      "refs": "refs/ppa.json",
+      "idl": "idl/ppa.idl",
+      "dfns": "dfns/ppa.json",
+      "headings": "headings/ppa.json",
+      "ids": "ids/ppa.json",
+      "cddl": []
+    },
+    {
       "url": "https://w3c.github.io/reporting/network-reporting.html",
       "seriesComposition": "full",
       "shortname": "network-reporting",
@@ -10067,7 +10119,7 @@
       ],
       "crawled": "https://webaudio.github.io/web-speech-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 17:22:55 GMT"
+        "lastModified": "Wed, 12 Feb 2025 17:22:54 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2025",
@@ -10261,6 +10313,59 @@
       "dfns": "dfns/webidl.json",
       "headings": "headings/webidl.json",
       "ids": "ids/webidl.json",
+      "cddl": []
+    },
+    {
+      "url": "https://webmachinelearning.github.io/writing-assistance-apis/",
+      "seriesComposition": "full",
+      "shortname": "writing-assistance-apis",
+      "series": {
+        "shortname": "writing-assistance-apis",
+        "currentSpecification": "writing-assistance-apis",
+        "title": "Writing Assistance APIs",
+        "shortTitle": "Writing Assistance APIs",
+        "nightlyUrl": "https://webmachinelearning.github.io/writing-assistance-apis/"
+      },
+      "standing": "pending",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Machine Learning Community Group",
+          "url": "https://www.w3.org/community/webmachinelearning/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webmachinelearning.github.io/writing-assistance-apis/",
+        "status": "Draft Community Group Report",
+        "alternateUrls": [],
+        "repository": "https://github.com/webmachinelearning/writing-assistance-apis",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Writing Assistance APIs",
+      "source": "spec",
+      "shortTitle": "Writing Assistance APIs",
+      "categories": [
+        "browser"
+      ],
+      "versions": [
+        "https://webmachinelearning.github.io/writing-assistance-apis/"
+      ],
+      "crawled": "https://webmachinelearning.github.io/writing-assistance-apis/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 13 Feb 2025 06:46:22 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "13 February 2025",
+      "revision": "41216b3a80cd4c1f4549bfd7ea69b7dfceb3ea51",
+      "algorithms": "algorithms/writing-assistance-apis.json",
+      "links": "links/writing-assistance-apis.json",
+      "refs": "refs/writing-assistance-apis.json",
+      "events": "events/writing-assistance-apis.json",
+      "idl": "idl/writing-assistance-apis.idl",
+      "dfns": "dfns/writing-assistance-apis.json",
+      "headings": "headings/writing-assistance-apis.json",
+      "ids": "ids/writing-assistance-apis.json",
       "cddl": []
     },
     {
@@ -12870,6 +12975,57 @@
       "cddl": []
     },
     {
+      "url": "https://wicg.github.io/paymentlink/",
+      "seriesComposition": "full",
+      "shortname": "paymentlink",
+      "series": {
+        "shortname": "paymentlink",
+        "currentSpecification": "paymentlink",
+        "title": "Facilitated Payment Link Type in HTML",
+        "shortTitle": "Facilitated Payment Link Type in HTML",
+        "nightlyUrl": "https://wicg.github.io/paymentlink/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "nightly": {
+        "url": "https://wicg.github.io/paymentlink/",
+        "status": "Draft Community Group Report",
+        "alternateUrls": [],
+        "repository": "https://github.com/WICG/paymentlink",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Facilitated Payment Link Type in HTML",
+      "source": "spec",
+      "shortTitle": "Facilitated Payment Link Type in HTML",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://wicg.github.io/paymentlink/"
+      ],
+      "crawled": "https://wicg.github.io/paymentlink/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 05 Feb 2025 23:04:11 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "5 February 2025",
+      "revision": "ccfb5141624fc9752ce564bdfb7f0bf4949176de",
+      "algorithms": "algorithms/paymentlink.json",
+      "links": "links/paymentlink.json",
+      "refs": "refs/paymentlink.json",
+      "dfns": "dfns/paymentlink.json",
+      "headings": "headings/paymentlink.json",
+      "ids": "ids/paymentlink.json",
+      "cddl": []
+    },
+    {
       "url": "https://wicg.github.io/performance-measure-memory/",
       "seriesComposition": "full",
       "shortname": "performance-measure-memory",
@@ -14793,59 +14949,6 @@
       "cddl": []
     },
     {
-      "url": "https://wicg.github.io/writing-assistance-apis/",
-      "seriesComposition": "full",
-      "shortname": "writing-assistance-apis",
-      "series": {
-        "shortname": "writing-assistance-apis",
-        "currentSpecification": "writing-assistance-apis",
-        "title": "Writing Assistance APIs",
-        "shortTitle": "Writing Assistance APIs",
-        "nightlyUrl": "https://wicg.github.io/writing-assistance-apis/"
-      },
-      "standing": "pending",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Web Machine Learning Community Group",
-          "url": "https://www.w3.org/community/webmachinelearning/"
-        }
-      ],
-      "nightly": {
-        "url": "https://wicg.github.io/writing-assistance-apis/",
-        "status": "Draft Community Group Report",
-        "alternateUrls": [],
-        "repository": "https://github.com/WICG/writing-assistance-apis",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
-      "title": "Writing Assistance APIs",
-      "source": "spec",
-      "shortTitle": "Writing Assistance APIs",
-      "categories": [
-        "browser"
-      ],
-      "versions": [
-        "https://wicg.github.io/writing-assistance-apis/"
-      ],
-      "crawled": "https://webmachinelearning.github.io/writing-assistance-apis/",
-      "crawlCacheInfo": {
-        "lastModified": "Mon, 03 Feb 2025 04:05:32 GMT"
-      },
-      "generator": "bikeshed",
-      "date": "3 February 2025",
-      "revision": "cd392990542dcd68ef8a944ec105cc58436f517c",
-      "algorithms": "algorithms/writing-assistance-apis.json",
-      "links": "links/writing-assistance-apis.json",
-      "refs": "refs/writing-assistance-apis.json",
-      "events": "events/writing-assistance-apis.json",
-      "idl": "idl/writing-assistance-apis.idl",
-      "dfns": "dfns/writing-assistance-apis.json",
-      "headings": "headings/writing-assistance-apis.json",
-      "ids": "ids/writing-assistance-apis.json",
-      "cddl": []
-    },
-    {
       "url": "https://www.iso.org/standard/54989.html",
       "seriesComposition": "full",
       "shortname": "iso10918-5",
@@ -15301,9 +15404,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 08 Feb 2025 00:30:02 GMT"
+        "lastModified": "Thu, 13 Feb 2025 20:22:06 GMT"
       },
-      "date": "8 February 2025",
+      "date": "13 February 2025",
       "links": "links/rfc6797.json",
       "ids": "ids/rfc6797.json",
       "cddl": []
@@ -15865,7 +15968,7 @@
       ],
       "nightly": {
         "url": "https://httpwg.org/specs/rfc8297.html",
-        "status": "Experimental",
+        "status": "Proposed Standard",
         "alternateUrls": [
           "https://datatracker.ietf.org/doc/html/rfc8297",
           "https://tools.ietf.org/html/rfc8297"
@@ -16547,9 +16650,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9649",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 18:36:35 GMT"
+        "lastModified": "Fri, 14 Feb 2025 10:00:40 GMT"
       },
-      "date": "12 February 2025",
+      "date": "14 February 2025",
       "algorithms": "algorithms/rfc9649.json",
       "links": "links/rfc9649.json",
       "refs": "refs/rfc9649.json",
@@ -17359,7 +17462,7 @@
       ],
       "crawled": "https://w3c.github.io/battery/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 24 Oct 2024 09:46:13 GMT"
+        "lastModified": "Thu, 24 Oct 2024 09:46:12 GMT"
       },
       "generator": "respec",
       "date": "24 October 2024",
@@ -30629,7 +30732,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/orientation-event/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -31446,7 +31549,7 @@
       ],
       "crawled": "https://w3c.github.io/pointerevents/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Feb 2025 10:34:13 GMT"
+        "lastModified": "Thu, 13 Feb 2025 10:34:12 GMT"
       },
       "generator": "respec",
       "date": "13 February 2025",
@@ -31512,7 +31615,7 @@
       ],
       "crawled": "https://w3c.github.io/pointerevents/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Feb 2025 10:34:13 GMT"
+        "lastModified": "Thu, 13 Feb 2025 10:34:12 GMT"
       },
       "generator": "respec",
       "date": "13 February 2025",
@@ -32500,7 +32603,7 @@
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/reporting",
-        "sourcePath": "index.src.html",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "Reporting API",
@@ -32522,7 +32625,7 @@
       ],
       "crawled": "https://w3c.github.io/reporting/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Aug 2024 15:00:02 GMT"
+        "lastModified": "Tue, 13 Aug 2024 15:00:01 GMT"
       },
       "generator": "bikeshed",
       "date": "13 August 2024",
@@ -33725,7 +33828,7 @@
       ],
       "crawled": "https://w3c.github.io/sparql-query/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 09:02:49 GMT"
+        "lastModified": "Wed, 12 Feb 2025 09:02:48 GMT"
       },
       "generator": "respec",
       "date": "12 February 2025",
@@ -36165,7 +36268,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/aac_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 17:48:17 GMT"
+        "lastModified": "Wed, 12 Feb 2025 17:48:16 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2025",
@@ -36279,7 +36382,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/av1_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 17:48:17 GMT"
+        "lastModified": "Wed, 12 Feb 2025 17:48:16 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2025",
@@ -36395,7 +36498,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/codec_registry.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 17:48:17 GMT"
+        "lastModified": "Wed, 12 Feb 2025 17:48:16 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2025",
@@ -36452,7 +36555,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/flac_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 17:48:17 GMT"
+        "lastModified": "Wed, 12 Feb 2025 17:48:16 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2025",
@@ -36511,7 +36614,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/hevc_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 17:48:17 GMT"
+        "lastModified": "Wed, 12 Feb 2025 17:48:16 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2025",
@@ -36569,7 +36672,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/mp3_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 17:48:17 GMT"
+        "lastModified": "Wed, 12 Feb 2025 17:48:16 GMT"
       },
       "generator": "bikeshed",
       "date": "9 September 2024",
@@ -36625,7 +36728,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/opus_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 17:48:17 GMT"
+        "lastModified": "Wed, 12 Feb 2025 17:48:16 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2025",
@@ -36684,7 +36787,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/pcm_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 17:48:17 GMT"
+        "lastModified": "Wed, 12 Feb 2025 17:48:16 GMT"
       },
       "generator": "bikeshed",
       "date": "9 September 2024",
