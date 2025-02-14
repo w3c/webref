@@ -2217,8 +2217,8 @@
       "number": "7.5.12"
     },
     {
-      "id": "sec-temporal-durationsign",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-durationsign",
+      "id": "sec-durationsign",
+      "href": "https://tc39.es/proposal-temporal/#sec-durationsign",
       "title": "DurationSign ( duration )",
       "level": 3,
       "number": "7.5.13"
@@ -2238,8 +2238,8 @@
       "number": "7.5.15"
     },
     {
-      "id": "sec-temporal-isvalidduration",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-isvalidduration",
+      "id": "sec-isvalidduration",
+      "href": "https://tc39.es/proposal-temporal/#sec-isvalidduration",
       "title": "IsValidDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
       "level": 3,
       "number": "7.5.16"
@@ -3757,39 +3757,32 @@
       "number": "13.38"
     },
     {
-      "id": "sec-tointegerifintegral",
-      "href": "https://tc39.es/proposal-temporal/#sec-tointegerifintegral",
-      "title": "ToIntegerIfIntegral ( argument )",
-      "level": 2,
-      "number": "13.39"
-    },
-    {
       "id": "sec-temporal-tomonthcode",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-tomonthcode",
       "title": "ToMonthCode ( argument )",
       "level": 2,
-      "number": "13.40"
+      "number": "13.39"
     },
     {
       "id": "sec-temporal-tooffsetstring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-tooffsetstring",
       "title": "ToOffsetString ( argument )",
       "level": 2,
-      "number": "13.41"
+      "number": "13.40"
     },
     {
       "id": "sec-temporal-isodatetofields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isodatetofields",
       "title": "ISODateToFields ( calendar, isoDate, type )",
       "level": 2,
-      "number": "13.42"
+      "number": "13.41"
     },
     {
       "id": "sec-temporal-getdifferencesettings",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getdifferencesettings",
       "title": "GetDifferenceSettings ( operation, options, unitGroup, disallowedUnits, fallbackSmallestUnit, smallestLargestDefaultUnit )",
       "level": 2,
-      "number": "13.43"
+      "number": "13.42"
     },
     {
       "id": "sec-temporal-legacy-date-objects",
@@ -3827,39 +3820,53 @@
       "number": "14.4"
     },
     {
+      "id": "sec-ecma262-type-conversion",
+      "href": "https://tc39.es/proposal-temporal/#sec-ecma262-type-conversion",
+      "title": "Type Conversion",
+      "level": 3,
+      "number": "14.4.1"
+    },
+    {
+      "id": "sec-tointegerifintegral",
+      "href": "https://tc39.es/proposal-temporal/#sec-tointegerifintegral",
+      "title": "ToIntegerIfIntegral ( argument )",
+      "level": 4,
+      "number": "14.4.1.1"
+    },
+    {
       "id": "sec-operations-for-reading-options",
       "href": "https://tc39.es/proposal-temporal/#sec-operations-for-reading-options",
       "title": "Operations for Reading Options",
       "level": 3,
-      "number": "14.4.1"
+      "number": "14.4.2"
     },
     {
       "id": "sec-getoptionsobject",
       "href": "https://tc39.es/proposal-temporal/#sec-getoptionsobject",
       "title": "GetOptionsObject ( options )",
       "level": 4,
-      "number": "14.4.1.1"
+      "number": "14.4.2.1"
     },
     {
       "id": "sec-getoption",
       "href": "https://tc39.es/proposal-temporal/#sec-getoption",
       "title": "GetOption ( options, property, type, values, default )",
       "level": 4,
-      "number": "14.4.1.2"
+      "number": "14.4.2.2"
     },
     {
       "id": "sec-temporal-getroundingmodeoption",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getroundingmodeoption",
       "title": "GetRoundingModeOption ( options, fallback )",
       "level": 4,
-      "number": "14.4.1.3"
+      "number": "14.4.2.3"
     },
     {
       "id": "sec-temporal-getroundingincrementoption",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getroundingincrementoption",
       "title": "GetRoundingIncrementOption ( options )",
       "level": 4,
-      "number": "14.4.1.4"
+      "number": "14.4.2.4"
     },
     {
       "id": "sec-overview-of-date-objects-and-definitions-of-abstract-operations",
@@ -4261,123 +4268,207 @@
       "number": "15.8"
     },
     {
+      "id": "sec-ecma402-intl-durationformat-abstracts",
+      "href": "https://tc39.es/proposal-temporal/#sec-ecma402-intl-durationformat-abstracts",
+      "title": "Abstract Operations for DurationFormat Objects",
+      "level": 2,
+      "number": "15.9"
+    },
+    {
+      "id": "sec-duration-records-deleted",
+      "href": "https://tc39.es/proposal-temporal/#sec-duration-records-deleted",
+      "title": "Duration Records",
+      "level": 3,
+      "number": "15.9.1"
+    },
+    {
+      "id": "sec-tointegerifintegral-deleted",
+      "href": "https://tc39.es/proposal-temporal/#sec-tointegerifintegral-deleted",
+      "title": "ToIntegerIfIntegral ( argument )",
+      "level": 3,
+      "number": "15.9.2"
+    },
+    {
+      "id": "sec-todurationrecord-deleted",
+      "href": "https://tc39.es/proposal-temporal/#sec-todurationrecord-deleted",
+      "title": "ToDurationRecord ( input )",
+      "level": 3,
+      "number": "15.9.3"
+    },
+    {
+      "id": "sec-durationsign-deleted",
+      "href": "https://tc39.es/proposal-temporal/#sec-durationsign-deleted",
+      "title": "DurationSign ( duration )",
+      "level": 3,
+      "number": "15.9.4"
+    },
+    {
+      "id": "sec-isvalidduration-deleted",
+      "href": "https://tc39.es/proposal-temporal/#sec-isvalidduration-deleted",
+      "title": "IsValidDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
+      "level": 3,
+      "number": "15.9.5"
+    },
+    {
+      "id": "sec-computefractionaldigits",
+      "href": "https://tc39.es/proposal-temporal/#sec-computefractionaldigits",
+      "title": "ComputeFractionalDigits ( durationFormat, duration )",
+      "level": 3,
+      "number": "15.9.6"
+    },
+    {
+      "id": "sec-formatnumericunits",
+      "href": "https://tc39.es/proposal-temporal/#sec-formatnumericunits",
+      "title": "FormatNumericUnits ( durationFormat, duration, firstNumericUnit, signDisplayed )",
+      "level": 3,
+      "number": "15.9.7"
+    },
+    {
+      "id": "sec-partitiondurationformatpattern",
+      "href": "https://tc39.es/proposal-temporal/#sec-partitiondurationformatpattern",
+      "title": "PartitionDurationFormatPattern ( durationFormat, duration )",
+      "level": 3,
+      "number": "15.9.8"
+    },
+    {
+      "id": "sec-ecma402-properties-of-intl-durationformat-prototype-object",
+      "href": "https://tc39.es/proposal-temporal/#sec-ecma402-properties-of-intl-durationformat-prototype-object",
+      "title": "Properties of the Intl.DurationFormat Prototype Object",
+      "level": 2,
+      "number": "15.10"
+    },
+    {
+      "id": "sec-Intl.DurationFormat.prototype.format",
+      "href": "https://tc39.es/proposal-temporal/#sec-Intl.DurationFormat.prototype.format",
+      "title": "Intl.DurationFormat.prototype.format ( durationdurationLike )",
+      "level": 3,
+      "number": "15.10.1"
+    },
+    {
+      "id": "sec-Intl.DurationFormat.prototype.formatToParts",
+      "href": "https://tc39.es/proposal-temporal/#sec-Intl.DurationFormat.prototype.formatToParts",
+      "title": "Intl.DurationFormat.prototype.formatToParts ( durationdurationLike )",
+      "level": 3,
+      "number": "15.10.2"
+    },
+    {
       "id": "locale-sensitive-functions",
       "href": "https://tc39.es/proposal-temporal/#locale-sensitive-functions",
       "title": "Locale Sensitive Functions of the ECMAScript Language Specification",
       "level": 2,
-      "number": "15.9"
+      "number": "15.11"
     },
     {
       "id": "sup-properties-of-the-temporal-duration-prototype-object",
       "href": "https://tc39.es/proposal-temporal/#sup-properties-of-the-temporal-duration-prototype-object",
       "title": "Properties of the Temporal.Duration Prototype Object",
       "level": 3,
-      "number": "15.9.1"
+      "number": "15.11.1"
     },
     {
       "id": "sup-temporal.duration.prototype.tolocalestring",
       "href": "https://tc39.es/proposal-temporal/#sup-temporal.duration.prototype.tolocalestring",
       "title": "Temporal.Duration.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 4,
-      "number": "15.9.1.1"
+      "number": "15.11.1.1"
     },
     {
       "id": "sup-properties-of-the-temporal-instant-prototype-object",
       "href": "https://tc39.es/proposal-temporal/#sup-properties-of-the-temporal-instant-prototype-object",
       "title": "Properties of the Temporal.Instant Prototype Object",
       "level": 3,
-      "number": "15.9.2"
+      "number": "15.11.2"
     },
     {
       "id": "sup-temporal.instant.prototype.tolocalestring",
       "href": "https://tc39.es/proposal-temporal/#sup-temporal.instant.prototype.tolocalestring",
       "title": "Temporal.Instant.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 4,
-      "number": "15.9.2.1"
+      "number": "15.11.2.1"
     },
     {
       "id": "sup-properties-of-the-temporal-plaindate-prototype-object",
       "href": "https://tc39.es/proposal-temporal/#sup-properties-of-the-temporal-plaindate-prototype-object",
       "title": "Properties of the Temporal.PlainDate Prototype Object",
       "level": 3,
-      "number": "15.9.3"
+      "number": "15.11.3"
     },
     {
       "id": "sup-temporal.plaindate.prototype.tolocalestring",
       "href": "https://tc39.es/proposal-temporal/#sup-temporal.plaindate.prototype.tolocalestring",
       "title": "Temporal.PlainDate.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 4,
-      "number": "15.9.3.1"
+      "number": "15.11.3.1"
     },
     {
       "id": "sup-properties-of-the-temporal-plaindatetime-prototype-object",
       "href": "https://tc39.es/proposal-temporal/#sup-properties-of-the-temporal-plaindatetime-prototype-object",
       "title": "Properties of the Temporal.PlainDateTime Prototype Object",
       "level": 3,
-      "number": "15.9.4"
+      "number": "15.11.4"
     },
     {
       "id": "sup-temporal.plaindatetime.prototype.tolocalestring",
       "href": "https://tc39.es/proposal-temporal/#sup-temporal.plaindatetime.prototype.tolocalestring",
       "title": "Temporal.PlainDateTime.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 4,
-      "number": "15.9.4.1"
+      "number": "15.11.4.1"
     },
     {
       "id": "sup-properties-of-the-temporal-plainmonthday-prototype-object",
       "href": "https://tc39.es/proposal-temporal/#sup-properties-of-the-temporal-plainmonthday-prototype-object",
       "title": "Properties of the Temporal.PlainMonthDay Prototype Object",
       "level": 3,
-      "number": "15.9.5"
+      "number": "15.11.5"
     },
     {
       "id": "sup-temporal.plainmonthday.prototype.tolocalestring",
       "href": "https://tc39.es/proposal-temporal/#sup-temporal.plainmonthday.prototype.tolocalestring",
       "title": "Temporal.PlainMonthDay.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 4,
-      "number": "15.9.5.1"
+      "number": "15.11.5.1"
     },
     {
       "id": "sup-properties-of-the-temporal-plaintime-prototype-object",
       "href": "https://tc39.es/proposal-temporal/#sup-properties-of-the-temporal-plaintime-prototype-object",
       "title": "Properties of the Temporal.PlainTime Prototype Object",
       "level": 3,
-      "number": "15.9.6"
+      "number": "15.11.6"
     },
     {
       "id": "sup-temporal.plaintime.prototype.tolocalestring",
       "href": "https://tc39.es/proposal-temporal/#sup-temporal.plaintime.prototype.tolocalestring",
       "title": "Temporal.PlainTime.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 4,
-      "number": "15.9.6.1"
+      "number": "15.11.6.1"
     },
     {
       "id": "sup-properties-of-the-temporal-plainyearmonth-prototype-object",
       "href": "https://tc39.es/proposal-temporal/#sup-properties-of-the-temporal-plainyearmonth-prototype-object",
       "title": "Properties of the Temporal.PlainYearMonth Prototype Object",
       "level": 3,
-      "number": "15.9.7"
+      "number": "15.11.7"
     },
     {
       "id": "sup-temporal.plainyearmonth.prototype.tolocalestring",
       "href": "https://tc39.es/proposal-temporal/#sup-temporal.plainyearmonth.prototype.tolocalestring",
       "title": "Temporal.PlainYearMonth.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 4,
-      "number": "15.9.7.1"
+      "number": "15.11.7.1"
     },
     {
       "id": "sup-properties-of-the-temporal-zoneddatetime-prototype-object",
       "href": "https://tc39.es/proposal-temporal/#sup-properties-of-the-temporal-zoneddatetime-prototype-object",
       "title": "Properties of the Temporal.ZonedDateTime Prototype Object",
       "level": 3,
-      "number": "15.9.8"
+      "number": "15.11.8"
     },
     {
       "id": "sup-temporal.zoneddatetime.prototype.tolocalestring",
       "href": "https://tc39.es/proposal-temporal/#sup-temporal.zoneddatetime.prototype.tolocalestring",
       "title": "Temporal.ZonedDateTime.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 4,
-      "number": "15.9.8.1"
+      "number": "15.11.8.1"
     }
   ]
 }
