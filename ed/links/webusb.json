@@ -135,7 +135,9 @@
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "eventhandler",
-          "concept-relevant-global"
+          "concept-relevant-global",
+          "task-source",
+          "queue-a-global-task"
         ]
       },
       "https://html.spec.whatwg.org/multipage/workers.html": {
@@ -146,12 +148,13 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "iteration-continue",
+          "list-iterate",
           "list-empty",
           "boolean",
           "list",
           "list-append",
-          "list-iterate",
           "list-size",
+          "byte-sequence-length",
           "ordered-set",
           "assert",
           "strictly-split",
@@ -161,8 +164,8 @@
       },
       "https://tc39.github.io/ecma262/": {
         "anchors": [
-          "sec-promise-objects",
           "sec-array-objects",
+          "sec-promise-objects",
           "sec-native-error-types-used-in-this-standard-typeerror",
           "sec-object-internal-methods-and-internal-slots"
         ]
@@ -209,10 +212,12 @@
           "idl-promise",
           "SameObject",
           "this",
+          "a-new-promise",
           "resolve",
           "upon-fulfillment",
           "notfounderror",
-          "reject",
+          "idl-DOMException",
+          "a-promise-rejected-with",
           "securityerror",
           "idl-frozen-array",
           "idl-DataView",
@@ -220,11 +225,14 @@
           "idl-boolean",
           "idl-undefined",
           "BufferSource",
+          "reject",
           "aborterror",
           "invalidstateerror",
           "new",
+          "a-promise-resolved-with",
           "networkerror",
           "idl-ArrayBuffer",
+          "dfn-get-buffer-source-copy",
           "invalidaccesserror"
         ]
       },
