@@ -81,17 +81,6 @@
       },
       "https://www.rfc-editor.org/rfc/rfc8851": {},
       "https://www.w3.org/2004/01/pp-impl/47318/status": {},
-      "https://www.w3.org/2023/Process-20231103/": {
-        "anchors": [
-          "recs-and-notes"
-        ]
-      },
-      "https://www.w3.org/Consortium/Patent-Policy/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/WebCryptoAPI/": {},
       "https://www.w3.org/TR/mediacapture-streams/": {},
@@ -99,7 +88,18 @@
       "https://www.w3.org/TR/webrtc-identity/": {},
       "https://www.w3.org/TR/webrtc-nv-use-cases/": {},
       "https://www.w3.org/TR/webrtc/": {},
-      "https://www.w3.org/groups/wg/webrtc": {}
+      "https://www.w3.org/groups/wg/webrtc": {},
+      "https://www.w3.org/policies/patent-policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/policies/process/20231103/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      }
     },
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
@@ -125,10 +125,13 @@
       "https://html.spec.whatwg.org/multipage/structured-data.html": {
         "anchors": [
           "structuredserializewithtransfer",
-          "structureddeserialize",
+          "structureddeserializewithtransfer",
           "serializable",
+          "serializable-objects",
           "serialization-steps",
+          "sub-serialization",
           "deserialization-steps",
+          "sub-deserialization",
           "dom-structuredclone"
         ]
       },
@@ -217,7 +220,7 @@
           "dom-rtcpeerconnection",
           "dom-rtcrtpsender",
           "dom-rtcrtpreceiver",
-          "dom-rtcconfiguration"
+          "dom-rtcconfiguration-dedup-1"
         ]
       }
     }

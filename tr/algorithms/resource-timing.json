@@ -11,13 +11,13 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>\n              If <a data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-for=\"PerformanceResourceTiming\" href=\"https://www.w3.org/TR/resource-timing/#dfn-cache-mode\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-cache-mode-3\">cache\n              mode</a> is \"<code>local</code>\", then return 0.\n            </p>"
+          "html": "<p>\n              If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-for=\"PerformanceResourceTiming\" href=\"https://www.w3.org/TR/resource-timing/#dfn-cache-mode\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-cache-mode-3\">cache\n              mode</a> is \"<code>local</code>\", then return 0.\n            </p>"
         },
         {
-          "html": "<p>\n              If <a data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-for=\"PerformanceResourceTiming\" href=\"https://www.w3.org/TR/resource-timing/#dfn-cache-mode\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-cache-mode-4\">cache\n              mode</a> is \"<code>validated</code>\", then return 300.\n            </p>"
+          "html": "<p>\n              If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-for=\"PerformanceResourceTiming\" href=\"https://www.w3.org/TR/resource-timing/#dfn-cache-mode\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-cache-mode-4\">cache\n              mode</a> is \"<code>validated</code>\", then return 300.\n            </p>"
         },
         {
-          "html": "<p>\n              Return <a data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-for=\"PerformanceResourceTiming\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-body-info\">response body info</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-timing-info-encoded-body-size\">encoded size</a> plus 300.\n            </p>"
+          "html": "<p>\n              Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-for=\"PerformanceResourceTiming\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-body-info\">response body info</a>'s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-timing-info-encoded-body-size\">encoded size</a> plus 300.\n            </p>"
         }
       ]
     },
@@ -89,7 +89,7 @@
               "html": "Set <a href=\"https://www.w3.org/TR/resource-timing/#dfn-resource-timing-buffer-full-event-pending-flag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-resource-timing-buffer-full-event-pending-flag-3\">resource timing buffer full event pending flag</a> to\n              true."
             },
             {
-              "html": "<a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> on the <a href=\"https://w3c.github.io/performance-timeline/#dfn-performance-timeline-task-source\">\n                performance timeline task source</a> to run <a href=\"https://www.w3.org/TR/resource-timing/#dfn-fire-a-buffer-full-event\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-fire-a-buffer-full-event-1\">fire a buffer\n                full event</a>."
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> on the <a href=\"https://w3c.github.io/performance-timeline/#dfn-performance-timeline-task-source\">\n                performance timeline task source</a> to run <a href=\"https://www.w3.org/TR/resource-timing/#dfn-fire-a-buffer-full-event\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-fire-a-buffer-full-event-1\">fire a buffer\n                full event</a>."
             }
           ]
         },
@@ -144,7 +144,7 @@
               "html": "Let <i>number of excess entries before</i> be <a href=\"https://www.w3.org/TR/resource-timing/#dfn-resource-timing-secondary-buffer-current-size\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-resource-timing-secondary-buffer-current-size-3\">resource\n              timing secondary buffer current size</a>."
             },
             {
-              "html": "If <a href=\"https://www.w3.org/TR/resource-timing/#dfn-can-add-resource-timing-entry\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-can-add-resource-timing-entry-3\">can add resource timing entry</a> returns false, then\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named <code>resourcetimingbufferfull</code> at\n              the <a data-link-type=\"idl\" data-lt=\"Performance\" href=\"https://www.w3.org/TR/resource-timing/#dom-performance\" class=\"internalDFN\" id=\"ref-for-dom-performance-2\"><code>Performance</code></a> object."
+              "html": "If <a href=\"https://www.w3.org/TR/resource-timing/#dfn-can-add-resource-timing-entry\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-can-add-resource-timing-entry-3\">can add resource timing entry</a> returns false, then\n              <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named <code>resourcetimingbufferfull</code> at\n              the <a data-link-type=\"idl\" data-lt=\"Performance\" href=\"https://www.w3.org/TR/resource-timing/#dom-performance\" class=\"internalDFN\" id=\"ref-for-dom-performance-2\"><code>Performance</code></a> object."
             },
             {
               "html": "Run <a href=\"https://www.w3.org/TR/resource-timing/#dfn-copy-secondary-buffer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-copy-secondary-buffer-1\">copy secondary buffer</a>."
@@ -165,11 +165,11 @@
     {
       "name": "mark resource timing",
       "href": "https://www.w3.org/TR/resource-timing/#dfn-mark-resource-timing",
-      "html": "To <dfn data-export=\"\" id=\"dfn-mark-resource-timing\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">mark resource timing</dfn> given a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-timing-info\">fetch timing info</a> <var>timingInfo</var>, a DOMString <var>requestedURL</var>, a DOMString\n          <var>initiatorType</var> a <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\">global object</a> <var>global</var>, a string\n          <var>cacheMode</var>, a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-body-info\">response body info</a> <var>bodyInfo</var>, a <a href=\"https://fetch.spec.whatwg.org/#concept-status\">status</a> <var>responseStatus</var>, and an optional\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a> <var>deliveryType</var> (by default, the empty string), perform the\n          following steps:",
+      "html": "To <dfn data-export=\"\" id=\"dfn-mark-resource-timing\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">mark resource timing</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-timing-info\">fetch timing info</a> <var>timingInfo</var>, a DOMString <var>requestedURL</var>, a DOMString\n          <var>initiatorType</var> a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\">global object</a> <var>global</var>, a string\n          <var>cacheMode</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-body-info\">response body info</a> <var>bodyInfo</var>, a <a href=\"https://fetch.spec.whatwg.org/#concept-status\">status</a> <var>responseStatus</var>, and an optional\n          <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a> <var>deliveryType</var> (by default, the empty string), perform the\n          following steps:",
       "rationale": "create",
       "steps": [
         {
-          "html": "Create a <a href=\"https://www.w3.org/TR/resource-timing/#dom-performanceresourcetiming\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceresourcetiming-38\"><code>PerformanceResourceTiming</code></a> object <var>entry</var> in\n          <var>global</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm\">realm</a>."
+          "html": "Create a <a href=\"https://www.w3.org/TR/resource-timing/#dom-performanceresourcetiming\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceresourcetiming-38\"><code>PerformanceResourceTiming</code></a> object <var>entry</var> in\n          <var>global</var>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm\">realm</a>."
         },
         {
           "html": "<a href=\"https://www.w3.org/TR/resource-timing/#dfn-setup-the-resource-timing-entry\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-setup-the-resource-timing-entry-1\">Setup the resource timing entry</a> for <var>entry</var>, given\n            <var>initiatorType</var>, <var>requestedURL</var>, <var>timingInfo</var>, <var>cacheMode</var>,\n            <var>bodyInfo</var>, <var>responseStatus</var>, and <var>deliveryType</var>."
@@ -185,17 +185,17 @@
     {
       "name": "setup the resource timing entry",
       "href": "https://www.w3.org/TR/resource-timing/#dfn-setup-the-resource-timing-entry",
-      "html": "To <dfn data-export=\"\" id=\"dfn-setup-the-resource-timing-entry\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">setup the resource timing entry</dfn> for\n          <a href=\"https://www.w3.org/TR/resource-timing/#dom-performanceresourcetiming\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceresourcetiming-39\"><code>PerformanceResourceTiming</code></a> <var>entry</var> given DOMString\n          <var>initiatorType</var>, DOMString <var>requestedURL</var>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-timing-info\">fetch timing info</a>\n          <var>timingInfo</var>, a DOMString <var>cacheMode</var>, a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-body-info\">response body info</a>\n          <var>bodyInfo</var>, a <a href=\"https://fetch.spec.whatwg.org/#concept-status\">status</a>\n          <var>responseStatus</var>, and an optional DOMString <var>deliveryType</var> (by\n          default, the empty string), perform the following steps:",
+      "html": "To <dfn data-export=\"\" id=\"dfn-setup-the-resource-timing-entry\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">setup the resource timing entry</dfn> for\n          <a href=\"https://www.w3.org/TR/resource-timing/#dom-performanceresourcetiming\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceresourcetiming-39\"><code>PerformanceResourceTiming</code></a> <var>entry</var> given DOMString\n          <var>initiatorType</var>, DOMString <var>requestedURL</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-timing-info\">fetch timing info</a>\n          <var>timingInfo</var>, a DOMString <var>cacheMode</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-body-info\">response body info</a>\n          <var>bodyInfo</var>, a <a href=\"https://fetch.spec.whatwg.org/#concept-status\">status</a>\n          <var>responseStatus</var>, and an optional DOMString <var>deliveryType</var> (by\n          default, the empty string), perform the following steps:",
       "rationale": "assert",
       "steps": [
         {
           "html": "Assert that <var>cacheMode</var> is the empty string,\n          \"<code>local</code>\", or \"<code>validated</code>\"."
         },
         {
-          "html": "Let <var>global</var> be <var>entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>."
+          "html": "Let <var>global</var> be <var>entry</var>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>."
         },
         {
-          "html": "<a data-link-type=\"dfn|abstract-op\" data-lt=\"initialize a PerformanceEntry\" data-type=\"dfn\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-initialize-a-performanceentry\">Initialize</a> <var>entry</var> given the\n          result of <a data-lt=\"convert fetch timestamp\" href=\"https://www.w3.org/TR/resource-timing/#dfn-convert-fetch-timestamp\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-convert-fetch-timestamp-14\">converting</a>\n          <var>timingInfo</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-timing-info-start-time\">start time</a> given <var>global</var>,\n          \"<code>resource</code>\", <var>requestedURL</var>, and the result of\n            <a data-lt=\"convert fetch timestamp\" href=\"https://www.w3.org/TR/resource-timing/#dfn-convert-fetch-timestamp\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-convert-fetch-timestamp-15\">converting</a> <var>timingInfo</var>'s\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-timing-info-end-time\">end time</a> given <var>global</var>."
+          "html": "<a data-link-type=\"dfn\" data-lt=\"initialize a PerformanceEntry\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-initialize-a-performanceentry\">Initialize</a> <var>entry</var> given the\n          result of <a data-lt=\"convert fetch timestamp\" href=\"https://www.w3.org/TR/resource-timing/#dfn-convert-fetch-timestamp\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-convert-fetch-timestamp-14\">converting</a>\n          <var>timingInfo</var>'s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-timing-info-start-time\">start time</a> given <var>global</var>,\n          \"<code>resource</code>\", <var>requestedURL</var>, and the result of\n            <a data-lt=\"convert fetch timestamp\" href=\"https://www.w3.org/TR/resource-timing/#dfn-convert-fetch-timestamp\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-convert-fetch-timestamp-15\">converting</a> <var>timingInfo</var>'s\n            <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-timing-info-end-time\">end time</a> given <var>global</var>."
         },
         {
           "html": "Set <var>entry</var>'s <a data-for=\"PerformanceResourceTiming\" href=\"https://www.w3.org/TR/resource-timing/#dfn-initiator-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-initiator-type-3\">initiator\n          type</a> to <var>initiatorType</var>."
@@ -207,7 +207,7 @@
           "html": "Set <var>entry</var>'s <a data-for=\"PerformanceResourceTiming\" href=\"https://www.w3.org/TR/resource-timing/#dfn-timing-info\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-timing-info-17\">timing\n          info</a> to <var>timingInfo</var>."
         },
         {
-          "html": "Set <var>entry</var>'s <a data-for=\"PerformanceResourceTiming\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-body-info\">response\n          body info</a> to <var>bodyInfo</var>."
+          "html": "Set <var>entry</var>'s <a data-for=\"PerformanceResourceTiming\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-body-info\">response\n          body info</a> to <var>bodyInfo</var>."
         },
         {
           "html": "Set <var>entry</var>'s <a data-for=\"PerformanceResourceTiming\" href=\"https://www.w3.org/TR/resource-timing/#dfn-cache-mode\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-cache-mode-5\">cache\n          mode</a> to <var>cacheMode</var>."
@@ -226,14 +226,14 @@
     {
       "name": "convert fetch timestamp",
       "href": "https://www.w3.org/TR/resource-timing/#dfn-convert-fetch-timestamp",
-      "html": "To <dfn id=\"dfn-convert-fetch-timestamp\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">convert fetch timestamp</dfn> given <a data-link-type=\"idl\" data-lt=\"DOMHighResTimeStamp\" data-type=\"typedef\" href=\"https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp\"><code>DOMHighResTimeStamp</code></a>\n          <var>ts</var> and <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\">global object</a> <var>global</var>, do the following:",
+      "html": "To <dfn id=\"dfn-convert-fetch-timestamp\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">convert fetch timestamp</dfn> given <a data-link-type=\"typedef\" data-lt=\"DOMHighResTimeStamp\" href=\"https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp\"><code>DOMHighResTimeStamp</code></a>\n          <var>ts</var> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\">global object</a> <var>global</var>, do the following:",
       "rationale": "if",
       "steps": [
         {
           "html": "If <var>ts</var> is zero, return zero."
         },
         {
-          "html": "Otherwise, return the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-relative-high-resolution-coarse-time\">relative high resolution coarse time</a>\n          given <var>ts</var> and <var>global</var>."
+          "html": "Otherwise, return the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-relative-high-resolution-coarse-time\">relative high resolution coarse time</a>\n          given <var>ts</var> and <var>global</var>."
         }
       ]
     }

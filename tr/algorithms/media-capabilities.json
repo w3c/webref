@@ -298,10 +298,10 @@
                 },
                 {
                   "html": "If <code>config.keySystemConfiguration.audio</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">exists</a>:",
-                  "rationale": "set",
+                  "rationale": "if",
                   "steps": [
                     {
-                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemmediacapability-robustness\" id=\"ref-for-dom-mediakeysystemmediacapability-robustness①\">robustness</a></code> attribute to <code> config.keySystemConfiguration.audio.robustness</code>."
+                      "html": "If <code>config.keySystemConfiguration.audio.robustness</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exists</a> and is not <code>null</code>, set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemmediacapability-robustness\" id=\"ref-for-dom-mediakeysystemmediacapability-robustness①\">robustness</a></code> attribute to <code>config.keySystemConfiguration.audio.robustness</code>."
                     },
                     {
                       "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemmediacapability-encryptionscheme\" id=\"ref-for-dom-mediakeysystemmediacapability-encryptionscheme①\">encryptionScheme</a></code> attribute to <code> config.keySystemConfiguration.audio.encryptionScheme</code>."
@@ -311,18 +311,18 @@
               ]
             },
             {
-              "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediaconfiguration-video\" id=\"ref-for-dom-mediaconfiguration-video②\">video</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exists</a> in <var>config</var>, set the\n              videoCapabilities attribute to a sequence containing a single <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemmediacapability\" id=\"ref-for-dom-mediakeysystemmediacapability①\">MediaKeySystemMediaCapability</a></code>, initialized as follows:",
+              "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediaconfiguration-video\" id=\"ref-for-dom-mediaconfiguration-video②\">video</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">exists</a> in <var>config</var>, set the\n              videoCapabilities attribute to a sequence containing a single <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemmediacapability\" id=\"ref-for-dom-mediakeysystemmediacapability①\">MediaKeySystemMediaCapability</a></code>, initialized as follows:",
               "rationale": "set",
               "steps": [
                 {
                   "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemmediacapability-contenttype\" id=\"ref-for-dom-mediakeysystemmediacapability-contenttype①\">contentType</a></code> attribute to <code>config.video.contentType</code>."
                 },
                 {
-                  "html": "If <code>config.keySystemConfiguration.video</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">exists</a>:",
-                  "rationale": "set",
+                  "html": "If <code>config.keySystemConfiguration.video</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑥\">exists</a>:",
+                  "rationale": "if",
                   "steps": [
                     {
-                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemmediacapability-robustness\" id=\"ref-for-dom-mediakeysystemmediacapability-robustness②\">robustness</a></code> attribute to <code> config.keySystemConfiguration.video.robustness</code>."
+                      "html": "If <code>config.keySystemConfiguration.video.robustness</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑦\">exists</a> and is not <code>null</code>, set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemmediacapability-robustness\" id=\"ref-for-dom-mediakeysystemmediacapability-robustness②\">robustness</a></code> attribute to <code>config.keySystemConfiguration.video.robustness</code>."
                     },
                     {
                       "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemmediacapability-encryptionscheme\" id=\"ref-for-dom-mediakeysystemmediacapability-encryptionscheme②\">encryptionScheme</a></code> attribute to <code> config.keySystemConfiguration.video.encryptionScheme</code>."
@@ -367,7 +367,7 @@
           "html": "If <var>configuration</var> is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#valid-mediadecodingconfiguration\" id=\"ref-for-valid-mediadecodingconfiguration\">valid\n        MediaDecodingConfiguration</a>, return a Promise rejected with a\n        newly created <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>."
         },
         {
-          "html": "If <code>configuration.keySystemConfiguration</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑥\">exists</a>,\n        run the following substeps:",
+          "html": "If <code>configuration.keySystemConfiguration</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑧\">exists</a>,\n        run the following substeps:",
           "rationale": "if",
           "steps": [
             {
