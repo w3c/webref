@@ -36,12 +36,17 @@
       "https://github.com/toji": {},
       "https://github.com/ylafon": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "assert"
+        ]
+      },
       "https://webidl.spec.whatwg.org/": {},
       "https://www.rfc-editor.org/rfc/rfc2119": {},
       "https://www.rfc-editor.org/rfc/rfc8174": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/fingerprinting-guidance/": {},
+      "https://www.w3.org/TR/geometry-1/": {},
       "https://www.w3.org/TR/hr-time-3/": {},
       "https://www.w3.org/TR/permissions-policy-1/": {},
       "https://www.w3.org/TR/webxr-gamepads-module-1/": {},
@@ -122,12 +127,13 @@
           "user-agent",
           "ordered-map",
           "list",
+          "list-is-empty",
           "list-iterate",
           "list-size",
           "the-range",
+          "list-empty",
           "list-append",
           "list-contain",
-          "list-is-empty",
           "list-item",
           "list-remove"
         ]
@@ -145,6 +151,7 @@
           "this",
           "idl-unsigned-long",
           "new",
+          "idl-octet",
           "idl-promise",
           "a-promise-rejected-with",
           "exceptiondef-typeerror",
@@ -156,6 +163,16 @@
           "idl-unsigned-long-long",
           "dfn-throw",
           "securityerror"
+        ]
+      },
+      "https://www.w3.org/TR/geometry-1/": {
+        "anchors": [
+          "domrectreadonly",
+          "dom-domrectreadonly-width",
+          "dom-domrectreadonly-height",
+          "dompointreadonly",
+          "dom-dompointreadonly-x",
+          "dom-dompointreadonly-y"
         ]
       },
       "https://www.w3.org/TR/hr-time-3/": {

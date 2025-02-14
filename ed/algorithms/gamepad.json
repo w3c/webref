@@ -63,6 +63,17 @@
       ]
     },
     {
+      "name": "Gamepad/touches",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepad-touches",
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad-touches\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-touches-2\"><code>touches</code></a> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[touches]]\" href=\"https://w3c.github.io/gamepad/#dfn-touches\" class=\"internalDFN\" id=\"ref-for-dfn-touches-1\"><code>[[touches]]</code></a>."
+        }
+      ]
+    },
+    {
       "name": "Gamepad/vibrationActuator",
       "href": "https://w3c.github.io/gamepad/#dom-gamepad-vibrationactuator",
       "html": "The <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad-vibrationactuator\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-vibrationactuator-2\"><code>vibrationActuator</code></a> getter steps are:",
@@ -104,6 +115,9 @@
         },
         {
           "html": "Run the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-map-and-normalize-buttons\" class=\"internalDFN\" id=\"ref-for-dfn-map-and-normalize-buttons-1\">map and normalize buttons</a> for <var data-type=\"Gamepad\">gamepad</var>."
+        },
+        {
+          "html": "Run the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-record-touches\" class=\"internalDFN\" id=\"ref-for-dfn-record-touches-1\">record touches</a> for <var data-type=\"Gamepad\">gamepad</var>."
         },
         {
           "html": "Let <var data-type=\"Navigator\">navigator</var> be <var data-type=\"Gamepad\">gamepad</var>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"Navigator\" data-cite=\"html\" data-cite-path=\"/system-state.html\" data-cite-frag=\"navigator\" href=\"https://html.spec.whatwg.org/multipage/system-state.html#navigator\"><code>Navigator</code></a> object."
@@ -229,13 +243,66 @@
       ]
     },
     {
+      "name": "record touches",
+      "href": "https://w3c.github.io/gamepad/#dfn-record-touches",
+      "html": "To <dfn id=\"dfn-record-touches\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">record touches</dfn> for <var data-type=\"Gamepad\">gamepad</var>, run the following\n          steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-7\"><code>Gamepad</code></a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[touches]]\" href=\"https://w3c.github.io/gamepad/#dfn-touches\" class=\"internalDFN\" id=\"ref-for-dfn-touches-2\"><code>[[touches]]</code></a> is <a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-empty\" href=\"https://infra.spec.whatwg.org/#list-empty\">empty</a>."
+        },
+        {
+          "html": "Repeat the following steps for each touch surface on <var data-type=\"Gamepad\">gamepad</var> in\n          touch surface enumeration order:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"unsigned long\">surfaceId</var> be the current surface\n              enumeration index."
+            },
+            {
+              "html": "If the touch surface exposes maximum surface dimensions in\n              device units, then set <var>touch</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"GamepadTouch\" data-xref-for=\"GamepadTouch\" href=\"https://w3c.github.io/gamepad/#dom-gamepadtouch-surfacedimensions\" class=\"internalDFN\" id=\"ref-for-dom-gamepadtouch-surfacedimensions-1\"><code>surfaceDimensions</code></a>\n              to a <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMRectReadOnly\" data-cite=\"geometry-1\" data-cite-path=\"\" data-cite-frag=\"domrectreadonly\" href=\"https://www.w3.org/TR/geometry-1/#domrectreadonly\"><code>DOMRectReadOnly</code></a> with <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"DOMRectReadOnly\" data-xref-for=\"DOMRectReadOnly\" data-cite=\"geometry-1\" data-cite-path=\"\" data-cite-frag=\"dom-domrectreadonly-width\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectreadonly-width\"><code>width</code></a> and\n              <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"DOMRectReadOnly\" data-xref-for=\"DOMRectReadOnly\" data-cite=\"geometry-1\" data-cite-path=\"\" data-cite-frag=\"dom-domrectreadonly-height\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectreadonly-height\"><code>height</code></a> initialized to the maximum X and Y\n              dimensions on the touch surface in device units."
+            },
+            {
+              "html": "Repeat the following steps for each active touch point\n              reported by the <var data-type=\"Gamepad\">gamepad</var> for the current touch surface.",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var data-type=\"GamepadTouch\">touch</var> be a newly created\n                  <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"GamepadTouch\" href=\"https://w3c.github.io/gamepad/#dom-gamepadtouch\" class=\"internalDFN\" id=\"ref-for-dom-gamepadtouch-3\"><code>GamepadTouch</code></a> object."
+                },
+                {
+                  "html": "Set <var data-type=\"GamepadTouch\">touch</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"GamepadTouch\" data-xref-for=\"GamepadTouch\" href=\"https://w3c.github.io/gamepad/#dom-gamepadtouch-surfaceid\" class=\"internalDFN\" id=\"ref-for-dom-gamepadtouch-surfaceid-1\"><code>surfaceId</code></a> to be <var data-type=\"unsigned long\">surfaceId</var>."
+                },
+                {
+                  "html": "If the touch data is part of an existing active touch\n                  point tracked by the user agent:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "Set <var data-type=\"GamepadTouch\">touch</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"GamepadTouch\" data-xref-for=\"GamepadTouch\" href=\"https://w3c.github.io/gamepad/#dom-gamepadtouch-touchid\" class=\"internalDFN\" id=\"ref-for-dom-gamepadtouch-touchid-1\"><code>touchId</code></a> to the touchId\n                      of the active touch point."
+                    },
+                    {
+                      "html": "Otherwise, set touchId to nextTouchId and increment\n                      nextTouchId."
+                    }
+                  ]
+                },
+                {
+                  "html": "Set <var data-type=\"GamepadTouch\">touch</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"GamepadTouch\" data-xref-for=\"GamepadTouch\" href=\"https://w3c.github.io/gamepad/#dom-gamepadtouch-position\" class=\"internalDFN\" id=\"ref-for-dom-gamepadtouch-position-1\"><code>position</code></a> to a <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"new\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n                  <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMPointReadOnly\" data-cite=\"geometry-1\" data-cite-path=\"\" data-cite-frag=\"dompointreadonly\" href=\"https://www.w3.org/TR/geometry-1/#dompointreadonly\"><code>DOMPointReadOnly</code></a> with <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"DOMPointReadOnly\" data-xref-for=\"DOMPointReadOnly\" data-cite=\"geometry-1\" data-cite-path=\"\" data-cite-frag=\"dom-dompointreadonly-x\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompointreadonly-x\"><code>x</code></a> initialized\n                  to device X coordinate relative to the device touch surface\n                  and normalized to [-1.0,1.0] where -1.0 is the leftmost\n                  coordinate and 1.0 is the rightmost coordinate and\n                  <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"DOMPointReadOnly\" data-xref-for=\"DOMPointReadOnly\" data-cite=\"geometry-1\" data-cite-path=\"\" data-cite-frag=\"dom-dompointreadonly-y\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompointreadonly-y\"><code>y</code></a> initialized to the device touch\n                  surface and normalized to [-1.0,1.0] where -1.0 is the\n                  leftmost coordinate and 1.0 is the rightmost coordinate."
+                },
+                {
+                  "html": "Add <var data-type=\"GamepadTouch\">touch</var> to <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-8\"><code>Gamepad</code></a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[touches]]\" href=\"https://w3c.github.io/gamepad/#dfn-touches\" class=\"internalDFN\" id=\"ref-for-dfn-touches-3\"><code>[[touches]]</code></a>."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "A new Gamepad",
       "href": "https://w3c.github.io/gamepad/#dfn-a-new-gamepad",
       "html": "<dfn id=\"dfn-a-new-gamepad\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">A new <code>Gamepad</code></dfn> representing a connected gamepad device is\n          constructed by performing the following steps:",
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var data-type=\"Gamepad\">gamepad</var> be a newly created <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-7\"><code>Gamepad</code></a> instance:",
+          "html": "Let <var data-type=\"Gamepad\">gamepad</var> be a newly created <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-9\"><code>Gamepad</code></a> instance:",
           "rationale": "initialize",
           "steps": [
             {
@@ -688,7 +755,7 @@
     {
       "name": "constructing a GamepadHapticActuator",
       "href": "https://w3c.github.io/gamepad/#dfn-constructing-a-gamepadhapticactuator",
-      "html": "<dfn data-lt=\"constructing a GamepadHapticActuator|A new gamepadHapticActuator\" id=\"dfn-constructing-a-gamepadhapticactuator\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">A new\n          <var data-type=\"GamepadHapticActuator\">gamepadHapticActuator</var></dfn> representing a\n          <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-8\"><code>Gamepad</code></a>'s primary vibration actuator is constructed by performing\n          the following steps:",
+      "html": "<dfn data-lt=\"constructing a GamepadHapticActuator|A new gamepadHapticActuator\" id=\"dfn-constructing-a-gamepadhapticactuator\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">A new\n          <var data-type=\"GamepadHapticActuator\">gamepadHapticActuator</var></dfn> representing a\n          <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-10\"><code>Gamepad</code></a>'s primary vibration actuator is constructed by performing\n          the following steps:",
       "rationale": "let",
       "steps": [
         {
@@ -797,7 +864,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var data-type=\"Gamepad\">gamepad</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-17\"><code>Gamepad</code></a> representing the\n        unavailable device."
+          "html": "Let <var data-type=\"Gamepad\">gamepad</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-19\"><code>Gamepad</code></a> representing the\n        unavailable device."
         },
         {
           "html": "<a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-task\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> on the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-gamepad-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-gamepad-task-source-8\">gamepad task source</a> to perform the\n        following steps:",

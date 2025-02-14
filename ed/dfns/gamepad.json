@@ -274,6 +274,48 @@
       "definedIn": "table"
     },
     {
+      "id": "dfn-touches",
+      "href": "https://w3c.github.io/gamepad/#dfn-touches",
+      "linkingText": [
+        "[[touches]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Gamepad"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gamepad-interface",
+        "href": "https://w3c.github.io/gamepad/#gamepad-interface",
+        "title": "Gamepad interface",
+        "number": "3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-nexttouchid",
+      "href": "https://w3c.github.io/gamepad/#dfn-nexttouchid",
+      "linkingText": [
+        "[[nextTouchId]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Gamepad"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gamepad-interface",
+        "href": "https://w3c.github.io/gamepad/#gamepad-interface",
+        "title": "Gamepad interface",
+        "number": "3"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "dfn-vibrationactuator",
       "href": "https://w3c.github.io/gamepad/#dfn-vibrationactuator",
       "linkingText": [
@@ -476,6 +518,29 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gamepad-touches",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepad-touches",
+      "linkingText": [
+        "touches"
+      ],
+      "localLinkingText": [
+        "Gamepad.touches"
+      ],
+      "type": "attribute",
+      "for": [
+        "Gamepad"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepad-interface",
+        "href": "https://w3c.github.io/gamepad/#gamepad-interface",
+        "title": "Gamepad interface",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-gamepad-vibrationactuator",
       "href": "https://w3c.github.io/gamepad/#dom-gamepad-vibrationactuator",
       "linkingText": [
@@ -560,6 +625,25 @@
       "href": "https://w3c.github.io/gamepad/#dfn-map-and-normalize-buttons",
       "linkingText": [
         "map and normalize buttons"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "receiving-inputs",
+        "href": "https://w3c.github.io/gamepad/#receiving-inputs",
+        "title": "Receiving inputs",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-record-touches",
+      "href": "https://w3c.github.io/gamepad/#dfn-record-touches",
+      "linkingText": [
+        "record touches"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -824,6 +908,109 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gamepadtouch",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepadtouch",
+      "linkingText": [
+        "GamepadTouch"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadtouch-interface",
+        "href": "https://w3c.github.io/gamepad/#gamepadtouch-interface",
+        "title": "GamepadTouch Interface",
+        "number": "5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-gamepadtouch-touchid",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepadtouch-touchid",
+      "linkingText": [
+        "touchId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GamepadTouch"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadtouch-interface",
+        "href": "https://w3c.github.io/gamepad/#gamepadtouch-interface",
+        "title": "GamepadTouch Interface",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gamepadtouch-surfaceid",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepadtouch-surfaceid",
+      "linkingText": [
+        "surfaceId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GamepadTouch"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadtouch-interface",
+        "href": "https://w3c.github.io/gamepad/#gamepadtouch-interface",
+        "title": "GamepadTouch Interface",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gamepadtouch-position",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepadtouch-position",
+      "linkingText": [
+        "position"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GamepadTouch"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadtouch-interface",
+        "href": "https://w3c.github.io/gamepad/#gamepadtouch-interface",
+        "title": "GamepadTouch Interface",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gamepadtouch-surfacedimensions",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepadtouch-surfacedimensions",
+      "linkingText": [
+        "surfaceDimensions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GamepadTouch"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadtouch-interface",
+        "href": "https://w3c.github.io/gamepad/#gamepadtouch-interface",
+        "title": "GamepadTouch Interface",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-gamepadmappingtype",
       "href": "https://w3c.github.io/gamepad/#dom-gamepadmappingtype",
       "linkingText": [
@@ -838,7 +1025,7 @@
         "id": "gamepadmappingtype-enum",
         "href": "https://w3c.github.io/gamepad/#gamepadmappingtype-enum",
         "title": "GamepadMappingType enum",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "heading"
     },
@@ -860,7 +1047,7 @@
         "id": "gamepadmappingtype-enum",
         "href": "https://w3c.github.io/gamepad/#gamepadmappingtype-enum",
         "title": "GamepadMappingType enum",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "dt"
     },
@@ -881,7 +1068,7 @@
         "id": "gamepadmappingtype-enum",
         "href": "https://w3c.github.io/gamepad/#gamepadmappingtype-enum",
         "title": "GamepadMappingType enum",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "dt"
     },
@@ -902,7 +1089,7 @@
         "id": "gamepadmappingtype-enum",
         "href": "https://w3c.github.io/gamepad/#gamepadmappingtype-enum",
         "title": "GamepadMappingType enum",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "dt"
     },
@@ -921,7 +1108,7 @@
         "id": "gamepadhapticactuator-interface",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticactuator-interface",
         "title": "GamepadHapticActuator Interface",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "heading"
     },
@@ -942,7 +1129,7 @@
         "id": "gamepadhapticactuator-interface",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticactuator-interface",
         "title": "GamepadHapticActuator Interface",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "table"
     },
@@ -963,7 +1150,7 @@
         "id": "gamepadhapticactuator-interface",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticactuator-interface",
         "title": "GamepadHapticActuator Interface",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "table"
     },
@@ -986,7 +1173,7 @@
         "id": "gamepadhapticactuator-interface",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticactuator-interface",
         "title": "GamepadHapticActuator Interface",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "dt"
     },
@@ -1013,7 +1200,7 @@
         "id": "gamepadhapticactuator-interface",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticactuator-interface",
         "title": "GamepadHapticActuator Interface",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "dt"
     },
@@ -1038,7 +1225,7 @@
         "id": "gamepadhapticactuator-interface",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticactuator-interface",
         "title": "GamepadHapticActuator Interface",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "dt"
     },
@@ -1057,7 +1244,7 @@
         "id": "gamepadhapticactuator-interface",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticactuator-interface",
         "title": "GamepadHapticActuator Interface",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "prose"
     },
@@ -1076,7 +1263,7 @@
         "id": "gamepadhapticactuator-interface",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticactuator-interface",
         "title": "GamepadHapticActuator Interface",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "prose"
     },
@@ -1095,7 +1282,7 @@
         "id": "gamepadhapticactuator-interface",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticactuator-interface",
         "title": "GamepadHapticActuator Interface",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "prose"
     },
@@ -1114,7 +1301,7 @@
         "id": "gamepadhapticactuator-interface",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticactuator-interface",
         "title": "GamepadHapticActuator Interface",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "prose"
     },
@@ -1134,7 +1321,7 @@
         "id": "constructing-a-gamepadhapticactuator",
         "href": "https://w3c.github.io/gamepad/#constructing-a-gamepadhapticactuator",
         "title": "Constructing a GamepadHapticActuator",
-        "number": "6.2"
+        "number": "7.2"
       },
       "definedIn": "prose"
     },
@@ -1153,7 +1340,7 @@
         "id": "gamepadhapticsresult-enum",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticsresult-enum",
         "title": "GamepadHapticsResult Enum",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "heading"
     },
@@ -1174,7 +1361,7 @@
         "id": "gamepadhapticsresult-enum",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticsresult-enum",
         "title": "GamepadHapticsResult Enum",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "dt"
     },
@@ -1195,7 +1382,7 @@
         "id": "gamepadhapticsresult-enum",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticsresult-enum",
         "title": "GamepadHapticsResult Enum",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "dt"
     },
@@ -1214,7 +1401,7 @@
         "id": "gamepadhapticeffecttype-enum",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticeffecttype-enum",
         "title": "GamepadHapticEffectType enum",
-        "number": "8"
+        "number": "9"
       },
       "definedIn": "heading"
     },
@@ -1235,7 +1422,7 @@
         "id": "gamepadhapticeffecttype-enum",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticeffecttype-enum",
         "title": "GamepadHapticEffectType enum",
-        "number": "8"
+        "number": "9"
       },
       "definedIn": "dt"
     },
@@ -1254,7 +1441,7 @@
         "id": "gamepadhapticeffecttype-enum",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticeffecttype-enum",
         "title": "GamepadHapticEffectType enum",
-        "number": "8"
+        "number": "9"
       },
       "definedIn": "prose"
     },
@@ -1275,7 +1462,7 @@
         "id": "gamepadhapticeffecttype-enum",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticeffecttype-enum",
         "title": "GamepadHapticEffectType enum",
-        "number": "8"
+        "number": "9"
       },
       "definedIn": "dt"
     },
@@ -1294,7 +1481,7 @@
         "id": "gamepadhapticeffecttype-enum",
         "href": "https://w3c.github.io/gamepad/#gamepadhapticeffecttype-enum",
         "title": "GamepadHapticEffectType enum",
-        "number": "8"
+        "number": "9"
       },
       "definedIn": "prose"
     },
@@ -1312,8 +1499,7 @@
       "heading": {
         "id": "gamepadeffectparameters-dictionary",
         "href": "https://w3c.github.io/gamepad/#gamepadeffectparameters-dictionary",
-        "title": "GamepadEffectParameters Dictionary",
-        "number": "9"
+        "title": "10. GamepadEffectParameters Dictionary"
       },
       "definedIn": "heading"
     },
@@ -1333,8 +1519,7 @@
       "heading": {
         "id": "gamepadeffectparameters-dictionary",
         "href": "https://w3c.github.io/gamepad/#gamepadeffectparameters-dictionary",
-        "title": "GamepadEffectParameters Dictionary",
-        "number": "9"
+        "title": "10. GamepadEffectParameters Dictionary"
       },
       "definedIn": "dt"
     },
@@ -1354,8 +1539,7 @@
       "heading": {
         "id": "gamepadeffectparameters-dictionary",
         "href": "https://w3c.github.io/gamepad/#gamepadeffectparameters-dictionary",
-        "title": "GamepadEffectParameters Dictionary",
-        "number": "9"
+        "title": "10. GamepadEffectParameters Dictionary"
       },
       "definedIn": "dt"
     },
@@ -1375,8 +1559,7 @@
       "heading": {
         "id": "gamepadeffectparameters-dictionary",
         "href": "https://w3c.github.io/gamepad/#gamepadeffectparameters-dictionary",
-        "title": "GamepadEffectParameters Dictionary",
-        "number": "9"
+        "title": "10. GamepadEffectParameters Dictionary"
       },
       "definedIn": "dt"
     },
@@ -1396,8 +1579,7 @@
       "heading": {
         "id": "gamepadeffectparameters-dictionary",
         "href": "https://w3c.github.io/gamepad/#gamepadeffectparameters-dictionary",
-        "title": "GamepadEffectParameters Dictionary",
-        "number": "9"
+        "title": "10. GamepadEffectParameters Dictionary"
       },
       "definedIn": "dt"
     },
@@ -1417,8 +1599,7 @@
       "heading": {
         "id": "gamepadeffectparameters-dictionary",
         "href": "https://w3c.github.io/gamepad/#gamepadeffectparameters-dictionary",
-        "title": "GamepadEffectParameters Dictionary",
-        "number": "9"
+        "title": "10. GamepadEffectParameters Dictionary"
       },
       "definedIn": "dt"
     },
@@ -1438,8 +1619,7 @@
       "heading": {
         "id": "gamepadeffectparameters-dictionary",
         "href": "https://w3c.github.io/gamepad/#gamepadeffectparameters-dictionary",
-        "title": "GamepadEffectParameters Dictionary",
-        "number": "9"
+        "title": "10. GamepadEffectParameters Dictionary"
       },
       "definedIn": "dt"
     },
@@ -1459,7 +1639,7 @@
       "heading": {
         "id": "extensions-to-the-navigator-interface",
         "href": "https://w3c.github.io/gamepad/#extensions-to-the-navigator-interface",
-        "title": "10. Extensions to the Navigator interface"
+        "title": "11. Extensions to the Navigator interface"
       },
       "definedIn": "table"
     },
@@ -1479,7 +1659,7 @@
       "heading": {
         "id": "extensions-to-the-navigator-interface",
         "href": "https://w3c.github.io/gamepad/#extensions-to-the-navigator-interface",
-        "title": "10. Extensions to the Navigator interface"
+        "title": "11. Extensions to the Navigator interface"
       },
       "definedIn": "table"
     },
@@ -1504,7 +1684,7 @@
         "id": "getgamepads-method",
         "href": "https://w3c.github.io/gamepad/#getgamepads-method",
         "title": "getGamepads() method",
-        "number": "10.1"
+        "number": "11.1"
       },
       "definedIn": "heading"
     },
@@ -1524,7 +1704,7 @@
         "id": "getgamepads-method",
         "href": "https://w3c.github.io/gamepad/#getgamepads-method",
         "title": "getGamepads() method",
-        "number": "10.1"
+        "number": "11.1"
       },
       "definedIn": "prose"
     },
@@ -1542,7 +1722,7 @@
       "heading": {
         "id": "gamepadevent-interface",
         "href": "https://w3c.github.io/gamepad/#gamepadevent-interface",
-        "title": "11. GamepadEvent Interface"
+        "title": "12. GamepadEvent Interface"
       },
       "definedIn": "heading"
     },
@@ -1567,7 +1747,7 @@
       "heading": {
         "id": "gamepadevent-interface",
         "href": "https://w3c.github.io/gamepad/#gamepadevent-interface",
-        "title": "11. GamepadEvent Interface"
+        "title": "12. GamepadEvent Interface"
       },
       "definedIn": "pre"
     },
@@ -1589,7 +1769,7 @@
       "heading": {
         "id": "gamepadevent-interface",
         "href": "https://w3c.github.io/gamepad/#gamepadevent-interface",
-        "title": "11. GamepadEvent Interface"
+        "title": "12. GamepadEvent Interface"
       },
       "definedIn": "dt"
     },
@@ -1608,7 +1788,7 @@
         "id": "gamepadeventinit-dictionary",
         "href": "https://w3c.github.io/gamepad/#gamepadeventinit-dictionary",
         "title": "GamepadEventInit dictionary",
-        "number": "11.1"
+        "number": "12.1"
       },
       "definedIn": "heading"
     },
@@ -1629,7 +1809,7 @@
         "id": "gamepadeventinit-dictionary",
         "href": "https://w3c.github.io/gamepad/#gamepadeventinit-dictionary",
         "title": "GamepadEventInit dictionary",
-        "number": "11.1"
+        "number": "12.1"
       },
       "definedIn": "dt"
     },
@@ -1647,7 +1827,7 @@
       "heading": {
         "id": "remapping",
         "href": "https://w3c.github.io/gamepad/#remapping",
-        "title": "12. Remapping"
+        "title": "13. Remapping"
       },
       "definedIn": "prose"
     },
@@ -1665,7 +1845,7 @@
       "heading": {
         "id": "remapping",
         "href": "https://w3c.github.io/gamepad/#remapping",
-        "title": "12. Remapping"
+        "title": "13. Remapping"
       },
       "definedIn": "prose"
     },
@@ -1683,7 +1863,7 @@
       "heading": {
         "id": "remapping",
         "href": "https://w3c.github.io/gamepad/#remapping",
-        "title": "12. Remapping"
+        "title": "13. Remapping"
       },
       "definedIn": "prose"
     },
@@ -1702,7 +1882,7 @@
       "heading": {
         "id": "remapping",
         "href": "https://w3c.github.io/gamepad/#remapping",
-        "title": "12. Remapping"
+        "title": "13. Remapping"
       },
       "definedIn": "prose"
     },
@@ -1720,7 +1900,7 @@
       "heading": {
         "id": "the-gamepadconnected-event",
         "href": "https://w3c.github.io/gamepad/#the-gamepadconnected-event",
-        "title": "14. The gamepadconnected event"
+        "title": "15. The gamepadconnected event"
       },
       "definedIn": "heading"
     },
@@ -1738,7 +1918,7 @@
       "heading": {
         "id": "the-gamepaddisconnected-event",
         "href": "https://w3c.github.io/gamepad/#the-gamepaddisconnected-event",
-        "title": "15. The gamepaddisconnected event"
+        "title": "16. The gamepaddisconnected event"
       },
       "definedIn": "heading"
     },
@@ -1760,7 +1940,7 @@
       "heading": {
         "id": "extensions-to-the-windoweventhandlers-interface-mixin",
         "href": "https://w3c.github.io/gamepad/#extensions-to-the-windoweventhandlers-interface-mixin",
-        "title": "17. Extensions to the WindowEventHandlers Interface Mixin"
+        "title": "18. Extensions to the WindowEventHandlers Interface Mixin"
       },
       "definedIn": "pre"
     },
@@ -1782,7 +1962,7 @@
       "heading": {
         "id": "extensions-to-the-windoweventhandlers-interface-mixin",
         "href": "https://w3c.github.io/gamepad/#extensions-to-the-windoweventhandlers-interface-mixin",
-        "title": "17. Extensions to the WindowEventHandlers Interface Mixin"
+        "title": "18. Extensions to the WindowEventHandlers Interface Mixin"
       },
       "definedIn": "pre"
     },
@@ -1800,7 +1980,7 @@
       "heading": {
         "id": "permission-policy",
         "href": "https://w3c.github.io/gamepad/#permission-policy",
-        "title": "18. Integration with Permissions Policy"
+        "title": "19. Integration with Permissions Policy"
       },
       "definedIn": "prose"
     }
