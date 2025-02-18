@@ -38,6 +38,11 @@ partial interface Navigator {
   [SecureContext] readonly attribute NavigatorLogin login;
 };
 
+// Source: Privacy-Preserving Attribution: Level 1 (https://w3c.github.io/ppa/)
+partial interface Navigator {
+  [SecureContext, SameObject] readonly attribute PrivateAttribution privateAttribution;
+};
+
 // Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
 [SecureContext]
 partial interface Navigator {

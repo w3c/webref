@@ -1,0 +1,30 @@
+{
+  "name": "PrivateAttribution",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Privacy-Preserving Attribution: Level 1",
+      "url": "https://w3c.github.io/ppa/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface PrivateAttribution {\n  readonly attribute PrivateAttributionAggregationServices aggregators;\n};",
+    "href": "https://w3c.github.io/ppa/#privateattribution"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Privacy-Preserving Attribution: Level 1",
+        "url": "https://w3c.github.io/ppa/"
+      },
+      "fragment": "[SecureContext, Exposed=Window]\npartial interface PrivateAttribution {\n  undefined saveImpression(PrivateAttributionImpressionOptions options);\n};"
+    },
+    {
+      "spec": {
+        "title": "Privacy-Preserving Attribution: Level 1",
+        "url": "https://w3c.github.io/ppa/"
+      },
+      "fragment": "[SecureContext, Exposed=Window]\npartial interface PrivateAttribution {\n  Promise<Uint8Array> measureConversion(PrivateAttributionConversionOptions options);\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

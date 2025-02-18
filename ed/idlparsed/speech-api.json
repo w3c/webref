@@ -27,7 +27,7 @@
     },
     "idlNames": {
       "SpeechRecognition": {
-        "fragment": "[Exposed=Window]\ninterface SpeechRecognition : EventTarget {\n    constructor();\n\n    // recognition parameters\n    attribute DOMString lang;\n    attribute boolean continuous;\n    attribute boolean interimResults;\n    attribute unsigned long maxAlternatives;\n    attribute SpeechRecognitionMode mode;\n\n    // methods to drive the speech interaction\n    undefined start();\n    undefined start(MediaStreamTrack audioTrack);\n    undefined stop();\n    undefined abort();\n    boolean onDeviceWebSpeechAvailable(DOMString lang);\n    boolean installOnDeviceSpeechRecognition(DOMString lang);\n\n    // event methods\n    attribute EventHandler onaudiostart;\n    attribute EventHandler onsoundstart;\n    attribute EventHandler onspeechstart;\n    attribute EventHandler onspeechend;\n    attribute EventHandler onsoundend;\n    attribute EventHandler onaudioend;\n    attribute EventHandler onresult;\n    attribute EventHandler onnomatch;\n    attribute EventHandler onerror;\n    attribute EventHandler onstart;\n    attribute EventHandler onend;\n};",
+        "fragment": "[Exposed=Window]\ninterface SpeechRecognition : EventTarget {\n    constructor();\n\n    // recognition parameters\n    attribute DOMString lang;\n    attribute boolean continuous;\n    attribute boolean interimResults;\n    attribute unsigned long maxAlternatives;\n    attribute SpeechRecognitionMode mode;\n\n    // methods to drive the speech interaction\n    undefined start();\n    undefined start(MediaStreamTrack audioTrack);\n    undefined stop();\n    undefined abort();\n    static Promise<boolean> availableOnDevice(DOMString lang);\n    static Promise<boolean> installOnDevice(DOMString lang);\n\n    // event methods\n    attribute EventHandler onaudiostart;\n    attribute EventHandler onsoundstart;\n    attribute EventHandler onspeechstart;\n    attribute EventHandler onspeechend;\n    attribute EventHandler onsoundend;\n    attribute EventHandler onaudioend;\n    attribute EventHandler onresult;\n    attribute EventHandler onnomatch;\n    attribute EventHandler onerror;\n    attribute EventHandler onstart;\n    attribute EventHandler onend;\n};",
         "type": "interface",
         "name": "SpeechRecognition",
         "inheritance": "EventTarget",
@@ -201,14 +201,23 @@
           },
           {
             "type": "operation",
-            "name": "onDeviceWebSpeechAvailable",
+            "name": "availableOnDevice",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "Promise",
               "nullable": false,
               "union": false,
-              "idlType": "boolean"
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                }
+              ]
             },
             "arguments": [
               {
@@ -229,19 +238,28 @@
               }
             ],
             "extAttrs": [],
-            "special": "",
-            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-ondevicewebspeechavailable"
+            "special": "static",
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-availableondevice"
           },
           {
             "type": "operation",
-            "name": "installOnDeviceSpeechRecognition",
+            "name": "installOnDevice",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "Promise",
               "nullable": false,
               "union": false,
-              "idlType": "boolean"
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                }
+              ]
             },
             "arguments": [
               {
@@ -262,8 +280,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "",
-            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-installondevicespeechrecognition"
+            "special": "static",
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-installondevice"
           },
           {
             "type": "attribute",

@@ -1,0 +1,17 @@
+// Source: Privacy-Preserving Attribution: Level 1 (https://w3c.github.io/ppa/)
+[SecureContext, Exposed=Window]
+interface PrivateAttribution {
+  readonly attribute PrivateAttributionAggregationServices aggregators;
+};
+
+// Source: Privacy-Preserving Attribution: Level 1 (https://w3c.github.io/ppa/)
+[SecureContext, Exposed=Window]
+partial interface PrivateAttribution {
+  undefined saveImpression(PrivateAttributionImpressionOptions options);
+};
+
+// Source: Privacy-Preserving Attribution: Level 1 (https://w3c.github.io/ppa/)
+[SecureContext, Exposed=Window]
+partial interface PrivateAttribution {
+  Promise<Uint8Array> measureConversion(PrivateAttributionConversionOptions options);
+};

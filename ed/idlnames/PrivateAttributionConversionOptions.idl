@@ -1,0 +1,16 @@
+// Source: Privacy-Preserving Attribution: Level 1 (https://w3c.github.io/ppa/)
+dictionary PrivateAttributionConversionOptions {
+  required DOMString aggregator;
+  double epsilon = 1.0;
+
+  required unsigned long histogramSize;
+
+  PrivateAttributionLogic logic = "last-touch";
+  unsigned long value = 1;
+  unsigned long maxValue = 1;
+
+  unsigned long lookbackDays;
+  unsigned long filterData;
+  sequence<DOMString> impressionSites = [];
+  sequence<DOMString> intermediarySites = [];
+};

@@ -42,7 +42,7 @@
         "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identitycredentialdisconnectoptions"
       },
       "IdentityCredential": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredential : Credential {\n  static Promise<undefined> disconnect(optional IdentityCredentialDisconnectOptions options = {});\n  readonly attribute USVString? token;\n  readonly attribute boolean isAutoSelected;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredential : Credential {\n  static Promise<undefined> disconnect(IdentityCredentialDisconnectOptions options);\n  readonly attribute USVString? token;\n  readonly attribute boolean isAutoSelected;\n};",
         "type": "interface",
         "name": "IdentityCredential",
         "inheritance": "Credential",
@@ -80,10 +80,8 @@
                   "union": false,
                   "idlType": "IdentityCredentialDisconnectOptions"
                 },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
+                "default": null,
+                "optional": false,
                 "variadic": false
               }
             ],
