@@ -450,6 +450,33 @@
         "partial": false,
         "href": "https://w3c.github.io/ppa/#dictdef-privateattributionconversionoptions"
       },
+      "PrivateAttributionConversionResult": {
+        "fragment": "dictionary PrivateAttributionConversionResult {\n  required Uint8Array report;\n};",
+        "type": "dictionary",
+        "name": "PrivateAttributionConversionResult",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "report",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Uint8Array"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionresult-report"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/ppa/#dictdef-privateattributionconversionresult"
+      },
       "PrivateAttributionLogic": {
         "fragment": "enum PrivateAttributionLogic {\n  \"last-touch\",\n};",
         "type": "enum",
@@ -568,7 +595,7 @@
           "partial": true
         },
         {
-          "fragment": "[SecureContext, Exposed=Window]\npartial interface PrivateAttribution {\n  Promise<Uint8Array> measureConversion(PrivateAttributionConversionOptions options);\n};",
+          "fragment": "[SecureContext, Exposed=Window]\npartial interface PrivateAttribution {\n  Promise<PrivateAttributionConversionResult> measureConversion(PrivateAttributionConversionOptions options);\n};",
           "type": "interface",
           "name": "PrivateAttribution",
           "inheritance": null,
@@ -589,7 +616,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "Uint8Array"
+                    "idlType": "PrivateAttributionConversionResult"
                   }
                 ]
               },
@@ -657,12 +684,15 @@
       "PrivateAttribution": [
         "PrivateAttributionAggregationServices",
         "PrivateAttributionImpressionOptions",
-        "Uint8Array",
+        "PrivateAttributionConversionResult",
         "PrivateAttributionConversionOptions"
       ],
       "PrivateAttributionImpressionOptions": [],
       "PrivateAttributionConversionOptions": [
         "PrivateAttributionLogic"
+      ],
+      "PrivateAttributionConversionResult": [
+        "Uint8Array"
       ]
     },
     "externalDependencies": [

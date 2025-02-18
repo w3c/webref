@@ -52,9 +52,13 @@ dictionary PrivateAttributionConversionOptions {
   sequence<DOMString> intermediarySites = [];
 };
 
+dictionary PrivateAttributionConversionResult {
+  required Uint8Array report;
+};
+
 [SecureContext, Exposed=Window]
 partial interface PrivateAttribution {
-  Promise<Uint8Array> measureConversion(PrivateAttributionConversionOptions options);
+  Promise<PrivateAttributionConversionResult> measureConversion(PrivateAttributionConversionOptions options);
 };
 
 enum PrivateAttributionLogic {

@@ -22,7 +22,7 @@
         "title": "Privacy-Preserving Attribution: Level 1",
         "url": "https://w3c.github.io/ppa/"
       },
-      "fragment": "[SecureContext, Exposed=Window]\npartial interface PrivateAttribution {\n  Promise<Uint8Array> measureConversion(PrivateAttributionConversionOptions options);\n};"
+      "fragment": "[SecureContext, Exposed=Window]\npartial interface PrivateAttribution {\n  Promise<PrivateAttributionConversionResult> measureConversion(PrivateAttributionConversionOptions options);\n};"
     }
   ],
   "inheritance": null,
