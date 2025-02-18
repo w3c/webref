@@ -4582,19 +4582,18 @@
       "id": "sec-bindthisvalue",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-bindthisvalue",
       "linkingText": [
-        "BindThisValue(V)"
+        "BindThisValue",
+        "BindThisValue(envRec, V)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
-      "for": [
-        "Function Environment Records"
-      ],
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "sec-bindthisvalue",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-bindthisvalue",
-        "title": "BindThisValue ( V )",
+        "title": "BindThisValue ( envRec, V )",
         "number": "9.1.1.3.1"
       },
       "definedIn": "heading"
@@ -4666,19 +4665,18 @@
       "id": "sec-getsuperbase",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-getsuperbase",
       "linkingText": [
-        "GetSuperBase()"
+        "GetSuperBase",
+        "GetSuperBase(envRec)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
-      "for": [
-        "Function Environment Records"
-      ],
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "sec-getsuperbase",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-getsuperbase",
-        "title": "GetSuperBase ( )",
+        "title": "GetSuperBase ( envRec )",
         "number": "9.1.1.3.5"
       },
       "definedIn": "heading"
@@ -4940,19 +4938,18 @@
       "id": "sec-hasvardeclaration",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hasvardeclaration",
       "linkingText": [
-        "HasVarDeclaration(N)"
+        "HasVarDeclaration",
+        "HasVarDeclaration(envRec, N)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
-      "for": [
-        "Global Environment Records"
-      ],
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "sec-hasvardeclaration",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hasvardeclaration",
-        "title": "HasVarDeclaration ( N )",
+        "title": "HasVarDeclaration ( envRec, N )",
         "number": "9.1.1.4.12"
       },
       "definedIn": "heading"
@@ -4961,19 +4958,18 @@
       "id": "sec-haslexicaldeclaration",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-haslexicaldeclaration",
       "linkingText": [
-        "HasLexicalDeclaration(N)"
+        "HasLexicalDeclaration",
+        "HasLexicalDeclaration(envRec, N)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
-      "for": [
-        "Global Environment Records"
-      ],
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "sec-haslexicaldeclaration",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-haslexicaldeclaration",
-        "title": "HasLexicalDeclaration ( N )",
+        "title": "HasLexicalDeclaration ( envRec, N )",
         "number": "9.1.1.4.13"
       },
       "definedIn": "heading"
@@ -4982,19 +4978,18 @@
       "id": "sec-hasrestrictedglobalproperty",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hasrestrictedglobalproperty",
       "linkingText": [
-        "HasRestrictedGlobalProperty(N)"
+        "HasRestrictedGlobalProperty",
+        "HasRestrictedGlobalProperty(envRec, N)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
-      "for": [
-        "Global Environment Records"
-      ],
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "sec-hasrestrictedglobalproperty",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hasrestrictedglobalproperty",
-        "title": "HasRestrictedGlobalProperty ( N )",
+        "title": "HasRestrictedGlobalProperty ( envRec, N )",
         "number": "9.1.1.4.14"
       },
       "definedIn": "heading"
@@ -5003,19 +4998,18 @@
       "id": "sec-candeclareglobalvar",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-candeclareglobalvar",
       "linkingText": [
-        "CanDeclareGlobalVar(N)"
+        "CanDeclareGlobalVar",
+        "CanDeclareGlobalVar(envRec, N)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
-      "for": [
-        "Global Environment Records"
-      ],
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "sec-candeclareglobalvar",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-candeclareglobalvar",
-        "title": "CanDeclareGlobalVar ( N )",
+        "title": "CanDeclareGlobalVar ( envRec, N )",
         "number": "9.1.1.4.15"
       },
       "definedIn": "heading"
@@ -5024,19 +5018,18 @@
       "id": "sec-candeclareglobalfunction",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-candeclareglobalfunction",
       "linkingText": [
-        "CanDeclareGlobalFunction(N)"
+        "CanDeclareGlobalFunction",
+        "CanDeclareGlobalFunction(envRec, N)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
-      "for": [
-        "Global Environment Records"
-      ],
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "sec-candeclareglobalfunction",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-candeclareglobalfunction",
-        "title": "CanDeclareGlobalFunction ( N )",
+        "title": "CanDeclareGlobalFunction ( envRec, N )",
         "number": "9.1.1.4.16"
       },
       "definedIn": "heading"
@@ -5045,19 +5038,18 @@
       "id": "sec-createglobalvarbinding",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalvarbinding",
       "linkingText": [
-        "CreateGlobalVarBinding(N, D)"
+        "CreateGlobalVarBinding",
+        "CreateGlobalVarBinding(envRec, N, D)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
-      "for": [
-        "Global Environment Records"
-      ],
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "sec-createglobalvarbinding",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalvarbinding",
-        "title": "CreateGlobalVarBinding ( N, D )",
+        "title": "CreateGlobalVarBinding ( envRec, N, D )",
         "number": "9.1.1.4.17"
       },
       "definedIn": "heading"
@@ -5066,19 +5058,18 @@
       "id": "sec-createglobalfunctionbinding",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalfunctionbinding",
       "linkingText": [
-        "CreateGlobalFunctionBinding(N, V, D)"
+        "CreateGlobalFunctionBinding",
+        "CreateGlobalFunctionBinding(envRec, N, V, D)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
-      "for": [
-        "Global Environment Records"
-      ],
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "sec-createglobalfunctionbinding",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalfunctionbinding",
-        "title": "CreateGlobalFunctionBinding ( N, V, D )",
+        "title": "CreateGlobalFunctionBinding ( envRec, N, V, D )",
         "number": "9.1.1.4.18"
       },
       "definedIn": "heading"
@@ -5193,19 +5184,18 @@
       "id": "sec-createimportbinding",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createimportbinding",
       "linkingText": [
-        "CreateImportBinding(N, M, N2)"
+        "CreateImportBinding",
+        "CreateImportBinding(envRec, N, M, N2)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
-      "for": [
-        "Module Environment Records"
-      ],
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "sec-createimportbinding",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createimportbinding",
-        "title": "CreateImportBinding ( N, M, N2 )",
+        "title": "CreateImportBinding ( envRec, N, M, N2 )",
         "number": "9.1.1.5.5"
       },
       "definedIn": "heading"
