@@ -8,9 +8,7 @@
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://fetch.spec.whatwg.org/": {},
       "https://github.com/w3c/secure-payment-confirmation/issues": {},
-      "https://github.com/w3c/webauthn/issues/1293": {},
       "https://github.com/w3c/webauthn/issues/1545": {},
-      "https://github.com/w3c/webauthn/issues/1656": {},
       "https://github.com/w3c/webauthn/issues/1667": {},
       "https://github.com/w3c/webauthn/pull/1801": {},
       "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-accepted.https.html": {},
@@ -40,12 +38,15 @@
       "https://w3c.github.io/payment-method-id/": {},
       "https://w3c.github.io/payment-request/": {},
       "https://w3c.github.io/secure-payment-confirmation/": {},
-      "https://w3c.github.io/webappsec-credential-management/": {},
+      "https://w3c.github.io/webappsec-credential-management/": {
+        "anchors": [
+          "sctn-cred-type-registry"
+        ]
+      },
       "https://w3c.github.io/webauthn/": {
         "anchors": [
           "sctn-getAssertion",
           "sctn-createCredential",
-          "sctn-permissions-policy",
           "sctn-verifying-assertion",
           "sctn-automation",
           "sctn-security-considerations",
@@ -186,7 +187,6 @@
         "anchors": [
           "dfn-payment-method",
           "dom-paymentrequest",
-          "dfn-payment",
           "dfn-payment-handler",
           "dom-paymentrequest-constructor",
           "dom-paymentrequest-show",
@@ -200,6 +200,7 @@
           "dfn-details",
           "dom-paymentdetailsinit-total",
           "dom-paymentcurrencyamount",
+          "dfn-payment",
           "accessibility-considerations"
         ]
       },
@@ -208,6 +209,7 @@
           "dom-credentialscontainer-create",
           "abstract-opdef-request-a-credential",
           "dom-credentialscontainer-get",
+          "credential-type-registry-create-permissions-policy",
           "dom-credential-id"
         ]
       },
@@ -217,6 +219,7 @@
           "webauthn-extensions",
           "dom-publickeycredentialrequestoptions-challenge",
           "dictdef-collectedclientdata",
+          "publickey-credentials-create-feature",
           "public-key-credential",
           "relying-party-identifier",
           "credential-id",
