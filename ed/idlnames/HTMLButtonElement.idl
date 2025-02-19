@@ -3,6 +3,8 @@
 interface HTMLButtonElement : HTMLElement {
   [HTMLConstructor] constructor();
 
+  [CEReactions] attribute DOMString command;
+  [CEReactions] attribute Element? commandForElement;
   [CEReactions] attribute boolean disabled;
   readonly attribute HTMLFormElement? form;
   [CEReactions] attribute USVString formAction;

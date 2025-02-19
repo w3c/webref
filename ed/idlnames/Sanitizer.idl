@@ -1,5 +1,5 @@
 // Source: HTML Sanitizer API (https://wicg.github.io/sanitizer-api/)
-[Exposed=(Window,Worker)]
+[Exposed=Window]
 interface Sanitizer {
   constructor(optional (SanitizerConfig or SanitizerPresets) configuration = "default");
 

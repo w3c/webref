@@ -957,6 +957,8 @@ HTMLInputElement includes PopoverInvokerElement;
 interface HTMLButtonElement : HTMLElement {
   [HTMLConstructor] constructor();
 
+  [CEReactions] attribute DOMString command;
+  [CEReactions] attribute Element? commandForElement;
   [CEReactions] attribute boolean disabled;
   readonly attribute HTMLFormElement? form;
   [CEReactions] attribute USVString formAction;
@@ -1710,6 +1712,18 @@ dictionary ToggleEventInit : EventInit {
   DOMString newState = "";
 };
 
+[Exposed=Window]
+interface CommandEvent : Event {
+  constructor(DOMString type, optional CommandEventInit eventInitDict = {});
+  readonly attribute Element? source;
+  readonly attribute DOMString action;
+};
+
+dictionary CommandEventInit : EventInit {
+  Element? source = null;
+  DOMString action = "auto";
+};
+
 dictionary FocusOptions {
   boolean preventScroll = false;
   boolean focusVisible;
@@ -2195,6 +2209,7 @@ interface mixin GlobalEventHandlers {
   attribute EventHandler onchange;
   attribute EventHandler onclick;
   attribute EventHandler onclose;
+  attribute EventHandler oncommand;
   attribute EventHandler oncontextlost;
   attribute EventHandler oncontextmenu;
   attribute EventHandler oncontextrestored;
