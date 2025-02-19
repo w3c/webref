@@ -8225,6 +8225,26 @@
       "definedIn": "heading"
     },
     {
+      "id": "sec-evaluate-import-call",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-evaluate-import-call",
+      "linkingText": [
+        "EvaluateImportCall",
+        "EvaluateImportCall(specifierExpression, optionsExpression)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-evaluate-import-call",
+        "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-evaluate-import-call",
+        "title": "EvaluateImportCall ( specifierExpression [ , optionsExpression ] )",
+        "number": "13.3.10.2"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "sec-ContinueDynamicImport",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-ContinueDynamicImport",
       "linkingText": [
@@ -8240,7 +8260,7 @@
         "id": "sec-ContinueDynamicImport",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-ContinueDynamicImport",
         "title": "ContinueDynamicImport ( promiseCapability, moduleCompletion )",
-        "number": "13.3.10.1.1"
+        "number": "13.3.10.3"
       },
       "definedIn": "heading"
     },
@@ -8628,6 +8648,92 @@
       "definedIn": "heading"
     },
     {
+      "id": "modulerequest-record",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#modulerequest-record",
+      "linkingText": [
+        "ModuleRequest Record",
+        "ModuleRequest Records"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-modulerequest-record",
+        "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-modulerequest-record",
+        "title": "ModuleRequest Records",
+        "number": "16.2.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "loadedmodulerequest-record",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#loadedmodulerequest-record",
+      "linkingText": [
+        "LoadedModuleRequest Record",
+        "LoadedModuleRequest Records"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-modulerequest-record",
+        "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-modulerequest-record",
+        "title": "ModuleRequest Records",
+        "number": "16.2.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "importattribute-record",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#importattribute-record",
+      "linkingText": [
+        "ImportAttribute Record",
+        "ImportAttribute Records"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-modulerequest-record",
+        "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-modulerequest-record",
+        "title": "ModuleRequest Records",
+        "number": "16.2.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sec-ModuleRequestsEqual",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-ModuleRequestsEqual",
+      "linkingText": [
+        "ModuleRequestsEqual",
+        "ModuleRequestsEqual(left, right)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-ModuleRequestsEqual",
+        "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-ModuleRequestsEqual",
+        "title": "ModuleRequestsEqual ( left, right )",
+        "number": "16.2.1.3.1"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "sec-abstract-module-records",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-abstract-module-records",
       "linkingText": [
@@ -8645,7 +8751,7 @@
         "id": "sec-abstract-module-records",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-abstract-module-records",
         "title": "Abstract Module Records",
-        "number": "16.2.1.4"
+        "number": "16.2.1.5"
       },
       "definedIn": "prose"
     },
@@ -8667,7 +8773,7 @@
         "id": "sec-abstract-module-records",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-abstract-module-records",
         "title": "Abstract Module Records",
-        "number": "16.2.1.4"
+        "number": "16.2.1.5"
       },
       "definedIn": "table"
     },
@@ -8689,7 +8795,7 @@
         "id": "sec-cyclic-module-records",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-cyclic-module-records",
         "title": "Cyclic Module Records",
-        "number": "16.2.1.5"
+        "number": "16.2.1.6"
       },
       "definedIn": "prose"
     },
@@ -8711,7 +8817,7 @@
         "id": "sec-cyclic-module-records",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-cyclic-module-records",
         "title": "Cyclic Module Records",
-        "number": "16.2.1.5"
+        "number": "16.2.1.6"
       },
       "definedIn": "prose"
     },
@@ -8732,7 +8838,7 @@
         "id": "sec-LoadRequestedModules",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-LoadRequestedModules",
         "title": "LoadRequestedModules ( [ hostDefined ] )",
-        "number": "16.2.1.5.1"
+        "number": "16.2.1.6.1"
       },
       "definedIn": "heading"
     },
@@ -8752,7 +8858,7 @@
         "id": "sec-InnerModuleLoading",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-InnerModuleLoading",
         "title": "InnerModuleLoading ( state, module )",
-        "number": "16.2.1.5.1.1"
+        "number": "16.2.1.6.1.1"
       },
       "definedIn": "heading"
     },
@@ -8772,7 +8878,7 @@
         "id": "sec-ContinueModuleLoading",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-ContinueModuleLoading",
         "title": "ContinueModuleLoading ( state, moduleCompletion )",
-        "number": "16.2.1.5.1.2"
+        "number": "16.2.1.6.1.2"
       },
       "definedIn": "heading"
     },
@@ -8793,7 +8899,7 @@
         "id": "sec-moduledeclarationlinking",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-moduledeclarationlinking",
         "title": "Link ( )",
-        "number": "16.2.1.5.2"
+        "number": "16.2.1.6.2"
       },
       "definedIn": "heading"
     },
@@ -8813,7 +8919,7 @@
         "id": "sec-InnerModuleLinking",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-InnerModuleLinking",
         "title": "InnerModuleLinking ( module, stack, index )",
-        "number": "16.2.1.5.2.1"
+        "number": "16.2.1.6.2.1"
       },
       "definedIn": "heading"
     },
@@ -8834,7 +8940,7 @@
         "id": "sec-moduleevaluation",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-moduleevaluation",
         "title": "Evaluate ( )",
-        "number": "16.2.1.5.3"
+        "number": "16.2.1.6.3"
       },
       "definedIn": "heading"
     },
@@ -8854,7 +8960,7 @@
         "id": "sec-innermoduleevaluation",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-innermoduleevaluation",
         "title": "InnerModuleEvaluation ( module, stack, index )",
-        "number": "16.2.1.5.3.1"
+        "number": "16.2.1.6.3.1"
       },
       "definedIn": "heading"
     },
@@ -8874,7 +8980,7 @@
         "id": "sec-execute-async-module",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-execute-async-module",
         "title": "ExecuteAsyncModule ( module )",
-        "number": "16.2.1.5.3.2"
+        "number": "16.2.1.6.3.2"
       },
       "definedIn": "heading"
     },
@@ -8894,7 +9000,7 @@
         "id": "sec-gather-available-ancestors",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-gather-available-ancestors",
         "title": "GatherAvailableAncestors ( module, execList )",
-        "number": "16.2.1.5.3.3"
+        "number": "16.2.1.6.3.3"
       },
       "definedIn": "heading"
     },
@@ -8914,7 +9020,7 @@
         "id": "sec-async-module-execution-fulfilled",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-async-module-execution-fulfilled",
         "title": "AsyncModuleExecutionFulfilled ( module )",
-        "number": "16.2.1.5.3.4"
+        "number": "16.2.1.6.3.4"
       },
       "definedIn": "heading"
     },
@@ -8934,7 +9040,7 @@
         "id": "sec-async-module-execution-rejected",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-async-module-execution-rejected",
         "title": "AsyncModuleExecutionRejected ( module, error )",
-        "number": "16.2.1.5.3.5"
+        "number": "16.2.1.6.3.5"
       },
       "definedIn": "heading"
     },
@@ -8956,7 +9062,7 @@
         "id": "sec-source-text-module-records",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-source-text-module-records",
         "title": "Source Text Module Records",
-        "number": "16.2.1.6"
+        "number": "16.2.1.7"
       },
       "definedIn": "prose"
     },
@@ -8978,7 +9084,7 @@
         "id": "sec-source-text-module-records",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-source-text-module-records",
         "title": "Source Text Module Records",
-        "number": "16.2.1.6"
+        "number": "16.2.1.7"
       },
       "definedIn": "prose"
     },
@@ -9000,7 +9106,7 @@
         "id": "sec-source-text-module-records",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-source-text-module-records",
         "title": "Source Text Module Records",
-        "number": "16.2.1.6"
+        "number": "16.2.1.7"
       },
       "definedIn": "prose"
     },
@@ -9020,7 +9126,7 @@
         "id": "sec-parsemodule",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-parsemodule",
         "title": "ParseModule ( sourceText, realm, hostDefined )",
-        "number": "16.2.1.6.1"
+        "number": "16.2.1.7.1"
       },
       "definedIn": "heading"
     },
@@ -9041,7 +9147,7 @@
         "id": "sec-getexportednames",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-getexportednames",
         "title": "GetExportedNames ( [ exportStarSet ] )",
-        "number": "16.2.1.6.2"
+        "number": "16.2.1.7.2"
       },
       "definedIn": "heading"
     },
@@ -9062,7 +9168,7 @@
         "id": "sec-resolveexport",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-resolveexport",
         "title": "ResolveExport ( exportName [ , resolveSet ] )",
-        "number": "16.2.1.6.3"
+        "number": "16.2.1.7.3"
       },
       "definedIn": "heading"
     },
@@ -9083,7 +9189,7 @@
         "id": "sec-source-text-module-record-initialize-environment",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-source-text-module-record-initialize-environment",
         "title": "InitializeEnvironment ( )",
-        "number": "16.2.1.6.4"
+        "number": "16.2.1.7.4"
       },
       "definedIn": "heading"
     },
@@ -9104,7 +9210,7 @@
         "id": "sec-source-text-module-record-execute-module",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-source-text-module-record-execute-module",
         "title": "ExecuteModule ( [ capability ] )",
-        "number": "16.2.1.6.5"
+        "number": "16.2.1.7.5"
       },
       "definedIn": "heading"
     },
@@ -9113,7 +9219,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-GetImportedModule",
       "linkingText": [
         "GetImportedModule",
-        "GetImportedModule(referrer, specifier)"
+        "GetImportedModule(referrer, request)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -9123,8 +9229,8 @@
       "heading": {
         "id": "sec-GetImportedModule",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-GetImportedModule",
-        "title": "GetImportedModule ( referrer, specifier )",
-        "number": "16.2.1.7"
+        "title": "GetImportedModule ( referrer, request )",
+        "number": "16.2.1.8"
       },
       "definedIn": "heading"
     },
@@ -9133,7 +9239,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-HostLoadImportedModule",
       "linkingText": [
         "HostLoadImportedModule",
-        "HostLoadImportedModule(referrer, specifier, hostDefined, payload)"
+        "HostLoadImportedModule(referrer, moduleRequest, hostDefined, payload)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -9143,8 +9249,8 @@
       "heading": {
         "id": "sec-HostLoadImportedModule",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-HostLoadImportedModule",
-        "title": "HostLoadImportedModule ( referrer, specifier, hostDefined, payload )",
-        "number": "16.2.1.8"
+        "title": "HostLoadImportedModule ( referrer, moduleRequest, hostDefined, payload )",
+        "number": "16.2.1.9"
       },
       "definedIn": "heading"
     },
@@ -9153,7 +9259,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-FinishLoadingImportedModule",
       "linkingText": [
         "FinishLoadingImportedModule",
-        "FinishLoadingImportedModule(referrer, specifier, payload, result)"
+        "FinishLoadingImportedModule(referrer, moduleRequest, payload, result)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -9163,8 +9269,48 @@
       "heading": {
         "id": "sec-FinishLoadingImportedModule",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-FinishLoadingImportedModule",
-        "title": "FinishLoadingImportedModule ( referrer, specifier, payload, result )",
-        "number": "16.2.1.9"
+        "title": "FinishLoadingImportedModule ( referrer, moduleRequest, payload, result )",
+        "number": "16.2.1.10"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-AllImportAttributesSupported",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-AllImportAttributesSupported",
+      "linkingText": [
+        "AllImportAttributesSupported",
+        "AllImportAttributesSupported(attributes)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-AllImportAttributesSupported",
+        "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-AllImportAttributesSupported",
+        "title": "AllImportAttributesSupported ( attributes )",
+        "number": "16.2.1.11"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-hostgetsupportedimportattributes",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-hostgetsupportedimportattributes",
+      "linkingText": [
+        "HostGetSupportedImportAttributes",
+        "HostGetSupportedImportAttributes()"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-hostgetsupportedimportattributes",
+        "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-hostgetsupportedimportattributes",
+        "title": "HostGetSupportedImportAttributes ( )",
+        "number": "16.2.1.11.1"
       },
       "definedIn": "heading"
     },
@@ -9184,7 +9330,7 @@
         "id": "sec-getmodulenamespace",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-getmodulenamespace",
         "title": "GetModuleNamespace ( module )",
-        "number": "16.2.1.10"
+        "number": "16.2.1.12"
       },
       "definedIn": "heading"
     },

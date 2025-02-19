@@ -4597,11 +4597,18 @@
       "number": "13.3.10.1"
     },
     {
+      "id": "sec-evaluate-import-call",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-evaluate-import-call",
+      "title": "EvaluateImportCall ( specifierExpression [ , optionsExpression ] )",
+      "level": 4,
+      "number": "13.3.10.2"
+    },
+    {
       "id": "sec-ContinueDynamicImport",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-ContinueDynamicImport",
       "title": "ContinueDynamicImport ( promiseCapability, moduleCompletion )",
-      "level": 5,
-      "number": "13.3.10.1.1"
+      "level": 4,
+      "number": "13.3.10.3"
     },
     {
       "id": "sec-tagged-templates",
@@ -6284,186 +6291,214 @@
       "number": "16.2.1.2"
     },
     {
+      "id": "sec-modulerequest-record",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-modulerequest-record",
+      "title": "ModuleRequest Records",
+      "level": 4,
+      "number": "16.2.1.3"
+    },
+    {
+      "id": "sec-ModuleRequestsEqual",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-ModuleRequestsEqual",
+      "title": "ModuleRequestsEqual ( left, right )",
+      "level": 5,
+      "number": "16.2.1.3.1"
+    },
+    {
       "id": "sec-static-semantics-modulerequests",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-static-semantics-modulerequests",
       "title": "Static Semantics: ModuleRequests",
       "level": 4,
-      "number": "16.2.1.3"
+      "number": "16.2.1.4"
     },
     {
       "id": "sec-abstract-module-records",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-abstract-module-records",
       "title": "Abstract Module Records",
       "level": 4,
-      "number": "16.2.1.4"
+      "number": "16.2.1.5"
     },
     {
       "id": "sec-cyclic-module-records",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-cyclic-module-records",
       "title": "Cyclic Module Records",
       "level": 4,
-      "number": "16.2.1.5"
+      "number": "16.2.1.6"
     },
     {
       "id": "sec-LoadRequestedModules",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-LoadRequestedModules",
       "title": "LoadRequestedModules ( [ hostDefined ] )",
       "level": 5,
-      "number": "16.2.1.5.1"
+      "number": "16.2.1.6.1"
     },
     {
       "id": "sec-InnerModuleLoading",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-InnerModuleLoading",
       "title": "InnerModuleLoading ( state, module )",
       "level": 6,
-      "number": "16.2.1.5.1.1"
+      "number": "16.2.1.6.1.1"
     },
     {
       "id": "sec-ContinueModuleLoading",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-ContinueModuleLoading",
       "title": "ContinueModuleLoading ( state, moduleCompletion )",
       "level": 6,
-      "number": "16.2.1.5.1.2"
+      "number": "16.2.1.6.1.2"
     },
     {
       "id": "sec-moduledeclarationlinking",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-moduledeclarationlinking",
       "title": "Link ( )",
       "level": 5,
-      "number": "16.2.1.5.2"
+      "number": "16.2.1.6.2"
     },
     {
       "id": "sec-InnerModuleLinking",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-InnerModuleLinking",
       "title": "InnerModuleLinking ( module, stack, index )",
       "level": 6,
-      "number": "16.2.1.5.2.1"
+      "number": "16.2.1.6.2.1"
     },
     {
       "id": "sec-moduleevaluation",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-moduleevaluation",
       "title": "Evaluate ( )",
       "level": 5,
-      "number": "16.2.1.5.3"
+      "number": "16.2.1.6.3"
     },
     {
       "id": "sec-innermoduleevaluation",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-innermoduleevaluation",
       "title": "InnerModuleEvaluation ( module, stack, index )",
       "level": 6,
-      "number": "16.2.1.5.3.1"
+      "number": "16.2.1.6.3.1"
     },
     {
       "id": "sec-execute-async-module",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-execute-async-module",
       "title": "ExecuteAsyncModule ( module )",
       "level": 6,
-      "number": "16.2.1.5.3.2"
+      "number": "16.2.1.6.3.2"
     },
     {
       "id": "sec-gather-available-ancestors",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-gather-available-ancestors",
       "title": "GatherAvailableAncestors ( module, execList )",
       "level": 6,
-      "number": "16.2.1.5.3.3"
+      "number": "16.2.1.6.3.3"
     },
     {
       "id": "sec-async-module-execution-fulfilled",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-async-module-execution-fulfilled",
       "title": "AsyncModuleExecutionFulfilled ( module )",
       "level": 6,
-      "number": "16.2.1.5.3.4"
+      "number": "16.2.1.6.3.4"
     },
     {
       "id": "sec-async-module-execution-rejected",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-async-module-execution-rejected",
       "title": "AsyncModuleExecutionRejected ( module, error )",
       "level": 6,
-      "number": "16.2.1.5.3.5"
+      "number": "16.2.1.6.3.5"
     },
     {
       "id": "sec-example-cyclic-module-record-graphs",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-example-cyclic-module-record-graphs",
       "title": "Example Cyclic Module Record Graphs",
       "level": 5,
-      "number": "16.2.1.5.4"
+      "number": "16.2.1.6.4"
     },
     {
       "id": "sec-source-text-module-records",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-source-text-module-records",
       "title": "Source Text Module Records",
       "level": 4,
-      "number": "16.2.1.6"
+      "number": "16.2.1.7"
     },
     {
       "id": "sec-parsemodule",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-parsemodule",
       "title": "ParseModule ( sourceText, realm, hostDefined )",
       "level": 5,
-      "number": "16.2.1.6.1"
+      "number": "16.2.1.7.1"
     },
     {
       "id": "sec-getexportednames",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-getexportednames",
       "title": "GetExportedNames ( [ exportStarSet ] )",
       "level": 5,
-      "number": "16.2.1.6.2"
+      "number": "16.2.1.7.2"
     },
     {
       "id": "sec-resolveexport",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-resolveexport",
       "title": "ResolveExport ( exportName [ , resolveSet ] )",
       "level": 5,
-      "number": "16.2.1.6.3"
+      "number": "16.2.1.7.3"
     },
     {
       "id": "sec-source-text-module-record-initialize-environment",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-source-text-module-record-initialize-environment",
       "title": "InitializeEnvironment ( )",
       "level": 5,
-      "number": "16.2.1.6.4"
+      "number": "16.2.1.7.4"
     },
     {
       "id": "sec-source-text-module-record-execute-module",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-source-text-module-record-execute-module",
       "title": "ExecuteModule ( [ capability ] )",
       "level": 5,
-      "number": "16.2.1.6.5"
+      "number": "16.2.1.7.5"
     },
     {
       "id": "sec-GetImportedModule",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-GetImportedModule",
-      "title": "GetImportedModule ( referrer, specifier )",
-      "level": 4,
-      "number": "16.2.1.7"
-    },
-    {
-      "id": "sec-HostLoadImportedModule",
-      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-HostLoadImportedModule",
-      "title": "HostLoadImportedModule ( referrer, specifier, hostDefined, payload )",
+      "title": "GetImportedModule ( referrer, request )",
       "level": 4,
       "number": "16.2.1.8"
     },
     {
-      "id": "sec-FinishLoadingImportedModule",
-      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-FinishLoadingImportedModule",
-      "title": "FinishLoadingImportedModule ( referrer, specifier, payload, result )",
+      "id": "sec-HostLoadImportedModule",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-HostLoadImportedModule",
+      "title": "HostLoadImportedModule ( referrer, moduleRequest, hostDefined, payload )",
       "level": 4,
       "number": "16.2.1.9"
+    },
+    {
+      "id": "sec-FinishLoadingImportedModule",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-FinishLoadingImportedModule",
+      "title": "FinishLoadingImportedModule ( referrer, moduleRequest, payload, result )",
+      "level": 4,
+      "number": "16.2.1.10"
+    },
+    {
+      "id": "sec-AllImportAttributesSupported",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-AllImportAttributesSupported",
+      "title": "AllImportAttributesSupported ( attributes )",
+      "level": 4,
+      "number": "16.2.1.11"
+    },
+    {
+      "id": "sec-hostgetsupportedimportattributes",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-hostgetsupportedimportattributes",
+      "title": "HostGetSupportedImportAttributes ( )",
+      "level": 5,
+      "number": "16.2.1.11.1"
     },
     {
       "id": "sec-getmodulenamespace",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-getmodulenamespace",
       "title": "GetModuleNamespace ( module )",
       "level": 4,
-      "number": "16.2.1.10"
+      "number": "16.2.1.12"
     },
     {
       "id": "sec-module-semantics-runtime-semantics-evaluation",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-module-semantics-runtime-semantics-evaluation",
       "title": "Runtime Semantics: Evaluation",
       "level": 4,
-      "number": "16.2.1.11"
+      "number": "16.2.1.13"
     },
     {
       "id": "sec-imports",
@@ -6492,6 +6527,13 @@
       "title": "Static Semantics: ImportEntriesForModule",
       "level": 4,
       "number": "16.2.2.3"
+    },
+    {
+      "id": "sec-withclausetoattributes",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-withclausetoattributes",
+      "title": "Static Semantics: WithClauseToAttributes",
+      "level": 4,
+      "number": "16.2.2.4"
     },
     {
       "id": "sec-exports",
