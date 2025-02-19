@@ -123,14 +123,14 @@
         "href": "https://w3c.github.io/ppa/#privateattributionaggregationservices"
       },
       "PrivateAttribution": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface PrivateAttribution {\n  readonly attribute PrivateAttributionAggregationServices aggregators;\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PrivateAttribution {\n  readonly attribute PrivateAttributionAggregationServices aggregationServices;\n};",
         "type": "interface",
         "name": "PrivateAttribution",
         "inheritance": null,
         "members": [
           {
             "type": "attribute",
-            "name": "aggregators",
+            "name": "aggregationServices",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -142,7 +142,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://w3c.github.io/ppa/#dom-privateattribution-aggregators"
+            "href": "https://w3c.github.io/ppa/#dom-privateattribution-aggregationservices"
           }
         ],
         "extAttrs": [
@@ -244,14 +244,14 @@
         "href": "https://w3c.github.io/ppa/#dictdef-privateattributionimpressionoptions"
       },
       "PrivateAttributionConversionOptions": {
-        "fragment": "dictionary PrivateAttributionConversionOptions {\n  required DOMString aggregator;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  PrivateAttributionLogic logic = \"last-touch\";\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n\n  unsigned long lookbackDays;\n  unsigned long filterData;\n  sequence<DOMString> impressionSites = [];\n  sequence<DOMString> intermediarySites = [];\n};",
+        "fragment": "dictionary PrivateAttributionConversionOptions {\n  required DOMString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  PrivateAttributionLogic logic = \"last-touch\";\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n\n  unsigned long lookbackDays;\n  unsigned long filterData;\n  sequence<DOMString> impressionSites = [];\n  sequence<DOMString> intermediarySites = [];\n};",
         "type": "dictionary",
         "name": "PrivateAttributionConversionOptions",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "aggregator",
+            "name": "aggregationService",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -263,7 +263,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-aggregator"
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-aggregationservice"
           },
           {
             "type": "field",

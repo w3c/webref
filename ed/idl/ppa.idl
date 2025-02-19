@@ -21,7 +21,7 @@ interface PrivateAttributionAggregationServices {
 
 [SecureContext, Exposed=Window]
 interface PrivateAttribution {
-  readonly attribute PrivateAttributionAggregationServices aggregators;
+  readonly attribute PrivateAttributionAggregationServices aggregationServices;
 };
 
 dictionary PrivateAttributionImpressionOptions {
@@ -37,7 +37,7 @@ partial interface PrivateAttribution {
 };
 
 dictionary PrivateAttributionConversionOptions {
-  required DOMString aggregator;
+  required DOMString aggregationService;
   double epsilon = 1.0;
 
   required unsigned long histogramSize;
