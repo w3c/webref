@@ -47285,7 +47285,7 @@
       "id": "dom-context-2d-createimagedata-imagedata",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createimagedata-imagedata",
       "linkingText": [
-        "createImageData(imagedata)"
+        "createImageData(imageData)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -47524,10 +47524,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-context-2d-putimagedata",
-      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-putimagedata",
+      "id": "dom-context-2d-putimagedata-short",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-putimagedata-short",
       "linkingText": [
-        "putImageData()"
+        "putImageData(imageData, dx, dy)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -47535,6 +47535,46 @@
         "CanvasImageData"
       ],
       "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-manipulation",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#pixel-manipulation",
+        "title": "Pixel manipulation",
+        "number": "4.12.5.1.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-context-2d-putimagedata",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-putimagedata",
+      "linkingText": [
+        "putImageData(imageData, dx, dy, dirtyX, dirtyY, dirtyWidth, dirtyHeight)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CanvasImageData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-manipulation",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#pixel-manipulation",
+        "title": "Pixel manipulation",
+        "number": "4.12.5.1.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-context2d-putimagedata-common",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context2d-putimagedata-common",
+      "linkingText": [
+        "put pixels from an ImageData onto a bitmap"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "pixel-manipulation",
