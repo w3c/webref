@@ -99,11 +99,11 @@
     {
       "name": "view-transition-name/auto",
       "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-name-auto",
-      "html": "In addition to the existing values, the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-view-transitions-1/#propdef-view-transition-name\" id=\"ref-for-propdef-view-transition-name①③\">view-transition-name</a> also accepts an <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"view-transition-name\" data-dfn-type=\"dfn\" data-export=\"\" id=\"view-transition-name-auto\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">auto</dfn> keyword.\nTo resolve the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value\">used value</a> of <span class=\"property\" id=\"ref-for-propdef-view-transition-name①④\">view-transition-name</span> for <var>element</var>:",
+      "html": "In addition to the existing values, the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-view-transitions-1/#propdef-view-transition-name\" id=\"ref-for-propdef-view-transition-name①④\">view-transition-name</a> also accepts an <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"view-transition-name\" data-dfn-type=\"dfn\" data-export=\"\" id=\"view-transition-name-auto\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">auto</dfn> keyword.\nTo resolve the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value\">used value</a> of <span class=\"property\" id=\"ref-for-propdef-view-transition-name①⑤\">view-transition-name</span> for <var>element</var>:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>computed</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-view-transitions-1/#propdef-view-transition-name\" id=\"ref-for-propdef-view-transition-name①⑤\">view-transition-name</a>.</p>"
+          "html": "<p>Let <var>computed</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-view-transitions-1/#propdef-view-transition-name\" id=\"ref-for-propdef-view-transition-name①⑥\">view-transition-name</a>.</p>"
         },
         {
           "html": "<p>If <var>computed</var> is <span class=\"css\">none</span>, return null.</p>"
@@ -112,10 +112,10 @@
           "html": "<p>If <var>computed</var> is a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#identifier-value\" id=\"ref-for-identifier-value①③\">&lt;custom-ident&gt;</a>, return <var>computed</var>.</p>"
         },
         {
-          "html": "<p class=\"assertion\">Assert: <var>computed</var> is <span class=\"css\">auto</span>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>computed</var> is <span class=\"css\">auto</span> or <span class=\"css\">match-element</span>.</p>"
         },
         {
-          "html": "<p>If <var>element</var> has an associated <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-id\" id=\"ref-for-concept-id①\">id</a>, and <var>computed</var> is associated with the same <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root\">root</a> as <var>element</var>’s <span id=\"ref-for-concept-tree-root①\">root</span>, then return the value of <var>element</var>’s <span id=\"ref-for-concept-id②\">id</span>.</p>"
+          "html": "<p>If <var>computed</var> is <span class=\"css\">auto</span>, <var>element</var> has an associated <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-id\" id=\"ref-for-concept-id②\">id</a>, and <var>computed</var> is associated with the same <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root\">root</a> as <var>element</var>’s <span id=\"ref-for-concept-tree-root①\">root</span>, then return the value of <var>element</var>’s <span id=\"ref-for-concept-id③\">id</span>.</p>"
         },
         {
           "html": "<p>Return a unique string. The string should remain consistent and unique for this element and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①②\">Document</a></code>, at least for the lifetime of <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document②\">node document</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-active-view-transition\" id=\"ref-for-document-active-view-transition⑧\">active view transition</a>.</p>"

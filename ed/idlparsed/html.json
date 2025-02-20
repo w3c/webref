@@ -24049,7 +24049,7 @@
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#toggleeventinit"
       },
       "CommandEvent": {
-        "fragment": "[Exposed=Window]\ninterface CommandEvent : Event {\n  constructor(DOMString type, optional CommandEventInit eventInitDict = {});\n  readonly attribute Element? source;\n  readonly attribute DOMString action;\n};",
+        "fragment": "[Exposed=Window]\ninterface CommandEvent : Event {\n  constructor(DOMString type, optional CommandEventInit eventInitDict = {});\n  readonly attribute Element? source;\n  readonly attribute DOMString command;\n};",
         "type": "interface",
         "name": "CommandEvent",
         "inheritance": "Event",
@@ -24112,7 +24112,7 @@
           },
           {
             "type": "attribute",
-            "name": "action",
+            "name": "command",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -24123,7 +24123,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-commandevent-command"
           }
         ],
         "extAttrs": [
@@ -24141,7 +24142,7 @@
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#commandevent"
       },
       "CommandEventInit": {
-        "fragment": "dictionary CommandEventInit : EventInit {\n  Element? source = null;\n  DOMString action = \"auto\";\n};",
+        "fragment": "dictionary CommandEventInit : EventInit {\n  Element? source = null;\n  DOMString command = \"\";\n};",
         "type": "dictionary",
         "name": "CommandEventInit",
         "inheritance": "EventInit",
@@ -24165,7 +24166,7 @@
           },
           {
             "type": "field",
-            "name": "action",
+            "name": "command",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -24177,7 +24178,7 @@
             },
             "default": {
               "type": "string",
-              "value": "auto"
+              "value": ""
             },
             "required": false
           }

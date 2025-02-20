@@ -37,6 +37,38 @@
       ]
     },
     {
+      "name": "column-height",
+      "href": "https://drafts.csswg.org/css-multicol-2/#propdef-column-height",
+      "value": "auto | <length [0,∞]>",
+      "initial": "auto",
+      "appliesTo": "block containers except table wrapper boxes",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "the keyword auto or an absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "means that the column height will be determined by the amount of content and other properties.",
+          "href": "https://drafts.csswg.org/css-multicol-2/#valdef-column-height-auto",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "<length [0,∞]>",
+          "prose": "describes the desired column height. Negative values are not allowed.",
+          "href": "https://drafts.csswg.org/css-multicol-2/#valdef-column-height-length-0",
+          "type": "value",
+          "value": "<length [0,∞]>"
+        }
+      ],
+      "styleDeclaration": [
+        "column-height",
+        "columnHeight"
+      ]
+    },
+    {
       "name": "column-count",
       "href": "https://drafts.csswg.org/css-multicol-2/#propdef-column-count",
       "value": "auto | <integer [1,∞]>",
@@ -69,9 +101,41 @@
       ]
     },
     {
+      "name": "column-wrap",
+      "href": "https://drafts.csswg.org/css-multicol-2/#propdef-column-wrap",
+      "value": "nowrap | wrap",
+      "initial": "nowrap",
+      "appliesTo": "multicol containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "nowrap",
+          "prose": "Overflow columns are created in the inline direction.",
+          "href": "https://drafts.csswg.org/css-multicol-2/#valdef-column-wrap-nowrap",
+          "type": "value",
+          "value": "nowrap"
+        },
+        {
+          "name": "wrap",
+          "prose": "Overflow columns create a new multicol row in the block direction.",
+          "href": "https://drafts.csswg.org/css-multicol-2/#valdef-column-wrap-wrap",
+          "type": "value",
+          "value": "wrap"
+        }
+      ],
+      "styleDeclaration": [
+        "column-wrap",
+        "columnWrap"
+      ]
+    },
+    {
       "name": "columns",
       "href": "https://drafts.csswg.org/css-multicol-2/#propdef-columns",
-      "value": "<'column-width'> || <'column-count'>",
+      "value": "<'column-width'> || <'column-count'> || <'column-height'> || <'column-wrap'>",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
