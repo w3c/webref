@@ -5,6 +5,18 @@
   },
   "events": [
     {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://webaudio.github.io/web-speech-api/#ref-for-concept-event-fire"
+      },
+      "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-start",
+      "type": "start",
+      "targets": [
+        "SpeechRecognition"
+      ],
+      "interface": "Event"
+    },
+    {
       "type": "audiostart",
       "targets": [
         "SpeechRecognition"
@@ -105,26 +117,6 @@
       "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-error"
     },
     {
-      "type": "start",
-      "targets": [
-        "SpeechRecognition"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      },
-      "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-start"
-    },
-    {
-      "type": "start",
-      "targets": [
-        "SpeechSynthesisUtterance"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      },
-      "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-start"
-    },
-    {
       "type": "end",
       "targets": [
         "SpeechRecognition"
@@ -193,6 +185,17 @@
         "format": "IDL eventHandler"
       },
       "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-boundary"
+    },
+    {
+      "type": "start",
+      "targets": [
+        "SpeechSynthesisUtterance"
+      ],
+      "src": {
+        "format": "dfn",
+        "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-start"
+      },
+      "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-start"
     }
   ]
 }
