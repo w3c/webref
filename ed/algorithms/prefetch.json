@@ -676,7 +676,7 @@
                   "html": "<p>If <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-prerendering-traversable\" id=\"ref-for-prefetch-record-prerendering-traversable①\">prerendering traversable</a> is not null, then add a parameter whose key is \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#sec-purpose-prefetch-prerender\" id=\"ref-for-sec-purpose-prefetch-prerender\"><code>prerender</code></a>\" and whose value is true to the <code>prefetch</code> token in <var>purpose</var>.</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header\">Set a structured field value</a> given (<a data-link-type=\"http-header\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#http-headerdef-sec-purpose\" id=\"ref-for-http-headerdef-sec-purpose\"><code>`Sec-Purpose`</code></a>, <var>purpose</var>) in <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list①\">header list</a>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header\">Set a structured field value</a> given (`<code><a data-link-type=\"http-header\" href=\"https://fetch.spec.whatwg.org/#http-sec-purpose\" id=\"ref-for-http-sec-purpose\">Sec-Purpose</a></code>`, <var>purpose</var>) in <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list①\">header list</a>.</p>"
                 },
                 {
                   "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\" id=\"ref-for-concept-request-current-url①\">current URL</a> is not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url\">potentially trustworthy</a>, then set <var>response</var> to a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error③\">network error</a> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break③\">break</a>.</p>"
@@ -931,7 +931,7 @@
           "html": "<p>Let <var>isolatedCookieStore</var> be the cookie store associated with <var>isolatedPartitionKey</var>.</p>"
         },
         {
-          "html": "For each <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc6265.html#storage-model\" id=\"ref-for-storage-model①\">cookie</a> <var>cookie</var> in <var>isolatedCookieStore</var>.",
+          "html": "For each <a data-link-type=\"dfn\" data-refhint-key=\"574eb588\" href=\"https://httpwg.org/specs/rfc6265.html#storage-model\" id=\"ref-for-storage-model①\">cookie</a> <var>cookie</var> in <var>isolatedCookieStore</var>.",
           "rationale": "remove",
           "steps": [
             {

@@ -7,7 +7,7 @@
     {
       "name": "column-rule-break",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-break",
-      "value": "intersection | spanning-item | none",
+      "value": "none | spanning-item | intersection",
       "initial": "spanning-item",
       "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
       "inherited": "no",
@@ -17,25 +17,25 @@
       "animationType": "discrete",
       "values": [
         {
-          "name": "intersection",
-          "prose": "Gap decorations start and end at every gap intersection point along the centerline of the gap.",
-          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-intersection",
+          "name": "none",
+          "prose": "Gap decorations do not start or end at visible \"T\" or \"cross\" intersections. Instead, a single continuous decoration is painted from one end of the gap to the other.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-none",
           "type": "value",
-          "value": "intersection"
+          "value": "none"
         },
         {
           "name": "spanning-item",
-          "prose": "Gap decorations start and end at every gap intersection point along the centerline of the gap which is either at an edge of the container or adjacent to a child item spanning across the gap per the steps below.",
+          "prose": "Gap decorations start and end at visible \"T\" intersections but continue through visible \"cross\" intersections.",
           "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-spanning-item",
           "type": "value",
           "value": "spanning-item"
         },
         {
-          "name": "none",
-          "prose": "Gap decorations start and end at all intersections between gaps and edges of the container. Spanning items and gap intersection points do not factor into the placement of gap decorations in this mode.",
-          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-none",
+          "name": "intersection",
+          "prose": "Gap decorations start and end at visible \"T\" and \"cross\" intersections.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-intersection",
           "type": "value",
-          "value": "none"
+          "value": "intersection"
         }
       ],
       "styleDeclaration": [
@@ -46,7 +46,7 @@
     {
       "name": "row-rule-break",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-break",
-      "value": "intersection | spanning-item | none",
+      "value": "none | spanning-item | intersection",
       "initial": "spanning-item",
       "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
       "inherited": "no",
@@ -56,25 +56,25 @@
       "animationType": "discrete",
       "values": [
         {
-          "name": "intersection",
-          "prose": "Gap decorations start and end at every gap intersection point along the centerline of the gap.",
-          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-intersection",
+          "name": "none",
+          "prose": "Gap decorations do not start or end at visible \"T\" or \"cross\" intersections. Instead, a single continuous decoration is painted from one end of the gap to the other.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-none",
           "type": "value",
-          "value": "intersection"
+          "value": "none"
         },
         {
           "name": "spanning-item",
-          "prose": "Gap decorations start and end at every gap intersection point along the centerline of the gap which is either at an edge of the container or adjacent to a child item spanning across the gap per the steps below.",
+          "prose": "Gap decorations start and end at visible \"T\" intersections but continue through visible \"cross\" intersections.",
           "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-spanning-item",
           "type": "value",
           "value": "spanning-item"
         },
         {
-          "name": "none",
-          "prose": "Gap decorations start and end at all intersections between gaps and edges of the container. Spanning items and gap intersection points do not factor into the placement of gap decorations in this mode.",
-          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-none",
+          "name": "intersection",
+          "prose": "Gap decorations start and end at visible \"T\" and \"cross\" intersections.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-intersection",
           "type": "value",
-          "value": "none"
+          "value": "intersection"
         }
       ],
       "styleDeclaration": [

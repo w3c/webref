@@ -8,31 +8,34 @@
       "name": "determine pairs of gap decoration endpoints",
       "href": "https://drafts.csswg.org/css-gaps-1/#determine-pairs-of-gap-decoration-endpoints",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-pairs-of-gap-decoration-endpoints\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine pairs of gap decoration endpoints</dfn> within a given <var>gap</var>:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>pairs</var> be an empty list.\n\t\t\tLet <var>endpoints</var> be the list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap-intersection-point\" id=\"ref-for-gap-intersection-point①①\">gap intersection points</a> that fall along the centerline of <var>gap</var>,\n\t\t\tordered from start to end along <var>gap</var>’s axis.\n\t\t\tLet <var>break</var> be the used value of either <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-break\" id=\"ref-for-propdef-column-rule-break④\">column-rule-break</a> or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-break\" id=\"ref-for-propdef-row-rule-break③\">row-rule-break</a>,\n\t\t\twhichever applies to <var>gap</var>."
+          "html": "Let <var>pairs</var> be an empty list.\n\t\t\t\tLet <var>endpoints</var> be the list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap-intersection-point\" id=\"ref-for-gap-intersection-point①②\">gap intersection points</a> that fall along the centerline of <var>gap</var>,\n\t\t\t\tordered from start to end along <var>gap</var>’s axis.\n\t\t\t\tLet <var>break</var> be the used value of either <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-break\" id=\"ref-for-propdef-column-rule-break④\">column-rule-break</a> or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-break\" id=\"ref-for-propdef-row-rule-break③\">row-rule-break</a>,\n\t\t\t\twhichever applies to <var>gap</var>."
         },
         {
           "html": "If <var>endpoints</var> contains fewer than 2 items, return <var>pairs</var>."
         },
         {
-          "html": "Remove the first item from <var>endpoints</var>.\n\t\t\tLet <var>start</var> be equal to that item."
+          "html": "If <var>break</var> is other than <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-none\" id=\"ref-for-valdef-column-rule-break-none①\">none</a>,\n\t\t\t\tand the first two items in <var>endpoints</var> are <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#discontiguous\" id=\"ref-for-discontiguous①\">discontiguous</a>,\n\t\t\t\tremove the first item from <var>endpoints</var>, then go back to step 2."
         },
         {
-          "html": "Remove the first item from <var>endpoints</var>.\n\t\t\tLet <var>end</var> be equal to that item."
+          "html": "Remove the first item from <var>endpoints</var>.\n\t\t\t\tLet <var>start</var> be equal to that item."
         },
         {
-          "html": "If <var>endpoints</var> is non-empty, and either of the following conditions is true... \n     \n      ...then go back to step 4.",
+          "html": "Remove the first item from <var>endpoints</var>.\n\t\t\t\tLet <var>end</var> be equal to that item."
+        },
+        {
+          "html": "If <var>endpoints</var> is non-empty, and any of the following conditions are true... \n      \n       ...then go back to step 5.",
           "ignored": [
-            "break is spanning-item, and a line segment from start to the first item in endpoints, with the same width as gap, does not intersect a child item in the container break is none"
+            "break is none. break is spanning-item, and start is not discontiguous with the first item in endpoints. break is intersection, and start is not discontiguous with the first item in endpoints, and the intersection is flanked by spanning items on opposing sides."
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#compute-the-offset\" id=\"ref-for-compute-the-offset\">Compute the offset</a> for <var>start</var> within <var>gap</var>.\n\t\t\tOffset <var>start</var> by the result,\n\t\t\tin the forward direction along <var>gap</var>’s axis."
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#compute-the-offset\" id=\"ref-for-compute-the-offset\">Compute the offset</a> for <var>start</var> within <var>gap</var>.\n\t\t\t\tOffset <var>start</var> by the result,\n\t\t\t\tin the forward direction along <var>gap</var>’s axis."
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#compute-the-offset\" id=\"ref-for-compute-the-offset①\">Compute the offset</a> for <var>end</var> within <var>gap</var>.\n\t\t\tOffset <var>end</var> by the result,\n\t\t\tin the reverse direction along <var>gap</var>’s axis."
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#compute-the-offset\" id=\"ref-for-compute-the-offset①\">Compute the offset</a> for <var>end</var> within <var>gap</var>.\n\t\t\t\tOffset <var>end</var> by the result,\n\t\t\t\tin the reverse direction along <var>gap</var>’s axis."
         },
         {
           "html": "Add to <var>pairs</var> a tuple consisting of <var>start</var> and <var>end</var>."
@@ -45,17 +48,17 @@
     {
       "name": "compute the offset",
       "href": "https://drafts.csswg.org/css-gaps-1/#compute-the-offset",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-the-offset\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute the offset</dfn> for a given <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap-intersection-point\" id=\"ref-for-gap-intersection-point②⓪\">gap intersection point</a> <var>point</var> within a given <var>gap</var>:",
-      "rationale": "let",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-the-offset\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute the offset</dfn> for a given <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap-intersection-point\" id=\"ref-for-gap-intersection-point①⑦\">gap intersection point</a> <var>point</var> within a given <var>gap</var>:",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "Let <var>width</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#crossing-gap-width\" id=\"ref-for-crossing-gap-width④\">crossing gap width</a> for <var>point</var>."
         },
         {
-          "html": "Let <var>outset</var> be the computed value of either <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-outset\" id=\"ref-for-propdef-column-rule-outset④\">column-rule-outset</a> or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-outset\" id=\"ref-for-propdef-row-rule-outset③\">row-rule-outset</a>,\n\t\t\twhichever applies to <var>gap</var>.\n\t\t\tResolve any percentages in <var>outset</var> against <var>width</var>."
+          "html": "Let <var>outset</var> be the computed value of either <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-outset\" id=\"ref-for-propdef-column-rule-outset④\">column-rule-outset</a> or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-outset\" id=\"ref-for-propdef-row-rule-outset③\">row-rule-outset</a>,\n\t\t\t\twhichever applies to <var>gap</var>.\n\t\t\t\tResolve any percentages in <var>outset</var> against <var>width</var>."
         },
         {
-          "html": "Let <var>result</var> be <var>width</var> multiplied by 50%.\n\t\t\tSubtract <var>outset</var> from <var>result</var>."
+          "html": "Let <var>result</var> be <var>width</var> multiplied by 50%.\n\t\t\t\tSubtract <var>outset</var> from <var>result</var>."
         },
         {
           "html": "Return <var>result</var>."
@@ -66,7 +69,7 @@
       "name": "assign gap decoration values",
       "href": "https://drafts.csswg.org/css-gaps-1/#assign-gap-decoration-values",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"assign-gap-decoration-values\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">assign gap decoration values</dfn> to a list of <var>gaps</var> using a list of <var>values</var>:",
-      "rationale": "replace",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "Replace any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#integer-repeater\" id=\"ref-for-integer-repeater①\">integer repeaters</a> in <var>values</var> with their expanded-out equivalents."
@@ -76,7 +79,7 @@
           "rationale": "end",
           "steps": [
             {
-              "html": "Beginning from the first item in <var>values</var> and the first item in <var>gaps</var>,\n\t\t\t\t\tassign each value to the corresponding gap.\n\t\t\t\t\tIf there are fewer values than gaps,\n\t\t\t\t\trepeat beginning from the first item in <var>values</var>,\n\t\t\t\t\tas many times as needed."
+              "html": "Beginning from the first item in <var>values</var> and the first item in <var>gaps</var>,\n\t\t\t\t\t\tassign each value to the corresponding gap.\n\t\t\t\t\t\tIf there are fewer values than gaps,\n\t\t\t\t\t\trepeat beginning from the first item in <var>values</var>,\n\t\t\t\t\t\tas many times as needed."
             },
             {
               "html": "End this algorithm."
@@ -84,7 +87,7 @@
           ]
         },
         {
-          "html": "<var>values</var> contains an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#auto-repeater\" id=\"ref-for-auto-repeater③\">auto repeater</a>.\n\t\t\tLet <var>leading count</var> be the number of items in <var>values</var> before the <span id=\"ref-for-auto-repeater④\">auto repeater</span>.\n\t\t\tLet <var>trailing count</var> be the number of items in <var>values</var> after the <span id=\"ref-for-auto-repeater⑤\">auto repeater</span>."
+          "html": "<var>values</var> contains an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#auto-repeater\" id=\"ref-for-auto-repeater③\">auto repeater</a>.\n\t\t\t\tLet <var>leading count</var> be the number of items in <var>values</var> before the <span id=\"ref-for-auto-repeater④\">auto repeater</span>.\n\t\t\t\tLet <var>trailing count</var> be the number of items in <var>values</var> after the <span id=\"ref-for-auto-repeater⑤\">auto repeater</span>."
         },
         {
           "html": "Partition <var>gaps</var> as follows:",
@@ -94,7 +97,7 @@
               "html": "Let <var>leading gaps</var> contain the first <var>leading count</var> items in <var>gaps</var>."
             },
             {
-              "html": "Let <var>trailing gaps</var> contain the last <var>trailing count</var> items in <var>gaps</var>,\n\t\t\t\t\texcluding any items in <var>leading gaps</var>."
+              "html": "Let <var>trailing gaps</var> contain the last <var>trailing count</var> items in <var>gaps</var>,\n\t\t\t\t\t\texcluding any items in <var>leading gaps</var>."
             },
             {
               "html": "Let <var>auto gaps</var> contain any items in <var>gaps</var> that are not in either <var>leading gaps</var> or <var>trailing gaps</var>."
