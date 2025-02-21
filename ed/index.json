@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-02-21T06:47:26.924Z",
+  "date": "2025-02-21T09:06:24.037Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -165,6 +165,7 @@
       "sparql12-concepts",
       "web-nfc",
       "web-share-target",
+      "dbsc",
       "passkey-endpoints",
       "webrtc-ice",
       "wasm-core-2-fork-branch-hinting",
@@ -182,6 +183,7 @@
       "wasm-core-2-fork-tail-call",
       "wasm-core-2-fork-threads",
       "wasm-js-api-2-fork-threads",
+      "wasm-core-2-fork-wide-arithmetic",
       "speech-api",
       "web-bluetooth",
       "web-bluetooth-scanning",
@@ -436,8 +438,7 @@
       "css-will-change-1",
       "css-writing-modes-3",
       "css-writing-modes-4",
-      "CSS21",
-      "CSS22",
+      "CSS2",
       "css3-exclusions",
       "cssom-1",
       "cssom-view-1",
@@ -687,10 +688,10 @@
     ]
   },
   "stats": {
-    "crawled": 656,
-    "errors": 1
+    "crawled": 657,
+    "errors": 2
   },
-  "crawler": "reffy-18.3.2",
+  "crawler": "reffy-18.4.0",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -1458,11 +1459,11 @@
       ],
       "crawled": "https://dom.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 07:37:44 GMT"
+        "lastModified": "Fri, 21 Feb 2025 07:31:55 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 February 2025",
-      "revision": "cbf4c0d6b4fdb09372f170cfc152d2a160173474",
+      "date": "21 February 2025",
+      "revision": "b64559cc085fe43791f3f386b5a049993b40ec96",
       "algorithms": "algorithms/dom.json",
       "links": "links/dom.json",
       "refs": "refs/dom.json",
@@ -7867,7 +7868,7 @@
       ],
       "crawled": "https://tc39.es/proposal-set-methods/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 06 Jul 2024 03:17:20 GMT"
+        "lastModified": "Sat, 06 Jul 2024 03:17:19 GMT"
       },
       "date": "6 July 2024",
       "links": "links/tc39-set-methods.json",
@@ -9169,6 +9170,57 @@
       "cddl": []
     },
     {
+      "url": "https://w3c.github.io/webappsec-dbsc/",
+      "seriesComposition": "full",
+      "shortname": "dbsc",
+      "series": {
+        "shortname": "dbsc",
+        "currentSpecification": "dbsc",
+        "title": "Device Bound Session Credentials",
+        "shortTitle": "Device Bound Session Credentials",
+        "nightlyUrl": "https://w3c.github.io/webappsec-dbsc/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Application Security Working Group",
+          "url": "https://www.w3.org/groups/wg/webappsec/"
+        }
+      ],
+      "nightly": {
+        "url": "https://w3c.github.io/webappsec-dbsc/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/webappsec-dbsc",
+        "sourcePath": "spec.bs",
+        "filename": "index.html"
+      },
+      "title": "Device Bound Session Credentials",
+      "source": "spec",
+      "shortTitle": "Device Bound Session Credentials",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://w3c.github.io/webappsec-dbsc/"
+      ],
+      "crawled": "https://w3c.github.io/webappsec-dbsc/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 18 Feb 2025 19:25:44 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "18 February 2025",
+      "revision": "0edf8f74d287c1b02b895b5b426381a826f2b711",
+      "algorithms": "algorithms/dbsc.json",
+      "links": "links/dbsc.json",
+      "refs": "refs/dbsc.json",
+      "dfns": "dfns/dbsc.json",
+      "headings": "headings/dbsc.json",
+      "ids": "ids/dbsc.json",
+      "cddl": []
+    },
+    {
       "url": "https://w3c.github.io/webappsec-passkey-endpoints/passkey-endpoints.html",
       "seriesComposition": "full",
       "shortname": "passkey-endpoints",
@@ -10079,6 +10131,59 @@
       "dfns": "dfns/wasm-js-api-2-fork-threads.json",
       "headings": "headings/wasm-js-api-2-fork-threads.json",
       "ids": "ids/wasm-js-api-2-fork-threads.json",
+      "cddl": []
+    },
+    {
+      "url": "https://webassembly.github.io/wide-arithmetic/core/bikeshed/",
+      "seriesComposition": "fork",
+      "shortname": "wasm-core-2-fork-wide-arithmetic",
+      "series": {
+        "shortname": "wasm-core",
+        "currentSpecification": "wasm-core-2",
+        "title": "WebAssembly Core",
+        "shortTitle": "WebAssembly Core",
+        "releaseUrl": "https://www.w3.org/TR/wasm-core/",
+        "nightlyUrl": "https://webassembly.github.io/spec/core/bikeshed/"
+      },
+      "seriesVersion": "2",
+      "forkOf": "wasm-core-2",
+      "title": "WebAssembly Core Specification",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "WebAssembly Community Group",
+          "url": "https://www.w3.org/community/webassembly/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webassembly.github.io/wide-arithmetic/core/bikeshed/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAssembly/wide-arithmetic",
+        "sourcePath": "document/core/index.bs",
+        "filename": "index.html"
+      },
+      "source": "spec",
+      "shortTitle": "WebAssembly Core: Wide Arithmetic",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://webassembly.github.io/wide-arithmetic/core/bikeshed/"
+      ],
+      "crawled": "https://webassembly.github.io/wide-arithmetic/core/bikeshed/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 30 Jan 2025 16:43:31 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "30 January 2025",
+      "revision": "5450f67675b7db72877163dbc9189a135a3f2bb9",
+      "algorithms": "algorithms/wasm-core-2-fork-wide-arithmetic.json",
+      "links": "links/wasm-core-2-fork-wide-arithmetic.json",
+      "refs": "refs/wasm-core-2-fork-wide-arithmetic.json",
+      "headings": "headings/wasm-core-2-fork-wide-arithmetic.json",
+      "ids": "ids/wasm-core-2-fork-wide-arithmetic.json",
       "cddl": []
     },
     {
@@ -17463,7 +17568,7 @@
       ],
       "crawled": "https://w3c.github.io/battery/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 24 Oct 2024 09:46:13 GMT"
+        "lastModified": "Thu, 24 Oct 2024 09:46:12 GMT"
       },
       "generator": "respec",
       "date": "24 October 2024",
@@ -17853,7 +17958,8 @@
       "dfns": "dfns/compositing-1.json",
       "headings": "headings/compositing-1.json",
       "ids": "ids/compositing-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/compositing-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://www.w3.org/TR/compute-pressure/",
@@ -18028,11 +18134,11 @@
       ],
       "crawled": "https://w3c.github.io/core-aam/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 16:59:53 GMT"
+        "lastModified": "Fri, 21 Feb 2025 08:45:10 GMT"
       },
       "generator": "respec",
-      "date": "12 February 2025",
-      "revision": "5593255505aa4c29d22744a81513e24f8f3a06f9",
+      "date": "21 February 2025",
+      "revision": "6d8336e47169da8e69e81e494a42b457788c5c0b",
       "links": "links/core-aam-1.2.json",
       "refs": "refs/core-aam-1.2.json",
       "dfns": "dfns/core-aam-1.2.json",
@@ -24907,6 +25013,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-view-transitions"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-view-transitions-1/",
         "https://drafts.csswg.org/css-view-transitions-1/"
@@ -24971,6 +25083,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-view-transitions"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-view-transitions-2/",
         "https://drafts.csswg.org/css-view-transitions-2/"
@@ -25271,56 +25389,34 @@
       "cddl": []
     },
     {
-      "url": "https://www.w3.org/TR/CSS21/",
+      "url": "https://www.w3.org/TR/CSS2/",
       "seriesComposition": "full",
-      "shortname": "CSS21",
+      "shortname": "CSS2",
       "series": {
         "shortname": "CSS",
-        "currentSpecification": "CSS22",
+        "currentSpecification": "CSS2",
         "title": "Cascading Style Sheets",
-        "shortTitle": "Cascading Style Sheets",
-        "releaseUrl": "https://www.w3.org/TR/CSS/",
+        "shortTitle": "CSS",
+        "releaseUrl": "https://www.w3.org/TR/CSS21/",
         "nightlyUrl": "https://drafts.csswg.org/css2/"
       },
-      "seriesVersion": "2.1",
+      "seriesVersion": "2",
       "formerNames": [
-        "CSS2"
+        "CSS21",
+        "CSS22"
       ],
       "nightly": {
-        "url": "https://www.w3.org/TR/CSS21/",
+        "url": "https://drafts.csswg.org/css2/",
         "status": "Editor's Draft",
-        "alternateUrls": [],
-        "pages": [
-          "https://www.w3.org/TR/CSS21/about.html",
-          "https://www.w3.org/TR/CSS21/intro.html",
-          "https://www.w3.org/TR/CSS21/conform.html",
-          "https://www.w3.org/TR/CSS21/syndata.html",
-          "https://www.w3.org/TR/CSS21/selector.html",
-          "https://www.w3.org/TR/CSS21/cascade.html",
-          "https://www.w3.org/TR/CSS21/media.html",
-          "https://www.w3.org/TR/CSS21/box.html",
-          "https://www.w3.org/TR/CSS21/visuren.html",
-          "https://www.w3.org/TR/CSS21/visudet.html",
-          "https://www.w3.org/TR/CSS21/visufx.html",
-          "https://www.w3.org/TR/CSS21/generate.html",
-          "https://www.w3.org/TR/CSS21/page.html",
-          "https://www.w3.org/TR/CSS21/colors.html",
-          "https://www.w3.org/TR/CSS21/fonts.html",
-          "https://www.w3.org/TR/CSS21/text.html",
-          "https://www.w3.org/TR/CSS21/tables.html",
-          "https://www.w3.org/TR/CSS21/ui.html",
-          "https://www.w3.org/TR/CSS21/aural.html",
-          "https://www.w3.org/TR/CSS21/refs.html",
-          "https://www.w3.org/TR/CSS21/changes.html",
-          "https://www.w3.org/TR/CSS21/sample.html",
-          "https://www.w3.org/TR/CSS21/zindex.html",
-          "https://www.w3.org/TR/CSS21/propidx.html",
-          "https://www.w3.org/TR/CSS21/grammar.html",
-          "https://www.w3.org/TR/CSS21/indexlist.html"
+        "sourcePath": "css2/Overview.bs",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css2/"
         ],
-        "filename": "Overview.html"
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "filename": "index.html"
       },
-      "seriesNext": "CSS22",
+      "title": "Cascading Style Sheets (CSS) Level 2",
+      "shortTitle": "CSS 2",
       "organization": "W3C",
       "groups": [
         {
@@ -25332,125 +25428,36 @@
         "url": "https://www.w3.org/TR/CSS21/",
         "status": "Recommendation",
         "pages": [
-          "https://www.w3.org/TR/CSS21/about.html",
-          "https://www.w3.org/TR/CSS21/intro.html",
-          "https://www.w3.org/TR/CSS21/conform.html",
-          "https://www.w3.org/TR/CSS21/syndata.html",
-          "https://www.w3.org/TR/CSS21/selector.html",
-          "https://www.w3.org/TR/CSS21/cascade.html",
-          "https://www.w3.org/TR/CSS21/media.html",
-          "https://www.w3.org/TR/CSS21/box.html",
-          "https://www.w3.org/TR/CSS21/visuren.html",
-          "https://www.w3.org/TR/CSS21/visudet.html",
-          "https://www.w3.org/TR/CSS21/visufx.html",
-          "https://www.w3.org/TR/CSS21/generate.html",
-          "https://www.w3.org/TR/CSS21/page.html",
-          "https://www.w3.org/TR/CSS21/colors.html",
-          "https://www.w3.org/TR/CSS21/fonts.html",
-          "https://www.w3.org/TR/CSS21/text.html",
-          "https://www.w3.org/TR/CSS21/tables.html",
-          "https://www.w3.org/TR/CSS21/ui.html",
-          "https://www.w3.org/TR/CSS21/aural.html",
-          "https://www.w3.org/TR/CSS21/refs.html",
-          "https://www.w3.org/TR/CSS21/changes.html",
-          "https://www.w3.org/TR/CSS21/sample.html",
-          "https://www.w3.org/TR/CSS21/zindex.html",
-          "https://www.w3.org/TR/CSS21/propidx.html",
-          "https://www.w3.org/TR/CSS21/grammar.html",
-          "https://www.w3.org/TR/CSS21/indexlist.html"
+          "https://www.w3.org/TR/CSS2/about.html",
+          "https://www.w3.org/TR/CSS2/intro.html",
+          "https://www.w3.org/TR/CSS2/conform.html",
+          "https://www.w3.org/TR/CSS2/syndata.html",
+          "https://www.w3.org/TR/CSS2/selector.html",
+          "https://www.w3.org/TR/CSS2/cascade.html",
+          "https://www.w3.org/TR/CSS2/media.html",
+          "https://www.w3.org/TR/CSS2/box.html",
+          "https://www.w3.org/TR/CSS2/visuren.html",
+          "https://www.w3.org/TR/CSS2/visudet.html",
+          "https://www.w3.org/TR/CSS2/visufx.html",
+          "https://www.w3.org/TR/CSS2/generate.html",
+          "https://www.w3.org/TR/CSS2/page.html",
+          "https://www.w3.org/TR/CSS2/colors.html",
+          "https://www.w3.org/TR/CSS2/fonts.html",
+          "https://www.w3.org/TR/CSS2/text.html",
+          "https://www.w3.org/TR/CSS2/tables.html",
+          "https://www.w3.org/TR/CSS2/ui.html",
+          "https://www.w3.org/TR/CSS2/aural.html",
+          "https://www.w3.org/TR/CSS2/refs.html",
+          "https://www.w3.org/TR/CSS2/changes.html",
+          "https://www.w3.org/TR/CSS2/sample.html",
+          "https://www.w3.org/TR/CSS2/zindex.html",
+          "https://www.w3.org/TR/CSS2/propidx.html",
+          "https://www.w3.org/TR/CSS2/grammar.html",
+          "https://www.w3.org/TR/CSS2/indexlist.html"
         ],
         "filename": "Overview.html"
       },
-      "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
       "source": "w3c",
-      "shortTitle": "CSS 2.1",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://www.w3.org/TR/CSS21/"
-      ],
-      "crawled": "https://www.w3.org/TR/CSS21/",
-      "crawlCacheInfo": {
-        "lastModified": "Wed, 08 Dec 2021 07:36:41 GMT"
-      },
-      "date": "to correct markup.",
-      "algorithms": "algorithms/CSS21.json",
-      "links": "links/CSS21.json",
-      "refs": "refs/CSS21.json",
-      "dfns": "dfns/CSS21.json",
-      "headings": "headings/CSS21.json",
-      "ids": "ids/CSS21.json",
-      "cddl": []
-    },
-    {
-      "url": "https://www.w3.org/TR/CSS22/",
-      "seriesComposition": "full",
-      "shortname": "CSS22",
-      "series": {
-        "shortname": "CSS",
-        "currentSpecification": "CSS22",
-        "title": "Cascading Style Sheets",
-        "shortTitle": "Cascading Style Sheets",
-        "releaseUrl": "https://www.w3.org/TR/CSS/",
-        "nightlyUrl": "https://drafts.csswg.org/css2/"
-      },
-      "seriesVersion": "2.2",
-      "nightly": {
-        "url": "https://drafts.csswg.org/css2/",
-        "status": "Editor's Draft",
-        "sourcePath": "css2/Overview.bs",
-        "alternateUrls": [
-          "https://w3c.github.io/csswg-drafts/css2/"
-        ],
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "filename": "index.html"
-      },
-      "seriesPrevious": "CSS21",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
-        }
-      ],
-      "release": {
-        "url": "https://www.w3.org/TR/CSS22/",
-        "status": "First Public Working Draft",
-        "pages": [
-          "https://www.w3.org/TR/CSS22/about.html",
-          "https://www.w3.org/TR/CSS22/intro.html",
-          "https://www.w3.org/TR/CSS22/conform.html",
-          "https://www.w3.org/TR/CSS22/syndata.html",
-          "https://www.w3.org/TR/CSS22/selector.html",
-          "https://www.w3.org/TR/CSS22/cascade.html",
-          "https://www.w3.org/TR/CSS22/media.html",
-          "https://www.w3.org/TR/CSS22/box.html",
-          "https://www.w3.org/TR/CSS22/visuren.html",
-          "https://www.w3.org/TR/CSS22/visudet.html",
-          "https://www.w3.org/TR/CSS22/visufx.html",
-          "https://www.w3.org/TR/CSS22/generate.html",
-          "https://www.w3.org/TR/CSS22/page.html",
-          "https://www.w3.org/TR/CSS22/colors.html",
-          "https://www.w3.org/TR/CSS22/fonts.html",
-          "https://www.w3.org/TR/CSS22/text.html",
-          "https://www.w3.org/TR/CSS22/tables.html",
-          "https://www.w3.org/TR/CSS22/ui.html",
-          "https://www.w3.org/TR/CSS22/aural.html",
-          "https://www.w3.org/TR/CSS22/refs.html",
-          "https://www.w3.org/TR/CSS22/changes.html",
-          "https://www.w3.org/TR/CSS22/sample.html",
-          "https://www.w3.org/TR/CSS22/zindex.html",
-          "https://www.w3.org/TR/CSS22/propidx.html",
-          "https://www.w3.org/TR/CSS22/grammar.html",
-          "https://www.w3.org/TR/CSS22/indexlist.html"
-        ],
-        "filename": "Overview.html"
-      },
-      "title": "Cascading Style Sheets (CSS) Level 2",
-      "source": "w3c",
-      "shortTitle": "CSS 2.2",
       "categories": [
         "browser"
       ],
@@ -25462,7 +25469,8 @@
         ]
       },
       "versions": [
-        "https://www.w3.org/TR/CSS22/",
+        "https://www.w3.org/TR/CSS2/",
+        "https://www.w3.org/TR/CSS21/",
         "https://drafts.csswg.org/css2/"
       ],
       "crawled": "https://drafts.csswg.org/css2/",
@@ -25472,13 +25480,13 @@
       "generator": "bikeshed",
       "date": "13 February 2025",
       "revision": "930c6794a23d4a4ba943b3829ec3f82ba698c761",
-      "algorithms": "algorithms/CSS22.json",
-      "links": "links/CSS22.json",
-      "refs": "refs/CSS22.json",
+      "algorithms": "algorithms/CSS2.json",
+      "links": "links/CSS2.json",
+      "refs": "refs/CSS2.json",
       "css": "css/CSS.json",
-      "dfns": "dfns/CSS22.json",
-      "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json",
+      "dfns": "dfns/CSS2.json",
+      "headings": "headings/CSS2.json",
+      "ids": "ids/CSS2.json",
       "cddl": []
     },
     {
@@ -32214,7 +32222,7 @@
       ],
       "crawled": "https://w3c.github.io/rdf-schema/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 17 Feb 2025 16:23:51 GMT"
+        "lastModified": "Mon, 17 Feb 2025 16:23:50 GMT"
       },
       "generator": "respec",
       "date": "17 February 2025",
@@ -35333,7 +35341,7 @@
       ],
       "crawled": "https://w3c.github.io/vibration/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 18:39:30 GMT"
+        "lastModified": "Wed, 12 Feb 2025 18:39:29 GMT"
       },
       "generator": "respec",
       "date": "12 February 2025",
@@ -35571,7 +35579,8 @@
         "wasm-core-2-fork-memory64",
         "wasm-core-2-fork-multi-memory",
         "wasm-core-2-fork-tail-call",
-        "wasm-core-2-fork-threads"
+        "wasm-core-2-fork-threads",
+        "wasm-core-2-fork-wide-arithmetic"
       ],
       "organization": "W3C",
       "groups": [
@@ -36383,7 +36392,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/av1_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 17:48:17 GMT"
+        "lastModified": "Wed, 12 Feb 2025 17:48:16 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2025",
@@ -36441,7 +36450,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/avc_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 17:48:17 GMT"
+        "lastModified": "Wed, 12 Feb 2025 17:48:16 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2025",
@@ -36499,7 +36508,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/codec_registry.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 17:48:17 GMT"
+        "lastModified": "Wed, 12 Feb 2025 17:48:16 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2025",
@@ -36556,7 +36565,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/flac_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 17:48:17 GMT"
+        "lastModified": "Wed, 12 Feb 2025 17:48:16 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2025",
@@ -36615,7 +36624,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/hevc_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 17:48:17 GMT"
+        "lastModified": "Wed, 12 Feb 2025 17:48:16 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2025",
@@ -36729,7 +36738,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/opus_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 17:48:17 GMT"
+        "lastModified": "Wed, 12 Feb 2025 17:48:16 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2025",
@@ -36788,7 +36797,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/pcm_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 17:48:17 GMT"
+        "lastModified": "Wed, 12 Feb 2025 17:48:16 GMT"
       },
       "generator": "bikeshed",
       "date": "9 September 2024",
@@ -37132,7 +37141,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 17:48:17 GMT"
+        "lastModified": "Wed, 12 Feb 2025 17:48:16 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2025",
@@ -37400,7 +37409,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 20 Feb 2025 17:33:53 GMT"
+        "lastModified": "Thu, 20 Feb 2025 17:33:52 GMT"
       },
       "generator": "bikeshed",
       "date": "20 February 2025",
