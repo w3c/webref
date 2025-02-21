@@ -11,7 +11,7 @@
       "https://lists.w3.org/Archives/Public/public-speech-api/2012Jun/0143.html": {},
       "https://lists.w3.org/Archives/Public/public-speech-api/2012Sep/0072.html": {},
       "https://w3c.github.io/mediacapture-main/": {},
-      "https://w3c.github.io/webappsec-permissions-policy/": {},
+      "https://w3c.github.io/permissions/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://www.quirksmode.org/dom/inputfile.html": {},
       "https://www.rfc-editor.org/rfc/rfc5646": {},
@@ -27,17 +27,18 @@
         "anchors": [
           "eventtarget",
           "event",
-          "dictdef-eventinit"
+          "dictdef-eventinit",
+          "concept-event-fire"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "fully-active"
         ]
       },
       "https://html.spec.whatwg.org/multipage/dom.html": {
         "anchors": [
           "language"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-        "anchors": [
-          "allowed-to-use"
         ]
       },
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
@@ -49,6 +50,7 @@
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "eventhandler",
+          "current-settings-object",
           "concept-relevant-global"
         ]
       },
@@ -59,9 +61,10 @@
           "dom-mediastreamtrack-readystate"
         ]
       },
-      "https://w3c.github.io/webappsec-permissions-policy/": {
+      "https://w3c.github.io/permissions/": {
         "anchors": [
-          "policy-controlled-feature"
+          "dfn-request-permission-to-use",
+          "dfn-denied"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -74,7 +77,6 @@
           "idl-promise",
           "idl-float",
           "invalidstateerror",
-          "idl-DOMException",
           "this",
           "idl-sequence",
           "SameObject"

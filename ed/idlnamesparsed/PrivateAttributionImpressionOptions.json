@@ -6,7 +6,7 @@
       "title": "Privacy-Preserving Attribution: Level 1",
       "url": "https://w3c.github.io/ppa/"
     },
-    "fragment": "dictionary PrivateAttributionImpressionOptions {\n  required unsigned long histogramIndex;\n  required unsigned long filterData;\n  required DOMString conversionSite;\n  unsigned long lifetimeDays = 30;\n};",
+    "fragment": "dictionary PrivateAttributionImpressionOptions {\n  required unsigned long histogramIndex;\n  unsigned long filterData = 0;\n  required DOMString conversionSite;\n  unsigned long lifetimeDays = 30;\n};",
     "href": "https://w3c.github.io/ppa/#dictdef-privateattributionimpressionoptions"
   },
   "extended": [],

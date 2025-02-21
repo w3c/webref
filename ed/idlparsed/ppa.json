@@ -166,7 +166,7 @@
         "href": "https://w3c.github.io/ppa/#privateattribution"
       },
       "PrivateAttributionImpressionOptions": {
-        "fragment": "dictionary PrivateAttributionImpressionOptions {\n  required unsigned long histogramIndex;\n  required unsigned long filterData;\n  required DOMString conversionSite;\n  unsigned long lifetimeDays = 30;\n};",
+        "fragment": "dictionary PrivateAttributionImpressionOptions {\n  required unsigned long histogramIndex;\n  unsigned long filterData = 0;\n  required DOMString conversionSite;\n  unsigned long lifetimeDays = 30;\n};",
         "type": "dictionary",
         "name": "PrivateAttributionImpressionOptions",
         "inheritance": null,
@@ -199,8 +199,11 @@
               "union": false,
               "idlType": "unsigned long"
             },
-            "default": null,
-            "required": true,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false,
             "href": "https://w3c.github.io/ppa/#dom-privateattributionimpressionoptions-filterdata"
           },
           {
