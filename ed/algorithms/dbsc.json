@@ -1,0 +1,136 @@
+{
+  "spec": {
+    "title": "Device Bound Session Credentials",
+    "url": "https://w3c.github.io/webappsec-dbsc/"
+  },
+  "algorithms": [
+    {
+      "name": "identify-session",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algorithms-identify-a-session",
+      "html": "This algorithm describes how to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"algorithms\" data-dfn-type=\"dfn\" data-export=\"\" id=\"algorithms-identify-a-session\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">identify a session</dfn> out of all the\n  sessions that exist on a user agent. The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-identifier\" id=\"ref-for-device-bound-session-session-identifier①\">session identifier</a> is unique within a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-registrable-domain\" id=\"ref-for-host-registrable-domain③\">registrable domain</a>. \n    <p>Given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url②\">url</a> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-identifier\" id=\"ref-for-device-bound-session-session-identifier②\">session identifier</a> (<var>session identifier</var>), this algorithm returns a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session\" id=\"ref-for-device-bound-session①\">device bound session</a> or\n  null if no such session exists.</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>site</var> be the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-registrable-domain\" id=\"ref-for-host-registrable-domain④\">registrable domain</a> of the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">url</a></p>"
+        },
+        {
+          "html": "<p>Let <var>domain sessions</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#sessions-by-registrable-domain\" id=\"ref-for-sessions-by-registrable-domain\">sessions by registrable domain</a>[<var>site</var>] as a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#session-by-id\" id=\"ref-for-session-by-id①\">session by id</a></p>"
+        },
+        {
+          "html": "<p>Return <var>domain sessions</var>[<var>session identifier</var>]</p>"
+        }
+      ]
+    },
+    {
+      "name": "process-challenge",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algorithms-process-a-challenge",
+      "html": "This algorithm describes how to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"algorithms\" data-dfn-type=\"dfn\" data-export=\"\" id=\"algorithms-process-a-challenge\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process a challenge</dfn> received in an HTTP\n  header. \n    <p>Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-response\" id=\"ref-for-concept-response-response\">response</a> (<var>response</var>) and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#sessions-by-registrable-domain\" id=\"ref-for-sessions-by-registrable-domain①\">sessions by registrable domain</a>, this\n  algorithm updates the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-cached-challenge\" id=\"ref-for-device-bound-session-cached-challenge\">cached challenge</a> for a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session\" id=\"ref-for-device-bound-session②\">device bound session</a>, or immediately resends the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#dbsc-proof\" id=\"ref-for-dbsc-proof\">DBSC proof</a> signed with\n  the new challenge if the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status\">status</a> is 401.</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>header name</var> be \"<code>Sec-Session-Challenge</code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>challenge list</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header\">get a structured\nfield value</a> given <var>header name</var> and \"list\" from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>challenge entry</var> of <var>challenge list</var>:",
+          "rationale": "parse",
+          "steps": [
+            {
+              "html": "<p>Parse <var>challenge entry</var> according to <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc8941#text-parse\" id=\"ref-for-text-parse\">parsing structured fields</a>.</p>"
+            },
+            {
+              "html": "<p>If the type of <var>challenge entry</var> is not an <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc8941#string\" id=\"ref-for-string⑦\">sf-string</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>challenge</var> be the parsed item.</p>"
+            },
+            {
+              "html": "<p>Let <var>session id</var> be null.</p>"
+            },
+            {
+              "html": "<p>If params[\"id\"] exists and is a <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc8941#string\" id=\"ref-for-string⑧\">sf-string</a>, Set <var>session id</var> to\nparams[\"id\"].</p>"
+            },
+            {
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status①\">status</a> is 401, resend this request as is with updated <var>challenge</var> in <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#dbsc-proof\" id=\"ref-for-dbsc-proof①\">DBSC proof</a> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>session id</var> is null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Identify session as described in <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#algorithms-identify-a-session\" id=\"ref-for-algorithms-identify-a-session\">identify a session</a> given <var>response</var> and <var>session id</var> and store as <var>session object</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>session object</var> is null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Store <var>challenge</var> in <var>session object</var> to be used next time a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#dbsc-proof\" id=\"ref-for-dbsc-proof②\">DBSC proof</a> is to be sent from this <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session\" id=\"ref-for-device-bound-session③\">device bound session</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "process-registration",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>header name</var> be \"<code>Sec-Session-Registration</code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>registration list</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header①\">get a structured\nfield value</a> given <var>header name</var> and \"list\" from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list①\">header list</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>registration entry</var>, <var>params</var> → <var>registration list</var>:",
+          "rationale": "parse",
+          "steps": [
+            {
+              "html": "<p>Parse <var>registration entry</var> according to <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc8941#text-parse\" id=\"ref-for-text-parse①\">parsing structured fields</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>registration entry</var> is not an <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc8941#inner-list\" id=\"ref-for-inner-list\">sf-inner-list</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue④\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>algorithm list</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>algorithm</var> → <var>registration entry</var>",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>algorithm</var> is not a <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc8941#token\" id=\"ref-for-token\">sf-token</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑤\">continue</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>algorithm</var> represents a crypto algorithm supported in\n`<code><a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-dbsc/#sec-session-registration-header\" id=\"ref-for-sec-session-registration-header①\">Sec-Session-Registration</a></code>`, and is supported on this client, add <var>algorithm</var> to <var>algorithm list</var></p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>If <var>algorithm list</var> is empty, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑥\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>params</var>[\"path\"] does not exist, or is not of type <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc8941#string\" id=\"ref-for-string⑨\">sf-string</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑦\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>path</var> be <var>params</var>[\"path\"].</p>"
+            },
+            {
+              "html": "<p>Let <var>challenge</var> be null, and Let <var>authorization</var> be null.</p>"
+            },
+            {
+              "html": "<p>If <var>params</var>[\"challenge\"] exists and is of type <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc8941#string\" id=\"ref-for-string①⓪\">sf-string</a> Set <var>challenge</var> to <var>params</var>[\"challenge\"].</p>"
+            },
+            {
+              "html": "<p>If <var>params</var>[\"authorization\"] exists and is a string Set <var>authorization</var> to <var>params</var>[\"authorization\"].</p>"
+            },
+            {
+              "html": "<p>Call <a href=\"https://w3c.github.io/webappsec-dbsc/#algo-session-request\">§ 6.4 Send request</a> with <var>algorithm list</var>, <var>path</var>, <var>challenge</var> and <var>authorization</var> parameters.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
