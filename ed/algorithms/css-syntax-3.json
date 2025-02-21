@@ -356,7 +356,7 @@
           "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-whitespace\" id=\"ref-for-token-stream-discard-whitespace③\">Discard whitespace</a> from <var>input</var>."
         },
         {
-          "html": "If <var>input</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-empty\" id=\"ref-for-token-stream-empty①\">empty</a>,\n\t\t\t\treturn a syntax error."
+          "html": "If <var>input</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-empty\" id=\"ref-for-token-stream-empty②\">empty</a>,\n\t\t\t\treturn a syntax error."
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-component-value\" id=\"ref-for-consume-a-component-value\">Consume a component value</a> from <var>input</var> and let <var>value</var> be the return value."
@@ -365,7 +365,7 @@
           "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-whitespace\" id=\"ref-for-token-stream-discard-whitespace④\">Discard whitespace</a> from <var>input</var>."
         },
         {
-          "html": "If <var>input</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-empty\" id=\"ref-for-token-stream-empty②\">empty</a>,\n\t\t\t\treturn <var>value</var>.\n\t\t\t\tOtherwise,\n\t\t\t\treturn a syntax error."
+          "html": "If <var>input</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-empty\" id=\"ref-for-token-stream-empty③\">empty</a>,\n\t\t\t\treturn <var>value</var>.\n\t\t\t\tOtherwise,\n\t\t\t\treturn a syntax error."
         }
       ]
     },
@@ -396,7 +396,7 @@
           "html": "<p>Let <var>groups</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
         },
         {
-          "html": "While <var>input</var> is not <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-empty\" id=\"ref-for-token-stream-empty③\">empty</a>:",
+          "html": "While <var>input</var> is not <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-empty\" id=\"ref-for-token-stream-empty④\">empty</a>:",
           "rationale": "consume",
           "steps": [
             {
@@ -425,18 +425,18 @@
             },
             {
               "case": "If an invalid rule error was returned",
-              "html": "<p>If <var>decls</var> is not empty,\nappend <var>decls</var> to <var>rules</var>,\nand set <var>decls</var> to a fresh empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑦\">list</a> of <a data-link-type=\"dfn\">declarations</a>.\n(Otherwise, do nothing.)</p>"
+              "html": "<p>If <var>decls</var> is not empty,\nappend <var>decls</var> to <var>rules</var>,\nand set <var>decls</var> to a fresh empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑦\">list</a> of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#declaration\" id=\"ref-for-declaration①①\">declarations</a>.\n(Otherwise, do nothing.)</p>"
             },
             {
               "case": "If a rule was returned",
-              "html": "<p>If <var>decls</var> is not empty,\nappend <var>decls</var> to <var>rules</var>,\nand set <var>decls</var> to a fresh empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑧\">list</a> of <a data-link-type=\"dfn\">declarations</a>.\nAppend the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-rule\" id=\"ref-for-css-rule①⓪\">rule</a> to <var>rules</var>.</p>"
+              "html": "<p>If <var>decls</var> is not empty,\nappend <var>decls</var> to <var>rules</var>,\nand set <var>decls</var> to a fresh empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑧\">list</a> of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#declaration\" id=\"ref-for-declaration①②\">declarations</a>.\nAppend the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-rule\" id=\"ref-for-css-rule①⓪\">rule</a> to <var>rules</var>.</p>"
             }
           ]
         }
       ]
     },
     {
-      "html": "Let <var>decl</var> be a new <a data-link-type=\"dfn\">declaration</a>,\n\twith an initially empty name\n\tand a value set to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑨\">list</a>.",
+      "html": "Let <var>decl</var> be a new <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#declaration\" id=\"ref-for-declaration①③\">declaration</a>,\n\twith an initially empty name\n\tand a value set to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑨\">list</a>.",
       "rationale": "if",
       "steps": [
         {
