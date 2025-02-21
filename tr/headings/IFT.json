@@ -134,18 +134,53 @@
       "number": "4.1"
     },
     {
+      "id": "default-layout-features",
+      "href": "https://www.w3.org/TR/IFT/#default-layout-features",
+      "level": 3,
+      "title": "Default Layout Features",
+      "number": "4.2"
+    },
+    {
       "id": "extend-font-subset",
       "href": "https://www.w3.org/TR/IFT/#extend-font-subset",
       "level": 3,
       "title": "Incremental Font Extension Algorithm",
-      "number": "4.2"
+      "number": "4.3"
+    },
+    {
+      "id": "invalidating-patch-selection",
+      "href": "https://www.w3.org/TR/IFT/#invalidating-patch-selection",
+      "level": 3,
+      "title": "Selecting Invalidating Patches",
+      "number": "4.4"
+    },
+    {
+      "id": "target-subset-definitions",
+      "href": "https://www.w3.org/TR/IFT/#target-subset-definitions",
+      "level": 3,
+      "title": "Target Subset Definition",
+      "number": "4.5"
+    },
+    {
+      "id": "ift-font-coverage",
+      "href": "https://www.w3.org/TR/IFT/#ift-font-coverage",
+      "level": 3,
+      "title": "Determining what Content a Font can Render",
+      "number": "4.6"
     },
     {
       "id": "fully-expanding-a-font",
       "href": "https://www.w3.org/TR/IFT/#fully-expanding-a-font",
       "level": 3,
       "title": "Fully Expanding a Font",
-      "number": "4.3"
+      "number": "4.7"
+    },
+    {
+      "id": "caching-incremental-fonts",
+      "href": "https://www.w3.org/TR/IFT/#caching-incremental-fonts",
+      "level": 3,
+      "title": "Caching Extended Incremental Fonts",
+      "number": "4.8"
     },
     {
       "id": "font-format-extensions",
@@ -155,10 +190,10 @@
       "number": "5"
     },
     {
-      "id": "ift-and-woff2",
-      "href": "https://www.w3.org/TR/IFT/#ift-and-woff2",
+      "id": "ift-and-compression",
+      "href": "https://www.w3.org/TR/IFT/#ift-and-compression",
       "level": 3,
-      "title": "Incremental Font Transfer and WOFF2",
+      "title": "Incremental Font Transfer and Font Compression Formats",
       "number": "5.1"
     },
     {
@@ -239,46 +274,32 @@
       "number": "6.1"
     },
     {
-      "id": "brotli",
-      "href": "https://www.w3.org/TR/IFT/#brotli",
+      "id": "table-keyed",
+      "href": "https://www.w3.org/TR/IFT/#table-keyed",
       "level": 3,
-      "title": "Brotli Patch",
+      "title": "Table Keyed",
       "number": "6.2"
     },
     {
-      "id": "apply-brotli",
-      "href": "https://www.w3.org/TR/IFT/#apply-brotli",
+      "id": "apply-table-keyed",
+      "href": "https://www.w3.org/TR/IFT/#apply-table-keyed",
       "level": 4,
-      "title": "Applying Brotli Patches",
+      "title": "Applying Table Keyed Patches",
       "number": "6.2.1"
-    },
-    {
-      "id": "per-table-brotli",
-      "href": "https://www.w3.org/TR/IFT/#per-table-brotli",
-      "level": 3,
-      "title": "Per Table Brotli",
-      "number": "6.3"
-    },
-    {
-      "id": "apply-per-table-brotli",
-      "href": "https://www.w3.org/TR/IFT/#apply-per-table-brotli",
-      "level": 4,
-      "title": "Applying Per Table Brotli Patches",
-      "number": "6.3.1"
     },
     {
       "id": "glyph-keyed",
       "href": "https://www.w3.org/TR/IFT/#glyph-keyed",
       "level": 3,
       "title": "Glyph Keyed",
-      "number": "6.4"
+      "number": "6.3"
     },
     {
       "id": "apply-glyph-keyed",
       "href": "https://www.w3.org/TR/IFT/#apply-glyph-keyed",
       "level": 4,
       "title": "Applying Glyph Keyed Patches",
-      "number": "6.4.1"
+      "number": "6.3.1"
     },
     {
       "id": "encoding",
@@ -298,31 +319,61 @@
       "id": "priv",
       "href": "https://www.w3.org/TR/IFT/#priv",
       "level": 2,
-      "title": "Privacy Considerations"
+      "title": "Privacy Considerations",
+      "number": "8"
     },
     {
       "id": "content-inference-from-character-set",
       "href": "https://www.w3.org/TR/IFT/#content-inference-from-character-set",
       "level": 3,
-      "title": "Content inference from character set"
+      "title": "Content inference from character set",
+      "number": "8.1"
     },
     {
       "id": "per-origin",
       "href": "https://www.w3.org/TR/IFT/#per-origin",
       "level": 3,
-      "title": "Per-origin restriction avoids fingerprinting"
+      "title": "Per-origin restriction avoids fingerprinting",
+      "number": "8.2"
     },
     {
       "id": "sec",
       "href": "https://www.w3.org/TR/IFT/#sec",
       "level": 2,
-      "title": "Security Considerations"
+      "title": "Security Considerations",
+      "number": "9"
     },
     {
       "id": "changes",
       "href": "https://www.w3.org/TR/IFT/#changes",
       "level": 2,
-      "title": "Changes"
+      "title": "10. Changes"
+    },
+    {
+      "id": "feature-tag-list",
+      "href": "https://www.w3.org/TR/IFT/#feature-tag-list",
+      "level": 2,
+      "title": "Default Feature Tags",
+      "number": "A"
+    },
+    {
+      "id": "extension-example",
+      "href": "https://www.w3.org/TR/IFT/#extension-example",
+      "level": 2,
+      "title": "Extension Algorithm Example Execution",
+      "number": "B"
+    },
+    {
+      "id": "appendix-b-example-1",
+      "href": "https://www.w3.org/TR/IFT/#appendix-b-example-1",
+      "level": 3,
+      "title": "Example 1: Table and Glyph Keyed Patches"
+    },
+    {
+      "id": "appendix-b-example-2",
+      "href": "https://www.w3.org/TR/IFT/#appendix-b-example-2",
+      "level": 3,
+      "title": "Example 2: Glyph Keyed Patches with Child Entries"
     },
     {
       "id": "w3c-conformance",

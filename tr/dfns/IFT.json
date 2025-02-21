@@ -228,7 +228,7 @@
         "id": "extend-font-subset",
         "href": "https://www.w3.org/TR/IFT/#extend-font-subset",
         "title": "Incremental Font Extension Algorithm",
-        "number": "4.2"
+        "number": "4.3"
       },
       "definedIn": "prose"
     },
@@ -247,7 +247,7 @@
         "id": "extend-font-subset",
         "href": "https://www.w3.org/TR/IFT/#extend-font-subset",
         "title": "Incremental Font Extension Algorithm",
-        "number": "4.2"
+        "number": "4.3"
       },
       "definedIn": "prose"
     },
@@ -266,7 +266,7 @@
         "id": "extend-font-subset",
         "href": "https://www.w3.org/TR/IFT/#extend-font-subset",
         "title": "Incremental Font Extension Algorithm",
-        "number": "4.2"
+        "number": "4.3"
       },
       "definedIn": "prose"
     },
@@ -285,7 +285,7 @@
         "id": "extend-font-subset",
         "href": "https://www.w3.org/TR/IFT/#extend-font-subset",
         "title": "Incremental Font Extension Algorithm",
-        "number": "4.2"
+        "number": "4.3"
       },
       "definedIn": "prose"
     },
@@ -304,7 +304,7 @@
         "id": "fully-expanding-a-font",
         "href": "https://www.w3.org/TR/IFT/#fully-expanding-a-font",
         "title": "Fully Expanding a Font",
-        "number": "4.3"
+        "number": "4.7"
       },
       "definedIn": "prose"
     },
@@ -370,10 +370,31 @@
       "definedIn": "table"
     },
     {
-      "id": "format-1-patch-map-entrycount",
-      "href": "https://www.w3.org/TR/IFT/#format-1-patch-map-entrycount",
+      "id": "format-1-patch-map-maxentryindex",
+      "href": "https://www.w3.org/TR/IFT/#format-1-patch-map-maxentryindex",
       "linkingText": [
-        "entryCount"
+        "maxEntryIndex"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Format 1 Patch Map"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "patch-map-format-1",
+        "href": "https://www.w3.org/TR/IFT/#patch-map-format-1",
+        "title": "Patch Map Table: Format 1",
+        "number": "5.2.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "format-1-patch-map-maxglyphmapentryindex",
+      "href": "https://www.w3.org/TR/IFT/#format-1-patch-map-maxglyphmapentryindex",
+      "linkingText": [
+        "maxGlyphMapEntryIndex"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -395,6 +416,27 @@
       "href": "https://www.w3.org/TR/IFT/#format-1-patch-map-glyphcount",
       "linkingText": [
         "glyphCount"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Format 1 Patch Map"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "patch-map-format-1",
+        "href": "https://www.w3.org/TR/IFT/#patch-map-format-1",
+        "title": "Patch Map Table: Format 1",
+        "number": "5.2.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "format-1-patch-map-featuremapoffset",
+      "href": "https://www.w3.org/TR/IFT/#format-1-patch-map-featuremapoffset",
+      "linkingText": [
+        "featureMapOffset"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -454,10 +496,10 @@
       "definedIn": "table"
     },
     {
-      "id": "format-1-patch-map-patchencoding",
-      "href": "https://www.w3.org/TR/IFT/#format-1-patch-map-patchencoding",
+      "id": "format-1-patch-map-patchformat",
+      "href": "https://www.w3.org/TR/IFT/#format-1-patch-map-patchformat",
       "linkingText": [
-        "patchEncoding"
+        "patchFormat"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -637,10 +679,10 @@
       "definedIn": "table"
     },
     {
-      "id": "featurerecord-firstentryindex",
-      "href": "https://www.w3.org/TR/IFT/#featurerecord-firstentryindex",
+      "id": "featurerecord-firstnewentryindex",
+      "href": "https://www.w3.org/TR/IFT/#featurerecord-firstnewentryindex",
       "linkingText": [
-        "firstEntryIndex"
+        "firstNewEntryIndex"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -839,10 +881,10 @@
       "definedIn": "table"
     },
     {
-      "id": "format-2-patch-map-defaultpatchencoding",
-      "href": "https://www.w3.org/TR/IFT/#format-2-patch-map-defaultpatchencoding",
+      "id": "format-2-patch-map-defaultpatchformat",
+      "href": "https://www.w3.org/TR/IFT/#format-2-patch-map-defaultpatchformat",
       "linkingText": [
-        "defaultPatchEncoding"
+        "defaultPatchFormat"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1108,10 +1150,10 @@
       "definedIn": "table"
     },
     {
-      "id": "mapping-entry-copycount",
-      "href": "https://www.w3.org/TR/IFT/#mapping-entry-copycount",
+      "id": "mapping-entry-childentrymatchmodeandcount",
+      "href": "https://www.w3.org/TR/IFT/#mapping-entry-childentrymatchmodeandcount",
       "linkingText": [
-        "copyCount"
+        "childEntryMatchModeAndCount"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1129,10 +1171,10 @@
       "definedIn": "table"
     },
     {
-      "id": "mapping-entry-copyindices",
-      "href": "https://www.w3.org/TR/IFT/#mapping-entry-copyindices",
+      "id": "mapping-entry-childentryindices",
+      "href": "https://www.w3.org/TR/IFT/#mapping-entry-childentryindices",
       "linkingText": [
-        "copyIndices"
+        "childEntryIndices"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1192,10 +1234,10 @@
       "definedIn": "table"
     },
     {
-      "id": "mapping-entry-patchencoding",
-      "href": "https://www.w3.org/TR/IFT/#mapping-entry-patchencoding",
+      "id": "mapping-entry-patchformat",
+      "href": "https://www.w3.org/TR/IFT/#mapping-entry-patchformat",
       "linkingText": [
-        "patchEncoding"
+        "patchFormat"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1237,7 +1279,7 @@
       "id": "mapping-entry-codepoints",
       "href": "https://www.w3.org/TR/IFT/#mapping-entry-codepoints",
       "linkingText": [
-        "codepoints"
+        "codePoints"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1451,10 +1493,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "brotli-patch",
-      "href": "https://www.w3.org/TR/IFT/#brotli-patch",
+      "id": "table-keyed-patch",
+      "href": "https://www.w3.org/TR/IFT/#table-keyed-patch",
       "linkingText": [
-        "Brotli patch"
+        "Table keyed patch"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1462,174 +1504,52 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "brotli",
-        "href": "https://www.w3.org/TR/IFT/#brotli",
-        "title": "Brotli Patch",
+        "id": "table-keyed",
+        "href": "https://www.w3.org/TR/IFT/#table-keyed",
+        "title": "Table Keyed",
         "number": "6.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "brotli-patch-format",
-      "href": "https://www.w3.org/TR/IFT/#brotli-patch-format",
-      "linkingText": [
-        "format"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "Brotli patch"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "brotli",
-        "href": "https://www.w3.org/TR/IFT/#brotli",
-        "title": "Brotli Patch",
-        "number": "6.2"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "brotli-patch-compatibilityid",
-      "href": "https://www.w3.org/TR/IFT/#brotli-patch-compatibilityid",
+      "id": "table-keyed-patch-compatibilityid",
+      "href": "https://www.w3.org/TR/IFT/#table-keyed-patch-compatibilityid",
       "linkingText": [
         "compatibilityId"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "Brotli patch"
+        "Table keyed patch"
       ],
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "brotli",
-        "href": "https://www.w3.org/TR/IFT/#brotli",
-        "title": "Brotli Patch",
+        "id": "table-keyed",
+        "href": "https://www.w3.org/TR/IFT/#table-keyed",
+        "title": "Table Keyed",
         "number": "6.2"
       },
       "definedIn": "table"
     },
     {
-      "id": "brotli-patch-brotlistream",
-      "href": "https://www.w3.org/TR/IFT/#brotli-patch-brotlistream",
-      "linkingText": [
-        "brotliStream"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "Brotli patch"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "brotli",
-        "href": "https://www.w3.org/TR/IFT/#brotli",
-        "title": "Brotli Patch",
-        "number": "6.2"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "abstract-opdef-apply-brotli-patch",
-      "href": "https://www.w3.org/TR/IFT/#abstract-opdef-apply-brotli-patch",
-      "linkingText": [
-        "Apply brotli patch"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "apply-brotli",
-        "href": "https://www.w3.org/TR/IFT/#apply-brotli",
-        "title": "Applying Brotli Patches",
-        "number": "6.2.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "per-table-brotli-patch",
-      "href": "https://www.w3.org/TR/IFT/#per-table-brotli-patch",
-      "linkingText": [
-        "Per table brotli patch"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "per-table-brotli",
-        "href": "https://www.w3.org/TR/IFT/#per-table-brotli",
-        "title": "Per Table Brotli",
-        "number": "6.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "per-table-brotli-patch-format",
-      "href": "https://www.w3.org/TR/IFT/#per-table-brotli-patch-format",
-      "linkingText": [
-        "format"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "Per table brotli patch"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "per-table-brotli",
-        "href": "https://www.w3.org/TR/IFT/#per-table-brotli",
-        "title": "Per Table Brotli",
-        "number": "6.3"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "per-table-brotli-patch-compatibilityid",
-      "href": "https://www.w3.org/TR/IFT/#per-table-brotli-patch-compatibilityid",
-      "linkingText": [
-        "compatibilityId"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "Per table brotli patch"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "per-table-brotli",
-        "href": "https://www.w3.org/TR/IFT/#per-table-brotli",
-        "title": "Per Table Brotli",
-        "number": "6.3"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "per-table-brotli-patch-patches",
-      "href": "https://www.w3.org/TR/IFT/#per-table-brotli-patch-patches",
+      "id": "table-keyed-patch-patches",
+      "href": "https://www.w3.org/TR/IFT/#table-keyed-patch-patches",
       "linkingText": [
         "patches"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "Per table brotli patch"
+        "Table keyed patch"
       ],
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "per-table-brotli",
-        "href": "https://www.w3.org/TR/IFT/#per-table-brotli",
-        "title": "Per Table Brotli",
-        "number": "6.3"
+        "id": "table-keyed",
+        "href": "https://www.w3.org/TR/IFT/#table-keyed",
+        "title": "Table Keyed",
+        "number": "6.2"
       },
       "definedIn": "table"
     },
@@ -1645,10 +1565,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "per-table-brotli",
-        "href": "https://www.w3.org/TR/IFT/#per-table-brotli",
-        "title": "Per Table Brotli",
-        "number": "6.3"
+        "id": "table-keyed",
+        "href": "https://www.w3.org/TR/IFT/#table-keyed",
+        "title": "Table Keyed",
+        "number": "6.2"
       },
       "definedIn": "prose"
     },
@@ -1666,10 +1586,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "per-table-brotli",
-        "href": "https://www.w3.org/TR/IFT/#per-table-brotli",
-        "title": "Per Table Brotli",
-        "number": "6.3"
+        "id": "table-keyed",
+        "href": "https://www.w3.org/TR/IFT/#table-keyed",
+        "title": "Table Keyed",
+        "number": "6.2"
       },
       "definedIn": "table"
     },
@@ -1687,10 +1607,31 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "per-table-brotli",
-        "href": "https://www.w3.org/TR/IFT/#per-table-brotli",
-        "title": "Per Table Brotli",
-        "number": "6.3"
+        "id": "table-keyed",
+        "href": "https://www.w3.org/TR/IFT/#table-keyed",
+        "title": "Table Keyed",
+        "number": "6.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "tablepatch-maxuncompressedlength",
+      "href": "https://www.w3.org/TR/IFT/#tablepatch-maxuncompressedlength",
+      "linkingText": [
+        "maxUncompressedLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TablePatch"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "table-keyed",
+        "href": "https://www.w3.org/TR/IFT/#table-keyed",
+        "title": "Table Keyed",
+        "number": "6.2"
       },
       "definedIn": "table"
     },
@@ -1708,18 +1649,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "per-table-brotli",
-        "href": "https://www.w3.org/TR/IFT/#per-table-brotli",
-        "title": "Per Table Brotli",
-        "number": "6.3"
+        "id": "table-keyed",
+        "href": "https://www.w3.org/TR/IFT/#table-keyed",
+        "title": "Table Keyed",
+        "number": "6.2"
       },
       "definedIn": "table"
     },
     {
-      "id": "abstract-opdef-apply-per-table-brotli-patch",
-      "href": "https://www.w3.org/TR/IFT/#abstract-opdef-apply-per-table-brotli-patch",
+      "id": "abstract-opdef-apply-table-keyed-patch",
+      "href": "https://www.w3.org/TR/IFT/#abstract-opdef-apply-table-keyed-patch",
       "linkingText": [
-        "Apply per table brotli patch"
+        "Apply table keyed patch"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -1727,10 +1668,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "apply-per-table-brotli",
-        "href": "https://www.w3.org/TR/IFT/#apply-per-table-brotli",
-        "title": "Applying Per Table Brotli Patches",
-        "number": "6.3.1"
+        "id": "apply-table-keyed",
+        "href": "https://www.w3.org/TR/IFT/#apply-table-keyed",
+        "title": "Applying Table Keyed Patches",
+        "number": "6.2.1"
       },
       "definedIn": "prose"
     },
@@ -1749,30 +1690,9 @@
         "id": "glyph-keyed",
         "href": "https://www.w3.org/TR/IFT/#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "6.4"
+        "number": "6.3"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "glyph-keyed-patch-format",
-      "href": "https://www.w3.org/TR/IFT/#glyph-keyed-patch-format",
-      "linkingText": [
-        "format"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "Glyph keyed patch"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "glyph-keyed",
-        "href": "https://www.w3.org/TR/IFT/#glyph-keyed",
-        "title": "Glyph Keyed",
-        "number": "6.4"
-      },
-      "definedIn": "table"
     },
     {
       "id": "glyph-keyed-patch-flags",
@@ -1791,7 +1711,7 @@
         "id": "glyph-keyed",
         "href": "https://www.w3.org/TR/IFT/#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "6.4"
+        "number": "6.3"
       },
       "definedIn": "table"
     },
@@ -1812,7 +1732,28 @@
         "id": "glyph-keyed",
         "href": "https://www.w3.org/TR/IFT/#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "6.4"
+        "number": "6.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "glyph-keyed-patch-maxuncompressedlength",
+      "href": "https://www.w3.org/TR/IFT/#glyph-keyed-patch-maxuncompressedlength",
+      "linkingText": [
+        "maxUncompressedLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Glyph keyed patch"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "glyph-keyed",
+        "href": "https://www.w3.org/TR/IFT/#glyph-keyed",
+        "title": "Glyph Keyed",
+        "number": "6.3"
       },
       "definedIn": "table"
     },
@@ -1833,7 +1774,7 @@
         "id": "glyph-keyed",
         "href": "https://www.w3.org/TR/IFT/#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "6.4"
+        "number": "6.3"
       },
       "definedIn": "table"
     },
@@ -1852,7 +1793,7 @@
         "id": "glyph-keyed",
         "href": "https://www.w3.org/TR/IFT/#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "6.4"
+        "number": "6.3"
       },
       "definedIn": "prose"
     },
@@ -1873,7 +1814,7 @@
         "id": "glyph-keyed",
         "href": "https://www.w3.org/TR/IFT/#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "6.4"
+        "number": "6.3"
       },
       "definedIn": "table"
     },
@@ -1894,7 +1835,7 @@
         "id": "glyph-keyed",
         "href": "https://www.w3.org/TR/IFT/#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "6.4"
+        "number": "6.3"
       },
       "definedIn": "table"
     },
@@ -1915,7 +1856,7 @@
         "id": "glyph-keyed",
         "href": "https://www.w3.org/TR/IFT/#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "6.4"
+        "number": "6.3"
       },
       "definedIn": "table"
     },
@@ -1936,7 +1877,7 @@
         "id": "glyph-keyed",
         "href": "https://www.w3.org/TR/IFT/#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "6.4"
+        "number": "6.3"
       },
       "definedIn": "table"
     },
@@ -1957,7 +1898,7 @@
         "id": "glyph-keyed",
         "href": "https://www.w3.org/TR/IFT/#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "6.4"
+        "number": "6.3"
       },
       "definedIn": "table"
     },
@@ -1976,7 +1917,7 @@
         "id": "apply-glyph-keyed",
         "href": "https://www.w3.org/TR/IFT/#apply-glyph-keyed",
         "title": "Applying Glyph Keyed Patches",
-        "number": "6.4.1"
+        "number": "6.3.1"
       },
       "definedIn": "prose"
     },
