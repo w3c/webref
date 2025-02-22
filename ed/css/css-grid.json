@@ -690,50 +690,124 @@
       "value": "'[' <custom-ident>* ']'"
     },
     {
-      "name": "repeat()",
-      "prose": "The repeat() notation represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form.",
-      "href": "https://drafts.csswg.org/css-grid-2/#funcdef-repeat",
-      "type": "function",
-      "values": [
-        {
-          "name": "auto-fill",
-          "prose": "Otherwise on a standalone axis, when auto-fill is given as the repetition number, if the grid container has a definite size or max size in the relevant axis, then the number of repetitions is the largest possible positive integer that does not cause the grid to overflow the content box of its grid container (treating each track as its max track sizing function if that is definite or as its minimum track sizing function otherwise, flooring the max track sizing function by the min track sizing function if both are definite, and taking gap into account); if any number of repetitions would overflow, then 1 repetition. Otherwise, if the grid container has a definite min size in the relevant axis, the number of repetitions is the smallest possible positive integer that fulfills that minimum requirement. Otherwise, the specified track list repeats only once.",
-          "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fill",
-          "type": "value",
-          "value": "auto-fill"
-        },
-        {
-          "name": "auto-fit",
-          "prose": "The auto-fit keyword behaves the same as auto-fill, except that after grid item placement any empty repeated tracks are collapsed. An empty track is one with no in-flow grid items placed into or spanning across it. (This can result in all tracks being collapsed, if they’re all empty.)",
-          "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fit",
-          "type": "value",
-          "value": "auto-fit"
-        }
-      ]
-    },
-    {
       "name": "<track-repeat>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-track-repeat",
       "type": "type",
-      "value": "repeat( [ <integer [1,∞]> ] , [ <line-names>? <track-size> ]+ <line-names>? )"
+      "value": "repeat( [ <integer [1,∞]> ] , [ <line-names>? <track-size> ]+ <line-names>? )",
+      "values": [
+        {
+          "name": "repeat()",
+          "prose": "The repeat() notation represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form.",
+          "href": "https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat",
+          "type": "function",
+          "values": [
+            {
+              "name": "auto-fill",
+              "prose": "Otherwise on a standalone axis, when auto-fill is given as the repetition number, if the grid container has a definite size or max size in the relevant axis, then the number of repetitions is the largest possible positive integer that does not cause the grid to overflow the content box of its grid container (treating each track as its max track sizing function if that is definite or as its minimum track sizing function otherwise, flooring the max track sizing function by the min track sizing function if both are definite, and taking gap into account); if any number of repetitions would overflow, then 1 repetition. Otherwise, if the grid container has a definite min size in the relevant axis, the number of repetitions is the smallest possible positive integer that fulfills that minimum requirement. Otherwise, the specified track list repeats only once.",
+              "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fill",
+              "type": "value",
+              "value": "auto-fill"
+            },
+            {
+              "name": "auto-fit",
+              "prose": "The auto-fit keyword behaves the same as auto-fill, except that after grid item placement any empty repeated tracks are collapsed. An empty track is one with no in-flow grid items placed into or spanning across it. (This can result in all tracks being collapsed, if they’re all empty.)",
+              "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fit",
+              "type": "value",
+              "value": "auto-fit"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "<auto-repeat>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-auto-repeat",
       "type": "type",
-      "value": "repeat( [ auto-fill | auto-fit ] , [ <line-names>? <fixed-size> ]+ <line-names>? )"
+      "value": "repeat( [ auto-fill | auto-fit ] , [ <line-names>? <fixed-size> ]+ <line-names>? )",
+      "values": [
+        {
+          "name": "repeat()",
+          "prose": "The repeat() notation represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form.",
+          "href": "https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat",
+          "type": "function",
+          "values": [
+            {
+              "name": "auto-fill",
+              "prose": "Otherwise on a standalone axis, when auto-fill is given as the repetition number, if the grid container has a definite size or max size in the relevant axis, then the number of repetitions is the largest possible positive integer that does not cause the grid to overflow the content box of its grid container (treating each track as its max track sizing function if that is definite or as its minimum track sizing function otherwise, flooring the max track sizing function by the min track sizing function if both are definite, and taking gap into account); if any number of repetitions would overflow, then 1 repetition. Otherwise, if the grid container has a definite min size in the relevant axis, the number of repetitions is the smallest possible positive integer that fulfills that minimum requirement. Otherwise, the specified track list repeats only once.",
+              "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fill",
+              "type": "value",
+              "value": "auto-fill"
+            },
+            {
+              "name": "auto-fit",
+              "prose": "The auto-fit keyword behaves the same as auto-fill, except that after grid item placement any empty repeated tracks are collapsed. An empty track is one with no in-flow grid items placed into or spanning across it. (This can result in all tracks being collapsed, if they’re all empty.)",
+              "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fit",
+              "type": "value",
+              "value": "auto-fit"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "<fixed-repeat>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-fixed-repeat",
       "type": "type",
-      "value": "repeat( [ <integer [1,∞]> ] , [ <line-names>? <fixed-size> ]+ <line-names>? )"
+      "value": "repeat( [ <integer [1,∞]> ] , [ <line-names>? <fixed-size> ]+ <line-names>? )",
+      "values": [
+        {
+          "name": "repeat()",
+          "prose": "The repeat() notation represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form.",
+          "href": "https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat",
+          "type": "function",
+          "values": [
+            {
+              "name": "auto-fill",
+              "prose": "Otherwise on a standalone axis, when auto-fill is given as the repetition number, if the grid container has a definite size or max size in the relevant axis, then the number of repetitions is the largest possible positive integer that does not cause the grid to overflow the content box of its grid container (treating each track as its max track sizing function if that is definite or as its minimum track sizing function otherwise, flooring the max track sizing function by the min track sizing function if both are definite, and taking gap into account); if any number of repetitions would overflow, then 1 repetition. Otherwise, if the grid container has a definite min size in the relevant axis, the number of repetitions is the smallest possible positive integer that fulfills that minimum requirement. Otherwise, the specified track list repeats only once.",
+              "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fill",
+              "type": "value",
+              "value": "auto-fill"
+            },
+            {
+              "name": "auto-fit",
+              "prose": "The auto-fit keyword behaves the same as auto-fill, except that after grid item placement any empty repeated tracks are collapsed. An empty track is one with no in-flow grid items placed into or spanning across it. (This can result in all tracks being collapsed, if they’re all empty.)",
+              "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fit",
+              "type": "value",
+              "value": "auto-fit"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "<name-repeat>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-name-repeat",
       "type": "type",
-      "value": "repeat( [ <integer [1,∞]> | auto-fill ], <line-names>+)"
+      "value": "repeat( [ <integer [1,∞]> | auto-fill ], <line-names>+)",
+      "values": [
+        {
+          "name": "repeat()",
+          "prose": "The repeat() notation represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form.",
+          "href": "https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat",
+          "type": "function",
+          "values": [
+            {
+              "name": "auto-fill",
+              "prose": "Otherwise on a standalone axis, when auto-fill is given as the repetition number, if the grid container has a definite size or max size in the relevant axis, then the number of repetitions is the largest possible positive integer that does not cause the grid to overflow the content box of its grid container (treating each track as its max track sizing function if that is definite or as its minimum track sizing function otherwise, flooring the max track sizing function by the min track sizing function if both are definite, and taking gap into account); if any number of repetitions would overflow, then 1 repetition. Otherwise, if the grid container has a definite min size in the relevant axis, the number of repetitions is the smallest possible positive integer that fulfills that minimum requirement. Otherwise, the specified track list repeats only once.",
+              "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fill",
+              "type": "value",
+              "value": "auto-fill"
+            },
+            {
+              "name": "auto-fit",
+              "prose": "The auto-fit keyword behaves the same as auto-fill, except that after grid item placement any empty repeated tracks are collapsed. An empty track is one with no in-flow grid items placed into or spanning across it. (This can result in all tracks being collapsed, if they’re all empty.)",
+              "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fit",
+              "type": "value",
+              "value": "auto-fit"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "<flex>",
