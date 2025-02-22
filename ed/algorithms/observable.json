@@ -202,7 +202,7 @@
               ]
             },
             {
-              "html": "<p>Otherwise, if <var>nextRecord</var> is <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type①\">normal completion</a>, then set <var>nextPromise</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with\">a promise resolved with</a> <var>nextRecord</var>’s [[Value]].</p>"
+              "html": "<p>Otherwise, if <var>nextRecord</var> is <a data-link-type=\"dfn\" data-refhint-key=\"ac8707c1\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type①\">normal completion</a>, then set <var>nextPromise</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with\">a promise resolved with</a> <var>nextRecord</var>’s [[Value]].</p>"
             },
             {
               "html": "If <var>nextPromise</var> was fulfilled with value <var>iteratorResult</var>, then:",
@@ -241,7 +241,7 @@
               "html": "<p>If <var>iteratorRecordCompletion</var> is a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type③\">throw completion</a>, then run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-error\" id=\"ref-for-dom-subscriber-error④\">error()</a></code> method with <var>iteratorRecordCompletion</var>’s [[Value]] and abort these\n  steps.</p>"
             },
             {
-              "html": "<p>Let <var>iteratorRecord</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①\">!</a> <var>iteratorRecordCompletion</var>.</p>"
+              "html": "<p>Let <var>iteratorRecord</var> be <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①\">!</a> <var>iteratorRecordCompletion</var>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>iteratorRecord</var> is an <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-iterator-records\" id=\"ref-for-sec-iterator-records②\">Iterator Record</a>.</p>"
@@ -280,7 +280,7 @@
               "html": "<p>If <var>iteratorRecordCompletion</var> is a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type④\">throw completion</a>, then run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-error\" id=\"ref-for-dom-subscriber-error⑥\">error()</a></code> method, given <var>iteratorRecordCompletion</var>’s [[Value]], and abort\n  these steps.</p>"
             },
             {
-              "html": "<p>Let <var>iteratorRecord</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③\">!</a> <var>iteratorRecordCompletion</var>.</p>"
+              "html": "<p>Let <var>iteratorRecord</var> be <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③\">!</a> <var>iteratorRecordCompletion</var>.</p>"
             },
             {
               "html": "<p>If <var>subscriber</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#subscriber-subscription-controller\" id=\"ref-for-subscriber-subscription-controller⑧\">subscription controller</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal⑥\">signal</a> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted④\">aborted</a>, then return.</p>"
@@ -305,7 +305,7 @@
                   "html": "<p>If <var>next</var> is a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type⑤\">throw completion</a>, then run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-error\" id=\"ref-for-dom-subscriber-error⑦\">error()</a></code> method, given <var>next</var>’s [[Value]], and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">break</a>.</p>"
                 },
                 {
-                  "html": "<p>Set <var>next</var> to <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④\">!</a> to <var>next</var>.</p>"
+                  "html": "<p>Set <var>next</var> to <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④\">!</a> to <var>next</var>.</p>"
                 },
                 {
                   "html": "If <var>next</var> is done, then:",
@@ -1195,7 +1195,45 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><span class=\"XXX\">TODO: Spec this and use <var>callback</var>.</span></p>"
+          "html": "<p>Let <var>sourceObservable</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a>.</p>"
+        },
+        {
+          "html": "Let <var>observable</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①④\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#observable\" id=\"ref-for-observable⑤③\">Observable</a></code> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-callback\" id=\"ref-for-observable-subscribe-callback①⑦\">subscribe callback</a> is an\n algorithm that takes a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#subscriber\" id=\"ref-for-subscriber②⑥\">Subscriber</a></code> <var>subscriber</var> and does the following:",
+          "rationale": "run",
+          "steps": [
+            {
+              "html": "<p>Run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-addteardown\" id=\"ref-for-dom-subscriber-addteardown①\">addTeardown()</a></code> method with <var>callback</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>sourceObserver</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer①⑦\">internal observer</a>, initialized as follows:</p>\n        <dl>\n         <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps①⑧\">next steps</a>\n         </dt><dd data-md=\"\">\n          <p>Run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-next\" id=\"ref-for-dom-subscriber-next①⑤\">next()</a></code> method, given the passed in <var>value</var>.</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps①⑦\">error steps</a>\n         </dt><dd data-md=\"\">\n          \n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps①⑤\">complete steps</a>\n         </dt><dd data-md=\"\">\n          \n        </dd></dl>",
+              "rationale": "run",
+              "steps": [
+                {
+                  "html": "<p>Run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-error\" id=\"ref-for-dom-subscriber-error③⑥\">error()</a></code> method, given the passed in <var>error</var>.</p>"
+                }
+              ],
+              "additional": [
+                {
+                  "html": "",
+                  "rationale": "run",
+                  "steps": [
+                    {
+                      "html": "<p>Run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-complete\" id=\"ref-for-dom-subscriber-complete②③\">complete()</a></code> method.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>options</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dictdef-subscribeoptions\" id=\"ref-for-dictdef-subscribeoptions②③\">SubscribeOptions</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal②②\">signal</a></code> is <var>subscriber</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#subscriber-subscription-controller\" id=\"ref-for-subscriber-subscription-controller②⑨\">subscription controller</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal②⑧\">signal</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-to-an-observable\" id=\"ref-for-observable-subscribe-to-an-observable①⑧\">Subscribe</a> to <var>sourceObservable</var> given <var>sourceObserver</var> and <var>options</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>observable</var>.</p>"
         }
       ]
     },
@@ -1209,15 +1247,15 @@
           "html": "<p>Let <var>p</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
         },
         {
-          "html": "If <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal②②\">signal</a></code> is not null:",
+          "html": "If <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal②③\">signal</a></code> is not null:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal②③\">signal</a></code> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted⑧\">aborted</a>, then:",
+              "html": "If <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal②④\">signal</a></code> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted⑧\">aborted</a>, then:",
               "rationale": "reject",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">Reject</a> <var>p</var> with <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal②④\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason⑤\">abort reason</a>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">Reject</a> <var>p</var> with <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal②⑤\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason⑤\">abort reason</a>.</p>"
                 },
                 {
                   "html": "<p>Return <var>p</var>.</p>"
@@ -1225,11 +1263,11 @@
               ]
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add⑤\">Add the following abort algorithm</a> to <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal②⑤\">signal</a></code>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add⑤\">Add the following abort algorithm</a> to <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal②⑥\">signal</a></code>:",
               "rationale": "reject",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">Reject</a> <var>p</var> with <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal②⑥\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason⑥\">abort reason</a>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">Reject</a> <var>p</var> with <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal②⑦\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason⑥\">abort reason</a>.</p>"
                 }
               ]
             }
@@ -1239,10 +1277,10 @@
           "html": "<p>Let <var>values</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a>.</p>"
         },
         {
-          "html": "<p>Let <var>observer</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer①⑦\">internal observer</a>, initialized as follows:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps①⑧\">next steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> the passed in <var>value</var> to <var>values</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps①⑦\">error steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">Reject</a> <var>p</var> with the passed in <var>error</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps①⑤\">complete steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">Resolve</a> <var>p</var> with <var>values</var>.</p>\n      </dd></dl>"
+          "html": "<p>Let <var>observer</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer①⑧\">internal observer</a>, initialized as follows:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps①⑨\">next steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> the passed in <var>value</var> to <var>values</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps①⑧\">error steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">Reject</a> <var>p</var> with the passed in <var>error</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps①⑥\">complete steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">Resolve</a> <var>p</var> with <var>values</var>.</p>\n      </dd></dl>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-to-an-observable\" id=\"ref-for-observable-subscribe-to-an-observable①⑧\">Subscribe</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a> given <var>observer</var> and <var>options</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-to-an-observable\" id=\"ref-for-observable-subscribe-to-an-observable①⑨\">Subscribe</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥\">this</a> given <var>observer</var> and <var>options</var>.</p>"
         },
         {
           "html": "<p>Return <var>p</var>.</p>"
@@ -1259,17 +1297,17 @@
           "html": "<p>Let <var>p</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a>.</p>"
         },
         {
-          "html": "<p>Let <var>visitor callback controller</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①④\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortcontroller\" id=\"ref-for-abortcontroller⑥\">AbortController</a></code>.</p>"
+          "html": "<p>Let <var>visitor callback controller</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①⑤\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortcontroller\" id=\"ref-for-abortcontroller⑥\">AbortController</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>internal options</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dictdef-subscribeoptions\" id=\"ref-for-dictdef-subscribeoptions②③\">SubscribeOptions</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal②⑧\">signal</a></code> is the\n result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-dependent-abort-signal\" id=\"ref-for-create-a-dependent-abort-signal①\">creating a dependent abort signal</a> from the list «<var>visitor callback\n controller</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal②⑧\">signal</a>, <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal②⑨\">signal</a></code> if\n non-null», using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal③\">AbortSignal</a></code>, and the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm①\">current realm</a>.</p>"
+          "html": "<p>Let <var>internal options</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dictdef-subscribeoptions\" id=\"ref-for-dictdef-subscribeoptions②④\">SubscribeOptions</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal②⑨\">signal</a></code> is the\n result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-dependent-abort-signal\" id=\"ref-for-create-a-dependent-abort-signal①\">creating a dependent abort signal</a> from the list «<var>visitor callback\n controller</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal②⑨\">signal</a>, <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal③⓪\">signal</a></code> if\n non-null», using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal③\">AbortSignal</a></code>, and the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm①\">current realm</a>.</p>"
         },
         {
-          "html": "If <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal③②\">signal</a></code> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted⑨\">aborted</a>, then:",
+          "html": "If <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal③③\">signal</a></code> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted⑨\">aborted</a>, then:",
           "rationale": "reject",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal③③\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason⑦\">abort reason</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal③④\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason⑦\">abort reason</a>.</p>"
             },
             {
               "html": "<p>Return <var>p</var>.</p>"
@@ -1277,11 +1315,11 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add⑥\">Add the following abort algorithm</a> to <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal③④\">signal</a></code>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add⑥\">Add the following abort algorithm</a> to <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal③⑤\">signal</a></code>:",
           "rationale": "reject",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal③⑤\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason⑧\">abort reason</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal③⑥\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason⑧\">abort reason</a>.</p>"
             }
           ]
         },
@@ -1289,7 +1327,7 @@
           "html": "<p>Let <var>idx</var> be an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long-long\" id=\"ref-for-idl-unsigned-long-long①②\">unsigned long long</a></code>, initially 0.</p>"
         },
         {
-          "html": "<p>Let <var>observer</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer①⑨\">internal observer</a>, initialized as follows:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps②②\">next steps</a>\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps①⑨\">error steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑦\">Reject</a> <var>p</var> with the passed in <var>error</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps①⑦\">complete steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\" id=\"ref-for-idl-undefined①⓪\">undefined</a></code>.</p>\n      </dd></dl>",
+          "html": "<p>Let <var>observer</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer②⓪\">internal observer</a>, initialized as follows:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps②③\">next steps</a>\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps②⓪\">error steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑦\">Reject</a> <var>p</var> with the passed in <var>error</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps①⑧\">complete steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\" id=\"ref-for-idl-undefined①⓪\">undefined</a></code>.</p>\n      </dd></dl>",
           "rationale": "invoke",
           "steps": [
             {
@@ -1301,7 +1339,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-to-an-observable\" id=\"ref-for-observable-subscribe-to-an-observable②⓪\">Subscribe</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑦\">this</a> given <var>observer</var> and <var>internal options</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-to-an-observable\" id=\"ref-for-observable-subscribe-to-an-observable②①\">Subscribe</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑧\">this</a> given <var>observer</var> and <var>internal options</var>.</p>"
         },
         {
           "html": "<p>Return <var>p</var>.</p>"
@@ -1318,17 +1356,17 @@
           "html": "<p>Let <var>p</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a>.</p>"
         },
         {
-          "html": "<p>Let <var>controller</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①⑤\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortcontroller\" id=\"ref-for-abortcontroller⑧\">AbortController</a></code>.</p>"
+          "html": "<p>Let <var>controller</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①⑥\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortcontroller\" id=\"ref-for-abortcontroller⑧\">AbortController</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>internal options</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dictdef-subscribeoptions\" id=\"ref-for-dictdef-subscribeoptions②⑤\">SubscribeOptions</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal③⑨\">signal</a></code> is the\n result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-dependent-abort-signal\" id=\"ref-for-create-a-dependent-abort-signal③\">creating a dependent abort signal</a> from the list «<var>controller</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal②⑨\">signal</a>, <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④⓪\">signal</a></code> if non-null», using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal⑤\">AbortSignal</a></code>, and the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm②\">current realm</a>.</p>"
+          "html": "<p>Let <var>internal options</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dictdef-subscribeoptions\" id=\"ref-for-dictdef-subscribeoptions②⑥\">SubscribeOptions</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④⓪\">signal</a></code> is the\n result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-dependent-abort-signal\" id=\"ref-for-create-a-dependent-abort-signal③\">creating a dependent abort signal</a> from the list «<var>controller</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal③⓪\">signal</a>, <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④①\">signal</a></code> if non-null», using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal⑤\">AbortSignal</a></code>, and the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm②\">current realm</a>.</p>"
         },
         {
-          "html": "If <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④①\">signal</a></code> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①⓪\">aborted</a>, then:",
+          "html": "If <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④②\">signal</a></code> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①⓪\">aborted</a>, then:",
           "rationale": "reject",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑧\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④②\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason⑨\">abort reason</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑧\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④③\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason⑨\">abort reason</a>.</p>"
             },
             {
               "html": "<p>Return <var>p</var>.</p>"
@@ -1336,11 +1374,11 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add⑦\">Add the following abort algorithm</a> to <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④③\">signal</a></code>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add⑦\">Add the following abort algorithm</a> to <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④④\">signal</a></code>:",
           "rationale": "reject",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑨\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④④\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⓪\">abort reason</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑨\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④⑤\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⓪\">abort reason</a>.</p>"
             }
           ]
         },
@@ -1348,7 +1386,7 @@
           "html": "<p>Let <var>idx</var> be an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long-long\" id=\"ref-for-idl-unsigned-long-long①③\">unsigned long long</a></code>, initially 0.</p>"
         },
         {
-          "html": "<p>Let <var>observer</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer②⓪\">internal observer</a>, initialized as follows:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps②③\">next steps</a>\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps②⓪\">error steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①①\">Reject</a> <var>p</var> with the passed in <var>error</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps①⑧\">complete steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve③\">Resolve</a> <var>p</var> with true.</p>\n      </dd></dl>",
+          "html": "<p>Let <var>observer</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer②①\">internal observer</a>, initialized as follows:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps②④\">next steps</a>\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps②①\">error steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①①\">Reject</a> <var>p</var> with the passed in <var>error</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps①⑨\">complete steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve③\">Resolve</a> <var>p</var> with true.</p>\n      </dd></dl>",
           "rationale": "invoke",
           "steps": [
             {
@@ -1363,7 +1401,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-to-an-observable\" id=\"ref-for-observable-subscribe-to-an-observable②①\">Subscribe</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑧\">this</a> given <var>observer</var> and <var>internal options</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-to-an-observable\" id=\"ref-for-observable-subscribe-to-an-observable②②\">Subscribe</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑨\">this</a> given <var>observer</var> and <var>internal options</var>.</p>"
         },
         {
           "html": "<p>Return <var>p</var>.</p>"
@@ -1380,17 +1418,17 @@
           "html": "<p>Let <var>p</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise③\">a new promise</a>.</p>"
         },
         {
-          "html": "<p>Let <var>controller</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①⑥\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortcontroller\" id=\"ref-for-abortcontroller⑨\">AbortController</a></code>.</p>"
+          "html": "<p>Let <var>controller</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①⑦\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortcontroller\" id=\"ref-for-abortcontroller⑨\">AbortController</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>internal options</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dictdef-subscribeoptions\" id=\"ref-for-dictdef-subscribeoptions②⑥\">SubscribeOptions</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④⑤\">signal</a></code> is the\n result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-dependent-abort-signal\" id=\"ref-for-create-a-dependent-abort-signal④\">creating a dependent abort signal</a> from the list «<var>controller</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal③⓪\">signal</a>, <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④⑥\">signal</a></code> if non-null», using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal⑥\">AbortSignal</a></code>, and the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm③\">current realm</a>.</p>"
+          "html": "<p>Let <var>internal options</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dictdef-subscribeoptions\" id=\"ref-for-dictdef-subscribeoptions②⑦\">SubscribeOptions</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④⑥\">signal</a></code> is the\n result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-dependent-abort-signal\" id=\"ref-for-create-a-dependent-abort-signal④\">creating a dependent abort signal</a> from the list «<var>controller</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal③①\">signal</a>, <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④⑦\">signal</a></code> if non-null», using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal⑥\">AbortSignal</a></code>, and the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm③\">current realm</a>.</p>"
         },
         {
-          "html": "If <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④⑦\">signal</a></code> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①①\">aborted</a>, then:",
+          "html": "If <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④⑧\">signal</a></code> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①①\">aborted</a>, then:",
           "rationale": "reject",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①②\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④⑧\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①①\">abort reason</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①②\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④⑨\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①①\">abort reason</a>.</p>"
             },
             {
               "html": "<p>Return <var>p</var>.</p>"
@@ -1398,16 +1436,16 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add⑧\">Add the following abort algorithm</a> to <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal④⑨\">signal</a></code>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add⑧\">Add the following abort algorithm</a> to <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤⓪\">signal</a></code>:",
           "rationale": "reject",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①③\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤⓪\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①②\">abort reason</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①③\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤①\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①②\">abort reason</a>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Let <var>internal observer</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer②①\">internal observer</a>, initialized as follows:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps②④\">next steps</a>\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps②①\">error steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①④\">Reject</a> <var>p</var> with the passed in <var>error</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps①⑨\">complete steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⑤\">Reject</a> <var>p</var> with a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror\">RangeError</a></code>.</p>\n        \n      </dd></dl>",
+          "html": "<p>Let <var>internal observer</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer②②\">internal observer</a>, initialized as follows:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps②⑤\">next steps</a>\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps②②\">error steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①④\">Reject</a> <var>p</var> with the passed in <var>error</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps②⓪\">complete steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⑤\">Reject</a> <var>p</var> with a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror\">RangeError</a></code>.</p>\n        \n      </dd></dl>",
           "rationale": "resolve",
           "steps": [
             {
@@ -1419,7 +1457,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-to-an-observable\" id=\"ref-for-observable-subscribe-to-an-observable②②\">Subscribe</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑨\">this</a> given <var>internal\n observer</var> and <var>internal options</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-to-an-observable\" id=\"ref-for-observable-subscribe-to-an-observable②③\">Subscribe</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⓪\">this</a> given <var>internal\n observer</var> and <var>internal options</var>.</p>"
         },
         {
           "html": "<p>Return <var>p</var>.</p>"
@@ -1436,15 +1474,15 @@
           "html": "<p>Let <var>p</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise④\">a new promise</a>.</p>"
         },
         {
-          "html": "If <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤①\">signal</a></code> is not null:",
+          "html": "If <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤②\">signal</a></code> is not null:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤②\">signal</a></code> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①②\">aborted</a>, then:",
+              "html": "If <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤③\">signal</a></code> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①②\">aborted</a>, then:",
               "rationale": "reject",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⑥\">Reject</a> <var>p</var> with <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤③\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①③\">abort reason</a>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⑥\">Reject</a> <var>p</var> with <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤④\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①③\">abort reason</a>.</p>"
                 },
                 {
                   "html": "<p>Return <var>p</var>.</p>"
@@ -1452,11 +1490,11 @@
               ]
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add⑨\">Add the following abort algorithm</a> to <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤④\">signal</a></code>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add⑨\">Add the following abort algorithm</a> to <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤⑤\">signal</a></code>:",
               "rationale": "reject",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⑦\">Reject</a> <var>p</var> with <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤⑤\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①④\">abort reason</a>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⑦\">Reject</a> <var>p</var> with <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤⑥\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①④\">abort reason</a>.</p>"
                 }
               ]
             }
@@ -1469,7 +1507,7 @@
           "html": "<p>Let <var>hasLastValue</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean⑥\">boolean</a>, initially false.</p>"
         },
         {
-          "html": "<p>Let <var>observer</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer②②\">internal observer</a>, initialized as follows:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps②⑤\">next steps</a>\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps②②\">error steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⑧\">Reject</a> <var>p</var> with the passed in <var>error</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps②⓪\">complete steps</a>\n       </dt><dd data-md=\"\">\n        \n      </dd></dl>",
+          "html": "<p>Let <var>observer</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer②③\">internal observer</a>, initialized as follows:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps②⑥\">next steps</a>\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps②③\">error steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⑧\">Reject</a> <var>p</var> with the passed in <var>error</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps②①\">complete steps</a>\n       </dt><dd data-md=\"\">\n        \n      </dd></dl>",
           "rationale": "set",
           "steps": [
             {
@@ -1498,7 +1536,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-to-an-observable\" id=\"ref-for-observable-subscribe-to-an-observable②③\">Subscribe</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⓪\">this</a> given <var>observer</var> and <var>options</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-to-an-observable\" id=\"ref-for-observable-subscribe-to-an-observable②④\">Subscribe</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④①\">this</a> given <var>observer</var> and <var>options</var>.</p>"
         },
         {
           "html": "<p>Return <var>p</var>.</p>"
@@ -1515,17 +1553,17 @@
           "html": "<p>Let <var>p</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑤\">a new promise</a>.</p>"
         },
         {
-          "html": "<p>Let <var>controller</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①⑦\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortcontroller\" id=\"ref-for-abortcontroller①⓪\">AbortController</a></code>.</p>"
+          "html": "<p>Let <var>controller</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①⑧\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortcontroller\" id=\"ref-for-abortcontroller①⓪\">AbortController</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>internal options</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dictdef-subscribeoptions\" id=\"ref-for-dictdef-subscribeoptions②⑦\">SubscribeOptions</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤⑥\">signal</a></code> is the\n result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-dependent-abort-signal\" id=\"ref-for-create-a-dependent-abort-signal⑤\">creating a dependent abort signal</a> from the list «<var>controller</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal③①\">signal</a>, <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤⑦\">signal</a></code> if non-null», using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal⑦\">AbortSignal</a></code>, and the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm④\">current realm</a>.</p>"
+          "html": "<p>Let <var>internal options</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dictdef-subscribeoptions\" id=\"ref-for-dictdef-subscribeoptions②⑧\">SubscribeOptions</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤⑦\">signal</a></code> is the\n result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-dependent-abort-signal\" id=\"ref-for-create-a-dependent-abort-signal⑤\">creating a dependent abort signal</a> from the list «<var>controller</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal③②\">signal</a>, <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤⑧\">signal</a></code> if non-null», using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal⑦\">AbortSignal</a></code>, and the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm④\">current realm</a>.</p>"
         },
         {
-          "html": "If <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤⑧\">signal</a></code> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①③\">aborted</a>, then:",
+          "html": "If <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤⑨\">signal</a></code> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①③\">aborted</a>, then:",
           "rationale": "reject",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⓪\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑤⑨\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⑤\">abort reason</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⓪\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥⓪\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⑤\">abort reason</a>.</p>"
             },
             {
               "html": "<p>Return <var>p</var>.</p>"
@@ -1533,11 +1571,11 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add①⓪\">Add the following abort algorithm</a> to <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥⓪\">signal</a></code>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add①⓪\">Add the following abort algorithm</a> to <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥①\">signal</a></code>:",
           "rationale": "reject",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②①\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥①\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⑥\">abort reason</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②①\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥②\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⑥\">abort reason</a>.</p>"
             }
           ]
         },
@@ -1545,7 +1583,7 @@
           "html": "<p>Let <var>idx</var> be an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long-long\" id=\"ref-for-idl-unsigned-long-long①④\">unsigned long long</a></code>, initially 0.</p>"
         },
         {
-          "html": "<p>Let <var>observer</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer②③\">internal observer</a>, initialized as follows:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps②⑥\">next steps</a>\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps②③\">error steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②③\">Reject</a> <var>p</var> with the passed in <var>error</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps②①\">complete steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑦\">Resolve</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\" id=\"ref-for-idl-undefined①①\">undefined</a></code>.</p>\n      </dd></dl>",
+          "html": "<p>Let <var>observer</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer②④\">internal observer</a>, initialized as follows:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps②⑦\">next steps</a>\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps②④\">error steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②③\">Reject</a> <var>p</var> with the passed in <var>error</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps②②\">complete steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑦\">Resolve</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\" id=\"ref-for-idl-undefined①①\">undefined</a></code>.</p>\n      </dd></dl>",
           "rationale": "invoke",
           "steps": [
             {
@@ -1560,7 +1598,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-to-an-observable\" id=\"ref-for-observable-subscribe-to-an-observable②④\">Subscribe</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④①\">this</a> given <var>observer</var> and <var>internal options</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-to-an-observable\" id=\"ref-for-observable-subscribe-to-an-observable②⑤\">Subscribe</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④②\">this</a> given <var>observer</var> and <var>internal options</var>.</p>"
         },
         {
           "html": "<p>Return <var>p</var>.</p>"
@@ -1577,17 +1615,17 @@
           "html": "<p>Let <var>p</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑥\">a new promise</a>.</p>"
         },
         {
-          "html": "<p>Let <var>controller</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①⑧\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortcontroller\" id=\"ref-for-abortcontroller①①\">AbortController</a></code>.</p>"
+          "html": "<p>Let <var>controller</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①⑨\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortcontroller\" id=\"ref-for-abortcontroller①①\">AbortController</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>internal options</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dictdef-subscribeoptions\" id=\"ref-for-dictdef-subscribeoptions②⑧\">SubscribeOptions</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥②\">signal</a></code> is the\n result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-dependent-abort-signal\" id=\"ref-for-create-a-dependent-abort-signal⑥\">creating a dependent abort signal</a> from the list «<var>controller</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal③②\">signal</a>, <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥③\">signal</a></code> if non-null», using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal⑧\">AbortSignal</a></code>, and the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm⑤\">current realm</a>.</p>"
+          "html": "<p>Let <var>internal options</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dictdef-subscribeoptions\" id=\"ref-for-dictdef-subscribeoptions②⑨\">SubscribeOptions</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥③\">signal</a></code> is the\n result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-dependent-abort-signal\" id=\"ref-for-create-a-dependent-abort-signal⑥\">creating a dependent abort signal</a> from the list «<var>controller</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal③③\">signal</a>, <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥④\">signal</a></code> if non-null», using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal⑧\">AbortSignal</a></code>, and the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm⑤\">current realm</a>.</p>"
         },
         {
-          "html": "If <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥④\">signal</a></code> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①④\">aborted</a>, then:",
+          "html": "If <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥⑤\">signal</a></code> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①④\">aborted</a>, then:",
           "rationale": "reject",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②④\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥⑤\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⑦\">abort reason</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②④\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥⑥\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⑦\">abort reason</a>.</p>"
             },
             {
               "html": "<p>Return <var>p</var>.</p>"
@@ -1595,11 +1633,11 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add①①\">Add the following abort algorithm</a> to <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥⑥\">signal</a></code>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add①①\">Add the following abort algorithm</a> to <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥⑦\">signal</a></code>:",
           "rationale": "reject",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⑤\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥⑦\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⑧\">abort reason</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⑤\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥⑧\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⑧\">abort reason</a>.</p>"
             }
           ]
         },
@@ -1607,7 +1645,7 @@
           "html": "<p>Let <var>idx</var> be an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long-long\" id=\"ref-for-idl-unsigned-long-long①⑤\">unsigned long long</a></code>, initially 0.</p>"
         },
         {
-          "html": "<p>Let <var>observer</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer②④\">internal observer</a>, initialized as follows:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps②⑦\">next steps</a>\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps②④\">error steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⑦\">Reject</a> <var>p</var> with the passed in <var>error</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps②②\">complete steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑨\">Resolve</a> <var>p</var> with false.</p>\n      </dd></dl>",
+          "html": "<p>Let <var>observer</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer②⑤\">internal observer</a>, initialized as follows:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps②⑧\">next steps</a>\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps②⑤\">error steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⑦\">Reject</a> <var>p</var> with the passed in <var>error</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps②③\">complete steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑨\">Resolve</a> <var>p</var> with false.</p>\n      </dd></dl>",
           "rationale": "invoke",
           "steps": [
             {
@@ -1622,7 +1660,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-to-an-observable\" id=\"ref-for-observable-subscribe-to-an-observable②⑤\">Subscribe</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④②\">this</a> given <var>observer</var> and <var>internal options</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-to-an-observable\" id=\"ref-for-observable-subscribe-to-an-observable②⑥\">Subscribe</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④③\">this</a> given <var>observer</var> and <var>internal options</var>.</p>"
         },
         {
           "html": "<p>Return <var>p</var>.</p>"
@@ -1639,17 +1677,17 @@
           "html": "<p>Let <var>p</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑦\">a new promise</a>.</p>"
         },
         {
-          "html": "<p>Let <var>controller</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①⑨\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortcontroller\" id=\"ref-for-abortcontroller①②\">AbortController</a></code>.</p>"
+          "html": "<p>Let <var>controller</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new②⓪\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortcontroller\" id=\"ref-for-abortcontroller①②\">AbortController</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>internal options</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dictdef-subscribeoptions\" id=\"ref-for-dictdef-subscribeoptions②⑨\">SubscribeOptions</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥⑧\">signal</a></code> is the\n result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-dependent-abort-signal\" id=\"ref-for-create-a-dependent-abort-signal⑦\">creating a dependent abort signal</a> from the list «<var>controller</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal③③\">signal</a>, <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥⑨\">signal</a></code> if non-null», using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal⑨\">AbortSignal</a></code>, and the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm⑥\">current realm</a>.</p>"
+          "html": "<p>Let <var>internal options</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dictdef-subscribeoptions\" id=\"ref-for-dictdef-subscribeoptions③⓪\">SubscribeOptions</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑥⑨\">signal</a></code> is the\n result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-dependent-abort-signal\" id=\"ref-for-create-a-dependent-abort-signal⑦\">creating a dependent abort signal</a> from the list «<var>controller</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal③④\">signal</a>, <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑦⓪\">signal</a></code> if non-null», using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal⑨\">AbortSignal</a></code>, and the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm⑥\">current realm</a>.</p>"
         },
         {
-          "html": "If <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑦⓪\">signal</a></code> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①⑤\">aborted</a>, then:",
+          "html": "If <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑦①\">signal</a></code> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①⑤\">aborted</a>, then:",
           "rationale": "reject",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⑧\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑦①\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⑨\">abort reason</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⑧\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑦②\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⑨\">abort reason</a>.</p>"
             },
             {
               "html": "<p>Return <var>p</var>.</p>"
@@ -1657,11 +1695,11 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add①②\">Add the following abort algorithm</a> to <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑦②\">signal</a></code>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add①②\">Add the following abort algorithm</a> to <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑦③\">signal</a></code>:",
           "rationale": "reject",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⑨\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑦③\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason②⓪\">abort reason</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⑨\">Reject</a> <var>p</var> with <var>internal options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal⑦④\">signal</a></code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason②⓪\">abort reason</a>.</p>"
             }
           ]
         },
@@ -1672,7 +1710,7 @@
           "html": "<p>Let <var>accumulator</var> be <var>initialValue</var> if it is given, and uninitialized otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>observer</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer②⑤\">internal observer</a>, initialized as follows:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps②⑧\">next steps</a>\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps②⑤\">error steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③①\">Reject</a> <var>p</var> with the passed in <var>error</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps②③\">complete steps</a>\n       </dt><dd data-md=\"\">\n        \n      </dd></dl>",
+          "html": "<p>Let <var>observer</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer②⑥\">internal observer</a>, initialized as follows:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps②⑨\">next steps</a>\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps②⑥\">error steps</a>\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③①\">Reject</a> <var>p</var> with the passed in <var>error</var>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps②④\">complete steps</a>\n       </dt><dd data-md=\"\">\n        \n      </dd></dl>",
           "rationale": "if",
           "steps": [
             {
@@ -1701,7 +1739,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-to-an-observable\" id=\"ref-for-observable-subscribe-to-an-observable②⑥\">Subscribe</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④④\">this</a> given <var>observer</var> and <var>internal options</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-subscribe-to-an-observable\" id=\"ref-for-observable-subscribe-to-an-observable②⑦\">Subscribe</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑤\">this</a> given <var>observer</var> and <var>internal options</var>.</p>"
         },
         {
           "html": "<p>Return <var>p</var>.</p>"
@@ -1715,23 +1753,23 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑥\">Window</a></code> object, and its <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window⑥\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active⑥\">fully active</a>, then return.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑥\">Window</a></code> object, and its <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window⑥\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active⑥\">fully active</a>, then return.</p>"
         },
         {
-          "html": "<p>Let <var>event target</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑥\">this</a>.</p>"
+          "html": "<p>Let <var>event target</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑦\">this</a>.</p>"
         },
         {
-          "html": "An algorithm that takes a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#subscriber\" id=\"ref-for-subscriber②⑥\">Subscriber</a></code> <var>subscriber</var> and runs these steps:",
+          "html": "An algorithm that takes a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#subscriber\" id=\"ref-for-subscriber②⑦\">Subscriber</a></code> <var>subscriber</var> and runs these steps:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If <var>event target</var> is null, abort these steps.</p>"
             },
             {
-              "html": "<p>If <var>subscriber</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#subscriber-subscription-controller\" id=\"ref-for-subscriber-subscription-controller②⑨\">subscription controller</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal③④\">signal</a> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①⑥\">aborted</a>, abort these steps.</p>"
+              "html": "<p>If <var>subscriber</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#subscriber-subscription-controller\" id=\"ref-for-subscriber-subscription-controller③⓪\">subscription controller</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal③⑤\">signal</a> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①⑥\">aborted</a>, abort these steps.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#add-an-event-listener\" id=\"ref-for-add-an-event-listener\">Add an event listener</a> with <var>event target</var> and an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-listener\" id=\"ref-for-concept-event-listener\">event listener</a> defined as\n follows:</p>\n          <dl>\n           <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#event-listener-type\" id=\"ref-for-event-listener-type\">type</a>\n           </dt><dd data-md=\"\">\n            <p><var>type</var></p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-callback\" id=\"ref-for-event-listener-callback\">callback</a>\n           </dt><dd data-md=\"\">\n            <p>The result of creating a new Web IDL <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#callbackdef-eventlistener\" id=\"ref-for-callbackdef-eventlistener\">EventListener</a></code> instance representing a\n  reference to a function of one argument of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event\">Event</a></code> <var>event</var>. This function\n  executes the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-event-listener-invoke-algorithm\" id=\"ref-for-observable-event-listener-invoke-algorithm\">observable event listener invoke algorithm</a> given <var>subscriber</var> and <var>event</var>.</p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#event-listener-capture\" id=\"ref-for-event-listener-capture\">capture</a>\n           </dt><dd data-md=\"\">\n            <p><var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-observableeventlisteneroptions-capture\" id=\"ref-for-dom-observableeventlisteneroptions-capture\">capture</a></code></p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#event-listener-passive\" id=\"ref-for-event-listener-passive\">passive</a>\n           </dt><dd data-md=\"\">\n            <p><var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-observableeventlisteneroptions-passive\" id=\"ref-for-dom-observableeventlisteneroptions-passive\">passive</a></code></p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#event-listener-once\" id=\"ref-for-event-listener-once\">once</a>\n           </dt><dd data-md=\"\">\n            <p>false</p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#event-listener-signal\" id=\"ref-for-event-listener-signal\">signal</a>\n           </dt><dd data-md=\"\">\n            <p><var>subscriber</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#subscriber-subscription-controller\" id=\"ref-for-subscriber-subscription-controller③⓪\">subscription controller</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal③⑤\">signal</a></p>\n            \n          </dd></dl>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#add-an-event-listener\" id=\"ref-for-add-an-event-listener\">Add an event listener</a> with <var>event target</var> and an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-listener\" id=\"ref-for-concept-event-listener\">event listener</a> defined as\n follows:</p>\n          <dl>\n           <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#event-listener-type\" id=\"ref-for-event-listener-type\">type</a>\n           </dt><dd data-md=\"\">\n            <p><var>type</var></p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-callback\" id=\"ref-for-event-listener-callback\">callback</a>\n           </dt><dd data-md=\"\">\n            <p>The result of creating a new Web IDL <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#callbackdef-eventlistener\" id=\"ref-for-callbackdef-eventlistener\">EventListener</a></code> instance representing a\n  reference to a function of one argument of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event\">Event</a></code> <var>event</var>. This function\n  executes the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#observable-event-listener-invoke-algorithm\" id=\"ref-for-observable-event-listener-invoke-algorithm\">observable event listener invoke algorithm</a> given <var>subscriber</var> and <var>event</var>.</p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#event-listener-capture\" id=\"ref-for-event-listener-capture\">capture</a>\n           </dt><dd data-md=\"\">\n            <p><var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-observableeventlisteneroptions-capture\" id=\"ref-for-dom-observableeventlisteneroptions-capture\">capture</a></code></p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#event-listener-passive\" id=\"ref-for-event-listener-passive\">passive</a>\n           </dt><dd data-md=\"\">\n            <p><var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-observableeventlisteneroptions-passive\" id=\"ref-for-dom-observableeventlisteneroptions-passive\">passive</a></code></p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#event-listener-once\" id=\"ref-for-event-listener-once\">once</a>\n           </dt><dd data-md=\"\">\n            <p>false</p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#event-listener-signal\" id=\"ref-for-event-listener-signal\">signal</a>\n           </dt><dd data-md=\"\">\n            <p><var>subscriber</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#subscriber-subscription-controller\" id=\"ref-for-subscriber-subscription-controller③①\">subscription controller</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal③⑥\">signal</a></p>\n            \n          </dd></dl>"
             }
           ]
         },
@@ -1743,11 +1781,11 @@
     {
       "name": "observable event listener invoke algorithm",
       "href": "https://wicg.github.io/observable/#observable-event-listener-invoke-algorithm",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"observable-event-listener-invoke-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">observable event listener invoke algorithm</dfn> takes a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#subscriber\" id=\"ref-for-subscriber②⑦\">Subscriber</a></code> <var>subscriber</var> and\n  an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event①\">Event</a></code> <var>event</var>, and runs these steps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"observable-event-listener-invoke-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">observable event listener invoke algorithm</dfn> takes a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#subscriber\" id=\"ref-for-subscriber②⑧\">Subscriber</a></code> <var>subscriber</var> and\n  an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event①\">Event</a></code> <var>event</var>, and runs these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-next\" id=\"ref-for-dom-subscriber-next①⑤\">next()</a></code> method with <var>event</var>.</p>"
+          "html": "<p>Run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-next\" id=\"ref-for-dom-subscriber-next①⑥\">next()</a></code> method with <var>event</var>.</p>"
         }
       ]
     }
