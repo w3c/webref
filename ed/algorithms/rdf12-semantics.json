@@ -1,0 +1,25 @@
+{
+  "spec": {
+    "title": "RDF 1.2 Semantics",
+    "url": "https://w3c.github.io/rdf-semantics/spec/"
+  },
+  "algorithms": [
+    {
+      "name": "substitution mapping",
+      "href": "https://w3c.github.io/rdf-semantics/spec/#dfn-substitution-mapping",
+      "html": "For RDF terms t, x, and y, we define the <dfn id=\"dfn-substitution-mapping\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">substitution mapping</dfn> t[x/y] inductively, as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If t = x, then t[x/y] = y."
+        },
+        {
+          "html": "Otherwise, if t = (s, p, o), then t[x/y] = (s[x/y], p[x/y], o[x/y])."
+        },
+        {
+          "html": "Otherwise, t[x/y] = t."
+        }
+      ]
+    }
+  ]
+}

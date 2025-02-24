@@ -270,7 +270,7 @@
     {
       "name": "column-rule",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule",
-      "value": "<rule-list> | <auto-rule-list>",
+      "value": "<gap-rule-list> | <gap-auto-rule-list>",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -286,7 +286,7 @@
     {
       "name": "row-rule",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule",
-      "value": "<rule-list> | <auto-rule-list>",
+      "value": "<gap-rule-list> | <gap-auto-rule-list>",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -505,38 +505,38 @@
       ]
     },
     {
-      "name": "<rule-list>",
-      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-rule-list",
+      "name": "<gap-rule-list>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-rule-list",
       "type": "type",
-      "value": "<rule-or-repeat> [ / <rule-or-repeat> ]*"
+      "value": "<gap-rule-or-repeat> [ / <gap-rule-or-repeat> ]*"
     },
     {
-      "name": "<auto-rule-list>",
-      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-rule-list",
+      "name": "<gap-auto-rule-list>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-auto-rule-list",
       "type": "type",
-      "value": "[ [ <rule-or-repeat> ] / ]* <auto-repeat-rule> [ / [ <rule-or-repeat> ] ]*"
+      "value": "[ [ <gap-rule-or-repeat> ] / ]* <gap-auto-repeat-rule> [ / [ <gap-rule-or-repeat> ] ]*"
     },
     {
-      "name": "<rule-or-repeat>",
-      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-rule-or-repeat",
+      "name": "<gap-rule-or-repeat>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-rule-or-repeat",
       "type": "type",
-      "value": "[ <rule> | <repeat-rule> ]"
+      "value": "[ <gap-rule> | <gap-repeat-rule> ]"
     },
     {
-      "name": "<repeat-rule>",
-      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-repeat-rule",
+      "name": "<gap-repeat-rule>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-repeat-rule",
       "type": "type",
-      "value": "repeat( [ <integer [1,∞]> ] , [ <rule> ]# )"
+      "value": "repeat( [ <integer [1,∞]> ] , [ <gap-rule> ]# )"
     },
     {
-      "name": "<auto-repeat-rule>",
-      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-repeat-rule",
+      "name": "<gap-auto-repeat-rule>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-auto-repeat-rule",
       "type": "type",
-      "value": "repeat( auto , [ <rule> ]# )"
+      "value": "repeat( auto , [ <gap-rule> ]# )"
     },
     {
-      "name": "<rule>",
-      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-rule",
+      "name": "<gap-rule>",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-rule",
       "type": "type",
       "value": "[ <line-width> || <line-style> || <color> ]"
     }
