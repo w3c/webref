@@ -52,7 +52,9 @@ bluetooth.simulateAdapter = (
 
 bluetooth.SimulateAdapterParameters = {
    context: text,
-   state: "absent" / "powered-off" / "powered-on"
+   type: "create" / "update" / "remove",
+   ? leSupported: bool,
+   ? state: "absent" / "powered-off" / "powered-on"
 }
 
 bluetooth.SimulatePreconnectedPeripheral = (

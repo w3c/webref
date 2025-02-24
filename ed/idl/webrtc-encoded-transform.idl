@@ -75,6 +75,7 @@ dictionary RTCEncodedVideoFrameMetadata {
     sequence<unsigned long> contributingSources;
     long long timestamp;    // microseconds
     unsigned long rtpTimestamp;
+    DOMHighResTimeStamp receiveTime;
     DOMString mimeType;
 };
 
@@ -98,6 +99,7 @@ dictionary RTCEncodedAudioFrameMetadata {
     sequence<unsigned long> contributingSources;
     short sequenceNumber;
     unsigned long rtpTimestamp;
+    DOMHighResTimeStamp receiveTime;
     DOMString mimeType;
 };
 

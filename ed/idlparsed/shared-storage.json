@@ -881,11 +881,53 @@
         "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstoragesetmethodoptions"
       },
       "SharedStorage": {
-        "fragment": "[Exposed=(Window,SharedStorageWorklet)]\ninterface SharedStorage {\n  Promise<any> set(DOMString key,\n                   DOMString value,\n                   optional SharedStorageSetMethodOptions options = {});\n  Promise<any> append(DOMString key,\n                      DOMString value,\n                      optional SharedStorageModifierMethodOptions options = {});\n  Promise<any> delete(DOMString key, optional SharedStorageModifierMethodOptions options = {});\n  Promise<any> clear(optional SharedStorageModifierMethodOptions options = {});\n  Promise<any> batchUpdate(sequence<SharedStorageModifierMethod> methods,\n                           optional SharedStorageModifierMethodOptions options = {});\n\n  [Exposed=Window]\n  Promise<SharedStorageResponse> selectURL(DOMString name,\n                               sequence<SharedStorageUrlWithMetadata> urls,\n                               optional SharedStorageRunOperationMethodOptions options = {});\n\n  [Exposed=Window]\n  Promise<any> run(DOMString name,\n                   optional SharedStorageRunOperationMethodOptions options = {});\n\n  [Exposed=Window]\n  Promise<SharedStorageWorklet> createWorklet(USVString moduleURL, optional SharedStorageWorkletOptions options = {});\n\n  [Exposed=Window]\n  readonly attribute SharedStorageWorklet worklet;\n\n  [Exposed=SharedStorageWorklet]\n  Promise<DOMString> get(DOMString key);\n\n  [Exposed=SharedStorageWorklet]\n  Promise<unsigned long> length();\n\n  [Exposed=SharedStorageWorklet]\n  Promise<double> remainingBudget();\n\n  [Exposed=SharedStorageWorklet]\n  async iterable<DOMString, DOMString>;\n};",
+        "fragment": "[Exposed=(Window,SharedStorageWorklet)]\ninterface SharedStorage {\n  Promise<DOMString> get(DOMString key);\n  Promise<any> set(DOMString key,\n                   DOMString value,\n                   optional SharedStorageSetMethodOptions options = {});\n  Promise<any> append(DOMString key,\n                      DOMString value,\n                      optional SharedStorageModifierMethodOptions options = {});\n  Promise<any> delete(DOMString key, optional SharedStorageModifierMethodOptions options = {});\n  Promise<any> clear(optional SharedStorageModifierMethodOptions options = {});\n  Promise<any> batchUpdate(sequence<SharedStorageModifierMethod> methods,\n                           optional SharedStorageModifierMethodOptions options = {});\n\n  [Exposed=Window]\n  Promise<SharedStorageResponse> selectURL(DOMString name,\n                               sequence<SharedStorageUrlWithMetadata> urls,\n                               optional SharedStorageRunOperationMethodOptions options = {});\n\n  [Exposed=Window]\n  Promise<any> run(DOMString name,\n                   optional SharedStorageRunOperationMethodOptions options = {});\n\n  [Exposed=Window]\n  Promise<SharedStorageWorklet> createWorklet(USVString moduleURL, optional SharedStorageWorkletOptions options = {});\n\n  [Exposed=Window]\n  readonly attribute SharedStorageWorklet worklet;\n\n  [Exposed=SharedStorageWorklet]\n  Promise<unsigned long> length();\n\n  [Exposed=SharedStorageWorklet]\n  Promise<double> remainingBudget();\n\n  [Exposed=SharedStorageWorklet]\n  async iterable<DOMString, DOMString>;\n};",
         "type": "interface",
         "name": "SharedStorage",
         "inheritance": null,
         "members": [
+          {
+            "type": "operation",
+            "name": "get",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "key",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-get"
+          },
           {
             "type": "operation",
             "name": "set",
@@ -1471,58 +1513,6 @@
             "special": "",
             "readonly": true,
             "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-worklet"
-          },
-          {
-            "type": "operation",
-            "name": "get",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                }
-              ]
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "key",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "Exposed",
-                "rhs": {
-                  "type": "identifier",
-                  "value": "SharedStorageWorklet"
-                },
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-get"
           },
           {
             "type": "operation",

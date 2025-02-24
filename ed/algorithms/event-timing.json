@@ -116,7 +116,7 @@
           "html": "<p>Let <var>type</var> be <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-type\" id=\"ref-for-dom-event-type⑦\">type</a></code> attribute value.</p>"
         },
         {
-          "html": "<p>If <var>type</var> is not one among <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-keyup\" id=\"ref-for-event-type-keyup②\">keyup</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-compositionstart\" id=\"ref-for-event-type-compositionstart①\">compositionstart</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-input\" id=\"ref-for-event-type-input①\">input</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointercancel-event\" id=\"ref-for-the-pointercancel-event①\">pointercancel</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointermove-event\" id=\"ref-for-the-pointermove-event①\">pointermove</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerup-event\" id=\"ref-for-the-pointerup-event③\">pointerup</a></code>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-click\" id=\"ref-for-event-type-click③\">click</a></code>, return 0.</p>"
+          "html": "<p>If <var>type</var> is not one among <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-keyup\" id=\"ref-for-event-type-keyup②\">keyup</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-compositionstart\" id=\"ref-for-event-type-compositionstart①\">compositionstart</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-input\" id=\"ref-for-event-type-input①\">input</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointercancel-event\" id=\"ref-for-the-pointercancel-event①\">pointercancel</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerup-event\" id=\"ref-for-the-pointerup-event③\">pointerup</a></code>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-click\" id=\"ref-for-event-type-click③\">click</a></code>, return 0.</p>"
         },
         {
           "html": "<p>Let <var>window</var> be <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a>.</p>"
@@ -126,9 +126,6 @@
         },
         {
           "html": "<p>Let <var>pointerMap</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#pointer-interaction-value-map\" id=\"ref-for-pointer-interaction-value-map\">pointer interaction value map</a>.</p>"
-        },
-        {
-          "html": "<p>Let <var>pointerIsDragSet</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#pointer-is-drag-set\" id=\"ref-for-pointer-is-drag-set\">pointer is drag set</a>.</p>"
         },
         {
           "html": "<p>Let <var>pendingPointerDowns</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#pending-pointer-downs\" id=\"ref-for-pending-pointer-downs\">pending pointer downs</a>.</p>"
@@ -209,7 +206,7 @@
           ]
         },
         {
-          "html": "Otherwise (<var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointercancel-event\" id=\"ref-for-the-pointercancel-event②\">pointercancel</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointermove-event\" id=\"ref-for-the-pointermove-event②\">pointermove</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerup-event\" id=\"ref-for-the-pointerup-event④\">pointerup</a></code>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-click\" id=\"ref-for-event-type-click④\">click</a></code>):",
+          "html": "Otherwise (<var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointercancel-event\" id=\"ref-for-the-pointercancel-event②\">pointercancel</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerup-event\" id=\"ref-for-the-pointerup-event④\">pointerup</a></code>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-click\" id=\"ref-for-event-type-click④\">click</a></code>):",
           "rationale": "let",
           "steps": [
             {
@@ -229,22 +226,7 @@
                   "html": "<p>Remove <var>pointerMap</var>[<var>pointerId</var>].</p>"
                 },
                 {
-                  "html": "<p>Remove [<var>pointerId</var>] from <var>pointerIsDragSet</var>.</p>"
-                },
-                {
                   "html": "<p>Return <var>value</var>.</p>"
-                }
-              ]
-            },
-            {
-              "html": "If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointermove-event\" id=\"ref-for-the-pointermove-event③\">pointermove</a></code>:",
-              "rationale": "add",
-              "steps": [
-                {
-                  "html": "<p>Add <var>pointerId</var> to <var>pointerIsDragSet</var>.</p>"
-                },
-                {
-                  "html": "<p>Return 0.</p>"
                 }
               ]
             },
@@ -262,14 +244,8 @@
             },
             {
               "html": "If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerup-event\" id=\"ref-for-the-pointerup-event⑥\">pointerup</a></code>:",
-              "rationale": "let",
+              "rationale": "increase",
               "steps": [
-                {
-                  "html": "<p>Let <var>interactionType</var> be <code class=\"highlight\"><c- u=\"\">\"tap\"</c-></code>.</p>"
-                },
-                {
-                  "html": "<p>If <var>pointerIsDragSet</var> contains [<var>pointerId</var>] exists, set <var>interactionType</var> to <code class=\"highlight\"><c- u=\"\">\"drag\"</c-></code>.</p>"
-                },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#increase-interaction-count\" id=\"ref-for-increase-interaction-count②\">Increase interaction count</a> on <var>window</var>.</p>"
                 },

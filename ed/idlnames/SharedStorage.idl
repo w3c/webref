@@ -1,6 +1,7 @@
 // Source: Shared Storage API (https://wicg.github.io/shared-storage/)
 [Exposed=(Window,SharedStorageWorklet)]
 interface SharedStorage {
+  Promise<DOMString> get(DOMString key);
   Promise<any> set(DOMString key,
                    DOMString value,
                    optional SharedStorageSetMethodOptions options = {});
@@ -26,9 +27,6 @@ interface SharedStorage {
 
   [Exposed=Window]
   readonly attribute SharedStorageWorklet worklet;
-
-  [Exposed=SharedStorageWorklet]
-  Promise<DOMString> get(DOMString key);
 
   [Exposed=SharedStorageWorklet]
   Promise<unsigned long> length();
