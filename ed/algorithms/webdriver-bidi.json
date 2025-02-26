@@ -1725,7 +1725,7 @@
           "html": "<p>If there is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#client-window\" id=\"ref-for-client-window①④\">client window</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#client-window-id\" id=\"ref-for-client-window-id②\">client window id</a> <var>command\n parameters</var>[\"<code>clientWindow</code>\"], let <var>client window</var> be that <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#client-window\" id=\"ref-for-client-window①⑤\">client window</a>. Otherwise return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors②①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⓪\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#errors-no-such-client-window\" id=\"ref-for-errors-no-such-client-window①\">no such client window</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑦\">Try</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#set-the-client-window-state\" id=\"ref-for-set-the-client-window-state\">set the client window state</a> with <var>client window</var> and <var>command\n parameters</var>[\"<code>state</code>\"].</p>"
+          "html": "<p><a data-link-type=\"dfn\" data-refhint-key=\"f5554d6d\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑦\">Try</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#set-the-client-window-state\" id=\"ref-for-set-the-client-window-state\">set the client window state</a> with <var>client window</var> and <var>command\n parameters</var>[\"<code>state</code>\"].</p>"
         },
         {
           "html": "If <var>command parameters</var>[\"<code>state</code>\"] is \"<code>normal</code>\":",
@@ -1966,7 +1966,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Run implementation-specific steps so that <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#system-visibility-state\" id=\"ref-for-system-visibility-state\">system visibility state</a> becomes <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#system-visibility-state\" id=\"ref-for-system-visibility-state①\">visible</a>. If this is not possible return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors②⑥\">error</a> with error code <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation⑤\">unsupported operation</a>.</p>"
+          "html": "<p>Run implementation-specific steps so that <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#system-visibility-state\" id=\"ref-for-system-visibility-state\">system visibility state</a> becomes <a data-link-type=\"dfn\" data-refhint-key=\"e08512b4\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#system-visibility-state\" id=\"ref-for-system-visibility-state①\">visible</a>. If this is not possible return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors②⑥\">error</a> with error code <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation⑤\">unsupported operation</a>.</p>"
         },
         {
           "html": "<p>Run implementation-specific steps to set the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#system-focus\" id=\"ref-for-system-focus①\">system focus</a> on the <var>navigable</var> if it is not focused.</p>"
@@ -2092,7 +2092,7 @@
           "html": "<p>Complete implementation specific steps equivalent to drawing the region of\n the framebuffer representing the region of <var>document</var> covered by <var>rect</var> to <var>canvas context</var>, such that each pixel in the framebuffer corresponds to a pixel in <var>canvas context</var> with (<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate⑦\">x coordinate</a>, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate⑦\">y coordinate</a>) in\n viewport coordinates corresponding to (0,0) in <var>canvas context</var> and (<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate⑧\">x coordinate</a> + <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension⑦\">width dimension</a>, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate⑧\">y coordinate</a> + <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension⑦\">height dimension</a>) corresponding to (<var>paint\n width</var>, <var>paint height</var>).</p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS21/intro.html#canvas\" id=\"ref-for-canvas\">canvas</a>.</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://svgwg.org/svg2-draft/coords.html#TermCanvas\" id=\"ref-for-TermCanvas\">canvas</a>.</p>"
         }
       ]
     },
@@ -2725,7 +2725,7 @@
               ]
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try①⑨\">Try</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#collect-nodes-using-accessibility-attributes\" id=\"ref-for-collect-nodes-using-accessibility-attributes\">collect nodes using accessibility attributes</a> with <var>child nodes</var>, <var>selector</var>, <var>maximum returned node count</var>, and <var>returned nodes</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" data-refhint-key=\"f5554d6d\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try①⑨\">Try</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#collect-nodes-using-accessibility-attributes\" id=\"ref-for-collect-nodes-using-accessibility-attributes\">collect nodes using accessibility attributes</a> with <var>child nodes</var>, <var>selector</var>, <var>maximum returned node count</var>, and <var>returned nodes</var>.</p>"
             }
           ]
         },
@@ -6052,7 +6052,7 @@
     {
       "name": "get exception details",
       "href": "https://w3c.github.io/webdriver-bidi/#get-exception-details",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-exception-details\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get exception details</dfn> given a <var>realm</var>, a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type②\">completion record</a> <var>record</var>, an <var>ownership type</var> and a <var>session</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-exception-details\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get exception details</dfn> given a <var>realm</var>, a <a data-link-type=\"dfn\" data-refhint-key=\"c8a04a12\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type②\">completion record</a> <var>record</var>, an <var>ownership type</var> and a <var>session</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -6794,7 +6794,7 @@
                   "html": "<p>Set <var>serialized</var> to <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-call\" id=\"ref-for-sec-call①\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-date.prototype.toisostring\" id=\"ref-for-sec-date.prototype.toisostring\">Date.prototype.toISOString</a>, <var>value</var>).</p>"
                 },
                 {
-                  "html": "<p class=\"assertion\">Assert: <var>serialized</var> is not a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type④\">throw completion</a>.</p>"
+                  "html": "<p class=\"assertion\">Assert: <var>serialized</var> is not a <a data-link-type=\"dfn\" data-refhint-key=\"e0e5fa1c\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type④\">throw completion</a>.</p>"
                 },
                 {
                   "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧⓪\">map</a> matching the <code>script.DateRemoteValue</code> production in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#local-end-definition\" id=\"ref-for-local-end-definition⑤③\">local end definition</a>, with the <code>handle</code> property set to <var>handle id</var> if it’s not null, or omitted otherwise, and the\n value set to <var>serialized</var>.</p>"
@@ -7188,11 +7188,11 @@
     {
       "name": "stack trace for an exception",
       "href": "https://w3c.github.io/webdriver-bidi/#stack-trace-for-an-exception",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"stack-trace-for-an-exception\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">stack trace for an exception</dfn> with an exception, or a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type⑤\">Completion Record</a> of type <code>throw</code>, <var>exception</var>, is given by:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"stack-trace-for-an-exception\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">stack trace for an exception</dfn> with an exception, or a <a data-link-type=\"dfn\" data-refhint-key=\"c8a04a12\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type⑤\">Completion Record</a> of type <code>throw</code>, <var>exception</var>, is given by:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>exception</var> is a value that has been thrown as an exception, let <var>record</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type⑥\">Completion Record</a> created to throw <var>exception</var>. Otherwise let <var>record</var> be <var>exception</var>.</p>"
+          "html": "<p>If <var>exception</var> is a value that has been thrown as an exception, let <var>record</var> be the <a data-link-type=\"dfn\" data-refhint-key=\"c8a04a12\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type⑥\">Completion Record</a> created to throw <var>exception</var>. Otherwise let <var>record</var> be <var>exception</var>.</p>"
         },
         {
           "html": "<p>Let <var>stack</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#list-of-stack-frames\" id=\"ref-for-list-of-stack-frames①\">list of stack frames</a> corresponding to execution at the\n point <var>record</var> was created.</p>"
@@ -8554,7 +8554,7 @@
           "html": "<p>Let <var>actions by tick</var> be the result of trying to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-extract-an-action-sequence\" id=\"ref-for-dfn-extract-an-action-sequence\">extract an action sequence</a> with <var>input state</var>, <var>command parameters</var>, and <var>actions options</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑦①\">Try</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-dispatch-actions\" id=\"ref-for-dfn-dispatch-actions\">dispatch actions</a> with <var>input state</var>, <var>actions by tick</var>, <var>navigable</var>, and <var>actions options</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" data-refhint-key=\"f5554d6d\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑦①\">Try</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-dispatch-actions\" id=\"ref-for-dfn-dispatch-actions\">dispatch actions</a> with <var>input state</var>, <var>actions by tick</var>, <var>navigable</var>, and <var>actions options</var>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑧③\">success</a> with data null.</p>"
@@ -8585,7 +8585,7 @@
           "html": "<p>Let <var>undo actions</var> be <var>input state</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-input-cancel-list\" id=\"ref-for-dfn-input-cancel-list\">input cancel list</a> in reverse order.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑦③\">Try</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-dispatch-tick-actions\" id=\"ref-for-dfn-dispatch-tick-actions\">dispatch tick actions</a> with <var>undo actions</var>, 0, <var>navigable</var>, and <var>actions options</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" data-refhint-key=\"f5554d6d\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑦③\">Try</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-dispatch-tick-actions\" id=\"ref-for-dfn-dispatch-tick-actions\">dispatch tick actions</a> with <var>undo actions</var>, 0, <var>navigable</var>, and <var>actions options</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-reset-the-input-state\" id=\"ref-for-dfn-reset-the-input-state\">Reset the input state</a> with <var>session</var> and <var>top-level traversable</var>.</p>"
