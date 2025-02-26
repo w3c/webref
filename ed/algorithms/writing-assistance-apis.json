@@ -609,7 +609,10 @@
                           "rationale": "wait",
                           "steps": [
                             {
-                              "html": "<p>Wait for the total number of bytes to be downloaded to become determined, and let that number be <var>totalBytes</var>.</p>"
+                              "html": "<p>Wait for the total number of bytes to be downloaded to become determined, and let that number be <var>totalBytes</var>.</p>\n            <p>This number must be equal to the number of bytes that the user agent needs to download at the present time, not including any that have already been downloaded.</p>"
+                            },
+                            {
+                              "html": "<p>Let <var>lastProgressFraction</var> be 0.</p>"
                             },
                             {
                               "html": "<p>Let <var>lastProgressTime</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock\">monotonic clock</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time\">unsafe current time</a>.</p>"
@@ -622,40 +625,7 @@
                               "rationale": "if",
                               "steps": [
                                 {
-                                  "html": "If one or more bytes have been downloaded, then:",
-                                  "rationale": "if",
-                                  "steps": [
-                                    {
-                                      "html": "If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock①\">monotonic clock</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time①\">unsafe current time</a> minus <var>lastProgressTime</var> is greater than 50 ms, then:",
-                                      "rationale": "let",
-                                      "steps": [
-                                        {
-                                          "html": "<p>Let <var>bytesSoFar</var> be the number of bytes downloaded so far.</p>"
-                                        },
-                                        {
-                                          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: <var>bytesSoFar</var> is greater than 0 and less than or equal to <var>totalBytes</var>.</p>"
-                                        },
-                                        {
-                                          "html": "<p>Let <var>rawProgressFraction</var> be <var>bytesSoFar</var> divided by <var>totalBytes</var>.</p>"
-                                        },
-                                        {
-                                          "html": "<p>Let <var>progressFraction</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#eqn-floor\" id=\"ref-for-eqn-floor\">floor</a>(<var>rawProgressFraction</var> × 65,536) ÷ 65,536.</p>"
-                                        },
-                                        {
-                                          "html": "<p>Perform <var>fireProgressEvent</var> given <var>progressFraction</var>.</p>"
-                                        },
-                                        {
-                                          "html": "<p>If <var>bytesSoFar</var> equals <var>totalBytes</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break④\">break</a>.</p>"
-                                        },
-                                        {
-                                          "html": "<p>Set <var>lastProgressTime</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock②\">monotonic clock</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time②\">unsafe current time</a>.</p>"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  "html": "Otherwise, if downloading has failed and cannot continue, then:",
+                                  "html": "If downloading has failed, then:",
                                   "rationale": "queue",
                                   "steps": [
                                     {
@@ -663,6 +633,36 @@
                                     },
                                     {
                                       "html": "<p>Abort these steps.</p>"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "html": "<p>Let <var>bytesSoFar</var> be the number of bytes downloaded so far.</p>"
+                                },
+                                {
+                                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: <var>bytesSoFar</var> is greater than or equal to 0, and less than or equal to <var>totalBytes</var>.</p>"
+                                },
+                                {
+                                  "html": "If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock①\">monotonic clock</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time①\">unsafe current time</a> minus <var>lastProgressTime</var> is greater than 50 ms, or <var>bytesSoFar</var> equals <var>totalBytes</var>, then:",
+                                  "rationale": "let",
+                                  "steps": [
+                                    {
+                                      "html": "<p>Let <var>rawProgressFraction</var> be <var>bytesSoFar</var> divided by <var>totalBytes</var>.</p>"
+                                    },
+                                    {
+                                      "html": "<p>Let <var>progressFraction</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#eqn-floor\" id=\"ref-for-eqn-floor\">floor</a>(<var>rawProgressFraction</var> × 65,536) ÷ 65,536.</p>"
+                                    },
+                                    {
+                                      "html": "<p>If <var>progressFraction</var> is not equal to <var>lastProgressFraction</var>, then perform <var>fireProgressEvent</var> given <var>progressFraction</var>.</p>"
+                                    },
+                                    {
+                                      "html": "<p>If <var>bytesSoFar</var> equals <var>totalBytes</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break④\">break</a>.</p>"
+                                    },
+                                    {
+                                      "html": "<p>Set <var>lastProgressFraction</var> to <var>progressFraction</var>.</p>"
+                                    },
+                                    {
+                                      "html": "<p>Set <var>lastProgressTime</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock②\">monotonic clock</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time②\">unsafe current time</a>.</p>"
                                     }
                                   ]
                                 }
@@ -721,7 +721,10 @@
                           "rationale": "wait",
                           "steps": [
                             {
-                              "html": "<p>Wait for the total number of bytes to be downloaded to become determined, and let that number be <var>totalBytes</var>.</p>"
+                              "html": "<p>Wait for the total number of bytes to be downloaded to become determined, and let that number be <var>totalBytes</var>.</p>\n            <p>This number must be equal to the number of bytes that the user agent needs to download at the present time, not including any that have already been downloaded.</p>"
+                            },
+                            {
+                              "html": "<p>Let <var>lastProgressFraction</var> be 0.</p>"
                             },
                             {
                               "html": "<p>Let <var>lastProgressTime</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock\">monotonic clock</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time\">unsafe current time</a>.</p>"
@@ -734,40 +737,7 @@
                               "rationale": "if",
                               "steps": [
                                 {
-                                  "html": "If one or more bytes have been downloaded, then:",
-                                  "rationale": "if",
-                                  "steps": [
-                                    {
-                                      "html": "If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock①\">monotonic clock</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time①\">unsafe current time</a> minus <var>lastProgressTime</var> is greater than 50 ms, then:",
-                                      "rationale": "let",
-                                      "steps": [
-                                        {
-                                          "html": "<p>Let <var>bytesSoFar</var> be the number of bytes downloaded so far.</p>"
-                                        },
-                                        {
-                                          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: <var>bytesSoFar</var> is greater than 0 and less than or equal to <var>totalBytes</var>.</p>"
-                                        },
-                                        {
-                                          "html": "<p>Let <var>rawProgressFraction</var> be <var>bytesSoFar</var> divided by <var>totalBytes</var>.</p>"
-                                        },
-                                        {
-                                          "html": "<p>Let <var>progressFraction</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#eqn-floor\" id=\"ref-for-eqn-floor\">floor</a>(<var>rawProgressFraction</var> × 65,536) ÷ 65,536.</p>"
-                                        },
-                                        {
-                                          "html": "<p>Perform <var>fireProgressEvent</var> given <var>progressFraction</var>.</p>"
-                                        },
-                                        {
-                                          "html": "<p>If <var>bytesSoFar</var> equals <var>totalBytes</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break④\">break</a>.</p>"
-                                        },
-                                        {
-                                          "html": "<p>Set <var>lastProgressTime</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock②\">monotonic clock</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time②\">unsafe current time</a>.</p>"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  "html": "Otherwise, if downloading has failed and cannot continue, then:",
+                                  "html": "If downloading has failed, then:",
                                   "rationale": "queue",
                                   "steps": [
                                     {
@@ -775,6 +745,36 @@
                                     },
                                     {
                                       "html": "<p>Abort these steps.</p>"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "html": "<p>Let <var>bytesSoFar</var> be the number of bytes downloaded so far.</p>"
+                                },
+                                {
+                                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: <var>bytesSoFar</var> is greater than or equal to 0, and less than or equal to <var>totalBytes</var>.</p>"
+                                },
+                                {
+                                  "html": "If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock①\">monotonic clock</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time①\">unsafe current time</a> minus <var>lastProgressTime</var> is greater than 50 ms, or <var>bytesSoFar</var> equals <var>totalBytes</var>, then:",
+                                  "rationale": "let",
+                                  "steps": [
+                                    {
+                                      "html": "<p>Let <var>rawProgressFraction</var> be <var>bytesSoFar</var> divided by <var>totalBytes</var>.</p>"
+                                    },
+                                    {
+                                      "html": "<p>Let <var>progressFraction</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#eqn-floor\" id=\"ref-for-eqn-floor\">floor</a>(<var>rawProgressFraction</var> × 65,536) ÷ 65,536.</p>"
+                                    },
+                                    {
+                                      "html": "<p>If <var>progressFraction</var> is not equal to <var>lastProgressFraction</var>, then perform <var>fireProgressEvent</var> given <var>progressFraction</var>.</p>"
+                                    },
+                                    {
+                                      "html": "<p>If <var>bytesSoFar</var> equals <var>totalBytes</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break④\">break</a>.</p>"
+                                    },
+                                    {
+                                      "html": "<p>Set <var>lastProgressFraction</var> to <var>progressFraction</var>.</p>"
+                                    },
+                                    {
+                                      "html": "<p>Set <var>lastProgressTime</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock②\">monotonic clock</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time②\">unsafe current time</a>.</p>"
                                     }
                                   ]
                                 }
