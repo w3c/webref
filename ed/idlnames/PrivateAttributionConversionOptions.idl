@@ -1,6 +1,6 @@
 // Source: Privacy-Preserving Attribution: Level 1 (https://w3c.github.io/ppa/)
 dictionary PrivateAttributionConversionOptions {
-  required DOMString aggregationService;
+  required USVString aggregationService;
   double epsilon = 1.0;
 
   required unsigned long histogramSize;
@@ -11,6 +11,6 @@ dictionary PrivateAttributionConversionOptions {
 
   unsigned long lookbackDays;
   unsigned long filterData;
-  sequence<DOMString> impressionSites = [];
-  sequence<DOMString> intermediarySites = [];
+  sequence<USVString> impressionSites = [];
+  sequence<USVString> intermediarySites = [];
 };
