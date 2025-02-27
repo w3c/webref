@@ -251,6 +251,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-auctionad-creativescanningmetadata",
+      "href": "https://wicg.github.io/turtledove/#dom-auctionad-creativescanningmetadata",
+      "linkingText": [
+        "creativeScanningMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuctionAd"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "join-ad-interest-groups",
+        "href": "https://wicg.github.io/turtledove/#join-ad-interest-groups",
+        "title": "joinAdInterestGroup()",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-auctionadinterestgroupsize",
       "href": "https://wicg.github.io/turtledove/#dictdef-auctionadinterestgroupsize",
       "linkingText": [
@@ -1528,6 +1549,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-auctionadconfig-sendcreativescanningmetadata",
+      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-sendcreativescanningmetadata",
+      "linkingText": [
+        "sendCreativeScanningMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuctionAdConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-auctionadconfig-interestgroupbuyers",
       "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-interestgroupbuyers",
       "linkingText": [
@@ -2588,6 +2630,25 @@
       "href": "https://wicg.github.io/turtledove/#convert-to-a-string-sequence",
       "linkingText": [
         "convert to a string sequence"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extract-component-ad-creative-scanning-metadata",
+      "href": "https://wicg.github.io/turtledove/#extract-component-ad-creative-scanning-metadata",
+      "linkingText": [
+        "extract component ad creative scanning metadata"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -11390,6 +11451,46 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-scoringbrowsersignals-creativescanningmetadata",
+      "href": "https://wicg.github.io/turtledove/#dom-scoringbrowsersignals-creativescanningmetadata",
+      "linkingText": [
+        "creativeScanningMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ScoringBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "structures",
+        "href": "https://wicg.github.io/turtledove/#structures",
+        "title": "14. Structures"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scoringbrowsersignals-adcomponentscreativescanningmetadata",
+      "href": "https://wicg.github.io/turtledove/#dom-scoringbrowsersignals-adcomponentscreativescanningmetadata",
+      "linkingText": [
+        "adComponentsCreativeScanningMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ScoringBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "structures",
+        "href": "https://wicg.github.io/turtledove/#structures",
+        "title": "14. Structures"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "convert-an-ad-size-to-a-map",
       "href": "https://wicg.github.io/turtledove/#convert-an-ad-size-to-a-map",
       "linkingText": [
@@ -13052,6 +13153,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "interest-group-ad-creative-scanning-metadata",
+      "href": "https://wicg.github.io/turtledove/#interest-group-ad-creative-scanning-metadata",
+      "linkingText": [
+        "creative scanning metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "interest group ad"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interest-group-header",
+        "href": "https://wicg.github.io/turtledove/#interest-group-header",
+        "title": "Interest group",
+        "number": "14.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "previous-win",
       "href": "https://wicg.github.io/turtledove/#previous-win",
       "linkingText": [
@@ -13315,6 +13437,27 @@
       "href": "https://wicg.github.io/turtledove/#auction-config-trusted-scoring-signals-coordinator",
       "linkingText": [
         "trusted scoring signals coordinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "auction config"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auction-config-header",
+        "href": "https://wicg.github.io/turtledove/#auction-config-header",
+        "title": "Auction config",
+        "number": "14.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "auction-config-send-creative-scanning-metadata",
+      "href": "https://wicg.github.io/turtledove/#auction-config-send-creative-scanning-metadata",
+      "linkingText": [
+        "send creative scanning metadata"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -15128,6 +15271,128 @@
       "definedIn": "dt"
     },
     {
+      "id": "creative-info",
+      "href": "https://wicg.github.io/turtledove/#creative-info",
+      "linkingText": [
+        "creative info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trusted-seller-signals-batcher",
+        "href": "https://wicg.github.io/turtledove/#trusted-seller-signals-batcher",
+        "title": "Trusted scoring signals batcher",
+        "number": "14.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "creative-info-ad-descriptor",
+      "href": "https://wicg.github.io/turtledove/#creative-info-ad-descriptor",
+      "linkingText": [
+        "ad descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "creative info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trusted-seller-signals-batcher",
+        "href": "https://wicg.github.io/turtledove/#trusted-seller-signals-batcher",
+        "title": "Trusted scoring signals batcher",
+        "number": "14.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "creative-info-creative-scanning-metadata",
+      "href": "https://wicg.github.io/turtledove/#creative-info-creative-scanning-metadata",
+      "linkingText": [
+        "creative scanning metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "creative info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trusted-seller-signals-batcher",
+        "href": "https://wicg.github.io/turtledove/#trusted-seller-signals-batcher",
+        "title": "Trusted scoring signals batcher",
+        "number": "14.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "creative-info-interest-group-owner",
+      "href": "https://wicg.github.io/turtledove/#creative-info-interest-group-owner",
+      "linkingText": [
+        "interest group owner"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "creative info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trusted-seller-signals-batcher",
+        "href": "https://wicg.github.io/turtledove/#trusted-seller-signals-batcher",
+        "title": "Trusted scoring signals batcher",
+        "number": "14.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "creative-info-buyer-or-seller-reporting-id",
+      "href": "https://wicg.github.io/turtledove/#creative-info-buyer-or-seller-reporting-id",
+      "linkingText": [
+        "buyer or seller reporting id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "creative info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trusted-seller-signals-batcher",
+        "href": "https://wicg.github.io/turtledove/#trusted-seller-signals-batcher",
+        "title": "Trusted scoring signals batcher",
+        "number": "14.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fill-in-creative-info",
+      "href": "https://wicg.github.io/turtledove/#fill-in-creative-info",
+      "linkingText": [
+        "fill in creative info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trusted-seller-signals-batcher",
+        "href": "https://wicg.github.io/turtledove/#trusted-seller-signals-batcher",
+        "title": "Trusted scoring signals batcher",
+        "number": "14.7"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "trusted-scoring-signals-request",
       "href": "https://wicg.github.io/turtledove/#trusted-scoring-signals-request",
       "linkingText": [
@@ -15145,6 +15410,27 @@
         "number": "14.7"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "trusted-scoring-signals-request-send-creative-scanning-metadata",
+      "href": "https://wicg.github.io/turtledove/#trusted-scoring-signals-request-send-creative-scanning-metadata",
+      "linkingText": [
+        "send creative scanning metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trusted scoring signals request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trusted-seller-signals-batcher",
+        "href": "https://wicg.github.io/turtledove/#trusted-seller-signals-batcher",
+        "title": "Trusted scoring signals batcher",
+        "number": "14.7"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "trusted-scoring-signals-request-seller",
@@ -15252,10 +15538,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "trusted-scoring-signals-request-render-url",
-      "href": "https://wicg.github.io/turtledove/#trusted-scoring-signals-request-render-url",
+      "id": "trusted-scoring-signals-request-ad",
+      "href": "https://wicg.github.io/turtledove/#trusted-scoring-signals-request-ad",
       "linkingText": [
-        "render URL"
+        "ad"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -15273,10 +15559,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "trusted-scoring-signals-request-ad-component-urls",
-      "href": "https://wicg.github.io/turtledove/#trusted-scoring-signals-request-ad-component-urls",
+      "id": "trusted-scoring-signals-request-ad-components",
+      "href": "https://wicg.github.io/turtledove/#trusted-scoring-signals-request-ad-components",
       "linkingText": [
-        "ad component URLs"
+        "ad components"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -15626,6 +15912,120 @@
       "href": "https://wicg.github.io/turtledove/#fetch-trusted-scoring-signals-with-batching",
       "linkingText": [
         "fetch trusted scoring signals with batching"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trusted-seller-signals-batcher",
+        "href": "https://wicg.github.io/turtledove/#trusted-seller-signals-batcher",
+        "title": "Trusted scoring signals batcher",
+        "number": "14.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extract-urls-from-creative-info",
+      "href": "https://wicg.github.io/turtledove/#extract-urls-from-creative-info",
+      "linkingText": [
+        "extract URLs from creative info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trusted-seller-signals-batcher",
+        "href": "https://wicg.github.io/turtledove/#trusted-seller-signals-batcher",
+        "title": "Trusted scoring signals batcher",
+        "number": "14.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extract-creative-scanning-metadata",
+      "href": "https://wicg.github.io/turtledove/#extract-creative-scanning-metadata",
+      "linkingText": [
+        "extract creative scanning metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trusted-seller-signals-batcher",
+        "href": "https://wicg.github.io/turtledove/#trusted-seller-signals-batcher",
+        "title": "Trusted scoring signals batcher",
+        "number": "14.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extract-buyers",
+      "href": "https://wicg.github.io/turtledove/#extract-buyers",
+      "linkingText": [
+        "extract buyers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trusted-seller-signals-batcher",
+        "href": "https://wicg.github.io/turtledove/#trusted-seller-signals-batcher",
+        "title": "Trusted scoring signals batcher",
+        "number": "14.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extract-buyer-and-seller-reporting-ids",
+      "href": "https://wicg.github.io/turtledove/#extract-buyer-and-seller-reporting-ids",
+      "linkingText": [
+        "extract buyer and seller reporting ids"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trusted-seller-signals-batcher",
+        "href": "https://wicg.github.io/turtledove/#trusted-seller-signals-batcher",
+        "title": "Trusted scoring signals batcher",
+        "number": "14.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "add-trusted-signals-param-if-needed",
+      "href": "https://wicg.github.io/turtledove/#add-trusted-signals-param-if-needed",
+      "linkingText": [
+        "add trusted signals param if needed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trusted-seller-signals-batcher",
+        "href": "https://wicg.github.io/turtledove/#trusted-seller-signals-batcher",
+        "title": "Trusted scoring signals batcher",
+        "number": "14.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "add-trusted-signals-size-param-if-needed",
+      "href": "https://wicg.github.io/turtledove/#add-trusted-signals-size-param-if-needed",
+      "linkingText": [
+        "add trusted signals size param if needed"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -16009,6 +16409,27 @@
       "href": "https://wicg.github.io/turtledove/#generated-bid-bid-ad",
       "linkingText": [
         "bid ad"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "generated bid"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "generated-bid-header",
+        "href": "https://wicg.github.io/turtledove/#generated-bid-header",
+        "title": "Generated bid",
+        "number": "14.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "generated-bid-bid-ad-components",
+      "href": "https://wicg.github.io/turtledove/#generated-bid-bid-ad-components",
+      "linkingText": [
+        "bid ad components"
       ],
       "localLinkingText": [],
       "type": "dfn",
