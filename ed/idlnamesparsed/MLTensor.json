@@ -6,7 +6,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLTensor {\n  readonly attribute MLOperandDataType dataType;\n  readonly attribute FrozenArray<unsigned long> shape;\n  readonly attribute boolean readable;\n  readonly attribute boolean writable;\n\n  undefined destroy();\n};",
+    "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLTensor {\n  readonly attribute MLOperandDataType dataType;\n  readonly attribute FrozenArray<unsigned long> shape;\n  readonly attribute boolean readable;\n  readonly attribute boolean writable;\n\n  undefined destroy();\n};",
     "href": "https://webmachinelearning.github.io/webnn/#mltensor"
   },
   "extended": [],

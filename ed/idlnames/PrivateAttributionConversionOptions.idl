@@ -5,12 +5,12 @@ dictionary PrivateAttributionConversionOptions {
 
   required unsigned long histogramSize;
 
-  PrivateAttributionLogic logic = "last-touch";
-  unsigned long value = 1;
-  unsigned long maxValue = 1;
-
   unsigned long lookbackDays;
   unsigned long filterData;
   sequence<USVString> impressionSites = [];
   sequence<USVString> intermediarySites = [];
+
+  PrivateAttributionLogic logic = "last-touch";
+  unsigned long value = 1;
+  unsigned long maxValue = 1;
 };

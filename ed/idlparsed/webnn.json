@@ -9,7 +9,7 @@
         "Window": [
           "MLGraphBuilder"
         ],
-        "DedicatedWorker": [
+        "Worker": [
           "MLGraphBuilder"
         ]
       },
@@ -21,7 +21,7 @@
           "MLOperand",
           "MLTensor"
         ],
-        "DedicatedWorker": [
+        "Worker": [
           "ML",
           "MLContext",
           "MLGraph",
@@ -126,7 +126,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlcontextoptions"
       },
       "ML": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface ML {\n  Promise<MLContext> createContext(optional MLContextOptions options = {});\n  Promise<MLContext> createContext(GPUDevice gpuDevice);\n};",
+        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface ML {\n  Promise<MLContext> createContext(optional MLContextOptions options = {});\n  Promise<MLContext> createContext(GPUDevice gpuDevice);\n};",
         "type": "interface",
         "name": "ML",
         "inheritance": null,
@@ -235,7 +235,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -305,7 +305,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlcontextlostinfo"
       },
       "MLContext": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {\n  undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);\n\n  Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);\n\n  Promise<ArrayBuffer> readTensor(MLTensor tensor);\n  Promise<undefined> readTensor(MLTensor tensor, AllowSharedBufferSource outputData);\n\n  undefined writeTensor(MLTensor tensor, AllowSharedBufferSource inputData);\n\n  MLOpSupportLimits opSupportLimits();\n\n  undefined destroy();\n\n  readonly attribute Promise<MLContextLostInfo> lost;\n};",
+        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLContext {\n  undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);\n\n  Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);\n\n  Promise<ArrayBuffer> readTensor(MLTensor tensor);\n  Promise<undefined> readTensor(MLTensor tensor, AllowSharedBufferSource outputData);\n\n  undefined writeTensor(MLTensor tensor, AllowSharedBufferSource inputData);\n\n  MLOpSupportLimits opSupportLimits();\n\n  undefined destroy();\n\n  readonly attribute Promise<MLContextLostInfo> lost;\n};",
         "type": "interface",
         "name": "MLContext",
         "inheritance": null,
@@ -641,7 +641,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -865,7 +865,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlsingleinputsupportlimits"
       },
       "MLGraph": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraph {\n  undefined destroy();\n};",
+        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLGraph {\n  undefined destroy();\n};",
         "type": "interface",
         "name": "MLGraph",
         "inheritance": null,
@@ -904,7 +904,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -1042,7 +1042,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor"
       },
       "MLOperand": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLOperand {\n  readonly attribute MLOperandDataType dataType;\n  readonly attribute FrozenArray<unsigned long> shape;\n};",
+        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLOperand {\n  readonly attribute MLOperandDataType dataType;\n  readonly attribute FrozenArray<unsigned long> shape;\n};",
         "type": "interface",
         "name": "MLOperand",
         "inheritance": null,
@@ -1106,7 +1106,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -1228,7 +1228,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mltensordescriptor"
       },
       "MLTensor": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLTensor {\n  readonly attribute MLOperandDataType dataType;\n  readonly attribute FrozenArray<unsigned long> shape;\n  readonly attribute boolean readable;\n  readonly attribute boolean writable;\n\n  undefined destroy();\n};",
+        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLTensor {\n  readonly attribute MLOperandDataType dataType;\n  readonly attribute FrozenArray<unsigned long> shape;\n  readonly attribute boolean readable;\n  readonly attribute boolean writable;\n\n  undefined destroy();\n};",
         "type": "interface",
         "name": "MLTensor",
         "inheritance": null,
@@ -1340,7 +1340,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -1383,7 +1383,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlnamedoperands"
       },
       "MLGraphBuilder": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(USVString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor,\n                     AllowSharedBufferSource buffer);\n\n  // Create a scalar operand from the specified number of the specified type.\n  MLOperand constant(MLOperandDataType type, MLNumber value);\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n};",
+        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(USVString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor,\n                     AllowSharedBufferSource buffer);\n\n  // Create a scalar operand from the specified number of the specified type.\n  MLOperand constant(MLOperandDataType type, MLNumber value);\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n};",
         "type": "interface",
         "name": "MLGraphBuilder",
         "inheritance": null,
@@ -1618,7 +1618,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -12440,7 +12440,7 @@
         "MLTensor",
         "MLGraphBuilder"
       ],
-      "DedicatedWorker": [
+      "Worker": [
         "ML",
         "MLContext",
         "MLGraph",

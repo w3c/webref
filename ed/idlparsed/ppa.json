@@ -247,7 +247,7 @@
         "href": "https://w3c.github.io/ppa/#dictdef-privateattributionimpressionoptions"
       },
       "PrivateAttributionConversionOptions": {
-        "fragment": "dictionary PrivateAttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  PrivateAttributionLogic logic = \"last-touch\";\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n\n  unsigned long lookbackDays;\n  unsigned long filterData;\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> intermediarySites = [];\n};",
+        "fragment": "dictionary PrivateAttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  unsigned long lookbackDays;\n  unsigned long filterData;\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> intermediarySites = [];\n\n  PrivateAttributionLogic logic = \"last-touch\";\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n};",
         "type": "dictionary",
         "name": "PrivateAttributionConversionOptions",
         "inheritance": null,
@@ -302,63 +302,6 @@
             "default": null,
             "required": true,
             "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-histogramsize"
-          },
-          {
-            "type": "field",
-            "name": "logic",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "PrivateAttributionLogic"
-            },
-            "default": {
-              "type": "string",
-              "value": "last-touch"
-            },
-            "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-logic"
-          },
-          {
-            "type": "field",
-            "name": "value",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": {
-              "type": "number",
-              "value": "1"
-            },
-            "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-value"
-          },
-          {
-            "type": "field",
-            "name": "maxValue",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": {
-              "type": "number",
-              "value": "1"
-            },
-            "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-maxvalue"
           },
           {
             "type": "field",
@@ -447,6 +390,63 @@
             },
             "required": false,
             "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-intermediarysites"
+          },
+          {
+            "type": "field",
+            "name": "logic",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PrivateAttributionLogic"
+            },
+            "default": {
+              "type": "string",
+              "value": "last-touch"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-logic"
+          },
+          {
+            "type": "field",
+            "name": "value",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "1"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-value"
+          },
+          {
+            "type": "field",
+            "name": "maxValue",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "1"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-maxvalue"
           }
         ],
         "extAttrs": [],

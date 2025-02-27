@@ -64,7 +64,7 @@
               "html": "<p>Let <var>topLevelSite</var> (the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#conversion-site\" id=\"ref-for-conversion-site①\">conversion site</a>) be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#obtain-a-site\" id=\"ref-for-obtain-a-site②\">obtaining a site</a> from the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin④\">top-level origin</a>.</p>"
             },
             {
-              "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#intermediary-site\" id=\"ref-for-intermediary-site②\">intermediary site</a> is set to",
+              "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#intermediary-site\" id=\"ref-for-intermediary-site③\">intermediary site</a> is set to",
               "rationale": "/^otherwise(\\,| )/i",
               "steps": [
                 {
@@ -85,7 +85,7 @@
               "html": "<p>If <a class=\"idl-code\" data-link-type=\"dict-member\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-logic\" id=\"ref-for-dom-privateattributionconversionoptions-logic①\">logic</a> is specified, and the value is anything other than <a class=\"idl-code\" data-link-type=\"enum-value\" href=\"https://w3c.github.io/ppa/#dom-privateattributionlogic-last-touch\" id=\"ref-for-dom-privateattributionlogic-last-touch\">\"last-touch\"</a>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
             },
             {
-              "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-lookbackdays\" id=\"ref-for-dom-privateattributionconversionoptions-lookbackdays①\">lookbackDays</a></code> is 0,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①\">RangeError</a></code>.</p>"
+              "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-lookbackdays\" id=\"ref-for-dom-privateattributionconversionoptions-lookbackdays②\">lookbackDays</a></code> is 0,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①\">RangeError</a></code>.</p>"
             }
           ]
         },
@@ -185,7 +185,7 @@
     {
       "name": "fill a histogram with last-touch attribution",
       "href": "https://w3c.github.io/ppa/#fill-a-histogram-with-last-touch-attribution",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fill-a-histogram-with-last-touch-attribution\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fill a histogram with last-touch attribution</dfn>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets⑤\">set</a> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression\" id=\"ref-for-impression②②\">impressions</a> <var>matchedImpressions</var>, an integer <var>histogramSize</var>, and an integer <var>value</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fill-a-histogram-with-last-touch-attribution\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fill a histogram with last-touch attribution</dfn>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets⑤\">set</a> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression\" id=\"ref-for-impression②④\">impressions</a> <var>matchedImpressions</var>, an integer <var>histogramSize</var>, and an integer <var>value</var>:",
       "rationale": "assert",
       "steps": [
         {
@@ -229,23 +229,23 @@
           "html": "<p>Let <var>matching</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty④\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets⑥\">set</a>.</p>"
         },
         {
-          "html": "<p>Let <var>lookbackDays</var> be <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-lookbackdays\" id=\"ref-for-dom-privateattributionconversionoptions-lookbackdays②\">lookbackDays</a></code> if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a>, the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> maximum otherwise.</p>"
+          "html": "<p>Let <var>lookbackDays</var> be <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-lookbackdays\" id=\"ref-for-dom-privateattributionconversionoptions-lookbackdays③\">lookbackDays</a></code> if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a>, the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> maximum otherwise.</p>"
         },
         {
           "html": "<p>If the number of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#day\" id=\"ref-for-day\">days</a> since the end of <var>epoch</var> exceeds <var>lookbackDays</var>,\nreturn <var>matching</var>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>impression</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-store\" id=\"ref-for-impression-store⑤\">impression store</a> for the <var>epoch</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>impression</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-store\" id=\"ref-for-impression-store⑥\">impression store</a> for the <var>epoch</var>:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If <var>now</var> - <var>lookbackDays</var> is after <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-timestamp\" id=\"ref-for-impression-timestamp①\">timestamp</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
             },
             {
-              "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-filterdata\" id=\"ref-for-dom-privateattributionconversionoptions-filterdata②\">filterData</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>,\nand it is not equal to <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-filter-data\" id=\"ref-for-impression-filter-data\">filter data</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+              "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-filterdata\" id=\"ref-for-dom-privateattributionconversionoptions-filterdata③\">filterData</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>,\nand it is not equal to <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-filter-data\" id=\"ref-for-impression-filter-data\">filter data</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
             },
             {
-              "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-impressionsites\" id=\"ref-for-dom-privateattributionconversionoptions-impressionsites①\">impressionSites</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-impression-site\" id=\"ref-for-impression-impression-site\">impression site</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+              "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-impressionsites\" id=\"ref-for-dom-privateattributionconversionoptions-impressionsites②\">impressionSites</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-impression-site\" id=\"ref-for-impression-impression-site\">impression site</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>impression</var> to <var>matching</var>.</p>"

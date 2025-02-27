@@ -6,7 +6,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface ML {\n  Promise<MLContext> createContext(optional MLContextOptions options = {});\n  Promise<MLContext> createContext(GPUDevice gpuDevice);\n};",
+    "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface ML {\n  Promise<MLContext> createContext(optional MLContextOptions options = {});\n  Promise<MLContext> createContext(GPUDevice gpuDevice);\n};",
     "href": "https://webmachinelearning.github.io/webnn/#ml"
   },
   "extended": [],

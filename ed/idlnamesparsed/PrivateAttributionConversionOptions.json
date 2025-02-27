@@ -6,7 +6,7 @@
       "title": "Privacy-Preserving Attribution: Level 1",
       "url": "https://w3c.github.io/ppa/"
     },
-    "fragment": "dictionary PrivateAttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  PrivateAttributionLogic logic = \"last-touch\";\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n\n  unsigned long lookbackDays;\n  unsigned long filterData;\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> intermediarySites = [];\n};",
+    "fragment": "dictionary PrivateAttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  unsigned long lookbackDays;\n  unsigned long filterData;\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> intermediarySites = [];\n\n  PrivateAttributionLogic logic = \"last-touch\";\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n};",
     "href": "https://w3c.github.io/ppa/#dictdef-privateattributionconversionoptions"
   },
   "extended": [],

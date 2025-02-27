@@ -1,5 +1,5 @@
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
-[SecureContext, Exposed=(Window, DedicatedWorker)]
+[SecureContext, Exposed=(Window, Worker)]
 interface MLOperand {
   readonly attribute MLOperandDataType dataType;
   readonly attribute FrozenArray<unsigned long> shape;
