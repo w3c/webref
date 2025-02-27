@@ -370,7 +370,7 @@
               "html": "<p>If <var>fn</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type②⑥\">type</a> is anything other than «[ ]»\n(empty, representing a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value⑤④\">&lt;number&gt;</a>),\nappend \" * \" to <var>s</var>.\nCreate a numeric value\nin the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#canonical-unit\" id=\"ref-for-canonical-unit①⑤\">canonical unit</a> for <var>fn</var>’s <span id=\"ref-for-cssnumericvalue-type②⑦\">type</span> (such as <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-4/#px\" id=\"ref-for-px①③\">px</a> for <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#length-value\" id=\"ref-for-length-value④②\">&lt;length&gt;</a>),\nwith a value of 1.\nSerialize this numeric value\nand append it to <var>s</var>.</p>"
             },
             {
-              "html": "<p>Return <var>s</var>.</p>"
+              "html": "<p>Append \")\" to <var>s</var>, then return it.</p>"
             }
           ]
         },
@@ -404,35 +404,95 @@
           "html": "<p>If <var>root</var> is anything but\na Sum,\nNegate,\nProduct,\nor Invert node, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#serialize-a-math-function\" id=\"ref-for-serialize-a-math-function\">serialize a math function</a> for the function corresponding to the node type,\ntreating the node’s children as the function’s comma-separated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation⑤①\">calculation</a> arguments,\nand return the result.</p>"
         },
         {
-          "html": "<p>If <var>root</var> is a Negate node,\nlet <var>s</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> initially containing \"(-1 * \".</p>\n      <p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree①\">Serialize</a> <var>root</var>’s child,\nand append it to <var>s</var>.</p>\n      <p>Append \")\" to <var>s</var>,\nthen return it.</p>"
-        },
-        {
-          "html": "<p>If <var>root</var> is an Invert node,\nlet <var>s</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a> initially containing \"(1 / \".</p>\n      <p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree②\">Serialize</a> <var>root</var>’s child,\nand append it to <var>s</var>.</p>\n      <p>Append \")\" to <var>s</var>,\nthen return it.</p>"
-        },
-        {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>child</var> of <var>root</var> beyond the first:",
-          "rationale": "if",
+          "html": "If <var>root</var> is a Negate node:",
+          "rationale": "let",
           "steps": [
             {
-              "html": "<p>If <var>child</var> is a Negate node,\nappend \" - \" to <var>s</var>,\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree④\">serialize</a> the Negate’s child\nand append the result to <var>s</var>.</p>"
+              "html": "<p>Let <var>s</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> initially containing \"(-1 * \".</p>"
             },
             {
-              "html": "<p>If <var>child</var> is a negative numeric value,\nappend \" - \" to <var>s</var>,\nthen serialize the negation of <var>child</var> as normal\nand append the result to <var>s</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree①\">Serialize</a> <var>root</var>’s child,\nand append it to <var>s</var>.</p>"
             },
             {
-              "html": "<p>Otherwise,\nappend \" + \" to <var>s</var>,\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree⑤\">serialize</a> <var>child</var> and append the result to <var>s</var>.</p>"
+              "html": "<p>Append \")\" to <var>s</var>,\nthen return it.</p>"
             }
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>child</var> of <var>root</var> beyond the first:",
-          "rationale": "if",
+          "html": "If <var>root</var> is an Invert node:",
+          "rationale": "let",
           "steps": [
             {
-              "html": "<p>If <var>child</var> is an Invert node,\nappend \" / \" to <var>s</var>,\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree⑦\">serialize</a> the Invert’s child\nand append the result to <var>s</var>.</p>"
+              "html": "<p>Let <var>s</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a> initially containing \"(1 / \".</p>"
             },
             {
-              "html": "<p>Otherwise,\nappend \" * \" to <var>s</var>,\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree⑧\">serialize</a> <var>child</var> and append the result to <var>s</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree②\">Serialize</a> <var>root</var>’s child,\nand append it to <var>s</var>.</p>"
+            },
+            {
+              "html": "<p>Append \")\" to <var>s</var>,\nthen return it.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>root</var> is a Sum node:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>s</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④\">string</a> initially containing \"(\".</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#sort-a-calculations-children\" id=\"ref-for-sort-a-calculations-children\">Sort root’s children</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree③\">Serialize</a> <var>root</var>’s first child,\nand append it to <var>s</var>.</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>child</var> of <var>root</var> beyond the first:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>child</var> is a Negate node,\nappend \" - \" to <var>s</var>,\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree④\">serialize</a> the Negate’s child\nand append the result to <var>s</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>child</var> is a negative numeric value,\nappend \" - \" to <var>s</var>,\nthen serialize the negation of <var>child</var> as normal\nand append the result to <var>s</var>.</p>"
+                },
+                {
+                  "html": "<p>Otherwise,\nappend \" + \" to <var>s</var>,\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree⑤\">serialize</a> <var>child</var> and append the result to <var>s</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Append \")\" to <var>s</var> and return it.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>root</var> is a Product node:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>s</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> initially containing \"(\".</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#sort-a-calculations-children\" id=\"ref-for-sort-a-calculations-children①\">Sort root’s children</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree⑥\">Serialize</a> <var>root</var>’s first child,\nand append it to <var>s</var>.</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>child</var> of <var>root</var> beyond the first:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>child</var> is an Invert node,\nappend \" / \" to <var>s</var>,\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree⑦\">serialize</a> the Invert’s child\nand append the result to <var>s</var>.</p>"
+                },
+                {
+                  "html": "<p>Otherwise,\nappend \" * \" to <var>s</var>,\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree⑧\">serialize</a> <var>child</var> and append the result to <var>s</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Append \")\" to <var>s</var> and return it.</p>"
             }
           ]
         }
