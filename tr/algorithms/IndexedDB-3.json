@@ -3286,10 +3286,13 @@
                 {
                   "case": "If input is a buffer source type",
                   "html": "",
-                  "rationale": "let",
+                  "rationale": "if",
                   "steps": [
                     {
-                      "html": "<p>Let <var>bytes</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy\">getting a copy of the bytes held by the buffer source</a> <var>input</var>. Rethrow any exceptions.</p>"
+                      "html": "<p>If <var>input</var> is [<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#buffersource-detached\" id=\"ref-for-buffersource-detached\">detached</a>] then return invalid.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>bytes</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy\">getting a copy of the bytes held by the buffer source</a> <var>input</var>.</p>"
                     },
                     {
                       "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/IndexedDB-3/#key\" id=\"ref-for-key⑨⑧\">key</a> with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/IndexedDB-3/#key-type\" id=\"ref-for-key-type①①\">type</a> <em>binary</em> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/IndexedDB-3/#key-value\" id=\"ref-for-key-value⑨\">value</a> <var>bytes</var>.</p>"
