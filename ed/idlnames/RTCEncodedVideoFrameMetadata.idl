@@ -12,5 +12,7 @@ dictionary RTCEncodedVideoFrameMetadata {
     long long timestamp;    // microseconds
     unsigned long rtpTimestamp;
     DOMHighResTimeStamp receiveTime;
+    DOMHighResTimeStamp captureTime;
+    DOMHighResTimeStamp senderCaptureTimeOffset;
     DOMString mimeType;
 };

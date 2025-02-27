@@ -6,6 +6,7 @@ dictionary AuctionAdConfig {
   USVString trustedScoringSignalsURL;
   long maxTrustedScoringSignalsURLLength;
   USVString trustedScoringSignalsCoordinator;
+  boolean sendCreativeScanningMetadata;
   sequence<USVString> interestGroupBuyers;
   Promise<any> auctionSignals;
   Promise<any> sellerSignals;

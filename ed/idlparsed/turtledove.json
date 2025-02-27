@@ -32,7 +32,7 @@
     },
     "idlNames": {
       "AuctionAd": {
-        "fragment": "dictionary AuctionAd {\n  required USVString renderURL;\n  USVString sizeGroup;\n  any metadata;\n\n  USVString buyerReportingId;\n  USVString buyerAndSellerReportingId;\n  sequence<USVString> selectableBuyerAndSellerReportingIds;\n  sequence<USVString> allowedReportingOrigins;\n  DOMString adRenderId;\n};",
+        "fragment": "dictionary AuctionAd {\n  required USVString renderURL;\n  USVString sizeGroup;\n  any metadata;\n\n  USVString buyerReportingId;\n  USVString buyerAndSellerReportingId;\n  sequence<USVString> selectableBuyerAndSellerReportingIds;\n  sequence<USVString> allowedReportingOrigins;\n  DOMString adRenderId;\n  USVString creativeScanningMetadata;\n};",
         "type": "dictionary",
         "name": "AuctionAd",
         "inheritance": null,
@@ -182,6 +182,22 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-auctionad-adrenderid"
+          },
+          {
+            "type": "field",
+            "name": "creativeScanningMetadata",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionad-creativescanningmetadata"
           }
         ],
         "extAttrs": [],
@@ -966,7 +982,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-auctionrealtimereportingconfig"
       },
       "AuctionAdConfig": {
-        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n\n  USVString trustedScoringSignalsURL;\n  long maxTrustedScoringSignalsURLLength;\n  USVString trustedScoringSignalsCoordinator;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  Promise<any> sellerSignals;\n  Promise<DOMString?> directFromSellerSignalsHeaderAdSlot;\n  Promise<record<USVString, USVString>?> deprecatedRenderURLReplacements;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  Promise<record<USVString, any>?> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>?> perBuyerTimeouts;\n  Promise<record<USVString, unsigned long long>?> perBuyerCumulativeTimeouts;\n  unsigned long long reportingTimeout;\n  USVString sellerCurrency;\n  Promise<record<USVString, USVString>?> perBuyerCurrencies;\n  record<USVString, unsigned short> perBuyerMultiBidLimits;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n\n  sequence<bigint> auctionReportBuyerKeys;\n  record<DOMString, AuctionReportBuyersConfig> auctionReportBuyers;\n  AuctionReportBuyerDebugModeConfig auctionReportBuyerDebugModeConfig;\n  sequence<DOMString> requiredSellerCapabilities;\n  ProtectedAudiencePrivateAggregationConfig privateAggregationConfig;\n\n  record<DOMString, DOMString> requestedSize;\n  sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  AuctionRealTimeReportingConfig sellerRealTimeReportingConfig;\n  record<USVString, AuctionRealTimeReportingConfig> perBuyerRealTimeReportingConfig;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n\n  Promise<Uint8Array> serverResponse;\n  USVString requestId;\n};",
+        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n\n  USVString trustedScoringSignalsURL;\n  long maxTrustedScoringSignalsURLLength;\n  USVString trustedScoringSignalsCoordinator;\n  boolean sendCreativeScanningMetadata;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  Promise<any> sellerSignals;\n  Promise<DOMString?> directFromSellerSignalsHeaderAdSlot;\n  Promise<record<USVString, USVString>?> deprecatedRenderURLReplacements;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  Promise<record<USVString, any>?> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>?> perBuyerTimeouts;\n  Promise<record<USVString, unsigned long long>?> perBuyerCumulativeTimeouts;\n  unsigned long long reportingTimeout;\n  USVString sellerCurrency;\n  Promise<record<USVString, USVString>?> perBuyerCurrencies;\n  record<USVString, unsigned short> perBuyerMultiBidLimits;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n\n  sequence<bigint> auctionReportBuyerKeys;\n  record<DOMString, AuctionReportBuyersConfig> auctionReportBuyers;\n  AuctionReportBuyerDebugModeConfig auctionReportBuyerDebugModeConfig;\n  sequence<DOMString> requiredSellerCapabilities;\n  ProtectedAudiencePrivateAggregationConfig privateAggregationConfig;\n\n  record<DOMString, DOMString> requestedSize;\n  sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  AuctionRealTimeReportingConfig sellerRealTimeReportingConfig;\n  record<USVString, AuctionRealTimeReportingConfig> perBuyerRealTimeReportingConfig;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n\n  Promise<Uint8Array> serverResponse;\n  USVString requestId;\n};",
         "type": "dictionary",
         "name": "AuctionAdConfig",
         "inheritance": null,
@@ -1050,6 +1066,22 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-trustedscoringsignalscoordinator"
+          },
+          {
+            "type": "field",
+            "name": "sendCreativeScanningMetadata",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-sendcreativescanningmetadata"
           },
           {
             "type": "field",
@@ -3983,7 +4015,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-biddingbrowsersignals"
       },
       "ScoringBrowserSignals": {
-        "fragment": "dictionary ScoringBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString interestGroupOwner;\n  required USVString renderURL;\n  required unsigned long biddingDurationMsec;\n  required DOMString bidCurrency;\n\n  record<DOMString, DOMString> renderSize;\n  unsigned long dataVersion;\n  unsigned long crossOriginDataVersion;\n  sequence<USVString> adComponents;\n  boolean forDebuggingOnlyInCooldownOrLockout = false;\n};",
+        "fragment": "dictionary ScoringBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString interestGroupOwner;\n  required USVString renderURL;\n  required unsigned long biddingDurationMsec;\n  required DOMString bidCurrency;\n\n  record<DOMString, DOMString> renderSize;\n  unsigned long dataVersion;\n  unsigned long crossOriginDataVersion;\n  sequence<USVString> adComponents;\n  boolean forDebuggingOnlyInCooldownOrLockout = false;\n  USVString creativeScanningMetadata;\n  sequence<USVString?> adComponentsCreativeScanningMetadata;\n};",
         "type": "dictionary",
         "name": "ScoringBrowserSignals",
         "inheritance": null,
@@ -4176,6 +4208,47 @@
             },
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-scoringbrowsersignals-fordebuggingonlyincooldownorlockout"
+          },
+          {
+            "type": "field",
+            "name": "creativeScanningMetadata",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-scoringbrowsersignals-creativescanningmetadata"
+          },
+          {
+            "type": "field",
+            "name": "adComponentsCreativeScanningMetadata",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "USVString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-scoringbrowsersignals-adcomponentscreativescanningmetadata"
           }
         ],
         "extAttrs": [],

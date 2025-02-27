@@ -6,5 +6,7 @@ dictionary RTCEncodedAudioFrameMetadata {
     short sequenceNumber;
     unsigned long rtpTimestamp;
     DOMHighResTimeStamp receiveTime;
+    DOMHighResTimeStamp captureTime;
+    DOMHighResTimeStamp senderCaptureTimeOffset;
     DOMString mimeType;
 };

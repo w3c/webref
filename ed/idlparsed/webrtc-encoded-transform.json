@@ -514,7 +514,7 @@
         "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-rtcencodedvideoframetype"
       },
       "RTCEncodedVideoFrameMetadata": {
-        "fragment": "dictionary RTCEncodedVideoFrameMetadata {\n    unsigned long long frameId;\n    sequence<unsigned long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    unsigned long spatialIndex;\n    unsigned long temporalIndex;\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n    long long timestamp;    // microseconds\n    unsigned long rtpTimestamp;\n    DOMHighResTimeStamp receiveTime;\n    DOMString mimeType;\n};",
+        "fragment": "dictionary RTCEncodedVideoFrameMetadata {\n    unsigned long long frameId;\n    sequence<unsigned long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    unsigned long spatialIndex;\n    unsigned long temporalIndex;\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n    long long timestamp;    // microseconds\n    unsigned long rtpTimestamp;\n    DOMHighResTimeStamp receiveTime;\n    DOMHighResTimeStamp captureTime;\n    DOMHighResTimeStamp senderCaptureTimeOffset;\n    DOMString mimeType;\n};",
         "type": "dictionary",
         "name": "RTCEncodedVideoFrameMetadata",
         "inheritance": null,
@@ -731,6 +731,38 @@
           },
           {
             "type": "field",
+            "name": "captureTime",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-capturetime"
+          },
+          {
+            "type": "field",
+            "name": "senderCaptureTimeOffset",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-sendercapturetimeoffset"
+          },
+          {
+            "type": "field",
             "name": "mimeType",
             "extAttrs": [],
             "idlType": {
@@ -901,7 +933,7 @@
         "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcencodedvideoframe"
       },
       "RTCEncodedAudioFrameMetadata": {
-        "fragment": "dictionary RTCEncodedAudioFrameMetadata {\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n    short sequenceNumber;\n    unsigned long rtpTimestamp;\n    DOMHighResTimeStamp receiveTime;\n    DOMString mimeType;\n};",
+        "fragment": "dictionary RTCEncodedAudioFrameMetadata {\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n    short sequenceNumber;\n    unsigned long rtpTimestamp;\n    DOMHighResTimeStamp receiveTime;\n    DOMHighResTimeStamp captureTime;\n    DOMHighResTimeStamp senderCaptureTimeOffset;\n    DOMString mimeType;\n};",
         "type": "dictionary",
         "name": "RTCEncodedAudioFrameMetadata",
         "inheritance": null,
@@ -1010,6 +1042,38 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframemetadata-receivetime"
+          },
+          {
+            "type": "field",
+            "name": "captureTime",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframemetadata-capturetime"
+          },
+          {
+            "type": "field",
+            "name": "senderCaptureTimeOffset",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframemetadata-sendercapturetimeoffset"
           },
           {
             "type": "field",

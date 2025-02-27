@@ -6,7 +6,7 @@
       "title": "WebRTC Encoded Transform",
       "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
     },
-    "fragment": "dictionary RTCEncodedAudioFrameMetadata {\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n    short sequenceNumber;\n    unsigned long rtpTimestamp;\n    DOMHighResTimeStamp receiveTime;\n    DOMString mimeType;\n};",
+    "fragment": "dictionary RTCEncodedAudioFrameMetadata {\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n    short sequenceNumber;\n    unsigned long rtpTimestamp;\n    DOMHighResTimeStamp receiveTime;\n    DOMHighResTimeStamp captureTime;\n    DOMHighResTimeStamp senderCaptureTimeOffset;\n    DOMString mimeType;\n};",
     "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcencodedaudioframemetadata"
   },
   "extended": [],

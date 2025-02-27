@@ -11,4 +11,6 @@ dictionary ScoringBrowserSignals {
   unsigned long crossOriginDataVersion;
   sequence<USVString> adComponents;
   boolean forDebuggingOnlyInCooldownOrLockout = false;
+  USVString creativeScanningMetadata;
+  sequence<USVString?> adComponentsCreativeScanningMetadata;
 };
