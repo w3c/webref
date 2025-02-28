@@ -7,11 +7,11 @@
     {
       "name": "SpeechRecognition/start()",
       "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-start",
-      "html": "",
+      "html": "Start the speech recognition process, directly from a microphone on the device.\n    When invoked, run the following steps:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>requestMicrophonePermission</var> to <code>true</code>.</p>"
+          "html": "<p>Let <var>requestMicrophonePermission</var> be a boolan variable set to to <code>true</code>.</p>"
         },
         {
           "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-speech-api/#start-session-algorithm\" id=\"ref-for-start-session-algorithm\">start session algorithm</a> with <var>requestMicrophonePermission</var>.</p>"
@@ -21,14 +21,14 @@
     {
       "name": "SpeechRecognition/start(audioTrack)",
       "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-start-audiotrack",
-      "html": "",
+      "html": "Start the speech recognition process, using a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack②\">MediaStreamTrack</a></code> When invoked, run the following steps:",
       "rationale": "let",
       "steps": [
         {
           "html": "<p>Let <var>audioTrack</var> be the first argument.</p>"
         },
         {
-          "html": "<p>If <var>audioTrack</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-kind\" id=\"ref-for-dom-mediastreamtrack-kind\">kind</a></code> attribute is NOT <code>\"audio\"</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>audioTrack</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-kind\" id=\"ref-for-dom-mediastreamtrack-kind\">kind</a></code> attribute is NOT <code>\"audio\"</code>,\nthrow an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
           "html": "<p>If <var>audioTrack</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-readystate\" id=\"ref-for-dom-mediastreamtrack-readystate\">readyState</a></code> attribute is NOT <code>\"live\"</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code> and abort these steps.</p>"
@@ -44,23 +44,23 @@
     {
       "name": "start session algorithm",
       "href": "https://webaudio.github.io/web-speech-api/#start-session-algorithm",
-      "html": "When the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"start-session-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">start session algorithm</dfn> with <var>requestMicrophonePermission</var> is invoked, the user agent MUST run the following steps:",
+      "html": "When the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"start-session-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">start session algorithm</dfn> with <var>requestMicrophonePermission</var> is invoked, the user agent MUST run the\nfollowing steps:",
       "rationale": "if",
       "steps": [
         {
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object\">current settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is NOT <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognition-started-slot\" id=\"ref-for-dom-speechrecognition-started-slot\">[[started]]</a></code> is <code>true</code> and no <a class=\"idl-code\" data-link-type=\"event\" href=\"https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-error\" id=\"ref-for-eventdef-speechrecognition-error②\">error</a> or <a class=\"idl-code\" data-link-type=\"event\" href=\"https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-end\" id=\"ref-for-eventdef-speechrecognition-end③\">end</a> event has fired, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognition-started-slot\" id=\"ref-for-dom-speechrecognition-started-slot\">[[started]]</a></code> is <code>true</code> and no <a class=\"idl-code\" data-link-type=\"event\" href=\"https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-error\" id=\"ref-for-eventdef-speechrecognition-error②\">error</a> or <a class=\"idl-code\" data-link-type=\"event\" href=\"https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-end\" id=\"ref-for-eventdef-speechrecognition-end③\">end</a> event\n have fired, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
           "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognition-started-slot\" id=\"ref-for-dom-speechrecognition-started-slot①\">[[started]]</a></code> to <code>true</code>.</p>"
         },
         {
-          "html": "<p>If <var>requestMicrophonePermission</var> is <code>true</code> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-request-permission-to-use\" id=\"ref-for-dfn-request-permission-to-use\">request permission to use</a> \"<code>microphone</code>\" is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-denied\" id=\"ref-for-dfn-denied\">\"denied\"</a>, abort these steps.</p>"
+          "html": "<p>If <var>requestMicrophonePermission</var> is <code>true</code> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-request-permission-to-use\" id=\"ref-for-dfn-request-permission-to-use\">request permission to use</a> \"<code>microphone</code>\" is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-denied\" id=\"ref-for-dfn-denied\">\"denied\"</a>, abort\nthese steps.</p>"
         },
         {
-          "html": "<p>Once the system is successfully listening to the recognition, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-start\" id=\"ref-for-eventdef-speechrecognition-start\">start</a> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>.</p>"
+          "html": "<p>Once the system is successfully listening to the recognition, queue a task to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-start\" id=\"ref-for-eventdef-speechrecognition-start\">start</a> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>.</p>"
         }
       ]
     }
