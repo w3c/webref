@@ -71,6 +71,24 @@
           "html": "<p>Set <var>frame</var>.<code>[[counter]]</code> to <var>rtcObject</var>.<code>[[lastEnqueuedFrameCounter]]</code>.</p>"
         },
         {
+          "html": "If the frame has been produced by a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver④\">RTCRtpReceiver</a></code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the relevant RTP packet contains the <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#biblio-rtp-ext-capture-time\" title=\"RTP Header Extension for Absolute Capture Time\">RTP Header Extension for Absolute Capture Time</a>, set <var>frame</var>.<code>[[captureTime]]</code> to the <a href=\"https://datatracker.ietf.org/doc/draft-ietf-avtcore-abs-capture-time/#absolute-capture-timestamp\">absolute capture timestamp</a> field and set <var>frame</var>.<code>[[senderCaptureTimeOffset]]</code> to the <a href=\"https://datatracker.ietf.org/doc/draft-ietf-avtcore-abs-capture-time/#estimated-capture-clock-offset\">capture clock offset field</a> if it is present.</p>"
+            },
+            {
+              "html": "<p>Otherwise, if the relevant RTP packet does not contain the <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#biblio-rtp-ext-capture-time\" title=\"RTP Header Extension for Absolute Capture Time\">RTP Header Extension for Absolute Capture Time</a> but a previous RTP packet did,\nset <var>frame</var>.<code>[[captureTime]]</code> to the result of calculating the absolute capture timestamp according to <a href=\"https://datatracker.ietf.org/doc/draft-ietf-avtcore-abs-capture-time/#timestamp-interpolation\">timestamp interpolation</a> and set <var>frame</var>.<code>[[senderCaptureTimeOffset]]</code> to the most recent value that was present.</p>"
+            },
+            {
+              "html": "<p>Otherwise, set <var>frame</var>.<code>[[captureTime]]</code> to undefined and set <var>frame</var>.<code>[[senderCaptureTimeOffset]]</code> to undefined.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If the frame has been produced by a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender④\">RTCRtpSender</a></code>, set <var>frame</var>.<code>[[captureTime]]</code> to the capture timestamp\nusing the methodology described in <a href=\"https://datatracker.ietf.org/doc/draft-ietf-avtcore-abs-capture-time/#absolute-capture-timestamp\">RTP Header Extension for Absolute Capture Time § absolute-capture-timestamp</a> and set frame.<code>[[senderCaptureTimeOffset]]</code> to undefined.</p>"
+        },
+        {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-enqueue\" id=\"ref-for-readablestream-enqueue\">Enqueue</a> <var>frame</var> in <var>rtcObject</var>.<code>[[readable]]</code>.</p>"
         }
       ]
@@ -100,7 +118,7 @@
           "html": "<p>Let <var>frameCopy</var> be <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structureddeserializewithtransfer\" id=\"ref-for-structureddeserializewithtransfer\">StructuredDeserializeWithTransfer</a>(<var>serializedFrame</var>, <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>).</p>"
         },
         {
-          "html": "<p>Enqueue <var>frameCopy</var> for processing as if it came directly from the encoded data source, by running one of the following steps:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>If <var>rtcObject</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender④\">RTCRtpSender</a></code>, enqueue <var>frameCopy</var> to <var>rtcObject</var>’s packetizer, to be processed <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>.</p>\n      </li><li data-md=\"\">\n       <p>If <var>rtcObject</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver④\">RTCRtpReceiver</a></code>, enqueue <var>frameCopy</var> it to <var>rtcObject</var>’s decoder, to be processed <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>.</p>\n     </li></ul>"
+          "html": "<p>Enqueue <var>frameCopy</var> for processing as if it came directly from the encoded data source, by running one of the following steps:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>If <var>rtcObject</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender⑤\">RTCRtpSender</a></code>, enqueue <var>frameCopy</var> to <var>rtcObject</var>’s packetizer, to be processed <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>.</p>\n      </li><li data-md=\"\">\n       <p>If <var>rtcObject</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver⑤\">RTCRtpReceiver</a></code>, enqueue <var>frameCopy</var> it to <var>rtcObject</var>’s decoder, to be processed <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>.</p>\n     </li></ul>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with②\">a promise resolved with</a> undefined.</p>"
@@ -226,10 +244,10 @@
           "html": "<p>Let <var>role</var> be <var>sframe</var>.<code>[[role]]</code>.</p>"
         },
         {
-          "html": "<p>If <var>frame</var>.<code>[[owner]]</code> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender⑦\">RTCRtpSender</a></code>, set <var>role</var> to 'encrypt'.</p>"
+          "html": "<p>If <var>frame</var>.<code>[[owner]]</code> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender⑧\">RTCRtpSender</a></code>, set <var>role</var> to 'encrypt'.</p>"
         },
         {
-          "html": "<p>If <var>frame</var>.<code>[[owner]]</code> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver⑦\">RTCRtpReceiver</a></code>, set <var>role</var> to 'decrypt'.</p>"
+          "html": "<p>If <var>frame</var>.<code>[[owner]]</code> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver⑧\">RTCRtpReceiver</a></code>, set <var>role</var> to 'decrypt'.</p>"
         },
         {
           "html": "<p>Let <var>data</var> be undefined.</p>"
@@ -487,10 +505,10 @@
           "html": "<p>Let <var>transform</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#rtcrtpscripttransform\" id=\"ref-for-rtcrtpscripttransform①\">RTCRtpScriptTransform</a></code> object that owns the <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#abstract-opdef-rtcrtptransform-association-steps\" id=\"ref-for-abstract-opdef-rtcrtptransform-association-steps②\">association steps</a>.</p>"
         },
         {
-          "html": "<p>Let <var>encoder</var> be <var>rtcObject</var>’s encoder if <var>rtcObject</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender⑧\">RTCRtpSender</a></code> or undefined otherwise.</p>"
+          "html": "<p>Let <var>encoder</var> be <var>rtcObject</var>’s encoder if <var>rtcObject</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender⑨\">RTCRtpSender</a></code> or undefined otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>depacketizer</var> be <var>rtcObject</var>’s depacketizer if <var>rtcObject</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver⑧\">RTCRtpReceiver</a></code> or undefined otherwise.</p>"
+          "html": "<p>Let <var>depacketizer</var> be <var>rtcObject</var>’s depacketizer if <var>rtcObject</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver⑨\">RTCRtpReceiver</a></code> or undefined otherwise.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③\">Queue a task</a> on the DOM manipulation <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#task-source\" id=\"ref-for-task-source①\">task source</a> <var>worker</var>’s global scope to run the following steps:",
@@ -623,7 +641,7 @@
               "html": "<p>If <var>rid</var> is undefined, remove from <var>videoEncoders</var> all video encoders except the first one.</p>"
             },
             {
-              "html": "<p>If <var>videoEncoders</var> is empty, reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror\">NotFoundError</a></code> and abort these steps. <var>videoEncoders</var> is expected to be empty if the corresponding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender⑨\">RTCRtpSender</a></code> is not active, or the corresponding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender①⓪\">RTCRtpSender</a></code> track is ended.</p>"
+              "html": "<p>If <var>videoEncoders</var> is empty, reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror\">NotFoundError</a></code> and abort these steps. <var>videoEncoders</var> is expected to be empty if the corresponding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender①⓪\">RTCRtpSender</a></code> is not active, or the corresponding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender①①\">RTCRtpSender</a></code> track is ended.</p>"
             },
             {
               "html": "<p>Let <var>videoEncoder</var> be the first encoder in <var>videoEncoders</var>.</p>"
