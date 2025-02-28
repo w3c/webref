@@ -1027,1250 +1027,1453 @@
       "number": "12.5.2"
     },
     {
+      "id": "durationformat-objects",
+      "href": "https://tc39.es/ecma402/#durationformat-objects",
+      "title": "DurationFormat Objects",
+      "level": 1,
+      "number": "13"
+    },
+    {
+      "id": "sec-intl-durationformat-abstracts",
+      "href": "https://tc39.es/ecma402/#sec-intl-durationformat-abstracts",
+      "title": "Abstract Operations for DurationFormat Objects",
+      "level": 2,
+      "number": "13.1"
+    },
+    {
+      "id": "sec-duration-records",
+      "href": "https://tc39.es/ecma402/#sec-duration-records",
+      "title": "Duration Records",
+      "level": 3,
+      "number": "13.1.1"
+    },
+    {
+      "id": "sec-tointegerifintegral",
+      "href": "https://tc39.es/ecma402/#sec-tointegerifintegral",
+      "title": "ToIntegerIfIntegral ( argument )",
+      "level": 3,
+      "number": "13.1.2"
+    },
+    {
+      "id": "sec-todurationrecord",
+      "href": "https://tc39.es/ecma402/#sec-todurationrecord",
+      "title": "ToDurationRecord ( input )",
+      "level": 3,
+      "number": "13.1.3"
+    },
+    {
+      "id": "sec-durationsign",
+      "href": "https://tc39.es/ecma402/#sec-durationsign",
+      "title": "DurationSign ( duration )",
+      "level": 3,
+      "number": "13.1.4"
+    },
+    {
+      "id": "sec-isvalidduration",
+      "href": "https://tc39.es/ecma402/#sec-isvalidduration",
+      "title": "IsValidDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
+      "level": 3,
+      "number": "13.1.5"
+    },
+    {
+      "id": "sec-getdurationunitoptions",
+      "href": "https://tc39.es/ecma402/#sec-getdurationunitoptions",
+      "title": "GetDurationUnitOptions ( unit, options, baseStyle, stylesList, digitalBase, prevStyle, twoDigitHours )",
+      "level": 3,
+      "number": "13.1.6"
+    },
+    {
+      "id": "sec-computefractionaldigits",
+      "href": "https://tc39.es/ecma402/#sec-computefractionaldigits",
+      "title": "ComputeFractionalDigits ( durationFormat, duration )",
+      "level": 3,
+      "number": "13.1.7"
+    },
+    {
+      "id": "sec-nextunitfractional",
+      "href": "https://tc39.es/ecma402/#sec-nextunitfractional",
+      "title": "NextUnitFractional ( durationFormat, unit )",
+      "level": 3,
+      "number": "13.1.8"
+    },
+    {
+      "id": "sec-formatnumerichours",
+      "href": "https://tc39.es/ecma402/#sec-formatnumerichours",
+      "title": "FormatNumericHours ( durationFormat, hoursValue, signDisplayed )",
+      "level": 3,
+      "number": "13.1.9"
+    },
+    {
+      "id": "sec-formatnumericminutes",
+      "href": "https://tc39.es/ecma402/#sec-formatnumericminutes",
+      "title": "FormatNumericMinutes ( durationFormat, minutesValue, hoursDisplayed, signDisplayed )",
+      "level": 3,
+      "number": "13.1.10"
+    },
+    {
+      "id": "sec-formatnumericseconds",
+      "href": "https://tc39.es/ecma402/#sec-formatnumericseconds",
+      "title": "FormatNumericSeconds ( durationFormat, secondsValue, minutesDisplayed, signDisplayed )",
+      "level": 3,
+      "number": "13.1.11"
+    },
+    {
+      "id": "sec-formatnumericunits",
+      "href": "https://tc39.es/ecma402/#sec-formatnumericunits",
+      "title": "FormatNumericUnits ( durationFormat, duration, firstNumericUnit, signDisplayed )",
+      "level": 3,
+      "number": "13.1.12"
+    },
+    {
+      "id": "sec-listformatparts",
+      "href": "https://tc39.es/ecma402/#sec-listformatparts",
+      "title": "ListFormatParts ( durationFormat, partitionedPartsList )",
+      "level": 3,
+      "number": "13.1.13"
+    },
+    {
+      "id": "sec-partitiondurationformatpattern",
+      "href": "https://tc39.es/ecma402/#sec-partitiondurationformatpattern",
+      "title": "PartitionDurationFormatPattern ( durationFormat, duration )",
+      "level": 3,
+      "number": "13.1.14"
+    },
+    {
+      "id": "sec-intl-durationformat-constructor",
+      "href": "https://tc39.es/ecma402/#sec-intl-durationformat-constructor",
+      "title": "The Intl.DurationFormat Constructor",
+      "level": 2,
+      "number": "13.2"
+    },
+    {
+      "id": "sec-Intl.DurationFormat",
+      "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat",
+      "title": "Intl.DurationFormat ( [ locales [ , options ] ] )",
+      "level": 3,
+      "number": "13.2.1"
+    },
+    {
+      "id": "sec-properties-of-intl-durationformat-constructor",
+      "href": "https://tc39.es/ecma402/#sec-properties-of-intl-durationformat-constructor",
+      "title": "Properties of the Intl.DurationFormat Constructor",
+      "level": 2,
+      "number": "13.3"
+    },
+    {
+      "id": "sec-Intl.DurationFormat.prototype",
+      "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat.prototype",
+      "title": "Intl.DurationFormat.prototype",
+      "level": 3,
+      "number": "13.3.1"
+    },
+    {
+      "id": "sec-Intl.DurationFormat.supportedLocalesOf",
+      "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat.supportedLocalesOf",
+      "title": "Intl.DurationFormat.supportedLocalesOf ( locales [ , options ] )",
+      "level": 3,
+      "number": "13.3.2"
+    },
+    {
+      "id": "sec-Intl.DurationFormat-internal-slots",
+      "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat-internal-slots",
+      "title": "Internal slots",
+      "level": 3,
+      "number": "13.3.3"
+    },
+    {
+      "id": "sec-properties-of-intl-durationformat-prototype-object",
+      "href": "https://tc39.es/ecma402/#sec-properties-of-intl-durationformat-prototype-object",
+      "title": "Properties of the Intl.DurationFormat Prototype Object",
+      "level": 2,
+      "number": "13.4"
+    },
+    {
+      "id": "sec-Intl.DurationFormat.prototype.constructor",
+      "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat.prototype.constructor",
+      "title": "Intl.DurationFormat.prototype.constructor",
+      "level": 3,
+      "number": "13.4.1"
+    },
+    {
+      "id": "sec-Intl.DurationFormat.prototype-@@tostringtag",
+      "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat.prototype-%40%40tostringtag",
+      "title": "Intl.DurationFormat.prototype [ @@toStringTag ]",
+      "level": 3,
+      "number": "13.4.2"
+    },
+    {
+      "id": "sec-Intl.DurationFormat.prototype.format",
+      "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat.prototype.format",
+      "title": "Intl.DurationFormat.prototype.format ( duration )",
+      "level": 3,
+      "number": "13.4.3"
+    },
+    {
+      "id": "sec-Intl.DurationFormat.prototype.formatToParts",
+      "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat.prototype.formatToParts",
+      "title": "Intl.DurationFormat.prototype.formatToParts ( duration )",
+      "level": 3,
+      "number": "13.4.4"
+    },
+    {
+      "id": "sec-Intl.DurationFormat.prototype.resolvedOptions",
+      "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat.prototype.resolvedOptions",
+      "title": "Intl.DurationFormat.prototype.resolvedOptions ( )",
+      "level": 3,
+      "number": "13.4.5"
+    },
+    {
+      "id": "sec-properties-of-intl-durationformat-instances",
+      "href": "https://tc39.es/ecma402/#sec-properties-of-intl-durationformat-instances",
+      "title": "Properties of Intl.DurationFormat Instances",
+      "level": 2,
+      "number": "13.5"
+    },
+    {
       "id": "listformat-objects",
       "href": "https://tc39.es/ecma402/#listformat-objects",
       "title": "ListFormat Objects",
       "level": 1,
-      "number": "13"
+      "number": "14"
     },
     {
       "id": "sec-intl-listformat-constructor",
       "href": "https://tc39.es/ecma402/#sec-intl-listformat-constructor",
       "title": "The Intl.ListFormat Constructor",
       "level": 2,
-      "number": "13.1"
+      "number": "14.1"
     },
     {
       "id": "sec-Intl.ListFormat",
       "href": "https://tc39.es/ecma402/#sec-Intl.ListFormat",
       "title": "Intl.ListFormat ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "13.1.1"
+      "number": "14.1.1"
     },
     {
       "id": "sec-properties-of-intl-listformat-constructor",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-listformat-constructor",
       "title": "Properties of the Intl.ListFormat Constructor",
       "level": 2,
-      "number": "13.2"
+      "number": "14.2"
     },
     {
       "id": "sec-Intl.ListFormat.prototype",
       "href": "https://tc39.es/ecma402/#sec-Intl.ListFormat.prototype",
       "title": "Intl.ListFormat.prototype",
       "level": 3,
-      "number": "13.2.1"
+      "number": "14.2.1"
     },
     {
       "id": "sec-Intl.ListFormat.supportedLocalesOf",
       "href": "https://tc39.es/ecma402/#sec-Intl.ListFormat.supportedLocalesOf",
       "title": "Intl.ListFormat.supportedLocalesOf ( locales [ , options ] )",
       "level": 3,
-      "number": "13.2.2"
+      "number": "14.2.2"
     },
     {
       "id": "sec-Intl.ListFormat-internal-slots",
       "href": "https://tc39.es/ecma402/#sec-Intl.ListFormat-internal-slots",
       "title": "Internal slots",
       "level": 3,
-      "number": "13.2.3"
+      "number": "14.2.3"
     },
     {
       "id": "sec-properties-of-intl-listformat-prototype-object",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-listformat-prototype-object",
       "title": "Properties of the Intl.ListFormat Prototype Object",
       "level": 2,
-      "number": "13.3"
+      "number": "14.3"
     },
     {
       "id": "sec-Intl.ListFormat.prototype.constructor",
       "href": "https://tc39.es/ecma402/#sec-Intl.ListFormat.prototype.constructor",
       "title": "Intl.ListFormat.prototype.constructor",
       "level": 3,
-      "number": "13.3.1"
+      "number": "14.3.1"
     },
     {
       "id": "sec-Intl.ListFormat.prototype.resolvedoptions",
       "href": "https://tc39.es/ecma402/#sec-Intl.ListFormat.prototype.resolvedoptions",
       "title": "Intl.ListFormat.prototype.resolvedOptions ( )",
       "level": 3,
-      "number": "13.3.2"
+      "number": "14.3.2"
     },
     {
       "id": "sec-Intl.ListFormat.prototype.format",
       "href": "https://tc39.es/ecma402/#sec-Intl.ListFormat.prototype.format",
       "title": "Intl.ListFormat.prototype.format ( list )",
       "level": 3,
-      "number": "13.3.3"
+      "number": "14.3.3"
     },
     {
       "id": "sec-Intl.ListFormat.prototype.formatToParts",
       "href": "https://tc39.es/ecma402/#sec-Intl.ListFormat.prototype.formatToParts",
       "title": "Intl.ListFormat.prototype.formatToParts ( list )",
       "level": 3,
-      "number": "13.3.4"
+      "number": "14.3.4"
     },
     {
       "id": "sec-Intl.ListFormat.prototype-toStringTag",
       "href": "https://tc39.es/ecma402/#sec-Intl.ListFormat.prototype-toStringTag",
       "title": "Intl.ListFormat.prototype [ %Symbol.toStringTag% ]",
       "level": 3,
-      "number": "13.3.5"
+      "number": "14.3.5"
     },
     {
       "id": "sec-properties-of-intl-listformat-instances",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-listformat-instances",
       "title": "Properties of Intl.ListFormat Instances",
       "level": 2,
-      "number": "13.4"
+      "number": "14.4"
     },
     {
       "id": "sec-intl-listformat-abstracts",
       "href": "https://tc39.es/ecma402/#sec-intl-listformat-abstracts",
       "title": "Abstract Operations for ListFormat Objects",
       "level": 2,
-      "number": "13.5"
+      "number": "14.5"
     },
     {
       "id": "sec-deconstructpattern",
       "href": "https://tc39.es/ecma402/#sec-deconstructpattern",
       "title": "DeconstructPattern ( pattern, placeables )",
       "level": 3,
-      "number": "13.5.1"
+      "number": "14.5.1"
     },
     {
       "id": "sec-createpartsfromlist",
       "href": "https://tc39.es/ecma402/#sec-createpartsfromlist",
       "title": "CreatePartsFromList ( listFormat, list )",
       "level": 3,
-      "number": "13.5.2"
+      "number": "14.5.2"
     },
     {
       "id": "sec-formatlist",
       "href": "https://tc39.es/ecma402/#sec-formatlist",
       "title": "FormatList ( listFormat, list )",
       "level": 3,
-      "number": "13.5.3"
+      "number": "14.5.3"
     },
     {
       "id": "sec-formatlisttoparts",
       "href": "https://tc39.es/ecma402/#sec-formatlisttoparts",
       "title": "FormatListToParts ( listFormat, list )",
       "level": 3,
-      "number": "13.5.4"
+      "number": "14.5.4"
     },
     {
       "id": "sec-createstringlistfromiterable",
       "href": "https://tc39.es/ecma402/#sec-createstringlistfromiterable",
       "title": "StringListFromIterable ( iterable )",
       "level": 3,
-      "number": "13.5.5"
+      "number": "14.5.5"
     },
     {
       "id": "locale-objects",
       "href": "https://tc39.es/ecma402/#locale-objects",
       "title": "Locale Objects",
       "level": 1,
-      "number": "14"
+      "number": "15"
     },
     {
       "id": "sec-intl-locale-constructor",
       "href": "https://tc39.es/ecma402/#sec-intl-locale-constructor",
       "title": "The Intl.Locale Constructor",
       "level": 2,
-      "number": "14.1"
+      "number": "15.1"
     },
     {
       "id": "sec-Intl.Locale",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale",
       "title": "Intl.Locale ( tag [ , options ] )",
       "level": 3,
-      "number": "14.1.1"
+      "number": "15.1.1"
     },
     {
       "id": "sec-updatelanguageid",
       "href": "https://tc39.es/ecma402/#sec-updatelanguageid",
       "title": "UpdateLanguageId ( tag, options )",
       "level": 3,
-      "number": "14.1.2"
+      "number": "15.1.2"
     },
     {
       "id": "sec-makelocalerecord",
       "href": "https://tc39.es/ecma402/#sec-makelocalerecord",
       "title": "MakeLocaleRecord ( tag, options, localeExtensionKeys )",
       "level": 3,
-      "number": "14.1.3"
+      "number": "15.1.3"
     },
     {
       "id": "sec-properties-of-intl-locale-constructor",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-locale-constructor",
       "title": "Properties of the Intl.Locale Constructor",
       "level": 2,
-      "number": "14.2"
+      "number": "15.2"
     },
     {
       "id": "sec-Intl.Locale.prototype",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype",
       "title": "Intl.Locale.prototype",
       "level": 3,
-      "number": "14.2.1"
+      "number": "15.2.1"
     },
     {
       "id": "sec-intl.locale-internal-slots",
       "href": "https://tc39.es/ecma402/#sec-intl.locale-internal-slots",
       "title": "Internal slots",
       "level": 3,
-      "number": "14.2.2"
+      "number": "15.2.2"
     },
     {
       "id": "sec-properties-of-intl-locale-prototype-object",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-locale-prototype-object",
       "title": "Properties of the Intl.Locale Prototype Object",
       "level": 2,
-      "number": "14.3"
+      "number": "15.3"
     },
     {
       "id": "sec-Intl.Locale.prototype.constructor",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.constructor",
       "title": "Intl.Locale.prototype.constructor",
       "level": 3,
-      "number": "14.3.1"
+      "number": "15.3.1"
     },
     {
       "id": "sec-Intl.Locale.prototype.baseName",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.baseName",
       "title": "get Intl.Locale.prototype.baseName",
       "level": 3,
-      "number": "14.3.2"
+      "number": "15.3.2"
     },
     {
       "id": "sec-Intl.Locale.prototype.calendar",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.calendar",
       "title": "get Intl.Locale.prototype.calendar",
       "level": 3,
-      "number": "14.3.3"
+      "number": "15.3.3"
     },
     {
       "id": "sec-Intl.Locale.prototype.caseFirst",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.caseFirst",
       "title": "get Intl.Locale.prototype.caseFirst",
       "level": 3,
-      "number": "14.3.4"
+      "number": "15.3.4"
     },
     {
       "id": "sec-Intl.Locale.prototype.collation",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.collation",
       "title": "get Intl.Locale.prototype.collation",
       "level": 3,
-      "number": "14.3.5"
+      "number": "15.3.5"
     },
     {
       "id": "sec-Intl.Locale.prototype.hourCycle",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.hourCycle",
       "title": "get Intl.Locale.prototype.hourCycle",
       "level": 3,
-      "number": "14.3.6"
+      "number": "15.3.6"
     },
     {
       "id": "sec-Intl.Locale.prototype.language",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.language",
       "title": "get Intl.Locale.prototype.language",
       "level": 3,
-      "number": "14.3.7"
+      "number": "15.3.7"
     },
     {
       "id": "sec-Intl.Locale.prototype.maximize",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.maximize",
       "title": "Intl.Locale.prototype.maximize ( )",
       "level": 3,
-      "number": "14.3.8"
+      "number": "15.3.8"
     },
     {
       "id": "sec-Intl.Locale.prototype.minimize",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.minimize",
       "title": "Intl.Locale.prototype.minimize ( )",
       "level": 3,
-      "number": "14.3.9"
+      "number": "15.3.9"
     },
     {
       "id": "sec-Intl.Locale.prototype.numberingSystem",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.numberingSystem",
       "title": "get Intl.Locale.prototype.numberingSystem",
       "level": 3,
-      "number": "14.3.10"
+      "number": "15.3.10"
     },
     {
       "id": "sec-Intl.Locale.prototype.numeric",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.numeric",
       "title": "get Intl.Locale.prototype.numeric",
       "level": 3,
-      "number": "14.3.11"
+      "number": "15.3.11"
     },
     {
       "id": "sec-Intl.Locale.prototype.region",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.region",
       "title": "get Intl.Locale.prototype.region",
       "level": 3,
-      "number": "14.3.12"
+      "number": "15.3.12"
     },
     {
       "id": "sec-Intl.Locale.prototype.script",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.script",
       "title": "get Intl.Locale.prototype.script",
       "level": 3,
-      "number": "14.3.13"
+      "number": "15.3.13"
     },
     {
       "id": "sec-Intl.Locale.prototype.toString",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.toString",
       "title": "Intl.Locale.prototype.toString ( )",
       "level": 3,
-      "number": "14.3.14"
+      "number": "15.3.14"
     },
     {
       "id": "sec-intl.locale.prototype-%symbol.tostringtag%",
       "href": "https://tc39.es/ecma402/#sec-intl.locale.prototype-%25symbol.tostringtag%25",
       "title": "Intl.Locale.prototype [ %Symbol.toStringTag% ]",
       "level": 3,
-      "number": "14.3.15"
+      "number": "15.3.15"
     },
     {
       "id": "sec-properties-of-intl-locale-instances",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-locale-instances",
       "title": "Properties of Intl.Locale Instances",
       "level": 2,
-      "number": "14.4"
+      "number": "15.4"
     },
     {
       "id": "sec-intl-locale-abstracts",
       "href": "https://tc39.es/ecma402/#sec-intl-locale-abstracts",
       "title": "Abstract Operations for Locale Objects",
       "level": 2,
-      "number": "14.5"
+      "number": "15.5"
     },
     {
       "id": "sec-getlocalebasename",
       "href": "https://tc39.es/ecma402/#sec-getlocalebasename",
       "title": "GetLocaleBaseName ( locale )",
       "level": 3,
-      "number": "14.5.1"
+      "number": "15.5.1"
     },
     {
       "id": "sec-getlocalelanguage",
       "href": "https://tc39.es/ecma402/#sec-getlocalelanguage",
       "title": "GetLocaleLanguage ( locale )",
       "level": 3,
-      "number": "14.5.2"
+      "number": "15.5.2"
     },
     {
       "id": "sec-getlocalescript",
       "href": "https://tc39.es/ecma402/#sec-getlocalescript",
       "title": "GetLocaleScript ( locale )",
       "level": 3,
-      "number": "14.5.3"
+      "number": "15.5.3"
     },
     {
       "id": "sec-getlocaleregion",
       "href": "https://tc39.es/ecma402/#sec-getlocaleregion",
       "title": "GetLocaleRegion ( locale )",
       "level": 3,
-      "number": "14.5.4"
+      "number": "15.5.4"
     },
     {
       "id": "sec-getlocalevariants",
       "href": "https://tc39.es/ecma402/#sec-getlocalevariants",
       "title": "GetLocaleVariants ( locale )",
       "level": 3,
-      "number": "14.5.5"
+      "number": "15.5.5"
     },
     {
       "id": "numberformat-objects",
       "href": "https://tc39.es/ecma402/#numberformat-objects",
       "title": "NumberFormat Objects",
       "level": 1,
-      "number": "15"
+      "number": "16"
     },
     {
       "id": "sec-intl-numberformat-constructor",
       "href": "https://tc39.es/ecma402/#sec-intl-numberformat-constructor",
       "title": "The Intl.NumberFormat Constructor",
       "level": 2,
-      "number": "15.1"
+      "number": "16.1"
     },
     {
       "id": "sec-intl.numberformat",
       "href": "https://tc39.es/ecma402/#sec-intl.numberformat",
       "title": "Intl.NumberFormat ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "15.1.1"
+      "number": "16.1.1"
     },
     {
       "id": "sec-chainnumberformat",
       "href": "https://tc39.es/ecma402/#sec-chainnumberformat",
       "title": "ChainNumberFormat ( numberFormat, newTarget, this )",
       "level": 4,
-      "number": "15.1.1.1"
+      "number": "16.1.1.1"
     },
     {
       "id": "sec-setnfdigitoptions",
       "href": "https://tc39.es/ecma402/#sec-setnfdigitoptions",
       "title": "SetNumberFormatDigitOptions ( intlObj, options, mnfdDefault, mxfdDefault, notation )",
       "level": 3,
-      "number": "15.1.2"
+      "number": "16.1.2"
     },
     {
       "id": "sec-setnumberformatunitoptions",
       "href": "https://tc39.es/ecma402/#sec-setnumberformatunitoptions",
       "title": "SetNumberFormatUnitOptions ( intlObj, options )",
       "level": 3,
-      "number": "15.1.3"
+      "number": "16.1.3"
     },
     {
       "id": "sec-properties-of-intl-numberformat-constructor",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-numberformat-constructor",
       "title": "Properties of the Intl.NumberFormat Constructor",
       "level": 2,
-      "number": "15.2"
+      "number": "16.2"
     },
     {
       "id": "sec-intl.numberformat.prototype",
       "href": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype",
       "title": "Intl.NumberFormat.prototype",
       "level": 3,
-      "number": "15.2.1"
+      "number": "16.2.1"
     },
     {
       "id": "sec-intl.numberformat.supportedlocalesof",
       "href": "https://tc39.es/ecma402/#sec-intl.numberformat.supportedlocalesof",
       "title": "Intl.NumberFormat.supportedLocalesOf ( locales [ , options ] )",
       "level": 3,
-      "number": "15.2.2"
+      "number": "16.2.2"
     },
     {
       "id": "sec-intl.numberformat-internal-slots",
       "href": "https://tc39.es/ecma402/#sec-intl.numberformat-internal-slots",
       "title": "Internal slots",
       "level": 3,
-      "number": "15.2.3"
+      "number": "16.2.3"
     },
     {
       "id": "sec-properties-of-intl-numberformat-prototype-object",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-numberformat-prototype-object",
       "title": "Properties of the Intl.NumberFormat Prototype Object",
       "level": 2,
-      "number": "15.3"
+      "number": "16.3"
     },
     {
       "id": "sec-intl.numberformat.prototype.constructor",
       "href": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.constructor",
       "title": "Intl.NumberFormat.prototype.constructor",
       "level": 3,
-      "number": "15.3.1"
+      "number": "16.3.1"
     },
     {
       "id": "sec-intl.numberformat.prototype.resolvedoptions",
       "href": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.resolvedoptions",
       "title": "Intl.NumberFormat.prototype.resolvedOptions ( )",
       "level": 3,
-      "number": "15.3.2"
+      "number": "16.3.2"
     },
     {
       "id": "sec-intl.numberformat.prototype.format",
       "href": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.format",
       "title": "get Intl.NumberFormat.prototype.format",
       "level": 3,
-      "number": "15.3.3"
+      "number": "16.3.3"
     },
     {
       "id": "sec-intl.numberformat.prototype.formatrange",
       "href": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.formatrange",
       "title": "Intl.NumberFormat.prototype.formatRange ( start, end )",
       "level": 3,
-      "number": "15.3.4"
+      "number": "16.3.4"
     },
     {
       "id": "sec-intl.numberformat.prototype.formatrangetoparts",
       "href": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.formatrangetoparts",
       "title": "Intl.NumberFormat.prototype.formatRangeToParts ( start, end )",
       "level": 3,
-      "number": "15.3.5"
+      "number": "16.3.5"
     },
     {
       "id": "sec-intl.numberformat.prototype.formattoparts",
       "href": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.formattoparts",
       "title": "Intl.NumberFormat.prototype.formatToParts ( value )",
       "level": 3,
-      "number": "15.3.6"
+      "number": "16.3.6"
     },
     {
       "id": "sec-intl.numberformat.prototype-%symbol.tostringtag%",
       "href": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype-%25symbol.tostringtag%25",
       "title": "Intl.NumberFormat.prototype [ %Symbol.toStringTag% ]",
       "level": 3,
-      "number": "15.3.7"
+      "number": "16.3.7"
     },
     {
       "id": "sec-properties-of-intl-numberformat-instances",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-numberformat-instances",
       "title": "Properties of Intl.NumberFormat Instances",
       "level": 2,
-      "number": "15.4"
+      "number": "16.4"
     },
     {
       "id": "sec-numberformat-abstracts",
       "href": "https://tc39.es/ecma402/#sec-numberformat-abstracts",
       "title": "Abstract Operations for NumberFormat Objects",
       "level": 2,
-      "number": "15.5"
+      "number": "16.5"
     },
     {
       "id": "sec-currencydigits",
       "href": "https://tc39.es/ecma402/#sec-currencydigits",
       "title": "CurrencyDigits ( currency )",
       "level": 3,
-      "number": "15.5.1"
+      "number": "16.5.1"
     },
     {
       "id": "sec-number-format-functions",
       "href": "https://tc39.es/ecma402/#sec-number-format-functions",
       "title": "Number Format Functions",
       "level": 3,
-      "number": "15.5.2"
+      "number": "16.5.2"
     },
     {
       "id": "sec-formatnumberstring",
       "href": "https://tc39.es/ecma402/#sec-formatnumberstring",
       "title": "FormatNumericToString ( intlObject, x )",
       "level": 3,
-      "number": "15.5.3"
+      "number": "16.5.3"
     },
     {
       "id": "sec-partitionnumberpattern",
       "href": "https://tc39.es/ecma402/#sec-partitionnumberpattern",
       "title": "PartitionNumberPattern ( numberFormat, x )",
       "level": 3,
-      "number": "15.5.4"
+      "number": "16.5.4"
     },
     {
       "id": "sec-partitionnotationsubpattern",
       "href": "https://tc39.es/ecma402/#sec-partitionnotationsubpattern",
       "title": "PartitionNotationSubPattern ( numberFormat, x, n, exponent )",
       "level": 3,
-      "number": "15.5.5"
+      "number": "16.5.5"
     },
     {
       "id": "sec-formatnumber",
       "href": "https://tc39.es/ecma402/#sec-formatnumber",
       "title": "FormatNumeric ( numberFormat, x )",
       "level": 3,
-      "number": "15.5.6"
+      "number": "16.5.6"
     },
     {
       "id": "sec-formatnumbertoparts",
       "href": "https://tc39.es/ecma402/#sec-formatnumbertoparts",
       "title": "FormatNumericToParts ( numberFormat, x )",
       "level": 3,
-      "number": "15.5.7"
+      "number": "16.5.7"
     },
     {
       "id": "sec-torawprecision",
       "href": "https://tc39.es/ecma402/#sec-torawprecision",
       "title": "ToRawPrecision ( x, minPrecision, maxPrecision, unsignedRoundingMode )",
       "level": 3,
-      "number": "15.5.8"
+      "number": "16.5.8"
     },
     {
       "id": "sec-torawfixed",
       "href": "https://tc39.es/ecma402/#sec-torawfixed",
       "title": "ToRawFixed ( x, minFraction, maxFraction, roundingIncrement, unsignedRoundingMode )",
       "level": 3,
-      "number": "15.5.9"
+      "number": "16.5.9"
     },
     {
       "id": "sec-unwrapnumberformat",
       "href": "https://tc39.es/ecma402/#sec-unwrapnumberformat",
       "title": "UnwrapNumberFormat ( nf )",
       "level": 3,
-      "number": "15.5.10"
+      "number": "16.5.10"
     },
     {
       "id": "sec-getnumberformatpattern",
       "href": "https://tc39.es/ecma402/#sec-getnumberformatpattern",
       "title": "GetNumberFormatPattern ( numberFormat, x )",
       "level": 3,
-      "number": "15.5.11"
+      "number": "16.5.11"
     },
     {
       "id": "sec-getnotationsubpattern",
       "href": "https://tc39.es/ecma402/#sec-getnotationsubpattern",
       "title": "GetNotationSubPattern ( numberFormat, exponent )",
       "level": 3,
-      "number": "15.5.12"
+      "number": "16.5.12"
     },
     {
       "id": "sec-computeexponent",
       "href": "https://tc39.es/ecma402/#sec-computeexponent",
       "title": "ComputeExponent ( numberFormat, x )",
       "level": 3,
-      "number": "15.5.13"
+      "number": "16.5.13"
     },
     {
       "id": "sec-computeexponentformagnitude",
       "href": "https://tc39.es/ecma402/#sec-computeexponentformagnitude",
       "title": "ComputeExponentForMagnitude ( numberFormat, magnitude )",
       "level": 3,
-      "number": "15.5.14"
+      "number": "16.5.14"
     },
     {
       "id": "sec-runtime-semantics-stringintlmv",
       "href": "https://tc39.es/ecma402/#sec-runtime-semantics-stringintlmv",
       "title": "Runtime Semantics: StringIntlMV",
       "level": 3,
-      "number": "15.5.15"
+      "number": "16.5.15"
     },
     {
       "id": "sec-tointlmathematicalvalue",
       "href": "https://tc39.es/ecma402/#sec-tointlmathematicalvalue",
       "title": "ToIntlMathematicalValue ( value )",
       "level": 3,
-      "number": "15.5.16"
+      "number": "16.5.16"
     },
     {
       "id": "sec-getunsignedroundingmode",
       "href": "https://tc39.es/ecma402/#sec-getunsignedroundingmode",
       "title": "GetUnsignedRoundingMode ( roundingMode, sign )",
       "level": 3,
-      "number": "15.5.17"
+      "number": "16.5.17"
     },
     {
       "id": "sec-applyunsignedroundingmode",
       "href": "https://tc39.es/ecma402/#sec-applyunsignedroundingmode",
       "title": "ApplyUnsignedRoundingMode ( x, r1, r2, unsignedRoundingMode )",
       "level": 3,
-      "number": "15.5.18"
+      "number": "16.5.18"
     },
     {
       "id": "sec-partitionnumberrangepattern",
       "href": "https://tc39.es/ecma402/#sec-partitionnumberrangepattern",
       "title": "PartitionNumberRangePattern ( numberFormat, x, y )",
       "level": 3,
-      "number": "15.5.19"
+      "number": "16.5.19"
     },
     {
       "id": "sec-formatapproximately",
       "href": "https://tc39.es/ecma402/#sec-formatapproximately",
       "title": "FormatApproximately ( numberFormat, result )",
       "level": 3,
-      "number": "15.5.20"
+      "number": "16.5.20"
     },
     {
       "id": "sec-collapsenumberrange",
       "href": "https://tc39.es/ecma402/#sec-collapsenumberrange",
       "title": "CollapseNumberRange ( numberFormat, result )",
       "level": 3,
-      "number": "15.5.21"
+      "number": "16.5.21"
     },
     {
       "id": "sec-formatnumericrange",
       "href": "https://tc39.es/ecma402/#sec-formatnumericrange",
       "title": "FormatNumericRange ( numberFormat, x, y )",
       "level": 3,
-      "number": "15.5.22"
+      "number": "16.5.22"
     },
     {
       "id": "sec-formatnumericrangetoparts",
       "href": "https://tc39.es/ecma402/#sec-formatnumericrangetoparts",
       "title": "FormatNumericRangeToParts ( numberFormat, x, y )",
       "level": 3,
-      "number": "15.5.23"
+      "number": "16.5.23"
     },
     {
       "id": "pluralrules-objects",
       "href": "https://tc39.es/ecma402/#pluralrules-objects",
       "title": "PluralRules Objects",
       "level": 1,
-      "number": "16"
+      "number": "17"
     },
     {
       "id": "sec-intl-pluralrules-constructor",
       "href": "https://tc39.es/ecma402/#sec-intl-pluralrules-constructor",
       "title": "The Intl.PluralRules Constructor",
       "level": 2,
-      "number": "16.1"
+      "number": "17.1"
     },
     {
       "id": "sec-intl.pluralrules",
       "href": "https://tc39.es/ecma402/#sec-intl.pluralrules",
       "title": "Intl.PluralRules ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "16.1.1"
+      "number": "17.1.1"
     },
     {
       "id": "sec-properties-of-intl-pluralrules-constructor",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-pluralrules-constructor",
       "title": "Properties of the Intl.PluralRules Constructor",
       "level": 2,
-      "number": "16.2"
+      "number": "17.2"
     },
     {
       "id": "sec-intl.pluralrules.prototype",
       "href": "https://tc39.es/ecma402/#sec-intl.pluralrules.prototype",
       "title": "Intl.PluralRules.prototype",
       "level": 3,
-      "number": "16.2.1"
+      "number": "17.2.1"
     },
     {
       "id": "sec-intl.pluralrules.supportedlocalesof",
       "href": "https://tc39.es/ecma402/#sec-intl.pluralrules.supportedlocalesof",
       "title": "Intl.PluralRules.supportedLocalesOf ( locales [ , options ] )",
       "level": 3,
-      "number": "16.2.2"
+      "number": "17.2.2"
     },
     {
       "id": "sec-intl.pluralrules-internal-slots",
       "href": "https://tc39.es/ecma402/#sec-intl.pluralrules-internal-slots",
       "title": "Internal slots",
       "level": 3,
-      "number": "16.2.3"
+      "number": "17.2.3"
     },
     {
       "id": "sec-properties-of-intl-pluralrules-prototype-object",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-pluralrules-prototype-object",
       "title": "Properties of the Intl.PluralRules Prototype Object",
       "level": 2,
-      "number": "16.3"
+      "number": "17.3"
     },
     {
       "id": "sec-intl.pluralrules.prototype.constructor",
       "href": "https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.constructor",
       "title": "Intl.PluralRules.prototype.constructor",
       "level": 3,
-      "number": "16.3.1"
+      "number": "17.3.1"
     },
     {
       "id": "sec-intl.pluralrules.prototype.resolvedoptions",
       "href": "https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.resolvedoptions",
       "title": "Intl.PluralRules.prototype.resolvedOptions ( )",
       "level": 3,
-      "number": "16.3.2"
+      "number": "17.3.2"
     },
     {
       "id": "sec-intl.pluralrules.prototype.select",
       "href": "https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.select",
       "title": "Intl.PluralRules.prototype.select ( value )",
       "level": 3,
-      "number": "16.3.3"
+      "number": "17.3.3"
     },
     {
       "id": "sec-intl.pluralrules.prototype.selectrange",
       "href": "https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.selectrange",
       "title": "Intl.PluralRules.prototype.selectRange ( start, end )",
       "level": 3,
-      "number": "16.3.4"
+      "number": "17.3.4"
     },
     {
       "id": "sec-intl.pluralrules.prototype-%symbol.tostringtag%",
       "href": "https://tc39.es/ecma402/#sec-intl.pluralrules.prototype-%25symbol.tostringtag%25",
       "title": "Intl.PluralRules.prototype [ %Symbol.toStringTag% ]",
       "level": 3,
-      "number": "16.3.5"
+      "number": "17.3.5"
     },
     {
       "id": "sec-properties-of-intl-pluralrules-instances",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-pluralrules-instances",
       "title": "Properties of Intl.PluralRules Instances",
       "level": 2,
-      "number": "16.4"
+      "number": "17.4"
     },
     {
       "id": "sec-intl-pluralrules-abstracts",
       "href": "https://tc39.es/ecma402/#sec-intl-pluralrules-abstracts",
       "title": "Abstract Operations for PluralRules Objects",
       "level": 2,
-      "number": "16.5"
+      "number": "17.5"
     },
     {
       "id": "sec-pluralruleselect",
       "href": "https://tc39.es/ecma402/#sec-pluralruleselect",
       "title": "PluralRuleSelect ( locale, type, s )",
       "level": 3,
-      "number": "16.5.1"
+      "number": "17.5.1"
     },
     {
       "id": "sec-resolveplural",
       "href": "https://tc39.es/ecma402/#sec-resolveplural",
       "title": "ResolvePlural ( pluralRules, n )",
       "level": 3,
-      "number": "16.5.2"
+      "number": "17.5.2"
     },
     {
       "id": "sec-pluralruleselectrange",
       "href": "https://tc39.es/ecma402/#sec-pluralruleselectrange",
       "title": "PluralRuleSelectRange ( locale, type, xp, yp )",
       "level": 3,
-      "number": "16.5.3"
+      "number": "17.5.3"
     },
     {
       "id": "sec-resolvepluralrange",
       "href": "https://tc39.es/ecma402/#sec-resolvepluralrange",
       "title": "ResolvePluralRange ( pluralRules, x, y )",
       "level": 3,
-      "number": "16.5.4"
+      "number": "17.5.4"
     },
     {
       "id": "relativetimeformat-objects",
       "href": "https://tc39.es/ecma402/#relativetimeformat-objects",
       "title": "RelativeTimeFormat Objects",
       "level": 1,
-      "number": "17"
+      "number": "18"
     },
     {
       "id": "sec-intl-relativetimeformat-constructor",
       "href": "https://tc39.es/ecma402/#sec-intl-relativetimeformat-constructor",
       "title": "The Intl.RelativeTimeFormat Constructor",
       "level": 2,
-      "number": "17.1"
+      "number": "18.1"
     },
     {
       "id": "sec-Intl.RelativeTimeFormat",
       "href": "https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat",
       "title": "Intl.RelativeTimeFormat ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "17.1.1"
+      "number": "18.1.1"
     },
     {
       "id": "sec-properties-of-intl-relativetimeformat-constructor",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-relativetimeformat-constructor",
       "title": "Properties of the Intl.RelativeTimeFormat Constructor",
       "level": 2,
-      "number": "17.2"
+      "number": "18.2"
     },
     {
       "id": "sec-Intl.RelativeTimeFormat.prototype",
       "href": "https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.prototype",
       "title": "Intl.RelativeTimeFormat.prototype",
       "level": 3,
-      "number": "17.2.1"
+      "number": "18.2.1"
     },
     {
       "id": "sec-Intl.RelativeTimeFormat.supportedLocalesOf",
       "href": "https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.supportedLocalesOf",
       "title": "Intl.RelativeTimeFormat.supportedLocalesOf ( locales [ , options ] )",
       "level": 3,
-      "number": "17.2.2"
+      "number": "18.2.2"
     },
     {
       "id": "sec-Intl.RelativeTimeFormat-internal-slots",
       "href": "https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat-internal-slots",
       "title": "Internal slots",
       "level": 3,
-      "number": "17.2.3"
+      "number": "18.2.3"
     },
     {
       "id": "sec-properties-of-intl-relativetimeformat-prototype-object",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-relativetimeformat-prototype-object",
       "title": "Properties of the Intl.RelativeTimeFormat Prototype Object",
       "level": 2,
-      "number": "17.3"
+      "number": "18.3"
     },
     {
       "id": "sec-Intl.RelativeTimeFormat.prototype.constructor",
       "href": "https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.prototype.constructor",
       "title": "Intl.RelativeTimeFormat.prototype.constructor",
       "level": 3,
-      "number": "17.3.1"
+      "number": "18.3.1"
     },
     {
       "id": "sec-intl.relativetimeformat.prototype.resolvedoptions",
       "href": "https://tc39.es/ecma402/#sec-intl.relativetimeformat.prototype.resolvedoptions",
       "title": "Intl.RelativeTimeFormat.prototype.resolvedOptions ( )",
       "level": 3,
-      "number": "17.3.2"
+      "number": "18.3.2"
     },
     {
       "id": "sec-Intl.RelativeTimeFormat.prototype.format",
       "href": "https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.prototype.format",
       "title": "Intl.RelativeTimeFormat.prototype.format ( value, unit )",
       "level": 3,
-      "number": "17.3.3"
+      "number": "18.3.3"
     },
     {
       "id": "sec-Intl.RelativeTimeFormat.prototype.formatToParts",
       "href": "https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.prototype.formatToParts",
       "title": "Intl.RelativeTimeFormat.prototype.formatToParts ( value, unit )",
       "level": 3,
-      "number": "17.3.4"
+      "number": "18.3.4"
     },
     {
       "id": "sec-Intl.RelativeTimeFormat.prototype-toStringTag",
       "href": "https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.prototype-toStringTag",
       "title": "Intl.RelativeTimeFormat.prototype [ %Symbol.toStringTag% ]",
       "level": 3,
-      "number": "17.3.5"
+      "number": "18.3.5"
     },
     {
       "id": "sec-properties-of-intl-relativetimeformat-instances",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-relativetimeformat-instances",
       "title": "Properties of Intl.RelativeTimeFormat Instances",
       "level": 2,
-      "number": "17.4"
+      "number": "18.4"
     },
     {
       "id": "sec-intl-relativetimeformat--abstracts",
       "href": "https://tc39.es/ecma402/#sec-intl-relativetimeformat--abstracts",
       "title": "Abstract Operations for RelativeTimeFormat Objects",
       "level": 2,
-      "number": "17.5"
+      "number": "18.5"
     },
     {
       "id": "sec-singularrelativetimeunit",
       "href": "https://tc39.es/ecma402/#sec-singularrelativetimeunit",
       "title": "SingularRelativeTimeUnit ( unit )",
       "level": 3,
-      "number": "17.5.1"
+      "number": "18.5.1"
     },
     {
       "id": "sec-PartitionRelativeTimePattern",
       "href": "https://tc39.es/ecma402/#sec-PartitionRelativeTimePattern",
       "title": "PartitionRelativeTimePattern ( relativeTimeFormat, value, unit )",
       "level": 3,
-      "number": "17.5.2"
+      "number": "18.5.2"
     },
     {
       "id": "sec-makepartslist",
       "href": "https://tc39.es/ecma402/#sec-makepartslist",
       "title": "MakePartsList ( pattern, unit, parts )",
       "level": 3,
-      "number": "17.5.3"
+      "number": "18.5.3"
     },
     {
       "id": "sec-FormatRelativeTime",
       "href": "https://tc39.es/ecma402/#sec-FormatRelativeTime",
       "title": "FormatRelativeTime ( relativeTimeFormat, value, unit )",
       "level": 3,
-      "number": "17.5.4"
+      "number": "18.5.4"
     },
     {
       "id": "sec-FormatRelativeTimeToParts",
       "href": "https://tc39.es/ecma402/#sec-FormatRelativeTimeToParts",
       "title": "FormatRelativeTimeToParts ( relativeTimeFormat, value, unit )",
       "level": 3,
-      "number": "17.5.5"
+      "number": "18.5.5"
     },
     {
       "id": "segmenter-objects",
       "href": "https://tc39.es/ecma402/#segmenter-objects",
       "title": "Segmenter Objects",
       "level": 1,
-      "number": "18"
+      "number": "19"
     },
     {
       "id": "sec-intl-segmenter-constructor",
       "href": "https://tc39.es/ecma402/#sec-intl-segmenter-constructor",
       "title": "The Intl.Segmenter Constructor",
       "level": 2,
-      "number": "18.1"
+      "number": "19.1"
     },
     {
       "id": "sec-intl.segmenter",
       "href": "https://tc39.es/ecma402/#sec-intl.segmenter",
       "title": "Intl.Segmenter ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "18.1.1"
+      "number": "19.1.1"
     },
     {
       "id": "sec-properties-of-intl-segmenter-constructor",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-segmenter-constructor",
       "title": "Properties of the Intl.Segmenter Constructor",
       "level": 2,
-      "number": "18.2"
+      "number": "19.2"
     },
     {
       "id": "sec-intl.segmenter.prototype",
       "href": "https://tc39.es/ecma402/#sec-intl.segmenter.prototype",
       "title": "Intl.Segmenter.prototype",
       "level": 3,
-      "number": "18.2.1"
+      "number": "19.2.1"
     },
     {
       "id": "sec-intl.segmenter.supportedlocalesof",
       "href": "https://tc39.es/ecma402/#sec-intl.segmenter.supportedlocalesof",
       "title": "Intl.Segmenter.supportedLocalesOf ( locales [ , options ] )",
       "level": 3,
-      "number": "18.2.2"
+      "number": "19.2.2"
     },
     {
       "id": "sec-intl.segmenter-internal-slots",
       "href": "https://tc39.es/ecma402/#sec-intl.segmenter-internal-slots",
       "title": "Internal slots",
       "level": 3,
-      "number": "18.2.3"
+      "number": "19.2.3"
     },
     {
       "id": "sec-properties-of-intl-segmenter-prototype-object",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-segmenter-prototype-object",
       "title": "Properties of the Intl.Segmenter Prototype Object",
       "level": 2,
-      "number": "18.3"
+      "number": "19.3"
     },
     {
       "id": "sec-intl.segmenter.prototype.constructor",
       "href": "https://tc39.es/ecma402/#sec-intl.segmenter.prototype.constructor",
       "title": "Intl.Segmenter.prototype.constructor",
       "level": 3,
-      "number": "18.3.1"
+      "number": "19.3.1"
     },
     {
       "id": "sec-intl.segmenter.prototype.resolvedoptions",
       "href": "https://tc39.es/ecma402/#sec-intl.segmenter.prototype.resolvedoptions",
       "title": "Intl.Segmenter.prototype.resolvedOptions ( )",
       "level": 3,
-      "number": "18.3.2"
+      "number": "19.3.2"
     },
     {
       "id": "sec-intl.segmenter.prototype.segment",
       "href": "https://tc39.es/ecma402/#sec-intl.segmenter.prototype.segment",
       "title": "Intl.Segmenter.prototype.segment ( string )",
       "level": 3,
-      "number": "18.3.3"
+      "number": "19.3.3"
     },
     {
       "id": "sec-intl.segmenter.prototype-%symbol.tostringtag%",
       "href": "https://tc39.es/ecma402/#sec-intl.segmenter.prototype-%25symbol.tostringtag%25",
       "title": "Intl.Segmenter.prototype [ %Symbol.toStringTag% ]",
       "level": 3,
-      "number": "18.3.4"
+      "number": "19.3.4"
     },
     {
       "id": "sec-properties-of-intl-segmenter-instances",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-segmenter-instances",
       "title": "Properties of Intl.Segmenter Instances",
       "level": 2,
-      "number": "18.4"
+      "number": "19.4"
     },
     {
       "id": "sec-segments-objects",
       "href": "https://tc39.es/ecma402/#sec-segments-objects",
       "title": "Segments Objects",
       "level": 2,
-      "number": "18.5"
+      "number": "19.5"
     },
     {
       "id": "sec-createsegmentsobject",
       "href": "https://tc39.es/ecma402/#sec-createsegmentsobject",
       "title": "CreateSegmentsObject ( segmenter, string )",
       "level": 3,
-      "number": "18.5.1"
+      "number": "19.5.1"
     },
     {
       "id": "sec-%intlsegmentsprototype%-object",
       "href": "https://tc39.es/ecma402/#sec-%25intlsegmentsprototype%25-object",
       "title": "The %IntlSegmentsPrototype% Object",
       "level": 3,
-      "number": "18.5.2"
+      "number": "19.5.2"
     },
     {
       "id": "sec-%intlsegmentsprototype%.containing",
       "href": "https://tc39.es/ecma402/#sec-%25intlsegmentsprototype%25.containing",
       "title": "%IntlSegmentsPrototype%.containing ( index )",
       "level": 4,
-      "number": "18.5.2.1"
+      "number": "19.5.2.1"
     },
     {
       "id": "sec-%intlsegmentsprototype%-%symbol.iterator%",
       "href": "https://tc39.es/ecma402/#sec-%25intlsegmentsprototype%25-%25symbol.iterator%25",
       "title": "%IntlSegmentsPrototype% [ %Symbol.iterator% ] ( )",
       "level": 4,
-      "number": "18.5.2.2"
+      "number": "19.5.2.2"
     },
     {
       "id": "sec-properties-of-segments-instances",
       "href": "https://tc39.es/ecma402/#sec-properties-of-segments-instances",
       "title": "Properties of Segments Instances",
       "level": 3,
-      "number": "18.5.3"
+      "number": "19.5.3"
     },
     {
       "id": "sec-segment-iterator-objects",
       "href": "https://tc39.es/ecma402/#sec-segment-iterator-objects",
       "title": "Segment Iterator Objects",
       "level": 2,
-      "number": "18.6"
+      "number": "19.6"
     },
     {
       "id": "sec-createsegmentiterator",
       "href": "https://tc39.es/ecma402/#sec-createsegmentiterator",
       "title": "CreateSegmentIterator ( segmenter, string )",
       "level": 3,
-      "number": "18.6.1"
+      "number": "19.6.1"
     },
     {
       "id": "sec-%intlsegmentiteratorprototype%-object",
       "href": "https://tc39.es/ecma402/#sec-%25intlsegmentiteratorprototype%25-object",
       "title": "The %IntlSegmentIteratorPrototype% Object",
       "level": 3,
-      "number": "18.6.2"
+      "number": "19.6.2"
     },
     {
       "id": "sec-%intlsegmentiteratorprototype%.next",
       "href": "https://tc39.es/ecma402/#sec-%25intlsegmentiteratorprototype%25.next",
       "title": "%IntlSegmentIteratorPrototype%.next ( )",
       "level": 4,
-      "number": "18.6.2.1"
+      "number": "19.6.2.1"
     },
     {
       "id": "sec-%intlsegmentiteratorprototype%.%symbol.tostringtag%",
       "href": "https://tc39.es/ecma402/#sec-%25intlsegmentiteratorprototype%25.%25symbol.tostringtag%25",
       "title": "%IntlSegmentIteratorPrototype% [ %Symbol.toStringTag% ]",
       "level": 4,
-      "number": "18.6.2.2"
+      "number": "19.6.2.2"
     },
     {
       "id": "sec-properties-of-segment-iterator-instances",
       "href": "https://tc39.es/ecma402/#sec-properties-of-segment-iterator-instances",
       "title": "Properties of Segment Iterator Instances",
       "level": 3,
-      "number": "18.6.3"
+      "number": "19.6.3"
     },
     {
       "id": "sec-segment-data-objects",
       "href": "https://tc39.es/ecma402/#sec-segment-data-objects",
       "title": "Segment Data Objects",
       "level": 2,
-      "number": "18.7"
+      "number": "19.7"
     },
     {
       "id": "sec-createsegmentdataobject",
       "href": "https://tc39.es/ecma402/#sec-createsegmentdataobject",
       "title": "CreateSegmentDataObject ( segmenter, string, startIndex, endIndex )",
       "level": 3,
-      "number": "18.7.1"
+      "number": "19.7.1"
     },
     {
       "id": "sec-intl-segmenter-abstracts",
       "href": "https://tc39.es/ecma402/#sec-intl-segmenter-abstracts",
       "title": "Abstract Operations for Segmenter Objects",
       "level": 2,
-      "number": "18.8"
+      "number": "19.8"
     },
     {
       "id": "sec-findboundary",
       "href": "https://tc39.es/ecma402/#sec-findboundary",
       "title": "FindBoundary ( segmenter, string, startIndex, direction )",
       "level": 3,
-      "number": "18.8.1"
+      "number": "19.8.1"
     },
     {
       "id": "locale-sensitive-functions",
       "href": "https://tc39.es/ecma402/#locale-sensitive-functions",
       "title": "Locale Sensitive Functions of the ECMAScript Language Specification",
       "level": 1,
-      "number": "19"
+      "number": "20"
     },
     {
       "id": "sup-properties-of-the-string-prototype-object",
       "href": "https://tc39.es/ecma402/#sup-properties-of-the-string-prototype-object",
       "title": "Properties of the String Prototype Object",
       "level": 2,
-      "number": "19.1"
+      "number": "20.1"
     },
     {
       "id": "sup-String.prototype.localeCompare",
       "href": "https://tc39.es/ecma402/#sup-String.prototype.localeCompare",
       "title": "String.prototype.localeCompare ( that [ , locales [ , options ] ] )",
       "level": 3,
-      "number": "19.1.1"
+      "number": "20.1.1"
     },
     {
       "id": "sup-string.prototype.tolocalelowercase",
       "href": "https://tc39.es/ecma402/#sup-string.prototype.tolocalelowercase",
       "title": "String.prototype.toLocaleLowerCase ( [ locales ] )",
       "level": 3,
-      "number": "19.1.2"
+      "number": "20.1.2"
     },
     {
       "id": "sec-transform-case",
       "href": "https://tc39.es/ecma402/#sec-transform-case",
       "title": "TransformCase ( S, locales, targetCase )",
       "level": 4,
-      "number": "19.1.2.1"
+      "number": "20.1.2.1"
     },
     {
       "id": "sup-string.prototype.tolocaleuppercase",
       "href": "https://tc39.es/ecma402/#sup-string.prototype.tolocaleuppercase",
       "title": "String.prototype.toLocaleUpperCase ( [ locales ] )",
       "level": 3,
-      "number": "19.1.3"
+      "number": "20.1.3"
     },
     {
       "id": "sup-properties-of-the-number-prototype-object",
       "href": "https://tc39.es/ecma402/#sup-properties-of-the-number-prototype-object",
       "title": "Properties of the Number Prototype Object",
       "level": 2,
-      "number": "19.2"
+      "number": "20.2"
     },
     {
       "id": "sup-number.prototype.tolocalestring",
       "href": "https://tc39.es/ecma402/#sup-number.prototype.tolocalestring",
       "title": "Number.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "19.2.1"
+      "number": "20.2.1"
     },
     {
       "id": "sup-properties-of-the-bigint-prototype-object",
       "href": "https://tc39.es/ecma402/#sup-properties-of-the-bigint-prototype-object",
       "title": "Properties of the BigInt Prototype Object",
       "level": 2,
-      "number": "19.3"
+      "number": "20.3"
     },
     {
       "id": "sup-bigint.prototype.tolocalestring",
       "href": "https://tc39.es/ecma402/#sup-bigint.prototype.tolocalestring",
       "title": "BigInt.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "19.3.1"
+      "number": "20.3.1"
     },
     {
       "id": "sup-properties-of-the-date-prototype-object",
       "href": "https://tc39.es/ecma402/#sup-properties-of-the-date-prototype-object",
       "title": "Properties of the Date Prototype Object",
       "level": 2,
-      "number": "19.4"
+      "number": "20.4"
     },
     {
       "id": "sup-date.prototype.tolocalestring",
       "href": "https://tc39.es/ecma402/#sup-date.prototype.tolocalestring",
       "title": "Date.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "19.4.1"
+      "number": "20.4.1"
     },
     {
       "id": "sup-date.prototype.tolocaledatestring",
       "href": "https://tc39.es/ecma402/#sup-date.prototype.tolocaledatestring",
       "title": "Date.prototype.toLocaleDateString ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "19.4.2"
+      "number": "20.4.2"
     },
     {
       "id": "sup-date.prototype.tolocaletimestring",
       "href": "https://tc39.es/ecma402/#sup-date.prototype.tolocaletimestring",
       "title": "Date.prototype.toLocaleTimeString ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "19.4.3"
+      "number": "20.4.3"
     },
     {
       "id": "sup-properties-of-the-array-prototype-object",
       "href": "https://tc39.es/ecma402/#sup-properties-of-the-array-prototype-object",
       "title": "Properties of the Array Prototype Object",
       "level": 2,
-      "number": "19.5"
+      "number": "20.5"
     },
     {
       "id": "sup-array.prototype.tolocalestring",
       "href": "https://tc39.es/ecma402/#sup-array.prototype.tolocalestring",
       "title": "Array.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "19.5.1"
+      "number": "20.5.1"
     }
   ]
 }
