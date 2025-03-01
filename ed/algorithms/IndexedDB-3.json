@@ -393,6 +393,9 @@
               "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#open-a-database-connection\" id=\"ref-for-open-a-database-connection①\">opening a database connection</a>, with <var>storageKey</var>, <var>name</var>, <var>version</var> if given and undefined\notherwise, and <var>request</var>.</p>"
             },
             {
+              "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed-flag\" id=\"ref-for-request-processed-flag①\">processed flag</a> to true.</p>"
+            },
+            {
               "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">Queue a task</a> to run these steps:",
               "rationale": "if",
               "steps": [
@@ -461,7 +464,7 @@
               "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#delete-a-database\" id=\"ref-for-delete-a-database\">deleting a database</a>, with <var>storageKey</var>, <var>name</var>, and <var>request</var>.</p>"
             },
             {
-              "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed-flag\" id=\"ref-for-request-processed-flag①\">processed flag</a> to true.</p>"
+              "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed-flag\" id=\"ref-for-request-processed-flag②\">processed flag</a> to true.</p>"
             },
             {
               "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task②\">Queue a task</a> to run these steps:",
@@ -1586,7 +1589,7 @@
           "html": "<p>Let <var>request</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#cursor-request\" id=\"ref-for-cursor-request⑥\">request</a>.</p>"
         },
         {
-          "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed-flag\" id=\"ref-for-request-processed-flag②\">processed flag</a> to false.</p>"
+          "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed-flag\" id=\"ref-for-request-processed-flag③\">processed flag</a> to false.</p>"
         },
         {
           "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-done-flag\" id=\"ref-for-request-done-flag①②\">done flag</a> to false.</p>"
@@ -1645,7 +1648,7 @@
           "html": "<p>Let <var>request</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#cursor-request\" id=\"ref-for-cursor-request⑦\">request</a>.</p>"
         },
         {
-          "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed-flag\" id=\"ref-for-request-processed-flag③\">processed flag</a> to false.</p>"
+          "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed-flag\" id=\"ref-for-request-processed-flag④\">processed flag</a> to false.</p>"
         },
         {
           "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-done-flag\" id=\"ref-for-request-done-flag①③\">done flag</a> to false.</p>"
@@ -1719,7 +1722,7 @@
           "html": "<p>Let <var>request</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#cursor-request\" id=\"ref-for-cursor-request⑧\">request</a>.</p>"
         },
         {
-          "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed-flag\" id=\"ref-for-request-processed-flag④\">processed flag</a> to false.</p>"
+          "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed-flag\" id=\"ref-for-request-processed-flag⑤\">processed flag</a> to false.</p>"
         },
         {
           "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-done-flag\" id=\"ref-for-request-done-flag①④\">done flag</a> to false.</p>"
@@ -2071,7 +2074,7 @@
           "html": "<p>If <var>error</var> is not null, set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-error\" id=\"ref-for-transaction-error①\">error</a> to <var>error</var>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>request</var> of <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-request-list\" id=\"ref-for-transaction-request-list①\">request list</a>,\nabort the steps to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#asynchronously-execute-a-request\" id=\"ref-for-asynchronously-execute-a-request②③\">asynchronously execute a request</a> for <var>request</var>,\nset <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed-flag\" id=\"ref-for-request-processed-flag⑤\">processed flag</a> to true,\nand <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑨\">queue a task</a> to run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>request</var> of <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-request-list\" id=\"ref-for-transaction-request-list①\">request list</a>,\nabort the steps to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#asynchronously-execute-a-request\" id=\"ref-for-asynchronously-execute-a-request②③\">asynchronously execute a request</a> for <var>request</var>,\nset <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed-flag\" id=\"ref-for-request-processed-flag⑥\">processed flag</a> to true,\nand <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑨\">queue a task</a> to run these steps:",
           "rationale": "set",
           "steps": [
             {
@@ -2112,7 +2115,7 @@
                   "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-result\" id=\"ref-for-request-result⑧\">result</a> to undefined.</p>"
                 },
                 {
-                  "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed-flag\" id=\"ref-for-request-processed-flag⑥\">processed flag</a> to false.</p>"
+                  "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed-flag\" id=\"ref-for-request-processed-flag⑦\">processed flag</a> to false.</p>"
                 },
                 {
                   "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-done-flag\" id=\"ref-for-request-done-flag①⑥\">done flag</a> to false.</p>"
@@ -2158,7 +2161,7 @@
               "html": "<p>If <var>result</var> is an error,\nthen revert all changes made by <var>operation</var>.</p>"
             },
             {
-              "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed-flag\" id=\"ref-for-request-processed-flag⑦\">processed flag</a> to true.</p>"
+              "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed-flag\" id=\"ref-for-request-processed-flag⑧\">processed flag</a> to true.</p>"
             },
             {
               "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①①\">Queue a task</a> to run these steps:",
@@ -2240,7 +2243,7 @@
           "html": "<p>Set <var>db</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#database-version\" id=\"ref-for-database-version②⓪\">version</a> to <var>version</var>. This change is\nconsidered part of the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-concept\" id=\"ref-for-transaction-concept⑦⑨\">transaction</a>, and so if the\ntransaction is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-abort\" id=\"ref-for-transaction-abort⑨\">aborted</a>, this change is reverted.</p>"
         },
         {
-          "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed-flag\" id=\"ref-for-request-processed-flag⑧\">processed flag</a> to true.</p>"
+          "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed-flag\" id=\"ref-for-request-processed-flag⑨\">processed flag</a> to true.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①②\">Queue a task</a> to run these steps:",
