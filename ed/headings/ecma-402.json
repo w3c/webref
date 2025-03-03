@@ -1034,200 +1034,207 @@
       "number": "13"
     },
     {
-      "id": "sec-intl-durationformat-abstracts",
-      "href": "https://tc39.es/ecma402/#sec-intl-durationformat-abstracts",
-      "title": "Abstract Operations for DurationFormat Objects",
-      "level": 2,
-      "number": "13.1"
-    },
-    {
-      "id": "sec-duration-records",
-      "href": "https://tc39.es/ecma402/#sec-duration-records",
-      "title": "Duration Records",
-      "level": 3,
-      "number": "13.1.1"
-    },
-    {
-      "id": "sec-tointegerifintegral",
-      "href": "https://tc39.es/ecma402/#sec-tointegerifintegral",
-      "title": "ToIntegerIfIntegral ( argument )",
-      "level": 3,
-      "number": "13.1.2"
-    },
-    {
-      "id": "sec-todurationrecord",
-      "href": "https://tc39.es/ecma402/#sec-todurationrecord",
-      "title": "ToDurationRecord ( input )",
-      "level": 3,
-      "number": "13.1.3"
-    },
-    {
-      "id": "sec-durationsign",
-      "href": "https://tc39.es/ecma402/#sec-durationsign",
-      "title": "DurationSign ( duration )",
-      "level": 3,
-      "number": "13.1.4"
-    },
-    {
-      "id": "sec-isvalidduration",
-      "href": "https://tc39.es/ecma402/#sec-isvalidduration",
-      "title": "IsValidDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
-      "level": 3,
-      "number": "13.1.5"
-    },
-    {
-      "id": "sec-getdurationunitoptions",
-      "href": "https://tc39.es/ecma402/#sec-getdurationunitoptions",
-      "title": "GetDurationUnitOptions ( unit, options, baseStyle, stylesList, digitalBase, prevStyle, twoDigitHours )",
-      "level": 3,
-      "number": "13.1.6"
-    },
-    {
-      "id": "sec-computefractionaldigits",
-      "href": "https://tc39.es/ecma402/#sec-computefractionaldigits",
-      "title": "ComputeFractionalDigits ( durationFormat, duration )",
-      "level": 3,
-      "number": "13.1.7"
-    },
-    {
-      "id": "sec-nextunitfractional",
-      "href": "https://tc39.es/ecma402/#sec-nextunitfractional",
-      "title": "NextUnitFractional ( durationFormat, unit )",
-      "level": 3,
-      "number": "13.1.8"
-    },
-    {
-      "id": "sec-formatnumerichours",
-      "href": "https://tc39.es/ecma402/#sec-formatnumerichours",
-      "title": "FormatNumericHours ( durationFormat, hoursValue, signDisplayed )",
-      "level": 3,
-      "number": "13.1.9"
-    },
-    {
-      "id": "sec-formatnumericminutes",
-      "href": "https://tc39.es/ecma402/#sec-formatnumericminutes",
-      "title": "FormatNumericMinutes ( durationFormat, minutesValue, hoursDisplayed, signDisplayed )",
-      "level": 3,
-      "number": "13.1.10"
-    },
-    {
-      "id": "sec-formatnumericseconds",
-      "href": "https://tc39.es/ecma402/#sec-formatnumericseconds",
-      "title": "FormatNumericSeconds ( durationFormat, secondsValue, minutesDisplayed, signDisplayed )",
-      "level": 3,
-      "number": "13.1.11"
-    },
-    {
-      "id": "sec-formatnumericunits",
-      "href": "https://tc39.es/ecma402/#sec-formatnumericunits",
-      "title": "FormatNumericUnits ( durationFormat, duration, firstNumericUnit, signDisplayed )",
-      "level": 3,
-      "number": "13.1.12"
-    },
-    {
-      "id": "sec-listformatparts",
-      "href": "https://tc39.es/ecma402/#sec-listformatparts",
-      "title": "ListFormatParts ( durationFormat, partitionedPartsList )",
-      "level": 3,
-      "number": "13.1.13"
-    },
-    {
-      "id": "sec-partitiondurationformatpattern",
-      "href": "https://tc39.es/ecma402/#sec-partitiondurationformatpattern",
-      "title": "PartitionDurationFormatPattern ( durationFormat, duration )",
-      "level": 3,
-      "number": "13.1.14"
-    },
-    {
       "id": "sec-intl-durationformat-constructor",
       "href": "https://tc39.es/ecma402/#sec-intl-durationformat-constructor",
       "title": "The Intl.DurationFormat Constructor",
       "level": 2,
-      "number": "13.2"
+      "number": "13.1"
     },
     {
       "id": "sec-Intl.DurationFormat",
       "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat",
       "title": "Intl.DurationFormat ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "13.2.1"
+      "number": "13.1.1"
     },
     {
       "id": "sec-properties-of-intl-durationformat-constructor",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-durationformat-constructor",
       "title": "Properties of the Intl.DurationFormat Constructor",
       "level": 2,
-      "number": "13.3"
+      "number": "13.2"
     },
     {
       "id": "sec-Intl.DurationFormat.prototype",
       "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat.prototype",
       "title": "Intl.DurationFormat.prototype",
       "level": 3,
-      "number": "13.3.1"
+      "number": "13.2.1"
     },
     {
       "id": "sec-Intl.DurationFormat.supportedLocalesOf",
       "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat.supportedLocalesOf",
       "title": "Intl.DurationFormat.supportedLocalesOf ( locales [ , options ] )",
       "level": 3,
-      "number": "13.3.2"
+      "number": "13.2.2"
     },
     {
       "id": "sec-Intl.DurationFormat-internal-slots",
       "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat-internal-slots",
       "title": "Internal slots",
       "level": 3,
-      "number": "13.3.3"
+      "number": "13.2.3"
     },
     {
       "id": "sec-properties-of-intl-durationformat-prototype-object",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-durationformat-prototype-object",
       "title": "Properties of the Intl.DurationFormat Prototype Object",
       "level": 2,
-      "number": "13.4"
+      "number": "13.3"
     },
     {
       "id": "sec-Intl.DurationFormat.prototype.constructor",
       "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat.prototype.constructor",
       "title": "Intl.DurationFormat.prototype.constructor",
       "level": 3,
-      "number": "13.4.1"
-    },
-    {
-      "id": "sec-Intl.DurationFormat.prototype-@@tostringtag",
-      "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat.prototype-%40%40tostringtag",
-      "title": "Intl.DurationFormat.prototype [ @@toStringTag ]",
-      "level": 3,
-      "number": "13.4.2"
-    },
-    {
-      "id": "sec-Intl.DurationFormat.prototype.format",
-      "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat.prototype.format",
-      "title": "Intl.DurationFormat.prototype.format ( duration )",
-      "level": 3,
-      "number": "13.4.3"
-    },
-    {
-      "id": "sec-Intl.DurationFormat.prototype.formatToParts",
-      "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat.prototype.formatToParts",
-      "title": "Intl.DurationFormat.prototype.formatToParts ( duration )",
-      "level": 3,
-      "number": "13.4.4"
+      "number": "13.3.1"
     },
     {
       "id": "sec-Intl.DurationFormat.prototype.resolvedOptions",
       "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat.prototype.resolvedOptions",
       "title": "Intl.DurationFormat.prototype.resolvedOptions ( )",
       "level": 3,
-      "number": "13.4.5"
+      "number": "13.3.2"
+    },
+    {
+      "id": "sec-Intl.DurationFormat.prototype.format",
+      "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat.prototype.format",
+      "title": "Intl.DurationFormat.prototype.format ( duration )",
+      "level": 3,
+      "number": "13.3.3"
+    },
+    {
+      "id": "sec-Intl.DurationFormat.prototype.formatToParts",
+      "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat.prototype.formatToParts",
+      "title": "Intl.DurationFormat.prototype.formatToParts ( duration )",
+      "level": 3,
+      "number": "13.3.4"
+    },
+    {
+      "id": "sec-Intl.DurationFormat.prototype-%symbol.tostringtag%",
+      "href": "https://tc39.es/ecma402/#sec-Intl.DurationFormat.prototype-%25symbol.tostringtag%25",
+      "title": "Intl.DurationFormat.prototype [ %Symbol.toStringTag% ]",
+      "level": 3,
+      "number": "13.3.5"
     },
     {
       "id": "sec-properties-of-intl-durationformat-instances",
       "href": "https://tc39.es/ecma402/#sec-properties-of-intl-durationformat-instances",
       "title": "Properties of Intl.DurationFormat Instances",
       "level": 2,
+      "number": "13.4"
+    },
+    {
+      "id": "sec-intl-durationformat-abstracts",
+      "href": "https://tc39.es/ecma402/#sec-intl-durationformat-abstracts",
+      "title": "Abstract Operations for DurationFormat Objects",
+      "level": 2,
       "number": "13.5"
+    },
+    {
+      "id": "sec-duration-records",
+      "href": "https://tc39.es/ecma402/#sec-duration-records",
+      "title": "Duration Records",
+      "level": 3,
+      "number": "13.5.1"
+    },
+    {
+      "id": "sec-tointegerifintegral",
+      "href": "https://tc39.es/ecma402/#sec-tointegerifintegral",
+      "title": "ToIntegerIfIntegral ( argument )",
+      "level": 3,
+      "number": "13.5.2"
+    },
+    {
+      "id": "sec-todurationrecord",
+      "href": "https://tc39.es/ecma402/#sec-todurationrecord",
+      "title": "ToDurationRecord ( input )",
+      "level": 3,
+      "number": "13.5.3"
+    },
+    {
+      "id": "sec-durationsign",
+      "href": "https://tc39.es/ecma402/#sec-durationsign",
+      "title": "DurationSign ( duration )",
+      "level": 3,
+      "number": "13.5.4"
+    },
+    {
+      "id": "sec-isvalidduration",
+      "href": "https://tc39.es/ecma402/#sec-isvalidduration",
+      "title": "IsValidDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
+      "level": 3,
+      "number": "13.5.5"
+    },
+    {
+      "id": "sec-getdurationunitoptions",
+      "href": "https://tc39.es/ecma402/#sec-getdurationunitoptions",
+      "title": "GetDurationUnitOptions ( unit, options, baseStyle, stylesList, digitalBase, prevStyle, twoDigitHours )",
+      "level": 3,
+      "number": "13.5.6"
+    },
+    {
+      "id": "sec-stringpaddingbuiltinsimpl",
+      "href": "https://tc39.es/ecma402/#sec-stringpaddingbuiltinsimpl",
+      "title": "ValidateDurationUnitStyle ( unit, style, display, prevStyle )",
+      "level": 4,
+      "number": "13.5.6.1"
+    },
+    {
+      "id": "sec-computefractionaldigits",
+      "href": "https://tc39.es/ecma402/#sec-computefractionaldigits",
+      "title": "ComputeFractionalDigits ( durationFormat, duration )",
+      "level": 3,
+      "number": "13.5.7"
+    },
+    {
+      "id": "sec-nextunitfractional",
+      "href": "https://tc39.es/ecma402/#sec-nextunitfractional",
+      "title": "NextUnitFractional ( durationFormat, unit )",
+      "level": 3,
+      "number": "13.5.8"
+    },
+    {
+      "id": "sec-formatnumerichours",
+      "href": "https://tc39.es/ecma402/#sec-formatnumerichours",
+      "title": "FormatNumericHours ( durationFormat, hoursValue, signDisplayed )",
+      "level": 3,
+      "number": "13.5.9"
+    },
+    {
+      "id": "sec-formatnumericminutes",
+      "href": "https://tc39.es/ecma402/#sec-formatnumericminutes",
+      "title": "FormatNumericMinutes ( durationFormat, minutesValue, hoursDisplayed, signDisplayed )",
+      "level": 3,
+      "number": "13.5.10"
+    },
+    {
+      "id": "sec-formatnumericseconds",
+      "href": "https://tc39.es/ecma402/#sec-formatnumericseconds",
+      "title": "FormatNumericSeconds ( durationFormat, secondsValue, minutesDisplayed, signDisplayed )",
+      "level": 3,
+      "number": "13.5.11"
+    },
+    {
+      "id": "sec-formatnumericunits",
+      "href": "https://tc39.es/ecma402/#sec-formatnumericunits",
+      "title": "FormatNumericUnits ( durationFormat, duration, firstNumericUnit, signDisplayed )",
+      "level": 3,
+      "number": "13.5.12"
+    },
+    {
+      "id": "sec-listformatparts",
+      "href": "https://tc39.es/ecma402/#sec-listformatparts",
+      "title": "ListFormatParts ( durationFormat, partitionedPartsList )",
+      "level": 3,
+      "number": "13.5.13"
+    },
+    {
+      "id": "sec-partitiondurationformatpattern",
+      "href": "https://tc39.es/ecma402/#sec-partitiondurationformatpattern",
+      "title": "PartitionDurationFormatPattern ( durationFormat, duration )",
+      "level": 3,
+      "number": "13.5.14"
     },
     {
       "id": "listformat-objects",

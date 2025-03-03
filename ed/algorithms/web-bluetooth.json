@@ -2832,6 +2832,9 @@
               "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑤\">success</a> with data <code>null</code>.</p>"
             }
           ]
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①②\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑧\">invalid argument</a>.</p>"
         }
       ]
     },
@@ -2847,13 +2850,13 @@
           "html": "<p>Let <var>navigable</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try③\">trying</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#get-a-navigable\" id=\"ref-for-get-a-navigable①\">get a navigable</a> with <var>contextId</var>.</p>"
         },
         {
-          "html": "<p>If <var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top④\">top-level traversable</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①②\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑧\">invalid argument</a>.</p>"
+          "html": "<p>If <var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top④\">top-level traversable</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①③\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑨\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>simulatedBluetoothAdapter</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#simulated-bluetooth-adapter\" id=\"ref-for-simulated-bluetooth-adapter①⓪\">simulated Bluetooth adapter</a>.</p>"
         },
         {
-          "html": "<p>If <var>simulatedBluetoothAdapter</var> is empty, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①③\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑨\">invalid argument</a>.</p>"
+          "html": "<p>If <var>simulatedBluetoothAdapter</var> is empty, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①③\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①④\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⓪\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>deviceAddress</var> be <var>params</var>[<code>\"address\"</code>].</p>"
@@ -2862,7 +2865,7 @@
           "html": "<p>Let <var>deviceMapping</var> be <var>simulatedBluetoothAdapter</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#simulated-bluetooth-device-mapping\" id=\"ref-for-simulated-bluetooth-device-mapping①\">simulated Bluetooth device mapping</a>.</p>"
         },
         {
-          "html": "<p>If <var>deviceMapping</var>[<var>deviceAddress</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">exists</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①③\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①④\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⓪\">invalid argument</a>.</p>"
+          "html": "<p>If <var>deviceMapping</var>[<var>deviceAddress</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">exists</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①①\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>simulatedBluetoothDevice</var> be a new <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#simulated-bluetooth-device\" id=\"ref-for-simulated-bluetooth-device②\">simulated Bluetooth device</a>.</p>"
@@ -2899,7 +2902,7 @@
           "html": "<p>Let <var>topLevelNavigable</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try④\">trying</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#get-a-navigable\" id=\"ref-for-get-a-navigable②\">get a navigable</a> with <var>contextId</var>.</p>"
         },
         {
-          "html": "<p>If <var>topLevelNavigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top⑤\">top-level traversable</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①①\">invalid argument</a>.</p>"
+          "html": "<p>If <var>topLevelNavigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top⑤\">top-level traversable</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①⑤\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①②\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>scanEntry</var> be <var>params</var>[<code>\"scanEntry\"</code>].</p>"
@@ -2911,7 +2914,7 @@
           "html": "<p>Let <var>simulatedBluetoothAdapter</var> be <var>topLevelNavigable</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#simulated-bluetooth-adapter\" id=\"ref-for-simulated-bluetooth-adapter①①\">simulated Bluetooth adapter</a>.</p>"
         },
         {
-          "html": "<p>If <var>simulatedBluetoothAdapter</var> is empty, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①⑤\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①②\">invalid argument</a>.</p>"
+          "html": "<p>If <var>simulatedBluetoothAdapter</var> is empty, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⑦\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①③\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>deviceMapping</var> be <var>simulatedBluetoothAdapter</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#simulated-bluetooth-device-mapping\" id=\"ref-for-simulated-bluetooth-device-mapping②\">simulated Bluetooth device mapping</a>.</p>"

@@ -89,6 +89,7 @@
           "PageRevealEvent",
           "PageTransitionEvent",
           "DOMParser",
+          "XMLSerializer",
           "MessageEvent",
           "EventSource",
           "MessageChannel",
@@ -32741,6 +32742,65 @@
         "extAttrs": [],
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype"
       },
+      "XMLSerializer": {
+        "fragment": "[Exposed=Window]\ninterface XMLSerializer {\n  constructor();\n\n  DOMString serializeToString(Node root);\n};",
+        "type": "interface",
+        "name": "XMLSerializer",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": []
+          },
+          {
+            "type": "operation",
+            "name": "serializeToString",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "root",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Node"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-xmlserializer-serializetostring"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#xmlserializer"
+      },
       "Navigator": {
         "fragment": "[Exposed=Window]\ninterface Navigator {\n  // objects implementing this interface also implement the interfaces given below\n};",
         "type": "interface",
@@ -43868,6 +43928,7 @@
         "NotRestoredReasonDetails",
         "NotRestoredReasons",
         "DOMParser",
+        "XMLSerializer",
         "Navigator",
         "PluginArray",
         "MimeTypeArray",
@@ -44764,6 +44825,9 @@
       "Range": [
         "DocumentFragment",
         "TrustedHTML"
+      ],
+      "XMLSerializer": [
+        "Node"
       ],
       "NavigatorID": [],
       "NavigatorLanguage": [],
