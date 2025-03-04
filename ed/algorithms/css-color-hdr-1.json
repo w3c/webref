@@ -39,10 +39,10 @@
           "html": "<p>Let <var>c2xyz</var> be <var>c2</var> converted to D65 CIE XYZ</p>"
         },
         {
-          "html": "<p>Let <var> w1</var> = clamp((log(<var>H</var>) - log(<var>H2</var>)) / (log(<var>H1</var>) - log(<var>H2</var>)), 0, 1)</p>"
+          "html": "<p>Let <var> w1</var> = clamp((<var>H</var> - <var>H2</var>) / (<var>H1</var> - <var>H2</var>), 0, 1)</p>"
         },
         {
-          "html": "<p>Let <var> w2</var> = clamp((log(<var>H</var>) - log(<var>H1</var>)) / (log(<var>H2</var>) - log(<var>H1</var>)), 0, 1)\nNote that <var> w2</var> = 1 - <var> w1</var></p>"
+          "html": "<p>Let <var> w2</var> = clamp((<var>H</var> - <var>H1</var>) / (<var>H2</var> - <var>H1</var>), 0, 1)\nNote that <var> w2</var> = 1 - <var> w1</var></p>"
         },
         {
           "html": "<p>Let <var>eps</var> = 0.001 (one JND in linear-light space)</p>"
