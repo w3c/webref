@@ -8803,6 +8803,98 @@
       ]
     },
     {
+      "name": "WebDriver BiDi file dialog opened",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-file-dialog-opened",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger②③\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-file-dialog-opened\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi file dialog opened</dfn> steps, given <var>element</var> and optionally <var>file picker options</var> (default: null):",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>navigable</var> be the <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document②\">node document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②①\">navigable</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>navigable id</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id②⑤\">navigable id</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>multiple</var> be <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>element</var> is not null and <var>element</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/input.html#attr-input-multiple\" id=\"ref-for-attr-input-multiple①\">multiple</a></code> attribute is set,\n  set <var>multiple</var> to <code>true</code>.</p>"
+        },
+        {
+          "html": "If <var>file picker options</var> is not null:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>file picker options</var>[\"<code>multiple</code>\"] is true, set <var>multiple</var> to <code>true</code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>related navigables</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑥⓪\">set</a> containing <var>navigable</var>.</p>"
+        },
+        {
+          "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled②①\">set of sessions for which an event is enabled</a> given\n \"<code>input.fileDialogOpened</code>\" and <var>related navigables</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④④\">map</a> matching the <code>input.FileDialogInfo</code> production with the <code>context</code> field set to <var>navigable id</var> and <code>multiple</code> field set to <var>multiple</var>.</p>"
+            },
+            {
+              "html": "If <var>element</var> is not null:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>shared id</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#get-shared-id-for-a-node\" id=\"ref-for-get-shared-id-for-a-node①\">get shared id for a node</a> with <var>element</var> and <var>session</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>params</var>[\"<code>element</code>\"] to <var>shared id</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④⑤\">map</a> matching the <code>input.fileDialogOpened</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#emit-an-event\" id=\"ref-for-emit-an-event②⑥\">Emit an event</a> with <var>session</var> and <var>body</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>dismissed</var> be false.</p>"
+        },
+        {
+          "html": "For each <var>session</var> in <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#active-bidi-sessions\" id=\"ref-for-active-bidi-sessions④\">active BiDi sessions</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>user prompt handler</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-user-prompt-handler\" id=\"ref-for-dfn-user-prompt-handler\">user prompt handler</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>user prompt handler</var> is not null:</p>"
+            },
+            {
+              "html": "<p>Assert <var>user prompt handler</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④⑥\">map</a>.</p>"
+            },
+            {
+              "html": "If <var>user prompt handler</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥⑨\">contains</a> \"<code>file</code>\":",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>user prompt handler</var>[\"<code>file</code>\"] is not equal to\n \"<code>ignore</code>\", set <var>dismissed</var> to true.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Otherwise if <var>user prompt handler</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦⓪\">contains</a> \"<code>default</code>\" and <var>user prompt handler</var>[\"<code>default</code>\"] is not equal to\n  \"<code>ignore</code>\", set <var>dismissed</var> to true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>dismissed</var>.</p>"
+        }
+      ]
+    },
+    {
       "name": "extract a zip archive",
       "href": "https://w3c.github.io/webdriver-bidi/#extract-a-zip-archive",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"extract-a-zip-archive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">extract a zip archive</dfn> given <var>bytes</var>:",
@@ -8913,7 +9005,7 @@
           "html": "<p>Perform implementation defined steps to install a web extension from <var>extension directory entry</var>. If this fails, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①①③\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⓪⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#errors-invalid-web-extension\" id=\"ref-for-errors-invalid-web-extension②\">invalid web extension</a>. Otherwise let <var>extension id</var> be the unique identifier of the newly installed web extension.</p>"
         },
         {
-          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④④\">map</a> matching the <code>webExtension.InstallResult</code> production with the <code>extension</code> field set to <var>extension id</var>.</p>"
+          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④⑦\">map</a> matching the <code>webExtension.InstallResult</code> production with the <code>extension</code> field set to <var>extension id</var>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑧⑥\">success</a> with data <var>result</var>.</p>"
@@ -8955,7 +9047,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#device-pixel-ratio-overrides\" id=\"ref-for-device-pixel-ratio-overrides②\">device pixel ratio overrides</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥⑨\">contains</a> <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable③\">navigable</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#device-pixel-ratio-overrides\" id=\"ref-for-device-pixel-ratio-overrides③\">device pixel ratio overrides</a>[<var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable④\">navigable</a>].</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#device-pixel-ratio-overrides\" id=\"ref-for-device-pixel-ratio-overrides②\">device pixel ratio overrides</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦①\">contains</a> <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable③\">navigable</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#device-pixel-ratio-overrides\" id=\"ref-for-device-pixel-ratio-overrides③\">device pixel ratio overrides</a>[<var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable④\">navigable</a>].</p>"
         }
       ]
     }

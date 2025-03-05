@@ -1,0 +1,365 @@
+{
+  "spec": {
+    "title": "Deferred Imports Evaluation",
+    "url": "https://tc39.es/proposal-defer-import-eval/"
+  },
+  "headings": [
+    {
+      "id": "sec-ordinary-and-exotic-objects-behaviours",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-ordinary-and-exotic-objects-behaviours",
+      "title": "Ordinary and Exotic Objects Behaviours",
+      "level": 1,
+      "number": "10"
+    },
+    {
+      "id": "sec-built-in-exotic-object-internal-methods-and-slots",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-built-in-exotic-object-internal-methods-and-slots",
+      "title": "Built-in Exotic Object Internal Methods and Slots",
+      "level": 2,
+      "number": "10.4"
+    },
+    {
+      "id": "sec-module-namespace-exotic-objects",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-module-namespace-exotic-objects",
+      "title": "Module Namespace Exotic Objects",
+      "level": 3,
+      "number": "10.4.6"
+    },
+    {
+      "id": "sec-module-namespace-exotic-objects-getownproperty-p",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-module-namespace-exotic-objects-getownproperty-p",
+      "title": "[[GetOwnProperty]] ( P )",
+      "level": 4,
+      "number": "10.4.6.5"
+    },
+    {
+      "id": "sec-module-namespace-exotic-objects-defineownproperty-p-desc",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-module-namespace-exotic-objects-defineownproperty-p-desc",
+      "title": "[[DefineOwnProperty]] ( P, Desc )",
+      "level": 4,
+      "number": "10.4.6.6"
+    },
+    {
+      "id": "sec-module-namespace-exotic-objects-hasproperty-p",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-module-namespace-exotic-objects-hasproperty-p",
+      "title": "[[HasProperty]] ( P )",
+      "level": 4,
+      "number": "10.4.6.7"
+    },
+    {
+      "id": "sec-module-namespace-exotic-objects-get-p-receiver",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-module-namespace-exotic-objects-get-p-receiver",
+      "title": "[[Get]] ( P, Receiver )",
+      "level": 4,
+      "number": "10.4.6.8"
+    },
+    {
+      "id": "sec-module-namespace-exotic-objects-set-p-v-receiver",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-module-namespace-exotic-objects-set-p-v-receiver",
+      "title": "[[Set]] ( P, V, Receiver )",
+      "level": 4,
+      "number": "10.4.6.9"
+    },
+    {
+      "id": "sec-module-namespace-exotic-objects-delete-p",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-module-namespace-exotic-objects-delete-p",
+      "title": "[[Delete]] ( P )",
+      "level": 4,
+      "number": "10.4.6.10"
+    },
+    {
+      "id": "sec-module-namespace-exotic-objects-ownpropertykeys",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-module-namespace-exotic-objects-ownpropertykeys",
+      "title": "[[OwnPropertyKeys]] ( )",
+      "level": 4,
+      "number": "10.4.6.11"
+    },
+    {
+      "id": "sec-modulenamespacecreate",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-modulenamespacecreate",
+      "title": "ModuleNamespaceCreate ( module, exports, phase )",
+      "level": 4,
+      "number": "10.4.6.12"
+    },
+    {
+      "id": "sec-IsSymbolLikeNamespaceKey",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-IsSymbolLikeNamespaceKey",
+      "title": "IsSymbolLikeNamespaceKey ( P, ns )",
+      "level": 4,
+      "number": "10.4.6.13"
+    },
+    {
+      "id": "sec-GetModuleExportsList",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-GetModuleExportsList",
+      "title": "GetModuleExportsList ( O )",
+      "level": 4,
+      "number": "10.4.6.14"
+    },
+    {
+      "id": "sec-ReadyForSyncExecution",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-ReadyForSyncExecution",
+      "title": "ReadyForSyncExecution ( module [ , seen ] )",
+      "level": 5,
+      "number": "10.4.6.14.1"
+    },
+    {
+      "id": "sec-ecmascript-language-expressions",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-ecmascript-language-expressions",
+      "title": "ECMAScript Language: Expressions",
+      "level": 1,
+      "number": "13"
+    },
+    {
+      "id": "sec-left-hand-side-expressions",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-left-hand-side-expressions",
+      "title": "Left-Hand-Side Expressions",
+      "level": 2,
+      "number": "13.3"
+    },
+    {
+      "id": "sec-import-calls",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-import-calls",
+      "title": "Import Calls",
+      "level": 3,
+      "number": "13.3.10"
+    },
+    {
+      "id": "sec-import-call-runtime-semantics-evaluation",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-import-call-runtime-semantics-evaluation",
+      "title": "Runtime Semantics: Evaluation",
+      "level": 4,
+      "number": "13.3.10.1"
+    },
+    {
+      "id": "sec-import-call-runtime-semantics-EvaluateImportCallSpecifier",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-import-call-runtime-semantics-EvaluateImportCallSpecifier",
+      "title": "Runtime Semantics: EvaluateImportCallSpecifier",
+      "level": 4,
+      "number": "13.3.10.2"
+    },
+    {
+      "id": "sec-import-call-runtime-semantics-EvaluateImportCallOptions",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-import-call-runtime-semantics-EvaluateImportCallOptions",
+      "title": "Runtime Semantics: EvaluateImportCallOptions",
+      "level": 4,
+      "number": "13.3.10.3"
+    },
+    {
+      "id": "sec-evaluate-import-call",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-evaluate-import-call",
+      "title": "EvaluateImportCall ( arguments, phase, specifierExpression [ , optionsExpression ] )",
+      "level": 4,
+      "number": "13.3.10.4"
+    },
+    {
+      "id": "sec-ContinueDynamicImport",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-ContinueDynamicImport",
+      "title": "ContinueDynamicImport ( promiseCapability, payload, moduleCompletion )",
+      "level": 5,
+      "number": "13.3.10.4.1"
+    },
+    {
+      "id": "sec-ecmascript-language-scripts-and-modules",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-ecmascript-language-scripts-and-modules",
+      "title": "ECMAScript Language: Scripts and Modules",
+      "level": 1,
+      "number": "16"
+    },
+    {
+      "id": "sec-modules",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-modules",
+      "title": "Modules",
+      "level": 2,
+      "number": "16.2"
+    },
+    {
+      "id": "sec-module-semantics",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-module-semantics",
+      "title": "Module Semantics",
+      "level": 3,
+      "number": "16.2.1"
+    },
+    {
+      "id": "sec-modulerequest-record",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-modulerequest-record",
+      "title": "ModuleRequest Records",
+      "level": 4,
+      "number": "16.2.1.1"
+    },
+    {
+      "id": "sec-ModuleRequestsEqual",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-ModuleRequestsEqual",
+      "title": "ModuleRequestsEqual ( left, right )",
+      "level": 5,
+      "number": "16.2.1.1.1"
+    },
+    {
+      "id": "sec-static-semantics-modulerequests",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-static-semantics-modulerequests",
+      "title": "Static Semantics: ModuleRequests",
+      "level": 4,
+      "number": "16.2.1.3"
+    },
+    {
+      "id": "sec-abstract-module-records",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-abstract-module-records",
+      "title": "Abstract Module Records",
+      "level": 4,
+      "number": "16.2.1.4"
+    },
+    {
+      "id": "sec-cyclic-module-records",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-cyclic-module-records",
+      "title": "Cyclic Module Records",
+      "level": 4,
+      "number": "16.2.1.5"
+    },
+    {
+      "id": "sec-LoadRequestedModules",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-LoadRequestedModules",
+      "title": "LoadRequestedModules ( [ hostDefined ] )",
+      "level": 5,
+      "number": "16.2.1.5.1"
+    },
+    {
+      "id": "sec-InnerModuleLoading",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-InnerModuleLoading",
+      "title": "InnerModuleLoading ( state, module )",
+      "level": 6,
+      "number": "16.2.1.5.1.1"
+    },
+    {
+      "id": "sec-moduledeclarationlinking",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-moduledeclarationlinking",
+      "title": "Link ( )",
+      "level": 5,
+      "number": "16.2.1.5.2"
+    },
+    {
+      "id": "sec-InnerModuleLinking",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-InnerModuleLinking",
+      "title": "InnerModuleLinking ( module, stack, index )",
+      "level": 6,
+      "number": "16.2.1.5.2.1"
+    },
+    {
+      "id": "sec-moduleevaluation",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-moduleevaluation",
+      "title": "Evaluate ( )",
+      "level": 5,
+      "number": "16.2.1.5.3"
+    },
+    {
+      "id": "sec-innermoduleevaluation",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-innermoduleevaluation",
+      "title": "InnerModuleEvaluation ( module, stack, index )",
+      "level": 6,
+      "number": "16.2.1.5.3.1"
+    },
+    {
+      "id": "sec-EvaluateSync",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-EvaluateSync",
+      "title": "EvaluateSync ( module )",
+      "level": 6,
+      "number": "16.2.1.5.3.2"
+    },
+    {
+      "id": "sec-GatherAsynchronousTransitiveDependencies",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-GatherAsynchronousTransitiveDependencies",
+      "title": "GatherAsynchronousTransitiveDependencies ( module [ , seen ] )",
+      "level": 6,
+      "number": "16.2.1.5.3.3"
+    },
+    {
+      "id": "sec-example-cyclic-module-record-graphs",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-example-cyclic-module-record-graphs",
+      "title": "Example Cyclic Module Record Graphs",
+      "level": 5,
+      "number": "16.2.1.5.4"
+    },
+    {
+      "id": "sec-example-cyclic-module-record-graphs-deferred-imports",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-example-cyclic-module-record-graphs-deferred-imports",
+      "title": "Example Cyclic Module Record Graphs with Deferred Imports",
+      "level": 6,
+      "number": "16.2.1.5.4.1"
+    },
+    {
+      "id": "sec-source-text-module-records",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-source-text-module-records",
+      "title": "Source Text Module Records",
+      "level": 4,
+      "number": "16.2.1.6"
+    },
+    {
+      "id": "sec-source-text-module-record-initialize-environment",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-source-text-module-record-initialize-environment",
+      "title": "InitializeEnvironment ( )",
+      "level": 5,
+      "number": "16.2.1.6.4"
+    },
+    {
+      "id": "sec-AllImportAttributesSupported",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-AllImportAttributesSupported",
+      "title": "AllImportAttributesSupported ( attributes )",
+      "level": 4,
+      "number": "16.2.1.7"
+    },
+    {
+      "id": "sec-hostgetsupportedimportattributes",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-hostgetsupportedimportattributes",
+      "title": "HostGetSupportedImportAttributes ( )",
+      "level": 5,
+      "number": "16.2.1.7.1"
+    },
+    {
+      "id": "sec-getmodulenamespace",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-getmodulenamespace",
+      "title": "GetModuleNamespace ( module, phase )",
+      "level": 4,
+      "number": "16.2.1.10"
+    },
+    {
+      "id": "sec-imports",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-imports",
+      "title": "Imports",
+      "level": 3,
+      "number": "16.2.2"
+    },
+    {
+      "id": "sec-imports-static-semantics-early-errors",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-imports-static-semantics-early-errors",
+      "title": "Static Semantics: Early Errors",
+      "level": 4,
+      "number": "16.2.2.1"
+    },
+    {
+      "id": "sec-static-semantics-importentries",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-static-semantics-importentries",
+      "title": "Static Semantics: ImportEntries",
+      "level": 4,
+      "number": "16.2.2.2"
+    },
+    {
+      "id": "sec-reflection",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-reflection",
+      "title": "Reflection",
+      "level": 1,
+      "number": "28"
+    },
+    {
+      "id": "sec-module-namespace-objects",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-module-namespace-objects",
+      "title": "Module Namespace Objects",
+      "level": 2,
+      "number": "28.3"
+    },
+    {
+      "id": "sec-%symbol.tostringtag%",
+      "href": "https://tc39.es/proposal-defer-import-eval/#sec-%25symbol.tostringtag%25",
+      "title": "%Symbol.toStringTag%",
+      "level": 3,
+      "number": "28.3.1"
+    }
+  ]
+}

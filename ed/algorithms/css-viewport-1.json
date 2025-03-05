@@ -20,17 +20,113 @@
       ]
     },
     {
-      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#dom-viewport-segments\" id=\"ref-for-dom-viewport-segments②\">segments</a></code> attribute must run these steps:",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#dom-viewport-segments\" id=\"ref-for-dom-viewport-segments④\">segments</a></code> attribute getter steps are:",
       "rationale": "if",
       "steps": [
         {
           "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#viewport%E2%91%A0\" id=\"ref-for-viewport①②\">Viewport</a></code>’s associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document\">Document</a></code> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, return null.</p>"
         },
         {
+          "html": "<p>Let <var>topLevelTraversable</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable\">navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable\">top-level traversable</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>topLevelTraversable</var>.<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#top-level-traversable-displayfeaturesoverride\" id=\"ref-for-top-level-traversable-displayfeaturesoverride\">[[DisplayFeaturesOverride]]</a> is non-null, return <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#viewport%E2%91%A0\" id=\"ref-for-viewport①③\">Viewport</a></code>’s <a href=\"https://drafts.csswg.org/css-env-1/#viewport-segments\">segments</a> array calculated from <var>topLevelTraversable</var>.<span id=\"ref-for-top-level-traversable-displayfeaturesoverride①\">[[DisplayFeaturesOverride]]</span>.</p>"
+        },
+        {
           "html": "<p>Returns null if there is only a single viewport segment and abort these steps.</p>"
         },
         {
-          "html": "<p>Otherwise, return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#viewport%E2%91%A0\" id=\"ref-for-viewport①③\">Viewport</a></code>’s <a href=\"https://drafts.csswg.org/css-env-1/#viewport-segments\">segments</a> array.</p>"
+          "html": "<p>Otherwise, return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#viewport%E2%91%A0\" id=\"ref-for-viewport①④\">Viewport</a></code>’s <a href=\"https://drafts.csswg.org/css-env-1/#viewport-segments\">segments</a> array calculated from the hardware features.</p>"
+        }
+      ]
+    },
+    {
+      "html": "This <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-extension-commands\" id=\"ref-for-dfn-extension-commands②\">extension command</a> creates a setup that emulates a set of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#display-feature-override\" id=\"ref-for-display-feature-override①\">display feature override</a> by taking a list of display features as\nparameter.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>features</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-getting-properties\" id=\"ref-for-dfn-getting-properties\">getting a property</a> \"features\" from <var>parameters</var>."
+        },
+        {
+          "html": "If <var>features</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array-objects\" id=\"ref-for-sec-array-objects\">Array</a></code>, return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" id=\"ref-for-dfn-error\">error</a> with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" id=\"ref-for-dfn-error-code\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument\">invalid argument</a>."
+        },
+        {
+          "html": "Let <var>parsedFeatures</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#display-feature-override\" id=\"ref-for-display-feature-override③\">display feature override</a>."
+        },
+        {
+          "html": "For each <var>feature item</var> in <var>features</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>feature item</var> is not an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object-objects\" id=\"ref-for-sec-object-objects\">Object</a></code>, return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" id=\"ref-for-dfn-error①\">error</a> with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" id=\"ref-for-dfn-error-code①\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①\">invalid argument</a>."
+            },
+            {
+              "html": "Let <var>mask length</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-getting-properties\" id=\"ref-for-dfn-getting-properties①\">getting a property</a> \"maskLength\" from <var>feature item</var>."
+            },
+            {
+              "html": "If <var>mask length</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number-objects\" id=\"ref-for-sec-number-objects\">Number</a></code> or its value is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.nan\" id=\"ref-for-sec-number.nan\">NaN</a></code>, +∞, −∞, or negative return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" id=\"ref-for-dfn-error②\">error</a> with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" id=\"ref-for-dfn-error-code②\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②\">invalid argument</a>."
+            },
+            {
+              "html": "Let <var>offset</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-getting-properties\" id=\"ref-for-dfn-getting-properties②\">getting a property</a> \"offset\" from <var>feature item</var>."
+            },
+            {
+              "html": "If <var>offset</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number-objects\" id=\"ref-for-sec-number-objects①\">Number</a></code> or its value is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.nan\" id=\"ref-for-sec-number.nan①\">NaN</a></code>, +∞, −∞, or negative return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" id=\"ref-for-dfn-error③\">error</a> with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" id=\"ref-for-dfn-error-code③\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument③\">invalid argument</a>."
+            },
+            {
+              "html": "Let <var>orientation</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-getting-properties\" id=\"ref-for-dfn-getting-properties③\">getting a property</a> \"orientation\" from <var>feature item</var>."
+            },
+            {
+              "html": "If <var>orientation</var> is not a <code class=\"idl\"><a data-link-type=\"idl\">string</a></code>, return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" id=\"ref-for-dfn-error④\">error</a> with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" id=\"ref-for-dfn-error-code④\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument④\">invalid argument</a>."
+            },
+            {
+              "html": "If <var>orientation</var> is neither \"vertical\" or \"vertical\", return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" id=\"ref-for-dfn-error⑤\">error</a> with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" id=\"ref-for-dfn-error-code⑤\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤\">invalid argument</a>."
+            },
+            {
+              "html": "If <var>orientation</var> is \"vertical\" and <var>mask length</var> + <var>offset</var> is greater than viewport width including the size of the rendered scrollbar, return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" id=\"ref-for-dfn-error⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" id=\"ref-for-dfn-error-code⑥\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥\">invalid argument</a>."
+            },
+            {
+              "html": "If <var>orientation</var> is \"vertical\" and <var>mask length</var> + <var>offset</var> is greater than viewport height including the size of the rendered scrollbar, return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" id=\"ref-for-dfn-error⑦\">error</a> with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" id=\"ref-for-dfn-error-code⑦\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑦\">invalid argument</a>."
+            },
+            {
+              "html": "Let <var>override</var> be a new <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#display-feature-override\" id=\"ref-for-display-feature-override④\">display feature override</a>."
+            },
+            {
+              "html": "Set <var>override</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#display-feature-override-mask-length\" id=\"ref-for-display-feature-override-mask-length\">mask length</a> to <var>mask length</var>."
+            },
+            {
+              "html": "Set <var>override</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#display-feature-override-orientation\" id=\"ref-for-display-feature-override-orientation\">orientation</a> to <var>orientation</var>."
+            },
+            {
+              "html": "Set <var>override</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#display-feature-override-offset\" id=\"ref-for-display-feature-override-offset\">offset</a> to <var>offset</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>override</var> to <var>parsedFeatures</var>."
+            }
+          ]
+        },
+        {
+          "html": "Let <var>topLevelTraversable</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context①\">current browsing context</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable②\">top-level traversable</a>."
+        },
+        {
+          "html": "Set <var>topLevelTraversable</var>.<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#top-level-traversable-displayfeaturesoverride\" id=\"ref-for-top-level-traversable-displayfeaturesoverride③\">[[DisplayFeaturesOverride]]</a> to <var>parsedFeatures</var>."
+        },
+        {
+          "html": "Return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-success\" id=\"ref-for-dfn-success\">success</a> with data <code>null</code>."
+        }
+      ]
+    },
+    {
+      "html": "This <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-extension-commands\" id=\"ref-for-dfn-extension-commands②\">extension command</a> creates a setup that emulates a set of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#display-feature-override\" id=\"ref-for-display-feature-override①\">display feature override</a> by taking a list of display features as\nparameter.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>topLevelTraversable</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context②\">current browsing context</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable③\">top-level traversable</a>."
+        },
+        {
+          "html": "Set <var>topLevelTraversable</var>. <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#top-level-traversable-displayfeaturesoverride\" id=\"ref-for-top-level-traversable-displayfeaturesoverride④\">[[DisplayFeaturesOverride]]</a> to <code>null</code>."
+        },
+        {
+          "html": "Return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-success\" id=\"ref-for-dfn-success①\">success</a> with data <code>null</code>."
         }
       ]
     }
