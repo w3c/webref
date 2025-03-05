@@ -3,12 +3,7 @@
  SecureContext]
 interface PrivateAggregation {
   undefined contributeToHistogram(PAHistogramContribution contribution);
+  undefined contributeToHistogramOnEvent(DOMString event,
+                                         record<DOMString, any> contribution);
   undefined enableDebugMode(optional PADebugModeOptions options = {});
-};
-
-// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
-[Exposed=InterestGroupScriptRunnerGlobalScope]
-partial interface PrivateAggregation {
-  undefined contributeToHistogramOnEvent(
-      DOMString event, PAExtendedHistogramContribution contribution);
 };

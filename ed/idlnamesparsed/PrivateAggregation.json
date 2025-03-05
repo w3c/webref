@@ -6,18 +6,10 @@
       "title": "Private Aggregation API",
       "url": "https://patcg-individual-drafts.github.io/private-aggregation-api/"
     },
-    "fragment": "[Exposed=(InterestGroupScriptRunnerGlobalScope,SharedStorageWorklet),\n SecureContext]\ninterface PrivateAggregation {\n  undefined contributeToHistogram(PAHistogramContribution contribution);\n  undefined enableDebugMode(optional PADebugModeOptions options = {});\n};",
+    "fragment": "[Exposed=(InterestGroupScriptRunnerGlobalScope,SharedStorageWorklet),\n SecureContext]\ninterface PrivateAggregation {\n  undefined contributeToHistogram(PAHistogramContribution contribution);\n  undefined contributeToHistogramOnEvent(DOMString event,\n                                         record<DOMString, any> contribution);\n  undefined enableDebugMode(optional PADebugModeOptions options = {});\n};",
     "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#privateaggregation"
   },
-  "extended": [
-    {
-      "spec": {
-        "title": "Protected Audience (formerly FLEDGE)",
-        "url": "https://wicg.github.io/turtledove/"
-      },
-      "fragment": "[Exposed=InterestGroupScriptRunnerGlobalScope]\npartial interface PrivateAggregation {\n  undefined contributeToHistogramOnEvent(\n      DOMString event, PAExtendedHistogramContribution contribution);\n};"
-    }
-  ],
+  "extended": [],
   "inheritance": null,
   "includes": []
 }

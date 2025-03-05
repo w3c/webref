@@ -456,9 +456,10 @@ browsingContext.SetViewport = (
 )
 
 browsingContext.SetViewportParameters = {
-  context: browsingContext.BrowsingContext,
+  ? context: browsingContext.BrowsingContext,
   ? viewport: browsingContext.Viewport / null,
   ? devicePixelRatio: (float .gt 0.0) / null,
+  ? userContexts: [+browser.UserContext],
 }
 
 browsingContext.Viewport = {

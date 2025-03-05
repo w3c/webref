@@ -8,7 +8,6 @@
       "constructors": {
         "Window": [
           "AudioContext",
-          "AudioRenderCapacityEvent",
           "OfflineAudioContext",
           "OfflineAudioCompletionEvent",
           "AudioBuffer",
@@ -43,7 +42,6 @@
         "Window": [
           "BaseAudioContext",
           "AudioSinkInfo",
-          "AudioRenderCapacity",
           "AudioNode",
           "AudioParam",
           "AudioScheduledSourceNode",
@@ -1018,7 +1016,7 @@
         "href": "https://webaudio.github.io/web-audio-api/#enumdef-audiosinktype"
       },
       "AudioContext": {
-        "fragment": "[Exposed=Window]\ninterface AudioContext : BaseAudioContext {\n    constructor (optional AudioContextOptions contextOptions = {});\n    readonly attribute double baseLatency;\n    readonly attribute double outputLatency;\n    [SecureContext] readonly attribute (DOMString or AudioSinkInfo) sinkId;\n    [SecureContext] readonly attribute AudioRenderCapacity renderCapacity;\n    attribute EventHandler onsinkchange;\n    attribute EventHandler onerror;\n    AudioTimestamp getOutputTimestamp ();\n    Promise<undefined> resume ();\n    Promise<undefined> suspend ();\n    Promise<undefined> close ();\n    [SecureContext] Promise<undefined> setSinkId ((DOMString or AudioSinkOptions) sinkId);\n    MediaElementAudioSourceNode createMediaElementSource (HTMLMediaElement mediaElement);\n    MediaStreamAudioSourceNode createMediaStreamSource (MediaStream mediaStream);\n    MediaStreamTrackAudioSourceNode createMediaStreamTrackSource (\n        MediaStreamTrack mediaStreamTrack);\n    MediaStreamAudioDestinationNode createMediaStreamDestination ();\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioContext : BaseAudioContext {\n    constructor (optional AudioContextOptions contextOptions = {});\n    readonly attribute double baseLatency;\n    readonly attribute double outputLatency;\n    [SecureContext] readonly attribute (DOMString or AudioSinkInfo) sinkId;\n    attribute EventHandler onsinkchange;\n    attribute EventHandler onerror;\n    AudioTimestamp getOutputTimestamp ();\n    Promise<undefined> resume ();\n    Promise<undefined> suspend ();\n    Promise<undefined> close ();\n    [SecureContext] Promise<undefined> setSinkId ((DOMString or AudioSinkOptions) sinkId);\n    MediaElementAudioSourceNode createMediaElementSource (HTMLMediaElement mediaElement);\n    MediaStreamAudioSourceNode createMediaStreamSource (MediaStream mediaStream);\n    MediaStreamTrackAudioSourceNode createMediaStreamTrackSource (\n        MediaStreamTrack mediaStreamTrack);\n    MediaStreamAudioDestinationNode createMediaStreamDestination ();\n};",
         "type": "interface",
         "name": "AudioContext",
         "inheritance": "BaseAudioContext",
@@ -1119,29 +1117,6 @@
             "special": "",
             "readonly": true,
             "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-sinkid"
-          },
-          {
-            "type": "attribute",
-            "name": "renderCapacity",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "AudioRenderCapacity"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SecureContext",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true,
-            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-rendercapacity"
           },
           {
             "type": "attribute",
@@ -1700,337 +1675,6 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://webaudio.github.io/web-audio-api/#AudioTimestamp"
-      },
-      "AudioRenderCapacity": {
-        "fragment": "[Exposed=Window]\ninterface AudioRenderCapacity : EventTarget {\n    undefined start(optional AudioRenderCapacityOptions options = {});\n        undefined stop();\n        attribute EventHandler onupdate;\n};",
-        "type": "interface",
-        "name": "AudioRenderCapacity",
-        "inheritance": "EventTarget",
-        "members": [
-          {
-            "type": "operation",
-            "name": "start",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "options",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "AudioRenderCapacityOptions"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacity-start"
-          },
-          {
-            "type": "operation",
-            "name": "stop",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacity-stop"
-          },
-          {
-            "type": "attribute",
-            "name": "onupdate",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false,
-            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacity-onupdate"
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://webaudio.github.io/web-audio-api/#audiorendercapacity"
-      },
-      "AudioRenderCapacityOptions": {
-        "fragment": "dictionary AudioRenderCapacityOptions {\n        double updateInterval = 1;\n};",
-        "type": "dictionary",
-        "name": "AudioRenderCapacityOptions",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "updateInterval",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": {
-              "type": "number",
-              "value": "1"
-            },
-            "required": false,
-            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityoptions-updateinterval"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://webaudio.github.io/web-audio-api/#dictdef-audiorendercapacityoptions"
-      },
-      "AudioRenderCapacityEvent": {
-        "fragment": "[Exposed=Window]\ninterface AudioRenderCapacityEvent : Event {\n    constructor (DOMString type, optional AudioRenderCapacityEventInit eventInitDict = {});\n        readonly attribute double timestamp;\n        readonly attribute double averageLoad;\n        readonly attribute double peakLoad;\n        readonly attribute double underrunRatio;\n};",
-        "type": "interface",
-        "name": "AudioRenderCapacityEvent",
-        "inheritance": "Event",
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "type",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "eventInitDict",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "AudioRenderCapacityEventInit"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityevent-audiorendercapacityevent"
-          },
-          {
-            "type": "attribute",
-            "name": "timestamp",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityevent-timestamp"
-          },
-          {
-            "type": "attribute",
-            "name": "averageLoad",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityevent-averageload"
-          },
-          {
-            "type": "attribute",
-            "name": "peakLoad",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityevent-peakload"
-          },
-          {
-            "type": "attribute",
-            "name": "underrunRatio",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityevent-underrunratio"
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://webaudio.github.io/web-audio-api/#audiorendercapacityevent"
-      },
-      "AudioRenderCapacityEventInit": {
-        "fragment": "dictionary AudioRenderCapacityEventInit : EventInit {\n    double timestamp = 0;\n    double averageLoad = 0;\n    double peakLoad = 0;\n    double underrunRatio = 0;\n};",
-        "type": "dictionary",
-        "name": "AudioRenderCapacityEventInit",
-        "inheritance": "EventInit",
-        "members": [
-          {
-            "type": "field",
-            "name": "timestamp",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
-            "required": false,
-            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityeventinit-timestamp"
-          },
-          {
-            "type": "field",
-            "name": "averageLoad",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
-            "required": false,
-            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityeventinit-averageload"
-          },
-          {
-            "type": "field",
-            "name": "peakLoad",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
-            "required": false,
-            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityeventinit-peakload"
-          },
-          {
-            "type": "field",
-            "name": "underrunRatio",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
-            "required": false,
-            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityeventinit-underrunratio"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://webaudio.github.io/web-audio-api/#dictdef-audiorendercapacityeventinit"
       },
       "OfflineAudioContext": {
         "fragment": "[Exposed=Window]\ninterface OfflineAudioContext : BaseAudioContext {\n    constructor(OfflineAudioContextOptions contextOptions);\n    constructor(unsigned long numberOfChannels, unsigned long length, float sampleRate);\n    Promise<AudioBuffer> startRendering();\n    Promise<undefined> resume();\n    Promise<undefined> suspend(double suspendTime);\n    readonly attribute unsigned long length;\n    attribute EventHandler oncomplete;\n};",
@@ -9405,8 +9049,6 @@
         "BaseAudioContext",
         "AudioContext",
         "AudioSinkInfo",
-        "AudioRenderCapacity",
-        "AudioRenderCapacityEvent",
         "OfflineAudioContext",
         "OfflineAudioCompletionEvent",
         "AudioBuffer",
@@ -9481,7 +9123,6 @@
         "BaseAudioContext",
         "AudioContextOptions",
         "AudioSinkInfo",
-        "AudioRenderCapacity",
         "EventHandler",
         "AudioTimestamp",
         "AudioSinkOptions",
@@ -9506,19 +9147,6 @@
       ],
       "AudioTimestamp": [
         "DOMHighResTimeStamp"
-      ],
-      "AudioRenderCapacity": [
-        "EventTarget",
-        "AudioRenderCapacityOptions",
-        "EventHandler"
-      ],
-      "AudioRenderCapacityOptions": [],
-      "AudioRenderCapacityEvent": [
-        "Event",
-        "AudioRenderCapacityEventInit"
-      ],
-      "AudioRenderCapacityEventInit": [
-        "EventInit"
       ],
       "OfflineAudioContext": [
         "BaseAudioContext",

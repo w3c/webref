@@ -5,7 +5,6 @@ interface AudioContext : BaseAudioContext {
     readonly attribute double baseLatency;
     readonly attribute double outputLatency;
     [SecureContext] readonly attribute (DOMString or AudioSinkInfo) sinkId;
-    [SecureContext] readonly attribute AudioRenderCapacity renderCapacity;
     attribute EventHandler onsinkchange;
     attribute EventHandler onerror;
     AudioTimestamp getOutputTimestamp ();

@@ -17,7 +17,7 @@
     },
     "idlNames": {
       "PrivateAggregation": {
-        "fragment": "[Exposed=(InterestGroupScriptRunnerGlobalScope,SharedStorageWorklet),\n SecureContext]\ninterface PrivateAggregation {\n  undefined contributeToHistogram(PAHistogramContribution contribution);\n  undefined enableDebugMode(optional PADebugModeOptions options = {});\n};",
+        "fragment": "[Exposed=(InterestGroupScriptRunnerGlobalScope,SharedStorageWorklet),\n SecureContext]\ninterface PrivateAggregation {\n  undefined contributeToHistogram(PAHistogramContribution contribution);\n  undefined contributeToHistogramOnEvent(DOMString event,\n                                         record<DOMString, any> contribution);\n  undefined enableDebugMode(optional PADebugModeOptions options = {});\n};",
         "type": "interface",
         "name": "PrivateAggregation",
         "inheritance": null,
@@ -54,6 +54,72 @@
             "extAttrs": [],
             "special": "",
             "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-privateaggregation-contributetohistogram"
+          },
+          {
+            "type": "operation",
+            "name": "contributeToHistogramOnEvent",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "event",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "contribution",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "record",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    },
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "any"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-privateaggregation-contributetohistogramonevent"
           },
           {
             "type": "operation",

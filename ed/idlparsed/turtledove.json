@@ -8,8 +8,7 @@
       "constructors": {},
       "functions": {
         "InterestGroupScriptRunnerGlobalScope": [
-          "InterestGroupScriptRunnerGlobalScope",
-          "PrivateAggregation"
+          "InterestGroupScriptRunnerGlobalScope"
         ],
         "InterestGroupBiddingAndScoringScriptRunnerGlobalScope": [
           "ForDebuggingOnly",
@@ -5385,77 +5384,6 @@
           "partial": true
         }
       ],
-      "PrivateAggregation": [
-        {
-          "fragment": "[Exposed=InterestGroupScriptRunnerGlobalScope]\npartial interface PrivateAggregation {\n  undefined contributeToHistogramOnEvent(\n      DOMString event, PAExtendedHistogramContribution contribution);\n};",
-          "type": "interface",
-          "name": "PrivateAggregation",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "contributeToHistogramOnEvent",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "undefined"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "event",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "DOMString"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                },
-                {
-                  "type": "argument",
-                  "name": "contribution",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "PAExtendedHistogramContribution"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://wicg.github.io/turtledove/#dom-privateaggregation-contributetohistogramonevent"
-            }
-          ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "Exposed",
-              "rhs": {
-                "type": "identifier",
-                "value": "InterestGroupScriptRunnerGlobalScope"
-              },
-              "arguments": []
-            }
-          ],
-          "partial": true
-        }
-      ],
       "RequestInit": [
         {
           "fragment": "partial dictionary RequestInit {\n  boolean adAuctionHeaders;\n};",
@@ -5541,8 +5469,7 @@
     },
     "exposed": {
       "InterestGroupScriptRunnerGlobalScope": [
-        "InterestGroupScriptRunnerGlobalScope",
-        "PrivateAggregation"
+        "InterestGroupScriptRunnerGlobalScope"
       ],
       "InterestGroupBiddingAndScoringScriptRunnerGlobalScope": [
         "ForDebuggingOnly",
@@ -5619,9 +5546,6 @@
       "PASignalValue": [],
       "PAExtendedHistogramContribution": [
         "PASignalValue"
-      ],
-      "PrivateAggregation": [
-        "PAExtendedHistogramContribution"
       ],
       "ForDebuggingOnly": [],
       "RealTimeReporting": [

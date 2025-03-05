@@ -7,41 +7,67 @@
     {
       "name": "PrivateAggregation/contributeToHistogram(PAHistogramContribution contribution)",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-privateaggregation-contributetohistogram",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PrivateAggregation\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"contributeToHistogram(contribution)\" id=\"dom-privateaggregation-contributetohistogram\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code> contributeToHistogram(PAHistogramContribution contribution)</code></dfn> method steps\nare:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PrivateAggregation\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"contributeToHistogram(contribution)\" id=\"dom-privateaggregation-contributetohistogram\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code> contributeToHistogram(PAHistogramContribution <var>contribution</var>)</code></dfn> method steps\nare:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>contribution</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-bucket\" id=\"ref-for-dom-pahistogramcontribution-bucket\">bucket</a></code>\"] is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contained</a> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range\">the range</a> 0 to 2<sup>128</sup>,\nexclusive, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror\">RangeError</a></code>.</p>"
+          "html": "<p>Let <var>validationResult</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#validate-a-histogram-contribution\" id=\"ref-for-validate-a-histogram-contribution\">validating a histogram contribution</a> given <var>contribution</var> and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#privateaggregation-scoping-details\" id=\"ref-for-privateaggregation-scoping-details\">scoping details</a>.</p>"
         },
         {
-          "html": "<p>If <var>contribution</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value\">value</a></code>\"] is negative, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①\">RangeError</a></code>.</p>"
+          "html": "<p>If <var>validationResult</var> is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\" id=\"ref-for-dfn-exception②\">exception</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> <var>validationResult</var>.</p>"
         },
         {
-          "html": "<p>Let <var>scopingDetails</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#privateaggregation-scoping-details\" id=\"ref-for-privateaggregation-scoping-details\">scoping details</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>validationResult</var> is a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry\" id=\"ref-for-contribution-cache-entry\">contribution cache entry</a>.</p>"
         },
         {
-          "html": "<p>Let <var>batchingScope</var> be the result of running <var>scopingDetails</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#scoping-details-get-batching-scope-steps\" id=\"ref-for-scoping-details-get-batching-scope-steps\">get batching scope steps</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#append-an-entry-to-the-contribution-cache\" id=\"ref-for-append-an-entry-to-the-contribution-cache\">Append</a> <var>validationResult</var> to\nthe <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache\" id=\"ref-for-contribution-cache\">contribution cache</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "PrivateAggregation/contributeToHistogramOnEvent(event, contribution)",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-privateaggregation-contributetohistogramonevent",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PrivateAggregation\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"contributeToHistogramOnEvent(event, contribution)\" id=\"dom-privateaggregation-contributetohistogramonevent\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>contributeToHistogramOnEvent(<var>event</var>, <var>contribution</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>defaultProcessingResult</var> be the result of running <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#privateaggregation-should-perform-default-contributetohistogramonevent-processing\" id=\"ref-for-privateaggregation-should-perform-default-contributetohistogramonevent-processing\">should perform default contributeToHistogramOnEvent() processing</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>, <var>event</var> and <var>contribution</var>.</p>"
         },
         {
-          "html": "<p>Let <var>filteringIdMaxBytes</var> be the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#default-filtering-id-max-bytes\" id=\"ref-for-default-filtering-id-max-bytes\">default filtering ID max bytes</a>.</p>"
+          "html": "<p>If <var>defaultProcessingResult</var> is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\" id=\"ref-for-dfn-exception③\">exception</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> <var>defaultProcessingResult</var>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-map\" id=\"ref-for-pre-specified-report-parameters-map\">pre-specified report parameters map</a>[<var>batchingScope</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>:",
-          "rationale": "set",
+          "html": "<p>If <var>defaultProcessingResult</var> is false, return.</p>"
+        },
+        {
+          "html": "<p>Set <var>contribution</var> to the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value\">converting</a> <var>contribution</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-idl-to-javascript-value\" id=\"ref-for-dfn-convert-idl-to-javascript-value\">JavaScript value</a> to the\nIDL type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dictdef-pahistogramcontribution\" id=\"ref-for-dictdef-pahistogramcontribution②\">PAHistogramContribution</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>validationResult</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#validate-a-histogram-contribution\" id=\"ref-for-validate-a-histogram-contribution①\">validating a histogram contribution</a> given <var>contribution</var> and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#privateaggregation-scoping-details\" id=\"ref-for-privateaggregation-scoping-details①\">scoping details</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>validationResult</var> is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\" id=\"ref-for-dfn-exception④\">exception</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> <var>validationResult</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>validationResult</var> is a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry\" id=\"ref-for-contribution-cache-entry①\">contribution cache entry</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>event</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-starts-with\" id=\"ref-for-string-starts-with\">start with</a> \"<code>reserved.</code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>unprefixedEvent</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit-substring\" id=\"ref-for-code-unit-substring\">code unit substring</a> from\n\"<code>reserved.</code>\"'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length\">length</a> to <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length①\">length</a> within <var>event</var>.</p>"
+        },
+        {
+          "html": "If <var>unprefixedEvent</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is\">is</a> any of the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#internal-error-event\" id=\"ref-for-internal-error-event\">internal error events</a>:",
+          "rationale": "let",
           "steps": [
             {
-              "html": "<p>Set <var>filteringIdMaxBytes</var> to <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-map\" id=\"ref-for-pre-specified-report-parameters-map①\">pre-specified report parameters map</a>[<var>batchingScope</var>]'s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-filtering-id-max-bytes\" id=\"ref-for-pre-specified-report-parameters-filtering-id-max-bytes\">filtering ID max bytes</a>.</p>"
+              "html": "<p>Let <var>maybeContributionCacheEntry</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-error-event\" id=\"ref-for-contribution-cache-entry-error-event\">error event</a> be <var>unprefixedEvent</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#append-an-entry-to-the-contribution-cache\" id=\"ref-for-append-an-entry-to-the-contribution-cache①\">Append</a> <var>maybeContributionCacheEntry</var> to the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache\" id=\"ref-for-contribution-cache①\">contribution cache</a>.</p>"
             }
           ]
-        },
-        {
-          "html": "<p>If <var>contribution</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-filteringid\" id=\"ref-for-dom-pahistogramcontribution-filteringid\">filteringId</a></code>\"] is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contained</a> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range①\">the range</a> 0 to\n256<sup><var>filteringIdMaxBytes</var></sup>, exclusive, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror②\">RangeError</a></code>.</p>"
-        },
-        {
-          "html": "<p>Let <var>entry</var> be a new <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry\" id=\"ref-for-contribution-cache-entry\">contribution cache entry</a> with the items:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-contribution\" id=\"ref-for-contribution-cache-entry-contribution\">contribution</a>\n       </dt><dd data-md=\"\">\n        <p><var>contribution</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-batching-scope\" id=\"ref-for-contribution-cache-entry-batching-scope\">batching scope</a>\n       </dt><dd data-md=\"\">\n        <p><var>batchingScope</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-debug-scope\" id=\"ref-for-contribution-cache-entry-debug-scope\">debug scope</a>\n       </dt><dd data-md=\"\">\n        <p>The result of running <var>scopingDetails</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#scoping-details-get-debug-scope-steps\" id=\"ref-for-scoping-details-get-debug-scope-steps\">get debug scope steps</a>.</p>\n      </dd></dl>"
-        },
-        {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#append-an-entry-to-the-contribution-cache\" id=\"ref-for-append-an-entry-to-the-contribution-cache\">Append</a> <var>entry</var> to the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache\" id=\"ref-for-contribution-cache\">contribution cache</a>.</p>"
         }
       ]
     },
@@ -52,13 +78,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>scopingDetails</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#privateaggregation-scoping-details\" id=\"ref-for-privateaggregation-scoping-details①\">scoping details</a>.</p>"
+          "html": "<p>Let <var>scopingDetails</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#privateaggregation-scoping-details\" id=\"ref-for-privateaggregation-scoping-details②\">scoping details</a>.</p>"
         },
         {
-          "html": "<p>Let <var>debugScope</var> be the result of running <var>scopingDetails</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#scoping-details-get-debug-scope-steps\" id=\"ref-for-scoping-details-get-debug-scope-steps①\">get debug scope steps</a>.</p>"
+          "html": "<p>Let <var>debugScope</var> be the result of running <var>scopingDetails</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#scoping-details-get-debug-scope-steps\" id=\"ref-for-scoping-details-get-debug-scope-steps\">get debug scope steps</a>.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-scope-map\" id=\"ref-for-debug-scope-map\">debug scope map</a>[<var>debugScope</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> a\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dataerror\" id=\"ref-for-dataerror\">DataError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-scope-map\" id=\"ref-for-debug-scope-map\">debug scope map</a>[<var>debugScope</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> a\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dataerror\" id=\"ref-for-dataerror\">DataError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>debugKey</var> be null.</p>"
@@ -68,7 +94,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-padebugmodeoptions-debugkey\" id=\"ref-for-dom-padebugmodeoptions-debugkey①\">debugKey</a></code>\"] is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②\">contained</a> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range②\">the range</a> 0 to 2<sup>64</sup>, exclusive, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dataerror\" id=\"ref-for-dataerror①\">DataError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+              "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-padebugmodeoptions-debugkey\" id=\"ref-for-dom-padebugmodeoptions-debugkey①\">debugKey</a></code>\"] is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contained</a> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range\">the range</a> 0 to 2<sup>64</sup>, exclusive, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dataerror\" id=\"ref-for-dataerror①\">DataError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
             },
             {
               "html": "<p>Set <var>debugKey</var> to <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-padebugmodeoptions-debugkey\" id=\"ref-for-dom-padebugmodeoptions-debugkey②\">debugKey</a></code>\"].</p>"
@@ -89,17 +115,17 @@
     {
       "name": "get the privateAggregation",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#get-the-privateaggregation",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"get-the-privateaggregation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the privateAggregation</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#privateaggregation\" id=\"ref-for-privateaggregation⑤\">PrivateAggregation</a></code> <var>this</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"get-the-privateaggregation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the privateAggregation</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#privateaggregation\" id=\"ref-for-privateaggregation⑦\">PrivateAggregation</a></code> <var>this</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>scopingDetails</var> be <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#privateaggregation-scoping-details\" id=\"ref-for-privateaggregation-scoping-details④\">scoping details</a>.</p>"
+          "html": "<p>Let <var>scopingDetails</var> be <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#privateaggregation-scoping-details\" id=\"ref-for-privateaggregation-scoping-details⑤\">scoping details</a>.</p>"
         },
         {
-          "html": "<p>If <var>scopingDetails</var> is null, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>.</p>"
+          "html": "<p>If <var>scopingDetails</var> is null, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧\">throw</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#privateaggregation-allowed-to-use\" id=\"ref-for-privateaggregation-allowed-to-use②\">allowed to use</a> is false, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\" id=\"ref-for-invalidaccesserror②\">InvalidAccessError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>.</p>"
+          "html": "<p>If <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#privateaggregation-allowed-to-use\" id=\"ref-for-privateaggregation-allowed-to-use②\">allowed to use</a> is false, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\" id=\"ref-for-invalidaccesserror①\">InvalidAccessError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>Return <var>this</var>.</p>"
@@ -109,11 +135,11 @@
     {
       "name": "append an entry to the contribution cache",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#append-an-entry-to-the-contribution-cache",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"append-an-entry-to-the-contribution-cache\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append an entry to the contribution cache</dfn> given a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry\" id=\"ref-for-contribution-cache-entry③\">contribution cache entry</a> <var>entry</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"append-an-entry-to-the-contribution-cache\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append an entry to the contribution cache</dfn> given a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry\" id=\"ref-for-contribution-cache-entry④\">contribution cache entry</a> <var>entry</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>entry</var> to the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache\" id=\"ref-for-contribution-cache③\">contribution cache</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>entry</var> to the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache\" id=\"ref-for-contribution-cache④\">contribution cache</a>.</p>"
         }
       ]
     },
@@ -124,7 +150,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-scope-map\" id=\"ref-for-debug-scope-map③\">debug scope map</a>[<var>debugScope</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>, return <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-scope-map\" id=\"ref-for-debug-scope-map④\">debug scope map</a>[<var>debugScope</var>].</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-scope-map\" id=\"ref-for-debug-scope-map③\">debug scope map</a>[<var>debugScope</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a>, return <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-scope-map\" id=\"ref-for-debug-scope-map④\">debug scope map</a>[<var>debugScope</var>].</p>"
         },
         {
           "html": "<p>Otherwise, return a new <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-details\" id=\"ref-for-debug-details⑦\">debug details</a>.</p>"
@@ -141,11 +167,11 @@
           "html": "<p>Let <var>debugDetails</var> be <var>debugDetailsOverride</var>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-scope-map\" id=\"ref-for-debug-scope-map⑤\">debug scope map</a>[<var>debugScope</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exists</a>:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-scope-map\" id=\"ref-for-debug-scope-map⑤\">debug scope map</a>[<var>debugScope</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>:",
           "rationale": "assert",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>debugDetailsOverride</var> is null.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>debugDetailsOverride</var> is null.</p>"
             },
             {
               "html": "<p>Set <var>debugDetails</var> to <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-scope-map\" id=\"ref-for-debug-scope-map⑥\">debug scope map</a>[<var>debugScope</var>].</p>"
@@ -154,7 +180,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove\">Remove</a> <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-scope-map\" id=\"ref-for-debug-scope-map⑦\">debug scope map</a>[<var>debugScope</var>].</p>"
             },
             {
-              "html": "<p>If <var>debugDetails</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-details-key\" id=\"ref-for-debug-details-key①\">key</a> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">assert</a>: <var>debugDetails</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-details-enabled\" id=\"ref-for-debug-details-enabled②\">enabled</a> is true.</p>"
+              "html": "<p>If <var>debugDetails</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-details-key\" id=\"ref-for-debug-details-key①\">key</a> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">assert</a>: <var>debugDetails</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-details-enabled\" id=\"ref-for-debug-details-enabled②\">enabled</a> is true.</p>"
             }
           ]
         },
@@ -162,11 +188,11 @@
           "html": "<p>If <var>debugDetails</var> is null, set <var>debugDetails</var> to a new <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-details\" id=\"ref-for-debug-details⑨\">debug details</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>entry</var> of the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache\" id=\"ref-for-contribution-cache④\">contribution cache</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>entry</var> of the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache\" id=\"ref-for-contribution-cache⑤\">contribution cache</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-debug-scope\" id=\"ref-for-contribution-cache-entry-debug-scope②\">debug scope</a> is <var>debugScope</var>,\nset <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-debug-details\" id=\"ref-for-contribution-cache-entry-debug-details\">debug details</a> to <var>debugDetails</var>.</p>"
+              "html": "<p>If <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-debug-scope\" id=\"ref-for-contribution-cache-entry-debug-scope①\">debug scope</a> is <var>debugScope</var>,\nset <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-debug-details\" id=\"ref-for-contribution-cache-entry-debug-details\">debug details</a> to <var>debugDetails</var>.</p>"
             }
           ]
         }
@@ -175,14 +201,14 @@
     {
       "name": "determine if a report should be sent deterministically",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#determine-if-a-report-should-be-sent-deterministically",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-if-a-report-should-be-sent-deterministically\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine if a report should be sent deterministically</dfn> given a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters\" id=\"ref-for-pre-specified-report-parameters①\">pre-specified report parameters</a> <var>preSpecifiedParams</var> and a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#context-type\" id=\"ref-for-context-type③\">context type</a> <var>api</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean③\">boolean</a>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"determine-if-a-report-should-be-sent-deterministically\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine if a report should be sent deterministically</dfn> given a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters\" id=\"ref-for-pre-specified-report-parameters①\">pre-specified report parameters</a> <var>preSpecifiedParams</var> and a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#context-type\" id=\"ref-for-context-type③\">context type</a> <var>api</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean④\">boolean</a>:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>If <var>preSpecifiedParams</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-context-id\" id=\"ref-for-pre-specified-report-parameters-context-id\">context ID</a> is\nnot null, return true.</p>"
         },
         {
-          "html": "<p>If <var>preSpecifiedParams</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-filtering-id-max-bytes\" id=\"ref-for-pre-specified-report-parameters-filtering-id-max-bytes①\">filtering ID max bytes</a> is not the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#default-filtering-id-max-bytes\" id=\"ref-for-default-filtering-id-max-bytes②\">default filtering ID max bytes</a>, return true.</p>"
+          "html": "<p>If <var>preSpecifiedParams</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-filtering-id-max-bytes\" id=\"ref-for-pre-specified-report-parameters-filtering-id-max-bytes\">filtering ID max bytes</a> is not the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#default-filtering-id-max-bytes\" id=\"ref-for-default-filtering-id-max-bytes①\">default filtering ID max bytes</a>, return true.</p>"
         },
         {
           "html": "<p>Let <var>effectiveMaxContributions</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#determine-the-max-contributions\" id=\"ref-for-determine-the-max-contributions\">determining the max contributions</a> with <var>api</var> and <var>preSpecifiedParams</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-max-contributions\" id=\"ref-for-pre-specified-report-parameters-max-contributions\">max contributions</a>.</p>"
@@ -205,18 +231,18 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>batchEntries</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a>.</p>"
+          "html": "<p>Let <var>batchEntries</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>entry</var> of the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache\" id=\"ref-for-contribution-cache⑤\">contribution cache</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>entry</var> of the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache\" id=\"ref-for-contribution-cache⑥\">contribution cache</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-batching-scope\" id=\"ref-for-contribution-cache-entry-batching-scope②\">batching scope</a> is <var>batchingScope</var>:",
+              "html": "If <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-batching-scope\" id=\"ref-for-contribution-cache-entry-batching-scope①\">batching scope</a> is <var>batchingScope</var>:",
               "rationale": "assert",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-debug-details\" id=\"ref-for-contribution-cache-entry-debug-details①\">debug details</a> is\nnot null.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-debug-details\" id=\"ref-for-contribution-cache-entry-debug-details①\">debug details</a> is\nnot null.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>entry</var> to <var>batchEntries</var>.</p>"
@@ -229,7 +255,7 @@
           "html": "<p>Let <var>aggregationCoordinator</var> be the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#default-aggregation-coordinator\" id=\"ref-for-default-aggregation-coordinator\">default aggregation coordinator</a>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator-map\" id=\"ref-for-aggregation-coordinator-map\">aggregation coordinator map</a>[<var>batchingScope</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exists</a>:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator-map\" id=\"ref-for-aggregation-coordinator-map\">aggregation coordinator map</a>[<var>batchingScope</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exists</a>:",
           "rationale": "set",
           "steps": [
             {
@@ -244,50 +270,65 @@
           "html": "<p>Let <var>preSpecifiedParams</var> be a new <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters\" id=\"ref-for-pre-specified-report-parameters②\">pre-specified report parameters</a>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-map\" id=\"ref-for-pre-specified-report-parameters-map③\">pre-specified report parameters map</a>[<var>batchingScope</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">exists</a>:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-map\" id=\"ref-for-pre-specified-report-parameters-map①\">pre-specified report parameters map</a>[<var>batchingScope</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exists</a>:",
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>preSpecifiedParams</var> to <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-map\" id=\"ref-for-pre-specified-report-parameters-map④\">pre-specified report parameters map</a>[<var>batchingScope</var>].</p>"
+              "html": "<p>Set <var>preSpecifiedParams</var> to <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-map\" id=\"ref-for-pre-specified-report-parameters-map②\">pre-specified report parameters map</a>[<var>batchingScope</var>].</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove②\">Remove</a> <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-map\" id=\"ref-for-pre-specified-report-parameters-map⑤\">pre-specified report parameters map</a>[<var>batchingScope</var>].</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove②\">Remove</a> <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-map\" id=\"ref-for-pre-specified-report-parameters-map③\">pre-specified report parameters map</a>[<var>batchingScope</var>].</p>"
             }
           ]
         },
         {
-          "html": "<p>Let <var>isDeterministicReport</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#determine-if-a-report-should-be-sent-deterministically\" id=\"ref-for-determine-if-a-report-should-be-sent-deterministically\">determining if a report should be sent deterministically</a> given <var>preSpecifiedParams</var> and <var>contextType</var>.</p>"
+          "html": "<p>Let <var>isDeterministicReport</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#determine-if-a-report-should-be-sent-deterministically\" id=\"ref-for-determine-if-a-report-should-be-sent-deterministically②\">determining if a report should be sent deterministically</a> given <var>preSpecifiedParams</var> and <var>contextType</var>.</p>"
         },
         {
-          "html": "<p>If <var>isDeterministicReport</var> is false, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">assert</a>: <var>timeout</var> is null.</p>"
+          "html": "<p>If <var>isDeterministicReport</var> is false, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">assert</a>: <var>timeout</var> is null.</p>"
         },
         {
           "html": "<p>If <var>batchEntries</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is empty</a> and <var>isDeterministicReport</var> is false,\nreturn.</p>"
         },
         {
-          "html": "<p>Let <var>batchedContributions</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④\">ordered map</a>.</p>"
+          "html": "<p>Let <var>batchedContributions</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦\">ordered map</a>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>entry</var> of <var>batchEntries</var>:",
           "rationale": "remove",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">Remove</a> <var>entry</var> from the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache\" id=\"ref-for-contribution-cache⑥\">contribution cache</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">Remove</a> <var>entry</var> from the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache\" id=\"ref-for-contribution-cache⑦\">contribution cache</a>.</p>"
             },
             {
               "html": "<p>Let <var>debugDetails</var> be <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-debug-details\" id=\"ref-for-contribution-cache-entry-debug-details②\">debug details</a>.</p>"
             },
             {
-              "html": "If <var>batchedContributions</var>[<var>debugDetails</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exist</a>:",
-              "rationale": "set",
+              "html": "<p>If <var>batchedContributions</var>[<var>debugDetails</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">exist</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">set</a> <var>batchedContributions</var>[<var>debugDetails</var>] to a new <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions\" id=\"ref-for-pending-contributions⑤\">pending contributions</a>.</p>"
+            },
+            {
+              "html": "If <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-error-event\" id=\"ref-for-contribution-cache-entry-error-event②\">error event</a> is null:",
+              "rationale": "append",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">Set</a> <var>batchedContributions</var>[<var>debugDetails</var>] to a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-contribution\" id=\"ref-for-contribution-cache-entry-contribution\">contribution</a> to <var>batchedContributions</var>[<var>debugDetails</var>]'s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-unconditional-contributions\" id=\"ref-for-pending-contributions-unconditional-contributions\">unconditional contributions</a>.</p>"
                 }
               ]
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-contribution\" id=\"ref-for-contribution-cache-entry-contribution①\">contribution</a> to <var>batchedContributions</var>[<var>debugDetails</var>].</p>"
+              "html": "Otherwise:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>conditionalContributions</var> be <var>batchedContributions</var>[<var>debugDetails</var>]'s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-conditional-contributions\" id=\"ref-for-pending-contributions-conditional-contributions\">conditional contributions</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>conditionalContributions</var>[<var>errorEvent</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exist</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">set</a> <var>conditionalContributions</var>[<var>errorEvent</var>] to a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑧\">list</a>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③\">Append</a> <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-contribution\" id=\"ref-for-contribution-cache-entry-contribution①\">contribution</a> to <var>conditionalContributions</var>[<var>errorEvent</var>].</p>"
+                }
+              ]
             }
           ]
         },
@@ -299,16 +340,16 @@
               "html": "<p>Let <var>debugDetails</var> be a new <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-details\" id=\"ref-for-debug-details①⓪\">debug details</a>.</p>"
             },
             {
-              "html": "<p>Set <var>batchedContributions</var>[<var>debugDetails</var>] to a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a>.</p>"
+              "html": "<p>Set <var>batchedContributions</var>[<var>debugDetails</var>] to a new <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions\" id=\"ref-for-pending-contributions①\">pending contributions</a>.</p>"
             }
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>debugDetails</var> → <var>contributions</var> of <var>batchedContributions</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>debugDetails</var> → <var>pendingContributions</var> of <var>batchedContributions</var>:",
           "rationale": "perform",
           "steps": [
             {
-              "html": "<p>Perform the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#report-creation-and-scheduling-steps\" id=\"ref-for-report-creation-and-scheduling-steps\">report creation and scheduling steps</a> with <var>reportingOrigin</var>, <var>contextType</var>, <var>contributions</var>, <var>debugDetails</var>, <var>aggregationCoordinator</var>, <var>preSpecifiedParams</var> and <var>timeout</var>.</p>"
+              "html": "<p>Perform the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#report-creation-and-scheduling-steps\" id=\"ref-for-report-creation-and-scheduling-steps\">report creation and scheduling steps</a> with <var>reportingOrigin</var>, <var>contextType</var>, <var>pendingContributions</var>, <var>debugDetails</var>, <var>aggregationCoordinator</var>, <var>preSpecifiedParams</var> and <var>timeout</var>.</p>"
             }
           ]
         }
@@ -317,7 +358,7 @@
     {
       "name": "determine if an origin is an aggregation coordinator",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#determine-if-an-origin-is-an-aggregation-coordinator",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"determine-if-an-origin-is-an-aggregation-coordinator\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine if an origin is an aggregation coordinator</dfn> given\nan <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑤\">origin</a> <var>origin</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean④\">boolean</a>.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"determine-if-an-origin-is-an-aggregation-coordinator\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine if an origin is an aggregation coordinator</dfn> given\nan <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑤\">origin</a> <var>origin</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean⑤\">boolean</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -355,10 +396,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>origin</var> is an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator⑥\">aggregation coordinator</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: <var>origin</var> is an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator⑥\">aggregation coordinator</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">Set</a> <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator-map\" id=\"ref-for-aggregation-coordinator-map③\">aggregation coordinator map</a>[<var>batchingScope</var>] to <var>origin</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set③\">Set</a> <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator-map\" id=\"ref-for-aggregation-coordinator-map③\">aggregation coordinator map</a>[<var>batchingScope</var>] to <var>origin</var>.</p>"
         }
       ]
     },
@@ -372,135 +413,152 @@
           "html": "<p>Let <var>contextId</var> be <var>params</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-context-id\" id=\"ref-for-pre-specified-report-parameters-context-id①\">context ID</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: <var>contextId</var> is null or <var>contextId</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length\">length</a> is not\nlarger than 64.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: <var>contextId</var> is null or <var>contextId</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length②\">length</a> is not\nlarger than 64.</p>"
         },
         {
-          "html": "<p>Let <var>filteringIdMaxBytes</var> be <var>params</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-filtering-id-max-bytes\" id=\"ref-for-pre-specified-report-parameters-filtering-id-max-bytes②\">filtering ID max bytes</a>.</p>"
+          "html": "<p>Let <var>filteringIdMaxBytes</var> be <var>params</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-filtering-id-max-bytes\" id=\"ref-for-pre-specified-report-parameters-filtering-id-max-bytes①\">filtering ID max bytes</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: <var>filteringIdMaxBytes</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain④\">contained</a> in the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#valid-filtering-id-max-bytes-range\" id=\"ref-for-valid-filtering-id-max-bytes-range\">valid filtering ID max bytes range</a></p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑨\">Assert</a>: <var>filteringIdMaxBytes</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②\">contained</a> in the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#valid-filtering-id-max-bytes-range\" id=\"ref-for-valid-filtering-id-max-bytes-range\">valid filtering ID max bytes range</a></p>"
         },
         {
           "html": "<p>Let <var>maxContributions</var> be <var>params</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-max-contributions\" id=\"ref-for-pre-specified-report-parameters-max-contributions①\">max contributions</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: <var>maxContributions</var> is null or greater than zero.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⓪\">Assert</a>: <var>maxContributions</var> is null or greater than zero.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set③\">Set</a> <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-map\" id=\"ref-for-pre-specified-report-parameters-map⑥\">pre-specified report parameters map</a>[<var>batchingScope</var>] to <var>params</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set④\">Set</a> <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-map\" id=\"ref-for-pre-specified-report-parameters-map④\">pre-specified report parameters map</a>[<var>batchingScope</var>] to <var>params</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "validate a histogram contribution",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#validate-a-histogram-contribution",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"validate-a-histogram-contribution\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">validate a histogram contribution</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dictdef-pahistogramcontribution\" id=\"ref-for-dictdef-pahistogramcontribution①①\">PAHistogramContribution</a></code> <var>contribution</var> and a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#scoping-details\" id=\"ref-for-scoping-details①\">scoping details</a> <var>scopingDetails</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry\" id=\"ref-for-contribution-cache-entry⑤\">contribution cache entry</a> or an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\" id=\"ref-for-dfn-exception⑧\">exception</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>contribution</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-bucket\" id=\"ref-for-dom-pahistogramcontribution-bucket\">bucket</a></code>\"] is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain③\">contained</a> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range①\">the range</a> 0 to 2<sup>128</sup>,\nexclusive, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>contribution</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value\">value</a></code>\"] is negative, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>batchingScope</var> be the result of running <var>scopingDetails</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#scoping-details-get-batching-scope-steps\" id=\"ref-for-scoping-details-get-batching-scope-steps①\">get batching scope steps</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>filteringIdMaxBytes</var> be the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#default-filtering-id-max-bytes\" id=\"ref-for-default-filtering-id-max-bytes②\">default filtering ID max bytes</a>.</p>"
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-map\" id=\"ref-for-pre-specified-report-parameters-map⑤\">pre-specified report parameters map</a>[<var>batchingScope</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">exists</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>filteringIdMaxBytes</var> to <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-map\" id=\"ref-for-pre-specified-report-parameters-map⑥\">pre-specified report parameters map</a>[<var>batchingScope</var>]'s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-filtering-id-max-bytes\" id=\"ref-for-pre-specified-report-parameters-filtering-id-max-bytes②\">filtering ID max bytes</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>contribution</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-filteringid\" id=\"ref-for-dom-pahistogramcontribution-filteringid\">filteringId</a></code>\"] is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain④\">contained</a> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range②\">the range</a> 0 to\n256<sup><var>filteringIdMaxBytes</var></sup>, exclusive, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror②\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry\" id=\"ref-for-contribution-cache-entry⑥\">contribution cache entry</a> with the items:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-contribution\" id=\"ref-for-contribution-cache-entry-contribution②\">contribution</a>\n       </dt><dd data-md=\"\">\n        <p><var>contribution</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-batching-scope\" id=\"ref-for-contribution-cache-entry-batching-scope②\">batching scope</a>\n       </dt><dd data-md=\"\">\n        <p><var>batchingScope</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-debug-scope\" id=\"ref-for-contribution-cache-entry-debug-scope②\">debug scope</a>\n       </dt><dd data-md=\"\">\n        <p>The result of running <var>scopingDetails</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#scoping-details-get-debug-scope-steps\" id=\"ref-for-scoping-details-get-debug-scope-steps②\">get debug scope steps</a>.</p>\n      </dd></dl>"
         }
       ]
     },
     {
       "name": "report creation and scheduling steps",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#report-creation-and-scheduling-steps",
-      "html": "To perform the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"report-creation-and-scheduling-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">report creation and scheduling steps</dfn> with an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑦\">origin</a> <var>reportingOrigin</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#context-type\" id=\"ref-for-context-type⑤\">context type</a> <var>api</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dictdef-pahistogramcontribution\" id=\"ref-for-dictdef-pahistogramcontribution⑥\">PAHistogramContribution</a></code>s <var>contributions</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-details\" id=\"ref-for-debug-details①②\">debug details</a> <var>debugDetails</var>, an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator⑦\">aggregation coordinator</a> <var>aggregationCoordinator</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters\" id=\"ref-for-pre-specified-report-parameters④\">pre-specified report parameters</a> <var>preSpecifiedParams</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment③\">moment</a> or\nnull <var>timeout</var>:",
+      "html": "To perform the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"report-creation-and-scheduling-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">report creation and scheduling steps</dfn> with an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑦\">origin</a> <var>reportingOrigin</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#context-type\" id=\"ref-for-context-type⑤\">context type</a> <var>api</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions\" id=\"ref-for-pending-contributions②\">pending contributions</a> <var>pendingContributions</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-details\" id=\"ref-for-debug-details①②\">debug details</a> <var>debugDetails</var>, an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator⑦\">aggregation coordinator</a> <var>aggregationCoordinator</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters\" id=\"ref-for-pre-specified-report-parameters④\">pre-specified report parameters</a> <var>preSpecifiedParams</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment③\">moment</a> or null <var>timeout</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑨\">Assert</a>: <var>reportingOrigin</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin\" id=\"ref-for-potentially-trustworthy-origin①\">potentially trustworthy origin</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①①\">Assert</a>: <var>reportingOrigin</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin\" id=\"ref-for-potentially-trustworthy-origin①\">potentially trustworthy origin</a>.</p>"
         },
         {
           "html": "<p>Optionally, return.</p>"
         },
         {
-          "html": "<p>Let <var>mergedContributions</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>.</p>"
+          "html": "<p>Let <var>currentWallTime</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-wall-time\" id=\"ref-for-dfn-current-wall-time\">current wall time</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>contribution</var> of <var>contributions</var>:",
-          "rationale": "let",
-          "steps": [
-            {
-              "html": "<p>Let <var>hasProcessedContribution</var> be false.</p>"
-            },
-            {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>mergedContribution</var> of <var>mergedContributions</var>:",
-              "rationale": "if",
-              "steps": [
-                {
-                  "html": "If <var>contribution</var> and <var>mergedContribution</var> have both the same <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-bucket\" id=\"ref-for-dom-pahistogramcontribution-bucket①\">bucket</a></code> and the same <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-filteringid\" id=\"ref-for-dom-pahistogramcontribution-filteringid①\">filteringId</a></code>:",
-                  "rationale": "add",
-                  "steps": [
-                    {
-                      "html": "<p>Add <var>contribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value①\">value</a></code> to <var>mergedContribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value②\">value</a></code>.</p>"
-                    },
-                    {
-                      "html": "<p>Set <var>hasProcessedContribution</var> to true.</p>"
-                    },
-                    {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">Break</a>.</p>"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "html": "<p>If <var>hasProcessedContribution</var> is false, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③\">append</a> <var>contribution</var> to <var>mergedContributions</var>.</p>"
-            }
-          ]
+          "html": "<p>Let <var>allUnmergedContributions</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#compile-all-unmerged-contributions\" id=\"ref-for-compile-all-unmerged-contributions\">compiling all unmerged contributions</a>, given <var>reportingOrigin</var>, <var>api</var>, <var>pendingContributions</var>, <var>preSpecifiedParams</var>, <var>timeout</var> and <var>currentWallTime</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>isDeterministicReport</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#determine-if-a-report-should-be-sent-deterministically\" id=\"ref-for-determine-if-a-report-should-be-sent-deterministically③\">determining if a report should be sent deterministically</a> given <var>preSpecifiedParams</var> and <var>api</var>.</p>"
         },
         {
           "html": "<p>Let <var>effectiveMaxContributions</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#determine-the-max-contributions\" id=\"ref-for-determine-the-max-contributions①\">determining the max contributions</a> with <var>api</var> and <var>preSpecifiedParams</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-max-contributions\" id=\"ref-for-pre-specified-report-parameters-max-contributions②\">max contributions</a>.</p>"
         },
         {
-          "html": "<p>Let <var>truncatedContributions</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑧\">list</a>.</p>"
+          "html": "<p>Let <var>keptMergeKeys</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑤\">set</a>.</p>"
         },
         {
-          "html": "If <var>mergedContributions</var> has a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> greater than <var>effectiveMaxContributions</var>:",
-          "rationale": "for",
-          "steps": [
-            {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>n</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range③\">the range</a> 0 to <var>effectiveMaxContributions</var>, exclusive:",
-              "rationale": "append",
-              "steps": [
-                {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>mergedContributions</var>[<var>n</var>] to <var>truncatedContributions</var>.</p>"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "html": "<p>Otherwise, set <var>truncatedContributions</var> to <var>mergedContributions</var>.</p>"
-        },
-        {
-          "html": "<p>Let <var>contributionSum</var> be 0.</p>"
-        },
-        {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>contribution</var> of <var>truncatedContributions</var>:",
-          "rationale": "assert",
-          "steps": [
-            {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⓪\">Assert</a>: <var>contribution</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value③\">value</a></code>\"] is\nnon-negative.</p>"
-            },
-            {
-              "html": "<p>Add <var>contribution</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value④\">value</a></code>\"] to <var>contributionSum</var>.</p>"
-            }
-          ]
-        },
-        {
-          "html": "<p>Let <var>currentWallTime</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-wall-time\" id=\"ref-for-dfn-current-wall-time\">current wall time</a>.</p>"
-        },
-        {
-          "html": "<p>Let <var>sufficientBudget</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#consume-budget-if-permitted\" id=\"ref-for-consume-budget-if-permitted①\">consuming budget if permitted</a> given <var>contributionSum</var>, <var>reportingOrigin</var>, <var>api</var> and <var>currentWallTime</var>.</p>"
-        },
-        {
-          "html": "If <var>sufficientBudget</var> is false:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>contribution</var> of <var>allUnmergedContributions</var>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>isDeterministicReport</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#determine-if-a-report-should-be-sent-deterministically\" id=\"ref-for-determine-if-a-report-should-be-sent-deterministically①\">determining if a report should be sent deterministically</a> given <var>preSpecifiedParams</var> and <var>api</var>.</p>"
+              "html": "<p>Let <var>mergeKey</var> be <var>contribution</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#merge-key\" id=\"ref-for-merge-key\">merge key</a>.</p>"
             },
             {
-              "html": "<p>If <var>isDeterministicReport</var> is false, return.</p>"
+              "html": "<p>If <var>keptMergeKeys</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is <var>effectiveMaxContributions</var> and <var>keptMergeKeys</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑤\">contain</a> <var>mergeKey</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">Empty</a> <var>truncatedContributions</var>.</p>"
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">append</a> <var>mergeKey</var> to <var>keptMergeKeys</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Let <var>report</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-an-aggregatable-report\" id=\"ref-for-obtain-an-aggregatable-report\">obtaining an aggregatable report</a> given <var>reportingOrigin</var>, <var>api</var>, <var>truncatedContributions</var>, <var>debugDetails</var>, <var>aggregationCoordinator</var>, <var>preSpecifiedParams</var>, <var>timeout</var> and <var>currentWallTime</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①\">Remove</a> all items that have a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#merge-key\" id=\"ref-for-merge-key①\">merge key</a> that is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑥\">contained</a> in <var>keptMergeKeys</var> from <var>allUnmergedContributions</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>finalBudgetResults</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#query-the-budget\" id=\"ref-for-query-the-budget①\">querying the budget</a> given <var>allUnmergedContributions</var>, <var>reportingOrigin</var>, <var>api</var>, <var>currentWallTime</var> and\ntrue.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①②\">Assert</a>: <var>finalBudgetResults</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> equals <var>allUnmergedContributions</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>i</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range③\">the range</a> 0 to <var>finalBudgetResults</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③\">size</a>, exclusive:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>finalBudgetResults</var>[<var>i</var>] is false, set <var>allUnmergedContributions</var>[i]'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value①\">value</a></code> to 0.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove②\">Remove</a> all items from <var>allUnmergedContributions</var> that have a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value②\">value</a></code> of 0.</p>"
+        },
+        {
+          "html": "<p>Let <var>mergedContributionsMap</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧\">ordered map</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>contribution</var> of <var>allUnmergedContributions</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>mergeKey</var> be <var>contribution</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#merge-key\" id=\"ref-for-merge-key②\">merge key</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>mergedContributionsMap</var>[<var>mergeKey</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">exists</a>, add <var>contribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value③\">value</a></code> to <var>mergedContributionsMap</var>[<var>mergeKey</var>]'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value④\">value</a></code>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑤\">set</a> <var>mergedContributionsMap</var>[<var>mergeKey</var>] to <var>contribution</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>mergedContributions</var> be the <var>mergedContributionsMap</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values①\">values</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①③\">Assert</a>: <var>mergedContributions</var> has a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size④\">size</a> less than or equal to <var>effectiveMaxContributions</var>,</p>"
+        },
+        {
+          "html": "<p>If <var>mergedContributions</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①\">is empty</a> and <var>isDeterministicReport</var> is\nfalse, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>report</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-an-aggregatable-report\" id=\"ref-for-obtain-an-aggregatable-report\">obtaining an aggregatable report</a> given <var>reportingOrigin</var>, <var>api</var>, <var>mergedContributions</var>, <var>debugDetails</var>, <var>aggregationCoordinator</var>, <var>preSpecifiedParams</var>, <var>timeout</var> and <var>currentWallTime</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> <var>report</var> to the user agent’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-cache\" id=\"ref-for-aggregatable-report-cache①\">aggregatable report cache</a>.</p>"
@@ -508,19 +566,181 @@
       ]
     },
     {
-      "name": "obtain an aggregatable report",
-      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-an-aggregatable-report",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-an-aggregatable-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain an aggregatable report</dfn> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑨\">origin</a> <var>reportingOrigin</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#context-type\" id=\"ref-for-context-type⑦\">context type</a> <var>api</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dictdef-pahistogramcontribution\" id=\"ref-for-dictdef-pahistogramcontribution⑦\">PAHistogramContribution</a></code>s <var>contributions</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-details\" id=\"ref-for-debug-details①③\">debug details</a> <var>debugDetails</var>, an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator⑧\">aggregation coordinator</a> <var>aggregationCoordinator</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters\" id=\"ref-for-pre-specified-report-parameters⑤\">pre-specified report parameters</a> <var>preSpecifiedParams</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment⑤\">moment</a> or null <var>timeout</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment⑥\">moment</a> <var>currentTime</var>,\nperform the following steps. They return an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report\" id=\"ref-for-aggregatable-report⑥\">aggregatable report</a>.",
+      "name": "compile all unmerged contributions",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#compile-all-unmerged-contributions",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compile-all-unmerged-contributions\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compile all unmerged contributions</dfn> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑧\">origin</a> <var>reportingOrigin</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#context-type\" id=\"ref-for-context-type⑥\">context type</a> <var>api</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions\" id=\"ref-for-pending-contributions③\">pending contributions</a> <var>pendingContributions</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters\" id=\"ref-for-pre-specified-report-parameters⑤\">pre-specified report parameters</a> <var>preSpecifiedParams</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment④\">moment</a> or null <var>timeout</var>, and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment⑤\">moment</a> <var>currentWallTime</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dictdef-pahistogramcontribution\" id=\"ref-for-dictdef-pahistogramcontribution①②\">PAHistogramContribution</a></code>s.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①①\">Assert</a>: <var>reportingOrigin</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin\" id=\"ref-for-potentially-trustworthy-origin②\">potentially trustworthy origin</a>.</p>"
+          "html": "<p>Let <var>wasTimeoutReached</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean⑥\">boolean</a> indicating whether both <var>isDeterministicReport</var> is true and <var>timeout</var> is null.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#record-the-internal-error-event-result\" id=\"ref-for-record-the-internal-error-event-result\">Record the internal error event result</a> given <var>pendingContributions</var>,\n\"<code><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#internal-error-event-contribution-timeout-reached\" id=\"ref-for-internal-error-event-contribution-timeout-reached\">contribution-timeout-reached</a></code>\" and <var>wasTimeoutReached</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>provisionalBudgetResults</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#query-the-budget\" id=\"ref-for-query-the-budget②\">querying the budget</a> given <var>pendingContributions</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-unconditional-contributions\" id=\"ref-for-pending-contributions-unconditional-contributions①\">unconditional contributions</a>, <var>reportingOrigin</var>, <var>api</var>, <var>currentWallTime</var> and false.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①④\">Assert</a>: <var>provisionalBudgetResults</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑤\">size</a> equals <var>pendingContributions</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-unconditional-contributions\" id=\"ref-for-pending-contributions-unconditional-contributions②\">unconditional contributions</a>' <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑥\">size</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>i</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range④\">the range</a> 0 to <var>provisionalBudgetResults</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑦\">size</a>, exclusive:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>provisionalBudgetResults</var>[<var>i</var>] is false, set <var>pendingContributions</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-unconditional-contributions\" id=\"ref-for-pending-contributions-unconditional-contributions③\">unconditional contributions</a>[<var>i</var>]'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value⑤\">value</a></code> to 0.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove③\">Remove</a> all items from <var>pendingContributions</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-unconditional-contributions\" id=\"ref-for-pending-contributions-unconditional-contributions④\">unconditional contributions</a> that have a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value⑥\">value</a></code> of 0.</p>"
+        },
+        {
+          "html": "<p>Let <var>insufficientBudget</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean⑦\">boolean</a> indicating whether any value in <var>provisionalBudgetResults</var> is false.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#record-the-internal-error-event-result\" id=\"ref-for-record-the-internal-error-event-result①\">Record the internal error event result</a> given <var>pendingContributions</var>,\n\"<code><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#internal-error-event-insufficient-budget\" id=\"ref-for-internal-error-event-insufficient-budget\">insufficient-budget</a></code>\" and <var>insufficientBudget</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>pendingReportLimitReached</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean⑧\">boolean</a> determined by an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined②\">implementation-defined</a> algorithm.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#record-the-internal-error-event-result\" id=\"ref-for-record-the-internal-error-event-result②\">Record the internal error event result</a> given <var>pendingContributions</var>,\n\"<code><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#internal-error-event-pending-report-limit-reached\" id=\"ref-for-internal-error-event-pending-report-limit-reached\">pending-report-limit-reached</a></code>\" and <var>pendingReportLimitReached</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>isEmptyAndWouldBeDropped</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean⑨\">boolean</a> indicating whether both <var>isDeterministicReport</var> is false and <var>pendingContributions</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-unconditional-contributions\" id=\"ref-for-pending-contributions-unconditional-contributions⑤\">unconditional contributions</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②\">is empty</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#record-the-internal-error-event-result\" id=\"ref-for-record-the-internal-error-event-result③\">Record the internal error event result</a> given <var>pendingContributions</var>,\n\"<code><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#internal-error-event-empty-report-dropped\" id=\"ref-for-internal-error-event-empty-report-dropped\">empty-report-dropped</a></code>\" and <var>isEmptyAndWouldBeDropped</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>effectiveMaxContributions</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#determine-the-max-contributions\" id=\"ref-for-determine-the-max-contributions②\">determining the max contributions</a> with <var>api</var> and <var>preSpecifiedParams</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-max-contributions\" id=\"ref-for-pre-specified-report-parameters-max-contributions③\">max contributions</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>tooManyContributions</var> be false.</p>"
+        },
+        {
+          "html": "<p>Let <var>provisionallyApprovedMergeKeys</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑥\">set</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>contribution</var> of <var>pendingContributions</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-unconditional-contributions\" id=\"ref-for-pending-contributions-unconditional-contributions⑥\">unconditional contributions</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>mergeKey</var> be <var>contribution</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#merge-key\" id=\"ref-for-merge-key③\">merge key</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>provisionallyApprovedMergeKeys</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑧\">size</a> is <var>effectiveMaxContributions</var> and <var>provisionallyApprovedMergeKeys</var> does\nnot <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑦\">contain</a> <var>mergeKey</var>, set <var>tooManyContributions</var> to true.</p>"
+            },
+            {
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append②\">append</a> <var>mergeKey</var> to <var>provisionallyApprovedMergeKeys</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#record-the-internal-error-event-result\" id=\"ref-for-record-the-internal-error-event-result④\">Record the internal error event result</a> given <var>pendingContributions</var>,\n\"<code><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#internal-error-event-too-many-contributions\" id=\"ref-for-internal-error-event-too-many-contributions\">too-many-contributions</a></code>\" and <var>tooManyContributions</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove④\">Remove</a> all items that have a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#merge-key\" id=\"ref-for-merge-key④\">merge key</a> that is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑧\">contained</a> in <var>provisionallyApprovedMergeKeys</var> from <var>pendingContributions</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-unconditional-contributions\" id=\"ref-for-pending-contributions-unconditional-contributions⑦\">unconditional contributions</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>reportSuccess</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①⓪\">boolean</a> indicating whether <em>none</em> of\nthe following are true: <var>isEmptyAndWouldBeDropped</var>, <var>tooManyContributions</var>, <var>insufficientBudget</var>, <var>pendingReportLimitReached</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#record-the-internal-error-event-result\" id=\"ref-for-record-the-internal-error-event-result⑤\">Record the internal error event result</a> given <var>pendingContributions</var>,\n\"<code><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#internal-error-event-report-success\" id=\"ref-for-internal-error-event-report-success\">report-success</a></code>\" and <var>reportSuccess</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>allUnmergedContributions</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>errorEvent</var> of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#all-error-events\" id=\"ref-for-all-error-events\">all error events</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>pendingContributions</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-conditional-contributions\" id=\"ref-for-pending-contributions-conditional-contributions①\">conditional contributions</a>[<var>errorEvent</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">exist</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑤\">Assert</a>: <var>pendingContributions</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-triggered-error-events\" id=\"ref-for-pending-contributions-triggered-error-events\">triggered error events</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑨\">contains</a> <var>errorEvent</var> or <var>errorEvent</var> is\n\"<code><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#already-triggered-external-error\" id=\"ref-for-already-triggered-external-error②\">already triggered external error</a></code>\".</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend\">Extend</a> <var>allUnmergedContributions</var> with <var>pendingContributions</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-conditional-contributions\" id=\"ref-for-pending-contributions-conditional-contributions②\">conditional contributions</a>[<var>errorEvent</var>].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend①\">Extend</a> <var>allUnmergedContributions</var> with <var>pendingContributions</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-unconditional-contributions\" id=\"ref-for-pending-contributions-unconditional-contributions⑧\">unconditional contributions</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>allUnmergedContributions</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "query the budget",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#query-the-budget",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"query-the-budget\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">query the budget</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①①\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dictdef-pahistogramcontribution\" id=\"ref-for-dictdef-pahistogramcontribution①⑤\">PAHistogramContribution</a></code>s <var>contributions</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑨\">origin</a> <var>origin</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#context-type\" id=\"ref-for-context-type⑦\">context type</a> <var>api</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment⑥\">moment</a> <var>currentTime</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①①\">boolean</a> <var>consumeIfPermitted</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①②\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①②\">booleans</a> with the same <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑨\">size</a> as <var>contributions</var>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>resultForEachContribution</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①③\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①③\">booleans</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>approvedValueSum</var> be 0.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">For each</a> <var>contribution</var> of <var>contributions</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>valueToRequest</var> be <var>approvedValueSum</var> + <var>contribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value⑦\">value</a></code>.</p>"
+            },
+            {
+              "html": "<p>Let <var>sufficientBudget</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①④\">boolean</a> determined by an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined③\">implementation-defined</a> algorithm given <var>valueToRequest</var>, <var>origin</var>, <var>api</var> and <var>currentTime</var>. This algorithm should bound budget to usage\nover time, e.g. the contribution sum over the last 24 hours.</p>"
+            },
+            {
+              "html": "<p>If <var>sufficientBudget</var>, add <var>contribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value⑧\">value</a></code> to <var>approvedValueSum</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append④\">Append</a> <var>sufficientBudget</var> to <var>resultForEachContribution</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>consumeIfPermitted</var>, consume budget using an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined④\">implementation-defined</a> algorithm given <var>approvedValueSum</var>, <var>origin</var>, <var>api</var> and <var>currentTime</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>resultForEachContribution</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "record the internal error event result",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#record-the-internal-error-event-result",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"record-the-internal-error-event-result\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record the internal error event result</dfn> given a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions\" id=\"ref-for-pending-contributions④\">pending contributions</a> <var>pendingContributions</var>, an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#internal-error-event\" id=\"ref-for-internal-error-event⑦\">internal error event</a> <var>errorEvent</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①⑤\">boolean</a> <var>wasTriggered</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>wasTriggered</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append③\">append</a> <var>errorEvent</var> to <var>pendingContributions</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-triggered-error-events\" id=\"ref-for-pending-contributions-triggered-error-events①\">triggered error events</a>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove③\">remove</a> <var>pendingContributions</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-conditional-contributions\" id=\"ref-for-pending-contributions-conditional-contributions③\">conditional contributions</a>[<var>errorEvent</var>].</p>"
+        }
+      ]
+    },
+    {
+      "name": "obtain an aggregatable report",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-an-aggregatable-report",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-an-aggregatable-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain an aggregatable report</dfn> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①⓪\">origin</a> <var>reportingOrigin</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#context-type\" id=\"ref-for-context-type⑧\">context type</a> <var>api</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①④\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dictdef-pahistogramcontribution\" id=\"ref-for-dictdef-pahistogramcontribution①⑥\">PAHistogramContribution</a></code>s <var>contributions</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-details\" id=\"ref-for-debug-details①③\">debug details</a> <var>debugDetails</var>, an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator⑧\">aggregation coordinator</a> <var>aggregationCoordinator</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters\" id=\"ref-for-pre-specified-report-parameters⑥\">pre-specified report parameters</a> <var>preSpecifiedParams</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment⑦\">moment</a> or null <var>timeout</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment⑧\">moment</a> <var>currentTime</var>,\nperform the following steps. They return an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report\" id=\"ref-for-aggregatable-report⑥\">aggregatable report</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑥\">Assert</a>: <var>reportingOrigin</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin\" id=\"ref-for-potentially-trustworthy-origin②\">potentially trustworthy origin</a>.</p>"
         },
         {
           "html": "<p>Let <var>reportTime</var> be the result of running <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-a-report-delivery-time\" id=\"ref-for-obtain-a-report-delivery-time\">obtain a report delivery time</a> given <var>currentTime</var> and <var>timeout</var>.</p>"
         },
         {
-          "html": "<p>Let <var>report</var> be a new <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report\" id=\"ref-for-aggregatable-report⑦\">aggregatable report</a> with the items:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-reporting-origin\" id=\"ref-for-aggregatable-report-reporting-origin\">reporting origin</a>\n       </dt><dd data-md=\"\">\n        <p><var>reportingOrigin</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-original-report-time\" id=\"ref-for-aggregatable-report-original-report-time\">original report time</a>\n       </dt><dd data-md=\"\">\n        <p><var>reportTime</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-report-time\" id=\"ref-for-aggregatable-report-report-time\">report time</a>\n       </dt><dd data-md=\"\">\n        <p><var>reportTime</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-contributions\" id=\"ref-for-aggregatable-report-contributions\">contributions</a>\n       </dt><dd data-md=\"\">\n        <p><var>contributions</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-api\" id=\"ref-for-aggregatable-report-api\">api</a>\n       </dt><dd data-md=\"\">\n        <p><var>api</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-report-id\" id=\"ref-for-aggregatable-report-report-id\">report ID</a>\n       </dt><dd data-md=\"\">\n        <p>The result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcrypto/#dfn-generate-a-random-uuid\" id=\"ref-for-dfn-generate-a-random-uuid\">generating a random UUID</a>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-debug-details\" id=\"ref-for-aggregatable-report-debug-details①\">debug details</a>\n       </dt><dd data-md=\"\">\n        <p><var>debugDetails</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-aggregation-coordinator\" id=\"ref-for-aggregatable-report-aggregation-coordinator\">aggregation coordinator</a>\n       </dt><dd data-md=\"\">\n        <p><var>aggregationCoordinator</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-context-id\" id=\"ref-for-aggregatable-report-context-id\">context ID</a>\n       </dt><dd data-md=\"\">\n        <p><var>preSpecifiedParams</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-context-id\" id=\"ref-for-pre-specified-report-parameters-context-id②\">context ID</a></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-filtering-id-max-bytes\" id=\"ref-for-aggregatable-report-filtering-id-max-bytes\">filtering ID max bytes</a>\n       </dt><dd data-md=\"\">\n        <p><var>preSpecifiedParams</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-filtering-id-max-bytes\" id=\"ref-for-pre-specified-report-parameters-filtering-id-max-bytes③\">filtering ID max bytes</a></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-max-contributions\" id=\"ref-for-aggregatable-report-max-contributions\">max contributions</a>\n       </dt><dd data-md=\"\">\n        <p>The result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#determine-the-max-contributions\" id=\"ref-for-determine-the-max-contributions②\">determining the max contributions</a> with <var>api</var> and <var>preSpecifiedParams</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-max-contributions\" id=\"ref-for-pre-specified-report-parameters-max-contributions③\">max contributions</a>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-queued\" id=\"ref-for-aggregatable-report-queued\">queued</a>\n       </dt><dd data-md=\"\">\n        <p>false</p>\n      </dd></dl>"
+          "html": "<p>Let <var>report</var> be a new <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report\" id=\"ref-for-aggregatable-report⑦\">aggregatable report</a> with the items:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-reporting-origin\" id=\"ref-for-aggregatable-report-reporting-origin\">reporting origin</a>\n       </dt><dd data-md=\"\">\n        <p><var>reportingOrigin</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-original-report-time\" id=\"ref-for-aggregatable-report-original-report-time\">original report time</a>\n       </dt><dd data-md=\"\">\n        <p><var>reportTime</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-report-time\" id=\"ref-for-aggregatable-report-report-time\">report time</a>\n       </dt><dd data-md=\"\">\n        <p><var>reportTime</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-contributions\" id=\"ref-for-aggregatable-report-contributions\">contributions</a>\n       </dt><dd data-md=\"\">\n        <p><var>contributions</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-api\" id=\"ref-for-aggregatable-report-api\">api</a>\n       </dt><dd data-md=\"\">\n        <p><var>api</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-report-id\" id=\"ref-for-aggregatable-report-report-id\">report ID</a>\n       </dt><dd data-md=\"\">\n        <p>The result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcrypto/#dfn-generate-a-random-uuid\" id=\"ref-for-dfn-generate-a-random-uuid\">generating a random UUID</a>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-debug-details\" id=\"ref-for-aggregatable-report-debug-details①\">debug details</a>\n       </dt><dd data-md=\"\">\n        <p><var>debugDetails</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-aggregation-coordinator\" id=\"ref-for-aggregatable-report-aggregation-coordinator\">aggregation coordinator</a>\n       </dt><dd data-md=\"\">\n        <p><var>aggregationCoordinator</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-context-id\" id=\"ref-for-aggregatable-report-context-id\">context ID</a>\n       </dt><dd data-md=\"\">\n        <p><var>preSpecifiedParams</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-context-id\" id=\"ref-for-pre-specified-report-parameters-context-id②\">context ID</a></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-filtering-id-max-bytes\" id=\"ref-for-aggregatable-report-filtering-id-max-bytes\">filtering ID max bytes</a>\n       </dt><dd data-md=\"\">\n        <p><var>preSpecifiedParams</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-filtering-id-max-bytes\" id=\"ref-for-pre-specified-report-parameters-filtering-id-max-bytes③\">filtering ID max bytes</a></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-max-contributions\" id=\"ref-for-aggregatable-report-max-contributions\">max contributions</a>\n       </dt><dd data-md=\"\">\n        <p>The result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#determine-the-max-contributions\" id=\"ref-for-determine-the-max-contributions③\">determining the max contributions</a> with <var>api</var> and <var>preSpecifiedParams</var>’ <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-max-contributions\" id=\"ref-for-pre-specified-report-parameters-max-contributions④\">max contributions</a>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-queued\" id=\"ref-for-aggregatable-report-queued\">queued</a>\n       </dt><dd data-md=\"\">\n        <p>false</p>\n      </dd></dl>"
         },
         {
           "html": "<p>Return <var>report</var>.</p>"
@@ -530,7 +750,7 @@
     {
       "name": "obtain a report delivery time",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-a-report-delivery-time",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-a-report-delivery-time\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a report delivery time</dfn> given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment⑦\">moment</a> <var>currentTime</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment⑧\">moment</a> or null <var>timeout</var>, perform the following steps.\nThey return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment⑨\">moment</a>.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-a-report-delivery-time\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a report delivery time</dfn> given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment⑨\">moment</a> <var>currentTime</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment①⓪\">moment</a> or null <var>timeout</var>, perform the following steps.\nThey return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment①①\">moment</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -556,7 +776,7 @@
     {
       "name": "determine the max contributions",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#determine-the-max-contributions",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-the-max-contributions\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the max contributions</dfn> given a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#context-type\" id=\"ref-for-context-type⑧\">context type</a> <var>api</var> and\na positive integer or null <var>maxContributions</var>, perform the following steps. They\nreturn a positive integer.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-the-max-contributions\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the max contributions</dfn> given a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#context-type\" id=\"ref-for-context-type⑨\">context type</a> <var>api</var> and\na positive integer or null <var>maxContributions</var>, perform the following steps. They\nreturn a positive integer.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -573,11 +793,11 @@
     {
       "name": "attempt to queue reports for sending",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#attempt-to-queue-reports-for-sending",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"attempt-to-queue-reports-for-sending\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attempt to queue reports for sending</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a> of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report\" id=\"ref-for-aggregatable-report⑧\">aggregatable reports</a> <var>reports</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"attempt-to-queue-reports-for-sending\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attempt to queue reports for sending</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑤\">list</a> of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report\" id=\"ref-for-aggregatable-report⑧\">aggregatable reports</a> <var>reports</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>report</var> of <var>reports</var>, run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>report</var> of <var>reports</var>, run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
           "rationale": "run",
           "steps": [
             {
@@ -594,13 +814,13 @@
                   "html": "<p>Let <var>currentWallTime</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-wall-time\" id=\"ref-for-dfn-current-wall-time①\">current wall time</a>.</p>"
                 },
                 {
-                  "html": "<p>If <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-report-time\" id=\"ref-for-aggregatable-report-report-time①\">report time</a> is before <var>currentWallTime</var>, set <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-report-time\" id=\"ref-for-aggregatable-report-report-time②\">report time</a> to <var>currentWallTime</var> plus an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined③\">implementation-defined</a> random non-negative <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration②\">duration</a>.</p>"
+                  "html": "<p>If <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-report-time\" id=\"ref-for-aggregatable-report-report-time①\">report time</a> is before <var>currentWallTime</var>, set <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-report-time\" id=\"ref-for-aggregatable-report-report-time②\">report time</a> to <var>currentWallTime</var> plus an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑤\">implementation-defined</a> random non-negative <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration②\">duration</a>.</p>"
                 },
                 {
                   "html": "<p>Wait until the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-wall-time\" id=\"ref-for-dfn-current-wall-time②\">current wall time</a> is equal to or after <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-report-time\" id=\"ref-for-aggregatable-report-report-time③\">report time</a>.</p>"
                 },
                 {
-                  "html": "<p>Optionally, wait a further <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined④\">implementation-defined</a> non-negative <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration③\">duration</a>.</p>"
+                  "html": "<p>Optionally, wait a further <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑥\">implementation-defined</a> non-negative <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration③\">duration</a>.</p>"
                 },
                 {
                   "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#attempt-to-deliver-a-report\" id=\"ref-for-attempt-to-deliver-a-report\">attempt to deliver a report</a> with <var>report</var>.</p>"
@@ -627,7 +847,7 @@
           "html": "<p>Let <var>data</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#serialize-an-aggregatable-report\" id=\"ref-for-serialize-an-aggregatable-report\">serializing an aggregatable report</a> given <var>report</var>.</p>"
         },
         {
-          "html": "<p>If <var>data</var> is an error, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①\">remove</a> <var>report</var> from the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-cache\" id=\"ref-for-aggregatable-report-cache③\">aggregatable report cache</a>.</p>"
+          "html": "<p>If <var>data</var> is an error, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑤\">remove</a> <var>report</var> from the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-cache\" id=\"ref-for-aggregatable-report-cache③\">aggregatable report cache</a>.</p>"
         },
         {
           "html": "<p>Let <var>request</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#create-a-report-request\" id=\"ref-for-create-a-report-request\">creating a report request</a> given <var>url</var> and <var>data</var>.</p>"
@@ -637,14 +857,14 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>shouldRetry</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑤\">implementation-defined</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean⑥\">boolean</a>. The value\nshould be false if no error occurred.</p>"
+              "html": "<p>Let <var>shouldRetry</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑦\">implementation-defined</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①⑥\">boolean</a>. The value\nshould be false if no error occurred.</p>"
             },
             {
               "html": "If <var>shouldRetry</var> is true:",
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p>Set <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-report-time\" id=\"ref-for-aggregatable-report-report-time④\">report time</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-wall-time\" id=\"ref-for-dfn-current-wall-time③\">current wall time</a> plus an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑥\">implementation-defined</a> non-negative <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration④\">duration</a>.</p>"
+                  "html": "<p>Set <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-report-time\" id=\"ref-for-aggregatable-report-report-time④\">report time</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-wall-time\" id=\"ref-for-dfn-current-wall-time③\">current wall time</a> plus an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑧\">implementation-defined</a> non-negative <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration④\">duration</a>.</p>"
                 },
                 {
                   "html": "<p>Set <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-queued\" id=\"ref-for-aggregatable-report-queued④\">queued</a> value to false.</p>"
@@ -652,7 +872,7 @@
               ]
             },
             {
-              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove②\">remove</a> <var>report</var> from the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-cache\" id=\"ref-for-aggregatable-report-cache④\">aggregatable report cache</a>.</p>"
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑥\">remove</a> <var>report</var> from the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-cache\" id=\"ref-for-aggregatable-report-cache④\">aggregatable report cache</a>.</p>"
             }
           ]
         }
@@ -661,26 +881,26 @@
     {
       "name": "obtain a reporting endpoint",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-a-reporting-endpoint",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-a-reporting-endpoint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a reporting endpoint</dfn> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①⓪\">origin</a> <var>reportingOrigin</var> and <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#context-type\" id=\"ref-for-context-type⑨\">context type</a> <var>api</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL</a>.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-a-reporting-endpoint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a reporting endpoint</dfn> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①①\">origin</a> <var>reportingOrigin</var> and <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#context-type\" id=\"ref-for-context-type①⓪\">context type</a> <var>api</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①②\">Assert</a>: <var>reportingOrigin</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin\" id=\"ref-for-potentially-trustworthy-origin③\">potentially trustworthy origin</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑦\">Assert</a>: <var>reportingOrigin</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin\" id=\"ref-for-potentially-trustworthy-origin③\">potentially trustworthy origin</a>.</p>"
         },
         {
-          "html": "<p>Let <var>path</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate\">concatenation</a> of\n«\"<code><a data-link-type=\"biblio\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#biblio-rfc8615\" title=\"Well-Known Uniform Resource Identifiers (URIs)\">.well-known</a>/private-aggregation/report-</code>\", <var>api</var>».</p>"
+          "html": "<p>Let <var>path</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate①\">concatenation</a> of\n«\"<code><a data-link-type=\"biblio\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#biblio-rfc8615\" title=\"Well-Known Uniform Resource Identifiers (URIs)\">.well-known</a>/private-aggregation/report-</code>\", <var>api</var>».</p>"
         },
         {
           "html": "<p>Let <var>base</var> be the result on running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser①\">URL parser</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin\">serialization</a> of <var>reportingOrigin</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①③\">Assert</a>: <var>base</var> is not failure.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑧\">Assert</a>: <var>base</var> is not failure.</p>"
         },
         {
           "html": "<p>Let <var>result</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser②\">URL parser</a> on <var>path</var> with <var>base</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①④\">Assert</a>: <var>result</var> is not failure.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑨\">Assert</a>: <var>result</var> is not failure.</p>"
         },
         {
           "html": "<p>Return <var>result</var>.</p>"
@@ -714,19 +934,19 @@
           "html": "<p>If <var>aggregationServicePayloads</var> is an error, return <var>aggregationServicePayloads</var>.</p>"
         },
         {
-          "html": "<p>Let <var>data</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤\">ordered map</a> of the following key/value pairs:</p>\n      <dl>\n       <dt data-md=\"\">\"<code>aggregation_coordinator_origin</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-aggregation-coordinator\" id=\"ref-for-aggregatable-report-aggregation-coordinator①\">aggregation coordinator</a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin①\">serialized</a>.</p>\n       </dd><dt data-md=\"\">\"<code>aggregation_service_payloads</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>aggregationServicePayloads</var></p>\n       </dd><dt data-md=\"\">\"<code>shared_info</code>\"\n       </dt><dd data-md=\"\">\n        <p>The result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-a-reports-shared-info\" id=\"ref-for-obtain-a-reports-shared-info\">obtaining a report’s shared info</a> given <var>report</var>.</p>\n      </dd></dl>"
+          "html": "<p>Let <var>data</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨\">ordered map</a> of the following key/value pairs:</p>\n      <dl>\n       <dt data-md=\"\">\"<code>aggregation_coordinator_origin</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-aggregation-coordinator\" id=\"ref-for-aggregatable-report-aggregation-coordinator①\">aggregation coordinator</a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin①\">serialized</a>.</p>\n       </dd><dt data-md=\"\">\"<code>aggregation_service_payloads</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>aggregationServicePayloads</var></p>\n       </dd><dt data-md=\"\">\"<code>shared_info</code>\"\n       </dt><dd data-md=\"\">\n        <p>The result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-a-reports-shared-info\" id=\"ref-for-obtain-a-reports-shared-info\">obtaining a report’s shared info</a> given <var>report</var>.</p>\n      </dd></dl>"
         },
         {
           "html": "<p>Let <var>debugKey</var> be <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-debug-details\" id=\"ref-for-aggregatable-report-debug-details②\">debug details</a>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-details-key\" id=\"ref-for-debug-details-key②\">key</a>.</p>"
         },
         {
-          "html": "<p>If <var>debugKey</var> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set④\">set</a> <var>data</var>[\"<code>debug_key</code>\"] to <var>debugKey</var>.</p>"
+          "html": "<p>If <var>debugKey</var> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑥\">set</a> <var>data</var>[\"<code>debug_key</code>\"] to <var>debugKey</var>.</p>"
         },
         {
           "html": "<p>Let <var>contextId</var> be <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-context-id\" id=\"ref-for-aggregatable-report-context-id①\">context ID</a>.</p>"
         },
         {
-          "html": "<p>If <var>contextId</var> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑤\">set</a> <var>data</var>[\"<code>context_id</code>\"] to <var>contextId</var>.</p>"
+          "html": "<p>If <var>contextId</var> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑦\">set</a> <var>data</var>[\"<code>context_id</code>\"] to <var>contextId</var>.</p>"
         },
         {
           "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②\">byte sequence</a> resulting from executing <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#serialize-an-infra-value-to-json-bytes\" id=\"ref-for-serialize-an-infra-value-to-json-bytes\">serialize an infra value to JSON bytes</a> on <var>data</var>.</p>"
@@ -736,7 +956,7 @@
     {
       "name": "obtain the aggregation service payloads",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-the-aggregation-service-payloads",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-the-aggregation-service-payloads\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the aggregation service payloads</dfn> given an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report\" id=\"ref-for-aggregatable-report①①\">aggregatable report</a> <var>report</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①①\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥\">maps</a> or an error.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-the-aggregation-service-payloads\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the aggregation service payloads</dfn> given an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report\" id=\"ref-for-aggregatable-report①①\">aggregatable report</a> <var>report</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑥\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪\">maps</a> or an error.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -761,22 +981,22 @@
           "html": "<p>If <var>encryptedPayload</var> is an error, return <var>encryptedPayload</var>.</p>"
         },
         {
-          "html": "<p>Let <var>aggregationServicePayloads</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①②\">list</a>.</p>"
+          "html": "<p>Let <var>aggregationServicePayloads</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑦\">list</a>.</p>"
         },
         {
-          "html": "<p>Let <var>aggregationServicePayload</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦\">ordered map</a> of the following\nkey/value pairs:</p>\n      <dl>\n       <dt data-md=\"\">\"<code>key_id</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>keyId</var></p>\n       </dd><dt data-md=\"\">\"<code>payload</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>encryptedPayload</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#forgiving-base64-encode\" id=\"ref-for-forgiving-base64-encode\">base64 encoded</a></p>\n      </dd></dl>"
+          "html": "<p>Let <var>aggregationServicePayload</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①\">ordered map</a> of the following\nkey/value pairs:</p>\n      <dl>\n       <dt data-md=\"\">\"<code>key_id</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>keyId</var></p>\n       </dd><dt data-md=\"\">\"<code>payload</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>encryptedPayload</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#forgiving-base64-encode\" id=\"ref-for-forgiving-base64-encode\">base64 encoded</a></p>\n      </dd></dl>"
         },
         {
           "html": "If <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-debug-details\" id=\"ref-for-aggregatable-report-debug-details③\">debug details</a>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-details-enabled\" id=\"ref-for-debug-details-enabled③\">enabled</a> field is true:",
           "rationale": "set",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑥\">Set</a> <var>aggregationServicePayload</var>[<code>debug_cleartext_payload</code>] to <var>plaintextPayload</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#forgiving-base64-encode\" id=\"ref-for-forgiving-base64-encode①\">base64 encoded</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑧\">Set</a> <var>aggregationServicePayload</var>[<code>debug_cleartext_payload</code>] to <var>plaintextPayload</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#forgiving-base64-encode\" id=\"ref-for-forgiving-base64-encode①\">base64 encoded</a>.</p>"
             }
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append④\">Append</a> <var>aggregationServicePayload</var> to <var>aggregationServicePayloads</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑤\">Append</a> <var>aggregationServicePayload</var> to <var>aggregationServicePayloads</var>.</p>"
         },
         {
           "html": "<p>Return <var>aggregationServicePayloads</var>.</p>"
@@ -786,7 +1006,7 @@
     {
       "name": "obtain the public key for encryption",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-the-public-key-for-encryption",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-the-public-key-for-encryption\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the public key for encryption</dfn> given an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator⑨\">aggregation coordinator</a> <var>aggregationCoordinator</var>, perform the following steps. They return\na <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple\">tuple</a> consisting of a public key and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a>, or an error.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-the-public-key-for-encryption\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the public key for encryption</dfn> given an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator⑨\">aggregation coordinator</a> <var>aggregationCoordinator</var>, perform the following steps. They return\na <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple①\">tuple</a> consisting of a public key and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a>, or an error.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -805,7 +1025,7 @@
           "html": "<p>Set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path\">path</a> to «\"<code>.well-known</code>\", \"<code>aggregation-service</code>\",\n\"<code>v1</code>\", \"<code>public-keys</code>\"».</p>"
         },
         {
-          "html": "<p>Return an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑦\">implementation-defined</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple①\">tuple</a> consisting of a public key\nfrom <var>url</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑥\">string</a> that should uniquely identify the public key or,\nin the event that the user agent failed to obtain the public key from <var>url</var>,\nan error. This step may be asynchronous.</p>"
+          "html": "<p>Return an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑨\">implementation-defined</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple②\">tuple</a> consisting of a public key\nfrom <var>url</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑥\">string</a> that should uniquely identify the public key or,\nin the event that the user agent failed to obtain the public key from <var>url</var>,\nan error. This step may be asynchronous.</p>"
         }
       ]
     },
@@ -816,7 +1036,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>payloadData</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①③\">list</a>.</p>"
+          "html": "<p>Let <var>payloadData</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑧\">list</a>.</p>"
         },
         {
           "html": "<p>Let <var>contributions</var> be <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-contributions\" id=\"ref-for-aggregatable-report-contributions①\">contributions</a>.</p>"
@@ -825,40 +1045,40 @@
           "html": "<p>Let <var>maxContributions</var> be <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-max-contributions\" id=\"ref-for-aggregatable-report-max-contributions①\">max contributions</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑤\">Assert</a>: <var>contributions</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> is not greater than <var>maxContributions</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⓪\">Assert</a>: <var>contributions</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⓪\">size</a> is not greater than <var>maxContributions</var>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-while\" id=\"ref-for-iteration-while\">While</a> <var>contributions</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a> is less than <var>maxContributions</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-while\" id=\"ref-for-iteration-while\">While</a> <var>contributions</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①①\">size</a> is less than <var>maxContributions</var>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>nullContribution</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dictdef-pahistogramcontribution\" id=\"ref-for-dictdef-pahistogramcontribution⑧\">PAHistogramContribution</a></code> with the\nitems:</p>\n        <dl>\n         <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-bucket\" id=\"ref-for-dom-pahistogramcontribution-bucket②\">bucket</a></code>\n         </dt><dd data-md=\"\">\n          <p>0</p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value⑤\">value</a></code>\n         </dt><dd data-md=\"\">\n          <p>0</p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-filteringid\" id=\"ref-for-dom-pahistogramcontribution-filteringid②\">filteringId</a></code>\n         </dt><dd data-md=\"\">\n          <p>0</p>\n        </dd></dl>"
+              "html": "<p>Let <var>nullContribution</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dictdef-pahistogramcontribution\" id=\"ref-for-dictdef-pahistogramcontribution①⑦\">PAHistogramContribution</a></code> with the\nitems:</p>\n        <dl>\n         <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-bucket\" id=\"ref-for-dom-pahistogramcontribution-bucket②\">bucket</a></code>\n         </dt><dd data-md=\"\">\n          <p>0</p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value①⓪\">value</a></code>\n         </dt><dd data-md=\"\">\n          <p>0</p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-filteringid\" id=\"ref-for-dom-pahistogramcontribution-filteringid②\">filteringId</a></code>\n         </dt><dd data-md=\"\">\n          <p>0</p>\n        </dd></dl>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑤\">Append</a> <var>nullContribution</var> to <var>contributions</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑥\">Append</a> <var>nullContribution</var> to <var>contributions</var>.</p>"
             }
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>contribution</var> of <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-contributions\" id=\"ref-for-aggregatable-report-contributions②\">contributions</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>contribution</var> of <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-contributions\" id=\"ref-for-aggregatable-report-contributions②\">contributions</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>filteringIdMaxBytes</var> be <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-filtering-id-max-bytes\" id=\"ref-for-aggregatable-report-filtering-id-max-bytes①\">filtering id max bytes</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑥\">Assert</a>: <var>contribution</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-filteringid\" id=\"ref-for-dom-pahistogramcontribution-filteringid③\">filteringId</a></code>\"]\nis <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑤\">contained</a> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range④\">the range</a> 0 to\n256<sup><var>filteringIdMaxBytes</var></sup>, exclusive.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②①\">Assert</a>: <var>contribution</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-filteringid\" id=\"ref-for-dom-pahistogramcontribution-filteringid③\">filteringId</a></code>\"]\nis <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①⓪\">contained</a> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range⑤\">the range</a> 0 to\n256<sup><var>filteringIdMaxBytes</var></sup>, exclusive.</p>"
             },
             {
-              "html": "<p>Let <var>contributionData</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧\">ordered map</a> of the following key/value\npairs:</p>\n        <dl>\n         <dt data-md=\"\">\"<code>bucket</code>\"\n         </dt><dd data-md=\"\">\n          <p>The result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#encode-an-integer-for-the-payload\" id=\"ref-for-encode-an-integer-for-the-payload\">encoding an integer for the payload</a> given <var>contribution</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-bucket\" id=\"ref-for-dom-pahistogramcontribution-bucket③\">bucket</a></code>\"] and 16.</p>\n         </dd><dt data-md=\"\">\"<code>value</code>\"\n         </dt><dd data-md=\"\">\n          <p>The result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#encode-an-integer-for-the-payload\" id=\"ref-for-encode-an-integer-for-the-payload①\">encoding an integer for the payload</a> given <var>contribution</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value⑥\">value</a></code>\"] and 4.</p>\n         </dd><dt data-md=\"\">\"<code>id</code>\"\n         </dt><dd data-md=\"\">\n          <p>The result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#encode-an-integer-for-the-payload\" id=\"ref-for-encode-an-integer-for-the-payload②\">encoding an integer for the payload</a> given <var>contribution</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-filteringid\" id=\"ref-for-dom-pahistogramcontribution-filteringid④\">filteringId</a></code>\"] and <var>filteringIdMaxBytes</var>.</p>\n        </dd></dl>"
+              "html": "<p>Let <var>contributionData</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②\">ordered map</a> of the following key/value\npairs:</p>\n        <dl>\n         <dt data-md=\"\">\"<code>bucket</code>\"\n         </dt><dd data-md=\"\">\n          <p>The result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#encode-an-integer-for-the-payload\" id=\"ref-for-encode-an-integer-for-the-payload\">encoding an integer for the payload</a> given <var>contribution</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-bucket\" id=\"ref-for-dom-pahistogramcontribution-bucket③\">bucket</a></code>\"] and 16.</p>\n         </dd><dt data-md=\"\">\"<code>value</code>\"\n         </dt><dd data-md=\"\">\n          <p>The result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#encode-an-integer-for-the-payload\" id=\"ref-for-encode-an-integer-for-the-payload①\">encoding an integer for the payload</a> given <var>contribution</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-value\" id=\"ref-for-dom-pahistogramcontribution-value①①\">value</a></code>\"] and 4.</p>\n         </dd><dt data-md=\"\">\"<code>id</code>\"\n         </dt><dd data-md=\"\">\n          <p>The result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#encode-an-integer-for-the-payload\" id=\"ref-for-encode-an-integer-for-the-payload②\">encoding an integer for the payload</a> given <var>contribution</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-pahistogramcontribution-filteringid\" id=\"ref-for-dom-pahistogramcontribution-filteringid④\">filteringId</a></code>\"] and <var>filteringIdMaxBytes</var>.</p>\n        </dd></dl>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑥\">Append</a> <var>contributionData</var> to <var>payloadData</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑦\">Append</a> <var>contributionData</var> to <var>payloadData</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Let <var>payload</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨\">ordered map</a> of the following key/value pairs:</p>\n      <dl>\n       <dt data-md=\"\">\"<code>data</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>payloadData</var></p>\n       </dd><dt data-md=\"\">\"<code>operation</code>\"\n       </dt><dd data-md=\"\">\n        <p>\"<code>histogram</code>\"</p>\n      </dd></dl>"
+          "html": "<p>Let <var>payload</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③\">ordered map</a> of the following key/value pairs:</p>\n      <dl>\n       <dt data-md=\"\">\"<code>data</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>payloadData</var></p>\n       </dd><dt data-md=\"\">\"<code>operation</code>\"\n       </dt><dd data-md=\"\">\n        <p>\"<code>histogram</code>\"</p>\n      </dd></dl>"
         },
         {
           "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence④\">byte sequence</a> resulting from <a data-link-type=\"biblio\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#biblio-rfc8949\" title=\"Concise Binary Object Representation (CBOR)\">CBOR encoding</a> <var>payload</var>.</p>"
@@ -872,7 +1092,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>info</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode\">UTF-8 encoding</a> the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate①\">concatenation</a> of « \"<code>aggregation_service</code>\", <var>sharedInfo</var> ».</p>"
+          "html": "<p>Let <var>info</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode\">UTF-8 encoding</a> the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate②\">concatenation</a> of « \"<code>aggregation_service</code>\", <var>sharedInfo</var> ».</p>"
         },
         {
           "html": "<p>Let (<var>kem_id</var>, <var>kdf_id</var>, <var>aead_id</var>) be (0x0020, 0x0001, 0x0003).</p>"
@@ -904,7 +1124,7 @@
           "html": "<p>Let <var>scheduledReportTime</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration-from\" id=\"ref-for-dfn-duration-from\">duration from</a> the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-unix-epoch\" id=\"ref-for-dfn-unix-epoch\">UNIX epoch</a> to <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-original-report-time\" id=\"ref-for-aggregatable-report-original-report-time①\">original report time</a>.</p>"
         },
         {
-          "html": "<p>Let <var>sharedInfo</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪\">ordered map</a> of the following key/value pairs:</p>\n      <dl>\n       <dt data-md=\"\">\"<code>api</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-api\" id=\"ref-for-aggregatable-report-api②\">api</a></p>\n       </dd><dt data-md=\"\">\"<code>report_id</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-report-id\" id=\"ref-for-aggregatable-report-report-id①\">report ID</a></p>\n       </dd><dt data-md=\"\">\"<code>reporting_origin</code>\"\n       </dt><dd data-md=\"\">\n        <p>The <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin②\">serialization</a> of <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-reporting-origin\" id=\"ref-for-aggregatable-report-reporting-origin②\">reporting origin</a></p>\n       </dd><dt data-md=\"\">\"<code>scheduled_report_time</code>\"\n       </dt><dd data-md=\"\">\n        <p>The number of seconds in <var>scheduledReportTime</var>, rounded down to the\nnearest number of whole seconds and <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#serialize-an-integer\" id=\"ref-for-serialize-an-integer\">serialized</a></p>\n       </dd><dt data-md=\"\">\"<code>version</code>\"\n       </dt><dd data-md=\"\">\n        <p>\"<code>1.0</code>\"</p>\n      </dd></dl>"
+          "html": "<p>Let <var>sharedInfo</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④\">ordered map</a> of the following key/value pairs:</p>\n      <dl>\n       <dt data-md=\"\">\"<code>api</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-api\" id=\"ref-for-aggregatable-report-api②\">api</a></p>\n       </dd><dt data-md=\"\">\"<code>report_id</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-report-id\" id=\"ref-for-aggregatable-report-report-id①\">report ID</a></p>\n       </dd><dt data-md=\"\">\"<code>reporting_origin</code>\"\n       </dt><dd data-md=\"\">\n        <p>The <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin②\">serialization</a> of <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report-reporting-origin\" id=\"ref-for-aggregatable-report-reporting-origin②\">reporting origin</a></p>\n       </dd><dt data-md=\"\">\"<code>scheduled_report_time</code>\"\n       </dt><dd data-md=\"\">\n        <p>The number of seconds in <var>scheduledReportTime</var>, rounded down to the\nnearest number of whole seconds and <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#serialize-an-integer\" id=\"ref-for-serialize-an-integer\">serialized</a></p>\n       </dd><dt data-md=\"\">\"<code>version</code>\"\n       </dt><dd data-md=\"\">\n        <p>\"<code>1.0</code>\"</p>\n      </dd></dl>"
         },
         {
           "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#serialize-an-infra-value-to-a-json-string\" id=\"ref-for-serialize-an-infra-value-to-a-json-string\">serializing an infra value to a json string</a> given <var>sharedInfo</var>.</p>"
@@ -913,8 +1133,7 @@
     },
     {
       "name": "remote end steps",
-      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"remote-end-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remote end steps</dfn> are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps\">remote end steps</a> given <var>session</var>, <var>URL variables</var> and <var>parameters</var> are:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -924,7 +1143,7 @@
           "html": "<p>Let <var>enabled</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-getting-properties\" id=\"ref-for-dfn-getting-properties\">getting a property</a> named <code>\"enabled\"</code> from <var>parameters</var>.</p>"
         },
         {
-          "html": "<p>If <var>enabled</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\" id=\"ref-for-idl-undefined②\">undefined</a></code> or is not a boolean, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①\">WebDriver\nerror</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①\">invalid argument</a>.</p>"
+          "html": "<p>If <var>enabled</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\" id=\"ref-for-idl-undefined③\">undefined</a></code> or is not a boolean, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①\">WebDriver\nerror</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#automation-local-testing-mode-enabled\" id=\"ref-for-automation-local-testing-mode-enabled①\">automation local testing mode enabled</a> to <var>enabled</var>.</p>"

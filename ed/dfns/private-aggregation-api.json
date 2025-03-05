@@ -45,6 +45,48 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-privateaggregation-contributetohistogramonevent-event-contribution-event",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-privateaggregation-contributetohistogramonevent-event-contribution-event",
+      "linkingText": [
+        "event"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PrivateAggregation/contributeToHistogramOnEvent(event, contribution)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposed-interface",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#exposed-interface",
+        "title": "Exposed interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-privateaggregation-contributetohistogramonevent-event-contribution-contribution",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-privateaggregation-contributetohistogramonevent-event-contribution-contribution",
+      "linkingText": [
+        "contribution"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PrivateAggregation/contributeToHistogramOnEvent(event, contribution)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposed-interface",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#exposed-interface",
+        "title": "Exposed interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-privateaggregation-enabledebugmode-options-options",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-privateaggregation-enabledebugmode-options-options",
       "linkingText": [
@@ -199,7 +241,7 @@
       "for": [
         "PrivateAggregation"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "exposed-interface",
@@ -220,7 +262,28 @@
       "for": [
         "PrivateAggregation"
       ],
-      "access": "private",
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposed-interface",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#exposed-interface",
+        "title": "Exposed interface",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "privateaggregation-should-perform-default-contributetohistogramonevent-processing",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#privateaggregation-should-perform-default-contributetohistogramonevent-processing",
+      "linkingText": [
+        "should perform default contributeToHistogramOnEvent() processing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PrivateAggregation"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "exposed-interface",
@@ -235,6 +298,27 @@
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-privateaggregation-contributetohistogram",
       "linkingText": [
         "contributeToHistogram(contribution)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PrivateAggregation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposed-interface",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#exposed-interface",
+        "title": "Exposed interface",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-privateaggregation-contributetohistogramonevent",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-privateaggregation-contributetohistogramonevent",
+      "linkingText": [
+        "contributeToHistogramOnEvent(event, contribution)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -282,7 +366,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "batching-scope",
@@ -301,7 +385,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "debug-scope",
@@ -320,7 +404,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "scoping-details",
@@ -341,7 +425,7 @@
       "for": [
         "scoping details"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "scoping-details",
@@ -362,7 +446,7 @@
       "for": [
         "scoping details"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "scoping-details",
@@ -434,6 +518,208 @@
       "definedIn": "dt"
     },
     {
+      "id": "internal-error-event",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#internal-error-event",
+      "linkingText": [
+        "internal error event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-events-heading",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#error-events-heading",
+        "title": "Error events",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "internal-error-event-report-success",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#internal-error-event-report-success",
+      "linkingText": [
+        "report-success"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "internal error event"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "error-events-heading",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#error-events-heading",
+        "title": "Error events",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "internal-error-event-too-many-contributions",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#internal-error-event-too-many-contributions",
+      "linkingText": [
+        "too-many-contributions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "internal error event"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "error-events-heading",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#error-events-heading",
+        "title": "Error events",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "internal-error-event-empty-report-dropped",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#internal-error-event-empty-report-dropped",
+      "linkingText": [
+        "empty-report-dropped"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "internal error event"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "error-events-heading",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#error-events-heading",
+        "title": "Error events",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "internal-error-event-pending-report-limit-reached",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#internal-error-event-pending-report-limit-reached",
+      "linkingText": [
+        "pending-report-limit-reached"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "internal error event"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "error-events-heading",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#error-events-heading",
+        "title": "Error events",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "internal-error-event-insufficient-budget",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#internal-error-event-insufficient-budget",
+      "linkingText": [
+        "insufficient-budget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "internal error event"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "error-events-heading",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#error-events-heading",
+        "title": "Error events",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "internal-error-event-contribution-timeout-reached",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#internal-error-event-contribution-timeout-reached",
+      "linkingText": [
+        "contribution-timeout-reached"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "internal error event"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "error-events-heading",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#error-events-heading",
+        "title": "Error events",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "error-event",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#error-event",
+      "linkingText": [
+        "error event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-events-heading",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#error-events-heading",
+        "title": "Error events",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "already-triggered-external-error",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#already-triggered-external-error",
+      "linkingText": [
+        "already triggered external error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-events-heading",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#error-events-heading",
+        "title": "Error events",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "all-error-events",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#all-error-events",
+      "linkingText": [
+        "All error events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "error-events-heading",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#error-events-heading",
+        "title": "Error events",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "contribution-cache-entry",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry",
       "linkingText": [
@@ -442,13 +728,13 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "contribution-cache-entry",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry",
         "title": "Contribution cache entry",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "heading"
     },
@@ -469,7 +755,28 @@
         "id": "contribution-cache-entry",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry",
         "title": "Contribution cache entry",
-        "number": "4.5"
+        "number": "4.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "contribution-cache-entry-error-event",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry-error-event",
+      "linkingText": [
+        "error event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "contribution cache entry"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "contribution-cache-entry",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry",
+        "title": "Contribution cache entry",
+        "number": "4.6"
       },
       "definedIn": "dt"
     },
@@ -490,7 +797,7 @@
         "id": "contribution-cache-entry",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry",
         "title": "Contribution cache entry",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "dt"
     },
@@ -511,7 +818,7 @@
         "id": "contribution-cache-entry",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry",
         "title": "Contribution cache entry",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "dt"
     },
@@ -532,7 +839,89 @@
         "id": "contribution-cache-entry",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#contribution-cache-entry",
         "title": "Contribution cache entry",
-        "number": "4.5"
+        "number": "4.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "pending-contributions",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions",
+      "linkingText": [
+        "Pending contributions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pending-contributions",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions",
+        "title": "Pending contributions",
+        "number": "4.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "pending-contributions-unconditional-contributions",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-unconditional-contributions",
+      "linkingText": [
+        "unconditional contributions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pending contributions"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pending-contributions",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions",
+        "title": "Pending contributions",
+        "number": "4.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "pending-contributions-conditional-contributions",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-conditional-contributions",
+      "linkingText": [
+        "conditional contributions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pending contributions"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pending-contributions",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions",
+        "title": "Pending contributions",
+        "number": "4.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "pending-contributions-triggered-error-events",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions-triggered-error-events",
+      "linkingText": [
+        "triggered error events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pending contributions"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pending-contributions",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#pending-contributions",
+        "title": "Pending contributions",
+        "number": "4.7"
       },
       "definedIn": "dt"
     },
@@ -551,7 +940,7 @@
         "id": "aggregatable-report",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report",
         "title": "Aggregatable report",
-        "number": "4.6"
+        "number": "4.8"
       },
       "definedIn": "heading"
     },
@@ -572,7 +961,7 @@
         "id": "aggregatable-report",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report",
         "title": "Aggregatable report",
-        "number": "4.6"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -593,7 +982,7 @@
         "id": "aggregatable-report",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report",
         "title": "Aggregatable report",
-        "number": "4.6"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -614,7 +1003,7 @@
         "id": "aggregatable-report",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report",
         "title": "Aggregatable report",
-        "number": "4.6"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -635,7 +1024,7 @@
         "id": "aggregatable-report",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report",
         "title": "Aggregatable report",
-        "number": "4.6"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -656,7 +1045,7 @@
         "id": "aggregatable-report",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report",
         "title": "Aggregatable report",
-        "number": "4.6"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -677,7 +1066,7 @@
         "id": "aggregatable-report",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report",
         "title": "Aggregatable report",
-        "number": "4.6"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -698,7 +1087,7 @@
         "id": "aggregatable-report",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report",
         "title": "Aggregatable report",
-        "number": "4.6"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -719,7 +1108,7 @@
         "id": "aggregatable-report",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report",
         "title": "Aggregatable report",
-        "number": "4.6"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -740,7 +1129,7 @@
         "id": "aggregatable-report",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report",
         "title": "Aggregatable report",
-        "number": "4.6"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -761,7 +1150,7 @@
         "id": "aggregatable-report",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report",
         "title": "Aggregatable report",
-        "number": "4.6"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -782,7 +1171,7 @@
         "id": "aggregatable-report",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report",
         "title": "Aggregatable report",
-        "number": "4.6"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -803,7 +1192,7 @@
         "id": "aggregatable-report",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report",
         "title": "Aggregatable report",
-        "number": "4.6"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -816,13 +1205,13 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "aggregation-coordinator-structure",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator-structure",
         "title": "Aggregation coordinator",
-        "number": "4.7"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -841,7 +1230,7 @@
         "id": "context-type",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#context-type",
         "title": "Context type",
-        "number": "4.8"
+        "number": "4.10"
       },
       "definedIn": "heading"
     },
@@ -854,13 +1243,13 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "pre-specified-report-parameters-structure",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-structure",
         "title": "Pre-specified report parameters",
-        "number": "4.9"
+        "number": "4.11"
       },
       "definedIn": "prose"
     },
@@ -875,13 +1264,13 @@
       "for": [
         "pre-specified report parameters"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "pre-specified-report-parameters-structure",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-structure",
         "title": "Pre-specified report parameters",
-        "number": "4.9"
+        "number": "4.11"
       },
       "definedIn": "dt"
     },
@@ -896,13 +1285,13 @@
       "for": [
         "pre-specified report parameters"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "pre-specified-report-parameters-structure",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-structure",
         "title": "Pre-specified report parameters",
-        "number": "4.9"
+        "number": "4.11"
       },
       "definedIn": "dt"
     },
@@ -917,13 +1306,13 @@
       "for": [
         "pre-specified report parameters"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "pre-specified-report-parameters-structure",
         "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters-structure",
         "title": "Pre-specified report parameters",
-        "number": "4.9"
+        "number": "4.11"
       },
       "definedIn": "dt"
     },
@@ -1031,7 +1420,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "constants",
@@ -1050,7 +1439,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "constants",
@@ -1183,7 +1572,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "permissions-policy-integration",
@@ -1297,7 +1686,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "exported-algorithms",
@@ -1403,6 +1792,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "validate-a-histogram-contribution",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#validate-a-histogram-contribution",
+      "linkingText": [
+        "validate a histogram contribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exported-algorithms",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#exported-algorithms",
+        "title": "Exported algorithms",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "report-creation-and-scheduling-steps",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#report-creation-and-scheduling-steps",
       "linkingText": [
@@ -1422,10 +1830,67 @@
       "definedIn": "prose"
     },
     {
-      "id": "consume-budget-if-permitted",
-      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#consume-budget-if-permitted",
+      "id": "compile-all-unmerged-contributions",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#compile-all-unmerged-contributions",
       "linkingText": [
-        "consume budget if permitted"
+        "compile all unmerged contributions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scheduling-reports",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#scheduling-reports",
+        "title": "Scheduling reports",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "merge-key",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#merge-key",
+      "linkingText": [
+        "merge key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scheduling-reports",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#scheduling-reports",
+        "title": "Scheduling reports",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "query-the-budget",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#query-the-budget",
+      "linkingText": [
+        "query the budget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scheduling-reports",
+        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#scheduling-reports",
+        "title": "Scheduling reports",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "record-the-internal-error-event-result",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#record-the-internal-error-event-result",
+      "linkingText": [
+        "record the internal error event result"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1742,25 +2207,6 @@
         "number": "10.1"
       },
       "definedIn": "table"
-    },
-    {
-      "id": "remote-end-steps",
-      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps",
-      "linkingText": [
-        "remote end steps"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "set-local-testing-mode",
-        "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#set-local-testing-mode",
-        "title": "Set local testing mode",
-        "number": "10.1"
-      },
-      "definedIn": "prose"
     }
   ]
 }
