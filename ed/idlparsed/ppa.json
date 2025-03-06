@@ -36,27 +36,11 @@
         "href": "https://w3c.github.io/ppa/#enumdef-privateattributionprotocol"
       },
       "PrivateAttributionAggregationService": {
-        "fragment": "dictionary PrivateAttributionAggregationService {\n  required USVString url;\n  required DOMString protocol;\n};",
+        "fragment": "dictionary PrivateAttributionAggregationService {\n  required DOMString protocol;\n};",
         "type": "dictionary",
         "name": "PrivateAttributionAggregationService",
         "inheritance": null,
         "members": [
-          {
-            "type": "field",
-            "name": "url",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": null,
-            "required": true,
-            "href": "https://w3c.github.io/ppa/#dom-privateattributionaggregationservice-url"
-          },
           {
             "type": "field",
             "name": "protocol",
@@ -79,14 +63,22 @@
         "href": "https://w3c.github.io/ppa/#dictdef-privateattributionaggregationservice"
       },
       "PrivateAttributionAggregationServices": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface PrivateAttributionAggregationServices {\n  readonly setlike<PrivateAttributionAggregationService>;\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PrivateAttributionAggregationServices {\n  readonly maplike<USVString, PrivateAttributionAggregationService>;\n};",
         "type": "interface",
         "name": "PrivateAttributionAggregationServices",
         "inheritance": null,
         "members": [
           {
-            "type": "setlike",
+            "type": "maplike",
             "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "USVString"
+              },
               {
                 "type": null,
                 "extAttrs": [],

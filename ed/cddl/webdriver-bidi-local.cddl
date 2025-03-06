@@ -47,6 +47,7 @@ Event = {
 
 EventData = (
   BrowsingContextEvent //
+  InputEvent //
   LogEvent //
   NetworkEvent //
   ScriptEvent
@@ -154,6 +155,7 @@ session.UserPromptHandler = {
   ? beforeUnload: session.UserPromptHandlerType,
   ? confirm: session.UserPromptHandlerType,
   ? default: session.UserPromptHandlerType,
+  ? file: session.UserPromptHandlerType,
   ? prompt: session.UserPromptHandlerType,
 };
 
@@ -1120,6 +1122,21 @@ log.EntryAdded = (
  method: "log.entryAdded",
  params: log.Entry,
 )
+
+InputEvent = (
+  input.FileDialogOpened
+)
+
+input.FileDialogOpened = (
+   method: "input.fileDialogOpened",
+   params: input.FileDialogInfo
+)
+
+input.FileDialogInfo = {
+   context: browsingContext.BrowsingContext,
+   ? element: script.SharedReference,
+   multiple: bool,
+}
 
 WebExtensionResult = (
   webExtension.InstallResult

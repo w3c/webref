@@ -1,4 +1,13 @@
-// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
+// Source: SVG Paths (https://www.w3.org/TR/svg-paths/)
 [Exposed=Window]
 interface SVGPathElement : SVGGeometryElement {
+
+  readonly attribute SVGAnimatedNumber pathLength;
+
+  float getTotalLength();
+  DOMPoint getPointAtLength(float distance);
+  SVGPathSegment? getPathSegmentAtLength(float distance);
 };
+
+// Source: SVG Paths (https://www.w3.org/TR/svg-paths/)
+SVGPathElement includes SVGPathData;

@@ -48,7 +48,6 @@
           "SVGAnimatedTransformList",
           "SVGPreserveAspectRatio",
           "SVGAnimatedPreserveAspectRatio",
-          "SVGPathElement",
           "SVGRectElement",
           "SVGCircleElement",
           "SVGEllipseElement",
@@ -5474,26 +5473,6 @@
         "partial": false,
         "href": "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGAnimatedPreserveAspectRatio"
       },
-      "SVGPathElement": {
-        "fragment": "[Exposed=Window]\ninterface SVGPathElement : SVGGeometryElement {\n};",
-        "type": "interface",
-        "name": "SVGPathElement",
-        "inheritance": "SVGGeometryElement",
-        "members": [],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://svgwg.org/svg2-draft/paths.html#InterfaceSVGPathElement"
-      },
       "SVGRectElement": {
         "fragment": "[Exposed=Window]\ninterface SVGRectElement : SVGGeometryElement {\n  [SameObject] readonly attribute SVGAnimatedLength x;\n  [SameObject] readonly attribute SVGAnimatedLength y;\n  [SameObject] readonly attribute SVGAnimatedLength width;\n  [SameObject] readonly attribute SVGAnimatedLength height;\n  [SameObject] readonly attribute SVGAnimatedLength rx;\n  [SameObject] readonly attribute SVGAnimatedLength ry;\n};",
         "type": "interface",
@@ -9191,7 +9170,6 @@
         "SVGAnimatedTransformList",
         "SVGPreserveAspectRatio",
         "SVGAnimatedPreserveAspectRatio",
-        "SVGPathElement",
         "SVGRectElement",
         "SVGCircleElement",
         "SVGEllipseElement",
@@ -9367,9 +9345,6 @@
       "SVGPreserveAspectRatio": [],
       "SVGAnimatedPreserveAspectRatio": [
         "SVGPreserveAspectRatio"
-      ],
-      "SVGPathElement": [
-        "SVGGeometryElement"
       ],
       "SVGRectElement": [
         "SVGGeometryElement",

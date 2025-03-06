@@ -1,0 +1,5 @@
+// Source: SVG Paths (https://www.w3.org/TR/svg-paths/)
+interface mixin SVGPathData {
+   sequence<SVGPathSegment> getPathData(optional SVGPathDataSettings settings = {});
+   undefined setPathData(sequence<SVGPathSegment> pathData);
+};

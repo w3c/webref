@@ -3,13 +3,20 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Scalable Vector Graphics (SVG) 2",
-      "url": "https://www.w3.org/TR/SVG2/"
+      "title": "SVG Paths",
+      "url": "https://www.w3.org/TR/svg-paths/"
     },
-    "fragment": "[Exposed=Window]\ninterface SVGPathElement : SVGGeometryElement {\n};",
-    "href": "https://svgwg.org/svg2-draft/paths.html#InterfaceSVGPathElement"
+    "fragment": "[Exposed=Window]\ninterface SVGPathElement : SVGGeometryElement {\n\n  readonly attribute SVGAnimatedNumber pathLength;\n\n  float getTotalLength();\n  DOMPoint getPointAtLength(float distance);\n  SVGPathSegment? getPathSegmentAtLength(float distance);\n};"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "SVG Paths",
+        "url": "https://www.w3.org/TR/svg-paths/"
+      },
+      "fragment": "SVGPathElement includes SVGPathData;"
+    }
+  ],
   "inheritance": {
     "name": "SVGGeometryElement",
     "type": "interface",
@@ -530,5 +537,21 @@
     },
     "includes": []
   },
-  "includes": []
+  "includes": [
+    {
+      "name": "SVGPathData",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "SVG Paths",
+          "url": "https://www.w3.org/TR/svg-paths/"
+        },
+        "fragment": "interface mixin SVGPathData {\n   sequence<SVGPathSegment> getPathData(optional SVGPathDataSettings settings = {});\n   undefined setPathData(sequence<SVGPathSegment> pathData);\n};",
+        "href": "https://svgwg.org/specs/paths/#InterfaceSVGPathData"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
 }

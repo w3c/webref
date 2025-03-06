@@ -5,84 +5,73 @@
   },
   "links": {
     "rawlinks": {
-      "https://docs.google.com/document/d/1xi12LrcqjqIHTtZzrzZKmQ3lbTv9mKrN076UB-j3UZQ/edit?hl=en_US": {},
+      "https://datatracker.ietf.org/doc/html/rfc4648": {},
+      "https://docs.google.com/document/d/1xi12LrcqjqIHTtZzrzZKmQ3lbTv9mKrN076UB-j3UZQ/": {},
+      "https://ecma-international.org/": {},
+      "https://ecma-international.org/memento/codeofconduct.htm": {},
       "https://en.wikipedia.org/wiki/Variable-length_quantity": {},
-      "https://encoding.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
-      "https://github.com/tc39/ecma426": {},
-      "https://infra.spec.whatwg.org/": {
-        "anchors": [
-          "algorithm-control-flow"
-        ]
-      },
-      "https://tc39.es/ecma262/": {},
-      "https://tc39.es/ecma404/": {},
-      "https://tc39.es/ecma426/": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://web.archive.org/web/20120814122523/http://blog.getfirebug.com/2009/08/11/give-your-eval-a-name-with-sourceurl/": {},
-      "https://webidl.spec.whatwg.org/": {},
-      "https://www.ietf.org/rfc/rfc4648.txt": {},
-      "https://www.w3.org/TR/wasm-core-2/": {
-        "anchors": [
-          "names%E2%91%A2"
-        ]
-      }
-    },
-    "autolinks": {
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
-          "utf-8-decode-without-bom-or-fail"
+          "utf-8-decode"
         ]
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
+          "concept-fetch",
+          "http-newline-byte",
+          "process-response-end-of-body",
           "concept-request",
           "concept-request-url",
-          "concept-fetch",
-          "process-response-end-of-body",
-          "concept-response",
-          "http-scheme",
-          "http-newline-byte"
+          "http-scheme"
         ]
       },
+      "https://github.com/bterlson/ecmarkup": {},
+      "https://github.com/domenic/ecmarkdown": {},
+      "https://github.com/rbuckton/grammarkdown": {},
+      "https://github.com/takikawa": {},
+      "https://github.com/tc39/ecma262/pull/3540": {},
+      "https://github.com/tc39/ecma426": {},
+      "https://github.com/tc39/ecma426/issues": {},
+      "https://github.com/tc39/ecma426/issues/new": {},
+      "https://github.com/tc39/ecma426/pulls": {},
+      "https://github.com/tc39/ecma426/pulls/new": {},
+      "https://github.com/tc39/source-map-tests/": {},
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "struct",
-          "string",
-          "list",
-          "boolean",
-          "parse-a-json-string-to-an-infra-value",
-          "ordered-map",
-          "map-exists",
-          "list-iterate",
-          "list-append",
-          "strictly-split",
-          "list-size",
-          "string-position-variable",
-          "ascii-string",
-          "code-unit",
-          "byte",
-          "byte-value",
-          "code-unit-substring",
-          "string-concatenate",
-          "set-union",
-          "list-extend",
-          "list-sort-in-ascending-order",
-          "list-is-empty",
-          "iteration-while",
-          "collect-a-sequence-of-code-points",
-          "iteration-break",
-          "code-point",
-          "code-point-substring",
           "byte-sequence",
-          "byte-sequence-starts-with",
-          "byte-sequence-length",
-          "parse-json-bytes-to-a-javascript-value"
+          "byte-sequence-prefix"
         ]
       },
+      "https://speced.github.io/bikeshed/": {},
       "https://tc39.es/ecma262/": {
         "anchors": [
+          "sec-notational-conventions",
+          "sec-algorithm-conventions-abstract-operations",
+          "sec-completion-record-specification-type",
+          "integer",
+          "sec-returnifabrupt",
+          "sec-completion-ao",
+          "sec-throwcompletion",
+          "sec-ecmascript-language-types-string-type",
+          "sec-ecmascript-language-types-number-type",
+          "sec-ecmascript-language-types-boolean-type",
+          "sec-ecmascript-language-types-null-type",
+          "sec-object-type",
+          "integer-index",
+          "sec-call",
+          "sec-json.parse",
+          "assert",
+          "sec-list-and-record-specification-type",
+          "integral-number",
+          "%E2%84%9D",
+          "sec-tostring",
+          "%F0%9D%94%BD",
+          "substring",
+          "eqn-min",
+          "eqn-modulo",
+          "eqn-floor",
           "sec-ecmascript-language-lexical-grammar",
+          "sec-algorithm-conventions-syntax-directed-operations",
           "prod-IdentifierName",
           "prod-PrivateIdentifier",
           "prod-Punctuator",
@@ -101,7 +90,6 @@
           "prod-BindingIdentifier",
           "prod-LexicalDeclaration",
           "prod-VariableStatement",
-          "sec-parameter-lists",
           "prod-FunctionDeclaration",
           "prod-FunctionExpression",
           "prod-AsyncFunctionDeclaration",
@@ -119,41 +107,42 @@
           "prod-ClassElementName",
           "prod-MethodDefinition",
           "prod-IdentifierReference",
-          "prod-Expression",
-          "integral-number",
-          "sec-lexical-and-regexp-grammars",
+          "string-concatenation",
+          "sec-get-o-p",
+          "list-concatenation",
           "prod-SingleLineComment",
           "prod-MultiLineComment",
-          "table-line-terminator-code-points",
-          "sec-white-space",
-          "sec-regexpbuiltinexec"
+          "prod-LineTerminatorSequence",
+          "sec-stringtocodepoints",
+          "sec-codepointstostring",
+          "sec-regexpcreate",
+          "sec-regexpexec",
+          "sec-data-blocks",
+          "sec-newpromisecapability",
+          "sec-promise-constructor",
+          "sec-abstract-closure",
+          "sec-ifabruptrejectpromise"
         ]
       },
+      "https://tc39.es/ecma426/": {},
       "https://url.spec.whatwg.org/": {
         "anchors": [
+          "concept-url-scheme",
           "concept-url",
-          "concept-url-parser",
-          "concept-url-scheme"
+          "url-parsing"
         ]
       },
-      "https://webassembly.github.io/spec/core/appendix/embedding.html": {
+      "https://web.archive.org/web/20120814122523/http://blog.getfirebug.com/2009/08/11/give-your-eval-a-name-with-sourceurl/": {},
+      "https://www.ecma-international.org/publications-and-standards/standards/ecma-404/": {},
+      "https://www.w3.org/TR/wasm-core-2/": {
         "anchors": [
-          "embed-module-decode"
-        ]
-      },
-      "https://webassembly.github.io/spec/core/binary/modules.html": {
-        "anchors": [
-          "binary-customsec"
-        ]
-      },
-      "https://webidl.spec.whatwg.org/": {
-        "anchors": [
-          "a-new-promise",
-          "reject",
-          "exceptiondef-typeerror",
-          "resolve"
+          "custom-section%E2%91%A0",
+          "modules%E2%91%A0%E2%91%A4",
+          "embed-error",
+          "names%E2%91%A2"
         ]
       }
-    }
+    },
+    "autolinks": {}
   }
 }
