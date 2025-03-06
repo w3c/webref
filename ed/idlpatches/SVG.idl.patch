@@ -1,47 +1,31 @@
-From 241ad781048c26b5d1c107fd2f35c16bb5f05ab2 Mon Sep 17 00:00:00 2001
+From 8e2c2ca45148968a37f93741035e7e648ad1eab5 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Fri, 23 Dec 2022 23:48:52 +0100
-Subject: [PATCH] Fix IDL of SVG spec
+Date: Thu, 6 Mar 2025 16:22:10 +0100
+Subject: [PATCH] Drop SVGPathElement interface
 
-HTMLHyperlinkElementUtils: https://github.com/w3c/svgwg/issues/312
+The interface is more thoroughly defined in SVG Paths and now implemented in
+Firefox.
+
+No related issue, pending clarification on the status of SVG Paths and SVG 2.
 ---
- ed/idl/SVG.idl | 16 ++++++++++++++--
- 1 file changed, 14 insertions(+), 2 deletions(-)
+ ed/idl/SVG.idl | 4 ----
+ 1 file changed, 4 deletions(-)
 
 diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
-index 9ce619d1e..3a0b86126 100644
+index 9ce619d1e..ca918802e 100644
 --- a/ed/idl/SVG.idl
 +++ b/ed/idl/SVG.idl
-@@ -13,7 +13,6 @@ interface SVGElement : Element {
+@@ -419,10 +419,6 @@ interface SVGAnimatedPreserveAspectRatio {
+   [SameObject] readonly attribute SVGPreserveAspectRatio animVal;
  };
  
- SVGElement includes GlobalEventHandlers;
--SVGElement includes DocumentAndElementEventHandlers;
- SVGElement includes SVGElementInstance;
- SVGElement includes HTMLOrSVGElement;
- 
-@@ -673,7 +672,20 @@ interface SVGAElement : SVGGraphicsElement {
- };
- 
- SVGAElement includes SVGURIReference;
--SVGAElement includes HTMLHyperlinkElementUtils;
-+
-+// Inline HTMLHyperlinkElementUtils except href, which conflicts.
-+partial interface SVGAElement {
-+  readonly attribute USVString origin;
-+  [CEReactions] attribute USVString protocol;
-+  [CEReactions] attribute USVString username;
-+  [CEReactions] attribute USVString password;
-+  [CEReactions] attribute USVString host;
-+  [CEReactions] attribute USVString hostname;
-+  [CEReactions] attribute USVString port;
-+  [CEReactions] attribute USVString pathname;
-+  [CEReactions] attribute USVString search;
-+  [CEReactions] attribute USVString hash;
-+};
- 
+-[Exposed=Window]
+-interface SVGPathElement : SVGGeometryElement {
+-};
+-
  [Exposed=Window]
- interface SVGViewElement : SVGElement {};
+ interface SVGRectElement : SVGGeometryElement {
+   [SameObject] readonly attribute SVGAnimatedLength x;
 -- 
-2.39.0.windows.1
+2.37.1.windows.1
 
