@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-03-05T01:34:51.964Z",
+  "date": "2025-03-06T01:50:11.862Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -127,6 +127,7 @@
       "tc39-atomics-microwait",
       "tc39-canonical-tz",
       "tc39-decorators",
+      "tc39-defer-import-eval",
       "tc39-dynamic-code-brand-checks",
       "tc39-explicit-resource-management",
       "tc39-float16array",
@@ -137,6 +138,7 @@
       "tc39-iterator-helpers",
       "tc39-json-modules",
       "tc39-json-parse-with-source",
+      "tc39-math-sum",
       "tc39-promise-try",
       "tc39-regex-escaping",
       "tc39-regexp-modifiers",
@@ -338,6 +340,7 @@
       "CSP3",
       "css-2022",
       "css-2023",
+      "css-2024",
       "css-align-3",
       "css-anchor-position-1",
       "css-animation-worklet-1",
@@ -583,6 +586,7 @@
       "SRI",
       "svg-aam-1.0",
       "svg-integration",
+      "svg-paths",
       "svg-strokes",
       "SVG11",
       "SVG2",
@@ -680,10 +684,10 @@
     ]
   },
   "stats": {
-    "crawled": 341,
+    "crawled": 343,
     "errors": 0
   },
-  "crawler": "reffy-18.4.0",
+  "crawler": "reffy-18.4.1",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -729,7 +733,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "5 March 2025",
+      "date": "6 March 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -2130,7 +2134,7 @@
       "shortname": "css-2022",
       "series": {
         "shortname": "css",
-        "currentSpecification": "css-2023",
+        "currentSpecification": "css-2024",
         "title": "CSS Snapshot",
         "shortTitle": "CSS Snapshot",
         "releaseUrl": "https://www.w3.org/TR/css/",
@@ -2191,7 +2195,7 @@
       "shortname": "css-2023",
       "series": {
         "shortname": "css",
-        "currentSpecification": "css-2023",
+        "currentSpecification": "css-2024",
         "title": "CSS Snapshot",
         "shortTitle": "CSS Snapshot",
         "releaseUrl": "https://www.w3.org/TR/css/",
@@ -2199,6 +2203,7 @@
       },
       "seriesVersion": "2023",
       "seriesPrevious": "css-2022",
+      "seriesNext": "css-2024",
       "organization": "W3C",
       "groups": [
         {
@@ -2244,6 +2249,67 @@
       "dfns": "dfns/css-2023.json",
       "headings": "headings/css-2023.json",
       "ids": "ids/css-2023.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/css-2024/",
+      "seriesComposition": "full",
+      "shortname": "css-2024",
+      "series": {
+        "shortname": "css",
+        "currentSpecification": "css-2024",
+        "title": "CSS Snapshot",
+        "shortTitle": "CSS Snapshot",
+        "releaseUrl": "https://www.w3.org/TR/css/",
+        "nightlyUrl": "https://drafts.csswg.org/css/"
+      },
+      "seriesVersion": "2024",
+      "seriesPrevious": "css-2023",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-2024/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-2024/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-2024/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-2024/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Snapshot 2024",
+      "source": "w3c",
+      "shortTitle": "CSS Snapshot 2024",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/css-2024/",
+        "https://drafts.csswg.org/css-2024/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-2024/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 20 Feb 2025 19:34:11 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "25 February 2025",
+      "revision": "ca17ac4e52403216e5cbe161f260ed8cb958c0bb",
+      "links": "links/css-2024.json",
+      "refs": "refs/css-2024.json",
+      "dfns": "dfns/css-2024.json",
+      "headings": "headings/css-2024.json",
+      "ids": "ids/css-2024.json",
       "cddl": []
     },
     {
@@ -9231,9 +9297,6 @@
         "https://drafts.csswg.org/css2/"
       ],
       "crawled": "https://www.w3.org/TR/CSS21/",
-      "crawlCacheInfo": {
-        "lastModified": "Wed, 08 Dec 2021 07:36:41 GMT"
-      },
       "date": "to correct markup.",
       "algorithms": "algorithms/CSS2.json",
       "links": "links/CSS2.json",
@@ -10499,11 +10562,11 @@
       ],
       "crawled": "https://www.w3.org/TR/event-timing/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 24 Feb 2025 15:54:16 GMT"
+        "lastModified": "Wed, 05 Mar 2025 18:50:34 GMT"
       },
       "generator": "bikeshed",
-      "date": "24 February 2025",
-      "revision": "82bfcbe1d0feef6e95bd5ef4eb3a78df90922e72",
+      "date": "5 March 2025",
+      "revision": "e1f728a0b5b707f2ad7e51ce38bf5709ead3b68e",
       "algorithms": "algorithms/event-timing.json",
       "links": "links/event-timing.json",
       "refs": "refs/event-timing.json",
@@ -18110,6 +18173,64 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/svg-paths/",
+      "seriesComposition": "full",
+      "shortname": "svg-paths",
+      "series": {
+        "shortname": "svg-paths",
+        "currentSpecification": "svg-paths",
+        "title": "SVG Paths",
+        "shortTitle": "SVG Paths",
+        "releaseUrl": "https://www.w3.org/TR/svg-paths/",
+        "nightlyUrl": "https://svgwg.org/specs/paths/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "SVG Working Group",
+          "url": "https://www.w3.org/Graphics/SVG/WG/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/svg-paths/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://svgwg.org/specs/paths/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/svgwg",
+        "sourcePath": "specs/paths/master/Overview.html",
+        "filename": "Overview.html"
+      },
+      "title": "SVG Paths",
+      "source": "w3c",
+      "shortTitle": "SVG Paths",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/svg-paths/",
+        "https://svgwg.org/specs/paths/"
+      ],
+      "crawled": "https://www.w3.org/TR/svg-paths/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 02 Oct 2017 10:52:45 GMT"
+      },
+      "date": "09 July 2015",
+      "algorithms": "algorithms/svg-paths.json",
+      "links": "links/svg-paths.json",
+      "refs": "refs/svg-paths.json",
+      "idl": "idl/svg-paths.idl",
+      "dfns": "dfns/svg-paths.json",
+      "elements": "elements/svg-paths.json",
+      "headings": "headings/svg-paths.json",
+      "ids": "ids/svg-paths.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/svg-strokes/",
       "seriesComposition": "full",
       "shortname": "svg-strokes",
@@ -21072,11 +21193,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webdriver-bidi/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 04 Mar 2025 12:15:07 GMT"
+        "lastModified": "Wed, 05 Mar 2025 14:14:27 GMT"
       },
       "generator": "bikeshed",
-      "date": "4 March 2025",
-      "revision": "bb4547797e71d3a11cd13853623b7a3008656fa5",
+      "date": "5 March 2025",
+      "revision": "3c02257dca328ab8dc56b89e892d99997b19aa85",
       "algorithms": "algorithms/webdriver-bidi.json",
       "links": "links/webdriver-bidi.json",
       "refs": "refs/webdriver-bidi.json",
@@ -22513,11 +22634,11 @@
       ],
       "crawled": "https://www.w3.org/TR/WGSL/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 27 Feb 2025 20:43:19 GMT"
+        "lastModified": "Wed, 05 Mar 2025 19:17:52 GMT"
       },
       "generator": "bikeshed",
-      "date": "27 February 2025",
-      "revision": "859fdd4a803a11e7b8de70483aa75c365be18b0e",
+      "date": "5 March 2025",
+      "revision": "d521e5ac640d44f0e81f229c86cc83b7317014e7",
       "algorithms": "algorithms/WGSL.json",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",

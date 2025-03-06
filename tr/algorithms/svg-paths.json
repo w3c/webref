@@ -1,0 +1,20 @@
+{
+  "spec": {
+    "title": "SVG Paths",
+    "url": "https://www.w3.org/TR/svg-paths/"
+  },
+  "algorithms": [
+    {
+      "html": "The \"closepath\" (<strong>Z</strong> or <strong>z</strong>)\n  ends the current subpath by connecting it back to its initial point\n  in either of two ways:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the previous command is <q>complete</q>, that is that all the\n    required coordinate data has been supplied, then an automatic\n    straight line is drawn from the current point to the initial\n    point of the current subpath. This path segment may be of zero\n    length."
+        },
+        {
+          "html": "If the previous command is missing required coordinate data then\n    the initial point is used to fill in the missing data (but only\n    for the last point or points)."
+        }
+      ]
+    }
+  ]
+}
