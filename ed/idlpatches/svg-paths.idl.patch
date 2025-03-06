@@ -1,0 +1,44 @@
+From f897418ac4ae06110152d1512f3bd779348427c3 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 6 Mar 2025 16:11:18 +0100
+Subject: [PATCH] Fix Web IDL
+
+Pending resolution of https://github.com/w3c/svgwg/issues/964
+---
+ ed/idl/svg-paths.idl | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+diff --git a/ed/idl/svg-paths.idl b/ed/idl/svg-paths.idl
+index e432cc0ad..2f0813572 100644
+--- a/ed/idl/svg-paths.idl
++++ b/ed/idl/svg-paths.idl
+@@ -3,21 +3,22 @@
+ // (https://github.com/w3c/webref)
+ // Source: SVG Paths (https://svgwg.org/specs/paths/)
+ 
+-[NoInterfaceObject]
++[LegacyNoInterfaceObject, Exposed=Window]
+ interface SVGPathSegment {
+-  DOMString type;
+-  sequence<float> values;
++  attribute DOMString type;
++  attribute FrozenArray<float> values;
+ };
+ 
+ dictionary SVGPathDataSettings {
+    boolean normalize = false;
+-}
++};
+ 
+ interface mixin SVGPathData {
+    sequence<SVGPathSegment> getPathData(optional SVGPathDataSettings settings = {});
+    undefined setPathData(sequence<SVGPathSegment> pathData);
+ };
+ 
++[Exposed=Window]
+ interface SVGPathElement : SVGGeometryElement {
+ 
+   readonly attribute SVGAnimatedNumber pathLength;
+-- 
+2.37.1.windows.1
+
