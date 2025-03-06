@@ -1,21 +1,18 @@
-From 9a31ecbbc7706498e54712fa204a0b9d2b7a26cf Mon Sep 17 00:00:00 2001
+From f897418ac4ae06110152d1512f3bd779348427c3 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Thu, 6 Mar 2025 08:52:46 +0100
+Date: Thu, 6 Mar 2025 16:11:18 +0100
 Subject: [PATCH] Fix Web IDL
 
 Pending resolution of https://github.com/w3c/svgwg/issues/964
-
-The patch drops the `values` attribute of `SVGPathSegment` pending a proper
-resolution of the underlying issue (attribute cannot accept sequence types).
 ---
- ed/idl/svg-paths.idl | 8 ++++----
- 1 file changed, 4 insertions(+), 4 deletions(-)
+ ed/idl/svg-paths.idl | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
 
 diff --git a/ed/idl/svg-paths.idl b/ed/idl/svg-paths.idl
-index e432cc0ad..41454fa46 100644
+index e432cc0ad..2f0813572 100644
 --- a/ed/idl/svg-paths.idl
 +++ b/ed/idl/svg-paths.idl
-@@ -3,21 +3,21 @@
+@@ -3,21 +3,22 @@
  // (https://github.com/w3c/webref)
  // Source: SVG Paths (https://svgwg.org/specs/paths/)
  
@@ -25,6 +22,7 @@ index e432cc0ad..41454fa46 100644
 -  DOMString type;
 -  sequence<float> values;
 +  attribute DOMString type;
++  attribute FrozenArray<float> values;
  };
  
  dictionary SVGPathDataSettings {
