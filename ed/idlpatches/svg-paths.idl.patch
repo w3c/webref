@@ -1,0 +1,46 @@
+From 9a31ecbbc7706498e54712fa204a0b9d2b7a26cf Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 6 Mar 2025 08:52:46 +0100
+Subject: [PATCH] Fix Web IDL
+
+Pending resolution of https://github.com/w3c/svgwg/issues/964
+
+The patch drops the `values` attribute of `SVGPathSegment` pending a proper
+resolution of the underlying issue (attribute cannot accept sequence types).
+---
+ ed/idl/svg-paths.idl | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/ed/idl/svg-paths.idl b/ed/idl/svg-paths.idl
+index e432cc0ad..41454fa46 100644
+--- a/ed/idl/svg-paths.idl
++++ b/ed/idl/svg-paths.idl
+@@ -3,21 +3,21 @@
+ // (https://github.com/w3c/webref)
+ // Source: SVG Paths (https://svgwg.org/specs/paths/)
+ 
+-[NoInterfaceObject]
++[LegacyNoInterfaceObject, Exposed=Window]
+ interface SVGPathSegment {
+-  DOMString type;
+-  sequence<float> values;
++  attribute DOMString type;
+ };
+ 
+ dictionary SVGPathDataSettings {
+    boolean normalize = false;
+-}
++};
+ 
+ interface mixin SVGPathData {
+    sequence<SVGPathSegment> getPathData(optional SVGPathDataSettings settings = {});
+    undefined setPathData(sequence<SVGPathSegment> pathData);
+ };
+ 
++[Exposed=Window]
+ interface SVGPathElement : SVGGeometryElement {
+ 
+   readonly attribute SVGAnimatedNumber pathLength;
+-- 
+2.37.1.windows.1
+
