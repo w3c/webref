@@ -47,6 +47,7 @@ Event = {
 
 EventData = (
   BrowsingContextEvent //
+  InputEvent //
   LogEvent //
   NetworkEvent //
   ScriptEvent
@@ -1120,6 +1121,10 @@ log.JavascriptLogEntry = {
 log.EntryAdded = (
  method: "log.entryAdded",
  params: log.Entry,
+)
+
+InputEvent = (
+  input.FileDialogOpened
 )
 
 input.FileDialogOpened = (

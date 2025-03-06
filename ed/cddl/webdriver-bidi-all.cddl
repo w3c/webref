@@ -68,6 +68,7 @@ Event = {
 
 EventData = (
   BrowsingContextEvent //
+  InputEvent //
   LogEvent //
   NetworkEvent //
   ScriptEvent
@@ -1788,6 +1789,10 @@ InputCommand = (
   input.PerformActions //
   input.ReleaseActions //
   input.SetFiles
+)
+
+InputEvent = (
+  input.FileDialogOpened
 )
 
 input.ElementOrigin = {
