@@ -1,15 +1,18 @@
-From 241ad781048c26b5d1c107fd2f35c16bb5f05ab2 Mon Sep 17 00:00:00 2001
+From faaa4cf0e963176563339e6befb3fb84077d5f7f Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Fri, 23 Dec 2022 23:48:52 +0100
+Date: Thu, 6 Mar 2025 16:31:29 +0100
 Subject: [PATCH] Fix IDL of SVG spec
 
 HTMLHyperlinkElementUtils: https://github.com/w3c/svgwg/issues/312
+
+Also drop `SVGPathElement`, now that SVG Paths is also being crawled, pending
+clarification of status between SVG 2 and SVG Paths.
 ---
- ed/idl/SVG.idl | 16 ++++++++++++++--
- 1 file changed, 14 insertions(+), 2 deletions(-)
+ ed/idl/SVG.idl | 20 ++++++++++++++------
+ 1 file changed, 14 insertions(+), 6 deletions(-)
 
 diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
-index 9ce619d1e..3a0b86126 100644
+index 9ce619d1e..5dff2947b 100644
 --- a/ed/idl/SVG.idl
 +++ b/ed/idl/SVG.idl
 @@ -13,7 +13,6 @@ interface SVGElement : Element {
@@ -20,7 +23,18 @@ index 9ce619d1e..3a0b86126 100644
  SVGElement includes SVGElementInstance;
  SVGElement includes HTMLOrSVGElement;
  
-@@ -673,7 +672,20 @@ interface SVGAElement : SVGGraphicsElement {
+@@ -419,10 +418,6 @@ interface SVGAnimatedPreserveAspectRatio {
+   [SameObject] readonly attribute SVGPreserveAspectRatio animVal;
+ };
+ 
+-[Exposed=Window]
+-interface SVGPathElement : SVGGeometryElement {
+-};
+-
+ [Exposed=Window]
+ interface SVGRectElement : SVGGeometryElement {
+   [SameObject] readonly attribute SVGAnimatedLength x;
+@@ -673,7 +668,20 @@ interface SVGAElement : SVGGraphicsElement {
  };
  
  SVGAElement includes SVGURIReference;
@@ -43,5 +57,5 @@ index 9ce619d1e..3a0b86126 100644
  [Exposed=Window]
  interface SVGViewElement : SVGElement {};
 -- 
-2.39.0.windows.1
+2.37.1.windows.1
 
