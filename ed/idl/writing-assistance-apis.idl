@@ -57,6 +57,12 @@ interface AISummarizer {
   readonly attribute FrozenArray<DOMString>? expectedInputLanguages;
   readonly attribute FrozenArray<DOMString>? expectedContextLanguages;
   readonly attribute DOMString? outputLanguage;
+
+  Promise<double> measureInputUsage(
+    DOMString input,
+    optional AISummarizerSummarizeOptions options = {}
+  );
+  readonly attribute unrestricted double inputQuota;
 };
 AISummarizer includes AIDestroyable;
 
@@ -105,6 +111,12 @@ interface AIWriter {
   readonly attribute FrozenArray<DOMString>? expectedInputLanguages;
   readonly attribute FrozenArray<DOMString>? expectedContextLanguages;
   readonly attribute DOMString? outputLanguage;
+
+  Promise<double> measureInputUsage(
+    DOMString input,
+    optional AIWriterWriteOptions options = {}
+  );
+  readonly attribute unrestricted double inputQuota;
 };
 AIWriter includes AIDestroyable;
 
@@ -153,6 +165,12 @@ interface AIRewriter {
   readonly attribute FrozenArray<DOMString>? expectedInputLanguages;
   readonly attribute FrozenArray<DOMString>? expectedContextLanguages;
   readonly attribute DOMString? outputLanguage;
+
+  Promise<double> measureInputUsage(
+    DOMString input,
+    optional AIRewriterRewriteOptions options = {}
+  );
+  readonly attribute unrestricted double inputQuota;
 };
 AIRewriter includes AIDestroyable;
 
