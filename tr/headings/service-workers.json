@@ -547,109 +547,123 @@
       "number": "4.4.1"
     },
     {
+      "id": "installevent-interface",
+      "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+      "level": 3,
+      "title": "InstallEvent",
+      "number": "4.5"
+    },
+    {
+      "id": "register-router-method",
+      "href": "https://www.w3.org/TR/service-workers/#register-router-method",
+      "level": 4,
+      "title": "event.addRoutes(rules)",
+      "number": "4.5.1"
+    },
+    {
       "id": "fetchevent-interface",
       "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
       "level": 3,
       "title": "FetchEvent",
-      "number": "4.5"
+      "number": "4.6"
     },
     {
       "id": "fetch-event-request",
       "href": "https://www.w3.org/TR/service-workers/#fetch-event-request",
       "level": 4,
       "title": "event.request",
-      "number": "4.5.1"
+      "number": "4.6.1"
     },
     {
       "id": "fetch-event-preloadresponse",
       "href": "https://www.w3.org/TR/service-workers/#fetch-event-preloadresponse",
       "level": 4,
       "title": "event.preloadResponse",
-      "number": "4.5.2"
+      "number": "4.6.2"
     },
     {
       "id": "fetch-event-clientid",
       "href": "https://www.w3.org/TR/service-workers/#fetch-event-clientid",
       "level": 4,
       "title": "event.clientId",
-      "number": "4.5.3"
+      "number": "4.6.3"
     },
     {
       "id": "fetch-event-resultingclientid",
       "href": "https://www.w3.org/TR/service-workers/#fetch-event-resultingclientid",
       "level": 4,
       "title": "event.resultingClientId",
-      "number": "4.5.4"
+      "number": "4.6.4"
     },
     {
       "id": "fetch-event-replacesClientId",
       "href": "https://www.w3.org/TR/service-workers/#fetch-event-replacesClientId",
       "level": 4,
       "title": "event.replacesClientId",
-      "number": "4.5.5"
+      "number": "4.6.5"
     },
     {
       "id": "fetch-event-handled",
       "href": "https://www.w3.org/TR/service-workers/#fetch-event-handled",
       "level": 4,
       "title": "event.handled",
-      "number": "4.5.6"
+      "number": "4.6.6"
     },
     {
       "id": "fetch-event-respondwith",
       "href": "https://www.w3.org/TR/service-workers/#fetch-event-respondwith",
       "level": 4,
       "title": "event.respondWith(r)",
-      "number": "4.5.7"
+      "number": "4.6.7"
     },
     {
       "id": "extendablemessageevent-interface",
       "href": "https://www.w3.org/TR/service-workers/#extendablemessageevent-interface",
       "level": 3,
       "title": "ExtendableMessageEvent",
-      "number": "4.6"
+      "number": "4.7"
     },
     {
       "id": "extendablemessage-event-data",
       "href": "https://www.w3.org/TR/service-workers/#extendablemessage-event-data",
       "level": 4,
       "title": "event.data",
-      "number": "4.6.1"
+      "number": "4.7.1"
     },
     {
       "id": "extendablemessage-event-origin",
       "href": "https://www.w3.org/TR/service-workers/#extendablemessage-event-origin",
       "level": 4,
       "title": "event.origin",
-      "number": "4.6.2"
+      "number": "4.7.2"
     },
     {
       "id": "extendablemessage-event-lasteventid",
       "href": "https://www.w3.org/TR/service-workers/#extendablemessage-event-lasteventid",
       "level": 4,
       "title": "event.lastEventId",
-      "number": "4.6.3"
+      "number": "4.7.3"
     },
     {
       "id": "extendablemessage-event-source",
       "href": "https://www.w3.org/TR/service-workers/#extendablemessage-event-source",
       "level": 4,
       "title": "event.source",
-      "number": "4.6.4"
+      "number": "4.7.4"
     },
     {
       "id": "extendablemessage-event-ports",
       "href": "https://www.w3.org/TR/service-workers/#extendablemessage-event-ports",
       "level": 4,
       "title": "event.ports",
-      "number": "4.6.5"
+      "number": "4.7.5"
     },
     {
       "id": "execution-context-events",
       "href": "https://www.w3.org/TR/service-workers/#execution-context-events",
       "level": 3,
       "title": "Events",
-      "number": "4.7"
+      "number": "4.8"
     },
     {
       "id": "cache-objects",
@@ -982,10 +996,22 @@
       "title": "Try Activate"
     },
     {
+      "id": "setup-serviceworkerglobalscope-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#setup-serviceworkerglobalscope-algorithm",
+      "level": 3,
+      "title": "Setup ServiceWorkerGlobalScope"
+    },
+    {
       "id": "run-service-worker-algorithm",
       "href": "https://www.w3.org/TR/service-workers/#run-service-worker-algorithm",
       "level": 3,
       "title": "Run Service Worker"
+    },
+    {
+      "id": "all-fetch-listeners-are-empty-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#all-fetch-listeners-are-empty-algorithm",
+      "level": 3,
+      "title": "All Fetch Listeners Are Empty"
     },
     {
       "id": "terminate-service-worker-algorithm",
@@ -998,6 +1024,48 @@
       "href": "https://www.w3.org/TR/service-workers/#on-fetch-request-algorithm",
       "level": 3,
       "title": "Handle Fetch"
+    },
+    {
+      "id": "create-fetch-event-and-dispatch-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#create-fetch-event-and-dispatch-algorithm",
+      "level": 3,
+      "title": "Create Fetch Event and Dispatch"
+    },
+    {
+      "id": "parse-urlpattern-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#parse-urlpattern-algorithm",
+      "level": 3,
+      "title": "Parse URL Pattern"
+    },
+    {
+      "id": "verify-router-rule-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#verify-router-rule-algorithm",
+      "level": 3,
+      "title": "Verify Router Condition"
+    },
+    {
+      "id": "match-router-condition-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#match-router-condition-algorithm",
+      "level": 3,
+      "title": "Match Router Condition"
+    },
+    {
+      "id": "check-router-registration-limit-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#check-router-registration-limit-algorithm",
+      "level": 3,
+      "title": "Check Router Registration Limit"
+    },
+    {
+      "id": "count-router-inner-conditions-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#count-router-inner-conditions-algorithm",
+      "level": 3,
+      "title": "Count Router Inner Conditions"
+    },
+    {
+      "id": "get-router-source-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#get-router-source-algorithm",
+      "level": 3,
+      "title": "Get Router Source"
     },
     {
       "id": "should-skip-event-algorithm",
@@ -1142,6 +1210,12 @@
       "href": "https://www.w3.org/TR/service-workers/#is-async-module-algorithm",
       "level": 3,
       "title": "Is Async Module"
+    },
+    {
+      "id": "lookup-race-response-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#lookup-race-response-algorithm",
+      "level": 3,
+      "title": "Lookup Race Response"
     },
     {
       "id": "extended-http-headers",

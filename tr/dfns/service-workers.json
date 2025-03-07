@@ -340,10 +340,73 @@
       "definedIn": "prose"
     },
     {
+      "id": "service-worker-all-fetch-listeners-are-empty-flag",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-all-fetch-listeners-are-empty-flag",
+      "linkingText": [
+        "all fetch listeners are empty flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "service-worker-concept",
+        "href": "https://www.w3.org/TR/service-workers/#service-worker-concept",
+        "title": "Service Worker",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "service-worker-list-of-router-rules",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-list-of-router-rules",
+      "linkingText": [
+        "list of router rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "service-worker-concept",
+        "href": "https://www.w3.org/TR/service-workers/#service-worker-concept",
+        "title": "Service Worker",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "service-worker-running",
       "href": "https://www.w3.org/TR/service-workers/#service-worker-running",
       "linkingText": [
         "running"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "service-worker-concept",
+        "href": "https://www.w3.org/TR/service-workers/#service-worker-concept",
+        "title": "Service Worker",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "service-worker-service-worker-queue",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-service-worker-queue",
+      "linkingText": [
+        "[[service worker queue]]"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2545,6 +2608,67 @@
       "definedIn": "prose"
     },
     {
+      "id": "serviceworkerglobalscope-race-response-map",
+      "href": "https://www.w3.org/TR/service-workers/#serviceworkerglobalscope-race-response-map",
+      "linkingText": [
+        "race response map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serviceworkerglobalscope-interface",
+        "href": "https://www.w3.org/TR/service-workers/#serviceworkerglobalscope-interface",
+        "title": "ServiceWorkerGlobalScope",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-race-response",
+      "href": "https://www.w3.org/TR/service-workers/#dfn-race-response",
+      "linkingText": [
+        "race response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serviceworkerglobalscope-interface",
+        "href": "https://www.w3.org/TR/service-workers/#serviceworkerglobalscope-interface",
+        "title": "ServiceWorkerGlobalScope",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "race-response-value",
+      "href": "https://www.w3.org/TR/service-workers/#race-response-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "race response"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serviceworkerglobalscope-interface",
+        "href": "https://www.w3.org/TR/service-workers/#serviceworkerglobalscope-interface",
+        "title": "ServiceWorkerGlobalScope",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-serviceworkerglobalscope-clients",
       "href": "https://www.w3.org/TR/service-workers/#dom-serviceworkerglobalscope-clients",
       "linkingText": [
@@ -3925,6 +4049,650 @@
       "definedIn": "prose"
     },
     {
+      "id": "installevent",
+      "href": "https://www.w3.org/TR/service-workers/#installevent",
+      "linkingText": [
+        "InstallEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-installevent-installevent",
+      "href": "https://www.w3.org/TR/service-workers/#dom-installevent-installevent",
+      "linkingText": [
+        "InstallEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "InstallEvent(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "InstallEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-installevent-installevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/service-workers/#dom-installevent-installevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "InstallEvent/InstallEvent(type, eventInitDict)",
+        "InstallEvent/constructor(type, eventInitDict)",
+        "InstallEvent/InstallEvent(type)",
+        "InstallEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-installevent-installevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/service-workers/#dom-installevent-installevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "InstallEvent/InstallEvent(type, eventInitDict)",
+        "InstallEvent/constructor(type, eventInitDict)",
+        "InstallEvent/InstallEvent(type)",
+        "InstallEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-installevent-addroutes-rules-rules",
+      "href": "https://www.w3.org/TR/service-workers/#dom-installevent-addroutes-rules-rules",
+      "linkingText": [
+        "rules"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "InstallEvent/addRoutes(rules)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-routerrule",
+      "href": "https://www.w3.org/TR/service-workers/#dictdef-routerrule",
+      "linkingText": [
+        "RouterRule"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routerrule-condition",
+      "href": "https://www.w3.org/TR/service-workers/#dom-routerrule-condition",
+      "linkingText": [
+        "condition"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routerrule-source",
+      "href": "https://www.w3.org/TR/service-workers/#dom-routerrule-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-routercondition",
+      "href": "https://www.w3.org/TR/service-workers/#dictdef-routercondition",
+      "linkingText": [
+        "RouterCondition"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routercondition-urlpattern",
+      "href": "https://www.w3.org/TR/service-workers/#dom-routercondition-urlpattern",
+      "linkingText": [
+        "urlPattern"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterCondition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routercondition-requestmethod",
+      "href": "https://www.w3.org/TR/service-workers/#dom-routercondition-requestmethod",
+      "linkingText": [
+        "requestMethod"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterCondition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routercondition-requestmode",
+      "href": "https://www.w3.org/TR/service-workers/#dom-routercondition-requestmode",
+      "linkingText": [
+        "requestMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterCondition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routercondition-requestdestination",
+      "href": "https://www.w3.org/TR/service-workers/#dom-routercondition-requestdestination",
+      "linkingText": [
+        "requestDestination"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterCondition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routercondition-runningstatus",
+      "href": "https://www.w3.org/TR/service-workers/#dom-routercondition-runningstatus",
+      "linkingText": [
+        "runningStatus"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterCondition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routercondition-or",
+      "href": "https://www.w3.org/TR/service-workers/#dom-routercondition-or",
+      "linkingText": [
+        "or"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterCondition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routercondition-not",
+      "href": "https://www.w3.org/TR/service-workers/#dom-routercondition-not",
+      "linkingText": [
+        "not"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterCondition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedefdef-routersource",
+      "href": "https://www.w3.org/TR/service-workers/#typedefdef-routersource",
+      "linkingText": [
+        "RouterSource"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-routersourcedict",
+      "href": "https://www.w3.org/TR/service-workers/#dictdef-routersourcedict",
+      "linkingText": [
+        "RouterSourceDict"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routersourcedict-cachename",
+      "href": "https://www.w3.org/TR/service-workers/#dom-routersourcedict-cachename",
+      "linkingText": [
+        "cacheName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterSourceDict"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-runningstatus",
+      "href": "https://www.w3.org/TR/service-workers/#enumdef-runningstatus",
+      "linkingText": [
+        "RunningStatus"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-runningstatus-running",
+      "href": "https://www.w3.org/TR/service-workers/#dom-runningstatus-running",
+      "linkingText": [
+        "\"running\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RunningStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-runningstatus-not-running",
+      "href": "https://www.w3.org/TR/service-workers/#dom-runningstatus-not-running",
+      "linkingText": [
+        "\"not-running\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RunningStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-routersourceenum",
+      "href": "https://www.w3.org/TR/service-workers/#enumdef-routersourceenum",
+      "linkingText": [
+        "RouterSourceEnum"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routersourceenum-cache",
+      "href": "https://www.w3.org/TR/service-workers/#dom-routersourceenum-cache",
+      "linkingText": [
+        "\"cache\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RouterSourceEnum"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routersourceenum-fetch-event",
+      "href": "https://www.w3.org/TR/service-workers/#dom-routersourceenum-fetch-event",
+      "linkingText": [
+        "\"fetch-event\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RouterSourceEnum"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routersourceenum-network",
+      "href": "https://www.w3.org/TR/service-workers/#dom-routersourceenum-network",
+      "linkingText": [
+        "\"network\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RouterSourceEnum"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routersourceenum-race-network-and-fetch-handler",
+      "href": "https://www.w3.org/TR/service-workers/#dom-routersourceenum-race-network-and-fetch-handler",
+      "linkingText": [
+        "\"race-network-and-fetch-handler\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RouterSourceEnum"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dfn-count-router-condition-result",
+      "href": "https://www.w3.org/TR/service-workers/#dfn-count-router-condition-result",
+      "linkingText": [
+        "count router condition result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-count-router-condition-result-condition-count",
+      "href": "https://www.w3.org/TR/service-workers/#dfn-count-router-condition-result-condition-count",
+      "linkingText": [
+        "condition count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "count router condition result"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-dfn-count-router-condition-result-quota-exceeded",
+      "href": "https://www.w3.org/TR/service-workers/#dfn-dfn-count-router-condition-result-quota-exceeded",
+      "linkingText": [
+        "quota exceeded"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "count router condition result"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://www.w3.org/TR/service-workers/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-installevent-addroutes",
+      "href": "https://www.w3.org/TR/service-workers/#dom-installevent-addroutes",
+      "linkingText": [
+        "addRoutes(rules)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "InstallEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "register-router-method",
+        "href": "https://www.w3.org/TR/service-workers/#register-router-method",
+        "title": "event.addRoutes(rules)",
+        "number": "4.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "fetchevent",
       "href": "https://www.w3.org/TR/service-workers/#fetchevent",
       "linkingText": [
@@ -3939,7 +4707,7 @@
         "id": "fetchevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -3961,7 +4729,7 @@
         "id": "fetchevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -3983,7 +4751,7 @@
         "id": "fetchevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4005,7 +4773,7 @@
         "id": "fetchevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4026,7 +4794,7 @@
         "id": "fetchevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4045,7 +4813,7 @@
         "id": "fetchevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4066,7 +4834,7 @@
         "id": "fetchevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4087,7 +4855,7 @@
         "id": "fetchevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4108,7 +4876,7 @@
         "id": "fetchevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4129,7 +4897,7 @@
         "id": "fetchevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4150,7 +4918,7 @@
         "id": "fetchevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4171,7 +4939,7 @@
         "id": "fetchevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4192,7 +4960,7 @@
         "id": "fetchevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "prose"
     },
@@ -4213,7 +4981,7 @@
         "id": "fetchevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "prose"
     },
@@ -4234,7 +5002,7 @@
         "id": "fetchevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "prose"
     },
@@ -4255,7 +5023,7 @@
         "id": "fetchevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "prose"
     },
@@ -4276,7 +5044,7 @@
         "id": "fetch-event-request",
         "href": "https://www.w3.org/TR/service-workers/#fetch-event-request",
         "title": "event.request",
-        "number": "4.5.1"
+        "number": "4.6.1"
       },
       "definedIn": "prose"
     },
@@ -4297,7 +5065,7 @@
         "id": "fetch-event-preloadresponse",
         "href": "https://www.w3.org/TR/service-workers/#fetch-event-preloadresponse",
         "title": "event.preloadResponse",
-        "number": "4.5.2"
+        "number": "4.6.2"
       },
       "definedIn": "prose"
     },
@@ -4318,7 +5086,7 @@
         "id": "fetch-event-clientid",
         "href": "https://www.w3.org/TR/service-workers/#fetch-event-clientid",
         "title": "event.clientId",
-        "number": "4.5.3"
+        "number": "4.6.3"
       },
       "definedIn": "prose"
     },
@@ -4339,7 +5107,7 @@
         "id": "fetch-event-resultingclientid",
         "href": "https://www.w3.org/TR/service-workers/#fetch-event-resultingclientid",
         "title": "event.resultingClientId",
-        "number": "4.5.4"
+        "number": "4.6.4"
       },
       "definedIn": "prose"
     },
@@ -4360,7 +5128,7 @@
         "id": "fetch-event-replacesClientId",
         "href": "https://www.w3.org/TR/service-workers/#fetch-event-replacesClientId",
         "title": "event.replacesClientId",
-        "number": "4.5.5"
+        "number": "4.6.5"
       },
       "definedIn": "prose"
     },
@@ -4381,7 +5149,7 @@
         "id": "fetch-event-handled",
         "href": "https://www.w3.org/TR/service-workers/#fetch-event-handled",
         "title": "event.handled",
-        "number": "4.5.6"
+        "number": "4.6.6"
       },
       "definedIn": "prose"
     },
@@ -4402,7 +5170,7 @@
         "id": "fetch-event-respondwith",
         "href": "https://www.w3.org/TR/service-workers/#fetch-event-respondwith",
         "title": "event.respondWith(r)",
-        "number": "4.5.7"
+        "number": "4.6.7"
       },
       "definedIn": "prose"
     },
@@ -4421,7 +5189,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4445,7 +5213,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4469,7 +5237,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4493,7 +5261,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4512,7 +5280,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4533,7 +5301,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4554,7 +5322,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4575,7 +5343,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4596,7 +5364,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4617,7 +5385,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://www.w3.org/TR/service-workers/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4638,7 +5406,7 @@
         "id": "extendablemessage-event-data",
         "href": "https://www.w3.org/TR/service-workers/#extendablemessage-event-data",
         "title": "event.data",
-        "number": "4.6.1"
+        "number": "4.7.1"
       },
       "definedIn": "prose"
     },
@@ -4659,7 +5427,7 @@
         "id": "extendablemessage-event-origin",
         "href": "https://www.w3.org/TR/service-workers/#extendablemessage-event-origin",
         "title": "event.origin",
-        "number": "4.6.2"
+        "number": "4.7.2"
       },
       "definedIn": "prose"
     },
@@ -4680,7 +5448,7 @@
         "id": "extendablemessage-event-lasteventid",
         "href": "https://www.w3.org/TR/service-workers/#extendablemessage-event-lasteventid",
         "title": "event.lastEventId",
-        "number": "4.6.3"
+        "number": "4.7.3"
       },
       "definedIn": "prose"
     },
@@ -4701,7 +5469,7 @@
         "id": "extendablemessage-event-source",
         "href": "https://www.w3.org/TR/service-workers/#extendablemessage-event-source",
         "title": "event.source",
-        "number": "4.6.4"
+        "number": "4.7.4"
       },
       "definedIn": "prose"
     },
@@ -4722,7 +5490,7 @@
         "id": "extendablemessage-event-ports",
         "href": "https://www.w3.org/TR/service-workers/#extendablemessage-event-ports",
         "title": "event.ports",
-        "number": "4.6.5"
+        "number": "4.7.5"
       },
       "definedIn": "prose"
     },
@@ -4743,7 +5511,7 @@
         "id": "execution-context-events",
         "href": "https://www.w3.org/TR/service-workers/#execution-context-events",
         "title": "Events",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "table"
     },
@@ -4764,7 +5532,7 @@
         "id": "execution-context-events",
         "href": "https://www.w3.org/TR/service-workers/#execution-context-events",
         "title": "Events",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "table"
     },
@@ -4785,7 +5553,7 @@
         "id": "execution-context-events",
         "href": "https://www.w3.org/TR/service-workers/#execution-context-events",
         "title": "Events",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "table"
     },
@@ -4806,7 +5574,7 @@
         "id": "execution-context-events",
         "href": "https://www.w3.org/TR/service-workers/#execution-context-events",
         "title": "Events",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "table"
     },
@@ -4827,7 +5595,7 @@
         "id": "execution-context-events",
         "href": "https://www.w3.org/TR/service-workers/#execution-context-events",
         "title": "Events",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "table"
     },
@@ -6464,6 +7232,24 @@
       "definedIn": "heading"
     },
     {
+      "id": "setup-serviceworkerglobalscope",
+      "href": "https://www.w3.org/TR/service-workers/#setup-serviceworkerglobalscope",
+      "linkingText": [
+        "Setup ServiceWorkerGlobalScope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "setup-serviceworkerglobalscope-algorithm",
+        "href": "https://www.w3.org/TR/service-workers/#setup-serviceworkerglobalscope-algorithm",
+        "title": "Setup ServiceWorkerGlobalScope"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "run-service-worker",
       "href": "https://www.w3.org/TR/service-workers/#run-service-worker",
       "linkingText": [
@@ -6478,6 +7264,24 @@
         "id": "run-service-worker-algorithm",
         "href": "https://www.w3.org/TR/service-workers/#run-service-worker-algorithm",
         "title": "Run Service Worker"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "all-fetch-listeners-are-empty",
+      "href": "https://www.w3.org/TR/service-workers/#all-fetch-listeners-are-empty",
+      "linkingText": [
+        "All Fetch Listeners Are Empty"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "all-fetch-listeners-are-empty-algorithm",
+        "href": "https://www.w3.org/TR/service-workers/#all-fetch-listeners-are-empty-algorithm",
+        "title": "All Fetch Listeners Are Empty"
       },
       "definedIn": "heading"
     },
@@ -6514,6 +7318,132 @@
         "id": "on-fetch-request-algorithm",
         "href": "https://www.w3.org/TR/service-workers/#on-fetch-request-algorithm",
         "title": "Handle Fetch"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "create-fetch-event-and-dispatch",
+      "href": "https://www.w3.org/TR/service-workers/#create-fetch-event-and-dispatch",
+      "linkingText": [
+        "Create Fetch Event and Dispatch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "create-fetch-event-and-dispatch-algorithm",
+        "href": "https://www.w3.org/TR/service-workers/#create-fetch-event-and-dispatch-algorithm",
+        "title": "Create Fetch Event and Dispatch"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "parse-url-pattern",
+      "href": "https://www.w3.org/TR/service-workers/#parse-url-pattern",
+      "linkingText": [
+        "Parse URL Pattern"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parse-urlpattern-algorithm",
+        "href": "https://www.w3.org/TR/service-workers/#parse-urlpattern-algorithm",
+        "title": "Parse URL Pattern"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "verify-router-condition",
+      "href": "https://www.w3.org/TR/service-workers/#verify-router-condition",
+      "linkingText": [
+        "Verify Router Condition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "verify-router-rule-algorithm",
+        "href": "https://www.w3.org/TR/service-workers/#verify-router-rule-algorithm",
+        "title": "Verify Router Condition"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "match-router-condition",
+      "href": "https://www.w3.org/TR/service-workers/#match-router-condition",
+      "linkingText": [
+        "Match Router Condition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "match-router-condition-algorithm",
+        "href": "https://www.w3.org/TR/service-workers/#match-router-condition-algorithm",
+        "title": "Match Router Condition"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "check-router-registration-limit",
+      "href": "https://www.w3.org/TR/service-workers/#check-router-registration-limit",
+      "linkingText": [
+        "Check Router Registration Limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "check-router-registration-limit-algorithm",
+        "href": "https://www.w3.org/TR/service-workers/#check-router-registration-limit-algorithm",
+        "title": "Check Router Registration Limit"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "count-router-inner-conditions",
+      "href": "https://www.w3.org/TR/service-workers/#count-router-inner-conditions",
+      "linkingText": [
+        "Count Router Inner Conditions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "count-router-inner-conditions-algorithm",
+        "href": "https://www.w3.org/TR/service-workers/#count-router-inner-conditions-algorithm",
+        "title": "Count Router Inner Conditions"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "get-router-source",
+      "href": "https://www.w3.org/TR/service-workers/#get-router-source",
+      "linkingText": [
+        "Get Router Source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "get-router-source-algorithm",
+        "href": "https://www.w3.org/TR/service-workers/#get-router-source-algorithm",
+        "title": "Get Router Source"
       },
       "definedIn": "heading"
     },
@@ -6947,6 +7877,24 @@
         "id": "is-async-module-algorithm",
         "href": "https://www.w3.org/TR/service-workers/#is-async-module-algorithm",
         "title": "Is Async Module"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "lookup-race-response",
+      "href": "https://www.w3.org/TR/service-workers/#lookup-race-response",
+      "linkingText": [
+        "Lookup Race Response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "lookup-race-response-algorithm",
+        "href": "https://www.w3.org/TR/service-workers/#lookup-race-response-algorithm",
+        "title": "Lookup Race Response"
       },
       "definedIn": "heading"
     },
