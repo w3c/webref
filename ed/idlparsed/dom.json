@@ -1549,7 +1549,7 @@
         "href": "https://dom.spec.whatwg.org/#documentorshadowroot"
       },
       "ParentNode": {
-        "fragment": "interface mixin ParentNode {\n  [SameObject] readonly attribute HTMLCollection children;\n  readonly attribute Element? firstElementChild;\n  readonly attribute Element? lastElementChild;\n  readonly attribute unsigned long childElementCount;\n\n  [CEReactions, Unscopable] undefined prepend((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined append((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined replaceChildren((Node or DOMString)... nodes);\n\n  Element? querySelector(DOMString selectors);\n  [NewObject] NodeList querySelectorAll(DOMString selectors);\n};",
+        "fragment": "interface mixin ParentNode {\n  [SameObject] readonly attribute HTMLCollection children;\n  readonly attribute Element? firstElementChild;\n  readonly attribute Element? lastElementChild;\n  readonly attribute unsigned long childElementCount;\n\n  [CEReactions, Unscopable] undefined prepend((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined append((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined replaceChildren((Node or DOMString)... nodes);\n\n  [CEReactions] undefined moveBefore(Node node, Node? child);\n\n  Element? querySelector(DOMString selectors);\n  [NewObject] NodeList querySelectorAll(DOMString selectors);\n};",
         "type": "interface mixin",
         "name": "ParentNode",
         "inheritance": null,
@@ -1813,6 +1813,62 @@
             ],
             "special": "",
             "href": "https://dom.spec.whatwg.org/#dom-parentnode-replacechildren"
+          },
+          {
+            "type": "operation",
+            "name": "moveBefore",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "node",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Node"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "child",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "Node"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "href": "https://dom.spec.whatwg.org/#dom-parentnode-movebefore"
           },
           {
             "type": "operation",
