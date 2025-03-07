@@ -71,7 +71,7 @@
             },
             {
               "case": "::ident : outerIdent",
-              "html": "<p>If <code>::ident</code> is the name of a <a data-link-type=\"dfn\">part-like pseudo-element</a>,\nadds <code>::ident</code>/<code>outerIdent</code> to el’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#element-forwarded-part-name-list\" id=\"ref-for-element-forwarded-part-name-list④\">forward part name list</a>.\nOtherwise, does nothing.</p>"
+              "html": "<p>If <code>::ident</code> is the name of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-pseudo-4/#fully-styleable\" id=\"ref-for-fully-styleable\">fully styleable pseudo-element</a>,\nadds <code>::ident</code>/<code>outerIdent</code> to el’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#element-forwarded-part-name-list\" id=\"ref-for-element-forwarded-part-name-list④\">forward part name list</a>.\nOtherwise, does nothing.</p>"
             },
             {
               "case": "anything else",
@@ -104,7 +104,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points②\">Collect a sequence of code points</a> that are space characters.</p>"
         },
         {
-          "html": "<p>If the end of the <var>input</var> has been reached, return the <a data-link-type=\"dfn\">pair</a> <var>first token</var>/<var>first token</var></p>"
+          "html": "<p>If the end of the <var>input</var> has been reached, return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple②\">tuple</a> (<var>first token</var>, <var>first token</var>)</p>"
         },
         {
           "html": "<p>If character at <var>position</var> is not a U+003A COLON character, return error.</p>"
@@ -128,7 +128,7 @@
           "html": "<p>If <var>position</var> is not past the end of <var>input</var> then return error.</p>"
         },
         {
-          "html": "<p>Return the <a data-link-type=\"dfn\">pair</a> <var>first token</var>/<var>second token</var>.</p>"
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple③\">tuple</a> (<var>first token</var>, <var>second token</var>).</p>"
         }
       ]
     },
@@ -140,10 +140,10 @@
           "html": "<p>Let <var>input</var> be the string being parsed.</p>"
         },
         {
-          "html": "<p><span data-x=\"split a string on commas\">Split the string <var>input</var> on\ncommas</span>. Let <var>unparsed mappings</var> be the resulting list of strings.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#split-on-commas\" id=\"ref-for-split-on-commas\">Split the string <var>input</var> on commas</a>.\nLet <var>unparsed mappings</var> be the resulting list of strings.</p>"
         },
         {
-          "html": "<p>Let <var>mappings</var> be an initially empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of <a data-link-type=\"dfn\">pairs</a> of tokens.\nThis <span id=\"ref-for-list②\">list</span> will be the result of this algorithm.</p>"
+          "html": "<p>Let <var>mappings</var> be an initially empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple④\">tuples</a> of tokens.\nThis <span id=\"ref-for-list②\">list</span> will be the result of this algorithm.</p>"
         },
         {
           "html": "For each string <var>unparsed mapping</var> in <var>unparsed mappings</var>,\nrun the following substeps:",
