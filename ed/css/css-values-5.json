@@ -557,13 +557,13 @@
       "prose": "The random() function is a math function that represents a random value between a minimum and maximum value, drawn from a uniform distribution, optionally limiting the possible values to a step between those limits:",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-random",
       "type": "function",
-      "value": "random( <random-caching-options>? , <calc-sum>, <calc-sum>, [by <calc-sum>]? )"
+      "value": "random( <random-caching-options>? , <calc-sum>, <calc-sum>, <calc-sum>? )"
     },
     {
       "name": "<random-caching-options>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-random-caching-options",
       "type": "type",
-      "value": "<dashed-ident> || per-element"
+      "value": "auto | [ <dashed-ident> || match-element ] | <number [0,1]>"
     },
     {
       "name": "random-item()",
@@ -649,6 +649,22 @@
       "msg": "Missing definition",
       "name": "<cross-fade()>",
       "value": "cross-fade( <progress>, [ <image> | <color> ], [ <image> | <color> ] ) | cross-fade( <cf-image># )"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "auto",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-randomrandom-caching-options-auto",
+      "type": "value",
+      "value": "auto",
+      "for": "random()|<random-caching-options>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "match-element",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-randomrandom-caching-options-match-element",
+      "type": "value",
+      "value": "match-element",
+      "for": "random()|<random-caching-options>"
     }
   ]
 }
