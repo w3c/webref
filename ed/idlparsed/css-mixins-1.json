@@ -16,11 +16,69 @@
     },
     "idlNames": {
       "CSSFunctionRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSFunctionRule : CSSGroupingRule { };",
+        "fragment": "[Exposed=Window]\ninterface CSSFunctionRule : CSSGroupingRule {\n  readonly attribute CSSOMString name;\n  sequence<FunctionParameter> getParameters();\n  readonly attribute CSSOMString returnType;\n};",
         "type": "interface",
         "name": "CSSFunctionRule",
         "inheritance": "CSSGroupingRule",
-        "members": [],
+        "members": [
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-mixins-1/#dom-cssfunctionrule-name"
+          },
+          {
+            "type": "operation",
+            "name": "getParameters",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "FunctionParameter"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://drafts.csswg.org/css-mixins-1/#dom-cssfunctionrule-getparameters"
+          },
+          {
+            "type": "attribute",
+            "name": "returnType",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-mixins-1/#dom-cssfunctionrule-returntype"
+          }
+        ],
         "extAttrs": [
           {
             "type": "extended-attribute",
@@ -34,6 +92,65 @@
         ],
         "partial": false,
         "href": "https://drafts.csswg.org/css-mixins-1/#cssfunctionrule"
+      },
+      "FunctionParameter": {
+        "fragment": "dictionary FunctionParameter {\n  required CSSOMString name;\n  required CSSOMString type;\n  CSSOMString? defaultValue;\n};",
+        "type": "dictionary",
+        "name": "FunctionParameter",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "name",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://drafts.csswg.org/css-mixins-1/#dom-functionparameter-name"
+          },
+          {
+            "type": "field",
+            "name": "type",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://drafts.csswg.org/css-mixins-1/#dom-functionparameter-type"
+          },
+          {
+            "type": "field",
+            "name": "defaultValue",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://drafts.csswg.org/css-mixins-1/#dom-functionparameter-defaultvalue"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-mixins-1/#dictdef-functionparameter"
       },
       "CSSFunctionDescriptors": {
         "fragment": "[Exposed=Window]\ninterface CSSFunctionDescriptors : CSSStyleDeclaration {\n  attribute [LegacyNullToEmptyString] CSSOMString result;\n};",
@@ -144,7 +261,12 @@
     },
     "dependencies": {
       "CSSFunctionRule": [
-        "CSSGroupingRule"
+        "CSSGroupingRule",
+        "CSSOMString",
+        "FunctionParameter"
+      ],
+      "FunctionParameter": [
+        "CSSOMString"
       ],
       "CSSFunctionDescriptors": [
         "CSSStyleDeclaration",
@@ -157,8 +279,8 @@
     },
     "externalDependencies": [
       "CSSGroupingRule",
-      "CSSStyleDeclaration",
       "CSSOMString",
+      "CSSStyleDeclaration",
       "CSSRule"
     ],
     "hasObsoleteIdl": false

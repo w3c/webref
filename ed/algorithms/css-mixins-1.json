@@ -96,6 +96,69 @@
           "html": "<p>Return <var>el</var>’s styles.</p>"
         }
       ]
+    },
+    {
+      "name": "serialize a CSSFunctionRule",
+      "href": "https://drafts.csswg.org/css-mixins-1/#serialize-a-cssfunctionrule",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-cssfunctionrule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a CSSFunctionRule</dfn>,\nreturn the concatenation of the following:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>The string <code class=\"highlight\"><c- s=\"\">\"@function\"</c-></code> followed by a single SPACE (U+0020).</p>"
+        },
+        {
+          "html": "<p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier\">serialize an identifier</a> on the name of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#custom-function\" id=\"ref-for-custom-function②⑧\">custom function</a>,\nfollowed by a single LEFT PARENTHESIS (U+0028).</p>"
+        },
+        {
+          "html": "<p>The result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#serialize-a-function-parameter\" id=\"ref-for-serialize-a-function-parameter\">serialize a function parameter</a> on each of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#custom-function\" id=\"ref-for-custom-function②⑨\">custom function’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#function-parameter\" id=\"ref-for-function-parameter①⑨\">parameters</a>,\nall joined by <code class=\"highlight\"><c- s=\"\">\", \"</c-></code> (COMMA U+002C, followed by a single SPACE U+0020).</p>"
+        },
+        {
+          "html": "<p>A single RIGHT PARENTHESIS (U+0029).</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#custom-function\" id=\"ref-for-custom-function③⓪\">custom function</a> has <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#custom-function-return-type\" id=\"ref-for-custom-function-return-type⑤\">return type</a>,\nand that <span id=\"ref-for-custom-function-return-type⑥\">return type</span> is not the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-properties-values-api-1/#universal-syntax-definition\" id=\"ref-for-universal-syntax-definition①\">universal syntax definition</a> (\"*\"):</p>\n      <ul>\n       <li data-md=\"\">\n        <p>A single SPACE (U+0020),\nfollowed by the string <code class=\"highlight\"><c- s=\"\">\"returns\"</c-></code>,\nfollowed by a single SPACE (U+0020).</p>\n       </li><li data-md=\"\">\n        <p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#serialize-a-css-type\" id=\"ref-for-serialize-a-css-type\">serialize a CSS type</a> on that <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#custom-function-return-type\" id=\"ref-for-custom-function-return-type⑦\">type</a>,\nfollowed by a single SPACE (U+0020).</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>A single LEFT CURLY BRACKET (U+007B),\nfollowed by a SPACE (U+0020).</p>"
+        },
+        {
+          "html": "<p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-rule\" id=\"ref-for-serialize-a-css-rule\">serialize a CSS rule</a> on each rule in cssRules,\nfiltering out empty strings,\nall joined by a single SPACE (U+0020).</p>"
+        },
+        {
+          "html": "<p>A single SPACE (U+0020),\nfollowed by a single RIGHT CURLY BRACKET (U+007D).</p>"
+        }
+      ]
+    },
+    {
+      "name": "serialize a function parameter",
+      "href": "https://drafts.csswg.org/css-mixins-1/#serialize-a-function-parameter",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-function-parameter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a function parameter</dfn>,\nreturn the concatenation of the following:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier①\">serialize an identifier</a> on the name of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#function-parameter\" id=\"ref-for-function-parameter②⓪\">function parameter</a>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#function-parameter\" id=\"ref-for-function-parameter②①\">function parameter</a> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#parameter-type\" id=\"ref-for-parameter-type②\">type</a>,\nand that <span id=\"ref-for-parameter-type③\">type</span> is not the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-properties-values-api-1/#universal-syntax-definition\" id=\"ref-for-universal-syntax-definition②\">universal syntax definition</a>:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>A single SPACE (U+0020),\nfollowed by the result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#serialize-a-css-type\" id=\"ref-for-serialize-a-css-type①\">serialize a CSS type</a> on that <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#parameter-type\" id=\"ref-for-parameter-type④\">type</a>.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#function-parameter\" id=\"ref-for-function-parameter②②\">function parameter</a> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#default-value\" id=\"ref-for-default-value②\">default value</a>:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>A single COLON (U+003A),\nfollowed by a single SPACE (U+0020),\nfollowed by the result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value\">serialize a CSS value</a> on that value.</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "serialize a CSS type",
+      "href": "https://drafts.csswg.org/css-mixins-1/#serialize-a-css-type",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-css-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a CSS type</dfn>,\nreturn the concatenation of the following:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If the <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-mixins-1/#typedef-css-type\" id=\"ref-for-typedef-css-type⑤\">&lt;css-type&gt;</a> consists of a single <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-5/#typedef-syntax-component\" id=\"ref-for-typedef-syntax-component②\">&lt;syntax-component&gt;</a>,\nreturn the corresponding <a href=\"https://drafts.css-houdini.org/css-properties-values-api-1/#syntax-strings\">syntax string</a>.</p>"
+        },
+        {
+          "html": "<p>Otherwise,\nreturn the concatenation of the following:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>The string <code class=\"highlight\"><c- s=\"\">\"type(\"</c-></code>,\ni.e. <code class=\"highlight\"><c- s=\"\">\"type\"</c-></code> followed by a single LEFT PARENTHESIS (U+0028).</p>\n       </li><li data-md=\"\">\n        <p>The corresponding <a href=\"https://drafts.css-houdini.org/css-properties-values-api-1/#syntax-strings\">syntax string</a>.</p>\n       </li><li data-md=\"\">\n        <p>The string <code class=\"highlight\"><c- s=\"\">\")\"</c-></code>,\ni.e. a single RIGHT PARENTHESIS (U+0029).</p>\n      </li></ul>"
+        }
+      ]
     }
   ]
 }

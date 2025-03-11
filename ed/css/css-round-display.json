@@ -49,45 +49,37 @@
           ]
         }
       ]
-    },
-    {
-      "name": "@viewport",
-      "descriptors": [
-        {
-          "name": "viewport-fit",
-          "href": "https://drafts.csswg.org/css-round-display-1/#descdef-viewport-viewport-fit",
-          "for": "@viewport",
-          "value": "auto | contain | cover",
-          "initial": "auto",
-          "percentages": "N/A",
-          "computedValue": "as specified",
-          "values": [
-            {
-              "name": "auto",
-              "prose": "This value doesn’t affect the initial layout viewport, and the whole web page is viewable. What the UA paints outside of the viewport is undefined. It may be the background color of the canvas, or anything else that the UA deems appropriate.",
-              "href": "https://drafts.csswg.org/css-round-display-1/#valdef-viewport-fit-auto",
-              "type": "value",
-              "value": "auto"
-            },
-            {
-              "name": "contain",
-              "prose": "The initial layout viewport and the visual viewport are set to the largest rectangle which is inscribed in the display of the device. What the UA paints outside of the viewport is undefined. It may be the background color of the canvas, or anything else that the UA deems appropriate.",
-              "href": "https://drafts.csswg.org/css-round-display-1/#valdef-viewport-fit-contain",
-              "type": "value",
-              "value": "contain"
-            },
-            {
-              "name": "cover",
-              "prose": "The initial layout viewport and the visual viewport are set to the circumscribed rectangle of the physical screen of the device.",
-              "href": "https://drafts.csswg.org/css-round-display-1/#valdef-viewport-fit-cover",
-              "type": "value",
-              "value": "cover"
-            }
-          ]
-        }
-      ]
     }
   ],
   "selectors": [],
-  "values": []
+  "values": [],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "auto",
+      "prose": "This value doesn’t affect the initial layout viewport, and the whole web page is viewable. What the UA paints outside of the viewport is undefined. It may be the background color of the canvas, or anything else that the UA deems appropriate.",
+      "href": "https://drafts.csswg.org/css-round-display-1/#valdef-viewport-fit-auto",
+      "type": "value",
+      "value": "auto",
+      "for": "viewport-fit"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "contain",
+      "prose": "The initial layout viewport and the visual viewport are set to the largest rectangle which is inscribed in the display of the device. What the UA paints outside of the viewport is undefined. It may be the background color of the canvas, or anything else that the UA deems appropriate.",
+      "href": "https://drafts.csswg.org/css-round-display-1/#valdef-viewport-fit-contain",
+      "type": "value",
+      "value": "contain",
+      "for": "viewport-fit"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "cover",
+      "prose": "The initial layout viewport and the visual viewport are set to the circumscribed rectangle of the physical screen of the device.",
+      "href": "https://drafts.csswg.org/css-round-display-1/#valdef-viewport-fit-cover",
+      "type": "value",
+      "value": "cover",
+      "for": "viewport-fit"
+    }
+  ]
 }

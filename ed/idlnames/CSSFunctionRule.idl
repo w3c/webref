@@ -1,3 +1,7 @@
 // Source: CSS Functions and Mixins Module (https://drafts.csswg.org/css-mixins-1/)
 [Exposed=Window]
-interface CSSFunctionRule : CSSGroupingRule { };
+interface CSSFunctionRule : CSSGroupingRule {
+  readonly attribute CSSOMString name;
+  sequence<FunctionParameter> getParameters();
+  readonly attribute CSSOMString returnType;
+};
