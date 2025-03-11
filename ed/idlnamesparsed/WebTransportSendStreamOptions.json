@@ -6,10 +6,24 @@
       "title": "WebTransport",
       "url": "https://www.w3.org/TR/webtransport/"
     },
-    "fragment": "dictionary WebTransportSendStreamOptions {\n  WebTransportSendGroup? sendGroup = null;\n  long long sendOrder = 0;\n  boolean waitUntilAvailable = false;\n};",
+    "fragment": "dictionary WebTransportSendStreamOptions : WebTransportSendOptions {\n  boolean waitUntilAvailable = false;\n};",
     "href": "https://w3c.github.io/webtransport/#dictdef-webtransportsendstreamoptions"
   },
   "extended": [],
-  "inheritance": null,
+  "inheritance": {
+    "name": "WebTransportSendOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebTransport",
+        "url": "https://www.w3.org/TR/webtransport/"
+      },
+      "fragment": "dictionary WebTransportSendOptions {\n  WebTransportSendGroup? sendGroup = null;\n  long long sendOrder = 0;\n};",
+      "href": "https://w3c.github.io/webtransport/#dictdef-webtransportsendoptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
   "includes": []
 }

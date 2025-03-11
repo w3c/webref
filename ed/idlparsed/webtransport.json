@@ -17,6 +17,7 @@
       },
       "functions": {
         "Window": [
+          "WebTransportDatagramsWritable",
           "WebTransportDatagramDuplexStream",
           "WebTransportSendStream",
           "WebTransportSendGroup",
@@ -24,6 +25,7 @@
           "WebTransportBidirectionalStream"
         ],
         "Worker": [
+          "WebTransportDatagramsWritable",
           "WebTransportDatagramDuplexStream",
           "WebTransportSendStream",
           "WebTransportSendGroup",
@@ -36,12 +38,119 @@
       }
     },
     "idlNames": {
+      "WebTransportDatagramsWritable": {
+        "fragment": "[Exposed=(Window,Worker), SecureContext, Transferable]\ninterface WebTransportDatagramsWritable : WritableStream {\n  attribute WebTransportSendGroup? sendGroup;\n  attribute long long sendOrder;\n};",
+        "type": "interface",
+        "name": "WebTransportDatagramsWritable",
+        "inheritance": "WritableStream",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "sendGroup",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "WebTransportSendGroup"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramswritable-sendgroup"
+          },
+          {
+            "type": "attribute",
+            "name": "sendOrder",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramswritable-sendorder"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Transferable",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://w3c.github.io/webtransport/#webtransportdatagramswritable"
+      },
       "WebTransportDatagramDuplexStream": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportDatagramDuplexStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n\n  readonly attribute unsigned long maxDatagramSize;\n  attribute unrestricted double? incomingMaxAge;\n  attribute unrestricted double? outgoingMaxAge;\n  attribute unrestricted double incomingHighWaterMark;\n  attribute unrestricted double outgoingHighWaterMark;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportDatagramDuplexStream {\n  WebTransportDatagramsWritable createWritable(\n      optional WebTransportSendOptions options = {});\n  readonly attribute ReadableStream readable;\n  readonly attribute WebTransportDatagramsWritable writable;\n\n  readonly attribute unsigned long maxDatagramSize;\n  attribute unrestricted double? incomingMaxAge;\n  attribute unrestricted double? outgoingMaxAge;\n  attribute unrestricted double incomingHighWaterMark;\n  attribute unrestricted double outgoingHighWaterMark;\n};",
         "type": "interface",
         "name": "WebTransportDatagramDuplexStream",
         "inheritance": null,
         "members": [
+          {
+            "type": "operation",
+            "name": "createWritable",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WebTransportDatagramsWritable"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WebTransportSendOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-createwritable"
+          },
           {
             "type": "attribute",
             "name": "readable",
@@ -67,7 +176,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "WritableStream"
+              "idlType": "WebTransportDatagramsWritable"
             },
             "extAttrs": [],
             "special": "",
@@ -965,10 +1074,10 @@
         "partial": false,
         "href": "https://w3c.github.io/webtransport/#dictdef-webtransportcloseinfo"
       },
-      "WebTransportSendStreamOptions": {
-        "fragment": "dictionary WebTransportSendStreamOptions {\n  WebTransportSendGroup? sendGroup = null;\n  long long sendOrder = 0;\n  boolean waitUntilAvailable = false;\n};",
+      "WebTransportSendOptions": {
+        "fragment": "dictionary WebTransportSendOptions {\n  WebTransportSendGroup? sendGroup = null;\n  long long sendOrder = 0;\n};",
         "type": "dictionary",
-        "name": "WebTransportSendStreamOptions",
+        "name": "WebTransportSendOptions",
         "inheritance": null,
         "members": [
           {
@@ -987,7 +1096,7 @@
               "type": "null"
             },
             "required": false,
-            "href": "https://w3c.github.io/webtransport/#dom-webtransportsendstreamoptions-sendgroup"
+            "href": "https://w3c.github.io/webtransport/#dom-webtransportsendoptions-sendgroup"
           },
           {
             "type": "field",
@@ -1006,8 +1115,19 @@
               "value": "0"
             },
             "required": false,
-            "href": "https://w3c.github.io/webtransport/#dom-webtransportsendstreamoptions-sendorder"
-          },
+            "href": "https://w3c.github.io/webtransport/#dom-webtransportsendoptions-sendorder"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/webtransport/#dictdef-webtransportsendoptions"
+      },
+      "WebTransportSendStreamOptions": {
+        "fragment": "dictionary WebTransportSendStreamOptions : WebTransportSendOptions {\n  boolean waitUntilAvailable = false;\n};",
+        "type": "dictionary",
+        "name": "WebTransportSendStreamOptions",
+        "inheritance": "WebTransportSendOptions",
+        "members": [
           {
             "type": "field",
             "name": "waitUntilAvailable",
@@ -2029,6 +2149,7 @@
     "globals": {},
     "exposed": {
       "Window": [
+        "WebTransportDatagramsWritable",
         "WebTransportDatagramDuplexStream",
         "WebTransport",
         "WebTransportSendStream",
@@ -2038,6 +2159,7 @@
         "WebTransportError"
       ],
       "Worker": [
+        "WebTransportDatagramsWritable",
         "WebTransportDatagramDuplexStream",
         "WebTransport",
         "WebTransportSendStream",
@@ -2051,9 +2173,14 @@
       ]
     },
     "dependencies": {
+      "WebTransportDatagramsWritable": [
+        "WritableStream",
+        "WebTransportSendGroup"
+      ],
       "WebTransportDatagramDuplexStream": [
-        "ReadableStream",
-        "WritableStream"
+        "WebTransportDatagramsWritable",
+        "WebTransportSendOptions",
+        "ReadableStream"
       ],
       "WebTransport": [
         "WebTransportOptions",
@@ -2076,8 +2203,11 @@
         "WebTransportCongestionControl"
       ],
       "WebTransportCloseInfo": [],
-      "WebTransportSendStreamOptions": [
+      "WebTransportSendOptions": [
         "WebTransportSendGroup"
+      ],
+      "WebTransportSendStreamOptions": [
+        "WebTransportSendOptions"
       ],
       "WebTransportConnectionStats": [
         "DOMHighResTimeStamp",
@@ -2116,8 +2246,8 @@
       ]
     },
     "externalDependencies": [
-      "ReadableStream",
       "WritableStream",
+      "ReadableStream",
       "BufferSource",
       "DOMHighResTimeStamp",
       "WritableStreamDefaultWriter",

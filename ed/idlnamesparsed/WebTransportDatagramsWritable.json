@@ -1,0 +1,29 @@
+{
+  "name": "WebTransportDatagramsWritable",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebTransport",
+      "url": "https://www.w3.org/TR/webtransport/"
+    },
+    "fragment": "[Exposed=(Window,Worker), SecureContext, Transferable]\ninterface WebTransportDatagramsWritable : WritableStream {\n  attribute WebTransportSendGroup? sendGroup;\n  attribute long long sendOrder;\n};",
+    "href": "https://w3c.github.io/webtransport/#webtransportdatagramswritable"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "WritableStream",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Streams Standard",
+        "url": "https://streams.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*, Transferable]\ninterface WritableStream {\n  constructor(optional object underlyingSink, optional QueuingStrategy strategy = {});\n\n  readonly attribute boolean locked;\n\n  Promise<undefined> abort(optional any reason);\n  Promise<undefined> close();\n  WritableStreamDefaultWriter getWriter();\n};",
+      "href": "https://streams.spec.whatwg.org/#writablestream"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

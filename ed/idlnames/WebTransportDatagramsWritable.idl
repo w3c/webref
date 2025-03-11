@@ -1,0 +1,6 @@
+// Source: WebTransport (https://www.w3.org/TR/webtransport/)
+[Exposed=(Window,Worker), SecureContext, Transferable]
+interface WebTransportDatagramsWritable : WritableStream {
+  attribute WebTransportSendGroup? sendGroup;
+  attribute long long sendOrder;
+};
