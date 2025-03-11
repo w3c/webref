@@ -1431,7 +1431,7 @@
         "href": "https://xhr.spec.whatwg.org/#formdata"
       },
       "ProgressEvent": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface ProgressEvent : Event {\n  constructor(DOMString type, optional ProgressEventInit eventInitDict = {});\n\n  readonly attribute boolean lengthComputable;\n  readonly attribute unsigned long long loaded;\n  readonly attribute unsigned long long total;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface ProgressEvent : Event {\n  constructor(DOMString type, optional ProgressEventInit eventInitDict = {});\n\n  readonly attribute boolean lengthComputable;\n  readonly attribute double loaded;\n  readonly attribute double total;\n};",
         "type": "interface",
         "name": "ProgressEvent",
         "inheritance": "Event",
@@ -1502,7 +1502,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "double"
             },
             "extAttrs": [],
             "special": "",
@@ -1518,7 +1518,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "double"
             },
             "extAttrs": [],
             "special": "",
@@ -1548,7 +1548,7 @@
         "href": "https://xhr.spec.whatwg.org/#progressevent"
       },
       "ProgressEventInit": {
-        "fragment": "dictionary ProgressEventInit : EventInit {\n  boolean lengthComputable = false;\n  unsigned long long loaded = 0;\n  unsigned long long total = 0;\n};",
+        "fragment": "dictionary ProgressEventInit : EventInit {\n  boolean lengthComputable = false;\n  double loaded = 0;\n  double total = 0;\n};",
         "type": "dictionary",
         "name": "ProgressEventInit",
         "inheritance": "EventInit",
@@ -1582,7 +1582,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "double"
             },
             "default": {
               "type": "number",
@@ -1601,7 +1601,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "double"
             },
             "default": {
               "type": "number",

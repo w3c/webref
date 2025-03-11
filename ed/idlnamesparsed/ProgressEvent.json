@@ -6,7 +6,7 @@
       "title": "XMLHttpRequest Standard",
       "url": "https://xhr.spec.whatwg.org/"
     },
-    "fragment": "[Exposed=(Window,Worker)]\ninterface ProgressEvent : Event {\n  constructor(DOMString type, optional ProgressEventInit eventInitDict = {});\n\n  readonly attribute boolean lengthComputable;\n  readonly attribute unsigned long long loaded;\n  readonly attribute unsigned long long total;\n};",
+    "fragment": "[Exposed=(Window,Worker)]\ninterface ProgressEvent : Event {\n  constructor(DOMString type, optional ProgressEventInit eventInitDict = {});\n\n  readonly attribute boolean lengthComputable;\n  readonly attribute double loaded;\n  readonly attribute double total;\n};",
     "href": "https://xhr.spec.whatwg.org/#progressevent"
   },
   "extended": [],
