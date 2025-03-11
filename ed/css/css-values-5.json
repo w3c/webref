@@ -557,11 +557,11 @@
       "prose": "The random() function is a math function that represents a random value between a minimum and maximum value, drawn from a uniform distribution, optionally limiting the possible values to a step between those limits:",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-random",
       "type": "function",
-      "value": "random( <random-caching-options>? , <calc-sum>, <calc-sum>, <calc-sum>? )"
+      "value": "random( <random-value-sharing>? , <calc-sum>, <calc-sum>, <calc-sum>? )"
     },
     {
-      "name": "<random-caching-options>",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-caching-options",
+      "name": "<random-value-sharing>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-value-sharing",
       "type": "type",
       "value": "auto | [ <dashed-ident> || match-element ] | <number [0,1]>"
     },
@@ -570,7 +570,7 @@
       "prose": "The random-item() function resolves to a random item from among its list of items.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-random-item",
       "type": "function",
-      "value": "random-item( <random-caching-options> , [ <declaration-value>? ]# )"
+      "value": "random-item( <random-value-sharing> , [ <declaration-value>? ]# )"
     },
     {
       "name": "sibling-count()",
@@ -653,18 +653,18 @@
     {
       "msg": "Dangling value",
       "name": "auto",
-      "href": "https://drafts.csswg.org/css-values-5/#valdef-randomrandom-caching-options-auto",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-randomrandom-value-sharing-auto",
       "type": "value",
       "value": "auto",
-      "for": "random()|<random-caching-options>"
+      "for": "random()|<random-value-sharing>"
     },
     {
       "msg": "Dangling value",
       "name": "match-element",
-      "href": "https://drafts.csswg.org/css-values-5/#valdef-randomrandom-caching-options-match-element",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-randomrandom-value-sharing-match-element",
       "type": "value",
       "value": "match-element",
-      "for": "random()|<random-caching-options>"
+      "for": "random()|<random-value-sharing>"
     }
   ]
 }

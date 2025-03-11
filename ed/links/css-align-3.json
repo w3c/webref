@@ -38,6 +38,8 @@
       "https://developer.mozilla.org/en-US/docs/Web/CSS/place-self": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap": {},
       "https://drafts.csswg.org/css-box-4/": {},
+      "https://drafts.csswg.org/css-break-4/": {},
+      "https://drafts.csswg.org/css-break/": {},
       "https://drafts.csswg.org/css-cascade-5/": {},
       "https://drafts.csswg.org/css-display/": {},
       "https://drafts.csswg.org/css-flexbox-1/": {
@@ -69,11 +71,6 @@
           "abspos-layout"
         ]
       },
-      "https://drafts.csswg.org/css-scroll-snap-2/": {
-        "anchors": [
-          "scroll-initial-target-with-place-content"
-        ]
-      },
       "https://drafts.csswg.org/css-sizing-3/": {},
       "https://drafts.csswg.org/css-sizing-4/": {},
       "https://drafts.csswg.org/css-text-3/": {},
@@ -102,8 +99,11 @@
         ]
       },
       "https://github.com/w3c/csswg-drafts/issues/10154": {},
+      "https://github.com/w3c/csswg-drafts/issues/10316": {},
       "https://github.com/w3c/csswg-drafts/issues/1038": {},
       "https://github.com/w3c/csswg-drafts/issues/11215": {},
+      "https://github.com/w3c/csswg-drafts/issues/11285": {},
+      "https://github.com/w3c/csswg-drafts/issues/11520": {},
       "https://github.com/w3c/csswg-drafts/issues/11539": {
         "anchors": [
           "issuecomment-2628431667"
@@ -126,6 +126,7 @@
       "https://github.com/w3c/csswg-drafts/issues/3611": {},
       "https://github.com/w3c/csswg-drafts/issues/4545": {},
       "https://github.com/w3c/csswg-drafts/issues/4659": {},
+      "https://github.com/w3c/csswg-drafts/issues/4957": {},
       "https://github.com/w3c/csswg-drafts/issues/5088": {},
       "https://github.com/w3c/csswg-drafts/issues/509": {},
       "https://github.com/w3c/csswg-drafts/issues/5235": {},
@@ -135,11 +136,14 @@
       "https://github.com/w3c/csswg-drafts/issues/7612": {},
       "https://github.com/w3c/csswg-drafts/issues/7639": {},
       "https://github.com/w3c/csswg-drafts/issues/7645": {},
+      "https://github.com/w3c/csswg-drafts/issues/7655": {},
       "https://github.com/w3c/csswg-drafts/issues/766": {},
+      "https://github.com/w3c/csswg-drafts/issues/7775": {},
       "https://github.com/w3c/csswg-drafts/issues/7856": {},
       "https://github.com/w3c/csswg-drafts/issues/8014": {},
       "https://github.com/w3c/csswg-drafts/issues/8214": {},
       "https://github.com/w3c/csswg-drafts/issues/8992": {},
+      "https://github.com/w3c/csswg-drafts/issues/9960": {},
       "https://github.com/w3c/csswg-drafts/issues?q=is%3Aissue+label%3Acss-align-3+author%3Adbaron": {},
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
@@ -252,14 +256,19 @@
     "autolinks": {
       "https://drafts.csswg.org/css-box-4/": {
         "anchors": [
+          "content-box",
           "margin-edge",
           "box-box-edge",
           "margin",
           "margin-box",
           "propdef-margin",
           "propdef-padding",
-          "content-box",
           "content-edge"
+        ]
+      },
+      "https://drafts.csswg.org/css-break-4/": {
+        "anchors": [
+          "fragmentation-break"
         ]
       },
       "https://drafts.csswg.org/css-cascade-5/": {
@@ -283,6 +292,8 @@
           "valdef-display-inline-block",
           "valdef-display-inline-table",
           "establish-an-independent-formatting-context",
+          "in-flow",
+          "out-of-flow",
           "non-replaced",
           "containing-block",
           "block-formatting-context",
@@ -370,8 +381,7 @@
         "anchors": [
           "scroll-container",
           "scrollable-overflow-region",
-          "initial-scroll-position",
-          "scrollport",
+          "negative-scrollable-overflow-region",
           "propdef-overflow",
           "scrollable-overflow"
         ]

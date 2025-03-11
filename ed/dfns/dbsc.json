@@ -146,6 +146,48 @@
       "definedIn": "dt"
     },
     {
+      "id": "device-bound-session-expiration-timestamp",
+      "href": "https://w3c.github.io/webappsec-dbsc/#device-bound-session-expiration-timestamp",
+      "linkingText": [
+        "expiration timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "device bound session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "framework-session",
+        "href": "https://w3c.github.io/webappsec-dbsc/#framework-session",
+        "title": "Device bound session",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "device-bound-session-session-key",
+      "href": "https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-key",
+      "linkingText": [
+        "session key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "device bound session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "framework-session",
+        "href": "https://w3c.github.io/webappsec-dbsc/#framework-session",
+        "title": "Device bound session",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "session-scope",
       "href": "https://w3c.github.io/webappsec-dbsc/#session-scope",
       "linkingText": [
@@ -163,6 +205,27 @@
         "number": "5.4"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "session-scope-origin",
+      "href": "https://w3c.github.io/webappsec-dbsc/#session-scope-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "session scope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "framework-scope",
+        "href": "https://w3c.github.io/webappsec-dbsc/#framework-scope",
+        "title": "Session scope",
+        "number": "5.4"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "session-scope-include-site",
@@ -209,6 +272,27 @@
       "href": "https://w3c.github.io/webappsec-dbsc/#scope-specification-type",
       "linkingText": [
         "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "scope specification"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "framework-scope-specification",
+        "href": "https://w3c.github.io/webappsec-dbsc/#framework-scope-specification",
+        "title": "Scope specification",
+        "number": "5.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "scope-specification-host",
+      "href": "https://w3c.github.io/webappsec-dbsc/#scope-specification-host",
+      "linkingText": [
+        "host"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -344,27 +428,29 @@
       "heading": {
         "id": "algo-process-challenge",
         "href": "https://w3c.github.io/webappsec-dbsc/#algo-process-challenge",
-        "title": "Process challenge",
-        "number": "6.2"
+        "title": "Cache challenge",
+        "number": "6.4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "refresh-session",
-      "href": "https://w3c.github.io/webappsec-dbsc/#refresh-session",
+      "id": "algorithms-send-a-request",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algorithms-send-a-request",
       "linkingText": [
-        "Refreshing an existing session"
+        "send a request"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "algorithms"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "algo-session-refresh",
-        "href": "https://w3c.github.io/webappsec-dbsc/#algo-session-refresh",
-        "title": "Session refresh",
-        "number": "6.3"
+        "id": "algo-session-request",
+        "href": "https://w3c.github.io/webappsec-dbsc/#algo-session-request",
+        "title": "Send request",
+        "number": "6.5"
       },
       "definedIn": "prose"
     },
@@ -383,45 +469,7 @@
         "id": "algo-create-session",
         "href": "https://w3c.github.io/webappsec-dbsc/#algo-create-session",
         "title": "Create session",
-        "number": "6.5"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "close-session",
-      "href": "https://w3c.github.io/webappsec-dbsc/#close-session",
-      "linkingText": [
-        "close a session"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "algo-close-session",
-        "href": "https://w3c.github.io/webappsec-dbsc/#algo-close-session",
-        "title": "Closing session",
         "number": "6.6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "fetch-integration",
-      "href": "https://w3c.github.io/webappsec-dbsc/#fetch-integration",
-      "linkingText": [
-        "fetch Integration"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "algo-fetch-integration",
-        "href": "https://w3c.github.io/webappsec-dbsc/#algo-fetch-integration",
-        "title": "Fetch Integration",
-        "number": "6.7"
       },
       "definedIn": "prose"
     },
