@@ -86,6 +86,7 @@
       "https://w3c.github.io/hr-time/": {},
       "https://w3c.github.io/webappsec-csp/": {},
       "https://w3c.github.io/webrtc-pc/": {},
+      "https://w3c.github.io/webtransport/": {},
       "https://w3ctag.github.io/privacy-principles/": {
         "anchors": [
           "dfn-cross-site-recognition"
@@ -144,8 +145,8 @@
     "autolinks": {
       "http://www.ecma-international.org/ecma-262/6.0/index.html": {
         "anchors": [
-          "table-49",
-          "sec-promise-objects"
+          "sec-promise-objects",
+          "table-49"
         ]
       },
       "https://dom.spec.whatwg.org/": {
@@ -246,13 +247,14 @@
       },
       "https://streams.spec.whatwg.org/": {
         "anchors": [
-          "readablestream",
           "writablestream",
+          "default-writer-ready",
+          "writablestream-error",
+          "readablestream",
           "high-water-mark",
           "readablestream-current-byob-request-view",
           "readablestream-pull-from-bytes",
           "readablestream-enqueue",
-          "default-writer-ready",
           "readablestream-set-up-with-byte-reading-support",
           "readablestream-set-up-with-byte-reading-support-pullalgorithm",
           "readablestream-set-up-highwatermark",
@@ -260,7 +262,6 @@
           "writablestream-set-up-writealgorithm",
           "readablestream-set-up",
           "readablestream-set-up-pullalgorithm",
-          "writablestream-error",
           "readablestream-error",
           "readablestream-close",
           "writablestream-close",
@@ -303,23 +304,30 @@
           "webrtc"
         ]
       },
+      "https://w3c.github.io/webtransport/": {
+        "anchors": [
+          "dom-webtransportdatagramduplexstream-outgoingdatagramsqueue-slot"
+        ]
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "Exposed",
           "SecureContext",
-          "idl-unsigned-long",
-          "idl-unrestricted-double",
+          "idl-long-long",
           "new",
           "this",
           "dfn-throw",
-          "exceptiondef-rangeerror",
-          "buffersource-byte-length",
+          "invalidstateerror",
+          "BufferSource",
           "a-promise-rejected-with",
-          "idl-DataView",
           "exceptiondef-typeerror",
           "a-promise-resolved-with",
+          "idl-unsigned-long",
+          "idl-unrestricted-double",
+          "exceptiondef-rangeerror",
+          "buffersource-byte-length",
+          "idl-DataView",
           "idl-Uint8Array",
-          "BufferSource",
           "idl-USVString",
           "idl-promise",
           "idl-undefined",
@@ -330,11 +338,9 @@
           "syntaxerror",
           "notsupportederror",
           "upon-fulfillment",
-          "invalidstateerror",
           "aborterror",
           "quotaexceedederror",
           "idl-sequence",
-          "idl-long-long",
           "idl-unsigned-long-long",
           "buffersource-underlying-buffer",
           "idl-ArrayBuffer",
