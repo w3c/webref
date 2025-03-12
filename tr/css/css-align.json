@@ -165,7 +165,7 @@
         },
         {
           "name": "stretch",
-          "prose": "As defined for justify-self in § 6.1 Inline-Axis (or Main-Axis) Alignment: the justify-self property.",
+          "prose": "As defined for justify-self in § 6.1 Inline-Axis (or Main-Axis) Self-Alignment: the justify-self property.",
           "href": "https://www.w3.org/TR/css-align-3/#valdef-align-self-stretch",
           "type": "value",
           "value": "stretch"
@@ -340,6 +340,7 @@
     {
       "name": "grid-row-gap",
       "href": "https://www.w3.org/TR/css-align-3/#propdef-grid-row-gap",
+      "legacyAliasOf": "row-gap",
       "styleDeclaration": [
         "grid-row-gap",
         "gridRowGap"
@@ -348,6 +349,7 @@
     {
       "name": "grid-column-gap",
       "href": "https://www.w3.org/TR/css-align-3/#propdef-grid-column-gap",
+      "legacyAliasOf": "column-gap",
       "styleDeclaration": [
         "grid-column-gap",
         "gridColumnGap"
@@ -356,6 +358,7 @@
     {
       "name": "grid-gap",
       "href": "https://www.w3.org/TR/css-align-3/#propdef-grid-gap",
+      "legacyAliasOf": "gap",
       "styleDeclaration": [
         "grid-gap",
         "gridGap"
@@ -502,7 +505,7 @@
       "values": [
         {
           "name": "space-between",
-          "prose": "The alignment subjects are evenly distributed in the alignment container. The first alignment subject is placed flush with the start edge of the alignment container, the last alignment subject is placed flush with the end edge of the alignment container, and the remaining alignment subjects are distributed so that the spacing between any two adjacent alignment subjects is the same. The default fallback alignment for this value is flex-start. (For layout modes other than flex layout, flex-start is identical to start.)",
+          "prose": "The alignment subjects are evenly distributed in the alignment container. The first alignment subject is placed flush with the start edge of the alignment container, the last alignment subject is placed flush with the end edge of the alignment container, and the remaining alignment subjects are distributed so that the spacing between any two adjacent alignment subjects is the same. The default fallback alignment for this value is safe flex-start. (For layout modes other than flex layout, flex-start is identical to start.)",
           "href": "https://www.w3.org/TR/css-align-3/#valdef-align-content-space-between",
           "type": "value",
           "value": "space-between"
