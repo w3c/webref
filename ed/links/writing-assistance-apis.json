@@ -8,7 +8,6 @@
       "http://www.w3.org/community/": {},
       "https://arxiv.org/abs/2404.08335": {},
       "https://dom.spec.whatwg.org/": {},
-      "https://drafts.csswg.org/css-values-4/": {},
       "https://github.com/webmachinelearning/writing-assistance-apis/blob/main/README.md": {},
       "https://github.com/whatwg/webidl/pull/1465": {},
       "https://github.com/whatwg/xhr/pull/394": {},
@@ -19,6 +18,7 @@
       "https://tc39.es/ecma262/multipage/": {},
       "https://tc39.es/ecma402/": {},
       "https://w3c.github.io/hr-time/": {},
+      "https://w3c.github.io/webappsec-permissions-policy/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://worldpopulationreview.com/country-rankings/internet-speeds-by-country": {},
       "https://www.w3.org/community/about/agreements/cla/": {},
@@ -40,14 +40,14 @@
           "abortsignal-add"
         ]
       },
-      "https://drafts.csswg.org/css-values-4/": {
-        "anchors": [
-          "number"
-        ]
-      },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
           "fully-active"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
         ]
       },
       "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -63,25 +63,26 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
-          "windoworworkerglobalscope",
           "eventhandler",
-          "concept-relevant-realm",
           "event-handlers",
           "event-handler-event-type",
           "event-handler-idl-attributes",
-          "concept-relevant-global",
+          "concept-relevant-realm",
           "concept-agent-event-loop",
-          "queue-a-global-task",
           "concept-realm-global",
+          "queue-a-global-task",
           "event-loop",
-          "concept-task"
+          "concept-relevant-global",
+          "concept-task",
+          "current-global-object",
+          "concept-global-object-realm"
         ]
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "map-exists",
           "assert",
           "implementation-defined",
+          "map-exists",
           "list-is-empty",
           "ordered-set",
           "ordered-map",
@@ -116,6 +117,7 @@
       },
       "https://tc39.es/ecma262/": {
         "anchors": [
+          "current-realm",
           "eqn-floor"
         ]
       },
@@ -140,16 +142,22 @@
           "monotonic-clock-unsafe-current-time"
         ]
       },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "policy-controlled-feature",
+          "policy-controlled-feature-default-allowlist",
+          "default-allowlist-self"
+        ]
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
-          "Replaceable",
-          "SecureContext",
           "Exposed",
+          "SecureContext",
           "idl-undefined",
-          "new",
-          "this",
           "dfn-interface",
           "include",
+          "new",
+          "this",
           "aborterror",
           "idl-DOMException",
           "idl-promise",
@@ -158,22 +166,23 @@
           "idl-double",
           "idl-unrestricted-double",
           "idl-sequence",
-          "a-promise-rejected-with",
-          "invalidstateerror",
           "exceptiondef-typeerror",
           "operationerror",
           "dfn-create-frozen-array",
-          "a-new-promise",
-          "reject",
-          "unknownerror",
-          "resolve",
           "domexception-name",
           "notallowederror",
           "notreadableerror",
           "notsupportederror",
+          "unknownerror",
+          "a-promise-rejected-with",
+          "invalidstateerror",
           "invoke-a-callback-function",
+          "a-new-promise",
+          "reject",
           "networkerror",
-          "implements"
+          "implements",
+          "resolve",
+          "a-promise-resolved-with"
         ]
       },
       "https://whatpr.org/webidl/1465.html": {
