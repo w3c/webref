@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-03-12T01:35:47.033Z",
+  "date": "2025-03-12T15:35:03.875Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -121,6 +121,7 @@
       "svg-animations",
       "ecmascript",
       "ecma-402",
+      "ecma-426",
       "tc39-array-from-async",
       "tc39-arraybuffer-base64",
       "tc39-async-explicit-resource-management",
@@ -146,7 +147,6 @@
       "tc39-shadowrealm",
       "tc39-source-phase-imports",
       "tc39-temporal",
-      "sourcemap",
       "testutils",
       "url",
       "urlpattern",
@@ -687,7 +687,7 @@
     "crawled": 343,
     "errors": 0
   },
-  "crawler": "reffy-18.4.1",
+  "crawler": "reffy-18.4.2",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -854,11 +854,11 @@
       ],
       "crawled": "https://www.w3.org/TR/accname-1.2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Mar 2025 17:23:14 GMT"
+        "lastModified": "Wed, 12 Mar 2025 08:59:15 GMT"
       },
       "generator": "respec",
-      "date": "11 March 2025",
-      "revision": "5b667ad102b75cef83f6951b27d9def70f151851",
+      "date": "12 March 2025",
+      "revision": "bf8e1581bff340e73a9e4aa28081ad45d19d8658",
       "algorithms": "algorithms/accname-1.2.json",
       "links": "links/accname-1.2.json",
       "refs": "refs/accname-1.2.json",
@@ -1787,11 +1787,11 @@
       ],
       "crawled": "https://www.w3.org/TR/compute-pressure/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 28 Feb 2025 07:34:40 GMT"
+        "lastModified": "Wed, 12 Mar 2025 10:51:32 GMT"
       },
       "generator": "respec",
-      "date": "28 February 2025",
-      "revision": "7dd063141cd0dc8fd34c5e83c03d1c280ae6aaf4",
+      "date": "12 March 2025",
+      "revision": "da660f695e1acabe8025b99e0a0c82dd6a04ff86",
       "algorithms": "algorithms/compute-pressure.json",
       "links": "links/compute-pressure.json",
       "refs": "refs/compute-pressure.json",
@@ -1916,11 +1916,11 @@
       ],
       "crawled": "https://www.w3.org/TR/core-aam-1.2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 07 Mar 2025 10:56:14 GMT"
+        "lastModified": "Wed, 12 Mar 2025 08:59:10 GMT"
       },
       "generator": "respec",
-      "date": "07 March 2025",
-      "revision": "92fc5736ec5cc8767e720098594916e96d03d5b3",
+      "date": "12 March 2025",
+      "revision": "bf8e1581bff340e73a9e4aa28081ad45d19d8658",
       "links": "links/core-aam-1.2.json",
       "refs": "refs/core-aam-1.2.json",
       "dfns": "dfns/core-aam-1.2.json",
@@ -2113,11 +2113,11 @@
       ],
       "crawled": "https://www.w3.org/TR/CSP3/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 06 Feb 2025 07:17:38 GMT"
+        "lastModified": "Wed, 12 Mar 2025 14:37:39 GMT"
       },
       "generator": "bikeshed",
-      "date": "6 February 2025",
-      "revision": "535ad800cbf72e69e8f80b3a4905752748947e29",
+      "date": "12 March 2025",
+      "revision": "cf891fb86d7ad3f65492c8d533c840de7cf233ae",
       "algorithms": "algorithms/CSP3.json",
       "links": "links/CSP3.json",
       "refs": "refs/CSP3.json",
@@ -9220,7 +9220,7 @@
         "currentSpecification": "CSS2",
         "title": "Cascading Style Sheets",
         "shortTitle": "CSS",
-        "releaseUrl": "https://www.w3.org/TR/CSS21/",
+        "releaseUrl": "https://www.w3.org/TR/CSS2/",
         "nightlyUrl": "https://drafts.csswg.org/css2/"
       },
       "seriesVersion": "2",
@@ -9238,17 +9238,8 @@
         "repository": "https://github.com/w3c/csswg-drafts",
         "filename": "index.html"
       },
-      "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
-      "shortTitle": "CSS 2",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
-        }
-      ],
       "release": {
-        "url": "https://www.w3.org/TR/CSS21/",
+        "url": "https://www.w3.org/TR/CSS2/",
         "status": "Recommendation",
         "pages": [
           "https://www.w3.org/TR/CSS2/about.html",
@@ -9280,6 +9271,15 @@
         ],
         "filename": "Overview.html"
       },
+      "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
+      "shortTitle": "CSS 2",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
       "source": "w3c",
       "categories": [
         "browser"
@@ -9293,10 +9293,12 @@
       },
       "versions": [
         "https://www.w3.org/TR/CSS2/",
-        "https://www.w3.org/TR/CSS21/",
         "https://drafts.csswg.org/css2/"
       ],
-      "crawled": "https://www.w3.org/TR/CSS21/",
+      "crawled": "https://www.w3.org/TR/CSS2/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 08 Dec 2021 07:36:41 GMT"
+      },
       "date": "to correct markup.",
       "algorithms": "algorithms/CSS2.json",
       "links": "links/CSS2.json",
@@ -9990,7 +9992,7 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-initdata-cenc/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:39:25 GMT"
+        "lastModified": "Fri, 12 Jul 2024 12:26:25 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
@@ -15400,11 +15402,11 @@
       ],
       "crawled": "https://www.w3.org/TR/pointerevents3/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 26 Feb 2025 12:25:12 GMT"
+        "lastModified": "Wed, 12 Mar 2025 14:11:33 GMT"
       },
       "generator": "respec",
-      "date": "26 February 2025",
-      "revision": "07d533a5006ee7e1ef84656fed5d1f0f9e89af4a",
+      "date": "12 March 2025",
+      "revision": "3f4b9e43e130a9cd76f54d3c01465e6c8a498776",
       "algorithms": "algorithms/pointerevents3.json",
       "links": "links/pointerevents3.json",
       "refs": "refs/pointerevents3.json",
@@ -15467,11 +15469,11 @@
       ],
       "crawled": "https://www.w3.org/TR/pointerevents4/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 26 Feb 2025 12:34:47 GMT"
+        "lastModified": "Wed, 12 Mar 2025 13:31:28 GMT"
       },
       "generator": "respec",
-      "date": "26 February 2025",
-      "revision": "6543e6b91d92fd7b65fb2d2de6b92d16f12a93f3",
+      "date": "12 March 2025",
+      "revision": "19cb44cef994b012cadd19759965d37006cac847",
       "algorithms": "algorithms/pointerevents4.json",
       "links": "links/pointerevents4.json",
       "refs": "refs/pointerevents4.json",
@@ -17384,8 +17386,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "Service Workers Working Group",
-          "url": "https://www.w3.org/groups/wg/service-workers/"
+          "name": "Web Applications Working Group",
+          "url": "https://www.w3.org/groups/wg/webapps/"
         }
       ],
       "release": {

@@ -31,7 +31,7 @@
               "html": "<p>If <var>token</var> is an empty string, or if <var>token</var> is not an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string②\">ASCII string</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
             },
             {
-              "html": "<p>Let <var>directive name</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points\">collecting a sequence of code points</a> from <var>token</var> which are not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-whitespace\" id=\"ref-for-ascii-whitespace①\">ASCII whitespace</a>.</p>"
+              "html": "<p>Let <var>directive name</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points\">collecting a sequence of code points</a> from <var>token</var> which are not <a data-link-type=\"dfn\" data-refhint-key=\"https://infra.spec.whatwg.org/#ascii-whitespace\" href=\"https://infra.spec.whatwg.org/#ascii-whitespace\" id=\"ref-for-ascii-whitespace①\">ASCII whitespace</a>.</p>"
             },
             {
               "html": "<p>Set <var>directive name</var> to be the result of running <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase\">ASCII lowercase</a> on <var>directive name</var>.</p>"
@@ -1828,10 +1828,16 @@
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⓪\">For each</a> <var>directive</var> of <var>policy</var>:",
-          "rationale": "let",
+          "rationale": "if",
           "steps": [
             {
-              "html": "<p>Let <var>result</var> be the result of executing <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directive-pre-request-check\" id=\"ref-for-directive-pre-request-check①⑨\">pre-request check</a> on <var>request</var> and <var>policy</var>.</p>"
+              "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directive-name\" id=\"ref-for-directive-name①⑧\">name</a> is not one of the following:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><code>child-src</code></p>\n         </li><li data-md=\"\">\n          <p><code>connect-src</code></p>\n         </li><li data-md=\"\">\n          <p><code>font-src</code></p>\n         </li><li data-md=\"\">\n          <p><code>frame-src</code></p>\n         </li><li data-md=\"\">\n          <p><code>img-src</code></p>\n         </li><li data-md=\"\">\n          <p><code>manifest-src</code></p>\n         </li><li data-md=\"\">\n          <p><code>media-src</code></p>\n         </li><li data-md=\"\">\n          <p><code>object-src</code></p>\n         </li><li data-md=\"\">\n          <p><code>script-src</code></p>\n         </li><li data-md=\"\">\n          <p><code>script-src-elem</code></p>\n         </li><li data-md=\"\">\n          <p><code>style-src</code></p>\n         </li><li data-md=\"\">\n          <p><code>style-src-elem</code></p>\n         </li><li data-md=\"\">\n          <p><code>worker-src</code></p>\n        </li></ul>\n        <p>then continue.</p>"
+            },
+            {
+              "html": "<p class=\"assertion\">Assert: <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directive-value\" id=\"ref-for-directive-value⑥④\">value</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#source-lists\" id=\"ref-for-source-lists①②\">source list</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>result</var> be the result of executing <a href=\"https://www.w3.org/TR/CSP3/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on <var>request</var>, <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directive-value\" id=\"ref-for-directive-value⑥⑤\">value</a>, and <var>policy</var>.</p>"
             },
             {
               "html": "<p>If <var>result</var> is \"<code>Allowed</code>\", then return \"<code>Does Not Violate</code>\".</p>"
@@ -1844,7 +1850,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤⑧\">request</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-nonce-metadata\" id=\"ref-for-concept-request-nonce-metadata⑦\">cryptographic nonce metadata</a> <var>nonce</var> and a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#source-lists\" id=\"ref-for-source-lists①②\">source list</a> <var>source list</var>, this algorithm returns\n  \"<code>Matches</code>\" if the nonce matches one or more source expressions in the list,\n  and \"<code>Does Not Match</code>\" otherwise:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤⑧\">request</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-nonce-metadata\" id=\"ref-for-concept-request-nonce-metadata⑦\">cryptographic nonce metadata</a> <var>nonce</var> and a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#source-lists\" id=\"ref-for-source-lists①③\">source list</a> <var>source list</var>, this algorithm returns\n  \"<code>Matches</code>\" if the nonce matches one or more source expressions in the list,\n  and \"<code>Does Not Match</code>\" otherwise:",
       "rationale": "assert",
       "steps": [
         {
@@ -1868,7 +1874,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤⑨\">request</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-integrity-metadata\" id=\"ref-for-concept-request-integrity-metadata②\">integrity metadata</a> <var>integrity metadata</var> and a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#source-lists\" id=\"ref-for-source-lists①③\">source list</a> <var>source list</var>, this algorithm\n  returns \"<code>Matches</code>\" if the integrity metadata matches one or more source\n  expressions in the list, and \"<code>Does Not Match</code>\" otherwise:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤⑨\">request</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-integrity-metadata\" id=\"ref-for-concept-request-integrity-metadata②\">integrity metadata</a> <var>integrity metadata</var> and a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#source-lists\" id=\"ref-for-source-lists①④\">source list</a> <var>source list</var>, this algorithm\n  returns \"<code>Matches</code>\" if the integrity metadata matches one or more source\n  expressions in the list, and \"<code>Does Not Match</code>\" otherwise:",
       "rationale": "assert",
       "steps": [
         {
@@ -1901,7 +1907,7 @@
       ]
     },
     {
-      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#url\" id=\"ref-for-url⑨\">URL</a></code> <var>url</var>, a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#source-lists\" id=\"ref-for-source-lists①⑥\">source list</a> <var>source list</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin①\">origin</a> <var>origin</var>, and a number <var>redirect count</var>, this\n  algorithm returns \"<code>Matches</code>\" if the URL matches one or more source\n  expressions in <var>source list</var>, or \"<code>Does Not Match</code>\" otherwise:",
+      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#url\" id=\"ref-for-url⑨\">URL</a></code> <var>url</var>, a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#source-lists\" id=\"ref-for-source-lists①⑦\">source list</a> <var>source list</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin①\">origin</a> <var>origin</var>, and a number <var>redirect count</var>, this\n  algorithm returns \"<code>Matches</code>\" if the URL matches one or more source\n  expressions in <var>source list</var>, or \"<code>Does Not Match</code>\" otherwise:",
       "rationale": "assert",
       "steps": [
         {
@@ -2166,7 +2172,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#source-lists\" id=\"ref-for-source-lists①⑧\">source list</a> <var>list</var> and a string <var>type</var>, the following\n  algorithm returns \"<code>Allows</code>\" if all inline content of a given <var>type</var> is\n  allowed and \"<code>Does Not Allow</code>\" otherwise.",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#source-lists\" id=\"ref-for-source-lists①⑨\">source list</a> <var>list</var> and a string <var>type</var>, the following\n  algorithm returns \"<code>Allows</code>\" if all inline content of a given <var>type</var> is\n  allowed and \"<code>Does Not Allow</code>\" otherwise.",
       "rationale": "let",
       "steps": [
         {
@@ -2193,7 +2199,7 @@
       ]
     },
     {
-      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element①⓪\">Element</a></code> <var>element</var>, a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#source-lists\" id=\"ref-for-source-lists②②\">source list</a> <var>list</var>, a string <var>type</var>, and a string <var>source</var>, this algorithm returns \"<code>Matches</code>\" or\n  \"<code>Does Not Match</code>\".",
+      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element①⓪\">Element</a></code> <var>element</var>, a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#source-lists\" id=\"ref-for-source-lists②③\">source list</a> <var>list</var>, a string <var>type</var>, and a string <var>source</var>, this algorithm returns \"<code>Matches</code>\" or\n  \"<code>Does Not Match</code>\".",
       "rationale": "if",
       "steps": [
         {
@@ -2248,10 +2254,10 @@
                       "html": "<p>If <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/CSP3/#grammardef-hash-algorithm\" id=\"ref-for-grammardef-hash-algorithm③\"><code>hash-algorithm</code></a> part is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②②\">ASCII case-insensitive</a> match for \"sha256\", set <var>algorithm</var> to <a data-link-type=\"dfn\" href=\"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf#\" id=\"ref-for-something①\">SHA-256</a>.</p>"
                     },
                     {
-                      "html": "<p>If <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/CSP3/#grammardef-hash-algorithm\" id=\"ref-for-grammardef-hash-algorithm④\"><code>hash-algorithm</code></a> part is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②③\">ASCII case-insensitive</a> match for \"sha384\", set <var>algorithm</var> to <a data-link-type=\"dfn\" href=\"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf#\" id=\"ref-for-something②\">SHA-384</a>.</p>"
+                      "html": "<p>If <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/CSP3/#grammardef-hash-algorithm\" id=\"ref-for-grammardef-hash-algorithm④\"><code>hash-algorithm</code></a> part is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②③\">ASCII case-insensitive</a> match for \"sha384\", set <var>algorithm</var> to <a data-link-type=\"dfn\" data-refhint-key=\"fe0b17c4\" href=\"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf#\" id=\"ref-for-something②\">SHA-384</a>.</p>"
                     },
                     {
-                      "html": "<p>If <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/CSP3/#grammardef-hash-algorithm\" id=\"ref-for-grammardef-hash-algorithm⑤\"><code>hash-algorithm</code></a> part is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②④\">ASCII case-insensitive</a> match for \"sha512\", set <var>algorithm</var> to <a data-link-type=\"dfn\" href=\"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf#\" id=\"ref-for-something③\">SHA-512</a>.</p>"
+                      "html": "<p>If <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/CSP3/#grammardef-hash-algorithm\" id=\"ref-for-grammardef-hash-algorithm⑤\"><code>hash-algorithm</code></a> part is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②④\">ASCII case-insensitive</a> match for \"sha512\", set <var>algorithm</var> to <a data-link-type=\"dfn\" data-refhint-key=\"6a5840b7\" href=\"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf#\" id=\"ref-for-something③\">SHA-512</a>.</p>"
                     },
                     {
                       "html": "If <var>algorithm</var> is not null:",
@@ -2277,7 +2283,7 @@
       ]
     },
     {
-      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element①⓪\">Element</a></code> <var>element</var>, a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#source-lists\" id=\"ref-for-source-lists②②\">source list</a> <var>list</var>, a string <var>type</var>, and a string <var>source</var>, this algorithm returns \"<code>Matches</code>\" or\n  \"<code>Does Not Match</code>\".",
+      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element①⓪\">Element</a></code> <var>element</var>, a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#source-lists\" id=\"ref-for-source-lists②③\">source list</a> <var>list</var>, a string <var>type</var>, and a string <var>source</var>, this algorithm returns \"<code>Matches</code>\" or\n  \"<code>Does Not Match</code>\".",
       "rationale": "return",
       "steps": [
         {
@@ -2288,7 +2294,7 @@
     {
       "name": "request/effective directive",
       "href": "https://www.w3.org/TR/CSP3/#request-effective-directive",
-      "html": "Each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#fetch-directives\" id=\"ref-for-fetch-directives③\">fetch directive</a> controls a specific destination of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑥③\">request</a>. Given\n  a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑥④\">request</a> <var>request</var>, the following algorithm returns either\n  null or the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directive-name\" id=\"ref-for-directive-name①⑧\">name</a> of the request’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"request\" data-dfn-type=\"dfn\" data-export=\"\" id=\"request-effective-directive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">effective directive</dfn>:",
+      "html": "Each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#fetch-directives\" id=\"ref-for-fetch-directives③\">fetch directive</a> controls a specific destination of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑥③\">request</a>. Given\n  a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑥④\">request</a> <var>request</var>, the following algorithm returns either\n  null or the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directive-name\" id=\"ref-for-directive-name①⑨\">name</a> of the request’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"request\" data-dfn-type=\"dfn\" data-export=\"\" id=\"request-effective-directive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">effective directive</dfn>:",
       "rationale": "if",
       "steps": [
         {
@@ -2410,7 +2416,7 @@
       ]
     },
     {
-      "html": "Given a string <var>type</var>, this algorithm returns the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directive-name\" id=\"ref-for-directive-name①⑨\">name</a> of the effective directive.",
+      "html": "Given a string <var>type</var>, this algorithm returns the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directive-name\" id=\"ref-for-directive-name②⓪\">name</a> of the effective directive.",
       "rationale": "switch",
       "steps": [
         {
@@ -2590,7 +2596,7 @@
               "html": "<p>If <var>directive name</var> is <var>fallback directive</var>, Return \"<code>Yes</code>\".</p>"
             },
             {
-              "html": "<p>If <var>policy</var> contains a directive whose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directive-name\" id=\"ref-for-directive-name②⓪\">name</a> is <var>fallback directive</var>,  Return \"<code>No</code>\".</p>"
+              "html": "<p>If <var>policy</var> contains a directive whose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directive-name\" id=\"ref-for-directive-name②①\">name</a> is <var>fallback directive</var>,  Return \"<code>No</code>\".</p>"
             }
           ]
         },

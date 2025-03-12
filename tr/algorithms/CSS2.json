@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
-    "url": "https://www.w3.org/TR/CSS21/"
+    "url": "https://www.w3.org/TR/CSS2/"
   },
   "algorithms": [
     {
@@ -157,7 +157,7 @@
           "html": "If the element has 'position: fixed', the containing block is\nestablished by the <a href=\"https://www.w3.org/TR/CSS2/visuren.html#viewport\">viewport</a>\nin the case of continuous media or the page area in the case of paged media."
         },
         {
-          "html": "If the element has 'position: absolute', the containing block is\nestablished by the nearest ancestor with a <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-position\" class=\"noxref\"><span class=\"propinst-position\">'position'</span></a> of 'absolute', 'relative'\nor 'fixed', in the following way:",
+          "html": "If the element has 'position: absolute', the containing block is\nestablished by the nearest ancestor with a <a href=\"https://www.w3.org/TR/CSS2/visuren.html#propdef-position\" class=\"noxref\"><span class=\"propinst-position\">'position'</span></a> of 'absolute', 'relative'\nor 'fixed', in the following way:",
           "rationale": "/^otherwise(\\,| )/i",
           "steps": [
             {
@@ -556,7 +556,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "In the case that the ancestor is an <del>inline box</del>\n<ins>inline-level element</ins>, the containing block <del>depends on\nthe <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-direction\" class=\"noxref\"><span class=\"propinst-direction\">'direction'</span></a> property of\nthe ancestor:</del> <ins>is the bounding box around the padding boxes\nof the first and the\nlast inline boxes generated for that element. In CSS&nbsp;2.1, if the\ninline element is split across multiple lines, the containing\nblock is undefined.</ins>",
+          "html": "In the case that the ancestor is an <del>inline box</del>\n<ins>inline-level element</ins>, the containing block <del>depends on\nthe <a href=\"https://www.w3.org/TR/CSS2/visuren.html#propdef-direction\" class=\"noxref\"><span class=\"propinst-direction\">'direction'</span></a> property of\nthe ancestor:</del> <ins>is the bounding box around the padding boxes\nof the first and the\nlast inline boxes generated for that element. In CSS&nbsp;2.1, if the\ninline element is split across multiple lines, the containing\nblock is undefined.</ins>",
           "rationale": "if",
           "steps": [
             {
