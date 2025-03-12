@@ -230,7 +230,12 @@
       },
       "https://webidl.spec.whatwg.org/": {},
       "https://websockets.spec.whatwg.org/": {},
-      "https://wicg.github.io/anonymous-iframe/": {},
+      "https://wicg.github.io/anonymous-iframe/": {
+        "anchors": [
+          "spec-navigation-partition-nonce",
+          "spec-window-partition-nonce"
+        ]
+      },
       "https://wicg.github.io/attribution-reporting-api/": {
         "anchors": [
           "ref-for-request-service-workers-mode"
@@ -483,7 +488,8 @@
           "cross-origin-resource-policy-check",
           "queue-a-cross-origin-embedder-policy-corp-violation-report",
           "concept-header-list-get-structured-header",
-          "concept-response-header-list"
+          "concept-response-header-list",
+          "concept-request-reserved-client"
         ]
       },
       "https://html.spec.whatwg.org/multipage/": {
@@ -615,7 +621,8 @@
           "nav-container-document",
           "valid-navigable-target-name-or-keyword",
           "the-rules-for-choosing-a-navigable",
-          "system-visibility-state"
+          "system-visibility-state",
+          "top-level-browsing-context"
         ]
       },
       "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -757,7 +764,13 @@
           "event-handlers",
           "event-handler-event-type",
           "globaleventhandlers",
-          "eventhandler"
+          "eventhandler",
+          "environment",
+          "concept-environment-id",
+          "concept-environment-target-browsing-context",
+          "concept-environment-creation-url",
+          "concept-environment-top-level-creation-url",
+          "concept-environment-top-level-origin"
         ]
       },
       "https://infra.spec.whatwg.org/": {
@@ -931,7 +944,10 @@
       },
       "https://wicg.github.io/anonymous-iframe/": {
         "anchors": [
-          "page-credentialless-nonce"
+          "page-credentialless-nonce",
+          "navigation-credentialless",
+          "environment-partition-nonce",
+          "navigation-params-credentialless"
         ]
       },
       "https://wicg.github.io/attribution-reporting-api/": {
