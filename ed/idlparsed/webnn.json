@@ -2524,6 +2524,55 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlconvtranspose2doptions"
       },
+      "MLCumulativeSumOptions": {
+        "fragment": "dictionary MLCumulativeSumOptions : MLOperatorOptions {\n  boolean exclusive = false;\n  boolean reversed = false;\n};",
+        "type": "dictionary",
+        "name": "MLCumulativeSumOptions",
+        "inheritance": "MLOperatorOptions",
+        "members": [
+          {
+            "type": "field",
+            "name": "exclusive",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcumulativesumoptions-exclusive"
+          },
+          {
+            "type": "field",
+            "name": "reversed",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcumulativesumoptions-reversed"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlcumulativesumoptions"
+      },
       "MLLogicalNotSupportLimits": {
         "fragment": "dictionary MLLogicalNotSupportLimits {\n  MLSupportLimits a;\n  MLSupportLimits output;\n};",
         "type": "dictionary",
@@ -2566,6 +2615,81 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllogicalnotsupportlimits"
+      },
+      "MLQuantizationSupportLimits": {
+        "fragment": "dictionary MLQuantizationSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits scale;\n  MLSupportLimits zeroPoint;\n  MLSupportLimits output;\n};",
+        "type": "dictionary",
+        "name": "MLQuantizationSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "input",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlquantizationsupportlimits-input"
+          },
+          {
+            "type": "field",
+            "name": "scale",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlquantizationsupportlimits-scale"
+          },
+          {
+            "type": "field",
+            "name": "zeroPoint",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlquantizationsupportlimits-zeropoint"
+          },
+          {
+            "type": "field",
+            "name": "output",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlquantizationsupportlimits-output"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlquantizationsupportlimits"
       },
       "MLEluOptions": {
         "fragment": "dictionary MLEluOptions : MLOperatorOptions {\n  double alpha = 1;\n};",
@@ -4998,6 +5122,204 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlresample2doptions"
       },
+      "MLReverseOptions": {
+        "fragment": "dictionary MLReverseOptions : MLOperatorOptions {\n  sequence<[EnforceRange] unsigned long> axes;\n};",
+        "type": "dictionary",
+        "name": "MLReverseOptions",
+        "inheritance": "MLOperatorOptions",
+        "members": [
+          {
+            "type": "field",
+            "name": "axes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlreverseoptions-axes"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlreverseoptions"
+      },
+      "MLScatterOptions": {
+        "fragment": "dictionary MLScatterOptions : MLOperatorOptions {\n  [EnforceRange] unsigned long axis = 0;\n};",
+        "type": "dictionary",
+        "name": "MLScatterOptions",
+        "inheritance": "MLOperatorOptions",
+        "members": [
+          {
+            "type": "field",
+            "name": "axis",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlscatteroptions-axis"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlscatteroptions"
+      },
+      "MLScatterSupportLimits": {
+        "fragment": "dictionary MLScatterSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits indices;\n  MLSupportLimits updates;\n  MLSupportLimits output;\n};",
+        "type": "dictionary",
+        "name": "MLScatterSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "input",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlscattersupportlimits-input"
+          },
+          {
+            "type": "field",
+            "name": "indices",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlscattersupportlimits-indices"
+          },
+          {
+            "type": "field",
+            "name": "updates",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlscattersupportlimits-updates"
+          },
+          {
+            "type": "field",
+            "name": "output",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlscattersupportlimits-output"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlscattersupportlimits"
+      },
+      "MLSliceOptions": {
+        "fragment": "dictionary MLSliceOptions : MLOperatorOptions {\n  sequence<[EnforceRange] unsigned long> strides;\n};",
+        "type": "dictionary",
+        "name": "MLSliceOptions",
+        "inheritance": "MLOperatorOptions",
+        "members": [
+          {
+            "type": "field",
+            "name": "strides",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlsliceoptions-strides"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlsliceoptions"
+      },
       "MLSplitOptions": {
         "fragment": "dictionary MLSplitOptions : MLOperatorOptions {\n  [EnforceRange] unsigned long axis = 0;\n};",
         "type": "dictionary",
@@ -5910,6 +6232,83 @@
           "partial": true
         },
         {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand cumulativeSum(MLOperand input,\n                          unsigned long axis,\n                          optional MLCumulativeSumOptions options = {});\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "cumulativeSum",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "axis",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "unsigned long"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLCumulativeSumOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-cumulativesum"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
           "fragment": "partial interface MLGraphBuilder {\n  MLOperand add(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand sub(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand mul(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand div(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand max(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand min(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand pow(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
@@ -6389,7 +6788,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand equal(MLOperand a,\n                  MLOperand b,\n                  optional MLOperatorOptions options = {});\n  MLOperand greater(MLOperand a,\n                    MLOperand b,\n                    optional MLOperatorOptions options = {});\n  MLOperand greaterOrEqual(MLOperand a,\n                           MLOperand b,\n                           optional MLOperatorOptions options = {});\n  MLOperand lesser(MLOperand a,\n                   MLOperand b,\n                   optional MLOperatorOptions options = {});\n  MLOperand lesserOrEqual(MLOperand a,\n                          MLOperand b,\n                          optional MLOperatorOptions options = {});\n  MLOperand logicalNot(MLOperand a, optional MLOperatorOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand equal(MLOperand a,\n                  MLOperand b,\n                  optional MLOperatorOptions options = {});\n  MLOperand notEqual(MLOperand a,\n                     MLOperand b,\n                     optional MLOperatorOptions options = {});\n  MLOperand greater(MLOperand a,\n                    MLOperand b,\n                    optional MLOperatorOptions options = {});\n  MLOperand greaterOrEqual(MLOperand a,\n                           MLOperand b,\n                           optional MLOperatorOptions options = {});\n  MLOperand lesser(MLOperand a,\n                   MLOperand b,\n                   optional MLOperatorOptions options = {});\n  MLOperand lesserOrEqual(MLOperand a,\n                          MLOperand b,\n                          optional MLOperatorOptions options = {});\n  MLOperand logicalNot(MLOperand a, optional MLOperatorOptions options = {});\n  MLOperand logicalAnd(MLOperand a,\n                       MLOperand b,\n                       optional MLOperatorOptions options = {});\n  MLOperand logicalOr(MLOperand a,\n                      MLOperand b,\n                      optional MLOperatorOptions options = {});\n  MLOperand logicalXor(MLOperand a,\n                       MLOperand b,\n                       optional MLOperatorOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -6460,6 +6859,73 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-equal"
+            },
+            {
+              "type": "operation",
+              "name": "notEqual",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "a",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "b",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperatorOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-notequal"
             },
             {
               "type": "operation",
@@ -6779,13 +7245,214 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-logicalnot"
+            },
+            {
+              "type": "operation",
+              "name": "logicalAnd",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "a",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "b",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperatorOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-logicaland"
+            },
+            {
+              "type": "operation",
+              "name": "logicalOr",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "a",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "b",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperatorOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-logicalor"
+            },
+            {
+              "type": "operation",
+              "name": "logicalXor",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "a",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "b",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperatorOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-logicalxor"
             }
           ],
           "extAttrs": [],
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand abs(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand ceil(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand cos(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand erf(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand exp(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand floor(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand identity(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand log(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand neg(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand reciprocal(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sin(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sqrt(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand tan(MLOperand input, optional MLOperatorOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand abs(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand ceil(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand cos(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand erf(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand exp(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand floor(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand identity(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand log(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand neg(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand reciprocal(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sin(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sign(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sqrt(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand tan(MLOperand input, optional MLOperatorOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -7353,6 +8020,57 @@
             },
             {
               "type": "operation",
+              "name": "sign",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperatorOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-sign"
+            },
+            {
+              "type": "operation",
               "name": "sqrt",
               "idlType": {
                 "type": "return-type",
@@ -7452,6 +8170,192 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-tan"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand dequantizeLinear(MLOperand input,\n                             MLOperand scale,\n                             MLOperand zeroPoint,\n                             optional MLOperatorOptions options = {});\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "dequantizeLinear",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "scale",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "zeroPoint",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperatorOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-dequantizelinear"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand quantizeLinear(MLOperand input,\n                           MLOperand scale,\n                           MLOperand zeroPoint,\n                           optional MLOperatorOptions options = {});\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "quantizeLinear",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "scale",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "zeroPoint",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperatorOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-quantizelinear"
             }
           ],
           "extAttrs": [],
@@ -7683,6 +8587,160 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-gather"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand gatherElements(MLOperand input,\n                           MLOperand indices,\n                           optional MLGatherOptions options = {});\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "gatherElements",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "indices",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLGatherOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-gatherelements"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand gatherND(MLOperand input,\n                     MLOperand indices,\n                     optional MLOperatorOptions options = {});\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "gatherND",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "indices",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperatorOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-gathernd"
             }
           ],
           "extAttrs": [],
@@ -9955,6 +11013,253 @@
           "partial": true
         },
         {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand reverse(MLOperand input, optional MLReverseOptions options = {});\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "reverse",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLReverseOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reverse"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand scatterElements(MLOperand input,\n                            MLOperand indices,\n                            MLOperand updates,\n                            optional MLScatterOptions options = {});\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "scatterElements",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "indices",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "updates",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLScatterOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-scatterelements"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand scatterND(MLOperand input,\n                      MLOperand indices,\n                      MLOperand updates,\n                      optional MLOperatorOptions options = {});\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "scatterND",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "indices",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "updates",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperatorOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-scatternd"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
           "fragment": "partial interface MLGraphBuilder {\n  MLOperand sigmoid(MLOperand input, optional MLOperatorOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
@@ -10016,7 +11321,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand slice(MLOperand input,\n                  sequence<[EnforceRange] unsigned long> starts,\n                  sequence<[EnforceRange] unsigned long> sizes,\n                  optional MLOperatorOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand slice(MLOperand input,\n                  sequence<[EnforceRange] unsigned long> starts,\n                  sequence<[EnforceRange] unsigned long> sizes,\n                  optional MLSliceOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -10123,7 +11428,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "MLOperatorOptions"
+                    "idlType": "MLSliceOptions"
                   },
                   "default": {
                     "type": "dictionary"
@@ -10528,6 +11833,92 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-tanh"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand tile(MLOperand input,\n                 sequence<unsigned long> repetitions,\n                 optional MLOperatorOptions options = {});\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "tile",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "repetitions",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "sequence",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": [
+                      {
+                        "type": "argument-type",
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "unsigned long"
+                      }
+                    ]
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperatorOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-tile"
             }
           ],
           "extAttrs": [],
@@ -10949,6 +12340,32 @@
           "partial": true
         },
         {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits cumulativeSum;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "cumulativeSum",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-cumulativesum"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
           "fragment": "partial dictionary MLOpSupportLimits {\n  MLBinarySupportLimits add;\n  MLBinarySupportLimits sub;\n  MLBinarySupportLimits mul;\n  MLBinarySupportLimits div;\n  MLBinarySupportLimits max;\n  MLBinarySupportLimits min;\n  MLBinarySupportLimits pow;\n};",
           "type": "dictionary",
           "name": "MLOpSupportLimits",
@@ -11071,7 +12488,7 @@
           "partial": true
         },
         {
-          "fragment": "partial dictionary MLOpSupportLimits {\n  MLBinarySupportLimits equal;\n  MLBinarySupportLimits greater;\n  MLBinarySupportLimits greaterOrEqual;\n  MLBinarySupportLimits lesser;\n  MLBinarySupportLimits lesserOrEqual;\n  MLLogicalNotSupportLimits logicalNot;\n};",
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLBinarySupportLimits equal;\n  MLBinarySupportLimits notEqual;\n  MLBinarySupportLimits greater;\n  MLBinarySupportLimits greaterOrEqual;\n  MLBinarySupportLimits lesser;\n  MLBinarySupportLimits lesserOrEqual;\n  MLLogicalNotSupportLimits logicalNot;\n  MLBinarySupportLimits logicalAnd;\n  MLBinarySupportLimits logicalOr;\n  MLBinarySupportLimits logicalXor;\n};",
           "type": "dictionary",
           "name": "MLOpSupportLimits",
           "inheritance": null,
@@ -11091,6 +12508,22 @@
               "default": null,
               "required": false,
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-equal"
+            },
+            {
+              "type": "field",
+              "name": "notEqual",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBinarySupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-notequal"
             },
             {
               "type": "field",
@@ -11171,13 +12604,61 @@
               "default": null,
               "required": false,
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-logicalnot"
+            },
+            {
+              "type": "field",
+              "name": "logicalAnd",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBinarySupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-logicaland"
+            },
+            {
+              "type": "field",
+              "name": "logicalOr",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBinarySupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-logicalor"
+            },
+            {
+              "type": "field",
+              "name": "logicalXor",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBinarySupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-logicalxor"
             }
           ],
           "extAttrs": [],
           "partial": true
         },
         {
-          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits abs;\n  MLSingleInputSupportLimits ceil;\n  MLSingleInputSupportLimits cos;\n  MLSingleInputSupportLimits erf;\n  MLSingleInputSupportLimits exp;\n  MLSingleInputSupportLimits floor;\n  MLSingleInputSupportLimits identity;\n  MLSingleInputSupportLimits log;\n  MLSingleInputSupportLimits neg;\n  MLSingleInputSupportLimits reciprocal;\n  MLSingleInputSupportLimits sin;\n  MLSingleInputSupportLimits sqrt;\n  MLSingleInputSupportLimits tan;\n};",
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits abs;\n  MLSingleInputSupportLimits ceil;\n  MLSingleInputSupportLimits cos;\n  MLSingleInputSupportLimits erf;\n  MLSingleInputSupportLimits exp;\n  MLSingleInputSupportLimits floor;\n  MLSingleInputSupportLimits identity;\n  MLSingleInputSupportLimits log;\n  MLSingleInputSupportLimits neg;\n  MLSingleInputSupportLimits reciprocal;\n  MLSingleInputSupportLimits sin;\n  MLSingleInputSupportLimits sign;\n  MLSingleInputSupportLimits sqrt;\n  MLSingleInputSupportLimits tan;\n};",
           "type": "dictionary",
           "name": "MLOpSupportLimits",
           "inheritance": null,
@@ -11360,6 +12841,22 @@
             },
             {
               "type": "field",
+              "name": "sign",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-sign"
+            },
+            {
+              "type": "field",
               "name": "sqrt",
               "extAttrs": [],
               "idlType": {
@@ -11389,6 +12886,58 @@
               "default": null,
               "required": false,
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-tan"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLQuantizationSupportLimits dequantizeLinear;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "dequantizeLinear",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLQuantizationSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-dequantizelinear"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLQuantizationSupportLimits quantizeLinear;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "quantizeLinear",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLQuantizationSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-quantizelinear"
             }
           ],
           "extAttrs": [],
@@ -11467,6 +13016,58 @@
               "default": null,
               "required": false,
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-gather"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLGatherSupportLimits gatherElements;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "gatherElements",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLGatherSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-gatherelements"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLGatherSupportLimits gatherND;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "gatherND",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLGatherSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-gathernd"
             }
           ],
           "extAttrs": [],
@@ -12169,6 +13770,84 @@
           "partial": true
         },
         {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits reverse;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "reverse",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-reverse"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLScatterSupportLimits scatterElements;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "scatterElements",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLScatterSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-scatterelements"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLScatterSupportLimits scatterND;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "scatterND",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLScatterSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-scatternd"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
           "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits sigmoid;\n};",
           "type": "dictionary",
           "name": "MLOpSupportLimits",
@@ -12195,7 +13874,7 @@
           "partial": true
         },
         {
-          "fragment": "partial  dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits slice;\n};",
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits slice;\n};",
           "type": "dictionary",
           "name": "MLOpSupportLimits",
           "inheritance": null,
@@ -12351,6 +14030,32 @@
           "partial": true
         },
         {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits tile;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "tile",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-tile"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
           "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits transpose;\n};",
           "type": "dictionary",
           "name": "MLOpSupportLimits",
@@ -12487,6 +14192,7 @@
         "MLConv2dSupportLimits",
         "MLBinarySupportLimits",
         "MLLogicalNotSupportLimits",
+        "MLQuantizationSupportLimits",
         "MLGatherSupportLimits",
         "MLGemmSupportLimits",
         "MLGruSupportLimits",
@@ -12495,6 +14201,7 @@
         "MLLstmSupportLimits",
         "MLLstmCellSupportLimits",
         "MLPreluSupportLimits",
+        "MLScatterSupportLimits",
         "MLSplitSupportLimits",
         "MLWhereSupportLimits"
       ],
@@ -12536,6 +14243,7 @@
         "MLClampOptions",
         "MLConv2dOptions",
         "MLConvTranspose2dOptions",
+        "MLCumulativeSumOptions",
         "MLEluOptions",
         "MLGatherOptions",
         "MLGemmOptions",
@@ -12552,6 +14260,9 @@
         "MLPool2dOptions",
         "MLReduceOptions",
         "MLResample2dOptions",
+        "MLReverseOptions",
+        "MLScatterOptions",
+        "MLSliceOptions",
         "MLSplitOptions",
         "MLTransposeOptions",
         "MLTriangularOptions"
@@ -12589,7 +14300,13 @@
         "MLConvTranspose2dFilterOperandLayout",
         "MLOperand"
       ],
+      "MLCumulativeSumOptions": [
+        "MLOperatorOptions"
+      ],
       "MLLogicalNotSupportLimits": [
+        "MLSupportLimits"
+      ],
+      "MLQuantizationSupportLimits": [
         "MLSupportLimits"
       ],
       "MLEluOptions": [
@@ -12686,6 +14403,18 @@
       "MLResample2dOptions": [
         "MLOperatorOptions",
         "MLInterpolationMode"
+      ],
+      "MLReverseOptions": [
+        "MLOperatorOptions"
+      ],
+      "MLScatterOptions": [
+        "MLOperatorOptions"
+      ],
+      "MLScatterSupportLimits": [
+        "MLSupportLimits"
+      ],
+      "MLSliceOptions": [
+        "MLOperatorOptions"
       ],
       "MLSplitOptions": [
         "MLOperatorOptions"

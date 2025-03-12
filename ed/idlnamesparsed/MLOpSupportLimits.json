@@ -64,6 +64,13 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
+      "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits cumulativeSum;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
       "fragment": "partial dictionary MLOpSupportLimits {\n  MLBinarySupportLimits add;\n  MLBinarySupportLimits sub;\n  MLBinarySupportLimits mul;\n  MLBinarySupportLimits div;\n  MLBinarySupportLimits max;\n  MLBinarySupportLimits min;\n  MLBinarySupportLimits pow;\n};"
     },
     {
@@ -71,14 +78,28 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial dictionary MLOpSupportLimits {\n  MLBinarySupportLimits equal;\n  MLBinarySupportLimits greater;\n  MLBinarySupportLimits greaterOrEqual;\n  MLBinarySupportLimits lesser;\n  MLBinarySupportLimits lesserOrEqual;\n  MLLogicalNotSupportLimits logicalNot;\n};"
+      "fragment": "partial dictionary MLOpSupportLimits {\n  MLBinarySupportLimits equal;\n  MLBinarySupportLimits notEqual;\n  MLBinarySupportLimits greater;\n  MLBinarySupportLimits greaterOrEqual;\n  MLBinarySupportLimits lesser;\n  MLBinarySupportLimits lesserOrEqual;\n  MLLogicalNotSupportLimits logicalNot;\n  MLBinarySupportLimits logicalAnd;\n  MLBinarySupportLimits logicalOr;\n  MLBinarySupportLimits logicalXor;\n};"
     },
     {
       "spec": {
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits abs;\n  MLSingleInputSupportLimits ceil;\n  MLSingleInputSupportLimits cos;\n  MLSingleInputSupportLimits erf;\n  MLSingleInputSupportLimits exp;\n  MLSingleInputSupportLimits floor;\n  MLSingleInputSupportLimits identity;\n  MLSingleInputSupportLimits log;\n  MLSingleInputSupportLimits neg;\n  MLSingleInputSupportLimits reciprocal;\n  MLSingleInputSupportLimits sin;\n  MLSingleInputSupportLimits sqrt;\n  MLSingleInputSupportLimits tan;\n};"
+      "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits abs;\n  MLSingleInputSupportLimits ceil;\n  MLSingleInputSupportLimits cos;\n  MLSingleInputSupportLimits erf;\n  MLSingleInputSupportLimits exp;\n  MLSingleInputSupportLimits floor;\n  MLSingleInputSupportLimits identity;\n  MLSingleInputSupportLimits log;\n  MLSingleInputSupportLimits neg;\n  MLSingleInputSupportLimits reciprocal;\n  MLSingleInputSupportLimits sin;\n  MLSingleInputSupportLimits sign;\n  MLSingleInputSupportLimits sqrt;\n  MLSingleInputSupportLimits tan;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial dictionary MLOpSupportLimits {\n  MLQuantizationSupportLimits dequantizeLinear;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial dictionary MLOpSupportLimits {\n  MLQuantizationSupportLimits quantizeLinear;\n};"
     },
     {
       "spec": {
@@ -100,6 +121,20 @@
         "url": "https://www.w3.org/TR/webnn/"
       },
       "fragment": "partial dictionary MLOpSupportLimits {\n  MLGatherSupportLimits gather;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial dictionary MLOpSupportLimits {\n  MLGatherSupportLimits gatherElements;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial dictionary MLOpSupportLimits {\n  MLGatherSupportLimits gatherND;\n};"
     },
     {
       "spec": {
@@ -246,6 +281,27 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
+      "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits reverse;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial dictionary MLOpSupportLimits {\n  MLScatterSupportLimits scatterElements;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial dictionary MLOpSupportLimits {\n  MLScatterSupportLimits scatterND;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
       "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits sigmoid;\n};"
     },
     {
@@ -253,7 +309,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial  dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits slice;\n};"
+      "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits slice;\n};"
     },
     {
       "spec": {
@@ -289,6 +345,13 @@
         "url": "https://www.w3.org/TR/webnn/"
       },
       "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits tanh;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits tile;\n};"
     },
     {
       "spec": {

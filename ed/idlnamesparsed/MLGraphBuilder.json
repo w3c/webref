@@ -64,6 +64,13 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand cumulativeSum(MLOperand input,\n                          unsigned long axis,\n                          optional MLCumulativeSumOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
       "fragment": "partial interface MLGraphBuilder {\n  MLOperand add(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand sub(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand mul(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand div(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand max(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand min(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand pow(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n};"
     },
     {
@@ -71,14 +78,28 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand equal(MLOperand a,\n                  MLOperand b,\n                  optional MLOperatorOptions options = {});\n  MLOperand greater(MLOperand a,\n                    MLOperand b,\n                    optional MLOperatorOptions options = {});\n  MLOperand greaterOrEqual(MLOperand a,\n                           MLOperand b,\n                           optional MLOperatorOptions options = {});\n  MLOperand lesser(MLOperand a,\n                   MLOperand b,\n                   optional MLOperatorOptions options = {});\n  MLOperand lesserOrEqual(MLOperand a,\n                          MLOperand b,\n                          optional MLOperatorOptions options = {});\n  MLOperand logicalNot(MLOperand a, optional MLOperatorOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand equal(MLOperand a,\n                  MLOperand b,\n                  optional MLOperatorOptions options = {});\n  MLOperand notEqual(MLOperand a,\n                     MLOperand b,\n                     optional MLOperatorOptions options = {});\n  MLOperand greater(MLOperand a,\n                    MLOperand b,\n                    optional MLOperatorOptions options = {});\n  MLOperand greaterOrEqual(MLOperand a,\n                           MLOperand b,\n                           optional MLOperatorOptions options = {});\n  MLOperand lesser(MLOperand a,\n                   MLOperand b,\n                   optional MLOperatorOptions options = {});\n  MLOperand lesserOrEqual(MLOperand a,\n                          MLOperand b,\n                          optional MLOperatorOptions options = {});\n  MLOperand logicalNot(MLOperand a, optional MLOperatorOptions options = {});\n  MLOperand logicalAnd(MLOperand a,\n                       MLOperand b,\n                       optional MLOperatorOptions options = {});\n  MLOperand logicalOr(MLOperand a,\n                      MLOperand b,\n                      optional MLOperatorOptions options = {});\n  MLOperand logicalXor(MLOperand a,\n                       MLOperand b,\n                       optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand abs(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand ceil(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand cos(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand erf(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand exp(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand floor(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand identity(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand log(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand neg(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand reciprocal(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sin(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sqrt(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand tan(MLOperand input, optional MLOperatorOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand abs(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand ceil(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand cos(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand erf(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand exp(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand floor(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand identity(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand log(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand neg(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand reciprocal(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sin(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sign(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sqrt(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand tan(MLOperand input, optional MLOperatorOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand dequantizeLinear(MLOperand input,\n                             MLOperand scale,\n                             MLOperand zeroPoint,\n                             optional MLOperatorOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand quantizeLinear(MLOperand input,\n                           MLOperand scale,\n                           MLOperand zeroPoint,\n                           optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
@@ -100,6 +121,20 @@
         "url": "https://www.w3.org/TR/webnn/"
       },
       "fragment": "partial interface MLGraphBuilder {\n  MLOperand gather(MLOperand input,\n                   MLOperand indices,\n                   optional MLGatherOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand gatherElements(MLOperand input,\n                           MLOperand indices,\n                           optional MLGatherOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand gatherND(MLOperand input,\n                     MLOperand indices,\n                     optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
@@ -246,6 +281,27 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand reverse(MLOperand input, optional MLReverseOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand scatterElements(MLOperand input,\n                            MLOperand indices,\n                            MLOperand updates,\n                            optional MLScatterOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand scatterND(MLOperand input,\n                      MLOperand indices,\n                      MLOperand updates,\n                      optional MLOperatorOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
       "fragment": "partial interface MLGraphBuilder {\n  MLOperand sigmoid(MLOperand input, optional MLOperatorOptions options = {});\n};"
     },
     {
@@ -253,7 +309,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand slice(MLOperand input,\n                  sequence<[EnforceRange] unsigned long> starts,\n                  sequence<[EnforceRange] unsigned long> sizes,\n                  optional MLOperatorOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand slice(MLOperand input,\n                  sequence<[EnforceRange] unsigned long> starts,\n                  sequence<[EnforceRange] unsigned long> sizes,\n                  optional MLSliceOptions options = {});\n};"
     },
     {
       "spec": {
@@ -289,6 +345,13 @@
         "url": "https://www.w3.org/TR/webnn/"
       },
       "fragment": "partial interface MLGraphBuilder {\n  MLOperand tanh(MLOperand input, optional MLOperatorOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand tile(MLOperand input,\n                 sequence<unsigned long> repetitions,\n                 optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
