@@ -143,7 +143,19 @@
                 },
                 {
                   "case": "ArrayBufferView",
-                  "html": "<p>If <var>bufferSource</var>’s <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#table-the-typedarray-constructors\" id=\"ref-for-table-the-typedarray-constructors\">element type</a> matches <var>descriptor</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype\">dataType</a></code> according to <a href=\"https://webmachinelearning.github.io/webnn/#appendices-mloperanddatatype-arraybufferview-compatibility\">this table</a> return true, otherwise return false.</p>"
+                  "html": "",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>bufferSource</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Uint8Array\" id=\"ref-for-idl-Uint8Array\">Uint8Array</a></code> object, then return true.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>bufferSource</var> matches <var>descriptor</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype\">dataType</a></code> according to <a href=\"https://webmachinelearning.github.io/webnn/#appendices-mloperanddatatype-arraybufferview-compatibility\">this table</a>, then return true.</p>"
+                    },
+                    {
+                      "html": "<p>Return false.</p>"
+                    }
+                  ]
                 }
               ]
             }
@@ -318,7 +330,7 @@
                   "html": "<p>If that fails, then <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#queue-an-ml-task\" id=\"ref-for-queue-an-ml-task⑦\">queue an ML task</a> with <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⓪\">reject</a> <var>promise</var> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#unknownerror\" id=\"ref-for-unknownerror①\">UnknownError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code>, and abort these steps.</p>"
                 },
                 {
-                  "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#queue-an-ml-task\" id=\"ref-for-queue-an-ml-task⑧\">queue an ML task</a> with <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#arraybuffer-create\" id=\"ref-for-arraybuffer-create\">create</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\" id=\"ref-for-idl-ArrayBuffer③\">ArrayBuffer</a></code> <var>result</var> given <var>bytes</var> and <var>realm</var> and then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve③\">resolve</a> <var>promise</var> with <var>result</var>.</p>"
+                  "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#queue-an-ml-task\" id=\"ref-for-queue-an-ml-task⑧\">queue an ML task</a> with <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#arraybuffer-create\" id=\"ref-for-arraybuffer-create\">create</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\" id=\"ref-for-idl-ArrayBuffer④\">ArrayBuffer</a></code> <var>result</var> given <var>bytes</var> and <var>realm</var> and then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve③\">resolve</a> <var>promise</var> with <var>result</var>.</p>"
                 }
               ]
             },
@@ -530,7 +542,7 @@
           "html": "<p>Let <var>descriptor</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor①②\">MLOperandDescriptor</a></code>.</p>"
         },
         {
-          "html": "<p>Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype④\">dataType</a></code> to <var>dataType</var>.</p>"
+          "html": "<p>Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype⑤\">dataType</a></code> to <var>dataType</var>.</p>"
         },
         {
           "html": "<p>Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-shape\" id=\"ref-for-dom-mloperanddescriptor-shape③\">shape</a></code> to a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone\">clone</a> of <var>shape</var>.</p>"
@@ -558,7 +570,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>elementSize</var> be the <a data-link-type=\"dfn\" data-refhint-key=\"1621b862\" href=\"https://tc39.es/ecma262/#table-the-typedarray-constructors\" id=\"ref-for-table-the-typedarray-constructors①\">element size</a> of one of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#ArrayBufferView\" id=\"ref-for-ArrayBufferView③\">ArrayBufferView</a></code> types that matches <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype⑤\">dataType</a></code> according to <a href=\"https://webmachinelearning.github.io/webnn/#appendices-mloperanddatatype-arraybufferview-compatibility\">this table</a>.</p>"
+          "html": "<p>Let <var>elementSize</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#table-the-typedarray-constructors\" id=\"ref-for-table-the-typedarray-constructors\">element size</a> of one of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#ArrayBufferView\" id=\"ref-for-ArrayBufferView③\">ArrayBufferView</a></code> types that matches <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype⑥\">dataType</a></code> according to <a href=\"https://webmachinelearning.github.io/webnn/#appendices-mloperanddatatype-arraybufferview-compatibility\">this table</a>.</p>"
         },
         {
           "html": "<p>Return <var>elementLength</var> * <var>elementSize</var>.</p>"
@@ -4174,7 +4186,7 @@
           "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-shape\" id=\"ref-for-dom-mloperanddescriptor-shape①②\">shape</a></code> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⓪\">list</a> « <var>batchSize</var>, <var>hiddenSize</var> ».</p>"
         },
         {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype⑧\">dataType</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype⑨③\">dataType</a>.</p>"
+          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype⑨\">dataType</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype⑨③\">dataType</a>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -5106,7 +5118,7 @@
               ]
             },
             {
-              "html": "<p>Let <var>desc</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor②①\">creating an MLOperandDescriptor</a> given <var>inputDescriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype⑨\">dataType</a></code> and <var>outputShape</var>.</p>"
+              "html": "<p>Let <var>desc</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor②①\">creating an MLOperandDescriptor</a> given <var>inputDescriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype①⓪\">dataType</a></code> and <var>outputShape</var>.</p>"
             }
           ]
         },

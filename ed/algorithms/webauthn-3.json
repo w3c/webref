@@ -1008,13 +1008,13 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>effectiveDomain</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin⑥\">origin</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-effective-domain\" id=\"ref-for-concept-origin-effective-domain①⑥\">effective domain</a>. If <var>effectiveDomain</var> is\nnot a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#valid-domain\" id=\"ref-for-valid-domain⑤\">valid domain</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror⑧\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⑦\">DOMException</a></code>.</p>"
+          "html": "<p>Let <var>effectiveDomain</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin⑥\">origin</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-effective-domain\" id=\"ref-for-concept-origin-effective-domain①⑥\">effective domain</a>. If <var>effectiveDomain</var> is\nnot a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#valid-domain\" id=\"ref-for-valid-domain⑤\">valid domain</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror⑧\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⑤\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>If <var>rpId</var> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#is-a-registrable-domain-suffix-of-or-is-equal-to\" id=\"ref-for-is-a-registrable-domain-suffix-of-or-is-equal-to④\">is a registrable domain suffix of or is equal to</a> <var>effectiveDomain</var>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with\">a promise resolved with</a> undefined.</p>"
         },
         {
-          "html": "<p>If the client does not support <a href=\"https://w3c.github.io/webauthn/#sctn-related-origins\">related origin\nrequests</a>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror⑨\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⑧\">DOMException</a></code>.</p>"
+          "html": "<p>If the client does not support <a href=\"https://w3c.github.io/webauthn/#sctn-related-origins\">related origin\nrequests</a>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror⑨\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⑥\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
@@ -1027,7 +1027,7 @@
               "html": "<p>If the result of running the <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webauthn/#abstract-opdef-related-origins-validation-procedure\" id=\"ref-for-abstract-opdef-related-origins-validation-procedure④\">related origins validation procedure</a> with arguments <var>callerOrigin</var> and <var>rpId</var> is <code>true</code>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>p</var>.</p>"
             },
             {
-              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①⓪\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⑨\">DOMException</a></code>.</p>"
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①⓪\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⑦\">DOMException</a></code>.</p>"
             }
           ]
         },
@@ -1438,13 +1438,13 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If the fetch fails, the response does not have a content type of <code>application/json</code>, or does not have a status code (after following redirects) of 200, then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①①\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⓪\">DOMException</a></code>.</p>"
+              "html": "<p>If the fetch fails, the response does not have a content type of <code>application/json</code>, or does not have a status code (after following redirects) of 200, then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①①\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⑧\">DOMException</a></code>.</p>"
             },
             {
-              "html": "<p>If the body of the resource is not a valid JSON object, then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①②\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③①\">DOMException</a></code>.</p>"
+              "html": "<p>If the body of the resource is not a valid JSON object, then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①②\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⑨\">DOMException</a></code>.</p>"
             },
             {
-              "html": "<p>If the value of the <var>origins</var> property of the JSON object is missing, or is not an array of strings, then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①③\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③②\">DOMException</a></code>.</p>"
+              "html": "<p>If the value of the <var>origins</var> property of the JSON object is missing, or is not an array of strings, then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①③\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⓪\">DOMException</a></code>.</p>"
             }
           ]
         },
@@ -1542,7 +1542,7 @@
                     },
                     {
                       "case": "does not consent to create a new credential",
-                      "html": "<p>return an error code equivalent to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①④\">NotAllowedError</a></code>\" and terminate the operation.</p>"
+                      "html": "<p>return an error code equivalent to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①②\">NotAllowedError</a></code>\" and terminate the operation.</p>"
                     }
                   ]
                 }
@@ -1557,7 +1557,7 @@
           "html": "<p>If <var>requireUserVerification</var> is <code>true</code> and the authenticator cannot perform <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-verification\" id=\"ref-for-user-verification④②\">user verification</a>, return an error code\nequivalent to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#constrainterror\" id=\"ref-for-constrainterror③\">ConstraintError</a></code>\" and terminate the operation.</p>"
         },
         {
-          "html": "<a class=\"self-link\" href=\"https://w3c.github.io/webauthn/#op-makecred-step-user-consent\"></a> Collect an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authorization-gesture\" id=\"ref-for-authorization-gesture①⑧\">authorization gesture</a> confirming <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-consent\" id=\"ref-for-user-consent①⑧\">user consent</a> for creating a new credential.\n    The prompt for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authorization-gesture\" id=\"ref-for-authorization-gesture①⑨\">authorization gesture</a> is shown by the\n    authenticator if it has its own output capability, or by the user agent otherwise. The prompt SHOULD display <code><var>rpEntity</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredentialrpentity-id\" id=\"ref-for-dom-publickeycredentialrpentity-id①④\">id</a></code></code>, <code><var>rpEntity</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredentialentity-name\" id=\"ref-for-dom-publickeycredentialentity-name①③\">name</a></code></code>, <code><var>userEntity</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredentialentity-name\" id=\"ref-for-dom-publickeycredentialentity-name①④\">name</a></code></code> and <code><var>userEntity</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredentialuserentity-displayname\" id=\"ref-for-dom-publickeycredentialuserentity-displayname①①\">displayName</a></code></code>, if possible. \n     <p>If <var>requireUserVerification</var> is <code>true</code>, the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authorization-gesture\" id=\"ref-for-authorization-gesture②⓪\">authorization gesture</a> MUST include <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-verification\" id=\"ref-for-user-verification④③\">user verification</a>.</p>\n     <p>If <var>requireUserPresence</var> is <code>true</code>, the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authorization-gesture\" id=\"ref-for-authorization-gesture②①\">authorization gesture</a> MUST include a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#test-of-user-presence\" id=\"ref-for-test-of-user-presence⑨\">test of user presence</a>.</p>\n     <p>If the user does not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-consent\" id=\"ref-for-user-consent①⑨\">consent</a> or if <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-verification\" id=\"ref-for-user-verification④④\">user verification</a> fails, return an error code equivalent to\n    \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①⑤\">NotAllowedError</a></code>\" and terminate the operation.</p>"
+          "html": "<a class=\"self-link\" href=\"https://w3c.github.io/webauthn/#op-makecred-step-user-consent\"></a> Collect an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authorization-gesture\" id=\"ref-for-authorization-gesture①⑧\">authorization gesture</a> confirming <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-consent\" id=\"ref-for-user-consent①⑧\">user consent</a> for creating a new credential.\n    The prompt for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authorization-gesture\" id=\"ref-for-authorization-gesture①⑨\">authorization gesture</a> is shown by the\n    authenticator if it has its own output capability, or by the user agent otherwise. The prompt SHOULD display <code><var>rpEntity</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredentialrpentity-id\" id=\"ref-for-dom-publickeycredentialrpentity-id①④\">id</a></code></code>, <code><var>rpEntity</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredentialentity-name\" id=\"ref-for-dom-publickeycredentialentity-name①③\">name</a></code></code>, <code><var>userEntity</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredentialentity-name\" id=\"ref-for-dom-publickeycredentialentity-name①④\">name</a></code></code> and <code><var>userEntity</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredentialuserentity-displayname\" id=\"ref-for-dom-publickeycredentialuserentity-displayname①①\">displayName</a></code></code>, if possible. \n     <p>If <var>requireUserVerification</var> is <code>true</code>, the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authorization-gesture\" id=\"ref-for-authorization-gesture②⓪\">authorization gesture</a> MUST include <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-verification\" id=\"ref-for-user-verification④③\">user verification</a>.</p>\n     <p>If <var>requireUserPresence</var> is <code>true</code>, the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authorization-gesture\" id=\"ref-for-authorization-gesture②①\">authorization gesture</a> MUST include a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#test-of-user-presence\" id=\"ref-for-test-of-user-presence⑨\">test of user presence</a>.</p>\n     <p>If the user does not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-consent\" id=\"ref-for-user-consent①⑨\">consent</a> or if <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-verification\" id=\"ref-for-user-verification④④\">user verification</a> fails, return an error code equivalent to\n    \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①③\">NotAllowedError</a></code>\" and terminate the operation.</p>"
         },
         {
           "html": "Once the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authorization-gesture\" id=\"ref-for-authorization-gesture②②\">authorization gesture</a> has been completed and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-consent\" id=\"ref-for-user-consent②⓪\">user consent</a> has been obtained, generate a new credential object:",
@@ -1677,10 +1677,10 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove②⓪\">Remove</a> any items from <var>credentialOptions</var> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#public-key-credential-source-rpid\" id=\"ref-for-public-key-credential-source-rpid④\">rpId</a> is not equal to <var>rpId</var>.</p>"
         },
         {
-          "html": "<p>If <var>credentialOptions</var> is now empty, return an error code equivalent to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①⑥\">NotAllowedError</a></code>\" and terminate the operation.</p>"
+          "html": "<p>If <var>credentialOptions</var> is now empty, return an error code equivalent to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①④\">NotAllowedError</a></code>\" and terminate the operation.</p>"
         },
         {
-          "html": "<a class=\"self-link\" href=\"https://w3c.github.io/webauthn/#authenticatorGetAssertion-prompt-select-credential\"></a> Prompt the user to select a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#public-key-credential-source\" id=\"ref-for-public-key-credential-source⑥⑤\">public key credential source</a> <var>selectedCredential</var> from <var>credentialOptions</var>.\n    Collect an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authorization-gesture\" id=\"ref-for-authorization-gesture②③\">authorization gesture</a> confirming <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-consent\" id=\"ref-for-user-consent②①\">user consent</a> for using <var>selectedCredential</var>.\n    The prompt for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authorization-gesture\" id=\"ref-for-authorization-gesture②④\">authorization gesture</a> may be shown\n    by the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authenticator\" id=\"ref-for-authenticator②①①\">authenticator</a> if it has its own output capability, or by the user agent otherwise. \n     <p>If <var>requireUserVerification</var> is <code>true</code>, the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authorization-gesture\" id=\"ref-for-authorization-gesture②⑤\">authorization gesture</a> MUST include <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-verification\" id=\"ref-for-user-verification④⑤\">user verification</a>.</p>\n     <p>If <var>requireUserPresence</var> is <code>true</code>, the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authorization-gesture\" id=\"ref-for-authorization-gesture②⑥\">authorization gesture</a> MUST include a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#test-of-user-presence\" id=\"ref-for-test-of-user-presence①①\">test of user presence</a>.</p>\n     <p>If the user does not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-consent\" id=\"ref-for-user-consent②②\">consent</a>, return an error code equivalent to\n    \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①⑦\">NotAllowedError</a></code>\" and terminate the operation.</p>"
+          "html": "<a class=\"self-link\" href=\"https://w3c.github.io/webauthn/#authenticatorGetAssertion-prompt-select-credential\"></a> Prompt the user to select a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#public-key-credential-source\" id=\"ref-for-public-key-credential-source⑥⑤\">public key credential source</a> <var>selectedCredential</var> from <var>credentialOptions</var>.\n    Collect an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authorization-gesture\" id=\"ref-for-authorization-gesture②③\">authorization gesture</a> confirming <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-consent\" id=\"ref-for-user-consent②①\">user consent</a> for using <var>selectedCredential</var>.\n    The prompt for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authorization-gesture\" id=\"ref-for-authorization-gesture②④\">authorization gesture</a> may be shown\n    by the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authenticator\" id=\"ref-for-authenticator②①①\">authenticator</a> if it has its own output capability, or by the user agent otherwise. \n     <p>If <var>requireUserVerification</var> is <code>true</code>, the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authorization-gesture\" id=\"ref-for-authorization-gesture②⑤\">authorization gesture</a> MUST include <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-verification\" id=\"ref-for-user-verification④⑤\">user verification</a>.</p>\n     <p>If <var>requireUserPresence</var> is <code>true</code>, the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authorization-gesture\" id=\"ref-for-authorization-gesture②⑥\">authorization gesture</a> MUST include a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#test-of-user-presence\" id=\"ref-for-test-of-user-presence①①\">test of user presence</a>.</p>\n     <p>If the user does not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-consent\" id=\"ref-for-user-consent②②\">consent</a>, return an error code equivalent to\n    \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①⑤\">NotAllowedError</a></code>\" and terminate the operation.</p>"
         },
         {
           "html": "<p>Let <var>processedExtensions</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authenticator-extension-processing\" id=\"ref-for-authenticator-extension-processing①\">authenticator extension processing</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate⑥\">for each</a> supported <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#extension-identifier\" id=\"ref-for-extension-identifier⑨\">extension identifier</a> → <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authenticator-extension-input\" id=\"ref-for-authenticator-extension-input④\">authenticator extension input</a> in <var>extensions</var>.</p>"
@@ -2147,7 +2147,7 @@
           "html": "<p>Let <var>appId</var> be the extension input.</p>"
         },
         {
-          "html": "<p>Pass <var>facetId</var> and <var>appId</var> to the FIDO algorithm for <a data-link-type=\"dfn\" href=\"https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-appid-and-facets-v2.0-id-20180227.html#determining-if-a-caller-s-facetid-is-authorized-for-an-appid\" id=\"ref-for-determining-if-a-caller-s-facetid-is-authorized-for-an-appid①\">determining if a caller’s FacetID is authorized for an AppID</a>. If that algorithm rejects <var>appId</var> then return a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①④\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③③\">DOMException</a></code>.</p>"
+          "html": "<p>Pass <var>facetId</var> and <var>appId</var> to the FIDO algorithm for <a data-link-type=\"dfn\" href=\"https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-appid-and-facets-v2.0-id-20180227.html#determining-if-a-caller-s-facetid-is-authorized-for-an-appid\" id=\"ref-for-determining-if-a-caller-s-facetid-is-authorized-for-an-appid①\">determining if a caller’s FacetID is authorized for an AppID</a>. If that algorithm rejects <var>appId</var> then return a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①④\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③①\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>When <a href=\"https://w3c.github.io/webauthn/#allowCredentialDescriptorListCreation\">building allowCredentialDescriptorList</a>,\nif a U2F authenticator indicates that a credential is inapplicable (i.e. by\nreturning <code>SW_WRONG_DATA</code>) then the client MUST retry with the U2F application\nparameter set to the SHA-256 hash of <var>appId</var>. If this results in an applicable\ncredential, the client MUST include the credential in <var>allowCredentialDescriptorList</var>. The value of <var>appId</var> then replaces the <code>rpId</code> parameter of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authenticatorgetassertion\" id=\"ref-for-authenticatorgetassertion②⓪\">authenticatorGetAssertion</a>.</p>"
@@ -2175,7 +2175,7 @@
               "html": "<p>Let <var>appId</var> be the value of the extension input <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-appidexclude\" id=\"ref-for-dom-authenticationextensionsclientinputs-appidexclude\">appidExclude</a></code>.</p>"
             },
             {
-              "html": "<p>Pass <var>facetId</var> and <var>appId</var> to the FIDO algorithm for <a data-link-type=\"dfn\" href=\"https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-appid-and-facets-v2.0-id-20180227.html#determining-if-a-caller-s-facetid-is-authorized-for-an-appid\" id=\"ref-for-determining-if-a-caller-s-facetid-is-authorized-for-an-appid③\">determining if a caller’s FacetID is authorized for an AppID</a>. If the latter algorithm rejects <var>appId</var> then\nreturn a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①⑤\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③④\">DOMException</a></code> and terminate the <a href=\"https://w3c.github.io/webauthn/#sctn-createCredential\">creating a new credential</a> algorithm as well as these steps.</p>"
+              "html": "<p>Pass <var>facetId</var> and <var>appId</var> to the FIDO algorithm for <a data-link-type=\"dfn\" href=\"https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-appid-and-facets-v2.0-id-20180227.html#determining-if-a-caller-s-facetid-is-authorized-for-an-appid\" id=\"ref-for-determining-if-a-caller-s-facetid-is-authorized-for-an-appid③\">determining if a caller’s FacetID is authorized for an AppID</a>. If the latter algorithm rejects <var>appId</var> then\nreturn a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①⑤\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③②\">DOMException</a></code> and terminate the <a href=\"https://w3c.github.io/webauthn/#sctn-createCredential\">creating a new credential</a> algorithm as well as these steps.</p>"
             },
             {
               "html": "<p>Otherwise, continue with normal processing.</p>"
@@ -2210,7 +2210,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-evalbycredential\" id=\"ref-for-dom-authenticationextensionsprfinputs-evalbycredential①\">evalByCredential</a></code> is present, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑤\">DOMException</a></code> whose name is “<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror④\">NotSupportedError</a></code>”.</p>"
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-evalbycredential\" id=\"ref-for-dom-authenticationextensionsprfinputs-evalbycredential①\">evalByCredential</a></code> is present, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③③\">DOMException</a></code> whose name is “<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror④\">NotSupportedError</a></code>”.</p>"
         },
         {
           "html": "<p>Set <code>hmac-secret</code> to <code>true</code> in the authenticator extensions input.</p>"
@@ -2231,10 +2231,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-evalbycredential\" id=\"ref-for-dom-authenticationextensionsprfinputs-evalbycredential②\">evalByCredential</a></code> is not empty but <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-allowcredentials\" id=\"ref-for-dom-publickeycredentialrequestoptions-allowcredentials②⑤\">allowCredentials</a></code> is empty, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑥\">DOMException</a></code> whose name is “<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror⑤\">NotSupportedError</a></code>”.</p>"
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-evalbycredential\" id=\"ref-for-dom-authenticationextensionsprfinputs-evalbycredential②\">evalByCredential</a></code> is not empty but <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-allowcredentials\" id=\"ref-for-dom-publickeycredentialrequestoptions-allowcredentials②⑤\">allowCredentials</a></code> is empty, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③④\">DOMException</a></code> whose name is “<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror⑤\">NotSupportedError</a></code>”.</p>"
         },
         {
-          "html": "<p>If any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key\">key</a> in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-evalbycredential\" id=\"ref-for-dom-authenticationextensionsprfinputs-evalbycredential③\">evalByCredential</a></code> is the empty string, or is not a valid <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#base64url-encoding\" id=\"ref-for-base64url-encoding②⑤\">base64url encoding</a>, or does not equal the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptor-id\" id=\"ref-for-dom-publickeycredentialdescriptor-id①⑤\">id</a></code> of some element of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-allowcredentials\" id=\"ref-for-dom-publickeycredentialrequestoptions-allowcredentials②⑥\">allowCredentials</a></code> after performing <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#base64url-encoding\" id=\"ref-for-base64url-encoding②⑥\">base64url decoding</a>, then return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑦\">DOMException</a></code> whose name is “<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror\">SyntaxError</a></code>”.</p>"
+          "html": "<p>If any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key\">key</a> in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-evalbycredential\" id=\"ref-for-dom-authenticationextensionsprfinputs-evalbycredential③\">evalByCredential</a></code> is the empty string, or is not a valid <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#base64url-encoding\" id=\"ref-for-base64url-encoding②⑤\">base64url encoding</a>, or does not equal the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptor-id\" id=\"ref-for-dom-publickeycredentialdescriptor-id①⑤\">id</a></code> of some element of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-allowcredentials\" id=\"ref-for-dom-publickeycredentialrequestoptions-allowcredentials②⑥\">allowCredentials</a></code> after performing <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#base64url-encoding\" id=\"ref-for-base64url-encoding②⑥\">base64url decoding</a>, then return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑤\">DOMException</a></code> whose name is “<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror\">SyntaxError</a></code>”.</p>"
         },
         {
           "html": "<p>Initialize the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-prf\" id=\"ref-for-dom-authenticationextensionsclientoutputs-prf\">prf</a></code> extension output to an empty dictionary.</p>"
@@ -2280,7 +2280,7 @@
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>Return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑧\">DOMException</a></code> whose name is “<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror⑥\">NotSupportedError</a></code>”.</p>"
+              "html": "<p>Return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑥\">DOMException</a></code> whose name is “<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror⑥\">NotSupportedError</a></code>”.</p>"
             }
           ]
         },
@@ -2316,7 +2316,7 @@
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>Return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑨\">DOMException</a></code> whose name is “<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror⑦\">NotSupportedError</a></code>”.</p>"
+              "html": "<p>Return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑦\">DOMException</a></code> whose name is “<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror⑦\">NotSupportedError</a></code>”.</p>"
             }
           ]
         },
@@ -2325,7 +2325,7 @@
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>Return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④⓪\">DOMException</a></code> whose name is “<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror⑧\">NotSupportedError</a></code>”.</p>"
+              "html": "<p>Return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑧\">DOMException</a></code> whose name is “<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror⑧\">NotSupportedError</a></code>”.</p>"
             }
           ]
         },
@@ -2353,7 +2353,7 @@
               "rationale": "return",
               "steps": [
                 {
-                  "html": "<p>Return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④①\">DOMException</a></code> whose name is “<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror⑨\">NotSupportedError</a></code>”.</p>"
+                  "html": "<p>Return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑨\">DOMException</a></code> whose name is “<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror⑨\">NotSupportedError</a></code>”.</p>"
                 }
               ]
             },
@@ -2416,7 +2416,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps\" id=\"ref-for-remote-end-steps①\">remote end steps</a> are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps①\">remote end steps</a> are:",
       "rationale": "if",
       "steps": [
         {
@@ -2488,7 +2488,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps\" id=\"ref-for-remote-end-steps②\">remote end steps</a> are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps②\">remote end steps</a> are:",
       "rationale": "if",
       "steps": [
         {
@@ -2503,7 +2503,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps\" id=\"ref-for-remote-end-steps④\">remote end steps</a> are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps④\">remote end steps</a> are:",
       "rationale": "if",
       "steps": [
         {
@@ -2638,7 +2638,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps\" id=\"ref-for-remote-end-steps⑤\">remote end steps</a> are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps⑤\">remote end steps</a> are:",
       "rationale": "if",
       "steps": [
         {
@@ -2656,7 +2656,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps\" id=\"ref-for-remote-end-steps⑥\">remote end steps</a> are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps⑥\">remote end steps</a> are:",
       "rationale": "if",
       "steps": [
         {
@@ -2677,7 +2677,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps\" id=\"ref-for-remote-end-steps⑦\">remote end steps</a> are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps⑦\">remote end steps</a> are:",
       "rationale": "if",
       "steps": [
         {
@@ -2692,7 +2692,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps\" id=\"ref-for-remote-end-steps⑧\">remote end steps</a> are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps⑧\">remote end steps</a> are:",
       "rationale": "if",
       "steps": [
         {
@@ -2716,7 +2716,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#remote-end-steps\" id=\"ref-for-remote-end-steps①⓪\">remote end steps</a> are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps①⓪\">remote end steps</a> are:",
       "rationale": "if",
       "steps": [
         {

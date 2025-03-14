@@ -630,7 +630,7 @@
         "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderbranding"
       },
       "IdentityProviderAPIConfig": {
-        "fragment": "dictionary IdentityProviderAPIConfig {\n  required USVString accounts_endpoint;\n  required USVString client_metadata_endpoint;\n  required USVString id_assertion_endpoint;\n  required USVString login_url;\n  USVString disconnect_endpoint;\n  IdentityProviderBranding branding;\n};",
+        "fragment": "dictionary IdentityProviderAPIConfig {\n  required USVString accounts_endpoint;\n  required USVString client_metadata_endpoint;\n  required USVString id_assertion_endpoint;\n  required USVString login_url;\n  USVString disconnect_endpoint;\n  IdentityProviderBranding branding;\n  USVString account_label;\n};",
         "type": "dictionary",
         "name": "IdentityProviderAPIConfig",
         "inheritance": null,
@@ -730,6 +730,22 @@
             "default": null,
             "required": false,
             "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-branding"
+          },
+          {
+            "type": "field",
+            "name": "account_label",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-account_label"
           }
         ],
         "extAttrs": [],
@@ -737,7 +753,7 @@
         "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderapiconfig"
       },
       "IdentityProviderAccount": {
-        "fragment": "dictionary IdentityProviderAccount {\n  required USVString id;\n  required USVString name;\n  required USVString email;\n  USVString given_name;\n  USVString picture;\n  sequence<USVString> approved_clients;\n  sequence<DOMString> login_hints;\n  sequence<DOMString> domain_hints;\n};",
+        "fragment": "dictionary IdentityProviderAccount {\n  required USVString id;\n  required USVString name;\n  required USVString email;\n  USVString given_name;\n  USVString picture;\n  sequence<USVString> approved_clients;\n  sequence<DOMString> login_hints;\n  sequence<DOMString> domain_hints;\n  sequence<DOMString> label_hints;\n};",
         "type": "dictionary",
         "name": "IdentityProviderAccount",
         "inheritance": null,
@@ -896,6 +912,31 @@
             "default": null,
             "required": false,
             "href": "https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-domain_hints"
+          },
+          {
+            "type": "field",
+            "name": "label_hints",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-label_hints"
           }
         ],
         "extAttrs": [],

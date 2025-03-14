@@ -1,0 +1,344 @@
+{
+  "spec": {
+    "title": "Source map format specification",
+    "url": "https://tc39.es/ecma426/"
+  },
+  "headings": [
+    {
+      "id": "sec-scope",
+      "href": "https://tc39.es/ecma426/#sec-scope",
+      "title": "Scope",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "sec-conformance",
+      "href": "https://tc39.es/ecma426/#sec-conformance",
+      "title": "Conformance",
+      "level": 1,
+      "number": "2"
+    },
+    {
+      "id": "sec-references",
+      "href": "https://tc39.es/ecma426/#sec-references",
+      "title": "References",
+      "level": 1,
+      "number": "3"
+    },
+    {
+      "id": "sec-references-normative",
+      "href": "https://tc39.es/ecma426/#sec-references-normative",
+      "title": "Normative References",
+      "level": 2,
+      "number": "3.1"
+    },
+    {
+      "id": "sec-references-informative",
+      "href": "https://tc39.es/ecma426/#sec-references-informative",
+      "title": "Informative References",
+      "level": 2,
+      "number": "3.2"
+    },
+    {
+      "id": "sec-notational-conventions",
+      "href": "https://tc39.es/ecma426/#sec-notational-conventions",
+      "title": "Notational Conventions",
+      "level": 1,
+      "number": "4"
+    },
+    {
+      "id": "sec-algorithm-conventions",
+      "href": "https://tc39.es/ecma426/#sec-algorithm-conventions",
+      "title": "Algorithm Conventions",
+      "level": 2,
+      "number": "4.1"
+    },
+    {
+      "id": "sec-implicit-completions",
+      "href": "https://tc39.es/ecma426/#sec-implicit-completions",
+      "title": "Implicit Completions",
+      "level": 3,
+      "number": "4.1.1"
+    },
+    {
+      "id": "example-get-the-answer",
+      "href": "https://tc39.es/ecma426/#example-get-the-answer",
+      "title": "GetTheAnswer ( input )",
+      "level": 4,
+      "number": "4.1.1.1"
+    },
+    {
+      "id": "example-get-the-answer-2",
+      "href": "https://tc39.es/ecma426/#example-get-the-answer-2",
+      "title": "GetTheAnswer2 ( input )",
+      "level": 4,
+      "number": "4.1.1.2"
+    },
+    {
+      "id": "sec-optional-errors",
+      "href": "https://tc39.es/ecma426/#sec-optional-errors",
+      "title": "Optional Errors",
+      "level": 3,
+      "number": "4.1.2"
+    },
+    {
+      "id": "sec-terms-and-definitions",
+      "href": "https://tc39.es/ecma426/#sec-terms-and-definitions",
+      "title": "Terms and Definitions",
+      "level": 1,
+      "number": "5"
+    },
+    {
+      "id": "sec-json-values-utilities",
+      "href": "https://tc39.es/ecma426/#sec-json-values-utilities",
+      "title": "JSON values utilities",
+      "level": 1,
+      "number": "6"
+    },
+    {
+      "id": "sec-ParseJSON",
+      "href": "https://tc39.es/ecma426/#sec-ParseJSON",
+      "title": "ParseJSON ( string )",
+      "level": 2,
+      "number": "6.1"
+    },
+    {
+      "id": "sec-JSONObjectGet",
+      "href": "https://tc39.es/ecma426/#sec-JSONObjectGet",
+      "title": "JSONObjectGet ( object, key )",
+      "level": 2,
+      "number": "6.2"
+    },
+    {
+      "id": "sec-JSONArrayIterate",
+      "href": "https://tc39.es/ecma426/#sec-JSONArrayIterate",
+      "title": "JSONArrayIterate ( array )",
+      "level": 2,
+      "number": "6.3"
+    },
+    {
+      "id": "sec-StringSplit",
+      "href": "https://tc39.es/ecma426/#sec-StringSplit",
+      "title": "StringSplit ( string, separators )",
+      "level": 2,
+      "number": "6.4"
+    },
+    {
+      "id": "sec-source-map-format",
+      "href": "https://tc39.es/ecma426/#sec-source-map-format",
+      "title": "Source map format",
+      "level": 1,
+      "number": "7"
+    },
+    {
+      "id": "sec-decoding-source-maps",
+      "href": "https://tc39.es/ecma426/#sec-decoding-source-maps",
+      "title": "Decoding source maps",
+      "level": 2,
+      "number": "7.1"
+    },
+    {
+      "id": "sec-ParseSourceMap",
+      "href": "https://tc39.es/ecma426/#sec-ParseSourceMap",
+      "title": "ParseSourceMap ( string, baseURL )",
+      "level": 3,
+      "number": "7.1.1"
+    },
+    {
+      "id": "sec-DecodeSourceMap",
+      "href": "https://tc39.es/ecma426/#sec-DecodeSourceMap",
+      "title": "DecodeSourceMap ( json, baseURL )",
+      "level": 3,
+      "number": "7.1.2"
+    },
+    {
+      "id": "sec-GetOptionalString",
+      "href": "https://tc39.es/ecma426/#sec-GetOptionalString",
+      "title": "GetOptionalString ( object, key )",
+      "level": 4,
+      "number": "7.1.2.1"
+    },
+    {
+      "id": "sec-GetOptionalListOfStrings",
+      "href": "https://tc39.es/ecma426/#sec-GetOptionalListOfStrings",
+      "title": "GetOptionalListOfStrings ( object, key )",
+      "level": 4,
+      "number": "7.1.2.2"
+    },
+    {
+      "id": "sec-GetOptionalListOfOptionalStrings",
+      "href": "https://tc39.es/ecma426/#sec-GetOptionalListOfOptionalStrings",
+      "title": "GetOptionalListOfOptionalStrings ( object, key )",
+      "level": 4,
+      "number": "7.1.2.3"
+    },
+    {
+      "id": "sec-GetOptionalListOfArrayIndexes",
+      "href": "https://tc39.es/ecma426/#sec-GetOptionalListOfArrayIndexes",
+      "title": "GetOptionalListOfArrayIndexes ( object, key )",
+      "level": 4,
+      "number": "7.1.2.4"
+    },
+    {
+      "id": "sec-mappings",
+      "href": "https://tc39.es/ecma426/#sec-mappings",
+      "title": "Mappings structure",
+      "level": 2,
+      "number": "7.2"
+    },
+    {
+      "id": "sec-DecodeMappings",
+      "href": "https://tc39.es/ecma426/#sec-DecodeMappings",
+      "title": "DecodeMappings ( mappings, names, sources )",
+      "level": 3,
+      "number": "7.2.1"
+    },
+    {
+      "id": "sec-ValidateBase64VLQGroupings",
+      "href": "https://tc39.es/ecma426/#sec-ValidateBase64VLQGroupings",
+      "title": "ValidateBase64VLQGroupings ( groupings )",
+      "level": 4,
+      "number": "7.2.1.1"
+    },
+    {
+      "id": "sec-DecodeBase64VLQ",
+      "href": "https://tc39.es/ecma426/#sec-DecodeBase64VLQ",
+      "title": "DecodeBase64VLQ ( segment, position )",
+      "level": 4,
+      "number": "7.2.1.2"
+    },
+    {
+      "id": "ConsumeBase64ValueAt",
+      "href": "https://tc39.es/ecma426/#ConsumeBase64ValueAt",
+      "title": "ConsumeBase64ValueAt ( string, position )",
+      "level": 5,
+      "number": "7.2.1.2.1"
+    },
+    {
+      "id": "sec-mappings-for-generated-javascript-code",
+      "href": "https://tc39.es/ecma426/#sec-mappings-for-generated-javascript-code",
+      "title": "Mappings for generated JavaScript code",
+      "level": 3,
+      "number": "7.2.2"
+    },
+    {
+      "id": "sec-names-for-generated-javascript-code",
+      "href": "https://tc39.es/ecma426/#sec-names-for-generated-javascript-code",
+      "title": "Names for generated JavaScript code",
+      "level": 3,
+      "number": "7.2.3"
+    },
+    {
+      "id": "sec-sources",
+      "href": "https://tc39.es/ecma426/#sec-sources",
+      "title": "Resolving sources",
+      "level": 2,
+      "number": "7.3"
+    },
+    {
+      "id": "sec-DecodeSourceMapSources",
+      "href": "https://tc39.es/ecma426/#sec-DecodeSourceMapSources",
+      "title": "DecodeSourceMapSources ( baseURL, sourceRoot, sources, sourcesContent, ignoreList )",
+      "level": 3,
+      "number": "7.3.1"
+    },
+    {
+      "id": "sec-extensions",
+      "href": "https://tc39.es/ecma426/#sec-extensions",
+      "title": "Extensions",
+      "level": 2,
+      "number": "7.4"
+    },
+    {
+      "id": "sec-index-source-map",
+      "href": "https://tc39.es/ecma426/#sec-index-source-map",
+      "title": "Index source map",
+      "level": 1,
+      "number": "8"
+    },
+    {
+      "id": "sec-DecodeIndexSourceMap",
+      "href": "https://tc39.es/ecma426/#sec-DecodeIndexSourceMap",
+      "title": "DecodeIndexSourceMap ( json, baseURL )",
+      "level": 2,
+      "number": "8.1"
+    },
+    {
+      "id": "sec-GeneratedPositionLessThan",
+      "href": "https://tc39.es/ecma426/#sec-GeneratedPositionLessThan",
+      "title": "GeneratedPositionLessThan ( a, b )",
+      "level": 3,
+      "number": "8.1.1"
+    },
+    {
+      "id": "sec-retrieving-source-maps",
+      "href": "https://tc39.es/ecma426/#sec-retrieving-source-maps",
+      "title": "Retrieving source maps",
+      "level": 1,
+      "number": "9"
+    },
+    {
+      "id": "sec-linking-generated-code",
+      "href": "https://tc39.es/ecma426/#sec-linking-generated-code",
+      "title": "Linking generated code to source maps",
+      "level": 2,
+      "number": "9.1"
+    },
+    {
+      "id": "sec-linking-http-header",
+      "href": "https://tc39.es/ecma426/#sec-linking-http-header",
+      "title": "Linking through HTTP headers",
+      "level": 3,
+      "number": "9.1.1"
+    },
+    {
+      "id": "sec-linking-inline",
+      "href": "https://tc39.es/ecma426/#sec-linking-inline",
+      "title": "Linking through inline annotations",
+      "level": 3,
+      "number": "9.1.2"
+    },
+    {
+      "id": "sec-JavaScriptExtractSourceMapURL",
+      "href": "https://tc39.es/ecma426/#sec-JavaScriptExtractSourceMapURL",
+      "title": "JavaScriptExtractSourceMapURL ( source )",
+      "level": 4,
+      "number": "9.1.2.1"
+    },
+    {
+      "id": "sec-MatchSourceMapURL",
+      "href": "https://tc39.es/ecma426/#sec-MatchSourceMapURL",
+      "title": "MatchSourceMapURL ( comment )",
+      "level": 5,
+      "number": "9.1.2.1.1"
+    },
+    {
+      "id": "sec-CSSExtractSourceMapURL",
+      "href": "https://tc39.es/ecma426/#sec-CSSExtractSourceMapURL",
+      "title": "CSSExtractSourceMapURL ( source )",
+      "level": 4,
+      "number": "9.1.2.2"
+    },
+    {
+      "id": "sec-WebAssemblyExtractSourceMapURL",
+      "href": "https://tc39.es/ecma426/#sec-WebAssemblyExtractSourceMapURL",
+      "title": "WebAssemblyExtractSourceMapURL ( bytes )",
+      "level": 4,
+      "number": "9.1.2.3"
+    },
+    {
+      "id": "sec-fetching-source-maps",
+      "href": "https://tc39.es/ecma426/#sec-fetching-source-maps",
+      "title": "Fetching source maps",
+      "level": 2,
+      "number": "9.2"
+    },
+    {
+      "id": "sec-FetchSourceMap",
+      "href": "https://tc39.es/ecma426/#sec-FetchSourceMap",
+      "title": "FetchSourceMap ( url )",
+      "level": 3,
+      "number": "9.2.1"
+    }
+  ]
+}

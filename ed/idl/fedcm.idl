@@ -78,6 +78,7 @@ dictionary IdentityProviderAPIConfig {
   required USVString login_url;
   USVString disconnect_endpoint;
   IdentityProviderBranding branding;
+  USVString account_label;
 };
 
 dictionary IdentityProviderAccount {
@@ -89,6 +90,7 @@ dictionary IdentityProviderAccount {
   sequence<USVString> approved_clients;
   sequence<DOMString> login_hints;
   sequence<DOMString> domain_hints;
+  sequence<DOMString> label_hints;
 };
 dictionary IdentityProviderAccountList {
   sequence<IdentityProviderAccount> accounts;

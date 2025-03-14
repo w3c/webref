@@ -1,0 +1,556 @@
+{
+  "spec": {
+    "title": "Source map format specification",
+    "url": "https://tc39.es/ecma426/"
+  },
+  "dfns": [
+    {
+      "id": "sec-terms-and-definitions-generated-code",
+      "href": "https://tc39.es/ecma426/#sec-terms-and-definitions-generated-code",
+      "linkingText": [
+        "generated code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terms-and-definitions",
+        "href": "https://tc39.es/ecma426/#sec-terms-and-definitions",
+        "title": "Terms and Definitions",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "sec-terms-and-definitions-original-source",
+      "href": "https://tc39.es/ecma426/#sec-terms-and-definitions-original-source",
+      "linkingText": [
+        "original source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terms-and-definitions",
+        "href": "https://tc39.es/ecma426/#sec-terms-and-definitions",
+        "title": "Terms and Definitions",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "sec-terms-and-definitions-base64-vlq",
+      "href": "https://tc39.es/ecma426/#sec-terms-and-definitions-base64-vlq",
+      "linkingText": [
+        "base64 VLQ"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terms-and-definitions",
+        "href": "https://tc39.es/ecma426/#sec-terms-and-definitions",
+        "title": "Terms and Definitions",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "sec-terms-and-definitions-source-mapping-url",
+      "href": "https://tc39.es/ecma426/#sec-terms-and-definitions-source-mapping-url",
+      "linkingText": [
+        "source map URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terms-and-definitions",
+        "href": "https://tc39.es/ecma426/#sec-terms-and-definitions",
+        "title": "Terms and Definitions",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "sec-terms-and-definitions-colun",
+      "href": "https://tc39.es/ecma426/#sec-terms-and-definitions-colun",
+      "linkingText": [
+        "column"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terms-and-definitions",
+        "href": "https://tc39.es/ecma426/#sec-terms-and-definitions",
+        "title": "Terms and Definitions",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "type-json-value",
+      "href": "https://tc39.es/ecma426/#type-json-value",
+      "linkingText": [
+        "JSON value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-json-values-utilities",
+        "href": "https://tc39.es/ecma426/#sec-json-values-utilities",
+        "title": "JSON values utilities",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "type-json-object",
+      "href": "https://tc39.es/ecma426/#type-json-object",
+      "linkingText": [
+        "JSON object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-json-values-utilities",
+        "href": "https://tc39.es/ecma426/#sec-json-values-utilities",
+        "title": "JSON values utilities",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "type-json-array",
+      "href": "https://tc39.es/ecma426/#type-json-array",
+      "linkingText": [
+        "JSON array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-json-values-utilities",
+        "href": "https://tc39.es/ecma426/#sec-json-values-utilities",
+        "title": "JSON values utilities",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "json-version",
+      "href": "https://tc39.es/ecma426/#json-version",
+      "linkingText": [
+        "version field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-source-map-format",
+        "href": "https://tc39.es/ecma426/#sec-source-map-format",
+        "title": "Source map format",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "json-file",
+      "href": "https://tc39.es/ecma426/#json-file",
+      "linkingText": [
+        "file field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-source-map-format",
+        "href": "https://tc39.es/ecma426/#sec-source-map-format",
+        "title": "Source map format",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "json-sourceRoot",
+      "href": "https://tc39.es/ecma426/#json-sourceRoot",
+      "linkingText": [
+        "sourceRoot field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-source-map-format",
+        "href": "https://tc39.es/ecma426/#sec-source-map-format",
+        "title": "Source map format",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "json-sources",
+      "href": "https://tc39.es/ecma426/#json-sources",
+      "linkingText": [
+        "sources field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-source-map-format",
+        "href": "https://tc39.es/ecma426/#sec-source-map-format",
+        "title": "Source map format",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "json-sourcesContent",
+      "href": "https://tc39.es/ecma426/#json-sourcesContent",
+      "linkingText": [
+        "sourcesContent field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-source-map-format",
+        "href": "https://tc39.es/ecma426/#sec-source-map-format",
+        "title": "Source map format",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "json-names",
+      "href": "https://tc39.es/ecma426/#json-names",
+      "linkingText": [
+        "names field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-source-map-format",
+        "href": "https://tc39.es/ecma426/#sec-source-map-format",
+        "title": "Source map format",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "json-mappings",
+      "href": "https://tc39.es/ecma426/#json-mappings",
+      "linkingText": [
+        "mappings field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-source-map-format",
+        "href": "https://tc39.es/ecma426/#sec-source-map-format",
+        "title": "Source map format",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "json-ignoreList",
+      "href": "https://tc39.es/ecma426/#json-ignoreList",
+      "linkingText": [
+        "ignoreList field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-source-map-format",
+        "href": "https://tc39.es/ecma426/#sec-source-map-format",
+        "title": "Source map format",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "decoded-source-map-record",
+      "href": "https://tc39.es/ecma426/#decoded-source-map-record",
+      "linkingText": [
+        "Decoded Source Map Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-decoding-source-maps",
+        "href": "https://tc39.es/ecma426/#sec-decoding-source-maps",
+        "title": "Decoding source maps",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "decoded-source-record",
+      "href": "https://tc39.es/ecma426/#decoded-source-record",
+      "linkingText": [
+        "Decoded Source Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-decoding-source-maps",
+        "href": "https://tc39.es/ecma426/#sec-decoding-source-maps",
+        "title": "Decoding source maps",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "decoded-mapping-record",
+      "href": "https://tc39.es/ecma426/#decoded-mapping-record",
+      "linkingText": [
+        "Decoded Mapping Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-mappings",
+        "href": "https://tc39.es/ecma426/#sec-mappings",
+        "title": "Mappings structure",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "json-sections",
+      "href": "https://tc39.es/ecma426/#json-sections",
+      "linkingText": [
+        "sections field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-index-source-map",
+        "href": "https://tc39.es/ecma426/#sec-index-source-map",
+        "title": "Index source map",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "json-sections-offset",
+      "href": "https://tc39.es/ecma426/#json-sections-offset",
+      "linkingText": [
+        "offset field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-index-source-map",
+        "href": "https://tc39.es/ecma426/#sec-index-source-map",
+        "title": "Index source map",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "json-sections-map",
+      "href": "https://tc39.es/ecma426/#json-sections-map",
+      "linkingText": [
+        "map field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-index-source-map",
+        "href": "https://tc39.es/ecma426/#sec-index-source-map",
+        "title": "Index source map",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "source-origin",
+      "href": "https://tc39.es/ecma426/#source-origin",
+      "linkingText": [
+        "source origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-linking-generated-code",
+        "href": "https://tc39.es/ecma426/#sec-linking-generated-code",
+        "title": "Linking generated code to source maps",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "umambiguous-linking",
+      "href": "https://tc39.es/ecma426/#umambiguous-linking",
+      "linkingText": [
+        "unambiguously links to a source map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-linking-inline",
+        "href": "https://tc39.es/ecma426/#sec-linking-inline",
+        "title": "Linking through inline annotations",
+        "number": "9.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sec-JavaScriptExtractSourceMapURL-through-parsing",
+      "href": "https://tc39.es/ecma426/#sec-JavaScriptExtractSourceMapURL-through-parsing",
+      "linkingText": [
+        "through parsing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-JavaScriptExtractSourceMapURL",
+        "href": "https://tc39.es/ecma426/#sec-JavaScriptExtractSourceMapURL",
+        "title": "JavaScriptExtractSourceMapURL ( source )",
+        "number": "9.1.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sec-JavaScriptExtractSourceMapURL-without-parsing",
+      "href": "https://tc39.es/ecma426/#sec-JavaScriptExtractSourceMapURL-without-parsing",
+      "linkingText": [
+        "without parsing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-JavaScriptExtractSourceMapURL",
+        "href": "https://tc39.es/ecma426/#sec-JavaScriptExtractSourceMapURL",
+        "title": "JavaScriptExtractSourceMapURL ( source )",
+        "number": "9.1.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "biblio-give-your-eval-a-name",
+      "href": "https://tc39.es/ecma426/#biblio-give-your-eval-a-name",
+      "linkingText": [
+        "Give your eval a name with //@ sourceURL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-bibliography",
+        "href": "https://tc39.es/ecma426/#sec-bibliography",
+        "title": "D Bibliography"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "biblio-source-map-v2",
+      "href": "https://tc39.es/ecma426/#biblio-source-map-v2",
+      "linkingText": [
+        "Source Map Revision 2 Proposal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-bibliography",
+        "href": "https://tc39.es/ecma426/#sec-bibliography",
+        "title": "D Bibliography"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "biblio-vlq",
+      "href": "https://tc39.es/ecma426/#biblio-vlq",
+      "linkingText": [
+        "Variable-length quantity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-bibliography",
+        "href": "https://tc39.es/ecma426/#sec-bibliography",
+        "title": "D Bibliography"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}
