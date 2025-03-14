@@ -68,6 +68,14 @@ const supersededBy = {
   // specification in the css-backgrounds series.
   'css-backgrounds': 'css-borders',
 
+  // css-forms-1 took over the `::file-selector-button`` pseudo-element from
+  // css-pseudo-4, see initial commit at:
+  // https://github.com/w3c/csswg-drafts/commit/7460e21886a7d7d3ee8b1b5c2dd6dd35973c578a
+  // The CSS Forms spec still says it's an unofficial draft as of March 2025,
+  // but spec is in good standing in browser-specs because some parts already
+  // ship in Chrome.
+  'css-pseudo': 'css-forms',
+
   // The Selectors spec defines the ":fullscreen" selector, which is refined in
   // Fullscreen. The Fullscreen definition should probably be flagged as non
   // exported. Or turned into a reference to the Selectors spec.
