@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-03-15T12:50:15.746Z",
+  "date": "2025-03-15T18:43:34.823Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -31,7 +31,7 @@
   },
   "stats": {
     "crawled": 661,
-    "errors": 1
+    "errors": 2
   },
   "crawler": "reffy-18.4.2",
   "results": [
@@ -1216,7 +1216,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-env-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Mar 2025 18:27:04 GMT"
+        "lastModified": "Thu, 13 Mar 2025 18:27:06 GMT"
       },
       "generator": "bikeshed",
       "date": "30 January 2025",
@@ -21688,7 +21688,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-nav-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Mar 2025 18:27:04 GMT"
+        "lastModified": "Thu, 13 Mar 2025 18:27:06 GMT"
       },
       "generator": "bikeshed",
       "date": "29 July 2024",
@@ -28714,7 +28714,8 @@
       "dfns": "dfns/mathml4.json",
       "headings": "headings/mathml4.json",
       "ids": "ids/mathml4.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://w3c.github.io/mathml/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:387:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 492)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:408:21)"
     },
     {
       "url": "https://www.w3.org/TR/media-capabilities/",
