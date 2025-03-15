@@ -1491,6 +1491,9 @@
           "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoencoder-state-slot\" id=\"ref-for-dom-videoencoder-state-slot③\">[[state]]</a></code> to <code>\"configured\"</code>.</p>"
         },
         {
+          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoencoder-active-orientation-slot\" id=\"ref-for-dom-videoencoder-active-orientation-slot\">[[active orientation]]</a></code> to <code>null</code>.</p>"
+        },
+        {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#enqueues-a-control-message\" id=\"ref-for-enqueues-a-control-message①⑥\">Queue a control message</a> to configure the encoder using <var>config</var>.</p>"
         },
         {
@@ -1553,6 +1556,12 @@
         },
         {
           "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoencoder-state-slot\" id=\"ref-for-dom-videoencoder-state-slot④\">[[state]]</a></code> is not <code>\"configured\"</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①③\">InvalidStateError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoencoder-active-orientation-slot\" id=\"ref-for-dom-videoencoder-active-orientation-slot①\">[[active orientation]]</a></code> is not <code>null</code> and does not match <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot①\">[[rotation]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot①\">[[flip]]</a></code> throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dataerror\" id=\"ref-for-dataerror④\">DataError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoencoder-active-orientation-slot\" id=\"ref-for-dom-videoencoder-active-orientation-slot②\">[[active orientation]]</a></code> is <code>null</code>, set it to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot②\">[[rotation]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot②\">[[flip]]</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>frameClone</var> hold the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#clone-videoframe\" id=\"ref-for-clone-videoframe\">Clone VideoFrame</a> algorithm with <var>frame</var>.</p>"
@@ -1779,10 +1788,10 @@
                   "html": "<p>Let <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedvideochunkinit-type\" id=\"ref-for-dom-encodedvideochunkinit-type\">type</a></code> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#enumdef-encodedvideochunktype\" id=\"ref-for-enumdef-encodedvideochunktype\">EncodedVideoChunkType</a></code> of <var>output</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedvideochunkinit-timestamp\" id=\"ref-for-dom-encodedvideochunkinit-timestamp\">timestamp</a></code> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-timestamp-slot\" id=\"ref-for-dom-videoframe-timestamp-slot\">[[timestamp]]</a></code> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤\">VideoFrame</a></code> associated with <var>output</var>.</p>"
+                  "html": "<p>Let <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedvideochunkinit-timestamp\" id=\"ref-for-dom-encodedvideochunkinit-timestamp\">timestamp</a></code> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-timestamp-slot\" id=\"ref-for-dom-videoframe-timestamp-slot\">[[timestamp]]</a></code> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥\">VideoFrame</a></code> associated with <var>output</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedvideochunkinit-duration\" id=\"ref-for-dom-encodedvideochunkinit-duration\">duration</a></code> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-duration-slot\" id=\"ref-for-dom-videoframe-duration-slot\">[[duration]]</a></code> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥\">VideoFrame</a></code> associated\nwith <var>output</var>.</p>"
+                  "html": "<p>Let <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedvideochunkinit-duration\" id=\"ref-for-dom-encodedvideochunkinit-duration\">duration</a></code> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-duration-slot\" id=\"ref-for-dom-videoframe-duration-slot\">[[duration]]</a></code> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑦\">VideoFrame</a></code> associated\nwith <var>output</var>.</p>"
                 }
               ]
             },
@@ -1813,6 +1822,12 @@
                 },
                 {
                   "html": "<p>Assign <code>encoderConfig.displayHeight</code> to <code>outputConfig.displayAspectHeight</code>.</p>"
+                },
+                {
+                  "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot③\">[[rotation]]</a></code> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑧\">VideoFrame</a></code> associated with <var>output</var> to <code>outputConfig.rotation</code>.</p>"
+                },
+                {
+                  "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot③\">[[flip]]</a></code> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑨\">VideoFrame</a></code> associated with <var>output</var> to <code>outputConfig.flip</code>.</p>"
                 },
                 {
                   "html": "<p>Assign the remaining keys of <code>outputConfig</code> as determined by <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoencoder-codec-implementation-slot\" id=\"ref-for-dom-videoencoder-codec-implementation-slot①①\">[[codec implementation]]</a></code>. The User Agent <em class=\"rfc2119\">MUST</em> ensure that the configuration is\ncompletely described such that <var>outputConfig</var> could be used to\ncorrectly decode <var>output</var>.</p>"
@@ -2289,7 +2304,7 @@
       ]
     },
     {
-      "html": "Serializing an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata①①\">AudioData</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe②④\">VideoFrame</a></code> effectively clones (as in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-clone\" id=\"ref-for-dom-videoframe-clone①\">clone()</a></code>) the source object, resulting in two objects that\nreference the same <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource①①\">media resource</a>. Authors <em class=\"rfc2119\">MAY</em> use\nthis facility to clone an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata①②\">AudioData</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe②⑤\">VideoFrame</a></code> to another realm\nwithout copying the underlying <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource①②\">media resource</a>.",
+      "html": "Serializing an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata①①\">AudioData</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe②⑦\">VideoFrame</a></code> effectively clones (as in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-clone\" id=\"ref-for-dom-videoframe-clone①\">clone()</a></code>) the source object, resulting in two objects that\nreference the same <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource①①\">media resource</a>. Authors <em class=\"rfc2119\">MAY</em> use\nthis facility to clone an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata①②\">AudioData</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe②⑧\">VideoFrame</a></code> to another realm\nwithout copying the underlying <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource①②\">media resource</a>.",
       "rationale": "if",
       "steps": [
         {
@@ -2680,7 +2695,7 @@
           "html": "<p>If <var>image</var> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#the-image-argument-is-not-origin-clean\" id=\"ref-for-the-image-argument-is-not-origin-clean\">is not origin-clean</a>, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⓪\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe③⑧\">VideoFrame</a></code>.</p>"
+          "html": "<p>Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④①\">VideoFrame</a></code>.</p>"
         },
         {
           "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://svgwg.org/svg2-draft/embedded.html#InterfaceSVGImageElement\" id=\"ref-for-InterfaceSVGImageElement\">SVGImageElement</a></code>",
@@ -2717,7 +2732,7 @@
                   "html": "<p>If <var>image</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#dom-media-networkstate\" id=\"ref-for-dom-media-networkstate\">networkState</a></code> attribute is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#dom-media-network_empty\" id=\"ref-for-dom-media-network_empty\">NETWORK_EMPTY</a></code>, then throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②①\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③②\">DOMException</a></code>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>currentPlaybackFrame</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④⓪\">VideoFrame</a></code> at the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#current-playback-position\" id=\"ref-for-current-playback-position\">current playback position</a>.</p>"
+                  "html": "<p>Let <var>currentPlaybackFrame</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④③\">VideoFrame</a></code> at the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#current-playback-position\" id=\"ref-for-current-playback-position\">current playback position</a>.</p>"
                 },
                 {
                   "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframeinit-metadata\" id=\"ref-for-dom-videoframeinit-metadata\">metadata</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">exist</a> in <var>init</var>,\nassign <var>currentPlaybackFrame</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-metadata-slot\" id=\"ref-for-dom-videoframe-metadata-slot\">[[metadata]]</a></code> to it.</p>"
@@ -2746,7 +2761,7 @@
               ]
             },
             {
-              "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④①\">VideoFrame</a></code>",
+              "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④④\">VideoFrame</a></code>",
               "rationale": "run",
               "steps": [
                 {
@@ -2852,7 +2867,7 @@
           "html": "<p>Let <var>resourceVisibleTop</var> be the top offset for the visible rectangle of <var>resource</var>.</p>"
         },
         {
-          "html": "Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④②\">VideoFrame</a></code> object initialized as follows:",
+          "html": "Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④⑤\">VideoFrame</a></code> object initialized as follows:",
           "rationale": "assign",
           "steps": [
             {
@@ -2889,10 +2904,10 @@
               ]
             },
             {
-              "html": "<p>Assign the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-parse-rotation\" id=\"ref-for-videoframe-parse-rotation\">Parse Rotation</a> algorithm,\nwith <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-rotation\" id=\"ref-for-dom-videoframebufferinit-rotation\">rotation</a></code>, to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot\">[[rotation]]</a></code>.</p>"
+              "html": "<p>Assign the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-parse-rotation\" id=\"ref-for-videoframe-parse-rotation\">Parse Rotation</a> algorithm,\nwith <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-rotation\" id=\"ref-for-dom-videoframebufferinit-rotation\">rotation</a></code>, to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot④\">[[rotation]]</a></code>.</p>"
             },
             {
-              "html": "<p>Assign <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-flip\" id=\"ref-for-dom-videoframebufferinit-flip\">flip</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot\">[[flip]]</a></code>.</p>"
+              "html": "<p>Assign <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-flip\" id=\"ref-for-dom-videoframebufferinit-flip\">flip</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot④\">[[flip]]</a></code>.</p>"
             },
             {
               "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-displaywidth\" id=\"ref-for-dom-videoframebufferinit-displaywidth\">displayWidth</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-displayheight\" id=\"ref-for-dom-videoframebufferinit-displayheight\">displayHeight</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exist</a> in <var>init</var>, assign\nthem to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot\">[[display width]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot\">[[display height]]</a></code> respectively.</p>"
@@ -2902,7 +2917,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot①\">[[rotation]]</a></code> is equal to <code>0</code> or <code>180</code>:",
+                  "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot⑤\">[[rotation]]</a></code> is equal to <code>0</code> or <code>180</code>:",
                   "rationale": "assign",
                   "steps": [
                     {
@@ -3184,7 +3199,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤①\">VideoFrame</a></code>, constructed as follows:",
+          "html": "Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤④\">VideoFrame</a></code>, constructed as follows:",
           "rationale": "assign",
           "steps": [
             {
@@ -3354,7 +3369,7 @@
           "html": "<p>Let <var>defaultVisibleRect</var> be the result of performing the getter steps\nfor <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-visiblerect\" id=\"ref-for-dom-videoframe-visiblerect③\">visibleRect</a></code> on <var>otherFrame</var>.</p>"
         },
         {
-          "html": "<p>Let <var>baseRotation</var> and <var>baseFlip</var> be <var>otherFrame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot③\">[[rotation]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot②\">[[flip]]</a></code>, respectively.</p>"
+          "html": "<p>Let <var>baseRotation</var> and <var>baseFlip</var> be <var>otherFrame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot⑦\">[[rotation]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot⑥\">[[flip]]</a></code>, respectively.</p>"
         },
         {
           "html": "<p>Let <var>defaultDisplayWidth</var> and <var>defaultDisplayHeight</var> be <var>otherFrame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot④\">[[display width]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot④\">[[display height]]</a></code>,\nrespectively.</p>"
@@ -3445,10 +3460,10 @@
           "html": "<p>Let <var>rotation</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-parse-rotation\" id=\"ref-for-videoframe-parse-rotation①\">Parse Rotation</a> algorithm, with <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframeinit-rotation\" id=\"ref-for-dom-videoframeinit-rotation\">rotation</a></code>.</p>"
         },
         {
-          "html": "<p>Assign the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-add-rotations\" id=\"ref-for-videoframe-add-rotations\">Add Rotations</a> algorithm,\nwith <var>baseRotation</var>, <var>baseFlip</var>, and <var>rotation</var>, to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot④\">[[rotation]]</a></code>.</p>"
+          "html": "<p>Assign the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-add-rotations\" id=\"ref-for-videoframe-add-rotations\">Add Rotations</a> algorithm,\nwith <var>baseRotation</var>, <var>baseFlip</var>, and <var>rotation</var>, to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot⑧\">[[rotation]]</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>baseFlip</var> is equal to <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframeinit-flip\" id=\"ref-for-dom-videoframeinit-flip\">flip</a></code>, assign <code>false</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot③\">[[flip]]</a></code>. Otherwise, assign <code>true</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot④\">[[flip]]</a></code>.</p>"
+          "html": "<p>If <var>baseFlip</var> is equal to <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframeinit-flip\" id=\"ref-for-dom-videoframeinit-flip\">flip</a></code>, assign <code>false</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot⑦\">[[flip]]</a></code>. Otherwise, assign <code>true</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot⑧\">[[flip]]</a></code>.</p>"
         },
         {
           "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframeinit-displaywidth\" id=\"ref-for-dom-videoframeinit-displaywidth②\">displayWidth</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframeinit-displayheight\" id=\"ref-for-dom-videoframeinit-displayheight②\">displayHeight</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②③\">exist</a> in <var>init</var>, assign them to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot⑤\">[[display width]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot⑤\">[[display height]]</a></code> respectively.</p>"
@@ -3522,7 +3537,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>clone</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤②\">VideoFrame</a></code> initialized as follows:",
+          "html": "Let <var>clone</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑤\">VideoFrame</a></code> initialized as follows:",
           "rationale": "let",
           "steps": [
             {
@@ -3560,10 +3575,10 @@
           "html": "<p>Assign <code>null</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-format\" id=\"ref-for-dom-videoframe-format⑤\">format</a></code>.</p>"
         },
         {
-          "html": "<p>Assign <code>0</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-coded-width-slot\" id=\"ref-for-dom-videoframe-coded-width-slot⑦\">[[coded width]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-coded-height-slot\" id=\"ref-for-dom-videoframe-coded-height-slot⑦\">[[coded height]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-visible-left-slot\" id=\"ref-for-dom-videoframe-visible-left-slot⑤\">[[visible left]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-visible-top-slot\" id=\"ref-for-dom-videoframe-visible-top-slot⑤\">[[visible top]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-visible-width-slot\" id=\"ref-for-dom-videoframe-visible-width-slot⑧\">[[visible width]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-visible-height-slot\" id=\"ref-for-dom-videoframe-visible-height-slot⑧\">[[visible height]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot⑤\">[[rotation]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot⑧\">[[display width]]</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot⑧\">[[display height]]</a></code>.</p>"
+          "html": "<p>Assign <code>0</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-coded-width-slot\" id=\"ref-for-dom-videoframe-coded-width-slot⑦\">[[coded width]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-coded-height-slot\" id=\"ref-for-dom-videoframe-coded-height-slot⑦\">[[coded height]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-visible-left-slot\" id=\"ref-for-dom-videoframe-visible-left-slot⑤\">[[visible left]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-visible-top-slot\" id=\"ref-for-dom-videoframe-visible-top-slot⑤\">[[visible top]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-visible-width-slot\" id=\"ref-for-dom-videoframe-visible-width-slot⑧\">[[visible width]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-visible-height-slot\" id=\"ref-for-dom-videoframe-visible-height-slot⑧\">[[visible height]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot⑨\">[[rotation]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-display-width-slot\" id=\"ref-for-dom-videoframe-display-width-slot⑧\">[[display width]]</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-display-height-slot\" id=\"ref-for-dom-videoframe-display-height-slot⑧\">[[display height]]</a></code>.</p>"
         },
         {
-          "html": "<p>Assign <code>false</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot⑤\">[[flip]]</a></code>.</p>"
+          "html": "<p>Assign <code>false</code> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot⑨\">[[flip]]</a></code>.</p>"
         },
         {
           "html": "<p>Assign a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dictdef-videoframemetadata\" id=\"ref-for-dictdef-videoframemetadata⑥\">VideoFrameMetadata</a></code> to <var>frame</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-metadata-slot\" id=\"ref-for-dom-videoframe-metadata-slot④\">[[metadata]]</a></code>.</p>"
@@ -3903,7 +3918,7 @@
           "html": "<p>This algorithm <em class=\"rfc2119\">MUST</em> be called only if <var>format</var> is equal to one of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videopixelformat-rgba\" id=\"ref-for-dom-videopixelformat-rgba②\">RGBA</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videopixelformat-rgbx\" id=\"ref-for-dom-videopixelformat-rgbx②\">RGBX</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videopixelformat-bgra\" id=\"ref-for-dom-videopixelformat-bgra②\">BGRA</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videopixelformat-bgrx\" id=\"ref-for-dom-videopixelformat-bgrx②\">BGRX</a></code>.</p>"
         },
         {
-          "html": "Let <var>convertedFrame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤③\">VideoFrame</a></code>, constructed as follows:",
+          "html": "Let <var>convertedFrame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑥\">VideoFrame</a></code>, constructed as follows:",
           "rationale": "assign",
           "steps": [
             {
@@ -3965,7 +3980,7 @@
           "html": "<p>If <var>value</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#detached\" id=\"ref-for-detached②⑧\">[[Detached]]</a></code> is <code>true</code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror①③\">DataCloneError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④①\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>For all <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑥\">VideoFrame</a></code> internal slots in <var>value</var>, assign the value of\neach internal slot to a field in <var>dataHolder</var> with the same name as the\ninternal slot.</p>"
+          "html": "<p>For all <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑨\">VideoFrame</a></code> internal slots in <var>value</var>, assign the value of\neach internal slot to a field in <var>dataHolder</var> with the same name as the\ninternal slot.</p>"
         },
         {
           "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#close-videoframe\" id=\"ref-for-close-videoframe①\">Close VideoFrame</a> algorithm with <var>value</var>.</p>"
@@ -3977,7 +3992,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<p>For all named fields in <var>dataHolder</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑧\">VideoFrame</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
+          "html": "<p>For all named fields in <var>dataHolder</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥①\">VideoFrame</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
         }
       ]
     },
@@ -4001,7 +4016,7 @@
           "html": "<p>Assign <var>newReference</var> to |serialized.resource reference|.</p>"
         },
         {
-          "html": "<p>For all remaining <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥⓪\">VideoFrame</a></code> internal slots (excluding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot①③\">[[resource reference]]</a></code>) in <var>value</var>, assign the value of\neach internal slot to a field in <var>serialized</var> with the same name as the\ninternal slot.</p>"
+          "html": "<p>For all remaining <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥③\">VideoFrame</a></code> internal slots (excluding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot①③\">[[resource reference]]</a></code>) in <var>value</var>, assign the value of\neach internal slot to a field in <var>serialized</var> with the same name as the\ninternal slot.</p>"
         }
       ]
     },
@@ -4010,7 +4025,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<p>For all named fields in <var>serialized</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥②\">VideoFrame</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
+          "html": "<p>For all named fields in <var>serialized</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥⑤\">VideoFrame</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
         }
       ]
     },
@@ -4334,7 +4349,7 @@
               "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-closed-slot\" id=\"ref-for-dom-imagedecoder-closed-slot②\">[[closed]]</a></code> is <code>true</code>, abort these steps.</p>"
             },
             {
-              "html": "<p>If <var>chunk</var> is not a Uint8Array object, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③⑨\">queue a task</a> to run\nthe <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#imagedecoder-close-imagedecoder\" id=\"ref-for-imagedecoder-close-imagedecoder②\">Close ImageDecoder</a> algorithm with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dataerror\" id=\"ref-for-dataerror④\">DataError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤⓪\">DOMException</a></code> and abort these steps.</p>"
+              "html": "<p>If <var>chunk</var> is not a Uint8Array object, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③⑨\">queue a task</a> to run\nthe <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#imagedecoder-close-imagedecoder\" id=\"ref-for-imagedecoder-close-imagedecoder②\">Close ImageDecoder</a> algorithm with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dataerror\" id=\"ref-for-dataerror⑤\">DataError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤⓪\">DOMException</a></code> and abort these steps.</p>"
             },
             {
               "html": "<p>Let <var>bytes</var> be the byte sequence represented by the Uint8Array\nobject.</p>"
