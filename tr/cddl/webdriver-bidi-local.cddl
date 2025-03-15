@@ -104,14 +104,14 @@ session.CapabilityRequest = {
   ? proxy: session.ProxyConfiguration,
   ? unhandledPromptBehavior: session.UserPromptHandler,
   Extensible
-};
+}
 
 session.ProxyConfiguration = {
    session.AutodetectProxyConfiguration //
    session.DirectProxyConfiguration //
    session.ManualProxyConfiguration //
    session.PacProxyConfiguration //
-   session.SystemProxyConfiguration //
+   session.SystemProxyConfiguration
 }
 
 session.AutodetectProxyConfiguration = (
@@ -146,7 +146,7 @@ session.PacProxyConfiguration = (
 )
 
 session.SystemProxyConfiguration = (
-   proxyType: "system"
+   proxyType: "system",
    Extensible
 )
 
@@ -157,7 +157,7 @@ session.UserPromptHandler = {
   ? default: session.UserPromptHandlerType,
   ? file: session.UserPromptHandlerType,
   ? prompt: session.UserPromptHandlerType,
-};
+}
 
 session.UserPromptHandlerType = "accept" / "dismiss" / "ignore";
 
@@ -478,7 +478,7 @@ network.Cookie = {
     sameSite: network.SameSite,
     ? expiry: js-uint,
     Extensible,
-};
+}
 
 network.FetchTimingInfo = {
     timeOrigin: float,
@@ -494,7 +494,7 @@ network.FetchTimingInfo = {
     requestStart: float,
     responseStart: float,
     responseEnd: float,
-};
+}
 
 network.Header = {
   name: text,
@@ -507,7 +507,7 @@ network.Initiator = {
     ? request: network.Request,
     ? stackTrace: script.StackTrace,
     ? type: "parser" / "script" / "preflight" / "other"
-};
+}
 
 network.Intercept = text
 
@@ -524,11 +524,11 @@ network.RequestData = {
     destination: text,
     initiatorType: text / null,
     timings: network.FetchTimingInfo,
-};
+}
 
 network.ResponseContent = {
     size: js-uint
-};
+}
 
 network.ResponseData = {
     url: text,
@@ -543,7 +543,7 @@ network.ResponseData = {
     bodySize: js-uint / null,
     content: network.ResponseContent,
     ?authChallenges: [*network.AuthChallenge],
-};
+}
 
 network.AddInterceptResult = {
   intercept: network.Intercept
@@ -616,7 +616,7 @@ script.Channel = text;
 script.ChannelValue = {
   type: "channel",
   value: script.ChannelProperties,
-};
+}
 
 script.ChannelProperties = {
   channel: script.Channel,
@@ -647,7 +647,7 @@ script.ExceptionDetails = {
   lineNumber: js-uint,
   stackTrace: script.StackTrace,
   text: text,
-};
+}
 
 script.Handle = text;
 
