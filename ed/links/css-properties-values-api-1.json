@@ -52,8 +52,8 @@
       "https://drafts.csswg.org/css-color-5/": {},
       "https://drafts.csswg.org/css-conditional-3/": {},
       "https://drafts.csswg.org/css-fonts-4/": {},
-      "https://drafts.csswg.org/css-images-3/": {},
       "https://drafts.csswg.org/css-images-4/": {},
+      "https://drafts.csswg.org/css-inline-3/": {},
       "https://drafts.csswg.org/css-scoping-1/": {
         "anchors": [
           "shadow-names"
@@ -77,9 +77,9 @@
         ]
       },
       "https://drafts.csswg.org/css-values-4/": {},
+      "https://drafts.csswg.org/css-values-5/": {},
       "https://drafts.csswg.org/css-variables-2/": {},
       "https://drafts.csswg.org/css-variables/": {},
-      "https://drafts.csswg.org/css2/": {},
       "https://drafts.csswg.org/cssom/": {},
       "https://drafts.csswg.org/web-animations-1/": {},
       "https://github.com/w3c/css-houdini-drafts/issues": {},
@@ -90,6 +90,8 @@
       "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-houdini-archive/": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://w3c.github.io/i18n-glossary/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://www.w3.org/TR/2020/WD-css-properties-values-api-1-20201013/": {},
       "https://www.w3.org/policies/process/20231103/": {}
@@ -106,8 +108,6 @@
           "cssstylevalue",
           "reify-a-list-of-component-values",
           "reify-a-numeric-value",
-          "reify-a-transform-function",
-          "reify-a-transform-list",
           "reify-an-identifier",
           "reify-as-a-cssstylevalue",
           "dom-cssstylevalue-associatedproperty-slot"
@@ -148,17 +148,18 @@
       },
       "https://drafts.csswg.org/css-fonts-4/": {
         "anchors": [
-          "propdef-font-size"
-        ]
-      },
-      "https://drafts.csswg.org/css-images-3/": {
-        "anchors": [
-          "typedef-image"
+          "propdef-font-size",
+          "typedef-base-palette-integer"
         ]
       },
       "https://drafts.csswg.org/css-images-4/": {
         "anchors": [
-          "computed-image"
+          "typedef-image"
+        ]
+      },
+      "https://drafts.csswg.org/css-inline-3/": {
+        "anchors": [
+          "propdef-line-height"
         ]
       },
       "https://drafts.csswg.org/css-scoping-1/": {
@@ -219,7 +220,6 @@
           "percentage-value",
           "funcdef-calc",
           "url-value",
-          "integer-value",
           "angle-value",
           "time-value",
           "resolution-value",
@@ -227,18 +227,17 @@
           "css-css-identifier"
         ]
       },
+      "https://drafts.csswg.org/css-values-5/": {
+        "anchors": [
+          "invalid-at-computed-value-time"
+        ]
+      },
       "https://drafts.csswg.org/css-variables-2/": {
         "anchors": [
           "custom-property",
           "funcdef-var",
           "guaranteed-invalid-value",
-          "invalid-at-computed-value-time",
           "typedef-custom-property-name"
-        ]
-      },
-      "https://drafts.csswg.org/css2/": {
-        "anchors": [
-          "propdef-line-height"
         ]
       },
       "https://drafts.csswg.org/cssom-1/": {
@@ -275,11 +274,20 @@
           "list-contain",
           "set-append",
           "ascii-case-insensitive",
-          "code-point",
           "strip-leading-and-trailing-ascii-whitespace",
           "string-length",
           "list",
           "list-append"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
+        "anchors": [
+          "sec-native-error-types-used-in-this-standard-syntaxerror"
+        ]
+      },
+      "https://w3c.github.io/i18n-glossary/": {
+        "anchors": [
+          "dfn-code-point"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -288,7 +296,6 @@
           "idl-boolean",
           "idl-undefined",
           "dfn-throw",
-          "syntaxerror",
           "invalidmodificationerror",
           "Exposed"
         ]
@@ -296,6 +303,11 @@
       "https://www.w3.org/TR/css-scoping-1/": {
         "anchors": [
           "host-element0"
+        ]
+      },
+      "https://www.w3.org/TR/css-variables-1/": {
+        "anchors": [
+          "invalid-at-computed-value-time"
         ]
       }
     }
