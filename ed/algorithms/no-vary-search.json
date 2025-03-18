@@ -5,230 +5,230 @@
   },
   "algorithms": [
     {
-      "html": "<span id=\"iref-parse-a-url-search-variance\" class=\"iref\"></span>\nTo <em><span id=\"iref-parse-a-url-search-variance-\" class=\"iref\"></span><a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#parse-a-url-search-variance\" class=\"internal xref\">parse a URL search variance</a></em> given <em>value</em>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-1\" class=\"pilcrow\">¶</a>",
+      "html": "<span id=\"iref-parse-a-url-search-variance\" class=\"iref\"></span>\nTo <em><span id=\"iref-parse-a-url-search-variance-\" class=\"iref\"></span><a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#parse-a-url-search-variance\" class=\"internal xref\">parse a URL search variance</a></em> given <em>value</em>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-1\" class=\"pilcrow\">¶</a>",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p id=\"section-4.1-2.1.1\">If <em>value</em> is null, then return the <span id=\"iref-default-url-search-variance-7\" class=\"iref\"></span>default URL search variance.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.1.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-5.1-2.1.1\">If <em>value</em> is null, then return the <span id=\"iref-default-url-search-variance-7\" class=\"iref\"></span>default URL search variance.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.1.1\" class=\"pilcrow\">¶</a></p>"
         },
         {
-          "html": "<p id=\"section-4.1-2.2.1\">Let <em>result</em> be a new URL search variance.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.2.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-5.1-2.2.1\">Let <em>result</em> be a new URL search variance.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.2.1\" class=\"pilcrow\">¶</a></p>"
         },
         {
-          "html": "<p id=\"section-4.1-2.3.1\">Set <em>result</em>'s vary on key order to true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.3.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-5.1-2.3.1\">Set <em>result</em>'s vary on key order to true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.3.1\" class=\"pilcrow\">¶</a></p>"
         },
         {
-          "html": "If <em>value</em>[\"<code>key-order</code>\"] exists:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.4.1\" class=\"pilcrow\">¶</a>",
+          "html": "If <em>value</em>[\"<code>key-order</code>\"] exists:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.4.1\" class=\"pilcrow\">¶</a>",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p id=\"section-4.1-2.4.2.1.1\">If <em>value</em>[\"<code>key-order</code>\"] is not a boolean, then return the <span id=\"iref-default-url-search-variance-8\" class=\"iref\"></span>default URL search variance.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.4.2.1.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-5.1-2.4.2.1.1\">If <em>value</em>[\"<code>key-order</code>\"] is not a boolean, then return the <span id=\"iref-default-url-search-variance-8\" class=\"iref\"></span>default URL search variance.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.4.2.1.1\" class=\"pilcrow\">¶</a></p>"
             },
             {
-              "html": "<p id=\"section-4.1-2.4.2.2.1\">Set <em>result</em>'s vary on key order to the boolean negation of <em>value</em>[\"<code>key-order</code>\"].<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.4.2.2.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-5.1-2.4.2.2.1\">Set <em>result</em>'s vary on key order to the boolean negation of <em>value</em>[\"<code>key-order</code>\"].<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.4.2.2.1\" class=\"pilcrow\">¶</a></p>"
             }
           ]
         },
         {
-          "html": "If <em>value</em>[\"<code>params</code>\"] exists:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.5.1\" class=\"pilcrow\">¶</a>",
+          "html": "If <em>value</em>[\"<code>params</code>\"] exists:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.5.1\" class=\"pilcrow\">¶</a>",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <em>value</em>[\"<code>params</code>\"] is a boolean:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.5.2.1.1\" class=\"pilcrow\">¶</a>",
+              "html": "If <em>value</em>[\"<code>params</code>\"] is a boolean:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.5.2.1.1\" class=\"pilcrow\">¶</a>",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <em>value</em>[\"<code>params</code>\"] is true, then:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.5.2.1.2.1.1\" class=\"pilcrow\">¶</a>",
+                  "html": "If <em>value</em>[\"<code>params</code>\"] is true, then:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.5.2.1.2.1.1\" class=\"pilcrow\">¶</a>",
                   "rationale": "set",
                   "steps": [
                     {
-                      "html": "<p id=\"section-4.1-2.5.2.1.2.1.2.1.1\">Set <em>result</em>'s no-vary params to <strong>wildcard</strong>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.5.2.1.2.1.2.1.1\" class=\"pilcrow\">¶</a></p>"
+                      "html": "<p id=\"section-5.1-2.5.2.1.2.1.2.1.1\">Set <em>result</em>'s no-vary params to <strong>wildcard</strong>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.5.2.1.2.1.2.1.1\" class=\"pilcrow\">¶</a></p>"
                     },
                     {
-                      "html": "<p id=\"section-4.1-2.5.2.1.2.1.2.2.1\">Set <em>result</em>'s vary params to the empty list.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.5.2.1.2.1.2.2.1\" class=\"pilcrow\">¶</a></p>"
+                      "html": "<p id=\"section-5.1-2.5.2.1.2.1.2.2.1\">Set <em>result</em>'s vary params to the empty list.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.5.2.1.2.1.2.2.1\" class=\"pilcrow\">¶</a></p>"
                     }
                   ]
                 },
                 {
-                  "html": "Otherwise:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.5.2.1.2.2.1\" class=\"pilcrow\">¶</a>",
+                  "html": "Otherwise:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.5.2.1.2.2.1\" class=\"pilcrow\">¶</a>",
                   "rationale": "set",
                   "steps": [
                     {
-                      "html": "<p id=\"section-4.1-2.5.2.1.2.2.2.1.1\">Set <em>result</em>'s no-vary params to the empty list.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.5.2.1.2.2.2.1.1\" class=\"pilcrow\">¶</a></p>"
+                      "html": "<p id=\"section-5.1-2.5.2.1.2.2.2.1.1\">Set <em>result</em>'s no-vary params to the empty list.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.5.2.1.2.2.2.1.1\" class=\"pilcrow\">¶</a></p>"
                     },
                     {
-                      "html": "<p id=\"section-4.1-2.5.2.1.2.2.2.2.1\">Set <em>result</em>'s vary params to <strong>wildcard</strong>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.5.2.1.2.2.2.2.1\" class=\"pilcrow\">¶</a></p>"
+                      "html": "<p id=\"section-5.1-2.5.2.1.2.2.2.2.1\">Set <em>result</em>'s vary params to <strong>wildcard</strong>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.5.2.1.2.2.2.2.1\" class=\"pilcrow\">¶</a></p>"
                     }
                   ]
                 }
               ]
             },
             {
-              "html": "Otherwise, if <em>value</em>[\"<code>params</code>\"] is an array:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.5.2.2.1\" class=\"pilcrow\">¶</a>",
+              "html": "Otherwise, if <em>value</em>[\"<code>params</code>\"] is an array:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.5.2.2.1\" class=\"pilcrow\">¶</a>",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p id=\"section-4.1-2.5.2.2.2.1.1\">If any item in <em>value</em>[\"<code>params</code>\"] is not a string, then return the <span id=\"iref-default-url-search-variance-9\" class=\"iref\"></span>default URL search variance.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.5.2.2.2.1.1\" class=\"pilcrow\">¶</a></p>"
+                  "html": "<p id=\"section-5.1-2.5.2.2.2.1.1\">If any item in <em>value</em>[\"<code>params</code>\"] is not a string, then return the <span id=\"iref-default-url-search-variance-9\" class=\"iref\"></span>default URL search variance.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.5.2.2.2.1.1\" class=\"pilcrow\">¶</a></p>"
                 },
                 {
-                  "html": "<p id=\"section-4.1-2.5.2.2.2.2.1\">Set <em>result</em>'s no-vary params to the result of applying <span id=\"iref-parse-a-key-10\" class=\"iref\"></span><a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#parse-a-key\" class=\"internal xref\">parse a key</a> (<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#parse-a-key\" class=\"auto internal xref\">Section 4.3</a>) to each item in <em>value</em>[\"<code>params</code>\"].<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.5.2.2.2.2.1\" class=\"pilcrow\">¶</a></p>"
+                  "html": "<p id=\"section-5.1-2.5.2.2.2.2.1\">Set <em>result</em>'s no-vary params to the result of applying <span id=\"iref-parse-a-key-10\" class=\"iref\"></span><a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#parse-a-key\" class=\"internal xref\">parse a key</a> (<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#parse-a-key\" class=\"auto internal xref\">Section 5.3</a>) to each item in <em>value</em>[\"<code>params</code>\"].<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.5.2.2.2.2.1\" class=\"pilcrow\">¶</a></p>"
                 },
                 {
-                  "html": "<p id=\"section-4.1-2.5.2.2.2.3.1\">Set <em>result</em>'s vary params to <strong>wildcard</strong>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.5.2.2.2.3.1\" class=\"pilcrow\">¶</a></p>"
+                  "html": "<p id=\"section-5.1-2.5.2.2.2.3.1\">Set <em>result</em>'s vary params to <strong>wildcard</strong>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.5.2.2.2.3.1\" class=\"pilcrow\">¶</a></p>"
                 }
               ]
             },
             {
-              "html": "<p id=\"section-4.1-2.5.2.3.1\">Otherwise, return the <span id=\"iref-default-url-search-variance-1\" class=\"iref\"></span>default URL search variance.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.5.2.3.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-5.1-2.5.2.3.1\">Otherwise, return the <span id=\"iref-default-url-search-variance-1\" class=\"iref\"></span>default URL search variance.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.5.2.3.1\" class=\"pilcrow\">¶</a></p>"
             }
           ]
         },
         {
-          "html": "If <em>value</em>[\"<code>except</code>\"] exists:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.6.1\" class=\"pilcrow\">¶</a>",
+          "html": "If <em>value</em>[\"<code>except</code>\"] exists:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.6.1\" class=\"pilcrow\">¶</a>",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p id=\"section-4.1-2.6.2.1.1\">If <em>value</em>[\"<code>params</code>\"] is not true, then return the <span id=\"iref-default-url-search-variance-12\" class=\"iref\"></span>default URL search variance.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.6.2.1.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-5.1-2.6.2.1.1\">If <em>value</em>[\"<code>params</code>\"] is not true, then return the <span id=\"iref-default-url-search-variance-12\" class=\"iref\"></span>default URL search variance.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.6.2.1.1\" class=\"pilcrow\">¶</a></p>"
             },
             {
-              "html": "<p id=\"section-4.1-2.6.2.2.1\">If <em>value</em>[\"<code>except</code>\"] is not an array, then return the <span id=\"iref-default-url-search-variance-13\" class=\"iref\"></span>default URL search variance.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.6.2.2.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-5.1-2.6.2.2.1\">If <em>value</em>[\"<code>except</code>\"] is not an array, then return the <span id=\"iref-default-url-search-variance-13\" class=\"iref\"></span>default URL search variance.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.6.2.2.1\" class=\"pilcrow\">¶</a></p>"
             },
             {
-              "html": "<p id=\"section-4.1-2.6.2.3.1\">If any item in <em>value</em>[\"<code>except</code>\"] is not a string, then return the <span id=\"iref-default-url-search-variance-14\" class=\"iref\"></span>default URL search variance.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.6.2.3.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-5.1-2.6.2.3.1\">If any item in <em>value</em>[\"<code>except</code>\"] is not a string, then return the <span id=\"iref-default-url-search-variance-14\" class=\"iref\"></span>default URL search variance.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.6.2.3.1\" class=\"pilcrow\">¶</a></p>"
             },
             {
-              "html": "<p id=\"section-4.1-2.6.2.4.1\">Set <em>result</em>'s vary params to the result of applying <span id=\"iref-parse-a-key-15\" class=\"iref\"></span><a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#parse-a-key\" class=\"internal xref\">parse a key</a> (<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#parse-a-key\" class=\"auto internal xref\">Section 4.3</a>) to each item in <em>value</em>[\"<code>except</code>\"].<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.6.2.4.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-5.1-2.6.2.4.1\">Set <em>result</em>'s vary params to the result of applying <span id=\"iref-parse-a-key-15\" class=\"iref\"></span><a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#parse-a-key\" class=\"internal xref\">parse a key</a> (<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#parse-a-key\" class=\"auto internal xref\">Section 5.3</a>) to each item in <em>value</em>[\"<code>except</code>\"].<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.6.2.4.1\" class=\"pilcrow\">¶</a></p>"
             }
           ]
         },
         {
-          "html": "<p id=\"section-4.1-2.7.1\">Return <em>result</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1-2.7.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-5.1-2.7.1\">Return <em>result</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1-2.7.1\" class=\"pilcrow\">¶</a></p>"
         }
       ]
     },
     {
-      "html": "<span id=\"iref-obtain-a-url-search-variance-\" class=\"iref\"></span>\nTo <em><span id=\"iref-obtain-a-url-search-variance-1\" class=\"iref\"></span><a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#obtain-a-url-search-variance\" class=\"internal xref\">obtain a URL search variance</a></em> given a <a href=\"https://fetch.spec.whatwg.org/#concept-response\">response</a> <em>response</em>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.2-1\" class=\"pilcrow\">¶</a>",
+      "html": "<span id=\"iref-obtain-a-url-search-variance-\" class=\"iref\"></span>\nTo <em><span id=\"iref-obtain-a-url-search-variance-1\" class=\"iref\"></span><a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#obtain-a-url-search-variance\" class=\"internal xref\">obtain a URL search variance</a></em> given a <a href=\"https://fetch.spec.whatwg.org/#concept-response\">response</a> <em>response</em>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.2-1\" class=\"pilcrow\">¶</a>",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p id=\"section-4.2-2.1.1\">Let <em>fieldValue</em> be the result of <a href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\">getting a structured field value</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#FETCH\" class=\"cite xref\">FETCH</a>]</span> given `<code>No-Vary-Search</code>` and \"<code>dictionary</code>\" from <em>response</em>'s header list.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.2-2.1.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-5.2-2.1.1\">Let <em>fieldValue</em> be the result of <a href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\">getting a structured field value</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#FETCH\" class=\"cite xref\">FETCH</a>]</span> given `<code>No-Vary-Search</code>` and \"<code>dictionary</code>\" from <em>response</em>'s header list.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.2-2.1.1\" class=\"pilcrow\">¶</a></p>"
         },
         {
-          "html": "<p id=\"section-4.2-2.2.1\">Return the result of parsing a URL search variance (<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#parse-a-url-search-variance\" class=\"auto internal xref\">Section 4.1</a>) given <em>fieldValue</em>. <span id=\"iref-parse-a-url-search-variance-2\" class=\"iref\"></span><a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.2-2.2.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-5.2-2.2.1\">Return the result of parsing a URL search variance (<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#parse-a-url-search-variance\" class=\"auto internal xref\">Section 5.1</a>) given <em>fieldValue</em>. <span id=\"iref-parse-a-url-search-variance-2\" class=\"iref\"></span><a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.2-2.2.1\" class=\"pilcrow\">¶</a></p>"
         }
       ]
     },
     {
-      "html": "<span id=\"iref-parse-a-key-22\" class=\"iref\"></span>\nTo <em><span id=\"iref-parse-a-key-23\" class=\"iref\"></span><a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#parse-a-key\" class=\"internal xref\">parse a key</a></em> given an ASCII string <em>keyString</em>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.3-1\" class=\"pilcrow\">¶</a>",
+      "html": "<span id=\"iref-parse-a-key-22\" class=\"iref\"></span>\nTo <em><span id=\"iref-parse-a-key-23\" class=\"iref\"></span><a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#parse-a-key\" class=\"internal xref\">parse a key</a></em> given an ASCII string <em>keyString</em>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.3-1\" class=\"pilcrow\">¶</a>",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p id=\"section-4.3-2.1.1\">Let <em>keyBytes</em> be the <a href=\"https://infra.spec.whatwg.org/#isomorphic-encode\">isomorphic encoding</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-INFRA\" class=\"cite xref\">WHATWG-INFRA</a>]</span> of <em>keyString</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.3-2.1.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-5.3-2.1.1\">Let <em>keyBytes</em> be the <a href=\"https://infra.spec.whatwg.org/#isomorphic-encode\">isomorphic encoding</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-INFRA\" class=\"cite xref\">WHATWG-INFRA</a>]</span> of <em>keyString</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.3-2.1.1\" class=\"pilcrow\">¶</a></p>"
         },
         {
-          "html": "<p id=\"section-4.3-2.2.1\">Replace any 0x2B (+) in <em>keyBytes</em> with 0x20 (SP).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.3-2.2.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-5.3-2.2.1\">Replace any 0x2B (+) in <em>keyBytes</em> with 0x20 (SP).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.3-2.2.1\" class=\"pilcrow\">¶</a></p>"
         },
         {
-          "html": "<p id=\"section-4.3-2.3.1\">Let <em>keyBytesDecoded</em> be the <a href=\"https://url.spec.whatwg.org/#percent-decode\">percent-decoding</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-URL\" class=\"cite xref\">WHATWG-URL</a>]</span> of <em>keyBytes</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.3-2.3.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-5.3-2.3.1\">Let <em>keyBytesDecoded</em> be the <a href=\"https://url.spec.whatwg.org/#percent-decode\">percent-decoding</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-URL\" class=\"cite xref\">WHATWG-URL</a>]</span> of <em>keyBytes</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.3-2.3.1\" class=\"pilcrow\">¶</a></p>"
         },
         {
-          "html": "<p id=\"section-4.3-2.4.1\">Let <em>keyStringDecoded</em> be the <a href=\"https://encoding.spec.whatwg.org/#utf-8-decode-without-bom\">UTF-8 decoding without BOM</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-ENCODING\" class=\"cite xref\">WHATWG-ENCODING</a>]</span> of <em>keyBytesDecoded</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.3-2.4.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-5.3-2.4.1\">Let <em>keyStringDecoded</em> be the <a href=\"https://encoding.spec.whatwg.org/#utf-8-decode-without-bom\">UTF-8 decoding without BOM</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-ENCODING\" class=\"cite xref\">WHATWG-ENCODING</a>]</span> of <em>keyBytesDecoded</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.3-2.4.1\" class=\"pilcrow\">¶</a></p>"
         },
         {
-          "html": "<p id=\"section-4.3-2.5.1\">Return <em>keyStringDecoded</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.3-2.5.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-5.3-2.5.1\">Return <em>keyStringDecoded</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.3-2.5.1\" class=\"pilcrow\">¶</a></p>"
         }
       ]
     },
     {
-      "html": "<span id=\"iref-equivalent-modulo-search-va\" class=\"iref\"></span>\nTwo <a href=\"https://url.spec.whatwg.org/#concept-url\">URLs</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-URL\" class=\"cite xref\">WHATWG-URL</a>]</span> <em>urlA</em> and <em>urlB</em> are <em>equivalent modulo search variance</em> given a URL search variance <em>searchVariance</em> if the following algorithm returns true:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-1\" class=\"pilcrow\">¶</a>",
+      "html": "<span id=\"iref-equivalent-modulo-search-va\" class=\"iref\"></span>\nTwo <a href=\"https://url.spec.whatwg.org/#concept-url\">URLs</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-URL\" class=\"cite xref\">WHATWG-URL</a>]</span> <em>urlA</em> and <em>urlB</em> are <em>equivalent modulo search variance</em> given a URL search variance <em>searchVariance</em> if the following algorithm returns true:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-1\" class=\"pilcrow\">¶</a>",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p id=\"section-5-2.1.1\">If the scheme, username, password, host, port, or path of <em>urlA</em> and <em>urlB</em> differ, then return false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.1.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-6-2.1.1\">If the scheme, username, password, host, port, or path of <em>urlA</em> and <em>urlB</em> differ, then return false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.1.1\" class=\"pilcrow\">¶</a></p>"
         },
         {
-          "html": "If <em>searchVariance</em> is equivalent to the <span id=\"iref-default-url-search-variance-26\" class=\"iref\"></span>default URL search variance, then:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.2.1\" class=\"pilcrow\">¶</a>",
+          "html": "If <em>searchVariance</em> is equivalent to the <span id=\"iref-default-url-search-variance-26\" class=\"iref\"></span>default URL search variance, then:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.2.1\" class=\"pilcrow\">¶</a>",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p id=\"section-5-2.2.2.1.1\">If <em>urlA</em>'s query equals <em>urlB</em>'s query, then return true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.2.2.1.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-6-2.2.2.1.1\">If <em>urlA</em>'s query equals <em>urlB</em>'s query, then return true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.2.2.1.1\" class=\"pilcrow\">¶</a></p>"
             },
             {
-              "html": "<p id=\"section-5-2.2.2.2.1\">Return false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.2.2.2.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-6-2.2.2.2.1\">Return false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.2.2.2.1\" class=\"pilcrow\">¶</a></p>"
             }
           ]
         },
         {
-          "html": "<p id=\"section-5-2.3.1\">Let <em>searchParamsA</em> and <em>searchParamsB</em> be empty lists.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.3.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-6-2.3.1\">Let <em>searchParamsA</em> and <em>searchParamsB</em> be empty lists.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.3.1\" class=\"pilcrow\">¶</a></p>"
         },
         {
-          "html": "<p id=\"section-5-2.4.1\">If <em>wrlA</em>'s query is not null, then set <em>searchParamsA</em> to the result of running the <a href=\"https://url.spec.whatwg.org/#concept-urlencoded-parser\">application/x-www-form-urlencoded parser</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-URL\" class=\"cite xref\">WHATWG-URL</a>]</span> given the <a href=\"https://infra.spec.whatwg.org/#isomorphic-encode\">isomorphic encoding</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-INFRA\" class=\"cite xref\">WHATWG-INFRA</a>]</span> of <em>urlA</em>'s query.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.4.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-6-2.4.1\">If <em>wrlA</em>'s query is not null, then set <em>searchParamsA</em> to the result of running the <a href=\"https://url.spec.whatwg.org/#concept-urlencoded-parser\">application/x-www-form-urlencoded parser</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-URL\" class=\"cite xref\">WHATWG-URL</a>]</span> given the <a href=\"https://infra.spec.whatwg.org/#isomorphic-encode\">isomorphic encoding</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-INFRA\" class=\"cite xref\">WHATWG-INFRA</a>]</span> of <em>urlA</em>'s query.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.4.1\" class=\"pilcrow\">¶</a></p>"
         },
         {
-          "html": "<p id=\"section-5-2.5.1\">If <em>wrlB</em>'s query is not null, then set <em>searchParamsB</em> to the result of running the <a href=\"https://url.spec.whatwg.org/#concept-urlencoded-parser\">application/x-www-form-urlencoded parser</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-URL\" class=\"cite xref\">WHATWG-URL</a>]</span> given the <a href=\"https://infra.spec.whatwg.org/#isomorphic-encode\">isomorphic encoding</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-INFRA\" class=\"cite xref\">WHATWG-INFRA</a>]</span> of <em>urlB</em>'s query.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.5.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-6-2.5.1\">If <em>wrlB</em>'s query is not null, then set <em>searchParamsB</em> to the result of running the <a href=\"https://url.spec.whatwg.org/#concept-urlencoded-parser\">application/x-www-form-urlencoded parser</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-URL\" class=\"cite xref\">WHATWG-URL</a>]</span> given the <a href=\"https://infra.spec.whatwg.org/#isomorphic-encode\">isomorphic encoding</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-INFRA\" class=\"cite xref\">WHATWG-INFRA</a>]</span> of <em>urlB</em>'s query.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.5.1\" class=\"pilcrow\">¶</a></p>"
         },
         {
-          "html": "If <em>searchVariance</em>'s no-vary params is a list, then:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.6.1\" class=\"pilcrow\">¶</a>",
+          "html": "If <em>searchVariance</em>'s no-vary params is a list, then:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.6.1\" class=\"pilcrow\">¶</a>",
           "rationale": "set",
           "steps": [
             {
-              "html": "<p id=\"section-5-2.6.2.1.1\">Set <em>searchParamsA</em> to a list containing those items <em>pair</em> in <em>searchParamsA</em> where <em>searchVariance</em>'s no-vary params does not contain <em>pair</em>[0].<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.6.2.1.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-6-2.6.2.1.1\">Set <em>searchParamsA</em> to a list containing those items <em>pair</em> in <em>searchParamsA</em> where <em>searchVariance</em>'s no-vary params does not contain <em>pair</em>[0].<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.6.2.1.1\" class=\"pilcrow\">¶</a></p>"
             },
             {
-              "html": "<p id=\"section-5-2.6.2.2.1\">Set <em>searchParamsB</em> to a list containing those items <em>pair</em> in <em>searchParamsB</em> where <em>searchVariance</em>'s no-vary params does not contain <em>pair</em>[0].<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.6.2.2.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-6-2.6.2.2.1\">Set <em>searchParamsB</em> to a list containing those items <em>pair</em> in <em>searchParamsB</em> where <em>searchVariance</em>'s no-vary params does not contain <em>pair</em>[0].<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.6.2.2.1\" class=\"pilcrow\">¶</a></p>"
             }
           ]
         },
         {
-          "html": "Otherwise, if <em>searchVariance</em>'s vary params is a list, then:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.7.1\" class=\"pilcrow\">¶</a>",
+          "html": "Otherwise, if <em>searchVariance</em>'s vary params is a list, then:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.7.1\" class=\"pilcrow\">¶</a>",
           "rationale": "set",
           "steps": [
             {
-              "html": "<p id=\"section-5-2.7.2.1.1\">Set <em>searchParamsA</em> to a list containing those items <em>pair</em> in <em>searchParamsA</em> where <em>searchVariance</em>'s vary params contains <em>pair</em>[0].<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.7.2.1.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-6-2.7.2.1.1\">Set <em>searchParamsA</em> to a list containing those items <em>pair</em> in <em>searchParamsA</em> where <em>searchVariance</em>'s vary params contains <em>pair</em>[0].<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.7.2.1.1\" class=\"pilcrow\">¶</a></p>"
             },
             {
-              "html": "<p id=\"section-5-2.7.2.2.1\">Set <em>searchParamsB</em> to a list containing those items <em>pair</em> in <em>searchParamsB</em> where <em>searchVariance</em>'s vary params contains <em>pair</em>[0].<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.7.2.2.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-6-2.7.2.2.1\">Set <em>searchParamsB</em> to a list containing those items <em>pair</em> in <em>searchParamsB</em> where <em>searchVariance</em>'s vary params contains <em>pair</em>[0].<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.7.2.2.1\" class=\"pilcrow\">¶</a></p>"
             }
           ]
         },
         {
-          "html": "If <em>searchVariance</em>'s vary on key order is false, then:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.8.1\" class=\"pilcrow\">¶</a>",
+          "html": "If <em>searchVariance</em>'s vary on key order is false, then:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.8.1\" class=\"pilcrow\">¶</a>",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p id=\"section-5-2.8.2.1.1\">Let <em>keyLessThan</em> be an algorithm taking as inputs two pairs (<em>keyA</em>, <em>valueA</em>) and (<em>keyB</em>, <em>valueB</em>), which returns whether <em>keyA</em> is <a href=\"https://infra.spec.whatwg.org/#code-unit-less-than\">code unit less than</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-INFRA\" class=\"cite xref\">WHATWG-INFRA</a>]</span> <em>keyB</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.8.2.1.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-6-2.8.2.1.1\">Let <em>keyLessThan</em> be an algorithm taking as inputs two pairs (<em>keyA</em>, <em>valueA</em>) and (<em>keyB</em>, <em>valueB</em>), which returns whether <em>keyA</em> is <a href=\"https://infra.spec.whatwg.org/#code-unit-less-than\">code unit less than</a> <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#WHATWG-INFRA\" class=\"cite xref\">WHATWG-INFRA</a>]</span> <em>keyB</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.8.2.1.1\" class=\"pilcrow\">¶</a></p>"
             },
             {
-              "html": "<p id=\"section-5-2.8.2.2.1\">Set <em>searchParamsA</em> to the result of sorting <em>searchParamsA</em> in ascending order with <em>keyLessThan</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.8.2.2.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-6-2.8.2.2.1\">Set <em>searchParamsA</em> to the result of sorting <em>searchParamsA</em> in ascending order with <em>keyLessThan</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.8.2.2.1\" class=\"pilcrow\">¶</a></p>"
             },
             {
-              "html": "<p id=\"section-5-2.8.2.3.1\">Set <em>searchParamsB</em> to the result of sorting <em>searchParamsB</em> in ascending order with <em>keyLessThan</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.8.2.3.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-6-2.8.2.3.1\">Set <em>searchParamsB</em> to the result of sorting <em>searchParamsB</em> in ascending order with <em>keyLessThan</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.8.2.3.1\" class=\"pilcrow\">¶</a></p>"
             }
           ]
         },
         {
-          "html": "<p id=\"section-5-2.9.1\">If <em>searchParamsA</em>'s size is not equal to <em>searchParamsB</em>'s size, then return false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.9.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-6-2.9.1\">If <em>searchParamsA</em>'s size is not equal to <em>searchParamsB</em>'s size, then return false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.9.1\" class=\"pilcrow\">¶</a></p>"
         },
         {
-          "html": "<p id=\"section-5-2.10.1\">Let <em>i</em> be 0.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.10.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-6-2.10.1\">Let <em>i</em> be 0.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.10.1\" class=\"pilcrow\">¶</a></p>"
         },
         {
-          "html": "While <em>i</em> &lt; <em>searchParamsA</em>'s size:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.11.1\" class=\"pilcrow\">¶</a>",
+          "html": "While <em>i</em> &lt; <em>searchParamsA</em>'s size:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.11.1\" class=\"pilcrow\">¶</a>",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p id=\"section-5-2.11.2.1.1\">If <em>searchParamsA</em>[<em>i</em>][0] does not equal <em>searchParamsB</em>[<em>i</em>][0], then return false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.11.2.1.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-6-2.11.2.1.1\">If <em>searchParamsA</em>[<em>i</em>][0] does not equal <em>searchParamsB</em>[<em>i</em>][0], then return false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.11.2.1.1\" class=\"pilcrow\">¶</a></p>"
             },
             {
-              "html": "<p id=\"section-5-2.11.2.2.1\">If <em>searchParamsA</em>[<em>i</em>][1] does not equal <em>searchParamsB</em>[<em>i</em>][1], then return false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.11.2.2.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-6-2.11.2.2.1\">If <em>searchParamsA</em>[<em>i</em>][1] does not equal <em>searchParamsB</em>[<em>i</em>][1], then return false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.11.2.2.1\" class=\"pilcrow\">¶</a></p>"
             },
             {
-              "html": "<p id=\"section-5-2.11.2.3.1\">Set <em>i</em> to <em>i</em> + 1.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.11.2.3.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-6-2.11.2.3.1\">Set <em>i</em> to <em>i</em> + 1.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.11.2.3.1\" class=\"pilcrow\">¶</a></p>"
             }
           ]
         },
         {
-          "html": "<p id=\"section-5-2.12.1\">Return true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5-2.12.1\" class=\"pilcrow\">¶</a></p>"
+          "html": "<p id=\"section-6-2.12.1\">Return true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6-2.12.1\" class=\"pilcrow\">¶</a></p>"
         }
       ]
     }
