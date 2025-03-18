@@ -173,7 +173,7 @@
       "name": "<linear-gradient-syntax>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-linear-gradient-syntax",
       "type": "type",
-      "value": "[ [ <angle> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list>"
+      "value": "[ [ <angle> | <zero> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list>"
     },
     {
       "name": "<side-or-corner>",
@@ -194,11 +194,11 @@
       "value": "conic-gradient( [ <conic-gradient-syntax> ] )",
       "values": [
         {
-          "name": "<angle>",
+          "name": "<angle> | <zero>",
           "prose": "The entire gradient is rotated by this angle. If omitted, defaults to 0deg. The unit identifier may be omitted if the <angle> is zero.",
-          "href": "https://drafts.csswg.org/css-images-4/#valdef-conic-gradient-angle",
+          "href": "https://drafts.csswg.org/css-images-4/#valdef-conic-gradient-angle--zero",
           "type": "value",
-          "value": "<angle>"
+          "value": "<angle> | <zero>"
         },
         {
           "name": "<position>",
@@ -213,7 +213,7 @@
       "name": "<conic-gradient-syntax>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-conic-gradient-syntax",
       "type": "type",
-      "value": "[ [ [ from <angle> ]? [ at <position> ]? ] || <color-interpolation-method> ]? , <angular-color-stop-list>"
+      "value": "[ [ [ from [ <angle> | <zero> ] ]? [ at <position> ]? ] || <color-interpolation-method> ]? , <angular-color-stop-list>"
     },
     {
       "name": "repeating-linear-gradient()",
@@ -237,11 +237,11 @@
       "value": "repeating-conic-gradient( [ <conic-gradient-syntax> ] )",
       "values": [
         {
-          "name": "<angle>",
+          "name": "<angle> | <zero>",
           "prose": "The entire gradient is rotated by this angle. If omitted, defaults to 0deg. The unit identifier may be omitted if the <angle> is zero.",
-          "href": "https://drafts.csswg.org/css-images-4/#valdef-conic-gradient-angle",
+          "href": "https://drafts.csswg.org/css-images-4/#valdef-conic-gradient-angle--zero",
           "type": "value",
-          "value": "<angle>"
+          "value": "<angle> | <zero>"
         },
         {
           "name": "<position>",
@@ -292,13 +292,13 @@
       "name": "<angular-color-hint>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-angular-color-hint",
       "type": "type",
-      "value": "<angle-percentage>"
+      "value": "<angle-percentage> | <zero>"
     },
     {
       "name": "<color-stop-angle>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-color-stop-angle",
       "type": "type",
-      "value": "<angle-percentage>{1,2}"
+      "value": "[ <angle-percentage> | <zero> ]{1,2}"
     },
     {
       "name": "<color-stop>",
