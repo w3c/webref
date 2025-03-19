@@ -563,7 +563,37 @@
       "name": "<random-value-sharing>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-random-value-sharing",
       "type": "type",
-      "value": "[ [ auto | <dashed-ident> ] || match-element ] | fixed <number [0,1]>"
+      "value": "[ [ auto | <dashed-ident> ] || match-element ] | fixed <number [0,1]>",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Each random function in an element’s styles will use a distinct random base value. (But see the note below for a small wrinkle about this.) If neither auto nor <dashed-ident> are specified, it behaves as auto.",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-random-auto",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "<dashed-ident>",
+          "prose": "Each random function in an element’s styles with the same <dashed-ident> will share the same random base value; ones with different <dashed-ident>s will use distinct random base values.",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-random-dashed-ident",
+          "type": "value",
+          "value": "<dashed-ident>"
+        },
+        {
+          "name": "match-element",
+          "prose": "If match-element is omitted, random functions on different elements will use distinct random base values. If specified, random functions on different elements will share the same random base value if they have the same <dashed-ident> (if specified) or if they’re used in the same style in the same way (if not). (Again, see the note below for a small wrinkle about this.)",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-random-match-element",
+          "type": "value",
+          "value": "match-element"
+        },
+        {
+          "name": "<number>",
+          "prose": "If fixed <number> is specified, the <number> is used as the random function’s random base value, rather than allowing the UA to generate a random base value and controlling how it’s shared. While 1 is technically allowed as a valid value (because CSS grammars can only express closed ranges), the random base value is clamped to the highest representable value less than 1, so random base values remain in the half-open range `[0, 1)`.",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-random-fixed",
+          "type": "value",
+          "value": "<number>"
+        }
+      ]
     },
     {
       "name": "random-item()",
@@ -649,42 +679,6 @@
       "msg": "Missing definition",
       "name": "<cross-fade()>",
       "value": "cross-fade( <progress>, [ <image> | <color> ], [ <image> | <color> ] ) | cross-fade( <cf-image># )"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "auto",
-      "prose": "Each random function in an element’s styles will use a distinct random base value. (But see the note below for a small wrinkle about this.) If neither auto nor <dashed-ident> are specified, it behaves as auto.",
-      "href": "https://drafts.csswg.org/css-values-5/#valdef-randomrandom-value-sharing-auto",
-      "type": "value",
-      "value": "auto",
-      "for": "random()|<random-value-sharing>"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "<dashed-ident>",
-      "prose": "Each random function in an element’s styles with the same <dashed-ident> will share the same random base value; ones with different <dashed-ident>s will use distinct random base values.",
-      "href": "https://drafts.csswg.org/css-values-5/#valdef-randomrandom-value-sharing-dashed-ident",
-      "type": "value",
-      "value": "<dashed-ident>",
-      "for": "random()|<random-value-sharing>"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "match-element",
-      "prose": "If match-element is omitted, random functions on different elements will use distinct random base values. If specified, random functions on different elements will share the same random base value if they have the same <dashed-ident> (if specified) or if they’re used in the same style in the same way (if not). (Again, see the note below for a small wrinkle about this.)",
-      "href": "https://drafts.csswg.org/css-values-5/#valdef-randomrandom-value-sharing-match-element",
-      "type": "value",
-      "value": "match-element",
-      "for": "random()|<random-value-sharing>"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "<number>",
-      "prose": "If fixed <number> is specified, the <number> is used as the random function’s random base value, rather than allowing the UA to generate a random base value and controlling how it’s shared. While 1 is technically allowed as a valid value (because CSS grammars can only express closed ranges), the random base value is clamped to the highest representable value less than 1, so random base values remain in the half-open range `[0, 1)`.",
-      "href": "https://drafts.csswg.org/css-values-5/#valdef-randomrandom-value-sharing-fixed",
-      "type": "value",
-      "value": "<number>",
-      "for": "random()|<random-value-sharing>"
     }
   ]
 }
