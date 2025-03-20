@@ -3244,6 +3244,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpuadapterinfo-isfallbackadapter",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuadapterinfo-isfallbackadapter",
+      "linkingText": [
+        "isFallbackAdapter"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpuadapterinfo",
+        "href": "https://www.w3.org/TR/webgpu/#gpuadapterinfo",
+        "title": "GPUAdapterInfo",
+        "number": "3.6.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "abstract-opdef-new-adapter-info",
       "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-new-adapter-info",
       "linkingText": [
@@ -3887,27 +3908,6 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gpuadapter-info",
       "linkingText": [
         "info"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUAdapter"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "gpuadapter",
-        "href": "https://www.w3.org/TR/webgpu/#gpuadapter",
-        "title": "GPUAdapter",
-        "number": "4.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpuadapter-isfallbackadapter",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuadapter-isfallbackadapter",
-      "linkingText": [
-        "isFallbackAdapter"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -17821,6 +17821,72 @@
       "definedIn": "heading"
     },
     {
+      "id": "dom-gpucommandencoder-copybuffertobuffer-source-destination-size-source",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-copybuffertobuffer-source-destination-size-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/copyBufferToBuffer(source, destination, size)",
+        "GPUCommandEncoder/copyBufferToBuffer(source, destination)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpucommandencoder",
+        "href": "https://www.w3.org/TR/webgpu/#gpucommandencoder",
+        "title": "GPUCommandEncoder",
+        "number": "13.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpucommandencoder-copybuffertobuffer-source-destination-size-destination",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-copybuffertobuffer-source-destination-size-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/copyBufferToBuffer(source, destination, size)",
+        "GPUCommandEncoder/copyBufferToBuffer(source, destination)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpucommandencoder",
+        "href": "https://www.w3.org/TR/webgpu/#gpucommandencoder",
+        "title": "GPUCommandEncoder",
+        "number": "13.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpucommandencoder-copybuffertobuffer-source-destination-size-size",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-copybuffertobuffer-source-destination-size-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/copyBufferToBuffer(source, destination, size)",
+        "GPUCommandEncoder/copyBufferToBuffer(source, destination)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpucommandencoder",
+        "href": "https://www.w3.org/TR/webgpu/#gpucommandencoder",
+        "title": "GPUCommandEncoder",
+        "number": "13.2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-gpucommandencoderdescriptor",
       "href": "https://www.w3.org/TR/webgpu/#dictdef-gpucommandencoderdescriptor",
       "linkingText": [
@@ -17968,10 +18034,54 @@
       "definedIn": "table"
     },
     {
+      "id": "gpucommandencoder-copybuffertobuffer",
+      "href": "https://www.w3.org/TR/webgpu/#gpucommandencoder-copybuffertobuffer",
+      "linkingText": [
+        "copyBufferToBuffer()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "GPUCommandEncoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "commands-buffer-copies",
+        "href": "https://www.w3.org/TR/webgpu/#commands-buffer-copies",
+        "title": "Buffer Copy Commands",
+        "number": "13.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-gpucommandencoder-copybuffertobuffer",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-copybuffertobuffer",
       "linkingText": [
-        "copyBufferToBuffer(source, sourceOffset, destination, destinationOffset, size)"
+        "copyBufferToBuffer(source, destination, size)",
+        "copyBufferToBuffer(source, destination)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUCommandEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "commands-buffer-copies",
+        "href": "https://www.w3.org/TR/webgpu/#commands-buffer-copies",
+        "title": "Buffer Copy Commands",
+        "number": "13.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size",
+      "linkingText": [
+        "copyBufferToBuffer(source, sourceOffset, destination, destinationOffset, size)",
+        "copyBufferToBuffer(source, sourceOffset, destination, destinationOffset)"
       ],
       "localLinkingText": [],
       "type": "method",
