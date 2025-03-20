@@ -342,7 +342,7 @@
       "rationale": "resolve",
       "steps": [
         {
-          "html": "Layout the grid following the <a href=\"https://drafts.csswg.org/css-grid-2/#layout-algorithm\" id=\"ref-for-layout-algorithm②\">§ 12 Grid Layout Algorithm</a> by using the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#fragmentation-container\" id=\"ref-for-fragmentation-container②\">fragmentation container</a>’s inline size and assume unlimited block size.\n\t\t\tDuring this step all <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-grid-2/#propdef-grid-row\" id=\"ref-for-propdef-grid-row⑥\">grid-row</a> <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-grid-2/#valdef-grid-template-columns-auto\" id=\"ref-for-valdef-grid-template-columns-auto①⑤\">auto</a> and <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-grid-2/#valdef-flex-fr\" id=\"ref-for-valdef-flex-fr⑨\">fr</a> values must be resolved."
+          "html": "Layout the grid following the <a href=\"https://drafts.csswg.org/css-grid-2/#layout-algorithm\" id=\"ref-for-layout-algorithm②\">§ 12 Grid Layout Algorithm</a> by using the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#fragmentation-container\" id=\"ref-for-fragmentation-container②\">fragmentation container</a>’s inline size and assume unlimited block size.\n\t\t\tDuring this step all <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-grid-2/#propdef-grid-row\" id=\"ref-for-propdef-grid-row⑥\">grid-row</a> <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-grid-2/#grid-placement-auto\" id=\"ref-for-grid-placement-auto①②\">auto</a> and <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-grid-2/#valdef-flex-fr\" id=\"ref-for-valdef-flex-fr⑨\">fr</a> values must be resolved."
         },
         {
           "html": "Layout the grid container using the values resolved in the previous step."
@@ -351,7 +351,7 @@
           "html": "If a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-2/#grid-area\" id=\"ref-for-grid-area③⑥\">grid area</a>’s size changes due to fragmentation (do not include items that\n\t\t\tspan rows in this decision), increase the grid row size as necessary for rows that either: \n     <ul>\n      <li> have a content min track sizing function. \n      </li><li> are in a grid that does not have an explicit height and the grid row is flexible. \n     </li></ul>"
         },
         {
-          "html": "If the grid height is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-grid-2/#valdef-grid-template-columns-auto\" id=\"ref-for-valdef-grid-template-columns-auto①⑥\">auto</a>, the height of the grid should be the sum of the final\n\t\t\trow sizes."
+          "html": "If the grid height is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-grid-2/#grid-placement-auto\" id=\"ref-for-grid-placement-auto①③\">auto</a>, the height of the grid should be the sum of the final\n\t\t\trow sizes."
         },
         {
           "html": "If a grid area overflows the grid container due to margins being collapsed during\n\t\t\tfragmentation, extend the grid container to contain this grid area (this step is\n\t\t\tnecessary in order to avoid circular layout dependencies due to fragmentation)."
