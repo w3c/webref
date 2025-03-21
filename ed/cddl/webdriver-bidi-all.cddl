@@ -12,6 +12,7 @@ Command = {
 CommandData = (
   BrowserCommand //
   BrowsingContextCommand //
+  EmulationCommand //
   InputCommand //
   NetworkCommand //
   ScriptCommand //
@@ -757,6 +758,31 @@ browsingContext.UserPromptOpenedParameters = {
   message: text,
   type: browsingContext.UserPromptType,
   ? defaultValue: text
+}
+
+EmulationCommand = (
+  emulation.setGeolocationOverride
+)
+
+emulation.SetGeolocationOverride = (
+  method: "emulation.setGeolocationOverride",
+  params: emulation.SetGeolocationOverrideParameters
+)
+
+emulation.SetGeolocationOverrideParameters = {
+  coordinates: emulation.GeolocationCoordinates / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.GeolocationCoordinates = {
+   latitude: float,
+   longitude: float,
+   ? accuracy: float .default 1.0,
+   ? altitude: float / null .default null,
+   ? altitudeAccuracy: float / null .default null,
+   ? heading: float / null .default null,
+   ? speed: float / null .default null,
 }
 
 NetworkCommand = (
