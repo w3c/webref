@@ -5,15 +5,19 @@
   },
   "links": {
     "rawlinks": {
-      "http://alistapart.com/article/application-cache-is-a-douchebag": {
+      "https://alistapart.com/article/application-cache-is-a-douchebag/": {
         "anchors": [
           "section6"
         ]
       },
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://developer.chrome.com/extensions/background_pages": {},
-      "https://developer.chrome.com/extensions/event_pages": {},
-      "https://developer.mozilla.org/docs/Web/API/Window/applicationCache": {},
+      "https://datatracker.ietf.org/doc/html/rfc2397": {
+        "anchors": [
+          "section-2"
+        ]
+      },
+      "https://developer.chrome.com/docs/apps/event_pages": {},
+      "https://developer.chrome.com/docs/extensions/mv2/background-pages": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/Cache": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/Cache/add": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/Cache/addAll": {},
@@ -137,11 +141,6 @@
       "https://storage.spec.whatwg.org/": {},
       "https://streams.spec.whatwg.org/": {},
       "https://tc39.es/ecma262/multipage/": {},
-      "https://tools.ietf.org/html/rfc2397": {
-        "anchors": [
-          "section-2"
-        ]
-      },
       "https://url.spec.whatwg.org/": {},
       "https://urlpattern.spec.whatwg.org/": {},
       "https://w3c.github.io/FileAPI/": {},
@@ -161,9 +160,9 @@
       },
       "https://w3c.github.io/push-api/": {
         "anchors": [
-          "dfn-push",
+          "pushevent-interface",
           "dom-pushevent",
-          "dfn-fire-the-push-event"
+          "receiving-a-push-message"
         ]
       },
       "https://w3c.github.io/trusted-types/dist/spec/": {},
@@ -175,9 +174,8 @@
         ]
       },
       "https://webidl.spec.whatwg.org/": {},
-      "https://wicg.github.io/BackgroundSync/spec/": {
+      "https://wicg.github.io/background-sync/spec/": {
         "anchors": [
-          "sync",
           "syncevent",
           "fire-a-sync-event"
         ]
@@ -186,7 +184,11 @@
       "https://wicg.github.io/page-lifecycle/": {},
       "https://www.rfc-editor.org/rfc/rfc5234": {},
       "https://www.w3.org/2001/tag/doc/unsanctioned-tracking/": {},
-      "https://www.w3.org/TR/page-visibility/": {},
+      "https://www.w3.org/TR/2014/REC-html5-20141028/browsers.html": {
+        "anchors": [
+          "appcache"
+        ]
+      },
       "https://www.w3.org/groups/wg/webapps": {},
       "https://www.w3.org/groups/wg/webapps/ipr": {},
       "https://www.w3.org/policies/patent-policy/": {
@@ -198,21 +200,14 @@
       "https://www.w3.org/policies/process/20231103/": {}
     },
     "autolinks": {
-      "http://tc39.github.io/ecma262/": {
+      "https://datatracker.ietf.org/doc/html/rfc7230": {
         "anchors": [
-          "sec-completion-record-specification-type",
-          "sec-promise-objects",
-          "sec-detacharraybuffer",
-          "sec-map-objects",
-          "agent",
-          "sec-throwcompletion",
-          "sec-normalcompletion",
-          "sec-iscallable",
-          "prod-FunctionBody",
-          "sec-ecmascript-language-statements-and-declarations",
-          "sec-algorithm-conventions",
-          "sec-abstract-module-records",
-          "sec-cyclic-module-records"
+          "section-3.2"
+        ]
+      },
+      "https://datatracker.ietf.org/doc/html/rfc7231": {
+        "anchors": [
+          "section-7.1.4"
         ]
       },
       "https://dom.spec.whatwg.org/": {
@@ -329,7 +324,7 @@
           "concept-origin-opaque",
           "same-origin",
           "ascii-serialisation-of-an-origin",
-          "concept-location-ancestor-origins-list"
+          "creating-a-policy-container-from-a-fetch-response"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
@@ -385,6 +380,7 @@
       },
       "https://html.spec.whatwg.org/multipage/interaction.html": {
         "anchors": [
+          "page-visibility",
           "transient-activation",
           "focusing-steps",
           "has-focus-steps"
@@ -394,12 +390,8 @@
         "anchors": [
           "window",
           "concept-document-window",
-          "location"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/origin.html": {
-        "anchors": [
-          "creating-a-policy-container-from-a-fetch-response"
+          "location",
+          "concept-location-ancestor-origins-list"
         ]
       },
       "https://html.spec.whatwg.org/multipage/structured-data.html": {
@@ -593,19 +585,26 @@
           "readablestream-cancel"
         ]
       },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-completion-record-specification-type",
+          "sec-promise-objects",
+          "sec-detacharraybuffer",
+          "sec-map-objects",
+          "agent",
+          "sec-throwcompletion",
+          "sec-normalcompletion",
+          "sec-iscallable",
+          "prod-FunctionBody",
+          "sec-ecmascript-language-statements-and-declarations",
+          "sec-algorithm-conventions",
+          "sec-abstract-module-records",
+          "sec-cyclic-module-records"
+        ]
+      },
       "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
         "anchors": [
           "surrounding-agent"
-        ]
-      },
-      "https://tools.ietf.org/html/rfc7230": {
-        "anchors": [
-          "section-3.2"
-        ]
-      },
-      "https://tools.ietf.org/html/rfc7231": {
-        "anchors": [
-          "section-7.1.4"
         ]
       },
       "https://url.spec.whatwg.org/": {
@@ -655,7 +654,7 @@
       },
       "https://w3c.github.io/push-api/": {
         "anchors": [
-          "h-the-push-event"
+          "pushevent-interface"
         ]
       },
       "https://w3c.github.io/trusted-types/dist/spec/": {
@@ -731,12 +730,6 @@
       "https://wicg.github.io/page-lifecycle/": {
         "anchors": [
           "discarded"
-        ]
-      },
-      "https://www.w3.org/TR/page-visibility/": {
-        "anchors": [
-          "VisibilityState",
-          "dom-document-visibilitystate"
         ]
       }
     }
