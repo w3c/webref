@@ -781,7 +781,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#gpuwgsllanguagefeatures"
       },
       "GPUAdapterInfo": {
-        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUAdapterInfo {\n    readonly attribute DOMString vendor;\n    readonly attribute DOMString architecture;\n    readonly attribute DOMString device;\n    readonly attribute DOMString description;\n    readonly attribute unsigned long subgroupMinSize;\n    readonly attribute unsigned long subgroupMaxSize;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUAdapterInfo {\n    readonly attribute DOMString vendor;\n    readonly attribute DOMString architecture;\n    readonly attribute DOMString device;\n    readonly attribute DOMString description;\n    readonly attribute unsigned long subgroupMinSize;\n    readonly attribute unsigned long subgroupMaxSize;\n    readonly attribute boolean isFallbackAdapter;\n};",
         "type": "interface",
         "name": "GPUAdapterInfo",
         "inheritance": null,
@@ -881,6 +881,22 @@
             "special": "",
             "readonly": true,
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterinfo-subgroupmaxsize"
+          },
+          {
+            "type": "attribute",
+            "name": "isFallbackAdapter",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterinfo-isfallbackadapter"
           }
         ],
         "extAttrs": [
@@ -1171,7 +1187,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpupowerpreference"
       },
       "GPUAdapter": {
-        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUAdapter {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    [SameObject] readonly attribute GPUAdapterInfo info;\n    readonly attribute boolean isFallbackAdapter;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUAdapter {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    [SameObject] readonly attribute GPUAdapterInfo info;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUAdapter",
         "inheritance": null,
@@ -1244,22 +1260,6 @@
             "special": "",
             "readonly": true,
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-info"
-          },
-          {
-            "type": "attribute",
-            "name": "isFallbackAdapter",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-isfallbackadapter"
           },
           {
             "type": "operation",
@@ -8333,7 +8333,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#gpucommandsmixin"
       },
       "GPUCommandEncoder": {
-        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUTexelCopyBufferInfo source,\n        GPUTexelCopyTextureInfo destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUTexelCopyTextureInfo source,\n        GPUTexelCopyBufferInfo destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUTexelCopyTextureInfo source,\n        GPUTexelCopyTextureInfo destination,\n        GPUExtent3D copySize);\n\n    undefined clearBuffer(\n        GPUBuffer buffer,\n        optional GPUSize64 offset = 0,\n        optional GPUSize64 size);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUBuffer destination,\n        optional GPUSize64 size);\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        optional GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUTexelCopyBufferInfo source,\n        GPUTexelCopyTextureInfo destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUTexelCopyTextureInfo source,\n        GPUTexelCopyBufferInfo destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUTexelCopyTextureInfo source,\n        GPUTexelCopyTextureInfo destination,\n        GPUExtent3D copySize);\n\n    undefined clearBuffer(\n        GPUBuffer buffer,\n        optional GPUSize64 offset = 0,\n        optional GPUSize64 size);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUCommandEncoder",
         "inheritance": null,
@@ -8436,6 +8436,71 @@
               },
               {
                 "type": "argument",
+                "name": "destination",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUBuffer"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "size",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize64"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertobuffer"
+          },
+          {
+            "type": "operation",
+            "name": "copyBufferToBuffer",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "source",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUBuffer"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
                 "name": "sourceOffset",
                 "extAttrs": [],
                 "idlType": {
@@ -8495,13 +8560,13 @@
                   "idlType": "GPUSize64"
                 },
                 "default": null,
-                "optional": false,
+                "optional": true,
                 "variadic": false
               }
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertobuffer"
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size"
           },
           {
             "type": "operation",

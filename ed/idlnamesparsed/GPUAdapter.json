@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUAdapter {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    [SameObject] readonly attribute GPUAdapterInfo info;\n    readonly attribute boolean isFallbackAdapter;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
+    "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUAdapter {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    [SameObject] readonly attribute GPUAdapterInfo info;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpuadapter"
   },
   "extended": [],

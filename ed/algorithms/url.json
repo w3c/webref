@@ -828,7 +828,7 @@
     {
       "name": "relative-URL string",
       "href": "https://url.spec.whatwg.org/#relative-url-string",
-      "html": "A <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"relative-url-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">relative-URL string<span id=\"syntax-url-relative\"></span></dfn> must be one of the following,\nswitching on <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url⑦\">base URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①①\">scheme</a>:",
+      "html": "A <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"relative-url-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"syntax-url-relative\"></span>relative-URL string</dfn> must be one of the following,\nswitching on <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url⑦\">base URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①①\">scheme</a>:",
       "rationale": ".switch",
       "steps": [
         {
@@ -1241,14 +1241,14 @@
                       "html": "<p>If <var>state override</var> is given and <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②⑦\">scheme</a> is\n     \"<code>file</code>\", then decrease <var>pointer</var> by 1 and set <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#file-host-state\" id=\"ref-for-file-host-state\">file host state</a>. </p>"
                     },
                     {
-                      "html": "Otherwise, if <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c④②\">c</a> is U+003A (:) and <var>insideBrackets</var> is false, then:",
+                      "html": "Otherwise, if <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c④②\">c</a> is U+003A (:) and <var>insideBrackets</var> is false:",
                       "rationale": "if",
                       "steps": [
                         {
                           "html": "<p>If <var>buffer</var> is the empty string, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-missing\" id=\"ref-for-host-missing①\">host-missing</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④②\">validation error</a>,\n       return failure. </p>"
                         },
                         {
-                          "html": "<p>If <var>state override</var> is given and <var>state override</var> is <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#hostname-state\" id=\"ref-for-hostname-state\">hostname state</a>, then return. </p>"
+                          "html": "<p>If <var>state override</var> is given and <var>state override</var> is <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#hostname-state\" id=\"ref-for-hostname-state\">hostname state</a>, then return failure. </p>"
                         },
                         {
                           "html": "<p>Let <var>host</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host-parser\" id=\"ref-for-concept-host-parser⑧\">host parsing</a> <var>buffer</var> with <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-not-special\" id=\"ref-for-is-not-special①\">is not special</a>. </p>"
@@ -1262,14 +1262,14 @@
                       ]
                     },
                     {
-                      "html": "then decrease <var>pointer</var> by 1, and then:",
+                      "html": "then decrease <var>pointer</var> by 1, and:",
                       "rationale": "if",
                       "steps": [
                         {
                           "html": "<p>If <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special⑨\">is special</a> and <var>buffer</var> is the empty string, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-missing\" id=\"ref-for-host-missing②\">host-missing</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④③\">validation error</a>, return failure. </p>"
                         },
                         {
-                          "html": "<p>Otherwise, if <var>state override</var> is given, <var>buffer</var> is the empty\n       string, and either <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#include-credentials\" id=\"ref-for-include-credentials②\">includes credentials</a> or <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port⑧\">port</a> is non-null, return. </p>"
+                          "html": "<p>Otherwise, if <var>state override</var> is given, <var>buffer</var> is the empty\n       string, and either <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#include-credentials\" id=\"ref-for-include-credentials②\">includes credentials</a> or <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port⑧\">port</a> is non-null, then return failure. </p>"
                         },
                         {
                           "html": "<p>Let <var>host</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host-parser\" id=\"ref-for-concept-host-parser⑨\">host parsing</a> <var>buffer</var> with <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-not-special\" id=\"ref-for-is-not-special②\">is not special</a>. </p>"
@@ -1311,14 +1311,14 @@
                       "html": "<p>If <var>state override</var> is given and <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②⑦\">scheme</a> is\n     \"<code>file</code>\", then decrease <var>pointer</var> by 1 and set <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#file-host-state\" id=\"ref-for-file-host-state\">file host state</a>. </p>"
                     },
                     {
-                      "html": "Otherwise, if <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c④②\">c</a> is U+003A (:) and <var>insideBrackets</var> is false, then:",
+                      "html": "Otherwise, if <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c④②\">c</a> is U+003A (:) and <var>insideBrackets</var> is false:",
                       "rationale": "if",
                       "steps": [
                         {
                           "html": "<p>If <var>buffer</var> is the empty string, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-missing\" id=\"ref-for-host-missing①\">host-missing</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④②\">validation error</a>,\n       return failure. </p>"
                         },
                         {
-                          "html": "<p>If <var>state override</var> is given and <var>state override</var> is <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#hostname-state\" id=\"ref-for-hostname-state\">hostname state</a>, then return. </p>"
+                          "html": "<p>If <var>state override</var> is given and <var>state override</var> is <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#hostname-state\" id=\"ref-for-hostname-state\">hostname state</a>, then return failure. </p>"
                         },
                         {
                           "html": "<p>Let <var>host</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host-parser\" id=\"ref-for-concept-host-parser⑧\">host parsing</a> <var>buffer</var> with <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-not-special\" id=\"ref-for-is-not-special①\">is not special</a>. </p>"
@@ -1332,14 +1332,14 @@
                       ]
                     },
                     {
-                      "html": "then decrease <var>pointer</var> by 1, and then:",
+                      "html": "then decrease <var>pointer</var> by 1, and:",
                       "rationale": "if",
                       "steps": [
                         {
                           "html": "<p>If <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special⑨\">is special</a> and <var>buffer</var> is the empty string, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-missing\" id=\"ref-for-host-missing②\">host-missing</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④③\">validation error</a>, return failure. </p>"
                         },
                         {
-                          "html": "<p>Otherwise, if <var>state override</var> is given, <var>buffer</var> is the empty\n       string, and either <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#include-credentials\" id=\"ref-for-include-credentials②\">includes credentials</a> or <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port⑧\">port</a> is non-null, return. </p>"
+                          "html": "<p>Otherwise, if <var>state override</var> is given, <var>buffer</var> is the empty\n       string, and either <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#include-credentials\" id=\"ref-for-include-credentials②\">includes credentials</a> or <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port⑧\">port</a> is non-null, then return failure. </p>"
                         },
                         {
                           "html": "<p>Let <var>host</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host-parser\" id=\"ref-for-concept-host-parser⑨\">host parsing</a> <var>buffer</var> with <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-not-special\" id=\"ref-for-is-not-special②\">is not special</a>. </p>"
@@ -1385,7 +1385,7 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "If <var>buffer</var> is not the empty string, then:",
+                          "html": "If <var>buffer</var> is not the empty string:",
                           "rationale": "let",
                           "steps": [
                             {
@@ -1399,11 +1399,14 @@
                             },
                             {
                               "html": "<p>Set <var>buffer</var> to the empty string. </p>"
+                            },
+                            {
+                              "html": "<p>If <var>state override</var> is given, then return. </p>"
                             }
                           ]
                         },
                         {
-                          "html": "<p>If <var>state override</var> is given, then return. </p>"
+                          "html": "<p>If <var>state override</var> is given, then return failure. </p>"
                         },
                         {
                           "html": "<p>Set <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#path-start-state\" id=\"ref-for-path-start-state①\">path start state</a> and decrease <var>pointer</var> by 1. </p>"
@@ -2392,7 +2395,7 @@
     {
       "name": "URLSearchParams/initialize",
       "href": "https://url.spec.whatwg.org/#urlsearchparams-initialize",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"URLSearchParams\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"urlsearchparams-initialize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize<span id=\"concept-urlsearchparams-new\"></span></dfn> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#urlsearchparams\" id=\"ref-for-urlsearchparams⑦\">URLSearchParams</a></code> object <var>query</var> with <var>init</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"URLSearchParams\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"urlsearchparams-initialize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"concept-urlsearchparams-new\"></span>initialize</dfn> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#urlsearchparams\" id=\"ref-for-urlsearchparams⑦\">URLSearchParams</a></code> object <var>query</var> with <var>init</var>:",
       "rationale": ".algorithm",
       "steps": [
         {

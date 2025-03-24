@@ -556,7 +556,7 @@
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://drafts.csswg.org/web-animations-2/#dictdef-animatable-timelinerangeoffset"
+        "href": "https://drafts.csswg.org/web-animations-2/#dictdef-timelinerangeoffset"
       },
       "AnimationPlaybackEvent": {
         "fragment": "[Exposed=Window]\ninterface AnimationPlaybackEvent : Event {\n    constructor(DOMString type, optional AnimationPlaybackEventInit\n    eventInitDict = {});\n    readonly attribute CSSNumberish? currentTime;\n    readonly attribute CSSNumberish? timelineTime;\n};",
@@ -650,7 +650,7 @@
           }
         ],
         "partial": false,
-        "href": "https://drafts.csswg.org/web-animations-2/#animatable-animationplaybackevent"
+        "href": "https://drafts.csswg.org/web-animations-2/#animationplaybackevent"
       },
       "AnimationPlaybackEventInit": {
         "fragment": "dictionary AnimationPlaybackEventInit : EventInit {\n    CSSNumberish? currentTime = null;\n    CSSNumberish? timelineTime = null;\n};",
@@ -697,7 +697,7 @@
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://drafts.csswg.org/web-animations-2/#dictdef-animatable-animationplaybackeventinit"
+        "href": "https://drafts.csswg.org/web-animations-2/#dictdef-animationplaybackeventinit"
       },
       "AnimationTrigger": {
         "fragment": "[Exposed=Window]\ninterface AnimationTrigger {\n  constructor(optional AnimationTriggerOptions options = {});\n  attribute AnimationTimeline timeline;\n  attribute AnimationTriggerType type;\n  attribute any rangeStart;\n  attribute any rangeEnd;\n  attribute any exitRangeStart;\n  attribute any exitRangeEnd;\n};",
@@ -839,7 +839,7 @@
           }
         ],
         "partial": false,
-        "href": "https://drafts.csswg.org/web-animations-2/#animatable-animationtrigger"
+        "href": "https://drafts.csswg.org/web-animations-2/#animationtrigger"
       },
       "AnimationTriggerOptions": {
         "fragment": "dictionary AnimationTriggerOptions {\n  AnimationTimeline? timeline;\n  AnimationTriggerType? type = \"once\";\n  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeStart = \"normal\";\n  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeEnd = \"normal\";\n  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) exitRangeStart = \"auto\";\n  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) exitRangeEnd = \"auto\";\n};",
@@ -1093,7 +1093,7 @@
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://drafts.csswg.org/web-animations-2/#dictdef-animatable-animationtriggeroptions"
+        "href": "https://drafts.csswg.org/web-animations-2/#dictdef-animationtriggeroptions"
       },
       "AnimationTriggerType": {
         "fragment": "enum AnimationTriggerType { \"once\", \"repeat\", \"alternate\", \"state\" };",
@@ -1122,7 +1122,7 @@
           }
         ],
         "extAttrs": [],
-        "href": "https://drafts.csswg.org/web-animations-2/#enumdef-animatable-animationtriggertype"
+        "href": "https://drafts.csswg.org/web-animations-2/#enumdef-animationtriggertype"
       }
     },
     "idlExtendedNames": {

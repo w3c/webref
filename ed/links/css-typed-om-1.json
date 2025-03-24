@@ -137,24 +137,23 @@
       "https://drafts.csswg.org/css-align/": {},
       "https://drafts.csswg.org/css-animations-2/": {},
       "https://drafts.csswg.org/css-animations/": {},
+      "https://drafts.csswg.org/css-backgrounds-4/": {},
       "https://drafts.csswg.org/css-backgrounds/": {},
       "https://drafts.csswg.org/css-borders-4/": {},
       "https://drafts.csswg.org/css-box-4/": {},
       "https://drafts.csswg.org/css-break-4/": {},
-      "https://drafts.csswg.org/css-break/": {},
       "https://drafts.csswg.org/css-cascade-5/": {},
       "https://drafts.csswg.org/css-color-4/": {},
       "https://drafts.csswg.org/css-color-5/": {},
       "https://drafts.csswg.org/css-color-adjust-1/": {},
       "https://drafts.csswg.org/css-contain-2/": {},
       "https://drafts.csswg.org/css-content-3/": {},
-      "https://drafts.csswg.org/css-display-4/": {},
+      "https://drafts.csswg.org/css-display/": {},
       "https://drafts.csswg.org/css-flexbox-1/": {},
       "https://drafts.csswg.org/css-fonts-4/": {},
       "https://drafts.csswg.org/css-fonts-5/": {},
       "https://drafts.csswg.org/css-gcpm-4/": {},
       "https://drafts.csswg.org/css-grid-2/": {},
-      "https://drafts.csswg.org/css-grid-3/": {},
       "https://drafts.csswg.org/css-images-3/": {},
       "https://drafts.csswg.org/css-images-4/": {},
       "https://drafts.csswg.org/css-inline-3/": {},
@@ -185,7 +184,6 @@
       },
       "https://drafts.csswg.org/css-syntax/": {},
       "https://drafts.csswg.org/css-tables-3/": {},
-      "https://drafts.csswg.org/css-text-3/": {},
       "https://drafts.csswg.org/css-text-4/": {},
       "https://drafts.csswg.org/css-text-decor-4/": {},
       "https://drafts.csswg.org/css-transforms-1/": {
@@ -200,7 +198,6 @@
       "https://drafts.csswg.org/css-values-4/": {},
       "https://drafts.csswg.org/css-variables-2/": {},
       "https://drafts.csswg.org/css-will-change/": {},
-      "https://drafts.csswg.org/css-writing-modes-3/": {},
       "https://drafts.csswg.org/css-writing-modes-4/": {},
       "https://drafts.csswg.org/css2/": {},
       "https://drafts.csswg.org/cssom-1/": {
@@ -248,6 +245,7 @@
       "https://lists.w3.org/Archives/Public/public-houdini-archive/": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
       "https://svgwg.org/svg2-draft/": {},
+      "https://tc39.es/ecma262/multipage/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/": {},
       "https://www.w3.org/policies/process/20231103/": {}
@@ -296,10 +294,7 @@
           "propdef-border-image-source",
           "propdef-background",
           "propdef-background-attachment",
-          "propdef-background-clip",
           "propdef-background-color",
-          "propdef-background-position",
-          "propdef-background-repeat",
           "propdef-border",
           "propdef-border-style",
           "propdef-border-image",
@@ -309,6 +304,13 @@
           "propdef-border-image-outset",
           "propdef-border-image-repeat",
           "valdef-border-image-repeat-stretch"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds-4/": {
+        "anchors": [
+          "propdef-background-clip",
+          "propdef-background-position",
+          "propdef-background-repeat"
         ]
       },
       "https://drafts.csswg.org/css-borders-4/": {
@@ -371,17 +373,13 @@
           "propdef-padding-right"
         ]
       },
-      "https://drafts.csswg.org/css-break-3/": {
-        "anchors": [
-          "propdef-break-after",
-          "propdef-break-before",
-          "propdef-break-inside",
-          "propdef-orphans"
-        ]
-      },
       "https://drafts.csswg.org/css-break-4/": {
         "anchors": [
           "propdef-box-decoration-break",
+          "propdef-break-after",
+          "propdef-break-before",
+          "propdef-break-inside",
+          "propdef-orphans",
           "propdef-widows"
         ]
       },
@@ -487,6 +485,7 @@
           "propdef-grid",
           "propdef-grid-area",
           "propdef-grid-auto-columns",
+          "propdef-grid-auto-flow",
           "propdef-grid-auto-rows",
           "propdef-grid-column",
           "propdef-grid-column-end",
@@ -500,19 +499,14 @@
           "propdef-grid-template-rows"
         ]
       },
-      "https://drafts.csswg.org/css-grid-3/": {
-        "anchors": [
-          "propdef-grid-auto-flow"
-        ]
-      },
       "https://drafts.csswg.org/css-images-3/": {
         "anchors": [
-          "typedef-image",
           "propdef-image-rendering"
         ]
       },
       "https://drafts.csswg.org/css-images-4/": {
         "anchors": [
+          "typedef-image",
           "funcdef-image",
           "propdef-image-resolution",
           "propdef-object-fit"
@@ -526,6 +520,7 @@
           "propdef-initial-letter",
           "propdef-initial-letter-align",
           "propdef-initial-letter-wrap",
+          "propdef-line-height",
           "propdef-vertical-align"
         ]
       },
@@ -598,6 +593,8 @@
       },
       "https://drafts.csswg.org/css-page-floats-3/": {
         "anchors": [
+          "propdef-clear",
+          "propdef-float",
           "propdef-float-defer"
         ]
       },
@@ -748,14 +745,10 @@
           "propdef-table-layout"
         ]
       },
-      "https://drafts.csswg.org/css-text-3/": {
-        "anchors": [
-          "propdef-text-align"
-        ]
-      },
       "https://drafts.csswg.org/css-text-4/": {
         "anchors": [
           "propdef-letter-spacing",
+          "propdef-text-align",
           "propdef-text-indent",
           "propdef-text-transform",
           "propdef-white-space",
@@ -884,28 +877,22 @@
           "propdef-will-change"
         ]
       },
-      "https://drafts.csswg.org/css-writing-modes-3/": {
-        "anchors": [
-          "propdef-direction",
-          "propdef-unicode-bidi"
-        ]
-      },
       "https://drafts.csswg.org/css-writing-modes-4/": {
         "anchors": [
+          "propdef-direction",
           "propdef-glyph-orientation-vertical",
           "propdef-text-combine-upright",
           "propdef-text-orientation",
+          "propdef-unicode-bidi",
           "propdef-writing-mode"
         ]
       },
       "https://drafts.csswg.org/css2/": {
         "anchors": [
           "propdef-z-index",
-          "propdef-clear",
-          "propdef-float",
+          "propdef-clip",
           "value-def-absolute-size",
           "value-def-relative-size",
-          "propdef-line-height",
           "propdef-page-break-after",
           "propdef-page-break-before",
           "propdef-page-break-inside"
@@ -933,7 +920,6 @@
       },
       "https://drafts.fxtf.org/css-masking-1/": {
         "anchors": [
-          "propdef-clip",
           "propdef-clip-path",
           "propdef-clip-rule",
           "propdef-mask",
@@ -1093,13 +1079,19 @@
           "TextAnchorProperty"
         ]
       },
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
+        "anchors": [
+          "sec-native-error-types-used-in-this-standard-typeerror",
+          "sec-native-error-types-used-in-this-standard-rangeerror",
+          "sec-native-error-types-used-in-this-standard-syntaxerror"
+        ]
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "Exposed",
           "idl-USVString",
           "idl-sequence",
           "dfn-throw",
-          "exceptiondef-typeerror",
           "idl-undefined",
           "idl-boolean",
           "idl-unsigned-long",
@@ -1109,11 +1101,9 @@
           "dfn-determine-the-value-of-an-indexed-property",
           "dfn-set-the-value-of-an-existing-indexed-property",
           "dfn-set-the-value-of-a-new-indexed-property",
-          "exceptiondef-rangeerror",
           "idl-DOMString",
           "idl-double",
           "idl-long",
-          "syntaxerror",
           "dfn-indexed-property-getter",
           "idl-observable-array",
           "observable-array-attribute-set-an-indexed-value",
@@ -1121,7 +1111,7 @@
           "observable-array-attribute-delete-an-indexed-value"
         ]
       },
-      "https://www.w3.org/TR/CSS21/aural.html": {
+      "https://www.w3.org/TR/CSS2/aural.html": {
         "anchors": [
           "propdef-azimuth",
           "propdef-elevation",

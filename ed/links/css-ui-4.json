@@ -89,7 +89,6 @@
       },
       "https://drafts.csswg.org/css-overflow-4/": {},
       "https://drafts.csswg.org/css-page-3/": {},
-      "https://drafts.csswg.org/css-position-3/": {},
       "https://drafts.csswg.org/css-pseudo-4/": {},
       "https://drafts.csswg.org/css-pseudo/": {
         "anchors": [
@@ -117,6 +116,7 @@
       "https://drafts.csswg.org/scroll-animations-1/": {},
       "https://drafts.csswg.org/selectors-3/": {},
       "https://drafts.csswg.org/selectors/": {},
+      "https://drafts.fxtf.org/filter-effects-1/": {},
       "https://en.wikipedia.org/wiki/ICO_%28file_format%29": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
       "https://github.com/w3c/csswg-drafts/issues/6788": {},
@@ -154,6 +154,7 @@
         ]
       },
       "https://w3c.github.io/png/": {},
+      "https://w3c.github.io/wcag/guidelines/22/": {},
       "https://w3ctag.github.io/security-questionnaire/": {
         "anchors": [
           "questions"
@@ -199,7 +200,6 @@
           "secure-animated-mode"
         ]
       },
-      "https://www.w3.org/TR/WAI-WEBCONTENT/": {},
       "https://www.w3.org/TR/WCAG20/": {
         "anchors": [
           "seizure",
@@ -266,6 +266,8 @@
           "propdef-border-color",
           "propdef-background-image",
           "propdef-background-color",
+          "propdef-box-shadow",
+          "propdef-border",
           "propdef-border-top-color",
           "propdef-border-top-style",
           "propdef-border-top-width",
@@ -291,8 +293,7 @@
           "propdef-border-top-left-radius",
           "propdef-border-top-right-radius",
           "propdef-border-bottom-right-radius",
-          "propdef-border-bottom-left-radius",
-          "propdef-border"
+          "propdef-border-bottom-left-radius"
         ]
       },
       "https://drafts.csswg.org/css-borders-4/": {
@@ -318,6 +319,7 @@
       "https://drafts.csswg.org/css-box-4/": {
         "anchors": [
           "border-edge",
+          "propdef-padding",
           "propdef-margin",
           "content-edge",
           "padding-edge"
@@ -363,7 +365,7 @@
       },
       "https://drafts.csswg.org/css-display-4/": {
         "anchors": [
-          "inner-display-type"
+          "replaced-element"
         ]
       },
       "https://drafts.csswg.org/css-images-3/": {
@@ -379,14 +381,16 @@
       "https://drafts.csswg.org/css-images-4/": {
         "anchors": [
           "typedef-image-1d",
-          "funcdef-image-set"
+          "funcdef-image-set",
+          "propdef-object-fit"
         ]
       },
       "https://drafts.csswg.org/css-overflow-3/": {
         "anchors": [
           "ink-overflow-region",
           "scroll-container",
-          "propdef-overflow"
+          "propdef-overflow",
+          "scrollable-overflow-region"
         ]
       },
       "https://drafts.csswg.org/css-overflow-4/": {
@@ -397,12 +401,6 @@
       "https://drafts.csswg.org/css-page-3/": {
         "anchors": [
           "page-margin-boxes"
-        ]
-      },
-      "https://drafts.csswg.org/css-position-3/": {
-        "anchors": [
-          "propdef-position",
-          "propdef-left"
         ]
       },
       "https://drafts.csswg.org/css-pseudo-4/": {
@@ -424,8 +422,14 @@
           "propdef-box-sizing",
           "propdef-width",
           "propdef-height",
+          "sizing-property",
           "intrinsic-size",
           "min-content-contribution"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms-1/": {
+        "anchors": [
+          "propdef-transform"
         ]
       },
       "https://drafts.csswg.org/css-ui-3/": {
@@ -447,12 +451,6 @@
           "string-value"
         ]
       },
-      "https://drafts.csswg.org/css-writing-modes-3/": {
-        "anchors": [
-          "propdef-unicode-bidi",
-          "propdef-direction"
-        ]
-      },
       "https://drafts.csswg.org/css-writing-modes-4/": {
         "anchors": [
           "block-axis",
@@ -471,11 +469,7 @@
           "propdef-max-width",
           "propdef-min-height",
           "propdef-max-height",
-          "propdef-visibility",
-          "propdef-top",
-          "propdef-float",
-          "propdef-clear",
-          "propdef-z-index"
+          "propdef-visibility"
         ]
       },
       "https://drafts.csswg.org/scroll-animations-1/": {
@@ -490,6 +484,11 @@
           "checked-pseudo",
           "enabled-pseudo",
           "disabled-pseudo"
+        ]
+      },
+      "https://drafts.fxtf.org/filter-effects-1/": {
+        "anchors": [
+          "propdef-filter"
         ]
       },
       "https://html.spec.whatwg.org/multipage/canvas.html": {

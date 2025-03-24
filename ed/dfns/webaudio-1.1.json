@@ -159,6 +159,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-baseaudiocontext-state-before-interruption-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state-before-interruption-slot",
+      "linkingText": [
+        "[[state before interruption]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BaseAudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "BaseAudioContext",
+        "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContext",
+        "title": "The BaseAudioContext Interface",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-baseaudiocontext-render-quantum-size-slot",
       "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-render-quantum-size-slot",
       "linkingText": [
@@ -248,6 +269,28 @@
       "linkingText": [
         "\"closed\"",
         "closed"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioContextState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "BaseAudioContext",
+        "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContext",
+        "title": "The BaseAudioContext Interface",
+        "number": "1.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-audiocontextstate-interrupted",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-interrupted",
+      "linkingText": [
+        "\"interrupted\"",
+        "interrupted"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -16762,6 +16805,67 @@
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
         "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "interruption",
+      "href": "https://webaudio.github.io/web-audio-api/#interruption",
+      "linkingText": [
+        "interruption"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interruption-handling",
+        "href": "https://webaudio.github.io/web-audio-api/#interruption-handling",
+        "title": "Handling an interruption on the AudioContext",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-audiocontext-interruption-start",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-interruption-start",
+      "linkingText": [
+        "interruption-start"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interruption-handling",
+        "href": "https://webaudio.github.io/web-audio-api/#interruption-handling",
+        "title": "Handling an interruption on the AudioContext",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-audiocontext-interruption-end",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-interruption-end",
+      "linkingText": [
+        "interruption-end"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interruption-handling",
+        "href": "https://webaudio.github.io/web-audio-api/#interruption-handling",
+        "title": "Handling an interruption on the AudioContext",
+        "number": "2.5"
       },
       "definedIn": "prose"
     },

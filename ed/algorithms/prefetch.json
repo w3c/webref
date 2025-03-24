@@ -834,6 +834,40 @@
       ]
     },
     {
+      "name": "clear prefetch cache for origin patch",
+      "html": "Modify <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-clear-site-data/#abstract-opdef-clear-cache-for-origin\" id=\"ref-for-abstract-opdef-clear-cache-for-origin\">clear cache for origin</a> to add the following step at the end.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top\">top-level traversable</a> <var>traversable</var> of the user agent’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable-set\" id=\"ref-for-top-level-traversable-set\">top-level traversable set</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>navigables</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#inclusive-descendant-navigables\" id=\"ref-for-inclusive-descendant-navigables\">inclusive descendant navigables</a> of <var>traversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document⑥\">active document</a>.</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>navigable</var> in <var>navigables</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>activeDocument</var> be the <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document⑦\">active document</a>.</p>"
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>prefetchRecord</var> in <var>activeDocument</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#document-prefetch-records\" id=\"ref-for-document-prefetch-records⑦\">prefetch records</a>:",
+                  "rationale": "cancel",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-cancel-and-discard\" id=\"ref-for-prefetch-record-cancel-and-discard①\">Cancel and discard</a> <var>prefetchRecord</var> given <var>activeDocument</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "prefetch",
       "href": "https://wicg.github.io/nav-speculation/prefetch.html#prefetch",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"prefetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">prefetch</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑤\">Document</a></code> <var>document</var> and a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record\" id=\"ref-for-prefetch-record①①\">prefetch record</a> <var>prefetchRecord</var>, perform the following steps.",
@@ -855,7 +889,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑤\">Assert</a>: <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url①①\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme④\">scheme</a> is an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#http-scheme\" id=\"ref-for-http-scheme①\">HTTP(S) scheme</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③\">Append</a> <var>prefetchRecord</var> to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#document-prefetch-records\" id=\"ref-for-document-prefetch-records⑦\">prefetch records</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③\">Append</a> <var>prefetchRecord</var> to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#document-prefetch-records\" id=\"ref-for-document-prefetch-records⑧\">prefetch records</a>.</p>"
         },
         {
           "html": "<p>Set <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-start-time\" id=\"ref-for-prefetch-record-start-time①\">start time</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time④\">current high resolution time</a> for the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> of <var>document</var>.</p>"
@@ -899,7 +933,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>navigationParams</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params\" id=\"ref-for-navigation-params⑥\">navigation params</a>, then <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-cancel-and-discard\" id=\"ref-for-prefetch-record-cancel-and-discard①\">cancel and discard</a> <var>prefetchRecord</var> given <var>document</var> and abort these steps.</p>"
+                  "html": "<p>If <var>navigationParams</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params\" id=\"ref-for-navigation-params⑥\">navigation params</a>, then <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-cancel-and-discard\" id=\"ref-for-prefetch-record-cancel-and-discard②\">cancel and discard</a> <var>prefetchRecord</var> given <var>document</var> and abort these steps.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑥\">Assert</a>: <var>navigationParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-response\" id=\"ref-for-navigation-params-response③\">response</a> is the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#exchange-record-response\" id=\"ref-for-exchange-record-response⑥\">response</a> of <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-redirect-chain\" id=\"ref-for-prefetch-record-redirect-chain⑤\">redirect chain</a>’s last element.</p>"

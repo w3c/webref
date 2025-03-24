@@ -58,7 +58,7 @@
     },
     "idlNames": {
       "AudioContextState": {
-        "fragment": "enum AudioContextState {\n    \"suspended\",\n    \"running\",\n    \"closed\"\n};",
+        "fragment": "enum AudioContextState {\n    \"suspended\",\n    \"running\",\n    \"closed\",\n    \"interrupted\"\n};",
         "type": "enum",
         "name": "AudioContextState",
         "values": [
@@ -76,6 +76,11 @@
             "type": "enum-value",
             "value": "closed",
             "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-closed"
+          },
+          {
+            "type": "enum-value",
+            "value": "interrupted",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-interrupted"
           }
         ],
         "extAttrs": [],
