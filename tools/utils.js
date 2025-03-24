@@ -81,7 +81,7 @@ function getTargetedExtracts(value) {
       .filter(v => typeof v.file === 'string' && v.file.match(reExtractFile))
       .map(v => v.file);
   }
-  else if (typeof value === 'string') {
+  else if (typeof value === 'string' && value.match(reExtractFile)) {
     return [value];
   }
   else {
