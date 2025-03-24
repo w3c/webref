@@ -19,7 +19,7 @@ import path from 'node:path';
 import util from 'node:util';
 import { fileURLToPath } from 'node:url';
 import { execFile as execCb } from 'node:child_process';
-import { createFolderIfNeeded, loadJSON } from './utils.js';
+import { createFolderIfNeeded, loadJSON, getTargetedExtracts } from './utils.js';
 const execFile = util.promisify(execCb);
 
 async function applyPatches(rawFolder, outputFolder, type) {
@@ -121,7 +121,6 @@ async function applyFreezePatches(rawFolder, outputFolder) {
     }
 
     const shortname = file.replace(/\.json$/, '');
-    const branchName = `freezepatch-${shortname}`;
     const patch = path.join(patchDir, file);
     const json = await loadJSON(patch);
 
@@ -131,28 +130,14 @@ async function applyFreezePatches(rawFolder, outputFolder) {
     // Get back to the patch commit
     // (note this does not touch the `curated` folder because it is in
     // the `.gitignore` file)
-    await execFile('git', ['checkout', '-B', branchName, json.commit]);
+    await execFile('git', ['checkout', json.commit]);
 
     const crawlIndex = await loadJSON(path.join(rawFolder, 'index.json'));
     const crawlSpec = crawlIndex.results.find(spec => spec.shortname === shortname);
 
-    for (const [extractType, extractFile] of Object.entries(crawlSpec)) {
-      if (extractType === 'cddl') {
-        // Handle CDDL extracts separately, it's an array of extracts
-        for (const { file: cddlFile } of extractFile) {
-          await fs.copyFile(
-            path.join(rawFolder, cddlFile),
-            path.join(outputFolder, cddlFile)
-          );
-        }
-      }
-      else if (!extractFile ||
-          (typeof extractFile !== 'string') ||
-          !extractFile.match(/^[^\/]+\/[^\/]+\.(json|idl)$/)) {
-        // Skip properties that do not link to an extract
-        continue;
-      }
-      else {
+    for (const propValue of Object.values(crawlSpec)) {
+      const extractFiles = getTargetedExtracts(propValue);
+      for (const extractFile of extracFiles) {
         await fs.copyFile(
           path.join(rawFolder, extractFile),
           path.join(outputFolder, extractFile)
@@ -162,7 +147,6 @@ async function applyFreezePatches(rawFolder, outputFolder) {
     }
 
     await execFile('git', ['checkout', 'main']);
-    await execFile('git', ['branch', '-D', branchName]);
     patchApplied = true;
   }
 

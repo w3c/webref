@@ -23,7 +23,8 @@ import { rimraf } from 'rimraf';
 import {
   createFolderIfNeeded,
   loadJSON,
-  copyFolder } from './utils.js';
+  copyFolder,
+  getTargetedExtracts } from './utils.js';
 import { applyPatches } from './apply-patches.js';
 import { dropCSSPropertyDuplicates } from './drop-css-property-duplicates.js';
 import { curateEvents } from './amend-event-data.js';
@@ -35,10 +36,9 @@ import { crawlSpecs } from 'reffy';
 */
 async function removeFromCuration(spec, curatedFolder) {
   for (const property of ['cddl', 'css', 'elements', 'events', 'idl']) {
-    if (spec[property] &&
-        (typeof spec[property] === 'string') &&
-        spec[property].match(/^[^\/]+\/[^\/]+\.(json|idl|cddl)$/)) {
-      const filename = path.join(curatedFolder, spec[property]);
+    const extractFiles = getTargetedExtracts(spec[property]);
+    for (const extractFile of extractFiles) {
+      const filename = path.join(curatedFolder, extractFile);
       console.log(`Removing ${spec.standing} ${spec.title} from curation: del ${filename}`);
       await fs.unlink(filename);
     }
@@ -56,15 +56,14 @@ async function removeFromCuration(spec, curatedFolder) {
 async function cleanCrawlOutcome(spec) {
   for (const property of Object.keys(spec)) {
     // Only consider properties that link to an extract
-    if (spec[property] &&
-        (typeof spec[property] === 'string') &&
-        spec[property].match(/^[^\/]+\/[^\/]+\.(json|idl|cddl)$/)) {
-      try {
-        await fs.lstat(path.join(curatedFolder, spec[property]));
+    const extractFiles = getTargetedExtracts(spec[property]);
+    try {
+      for (const extractFile of extractFiles) {
+        await fs.lstat(path.join(curatedFolder, extractFile));
       }
-      catch (err) {
-        delete spec[property];
-      }
+    }
+    catch (err) {
+      delete spec[property];
     }
   }
 }

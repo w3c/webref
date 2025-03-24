@@ -68,8 +68,30 @@ async function copyFolder(source, target, { excludeRoot = false } = {}) {
 };
 
 
+/**
+ * Return the list of extract files that the given value targets.
+ *
+ * Note: The `cddl` property value targets an array of extracts, the actual
+ * extract being under the `file` key each time.
+ */
+function getTargetedExtracts(value) {
+  const reExtractFile = /^[^\/]+\/[^\/]+\.(json|idl|cddl)$/;
+  if (Array.isArray(value)) {
+    return value
+      .filter(v => typeof v.file === 'string' && v.file.match(reExtractFile))
+      .map(v => v.file);
+  }
+  else if (typeof value === 'string') {
+    return [value];
+  }
+  else {
+    return [];
+  }
+}
+
 export {
   createFolderIfNeeded,
   loadJSON,
-  copyFolder
+  copyFolder,
+  getTargetedExtracts
 };
