@@ -11,10 +11,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-store\" id=\"ref-for-privacy-budget-store②\">privacy budget store</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">contain</a> <var>key</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">set</a> its value of <var>key</var> to be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑦\">user agent</a>-defined value.</p>"
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-store\" id=\"ref-for-privacy-budget-store③\">privacy budget store</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">contain</a> <var>key</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">set</a> its value of <var>key</var> to be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑦\">user agent</a>-defined value.</p>"
         },
         {
-          "html": "<p>Let <var>currentValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get\">getting the value</a> of <var>key</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-store\" id=\"ref-for-privacy-budget-store③\">privacy budget store</a>.</p>"
+          "html": "<p>Let <var>currentValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get\">getting the value</a> of <var>key</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-store\" id=\"ref-for-privacy-budget-store④\">privacy budget store</a>.</p>"
         },
         {
           "html": "<p>If <var>currentValue</var> is less than or equal to 0, return false.</p>"
@@ -23,7 +23,7 @@
           "html": "<p>Let <var>newValue</var> be <var>currentValue</var> - <var>epsilon</var> * <var>sensitivity</var> / <var>globalSensitivity</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">Set</a> the value of <var>key</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-store\" id=\"ref-for-privacy-budget-store④\">privacy budget store</a> to <var>newValue</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">Set</a> the value of <var>key</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-store\" id=\"ref-for-privacy-budget-store⑤\">privacy budget store</a> to <var>newValue</var>.</p>"
         },
         {
           "html": "<p>Return whether <var>newValue</var> is greater than or equal to 0.</p>"
@@ -73,7 +73,7 @@
           ]
         },
         {
-          "html": "<p>If the private attribution API is <a href=\"https://w3c.github.io/ppa/#opt-out\">enabled</a>, save the impression\nto the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-store\" id=\"ref-for-impression-store⑤\">impression store</a>.</p>"
+          "html": "<p>If the Private Attribution API is <a href=\"https://w3c.github.io/ppa/#opt-out\">enabled</a>, save the impression\nto the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-store\" id=\"ref-for-impression-store⑥\">impression store</a>.</p>"
         }
       ]
     },
@@ -123,7 +123,7 @@
           "html": "<p>Let <var>report</var> be an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#create-an-all-zero-histogram\" id=\"ref-for-create-an-all-zero-histogram\">all-zero histogram</a>.</p>"
         },
         {
-          "html": "<p>If the private attribution API is <a href=\"https://w3c.github.io/ppa/#opt-out\">enabled</a>, set <var>report</var> to the\nresult of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#do-attribution-and-fill-a-histogram\" id=\"ref-for-do-attribution-and-fill-a-histogram\">do attribution and fill a histogram</a> with <var>options</var>, <var>topLevelSite</var>, and <var>now</var>.</p>"
+          "html": "<p>If the Private Attribution API is <a href=\"https://w3c.github.io/ppa/#opt-out\">enabled</a>, set <var>report</var> to the\nresult of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#do-attribution-and-fill-a-histogram\" id=\"ref-for-do-attribution-and-fill-a-histogram\">do attribution and fill a histogram</a> with <var>options</var>, <var>topLevelSite</var>, and <var>now</var>.</p>"
         },
         {
           "html": "<p>Let <var>encryptedReport</var> be the result of encrypting <var>report</var>.</p>"
@@ -196,7 +196,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>matchedImpressions</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③\">not empty</a>.</p>"
         },
         {
-          "html": "<p>Let <var>impression</var> be the value in <var>matchedImpressions</var> with the most recent <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-timestamp\" id=\"ref-for-impression-timestamp\">timestamp</a>.</p>"
+          "html": "<p>Let <var>impression</var> be the value in <var>matchedImpressions</var> with the most recent <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-timestamp\" id=\"ref-for-impression-timestamp①\">timestamp</a>.</p>"
         },
         {
           "html": "<p>Let <var>histogram</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#create-an-all-zero-histogram\" id=\"ref-for-create-an-all-zero-histogram②\">create an all-zero histogram</a> with <var>histogramSize</var>.</p>"
@@ -226,7 +226,7 @@
     {
       "name": "common matching logic",
       "href": "https://w3c.github.io/ppa/#common-matching-logic",
-      "html": "To perform <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"common-matching-logic\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">common matching logic</dfn>, given <a class=\"idl-code\" data-link-type=\"dictionary\" href=\"https://w3c.github.io/ppa/#dictdef-privateattributionconversionoptions\" id=\"ref-for-dictdef-privateattributionconversionoptions④\"><var>options</var></a>, <var>epoch</var>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment①\">moment</a> <var>now</var>:",
+      "html": "To perform <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"common-matching-logic\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">common matching logic</dfn>, given <a class=\"idl-code\" data-link-type=\"dictionary\" href=\"https://w3c.github.io/ppa/#dictdef-privateattributionconversionoptions\" id=\"ref-for-dictdef-privateattributionconversionoptions④\"><var>options</var></a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-epoch\" id=\"ref-for-privacy-budget-epoch③\">epoch</a> <var>epoch</var>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment①\">moment</a> <var>now</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -239,14 +239,14 @@
           "html": "<p>If the number of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#day\" id=\"ref-for-day\">days</a> since the end of <var>epoch</var> exceeds <var>lookbackDays</var>,\nreturn <var>matching</var>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>impression</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-store\" id=\"ref-for-impression-store⑥\">impression store</a> for the <var>epoch</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>impression</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-store\" id=\"ref-for-impression-store⑦\">impression store</a> for the <var>epoch</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>now</var> - <var>lookbackDays</var> is after <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-timestamp\" id=\"ref-for-impression-timestamp①\">timestamp</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+              "html": "<p>If <var>now</var> - <var>lookbackDays</var> is after <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-timestamp\" id=\"ref-for-impression-timestamp②\">timestamp</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
             },
             {
-              "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-filterdata\" id=\"ref-for-dom-privateattributionconversionoptions-filterdata③\">filterData</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>,\nand it is not equal to <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-filter-data\" id=\"ref-for-impression-filter-data\">filter data</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+              "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-filterdata\" id=\"ref-for-dom-privateattributionconversionoptions-filterdata④\">filterData</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>,\nand it is not equal to <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-filter-data\" id=\"ref-for-impression-filter-data②\">filter data</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
             },
             {
               "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-impressionsites\" id=\"ref-for-dom-privateattributionconversionoptions-impressionsites②\">impressionSites</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-impression-site\" id=\"ref-for-impression-impression-site\">impression site</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
