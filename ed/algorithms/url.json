@@ -1385,7 +1385,7 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "If <var>buffer</var> is not the empty string, then:",
+                          "html": "If <var>buffer</var> is not the empty string:",
                           "rationale": "let",
                           "steps": [
                             {
@@ -1399,11 +1399,14 @@
                             },
                             {
                               "html": "<p>Set <var>buffer</var> to the empty string. </p>"
+                            },
+                            {
+                              "html": "<p>If <var>state override</var> is given, then return. </p>"
                             }
                           ]
                         },
                         {
-                          "html": "<p>If <var>state override</var> is given, then return. </p>"
+                          "html": "<p>If <var>state override</var> is given, then return failure. </p>"
                         },
                         {
                           "html": "<p>Set <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#path-start-state\" id=\"ref-for-path-start-state①\">path start state</a> and decrease <var>pointer</var> by 1. </p>"
