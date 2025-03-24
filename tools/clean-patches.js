@@ -30,7 +30,7 @@ async function dropPatchesWhenPossible() {
     if (subDir.endsWith("patches")) {
       const files = fs.readdirSync(path.join(rootDir, subDir));
       for (const file of files) {
-        if (file.endsWith(".patch")) {
+        if (file.endsWith(".patch") || file.endsWith(".json")) {
           const patch = path.join(subDir, file);
           console.log(`- add "${patch}"`);
           patches.push({ name: patch });
@@ -44,9 +44,16 @@ async function dropPatchesWhenPossible() {
   const diffStart = /^---$/m;
   const issueUrl = /(?<=^|\s)https:\/\/github\.com\/([^\/]+)\/([^\/]+)\/(issues|pull)\/(\d+)(?=\s|$)/g;
   for (const patch of patches) {
+    let patchIssues;
     const contents = fs.readFileSync(path.join(rootDir, patch.name), "utf8");
-    const desc = contents.substring(0, contents.match(diffStart)?.index);
-    const patchIssues = [...desc.matchAll(issueUrl)];
+    if (patch.name.endsWith(".json")) {
+      const json = JSON.parse(contents);
+      patchIssues = [...(json.pending ?? '').matchAll(issueUrl)];
+    }
+    else {
+      const desc = contents.substring(0, contents.match(diffStart)?.index);
+      patchIssues = [...desc.matchAll(issueUrl)];
+    }
     for (const patchIssue of patchIssues) {
       if (!patch.issues) {
         patch.issues = [];
