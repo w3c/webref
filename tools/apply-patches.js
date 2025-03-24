@@ -61,7 +61,6 @@ async function applyPatches(rawFolder, outputFolder, type) {
   ];
 
   await createFolderIfNeeded(outputFolder);
-  await applyFreezePatches(rawFolder, outputFolder);
 
   for (const { name, srcDir, dstDir, patchDir, fileExt } of packages) {
     if (!type.includes(name)) {
@@ -98,6 +97,8 @@ async function applyPatches(rawFolder, outputFolder, type) {
       }
     }
   }
+
+  await applyFreezePatches(rawFolder, outputFolder);
 }
 
 
