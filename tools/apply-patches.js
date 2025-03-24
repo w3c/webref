@@ -137,7 +137,7 @@ async function applyFreezePatches(rawFolder, outputFolder) {
 
     for (const propValue of Object.values(crawlSpec)) {
       const extractFiles = getTargetedExtracts(propValue);
-      for (const extractFile of extracFiles) {
+      for (const extractFile of extractFiles) {
         await fs.copyFile(
           path.join(rawFolder, extractFile),
           path.join(outputFolder, extractFile)
