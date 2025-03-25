@@ -4,24 +4,6 @@
 // Source: Writing Assistance APIs (https://webmachinelearning.github.io/writing-assistance-apis/)
 
 [Exposed=Window, SecureContext]
-interface CreateMonitor : EventTarget {
-  attribute EventHandler ondownloadprogress;
-};
-
-callback CreateMonitorCallback = undefined (CreateMonitor monitor);
-
-enum Availability {
-  "unavailable",
-  "downloadable",
-  "downloading",
-  "available"
-};
-
-interface mixin DestroyableModel {
-  undefined destroy();
-};
-
-[Exposed=Window, SecureContext]
 interface Summarizer {
   static Promise<Summarizer> create(optional SummarizerCreateOptions options = {});
   static Promise<Availability> availability(optional SummarizerCreateCoreOptions options = {});
@@ -191,3 +173,21 @@ dictionary RewriterRewriteOptions {
 enum RewriterTone { "as-is", "more-formal", "more-casual" };
 enum RewriterFormat { "as-is", "plain-text", "markdown" };
 enum RewriterLength { "as-is", "shorter", "longer" };
+
+[Exposed=Window, SecureContext]
+interface CreateMonitor : EventTarget {
+  attribute EventHandler ondownloadprogress;
+};
+
+callback CreateMonitorCallback = undefined (CreateMonitor monitor);
+
+enum Availability {
+  "unavailable",
+  "downloadable",
+  "downloading",
+  "available"
+};
+
+interface mixin DestroyableModel {
+  undefined destroy();
+};

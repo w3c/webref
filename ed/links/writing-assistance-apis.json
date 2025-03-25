@@ -27,9 +27,9 @@
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
+          "abortsignal",
           "eventtarget",
           "abortcontroller",
-          "abortsignal",
           "create-a-dependent-abort-signal",
           "abortcontroller-signal",
           "abortcontroller-signal-abort",
@@ -62,12 +62,12 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
+          "concept-agent-event-loop",
           "eventhandler",
           "event-handlers",
           "event-handler-event-type",
           "event-handler-idl-attributes",
           "concept-relevant-realm",
-          "concept-agent-event-loop",
           "concept-realm-global",
           "queue-a-global-task",
           "event-loop",
@@ -83,23 +83,24 @@
           "implementation-defined",
           "map-exists",
           "list-is-empty",
-          "ordered-set",
-          "ordered-map",
-          "list-iterate",
-          "list-replace",
-          "iteration-break",
-          "struct",
-          "struct-item",
-          "map-getting-the-keys",
           "string",
+          "iteration-break",
           "string-length",
+          "ordered-map",
           "abort-when",
           "if-aborted",
           "set-append",
           "list",
-          "set-union",
+          "ordered-set",
+          "list-iterate",
           "list-item",
-          "list-contain"
+          "list-contain",
+          "map-getting-the-keys",
+          "map-getting-the-values",
+          "struct",
+          "struct-item",
+          "set-union",
+          "list-replace"
         ]
       },
       "https://streams.spec.whatwg.org/": {
@@ -129,9 +130,9 @@
       "https://tc39.es/ecma402/": {
         "anchors": [
           "sec-lookupmatchinglocalebybestfit",
-          "sec-language-tags",
           "sec-isstructurallyvalidlanguagetag",
           "sec-canonicalizeunicodelocaleid",
+          "sec-language-tags",
           "sec-internal-slots"
         ]
       },
@@ -152,13 +153,6 @@
         "anchors": [
           "Exposed",
           "SecureContext",
-          "idl-undefined",
-          "dfn-interface",
-          "include",
-          "new",
-          "this",
-          "aborterror",
-          "idl-DOMException",
           "idl-promise",
           "idl-DOMString",
           "idl-frozen-array",
@@ -168,11 +162,18 @@
           "exceptiondef-typeerror",
           "operationerror",
           "dfn-create-frozen-array",
+          "this",
+          "idl-DOMException",
           "domexception-name",
           "notallowederror",
           "notreadableerror",
           "notsupportederror",
           "unknownerror",
+          "idl-undefined",
+          "dfn-interface",
+          "include",
+          "new",
+          "aborterror",
           "a-promise-rejected-with",
           "invalidstateerror",
           "invoke-a-callback-function",
