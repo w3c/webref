@@ -304,11 +304,15 @@ browsingContext.XPathLocator = {
 
 browsingContext.Navigation = text;
 
-browsingContext.NavigationInfo = {
+browsingContext.BaseNavigationInfo = (
   context: browsingContext.BrowsingContext,
   navigation: browsingContext.Navigation / null,
   timestamp: js-uint,
   url: text,
+)
+
+browsingContext.NavigationInfo = {
+  browsingContext.BaseNavigationInfo
 }
 
 browsingContext.UserPromptType = "alert" / "beforeunload" / "confirm" / "prompt";
@@ -383,8 +387,13 @@ browsingContext.Load = (
 
 browsingContext.DownloadWillBegin = (
  method: "browsingContext.downloadWillBegin",
- params: browsingContext.NavigationInfo
+ params: browsingContext.DownloadWillBeginParams
 )
+
+browsingContext.DownloadWillBeginParams = {
+  suggestedFilename: text,
+  browsingContext.BaseNavigationInfo
+}
 
 browsingContext.NavigationAborted = (
  method: "browsingContext.navigationAborted",
