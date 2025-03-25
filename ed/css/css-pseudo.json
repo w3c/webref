@@ -18,14 +18,14 @@
       "values": [
         {
           "name": "::prefix",
-          "prose": "To allow independent styling of the first letter itself and its adjacent punctuation, associated preceding punctuation is represented by the ::prefix sub-pseudo-element of the ::first-letter pseudo-element (::first-letter::prefix); and associated following punctuation is represented by the ::postfix sub-pseudo-element of the ::first-letter pseudo-element (::first-letter::postfix). See § 2.2.1 First Letters and Associated Punctuation, below.",
+          "prose": "To allow independent styling of the first letter itself and its adjacent punctuation, associated preceding punctuation is represented by the ::prefix sub-pseudo-element of the ::first-letter pseudo-element (::first-letter::prefix); and associated following punctuation is represented by the ::suffix sub-pseudo-element of the ::first-letter pseudo-element (::first-letter::suffix). See § 2.2.1 First Letters and Associated Punctuation, below.",
           "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-first-letter-prefix",
           "type": "selector"
         },
         {
-          "name": "::postfix",
-          "prose": "To allow independent styling of the first letter itself and its adjacent punctuation, associated preceding punctuation is represented by the ::prefix sub-pseudo-element of the ::first-letter pseudo-element (::first-letter::prefix); and associated following punctuation is represented by the ::postfix sub-pseudo-element of the ::first-letter pseudo-element (::first-letter::postfix). See § 2.2.1 First Letters and Associated Punctuation, below.",
-          "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-first-letter-postfix",
+          "name": "::suffix",
+          "prose": "To allow independent styling of the first letter itself and its adjacent punctuation, associated preceding punctuation is represented by the ::prefix sub-pseudo-element of the ::first-letter pseudo-element (::first-letter::prefix); and associated following punctuation is represented by the ::suffix sub-pseudo-element of the ::first-letter pseudo-element (::first-letter::suffix). See § 2.2.1 First Letters and Associated Punctuation, below.",
+          "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-first-letter-suffix",
           "type": "selector"
         }
       ]
@@ -37,7 +37,7 @@
     },
     {
       "name": "::search-text",
-      "prose": "The ::search-text pseudo-element represents text identified by the user agent’s find-in-page feature. Since not all UAs style matched text in ways expressible with the highlight pseudo-elements, this pseudo-element is optional to implement. How to identify the current match? [Issue #10527]",
+      "prose": "The ::search-text pseudo-element represents text identified by the user agent’s find-in-page feature. Since not all UAs style matched text in ways expressible with the highlight pseudo-elements, this pseudo-element is optional to implement. The :current pseudo-class (but not ::current()) may be combined with ::search-text to represent the currently focused match instance. The :past and :future pseudo-classes are reserved for analogous use in the future. Any unsupported combination of these pseudo-classes with ::search-text must be treated as invalid.",
       "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-search-text"
     },
     {
