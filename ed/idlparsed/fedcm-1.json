@@ -42,7 +42,7 @@
         "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identitycredentialdisconnectoptions"
       },
       "IdentityCredential": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredential : Credential {\n  static Promise<undefined> disconnect(IdentityCredentialDisconnectOptions options);\n  readonly attribute USVString? token;\n  readonly attribute boolean isAutoSelected;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredential : Credential {\n  static Promise<undefined> disconnect(IdentityCredentialDisconnectOptions options);\n  readonly attribute USVString? token;\n  readonly attribute boolean isAutoSelected;\n  readonly attribute USVString configURL;\n};",
         "type": "interface",
         "name": "IdentityCredential",
         "inheritance": "Credential",
@@ -120,6 +120,22 @@
             "special": "",
             "readonly": true,
             "href": "https://w3c-fedid.github.io/FedCM/#dom-identitycredential-isautoselected"
+          },
+          {
+            "type": "attribute",
+            "name": "configURL",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identitycredential-configurl"
           }
         ],
         "extAttrs": [
