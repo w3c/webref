@@ -7,8 +7,8 @@
     {
       "name": "obtain a storage key",
       "href": "https://storage.spec.whatwg.org/#obtain-a-storage-key",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"obtain-a-storage-key\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a storage key</dfn>, given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment\" id=\"ref-for-environment\">environment</a> <var>environment</var>, run these steps:",
-      "rationale": "let",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"obtain-a-storage-key\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a storage key</dfn>, given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment\" id=\"ref-for-environment\">environment</a> <var>environment</var>:",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>key</var> be the result of running <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#obtain-a-storage-key-for-non-storage-purposes\" id=\"ref-for-obtain-a-storage-key-for-non-storage-purposes\">obtain a storage key for non-storage purposes</a> with <var>environment</var>. </p>"
@@ -27,8 +27,8 @@
     {
       "name": "obtain a storage key for non-storage purposes",
       "href": "https://storage.spec.whatwg.org/#obtain-a-storage-key-for-non-storage-purposes",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"obtain-a-storage-key-for-non-storage-purposes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a storage key for non-storage purposes</dfn>, given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment\" id=\"ref-for-environment①\">environment</a> <var>environment</var>, run these steps:",
-      "rationale": "let",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"obtain-a-storage-key-for-non-storage-purposes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a storage key for non-storage purposes</dfn>, given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment\" id=\"ref-for-environment①\">environment</a> <var>environment</var>:",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>origin</var> be <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a> if <var>environment</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①\">environment settings object</a>; otherwise <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-creation-url\" id=\"ref-for-concept-environment-creation-url\">creation URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>. </p>"
@@ -41,8 +41,8 @@
     {
       "name": "storage key/equal",
       "href": "https://storage.spec.whatwg.org/#storage-key-equal",
-      "html": "To determine whether a <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-key\" id=\"ref-for-storage-key②\">storage key</a> <var>A</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"storage key\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"equal\" id=\"storage-key-equal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">equals</dfn> <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-key\" id=\"ref-for-storage-key③\">storage key</a> <var>B</var>, run these\nsteps:",
-      "rationale": "if",
+      "html": "To determine whether a <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-key\" id=\"ref-for-storage-key②\">storage key</a> <var>A</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"storage key\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"equal\" id=\"storage-key-equal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">equals</dfn> <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-key\" id=\"ref-for-storage-key③\">storage key</a> <var>B</var>:",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>If <var>A</var>’s <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-key-origin\" id=\"ref-for-storage-key-origin①\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <var>B</var>’s <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-key-origin\" id=\"ref-for-storage-key-origin②\">origin</a>, then return false. </p>"
@@ -55,7 +55,7 @@
     {
       "name": "legacy-clone a traversable storage shed",
       "href": "https://storage.spec.whatwg.org/#legacy-clone-a-traversable-storage-shed",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"legacy-clone-a-traversable-storage-shed\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">legacy-clone a traversable storage shed<span id=\"legacy-clone-a-browsing-session-storage-shed\"></span></dfn>,\ngiven a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#traversable-navigable\" id=\"ref-for-traversable-navigable②\">traversable navigable</a> <var>A</var> and a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#traversable-navigable\" id=\"ref-for-traversable-navigable③\">traversable navigable</a> <var>B</var>, run these steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"legacy-clone-a-traversable-storage-shed\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"legacy-clone-a-browsing-session-storage-shed\"></span>legacy-clone a traversable storage shed</dfn>,\ngiven a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#traversable-navigable\" id=\"ref-for-traversable-navigable②\">traversable navigable</a> <var>A</var> and a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#traversable-navigable\" id=\"ref-for-traversable-navigable③\">traversable navigable</a> <var>B</var>, run these steps:",
       "rationale": "for",
       "steps": [
         {

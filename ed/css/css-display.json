@@ -55,9 +55,9 @@
     {
       "name": "reading-flow",
       "href": "https://drafts.csswg.org/css-display-4/#propdef-reading-flow",
-      "value": "normal | flex-visual | flex-flow | grid-rows | grid-columns | grid-order",
+      "value": "normal | source-order | flex-visual | flex-flow | grid-rows | grid-columns | grid-order",
       "initial": "normal",
-      "appliesTo": "flex and grid containers",
+      "appliesTo": "block, flex and grid containers",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
@@ -70,6 +70,13 @@
           "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-flow-normal",
           "type": "value",
           "value": "normal"
+        },
+        {
+          "name": "source-order",
+          "prose": "Applies to grid, flex, and block layouts. Creates a reading flow container, and enables the use of the reading-order property on direct children. Other than respecting the reading-order property, follows the order of elements in the DOM.",
+          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-flow-source-order",
+          "type": "value",
+          "value": "source-order"
         },
         {
           "name": "flex-visual",
@@ -117,7 +124,7 @@
       "href": "https://drafts.csswg.org/css-display-4/#propdef-reading-order",
       "value": "<integer>",
       "initial": "0",
-      "appliesTo": "Direct children of a reading flow container",
+      "appliesTo": "Direct block-level, grid item, or flex item children of a reading flow container.",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "specified integer",
