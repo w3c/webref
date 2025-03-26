@@ -2,6 +2,7 @@
 dictionary XRRenderStateInit {
   double depthNear;
   double depthFar;
+  boolean passthroughFullyObscured;
   double inlineVerticalFieldOfView;
   XRWebGLLayer? baseLayer;
   sequence<XRLayer>? layers;

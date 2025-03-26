@@ -6,7 +6,7 @@
       "title": "WebXR Device API",
       "url": "https://www.w3.org/TR/webxr/"
     },
-    "fragment": "dictionary XRRenderStateInit {\n  double depthNear;\n  double depthFar;\n  double inlineVerticalFieldOfView;\n  XRWebGLLayer? baseLayer;\n  sequence<XRLayer>? layers;\n};",
+    "fragment": "dictionary XRRenderStateInit {\n  double depthNear;\n  double depthFar;\n  boolean passthroughFullyObscured;\n  double inlineVerticalFieldOfView;\n  XRWebGLLayer? baseLayer;\n  sequence<XRLayer>? layers;\n};",
     "href": "https://immersive-web.github.io/webxr/#dictdef-xrrenderstateinit"
   },
   "extended": [],

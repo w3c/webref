@@ -860,7 +860,7 @@
         "href": "https://immersive-web.github.io/webxr/#xrsession"
       },
       "XRRenderStateInit": {
-        "fragment": "dictionary XRRenderStateInit {\n  double depthNear;\n  double depthFar;\n  double inlineVerticalFieldOfView;\n  XRWebGLLayer? baseLayer;\n  sequence<XRLayer>? layers;\n};",
+        "fragment": "dictionary XRRenderStateInit {\n  double depthNear;\n  double depthFar;\n  boolean passthroughFullyObscured;\n  double inlineVerticalFieldOfView;\n  XRWebGLLayer? baseLayer;\n  sequence<XRLayer>? layers;\n};",
         "type": "dictionary",
         "name": "XRRenderStateInit",
         "inheritance": null,
@@ -896,6 +896,22 @@
             "default": null,
             "required": false,
             "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstateinit-depthfar"
+          },
+          {
+            "type": "field",
+            "name": "passthroughFullyObscured",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstateinit-passthroughfullyobscured"
           },
           {
             "type": "field",
@@ -960,7 +976,7 @@
         "href": "https://immersive-web.github.io/webxr/#dictdef-xrrenderstateinit"
       },
       "XRRenderState": {
-        "fragment": "[SecureContext, Exposed=Window] interface XRRenderState {\n  readonly attribute double depthNear;\n  readonly attribute double depthFar;\n  readonly attribute double? inlineVerticalFieldOfView;\n  readonly attribute XRWebGLLayer? baseLayer;\n};",
+        "fragment": "[SecureContext, Exposed=Window] interface XRRenderState {\n  readonly attribute double depthNear;\n  readonly attribute double depthFar;\n  readonly attribute boolean? passthroughFullyObscured;\n  readonly attribute double? inlineVerticalFieldOfView;\n  readonly attribute XRWebGLLayer? baseLayer;\n};",
         "type": "interface",
         "name": "XRRenderState",
         "inheritance": null,
@@ -996,6 +1012,22 @@
             "special": "",
             "readonly": true,
             "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstate-depthfar"
+          },
+          {
+            "type": "attribute",
+            "name": "passthroughFullyObscured",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstate-passthroughfullyobscured"
           },
           {
             "type": "attribute",

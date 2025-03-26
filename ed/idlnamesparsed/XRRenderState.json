@@ -6,7 +6,7 @@
       "title": "WebXR Device API",
       "url": "https://www.w3.org/TR/webxr/"
     },
-    "fragment": "[SecureContext, Exposed=Window] interface XRRenderState {\n  readonly attribute double depthNear;\n  readonly attribute double depthFar;\n  readonly attribute double? inlineVerticalFieldOfView;\n  readonly attribute XRWebGLLayer? baseLayer;\n};",
+    "fragment": "[SecureContext, Exposed=Window] interface XRRenderState {\n  readonly attribute double depthNear;\n  readonly attribute double depthFar;\n  readonly attribute boolean? passthroughFullyObscured;\n  readonly attribute double? inlineVerticalFieldOfView;\n  readonly attribute XRWebGLLayer? baseLayer;\n};",
     "href": "https://immersive-web.github.io/webxr/#xrrenderstate"
   },
   "extended": [
