@@ -63,19 +63,109 @@
       "name": "ictcp()",
       "href": "https://drafts.csswg.org/css-color-hdr-1/#funcdef-ictcp",
       "type": "function",
-      "value": "ictcp([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
+      "value": "ictcp([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
+      "values": [
+        {
+          "name": "i",
+          "prose": "i is a <number> that corresponds to the origin color’s I (Lightness) after conversion, if required, to ictcp. 1.0 is equivalent to 100%.",
+          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-ictcp-i",
+          "type": "value",
+          "value": "i"
+        },
+        {
+          "name": "ct",
+          "prose": "ct and cp are <number>s that correspond to the origin color’s ct and cp axes after conversion, if required, to ictcp. 0.5 is equivalent to 100%, while -0.5 is equivalent to -100%.",
+          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-ictcp-ct",
+          "type": "value",
+          "value": "ct"
+        },
+        {
+          "name": "cp",
+          "prose": "ct and cp are <number>s that correspond to the origin color’s ct and cp axes after conversion, if required, to ictcp. 0.5 is equivalent to 100%, while -0.5 is equivalent to -100%.",
+          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-ictcp-cp",
+          "type": "value",
+          "value": "cp"
+        },
+        {
+          "name": "alpha",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-ictcp-alpha",
+          "type": "value",
+          "value": "alpha"
+        }
+      ]
     },
     {
       "name": "jzazbz()",
       "href": "https://drafts.csswg.org/css-color-hdr-1/#funcdef-jzazbz",
       "type": "function",
-      "value": "jzazbz([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
+      "value": "jzazbz([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
+      "values": [
+        {
+          "name": "j",
+          "prose": "j is a <number> that corresponds to the origin color’s Jz (Lightness) after conversion, if required, to jzazbz. 1.0 is equivalent to 100%.",
+          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-jzazbz-j",
+          "type": "value",
+          "value": "j"
+        },
+        {
+          "name": "a",
+          "prose": "a and b are <number>s that correspond to the origin color’s az and bz axes after conversion, if required, to jzazbz. 0.21 is equivalent to 100%, while -0.21 is equivalent to -100%.",
+          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-jzazbz-a",
+          "type": "value",
+          "value": "a"
+        },
+        {
+          "name": "b",
+          "prose": "a and b are <number>s that correspond to the origin color’s az and bz axes after conversion, if required, to jzazbz. 0.21 is equivalent to 100%, while -0.21 is equivalent to -100%.",
+          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-jzazbz-b",
+          "type": "value",
+          "value": "b"
+        },
+        {
+          "name": "alpha",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-jzazbz-alpha",
+          "type": "value",
+          "value": "alpha"
+        }
+      ]
     },
     {
       "name": "jzczhz()",
       "href": "https://drafts.csswg.org/css-color-hdr-1/#funcdef-jzczhz",
       "type": "function",
-      "value": "jzczhz([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )"
+      "value": "jzczhz([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )",
+      "values": [
+        {
+          "name": "j",
+          "prose": "j is a <number> that corresponds to the origin color’s Jz (Lightness) after conversion, if required, to jzczhz. 100 is equivalent to 100%.",
+          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-jzczhz-j",
+          "type": "value",
+          "value": "j"
+        },
+        {
+          "name": "c",
+          "prose": "c is a <number> that corresponds to the origin color’s Cz (chroma) after conversion, if required, to jzczhz. 0.26 is equivalent to 100%.",
+          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-jzczhz-c",
+          "type": "value",
+          "value": "c"
+        },
+        {
+          "name": "h",
+          "prose": "h is a <number> that corresponds to the origin color’s hz (hue), in degrees, after conversion, if required, to jzczhz, normalized to a [0, 360] range. 90 is equivalent to 90deg.",
+          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-jzczhz-h",
+          "type": "value",
+          "value": "h"
+        },
+        {
+          "name": "alpha",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-jzczhz-alpha",
+          "type": "value",
+          "value": "alpha"
+        }
+      ]
     },
     {
       "name": "hdr-color()",
@@ -84,10 +174,10 @@
       "value": "color-hdr([ <color> && <number [0,∞]>? ]#{2})"
     },
     {
-      "name": "<colorspace-params>",
-      "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-colorspace-params",
-      "type": "type",
-      "value": "[<custom-params> | <predefined-rgb-params> | <xyz-params>]"
+      "name": "color()",
+      "prose": "The color() function allows a color to be specified in a particular, given color space (rather than the implicit sRGB color space that most of the other color functions operate in).",
+      "href": "https://drafts.csswg.org/css-color-hdr-1/#funcdef-color",
+      "type": "function"
     },
     {
       "name": "<predefined-rgb>",

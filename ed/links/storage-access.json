@@ -56,20 +56,26 @@
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "document",
-          "concept-document-origin",
-          "concept-document"
+          "concept-document-origin"
         ]
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
+          "concept-request",
+          "concept-request-client",
+          "concept-request-url",
           "concept-request-reserved-client",
           "response-has-cross-origin-redirects",
+          "concept-fetch",
+          "concept-http-redirect-fetch",
+          "concept-request-current-url",
           "concept-http-network-or-cache-fetch"
         ]
       },
       "https://html.spec.whatwg.org/multipage/": {
         "anchors": [
-          "environment"
+          "environment",
+          "TODO"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
@@ -198,6 +204,7 @@
       },
       "https://w3c.github.io/webappsec-permissions-policy/": {
         "anchors": [
+          "should-request-be-allowed-to-use-feature",
           "policy-controlled-feature",
           "policy-controlled-feature-default-allowlist"
         ]
