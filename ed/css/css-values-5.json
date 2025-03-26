@@ -451,7 +451,7 @@
     },
     {
       "name": "if()",
-      "prose": "The if() notation is an arbitrary substitution function that represents conditional values. Its argument consists of an ordered semi-colon–separated list of statements, each consisting of a condition followed by a colon followed by a value. An if() notation represents the value corresponding to the first condition in its argument list to be true; if no condition matches, then the if() notation represents an empty token stream.",
+      "prose": "The if() function is an arbitrary substitution function that represents conditional values. Its argument consists of an ordered semi-colon–separated list of statements, each consisting of a condition followed by a colon followed by a value. An if() function represents the value corresponding to the first condition in its argument list to be true; if no condition matches, then the if() function represents an empty token stream.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-if",
       "type": "function",
       "values": [
@@ -468,7 +468,13 @@
       "name": "<if()>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-if",
       "type": "type",
-      "value": "if( [ <if-condition> : <declaration-value>? ; ]* <if-condition> : <declaration-value>? ;? )"
+      "value": "if( [ <if-branch> ; ]* <if-branch> ;? )"
+    },
+    {
+      "name": "<if-branch>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-if-branch",
+      "type": "type",
+      "value": "<if-condition> : <declaration-value>?"
     },
     {
       "name": "<if-condition>",
@@ -481,6 +487,18 @@
       "href": "https://drafts.csswg.org/css-values-5/#typedef-if-test",
       "type": "type",
       "value": "supports( [ <ident> : <declaration-value> ] | <supports-condition> ) | media( <media-feature> | <media-condition> ) | style( <style-query> )"
+    },
+    {
+      "name": "<if-args>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-if-args",
+      "type": "type",
+      "value": "if( [ <if-args-branch> ; ]* <if-args-branch> ;? )"
+    },
+    {
+      "name": "<if-args-branch>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-if-args-branch",
+      "type": "type",
+      "value": "<declaration-value> : <declaration-value>?"
     },
     {
       "name": "toggle()",
@@ -496,7 +514,7 @@
     },
     {
       "name": "inherit()",
-      "prose": "Like the inherit keyword, the inherit() functional notation resolves to the computed value of a property on the parent. Rather than resolving to the value of the same property, however, it resolves to the tokenized computed value of the property specified as its first argument. Its second argument, if present, is used as a fallback in case the first argument resolves to the guaranteed-invalid value.",
+      "prose": "Like the inherit keyword, the inherit() functional notation resolves to the computed value of a property on the parent. Rather than resolving to the value of the same property, however, it resolves to a sequence of component values representing the computed value of the property specified as its first argument. Its second argument, if present, is used as a fallback in case the first argument resolves to the guaranteed-invalid value.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-inherit",
       "type": "function"
     },
@@ -505,6 +523,12 @@
       "href": "https://drafts.csswg.org/css-values-5/#typedef-inherit",
       "type": "type",
       "value": "inherit( <custom-property-name>, <declaration-value>? )"
+    },
+    {
+      "name": "<inherit-args>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-inherit-args",
+      "type": "type",
+      "value": "inherit( <declaration-value>, <declaration-value>? )"
     },
     {
       "name": "attr()",
@@ -532,6 +556,12 @@
       "href": "https://drafts.csswg.org/css-values-5/#typedef-attr-type",
       "type": "type",
       "value": "type( <syntax> ) | raw-string | <attr-unit>"
+    },
+    {
+      "name": "<attr-args>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-attr-args",
+      "type": "type",
+      "value": "attr( <declaration-value>, <declaration-value>? )"
     },
     {
       "name": "<attr-unit>",
@@ -601,6 +631,12 @@
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-random-item",
       "type": "function",
       "value": "random-item( <random-value-sharing> , [ <declaration-value>? ]# )"
+    },
+    {
+      "name": "<random-item-args>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-item-args",
+      "type": "type",
+      "value": "random-item( <declaration-value>, [ <declaration-value>? ]# )"
     },
     {
       "name": "sibling-count()",
