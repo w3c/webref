@@ -54,6 +54,30 @@
       "value": "dynamic-range-limit-mix( [ <'dynamic-range-limit'> && <percentage [0,100]> ]#{2,} )"
     },
     {
+      "name": "<color-function>",
+      "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-color-function",
+      "type": "type",
+      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <ictcp()> | <jzazbz()> | <jzczhz()> | <color()>"
+    },
+    {
+      "name": "ictcp()",
+      "href": "https://drafts.csswg.org/css-color-hdr-1/#funcdef-ictcp",
+      "type": "function",
+      "value": "ictcp([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
+    },
+    {
+      "name": "jzazbz()",
+      "href": "https://drafts.csswg.org/css-color-hdr-1/#funcdef-jzazbz",
+      "type": "function",
+      "value": "jzazbz([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
+    },
+    {
+      "name": "jzczhz()",
+      "href": "https://drafts.csswg.org/css-color-hdr-1/#funcdef-jzczhz",
+      "type": "function",
+      "value": "jzczhz([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )"
+    },
+    {
       "name": "hdr-color()",
       "href": "https://drafts.csswg.org/css-color-hdr-1/#funcdef-hdr-color",
       "type": "function",
@@ -63,31 +87,13 @@
       "name": "<colorspace-params>",
       "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-colorspace-params",
       "type": "type",
-      "value": "[<custom-params> | <predefined-rgb-params> | <predefined-polar-params> | <predefined-rectangular-params> | <xyz-params>]"
-    },
-    {
-      "name": "<predefined-polar-params>",
-      "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-predefined-polar-params",
-      "type": "type",
-      "value": "jzczhz [ <number> | <percentage> | none ]{2} [ <hue> | none]"
-    },
-    {
-      "name": "<predefined-rectangular-params>",
-      "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-predefined-rectangular-params",
-      "type": "type",
-      "value": "<predefined-rectangular> [ <number> | <percentage> | none ]{3}"
+      "value": "[<custom-params> | <predefined-rgb-params> | <xyz-params>]"
     },
     {
       "name": "<predefined-rgb>",
       "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-predefined-rgb",
       "type": "type",
       "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | rec2100-pq | rec2100-hlg | rec2100-linear"
-    },
-    {
-      "name": "<predefined-rectangular>",
-      "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-predefined-rectangular",
-      "type": "type",
-      "value": "jzazbz | ictcp"
     }
   ]
 }

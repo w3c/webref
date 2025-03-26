@@ -68,34 +68,97 @@
       ]
     },
     {
-      "name": "resolve an if() function",
-      "href": "https://drafts.csswg.org/css-values-5/#resolve-an-if-function",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"resolve-an-if-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#resolve-an-arbitrary-substitution-function\" id=\"ref-for-resolve-an-arbitrary-substitution-function\">resolve an if() function</a></dfn>,\n\treturn the <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-declaration-value\" id=\"ref-for-typedef-declaration-value①①\">&lt;declaration-value&gt;</a>?\n\tassociated with the first <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-5/#typedef-if-condition\" id=\"ref-for-typedef-if-condition③\">&lt;if-condition&gt;</a> that is true;\n\tif none are true,\n\treturn nothing (an empty token stream).",
-      "rationale": "To <dfn>"
-    },
-    {
-      "name": "resolve an inherit() function",
-      "href": "https://drafts.csswg.org/css-values-5/#resolve-an-inherit-function",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"resolve-an-inherit-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#resolve-an-arbitrary-substitution-function\" id=\"ref-for-resolve-an-arbitrary-substitution-function①\">resolve an inherit() function</a></dfn>,\n\treturn the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#inherited-value\" id=\"ref-for-inherited-value②\">inherited value</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#custom-property\" id=\"ref-for-custom-property①\">custom property</a> specified by the first argument,\n\tand (if specified) the fallback specified by the second argument.",
-      "rationale": "To <dfn>"
-    },
-    {
-      "name": "resolve an attr() function",
-      "href": "https://drafts.csswg.org/css-values-5/#resolve-an-attr-function",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"resolve-an-attr-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#resolve-an-arbitrary-substitution-function\" id=\"ref-for-resolve-an-arbitrary-substitution-function②\">resolve an attr() function</a></dfn>:",
+      "name": "replace an if() function",
+      "href": "https://drafts.csswg.org/css-values-5/#replace-an-if-function",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"replace-an-if-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#replace-an-arbitrary-substitution-function\" id=\"ref-for-replace-an-arbitrary-substitution-function\">replace an if() function</a></dfn>,\n\t\tgiven a list of <var>arguments</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>el</var> be the element that the style containing the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#funcdef-attr\" id=\"ref-for-funcdef-attr①①\">attr()</a> function\nis being applied to.\nLet <var>attr name</var> be the attribute name specified in the function.\nLet <var>syntax</var> be the <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-5/#typedef-syntax\" id=\"ref-for-typedef-syntax①⑤\">&lt;syntax&gt;</a> specified in the function,\nor null if it was omitted.\nLet <var>fallback</var> be the <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-declaration-value\" id=\"ref-for-typedef-declaration-value①⑤\">&lt;declaration-value&gt;</a>? argument specified in the function,\nor the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value⑤\">guaranteed-invalid value</a> if it was omitted.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-5/#typedef-if-args-branch\" id=\"ref-for-typedef-if-args-branch③\">&lt;if-args-branch&gt;</a> <var>branch</var> in <var>arguments</var>:</p>",
+          "ignored": [
+            "Substitute arbitrary substitution functions in the first <declaration-value> of branch, then parse the result as an <if-condition>. If parsing returns failure, continue; otherwise, let the result be condition. Evaluate condition. If the result is false, continue. Substitute arbitrary substitution functions in the second <declaration-value> of branch, and return the result."
+          ]
         },
         {
-          "html": "<p>Let <var>attr value</var> be the value of the <var>attr name</var> attribute on <var>el</var>.</p>\n      <p>If such an attribute does not exist,\nreturn an empty CSS string if <var>syntax</var> is null,\nor the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value⑥\">guaranteed-invalid value</a> and <var>fallback</var> otherwise.</p>"
+          "html": "<p>Return nothing (an empty sequence of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#component-value\" id=\"ref-for-component-value②\">component values</a>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "replace an inherit() function",
+      "href": "https://drafts.csswg.org/css-values-5/#replace-an-inherit-function",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"replace-an-inherit-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#replace-an-arbitrary-substitution-function\" id=\"ref-for-replace-an-arbitrary-substitution-function①\">replace an inherit() function</a></dfn>,\n\t\tgiven a list of <var>arguments</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-arbitrary-substitution-function\" id=\"ref-for-substitute-arbitrary-substitution-function③\">Substitute arbitrary substitution functions</a> in the first <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-declaration-value\" id=\"ref-for-typedef-declaration-value①⑧\">&lt;declaration-value&gt;</a> of <var>arguments</var>,\nthen <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar⑤\">parse</a> it as a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-variables-1/#typedef-custom-property-name\" id=\"ref-for-typedef-custom-property-name①\">&lt;custom-property-name&gt;</a>.</p>"
+        },
+        {
+          "html": "<p>If parsing returned a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-variables-1/#typedef-custom-property-name\" id=\"ref-for-typedef-custom-property-name②\">&lt;custom-property-name&gt;</a>,\nand the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#inherited-value\" id=\"ref-for-inherited-value②\">inherited value</a> of that <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#custom-property\" id=\"ref-for-custom-property①\">custom property</a> on the element\ndoes not contain the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value③\">guaranteed-invalid value</a>,\nreturn that inherited value.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if a second <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-declaration-value\" id=\"ref-for-typedef-declaration-value①⑨\">&lt;declaration-value&gt;</a>? was passed in <var>arguments</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-arbitrary-substitution-function\" id=\"ref-for-substitute-arbitrary-substitution-function④\">substitute arbitrary substitution functions</a> in that argument,\nand return the result.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value④\">guaranteed-invalid value</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "replace an attr() function",
+      "href": "https://drafts.csswg.org/css-values-5/#replace-an-attr-function",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"replace-an-attr-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#replace-an-arbitrary-substitution-function\" id=\"ref-for-replace-an-arbitrary-substitution-function②\">replace an attr() function</a></dfn>,\n\t\tgiven a list of <var>arguments</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>el</var> be the element that the style containing the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#funcdef-attr\" id=\"ref-for-funcdef-attr①①\">attr()</a> function\nis being applied to.\nLet <var>first arg</var> be the first <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-declaration-value\" id=\"ref-for-typedef-declaration-value②⑤\">&lt;declaration-value&gt;</a> in <var>arguments</var>.\nLet <var>second arg</var> be the <span class=\"production\" id=\"ref-for-typedef-declaration-value②⑥\">&lt;declaration-value&gt;</span>? passed after the comma,\nor null if there was no comma.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-arbitrary-substitution-function\" id=\"ref-for-substitute-arbitrary-substitution-function⑥\">Substitute arbitrary substitution functions</a> in <var>first arg</var>,\nthen <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar⑦\">parse</a> it as <span class=\"css\"><a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-5/#typedef-attr-name\" id=\"ref-for-typedef-attr-name④\">&lt;attr-name&gt;</a> <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-5/#typedef-attr-type\" id=\"ref-for-typedef-attr-type③\">&lt;attr-type&gt;</a>?</span>.\nIf that returns failure, jump to the last step (labeled FAILURE).\nOtherwise, let <var>attr name</var> and <var>syntax</var> be the results of parsing\n(with <var>syntax</var> being null if <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-5/#typedef-attr-type\" id=\"ref-for-typedef-attr-type④\">&lt;attr-type&gt;</a> was omitted),\nprocessed as specified in the definition of those arguments.</p>"
+        },
+        {
+          "html": "<p>If <var>attr name</var> exists as an attribute on <var>el</var>,\nlet <var>attr value</var> be its value;\notherwise jump to the last step (labeled FAILURE).</p>"
         },
         {
           "html": "<p>If <var>syntax</var> is null,\nreturn a CSS <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#string-value\" id=\"ref-for-string-value⑦\">&lt;string&gt;</a> whose value is <var>attr value</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#parse-with-a-syntax\" id=\"ref-for-parse-with-a-syntax①\">Parse with a <syntax></syntax></a> <var>attr value</var>, with <var>syntax</var> and <var>el</var>.\nReturn the result and <var>fallback</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-arbitrary-substitution-function\" id=\"ref-for-substitute-arbitrary-substitution-function⑦\">Substitute arbitrary substitution functions</a> in <var>attr value</var>,\nwith «\"attribute\", <var>attr name</var>» as the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitution-context\" id=\"ref-for-substitution-context\">substitution context</a>,\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#parse-with-a-syntax\" id=\"ref-for-parse-with-a-syntax①\">parse with a <syntax></syntax></a> <var>attr value</var>, with <var>syntax</var> and <var>el</var>.\nIf that succeeds, return the result;\notherwise, jump to the last step (labeled FAILURE).</p>"
+        },
+        {
+          "html": "<b>FAILURE:</b>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>second arg</var> is null,\nand <var>syntax</var> was omitted,\nreturn an CSS <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#string-value\" id=\"ref-for-string-value⑧\">&lt;string&gt;</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>second arg</var> is null,\nreturn the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value⑦\">guaranteed-invalid value</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-arbitrary-substitution-function\" id=\"ref-for-substitute-arbitrary-substitution-function⑧\">Substitute arbitrary substitution functions</a> in <var>second arg</var>,\nand return the result.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "replace a random-item() function",
+      "href": "https://drafts.csswg.org/css-values-5/#replace-a-random-item-function",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"replace-a-random-item-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#replace-an-arbitrary-substitution-function\" id=\"ref-for-replace-an-arbitrary-substitution-function③\">replace a random-item() function</a></dfn>,\n\t\tgiven a list of <var>arguments</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>value sharing</var> be the first <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-declaration-value\" id=\"ref-for-typedef-declaration-value③①\">&lt;declaration-value&gt;</a> in <var>arguments</var>,\nand <var>options</var> be a list of the remaining <span class=\"production\" id=\"ref-for-typedef-declaration-value③②\">&lt;declaration-value&gt;</span>? options.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-arbitrary-substitution-function\" id=\"ref-for-substitute-arbitrary-substitution-function⑨\">Substitute arbitrary substitution functions</a> in <var>value sharing</var>,\nthen <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar⑧\">parse</a> it as <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-5/#typedef-random-value-sharing\" id=\"ref-for-typedef-random-value-sharing①③\">&lt;random-value-sharing&gt;</a>.\nIf parsing returns failure,\nreturn the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value⑨\">guaranteed-invalid value</a>;\notherwise set <var>value sharing</var> to the result.</p>"
+        },
+        {
+          "html": "<p>Select one of the <var>options</var>,\nas specified in <a href=\"https://drafts.csswg.org/css-values-5/#random-evaluation\">§ 8.3 Evaluating Random Values</a>,\nusing <var>value sharing</var> as specified in <a href=\"https://drafts.csswg.org/css-values-5/#random-caching\">§ 8.4 Caching Random Values: the &lt;random-value-sharing&gt; value</a>,\nand let <var>chosen option</var> be the result.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-arbitrary-substitution-function\" id=\"ref-for-substitute-arbitrary-substitution-function①⓪\">Substitute arbitrary substitution functions</a> in <var>chosen option</var>,\nthen return the result.</p>"
         }
       ]
     },
@@ -178,53 +241,94 @@
     {
       "name": "substitute arbitrary substitution function",
       "href": "https://drafts.csswg.org/css-values-5/#substitute-arbitrary-substitution-function",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-local-lt=\"substitute|substitution\" data-lt=\"substitute arbitrary substitution function|arbitrary substitution\" id=\"substitute-arbitrary-substitution-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">substitute arbitrary substitution functions</dfn> in a <var>value</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-local-lt=\"substitute|substitution\" data-lt=\"substitute arbitrary substitution function|arbitrary substitution\" id=\"substitute-arbitrary-substitution-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">substitute arbitrary substitution functions</dfn> in a sequence of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#component-value\" id=\"ref-for-component-value⑤\">component values</a> <var>values</var>,\n\t\t\tgiven an optional <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitution-context\" id=\"ref-for-substitution-context②\">substitution context</a> <var>context</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#arbitrary-substitution-function\" id=\"ref-for-arbitrary-substitution-function①④\">arbitrary substitution function</a> <var>func</var> in <var>value</var>:",
-          "rationale": "resolve",
+          "html": "<p>If <var>context</var> was provided,\nand forms a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#cyclic-substitution-context\" id=\"ref-for-cyclic-substitution-context\">cyclic substitution context</a>,\nreturn the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value①⓪\">guaranteed-invalid value</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#arbitrary-substitution-function\" id=\"ref-for-arbitrary-substitution-function①①\">arbitrary substitution function</a> <var>func</var> in <var>values</var> (ordered via a depth-first pre-order traversal)\nthat is not nested in the contents of another <span id=\"ref-for-arbitrary-substitution-function①②\">arbitrary substitution function</span>:",
+          "rationale": "if",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">Resolve</a> <var>func</var>.\nLet <var>result</var> be the returned result,\nand <var>fallback</var> be the returned fallback.</p>\n        <p>If no <var>result</var> was returned,\nset <var>result</var> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value⑨\">guaranteed-invalid value</a>.\nIf no <var>fallback</var> was returned,\nset <var>fallback</var> to the <span id=\"ref-for-guaranteed-invalid-value①⓪\">guaranteed-invalid value</span>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-early-invoked-functions\" id=\"ref-for-substitute-early-invoked-functions\">Substitute early-invoked functions</a> in <var>func</var>’s contents,\nand let <var>early result</var> be the result.</p>"
             },
             {
-              "html": "<dl class=\"switch\">\n         <dt data-md=\"\">If <var>result</var> does not contain the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value①①\">guaranteed-invalid value</a>\n         </dt><dd data-md=\"\">\n          <p>Replace <var>func</var> in <var>value</var> with <var>result</var>.</p>\n         </dd><dt data-md=\"\">Otherwise, if <var>fallback</var> does not contain the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value①②\">guaranteed-invalid value</a>\n         </dt><dd data-md=\"\">\n          <p>Replace <var>func</var> in <var>value</var> with <var>fallback</var>.</p>\n         </dd><dt data-md=\"\">Otherwise\n         </dt><dd data-md=\"\">\n          <p>Replace all of <var>value</var> with the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value①③\">guaranteed-invalid value</a>.\nExit this algorithm.</p>\n        </dd></dl>",
-              "rationale": ".switch",
-              "steps": [
-                {
-                  "operation": "switch",
-                  "steps": [
-                    {
-                      "case": "If result does not contain the guaranteed-invalid value",
-                      "html": "<p>Replace <var>func</var> in <var>value</var> with <var>result</var>.</p>"
-                    },
-                    {
-                      "case": "Otherwise, if fallback does not contain the guaranteed-invalid value",
-                      "html": "<p>Replace <var>func</var> in <var>value</var> with <var>fallback</var>.</p>"
-                    },
-                    {
-                      "case": "Otherwise",
-                      "html": "<p>Replace all of <var>value</var> with the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value①③\">guaranteed-invalid value</a>.\nExit this algorithm.</p>"
-                    }
-                  ]
-                }
-              ]
+              "html": "<p>If <var>early result</var> contains the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value①①\">guaranteed-invalid value</a>,\nreplace <var>func</var> in <var>values</var> with the <span id=\"ref-for-guaranteed-invalid-value①②\">guaranteed-invalid value</span> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar⑨\">Parse</a> <var>early result</var> acccording to <var>func</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#argument-grammar\" id=\"ref-for-argument-grammar④\">argument grammar</a>.\nIf this returns failure,\nreplace <var>func</var> in values with the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value①③\">guaranteed-invalid value</a> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>;\notherwise,\nlet <var>arguments</var> be the result.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#replace-an-arbitrary-substitution-function\" id=\"ref-for-replace-an-arbitrary-substitution-function④\">Replace an arbitrary substitution function</a> for <var>func</var>,\ngiven <var>arguments</var>,\nas defined by that function.\nLet <var>result</var> be the returned list of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#component-value\" id=\"ref-for-component-value⑥\">component values</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>result</var> contains the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value①④\">guaranteed-invalid value</a>,\nreplace <var>func</var> in <var>values</var> with the <span id=\"ref-for-guaranteed-invalid-value①⑤\">guaranteed-invalid value</span>.\nOtherwise, replace <var>func</var> in <var>values</var> with <var>result</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>If there are still <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#arbitrary-substitution-function\" id=\"ref-for-arbitrary-substitution-function①⑤\">arbitrary substitution functions</a> in <var>value</var> (due to substitution),\nrepeat the previous step.</p>"
+          "html": "<p>Return <var>values</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "substitute early-invoked functions",
+      "href": "https://drafts.csswg.org/css-values-5/#substitute-early-invoked-functions",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"substitute-early-invoked-functions\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">substitute early-invoked functions</dfn> in a sequence of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#component-value\" id=\"ref-for-component-value⑦\">component values</a> <var>values</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#arbitrary-substitution-function\" id=\"ref-for-arbitrary-substitution-function②⑥\">arbitrary substitution function</a> <var>func</var> in <var>values</var> (ordered via a depth-first pre-order traversal)\nusing the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#spread-syntax\" id=\"ref-for-spread-syntax③\">spread syntax</a> that is not nested in the contents of another <span id=\"ref-for-arbitrary-substitution-function②⑦\">arbitrary substitution function</span>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-early-invoked-functions\" id=\"ref-for-substitute-early-invoked-functions①\">Substitute early-invoked functions</a> in <var>func</var>’s contents,\nand let <var>early result</var> be the result.</p>"
+            },
+            {
+              "html": "<p>If <var>early result</var> contains the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value①⑦\">guaranteed-invalid value</a>,\nreplace <var>func</var> in <var>values</var> with the <span id=\"ref-for-guaranteed-invalid-value①⑧\">guaranteed-invalid value</span> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue④\">continue</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar①①\">Parse</a> <var>early result</var> acccording to <var>func</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#argument-grammar\" id=\"ref-for-argument-grammar①①\">argument grammar</a>.\nIf this returns failure,\nreplace <var>func</var> in values with the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value①⑨\">guaranteed-invalid value</a> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑤\">continue</a>;\notherwise,\nlet <var>arguments</var> be the result.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#replace-an-arbitrary-substitution-function\" id=\"ref-for-replace-an-arbitrary-substitution-function⑥\">Replace an arbitrary substitution function</a> for <var>func</var>,\ngiven <var>arguments</var>,\nas defined by that function.\nLet <var>result</var> be the returned list of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#component-value\" id=\"ref-for-component-value⑧\">component values</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>result</var> contains the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value②⓪\">guaranteed-invalid value</a>,\nreplace <var>func</var> in <var>values</var> with the <span id=\"ref-for-guaranteed-invalid-value②①\">guaranteed-invalid value</span>.\nOtherwise, replace <var>func</var> in <var>values</var> with <var>result</var>.</p>"
+            }
+          ]
         },
         {
-          "html": "<p>Grammar-check <var>value</var> according to its context as normal.\nIf it is not valid at this point,\nreplace <var>value</var> with the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value①④\">guaranteed-invalid value</a>.</p>"
+          "html": "<p>Return <var>values</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "property replacement",
+      "href": "https://drafts.csswg.org/css-values-5/#property-replacement",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"property replacement|replace substitution functions|replace substitution functions in a property\" id=\"property-replacement\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">replace substitution functions in a property</dfn> <var>prop</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-arbitrary-substitution-function\" id=\"ref-for-substitute-arbitrary-substitution-function②⑥\">Substitute arbitrary substitution functions</a> in <var>prop</var>’s value,\ngiven «\"property\", <var>prop</var>’s name» as the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitution-context\" id=\"ref-for-substitution-context①④\">substitution context</a>.\nLet <var>result</var> be the returned <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#component-value\" id=\"ref-for-component-value⑨\">component value</a> sequence.</p>"
+        },
+        {
+          "html": "<p>If <var>result</var> contains the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value②②\">guaranteed-invalid value</a>, <var>prop</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#invalid-at-computed-value-time\" id=\"ref-for-invalid-at-computed-value-time①③\">invalid at computed-value time</a>;\nreturn.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar①②\">Parse</a> <var>result</var> according to <var>prop</var>’s grammar.\nIf this returns failure, <var>prop</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#invalid-at-computed-value-time\" id=\"ref-for-invalid-at-computed-value-time①④\">invalid at computed-value time</a>;\nreturn.</p>"
+        },
+        {
+          "html": "<p>Otherwise, replace <var>prop</var>’s value with the parsed result.</p>"
         }
       ]
     },
     {
       "name": "invalid at computed-value time",
       "href": "https://drafts.csswg.org/css-values-5/#invalid-at-computed-value-time",
-      "html": "When <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-arbitrary-substitution-function\" id=\"ref-for-substitute-arbitrary-substitution-function⑦\">substitution</a> results in a property’s value\n\tcontaining the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value①⑤\">guaranteed-invalid value</a>,\n\tthis makes the declaration <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"invalid-at-computed-value-time\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invalid at computed-value time</dfn>.\n\tWhen this happens,\n\tthe computed value is one of the following\n\tdepending on the property’s type:",
+      "html": "When <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#property-replacement\" id=\"ref-for-property-replacement④\">property replacement</a> results in a property’s value\n\tcontaining the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value②③\">guaranteed-invalid value</a>,\n\tthis makes the declaration <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"invalid-at-computed-value-time\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invalid at computed-value time</dfn>.\n\tWhen this happens,\n\tthe computed value is one of the following\n\tdepending on the property’s type:",
       "rationale": ".switch",
       "steps": [
         {
@@ -232,11 +336,11 @@
           "steps": [
             {
               "case": "The property is a non-registered custom property",
-              "html": "<p>The computed value is the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value①⑥\">guaranteed-invalid value</a>.</p>"
+              "html": "<p>The computed value is the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value②④\">guaranteed-invalid value</a>.</p>"
             },
             {
               "case": "The property is a registered custom property with universal syntax",
-              "html": "<p>The computed value is the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value①⑥\">guaranteed-invalid value</a>.</p>"
+              "html": "<p>The computed value is the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value②④\">guaranteed-invalid value</a>.</p>"
             },
             {
               "case": "Otherwise",
