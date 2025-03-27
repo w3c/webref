@@ -22,6 +22,14 @@ bluetooth.ScanRecord = {
   ? manufacturerData: [ * bluetooth.BluetoothManufacturerData ],
 }
 
+BluetoothCommand = (
+  bluetooth.HandleRequestDevicePrompt //
+  bluetooth.SimulateAdapter //
+  bluetooth.DisableSimulation //
+  bluetooth.SimulatePreconnectedPeripheral //
+  bluetooth.SimulateAdvertisement //
+)
+
 bluetooth.HandleRequestDevicePrompt = (
    method: "bluetooth.handleRequestDevicePrompt",
    params: bluetooth.HandleRequestDevicePromptParameters,
@@ -45,7 +53,7 @@ bluetooth.HandleRequestDevicePromptCancelParameters = (
    accept: false,
 )
 
-bluetooth.simulateAdapter = (
+bluetooth.SimulateAdapter = (
    method: "bluetooth.simulateAdapter",
    params: bluetooth.SimulateAdapterParameters,
 )
@@ -56,7 +64,7 @@ bluetooth.SimulateAdapterParameters = {
    state: "absent" / "powered-off" / "powered-on"
 }
 
-bluetooth.disableSimulation = (
+bluetooth.DisableSimulation = (
    method: "bluetooth.disableSimulation",
    params: bluetooth.DisableSimulationParameters,
 )

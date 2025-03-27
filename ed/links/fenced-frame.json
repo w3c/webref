@@ -205,6 +205,7 @@
       "https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/web_tests/wpt_internal/fenced_frame/": {},
       "https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/web_tests/wpt_internal/fenced_frame/disable-untrusted-network-ongoing-navigation.https.html": {},
       "https://url.spec.whatwg.org/": {},
+      "https://w3c.github.io/reporting/": {},
       "https://w3c.github.io/webappsec-csp/": {
         "anchors": [
           "frame-src-pre-request",
@@ -232,6 +233,7 @@
       "https://websockets.spec.whatwg.org/": {},
       "https://wicg.github.io/anonymous-iframe/": {
         "anchors": [
+          "spec-network-partition-key",
           "spec-navigation-partition-nonce",
           "spec-window-partition-nonce"
         ]
@@ -244,6 +246,11 @@
       "https://wicg.github.io/nav-speculation/prerendering.html": {},
       "https://wicg.github.io/shared-storage/": {},
       "https://wicg.github.io/turtledove/": {},
+      "https://wicg.github.io/webpackage/loading.html": {
+        "anchors": [
+          "mp-http-fetch"
+        ]
+      },
       "https://wpt.fyi/results/fenced-frame/allow-attribute-src.https.html": {},
       "https://wpt.fyi/results/fenced-frame/ancestor-throttle.https.html": {},
       "https://wpt.fyi/results/fenced-frame/anchor-focus.https.html": {},
@@ -476,8 +483,10 @@
           "fetch-useparallelqueue",
           "concept-fetch-group-terminate",
           "concept-fetch-group",
+          "request-determine-the-network-partition-key",
           "block-bad-port",
           "concept-network-error",
+          "concept-http-fetch",
           "concept-request-destination",
           "navigation-request",
           "non-subresource-request",
@@ -489,6 +498,7 @@
           "queue-a-cross-origin-embedder-policy-corp-violation-report",
           "concept-header-list-get-structured-header",
           "concept-response-header-list",
+          "network-partition-key",
           "concept-request-reserved-client"
         ]
       },
@@ -808,7 +818,8 @@
           "list-extend",
           "list-prepend",
           "set-union",
-          "set-subset"
+          "set-subset",
+          "tuple"
         ]
       },
       "https://url.spec.whatwg.org/": {
@@ -817,6 +828,11 @@
           "concept-url-origin",
           "concept-url-parser",
           "concept-url-scheme"
+        ]
+      },
+      "https://w3c.github.io/reporting/": {
+        "anchors": [
+          "generate-and-queue-a-report"
         ]
       },
       "https://w3c.github.io/webappsec-csp/": {
@@ -978,6 +994,11 @@
       "https://wicg.github.io/turtledove/": {
         "anchors": [
           "construct-a-pending-fenced-frame-config"
+        ]
+      },
+      "https://wicg.github.io/webpackage/loading.html": {
+        "anchors": [
+          "wait-and-queue-a-report-for"
         ]
       },
       "https://www.ietf.org/rfc/rfc4122.txt": {
