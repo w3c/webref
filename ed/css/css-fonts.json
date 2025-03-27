@@ -362,7 +362,7 @@
     {
       "name": "font-synthesis-style",
       "href": "https://drafts.csswg.org/css-fonts-4/#propdef-font-synthesis-style",
-      "value": "auto | none",
+      "value": "auto | none | oblique-only",
       "initial": "auto",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -385,6 +385,13 @@
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-synthesis-style-none",
           "type": "value",
           "value": "none"
+        },
+        {
+          "name": "oblique-only",
+          "prose": "Synthesis of oblique faces is allowed, but they must not be used as fallback if italic is specified",
+          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-synthesis-style-oblique-only",
+          "type": "value",
+          "value": "oblique-only"
         }
       ],
       "styleDeclaration": [
