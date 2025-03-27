@@ -5,4 +5,5 @@ dictionary RTCRemoteInboundRtpStreamStats : RTCReceivedRtpStreamStats {
              double               totalRoundTripTime;
              double               fractionLost;
              unsigned long long   roundTripTimeMeasurements;
+             unsigned long long   packetsWithBleachedEct1Marking;
 };

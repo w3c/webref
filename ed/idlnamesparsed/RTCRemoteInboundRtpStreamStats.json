@@ -6,7 +6,7 @@
       "title": "Identifiers for WebRTC's Statistics API",
       "url": "https://www.w3.org/TR/webrtc-stats/"
     },
-    "fragment": "dictionary RTCRemoteInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n             DOMString            localId;\n             double               roundTripTime;\n             double               totalRoundTripTime;\n             double               fractionLost;\n             unsigned long long   roundTripTimeMeasurements;\n};",
+    "fragment": "dictionary RTCRemoteInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n             DOMString            localId;\n             double               roundTripTime;\n             double               totalRoundTripTime;\n             double               fractionLost;\n             unsigned long long   roundTripTimeMeasurements;\n             unsigned long long   packetsWithBleachedEct1Marking;\n};",
     "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats"
   },
   "extended": [],
@@ -18,7 +18,7 @@
         "title": "Identifiers for WebRTC's Statistics API",
         "url": "https://www.w3.org/TR/webrtc-stats/"
       },
-      "fragment": "dictionary RTCReceivedRtpStreamStats : RTCRtpStreamStats {\n             unsigned long long   packetsReceived;\n             long long            packetsLost;\n             double               jitter;\n};",
+      "fragment": "dictionary RTCReceivedRtpStreamStats : RTCRtpStreamStats {\n             unsigned long long   packetsReceived;\n             unsigned long long   packetsReceivedWithEct1;\n             unsigned long long   packetsReceivedWithCe;\n             unsigned long long   packetsReportedAsLost;\n             unsigned long long   packetsReportedAsLostButRecovered;\n             long long            packetsLost;\n             double               jitter;\n};",
       "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats"
     },
     "extended": [],

@@ -271,7 +271,7 @@
         "href": "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats"
       },
       "RTCReceivedRtpStreamStats": {
-        "fragment": "dictionary RTCReceivedRtpStreamStats : RTCRtpStreamStats {\n             unsigned long long   packetsReceived;\n             long long            packetsLost;\n             double               jitter;\n};",
+        "fragment": "dictionary RTCReceivedRtpStreamStats : RTCRtpStreamStats {\n             unsigned long long   packetsReceived;\n             unsigned long long   packetsReceivedWithEct1;\n             unsigned long long   packetsReceivedWithCe;\n             unsigned long long   packetsReportedAsLost;\n             unsigned long long   packetsReportedAsLostButRecovered;\n             long long            packetsLost;\n             double               jitter;\n};",
         "type": "dictionary",
         "name": "RTCReceivedRtpStreamStats",
         "inheritance": "RTCRtpStreamStats",
@@ -291,6 +291,70 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-packetsreceived"
+          },
+          {
+            "type": "field",
+            "name": "packetsReceivedWithEct1",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-packetsreceivedwithect1"
+          },
+          {
+            "type": "field",
+            "name": "packetsReceivedWithCe",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-packetsreceivedwithce"
+          },
+          {
+            "type": "field",
+            "name": "packetsReportedAsLost",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-packetsreportedaslost"
+          },
+          {
+            "type": "field",
+            "name": "packetsReportedAsLostButRecovered",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-packetsreportedaslostbutrecovered"
           },
           {
             "type": "field",
@@ -1237,7 +1301,7 @@
         "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats"
       },
       "RTCRemoteInboundRtpStreamStats": {
-        "fragment": "dictionary RTCRemoteInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n             DOMString            localId;\n             double               roundTripTime;\n             double               totalRoundTripTime;\n             double               fractionLost;\n             unsigned long long   roundTripTimeMeasurements;\n};",
+        "fragment": "dictionary RTCRemoteInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n             DOMString            localId;\n             double               roundTripTime;\n             double               totalRoundTripTime;\n             double               fractionLost;\n             unsigned long long   roundTripTimeMeasurements;\n             unsigned long long   packetsWithBleachedEct1Marking;\n};",
         "type": "dictionary",
         "name": "RTCRemoteInboundRtpStreamStats",
         "inheritance": "RTCReceivedRtpStreamStats",
@@ -1321,6 +1385,22 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-roundtriptimemeasurements"
+          },
+          {
+            "type": "field",
+            "name": "packetsWithBleachedEct1Marking",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-packetswithbleachedect1marking"
           }
         ],
         "extAttrs": [],
@@ -1328,7 +1408,7 @@
         "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats"
       },
       "RTCSentRtpStreamStats": {
-        "fragment": "dictionary RTCSentRtpStreamStats : RTCRtpStreamStats {\n             unsigned long long packetsSent;\n             unsigned long long bytesSent;\n};",
+        "fragment": "dictionary RTCSentRtpStreamStats : RTCRtpStreamStats {\n            unsigned long long packetsSent;\n            unsigned long long bytesSent;\n            unsigned long long packetsSentWithEct1;\n};",
         "type": "dictionary",
         "name": "RTCSentRtpStreamStats",
         "inheritance": "RTCRtpStreamStats",
@@ -1364,6 +1444,22 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/webrtc-stats/#dom-rtcsentrtpstreamstats-bytessent"
+          },
+          {
+            "type": "field",
+            "name": "packetsSentWithEct1",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcsentrtpstreamstats-packetssentwithect1"
           }
         ],
         "extAttrs": [],
@@ -2513,7 +2609,7 @@
         "href": "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats"
       },
       "RTCTransportStats": {
-        "fragment": "dictionary RTCTransportStats : RTCStats {\n             unsigned long long    packetsSent;\n             unsigned long long    packetsReceived;\n             unsigned long long    bytesSent;\n             unsigned long long    bytesReceived;\n             RTCIceRole            iceRole;\n             DOMString             iceLocalUsernameFragment;\n             required RTCDtlsTransportState dtlsState;\n             RTCIceTransportState  iceState;\n             DOMString             selectedCandidatePairId;\n             DOMString             localCertificateId;\n             DOMString             remoteCertificateId;\n             DOMString             tlsVersion;\n             DOMString             dtlsCipher;\n             RTCDtlsRole           dtlsRole;\n             DOMString             srtpCipher;\n             unsigned long         selectedCandidatePairChanges;\n};",
+        "fragment": "dictionary RTCTransportStats : RTCStats {\n             unsigned long long    packetsSent;\n             unsigned long long    packetsReceived;\n             unsigned long long    bytesSent;\n             unsigned long long    bytesReceived;\n             RTCIceRole            iceRole;\n             DOMString             iceLocalUsernameFragment;\n             required RTCDtlsTransportState dtlsState;\n             RTCIceTransportState  iceState;\n             DOMString             selectedCandidatePairId;\n             DOMString             localCertificateId;\n             DOMString             remoteCertificateId;\n             DOMString             tlsVersion;\n             DOMString             dtlsCipher;\n             RTCDtlsRole           dtlsRole;\n             DOMString             srtpCipher;\n             unsigned long         selectedCandidatePairChanges;\n             unsigned long         ccfbMessagesSent;\n       unsigned long         ccfbMessagesReceived;\n};",
         "type": "dictionary",
         "name": "RTCTransportStats",
         "inheritance": "RTCStats",
@@ -2773,6 +2869,38 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-selectedcandidatepairchanges"
+          },
+          {
+            "type": "field",
+            "name": "ccfbMessagesSent",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-ccfbmessagessent"
+          },
+          {
+            "type": "field",
+            "name": "ccfbMessagesReceived",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-ccfbmessagesreceived"
           }
         ],
         "extAttrs": [],

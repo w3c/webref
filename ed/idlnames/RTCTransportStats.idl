@@ -16,4 +16,6 @@ dictionary RTCTransportStats : RTCStats {
              RTCDtlsRole           dtlsRole;
              DOMString             srtpCipher;
              unsigned long         selectedCandidatePairChanges;
+             unsigned long         ccfbMessagesSent;
+       unsigned long         ccfbMessagesReceived;
 };
