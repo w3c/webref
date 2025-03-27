@@ -230,7 +230,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "subgrid-items",
@@ -915,10 +915,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "valdef-grid-template-columns-flex",
-      "href": "https://www.w3.org/TR/css-grid-2/#valdef-grid-template-columns-flex",
+      "id": "valdef-grid-template-columns-flex-0",
+      "href": "https://www.w3.org/TR/css-grid-2/#valdef-grid-template-columns-flex-0",
       "linkingText": [
-        "<flex>"
+        "<flex [0,∞]>"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -959,13 +959,13 @@
       "definedIn": "prose"
     },
     {
-      "id": "valdef-grid-template-columns-minmax",
-      "href": "https://www.w3.org/TR/css-grid-2/#valdef-grid-template-columns-minmax",
+      "id": "funcdef-grid-template-columns-minmax",
+      "href": "https://www.w3.org/TR/css-grid-2/#funcdef-grid-template-columns-minmax",
       "linkingText": [
         "minmax()"
       ],
       "localLinkingText": [],
-      "type": "value",
+      "type": "function",
       "for": [
         "grid-template-columns",
         "grid-template-rows"
@@ -1047,13 +1047,13 @@
       "definedIn": "dt"
     },
     {
-      "id": "valdef-grid-template-columns-fit-content",
-      "href": "https://www.w3.org/TR/css-grid-2/#valdef-grid-template-columns-fit-content",
+      "id": "funcdef-grid-template-columns-fit-content",
+      "href": "https://www.w3.org/TR/css-grid-2/#funcdef-grid-template-columns-fit-content",
       "linkingText": [
         "fit-content()"
       ],
       "localLinkingText": [],
-      "type": "value",
+      "type": "function",
       "for": [
         "grid-template-columns",
         "grid-template-rows"
@@ -1107,14 +1107,18 @@
       "definedIn": "prose"
     },
     {
-      "id": "funcdef-repeat",
-      "href": "https://www.w3.org/TR/css-grid-2/#funcdef-repeat",
+      "id": "funcdef-track-repeat-repeat",
+      "href": "https://www.w3.org/TR/css-grid-2/#funcdef-track-repeat-repeat",
       "linkingText": [
         "repeat()"
       ],
       "localLinkingText": [],
       "type": "function",
-      "for": [],
+      "for": [
+        "<track-repeat>",
+        "<auto-repeat>",
+        "<fixed-repeat>"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -1244,17 +1248,18 @@
       "definedIn": "prose"
     },
     {
-      "id": "collapsed-track",
-      "href": "https://www.w3.org/TR/css-grid-2/#collapsed-track",
+      "id": "collapsed-grid-track",
+      "href": "https://www.w3.org/TR/css-grid-2/#collapsed-grid-track",
       "linkingText": [
-        "collapsed track"
+        "collapsed grid track"
       ],
       "localLinkingText": [
-        "collapse"
+        "collapse",
+        "collapsed track"
       ],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "auto-repeat",
@@ -1405,6 +1410,44 @@
       "href": "https://www.w3.org/TR/css-grid-2/#track-section",
       "linkingText": [
         "track section"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "computed-tracks",
+        "href": "https://www.w3.org/TR/css-grid-2/#computed-tracks",
+        "title": "Computed Value of a Track Listing",
+        "number": "7.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "computed-track-size",
+      "href": "https://www.w3.org/TR/css-grid-2/#computed-track-size",
+      "linkingText": [
+        "computed track size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "computed-tracks",
+        "href": "https://www.w3.org/TR/css-grid-2/#computed-tracks",
+        "title": "Computed Value of a Track Listing",
+        "number": "7.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "computed-repeat-notation",
+      "href": "https://www.w3.org/TR/css-grid-2/#computed-repeat-notation",
+      "linkingText": [
+        "computed repeat notation"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2075,13 +2118,13 @@
       "definedIn": "dt"
     },
     {
-      "id": "indefinite-grid-span",
-      "href": "https://www.w3.org/TR/css-grid-2/#indefinite-grid-span",
+      "id": "implicit-grid-span",
+      "href": "https://www.w3.org/TR/css-grid-2/#implicit-grid-span",
       "linkingText": [
-        "indefinite grid span",
-        "indefinite row span",
-        "indefinite column span",
-        "indefinite span"
+        "implicit grid span",
+        "implicit row span",
+        "implicit column span",
+        "implicit span"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2097,13 +2140,35 @@
       "definedIn": "prose"
     },
     {
-      "id": "definite-grid-span",
-      "href": "https://www.w3.org/TR/css-grid-2/#definite-grid-span",
+      "id": "explicit-grid-span",
+      "href": "https://www.w3.org/TR/css-grid-2/#explicit-grid-span",
       "linkingText": [
-        "definite grid span",
-        "definite row span",
-        "definite column span",
-        "definite span"
+        "explicit grid span",
+        "explicit row span",
+        "explicit column span",
+        "explicit span"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "placement",
+        "href": "https://www.w3.org/TR/css-grid-2/#placement",
+        "title": "Placing Grid Items",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "automatic-grid-span",
+      "href": "https://www.w3.org/TR/css-grid-2/#automatic-grid-span",
+      "linkingText": [
+        "automatic grid span",
+        "automatic row span",
+        "automatic column span",
+        "automatic span"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2241,7 +2306,7 @@
       "id": "grid-placement-int",
       "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-int",
       "linkingText": [
-        "<integer> && <custom-ident>?"
+        "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -2262,7 +2327,7 @@
       "id": "grid-placement-span-int",
       "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-span-int",
       "linkingText": [
-        "span && [ <integer> || <custom-ident> ]"
+        "span && [ <integer [1,∞]> || <custom-ident> ]"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -2496,10 +2561,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "grid-sizing-algorithm",
-      "href": "https://www.w3.org/TR/css-grid-2/#grid-sizing-algorithm",
+      "id": "layout-algorithm",
+      "href": "https://www.w3.org/TR/css-grid-2/#layout-algorithm",
       "linkingText": [
-        "grid sizing algorithm"
+        "Grid Layout Algorithm"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2509,9 +2574,28 @@
       "heading": {
         "id": "layout-algorithm",
         "href": "https://www.w3.org/TR/css-grid-2/#layout-algorithm",
-        "title": "12. Grid Sizing"
+        "title": "12. Grid Layout Algorithm"
       },
-      "definedIn": "prose"
+      "definedIn": "heading"
+    },
+    {
+      "id": "algo-grid-sizing",
+      "href": "https://www.w3.org/TR/css-grid-2/#algo-grid-sizing",
+      "linkingText": [
+        "Grid Sizing Algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algo-grid-sizing",
+        "href": "https://www.w3.org/TR/css-grid-2/#algo-grid-sizing",
+        "title": "Grid Sizing Algorithm",
+        "number": "12.1"
+      },
+      "definedIn": "heading"
     },
     {
       "id": "fixed-sizing-function",
@@ -2525,9 +2609,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "layout-algorithm",
-        "href": "https://www.w3.org/TR/css-grid-2/#layout-algorithm",
-        "title": "12. Grid Sizing"
+        "id": "algo-grid-sizing",
+        "href": "https://www.w3.org/TR/css-grid-2/#algo-grid-sizing",
+        "title": "Grid Sizing Algorithm",
+        "number": "12.1"
       },
       "definedIn": "prose"
     },
@@ -2543,9 +2628,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "layout-algorithm",
-        "href": "https://www.w3.org/TR/css-grid-2/#layout-algorithm",
-        "title": "12. Grid Sizing"
+        "id": "algo-grid-sizing",
+        "href": "https://www.w3.org/TR/css-grid-2/#algo-grid-sizing",
+        "title": "Grid Sizing Algorithm",
+        "number": "12.1"
       },
       "definedIn": "prose"
     },
@@ -2561,9 +2647,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "layout-algorithm",
-        "href": "https://www.w3.org/TR/css-grid-2/#layout-algorithm",
-        "title": "12. Grid Sizing"
+        "id": "algo-grid-sizing",
+        "href": "https://www.w3.org/TR/css-grid-2/#algo-grid-sizing",
+        "title": "Grid Sizing Algorithm",
+        "number": "12.1"
       },
       "definedIn": "prose"
     },
