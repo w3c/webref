@@ -109,13 +109,34 @@
         },
         {
           "html": "Validate the page-supplied API inputs:",
-          "rationale": "if",
+          "rationale": "switch",
           "steps": [
             {
-              "html": "<p>If <a class=\"idl-code\" data-link-type=\"dict-member\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-logic\" id=\"ref-for-dom-privateattributionconversionoptions-logic①\">logic</a> is specified, and the value is anything other than <a class=\"idl-code\" data-link-type=\"enum-value\" href=\"https://w3c.github.io/ppa/#dom-privateattributionlogic-last-touch\" id=\"ref-for-dom-privateattributionlogic-last-touch\">\"last-touch\"</a>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
+              "html": "Switch on the value of <a class=\"idl-code\" data-link-type=\"dict-member\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-logic\" id=\"ref-for-dom-privateattributionconversionoptions-logic①\">logic</a>:",
+              "rationale": ".switch",
+              "steps": [
+                {
+                  "operation": "switch",
+                  "steps": []
+                }
+              ],
+              "additional": [
+                {
+                  "html": "Perform the following steps:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <a class=\"idl-code\" data-link-type=\"dict-member\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-value\" id=\"ref-for-dom-privateattributionconversionoptions-value①\">value</a> is 0,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①\">RangeError</a></code>.</p>"
+                    },
+                    {
+                      "html": "<p>If <a class=\"idl-code\" data-link-type=\"dict-member\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-value\" id=\"ref-for-dom-privateattributionconversionoptions-value②\">value</a> is greater than <a class=\"idl-code\" data-link-type=\"dict-member\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-maxvalue\" id=\"ref-for-dom-privateattributionconversionoptions-maxvalue①\">maxValue</a>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror②\">RangeError</a></code>.</p>"
+                    }
+                  ]
+                }
+              ]
             },
             {
-              "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-lookbackdays\" id=\"ref-for-dom-privateattributionconversionoptions-lookbackdays②\">lookbackDays</a></code> is 0,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①\">RangeError</a></code>.</p>"
+              "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-lookbackdays\" id=\"ref-for-dom-privateattributionconversionoptions-lookbackdays②\">lookbackDays</a></code> is 0,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror③\">RangeError</a></code>.</p>"
             }
           ]
         },
@@ -157,7 +178,7 @@
                   "html": "<p>Let <var>key</var> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-key\" id=\"ref-for-privacy-budget-key②\">privacy budget key</a> whose items are <var>epoch</var> and <var>topLevelSite</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>budgetOk</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#deduct-privacy-budget\" id=\"ref-for-deduct-privacy-budget①\">deduct privacy budget</a> with <var>key</var>, <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-epsilon\" id=\"ref-for-dom-privateattributionconversionoptions-epsilon①\">epsilon</a></code>, <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-value\" id=\"ref-for-dom-privateattributionconversionoptions-value①\">value</a></code>,\nand <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-maxvalue\" id=\"ref-for-dom-privateattributionconversionoptions-maxvalue①\">maxValue</a></code>.</p>"
+                  "html": "<p>Let <var>budgetOk</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#deduct-privacy-budget\" id=\"ref-for-deduct-privacy-budget①\">deduct privacy budget</a> with <var>key</var>, <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-epsilon\" id=\"ref-for-dom-privateattributionconversionoptions-epsilon①\">epsilon</a></code>, <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-value\" id=\"ref-for-dom-privateattributionconversionoptions-value③\">value</a></code>,\nand <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-maxvalue\" id=\"ref-for-dom-privateattributionconversionoptions-maxvalue②\">maxValue</a></code>.</p>"
                 },
                 {
                   "html": "<p>If <var>budgetOk</var> is true, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-extend\" id=\"ref-for-set-extend\">extend</a> <var>matchedImpressions</var> with <var>impressions</var>.</p>"
@@ -178,37 +199,11 @@
               "steps": [
                 {
                   "case": "\"last-touch\"",
-                  "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#fill-a-histogram-with-last-touch-attribution\" id=\"ref-for-fill-a-histogram-with-last-touch-attribution\">fill a histogram with last-touch attribution</a> with <var>matchedImpressions</var>, <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-histogramsize\" id=\"ref-for-dom-privateattributionconversionoptions-histogramsize②\">histogramSize</a></code>, and <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-value\" id=\"ref-for-dom-privateattributionconversionoptions-value②\">value</a></code>.</p>"
+                  "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#fill-a-histogram-with-last-touch-attribution\" id=\"ref-for-fill-a-histogram-with-last-touch-attribution\">fill a histogram with last-touch attribution</a> with <var>matchedImpressions</var>, <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-histogramsize\" id=\"ref-for-dom-privateattributionconversionoptions-histogramsize②\">histogramSize</a></code>, and <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-value\" id=\"ref-for-dom-privateattributionconversionoptions-value④\">value</a></code>.</p>"
                 }
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "fill a histogram with last-touch attribution",
-      "href": "https://w3c.github.io/ppa/#fill-a-histogram-with-last-touch-attribution",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fill-a-histogram-with-last-touch-attribution\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fill a histogram with last-touch attribution</dfn>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets⑤\">set</a> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression\" id=\"ref-for-impression②④\">impressions</a> <var>matchedImpressions</var>, an integer <var>histogramSize</var>, and an integer <var>value</var>:",
-      "rationale": "assert",
-      "steps": [
-        {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>matchedImpressions</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③\">not empty</a>.</p>"
-        },
-        {
-          "html": "<p>Let <var>impression</var> be the value in <var>matchedImpressions</var> with the most recent <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-timestamp\" id=\"ref-for-impression-timestamp①\">timestamp</a>.</p>"
-        },
-        {
-          "html": "<p>Let <var>histogram</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#create-an-all-zero-histogram\" id=\"ref-for-create-an-all-zero-histogram②\">create an all-zero histogram</a> with <var>histogramSize</var>.</p>"
-        },
-        {
-          "html": "<p>Let <var>index</var> be <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-histogram-index\" id=\"ref-for-impression-histogram-index\">histogram index</a>.</p>"
-        },
-        {
-          "html": "<p>If <var>index</var> is less than <var>histogram</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a>, set <var>histogram</var>[<var>index</var>] to <var>value</var>.</p>"
-        },
-        {
-          "html": "<p>Return <var>histogram</var>.</p>"
         }
       ]
     },
@@ -219,7 +214,7 @@
       "rationale": "return",
       "steps": [
         {
-          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> <var>size</var>, whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">items</a> are all 0.</p>"
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> <var>size</var>, whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">items</a> are all 0.</p>"
         }
       ]
     },
@@ -230,7 +225,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>matching</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty④\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets⑥\">set</a>.</p>"
+          "html": "<p>Let <var>matching</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets⑤\">set</a>.</p>"
         },
         {
           "html": "<p>Let <var>lookbackDays</var> be <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-lookbackdays\" id=\"ref-for-dom-privateattributionconversionoptions-lookbackdays③\">lookbackDays</a></code> if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a>, the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> maximum otherwise.</p>"
@@ -243,7 +238,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>now</var> - <var>lookbackDays</var> is after <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-timestamp\" id=\"ref-for-impression-timestamp②\">timestamp</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+              "html": "<p>If <var>now</var> - <var>lookbackDays</var> is after <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-timestamp\" id=\"ref-for-impression-timestamp①\">timestamp</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
             },
             {
               "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-filterdata\" id=\"ref-for-dom-privateattributionconversionoptions-filterdata④\">filterData</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>,\nand it is not equal to <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-filter-data\" id=\"ref-for-impression-filter-data②\">filter data</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
@@ -258,6 +253,32 @@
         },
         {
           "html": "<p>Return <var>matching</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "fill a histogram with last-touch attribution",
+      "href": "https://w3c.github.io/ppa/#fill-a-histogram-with-last-touch-attribution",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fill-a-histogram-with-last-touch-attribution\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fill a histogram with last-touch attribution</dfn>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets⑥\">set</a> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression\" id=\"ref-for-impression②④\">impressions</a> <var>matchedImpressions</var>, an integer <var>histogramSize</var>, and an integer <var>value</var>:",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>matchedImpressions</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty④\">not empty</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>impression</var> be the value in <var>matchedImpressions</var> with the most recent <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-timestamp\" id=\"ref-for-impression-timestamp②\">timestamp</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>histogram</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#create-an-all-zero-histogram\" id=\"ref-for-create-an-all-zero-histogram②\">create an all-zero histogram</a> with <var>histogramSize</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>index</var> be <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-histogram-index\" id=\"ref-for-impression-histogram-index\">histogram index</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>index</var> is less than <var>histogram</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a>, set <var>histogram</var>[<var>index</var>] to <var>value</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>histogram</var>.</p>"
         }
       ]
     }
