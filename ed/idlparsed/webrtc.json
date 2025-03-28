@@ -1805,7 +1805,7 @@
         "href": "https://w3c.github.io/webrtc-pc/#dom-rtclocalsessiondescriptioninit"
       },
       "RTCIceCandidate": {
-        "fragment": "[Exposed=Window]\ninterface RTCIceCandidate {\n  constructor(optional RTCIceCandidateInit candidateInitDict = {});\n  readonly attribute DOMString candidate;\n  readonly attribute DOMString? sdpMid;\n  readonly attribute unsigned short? sdpMLineIndex;\n  readonly attribute DOMString? foundation;\n  readonly attribute RTCIceComponent? component;\n  readonly attribute unsigned long? priority;\n  readonly attribute DOMString? address;\n  readonly attribute RTCIceProtocol? protocol;\n  readonly attribute unsigned short? port;\n  readonly attribute RTCIceCandidateType? type;\n  readonly attribute RTCIceTcpCandidateType? tcpType;\n  readonly attribute DOMString? relatedAddress;\n  readonly attribute unsigned short? relatedPort;\n  readonly attribute DOMString? usernameFragment;\n  readonly attribute RTCIceServerTransportProtocol? relayProtocol;\n  readonly attribute DOMString? url;\n  RTCIceCandidateInit toJSON();\n};",
+        "fragment": "[Exposed=Window]\ninterface RTCIceCandidate {\n  constructor(optional RTCLocalIceCandidateInit candidateInitDict = {});\n  readonly attribute DOMString candidate;\n  readonly attribute DOMString? sdpMid;\n  readonly attribute unsigned short? sdpMLineIndex;\n  readonly attribute DOMString? foundation;\n  readonly attribute RTCIceComponent? component;\n  readonly attribute unsigned long? priority;\n  readonly attribute DOMString? address;\n  readonly attribute RTCIceProtocol? protocol;\n  readonly attribute unsigned short? port;\n  readonly attribute RTCIceCandidateType? type;\n  readonly attribute RTCIceTcpCandidateType? tcpType;\n  readonly attribute DOMString? relatedAddress;\n  readonly attribute unsigned short? relatedPort;\n  readonly attribute DOMString? usernameFragment;\n  readonly attribute RTCIceServerTransportProtocol? relayProtocol;\n  readonly attribute USVString? url;\n  RTCIceCandidateInit toJSON();\n};",
         "type": "interface",
         "name": "RTCIceCandidate",
         "inheritance": null,
@@ -1823,7 +1823,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "RTCIceCandidateInit"
+                  "idlType": "RTCLocalIceCandidateInit"
                 },
                 "default": {
                   "type": "dictionary"
@@ -2084,7 +2084,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "USVString"
             },
             "extAttrs": [],
             "special": "",
@@ -2206,6 +2206,53 @@
         "partial": false,
         "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidateinit"
       },
+      "RTCLocalIceCandidateInit": {
+        "fragment": "dictionary RTCLocalIceCandidateInit : RTCIceCandidateInit {\n  RTCIceServerTransportProtocol? relayProtocol = null;\n  USVString? url = null;\n};",
+        "type": "dictionary",
+        "name": "RTCLocalIceCandidateInit",
+        "inheritance": "RTCIceCandidateInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "relayProtocol",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "RTCIceServerTransportProtocol"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtclocalicecandidateinit-relayprotocol"
+          },
+          {
+            "type": "field",
+            "name": "url",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtclocalicecandidateinit-url"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtclocalicecandidateinit"
+      },
       "RTCIceProtocol": {
         "fragment": "enum RTCIceProtocol {\n  \"udp\",\n  \"tcp\"\n};",
         "type": "enum",
@@ -2303,7 +2350,7 @@
         "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceservertransportprotocol"
       },
       "RTCPeerConnectionIceEvent": {
-        "fragment": "[Exposed=Window]\ninterface RTCPeerConnectionIceEvent : Event {\n  constructor(DOMString type, optional RTCPeerConnectionIceEventInit eventInitDict = {});\n  readonly attribute RTCIceCandidate? candidate;\n  readonly attribute DOMString? url;\n};",
+        "fragment": "[Exposed=Window]\ninterface RTCPeerConnectionIceEvent : Event {\n  constructor(DOMString type, optional RTCPeerConnectionIceEventInit eventInitDict = {});\n  readonly attribute RTCIceCandidate? candidate;\n  readonly attribute USVString? url;\n};",
         "type": "interface",
         "name": "RTCPeerConnectionIceEvent",
         "inheritance": "Event",
@@ -2374,7 +2421,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "USVString"
             },
             "extAttrs": [],
             "special": "",
@@ -7252,14 +7299,19 @@
         "RTCSdpType"
       ],
       "RTCIceCandidate": [
-        "RTCIceCandidateInit",
+        "RTCLocalIceCandidateInit",
         "RTCIceComponent",
         "RTCIceProtocol",
         "RTCIceCandidateType",
         "RTCIceTcpCandidateType",
-        "RTCIceServerTransportProtocol"
+        "RTCIceServerTransportProtocol",
+        "RTCIceCandidateInit"
       ],
       "RTCIceCandidateInit": [],
+      "RTCLocalIceCandidateInit": [
+        "RTCIceCandidateInit",
+        "RTCIceServerTransportProtocol"
+      ],
       "RTCPeerConnectionIceEvent": [
         "Event",
         "RTCPeerConnectionIceEventInit",

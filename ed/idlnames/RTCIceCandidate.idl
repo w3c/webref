@@ -1,7 +1,7 @@
 // Source: WebRTC: Real-Time Communication in Browsers (https://www.w3.org/TR/webrtc/)
 [Exposed=Window]
 interface RTCIceCandidate {
-  constructor(optional RTCIceCandidateInit candidateInitDict = {});
+  constructor(optional RTCLocalIceCandidateInit candidateInitDict = {});
   readonly attribute DOMString candidate;
   readonly attribute DOMString? sdpMid;
   readonly attribute unsigned short? sdpMLineIndex;
@@ -17,6 +17,6 @@ interface RTCIceCandidate {
   readonly attribute unsigned short? relatedPort;
   readonly attribute DOMString? usernameFragment;
   readonly attribute RTCIceServerTransportProtocol? relayProtocol;
-  readonly attribute DOMString? url;
+  readonly attribute USVString? url;
   RTCIceCandidateInit toJSON();
 };

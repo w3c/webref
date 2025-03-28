@@ -649,7 +649,7 @@
       ],
       "MediaTrackSettings": [
         {
-          "fragment": "partial dictionary MediaTrackSettings {\n  DOMString displaySurface;\n  boolean logicalSurface;\n  DOMString cursor;\n  boolean restrictOwnAudio;\n  boolean suppressLocalAudioPlayback;\n};",
+          "fragment": "partial dictionary MediaTrackSettings {\n  DOMString displaySurface;\n  boolean logicalSurface;\n  DOMString cursor;\n  boolean restrictOwnAudio;\n  boolean suppressLocalAudioPlayback;\n  double screenPixelRatio;\n};",
           "type": "dictionary",
           "name": "MediaTrackSettings",
           "inheritance": null,
@@ -733,6 +733,22 @@
               "default": null,
               "required": false,
               "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksettings-suppresslocalaudioplayback"
+            },
+            {
+              "type": "field",
+              "name": "screenPixelRatio",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "double"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksettings-screenpixelratio"
             }
           ],
           "extAttrs": [],

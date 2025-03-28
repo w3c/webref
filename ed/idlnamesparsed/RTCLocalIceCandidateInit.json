@@ -1,0 +1,29 @@
+{
+  "name": "RTCLocalIceCandidateInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebRTC: Real-Time Communication in Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCLocalIceCandidateInit : RTCIceCandidateInit {\n  RTCIceServerTransportProtocol? relayProtocol = null;\n  USVString? url = null;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtclocalicecandidateinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "RTCIceCandidateInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebRTC: Real-Time Communication in Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "dictionary RTCIceCandidateInit {\n  DOMString candidate = \"\";\n  DOMString? sdpMid = null;\n  unsigned short? sdpMLineIndex = null;\n  DOMString? usernameFragment = null;\n};",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidateinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

@@ -3,5 +3,5 @@
 interface RTCPeerConnectionIceEvent : Event {
   constructor(DOMString type, optional RTCPeerConnectionIceEventInit eventInitDict = {});
   readonly attribute RTCIceCandidate? candidate;
-  readonly attribute DOMString? url;
+  readonly attribute USVString? url;
 };
