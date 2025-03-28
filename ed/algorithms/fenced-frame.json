@@ -1131,6 +1131,44 @@
       ]
     },
     {
+      "name": "obtain-a-connection-patch",
+      "html": "Modify the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-connection-obtain\" id=\"ref-for-concept-connection-obtain\">obtain a connection</a> algorithm, insert these steps before step 1:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>nonce</var> be <var>key</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#network-partition-key-nonce\" id=\"ref-for-network-partition-key-nonce①\">nonce</a>.</p>"
+        },
+        {
+          "html": "If the user agent’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#network-revocation-exemption-map\" id=\"ref-for-network-revocation-exemption-map②\">network revocation exemption map</a>[<var>nonce</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①\">exists</a>, but <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#network-revocation-exemption-map\" id=\"ref-for-network-revocation-exemption-map③\">network revocation exemption map</a>[<var>nonce</var>][<var>yrl</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">exists</a>, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the user agent’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#network-revocation-nonce-set\" id=\"ref-for-network-revocation-nonce-set②\">network revocation nonce set</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain③\">contains</a> <var>nonce</var>, then return\n failure.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resolve-an-origin-patch",
+      "html": "Insert these steps before step 1:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>nonce</var> be <var>key</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#network-partition-key-nonce\" id=\"ref-for-network-partition-key-nonce②\">nonce</a>.</p>"
+        },
+        {
+          "html": "If the user agent’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#network-revocation-exemption-map\" id=\"ref-for-network-revocation-exemption-map④\">network revocation exemption map</a>[<var>nonce</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">exists</a>, but <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#network-revocation-exemption-map\" id=\"ref-for-network-revocation-exemption-map⑤\">network revocation exemption map</a>[<var>nonce</var>][<var>url</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exist</a>, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the user agent’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#network-revocation-nonce-set\" id=\"ref-for-network-revocation-nonce-set③\">network revocation nonce set</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain④\">contains</a> <var>nonce</var>, then return\n failure.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "establish-websocket-patch",
       "html": "Modify the <a data-link-type=\"dfn\" href=\"https://websockets.spec.whatwg.org/#concept-websocket-establish\" id=\"ref-for-concept-websocket-establish\">establish a WebSocket connection</a> algorithm. Add a new step after step 10 that\n  reads:",
       "rationale": ".algorithm",
@@ -1565,7 +1603,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var><a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#focus-unfenced\" id=\"ref-for-focus-unfenced\">unfenced</a></var> is false, <var>new chain</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain③\">contains</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②③\">Document</a></code> <var>document</var> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable⑥\">node navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-traversable\" id=\"ref-for-nav-traversable⑨\">traversable navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-navigable-container-fenced-navigable\" id=\"ref-for-fenced-navigable-container-fenced-navigable③⑤\">fenced navigable</a>, and <var>old chain</var> does not also <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain④\">contain</a> <var>document</var>, then return.</p>"
+          "html": "<p>If <var><a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#focus-unfenced\" id=\"ref-for-focus-unfenced\">unfenced</a></var> is false, <var>new chain</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑤\">contains</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②③\">Document</a></code> <var>document</var> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable⑥\">node navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-traversable\" id=\"ref-for-nav-traversable⑨\">traversable navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-navigable-container-fenced-navigable\" id=\"ref-for-fenced-navigable-container-fenced-navigable③⑤\">fenced navigable</a>, and <var>old chain</var> does not also <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑥\">contain</a> <var>document</var>, then return.</p>"
         }
       ]
     },
@@ -1683,7 +1721,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Otherwise, if all of the following conditions are true:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>navigationParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-navigable\" id=\"ref-for-navigation-params-navigable\">navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-traversable\" id=\"ref-for-nav-traversable①⓪\">traversable navigable</a> is\na <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-navigable-container-fenced-navigable\" id=\"ref-for-fenced-navigable-container-fenced-navigable④⑦\">fenced navigable</a>;</p>\n       </li><li data-md=\"\">\n        <p><var>navigationParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-response\" id=\"ref-for-navigation-params-response\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url①\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> is\n\"<code>https</code>\"; and</p>\n       </li><li data-md=\"\">\n        <p>the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#get-the-supported-loading-modes\" id=\"ref-for-get-the-supported-loading-modes\">getting the supported loading modes</a> for <var>navigationParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-response\" id=\"ref-for-navigation-params-response①\">response</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑤\">contain</a> `<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#supports-loading-mode-fenced-frame\" id=\"ref-for-supports-loading-mode-fenced-frame\">fenced-frame</a></code>`</p>\n      </li></ul>\n      <p>then set <var>failure</var> to true.</p>"
+          "html": "<p>Otherwise, if all of the following conditions are true:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>navigationParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-navigable\" id=\"ref-for-navigation-params-navigable\">navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-traversable\" id=\"ref-for-nav-traversable①⓪\">traversable navigable</a> is\na <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-navigable-container-fenced-navigable\" id=\"ref-for-fenced-navigable-container-fenced-navigable④⑦\">fenced navigable</a>;</p>\n       </li><li data-md=\"\">\n        <p><var>navigationParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-response\" id=\"ref-for-navigation-params-response\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url①\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> is\n\"<code>https</code>\"; and</p>\n       </li><li data-md=\"\">\n        <p>the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#get-the-supported-loading-modes\" id=\"ref-for-get-the-supported-loading-modes\">getting the supported loading modes</a> for <var>navigationParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-response\" id=\"ref-for-navigation-params-response①\">response</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑦\">contain</a> `<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#supports-loading-mode-fenced-frame\" id=\"ref-for-supports-loading-mode-fenced-frame\">fenced-frame</a></code>`</p>\n      </li></ul>\n      <p>then set <var>failure</var> to true.</p>"
         }
       ]
     },
@@ -1727,7 +1765,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>mapping</var>[<var>type</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①\">exist</a>, set <var>mapping</var>[<var>type</var>] to <var>data</var>.</p>"
+                  "html": "<p>If <var>mapping</var>[<var>type</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">exist</a>, set <var>mapping</var>[<var>type</var>] to <var>data</var>.</p>"
                 }
               ],
               "additional": [
@@ -1736,7 +1774,7 @@
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "<p>If <var>crossOriginMapping</var>[<var>type</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">exist</a> and <var>data</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#automatic-beacon-data-crossoriginexposed\" id=\"ref-for-automatic-beacon-data-crossoriginexposed①\">crossOriginExposed</a> is true, set <var>crossOriginMapping</var>[<var>type</var>] to <var>data</var>.</p>"
+                      "html": "<p>If <var>crossOriginMapping</var>[<var>type</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑥\">exist</a> and <var>data</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#automatic-beacon-data-crossoriginexposed\" id=\"ref-for-automatic-beacon-data-crossoriginexposed①\">crossOriginExposed</a> is true, set <var>crossOriginMapping</var>[<var>type</var>] to <var>data</var>.</p>"
                     }
                   ]
                 }
@@ -1827,7 +1865,7 @@
               "html": "<p>Set <var>sourceSnapshotParams</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#source-snapshot-params-target-fenced-frame-config\" id=\"ref-for-source-snapshot-params-target-fenced-frame-config②\">target fenced frame config</a> to <var>config</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①②\">Assert</a> <var>config</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-config-mapped-url\" id=\"ref-for-fenced-frame-config-mapped-url⑦\">mapped url</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#mapped-url-value\" id=\"ref-for-mapped-url-value④\">value</a> is a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①⓪\">URL</a> whose <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②\">scheme</a> is \"<code>https</code>\".</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①②\">Assert</a> <var>config</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-config-mapped-url\" id=\"ref-for-fenced-frame-config-mapped-url⑦\">mapped url</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#mapped-url-value\" id=\"ref-for-mapped-url-value④\">value</a> is a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①①\">URL</a> whose <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②\">scheme</a> is \"<code>https</code>\".</p>"
             },
             {
               "html": "<p>Set <var>url</var> to <var>config</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-config-mapped-url\" id=\"ref-for-fenced-frame-config-mapped-url⑧\">mapped url</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#mapped-url-value\" id=\"ref-for-mapped-url-value⑤\">value</a>.</p>"
@@ -1924,7 +1962,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination⑥\">destination</a> is \"<code>fencedframe</code>\", and this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value\">value</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑥\">contain</a> either \"<code>https:</code>\", \"<code>https://*:*</code>\", or\n \"<code>*</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination⑥\">destination</a> is \"<code>fencedframe</code>\", and this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value\">value</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑧\">contain</a> either \"<code>https:</code>\", \"<code>https://*:*</code>\", or\n \"<code>*</code>\", return \"<code>Blocked</code>\".</p>"
         }
       ]
     },
@@ -1934,7 +1972,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>request</var> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination⑦\">destination</a> is \"<code>fencedframe</code>\", and this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value①\">value</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑦\">contain</a> either \"<code>https:</code>\", \"<code>https://*:*</code>\", or \"<code>*</code>\",\nreturn \"<code>Blocked</code>\".</p>"
+          "html": "<p>If <var>request</var> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination⑦\">destination</a> is \"<code>fencedframe</code>\", and this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value①\">value</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑨\">contain</a> either \"<code>https:</code>\", \"<code>https://*:*</code>\", or \"<code>*</code>\",\nreturn \"<code>Blocked</code>\".</p>"
         }
       ]
     },
@@ -1989,7 +2027,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>fencedFrameConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-config-instance-effective-enabled-permissions\" id=\"ref-for-fenced-frame-config-instance-effective-enabled-permissions③\">effective enabled permissions</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①②\">contains</a> <var>feature</var>, then set <var>inheritedPolicy</var>[feature] to \"<code>Enabled</code>\".</p>\n          <p>Otherwise, set <var>inheritedPolicy</var>[feature] to \"<code>Disabled</code>\".</p>"
+                  "html": "<p>If <var>fencedFrameConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-config-instance-effective-enabled-permissions\" id=\"ref-for-fenced-frame-config-instance-effective-enabled-permissions③\">effective enabled permissions</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①④\">contains</a> <var>feature</var>, then set <var>inheritedPolicy</var>[feature] to \"<code>Enabled</code>\".</p>\n          <p>Otherwise, set <var>inheritedPolicy</var>[feature] to \"<code>Disabled</code>\".</p>"
                 }
               ]
             }
