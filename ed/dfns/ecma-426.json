@@ -43,25 +43,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "sec-terms-and-definitions-base64-vlq",
-      "href": "https://tc39.es/ecma426/#sec-terms-and-definitions-base64-vlq",
-      "linkingText": [
-        "base64 VLQ"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sec-terms-and-definitions",
-        "href": "https://tc39.es/ecma426/#sec-terms-and-definitions",
-        "title": "Terms and Definitions",
-        "number": "5"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "sec-terms-and-definitions-source-mapping-url",
       "href": "https://tc39.es/ecma426/#sec-terms-and-definitions-source-mapping-url",
       "linkingText": [
@@ -100,6 +81,25 @@
       "definedIn": "dt"
     },
     {
+      "id": "sec-base64-vlq",
+      "href": "https://tc39.es/ecma426/#sec-base64-vlq",
+      "linkingText": [
+        "base64 VLQ"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-base64-vlq",
+        "href": "https://tc39.es/ecma426/#sec-base64-vlq",
+        "title": "base64 VLQ",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "type-json-value",
       "href": "https://tc39.es/ecma426/#type-json-value",
       "linkingText": [
@@ -114,7 +114,7 @@
         "id": "sec-json-values-utilities",
         "href": "https://tc39.es/ecma426/#sec-json-values-utilities",
         "title": "JSON values utilities",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "prose"
     },
@@ -133,7 +133,7 @@
         "id": "sec-json-values-utilities",
         "href": "https://tc39.es/ecma426/#sec-json-values-utilities",
         "title": "JSON values utilities",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "prose"
     },
@@ -152,7 +152,7 @@
         "id": "sec-json-values-utilities",
         "href": "https://tc39.es/ecma426/#sec-json-values-utilities",
         "title": "JSON values utilities",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "prose"
     },
@@ -171,7 +171,7 @@
         "id": "sec-source-map-format",
         "href": "https://tc39.es/ecma426/#sec-source-map-format",
         "title": "Source map format",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "prose"
     },
@@ -190,7 +190,7 @@
         "id": "sec-source-map-format",
         "href": "https://tc39.es/ecma426/#sec-source-map-format",
         "title": "Source map format",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "prose"
     },
@@ -209,7 +209,7 @@
         "id": "sec-source-map-format",
         "href": "https://tc39.es/ecma426/#sec-source-map-format",
         "title": "Source map format",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "prose"
     },
@@ -228,7 +228,7 @@
         "id": "sec-source-map-format",
         "href": "https://tc39.es/ecma426/#sec-source-map-format",
         "title": "Source map format",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "prose"
     },
@@ -247,7 +247,7 @@
         "id": "sec-source-map-format",
         "href": "https://tc39.es/ecma426/#sec-source-map-format",
         "title": "Source map format",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "prose"
     },
@@ -266,7 +266,7 @@
         "id": "sec-source-map-format",
         "href": "https://tc39.es/ecma426/#sec-source-map-format",
         "title": "Source map format",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "prose"
     },
@@ -285,7 +285,7 @@
         "id": "sec-source-map-format",
         "href": "https://tc39.es/ecma426/#sec-source-map-format",
         "title": "Source map format",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "prose"
     },
@@ -304,7 +304,7 @@
         "id": "sec-source-map-format",
         "href": "https://tc39.es/ecma426/#sec-source-map-format",
         "title": "Source map format",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "prose"
     },
@@ -323,7 +323,7 @@
         "id": "sec-decoding-source-maps",
         "href": "https://tc39.es/ecma426/#sec-decoding-source-maps",
         "title": "Decoding source maps",
-        "number": "7.1"
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
@@ -342,7 +342,7 @@
         "id": "sec-decoding-source-maps",
         "href": "https://tc39.es/ecma426/#sec-decoding-source-maps",
         "title": "Decoding source maps",
-        "number": "7.1"
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
@@ -361,7 +361,26 @@
         "id": "sec-mappings",
         "href": "https://tc39.es/ecma426/#sec-mappings",
         "title": "Mappings structure",
-        "number": "7.2"
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "decode-mapping-state-record",
+      "href": "https://tc39.es/ecma426/#decode-mapping-state-record",
+      "linkingText": [
+        "Decode Mapping State Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-mappings-grammar",
+        "href": "https://tc39.es/ecma426/#sec-mappings-grammar",
+        "title": "Mappings grammar",
+        "number": "8.2.1"
       },
       "definedIn": "prose"
     },
@@ -380,7 +399,7 @@
         "id": "sec-index-source-map",
         "href": "https://tc39.es/ecma426/#sec-index-source-map",
         "title": "Index source map",
-        "number": "8"
+        "number": "9"
       },
       "definedIn": "prose"
     },
@@ -399,7 +418,7 @@
         "id": "sec-index-source-map",
         "href": "https://tc39.es/ecma426/#sec-index-source-map",
         "title": "Index source map",
-        "number": "8"
+        "number": "9"
       },
       "definedIn": "prose"
     },
@@ -418,7 +437,7 @@
         "id": "sec-index-source-map",
         "href": "https://tc39.es/ecma426/#sec-index-source-map",
         "title": "Index source map",
-        "number": "8"
+        "number": "9"
       },
       "definedIn": "prose"
     },
@@ -437,7 +456,7 @@
         "id": "sec-linking-generated-code",
         "href": "https://tc39.es/ecma426/#sec-linking-generated-code",
         "title": "Linking generated code to source maps",
-        "number": "9.1"
+        "number": "10.1"
       },
       "definedIn": "prose"
     },
@@ -456,7 +475,7 @@
         "id": "sec-linking-inline",
         "href": "https://tc39.es/ecma426/#sec-linking-inline",
         "title": "Linking through inline annotations",
-        "number": "9.1.2"
+        "number": "10.1.2"
       },
       "definedIn": "prose"
     },
@@ -475,7 +494,7 @@
         "id": "sec-JavaScriptExtractSourceMapURL",
         "href": "https://tc39.es/ecma426/#sec-JavaScriptExtractSourceMapURL",
         "title": "JavaScriptExtractSourceMapURL ( source )",
-        "number": "9.1.2.1"
+        "number": "10.1.2.1"
       },
       "definedIn": "prose"
     },
@@ -494,7 +513,7 @@
         "id": "sec-JavaScriptExtractSourceMapURL",
         "href": "https://tc39.es/ecma426/#sec-JavaScriptExtractSourceMapURL",
         "title": "JavaScriptExtractSourceMapURL ( source )",
-        "number": "9.1.2.1"
+        "number": "10.1.2.1"
       },
       "definedIn": "prose"
     },
