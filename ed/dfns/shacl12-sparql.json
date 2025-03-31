@@ -1,0 +1,346 @@
+{
+  "spec": {
+    "title": "SHACL 1.2 SPARQL Extensions",
+    "url": "https://w3c.github.io/data-shapes/shacl12-sparql/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-bindings",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-bindings",
+      "linkingText": [
+        "bindings",
+        "binding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-solutions",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-solutions",
+      "linkingText": [
+        "solutions",
+        "solution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-ill-formed",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-ill-formed",
+      "linkingText": [
+        "ill-formed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#conformance",
+        "title": "Conformance",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-well-formed",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-well-formed",
+      "linkingText": [
+        "well-formed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#conformance",
+        "title": "Conformance",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-sparql-based-constraint",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-sparql-based-constraint",
+      "linkingText": [
+        "SPARQL-based constraint",
+        "SPARQL-based constraints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sparql-constraints-syntax",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-constraints-syntax",
+        "title": "Syntax of SPARQL-based Constraints",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-prefix-declaration",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-prefix-declaration",
+      "linkingText": [
+        "prefix declaration",
+        "prefix declarations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sparql-prefixes",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-prefixes",
+        "title": "Prefix Declarations for SPARQL Queries",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-substituted",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-substituted",
+      "linkingText": [
+        "substituted",
+        "substitute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sparql-constraints-validation",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-constraints-validation",
+        "title": "Validation with SPARQL-based Constraints",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-sparql-based-constraint-components",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-sparql-based-constraint-components",
+      "linkingText": [
+        "SPARQL-based constraint components",
+        "SPARQL-based constraint component"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constraint-components-syntax",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#constraint-components-syntax",
+        "title": "Syntax of SPARQL-based Constraint Components",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-parameter-declaration",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-parameter-declaration",
+      "linkingText": [
+        "parameter declaration",
+        "parameter declarations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constraint-components-parameters",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#constraint-components-parameters",
+        "title": "Parameter Declarations (sh:parameter)",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-local-names",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-local-names",
+      "linkingText": [
+        "local names",
+        "local name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constraint-components-parameters",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#constraint-components-parameters",
+        "title": "Parameter Declarations (sh:parameter)",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-parameter-names",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-parameter-names",
+      "linkingText": [
+        "parameter names",
+        "parameter name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constraint-components-parameters",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#constraint-components-parameters",
+        "title": "Parameter Declarations (sh:parameter)",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-label-template",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-label-template",
+      "linkingText": [
+        "label template",
+        "label templates"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "labelTemplate",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#labelTemplate",
+        "title": "Label Templates (sh:labelTemplate)",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-select-based-validators",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-select-based-validators",
+      "linkingText": [
+        "SELECT-based validators"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "SPARQLSelectValidator",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#SPARQLSelectValidator",
+        "title": "SELECT-based Validators",
+        "number": "3.2.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-ask-based-validators",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-ask-based-validators",
+      "linkingText": [
+        "ASK-based validators"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "SPARQLAskValidator",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#SPARQLAskValidator",
+        "title": "ASK-based Validators",
+        "number": "3.2.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-select-expression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-select-expression",
+      "linkingText": [
+        "select expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "SelectExpression",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#SelectExpression",
+        "title": "Select Expressions",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-values-insertion",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-values-insertion",
+      "linkingText": [
+        "Values Insertion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pre-binding",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#pre-binding",
+        "title": "Pre-binding of Variables in SPARQL Queries",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-pre-binding",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-pre-binding",
+      "linkingText": [
+        "pre-binding",
+        "pre-bind",
+        "pre-bound",
+        "pre-bound variables",
+        "pre-binds",
+        "Pre-binding of variables"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pre-binding",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#pre-binding",
+        "title": "Pre-binding of Variables in SPARQL Queries",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

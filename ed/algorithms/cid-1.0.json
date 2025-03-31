@@ -1,0 +1,185 @@
+{
+  "spec": {
+    "title": "Controlled Identifiers v1.0",
+    "url": "https://w3c.github.io/cid/"
+  },
+  "algorithms": [
+    {
+      "html": "The following algorithm specifies how to encode an array of bytes, where each\nbyte represents a base-256 value, to a different base representation that uses a\nparticular base alphabet, such as base-64-url-no-pad or base-58-btc. The\nrequired inputs are the <var>bytes</var>, <var>targetBase</var>, and\n<var>baseAlphabet</var>. The output is a string that contains the base-encoded\nvalue. All mathematical operations <em class=\"rfc2119\">MUST</em> be performed using integer arithmetic.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize the following variables; <var>zeroes</var> to <code>0</code>, <var>length</var> to\n<code>0</code>, <var>begin</var> to <code>0</code>, and <var>end</var> to the length of\n<var>bytes</var>."
+        },
+        {
+          "html": "Set <var>begin</var> and <var>zeroes</var> to the number of leading <code>0</code> byte\nvalues in <var>bytes</var>."
+        },
+        {
+          "html": "Set <var>baseValue</var> to an empty byte array that is the size of the final\nbase-expanded value. Calculate the final <var>size</var> of <var>baseValue</var>\nby dividing log(256) by log(<var>targetBase</var>) and then multiplying the\nlength of <var>bytes</var> minus the leading <var>zeroes</var>. Add <code>1</code> to the\nvalue of <var>size</var>."
+        },
+        {
+          "html": "Process each byte in <var>bytes</var> as <var>byte</var> starting at offset\n<var>begin</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Set the <var>carry</var> value to <var>byte</var>."
+            },
+            {
+              "html": "Perform base-expansion by starting at the end of the <var>baseValue</var> array.\nInitialize an iterator <var>i</var> to <code>0</code>. Set <var>basePosition</var> to\n<var>size</var> minus <code>1</code>. Perform the following loop as long as <var>carry</var>\ndoes not equal <code>0</code> or <var>i</var> is less than <var>length</var>, and\n<var>basePosition</var> does not equal <code>-1</code>.",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "Multiply the value in <var>baseValue[basePosition]</var> by <code>256</code> and add\nit to <var>carry</var>."
+                },
+                {
+                  "html": "Set the value at <var>baseValue[basePosition]</var> to the remainder after\ndividing <var>carry</var> by <var>targetBase</var>."
+                },
+                {
+                  "html": "Set the value of <var>carry</var> to <var>carry</var> divided by\n<var>targetBase</var> ensuring that integer division is used to perform the\ndivision."
+                },
+                {
+                  "html": "Decrement <var>basePosition</var> by <code>1</code> and increment <var>i</var> by <code>1</code>."
+                }
+              ]
+            },
+            {
+              "html": "Set <var>length</var> to <var>i</var> and increment <var>begin</var> by <code>1</code>."
+            }
+          ]
+        },
+        {
+          "html": "Set the <var>baseEncodingPosition</var> to <var>size</var> minus <var>length</var>.\nWhile the <var>baseEncodingPosition</var> does not equal <var>size</var> and the\n<var>baseValue[baseEncodingPosition]</var> does not equal <code>0</code>, increment\n<var>baseEncodingPosition</var>. This step skips the leading zeros in the\nbase-encoded result."
+        },
+        {
+          "html": "Initialize the <var>baseEncoding</var> by repeating the first entry in the\n<var>baseAlphabet</var> by the value of <var>zeroes</var> (the number of leading\nzeroes in <var>bytes</var>)."
+        },
+        {
+          "html": "Convert the rest of the <var>baseValue</var> to the base-encoding. While the\n<var>baseEncodingPosition</var> is less than <var>size</var>, increment the\n<var>baseEncodingPosition</var>: Set <var>baseEncodedValue</var> to\n<var>baseValue</var>[<var>baseEncodingPosition</var>]. Append\n<var>baseAlphabet</var>[<var>baseEncodedValue</var>] to <var>baseEncoding</var>."
+        },
+        {
+          "html": "Return <var>baseEncoding</var> as the base-encoded value."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to decode an array of bytes, where each\nbyte represents a base-encoded value, to a different base representation that\nuses a particular base alphabet, such as base-64-url-no-pad or base-58-btc. The\nrequired inputs are the <var>sourceEncoding</var>, <var>sourceBase</var>, and\n<var>baseAlphabet</var>. The output is an array of bytes that contains the\nbase-decoded value. All mathematical operations <em class=\"rfc2119\">MUST</em> be performed using integer\narithmetic.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize a <var>baseMap</var> mapping by associating each character\nin <var>baseAlphabet</var> to its integer position in the\n<var>baseAlphabet</var> string."
+        },
+        {
+          "html": "Initialize the following variables; <var>sourceOffset</var> to <code>0</code>,\n<var>zeroes</var> to <code>0</code>, and <var>decodedLength</var> to <code>0</code>."
+        },
+        {
+          "html": "Set <var>zeroes</var> and <var>sourceOffset</var> to the number of leading\n<var>baseAlphabet[0]</var> values in <var>sourceEncoding</var>."
+        },
+        {
+          "html": "Set <var>decodedBytes</var> to an empty byte array that is the size of the final\nbase-converted value. Calculate the size of <var>decodedBytes</var>\nby dividing log(<var>sourceBase</var>) by log(<code>256</code>) and then multiplying by the\nlength of <var>sourceEncoding</var> minus the leading zeroes. Add 1 to the value\nof size."
+        },
+        {
+          "html": "Process each character in <var>sourceEncoding</var> as <var>character</var>\nstarting at offset <var>sourceOffset</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Set the <var>carry</var> value to the integer value in the <var>baseMap</var>\nthat is associated with <var>character</var>."
+            },
+            {
+              "html": "Perform base-decoding by starting at the end of the <var>decodedBytes</var>\narray. Initialize an iterator <var>i</var> to <code>0</code>. Set <var>byteOffset</var>\nto <var>decodedSize</var> minus <code>1</code>. Perform the following loop as long as,\n<var>carry</var> does not equal <code>0</code> or <var>i</var> is less than\n<var>decodedLength</var>, and <var>byteOffset</var> does not equal <code>-1</code>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "Add the result of multiplying <var>sourceBase</var> by\n<var>decodedBytes</var>[<var>byteOffset</var>] to <var>carry</var>."
+                },
+                {
+                  "html": "Set <var>decodedBytes</var>[<var>byteOffset</var>] to the remainder of\ndividing <var>carry</var> by <code>256</code>."
+                },
+                {
+                  "html": "Set <var>carry</var> to <var>carry</var> divided by <code>256</code>, ensuring that integer\ndivision is used to perform the division."
+                },
+                {
+                  "html": "Decrement <var>byteOffset</var> by <code>1</code> and increment <var>i</var> by <code>1</code>."
+                }
+              ]
+            },
+            {
+              "html": "Set <var>decodedLength</var> to <var>i</var> and increment\n<var>sourceOffset</var> by <code>1</code>."
+            }
+          ]
+        },
+        {
+          "html": "Set the <var>decodedOffset</var> to <var>decodedSize</var> minus\n<var>decodedLength</var>. While the <var>decodedOffset</var> does not equal\nthe <var>decodedSize</var> and\n<var>decodedBytes</var>[<var>decodedOffset</var>] equals <code>0</code>, increment\n<var>decodedOffset</var> by <code>1</code>. This step skips the leading zeros in the\nfinal base-decoded byte array."
+        },
+        {
+          "html": "Set the size of the <var>finalBytes</var> array to <var>zeroes</var> plus,\n<var>decodedSize</var> minus <var>decodedOffset</var>. Initialize the first\n<var>zeroes</var> bytes in <var>finalBytes</var> to <code>0</code>."
+        },
+        {
+          "html": "Starting at an offset equal to the number of <var>zeroes</var> in\n<var>finalBytes</var> plus <code>1</code>, copy all bytes in <var>decodedBytes</var>, up\nto <var>decodedSize</var>, starting at offset <var>decodedOffset</var> to\n<var>finalBytes</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to safely retrieve a verification method,\nsuch as a cryptographic <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/cid/#dfn-public-key\" class=\"internalDFN\" id=\"ref-for-dfn-public-key-10\">public key</a>, by using a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/cid/#dfn-verification-method-identifier\" class=\"internalDFN\" id=\"ref-for-dfn-verification-method-identifier-1\">verification method identifier</a>. Required inputs are a <strong><a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/cid/#dfn-verification-method-identifier\" class=\"internalDFN\" id=\"ref-for-dfn-verification-method-identifier-2\">verification method identifier</a></strong> (<var>vmIdentifier</var>), a\n<strong><a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/cid/#dfn-verification-relationship\" class=\"internalDFN\" id=\"ref-for-dfn-verification-relationship-20\">verification relationship</a></strong>\n(<var>verificationRelationship</var>), and a set of <strong>dereferencing\noptions</strong> (<var>options</var>). A\n<strong><a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/cid/#dfn-verification-method\" class=\"internalDFN\" id=\"ref-for-dfn-verification-method-79\">verification method</a></strong> is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>vmIdentifier</var> is not a valid URL, an error <em class=\"rfc2119\">MUST</em> be raised and\n<em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://w3c.github.io/cid/#INVALID_VERIFICATION_METHOD_URL\">INVALID_VERIFICATION_METHOD_URL</a>."
+        },
+        {
+          "html": "Let <var>controllerDocumentUrl</var> be the result of parsing\n<var>vmIdentifier</var> according to the rules of the URL scheme and extracting\nthe primary resource identifier (without the fragment identifier)."
+        },
+        {
+          "html": "Let <var>vmFragment</var> be the result of parsing <var>vmIdentifier</var>\naccording to the rules of the URL scheme and extracting the secondary\nresource identifier (the fragment identifier)."
+        },
+        {
+          "html": "Let <var>controllerDocument</var> be the result of dereferencing\n<var>controllerDocumentUrl</var>, according to the rules\nof the URL scheme and using the supplied <var>options</var>."
+        },
+        {
+          "html": "If <var>controllerDocument</var> is not a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/cid/#dfn-conforming-controlled-identifier-document\" class=\"internalDFN\" id=\"ref-for-dfn-conforming-controlled-identifier-document-2\">conforming controlled identifier document</a>,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em>\nconvey an error type of\n<a href=\"https://w3c.github.io/cid/#INVALID_CONTROLLED_IDENTIFIER_DOCUMENT\">INVALID_CONTROLLED_IDENTIFIER_DOCUMENT</a>."
+        },
+        {
+          "html": "If <var>controllerDocument</var>.<var>id</var> does not match the\n<var>controllerDocumentUrl</var>, an error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em>\nconvey an error type of\n<a href=\"https://w3c.github.io/cid/#INVALID_CONTROLLED_IDENTIFIER_DOCUMENT_ID\">INVALID_CONTROLLED_IDENTIFIER_DOCUMENT_ID</a>."
+        },
+        {
+          "html": "Let <var>verificationMethod</var> be the result of dereferencing the\n<var>vmFragment</var> from the <var>controllerDocument</var> according to the\nrules of the media type of the <var>controllerDocument</var>."
+        },
+        {
+          "html": "If <var>verificationMethod</var> is not a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/cid/#dfn-conforming-verification-method\" class=\"internalDFN\" id=\"ref-for-dfn-conforming-verification-method-2\">conforming verification method</a>,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://w3c.github.io/cid/#INVALID_VERIFICATION_METHOD\">INVALID_VERIFICATION_METHOD</a>."
+        },
+        {
+          "html": "If the absolute URL value of <var>verificationMethod</var>.<var>id</var>\ndoes not equal <var>vmIdentifier</var>, an error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em>\nconvey an error type of\n<a href=\"https://w3c.github.io/cid/#INVALID_VERIFICATION_METHOD\">INVALID_VERIFICATION_METHOD</a>."
+        },
+        {
+          "html": "If the absolute URL value of <var>verificationMethod</var>.<var>controller</var>\ndoes not equal <var>controllerDocumentUrl</var>, an error <em class=\"rfc2119\">MUST</em> be raised and\n<em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://w3c.github.io/cid/#INVALID_VERIFICATION_METHOD\">INVALID_VERIFICATION_METHOD</a>."
+        },
+        {
+          "html": "If <var>verificationMethod</var> is not associated, either by reference\n(URL) or by value (object), with the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/cid/#dfn-verification-relationship\" class=\"internalDFN\" id=\"ref-for-dfn-verification-relationship-21\">verification relationship</a> array in the\n<var>controllerDocument</var> identified by <var>verificationRelationship</var>,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://w3c.github.io/cid/#INVALID_RELATIONSHIP_FOR_VERIFICATION_METHOD\">\nINVALID_RELATIONSHIP_FOR_VERIFICATION_METHOD</a>."
+        },
+        {
+          "html": "Return <var>verificationMethod</var> as the\n<strong><a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/cid/#dfn-verification-method\" class=\"internalDFN\" id=\"ref-for-dfn-verification-method-80\">verification method</a></strong>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to retrieve the portion of a document that\ncontains a given fragment identifier. The required inputs are a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/cid/#dfn-controlled-identifier-document\" class=\"internalDFN\" id=\"ref-for-dfn-controlled-identifier-document-66\">controlled identifier document</a> (<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>document</var>) and a fragment identifier\n(<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a> <var>fragmentIdentifier</var>). The output is a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> containing\nthe document fragment.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>documentFragment</var> be <code>null</code>."
+        },
+        {
+          "html": "Let <var>canonicalDocumentUrl</var> be the value of\n<var>document</var>.<var>id</var>."
+        },
+        {
+          "html": "Let <var>fullyQualifiedFragment</var> be the value of\n<var>canonicalDocumentUrl</var> with <var>fragmentIdentifier</var> appended to\nit."
+        },
+        {
+          "html": "Recursively process every <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> in <var>document</var> checking to see if\nit has an <code>id</code> value that is equal to <var>fullyQualifiedFragment</var> or\n<var>fragmentIdentifier</var>. If a match is found, set\n<var>documentFragment</var> to the matched <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> and stop recursively\nprocessing."
+        },
+        {
+          "html": "Return <var>documentFragment</var>."
+        }
+      ]
+    }
+  ]
+}

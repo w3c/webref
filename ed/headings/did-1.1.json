@@ -1,0 +1,602 @@
+{
+  "spec": {
+    "title": "Decentralized Identifiers (DIDs) v1.1",
+    "url": "https://w3c.github.io/did/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/did/#title",
+      "level": 1,
+      "title": "Decentralized Identifiers (DIDs) v1.1"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://w3c.github.io/did/#subtitle",
+      "level": 2,
+      "title": "Core architecture, data model, and representations"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/did/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/did/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "a-simple-example",
+      "href": "https://w3c.github.io/did/#a-simple-example",
+      "level": 3,
+      "title": "A Simple Example",
+      "number": "1.1"
+    },
+    {
+      "id": "design-goals",
+      "href": "https://w3c.github.io/did/#design-goals",
+      "level": 3,
+      "title": "Design Goals",
+      "number": "1.2"
+    },
+    {
+      "id": "architecture-overview",
+      "href": "https://w3c.github.io/did/#architecture-overview",
+      "level": 3,
+      "title": "Architecture Overview",
+      "number": "1.3"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/did/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "number": "1.4"
+    },
+    {
+      "id": "audience",
+      "href": "https://w3c.github.io/did/#audience",
+      "level": 3,
+      "title": "Audience",
+      "number": "1.5"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/did/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "number": "2"
+    },
+    {
+      "id": "identifier",
+      "href": "https://w3c.github.io/did/#identifier",
+      "level": 2,
+      "title": "Identifier",
+      "number": "3"
+    },
+    {
+      "id": "did-syntax",
+      "href": "https://w3c.github.io/did/#did-syntax",
+      "level": 3,
+      "title": "DID Syntax",
+      "number": "3.1"
+    },
+    {
+      "id": "did-url-syntax",
+      "href": "https://w3c.github.io/did/#did-url-syntax",
+      "level": 3,
+      "title": "DID URL Syntax",
+      "number": "3.2"
+    },
+    {
+      "id": "path",
+      "href": "https://w3c.github.io/did/#path",
+      "level": 4,
+      "title": "Path"
+    },
+    {
+      "id": "query",
+      "href": "https://w3c.github.io/did/#query",
+      "level": 4,
+      "title": "Query"
+    },
+    {
+      "id": "fragment",
+      "href": "https://w3c.github.io/did/#fragment",
+      "level": 4,
+      "title": "Fragment"
+    },
+    {
+      "id": "relative-did-urls",
+      "href": "https://w3c.github.io/did/#relative-did-urls",
+      "level": 4,
+      "title": "Relative DID URLs",
+      "number": "3.2.1"
+    },
+    {
+      "id": "data-model",
+      "href": "https://w3c.github.io/did/#data-model",
+      "level": 2,
+      "title": "Data Model",
+      "number": "4"
+    },
+    {
+      "id": "extensibility",
+      "href": "https://w3c.github.io/did/#extensibility",
+      "level": 3,
+      "title": "Extensibility",
+      "number": "4.1"
+    },
+    {
+      "id": "core-properties",
+      "href": "https://w3c.github.io/did/#core-properties",
+      "level": 2,
+      "title": "Core Properties",
+      "number": "5"
+    },
+    {
+      "id": "verification-method-properties",
+      "href": "https://w3c.github.io/did/#verification-method-properties",
+      "level": 3,
+      "title": "Verification Method properties"
+    },
+    {
+      "id": "service-properties",
+      "href": "https://w3c.github.io/did/#service-properties",
+      "level": 3,
+      "title": "Service properties"
+    },
+    {
+      "id": "identifiers",
+      "href": "https://w3c.github.io/did/#identifiers",
+      "level": 3,
+      "title": "Identifiers",
+      "number": "5.1"
+    },
+    {
+      "id": "did-subject",
+      "href": "https://w3c.github.io/did/#did-subject",
+      "level": 4,
+      "title": "DID Subject",
+      "number": "5.1.1"
+    },
+    {
+      "id": "did-controller",
+      "href": "https://w3c.github.io/did/#did-controller",
+      "level": 4,
+      "title": "DID Controller",
+      "number": "5.1.2"
+    },
+    {
+      "id": "verification-methods",
+      "href": "https://w3c.github.io/did/#verification-methods",
+      "level": 3,
+      "title": "Verification Methods",
+      "number": "5.2"
+    },
+    {
+      "id": "verification-relationships",
+      "href": "https://w3c.github.io/did/#verification-relationships",
+      "level": 3,
+      "title": "Verification Relationships",
+      "number": "5.3"
+    },
+    {
+      "id": "services",
+      "href": "https://w3c.github.io/did/#services",
+      "level": 3,
+      "title": "Services",
+      "number": "5.4"
+    },
+    {
+      "id": "representations",
+      "href": "https://w3c.github.io/did/#representations",
+      "level": 2,
+      "title": "Representations",
+      "number": "6"
+    },
+    {
+      "id": "production-and-consumption",
+      "href": "https://w3c.github.io/did/#production-and-consumption",
+      "level": 3,
+      "title": "Production and Consumption",
+      "number": "6.1"
+    },
+    {
+      "id": "json",
+      "href": "https://w3c.github.io/did/#json",
+      "level": 3,
+      "title": "JSON",
+      "number": "6.2"
+    },
+    {
+      "id": "production",
+      "href": "https://w3c.github.io/did/#production",
+      "level": 4,
+      "title": "Production",
+      "number": "6.2.1"
+    },
+    {
+      "id": "consumption",
+      "href": "https://w3c.github.io/did/#consumption",
+      "level": 4,
+      "title": "Consumption",
+      "number": "6.2.2"
+    },
+    {
+      "id": "json-ld",
+      "href": "https://w3c.github.io/did/#json-ld",
+      "level": 3,
+      "title": "JSON-LD",
+      "number": "6.3"
+    },
+    {
+      "id": "production-0",
+      "href": "https://w3c.github.io/did/#production-0",
+      "level": 4,
+      "title": "Production",
+      "number": "6.3.1"
+    },
+    {
+      "id": "consumption-0",
+      "href": "https://w3c.github.io/did/#consumption-0",
+      "level": 4,
+      "title": "Consumption",
+      "number": "6.3.2"
+    },
+    {
+      "id": "media-types",
+      "href": "https://w3c.github.io/did/#media-types",
+      "level": 3,
+      "title": "Media Types",
+      "number": "6.4"
+    },
+    {
+      "id": "media-type-precision",
+      "href": "https://w3c.github.io/did/#media-type-precision",
+      "level": 4,
+      "title": "Media Type Precision",
+      "number": "6.4.1"
+    },
+    {
+      "id": "methods",
+      "href": "https://w3c.github.io/did/#methods",
+      "level": 2,
+      "title": "Methods",
+      "number": "7"
+    },
+    {
+      "id": "method-syntax",
+      "href": "https://w3c.github.io/did/#method-syntax",
+      "level": 3,
+      "title": "Method Syntax",
+      "number": "7.1"
+    },
+    {
+      "id": "method-operations",
+      "href": "https://w3c.github.io/did/#method-operations",
+      "level": 3,
+      "title": "Method Operations",
+      "number": "7.2"
+    },
+    {
+      "id": "security-requirements",
+      "href": "https://w3c.github.io/did/#security-requirements",
+      "level": 3,
+      "title": "Security Requirements",
+      "number": "7.3"
+    },
+    {
+      "id": "privacy-requirements",
+      "href": "https://w3c.github.io/did/#privacy-requirements",
+      "level": 3,
+      "title": "Privacy Requirements",
+      "number": "7.4"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/did/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "8"
+    },
+    {
+      "id": "choosing-did-resolvers",
+      "href": "https://w3c.github.io/did/#choosing-did-resolvers",
+      "level": 3,
+      "title": "Choosing DID Resolvers",
+      "number": "8.1"
+    },
+    {
+      "id": "non-repudiation",
+      "href": "https://w3c.github.io/did/#non-repudiation",
+      "level": 3,
+      "title": "Non-Repudiation",
+      "number": "8.2"
+    },
+    {
+      "id": "notification-of-did-document-changes",
+      "href": "https://w3c.github.io/did/#notification-of-did-document-changes",
+      "level": 3,
+      "title": "Notification of DID Document Changes",
+      "number": "8.3"
+    },
+    {
+      "id": "revocation-in-trustless-systems",
+      "href": "https://w3c.github.io/did/#revocation-in-trustless-systems",
+      "level": 3,
+      "title": "Revocation in Trustless Systems",
+      "number": "8.4"
+    },
+    {
+      "id": "did-recovery",
+      "href": "https://w3c.github.io/did/#did-recovery",
+      "level": 3,
+      "title": "DID Recovery",
+      "number": "8.5"
+    },
+    {
+      "id": "the-role-of-human-friendly-identifiers",
+      "href": "https://w3c.github.io/did/#the-role-of-human-friendly-identifiers",
+      "level": 3,
+      "title": "The Role of Human-Friendly Identifiers",
+      "number": "8.6"
+    },
+    {
+      "id": "dids-as-enhanced-urns",
+      "href": "https://w3c.github.io/did/#dids-as-enhanced-urns",
+      "level": 3,
+      "title": "DIDs as Enhanced URNs",
+      "number": "8.7"
+    },
+    {
+      "id": "immutability",
+      "href": "https://w3c.github.io/did/#immutability",
+      "level": 3,
+      "title": "Immutability",
+      "number": "8.8"
+    },
+    {
+      "id": "encrypted-data-in-did-documents",
+      "href": "https://w3c.github.io/did/#encrypted-data-in-did-documents",
+      "level": 3,
+      "title": "Encrypted Data in DID Documents",
+      "number": "8.9"
+    },
+    {
+      "id": "equivalence-properties",
+      "href": "https://w3c.github.io/did/#equivalence-properties",
+      "level": 3,
+      "title": "Equivalence Properties",
+      "number": "8.10"
+    },
+    {
+      "id": "persistence",
+      "href": "https://w3c.github.io/did/#persistence",
+      "level": 3,
+      "title": "Persistence",
+      "number": "8.11"
+    },
+    {
+      "id": "evaluating-competing-considerations",
+      "href": "https://w3c.github.io/did/#evaluating-competing-considerations",
+      "level": 3,
+      "title": "Evaluating Competing Considerations",
+      "number": "8.12"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://w3c.github.io/did/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "9"
+    },
+    {
+      "id": "group-privacy",
+      "href": "https://w3c.github.io/did/#group-privacy",
+      "level": 3,
+      "title": "Group Privacy",
+      "number": "9.1"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/did/#examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "A"
+    },
+    {
+      "id": "did-documents",
+      "href": "https://w3c.github.io/did/#did-documents",
+      "level": 3,
+      "title": "DID Documents",
+      "number": "A.1"
+    },
+    {
+      "id": "proving",
+      "href": "https://w3c.github.io/did/#proving",
+      "level": 3,
+      "title": "Proving",
+      "number": "A.2"
+    },
+    {
+      "id": "encrypting",
+      "href": "https://w3c.github.io/did/#encrypting",
+      "level": 3,
+      "title": "Encrypting",
+      "number": "A.3"
+    },
+    {
+      "id": "architectural-considerations",
+      "href": "https://w3c.github.io/did/#architectural-considerations",
+      "level": 2,
+      "title": "Architectural Considerations",
+      "number": "B"
+    },
+    {
+      "id": "detailed-architecture-diagram",
+      "href": "https://w3c.github.io/did/#detailed-architecture-diagram",
+      "level": 3,
+      "title": "Detailed Architecture Diagram",
+      "number": "B.1"
+    },
+    {
+      "id": "creation-of-a-did",
+      "href": "https://w3c.github.io/did/#creation-of-a-did",
+      "level": 3,
+      "title": "Creation of a DID",
+      "number": "B.2"
+    },
+    {
+      "id": "determining-the-did-subject",
+      "href": "https://w3c.github.io/did/#determining-the-did-subject",
+      "level": 3,
+      "title": "Determining the DID subject",
+      "number": "B.3"
+    },
+    {
+      "id": "referring-to-the-did-document",
+      "href": "https://w3c.github.io/did/#referring-to-the-did-document",
+      "level": 3,
+      "title": "Referring to the DID document",
+      "number": "B.4"
+    },
+    {
+      "id": "statements-in-the-did-document",
+      "href": "https://w3c.github.io/did/#statements-in-the-did-document",
+      "level": 3,
+      "title": "Statements in the DID document",
+      "number": "B.5"
+    },
+    {
+      "id": "discovering-more-information-about-the-did-subject",
+      "href": "https://w3c.github.io/did/#discovering-more-information-about-the-did-subject",
+      "level": 3,
+      "title": "Discovering more information about the DID subject",
+      "number": "B.6"
+    },
+    {
+      "id": "serving-a-representation-of-the-did-subject",
+      "href": "https://w3c.github.io/did/#serving-a-representation-of-the-did-subject",
+      "level": 3,
+      "title": "Serving a representation of the DID subject",
+      "number": "B.7"
+    },
+    {
+      "id": "assigning-dids-to-existing-web-resources",
+      "href": "https://w3c.github.io/did/#assigning-dids-to-existing-web-resources",
+      "level": 3,
+      "title": "Assigning DIDs to existing web resources",
+      "number": "B.8"
+    },
+    {
+      "id": "the-relationship-between-did-controllers-and-did-subjects",
+      "href": "https://w3c.github.io/did/#the-relationship-between-did-controllers-and-did-subjects",
+      "level": 3,
+      "title": "The relationship between DID controllers and DID subjects",
+      "number": "B.9"
+    },
+    {
+      "id": "set-1-the-did-subject-is-the-did-controller",
+      "href": "https://w3c.github.io/did/#set-1-the-did-subject-is-the-did-controller",
+      "level": 4,
+      "title": "Set #1: The DID subject is the DID controller",
+      "number": "B.9.1"
+    },
+    {
+      "id": "set-2-the-did-subject-is-not-the-did-controller",
+      "href": "https://w3c.github.io/did/#set-2-the-did-subject-is-not-the-did-controller",
+      "level": 4,
+      "title": "Set #2: The DID subject is not the DID controller",
+      "number": "B.9.2"
+    },
+    {
+      "id": "multiple-did-controllers",
+      "href": "https://w3c.github.io/did/#multiple-did-controllers",
+      "level": 3,
+      "title": "Multiple DID controllers",
+      "number": "B.10"
+    },
+    {
+      "id": "independent-control",
+      "href": "https://w3c.github.io/did/#independent-control",
+      "level": 4,
+      "title": "Independent Control",
+      "number": "B.10.1"
+    },
+    {
+      "id": "group-control",
+      "href": "https://w3c.github.io/did/#group-control",
+      "level": 4,
+      "title": "Group Control",
+      "number": "B.10.2"
+    },
+    {
+      "id": "changing-the-did-subject",
+      "href": "https://w3c.github.io/did/#changing-the-did-subject",
+      "level": 3,
+      "title": "Changing the DID subject",
+      "number": "B.11"
+    },
+    {
+      "id": "changing-the-did-controller",
+      "href": "https://w3c.github.io/did/#changing-the-did-controller",
+      "level": 3,
+      "title": "Changing the DID controller",
+      "number": "B.12"
+    },
+    {
+      "id": "revision-history",
+      "href": "https://w3c.github.io/did/#revision-history",
+      "level": 2,
+      "title": "Revision History",
+      "number": "C"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/did/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "D"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://w3c.github.io/did/#iana-considerations",
+      "level": 2,
+      "title": "IANA Considerations",
+      "number": "E"
+    },
+    {
+      "id": "application-did",
+      "href": "https://w3c.github.io/did/#application-did",
+      "level": 3,
+      "title": "application/did",
+      "number": "E.1"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/did/#references",
+      "level": 2,
+      "title": "References",
+      "number": "F"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/did/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "F.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/did/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "F.2"
+    }
+  ]
+}

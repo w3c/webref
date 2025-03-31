@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-03-31T12:57:07.933Z",
+  "date": "2025-03-31T18:57:20.502Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -18,6 +18,7 @@
       "console",
       "partitioned-cookies",
       "client-hint-reliability",
+      "compression-dictionary",
       "no-vary-search",
       "rfc6265bis",
       "dom",
@@ -29,7 +30,6 @@
       "css-conditional-values-1",
       "css-env-1",
       "css-extensions-1",
-      "css-forms-1",
       "css-gaps-1",
       "css-gcpm-4",
       "css-images-5",
@@ -151,7 +151,6 @@
       "urlpattern",
       "login-status",
       "at-driver",
-      "contentEditable",
       "execCommand",
       "element-timing",
       "gamepad-extensions",
@@ -328,11 +327,13 @@
       "beacon",
       "capture-handle-identity",
       "change-password-url",
+      "cid-1.0",
       "clear-site-data",
       "clipboard-apis",
       "compositing-1",
       "compute-pressure",
       "contact-picker",
+      "content-editable",
       "core-aam-1.2",
       "credential-management-1",
       "csp-embedded-enforcement",
@@ -375,6 +376,7 @@
       "css-font-loading-3",
       "css-fonts-4",
       "css-fonts-5",
+      "css-forms-1",
       "css-gcpm-3",
       "css-grid-1",
       "css-grid-2",
@@ -447,6 +449,7 @@
       "cssom-view-1",
       "device-memory-1",
       "device-posture",
+      "did-1.1",
       "DOM-Parsing",
       "dpub-aam-1.1",
       "dpub-aria-1.1",
@@ -572,6 +575,8 @@
       "selectors-4",
       "server-timing",
       "service-workers",
+      "shacl12-core",
+      "shacl12-sparql",
       "sparql12-entailment",
       "sparql12-federated-query",
       "sparql12-graph-store-protocol",
@@ -692,10 +697,10 @@
     ]
   },
   "stats": {
-    "crawled": 661,
+    "crawled": 666,
     "errors": 1
   },
-  "crawler": "reffy-18.4.2",
+  "crawler": "reffy-18.4.5",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -984,9 +989,9 @@
       ],
       "crawled": "https://aomediacodec.github.io/av1-rtp-spec/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 23 Aug 2023 15:12:38 GMT"
+        "lastModified": "Mon, 31 Mar 2025 14:43:22 GMT"
       },
-      "date": "23 August 2023",
+      "date": "31 March 2025",
       "links": "links/av1-rtp-spec.json",
       "refs": "refs/av1-rtp-spec.json",
       "headings": "headings/av1-rtp-spec.json",
@@ -1313,6 +1318,55 @@
       "refs": "refs/client-hint-reliability.json",
       "headings": "headings/client-hint-reliability.json",
       "ids": "ids/client-hint-reliability.json",
+      "cddl": []
+    },
+    {
+      "url": "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-compression-dictionary",
+      "seriesComposition": "full",
+      "shortname": "compression-dictionary",
+      "series": {
+        "shortname": "compression-dictionary",
+        "currentSpecification": "compression-dictionary",
+        "title": "Compression Dictionary Transport",
+        "shortTitle": "Compression Dictionary Transport",
+        "nightlyUrl": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html"
+      },
+      "organization": "IETF",
+      "groups": [
+        {
+          "name": "HTTP Working Group",
+          "url": "https://datatracker.ietf.org/wg/httpbis/"
+        }
+      ],
+      "nightly": {
+        "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/httpwg/http-extensions",
+        "sourcePath": "draft-ietf-httpbis-compression-dictionary.md",
+        "filename": "draft-ietf-httpbis-compression-dictionary.html"
+      },
+      "title": "Compression Dictionary Transport",
+      "source": "ietf",
+      "shortTitle": "Compression Dictionary Transport",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-compression-dictionary",
+        "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html"
+      ],
+      "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html",
+      "crawlCacheInfo": {
+        "lastModified": "Sun, 30 Mar 2025 01:04:02 GMT"
+      },
+      "date": "30 March 2025",
+      "algorithms": "algorithms/compression-dictionary.json",
+      "links": "links/compression-dictionary.json",
+      "refs": "refs/compression-dictionary.json",
+      "headings": "headings/compression-dictionary.json",
+      "ids": "ids/compression-dictionary.json",
       "cddl": []
     },
     {
@@ -1945,61 +1999,6 @@
       "cddl": []
     },
     {
-      "url": "https://drafts.csswg.org/css-forms-1/",
-      "seriesComposition": "full",
-      "shortname": "css-forms-1",
-      "series": {
-        "shortname": "css-forms",
-        "currentSpecification": "css-forms-1",
-        "title": "CSS Form Control Styling",
-        "shortTitle": "CSS Form Control Styling",
-        "nightlyUrl": "https://drafts.csswg.org/css-forms/"
-      },
-      "seriesVersion": "1",
-      "standing": "good",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
-        }
-      ],
-      "nightly": {
-        "url": "https://drafts.csswg.org/css-forms-1/",
-        "status": "Unofficial Proposal Draft",
-        "alternateUrls": [
-          "https://w3c.github.io/csswg-drafts/css-forms-1/",
-          "https://w3c.github.io/csswg-drafts/css-forms/"
-        ],
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-forms-1/Overview.bs",
-        "filename": "index.html"
-      },
-      "title": "CSS Form Control Styling Level 1",
-      "source": "spec",
-      "shortTitle": "CSS Form Control Styling 1",
-      "categories": [
-        "browser"
-      ],
-      "versions": [
-        "https://drafts.csswg.org/css-forms-1/"
-      ],
-      "crawled": "https://drafts.csswg.org/css-forms-1/",
-      "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
-      },
-      "generator": "bikeshed",
-      "date": "28 March 2025",
-      "revision": "db06191d329430e778cde143113ca1d3f4b0ed61",
-      "links": "links/css-forms-1.json",
-      "refs": "refs/css-forms-1.json",
-      "css": "css/css-forms.json",
-      "dfns": "dfns/css-forms-1.json",
-      "headings": "headings/css-forms-1.json",
-      "ids": "ids/css-forms-1.json",
-      "cddl": []
-    },
-    {
       "url": "https://drafts.csswg.org/css-gaps-1/",
       "seriesComposition": "full",
       "shortname": "css-gaps-1",
@@ -2587,7 +2586,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-variables-2/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2025",
@@ -3952,11 +3951,11 @@
       ],
       "crawled": "https://privacycg.github.io/requestStorageAccessFor/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Mar 2025 02:53:55 GMT"
+        "lastModified": "Mon, 31 Mar 2025 15:39:02 GMT"
       },
       "generator": "bikeshed",
-      "date": "13 March 2025",
-      "revision": "92e8f2d1301f4d17f5dd926d2f2b6f22e078968a",
+      "date": "31 March 2025",
+      "revision": "cd672aea8fa6e2ee7b4ace1922f1dd13a451e2c4",
       "algorithms": "algorithms/requestStorageAccessFor.json",
       "links": "links/requestStorageAccessFor.json",
       "refs": "refs/requestStorageAccessFor.json",
@@ -6895,9 +6894,9 @@
       ],
       "crawled": "https://tc39.es/ecma262/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 26 Mar 2025 22:49:42 GMT"
+        "lastModified": "Mon, 31 Mar 2025 13:49:08 GMT"
       },
-      "date": "26 March 2025",
+      "date": "31 March 2025",
       "links": "links/ecmascript.json",
       "dfns": "dfns/ecmascript.json",
       "headings": "headings/ecmascript.json",
@@ -6999,7 +6998,7 @@
       ],
       "crawled": "https://tc39.es/ecma426/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 31 Mar 2025 12:33:16 GMT"
+        "lastModified": "Mon, 31 Mar 2025 13:03:55 GMT"
       },
       "date": "31 March 2025",
       "links": "links/ecma-426.json",
@@ -8307,6 +8306,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "urlpattern"
+        ]
+      },
       "versions": [
         "https://urlpattern.spec.whatwg.org/"
       ],
@@ -8441,61 +8446,6 @@
           "file": "cddl/at-driver-local.cddl"
         }
       ]
-    },
-    {
-      "url": "https://w3c.github.io/contentEditable/",
-      "seriesComposition": "full",
-      "shortname": "contentEditable",
-      "series": {
-        "shortname": "contentEditable",
-        "currentSpecification": "contentEditable",
-        "title": "ContentEditable",
-        "shortTitle": "ContentEditable",
-        "nightlyUrl": "https://w3c.github.io/contentEditable/"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Web Editing Working Group",
-          "url": "https://www.w3.org/groups/wg/webediting/"
-        }
-      ],
-      "nightly": {
-        "url": "https://w3c.github.io/contentEditable/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/contentEditable",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "title": "ContentEditable",
-      "source": "spec",
-      "shortTitle": "ContentEditable",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "contenteditable"
-        ]
-      },
-      "versions": [
-        "https://w3c.github.io/contentEditable/"
-      ],
-      "crawled": "https://w3c.github.io/contentEditable/",
-      "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Sep 2022 09:20:11 GMT"
-      },
-      "generator": "respec",
-      "date": "12 September 2022",
-      "links": "links/contentEditable.json",
-      "refs": "refs/contentEditable.json",
-      "dfns": "dfns/contentEditable.json",
-      "headings": "headings/contentEditable.json",
-      "ids": "ids/contentEditable.json",
-      "cddl": []
     },
     {
       "url": "https://w3c.github.io/editing/docs/execCommand/",
@@ -11586,7 +11536,7 @@
       ],
       "crawled": "https://wicg.github.io/document-isolation-policy/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 18 Sep 2024 13:18:31 GMT"
+        "lastModified": "Wed, 18 Sep 2024 13:18:30 GMT"
       },
       "generator": "bikeshed",
       "date": "18 September 2024",
@@ -11860,11 +11810,11 @@
       ],
       "crawled": "https://wicg.github.io/fenced-frame/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 28 Mar 2025 17:08:44 GMT"
+        "lastModified": "Mon, 31 Mar 2025 16:10:22 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 March 2025",
-      "revision": "b76ede831f4c9a246153f6aec82592b3afd2ca5b",
+      "date": "31 March 2025",
+      "revision": "27aaf88cef6ca8d8029c8be0feab2fd64e83da4e",
       "algorithms": "algorithms/fenced-frame.json",
       "links": "links/fenced-frame.json",
       "refs": "refs/fenced-frame.json",
@@ -14375,7 +14325,7 @@
       ],
       "crawled": "https://wicg.github.io/turtledove/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 28 Mar 2025 17:42:28 GMT"
+        "lastModified": "Fri, 28 Mar 2025 17:42:27 GMT"
       },
       "generator": "bikeshed",
       "date": "28 March 2025",
@@ -16293,7 +16243,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8610",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 28 Mar 2025 21:09:02 GMT"
+        "lastModified": "Fri, 28 Mar 2025 20:18:46 GMT"
       },
       "date": "28 March 2025",
       "links": "links/rfc8610.json",
@@ -17665,7 +17615,7 @@
       ],
       "crawled": "https://w3c.github.io/battery/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 24 Oct 2024 09:46:13 GMT"
+        "lastModified": "Thu, 24 Oct 2024 09:46:12 GMT"
       },
       "generator": "respec",
       "date": "24 October 2024",
@@ -17858,6 +17808,62 @@
       "dfns": "dfns/change-password-url.json",
       "headings": "headings/change-password-url.json",
       "ids": "ids/change-password-url.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/cid-1.0/",
+      "seriesComposition": "full",
+      "shortname": "cid-1.0",
+      "series": {
+        "shortname": "cid",
+        "currentSpecification": "cid-1.0",
+        "title": "Controlled Identifiers",
+        "shortTitle": "Controlled Identifiers",
+        "releaseUrl": "https://www.w3.org/TR/cid/",
+        "nightlyUrl": "https://w3c.github.io/cid/"
+      },
+      "seriesVersion": "1.0",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/2017/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/cid-1.0/",
+        "status": "Proposed Recommendation",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/cid/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/cid",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Controlled Identifiers v1.0",
+      "source": "w3c",
+      "shortTitle": "Controlled Identifiers v1.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/cid-1.0/",
+        "https://w3c.github.io/cid/"
+      ],
+      "crawled": "https://w3c.github.io/cid/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 03 Mar 2025 16:50:48 GMT"
+      },
+      "generator": "respec",
+      "date": "20 March 2025",
+      "algorithms": "algorithms/cid-1.0.json",
+      "links": "links/cid-1.0.json",
+      "refs": "refs/cid-1.0.json",
+      "dfns": "dfns/cid-1.0.json",
+      "headings": "headings/cid-1.0.json",
+      "ids": "ids/cid-1.0.json",
       "cddl": []
     },
     {
@@ -18179,6 +18185,68 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/content-editable/",
+      "seriesComposition": "full",
+      "shortname": "content-editable",
+      "series": {
+        "shortname": "content-editable",
+        "currentSpecification": "content-editable",
+        "title": "ContentEditable",
+        "shortTitle": "ContentEditable",
+        "releaseUrl": "https://www.w3.org/TR/content-editable/",
+        "nightlyUrl": "https://w3c.github.io/contentEditable/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Editing Working Group",
+          "url": "https://www.w3.org/groups/wg/webediting/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/content-editable/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/contentEditable/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/contentEditable",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "ContentEditable",
+      "source": "w3c",
+      "shortTitle": "ContentEditable",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "contenteditable"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/content-editable/",
+        "https://w3c.github.io/contentEditable/"
+      ],
+      "crawled": "https://w3c.github.io/contentEditable/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 12 Sep 2022 09:20:11 GMT"
+      },
+      "generator": "respec",
+      "date": "12 September 2022",
+      "links": "links/content-editable.json",
+      "refs": "refs/content-editable.json",
+      "dfns": "dfns/content-editable.json",
+      "headings": "headings/content-editable.json",
+      "ids": "ids/content-editable.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/core-aam-1.2/",
       "seriesComposition": "full",
       "shortname": "core-aam-1.2",
@@ -18492,7 +18560,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-2022/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "29 January 2025",
@@ -19159,7 +19227,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-box-4/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "18 January 2025",
@@ -19846,7 +19914,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-color-adjust-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "27 November 2024",
@@ -20053,7 +20121,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-conditional-4/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "19 March 2024",
@@ -20742,7 +20810,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-easing-2/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "6 February 2025",
@@ -21035,6 +21103,68 @@
       "dfns": "dfns/css-fonts-5.json",
       "headings": "headings/css-fonts-5.json",
       "ids": "ids/css-fonts-5.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/css-forms-1/",
+      "seriesComposition": "full",
+      "shortname": "css-forms-1",
+      "series": {
+        "shortname": "css-forms",
+        "currentSpecification": "css-forms-1",
+        "title": "CSS Form Control Styling",
+        "shortTitle": "CSS Form Control Styling",
+        "releaseUrl": "https://www.w3.org/TR/css-forms/",
+        "nightlyUrl": "https://drafts.csswg.org/css-forms/"
+      },
+      "seriesVersion": "1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-forms-1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-forms-1/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-forms-1/",
+          "https://w3c.github.io/csswg-drafts/css-forms/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-forms-1/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Form Control Styling Level 1",
+      "source": "w3c",
+      "shortTitle": "CSS Form Control Styling 1",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/css-forms-1/",
+        "https://drafts.csswg.org/css-forms-1/"
+      ],
+      "crawled": "https://drafts.csswg.org/css-forms-1/",
+      "crawlCacheInfo": {
+        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "28 March 2025",
+      "revision": "db06191d329430e778cde143113ca1d3f4b0ed61",
+      "links": "links/css-forms-1.json",
+      "refs": "refs/css-forms-1.json",
+      "css": "css/css-forms.json",
+      "dfns": "dfns/css-forms-1.json",
+      "headings": "headings/css-forms-1.json",
+      "ids": "ids/css-forms-1.json",
       "cddl": []
     },
     {
@@ -21433,7 +21563,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-images-3/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "18 March 2025",
@@ -21573,7 +21703,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-inline-3/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "28 March 2025",
@@ -21702,7 +21832,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-line-grid-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "26 July 2024",
@@ -22173,7 +22303,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-nav-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "29 July 2024",
@@ -22377,7 +22507,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-overflow-4/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "29 January 2025",
@@ -22981,7 +23111,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-regions-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -23044,7 +23174,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-rhythm-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "13 December 2024",
@@ -23180,7 +23310,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-ruby-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2024",
@@ -23388,7 +23518,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-scroll-snap-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "22 January 2025",
@@ -23667,7 +23797,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-shapes-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "4 February 2025",
@@ -24630,7 +24760,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-transitions-2/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "29 January 2025",
@@ -25464,7 +25594,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "24 March 2025",
@@ -25573,6 +25703,15 @@
         "repository": "https://github.com/w3c/csswg-drafts",
         "filename": "index.html"
       },
+      "title": "Cascading Style Sheets (CSS) Level 2",
+      "shortTitle": "CSS 2",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
       "release": {
         "url": "https://www.w3.org/TR/CSS2/",
         "status": "Recommendation",
@@ -25606,15 +25745,6 @@
         ],
         "filename": "Overview.html"
       },
-      "title": "Cascading Style Sheets (CSS) Level 2",
-      "shortTitle": "CSS 2",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
-        }
-      ],
       "source": "w3c",
       "categories": [
         "browser"
@@ -25986,6 +26116,62 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/did-1.1/",
+      "seriesComposition": "full",
+      "shortname": "did-1.1",
+      "series": {
+        "shortname": "did",
+        "currentSpecification": "did-1.1",
+        "title": "Decentralized Identifiers (DIDs)",
+        "shortTitle": "DIDs",
+        "releaseUrl": "https://www.w3.org/TR/did/",
+        "nightlyUrl": "https://w3c.github.io/did/"
+      },
+      "seriesVersion": "1.1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Decentralized Identifier Working Group",
+          "url": "https://www.w3.org/groups/wg/did/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/did-1.1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/did/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/did",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Decentralized Identifiers (DIDs) v1.1",
+      "source": "w3c",
+      "shortTitle": "DIDs",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/did-1.1/",
+        "https://w3c.github.io/did/"
+      ],
+      "crawled": "https://w3c.github.io/did/",
+      "crawlCacheInfo": {
+        "lastModified": "Sat, 29 Mar 2025 14:58:21 GMT"
+      },
+      "generator": "respec",
+      "date": "29 March 2025",
+      "algorithms": "algorithms/did-1.1.json",
+      "links": "links/did-1.1.json",
+      "refs": "refs/did-1.1.json",
+      "dfns": "dfns/did-1.1.json",
+      "headings": "headings/did-1.1.json",
+      "ids": "ids/did-1.1.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/DOM-Parsing/",
       "seriesComposition": "full",
       "shortname": "DOM-Parsing",
@@ -26071,7 +26257,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/dpub-aam-1.1/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Proposed Recommendation",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -26098,7 +26284,7 @@
       ],
       "crawled": "https://w3c.github.io/dpub-aam/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 27 Mar 2025 17:22:03 GMT"
+        "lastModified": "Thu, 27 Mar 2025 17:22:02 GMT"
       },
       "generator": "respec",
       "date": "27 March 2025",
@@ -26132,7 +26318,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/dpub-aria-1.1/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Proposed Recommendation",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -26963,11 +27149,11 @@
       ],
       "crawled": "https://w3c-fedid.github.io/FedCM/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 25 Mar 2025 14:26:30 GMT"
+        "lastModified": "Mon, 31 Mar 2025 15:56:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "25 March 2025",
-      "revision": "478d86c7bb814195fb1697e187e2c56a55ea8e8f",
+      "date": "31 March 2025",
+      "revision": "c9b041810562d0fbe00c88ff5f742818f71cbee0",
       "algorithms": "algorithms/fedcm-1.json",
       "links": "links/fedcm-1.json",
       "refs": "refs/fedcm-1.json",
@@ -27258,8 +27444,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "Privacy Interest Group",
-          "url": "https://www.w3.org/Privacy/IG/"
+          "name": "Privacy Working Group",
+          "url": "https://www.w3.org/groups/wg/privacy/"
         }
       ],
       "release": {
@@ -28254,7 +28440,7 @@
       "groups": [
         {
           "name": "Web Fonts Working Group",
-          "url": "https://www.w3.org/Fonts/WG/"
+          "url": "https://www.w3.org/groups/wg/webfonts/"
         }
       ],
       "release": {
@@ -28603,7 +28789,7 @@
       ],
       "crawled": "https://w3c.github.io/IntersectionObserver/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 27 Jun 2024 18:36:19 GMT"
+        "lastModified": "Thu, 27 Jun 2024 18:36:18 GMT"
       },
       "generator": "bikeshed",
       "date": "27 June 2024",
@@ -28629,6 +28815,7 @@
         "releaseUrl": "https://www.w3.org/TR/json-ld-api/",
         "nightlyUrl": "https://w3c.github.io/json-ld-api/"
       },
+      "seriesVersion": "1.1",
       "categories": [],
       "organization": "W3C",
       "groups": [
@@ -28685,6 +28872,7 @@
         "releaseUrl": "https://www.w3.org/TR/json-ld-framing/",
         "nightlyUrl": "https://w3c.github.io/json-ld-framing/"
       },
+      "seriesVersion": "1.1",
       "categories": [],
       "organization": "W3C",
       "groups": [
@@ -29144,7 +29332,7 @@
       ],
       "crawled": "https://w3c.github.io/mathml/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 28 Mar 2025 02:30:06 GMT"
+        "lastModified": "Fri, 28 Mar 2025 02:30:05 GMT"
       },
       "generator": "respec",
       "date": "28 March 2025",
@@ -29654,7 +29842,7 @@
       ],
       "crawled": "https://drafts.csswg.org/mediaqueries-3/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "date": "14 May 2024",
       "links": "links/mediaqueries-3.json",
@@ -30385,7 +30573,7 @@
       ],
       "crawled": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 23 Jul 2024 08:09:25 GMT"
+        "lastModified": "Tue, 23 Jul 2024 08:09:24 GMT"
       },
       "generator": "respec",
       "date": "23 July 2024",
@@ -31624,7 +31812,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/png-3/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -33520,7 +33708,7 @@
       ],
       "crawled": "https://drafts.csswg.org/selectors-3/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "date": "30 January 2018",
       "links": "links/selectors-3.json",
@@ -33587,7 +33775,7 @@
       ],
       "crawled": "https://drafts.csswg.org/selectors-4/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "24 March 2025",
@@ -33729,6 +33917,118 @@
       "dfns": "dfns/service-workers.json",
       "headings": "headings/service-workers.json",
       "ids": "ids/service-workers.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/shacl12-core/",
+      "seriesComposition": "full",
+      "shortname": "shacl12-core",
+      "series": {
+        "shortname": "shacl-core",
+        "currentSpecification": "shacl12-core",
+        "title": "SHACL Core",
+        "shortTitle": "SHACL Core",
+        "releaseUrl": "https://www.w3.org/TR/shacl-core/",
+        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-core/"
+      },
+      "seriesVersion": "1.2",
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Data Shapes Working Group",
+          "url": "https://www.w3.org/groups/wg/data-shapes/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/shacl12-core/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/data-shapes/shacl12-core/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/data-shapes",
+        "sourcePath": "shacl12-core/index.html",
+        "filename": "index.html"
+      },
+      "title": "SHACL 1.2 Core",
+      "source": "w3c",
+      "shortTitle": "SHACL 1.2 Core",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/shacl12-core/",
+        "https://w3c.github.io/data-shapes/shacl12-core/"
+      ],
+      "crawled": "https://w3c.github.io/data-shapes/shacl12-core/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 19 Mar 2025 09:47:34 GMT"
+      },
+      "generator": "respec",
+      "date": "19 March 2025",
+      "algorithms": "algorithms/shacl12-core.json",
+      "links": "links/shacl12-core.json",
+      "refs": "refs/shacl12-core.json",
+      "dfns": "dfns/shacl12-core.json",
+      "headings": "headings/shacl12-core.json",
+      "ids": "ids/shacl12-core.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/shacl12-sparql/",
+      "seriesComposition": "full",
+      "shortname": "shacl12-sparql",
+      "series": {
+        "shortname": "shacl-sparql",
+        "currentSpecification": "shacl12-sparql",
+        "title": "SHACL SPARQL Extensions",
+        "shortTitle": "SHACL SPARQL Extensions",
+        "releaseUrl": "https://www.w3.org/TR/shacl-sparql/",
+        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-sparql/"
+      },
+      "seriesVersion": "1.2",
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Data Shapes Working Group",
+          "url": "https://www.w3.org/groups/wg/data-shapes/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/shacl12-sparql/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/data-shapes/shacl12-sparql/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/data-shapes",
+        "sourcePath": "shacl12-sparql/index.html",
+        "filename": "index.html"
+      },
+      "title": "SHACL 1.2 SPARQL Extensions",
+      "source": "w3c",
+      "shortTitle": "SHACL 1.2 SPARQL Extensions",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/shacl12-sparql/",
+        "https://w3c.github.io/data-shapes/shacl12-sparql/"
+      ],
+      "crawled": "https://w3c.github.io/data-shapes/shacl12-sparql/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 19 Mar 2025 09:47:34 GMT"
+      },
+      "generator": "respec",
+      "date": "19 March 2025",
+      "algorithms": "algorithms/shacl12-sparql.json",
+      "links": "links/shacl12-sparql.json",
+      "refs": "refs/shacl12-sparql.json",
+      "dfns": "dfns/shacl12-sparql.json",
+      "headings": "headings/shacl12-sparql.json",
+      "ids": "ids/shacl12-sparql.json",
       "cddl": []
     },
     {
@@ -33993,7 +34293,7 @@
       ],
       "crawled": "https://w3c.github.io/sparql-query/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 28 Feb 2025 12:02:36 GMT"
+        "lastModified": "Fri, 28 Feb 2025 12:02:35 GMT"
       },
       "generator": "respec",
       "date": "28 February 2025",
@@ -35414,7 +35714,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vc-data-integrity/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Proposed Recommendation",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -35470,7 +35770,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vc-data-model-2.0/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Proposed Recommendation",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -35555,7 +35855,7 @@
       ],
       "crawled": "https://w3c.github.io/vibration/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 18:39:30 GMT"
+        "lastModified": "Wed, 12 Feb 2025 18:39:29 GMT"
       },
       "generator": "respec",
       "date": "12 February 2025",
@@ -38006,7 +38306,7 @@
       ],
       "crawled": "https://w3c.github.io/webrtc-stats/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 28 Mar 2025 10:01:45 GMT"
+        "lastModified": "Fri, 28 Mar 2025 10:01:44 GMT"
       },
       "generator": "respec",
       "date": "28 March 2025",
@@ -39029,7 +39329,7 @@
       "groups": [
         {
           "name": "Web Fonts Working Group",
-          "url": "https://www.w3.org/Fonts/WG/"
+          "url": "https://www.w3.org/groups/wg/webfonts/"
         }
       ],
       "release": {
@@ -39086,7 +39386,7 @@
       "groups": [
         {
           "name": "Web Fonts Working Group",
-          "url": "https://www.w3.org/Fonts/WG/"
+          "url": "https://www.w3.org/groups/wg/webfonts/"
         }
       ],
       "release": {
@@ -39286,7 +39586,7 @@
       ],
       "crawled": "https://drafts.csswg.org/selectors-nonelement-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 29 Mar 2025 14:42:50 GMT"
+        "lastModified": "Sat, 29 Mar 2025 14:42:49 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
