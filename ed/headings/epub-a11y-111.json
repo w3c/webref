@@ -1,0 +1,481 @@
+{
+  "spec": {
+    "title": "EPUB Accessibility 1.1.1",
+    "url": "https://w3c.github.io/epub-specs/epub34/a11y/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#title",
+      "level": 1,
+      "title": "EPUB Accessibility 1.1.1"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#subtitle",
+      "level": 2,
+      "title": "Conformance and Discoverability Requirements for EPUB publications"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "sec-overview",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "1.1"
+    },
+    {
+      "id": "sec-success-techniques",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-success-techniques",
+      "level": 3,
+      "title": "Success techniques",
+      "number": "1.2"
+    },
+    {
+      "id": "sec-sc-i18n",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-sc-i18n",
+      "level": 4,
+      "title": "Internationalization",
+      "number": "1.2.1"
+    },
+    {
+      "id": "sec-application",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-application",
+      "level": 3,
+      "title": "Application to older versions",
+      "number": "1.3"
+    },
+    {
+      "id": "sec-terminology",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.4"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "number": "1.5"
+    },
+    {
+      "id": "sec-discovery",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-discovery",
+      "level": 2,
+      "title": "Discoverability",
+      "number": "2"
+    },
+    {
+      "id": "sec-disc-intro",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-disc-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "2.1"
+    },
+    {
+      "id": "sec-disc-package",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-disc-package",
+      "level": 3,
+      "title": "Package metadata",
+      "number": "2.2"
+    },
+    {
+      "id": "sec-disc-linked-rec",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-disc-linked-rec",
+      "level": 3,
+      "title": "Linked metadata records",
+      "number": "2.3"
+    },
+    {
+      "id": "sec-accessible-pubs",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-accessible-pubs",
+      "level": 2,
+      "title": "Accessible publications",
+      "number": "3"
+    },
+    {
+      "id": "sec-accessible-pubs-intro",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-accessible-pubs-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "3.1"
+    },
+    {
+      "id": "sec-rel-wcag",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-rel-wcag",
+      "level": 3,
+      "title": "Relationship to WCAG",
+      "number": "3.2"
+    },
+    {
+      "id": "sec-acc-pub-wcag",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-acc-pub-wcag",
+      "level": 3,
+      "title": "WCAG conformance",
+      "number": "3.3"
+    },
+    {
+      "id": "sec-wcag-conf",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-wcag-conf",
+      "level": 4,
+      "title": "WCAG conformance requirements",
+      "number": "3.3.1"
+    },
+    {
+      "id": "sec-wcag-eval",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-wcag-eval",
+      "level": 4,
+      "title": "Evaluating WCAG conformance",
+      "number": "3.3.2"
+    },
+    {
+      "id": "sec-wcag-eval-page-pub",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-wcag-eval-page-pub",
+      "level": 5,
+      "title": "Page and publication",
+      "number": "3.3.2.1"
+    },
+    {
+      "id": "sec-wcag-application",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-wcag-application",
+      "level": 5,
+      "title": "Applying the conformance criteria",
+      "number": "3.3.2.2"
+    },
+    {
+      "id": "sec-epub-req",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-epub-req",
+      "level": 3,
+      "title": "EPUB requirements",
+      "number": "3.4"
+    },
+    {
+      "id": "sec-page-nav",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-page-nav",
+      "level": 4,
+      "title": "Page navigation",
+      "number": "3.4.1"
+    },
+    {
+      "id": "sec-page-nav-overview",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-page-nav-overview",
+      "level": 5,
+      "title": "Overview",
+      "number": "3.4.1.1"
+    },
+    {
+      "id": "sec-page-nav-applicability",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-page-nav-applicability",
+      "level": 5,
+      "title": "Applicability",
+      "number": "3.4.1.2"
+    },
+    {
+      "id": "sec-page-nav-obj",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-page-nav-obj",
+      "level": 5,
+      "title": "Objectives",
+      "number": "3.4.1.3"
+    },
+    {
+      "id": "sec-page-src",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-page-src",
+      "level": 6,
+      "title": "Pagination source",
+      "number": "3.4.1.3.1"
+    },
+    {
+      "id": "sec-page-list",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-page-list",
+      "level": 6,
+      "title": "Page list",
+      "number": "3.4.1.3.2"
+    },
+    {
+      "id": "sec-page-breaks",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-page-breaks",
+      "level": 6,
+      "title": "Page breaks",
+      "number": "3.4.1.3.3"
+    },
+    {
+      "id": "sec-sync-text-audio",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-sync-text-audio",
+      "level": 4,
+      "title": "Synchronized text-audio playback",
+      "number": "3.4.2"
+    },
+    {
+      "id": "sec-sync-overview",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-sync-overview",
+      "level": 5,
+      "title": "Overview",
+      "number": "3.4.2.1"
+    },
+    {
+      "id": "sec-sync-applicability",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-sync-applicability",
+      "level": 5,
+      "title": "Applicability",
+      "number": "3.4.2.2"
+    },
+    {
+      "id": "sec-sync-obj",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-sync-obj",
+      "level": 5,
+      "title": "Objectives",
+      "number": "3.4.2.3"
+    },
+    {
+      "id": "sec-sync-complete",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-sync-complete",
+      "level": 6,
+      "title": "Completeness",
+      "number": "3.4.2.3.1"
+    },
+    {
+      "id": "sec-sync-order",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-sync-order",
+      "level": 6,
+      "title": "Reading order",
+      "number": "3.4.2.3.2"
+    },
+    {
+      "id": "sec-sync-skippability",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-sync-skippability",
+      "level": 6,
+      "title": "Skippability",
+      "number": "3.4.2.3.3"
+    },
+    {
+      "id": "sec-sync-escapability",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-sync-escapability",
+      "level": 6,
+      "title": "Escapability",
+      "number": "3.4.2.3.4"
+    },
+    {
+      "id": "sec-sync-navdoc",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-sync-navdoc",
+      "level": 6,
+      "title": "Navigation document",
+      "number": "3.4.2.3.5"
+    },
+    {
+      "id": "sec-conf-reporting",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-conf-reporting",
+      "level": 3,
+      "title": "Conformance reporting",
+      "number": "3.5"
+    },
+    {
+      "id": "sec-conf-reporting-intro",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-conf-reporting-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "3.5.1"
+    },
+    {
+      "id": "sec-conf-reporting-pub",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-conf-reporting-pub",
+      "level": 4,
+      "title": "Publication conformance",
+      "number": "3.5.2"
+    },
+    {
+      "id": "other-conformance-claims",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#other-conformance-claims",
+      "level": 5,
+      "title": "Other conformance claims",
+      "number": "3.5.2.1"
+    },
+    {
+      "id": "sec-conf-reporting-eval",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-conf-reporting-eval",
+      "level": 4,
+      "title": "Evaluator information",
+      "number": "3.5.3"
+    },
+    {
+      "id": "sec-evaluator-name",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-evaluator-name",
+      "level": 5,
+      "title": "Evaluator name",
+      "number": "3.5.3.1"
+    },
+    {
+      "id": "sec-evaluation-date",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-evaluation-date",
+      "level": 5,
+      "title": "Evaluation date",
+      "number": "3.5.3.2"
+    },
+    {
+      "id": "sec-evaluator-credentials",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-evaluator-credentials",
+      "level": 5,
+      "title": "Evaluator credentials",
+      "number": "3.5.3.3"
+    },
+    {
+      "id": "sec-evaluator-report",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-evaluator-report",
+      "level": 5,
+      "title": "Evaluator report",
+      "number": "3.5.3.4"
+    },
+    {
+      "id": "sec-conf-reporting-re-eval",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-conf-reporting-re-eval",
+      "level": 4,
+      "title": "Re-evaluating conformance",
+      "number": "3.5.4"
+    },
+    {
+      "id": "sec-optimized-pubs",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-optimized-pubs",
+      "level": 2,
+      "title": "Optimized publications",
+      "number": "4"
+    },
+    {
+      "id": "sec-distribution",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#sec-distribution",
+      "level": 2,
+      "title": "Distribution",
+      "number": "5"
+    },
+    {
+      "id": "privacy",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#privacy",
+      "level": 2,
+      "title": "Privacy and security",
+      "number": "6"
+    },
+    {
+      "id": "app-a11y-vocab",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#app-a11y-vocab",
+      "level": 2,
+      "title": "EPUB accessibility vocabulary",
+      "number": "A"
+    },
+    {
+      "id": "app-vocab-overview",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#app-vocab-overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "A.1"
+    },
+    {
+      "id": "app-vocab-about",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#app-vocab-about",
+      "level": 4,
+      "title": "About this vocabulary",
+      "number": "A.1.1"
+    },
+    {
+      "id": "app-vocab-ref",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#app-vocab-ref",
+      "level": 4,
+      "title": "Referencing",
+      "number": "A.1.2"
+    },
+    {
+      "id": "app-vocab-properties",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#app-vocab-properties",
+      "level": 4,
+      "title": "Certifier properties",
+      "number": "A.1.3"
+    },
+    {
+      "id": "certifiedBy",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#certifiedBy",
+      "level": 5,
+      "title": "certifiedBy",
+      "number": "A.1.3.1"
+    },
+    {
+      "id": "certifierCredential",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#certifierCredential",
+      "level": 5,
+      "title": "certifierCredential",
+      "number": "A.1.3.2"
+    },
+    {
+      "id": "certifierReport",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#certifierReport",
+      "level": 5,
+      "title": "certifierReport",
+      "number": "A.1.3.3"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#index",
+      "level": 2,
+      "title": "Index",
+      "number": "B"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "number": "B.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "number": "B.2"
+    },
+    {
+      "id": "change-log",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#change-log",
+      "level": 2,
+      "title": "Change log",
+      "number": "C"
+    },
+    {
+      "id": "ack",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "D"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#references",
+      "level": 2,
+      "title": "References",
+      "number": "E"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "E.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/epub-specs/epub34/a11y/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "E.2"
+    }
+  ]
+}
