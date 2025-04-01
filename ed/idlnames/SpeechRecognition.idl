@@ -15,7 +15,7 @@ interface SpeechRecognition : EventTarget {
     undefined start(MediaStreamTrack audioTrack);
     undefined stop();
     undefined abort();
-    static Promise<boolean> availableOnDevice(DOMString lang);
+    static Promise<AvailabilityStatus> availableOnDevice(DOMString lang);
     static Promise<boolean> installOnDevice(DOMString lang);
 
     // event methods

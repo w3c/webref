@@ -1,0 +1,95 @@
+{
+  "spec": {
+    "title": "Compression Dictionary Transport",
+    "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html"
+  },
+  "algorithms": [
+    {
+      "html": "The following algorithm is used to validate that a given String value is a\nvalid URL Pattern that does not use regular expressions and is for the same\nOrigin (<span><a href=\"https://rfc-editor.org/rfc/rfc9110#section-4.3.1\" class=\"relref\">Section 4.3.1</a> of [<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#HTTP\" class=\"cite xref\">HTTP</a>]</span>) as the dictionary. It will return TRUE\nfor a valid match pattern and FALSE for an invalid pattern that <span class=\"bcp14\">MUST NOT</span> be\nused:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1.1-3\" class=\"pilcrow\">¶</a>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p id=\"section-2.1.1-4.1.1\">Let MATCH be the value of \"match\" for the given dictionary.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1.1-4.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-2.1.1-4.2.1\">Let URL be the URL of the dictionary request.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1.1-4.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-2.1.1-4.3.1\">Let PATTERN be a URL pattern created by running the steps to create a\nURL pattern by setting input=MATCH, and baseURL=URL (see\n<span><a href=\"https://urlpattern.spec.whatwg.org/#url-pattern-create\" class=\"relref\">Part \"create\"</a> of [<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#URLPATTERN\" class=\"cite xref\">URLPATTERN</a>]</span>).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1.1-4.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-2.1.1-4.4.1\">If the result of running the \"has regexp groups\" steps for PATTERN returns\nTRUE then return FALSE (see <span><a href=\"https://urlpattern.spec.whatwg.org/#url-pattern-has-regexp-groups\" class=\"relref\">Part \"has regexp groups\"</a> of [<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#URLPATTERN\" class=\"cite xref\">URLPATTERN</a>]</span>).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1.1-4.4.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-2.1.1-4.5.1\">Return TRUE.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1.1-4.5.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "To see if an outbound request matches a given dictionary, the following\nalgorithm will return TRUE for a successful match and FALSE for no-match:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.2-2\" class=\"pilcrow\">¶</a>",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p id=\"section-2.2.2-3.1.1\">If the current client supports request destinations and a \"match-dest\"\nstring was provided with the dictionary:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.2-3.1.1\" class=\"pilcrow\">¶</a></p>\n<ul class=\"normal\">\n<li class=\"normal\" id=\"section-2.2.2-3.1.2.1\">\n                  <p id=\"section-2.2.2-3.1.2.1.1\">Let DEST be the value of \"match-dest\" for the given dictionary.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.2-3.1.2.1.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-2.2.2-3.1.2.2\">\n                  <p id=\"section-2.2.2-3.1.2.2.1\">Let REQUEST_DEST be the value of the destination for the current\n request.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.2-3.1.2.2.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-2.2.2-3.1.2.3\">\n                  <p id=\"section-2.2.2-3.1.2.3.1\">If DEST is not an empty list and if REQUEST_DEST is not in the DEST list\n of destinations, return FALSE<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.2-3.1.2.3.1\" class=\"pilcrow\">¶</a></p>\n</li>\n              </ul>"
+        },
+        {
+          "html": "<p id=\"section-2.2.2-3.2.1\">Let BASEURL be the URL of the dictionary request.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.2-3.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-2.2.2-3.3.1\">Let URL represent the URL of the outbound request being checked.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.2-3.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-2.2.2-3.4.1\">If the Origin of BASEURL and the Origin of URL are not the same, return\nFALSE (see <span><a href=\"https://rfc-editor.org/rfc/rfc9110#section-4.3.1\" class=\"relref\">Section 4.3.1</a> of [<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#HTTP\" class=\"cite xref\">HTTP</a>]</span>).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.2-3.4.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-2.2.2-3.5.1\">Let MATCH be the value of \"match\" for the given dictionary.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.2-3.5.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-2.2.2-3.6.1\">Let PATTERN be a URL pattern created by running the steps to create a\nURL pattern by setting input=MATCH, and baseURL=URL (see\n<span><a href=\"https://urlpattern.spec.whatwg.org/#url-pattern-create\" class=\"relref\">Part \"create\"</a> of [<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#URLPATTERN\" class=\"cite xref\">URLPATTERN</a>]</span>).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.2-3.6.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-2.2.2-3.7.1\">Return the result of running the \"match\" steps on PATTERN with input=URL\nwhich will check for a match between the request URL and the supplied \"match\"\nstring (see <span><a href=\"https://urlpattern.spec.whatwg.org/#url-pattern-match\" class=\"relref\">Part \"match\"</a> of [<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#URLPATTERN\" class=\"cite xref\">URLPATTERN</a>]</span>).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.2-3.7.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "When there are multiple dictionaries that match a given request URL, the client\n<span class=\"bcp14\">MUST</span> pick a single dictionary using the following rules:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.3-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<p id=\"section-2.2.3-2.1.1\">For clients that support request destinations, a dictionary that specifies\nand matches a \"match-dest\" takes precedence over a match that does not use a\ndestination.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.3-2.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-2.2.3-2.2.1\">Given equivalent destination precedence, the dictionary with the longest\n\"match\" takes precedence.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.3-2.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-2.2.3-2.3.1\">Given equivalent destination and match length precedence, the most recently\nfetched dictionary takes precedence.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.3-2.3.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm will return FALSE for cross-origin requests where\nprecautions such as not using dictionary-based compression should be\nconsidered:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9.3.3-3\" class=\"pilcrow\">¶</a>",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p id=\"section-9.3.3-4.1.1\">If there is no \"Sec-Fetch-Site\" request header then return TRUE.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9.3.3-4.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-9.3.3-4.2.1\">if the value of the \"Sec-Fetch-Site\" request header is \"same-origin\" then\nreturn TRUE.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9.3.3-4.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-9.3.3-4.3.1\">If there is no \"Sec-Fetch-Mode\" request header then return TRUE.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9.3.3-4.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-9.3.3-4.4.1\">If the value of the \"Sec-Fetch-Mode\" request header is \"navigate\" or\n\"same-origin\" then return TRUE.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9.3.3-4.4.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-9.3.3-4.5.1\">If the value of the \"Sec-Fetch-Mode\" request header is \"cors\":<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9.3.3-4.5.1\" class=\"pilcrow\">¶</a></p>\n<ul class=\"normal\">\n<li class=\"normal\" id=\"section-9.3.3-4.5.2.1\">\n                  <p id=\"section-9.3.3-4.5.2.1.1\">If the response does not include an \"Access-Control-Allow-Origin\" response header then return FALSE.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9.3.3-4.5.2.1.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-9.3.3-4.5.2.2\">\n                  <p id=\"section-9.3.3-4.5.2.2.1\">If the request does not include an \"Origin\" request header then return FALSE.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9.3.3-4.5.2.2.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-9.3.3-4.5.2.3\">\n                  <p id=\"section-9.3.3-4.5.2.3.1\">If the value of the \"Access-Control-Allow-Origin\" response header is \"*\" then return TRUE.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9.3.3-4.5.2.3.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-9.3.3-4.5.2.4\">\n                  <p id=\"section-9.3.3-4.5.2.4.1\">If the value of the \"Access-Control-Allow-Origin\" response header matches the value of the \"Origin\" request header then return TRUE.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9.3.3-4.5.2.4.1\" class=\"pilcrow\">¶</a></p>\n</li>\n              </ul>"
+        },
+        {
+          "html": "<p id=\"section-9.3.3-4.6.1\">return FALSE.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9.3.3-4.6.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    }
+  ]
+}

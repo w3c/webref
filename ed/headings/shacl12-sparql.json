@@ -1,0 +1,334 @@
+{
+  "spec": {
+    "title": "SHACL 1.2 SPARQL Extensions",
+    "url": "https://w3c.github.io/data-shapes/shacl12-sparql/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#title",
+      "level": 1,
+      "title": "SHACL 1.2 SPARQL Extensions"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.1"
+    },
+    {
+      "id": "conventions",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#conventions",
+      "level": 3,
+      "title": "Document Conventions",
+      "number": "1.2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "number": "1.3"
+    },
+    {
+      "id": "sparql-constraints",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-constraints",
+      "level": 2,
+      "title": "SPARQL-based Constraints",
+      "number": "2"
+    },
+    {
+      "id": "sparql-constraints-example",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-constraints-example",
+      "level": 3,
+      "title": "An Example SPARQL-based Constraint",
+      "number": "2.1"
+    },
+    {
+      "id": "sparql-constraints-syntax",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-constraints-syntax",
+      "level": 3,
+      "title": "Syntax of SPARQL-based Constraints",
+      "number": "2.2"
+    },
+    {
+      "id": "sparql-prefixes",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-prefixes",
+      "level": 4,
+      "title": "Prefix Declarations for SPARQL Queries",
+      "number": "2.2.1"
+    },
+    {
+      "id": "sparql-constraints-validation",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-constraints-validation",
+      "level": 3,
+      "title": "Validation with SPARQL-based Constraints",
+      "number": "2.3"
+    },
+    {
+      "id": "sparql-constraints-prebound",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-constraints-prebound",
+      "level": 4,
+      "title": "Pre-bound Variables in SPARQL Constraints ($this, $shapesGraph, $currentShape)",
+      "number": "2.3.1"
+    },
+    {
+      "id": "sparql-constraints-variables",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-constraints-variables",
+      "level": 4,
+      "title": "Mapping of Solution Bindings to Result Properties",
+      "number": "2.3.2"
+    },
+    {
+      "id": "sparql-constraint-components",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-constraint-components",
+      "level": 2,
+      "title": "SPARQL-based Constraint Components",
+      "number": "3"
+    },
+    {
+      "id": "an-example-sparql-based-constraint-component",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#an-example-sparql-based-constraint-component",
+      "level": 3,
+      "title": "An Example SPARQL-based Constraint Component",
+      "number": "3.1"
+    },
+    {
+      "id": "constraint-components-syntax",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#constraint-components-syntax",
+      "level": 3,
+      "title": "Syntax of SPARQL-based Constraint Components",
+      "number": "3.2"
+    },
+    {
+      "id": "constraint-components-parameters",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#constraint-components-parameters",
+      "level": 4,
+      "title": "Parameter Declarations (sh:parameter)",
+      "number": "3.2.1"
+    },
+    {
+      "id": "labelTemplate",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#labelTemplate",
+      "level": 4,
+      "title": "Label Templates (sh:labelTemplate)",
+      "number": "3.2.2"
+    },
+    {
+      "id": "constraint-components-validators",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#constraint-components-validators",
+      "level": 4,
+      "title": "Validators",
+      "number": "3.2.3"
+    },
+    {
+      "id": "SPARQLSelectValidator",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#SPARQLSelectValidator",
+      "level": 5,
+      "title": "SELECT-based Validators",
+      "number": "3.2.3.1"
+    },
+    {
+      "id": "SPARQLAskValidator",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#SPARQLAskValidator",
+      "level": 5,
+      "title": "ASK-based Validators",
+      "number": "3.2.3.2"
+    },
+    {
+      "id": "constraint-components-validation",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#constraint-components-validation",
+      "level": 3,
+      "title": "Validation with SPARQL-based Constraint Components",
+      "number": "3.3"
+    },
+    {
+      "id": "sparql-node-expressions",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-node-expressions",
+      "level": 2,
+      "title": "SPARQL-based Node Expressions",
+      "number": "4"
+    },
+    {
+      "id": "SelectExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#SelectExpression",
+      "level": 3,
+      "title": "Select Expressions",
+      "number": "4.1"
+    },
+    {
+      "id": "appendix",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#appendix",
+      "level": 1,
+      "title": "Appendix"
+    },
+    {
+      "id": "pre-binding",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#pre-binding",
+      "level": 2,
+      "title": "Pre-binding of Variables in SPARQL Queries",
+      "number": "A"
+    },
+    {
+      "id": "syntax-rules",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#syntax-rules",
+      "level": 2,
+      "title": "Summary of SHACL Syntax Rules",
+      "number": "B"
+    },
+    {
+      "id": "sparql-definitions-core",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-definitions-core",
+      "level": 2,
+      "title": "Potential SPARQL Definitions of SHACL Core Constraint Validators",
+      "number": "C"
+    },
+    {
+      "id": "sparql-definition-targetClass",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-definition-targetClass",
+      "level": 3,
+      "title": "sh:targetClass",
+      "number": "C.1"
+    },
+    {
+      "id": "sparql-definition-targetSubjectsOf",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-definition-targetSubjectsOf",
+      "level": 3,
+      "title": "sh:targetSubjectsOf",
+      "number": "C.2"
+    },
+    {
+      "id": "sparql-definition-targetObjectsOf",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-definition-targetObjectsOf",
+      "level": 3,
+      "title": "sh:targetObjectsOf",
+      "number": "C.3"
+    },
+    {
+      "id": "sparql-definition-class",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-definition-class",
+      "level": 3,
+      "title": "sh:class",
+      "number": "C.4"
+    },
+    {
+      "id": "sparql-definition-nodeKind",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-definition-nodeKind",
+      "level": 3,
+      "title": "sh:nodeKind",
+      "number": "C.5"
+    },
+    {
+      "id": "sparql-definition-minExclusive",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-definition-minExclusive",
+      "level": 3,
+      "title": "sh:minExclusive (etc)",
+      "number": "C.6"
+    },
+    {
+      "id": "sparql-definition-minLength",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-definition-minLength",
+      "level": 3,
+      "title": "sh:minLength",
+      "number": "C.7"
+    },
+    {
+      "id": "sparql-definition-maxLength",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-definition-maxLength",
+      "level": 3,
+      "title": "sh:maxLength",
+      "number": "C.8"
+    },
+    {
+      "id": "sparql-definition-pattern",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-definition-pattern",
+      "level": 3,
+      "title": "sh:pattern",
+      "number": "C.9"
+    },
+    {
+      "id": "sparql-definition-disjoint",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-definition-disjoint",
+      "level": 3,
+      "title": "sh:disjoint",
+      "number": "C.10"
+    },
+    {
+      "id": "sparql-definition-lessThan",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-definition-lessThan",
+      "level": 3,
+      "title": "sh:lessThan",
+      "number": "C.11"
+    },
+    {
+      "id": "sparql-definition-lessThanOrEquals",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-definition-lessThanOrEquals",
+      "level": 3,
+      "title": "sh:lessThanOrEquals",
+      "number": "C.12"
+    },
+    {
+      "id": "sparql-definition-in",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#sparql-definition-in",
+      "level": 3,
+      "title": "sh:in",
+      "number": "C.13"
+    },
+    {
+      "id": "security",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#security",
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "number": "D"
+    },
+    {
+      "id": "ack",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "E"
+    },
+    {
+      "id": "revision-history",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#revision-history",
+      "level": 2,
+      "title": "Revision History",
+      "number": "F"
+    },
+    {
+      "id": "changes-12",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#changes-12",
+      "level": 2,
+      "title": "Changes between SHACL 1.0 SPARQL and SHACL 1.2 SPARQL Extensions",
+      "number": "G"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#references",
+      "level": 2,
+      "title": "References",
+      "number": "H"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "H.1"
+    }
+  ]
+}

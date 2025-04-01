@@ -1,0 +1,777 @@
+{
+  "spec": {
+    "title": "Decentralized Identifiers (DIDs) v1.1",
+    "url": "https://w3c.github.io/did/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-conforming-did",
+      "href": "https://w3c.github.io/did/#dfn-conforming-did",
+      "linkingText": [
+        "conforming DID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://w3c.github.io/did/#conformance",
+        "title": "Conformance",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-conforming-did-document",
+      "href": "https://w3c.github.io/did/#dfn-conforming-did-document",
+      "linkingText": [
+        "conforming DID document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://w3c.github.io/did/#conformance",
+        "title": "Conformance",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-conforming-producer",
+      "href": "https://w3c.github.io/did/#dfn-conforming-producer",
+      "linkingText": [
+        "conforming producer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://w3c.github.io/did/#conformance",
+        "title": "Conformance",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-conforming-consumer",
+      "href": "https://w3c.github.io/did/#dfn-conforming-consumer",
+      "linkingText": [
+        "conforming consumer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://w3c.github.io/did/#conformance",
+        "title": "Conformance",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-conforming-did-method",
+      "href": "https://w3c.github.io/did/#dfn-conforming-did-method",
+      "linkingText": [
+        "conforming DID method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://w3c.github.io/did/#conformance",
+        "title": "Conformance",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-amplification",
+      "href": "https://w3c.github.io/did/#dfn-amplification",
+      "linkingText": [
+        "amplification",
+        "amplification attack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-binding",
+      "href": "https://w3c.github.io/did/#dfn-binding",
+      "linkingText": [
+        "binding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-decentralized-identifiers",
+      "href": "https://w3c.github.io/did/#dfn-decentralized-identifiers",
+      "linkingText": [
+        "decentralized identifiers",
+        "DID",
+        "DIDs",
+        "decentralized identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-decentralized-public-key-infrastructure",
+      "href": "https://w3c.github.io/did/#dfn-decentralized-public-key-infrastructure",
+      "linkingText": [
+        "decentralized public key infrastructure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-did-controllers",
+      "href": "https://w3c.github.io/did/#dfn-did-controllers",
+      "linkingText": [
+        "did controllers",
+        "did controller(s)",
+        "DID controller"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-did-delegate",
+      "href": "https://w3c.github.io/did/#dfn-did-delegate",
+      "linkingText": [
+        "DID delegate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-did-documents",
+      "href": "https://w3c.github.io/did/#dfn-did-documents",
+      "linkingText": [
+        "DID documents",
+        "DID document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-did-fragments",
+      "href": "https://w3c.github.io/did/#dfn-did-fragments",
+      "linkingText": [
+        "DID fragments",
+        "DID fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-did-methods",
+      "href": "https://w3c.github.io/did/#dfn-did-methods",
+      "linkingText": [
+        "DID methods",
+        "DID method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-did-paths",
+      "href": "https://w3c.github.io/did/#dfn-did-paths",
+      "linkingText": [
+        "DID paths",
+        "DID path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-did-queries",
+      "href": "https://w3c.github.io/did/#dfn-did-queries",
+      "linkingText": [
+        "DID queries",
+        "DID query"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-did-resolution",
+      "href": "https://w3c.github.io/did/#dfn-did-resolution",
+      "linkingText": [
+        "DID resolution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-did-resolvers",
+      "href": "https://w3c.github.io/did/#dfn-did-resolvers",
+      "linkingText": [
+        "DID resolvers",
+        "DID resolver"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-did-schemes",
+      "href": "https://w3c.github.io/did/#dfn-did-schemes",
+      "linkingText": [
+        "DID schemes",
+        "DID method scheme",
+        "DID scheme"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-did-subjects",
+      "href": "https://w3c.github.io/did/#dfn-did-subjects",
+      "linkingText": [
+        "DID subjects",
+        "DID subject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-did-urls",
+      "href": "https://w3c.github.io/did/#dfn-did-urls",
+      "linkingText": [
+        "DID URLs",
+        "DID URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-did-url-dereferencing",
+      "href": "https://w3c.github.io/did/#dfn-did-url-dereferencing",
+      "linkingText": [
+        "DID URL dereferencing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-did-url-dereferencers",
+      "href": "https://w3c.github.io/did/#dfn-did-url-dereferencers",
+      "linkingText": [
+        "DID URL dereferencers",
+        "DID URL dereferencer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-distributed-ledger-technology",
+      "href": "https://w3c.github.io/did/#dfn-distributed-ledger-technology",
+      "linkingText": [
+        "distributed ledger technology",
+        "DLT",
+        "distributed ledger"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-public-key-description",
+      "href": "https://w3c.github.io/did/#dfn-public-key-description",
+      "linkingText": [
+        "public key description"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-resources",
+      "href": "https://w3c.github.io/did/#dfn-resources",
+      "linkingText": [
+        "resources",
+        "resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-representations",
+      "href": "https://w3c.github.io/did/#dfn-representations",
+      "linkingText": [
+        "representations",
+        "representation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-representation-specific-entry",
+      "href": "https://w3c.github.io/did/#dfn-representation-specific-entry",
+      "linkingText": [
+        "representation-specific entry",
+        "non-representation-specific entry",
+        "representation-specific entries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-service",
+      "href": "https://w3c.github.io/did/#dfn-service",
+      "linkingText": [
+        "service",
+        "services"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-service-endpoints",
+      "href": "https://w3c.github.io/did/#dfn-service-endpoints",
+      "linkingText": [
+        "service endpoints",
+        "service endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-uri",
+      "href": "https://w3c.github.io/did/#dfn-uri",
+      "linkingText": [
+        "URI",
+        "URIs",
+        "Uniform Resource Identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-verifiable-data-registry",
+      "href": "https://w3c.github.io/did/#dfn-verifiable-data-registry",
+      "linkingText": [
+        "verifiable data registry",
+        "verifiable data registries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-verifiable-timestamp",
+      "href": "https://w3c.github.io/did/#dfn-verifiable-timestamp",
+      "linkingText": [
+        "verifiable timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/did/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-datetime",
+      "href": "https://w3c.github.io/did/#dfn-datetime",
+      "linkingText": [
+        "datetime"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "data-model",
+        "href": "https://w3c.github.io/did/#data-model",
+        "title": "Data Model",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-integer",
+      "href": "https://w3c.github.io/did/#dfn-integer",
+      "linkingText": [
+        "integer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "data-model",
+        "href": "https://w3c.github.io/did/#data-model",
+        "title": "Data Model",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-double",
+      "href": "https://w3c.github.io/did/#dfn-double",
+      "linkingText": [
+        "double"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "data-model",
+        "href": "https://w3c.github.io/did/#data-model",
+        "title": "Data Model",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-production",
+      "href": "https://w3c.github.io/did/#dfn-production",
+      "linkingText": [
+        "production"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "representations",
+        "href": "https://w3c.github.io/did/#representations",
+        "title": "Representations",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-consumption",
+      "href": "https://w3c.github.io/did/#dfn-consumption",
+      "linkingText": [
+        "consumption"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "representations",
+        "href": "https://w3c.github.io/did/#representations",
+        "title": "Representations",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-context",
+      "href": "https://w3c.github.io/did/#dfn-context",
+      "linkingText": [
+        "@context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "json-ld",
+        "href": "https://w3c.github.io/did/#json-ld",
+        "title": "JSON-LD",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    }
+  ]
+}

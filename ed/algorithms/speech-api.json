@@ -42,16 +42,82 @@
       ]
     },
     {
-      "name": "start session algorithm",
-      "href": "https://webaudio.github.io/web-speech-api/#start-session-algorithm",
-      "html": "When the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"start-session-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">start session algorithm</dfn> with <var>requestMicrophonePermission</var> is invoked, the user agent MUST run the\nfollowing steps:",
+      "name": "SpeechRecognition/availableOnDevice(lang)",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-availableondevice",
+      "html": "When invoked, run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-speech-api/#on-device-availability-algorithm\" id=\"ref-for-on-device-availability-algorithm\">on-device availability algorithm</a> with <var>lang</var> and <var>promise</var>. If it returns an exception, throw it and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "SpeechRecognition/installOnDevice(lang)",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-installondevice",
+      "html": "When invoked, run these steps:",
       "rationale": "if",
       "steps": [
         {
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object\">current settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is NOT <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognition-started-slot\" id=\"ref-for-dom-speechrecognition-started-slot\">[[started]]</a></code> is <code>true</code> and no <a class=\"idl-code\" data-link-type=\"event\" href=\"https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-error\" id=\"ref-for-eventdef-speechrecognition-error②\">error</a> or <a class=\"idl-code\" data-link-type=\"event\" href=\"https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-end\" id=\"ref-for-eventdef-speechrecognition-end③\">end</a> event\n have fired, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>lang</var> is not a valid <a data-link-type=\"biblio\" href=\"https://webaudio.github.io/web-speech-api/#biblio-bcp47\" title=\"Tags for Identifying Languages\">[BCP47]</a> language tag, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror\">SyntaxError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If the on-device speech recognition language pack for <var>lang</var> is unsupported, return a resolved <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise④\">Promise</a></code> with false and skip the rest of these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>Initiate the download of the on-device speech recognition language for <var>lang</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">Queue a task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-registration-task-queue\" id=\"ref-for-dfn-service-worker-registration-task-queue\">task queue</a> to run the following step:</p>\n       <ul>\n        <li data-md=\"\">\n         <p>If the download succeeds, resolve <var>promise</var> with <code>true</code>, otherwise resolve it with <code>false</code>.</p>\n         \n       </li></ul>"
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "on-device availability algorithm",
+      "href": "https://webaudio.github.io/web-speech-api/#on-device-availability-algorithm",
+      "html": "When the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"on-device-availability-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">on-device availability algorithm</dfn> with <var>lang</var> and <var>promise</var> is invoked, the user agent MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object①\">current settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated Document</a> is NOT <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active①\">fully active</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>lang</var> is not a valid <a data-link-type=\"biblio\" href=\"https://webaudio.github.io/web-speech-api/#biblio-bcp47\" title=\"Tags for Identifying Languages\">[BCP47]</a> language tag, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror①\">SyntaxError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Determine the availability status for <var>lang</var>:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>If the on-device speech recognition language pack for <var>lang</var> is unsupported, let <var>status</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-availabilitystatus-unavailable\" id=\"ref-for-dom-availabilitystatus-unavailable\">unavailable</a></code>.</p>\n      </li><li data-md=\"\">\n       <p>Else if the on-device speech recognition language pack for <var>lang</var> is supported but not installed, let <var>status</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-availabilitystatus-downloadable\" id=\"ref-for-dom-availabilitystatus-downloadable\">downloadable</a></code>.</p>\n      </li><li data-md=\"\">\n       <p>Else if the on-device speech recognition language pack for <var>lang</var> is downloading, let <var>status</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-availabilitystatus-downloading\" id=\"ref-for-dom-availabilitystatus-downloading\">downloading</a></code>.</p>\n      </li><li data-md=\"\">\n       <p>Else if the on-device speech recognition language pack for <var>lang</var> is installed, let <var>status</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-availabilitystatus-available\" id=\"ref-for-dom-availabilitystatus-available\">available</a></code>.</p>\n     </li></ul>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">Queue a task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-registration-task-queue\" id=\"ref-for-dfn-service-worker-registration-task-queue①\">task queue</a> to run the following step:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>Resolve <var>promise</var> with <var>status</var>.</p>\n     </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "start session algorithm",
+      "href": "https://webaudio.github.io/web-speech-api/#start-session-algorithm",
+      "html": "When the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"start-session-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">start session algorithm</dfn> with <var>requestMicrophonePermission</var> is invoked, the user agent MUST run the\nfollowing steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object②\">current settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window②\">associated Document</a> is NOT <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active②\">fully active</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognition-started-slot\" id=\"ref-for-dom-speechrecognition-started-slot\">[[started]]</a></code> is <code>true</code> and no <a class=\"idl-code\" data-link-type=\"event\" href=\"https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-error\" id=\"ref-for-eventdef-speechrecognition-error②\">error</a> or <a class=\"idl-code\" data-link-type=\"event\" href=\"https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-end\" id=\"ref-for-eventdef-speechrecognition-end③\">end</a> event\n have fired, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
           "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognition-started-slot\" id=\"ref-for-dom-speechrecognition-started-slot①\">[[started]]</a></code> to <code>true</code>.</p>"
