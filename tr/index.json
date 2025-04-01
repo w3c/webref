@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-03-31T01:35:17.367Z",
+  "date": "2025-04-01T01:51:19.448Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -19,6 +19,7 @@
       "console",
       "partitioned-cookies",
       "client-hint-reliability",
+      "compression-dictionary",
       "no-vary-search",
       "rfc6265bis",
       "dom",
@@ -30,7 +31,6 @@
       "css-conditional-values-1",
       "css-env-1",
       "css-extensions-1",
-      "css-forms-1",
       "css-gaps-1",
       "css-gcpm-4",
       "css-images-5",
@@ -152,7 +152,6 @@
       "urlpattern",
       "login-status",
       "at-driver",
-      "contentEditable",
       "execCommand",
       "element-timing",
       "gamepad-extensions",
@@ -329,11 +328,13 @@
       "beacon",
       "capture-handle-identity",
       "change-password-url",
+      "cid-1.0",
       "clear-site-data",
       "clipboard-apis",
       "compositing-1",
       "compute-pressure",
       "contact-picker",
+      "content-editable",
       "core-aam-1.2",
       "credential-management-1",
       "csp-embedded-enforcement",
@@ -376,6 +377,7 @@
       "css-font-loading-3",
       "css-fonts-4",
       "css-fonts-5",
+      "css-forms-1",
       "css-gcpm-3",
       "css-grid-1",
       "css-grid-2",
@@ -448,6 +450,7 @@
       "cssom-view-1",
       "device-memory-1",
       "device-posture",
+      "did-1.1",
       "DOM-Parsing",
       "dpub-aam-1.1",
       "dpub-aria-1.1",
@@ -573,6 +576,8 @@
       "selectors-4",
       "server-timing",
       "service-workers",
+      "shacl12-core",
+      "shacl12-sparql",
       "sparql12-entailment",
       "sparql12-federated-query",
       "sparql12-graph-store-protocol",
@@ -684,10 +689,10 @@
     ]
   },
   "stats": {
-    "crawled": 343,
+    "crawled": 349,
     "errors": 0
   },
-  "crawler": "reffy-18.4.2",
+  "crawler": "reffy-18.4.5",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -733,7 +738,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "31 March 2025",
+      "date": "1 April 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -1547,6 +1552,62 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/cid-1.0/",
+      "seriesComposition": "full",
+      "shortname": "cid-1.0",
+      "series": {
+        "shortname": "cid",
+        "currentSpecification": "cid-1.0",
+        "title": "Controlled Identifiers",
+        "shortTitle": "Controlled Identifiers",
+        "releaseUrl": "https://www.w3.org/TR/cid/",
+        "nightlyUrl": "https://w3c.github.io/cid/"
+      },
+      "seriesVersion": "1.0",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/2017/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/cid-1.0/",
+        "status": "Proposed Recommendation",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/cid/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/cid",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Controlled Identifiers v1.0",
+      "source": "w3c",
+      "shortTitle": "Controlled Identifiers v1.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/cid-1.0/",
+        "https://w3c.github.io/cid/"
+      ],
+      "crawled": "https://www.w3.org/TR/cid-1.0/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 10 Mar 2025 15:20:55 GMT"
+      },
+      "generator": "respec",
+      "date": "20 March 2025",
+      "algorithms": "algorithms/cid-1.0.json",
+      "links": "links/cid-1.0.json",
+      "refs": "refs/cid-1.0.json",
+      "dfns": "dfns/cid-1.0.json",
+      "headings": "headings/cid-1.0.json",
+      "ids": "ids/cid-1.0.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/clear-site-data/",
       "seriesComposition": "full",
       "shortname": "clear-site-data",
@@ -1862,6 +1923,68 @@
       "dfns": "dfns/contact-picker.json",
       "headings": "headings/contact-picker.json",
       "ids": "ids/contact-picker.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/content-editable/",
+      "seriesComposition": "full",
+      "shortname": "content-editable",
+      "series": {
+        "shortname": "content-editable",
+        "currentSpecification": "content-editable",
+        "title": "ContentEditable",
+        "shortTitle": "ContentEditable",
+        "releaseUrl": "https://www.w3.org/TR/content-editable/",
+        "nightlyUrl": "https://w3c.github.io/contentEditable/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Editing Working Group",
+          "url": "https://www.w3.org/groups/wg/webediting/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/content-editable/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/contentEditable/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/contentEditable",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "ContentEditable",
+      "source": "w3c",
+      "shortTitle": "ContentEditable",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "contenteditable"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/content-editable/",
+        "https://w3c.github.io/contentEditable/"
+      ],
+      "crawled": "https://www.w3.org/TR/content-editable/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 24 Mar 2025 15:54:15 GMT"
+      },
+      "generator": "respec",
+      "date": "25 March 2025",
+      "links": "links/content-editable.json",
+      "refs": "refs/content-editable.json",
+      "dfns": "dfns/content-editable.json",
+      "headings": "headings/content-editable.json",
+      "ids": "ids/content-editable.json",
       "cddl": []
     },
     {
@@ -4719,6 +4842,68 @@
       "dfns": "dfns/css-fonts-5.json",
       "headings": "headings/css-fonts-5.json",
       "ids": "ids/css-fonts-5.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/css-forms-1/",
+      "seriesComposition": "full",
+      "shortname": "css-forms-1",
+      "series": {
+        "shortname": "css-forms",
+        "currentSpecification": "css-forms-1",
+        "title": "CSS Form Control Styling",
+        "shortTitle": "CSS Form Control Styling",
+        "releaseUrl": "https://www.w3.org/TR/css-forms/",
+        "nightlyUrl": "https://drafts.csswg.org/css-forms/"
+      },
+      "seriesVersion": "1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-forms-1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-forms-1/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-forms-1/",
+          "https://w3c.github.io/csswg-drafts/css-forms/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-forms-1/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Form Control Styling Level 1",
+      "source": "w3c",
+      "shortTitle": "CSS Form Control Styling 1",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/css-forms-1/",
+        "https://drafts.csswg.org/css-forms-1/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-forms-1/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 21 Mar 2025 20:06:18 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "25 March 2025",
+      "revision": "8d6a82ac4d94268ad46d8ae65c0db24ce06f5e2e",
+      "links": "links/css-forms-1.json",
+      "refs": "refs/css-forms-1.json",
+      "css": "css/css-forms.json",
+      "dfns": "dfns/css-forms-1.json",
+      "headings": "headings/css-forms-1.json",
+      "ids": "ids/css-forms-1.json",
       "cddl": []
     },
     {
@@ -9238,6 +9423,15 @@
         "repository": "https://github.com/w3c/csswg-drafts",
         "filename": "index.html"
       },
+      "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
+      "shortTitle": "CSS 2",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
       "release": {
         "url": "https://www.w3.org/TR/CSS2/",
         "status": "Recommendation",
@@ -9271,15 +9465,6 @@
         ],
         "filename": "Overview.html"
       },
-      "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
-      "shortTitle": "CSS 2",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
-        }
-      ],
       "source": "w3c",
       "categories": [
         "browser"
@@ -9647,6 +9832,62 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/did-1.1/",
+      "seriesComposition": "full",
+      "shortname": "did-1.1",
+      "series": {
+        "shortname": "did",
+        "currentSpecification": "did-1.1",
+        "title": "Decentralized Identifiers (DIDs)",
+        "shortTitle": "DIDs",
+        "releaseUrl": "https://www.w3.org/TR/did/",
+        "nightlyUrl": "https://w3c.github.io/did/"
+      },
+      "seriesVersion": "1.1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Decentralized Identifier Working Group",
+          "url": "https://www.w3.org/groups/wg/did/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/did-1.1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/did/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/did",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Decentralized Identifiers (DIDs) v1.1",
+      "source": "w3c",
+      "shortTitle": "DIDs",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/did-1.1/",
+        "https://w3c.github.io/did/"
+      ],
+      "crawled": "https://www.w3.org/TR/did-1.1/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 24 Jan 2025 13:52:33 GMT"
+      },
+      "generator": "respec",
+      "date": "28 January 2025",
+      "algorithms": "algorithms/did-1.1.json",
+      "links": "links/did-1.1.json",
+      "refs": "refs/did-1.1.json",
+      "dfns": "dfns/did-1.1.json",
+      "headings": "headings/did-1.1.json",
+      "ids": "ids/did-1.1.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/DOM-Parsing/",
       "seriesComposition": "full",
       "shortname": "DOM-Parsing",
@@ -9733,7 +9974,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/dpub-aam-1.1/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Proposed Recommendation",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -9793,7 +10034,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/dpub-aria-1.1/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Proposed Recommendation",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -10213,7 +10454,7 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-stream-mp4/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:39:25 GMT"
+        "lastModified": "Fri, 12 Jul 2024 12:26:25 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
@@ -10268,7 +10509,7 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-stream-registry/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:46:58 GMT"
+        "lastModified": "Fri, 12 Jul 2024 12:26:24 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
@@ -10921,8 +11162,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "Privacy Interest Group",
-          "url": "https://www.w3.org/Privacy/IG/"
+          "name": "Privacy Working Group",
+          "url": "https://www.w3.org/groups/wg/privacy/"
         }
       ],
       "release": {
@@ -11924,7 +12165,7 @@
       "groups": [
         {
           "name": "Web Fonts Working Group",
-          "url": "https://www.w3.org/Fonts/WG/"
+          "url": "https://www.w3.org/groups/wg/webfonts/"
         }
       ],
       "release": {
@@ -12300,6 +12541,7 @@
         "releaseUrl": "https://www.w3.org/TR/json-ld-api/",
         "nightlyUrl": "https://w3c.github.io/json-ld-api/"
       },
+      "seriesVersion": "1.1",
       "categories": [],
       "organization": "W3C",
       "groups": [
@@ -12356,6 +12598,7 @@
         "releaseUrl": "https://www.w3.org/TR/json-ld-framing/",
         "nightlyUrl": "https://w3c.github.io/json-ld-framing/"
       },
+      "seriesVersion": "1.1",
       "categories": [],
       "organization": "W3C",
       "groups": [
@@ -15312,7 +15555,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/png-3/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -17436,6 +17679,118 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/shacl12-core/",
+      "seriesComposition": "full",
+      "shortname": "shacl12-core",
+      "series": {
+        "shortname": "shacl-core",
+        "currentSpecification": "shacl12-core",
+        "title": "SHACL Core",
+        "shortTitle": "SHACL Core",
+        "releaseUrl": "https://www.w3.org/TR/shacl-core/",
+        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-core/"
+      },
+      "seriesVersion": "1.2",
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Data Shapes Working Group",
+          "url": "https://www.w3.org/groups/wg/data-shapes/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/shacl12-core/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/data-shapes/shacl12-core/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/data-shapes",
+        "sourcePath": "shacl12-core/index.html",
+        "filename": "index.html"
+      },
+      "title": "SHACL 1.2 Core",
+      "source": "w3c",
+      "shortTitle": "SHACL 1.2 Core",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/shacl12-core/",
+        "https://w3c.github.io/data-shapes/shacl12-core/"
+      ],
+      "crawled": "https://www.w3.org/TR/shacl12-core/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 17 Mar 2025 09:52:53 GMT"
+      },
+      "generator": "respec",
+      "date": "18 March 2025",
+      "algorithms": "algorithms/shacl12-core.json",
+      "links": "links/shacl12-core.json",
+      "refs": "refs/shacl12-core.json",
+      "dfns": "dfns/shacl12-core.json",
+      "headings": "headings/shacl12-core.json",
+      "ids": "ids/shacl12-core.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/shacl12-sparql/",
+      "seriesComposition": "full",
+      "shortname": "shacl12-sparql",
+      "series": {
+        "shortname": "shacl-sparql",
+        "currentSpecification": "shacl12-sparql",
+        "title": "SHACL SPARQL Extensions",
+        "shortTitle": "SHACL SPARQL Extensions",
+        "releaseUrl": "https://www.w3.org/TR/shacl-sparql/",
+        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-sparql/"
+      },
+      "seriesVersion": "1.2",
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Data Shapes Working Group",
+          "url": "https://www.w3.org/groups/wg/data-shapes/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/shacl12-sparql/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/data-shapes/shacl12-sparql/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/data-shapes",
+        "sourcePath": "shacl12-sparql/index.html",
+        "filename": "index.html"
+      },
+      "title": "SHACL 1.2 SPARQL Extensions",
+      "source": "w3c",
+      "shortTitle": "SHACL 1.2 SPARQL Extensions",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/shacl12-sparql/",
+        "https://w3c.github.io/data-shapes/shacl12-sparql/"
+      ],
+      "crawled": "https://www.w3.org/TR/shacl12-sparql/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 17 Mar 2025 07:58:39 GMT"
+      },
+      "generator": "respec",
+      "date": "18 March 2025",
+      "algorithms": "algorithms/shacl12-sparql.json",
+      "links": "links/shacl12-sparql.json",
+      "refs": "refs/shacl12-sparql.json",
+      "dfns": "dfns/shacl12-sparql.json",
+      "headings": "headings/shacl12-sparql.json",
+      "ids": "ids/shacl12-sparql.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/sparql12-entailment/",
       "seriesComposition": "full",
       "shortname": "sparql12-entailment",
@@ -19127,7 +19482,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vc-data-integrity/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Proposed Recommendation",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -19183,7 +19538,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vc-data-model-2.0/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Proposed Recommendation",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -22743,7 +23098,7 @@
       "groups": [
         {
           "name": "Web Fonts Working Group",
-          "url": "https://www.w3.org/Fonts/WG/"
+          "url": "https://www.w3.org/groups/wg/webfonts/"
         }
       ],
       "release": {
@@ -22800,7 +23155,7 @@
       "groups": [
         {
           "name": "Web Fonts Working Group",
-          "url": "https://www.w3.org/Fonts/WG/"
+          "url": "https://www.w3.org/groups/wg/webfonts/"
         }
       ],
       "release": {

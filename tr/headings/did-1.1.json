@@ -1,0 +1,777 @@
+{
+  "spec": {
+    "title": "Decentralized Identifiers (DIDs) v1.1",
+    "url": "https://www.w3.org/TR/did-1.1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/did-1.1/#title",
+      "level": 1,
+      "title": "Decentralized Identifiers (DIDs) v1.1"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://www.w3.org/TR/did-1.1/#subtitle",
+      "level": 2,
+      "title": "Core architecture, data model, and representations"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/did-1.1/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/did-1.1/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "a-simple-example",
+      "href": "https://www.w3.org/TR/did-1.1/#a-simple-example",
+      "level": 3,
+      "title": "A Simple Example",
+      "number": "1.1"
+    },
+    {
+      "id": "design-goals",
+      "href": "https://www.w3.org/TR/did-1.1/#design-goals",
+      "level": 3,
+      "title": "Design Goals",
+      "number": "1.2"
+    },
+    {
+      "id": "architecture-overview",
+      "href": "https://www.w3.org/TR/did-1.1/#architecture-overview",
+      "level": 3,
+      "title": "Architecture Overview",
+      "number": "1.3"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/did-1.1/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "number": "1.4"
+    },
+    {
+      "id": "terminology",
+      "href": "https://www.w3.org/TR/did-1.1/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "number": "2"
+    },
+    {
+      "id": "identifier",
+      "href": "https://www.w3.org/TR/did-1.1/#identifier",
+      "level": 2,
+      "title": "Identifier",
+      "number": "3"
+    },
+    {
+      "id": "did-syntax",
+      "href": "https://www.w3.org/TR/did-1.1/#did-syntax",
+      "level": 3,
+      "title": "DID Syntax",
+      "number": "3.1"
+    },
+    {
+      "id": "did-url-syntax",
+      "href": "https://www.w3.org/TR/did-1.1/#did-url-syntax",
+      "level": 3,
+      "title": "DID URL Syntax",
+      "number": "3.2"
+    },
+    {
+      "id": "path",
+      "href": "https://www.w3.org/TR/did-1.1/#path",
+      "level": 4,
+      "title": "Path"
+    },
+    {
+      "id": "query",
+      "href": "https://www.w3.org/TR/did-1.1/#query",
+      "level": 4,
+      "title": "Query"
+    },
+    {
+      "id": "fragment",
+      "href": "https://www.w3.org/TR/did-1.1/#fragment",
+      "level": 4,
+      "title": "Fragment"
+    },
+    {
+      "id": "did-parameters",
+      "href": "https://www.w3.org/TR/did-1.1/#did-parameters",
+      "level": 4,
+      "title": "DID Parameters",
+      "number": "3.2.1"
+    },
+    {
+      "id": "relative-did-urls",
+      "href": "https://www.w3.org/TR/did-1.1/#relative-did-urls",
+      "level": 4,
+      "title": "Relative DID URLs",
+      "number": "3.2.2"
+    },
+    {
+      "id": "data-model",
+      "href": "https://www.w3.org/TR/did-1.1/#data-model",
+      "level": 2,
+      "title": "Data Model",
+      "number": "4"
+    },
+    {
+      "id": "extensibility",
+      "href": "https://www.w3.org/TR/did-1.1/#extensibility",
+      "level": 3,
+      "title": "Extensibility",
+      "number": "4.1"
+    },
+    {
+      "id": "core-properties",
+      "href": "https://www.w3.org/TR/did-1.1/#core-properties",
+      "level": 2,
+      "title": "Core Properties",
+      "number": "5"
+    },
+    {
+      "id": "did-document-properties",
+      "href": "https://www.w3.org/TR/did-1.1/#did-document-properties",
+      "level": 3,
+      "title": "DID Document properties"
+    },
+    {
+      "id": "verification-method-properties",
+      "href": "https://www.w3.org/TR/did-1.1/#verification-method-properties",
+      "level": 3,
+      "title": "Verification Method properties"
+    },
+    {
+      "id": "service-properties",
+      "href": "https://www.w3.org/TR/did-1.1/#service-properties",
+      "level": 3,
+      "title": "Service properties"
+    },
+    {
+      "id": "identifiers",
+      "href": "https://www.w3.org/TR/did-1.1/#identifiers",
+      "level": 3,
+      "title": "Identifiers",
+      "number": "5.1"
+    },
+    {
+      "id": "did-subject",
+      "href": "https://www.w3.org/TR/did-1.1/#did-subject",
+      "level": 4,
+      "title": "DID Subject",
+      "number": "5.1.1"
+    },
+    {
+      "id": "did-controller",
+      "href": "https://www.w3.org/TR/did-1.1/#did-controller",
+      "level": 4,
+      "title": "DID Controller",
+      "number": "5.1.2"
+    },
+    {
+      "id": "also-known-as",
+      "href": "https://www.w3.org/TR/did-1.1/#also-known-as",
+      "level": 4,
+      "title": "Also Known As",
+      "number": "5.1.3"
+    },
+    {
+      "id": "verification-methods",
+      "href": "https://www.w3.org/TR/did-1.1/#verification-methods",
+      "level": 3,
+      "title": "Verification Methods",
+      "number": "5.2"
+    },
+    {
+      "id": "verification-material",
+      "href": "https://www.w3.org/TR/did-1.1/#verification-material",
+      "level": 4,
+      "title": "Verification Material",
+      "number": "5.2.1"
+    },
+    {
+      "id": "referring-to-verification-methods",
+      "href": "https://www.w3.org/TR/did-1.1/#referring-to-verification-methods",
+      "level": 4,
+      "title": "Referring to Verification Methods",
+      "number": "5.2.2"
+    },
+    {
+      "id": "verification-relationships",
+      "href": "https://www.w3.org/TR/did-1.1/#verification-relationships",
+      "level": 3,
+      "title": "Verification Relationships",
+      "number": "5.3"
+    },
+    {
+      "id": "authentication",
+      "href": "https://www.w3.org/TR/did-1.1/#authentication",
+      "level": 4,
+      "title": "Authentication",
+      "number": "5.3.1"
+    },
+    {
+      "id": "assertion",
+      "href": "https://www.w3.org/TR/did-1.1/#assertion",
+      "level": 4,
+      "title": "Assertion",
+      "number": "5.3.2"
+    },
+    {
+      "id": "key-agreement",
+      "href": "https://www.w3.org/TR/did-1.1/#key-agreement",
+      "level": 4,
+      "title": "Key Agreement",
+      "number": "5.3.3"
+    },
+    {
+      "id": "capability-invocation",
+      "href": "https://www.w3.org/TR/did-1.1/#capability-invocation",
+      "level": 4,
+      "title": "Capability Invocation",
+      "number": "5.3.4"
+    },
+    {
+      "id": "capability-delegation",
+      "href": "https://www.w3.org/TR/did-1.1/#capability-delegation",
+      "level": 4,
+      "title": "Capability Delegation",
+      "number": "5.3.5"
+    },
+    {
+      "id": "services",
+      "href": "https://www.w3.org/TR/did-1.1/#services",
+      "level": 3,
+      "title": "Services",
+      "number": "5.4"
+    },
+    {
+      "id": "representations",
+      "href": "https://www.w3.org/TR/did-1.1/#representations",
+      "level": 2,
+      "title": "Representations",
+      "number": "6"
+    },
+    {
+      "id": "production-and-consumption",
+      "href": "https://www.w3.org/TR/did-1.1/#production-and-consumption",
+      "level": 3,
+      "title": "Production and Consumption",
+      "number": "6.1"
+    },
+    {
+      "id": "json",
+      "href": "https://www.w3.org/TR/did-1.1/#json",
+      "level": 3,
+      "title": "JSON",
+      "number": "6.2"
+    },
+    {
+      "id": "production",
+      "href": "https://www.w3.org/TR/did-1.1/#production",
+      "level": 4,
+      "title": "Production",
+      "number": "6.2.1"
+    },
+    {
+      "id": "consumption",
+      "href": "https://www.w3.org/TR/did-1.1/#consumption",
+      "level": 4,
+      "title": "Consumption",
+      "number": "6.2.2"
+    },
+    {
+      "id": "json-ld",
+      "href": "https://www.w3.org/TR/did-1.1/#json-ld",
+      "level": 3,
+      "title": "JSON-LD",
+      "number": "6.3"
+    },
+    {
+      "id": "production-0",
+      "href": "https://www.w3.org/TR/did-1.1/#production-0",
+      "level": 4,
+      "title": "Production",
+      "number": "6.3.1"
+    },
+    {
+      "id": "consumption-0",
+      "href": "https://www.w3.org/TR/did-1.1/#consumption-0",
+      "level": 4,
+      "title": "Consumption",
+      "number": "6.3.2"
+    },
+    {
+      "id": "media-types",
+      "href": "https://www.w3.org/TR/did-1.1/#media-types",
+      "level": 3,
+      "title": "Media Types",
+      "number": "6.4"
+    },
+    {
+      "id": "media-type-precision",
+      "href": "https://www.w3.org/TR/did-1.1/#media-type-precision",
+      "level": 4,
+      "title": "Media Type Precision",
+      "number": "6.4.1"
+    },
+    {
+      "id": "methods",
+      "href": "https://www.w3.org/TR/did-1.1/#methods",
+      "level": 2,
+      "title": "Methods",
+      "number": "7"
+    },
+    {
+      "id": "method-syntax",
+      "href": "https://www.w3.org/TR/did-1.1/#method-syntax",
+      "level": 3,
+      "title": "Method Syntax",
+      "number": "7.1"
+    },
+    {
+      "id": "method-operations",
+      "href": "https://www.w3.org/TR/did-1.1/#method-operations",
+      "level": 3,
+      "title": "Method Operations",
+      "number": "7.2"
+    },
+    {
+      "id": "security-requirements",
+      "href": "https://www.w3.org/TR/did-1.1/#security-requirements",
+      "level": 3,
+      "title": "Security Requirements",
+      "number": "7.3"
+    },
+    {
+      "id": "privacy-requirements",
+      "href": "https://www.w3.org/TR/did-1.1/#privacy-requirements",
+      "level": 3,
+      "title": "Privacy Requirements",
+      "number": "7.4"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://www.w3.org/TR/did-1.1/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "8"
+    },
+    {
+      "id": "choosing-did-resolvers",
+      "href": "https://www.w3.org/TR/did-1.1/#choosing-did-resolvers",
+      "level": 3,
+      "title": "Choosing DID Resolvers",
+      "number": "8.1"
+    },
+    {
+      "id": "proving-control-and-binding",
+      "href": "https://www.w3.org/TR/did-1.1/#proving-control-and-binding",
+      "level": 3,
+      "title": "Proving Control and Binding",
+      "number": "8.2"
+    },
+    {
+      "id": "proving-control-of-a-did-and-or-did-document",
+      "href": "https://www.w3.org/TR/did-1.1/#proving-control-of-a-did-and-or-did-document",
+      "level": 4,
+      "title": "Proving Control of a DID and/or DID Document"
+    },
+    {
+      "id": "binding-to-physical-identity",
+      "href": "https://www.w3.org/TR/did-1.1/#binding-to-physical-identity",
+      "level": 4,
+      "title": "Binding to Physical Identity"
+    },
+    {
+      "id": "authentication-service-endpoints",
+      "href": "https://www.w3.org/TR/did-1.1/#authentication-service-endpoints",
+      "level": 3,
+      "title": "Authentication Service Endpoints",
+      "number": "8.3"
+    },
+    {
+      "id": "non-repudiation",
+      "href": "https://www.w3.org/TR/did-1.1/#non-repudiation",
+      "level": 3,
+      "title": "Non-Repudiation",
+      "number": "8.4"
+    },
+    {
+      "id": "notification-of-did-document-changes",
+      "href": "https://www.w3.org/TR/did-1.1/#notification-of-did-document-changes",
+      "level": 3,
+      "title": "Notification of DID Document Changes",
+      "number": "8.5"
+    },
+    {
+      "id": "key-and-signature-expiration",
+      "href": "https://www.w3.org/TR/did-1.1/#key-and-signature-expiration",
+      "level": 3,
+      "title": "Key and Signature Expiration",
+      "number": "8.6"
+    },
+    {
+      "id": "verification-method-rotation",
+      "href": "https://www.w3.org/TR/did-1.1/#verification-method-rotation",
+      "level": 3,
+      "title": "Verification Method Rotation",
+      "number": "8.7"
+    },
+    {
+      "id": "verification-method-revocation",
+      "href": "https://www.w3.org/TR/did-1.1/#verification-method-revocation",
+      "level": 3,
+      "title": "Verification Method Revocation",
+      "number": "8.8"
+    },
+    {
+      "id": "revocation-semantics",
+      "href": "https://www.w3.org/TR/did-1.1/#revocation-semantics",
+      "level": 4,
+      "title": "Revocation Semantics"
+    },
+    {
+      "id": "revocation-in-trustless-systems",
+      "href": "https://www.w3.org/TR/did-1.1/#revocation-in-trustless-systems",
+      "level": 4,
+      "title": "Revocation in Trustless Systems"
+    },
+    {
+      "id": "did-recovery",
+      "href": "https://www.w3.org/TR/did-1.1/#did-recovery",
+      "level": 3,
+      "title": "DID Recovery",
+      "number": "8.9"
+    },
+    {
+      "id": "the-role-of-human-friendly-identifiers",
+      "href": "https://www.w3.org/TR/did-1.1/#the-role-of-human-friendly-identifiers",
+      "level": 3,
+      "title": "The Role of Human-Friendly Identifiers",
+      "number": "8.10"
+    },
+    {
+      "id": "dids-as-enhanced-urns",
+      "href": "https://www.w3.org/TR/did-1.1/#dids-as-enhanced-urns",
+      "level": 3,
+      "title": "DIDs as Enhanced URNs",
+      "number": "8.11"
+    },
+    {
+      "id": "immutability",
+      "href": "https://www.w3.org/TR/did-1.1/#immutability",
+      "level": 3,
+      "title": "Immutability",
+      "number": "8.12"
+    },
+    {
+      "id": "encrypted-data-in-did-documents",
+      "href": "https://www.w3.org/TR/did-1.1/#encrypted-data-in-did-documents",
+      "level": 3,
+      "title": "Encrypted Data in DID Documents",
+      "number": "8.13"
+    },
+    {
+      "id": "equivalence-properties",
+      "href": "https://www.w3.org/TR/did-1.1/#equivalence-properties",
+      "level": 3,
+      "title": "Equivalence Properties",
+      "number": "8.14"
+    },
+    {
+      "id": "content-integrity-protection",
+      "href": "https://www.w3.org/TR/did-1.1/#content-integrity-protection",
+      "level": 3,
+      "title": "Content Integrity Protection",
+      "number": "8.15"
+    },
+    {
+      "id": "persistence",
+      "href": "https://www.w3.org/TR/did-1.1/#persistence",
+      "level": 3,
+      "title": "Persistence",
+      "number": "8.16"
+    },
+    {
+      "id": "level-of-assurance",
+      "href": "https://www.w3.org/TR/did-1.1/#level-of-assurance",
+      "level": 3,
+      "title": "Level of Assurance",
+      "number": "8.17"
+    },
+    {
+      "id": "evaluating-competing-considerations",
+      "href": "https://www.w3.org/TR/did-1.1/#evaluating-competing-considerations",
+      "level": 3,
+      "title": "Evaluating Competing Considerations",
+      "number": "8.18"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/did-1.1/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "9"
+    },
+    {
+      "id": "keep-personal-data-private",
+      "href": "https://www.w3.org/TR/did-1.1/#keep-personal-data-private",
+      "level": 3,
+      "title": "Keep Personal Data Private",
+      "number": "9.1"
+    },
+    {
+      "id": "did-correlation-risks",
+      "href": "https://www.w3.org/TR/did-1.1/#did-correlation-risks",
+      "level": 3,
+      "title": "DID Correlation Risks",
+      "number": "9.2"
+    },
+    {
+      "id": "did-document-correlation-risks",
+      "href": "https://www.w3.org/TR/did-1.1/#did-document-correlation-risks",
+      "level": 3,
+      "title": "DID Document Correlation Risks",
+      "number": "9.3"
+    },
+    {
+      "id": "did-subject-classification",
+      "href": "https://www.w3.org/TR/did-1.1/#did-subject-classification",
+      "level": 3,
+      "title": "DID Subject Classification",
+      "number": "9.4"
+    },
+    {
+      "id": "herd-privacy",
+      "href": "https://www.w3.org/TR/did-1.1/#herd-privacy",
+      "level": 3,
+      "title": "Herd Privacy",
+      "number": "9.5"
+    },
+    {
+      "id": "service-privacy",
+      "href": "https://www.w3.org/TR/did-1.1/#service-privacy",
+      "level": 3,
+      "title": "Service Privacy",
+      "number": "9.6"
+    },
+    {
+      "id": "maintaining-herd-privacy",
+      "href": "https://www.w3.org/TR/did-1.1/#maintaining-herd-privacy",
+      "level": 4,
+      "title": "Maintaining Herd Privacy"
+    },
+    {
+      "id": "service-endpoint-alternatives",
+      "href": "https://www.w3.org/TR/did-1.1/#service-endpoint-alternatives",
+      "level": 4,
+      "title": "Service Endpoint Alternatives"
+    },
+    {
+      "id": "examples",
+      "href": "https://www.w3.org/TR/did-1.1/#examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "A"
+    },
+    {
+      "id": "did-documents",
+      "href": "https://www.w3.org/TR/did-1.1/#did-documents",
+      "level": 3,
+      "title": "DID Documents",
+      "number": "A.1"
+    },
+    {
+      "id": "proving",
+      "href": "https://www.w3.org/TR/did-1.1/#proving",
+      "level": 3,
+      "title": "Proving",
+      "number": "A.2"
+    },
+    {
+      "id": "encrypting",
+      "href": "https://www.w3.org/TR/did-1.1/#encrypting",
+      "level": 3,
+      "title": "Encrypting",
+      "number": "A.3"
+    },
+    {
+      "id": "architectural-considerations",
+      "href": "https://www.w3.org/TR/did-1.1/#architectural-considerations",
+      "level": 2,
+      "title": "Architectural Considerations",
+      "number": "B"
+    },
+    {
+      "id": "detailed-architecture-diagram",
+      "href": "https://www.w3.org/TR/did-1.1/#detailed-architecture-diagram",
+      "level": 3,
+      "title": "Detailed Architecture Diagram",
+      "number": "B.1"
+    },
+    {
+      "id": "creation-of-a-did",
+      "href": "https://www.w3.org/TR/did-1.1/#creation-of-a-did",
+      "level": 3,
+      "title": "Creation of a DID",
+      "number": "B.2"
+    },
+    {
+      "id": "determining-the-did-subject",
+      "href": "https://www.w3.org/TR/did-1.1/#determining-the-did-subject",
+      "level": 3,
+      "title": "Determining the DID subject",
+      "number": "B.3"
+    },
+    {
+      "id": "referring-to-the-did-document",
+      "href": "https://www.w3.org/TR/did-1.1/#referring-to-the-did-document",
+      "level": 3,
+      "title": "Referring to the DID document",
+      "number": "B.4"
+    },
+    {
+      "id": "statements-in-the-did-document",
+      "href": "https://www.w3.org/TR/did-1.1/#statements-in-the-did-document",
+      "level": 3,
+      "title": "Statements in the DID document",
+      "number": "B.5"
+    },
+    {
+      "id": "discovering-more-information-about-the-did-subject",
+      "href": "https://www.w3.org/TR/did-1.1/#discovering-more-information-about-the-did-subject",
+      "level": 3,
+      "title": "Discovering more information about the DID subject",
+      "number": "B.6"
+    },
+    {
+      "id": "serving-a-representation-of-the-did-subject",
+      "href": "https://www.w3.org/TR/did-1.1/#serving-a-representation-of-the-did-subject",
+      "level": 3,
+      "title": "Serving a representation of the DID subject",
+      "number": "B.7"
+    },
+    {
+      "id": "assigning-dids-to-existing-web-resources",
+      "href": "https://www.w3.org/TR/did-1.1/#assigning-dids-to-existing-web-resources",
+      "level": 3,
+      "title": "Assigning DIDs to existing web resources",
+      "number": "B.8"
+    },
+    {
+      "id": "the-relationship-between-did-controllers-and-did-subjects",
+      "href": "https://www.w3.org/TR/did-1.1/#the-relationship-between-did-controllers-and-did-subjects",
+      "level": 3,
+      "title": "The relationship between DID controllers and DID subjects",
+      "number": "B.9"
+    },
+    {
+      "id": "set-1-the-did-subject-is-the-did-controller",
+      "href": "https://www.w3.org/TR/did-1.1/#set-1-the-did-subject-is-the-did-controller",
+      "level": 4,
+      "title": "Set #1: The DID subject is the DID controller",
+      "number": "B.9.1"
+    },
+    {
+      "id": "set-2-the-did-subject-is-not-the-did-controller",
+      "href": "https://www.w3.org/TR/did-1.1/#set-2-the-did-subject-is-not-the-did-controller",
+      "level": 4,
+      "title": "Set #2: The DID subject is not the DID controller",
+      "number": "B.9.2"
+    },
+    {
+      "id": "multiple-did-controllers",
+      "href": "https://www.w3.org/TR/did-1.1/#multiple-did-controllers",
+      "level": 3,
+      "title": "Multiple DID controllers",
+      "number": "B.10"
+    },
+    {
+      "id": "independent-control",
+      "href": "https://www.w3.org/TR/did-1.1/#independent-control",
+      "level": 4,
+      "title": "Independent Control",
+      "number": "B.10.1"
+    },
+    {
+      "id": "group-control",
+      "href": "https://www.w3.org/TR/did-1.1/#group-control",
+      "level": 4,
+      "title": "Group Control",
+      "number": "B.10.2"
+    },
+    {
+      "id": "changing-the-did-subject",
+      "href": "https://www.w3.org/TR/did-1.1/#changing-the-did-subject",
+      "level": 3,
+      "title": "Changing the DID subject",
+      "number": "B.11"
+    },
+    {
+      "id": "changing-the-did-controller",
+      "href": "https://www.w3.org/TR/did-1.1/#changing-the-did-controller",
+      "level": 3,
+      "title": "Changing the DID controller",
+      "number": "B.12"
+    },
+    {
+      "id": "revision-history",
+      "href": "https://www.w3.org/TR/did-1.1/#revision-history",
+      "level": 2,
+      "title": "Revision History",
+      "number": "C"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/did-1.1/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "D"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://www.w3.org/TR/did-1.1/#iana-considerations",
+      "level": 2,
+      "title": "IANA Considerations",
+      "number": "E"
+    },
+    {
+      "id": "application-did",
+      "href": "https://www.w3.org/TR/did-1.1/#application-did",
+      "level": 3,
+      "title": "application/did",
+      "number": "E.1"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/did-1.1/#references",
+      "level": 2,
+      "title": "References",
+      "number": "F"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/did-1.1/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "F.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/did-1.1/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "F.2"
+    }
+  ]
+}

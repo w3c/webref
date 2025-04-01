@@ -1,0 +1,630 @@
+{
+  "spec": {
+    "title": "Controlled Identifiers v1.0",
+    "url": "https://www.w3.org/TR/cid-1.0/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-conforming-controlled-identifier-document",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-conforming-controlled-identifier-document",
+      "linkingText": [
+        "conforming controlled identifier document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://www.w3.org/TR/cid-1.0/#conformance",
+        "title": "Conformance",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-conforming-verification-method",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-conforming-verification-method",
+      "linkingText": [
+        "conforming verification method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://www.w3.org/TR/cid-1.0/#conformance",
+        "title": "Conformance",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-conforming-document",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-conforming-document",
+      "linkingText": [
+        "conforming document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://www.w3.org/TR/cid-1.0/#conformance",
+        "title": "Conformance",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-conforming-processor",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-conforming-processor",
+      "linkingText": [
+        "conforming processor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://www.w3.org/TR/cid-1.0/#conformance",
+        "title": "Conformance",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-authentication",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-authentication",
+      "linkingText": [
+        "authentication"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/cid-1.0/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A process by which an entity can prove to a verifier that it has a specific\nattribute or controls a specific secret."
+    },
+    {
+      "id": "dfn-authorization",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-authorization",
+      "linkingText": [
+        "authorization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/cid-1.0/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A process by which an entity can prove to a verifier that it is allowed to\nperform a specific activity."
+    },
+    {
+      "id": "dfn-controlled-identifier",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier",
+      "linkingText": [
+        "controlled identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/cid-1.0/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "<p>\nA type of identifier that can be proven to be under the control of an entity.\n            </p>"
+    },
+    {
+      "id": "dfn-controlled-identifier-document",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier-document",
+      "linkingText": [
+        "controlled identifier document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/cid-1.0/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "<p>\nA document that contains cryptographic material and lists service endpoints that\ncan be used for verifying <a href=\"https://www.w3.org/TR/cid-1.0/#dfn-proof\">proofs</a> from, and interacting with, the\n<a href=\"https://www.w3.org/TR/cid-1.0/#dfn-controller\">controller</a> of an identifier.\n            </p>"
+    },
+    {
+      "id": "dfn-controller",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-controller",
+      "linkingText": [
+        "controller"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/cid-1.0/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "<p>\nAn entity that is capable of performing an action with a specific resource, such\nas updating a <a href=\"https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier-document\">controlled identifier document</a> or generating a <a href=\"https://www.w3.org/TR/cid-1.0/#dfn-proof\">proof</a> using a\n<a href=\"https://www.w3.org/TR/cid-1.0/#dfn-verification-method\">verification method</a>.\n            </p>"
+    },
+    {
+      "id": "dfn-cryptosuite",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-cryptosuite",
+      "linkingText": [
+        "cryptosuite",
+        "cryptographic suite"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/cid-1.0/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A means of using specific cryptographic primitives\nto achieve a particular security goal. These suites can\nspecify <a href=\"https://www.w3.org/TR/cid-1.0/#dfn-verification-method\">verification methods</a>, digital signature types,\ntheir identifiers, and other related properties."
+    },
+    {
+      "id": "dfn-private-key",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-private-key",
+      "linkingText": [
+        "private key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/cid-1.0/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "Cryptographic material that can be used to generate <a href=\"https://www.w3.org/TR/cid-1.0/#dfn-proof\">proofs</a>."
+    },
+    {
+      "id": "dfn-proof",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-proof",
+      "linkingText": [
+        "proof"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/cid-1.0/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A mathematical demonstration that confirms the validity of an assertion. The\ndemonstration consists of a set of properties and values that enable a verifier\nto cryptographically validate the assertion. A\n<a href=\"https://en.wikipedia.org/wiki/Digital_signature\">digital signature</a>\nis a type of proof."
+    },
+    {
+      "id": "dfn-public-key",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-public-key",
+      "linkingText": [
+        "public key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/cid-1.0/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "Cryptographic material that can be used to verify <a href=\"https://www.w3.org/TR/cid-1.0/#dfn-proof\">proofs</a> created with a\ncorresponding <a href=\"https://www.w3.org/TR/cid-1.0/#dfn-private-key\">private key</a>."
+    },
+    {
+      "id": "dfn-subjects",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-subjects",
+      "linkingText": [
+        "subjects",
+        "subject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/cid-1.0/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "<p>\nAn entity, such as a person, group, organization, physical thing, digital thing,\nor logical thing that is referred to by the value of an <code>id</code> property in a\n<a href=\"https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier-document\">controlled identifier document</a>. Subjects identified in a <a href=\"https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier-document\">controlled identifier document</a>\nare also used as a subjects in other contexts, such as during\n<a href=\"https://www.w3.org/TR/cid-1.0/#dfn-authentication\">authentication</a> or in <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a>.\n            </p>"
+    },
+    {
+      "id": "dfn-verification-method",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-verification-method",
+      "linkingText": [
+        "verification method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/cid-1.0/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "<p>\nA method and its parameters, used to independently verify a <a href=\"https://www.w3.org/TR/cid-1.0/#dfn-proof\">proof</a>. For\nexample, a cryptographic public key can be used as a verification method with\nrespect to a digital signature; in such use, it verifies that the signer\nused the associated cryptographic private key.\n            </p>"
+    },
+    {
+      "id": "dfn-verification-relationship",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-verification-relationship",
+      "linkingText": [
+        "verification relationship"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/cid-1.0/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "<p>\nAn expression that one or more <a href=\"https://www.w3.org/TR/cid-1.0/#dfn-verification-method\">verification methods</a> are authorized to verify\nproofs made on behalf of the <a href=\"https://www.w3.org/TR/cid-1.0/#dfn-subjects\">subject</a>. One example of a verification\nrelationship is <a href=\"https://www.w3.org/TR/cid-1.0/#authentication\"><bdi>2.3.1 </bdi>Authentication</a>.\n            </p>"
+    },
+    {
+      "id": "dfn-identifier",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-identifier",
+      "linkingText": [
+        "identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subjects",
+        "href": "https://www.w3.org/TR/cid-1.0/#subjects",
+        "title": "Subjects",
+        "number": "2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-base-identifier",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-base-identifier",
+      "linkingText": [
+        "base identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subjects",
+        "href": "https://www.w3.org/TR/cid-1.0/#subjects",
+        "title": "Subjects",
+        "number": "2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-canonical-url",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-canonical-url",
+      "linkingText": [
+        "canonical URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subjects",
+        "href": "https://www.w3.org/TR/cid-1.0/#subjects",
+        "title": "Subjects",
+        "number": "2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-service",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-service",
+      "linkingText": [
+        "service"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "services",
+        "href": "https://www.w3.org/TR/cid-1.0/#services",
+        "title": "Services",
+        "number": "2.1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-verification-method-definition",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-verification-method-definition",
+      "linkingText": [
+        "verification method definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "verification-methods",
+        "href": "https://www.w3.org/TR/cid-1.0/#verification-methods",
+        "title": "Verification Methods",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-verificationmethod",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-verificationmethod",
+      "linkingText": [
+        "verificationMethod"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "verification-methods",
+        "href": "https://www.w3.org/TR/cid-1.0/#verification-methods",
+        "title": "Verification Methods",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-verification-method-identifier",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-verification-method-identifier",
+      "linkingText": [
+        "verification method identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "verification-methods",
+        "href": "https://www.w3.org/TR/cid-1.0/#verification-methods",
+        "title": "Verification Methods",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-revoked",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-revoked",
+      "linkingText": [
+        "revoked"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "verification-methods",
+        "href": "https://www.w3.org/TR/cid-1.0/#verification-methods",
+        "title": "Verification Methods",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-publickeymultibase",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-publickeymultibase",
+      "linkingText": [
+        "publicKeyMultibase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "Multikey",
+        "href": "https://www.w3.org/TR/cid-1.0/#Multikey",
+        "title": "Multikey",
+        "number": "2.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-secretkeymultibase",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-secretkeymultibase",
+      "linkingText": [
+        "secretKeyMultibase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "Multikey",
+        "href": "https://www.w3.org/TR/cid-1.0/#Multikey",
+        "title": "Multikey",
+        "number": "2.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-publickeyjwk",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-publickeyjwk",
+      "linkingText": [
+        "publicKeyJwk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey",
+        "href": "https://www.w3.org/TR/cid-1.0/#JsonWebKey",
+        "title": "JsonWebKey",
+        "number": "2.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-secretkeyjwk",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-secretkeyjwk",
+      "linkingText": [
+        "secretKeyJwk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey",
+        "href": "https://www.w3.org/TR/cid-1.0/#JsonWebKey",
+        "title": "JsonWebKey",
+        "number": "2.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "defn-keyAgreement",
+      "href": "https://www.w3.org/TR/cid-1.0/#defn-keyAgreement",
+      "linkingText": [
+        "keyAgreement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "key-agreement",
+        "href": "https://www.w3.org/TR/cid-1.0/#key-agreement",
+        "title": "Key Agreement",
+        "number": "2.3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-multibase-header",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-multibase-header",
+      "linkingText": [
+        "Multibase header"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "multibase-0",
+        "href": "https://www.w3.org/TR/cid-1.0/#multibase-0",
+        "title": "Multibase",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-multiformats",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-multiformats",
+      "linkingText": [
+        "Multiformats"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "choosing-a-multiformat",
+        "href": "https://www.w3.org/TR/cid-1.0/#choosing-a-multiformat",
+        "title": "Choosing a Multiformat",
+        "number": "5.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-pairwise-identifier",
+      "href": "https://www.w3.org/TR/cid-1.0/#dfn-pairwise-identifier",
+      "linkingText": [
+        "pairwise identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "relationship-to-the-same-origin-policy",
+        "href": "https://www.w3.org/TR/cid-1.0/#relationship-to-the-same-origin-policy",
+        "title": "Relationship to the Same-Origin Policy",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

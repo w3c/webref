@@ -1,0 +1,395 @@
+{
+  "spec": {
+    "title": "CSS Form Control Styling Level 1",
+    "url": "https://www.w3.org/TR/css-forms-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/css-forms-1/#title",
+      "level": 1,
+      "title": "CSS Form Control Styling Level 1"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/css-forms-1/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/css-forms-1/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/css-forms-1/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://www.w3.org/TR/css-forms-1/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "appearance",
+      "href": "https://www.w3.org/TR/css-forms-1/#appearance",
+      "level": 2,
+      "title": "Opting Into Basic Appearance: the appearance: base value",
+      "number": "2"
+    },
+    {
+      "id": "basic-appearance-principles",
+      "href": "https://www.w3.org/TR/css-forms-1/#basic-appearance-principles",
+      "level": 3,
+      "title": "Design Principles for the Basic Appearance",
+      "number": "2.1"
+    },
+    {
+      "id": "ex-appearance",
+      "href": "https://www.w3.org/TR/css-forms-1/#ex-appearance",
+      "level": 3,
+      "title": "Examples",
+      "number": "2.2"
+    },
+    {
+      "id": "colors",
+      "href": "https://www.w3.org/TR/css-forms-1/#colors",
+      "level": 4,
+      "title": "Default User Agent Colors",
+      "number": "2.2.1"
+    },
+    {
+      "id": "custom",
+      "href": "https://www.w3.org/TR/css-forms-1/#custom",
+      "level": 4,
+      "title": "Color/Font Customization",
+      "number": "2.2.2"
+    },
+    {
+      "id": "pickers",
+      "href": "https://www.w3.org/TR/css-forms-1/#pickers",
+      "level": 2,
+      "title": "Styling Pickers",
+      "number": "3"
+    },
+    {
+      "id": "picker-pseudo",
+      "href": "https://www.w3.org/TR/css-forms-1/#picker-pseudo",
+      "level": 3,
+      "title": "The ::picker() pseudo-element",
+      "number": "3.1"
+    },
+    {
+      "id": "pseudo-elements",
+      "href": "https://www.w3.org/TR/css-forms-1/#pseudo-elements",
+      "level": 2,
+      "title": "Pseudo-Elements",
+      "number": "4"
+    },
+    {
+      "id": "picker-icon",
+      "href": "https://www.w3.org/TR/css-forms-1/#picker-icon",
+      "level": 3,
+      "title": "Picker Opener Icon: the ::picker-icon pseudo-element",
+      "number": "4.1"
+    },
+    {
+      "id": "file-selector-button-pseudo",
+      "href": "https://www.w3.org/TR/css-forms-1/#file-selector-button-pseudo",
+      "level": 3,
+      "title": "File Selector Button: the ::file-selector-button pseudo-element",
+      "number": "4.2"
+    },
+    {
+      "id": "checkmark",
+      "href": "https://www.w3.org/TR/css-forms-1/#checkmark",
+      "level": 3,
+      "title": "Styling Checkmarks: the ::checkmark pseudo-element",
+      "number": "4.3"
+    },
+    {
+      "id": "slider-pseudos",
+      "href": "https://www.w3.org/TR/css-forms-1/#slider-pseudos",
+      "level": 3,
+      "title": "Styling Parts of Slider-Like Controls: the ::thumb, ::track and ::fill pseudo-elements",
+      "number": "4.4"
+    },
+    {
+      "id": "field-pseudos",
+      "href": "https://www.w3.org/TR/css-forms-1/#field-pseudos",
+      "level": 3,
+      "title": "Styling Parts for Text Fields: the ::field-text and ::clear-icon pseudo-elements",
+      "number": "4.5"
+    },
+    {
+      "id": "textarea-pseudos",
+      "href": "https://www.w3.org/TR/css-forms-1/#textarea-pseudos",
+      "level": 3,
+      "title": "Styling Parts for textareas: the ::placeholder and ::field-text pseudo-elements",
+      "number": "4.6"
+    },
+    {
+      "id": "number-pseudos",
+      "href": "https://www.w3.org/TR/css-forms-1/#number-pseudos",
+      "level": 3,
+      "title": "Styling Parts for Number Fields: the ::step-control, ::step-up and ::step-down pseudo-elements",
+      "number": "4.7"
+    },
+    {
+      "id": "date-time-pseudos",
+      "href": "https://www.w3.org/TR/css-forms-1/#date-time-pseudos",
+      "level": 3,
+      "title": "Styling Parts for Date/Time Input Fields: the ::field-component and ::field-separator pseudo-elements",
+      "number": "4.8"
+    },
+    {
+      "id": "color-swatch-pseudo",
+      "href": "https://www.w3.org/TR/css-forms-1/#color-swatch-pseudo",
+      "level": 3,
+      "title": "Color Swatch: the ::color-swatch pseudo-element",
+      "number": "4.9"
+    },
+    {
+      "id": "vendor-pseudo-element-compatibility",
+      "href": "https://www.w3.org/TR/css-forms-1/#vendor-pseudo-element-compatibility",
+      "level": 3,
+      "title": "Compatibility With Vendor Pseudo-Element Extensions",
+      "number": "4.10"
+    },
+    {
+      "id": "pseudo-classes",
+      "href": "https://www.w3.org/TR/css-forms-1/#pseudo-classes",
+      "level": 2,
+      "title": "Pseudo-Classes",
+      "number": "5"
+    },
+    {
+      "id": "meter-values",
+      "href": "https://www.w3.org/TR/css-forms-1/#meter-values",
+      "level": 3,
+      "title": "Targeting Different Meter States: the :low-value / :high-value / :optimal-value pseudo-classes",
+      "number": "5.1"
+    },
+    {
+      "id": "selects-listboxes",
+      "href": "https://www.w3.org/TR/css-forms-1/#selects-listboxes",
+      "level": 3,
+      "title": "Targeting Selects that are Listboxes",
+      "number": "5.2"
+    },
+    {
+      "id": "control-value",
+      "href": "https://www.w3.org/TR/css-forms-1/#control-value",
+      "level": 2,
+      "title": "The control-value() function",
+      "number": "6"
+    },
+    {
+      "id": "styling-widgets",
+      "href": "https://www.w3.org/TR/css-forms-1/#styling-widgets",
+      "level": 2,
+      "title": "Styling Widgets",
+      "number": "7"
+    },
+    {
+      "id": "slider-orientation",
+      "href": "https://www.w3.org/TR/css-forms-1/#slider-orientation",
+      "level": 3,
+      "title": "Changing the Orientation of a Slider-Like Control: slider-orientation",
+      "number": "7.1"
+    },
+    {
+      "id": "basic-appearance-stylesheet",
+      "href": "https://www.w3.org/TR/css-forms-1/#basic-appearance-stylesheet",
+      "level": 2,
+      "title": "Basic Appearance User Agent Stylesheet",
+      "number": "A"
+    },
+    {
+      "id": "stylesheet-basics",
+      "href": "https://www.w3.org/TR/css-forms-1/#stylesheet-basics",
+      "level": 3,
+      "title": "Basics"
+    },
+    {
+      "id": "stylesheet-layout",
+      "href": "https://www.w3.org/TR/css-forms-1/#stylesheet-layout",
+      "level": 3,
+      "title": "Layout"
+    },
+    {
+      "id": "stylesheet-sliders",
+      "href": "https://www.w3.org/TR/css-forms-1/#stylesheet-sliders",
+      "level": 3,
+      "title": "Sliders"
+    },
+    {
+      "id": "stylesheet-checkbox-radio",
+      "href": "https://www.w3.org/TR/css-forms-1/#stylesheet-checkbox-radio",
+      "level": 3,
+      "title": "Checkboxes & radios"
+    },
+    {
+      "id": "stylesheet-select-button",
+      "href": "https://www.w3.org/TR/css-forms-1/#stylesheet-select-button",
+      "level": 3,
+      "title": "Selects & buttons"
+    },
+    {
+      "id": "explorations",
+      "href": "https://www.w3.org/TR/css-forms-1/#explorations",
+      "level": 2,
+      "title": "Explorations",
+      "number": "B"
+    },
+    {
+      "id": "ideas",
+      "href": "https://www.w3.org/TR/css-forms-1/#ideas",
+      "level": 3,
+      "title": "Basic Styling Proposals"
+    },
+    {
+      "id": "prototypes",
+      "href": "https://www.w3.org/TR/css-forms-1/#prototypes",
+      "level": 4,
+      "title": "Prototypes"
+    },
+    {
+      "id": "inverse-system",
+      "href": "https://www.w3.org/TR/css-forms-1/#inverse-system",
+      "level": 4,
+      "title": "Inverse System Colors"
+    },
+    {
+      "id": "misc",
+      "href": "https://www.w3.org/TR/css-forms-1/#misc",
+      "level": 3,
+      "title": "Miscellaneous Control-Specific Suggestions"
+    },
+    {
+      "id": "select-dropdown",
+      "href": "https://www.w3.org/TR/css-forms-1/#select-dropdown",
+      "level": 4,
+      "title": "Select/Datalist Dropdown"
+    },
+    {
+      "id": "ui-examples",
+      "href": "https://www.w3.org/TR/css-forms-1/#ui-examples",
+      "level": 3,
+      "title": "Input UI Examples"
+    },
+    {
+      "id": "time-examples",
+      "href": "https://www.w3.org/TR/css-forms-1/#time-examples",
+      "level": 4,
+      "title": "Time Pickers"
+    },
+    {
+      "id": "date-examples",
+      "href": "https://www.w3.org/TR/css-forms-1/#date-examples",
+      "level": 4,
+      "title": "Date Pickers"
+    },
+    {
+      "id": "privacy",
+      "href": "https://www.w3.org/TR/css-forms-1/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/css-forms-1/#security",
+      "level": 2,
+      "title": "Security Considerations"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/css-forms-1/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/css-forms-1/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/css-forms-1/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://www.w3.org/TR/css-forms-1/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://www.w3.org/TR/css-forms-1/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://www.w3.org/TR/css-forms-1/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://www.w3.org/TR/css-forms-1/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/css-forms-1/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/css-forms-1/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/css-forms-1/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/css-forms-1/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://www.w3.org/TR/css-forms-1/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://www.w3.org/TR/css-forms-1/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://www.w3.org/TR/css-forms-1/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

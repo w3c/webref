@@ -1,0 +1,199 @@
+{
+  "spec": {
+    "title": "CSS Form Control Styling Level 1",
+    "url": "https://www.w3.org/TR/css-forms-1/"
+  },
+  "properties": [
+    {
+      "name": "appearance",
+      "newValues": "base",
+      "values": [
+        {
+          "name": "base",
+          "prose": "When applied on a form control, base puts that control in the basic appearance state.",
+          "href": "https://www.w3.org/TR/css-forms-1/#valdef-appearance-base",
+          "type": "value",
+          "value": "base"
+        }
+      ],
+      "styleDeclaration": [
+        "appearance"
+      ]
+    },
+    {
+      "name": "slider-orientation",
+      "href": "https://www.w3.org/TR/css-forms-1/#propdef-slider-orientation",
+      "value": "auto | left-to-right | right-to-left | top-to-bottom | bottom-to-top",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "The slider-like control orientation is defined by the writing mode and direction.",
+          "href": "https://www.w3.org/TR/css-forms-1/#valdef-slider-orientation-auto",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "left-to-right",
+          "prose": "The slider-like control is rendered horizontally and ::fill is left-aligned within the control.",
+          "href": "https://www.w3.org/TR/css-forms-1/#valdef-slider-orientation-left-to-right",
+          "type": "value",
+          "value": "left-to-right"
+        },
+        {
+          "name": "right-to-left",
+          "prose": "The slider-like control is rendered horizontally and ::fill is right-aligned within the control.",
+          "href": "https://www.w3.org/TR/css-forms-1/#valdef-slider-orientation-right-to-left",
+          "type": "value",
+          "value": "right-to-left"
+        },
+        {
+          "name": "top-to-bottom",
+          "prose": "The slider-like control is rendered vertically and ::fill is top-aligned within the control.",
+          "href": "https://www.w3.org/TR/css-forms-1/#valdef-slider-orientation-top-to-bottom",
+          "type": "value",
+          "value": "top-to-bottom"
+        },
+        {
+          "name": "bottom-to-top",
+          "prose": "The slider-like control is rendered vertically and ::fill is bottom-aligned within the control.",
+          "href": "https://www.w3.org/TR/css-forms-1/#valdef-slider-orientation-bottom-to-top",
+          "type": "value",
+          "value": "bottom-to-top"
+        }
+      ],
+      "styleDeclaration": [
+        "slider-orientation",
+        "sliderOrientation"
+      ]
+    }
+  ],
+  "atrules": [],
+  "selectors": [
+    {
+      "name": "::picker()",
+      "prose": "The ::picker() pseudo-element represents the part of the form control that pops out of the page.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-picker",
+      "value": "::picker( <form-control-identifier>+ )",
+      "values": [
+        {
+          "name": "<form-control-identifier>",
+          "href": "https://www.w3.org/TR/css-forms-1/#typedef-picker-form-control-identifier",
+          "type": "type",
+          "value": "select"
+        }
+      ]
+    },
+    {
+      "name": "::picker-icon",
+      "prose": "The ::picker-icon pseudo-element represents the part of the control that represents the icon denoting the presence of the picker. It is only generated when the originating element has basic appearance and if it opens a picker. It is a fully styleable pseudo-element and inherits from its originating element.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-picker-icon"
+    },
+    {
+      "name": "::file-selector-button",
+      "prose": "The ::file-selector-button pseudo-element represents the button used to open a file picker, if the UA renders such a button.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-file-selector-button"
+    },
+    {
+      "name": "::checkmark",
+      "prose": "The ::checkmark pseudo-element represents an indicator of whether the item is checked, and is present on checkboxes, radios, and option elements.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-checkmark"
+    },
+    {
+      "name": "::thumb",
+      "prose": "The ::thumb pseudo-element represents the portion that allows the user to adjust the progress of the control.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-thumb"
+    },
+    {
+      "name": "::track",
+      "prose": "The ::track pseudo-element represents the portion containing both the progressed and unprogressed portions of the control.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-track"
+    },
+    {
+      "name": "::fill",
+      "prose": "The ::fill pseudo-element represents the portion containing the progressed portion of the control. When the progress of control is undetermined (like with <progress indeterminate>), the user agent must give this portion an inline-size of zero.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-fill"
+    },
+    {
+      "name": "::placeholder",
+      "prose": "The ::placeholder pseudo-element represents the portion of the input that contains the placeholder text.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-placeholder"
+    },
+    {
+      "name": "::field-text",
+      "prose": "The ::field-text pseudo-element represents the portion of the input that contains the editable text.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-field-text"
+    },
+    {
+      "name": "::clear-icon",
+      "prose": "The ::clear-icon pseudo-element represents the portion of the input that allows the user to clear the input when clicked if provided by the user agent. With appearance: textfield, the user agent must not generate this part.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-clear-icon"
+    },
+    {
+      "name": "::step-control",
+      "prose": "The ::step-control pseudo-element represents the portion of a number input that contains the up and down buttons.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-step-control"
+    },
+    {
+      "name": "::step-up",
+      "prose": "The ::step-up pseudo-element represents the button that increments the value inside a number input when activated.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-step-up"
+    },
+    {
+      "name": "::step-down",
+      "prose": "The ::step-down pseudo-element represents the button that decrements the value inside a number input when activated.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-step-down"
+    },
+    {
+      "name": "::field-component",
+      "prose": "The ::field-component pseudo-element represents the portions of the control that contain the date/time component values.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-field-component"
+    },
+    {
+      "name": "::field-separator",
+      "prose": "The ::field-separator pseudo-element represents the portions of the control that separate the date/time component values if the user agent provides those portions.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-field-separator"
+    },
+    {
+      "name": "::color-swatch",
+      "prose": "The ::color-swatch pseudo-element represents the portion of the control that displays the chosen color value.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-color-swatch"
+    },
+    {
+      "name": ":low-value",
+      "prose": "The :low-value pseudo-class matches on a meter element when its value is under the value specified by the low HTML attribute.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-low-value"
+    },
+    {
+      "name": ":high-value",
+      "prose": "The :high-value pseudo-class matches on a meter element when its value is over the value specified by the high HTML attribute.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-high-value"
+    },
+    {
+      "name": ":optimal-value",
+      "prose": "The :optimal-value pseudo-class matches on a meter element when its value is in the range determined by the optimum / low / high HTML attributes.",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-optimal-value"
+    }
+  ],
+  "values": [
+    {
+      "name": "control-value()",
+      "prose": "The control-value() function computes to the current value of the form control it is on. If it is used on an element that is not a form control, it returns an empty string.",
+      "href": "https://www.w3.org/TR/css-forms-1/#funcdef-control-value",
+      "type": "function",
+      "value": "control-value( <type>? )"
+    },
+    {
+      "name": "<type>",
+      "href": "https://www.w3.org/TR/css-forms-1/#typedef-type",
+      "type": "type",
+      "value": "'<' [ number | string ] '>'"
+    }
+  ]
+}

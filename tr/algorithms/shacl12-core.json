@@ -1,0 +1,23 @@
+{
+  "spec": {
+    "title": "SHACL 1.2 Core",
+    "url": "https://www.w3.org/TR/shacl12-core/"
+  },
+  "algorithms": [
+    {
+      "html": "For <a href=\"https://www.w3.org/TR/shacl12-core/#dfn-property-shapes\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-property-shapes-15\">property shapes</a> with a <a href=\"https://www.w3.org/TR/shacl12-core/#dfn-values\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-values-57\">value</a> for <code>sh:path</code> <code>p</code> the\n\t\t\t\t\t\tset of <a href=\"https://www.w3.org/TR/shacl12-core/#dfn-value-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-value-node-4\">value nodes</a> is produced by the following steps:",
+      "rationale": "add",
+      "steps": [
+        {
+          "html": "Add all <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/rdf12-concepts/#dfn-node\">nodes</a> in the <a href=\"https://www.w3.org/TR/shacl12-core/#dfn-data-graphs\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-data-graphs-21\">data graph</a> that can be reached from the <a href=\"https://www.w3.org/TR/shacl12-core/#dfn-focus-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-focus-node-22\">focus node</a> with the <a href=\"https://www.w3.org/TR/shacl12-core/#dfn-path-mapping\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-path-mapping-2\">path mapping</a> of <code>p</code>."
+        },
+        {
+          "html": "If <code>e</code> is the <a href=\"https://www.w3.org/TR/shacl12-core/#dfn-values\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-values-58\">value</a> of <code>sh:values</code> at the <a href=\"https://www.w3.org/TR/shacl12-core/#dfn-property-shapes\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-property-shapes-16\">property shape</a>,\n\t\t\t\t\t\t\tthen add the <a href=\"https://www.w3.org/TR/shacl12-core/#dfn-output-nodes\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-output-nodes-4\">output nodes</a> of <code>eval(e, <a href=\"https://www.w3.org/TR/shacl12-core/#dfn-data-graphs\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-data-graphs-22\">data graph</a>, scope)</code> where <code>scope</code>\n\t\t\t\t\t\t\tcontains the <a href=\"https://www.w3.org/TR/shacl12-core/#dfn-focus-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-focus-node-23\">focus node</a> as the value of the variable <code>focusNode</code>."
+        },
+        {
+          "html": "If the set is still empty and <code>d</code> is the <a href=\"https://www.w3.org/TR/shacl12-core/#dfn-values\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-values-59\">value</a> of <code>sh:defaultValue</code> at the <a href=\"https://www.w3.org/TR/shacl12-core/#dfn-property-shapes\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-property-shapes-17\">property shape</a>,\n\t\t\t\t\t\t\tthen add the <a href=\"https://www.w3.org/TR/shacl12-core/#dfn-output-nodes\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-output-nodes-5\">output nodes</a> of <code>eval(d, <a href=\"https://www.w3.org/TR/shacl12-core/#dfn-data-graphs\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-data-graphs-23\">data graph</a>, scope)</code> where <code>scope</code>\n\t\t\t\t\t\t\tcontains the <a href=\"https://www.w3.org/TR/shacl12-core/#dfn-focus-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-focus-node-24\">focus node</a> as the value of the variable <code>focusNode</code>."
+        }
+      ]
+    }
+  ]
+}

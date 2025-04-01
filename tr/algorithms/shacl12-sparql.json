@@ -1,0 +1,48 @@
+{
+  "spec": {
+    "title": "SHACL 1.2 SPARQL Extensions",
+    "url": "https://www.w3.org/TR/shacl12-sparql/"
+  },
+  "algorithms": [
+    {
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "The binding for the variable <code>path</code>, if that is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/rdf12-concepts/#dfn-iri\">IRI</a>"
+        },
+        {
+          "html": "For results produced by a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-property-shape\">property shape</a>, a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-shacl-property-path\">SHACL property path</a> that is equivalent to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-value\">value</a> of <code>sh:path</code> of the shape"
+        }
+      ]
+    },
+    {
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "The binding for the variable <code>message</code>"
+        },
+        {
+          "html": "For SPARQL-based constraints: The values of <code>sh:message</code> of the <a href=\"https://www.w3.org/TR/shacl12-sparql/#dfn-sparql-based-constraint\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-sparql-based-constraint-12\">SPARQL-based constraint</a>.\n\t\t\t\t\t\t\t\t\t\tFor SPARQL-based constraint components: The values of <code>sh:message</code> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-validators\">validator</a> of the <a href=\"https://www.w3.org/TR/shacl12-sparql/#dfn-sparql-based-constraint-components\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-sparql-based-constraint-components-2\">SPARQL-based constraint component</a>."
+        },
+        {
+          "html": "For SPARQL-based constraint components: The values of <code>sh:message</code> of the <a href=\"https://www.w3.org/TR/shacl12-sparql/#dfn-sparql-based-constraint-components\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-sparql-based-constraint-components-3\">SPARQL-based constraint component</a>."
+        }
+      ]
+    },
+    {
+      "html": "For every supported shape type (i.e., <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-property-shape\">property shape</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-node-shape\">node shape</a>)\n\t\t\t\t\t\tthe constraint component declares a suitable <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-validators\">validator</a>.\n\t\t\t\t\t\tFor a given constraint, a validator is selected from the constraint component using the following rules, in order:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-node-shape\">node shapes</a>, use one of the values of <code>sh:nodeValidator</code>, if present."
+        },
+        {
+          "html": "For <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-property-shape\">property shapes</a>, use one of the values of <code>sh:propertyValidator</code>, if present."
+        },
+        {
+          "html": "Otherwise, use one of the values of <code>sh:validator</code>."
+        }
+      ]
+    }
+  ]
+}

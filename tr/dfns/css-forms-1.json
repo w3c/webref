@@ -1,0 +1,630 @@
+{
+  "spec": {
+    "title": "CSS Form Control Styling Level 1",
+    "url": "https://www.w3.org/TR/css-forms-1/"
+  },
+  "dfns": [
+    {
+      "id": "valdef-appearance-base",
+      "href": "https://www.w3.org/TR/css-forms-1/#valdef-appearance-base",
+      "linkingText": [
+        "base"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "appearance",
+        "href": "https://www.w3.org/TR/css-forms-1/#appearance",
+        "title": "Opting Into Basic Appearance: the appearance: base value",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "basic-appearance",
+      "href": "https://www.w3.org/TR/css-forms-1/#basic-appearance",
+      "linkingText": [
+        "basic appearance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appearance",
+        "href": "https://www.w3.org/TR/css-forms-1/#appearance",
+        "title": "Opting Into Basic Appearance: the appearance: base value",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "selectordef-picker",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-picker",
+      "linkingText": [
+        "::picker()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "picker-pseudo",
+        "href": "https://www.w3.org/TR/css-forms-1/#picker-pseudo",
+        "title": "The ::picker() pseudo-element",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-picker-form-control-identifier",
+      "href": "https://www.w3.org/TR/css-forms-1/#typedef-picker-form-control-identifier",
+      "linkingText": [
+        "<form-control-identifier>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "::picker()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "picker-pseudo",
+        "href": "https://www.w3.org/TR/css-forms-1/#picker-pseudo",
+        "title": "The ::picker() pseudo-element",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "unique-picker-name",
+      "href": "https://www.w3.org/TR/css-forms-1/#unique-picker-name",
+      "linkingText": [
+        "unique picker name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "picker-pseudo",
+        "href": "https://www.w3.org/TR/css-forms-1/#picker-pseudo",
+        "title": "The ::picker() pseudo-element",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "selectordef-picker-icon",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-picker-icon",
+      "linkingText": [
+        "::picker-icon"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "picker-icon",
+        "href": "https://www.w3.org/TR/css-forms-1/#picker-icon",
+        "title": "Picker Opener Icon: the ::picker-icon pseudo-element",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "selectordef-file-selector-button",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-file-selector-button",
+      "linkingText": [
+        "::file-selector-button"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "file-selector-button-pseudo",
+        "href": "https://www.w3.org/TR/css-forms-1/#file-selector-button-pseudo",
+        "title": "File Selector Button: the ::file-selector-button pseudo-element",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "selectordef-checkmark",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-checkmark",
+      "linkingText": [
+        "::checkmark"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "checkmark",
+        "href": "https://www.w3.org/TR/css-forms-1/#checkmark",
+        "title": "Styling Checkmarks: the ::checkmark pseudo-element",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "slider-like-controls",
+      "href": "https://www.w3.org/TR/css-forms-1/#slider-like-controls",
+      "linkingText": [
+        "Slider-like controls"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "slider-pseudos",
+        "href": "https://www.w3.org/TR/css-forms-1/#slider-pseudos",
+        "title": "Styling Parts of Slider-Like Controls: the ::thumb, ::track and ::fill pseudo-elements",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "selectordef-thumb",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-thumb",
+      "linkingText": [
+        "::thumb"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "slider-pseudos",
+        "href": "https://www.w3.org/TR/css-forms-1/#slider-pseudos",
+        "title": "Styling Parts of Slider-Like Controls: the ::thumb, ::track and ::fill pseudo-elements",
+        "number": "4.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "selectordef-track",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-track",
+      "linkingText": [
+        "::track"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "slider-pseudos",
+        "href": "https://www.w3.org/TR/css-forms-1/#slider-pseudos",
+        "title": "Styling Parts of Slider-Like Controls: the ::thumb, ::track and ::fill pseudo-elements",
+        "number": "4.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "selectordef-fill",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-fill",
+      "linkingText": [
+        "::fill"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "slider-pseudos",
+        "href": "https://www.w3.org/TR/css-forms-1/#slider-pseudos",
+        "title": "Styling Parts of Slider-Like Controls: the ::thumb, ::track and ::fill pseudo-elements",
+        "number": "4.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "selectordef-placeholder",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-placeholder",
+      "linkingText": [
+        "::placeholder"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "field-pseudos",
+        "href": "https://www.w3.org/TR/css-forms-1/#field-pseudos",
+        "title": "Styling Parts for Text Fields: the ::field-text and ::clear-icon pseudo-elements",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "selectordef-field-text",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-field-text",
+      "linkingText": [
+        "::field-text"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "field-pseudos",
+        "href": "https://www.w3.org/TR/css-forms-1/#field-pseudos",
+        "title": "Styling Parts for Text Fields: the ::field-text and ::clear-icon pseudo-elements",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "selectordef-clear-icon",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-clear-icon",
+      "linkingText": [
+        "::clear-icon"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "field-pseudos",
+        "href": "https://www.w3.org/TR/css-forms-1/#field-pseudos",
+        "title": "Styling Parts for Text Fields: the ::field-text and ::clear-icon pseudo-elements",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "selectordef-step-control",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-step-control",
+      "linkingText": [
+        "::step-control"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "number-pseudos",
+        "href": "https://www.w3.org/TR/css-forms-1/#number-pseudos",
+        "title": "Styling Parts for Number Fields: the ::step-control, ::step-up and ::step-down pseudo-elements",
+        "number": "4.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "selectordef-step-up",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-step-up",
+      "linkingText": [
+        "::step-up"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "number-pseudos",
+        "href": "https://www.w3.org/TR/css-forms-1/#number-pseudos",
+        "title": "Styling Parts for Number Fields: the ::step-control, ::step-up and ::step-down pseudo-elements",
+        "number": "4.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "selectordef-step-down",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-step-down",
+      "linkingText": [
+        "::step-down"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "number-pseudos",
+        "href": "https://www.w3.org/TR/css-forms-1/#number-pseudos",
+        "title": "Styling Parts for Number Fields: the ::step-control, ::step-up and ::step-down pseudo-elements",
+        "number": "4.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "selectordef-field-component",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-field-component",
+      "linkingText": [
+        "::field-component"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "date-time-pseudos",
+        "href": "https://www.w3.org/TR/css-forms-1/#date-time-pseudos",
+        "title": "Styling Parts for Date/Time Input Fields: the ::field-component and ::field-separator pseudo-elements",
+        "number": "4.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "selectordef-field-separator",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-field-separator",
+      "linkingText": [
+        "::field-separator"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "date-time-pseudos",
+        "href": "https://www.w3.org/TR/css-forms-1/#date-time-pseudos",
+        "title": "Styling Parts for Date/Time Input Fields: the ::field-component and ::field-separator pseudo-elements",
+        "number": "4.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "selectordef-color-swatch",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-color-swatch",
+      "linkingText": [
+        "::color-swatch"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-swatch-pseudo",
+        "href": "https://www.w3.org/TR/css-forms-1/#color-swatch-pseudo",
+        "title": "Color Swatch: the ::color-swatch pseudo-element",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "selectordef-low-value",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-low-value",
+      "linkingText": [
+        ":low-value"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "meter-values",
+        "href": "https://www.w3.org/TR/css-forms-1/#meter-values",
+        "title": "Targeting Different Meter States: the :low-value / :high-value / :optimal-value pseudo-classes",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "selectordef-high-value",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-high-value",
+      "linkingText": [
+        ":high-value"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "meter-values",
+        "href": "https://www.w3.org/TR/css-forms-1/#meter-values",
+        "title": "Targeting Different Meter States: the :low-value / :high-value / :optimal-value pseudo-classes",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "selectordef-optimal-value",
+      "href": "https://www.w3.org/TR/css-forms-1/#selectordef-optimal-value",
+      "linkingText": [
+        ":optimal-value"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "meter-values",
+        "href": "https://www.w3.org/TR/css-forms-1/#meter-values",
+        "title": "Targeting Different Meter States: the :low-value / :high-value / :optimal-value pseudo-classes",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-control-value",
+      "href": "https://www.w3.org/TR/css-forms-1/#funcdef-control-value",
+      "linkingText": [
+        "control-value()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "control-value",
+        "href": "https://www.w3.org/TR/css-forms-1/#control-value",
+        "title": "The control-value() function",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-type",
+      "href": "https://www.w3.org/TR/css-forms-1/#typedef-type",
+      "linkingText": [
+        "<type>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "control-value",
+        "href": "https://www.w3.org/TR/css-forms-1/#control-value",
+        "title": "The control-value() function",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "propdef-slider-orientation",
+      "href": "https://www.w3.org/TR/css-forms-1/#propdef-slider-orientation",
+      "linkingText": [
+        "slider-orientation"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "slider-orientation",
+        "href": "https://www.w3.org/TR/css-forms-1/#slider-orientation",
+        "title": "Changing the Orientation of a Slider-Like Control: slider-orientation",
+        "number": "7.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-slider-orientation-auto",
+      "href": "https://www.w3.org/TR/css-forms-1/#valdef-slider-orientation-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "slider-orientation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "slider-orientation",
+        "href": "https://www.w3.org/TR/css-forms-1/#slider-orientation",
+        "title": "Changing the Orientation of a Slider-Like Control: slider-orientation",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-slider-orientation-left-to-right",
+      "href": "https://www.w3.org/TR/css-forms-1/#valdef-slider-orientation-left-to-right",
+      "linkingText": [
+        "left-to-right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "slider-orientation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "slider-orientation",
+        "href": "https://www.w3.org/TR/css-forms-1/#slider-orientation",
+        "title": "Changing the Orientation of a Slider-Like Control: slider-orientation",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-slider-orientation-right-to-left",
+      "href": "https://www.w3.org/TR/css-forms-1/#valdef-slider-orientation-right-to-left",
+      "linkingText": [
+        "right-to-left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "slider-orientation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "slider-orientation",
+        "href": "https://www.w3.org/TR/css-forms-1/#slider-orientation",
+        "title": "Changing the Orientation of a Slider-Like Control: slider-orientation",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-slider-orientation-top-to-bottom",
+      "href": "https://www.w3.org/TR/css-forms-1/#valdef-slider-orientation-top-to-bottom",
+      "linkingText": [
+        "top-to-bottom"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "slider-orientation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "slider-orientation",
+        "href": "https://www.w3.org/TR/css-forms-1/#slider-orientation",
+        "title": "Changing the Orientation of a Slider-Like Control: slider-orientation",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-slider-orientation-bottom-to-top",
+      "href": "https://www.w3.org/TR/css-forms-1/#valdef-slider-orientation-bottom-to-top",
+      "linkingText": [
+        "bottom-to-top"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "slider-orientation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "slider-orientation",
+        "href": "https://www.w3.org/TR/css-forms-1/#slider-orientation",
+        "title": "Changing the Orientation of a Slider-Like Control: slider-orientation",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    }
+  ]
+}
