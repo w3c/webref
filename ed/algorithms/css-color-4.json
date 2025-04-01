@@ -22,6 +22,21 @@
       ]
     },
     {
+      "html": "Conversion to the polar form is trivial:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "C = sqrt(a^2 + b^2)"
+        },
+        {
+          "html": "if (C &gt; epsilon) H = atan2(b, a) else H is missing"
+        },
+        {
+          "html": "L is the same"
+        }
+      ]
+    },
+    {
       "html": "Conversion to the rectangular form is trivial:",
       "rationale": "if",
       "steps": [
@@ -137,7 +152,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-polrect\"></a>If <var>src</var> is in a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color①\">cylindrical polar color</a> representation,\n\tfirst convert <var>col1</var> to the corresponding <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#rectangular-orthogonal-color\" id=\"ref-for-rectangular-orthogonal-color①\">rectangular orthogonal color</a> representation\n\tand let this be the new <var>col1</var>. Replace any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component⑦\">missing component</a> with zero."
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-polrect\"></a>If <var>src</var> is in a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color②\">cylindrical polar color</a> representation,\n\tfirst convert <var>col1</var> to the corresponding <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#rectangular-orthogonal-color\" id=\"ref-for-rectangular-orthogonal-color①\">rectangular orthogonal color</a> representation\n\tand let this be the new <var>col1</var>. Replace any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component⑦\">missing component</a> with zero."
         },
         {
           "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-tolinear\"></a>If <var>src</var> is not a linear-light representation,\n\tconvert it to linear light (undo gamma-encoding)\n\tand let this be the new <var>col1</var>."
@@ -149,7 +164,7 @@
           "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-CAT\"></a>If <var>dest-white</var> is not the same as <var>src-white</var>,\n\tchromatically adapt <var>xyz</var> to <var>dest-white</var> using a linear Bradford <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#chromatic-adaptation-transform\" id=\"ref-for-chromatic-adaptation-transform\">chromatic adaptation transform</a>,\n\tand let this be the new <var>xyz</var>."
         },
         {
-          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-destpolar\"></a>If <var>dest</var> is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color②\">cylindrical polar color</a> representation,\n\tlet <var>dest-rect</var> be the corresponding <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#rectangular-orthogonal-color\" id=\"ref-for-rectangular-orthogonal-color②\">rectangular orthogonal color</a> representation.\n\tOtherwise, let <var>dest-rect</var> be <var>dest</var>."
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-destpolar\"></a>If <var>dest</var> is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color③\">cylindrical polar color</a> representation,\n\tlet <var>dest-rect</var> be the corresponding <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#rectangular-orthogonal-color\" id=\"ref-for-rectangular-orthogonal-color②\">rectangular orthogonal color</a> representation.\n\tOtherwise, let <var>dest-rect</var> be <var>dest</var>."
         },
         {
           "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-fromXYZ\"></a>Convert <var>xyz</var> to <var>dest</var>,\n\tfollowed by applying any transfer function (gamma encoding),\n\tproducing <var>col2</var>."
@@ -158,7 +173,7 @@
           "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-display\"></a>If <var>dest</var> is a physical output color space, such as a display,\n\tthen <var>col2</var> must be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#css-gamut-mapped\" id=\"ref-for-css-gamut-mapped③\">css gamut mapped</a> so that it <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#can-be-displayed\" id=\"ref-for-can-be-displayed\">can be displayed</a>."
         },
         {
-          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-rectpol\"></a>If <var>dest-rect</var> is not the same as <var>dest</var>,\n\tin other words <var>dest</var> is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color③\">cylindrical polar color</a> representation,\n\tconvert from <var>dest-rect</var> to <var>dest</var>, and let this be <var>col2</var>.\n\tThis may produce <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component⑧\">missing component</a>s."
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-rectpol\"></a>If <var>dest-rect</var> is not the same as <var>dest</var>,\n\tin other words <var>dest</var> is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color④\">cylindrical polar color</a> representation,\n\tconvert from <var>dest-rect</var> to <var>dest</var>, and let this be <var>col2</var>.\n\tThis may produce <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component⑧\">missing component</a>s."
         }
       ]
     },
