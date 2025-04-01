@@ -1,0 +1,1474 @@
+{
+  "spec": {
+    "title": "EPUB 3.4",
+    "url": "https://w3c.github.io/epub-specs/epub34/authoring/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-codec",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-codec",
+      "linkingText": [
+        "codec"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-container-resource",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-container-resource",
+      "linkingText": [
+        "container resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-container-root-url",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-container-root-url",
+      "linkingText": [
+        "container root URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-content-url",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-content-url",
+      "linkingText": [
+        "content URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-core-media-type-resource",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-core-media-type-resource",
+      "linkingText": [
+        "core media type resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-epub-conformance-checker",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-epub-conformance-checker",
+      "linkingText": [
+        "EPUB conformance checker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-epub-container",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-epub-container",
+      "linkingText": [
+        "EPUB container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-ocf-zip-container",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-ocf-zip-container",
+      "linkingText": [
+        "OCF ZIP container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-epub-content-document",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-epub-content-document",
+      "linkingText": [
+        "EPUB content document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-epub-creator",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-epub-creator",
+      "linkingText": [
+        "EPUB creator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-epub-manifest",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-epub-manifest",
+      "linkingText": [
+        "EPUB manifest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-epub-navigation-document",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-epub-navigation-document",
+      "linkingText": [
+        "EPUB navigation document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-epub-publication",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-epub-publication",
+      "linkingText": [
+        "EPUB publication"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-epub-reading-system",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-epub-reading-system",
+      "linkingText": [
+        "EPUB reading system",
+        "EPUB reading systems",
+        "reading system",
+        "reading systems"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-epub-spine",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-epub-spine",
+      "linkingText": [
+        "EPUB spine"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-exempt-resource",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-exempt-resource",
+      "linkingText": [
+        "exempt resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-file-name",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-file-name",
+      "linkingText": [
+        "file name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-file-path",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-file-path",
+      "linkingText": [
+        "file path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-fixed-layout-document",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-fixed-layout-document",
+      "linkingText": [
+        "fixed-layout document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-foreign-content-document",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-foreign-content-document",
+      "linkingText": [
+        "foreign content document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-foreign-resource",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-foreign-resource",
+      "linkingText": [
+        "foreign resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-linked-resource",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-linked-resource",
+      "linkingText": [
+        "linked resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-media-overlay-document",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-media-overlay-document",
+      "linkingText": [
+        "media overlay document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-non-codec",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-non-codec",
+      "linkingText": [
+        "non-codec"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-ocf-abstract-container",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-ocf-abstract-container",
+      "linkingText": [
+        "OCF abstract container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-package-document",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-package-document",
+      "linkingText": [
+        "package document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-publication-resource",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-publication-resource",
+      "linkingText": [
+        "publication resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-remote-resource",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-remote-resource",
+      "linkingText": [
+        "remote resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-root-directory",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-root-directory",
+      "linkingText": [
+        "root directory"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-scripted-content-document",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-scripted-content-document",
+      "linkingText": [
+        "scripted content document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-svg-content-document",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-svg-content-document",
+      "linkingText": [
+        "SVG content document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-synthetic-spread",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-synthetic-spread",
+      "linkingText": [
+        "synthetic spread"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-top-level-content-document",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-top-level-content-document",
+      "linkingText": [
+        "top-level content document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-unique-identifier",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-unique-identifier",
+      "linkingText": [
+        "unique identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-viewport",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-viewport",
+      "linkingText": [
+        "viewport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-xhtml-content-document",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-xhtml-content-document",
+      "linkingText": [
+        "XHTML content document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-manifest-plane",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-manifest-plane",
+      "linkingText": [
+        "manifest plane"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "sec-manifest-plane",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-manifest-plane",
+        "title": "The manifest plane",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-spine-plane",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-spine-plane",
+      "linkingText": [
+        "spine plane"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "sec-spine-plane",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-spine-plane",
+        "title": "The spine plane",
+        "number": "3.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-content-plane",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-content-plane",
+      "linkingText": [
+        "content plane"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "sec-content-plane",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-content-plane",
+        "title": "The content plane",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-manifest-fallback-chain",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-manifest-fallback-chain",
+      "linkingText": [
+        "manifest fallback chain"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-manifest-fallbacks",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-manifest-fallbacks",
+        "title": "Manifest fallbacks",
+        "number": "3.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-valid-relative-container-url-with-fragment-string",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-valid-relative-container-url-with-fragment-string",
+      "linkingText": [
+        "valid-relative-ocf-URL-with-fragment string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-container-iri",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-container-iri",
+        "title": "URLs in the OCF abstract container",
+        "number": "4.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-container",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-container",
+      "linkingText": [
+        "container"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-container.xml-container-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-container.xml-container-elem",
+        "title": "The container element",
+        "number": "4.2.6.3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rootfiles",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-rootfiles",
+      "linkingText": [
+        "rootfiles"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-container.xml-rootfiles-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-container.xml-rootfiles-elem",
+        "title": "The rootfiles element",
+        "number": "4.2.6.3.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rootfile",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-rootfile",
+      "linkingText": [
+        "rootfile"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-container.xml-rootfile-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-container.xml-rootfile-elem",
+        "title": "The rootfile element",
+        "number": "4.2.6.3.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-links",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-links",
+      "linkingText": [
+        "links"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-container.xml-links-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-container.xml-links-elem",
+        "title": "The links element",
+        "number": "4.2.6.3.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-encryption",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-encryption",
+      "linkingText": [
+        "encryption"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-encryption.xml-encryption",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-encryption.xml-encryption",
+        "title": "The encryption element",
+        "number": "4.2.6.3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-encryptedkey",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-encryptedkey",
+      "linkingText": [
+        "EncryptedKey"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-encryption.xml-encryption",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-encryption.xml-encryption",
+        "title": "The encryption element",
+        "number": "4.2.6.3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-encrypteddata",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-encrypteddata",
+      "linkingText": [
+        "EncryptedData"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-encryption.xml-encryption",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-encryption.xml-encryption",
+        "title": "The encryption element",
+        "number": "4.2.6.3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-compression",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-compression",
+      "linkingText": [
+        "Compression"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-enc-compression",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-enc-compression",
+        "title": "Order of compression and encryption",
+        "number": "4.2.6.3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-signatures",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-signatures",
+      "linkingText": [
+        "signatures"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-signatures.xml-signatures",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-signatures.xml-signatures",
+        "title": "The signatures element",
+        "number": "4.2.6.3.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-package",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-package",
+      "linkingText": [
+        "package"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-package-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-package-elem",
+        "title": "The package element",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-metadata",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-metadata",
+      "linkingText": [
+        "metadata"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-metadata-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-metadata-elem",
+        "title": "The metadata element",
+        "number": "5.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-value",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-metadata-values",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-metadata-values",
+        "title": "Metadata values",
+        "number": "5.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-dc-identifier",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-dc-identifier",
+      "linkingText": [
+        "dc:identifier"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-opf-dcidentifier",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-opf-dcidentifier",
+        "title": "The dc:identifier element",
+        "number": "5.5.3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-dc-title",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-dc-title",
+      "linkingText": [
+        "dc:title"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-opf-dctitle",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-opf-dctitle",
+        "title": "The dc:title element",
+        "number": "5.5.3.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-dc-language",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-dc-language",
+      "linkingText": [
+        "dc:language"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-opf-dclanguage",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-opf-dclanguage",
+        "title": "The dc:language element",
+        "number": "5.5.3.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-dc-contributor",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-dc-contributor",
+      "linkingText": [
+        "dc:contributor"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-opf-dccontributor",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-opf-dccontributor",
+        "title": "The dc:contributor element",
+        "number": "5.5.3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-dc-creator",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-dc-creator",
+      "linkingText": [
+        "dc:creator"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-opf-dccreator",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-opf-dccreator",
+        "title": "The dc:creator element",
+        "number": "5.5.3.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-dc-date",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-dc-date",
+      "linkingText": [
+        "dc:date"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-opf-dcdate",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-opf-dcdate",
+        "title": "The dc:date element",
+        "number": "5.5.3.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-dc-subject",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-dc-subject",
+      "linkingText": [
+        "dc:subject"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-opf-dcsubject",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-opf-dcsubject",
+        "title": "The dc:subject element",
+        "number": "5.5.3.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-dc-type",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-dc-type",
+      "linkingText": [
+        "dc:type"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-opf-dctype",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-opf-dctype",
+        "title": "The dc:type element",
+        "number": "5.5.3.2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-meta",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-meta",
+      "linkingText": [
+        "meta"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-meta-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-meta-elem",
+        "title": "The meta element",
+        "number": "5.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-dcterms-modified",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-dcterms-modified",
+      "linkingText": [
+        "dcterms:modified"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-metadata-last-modified",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-metadata-last-modified",
+        "title": "Last modified date",
+        "number": "5.5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-link",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-link",
+      "linkingText": [
+        "link"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-link-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-link-elem",
+        "title": "The link element",
+        "number": "5.5.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-manifest",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-manifest",
+      "linkingText": [
+        "manifest"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-manifest-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-manifest-elem",
+        "title": "The manifest element",
+        "number": "5.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-item",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-item",
+      "linkingText": [
+        "item"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-item-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-item-elem",
+        "title": "The item element",
+        "number": "5.6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-spine",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-spine",
+      "linkingText": [
+        "spine"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-spine-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-spine-elem",
+        "title": "The spine element",
+        "number": "5.7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-itemref",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-itemref",
+      "linkingText": [
+        "itemref"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-itemref-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-itemref-elem",
+        "title": "The itemref element",
+        "number": "5.7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-collection",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-collection",
+      "linkingText": [
+        "collection"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-collection-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-collection-elem",
+        "title": "The collection element",
+        "number": "5.8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-smil",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-smil",
+      "linkingText": [
+        "smil"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-smil-smil-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-smil-smil-elem",
+        "title": "The smil element",
+        "number": "9.2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-head",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-head",
+      "linkingText": [
+        "head"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-smil-head-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-smil-head-elem",
+        "title": "The head element",
+        "number": "9.2.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-body",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-body",
+      "linkingText": [
+        "body"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-smil-body-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-smil-body-elem",
+        "title": "The body element",
+        "number": "9.2.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-seq",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-seq",
+      "linkingText": [
+        "seq"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-smil-seq-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-smil-seq-elem",
+        "title": "The seq element",
+        "number": "9.2.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-par",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-par",
+      "linkingText": [
+        "par"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-smil-par-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-smil-par-elem",
+        "title": "The par element",
+        "number": "9.2.2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-text",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-smil-text-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-smil-text-elem",
+        "title": "The text element",
+        "number": "9.2.2.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-audio",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-audio",
+      "linkingText": [
+        "audio"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-smil-audio-elem",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-smil-audio-elem",
+        "title": "The audio element",
+        "number": "9.2.2.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-epub-type",
+      "href": "https://w3c.github.io/epub-specs/epub34/authoring/#dfn-epub-type",
+      "linkingText": [
+        "epub:type"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-epub-type-attribute",
+        "href": "https://w3c.github.io/epub-specs/epub34/authoring/#sec-epub-type-attribute",
+        "title": "The epub:type attribute",
+        "number": "C.2"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}
