@@ -7,14 +7,14 @@
     {
       "name": "deduct privacy budget",
       "href": "https://w3c.github.io/ppa/#deduct-privacy-budget",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"deduct-privacy-budget\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">deduct privacy budget</dfn> given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-key\" id=\"ref-for-privacy-budget-key①\">privacy budget key</a> <var>key</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-page-floats-3/#float\" id=\"ref-for-float①\">float</a> <var>epsilon</var>, integer <var>sensitivity</var>, and integer <var>globalSensitivity</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"deduct-privacy-budget\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">deduct privacy budget</dfn> given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-key\" id=\"ref-for-privacy-budget-key①\">privacy budget key</a> <var>key</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-page-floats-3/#float\" id=\"ref-for-float①\">float</a> <var>epsilon</var>,\ninteger <var>sensitivity</var>,\nand integer <var>globalSensitivity</var>:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-store\" id=\"ref-for-privacy-budget-store③\">privacy budget store</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">contain</a> <var>key</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">set</a> its value of <var>key</var> to be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑦\">user agent</a>-defined value.</p>"
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-store\" id=\"ref-for-privacy-budget-store④\">privacy budget store</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">contain</a> <var>key</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">set</a> its value of <var>key</var> to be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑧\">user agent</a>-defined value.</p>"
         },
         {
-          "html": "<p>Let <var>currentValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get\">getting the value</a> of <var>key</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-store\" id=\"ref-for-privacy-budget-store④\">privacy budget store</a>.</p>"
+          "html": "<p>Let <var>currentValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get\">getting the value</a> of <var>key</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-store\" id=\"ref-for-privacy-budget-store⑤\">privacy budget store</a>.</p>"
         },
         {
           "html": "<p>If <var>currentValue</var> is less than or equal to 0, return false.</p>"
@@ -23,10 +23,62 @@
           "html": "<p>Let <var>newValue</var> be <var>currentValue</var> - <var>epsilon</var> * <var>sensitivity</var> / <var>globalSensitivity</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">Set</a> the value of <var>key</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-store\" id=\"ref-for-privacy-budget-store⑤\">privacy budget store</a> to <var>newValue</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">Set</a> the value of <var>key</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-store\" id=\"ref-for-privacy-budget-store⑥\">privacy budget store</a> to <var>newValue</var>.</p>"
         },
         {
           "html": "<p>Return whether <var>newValue</var> is greater than or equal to 0.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get the current epoch",
+      "href": "https://w3c.github.io/ppa/#get-the-current-epoch",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-current-epoch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the current epoch</dfn> given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site①①\">site</a> <var>site</var>,\nand <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment①\">moment</a> <var>now</var>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>period</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration\">duration</a> of one <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-epoch\" id=\"ref-for-privacy-budget-epoch④\">epoch</a>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#epoch-start-store\" id=\"ref-for-epoch-start-store①\">epoch start store</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">contain</a> <var>site</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">set</a> its value to <var>now</var>, minus a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration①\">duration</a> that is randomly selected\nfrom between 0 (inclusive) and <var>period</var> (exclusive).</p>"
+        },
+        {
+          "html": "<p>Let <var>start</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get①\">getting the value</a> of <var>site</var> from the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#epoch-start-store\" id=\"ref-for-epoch-start-store②\">epoch start store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>elapsed</var> be (<var>now</var> - <var>start</var>) / <var>period</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>elapsed</var> as an integer, rounded towards negative Infinity.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get the starting epoch for attribution",
+      "href": "https://w3c.github.io/ppa/#get-the-starting-epoch-for-attribution",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-starting-epoch-for-attribution\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the starting epoch for attribution</dfn> given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site①⑧\">site</a> site:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>startEpoch</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent①①\">user agent</a>-defined value\nfor the earliest <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-epoch\" id=\"ref-for-privacy-budget-epoch⑧\">epoch</a> that is supported for attribution.</p>"
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#last-browsing-history-clear\" id=\"ref-for-last-browsing-history-clear④\">last browsing history clear</a> is set,\nperform the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>clearEpoch</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#get-the-current-epoch\" id=\"ref-for-get-the-current-epoch\">get the current epoch</a> with <var>site</var> and the value of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#last-browsing-history-clear\" id=\"ref-for-last-browsing-history-clear⑤\">last browsing history clear</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>clearEpoch</var> to <var>clearEpoch</var> + 2.</p>"
+            },
+            {
+              "html": "<p>If <var>clearEpoch</var> is greater than <var>startEpoch</var>,\nreturn <var>clearEpoch</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>startEpoch</var>.</p>"
         }
       ]
     },
@@ -41,10 +93,10 @@
           "rationale": "/^otherwise(\\,| )/i",
           "steps": [
             {
-              "html": "<p>The timestamp is set to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time\">current high resolution time</a>.</p>"
+              "html": "<p>The timestamp is set to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time①\">current high resolution time</a>.</p>"
             },
             {
-              "html": "<p>The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-site\" id=\"ref-for-impression-site⑥\">impression site</a> is set to the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#obtain-a-site\" id=\"ref-for-obtain-a-site\">obtaining a site</a> from the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin②\">top-level origin</a>.</p>"
+              "html": "<p>The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-site\" id=\"ref-for-impression-site⑦\">impression site</a> is set to the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#obtain-a-site\" id=\"ref-for-obtain-a-site\">obtaining a site</a> from the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin②\">top-level origin</a>.</p>"
             },
             {
               "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#intermediary-site\" id=\"ref-for-intermediary-site⑤\">intermediary site</a> is set to",
@@ -68,12 +120,12 @@
               "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionimpressionoptions-lifetimedays\" id=\"ref-for-dom-privateattributionimpressionoptions-lifetimedays②\">lifetimeDays</a></code> is 0,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror\">RangeError</a></code>.</p>"
             },
             {
-              "html": "<p>Clamp <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionimpressionoptions-lifetimedays\" id=\"ref-for-dom-privateattributionimpressionoptions-lifetimedays③\">lifetimeDays</a></code> to\nthe <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑧\">user agent</a>’s upper limit.</p>"
+              "html": "<p>Clamp <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionimpressionoptions-lifetimedays\" id=\"ref-for-dom-privateattributionimpressionoptions-lifetimedays③\">lifetimeDays</a></code> to\nthe <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent①②\">user agent</a>’s upper limit.</p>"
             }
           ]
         },
         {
-          "html": "<p>If the Private Attribution API is <a href=\"https://w3c.github.io/ppa/#opt-out\">enabled</a>, save the impression\nto the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-store\" id=\"ref-for-impression-store⑥\">impression store</a>.</p>"
+          "html": "<p>If the Private Attribution API is <a href=\"https://w3c.github.io/ppa/#opt-out\">enabled</a>, save the impression\nto the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-store\" id=\"ref-for-impression-store⑦\">impression store</a>.</p>"
         }
       ]
     },
@@ -88,7 +140,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>now</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time①\">current high resolution time</a>.</p>"
+              "html": "<p>Let <var>now</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time②\">current high resolution time</a>.</p>"
             },
             {
               "html": "<p>Let <var>topLevelSite</var> (the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#conversion-site\" id=\"ref-for-conversion-site③\">conversion site</a>) be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#obtain-a-site\" id=\"ref-for-obtain-a-site②\">obtaining a site</a> from the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin④\">top-level origin</a>.</p>"
@@ -157,14 +209,20 @@
     {
       "name": "do attribution and fill a histogram",
       "href": "https://w3c.github.io/ppa/#do-attribution-and-fill-a-histogram",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"do-attribution-and-fill-a-histogram\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">do attribution and fill a histogram</dfn>, given <a class=\"idl-code\" data-link-type=\"dictionary\" href=\"https://w3c.github.io/ppa/#dictdef-privateattributionconversionoptions\" id=\"ref-for-dictdef-privateattributionconversionoptions③\"><var>options</var></a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site⑧\">site</a> <var>topLevelSite</var>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment\">moment</a> <var>now</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"do-attribution-and-fill-a-histogram\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">do attribution and fill a histogram</dfn>, given <a class=\"idl-code\" data-link-type=\"dictionary\" href=\"https://w3c.github.io/ppa/#dictdef-privateattributionconversionoptions\" id=\"ref-for-dictdef-privateattributionconversionoptions③\"><var>options</var></a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site①⑨\">site</a> <var>topLevelSite</var>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment③\">moment</a> <var>now</var>:",
       "rationale": "let",
       "steps": [
         {
           "html": "<p>Let <var>matchedImpressions</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets④\">set</a>.</p>"
         },
         {
-          "html": "For each <var>epoch</var> starting from the oldest <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-epoch\" id=\"ref-for-privacy-budget-epoch①\">epoch</a> supported by the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑨\">user agent</a> to the current <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-epoch\" id=\"ref-for-privacy-budget-epoch②\">privacy budget epoch</a>:",
+          "html": "<p>Let <var>currentEpoch</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#get-the-current-epoch\" id=\"ref-for-get-the-current-epoch②\">get the current epoch</a> with <var>site</var> and <var>now</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>startEpoch</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#get-the-starting-epoch-for-attribution\" id=\"ref-for-get-the-starting-epoch-for-attribution\">get the starting epoch for attribution</a> with <var>site</var>.</p>"
+        },
+        {
+          "html": "For each <var>epoch</var> from <var>startEpoch</var> to <var>currentEpoch</var>, inclusive:",
           "rationale": "let",
           "steps": [
             {
@@ -175,7 +233,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>key</var> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-key\" id=\"ref-for-privacy-budget-key②\">privacy budget key</a> whose items are <var>epoch</var> and <var>topLevelSite</var>.</p>"
+                  "html": "<p>Let <var>key</var> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-key\" id=\"ref-for-privacy-budget-key③\">privacy budget key</a> whose items are <var>epoch</var> and <var>topLevelSite</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>budgetOk</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#deduct-privacy-budget\" id=\"ref-for-deduct-privacy-budget①\">deduct privacy budget</a> with <var>key</var>, <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-epsilon\" id=\"ref-for-dom-privateattributionconversionoptions-epsilon①\">epsilon</a></code>, <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-value\" id=\"ref-for-dom-privateattributionconversionoptions-value③\">value</a></code>,\nand <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-maxvalue\" id=\"ref-for-dom-privateattributionconversionoptions-maxvalue②\">maxValue</a></code>.</p>"
@@ -221,27 +279,27 @@
     {
       "name": "common matching logic",
       "href": "https://w3c.github.io/ppa/#common-matching-logic",
-      "html": "To perform <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"common-matching-logic\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">common matching logic</dfn>, given <a class=\"idl-code\" data-link-type=\"dictionary\" href=\"https://w3c.github.io/ppa/#dictdef-privateattributionconversionoptions\" id=\"ref-for-dictdef-privateattributionconversionoptions④\"><var>options</var></a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-epoch\" id=\"ref-for-privacy-budget-epoch③\">epoch</a> <var>epoch</var>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment①\">moment</a> <var>now</var>:",
+      "html": "To perform <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"common-matching-logic\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">common matching logic</dfn>, given <a class=\"idl-code\" data-link-type=\"dictionary\" href=\"https://w3c.github.io/ppa/#dictdef-privateattributionconversionoptions\" id=\"ref-for-dictdef-privateattributionconversionoptions④\"><var>options</var></a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#privacy-budget-epoch\" id=\"ref-for-privacy-budget-epoch①①\">epoch</a> <var>epoch</var>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment④\">moment</a> <var>now</var>:",
       "rationale": "let",
       "steps": [
         {
           "html": "<p>Let <var>matching</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets⑤\">set</a>.</p>"
         },
         {
-          "html": "<p>Let <var>lookbackDays</var> be <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-lookbackdays\" id=\"ref-for-dom-privateattributionconversionoptions-lookbackdays③\">lookbackDays</a></code> if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a>, the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> maximum otherwise.</p>"
+          "html": "<p>Let <var>lookbackDays</var> be <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-lookbackdays\" id=\"ref-for-dom-privateattributionconversionoptions-lookbackdays③\">lookbackDays</a></code> if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>, the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> maximum otherwise.</p>"
         },
         {
           "html": "<p>If the number of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#day\" id=\"ref-for-day\">days</a> since the end of <var>epoch</var> exceeds <var>lookbackDays</var>,\nreturn <var>matching</var>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>impression</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-store\" id=\"ref-for-impression-store⑦\">impression store</a> for the <var>epoch</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>impression</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-store\" id=\"ref-for-impression-store⑧\">impression store</a> for the <var>epoch</var>:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If <var>now</var> - <var>lookbackDays</var> is after <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-timestamp\" id=\"ref-for-impression-timestamp①\">timestamp</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
             },
             {
-              "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-filterdata\" id=\"ref-for-dom-privateattributionconversionoptions-filterdata④\">filterData</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>,\nand it is not equal to <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-filter-data\" id=\"ref-for-impression-filter-data②\">filter data</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+              "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-filterdata\" id=\"ref-for-dom-privateattributionconversionoptions-filterdata④\">filterData</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exists</a>,\nand it is not equal to <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-filter-data\" id=\"ref-for-impression-filter-data②\">filter data</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
             },
             {
               "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-impressionsites\" id=\"ref-for-dom-privateattributionconversionoptions-impressionsites②\">impressionSites</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression-impression-site\" id=\"ref-for-impression-impression-site\">impression site</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"

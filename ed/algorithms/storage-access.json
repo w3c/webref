@@ -108,7 +108,15 @@
         },
         {
           "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①\">client</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#TODO\" id=\"ref-for-TODO\">ancestry</a> is not \"<code>cross-site</code>\", return \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#storage-access-eligibility-unset\" id=\"ref-for-storage-access-eligibility-unset②\">unset</a></code>\"</p>"
-        },
+        }
+      ]
+    },
+    {
+      "name": "determine the initial storage-access eligibility",
+      "href": "https://privacycg.github.io/storage-access/#determine-the-initial-storage-access-eligibility",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-the-initial-storage-access-eligibility\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the initial storage-access eligibility</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④\">request</a> <var>request</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
         {
           "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client②\">client</a>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#environment-has-storage-access\" id=\"ref-for-environment-has-storage-access①\">has storage access</a> is false, return \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#storage-access-eligibility-ineligible\" id=\"ref-for-storage-access-eligibility-ineligible\">ineligible</a></code>\".</p>"
         },
