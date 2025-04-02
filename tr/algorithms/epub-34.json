@@ -1,0 +1,151 @@
+{
+  "spec": {
+    "title": "EPUB 3.4",
+    "url": "https://www.w3.org/TR/epub-34/"
+  },
+  "algorithms": [
+    {
+      "name": "manifest plane",
+      "href": "https://www.w3.org/TR/epub-34/#dfn-manifest-plane",
+      "html": "To <dfn class=\"export\" data-lt-no-plural=\"\" data-export=\"\" id=\"dfn-manifest-plane\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">manifest plane</dfn> defines all the resources of an\n\t\t\t\t\t\t<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/epub-34/#dfn-epub-publication\" class=\"internalDFN\" id=\"ref-for-dfn-epub-publication-21\">EPUB publication</a>. It is analogous to the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/epub-34/#dfn-package-document\" class=\"internalDFN\" id=\"ref-for-dfn-package-document-11\">package document</a> <a data-link-type=\"dfn|abstract-op\" data-lt=\"EPUB manifest\" href=\"https://www.w3.org/TR/epub-34/#dfn-epub-manifest\" class=\"internalDFN\" id=\"ref-for-dfn-epub-manifest-2\">manifest</a>,\n\t\t\t\t\t\tbut includes resources not present in that list.",
+      "rationale": "To <dfn>"
+    },
+    {
+      "html": "To <strong>derive the file path</strong>, given a file or directory <var>file</var> in the <a href=\"https://www.w3.org/TR/epub-34/#sec-container-abstract\">OCF abstract container</a>, apply the following steps\n\t\t\t\t\t\t(expressed using the terminology of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/epub-34/#bib-infra\" title=\"Infra Standard\">infra</a></cite>]):",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>path</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-index-term-list-0-1\">list</a>."
+        },
+        {
+          "html": "Let <var>current</var> be <var>file</var>."
+        },
+        {
+          "html": "While <var>current</var> is not the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/epub-34/#dfn-root-directory\" class=\"internalDFN\" id=\"ref-for-dfn-root-directory-5\">root directory</a>:",
+          "rationale": "prepend",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-prepend\" id=\"ref-for-index-term-prepend-for-list-1\">prepend</a> the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/epub-34/#dfn-file-name\" class=\"internalDFN\" id=\"ref-for-dfn-file-name-2\">file name</a> of <var>current</var> to <var>path</var>;"
+            },
+            {
+              "html": "set <var>current</var> to the parent directory of <var>current</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return the <a href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-index-term-concatenation-1\">concatenation</a> of <var>path</var>\n\t\t\t\t\t\t\tusing the <code>U+002F&nbsp;(/)</code> character."
+        }
+      ]
+    },
+    {
+      "name": "valid-relative-ocf-URL-with-fragment string",
+      "href": "https://www.w3.org/TR/epub-34/#dfn-valid-relative-container-url-with-fragment-string",
+      "html": "A string <var>url</var> is a <dfn class=\"export\" id=\"dfn-valid-relative-container-url-with-fragment-string\" data-export=\"\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">valid-relative-ocf-URL-with-fragment string</dfn> if it is a\n\t\t\t\t\t\t<a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#path-relative-scheme-less-url-string\" id=\"ref-for-index-term-path-relative-scheme-less-url-string-1\">path-relative-scheme-less-url string</a>, optionally followed by <code>U+0023&nbsp;(#)</code>\n\t\t\t\t\t\tand a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-fragment-string\" id=\"ref-for-index-term-url-fragment-string-1\">url-fragment string</a>, and if the following steps return <var>true</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/epub-34/#dfn-container-root-url\" class=\"internalDFN\" id=\"ref-for-dfn-container-root-url-6\">container root URL</a> to <code>https://a.example.org/A/</code>.</p>\n\t\t\t\t\t\t\t<details class=\"explanation\">\n\t\t\t\t\t\t\t\t<summary>Explanation</summary>\n\t\t\t\t\t\t\t\t<p>The goal of the algorithm is to detect whether <var>url</var> could be seen as\n\t\t\t\t\t\t\t\t\t\"leaking\" outside the container. To do that, the standard <a data-link-type=\"dfn\" data-lt=\"url parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-index-term-url-parser-4\">URL parsing algorithm</a> is used with an artificial root URL; the detection of the \"leak\" is done\n\t\t\t\t\t\t\t\t\tby comparing the result of the parsing with the presence of the first test path\n\t\t\t\t\t\t\t\t\tsegment (<code>A</code>). (Note that the artificial container root URL wilfully\n\t\t\t\t\t\t\t\t\tviolates, for the purpose of this algorithm, the <a href=\"https://www.w3.org/TR/epub-34/#sec-root-url-properties\">required properties</a> by using that first test path segment.)</p>\n\t\t\t\t\t\t\t</details>"
+        },
+        {
+          "html": "<p>Let <var>base</var> be the <a href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-index-term-base-4\">base URL</a> that must be\n\t\t\t\t\t\t\t\tused to parse <var>url</var> as defined by the context (document or environment) where\n\t\t\t\t\t\t\t\t\t<var>url</var> is used, and according to the content URL of the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/epub-34/#dfn-package-document\" class=\"internalDFN\" id=\"ref-for-dfn-package-document-16\">package document</a>\n\t\t\t\t\t\t\t\t(see <a href=\"https://www.w3.org/TR/epub-34/#sec-parse-package-urls\" class=\"sec-ref\"><bdi class=\"secno\">5.2 </bdi>Parsing URLs in the package document</a>).</p>\n\t\t\t\t\t\t\t<details class=\"explanation\">\n\t\t\t\t\t\t\t\t<summary>Explanation</summary>\n\t\t\t\t\t\t\t\t<p>In the case of a URL in the package document the <var>base</var> variable is set to\n\t\t\t\t\t\t\t\t\tthe content URL of the package document. In the case of a document within the\n\t\t\t\t\t\t\t\t\t\t<code>META-INF</code> directory, the <var>base</var> variable is set to the\n\t\t\t\t\t\t\t\t\tcontainer root URL (see <a href=\"https://www.w3.org/TR/epub-34/#sec-parsing-urls-metainf\" class=\"sec-ref\"><bdi class=\"secno\">4.2.6.2 </bdi>Parsing URLs in the <code>META-INF</code> directory</a>). In the case of a\n\t\t\t\t\t\t\t\t\tURL in an <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/epub-34/#dfn-xhtml-content-document\" class=\"internalDFN\" id=\"ref-for-dfn-xhtml-content-document-10\">XHTML content document</a>, the base URL used for parsing is defined by\n\t\t\t\t\t\t\t\t\tthe <a href=\"https://html.spec.whatwg.org/multipage/#resolving-urls\" id=\"ref-for-index-term-html-standard-1\">HTML standard</a>. Typically, it will be the\n\t\t\t\t\t\t\t\t\tcontent URL of the content document (unless the <a href=\"https://www.w3.org/TR/epub-34/#sec-xhtml-deviations-base\">discouraged</a>\n\t\t\t\t\t\t\t\t\t<code>base</code> element is used).</p>\n\t\t\t\t\t\t\t</details>"
+        },
+        {
+          "html": "Let <var>testURLRecord</var> be the result of applying the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-index-term-url-parser-5\">URL parser</a> to <var>url</var>,\n\t\t\t\t\t\t\twith <var>base</var>."
+        },
+        {
+          "html": "Let <var>testURLStringA</var> be the result of applying the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-index-term-url-serializer-1\">URL Serializer</a> to\n\t\t\t\t\t\t\t\t<var>testURLRecord</var>."
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/epub-34/#dfn-container-root-url\" class=\"internalDFN\" id=\"ref-for-dfn-container-root-url-7\">container root URL</a> to <code>https://b.example.org/B/</code>.</p>\n\t\t\t\t\t\t\t<details class=\"explanation\">\n\t\t\t\t\t\t\t\t<summary>Explanation</summary>\n\t\t\t\t\t\t\t\t<p>The reasons to repeat the same steps twice with different, and artificial, settings\n\t\t\t\t\t\t\t\t\tof the container root URL is to avoid collision which may occur if the\n\t\t\t\t\t\t\t\t\t\t<var>url</var> string also includes <code>/A/</code>. Consider, for example, the\n\t\t\t\t\t\t\t\t\tcase where <var>url</var> is <code>../../A/doc.xhtml</code>.</p>\n\t\t\t\t\t\t\t</details>"
+        },
+        {
+          "html": "Set <var>base</var> to be the <a href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-index-term-base-5\">base URL</a> that must be\n\t\t\t\t\t\t\tused to parse <var>url</var> as defined by the context (document or environment) where\n\t\t\t\t\t\t\t\t<var>url</var> is used, and according to the content URL of the package document (see <a href=\"https://www.w3.org/TR/epub-34/#sec-parse-package-urls\" class=\"sec-ref\"><bdi class=\"secno\">5.2 </bdi>Parsing URLs in the package document</a>)."
+        },
+        {
+          "html": "Set <var>testURLRecord</var> to be the result of applying the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-index-term-url-parser-6\">URL parser</a> to\n\t\t\t\t\t\t\t\t<var>url</var>, with <var>base</var>."
+        },
+        {
+          "html": "Let <var>testURLStringB</var> be the result of applying the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-index-term-url-serializer-2\">URL Serializer</a> to\n\t\t\t\t\t\t\t\t<var>testURLRecord</var>."
+        },
+        {
+          "html": "<p>If <var>testURLStringA</var> does not start with <code>https://a.example.org/</code> or\n\t\t\t\t\t\t\t\t\t<var>testURLStringB</var> does not start with <code>https://b.example.org/</code>,\n\t\t\t\t\t\t\t\treturn <var>true</var>.</p>\n\t\t\t\t\t\t\t<details class=\"explanation\">\n\t\t\t\t\t\t\t\t<summary>Explanation</summary>\n\t\t\t\t\t\t\t\t<p>If any of the result does not share the test URL host, it means that <var>url</var>,\n\t\t\t\t\t\t\t\t\tor its base URL (for example, in HTML, if it is explicitly set with the\n\t\t\t\t\t\t\t\t\t\t<code>base</code> element), was <em>absolute</em> and points outside the\n\t\t\t\t\t\t\t\t\tcontainer. This is acceptable.</p>\n\t\t\t\t\t\t\t</details>"
+        },
+        {
+          "html": "<p>If <var>testURLStringA</var> starts with <code>https://a.example.org/A/</code> and\n\t\t\t\t\t\t\t\t\t<var>testURLStringB</var> starts with <code>https://b.example.org/B/</code>, return\n\t\t\t\t\t\t\t\t\t<var>true</var>.</p>\n\t\t\t\t\t\t\t<details class=\"explanation\">\n\t\t\t\t\t\t\t\t<summary>Explanation</summary>\n\t\t\t\t\t\t\t\t<p>The presence of the first test path segments (<code>A</code>, respectively\n\t\t\t\t\t\t\t\t\t\t<code>B</code>) indicate that the URL doesn't leak outside the container.</p>\n\t\t\t\t\t\t\t</details>"
+        },
+        {
+          "html": "Return <var>false</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following pseudo-code exemplifies the obfuscation algorithm.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "set <var>ocf</var> to OCF ZIP container file"
+        },
+        {
+          "html": "set <var>source</var> to font file"
+        },
+        {
+          "html": "set <var>destination</var> to obfuscated font file"
+        },
+        {
+          "html": "set <var>keyData</var> to key for file"
+        },
+        {
+          "html": "set <var>outer</var> to 0"
+        },
+        {
+          "html": "<span>while <var>outer</var> &lt; 52 and not (<var>source</var> at EOF)</span>",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "set <var>inner</var> to 0"
+            },
+            {
+              "html": "<span>while <var>inner</var> &lt; 20 and not (<var>source</var> at EOF)</span>",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "read 1 byte from <var>source</var> (Assumes read advances file\n\t\t\t\t\t\t\t\t\t\t\tposition)"
+                },
+                {
+                  "html": "set <var>sourceByte</var> to result of read"
+                },
+                {
+                  "html": "set <var>keyByte</var> to byte <var>inner</var> of <var>keyData</var>"
+                },
+                {
+                  "html": "set <var>obfuscatedByte</var> to (<var>sourceByte</var> XOR\n\t\t\t\t\t\t\t\t\t\t\t\t<var>keyByte</var>)"
+                },
+                {
+                  "html": "write <var>obfuscatedByte</var> to <var>destination</var>"
+                },
+                {
+                  "html": "increment <var>inner</var>"
+                }
+              ]
+            },
+            {
+              "html": "increment <var>outer</var>"
+            }
+          ]
+        },
+        {
+          "html": "<span>if not (<var>source</var> at EOF) then</span>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<span>end if</span>",
+          "ignored": [
+            "read source to EOF write result of read to destination"
+          ]
+        },
+        {
+          "html": "Deflate <var>destination</var>"
+        },
+        {
+          "html": "store <var>destination</var> as <var>source</var> in <var>ocf</var>"
+        }
+      ]
+    }
+  ]
+}

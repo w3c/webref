@@ -1,0 +1,2251 @@
+{
+  "spec": {
+    "title": "EPUB 3.4",
+    "url": "https://www.w3.org/TR/epub-34/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/epub-34/#title",
+      "level": 1,
+      "title": "EPUB 3.4"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/epub-34/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "sec-introduction",
+      "href": "https://www.w3.org/TR/epub-34/#sec-introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "sec-intro-overview",
+      "href": "https://www.w3.org/TR/epub-34/#sec-intro-overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "1.1"
+    },
+    {
+      "id": "sec-intro-spec-org",
+      "href": "https://www.w3.org/TR/epub-34/#sec-intro-spec-org",
+      "level": 3,
+      "title": "Organization",
+      "number": "1.2"
+    },
+    {
+      "id": "sec-intro-relations",
+      "href": "https://www.w3.org/TR/epub-34/#sec-intro-relations",
+      "level": 3,
+      "title": "Relationship to other specifications",
+      "number": "1.3"
+    },
+    {
+      "id": "sec-overview-relations-html",
+      "href": "https://www.w3.org/TR/epub-34/#sec-overview-relations-html",
+      "level": 4,
+      "title": "Relationship to HTML",
+      "number": "1.3.1"
+    },
+    {
+      "id": "sec-overview-relations-svg",
+      "href": "https://www.w3.org/TR/epub-34/#sec-overview-relations-svg",
+      "level": 4,
+      "title": "Relationship to SVG",
+      "number": "1.3.2"
+    },
+    {
+      "id": "sec-overview-relations-css",
+      "href": "https://www.w3.org/TR/epub-34/#sec-overview-relations-css",
+      "level": 4,
+      "title": "Relationship to CSS",
+      "number": "1.3.3"
+    },
+    {
+      "id": "sec-overview-relations-mathml",
+      "href": "https://www.w3.org/TR/epub-34/#sec-overview-relations-mathml",
+      "level": 4,
+      "title": "Relationship to MathML",
+      "number": "1.3.4"
+    },
+    {
+      "id": "sec-overview-relations-smil",
+      "href": "https://www.w3.org/TR/epub-34/#sec-overview-relations-smil",
+      "level": 4,
+      "title": "Relationship to SMIL",
+      "number": "1.3.5"
+    },
+    {
+      "id": "sec-overview-relations-url",
+      "href": "https://www.w3.org/TR/epub-34/#sec-overview-relations-url",
+      "level": 4,
+      "title": "Relationship to URL",
+      "number": "1.3.6"
+    },
+    {
+      "id": "sec-terminology",
+      "href": "https://www.w3.org/TR/epub-34/#sec-terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.4"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/epub-34/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "number": "1.5"
+    },
+    {
+      "id": "sec-intro-shorthands",
+      "href": "https://www.w3.org/TR/epub-34/#sec-intro-shorthands",
+      "level": 3,
+      "title": "Authoring shorthands",
+      "number": "1.6"
+    },
+    {
+      "id": "sec-epub-conf",
+      "href": "https://www.w3.org/TR/epub-34/#sec-epub-conf",
+      "level": 2,
+      "title": "EPUB publication conformance",
+      "number": "2"
+    },
+    {
+      "id": "sec-conformance-checking",
+      "href": "https://www.w3.org/TR/epub-34/#sec-conformance-checking",
+      "level": 3,
+      "title": "Conformance checking",
+      "number": "2.1"
+    },
+    {
+      "id": "sec-publication-resources",
+      "href": "https://www.w3.org/TR/epub-34/#sec-publication-resources",
+      "level": 2,
+      "title": "Publication resources",
+      "number": "3"
+    },
+    {
+      "id": "sec-pub-res-intro",
+      "href": "https://www.w3.org/TR/epub-34/#sec-pub-res-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "3.1"
+    },
+    {
+      "id": "sec-manifest-plane",
+      "href": "https://www.w3.org/TR/epub-34/#sec-manifest-plane",
+      "level": 4,
+      "title": "The manifest plane",
+      "number": "3.1.1"
+    },
+    {
+      "id": "sec-spine-plane",
+      "href": "https://www.w3.org/TR/epub-34/#sec-spine-plane",
+      "level": 4,
+      "title": "The spine plane",
+      "number": "3.1.2"
+    },
+    {
+      "id": "sec-content-plane",
+      "href": "https://www.w3.org/TR/epub-34/#sec-content-plane",
+      "level": 4,
+      "title": "The content plane",
+      "number": "3.1.3"
+    },
+    {
+      "id": "sec-core-media-types",
+      "href": "https://www.w3.org/TR/epub-34/#sec-core-media-types",
+      "level": 3,
+      "title": "Core media types",
+      "number": "3.2"
+    },
+    {
+      "id": "sec-foreign-resources",
+      "href": "https://www.w3.org/TR/epub-34/#sec-foreign-resources",
+      "level": 3,
+      "title": "Foreign resources",
+      "number": "3.3"
+    },
+    {
+      "id": "sec-exempt-resources",
+      "href": "https://www.w3.org/TR/epub-34/#sec-exempt-resources",
+      "level": 3,
+      "title": "Exempt resources",
+      "number": "3.4"
+    },
+    {
+      "id": "sec-resource-fallbacks",
+      "href": "https://www.w3.org/TR/epub-34/#sec-resource-fallbacks",
+      "level": 3,
+      "title": "Resource fallbacks",
+      "number": "3.5"
+    },
+    {
+      "id": "sec-manifest-fallbacks",
+      "href": "https://www.w3.org/TR/epub-34/#sec-manifest-fallbacks",
+      "level": 4,
+      "title": "Manifest fallbacks",
+      "number": "3.5.1"
+    },
+    {
+      "id": "sec-intrinsic-fallbacks",
+      "href": "https://www.w3.org/TR/epub-34/#sec-intrinsic-fallbacks",
+      "level": 4,
+      "title": "Intrinsic fallbacks",
+      "number": "3.5.2"
+    },
+    {
+      "id": "sec-fallbacks-audio",
+      "href": "https://www.w3.org/TR/epub-34/#sec-fallbacks-audio",
+      "level": 5,
+      "title": "HTML audio and video fallbacks",
+      "number": "3.5.2.1"
+    },
+    {
+      "id": "sec-fallbacks-img",
+      "href": "https://www.w3.org/TR/epub-34/#sec-fallbacks-img",
+      "level": 5,
+      "title": "HTML img fallbacks",
+      "number": "3.5.2.2"
+    },
+    {
+      "id": "html-script-element",
+      "href": "https://www.w3.org/TR/epub-34/#html-script-element",
+      "level": 5,
+      "title": "HTML script element",
+      "number": "3.5.2.3"
+    },
+    {
+      "id": "sec-resource-locations",
+      "href": "https://www.w3.org/TR/epub-34/#sec-resource-locations",
+      "level": 3,
+      "title": "Resource locations",
+      "number": "3.6"
+    },
+    {
+      "id": "sec-data-urls",
+      "href": "https://www.w3.org/TR/epub-34/#sec-data-urls",
+      "level": 3,
+      "title": "Data URLs",
+      "number": "3.7"
+    },
+    {
+      "id": "sec-file-urls",
+      "href": "https://www.w3.org/TR/epub-34/#sec-file-urls",
+      "level": 3,
+      "title": "File URLs",
+      "number": "3.8"
+    },
+    {
+      "id": "sec-xml-constraints",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xml-constraints",
+      "level": 3,
+      "title": "XML conformance",
+      "number": "3.9"
+    },
+    {
+      "id": "sec-ocf",
+      "href": "https://www.w3.org/TR/epub-34/#sec-ocf",
+      "level": 2,
+      "title": "Open Container Format (OCF)",
+      "number": "4"
+    },
+    {
+      "id": "sec-ocf-intro",
+      "href": "https://www.w3.org/TR/epub-34/#sec-ocf-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "4.1"
+    },
+    {
+      "id": "sec-container-abstract",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container-abstract",
+      "level": 3,
+      "title": "OCF abstract container",
+      "number": "4.2"
+    },
+    {
+      "id": "sec-container-abstract-intro",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container-abstract-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "4.2.1"
+    },
+    {
+      "id": "sec-container-file-and-dir-structure",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container-file-and-dir-structure",
+      "level": 4,
+      "title": "File and directory structure",
+      "number": "4.2.2"
+    },
+    {
+      "id": "sec-container-filenames",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container-filenames",
+      "level": 4,
+      "title": "File paths and file names",
+      "number": "4.2.3"
+    },
+    {
+      "id": "sec-file-names-to-path-names",
+      "href": "https://www.w3.org/TR/epub-34/#sec-file-names-to-path-names",
+      "level": 4,
+      "title": "Deriving file paths",
+      "number": "4.2.4"
+    },
+    {
+      "id": "sec-container-iri",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container-iri",
+      "level": 4,
+      "title": "URLs in the OCF abstract container",
+      "number": "4.2.5"
+    },
+    {
+      "id": "sec-container-metainf",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container-metainf",
+      "level": 4,
+      "title": "META-INF directory",
+      "number": "4.2.6"
+    },
+    {
+      "id": "sec-container-metainf-inc",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container-metainf-inc",
+      "level": 5,
+      "title": "Inclusion in OCF abstract container",
+      "number": "4.2.6.1"
+    },
+    {
+      "id": "sec-parsing-urls-metainf",
+      "href": "https://www.w3.org/TR/epub-34/#sec-parsing-urls-metainf",
+      "level": 5,
+      "title": "Parsing URLs in the META-INF directory",
+      "number": "4.2.6.2"
+    },
+    {
+      "id": "sec-container-metainf-files",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container-metainf-files",
+      "level": 5,
+      "title": "Reserved files",
+      "number": "4.2.6.3"
+    },
+    {
+      "id": "sec-container-metainf-container.xml",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container-metainf-container.xml",
+      "level": 6,
+      "title": "Container file (container.xml)",
+      "number": "4.2.6.3.1"
+    },
+    {
+      "id": "sec-container.xml-container-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container.xml-container-elem",
+      "level": 6,
+      "title": "The container element",
+      "number": "4.2.6.3.1.1"
+    },
+    {
+      "id": "sec-container.xml-rootfiles-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container.xml-rootfiles-elem",
+      "level": 6,
+      "title": "The rootfiles element",
+      "number": "4.2.6.3.1.2"
+    },
+    {
+      "id": "sec-container.xml-rootfile-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container.xml-rootfile-elem",
+      "level": 6,
+      "title": "The rootfile element",
+      "number": "4.2.6.3.1.3"
+    },
+    {
+      "id": "sec-container.xml-links-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container.xml-links-elem",
+      "level": 6,
+      "title": "The links element",
+      "number": "4.2.6.3.1.4"
+    },
+    {
+      "id": "sec-container.xml-link-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container.xml-link-elem",
+      "level": 6,
+      "title": "The link element",
+      "number": "4.2.6.3.1.5"
+    },
+    {
+      "id": "sec-container-container.xml-example",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container-container.xml-example",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.2.6.3.1.6"
+    },
+    {
+      "id": "sec-container-metainf-encryption.xml",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container-metainf-encryption.xml",
+      "level": 6,
+      "title": "Encryption file (encryption.xml)",
+      "number": "4.2.6.3.2"
+    },
+    {
+      "id": "sec-encryption.xml-encryption",
+      "href": "https://www.w3.org/TR/epub-34/#sec-encryption.xml-encryption",
+      "level": 6,
+      "title": "The encryption element",
+      "number": "4.2.6.3.2.1"
+    },
+    {
+      "id": "sec-enc-compression",
+      "href": "https://www.w3.org/TR/epub-34/#sec-enc-compression",
+      "level": 6,
+      "title": "Order of compression and encryption",
+      "number": "4.2.6.3.2.2"
+    },
+    {
+      "id": "sec-container-metainf-manifest.xml",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container-metainf-manifest.xml",
+      "level": 6,
+      "title": "Manifest file (manifest.xml)",
+      "number": "4.2.6.3.3"
+    },
+    {
+      "id": "sec-container-metainf-metadata.xml",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container-metainf-metadata.xml",
+      "level": 6,
+      "title": "Metadata file (metadata.xml)",
+      "number": "4.2.6.3.4"
+    },
+    {
+      "id": "sec-container-metainf-rights.xml",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container-metainf-rights.xml",
+      "level": 6,
+      "title": "Rights management file (rights.xml)",
+      "number": "4.2.6.3.5"
+    },
+    {
+      "id": "sec-container-metainf-signatures.xml",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container-metainf-signatures.xml",
+      "level": 6,
+      "title": "Digital signatures file (signatures.xml)",
+      "number": "4.2.6.3.6"
+    },
+    {
+      "id": "sec-signatures.xml-signatures",
+      "href": "https://www.w3.org/TR/epub-34/#sec-signatures.xml-signatures",
+      "level": 6,
+      "title": "The signatures element",
+      "number": "4.2.6.3.6.1"
+    },
+    {
+      "id": "sec-container-zip",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container-zip",
+      "level": 3,
+      "title": "OCF ZIP container",
+      "number": "4.3"
+    },
+    {
+      "id": "sec-container-zip-intro",
+      "href": "https://www.w3.org/TR/epub-34/#sec-container-zip-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "4.3.1"
+    },
+    {
+      "id": "sec-zip-container-zipreqs",
+      "href": "https://www.w3.org/TR/epub-34/#sec-zip-container-zipreqs",
+      "level": 4,
+      "title": "ZIP file requirements",
+      "number": "4.3.2"
+    },
+    {
+      "id": "sec-zip-container-mime",
+      "href": "https://www.w3.org/TR/epub-34/#sec-zip-container-mime",
+      "level": 4,
+      "title": "OCF ZIP container media type identification",
+      "number": "4.3.3"
+    },
+    {
+      "id": "sec-font-obfuscation",
+      "href": "https://www.w3.org/TR/epub-34/#sec-font-obfuscation",
+      "level": 3,
+      "title": "Font obfuscation",
+      "number": "4.4"
+    },
+    {
+      "id": "fobfus-intro",
+      "href": "https://www.w3.org/TR/epub-34/#fobfus-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "4.4.1"
+    },
+    {
+      "id": "fobfus-limitations",
+      "href": "https://www.w3.org/TR/epub-34/#fobfus-limitations",
+      "level": 4,
+      "title": "Limitations",
+      "number": "4.4.2"
+    },
+    {
+      "id": "obfus-keygen",
+      "href": "https://www.w3.org/TR/epub-34/#obfus-keygen",
+      "level": 4,
+      "title": "Obfuscation key",
+      "number": "4.4.3"
+    },
+    {
+      "id": "obfus-algorithm",
+      "href": "https://www.w3.org/TR/epub-34/#obfus-algorithm",
+      "level": 4,
+      "title": "Obfuscation algorithm",
+      "number": "4.4.4"
+    },
+    {
+      "id": "obfus-specifying",
+      "href": "https://www.w3.org/TR/epub-34/#obfus-specifying",
+      "level": 4,
+      "title": "Specifying obfuscated fonts",
+      "number": "4.4.5"
+    },
+    {
+      "id": "sec-package-doc",
+      "href": "https://www.w3.org/TR/epub-34/#sec-package-doc",
+      "level": 2,
+      "title": "Package document",
+      "number": "5"
+    },
+    {
+      "id": "sec-package-intro",
+      "href": "https://www.w3.org/TR/epub-34/#sec-package-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "5.1"
+    },
+    {
+      "id": "sec-parse-package-urls",
+      "href": "https://www.w3.org/TR/epub-34/#sec-parse-package-urls",
+      "level": 3,
+      "title": "Parsing URLs in the package document",
+      "number": "5.2"
+    },
+    {
+      "id": "sec-shared-attrs",
+      "href": "https://www.w3.org/TR/epub-34/#sec-shared-attrs",
+      "level": 3,
+      "title": "Shared attributes",
+      "number": "5.3"
+    },
+    {
+      "id": "attrdef-dir",
+      "href": "https://www.w3.org/TR/epub-34/#attrdef-dir",
+      "level": 4,
+      "title": "The dir attribute (under-implemented)",
+      "number": "5.3.1"
+    },
+    {
+      "id": "attrdef-href",
+      "href": "https://www.w3.org/TR/epub-34/#attrdef-href",
+      "level": 4,
+      "title": "The href attribute",
+      "number": "5.3.2"
+    },
+    {
+      "id": "attrdef-id",
+      "href": "https://www.w3.org/TR/epub-34/#attrdef-id",
+      "level": 4,
+      "title": "The id attribute",
+      "number": "5.3.3"
+    },
+    {
+      "id": "attrdef-media-type",
+      "href": "https://www.w3.org/TR/epub-34/#attrdef-media-type",
+      "level": 4,
+      "title": "The media-type attribute",
+      "number": "5.3.4"
+    },
+    {
+      "id": "attrdef-properties",
+      "href": "https://www.w3.org/TR/epub-34/#attrdef-properties",
+      "level": 4,
+      "title": "The properties attribute",
+      "number": "5.3.5"
+    },
+    {
+      "id": "attrdef-refines",
+      "href": "https://www.w3.org/TR/epub-34/#attrdef-refines",
+      "level": 4,
+      "title": "The refines attribute",
+      "number": "5.3.6"
+    },
+    {
+      "id": "attrdef-xml-lang",
+      "href": "https://www.w3.org/TR/epub-34/#attrdef-xml-lang",
+      "level": 4,
+      "title": "The xml:lang attribute",
+      "number": "5.3.7"
+    },
+    {
+      "id": "sec-package-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-package-elem",
+      "level": 3,
+      "title": "The package element",
+      "number": "5.4"
+    },
+    {
+      "id": "sec-pkg-metadata",
+      "href": "https://www.w3.org/TR/epub-34/#sec-pkg-metadata",
+      "level": 3,
+      "title": "Metadata section",
+      "number": "5.5"
+    },
+    {
+      "id": "sec-metadata-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-metadata-elem",
+      "level": 4,
+      "title": "The metadata element",
+      "number": "5.5.1"
+    },
+    {
+      "id": "sec-metadata-values",
+      "href": "https://www.w3.org/TR/epub-34/#sec-metadata-values",
+      "level": 4,
+      "title": "Metadata values",
+      "number": "5.5.2"
+    },
+    {
+      "id": "sec-opf-dcmes",
+      "href": "https://www.w3.org/TR/epub-34/#sec-opf-dcmes",
+      "level": 4,
+      "title": "Dublin Core",
+      "number": "5.5.3"
+    },
+    {
+      "id": "sec-opf-dcmes-required",
+      "href": "https://www.w3.org/TR/epub-34/#sec-opf-dcmes-required",
+      "level": 5,
+      "title": "Required elements",
+      "number": "5.5.3.1"
+    },
+    {
+      "id": "sec-opf-dcidentifier",
+      "href": "https://www.w3.org/TR/epub-34/#sec-opf-dcidentifier",
+      "level": 6,
+      "title": "The dc:identifier element",
+      "number": "5.5.3.1.1"
+    },
+    {
+      "id": "sec-opf-dctitle",
+      "href": "https://www.w3.org/TR/epub-34/#sec-opf-dctitle",
+      "level": 6,
+      "title": "The dc:title element",
+      "number": "5.5.3.1.2"
+    },
+    {
+      "id": "sec-opf-dclanguage",
+      "href": "https://www.w3.org/TR/epub-34/#sec-opf-dclanguage",
+      "level": 6,
+      "title": "The dc:language element",
+      "number": "5.5.3.1.3"
+    },
+    {
+      "id": "sec-opf-dcmes-optional",
+      "href": "https://www.w3.org/TR/epub-34/#sec-opf-dcmes-optional",
+      "level": 5,
+      "title": "Optional elements",
+      "number": "5.5.3.2"
+    },
+    {
+      "id": "sec-opf-dcmes-optional-def",
+      "href": "https://www.w3.org/TR/epub-34/#sec-opf-dcmes-optional-def",
+      "level": 6,
+      "title": "General definition",
+      "number": "5.5.3.2.1"
+    },
+    {
+      "id": "sec-opf-dccontributor",
+      "href": "https://www.w3.org/TR/epub-34/#sec-opf-dccontributor",
+      "level": 6,
+      "title": "The dc:contributor element",
+      "number": "5.5.3.2.2"
+    },
+    {
+      "id": "sec-opf-dccreator",
+      "href": "https://www.w3.org/TR/epub-34/#sec-opf-dccreator",
+      "level": 6,
+      "title": "The dc:creator element",
+      "number": "5.5.3.2.3"
+    },
+    {
+      "id": "sec-opf-dcdate",
+      "href": "https://www.w3.org/TR/epub-34/#sec-opf-dcdate",
+      "level": 6,
+      "title": "The dc:date element",
+      "number": "5.5.3.2.4"
+    },
+    {
+      "id": "sec-opf-dcsubject",
+      "href": "https://www.w3.org/TR/epub-34/#sec-opf-dcsubject",
+      "level": 6,
+      "title": "The dc:subject element",
+      "number": "5.5.3.2.5"
+    },
+    {
+      "id": "sec-opf-dctype",
+      "href": "https://www.w3.org/TR/epub-34/#sec-opf-dctype",
+      "level": 6,
+      "title": "The dc:type element",
+      "number": "5.5.3.2.6"
+    },
+    {
+      "id": "sec-meta-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-meta-elem",
+      "level": 4,
+      "title": "The meta element",
+      "number": "5.5.4"
+    },
+    {
+      "id": "sec-metadata-last-modified",
+      "href": "https://www.w3.org/TR/epub-34/#sec-metadata-last-modified",
+      "level": 4,
+      "title": "Last modified date",
+      "number": "5.5.5"
+    },
+    {
+      "id": "sec-link-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-link-elem",
+      "level": 4,
+      "title": "The link element",
+      "number": "5.5.6"
+    },
+    {
+      "id": "sec-pkg-manifest",
+      "href": "https://www.w3.org/TR/epub-34/#sec-pkg-manifest",
+      "level": 3,
+      "title": "Manifest section",
+      "number": "5.6"
+    },
+    {
+      "id": "sec-manifest-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-manifest-elem",
+      "level": 4,
+      "title": "The manifest element",
+      "number": "5.6.1"
+    },
+    {
+      "id": "sec-item-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-item-elem",
+      "level": 4,
+      "title": "The item element",
+      "number": "5.6.2"
+    },
+    {
+      "id": "sec-item-resource-properties",
+      "href": "https://www.w3.org/TR/epub-34/#sec-item-resource-properties",
+      "level": 5,
+      "title": "Resource properties",
+      "number": "5.6.2.1"
+    },
+    {
+      "id": "sec-item-elem-examples",
+      "href": "https://www.w3.org/TR/epub-34/#sec-item-elem-examples",
+      "level": 5,
+      "title": "Examples",
+      "number": "5.6.2.2"
+    },
+    {
+      "id": "sec-opf-bindings",
+      "href": "https://www.w3.org/TR/epub-34/#sec-opf-bindings",
+      "level": 4,
+      "title": "The bindings element (deprecated)",
+      "number": "5.6.3"
+    },
+    {
+      "id": "sec-pkg-spine",
+      "href": "https://www.w3.org/TR/epub-34/#sec-pkg-spine",
+      "level": 3,
+      "title": "Spine section",
+      "number": "5.7"
+    },
+    {
+      "id": "sec-spine-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-spine-elem",
+      "level": 4,
+      "title": "The spine element",
+      "number": "5.7.1"
+    },
+    {
+      "id": "sec-itemref-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-itemref-elem",
+      "level": 4,
+      "title": "The itemref element",
+      "number": "5.7.2"
+    },
+    {
+      "id": "sec-pkg-collections",
+      "href": "https://www.w3.org/TR/epub-34/#sec-pkg-collections",
+      "level": 3,
+      "title": "Collections",
+      "number": "5.8"
+    },
+    {
+      "id": "sec-collection-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-collection-elem",
+      "level": 4,
+      "title": "The collection element",
+      "number": "5.8.1"
+    },
+    {
+      "id": "sec-defining-collection-types",
+      "href": "https://www.w3.org/TR/epub-34/#sec-defining-collection-types",
+      "level": 4,
+      "title": "Defining collection types (deprecated)",
+      "number": "5.8.2"
+    },
+    {
+      "id": "sec-pkg-legacy",
+      "href": "https://www.w3.org/TR/epub-34/#sec-pkg-legacy",
+      "level": 3,
+      "title": "Legacy features",
+      "number": "5.9"
+    },
+    {
+      "id": "sec-pkg-legacy-intro",
+      "href": "https://www.w3.org/TR/epub-34/#sec-pkg-legacy-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "5.9.1"
+    },
+    {
+      "id": "pkg-legacy-support",
+      "href": "https://www.w3.org/TR/epub-34/#pkg-legacy-support",
+      "level": 4,
+      "title": "Support",
+      "number": "5.9.2"
+    },
+    {
+      "id": "sec-opf2-meta",
+      "href": "https://www.w3.org/TR/epub-34/#sec-opf2-meta",
+      "level": 4,
+      "title": "The meta element",
+      "number": "5.9.3"
+    },
+    {
+      "id": "sec-opf2-guide",
+      "href": "https://www.w3.org/TR/epub-34/#sec-opf2-guide",
+      "level": 4,
+      "title": "The guide element",
+      "number": "5.9.4"
+    },
+    {
+      "id": "sec-opf2-ncx",
+      "href": "https://www.w3.org/TR/epub-34/#sec-opf2-ncx",
+      "level": 4,
+      "title": "NCX",
+      "number": "5.9.5"
+    },
+    {
+      "id": "sec-contentdocs",
+      "href": "https://www.w3.org/TR/epub-34/#sec-contentdocs",
+      "level": 2,
+      "title": "EPUB content documents",
+      "number": "6"
+    },
+    {
+      "id": "sec-xhtml",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xhtml",
+      "level": 3,
+      "title": "XHTML content documents",
+      "number": "6.1"
+    },
+    {
+      "id": "sec-xhtml-intro",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xhtml-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "6.1.1"
+    },
+    {
+      "id": "sec-xhtml-req",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xhtml-req",
+      "level": 4,
+      "title": "XHTML requirements",
+      "number": "6.1.2"
+    },
+    {
+      "id": "sec-xhtml-extensions",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xhtml-extensions",
+      "level": 4,
+      "title": "HTML extensions",
+      "number": "6.1.3"
+    },
+    {
+      "id": "sec-xhtml-structural-semantics",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xhtml-structural-semantics",
+      "level": 5,
+      "title": "Structural semantics",
+      "number": "6.1.3.1"
+    },
+    {
+      "id": "sec-xhtml-rdfa",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xhtml-rdfa",
+      "level": 5,
+      "title": "RDFa",
+      "number": "6.1.3.2"
+    },
+    {
+      "id": "sec-xhtml-content-switch",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xhtml-content-switch",
+      "level": 5,
+      "title": "Content switching (deprecated)",
+      "number": "6.1.3.3"
+    },
+    {
+      "id": "sec-xhtml-epub-trigger",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xhtml-epub-trigger",
+      "level": 5,
+      "title": "The epub:trigger element (deprecated)",
+      "number": "6.1.3.4"
+    },
+    {
+      "id": "sec-xhtml-custom-attributes",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xhtml-custom-attributes",
+      "level": 5,
+      "title": "Custom attributes",
+      "number": "6.1.3.5"
+    },
+    {
+      "id": "sec-xhtml-deviations",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xhtml-deviations",
+      "level": 4,
+      "title": "HTML deviations and constraints",
+      "number": "6.1.4"
+    },
+    {
+      "id": "sec-xhtml-mathml",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xhtml-mathml",
+      "level": 5,
+      "title": "Embedded MathML",
+      "number": "6.1.4.1"
+    },
+    {
+      "id": "sec-xhtml-svg",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xhtml-svg",
+      "level": 5,
+      "title": "Embedded SVG",
+      "number": "6.1.4.2"
+    },
+    {
+      "id": "sec-xhtml-deviations-discouraged",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xhtml-deviations-discouraged",
+      "level": 5,
+      "title": "Discouraged constructs",
+      "number": "6.1.4.3"
+    },
+    {
+      "id": "sec-xhtml-deviations-base",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xhtml-deviations-base",
+      "level": 6,
+      "title": "The base element",
+      "number": "6.1.4.3.1"
+    },
+    {
+      "id": "sec-xhtml-deviations-rp",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xhtml-deviations-rp",
+      "level": 6,
+      "title": "The rp element",
+      "number": "6.1.4.3.2"
+    },
+    {
+      "id": "sec-xhtml-deviations-embed",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xhtml-deviations-embed",
+      "level": 6,
+      "title": "The embed element",
+      "number": "6.1.4.3.3"
+    },
+    {
+      "id": "sec-svg",
+      "href": "https://www.w3.org/TR/epub-34/#sec-svg",
+      "level": 3,
+      "title": "SVG content documents",
+      "number": "6.2"
+    },
+    {
+      "id": "sec-svg-intro",
+      "href": "https://www.w3.org/TR/epub-34/#sec-svg-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "6.2.1"
+    },
+    {
+      "id": "sec-svg-req",
+      "href": "https://www.w3.org/TR/epub-34/#sec-svg-req",
+      "level": 4,
+      "title": "SVG requirements",
+      "number": "6.2.2"
+    },
+    {
+      "id": "sec-svg-restrictions",
+      "href": "https://www.w3.org/TR/epub-34/#sec-svg-restrictions",
+      "level": 4,
+      "title": "Restrictions on SVG",
+      "number": "6.2.3"
+    },
+    {
+      "id": "sec-common-resource-req",
+      "href": "https://www.w3.org/TR/epub-34/#sec-common-resource-req",
+      "level": 3,
+      "title": "Common resource requirements",
+      "number": "6.3"
+    },
+    {
+      "id": "sec-css",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css",
+      "level": 4,
+      "title": "Cascading Style Sheets (CSS)",
+      "number": "6.3.1"
+    },
+    {
+      "id": "sec-css-intro",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-intro",
+      "level": 5,
+      "title": "Introduction",
+      "number": "6.3.1.1"
+    },
+    {
+      "id": "sec-css-req",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-req",
+      "level": 5,
+      "title": "CSS requirements",
+      "number": "6.3.1.2"
+    },
+    {
+      "id": "sec-css-prefixed",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-prefixed",
+      "level": 5,
+      "title": "Prefixed properties",
+      "number": "6.3.1.3"
+    },
+    {
+      "id": "sec-scripted-content",
+      "href": "https://www.w3.org/TR/epub-34/#sec-scripted-content",
+      "level": 4,
+      "title": "Scripting",
+      "number": "6.3.2"
+    },
+    {
+      "id": "sec-scripted-support",
+      "href": "https://www.w3.org/TR/epub-34/#sec-scripted-support",
+      "level": 5,
+      "title": "Script inclusion",
+      "number": "6.3.2.1"
+    },
+    {
+      "id": "sec-scripted-context",
+      "href": "https://www.w3.org/TR/epub-34/#sec-scripted-context",
+      "level": 5,
+      "title": "Scripting contexts",
+      "number": "6.3.2.2"
+    },
+    {
+      "id": "sec-scripted-container-constrained",
+      "href": "https://www.w3.org/TR/epub-34/#sec-scripted-container-constrained",
+      "level": 6,
+      "title": "Container-constrained scripts",
+      "number": "6.3.2.2.1"
+    },
+    {
+      "id": "sec-scripted-spine",
+      "href": "https://www.w3.org/TR/epub-34/#sec-scripted-spine",
+      "level": 6,
+      "title": "Spine-level scripts",
+      "number": "6.3.2.2.2"
+    },
+    {
+      "id": "sec-scripted-content-events",
+      "href": "https://www.w3.org/TR/epub-34/#sec-scripted-content-events",
+      "level": 5,
+      "title": "Event model",
+      "number": "6.3.2.3"
+    },
+    {
+      "id": "sec-scripted-a11y",
+      "href": "https://www.w3.org/TR/epub-34/#sec-scripted-a11y",
+      "level": 5,
+      "title": "Scripting accessibility",
+      "number": "6.3.2.4"
+    },
+    {
+      "id": "sec-scripted-fallbacks",
+      "href": "https://www.w3.org/TR/epub-34/#sec-scripted-fallbacks",
+      "level": 5,
+      "title": "Scripting fallbacks",
+      "number": "6.3.2.5"
+    },
+    {
+      "id": "sec-nav",
+      "href": "https://www.w3.org/TR/epub-34/#sec-nav",
+      "level": 2,
+      "title": "EPUB navigation document",
+      "number": "7"
+    },
+    {
+      "id": "sec-nav-intro",
+      "href": "https://www.w3.org/TR/epub-34/#sec-nav-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "7.1"
+    },
+    {
+      "id": "sec-nav-content-req",
+      "href": "https://www.w3.org/TR/epub-34/#sec-nav-content-req",
+      "level": 3,
+      "title": "Navigation document requirements",
+      "number": "7.2"
+    },
+    {
+      "id": "sec-nav-def-model",
+      "href": "https://www.w3.org/TR/epub-34/#sec-nav-def-model",
+      "level": 3,
+      "title": "The nav element: restrictions",
+      "number": "7.3"
+    },
+    {
+      "id": "sec-nav-def-types",
+      "href": "https://www.w3.org/TR/epub-34/#sec-nav-def-types",
+      "level": 3,
+      "title": "The nav element: types",
+      "number": "7.4"
+    },
+    {
+      "id": "sec-nav-def-types-intro",
+      "href": "https://www.w3.org/TR/epub-34/#sec-nav-def-types-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "7.4.1"
+    },
+    {
+      "id": "sec-nav-toc",
+      "href": "https://www.w3.org/TR/epub-34/#sec-nav-toc",
+      "level": 4,
+      "title": "The toc nav element",
+      "number": "7.4.2"
+    },
+    {
+      "id": "sec-nav-pagelist",
+      "href": "https://www.w3.org/TR/epub-34/#sec-nav-pagelist",
+      "level": 4,
+      "title": "The page-list nav element",
+      "number": "7.4.3"
+    },
+    {
+      "id": "sec-nav-landmarks",
+      "href": "https://www.w3.org/TR/epub-34/#sec-nav-landmarks",
+      "level": 4,
+      "title": "The landmarks nav element",
+      "number": "7.4.4"
+    },
+    {
+      "id": "sec-nav-def-types-other",
+      "href": "https://www.w3.org/TR/epub-34/#sec-nav-def-types-other",
+      "level": 4,
+      "title": "Other nav elements",
+      "number": "7.4.5"
+    },
+    {
+      "id": "sec-nav-doc-use-spine",
+      "href": "https://www.w3.org/TR/epub-34/#sec-nav-doc-use-spine",
+      "level": 3,
+      "title": "Using in the spine",
+      "number": "7.5"
+    },
+    {
+      "id": "sec-rendering-control",
+      "href": "https://www.w3.org/TR/epub-34/#sec-rendering-control",
+      "level": 2,
+      "title": "Layout rendering control",
+      "number": "8"
+    },
+    {
+      "id": "sec-general-rendering-intro",
+      "href": "https://www.w3.org/TR/epub-34/#sec-general-rendering-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "8.1"
+    },
+    {
+      "id": "sec-fixed-layouts",
+      "href": "https://www.w3.org/TR/epub-34/#sec-fixed-layouts",
+      "level": 3,
+      "title": "Fixed layouts",
+      "number": "8.2"
+    },
+    {
+      "id": "fxl-intro",
+      "href": "https://www.w3.org/TR/epub-34/#fxl-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "8.2.1"
+    },
+    {
+      "id": "sec-fxl-package",
+      "href": "https://www.w3.org/TR/epub-34/#sec-fxl-package",
+      "level": 4,
+      "title": "Fixed-layout package settings",
+      "number": "8.2.2"
+    },
+    {
+      "id": "layout",
+      "href": "https://www.w3.org/TR/epub-34/#layout",
+      "level": 5,
+      "title": "Layout",
+      "number": "8.2.2.1"
+    },
+    {
+      "id": "layout-overrides",
+      "href": "https://www.w3.org/TR/epub-34/#layout-overrides",
+      "level": 6,
+      "title": "Layout overrides",
+      "number": "8.2.2.1.1"
+    },
+    {
+      "id": "orientation",
+      "href": "https://www.w3.org/TR/epub-34/#orientation",
+      "level": 5,
+      "title": "Orientation",
+      "number": "8.2.2.2"
+    },
+    {
+      "id": "orientation-overrides",
+      "href": "https://www.w3.org/TR/epub-34/#orientation-overrides",
+      "level": 6,
+      "title": "Orientation overrides",
+      "number": "8.2.2.2.1"
+    },
+    {
+      "id": "spread",
+      "href": "https://www.w3.org/TR/epub-34/#spread",
+      "level": 5,
+      "title": "Synthetic spreads",
+      "number": "8.2.2.3"
+    },
+    {
+      "id": "spread-overrides",
+      "href": "https://www.w3.org/TR/epub-34/#spread-overrides",
+      "level": 6,
+      "title": "Synthetic spread overrides",
+      "number": "8.2.2.3.1"
+    },
+    {
+      "id": "page-spread",
+      "href": "https://www.w3.org/TR/epub-34/#page-spread",
+      "level": 5,
+      "title": "Spread placement",
+      "number": "8.2.2.4"
+    },
+    {
+      "id": "viewport",
+      "href": "https://www.w3.org/TR/epub-34/#viewport",
+      "level": 5,
+      "title": "Viewport dimensions (deprecated)",
+      "number": "8.2.2.5"
+    },
+    {
+      "id": "sec-fxl-content-dimensions",
+      "href": "https://www.w3.org/TR/epub-34/#sec-fxl-content-dimensions",
+      "level": 5,
+      "title": "Content document dimensions",
+      "number": "8.2.2.6"
+    },
+    {
+      "id": "sec-reflowable-layouts",
+      "href": "https://www.w3.org/TR/epub-34/#sec-reflowable-layouts",
+      "level": 3,
+      "title": "Reflowable layouts",
+      "number": "8.3"
+    },
+    {
+      "id": "flow",
+      "href": "https://www.w3.org/TR/epub-34/#flow",
+      "level": 4,
+      "title": "The rendition:flow property",
+      "number": "8.3.1"
+    },
+    {
+      "id": "flow-overrides",
+      "href": "https://www.w3.org/TR/epub-34/#flow-overrides",
+      "level": 5,
+      "title": "Spine overrides",
+      "number": "8.3.1.1"
+    },
+    {
+      "id": "align-x-center",
+      "href": "https://www.w3.org/TR/epub-34/#align-x-center",
+      "level": 4,
+      "title": "The rendition:align-x-center property",
+      "number": "8.3.2"
+    },
+    {
+      "id": "sec-media-overlays",
+      "href": "https://www.w3.org/TR/epub-34/#sec-media-overlays",
+      "level": 2,
+      "title": "Media overlays",
+      "number": "9"
+    },
+    {
+      "id": "sec-overlays-introduction",
+      "href": "https://www.w3.org/TR/epub-34/#sec-overlays-introduction",
+      "level": 3,
+      "title": "Introduction",
+      "number": "9.1"
+    },
+    {
+      "id": "sec-overlay-docs",
+      "href": "https://www.w3.org/TR/epub-34/#sec-overlay-docs",
+      "level": 3,
+      "title": "Media overlay documents",
+      "number": "9.2"
+    },
+    {
+      "id": "sec-overlay-req",
+      "href": "https://www.w3.org/TR/epub-34/#sec-overlay-req",
+      "level": 4,
+      "title": "Media overlay document requirements",
+      "number": "9.2.1"
+    },
+    {
+      "id": "sec-overlays-def",
+      "href": "https://www.w3.org/TR/epub-34/#sec-overlays-def",
+      "level": 4,
+      "title": "Media overlay document definition",
+      "number": "9.2.2"
+    },
+    {
+      "id": "sec-smil-smil-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-smil-smil-elem",
+      "level": 5,
+      "title": "The smil element",
+      "number": "9.2.2.1"
+    },
+    {
+      "id": "sec-smil-head-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-smil-head-elem",
+      "level": 5,
+      "title": "The head element",
+      "number": "9.2.2.2"
+    },
+    {
+      "id": "sec-smil-metadata-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-smil-metadata-elem",
+      "level": 5,
+      "title": "The metadata element",
+      "number": "9.2.2.3"
+    },
+    {
+      "id": "sec-smil-body-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-smil-body-elem",
+      "level": 5,
+      "title": "The body element",
+      "number": "9.2.2.4"
+    },
+    {
+      "id": "sec-smil-seq-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-smil-seq-elem",
+      "level": 5,
+      "title": "The seq element",
+      "number": "9.2.2.5"
+    },
+    {
+      "id": "sec-smil-par-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-smil-par-elem",
+      "level": 5,
+      "title": "The par element",
+      "number": "9.2.2.6"
+    },
+    {
+      "id": "sec-smil-text-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-smil-text-elem",
+      "level": 5,
+      "title": "The text element",
+      "number": "9.2.2.7"
+    },
+    {
+      "id": "sec-smil-audio-elem",
+      "href": "https://www.w3.org/TR/epub-34/#sec-smil-audio-elem",
+      "level": 5,
+      "title": "The audio element",
+      "number": "9.2.2.8"
+    },
+    {
+      "id": "sec-overlay-doc-create",
+      "href": "https://www.w3.org/TR/epub-34/#sec-overlay-doc-create",
+      "level": 3,
+      "title": "Creating media overlays",
+      "number": "9.3"
+    },
+    {
+      "id": "sec-docs-intro",
+      "href": "https://www.w3.org/TR/epub-34/#sec-docs-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "9.3.1"
+    },
+    {
+      "id": "sec-docs-relations",
+      "href": "https://www.w3.org/TR/epub-34/#sec-docs-relations",
+      "level": 4,
+      "title": "Relationship to the EPUB content document",
+      "number": "9.3.2"
+    },
+    {
+      "id": "sec-media-overlays-structure",
+      "href": "https://www.w3.org/TR/epub-34/#sec-media-overlays-structure",
+      "level": 5,
+      "title": "Overlay structure",
+      "number": "9.3.2.1"
+    },
+    {
+      "id": "sec-media-overlays-fragids",
+      "href": "https://www.w3.org/TR/epub-34/#sec-media-overlays-fragids",
+      "level": 5,
+      "title": "Referencing document fragments",
+      "number": "9.3.2.2"
+    },
+    {
+      "id": "sec-media-overlays-granularity",
+      "href": "https://www.w3.org/TR/epub-34/#sec-media-overlays-granularity",
+      "level": 5,
+      "title": "Overlay granularity",
+      "number": "9.3.2.3"
+    },
+    {
+      "id": "sec-tts",
+      "href": "https://www.w3.org/TR/epub-34/#sec-tts",
+      "level": 5,
+      "title": "Text-to-speech rendering",
+      "number": "9.3.2.4"
+    },
+    {
+      "id": "sec-docs-structural-semantic",
+      "href": "https://www.w3.org/TR/epub-34/#sec-docs-structural-semantic",
+      "level": 4,
+      "title": "Structural semantics in overlays",
+      "number": "9.3.3"
+    },
+    {
+      "id": "sec-docs-assoc-style",
+      "href": "https://www.w3.org/TR/epub-34/#sec-docs-assoc-style",
+      "level": 4,
+      "title": "Associating style information",
+      "number": "9.3.4"
+    },
+    {
+      "id": "sec-docs-package",
+      "href": "https://www.w3.org/TR/epub-34/#sec-docs-package",
+      "level": 4,
+      "title": "Media overlays packaging",
+      "number": "9.3.5"
+    },
+    {
+      "id": "sec-package-including",
+      "href": "https://www.w3.org/TR/epub-34/#sec-package-including",
+      "level": 5,
+      "title": "Including media overlays",
+      "number": "9.3.5.1"
+    },
+    {
+      "id": "sec-mo-package-metadata",
+      "href": "https://www.w3.org/TR/epub-34/#sec-mo-package-metadata",
+      "level": 5,
+      "title": "Overlays package metadata",
+      "number": "9.3.5.2"
+    },
+    {
+      "id": "sec-behaviors-skip-escape",
+      "href": "https://www.w3.org/TR/epub-34/#sec-behaviors-skip-escape",
+      "level": 3,
+      "title": "Skippability and escapability",
+      "number": "9.4"
+    },
+    {
+      "id": "sec-skippability",
+      "href": "https://www.w3.org/TR/epub-34/#sec-skippability",
+      "level": 4,
+      "title": "Skippability",
+      "number": "9.4.1"
+    },
+    {
+      "id": "sec-escapability",
+      "href": "https://www.w3.org/TR/epub-34/#sec-escapability",
+      "level": 4,
+      "title": "Escapability",
+      "number": "9.4.2"
+    },
+    {
+      "id": "sec-mo-nav-doc",
+      "href": "https://www.w3.org/TR/epub-34/#sec-mo-nav-doc",
+      "level": 3,
+      "title": "Navigation document overlays",
+      "number": "9.5"
+    },
+    {
+      "id": "sec-accessibility",
+      "href": "https://www.w3.org/TR/epub-34/#sec-accessibility",
+      "level": 2,
+      "title": "10. Accessibility"
+    },
+    {
+      "id": "sec-security-privacy",
+      "href": "https://www.w3.org/TR/epub-34/#sec-security-privacy",
+      "level": 2,
+      "title": "11. Security and privacy"
+    },
+    {
+      "id": "security-privacy-overview",
+      "href": "https://www.w3.org/TR/epub-34/#security-privacy-overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "11.1"
+    },
+    {
+      "id": "epub-threat-model",
+      "href": "https://www.w3.org/TR/epub-34/#epub-threat-model",
+      "level": 3,
+      "title": "Threat model",
+      "number": "11.2"
+    },
+    {
+      "id": "privacy-security-epub-features",
+      "href": "https://www.w3.org/TR/epub-34/#privacy-security-epub-features",
+      "level": 4,
+      "title": "EPUB-specific features",
+      "number": "11.2.1"
+    },
+    {
+      "id": "security-privacy-recommendations",
+      "href": "https://www.w3.org/TR/epub-34/#security-privacy-recommendations",
+      "level": 3,
+      "title": "Recommendations",
+      "number": "11.3"
+    },
+    {
+      "id": "app-unsupported",
+      "href": "https://www.w3.org/TR/epub-34/#app-unsupported",
+      "level": 2,
+      "title": "Unsupported features",
+      "number": "A"
+    },
+    {
+      "id": "under-implemented",
+      "href": "https://www.w3.org/TR/epub-34/#under-implemented",
+      "level": 3,
+      "title": "Under-implemented features",
+      "number": "A.1"
+    },
+    {
+      "id": "deprecated",
+      "href": "https://www.w3.org/TR/epub-34/#deprecated",
+      "level": 3,
+      "title": "Deprecated features",
+      "number": "A.2"
+    },
+    {
+      "id": "app-identifiers-allowed",
+      "href": "https://www.w3.org/TR/epub-34/#app-identifiers-allowed",
+      "level": 2,
+      "title": "Allowed external identifiers",
+      "number": "B"
+    },
+    {
+      "id": "app-structural-semantics",
+      "href": "https://www.w3.org/TR/epub-34/#app-structural-semantics",
+      "level": 2,
+      "title": "Expressing structural semantics",
+      "number": "C"
+    },
+    {
+      "id": "sec-structural-semantics-intro",
+      "href": "https://www.w3.org/TR/epub-34/#sec-structural-semantics-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "C.1"
+    },
+    {
+      "id": "sec-epub-type-attribute",
+      "href": "https://www.w3.org/TR/epub-34/#sec-epub-type-attribute",
+      "level": 3,
+      "title": "The epub:type attribute",
+      "number": "C.2"
+    },
+    {
+      "id": "app-vocabs",
+      "href": "https://www.w3.org/TR/epub-34/#app-vocabs",
+      "level": 2,
+      "title": "Vocabularies",
+      "number": "D"
+    },
+    {
+      "id": "sec-vocab-assoc",
+      "href": "https://www.w3.org/TR/epub-34/#sec-vocab-assoc",
+      "level": 3,
+      "title": "Vocabulary association mechanisms",
+      "number": "D.1"
+    },
+    {
+      "id": "sec-vocab-assoc-intro",
+      "href": "https://www.w3.org/TR/epub-34/#sec-vocab-assoc-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "D.1.1"
+    },
+    {
+      "id": "sec-property-datatype",
+      "href": "https://www.w3.org/TR/epub-34/#sec-property-datatype",
+      "level": 4,
+      "title": "The property data type",
+      "number": "D.1.2"
+    },
+    {
+      "id": "sec-default-vocab",
+      "href": "https://www.w3.org/TR/epub-34/#sec-default-vocab",
+      "level": 4,
+      "title": "Default vocabularies",
+      "number": "D.1.3"
+    },
+    {
+      "id": "sec-prefix-attr",
+      "href": "https://www.w3.org/TR/epub-34/#sec-prefix-attr",
+      "level": 4,
+      "title": "The prefix attribute",
+      "number": "D.1.4"
+    },
+    {
+      "id": "sec-reserved-prefixes",
+      "href": "https://www.w3.org/TR/epub-34/#sec-reserved-prefixes",
+      "level": 4,
+      "title": "Reserved prefixes",
+      "number": "D.1.5"
+    },
+    {
+      "id": "sec-property-field-definitions",
+      "href": "https://www.w3.org/TR/epub-34/#sec-property-field-definitions",
+      "level": 3,
+      "title": "Property field definitions",
+      "number": "D.2"
+    },
+    {
+      "id": "app-meta-property-vocab",
+      "href": "https://www.w3.org/TR/epub-34/#app-meta-property-vocab",
+      "level": 3,
+      "title": "Meta properties vocabulary",
+      "number": "D.3"
+    },
+    {
+      "id": "sec-alternate-script",
+      "href": "https://www.w3.org/TR/epub-34/#sec-alternate-script",
+      "level": 4,
+      "title": "alternate-script",
+      "number": "D.3.1"
+    },
+    {
+      "id": "sec-authority",
+      "href": "https://www.w3.org/TR/epub-34/#sec-authority",
+      "level": 4,
+      "title": "authority",
+      "number": "D.3.2"
+    },
+    {
+      "id": "sec-belongs-to-collection",
+      "href": "https://www.w3.org/TR/epub-34/#sec-belongs-to-collection",
+      "level": 4,
+      "title": "belongs-to-collection",
+      "number": "D.3.3"
+    },
+    {
+      "id": "sec-collection-type",
+      "href": "https://www.w3.org/TR/epub-34/#sec-collection-type",
+      "level": 4,
+      "title": "collection-type",
+      "number": "D.3.4"
+    },
+    {
+      "id": "sec-display-seq",
+      "href": "https://www.w3.org/TR/epub-34/#sec-display-seq",
+      "level": 4,
+      "title": "display-seq",
+      "number": "D.3.5"
+    },
+    {
+      "id": "sec-file-as",
+      "href": "https://www.w3.org/TR/epub-34/#sec-file-as",
+      "level": 4,
+      "title": "file-as",
+      "number": "D.3.6"
+    },
+    {
+      "id": "sec-group-position",
+      "href": "https://www.w3.org/TR/epub-34/#sec-group-position",
+      "level": 4,
+      "title": "group-position",
+      "number": "D.3.7"
+    },
+    {
+      "id": "sec-identifier-type",
+      "href": "https://www.w3.org/TR/epub-34/#sec-identifier-type",
+      "level": 4,
+      "title": "identifier-type",
+      "number": "D.3.8"
+    },
+    {
+      "id": "sec-meta-auth",
+      "href": "https://www.w3.org/TR/epub-34/#sec-meta-auth",
+      "level": 4,
+      "title": "meta-auth (deprecated)",
+      "number": "D.3.9"
+    },
+    {
+      "id": "sec-role",
+      "href": "https://www.w3.org/TR/epub-34/#sec-role",
+      "level": 4,
+      "title": "role",
+      "number": "D.3.10"
+    },
+    {
+      "id": "sec-source-of",
+      "href": "https://www.w3.org/TR/epub-34/#sec-source-of",
+      "level": 4,
+      "title": "source-of",
+      "number": "D.3.11"
+    },
+    {
+      "id": "sec-term",
+      "href": "https://www.w3.org/TR/epub-34/#sec-term",
+      "level": 4,
+      "title": "term",
+      "number": "D.3.12"
+    },
+    {
+      "id": "sec-title-type",
+      "href": "https://www.w3.org/TR/epub-34/#sec-title-type",
+      "level": 4,
+      "title": "title-type",
+      "number": "D.3.13"
+    },
+    {
+      "id": "sec-property-examples",
+      "href": "https://www.w3.org/TR/epub-34/#sec-property-examples",
+      "level": 4,
+      "title": "Examples",
+      "number": "D.3.14"
+    },
+    {
+      "id": "app-link-vocab",
+      "href": "https://www.w3.org/TR/epub-34/#app-link-vocab",
+      "level": 3,
+      "title": "Metadata link vocabulary",
+      "number": "D.4"
+    },
+    {
+      "id": "sec-link-rel",
+      "href": "https://www.w3.org/TR/epub-34/#sec-link-rel",
+      "level": 4,
+      "title": "Link relationships",
+      "number": "D.4.1"
+    },
+    {
+      "id": "sec-alternate",
+      "href": "https://www.w3.org/TR/epub-34/#sec-alternate",
+      "level": 5,
+      "title": "alternate",
+      "number": "D.4.1.1"
+    },
+    {
+      "id": "sec-marc21xml-record",
+      "href": "https://www.w3.org/TR/epub-34/#sec-marc21xml-record",
+      "level": 5,
+      "title": "marc21xml-record (deprecated)",
+      "number": "D.4.1.2"
+    },
+    {
+      "id": "sec-mods-record",
+      "href": "https://www.w3.org/TR/epub-34/#sec-mods-record",
+      "level": 5,
+      "title": "mods-record (deprecated)",
+      "number": "D.4.1.3"
+    },
+    {
+      "id": "sec-onix-record",
+      "href": "https://www.w3.org/TR/epub-34/#sec-onix-record",
+      "level": 5,
+      "title": "onix-record (deprecated)",
+      "number": "D.4.1.4"
+    },
+    {
+      "id": "sec-record",
+      "href": "https://www.w3.org/TR/epub-34/#sec-record",
+      "level": 5,
+      "title": "record",
+      "number": "D.4.1.5"
+    },
+    {
+      "id": "sec-voicing",
+      "href": "https://www.w3.org/TR/epub-34/#sec-voicing",
+      "level": 5,
+      "title": "voicing",
+      "number": "D.4.1.6"
+    },
+    {
+      "id": "sec-xml-signature",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xml-signature",
+      "level": 5,
+      "title": "xml-signature (deprecated)",
+      "number": "D.4.1.7"
+    },
+    {
+      "id": "sec-xmp-record",
+      "href": "https://www.w3.org/TR/epub-34/#sec-xmp-record",
+      "level": 5,
+      "title": "xmp-record (deprecated)",
+      "number": "D.4.1.8"
+    },
+    {
+      "id": "sec-link-properties",
+      "href": "https://www.w3.org/TR/epub-34/#sec-link-properties",
+      "level": 4,
+      "title": "Link properties",
+      "number": "D.4.2"
+    },
+    {
+      "id": "sec-onix",
+      "href": "https://www.w3.org/TR/epub-34/#sec-onix",
+      "level": 5,
+      "title": "onix",
+      "number": "D.4.2.1"
+    },
+    {
+      "id": "app-rendering-vocab",
+      "href": "https://www.w3.org/TR/epub-34/#app-rendering-vocab",
+      "level": 3,
+      "title": "Package rendering vocabulary",
+      "number": "D.5"
+    },
+    {
+      "id": "sec-rendering-custom-properties",
+      "href": "https://www.w3.org/TR/epub-34/#sec-rendering-custom-properties",
+      "level": 4,
+      "title": "Custom rendering properties",
+      "number": "D.5.1"
+    },
+    {
+      "id": "app-item-properties-vocab",
+      "href": "https://www.w3.org/TR/epub-34/#app-item-properties-vocab",
+      "level": 3,
+      "title": "Manifest properties vocabulary",
+      "number": "D.6"
+    },
+    {
+      "id": "sec-cover-image",
+      "href": "https://www.w3.org/TR/epub-34/#sec-cover-image",
+      "level": 4,
+      "title": "cover-image",
+      "number": "D.6.1"
+    },
+    {
+      "id": "sec-mathml",
+      "href": "https://www.w3.org/TR/epub-34/#sec-mathml",
+      "level": 4,
+      "title": "mathml",
+      "number": "D.6.2"
+    },
+    {
+      "id": "sec-nav-prop",
+      "href": "https://www.w3.org/TR/epub-34/#sec-nav-prop",
+      "level": 4,
+      "title": "nav",
+      "number": "D.6.3"
+    },
+    {
+      "id": "sec-remote-resources",
+      "href": "https://www.w3.org/TR/epub-34/#sec-remote-resources",
+      "level": 4,
+      "title": "remote-resources",
+      "number": "D.6.4"
+    },
+    {
+      "id": "sec-scripted",
+      "href": "https://www.w3.org/TR/epub-34/#sec-scripted",
+      "level": 4,
+      "title": "scripted",
+      "number": "D.6.5"
+    },
+    {
+      "id": "sec-svg-prop",
+      "href": "https://www.w3.org/TR/epub-34/#sec-svg-prop",
+      "level": 4,
+      "title": "svg",
+      "number": "D.6.6"
+    },
+    {
+      "id": "sec-switch",
+      "href": "https://www.w3.org/TR/epub-34/#sec-switch",
+      "level": 4,
+      "title": "switch",
+      "number": "D.6.7"
+    },
+    {
+      "id": "app-itemref-properties-vocab",
+      "href": "https://www.w3.org/TR/epub-34/#app-itemref-properties-vocab",
+      "level": 3,
+      "title": "Spine properties vocabulary",
+      "number": "D.7"
+    },
+    {
+      "id": "sec-page-spread-left",
+      "href": "https://www.w3.org/TR/epub-34/#sec-page-spread-left",
+      "level": 4,
+      "title": "page-spread-left",
+      "number": "D.7.1"
+    },
+    {
+      "id": "sec-page-spread-right",
+      "href": "https://www.w3.org/TR/epub-34/#sec-page-spread-right",
+      "level": 4,
+      "title": "page-spread-right",
+      "number": "D.7.2"
+    },
+    {
+      "id": "examples-itemref-properties",
+      "href": "https://www.w3.org/TR/epub-34/#examples-itemref-properties",
+      "level": 4,
+      "title": "Examples",
+      "number": "D.7.3"
+    },
+    {
+      "id": "app-overlays-vocab",
+      "href": "https://www.w3.org/TR/epub-34/#app-overlays-vocab",
+      "level": 3,
+      "title": "Media overlays vocabulary",
+      "number": "D.8"
+    },
+    {
+      "id": "sec-active-class",
+      "href": "https://www.w3.org/TR/epub-34/#sec-active-class",
+      "level": 4,
+      "title": "active-class",
+      "number": "D.8.1"
+    },
+    {
+      "id": "sec-duration",
+      "href": "https://www.w3.org/TR/epub-34/#sec-duration",
+      "level": 4,
+      "title": "duration",
+      "number": "D.8.2"
+    },
+    {
+      "id": "sec-narrator",
+      "href": "https://www.w3.org/TR/epub-34/#sec-narrator",
+      "level": 4,
+      "title": "narrator",
+      "number": "D.8.3"
+    },
+    {
+      "id": "sec-playback-active-class",
+      "href": "https://www.w3.org/TR/epub-34/#sec-playback-active-class",
+      "level": 4,
+      "title": "playback-active-class",
+      "number": "D.8.4"
+    },
+    {
+      "id": "css-prefixes",
+      "href": "https://www.w3.org/TR/epub-34/#css-prefixes",
+      "level": 2,
+      "title": "Prefixed CSS properties",
+      "number": "E"
+    },
+    {
+      "id": "sec-css-prefixed-writing-modes",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-prefixed-writing-modes",
+      "level": 3,
+      "title": "CSS writing modes",
+      "number": "E.1"
+    },
+    {
+      "id": "sec-css-prefixed-writing-modes-text-orientation",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-prefixed-writing-modes-text-orientation",
+      "level": 4,
+      "title": "The -epub-text-orientation property",
+      "number": "E.1.1"
+    },
+    {
+      "id": "sec-css-prefixed-writing-modes-writing-mode",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-prefixed-writing-modes-writing-mode",
+      "level": 4,
+      "title": "The -epub-writing-mode property",
+      "number": "E.1.2"
+    },
+    {
+      "id": "sec-css-prefixed-writing-modes-text-combine",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-prefixed-writing-modes-text-combine",
+      "level": 4,
+      "title": "The -epub-text-combine-horizontal and -epub-text-combine properties",
+      "number": "E.1.3"
+    },
+    {
+      "id": "sec-css-prefixed-text",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-prefixed-text",
+      "level": 3,
+      "title": "CSS text level 3",
+      "number": "E.2"
+    },
+    {
+      "id": "sec-css-prefixed-text-epub-hyphens",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-prefixed-text-epub-hyphens",
+      "level": 4,
+      "title": "The -epub-hyphens property",
+      "number": "E.2.1"
+    },
+    {
+      "id": "sec-css-prefixed-text-epub-line-break",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-prefixed-text-epub-line-break",
+      "level": 4,
+      "title": "The -epub-line-break property",
+      "number": "E.2.2"
+    },
+    {
+      "id": "sec-css-prefixed-text-epub-text-align-last",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-prefixed-text-epub-text-align-last",
+      "level": 4,
+      "title": "The -epub-text-align-last property",
+      "number": "E.2.3"
+    },
+    {
+      "id": "sec-css-prefixed-text-epub-word-break",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-prefixed-text-epub-word-break",
+      "level": 4,
+      "title": "The -epub-word-break property",
+      "number": "E.2.4"
+    },
+    {
+      "id": "sec-css-prefixed-text-text-transform",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-prefixed-text-text-transform",
+      "level": 4,
+      "title": "The text-transform property",
+      "number": "E.2.5"
+    },
+    {
+      "id": "sec-css-prefixed-text-decoration",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-prefixed-text-decoration",
+      "level": 3,
+      "title": "CSS text decoration level 3",
+      "number": "E.3"
+    },
+    {
+      "id": "sec-css-prefixed-text-epub-text-emphasis-color",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-prefixed-text-epub-text-emphasis-color",
+      "level": 4,
+      "title": "The -epub-text-emphasis-color Property",
+      "number": "E.3.1"
+    },
+    {
+      "id": "sec-css-prefixed-text-epub-text-emphasis-position",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-prefixed-text-epub-text-emphasis-position",
+      "level": 4,
+      "title": "The -epub-text-emphasis-position property",
+      "number": "E.3.2"
+    },
+    {
+      "id": "sec-css-prefixed-text-epub-text-emphasis-style",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-prefixed-text-epub-text-emphasis-style",
+      "level": 4,
+      "title": "The -epub-text-emphasis-style property",
+      "number": "E.3.3"
+    },
+    {
+      "id": "sec-css-prefixed-text-epub-text-underline-position",
+      "href": "https://www.w3.org/TR/epub-34/#sec-css-prefixed-text-epub-text-underline-position",
+      "level": 4,
+      "title": "The -epub-text-underline-position property",
+      "number": "E.3.4"
+    },
+    {
+      "id": "app-viewport-meta",
+      "href": "https://www.w3.org/TR/epub-34/#app-viewport-meta",
+      "level": 2,
+      "title": "The viewport meta tag",
+      "number": "F"
+    },
+    {
+      "id": "app-viewport-meta-intro",
+      "href": "https://www.w3.org/TR/epub-34/#app-viewport-meta-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "F.1"
+    },
+    {
+      "id": "app-viewport-meta-syntax",
+      "href": "https://www.w3.org/TR/epub-34/#app-viewport-meta-syntax",
+      "level": 3,
+      "title": "Syntax",
+      "number": "F.2"
+    },
+    {
+      "id": "app-schemas",
+      "href": "https://www.w3.org/TR/epub-34/#app-schemas",
+      "level": 2,
+      "title": "Schemas",
+      "number": "G"
+    },
+    {
+      "id": "app-package-schema",
+      "href": "https://www.w3.org/TR/epub-34/#app-package-schema",
+      "level": 3,
+      "title": "Package document schema",
+      "number": "G.1"
+    },
+    {
+      "id": "app-ocf-schema",
+      "href": "https://www.w3.org/TR/epub-34/#app-ocf-schema",
+      "level": 3,
+      "title": "OCF schemas",
+      "number": "G.2"
+    },
+    {
+      "id": "app-schema-container",
+      "href": "https://www.w3.org/TR/epub-34/#app-schema-container",
+      "level": 4,
+      "title": "Schema for container.xml",
+      "number": "G.2.1"
+    },
+    {
+      "id": "app-schema-encryption",
+      "href": "https://www.w3.org/TR/epub-34/#app-schema-encryption",
+      "level": 4,
+      "title": "Schema for encryption.xml",
+      "number": "G.2.2"
+    },
+    {
+      "id": "app-schema-signatures",
+      "href": "https://www.w3.org/TR/epub-34/#app-schema-signatures",
+      "level": 4,
+      "title": "Schema for signatures.xml",
+      "number": "G.2.3"
+    },
+    {
+      "id": "app-schema-overlays",
+      "href": "https://www.w3.org/TR/epub-34/#app-schema-overlays",
+      "level": 3,
+      "title": "Media overlays schema",
+      "number": "G.3"
+    },
+    {
+      "id": "app-examples",
+      "href": "https://www.w3.org/TR/epub-34/#app-examples",
+      "level": 2,
+      "title": "Detailed examples",
+      "number": "H"
+    },
+    {
+      "id": "publication-resources-example",
+      "href": "https://www.w3.org/TR/epub-34/#publication-resources-example",
+      "level": 3,
+      "title": "Resources",
+      "number": "H.1"
+    },
+    {
+      "id": "scripted-contexts-example",
+      "href": "https://www.w3.org/TR/epub-34/#scripted-contexts-example",
+      "level": 3,
+      "title": "Scripting contexts",
+      "number": "H.2"
+    },
+    {
+      "id": "ocf-example",
+      "href": "https://www.w3.org/TR/epub-34/#ocf-example",
+      "level": 3,
+      "title": "Packaged EPUB",
+      "number": "H.3"
+    },
+    {
+      "id": "clock-examples",
+      "href": "https://www.w3.org/TR/epub-34/#clock-examples",
+      "level": 3,
+      "title": "Clock values",
+      "number": "H.4"
+    },
+    {
+      "id": "app-media-types",
+      "href": "https://www.w3.org/TR/epub-34/#app-media-types",
+      "level": 2,
+      "title": "Media type registrations",
+      "number": "I"
+    },
+    {
+      "id": "app-media-type-app-oebps-package",
+      "href": "https://www.w3.org/TR/epub-34/#app-media-type-app-oebps-package",
+      "level": 3,
+      "title": "The application/oebps-package+xml media type",
+      "number": "I.1"
+    },
+    {
+      "id": "app-media-type",
+      "href": "https://www.w3.org/TR/epub-34/#app-media-type",
+      "level": 3,
+      "title": "The application/epub+zip media type",
+      "number": "I.2"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/epub-34/#index",
+      "level": 2,
+      "title": "Index",
+      "number": "J"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/epub-34/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "number": "J.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/epub-34/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "number": "J.2"
+    },
+    {
+      "id": "change-log",
+      "href": "https://www.w3.org/TR/epub-34/#change-log",
+      "level": 2,
+      "title": "Change log",
+      "number": "K"
+    },
+    {
+      "id": "ack",
+      "href": "https://www.w3.org/TR/epub-34/#ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "L"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/epub-34/#references",
+      "level": 2,
+      "title": "References",
+      "number": "M"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/epub-34/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "M.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/epub-34/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "M.2"
+    }
+  ]
+}

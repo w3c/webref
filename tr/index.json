@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-04-01T01:51:19.448Z",
+  "date": "2025-04-02T01:50:47.953Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -465,7 +465,10 @@
       "eme-stream-webm",
       "encrypted-media-2",
       "epub-33",
+      "epub-34",
+      "epub-a11y-111",
       "epub-rs-33",
+      "epub-rs-34",
       "event-timing",
       "fedcm-1",
       "fetch-metadata",
@@ -689,10 +692,10 @@
     ]
   },
   "stats": {
-    "crawled": 349,
+    "crawled": 352,
     "errors": 0
   },
-  "crawler": "reffy-18.4.5",
+  "crawler": "reffy-18.4.6",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -738,7 +741,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "1 April 2025",
+      "date": "2 April 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -10343,7 +10346,7 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-initdata-registry/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:39:25 GMT"
+        "lastModified": "Fri, 12 Jul 2024 12:26:24 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
@@ -10454,7 +10457,7 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-stream-mp4/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:26:25 GMT"
+        "lastModified": "Fri, 12 Jul 2024 12:39:25 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
@@ -10509,7 +10512,7 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-stream-registry/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:26:24 GMT"
+        "lastModified": "Fri, 12 Jul 2024 12:46:58 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
@@ -10666,6 +10669,7 @@
         "filename": "index.html"
       },
       "categories": [],
+      "seriesNext": "epub-34",
       "organization": "W3C",
       "groups": [
         {
@@ -10702,6 +10706,119 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/epub-34/",
+      "seriesComposition": "full",
+      "shortname": "epub-34",
+      "series": {
+        "shortname": "epub",
+        "currentSpecification": "epub-33",
+        "title": "EPUB",
+        "shortTitle": "EPUB",
+        "releaseUrl": "https://www.w3.org/TR/epub/",
+        "nightlyUrl": "https://w3c.github.io/epub-specs/epub33/core/"
+      },
+      "seriesVersion": "3.4",
+      "nightly": {
+        "url": "https://w3c.github.io/epub-specs/epub34/authoring/",
+        "status": "Editor's Draft",
+        "sourcePath": "epub34/authoring/index.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/epub-specs",
+        "filename": "index.html"
+      },
+      "categories": [],
+      "seriesPrevious": "epub-33",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Publishing Maintenance Working Group",
+          "url": "https://www.w3.org/groups/wg/pm/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/epub-34/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "title": "EPUB 3.4",
+      "source": "w3c",
+      "shortTitle": "EPUB 3.4",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/epub-34/",
+        "https://w3c.github.io/epub-specs/epub34/authoring/"
+      ],
+      "crawled": "https://www.w3.org/TR/epub-34/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 19 Mar 2025 07:17:46 GMT"
+      },
+      "generator": "respec",
+      "date": "27 March 2025",
+      "algorithms": "algorithms/epub-34.json",
+      "links": "links/epub-34.json",
+      "refs": "refs/epub-34.json",
+      "dfns": "dfns/epub-34.json",
+      "elements": "elements/epub-34.json",
+      "headings": "headings/epub-34.json",
+      "ids": "ids/epub-34.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/epub-a11y-111/",
+      "seriesComposition": "full",
+      "shortname": "epub-a11y-111",
+      "series": {
+        "shortname": "epub-a11y",
+        "currentSpecification": "epub-a11y-111",
+        "title": "EPUB Accessibility",
+        "shortTitle": "EPUB Accessibility",
+        "releaseUrl": "https://www.w3.org/TR/epub-a11y/",
+        "nightlyUrl": "https://w3c.github.io/epub-specs/epub34/a11y/"
+      },
+      "seriesVersion": "1.1.1",
+      "nightly": {
+        "url": "https://w3c.github.io/epub-specs/epub34/a11y/",
+        "status": "Editor's Draft",
+        "sourcePath": "epub34/a11y/index.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/epub-specs",
+        "filename": "index.html"
+      },
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Publishing Maintenance Working Group",
+          "url": "https://www.w3.org/groups/wg/pm/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/epub-a11y-111/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "title": "EPUB Accessibility 1.1.1",
+      "source": "w3c",
+      "shortTitle": "EPUB Accessibility 1.1.1",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/epub-a11y-111/",
+        "https://w3c.github.io/epub-specs/epub34/a11y/"
+      ],
+      "crawled": "https://www.w3.org/TR/epub-a11y-111/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 18 Mar 2025 07:17:11 GMT"
+      },
+      "generator": "respec",
+      "date": "27 March 2025",
+      "links": "links/epub-a11y-111.json",
+      "refs": "refs/epub-a11y-111.json",
+      "dfns": "dfns/epub-a11y-111.json",
+      "headings": "headings/epub-a11y-111.json",
+      "ids": "ids/epub-a11y-111.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/epub-rs-33/",
       "seriesComposition": "full",
       "shortname": "epub-rs-33",
@@ -10723,6 +10840,7 @@
         "filename": "index.html"
       },
       "categories": [],
+      "seriesNext": "epub-rs-34",
       "organization": "W3C",
       "groups": [
         {
@@ -10752,10 +10870,67 @@
       "algorithms": "algorithms/epub-rs-33.json",
       "links": "links/epub-rs-33.json",
       "refs": "refs/epub-rs-33.json",
-      "idl": "idl/epub-rs.idl",
       "dfns": "dfns/epub-rs-33.json",
       "headings": "headings/epub-rs-33.json",
       "ids": "ids/epub-rs-33.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/epub-rs-34/",
+      "seriesComposition": "full",
+      "shortname": "epub-rs-34",
+      "series": {
+        "shortname": "epub-rs",
+        "currentSpecification": "epub-rs-33",
+        "title": "EPUB Reading Systems",
+        "shortTitle": "EPUB Reading Systems",
+        "releaseUrl": "https://www.w3.org/TR/epub-rs/",
+        "nightlyUrl": "https://w3c.github.io/epub-specs/epub33/rs/"
+      },
+      "seriesVersion": "3.4",
+      "nightly": {
+        "url": "https://w3c.github.io/epub-specs/epub34/rs/",
+        "status": "Editor's Draft",
+        "sourcePath": "epub34/rs/index.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/epub-specs",
+        "filename": "index.html"
+      },
+      "categories": [],
+      "seriesPrevious": "epub-rs-33",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Publishing Maintenance Working Group",
+          "url": "https://www.w3.org/groups/wg/pm/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/epub-rs-34/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "title": "EPUB Reading Systems 3.4",
+      "source": "w3c",
+      "shortTitle": "EPUB Reading Systems 3.4",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/epub-rs-34/",
+        "https://w3c.github.io/epub-specs/epub34/rs/"
+      ],
+      "crawled": "https://www.w3.org/TR/epub-rs-34/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 18 Mar 2025 07:18:24 GMT"
+      },
+      "generator": "respec",
+      "date": "27 March 2025",
+      "algorithms": "algorithms/epub-rs-34.json",
+      "links": "links/epub-rs-34.json",
+      "refs": "refs/epub-rs-34.json",
+      "idl": "idl/epub-rs.idl",
+      "dfns": "dfns/epub-rs-34.json",
+      "headings": "headings/epub-rs-34.json",
+      "ids": "ids/epub-rs-34.json",
       "cddl": []
     },
     {
@@ -10931,11 +11106,11 @@
       ],
       "crawled": "https://www.w3.org/TR/fetch-metadata/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 31 Oct 2023 07:35:08 GMT"
+        "lastModified": "Tue, 01 Apr 2025 06:18:45 GMT"
       },
       "generator": "bikeshed",
-      "date": "31 October 2023",
-      "revision": "8624131b818d0e3ffc59d5bb5daba9c182fcee50",
+      "date": "1 April 2025",
+      "revision": "6d0c5bffaa3ab068747cb66cf10503d0ad1107e5",
       "algorithms": "algorithms/fetch-metadata.json",
       "links": "links/fetch-metadata.json",
       "refs": "refs/fetch-metadata.json",

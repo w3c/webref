@@ -1,0 +1,82 @@
+{
+  "spec": {
+    "title": "EPUB Reading Systems 3.4",
+    "url": "https://www.w3.org/TR/epub-rs-34/"
+  },
+  "algorithms": [
+    {
+      "name": "obtain an expanded URL",
+      "href": "https://www.w3.org/TR/epub-rs-34/#dfn-obtain-an-expanded-url",
+      "html": "To <dfn id=\"dfn-obtain-an-expanded-url\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">obtain an expanded URL</dfn>, apply the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>baseURL</var>, <var>expandedURL</var>, <var>propertyPrefix</var>, and\n\t\t\t\t\t\t\t<var>propertyReference</var> be empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-index-term-string-3\">strings</a>.</p>\n\t\t\t\t\t<details class=\"explanation\">\n\t\t\t\t\t\t<summary>Explanation</summary>\n\t\t\t\t\t\t<p>In this algorithm:</p>\n\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t<li><var>baseURL</var> will hold the base URL associated with the value, whether this URL is\n\t\t\t\t\t\t\t\tassigned by the EPUB creator, corresponds to a default vocabulary, or comes from a\n\t\t\t\t\t\t\t\treserved prefix.</li>\n\t\t\t\t\t\t\t<li><var>expandedURL</var> will hold the final URL that results from the concatenation of\n\t\t\t\t\t\t\t\tthe base URL and property reference.</li>\n\t\t\t\t\t\t\t<li><var>propertyPrefix</var> will hold the property's <a href=\"https://w3c.github.io/epub-specs/epub34/authoring/#property.ebnf.prefix\" id=\"ref-for-index-term-prefix-1\">prefix</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/epub-rs-34/#bib-epub-34\" title=\"EPUB 3.4\">epub-34</a></cite>] (i.e., the value\n\t\t\t\t\t\t\t\tbefore the colon). Properties from a default vocabulary will not have a prefix, but all\n\t\t\t\t\t\t\t\tothers will.</li>\n\t\t\t\t\t\t\t<li><var>propertyReference</var> will hold the property's <a href=\"https://w3c.github.io/epub-specs/epub34/authoring/#property.ebnf.reference\" id=\"ref-for-index-term-reference-1\">reference</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/epub-rs-34/#bib-epub-34\" title=\"EPUB 3.4\">epub-34</a></cite>] (i.e., the\n\t\t\t\t\t\t\t\tvalue after the prefix). All valid properties require a reference.</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</details>"
+        },
+        {
+          "html": "Obtain the values of <var>propertyPrefix</var> and <var>propertyReference</var> as follows:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>value</var> does not contain a colon (U+003A), set <var>propertyReference</var>\n\t\t\t\t\t\t\t\tto <var>value</var>.</p>\n\t\t\t\t\t\t\t<details class=\"explanation\">\n\t\t\t\t\t\t\t\t<summary>Explanation</summary>\n\t\t\t\t\t\t\t\t<p>If a <code>property</code> value does not have a colon, it does not have a prefix. In\n\t\t\t\t\t\t\t\t\tthis case, the value is drawn from the default vocabulary as described in the next\n\t\t\t\t\t\t\t\t\tstep of the algorithm.</p>\n\t\t\t\t\t\t\t</details>"
+            },
+            {
+              "html": "<p>Otherwise, if <var>value</var> begins with a colon, the value is invalid. Return <a href=\"https://infra.spec.whatwg.org/#nulls\" id=\"ref-for-index-term-null-2\">null</a>.</p>\n\t\t\t\t\t\t\t<details class=\"explanation\">\n\t\t\t\t\t\t\t\t<summary>Explanation</summary>\n\t\t\t\t\t\t\t\t<p>A colon at the beginning of the value is invalid as it indicates the prefix is not\n\t\t\t\t\t\t\t\t\tset.</p>\n\t\t\t\t\t\t\t</details>"
+            },
+            {
+              "html": "<p>Otherwise, split <var>value</var> on the first colon and set <var>propertyPrefix</var> to\n\t\t\t\t\t\t\t\tthe string before the colon and set <var>propertyReference</var> to the string after the\n\t\t\t\t\t\t\t\tcolon.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Obtain the value of <var>baseURL</var> as follows:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>propertyPrefix</var> is an empty string:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>attr</var> is <code>epub:type</code> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/epub-rs-34/#bib-epub-34\" title=\"EPUB 3.4\">epub-34</a></cite>], set <var>baseURL</var> to\n\t\t\t\t\t\t\t\t\t\t<br><code>http://idpf.org/epub/vocab/structure/#</code>"
+                },
+                {
+                  "html": "Otherwise, if <var>elem</var> is the package document <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/semantics.html#meta\" id=\"ref-for-index-term-meta-element-6\">meta</a></code> element [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/epub-rs-34/#bib-epub-34\" title=\"EPUB 3.4\">epub-34</a></cite>]\n\t\t\t\t\t\t\t\t\tand <var>attr</var> is <code>scheme</code>, the property value is invalid. Return <a href=\"https://infra.spec.whatwg.org/#nulls\" id=\"ref-for-index-term-null-4\">null</a>."
+                },
+                {
+                  "html": "Otherwise, if <var>elem</var> is the package document <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/semantics.html#meta\" id=\"ref-for-index-term-meta-element-7\">meta</a></code> element [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/epub-rs-34/#bib-epub-34\" title=\"EPUB 3.4\">epub-34</a></cite>],\n\t\t\t\t\t\t\t\t\tset <var>baseURL</var> to\n\t\t\t\t\t\t\t\t\t\t<br><code>http://idpf.org/epub/vocab/package/meta/#</code>"
+                },
+                {
+                  "html": "Otherwise, if <var>elem</var> is the package document <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-link-element\" id=\"ref-for-index-term-link-element-2\">link</a></code> element [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/epub-rs-34/#bib-epub-34\" title=\"EPUB 3.4\">epub-34</a></cite>],\n\t\t\t\t\t\t\t\t\tset <var>baseURL</var> to\n\t\t\t\t\t\t\t\t\t\t<br><code>http://idpf.org/epub/vocab/package/link/#</code>"
+                },
+                {
+                  "html": "Otherwise, if <var>elem</var> is the package document <code>item</code> element [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/epub-rs-34/#bib-epub-34\" title=\"EPUB 3.4\">epub-34</a></cite>],\n\t\t\t\t\t\t\t\t\tset <var>baseURL</var> to\n\t\t\t\t\t\t\t\t\t\t<br><code>http://idpf.org/epub/vocab/package/item/#</code>"
+                },
+                {
+                  "html": "Otherwise, if <var>elem</var> is the package document <code>itemref</code> element\n\t\t\t\t\t\t\t\t\t[<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/epub-rs-34/#bib-epub-34\" title=\"EPUB 3.4\">epub-34</a></cite>], set <var>baseURL</var> to\n\t\t\t\t\t\t\t\t\t\t<br><code>http://idpf.org/epub/vocab/package/itemref/#</code>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If a <code>prefix</code> attribute is declared on the document element of\n\t\t\t\t\t\t\t\t\t\t\t<var>doc</var>, and the attribute contains a prefix that matches\n\t\t\t\t\t\t\t\t\t\t\t<var>propertyPrefix</var>, set <var>baseURL</var> to the URL associated with\n\t\t\t\t\t\t\t\t\t\tthe prefix declaration.</p>"
+                },
+                {
+                  "html": "<p>Otherwise, if <var>propertyPrefix</var> matches a <a href=\"https://w3c.github.io/epub-specs/epub34/authoring/#sec-reserved-prefixes\" id=\"ref-for-index-term-reserved-prefix-1\">reserved prefix</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/epub-rs-34/#bib-epub-34\" title=\"EPUB 3.4\">epub-34</a></cite>]\n\t\t\t\t\t\t\t\t\t\tfor <var>doc</var>, set <var>baseURL</var> to the URL associated with the\n\t\t\t\t\t\t\t\t\t\treserved prefix.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Set <var>expandedURL</var> to the concatenated values of <var>baseURL</var> and\n\t\t\t\t\t\t<var>propertyReference</var>. Do not add a separator when concatenating the values."
+        },
+        {
+          "html": "<p>If <var>expandedURL</var> is not a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#valid-url-string\" id=\"ref-for-index-term-valid-url-string-1\">valid URL string</a>, the value is invalid. Return <a href=\"https://infra.spec.whatwg.org/#nulls\" id=\"ref-for-index-term-null-6\">null</a>.</p>\n\t\t\t\t\t<p>Otherwise, return <var>expandedURL</var>.</p>\n\t\t\t\t\t<details class=\"explanation\">\n\t\t\t\t\t\t<summary>Explanation</summary>\n\t\t\t\t\t\t<p>Although an expanded value may be obtained, it is not necessarily the case that it is a valid\n\t\t\t\t\t\t\tURL. This is only likely to occur when the EPUB creator assigns an invalid base URL to a\n\t\t\t\t\t\t\tprefix.</p>\n\t\t\t\t\t</details>"
+        }
+      ]
+    }
+  ]
+}
