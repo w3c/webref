@@ -557,7 +557,12 @@
     "targets": [
       {
         "target": "HTMLElement",
-        "bubbles": false
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
       }
     ],
     "interface": "Event"
