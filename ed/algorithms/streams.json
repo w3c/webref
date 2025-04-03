@@ -333,7 +333,7 @@
     {
       "name": "ReadableStreamGenericReader/closed",
       "href": "https://streams.spec.whatwg.org/#generic-reader-closed",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ReadableStreamGenericReader\" data-dfn-type=\"attribute\" data-export=\"\" id=\"generic-reader-closed\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><code>closed</code><span id=\"default-reader-closed\"></span><span id=\"byob-reader-closed\"></span></code></dfn> getter steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ReadableStreamGenericReader\" data-dfn-type=\"attribute\" data-export=\"\" id=\"generic-reader-closed\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"byob-reader-closed\"></span><span class=\"bs-old-id\" id=\"default-reader-closed\"></span><code>closed</code></code></dfn> getter steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -344,7 +344,7 @@
     {
       "name": "ReadableStreamGenericReader/cancel(reason)",
       "href": "https://streams.spec.whatwg.org/#generic-reader-cancel",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ReadableStreamGenericReader\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"cancel(reason)|cancel()\" id=\"generic-reader-cancel\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><code>cancel(<var>reason</var>)</code><span id=\"default-reader-cancel\"></span><span id=\"byob-reader-cancel\"></span></code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ReadableStreamGenericReader\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"cancel(reason)|cancel()\" id=\"generic-reader-cancel\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"byob-reader-cancel\"></span><span class=\"bs-old-id\" id=\"default-reader-cancel\"></span><code>cancel(<var>reason</var>)</code></code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -4774,7 +4774,7 @@
     {
       "name": "WritableStreamDefaultController/[[AbortSteps]]",
       "href": "https://streams.spec.whatwg.org/#ws-default-controller-private-abort",
-      "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WritableStreamDefaultController\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"[[AbortSteps]]\" id=\"ws-default-controller-private-abort\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">[[AbortSteps]](<var>reason</var>)<span id=\"writable-stream-default-controller-abort\"></span></dfn> implements the <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#abstract-opdef-writablestreamcontroller-abortsteps\" id=\"ref-for-abstract-opdef-writablestreamcontroller-abortsteps\">[[AbortSteps]]</a> contract. It performs the following steps:",
+      "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WritableStreamDefaultController\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"[[AbortSteps]]\" id=\"ws-default-controller-private-abort\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"writable-stream-default-controller-abort\"></span>[[AbortSteps]](<var>reason</var>)</dfn> implements the <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#abstract-opdef-writablestreamcontroller-abortsteps\" id=\"ref-for-abstract-opdef-writablestreamcontroller-abortsteps\">[[AbortSteps]]</a> contract. It performs the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -5982,7 +5982,7 @@
           "rationale": "assert",
           "steps": [
             {
-              "html": "<p class=\"assertion\">Assert: <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultcontroller-stream\" id=\"ref-for-writablestreamdefaultcontroller-stream⑤\">[[stream]]</a>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-state\" id=\"ref-for-writablestream-state③②\">[[state]]</a> is \"<code>erroring</code>\" or\n  \"<code>errored</code>\".</p>"
+              "html": "<p class=\"assertion\">Assert: <var>controller</var>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultcontroller-stream\" id=\"ref-for-writablestreamdefaultcontroller-stream⑤\">[[stream]]</a>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-state\" id=\"ref-for-writablestream-state③②\">[[state]]</a> is not\n  \"<code>writable</code>\".</p>"
             },
             {
               "html": "<p>Return 1.</p>"
@@ -7258,7 +7258,7 @@
               "html": "<p>Let <var>data</var> be the data of the message.</p>"
             },
             {
-              "html": "<p class=\"assertion\">Assert: <var>data</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type②\">is an Object</a>.</p>"
+              "html": "<p class=\"assertion\">Assert: <var>data</var> <a data-link-type=\"dfn\" data-refhint-key=\"08a5d589\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type②\">is an Object</a>.</p>"
             },
             {
               "html": "<p>Let <var>type</var> be ! <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p\">Get</a>(<var>data</var>, \"<code>type</code>\").</p>"
@@ -7389,7 +7389,7 @@
               "html": "<p>Let <var>data</var> be the data of the message.</p>"
             },
             {
-              "html": "<p class=\"assertion\">Assert: <var>data</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type③\">is an Object</a>.</p>"
+              "html": "<p class=\"assertion\">Assert: <var>data</var> <a data-link-type=\"dfn\" data-refhint-key=\"08a5d589\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type③\">is an Object</a>.</p>"
             },
             {
               "html": "<p>Let <var>type</var> be ! <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p②\">Get</a>(<var>data</var>, \"<code>type</code>\").</p>"
@@ -7549,7 +7549,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>O</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type④\">is an Object</a>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>O</var> <a data-link-type=\"dfn\" data-refhint-key=\"08a5d589\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type④\">is an Object</a>.</p>"
         },
         {
           "html": "<p class=\"assertion\">Assert: <var>O</var> has an [[ArrayBufferData]] internal slot.</p>"
@@ -7615,7 +7615,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>O</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type⑤\">is an Object</a>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>O</var> <a data-link-type=\"dfn\" data-refhint-key=\"08a5d589\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type⑤\">is an Object</a>.</p>"
         },
         {
           "html": "<p class=\"assertion\">Assert: <var>O</var> has an [[ViewedArrayBuffer]] internal slot.</p>"
@@ -7655,13 +7655,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>toBuffer</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type⑥\">is an Object</a>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>toBuffer</var> <a data-link-type=\"dfn\" data-refhint-key=\"08a5d589\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type⑥\">is an Object</a>.</p>"
         },
         {
           "html": "<p class=\"assertion\">Assert: <var>toBuffer</var> has an [[ArrayBufferData]] internal slot.</p>"
         },
         {
-          "html": "<p class=\"assertion\">Assert: <var>fromBuffer</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type⑦\">is an Object</a>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>fromBuffer</var> <a data-link-type=\"dfn\" data-refhint-key=\"08a5d589\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type⑦\">is an Object</a>.</p>"
         },
         {
           "html": "<p class=\"assertion\">Assert: <var>fromBuffer</var> has an [[ArrayBufferData]] internal slot.</p>"
