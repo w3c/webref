@@ -6,7 +6,6 @@
   "links": {
     "rawlinks": {
       "http://www.iso.org/iso/home/standards/currency_codes.htm": {},
-      "https://datatracker.ietf.org/doc/html/bcp14": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/PaymentMethodChangeEvent": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/PaymentMethodChangeEvent/PaymentMethodChangeEvent": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/PaymentMethodChangeEvent/methodDetails": {},
@@ -29,15 +28,7 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/PaymentResponse/retry": {},
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/payment": {},
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/payment": {},
-      "https://dom.spec.whatwg.org/": {
-        "anchors": [
-          "potential-event-target",
-          "concept-document",
-          "concept-event-fire",
-          "concept-event-create",
-          "concept-event-dispatch"
-        ]
-      },
+      "https://dom.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {},
       "https://github.com/w3c/payment-request/commit/0273c79": {},
       "https://github.com/w3c/payment-request/commit/0358fb3": {},
@@ -166,44 +157,8 @@
       "https://github.com/w3c/payment-request/pull/977": {},
       "https://github.com/w3c/payment-request/pull/982": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-        "anchors": [
-          "top-level-browsing-context"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-        "anchors": [
-          "allowed-to-use",
-          "the-iframe-element"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-        "anchors": [
-          "in-parallel"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/interactive-elements.html": {
-        "anchors": [
-          "the-details-element"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-        "anchors": [
-          "concept-document-window"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/webappapis.html": {
-        "anchors": [
-          "queue-a-task",
-          "user-interaction-task-source",
-          "concept-relevant-global"
-        ]
-      },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "list",
-          "ascii-uppercase",
-          "code-point",
           "assert"
         ]
       },
@@ -222,24 +177,10 @@
       "https://url.spec.whatwg.org/": {},
       "https://w3c.github.io/contact-picker/": {},
       "https://w3c.github.io/test-results/payment-request/all.html": {},
-      "https://webidl.spec.whatwg.org/": {
-        "anchors": [
-          "dfn-dictionary",
-          "SecureContext",
-          "Exposed",
-          "idl-sequence",
-          "NewObject",
-          "idl-promise",
-          "a-promise-rejected-with",
-          "a-new-promise",
-          "dfn-exception",
-          "upon-rejection",
-          "upon-fulfillment",
-          "Default"
-        ]
-      },
+      "https://webidl.spec.whatwg.org/": {},
       "https://wpt.live/payment-request/": {},
       "https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-E.164-201011-I!!PDF-E&type=items": {},
+      "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/rfc/rfc2119": {},
       "https://www.rfc-editor.org/rfc/rfc4122": {},
       "https://www.rfc-editor.org/rfc/rfc6454": {
@@ -250,20 +191,9 @@
       "https://www.rfc-editor.org/rfc/rfc8174": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2022/REC-payment-request-20220908/": {},
-      "https://www.w3.org/TR/contact-picker/": {
-        "anchors": [
-          "physical-address"
-        ]
-      },
+      "https://www.w3.org/TR/contact-picker/": {},
       "https://www.w3.org/TR/payment-handler/": {},
-      "https://www.w3.org/TR/payment-method-id/": {
-        "anchors": [
-          "dfn-pmi",
-          "dfn-validate-a-payment-method-identifier",
-          "dfn-standardized-payment-method-identifier",
-          "dfn-url-based-payment-method-identifier"
-        ]
-      },
+      "https://www.w3.org/TR/payment-method-id/": {},
       "https://www.w3.org/TR/permissions-policy-1/": {},
       "https://www.w3.org/TR/secure-contexts/": {},
       "https://www.w3.org/community/wicg/": {},
@@ -287,6 +217,8 @@
         "anchors": [
           "eventtarget",
           "document-element",
+          "potential-event-target",
+          "concept-document",
           "event",
           "concept-event-constructor",
           "dom-event-istrusted",
@@ -294,7 +226,10 @@
           "stop-propagation-flag",
           "stop-immediate-propagation-flag",
           "dictdef-eventinit",
-          "dom-event-type"
+          "concept-event-fire",
+          "concept-event-create",
+          "dom-event-type",
+          "concept-event-dispatch"
         ]
       },
       "https://fetch.spec.whatwg.org/": {
@@ -309,8 +244,8 @@
       },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
-          "fully-active",
-          "top-level-browsing-context"
+          "top-level-browsing-context",
+          "fully-active"
         ]
       },
       "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -322,7 +257,13 @@
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
         "anchors": [
           "the-iframe-element",
-          "attr-iframe-allow"
+          "attr-iframe-allow",
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
         ]
       },
       "https://html.spec.whatwg.org/multipage/interaction.html": {
@@ -330,6 +271,11 @@
           "transient-activation",
           "consume-user-activation",
           "visibility-state"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interactive-elements.html": {
+        "anchors": [
+          "the-details-element"
         ]
       },
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
@@ -342,6 +288,8 @@
         "anchors": [
           "eventhandler",
           "concept-relevant-global",
+          "queue-a-task",
+          "user-interaction-task-source",
           "secure-context"
         ]
       },
@@ -351,8 +299,10 @@
           "list-contain",
           "set-append",
           "serialize-a-javascript-value-to-a-json-string",
+          "list",
           "string",
-          "code-point"
+          "code-point",
+          "ascii-uppercase"
         ]
       },
       "https://tc39.es/ecma262/multipage/": {
@@ -378,8 +328,14 @@
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
+          "dfn-dictionary",
           "idl-object",
           "default-tojson-steps",
+          "SecureContext",
+          "Exposed",
+          "idl-sequence",
+          "NewObject",
+          "idl-promise",
           "idl-undefined",
           "idl-boolean",
           "idl-DOMString",
@@ -390,12 +346,15 @@
           "exceptiondef-typeerror",
           "exceptiondef-rangeerror",
           "dfn-convert-ecmascript-to-idl-value",
-          "idl-promise",
           "a-promise-rejected-with",
           "aborterror",
           "invalidstateerror",
-          "notsupportederror",
+          "a-new-promise",
           "dfn-exception",
+          "notsupportederror",
+          "upon-rejection",
+          "upon-fulfillment",
+          "Default",
           "notallowederror"
         ]
       },
@@ -427,7 +386,10 @@
       },
       "https://www.w3.org/TR/payment-method-id/": {
         "anchors": [
-          "dfn-pmi"
+          "dfn-pmi",
+          "dfn-validate-a-payment-method-identifier",
+          "dfn-standardized-payment-method-identifier",
+          "dfn-url-based-payment-method-identifier"
         ]
       },
       "https://www.w3.org/TR/permissions-policy-1/": {
