@@ -1,6 +1,6 @@
 // Source: WebRTC: Real-Time Communication in Browsers (https://www.w3.org/TR/webrtc/)
 dictionary RTCIceServer {
-  required (DOMString or sequence<DOMString>) urls;
+  required (USVString or sequence<USVString>) urls;
   DOMString username;
   DOMString credential;
 };

@@ -2,7 +2,7 @@
 dictionary RTCPeerConnectionIceErrorEventInit : EventInit {
   DOMString? address;
   unsigned short? port;
-  DOMString url;
+  USVString url;
   required unsigned short errorCode;
   USVString errorText;
 };

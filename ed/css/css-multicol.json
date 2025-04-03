@@ -103,8 +103,8 @@
     {
       "name": "column-wrap",
       "href": "https://drafts.csswg.org/css-multicol-2/#propdef-column-wrap",
-      "value": "nowrap | wrap",
-      "initial": "nowrap",
+      "value": "auto | nowrap | wrap",
+      "initial": "auto",
       "appliesTo": "multicol containers",
       "inherited": "no",
       "percentages": "n/a",
@@ -112,6 +112,13 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "values": [
+        {
+          "name": "auto",
+          "prose": "If column-height is not auto behaves as the value wrap otherwise acts as nowrap.",
+          "href": "https://drafts.csswg.org/css-multicol-2/#valdef-column-wrap-auto",
+          "type": "value",
+          "value": "auto"
+        },
         {
           "name": "nowrap",
           "prose": "Overflow columns are created in the inline direction.",

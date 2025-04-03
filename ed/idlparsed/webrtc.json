@@ -190,7 +190,7 @@
         "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration"
       },
       "RTCIceServer": {
-        "fragment": "dictionary RTCIceServer {\n  required (DOMString or sequence<DOMString>) urls;\n  DOMString username;\n  DOMString credential;\n};",
+        "fragment": "dictionary RTCIceServer {\n  required (USVString or sequence<USVString>) urls;\n  DOMString username;\n  DOMString credential;\n};",
         "type": "dictionary",
         "name": "RTCIceServer",
         "inheritance": null,
@@ -212,7 +212,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "DOMString"
+                  "idlType": "USVString"
                 },
                 {
                   "type": "dictionary-type",
@@ -227,7 +227,7 @@
                       "generic": "",
                       "nullable": false,
                       "union": false,
-                      "idlType": "DOMString"
+                      "idlType": "USVString"
                     }
                   ]
                 }
@@ -2444,7 +2444,7 @@
         "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceevent"
       },
       "RTCPeerConnectionIceEventInit": {
-        "fragment": "dictionary RTCPeerConnectionIceEventInit : EventInit {\n  RTCIceCandidate? candidate;\n  DOMString? url;\n};",
+        "fragment": "dictionary RTCPeerConnectionIceEventInit : EventInit {\n  RTCIceCandidate? candidate;\n  USVString? url;\n};",
         "type": "dictionary",
         "name": "RTCPeerConnectionIceEventInit",
         "inheritance": "EventInit",
@@ -2475,7 +2475,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "USVString"
             },
             "default": null,
             "required": false,
@@ -2487,7 +2487,7 @@
         "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceeventinit"
       },
       "RTCPeerConnectionIceErrorEvent": {
-        "fragment": "[Exposed=Window]\ninterface RTCPeerConnectionIceErrorEvent : Event {\n  constructor(DOMString type, RTCPeerConnectionIceErrorEventInit eventInitDict);\n  readonly attribute DOMString? address;\n  readonly attribute unsigned short? port;\n  readonly attribute DOMString url;\n  readonly attribute unsigned short errorCode;\n  readonly attribute USVString errorText;\n};",
+        "fragment": "[Exposed=Window]\ninterface RTCPeerConnectionIceErrorEvent : Event {\n  constructor(DOMString type, RTCPeerConnectionIceErrorEventInit eventInitDict);\n  readonly attribute DOMString? address;\n  readonly attribute unsigned short? port;\n  readonly attribute USVString url;\n  readonly attribute unsigned short errorCode;\n  readonly attribute USVString errorText;\n};",
         "type": "interface",
         "name": "RTCPeerConnectionIceErrorEvent",
         "inheritance": "Event",
@@ -2572,7 +2572,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "USVString"
             },
             "extAttrs": [],
             "special": "",
@@ -2627,7 +2627,7 @@
         "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerrorevent"
       },
       "RTCPeerConnectionIceErrorEventInit": {
-        "fragment": "dictionary RTCPeerConnectionIceErrorEventInit : EventInit {\n  DOMString? address;\n  unsigned short? port;\n  DOMString url;\n  required unsigned short errorCode;\n  USVString errorText;\n};",
+        "fragment": "dictionary RTCPeerConnectionIceErrorEventInit : EventInit {\n  DOMString? address;\n  unsigned short? port;\n  USVString url;\n  required unsigned short errorCode;\n  USVString errorText;\n};",
         "type": "dictionary",
         "name": "RTCPeerConnectionIceErrorEventInit",
         "inheritance": "EventInit",
@@ -2674,7 +2674,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "USVString"
             },
             "default": null,
             "required": false,

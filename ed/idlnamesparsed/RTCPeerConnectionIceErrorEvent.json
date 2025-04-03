@@ -6,7 +6,7 @@
       "title": "WebRTC: Real-Time Communication in Browsers",
       "url": "https://www.w3.org/TR/webrtc/"
     },
-    "fragment": "[Exposed=Window]\ninterface RTCPeerConnectionIceErrorEvent : Event {\n  constructor(DOMString type, RTCPeerConnectionIceErrorEventInit eventInitDict);\n  readonly attribute DOMString? address;\n  readonly attribute unsigned short? port;\n  readonly attribute DOMString url;\n  readonly attribute unsigned short errorCode;\n  readonly attribute USVString errorText;\n};",
+    "fragment": "[Exposed=Window]\ninterface RTCPeerConnectionIceErrorEvent : Event {\n  constructor(DOMString type, RTCPeerConnectionIceErrorEventInit eventInitDict);\n  readonly attribute DOMString? address;\n  readonly attribute unsigned short? port;\n  readonly attribute USVString url;\n  readonly attribute unsigned short errorCode;\n  readonly attribute USVString errorText;\n};",
     "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerrorevent"
   },
   "extended": [],
