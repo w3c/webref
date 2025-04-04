@@ -62,6 +62,7 @@ partial interface XRSession {
 partial interface XRSession {
   readonly attribute XRDepthUsage depthUsage;
   readonly attribute XRDepthDataFormat depthDataFormat;
+  readonly attribute XRDepthType? depthType;
 };
 
 // Source: WebXR DOM Overlays Module (https://www.w3.org/TR/webxr-dom-overlays-1/)

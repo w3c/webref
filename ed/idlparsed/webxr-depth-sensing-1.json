@@ -15,6 +15,25 @@
       }
     },
     "idlNames": {
+      "XRDepthType": {
+        "fragment": "enum XRDepthType {\n  \"raw\",\n  \"smooth\",\n};",
+        "type": "enum",
+        "name": "XRDepthType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "raw",
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthtype-raw"
+          },
+          {
+            "type": "enum-value",
+            "value": "smooth",
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthtype-smooth"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://immersive-web.github.io/depth-sensing/#enumdef-xrdepthtype"
+      },
       "XRDepthUsage": {
         "fragment": "enum XRDepthUsage {\n  \"cpu-optimized\",\n  \"gpu-optimized\",\n};",
         "type": "enum",
@@ -59,7 +78,7 @@
         "href": "https://immersive-web.github.io/depth-sensing/#enumdef-xrdepthdataformat"
       },
       "XRDepthStateInit": {
-        "fragment": "dictionary XRDepthStateInit {\n  required sequence<XRDepthUsage> usagePreference;\n  required sequence<XRDepthDataFormat> dataFormatPreference;\n};",
+        "fragment": "dictionary XRDepthStateInit {\n  required sequence<XRDepthUsage> usagePreference;\n  required sequence<XRDepthDataFormat> dataFormatPreference;\n  sequence<XRDepthType> depthTypeRequest;\n};",
         "type": "dictionary",
         "name": "XRDepthStateInit",
         "inheritance": null,
@@ -113,6 +132,31 @@
             "default": null,
             "required": true,
             "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthstateinit-dataformatpreference"
+          },
+          {
+            "type": "field",
+            "name": "depthTypeRequest",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "XRDepthType"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthstateinit-depthtyperequest"
           }
         ],
         "extAttrs": [],
@@ -418,7 +462,7 @@
       ],
       "XRSession": [
         {
-          "fragment": "partial interface XRSession {\n  readonly attribute XRDepthUsage depthUsage;\n  readonly attribute XRDepthDataFormat depthDataFormat;\n};",
+          "fragment": "partial interface XRSession {\n  readonly attribute XRDepthUsage depthUsage;\n  readonly attribute XRDepthDataFormat depthDataFormat;\n  readonly attribute XRDepthType? depthType;\n};",
           "type": "interface",
           "name": "XRSession",
           "inheritance": null,
@@ -454,6 +498,22 @@
               "special": "",
               "readonly": true,
               "href": "https://immersive-web.github.io/depth-sensing/#dom-xrsession-depthdataformat"
+            },
+            {
+              "type": "attribute",
+              "name": "depthType",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "XRDepthType"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true,
+              "href": "https://immersive-web.github.io/depth-sensing/#dom-xrsession-depthtype"
             }
           ],
           "extAttrs": [],
@@ -562,14 +622,16 @@
     "dependencies": {
       "XRDepthStateInit": [
         "XRDepthUsage",
-        "XRDepthDataFormat"
+        "XRDepthDataFormat",
+        "XRDepthType"
       ],
       "XRSessionInit": [
         "XRDepthStateInit"
       ],
       "XRSession": [
         "XRDepthUsage",
-        "XRDepthDataFormat"
+        "XRDepthDataFormat",
+        "XRDepthType"
       ],
       "XRDepthInformation": [
         "XRRigidTransform"
