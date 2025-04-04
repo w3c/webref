@@ -422,19 +422,22 @@
               "html": "<p>\n                      If <var>content type</var> is the empty string, return <code>null</code>.\n                    </p>"
             },
             {
-              "html": "<p>\n                      If <var>content type</var> is not a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/encrypted-media/#dfn-valid-media-mime-type\" class=\"internalDFN\" id=\"ref-for-dfn-valid-media-mime-type-1\">valid media MIME type</a> or is\n                      unrecognized, continue to the next iteration.\n                    </p>"
+              "html": "<p>\n                      Let <var>mimeType</var> be the result of running <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parse-a-mime-type\">parse a MIME type</a>\n                      with <var>content type</var>.\n                    </p>"
             },
             {
-              "html": "<p>\n                      Let <var>container</var> be the container type specified by <var>content\n                      type</var>.\n                    </p>"
+              "html": "<p>\n                      If <var>mimeType</var> is <code>failure</code> or is unrecognized, continue\n                      to the next iteration.\n                    </p>"
+            },
+            {
+              "html": "<p>\n                      Let <var>container</var> be the container type specified by\n                      <var>mimeType</var>.\n                    </p>"
             },
             {
               "html": "<p>\n                      If the user agent does not support <var>container</var>, continue to the next\n                      iteration. The case-sensitivity of string comparisons is determined by the\n                      appropriate RFC.\n                    </p>"
             },
             {
-              "html": "<p>\n                      Let <var>parameters</var> be the RFC 6381 [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/encrypted-media/#bib-rfc6381\" title=\"The 'Codecs' and 'Profiles' Parameters for &quot;Bucket&quot; Media Types\">RFC6381</a></cite>] parameters, if any,\n                      specified by <var>content type</var>.\n                    </p>"
+              "html": "<p>\n                      Let <var>parameters</var> be the \"codecs\" and \"profiles\" RFC 6381 [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/encrypted-media/#bib-rfc6381\" title=\"The 'Codecs' and 'Profiles' Parameters for &quot;Bucket&quot; Media Types\">RFC6381</a></cite>]\n                      parameters, if any, of <var>mimeType</var>.\n                    </p>"
             },
             {
-              "html": "<p>\n                      If the user agent does not recognize one or more <var>parameters</var>,\n                      continue to the next iteration.\n                    </p>"
+              "html": "<p>\n                      If the user agent does not recognize one or more <var>parameters</var>, or if\n                      any parameters are not valid per the relevant specification, continue to the\n                      next iteration.\n                    </p>"
             },
             {
               "html": "<p>\n                      Let <var>media types</var> be the set of codecs and codec constraints\n                      specified by <var>parameters</var>. The case-sensitivity of string\n                      comparisons is determined by the appropriate RFC or other specification.\n                    </p>"
@@ -459,7 +462,7 @@
               ]
             },
             {
-              "html": "<p>\n                      If <var>content type</var> is not strictly a <var>audio/video type</var>,\n                      continue to the next iteration.\n                    </p>"
+              "html": "<p>\n                      If <var>mimeType</var> is not strictly an <var>audio/video type</var>,\n                      continue to the next iteration.\n                    </p>"
             },
             {
               "html": "<p>\n                      If <var>encryption scheme</var> is non-null and is not recognized or not\n                      supported by <var>implementation</var>, continue to the next iteration.\n                    </p>"
