@@ -13,6 +13,8 @@
 
   XRWebGLSubImage getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = "none");
   XRWebGLSubImage getViewSubImage(XRProjectionLayer layer, XRView view);
+
+  undefined foveateBoundTexture(GLenum target, float fixed_foveation);
 };
 
 // Source: WebXR Raw Camera Access Module (https://immersive-web.github.io/raw-camera-access/)
