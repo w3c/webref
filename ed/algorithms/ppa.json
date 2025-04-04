@@ -193,7 +193,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>report</var> be an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#create-an-all-zero-histogram\" id=\"ref-for-create-an-all-zero-histogram\">all-zero histogram</a>.</p>"
+          "html": "<p>Let <var>report</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#create-an-all-zero-histogram\" id=\"ref-for-create-an-all-zero-histogram\">create an all-zero histogram</a> with <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-histogramsize\" id=\"ref-for-dom-privateattributionconversionoptions-histogramsize①\">histogramSize</a></code>.</p>"
         },
         {
           "html": "<p>If the Private Attribution API is <a href=\"https://w3c.github.io/ppa/#opt-out\">enabled</a>, set <var>report</var> to the\nresult of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#do-attribution-and-fill-a-histogram\" id=\"ref-for-do-attribution-and-fill-a-histogram\">do attribution and fill a histogram</a> with <var>options</var>, <var>topLevelSite</var>, and <var>now</var>.</p>"
@@ -246,7 +246,7 @@
           ]
         },
         {
-          "html": "<p>If <var>matchedImpressions</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②\">is empty</a>, return the the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#create-an-all-zero-histogram\" id=\"ref-for-create-an-all-zero-histogram①\">create an all-zero histogram</a> with <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-histogramsize\" id=\"ref-for-dom-privateattributionconversionoptions-histogramsize①\">histogramSize</a></code>.</p>"
+          "html": "<p>If <var>matchedImpressions</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②\">is empty</a>, return the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#create-an-all-zero-histogram\" id=\"ref-for-create-an-all-zero-histogram①\">create an all-zero histogram</a> with <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-histogramsize\" id=\"ref-for-dom-privateattributionconversionoptions-histogramsize②\">histogramSize</a></code>.</p>"
         },
         {
           "html": "Switch on <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-logic\" id=\"ref-for-dom-privateattributionconversionoptions-logic③\">logic</a></code>:",
@@ -257,7 +257,7 @@
               "steps": [
                 {
                   "case": "\"last-touch\"",
-                  "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#fill-a-histogram-with-last-touch-attribution\" id=\"ref-for-fill-a-histogram-with-last-touch-attribution\">fill a histogram with last-touch attribution</a> with <var>matchedImpressions</var>, <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-histogramsize\" id=\"ref-for-dom-privateattributionconversionoptions-histogramsize②\">histogramSize</a></code>, and <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-value\" id=\"ref-for-dom-privateattributionconversionoptions-value④\">value</a></code>.</p>"
+                  "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#fill-a-histogram-with-last-touch-attribution\" id=\"ref-for-fill-a-histogram-with-last-touch-attribution\">fill a histogram with last-touch attribution</a> with <var>matchedImpressions</var>, <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-histogramsize\" id=\"ref-for-dom-privateattributionconversionoptions-histogramsize③\">histogramSize</a></code>, and <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-value\" id=\"ref-for-dom-privateattributionconversionoptions-value④\">value</a></code>.</p>"
                 }
               ]
             }
