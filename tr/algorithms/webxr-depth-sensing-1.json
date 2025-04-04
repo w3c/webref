@@ -7,79 +7,83 @@
     {
       "name": "find-supported-configuration",
       "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#find-supported-configuration-combination",
-      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-supported-configuration-combination\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find supported configuration combination</dfn> for depth sensing API given <var>usagePreference</var> and <var>dataFormatPreference</var> sequences, the user agent MUST run the following algorithm:",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-supported-configuration-combination\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find supported configuration combination</dfn> for depth sensing API given <var>depthStateInit</var> dictionary, the user agent MUST run the following algorithm:",
       "rationale": ".algorithm",
       "steps": [
+        {
+          "html": "<p>Let <var>depthTypeRequest</var> be the value contained by the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthstateinit-depthtyperequest\" id=\"ref-for-dom-xrdepthstateinit-depthtyperequest①\">depthTypeRequest</a></code> key in <var>depthStateInit</var> if it is set, and an empty sequence otherwise.</p>"
+        },
+        {
+          "html": "<p>Let <var>selectedType</var> be <code>null</code></p>"
+        },
+        {
+          "html": "<p>Let <var>usagePreference</var> be the value contained by the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthstateinit-usagepreference\" id=\"ref-for-dom-xrdepthstateinit-usagepreference①\">usagePreference</a></code> key in <var>depthStateInit</var></p>"
+        },
         {
           "html": "<p>Let <var>selectedUsage</var> be <code>null</code>.</p>"
         },
         {
-          "html": "Initialize <var>selectedUsage</var> as follows:",
-          "rationale": ".switch",
-          "steps": [
-            {
-              "operation": "switch",
-              "steps": [
-                {
-                  "case": "If the usagePreference sequence is empty",
-                  "html": "Initialize <var>selectedUsage</var> to the device’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#preferred-native-depth-sensing-capability\" id=\"ref-for-preferred-native-depth-sensing-capability\">preferred native depth sensing capability</a>."
-                },
-                {
-                  "case": "Otherwise",
-                  "html": "For each <var>usage</var> in <var>usagePreference</var> sequence, perform the following steps:",
-                  "rationale": "if",
-                  "steps": [
-                    {
-                      "html": "<p>If <var>usage</var> is not considered a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#support-depth-sensing-usage\" id=\"ref-for-support-depth-sensing-usage\">supported depth sensing usage</a> by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-sensing\" id=\"ref-for-native-depth-sensing①\">native depth sensing</a> capabilities of the device, continue to the next entry.</p>"
-                    },
-                    {
-                      "html": "<p>Set <var>selectedUsage</var> to <var>usage</var> and abort these nested steps.</p>"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "html": "<p>If <var>selectedUsage</var> is <code>null</code>, return <code>null</code> and abort these steps.</p>"
+          "html": "<p>Let <var>dataFormatPreference</var> be the value contained by the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthstateinit-dataformatpreference\" id=\"ref-for-dom-xrdepthstateinit-dataformatpreference①\">dataFormatPreference</a></code> key in <var>depthStateInit</var></p>"
         },
         {
           "html": "<p>Let <var>selectedDataFormat</var> be <code>null</code>.</p>"
         },
         {
-          "html": "Initialize <var>selectedDataFormat</var> as follows:",
-          "rationale": ".switch",
+          "html": "<p>Let <var>processingOrder</var> be the sequence of (preferences, selection) pairs, where selection is a reference to one of the variables introduced in the previous steps: [(<var>depthTypeRequest</var>, <var>selectedType</var>), (<var>usagePreference</var>,<var>selectedUsage</var>),(<var>dataFormatPreference</var>,<var>selectedDataFormat</var>)]</p>"
+        },
+        {
+          "html": "For each (<var>preferences</var>, <var>selection</var>) in <var>processingOrder</var> perform the following steps",
+          "rationale": "if",
           "steps": [
             {
-              "operation": "switch",
-              "steps": [
-                {
-                  "case": "If the usagePreference sequence is empty",
-                  "html": "Initialize <var>selectedDataFormat</var> to the device’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#preferred-native-depth-sensing-format\" id=\"ref-for-preferred-native-depth-sensing-format\">preferred native depth sensing format</a>."
-                },
-                {
-                  "case": "Otherwise",
-                  "html": "For each <var>dataFormat</var> in <var>dataFormatPreference</var>, perform the following steps:",
-                  "rationale": "if",
-                  "steps": [
-                    {
-                      "html": "<p>If <var>selectedUsage</var>,<var>dataFormat</var> is not considered a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#support-depth-sensing-usage-and-data-format-combination\" id=\"ref-for-support-depth-sensing-usage-and-data-format-combination\">supported depth sensng usage and data format combination</a> by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-sensing\" id=\"ref-for-native-depth-sensing②\">native depth sensing</a> capabilities of the device, continue to the next entry.</p>"
-                    },
-                    {
-                      "html": "<p>Set <var>selectedDataFormat</var> to <var>dataFormat</var> and abort these nested steps.</p>"
-                    }
-                  ]
-                }
-              ]
+              "html": "<p>If <var>preferences</var> contains only a single value, set <var>selection</var> to that value.</p>"
             }
           ]
         },
         {
-          "html": "<p>If <var>selectedDataFormat</var> is <code>null</code>, return <code>null</code> and abort these steps.</p>"
+          "html": "For each (<var>preferences</var>, <var>selection</var>) in <var>processingOrder</var> perform the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>selection</var> is not <code>null</code>, continue to the next entry.</p>"
+            },
+            {
+              "html": "<p>If the <var>preferences</var> sequence is empty, continue to the next entry.</p>"
+            },
+            {
+              "html": "<p>For each <var>preference</var> in <var>preferences</var>, preform the following steps:</p>"
+            },
+            {
+              "html": "<p>If <var>preference</var> with the other values of <var>selectedType</var>,<var>selectedUsage</var>,<var>selectedDataFormat</var> is not considered a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#support-the-depth-sensing-configuration\" id=\"ref-for-support-the-depth-sensing-configuration\">supported depth sensing configuration</a> by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-sensing\" id=\"ref-for-native-depth-sensing①\">native depth sensing</a> capabilities of the device, continue to the next entry.</p>"
+            },
+            {
+              "html": "<p>Set <var>selection</var> to <var>preference</var> and abort these nested steps.</p>"
+            }
+          ]
         },
         {
-          "html": "<p>Return <var>selectedUsage</var>,<var>selectedDataFormat</var>.</p>"
+          "html": "For each (<var>preferences</var>, <var>selection</var>) in <var>processingOrder</var> perform the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>selection</var> is not <code>null</code>, continue to the next entry.</p>"
+            },
+            {
+              "html": "<p>Set <var>selection</var> to the value determined by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#preferred-native-depth-sensing-capability\" id=\"ref-for-preferred-native-depth-sensing-capability\">preferred native depth sensing capability</a> with the other values of <var>selectedType</var>,<var>selectedUsage</var>,<var>selectedDataFormat</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If any of <var>selectedType</var>,<var>selectedUsage</var>,<var>selectedDataFormat</var> are <code>null</code>, return <code>null</code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>selectedType</var>,<var>selectedUsage</var>,<var>selectedDataFormat</var> is considered a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#support-the-depth-sensing-configuration\" id=\"ref-for-support-the-depth-sensing-configuration①\">supported depth sensing configuration</a> by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-sensing\" id=\"ref-for-native-depth-sensing②\">native depth sensing</a> capabilities of the device return the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#depth-sensing-configuration\" id=\"ref-for-depth-sensing-configuration\">depth sensing configuration</a> of <var>selectedType</var>,<var>selectedUsage</var>,<var>selectedDataFormat</var> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>depthTypeRequest</var> is not an empty list, set it to an empty list and repeat these steps.</p>"
+        },
+        {
+          "html": "<p>Return <code>null</code> and abort these steps.</p>"
         }
       ]
     },
@@ -99,10 +103,10 @@
           "html": "<p>Let <var>frame</var> be the <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-frame\" id=\"ref-for-xrview-frame\">frame</a>.</p>"
         },
         {
-          "html": "<p>If <var>frame</var> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active\">active</a>, throw <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>frame</var> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active\">active</a>, throw <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>frame</var> is not an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-animationframe\" id=\"ref-for-xrframe-animationframe\">animationFrame</a>, throw <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>frame</var> is not an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-animationframe\" id=\"ref-for-xrframe-animationframe\">animationFrame</a>, throw <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
           "html": "<p>Proceed with normal steps required to access the member of <var>depthInformation</var>.</p>"
@@ -169,16 +173,16 @@
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#depth-sensing\" id=\"ref-for-depth-sensing①\">depth-sensing</a> feature descriptor is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contained</a> in the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device\">XR device</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-enabledfeatures\" id=\"ref-for-dom-xrsession-enabledfeatures\">list of enabled features</a> for <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-mode\" id=\"ref-for-xrsession-mode\">mode</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror②\">NotSupportedError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active①\">active</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active①\">active</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-animationframe\" id=\"ref-for-xrframe-animationframe①\">animationFrame</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-animationframe\" id=\"ref-for-xrframe-animationframe①\">animationFrame</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑥\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>frame</var> does not match <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-frame\" id=\"ref-for-xrview-frame②\">frame</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑥\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>frame</var> does not match <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-frame\" id=\"ref-for-xrview-frame②\">frame</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑦\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If the <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage②\">depthUsage</a></code> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthusage-cpu-optimized\" id=\"ref-for-dom-xrdepthusage-cpu-optimized①\">\"cpu-optimized\"</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑦\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If the <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage②\">depthUsage</a></code> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthusage-cpu-optimized\" id=\"ref-for-dom-xrdepthusage-cpu-optimized①\">\"cpu-optimized\"</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑧\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
           "html": "<p>Let <var>depthInformation</var> be a result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#create-a-cpu-depth-information-instance\" id=\"ref-for-create-a-cpu-depth-information-instance\">creating a CPU depth information instance</a> given <var>frame</var> and <var>view</var>.</p>"
@@ -207,7 +211,7 @@
           "html": "<p>Let <var>device</var> be the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①\">XR device</a>.</p>"
         },
         {
-          "html": "<p>Let <var>nativeDepthInformation</var> be a result of querying <var>device</var> for the depth information valid as of <var>time</var>, for specified <var>view</var>, taking into account <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage③\">depthUsage</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthdataformat\" id=\"ref-for-dom-xrsession-depthdataformat④\">depthDataFormat</a></code>.</p>"
+          "html": "<p>Let <var>nativeDepthInformation</var> be a result of querying <var>device</var> for the depth information valid as of <var>time</var>, for specified <var>view</var>, taking into account <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthtype\" id=\"ref-for-dom-xrsession-depthtype②\">depthType</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage③\">depthUsage</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthdataformat\" id=\"ref-for-dom-xrsession-depthdataformat④\">depthDataFormat</a></code>.</p>"
         },
         {
           "html": "<p>If <var>nativeDepthInformation</var> is <code>null</code>, return <code>null</code> and abort these steps.</p>"
@@ -251,19 +255,19 @@
           "html": "<p>Let <var>frame</var> be <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-frame\" id=\"ref-for-xrview-frame③\">frame</a>.</p>"
         },
         {
-          "html": "<p>If <var>session</var> does not match <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session③\">session</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑧\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>session</var> does not match <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session③\">session</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑨\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#depth-sensing\" id=\"ref-for-depth-sensing②\">depth-sensing</a> feature descriptor is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contained</a> in the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②\">XR device</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-enabledfeatures\" id=\"ref-for-dom-xrsession-enabledfeatures①\">list of enabled features</a> for <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-mode\" id=\"ref-for-xrsession-mode①\">mode</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror③\">NotSupportedError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If the <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage④\">depthUsage</a></code> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthusage-gpu-optimized\" id=\"ref-for-dom-xrdepthusage-gpu-optimized①\">\"gpu-optimized\"</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑨\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If the <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage④\">depthUsage</a></code> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthusage-gpu-optimized\" id=\"ref-for-dom-xrdepthusage-gpu-optimized①\">\"gpu-optimized\"</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⓪\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active②\">active</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⓪\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active②\">active</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①①\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-animationframe\" id=\"ref-for-xrframe-animationframe②\">animationFrame</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①①\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-animationframe\" id=\"ref-for-xrframe-animationframe②\">animationFrame</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①②\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
           "html": "<p>Let <var>depthInformation</var> be a result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#create-a-webgl-depth-information-instance\" id=\"ref-for-create-a-webgl-depth-information-instance\">creating a WebGL depth information instance</a> given <var>frame</var> and <var>view</var>.</p>"
@@ -292,7 +296,7 @@
           "html": "<p>Let <var>device</var> be the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device③\">XR device</a>.</p>"
         },
         {
-          "html": "<p>Let <var>nativeDepthInformation</var> be a result of querying <var>device</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-sensing\" id=\"ref-for-native-depth-sensing③\">native depth sensing</a> for the depth information valid as of <var>time</var>, for specified <var>view</var>, taking into account <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage⑤\">depthUsage</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthdataformat\" id=\"ref-for-dom-xrsession-depthdataformat⑥\">depthDataFormat</a></code>.</p>"
+          "html": "<p>Let <var>nativeDepthInformation</var> be a result of querying <var>device</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-sensing\" id=\"ref-for-native-depth-sensing③\">native depth sensing</a> for the depth information valid as of <var>time</var>, for specified <var>view</var>, taking into account <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthtype\" id=\"ref-for-dom-xrsession-depthtype③\">depthType</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage⑤\">depthUsage</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthdataformat\" id=\"ref-for-dom-xrsession-depthdataformat⑥\">depthDataFormat</a></code>.</p>"
         },
         {
           "html": "<p>If <var>nativeDepthInformation</var> is <code>null</code>, return <code>null</code> and abort these steps.</p>"
