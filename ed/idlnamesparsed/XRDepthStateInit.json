@@ -6,7 +6,7 @@
       "title": "WebXR Depth Sensing Module",
       "url": "https://www.w3.org/TR/webxr-depth-sensing-1/"
     },
-    "fragment": "dictionary XRDepthStateInit {\n  required sequence<XRDepthUsage> usagePreference;\n  required sequence<XRDepthDataFormat> dataFormatPreference;\n  sequence<XRDepthType> depthTypeRequest;\n};",
+    "fragment": "dictionary XRDepthStateInit {\n  required sequence<XRDepthUsage> usagePreference;\n  required sequence<XRDepthDataFormat> dataFormatPreference;\n  sequence<XRDepthType> depthTypeRequest;\n  boolean matchDepthView = true;\n};",
     "href": "https://immersive-web.github.io/depth-sensing/#dictdef-xrdepthstateinit"
   },
   "extended": [],

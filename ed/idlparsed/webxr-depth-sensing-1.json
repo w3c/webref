@@ -78,7 +78,7 @@
         "href": "https://immersive-web.github.io/depth-sensing/#enumdef-xrdepthdataformat"
       },
       "XRDepthStateInit": {
-        "fragment": "dictionary XRDepthStateInit {\n  required sequence<XRDepthUsage> usagePreference;\n  required sequence<XRDepthDataFormat> dataFormatPreference;\n  sequence<XRDepthType> depthTypeRequest;\n};",
+        "fragment": "dictionary XRDepthStateInit {\n  required sequence<XRDepthUsage> usagePreference;\n  required sequence<XRDepthDataFormat> dataFormatPreference;\n  sequence<XRDepthType> depthTypeRequest;\n  boolean matchDepthView = true;\n};",
         "type": "dictionary",
         "name": "XRDepthStateInit",
         "inheritance": null,
@@ -157,6 +157,25 @@
             "default": null,
             "required": false,
             "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthstateinit-depthtyperequest"
+          },
+          {
+            "type": "field",
+            "name": "matchDepthView",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": true
+            },
+            "required": false,
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthstateinit-matchdepthview"
           }
         ],
         "extAttrs": [],
@@ -164,7 +183,7 @@
         "href": "https://immersive-web.github.io/depth-sensing/#dictdef-xrdepthstateinit"
       },
       "XRDepthInformation": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface XRDepthInformation {\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n\n  [SameObject] readonly attribute XRRigidTransform normDepthBufferFromNormView;\n  readonly attribute float rawValueToMeters;\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRDepthInformation {\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n\n  [SameObject] readonly attribute XRRigidTransform normDepthBufferFromNormView;\n  readonly attribute float rawValueToMeters;\n  readonly attribute XRView? view;\n};",
         "type": "interface",
         "name": "XRDepthInformation",
         "inheritance": null,
@@ -239,6 +258,22 @@
             "special": "",
             "readonly": true,
             "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-rawvaluetometers"
+          },
+          {
+            "type": "attribute",
+            "name": "view",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "XRView"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-view"
           }
         ],
         "extAttrs": [
@@ -634,7 +669,8 @@
         "XRDepthType"
       ],
       "XRDepthInformation": [
-        "XRRigidTransform"
+        "XRRigidTransform",
+        "XRView"
       ],
       "XRCPUDepthInformation": [
         "XRDepthInformation",
@@ -658,9 +694,9 @@
       "XRSessionInit",
       "XRSession",
       "XRRigidTransform",
+      "XRView",
       "ArrayBuffer",
       "XRFrame",
-      "XRView",
       "WebGLTexture",
       "XRTextureType",
       "XRWebGLBinding"

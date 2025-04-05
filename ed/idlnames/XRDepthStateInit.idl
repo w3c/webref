@@ -3,4 +3,5 @@ dictionary XRDepthStateInit {
   required sequence<XRDepthUsage> usagePreference;
   required sequence<XRDepthDataFormat> dataFormatPreference;
   sequence<XRDepthType> depthTypeRequest;
+  boolean matchDepthView = true;
 };

@@ -6,4 +6,5 @@ interface XRDepthInformation {
 
   [SameObject] readonly attribute XRRigidTransform normDepthBufferFromNormView;
   readonly attribute float rawValueToMeters;
+  readonly attribute XRView? view;
 };

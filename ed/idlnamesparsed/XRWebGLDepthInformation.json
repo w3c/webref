@@ -18,7 +18,7 @@
         "title": "WebXR Depth Sensing Module",
         "url": "https://www.w3.org/TR/webxr-depth-sensing-1/"
       },
-      "fragment": "[SecureContext, Exposed=Window]\ninterface XRDepthInformation {\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n\n  [SameObject] readonly attribute XRRigidTransform normDepthBufferFromNormView;\n  readonly attribute float rawValueToMeters;\n};",
+      "fragment": "[SecureContext, Exposed=Window]\ninterface XRDepthInformation {\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n\n  [SameObject] readonly attribute XRRigidTransform normDepthBufferFromNormView;\n  readonly attribute float rawValueToMeters;\n  readonly attribute XRView? view;\n};",
       "href": "https://immersive-web.github.io/depth-sensing/#xrdepthinformation"
     },
     "extended": [],
