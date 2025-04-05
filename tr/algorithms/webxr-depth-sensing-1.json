@@ -90,14 +90,14 @@
     {
       "name": "accessing-depth-buffer-members",
       "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#attempting-to-access-the-depth-buffer",
-      "html": "When <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"attempting-to-access-the-depth-buffer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attempting to access the depth buffer</dfn> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation\" id=\"ref-for-xrdepthinformation③\">XRDepthInformation</a></code> or any interface that inherits from it, the user agent MUST run the following steps:",
+      "html": "When <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"attempting-to-access-the-depth-buffer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attempting to access the depth buffer</dfn> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation\" id=\"ref-for-xrdepthinformation⑤\">XRDepthInformation</a></code> or any interface that inherits from it, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>depthInformation</var> be the instance whose member is accessed.</p>"
         },
         {
-          "html": "<p>Let <var>view</var> be the <var>depthInformation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-view\" id=\"ref-for-xrdepthinformation-view\">view</a>.</p>"
+          "html": "<p>Let <var>view</var> be the <var>depthInformation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-view\" id=\"ref-for-xrdepthinformation-view①\">view</a>.</p>"
         },
         {
           "html": "<p>Let <var>frame</var> be the <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-frame\" id=\"ref-for-xrview-frame\">frame</a>.</p>"
@@ -120,7 +120,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>view</var> be the <var>depthInformation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-view\" id=\"ref-for-xrdepthinformation-view②\">view</a>, <var>frame</var> be <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-frame\" id=\"ref-for-xrview-frame①\">frame</a>, and <var>session</var> be the <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session\">session</a></code>.</p>"
+          "html": "<p>Let <var>view</var> be the <var>depthInformation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-view\" id=\"ref-for-xrdepthinformation-view③\">view</a>, <var>frame</var> be <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-frame\" id=\"ref-for-xrview-frame①\">frame</a>, and <var>session</var> be the <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session\">session</a></code>.</p>"
         },
         {
           "html": "<p>If <var>x</var> is greater than <code>1.0</code> or less than <code>0.0</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror\">RangeError</a></code> and abort these steps.</p>"
@@ -163,7 +163,7 @@
     {
       "name": "obtain-depth-information",
       "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#obtain-cpu-depth-information",
-      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrframe-getdepthinformation\" id=\"ref-for-dom-xrframe-getdepthinformation①\">getDepthInformation(view)</a></code> method is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface②\">XRFrame</a></code> <var>frame</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview②\">XRView</a></code> <var>view</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-cpu-depth-information\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain CPU depth information</dfn> by running the following steps:",
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrframe-getdepthinformation\" id=\"ref-for-dom-xrframe-getdepthinformation①\">getDepthInformation(view)</a></code> method is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface③\">XRFrame</a></code> <var>frame</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview⑤\">XRView</a></code> <var>view</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-cpu-depth-information\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain CPU depth information</dfn> by running the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -195,7 +195,7 @@
     {
       "name": "create-cpu-depth-information",
       "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#create-a-cpu-depth-information-instance",
-      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-cpu-depth-information-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a CPU depth information instance</dfn> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface③\">XRFrame</a></code> <var>frame</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview③\">XRView</a></code> <var>view</var>, the user agent MUST run the following steps:",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-cpu-depth-information-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a CPU depth information instance</dfn> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface④\">XRFrame</a></code> <var>frame</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview⑥\">XRView</a></code> <var>view</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -235,7 +235,7 @@
           "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrcpudepthinformation-data\" id=\"ref-for-dom-xrcpudepthinformation-data⑦\">data</a></code> to the raw depth buffer returned in <var>nativeDepthInformation</var>.</p>"
         },
         {
-          "html": "<p>Initialize <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-view\" id=\"ref-for-xrdepthinformation-view③\">view</a> to <var>view</var>.</p>"
+          "html": "<p>Initialize <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-view\" id=\"ref-for-xrdepthinformation-view④\">view</a> to <var>view</var>.</p>"
         },
         {
           "html": "<p>Return <var>result</var>.</p>"
@@ -245,7 +245,7 @@
     {
       "name": "obtain-webgl-depth-information",
       "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#obtain-webgl-depth-information",
-      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrwebglbinding-getdepthinformation\" id=\"ref-for-dom-xrwebglbinding-getdepthinformation\">getDepthInformation(view)</a></code> method is invoked on a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrwebglbinding\" id=\"ref-for-xrwebglbinding②\">XRWebGLBinding</a></code> <var>binding</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview⑤\">XRView</a></code> <var>view</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-webgl-depth-information\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain WebGL depth information</dfn> by running the following steps:",
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrwebglbinding-getdepthinformation\" id=\"ref-for-dom-xrwebglbinding-getdepthinformation\">getDepthInformation(view)</a></code> method is invoked on a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrwebglbinding\" id=\"ref-for-xrwebglbinding②\">XRWebGLBinding</a></code> <var>binding</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview⑧\">XRView</a></code> <var>view</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-webgl-depth-information\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain WebGL depth information</dfn> by running the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -280,14 +280,30 @@
     {
       "name": "create-webgl-depth-information",
       "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#create-a-webgl-depth-information-instance",
-      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-webgl-depth-information-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a WebGL depth information instance</dfn> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface④\">XRFrame</a></code> <var>frame</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview⑥\">XRView</a></code> <var>view</var>, the user agent MUST run the following steps:",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-webgl-depth-information-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a WebGL depth information instance</dfn> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface⑤\">XRFrame</a></code> <var>frame</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview⑨\">XRView</a></code> <var>view</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>result</var> be a new instance of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrwebgldepthinformation\" id=\"ref-for-xrwebgldepthinformation②\">XRWebGLDepthInformation</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>time</var> be <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-time\" id=\"ref-for-xrframe-time①\">time</a>.</p>"
+          "html": "Initialize <var>time</var> as follows:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If the XRSession was created with matchDepthView set to true:",
+                  "html": "Let <var>time</var> be <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-time\" id=\"ref-for-xrframe-time①\">time</a>."
+                },
+                {
+                  "case": "Otherwise",
+                  "html": "Let <var>time</var> be time that the <var>device</var> captured the depth information."
+                }
+              ]
+            }
+          ]
         },
         {
           "html": "<p>Let <var>session</var> be <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session④\">session</a></code>.</p>"
@@ -320,7 +336,7 @@
           "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrwebgldepthinformation-texture\" id=\"ref-for-dom-xrwebgldepthinformation-texture②\">texture</a></code> to an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#opaque-texture\" id=\"ref-for-opaque-texture①\">opaque texture</a> containing the depth buffer returned in <var>nativeDepthInformation</var>.</p>"
         },
         {
-          "html": "<p>Initialize <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-view\" id=\"ref-for-xrdepthinformation-view⑤\">view</a> to <var>view</var>.</p>"
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-view\" id=\"ref-for-dom-xrdepthinformation-view③\">view</a></code> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview①⓪\">XRView</a></code> captured at <var>time</var>.</p>"
         },
         {
           "html": "Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrwebgldepthinformation-texturetype\" id=\"ref-for-dom-xrwebgldepthinformation-texturetype②\">textureType</a></code> as follows:",

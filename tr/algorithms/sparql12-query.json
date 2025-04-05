@@ -5,6 +5,39 @@
   },
   "algorithms": [
     {
+      "html": "The result of this function is determined by going through the following steps.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>term1</code> and <code>term2</code> are\n                <a href=\"https://www.w3.org/TR/rdf12-concepts/#dfn-rdf-term-equality\" id=\"ref-for-index-term-same-rdf-term-2\">equal RDF terms</a>,\n                then return TRUE."
+        },
+        {
+          "html": "If <code>term1</code> or <code>term2</code> is an\n                <a href=\"https://www.w3.org/TR/rdf12-concepts/#dfn-iri\" id=\"ref-for-index-term-iri-7\">IRI</a> or a\n                <a href=\"https://www.w3.org/TR/rdf12-concepts/#dfn-blank-node\" id=\"ref-for-index-term-blank-node-9\">blank node</a>\n                then return FALSE."
+        },
+        {
+          "html": "If <code>term1</code> and <code>term2</code> are both\n                <a href=\"https://www.w3.org/TR/rdf12-concepts/#dfn-literal\" id=\"ref-for-index-term-literal-6\">literals</a>\n                and one or both of these literals has a datatype that is\n                not handled by the SPARQL processor,\n                then produce a type error."
+        },
+        {
+          "html": "If <code>term1</code> and <code>term2</code> are both\n                <a href=\"https://www.w3.org/TR/rdf12-concepts/#dfn-literal\" id=\"ref-for-index-term-literal-7\">literals</a>\n                and one or both of these literals are known to be\n                <a href=\"https://www.w3.org/TR/rdf12-concepts/#dfn-ill-typed\" id=\"ref-for-index-term-ill-typed-1\">ill-typed</a>,\n                then produce a type error."
+        },
+        {
+          "html": "<code>\"NaN\"^^xsd:double</code> and <code>\"NaN\"^^xsd:float</code> are considered to \n                represent the same value.\n                If <code>term1</code> and <code>term2</code> are\n                both \"NaN\" for either xsd:double or xsd:float, then \n                return TRUE."
+        },
+        {
+          "html": "If <code>term1</code> and <code>term2</code> are both \n                <a href=\"https://www.w3.org/TR/rdf12-concepts/#dfn-literal\" id=\"ref-for-index-term-literal-8\">literals</a>\n                and the SPARQL processor can determine that their the values are equal,\n                then return TRUE."
+        },
+        {
+          "html": "If <code>term1</code> and <code>term2</code> are both \n                <a href=\"https://www.w3.org/TR/rdf12-concepts/#dfn-literal\" id=\"ref-for-index-term-literal-9\">literals</a>\n                and the SPARQL processor can determine the values can not be equal,\n                then return FALSE."
+        },
+        {
+          "html": "If <code>term1</code> and <code>term2</code> are both \n                <a href=\"https://www.w3.org/TR/rdf12-concepts/#dfn-triple-term\" id=\"ref-for-index-term-triple-term-9\">triple terms</a>,\n                apply the function <code>sameValue</code> pair-wise to each of the components.\n                Return TRUE if each component pair returns TRUE;\n                produce a type error if any component pair produces an error;\n                otherwise return FALSE."
+        },
+        {
+          "html": "Otherwise, return FALSE."
+        }
+      ]
+    },
+    {
       "html": "with Dedup(M(Ψ)) being an order-preserving, duplicate-free version of the sequence M(Ψ); that is, Dedup(M(Ψ)) is a sequence of lists that has the following four properties\n              (where each such list in this sequence may contain RDF terms and\n              errors, as it is produced by the <a href=\"https://www.w3.org/TR/sparql12-query/#defn_ListEval\">ListEval</a> function).",
       "rationale": "for",
       "steps": [

@@ -23,6 +23,7 @@ dictionary XRDepthStateInit {
   required sequence<XRDepthUsage> usagePreference;
   required sequence<XRDepthDataFormat> dataFormatPreference;
   sequence<XRDepthType> depthTypeRequest;
+  boolean matchDepthView = true;
 };
 
 partial dictionary XRSessionInit {
@@ -42,6 +43,7 @@ interface XRDepthInformation {
 
   [SameObject] readonly attribute XRRigidTransform normDepthBufferFromNormView;
   readonly attribute float rawValueToMeters;
+  readonly attribute XRView? view;
 };
 
 [Exposed=Window]
