@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-04-06T13:27:49.325Z",
+  "date": "2025-04-06T19:20:33.040Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -701,7 +701,7 @@
   },
   "stats": {
     "crawled": 669,
-    "errors": 144
+    "errors": 145
   },
   "crawler": "reffy-18.4.6",
   "results": [
@@ -30092,7 +30092,8 @@
       "dfns": "dfns/mediacapture-viewport.json",
       "headings": "headings/mediacapture-viewport.json",
       "ids": "ids/mediacapture-viewport.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://w3c.github.io/mediacapture-viewport/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:387:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 505)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:408:21)"
     },
     {
       "url": "https://www.w3.org/TR/mediaqueries-3/",
