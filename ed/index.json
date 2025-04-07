@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-04-07T01:32:38.866Z",
+  "date": "2025-04-07T07:23:50.319Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -1362,9 +1362,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 06 Apr 2025 01:01:35 GMT"
+        "lastModified": "Mon, 07 Apr 2025 06:22:17 GMT"
       },
-      "date": "6 April 2025",
+      "date": "7 April 2025",
       "algorithms": "algorithms/compression-dictionary.json",
       "links": "links/compression-dictionary.json",
       "refs": "refs/compression-dictionary.json",
@@ -1411,9 +1411,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 06 Apr 2025 01:01:35 GMT"
+        "lastModified": "Mon, 07 Apr 2025 06:22:17 GMT"
       },
-      "date": "6 April 2025",
+      "date": "7 April 2025",
       "algorithms": "algorithms/no-vary-search.json",
       "links": "links/no-vary-search.json",
       "refs": "refs/no-vary-search.json",
@@ -1460,9 +1460,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 06 Apr 2025 01:01:35 GMT"
+        "lastModified": "Mon, 07 Apr 2025 06:22:16 GMT"
       },
-      "date": "6 April 2025",
+      "date": "7 April 2025",
       "algorithms": "algorithms/rfc6265bis.json",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
@@ -2617,7 +2617,7 @@
       "headings": "headings/css-variables-2.json",
       "ids": "ids/css-variables-2.json",
       "cddl": [],
-      "error": "Error: Loading https://drafts.csswg.org/css-variables-2/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:478:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:387:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 33)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:408:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13502:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:472:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
+      "error": "Error: Loading https://drafts.csswg.org/css-variables-2/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:387:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 33)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:408:21)"
     },
     {
       "url": "https://drafts.csswg.org/selectors-5/",
@@ -2680,7 +2680,7 @@
       "headings": "headings/selectors-5.json",
       "ids": "ids/selectors-5.json",
       "cddl": [],
-      "error": "Error: Loading https://drafts.csswg.org/selectors-5/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:478:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:387:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 34)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:408:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13502:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:472:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
+      "error": "Error: Loading https://drafts.csswg.org/selectors-5/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:387:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 34)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:408:21)"
     },
     {
       "url": "https://drafts.fxtf.org/compositing-2/",
@@ -7020,9 +7020,9 @@
       ],
       "crawled": "https://tc39.es/ecma426/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 05 Apr 2025 18:08:04 GMT"
+        "lastModified": "Mon, 07 Apr 2025 06:34:55 GMT"
       },
-      "date": "5 April 2025",
+      "date": "7 April 2025",
       "links": "links/ecma-426.json",
       "dfns": "dfns/ecma-426.json",
       "headings": "headings/ecma-426.json",
@@ -14042,7 +14042,8 @@
       "dfns": "dfns/text-detection-api.json",
       "headings": "headings/text-detection-api.json",
       "ids": "ids/text-detection-api.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://wicg.github.io/shape-detection-api/text.html triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:387:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 247)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:408:21)"
     },
     {
       "url": "https://wicg.github.io/shared-storage/",
@@ -27105,10 +27106,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/core/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 05 Apr 2025 13:55:28 GMT"
+        "lastModified": "Mon, 07 Apr 2025 04:12:50 GMT"
       },
       "generator": "respec",
-      "date": "05 April 2025",
+      "date": "07 April 2025",
       "algorithms": "algorithms/epub-33.json",
       "links": "links/epub-33.json",
       "refs": "refs/epub-33.json",
@@ -27163,10 +27164,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub34/authoring/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 05 Apr 2025 13:55:28 GMT"
+        "lastModified": "Mon, 07 Apr 2025 04:12:50 GMT"
       },
       "generator": "respec",
-      "date": "05 April 2025",
+      "date": "07 April 2025",
       "algorithms": "algorithms/epub-34.json",
       "links": "links/epub-34.json",
       "refs": "refs/epub-34.json",
@@ -27220,10 +27221,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub34/a11y/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 05 Apr 2025 13:55:28 GMT"
+        "lastModified": "Mon, 07 Apr 2025 04:12:50 GMT"
       },
       "generator": "respec",
-      "date": "05 April 2025",
+      "date": "07 April 2025",
       "links": "links/epub-a11y-111.json",
       "refs": "refs/epub-a11y-111.json",
       "dfns": "dfns/epub-a11y-111.json",
@@ -27276,10 +27277,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 05 Apr 2025 13:55:28 GMT"
+        "lastModified": "Mon, 07 Apr 2025 04:12:50 GMT"
       },
       "generator": "respec",
-      "date": "05 April 2025",
+      "date": "07 April 2025",
       "algorithms": "algorithms/epub-rs-33.json",
       "links": "links/epub-rs-33.json",
       "refs": "refs/epub-rs-33.json",
@@ -27333,10 +27334,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub34/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 05 Apr 2025 13:55:28 GMT"
+        "lastModified": "Mon, 07 Apr 2025 04:12:50 GMT"
       },
       "generator": "respec",
-      "date": "05 April 2025",
+      "date": "07 April 2025",
       "algorithms": "algorithms/epub-rs-34.json",
       "links": "links/epub-rs-34.json",
       "refs": "refs/epub-rs-34.json",
@@ -37749,8 +37750,7 @@
       "refs": "refs/webcodecs-video-frame-metadata-registry.json",
       "headings": "headings/webcodecs-video-frame-metadata-registry.json",
       "ids": "ids/webcodecs-video-frame-metadata-registry.json",
-      "cddl": [],
-      "error": "Error: Loading https://w3c.github.io/webcodecs/video_frame_metadata_registry.html triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:387:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 627)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:408:21)"
+      "cddl": []
     },
     {
       "url": "https://www.w3.org/TR/webcodecs-vorbis-codec-registration/",
