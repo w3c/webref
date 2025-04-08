@@ -6,7 +6,7 @@
       "title": "WebTransport",
       "url": "https://www.w3.org/TR/webtransport/"
     },
-    "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportDatagramDuplexStream {\n  WebTransportDatagramsWritable createWritable(\n      optional WebTransportSendOptions options = {});\n  readonly attribute ReadableStream readable;\n  readonly attribute WebTransportDatagramsWritable writable;\n\n  readonly attribute unsigned long maxDatagramSize;\n  attribute unrestricted double? incomingMaxAge;\n  attribute unrestricted double? outgoingMaxAge;\n  attribute unrestricted double incomingHighWaterMark;\n  attribute unrestricted double outgoingHighWaterMark;\n};",
+    "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportDatagramDuplexStream {\n  WebTransportDatagramsWritable createWritable(\n      optional WebTransportSendOptions options = {});\n  readonly attribute ReadableStream readable;\n\n  readonly attribute unsigned long maxDatagramSize;\n  attribute unrestricted double? incomingMaxAge;\n  attribute unrestricted double? outgoingMaxAge;\n  attribute unrestricted double incomingHighWaterMark;\n  attribute unrestricted double outgoingHighWaterMark;\n};",
     "href": "https://w3c.github.io/webtransport/#webtransportdatagramduplexstream"
   },
   "extended": [],

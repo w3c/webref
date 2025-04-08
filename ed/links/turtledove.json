@@ -401,7 +401,6 @@
       },
       "https://patcg-individual-drafts.github.io/private-aggregation-api": {
         "anchors": [
-          "private-aggregation",
           "debug-details",
           "debug-details-enabled",
           "debug-details-key",
@@ -409,24 +408,27 @@
           "default-aggregation-coordinator",
           "batching-scope",
           "debug-scope",
-          "privateaggregation",
-          "scoping-details",
-          "contribution-cache-entry",
-          "contribution-cache",
-          "default-filtering-id-max-bytes"
+          "privateaggregation"
         ]
       },
       "https://patcg-individual-drafts.github.io/private-aggregation-api/": {
         "anchors": [
+          "private-aggregation",
           "obtain-the-private-aggregation-coordinator",
           "dom-privateaggregation-contributetohistogram",
+          "dom-privateaggregation-contributetohistogramonevent",
           "privateaggregation-allowed-to-use",
           "privateaggregation-scoping-details",
+          "scoping-details",
           "scoping-details-get-batching-scope-steps",
           "scoping-details-get-debug-scope-steps",
+          "privateaggregation-should-perform-default-contributetohistogramonevent-processing",
           "get-a-debug-details",
           "mark-a-debug-scope-complete",
           "set-the-aggregation-coordinator-for-a-batching-scope",
+          "privateaggregation",
+          "default-filtering-id-max-bytes",
+          "contribution-cache-entry",
           "contribution-cache-entry-contribution",
           "contribution-cache-entry-batching-scope",
           "contribution-cache-entry-debug-scope",
@@ -436,8 +438,7 @@
           "dom-pahistogramcontribution-bucket",
           "dom-pahistogramcontribution-value",
           "dom-pahistogramcontribution-filteringid",
-          "process-contributions-for-a-batching-scope",
-          "privateaggregation"
+          "process-contributions-for-a-batching-scope"
         ]
       },
       "https://streams.spec.whatwg.org/": {
@@ -593,10 +594,11 @@
           "upon-rejection",
           "idl-unsigned-long",
           "dfn-convert-idl-to-javascript-value",
+          "dfn-exception",
+          "dfn-convert-ecmascript-to-idl-value",
           "idl-long-long",
           "an-exception-was-thrown",
           "invoke-a-callback-function",
-          "dfn-convert-ecmascript-to-idl-value",
           "web-idl-arguments-list-converting",
           "Exposed",
           "getter-steps",
@@ -604,8 +606,7 @@
           "idl-unrestricted-double",
           "dfn-specific-type",
           "SameObject",
-          "idl-object",
-          "dfn-exception"
+          "idl-object"
         ]
       },
       "https://wicg.github.io/attribution-reporting-api/": {

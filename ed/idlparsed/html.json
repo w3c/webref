@@ -21972,8 +21972,59 @@
         "partial": false,
         "href": "https://html.spec.whatwg.org/multipage/canvas.html#textmetrics"
       },
+      "ImageDataArray": {
+        "fragment": "typedef (Uint8ClampedArray or Float16Array) ImageDataArray;",
+        "type": "typedef",
+        "name": "ImageDataArray",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Uint8ClampedArray"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Float16Array"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#imagedataarray"
+      },
+      "ImageDataPixelFormat": {
+        "fragment": "enum ImageDataPixelFormat { \"rgba-unorm8\", \"rgba-float16\" };",
+        "type": "enum",
+        "name": "ImageDataPixelFormat",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "rgba-unorm8",
+            "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagedatapixelformat-rgba-unorm8"
+          },
+          {
+            "type": "enum-value",
+            "value": "rgba-float16",
+            "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagedatapixelformat-rgba-float16"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#imagedatapixelformat"
+      },
       "ImageDataSettings": {
-        "fragment": "dictionary ImageDataSettings {\n  PredefinedColorSpace colorSpace;\n};",
+        "fragment": "dictionary ImageDataSettings {\n  PredefinedColorSpace colorSpace;\n  ImageDataPixelFormat pixelFormat = \"rgba-unorm8\";\n};",
         "type": "dictionary",
         "name": "ImageDataSettings",
         "inheritance": null,
@@ -21993,6 +22044,25 @@
             "default": null,
             "required": false,
             "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagedatasettings-colorspace"
+          },
+          {
+            "type": "field",
+            "name": "pixelFormat",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ImageDataPixelFormat"
+            },
+            "default": {
+              "type": "string",
+              "value": "rgba-unorm8"
+            },
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagedatasettings-pixelformat"
           }
         ],
         "extAttrs": [],
@@ -22000,7 +22070,7 @@
         "href": "https://html.spec.whatwg.org/multipage/canvas.html#imagedatasettings"
       },
       "ImageData": {
-        "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface ImageData {\n  constructor(unsigned long sw, unsigned long sh, optional ImageDataSettings settings = {});\n  constructor(Uint8ClampedArray data, unsigned long sw, optional unsigned long sh, optional ImageDataSettings settings = {});\n\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n  readonly attribute Uint8ClampedArray data;\n  readonly attribute PredefinedColorSpace colorSpace;\n};",
+        "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface ImageData {\n  constructor(unsigned long sw, unsigned long sh, optional ImageDataSettings settings = {});\n  constructor(ImageDataArray data, unsigned long sw, optional unsigned long sh, optional ImageDataSettings settings = {});\n\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n  readonly attribute ImageDataArray data;\n  readonly attribute ImageDataPixelFormat pixelFormat;\n  readonly attribute PredefinedColorSpace colorSpace;\n};",
         "type": "interface",
         "name": "ImageData",
         "inheritance": null,
@@ -22074,7 +22144,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "Uint8ClampedArray"
+                  "idlType": "ImageDataArray"
                 },
                 "default": null,
                 "optional": false,
@@ -22174,12 +22244,28 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "Uint8ClampedArray"
+              "idlType": "ImageDataArray"
             },
             "extAttrs": [],
             "special": "",
             "readonly": true,
             "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagedata-data"
+          },
+          {
+            "type": "attribute",
+            "name": "pixelFormat",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ImageDataPixelFormat"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagedata-pixelformat"
           },
           {
             "type": "attribute",
@@ -44499,11 +44585,13 @@
       ],
       "TextMetrics": [],
       "ImageDataSettings": [
-        "PredefinedColorSpace"
+        "PredefinedColorSpace",
+        "ImageDataPixelFormat"
       ],
       "ImageData": [
         "ImageDataSettings",
-        "Uint8ClampedArray",
+        "ImageDataArray",
+        "ImageDataPixelFormat",
         "PredefinedColorSpace"
       ],
       "Path2D": [
@@ -45026,6 +45114,7 @@
       "DOMMatrix2DInit",
       "DOMPointInit",
       "Uint8ClampedArray",
+      "Float16Array",
       "ShadowRoot",
       "File",
       "PerformanceEntry",

@@ -6,7 +6,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface ImageData {\n  constructor(unsigned long sw, unsigned long sh, optional ImageDataSettings settings = {});\n  constructor(Uint8ClampedArray data, unsigned long sw, optional unsigned long sh, optional ImageDataSettings settings = {});\n\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n  readonly attribute Uint8ClampedArray data;\n  readonly attribute PredefinedColorSpace colorSpace;\n};",
+    "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface ImageData {\n  constructor(unsigned long sw, unsigned long sh, optional ImageDataSettings settings = {});\n  constructor(ImageDataArray data, unsigned long sw, optional unsigned long sh, optional ImageDataSettings settings = {});\n\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n  readonly attribute ImageDataArray data;\n  readonly attribute ImageDataPixelFormat pixelFormat;\n  readonly attribute PredefinedColorSpace colorSpace;\n};",
     "href": "https://html.spec.whatwg.org/multipage/canvas.html#imagedata"
   },
   "extended": [],

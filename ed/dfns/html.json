@@ -43569,6 +43569,44 @@
       "definedIn": "pre"
     },
     {
+      "id": "imagedataarray",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#imagedataarray",
+      "linkingText": [
+        "ImageDataArray"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "2dcontext",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+        "title": "The 2D rendering context",
+        "number": "4.12.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "imagedatapixelformat",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#imagedatapixelformat",
+      "linkingText": [
+        "ImageDataPixelFormat"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "2dcontext",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+        "title": "The 2D rendering context",
+        "number": "4.12.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "imagedatasettings",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#imagedatasettings",
       "linkingText": [
@@ -47421,25 +47459,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "initialize-imagedata-settings",
-      "href": "https://html.spec.whatwg.org/multipage/canvas.html#initialize-imagedata-settings",
-      "linkingText": [
-        "settings"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "pixel-manipulation",
-        "href": "https://html.spec.whatwg.org/multipage/canvas.html#pixel-manipulation",
-        "title": "Pixel manipulation",
-        "number": "4.12.5.1.16"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "initialize-imagedata-source",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#initialize-imagedata-source",
       "linkingText": [
@@ -47541,6 +47560,48 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-imagedata-pixelformat",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagedata-pixelformat",
+      "linkingText": [
+        "pixelFormat"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-manipulation",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#pixel-manipulation",
+        "title": "Pixel manipulation",
+        "number": "4.12.5.1.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-imagedatasettings-pixelformat",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagedatasettings-pixelformat",
+      "linkingText": [
+        "pixelFormat"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDataSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-manipulation",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#pixel-manipulation",
+        "title": "Pixel manipulation",
+        "number": "4.12.5.1.16"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-imagedata-colorspace",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagedata-colorspace",
       "linkingText": [
@@ -47583,10 +47644,52 @@
       "definedIn": "prose"
     },
     {
-      "id": "canvas-pixel-arraybuffer",
-      "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvas-pixel-arraybuffer",
+      "id": "dom-imagedatapixelformat-rgba-unorm8",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagedatapixelformat-rgba-unorm8",
       "linkingText": [
-        "Canvas Pixel ArrayBuffer"
+        "rgba-unorm8"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ImageDataPixelFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-manipulation",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#pixel-manipulation",
+        "title": "Pixel manipulation",
+        "number": "4.12.5.1.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-imagedatapixelformat-rgba-float16",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagedatapixelformat-rgba-float16",
+      "linkingText": [
+        "rgba-float16"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ImageDataPixelFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-manipulation",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#pixel-manipulation",
+        "title": "Pixel manipulation",
+        "number": "4.12.5.1.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "concept-imagedata-bitmap-representation",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#concept-imagedata-bitmap-representation",
+      "linkingText": [
+        "represents a rectanglar bitmap"
       ],
       "localLinkingText": [],
       "type": "dfn",
