@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-04-07T19:25:15.426Z",
+  "date": "2025-04-08T01:32:24.881Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -701,7 +701,7 @@
   },
   "stats": {
     "crawled": 669,
-    "errors": 145
+    "errors": 144
   },
   "crawler": "reffy-18.4.6",
   "results": [
@@ -1641,8 +1641,7 @@
       "dfns": "dfns/font-metrics-api-1.json",
       "headings": "headings/font-metrics-api-1.json",
       "ids": "ids/font-metrics-api-1.json",
-      "cddl": [],
-      "error": "Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:387:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 17)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:408:21)"
+      "cddl": []
     },
     {
       "url": "https://drafts.csswg.org/css-backgrounds-4/",
@@ -2554,7 +2553,7 @@
       "headings": "headings/css-size-adjust-1.json",
       "ids": "ids/css-size-adjust-1.json",
       "cddl": [],
-      "error": "Error: Loading https://drafts.csswg.org/css-size-adjust-1/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:387:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 32)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:408:21)"
+      "error": "Error: Loading https://drafts.csswg.org/css-size-adjust-1/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:478:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:387:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 32)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:408:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13502:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:472:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://drafts.csswg.org/css-variables-2/",
@@ -2618,7 +2617,7 @@
       "headings": "headings/css-variables-2.json",
       "ids": "ids/css-variables-2.json",
       "cddl": [],
-      "error": "Error: Loading https://drafts.csswg.org/css-variables-2/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:387:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 33)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:408:21)"
+      "error": "Error: Loading https://drafts.csswg.org/css-variables-2/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:478:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:387:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 33)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:408:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13502:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:472:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://drafts.csswg.org/selectors-5/",
@@ -2681,7 +2680,7 @@
       "headings": "headings/selectors-5.json",
       "ids": "ids/selectors-5.json",
       "cddl": [],
-      "error": "Error: Loading https://drafts.csswg.org/selectors-5/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:387:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 34)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:408:21)"
+      "error": "Error: Loading https://drafts.csswg.org/selectors-5/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:478:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:387:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 34)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:408:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13502:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:472:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://drafts.fxtf.org/compositing-2/",
@@ -11833,11 +11832,11 @@
       ],
       "crawled": "https://wicg.github.io/fenced-frame/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 04 Apr 2025 19:05:40 GMT"
+        "lastModified": "Mon, 07 Apr 2025 18:46:13 GMT"
       },
       "generator": "bikeshed",
-      "date": "4 April 2025",
-      "revision": "3db3806d198814628fb4bfe96ba426a6722fba98",
+      "date": "7 April 2025",
+      "revision": "cb57423b55058f1d0f3aadcce3a07087026841d2",
       "algorithms": "algorithms/fenced-frame.json",
       "links": "links/fenced-frame.json",
       "refs": "refs/fenced-frame.json",
@@ -14348,11 +14347,11 @@
       ],
       "crawled": "https://wicg.github.io/turtledove/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Apr 2025 12:05:50 GMT"
+        "lastModified": "Mon, 07 Apr 2025 19:16:25 GMT"
       },
       "generator": "bikeshed",
-      "date": "1 April 2025",
-      "revision": "1f8b361fbe382af1357be735608f0af87352f7ad",
+      "date": "7 April 2025",
+      "revision": "d10eff88a94c9a6c90d764c1ba3aab88a3d2d33f",
       "algorithms": "algorithms/turtledove.json",
       "links": "links/turtledove.json",
       "refs": "refs/turtledove.json",
