@@ -593,7 +593,7 @@
       "name": "<random-value-sharing>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-random-value-sharing",
       "type": "type",
-      "value": "[ [ auto | <dashed-ident> ] || match-element ] | fixed <number [0,1]>",
+      "value": "[ [ auto | <dashed-ident> ] || element-shared ] | fixed <number [0,1]>",
       "values": [
         {
           "name": "auto",
@@ -610,11 +610,11 @@
           "value": "<dashed-ident>"
         },
         {
-          "name": "match-element",
-          "prose": "If match-element is omitted, random functions on different elements will use distinct random base values. If specified, random functions on different elements will share the same random base value if they have the same <dashed-ident> (if specified) or if they’re used in the same style in the same way (if not). (Again, see the note below for a small wrinkle about this.)",
-          "href": "https://drafts.csswg.org/css-values-5/#valdef-random-match-element",
+          "name": "element-shared",
+          "prose": "If element-shared is omitted, random functions on different elements will use distinct random base values. If specified, random functions on different elements will share the same random base value if they have the same <dashed-ident> (if specified) or if they’re used in the same style in the same way (if not). (Again, see the note below for a small wrinkle about this.)",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-random-element-shared",
           "type": "value",
-          "value": "match-element"
+          "value": "element-shared"
         },
         {
           "name": "<number>",
