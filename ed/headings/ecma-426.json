@@ -278,25 +278,158 @@
       "number": "9.2.4"
     },
     {
-      "id": "sec-sources",
-      "href": "https://tc39.es/ecma426/#sec-sources",
-      "title": "Resolving sources",
+      "id": "sec-scopes",
+      "href": "https://tc39.es/ecma426/#sec-scopes",
+      "title": "Scopes structure",
       "level": 2,
       "number": "9.3"
     },
     {
-      "id": "sec-DecodeSourceMapSources",
-      "href": "https://tc39.es/ecma426/#sec-DecodeSourceMapSources",
-      "title": "DecodeSourceMapSources ( baseURL, sourceRoot, sources, sourcesContent, ignoreList )",
+      "id": "sec-original-scope-record-type",
+      "href": "https://tc39.es/ecma426/#sec-original-scope-record-type",
+      "title": "Original Scope Record",
       "level": 3,
       "number": "9.3.1"
+    },
+    {
+      "id": "sec-generated-range-record-type",
+      "href": "https://tc39.es/ecma426/#sec-generated-range-record-type",
+      "title": "Generated Range Record",
+      "level": 3,
+      "number": "9.3.2"
+    },
+    {
+      "id": "sec-sub-range-binding-record-type",
+      "href": "https://tc39.es/ecma426/#sec-sub-range-binding-record-type",
+      "title": "The Sub-Range Binding Record",
+      "level": 4,
+      "number": "9.3.2.1"
+    },
+    {
+      "id": "sec-binding-record-type",
+      "href": "https://tc39.es/ecma426/#sec-binding-record-type",
+      "title": "The Binding Record",
+      "level": 4,
+      "number": "9.3.2.2"
+    },
+    {
+      "id": "sec-scopes-grammar",
+      "href": "https://tc39.es/ecma426/#sec-scopes-grammar",
+      "title": "Scopes grammar",
+      "level": 3,
+      "number": "9.3.3"
+    },
+    {
+      "id": "sec-original-scope-grammar",
+      "href": "https://tc39.es/ecma426/#sec-original-scope-grammar",
+      "title": "Original scope grammar",
+      "level": 4,
+      "number": "9.3.3.1"
+    },
+    {
+      "id": "sec-generated-range-grammar",
+      "href": "https://tc39.es/ecma426/#sec-generated-range-grammar",
+      "title": "Generated range grammar",
+      "level": 4,
+      "number": "9.3.3.2"
+    },
+    {
+      "id": "sec-unknown-item-grammar",
+      "href": "https://tc39.es/ecma426/#sec-unknown-item-grammar",
+      "title": "Unknown item grammar",
+      "level": 4,
+      "number": "9.3.3.3"
+    },
+    {
+      "id": "sec-decoding-scopes",
+      "href": "https://tc39.es/ecma426/#sec-decoding-scopes",
+      "title": "Decoding scopes",
+      "level": 3,
+      "number": "9.3.4"
+    },
+    {
+      "id": "sec-scope-info-record-type",
+      "href": "https://tc39.es/ecma426/#sec-scope-info-record-type",
+      "title": "Scope Info Record",
+      "level": 4,
+      "number": "9.3.4.1"
+    },
+    {
+      "id": "sec-decode-scope-state-record-type",
+      "href": "https://tc39.es/ecma426/#sec-decode-scope-state-record-type",
+      "title": "Decode Scope State Record",
+      "level": 4,
+      "number": "9.3.4.2"
+    },
+    {
+      "id": "sec-DecodeScopesInfo",
+      "href": "https://tc39.es/ecma426/#sec-DecodeScopesInfo",
+      "title": "DecodeScopesInfo ( scopes, names )",
+      "level": 4,
+      "number": "9.3.4.3"
+    },
+    {
+      "id": "sec-DecodeScopesInfoItem",
+      "href": "https://tc39.es/ecma426/#sec-DecodeScopesInfoItem",
+      "title": "DecodeScopesInfoItem",
+      "level": 5,
+      "number": "9.3.4.3.1"
+    },
+    {
+      "id": "sec-DecodeOriginalScope",
+      "href": "https://tc39.es/ecma426/#sec-DecodeOriginalScope",
+      "title": "DecodeOriginalScope ( scopeTree, state, names )",
+      "level": 4,
+      "number": "9.3.4.4"
+    },
+    {
+      "id": "sec-DecodeOriginalScopeItem",
+      "href": "https://tc39.es/ecma426/#sec-DecodeOriginalScopeItem",
+      "title": "DecodeOriginalScopeItem",
+      "level": 5,
+      "number": "9.3.4.4.1"
+    },
+    {
+      "id": "sec-DecodeGeneratedRange",
+      "href": "https://tc39.es/ecma426/#sec-DecodeGeneratedRange",
+      "title": "DecodeGeneratedRange ( rangeTree, state, names )",
+      "level": 4,
+      "number": "9.3.4.5"
+    },
+    {
+      "id": "sec-DecodeGeneratedRangeItem",
+      "href": "https://tc39.es/ecma426/#sec-DecodeGeneratedRangeItem",
+      "title": "DecodeGeneratedRangeItem",
+      "level": 5,
+      "number": "9.3.4.5.1"
+    },
+    {
+      "id": "sec-DecodeSubRangeBinding",
+      "href": "https://tc39.es/ecma426/#sec-DecodeSubRangeBinding",
+      "title": "DecodeSubRangeBinding",
+      "level": 5,
+      "number": "9.3.4.5.2"
+    },
+    {
+      "id": "sec-sources",
+      "href": "https://tc39.es/ecma426/#sec-sources",
+      "title": "Resolving sources",
+      "level": 2,
+      "number": "9.4"
+    },
+    {
+      "id": "sec-DecodeSourceMapSources",
+      "href": "https://tc39.es/ecma426/#sec-DecodeSourceMapSources",
+      "title": "DecodeSourceMapSources ( baseURL, sourceRoot, sources, sourcesContent, ignoreList, scopes )",
+      "level": 3,
+      "number": "9.4.1"
     },
     {
       "id": "sec-extensions",
       "href": "https://tc39.es/ecma426/#sec-extensions",
       "title": "Extensions",
       "level": 2,
-      "number": "9.4"
+      "number": "9.5"
     },
     {
       "id": "sec-index-source-map",
