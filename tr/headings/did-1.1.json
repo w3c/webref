@@ -58,6 +58,13 @@
       "number": "1.4"
     },
     {
+      "id": "audience",
+      "href": "https://www.w3.org/TR/did-1.1/#audience",
+      "level": 3,
+      "title": "Audience",
+      "number": "1.5"
+    },
+    {
       "id": "terminology",
       "href": "https://www.w3.org/TR/did-1.1/#terminology",
       "level": 2,
@@ -104,18 +111,11 @@
       "title": "Fragment"
     },
     {
-      "id": "did-parameters",
-      "href": "https://www.w3.org/TR/did-1.1/#did-parameters",
-      "level": 4,
-      "title": "DID Parameters",
-      "number": "3.2.1"
-    },
-    {
       "id": "relative-did-urls",
       "href": "https://www.w3.org/TR/did-1.1/#relative-did-urls",
       "level": 4,
       "title": "Relative DID URLs",
-      "number": "3.2.2"
+      "number": "3.2.1"
     },
     {
       "id": "data-model",
@@ -137,12 +137,6 @@
       "level": 2,
       "title": "Core Properties",
       "number": "5"
-    },
-    {
-      "id": "did-document-properties",
-      "href": "https://www.w3.org/TR/did-1.1/#did-document-properties",
-      "level": 3,
-      "title": "DID Document properties"
     },
     {
       "id": "verification-method-properties",
@@ -178,10 +172,10 @@
       "number": "5.1.2"
     },
     {
-      "id": "also-known-as",
-      "href": "https://www.w3.org/TR/did-1.1/#also-known-as",
+      "id": "identifier-restrictions",
+      "href": "https://www.w3.org/TR/did-1.1/#identifier-restrictions",
       "level": 4,
-      "title": "Also Known As",
+      "title": "Identifier Restrictions",
       "number": "5.1.3"
     },
     {
@@ -192,60 +186,11 @@
       "number": "5.2"
     },
     {
-      "id": "verification-material",
-      "href": "https://www.w3.org/TR/did-1.1/#verification-material",
-      "level": 4,
-      "title": "Verification Material",
-      "number": "5.2.1"
-    },
-    {
-      "id": "referring-to-verification-methods",
-      "href": "https://www.w3.org/TR/did-1.1/#referring-to-verification-methods",
-      "level": 4,
-      "title": "Referring to Verification Methods",
-      "number": "5.2.2"
-    },
-    {
       "id": "verification-relationships",
       "href": "https://www.w3.org/TR/did-1.1/#verification-relationships",
       "level": 3,
       "title": "Verification Relationships",
       "number": "5.3"
-    },
-    {
-      "id": "authentication",
-      "href": "https://www.w3.org/TR/did-1.1/#authentication",
-      "level": 4,
-      "title": "Authentication",
-      "number": "5.3.1"
-    },
-    {
-      "id": "assertion",
-      "href": "https://www.w3.org/TR/did-1.1/#assertion",
-      "level": 4,
-      "title": "Assertion",
-      "number": "5.3.2"
-    },
-    {
-      "id": "key-agreement",
-      "href": "https://www.w3.org/TR/did-1.1/#key-agreement",
-      "level": 4,
-      "title": "Key Agreement",
-      "number": "5.3.3"
-    },
-    {
-      "id": "capability-invocation",
-      "href": "https://www.w3.org/TR/did-1.1/#capability-invocation",
-      "level": 4,
-      "title": "Capability Invocation",
-      "number": "5.3.4"
-    },
-    {
-      "id": "capability-delegation",
-      "href": "https://www.w3.org/TR/did-1.1/#capability-delegation",
-      "level": 4,
-      "title": "Capability Delegation",
-      "number": "5.3.5"
     },
     {
       "id": "services",
@@ -374,147 +319,81 @@
       "number": "8.1"
     },
     {
-      "id": "proving-control-and-binding",
-      "href": "https://www.w3.org/TR/did-1.1/#proving-control-and-binding",
-      "level": 3,
-      "title": "Proving Control and Binding",
-      "number": "8.2"
-    },
-    {
-      "id": "proving-control-of-a-did-and-or-did-document",
-      "href": "https://www.w3.org/TR/did-1.1/#proving-control-of-a-did-and-or-did-document",
-      "level": 4,
-      "title": "Proving Control of a DID and/or DID Document"
-    },
-    {
-      "id": "binding-to-physical-identity",
-      "href": "https://www.w3.org/TR/did-1.1/#binding-to-physical-identity",
-      "level": 4,
-      "title": "Binding to Physical Identity"
-    },
-    {
-      "id": "authentication-service-endpoints",
-      "href": "https://www.w3.org/TR/did-1.1/#authentication-service-endpoints",
-      "level": 3,
-      "title": "Authentication Service Endpoints",
-      "number": "8.3"
-    },
-    {
       "id": "non-repudiation",
       "href": "https://www.w3.org/TR/did-1.1/#non-repudiation",
       "level": 3,
       "title": "Non-Repudiation",
-      "number": "8.4"
+      "number": "8.2"
     },
     {
       "id": "notification-of-did-document-changes",
       "href": "https://www.w3.org/TR/did-1.1/#notification-of-did-document-changes",
       "level": 3,
       "title": "Notification of DID Document Changes",
-      "number": "8.5"
-    },
-    {
-      "id": "key-and-signature-expiration",
-      "href": "https://www.w3.org/TR/did-1.1/#key-and-signature-expiration",
-      "level": 3,
-      "title": "Key and Signature Expiration",
-      "number": "8.6"
-    },
-    {
-      "id": "verification-method-rotation",
-      "href": "https://www.w3.org/TR/did-1.1/#verification-method-rotation",
-      "level": 3,
-      "title": "Verification Method Rotation",
-      "number": "8.7"
-    },
-    {
-      "id": "verification-method-revocation",
-      "href": "https://www.w3.org/TR/did-1.1/#verification-method-revocation",
-      "level": 3,
-      "title": "Verification Method Revocation",
-      "number": "8.8"
-    },
-    {
-      "id": "revocation-semantics",
-      "href": "https://www.w3.org/TR/did-1.1/#revocation-semantics",
-      "level": 4,
-      "title": "Revocation Semantics"
+      "number": "8.3"
     },
     {
       "id": "revocation-in-trustless-systems",
       "href": "https://www.w3.org/TR/did-1.1/#revocation-in-trustless-systems",
-      "level": 4,
-      "title": "Revocation in Trustless Systems"
+      "level": 3,
+      "title": "Revocation in Trustless Systems",
+      "number": "8.4"
     },
     {
       "id": "did-recovery",
       "href": "https://www.w3.org/TR/did-1.1/#did-recovery",
       "level": 3,
       "title": "DID Recovery",
-      "number": "8.9"
+      "number": "8.5"
     },
     {
       "id": "the-role-of-human-friendly-identifiers",
       "href": "https://www.w3.org/TR/did-1.1/#the-role-of-human-friendly-identifiers",
       "level": 3,
       "title": "The Role of Human-Friendly Identifiers",
-      "number": "8.10"
+      "number": "8.6"
     },
     {
       "id": "dids-as-enhanced-urns",
       "href": "https://www.w3.org/TR/did-1.1/#dids-as-enhanced-urns",
       "level": 3,
       "title": "DIDs as Enhanced URNs",
-      "number": "8.11"
+      "number": "8.7"
     },
     {
       "id": "immutability",
       "href": "https://www.w3.org/TR/did-1.1/#immutability",
       "level": 3,
       "title": "Immutability",
-      "number": "8.12"
+      "number": "8.8"
     },
     {
       "id": "encrypted-data-in-did-documents",
       "href": "https://www.w3.org/TR/did-1.1/#encrypted-data-in-did-documents",
       "level": 3,
       "title": "Encrypted Data in DID Documents",
-      "number": "8.13"
+      "number": "8.9"
     },
     {
       "id": "equivalence-properties",
       "href": "https://www.w3.org/TR/did-1.1/#equivalence-properties",
       "level": 3,
       "title": "Equivalence Properties",
-      "number": "8.14"
-    },
-    {
-      "id": "content-integrity-protection",
-      "href": "https://www.w3.org/TR/did-1.1/#content-integrity-protection",
-      "level": 3,
-      "title": "Content Integrity Protection",
-      "number": "8.15"
+      "number": "8.10"
     },
     {
       "id": "persistence",
       "href": "https://www.w3.org/TR/did-1.1/#persistence",
       "level": 3,
       "title": "Persistence",
-      "number": "8.16"
-    },
-    {
-      "id": "level-of-assurance",
-      "href": "https://www.w3.org/TR/did-1.1/#level-of-assurance",
-      "level": 3,
-      "title": "Level of Assurance",
-      "number": "8.17"
+      "number": "8.11"
     },
     {
       "id": "evaluating-competing-considerations",
       "href": "https://www.w3.org/TR/did-1.1/#evaluating-competing-considerations",
       "level": 3,
       "title": "Evaluating Competing Considerations",
-      "number": "8.18"
+      "number": "8.12"
     },
     {
       "id": "privacy-considerations",
@@ -524,58 +403,11 @@
       "number": "9"
     },
     {
-      "id": "keep-personal-data-private",
-      "href": "https://www.w3.org/TR/did-1.1/#keep-personal-data-private",
+      "id": "group-privacy",
+      "href": "https://www.w3.org/TR/did-1.1/#group-privacy",
       "level": 3,
-      "title": "Keep Personal Data Private",
+      "title": "Group Privacy",
       "number": "9.1"
-    },
-    {
-      "id": "did-correlation-risks",
-      "href": "https://www.w3.org/TR/did-1.1/#did-correlation-risks",
-      "level": 3,
-      "title": "DID Correlation Risks",
-      "number": "9.2"
-    },
-    {
-      "id": "did-document-correlation-risks",
-      "href": "https://www.w3.org/TR/did-1.1/#did-document-correlation-risks",
-      "level": 3,
-      "title": "DID Document Correlation Risks",
-      "number": "9.3"
-    },
-    {
-      "id": "did-subject-classification",
-      "href": "https://www.w3.org/TR/did-1.1/#did-subject-classification",
-      "level": 3,
-      "title": "DID Subject Classification",
-      "number": "9.4"
-    },
-    {
-      "id": "herd-privacy",
-      "href": "https://www.w3.org/TR/did-1.1/#herd-privacy",
-      "level": 3,
-      "title": "Herd Privacy",
-      "number": "9.5"
-    },
-    {
-      "id": "service-privacy",
-      "href": "https://www.w3.org/TR/did-1.1/#service-privacy",
-      "level": 3,
-      "title": "Service Privacy",
-      "number": "9.6"
-    },
-    {
-      "id": "maintaining-herd-privacy",
-      "href": "https://www.w3.org/TR/did-1.1/#maintaining-herd-privacy",
-      "level": 4,
-      "title": "Maintaining Herd Privacy"
-    },
-    {
-      "id": "service-endpoint-alternatives",
-      "href": "https://www.w3.org/TR/did-1.1/#service-endpoint-alternatives",
-      "level": 4,
-      "title": "Service Endpoint Alternatives"
     },
     {
       "id": "examples",
