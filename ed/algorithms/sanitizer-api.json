@@ -134,7 +134,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>valid</var> be the return value of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-set-a-configuration\" id=\"ref-for-sanitizer-set-a-configuration\">setting</a> <var>configuration</var> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>.</p>"
+          "html": "<p>Let <var>valid</var> be the return value of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-set-a-configuration\" id=\"ref-for-sanitizer-set-a-configuration\">set a configuration</a> with <var>configuration</var> and true on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>.</p>"
         },
         {
           "html": "<p>If <var>valid</var> is false, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
@@ -214,7 +214,7 @@
               "html": "<p>Let <var>sanitizer</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer\" id=\"ref-for-sanitizer⑥\">Sanitizer</a></code> instance.</p>"
             },
             {
-              "html": "<p>Let <var>setConfigurationResult</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-set-a-configuration\" id=\"ref-for-sanitizer-set-a-configuration①\">set a configuration</a> with <var>sanitizerSpec</var> and <var>safe</var> on <var>sanitizer</var>.</p>"
+              "html": "<p>Let <var>setConfigurationResult</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-set-a-configuration\" id=\"ref-for-sanitizer-set-a-configuration①\">set a configuration</a> with <var>sanitizerSpec</var> and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#boolean-not\" id=\"ref-for-boolean-not\">not</a> <var>safe</var> on <var>sanitizer</var>.</p>"
             },
             {
               "html": "<p>If <var>setConfigurationResult</var> is false, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.</p>"
@@ -542,7 +542,7 @@
     {
       "name": "Sanitizer/set a configuration",
       "href": "https://wicg.github.io/sanitizer-api/#sanitizer-set-a-configuration",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Sanitizer\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitizer-set-a-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set a configuration</dfn>, given a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\" id=\"ref-for-dfn-dictionary⑤\">dictionary</a> <var>configuration</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean④\">boolean</a> <var>safe</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer\" id=\"ref-for-sanitizer⑨\">Sanitizer</a></code> <var>sanitizer</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Sanitizer\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitizer-set-a-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set a configuration</dfn>, given a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\" id=\"ref-for-dfn-dictionary⑤\">dictionary</a> <var>configuration</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean④\">boolean</a> <var>allowCommentsAndDataAttributes</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer\" id=\"ref-for-sanitizer⑨\">Sanitizer</a></code> <var>sanitizer</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -598,7 +598,7 @@
               "html": "<p>Then call <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-set-comments\" id=\"ref-for-sanitizer-set-comments①\">set comments</a> with <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-comments\" id=\"ref-for-dom-sanitizerconfig-comments③\">comments</a></code>\"]\n  and <var>sanitizer</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-configuration\" id=\"ref-for-sanitizer-configuration①⑥\">configuration</a>.</p>"
             },
             {
-              "html": "<p>Otherwise call <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-set-comments\" id=\"ref-for-sanitizer-set-comments②\">set comments</a> with <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#boolean-not\" id=\"ref-for-boolean-not\">not</a> <var>safe</var> and <var>sanitizer</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-configuration\" id=\"ref-for-sanitizer-configuration①⑦\">configuration</a>.</p>"
+              "html": "<p>Otherwise call <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-set-comments\" id=\"ref-for-sanitizer-set-comments②\">set comments</a> with <var>allowCommentsAndDataAttributes</var> and <var>sanitizer</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-configuration\" id=\"ref-for-sanitizer-configuration①⑦\">configuration</a>.</p>"
             }
           ]
         },
@@ -610,7 +610,7 @@
               "html": "<p>Then call <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-set-data-attributes\" id=\"ref-for-sanitizer-set-data-attributes①\">set data attributes</a> with <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-dataattributes\" id=\"ref-for-dom-sanitizerconfig-dataattributes③\">dataAttributes</a></code>\"]\n  and <var>sanitizer</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-configuration\" id=\"ref-for-sanitizer-configuration①⑧\">configuration</a>.</p>"
             },
             {
-              "html": "<p>Otherwise call <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-set-data-attributes\" id=\"ref-for-sanitizer-set-data-attributes②\">set data attributes</a> with <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#boolean-not\" id=\"ref-for-boolean-not①\">not</a> <var>safe</var> and <var>sanitizer</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-configuration\" id=\"ref-for-sanitizer-configuration①⑨\">configuration</a>.</p>"
+              "html": "<p>Otherwise call <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-set-data-attributes\" id=\"ref-for-sanitizer-set-data-attributes②\">set data attributes</a> with <var>allowCommentsAndDataAttributes</var> and <var>sanitizer</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-configuration\" id=\"ref-for-sanitizer-configuration①⑨\">configuration</a>.</p>"
             }
           ]
         },
