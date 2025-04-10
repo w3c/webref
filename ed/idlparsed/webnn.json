@@ -652,7 +652,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#mlcontext"
       },
       "MLOpSupportLimits": {
-        "fragment": "dictionary MLOpSupportLimits {\n  MLInputOperandLayout preferredInputLayout;\n  MLSupportLimits input;\n  MLSupportLimits constant;\n  MLSupportLimits output;\n};",
+        "fragment": "dictionary MLOpSupportLimits {\n  MLInputOperandLayout preferredInputLayout;\n  [EnforceRange] unsigned long long maxTensorByteLength;\n  MLDataTypeLimits input;\n  MLDataTypeLimits constant;\n  MLDataTypeLimits output;\n};",
         "type": "dictionary",
         "name": "MLOpSupportLimits",
         "inheritance": null,
@@ -675,6 +675,29 @@
           },
           {
             "type": "field",
+            "name": "maxTensorByteLength",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-maxtensorbytelength"
+          },
+          {
+            "type": "field",
             "name": "input",
             "extAttrs": [],
             "idlType": {
@@ -683,7 +706,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -699,7 +722,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -715,7 +738,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -726,10 +749,34 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlopsupportlimits"
       },
-      "MLSupportLimits": {
-        "fragment": "dictionary MLSupportLimits {\n  sequence<MLOperandDataType> dataTypes;\n};",
+      "MLDataTypeList": {
+        "fragment": "typedef sequence<MLOperandDataType> MLDataTypeList;",
+        "type": "typedef",
+        "name": "MLDataTypeList",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "sequence",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLOperandDataType"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mldatatypelist"
+      },
+      "MLDataTypeLimits": {
+        "fragment": "dictionary MLDataTypeLimits {\n  MLDataTypeList dataTypes;\n};",
         "type": "dictionary",
-        "name": "MLSupportLimits",
+        "name": "MLDataTypeLimits",
         "inheritance": null,
         "members": [
           {
@@ -739,31 +786,108 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "sequence",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "MLOperandDataType"
-                }
-              ]
+              "idlType": "MLDataTypeList"
             },
             "default": null,
             "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlsupportlimits-datatypes"
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mldatatypelimits-datatypes"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlsupportlimits"
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mldatatypelimits"
+      },
+      "MLRankRange": {
+        "fragment": "dictionary MLRankRange {\n  unsigned long min;\n  unsigned long max;\n};",
+        "type": "dictionary",
+        "name": "MLRankRange",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "min",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlrankrange-min"
+          },
+          {
+            "type": "field",
+            "name": "max",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlrankrange-max"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlrankrange"
+      },
+      "MLTensorLimits": {
+        "fragment": "dictionary MLTensorLimits {\n  MLDataTypeList dataTypes;\n  MLRankRange rankRange;\n};",
+        "type": "dictionary",
+        "name": "MLTensorLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "dataTypes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLDataTypeList"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mltensorlimits-datatypes"
+          },
+          {
+            "type": "field",
+            "name": "rankRange",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLRankRange"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mltensorlimits-rankrange"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mltensorlimits"
       },
       "MLBinarySupportLimits": {
-        "fragment": "dictionary MLBinarySupportLimits {\n  MLSupportLimits a;\n  MLSupportLimits b;\n  MLSupportLimits output;\n};",
+        "fragment": "dictionary MLBinarySupportLimits {\n  MLTensorLimits a;\n  MLTensorLimits b;\n  MLDataTypeLimits output;\n};",
         "type": "dictionary",
         "name": "MLBinarySupportLimits",
         "inheritance": null,
@@ -778,7 +902,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -794,7 +918,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -810,7 +934,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -822,7 +946,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlbinarysupportlimits"
       },
       "MLSingleInputSupportLimits": {
-        "fragment": "dictionary MLSingleInputSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits output;\n};",
+        "fragment": "dictionary MLSingleInputSupportLimits {\n  MLTensorLimits input;\n  MLDataTypeLimits output;\n};",
         "type": "dictionary",
         "name": "MLSingleInputSupportLimits",
         "inheritance": null,
@@ -837,7 +961,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -853,7 +977,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -1766,7 +1890,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlbatchnormalizationoptions"
       },
       "MLBatchNormalizationSupportLimits": {
-        "fragment": "dictionary MLBatchNormalizationSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits mean;\n  MLSupportLimits variance;\n  MLSupportLimits scale;\n  MLSupportLimits bias;\n  MLSupportLimits output;\n};",
+        "fragment": "dictionary MLBatchNormalizationSupportLimits {\n  MLTensorLimits input;\n  MLTensorLimits mean;\n  MLTensorLimits variance;\n  MLTensorLimits scale;\n  MLTensorLimits bias;\n  MLDataTypeLimits output;\n};",
         "type": "dictionary",
         "name": "MLBatchNormalizationSupportLimits",
         "inheritance": null,
@@ -1781,7 +1905,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -1797,7 +1921,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -1813,7 +1937,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -1829,7 +1953,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -1845,7 +1969,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -1861,7 +1985,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -1916,7 +2040,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlclampoptions"
       },
       "MLConcatSupportLimits": {
-        "fragment": "dictionary MLConcatSupportLimits {\n  MLSupportLimits inputs;\n  MLSupportLimits output;\n};",
+        "fragment": "dictionary MLConcatSupportLimits {\n  MLTensorLimits inputs;\n  MLDataTypeLimits output;\n};",
         "type": "dictionary",
         "name": "MLConcatSupportLimits",
         "inheritance": null,
@@ -1931,7 +2055,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -1947,7 +2071,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -2175,7 +2299,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlconv2doptions"
       },
       "MLConv2dSupportLimits": {
-        "fragment": "dictionary MLConv2dSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits filter;\n  MLSupportLimits bias;\n  MLSupportLimits output;\n};",
+        "fragment": "dictionary MLConv2dSupportLimits {\n  MLTensorLimits input;\n  MLTensorLimits filter;\n  MLTensorLimits bias;\n  MLDataTypeLimits output;\n};",
         "type": "dictionary",
         "name": "MLConv2dSupportLimits",
         "inheritance": null,
@@ -2190,7 +2314,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -2206,7 +2330,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -2222,7 +2346,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -2238,7 +2362,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -2574,7 +2698,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlcumulativesumoptions"
       },
       "MLLogicalNotSupportLimits": {
-        "fragment": "dictionary MLLogicalNotSupportLimits {\n  MLSupportLimits a;\n  MLSupportLimits output;\n};",
+        "fragment": "dictionary MLLogicalNotSupportLimits {\n  MLTensorLimits a;\n  MLDataTypeLimits output;\n};",
         "type": "dictionary",
         "name": "MLLogicalNotSupportLimits",
         "inheritance": null,
@@ -2589,7 +2713,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -2605,7 +2729,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -2616,10 +2740,10 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllogicalnotsupportlimits"
       },
-      "MLQuantizationSupportLimits": {
-        "fragment": "dictionary MLQuantizationSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits scale;\n  MLSupportLimits zeroPoint;\n  MLSupportLimits output;\n};",
+      "MLQuantizeDequantizeLinearSupportLimits": {
+        "fragment": "dictionary MLQuantizeDequantizeLinearSupportLimits {\n  MLTensorLimits input;\n  MLTensorLimits scale;\n  MLTensorLimits zeroPoint;\n  MLDataTypeLimits output;\n};",
         "type": "dictionary",
-        "name": "MLQuantizationSupportLimits",
+        "name": "MLQuantizeDequantizeLinearSupportLimits",
         "inheritance": null,
         "members": [
           {
@@ -2632,11 +2756,11 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlquantizationsupportlimits-input"
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlquantizedequantizelinearsupportlimits-input"
           },
           {
             "type": "field",
@@ -2648,11 +2772,11 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlquantizationsupportlimits-scale"
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlquantizedequantizelinearsupportlimits-scale"
           },
           {
             "type": "field",
@@ -2664,11 +2788,11 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlquantizationsupportlimits-zeropoint"
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlquantizedequantizelinearsupportlimits-zeropoint"
           },
           {
             "type": "field",
@@ -2680,16 +2804,16 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlquantizationsupportlimits-output"
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlquantizedequantizelinearsupportlimits-output"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlquantizationsupportlimits"
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlquantizedequantizelinearsupportlimits"
       },
       "MLEluOptions": {
         "fragment": "dictionary MLEluOptions : MLOperatorOptions {\n  double alpha = 1;\n};",
@@ -2759,7 +2883,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgatheroptions"
       },
       "MLGatherSupportLimits": {
-        "fragment": "dictionary MLGatherSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits indices;\n  MLSupportLimits output;\n};",
+        "fragment": "dictionary MLGatherSupportLimits {\n  MLTensorLimits input;\n  MLTensorLimits indices;\n  MLDataTypeLimits output;\n};",
         "type": "dictionary",
         "name": "MLGatherSupportLimits",
         "inheritance": null,
@@ -2774,7 +2898,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -2790,7 +2914,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -2806,7 +2930,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -2921,7 +3045,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgemmoptions"
       },
       "MLGemmSupportLimits": {
-        "fragment": "dictionary MLGemmSupportLimits {\n  MLSupportLimits a;\n  MLSupportLimits b;\n  MLSupportLimits c;\n  MLSupportLimits output;\n};",
+        "fragment": "dictionary MLGemmSupportLimits {\n  MLTensorLimits a;\n  MLTensorLimits b;\n  MLTensorLimits c;\n  MLDataTypeLimits output;\n};",
         "type": "dictionary",
         "name": "MLGemmSupportLimits",
         "inheritance": null,
@@ -2936,7 +3060,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -2952,7 +3076,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -2968,7 +3092,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -2984,7 +3108,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -3223,7 +3347,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgruoptions"
       },
       "MLGruSupportLimits": {
-        "fragment": "dictionary MLGruSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits weight;\n  MLSupportLimits recurrentWeight;\n  MLSupportLimits bias;\n  MLSupportLimits recurrentBias;\n  MLSupportLimits initialHiddenState;\n  MLSupportLimits outputs;\n};",
+        "fragment": "dictionary MLGruSupportLimits {\n  MLTensorLimits input;\n  MLTensorLimits weight;\n  MLTensorLimits recurrentWeight;\n  MLTensorLimits bias;\n  MLTensorLimits recurrentBias;\n  MLTensorLimits initialHiddenState;\n  MLDataTypeLimits outputs;\n};",
         "type": "dictionary",
         "name": "MLGruSupportLimits",
         "inheritance": null,
@@ -3238,7 +3362,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -3254,7 +3378,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -3270,7 +3394,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -3286,7 +3410,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -3302,7 +3426,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -3318,7 +3442,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -3334,7 +3458,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -3452,7 +3576,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgrucelloptions"
       },
       "MLGruCellSupportLimits": {
-        "fragment": "dictionary MLGruCellSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits weight;\n  MLSupportLimits recurrentWeight;\n  MLSupportLimits hiddenState;\n  MLSupportLimits bias;\n  MLSupportLimits recurrentBias;\n  MLSupportLimits output;\n};",
+        "fragment": "dictionary MLGruCellSupportLimits {\n  MLTensorLimits input;\n  MLTensorLimits weight;\n  MLTensorLimits recurrentWeight;\n  MLTensorLimits hiddenState;\n  MLTensorLimits bias;\n  MLTensorLimits recurrentBias;\n  MLDataTypeLimits output;\n};",
         "type": "dictionary",
         "name": "MLGruCellSupportLimits",
         "inheritance": null,
@@ -3467,7 +3591,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -3483,7 +3607,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -3499,7 +3623,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -3515,7 +3639,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -3531,7 +3655,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -3547,7 +3671,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -3563,7 +3687,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -3705,7 +3829,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlinstancenormalizationoptions"
       },
       "MLNormalizationSupportLimits": {
-        "fragment": "dictionary MLNormalizationSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits scale;\n  MLSupportLimits bias;\n  MLSupportLimits output;\n};",
+        "fragment": "dictionary MLNormalizationSupportLimits {\n  MLTensorLimits input;\n  MLTensorLimits scale;\n  MLTensorLimits bias;\n  MLDataTypeLimits output;\n};",
         "type": "dictionary",
         "name": "MLNormalizationSupportLimits",
         "inheritance": null,
@@ -3720,7 +3844,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -3736,7 +3860,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -3752,7 +3876,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -3768,7 +3892,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -4145,7 +4269,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllstmoptions"
       },
       "MLLstmSupportLimits": {
-        "fragment": "dictionary MLLstmSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits weight;\n  MLSupportLimits recurrentWeight;\n  MLSupportLimits bias;\n  MLSupportLimits recurrentBias;\n  MLSupportLimits peepholeWeight;\n  MLSupportLimits initialHiddenState;\n  MLSupportLimits initialCellState;\n  MLSupportLimits outputs;\n};",
+        "fragment": "dictionary MLLstmSupportLimits {\n  MLTensorLimits input;\n  MLTensorLimits weight;\n  MLTensorLimits recurrentWeight;\n  MLTensorLimits bias;\n  MLTensorLimits recurrentBias;\n  MLTensorLimits peepholeWeight;\n  MLTensorLimits initialHiddenState;\n  MLTensorLimits initialCellState;\n  MLDataTypeLimits outputs;\n};",
         "type": "dictionary",
         "name": "MLLstmSupportLimits",
         "inheritance": null,
@@ -4160,7 +4284,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4176,7 +4300,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4192,7 +4316,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4208,7 +4332,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4224,7 +4348,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4240,7 +4364,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4256,7 +4380,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4272,7 +4396,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4288,7 +4412,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -4403,7 +4527,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllstmcelloptions"
       },
       "MLLstmCellSupportLimits": {
-        "fragment": "dictionary MLLstmCellSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits weight;\n  MLSupportLimits recurrentWeight;\n  MLSupportLimits hiddenState;\n  MLSupportLimits cellState;\n  MLSupportLimits bias;\n  MLSupportLimits recurrentBias;\n  MLSupportLimits peepholeWeight;\n  MLSupportLimits outputs;\n};",
+        "fragment": "dictionary MLLstmCellSupportLimits {\n  MLTensorLimits input;\n  MLTensorLimits weight;\n  MLTensorLimits recurrentWeight;\n  MLTensorLimits hiddenState;\n  MLTensorLimits cellState;\n  MLTensorLimits bias;\n  MLTensorLimits recurrentBias;\n  MLTensorLimits peepholeWeight;\n  MLDataTypeLimits outputs;\n};",
         "type": "dictionary",
         "name": "MLLstmCellSupportLimits",
         "inheritance": null,
@@ -4418,7 +4542,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4434,7 +4558,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4450,7 +4574,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4466,7 +4590,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4482,7 +4606,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4498,7 +4622,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4514,7 +4638,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4530,7 +4654,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4546,7 +4670,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -4864,7 +4988,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlpool2doptions"
       },
       "MLPreluSupportLimits": {
-        "fragment": "dictionary MLPreluSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits slope;\n  MLSupportLimits output;\n};",
+        "fragment": "dictionary MLPreluSupportLimits {\n  MLTensorLimits input;\n  MLTensorLimits slope;\n  MLDataTypeLimits output;\n};",
         "type": "dictionary",
         "name": "MLPreluSupportLimits",
         "inheritance": null,
@@ -4879,7 +5003,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4895,7 +5019,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -4911,7 +5035,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -5203,7 +5327,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlscatteroptions"
       },
       "MLScatterSupportLimits": {
-        "fragment": "dictionary MLScatterSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits indices;\n  MLSupportLimits updates;\n  MLSupportLimits output;\n};",
+        "fragment": "dictionary MLScatterSupportLimits {\n  MLTensorLimits input;\n  MLTensorLimits indices;\n  MLTensorLimits updates;\n  MLDataTypeLimits output;\n};",
         "type": "dictionary",
         "name": "MLScatterSupportLimits",
         "inheritance": null,
@@ -5218,7 +5342,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -5234,7 +5358,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -5250,7 +5374,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -5266,7 +5390,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -5358,7 +5482,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlsplitoptions"
       },
       "MLSplitSupportLimits": {
-        "fragment": "dictionary MLSplitSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits outputs;\n};",
+        "fragment": "dictionary MLSplitSupportLimits {\n  MLTensorLimits input;\n  MLDataTypeLimits outputs;\n};",
         "type": "dictionary",
         "name": "MLSplitSupportLimits",
         "inheritance": null,
@@ -5373,7 +5497,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -5389,7 +5513,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -5500,7 +5624,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mltriangularoptions"
       },
       "MLWhereSupportLimits": {
-        "fragment": "dictionary MLWhereSupportLimits {\n  MLSupportLimits condition;\n  MLSupportLimits trueValue;\n  MLSupportLimits falseValue;\n  MLSupportLimits output;\n};",
+        "fragment": "dictionary MLWhereSupportLimits {\n  MLTensorLimits condition;\n  MLTensorLimits trueValue;\n  MLTensorLimits falseValue;\n  MLDataTypeLimits output;\n};",
         "type": "dictionary",
         "name": "MLWhereSupportLimits",
         "inheritance": null,
@@ -5515,7 +5639,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -5531,7 +5655,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -5547,7 +5671,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLTensorLimits"
             },
             "default": null,
             "required": false,
@@ -5563,7 +5687,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLSupportLimits"
+              "idlType": "MLDataTypeLimits"
             },
             "default": null,
             "required": false,
@@ -12892,7 +13016,7 @@
           "partial": true
         },
         {
-          "fragment": "partial dictionary MLOpSupportLimits {\n  MLQuantizationSupportLimits dequantizeLinear;\n};",
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLQuantizeDequantizeLinearSupportLimits dequantizeLinear;\n};",
           "type": "dictionary",
           "name": "MLOpSupportLimits",
           "inheritance": null,
@@ -12907,7 +13031,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "MLQuantizationSupportLimits"
+                "idlType": "MLQuantizeDequantizeLinearSupportLimits"
               },
               "default": null,
               "required": false,
@@ -12918,7 +13042,7 @@
           "partial": true
         },
         {
-          "fragment": "partial dictionary MLOpSupportLimits {\n  MLQuantizationSupportLimits quantizeLinear;\n};",
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLQuantizeDequantizeLinearSupportLimits quantizeLinear;\n};",
           "type": "dictionary",
           "name": "MLOpSupportLimits",
           "inheritance": null,
@@ -12933,7 +13057,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "MLQuantizationSupportLimits"
+                "idlType": "MLQuantizeDequantizeLinearSupportLimits"
               },
               "default": null,
               "required": false,
@@ -14185,14 +14309,14 @@
       ],
       "MLOpSupportLimits": [
         "MLInputOperandLayout",
-        "MLSupportLimits",
+        "MLDataTypeLimits",
         "MLSingleInputSupportLimits",
         "MLBatchNormalizationSupportLimits",
         "MLConcatSupportLimits",
         "MLConv2dSupportLimits",
         "MLBinarySupportLimits",
         "MLLogicalNotSupportLimits",
-        "MLQuantizationSupportLimits",
+        "MLQuantizeDequantizeLinearSupportLimits",
         "MLGatherSupportLimits",
         "MLGemmSupportLimits",
         "MLGruSupportLimits",
@@ -14205,14 +14329,21 @@
         "MLSplitSupportLimits",
         "MLWhereSupportLimits"
       ],
-      "MLSupportLimits": [
-        "MLOperandDataType"
+      "MLDataTypeLimits": [
+        "MLDataTypeList"
+      ],
+      "MLRankRange": [],
+      "MLTensorLimits": [
+        "MLDataTypeList",
+        "MLRankRange"
       ],
       "MLBinarySupportLimits": [
-        "MLSupportLimits"
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ],
       "MLSingleInputSupportLimits": [
-        "MLSupportLimits"
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ],
       "MLGraph": [],
       "MLOperandDescriptor": [
@@ -14276,14 +14407,16 @@
         "MLOperand"
       ],
       "MLBatchNormalizationSupportLimits": [
-        "MLSupportLimits"
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ],
       "MLClampOptions": [
         "MLOperatorOptions",
         "MLNumber"
       ],
       "MLConcatSupportLimits": [
-        "MLSupportLimits"
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ],
       "MLConv2dOptions": [
         "MLOperatorOptions",
@@ -14292,7 +14425,8 @@
         "MLOperand"
       ],
       "MLConv2dSupportLimits": [
-        "MLSupportLimits"
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ],
       "MLConvTranspose2dOptions": [
         "MLOperatorOptions",
@@ -14304,10 +14438,12 @@
         "MLOperatorOptions"
       ],
       "MLLogicalNotSupportLimits": [
-        "MLSupportLimits"
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ],
-      "MLQuantizationSupportLimits": [
-        "MLSupportLimits"
+      "MLQuantizeDequantizeLinearSupportLimits": [
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ],
       "MLEluOptions": [
         "MLOperatorOptions"
@@ -14316,14 +14452,16 @@
         "MLOperatorOptions"
       ],
       "MLGatherSupportLimits": [
-        "MLSupportLimits"
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ],
       "MLGemmOptions": [
         "MLOperatorOptions",
         "MLOperand"
       ],
       "MLGemmSupportLimits": [
-        "MLSupportLimits"
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ],
       "MLGruOptions": [
         "MLOperatorOptions",
@@ -14333,7 +14471,8 @@
         "MLRecurrentNetworkActivation"
       ],
       "MLGruSupportLimits": [
-        "MLSupportLimits"
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ],
       "MLGruCellOptions": [
         "MLOperatorOptions",
@@ -14342,7 +14481,8 @@
         "MLRecurrentNetworkActivation"
       ],
       "MLGruCellSupportLimits": [
-        "MLSupportLimits"
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ],
       "MLHardSigmoidOptions": [
         "MLOperatorOptions"
@@ -14353,7 +14493,8 @@
         "MLInputOperandLayout"
       ],
       "MLNormalizationSupportLimits": [
-        "MLSupportLimits"
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ],
       "MLLayerNormalizationOptions": [
         "MLOperatorOptions",
@@ -14373,7 +14514,8 @@
         "MLRecurrentNetworkActivation"
       ],
       "MLLstmSupportLimits": [
-        "MLSupportLimits"
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ],
       "MLLstmCellOptions": [
         "MLOperatorOptions",
@@ -14382,7 +14524,8 @@
         "MLRecurrentNetworkActivation"
       ],
       "MLLstmCellSupportLimits": [
-        "MLSupportLimits"
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ],
       "MLPadOptions": [
         "MLOperatorOptions",
@@ -14395,7 +14538,8 @@
         "MLRoundingType"
       ],
       "MLPreluSupportLimits": [
-        "MLSupportLimits"
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ],
       "MLReduceOptions": [
         "MLOperatorOptions"
@@ -14411,7 +14555,8 @@
         "MLOperatorOptions"
       ],
       "MLScatterSupportLimits": [
-        "MLSupportLimits"
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ],
       "MLSliceOptions": [
         "MLOperatorOptions"
@@ -14420,7 +14565,8 @@
         "MLOperatorOptions"
       ],
       "MLSplitSupportLimits": [
-        "MLSupportLimits"
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ],
       "MLTransposeOptions": [
         "MLOperatorOptions"
@@ -14429,7 +14575,8 @@
         "MLOperatorOptions"
       ],
       "MLWhereSupportLimits": [
-        "MLSupportLimits"
+        "MLTensorLimits",
+        "MLDataTypeLimits"
       ]
     },
     "externalDependencies": [

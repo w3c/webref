@@ -1,9 +1,10 @@
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 dictionary MLOpSupportLimits {
   MLInputOperandLayout preferredInputLayout;
-  MLSupportLimits input;
-  MLSupportLimits constant;
-  MLSupportLimits output;
+  [EnforceRange] unsigned long long maxTensorByteLength;
+  MLDataTypeLimits input;
+  MLDataTypeLimits constant;
+  MLDataTypeLimits output;
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -92,12 +93,12 @@ partial dictionary MLOpSupportLimits {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial dictionary MLOpSupportLimits {
-  MLQuantizationSupportLimits dequantizeLinear;
+  MLQuantizeDequantizeLinearSupportLimits dequantizeLinear;
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial dictionary MLOpSupportLimits {
-  MLQuantizationSupportLimits quantizeLinear;
+  MLQuantizeDequantizeLinearSupportLimits quantizeLinear;
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)

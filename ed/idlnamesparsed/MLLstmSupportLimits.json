@@ -6,7 +6,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLLstmSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits weight;\n  MLSupportLimits recurrentWeight;\n  MLSupportLimits bias;\n  MLSupportLimits recurrentBias;\n  MLSupportLimits peepholeWeight;\n  MLSupportLimits initialHiddenState;\n  MLSupportLimits initialCellState;\n  MLSupportLimits outputs;\n};",
+    "fragment": "dictionary MLLstmSupportLimits {\n  MLTensorLimits input;\n  MLTensorLimits weight;\n  MLTensorLimits recurrentWeight;\n  MLTensorLimits bias;\n  MLTensorLimits recurrentBias;\n  MLTensorLimits peepholeWeight;\n  MLTensorLimits initialHiddenState;\n  MLTensorLimits initialCellState;\n  MLDataTypeLimits outputs;\n};",
     "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllstmsupportlimits"
   },
   "extended": [],

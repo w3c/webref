@@ -6,7 +6,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLOpSupportLimits {\n  MLInputOperandLayout preferredInputLayout;\n  MLSupportLimits input;\n  MLSupportLimits constant;\n  MLSupportLimits output;\n};",
+    "fragment": "dictionary MLOpSupportLimits {\n  MLInputOperandLayout preferredInputLayout;\n  [EnforceRange] unsigned long long maxTensorByteLength;\n  MLDataTypeLimits input;\n  MLDataTypeLimits constant;\n  MLDataTypeLimits output;\n};",
     "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlopsupportlimits"
   },
   "extended": [
@@ -92,14 +92,14 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial dictionary MLOpSupportLimits {\n  MLQuantizationSupportLimits dequantizeLinear;\n};"
+      "fragment": "partial dictionary MLOpSupportLimits {\n  MLQuantizeDequantizeLinearSupportLimits dequantizeLinear;\n};"
     },
     {
       "spec": {
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial dictionary MLOpSupportLimits {\n  MLQuantizationSupportLimits quantizeLinear;\n};"
+      "fragment": "partial dictionary MLOpSupportLimits {\n  MLQuantizeDequantizeLinearSupportLimits quantizeLinear;\n};"
     },
     {
       "spec": {

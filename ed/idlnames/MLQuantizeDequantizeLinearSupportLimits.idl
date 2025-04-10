@@ -1,7 +1,7 @@
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
-dictionary MLScatterSupportLimits {
+dictionary MLQuantizeDequantizeLinearSupportLimits {
   MLTensorLimits input;
-  MLTensorLimits indices;
-  MLTensorLimits updates;
+  MLTensorLimits scale;
+  MLTensorLimits zeroPoint;
   MLDataTypeLimits output;
 };
