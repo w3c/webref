@@ -5,7 +5,6 @@
   },
   "links": {
     "rawlinks": {
-      "https://datatracker.ietf.org/doc/html/bcp14": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/clearWatch": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition": {},
@@ -35,6 +34,7 @@
       "https://github.com/w3c/geolocation/commit/2c0c516": {},
       "https://github.com/w3c/geolocation/commit/41d7945": {},
       "https://github.com/w3c/geolocation/commit/514f15b": {},
+      "https://github.com/w3c/geolocation/commit/69cc724": {},
       "https://github.com/w3c/geolocation/commit/7082b4e": {},
       "https://github.com/w3c/geolocation/commit/74b1dd0": {},
       "https://github.com/w3c/geolocation/commit/9d5829e": {},
@@ -55,6 +55,7 @@
       "https://github.com/w3c/geolocation/pull/157": {},
       "https://github.com/w3c/geolocation/pull/162": {},
       "https://github.com/w3c/geolocation/pull/173": {},
+      "https://github.com/w3c/geolocation/pull/183": {},
       "https://github.com/w3c/geolocation/pull/87": {},
       "https://github.com/w3c/geolocation/pull/90": {},
       "https://github.com/w3c/geolocation/pull/97": {},
@@ -64,15 +65,8 @@
           "assert"
         ]
       },
-      "https://webidl.spec.whatwg.org/": {
-        "anchors": [
-          "SameObject",
-          "Exposed",
-          "Clamp",
-          "SecureContext",
-          "Default"
-        ]
-      },
+      "https://webidl.spec.whatwg.org/": {},
+      "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/rfc/rfc2119": {},
       "https://www.rfc-editor.org/rfc/rfc8174": {},
       "https://www.w3.org/TR/": {},
@@ -108,7 +102,11 @@
       },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
-          "fully-active"
+          "fully-active",
+          "top-level-traversable",
+          "navigable",
+          "nav-top",
+          "node-navigable"
         ]
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -163,6 +161,8 @@
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
+          "SameObject",
+          "Exposed",
           "idl-undefined",
           "idl-long",
           "idl-unsigned-long",
@@ -171,6 +171,9 @@
           "idl-double",
           "idl-unsigned-short",
           "idl-boolean",
+          "Clamp",
+          "SecureContext",
+          "Default",
           "idl-object",
           "idl-DOMString"
         ]
