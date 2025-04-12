@@ -508,37 +508,37 @@
       "name": "<gap-rule-list>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-rule-list",
       "type": "type",
-      "value": "<gap-rule-or-repeat> [ / <gap-rule-or-repeat> ]*"
+      "value": "<gap-rule-or-repeat>#"
     },
     {
       "name": "<gap-auto-rule-list>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-auto-rule-list",
       "type": "type",
-      "value": "[ [ <gap-rule-or-repeat> ] / ]* <gap-auto-repeat-rule> [ / [ <gap-rule-or-repeat> ] ]*"
+      "value": "<gap-rule-or-repeat>#? , <gap-auto-repeat-rule> , <gap-rule-or-repeat>#?"
     },
     {
       "name": "<gap-rule-or-repeat>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-rule-or-repeat",
       "type": "type",
-      "value": "[ <gap-rule> | <gap-repeat-rule> ]"
+      "value": "<gap-rule> | <gap-repeat-rule>"
     },
     {
       "name": "<gap-repeat-rule>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-repeat-rule",
       "type": "type",
-      "value": "repeat( [ <integer [1,∞]> ] , [ <gap-rule> ]# )"
+      "value": "repeat( <integer [1,∞]> , <gap-rule># )"
     },
     {
       "name": "<gap-auto-repeat-rule>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-auto-repeat-rule",
       "type": "type",
-      "value": "repeat( auto , [ <gap-rule> ]# )"
+      "value": "repeat( auto , <gap-rule># )"
     },
     {
       "name": "<gap-rule>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-rule",
       "type": "type",
-      "value": "[ <line-width> || <line-style> || <color> ]"
+      "value": "<line-width> || <line-style> || <color>"
     }
   ]
 }
