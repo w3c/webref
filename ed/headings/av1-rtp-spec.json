@@ -5,10 +5,16 @@
   },
   "headings": [
     {
-      "id": "rtp-payload-format-for-av1-v10",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#rtp-payload-format-for-av1-v10",
+      "id": "title",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#title",
       "level": 1,
-      "title": "RTP Payload Format For AV1 (v1.0)"
+      "title": "RTP Payload Format For AV1"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#profile-and-date",
+      "level": 2,
+      "title": "AOM Working Group Approved Draft, 15 December 2024"
     },
     {
       "id": "abstract",
@@ -17,354 +23,334 @@
       "title": "Abstract"
     },
     {
-      "id": "contents",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#contents",
+      "id": "toc",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#toc",
       "level": 2,
-      "title": "Contents"
+      "title": "Table of Contents"
     },
     {
-      "id": "1-introduction",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#1-introduction",
+      "id": "introduction",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#introduction",
       "level": 2,
       "title": "Introduction",
       "number": "1"
     },
     {
-      "id": "2-conventions-definitions-and-acronyms",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#2-conventions-definitions-and-acronyms",
+      "id": "definitions",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#definitions",
       "level": 2,
       "title": "Conventions, Definitions and Acronyms",
       "number": "2"
     },
     {
-      "id": "3-media-format-description",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#3-media-format-description",
+      "id": "format-description",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#format-description",
       "level": 2,
       "title": "Media Format Description",
       "number": "3"
     },
     {
-      "id": "4-payload-format",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#4-payload-format",
+      "id": "payload-format",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#payload-format",
       "level": 2,
       "title": "Payload Format",
       "number": "4"
     },
     {
-      "id": "41-rtp-header-usage",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#41-rtp-header-usage",
+      "id": "rtp-header-usage",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#rtp-header-usage",
       "level": 3,
       "title": "RTP Header Usage",
       "number": "4.1"
     },
     {
-      "id": "42-rtp-header-marker-bit-m",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#42-rtp-header-marker-bit-m",
+      "id": "rtp-header-marker",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#rtp-header-marker",
       "level": 3,
       "title": "RTP Header Marker Bit (M)",
       "number": "4.2"
     },
     {
-      "id": "43-dependency-descriptor-rtp-header-extension",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#43-dependency-descriptor-rtp-header-extension",
+      "id": "dependency-descriptor",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#dependency-descriptor",
       "level": 3,
       "title": "Dependency Descriptor RTP Header Extension",
       "number": "4.3"
     },
     {
-      "id": "44-av1-aggregation-header",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#44-av1-aggregation-header",
+      "id": "aggregation-header",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#aggregation-header",
       "level": 3,
       "title": "AV1 Aggregation Header",
       "number": "4.4"
     },
     {
-      "id": "45-payload-structure",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#45-payload-structure",
+      "id": "rtp-payload",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#rtp-payload",
       "level": 3,
       "title": "Payload Structure",
       "number": "4.5"
     },
     {
-      "id": "5-packetization-rules",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#5-packetization-rules",
+      "id": "packetization",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#packetization",
       "level": 2,
       "title": "Packetization Rules",
       "number": "5"
     },
     {
-      "id": "51-examples",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#51-examples",
+      "id": "packetization-examples",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#packetization-examples",
       "level": 3,
       "title": "Examples",
       "number": "5.1"
     },
     {
-      "id": "6-mane-and-sfm-behavior",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#6-mane-and-sfm-behavior",
+      "id": "mane",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#mane",
       "level": 2,
       "title": "MANE and SFM Behavior",
       "number": "6"
     },
     {
-      "id": "61-simulcast",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#61-simulcast",
+      "id": "simulcast",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#simulcast",
       "level": 3,
       "title": "Simulcast",
       "number": "6.1"
     },
     {
-      "id": "611-example",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#611-example",
-      "level": 3,
+      "id": "simulcast-example",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#simulcast-example",
+      "level": 4,
       "title": "Example",
       "number": "6.1.1"
     },
     {
-      "id": "62-constraints-for-scalable-video-bitstreams",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#62-constraints-for-scalable-video-bitstreams",
+      "id": "scalable-constraints",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#scalable-constraints",
       "level": 3,
       "title": "Constraints For Scalable Video Bitstreams",
       "number": "6.2"
     },
     {
-      "id": "7-payload-format-parameters",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#7-payload-format-parameters",
+      "id": "payload-params",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#payload-params",
       "level": 2,
       "title": "Payload Format Parameters",
       "number": "7"
     },
     {
-      "id": "71-media-type-definition",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#71-media-type-definition",
+      "id": "media-type",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#media-type",
       "level": 3,
       "title": "Media Type Definition",
       "number": "7.1"
     },
     {
-      "id": "72-sdp-parameters",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#72-sdp-parameters",
+      "id": "sdp-parameters",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#sdp-parameters",
       "level": 3,
       "title": "SDP Parameters",
       "number": "7.2"
     },
     {
-      "id": "721-mapping-of-media-subtype-parameters-to-sdp",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#721-mapping-of-media-subtype-parameters-to-sdp",
+      "id": "sdp-mapping-media-subtype",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#sdp-mapping-media-subtype",
       "level": 4,
       "title": "Mapping of Media Subtype Parameters to SDP",
       "number": "7.2.1"
     },
     {
-      "id": "722-rid-restrictions-mapping-for-av1",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#722-rid-restrictions-mapping-for-av1",
-      "level": 3,
+      "id": "rid",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#rid",
+      "level": 4,
       "title": "RID Restrictions Mapping for AV1",
       "number": "7.2.2"
     },
     {
-      "id": "723-usage-with-the-sdp-offeranswer-model",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#723-usage-with-the-sdp-offeranswer-model",
+      "id": "sdp-offer-answer",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#sdp-offer-answer",
       "level": 4,
       "title": "Usage with the SDP Offer/Answer Model",
       "number": "7.2.3"
     },
     {
-      "id": "724-usage-in-declarative-session-descriptions",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#724-usage-in-declarative-session-descriptions",
+      "id": "declarative-session",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#declarative-session",
       "level": 4,
       "title": "Usage in Declarative Session Descriptions",
       "number": "7.2.4"
     },
     {
-      "id": "73-examples",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#73-examples",
+      "id": "parameter-examples",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#parameter-examples",
       "level": 3,
       "title": "Examples",
       "number": "7.3"
     },
     {
-      "id": "731-level-upgrading",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#731-level-upgrading",
+      "id": "sdp-level-upgrading",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#sdp-level-upgrading",
       "level": 4,
       "title": "Level upgrading",
       "number": "7.3.1"
     },
     {
-      "id": "732-simulcast-with-payload-multiplexing",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#732-simulcast-with-payload-multiplexing",
+      "id": "sdp-simulcast-payload-mux",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#sdp-simulcast-payload-mux",
       "level": 4,
       "title": "Simulcast with Payload Multiplexing",
       "number": "7.3.2"
     },
     {
-      "id": "733-simulcast-with-ssrc-multiplexing",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#733-simulcast-with-ssrc-multiplexing",
+      "id": "sdp-simulcast-ssrc",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#sdp-simulcast-ssrc",
       "level": 4,
       "title": "Simulcast with SSRC Multiplexing",
       "number": "7.3.3"
     },
     {
-      "id": "734-single-stream-simulcast",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#734-single-stream-simulcast",
+      "id": "sdp-single-stream-simulcast",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#sdp-single-stream-simulcast",
       "level": 4,
       "title": "Single Stream Simulcast",
       "number": "7.3.4"
     },
     {
-      "id": "8-feedback-messages",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#8-feedback-messages",
+      "id": "feedback",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#feedback",
       "level": 2,
       "title": "Feedback Messages",
       "number": "8"
     },
     {
-      "id": "81-full-intra-request-fir",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#81-full-intra-request-fir",
-      "level": 2,
+      "id": "fir",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#fir",
+      "level": 3,
       "title": "Full Intra Request (FIR)",
       "number": "8.1"
     },
     {
-      "id": "82-layer-refresh-request-lrr",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#82-layer-refresh-request-lrr",
-      "level": 2,
+      "id": "lrr",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#lrr",
+      "level": 3,
       "title": "Layer Refresh Request (LRR)",
       "number": "8.2"
     },
     {
-      "id": "9-iana-considerations",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#9-iana-considerations",
+      "id": "iana",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#iana",
       "level": 2,
       "title": "IANA Considerations",
       "number": "9"
     },
     {
-      "id": "10-security-considerations",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#10-security-considerations",
+      "id": "security",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#security",
       "level": 2,
-      "title": "10 Security Considerations"
+      "title": "10. Security Considerations"
     },
     {
-      "id": "11-references",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#11-references",
+      "id": "acknowledgements",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#acknowledgements",
       "level": 2,
-      "title": "11 References"
-    },
-    {
-      "id": "111-normative-references",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#111-normative-references",
-      "level": 3,
-      "title": "Normative References",
-      "number": "11.1"
-    },
-    {
-      "id": "112-informative-references",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#112-informative-references",
-      "level": 3,
-      "title": "Informative References",
-      "number": "11.2"
-    },
-    {
-      "id": "appendix",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#appendix",
-      "level": 2,
-      "title": "Appendix"
+      "title": "11. Acknowledgements"
     },
     {
       "id": "dependency-descriptor-rtp-header-extension",
       "href": "https://aomediacodec.github.io/av1-rtp-spec/#dependency-descriptor-rtp-header-extension",
-      "level": 3,
-      "title": "Dependency Descriptor RTP Header Extension"
+      "level": 2,
+      "title": "Appendix A - Dependency Descriptor RTP Header Extension"
     },
     {
-      "id": "a1-introduction",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a1-introduction",
-      "level": 4,
+      "id": "a1-intro",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a1-intro",
+      "level": 3,
       "title": "Introduction",
       "number": "A.1"
     },
     {
-      "id": "a2-conventions-definitions-and-acronyms",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a2-conventions-definitions-and-acronyms",
-      "level": 4,
+      "id": "a2-definitions",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a2-definitions",
+      "level": 3,
       "title": "Conventions, Definitions and Acronyms",
       "number": "A.2"
     },
     {
-      "id": "a3-media-stream-requirements",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a3-media-stream-requirements",
-      "level": 4,
+      "id": "a3-requirements",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a3-requirements",
+      "level": 3,
       "title": "Media Stream Requirements",
       "number": "A.3"
     },
     {
-      "id": "a4-active-decode-targets",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a4-active-decode-targets",
-      "level": 4,
+      "id": "a4-decode-targets",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a4-decode-targets",
+      "level": 3,
       "title": "Active Decode Targets",
       "number": "A.4"
     },
     {
       "id": "a5-chains",
       "href": "https://aomediacodec.github.io/av1-rtp-spec/#a5-chains",
-      "level": 4,
+      "level": 3,
       "title": "Chains",
       "number": "A.5"
     },
     {
-      "id": "a6-usage-of-chains-after-packet-loss",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a6-usage-of-chains-after-packet-loss",
-      "level": 4,
+      "id": "a6-chains",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a6-chains",
+      "level": 3,
       "title": "Usage of Chains After Packet Loss",
       "number": "A.6"
     },
     {
       "id": "a7-switching",
       "href": "https://aomediacodec.github.io/av1-rtp-spec/#a7-switching",
-      "level": 4,
+      "level": 3,
       "title": "Switching",
       "number": "A.7"
     },
     {
-      "id": "a8-dependency-descriptor-format",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a8-dependency-descriptor-format",
-      "level": 4,
+      "id": "a8-dependency",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a8-dependency",
+      "level": 3,
       "title": "Dependency Descriptor Format",
       "number": "A.8"
     },
     {
       "id": "a81-templates",
       "href": "https://aomediacodec.github.io/av1-rtp-spec/#a81-templates",
-      "level": 5,
+      "level": 4,
       "title": "Templates",
       "number": "A.8.1"
     },
     {
       "id": "a82-syntax",
       "href": "https://aomediacodec.github.io/av1-rtp-spec/#a82-syntax",
-      "level": 5,
+      "level": 4,
       "title": "Syntax",
       "number": "A.8.2"
     },
     {
       "id": "a83-semantics",
       "href": "https://aomediacodec.github.io/av1-rtp-spec/#a83-semantics",
-      "level": 5,
+      "level": 4,
       "title": "Semantics",
       "number": "A.8.3"
     },
     {
-      "id": "a9-signaling-sdp-information",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a9-signaling-sdp-information",
-      "level": 4,
+      "id": "a9-sdp",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a9-sdp",
+      "level": 3,
       "title": "Signaling (SDP) Information",
       "number": "A.9"
     },
     {
       "id": "a10-examples",
       "href": "https://aomediacodec.github.io/av1-rtp-spec/#a10-examples",
-      "level": 4,
+      "level": 3,
       "title": "Examples",
       "number": "A.10"
     },
@@ -376,74 +362,71 @@
       "number": "A.10.1"
     },
     {
-      "id": "a1011-decode-targets-decode-target-indications-and-chains",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a1011-decode-targets-decode-target-indications-and-chains",
+      "id": "a1011",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a1011",
       "level": 5,
       "title": "Decode targets, Decode Target Indications, and Chains",
       "number": "A.10.1.1"
     },
     {
-      "id": "a1012-spatial-upswitch",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a1012-spatial-upswitch",
+      "id": "a1012",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a1012",
       "level": 5,
       "title": "Spatial Upswitch",
       "number": "A.10.1.2"
     },
     {
-      "id": "a1013-dynamic-prediction-structure",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a1013-dynamic-prediction-structure",
+      "id": "a1013",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a1013",
       "level": 5,
       "title": "Dynamic Prediction Structure",
       "number": "A.10.1.3"
     },
     {
-      "id": "a102-scalability-structure-examples",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a102-scalability-structure-examples",
+      "id": "a102",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a102",
       "level": 4,
       "title": "Scalability structure examples",
       "number": "A.10.2"
     },
     {
-      "id": "a1021-l1t3-single-spatial-layer-with-3-temporal-layers",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a1021-l1t3-single-spatial-layer-with-3-temporal-layers",
+      "id": "a1021",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a1021",
       "level": 5,
       "title": "L1T3 Single Spatial Layer with 3 Temporal Layers",
       "number": "A.10.2.1"
     },
     {
-      "id": "a1022-l3t3-full-svc",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a1022-l3t3-full-svc",
+      "id": "a1022",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a1022",
       "level": 5,
       "title": "L3T3 Full SVC",
       "number": "A.10.2.2"
     },
     {
-      "id": "a1023-l3t3-k-svc-with-temporal-shift",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a1023-l3t3-k-svc-with-temporal-shift",
+      "id": "a1023",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a1023",
       "level": 5,
       "title": "L3T3 K-SVC with Temporal Shift",
       "number": "A.10.2.3"
     },
     {
-      "id": "a11-references",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a11-references",
-      "level": 4,
-      "title": "References",
-      "number": "A.11"
+      "id": "references",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#references",
+      "level": 2,
+      "title": "References"
     },
     {
-      "id": "a111-normative-references",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a111-normative-references",
-      "level": 5,
-      "title": "Normative References",
-      "number": "A.11.1"
+      "id": "normative",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#normative",
+      "level": 3,
+      "title": "Normative References"
     },
     {
-      "id": "a112-informative-references",
-      "href": "https://aomediacodec.github.io/av1-rtp-spec/#a112-informative-references",
-      "level": 5,
-      "title": "Informative References",
-      "number": "A.11.2"
+      "id": "informative",
+      "href": "https://aomediacodec.github.io/av1-rtp-spec/#informative",
+      "level": 3,
+      "title": "Informative References"
     }
   ]
 }
