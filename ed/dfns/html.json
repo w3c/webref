@@ -41933,6 +41933,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "attr-template-shadowrootcustomelementregistry",
+      "href": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootcustomelementregistry",
+      "linkingText": [
+        "shadowrootcustomelementregistry"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "template"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-template-element",
+        "href": "https://html.spec.whatwg.org/multipage/scripting.html#the-template-element",
+        "title": "The template element",
+        "number": "4.12.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "template-contents",
       "href": "https://html.spec.whatwg.org/multipage/scripting.html#template-contents",
       "linkingText": [
@@ -42078,6 +42099,27 @@
       "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-template-shadowrootserializable",
       "linkingText": [
         "shadowRootSerializable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLTemplateElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-template-element",
+        "href": "https://html.spec.whatwg.org/multipage/scripting.html#the-template-element",
+        "title": "The template element",
+        "number": "4.12.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-template-shadowrootcustomelementregistry",
+      "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-template-shadowrootcustomelementregistry",
+      "linkingText": [
+        "shadowRootCustomElementRegistry"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -49283,7 +49325,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "custom-elements-core-concepts",
@@ -49511,15 +49553,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "global-custom-element-registry",
-      "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#global-custom-element-registry",
+      "id": "active-custom-element-constructor-map",
+      "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#active-custom-element-constructor-map",
       "linkingText": [
-        "custom element registry"
+        "active custom element constructor map"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "similar-origin window agent"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "custom-elements-api",
@@ -49629,6 +49673,48 @@
       "definedIn": "pre"
     },
     {
+      "id": "is-scoped",
+      "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#is-scoped",
+      "linkingText": [
+        "is scoped"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CustomElementRegistry"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "custom-elements-api",
+        "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
+        "title": "The CustomElementRegistry interface",
+        "number": "4.13.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scoped-document-set",
+      "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#scoped-document-set",
+      "linkingText": [
+        "scoped document set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CustomElementRegistry"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "custom-elements-api",
+        "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
+        "title": "The CustomElementRegistry interface",
+        "number": "4.13.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "custom-element-definition-set",
       "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-element-definition-set",
       "linkingText": [
@@ -49686,6 +49772,44 @@
       "definedIn": "prose"
     },
     {
+      "id": "look-up-a-custom-element-registry",
+      "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#look-up-a-custom-element-registry",
+      "linkingText": [
+        "look up a custom element registry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "custom-elements-api",
+        "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
+        "title": "The CustomElementRegistry interface",
+        "number": "4.13.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-customelementregistry",
+      "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry",
+      "linkingText": [
+        "new CustomElementRegistry()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "custom-elements-api",
+        "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
+        "title": "The CustomElementRegistry interface",
+        "number": "4.13.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "element-definition",
       "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#element-definition",
       "linkingText": [
@@ -49716,6 +49840,25 @@
         "CustomElementRegistry"
       ],
       "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "custom-elements-api",
+        "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
+        "title": "The CustomElementRegistry interface",
+        "number": "4.13.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "upgrade-particular-elements-within-a-document",
+      "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#upgrade-particular-elements-within-a-document",
+      "linkingText": [
+        "upgrade particular elements within a document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "custom-elements-api",
@@ -49793,6 +49936,27 @@
       "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry-upgrade",
       "linkingText": [
         "upgrade(root)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CustomElementRegistry"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "custom-elements-api",
+        "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
+        "title": "The CustomElementRegistry interface",
+        "number": "4.13.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-customelementregistry-initialize",
+      "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry-initialize",
+      "linkingText": [
+        "initialize(root)"
       ],
       "localLinkingText": [],
       "type": "method",
