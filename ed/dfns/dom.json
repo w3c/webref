@@ -4540,6 +4540,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-documentorshadowroot-customelementregistry",
+      "href": "https://dom.spec.whatwg.org/#dom-documentorshadowroot-customelementregistry",
+      "linkingText": [
+        "customElementRegistry"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DocumentOrShadowRoot"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-documentorshadowroot",
+        "href": "https://dom.spec.whatwg.org/#mixin-documentorshadowroot",
+        "title": "Mixin DocumentOrShadowRoot",
+        "number": "4.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "converting-nodes-into-a-node",
       "href": "https://dom.spec.whatwg.org/#converting-nodes-into-a-node",
       "linkingText": [
@@ -7614,6 +7635,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "clone-a-node-fallbackregistry",
+      "href": "https://dom.spec.whatwg.org/#clone-a-node-fallbackregistry",
+      "linkingText": [
+        "fallbackRegistry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "clone a node"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-node",
+        "href": "https://dom.spec.whatwg.org/#interface-node",
+        "title": "Interface Node",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "clone-a-single-node",
       "href": "https://dom.spec.whatwg.org/#clone-a-single-node",
       "linkingText": [
@@ -8447,15 +8489,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-document-importnode-node-subtree-node",
-      "href": "https://dom.spec.whatwg.org/#dom-document-importnode-node-subtree-node",
+      "id": "dom-document-importnode-node-options-node",
+      "href": "https://dom.spec.whatwg.org/#dom-document-importnode-node-options-node",
       "linkingText": [
         "node"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "Document/importNode(node, subtree)",
+        "Document/importNode(node, options)",
         "Document/importNode(node)"
       ],
       "access": "public",
@@ -8469,15 +8511,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-document-importnode-node-subtree-subtree",
-      "href": "https://dom.spec.whatwg.org/#dom-document-importnode-node-subtree-subtree",
+      "id": "dom-document-importnode-node-options-options",
+      "href": "https://dom.spec.whatwg.org/#dom-document-importnode-node-options-options",
       "linkingText": [
-        "subtree"
+        "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "Document/importNode(node, subtree)",
+        "Document/importNode(node, options)",
         "Document/importNode(node)"
       ],
       "access": "public",
@@ -8772,6 +8814,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-elementcreationoptions-customelementregistry",
+      "href": "https://dom.spec.whatwg.org/#dom-elementcreationoptions-customelementregistry",
+      "linkingText": [
+        "customElementRegistry"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ElementCreationOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-document",
+        "href": "https://dom.spec.whatwg.org/#interface-document",
+        "title": "Interface Document",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-elementcreationoptions-is",
       "href": "https://dom.spec.whatwg.org/#dom-elementcreationoptions-is",
       "linkingText": [
@@ -8781,6 +8844,67 @@
       "type": "dict-member",
       "for": [
         "ElementCreationOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-document",
+        "href": "https://dom.spec.whatwg.org/#interface-document",
+        "title": "Interface Document",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-importnodeoptions",
+      "href": "https://dom.spec.whatwg.org/#dictdef-importnodeoptions",
+      "linkingText": [
+        "ImportNodeOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-document",
+        "href": "https://dom.spec.whatwg.org/#interface-document",
+        "title": "Interface Document",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-importnodeoptions-customelementregistry",
+      "href": "https://dom.spec.whatwg.org/#dom-importnodeoptions-customelementregistry",
+      "linkingText": [
+        "customElementRegistry"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImportNodeOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-document",
+        "href": "https://dom.spec.whatwg.org/#interface-document",
+        "title": "Interface Document",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-importnodeoptions-selfonly",
+      "href": "https://dom.spec.whatwg.org/#dom-importnodeoptions-selfonly",
+      "linkingText": [
+        "selfOnly"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImportNodeOptions"
       ],
       "access": "public",
       "informative": false,
@@ -8942,6 +9066,27 @@
       "href": "https://dom.spec.whatwg.org/#document-allow-declarative-shadow-roots",
       "linkingText": [
         "allow declarative shadow roots"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-document",
+        "href": "https://dom.spec.whatwg.org/#interface-document",
+        "title": "Interface Document",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "document-custom-element-registry",
+      "href": "https://dom.spec.whatwg.org/#document-custom-element-registry",
+      "linkingText": [
+        "custom element registry"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -9431,6 +9576,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "flatten-element-creation-options",
+      "href": "https://dom.spec.whatwg.org/#flatten-element-creation-options",
+      "linkingText": [
+        "flatten element creation options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-document",
+        "href": "https://dom.spec.whatwg.org/#interface-document",
+        "title": "Interface Document",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-document-createdocumentfragment",
       "href": "https://dom.spec.whatwg.org/#dom-document-createdocumentfragment",
       "linkingText": [
@@ -9539,7 +9703,7 @@
       "id": "dom-document-importnode",
       "href": "https://dom.spec.whatwg.org/#dom-document-importnode",
       "linkingText": [
-        "importNode(node, subtree)",
+        "importNode(node, options)",
         "importNode(node)"
       ],
       "localLinkingText": [],
@@ -10538,6 +10702,48 @@
       "href": "https://dom.spec.whatwg.org/#shadowroot-serializable",
       "linkingText": [
         "serializable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ShadowRoot"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-shadowroot",
+        "href": "https://dom.spec.whatwg.org/#interface-shadowroot",
+        "title": "Interface ShadowRoot",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shadowroot-custom-element-registry",
+      "href": "https://dom.spec.whatwg.org/#shadowroot-custom-element-registry",
+      "linkingText": [
+        "custom element registry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ShadowRoot"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-shadowroot",
+        "href": "https://dom.spec.whatwg.org/#interface-shadowroot",
+        "title": "Interface ShadowRoot",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shadowroot-keep-custom-element-registry-null",
+      "href": "https://dom.spec.whatwg.org/#shadowroot-keep-custom-element-registry-null",
+      "linkingText": [
+        "keep custom element registry null"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -11754,6 +11960,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-shadowrootinit-customelementregistry",
+      "href": "https://dom.spec.whatwg.org/#dom-shadowrootinit-customelementregistry",
+      "linkingText": [
+        "customElementRegistry"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ShadowRootInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-element",
+        "href": "https://dom.spec.whatwg.org/#interface-element",
+        "title": "Interface Element",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "concept-element",
       "href": "https://dom.spec.whatwg.org/#concept-element",
       "linkingText": [
@@ -11791,7 +12018,7 @@
         "title": "Interface Element",
         "number": "4.9"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "concept-element-namespace-prefix",
@@ -11812,7 +12039,7 @@
         "title": "Interface Element",
         "number": "4.9"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "concept-element-local-name",
@@ -11833,7 +12060,28 @@
         "title": "Interface Element",
         "number": "4.9"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
+    },
+    {
+      "id": "element-custom-element-registry",
+      "href": "https://dom.spec.whatwg.org/#element-custom-element-registry",
+      "linkingText": [
+        "custom element registry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-element",
+        "href": "https://dom.spec.whatwg.org/#interface-element",
+        "title": "Interface Element",
+        "number": "4.9"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "concept-element-custom-element-state",
@@ -11854,7 +12102,7 @@
         "title": "Interface Element",
         "number": "4.9"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "concept-element-custom-element-definition",
@@ -11875,7 +12123,7 @@
         "title": "Interface Element",
         "number": "4.9"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "concept-element-is-value",
@@ -11896,7 +12144,7 @@
         "title": "Interface Element",
         "number": "4.9"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "concept-element-defined",
@@ -12034,6 +12282,25 @@
       "type": "dfn",
       "for": [],
       "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-element",
+        "href": "https://dom.spec.whatwg.org/#interface-element",
+        "title": "Interface Element",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-an-element-internal",
+      "href": "https://dom.spec.whatwg.org/#create-an-element-internal",
+      "linkingText": [
+        "create an element internal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "interface-element",
@@ -13002,6 +13269,27 @@
       "href": "https://dom.spec.whatwg.org/#dom-element-shadowroot",
       "linkingText": [
         "shadowRoot"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-element",
+        "href": "https://dom.spec.whatwg.org/#interface-element",
+        "title": "Interface Element",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-element-customelementregistry",
+      "href": "https://dom.spec.whatwg.org/#dom-element-customelementregistry",
+      "linkingText": [
+        "customElementRegistry"
       ],
       "localLinkingText": [],
       "type": "attribute",
