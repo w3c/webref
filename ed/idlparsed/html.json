@@ -76,6 +76,7 @@
           "ImageData",
           "Path2D",
           "OffscreenCanvas",
+          "CustomElementRegistry",
           "ToggleEvent",
           "CommandEvent",
           "CloseWatcher",
@@ -154,7 +155,6 @@
           "TextMetrics",
           "ImageBitmapRenderingContext",
           "OffscreenCanvasRenderingContext2D",
-          "CustomElementRegistry",
           "ElementInternals",
           "CustomStateSet",
           "VisibilityStateEntry",
@@ -15980,7 +15980,7 @@
         "href": "https://html.spec.whatwg.org/multipage/scripting.html#htmlscriptelement"
       },
       "HTMLTemplateElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLTemplateElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  readonly attribute DocumentFragment content;\n  [CEReactions] attribute DOMString shadowRootMode;\n  [CEReactions] attribute boolean shadowRootDelegatesFocus;\n  [CEReactions] attribute boolean shadowRootClonable;\n  [CEReactions] attribute boolean shadowRootSerializable;\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLTemplateElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  readonly attribute DocumentFragment content;\n  [CEReactions] attribute DOMString shadowRootMode;\n  [CEReactions] attribute boolean shadowRootDelegatesFocus;\n  [CEReactions] attribute boolean shadowRootClonable;\n  [CEReactions] attribute boolean shadowRootSerializable;\n  [CEReactions] attribute DOMString shadowRootCustomElementRegistry;\n};",
         "type": "interface",
         "name": "HTMLTemplateElement",
         "inheritance": "HTMLElement",
@@ -16104,6 +16104,29 @@
             "special": "",
             "readonly": false,
             "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-template-shadowrootserializable"
+          },
+          {
+            "type": "attribute",
+            "name": "shadowRootCustomElementRegistry",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false,
+            "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-template-shadowrootcustomelementregistry"
           }
         ],
         "extAttrs": [
@@ -23001,11 +23024,16 @@
         "href": "https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvasrenderingcontext2d"
       },
       "CustomElementRegistry": {
-        "fragment": "[Exposed=Window]\ninterface CustomElementRegistry {\n  [CEReactions] undefined define(DOMString name, CustomElementConstructor constructor, optional ElementDefinitionOptions options = {});\n  (CustomElementConstructor or undefined) get(DOMString name);\n  DOMString? getName(CustomElementConstructor constructor);\n  Promise<CustomElementConstructor> whenDefined(DOMString name);\n  [CEReactions] undefined upgrade(Node root);\n};",
+        "fragment": "[Exposed=Window]\ninterface CustomElementRegistry {\n  constructor();\n\n  [CEReactions] undefined define(DOMString name, CustomElementConstructor constructor, optional ElementDefinitionOptions options = {});\n  (CustomElementConstructor or undefined) get(DOMString name);\n  DOMString? getName(CustomElementConstructor constructor);\n  Promise<CustomElementConstructor> whenDefined(DOMString name);\n  [CEReactions] undefined upgrade(Node root);\n  undefined initialize(Node root);\n};",
         "type": "interface",
         "name": "CustomElementRegistry",
         "inheritance": null,
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": []
+          },
           {
             "type": "operation",
             "name": "define",
@@ -23244,6 +23272,39 @@
             ],
             "special": "",
             "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry-upgrade"
+          },
+          {
+            "type": "operation",
+            "name": "initialize",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "root",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Node"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry-initialize"
           }
         ],
         "extAttrs": [

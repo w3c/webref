@@ -10,6 +10,8 @@
           "SpeechRecognition",
           "SpeechRecognitionErrorEvent",
           "SpeechRecognitionEvent",
+          "SpeechRecognitionPhrase",
+          "SpeechRecognitionPhraseList",
           "SpeechSynthesisUtterance",
           "SpeechSynthesisEvent",
           "SpeechSynthesisErrorEvent"
@@ -27,7 +29,7 @@
     },
     "idlNames": {
       "SpeechRecognition": {
-        "fragment": "[Exposed=Window]\ninterface SpeechRecognition : EventTarget {\n    constructor();\n\n    // recognition parameters\n    attribute DOMString lang;\n    attribute boolean continuous;\n    attribute boolean interimResults;\n    attribute unsigned long maxAlternatives;\n    attribute SpeechRecognitionMode mode;\n\n    // methods to drive the speech interaction\n    undefined start();\n    undefined start(MediaStreamTrack audioTrack);\n    undefined stop();\n    undefined abort();\n    static Promise<AvailabilityStatus> availableOnDevice(DOMString lang);\n    static Promise<boolean> installOnDevice(DOMString lang);\n\n    // event methods\n    attribute EventHandler onaudiostart;\n    attribute EventHandler onsoundstart;\n    attribute EventHandler onspeechstart;\n    attribute EventHandler onspeechend;\n    attribute EventHandler onsoundend;\n    attribute EventHandler onaudioend;\n    attribute EventHandler onresult;\n    attribute EventHandler onnomatch;\n    attribute EventHandler onerror;\n    attribute EventHandler onstart;\n    attribute EventHandler onend;\n};",
+        "fragment": "[Exposed=Window]\ninterface SpeechRecognition : EventTarget {\n    constructor();\n\n    // recognition parameters\n    attribute DOMString lang;\n    attribute boolean continuous;\n    attribute boolean interimResults;\n    attribute unsigned long maxAlternatives;\n    attribute SpeechRecognitionMode mode;\n    attribute SpeechRecognitionPhraseList phrases;\n\n    // methods to drive the speech interaction\n    undefined start();\n    undefined start(MediaStreamTrack audioTrack);\n    undefined stop();\n    undefined abort();\n    static Promise<AvailabilityStatus> availableOnDevice(DOMString lang);\n    static Promise<boolean> installOnDevice(DOMString lang);\n\n    // event methods\n    attribute EventHandler onaudiostart;\n    attribute EventHandler onsoundstart;\n    attribute EventHandler onspeechstart;\n    attribute EventHandler onspeechend;\n    attribute EventHandler onsoundend;\n    attribute EventHandler onaudioend;\n    attribute EventHandler onresult;\n    attribute EventHandler onnomatch;\n    attribute EventHandler onerror;\n    attribute EventHandler onstart;\n    attribute EventHandler onend;\n};",
         "type": "interface",
         "name": "SpeechRecognition",
         "inheritance": "EventTarget",
@@ -117,6 +119,22 @@
             "special": "",
             "readonly": false,
             "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-mode"
+          },
+          {
+            "type": "attribute",
+            "name": "phrases",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SpeechRecognitionPhraseList"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-phrases"
           },
           {
             "type": "operation",
@@ -475,7 +493,7 @@
         "href": "https://webaudio.github.io/web-speech-api/#speechrecognition"
       },
       "SpeechRecognitionErrorCode": {
-        "fragment": "enum SpeechRecognitionErrorCode {\n    \"no-speech\",\n    \"aborted\",\n    \"audio-capture\",\n    \"network\",\n    \"not-allowed\",\n    \"service-not-allowed\",\n    \"language-not-supported\"\n};",
+        "fragment": "enum SpeechRecognitionErrorCode {\n    \"no-speech\",\n    \"aborted\",\n    \"audio-capture\",\n    \"network\",\n    \"not-allowed\",\n    \"service-not-allowed\",\n    \"language-not-supported\",\n    \"phrases-not-supported\"\n};",
         "type": "enum",
         "name": "SpeechRecognitionErrorCode",
         "values": [
@@ -513,6 +531,11 @@
             "type": "enum-value",
             "value": "language-not-supported",
             "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionerrorcode-language-not-supported"
+          },
+          {
+            "type": "enum-value",
+            "value": "phrases-not-supported",
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionerrorcode-phrases-not-supported"
           }
         ],
         "extAttrs": [],
@@ -1053,6 +1076,269 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://webaudio.github.io/web-speech-api/#dictdef-speechrecognitioneventinit"
+      },
+      "SpeechRecognitionPhrase": {
+        "fragment": "// The object representing a phrase for contextual biasing.\n[Exposed=Window]\ninterface SpeechRecognitionPhrase {\n    constructor(DOMString phrase, optional float boost = 1.0);\n    readonly attribute DOMString phrase;\n    readonly attribute float boost;\n};",
+        "type": "interface",
+        "name": "SpeechRecognitionPhrase",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "phrase",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "boost",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "float"
+                },
+                "default": {
+                  "type": "number",
+                  "value": "1.0"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphrase-speechrecognitionphrase"
+          },
+          {
+            "type": "attribute",
+            "name": "phrase",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphrase-phrase"
+          },
+          {
+            "type": "attribute",
+            "name": "boost",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphrase-boost"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://webaudio.github.io/web-speech-api/#speechrecognitionphrase"
+      },
+      "SpeechRecognitionPhraseList": {
+        "fragment": "// The object representing a list of phrases for contextual biasing.\n[Exposed=Window]\ninterface SpeechRecognitionPhraseList {\n    constructor(sequence<SpeechRecognitionPhrase> phrases);\n    readonly attribute unsigned long length;\n    SpeechRecognitionPhrase item(unsigned long index);\n    undefined addItem(SpeechRecognitionPhrase item);\n    undefined removeItem(unsigned long index);\n};",
+        "type": "interface",
+        "name": "SpeechRecognitionPhraseList",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "phrases",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "SpeechRecognitionPhrase"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphraselist-speechrecognitionphraselist"
+          },
+          {
+            "type": "attribute",
+            "name": "length",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphraselist-length"
+          },
+          {
+            "type": "operation",
+            "name": "item",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SpeechRecognitionPhrase"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "index",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphraselist-item"
+          },
+          {
+            "type": "operation",
+            "name": "addItem",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "item",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SpeechRecognitionPhrase"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphraselist-additem"
+          },
+          {
+            "type": "operation",
+            "name": "removeItem",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "index",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphraselist-removeitem"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://webaudio.github.io/web-speech-api/#speechrecognitionphraselist"
       },
       "SpeechSynthesis": {
         "fragment": "[Exposed=Window]\ninterface SpeechSynthesis : EventTarget {\n    readonly attribute boolean pending;\n    readonly attribute boolean speaking;\n    readonly attribute boolean paused;\n\n    attribute EventHandler onvoiceschanged;\n\n    undefined speak(SpeechSynthesisUtterance utterance);\n    undefined cancel();\n    undefined pause();\n    undefined resume();\n    sequence<SpeechSynthesisVoice> getVoices();\n};",
@@ -2060,6 +2346,8 @@
         "SpeechRecognitionResult",
         "SpeechRecognitionResultList",
         "SpeechRecognitionEvent",
+        "SpeechRecognitionPhrase",
+        "SpeechRecognitionPhraseList",
         "SpeechSynthesis",
         "SpeechSynthesisUtterance",
         "SpeechSynthesisEvent",
@@ -2071,6 +2359,7 @@
       "SpeechRecognition": [
         "EventTarget",
         "SpeechRecognitionMode",
+        "SpeechRecognitionPhraseList",
         "MediaStreamTrack",
         "AvailabilityStatus",
         "EventHandler"
@@ -2099,6 +2388,10 @@
       "SpeechRecognitionEventInit": [
         "EventInit",
         "SpeechRecognitionResultList"
+      ],
+      "SpeechRecognitionPhrase": [],
+      "SpeechRecognitionPhraseList": [
+        "SpeechRecognitionPhrase"
       ],
       "SpeechSynthesis": [
         "EventTarget",

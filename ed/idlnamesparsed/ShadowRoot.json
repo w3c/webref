@@ -6,7 +6,7 @@
       "title": "DOM Standard",
       "url": "https://dom.spec.whatwg.org/"
     },
-    "fragment": "[Exposed=Window]\ninterface ShadowRoot : DocumentFragment {\n  readonly attribute ShadowRootMode mode;\n  readonly attribute boolean delegatesFocus;\n  readonly attribute SlotAssignmentMode slotAssignment;\n  readonly attribute boolean clonable;\n  readonly attribute boolean serializable;\n  readonly attribute Element host;\n  attribute EventHandler onslotchange;\n};",
+    "fragment": "[Exposed=Window]\ninterface ShadowRoot : DocumentFragment {\n  readonly attribute ShadowRootMode mode;\n  readonly attribute boolean delegatesFocus;\n  readonly attribute SlotAssignmentMode slotAssignment;\n  readonly attribute boolean clonable;\n  readonly attribute boolean serializable;\n  readonly attribute Element host;\n\n  attribute EventHandler onslotchange;\n};",
     "href": "https://dom.spec.whatwg.org/#shadowroot"
   },
   "extended": [
@@ -131,7 +131,7 @@
           "title": "DOM Standard",
           "url": "https://dom.spec.whatwg.org/"
         },
-        "fragment": "interface mixin DocumentOrShadowRoot {\n};",
+        "fragment": "interface mixin DocumentOrShadowRoot {\n  readonly attribute CustomElementRegistry? customElementRegistry;\n};",
         "href": "https://dom.spec.whatwg.org/#documentorshadowroot"
       },
       "extended": [

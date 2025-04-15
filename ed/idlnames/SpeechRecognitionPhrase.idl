@@ -1,0 +1,8 @@
+// Source: Web Speech API (https://webaudio.github.io/web-speech-api/)
+// The object representing a phrase for contextual biasing.
+[Exposed=Window]
+interface SpeechRecognitionPhrase {
+    constructor(DOMString phrase, optional float boost = 1.0);
+    readonly attribute DOMString phrase;
+    readonly attribute float boost;
+};

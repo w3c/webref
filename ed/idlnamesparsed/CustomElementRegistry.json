@@ -6,7 +6,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Exposed=Window]\ninterface CustomElementRegistry {\n  [CEReactions] undefined define(DOMString name, CustomElementConstructor constructor, optional ElementDefinitionOptions options = {});\n  (CustomElementConstructor or undefined) get(DOMString name);\n  DOMString? getName(CustomElementConstructor constructor);\n  Promise<CustomElementConstructor> whenDefined(DOMString name);\n  [CEReactions] undefined upgrade(Node root);\n};",
+    "fragment": "[Exposed=Window]\ninterface CustomElementRegistry {\n  constructor();\n\n  [CEReactions] undefined define(DOMString name, CustomElementConstructor constructor, optional ElementDefinitionOptions options = {});\n  (CustomElementConstructor or undefined) get(DOMString name);\n  DOMString? getName(CustomElementConstructor constructor);\n  Promise<CustomElementConstructor> whenDefined(DOMString name);\n  [CEReactions] undefined upgrade(Node root);\n  undefined initialize(Node root);\n};",
     "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#customelementregistry"
   },
   "extended": [],

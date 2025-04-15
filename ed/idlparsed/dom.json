@@ -1539,11 +1539,28 @@
         "href": "https://dom.spec.whatwg.org/#nonelementparentnode"
       },
       "DocumentOrShadowRoot": {
-        "fragment": "interface mixin DocumentOrShadowRoot {\n};",
+        "fragment": "interface mixin DocumentOrShadowRoot {\n  readonly attribute CustomElementRegistry? customElementRegistry;\n};",
         "type": "interface mixin",
         "name": "DocumentOrShadowRoot",
         "inheritance": null,
-        "members": [],
+        "members": [
+          {
+            "type": "attribute",
+            "name": "customElementRegistry",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "CustomElementRegistry"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://dom.spec.whatwg.org/#dom-documentorshadowroot-customelementregistry"
+          }
+        ],
         "extAttrs": [],
         "partial": false,
         "href": "https://dom.spec.whatwg.org/#documentorshadowroot"
@@ -4125,7 +4142,7 @@
         "href": "https://dom.spec.whatwg.org/#dictdef-getrootnodeoptions"
       },
       "Document": {
-        "fragment": "[Exposed=Window]\ninterface Document : Node {\n  constructor();\n\n  [SameObject] readonly attribute DOMImplementation implementation;\n  readonly attribute USVString URL;\n  readonly attribute USVString documentURI;\n  readonly attribute DOMString compatMode;\n  readonly attribute DOMString characterSet;\n  readonly attribute DOMString charset; // legacy alias of .characterSet\n  readonly attribute DOMString inputEncoding; // legacy alias of .characterSet\n  readonly attribute DOMString contentType;\n\n  readonly attribute DocumentType? doctype;\n  readonly attribute Element? documentElement;\n  HTMLCollection getElementsByTagName(DOMString qualifiedName);\n  HTMLCollection getElementsByTagNameNS(DOMString? namespace, DOMString localName);\n  HTMLCollection getElementsByClassName(DOMString classNames);\n\n  [CEReactions, NewObject] Element createElement(DOMString localName, optional (DOMString or ElementCreationOptions) options = {});\n  [CEReactions, NewObject] Element createElementNS(DOMString? namespace, DOMString qualifiedName, optional (DOMString or ElementCreationOptions) options = {});\n  [NewObject] DocumentFragment createDocumentFragment();\n  [NewObject] Text createTextNode(DOMString data);\n  [NewObject] CDATASection createCDATASection(DOMString data);\n  [NewObject] Comment createComment(DOMString data);\n  [NewObject] ProcessingInstruction createProcessingInstruction(DOMString target, DOMString data);\n\n  [CEReactions, NewObject] Node importNode(Node node, optional boolean subtree = false);\n  [CEReactions] Node adoptNode(Node node);\n\n  [NewObject] Attr createAttribute(DOMString localName);\n  [NewObject] Attr createAttributeNS(DOMString? namespace, DOMString qualifiedName);\n\n  [NewObject] Event createEvent(DOMString interface); // legacy\n\n  [NewObject] Range createRange();\n\n  // NodeFilter.SHOW_ALL = 0xFFFFFFFF\n  [NewObject] NodeIterator createNodeIterator(Node root, optional unsigned long whatToShow = 0xFFFFFFFF, optional NodeFilter? filter = null);\n  [NewObject] TreeWalker createTreeWalker(Node root, optional unsigned long whatToShow = 0xFFFFFFFF, optional NodeFilter? filter = null);\n};",
+        "fragment": "[Exposed=Window]\ninterface Document : Node {\n  constructor();\n\n  [SameObject] readonly attribute DOMImplementation implementation;\n  readonly attribute USVString URL;\n  readonly attribute USVString documentURI;\n  readonly attribute DOMString compatMode;\n  readonly attribute DOMString characterSet;\n  readonly attribute DOMString charset; // legacy alias of .characterSet\n  readonly attribute DOMString inputEncoding; // legacy alias of .characterSet\n  readonly attribute DOMString contentType;\n\n  readonly attribute DocumentType? doctype;\n  readonly attribute Element? documentElement;\n  HTMLCollection getElementsByTagName(DOMString qualifiedName);\n  HTMLCollection getElementsByTagNameNS(DOMString? namespace, DOMString localName);\n  HTMLCollection getElementsByClassName(DOMString classNames);\n\n  [CEReactions, NewObject] Element createElement(DOMString localName, optional (DOMString or ElementCreationOptions) options = {});\n  [CEReactions, NewObject] Element createElementNS(DOMString? namespace, DOMString qualifiedName, optional (DOMString or ElementCreationOptions) options = {});\n  [NewObject] DocumentFragment createDocumentFragment();\n  [NewObject] Text createTextNode(DOMString data);\n  [NewObject] CDATASection createCDATASection(DOMString data);\n  [NewObject] Comment createComment(DOMString data);\n  [NewObject] ProcessingInstruction createProcessingInstruction(DOMString target, DOMString data);\n\n  [CEReactions, NewObject] Node importNode(Node node, optional (boolean or ImportNodeOptions) options = false);\n  [CEReactions] Node adoptNode(Node node);\n\n  [NewObject] Attr createAttribute(DOMString localName);\n  [NewObject] Attr createAttributeNS(DOMString? namespace, DOMString qualifiedName);\n\n  [NewObject] Event createEvent(DOMString interface); // legacy\n\n  [NewObject] Range createRange();\n\n  // NodeFilter.SHOW_ALL = 0xFFFFFFFF\n  [NewObject] NodeIterator createNodeIterator(Node root, optional unsigned long whatToShow = 0xFFFFFFFF, optional NodeFilter? filter = null);\n  [NewObject] TreeWalker createTreeWalker(Node root, optional unsigned long whatToShow = 0xFFFFFFFF, optional NodeFilter? filter = null);\n};",
         "type": "interface",
         "name": "Document",
         "inheritance": "Node",
@@ -4825,15 +4842,32 @@
               },
               {
                 "type": "argument",
-                "name": "subtree",
+                "name": "options",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "boolean"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "boolean"
+                    },
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "ImportNodeOptions"
+                    }
+                  ]
                 },
                 "default": {
                   "type": "boolean",
@@ -5249,11 +5283,27 @@
         "href": "https://dom.spec.whatwg.org/#xmldocument"
       },
       "ElementCreationOptions": {
-        "fragment": "dictionary ElementCreationOptions {\n  DOMString is;\n};",
+        "fragment": "dictionary ElementCreationOptions {\n  CustomElementRegistry customElementRegistry;\n  DOMString is;\n};",
         "type": "dictionary",
         "name": "ElementCreationOptions",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "customElementRegistry",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CustomElementRegistry"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://dom.spec.whatwg.org/#dom-elementcreationoptions-customelementregistry"
+          },
           {
             "type": "field",
             "name": "is",
@@ -5274,6 +5324,52 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://dom.spec.whatwg.org/#dictdef-elementcreationoptions"
+      },
+      "ImportNodeOptions": {
+        "fragment": "dictionary ImportNodeOptions {\n  CustomElementRegistry customElementRegistry;\n  boolean selfOnly = false;\n};",
+        "type": "dictionary",
+        "name": "ImportNodeOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "customElementRegistry",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CustomElementRegistry"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://dom.spec.whatwg.org/#dom-importnodeoptions-customelementregistry"
+          },
+          {
+            "type": "field",
+            "name": "selfOnly",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://dom.spec.whatwg.org/#dom-importnodeoptions-selfonly"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://dom.spec.whatwg.org/#dictdef-importnodeoptions"
       },
       "DOMImplementation": {
         "fragment": "[Exposed=Window]\ninterface DOMImplementation {\n  [NewObject] DocumentType createDocumentType(DOMString qualifiedName, DOMString publicId, DOMString systemId);\n  [NewObject] XMLDocument createDocument(DOMString? namespace, [LegacyNullToEmptyString] DOMString qualifiedName, optional DocumentType? doctype = null);\n  [NewObject] Document createHTMLDocument(optional DOMString title);\n\n  boolean hasFeature(); // useless; always returns true\n};",
@@ -5602,7 +5698,7 @@
         "href": "https://dom.spec.whatwg.org/#documentfragment"
       },
       "ShadowRoot": {
-        "fragment": "[Exposed=Window]\ninterface ShadowRoot : DocumentFragment {\n  readonly attribute ShadowRootMode mode;\n  readonly attribute boolean delegatesFocus;\n  readonly attribute SlotAssignmentMode slotAssignment;\n  readonly attribute boolean clonable;\n  readonly attribute boolean serializable;\n  readonly attribute Element host;\n  attribute EventHandler onslotchange;\n};",
+        "fragment": "[Exposed=Window]\ninterface ShadowRoot : DocumentFragment {\n  readonly attribute ShadowRootMode mode;\n  readonly attribute boolean delegatesFocus;\n  readonly attribute SlotAssignmentMode slotAssignment;\n  readonly attribute boolean clonable;\n  readonly attribute boolean serializable;\n  readonly attribute Element host;\n\n  attribute EventHandler onslotchange;\n};",
         "type": "interface",
         "name": "ShadowRoot",
         "inheritance": "DocumentFragment",
@@ -5773,7 +5869,7 @@
         "href": "https://dom.spec.whatwg.org/#enumdef-slotassignmentmode"
       },
       "Element": {
-        "fragment": "[Exposed=Window]\ninterface Element : Node {\n  readonly attribute DOMString? namespaceURI;\n  readonly attribute DOMString? prefix;\n  readonly attribute DOMString localName;\n  readonly attribute DOMString tagName;\n\n  [CEReactions] attribute DOMString id;\n  [CEReactions] attribute DOMString className;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList classList;\n  [CEReactions, Unscopable] attribute DOMString slot;\n\n  boolean hasAttributes();\n  [SameObject] readonly attribute NamedNodeMap attributes;\n  sequence<DOMString> getAttributeNames();\n  DOMString? getAttribute(DOMString qualifiedName);\n  DOMString? getAttributeNS(DOMString? namespace, DOMString localName);\n  [CEReactions] undefined setAttribute(DOMString qualifiedName, DOMString value);\n  [CEReactions] undefined setAttributeNS(DOMString? namespace, DOMString qualifiedName, DOMString value);\n  [CEReactions] undefined removeAttribute(DOMString qualifiedName);\n  [CEReactions] undefined removeAttributeNS(DOMString? namespace, DOMString localName);\n  [CEReactions] boolean toggleAttribute(DOMString qualifiedName, optional boolean force);\n  boolean hasAttribute(DOMString qualifiedName);\n  boolean hasAttributeNS(DOMString? namespace, DOMString localName);\n\n  Attr? getAttributeNode(DOMString qualifiedName);\n  Attr? getAttributeNodeNS(DOMString? namespace, DOMString localName);\n  [CEReactions] Attr? setAttributeNode(Attr attr);\n  [CEReactions] Attr? setAttributeNodeNS(Attr attr);\n  [CEReactions] Attr removeAttributeNode(Attr attr);\n\n  ShadowRoot attachShadow(ShadowRootInit init);\n  readonly attribute ShadowRoot? shadowRoot;\n\n  Element? closest(DOMString selectors);\n  boolean matches(DOMString selectors);\n  boolean webkitMatchesSelector(DOMString selectors); // legacy alias of .matches\n\n  HTMLCollection getElementsByTagName(DOMString qualifiedName);\n  HTMLCollection getElementsByTagNameNS(DOMString? namespace, DOMString localName);\n  HTMLCollection getElementsByClassName(DOMString classNames);\n\n  [CEReactions] Element? insertAdjacentElement(DOMString where, Element element); // legacy\n  undefined insertAdjacentText(DOMString where, DOMString data); // legacy\n};",
+        "fragment": "[Exposed=Window]\ninterface Element : Node {\n  readonly attribute DOMString? namespaceURI;\n  readonly attribute DOMString? prefix;\n  readonly attribute DOMString localName;\n  readonly attribute DOMString tagName;\n\n  [CEReactions] attribute DOMString id;\n  [CEReactions] attribute DOMString className;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList classList;\n  [CEReactions, Unscopable] attribute DOMString slot;\n\n  boolean hasAttributes();\n  [SameObject] readonly attribute NamedNodeMap attributes;\n  sequence<DOMString> getAttributeNames();\n  DOMString? getAttribute(DOMString qualifiedName);\n  DOMString? getAttributeNS(DOMString? namespace, DOMString localName);\n  [CEReactions] undefined setAttribute(DOMString qualifiedName, DOMString value);\n  [CEReactions] undefined setAttributeNS(DOMString? namespace, DOMString qualifiedName, DOMString value);\n  [CEReactions] undefined removeAttribute(DOMString qualifiedName);\n  [CEReactions] undefined removeAttributeNS(DOMString? namespace, DOMString localName);\n  [CEReactions] boolean toggleAttribute(DOMString qualifiedName, optional boolean force);\n  boolean hasAttribute(DOMString qualifiedName);\n  boolean hasAttributeNS(DOMString? namespace, DOMString localName);\n\n  Attr? getAttributeNode(DOMString qualifiedName);\n  Attr? getAttributeNodeNS(DOMString? namespace, DOMString localName);\n  [CEReactions] Attr? setAttributeNode(Attr attr);\n  [CEReactions] Attr? setAttributeNodeNS(Attr attr);\n  [CEReactions] Attr removeAttributeNode(Attr attr);\n\n  ShadowRoot attachShadow(ShadowRootInit init);\n  readonly attribute ShadowRoot? shadowRoot;\n\n  readonly attribute CustomElementRegistry? customElementRegistry;\n\n  Element? closest(DOMString selectors);\n  boolean matches(DOMString selectors);\n  boolean webkitMatchesSelector(DOMString selectors); // legacy alias of .matches\n\n  HTMLCollection getElementsByTagName(DOMString qualifiedName);\n  HTMLCollection getElementsByTagNameNS(DOMString? namespace, DOMString localName);\n  HTMLCollection getElementsByClassName(DOMString classNames);\n\n  [CEReactions] Element? insertAdjacentElement(DOMString where, Element element); // legacy\n  undefined insertAdjacentText(DOMString where, DOMString data); // legacy\n};",
         "type": "interface",
         "name": "Element",
         "inheritance": "Node",
@@ -6709,6 +6805,22 @@
             "href": "https://dom.spec.whatwg.org/#dom-element-shadowroot"
           },
           {
+            "type": "attribute",
+            "name": "customElementRegistry",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "CustomElementRegistry"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://dom.spec.whatwg.org/#dom-element-customelementregistry"
+          },
+          {
             "type": "operation",
             "name": "closest",
             "idlType": {
@@ -7043,7 +7155,7 @@
         "href": "https://dom.spec.whatwg.org/#element"
       },
       "ShadowRootInit": {
-        "fragment": "dictionary ShadowRootInit {\n  required ShadowRootMode mode;\n  boolean delegatesFocus = false;\n  SlotAssignmentMode slotAssignment = \"named\";\n  boolean clonable = false;\n  boolean serializable = false;\n};",
+        "fragment": "dictionary ShadowRootInit {\n  required ShadowRootMode mode;\n  boolean delegatesFocus = false;\n  SlotAssignmentMode slotAssignment = \"named\";\n  boolean clonable = false;\n  boolean serializable = false;\n  CustomElementRegistry customElementRegistry;\n};",
         "type": "dictionary",
         "name": "ShadowRootInit",
         "inheritance": null,
@@ -7139,6 +7251,22 @@
             },
             "required": false,
             "href": "https://dom.spec.whatwg.org/#dom-shadowrootinit-serializable"
+          },
+          {
+            "type": "field",
+            "name": "customElementRegistry",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CustomElementRegistry"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://dom.spec.whatwg.org/#dom-shadowrootinit-customelementregistry"
           }
         ],
         "extAttrs": [],
@@ -11635,6 +11763,7 @@
         "CDATASection",
         "Comment",
         "ProcessingInstruction",
+        "ImportNodeOptions",
         "Attr",
         "Event",
         "Range",
@@ -11648,7 +11777,9 @@
         "ParentNode",
         "Node"
       ],
-      "DocumentOrShadowRoot": [],
+      "DocumentOrShadowRoot": [
+        "CustomElementRegistry"
+      ],
       "ShadowRoot": [
         "DocumentOrShadowRoot",
         "DocumentFragment",
@@ -11674,6 +11805,7 @@
         "Attr",
         "ShadowRoot",
         "ShadowRootInit",
+        "CustomElementRegistry",
         "Element",
         "HTMLCollection"
       ],
@@ -11729,7 +11861,12 @@
       "XMLDocument": [
         "Document"
       ],
-      "ElementCreationOptions": [],
+      "ElementCreationOptions": [
+        "CustomElementRegistry"
+      ],
+      "ImportNodeOptions": [
+        "CustomElementRegistry"
+      ],
       "DOMImplementation": [
         "DocumentType",
         "XMLDocument",
@@ -11737,7 +11874,8 @@
       ],
       "ShadowRootInit": [
         "ShadowRootMode",
-        "SlotAssignmentMode"
+        "SlotAssignmentMode",
+        "CustomElementRegistry"
       ],
       "NamedNodeMap": [
         "Attr"
@@ -11810,6 +11948,7 @@
       "DOMHighResTimeStamp",
       "Window",
       "EventHandler",
+      "CustomElementRegistry",
       "HTMLSlotElement"
     ],
     "hasObsoleteIdl": false

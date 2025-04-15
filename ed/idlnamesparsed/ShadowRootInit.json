@@ -6,7 +6,7 @@
       "title": "DOM Standard",
       "url": "https://dom.spec.whatwg.org/"
     },
-    "fragment": "dictionary ShadowRootInit {\n  required ShadowRootMode mode;\n  boolean delegatesFocus = false;\n  SlotAssignmentMode slotAssignment = \"named\";\n  boolean clonable = false;\n  boolean serializable = false;\n};",
+    "fragment": "dictionary ShadowRootInit {\n  required ShadowRootMode mode;\n  boolean delegatesFocus = false;\n  SlotAssignmentMode slotAssignment = \"named\";\n  boolean clonable = false;\n  boolean serializable = false;\n  CustomElementRegistry customElementRegistry;\n};",
     "href": "https://dom.spec.whatwg.org/#dictdef-shadowrootinit"
   },
   "extended": [],

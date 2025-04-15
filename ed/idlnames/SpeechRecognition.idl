@@ -9,6 +9,7 @@ interface SpeechRecognition : EventTarget {
     attribute boolean interimResults;
     attribute unsigned long maxAlternatives;
     attribute SpeechRecognitionMode mode;
+    attribute SpeechRecognitionPhraseList phrases;
 
     // methods to drive the speech interaction
     undefined start();
