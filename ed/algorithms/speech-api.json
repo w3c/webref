@@ -5,6 +5,37 @@
   },
   "algorithms": [
     {
+      "name": "SpeechRecognition/mode",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-mode",
+      "html": "The setter steps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphraselist-length\" id=\"ref-for-dom-speechrecognitionphraselist-length①\">length</a></code> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognition-phrases\" id=\"ref-for-dom-speechrecognition-phrases①\">phrases</a></code> is greater than 0\nand the system using the given value for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognition-mode-slot\" id=\"ref-for-dom-speechrecognition-mode-slot①\">[[mode]]</a></code> does not support contextual biasing,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#speechrecognitionerrorevent\" id=\"ref-for-speechrecognitionerrorevent\">SpeechRecognitionErrorEvent</a></code> with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionerrorcode-phrases-not-supported\" id=\"ref-for-dom-speechrecognitionerrorcode-phrases-not-supported①\">phrases-not-supported</a></code> error code and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognition-mode-slot\" id=\"ref-for-dom-speechrecognition-mode-slot②\">[[mode]]</a></code> to the given value.</p>"
+        }
+      ]
+    },
+    {
+      "name": "SpeechRecognition/phrases",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-phrases",
+      "html": "The setter steps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphraselist-length\" id=\"ref-for-dom-speechrecognitionphraselist-length②\">length</a></code> of the given value is greater than 0 and the system does not support contextual biasing,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#speechrecognitionerrorevent\" id=\"ref-for-speechrecognitionerrorevent①\">SpeechRecognitionErrorEvent</a></code> with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionerrorcode-phrases-not-supported\" id=\"ref-for-dom-speechrecognitionerrorcode-phrases-not-supported②\">phrases-not-supported</a></code> error code and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognition-phrases-slot\" id=\"ref-for-dom-speechrecognition-phrases-slot①\">[[phrases]]</a></code> to the given value.</p>"
+        },
+        {
+          "html": "<p>Send a copy of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognition-phrases-slot\" id=\"ref-for-dom-speechrecognition-phrases-slot②\">[[phrases]]</a></code> to the system for initializing or updating the phrases for contextual biasing implementation.</p>"
+        }
+      ]
+    },
+    {
       "name": "SpeechRecognition/start()",
       "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-start",
       "html": "Start the speech recognition process, directly from a microphone on the device.\n    When invoked, run the following steps:",
@@ -127,6 +158,74 @@
         },
         {
           "html": "<p>Once the system is successfully listening to the recognition, queue a task to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-start\" id=\"ref-for-eventdef-speechrecognition-start\">start</a> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "SpeechRecognitionPhrase/SpeechRecognitionPhrase(phrase, boost)",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphrase-speechrecognitionphrase",
+      "html": "When this constructor is invoked, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>boost</var> is smaller than 0.0 or greater than 10.0, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror②\">SyntaxError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>phr</var> be a new object of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#speechrecognitionphrase\" id=\"ref-for-speechrecognitionphrase③\">SpeechRecognitionPhrase</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>phr</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphrase-phrase-slot\" id=\"ref-for-dom-speechrecognitionphrase-phrase-slot\">[[phrase]]</a></code> to be the value of <var>phrase</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>phr</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphrase-boost-slot\" id=\"ref-for-dom-speechrecognitionphrase-boost-slot\">[[boost]]</a></code> to be the value of <var>boost</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>phr</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "SpeechRecognitionPhraseList/SpeechRecognitionPhraseList(phrases)",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphraselist-speechrecognitionphraselist",
+      "html": "When this constructor is invoked, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>list</var> be a new object of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#speechrecognitionphraselist\" id=\"ref-for-speechrecognitionphraselist③\">SpeechRecognitionPhraseList</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>list</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphraselist-phrases-slot\" id=\"ref-for-dom-speechrecognitionphraselist-phrases-slot\">[[phrases]]</a></code> to be the value of <var>phrases</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>list</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "SpeechRecognitionPhraseList/item(index)",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphraselist-item",
+      "html": "This method gets the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#speechrecognitionphrase\" id=\"ref-for-speechrecognitionphrase⑤\">SpeechRecognitionPhrase</a></code> object at the <var>index</var> of the list.\n    When invoked, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>index</var> is smaller than 0, or greater than or equal to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphraselist-length\" id=\"ref-for-dom-speechrecognitionphraselist-length③\">length</a></code>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror\">RangeError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#speechrecognitionphrase\" id=\"ref-for-speechrecognitionphrase⑥\">SpeechRecognitionPhrase</a></code> at the <var>index</var> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphraselist-phrases-slot\" id=\"ref-for-dom-speechrecognitionphraselist-phrases-slot②\">[[phrases]]</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "SpeechRecognitionPhraseList/removeItem(index)",
+      "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphraselist-removeitem",
+      "html": "This method removes the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#speechrecognitionphrase\" id=\"ref-for-speechrecognitionphrase⑨\">SpeechRecognitionPhrase</a></code> object at the <var>index</var> of the list.\n    When invoked, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>index</var> is smaller than 0, or greater than or equal to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphraselist-length\" id=\"ref-for-dom-speechrecognitionphraselist-length④\">length</a></code>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①\">RangeError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Remove the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#speechrecognitionphrase\" id=\"ref-for-speechrecognitionphrase①⓪\">SpeechRecognitionPhrase</a></code> object at the <var>index</var> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionphraselist-phrases-slot\" id=\"ref-for-dom-speechrecognitionphraselist-phrases-slot④\">[[phrases]]</a></code>.</p>"
         }
       ]
     }
