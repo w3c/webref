@@ -25,5 +25,5 @@ interface PaymentRequest : EventTarget {
 
 // Source: Secure Payment Confirmation (https://www.w3.org/TR/secure-payment-confirmation/)
 partial interface PaymentRequest {
-    static Promise<boolean> isSecurePaymentConfirmationAvailable();
+    static Promise<SecurePaymentConfirmationAvailability> securePaymentConfirmationAvailability();
 };

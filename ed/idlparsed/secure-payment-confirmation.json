@@ -198,6 +198,40 @@
         "partial": false,
         "href": "https://w3c.github.io/secure-payment-confirmation/#dictdef-securepaymentconfirmationrequest"
       },
+      "SecurePaymentConfirmationAvailability": {
+        "fragment": "enum SecurePaymentConfirmationAvailability {\n  \"available\",\n  \"unavailable-unknown-reason\",\n  \"unavailable-feature-not-enabled\",\n  \"unavailable-no-permission-policy\",\n  \"unavailable-no-user-verifying-platform-authenticator\",\n};",
+        "type": "enum",
+        "name": "SecurePaymentConfirmationAvailability",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "available",
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationavailability-available"
+          },
+          {
+            "type": "enum-value",
+            "value": "unavailable-unknown-reason",
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationavailability-unavailable-unknown-reason"
+          },
+          {
+            "type": "enum-value",
+            "value": "unavailable-feature-not-enabled",
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationavailability-unavailable-feature-not-enabled"
+          },
+          {
+            "type": "enum-value",
+            "value": "unavailable-no-permission-policy",
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationavailability-unavailable-no-permission-policy"
+          },
+          {
+            "type": "enum-value",
+            "value": "unavailable-no-user-verifying-platform-authenticator",
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationavailability-unavailable-no-user-verifying-platform-authenticator"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/secure-payment-confirmation/#enumdef-securepaymentconfirmationavailability"
+      },
       "AuthenticationExtensionsPaymentInputs": {
         "fragment": "dictionary AuthenticationExtensionsPaymentInputs {\n  boolean isPayment;\n\n  // Only used for authentication.\n  USVString rpId;\n  USVString topOrigin;\n  USVString payeeName;\n  USVString payeeOrigin;\n  PaymentCurrencyAmount total;\n  PaymentCredentialInstrument instrument;\n};",
         "type": "dictionary",
@@ -521,14 +555,14 @@
     "idlExtendedNames": {
       "PaymentRequest": [
         {
-          "fragment": "partial interface PaymentRequest {\n    static Promise<boolean> isSecurePaymentConfirmationAvailable();\n};",
+          "fragment": "partial interface PaymentRequest {\n    static Promise<SecurePaymentConfirmationAvailability> securePaymentConfirmationAvailability();\n};",
           "type": "interface",
           "name": "PaymentRequest",
           "inheritance": null,
           "members": [
             {
               "type": "operation",
-              "name": "isSecurePaymentConfirmationAvailable",
+              "name": "securePaymentConfirmationAvailability",
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
@@ -542,14 +576,14 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "boolean"
+                    "idlType": "SecurePaymentConfirmationAvailability"
                   }
                 ]
               },
               "arguments": [],
               "extAttrs": [],
               "special": "static",
-              "href": "https://w3c.github.io/secure-payment-confirmation/#dom-paymentrequest-issecurepaymentconfirmationavailable"
+              "href": "https://w3c.github.io/secure-payment-confirmation/#dom-paymentrequest-securepaymentconfirmationavailability"
             }
           ],
           "extAttrs": [],
@@ -593,7 +627,9 @@
         "PaymentCredentialInstrument",
         "AuthenticationExtensionsClientInputs"
       ],
-      "PaymentRequest": [],
+      "PaymentRequest": [
+        "SecurePaymentConfirmationAvailability"
+      ],
       "AuthenticationExtensionsClientInputs": [
         "AuthenticationExtensionsPaymentInputs"
       ],

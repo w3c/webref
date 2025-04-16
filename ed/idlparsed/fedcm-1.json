@@ -646,7 +646,7 @@
         "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderbranding"
       },
       "IdentityProviderAPIConfig": {
-        "fragment": "dictionary IdentityProviderAPIConfig {\n  required USVString accounts_endpoint;\n  required USVString client_metadata_endpoint;\n  required USVString id_assertion_endpoint;\n  required USVString login_url;\n  USVString disconnect_endpoint;\n  IdentityProviderBranding branding;\n  USVString account_label;\n};",
+        "fragment": "dictionary IdentityProviderAPIConfig {\n  required USVString accounts_endpoint;\n  USVString client_metadata_endpoint;\n  required USVString id_assertion_endpoint;\n  required USVString login_url;\n  USVString disconnect_endpoint;\n  IdentityProviderBranding branding;\n  USVString account_label;\n};",
         "type": "dictionary",
         "name": "IdentityProviderAPIConfig",
         "inheritance": null,
@@ -680,7 +680,7 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true,
+            "required": false,
             "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-client_metadata_endpoint"
           },
           {

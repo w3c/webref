@@ -155,7 +155,7 @@
     {
       "name": "font-style",
       "href": "https://drafts.csswg.org/css-fonts-4/#propdef-font-style",
-      "value": "normal | italic | oblique <angle [-90deg,90deg]>?",
+      "value": "normal | italic | left | right | oblique <angle [-90deg,90deg]>?",
       "initial": "normal",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -173,10 +173,24 @@
         },
         {
           "name": "italic",
-          "prose": "Matches against a font that is labeled as an italic face, or an oblique face if one does not exist.",
+          "prose": "Matches against a font that is labeled as an italic face, or an oblique face if one does not exist. The angle and direction of slant is unspecified.",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-style-italic",
           "type": "value",
           "value": "italic"
+        },
+        {
+          "name": "left",
+          "prose": "Matches against a font that is labeled as an italic face, with a positive (clockwise) slant; or an oblique face with positive slant, if one does not exist.",
+          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-style-left",
+          "type": "value",
+          "value": "left"
+        },
+        {
+          "name": "right",
+          "prose": "Matches against a font that is labeled as an italic face, with a negative (counter-clockwise) slant; or an oblique face with negative slant, if one does not exist.",
+          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-style-right",
+          "type": "value",
+          "value": "right"
         },
         {
           "name": "oblique <angle [-90deg,90deg]>?",
@@ -1215,7 +1229,7 @@
           "name": "font-style",
           "href": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-style",
           "for": "@font-face",
-          "value": "auto | normal | italic | oblique [ <angle [-90deg,90deg]>{1,2} ]?",
+          "value": "auto | normal | italic | left | right | oblique [ <angle [-90deg,90deg]>{1,2} ]?",
           "initial": "auto"
         },
         {

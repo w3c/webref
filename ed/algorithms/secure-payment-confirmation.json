@@ -38,6 +38,27 @@
       ]
     },
     {
+      "html": "Upon invocation of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/secure-payment-confirmation/#dom-paymentrequest-securepaymentconfirmationavailability\" id=\"ref-for-dom-paymentrequest-securepaymentconfirmationavailability①\">securePaymentConfirmationAvailability()</a></code> in a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document\">Document</a></code> <var>document</var>, the user agent must perform the below\nsteps. A user agent may at any time choose to return\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationavailability-unavailable-unknown-reason\" id=\"ref-for-dom-securepaymentconfirmationavailability-unavailable-unknown-reason①\">unavailable-unknown-reason</a></code>\", if\nneeded to protect the privacy of the user or if a step cannot be completed for\na user-agent specific reason.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the user agent does not support Secure Payment Confirmation, or it does\nsupport Secure Payment Confirmation but the feature is disabled via some\nuser-agent specific mechanism, return\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationavailability-unavailable-feature-not-enabled\" id=\"ref-for-dom-securepaymentconfirmationavailability-unavailable-feature-not-enabled①\">unavailable-feature-not-enabled</a></code>\".</p>"
+        },
+        {
+          "html": "<p>If the \"<a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-payment\" id=\"ref-for-dfn-payment①\">payment</a>\" permission policy is not\nenabled for <var>document</var>, return\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationavailability-unavailable-no-permission-policy\" id=\"ref-for-dom-securepaymentconfirmationavailability-unavailable-no-permission-policy①\">unavailable-no-permission-policy</a></code>\".</p>"
+        },
+        {
+          "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-verifying-platform-authenticator\" id=\"ref-for-user-verifying-platform-authenticator①\">user-verifying platform authenticator</a> available, return\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationavailability-unavailable-no-user-verifying-platform-authenticator\" id=\"ref-for-dom-securepaymentconfirmationavailability-unavailable-no-user-verifying-platform-authenticator①\">unavailable-no-user-verifying-platform-authenticator</a></code>\".</p>"
+        },
+        {
+          "html": "<p>If there is any other reason that the Secure Payment Confirmation feature\nwould not function if called in <var>document</var>, return\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationavailability-unavailable-unknown-reason\" id=\"ref-for-dom-securepaymentconfirmationavailability-unavailable-unknown-reason②\">unavailable-unknown-reason</a></code>\".</p>"
+        },
+        {
+          "html": "<p>Return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationavailability-available\" id=\"ref-for-dom-securepaymentconfirmationavailability-available①\">available</a></code>\".</p>"
+        }
+      ]
+    },
+    {
       "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-steps-to-validate-payment-method-data\" id=\"ref-for-dfn-steps-to-validate-payment-method-data\">steps to validate payment method data</a> for this payment method, for an\ninput <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/payment-request/#dom-paymentrequest\" id=\"ref-for-dom-paymentrequest③\">PaymentRequest</a></code> <var>request</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/secure-payment-confirmation/#dictdef-securepaymentconfirmationrequest\" id=\"ref-for-dictdef-securepaymentconfirmationrequest③\">SecurePaymentConfirmationRequest</a></code> <var>data</var>, are:",
       "rationale": "if",
       "steps": [

@@ -15,7 +15,7 @@
         "title": "Secure Payment Confirmation",
         "url": "https://www.w3.org/TR/secure-payment-confirmation/"
       },
-      "fragment": "partial interface PaymentRequest {\n    static Promise<boolean> isSecurePaymentConfirmationAvailable();\n};"
+      "fragment": "partial interface PaymentRequest {\n    static Promise<SecurePaymentConfirmationAvailability> securePaymentConfirmationAvailability();\n};"
     }
   ],
   "inheritance": {
