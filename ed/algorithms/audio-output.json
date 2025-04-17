@@ -106,6 +106,9 @@
           "html": "<p>Let <var>deviceId</var> be <var>options</var><code>.deviceId</code>.</p>"
         },
         {
+          "html": "<p>Let <var>mediaDevices</var> be <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.</p>"
+        },
+        {
           "html": "<p>Let <var>p</var> be a new promise.</p>"
         },
         {
@@ -177,7 +180,10 @@
           "html": "<p>Let <var>document</var> be the\n          <a data-cite=\"!HTML/webappapis.html#current-settings-object\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\">\n          current settings object</a>'s\n          <a data-cite=\"!HTML/webappapis.html#concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">\n          relevant global object</a>'s\n          <a data-cite=\"!HTML/window-object.html#concept-document-window\" href=\"https://html.spec.whatwg.org/multipage/window-object.html#concept-document-window\">\n          associated <code>Document</code></a>.</p>"
         },
         {
-          "html": "<p>Let <var>deviceInfo</var> be the result of\n          <a data-link-type=\"dfn\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"creating-a-device-info-object\" href=\"https://www.w3.org/TR/mediacapture-streams/#creating-a-device-info-object\">creating a device info object</a> to represent <var>device</var>.</p>"
+          "html": "<p>Let <var>mediaDevices</var> be the\n          <a data-cite=\"!HTML/webappapis.html#current-settings-object\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\">\n          current settings object</a>'s\n          <a data-cite=\"!HTML/webappapis.html#concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">\n          relevant global object</a>'s\n          <dfn data-cite=\"GETUSERMEDIA#dfn-associated-mediadevices\" id=\"dfn-associated-mediadevices\" class=\"externalDFN\" data-no-export=\"\" data-dfn-type=\"dfn\"><a href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-associated-mediadevices\" data-cite=\"GETUSERMEDIA\" data-cite-path=\"\" data-cite-frag=\"#dfn-associated-mediadevices\">\n          associated <code>MediaDevices</code></a></dfn>.</p>"
+        },
+        {
+          "html": "<p>Let <var>deviceInfo</var> be the result of\n          <a data-link-type=\"dfn\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"creating-a-device-info-object\" href=\"https://www.w3.org/TR/mediacapture-streams/#creating-a-device-info-object\">creating a device info object</a> to represent <var>device</var>,\n          with <var>mediaDevices</var>.</p>"
         },
         {
           "html": "<p>If <var>document</var> is not <a data-cite=\"!HTML/iframe-embed-object.html#allowed-to-use\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\">\n          allowed to use</a> the feature identified by <a href=\"https://w3c.github.io/mediacapture-output/#dfn-speaker-selection\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-speaker-selection-2\"><code>\"speaker-selection\"</code></a>,\n          or <var>deviceInfo</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaDeviceInfo\" data-xref-for=\"MediaDeviceInfo\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediadeviceinfo-kind\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-kind\"><code>kind</code></a> is not \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"MediaDeviceKind\" data-xref-for=\"MediaDeviceKind\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"idl-def-MediaDeviceKind.audiooutput\" href=\"https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaDeviceKind.audiooutput\"><code>audiooutput</code></a>\",\n          return <code>false</code>.</p>"
@@ -186,7 +192,7 @@
           "html": "<p>If <var>deviceInfo</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaDeviceInfo\" data-xref-for=\"MediaDeviceInfo\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediadeviceinfo-deviceid\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-deviceid\"><code>deviceId</code></a>\n          is in <a data-link-for=\"relevant global object\" href=\"https://w3c.github.io/mediacapture-output/#dfn-explicitlygrantedaudiooutputdevices\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dfn-explicitlygrantedaudiooutputdevices-2\">[[explicitlyGrantedAudioOutputDevices]]</a>, return <code>true</code>.</p>"
         },
         {
-          "html": "<p>If <var>deviceInfo</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaDeviceInfo\" data-xref-for=\"MediaDeviceInfo\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediadeviceinfo-groupid\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-groupid\"><code>groupId</code></a>\n          is the same as the <a data-cite=\"!GETUSERMEDIA#def-mediadeviceinfo-groupId\" href=\"https://www.w3.org/TR/mediacapture-streams/#def-mediadeviceinfo-groupId\">groupId</a>\n          of any microphone in <var>microphoneList</var>,\n          return <code>true</code>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"microphone-information-can-be-exposed\" href=\"https://www.w3.org/TR/mediacapture-streams/#microphone-information-can-be-exposed\">microphone information can be exposed</a> on <var>mediaDevices</var> is <code>true</code>,\n          return <code>true</code>.</p>"
         },
         {
           "html": "<p>return <code>false</code>.</p>"
