@@ -28,6 +28,7 @@ BluetoothCommand = (
   bluetooth.DisableSimulation //
   bluetooth.SimulatePreconnectedPeripheral //
   bluetooth.SimulateAdvertisement //
+  bluetooth.SimulateGattConnectionResponse //
 )
 
 bluetooth.HandleRequestDevicePrompt = (
@@ -100,4 +101,15 @@ bluetooth.SimulateAdvertisementScanEntryParameters = {
    deviceAddress: text,
    rssi: number,
    scanRecord: bluetooth.ScanRecord
+}
+
+bluetooth.SimulateGattConnectionResponse = (
+   method: "bluetooth.simulateGattConnectionResponse",
+   params: bluetooth.SimulateGattConnectionResponseParameters,
+)
+
+bluetooth.SimulateGattConnectionResponseParameters = {
+   context: text,
+   address: text,
+   code: uint
 }
