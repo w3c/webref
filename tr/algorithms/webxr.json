@@ -368,7 +368,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Set <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#ended\" id=\"ref-for-ended\">ended</a> value to <code>true</code>.</p>"
+          "html": "<p>Set <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-ended\" id=\"ref-for-xrsession-ended\">ended</a> value to <code>true</code>.</p>"
         },
         {
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#active-immersive-session\" id=\"ref-for-active-immersive-session③\">active immersive session</a> is equal to <var>session</var>, set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#active-immersive-session\" id=\"ref-for-active-immersive-session④\">active immersive session</a> to <code>null</code>.</p>"
@@ -397,7 +397,7 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new Promise</a> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm③\">relevant realm</a> of this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession③⓪\">XRSession</a></code>.</p>"
         },
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#ended\" id=\"ref-for-ended①\">ended</a> value of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a> is <code>true</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑦\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code> and return <var>promise</var>.</p>"
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-ended\" id=\"ref-for-xrsession-ended①\">ended</a> value of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a> is <code>true</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑦\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code> and return <var>promise</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#shut-down-the-session\" id=\"ref-for-shut-down-the-session②\">Shut down</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>.</p>"
@@ -440,7 +440,7 @@
           "html": "<p>If <var>rate</var> is the same as <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-internal-nominal-framerate\" id=\"ref-for-xrsession-internal-nominal-framerate\">internal nominal framerate</a>, abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#ended\" id=\"ref-for-ended②\">ended</a> value is <code>true</code>, abort these steps.</p>"
+          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-ended\" id=\"ref-for-xrsession-ended②\">ended</a> value is <code>true</code>, abort these steps.</p>"
         },
         {
           "html": "<p>Set <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-internal-nominal-framerate\" id=\"ref-for-xrsession-internal-nominal-framerate①\">internal nominal framerate</a> to <var>rate</var>.</p>"
@@ -466,7 +466,7 @@
           "html": "<p>If the <var>session</var> has no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-internal-nominal-framerate\" id=\"ref-for-xrsession-internal-nominal-framerate②\">internal nominal framerate</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑧\">reject</a> <var>promise</var> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code> and return <var>promise</var>.</p>"
         },
         {
-          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#ended\" id=\"ref-for-ended③\">ended</a> value is <code>true</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑨\">reject</a> <var>promise</var> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code> and return <var>promise</var>.</p>"
+          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-ended\" id=\"ref-for-xrsession-ended③\">ended</a> value is <code>true</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑨\">reject</a> <var>promise</var> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code> and return <var>promise</var>.</p>"
         },
         {
           "html": "<p>If <var>rate</var> is not in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-supportedframerates\" id=\"ref-for-dom-xrsession-supportedframerates①\">supportedFrameRates</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⓪\">reject</a> <var>promise</var> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨\">DOMException</a></code> and return <var>promise</var>.</p>"
@@ -516,7 +516,7 @@
           "html": "<p>Let <var>session</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>.</p>"
         },
         {
-          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#ended\" id=\"ref-for-ended④\">ended</a> value is <code>true</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-ended\" id=\"ref-for-xrsession-ended④\">ended</a> value is <code>true</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
           "html": "<p>If <var>newState</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrrenderstateinit-baselayer\" id=\"ref-for-dom-xrrenderstateinit-baselayer\">baseLayer</a></code> was created with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession③⑧\">XRSession</a></code> other than <var>session</var>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑥\">InvalidStateError</a></code> and abort these steps.</p>"
@@ -920,7 +920,7 @@
           "html": "<p>Let <var>session</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>.</p>"
         },
         {
-          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#ended\" id=\"ref-for-ended⑤\">ended</a> value is <code>true</code>, return <code>0</code> and abort these steps.</p>"
+          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-ended\" id=\"ref-for-xrsession-ended⑤\">ended</a> value is <code>true</code>, return <code>0</code> and abort these steps.</p>"
         },
         {
           "html": "<p>Increment <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#animation-frame-callback-identifier\" id=\"ref-for-animation-frame-callback-identifier\">animation frame callback identifier</a> by one.</p>"
@@ -1759,7 +1759,7 @@
           "html": "<p>Let <var>layer</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new③⓪\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrwebgllayer\" id=\"ref-for-xrwebgllayer①②\">XRWebGLLayer</a></code> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm③①\">relevant realm</a> of <var>session</var>.</p>"
         },
         {
-          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#ended\" id=\"ref-for-ended⑥\">ended</a> value is <code>true</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①③\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-ended\" id=\"ref-for-xrsession-ended⑥\">ended</a> value is <code>true</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①③\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
           "html": "<p>If <var>context</var> is lost, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①④\">InvalidStateError</a></code> and abort these steps.</p>"
@@ -1935,7 +1935,7 @@
           "html": "<p>Let <var>session</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>.</p>"
         },
         {
-          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#ended\" id=\"ref-for-ended⑦\">ended</a> value is <code>true</code>, return <code>0.0</code> and abort these steps.</p>"
+          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-ended\" id=\"ref-for-xrsession-ended⑦\">ended</a> value is <code>true</code>, return <code>0.0</code> and abort these steps.</p>"
         },
         {
           "html": "<p>Return the value that the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#recommended-webgl-framebuffer-resolution\" id=\"ref-for-recommended-webgl-framebuffer-resolution③\">recommended WebGL framebuffer resolution</a> width and height must each be multiplied by to yield the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#native-webgl-framebuffer-resolution\" id=\"ref-for-native-webgl-framebuffer-resolution④\">native WebGL framebuffer resolution</a>.</p>"
