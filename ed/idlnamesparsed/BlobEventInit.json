@@ -6,10 +6,24 @@
       "title": "MediaStream Recording",
       "url": "https://www.w3.org/TR/mediastream-recording/"
     },
-    "fragment": "dictionary BlobEventInit {\n  required Blob data;\n  DOMHighResTimeStamp timecode;\n};",
+    "fragment": "dictionary BlobEventInit : EventInit {\n  required Blob data;\n  DOMHighResTimeStamp timecode;\n};",
     "href": "https://w3c.github.io/mediacapture-record/#dictdef-blobeventinit"
   },
   "extended": [],
-  "inheritance": null,
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
   "includes": []
 }

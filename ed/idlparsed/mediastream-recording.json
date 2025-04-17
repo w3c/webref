@@ -670,10 +670,10 @@
         "href": "https://w3c.github.io/mediacapture-record/#blobevent"
       },
       "BlobEventInit": {
-        "fragment": "dictionary BlobEventInit {\n  required Blob data;\n  DOMHighResTimeStamp timecode;\n};",
+        "fragment": "dictionary BlobEventInit : EventInit {\n  required Blob data;\n  DOMHighResTimeStamp timecode;\n};",
         "type": "dictionary",
         "name": "BlobEventInit",
-        "inheritance": null,
+        "inheritance": "EventInit",
         "members": [
           {
             "type": "field",
@@ -741,6 +741,7 @@
         "DOMHighResTimeStamp"
       ],
       "BlobEventInit": [
+        "EventInit",
         "Blob",
         "DOMHighResTimeStamp"
       ]
@@ -751,7 +752,8 @@
       "EventHandler",
       "DOMHighResTimeStamp",
       "Event",
-      "Blob"
+      "Blob",
+      "EventInit"
     ],
     "hasObsoleteIdl": false
   }

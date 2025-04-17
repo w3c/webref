@@ -497,7 +497,7 @@
       ],
       "XRSession": [
         {
-          "fragment": "partial interface XRSession {\n  readonly attribute XRDepthUsage depthUsage;\n  readonly attribute XRDepthDataFormat depthDataFormat;\n  readonly attribute XRDepthType? depthType;\n};",
+          "fragment": "partial interface XRSession {\n  readonly attribute XRDepthUsage depthUsage;\n  readonly attribute XRDepthDataFormat depthDataFormat;\n  readonly attribute XRDepthType? depthType;\n  readonly attribute boolean? depthActive;\n\n  undefined pauseDepthSensing();\n  undefined resumeDepthSensing();\n};",
           "type": "interface",
           "name": "XRSession",
           "inheritance": null,
@@ -549,6 +549,54 @@
               "special": "",
               "readonly": true,
               "href": "https://immersive-web.github.io/depth-sensing/#dom-xrsession-depthtype"
+            },
+            {
+              "type": "attribute",
+              "name": "depthActive",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true,
+              "href": "https://immersive-web.github.io/depth-sensing/#dom-xrsession-depthactive"
+            },
+            {
+              "type": "operation",
+              "name": "pauseDepthSensing",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://immersive-web.github.io/depth-sensing/#dom-xrsession-pausedepthsensing"
+            },
+            {
+              "type": "operation",
+              "name": "resumeDepthSensing",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://immersive-web.github.io/depth-sensing/#dom-xrsession-resumedepthsensing"
             }
           ],
           "extAttrs": [],
