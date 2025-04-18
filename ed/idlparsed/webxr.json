@@ -1474,6 +1474,72 @@
         "partial": false,
         "href": "https://immersive-web.github.io/webxr/#xrboundedreferencespace"
       },
+      "XRViewGeometry": {
+        "fragment": "[SecureContext, Exposed=Window] interface mixin XRViewGeometry {\n  readonly attribute Float32Array projectionMatrix;\n  [SameObject] readonly attribute XRRigidTransform transform;\n};",
+        "type": "interface mixin",
+        "name": "XRViewGeometry",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "projectionMatrix",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Float32Array"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrviewgeometry-projectionmatrix"
+          },
+          {
+            "type": "attribute",
+            "name": "transform",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRRigidTransform"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrviewgeometry-transform"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrviewgeometry"
+      },
       "XREye": {
         "fragment": "enum XREye {\n  \"none\",\n  \"left\",\n  \"right\"\n};",
         "type": "enum",
@@ -1499,7 +1565,7 @@
         "href": "https://immersive-web.github.io/webxr/#enumdef-xreye"
       },
       "XRView": {
-        "fragment": "[SecureContext, Exposed=Window] interface XRView {\n  readonly attribute XREye eye;\n  readonly attribute Float32Array projectionMatrix;\n  [SameObject] readonly attribute XRRigidTransform transform;\n  readonly attribute double? recommendedViewportScale;\n\n  undefined requestViewportScale(double? scale);\n};",
+        "fragment": "[SecureContext, Exposed=Window] interface XRView {\n  readonly attribute XREye eye;\n  readonly attribute double? recommendedViewportScale;\n\n  undefined requestViewportScale(double? scale);\n};",
         "type": "interface",
         "name": "XRView",
         "inheritance": null,
@@ -1519,45 +1585,6 @@
             "special": "",
             "readonly": true,
             "href": "https://immersive-web.github.io/webxr/#dom-xrview-eye"
-          },
-          {
-            "type": "attribute",
-            "name": "projectionMatrix",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "Float32Array"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://immersive-web.github.io/webxr/#dom-xrview-projectionmatrix"
-          },
-          {
-            "type": "attribute",
-            "name": "transform",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "XRRigidTransform"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true,
-            "href": "https://immersive-web.github.io/webxr/#dom-xrview-transform"
           },
           {
             "type": "attribute",
@@ -3631,6 +3658,15 @@
           "partial": true
         }
       ],
+      "XRView": [
+        {
+          "fragment": "XRView includes XRViewGeometry;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "XRView",
+          "includes": "XRViewGeometry"
+        }
+      ],
       "WebGLContextAttributes": [
         {
           "fragment": "partial dictionary WebGLContextAttributes {\n    boolean xrCompatible = false;\n};",
@@ -3717,6 +3753,7 @@
         "XRSpace",
         "XRReferenceSpace",
         "XRBoundedReferenceSpace",
+        "XRViewGeometry",
         "XRView",
         "XRViewport",
         "XRRigidTransform",
@@ -3785,10 +3822,13 @@
         "XRReferenceSpace",
         "DOMPointReadOnly"
       ],
-      "XRView": [
-        "XREye",
+      "XRViewGeometry": [
         "Float32Array",
         "XRRigidTransform"
+      ],
+      "XRView": [
+        "XREye",
+        "XRViewGeometry"
       ],
       "XRViewport": [],
       "XRRigidTransform": [

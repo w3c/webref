@@ -1,8 +1,6 @@
 // Source: WebXR Device API (https://www.w3.org/TR/webxr/)
 [SecureContext, Exposed=Window] interface XRView {
   readonly attribute XREye eye;
-  readonly attribute Float32Array projectionMatrix;
-  [SameObject] readonly attribute XRRigidTransform transform;
   readonly attribute double? recommendedViewportScale;
 
   undefined requestViewportScale(double? scale);
@@ -17,3 +15,6 @@ partial interface XRView {
 partial interface XRView {
   readonly attribute boolean isFirstPersonObserver;
 };
+
+// Source: WebXR Device API (https://www.w3.org/TR/webxr/)
+XRView includes XRViewGeometry;

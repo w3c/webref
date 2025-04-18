@@ -183,7 +183,7 @@
         "href": "https://immersive-web.github.io/depth-sensing/#dictdef-xrdepthstateinit"
       },
       "XRDepthInformation": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface XRDepthInformation {\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n\n  [SameObject] readonly attribute XRRigidTransform normDepthBufferFromNormView;\n  readonly attribute float rawValueToMeters;\n  readonly attribute XRView? view;\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRDepthInformation {\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n\n  [SameObject] readonly attribute XRRigidTransform normDepthBufferFromNormView;\n  readonly attribute float rawValueToMeters;\n};",
         "type": "interface",
         "name": "XRDepthInformation",
         "inheritance": null,
@@ -258,22 +258,6 @@
             "special": "",
             "readonly": true,
             "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-rawvaluetometers"
-          },
-          {
-            "type": "attribute",
-            "name": "view",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "XRView"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-view"
           }
         ],
         "extAttrs": [
@@ -603,6 +587,15 @@
           "partial": true
         }
       ],
+      "XRDepthInformation": [
+        {
+          "fragment": "XRDepthInformation includes XRViewGeometry;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "XRDepthInformation",
+          "includes": "XRViewGeometry"
+        }
+      ],
       "XRFrame": [
         {
           "fragment": "partial interface XRFrame {\n  XRCPUDepthInformation? getDepthInformation(XRView view);\n};",
@@ -718,7 +711,7 @@
       ],
       "XRDepthInformation": [
         "XRRigidTransform",
-        "XRView"
+        "XRViewGeometry"
       ],
       "XRCPUDepthInformation": [
         "XRDepthInformation",
@@ -742,9 +735,9 @@
       "XRSessionInit",
       "XRSession",
       "XRRigidTransform",
-      "XRView",
       "ArrayBuffer",
       "XRFrame",
+      "XRView",
       "WebGLTexture",
       "XRTextureType",
       "XRWebGLBinding"

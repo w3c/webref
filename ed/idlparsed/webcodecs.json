@@ -1767,7 +1767,7 @@
         "href": "https://w3c.github.io/webcodecs/#dictdef-videoencodersupport"
       },
       "AudioDecoderConfig": {
-        "fragment": "dictionary AudioDecoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long sampleRate;\n  [EnforceRange] required unsigned long numberOfChannels;\n  BufferSource description;\n};",
+        "fragment": "dictionary AudioDecoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long sampleRate;\n  [EnforceRange] required unsigned long numberOfChannels;\n  AllowSharedBufferSource description;\n};",
         "type": "dictionary",
         "name": "AudioDecoderConfig",
         "inheritance": null,
@@ -1844,7 +1844,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "BufferSource"
+              "idlType": "AllowSharedBufferSource"
             },
             "default": null,
             "required": false,
@@ -6206,7 +6206,7 @@
         "VideoEncoderConfig"
       ],
       "AudioDecoderConfig": [
-        "BufferSource"
+        "AllowSharedBufferSource"
       ],
       "VideoDecoderConfig": [
         "AllowSharedBufferSource",

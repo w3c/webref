@@ -6,7 +6,7 @@
       "title": "WebCodecs",
       "url": "https://www.w3.org/TR/webcodecs/"
     },
-    "fragment": "dictionary AudioDecoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long sampleRate;\n  [EnforceRange] required unsigned long numberOfChannels;\n  BufferSource description;\n};",
+    "fragment": "dictionary AudioDecoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long sampleRate;\n  [EnforceRange] required unsigned long numberOfChannels;\n  AllowSharedBufferSource description;\n};",
     "href": "https://w3c.github.io/webcodecs/#dictdef-audiodecoderconfig"
   },
   "extended": [],

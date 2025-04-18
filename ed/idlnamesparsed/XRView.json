@@ -6,7 +6,7 @@
       "title": "WebXR Device API",
       "url": "https://www.w3.org/TR/webxr/"
     },
-    "fragment": "[SecureContext, Exposed=Window] interface XRView {\n  readonly attribute XREye eye;\n  readonly attribute Float32Array projectionMatrix;\n  [SameObject] readonly attribute XRRigidTransform transform;\n  readonly attribute double? recommendedViewportScale;\n\n  undefined requestViewportScale(double? scale);\n};",
+    "fragment": "[SecureContext, Exposed=Window] interface XRView {\n  readonly attribute XREye eye;\n  readonly attribute double? recommendedViewportScale;\n\n  undefined requestViewportScale(double? scale);\n};",
     "href": "https://immersive-web.github.io/webxr/#xrview"
   },
   "extended": [
@@ -23,8 +23,31 @@
         "url": "https://www.w3.org/TR/webxr-ar-module-1/"
       },
       "fragment": "partial interface XRView {\n  readonly attribute boolean isFirstPersonObserver;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Device API",
+        "url": "https://www.w3.org/TR/webxr/"
+      },
+      "fragment": "XRView includes XRViewGeometry;"
     }
   ],
   "inheritance": null,
-  "includes": []
+  "includes": [
+    {
+      "name": "XRViewGeometry",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebXR Device API",
+          "url": "https://www.w3.org/TR/webxr/"
+        },
+        "fragment": "[SecureContext, Exposed=Window] interface mixin XRViewGeometry {\n  readonly attribute Float32Array projectionMatrix;\n  [SameObject] readonly attribute XRRigidTransform transform;\n};",
+        "href": "https://immersive-web.github.io/webxr/#xrviewgeometry"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
 }

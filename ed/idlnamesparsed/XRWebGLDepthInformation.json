@@ -18,12 +18,36 @@
         "title": "WebXR Depth Sensing Module",
         "url": "https://www.w3.org/TR/webxr-depth-sensing-1/"
       },
-      "fragment": "[SecureContext, Exposed=Window]\ninterface XRDepthInformation {\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n\n  [SameObject] readonly attribute XRRigidTransform normDepthBufferFromNormView;\n  readonly attribute float rawValueToMeters;\n  readonly attribute XRView? view;\n};",
+      "fragment": "[SecureContext, Exposed=Window]\ninterface XRDepthInformation {\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n\n  [SameObject] readonly attribute XRRigidTransform normDepthBufferFromNormView;\n  readonly attribute float rawValueToMeters;\n};",
       "href": "https://immersive-web.github.io/depth-sensing/#xrdepthinformation"
     },
-    "extended": [],
+    "extended": [
+      {
+        "spec": {
+          "title": "WebXR Depth Sensing Module",
+          "url": "https://www.w3.org/TR/webxr-depth-sensing-1/"
+        },
+        "fragment": "XRDepthInformation includes XRViewGeometry;"
+      }
+    ],
     "inheritance": null,
-    "includes": []
+    "includes": [
+      {
+        "name": "XRViewGeometry",
+        "type": "interface mixin",
+        "defined": {
+          "spec": {
+            "title": "WebXR Device API",
+            "url": "https://www.w3.org/TR/webxr/"
+          },
+          "fragment": "[SecureContext, Exposed=Window] interface mixin XRViewGeometry {\n  readonly attribute Float32Array projectionMatrix;\n  [SameObject] readonly attribute XRRigidTransform transform;\n};",
+          "href": "https://immersive-web.github.io/webxr/#xrviewgeometry"
+        },
+        "extended": [],
+        "inheritance": null,
+        "includes": []
+      }
+    ]
   },
   "includes": []
 }
