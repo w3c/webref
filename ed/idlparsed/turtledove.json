@@ -8,7 +8,8 @@
       "constructors": {},
       "functions": {
         "InterestGroupScriptRunnerGlobalScope": [
-          "InterestGroupScriptRunnerGlobalScope"
+          "InterestGroupScriptRunnerGlobalScope",
+          "ProtectedAudienceUtilities"
         ],
         "InterestGroupBiddingAndScoringScriptRunnerGlobalScope": [
           "ForDebuggingOnly",
@@ -2479,7 +2480,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-storageinterestgroup"
       },
       "InterestGroupScriptRunnerGlobalScope": {
-        "fragment": "[Exposed=InterestGroupScriptRunnerGlobalScope]\ninterface InterestGroupScriptRunnerGlobalScope {\n  readonly attribute PrivateAggregation? privateAggregation;\n};",
+        "fragment": "[Exposed=InterestGroupScriptRunnerGlobalScope]\ninterface InterestGroupScriptRunnerGlobalScope {\n  readonly attribute PrivateAggregation? privateAggregation;\n  readonly attribute ProtectedAudienceUtilities protectedAudience;\n};",
         "type": "interface",
         "name": "InterestGroupScriptRunnerGlobalScope",
         "inheritance": null,
@@ -2499,6 +2500,22 @@
             "special": "",
             "readonly": true,
             "href": "https://wicg.github.io/turtledove/#dom-interestgroupscriptrunnerglobalscope-privateaggregation"
+          },
+          {
+            "type": "attribute",
+            "name": "protectedAudience",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ProtectedAudienceUtilities"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://wicg.github.io/turtledove/#dom-interestgroupscriptrunnerglobalscope-protectedaudience"
           }
         ],
         "extAttrs": [
@@ -2686,6 +2703,93 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://wicg.github.io/turtledove/#dictdef-paextendedhistogramcontribution"
+      },
+      "ProtectedAudienceUtilities": {
+        "fragment": "[Exposed=InterestGroupScriptRunnerGlobalScope]\ninterface ProtectedAudienceUtilities {\n  Uint8Array encodeUtf8(USVString input);\n  USVString decodeUtf8(Uint8Array bytes);\n};",
+        "type": "interface",
+        "name": "ProtectedAudienceUtilities",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "encodeUtf8",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Uint8Array"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "input",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/turtledove/#dom-protectedaudienceutilities-encodeutf8"
+          },
+          {
+            "type": "operation",
+            "name": "decodeUtf8",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "bytes",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Uint8Array"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/turtledove/#dom-protectedaudienceutilities-decodeutf8"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "InterestGroupScriptRunnerGlobalScope"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#protectedaudienceutilities"
       },
       "ForDebuggingOnly": {
         "fragment": "[Exposed=InterestGroupBiddingAndScoringScriptRunnerGlobalScope]\ninterface ForDebuggingOnly {\n  undefined reportAdAuctionWin(USVString url);\n  undefined reportAdAuctionLoss(USVString url);\n};",
@@ -5469,7 +5573,8 @@
     },
     "exposed": {
       "InterestGroupScriptRunnerGlobalScope": [
-        "InterestGroupScriptRunnerGlobalScope"
+        "InterestGroupScriptRunnerGlobalScope",
+        "ProtectedAudienceUtilities"
       ],
       "InterestGroupBiddingAndScoringScriptRunnerGlobalScope": [
         "ForDebuggingOnly",
@@ -5541,11 +5646,15 @@
         "PreviousWin"
       ],
       "InterestGroupScriptRunnerGlobalScope": [
-        "PrivateAggregation"
+        "PrivateAggregation",
+        "ProtectedAudienceUtilities"
       ],
       "PASignalValue": [],
       "PAExtendedHistogramContribution": [
         "PASignalValue"
+      ],
+      "ProtectedAudienceUtilities": [
+        "Uint8Array"
       ],
       "ForDebuggingOnly": [],
       "RealTimeReporting": [

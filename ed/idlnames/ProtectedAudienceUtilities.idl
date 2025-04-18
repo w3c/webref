@@ -1,0 +1,6 @@
+// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
+[Exposed=InterestGroupScriptRunnerGlobalScope]
+interface ProtectedAudienceUtilities {
+  Uint8Array encodeUtf8(USVString input);
+  USVString decodeUtf8(Uint8Array bytes);
+};

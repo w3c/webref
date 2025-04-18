@@ -3082,6 +3082,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "parse-and-validate-a-ghost-winner",
+      "href": "https://wicg.github.io/turtledove/#parse-and-validate-a-ghost-winner",
+      "linkingText": [
+        "parse and validate a ghost winner"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-navigator-canloadadauctionfencedframe",
       "href": "https://wicg.github.io/turtledove/#dom-navigator-canloadadauctionfencedframe",
       "linkingText": [
@@ -8675,10 +8694,92 @@
       "definedIn": "pre"
     },
     {
+      "id": "protectedaudienceutilities",
+      "href": "https://wicg.github.io/turtledove/#protectedaudienceutilities",
+      "linkingText": [
+        "ProtectedAudienceUtilities"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global-scopes",
+        "href": "https://wicg.github.io/turtledove/#global-scopes",
+        "title": "Global scopes",
+        "number": "8.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-protectedaudienceutilities-encodeutf8-input-input",
+      "href": "https://wicg.github.io/turtledove/#dom-protectedaudienceutilities-encodeutf8-input-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ProtectedAudienceUtilities/encodeUtf8(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global-scopes",
+        "href": "https://wicg.github.io/turtledove/#global-scopes",
+        "title": "Global scopes",
+        "number": "8.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-protectedaudienceutilities-decodeutf8-bytes-bytes",
+      "href": "https://wicg.github.io/turtledove/#dom-protectedaudienceutilities-decodeutf8-bytes-bytes",
+      "linkingText": [
+        "bytes"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ProtectedAudienceUtilities/decodeUtf8(bytes)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global-scopes",
+        "href": "https://wicg.github.io/turtledove/#global-scopes",
+        "title": "Global scopes",
+        "number": "8.3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "interestgroupscriptrunnerglobalscope-private-aggregation",
       "href": "https://wicg.github.io/turtledove/#interestgroupscriptrunnerglobalscope-private-aggregation",
       "linkingText": [
         "private aggregation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InterestGroupScriptRunnerGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "global-scopes",
+        "href": "https://wicg.github.io/turtledove/#global-scopes",
+        "title": "Global scopes",
+        "number": "8.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "interestgroupscriptrunnerglobalscope-protected-audience-utilities",
+      "href": "https://wicg.github.io/turtledove/#interestgroupscriptrunnerglobalscope-protected-audience-utilities",
+      "linkingText": [
+        "protected audience utilities"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -8768,6 +8869,69 @@
       "type": "attribute",
       "for": [
         "InterestGroupScriptRunnerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global-scopes",
+        "href": "https://wicg.github.io/turtledove/#global-scopes",
+        "title": "Global scopes",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-interestgroupscriptrunnerglobalscope-protectedaudience",
+      "href": "https://wicg.github.io/turtledove/#dom-interestgroupscriptrunnerglobalscope-protectedaudience",
+      "linkingText": [
+        "protectedAudience"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InterestGroupScriptRunnerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global-scopes",
+        "href": "https://wicg.github.io/turtledove/#global-scopes",
+        "title": "Global scopes",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-protectedaudienceutilities-encodeutf8",
+      "href": "https://wicg.github.io/turtledove/#dom-protectedaudienceutilities-encodeutf8",
+      "linkingText": [
+        "encodeUtf8(input)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ProtectedAudienceUtilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global-scopes",
+        "href": "https://wicg.github.io/turtledove/#global-scopes",
+        "title": "Global scopes",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-protectedaudienceutilities-decodeutf8",
+      "href": "https://wicg.github.io/turtledove/#dom-protectedaudienceutilities-decodeutf8",
+      "linkingText": [
+        "decodeUtf8(bytes)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ProtectedAudienceUtilities"
       ],
       "access": "public",
       "informative": false,
