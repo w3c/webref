@@ -47,8 +47,9 @@ interface XRDepthInformation {
 
   [SameObject] readonly attribute XRRigidTransform normDepthBufferFromNormView;
   readonly attribute float rawValueToMeters;
-  readonly attribute XRView? view;
 };
+
+XRDepthInformation includes XRViewGeometry;
 
 [Exposed=Window]
 interface XRCPUDepthInformation : XRDepthInformation {
