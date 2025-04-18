@@ -5,7 +5,6 @@
   },
   "links": {
     "rawlinks": {
-      "https://datatracker.ietf.org/doc/html/bcp14": {},
       "https://dom.spec.whatwg.org/": {},
       "https://html.spec.whatwg.org/multipage/": {
         "anchors": [
@@ -29,43 +28,38 @@
           "concept-document-window"
         ]
       },
-      "https://webidl.spec.whatwg.org/": {
-        "anchors": [
-          "SecureContext",
-          "idl-promise",
-          "reject"
-        ]
-      },
+      "https://webidl.spec.whatwg.org/": {},
+      "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/rfc/rfc2119": {},
       "https://www.rfc-editor.org/rfc/rfc8174": {},
-      "https://www.w3.org/2023/Process-20230612/": {
-        "anchors": [
-          "recs-and-notes"
-        ]
-      },
-      "https://www.w3.org/Consortium/Patent-Policy/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/mediacapture-streams/": {
         "anchors": [
           "event-mediadevices-devicechange",
           "device-exposure-decision-non-camera-microphone",
-          "def-mediadeviceinfo-groupId"
+          "dfn-associated-mediadevices"
         ]
       },
       "https://www.w3.org/TR/permissions-policy-1/": {},
       "https://www.w3.org/TR/permissions/": {},
-      "https://www.w3.org/TR/webaudio/": {
+      "https://www.w3.org/TR/webaudio-1.0/": {
         "anchors": [
           "allowed-to-start"
         ]
       },
       "https://www.w3.org/groups/wg/webrtc": {},
-      "https://www.w3.org/groups/wg/webrtc/ipr": {}
+      "https://www.w3.org/groups/wg/webrtc/ipr": {},
+      "https://www.w3.org/policies/patent-policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/policies/process/20231103/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      }
     },
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
@@ -101,13 +95,16 @@
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
+          "SecureContext",
           "idl-DOMString",
+          "idl-promise",
           "idl-undefined",
           "idl-DOMException",
           "notallowederror",
           "notfounderror",
           "aborterror",
           "this",
+          "reject",
           "dom-domexception-name",
           "invalidstateerror"
         ]
@@ -119,11 +116,12 @@
           "dom-mediadevices-enumeratedevices",
           "event-mediadevices-devicechange",
           "dom-mediadevices",
-          "creating-a-device-info-object",
           "dom-mediadevices-getusermedia",
+          "creating-a-device-info-object",
           "dom-mediadeviceinfo-groupid",
           "dom-mediadeviceinfo-kind",
-          "idl-def-MediaDeviceKind.audiooutput"
+          "idl-def-MediaDeviceKind.audiooutput",
+          "microphone-information-can-be-exposed"
         ]
       },
       "https://www.w3.org/TR/permissions-policy-1/": {
@@ -144,7 +142,7 @@
           "dom-permissionstate-granted"
         ]
       },
-      "https://www.w3.org/TR/webaudio/": {
+      "https://www.w3.org/TR/webaudio-1.0/": {
         "anchors": [
           "AudioContext"
         ]

@@ -1099,10 +1099,13 @@
               "html": "<p>Initialize <var>xrview</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-session\" id=\"ref-for-xrview-session\">session</a> to <var>session</var>.</p>"
             },
             {
-              "html": "<p>Let <var>offset</var> be an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new⑤\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrrigidtransform\" id=\"ref-for-xrrigidtransform\">XRRigidTransform</a></code> object equal to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-offset\" id=\"ref-for-view-offset\">view offset</a> of <var>view</var> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①①\">relevant realm</a> of <var>session</var>.</p>"
+              "html": "<p>Initialize <var>xrview</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-reference-space\" id=\"ref-for-view-reference-space\">reference space</a> to <var>referenceSpace</var>.</p>"
             },
             {
-              "html": "<p>Set <var>xrview</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrview-transform\" id=\"ref-for-dom-xrview-transform\">transform</a></code> property to the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#multiply-transforms\" id=\"ref-for-multiply-transforms\">multiplying</a> the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrviewerpose\" id=\"ref-for-xrviewerpose③\">XRViewerPose</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrpose-transform\" id=\"ref-for-dom-xrpose-transform\">transform</a></code> by the <var>offset</var> transform in the relevant realm of <var>session</var></p>"
+              "html": "<p>Let <var>offset</var> be an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new⑤\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrrigidtransform\" id=\"ref-for-xrrigidtransform\">XRRigidTransform</a></code> object equal to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-geometry-view-offset\" id=\"ref-for-view-geometry-view-offset\">view offset</a> of <var>view</var> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①①\">relevant realm</a> of <var>session</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>xrview</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrviewgeometry-transform\" id=\"ref-for-dom-xrviewgeometry-transform\">transform</a></code> property to the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#multiply-transforms\" id=\"ref-for-multiply-transforms\">multiplying</a> the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrviewerpose\" id=\"ref-for-xrviewerpose③\">XRViewerPose</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrpose-transform\" id=\"ref-for-dom-xrpose-transform\">transform</a></code> by the <var>offset</var> transform in the relevant realm of <var>session</var></p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>xrview</var> to <var>xrviews</var></p>"
@@ -1335,6 +1338,29 @@
       ]
     },
     {
+      "name": "obtain-xrviewGeometry-projection",
+      "href": "https://www.w3.org/TR/webxr/#xrviewgeometry-obtain-the-projection-matrix",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRViewGeometry\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xrviewgeometry-obtain-the-projection-matrix\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the projection matrix</dfn> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrviewgeometry\" id=\"ref-for-xrviewgeometry③\">XRViewGeometry</a></code> <var>view geometry</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>view geometry</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrviewgeometry-internal-projection-matrix\" id=\"ref-for-xrviewgeometry-internal-projection-matrix\">internal projection matrix</a> is not <code>null</code>, perform the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the operation <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-isdetachedbuffer\" id=\"ref-for-sec-isdetachedbuffer\">IsDetachedBuffer</a></code> on <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrviewgeometry-internal-projection-matrix\" id=\"ref-for-xrviewgeometry-internal-projection-matrix①\">internal projection matrix</a> is <code>false</code>, return <var>view geometry</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrviewgeometry-internal-projection-matrix\" id=\"ref-for-xrviewgeometry-internal-projection-matrix②\">internal projection matrix</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Set <var>view geometry</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrviewgeometry-internal-projection-matrix\" id=\"ref-for-xrviewgeometry-internal-projection-matrix③\">internal projection matrix</a> to a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①①\">new</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#matrix\" id=\"ref-for-matrix①\">matrix</a> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①⑧\">relevant realm</a> of <var>view geometry</var> which is equal to <var>view geometry</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-geometry-projection-matrix\" id=\"ref-for-view-geometry-projection-matrix③\">projection matrix</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>view geometry</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrviewgeometry-internal-projection-matrix\" id=\"ref-for-xrviewgeometry-internal-projection-matrix④\">internal projection matrix</a>.</p>"
+        }
+      ]
+    },
+    {
       "name": "request-viewport-scale",
       "href": "https://www.w3.org/TR/webxr/#dom-xrview-requestviewportscale",
       "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRView\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrview-requestviewportscale\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestViewportScale(<var>scale</var>)</code></dfn> method requests that the user agent should set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-requested-viewport-scale\" id=\"ref-for-view-requested-viewport-scale①\">requested viewport scale</a> for this viewport to the requested value.",
@@ -1350,7 +1376,7 @@
           "html": "<p>If <var>scale</var> is greater than 1.0, set <var>scale</var> to 1.0.</p>"
         },
         {
-          "html": "<p>Let <var>view</var> be <var>xrview</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-underlying-view\" id=\"ref-for-xrview-underlying-view②\">underlying view</a>.</p>"
+          "html": "<p>Let <var>view</var> be <var>xrview</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-underlying-view\" id=\"ref-for-xrview-underlying-view①\">underlying view</a>.</p>"
         },
         {
           "html": "<p>Set the <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-requested-viewport-scale\" id=\"ref-for-view-requested-viewport-scale②\">requested viewport scale</a> value to <var>scale</var>.</p>"
@@ -1358,32 +1384,9 @@
       ]
     },
     {
-      "name": "obtain-xrview-projection",
-      "href": "https://www.w3.org/TR/webxr/#xrview-obtain-the-projection-matrix",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRView\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xrview-obtain-the-projection-matrix\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the projection matrix</dfn> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview①⓪\">XRView</a></code> <var>view</var>:",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "If <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-internal-projection-matrix\" id=\"ref-for-xrview-internal-projection-matrix\">internal projection matrix</a> is not <code>null</code>, perform the following steps:",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "<p>If the operation <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-isdetachedbuffer\" id=\"ref-for-sec-isdetachedbuffer\">IsDetachedBuffer</a></code> on <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-internal-projection-matrix\" id=\"ref-for-xrview-internal-projection-matrix①\">internal projection matrix</a> is <code>false</code>, return <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-internal-projection-matrix\" id=\"ref-for-xrview-internal-projection-matrix②\">internal projection matrix</a>.</p>"
-            }
-          ]
-        },
-        {
-          "html": "<p>Set <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-internal-projection-matrix\" id=\"ref-for-xrview-internal-projection-matrix③\">internal projection matrix</a> to a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①①\">new</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#matrix\" id=\"ref-for-matrix①\">matrix</a> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①⑧\">relevant realm</a> of <var>view</var> which is equal to <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-underlying-view\" id=\"ref-for-xrview-underlying-view③\">underlying view</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-projection-matrix\" id=\"ref-for-view-projection-matrix③\">projection matrix</a>.</p>"
-        },
-        {
-          "html": "<p>Return <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-internal-projection-matrix\" id=\"ref-for-xrview-internal-projection-matrix④\">internal projection matrix</a>.</p>"
-        }
-      ]
-    },
-    {
       "name": "update-the-viewports",
       "href": "https://www.w3.org/TR/webxr/#update-the-viewports",
-      "html": "When the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-active\" id=\"ref-for-view-active④\">active</a> flag of any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view\" id=\"ref-for-view②⑥\">view</a> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views⑤\">list of views</a> changes, one can <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-the-viewports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the viewports</dfn> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⓪\">XRSession</a></code> <var>session</var> by performing the following steps:",
+      "html": "When the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-active\" id=\"ref-for-view-active④\">active</a> flag of any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view\" id=\"ref-for-view②③\">view</a> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views⑤\">list of views</a> changes, one can <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-the-viewports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the viewports</dfn> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⓪\">XRSession</a></code> <var>session</var> by performing the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1396,7 +1399,7 @@
           "html": "<p>Set <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-viewport-objects\" id=\"ref-for-list-of-viewport-objects\">list of viewport objects</a> to the empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⓪\">list</a>.</p>"
         },
         {
-          "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-active\" id=\"ref-for-view-active⑤\">active</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view\" id=\"ref-for-view②⑦\">view</a> <var>view</var> in <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views⑥\">list of views</a>:",
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-active\" id=\"ref-for-view-active⑤\">active</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view\" id=\"ref-for-view②④\">view</a> <var>view</var> in <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views⑥\">list of views</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -1412,7 +1415,7 @@
     {
       "name": "obtain-scaled-viewport",
       "href": "https://www.w3.org/TR/webxr/#xrview-obtain-a-scaled-viewport",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRView\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xrview-obtain-a-scaled-viewport\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a scaled viewport</dfn> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview①①\">XRView</a></code> <var>view</var> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪①\">XRSession</a></code> <var>session</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRView\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xrview-obtain-a-scaled-viewport\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a scaled viewport</dfn> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview⑨\">XRView</a></code> <var>view</var> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪①\">XRSession</a></code> <var>session</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1918,7 +1921,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-mode\" id=\"ref-for-xrsession-mode⑤\">mode</a> value is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsessionmode-inline\" id=\"ref-for-dom-xrsessionmode-inline②⓪\">\"inline\"</a></code>, set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#native-webgl-framebuffer-resolution\" id=\"ref-for-native-webgl-framebuffer-resolution①\">native WebGL framebuffer resolution</a> to the resolution required to have a 1:1 ratio between the pixels of a framebuffer large enough to contain all of the session’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview①⑧\">XRView</a></code>s and the physical screen pixels in the area of the display under the highest magnification and abort these steps. If no method exists to determine the native resolution as described, the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#recommended-webgl-framebuffer-resolution\" id=\"ref-for-recommended-webgl-framebuffer-resolution①\">recommended WebGL framebuffer resolution</a> MAY be used.</p>"
+          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-mode\" id=\"ref-for-xrsession-mode⑤\">mode</a> value is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsessionmode-inline\" id=\"ref-for-dom-xrsessionmode-inline②⓪\">\"inline\"</a></code>, set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#native-webgl-framebuffer-resolution\" id=\"ref-for-native-webgl-framebuffer-resolution①\">native WebGL framebuffer resolution</a> to the resolution required to have a 1:1 ratio between the pixels of a framebuffer large enough to contain all of the session’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview①⑥\">XRView</a></code>s and the physical screen pixels in the area of the display under the highest magnification and abort these steps. If no method exists to determine the native resolution as described, the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#recommended-webgl-framebuffer-resolution\" id=\"ref-for-recommended-webgl-framebuffer-resolution①\">recommended WebGL framebuffer resolution</a> MAY be used.</p>"
         },
         {
           "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-mode\" id=\"ref-for-xrsession-mode⑥\">mode</a> value is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsessionmode-inline\" id=\"ref-for-dom-xrsessionmode-inline②①\">\"inline\"</a></code>, set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#native-webgl-framebuffer-resolution\" id=\"ref-for-native-webgl-framebuffer-resolution②\">native WebGL framebuffer resolution</a> to the size of the <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-renderstate\" id=\"ref-for-dom-xrsession-renderstate⑥\">renderState</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrrenderstate-output-canvas\" id=\"ref-for-xrrenderstate-output-canvas⑨\">output canvas</a> in physical display pixels and reevaluate these steps every time the size of the canvas changes or the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrrenderstate-output-canvas\" id=\"ref-for-xrrenderstate-output-canvas①⓪\">output canvas</a> is changed.</p>"
@@ -2183,7 +2186,7 @@
           "html": "<p>If either <var>space</var> or <var>baseSpace</var> are an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrboundedreferencespace\" id=\"ref-for-xrboundedreferencespace①③\">XRBoundedReferenceSpace</a></code> and the other space’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrspace-native-origin\" id=\"ref-for-xrspace-native-origin②①\">native origin</a> falls further outside the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrboundedreferencespace-native-bounds-geometry\" id=\"ref-for-xrboundedreferencespace-native-bounds-geometry⑥\">native bounds geometry</a> than a reasonable distance determined by the user agent, return true.</p>"
         },
         {
-          "html": "<p>If either <var>space</var> or <var>baseSpace</var> are an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrreferencespace\" id=\"ref-for-xrreferencespace③⑥\">XRReferenceSpace</a></code> with a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrreferencespace-type\" id=\"ref-for-xrreferencespace-type③\">type</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-local\" id=\"ref-for-dom-xrreferencespacetype-local①⓪\">\"local\"</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-local-floor\" id=\"ref-for-dom-xrreferencespacetype-local-floor①⓪\">\"local-floor\"</a></code> and the distance between the spaces' <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrspace-native-origin\" id=\"ref-for-xrspace-native-origin②②\">native origins</a> is greater than a reasonable distance determined by the user agent, return <code>true</code>.</p>"
+          "html": "<p>If either <var>space</var> or <var>baseSpace</var> are an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrreferencespace\" id=\"ref-for-xrreferencespace③⑦\">XRReferenceSpace</a></code> with a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrreferencespace-type\" id=\"ref-for-xrreferencespace-type③\">type</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-local\" id=\"ref-for-dom-xrreferencespacetype-local①⓪\">\"local\"</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-local-floor\" id=\"ref-for-dom-xrreferencespacetype-local-floor①⓪\">\"local-floor\"</a></code> and the distance between the spaces' <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrspace-native-origin\" id=\"ref-for-xrspace-native-origin②②\">native origins</a> is greater than a reasonable distance determined by the user agent, return <code>true</code>.</p>"
         },
         {
           "html": "<p>Return <code>false</code>.</p>"

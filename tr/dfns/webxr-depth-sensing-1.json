@@ -453,6 +453,69 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-xrsession-depthactive",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthactive",
+      "linkingText": [
+        "depthActive"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "session-configuration",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#session-configuration",
+        "title": "Session configuration",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrsession-pausedepthsensing",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-pausedepthsensing",
+      "linkingText": [
+        "pauseDepthSensing()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "session-configuration",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#session-configuration",
+        "title": "Session configuration",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrsession-resumedepthsensing",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-resumedepthsensing",
+      "linkingText": [
+        "resumeDepthSensing()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "session-configuration",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#session-configuration",
+        "title": "Session configuration",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "xrdepthinformation",
       "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation",
       "linkingText": [
@@ -556,17 +619,17 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-xrdepthinformation-view",
-      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-view",
+      "id": "xrdepthinformation-view",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-view",
       "linkingText": [
         "view"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dfn",
       "for": [
         "XRDepthInformation"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "xr-depth-info-section",
@@ -574,13 +637,13 @@
         "title": "XRDepthInformation",
         "number": "3.1"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
-      "id": "xrdepthinformation-view",
-      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-view",
+      "id": "xrdepthinformation-sensor",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-sensor",
       "linkingText": [
-        "view"
+        "sensor"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1172,6 +1235,24 @@
       "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#preferred-native-depth-sensing-capability",
       "linkingText": [
         "preferred native depth sensing capability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#title",
+        "title": "WebXR Depth Sensing Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "depth-sensing-active-state",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#depth-sensing-active-state",
+      "linkingText": [
+        "depth sensing active state"
       ],
       "localLinkingText": [],
       "type": "dfn",

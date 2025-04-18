@@ -120,6 +120,9 @@
           "html": "<p>Let <var>features</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a> of values in <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudevicedescriptor-requiredfeatures\" id=\"ref-for-dom-gpudevicedescriptor-requiredfeatures\">requiredFeatures</a></code>.</p>"
         },
         {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#core-features-and-limits\" id=\"ref-for-core-features-and-limits\">\"core-features-and-limits\"</a></code> to <var>features</var>.</p>"
+        },
+        {
           "html": "<p>Let <var>limits</var> be a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#supported-limits\" id=\"ref-for-supported-limits③\">supported limits</a> object with all values set to their defaults.</p>"
         },
         {
@@ -356,13 +359,19 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>adapter</var> to an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#adapter\" id=\"ref-for-adapter③①\">adapter</a> chosen according to\nthe rules in <a href=\"https://www.w3.org/TR/webgpu/#adapter-selection\">§ 4.2.2 Adapter Selection</a> and the criteria in <var>options</var>,\nadhering to <a href=\"https://www.w3.org/TR/webgpu/#adapter-capability-guarantees\">§ 4.2.1 Adapter Capability Guarantees</a>.</p>\n           <p>The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#supported-limits\" id=\"ref-for-supported-limits⑥\">supported limits</a> of the adapter must adhere to the requirements\ndefined in <a href=\"https://www.w3.org/TR/webgpu/#limits\">§ 3.6.2 Limits</a>.</p>"
-            },
-            {
-              "html": "<p>If <var>adapter</var> meets the criteria of a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fallback-adapter\" id=\"ref-for-fallback-adapter③\">fallback adapter</a> set <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-adapter-fallback-slot\" id=\"ref-for-dom-adapter-fallback-slot①\" data-timeline=\"const\">[[fallback]]</a></code> to <code>true</code>.</p>"
-            },
-            {
-              "html": "<p>Set <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-adapter-xrcompatible-slot\" id=\"ref-for-dom-adapter-xrcompatible-slot\" data-timeline=\"const\">[[xrCompatible]]</a></code> to <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurequestadapteroptions-xrcompatible\" id=\"ref-for-dom-gpurequestadapteroptions-xrcompatible\">xrCompatible</a></code>.</p>"
+              "html": "Set <var>adapter</var> to an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#adapter\" id=\"ref-for-adapter③①\">adapter</a> chosen according to\nthe rules in <a href=\"https://www.w3.org/TR/webgpu/#adapter-selection\">§ 4.2.2 Adapter Selection</a> and the criteria in <var>options</var>,\nadhering to <a href=\"https://www.w3.org/TR/webgpu/#adapter-capability-guarantees\">§ 4.2.1 Adapter Capability Guarantees</a>.\nInitialize the properties of <var>adapter</var> according to their definitions:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-adapter-limits-slot\" id=\"ref-for-dom-adapter-limits-slot\" data-timeline=\"const\">[[limits]]</a></code> and <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-adapter-features-slot\" id=\"ref-for-dom-adapter-features-slot\" data-timeline=\"const\">[[features]]</a></code> according to the supported capabilities of the adapter. <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-adapter-features-slot\" id=\"ref-for-dom-adapter-features-slot①\" data-timeline=\"const\">[[features]]</a></code> must contain <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#core-features-and-limits\" id=\"ref-for-core-features-and-limits①\">\"core-features-and-limits\"</a></code>.</p>"
+                },
+                {
+                  "html": "<p>If <var>adapter</var> meets the criteria of a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fallback-adapter\" id=\"ref-for-fallback-adapter③\">fallback adapter</a> set <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-adapter-fallback-slot\" id=\"ref-for-dom-adapter-fallback-slot①\" data-timeline=\"const\">[[fallback]]</a></code> to <code>true</code>. Otherwise, set it to <code>false</code>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-adapter-xrcompatible-slot\" id=\"ref-for-dom-adapter-xrcompatible-slot\" data-timeline=\"const\">[[xrCompatible]]</a></code> to <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurequestadapteroptions-xrcompatible\" id=\"ref-for-dom-gpurequestadapteroptions-xrcompatible\">xrCompatible</a></code>.</p>"
+                }
+              ]
             }
           ],
           "additional": [
@@ -475,10 +484,10 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p><var>key</var> <var>must</var> be the name of a member of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#supported-limits\" id=\"ref-for-supported-limits⑦\">supported limits</a>.</p>"
+                  "html": "<p><var>key</var> <var>must</var> be the name of a member of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#supported-limits\" id=\"ref-for-supported-limits⑥\">supported limits</a>.</p>"
                 },
                 {
-                  "html": "<p><var>value</var> <var>must</var> be no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#limit-better\" id=\"ref-for-limit-better①⓪\">better</a> than <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-adapter-limits-slot\" id=\"ref-for-dom-adapter-limits-slot①\" data-timeline=\"const\">[[limits]]</a></code>[<var>key</var>].</p>"
+                  "html": "<p><var>value</var> <var>must</var> be no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#limit-better\" id=\"ref-for-limit-better①⓪\">better</a> than <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-adapter-limits-slot\" id=\"ref-for-dom-adapter-limits-slot②\" data-timeline=\"const\">[[limits]]</a></code>[<var>key</var>].</p>"
                 },
                 {
                   "html": "<p>If <var>key</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#limit-class\" id=\"ref-for-limit-class②\">class</a> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#limit-class-alignment\" id=\"ref-for-limit-class-alignment③\">alignment</a>, <var>value</var> <var>must</var> be a power of 2 less than 2<sup>32</sup>.</p>"
@@ -1698,7 +1707,7 @@
     {
       "name": "exceeds the binding slot limits",
       "href": "https://www.w3.org/TR/webgpu/#exceeds-the-binding-slot-limits",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dictdef-gpubindgrouplayoutentry\" id=\"ref-for-dictdef-gpubindgrouplayoutentry②⑥\">GPUBindGroupLayoutEntry</a></code> values <var>entries</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"exceeds-the-binding-slot-limits\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">exceeds the binding slot limits</dfn> of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#supported-limits\" id=\"ref-for-supported-limits⑨\">supported limits</a> <var>limits</var> if the number of slots used toward a limit exceeds the supported value in <var>limits</var>.\n    Each entry may use multiple slots toward multiple limits. \n    <p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#device-timeline\" id=\"ref-for-device-timeline⑤②\">Device timeline</a> steps:</p>",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dictdef-gpubindgrouplayoutentry\" id=\"ref-for-dictdef-gpubindgrouplayoutentry②⑥\">GPUBindGroupLayoutEntry</a></code> values <var>entries</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"exceeds-the-binding-slot-limits\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">exceeds the binding slot limits</dfn> of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#supported-limits\" id=\"ref-for-supported-limits⑧\">supported limits</a> <var>limits</var> if the number of slots used toward a limit exceeds the supported value in <var>limits</var>.\n    Each entry may use multiple slots toward multiple limits. \n    <p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#device-timeline\" id=\"ref-for-device-timeline⑤②\">Device timeline</a> steps:</p>",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1862,7 +1871,7 @@
               ]
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> (<var>bindGroupLayoutEntry</var>, <var>bound</var>) to <var>result</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> (<var>bindGroupLayoutEntry</var>, <var>bound</var>) to <var>result</var>.</p>"
             }
           ]
         },
