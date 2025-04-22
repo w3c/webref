@@ -8,7 +8,7 @@
       "name": "I/O queue/read",
       "href": "https://encoding.spec.whatwg.org/#concept-stream-read",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"I/O queue\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-stream-read\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read</dfn> an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item④\">item</a> from an <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream\" id=\"ref-for-concept-stream⑤\">I/O queue</a> <var>ioQueue</var>, run these steps:",
-      "rationale": "if",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>If <var>ioQueue</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is empty</a>, then wait until its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is\n at least 1. </p>"
@@ -22,8 +22,9 @@
       ]
     },
     {
+      "name": "I/O queue/read items",
       "html": "To <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-read\" id=\"ref-for-concept-stream-read①\">read</a> a number <var>number</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑤\">items</a> from <var>ioQueue</var>, run these steps:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>readItems</var> be « ». </p>"
@@ -49,7 +50,7 @@
       "name": "I/O queue/peek",
       "href": "https://encoding.spec.whatwg.org/#i-o-queue-peek",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"I/O queue\" data-dfn-type=\"dfn\" data-export=\"\" id=\"i-o-queue-peek\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">peek</dfn> a number <var>number</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑥\">items</a> from an <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream\" id=\"ref-for-concept-stream⑥\">I/O queue</a> <var>ioQueue</var>, run these steps:",
-      "rationale": "wait",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Wait until either <var>ioQueue</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> is equal to or greater than <var>number</var>, or <var>ioQueue</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑥\">end-of-queue</a>, whichever\n comes first. </p>"
@@ -78,7 +79,7 @@
       "name": "I/O queue/push",
       "href": "https://encoding.spec.whatwg.org/#concept-stream-push",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"I/O queue\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-stream-push\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">push</dfn> an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑦\">item</a> <var>item</var> to an <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream\" id=\"ref-for-concept-stream⑦\">I/O queue</a> <var>ioQueue</var>, run these steps:",
-      "rationale": "if",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "If the last <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑧\">item</a> in <var>ioQueue</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑧\">end-of-queue</a>, then:",
@@ -101,7 +102,7 @@
       "name": "to I/O queue/convert",
       "href": "https://encoding.spec.whatwg.org/#to-i-o-queue-convert",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"to I/O queue\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"to-i-o-queue-convert\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">convert</dfn> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a>, or <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①\">byte sequence</a> <var>input</var> into an <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream\" id=\"ref-for-concept-stream①②\">I/O queue</a>, run these steps:",
-      "rationale": "assert",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Assert: if <var>input</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a>, then it does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contain</a> <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream①④\">end-of-queue</a>. </p>"
@@ -115,7 +116,7 @@
       "name": "process a queue",
       "href": "https://encoding.spec.whatwg.org/#concept-encoding-run",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"process a queue|processing a queue\" data-noexport=\"\" id=\"concept-encoding-run\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process a queue</dfn> given an <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding⑦\">encoding</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#decoder\" id=\"ref-for-decoder②\">decoder</a> or <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder④\">encoder</a> instance <var>encoderDecoder</var>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream\" id=\"ref-for-concept-stream①⑥\">I/O queue</a> <var>input</var>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream\" id=\"ref-for-concept-stream①⑦\">I/O queue</a> <var>output</var>, and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error-mode\" id=\"ref-for-error-mode③\">error mode</a> <var>mode</var>:",
-      "rationale": "while",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "While true:",
@@ -135,7 +136,7 @@
       "name": "process an item",
       "href": "https://encoding.spec.whatwg.org/#concept-encoding-process",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"process an item|processing an item\" data-noexport=\"\" id=\"concept-encoding-process\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process an item</dfn> given an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①⑥\">item</a> <var>item</var>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding⑧\">encoding</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder⑤\">encoder</a> or <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#decoder\" id=\"ref-for-decoder③\">decoder</a> instance <var>encoderDecoder</var>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream\" id=\"ref-for-concept-stream①⑧\">I/O queue</a> <var>input</var>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream\" id=\"ref-for-concept-stream①⑨\">I/O queue</a> <var>output</var>, and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error-mode\" id=\"ref-for-error-mode④\">error mode</a> <var>mode</var>:",
-      "rationale": "assert",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Assert: if <var>encoderDecoder</var> is an <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder⑥\">encoder</a> instance, <var>mode</var> is\n not \"<code>replacement</code>\". </p>"
@@ -205,7 +206,7 @@
       "name": "get an encoding",
       "href": "https://encoding.spec.whatwg.org/#concept-encoding-get",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"get an encoding|getting an encoding\" id=\"concept-encoding-get\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get an encoding</dfn> from a string <var>label</var>, run these steps:",
-      "rationale": "remove",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Remove any leading and trailing <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-whitespace\" id=\"ref-for-ascii-whitespace\">ASCII whitespace</a> from <var>label</var>. </p>"
@@ -233,7 +234,7 @@
       "name": "index gb18030 ranges code point",
       "href": "https://encoding.spec.whatwg.org/#index-gb18030-ranges-code-point",
       "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"index-gb18030-ranges-code-point\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">index gb18030 ranges code point</dfn> for <var>pointer</var> is\nthe return value of these steps:",
-      "rationale": "if",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>If <var>pointer</var> is greater than 39419 and less than\n 189000, or <var>pointer</var> is greater than 1237575, return null. </p>"
@@ -253,7 +254,7 @@
       "name": "index gb18030 ranges pointer",
       "href": "https://encoding.spec.whatwg.org/#index-gb18030-ranges-pointer",
       "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"index-gb18030-ranges-pointer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">index gb18030 ranges pointer</dfn> for <var>code point</var> is\nthe return value of these steps:",
-      "rationale": "if",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>If <var>code point</var> is U+E7C7, return pointer 7457. </p>"
@@ -270,7 +271,7 @@
       "name": "index Shift_JIS pointer",
       "href": "https://encoding.spec.whatwg.org/#index-shift_jis-pointer",
       "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"index-shift_jis-pointer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">index Shift_JIS pointer</dfn> for <var>code point</var> is the return value of these\nsteps:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>index</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-jis0208\" id=\"ref-for-index-jis0208①\">index jis0208</a> excluding all entries whose pointer is in\n  the range 8272 to 8835, inclusive. </p>"
@@ -284,7 +285,7 @@
       "name": "index Big5 pointer",
       "href": "https://encoding.spec.whatwg.org/#index-big5-pointer",
       "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"index-big5-pointer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">index Big5 pointer</dfn> for <var>code point</var> is the return value of\nthese steps:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>index</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-big5\" id=\"ref-for-index-big5\">index Big5</a> excluding all entries whose pointer is less\n  than (0xA1 - 0x81) × 157. </p>"
@@ -301,7 +302,7 @@
       "name": "UTF-8 decode",
       "href": "https://encoding.spec.whatwg.org/#utf-8-decode",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"utf-8-decode\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">UTF-8 decode</dfn> an I/O queue of bytes <var>ioQueue</var> given an optional I/O\nqueue of scalar values <var>output</var> (default « »), run these steps:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>buffer</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#i-o-queue-peek\" id=\"ref-for-i-o-queue-peek\">peeking</a> three bytes from <var>ioQueue</var>, converted to a byte sequence. </p>"
@@ -321,7 +322,7 @@
       "name": "UTF-8 decode without BOM",
       "href": "https://encoding.spec.whatwg.org/#utf-8-decode-without-bom",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"utf-8-decode-without-bom\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">UTF-8 decode without BOM</dfn> an I/O queue of bytes <var>ioQueue</var> given an\noptional I/O queue of scalar values <var>output</var> (default « »), run these steps:",
-      "rationale": "process",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-encoding-run\" id=\"ref-for-concept-encoding-run①\">Process a queue</a> with an instance of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8⑧\">UTF-8</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#decoder\" id=\"ref-for-decoder⑧\">decoder</a>, <var>ioQueue</var>, <var>output</var>, and \"<code>replacement</code>\". </p>"
@@ -335,7 +336,7 @@
       "name": "UTF-8 decode without BOM or fail",
       "href": "https://encoding.spec.whatwg.org/#utf-8-decode-without-bom-or-fail",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"utf-8-decode-without-bom-or-fail\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">UTF-8 decode without BOM or fail</dfn> an I/O queue of bytes <var>ioQueue</var> given an optional I/O queue of scalar values <var>output</var> (default « »), run these steps:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>potentialError</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-encoding-run\" id=\"ref-for-concept-encoding-run②\">processing a queue</a> with an instance of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8⑨\">UTF-8</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#decoder\" id=\"ref-for-decoder⑨\">decoder</a>, <var>ioQueue</var>, <var>output</var>, and\n \"<code>fatal</code>\". </p>"
@@ -358,7 +359,7 @@
       "name": "decode",
       "href": "https://encoding.spec.whatwg.org/#decode",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"decode\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">decode</dfn> an I/O queue of bytes <var>ioQueue</var> given a fallback encoding <var>encoding</var> and an optional I/O queue of scalar values <var>output</var> (default « »), run\nthese steps:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>BOMEncoding</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#bom-sniff\" id=\"ref-for-bom-sniff①\">BOM sniffing</a> <var>ioQueue</var>. </p>"
@@ -387,13 +388,13 @@
       "name": "BOM sniff",
       "href": "https://encoding.spec.whatwg.org/#bom-sniff",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"bom-sniff\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">BOM sniff</dfn> an I/O queue of bytes <var>ioQueue</var>, run these steps:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>BOM</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#i-o-queue-peek\" id=\"ref-for-i-o-queue-peek①\">peeking</a> 3 bytes from <var>ioQueue</var>, converted to a byte sequence. </p>"
         },
         {
-          "html": "<p>For each of the rows in the table below, starting with the first one and going down, if <var>BOM</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with\">starts with</a> the bytes given in the first column, then\n  return the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding②④\">encoding</a> given in the cell in the second column of that row. Otherwise,\n  return null. </p>\n     <table>\n      <tbody>\n       <tr>\n        <th>Byte order mark\n        </th><th>Encoding \n       </th></tr><tr>\n        <td>0xEF 0xBB 0xBF\n        </td><td><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8①②\">UTF-8</a> \n       </td></tr><tr>\n        <td>0xFE 0xFF\n        </td><td><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16be\" id=\"ref-for-utf-16be③\">UTF-16BE</a> \n       </td></tr><tr>\n        <td>0xFF 0xFE\n        </td><td><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16le\" id=\"ref-for-utf-16le③\">UTF-16LE</a> \n     </td></tr></tbody></table>"
+          "html": "<p>For each of the rows in the table below, starting with the first one and going down, if <var>BOM</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with\">starts with</a> the bytes given in the first column, then\n  return the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding②④\">encoding</a> given in the cell in the second column of that row. Otherwise,\n  return null. </p>\n      <table>\n       <tbody>\n        <tr>\n         <th>Byte order mark\n         </th><th>Encoding \n        </th></tr><tr>\n         <td>0xEF 0xBB 0xBF\n         </td><td><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8①②\">UTF-8</a> \n        </td></tr><tr>\n         <td>0xFE 0xFF\n         </td><td><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16be\" id=\"ref-for-utf-16be③\">UTF-16BE</a> \n        </td></tr><tr>\n         <td>0xFF 0xFE\n         </td><td><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16le\" id=\"ref-for-utf-16le③\">UTF-16LE</a> \n      </td></tr></tbody></table>"
         }
       ]
     },
@@ -401,7 +402,7 @@
       "name": "encode",
       "href": "https://encoding.spec.whatwg.org/#encode",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"encode\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">encode</dfn> an I/O queue of scalar values <var>ioQueue</var> given an encoding <var>encoding</var> and an optional I/O queue of bytes <var>output</var> (default « »), run these\nsteps:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>encoder</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#get-an-encoder\" id=\"ref-for-get-an-encoder①\">getting an encoder</a> from <var>encoding</var>. </p>"
@@ -418,7 +419,7 @@
       "name": "get an encoder",
       "href": "https://encoding.spec.whatwg.org/#get-an-encoder",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"get an encoder|getting an encoder\" id=\"get-an-encoder\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get an encoder</dfn> from an <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding②⑤\">encoding</a> <var>encoding</var>:",
-      "rationale": "assert",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Assert: <var>encoding</var> is not <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#replacement\" id=\"ref-for-replacement④\">replacement</a> or <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16be-le\" id=\"ref-for-utf-16be-le③\">UTF-16BE/LE</a>. </p>"
@@ -432,7 +433,7 @@
       "name": "encode or fail",
       "href": "https://encoding.spec.whatwg.org/#encode-or-fail",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"encode-or-fail\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">encode or fail</dfn> an I/O queue of scalar values <var>ioQueue</var> given an <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder①⓪\">encoder</a> instance <var>encoder</var> and an I/O queue of bytes <var>output</var>, run\nthese steps:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>potentialError</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-encoding-run\" id=\"ref-for-concept-encoding-run⑤\">processing a queue</a> with <var>encoder</var>, <var>ioQueue</var>, <var>output</var>, and \"<code>fatal</code>\". </p>"
@@ -452,7 +453,7 @@
       "name": "serialize I/O queue",
       "href": "https://encoding.spec.whatwg.org/#concept-td-serialize",
       "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-td-serialize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize I/O queue</dfn> algorithm, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://encoding.spec.whatwg.org/#textdecodercommon\" id=\"ref-for-textdecodercommon②\">TextDecoderCommon</a></code> <var>decoder</var> and an <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream\" id=\"ref-for-concept-stream②①\">I/O queue</a> of scalar values <var>ioQueue</var>, runs these steps:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>output</var> be the empty string. </p>"
@@ -490,7 +491,7 @@
       "name": "TextDecoder/TextDecoder(label, options)",
       "href": "https://encoding.spec.whatwg.org/#dom-textdecoder",
       "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"TextDecoder\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"TextDecoder(label, options)|constructor(label, options)|TextDecoder(label)|constructor(label)|TextDecoder()|constructor()\" id=\"dom-textdecoder\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new TextDecoder(<var>label</var>, <var>options</var>)</code></dfn> constructor steps are:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>encoding</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-encoding-get\" id=\"ref-for-concept-encoding-get①\">getting an encoding</a> from <var>label</var>. </p>"
@@ -513,7 +514,7 @@
       "name": "TextDecoder/decode(input, options)",
       "href": "https://encoding.spec.whatwg.org/#dom-textdecoder-decode",
       "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"TextDecoder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"decode(input, options)|decode(input)|decode()\" id=\"dom-textdecoder-decode\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>decode(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
-      "rationale": "if",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecoder-do-not-flush-flag\" id=\"ref-for-textdecoder-do-not-flush-flag\">do not flush</a> is false, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecodercommon-decoder\" id=\"ref-for-textdecodercommon-decoder\">decoder</a> to a new instance of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecoder-encoding\" id=\"ref-for-textdecoder-encoding⑥\">encoding</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#decoder\" id=\"ref-for-decoder①④\">decoder</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecodercommon-i-o-queue\" id=\"ref-for-textdecodercommon-i-o-queue\">I/O queue</a> to the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream\" id=\"ref-for-concept-stream②②\">I/O queue</a> of bytes\n « <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream②⓪\">end-of-queue</a> », and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecoder-bom-seen-flag\" id=\"ref-for-textdecoder-bom-seen-flag②\">BOM seen</a> to false. </p>"
@@ -522,7 +523,7 @@
           "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecoder-do-not-flush-flag\" id=\"ref-for-textdecoder-do-not-flush-flag①\">do not flush</a> to <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://encoding.spec.whatwg.org/#dom-textdecodeoptions-stream\" id=\"ref-for-dom-textdecodeoptions-stream\">stream</a></code>\"]. </p>"
         },
         {
-          "html": "<p>If <var>input</var> is given, then <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-push\" id=\"ref-for-concept-stream-push⑧\">push</a> a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy\">copy of</a> <var>input</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecodercommon-i-o-queue\" id=\"ref-for-textdecodercommon-i-o-queue①\">I/O queue</a>. </p>\n     \n     <p class=\"warning\" id=\"sharedarraybuffer-warning\">The memory exposed by <code>SharedArrayBuffer</code> objects does not adhere to data race freedom properties required by the memory model of\n  programming languages typically used for implementations. When implementing, take care to use the\n  appropriate facilities when accessing memory exposed by <code>SharedArrayBuffer</code> objects. </p>"
+          "html": "<p>If <var>input</var> is given, then <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-push\" id=\"ref-for-concept-stream-push⑧\">push</a> a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy\">copy of</a> <var>input</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecodercommon-i-o-queue\" id=\"ref-for-textdecodercommon-i-o-queue①\">I/O queue</a>. </p>\n      \n      <p class=\"warning\" id=\"sharedarraybuffer-warning\">The memory exposed by <code>SharedArrayBuffer</code> objects does not adhere to data race freedom properties required by the memory model of\n  programming languages typically used for implementations. When implementing, take care to use the\n  appropriate facilities when accessing memory exposed by <code>SharedArrayBuffer</code> objects. </p>"
         },
         {
           "html": "<p>Let <var>output</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream\" id=\"ref-for-concept-stream②③\">I/O queue</a> of scalar values\n « <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream②①\">end-of-queue</a> ». </p>"
@@ -560,7 +561,7 @@
       "name": "TextEncoder/encode(input)",
       "href": "https://encoding.spec.whatwg.org/#dom-textencoder-encode",
       "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"TextEncoder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"encode(input)|encode()\" id=\"dom-textencoder-encode\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>encode(<var>input</var>)</code></dfn> method steps are:",
-      "rationale": "convert",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#to-i-o-queue-convert\" id=\"ref-for-to-i-o-queue-convert\">Convert</a> <var>input</var> to an <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream\" id=\"ref-for-concept-stream②④\">I/O queue</a> of scalar\n values. </p>"
@@ -592,7 +593,7 @@
       "name": "TextEncoder/encodeInto(source, destination)",
       "href": "https://encoding.spec.whatwg.org/#dom-textencoder-encodeinto",
       "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"TextEncoder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-textencoder-encodeinto\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>encodeInto(<var>source</var>, <var>destination</var>)</code></dfn> method steps are:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>read</var> be 0. </p>"
@@ -637,7 +638,7 @@
                       "html": "<p>Otherwise, increment <var>read</var> by 1. </p>"
                     },
                     {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#arraybufferview-write\" id=\"ref-for-arraybufferview-write\">Write</a> the bytes in <var>result</var> into <var>destination</var>, with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#arraybufferview-write-startingoffset\" id=\"ref-for-arraybufferview-write-startingoffset\"><i>startingOffset</i></a> set to <var>written</var>. </p>\n           <p class=\"warning\">See the <a href=\"https://encoding.spec.whatwg.org/#sharedarraybuffer-warning\">warning for <code>SharedArrayBuffer</code> objects</a> above. </p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#arraybufferview-write\" id=\"ref-for-arraybufferview-write\">Write</a> the bytes in <var>result</var> into <var>destination</var>, with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#arraybufferview-write-startingoffset\" id=\"ref-for-arraybufferview-write-startingoffset\"><i>startingOffset</i></a> set to <var>written</var>. </p>\n            <p class=\"warning\">See the <a href=\"https://encoding.spec.whatwg.org/#sharedarraybuffer-warning\">warning for <code>SharedArrayBuffer</code> objects</a> above. </p>"
                     },
                     {
                       "html": "<p>Increment <var>written</var> by the number of bytes in <var>result</var>. </p>"
@@ -660,7 +661,7 @@
       "name": "TextDecoderStream/TextDecoderStream(label, options)",
       "href": "https://encoding.spec.whatwg.org/#dom-textdecoderstream",
       "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"TextDecoderStream\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"TextDecoderStream(label, options)|constructor(label, options)|TextDecoderStream(label)|constructor(label)|TextDecoderStream()|constructor()\" id=\"dom-textdecoderstream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new TextDecoderStream(<var>label</var>, <var>options</var>)</code></dfn> constructor steps are:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>encoding</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-encoding-get\" id=\"ref-for-concept-encoding-get②\">getting an encoding</a> from <var>label</var>. </p>"
@@ -701,13 +702,13 @@
       "name": "decode and enqueue a chunk",
       "href": "https://encoding.spec.whatwg.org/#decode-and-enqueue-a-chunk",
       "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"decode-and-enqueue-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">decode and enqueue a chunk</dfn> algorithm, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://encoding.spec.whatwg.org/#textdecoderstream\" id=\"ref-for-textdecoderstream⑤\">TextDecoderStream</a></code> object <var>decoder</var> and a <var>chunk</var>, runs these steps:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>bufferSource</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value\">converting</a> <var>chunk</var> to an <code><a class=\"idl-code\" data-link-type=\"typedef\" href=\"https://webidl.spec.whatwg.org/#AllowSharedBufferSource\" id=\"ref-for-AllowSharedBufferSource②\">AllowSharedBufferSource</a></code>. </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-push\" id=\"ref-for-concept-stream-push⑨\">Push</a> a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy①\">copy of</a> <var>bufferSource</var> to <var>decoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecodercommon-i-o-queue\" id=\"ref-for-textdecodercommon-i-o-queue⑤\">I/O queue</a>. </p>\n     <p class=\"warning\">See the <a href=\"https://encoding.spec.whatwg.org/#sharedarraybuffer-warning\">warning for <code>SharedArrayBuffer</code> objects</a> above. </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-push\" id=\"ref-for-concept-stream-push⑨\">Push</a> a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy①\">copy of</a> <var>bufferSource</var> to <var>decoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecodercommon-i-o-queue\" id=\"ref-for-textdecodercommon-i-o-queue⑤\">I/O queue</a>. </p>\n      <p class=\"warning\">See the <a href=\"https://encoding.spec.whatwg.org/#sharedarraybuffer-warning\">warning for <code>SharedArrayBuffer</code> objects</a> above. </p>"
         },
         {
           "html": "<p>Let <var>output</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream\" id=\"ref-for-concept-stream②⑨\">I/O queue</a> of scalar values\n « <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream②⑥\">end-of-queue</a> ». </p>"
@@ -748,7 +749,7 @@
       "name": "flush and enqueue",
       "href": "https://encoding.spec.whatwg.org/#flush-and-enqueue",
       "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"flush-and-enqueue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">flush and enqueue</dfn> algorithm, which handles the end of data from the input <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream①\">ReadableStream</a></code> object, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://encoding.spec.whatwg.org/#textdecoderstream\" id=\"ref-for-textdecoderstream⑥\">TextDecoderStream</a></code> object <var>decoder</var>, runs these\nsteps:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>output</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream\" id=\"ref-for-concept-stream③⓪\">I/O queue</a> of scalar values\n « <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream②⑧\">end-of-queue</a> ». </p>"
@@ -789,7 +790,7 @@
       "name": "TextEncoderStream/TextEncoderStream()",
       "href": "https://encoding.spec.whatwg.org/#dom-textencoderstream",
       "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"TextEncoderStream\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"TextEncoderStream()|constructor()\" id=\"dom-textencoderstream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new TextEncoderStream()</code></dfn> constructor steps are:",
-      "rationale": "set",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-encoder\" id=\"ref-for-textencoderstream-encoder\">encoder</a> to an instance of the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encoder\" id=\"ref-for-utf-8-encoder⑤\">UTF-8 encoder</a>. </p>"
@@ -815,7 +816,7 @@
       "name": "encode and enqueue a chunk",
       "href": "https://encoding.spec.whatwg.org/#encode-and-enqueue-a-chunk",
       "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"encode-and-enqueue-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">encode and enqueue a chunk</dfn> algorithm, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://encoding.spec.whatwg.org/#textencoderstream\" id=\"ref-for-textencoderstream⑦\">TextEncoderStream</a></code> object <var>encoder</var> and <var>chunk</var>, runs these steps:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>input</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value①\">converting</a> <var>chunk</var> to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString④\">DOMString</a></code>. </p>"
@@ -871,7 +872,7 @@
       "name": "convert code unit to scalar value",
       "href": "https://encoding.spec.whatwg.org/#convert-code-unit-to-scalar-value",
       "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"convert-code-unit-to-scalar-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">convert code unit to scalar value</dfn> algorithm, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://encoding.spec.whatwg.org/#textencoderstream\" id=\"ref-for-textencoderstream⑧\">TextEncoderStream</a></code> object <var>encoder</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit②\">code unit</a> <var>item</var>, and an <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream\" id=\"ref-for-concept-stream③④\">I/O queue</a> of code units <var>input</var>, runs these steps:",
-      "rationale": "if",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "If <var>encoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate\" id=\"ref-for-textencoderstream-pending-high-surrogate\">leading surrogate</a> is non-null, then:",
@@ -909,7 +910,7 @@
       "name": "encode and flush",
       "href": "https://encoding.spec.whatwg.org/#encode-and-flush",
       "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"encode-and-flush\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">encode and flush</dfn> algorithm, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://encoding.spec.whatwg.org/#textencoderstream\" id=\"ref-for-textencoderstream⑨\">TextEncoderStream</a></code> object <var>encoder</var>, runs these steps:",
-      "rationale": "if",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "If <var>encoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate\" id=\"ref-for-textencoderstream-pending-high-surrogate④\">leading surrogate</a> is non-null, then:",
@@ -1044,7 +1045,7 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8②④\">UTF-8</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder①⑧\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler⑤\">handler</a>, given <var>ioQueue</var> and <var>code point</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8②④\">UTF-8</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder①⑧\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler⑤\">handler</a>, given <var>unused</var> and <var>code point</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
@@ -1100,7 +1101,7 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#single-byte-encoding\" id=\"ref-for-single-byte-encoding④\">Single-byte encodings</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#decoder\" id=\"ref-for-decoder②②\">decoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler⑥\">handler</a>, given <var>ioQueue</var> and <var>byte</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#single-byte-encoding\" id=\"ref-for-single-byte-encoding④\">Single-byte encodings</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#decoder\" id=\"ref-for-decoder②②\">decoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler⑥\">handler</a>, given <var>unused</var> and <var>byte</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
@@ -1121,7 +1122,7 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#single-byte-encoding\" id=\"ref-for-single-byte-encoding⑤\">Single-byte encodings</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder②⓪\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler⑦\">handler</a>, given <var>ioQueue</var> and <var>code point</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#single-byte-encoding\" id=\"ref-for-single-byte-encoding⑤\">Single-byte encodings</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder②⓪\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler⑦\">handler</a>, given <var>unused</var> and <var>code point</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
@@ -1241,7 +1242,7 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030\" id=\"ref-for-gb18030⑦\">gb18030</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder②⑤\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler⑨\">handler</a>, given <var>ioQueue</var> and <var>code point</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030\" id=\"ref-for-gb18030⑦\">gb18030</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder②⑤\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler⑨\">handler</a>, given <var>unused</var> and <var>code point</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
@@ -1358,7 +1359,7 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5\" id=\"ref-for-big5③\">Big5</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder②⑥\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①①\">handler</a>, given <var>ioQueue</var> and <var>code point</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5\" id=\"ref-for-big5③\">Big5</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder②⑥\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①①\">handler</a>, given <var>unused</var> and <var>code point</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
@@ -1439,7 +1440,7 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp\" id=\"ref-for-euc-jp③\">EUC-JP</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder②⑦\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①③\">handler</a>, given <var>ioQueue</var> and <var>code point</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp\" id=\"ref-for-euc-jp③\">EUC-JP</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder②⑦\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①③\">handler</a>, given <var>unused</var> and <var>code point</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
@@ -1846,7 +1847,7 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis\" id=\"ref-for-shift_jis⑤\">Shift_JIS</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder③①\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①⑦\">handler</a>, given <var>ioQueue</var> and <var>code point</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis\" id=\"ref-for-shift_jis⑤\">Shift_JIS</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder③①\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①⑦\">handler</a>, given <var>unused</var> and <var>code point</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
@@ -1933,7 +1934,7 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr\" id=\"ref-for-euc-kr③\">EUC-KR</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder③②\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①⑨\">handler</a>, given <var>ioQueue</var> and <var>code point</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr\" id=\"ref-for-euc-kr③\">EUC-KR</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder③②\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①⑨\">handler</a>, given <var>unused</var> and <var>code point</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
@@ -1960,7 +1961,7 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#replacement\" id=\"ref-for-replacement①①\">replacement</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#decoder\" id=\"ref-for-decoder③⑨\">decoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler②⓪\">handler</a>, given <var>ioQueue</var> and <var>byte</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#replacement\" id=\"ref-for-replacement①①\">replacement</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#decoder\" id=\"ref-for-decoder③⑨\">decoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler②⓪\">handler</a>, given <var>unused</var> and <var>byte</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
@@ -2045,7 +2046,7 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#x-user-defined\" id=\"ref-for-x-user-defined①\">x-user-defined</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#decoder\" id=\"ref-for-decoder④②\">decoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler②②\">handler</a>, given <var>ioQueue</var> and <var>byte</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#x-user-defined\" id=\"ref-for-x-user-defined①\">x-user-defined</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#decoder\" id=\"ref-for-decoder④②\">decoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler②②\">handler</a>, given <var>unused</var> and <var>byte</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
@@ -2060,7 +2061,7 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#x-user-defined\" id=\"ref-for-x-user-defined②\">x-user-defined</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder③③\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler②③\">handler</a>, given <var>ioQueue</var> and <var>code point</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#x-user-defined\" id=\"ref-for-x-user-defined②\">x-user-defined</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder③③\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler②③\">handler</a>, given <var>unused</var> and <var>code point</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
