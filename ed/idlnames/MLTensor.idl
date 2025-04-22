@@ -5,6 +5,7 @@ interface MLTensor {
   readonly attribute FrozenArray<unsigned long> shape;
   readonly attribute boolean readable;
   readonly attribute boolean writable;
+  readonly attribute boolean constant;
 
   undefined destroy();
 };

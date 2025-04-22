@@ -305,7 +305,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlcontextlostinfo"
       },
       "MLContext": {
-        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLContext {\n  undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);\n\n  Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);\n\n  Promise<ArrayBuffer> readTensor(MLTensor tensor);\n  Promise<undefined> readTensor(MLTensor tensor, AllowSharedBufferSource outputData);\n\n  undefined writeTensor(MLTensor tensor, AllowSharedBufferSource inputData);\n\n  MLOpSupportLimits opSupportLimits();\n\n  undefined destroy();\n\n  readonly attribute Promise<MLContextLostInfo> lost;\n};",
+        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLContext {\n  undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);\n\n  Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);\n  Promise<MLTensor> createConstantTensor(\n    MLOperandDescriptor descriptor, AllowSharedBufferSource inputData);\n\n  Promise<ArrayBuffer> readTensor(MLTensor tensor);\n  Promise<undefined> readTensor(MLTensor tensor, AllowSharedBufferSource outputData);\n\n  undefined writeTensor(MLTensor tensor, AllowSharedBufferSource inputData);\n\n  MLOpSupportLimits opSupportLimits();\n\n  undefined destroy();\n\n  readonly attribute Promise<MLContextLostInfo> lost;\n};",
         "type": "interface",
         "name": "MLContext",
         "inheritance": null,
@@ -416,6 +416,64 @@
             "extAttrs": [],
             "special": "",
             "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-createtensor"
+          },
+          {
+            "type": "operation",
+            "name": "createConstantTensor",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLTensor"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "descriptor",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLOperandDescriptor"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "inputData",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AllowSharedBufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-createconstanttensor"
           },
           {
             "type": "operation",
@@ -1352,7 +1410,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mltensordescriptor"
       },
       "MLTensor": {
-        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLTensor {\n  readonly attribute MLOperandDataType dataType;\n  readonly attribute FrozenArray<unsigned long> shape;\n  readonly attribute boolean readable;\n  readonly attribute boolean writable;\n\n  undefined destroy();\n};",
+        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLTensor {\n  readonly attribute MLOperandDataType dataType;\n  readonly attribute FrozenArray<unsigned long> shape;\n  readonly attribute boolean readable;\n  readonly attribute boolean writable;\n  readonly attribute boolean constant;\n\n  undefined destroy();\n};",
         "type": "interface",
         "name": "MLTensor",
         "inheritance": null,
@@ -1431,6 +1489,22 @@
             "href": "https://webmachinelearning.github.io/webnn/#dom-mltensor-writable"
           },
           {
+            "type": "attribute",
+            "name": "constant",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mltensor-constant"
+          },
+          {
             "type": "operation",
             "name": "destroy",
             "idlType": {
@@ -1507,7 +1581,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlnamedoperands"
       },
       "MLGraphBuilder": {
-        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(USVString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor,\n                     AllowSharedBufferSource buffer);\n\n  // Create a scalar operand from the specified number of the specified type.\n  MLOperand constant(MLOperandDataType type, MLNumber value);\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n};",
+        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(USVString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor,\n                     AllowSharedBufferSource buffer);\n\n  // Create a scalar operand from the specified number of the specified type.\n  MLOperand constant(MLOperandDataType type, MLNumber value);\n\n  // Create an operand from a specified constant tensor.\n  MLOperand constant(MLTensor tensor);\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n};",
         "type": "interface",
         "name": "MLGraphBuilder",
         "inheritance": null,
@@ -1681,6 +1755,39 @@
             "extAttrs": [],
             "special": "",
             "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-constant-type-value"
+          },
+          {
+            "type": "operation",
+            "name": "constant",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLOperand"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "tensor",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLTensor"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-constant-tensor"
           },
           {
             "type": "operation",
@@ -14302,8 +14409,9 @@
         "MLNamedTensors",
         "MLTensor",
         "MLTensorDescriptor",
-        "ArrayBuffer",
+        "MLOperandDescriptor",
         "AllowSharedBufferSource",
+        "ArrayBuffer",
         "MLOpSupportLimits",
         "MLContextLostInfo"
       ],
@@ -14366,6 +14474,7 @@
         "AllowSharedBufferSource",
         "MLOperandDataType",
         "MLNumber",
+        "MLTensor",
         "MLGraph",
         "MLNamedOperands",
         "MLArgMinMaxOptions",
@@ -14581,8 +14690,8 @@
     },
     "externalDependencies": [
       "GPUDevice",
-      "ArrayBuffer",
-      "AllowSharedBufferSource"
+      "AllowSharedBufferSource",
+      "ArrayBuffer"
     ],
     "hasObsoleteIdl": false
   }

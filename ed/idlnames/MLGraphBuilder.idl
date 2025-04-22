@@ -14,6 +14,9 @@ interface MLGraphBuilder {
   // Create a scalar operand from the specified number of the specified type.
   MLOperand constant(MLOperandDataType type, MLNumber value);
 
+  // Create an operand from a specified constant tensor.
+  MLOperand constant(MLTensor tensor);
+
   // Compile the graph up to the specified output operands asynchronously.
   Promise<MLGraph> build(MLNamedOperands outputs);
 };

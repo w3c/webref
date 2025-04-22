@@ -6,7 +6,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLContext {\n  undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);\n\n  Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);\n\n  Promise<ArrayBuffer> readTensor(MLTensor tensor);\n  Promise<undefined> readTensor(MLTensor tensor, AllowSharedBufferSource outputData);\n\n  undefined writeTensor(MLTensor tensor, AllowSharedBufferSource inputData);\n\n  MLOpSupportLimits opSupportLimits();\n\n  undefined destroy();\n\n  readonly attribute Promise<MLContextLostInfo> lost;\n};",
+    "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLContext {\n  undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);\n\n  Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);\n  Promise<MLTensor> createConstantTensor(\n    MLOperandDescriptor descriptor, AllowSharedBufferSource inputData);\n\n  Promise<ArrayBuffer> readTensor(MLTensor tensor);\n  Promise<undefined> readTensor(MLTensor tensor, AllowSharedBufferSource outputData);\n\n  undefined writeTensor(MLTensor tensor, AllowSharedBufferSource inputData);\n\n  MLOpSupportLimits opSupportLimits();\n\n  undefined destroy();\n\n  readonly attribute Promise<MLContextLostInfo> lost;\n};",
     "href": "https://webmachinelearning.github.io/webnn/#mlcontext"
   },
   "extended": [],

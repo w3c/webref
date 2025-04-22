@@ -4,6 +4,8 @@ interface MLContext {
   undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);
 
   Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);
+  Promise<MLTensor> createConstantTensor(
+    MLOperandDescriptor descriptor, AllowSharedBufferSource inputData);
 
   Promise<ArrayBuffer> readTensor(MLTensor tensor);
   Promise<undefined> readTensor(MLTensor tensor, AllowSharedBufferSource outputData);
