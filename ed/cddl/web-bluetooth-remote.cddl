@@ -29,6 +29,7 @@ BluetoothCommand = (
   bluetooth.SimulatePreconnectedPeripheral //
   bluetooth.SimulateAdvertisement //
   bluetooth.SimulateGattConnectionResponse //
+  bluetooth.SimulateGattDisconnection //
 )
 
 bluetooth.HandleRequestDevicePrompt = (
@@ -112,4 +113,14 @@ bluetooth.SimulateGattConnectionResponseParameters = {
    context: text,
    address: text,
    code: uint
+}
+
+bluetooth.SimulateGattDisconnection = (
+   method: "bluetooth.simulateGattDisconnection",
+   params: bluetooth.SimulateGattDisconnectionParameters,
+)
+
+bluetooth.SimulateGattDisconnectionParameters = {
+   context: text,
+   address: text,
 }

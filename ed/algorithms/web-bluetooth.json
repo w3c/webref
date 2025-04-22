@@ -2117,6 +2117,9 @@
           "html": "<p>Clear <code><var>deviceObj</var>.gatt.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattserver-activealgorithms-slot\" id=\"ref-for-dom-bluetoothremotegattserver-activealgorithms-slot①⑥\">[[activeAlgorithms]]</a></code></code>.</p>"
         },
         {
+          "html": "<p>Set <code><var>deviceObj</var>.gatt.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattserver-automatedgattconnectionresponse-slot\" id=\"ref-for-dom-bluetoothremotegattserver-automatedgattconnectionresponse-slot④\">[[automatedGATTConnectionResponse]]</a></code></code> to <code>\"not-expected\"</code>.</p>"
+        },
+        {
           "html": "<p>Let <var>context</var> be <code><var>deviceObj</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-context-slot\" id=\"ref-for-dom-bluetoothdevice-context-slot②\">[[context]]</a></code></code>.</p>"
         },
         {
@@ -3021,10 +3024,47 @@
           "html": "<p>Let <var>simulatedDeviceInstance</var> be the result of <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#get-the-bluetoothdevice-representing\" id=\"ref-for-get-the-bluetoothdevice-representing⑤\">get the <code>BluetoothDevice</code> representing</a> <var>simulatedDevice</var> inside <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window①\">active window</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/system-state.html#associated-navigator\" id=\"ref-for-associated-navigator④\">associated <code>Navigator</code></a>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#associated-bluetooth\" id=\"ref-for-associated-bluetooth⑥\">associated Bluetooth</a>.</p>"
         },
         {
-          "html": "<p>If <var>simulatedDeviceInstance</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-gatt-slot\" id=\"ref-for-dom-bluetoothdevice-gatt-slot①\">[[gatt]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattserver-automatedgattconnectionresponse-slot\" id=\"ref-for-dom-bluetoothremotegattserver-automatedgattconnectionresponse-slot④\">[[automatedGATTConnectionResponse]]</a></code> is <code>\"expected\"</code>,\nset <var>simulatedDeviceInstance</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-gatt-slot\" id=\"ref-for-dom-bluetoothdevice-gatt-slot②\">[[gatt]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattserver-automatedgattconnectionresponse-slot\" id=\"ref-for-dom-bluetoothremotegattserver-automatedgattconnectionresponse-slot⑤\">[[automatedGATTConnectionResponse]]</a></code> to <var>params</var>[<code>\"code\"</code>].</p>"
+          "html": "<p>If <var>simulatedDeviceInstance</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-gatt-slot\" id=\"ref-for-dom-bluetoothdevice-gatt-slot①\">[[gatt]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattserver-automatedgattconnectionresponse-slot\" id=\"ref-for-dom-bluetoothremotegattserver-automatedgattconnectionresponse-slot⑤\">[[automatedGATTConnectionResponse]]</a></code> is <code>\"expected\"</code>,\nset <var>simulatedDeviceInstance</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-gatt-slot\" id=\"ref-for-dom-bluetoothdevice-gatt-slot②\">[[gatt]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattserver-automatedgattconnectionresponse-slot\" id=\"ref-for-dom-bluetoothremotegattserver-automatedgattconnectionresponse-slot⑥\">[[automatedGATTConnectionResponse]]</a></code> to <var>params</var>[<code>\"code\"</code>].</p>"
         },
         {
           "html": "<p>Otherwise, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①③\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①④\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-element-state\" id=\"ref-for-dfn-invalid-element-state\">invalid element state</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "remote end steps for bluetooth.simulateGattDisconnection",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps⑥\">remote end steps</a> with command parameters <var>params</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>contextId</var> be <var>params</var>[<code>\"context\"</code>].</p>"
+        },
+        {
+          "html": "<p>Let <var>navigable</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑦\">trying</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#get-a-navigable\" id=\"ref-for-get-a-navigable⑤\">get a navigable</a> with <var>contextId</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>deviceAddress</var> be <var>params</var>[<code>\"address\"</code>].</p>"
+        },
+        {
+          "html": "<p>Let <var>simulatedBluetoothAdapter</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#simulated-bluetooth-adapter\" id=\"ref-for-simulated-bluetooth-adapter①④\">simulated Bluetooth adapter</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>simulatedBluetoothAdapter</var> is empty, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⓪\">invalid argument</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>deviceMapping</var> be <var>simulatedBluetoothAdapter</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#simulated-bluetooth-device-mapping\" id=\"ref-for-simulated-bluetooth-device-mapping④\">simulated Bluetooth device mapping</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>deviceMapping</var>[<var>deviceAddress</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exists</a>, let <var>simulatedDevice</var> be <var>deviceMapping</var>[<var>deviceAddress</var>].\nOtherwise, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①⑤\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①①\">invalid argument</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>simulatedDeviceInstance</var> be the result of <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#get-the-bluetoothdevice-representing\" id=\"ref-for-get-the-bluetoothdevice-representing⑥\">get the <code>BluetoothDevice</code> representing</a> <var>simulatedDevice</var> inside <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window②\">active window</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/system-state.html#associated-navigator\" id=\"ref-for-associated-navigator⑤\">associated <code>Navigator</code></a>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#associated-bluetooth\" id=\"ref-for-associated-bluetooth⑦\">associated Bluetooth</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>simulatedDeviceInstance</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-gatt-slot\" id=\"ref-for-dom-bluetoothdevice-gatt-slot③\">[[gatt]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattserver-automatedgattconnectionresponse-slot\" id=\"ref-for-dom-bluetoothremotegattserver-automatedgattconnectionresponse-slot⑦\">[[automatedGATTConnectionResponse]]</a></code> is <code>\"expected\"</code>,\nset <var>simulatedDeviceInstance</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-gatt-slot\" id=\"ref-for-dom-bluetoothdevice-gatt-slot④\">[[gatt]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattserver-automatedgattconnectionresponse-slot\" id=\"ref-for-dom-bluetoothremotegattserver-automatedgattconnectionresponse-slot⑧\">[[automatedGATTConnectionResponse]]</a></code> to <code>0x15</code>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#clean-up-the-disconnected-device\" id=\"ref-for-clean-up-the-disconnected-device②\">clean up the disconnected device</a> <var>simulatedDeviceInstance</var>.</p>"
         }
       ]
     },
