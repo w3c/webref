@@ -1,5 +1,5 @@
 // Source: MediaStream Image Capture (https://www.w3.org/TR/image-capture/)
-[Exposed=Window]
+[Exposed=Window, SecureContext]
 interface ImageCapture {
    constructor(MediaStreamTrack videoTrack);
    Promise<Blob>              takePhoto(optional PhotoSettings photoSettings = {});

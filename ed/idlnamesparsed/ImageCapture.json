@@ -6,7 +6,7 @@
       "title": "MediaStream Image Capture",
       "url": "https://www.w3.org/TR/image-capture/"
     },
-    "fragment": "[Exposed=Window]\ninterface ImageCapture {\n   constructor(MediaStreamTrack videoTrack);\n   Promise<Blob>              takePhoto(optional PhotoSettings photoSettings = {});\n   Promise<PhotoCapabilities> getPhotoCapabilities();\n   Promise<PhotoSettings>     getPhotoSettings();\n\n   Promise<ImageBitmap>       grabFrame();\n\n   readonly attribute MediaStreamTrack track;\n};",
+    "fragment": "[Exposed=Window, SecureContext]\ninterface ImageCapture {\n   constructor(MediaStreamTrack videoTrack);\n   Promise<Blob>              takePhoto(optional PhotoSettings photoSettings = {});\n   Promise<PhotoCapabilities> getPhotoCapabilities();\n   Promise<PhotoSettings>     getPhotoSettings();\n\n   Promise<ImageBitmap>       grabFrame();\n\n   readonly attribute MediaStreamTrack track;\n};",
     "href": "https://w3c.github.io/mediacapture-image/#imagecapture"
   },
   "extended": [],

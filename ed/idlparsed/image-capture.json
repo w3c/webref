@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "ImageCapture": {
-        "fragment": "[Exposed=Window]\ninterface ImageCapture {\n   constructor(MediaStreamTrack videoTrack);\n   Promise<Blob>              takePhoto(optional PhotoSettings photoSettings = {});\n   Promise<PhotoCapabilities> getPhotoCapabilities();\n   Promise<PhotoSettings>     getPhotoSettings();\n\n   Promise<ImageBitmap>       grabFrame();\n\n   readonly attribute MediaStreamTrack track;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface ImageCapture {\n   constructor(MediaStreamTrack videoTrack);\n   Promise<Blob>              takePhoto(optional PhotoSettings photoSettings = {});\n   Promise<PhotoCapabilities> getPhotoCapabilities();\n   Promise<PhotoSettings>     getPhotoSettings();\n\n   Promise<ImageBitmap>       grabFrame();\n\n   readonly attribute MediaStreamTrack track;\n};",
         "type": "interface",
         "name": "ImageCapture",
         "inheritance": null,
@@ -186,6 +186,12 @@
               "type": "identifier",
               "value": "Window"
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
