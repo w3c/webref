@@ -769,7 +769,7 @@
         "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderapiconfig"
       },
       "IdentityProviderAccount": {
-        "fragment": "dictionary IdentityProviderAccount {\n  required USVString id;\n  required USVString name;\n  required USVString email;\n  USVString given_name;\n  USVString picture;\n  sequence<USVString> approved_clients;\n  sequence<DOMString> login_hints;\n  sequence<DOMString> domain_hints;\n  sequence<DOMString> label_hints;\n};",
+        "fragment": "dictionary IdentityProviderAccount {\n  required USVString id;\n  USVString name;\n  USVString email;\n  USVString tel;\n  USVString username;\n  USVString given_name;\n  USVString picture;\n  sequence<USVString> approved_clients;\n  sequence<DOMString> login_hints;\n  sequence<DOMString> domain_hints;\n  sequence<DOMString> label_hints;\n};",
         "type": "dictionary",
         "name": "IdentityProviderAccount",
         "inheritance": null,
@@ -803,7 +803,7 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true,
+            "required": false,
             "href": "https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-name"
           },
           {
@@ -819,8 +819,40 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true,
+            "required": false,
             "href": "https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-email"
+          },
+          {
+            "type": "field",
+            "name": "tel",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-tel"
+          },
+          {
+            "type": "field",
+            "name": "username",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-username"
           },
           {
             "type": "field",

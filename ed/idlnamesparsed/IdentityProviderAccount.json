@@ -6,7 +6,7 @@
       "title": "Federated Credential Management API",
       "url": "https://www.w3.org/TR/fedcm-1/"
     },
-    "fragment": "dictionary IdentityProviderAccount {\n  required USVString id;\n  required USVString name;\n  required USVString email;\n  USVString given_name;\n  USVString picture;\n  sequence<USVString> approved_clients;\n  sequence<DOMString> login_hints;\n  sequence<DOMString> domain_hints;\n  sequence<DOMString> label_hints;\n};",
+    "fragment": "dictionary IdentityProviderAccount {\n  required USVString id;\n  USVString name;\n  USVString email;\n  USVString tel;\n  USVString username;\n  USVString given_name;\n  USVString picture;\n  sequence<USVString> approved_clients;\n  sequence<DOMString> login_hints;\n  sequence<DOMString> domain_hints;\n  sequence<DOMString> label_hints;\n};",
     "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identityprovideraccount"
   },
   "extended": [],
