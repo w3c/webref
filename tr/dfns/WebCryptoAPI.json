@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Web Cryptography API",
+    "title": "Web Cryptography Level 2",
     "url": "https://www.w3.org/TR/WebCryptoAPI/"
   },
   "dfns": [
@@ -16,8 +16,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-conforming-implementation",
-        "title": "Conformance ¶",
+        "id": "conformance",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#conformance",
+        "title": "Conformance",
         "number": "3"
       },
       "definedIn": "dt"
@@ -34,17 +35,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-applicable-specification",
-        "title": "Extensibility ¶",
+        "id": "extensibility",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#extensibility",
+        "title": "Extensibility",
         "number": "3.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-DOMException",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-DOMException",
+      "id": "dfn-serializable-objects",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-serializable-objects",
       "linkingText": [
-        "DOMException"
+        "serializable objects"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -52,35 +54,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-DOMException",
-        "title": "Dependencies ¶",
-        "number": "8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-ArrayBuffer",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-ArrayBuffer",
-      "linkingText": [
-        "ArrayBuffer"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-ArrayBuffer",
-        "title": "Terminology ¶",
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#terminology",
+        "title": "Terminology",
         "number": "9"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-ArrayBufferView",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-ArrayBufferView",
+      "id": "dfn-length-in-bits",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-length-in-bits",
       "linkingText": [
-        "ArrayBufferView"
+        "length in bits"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -88,17 +73,19 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-ArrayBufferView",
-        "title": "Terminology ¶",
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#terminology",
+        "title": "Terminology",
         "number": "9"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-structured-clone",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-structured-clone",
+      "id": "dfn-byte-sequence-containing",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-byte-sequence-containing",
       "linkingText": [
-        "structured clone"
+        "byte sequence containing",
+        "byte sequence containing a bit sequence"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -106,17 +93,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-structured-clone",
-        "title": "Terminology ¶",
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#terminology",
+        "title": "Terminology",
         "number": "9"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-DOMString",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-DOMString",
+      "id": "dfn-convert-integer-to-byte-sequence",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-convert-integer-to-byte-sequence",
       "linkingText": [
-        "DOMString"
+        "convert a non-negative integer i to a byte sequence of length n"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -124,80 +112,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-DOMString",
-        "title": "Terminology ¶",
-        "number": "9"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "BufferSource",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#BufferSource",
-      "linkingText": [
-        "BufferSource"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#BufferSource",
-        "title": "Terminology ¶",
-        "number": "9"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-octet-string",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-octet-string",
-      "linkingText": [
-        "octet string"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-octet-string",
-        "title": "Terminology ¶",
-        "number": "9"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-octet-string-containing",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-octet-string-containing",
-      "linkingText": [
-        "octet string containing a bit string"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-octet-string-containing",
-        "title": "Terminology ¶",
-        "number": "9"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-convert-integer-to-octet-string",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-convert-integer-to-octet-string",
-      "linkingText": [
-        "convert a non-negative integer i to an octet string of length n"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-convert-integer-to-octet-string",
-        "title": "Terminology ¶",
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#terminology",
+        "title": "Terminology",
         "number": "9"
       },
       "definedIn": "prose"
@@ -214,8 +131,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#case-sensitive",
-        "title": "Terminology ¶",
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#terminology",
+        "title": "Terminology",
         "number": "9"
       },
       "definedIn": "prose"
@@ -224,16 +142,20 @@
       "id": "case-insensitive",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#case-insensitive",
       "linkingText": [
-        "ASCII case-insensitive"
+        "ASCII case-insensitive",
+        "case-insensitive"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "case-insensitive"
+      ],
       "type": "dfn",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#case-insensitive",
-        "title": "Terminology ¶",
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#terminology",
+        "title": "Terminology",
         "number": "9"
       },
       "definedIn": "prose"
@@ -250,8 +172,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#terminate-the-algorithm",
-        "title": "Terminology ¶",
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#terminology",
+        "title": "Terminology",
         "number": "9"
       },
       "definedIn": "prose"
@@ -268,8 +191,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#concept-parse-an-asn1-structure",
-        "title": "Terminology ¶",
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#terminology",
+        "title": "Terminology",
         "number": "9"
       },
       "definedIn": "prose"
@@ -286,8 +210,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#concept-parse-a-spki",
-        "title": "Terminology ¶",
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#terminology",
+        "title": "Terminology",
         "number": "9"
       },
       "definedIn": "prose"
@@ -304,8 +229,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#concept-parse-a-privateKeyInfo",
-        "title": "Terminology ¶",
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#terminology",
+        "title": "Terminology",
         "number": "9"
       },
       "definedIn": "prose"
@@ -322,26 +248,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#concept-parse-a-jwk",
-        "title": "Terminology ¶",
-        "number": "9"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "concept-contents-of-arraybuffer",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#concept-contents-of-arraybuffer",
-      "linkingText": [
-        "contents of an ArrayBuffer"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#concept-contents-of-arraybuffer",
-        "title": "Terminology ¶",
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#terminology",
+        "title": "Terminology",
         "number": "9"
       },
       "definedIn": "prose"
@@ -358,8 +267,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#concept-usage-intersection",
-        "title": "Terminology ¶",
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#terminology",
+        "title": "Terminology",
         "number": "9"
       },
       "definedIn": "prose"
@@ -368,16 +278,20 @@
       "id": "concept-normalized-usages",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#concept-normalized-usages",
       "linkingText": [
-        "normalized value of a usages list"
+        "normalized value of a usages list",
+        "normalized value"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "normalized value"
+      ],
       "type": "dfn",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#concept-normalized-usages",
-        "title": "Terminology ¶",
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#terminology",
+        "title": "Terminology",
         "number": "9"
       },
       "definedIn": "prose"
@@ -394,28 +308,12 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#concept-cached-object",
-        "title": "Terminology ¶",
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#terminology",
+        "title": "Terminology",
         "number": "9"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "dfn-GlobalCrypto",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-GlobalCrypto",
-      "linkingText": [
-        "GlobalCrypto"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-GlobalCrypto",
-        "title": "10. Crypto interface ¶"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "dfn-Crypto",
@@ -424,13 +322,36 @@
         "Crypto"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "interface",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-Crypto",
-        "title": "10. Crypto interface ¶"
+        "id": "crypto-interface",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#crypto-interface",
+        "title": "10. Crypto interface"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-windoworworkerglobalscope-crypto",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-windoworworkerglobalscope-crypto",
+      "linkingText": [
+        "crypto"
+      ],
+      "localLinkingText": [
+        "WindowOrWorkerGlobalScope.crypto"
+      ],
+      "type": "attribute",
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "crypto-interface",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#crypto-interface",
+        "title": "10. Crypto interface"
       },
       "definedIn": "pre"
     },
@@ -438,7 +359,58 @@
       "id": "dfn-Crypto-method-getRandomValues",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-Crypto-method-getRandomValues",
       "linkingText": [
+        "getRandomValues()",
+        "getRandomValues(array)"
+      ],
+      "localLinkingText": [
+        "Crypto.getRandomValues",
+        "Crypto.getRandomValues()",
         "getRandomValues"
+      ],
+      "type": "method",
+      "for": [
+        "Crypto"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "Crypto-method-getRandomValues",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#Crypto-method-getRandomValues",
+        "title": "The getRandomValues method",
+        "number": "10.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-Crypto-method-randomUUID",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-Crypto-method-randomUUID",
+      "linkingText": [
+        "randomUUID()"
+      ],
+      "localLinkingText": [
+        "Crypto.randomUUID",
+        "Crypto.randomUUID()",
+        "randomUUID"
+      ],
+      "type": "method",
+      "for": [
+        "Crypto"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "Crypto-method-randomUUID",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#Crypto-method-randomUUID",
+        "title": "The randomUUID method",
+        "number": "10.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-generate-a-random-uuid",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-generate-a-random-uuid",
+      "linkingText": [
+        "generate a random UUID"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -446,9 +418,29 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-Crypto-method-getRandomValues",
-        "title": "The getRandomValues method ¶",
-        "number": "10.2.1"
+        "id": "Crypto-method-randomUUID",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#Crypto-method-randomUUID",
+        "title": "The randomUUID method",
+        "number": "10.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-hexadecimal-representation",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-hexadecimal-representation",
+      "linkingText": [
+        "hexadecimal representation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "Crypto-method-randomUUID",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#Crypto-method-randomUUID",
+        "title": "The randomUUID method",
+        "number": "10.1.2"
       },
       "definedIn": "prose"
     },
@@ -458,51 +450,22 @@
       "linkingText": [
         "subtle"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "localLinkingText": [
+        "Crypto.subtle"
+      ],
+      "type": "attribute",
+      "for": [
+        "Crypto"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-Crypto-attribute-subtle",
-        "title": "The subtle attribute ¶",
-        "number": "10.3.1"
+        "id": "Crypto-attribute-subtle",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#Crypto-attribute-subtle",
+        "title": "The subtle attribute",
+        "number": "10.2.1"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "dfn-AlgorithmIdentifier",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-AlgorithmIdentifier",
-      "linkingText": [
-        "AlgorithmIdentifier"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-AlgorithmIdentifier",
-        "title": "11. Algorithm dictionary ¶"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dfn-HashAlgorithmIdentifier",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-HashAlgorithmIdentifier",
-      "linkingText": [
-        "HashAlgorithmIdentifier"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-HashAlgorithmIdentifier",
-        "title": "11. Algorithm dictionary ¶"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "dfn-Algorithm",
@@ -511,15 +474,73 @@
         "Algorithm"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-Algorithm",
-        "title": "11. Algorithm dictionary ¶"
+        "id": "algorithm-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-dictionary",
+        "title": "11. Algorithm dictionary"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-algorithmidentifier",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-algorithmidentifier",
+      "linkingText": [
+        "AlgorithmIdentifier"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithm-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-dictionary",
+        "title": "11. Algorithm dictionary"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dom-hashalgorithmidentifier",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-hashalgorithmidentifier",
+      "linkingText": [
+        "HashAlgorithmIdentifier"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithm-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-dictionary",
+        "title": "11. Algorithm dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-algorithm-name",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-algorithm-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Algorithm"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithm-dictionary-members",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-dictionary-members",
+        "title": "Algorithm Dictionary Members",
+        "number": "11.1"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dfn-KeyAlgorithm",
@@ -528,15 +549,37 @@
         "KeyAlgorithm"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-KeyAlgorithm",
-        "title": "12. KeyAlgorithm dictionary ¶"
+        "id": "key-algorithm-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#key-algorithm-dictionary",
+        "title": "12. KeyAlgorithm dictionary"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-keyalgorithm-name",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keyalgorithm-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyAlgorithm"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "key-algorithm-dictionary-members",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#key-algorithm-dictionary-members",
+        "title": "KeyAlgorithm dictionary members",
+        "number": "12.2"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dfn-CryptoKey",
@@ -545,15 +588,35 @@
         "CryptoKey"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "interface",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey",
-        "title": "13. CryptoKey interface ¶"
+        "id": "cryptokey-interface",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface",
+        "title": "13. CryptoKey interface"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-keytype",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keytype",
+      "linkingText": [
+        "KeyType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptokey-interface-types",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-types",
+        "title": "Key interface data types",
+        "number": "13.2"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dfn-RecognizedKeyType",
@@ -567,11 +630,94 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RecognizedKeyType",
-        "title": "Key interface data types ¶",
+        "id": "cryptokey-interface-types",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-types",
+        "title": "Key interface data types",
         "number": "13.2"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "dom-keytype-secret",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keytype-secret",
+      "linkingText": [
+        "secret"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyType"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptokey-interface-types",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-types",
+        "title": "Key interface data types",
+        "number": "13.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-keytype-public",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keytype-public",
+      "linkingText": [
+        "public"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyType"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptokey-interface-types",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-types",
+        "title": "Key interface data types",
+        "number": "13.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-keytype-private",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keytype-private",
+      "linkingText": [
+        "private"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyType"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptokey-interface-types",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-types",
+        "title": "Key interface data types",
+        "number": "13.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-keyusage",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keyusage",
+      "linkingText": [
+        "KeyUsage"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptokey-interface-types",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-types",
+        "title": "Key interface data types",
+        "number": "13.2"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dfn-RecognizedKeyUsage",
@@ -585,8 +731,177 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RecognizedKeyUsage",
-        "title": "Key interface data types ¶",
+        "id": "cryptokey-interface-types",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-types",
+        "title": "Key interface data types",
+        "number": "13.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-keyusage-encrypt",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keyusage-encrypt",
+      "linkingText": [
+        "encrypt"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptokey-interface-types",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-types",
+        "title": "Key interface data types",
+        "number": "13.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-keyusage-decrypt",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keyusage-decrypt",
+      "linkingText": [
+        "decrypt"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptokey-interface-types",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-types",
+        "title": "Key interface data types",
+        "number": "13.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-keyusage-sign",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keyusage-sign",
+      "linkingText": [
+        "sign"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptokey-interface-types",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-types",
+        "title": "Key interface data types",
+        "number": "13.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-keyusage-verify",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keyusage-verify",
+      "linkingText": [
+        "verify"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptokey-interface-types",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-types",
+        "title": "Key interface data types",
+        "number": "13.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-keyusage-derivekey",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keyusage-derivekey",
+      "linkingText": [
+        "deriveKey"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptokey-interface-types",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-types",
+        "title": "Key interface data types",
+        "number": "13.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-keyusage-derivebits",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keyusage-derivebits",
+      "linkingText": [
+        "deriveBits"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptokey-interface-types",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-types",
+        "title": "Key interface data types",
+        "number": "13.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-keyusage-wrapkey",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keyusage-wrapkey",
+      "linkingText": [
+        "wrapKey"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptokey-interface-types",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-types",
+        "title": "Key interface data types",
+        "number": "13.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-keyusage-unwrapkey",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keyusage-unwrapkey",
+      "linkingText": [
+        "unwrapKey"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptokey-interface-types",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-types",
+        "title": "Key interface data types",
         "number": "13.2"
       },
       "definedIn": "prose"
@@ -595,16 +910,19 @@
       "id": "dfn-CryptoKey-slot-type",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-type",
       "linkingText": [
-        "type"
+        "[[type]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "CryptoKey"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-type",
-        "title": "CryptoKey internal slots ¶",
+        "id": "cryptokey-interface-internal-slots",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-internal-slots",
+        "title": "CryptoKey internal slots",
         "number": "13.3"
       },
       "definedIn": "prose"
@@ -613,16 +931,19 @@
       "id": "dfn-CryptoKey-slot-extractable",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-extractable",
       "linkingText": [
-        "extractable"
+        "[[extractable]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "CryptoKey"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-extractable",
-        "title": "CryptoKey internal slots ¶",
+        "id": "cryptokey-interface-internal-slots",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-internal-slots",
+        "title": "CryptoKey internal slots",
         "number": "13.3"
       },
       "definedIn": "prose"
@@ -631,16 +952,19 @@
       "id": "dfn-CryptoKey-slot-algorithm",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-algorithm",
       "linkingText": [
-        "algorithm"
+        "[[algorithm]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "CryptoKey"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-algorithm",
-        "title": "CryptoKey internal slots ¶",
+        "id": "cryptokey-interface-internal-slots",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-internal-slots",
+        "title": "CryptoKey internal slots",
         "number": "13.3"
       },
       "definedIn": "prose"
@@ -649,16 +973,19 @@
       "id": "dfn-CryptoKey-slot-algorithm_cached",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-algorithm_cached",
       "linkingText": [
-        "algorithm_cached"
+        "[[algorithm_cached]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "CryptoKey"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-algorithm_cached",
-        "title": "CryptoKey internal slots ¶",
+        "id": "cryptokey-interface-internal-slots",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-internal-slots",
+        "title": "CryptoKey internal slots",
         "number": "13.3"
       },
       "definedIn": "prose"
@@ -667,16 +994,19 @@
       "id": "dfn-CryptoKey-slot-usages",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-usages",
       "linkingText": [
-        "usages"
+        "[[usages]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "CryptoKey"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-usages",
-        "title": "CryptoKey internal slots ¶",
+        "id": "cryptokey-interface-internal-slots",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-internal-slots",
+        "title": "CryptoKey internal slots",
         "number": "13.3"
       },
       "definedIn": "prose"
@@ -685,16 +1015,19 @@
       "id": "dfn-CryptoKey-slot-usages_cached",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-usages_cached",
       "linkingText": [
-        "usages_cached"
+        "[[usages_cached]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "CryptoKey"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-usages_cached",
-        "title": "CryptoKey internal slots ¶",
+        "id": "cryptokey-interface-internal-slots",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-internal-slots",
+        "title": "CryptoKey internal slots",
         "number": "13.3"
       },
       "definedIn": "prose"
@@ -703,19 +1036,114 @@
       "id": "dfn-CryptoKey-slot-handle",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-handle",
       "linkingText": [
-        "handle"
+        "[[handle]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "CryptoKey"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-handle",
-        "title": "CryptoKey internal slots ¶",
+        "id": "cryptokey-interface-internal-slots",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-internal-slots",
+        "title": "CryptoKey internal slots",
         "number": "13.3"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "dom-cryptokey-type",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-cryptokey-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [
+        "CryptoKey.type"
+      ],
+      "type": "attribute",
+      "for": [
+        "CryptoKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptokey-interface-members",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-members",
+        "title": "CryptoKey interface members",
+        "number": "13.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-cryptokey-extractable",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-cryptokey-extractable",
+      "linkingText": [
+        "extractable"
+      ],
+      "localLinkingText": [
+        "CryptoKey.extractable"
+      ],
+      "type": "attribute",
+      "for": [
+        "CryptoKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptokey-interface-members",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-members",
+        "title": "CryptoKey interface members",
+        "number": "13.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-cryptokey-algorithm",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-cryptokey-algorithm",
+      "linkingText": [
+        "algorithm"
+      ],
+      "localLinkingText": [
+        "CryptoKey.algorithm"
+      ],
+      "type": "attribute",
+      "for": [
+        "CryptoKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptokey-interface-members",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-members",
+        "title": "CryptoKey interface members",
+        "number": "13.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-cryptokey-usages",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-cryptokey-usages",
+      "linkingText": [
+        "usages"
+      ],
+      "localLinkingText": [
+        "CryptoKey.usages"
+      ],
+      "type": "attribute",
+      "for": [
+        "CryptoKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptokey-interface-members",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-members",
+        "title": "CryptoKey interface members",
+        "number": "13.4"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dfn-SubtleCrypto",
@@ -724,15 +1152,35 @@
         "SubtleCrypto"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "interface",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto",
-        "title": "14. SubtleCrypto interface ¶"
+        "id": "subtlecrypto-interface",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface",
+        "title": "14. SubtleCrypto interface"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-keyformat",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keyformat",
+      "linkingText": [
+        "KeyFormat"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-datatypes",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface-datatypes",
+        "title": "Data Types",
+        "number": "14.1"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dfn-RecognizedKeyFormats",
@@ -746,17 +1194,102 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RecognizedKeyFormats",
-        "title": "Data Types ¶",
-        "number": "14.2"
+        "id": "subtlecrypto-interface-datatypes",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface-datatypes",
+        "title": "Data Types",
+        "number": "14.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-SubtleCrypto-method-encrypt",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-encrypt",
+      "id": "dom-keyformat-raw",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keyformat-raw",
       "linkingText": [
-        "encrypt"
+        "raw"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyFormat"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-datatypes",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface-datatypes",
+        "title": "Data Types",
+        "number": "14.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-keyformat-pkcs8",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keyformat-pkcs8",
+      "linkingText": [
+        "pkcs8"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyFormat"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-datatypes",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface-datatypes",
+        "title": "Data Types",
+        "number": "14.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-keyformat-spki",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keyformat-spki",
+      "linkingText": [
+        "spki"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyFormat"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-datatypes",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface-datatypes",
+        "title": "Data Types",
+        "number": "14.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-keyformat-jwk",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-keyformat-jwk",
+      "linkingText": [
+        "jwk"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyFormat"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-datatypes",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface-datatypes",
+        "title": "Data Types",
+        "number": "14.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-crypto-task-source-0",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-crypto-task-source-0",
+      "linkingText": [
+        "crypto task source"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -764,8 +1297,35 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-encrypt",
-        "title": "The encrypt method ¶",
+        "id": "subtlecrypto-interface-tasksource",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface-tasksource",
+        "title": "Task Source",
+        "number": "14.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-encrypt",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-encrypt",
+      "linkingText": [
+        "encrypt()",
+        "encrypt(algorithm, key, data)"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.encrypt",
+        "SubtleCrypto.encrypt()",
+        "encrypt"
+      ],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "SubtleCrypto-method-encrypt",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-encrypt",
+        "title": "The encrypt method",
         "number": "14.3.1"
       },
       "definedIn": "prose"
@@ -774,16 +1334,24 @@
       "id": "dfn-SubtleCrypto-method-decrypt",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-decrypt",
       "linkingText": [
+        "decrypt()",
+        "decrypt(algorithm, key, data)"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.decrypt",
+        "SubtleCrypto.decrypt()",
         "decrypt"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-decrypt",
-        "title": "The decrypt method ¶",
+        "id": "SubtleCrypto-method-decrypt",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-decrypt",
+        "title": "The decrypt method",
         "number": "14.3.2"
       },
       "definedIn": "prose"
@@ -792,16 +1360,24 @@
       "id": "dfn-SubtleCrypto-method-sign",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-sign",
       "linkingText": [
+        "sign()",
+        "sign(algorithm, key, data)"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.sign",
+        "SubtleCrypto.sign()",
         "sign"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-sign",
-        "title": "The sign method ¶",
+        "id": "SubtleCrypto-method-sign",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-sign",
+        "title": "The sign method",
         "number": "14.3.3"
       },
       "definedIn": "prose"
@@ -810,16 +1386,24 @@
       "id": "dfn-SubtleCrypto-method-verify",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-verify",
       "linkingText": [
+        "verify()",
+        "verify(algorithm, key, signature, data)"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.verify",
+        "SubtleCrypto.verify()",
         "verify"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-verify",
-        "title": "The verify method ¶",
+        "id": "SubtleCrypto-method-verify",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-verify",
+        "title": "The verify method",
         "number": "14.3.4"
       },
       "definedIn": "prose"
@@ -828,16 +1412,24 @@
       "id": "dfn-SubtleCrypto-method-digest",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-digest",
       "linkingText": [
+        "digest()",
+        "digest(algorithm, data)"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.digest",
+        "SubtleCrypto.digest()",
         "digest"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-digest",
-        "title": "The digest method ¶",
+        "id": "SubtleCrypto-method-digest",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-digest",
+        "title": "The digest method",
         "number": "14.3.5"
       },
       "definedIn": "prose"
@@ -846,16 +1438,24 @@
       "id": "dfn-SubtleCrypto-method-generateKey",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-generateKey",
       "linkingText": [
+        "generateKey()",
+        "generateKey(algorithm, extractable, keyUsages)"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.generateKey",
+        "SubtleCrypto.generateKey()",
         "generateKey"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-generateKey",
-        "title": "The generateKey method ¶",
+        "id": "SubtleCrypto-method-generateKey",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-generateKey",
+        "title": "The generateKey method",
         "number": "14.3.6"
       },
       "definedIn": "prose"
@@ -864,16 +1464,24 @@
       "id": "dfn-SubtleCrypto-method-deriveKey",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-deriveKey",
       "linkingText": [
+        "deriveKey()",
+        "deriveKey(algorithm, baseKey, derivedKeyType, extractable, keyUsages)"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.deriveKey",
+        "SubtleCrypto.deriveKey()",
         "deriveKey"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-deriveKey",
-        "title": "The deriveKey method ¶",
+        "id": "SubtleCrypto-method-deriveKey",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-deriveKey",
+        "title": "The deriveKey method",
         "number": "14.3.7"
       },
       "definedIn": "prose"
@@ -882,16 +1490,25 @@
       "id": "dfn-SubtleCrypto-method-deriveBits",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-deriveBits",
       "linkingText": [
+        "deriveBits()",
+        "deriveBits(algorithm, baseKey)",
+        "deriveBits(algorithm, baseKey, length)"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.deriveBits",
+        "SubtleCrypto.deriveBits()",
         "deriveBits"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-deriveBits",
-        "title": "The deriveBits method ¶",
+        "id": "SubtleCrypto-method-deriveBits",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-deriveBits",
+        "title": "The deriveBits method",
         "number": "14.3.8"
       },
       "definedIn": "prose"
@@ -900,16 +1517,24 @@
       "id": "dfn-SubtleCrypto-method-importKey",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-importKey",
       "linkingText": [
+        "importKey()",
+        "importKey(format, keyData, algorithm, extractable, keyUsages)"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.importKey",
+        "SubtleCrypto.importKey()",
         "importKey"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-importKey",
-        "title": "The importKey method ¶",
+        "id": "SubtleCrypto-method-importKey",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-importKey",
+        "title": "The importKey method",
         "number": "14.3.9"
       },
       "definedIn": "prose"
@@ -918,16 +1543,24 @@
       "id": "dfn-SubtleCrypto-method-exportKey",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-exportKey",
       "linkingText": [
+        "exportKey()",
+        "exportKey(format, key)"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.exportKey",
+        "SubtleCrypto.exportKey()",
         "exportKey"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-exportKey",
-        "title": "The exportKey method ¶",
+        "id": "SubtleCrypto-method-exportKey",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-exportKey",
+        "title": "The exportKey method",
         "number": "14.3.10"
       },
       "definedIn": "prose"
@@ -936,16 +1569,24 @@
       "id": "dfn-SubtleCrypto-method-wrapKey",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-wrapKey",
       "linkingText": [
+        "wrapKey()",
+        "wrapKey(format, key, wrappingKey, wrapAlgorithm)"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.wrapKey",
+        "SubtleCrypto.wrapKey()",
         "wrapKey"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-wrapKey",
-        "title": "The wrapKey method ¶",
+        "id": "SubtleCrypto-method-wrapKey",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-wrapKey",
+        "title": "The wrapKey method",
         "number": "14.3.11"
       },
       "definedIn": "prose"
@@ -954,160 +1595,445 @@
       "id": "dfn-SubtleCrypto-method-unwrapKey",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-unwrapKey",
       "linkingText": [
+        "unwrapKey()",
+        "unwrapKey(format, wrappedKey, unwrappingKey, unwrapAlgorithm, unwrappedKeyAlgorithm, extractable, keyUsages)"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.unwrapKey",
+        "SubtleCrypto.unwrapKey()",
         "unwrapKey"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-unwrapKey",
-        "title": "The unwrapKey method ¶",
+        "id": "SubtleCrypto-method-unwrapKey",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-unwrapKey",
+        "title": "The unwrapKey method",
         "number": "14.3.12"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-TypeError",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-TypeError",
+      "id": "dom-rsaotherprimesinfo-r",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-rsaotherprimesinfo-r",
       "linkingText": [
-        "TypeError"
+        "r"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-TypeError",
-        "title": "Exceptions ¶",
-        "number": "14.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-NotSupportedError",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-NotSupportedError",
-      "linkingText": [
-        "NotSupportedError"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-NotSupportedError",
-        "title": "Exceptions ¶",
-        "number": "14.4"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-SyntaxError",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SyntaxError",
-      "linkingText": [
-        "SyntaxError"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-SyntaxError",
-        "title": "Exceptions ¶",
-        "number": "14.4"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-InvalidAccessError",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-InvalidAccessError",
-      "linkingText": [
-        "InvalidAccessError"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-InvalidAccessError",
-        "title": "Exceptions ¶",
-        "number": "14.4"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-DataError",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-DataError",
-      "linkingText": [
-        "DataError"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-DataError",
-        "title": "Exceptions ¶",
-        "number": "14.4"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-OperationError",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-OperationError",
-      "linkingText": [
-        "OperationError"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-OperationError",
-        "title": "Exceptions ¶",
-        "number": "14.4"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "concept-throw",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#concept-throw",
-      "linkingText": [
-        "throw"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#concept-throw",
-        "title": "Exceptions ¶",
-        "number": "14.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-RsaOtherPrimesInfo",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaOtherPrimesInfo",
-      "linkingText": [
+      "type": "dict-member",
+      "for": [
         "RsaOtherPrimesInfo"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaOtherPrimesInfo",
-        "title": "15. JsonWebKey dictionary ¶"
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-rsaotherprimesinfo-d",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-rsaotherprimesinfo-d",
+      "linkingText": [
+        "d"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RsaOtherPrimesInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-rsaotherprimesinfo-t",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-rsaotherprimesinfo-t",
+      "linkingText": [
+        "t"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RsaOtherPrimesInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-kty",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-kty",
+      "linkingText": [
+        "kty"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-use",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-use",
+      "linkingText": [
+        "use"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-key_ops",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-key_ops",
+      "linkingText": [
+        "key_ops"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-alg",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-alg",
+      "linkingText": [
+        "alg"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-ext",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-ext",
+      "linkingText": [
+        "ext"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-crv",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-crv",
+      "linkingText": [
+        "crv"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-x",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-y",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-d",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-d",
+      "linkingText": [
+        "d"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-n",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-n",
+      "linkingText": [
+        "n"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-e",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-e",
+      "linkingText": [
+        "e"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-p",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-p",
+      "linkingText": [
+        "p"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-q",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-q",
+      "linkingText": [
+        "q"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-dp",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-dp",
+      "linkingText": [
+        "dp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-dq",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-dq",
+      "linkingText": [
+        "dq"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-qi",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-qi",
+      "linkingText": [
+        "qi"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-oth",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-oth",
+      "linkingText": [
+        "oth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonwebkey-k",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dom-jsonwebkey-k",
+      "linkingText": [
+        "k"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
       },
       "definedIn": "pre"
     },
@@ -1118,15 +2044,34 @@
         "JsonWebKey"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-JsonWebKey",
-        "title": "15. JsonWebKey dictionary ¶"
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-RsaOtherPrimesInfo",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaOtherPrimesInfo",
+      "linkingText": [
+        "RsaOtherPrimesInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-BigInteger",
@@ -1135,15 +2080,16 @@
         "BigInteger"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "typedef",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-BigInteger",
-        "title": "16. BigInteger ¶"
+        "id": "big-integer",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#big-integer",
+        "title": "16. BigInteger"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-CryptoKeyPair",
@@ -1152,15 +2098,16 @@
         "CryptoKeyPair"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKeyPair",
-        "title": "17. CryptoKeyPair dictionary ¶"
+        "id": "keypair",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#keypair",
+        "title": "17. CryptoKeyPair dictionary"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-CryptoKeyPair-publicKey",
@@ -1169,15 +2116,18 @@
         "publicKey"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "CryptoKeyPair"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKeyPair-publicKey",
-        "title": "17. CryptoKeyPair dictionary ¶"
+        "id": "keypair",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#keypair",
+        "title": "17. CryptoKeyPair dictionary"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-CryptoKeyPair-privateKey",
@@ -1186,15 +2136,18 @@
         "privateKey"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "CryptoKeyPair"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKeyPair-privateKey",
-        "title": "17. CryptoKeyPair dictionary ¶"
+        "id": "keypair",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#keypair",
+        "title": "17. CryptoKeyPair dictionary"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "recognized-algorithm-name",
@@ -1208,8 +2161,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#recognized-algorithm-name",
-        "title": "Naming ¶",
+        "id": "algorithm-concepts-naming",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-concepts-naming",
+        "title": "Naming",
         "number": "18.2.1"
       },
       "definedIn": "prose"
@@ -1226,8 +2180,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#supported-operation",
-        "title": "Supported Operations ¶",
+        "id": "algorithm-concepts-operations",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-concepts-operations",
+        "title": "Supported Operations",
         "number": "18.2.2"
       },
       "definedIn": "prose"
@@ -1244,8 +2199,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#supported-operations",
-        "title": "Specification Conventions ¶",
+        "id": "algorithm-conventions",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-conventions",
+        "title": "Specification Conventions",
         "number": "18.3"
       },
       "definedIn": "prose"
@@ -1262,8 +2218,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-specific-params",
-        "title": "Specification Conventions ¶",
+        "id": "algorithm-conventions",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-conventions",
+        "title": "Specification Conventions",
         "number": "18.3"
       },
       "definedIn": "prose"
@@ -1280,11 +2237,31 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-result",
-        "title": "Specification Conventions ¶",
+        "id": "algorithm-conventions",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-conventions",
+        "title": "Specification Conventions",
         "number": "18.3"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "dfn-algorithm-normalization",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-algorithm-normalization",
+      "linkingText": [
+        "Algorithm Normalization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithm-normalization",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-normalization",
+        "title": "Algorithm Normalization",
+        "number": "18.4"
+      },
+      "definedIn": "heading"
     },
     {
       "id": "dfn-supportedAlgorithms",
@@ -1298,8 +2275,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-supportedAlgorithms",
-        "title": "Internal State Objects ¶",
+        "id": "algorithm-normalization-internal",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-normalization-internal",
+        "title": "Internal State Objects",
         "number": "18.4.2"
       },
       "definedIn": "prose"
@@ -1316,8 +2294,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#concept-define-an-algorithm",
-        "title": "Defining an Algorithm ¶",
+        "id": "algorithm-normalization-define-an-algorithm",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-normalization-define-an-algorithm",
+        "title": "Defining an Algorithm",
         "number": "18.4.3"
       },
       "definedIn": "prose"
@@ -1334,8 +2313,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-normalize-an-algorithm",
-        "title": "Normalizing an algorithm ¶",
+        "id": "algorithm-normalization-normalize-an-algorithm",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-normalization-normalize-an-algorithm",
+        "title": "Normalizing an algorithm",
         "number": "18.4.4"
       },
       "definedIn": "prose"
@@ -1344,16 +2324,17 @@
       "id": "dfn-rsa-ssa-extended-import-steps",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-rsa-ssa-extended-import-steps",
       "linkingText": [
-        "key import steps"
+        "RSASSA-PKCS1-v1_5 key import steps"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
+      "informative": true,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-rsa-ssa-extended-import-steps",
-        "title": "Description ¶",
+        "id": "rsassa-pkcs1-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#rsassa-pkcs1-description",
+        "title": "Description",
         "number": "20.1"
       },
       "definedIn": "prose"
@@ -1362,16 +2343,17 @@
       "id": "dfn-rsa-ssa-extended-export-steps",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-rsa-ssa-extended-export-steps",
       "linkingText": [
-        "key export steps"
+        "RSASSA-PKCS1-v1_5 key export steps"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
+      "informative": true,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-rsa-ssa-extended-export-steps",
-        "title": "Description ¶",
+        "id": "rsassa-pkcs1-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#rsassa-pkcs1-description",
+        "title": "Description",
         "number": "20.1"
       },
       "definedIn": "prose"
@@ -1383,16 +2365,17 @@
         "RsaKeyGenParams"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaKeyGenParams",
-        "title": "RsaKeyGenParams dictionary ¶",
+        "id": "RsaKeyGenParams-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaKeyGenParams-dictionary",
+        "title": "RsaKeyGenParams dictionary",
         "number": "20.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dfn-RsaKeyGenParams-modulusLength",
@@ -1401,16 +2384,19 @@
         "modulusLength"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "RsaKeyGenParams"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaKeyGenParams-modulusLength",
-        "title": "RsaKeyGenParams dictionary ¶",
+        "id": "RsaKeyGenParams-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaKeyGenParams-dictionary",
+        "title": "RsaKeyGenParams dictionary",
         "number": "20.3"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-RsaKeyGenParams-publicExponent",
@@ -1419,16 +2405,19 @@
         "publicExponent"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "RsaKeyGenParams"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaKeyGenParams-publicExponent",
-        "title": "RsaKeyGenParams dictionary ¶",
+        "id": "RsaKeyGenParams-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaKeyGenParams-dictionary",
+        "title": "RsaKeyGenParams dictionary",
         "number": "20.3"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-RsaHashedKeyGenParams",
@@ -1437,16 +2426,17 @@
         "RsaHashedKeyGenParams"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaHashedKeyGenParams",
-        "title": "RsaHashedKeyGenParams dictionary ¶",
+        "id": "RsaHashedKeyGenParams-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaHashedKeyGenParams-dictionary",
+        "title": "RsaHashedKeyGenParams dictionary",
         "number": "20.4"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dfn-RsaHashedKeyGenParams-hash",
@@ -1455,16 +2445,19 @@
         "hash"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "RsaHashedKeyGenParams"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaHashedKeyGenParams-hash",
-        "title": "RsaHashedKeyGenParams dictionary ¶",
+        "id": "RsaHashedKeyGenParams-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaHashedKeyGenParams-dictionary",
+        "title": "RsaHashedKeyGenParams dictionary",
         "number": "20.4"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-RsaKeyAlgorithm",
@@ -1473,16 +2466,59 @@
         "RsaKeyAlgorithm"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaKeyAlgorithm",
-        "title": "RsaKeyAlgorithm dictionary ¶",
+        "id": "RsaKeyAlgorithm-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaKeyAlgorithm-dictionary",
+        "title": "RsaKeyAlgorithm dictionary",
         "number": "20.5"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-RsaKeyAlgorithm-modulusLength",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaKeyAlgorithm-modulusLength",
+      "linkingText": [
+        "modulusLength"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RsaKeyAlgorithm"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "RsaKeyAlgorithm-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaKeyAlgorithm-dictionary",
+        "title": "RsaKeyAlgorithm dictionary",
+        "number": "20.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-RsaKeyAlgorithm-publicExponent",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaKeyAlgorithm-publicExponent",
+      "linkingText": [
+        "publicExponent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RsaKeyAlgorithm"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "RsaKeyAlgorithm-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaKeyAlgorithm-dictionary",
+        "title": "RsaKeyAlgorithm dictionary",
+        "number": "20.5"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-RsaHashedKeyAlgorithm",
@@ -1491,16 +2527,38 @@
         "RsaHashedKeyAlgorithm"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaHashedKeyAlgorithm",
-        "title": "RsaHashedKeyAlgorithm dictionary ¶",
+        "id": "RsaHashedKeyAlgorithm-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaHashedKeyAlgorithm-dictionary",
+        "title": "RsaHashedKeyAlgorithm dictionary",
         "number": "20.6"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-RsaHashedKeyAlgorithm-hash",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaHashedKeyAlgorithm-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RsaHashedKeyAlgorithm"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "RsaHashedKeyAlgorithm-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaHashedKeyAlgorithm-dictionary",
+        "title": "RsaHashedKeyAlgorithm dictionary",
+        "number": "20.6"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-RsaHashedImportParams",
@@ -1509,16 +2567,76 @@
         "RsaHashedImportParams"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaHashedImportParams",
-        "title": "RsaHashedImportParams dictionary ¶",
+        "id": "RsaHashedImportParams-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaHashedImportParams-dictionary",
+        "title": "RsaHashedImportParams dictionary",
         "number": "20.7"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-RsaHashedImportParams-hash",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaHashedImportParams-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RsaHashedImportParams"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "RsaHashedImportParams-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaHashedImportParams-dictionary",
+        "title": "RsaHashedImportParams dictionary",
+        "number": "20.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rsa-pss-extended-import-steps",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-rsa-pss-extended-import-steps",
+      "linkingText": [
+        "RSA-PSS key import steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "rsa-pss-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-pss-description",
+        "title": "Description",
+        "number": "21.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rsa-pss-extended-export-steps",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-rsa-pss-extended-export-steps",
+      "linkingText": [
+        "RSA-PSS key export steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "rsa-pss-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-pss-description",
+        "title": "Description",
+        "number": "21.1"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-RsaPssParams",
@@ -1527,16 +2645,17 @@
         "RsaPssParams"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaPssParams",
-        "title": "RsaPssParams dictionary ¶",
+        "id": "RsaPssParams-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaPssParams-dictionary",
+        "title": "RsaPssParams dictionary",
         "number": "21.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dfn-RsaPssParams-saltLength",
@@ -1545,16 +2664,57 @@
         "saltLength"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "RsaPssParams"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaPssParams-saltLength",
-        "title": "RsaPssParams dictionary ¶",
+        "id": "RsaPssParams-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaPssParams-dictionary",
+        "title": "RsaPssParams dictionary",
         "number": "21.3"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rsa-oaep-extended-import-steps",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-rsa-oaep-extended-import-steps",
+      "linkingText": [
+        "RSA-OAEP key import steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "rsa-oaep-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-oaep-description",
+        "title": "Description",
+        "number": "22.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rsa-oaep-extended-export-steps",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-rsa-oaep-extended-export-steps",
+      "linkingText": [
+        "RSA-OAEP key export steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "rsa-oaep-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-oaep-description",
+        "title": "Description",
+        "number": "22.1"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-RsaOaepParams",
@@ -1563,16 +2723,17 @@
         "RsaOaepParams"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaOaepParams",
-        "title": "RsaOaepParams dictionary ¶",
+        "id": "rsa-oaep-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-oaep-params",
+        "title": "RsaOaepParams dictionary",
         "number": "22.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dfn-RsaOaepParams-label",
@@ -1581,31 +2742,35 @@
         "label"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "RsaOaepParams"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaOaepParams-label",
-        "title": "RsaOaepParams dictionary ¶",
+        "id": "rsa-oaep-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-oaep-params",
+        "title": "RsaOaepParams dictionary",
         "number": "22.3"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-ecdsa-extended-namedcurve-values",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-namedcurve-values",
       "linkingText": [
-        "the curve name"
+        "ECDSA curve name"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
+      "informative": true,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-namedcurve-values",
-        "title": "Description ¶",
+        "id": "ecdsa-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdsa-description",
+        "title": "Description",
         "number": "23.1"
       },
       "definedIn": "prose"
@@ -1620,10 +2785,11 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
+      "informative": true,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-signature-steps",
-        "title": "Description ¶",
+        "id": "ecdsa-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdsa-description",
+        "title": "Description",
         "number": "23.1"
       },
       "definedIn": "prose"
@@ -1638,10 +2804,11 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
+      "informative": true,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-verification-steps",
-        "title": "Description ¶",
+        "id": "ecdsa-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdsa-description",
+        "title": "Description",
         "number": "23.1"
       },
       "definedIn": "prose"
@@ -1656,10 +2823,11 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
+      "informative": true,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-generation-steps",
-        "title": "Description ¶",
+        "id": "ecdsa-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdsa-description",
+        "title": "Description",
         "number": "23.1"
       },
       "definedIn": "prose"
@@ -1674,10 +2842,11 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
+      "informative": true,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-import-steps",
-        "title": "Description ¶",
+        "id": "ecdsa-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdsa-description",
+        "title": "Description",
         "number": "23.1"
       },
       "definedIn": "prose"
@@ -1692,10 +2861,11 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
+      "informative": true,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-export-steps",
-        "title": "Description ¶",
+        "id": "ecdsa-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdsa-description",
+        "title": "Description",
         "number": "23.1"
       },
       "definedIn": "prose"
@@ -1707,16 +2877,38 @@
         "EcdsaParams"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-EcdsaParams",
-        "title": "EcdsaParams dictionary ¶",
+        "id": "EcdsaParams-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#EcdsaParams-dictionary",
+        "title": "EcdsaParams dictionary",
         "number": "23.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-EcdsaParams-hash",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-EcdsaParams-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EcdsaParams"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "EcdsaParams-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#EcdsaParams-dictionary",
+        "title": "EcdsaParams dictionary",
+        "number": "23.3"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-EcKeyGenParams",
@@ -1725,34 +2917,17 @@
         "EcKeyGenParams"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyGenParams",
-        "title": "EcKeyGenParams dictionary ¶",
+        "id": "EcKeyGenParams-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#EcKeyGenParams-dictionary",
+        "title": "EcKeyGenParams dictionary",
         "number": "23.4"
       },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dfn-EcKeyGenParams-namedCurve",
-      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyGenParams-namedCurve",
-      "linkingText": [
-        "namedCurve"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyGenParams-namedCurve",
-        "title": "EcKeyGenParams dictionary ¶",
-        "number": "23.4"
-      },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dfn-NamedCurve",
@@ -1761,13 +2936,35 @@
         "NamedCurve"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "typedef",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-NamedCurve",
-        "title": "EcKeyGenParams dictionary ¶",
+        "id": "EcKeyGenParams-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#EcKeyGenParams-dictionary",
+        "title": "EcKeyGenParams dictionary",
+        "number": "23.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-EcKeyGenParams-namedCurve",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyGenParams-namedCurve",
+      "linkingText": [
+        "namedCurve"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EcKeyGenParams"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "EcKeyGenParams-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#EcKeyGenParams-dictionary",
+        "title": "EcKeyGenParams dictionary",
         "number": "23.4"
       },
       "definedIn": "prose"
@@ -1779,16 +2976,38 @@
         "EcKeyAlgorithm"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyAlgorithm",
-        "title": "EcKeyAlgorithm dictionary ¶",
+        "id": "EcKeyAlgorithm-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#EcKeyAlgorithm-dictionary",
+        "title": "EcKeyAlgorithm dictionary",
         "number": "23.5"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-EcKeyAlgorithm-namedCurve",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyAlgorithm-namedCurve",
+      "linkingText": [
+        "namedCurve"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EcKeyAlgorithm"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "EcKeyAlgorithm-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#EcKeyAlgorithm-dictionary",
+        "title": "EcKeyAlgorithm dictionary",
+        "number": "23.5"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-EcKeyImportParams",
@@ -1797,16 +3016,57 @@
         "EcKeyImportParams"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyImportParams",
-        "title": "EcKeyImportParams dictionary ¶",
+        "id": "EcKeyImportParams-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#EcKeyImportParams-dictionary",
+        "title": "EcKeyImportParams dictionary",
         "number": "23.6"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-EcKeyImportParams-namedCurve",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyImportParams-namedCurve",
+      "linkingText": [
+        "namedCurve"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EcKeyImportParams"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "EcKeyImportParams-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#EcKeyImportParams-dictionary",
+        "title": "EcKeyImportParams dictionary",
+        "number": "23.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-ecdh-extended-namedcurve-values",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdh-extended-namedcurve-values",
+      "linkingText": [
+        "ECDH curve name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "ecdh-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdh-description",
+        "title": "Description",
+        "number": "24.1"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-ecdh-extended-generation-steps",
@@ -1818,10 +3078,11 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
+      "informative": true,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdh-extended-generation-steps",
-        "title": "Description ¶",
+        "id": "ecdh-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdh-description",
+        "title": "Description",
         "number": "24.1"
       },
       "definedIn": "prose"
@@ -1836,10 +3097,11 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
+      "informative": true,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdh-extended-derivation-steps",
-        "title": "Description ¶",
+        "id": "ecdh-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdh-description",
+        "title": "Description",
         "number": "24.1"
       },
       "definedIn": "prose"
@@ -1854,10 +3116,11 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
+      "informative": true,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdh-extended-import-steps",
-        "title": "Description ¶",
+        "id": "ecdh-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdh-description",
+        "title": "Description",
         "number": "24.1"
       },
       "definedIn": "prose"
@@ -1872,10 +3135,11 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
+      "informative": true,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdh-extended-export-steps",
-        "title": "Description ¶",
+        "id": "ecdh-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdh-description",
+        "title": "Description",
         "number": "24.1"
       },
       "definedIn": "prose"
@@ -1887,16 +3151,17 @@
         "EcdhKeyDeriveParams"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-EcdhKeyDeriveParams",
-        "title": "EcdhKeyDeriveParams dictionary ¶",
+        "id": "dh-EcdhKeyDeriveParams",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#dh-EcdhKeyDeriveParams",
+        "title": "EcdhKeyDeriveParams dictionary",
         "number": "24.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dfn-EcdhKeyDeriveParams-public",
@@ -1905,16 +3170,19 @@
         "public"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "EcdhKeyDeriveParams"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-EcdhKeyDeriveParams-public",
-        "title": "EcdhKeyDeriveParams dictionary ¶",
+        "id": "dh-EcdhKeyDeriveParams",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#dh-EcdhKeyDeriveParams",
+        "title": "EcdhKeyDeriveParams dictionary",
         "number": "24.3"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-AesCtrParams",
@@ -1923,16 +3191,17 @@
         "AesCtrParams"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-AesCtrParams",
-        "title": "AesCtrParams dictionary ¶",
-        "number": "25.3"
+        "id": "aes-ctr-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-ctr-params",
+        "title": "AesCtrParams dictionary",
+        "number": "27.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dfn-AesCtrParams-counter",
@@ -1941,16 +3210,19 @@
         "counter"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "AesCtrParams"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-AesCtrParams-counter",
-        "title": "AesCtrParams dictionary ¶",
-        "number": "25.3"
+        "id": "aes-ctr-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-ctr-params",
+        "title": "AesCtrParams dictionary",
+        "number": "27.3"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-AesCtrParams-length",
@@ -1959,16 +3231,19 @@
         "length"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "AesCtrParams"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-AesCtrParams-length",
-        "title": "AesCtrParams dictionary ¶",
-        "number": "25.3"
+        "id": "aes-ctr-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-ctr-params",
+        "title": "AesCtrParams dictionary",
+        "number": "27.3"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-AesKeyAlgorithm",
@@ -1977,16 +3252,38 @@
         "AesKeyAlgorithm"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-AesKeyAlgorithm",
-        "title": "AesCtrParams dictionary ¶",
-        "number": "25.3"
+        "id": "AesKeyAlgorithm-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#AesKeyAlgorithm-dictionary",
+        "title": "AesKeyAlgorithm dictionary",
+        "number": "27.4"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-AesKeyAlgorithm-length",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-AesKeyAlgorithm-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AesKeyAlgorithm"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "AesKeyAlgorithm-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#AesKeyAlgorithm-dictionary",
+        "title": "AesKeyAlgorithm dictionary",
+        "number": "27.4"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-AesKeyGenParams",
@@ -1995,16 +3292,38 @@
         "AesKeyGenParams"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-AesKeyGenParams",
-        "title": "AesKeyGenParams dictionary ¶",
-        "number": "25.5"
+        "id": "aes-keygen-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-keygen-params",
+        "title": "AesKeyGenParams dictionary",
+        "number": "27.5"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-AesKeyGenParams-length",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-AesKeyGenParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AesKeyGenParams"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aes-keygen-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-keygen-params",
+        "title": "AesKeyGenParams dictionary",
+        "number": "27.5"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-AesDerivedKeyParams",
@@ -2013,16 +3332,38 @@
         "AesDerivedKeyParams"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-AesDerivedKeyParams",
-        "title": "AesDerivedKeyParams dictionary ¶",
-        "number": "25.6"
+        "id": "aes-derivedkey-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-derivedkey-params",
+        "title": "AesDerivedKeyParams dictionary",
+        "number": "27.6"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-AesDerivedKeyParams-length",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-AesDerivedKeyParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AesDerivedKeyParams"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aes-derivedkey-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-derivedkey-params",
+        "title": "AesDerivedKeyParams dictionary",
+        "number": "27.6"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-AesCbcParams",
@@ -2031,16 +3372,17 @@
         "AesCbcParams"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-AesCbcParams",
-        "title": "AesCbcParams dictionary ¶",
-        "number": "26.3"
+        "id": "aes-cbc-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-cbc-params",
+        "title": "AesCbcParams dictionary",
+        "number": "28.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dfn-AesCbcParams-iv",
@@ -2049,16 +3391,19 @@
         "iv"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "AesCbcParams"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-AesCbcParams-iv",
-        "title": "AesCbcParams dictionary ¶",
-        "number": "26.3"
+        "id": "aes-cbc-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-cbc-params",
+        "title": "AesCbcParams dictionary",
+        "number": "28.3"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-AesGcmParams",
@@ -2067,16 +3412,38 @@
         "AesGcmParams"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-AesGcmParams",
-        "title": "AesGcmParams dictionary ¶",
-        "number": "27.3"
+        "id": "aes-gcm-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-gcm-params",
+        "title": "AesGcmParams dictionary",
+        "number": "29.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-AesGcmParams-iv",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-AesGcmParams-iv",
+      "linkingText": [
+        "iv"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AesGcmParams"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aes-gcm-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-gcm-params",
+        "title": "AesGcmParams dictionary",
+        "number": "29.3"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-AesGcmParams-additionalData",
@@ -2085,16 +3452,19 @@
         "additionalData"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "AesGcmParams"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-AesGcmParams-additionalData",
-        "title": "AesGcmParams dictionary ¶",
-        "number": "27.3"
+        "id": "aes-gcm-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-gcm-params",
+        "title": "AesGcmParams dictionary",
+        "number": "29.3"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-AesGcmParams-tagLength",
@@ -2103,16 +3473,57 @@
         "tagLength"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "AesGcmParams"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-AesGcmParams-tagLength",
-        "title": "AesGcmParams dictionary ¶",
-        "number": "27.3"
+        "id": "aes-gcm-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-gcm-params",
+        "title": "AesGcmParams dictionary",
+        "number": "29.3"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-hmac-extended-import-steps",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-hmac-extended-import-steps",
+      "linkingText": [
+        "HMAC key import steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hmac-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-description",
+        "title": "Description",
+        "number": "31.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-hmac-extended-export-steps",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-hmac-extended-export-steps",
+      "linkingText": [
+        "HMAC key export steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hmac-description",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-description",
+        "title": "Description",
+        "number": "31.1"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-HmacImportParams",
@@ -2121,16 +3532,59 @@
         "HmacImportParams"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-HmacImportParams",
-        "title": "HmacImportParams dictionary ¶",
-        "number": "29.3"
+        "id": "hmac-importparams",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-importparams",
+        "title": "HmacImportParams dictionary",
+        "number": "31.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-HmacImportParams-hash",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-HmacImportParams-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HmacImportParams"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hmac-importparams",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-importparams",
+        "title": "HmacImportParams dictionary",
+        "number": "31.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-HmacImportParams-length",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-HmacImportParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HmacImportParams"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hmac-importparams",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-importparams",
+        "title": "HmacImportParams dictionary",
+        "number": "31.3"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-HmacKeyAlgorithm",
@@ -2139,16 +3593,59 @@
         "HmacKeyAlgorithm"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-HmacKeyAlgorithm",
-        "title": "HmacKeyAlgorithm dictionary ¶",
-        "number": "29.4"
+        "id": "HmacKeyAlgorithm-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#HmacKeyAlgorithm-dictionary",
+        "title": "HmacKeyAlgorithm dictionary",
+        "number": "31.4"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-HmacKeyAlgorithm-hash",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-HmacKeyAlgorithm-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HmacKeyAlgorithm"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "HmacKeyAlgorithm-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#HmacKeyAlgorithm-dictionary",
+        "title": "HmacKeyAlgorithm dictionary",
+        "number": "31.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-HmacKeyAlgorithm-length",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-HmacKeyAlgorithm-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HmacKeyAlgorithm"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "HmacKeyAlgorithm-dictionary",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#HmacKeyAlgorithm-dictionary",
+        "title": "HmacKeyAlgorithm dictionary",
+        "number": "31.4"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-HmacKeyGenParams",
@@ -2157,16 +3654,59 @@
         "HmacKeyGenParams"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-HmacKeyGenParams",
-        "title": "HmacKeyGenParams dictionary ¶",
-        "number": "29.5"
+        "id": "hmac-keygen-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-keygen-params",
+        "title": "HmacKeyGenParams dictionary",
+        "number": "31.5"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-HmacKeyGenParams-hash",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-HmacKeyGenParams-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HmacKeyGenParams"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hmac-keygen-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-keygen-params",
+        "title": "HmacKeyGenParams dictionary",
+        "number": "31.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-HmacKeyGenParams-length",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-HmacKeyGenParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HmacKeyGenParams"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hmac-keygen-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-keygen-params",
+        "title": "HmacKeyGenParams dictionary",
+        "number": "31.5"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-HkdfParams",
@@ -2175,16 +3715,38 @@
         "HkdfParams"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-HkdfParams",
-        "title": "HkdfParams dictionary ¶",
-        "number": "31.3"
+        "id": "hkdf-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#hkdf-params",
+        "title": "HkdfParams dictionary",
+        "number": "33.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-HkdfParams-hash",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-HkdfParams-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HkdfParams"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hkdf-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#hkdf-params",
+        "title": "HkdfParams dictionary",
+        "number": "33.3"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-HkdfParams-salt",
@@ -2193,16 +3755,19 @@
         "salt"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "HkdfParams"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-HkdfParams-salt",
-        "title": "HkdfParams dictionary ¶",
-        "number": "31.3"
+        "id": "hkdf-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#hkdf-params",
+        "title": "HkdfParams dictionary",
+        "number": "33.3"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-HkdfParams-info",
@@ -2211,16 +3776,19 @@
         "info"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "HkdfParams"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-HkdfParams-info",
-        "title": "HkdfParams dictionary ¶",
-        "number": "31.3"
+        "id": "hkdf-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#hkdf-params",
+        "title": "HkdfParams dictionary",
+        "number": "33.3"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-Pbkdf2Params",
@@ -2229,16 +3797,38 @@
         "Pbkdf2Params"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-Pbkdf2Params",
-        "title": "Pbkdf2Params dictionary ¶",
-        "number": "32.3"
+        "id": "pbkdf2-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#pbkdf2-params",
+        "title": "Pbkdf2Params dictionary",
+        "number": "34.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-Pbkdf2Params-salt",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-Pbkdf2Params-salt",
+      "linkingText": [
+        "salt"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Pbkdf2Params"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pbkdf2-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#pbkdf2-params",
+        "title": "Pbkdf2Params dictionary",
+        "number": "34.3"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-Pbkdf2Params-iterations",
@@ -2247,16 +3837,40 @@
         "iterations"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "Pbkdf2Params"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-Pbkdf2Params-iterations",
-        "title": "Pbkdf2Params dictionary ¶",
-        "number": "32.3"
+        "id": "pbkdf2-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#pbkdf2-params",
+        "title": "Pbkdf2Params dictionary",
+        "number": "34.3"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-Pbkdf2Params-hash",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dfn-Pbkdf2Params-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Pbkdf2Params"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pbkdf2-params",
+        "href": "https://www.w3.org/TR/WebCryptoAPI/#pbkdf2-params",
+        "title": "Pbkdf2Params dictionary",
+        "number": "34.3"
+      },
+      "definedIn": "prose"
     }
   ]
 }

@@ -1,14 +1,1721 @@
 {
   "spec": {
-    "title": "Web Cryptography API",
+    "title": "Web Cryptography Level 2",
     "url": "https://www.w3.org/TR/WebCryptoAPI/"
   },
   "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#title",
+      "level": 1,
+      "title": "Web Cryptography Level 2"
+    },
     {
       "id": "toc",
       "href": "https://www.w3.org/TR/WebCryptoAPI/#toc",
       "level": 2,
       "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "use-cases",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#use-cases",
+      "level": 2,
+      "title": "Use Cases",
+      "number": "2"
+    },
+    {
+      "id": "multifactor-authentication",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#multifactor-authentication",
+      "level": 3,
+      "title": "Multi-factor Authentication",
+      "number": "2.1"
+    },
+    {
+      "id": "protected-document",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#protected-document",
+      "level": 3,
+      "title": "Protected Document Exchange",
+      "number": "2.2"
+    },
+    {
+      "id": "cloud-storage",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#cloud-storage",
+      "level": 3,
+      "title": "Cloud Storage",
+      "number": "2.3"
+    },
+    {
+      "id": "document-signing",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#document-signing",
+      "level": 3,
+      "title": "Document Signing",
+      "number": "2.4"
+    },
+    {
+      "id": "data-integrity-protection",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#data-integrity-protection",
+      "level": 3,
+      "title": "Data Integrity Protection",
+      "number": "2.5"
+    },
+    {
+      "id": "secure-messaging",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#secure-messaging",
+      "level": 3,
+      "title": "Secure Messaging",
+      "number": "2.6"
+    },
+    {
+      "id": "jose",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#jose",
+      "level": 3,
+      "title": "JavaScript Object Signing and Encryption (JOSE)",
+      "number": "2.7"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "3"
+    },
+    {
+      "id": "extensibility",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#extensibility",
+      "level": 3,
+      "title": "Extensibility",
+      "number": "3.1"
+    },
+    {
+      "id": "scope",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#scope",
+      "level": 2,
+      "title": "Scope",
+      "number": "4"
+    },
+    {
+      "id": "scope-abstraction",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#scope-abstraction",
+      "level": 3,
+      "title": "Level of abstraction",
+      "number": "4.1"
+    },
+    {
+      "id": "scope-algorithms",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#scope-algorithms",
+      "level": 3,
+      "title": "Cryptographic algorithms",
+      "number": "4.2"
+    },
+    {
+      "id": "scope-out-of-scope",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#scope-out-of-scope",
+      "level": 3,
+      "title": "Out of scope",
+      "number": "4.3"
+    },
+    {
+      "id": "concepts",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#concepts",
+      "level": 2,
+      "title": "Concepts",
+      "number": "5"
+    },
+    {
+      "id": "concepts-underlying-implementation",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#concepts-underlying-implementation",
+      "level": 3,
+      "title": "Underlying Cryptographic Implementation",
+      "number": "5.1"
+    },
+    {
+      "id": "concepts-key-storage",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#concepts-key-storage",
+      "level": 3,
+      "title": "Key Storage",
+      "number": "5.2"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#security-considerations",
+      "level": 2,
+      "title": "Security considerations",
+      "number": "6"
+    },
+    {
+      "id": "security-implementers",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#security-implementers",
+      "level": 3,
+      "title": "Security considerations for implementers",
+      "number": "6.1"
+    },
+    {
+      "id": "security-developers",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#security-developers",
+      "level": 3,
+      "title": "Security considerations for authors",
+      "number": "6.2"
+    },
+    {
+      "id": "security-users",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#security-users",
+      "level": 3,
+      "title": "Security considerations for users",
+      "number": "6.3"
+    },
+    {
+      "id": "privacy",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#privacy",
+      "level": 2,
+      "title": "Privacy considerations",
+      "number": "7"
+    },
+    {
+      "id": "dependencies",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dependencies",
+      "level": 2,
+      "title": "Dependencies",
+      "number": "8"
+    },
+    {
+      "id": "terminology",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "number": "9"
+    },
+    {
+      "id": "crypto-interface",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#crypto-interface",
+      "level": 2,
+      "title": "10. Crypto interface"
+    },
+    {
+      "id": "Crypto-interface-methods",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#Crypto-interface-methods",
+      "level": 3,
+      "title": "Methods and Parameters",
+      "number": "10.1"
+    },
+    {
+      "id": "Crypto-method-getRandomValues",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#Crypto-method-getRandomValues",
+      "level": 4,
+      "title": "The getRandomValues method",
+      "number": "10.1.1"
+    },
+    {
+      "id": "Crypto-method-randomUUID",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#Crypto-method-randomUUID",
+      "level": 4,
+      "title": "The randomUUID method",
+      "number": "10.1.2"
+    },
+    {
+      "id": "Crypto-interface-attributes",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#Crypto-interface-attributes",
+      "level": 3,
+      "title": "Attributes",
+      "number": "10.2"
+    },
+    {
+      "id": "Crypto-attribute-subtle",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#Crypto-attribute-subtle",
+      "level": 4,
+      "title": "The subtle attribute",
+      "number": "10.2.1"
+    },
+    {
+      "id": "algorithm-dictionary",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-dictionary",
+      "level": 2,
+      "title": "11. Algorithm dictionary"
+    },
+    {
+      "id": "algorithm-dictionary-members",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-dictionary-members",
+      "level": 3,
+      "title": "Algorithm Dictionary Members",
+      "number": "11.1"
+    },
+    {
+      "id": "key-algorithm-dictionary",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#key-algorithm-dictionary",
+      "level": 2,
+      "title": "12. KeyAlgorithm dictionary"
+    },
+    {
+      "id": "key-algorithm-dictionary-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#key-algorithm-dictionary-description",
+      "level": 3,
+      "title": "Description",
+      "number": "12.1"
+    },
+    {
+      "id": "key-algorithm-dictionary-members",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#key-algorithm-dictionary-members",
+      "level": 3,
+      "title": "KeyAlgorithm dictionary members",
+      "number": "12.2"
+    },
+    {
+      "id": "cryptokey-interface",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface",
+      "level": 2,
+      "title": "13. CryptoKey interface"
+    },
+    {
+      "id": "cryptokey-interface-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-description",
+      "level": 3,
+      "title": "Description",
+      "number": "13.1"
+    },
+    {
+      "id": "cryptokey-interface-types",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-types",
+      "level": 3,
+      "title": "Key interface data types",
+      "number": "13.2"
+    },
+    {
+      "id": "cryptokey-interface-internal-slots",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-internal-slots",
+      "level": 3,
+      "title": "CryptoKey internal slots",
+      "number": "13.3"
+    },
+    {
+      "id": "cryptokey-interface-members",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-members",
+      "level": 3,
+      "title": "CryptoKey interface members",
+      "number": "13.4"
+    },
+    {
+      "id": "cryptokey-interface-serializable",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-serializable",
+      "level": 3,
+      "title": "Serialization and deserialization steps",
+      "number": "13.5"
+    },
+    {
+      "id": "subtlecrypto-interface",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface",
+      "level": 2,
+      "title": "14. SubtleCrypto interface"
+    },
+    {
+      "id": "subtlecrypto-interface-datatypes",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface-datatypes",
+      "level": 3,
+      "title": "Data Types",
+      "number": "14.1"
+    },
+    {
+      "id": "subtlecrypto-interface-tasksource",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface-tasksource",
+      "level": 3,
+      "title": "Task Source",
+      "number": "14.2"
+    },
+    {
+      "id": "subtlecrypto-interface-methods",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface-methods",
+      "level": 3,
+      "title": "Methods and Parameters",
+      "number": "14.3"
+    },
+    {
+      "id": "SubtleCrypto-method-encrypt",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-encrypt",
+      "level": 4,
+      "title": "The encrypt method",
+      "number": "14.3.1"
+    },
+    {
+      "id": "SubtleCrypto-method-decrypt",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-decrypt",
+      "level": 4,
+      "title": "The decrypt method",
+      "number": "14.3.2"
+    },
+    {
+      "id": "SubtleCrypto-method-sign",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-sign",
+      "level": 4,
+      "title": "The sign method",
+      "number": "14.3.3"
+    },
+    {
+      "id": "SubtleCrypto-method-verify",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-verify",
+      "level": 4,
+      "title": "The verify method",
+      "number": "14.3.4"
+    },
+    {
+      "id": "SubtleCrypto-method-digest",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-digest",
+      "level": 4,
+      "title": "The digest method",
+      "number": "14.3.5"
+    },
+    {
+      "id": "SubtleCrypto-method-generateKey",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-generateKey",
+      "level": 4,
+      "title": "The generateKey method",
+      "number": "14.3.6"
+    },
+    {
+      "id": "SubtleCrypto-method-deriveKey",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-deriveKey",
+      "level": 4,
+      "title": "The deriveKey method",
+      "number": "14.3.7"
+    },
+    {
+      "id": "SubtleCrypto-method-deriveBits",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-deriveBits",
+      "level": 4,
+      "title": "The deriveBits method",
+      "number": "14.3.8"
+    },
+    {
+      "id": "SubtleCrypto-method-importKey",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-importKey",
+      "level": 4,
+      "title": "The importKey method",
+      "number": "14.3.9"
+    },
+    {
+      "id": "SubtleCrypto-method-exportKey",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-exportKey",
+      "level": 4,
+      "title": "The exportKey method",
+      "number": "14.3.10"
+    },
+    {
+      "id": "SubtleCrypto-method-wrapKey",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-wrapKey",
+      "level": 4,
+      "title": "The wrapKey method",
+      "number": "14.3.11"
+    },
+    {
+      "id": "SubtleCrypto-method-unwrapKey",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-unwrapKey",
+      "level": 4,
+      "title": "The unwrapKey method",
+      "number": "14.3.12"
+    },
+    {
+      "id": "SubtleCrypto-Exceptions",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-Exceptions",
+      "level": 3,
+      "title": "Exceptions",
+      "number": "14.4"
+    },
+    {
+      "id": "JsonWebKey-dictionary",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#JsonWebKey-dictionary",
+      "level": 2,
+      "title": "15. JsonWebKey dictionary"
+    },
+    {
+      "id": "big-integer",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#big-integer",
+      "level": 2,
+      "title": "16. BigInteger"
+    },
+    {
+      "id": "keypair",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#keypair",
+      "level": 2,
+      "title": "17. CryptoKeyPair dictionary"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithms",
+      "level": 2,
+      "title": "18. Algorithms"
+    },
+    {
+      "id": "algorithms-section-overview",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithms-section-overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "18.1"
+    },
+    {
+      "id": "algorithm-concepts",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-concepts",
+      "level": 3,
+      "title": "Concepts",
+      "number": "18.2"
+    },
+    {
+      "id": "algorithm-concepts-naming",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-concepts-naming",
+      "level": 4,
+      "title": "Naming",
+      "number": "18.2.1"
+    },
+    {
+      "id": "algorithm-concepts-operations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-concepts-operations",
+      "level": 4,
+      "title": "Supported Operations",
+      "number": "18.2.2"
+    },
+    {
+      "id": "algorithm-concepts-normalization",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-concepts-normalization",
+      "level": 4,
+      "title": "Normalization",
+      "number": "18.2.3"
+    },
+    {
+      "id": "algorithm-conventions",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-conventions",
+      "level": 3,
+      "title": "Specification Conventions",
+      "number": "18.3"
+    },
+    {
+      "id": "algorithm-normalization",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-normalization",
+      "level": 3,
+      "title": "Algorithm Normalization",
+      "number": "18.4"
+    },
+    {
+      "id": "algorithm-normalization-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-normalization-description",
+      "level": 4,
+      "title": "Description",
+      "number": "18.4.1"
+    },
+    {
+      "id": "algorithm-normalization-internal",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-normalization-internal",
+      "level": 4,
+      "title": "Internal State Objects",
+      "number": "18.4.2"
+    },
+    {
+      "id": "algorithm-normalization-define-an-algorithm",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-normalization-define-an-algorithm",
+      "level": 4,
+      "title": "Defining an Algorithm",
+      "number": "18.4.3"
+    },
+    {
+      "id": "algorithm-normalization-normalize-an-algorithm",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-normalization-normalize-an-algorithm",
+      "level": 4,
+      "title": "Normalizing an algorithm",
+      "number": "18.4.4"
+    },
+    {
+      "id": "algorithm-recommendations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-recommendations",
+      "level": 3,
+      "title": "Recommendations",
+      "number": "18.5"
+    },
+    {
+      "id": "algorithm-recommendations-authors",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-recommendations-authors",
+      "level": 4,
+      "title": "For Authors",
+      "number": "18.5.1"
+    },
+    {
+      "id": "algorithm-recommendations-implementers",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-recommendations-implementers",
+      "level": 4,
+      "title": "For Implementers",
+      "number": "18.5.2"
+    },
+    {
+      "id": "algorithm-overview",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#algorithm-overview",
+      "level": 2,
+      "title": "19. Algorithm Overview"
+    },
+    {
+      "id": "rsassa-pkcs1",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsassa-pkcs1",
+      "level": 2,
+      "title": "20. RSASSA-PKCS1-v1_5"
+    },
+    {
+      "id": "rsassa-pkcs1-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsassa-pkcs1-description",
+      "level": 3,
+      "title": "Description",
+      "number": "20.1"
+    },
+    {
+      "id": "rsassa-pkcs1-registration",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsassa-pkcs1-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "20.2"
+    },
+    {
+      "id": "RsaKeyGenParams-dictionary",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaKeyGenParams-dictionary",
+      "level": 3,
+      "title": "RsaKeyGenParams dictionary",
+      "number": "20.3"
+    },
+    {
+      "id": "RsaHashedKeyGenParams-dictionary",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaHashedKeyGenParams-dictionary",
+      "level": 3,
+      "title": "RsaHashedKeyGenParams dictionary",
+      "number": "20.4"
+    },
+    {
+      "id": "RsaKeyAlgorithm-dictionary",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaKeyAlgorithm-dictionary",
+      "level": 3,
+      "title": "RsaKeyAlgorithm dictionary",
+      "number": "20.5"
+    },
+    {
+      "id": "RsaHashedKeyAlgorithm-dictionary",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaHashedKeyAlgorithm-dictionary",
+      "level": 3,
+      "title": "RsaHashedKeyAlgorithm dictionary",
+      "number": "20.6"
+    },
+    {
+      "id": "RsaHashedImportParams-dictionary",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaHashedImportParams-dictionary",
+      "level": 3,
+      "title": "RsaHashedImportParams dictionary",
+      "number": "20.7"
+    },
+    {
+      "id": "rsassa-pkcs1-operations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsassa-pkcs1-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "20.8"
+    },
+    {
+      "id": "rsassa-pkcs1-operations-sign",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsassa-pkcs1-operations-sign",
+      "level": 4,
+      "title": "Sign",
+      "number": "20.8.1"
+    },
+    {
+      "id": "rsassa-pkcs1-operations-verify",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsassa-pkcs1-operations-verify",
+      "level": 4,
+      "title": "Verify",
+      "number": "20.8.2"
+    },
+    {
+      "id": "rsassa-pkcs1-operations-generate-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsassa-pkcs1-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "number": "20.8.3"
+    },
+    {
+      "id": "rsassa-pkcs1-operations-import-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsassa-pkcs1-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "number": "20.8.4"
+    },
+    {
+      "id": "rsassa-pkcs1-operations-export-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsassa-pkcs1-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "number": "20.8.5"
+    },
+    {
+      "id": "rsa-pss",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-pss",
+      "level": 2,
+      "title": "21. RSA-PSS"
+    },
+    {
+      "id": "rsa-pss-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-pss-description",
+      "level": 3,
+      "title": "Description",
+      "number": "21.1"
+    },
+    {
+      "id": "rsa-pss-registration",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-pss-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "21.2"
+    },
+    {
+      "id": "RsaPssParams-dictionary",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#RsaPssParams-dictionary",
+      "level": 3,
+      "title": "RsaPssParams dictionary",
+      "number": "21.3"
+    },
+    {
+      "id": "rsa-pss-operations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-pss-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "21.4"
+    },
+    {
+      "id": "rsa-pss-operations-sign",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-pss-operations-sign",
+      "level": 4,
+      "title": "Sign",
+      "number": "21.4.1"
+    },
+    {
+      "id": "rsa-pss-operations-verify",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-pss-operations-verify",
+      "level": 4,
+      "title": "Verify",
+      "number": "21.4.2"
+    },
+    {
+      "id": "rsa-pss-operations-generate-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-pss-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "number": "21.4.3"
+    },
+    {
+      "id": "rsa-pss-operations-import-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-pss-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "number": "21.4.4"
+    },
+    {
+      "id": "rsa-pss-operations-export-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-pss-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "number": "21.4.5"
+    },
+    {
+      "id": "rsa-oaep",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-oaep",
+      "level": 2,
+      "title": "22. RSA-OAEP"
+    },
+    {
+      "id": "rsa-oaep-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-oaep-description",
+      "level": 3,
+      "title": "Description",
+      "number": "22.1"
+    },
+    {
+      "id": "rsa-oaep-registration",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-oaep-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "22.2"
+    },
+    {
+      "id": "rsa-oaep-params",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-oaep-params",
+      "level": 3,
+      "title": "RsaOaepParams dictionary",
+      "number": "22.3"
+    },
+    {
+      "id": "rsa-oaep-operations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-oaep-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "22.4"
+    },
+    {
+      "id": "rsa-oaep-operations-encrypt",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-oaep-operations-encrypt",
+      "level": 4,
+      "title": "Encrypt",
+      "number": "22.4.1"
+    },
+    {
+      "id": "rsa-oaep-operations-decrypt",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-oaep-operations-decrypt",
+      "level": 4,
+      "title": "Decrypt",
+      "number": "22.4.2"
+    },
+    {
+      "id": "rsa-oaep-operations-generate-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-oaep-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "number": "22.4.3"
+    },
+    {
+      "id": "rsa-oaep-operations-import-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-oaep-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "number": "22.4.4"
+    },
+    {
+      "id": "rsa-oaep-operations-export-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#rsa-oaep-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "number": "22.4.5"
+    },
+    {
+      "id": "ecdsa",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdsa",
+      "level": 2,
+      "title": "23. ECDSA"
+    },
+    {
+      "id": "ecdsa-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdsa-description",
+      "level": 3,
+      "title": "Description",
+      "number": "23.1"
+    },
+    {
+      "id": "ecdsa-registration",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdsa-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "23.2"
+    },
+    {
+      "id": "EcdsaParams-dictionary",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#EcdsaParams-dictionary",
+      "level": 3,
+      "title": "EcdsaParams dictionary",
+      "number": "23.3"
+    },
+    {
+      "id": "EcKeyGenParams-dictionary",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#EcKeyGenParams-dictionary",
+      "level": 3,
+      "title": "EcKeyGenParams dictionary",
+      "number": "23.4"
+    },
+    {
+      "id": "EcKeyAlgorithm-dictionary",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#EcKeyAlgorithm-dictionary",
+      "level": 3,
+      "title": "EcKeyAlgorithm dictionary",
+      "number": "23.5"
+    },
+    {
+      "id": "EcKeyImportParams-dictionary",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#EcKeyImportParams-dictionary",
+      "level": 3,
+      "title": "EcKeyImportParams dictionary",
+      "number": "23.6"
+    },
+    {
+      "id": "ecdsa-operations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdsa-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "23.7"
+    },
+    {
+      "id": "ecdsa-operations-sign",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdsa-operations-sign",
+      "level": 4,
+      "title": "Sign",
+      "number": "23.7.1"
+    },
+    {
+      "id": "ecdsa-operations-verify",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdsa-operations-verify",
+      "level": 4,
+      "title": "Verify",
+      "number": "23.7.2"
+    },
+    {
+      "id": "ecdsa-operations-generate-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdsa-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "number": "23.7.3"
+    },
+    {
+      "id": "ecdsa-operations-import-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdsa-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "number": "23.7.4"
+    },
+    {
+      "id": "ecdsa-operations-export-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdsa-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "number": "23.7.5"
+    },
+    {
+      "id": "ecdh",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdh",
+      "level": 2,
+      "title": "24. ECDH"
+    },
+    {
+      "id": "ecdh-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdh-description",
+      "level": 3,
+      "title": "Description",
+      "number": "24.1"
+    },
+    {
+      "id": "ecdh-registration",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdh-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "24.2"
+    },
+    {
+      "id": "dh-EcdhKeyDeriveParams",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#dh-EcdhKeyDeriveParams",
+      "level": 3,
+      "title": "EcdhKeyDeriveParams dictionary",
+      "number": "24.3"
+    },
+    {
+      "id": "ecdh-operations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdh-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "24.4"
+    },
+    {
+      "id": "ecdh-operations-generate-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdh-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "number": "24.4.1"
+    },
+    {
+      "id": "ecdh-operations-derive-bits",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdh-operations-derive-bits",
+      "level": 4,
+      "title": "Derive Bits",
+      "number": "24.4.2"
+    },
+    {
+      "id": "ecdh-operations-import-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdh-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "number": "24.4.3"
+    },
+    {
+      "id": "ecdh-operations-export-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ecdh-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "number": "24.4.4"
+    },
+    {
+      "id": "ed25519",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ed25519",
+      "level": 2,
+      "title": "25. Ed25519"
+    },
+    {
+      "id": "ed25519-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ed25519-description",
+      "level": 3,
+      "title": "Description",
+      "number": "25.1"
+    },
+    {
+      "id": "ed25519-registration",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ed25519-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "25.2"
+    },
+    {
+      "id": "ed25519-operations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ed25519-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "25.3"
+    },
+    {
+      "id": "ed25519-operations-sign",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ed25519-operations-sign",
+      "level": 4,
+      "title": "Sign",
+      "number": "25.3.1"
+    },
+    {
+      "id": "ed25519-operations-verify",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ed25519-operations-verify",
+      "level": 4,
+      "title": "Verify",
+      "number": "25.3.2"
+    },
+    {
+      "id": "ed25519-operations-generate-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ed25519-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "number": "25.3.3"
+    },
+    {
+      "id": "ed25519-operations-import-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ed25519-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "number": "25.3.4"
+    },
+    {
+      "id": "ed25519-operations-export-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#ed25519-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "number": "25.3.5"
+    },
+    {
+      "id": "x25519",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#x25519",
+      "level": 2,
+      "title": "26. X25519"
+    },
+    {
+      "id": "x25519-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#x25519-description",
+      "level": 3,
+      "title": "Description",
+      "number": "26.1"
+    },
+    {
+      "id": "x25519-registration",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#x25519-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "26.2"
+    },
+    {
+      "id": "x25519-operations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#x25519-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "26.3"
+    },
+    {
+      "id": "x25519-operations-derive-bits",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#x25519-operations-derive-bits",
+      "level": 4,
+      "title": "Derive Bits",
+      "number": "26.3.1"
+    },
+    {
+      "id": "x25519-operations-generate-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#x25519-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "number": "26.3.2"
+    },
+    {
+      "id": "x25519-operations-import-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#x25519-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "number": "26.3.3"
+    },
+    {
+      "id": "x25519-operations-export-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#x25519-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "number": "26.3.4"
+    },
+    {
+      "id": "aes-ctr",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-ctr",
+      "level": 2,
+      "title": "27. AES-CTR"
+    },
+    {
+      "id": "aes-ctr-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-ctr-description",
+      "level": 3,
+      "title": "Description",
+      "number": "27.1"
+    },
+    {
+      "id": "aes-ctr-registration",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-ctr-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "27.2"
+    },
+    {
+      "id": "aes-ctr-params",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-ctr-params",
+      "level": 3,
+      "title": "AesCtrParams dictionary",
+      "number": "27.3"
+    },
+    {
+      "id": "AesKeyAlgorithm-dictionary",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#AesKeyAlgorithm-dictionary",
+      "level": 3,
+      "title": "AesKeyAlgorithm dictionary",
+      "number": "27.4"
+    },
+    {
+      "id": "aes-keygen-params",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-keygen-params",
+      "level": 3,
+      "title": "AesKeyGenParams dictionary",
+      "number": "27.5"
+    },
+    {
+      "id": "aes-derivedkey-params",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-derivedkey-params",
+      "level": 3,
+      "title": "AesDerivedKeyParams dictionary",
+      "number": "27.6"
+    },
+    {
+      "id": "aes-ctr-operations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-ctr-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "27.7"
+    },
+    {
+      "id": "aes-ctr-operations-encrypt",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-ctr-operations-encrypt",
+      "level": 4,
+      "title": "Encrypt",
+      "number": "27.7.1"
+    },
+    {
+      "id": "aes-ctr-operations-decrypt",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-ctr-operations-decrypt",
+      "level": 4,
+      "title": "Decrypt",
+      "number": "27.7.2"
+    },
+    {
+      "id": "aes-ctr-operations-generate-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-ctr-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "number": "27.7.3"
+    },
+    {
+      "id": "aes-ctr-operations-import-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-ctr-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "number": "27.7.4"
+    },
+    {
+      "id": "aes-ctr-operations-export-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-ctr-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "number": "27.7.5"
+    },
+    {
+      "id": "aes-ctr-operations-get-key-length",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-ctr-operations-get-key-length",
+      "level": 4,
+      "title": "Get key length",
+      "number": "27.7.6"
+    },
+    {
+      "id": "aes-cbc",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-cbc",
+      "level": 2,
+      "title": "28. AES-CBC"
+    },
+    {
+      "id": "aes-cbc-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-cbc-description",
+      "level": 3,
+      "title": "Description",
+      "number": "28.1"
+    },
+    {
+      "id": "aes-cbc-registration",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-cbc-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "28.2"
+    },
+    {
+      "id": "aes-cbc-params",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-cbc-params",
+      "level": 3,
+      "title": "AesCbcParams dictionary",
+      "number": "28.3"
+    },
+    {
+      "id": "aes-cbc-operations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-cbc-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "28.4"
+    },
+    {
+      "id": "aes-cbc-operations-encrypt",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-cbc-operations-encrypt",
+      "level": 4,
+      "title": "Encrypt",
+      "number": "28.4.1"
+    },
+    {
+      "id": "aes-cbc-operations-decrypt",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-cbc-operations-decrypt",
+      "level": 4,
+      "title": "Decrypt",
+      "number": "28.4.2"
+    },
+    {
+      "id": "aes-cbc-operations-generate-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-cbc-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "number": "28.4.3"
+    },
+    {
+      "id": "aes-cbc-operations-import-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-cbc-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "number": "28.4.4"
+    },
+    {
+      "id": "aes-cbc-operations-export-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-cbc-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "number": "28.4.5"
+    },
+    {
+      "id": "aes-cbc-operations-get-key-length",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-cbc-operations-get-key-length",
+      "level": 4,
+      "title": "Get key length",
+      "number": "28.4.6"
+    },
+    {
+      "id": "aes-gcm",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-gcm",
+      "level": 2,
+      "title": "29. AES-GCM"
+    },
+    {
+      "id": "aes-gcm-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-gcm-description",
+      "level": 3,
+      "title": "Description",
+      "number": "29.1"
+    },
+    {
+      "id": "aes-gcm-registration",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-gcm-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "29.2"
+    },
+    {
+      "id": "aes-gcm-params",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-gcm-params",
+      "level": 3,
+      "title": "AesGcmParams dictionary",
+      "number": "29.3"
+    },
+    {
+      "id": "aes-gcm-operations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-gcm-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "29.4"
+    },
+    {
+      "id": "aes-gcm-operations-encrypt",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-gcm-operations-encrypt",
+      "level": 4,
+      "title": "Encrypt",
+      "number": "29.4.1"
+    },
+    {
+      "id": "aes-gcm-operations-decrypt",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-gcm-operations-decrypt",
+      "level": 4,
+      "title": "Decrypt",
+      "number": "29.4.2"
+    },
+    {
+      "id": "aes-gcm-operations-generate-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-gcm-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "number": "29.4.3"
+    },
+    {
+      "id": "aes-gcm-operations-import-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-gcm-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "number": "29.4.4"
+    },
+    {
+      "id": "aes-gcm-operations-export-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-gcm-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "number": "29.4.5"
+    },
+    {
+      "id": "aes-gcm-operations-get-key-length",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-gcm-operations-get-key-length",
+      "level": 4,
+      "title": "Get key length",
+      "number": "29.4.6"
+    },
+    {
+      "id": "aes-kw",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-kw",
+      "level": 2,
+      "title": "30. AES-KW"
+    },
+    {
+      "id": "aes-kw-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-kw-description",
+      "level": 3,
+      "title": "Description",
+      "number": "30.1"
+    },
+    {
+      "id": "aes-kw-registration",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-kw-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "30.2"
+    },
+    {
+      "id": "aes-kw-operations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-kw-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "30.3"
+    },
+    {
+      "id": "aes-kw-operations-wrap-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-kw-operations-wrap-key",
+      "level": 4,
+      "title": "Wrap Key",
+      "number": "30.3.1"
+    },
+    {
+      "id": "aes-kw-operations-unwrap-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-kw-operations-unwrap-key",
+      "level": 4,
+      "title": "Unwrap Key",
+      "number": "30.3.2"
+    },
+    {
+      "id": "aes-kw-operations-generate-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-kw-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "number": "30.3.3"
+    },
+    {
+      "id": "aes-kw-operations-import-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-kw-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "number": "30.3.4"
+    },
+    {
+      "id": "aes-kw-operations-export-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-kw-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "number": "30.3.5"
+    },
+    {
+      "id": "aes-kw-operations-get-key-length",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#aes-kw-operations-get-key-length",
+      "level": 4,
+      "title": "Get key length",
+      "number": "30.3.6"
+    },
+    {
+      "id": "hmac",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac",
+      "level": 2,
+      "title": "31. HMAC"
+    },
+    {
+      "id": "hmac-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-description",
+      "level": 3,
+      "title": "Description",
+      "number": "31.1"
+    },
+    {
+      "id": "hmac-registration",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "31.2"
+    },
+    {
+      "id": "hmac-importparams",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-importparams",
+      "level": 3,
+      "title": "HmacImportParams dictionary",
+      "number": "31.3"
+    },
+    {
+      "id": "HmacKeyAlgorithm-dictionary",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#HmacKeyAlgorithm-dictionary",
+      "level": 3,
+      "title": "HmacKeyAlgorithm dictionary",
+      "number": "31.4"
+    },
+    {
+      "id": "hmac-keygen-params",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-keygen-params",
+      "level": 3,
+      "title": "HmacKeyGenParams dictionary",
+      "number": "31.5"
+    },
+    {
+      "id": "hmac-operations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "31.6"
+    },
+    {
+      "id": "hmac-operations-sign",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-operations-sign",
+      "level": 4,
+      "title": "Sign",
+      "number": "31.6.1"
+    },
+    {
+      "id": "hmac-operations-verify",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-operations-verify",
+      "level": 4,
+      "title": "Verify",
+      "number": "31.6.2"
+    },
+    {
+      "id": "hmac-operations-generate-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "number": "31.6.3"
+    },
+    {
+      "id": "hmac-operations-import-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "number": "31.6.4"
+    },
+    {
+      "id": "hmac-operations-export-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "number": "31.6.5"
+    },
+    {
+      "id": "hmac-operations-get-key-length",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hmac-operations-get-key-length",
+      "level": 4,
+      "title": "Get key length",
+      "number": "31.6.6"
+    },
+    {
+      "id": "sha",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#sha",
+      "level": 2,
+      "title": "32. SHA"
+    },
+    {
+      "id": "sha-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#sha-description",
+      "level": 3,
+      "title": "Description",
+      "number": "32.1"
+    },
+    {
+      "id": "sha-registration",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#sha-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "32.2"
+    },
+    {
+      "id": "sha-operations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#sha-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "32.3"
+    },
+    {
+      "id": "sha-operations-digest",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#sha-operations-digest",
+      "level": 4,
+      "title": "Digest",
+      "number": "32.3.1"
+    },
+    {
+      "id": "hkdf",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hkdf",
+      "level": 2,
+      "title": "33. HKDF"
+    },
+    {
+      "id": "hkdf-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hkdf-description",
+      "level": 3,
+      "title": "Description",
+      "number": "33.1"
+    },
+    {
+      "id": "hkdf-registration",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hkdf-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "33.2"
+    },
+    {
+      "id": "hkdf-params",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hkdf-params",
+      "level": 3,
+      "title": "HkdfParams dictionary",
+      "number": "33.3"
+    },
+    {
+      "id": "hkdf-operations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hkdf-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "33.4"
+    },
+    {
+      "id": "hkdf-operations-derive-bits",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hkdf-operations-derive-bits",
+      "level": 4,
+      "title": "Derive Bits",
+      "number": "33.4.1"
+    },
+    {
+      "id": "hkdf-operations-import-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hkdf-operations-import-key",
+      "level": 4,
+      "title": "Import key",
+      "number": "33.4.2"
+    },
+    {
+      "id": "hkdf-operations-get-key-length",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#hkdf-operations-get-key-length",
+      "level": 4,
+      "title": "Get key length",
+      "number": "33.4.3"
+    },
+    {
+      "id": "pbkdf2",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#pbkdf2",
+      "level": 2,
+      "title": "34. PBKDF2"
+    },
+    {
+      "id": "pbkdf2-description",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#pbkdf2-description",
+      "level": 3,
+      "title": "Description",
+      "number": "34.1"
+    },
+    {
+      "id": "pbkdf2-registration",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#pbkdf2-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "34.2"
+    },
+    {
+      "id": "pbkdf2-params",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#pbkdf2-params",
+      "level": 3,
+      "title": "Pbkdf2Params dictionary",
+      "number": "34.3"
+    },
+    {
+      "id": "pbkdf2-operations",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#pbkdf2-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "34.4"
+    },
+    {
+      "id": "pbkdf2-operations-derive-bits",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#pbkdf2-operations-derive-bits",
+      "level": 4,
+      "title": "Derive Bits",
+      "number": "34.4.1"
+    },
+    {
+      "id": "pbkdf2-operations-import-key",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#pbkdf2-operations-import-key",
+      "level": 4,
+      "title": "Import key",
+      "number": "34.4.2"
+    },
+    {
+      "id": "pbkdf2-operations-get-key-length",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#pbkdf2-operations-get-key-length",
+      "level": 4,
+      "title": "Get key length",
+      "number": "34.4.3"
+    },
+    {
+      "id": "examples-section",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#examples-section",
+      "level": 2,
+      "title": "35. JavaScript Example Code"
+    },
+    {
+      "id": "example-key-exchange",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#example-key-exchange",
+      "level": 3,
+      "title": "Generate two key pairs, derive a shared key, encrypt some data",
+      "number": "35.1"
+    },
+    {
+      "id": "examples-signing",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#examples-signing",
+      "level": 3,
+      "title": "Generate a signing key pair, sign some data",
+      "number": "35.2"
+    },
+    {
+      "id": "examples-symmetric-encryption",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#examples-symmetric-encryption",
+      "level": 3,
+      "title": "Generate a symmetric key, encrypt some data",
+      "number": "35.3"
+    },
+    {
+      "id": "examples-random-uuid",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#examples-random-uuid",
+      "level": 3,
+      "title": "Generate unique name for download",
+      "number": "35.4"
+    },
+    {
+      "id": "iana-section",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#iana-section",
+      "level": 2,
+      "title": "36. IANA Considerations"
+    },
+    {
+      "id": "iana-section-jws-jwa",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#iana-section-jws-jwa",
+      "level": 3,
+      "title": "JSON Web Signature and Encryption Algorithms Registration",
+      "number": "36.1"
+    },
+    {
+      "id": "iana-section-jwk",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#iana-section-jwk",
+      "level": 3,
+      "title": "JSON Web Key Parameters Registration",
+      "number": "36.2"
+    },
+    {
+      "id": "acknowledgements-section",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#acknowledgements-section",
+      "level": 2,
+      "title": "37. Acknowledgments"
+    },
+    {
+      "id": "jwk-mapping",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#jwk-mapping",
+      "level": 2,
+      "title": "Mapping between JSON Web Key / JSON Web Algorithm",
+      "number": "A"
+    },
+    {
+      "id": "jwk-mapping-alg",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#jwk-mapping-alg",
+      "level": 3,
+      "title": "Algorithm mappings",
+      "number": "A.1"
+    },
+    {
+      "id": "spki-mapping",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#spki-mapping",
+      "level": 2,
+      "title": "Mapping between Algorithm and SubjectPublicKeyInfo",
+      "number": "B"
+    },
+    {
+      "id": "pkcs8-mapping",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#pkcs8-mapping",
+      "level": 2,
+      "title": "Mapping between Algorithm and PKCS#8 PrivateKeyInfo",
+      "number": "C"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#references",
+      "level": 2,
+      "title": "References",
+      "number": "D"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "D.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/WebCryptoAPI/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "D.2"
     }
   ]
 }

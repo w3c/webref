@@ -5,146 +5,155 @@
   },
   "algorithms": [
     {
+      "html": "As currently specified, <a data-link-type=\"dfn\" href=\"https://csrc.nist.gov/publications/fips/fips180-4/fips-180-4.pdf#\" id=\"ref-for-something①①\">SHA-256</a> is weaker than <a data-link-type=\"dfn\" data-refhint-key=\"37de769a\" href=\"https://csrc.nist.gov/publications/fips/fips180-4/fips-180-4.pdf#\" id=\"ref-for-something①②\">SHA-384</a>, which is in\n  turn weaker than <a data-link-type=\"dfn\" data-refhint-key=\"a801f883\" href=\"https://csrc.nist.gov/publications/fips/fips180-4/fips-180-4.pdf#\" id=\"ref-for-something①③\">SHA-512</a>. No other hashing algorithms are currently\n  supported by this specification.",
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>result</var> be the result of <a href=\"https://www.w3.org/TR/SRI/#apply-algorithm-to-response\">applying <var>algorithm</var></a> to the <a href=\"https://tools.ietf.org/html/rfc7231#section-3\">representation data</a> without any content-codings applied, except when the user agent intends to consume the content with content-encodings applied. In the latter case, let <var>result</var> be the result of applying <var>algorithm</var> to the <a href=\"https://tools.ietf.org/html/rfc7231#section-3\">representation data</a>."
+          "html": "<p>Let <var>result</var> be the result of applying <var>algorithm</var> to <var>bytes</var>.</p>"
         },
         {
-          "html": "Let <var>encodedResult</var> be result of base64-encoding\n            <var>result</var>."
-        },
-        {
-          "html": "Return <var>encodedResult</var>."
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/SRI/#base64-encoding\" id=\"ref-for-base64-encoding①\">base64 encoding</a> <var>result</var>.</p>"
         }
       ]
     },
     {
-      "html": "The following algorithm details these restrictions:",
+      "html": "This algorithm accepts a string, and returns a set of hash expressions whose\n  hash functions are understood by the user agent.",
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>response</var> be the response that results from\n            <a href=\"https://fetch.spec.whatwg.org/#concept-fetch\">fetching</a> the <var>resource</var>."
+          "html": "<p>Let <var>result</var> be the empty set.</p>"
         },
         {
-          "html": "If the <var>response</var> <a href=\"https://fetch.spec.whatwg.org/#concept-response-type\">type</a> is <code>basic</code>,\n            <code>cors</code> or <code>default</code>, return <code>true</code>."
-        },
-        {
-          "html": "Return <code>false</code>."
-        }
-      ]
-    },
-    {
-      "html": "This algorithm accepts a string, and returns either <code>no metadata</code>, or a set of valid hash expressions whose hash functions are understood by the user agent.",
-      "rationale": "let",
-      "steps": [
-        {
-          "html": "Let <var>result</var> be the empty set."
-        },
-        {
-          "html": "Let <var>empty</var> be equal to <code>true</code>."
-        },
-        {
-          "html": "For each <var>token</var> returned by <a href=\"https://www.w3.org/TR/html5/infrastructure.html#split-a-string-on-spaces\">splitting <var>metadata</var> on\nspaces</a>:",
-          "rationale": "set",
+          "html": "For each <var>item</var> returned by <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#strictly-split\" id=\"ref-for-strictly-split\">splitting</a> <var>metadata</var> on spaces:",
+          "rationale": "let",
           "steps": [
             {
-              "html": "Set <var>empty</var> to <code>false</code>."
+              "html": "<p>Let <var>expression-and-options</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#strictly-split\" id=\"ref-for-strictly-split①\">splitting</a> <var>item</var> on U+003F (?).</p>"
             },
             {
-              "html": "If <var>token</var> is not a valid metadata, skip the remaining steps, and proceed to the next token."
+              "html": "<p>Let <var>algorithm-expression</var> be <var>expression-and-options</var>[0].</p>"
             },
             {
-              "html": "Parse <var>token</var> per the grammar in <a href=\"https://www.w3.org/TR/SRI/#dfn-integrity-metadata\">integrity metadata</a>."
+              "html": "<p>Let <var>base64-value</var> be the empty string.</p>"
             },
             {
-              "html": "Let <var>algorithm</var> be the <var>alg</var> component of\n                <var>token</var>."
+              "html": "<p>Let <var>algorithm-and-value</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#strictly-split\" id=\"ref-for-strictly-split②\">splitting</a> <var>algorithm-expression</var> on U+002D (-).</p>"
             },
             {
-              "html": "If <var>algorithm</var> is a hash function recognized by the user agent, add the parsed <var>token</var> to <var>result</var>."
+              "html": "<p>Let <var>algorithm</var> be <var>algorithm-and-value</var>[0].</p>"
+            },
+            {
+              "html": "<p>If <var>algorithm-and-value</var>[1] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">exists</a>, set <var>base64-value</var> to <var>algorithm-and-value</var>[1].</p>"
+            },
+            {
+              "html": "<p>If <var>algorithm</var> is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/SRI/#valid-sri-hash-algorithm-token\" id=\"ref-for-valid-sri-hash-algorithm-token\">valid SRI hash algorithm token</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>metadata</var> be the ordered map  «[\"alg\" → <var>algorithm</var>,\n  \"val\" → <var>base64-value</var>]».</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>metadata</var> to <var>result</var>.</p>"
             }
           ]
         },
         {
-          "html": "Return <code>no metadata</code> if <var>empty</var> is <code>true</code>, otherwise return\n            <var>result</var>."
+          "html": "<p>Return <var>result</var>.</p>"
         }
       ]
     },
     {
+      "html": "This algorithm accepts a string, and returns a set of hash expressions whose\n  hash functions are understood by the user agent.",
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>result</var> be the empty set and <var>strongest</var> be the empty string."
+          "html": "<p>Let <var>result</var> be the empty set and <var>strongest</var> be the empty\n  string.</p>"
         },
         {
           "html": "For each <var>item</var> in <var>set</var>:",
-          "rationale": "if",
+          "rationale": "assert",
           "steps": [
             {
-              "html": "If <var>result</var> is the empty set, add <var>item</var> to\n                <var>result</var> and set <var>strongest</var> to <var>item</var>, skip to the next <var>item</var>."
+              "html": "<p class=\"assertion\">Assert: <var>item</var>[\"<code>alg</code>\"] is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/SRI/#valid-sri-hash-algorithm-token\" id=\"ref-for-valid-sri-hash-algorithm-token①\">valid SRI hash algorithm token</a>.</p>"
             },
             {
-              "html": "Let <var>currentAlgorithm</var> be the <var>alg</var> component of\n                <var>strongest</var>."
+              "html": "If <var>result</var> is the empty set, then:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>item</var> to <var>result</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>strongest</var> to <var>item</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">Continue</a>.</p>"
+                }
+              ]
             },
             {
-              "html": "Let <var>newAlgorithm</var> be the <var>alg</var> component of\n                <var>item</var>."
+              "html": "<p>Let <var>currentAlgorithm</var> be <var>strongest</var>[\"<code>alg</code>\"], and <var>currentAlgorithmIndex</var> be the index of <var>currentAlgorithm</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/SRI/#valid-sri-hash-algorithm-token-set\" id=\"ref-for-valid-sri-hash-algorithm-token-set②\">valid SRI hash algorithm token set</a>.</p>"
             },
             {
-              "html": "If the result of <a href=\"https://www.w3.org/TR/SRI/#dfn-getprioritizedhashfunction-a-b\"><code>getPrioritizedHashFunction(currentAlgorithm, newAlgorithm)</code></a> is the empty string, add <var>item</var> to <var>result</var>. If the result is <var>newAlgorithm</var>, set <var>strongest</var> to\n                <var>item</var>, set <var>result</var> to the empty set, and add\n                <var>item</var> to <var>result</var>."
+              "html": "<p>Let <var>newAlgorithm</var> be the <var>item</var>[\"<code>alg</code>\"], and <var>newAlgorithmIndex</var> be the index of <var>newAlgorithm</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/SRI/#valid-sri-hash-algorithm-token-set\" id=\"ref-for-valid-sri-hash-algorithm-token-set③\">valid SRI hash algorithm token set</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>newAlgorithmIndex</var> is less than <var>currentAlgorithmIndex</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+            },
+            {
+              "html": "Otherwise, if <var>newAlgorithmIndex</var> is greater than <var>currentAlgorithmIndex</var>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>strongest</var> to <var>item</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>result</var> to « <var>item</var> ».</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Otherwise, <var>newAlgorithmIndex</var> and <var>currentAlgorithmIndex</var> are the\n  same value. <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> <var>item</var> to <var>result</var>.</p>"
             }
           ]
         },
         {
-          "html": "Return <var>result</var>."
+          "html": "<p>Return <var>result</var>.</p>"
         }
       ]
     },
     {
+      "html": "This algorithm accepts a string, and returns a set of hash expressions whose\n  hash functions are understood by the user agent.",
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>parsedMetadata</var> be the result of\n            <a href=\"https://www.w3.org/TR/SRI/#parse-metadata\">parsing <var>metadataList</var></a>."
+          "html": "<p>Let <var>parsedMetadata</var> be the result of <a href=\"https://www.w3.org/TR/SRI/#parse-metadata\">parsing <var>metadataList</var></a>.</p>"
         },
         {
-          "html": "If <var>parsedMetadata</var> is <code>no metadata</code>, return <code>true</code>."
+          "html": "<p>If <var>parsedMetadata</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is empty</a> set, return <code>true</code>.</p>"
         },
         {
-          "html": "If <a href=\"https://www.w3.org/TR/SRI/#is-response-eligible-for-integrity-validation\"><var>response</var> is not eligible for integrity\nvalidation</a>, return <code>false</code>."
-        },
-        {
-          "html": "If <var>parsedMetadata</var> is the empty set, return <code>true</code>."
-        },
-        {
-          "html": "Let <var>metadata</var> be the result of <a href=\"https://www.w3.org/TR/SRI/#get-the-strongest-metadata-from-set\">getting the strongest\nmetadata from <var>parsedMetadata</var></a>."
+          "html": "<p>Let <var>metadata</var> be the result of <a href=\"https://www.w3.org/TR/SRI/#get-the-strongest-metadata\"> getting the strongest metadata from <var>parsedMetadata</var></a>.</p>"
         },
         {
           "html": "For each <var>item</var> in <var>metadata</var>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>algorithm</var> be the <var>alg</var> component of\n                <var>item</var>."
+              "html": "<p>Let <var>algorithm</var> be the <var>item</var>[\"alg\"].</p>"
             },
             {
-              "html": "Let <var>expectedValue</var> be the <var>val</var> component of\n                <var>item</var>."
+              "html": "<p>Let <var>expectedValue</var> be the <var>item</var>[\"val\"].</p>"
             },
             {
-              "html": "Let <var>actualValue</var> be the result of <a href=\"https://www.w3.org/TR/SRI/#apply-algorithm-to-response\">applying\n<var>algorithm</var> to <var>response</var></a>."
+              "html": "<p>Let <var>actualValue</var> be the result of <a href=\"https://www.w3.org/TR/SRI/#apply-algorithm-to-response\">applying <var>algorithm</var> to <var>bytes</var> </a>.</p>"
             },
             {
-              "html": "If <var>actualValue</var> is a case-sensitive match for\n                <var>expectedValue</var>, return <code>true</code>."
+              "html": "<p>If <var>actualValue</var> is a case-sensitive match for <var>expectedValue</var>, return <code>true</code>.</p>"
             }
           ]
         },
         {
-          "html": "Return <code>false</code>."
-        }
-      ]
-    },
-    {
-      "html": "Replace step 14.1 of HTML5’s <a href=\"https://www.w3.org/TR/html5/scripting-1.html#prepare-a-script\">“prepare a script” algorithm</a> with:",
-      "rationale": "let",
-      "steps": [
-        {
-          "html": "Let <var>src</var> be the value of the element’s <code>src</code> attribute and the request’s associated <a href=\"https://www.w3.org/TR/SRI/#dfn-integrity-metadata\">integrity metadata</a> be the value of the element’s\n            <code>integrity</code> attribute."
+          "html": "<p>Return <code>false</code>.</p>"
         }
       ]
     }

@@ -5,16 +5,10 @@
   },
   "headings": [
     {
-      "id": "respecDocument",
-      "href": "https://www.w3.org/TR/SRI/#respecDocument",
+      "id": "title",
+      "href": "https://www.w3.org/TR/SRI/#title",
       "level": 1,
       "title": "Subresource Integrity"
-    },
-    {
-      "id": "w3c-recommendation-15-june-2016",
-      "href": "https://www.w3.org/TR/SRI/#w3c-recommendation-15-june-2016",
-      "level": 2,
-      "title": "W3C Recommendation 23 June 2016"
     },
     {
       "id": "abstract",
@@ -26,7 +20,7 @@
       "id": "sotd",
       "href": "https://www.w3.org/TR/SRI/#sotd",
       "level": 2,
-      "title": "Status of This Document"
+      "title": "Status of this document"
     },
     {
       "id": "toc",
@@ -35,8 +29,8 @@
       "title": "Table of Contents"
     },
     {
-      "id": "introduction",
-      "href": "https://www.w3.org/TR/SRI/#introduction",
+      "id": "intro",
+      "href": "https://www.w3.org/TR/SRI/#intro",
       "level": 2,
       "title": "Introduction",
       "number": "1"
@@ -49,8 +43,8 @@
       "number": "1.1"
     },
     {
-      "id": "use-casesexamples",
-      "href": "https://www.w3.org/TR/SRI/#use-casesexamples",
+      "id": "examples",
+      "href": "https://www.w3.org/TR/SRI/#examples",
       "level": 3,
       "title": "Use Cases/Examples",
       "number": "1.2"
@@ -63,25 +57,18 @@
       "number": "1.2.1"
     },
     {
-      "id": "conformance",
-      "href": "https://www.w3.org/TR/SRI/#conformance",
+      "id": "terms",
+      "href": "https://www.w3.org/TR/SRI/#terms",
       "level": 2,
-      "title": "Conformance",
+      "title": "Key Concepts and Terminology",
       "number": "2"
     },
     {
-      "id": "key-concepts-and-terminology",
-      "href": "https://www.w3.org/TR/SRI/#key-concepts-and-terminology",
-      "level": 3,
-      "title": "Key Concepts and Terminology",
-      "number": "2.1"
-    },
-    {
-      "id": "grammatical-concepts",
-      "href": "https://www.w3.org/TR/SRI/#grammatical-concepts",
+      "id": "grammar-concepts",
+      "href": "https://www.w3.org/TR/SRI/#grammar-concepts",
       "level": 3,
       "title": "Grammatical Concepts",
-      "number": "2.2"
+      "number": "2.1"
     },
     {
       "id": "framework",
@@ -91,15 +78,15 @@
       "number": "3"
     },
     {
-      "id": "integrity-metadata",
-      "href": "https://www.w3.org/TR/SRI/#integrity-metadata",
+      "id": "integrity-metadata-description",
+      "href": "https://www.w3.org/TR/SRI/#integrity-metadata-description",
       "level": 3,
       "title": "Integrity metadata",
       "number": "3.1"
     },
     {
-      "id": "cryptographic-hash-functions",
-      "href": "https://www.w3.org/TR/SRI/#cryptographic-hash-functions",
+      "id": "hash-functions",
+      "href": "https://www.w3.org/TR/SRI/#hash-functions",
       "level": 3,
       "title": "Cryptographic hash functions",
       "number": "3.2"
@@ -119,8 +106,8 @@
       "number": "3.2.2"
     },
     {
-      "id": "response-verification-algorithms",
-      "href": "https://www.w3.org/TR/SRI/#response-verification-algorithms",
+      "id": "verification-algorithms",
+      "href": "https://www.w3.org/TR/SRI/#verification-algorithms",
       "level": 3,
       "title": "Response verification algorithms",
       "number": "3.3"
@@ -129,36 +116,29 @@
       "id": "apply-algorithm-to-response",
       "href": "https://www.w3.org/TR/SRI/#apply-algorithm-to-response",
       "level": 4,
-      "title": "Apply algorithm to response",
+      "title": "Apply algorithm to bytes",
       "number": "3.3.1"
-    },
-    {
-      "id": "is-response-eligible-for-integrity-validation",
-      "href": "https://www.w3.org/TR/SRI/#is-response-eligible-for-integrity-validation",
-      "level": 4,
-      "title": "Is response eligible for integrity validation",
-      "number": "3.3.2"
     },
     {
       "id": "parse-metadata",
       "href": "https://www.w3.org/TR/SRI/#parse-metadata",
       "level": 4,
-      "title": "Parse metadata.",
-      "number": "3.3.3"
+      "title": "Parse metadata",
+      "number": "3.3.2"
     },
     {
-      "id": "get-the-strongest-metadata-from-set",
-      "href": "https://www.w3.org/TR/SRI/#get-the-strongest-metadata-from-set",
+      "id": "get-the-strongest-metadata",
+      "href": "https://www.w3.org/TR/SRI/#get-the-strongest-metadata",
       "level": 4,
-      "title": "Get the strongest metadata from set.",
-      "number": "3.3.4"
+      "title": "Get the strongest metadata from set",
+      "number": "3.3.3"
     },
     {
       "id": "does-response-match-metadatalist",
       "href": "https://www.w3.org/TR/SRI/#does-response-match-metadatalist",
       "level": 4,
-      "title": "Does response match metadataList?",
-      "number": "3.3.5"
+      "title": "Do bytes match metadataList?",
+      "number": "3.3.4"
     },
     {
       "id": "verification-of-html-document-subresources",
@@ -175,39 +155,11 @@
       "number": "3.5"
     },
     {
-      "id": "element-interface-extensions",
-      "href": "https://www.w3.org/TR/SRI/#element-interface-extensions",
+      "id": "the-integrity-link-processing-option",
+      "href": "https://www.w3.org/TR/SRI/#the-integrity-link-processing-option",
       "level": 3,
-      "title": "Element interface extensions",
+      "title": "The integrity link processing option",
       "number": "3.6"
-    },
-    {
-      "id": "htmllinkelement",
-      "href": "https://www.w3.org/TR/SRI/#htmllinkelement",
-      "level": 4,
-      "title": "HTMLLinkElement",
-      "number": "3.6.1"
-    },
-    {
-      "id": "attributes",
-      "href": "https://www.w3.org/TR/SRI/#attributes",
-      "level": 5,
-      "title": "Attributes",
-      "number": "3.6.1.1"
-    },
-    {
-      "id": "htmlscriptelement",
-      "href": "https://www.w3.org/TR/SRI/#htmlscriptelement",
-      "level": 4,
-      "title": "HTMLScriptElement",
-      "number": "3.6.2"
-    },
-    {
-      "id": "attributes-1",
-      "href": "https://www.w3.org/TR/SRI/#attributes-1",
-      "level": 5,
-      "title": "Attributes",
-      "number": "3.6.2.1"
     },
     {
       "id": "handling-integrity-violations",
@@ -215,27 +167,6 @@
       "level": 3,
       "title": "Handling integrity violations",
       "number": "3.7"
-    },
-    {
-      "id": "elements",
-      "href": "https://www.w3.org/TR/SRI/#elements",
-      "level": 3,
-      "title": "Elements",
-      "number": "3.8"
-    },
-    {
-      "id": "the-link-element-for-stylesheets",
-      "href": "https://www.w3.org/TR/SRI/#the-link-element-for-stylesheets",
-      "level": 4,
-      "title": "The link element for stylesheets",
-      "number": "3.8.1"
-    },
-    {
-      "id": "the-script-element",
-      "href": "https://www.w3.org/TR/SRI/#the-script-element",
-      "level": 4,
-      "title": "The script element",
-      "number": "3.8.2"
     },
     {
       "id": "proxies",
@@ -248,12 +179,12 @@
       "id": "security-considerations",
       "href": "https://www.w3.org/TR/SRI/#security-considerations",
       "level": 2,
-      "title": "Security Considerations",
+      "title": "Security and Privacy Considerations",
       "number": "5"
     },
     {
-      "id": "non-secure-contexts-remain-non-secure",
-      "href": "https://www.w3.org/TR/SRI/#non-secure-contexts-remain-non-secure",
+      "id": "non-secure-contexts",
+      "href": "https://www.w3.org/TR/SRI/#non-secure-contexts",
       "level": 3,
       "title": "Non-secure contexts remain non-secure",
       "number": "5.1"
@@ -280,18 +211,58 @@
       "number": "6"
     },
     {
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/SRI/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/SRI/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://www.w3.org/TR/SRI/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/SRI/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/SRI/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/SRI/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
       "id": "references",
       "href": "https://www.w3.org/TR/SRI/#references",
       "level": 2,
-      "title": "References",
-      "number": "A"
+      "title": "References"
     },
     {
-      "id": "normative-references",
-      "href": "https://www.w3.org/TR/SRI/#normative-references",
+      "id": "normative",
+      "href": "https://www.w3.org/TR/SRI/#normative",
       "level": 3,
-      "title": "Normative references",
-      "number": "A.1"
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://www.w3.org/TR/SRI/#informative",
+      "level": 3,
+      "title": "Informative References"
     }
   ]
 }
