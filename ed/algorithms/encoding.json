@@ -82,7 +82,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the last <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑧\">item</a> in <var>ioQueue</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑧\">end-of-queue</a>, then:",
+          "html": "If the last <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑧\">item</a> in <var>ioQueue</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑧\">end-of-queue</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -219,7 +219,7 @@
     {
       "name": "get an output encoding",
       "href": "https://encoding.spec.whatwg.org/#get-an-output-encoding",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"get-an-output-encoding\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get an output encoding</dfn> from an <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding①⑧\">encoding</a> <var>encoding</var>, run these steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"get-an-output-encoding\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get an output encoding</dfn> from an <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding①⑨\">encoding</a> <var>encoding</var>, run these steps:",
       "rationale": "if",
       "steps": [
         {
@@ -237,10 +237,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>pointer</var> is greater than 39419 and less than\n 189000, or <var>pointer</var> is greater than 1237575, return null. </p>"
+          "html": "<p>If <var>pointer</var> is greater than 39419 and less than 189000, or <var>pointer</var> is\n greater than 1237575, then return null. </p>"
         },
         {
-          "html": "<p>If <var>pointer</var> is 7457, return code point U+E7C7. </p>"
+          "html": "<p>If <var>pointer</var> is 7457, then return code point U+E7C7. </p>"
         },
         {
           "html": "<p>Let <var>offset</var> be the last pointer in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-gb18030-ranges\" id=\"ref-for-index-gb18030-ranges②\">index gb18030 ranges</a> that is less than\n or equal to <var>pointer</var> and let <var>code point offset</var> be its corresponding code\n point. </p>"
@@ -253,48 +253,48 @@
     {
       "name": "index gb18030 ranges pointer",
       "href": "https://encoding.spec.whatwg.org/#index-gb18030-ranges-pointer",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"index-gb18030-ranges-pointer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">index gb18030 ranges pointer</dfn> for <var>code point</var> is\nthe return value of these steps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"index-gb18030-ranges-pointer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">index gb18030 ranges pointer</dfn> for <var>codePoint</var> is\nthe return value of these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>code point</var> is U+E7C7, return pointer 7457. </p>"
+          "html": "<p>If <var>codePoint</var> is U+E7C7, then return pointer 7457. </p>"
         },
         {
-          "html": "<p>Let <var>offset</var> be the last code point in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-gb18030-ranges\" id=\"ref-for-index-gb18030-ranges③\">index gb18030 ranges</a> that is less\n than or equal to <var>code point</var> and let <var>pointer offset</var> be its corresponding\n pointer. </p>"
+          "html": "<p>Let <var>offset</var> be the last code point in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-gb18030-ranges\" id=\"ref-for-index-gb18030-ranges③\">index gb18030 ranges</a> that is less\n than or equal to <var>codePoint</var> and let <var>pointer offset</var> be its corresponding\n pointer. </p>"
         },
         {
-          "html": "<p>Return a pointer whose value is <var>pointer offset</var> + <var>code point</var> − <var>offset</var>. </p>"
+          "html": "<p>Return a pointer whose value is <var>pointer offset</var> + <var>codePoint</var> − <var>offset</var>. </p>"
         }
       ]
     },
     {
       "name": "index Shift_JIS pointer",
       "href": "https://encoding.spec.whatwg.org/#index-shift_jis-pointer",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"index-shift_jis-pointer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">index Shift_JIS pointer</dfn> for <var>code point</var> is the return value of these\nsteps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"index-shift_jis-pointer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">index Shift_JIS pointer</dfn> for <var>codePoint</var> is the return value of these\nsteps:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>index</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-jis0208\" id=\"ref-for-index-jis0208①\">index jis0208</a> excluding all entries whose pointer is in\n  the range 8272 to 8835, inclusive. </p>"
         },
         {
-          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-pointer\" id=\"ref-for-index-pointer\">index pointer</a> for <var>code point</var> in <var>index</var>. </p>"
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-pointer\" id=\"ref-for-index-pointer\">index pointer</a> for <var>codePoint</var> in <var>index</var>. </p>"
         }
       ]
     },
     {
       "name": "index Big5 pointer",
       "href": "https://encoding.spec.whatwg.org/#index-big5-pointer",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"index-big5-pointer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">index Big5 pointer</dfn> for <var>code point</var> is the return value of\nthese steps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"index-big5-pointer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">index Big5 pointer</dfn> for <var>codePoint</var> is the return value of\nthese steps:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>index</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-big5\" id=\"ref-for-index-big5\">index Big5</a> excluding all entries whose pointer is less\n  than (0xA1 - 0x81) × 157. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is U+2550, U+255E, U+2561, U+256A, U+5341, or U+5345,\n  return the <em>last</em> pointer corresponding to <var>code point</var> in <var>index</var>. </p>"
+          "html": "<p>If <var>codePoint</var> is U+2550, U+255E, U+2561, U+256A, U+5341, or U+5345,\n  return the <em>last</em> pointer corresponding to <var>codePoint</var> in <var>index</var>. </p>"
         },
         {
-          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-pointer\" id=\"ref-for-index-pointer①\">index pointer</a> for <var>code point</var> in <var>index</var>. </p>"
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-pointer\" id=\"ref-for-index-pointer①\">index pointer</a> for <var>codePoint</var> in <var>index</var>. </p>"
         }
       ]
     },
@@ -394,7 +394,7 @@
           "html": "<p>Let <var>BOM</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#i-o-queue-peek\" id=\"ref-for-i-o-queue-peek①\">peeking</a> 3 bytes from <var>ioQueue</var>, converted to a byte sequence. </p>"
         },
         {
-          "html": "<p>For each of the rows in the table below, starting with the first one and going down, if <var>BOM</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with\">starts with</a> the bytes given in the first column, then\n  return the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding②④\">encoding</a> given in the cell in the second column of that row. Otherwise,\n  return null. </p>\n      <table>\n       <tbody>\n        <tr>\n         <th>Byte order mark\n         </th><th>Encoding \n        </th></tr><tr>\n         <td>0xEF 0xBB 0xBF\n         </td><td><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8①②\">UTF-8</a> \n        </td></tr><tr>\n         <td>0xFE 0xFF\n         </td><td><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16be\" id=\"ref-for-utf-16be③\">UTF-16BE</a> \n        </td></tr><tr>\n         <td>0xFF 0xFE\n         </td><td><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16le\" id=\"ref-for-utf-16le③\">UTF-16LE</a> \n      </td></tr></tbody></table>"
+          "html": "<p>For each of the rows in the table below, starting with the first one and going down, if <var>BOM</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with\">starts with</a> the bytes given in the first column, then\n  return the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding②⑤\">encoding</a> given in the cell in the second column of that row. Otherwise,\n  return null. </p>\n      <table>\n       <tbody>\n        <tr>\n         <th>Byte order mark\n         </th><th>Encoding \n        </th></tr><tr>\n         <td>0xEF 0xBB 0xBF\n         </td><td><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8①②\">UTF-8</a> \n        </td></tr><tr>\n         <td>0xFE 0xFF\n         </td><td><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16be\" id=\"ref-for-utf-16be③\">UTF-16BE</a> \n        </td></tr><tr>\n         <td>0xFF 0xFE\n         </td><td><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16le\" id=\"ref-for-utf-16le③\">UTF-16LE</a> \n      </td></tr></tbody></table>"
         }
       ]
     },
@@ -418,7 +418,7 @@
     {
       "name": "get an encoder",
       "href": "https://encoding.spec.whatwg.org/#get-an-encoder",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"get an encoder|getting an encoder\" id=\"get-an-encoder\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get an encoder</dfn> from an <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding②⑤\">encoding</a> <var>encoding</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"get an encoder|getting an encoder\" id=\"get-an-encoder\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get an encoder</dfn> from an <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding②⑥\">encoding</a> <var>encoding</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -469,14 +469,14 @@
               "html": "<p>If <var>item</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream①⑨\">end-of-queue</a>, then return <var>output</var>. </p>"
             },
             {
-              "html": "If <var>decoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecoder-encoding\" id=\"ref-for-textdecoder-encoding\">encoding</a> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8①⑤\">UTF-8</a> or <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16be-le\" id=\"ref-for-utf-16be-le④\">UTF-16BE/LE</a>, and <var>decoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecoder-ignore-bom-flag\" id=\"ref-for-textdecoder-ignore-bom-flag\">ignore BOM</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecoder-bom-seen-flag\" id=\"ref-for-textdecoder-bom-seen-flag\">BOM seen</a> are false, then:",
+              "html": "If <var>decoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecoder-encoding\" id=\"ref-for-textdecoder-encoding\">encoding</a> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8①⑤\">UTF-8</a> or <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16be-le\" id=\"ref-for-utf-16be-le④\">UTF-16BE/LE</a>, and <var>decoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecoder-ignore-bom-flag\" id=\"ref-for-textdecoder-ignore-bom-flag\">ignore BOM</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecoder-bom-seen-flag\" id=\"ref-for-textdecoder-bom-seen-flag\">BOM seen</a> are false:",
               "rationale": "set",
               "steps": [
                 {
                   "html": "<p>Set <var>decoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecoder-bom-seen-flag\" id=\"ref-for-textdecoder-bom-seen-flag①\">BOM seen</a> to true. </p>"
                 },
                 {
-                  "html": "<p>If <var>item</var> is U+FEFF, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>. </p>"
+                  "html": "<p>If <var>item</var> is U+FEFF BOM, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>. </p>"
                 }
               ]
             },
@@ -628,7 +628,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <var>destination</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#buffersource-byte-length\" id=\"ref-for-buffersource-byte-length\">byte length</a> − <var>written</var> is greater than or equal to the number of bytes in <var>result</var>, then:",
+                  "html": "If <var>destination</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#buffersource-byte-length\" id=\"ref-for-buffersource-byte-length\">byte length</a> − <var>written</var> is greater than or equal to the number of bytes in <var>result</var>:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -721,7 +721,7 @@
               "html": "<p>Let <var>item</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-read\" id=\"ref-for-concept-stream-read①②\">reading</a> from <var>decoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecodercommon-i-o-queue\" id=\"ref-for-textdecodercommon-i-o-queue⑥\">I/O queue</a>. </p>"
             },
             {
-              "html": "If <var>item</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream②⑦\">end-of-queue</a>, then:",
+              "html": "If <var>item</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream②⑦\">end-of-queue</a>:",
               "rationale": "let",
               "steps": [
                 {
@@ -765,7 +765,7 @@
               "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-encoding-process\" id=\"ref-for-concept-encoding-process④\">processing an item</a> with <var>item</var>, <var>decoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecodercommon-decoder\" id=\"ref-for-textdecodercommon-decoder⑤\">decoder</a>, <var>decoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecodercommon-i-o-queue\" id=\"ref-for-textdecodercommon-i-o-queue⑨\">I/O queue</a>, <var>output</var>, and <var>decoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textdecoder-error-mode\" id=\"ref-for-textdecoder-error-mode⑨\">error mode</a>. </p>"
             },
             {
-              "html": "If <var>result</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished④\">finished</a>, then:",
+              "html": "If <var>result</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished④\">finished</a>:",
               "rationale": "let",
               "steps": [
                 {
@@ -835,14 +835,14 @@
               "html": "<p>Let <var>item</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-read\" id=\"ref-for-concept-stream-read①④\">reading</a> from <var>input</var>. </p>"
             },
             {
-              "html": "If <var>item</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③⓪\">end-of-queue</a>, then:",
+              "html": "If <var>item</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③⓪\">end-of-queue</a>:",
               "rationale": "convert",
               "steps": [
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#from-i-o-queue-convert\" id=\"ref-for-from-i-o-queue-convert①\">Convert</a> <var>output</var> into a byte sequence. </p>"
                 },
                 {
-                  "html": "If <var>output</var> is non-empty, then:",
+                  "html": "If <var>output</var> is non-empty:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -875,7 +875,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var>encoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate\" id=\"ref-for-textencoderstream-pending-high-surrogate\">leading surrogate</a> is non-null, then:",
+          "html": "If <var>encoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate\" id=\"ref-for-textencoderstream-pending-high-surrogate\">leading surrogate</a> is non-null:",
           "rationale": "let",
           "steps": [
             {
@@ -891,7 +891,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend②\">Restore</a> <var>item</var> to <var>input</var>. </p>"
             },
             {
-              "html": "<p>Return U+FFFD. </p>"
+              "html": "<p>Return U+FFFD (�). </p>"
             }
           ]
         },
@@ -899,7 +899,7 @@
           "html": "<p>If <var>item</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#leading-surrogate\" id=\"ref-for-leading-surrogate②\">leading surrogate</a>, then set <var>encoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate\" id=\"ref-for-textencoderstream-pending-high-surrogate③\">leading surrogate</a> to <var>item</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue③\">continue</a>. </p>"
         },
         {
-          "html": "<p>If <var>item</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#trailing-surrogate\" id=\"ref-for-trailing-surrogate②\">trailing surrogate</a>, then return U+FFFD. </p>"
+          "html": "<p>If <var>item</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#trailing-surrogate\" id=\"ref-for-trailing-surrogate②\">trailing surrogate</a>, then return U+FFFD (�). </p>"
         },
         {
           "html": "<p>Return <var>item</var>. </p>"
@@ -913,7 +913,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var>encoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate\" id=\"ref-for-textencoderstream-pending-high-surrogate④\">leading surrogate</a> is non-null, then:",
+          "html": "If <var>encoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate\" id=\"ref-for-textencoderstream-pending-high-surrogate④\">leading surrogate</a> is non-null:",
           "rationale": "let",
           "steps": [
             {
@@ -934,7 +934,7 @@
           "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③①\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-bytes-needed\" id=\"ref-for-utf-8-bytes-needed\">UTF-8 bytes needed</a> is not 0, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-bytes-needed\" id=\"ref-for-utf-8-bytes-needed①\">UTF-8 bytes needed</a> to 0 and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error①⑤\">error</a>. </p>"
         },
         {
-          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③②\">end-of-queue</a>, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished⑤\">finished</a>. </p>"
+          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③②\">end-of-queue</a>, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished⑤\">finished</a>. </p>"
         },
         {
           "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-bytes-needed\" id=\"ref-for-utf-8-bytes-needed②\">UTF-8 bytes needed</a> is 0, based on <var>byte</var>:",
@@ -1007,7 +1007,7 @@
           ]
         },
         {
-          "html": "If <var>byte</var> is not in the range <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-lower-boundary\" id=\"ref-for-utf-8-lower-boundary②\">UTF-8 lower boundary</a> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-upper-boundary\" id=\"ref-for-utf-8-upper-boundary②\">UTF-8 upper boundary</a>, inclusive, then:",
+          "html": "If <var>byte</var> is not in the range <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-lower-boundary\" id=\"ref-for-utf-8-lower-boundary②\">UTF-8 lower boundary</a> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-upper-boundary\" id=\"ref-for-utf-8-upper-boundary②\">UTF-8 upper boundary</a>, inclusive:",
           "rationale": "set",
           "steps": [
             {
@@ -1031,31 +1031,31 @@
           "html": "<p>Increase <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-bytes-seen\" id=\"ref-for-utf-8-bytes-seen①\">UTF-8 bytes seen</a> by one. </p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-bytes-seen\" id=\"ref-for-utf-8-bytes-seen②\">UTF-8 bytes seen</a> is not equal to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-bytes-needed\" id=\"ref-for-utf-8-bytes-needed⑦\">UTF-8 bytes needed</a>, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue⑤\">continue</a>. </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-bytes-seen\" id=\"ref-for-utf-8-bytes-seen②\">UTF-8 bytes seen</a> is not equal to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-bytes-needed\" id=\"ref-for-utf-8-bytes-needed⑦\">UTF-8 bytes needed</a>, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue⑤\">continue</a>. </p>"
         },
         {
-          "html": "<p>Let <var>code point</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-code-point\" id=\"ref-for-utf-8-code-point⑦\">UTF-8 code point</a>. </p>"
+          "html": "<p>Let <var>codePoint</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-code-point\" id=\"ref-for-utf-8-code-point⑦\">UTF-8 code point</a>. </p>"
         },
         {
           "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-code-point\" id=\"ref-for-utf-8-code-point⑧\">UTF-8 code point</a>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-bytes-needed\" id=\"ref-for-utf-8-bytes-needed⑧\">UTF-8 bytes needed</a>, and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-bytes-seen\" id=\"ref-for-utf-8-bytes-seen③\">UTF-8 bytes seen</a> to 0. </p>"
         },
         {
-          "html": "<p>Return a code point whose value is <var>code point</var>. </p>"
+          "html": "<p>Return a code point whose value is <var>codePoint</var>. </p>"
         }
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8②④\">UTF-8</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder①⑧\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler⑤\">handler</a>, given <var>unused</var> and <var>code point</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8②④\">UTF-8</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder①⑧\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler⑤\">handler</a>, given <var>unused</var> and <var>codePoint</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>code point</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③③\">end-of-queue</a>, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished⑥\">finished</a>. </p>"
+          "html": "<p>If <var>codePoint</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③③\">end-of-queue</a>, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished⑥\">finished</a>. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point①\">ASCII code point</a>, return\n a byte whose value is <var>code point</var>. </p>"
+          "html": "<p>If <var>codePoint</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point①\">ASCII code point</a>, then return a byte whose value is <var>codePoint</var>. </p>"
         },
         {
-          "html": "Set <var>count</var> and <var>offset</var> based on the\n  range <var>code point</var> is in:",
+          "html": "Set <var>count</var> and <var>offset</var> based on the\n  range <var>codePoint</var> is in:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1078,14 +1078,14 @@
           ]
         },
         {
-          "html": "<p>Let <var>bytes</var> be a byte sequence whose first byte is\n (<var>code point</var> &gt;&gt; (6 × <var>count</var>)) + <var>offset</var>. </p>"
+          "html": "<p>Let <var>bytes</var> be a byte sequence whose first byte is\n (<var>codePoint</var> &gt;&gt; (6 × <var>count</var>)) + <var>offset</var>. </p>"
         },
         {
           "html": "While <var>count</var> is greater than 0:",
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>temp</var> to <var>code point</var> &gt;&gt; (6 × (<var>count</var> − 1)). </p>"
+              "html": "<p>Set <var>temp</var> to <var>codePoint</var> &gt;&gt; (6 × (<var>count</var> − 1)). </p>"
             },
             {
               "html": "<p>Append to <var>bytes</var> 0x80 | (<var>temp</var> &amp; 0x3F). </p>"
@@ -1105,37 +1105,37 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③④\">end-of-queue</a>, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished⑦\">finished</a>. </p>"
+          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③④\">end-of-queue</a>, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished⑦\">finished</a>. </p>"
         },
         {
-          "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte①\">ASCII byte</a>, return a code point whose value\n is <var>byte</var>. </p>"
+          "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte①\">ASCII byte</a>, then return a code point whose value is <var>byte</var>. </p>"
         },
         {
-          "html": "<p>Let <var>code point</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-code-point\" id=\"ref-for-index-code-point\">index code point</a> for <var>byte</var> − 0x80 in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-single-byte\" id=\"ref-for-index-single-byte①\">index single-byte</a>. </p>"
+          "html": "<p>Let <var>codePoint</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-code-point\" id=\"ref-for-index-code-point\">index code point</a> for <var>byte</var> − 0x80 in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-single-byte\" id=\"ref-for-index-single-byte①\">index single-byte</a>. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is null, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error①⑧\">error</a>. </p>"
+          "html": "<p>If <var>codePoint</var> is null, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error①⑧\">error</a>. </p>"
         },
         {
-          "html": "<p>Return a code point whose value is <var>code point</var>. </p>"
+          "html": "<p>Return a code point whose value is <var>codePoint</var>. </p>"
         }
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#single-byte-encoding\" id=\"ref-for-single-byte-encoding⑤\">Single-byte encodings</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder②⓪\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler⑦\">handler</a>, given <var>unused</var> and <var>code point</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#single-byte-encoding\" id=\"ref-for-single-byte-encoding⑤\">Single-byte encodings</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder②⓪\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler⑦\">handler</a>, given <var>unused</var> and <var>codePoint</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>code point</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③⑤\">end-of-queue</a>, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished⑧\">finished</a>. </p>"
+          "html": "<p>If <var>codePoint</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③⑤\">end-of-queue</a>, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished⑧\">finished</a>. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point②\">ASCII code point</a>, return\n a byte whose value is <var>code point</var>. </p>"
+          "html": "<p>If <var>codePoint</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point②\">ASCII code point</a>, then return a byte whose value is <var>codePoint</var>. </p>"
         },
         {
-          "html": "<p>Let <var>pointer</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-pointer\" id=\"ref-for-index-pointer②\">index pointer</a> for <var>code point</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-single-byte\" id=\"ref-for-index-single-byte②\">index single-byte</a>. </p>"
+          "html": "<p>Let <var>pointer</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-pointer\" id=\"ref-for-index-pointer②\">index pointer</a> for <var>codePoint</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-single-byte\" id=\"ref-for-index-single-byte②\">index single-byte</a>. </p>"
         },
         {
-          "html": "<p>If <var>pointer</var> is null, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error①⑨\">error</a> with <var>code point</var>. </p>"
+          "html": "<p>If <var>pointer</var> is null, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error①⑨\">error</a> with <var>codePoint</var>. </p>"
         },
         {
           "html": "<p>Return a byte whose value is <var>pointer</var> + 0x80. </p>"
@@ -1147,17 +1147,17 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③⑥\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-first\" id=\"ref-for-gb18030-first\">gb18030 first</a>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-second\" id=\"ref-for-gb18030-second\">gb18030 second</a>, and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-third\" id=\"ref-for-gb18030-third\">gb18030 third</a> are 0x00, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished⑨\">finished</a>. </p>"
+          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③⑥\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-first\" id=\"ref-for-gb18030-first\">gb18030 first</a>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-second\" id=\"ref-for-gb18030-second\">gb18030 second</a>,\n and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-third\" id=\"ref-for-gb18030-third\">gb18030 third</a> are 0x00, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished⑨\">finished</a>. </p>"
         },
         {
-          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③⑦\">end-of-queue</a>, and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-first\" id=\"ref-for-gb18030-first①\">gb18030 first</a>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-second\" id=\"ref-for-gb18030-second①\">gb18030 second</a>, or <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-third\" id=\"ref-for-gb18030-third①\">gb18030 third</a> is not 0x00, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-first\" id=\"ref-for-gb18030-first②\">gb18030 first</a>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-second\" id=\"ref-for-gb18030-second②\">gb18030 second</a>, and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-third\" id=\"ref-for-gb18030-third②\">gb18030 third</a> to 0x00, and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error②⓪\">error</a>. </p>"
+          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③⑦\">end-of-queue</a>, and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-first\" id=\"ref-for-gb18030-first①\">gb18030 first</a>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-second\" id=\"ref-for-gb18030-second①\">gb18030 second</a>,\n or <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-third\" id=\"ref-for-gb18030-third①\">gb18030 third</a> is not 0x00, then set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-first\" id=\"ref-for-gb18030-first②\">gb18030 first</a>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-second\" id=\"ref-for-gb18030-second②\">gb18030 second</a>, and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-third\" id=\"ref-for-gb18030-third②\">gb18030 third</a> to 0x00, and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error②⓪\">error</a>. </p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-third\" id=\"ref-for-gb18030-third③\">gb18030 third</a> is not 0x00, then:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-third\" id=\"ref-for-gb18030-third③\">gb18030 third</a> is not 0x00:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>byte</var> is not in the range 0x30 to 0x39, inclusive, then:",
+              "html": "If <var>byte</var> is not in the range 0x30 to 0x39, inclusive:",
               "rationale": "restore",
               "steps": [
                 {
@@ -1172,21 +1172,21 @@
               ]
             },
             {
-              "html": "<p>Let <var>code point</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-gb18030-ranges-code-point\" id=\"ref-for-index-gb18030-ranges-code-point①\">index gb18030 ranges code point</a> for\n   ((<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-first\" id=\"ref-for-gb18030-first④\">gb18030 first</a> − 0x81) × (10 × 126 × 10)) +\n   ((<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-second\" id=\"ref-for-gb18030-second⑤\">gb18030 second</a> − 0x30) × (10 × 126)) +\n   ((<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-third\" id=\"ref-for-gb18030-third⑥\">gb18030 third</a> − 0x81) × 10) + <var>byte</var> − 0x30. </p>"
+              "html": "<p>Let <var>codePoint</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-gb18030-ranges-code-point\" id=\"ref-for-index-gb18030-ranges-code-point①\">index gb18030 ranges code point</a> for\n   ((<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-first\" id=\"ref-for-gb18030-first④\">gb18030 first</a> − 0x81) × (10 × 126 × 10)) +\n   ((<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-second\" id=\"ref-for-gb18030-second⑤\">gb18030 second</a> − 0x30) × (10 × 126)) +\n   ((<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-third\" id=\"ref-for-gb18030-third⑥\">gb18030 third</a> − 0x81) × 10) + <var>byte</var> − 0x30. </p>"
             },
             {
               "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-first\" id=\"ref-for-gb18030-first⑤\">gb18030 first</a>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-second\" id=\"ref-for-gb18030-second⑥\">gb18030 second</a>, and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-third\" id=\"ref-for-gb18030-third⑦\">gb18030 third</a> to 0x00. </p>"
             },
             {
-              "html": "<p>If <var>code point</var> is null, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error②②\">error</a>. </p>"
+              "html": "<p>If <var>codePoint</var> is null, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error②②\">error</a>. </p>"
             },
             {
-              "html": "<p>Return a code point whose value is <var>code point</var>. </p>"
+              "html": "<p>Return a code point whose value is <var>codePoint</var>. </p>"
             }
           ]
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-second\" id=\"ref-for-gb18030-second⑦\">gb18030 second</a> is not 0x00, then:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-second\" id=\"ref-for-gb18030-second⑦\">gb18030 second</a> is not 0x00:",
           "rationale": "if",
           "steps": [
             {
@@ -1198,7 +1198,7 @@
           ]
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-first\" id=\"ref-for-gb18030-first⑦\">gb18030 first</a> is not 0x00, then:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-first\" id=\"ref-for-gb18030-first⑦\">gb18030 first</a> is not 0x00:",
           "rationale": "if",
           "steps": [
             {
@@ -1208,19 +1208,19 @@
               "html": "<p>Let <var>lead</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-first\" id=\"ref-for-gb18030-first⑧\">gb18030 first</a>, let <var>pointer</var> be null, and set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-first\" id=\"ref-for-gb18030-first⑨\">gb18030 first</a> to 0x00. </p>"
             },
             {
-              "html": "<p>Let <var>offset</var> be 0x40 if <var>byte</var> is less than 0x7F, otherwise 0x41. </p>"
+              "html": "<p>Let <var>offset</var> be 0x40 if <var>byte</var> is less than 0x7F; otherwise 0x41. </p>"
             },
             {
               "html": "<p>If <var>byte</var> is in the range 0x40 to 0x7E, inclusive, or\n   0x80 to 0xFE, inclusive, set <var>pointer</var> to\n   (<var>lead</var> − 0x81) × 190 + (<var>byte</var> − <var>offset</var>). </p>"
             },
             {
-              "html": "<p>Let <var>code point</var> be null if <var>pointer</var> is null, otherwise the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-code-point\" id=\"ref-for-index-code-point①\">index code point</a> for <var>pointer</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-gb18030\" id=\"ref-for-index-gb18030\">index gb18030</a>. </p>"
+              "html": "<p>Let <var>codePoint</var> be null if <var>pointer</var> is null; otherwise the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-code-point\" id=\"ref-for-index-code-point①\">index code point</a> for <var>pointer</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-gb18030\" id=\"ref-for-index-gb18030\">index gb18030</a>. </p>"
             },
             {
-              "html": "<p>If <var>code point</var> is non-null, return a code point whose value is <var>code point</var>. </p>"
+              "html": "<p>If <var>codePoint</var> is non-null, then return a code point whose value is <var>codePoint</var>. </p>"
             },
             {
-              "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte②\">ASCII byte</a>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend⑥\">restore</a> <var>byte</var> to <var>ioQueue</var>. </p>"
+              "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte②\">ASCII byte</a>, then <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend⑥\">restore</a> <var>byte</var> to <var>ioQueue</var>. </p>"
             },
             {
               "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error②④\">error</a>. </p>"
@@ -1228,13 +1228,13 @@
           ]
         },
         {
-          "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte③\">ASCII byte</a>, return\n a code point whose value is <var>byte</var>. </p>"
+          "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte③\">ASCII byte</a>, then return a code point whose value is <var>byte</var>. </p>"
         },
         {
-          "html": "<p>If <var>byte</var> is 0x80, return code point U+20AC. </p>"
+          "html": "<p>If <var>byte</var> is 0x80, then return code point U+20AC (€). </p>"
         },
         {
-          "html": "<p>If <var>byte</var> is in the range 0x81 to 0xFE, inclusive, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-first\" id=\"ref-for-gb18030-first①⓪\">gb18030 first</a> to <var>byte</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue⑧\">continue</a>. </p>"
+          "html": "<p>If <var>byte</var> is in the range 0x81 to 0xFE, inclusive, then set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030-first\" id=\"ref-for-gb18030-first①⓪\">gb18030 first</a> to <var>byte</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue⑧\">continue</a>. </p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error②⑤\">error</a>. </p>"
@@ -1242,29 +1242,29 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030\" id=\"ref-for-gb18030⑦\">gb18030</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder②⑤\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler⑨\">handler</a>, given <var>unused</var> and <var>code point</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gb18030\" id=\"ref-for-gb18030⑦\">gb18030</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder②⑤\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler⑨\">handler</a>, given <var>unused</var> and <var>codePoint</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>code point</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③⑧\">end-of-queue</a>, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished①⓪\">finished</a>. </p>"
+          "html": "<p>If <var>codePoint</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③⑧\">end-of-queue</a>, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished①⓪\">finished</a>. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point③\">ASCII code point</a>, return\n a byte whose value is <var>code point</var>. </p>"
+          "html": "<p>If <var>codePoint</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point③\">ASCII code point</a>, then return a byte whose value is <var>codePoint</var>. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is U+E5E5, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error②⑥\">error</a> with <var>code point</var>. </p>"
+          "html": "<p>If <var>codePoint</var> is U+E5E5, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error②⑥\">error</a> with <var>codePoint</var>. </p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gbk-flag\" id=\"ref-for-gbk-flag①\">is GBK</a> is true and <var>code point</var> is\n U+20AC, return byte 0x80. </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gbk-flag\" id=\"ref-for-gbk-flag①\">is GBK</a> is true and <var>codePoint</var> is U+20AC (€), then return byte 0x80. </p>"
         },
         {
-          "html": "<p>If there is a row in the table below whose first column is <var>code point</var>, then return\n  the two bytes on the same row listed in the second column: </p>\n     <table>\n      <tbody>\n       <tr>\n        <th>Code point \n        </th><th>Bytes \n       </th></tr><tr>\n        <td>U+E78D \n        </td><td>0xA6 0xD9 \n       </td></tr><tr>\n        <td>U+E78E \n        </td><td>0xA6 0xDA \n       </td></tr><tr>\n        <td>U+E78F \n        </td><td>0xA6 0xDB \n       </td></tr><tr>\n        <td>U+E790 \n        </td><td>0xA6 0xDC \n       </td></tr><tr>\n        <td>U+E791 \n        </td><td>0xA6 0xDD \n       </td></tr><tr>\n        <td>U+E792 \n        </td><td>0xA6 0xDE \n       </td></tr><tr>\n        <td>U+E793 \n        </td><td>0xA6 0xDF \n       </td></tr><tr>\n        <td>U+E794 \n        </td><td>0xA6 0xEC \n       </td></tr><tr>\n        <td>U+E795 \n        </td><td>0xA6 0xED \n       </td></tr><tr>\n        <td>U+E796 \n        </td><td>0xA6 0xF3 \n       </td></tr><tr>\n        <td>U+E81E \n        </td><td>0xFE 0x59 \n       </td></tr><tr>\n        <td>U+E826 \n        </td><td>0xFE 0x61 \n       </td></tr><tr>\n        <td>U+E82B \n        </td><td>0xFE 0x66 \n       </td></tr><tr>\n        <td>U+E82C \n        </td><td>0xFE 0x67 \n       </td></tr><tr>\n        <td>U+E832 \n        </td><td>0xFE 0x6D \n       </td></tr><tr>\n        <td>U+E843 \n        </td><td>0xFE 0x7E \n       </td></tr><tr>\n        <td>U+E854 \n        </td><td>0xFE 0x90 \n       </td></tr><tr>\n        <td>U+E864 \n        </td><td>0xFE 0xA0 \n     </td></tr></tbody></table>"
+          "html": "<p>If there is a row in the table below whose first column is <var>codePoint</var>, then return\n  the two bytes on the same row listed in the second column: </p>\n     <table>\n      <tbody>\n       <tr>\n        <th>Code point \n        </th><th>Bytes \n       </th></tr><tr>\n        <td>U+E78D \n        </td><td>0xA6 0xD9 \n       </td></tr><tr>\n        <td>U+E78E \n        </td><td>0xA6 0xDA \n       </td></tr><tr>\n        <td>U+E78F \n        </td><td>0xA6 0xDB \n       </td></tr><tr>\n        <td>U+E790 \n        </td><td>0xA6 0xDC \n       </td></tr><tr>\n        <td>U+E791 \n        </td><td>0xA6 0xDD \n       </td></tr><tr>\n        <td>U+E792 \n        </td><td>0xA6 0xDE \n       </td></tr><tr>\n        <td>U+E793 \n        </td><td>0xA6 0xDF \n       </td></tr><tr>\n        <td>U+E794 \n        </td><td>0xA6 0xEC \n       </td></tr><tr>\n        <td>U+E795 \n        </td><td>0xA6 0xED \n       </td></tr><tr>\n        <td>U+E796 \n        </td><td>0xA6 0xF3 \n       </td></tr><tr>\n        <td>U+E81E \n        </td><td>0xFE 0x59 \n       </td></tr><tr>\n        <td>U+E826 \n        </td><td>0xFE 0x61 \n       </td></tr><tr>\n        <td>U+E82B \n        </td><td>0xFE 0x66 \n       </td></tr><tr>\n        <td>U+E82C \n        </td><td>0xFE 0x67 \n       </td></tr><tr>\n        <td>U+E832 \n        </td><td>0xFE 0x6D \n       </td></tr><tr>\n        <td>U+E843 \n        </td><td>0xFE 0x7E \n       </td></tr><tr>\n        <td>U+E854 \n        </td><td>0xFE 0x90 \n       </td></tr><tr>\n        <td>U+E864 \n        </td><td>0xFE 0xA0 \n     </td></tr></tbody></table>"
         },
         {
-          "html": "<p>Let <var>pointer</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-pointer\" id=\"ref-for-index-pointer③\">index pointer</a> for <var>code point</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-gb18030\" id=\"ref-for-index-gb18030②\">index gb18030</a>. </p>"
+          "html": "<p>Let <var>pointer</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-pointer\" id=\"ref-for-index-pointer③\">index pointer</a> for <var>codePoint</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-gb18030\" id=\"ref-for-index-gb18030②\">index gb18030</a>. </p>"
         },
         {
-          "html": "If <var>pointer</var> is non-null, then:",
+          "html": "If <var>pointer</var> is non-null:",
           "rationale": "let",
           "steps": [
             {
@@ -1282,10 +1282,10 @@
           ]
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gbk-flag\" id=\"ref-for-gbk-flag②\">is GBK</a> is true, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error②⑦\">error</a> with <var>code point</var>. </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gbk-flag\" id=\"ref-for-gbk-flag②\">is GBK</a> is true, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error②⑦\">error</a> with <var>codePoint</var>. </p>"
         },
         {
-          "html": "<p>Set <var>pointer</var> to the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-gb18030-ranges-pointer\" id=\"ref-for-index-gb18030-ranges-pointer①\">index gb18030 ranges pointer</a> for <var>code point</var>. </p>"
+          "html": "<p>Set <var>pointer</var> to the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-gb18030-ranges-pointer\" id=\"ref-for-index-gb18030-ranges-pointer①\">index gb18030 ranges pointer</a> for <var>codePoint</var>. </p>"
         },
         {
           "html": "<p>Let <var>byte1</var> be <var>pointer</var> / (10 × 126 × 10). </p>"
@@ -1315,29 +1315,38 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③⑨\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5-lead\" id=\"ref-for-big5-lead\">Big5 lead</a> is not 0x00, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5-lead\" id=\"ref-for-big5-lead①\">Big5 lead</a> to 0x00 and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error②⑧\">error</a>. </p>"
+          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream③⑨\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5-lead\" id=\"ref-for-big5-lead\">Big5 lead</a> is not 0x00, then set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5-lead\" id=\"ref-for-big5-lead①\">Big5 lead</a> to 0x00 and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error②⑧\">error</a>. </p>"
         },
         {
-          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream④⓪\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5-lead\" id=\"ref-for-big5-lead②\">Big5 lead</a> is 0x00, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished①①\">finished</a>. </p>"
+          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream④⓪\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5-lead\" id=\"ref-for-big5-lead②\">Big5 lead</a> is 0x00, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished①①\">finished</a>. </p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5-lead\" id=\"ref-for-big5-lead③\">Big5 lead</a> is not 0x00, let <var>lead</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5-lead\" id=\"ref-for-big5-lead④\">Big5 lead</a>, let <var>pointer</var> be null, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5-lead\" id=\"ref-for-big5-lead⑤\">Big5 lead</a> to 0x00, and then:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5-lead\" id=\"ref-for-big5-lead③\">Big5 lead</a> is not 0x00:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>offset</var> be 0x40 if <var>byte</var> is less than 0x7F, otherwise 0x62. </p>"
+              "html": "<p>Let <var>lead</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5-lead\" id=\"ref-for-big5-lead④\">Big5 lead</a>. </p>"
+            },
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5-lead\" id=\"ref-for-big5-lead⑤\">Big5 lead</a> to 0x00. </p>"
+            },
+            {
+              "html": "<p>Let <var>pointer</var> be null. </p>"
+            },
+            {
+              "html": "<p>Let <var>offset</var> be 0x40 if <var>byte</var> is less than 0x7F; otherwise 0x62. </p>"
             },
             {
               "html": "<p>If <var>byte</var> is in the range 0x40 to 0x7E, inclusive, or\n   0xA1 to 0xFE, inclusive, set <var>pointer</var> to\n   (<var>lead</var> − 0x81) × 157 + (<var>byte</var> − <var>offset</var>). </p>"
             },
             {
-              "html": "<p>If there is a row in the table below whose first column is <var>pointer</var>, return the <em>two</em> code points listed in\n    its second column (the third column is irrelevant): </p>\n       <table>\n        <tbody>\n         <tr>\n          <th>Pointer\n          </th><th>Code points\n          </th><th>Notes \n         </th></tr><tr>\n          <td>1133\n          </td><td>U+00CA U+0304\n          </td><td>Ê̄ (LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND MACRON) \n         </td></tr><tr>\n          <td>1135\n          </td><td>U+00CA U+030C\n          </td><td>Ê̌ (LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND CARON) \n         </td></tr><tr>\n          <td>1164\n          </td><td>U+00EA U+0304\n          </td><td>ê̄ (LATIN SMALL LETTER E WITH CIRCUMFLEX AND MACRON) \n         </td></tr><tr>\n          <td>1166\n          </td><td>U+00EA U+030C\n          </td><td>ê̌ (LATIN SMALL LETTER E WITH CIRCUMFLEX AND CARON) \n       </td></tr></tbody></table>"
+              "html": "<p>If there is a row in the table below whose first column is <var>pointer</var>, then return\n    the <em>two</em> code points listed in its second column (the third column is irrelevant): </p>\n       <table>\n        <tbody>\n         <tr>\n          <th>Pointer\n          </th><th>Code points\n          </th><th>Notes \n         </th></tr><tr>\n          <td>1133\n          </td><td>U+00CA U+0304\n          </td><td>Ê̄ (LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND MACRON) \n         </td></tr><tr>\n          <td>1135\n          </td><td>U+00CA U+030C\n          </td><td>Ê̌ (LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND CARON) \n         </td></tr><tr>\n          <td>1164\n          </td><td>U+00EA U+0304\n          </td><td>ê̄ (LATIN SMALL LETTER E WITH CIRCUMFLEX AND MACRON) \n         </td></tr><tr>\n          <td>1166\n          </td><td>U+00EA U+030C\n          </td><td>ê̌ (LATIN SMALL LETTER E WITH CIRCUMFLEX AND CARON) \n       </td></tr></tbody></table>"
             },
             {
-              "html": "<p>Let <var>code point</var> be null if <var>pointer</var> is null, otherwise the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-code-point\" id=\"ref-for-index-code-point②\">index code point</a> for <var>pointer</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-big5\" id=\"ref-for-index-big5①\">index Big5</a>. </p>"
+              "html": "<p>Let <var>codePoint</var> be null if <var>pointer</var> is null; otherwise the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-code-point\" id=\"ref-for-index-code-point②\">index code point</a> for <var>pointer</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-big5\" id=\"ref-for-index-big5①\">index Big5</a>. </p>"
             },
             {
-              "html": "<p>If <var>code point</var> is non-null, return a code point whose value is <var>code point</var>. </p>"
+              "html": "<p>If <var>codePoint</var> is non-null, then return a code point whose value is <var>codePoint</var>. </p>"
             },
             {
               "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte④\">ASCII byte</a>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend⑦\">restore</a> <var>byte</var> to <var>ioQueue</var>. </p>"
@@ -1348,10 +1357,10 @@
           ]
         },
         {
-          "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte⑤\">ASCII byte</a>, return\n a code point whose value is <var>byte</var>. </p>"
+          "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte⑤\">ASCII byte</a>, then return a code point whose value is <var>byte</var>. </p>"
         },
         {
-          "html": "<p>If <var>byte</var> is in the range 0x81 to 0xFE, inclusive, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5-lead\" id=\"ref-for-big5-lead⑥\">Big5 lead</a> to <var>byte</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue⑨\">continue</a>. </p>"
+          "html": "<p>If <var>byte</var> is in the range 0x81 to 0xFE, inclusive, then set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5-lead\" id=\"ref-for-big5-lead⑥\">Big5 lead</a> to <var>byte</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue⑨\">continue</a>. </p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error③⓪\">error</a>. </p>"
@@ -1359,20 +1368,20 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5\" id=\"ref-for-big5③\">Big5</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder②⑥\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①①\">handler</a>, given <var>unused</var> and <var>code point</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#big5\" id=\"ref-for-big5③\">Big5</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder②⑥\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①①\">handler</a>, given <var>unused</var> and <var>codePoint</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>code point</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream④①\">end-of-queue</a>, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished①②\">finished</a>. </p>"
+          "html": "<p>If <var>codePoint</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream④①\">end-of-queue</a>, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished①②\">finished</a>. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point④\">ASCII code point</a>, return\n a byte whose value is <var>code point</var>. </p>"
+          "html": "<p>If <var>codePoint</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point④\">ASCII code point</a>, then return a byte whose value is <var>codePoint</var>. </p>"
         },
         {
-          "html": "<p>Let <var>pointer</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-big5-pointer\" id=\"ref-for-index-big5-pointer\">index Big5 pointer</a> for <var>code point</var>. </p>"
+          "html": "<p>Let <var>pointer</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-big5-pointer\" id=\"ref-for-index-big5-pointer\">index Big5 pointer</a> for <var>codePoint</var>. </p>"
         },
         {
-          "html": "<p>If <var>pointer</var> is null, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error③①\">error</a> with <var>code point</var>. </p>"
+          "html": "<p>If <var>pointer</var> is null, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error③①\">error</a> with <var>codePoint</var>. </p>"
         },
         {
           "html": "<p>Let <var>lead</var> be <var>pointer</var> / 157 + 0x81. </p>"
@@ -1393,10 +1402,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream④②\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead\">EUC-JP lead</a> is not 0x00, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead①\">EUC-JP lead</a> to 0x00, and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error③②\">error</a>. </p>"
+          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream④②\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead\">EUC-JP lead</a> is not 0x00, then set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead①\">EUC-JP lead</a> to 0x00 and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error③②\">error</a>. </p>"
         },
         {
-          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream④③\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead②\">EUC-JP lead</a> is 0x00, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished①③\">finished</a>. </p>"
+          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream④③\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead②\">EUC-JP lead</a> is 0x00, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished①③\">finished</a>. </p>"
         },
         {
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead③\">EUC-JP lead</a> is 0x8E and <var>byte</var> is\n in the range 0xA1 to 0xDF, inclusive, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead④\">EUC-JP lead</a> to 0x00 and return\n a code point whose value is 0xFF61 − 0xA1 + <var>byte</var>. </p>"
@@ -1405,23 +1414,29 @@
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead⑤\">EUC-JP lead</a> is 0x8F and <var>byte</var> is in the range\n 0xA1 to 0xFE, inclusive, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-jis0212-flag\" id=\"ref-for-euc-jp-jis0212-flag\">EUC-JP jis0212</a> to true, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead⑥\">EUC-JP lead</a> to <var>byte</var>, and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue①⓪\">continue</a>. </p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead⑦\">EUC-JP lead</a> is not 0x00, let <var>lead</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead⑧\">EUC-JP lead</a>, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead⑨\">EUC-JP lead</a> to 0x00, and then:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead⑦\">EUC-JP lead</a> is not 0x00:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>code point</var> be null. </p>"
+              "html": "<p>Let <var>lead</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead⑧\">EUC-JP lead</a>. </p>"
             },
             {
-              "html": "<p>If <var>lead</var> and <var>byte</var> are both in the range 0xA1 to 0xFE, inclusive, then\n   set <var>code point</var> to the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-code-point\" id=\"ref-for-index-code-point③\">index code point</a> for\n   (<var>lead</var> − 0xA1) × 94 + <var>byte</var> − 0xA1\n   in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-jis0208\" id=\"ref-for-index-jis0208③\">index jis0208</a> if <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-jis0212-flag\" id=\"ref-for-euc-jp-jis0212-flag①\">EUC-JP jis0212</a> is false and in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-jis0212\" id=\"ref-for-index-jis0212\">index jis0212</a> otherwise. </p>"
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead⑨\">EUC-JP lead</a> to 0x00. </p>"
+            },
+            {
+              "html": "<p>Let <var>codePoint</var> be null. </p>"
+            },
+            {
+              "html": "<p>If <var>lead</var> and <var>byte</var> are both in the range 0xA1 to 0xFE, inclusive, then\n   set <var>codePoint</var> to the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-code-point\" id=\"ref-for-index-code-point③\">index code point</a> for\n   (<var>lead</var> − 0xA1) × 94 + <var>byte</var> − 0xA1\n   in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-jis0208\" id=\"ref-for-index-jis0208③\">index jis0208</a> if <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-jis0212-flag\" id=\"ref-for-euc-jp-jis0212-flag①\">EUC-JP jis0212</a> is false and in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-jis0212\" id=\"ref-for-index-jis0212\">index jis0212</a> otherwise. </p>"
             },
             {
               "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-jis0212-flag\" id=\"ref-for-euc-jp-jis0212-flag②\">EUC-JP jis0212</a> to false. </p>"
             },
             {
-              "html": "<p>If <var>code point</var> is non-null, return a code point whose value is <var>code point</var>. </p>"
+              "html": "<p>If <var>codePoint</var> is non-null, then return a code point whose value is <var>codePoint</var>. </p>"
             },
             {
-              "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte⑥\">ASCII byte</a>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend⑧\">restore</a> <var>byte</var> to <var>ioQueue</var>. </p>"
+              "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte⑥\">ASCII byte</a>, then <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend⑧\">restore</a> <var>byte</var> to <var>ioQueue</var>. </p>"
             },
             {
               "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error③③\">error</a>. </p>"
@@ -1429,10 +1444,10 @@
           ]
         },
         {
-          "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte⑦\">ASCII byte</a>, return\n a code point whose value is <var>byte</var>. </p>"
+          "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte⑦\">ASCII byte</a>, then return a code point whose value is <var>byte</var>. </p>"
         },
         {
-          "html": "<p>If <var>byte</var> is 0x8E, 0x8F, or in the range 0xA1 to\n 0xFE, inclusive, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead①⓪\">EUC-JP lead</a> to <var>byte</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue①①\">continue</a>. </p>"
+          "html": "<p>If <var>byte</var> is 0x8E, 0x8F, or in the range 0xA1 to 0xFE, inclusive, then set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp-lead\" id=\"ref-for-euc-jp-lead①⓪\">EUC-JP lead</a> to <var>byte</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue①①\">continue</a>. </p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error③④\">error</a>. </p>"
@@ -1440,32 +1455,32 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp\" id=\"ref-for-euc-jp③\">EUC-JP</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder②⑦\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①③\">handler</a>, given <var>unused</var> and <var>code point</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-jp\" id=\"ref-for-euc-jp③\">EUC-JP</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder②⑦\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①③\">handler</a>, given <var>unused</var> and <var>codePoint</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>code point</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream④④\">end-of-queue</a>, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished①④\">finished</a>. </p>"
+          "html": "<p>If <var>codePoint</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream④④\">end-of-queue</a>, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished①④\">finished</a>. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point⑤\">ASCII code point</a>, return\n a byte whose value is <var>code point</var>. </p>"
+          "html": "<p>If <var>codePoint</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point⑤\">ASCII code point</a>, then return a byte whose value is <var>codePoint</var>. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is U+00A5, return byte 0x5C. </p>"
+          "html": "<p>If <var>codePoint</var> is U+00A5 (¥), then return byte 0x5C. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is U+203E, return byte 0x7E. </p>"
+          "html": "<p>If <var>codePoint</var> is U+203E (‾), then return byte 0x7E. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is in the range U+FF61 to U+FF9F, inclusive, return\n two bytes whose values are 0x8E and <var>code point</var> − 0xFF61 + 0xA1. </p>"
+          "html": "<p>If <var>codePoint</var> is in the range U+FF61 to U+FF9F, inclusive, then return two bytes\n whose values are 0x8E and <var>codePoint</var> − 0xFF61 + 0xA1. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is U+2212, set it to U+FF0D. </p>"
+          "html": "<p>If <var>codePoint</var> is U+2212 (−), then set it to U+FF0D (－). </p>"
         },
         {
-          "html": "<p>Let <var>pointer</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-pointer\" id=\"ref-for-index-pointer④\">index pointer</a> for <var>code point</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-jis0208\" id=\"ref-for-index-jis0208④\">index jis0208</a>. </p>"
+          "html": "<p>Let <var>pointer</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-pointer\" id=\"ref-for-index-pointer④\">index pointer</a> for <var>codePoint</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-jis0208\" id=\"ref-for-index-jis0208④\">index jis0208</a>. </p>"
         },
         {
-          "html": "<p>If <var>pointer</var> is null, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error③⑤\">error</a> with <var>code point</var>. </p>"
+          "html": "<p>If <var>pointer</var> is null, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error③⑤\">error</a> with <var>codePoint</var>. </p>"
         },
         {
           "html": "<p>Let <var>lead</var> be <var>pointer</var> / 94 + 0xA1. </p>"
@@ -1527,11 +1542,11 @@
                     },
                     {
                       "case": "0x5C",
-                      "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-output-flag\" id=\"ref-for-iso-2022-jp-output-flag②\">ISO-2022-JP output</a> to false and return code point U+00A5. </p>"
+                      "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-output-flag\" id=\"ref-for-iso-2022-jp-output-flag②\">ISO-2022-JP output</a> to false and return code point U+00A5 (¥). </p>"
                     },
                     {
                       "case": "0x7E",
-                      "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-output-flag\" id=\"ref-for-iso-2022-jp-output-flag③\">ISO-2022-JP output</a> to false and return code point U+203E. </p>"
+                      "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-output-flag\" id=\"ref-for-iso-2022-jp-output-flag③\">ISO-2022-JP output</a> to false and return code point U+203E (‾). </p>"
                     },
                     {
                       "case": "0x00 to 0x7F, excluding 0x0E, 0x0F, 0x1B, 0x5C, and 0x7E",
@@ -1629,13 +1644,13 @@
                           "html": "<p>Let <var>pointer</var> be\n     (<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-lead\" id=\"ref-for-iso-2022-jp-lead①\">ISO-2022-JP lead</a> − 0x21) × 94 + <var>byte</var> − 0x21. </p>"
                         },
                         {
-                          "html": "<p>Let <var>code point</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-code-point\" id=\"ref-for-index-code-point④\">index code point</a> for <var>pointer</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-jis0208\" id=\"ref-for-index-jis0208⑥\">index jis0208</a>. </p>"
+                          "html": "<p>Let <var>codePoint</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-code-point\" id=\"ref-for-index-code-point④\">index code point</a> for <var>pointer</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-jis0208\" id=\"ref-for-index-jis0208⑥\">index jis0208</a>. </p>"
                         },
                         {
-                          "html": "<p>If <var>code point</var> is null, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error④①\">error</a>. </p>"
+                          "html": "<p>If <var>codePoint</var> is null, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error④①\">error</a>. </p>"
                         },
                         {
-                          "html": "<p>Return a code point whose value is <var>code point</var>. </p>"
+                          "html": "<p>Return a code point whose value is <var>codePoint</var>. </p>"
                         }
                       ]
                     },
@@ -1691,7 +1706,7 @@
                   "html": "<p>If <var>lead</var> is 0x24 and <var>byte</var> is either\n   0x40 or 0x42, set <var>state</var> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-decoder-lead-byte\" id=\"ref-for-iso-2022-jp-decoder-lead-byte③\">lead byte</a>. </p>"
                 },
                 {
-                  "html": "If <var>state</var> is non-null, then:",
+                  "html": "If <var>state</var> is non-null:",
                   "rationale": "set",
                   "steps": [
                     {
@@ -1721,65 +1736,65 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp\" id=\"ref-for-iso-2022-jp⑤\">ISO-2022-JP</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder③⓪\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①⑤\">handler</a>, given <var>ioQueue</var> and <var>code point</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp\" id=\"ref-for-iso-2022-jp⑤\">ISO-2022-JP</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder③⓪\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①⑤\">handler</a>, given <var>ioQueue</var> and <var>codePoint</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>code point</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑤②\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state\">ISO-2022-JP encoder state</a> is not <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-ascii\" id=\"ref-for-iso-2022-jp-encoder-ascii①\">ASCII</a>, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state①\">ISO-2022-JP encoder state</a> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-ascii\" id=\"ref-for-iso-2022-jp-encoder-ascii②\">ASCII</a>, and return three bytes\n 0x1B 0x28 0x42. </p>"
+          "html": "<p>If <var>codePoint</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑤②\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state\">ISO-2022-JP encoder state</a> is not <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-ascii\" id=\"ref-for-iso-2022-jp-encoder-ascii①\">ASCII</a>, then set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state①\">ISO-2022-JP encoder state</a> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-ascii\" id=\"ref-for-iso-2022-jp-encoder-ascii②\">ASCII</a> and return three bytes 0x1B 0x28 0x42. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑤③\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state②\">ISO-2022-JP encoder state</a> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-ascii\" id=\"ref-for-iso-2022-jp-encoder-ascii③\">ASCII</a>, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished①⑨\">finished</a>. </p>"
+          "html": "<p>If <var>codePoint</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑤③\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state②\">ISO-2022-JP encoder state</a> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-ascii\" id=\"ref-for-iso-2022-jp-encoder-ascii③\">ASCII</a>, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished①⑨\">finished</a>. </p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state③\">ISO-2022-JP encoder state</a> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-ascii\" id=\"ref-for-iso-2022-jp-encoder-ascii④\">ASCII</a> or <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-roman\" id=\"ref-for-iso-2022-jp-encoder-roman\">Roman</a>, and <var>code point</var> is U+000E, U+000F,\n  or U+001B, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error④⑧\">error</a> with U+FFFD. </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state③\">ISO-2022-JP encoder state</a> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-ascii\" id=\"ref-for-iso-2022-jp-encoder-ascii④\">ASCII</a> or <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-roman\" id=\"ref-for-iso-2022-jp-encoder-roman\">Roman</a>, and <var>codePoint</var> is U+000E, U+000F, or\n  U+001B, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error④⑧\">error</a> with U+FFFD (�). </p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state④\">ISO-2022-JP encoder state</a> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-ascii\" id=\"ref-for-iso-2022-jp-encoder-ascii⑤\">ASCII</a> and <var>code point</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point⑥\">ASCII code point</a>, return a byte whose value is <var>code point</var>. </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state④\">ISO-2022-JP encoder state</a> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-ascii\" id=\"ref-for-iso-2022-jp-encoder-ascii⑤\">ASCII</a> and <var>codePoint</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point⑥\">ASCII code point</a>, then return a byte whose value is <var>codePoint</var>. </p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state⑤\">ISO-2022-JP encoder state</a> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-roman\" id=\"ref-for-iso-2022-jp-encoder-roman①\">Roman</a> and <var>code point</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point⑦\">ASCII code point</a>, excluding U+005C and U+007E, or is U+00A5 or\n  U+203E, then:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state⑤\">ISO-2022-JP encoder state</a> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-roman\" id=\"ref-for-iso-2022-jp-encoder-roman①\">Roman</a> and <var>codePoint</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point⑦\">ASCII code point</a>, excluding U+005C (\\) and U+007E (~), or is\n  U+00A5 (¥) or U+203E (‾):",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>code point</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point⑧\">ASCII code point</a>, return a byte\n   whose value is <var>code point</var>. </p>"
+              "html": "<p>If <var>codePoint</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point⑧\">ASCII code point</a>, then return a byte whose value is <var>codePoint</var>. </p>"
             },
             {
-              "html": "<p>If <var>code point</var> is U+00A5, return byte 0x5C. </p>"
+              "html": "<p>If <var>codePoint</var> is U+00A5 (¥), then return byte 0x5C. </p>"
             },
             {
-              "html": "<p>If <var>code point</var> is U+203E, return byte 0x7E. </p>"
+              "html": "<p>If <var>codePoint</var> is U+203E (‾), then return byte 0x7E. </p>"
             }
           ]
         },
         {
-          "html": "<p>If <var>code point</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point⑨\">ASCII code point</a>, and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state⑥\">ISO-2022-JP encoder state</a> is not <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-ascii\" id=\"ref-for-iso-2022-jp-encoder-ascii⑥\">ASCII</a>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend①②\">restore</a> <var>code point</var> to <var>ioQueue</var>, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state⑦\">ISO-2022-JP encoder state</a> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-ascii\" id=\"ref-for-iso-2022-jp-encoder-ascii⑦\">ASCII</a>, and return three bytes\n 0x1B 0x28 0x42. </p>"
+          "html": "<p>If <var>codePoint</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point⑨\">ASCII code point</a>, and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state⑥\">ISO-2022-JP encoder state</a> is not <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-ascii\" id=\"ref-for-iso-2022-jp-encoder-ascii⑥\">ASCII</a>, then <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend①②\">restore</a> <var>codePoint</var> to <var>ioQueue</var>, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state⑦\">ISO-2022-JP encoder state</a> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-ascii\" id=\"ref-for-iso-2022-jp-encoder-ascii⑦\">ASCII</a>, and return three bytes 0x1B 0x28 0x42. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is either U+00A5 or U+203E, and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state⑧\">ISO-2022-JP encoder state</a> is not <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-roman\" id=\"ref-for-iso-2022-jp-encoder-roman②\">Roman</a>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend①③\">restore</a> <var>code point</var> to <var>ioQueue</var>, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state⑨\">ISO-2022-JP encoder state</a> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-roman\" id=\"ref-for-iso-2022-jp-encoder-roman③\">Roman</a>, and return three bytes\n 0x1B 0x28 0x4A. </p>"
+          "html": "<p>If <var>codePoint</var> is either U+00A5 (¥) or U+203E (‾), and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state⑧\">ISO-2022-JP encoder state</a> is not <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-roman\" id=\"ref-for-iso-2022-jp-encoder-roman②\">Roman</a>, then <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend①③\">restore</a> <var>codePoint</var> to <var>ioQueue</var>, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state⑨\">ISO-2022-JP encoder state</a> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-roman\" id=\"ref-for-iso-2022-jp-encoder-roman③\">Roman</a>, and return three bytes 0x1B 0x28 0x4A. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is U+2212, set it to U+FF0D. </p>"
+          "html": "<p>If <var>codePoint</var> is U+2212 (−), then set it to U+FF0D (－). </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is in the range U+FF61 to U+FF9F, inclusive, set it to the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-code-point\" id=\"ref-for-index-code-point⑤\">index code point</a> for <var>code point</var> − 0xFF61 in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-iso-2022-jp-katakana\" id=\"ref-for-index-iso-2022-jp-katakana②\">index ISO-2022-JP katakana</a>. </p>"
+          "html": "<p>If <var>codePoint</var> is in the range U+FF61 to U+FF9F, inclusive, then set it to the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-code-point\" id=\"ref-for-index-code-point⑤\">index code point</a> for <var>codePoint</var> − 0xFF61 in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-iso-2022-jp-katakana\" id=\"ref-for-index-iso-2022-jp-katakana②\">index ISO-2022-JP katakana</a>. </p>"
         },
         {
-          "html": "<p>Let <var>pointer</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-pointer\" id=\"ref-for-index-pointer⑥\">index pointer</a> for <var>code point</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-jis0208\" id=\"ref-for-index-jis0208⑦\">index jis0208</a>. </p>"
+          "html": "<p>Let <var>pointer</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-pointer\" id=\"ref-for-index-pointer⑥\">index pointer</a> for <var>codePoint</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-jis0208\" id=\"ref-for-index-jis0208⑦\">index jis0208</a>. </p>"
         },
         {
-          "html": "If <var>pointer</var> is null, then:",
+          "html": "If <var>pointer</var> is null:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state①⓪\">ISO-2022-JP encoder state</a> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-jis0208\" id=\"ref-for-iso-2022-jp-encoder-jis0208\">jis0208</a>,\n   then <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend①④\">restore</a> <var>code point</var> to <var>ioQueue</var>, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state①①\">ISO-2022-JP encoder state</a> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-ascii\" id=\"ref-for-iso-2022-jp-encoder-ascii⑧\">ASCII</a>, and return three\n   bytes 0x1B 0x28 0x42. </p>"
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state①⓪\">ISO-2022-JP encoder state</a> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-jis0208\" id=\"ref-for-iso-2022-jp-encoder-jis0208\">jis0208</a>,\n   then <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend①④\">restore</a> <var>codePoint</var> to <var>ioQueue</var>, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state①①\">ISO-2022-JP encoder state</a> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-ascii\" id=\"ref-for-iso-2022-jp-encoder-ascii⑧\">ASCII</a>, and return three\n   bytes 0x1B 0x28 0x42. </p>"
             },
             {
-              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error④⑨\">error</a> with <var>code point</var>. </p>"
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error④⑨\">error</a> with <var>codePoint</var>. </p>"
             }
           ]
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state①②\">ISO-2022-JP encoder state</a> is not <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-jis0208\" id=\"ref-for-iso-2022-jp-encoder-jis0208①\">jis0208</a>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend①⑤\">restore</a> <var>code point</var> to <var>ioQueue</var>, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state①③\">ISO-2022-JP encoder state</a> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-jis0208\" id=\"ref-for-iso-2022-jp-encoder-jis0208②\">jis0208</a>, and return three bytes\n 0x1B 0x24 0x42. </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state①②\">ISO-2022-JP encoder state</a> is not <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-jis0208\" id=\"ref-for-iso-2022-jp-encoder-jis0208①\">jis0208</a>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend①⑤\">restore</a> <var>codePoint</var> to <var>ioQueue</var>, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state\" id=\"ref-for-iso-2022-jp-encoder-state①③\">ISO-2022-JP encoder state</a> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-jis0208\" id=\"ref-for-iso-2022-jp-encoder-jis0208②\">jis0208</a>, and return three bytes\n 0x1B 0x24 0x42. </p>"
         },
         {
           "html": "<p>Let <var>lead</var> be <var>pointer</var> / 94 + 0x21. </p>"
@@ -1797,35 +1812,44 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑤④\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis-lead\" id=\"ref-for-shift_jis-lead\">Shift_JIS lead</a> is not 0x00, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis-lead\" id=\"ref-for-shift_jis-lead①\">Shift_JIS lead</a> to 0x00 and\n return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑤⓪\">error</a>. </p>"
+          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑤④\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis-lead\" id=\"ref-for-shift_jis-lead\">Shift_JIS lead</a> is not 0x00, then set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis-lead\" id=\"ref-for-shift_jis-lead①\">Shift_JIS lead</a> to 0x00 and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑤⓪\">error</a>. </p>"
         },
         {
-          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑤⑤\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis-lead\" id=\"ref-for-shift_jis-lead②\">Shift_JIS lead</a> is 0x00, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②⓪\">finished</a>. </p>"
+          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑤⑤\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis-lead\" id=\"ref-for-shift_jis-lead②\">Shift_JIS lead</a> is 0x00, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②⓪\">finished</a>. </p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis-lead\" id=\"ref-for-shift_jis-lead③\">Shift_JIS lead</a> is not 0x00, let <var>lead</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis-lead\" id=\"ref-for-shift_jis-lead④\">Shift_JIS lead</a>, let <var>pointer</var> be null, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis-lead\" id=\"ref-for-shift_jis-lead⑤\">Shift_JIS lead</a> to 0x00, and then:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis-lead\" id=\"ref-for-shift_jis-lead③\">Shift_JIS lead</a> is not 0x00:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>offset</var> be 0x40 if <var>byte</var> is less than 0x7F, otherwise 0x41. </p>"
+              "html": "<p>Let <var>lead</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis-lead\" id=\"ref-for-shift_jis-lead④\">Shift_JIS lead</a>. </p>"
             },
             {
-              "html": "<p>Let <var>lead offset</var> be 0x81 if <var>lead</var> is less than 0xA0, otherwise 0xC1. </p>"
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis-lead\" id=\"ref-for-shift_jis-lead⑤\">Shift_JIS lead</a> to 0x00. </p>"
             },
             {
-              "html": "<p>If <var>byte</var> is in the range 0x40 to 0x7E, inclusive, or\n   0x80 to 0xFC, inclusive, set <var>pointer</var> to\n   (<var>lead</var> − <var>lead offset</var>) × 188 + <var>byte</var> − <var>offset</var>. </p>"
+              "html": "<p>Let <var>pointer</var> be null. </p>"
             },
             {
-              "html": "<p>If <var>pointer</var> is in the range 8836 to 10715, inclusive, return a code point whose\n    value is 0xE000 − 8836 + <var>pointer</var>. </p>"
+              "html": "<p>Let <var>offset</var> be 0x40 if <var>byte</var> is less than 0x7F; otherwise 0x41. </p>"
             },
             {
-              "html": "<p>Let <var>code point</var> be null if <var>pointer</var> is null, otherwise the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-code-point\" id=\"ref-for-index-code-point⑥\">index code point</a> for <var>pointer</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-jis0208\" id=\"ref-for-index-jis0208⑨\">index jis0208</a>. </p>"
+              "html": "<p>Let <var>lead offset</var> be 0x81 if <var>lead</var> is less than 0xA0; otherwise 0xC1. </p>"
             },
             {
-              "html": "<p>If <var>code point</var> is non-null, return a code point whose value is <var>code point</var>. </p>"
+              "html": "<p>If <var>byte</var> is in the range 0x40 to 0x7E, inclusive, or 0x80 to 0xFC, inclusive,\n   then set <var>pointer</var> to\n   (<var>lead</var> − <var>lead offset</var>) × 188 + <var>byte</var> − <var>offset</var>. </p>"
             },
             {
-              "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte⑧\">ASCII byte</a>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend①⑥\">restore</a> <var>byte</var> to <var>ioQueue</var>. </p>"
+              "html": "<p>If <var>pointer</var> is in the range 8836 to 10715, inclusive, then return a code point\n    whose value is 0xE000 − 8836 + <var>pointer</var>. </p>"
+            },
+            {
+              "html": "<p>Let <var>codePoint</var> be null if <var>pointer</var> is null; otherwise the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-code-point\" id=\"ref-for-index-code-point⑥\">index code point</a> for <var>pointer</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-jis0208\" id=\"ref-for-index-jis0208⑨\">index jis0208</a>. </p>"
+            },
+            {
+              "html": "<p>If <var>codePoint</var> is non-null, then return a code point whose value is <var>codePoint</var>. </p>"
+            },
+            {
+              "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte⑧\">ASCII byte</a>, then <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend①⑥\">restore</a> <var>byte</var> to <var>ioQueue</var>. </p>"
             },
             {
               "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑤①\">error</a>. </p>"
@@ -1833,13 +1857,13 @@
           ]
         },
         {
-          "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte⑨\">ASCII byte</a> or 0x80, return a code point\n whose value is <var>byte</var>. </p>"
+          "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte⑨\">ASCII byte</a> or 0x80, then return a code point whose value is <var>byte</var>. </p>"
         },
         {
-          "html": "<p>If <var>byte</var> is in the range 0xA1 to 0xDF, inclusive, return\n a code point whose value is 0xFF61 − 0xA1 + <var>byte</var>. </p>"
+          "html": "<p>If <var>byte</var> is in the range 0xA1 to 0xDF, inclusive, then return a code point whose\n value is 0xFF61 − 0xA1 + <var>byte</var>. </p>"
         },
         {
-          "html": "<p>If <var>byte</var> is in the range 0x81 to 0x9F, inclusive, or 0xE0 to 0xFC,\n inclusive, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis-lead\" id=\"ref-for-shift_jis-lead⑥\">Shift_JIS lead</a> to <var>byte</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue①⑨\">continue</a>. </p>"
+          "html": "<p>If <var>byte</var> is in the range 0x81 to 0x9F, inclusive, or 0xE0 to 0xFC, inclusive, then\n set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis-lead\" id=\"ref-for-shift_jis-lead⑥\">Shift_JIS lead</a> to <var>byte</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue①⑨\">continue</a>. </p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑤②\">error</a>. </p>"
@@ -1847,44 +1871,44 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis\" id=\"ref-for-shift_jis⑤\">Shift_JIS</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder③①\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①⑦\">handler</a>, given <var>unused</var> and <var>code point</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#shift_jis\" id=\"ref-for-shift_jis⑤\">Shift_JIS</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder③①\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①⑦\">handler</a>, given <var>unused</var> and <var>codePoint</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>code point</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑤⑥\">end-of-queue</a>, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②①\">finished</a>. </p>"
+          "html": "<p>If <var>codePoint</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑤⑥\">end-of-queue</a>, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②①\">finished</a>. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point①⓪\">ASCII code point</a> or U+0080, return\n a byte whose value is <var>code point</var>. </p>"
+          "html": "<p>If <var>codePoint</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point①⓪\">ASCII code point</a> or U+0080, then return a byte whose\n value is <var>codePoint</var>. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is U+00A5, return byte 0x5C. </p>"
+          "html": "<p>If <var>codePoint</var> is U+00A5 (¥), then return byte 0x5C. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is U+203E, return byte 0x7E. </p>"
+          "html": "<p>If <var>codePoint</var> is U+203E (‾), then return byte 0x7E. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is in the range U+FF61 to U+FF9F, inclusive, return\n a byte whose value is <var>code point</var> − 0xFF61 + 0xA1. </p>"
+          "html": "<p>If <var>codePoint</var> is in the range U+FF61 to U+FF9F, inclusive, then return a byte\n whose value is <var>codePoint</var> − 0xFF61 + 0xA1. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is U+2212, set it to U+FF0D. </p>"
+          "html": "<p>If <var>codePoint</var> is U+2212 (−), then set it to U+FF0D (－). </p>"
         },
         {
-          "html": "<p>Let <var>pointer</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-shift_jis-pointer\" id=\"ref-for-index-shift_jis-pointer\">index Shift_JIS pointer</a> for <var>code point</var>. </p>"
+          "html": "<p>Let <var>pointer</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-shift_jis-pointer\" id=\"ref-for-index-shift_jis-pointer\">index Shift_JIS pointer</a> for <var>codePoint</var>. </p>"
         },
         {
-          "html": "<p>If <var>pointer</var> is null, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑤③\">error</a> with <var>code point</var>. </p>"
+          "html": "<p>If <var>pointer</var> is null, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑤③\">error</a> with <var>codePoint</var>. </p>"
         },
         {
           "html": "<p>Let <var>lead</var> be <var>pointer</var> / 188. </p>"
         },
         {
-          "html": "<p>Let <var>lead offset</var> be 0x81 if <var>lead</var> is less than 0x1F, otherwise 0xC1. </p>"
+          "html": "<p>Let <var>lead offset</var> be 0x81 if <var>lead</var> is less than 0x1F; otherwise 0xC1. </p>"
         },
         {
           "html": "<p>Let <var>trail</var> be <var>pointer</var> % 188. </p>"
         },
         {
-          "html": "<p>Let <var>offset</var> be 0x40 if <var>trail</var> is less than 0x3F, otherwise 0x41. </p>"
+          "html": "<p>Let <var>offset</var> be 0x40 if <var>trail</var> is less than 0x3F; otherwise 0x41. </p>"
         },
         {
           "html": "<p>Return two bytes whose values are <var>lead</var> + <var>lead offset</var> and <var>trail</var> + <var>offset</var>. </p>"
@@ -1896,26 +1920,35 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑤⑦\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr-lead\" id=\"ref-for-euc-kr-lead\">EUC-KR lead</a> is not 0x00, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr-lead\" id=\"ref-for-euc-kr-lead①\">EUC-KR lead</a> to 0x00\n and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑤④\">error</a>. </p>"
+          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑤⑦\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr-lead\" id=\"ref-for-euc-kr-lead\">EUC-KR lead</a> is not 0x00, then set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr-lead\" id=\"ref-for-euc-kr-lead①\">EUC-KR lead</a> to 0x00 and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑤④\">error</a>. </p>"
         },
         {
-          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑤⑧\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr-lead\" id=\"ref-for-euc-kr-lead②\">EUC-KR lead</a> is 0x00, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②②\">finished</a>. </p>"
+          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑤⑧\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr-lead\" id=\"ref-for-euc-kr-lead②\">EUC-KR lead</a> is 0x00, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②②\">finished</a>. </p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr-lead\" id=\"ref-for-euc-kr-lead③\">EUC-KR lead</a> is not 0x00, let <var>lead</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr-lead\" id=\"ref-for-euc-kr-lead④\">EUC-KR lead</a>, let <var>pointer</var> be null, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr-lead\" id=\"ref-for-euc-kr-lead⑤\">EUC-KR lead</a> to 0x00, and then:",
-          "rationale": "if",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr-lead\" id=\"ref-for-euc-kr-lead③\">EUC-KR lead</a> is not 0x00:",
+          "rationale": "let",
           "steps": [
+            {
+              "html": "<p>Let <var>lead</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr-lead\" id=\"ref-for-euc-kr-lead④\">EUC-KR lead</a>. </p>"
+            },
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr-lead\" id=\"ref-for-euc-kr-lead⑤\">EUC-KR lead</a> to 0x00. </p>"
+            },
+            {
+              "html": "<p>Let <var>pointer</var> be null. </p>"
+            },
             {
               "html": "<p>If <var>byte</var> is in the range  0x41 to 0xFE, inclusive, set <var>pointer</var> to\n   (<var>lead</var> − 0x81) × 190 + (<var>byte</var> − 0x41). </p>"
             },
             {
-              "html": "<p>Let <var>code point</var> be null if <var>pointer</var> is null, otherwise the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-code-point\" id=\"ref-for-index-code-point⑦\">index code point</a> for <var>pointer</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-euc-kr\" id=\"ref-for-index-euc-kr\">index EUC-KR</a>. </p>"
+              "html": "<p>Let <var>codePoint</var> be null if <var>pointer</var> is null; otherwise the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-code-point\" id=\"ref-for-index-code-point⑦\">index code point</a> for <var>pointer</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-euc-kr\" id=\"ref-for-index-euc-kr\">index EUC-KR</a>. </p>"
             },
             {
-              "html": "<p>If <var>code point</var> is non-null, return a code point whose value is <var>code point</var>. </p>"
+              "html": "<p>If <var>codePoint</var> is non-null, then return a code point whose value is <var>codePoint</var>. </p>"
             },
             {
-              "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte①⓪\">ASCII byte</a>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend①⑦\">restore</a> <var>byte</var> to <var>ioQueue</var>. </p>"
+              "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte①⓪\">ASCII byte</a>, then <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend①⑦\">restore</a> <var>byte</var> to <var>ioQueue</var>. </p>"
             },
             {
               "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑤⑤\">error</a>. </p>"
@@ -1923,10 +1956,10 @@
           ]
         },
         {
-          "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte①①\">ASCII byte</a>, return\n a code point whose value is <var>byte</var>. </p>"
+          "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte①①\">ASCII byte</a>, then return a code point whose value is <var>byte</var>. </p>"
         },
         {
-          "html": "<p>If <var>byte</var> is in the range 0x81 to 0xFE, inclusive, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr-lead\" id=\"ref-for-euc-kr-lead⑥\">EUC-KR lead</a> to <var>byte</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue②⓪\">continue</a>. </p>"
+          "html": "<p>If <var>byte</var> is in the range 0x81 to 0xFE, inclusive, then set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr-lead\" id=\"ref-for-euc-kr-lead⑥\">EUC-KR lead</a> to <var>byte</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue②⓪\">continue</a>. </p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑤⑥\">error</a>. </p>"
@@ -1934,20 +1967,20 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr\" id=\"ref-for-euc-kr③\">EUC-KR</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder③②\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①⑨\">handler</a>, given <var>unused</var> and <var>code point</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#euc-kr\" id=\"ref-for-euc-kr③\">EUC-KR</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder③②\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler①⑨\">handler</a>, given <var>unused</var> and <var>codePoint</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>code point</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑤⑨\">end-of-queue</a>, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②③\">finished</a>. </p>"
+          "html": "<p>If <var>codePoint</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑤⑨\">end-of-queue</a>, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②③\">finished</a>. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point①①\">ASCII code point</a>, return\n a byte whose value is <var>code point</var>. </p>"
+          "html": "<p>If <var>codePoint</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point①①\">ASCII code point</a>, then return a byte whose value is <var>codePoint</var>. </p>"
         },
         {
-          "html": "<p>Let <var>pointer</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-pointer\" id=\"ref-for-index-pointer⑧\">index pointer</a> for <var>code point</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-euc-kr\" id=\"ref-for-index-euc-kr①\">index EUC-KR</a>. </p>"
+          "html": "<p>Let <var>pointer</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-pointer\" id=\"ref-for-index-pointer⑧\">index pointer</a> for <var>codePoint</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-euc-kr\" id=\"ref-for-index-euc-kr①\">index EUC-KR</a>. </p>"
         },
         {
-          "html": "<p>If <var>pointer</var> is null, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑤⑦\">error</a> with <var>code point</var>. </p>"
+          "html": "<p>If <var>pointer</var> is null, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑤⑦\">error</a> with <var>codePoint</var>. </p>"
         },
         {
           "html": "<p>Let <var>lead</var> be <var>pointer</var> / 190 + 0x81. </p>"
@@ -1965,10 +1998,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑥⓪\">end-of-queue</a>, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②④\">finished</a>. </p>"
+          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑥⓪\">end-of-queue</a>, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②④\">finished</a>. </p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#replacement-error-returned-flag\" id=\"ref-for-replacement-error-returned-flag\">replacement error returned</a> is false, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#replacement-error-returned-flag\" id=\"ref-for-replacement-error-returned-flag①\">replacement error returned</a> to true and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑤⑧\">error</a>. </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#replacement-error-returned-flag\" id=\"ref-for-replacement-error-returned-flag\">replacement error returned</a> is false, then set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#replacement-error-returned-flag\" id=\"ref-for-replacement-error-returned-flag①\">replacement error returned</a> to\n true and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑤⑧\">error</a>. </p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②⑤\">finished</a>. </p>"
@@ -1983,13 +2016,13 @@
           "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑥①\">end-of-queue</a> and either <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-byte\" id=\"ref-for-utf-16-lead-byte\">UTF-16 lead byte</a> or <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate\">UTF-16 leading surrogate</a> is non-null, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-byte\" id=\"ref-for-utf-16-lead-byte①\">UTF-16 lead byte</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate①\">UTF-16 leading surrogate</a> to null, and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑤⑨\">error</a>. </p>"
         },
         {
-          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑥②\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-byte\" id=\"ref-for-utf-16-lead-byte②\">UTF-16 lead byte</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate②\">UTF-16 leading surrogate</a> are null, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②⑥\">finished</a>. </p>"
+          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑥②\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-byte\" id=\"ref-for-utf-16-lead-byte②\">UTF-16 lead byte</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate②\">UTF-16 leading surrogate</a> are null, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②⑥\">finished</a>. </p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-byte\" id=\"ref-for-utf-16-lead-byte③\">UTF-16 lead byte</a> is null, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-byte\" id=\"ref-for-utf-16-lead-byte④\">UTF-16 lead byte</a> to <var>byte</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue②①\">continue</a>. </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-byte\" id=\"ref-for-utf-16-lead-byte③\">UTF-16 lead byte</a> is null, then set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-byte\" id=\"ref-for-utf-16-lead-byte④\">UTF-16 lead byte</a> to <var>byte</var> and\n return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue②①\">continue</a>. </p>"
         },
         {
-          "html": "Let <var>code unit</var> be the result of:",
+          "html": "Let <var>codeUnit</var> be the result of:",
           "rationale": ".switch",
           "steps": [
             {
@@ -2018,13 +2051,13 @@
               "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate⑤\">UTF-16 leading surrogate</a> to null. </p>"
             },
             {
-              "html": "<p>If <var>code unit</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#trailing-surrogate\" id=\"ref-for-trailing-surrogate③\">trailing surrogate</a>, then return a <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#scalar-value-from-surrogates\" id=\"ref-for-scalar-value-from-surrogates①\">scalar value from surrogates</a> given <var>leadingSurrogate</var> and <var>code unit</var>. </p>"
+              "html": "<p>If <var>codeUnit</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#trailing-surrogate\" id=\"ref-for-trailing-surrogate③\">trailing surrogate</a>, then return a <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#scalar-value-from-surrogates\" id=\"ref-for-scalar-value-from-surrogates①\">scalar value from surrogates</a> given <var>leadingSurrogate</var> and <var>codeUnit</var>. </p>"
             },
             {
-              "html": "<p>Let <var>byte1</var> be <var>code unit</var> &gt;&gt; 8. </p>"
+              "html": "<p>Let <var>byte1</var> be <var>codeUnit</var> &gt;&gt; 8. </p>"
             },
             {
-              "html": "<p>Let <var>byte2</var> be <var>code unit</var> &amp; 0x00FF. </p>"
+              "html": "<p>Let <var>byte2</var> be <var>codeUnit</var> &amp; 0x00FF. </p>"
             },
             {
               "html": "<p>Let <var>bytes</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a> of two bytes whose values are <var>byte1</var> and <var>byte2</var>, if <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16be-decoder-flag\" id=\"ref-for-utf-16be-decoder-flag②\">is UTF-16BE decoder</a> is true; otherwise <var>byte2</var> and <var>byte1</var>. </p>"
@@ -2035,13 +2068,13 @@
           ]
         },
         {
-          "html": "<p>If <var>code unit</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#leading-surrogate\" id=\"ref-for-leading-surrogate③\">leading surrogate</a>, then set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate⑥\">UTF-16 leading surrogate</a> to <var>code unit</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue②②\">continue</a>. </p>"
+          "html": "<p>If <var>codeUnit</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#leading-surrogate\" id=\"ref-for-leading-surrogate③\">leading surrogate</a>, then set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate⑥\">UTF-16 leading surrogate</a> to <var>codeUnit</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue②②\">continue</a>. </p>"
         },
         {
-          "html": "<p>If <var>code unit</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#trailing-surrogate\" id=\"ref-for-trailing-surrogate④\">trailing surrogate</a>, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑥①\">error</a>. </p>"
+          "html": "<p>If <var>codeUnit</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#trailing-surrogate\" id=\"ref-for-trailing-surrogate④\">trailing surrogate</a>, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑥①\">error</a>. </p>"
         },
         {
-          "html": "<p>Return code point <var>code unit</var>. </p>"
+          "html": "<p>Return code point <var>codeUnit</var>. </p>"
         }
       ]
     },
@@ -2050,10 +2083,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑥③\">end-of-queue</a>, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②⑦\">finished</a>. </p>"
+          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑥③\">end-of-queue</a>, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②⑦\">finished</a>. </p>"
         },
         {
-          "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte①②\">ASCII byte</a>, return\n a code point whose value is <var>byte</var>. </p>"
+          "html": "<p>If <var>byte</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte①②\">ASCII byte</a>, then return a code point whose value is <var>byte</var>. </p>"
         },
         {
           "html": "<p>Return a code point whose value is 0xF780 + <var>byte</var> − 0x80. </p>"
@@ -2061,20 +2094,20 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#x-user-defined\" id=\"ref-for-x-user-defined②\">x-user-defined</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder③③\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler②③\">handler</a>, given <var>unused</var> and <var>code point</var>, runs these steps:",
+      "html": "<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#x-user-defined\" id=\"ref-for-x-user-defined②\">x-user-defined</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoder\" id=\"ref-for-encoder③③\">encoder</a>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#handler\" id=\"ref-for-handler②③\">handler</a>, given <var>unused</var> and <var>codePoint</var>, runs these steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>code point</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑥④\">end-of-queue</a>, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②⑧\">finished</a>. </p>"
+          "html": "<p>If <var>codePoint</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑥④\">end-of-queue</a>, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②⑧\">finished</a>. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point①②\">ASCII code point</a>, return\n a byte whose value is <var>code point</var>. </p>"
+          "html": "<p>If <var>codePoint</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point①②\">ASCII code point</a>, then return a byte whose value is <var>codePoint</var>. </p>"
         },
         {
-          "html": "<p>If <var>code point</var> is in the range U+F780 to U+F7FF, inclusive, return\n a byte whose value is <var>code point</var> − 0xF780 + 0x80. </p>"
+          "html": "<p>If <var>codePoint</var> is in the range U+F780 to U+F7FF, inclusive, then return a byte\n whose value is <var>codePoint</var> − 0xF780 + 0x80. </p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑥②\">error</a> with <var>code point</var>. </p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑥②\">error</a> with <var>codePoint</var>. </p>"
         }
       ]
     }
