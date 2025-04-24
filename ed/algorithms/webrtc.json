@@ -2800,6 +2800,9 @@
       "rationale": ".algorithm",
       "steps": [
         {
+          "html": "<p>\n                      Let <var>receiver</var> be\n                      <var>transceiver</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpTransceiver\" data-xref-for=\"RTCRtpTransceiver\" data-lt=\"[[Receiver]]\" href=\"https://w3c.github.io/webrtc-pc/#dfn-receiver\" class=\"internalDFN\" id=\"ref-for-dfn-receiver-27\"><code>[[Receiver]]</code></a>.\n                    </p>"
+        },
+        {
           "html": "<p>\n                      If <var>transceiver</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpTransceiver\" data-xref-for=\"RTCRtpTransceiver\" data-lt=\"[[Stopping]]\" href=\"https://w3c.github.io/webrtc-pc/#dfn-stopping\" class=\"internalDFN\" id=\"ref-for-dfn-stopping-10\"><code>[[Stopping]]</code></a> is\n                      <code>false</code>, <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-pc/#dfn-stop-sending-and-receiving\" class=\"internalDFN\" id=\"ref-for-dfn-stop-sending-and-receiving-2\">stop sending and receiving</a> with\n                      <var>transceiver</var> and <var>disappear</var>.\n                    </p>"
         },
         {
@@ -2810,6 +2813,12 @@
         },
         {
           "html": "<p>\n                      Set <var>transceiver</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpTransceiver\" data-xref-for=\"RTCRtpTransceiver\" data-lt=\"[[CurrentDirection]]\" href=\"https://w3c.github.io/webrtc-pc/#dfn-currentdirection\" class=\"internalDFN\" id=\"ref-for-dfn-currentdirection-7\"><code>[[CurrentDirection]]</code></a>\n                      to <code>null</code>.\n                    </p>"
+        },
+        {
+          "html": "<p>\n                      Set <var>receiver</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpReceiver\" data-xref-for=\"RTCRtpReceiver\" data-lt=\"[[AssociatedRemoteMediaStreams]]\" href=\"https://w3c.github.io/webrtc-pc/#dfn-associatedremotemediastreams\" class=\"internalDFN\" id=\"ref-for-dfn-associatedremotemediastreams-6\"><code>[[AssociatedRemoteMediaStreams]]</code></a>\n                      to an empty list.\n                    </p>"
+        },
+        {
+          "html": "<p>\n                      Set <var>receiver</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpReceiver\" data-xref-for=\"RTCRtpReceiver\" data-lt=\"[[LastStableStateAssociatedRemoteMediaStreams]]\" href=\"https://w3c.github.io/webrtc-pc/#dfn-laststablestateassociatedremotemediastreams\" class=\"internalDFN\" id=\"ref-for-dfn-laststablestateassociatedremotemediastreams-3\"><code>[[LastStableStateAssociatedRemoteMediaStreams]]</code></a>\n                      to an empty list.\n                    </p>"
         }
       ]
     },
