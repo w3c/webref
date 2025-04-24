@@ -32,6 +32,7 @@
       "https://infra.spec.whatwg.org/": {},
       "https://opensource.org/licenses/BSD-3-Clause": {},
       "https://streams.spec.whatwg.org/": {},
+      "https://tc39.es/ecma262/multipage/": {},
       "https://url.spec.whatwg.org/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://www.apple.com/": {},
@@ -55,7 +56,8 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
-          "event-loop"
+          "event-loop",
+          "concept-relevant-realm"
         ]
       },
       "https://infra.spec.whatwg.org/": {
@@ -78,6 +80,7 @@
           "list-prepend",
           "string",
           "byte-sequence",
+          "assert",
           "queue",
           "leading-surrogate",
           "trailing-surrogate",
@@ -113,10 +116,16 @@
           "transformstream-enqueue"
         ]
       },
+      "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
+        "anchors": [
+          "realm"
+        ]
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
-          "idl-ArrayBuffer",
+          "arraybufferview-create",
           "idl-Uint8Array",
+          "idl-ArrayBuffer",
           "idl-Uint32Array",
           "idl-DOMString",
           "idl-boolean",
