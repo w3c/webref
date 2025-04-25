@@ -22,6 +22,21 @@
       ]
     },
     {
+      "html": "Conversion to the polar form is trivial:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "C = sqrt(a^2 + b^2)"
+        },
+        {
+          "html": "if (C &gt; epsilon) H = atan2(b, a) else H is missing"
+        },
+        {
+          "html": "L is the same"
+        }
+      ]
+    },
+    {
       "html": "Conversion to the rectangular form is trivial:",
       "rationale": "if",
       "steps": [
@@ -50,7 +65,7 @@
           "html": "Convert from linear RGB to CIE XYZ"
         },
         {
-          "html": "If needed, convert from a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#d65-whitepoint\" id=\"ref-for-d65-whitepoint①①\">D65</a> whitepoint\n\t\t\t(used by <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-4/#valdef-color-srgb\" id=\"ref-for-valdef-color-srgb⑥\">sRGB</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-4/#valdef-color-display-p3\" id=\"ref-for-valdef-color-display-p3⑥\">display-p3</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-4/#valdef-color-a98-rgb\" id=\"ref-for-valdef-color-a98-rgb③\">a98-rgb</a> and <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-4/#valdef-color-rec2020\" id=\"ref-for-valdef-color-rec2020④\">rec2020</a>)\n\t\t\tto the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#d50-whitepoint\" id=\"ref-for-d50-whitepoint④\">D50</a> whitepoint used in Lab,\n\t\t\twith the linear Bradford transform. <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-4/#valdef-color-prophoto-rgb\" id=\"ref-for-valdef-color-prophoto-rgb⑤\">prophoto-rgb</a> already has a <span id=\"ref-for-d50-whitepoint⑤\">D50</span> whitepoint."
+          "html": "If needed, convert from a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#d65\" id=\"ref-for-d65①①\">D65</a> whitepoint\n\t\t\t(used by <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-4/#valdef-color-srgb\" id=\"ref-for-valdef-color-srgb⑥\">sRGB</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-4/#valdef-color-display-p3\" id=\"ref-for-valdef-color-display-p3⑥\">display-p3</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-4/#valdef-color-a98-rgb\" id=\"ref-for-valdef-color-a98-rgb③\">a98-rgb</a> and <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-4/#valdef-color-rec2020\" id=\"ref-for-valdef-color-rec2020④\">rec2020</a>)\n\t\t\tto the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#d50\" id=\"ref-for-d50④\">D50</a> whitepoint used in Lab,\n\t\t\twith the linear Bradford transform. <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-4/#valdef-color-prophoto-rgb\" id=\"ref-for-valdef-color-prophoto-rgb⑤\">prophoto-rgb</a> already has a <span id=\"ref-for-d50⑤\">D50</span> whitepoint."
         },
         {
           "html": "Convert D50-adapted XYZ to Lab"
@@ -68,7 +83,7 @@
           "html": "Convert from linear RGB to CIE XYZ"
         },
         {
-          "html": "If needed, convert from a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#d50-whitepoint\" id=\"ref-for-d50-whitepoint⑥\">D50</a> whitepoint (used by <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-4/#valdef-color-prophoto-rgb\" id=\"ref-for-valdef-color-prophoto-rgb⑦\">prophoto-rgb</a>)\n\t\t\tto the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#d65-whitepoint\" id=\"ref-for-d65-whitepoint①②\">D65</a> whitepoint used in Oklab,\n\t\t\twith the linear Bradford transform."
+          "html": "If needed, convert from a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#d50\" id=\"ref-for-d50⑥\">D50</a> whitepoint (used by <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-4/#valdef-color-prophoto-rgb\" id=\"ref-for-valdef-color-prophoto-rgb⑦\">prophoto-rgb</a>)\n\t\t\tto the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#d65\" id=\"ref-for-d65①②\">D65</a> whitepoint used in Oklab,\n\t\t\twith the linear Bradford transform."
         },
         {
           "html": "Convert D65-adapted XYZ to Oklab"
@@ -83,7 +98,7 @@
           "html": "Convert Lab to (D50-adapted) XYZ"
         },
         {
-          "html": "If needed, convert from a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#d50-whitepoint\" id=\"ref-for-d50-whitepoint⑦\">D50</a> whitepoint (used by Lab)\n\t\t\tto the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#d65-whitepoint\" id=\"ref-for-d65-whitepoint①③\">D65</a> whitepoint used in sRGB and most other RGB spaces,\n\t\t\twith the linear Bradford transform. <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-4/#valdef-color-prophoto-rgb\" id=\"ref-for-valdef-color-prophoto-rgb⑧\">prophoto-rgb</a>' does not require this step."
+          "html": "If needed, convert from a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#d50\" id=\"ref-for-d50⑦\">D50</a> whitepoint (used by Lab)\n\t\t\tto the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#d65\" id=\"ref-for-d65①③\">D65</a> whitepoint used in sRGB and most other RGB spaces,\n\t\t\twith the linear Bradford transform. <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-4/#valdef-color-prophoto-rgb\" id=\"ref-for-valdef-color-prophoto-rgb⑧\">prophoto-rgb</a>' does not require this step."
         },
         {
           "html": "Convert from (D65-adapted) CIE XYZ to linear RGB"
@@ -101,7 +116,7 @@
           "html": "Convert Oklab to (D65-adapted) XYZ"
         },
         {
-          "html": "If needed, convert from a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#d65-whitepoint\" id=\"ref-for-d65-whitepoint①④\">D65</a> whitepoint (used by Oklab)\n\t\t\tto the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#d50-whitepoint\" id=\"ref-for-d50-whitepoint⑧\">D50</a> whitepoint used in <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-4/#valdef-color-prophoto-rgb\" id=\"ref-for-valdef-color-prophoto-rgb①⓪\">prophoto-rgb</a>,\n\t\t\twith the linear Bradford transform."
+          "html": "If needed, convert from a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#d65\" id=\"ref-for-d65①④\">D65</a> whitepoint (used by Oklab)\n\t\t\tto the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#d50\" id=\"ref-for-d50⑧\">D50</a> whitepoint used in <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-4/#valdef-color-prophoto-rgb\" id=\"ref-for-valdef-color-prophoto-rgb①⓪\">prophoto-rgb</a>,\n\t\t\twith the linear Bradford transform."
         },
         {
           "html": "Convert from (D65-adapted) CIE XYZ to linear RGB"
@@ -137,7 +152,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-polrect\"></a>If <var>src</var> is in a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color①\">cylindrical polar color</a> representation,\n\tfirst convert <var>col1</var> to the corresponding <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#rectangular-orthogonal-color\" id=\"ref-for-rectangular-orthogonal-color①\">rectangular orthogonal color</a> representation\n\tand let this be the new <var>col1</var>. Replace any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component⑦\">missing component</a> with zero."
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-polrect\"></a>If <var>src</var> is in a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color②\">cylindrical polar color</a> representation,\n\tfirst convert <var>col1</var> to the corresponding <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#rectangular-orthogonal-color\" id=\"ref-for-rectangular-orthogonal-color①\">rectangular orthogonal color</a> representation\n\tand let this be the new <var>col1</var>. Replace any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component⑦\">missing component</a> with zero."
         },
         {
           "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-tolinear\"></a>If <var>src</var> is not a linear-light representation,\n\tconvert it to linear light (undo gamma-encoding)\n\tand let this be the new <var>col1</var>."
@@ -149,7 +164,7 @@
           "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-CAT\"></a>If <var>dest-white</var> is not the same as <var>src-white</var>,\n\tchromatically adapt <var>xyz</var> to <var>dest-white</var> using a linear Bradford <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#chromatic-adaptation-transform\" id=\"ref-for-chromatic-adaptation-transform\">chromatic adaptation transform</a>,\n\tand let this be the new <var>xyz</var>."
         },
         {
-          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-destpolar\"></a>If <var>dest</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color②\">cylindrical polar color</a> representation,\n\tlet <var>dest-rect</var> be the corresponding <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#rectangular-orthogonal-color\" id=\"ref-for-rectangular-orthogonal-color②\">rectangular orthogonal color</a> representation.\n\tOtherwise, let <var>dest-rect</var> be <var>dest</var>."
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-destpolar\"></a>If <var>dest</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color③\">cylindrical polar color</a> representation,\n\tlet <var>dest-rect</var> be the corresponding <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#rectangular-orthogonal-color\" id=\"ref-for-rectangular-orthogonal-color②\">rectangular orthogonal color</a> representation.\n\tOtherwise, let <var>dest-rect</var> be <var>dest</var>."
         },
         {
           "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-fromXYZ\"></a>Convert <var>xyz</var> to <var>dest</var>,\n\tfollowed by applying any transfer function (gamma encoding),\n\tproducing <var>col2</var>."
@@ -158,7 +173,7 @@
           "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-display\"></a>If <var>dest</var> is a physical output color space, such as a display,\n\tthen <var>col2</var> must be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#css-gamut-mapped\" id=\"ref-for-css-gamut-mapped③\">css gamut mapped</a> so that it <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#can-be-displayed\" id=\"ref-for-can-be-displayed\">can be displayed</a>."
         },
         {
-          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-rectpol\"></a>If <var>dest-rect</var> is not the same as <var>dest</var>,\n\tin other words <var>dest</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color③\">cylindrical polar color</a> representation,\n\tconvert from <var>dest-rect</var> to <var>dest</var>, and let this be <var>col2</var>.\n\tThis may produce <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component⑧\">missing component</a>s."
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-rectpol\"></a>If <var>dest-rect</var> is not the same as <var>dest</var>,\n\tin other words <var>dest</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color④\">cylindrical polar color</a> representation,\n\tconvert from <var>dest-rect</var> to <var>dest</var>, and let this be <var>col2</var>.\n\tThis may produce <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component⑧\">missing component</a>s."
         }
       ]
     },
@@ -169,22 +184,22 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "if <var>destination</var> has no gamut limits (XYZ-D65, XYZ-D50, Lab, LCH, Oklab, Oklch) convert <var>origin</var> to <var>destination</var> and return it as the gamut mapped color"
+          "html": "if <var>destination</var> has no gamut limits (XYZ-D65, XYZ-D50, Lab, LCH, Oklab, OKLCh) convert <var>origin</var> to <var>destination</var> and return it as the gamut mapped color"
         },
         {
-          "html": "let <var>origin_Oklch</var> be <var>origin</var> converted\n\t\tfrom <var>origin color space</var> to the Oklch color space"
+          "html": "let <var>origin_OKLCh</var> be <var>origin</var> converted\n\t\tfrom <var>origin color space</var> to the OKLCh color space"
         },
         {
-          "html": "if the Lightness of <var>origin_Oklch</var> is greater than or equal to 100%,\n\t\tconvert `oklab(1 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
+          "html": "if the Lightness of <var>origin_OKLCh</var> is greater than or equal to 100%,\n\t\tconvert `oklab(1 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
         },
         {
-          "html": "if the Lightness of <var>origin_Oklch</var> is less than than or equal to 0%,\n\t\tconvert `oklab(0 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
+          "html": "if the Lightness of <var>origin_OKLCh</var> is less than than or equal to 0%,\n\t\tconvert `oklab(0 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
         },
         {
           "html": "let inGamut(<var>color</var>) be a function which returns true if, when passed a color,\n\t\tthat color is inside the gamut of <var>destination</var>.\n\t\tFor HSL and HWB, it returns true if the color is inside the gamut of sRGB."
         },
         {
-          "html": "if inGamut(<var>origin_Oklch</var>) is true, convert <var>origin_Oklch</var> to <var>destination</var> and return it as the gamut mapped color"
+          "html": "if inGamut(<var>origin_OKLCh</var>) is true, convert <var>origin_OKLCh</var> to <var>destination</var> and return it as the gamut mapped color"
         },
         {
           "html": "otherwise, let delta(<var>one</var>, <var>two</var>) be a function which returns the deltaEOK of color <var>one</var> compared to color <var>two</var>"
@@ -199,7 +214,7 @@
           "html": "let clip(<var>color</var>) be a function which converts <var>color</var> to <var>destination</var>,\n\t\tclamps each component to the bounds of the reference range for that component\n\t\tand returns the result"
         },
         {
-          "html": "set <var>current</var> to <var>origin_Oklch</var>"
+          "html": "set <var>current</var> to <var>origin_OKLCh</var>"
         },
         {
           "html": "set <var>clipped</var> to clip(<var>current</var>)"
@@ -220,7 +235,7 @@
           "html": "set <var>min</var> to zero"
         },
         {
-          "html": "set <var>max</var> to the Oklch chroma of <var>origin_Oklch</var>"
+          "html": "set <var>max</var> to the OKLCh chroma of <var>origin_OKLCh</var>"
         },
         {
           "html": "let <var>min_inGamut</var> be a boolean that represents when <var>min</var> is still in gamut, and set it to true"
@@ -239,7 +254,7 @@
               "html": "if <var>min_inGamut</var> is true and also if inGamut(<var>current</var>) is true, set <var>min</var> to <var>chroma</var> and continue to repeat these steps"
             },
             {
-              "html": "otherwise, if inGamut(<var>current</var>) is false carry out these steps:",
+              "html": "otherwise, carry out these steps:",
               "rationale": "set",
               "steps": [
                 {
@@ -289,13 +304,13 @@
           "html": "Let <var>alpha</var> be the given integer."
         },
         {
-          "html": "If there exists an integer between 0 and 100 inclusive that,\n\t\twhen multiplied with 2.55 and rounded to the closest integer \n\t\t(rounding up if two values are equally close), equals <var>alpha</var>,\n\t\tlet <var>rounded</var> be that integer divided by 100."
+          "html": "If there exists an integer between 0 and 100 inclusive that,\n\t\twhen multiplied with 2.55 and rounded to the closest integer\n\t\t(rounding up if two values are equally close), equals <var>alpha</var>,\n\t\tlet <var>rounded</var> be that integer divided by 100."
         },
         {
-          "html": "Otherwise, let <var>rounded</var> be <var>alpha</var> divided by 0.255 and rounded to the closest integer \n\t\t(rounding up if two values are equally close),\n\t\tdivided by 1000."
+          "html": "Otherwise, let <var>rounded</var> be <var>alpha</var> divided by 0.255 and rounded to the closest integer\n\t\t(rounding up if two values are equally close),\n\t\tdivided by 1000."
         },
         {
-          "html": "Return the result of serializing <var>rounded</var> as a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#number-value\" id=\"ref-for-number-value③②\">&lt;number&gt;</a>."
+          "html": "Return the result of serializing <var>rounded</var> as a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#number-value\" id=\"ref-for-number-value③③\">&lt;number&gt;</a>."
         }
       ]
     }

@@ -711,7 +711,7 @@
           "html": "<p>If <var>depacketizer</var> is undefined, reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>, abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>depacketizer</var> is not processing video packets, reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>, abort these steps.</p>"
+          "html": "<p>If <var>depacketizer</var> does not belong to a video <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver①⓪\">RTCRtpReceiver</a></code>, reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>, abort these steps.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">In parallel</a>, run the following steps:",

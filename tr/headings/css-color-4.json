@@ -270,7 +270,7 @@
       "id": "lab-colors",
       "href": "https://www.w3.org/TR/css-color-4/#lab-colors",
       "level": 2,
-      "title": "Device-independent Colors: CIE Lab and LCH, Oklab and Oklch",
+      "title": "Device-independent Colors: CIE Lab and LCH, Oklab and OKLCh",
       "number": "9"
     },
     {
@@ -284,7 +284,7 @@
       "id": "ok-lab",
       "href": "https://www.w3.org/TR/css-color-4/#ok-lab",
       "level": 3,
-      "title": "Oklab and Oklch",
+      "title": "Oklab and OKLCh",
       "number": "9.2"
     },
     {
@@ -298,21 +298,21 @@
       "id": "specifying-oklab-oklch",
       "href": "https://www.w3.org/TR/css-color-4/#specifying-oklab-oklch",
       "level": 3,
-      "title": "Specifying Oklab and Oklch: the oklab() and oklch() functional notations",
+      "title": "Specifying Oklab and OKLCh: the oklab() and oklch() functional notations",
       "number": "9.4"
     },
     {
       "id": "lab-to-lch",
       "href": "https://www.w3.org/TR/css-color-4/#lab-to-lch",
       "level": 3,
-      "title": "Converting Lab or Oklab colors to LCH or Oklch colors",
+      "title": "Converting Lab or Oklab colors to LCH or OKLCh colors",
       "number": "9.5"
     },
     {
       "id": "lch-to-lab",
       "href": "https://www.w3.org/TR/css-color-4/#lch-to-lab",
       "level": 3,
-      "title": "Converting LCH or Oklch colors to Lab or Oklab colors",
+      "title": "Converting LCH or OKLCh colors to Lab or Oklab colors",
       "number": "9.6"
     },
     {
@@ -566,7 +566,7 @@
       "id": "resolving-oklab-oklch-values",
       "href": "https://www.w3.org/TR/css-color-4/#resolving-oklab-oklch-values",
       "level": 3,
-      "title": "Resolving Oklab and Oklch values",
+      "title": "Resolving Oklab and OKLCh values",
       "number": "14.3"
     },
     {
@@ -604,6 +604,20 @@
       "number": "15.2"
     },
     {
+      "id": "HTML-compatible-serialization-of-srgb",
+      "href": "https://www.w3.org/TR/css-color-4/#HTML-compatible-serialization-of-srgb",
+      "level": 4,
+      "title": "HTML-compatible serialization of sRGB values",
+      "number": "15.2.1"
+    },
+    {
+      "id": "css-serialization-of-srgb",
+      "href": "https://www.w3.org/TR/css-color-4/#css-serialization-of-srgb",
+      "level": 4,
+      "title": "CSS serialization of sRGB values",
+      "number": "15.2.2"
+    },
+    {
       "id": "serializing-lab-lch",
       "href": "https://www.w3.org/TR/css-color-4/#serializing-lab-lch",
       "level": 3,
@@ -614,7 +628,7 @@
       "id": "serializing-oklab-oklch",
       "href": "https://www.w3.org/TR/css-color-4/#serializing-oklab-oklch",
       "level": 3,
-      "title": "Serializing Oklab and Oklch values",
+      "title": "Serializing Oklab and OKLCh values",
       "number": "15.4"
     },
     {
@@ -632,36 +646,42 @@
       "number": "15.6"
     },
     {
+      "id": "serializing-opacity-values",
+      "href": "https://www.w3.org/TR/css-color-4/#serializing-opacity-values",
+      "level": 2,
+      "title": "16. Serializing <opacity-value>"
+    },
+    {
       "id": "sample",
       "href": "https://www.w3.org/TR/css-color-4/#sample",
       "level": 2,
-      "title": "16. Default Style Rules"
+      "title": "17. Default Style Rules"
     },
     {
       "id": "color-conversion-code",
       "href": "https://www.w3.org/TR/css-color-4/#color-conversion-code",
       "level": 2,
-      "title": "17. Sample code for Color Conversions"
+      "title": "18. Sample code for Color Conversions"
     },
     {
       "id": "color-difference-code",
       "href": "https://www.w3.org/TR/css-color-4/#color-difference-code",
       "level": 2,
-      "title": "18. Sample Code for ΔE2000 and ΔEOK Color Differences"
+      "title": "19. Sample Code for ΔE2000 and ΔEOK Color Differences"
     },
     {
       "id": "color-difference-2000",
       "href": "https://www.w3.org/TR/css-color-4/#color-difference-2000",
       "level": 3,
       "title": "ΔE2000",
-      "number": "18.1"
+      "number": "19.1"
     },
     {
       "id": "color-difference-OK",
       "href": "https://www.w3.org/TR/css-color-4/#color-difference-OK",
       "level": 3,
       "title": "ΔEOK",
-      "number": "18.2"
+      "number": "19.2"
     },
     {
       "id": "deprecated-system-colors",
@@ -688,6 +708,12 @@
       "href": "https://www.w3.org/TR/css-color-4/#changes",
       "level": 2,
       "title": "Changes"
+    },
+    {
+      "id": "changes-from-20240213",
+      "href": "https://www.w3.org/TR/css-color-4/#changes-from-20240213",
+      "level": 3,
+      "title": "Changes since the Candidate Recommendation Draft of 13 Feb 2024"
     },
     {
       "id": "changes-from-20221101",
@@ -753,19 +779,19 @@
       "id": "security",
       "href": "https://www.w3.org/TR/css-color-4/#security",
       "level": 2,
-      "title": "19. Security Considerations"
+      "title": "20. Security Considerations"
     },
     {
       "id": "privacy",
       "href": "https://www.w3.org/TR/css-color-4/#privacy",
       "level": 2,
-      "title": "20. Privacy Considerations"
+      "title": "21. Privacy Considerations"
     },
     {
       "id": "a11y-sec",
       "href": "https://www.w3.org/TR/css-color-4/#a11y-sec",
       "level": 2,
-      "title": "21. Accessibility Considerations"
+      "title": "22. Accessibility Considerations"
     },
     {
       "id": "w3c-conformance",
