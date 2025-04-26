@@ -23,6 +23,55 @@
           "html": "<p>Otherwise,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-adjust-1/#used-color-scheme\" id=\"ref-for-used-color-scheme②\">used color scheme</a> is the browser default.\n(Same as <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-adjust-1/#valdef-color-scheme-normal\" id=\"ref-for-valdef-color-scheme-normal②\">normal</a>.)</p>"
         }
       ]
+    },
+    {
+      "name": "set emulated forced colors theme data",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#set-emulated-forced-colors-theme-data",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"set-emulated-forced-colors-theme-data\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set emulated forced colors theme data</dfn>, given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable\">navigable</a> <var>navigable</var> and an <var>emulatedThemeData</var>:",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<p>Assert <var>emulatedThemeData</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-color-adjust-1/#enumdef-forcedcolorsmodeautomationtheme\" id=\"ref-for-enumdef-forcedcolorsmodeautomationtheme①\">ForcedColorsModeAutomationTheme</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>traversable</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top\">top-level traversable</a>.</p>"
+        },
+        {
+          "html": "If <var>traversable</var> is not null:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>traversable</var>’s associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-adjust-1/#emulated-forced-colors-theme-data\" id=\"ref-for-emulated-forced-colors-theme-data①\">emulated forced colors theme data</a> to <var>emulatedThemeData</var>.</p>"
+            },
+            {
+              "html": "<p>UAs must consider this a change that requires style recalculation.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "get emulated forced colors theme data",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#get-emulated-forced-colors-theme-data",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-emulated-forced-colors-theme-data\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get emulated forced colors theme data</dfn>, given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-color-adjust-1/#enumdef-forcedcolorsmodeautomationtheme\" id=\"ref-for-enumdef-forcedcolorsmodeautomationtheme②\">ForcedColorsModeAutomationTheme</a></code> <var>theme</var>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>navigable</var> be <var>theme</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable\">node navigable</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>navigable</var> is null, return null.</p>"
+        },
+        {
+          "html": "<p>Let <var>traversable</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①\">top-level traversable</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>traversable</var> is null, return null.</p>"
+        },
+        {
+          "html": "<p>Return <var>traversable</var>’s associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-adjust-1/#emulated-forced-colors-theme-data\" id=\"ref-for-emulated-forced-colors-theme-data②\">emulated forced colors theme data</a>.</p>"
+        }
+      ]
     }
   ]
 }
