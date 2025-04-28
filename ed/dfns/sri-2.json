@@ -1,0 +1,198 @@
+{
+  "spec": {
+    "title": "Subresource Integrity",
+    "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+  },
+  "dfns": [
+    {
+      "id": "digest",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#digest",
+      "linkingText": [
+        "digest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/webappsec-subresource-integrity/#terms",
+        "title": "Key Concepts and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "base64-encoding",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#base64-encoding",
+      "linkingText": [
+        "base64 encoding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/webappsec-subresource-integrity/#terms",
+        "title": "Key Concepts and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valid-sri-hash-algorithm-token-set",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#valid-sri-hash-algorithm-token-set",
+      "linkingText": [
+        "valid SRI hash algorithm token set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/webappsec-subresource-integrity/#terms",
+        "title": "Key Concepts and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valid-sri-hash-algorithm-token",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#valid-sri-hash-algorithm-token",
+      "linkingText": [
+        "valid SRI hash algorithm token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/webappsec-subresource-integrity/#terms",
+        "title": "Key Concepts and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "integrity-metadata",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#integrity-metadata",
+      "linkingText": [
+        "integrity metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "integrity-metadata-description",
+        "href": "https://w3c.github.io/webappsec-subresource-integrity/#integrity-metadata-description",
+        "title": "Integrity metadata",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "does-response-match-metadatalist",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#does-response-match-metadatalist",
+      "linkingText": [
+        "Do bytes match metadataList?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "does-response-match-metadatalist",
+        "href": "https://w3c.github.io/webappsec-subresource-integrity/#does-response-match-metadatalist",
+        "title": "Do bytes match metadataList?",
+        "number": "3.3.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "grammardef-integrity-metadata",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#grammardef-integrity-metadata",
+      "linkingText": [
+        "integrity-metadata"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-integrity-attribute",
+        "href": "https://w3c.github.io/webappsec-subresource-integrity/#the-integrity-attribute",
+        "title": "The integrity attribute",
+        "number": "3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-hash-with-options",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#grammardef-hash-with-options",
+      "linkingText": [
+        "hash-with-options"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-integrity-attribute",
+        "href": "https://w3c.github.io/webappsec-subresource-integrity/#the-integrity-attribute",
+        "title": "The integrity attribute",
+        "number": "3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-option-expression",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#grammardef-option-expression",
+      "linkingText": [
+        "option-expression"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-integrity-attribute",
+        "href": "https://w3c.github.io/webappsec-subresource-integrity/#the-integrity-attribute",
+        "title": "The integrity attribute",
+        "number": "3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-hash-expression",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#grammardef-hash-expression",
+      "linkingText": [
+        "hash-expression"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-integrity-attribute",
+        "href": "https://w3c.github.io/webappsec-subresource-integrity/#the-integrity-attribute",
+        "title": "The integrity attribute",
+        "number": "3.5"
+      },
+      "definedIn": "pre"
+    }
+  ]
+}

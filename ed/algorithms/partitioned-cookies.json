@@ -1,20 +1,20 @@
 {
   "spec": {
     "title": "Cookies Having Independent Partitioned State specification",
-    "url": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html"
+    "url": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html"
   },
   "algorithms": [
     {
       "rationale": "let",
       "steps": [
         {
-          "html": "Let top-document be the active document in document's browsing context's top-level browsing context.<a href=\"https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-2.2-2.1.1\" class=\"pilcrow\">¶</a>"
+          "html": "Let top-document be the active document in document's browsing context's top-level browsing context.<a href=\"https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-2.2-2.1.1\" class=\"pilcrow\">¶</a>"
         },
         {
-          "html": "Let \"cookie-partition-key\" be the site of the top-document when the user agent made the request.<a href=\"https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-2.2-2.1.2\" class=\"pilcrow\">¶</a>"
+          "html": "Let \"cookie-partition-key\" be the site of the top-document when the user agent made the request.<a href=\"https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-2.2-2.1.2\" class=\"pilcrow\">¶</a>"
         },
         {
-          "html": "If the cookie is being read or written via a \"non-HTTP\" API, then cookie-partition-key is the site (as defined in <span>[<a href=\"https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#HTML\" class=\"cite xref\">HTML</a>]</span>) of the top-document of the document associated with the non-HTTP API.<a href=\"https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-2.2-2.1.3\" class=\"pilcrow\">¶</a>"
+          "html": "If the cookie is being read or written via a \"non-HTTP\" API, then cookie-partition-key is the site (as defined in <span>[<a href=\"https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#HTML\" class=\"cite xref\">HTML</a>]</span>) of the top-document of the document associated with the non-HTTP API.<a href=\"https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-2.2-2.1.3\" class=\"pilcrow\">¶</a>"
         }
       ]
     },
@@ -22,7 +22,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If the cookie-attribute-list does not contain an attribute with an attribute-name of \"Partitioned\", set partition-key to null.<br><br>\n  If the cookie-attribute-list does contain an attribute with an attribute-name of \"Partitioned\" and the secure-only-flag is false, abort these steps and ignore the cookie entirely.<br><br>\n  Otherwise, set partition-key to cookie-partition-key defined in section 5.X.X.<a href=\"https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-2.3-4.1.1\" class=\"pilcrow\">¶</a>"
+          "html": "If the cookie-attribute-list does not contain an attribute with an attribute-name of \"Partitioned\", set partition-key to null.<br><br>\n  If the cookie-attribute-list does contain an attribute with an attribute-name of \"Partitioned\" and the secure-only-flag is false, abort these steps and ignore the cookie entirely.<br><br>\n  Otherwise, set partition-key to cookie-partition-key defined in section 5.X.X.<a href=\"https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-2.3-4.1.1\" class=\"pilcrow\">¶</a>"
         }
       ]
     },
@@ -30,7 +30,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If the cookie store contains a cookie with the same name, domain, host-only-flag, path, and partition-key as the newly-created cookie:<br><br>\n  a.  Let old-cookie be the existing cookie with the same name, domain, host-only-flag, path, and partition-key as the newly-created cookie. (Notice that this algorithm maintains the invariant that there is at most one such cookie.)<br><br>\n  b.  If the newly-created cookie was received from a \"non-HTTP\" API and the old-cookie's http-only-flag is true, abort these steps and ignore the newly created cookie entirely.<br><br>\n  c.  Update the creation-time of the newly-created cookie to match the creation-time of the old-cookie.<br><br>\n  d.  Remove the old-cookie from the cookie store.<a href=\"https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-2.4-2.1.1\" class=\"pilcrow\">¶</a>"
+          "html": "If the cookie store contains a cookie with the same name, domain, host-only-flag, path, and partition-key as the newly-created cookie:<br><br>\n  a.  Let old-cookie be the existing cookie with the same name, domain, host-only-flag, path, and partition-key as the newly-created cookie. (Notice that this algorithm maintains the invariant that there is at most one such cookie.)<br><br>\n  b.  If the newly-created cookie was received from a \"non-HTTP\" API and the old-cookie's http-only-flag is true, abort these steps and ignore the newly created cookie entirely.<br><br>\n  c.  Update the creation-time of the newly-created cookie to match the creation-time of the old-cookie.<br><br>\n  d.  Remove the old-cookie from the cookie store.<a href=\"https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-2.4-2.1.1\" class=\"pilcrow\">¶</a>"
         }
       ]
     },
@@ -38,7 +38,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "For each cookie in cookie-list, do the following:<br><br>\n  a.  If the cookie's cookie-partition-key attribute is null, skip this step.<br><br>\n  b.  Otherwise, if the top-document is not same-site with the cookie's partition-key then remove the cookie from cookie-list.<a href=\"https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-4.3-2.1.1\" class=\"pilcrow\">¶</a>"
+          "html": "For each cookie in cookie-list, do the following:<br><br>\n  a.  If the cookie's cookie-partition-key attribute is null, skip this step.<br><br>\n  b.  Otherwise, if the top-document is not same-site with the cookie's partition-key then remove the cookie from cookie-list.<a href=\"https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-4.3-2.1.1\" class=\"pilcrow\">¶</a>"
         }
       ]
     }

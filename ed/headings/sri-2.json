@@ -1,0 +1,268 @@
+{
+  "spec": {
+    "title": "Subresource Integrity",
+    "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#title",
+      "level": 1,
+      "title": "Subresource Integrity"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "goals",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#goals",
+      "level": 3,
+      "title": "Goals",
+      "number": "1.1"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#examples",
+      "level": 3,
+      "title": "Use Cases/Examples",
+      "number": "1.2"
+    },
+    {
+      "id": "resource-integrity",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#resource-integrity",
+      "level": 4,
+      "title": "Resource Integrity",
+      "number": "1.2.1"
+    },
+    {
+      "id": "terms",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#terms",
+      "level": 2,
+      "title": "Key Concepts and Terminology",
+      "number": "2"
+    },
+    {
+      "id": "grammar-concepts",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#grammar-concepts",
+      "level": 3,
+      "title": "Grammatical Concepts",
+      "number": "2.1"
+    },
+    {
+      "id": "framework",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#framework",
+      "level": 2,
+      "title": "Framework",
+      "number": "3"
+    },
+    {
+      "id": "integrity-metadata-description",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#integrity-metadata-description",
+      "level": 3,
+      "title": "Integrity metadata",
+      "number": "3.1"
+    },
+    {
+      "id": "hash-functions",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#hash-functions",
+      "level": 3,
+      "title": "Cryptographic hash functions",
+      "number": "3.2"
+    },
+    {
+      "id": "agility",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#agility",
+      "level": 4,
+      "title": "Agility",
+      "number": "3.2.1"
+    },
+    {
+      "id": "priority",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#priority",
+      "level": 4,
+      "title": "Priority",
+      "number": "3.2.2"
+    },
+    {
+      "id": "verification-algorithms",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#verification-algorithms",
+      "level": 3,
+      "title": "Response verification algorithms",
+      "number": "3.3"
+    },
+    {
+      "id": "apply-algorithm-to-response",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#apply-algorithm-to-response",
+      "level": 4,
+      "title": "Apply algorithm to bytes",
+      "number": "3.3.1"
+    },
+    {
+      "id": "parse-metadata",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#parse-metadata",
+      "level": 4,
+      "title": "Parse metadata",
+      "number": "3.3.2"
+    },
+    {
+      "id": "get-the-strongest-metadata",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#get-the-strongest-metadata",
+      "level": 4,
+      "title": "Get the strongest metadata from set",
+      "number": "3.3.3"
+    },
+    {
+      "id": "does-response-match-metadatalist",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#does-response-match-metadatalist",
+      "level": 4,
+      "title": "Do bytes match metadataList?",
+      "number": "3.3.4"
+    },
+    {
+      "id": "verification-of-html-document-subresources",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#verification-of-html-document-subresources",
+      "level": 3,
+      "title": "Verification of HTML document subresources",
+      "number": "3.4"
+    },
+    {
+      "id": "the-integrity-attribute",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#the-integrity-attribute",
+      "level": 3,
+      "title": "The integrity attribute",
+      "number": "3.5"
+    },
+    {
+      "id": "the-integrity-link-processing-option",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#the-integrity-link-processing-option",
+      "level": 3,
+      "title": "The integrity link processing option",
+      "number": "3.6"
+    },
+    {
+      "id": "handling-integrity-violations",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#handling-integrity-violations",
+      "level": 3,
+      "title": "Handling integrity violations",
+      "number": "3.7"
+    },
+    {
+      "id": "proxies",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#proxies",
+      "level": 2,
+      "title": "Proxies",
+      "number": "4"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#security-considerations",
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "number": "5"
+    },
+    {
+      "id": "non-secure-contexts",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#non-secure-contexts",
+      "level": 3,
+      "title": "Non-secure contexts remain non-secure",
+      "number": "5.1"
+    },
+    {
+      "id": "hash-collision-attacks",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#hash-collision-attacks",
+      "level": 3,
+      "title": "Hash collision attacks",
+      "number": "5.2"
+    },
+    {
+      "id": "cross-origin-data-leakage",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#cross-origin-data-leakage",
+      "level": 3,
+      "title": "Cross-origin data leakage",
+      "number": "5.3"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "6"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#informative",
+      "level": 3,
+      "title": "Informative References"
+    }
+  ]
+}
