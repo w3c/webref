@@ -1,0 +1,39 @@
+{
+  "name": "Rewriter",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Writing Assistance APIs",
+      "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface Rewriter {\n  static Promise<Rewriter> create(optional RewriterCreateOptions options = {});\n  static Promise<Availability> availability(optional RewriterCreateCoreOptions options = {});\n\n  Promise<DOMString> rewrite(\n    DOMString input,\n    optional RewriterRewriteOptions options = {}\n  );\n  ReadableStream rewriteStreaming(\n    DOMString input,\n    optional RewriterRewriteOptions options = {}\n  );\n\n  readonly attribute DOMString sharedContext;\n  readonly attribute RewriterTone tone;\n  readonly attribute RewriterFormat format;\n  readonly attribute RewriterLength length;\n\n  readonly attribute FrozenArray<DOMString>? expectedInputLanguages;\n  readonly attribute FrozenArray<DOMString>? expectedContextLanguages;\n  readonly attribute DOMString? outputLanguage;\n\n  Promise<double> measureInputUsage(\n    DOMString input,\n    optional RewriterRewriteOptions options = {}\n  );\n  readonly attribute unrestricted double inputQuota;\n};",
+    "href": "https://webmachinelearning.github.io/writing-assistance-apis/#rewriter"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Writing Assistance APIs",
+        "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+      },
+      "fragment": "Rewriter includes DestroyableModel;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "DestroyableModel",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        "fragment": "interface mixin DestroyableModel {\n  undefined destroy();\n};",
+        "href": "https://webmachinelearning.github.io/writing-assistance-apis/#destroyablemodel"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

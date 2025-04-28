@@ -1,0 +1,10 @@
+// Source: Writing Assistance APIs (https://webmachinelearning.github.io/writing-assistance-apis/)
+dictionary SummarizerCreateCoreOptions {
+  SummarizerType type = "key-points";
+  SummarizerFormat format = "markdown";
+  SummarizerLength length = "short";
+
+  sequence<DOMString> expectedInputLanguages;
+  sequence<DOMString> expectedContextLanguages;
+  DOMString outputLanguage;
+};

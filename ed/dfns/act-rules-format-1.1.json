@@ -1,0 +1,425 @@
+{
+  "spec": {
+    "title": "Accessibility Conformance Testing (ACT) Rules Format 1.1",
+    "url": "https://w3c.github.io/wcag-act/act-rules-format.html"
+  },
+  "dfns": [
+    {
+      "id": "atomic-rules",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#atomic-rules",
+      "linkingText": [
+        "Atomic rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-types",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#rule-types",
+        "title": "ACT Rule Types",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "composite-rules",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#composite-rules",
+      "linkingText": [
+        "Composite rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-types",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#rule-types",
+        "title": "ACT Rule Types",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "descriptive-title",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#descriptive-title",
+      "linkingText": [
+        "Descriptive Title"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "act-rule-structure",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#act-rule-structure",
+        "title": "ACT Rule Structure",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "conformance-requirement",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#conformance-requirement",
+      "linkingText": [
+        "Conformance Requirement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance-requirements",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#conformance-requirements",
+        "title": "Conformance Requirements",
+        "number": "4.4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "not-satisfied",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#not-satisfied",
+      "linkingText": [
+        "not satisfied"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance-requirements",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#conformance-requirements",
+        "title": "Conformance Requirements",
+        "number": "4.4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "satisfied",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#satisfied",
+      "linkingText": [
+        "satisfied"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance-requirements",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#conformance-requirements",
+        "title": "Conformance Requirements",
+        "number": "4.4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "further-testing-is-needed",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#further-testing-is-needed",
+      "linkingText": [
+        "further testing is needed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance-requirements",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#conformance-requirements",
+        "title": "Conformance Requirements",
+        "number": "4.4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "satisfying-tests",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#satisfying-tests",
+      "linkingText": [
+        "satisfying tests"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance-requirements",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#conformance-requirements",
+        "title": "Conformance Requirements",
+        "number": "4.4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "secondary-requirement",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirement",
+      "linkingText": [
+        "secondary requirement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "secondary-requirements",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements",
+        "title": "Secondary Requirements",
+        "number": "4.4.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "consistent",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#consistent",
+      "linkingText": [
+        "consistent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "impl-consistency",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#impl-consistency",
+        "title": "Consistency",
+        "number": "4.14.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "true-positives",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#true-positives",
+      "linkingText": [
+        "True positives"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "impl-consistency",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#impl-consistency",
+        "title": "Consistency",
+        "number": "4.14.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "completeness",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#completeness",
+      "linkingText": [
+        "Completeness"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "impl-consistency",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#impl-consistency",
+        "title": "Consistency",
+        "number": "4.14.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "rule-mapping",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#rule-mapping",
+      "linkingText": [
+        "Rule Mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "impl-consistency",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#impl-consistency",
+        "title": "Consistency",
+        "number": "4.14.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "partially-consistent",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#partially-consistent",
+      "linkingText": [
+        "partially consistent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "impl-partial-consistency",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#impl-partial-consistency",
+        "title": "Partial Consistency",
+        "number": "4.14.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-of-checks",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#set-of-checks",
+      "linkingText": [
+        "set of checks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "impl-multi-check",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#impl-multi-check",
+        "title": "Consistency with multiple checks",
+        "number": "4.14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "accessibility-requirement",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#accessibility-requirement",
+      "linkingText": [
+        "Accessibility requirement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#definitions",
+        "title": "Definitions",
+        "number": "9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "accessibility-requirements-document",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#accessibility-requirements-document",
+      "linkingText": [
+        "Accessibility requirements document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#definitions",
+        "title": "Definitions",
+        "number": "9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "check",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#check",
+      "linkingText": [
+        "Check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#definitions",
+        "title": "Definitions",
+        "number": "9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "implementation",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#implementation",
+      "linkingText": [
+        "Implementation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#definitions",
+        "title": "Definitions",
+        "number": "9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "outcome",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#outcome",
+      "linkingText": [
+        "Outcome"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#definitions",
+        "title": "Definitions",
+        "number": "9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "test-subject",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#test-subject",
+      "linkingText": [
+        "Test Subject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#definitions",
+        "title": "Definitions",
+        "number": "9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "test-target",
+      "href": "https://w3c.github.io/wcag-act/act-rules-format.html#test-target",
+      "linkingText": [
+        "Test Target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/wcag-act/act-rules-format.html#title",
+        "title": "Accessibility Conformance Testing (ACT) Rules Format 1.1"
+      },
+      "definedIn": "dt"
+    }
+  ]
+}

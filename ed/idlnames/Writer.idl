@@ -1,0 +1,33 @@
+// Source: Writing Assistance APIs (https://webmachinelearning.github.io/writing-assistance-apis/)
+[Exposed=Window, SecureContext]
+interface Writer {
+  static Promise<Writer> create(optional WriterCreateOptions options = {});
+  static Promise<Availability> availability(optional WriterCreateCoreOptions options = {});
+
+  Promise<DOMString> write(
+    DOMString input,
+    optional WriterWriteOptions options = {}
+  );
+  ReadableStream writeStreaming(
+    DOMString input,
+    optional WriterWriteOptions options = {}
+  );
+
+  readonly attribute DOMString sharedContext;
+  readonly attribute WriterTone tone;
+  readonly attribute WriterFormat format;
+  readonly attribute WriterLength length;
+
+  readonly attribute FrozenArray<DOMString>? expectedInputLanguages;
+  readonly attribute FrozenArray<DOMString>? expectedContextLanguages;
+  readonly attribute DOMString? outputLanguage;
+
+  Promise<double> measureInputUsage(
+    DOMString input,
+    optional WriterWriteOptions options = {}
+  );
+  readonly attribute unrestricted double inputQuota;
+};
+
+// Source: Writing Assistance APIs (https://webmachinelearning.github.io/writing-assistance-apis/)
+Writer includes DestroyableModel;

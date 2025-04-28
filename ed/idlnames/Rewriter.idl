@@ -1,0 +1,33 @@
+// Source: Writing Assistance APIs (https://webmachinelearning.github.io/writing-assistance-apis/)
+[Exposed=Window, SecureContext]
+interface Rewriter {
+  static Promise<Rewriter> create(optional RewriterCreateOptions options = {});
+  static Promise<Availability> availability(optional RewriterCreateCoreOptions options = {});
+
+  Promise<DOMString> rewrite(
+    DOMString input,
+    optional RewriterRewriteOptions options = {}
+  );
+  ReadableStream rewriteStreaming(
+    DOMString input,
+    optional RewriterRewriteOptions options = {}
+  );
+
+  readonly attribute DOMString sharedContext;
+  readonly attribute RewriterTone tone;
+  readonly attribute RewriterFormat format;
+  readonly attribute RewriterLength length;
+
+  readonly attribute FrozenArray<DOMString>? expectedInputLanguages;
+  readonly attribute FrozenArray<DOMString>? expectedContextLanguages;
+  readonly attribute DOMString? outputLanguage;
+
+  Promise<double> measureInputUsage(
+    DOMString input,
+    optional RewriterRewriteOptions options = {}
+  );
+  readonly attribute unrestricted double inputQuota;
+};
+
+// Source: Writing Assistance APIs (https://webmachinelearning.github.io/writing-assistance-apis/)
+Rewriter includes DestroyableModel;

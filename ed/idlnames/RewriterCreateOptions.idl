@@ -1,0 +1,7 @@
+// Source: Writing Assistance APIs (https://webmachinelearning.github.io/writing-assistance-apis/)
+dictionary RewriterCreateOptions : RewriterCreateCoreOptions {
+  AbortSignal signal;
+  CreateMonitorCallback monitor;
+
+  DOMString sharedContext;
+};

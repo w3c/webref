@@ -714,6 +714,11 @@
     "parsed": "idlnamesparsed/AutoplayPolicyMediaType.json",
     "type": "enum"
   },
+  "Availability": {
+    "fragment": "idlnames/Availability.idl",
+    "parsed": "idlnamesparsed/Availability.json",
+    "type": "enum"
+  },
   "AvailabilityStatus": {
     "fragment": "idlnames/AvailabilityStatus.idl",
     "parsed": "idlnamesparsed/AvailabilityStatus.json",
@@ -2379,6 +2384,16 @@
     "parsed": "idlnamesparsed/CreateHTMLCallback.json",
     "type": "callback"
   },
+  "CreateMonitor": {
+    "fragment": "idlnames/CreateMonitor.idl",
+    "parsed": "idlnamesparsed/CreateMonitor.json",
+    "type": "interface"
+  },
+  "CreateMonitorCallback": {
+    "fragment": "idlnames/CreateMonitorCallback.idl",
+    "parsed": "idlnamesparsed/CreateMonitorCallback.json",
+    "type": "callback"
+  },
   "CreateScriptCallback": {
     "fragment": "idlnames/CreateScriptCallback.idl",
     "parsed": "idlnamesparsed/CreateScriptCallback.json",
@@ -2653,6 +2668,11 @@
     "fragment": "idlnames/DeprecationReportBody.idl",
     "parsed": "idlnamesparsed/DeprecationReportBody.json",
     "type": "interface"
+  },
+  "DestroyableModel": {
+    "fragment": "idlnames/DestroyableModel.idl",
+    "parsed": "idlnamesparsed/DestroyableModel.json",
+    "type": "interface mixin"
   },
   "DetectedBarcode": {
     "fragment": "idlnames/DetectedBarcode.idl",
@@ -9849,6 +9869,41 @@
     "parsed": "idlnamesparsed/RestrictionTarget.json",
     "type": "interface"
   },
+  "Rewriter": {
+    "fragment": "idlnames/Rewriter.idl",
+    "parsed": "idlnamesparsed/Rewriter.json",
+    "type": "interface"
+  },
+  "RewriterCreateCoreOptions": {
+    "fragment": "idlnames/RewriterCreateCoreOptions.idl",
+    "parsed": "idlnamesparsed/RewriterCreateCoreOptions.json",
+    "type": "dictionary"
+  },
+  "RewriterCreateOptions": {
+    "fragment": "idlnames/RewriterCreateOptions.idl",
+    "parsed": "idlnamesparsed/RewriterCreateOptions.json",
+    "type": "dictionary"
+  },
+  "RewriterFormat": {
+    "fragment": "idlnames/RewriterFormat.idl",
+    "parsed": "idlnamesparsed/RewriterFormat.json",
+    "type": "enum"
+  },
+  "RewriterLength": {
+    "fragment": "idlnames/RewriterLength.idl",
+    "parsed": "idlnamesparsed/RewriterLength.json",
+    "type": "enum"
+  },
+  "RewriterRewriteOptions": {
+    "fragment": "idlnames/RewriterRewriteOptions.idl",
+    "parsed": "idlnamesparsed/RewriterRewriteOptions.json",
+    "type": "dictionary"
+  },
+  "RewriterTone": {
+    "fragment": "idlnames/RewriterTone.idl",
+    "parsed": "idlnamesparsed/RewriterTone.json",
+    "type": "enum"
+  },
   "RotationMatrixType": {
     "fragment": "idlnames/RotationMatrixType.idl",
     "parsed": "idlnamesparsed/RotationMatrixType.json",
@@ -11248,6 +11303,41 @@
     "fragment": "idlnames/SubtleCrypto.idl",
     "parsed": "idlnamesparsed/SubtleCrypto.json",
     "type": "interface"
+  },
+  "Summarizer": {
+    "fragment": "idlnames/Summarizer.idl",
+    "parsed": "idlnamesparsed/Summarizer.json",
+    "type": "interface"
+  },
+  "SummarizerCreateCoreOptions": {
+    "fragment": "idlnames/SummarizerCreateCoreOptions.idl",
+    "parsed": "idlnamesparsed/SummarizerCreateCoreOptions.json",
+    "type": "dictionary"
+  },
+  "SummarizerCreateOptions": {
+    "fragment": "idlnames/SummarizerCreateOptions.idl",
+    "parsed": "idlnamesparsed/SummarizerCreateOptions.json",
+    "type": "dictionary"
+  },
+  "SummarizerFormat": {
+    "fragment": "idlnames/SummarizerFormat.idl",
+    "parsed": "idlnamesparsed/SummarizerFormat.json",
+    "type": "enum"
+  },
+  "SummarizerLength": {
+    "fragment": "idlnames/SummarizerLength.idl",
+    "parsed": "idlnamesparsed/SummarizerLength.json",
+    "type": "enum"
+  },
+  "SummarizerSummarizeOptions": {
+    "fragment": "idlnames/SummarizerSummarizeOptions.idl",
+    "parsed": "idlnamesparsed/SummarizerSummarizeOptions.json",
+    "type": "dictionary"
+  },
+  "SummarizerType": {
+    "fragment": "idlnames/SummarizerType.idl",
+    "parsed": "idlnamesparsed/SummarizerType.json",
+    "type": "enum"
   },
   "SurfaceSwitchingPreferenceEnum": {
     "fragment": "idlnames/SurfaceSwitchingPreferenceEnum.idl",
@@ -12762,6 +12852,41 @@
   "WriteParams": {
     "fragment": "idlnames/WriteParams.idl",
     "parsed": "idlnamesparsed/WriteParams.json",
+    "type": "dictionary"
+  },
+  "Writer": {
+    "fragment": "idlnames/Writer.idl",
+    "parsed": "idlnamesparsed/Writer.json",
+    "type": "interface"
+  },
+  "WriterCreateCoreOptions": {
+    "fragment": "idlnames/WriterCreateCoreOptions.idl",
+    "parsed": "idlnamesparsed/WriterCreateCoreOptions.json",
+    "type": "dictionary"
+  },
+  "WriterCreateOptions": {
+    "fragment": "idlnames/WriterCreateOptions.idl",
+    "parsed": "idlnamesparsed/WriterCreateOptions.json",
+    "type": "dictionary"
+  },
+  "WriterFormat": {
+    "fragment": "idlnames/WriterFormat.idl",
+    "parsed": "idlnamesparsed/WriterFormat.json",
+    "type": "enum"
+  },
+  "WriterLength": {
+    "fragment": "idlnames/WriterLength.idl",
+    "parsed": "idlnamesparsed/WriterLength.json",
+    "type": "enum"
+  },
+  "WriterTone": {
+    "fragment": "idlnames/WriterTone.idl",
+    "parsed": "idlnamesparsed/WriterTone.json",
+    "type": "enum"
+  },
+  "WriterWriteOptions": {
+    "fragment": "idlnames/WriterWriteOptions.idl",
+    "parsed": "idlnamesparsed/WriterWriteOptions.json",
     "type": "dictionary"
   },
   "XMLDocument": {

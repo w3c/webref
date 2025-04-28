@@ -1,0 +1,10 @@
+// Source: Writing Assistance APIs (https://webmachinelearning.github.io/writing-assistance-apis/)
+dictionary RewriterCreateCoreOptions {
+  RewriterTone tone = "as-is";
+  RewriterFormat format = "as-is";
+  RewriterLength length = "as-is";
+
+  sequence<DOMString> expectedInputLanguages;
+  sequence<DOMString> expectedContextLanguages;
+  DOMString outputLanguage;
+};

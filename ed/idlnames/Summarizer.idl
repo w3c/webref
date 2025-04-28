@@ -1,0 +1,33 @@
+// Source: Writing Assistance APIs (https://webmachinelearning.github.io/writing-assistance-apis/)
+[Exposed=Window, SecureContext]
+interface Summarizer {
+  static Promise<Summarizer> create(optional SummarizerCreateOptions options = {});
+  static Promise<Availability> availability(optional SummarizerCreateCoreOptions options = {});
+
+  Promise<DOMString> summarize(
+    DOMString input,
+    optional SummarizerSummarizeOptions options = {}
+  );
+  ReadableStream summarizeStreaming(
+    DOMString input,
+    optional SummarizerSummarizeOptions options = {}
+  );
+
+  readonly attribute DOMString sharedContext;
+  readonly attribute SummarizerType type;
+  readonly attribute SummarizerFormat format;
+  readonly attribute SummarizerLength length;
+
+  readonly attribute FrozenArray<DOMString>? expectedInputLanguages;
+  readonly attribute FrozenArray<DOMString>? expectedContextLanguages;
+  readonly attribute DOMString? outputLanguage;
+
+  Promise<double> measureInputUsage(
+    DOMString input,
+    optional SummarizerSummarizeOptions options = {}
+  );
+  readonly attribute unrestricted double inputQuota;
+};
+
+// Source: Writing Assistance APIs (https://webmachinelearning.github.io/writing-assistance-apis/)
+Summarizer includes DestroyableModel;

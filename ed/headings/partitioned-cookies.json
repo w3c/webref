@@ -1,208 +1,208 @@
 {
   "spec": {
     "title": "Cookies Having Independent Partitioned State specification",
-    "url": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html"
+    "url": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html"
   },
   "headings": [
     {
       "id": "title",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#title",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#title",
       "level": 1,
       "title": "Cookies Having Independent Partitioned State specification"
     },
     {
       "id": "section-abstract",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-abstract",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
       "id": "section-note.1",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-note.1",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-note.1",
       "level": 2,
       "title": "About This Document"
     },
     {
       "id": "section-boilerplate.1",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-boilerplate.1",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-boilerplate.1",
       "level": 2,
       "title": "Status of This Memo"
     },
     {
       "id": "section-boilerplate.2",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-boilerplate.2",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-boilerplate.2",
       "level": 2,
       "title": "Copyright Notice"
     },
     {
       "id": "section-toc.1",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-toc.1",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-toc.1",
       "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "section-1",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-1",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-1",
       "level": 2,
       "title": "Introduction",
       "number": "1"
     },
     {
       "id": "section-2",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-2",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-2",
       "level": 2,
       "title": "Conventions and Definitions",
       "number": "2"
     },
     {
       "id": "section-2.1",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-2.1",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-2.1",
       "level": 3,
       "title": "The Partitioned attribute",
       "number": "2.1"
     },
     {
       "id": "section-2.2",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-2.2",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-2.2",
       "level": 3,
       "title": "Computing the cookie partition key",
       "number": "2.2"
     },
     {
       "id": "section-2.3",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-2.3",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-2.3",
       "level": 3,
       "title": "Using Set-Cookie with Partitioned",
       "number": "2.3"
     },
     {
       "id": "section-2.4",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-2.4",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-2.4",
       "level": 3,
       "title": "Partitioned Cookies with the Same Name/Domain/Path",
       "number": "2.4"
     },
     {
       "id": "section-2.5",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-2.5",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-2.5",
       "level": 3,
       "title": "Attaching a Partitioned Cookie to a Request",
       "number": "2.5"
     },
     {
       "id": "section-3",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-3",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-3",
       "level": 2,
       "title": "Security Considerations",
       "number": "3"
     },
     {
       "id": "section-3.1",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-3.1",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-3.1",
       "level": 3,
       "title": "Partitioned requires Secure",
       "number": "3.1"
     },
     {
       "id": "section-3.2",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-3.2",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-3.2",
       "level": 3,
       "title": "Partitioned cookies and XSS attacks",
       "number": "3.2"
     },
     {
       "id": "section-3.3",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-3.3",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-3.3",
       "level": 3,
       "title": "Partitioned cookies and CSRF attacks",
       "number": "3.3"
     },
     {
       "id": "section-3.4",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-3.4",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-3.4",
       "level": 3,
       "title": "State proliferation for denial of service",
       "number": "3.4"
     },
     {
       "id": "section-3.5",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-3.5",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-3.5",
       "level": 3,
       "title": "Partitioned cookies improve user privacy",
       "number": "3.5"
     },
     {
       "id": "section-3.6",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-3.6",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-3.6",
       "level": 3,
       "title": "Avoiding cross-partition leaks",
       "number": "3.6"
     },
     {
       "id": "section-4",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-4",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-4",
       "level": 2,
       "title": "Implementation Considerations",
       "number": "4"
     },
     {
       "id": "section-4.1",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-4.1",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-4.1",
       "level": 3,
       "title": "Applying Limits to Partitioned Cookie Jars",
       "number": "4.1"
     },
     {
       "id": "section-4.2",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-4.2",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-4.2",
       "level": 3,
       "title": "Third-Party Cookie Controls",
       "number": "4.2"
     },
     {
       "id": "section-4.3",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-4.3",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-4.3",
       "level": 3,
       "title": "Partitioned Cookies and Clear-Site-Data",
       "number": "4.3"
     },
     {
       "id": "section-5",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-5",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-5",
       "level": 2,
       "title": "IANA Considerations",
       "number": "5"
     },
     {
       "id": "section-6",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-6",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-6",
       "level": 2,
       "title": "References",
       "number": "6"
     },
     {
       "id": "section-6.1",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-6.1",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-6.1",
       "level": 3,
       "title": "Normative References",
       "number": "6.1"
     },
     {
       "id": "section-6.2",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#section-6.2",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-6.2",
       "level": 3,
       "title": "Informative References",
       "number": "6.2"
     },
     {
       "id": "appendix-A",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#appendix-A",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#appendix-A",
       "level": 2,
       "title": "Acknowledgments"
     },
     {
       "id": "appendix-B",
-      "href": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html#appendix-B",
+      "href": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#appendix-B",
       "level": 2,
       "title": "Author's Address"
     }

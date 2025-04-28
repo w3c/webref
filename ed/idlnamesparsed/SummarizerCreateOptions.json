@@ -1,0 +1,29 @@
+{
+  "name": "SummarizerCreateOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Writing Assistance APIs",
+      "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+    },
+    "fragment": "dictionary SummarizerCreateOptions : SummarizerCreateCoreOptions {\n  AbortSignal signal;\n  CreateMonitorCallback monitor;\n\n  DOMString sharedContext;\n};",
+    "href": "https://webmachinelearning.github.io/writing-assistance-apis/#dictdef-summarizercreateoptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "SummarizerCreateCoreOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Writing Assistance APIs",
+        "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+      },
+      "fragment": "dictionary SummarizerCreateCoreOptions {\n  SummarizerType type = \"key-points\";\n  SummarizerFormat format = \"markdown\";\n  SummarizerLength length = \"short\";\n\n  sequence<DOMString> expectedInputLanguages;\n  sequence<DOMString> expectedContextLanguages;\n  DOMString outputLanguage;\n};",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#dictdef-summarizercreatecoreoptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

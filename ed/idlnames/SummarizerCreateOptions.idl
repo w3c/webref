@@ -1,0 +1,7 @@
+// Source: Writing Assistance APIs (https://webmachinelearning.github.io/writing-assistance-apis/)
+dictionary SummarizerCreateOptions : SummarizerCreateCoreOptions {
+  AbortSignal signal;
+  CreateMonitorCallback monitor;
+
+  DOMString sharedContext;
+};

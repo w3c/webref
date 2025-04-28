@@ -1,0 +1,10 @@
+// Source: Writing Assistance APIs (https://webmachinelearning.github.io/writing-assistance-apis/)
+dictionary WriterCreateCoreOptions {
+  WriterTone tone = "neutral";
+  WriterFormat format = "markdown";
+  WriterLength length = "short";
+
+  sequence<DOMString> expectedInputLanguages;
+  sequence<DOMString> expectedContextLanguages;
+  DOMString outputLanguage;
+};
