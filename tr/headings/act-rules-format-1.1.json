@@ -1,0 +1,411 @@
+{
+  "spec": {
+    "title": "Accessibility Conformance Testing (ACT) Rules Format 1.1",
+    "url": "https://www.w3.org/TR/act-rules-format-1.1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#title",
+      "level": 1,
+      "title": "Accessibility Conformance Testing (ACT) Rules Format 1.1"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "scope",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#scope",
+      "level": 2,
+      "title": "Scope",
+      "number": "2"
+    },
+    {
+      "id": "rule-types",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#rule-types",
+      "level": 2,
+      "title": "ACT Rule Types",
+      "number": "3"
+    },
+    {
+      "id": "act-rule-structure",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#act-rule-structure",
+      "level": 2,
+      "title": "ACT Rule Structure",
+      "number": "4"
+    },
+    {
+      "id": "rule-identifier",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#rule-identifier",
+      "level": 3,
+      "title": "Rule Identifier",
+      "number": "4.1"
+    },
+    {
+      "id": "rule-description",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#rule-description",
+      "level": 3,
+      "title": "Rule Description",
+      "number": "4.2"
+    },
+    {
+      "id": "rule-type",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#rule-type",
+      "level": 3,
+      "title": "Rule Type",
+      "number": "4.3"
+    },
+    {
+      "id": "accessibility-requirements-mapping",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#accessibility-requirements-mapping",
+      "level": 3,
+      "title": "Accessibility Requirements Mapping",
+      "number": "4.4"
+    },
+    {
+      "id": "outcome-mapping",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#outcome-mapping",
+      "level": 4,
+      "title": "Outcome Mapping",
+      "number": "4.4.1"
+    },
+    {
+      "id": "conformance-requirements",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#conformance-requirements",
+      "level": 5,
+      "title": "Conformance Requirements",
+      "number": "4.4.1.1"
+    },
+    {
+      "id": "secondary-requirements",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#secondary-requirements",
+      "level": 5,
+      "title": "Secondary Requirements",
+      "number": "4.4.1.2"
+    },
+    {
+      "id": "mapping-outside-wcag",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#mapping-outside-wcag",
+      "level": 4,
+      "title": "Mapping Outside WCAG",
+      "number": "4.4.2"
+    },
+    {
+      "id": "rules-without-accessibility-requirements",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#rules-without-accessibility-requirements",
+      "level": 4,
+      "title": "Rules Without Accessibility Requirements",
+      "number": "4.4.3"
+    },
+    {
+      "id": "external-accessibility-requirements-mapping",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#external-accessibility-requirements-mapping",
+      "level": 4,
+      "title": "External Accessibility Requirements Mapping",
+      "number": "4.4.4"
+    },
+    {
+      "id": "input",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#input",
+      "level": 3,
+      "title": "Rule Input",
+      "number": "4.5"
+    },
+    {
+      "id": "input-aspects",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#input-aspects",
+      "level": 4,
+      "title": "Input Aspects (Atomic rules only)",
+      "number": "4.5.1"
+    },
+    {
+      "id": "input-rules",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#input-rules",
+      "level": 4,
+      "title": "Input Rules (Composite rules only)",
+      "number": "4.5.2"
+    },
+    {
+      "id": "applicability",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#applicability",
+      "level": 3,
+      "title": "Applicability",
+      "number": "4.6"
+    },
+    {
+      "id": "applicability-atomic",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#applicability-atomic",
+      "level": 4,
+      "title": "Applicability for Atomic Rules",
+      "number": "4.6.1"
+    },
+    {
+      "id": "applicability-type-designation-atomic-optional",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#applicability-type-designation-atomic-optional",
+      "level": 5,
+      "title": "Applicability Type Designation (optional) {#applicability-type-designation-atomic-optional}",
+      "number": "4.6.1.1"
+    },
+    {
+      "id": "applicability-composite",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#applicability-composite",
+      "level": 4,
+      "title": "Applicability for Composite Rules",
+      "number": "4.6.2"
+    },
+    {
+      "id": "applicability-type-designation-composite-optional",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#applicability-type-designation-composite-optional",
+      "level": 5,
+      "title": "Applicability Type Designation (optional) {#applicability-type-designation-composite-optional}",
+      "number": "4.6.2.1"
+    },
+    {
+      "id": "expectations",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#expectations",
+      "level": 3,
+      "title": "Expectations",
+      "number": "4.7"
+    },
+    {
+      "id": "expectations-atomic",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#expectations-atomic",
+      "level": 4,
+      "title": "Expectations for Atomic Rules",
+      "number": "4.7.1"
+    },
+    {
+      "id": "expectations-composite",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#expectations-composite",
+      "level": 4,
+      "title": "Expectations for Composite Rules",
+      "number": "4.7.2"
+    },
+    {
+      "id": "background",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#background",
+      "level": 3,
+      "title": "Background",
+      "number": "4.8"
+    },
+    {
+      "id": "assumptions",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#assumptions",
+      "level": 4,
+      "title": "Assumptions",
+      "number": "4.8.1"
+    },
+    {
+      "id": "accessibility-support",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#accessibility-support",
+      "level": 4,
+      "title": "Accessibility Support",
+      "number": "4.8.2"
+    },
+    {
+      "id": "related-rules",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#related-rules",
+      "level": 4,
+      "title": "Related Rules (optional)",
+      "number": "4.8.3"
+    },
+    {
+      "id": "other-resources",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#other-resources",
+      "level": 4,
+      "title": "Other Resources (optional)",
+      "number": "4.8.4"
+    },
+    {
+      "id": "test-cases",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#test-cases",
+      "level": 3,
+      "title": "Test Cases",
+      "number": "4.9"
+    },
+    {
+      "id": "rule-versions",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#rule-versions",
+      "level": 3,
+      "title": "Rule Versions",
+      "number": "4.10"
+    },
+    {
+      "id": "act-rules-format-version",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#act-rules-format-version",
+      "level": 3,
+      "title": "ACT Rules Format Version",
+      "number": "4.11"
+    },
+    {
+      "id": "glossary",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#glossary",
+      "level": 3,
+      "title": "Glossary",
+      "number": "4.12"
+    },
+    {
+      "id": "issues-list",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#issues-list",
+      "level": 3,
+      "title": "Issues List (optional)",
+      "number": "4.13"
+    },
+    {
+      "id": "implementations",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#implementations",
+      "level": 3,
+      "title": "Implementations (optional)",
+      "number": "4.14"
+    },
+    {
+      "id": "impl-consistency",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#impl-consistency",
+      "level": 4,
+      "title": "Consistency",
+      "number": "4.14.1"
+    },
+    {
+      "id": "impl-partial-consistency",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#impl-partial-consistency",
+      "level": 4,
+      "title": "Partial Consistency",
+      "number": "4.14.2"
+    },
+    {
+      "id": "impl-multi-check",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#impl-multi-check",
+      "level": 4,
+      "title": "Consistency with multiple checks",
+      "number": "4.14.3"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#acknowledgments",
+      "level": 3,
+      "title": "Acknowledgments (optional)",
+      "number": "4.15"
+    },
+    {
+      "id": "rule-accuracy",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#rule-accuracy",
+      "level": 2,
+      "title": "Rule Accuracy",
+      "number": "5"
+    },
+    {
+      "id": "harmonization",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#harmonization",
+      "level": 2,
+      "title": "Harmonization",
+      "number": "6"
+    },
+    {
+      "id": "definitions",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#definitions",
+      "level": 2,
+      "title": "Definitions",
+      "number": "7"
+    },
+    {
+      "id": "appendix-data-example",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#appendix-data-example",
+      "level": 2,
+      "title": "Appendix 1: Expressing ACT Rule results with JSON-LD and EARL"
+    },
+    {
+      "id": "Acknowledgments",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#Acknowledgments",
+      "level": 2,
+      "title": "Appendix 2: Acknowledgments"
+    },
+    {
+      "id": "participants",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#participants",
+      "level": 3,
+      "title": "Participants of the AG WG active in the development of this document"
+    },
+    {
+      "id": "enabling-funders",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#enabling-funders",
+      "level": 3,
+      "title": "Enabling funders"
+    },
+    {
+      "id": "Change_History",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#Change_History",
+      "level": 2,
+      "title": "Appendix 3: Change History"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://www.w3.org/TR/act-rules-format-1.1/#informative",
+      "level": 3,
+      "title": "Informative References"
+    }
+  ]
+}

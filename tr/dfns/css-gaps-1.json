@@ -1,0 +1,1050 @@
+{
+  "spec": {
+    "title": "CSS Gap Decorations Module Level 1",
+    "url": "https://www.w3.org/TR/css-gaps-1/"
+  },
+  "dfns": [
+    {
+      "id": "gap-decoration",
+      "href": "https://www.w3.org/TR/css-gaps-1/#gap-decoration",
+      "linkingText": [
+        "gap decoration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gap-decorations",
+        "href": "https://www.w3.org/TR/css-gaps-1/#gap-decorations",
+        "title": "Gap decorations",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "gap-intersection-point",
+      "href": "https://www.w3.org/TR/css-gaps-1/#gap-intersection-point",
+      "linkingText": [
+        "gap intersection point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "layout-painting",
+        "href": "https://www.w3.org/TR/css-gaps-1/#layout-painting",
+        "title": "Layout and painting",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-column-rule-break",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-break",
+      "linkingText": [
+        "column-rule-break"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "break",
+        "href": "https://www.w3.org/TR/css-gaps-1/#break",
+        "title": "Breaking gap decorations into segments: The column-rule-break, row-rule-break, and rule-break properties",
+        "number": "2.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-row-rule-break",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-break",
+      "linkingText": [
+        "row-rule-break"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "break",
+        "href": "https://www.w3.org/TR/css-gaps-1/#break",
+        "title": "Breaking gap decorations into segments: The column-rule-break, row-rule-break, and rule-break properties",
+        "number": "2.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-column-rule-break-none",
+      "href": "https://www.w3.org/TR/css-gaps-1/#valdef-column-rule-break-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "column-rule-break",
+        "row-rule-break"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "break",
+        "href": "https://www.w3.org/TR/css-gaps-1/#break",
+        "title": "Breaking gap decorations into segments: The column-rule-break, row-rule-break, and rule-break properties",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-column-rule-break-spanning-item",
+      "href": "https://www.w3.org/TR/css-gaps-1/#valdef-column-rule-break-spanning-item",
+      "linkingText": [
+        "spanning-item"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "column-rule-break",
+        "row-rule-break"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "break",
+        "href": "https://www.w3.org/TR/css-gaps-1/#break",
+        "title": "Breaking gap decorations into segments: The column-rule-break, row-rule-break, and rule-break properties",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-column-rule-break-intersection",
+      "href": "https://www.w3.org/TR/css-gaps-1/#valdef-column-rule-break-intersection",
+      "linkingText": [
+        "intersection"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "column-rule-break",
+        "row-rule-break"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "break",
+        "href": "https://www.w3.org/TR/css-gaps-1/#break",
+        "title": "Breaking gap decorations into segments: The column-rule-break, row-rule-break, and rule-break properties",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-rule-break",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-break",
+      "linkingText": [
+        "rule-break"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "break",
+        "href": "https://www.w3.org/TR/css-gaps-1/#break",
+        "title": "Breaking gap decorations into segments: The column-rule-break, row-rule-break, and rule-break properties",
+        "number": "2.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "discontiguous",
+      "href": "https://www.w3.org/TR/css-gaps-1/#discontiguous",
+      "linkingText": [
+        "discontiguous"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pairing",
+        "href": "https://www.w3.org/TR/css-gaps-1/#pairing",
+        "title": "Pairing gap intersection points into segments",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "determine-pairs-of-gap-decoration-endpoints",
+      "href": "https://www.w3.org/TR/css-gaps-1/#determine-pairs-of-gap-decoration-endpoints",
+      "linkingText": [
+        "determine pairs of gap decoration endpoints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pairing",
+        "href": "https://www.w3.org/TR/css-gaps-1/#pairing",
+        "title": "Pairing gap intersection points into segments",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-column-rule-outset",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-outset",
+      "linkingText": [
+        "column-rule-outset"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "outset",
+        "href": "https://www.w3.org/TR/css-gaps-1/#outset",
+        "title": "Adjusting gap decoration endpoints: The column-rule-outset, row-rule-outset, and rule-outset properties",
+        "number": "2.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-row-rule-outset",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-outset",
+      "linkingText": [
+        "row-rule-outset"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "outset",
+        "href": "https://www.w3.org/TR/css-gaps-1/#outset",
+        "title": "Adjusting gap decoration endpoints: The column-rule-outset, row-rule-outset, and rule-outset properties",
+        "number": "2.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-rule-outset",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-outset",
+      "linkingText": [
+        "rule-outset"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "outset",
+        "href": "https://www.w3.org/TR/css-gaps-1/#outset",
+        "title": "Adjusting gap decoration endpoints: The column-rule-outset, row-rule-outset, and rule-outset properties",
+        "number": "2.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "crossing-gap-width",
+      "href": "https://www.w3.org/TR/css-gaps-1/#crossing-gap-width",
+      "linkingText": [
+        "crossing gap width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "outset",
+        "href": "https://www.w3.org/TR/css-gaps-1/#outset",
+        "title": "Adjusting gap decoration endpoints: The column-rule-outset, row-rule-outset, and rule-outset properties",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-the-offset",
+      "href": "https://www.w3.org/TR/css-gaps-1/#compute-the-offset",
+      "linkingText": [
+        "compute the offset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "outset",
+        "href": "https://www.w3.org/TR/css-gaps-1/#outset",
+        "title": "Adjusting gap decoration endpoints: The column-rule-outset, row-rule-outset, and rule-outset properties",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-rule-paint-order",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-paint-order",
+      "linkingText": [
+        "rule-paint-order"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "paint-order",
+        "href": "https://www.w3.org/TR/css-gaps-1/#paint-order",
+        "title": "Gap decoration paint order: The rule-paint-order property",
+        "number": "2.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-column-rule-color",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-color",
+      "linkingText": [
+        "column-rule-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-color",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-color",
+        "title": "Gap decoration color: The column-rule-color and row-rule-color properties",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-row-rule-color",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-color",
+      "linkingText": [
+        "row-rule-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-color",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-color",
+        "title": "Gap decoration color: The column-rule-color and row-rule-color properties",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "typedef-line-color-list",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-line-color-list",
+      "linkingText": [
+        "<line-color-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-color",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-color",
+        "title": "Gap decoration color: The column-rule-color and row-rule-color properties",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-auto-line-color-list",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-auto-line-color-list",
+      "linkingText": [
+        "<auto-line-color-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-color",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-color",
+        "title": "Gap decoration color: The column-rule-color and row-rule-color properties",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-line-color-or-repeat",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-line-color-or-repeat",
+      "linkingText": [
+        "<line-color-or-repeat>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-color",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-color",
+        "title": "Gap decoration color: The column-rule-color and row-rule-color properties",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-repeat-line-color",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-repeat-line-color",
+      "linkingText": [
+        "<repeat-line-color>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-color",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-color",
+        "title": "Gap decoration color: The column-rule-color and row-rule-color properties",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-auto-repeat-line-color",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-auto-repeat-line-color",
+      "linkingText": [
+        "<auto-repeat-line-color>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-color",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-color",
+        "title": "Gap decoration color: The column-rule-color and row-rule-color properties",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "propdef-column-rule-style",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-style",
+      "linkingText": [
+        "column-rule-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-style",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-style",
+        "title": "Gap decoration style: The column-rule-style and row-rule-style properties",
+        "number": "3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-row-rule-style",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-style",
+      "linkingText": [
+        "row-rule-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-style",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-style",
+        "title": "Gap decoration style: The column-rule-style and row-rule-style properties",
+        "number": "3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "typedef-line-style-list",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-line-style-list",
+      "linkingText": [
+        "<line-style-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-style",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-style",
+        "title": "Gap decoration style: The column-rule-style and row-rule-style properties",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-auto-line-style-list",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-auto-line-style-list",
+      "linkingText": [
+        "<auto-line-style-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-style",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-style",
+        "title": "Gap decoration style: The column-rule-style and row-rule-style properties",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-line-style-or-repeat",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-line-style-or-repeat",
+      "linkingText": [
+        "<line-style-or-repeat>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-style",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-style",
+        "title": "Gap decoration style: The column-rule-style and row-rule-style properties",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-repeat-line-style",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-repeat-line-style",
+      "linkingText": [
+        "<repeat-line-style>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-style",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-style",
+        "title": "Gap decoration style: The column-rule-style and row-rule-style properties",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-auto-repeat-line-style",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-auto-repeat-line-style",
+      "linkingText": [
+        "<auto-repeat-line-style>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-style",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-style",
+        "title": "Gap decoration style: The column-rule-style and row-rule-style properties",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "propdef-column-rule-width",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-width",
+      "linkingText": [
+        "column-rule-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-width",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-width",
+        "title": "Gap decoration width: The column-rule-width and row-rule-width properties",
+        "number": "3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-row-rule-width",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-width",
+      "linkingText": [
+        "row-rule-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-width",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-width",
+        "title": "Gap decoration width: The column-rule-width and row-rule-width properties",
+        "number": "3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "typedef-line-width-list",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-line-width-list",
+      "linkingText": [
+        "<line-width-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-width",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-width",
+        "title": "Gap decoration width: The column-rule-width and row-rule-width properties",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-auto-line-width-list",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-auto-line-width-list",
+      "linkingText": [
+        "<auto-line-width-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-width",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-width",
+        "title": "Gap decoration width: The column-rule-width and row-rule-width properties",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-line-width-or-repeat",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-line-width-or-repeat",
+      "linkingText": [
+        "<line-width-or-repeat>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-width",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-width",
+        "title": "Gap decoration width: The column-rule-width and row-rule-width properties",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-repeat-line-width",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-repeat-line-width",
+      "linkingText": [
+        "<repeat-line-width>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-width",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-width",
+        "title": "Gap decoration width: The column-rule-width and row-rule-width properties",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-auto-repeat-line-width",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-auto-repeat-line-width",
+      "linkingText": [
+        "<auto-repeat-line-width>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "column-row-rule-width",
+        "href": "https://www.w3.org/TR/css-gaps-1/#column-row-rule-width",
+        "title": "Gap decoration width: The column-rule-width and row-rule-width properties",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "funcdef-repeat-line-color-repeat",
+      "href": "https://www.w3.org/TR/css-gaps-1/#funcdef-repeat-line-color-repeat",
+      "linkingText": [
+        "repeat()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "<repeat-line-color>",
+        "<auto-repeat-line-color>",
+        "<repeat-line-style>",
+        "<auto-repeat-line-style>",
+        "<repeat-line-width>",
+        "<auto-repeat-line-width>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "lists-repeat",
+        "href": "https://www.w3.org/TR/css-gaps-1/#lists-repeat",
+        "title": "Lists of values and the repeat() notation",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "integer-repeater",
+      "href": "https://www.w3.org/TR/css-gaps-1/#integer-repeater",
+      "linkingText": [
+        "integer repeater"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "lists-repeat",
+        "href": "https://www.w3.org/TR/css-gaps-1/#lists-repeat",
+        "title": "Lists of values and the repeat() notation",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "auto-repeater",
+      "href": "https://www.w3.org/TR/css-gaps-1/#auto-repeater",
+      "linkingText": [
+        "auto repeater"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "lists-repeat",
+        "href": "https://www.w3.org/TR/css-gaps-1/#lists-repeat",
+        "title": "Lists of values and the repeat() notation",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "assign-gap-decoration-values",
+      "href": "https://www.w3.org/TR/css-gaps-1/#assign-gap-decoration-values",
+      "linkingText": [
+        "assign gap decoration values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "lists-repeat",
+        "href": "https://www.w3.org/TR/css-gaps-1/#lists-repeat",
+        "title": "Lists of values and the repeat() notation",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "assign-gap-decoration-values-in-reverse",
+      "href": "https://www.w3.org/TR/css-gaps-1/#assign-gap-decoration-values-in-reverse",
+      "linkingText": [
+        "assign gap decoration values in reverse"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "lists-repeat",
+        "href": "https://www.w3.org/TR/css-gaps-1/#lists-repeat",
+        "title": "Lists of values and the repeat() notation",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-column-rule",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule",
+      "linkingText": [
+        "column-rule"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gap-decoration-shorthands",
+        "href": "https://www.w3.org/TR/css-gaps-1/#gap-decoration-shorthands",
+        "title": "Gap decoration shorthands: The column-rule and row-rule properties",
+        "number": "3.5"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-row-rule",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule",
+      "linkingText": [
+        "row-rule"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gap-decoration-shorthands",
+        "href": "https://www.w3.org/TR/css-gaps-1/#gap-decoration-shorthands",
+        "title": "Gap decoration shorthands: The column-rule and row-rule properties",
+        "number": "3.5"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "typedef-gap-rule-list",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-gap-rule-list",
+      "linkingText": [
+        "<gap-rule-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gap-decoration-shorthands",
+        "href": "https://www.w3.org/TR/css-gaps-1/#gap-decoration-shorthands",
+        "title": "Gap decoration shorthands: The column-rule and row-rule properties",
+        "number": "3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-gap-auto-rule-list",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-gap-auto-rule-list",
+      "linkingText": [
+        "<gap-auto-rule-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gap-decoration-shorthands",
+        "href": "https://www.w3.org/TR/css-gaps-1/#gap-decoration-shorthands",
+        "title": "Gap decoration shorthands: The column-rule and row-rule properties",
+        "number": "3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-gap-rule-or-repeat",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-gap-rule-or-repeat",
+      "linkingText": [
+        "<gap-rule-or-repeat>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gap-decoration-shorthands",
+        "href": "https://www.w3.org/TR/css-gaps-1/#gap-decoration-shorthands",
+        "title": "Gap decoration shorthands: The column-rule and row-rule properties",
+        "number": "3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-gap-repeat-rule",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-gap-repeat-rule",
+      "linkingText": [
+        "<gap-repeat-rule>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gap-decoration-shorthands",
+        "href": "https://www.w3.org/TR/css-gaps-1/#gap-decoration-shorthands",
+        "title": "Gap decoration shorthands: The column-rule and row-rule properties",
+        "number": "3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-gap-auto-repeat-rule",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-gap-auto-repeat-rule",
+      "linkingText": [
+        "<gap-auto-repeat-rule>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gap-decoration-shorthands",
+        "href": "https://www.w3.org/TR/css-gaps-1/#gap-decoration-shorthands",
+        "title": "Gap decoration shorthands: The column-rule and row-rule properties",
+        "number": "3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-gap-rule",
+      "href": "https://www.w3.org/TR/css-gaps-1/#typedef-gap-rule",
+      "linkingText": [
+        "<gap-rule>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gap-decoration-shorthands",
+        "href": "https://www.w3.org/TR/css-gaps-1/#gap-decoration-shorthands",
+        "title": "Gap decoration shorthands: The column-rule and row-rule properties",
+        "number": "3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "propdef-rule-color",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-color",
+      "linkingText": [
+        "rule-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rule-bi-directional",
+        "href": "https://www.w3.org/TR/css-gaps-1/#rule-bi-directional",
+        "title": "Bi-directional gap decoration shorthands: The rule-color, rule-style, rule-width, and rule properties",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-rule-style",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-style",
+      "linkingText": [
+        "rule-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rule-bi-directional",
+        "href": "https://www.w3.org/TR/css-gaps-1/#rule-bi-directional",
+        "title": "Bi-directional gap decoration shorthands: The rule-color, rule-style, rule-width, and rule properties",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-rule-width",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-width",
+      "linkingText": [
+        "rule-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rule-bi-directional",
+        "href": "https://www.w3.org/TR/css-gaps-1/#rule-bi-directional",
+        "title": "Bi-directional gap decoration shorthands: The rule-color, rule-style, rule-width, and rule properties",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-rule",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule",
+      "linkingText": [
+        "rule"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rule-bi-directional",
+        "href": "https://www.w3.org/TR/css-gaps-1/#rule-bi-directional",
+        "title": "Bi-directional gap decoration shorthands: The rule-color, rule-style, rule-width, and rule properties",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    }
+  ]
+}

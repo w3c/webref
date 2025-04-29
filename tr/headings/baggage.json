@@ -1,0 +1,195 @@
+{
+  "spec": {
+    "title": "Propagation format for distributed context: Baggage",
+    "url": "https://www.w3.org/TR/baggage/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/baggage/#title",
+      "level": 1,
+      "title": "Propagation format for distributed context: Baggage"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/baggage/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/baggage/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "1"
+    },
+    {
+      "id": "overview",
+      "href": "https://www.w3.org/TR/baggage/#overview",
+      "level": 2,
+      "title": "Overview",
+      "number": "2"
+    },
+    {
+      "id": "baggage-http-header-format",
+      "href": "https://www.w3.org/TR/baggage/#baggage-http-header-format",
+      "level": 2,
+      "title": "Baggage HTTP Header Format",
+      "number": "3"
+    },
+    {
+      "id": "header-name",
+      "href": "https://www.w3.org/TR/baggage/#header-name",
+      "level": 3,
+      "title": "Header Name",
+      "number": "3.1"
+    },
+    {
+      "id": "header-encoding",
+      "href": "https://www.w3.org/TR/baggage/#header-encoding",
+      "level": 3,
+      "title": "Header Encoding",
+      "number": "3.2"
+    },
+    {
+      "id": "header-content",
+      "href": "https://www.w3.org/TR/baggage/#header-content",
+      "level": 3,
+      "title": "Header Content",
+      "number": "3.3"
+    },
+    {
+      "id": "definition",
+      "href": "https://www.w3.org/TR/baggage/#definition",
+      "level": 4,
+      "title": "Definition",
+      "number": "3.3.1"
+    },
+    {
+      "id": "baggage-string",
+      "href": "https://www.w3.org/TR/baggage/#baggage-string",
+      "level": 5,
+      "title": "baggage-string",
+      "number": "3.3.1.1"
+    },
+    {
+      "id": "key",
+      "href": "https://www.w3.org/TR/baggage/#key",
+      "level": 5,
+      "title": "key",
+      "number": "3.3.1.2"
+    },
+    {
+      "id": "value",
+      "href": "https://www.w3.org/TR/baggage/#value",
+      "level": 5,
+      "title": "value",
+      "number": "3.3.1.3"
+    },
+    {
+      "id": "property",
+      "href": "https://www.w3.org/TR/baggage/#property",
+      "level": 5,
+      "title": "property",
+      "number": "3.3.1.4"
+    },
+    {
+      "id": "limits",
+      "href": "https://www.w3.org/TR/baggage/#limits",
+      "level": 4,
+      "title": "Limits",
+      "number": "3.3.2"
+    },
+    {
+      "id": "example",
+      "href": "https://www.w3.org/TR/baggage/#example",
+      "level": 4,
+      "title": "Example",
+      "number": "3.3.3"
+    },
+    {
+      "id": "examples-of-http-headers",
+      "href": "https://www.w3.org/TR/baggage/#examples-of-http-headers",
+      "level": 3,
+      "title": "Examples of HTTP headers",
+      "number": "3.4"
+    },
+    {
+      "id": "example-use-case",
+      "href": "https://www.w3.org/TR/baggage/#example-use-case",
+      "level": 4,
+      "title": "Example use case",
+      "number": "3.4.1"
+    },
+    {
+      "id": "mutating-baggage",
+      "href": "https://www.w3.org/TR/baggage/#mutating-baggage",
+      "level": 3,
+      "title": "Mutating baggage",
+      "number": "3.5"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://www.w3.org/TR/baggage/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "4"
+    },
+    {
+      "id": "information-exposure",
+      "href": "https://www.w3.org/TR/baggage/#information-exposure",
+      "level": 3,
+      "title": "Information Exposure",
+      "number": "4.1"
+    },
+    {
+      "id": "other-risks",
+      "href": "https://www.w3.org/TR/baggage/#other-risks",
+      "level": 3,
+      "title": "Other Risks",
+      "number": "4.2"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/baggage/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "5"
+    },
+    {
+      "id": "privacy-of-the-baggage-header",
+      "href": "https://www.w3.org/TR/baggage/#privacy-of-the-baggage-header",
+      "level": 3,
+      "title": "Privacy of the baggage header",
+      "number": "5.1"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://www.w3.org/TR/baggage/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "A"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/baggage/#references",
+      "level": 2,
+      "title": "References",
+      "number": "B"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/baggage/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "B.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/baggage/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "B.2"
+    }
+  ]
+}

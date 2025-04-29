@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-04-28T01:35:30.926Z",
+  "date": "2025-04-29T01:51:53.724Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -31,7 +31,6 @@
       "css-conditional-values-1",
       "css-env-1",
       "css-extensions-1",
-      "css-gaps-1",
       "css-gcpm-4",
       "css-images-5",
       "css-link-params-1",
@@ -315,8 +314,10 @@
       "GIF",
       "w3c-patent-policy",
       "w3c-process",
+      "aac-registry",
       "accelerometer",
       "accname-1.2",
+      "act-rules-format-1.1",
       "ambient-light",
       "appmanifest",
       "audio-output",
@@ -324,6 +325,7 @@
       "audiobooks",
       "autoplay-detection",
       "badging",
+      "baggage",
       "battery-status",
       "beacon",
       "capture-handle-identity",
@@ -334,7 +336,6 @@
       "compositing-1",
       "compute-pressure",
       "contact-picker",
-      "content-editable",
       "core-aam-1.2",
       "credential-management-1",
       "csp-embedded-enforcement",
@@ -378,6 +379,7 @@
       "css-fonts-4",
       "css-fonts-5",
       "css-forms-1",
+      "css-gaps-1",
       "css-gcpm-3",
       "css-grid-1",
       "css-grid-2",
@@ -550,6 +552,7 @@
       "pointerevents4",
       "pointerlock-2",
       "presentation-api",
+      "privacy-principles",
       "proximity",
       "pub-manifest",
       "push-api",
@@ -591,7 +594,7 @@
       "sparql12-results-xml",
       "sparql12-service-description",
       "sparql12-update",
-      "SRI",
+      "sri-2",
       "svg-aam-1.0",
       "svg-integration",
       "svg-paths",
@@ -639,7 +642,7 @@
       "webcodecs-vp8-codec-registration",
       "webcodecs-vp9-codec-registration",
       "webcodecs",
-      "WebCryptoAPI",
+      "webcrypto-2",
       "webdriver-bidi",
       "webdriver2",
       "webgpu",
@@ -692,10 +695,10 @@
     ]
   },
   "stats": {
-    "crawled": 352,
+    "crawled": 356,
     "errors": 0
   },
-  "crawler": "reffy-18.4.7",
+  "crawler": "reffy-18.6.1",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -741,8 +744,61 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "28 April 2025",
+      "date": "29 April 2025",
       "links": "links/av1-spec.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/aac-registry/",
+      "seriesComposition": "full",
+      "shortname": "aac-registry",
+      "series": {
+        "shortname": "aac-registry",
+        "currentSpecification": "aac-registry",
+        "title": "W3C Alternative and Augmented Communication (AAC) Symbol Registry",
+        "shortTitle": "AAC",
+        "releaseUrl": "https://www.w3.org/TR/aac-registry/",
+        "nightlyUrl": "https://w3c.github.io/aac-registry/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Accessible Platform Architectures Working Group",
+          "url": "https://www.w3.org/WAI/APA/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/aac-registry/",
+        "status": "Draft Registry",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/aac-registry/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/aac-registry",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "W3C Alternative and Augmented Communication (AAC) Symbol Registry",
+      "source": "w3c",
+      "shortTitle": "AAC",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/aac-registry/",
+        "https://w3c.github.io/aac-registry/"
+      ],
+      "crawled": "https://www.w3.org/TR/aac-registry/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 12 Dec 2022 05:31:00 GMT"
+      },
+      "generator": "respec",
+      "date": "13 December 2022",
+      "links": "links/aac-registry.json",
+      "refs": "refs/aac-registry.json",
+      "headings": "headings/aac-registry.json",
+      "ids": "ids/aac-registry.json",
       "cddl": []
     },
     {
@@ -873,6 +929,62 @@
       "dfns": "dfns/accname-1.2.json",
       "headings": "headings/accname-1.2.json",
       "ids": "ids/accname-1.2.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/act-rules-format-1.1/",
+      "seriesComposition": "full",
+      "shortname": "act-rules-format-1.1",
+      "series": {
+        "shortname": "act-rules-format",
+        "currentSpecification": "act-rules-format-1.1",
+        "title": "Accessibility Conformance Testing (ACT) Rules Format",
+        "shortTitle": "ACT",
+        "releaseUrl": "https://www.w3.org/TR/act-rules-format/",
+        "nightlyUrl": "https://w3c.github.io/wcag-act/act-rules-format.html"
+      },
+      "seriesVersion": "1.1",
+      "nightly": {
+        "url": "https://w3c.github.io/wcag-act/act-rules-format.html",
+        "status": "Editor's Draft",
+        "sourcePath": "act-rules-format/act-rules-format.bs",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/wcag-act",
+        "filename": "act-rules-format.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Accessibility Guidelines Working Group",
+          "url": "https://www.w3.org/WAI/GL/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/act-rules-format-1.1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "title": "Accessibility Conformance Testing (ACT) Rules Format 1.1",
+      "source": "w3c",
+      "shortTitle": "ACT 1.1",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/act-rules-format-1.1/",
+        "https://w3c.github.io/wcag-act/act-rules-format.html"
+      ],
+      "crawled": "https://www.w3.org/TR/act-rules-format-1.1/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 18 Jun 2024 04:59:16 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "18 June 2024",
+      "revision": "f0884d5fe87415ada432b24115bc615145f990d0",
+      "links": "links/act-rules-format-1.1.json",
+      "refs": "refs/act-rules-format-1.1.json",
+      "dfns": "dfns/act-rules-format-1.1.json",
+      "headings": "headings/act-rules-format-1.1.json",
+      "ids": "ids/act-rules-format-1.1.json",
       "cddl": []
     },
     {
@@ -1141,7 +1253,6 @@
         "releaseUrl": "https://www.w3.org/TR/audiobooks/",
         "nightlyUrl": "https://w3c.github.io/audiobooks/"
       },
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -1165,6 +1276,7 @@
       "title": "Audiobooks",
       "source": "w3c",
       "shortTitle": "Audiobooks",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/audiobooks/",
@@ -1305,6 +1417,59 @@
       "dfns": "dfns/badging.json",
       "headings": "headings/badging.json",
       "ids": "ids/badging.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/baggage/",
+      "seriesComposition": "full",
+      "shortname": "baggage",
+      "series": {
+        "shortname": "baggage",
+        "currentSpecification": "baggage",
+        "title": "Propagation format for distributed context: Baggage",
+        "shortTitle": "Propagation format for distributed context: Baggage",
+        "releaseUrl": "https://www.w3.org/TR/baggage/",
+        "nightlyUrl": "https://w3c.github.io/baggage/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Distributed Tracing Working Group",
+          "url": "https://www.w3.org/groups/wg/distributed-tracing/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/baggage/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/baggage/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/baggage",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Propagation format for distributed context: Baggage",
+      "source": "w3c",
+      "shortTitle": "Propagation format for distributed context: Baggage",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/baggage/",
+        "https://w3c.github.io/baggage/"
+      ],
+      "crawled": "https://www.w3.org/TR/baggage/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 30 May 2024 02:12:02 GMT"
+      },
+      "generator": "respec",
+      "date": "30 May 2024",
+      "links": "links/baggage.json",
+      "refs": "refs/baggage.json",
+      "headings": "headings/baggage.json",
+      "ids": "ids/baggage.json",
       "cddl": []
     },
     {
@@ -1572,7 +1737,7 @@
       "groups": [
         {
           "name": "Verifiable Credentials Working Group",
-          "url": "https://www.w3.org/2017/vc/"
+          "url": "https://www.w3.org/groups/wg/vc/"
         }
       ],
       "release": {
@@ -1828,7 +1993,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/compute-pressure/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -1926,68 +2091,6 @@
       "dfns": "dfns/contact-picker.json",
       "headings": "headings/contact-picker.json",
       "ids": "ids/contact-picker.json",
-      "cddl": []
-    },
-    {
-      "url": "https://www.w3.org/TR/content-editable/",
-      "seriesComposition": "full",
-      "shortname": "content-editable",
-      "series": {
-        "shortname": "content-editable",
-        "currentSpecification": "content-editable",
-        "title": "ContentEditable",
-        "shortTitle": "ContentEditable",
-        "releaseUrl": "https://www.w3.org/TR/content-editable/",
-        "nightlyUrl": "https://w3c.github.io/contentEditable/"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Web Editing Working Group",
-          "url": "https://www.w3.org/groups/wg/webediting/"
-        }
-      ],
-      "release": {
-        "url": "https://www.w3.org/TR/content-editable/",
-        "status": "First Public Working Draft",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://w3c.github.io/contentEditable/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/contentEditable",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "title": "ContentEditable",
-      "source": "w3c",
-      "shortTitle": "ContentEditable",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "contenteditable"
-        ]
-      },
-      "versions": [
-        "https://www.w3.org/TR/content-editable/",
-        "https://w3c.github.io/contentEditable/"
-      ],
-      "crawled": "https://www.w3.org/TR/content-editable/",
-      "crawlCacheInfo": {
-        "lastModified": "Mon, 21 Apr 2025 16:38:14 GMT"
-      },
-      "generator": "respec",
-      "date": "22 April 2025",
-      "links": "links/content-editable.json",
-      "refs": "refs/content-editable.json",
-      "dfns": "dfns/content-editable.json",
-      "headings": "headings/content-editable.json",
-      "ids": "ids/content-editable.json",
       "cddl": []
     },
     {
@@ -4907,6 +5010,69 @@
       "dfns": "dfns/css-forms-1.json",
       "headings": "headings/css-forms-1.json",
       "ids": "ids/css-forms-1.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/css-gaps-1/",
+      "seriesComposition": "full",
+      "shortname": "css-gaps-1",
+      "series": {
+        "shortname": "css-gaps",
+        "currentSpecification": "css-gaps-1",
+        "title": "CSS Gap Decorations Module",
+        "shortTitle": "CSS Gap Decorations",
+        "releaseUrl": "https://www.w3.org/TR/css-gaps/",
+        "nightlyUrl": "https://drafts.csswg.org/css-gaps/"
+      },
+      "seriesVersion": "1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-gaps-1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-gaps-1/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-gaps-1/",
+          "https://w3c.github.io/csswg-drafts/css-gaps/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-gaps-1/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Gap Decorations Module Level 1",
+      "source": "w3c",
+      "shortTitle": "CSS Gap Decorations 1",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/css-gaps-1/",
+        "https://drafts.csswg.org/css-gaps-1/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-gaps-1/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 28 Apr 2025 06:26:59 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "17 April 2025",
+      "revision": "939e3709fe2f680ecca391e5550060f17ae4794f",
+      "algorithms": "algorithms/css-gaps-1.json",
+      "links": "links/css-gaps-1.json",
+      "refs": "refs/css-gaps-1.json",
+      "css": "css/css-gaps.json",
+      "dfns": "dfns/css-gaps-1.json",
+      "headings": "headings/css-gaps-1.json",
+      "ids": "ids/css-gaps-1.json",
       "cddl": []
     },
     {
@@ -9856,7 +10022,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/did-1.1/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -10669,7 +10835,6 @@
         "repository": "https://github.com/w3c/epub-specs",
         "filename": "index.html"
       },
-      "categories": [],
       "seriesNext": "epub-34",
       "organization": "W3C",
       "groups": [
@@ -10686,6 +10851,7 @@
       "title": "EPUB 3.3",
       "source": "w3c",
       "shortTitle": "EPUB 3.3",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/epub-33/",
@@ -10727,7 +10893,6 @@
         "repository": "https://github.com/w3c/epub-specs",
         "filename": "index.html"
       },
-      "categories": [],
       "seriesPrevious": "epub-33",
       "organization": "W3C",
       "groups": [
@@ -10738,12 +10903,13 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/epub-34/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "title": "EPUB 3.4",
       "source": "w3c",
       "shortTitle": "EPUB 3.4",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/epub-34/",
@@ -10786,7 +10952,6 @@
         "repository": "https://github.com/w3c/epub-specs",
         "filename": "index.html"
       },
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -10796,12 +10961,13 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/epub-a11y-111/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "title": "EPUB Accessibility 1.1.1",
       "source": "w3c",
       "shortTitle": "EPUB Accessibility 1.1.1",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/epub-a11y-111/",
@@ -10842,7 +11008,6 @@
         "repository": "https://github.com/w3c/epub-specs",
         "filename": "index.html"
       },
-      "categories": [],
       "seriesNext": "epub-rs-34",
       "organization": "W3C",
       "groups": [
@@ -10859,6 +11024,7 @@
       "title": "EPUB Reading Systems 3.3",
       "source": "w3c",
       "shortTitle": "EPUB Reading Systems 3.3",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/epub-rs-33/",
@@ -10899,7 +11065,6 @@
         "repository": "https://github.com/w3c/epub-specs",
         "filename": "index.html"
       },
-      "categories": [],
       "seriesPrevious": "epub-rs-33",
       "organization": "W3C",
       "groups": [
@@ -10910,12 +11075,13 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/epub-rs-34/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "title": "EPUB Reading Systems 3.4",
       "source": "w3c",
       "shortTitle": "EPUB Reading Systems 3.4",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/epub-rs-34/",
@@ -11289,7 +11455,7 @@
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/fxtf-drafts",
-        "sourcePath": "filter-effects/Overview.bs",
+        "sourcePath": "filter-effects-1/Overview.bs",
         "filename": "Overview.html"
       },
       "title": "Filter Effects Module Level 1",
@@ -12721,7 +12887,6 @@
         "nightlyUrl": "https://w3c.github.io/json-ld-api/"
       },
       "seriesVersion": "1.1",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -12745,6 +12910,7 @@
       "title": "JSON-LD 1.1 Processing Algorithms and API",
       "source": "w3c",
       "shortTitle": "JSON-LD 1.1 Processing Algorithms and API",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/json-ld11-api/",
@@ -12778,7 +12944,6 @@
         "nightlyUrl": "https://w3c.github.io/json-ld-framing/"
       },
       "seriesVersion": "1.1",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -12802,6 +12967,7 @@
       "title": "JSON-LD 1.1 Framing",
       "source": "w3c",
       "shortTitle": "JSON-LD 1.1 Framing",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/json-ld11-framing/",
@@ -12835,7 +13001,6 @@
         "nightlyUrl": "https://w3c.github.io/json-ld-syntax/"
       },
       "seriesVersion": "1.1",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -12859,6 +13024,7 @@
       "title": "JSON-LD 1.1",
       "source": "w3c",
       "shortTitle": "JSON-LD 1.1",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/json-ld11/",
@@ -14043,7 +14209,6 @@
         "releaseUrl": "https://www.w3.org/TR/miniapp-lifecycle/",
         "nightlyUrl": "https://w3c.github.io/miniapp-lifecycle/"
       },
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -14067,6 +14232,7 @@
       "title": "MiniApp Lifecycle",
       "source": "w3c",
       "shortTitle": "MiniApp Lifecycle",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/miniapp-lifecycle/",
@@ -14097,7 +14263,6 @@
         "releaseUrl": "https://www.w3.org/TR/miniapp-manifest/",
         "nightlyUrl": "https://w3c.github.io/miniapp-manifest/"
       },
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -14121,6 +14286,7 @@
       "title": "MiniApp Manifest",
       "source": "w3c",
       "shortTitle": "MiniApp Manifest",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/miniapp-manifest/",
@@ -14153,7 +14319,6 @@
         "releaseUrl": "https://www.w3.org/TR/miniapp-packaging/",
         "nightlyUrl": "https://w3c.github.io/miniapp-packaging/"
       },
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -14177,6 +14342,7 @@
       "title": "MiniApp Packaging",
       "source": "w3c",
       "shortTitle": "MiniApp Packaging",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/miniapp-packaging/",
@@ -16040,6 +16206,60 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/privacy-principles/",
+      "seriesComposition": "full",
+      "shortname": "privacy-principles",
+      "series": {
+        "shortname": "privacy-principles",
+        "currentSpecification": "privacy-principles",
+        "title": "Privacy Principles",
+        "shortTitle": "Privacy Principles",
+        "releaseUrl": "https://www.w3.org/TR/privacy-principles/",
+        "nightlyUrl": "https://w3ctag.github.io/privacy-principles/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Technical Architecture Group",
+          "url": "https://www.w3.org/2001/tag/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/privacy-principles/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3ctag.github.io/privacy-principles/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3ctag/privacy-principles",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Privacy Principles",
+      "source": "w3c",
+      "shortTitle": "Privacy Principles",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/privacy-principles/",
+        "https://w3ctag.github.io/privacy-principles/"
+      ],
+      "crawled": "https://www.w3.org/TR/privacy-principles/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 25 Mar 2025 09:25:18 GMT"
+      },
+      "generator": "respec",
+      "date": "25 March 2025",
+      "links": "links/privacy-principles.json",
+      "refs": "refs/privacy-principles.json",
+      "dfns": "dfns/privacy-principles.json",
+      "headings": "headings/privacy-principles.json",
+      "ids": "ids/privacy-principles.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/proximity/",
       "seriesComposition": "full",
       "shortname": "proximity",
@@ -16116,7 +16336,6 @@
         "releaseUrl": "https://www.w3.org/TR/pub-manifest/",
         "nightlyUrl": "https://w3c.github.io/pub-manifest/"
       },
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -16140,6 +16359,7 @@
       "title": "Publication Manifest",
       "source": "w3c",
       "shortTitle": "Publication Manifest",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/pub-manifest/",
@@ -16245,7 +16465,6 @@
         "sourcePath": "spec/index.html",
         "filename": "index.html"
       },
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -16261,6 +16480,7 @@
       "title": "RDF Dataset Canonicalization",
       "source": "w3c",
       "shortTitle": "RDF Dataset Canonicalization",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/rdf-canon/",
@@ -16293,7 +16513,6 @@
         "nightlyUrl": "https://w3c.github.io/rdf-concepts/spec/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -16317,6 +16536,7 @@
       "title": "RDF 1.2 Concepts and Abstract Syntax",
       "source": "w3c",
       "shortTitle": "RDF 1.2 Concepts and Abstract Syntax",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/rdf12-concepts/",
@@ -16350,7 +16570,6 @@
         "nightlyUrl": "https://www.w3.org/TR/n-quads/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "seriesPrevious": "rdf11-n-quads",
       "organization": "W3C",
       "groups": [
@@ -16375,6 +16594,7 @@
       "title": "RDF 1.2 N-Quads",
       "source": "w3c",
       "shortTitle": "RDF 1.2 N-Quads",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/rdf12-n-quads/",
@@ -16407,7 +16627,6 @@
         "nightlyUrl": "https://w3c.github.io/rdf-n-triples/spec/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -16431,6 +16650,7 @@
       "title": "RDF 1.2 N-Triples",
       "source": "w3c",
       "shortTitle": "RDF 1.2 N-Triples",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/rdf12-n-triples/",
@@ -16463,7 +16683,6 @@
         "nightlyUrl": "https://w3c.github.io/rdf-schema/spec/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -16487,6 +16706,7 @@
       "title": "RDF 1.2 Schema",
       "source": "w3c",
       "shortTitle": "RDF 1.2 Schema",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/rdf12-schema/",
@@ -16518,7 +16738,6 @@
         "nightlyUrl": "https://w3c.github.io/rdf-semantics/spec/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -16542,6 +16761,7 @@
       "title": "RDF 1.2 Semantics",
       "source": "w3c",
       "shortTitle": "RDF 1.2 Semantics",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/rdf12-semantics/",
@@ -16575,7 +16795,6 @@
         "nightlyUrl": "https://w3c.github.io/rdf-trig/spec/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -16599,6 +16818,7 @@
       "title": "RDF 1.2 TriG",
       "source": "w3c",
       "shortTitle": "RDF 1.2 TriG",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/rdf12-trig/",
@@ -16631,7 +16851,6 @@
         "nightlyUrl": "https://w3c.github.io/rdf-turtle/spec/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -16655,6 +16874,7 @@
       "title": "RDF 1.2 Turtle",
       "source": "w3c",
       "shortTitle": "RDF 1.2 Turtle",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/rdf12-turtle/",
@@ -16687,7 +16907,6 @@
         "nightlyUrl": "https://w3c.github.io/rdf-xml/spec/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -16711,6 +16930,7 @@
       "title": "RDF 1.2 XML Syntax",
       "source": "w3c",
       "shortTitle": "RDF 1.2 XML Syntax",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/rdf12-xml/",
@@ -17870,7 +18090,6 @@
         "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-core/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -17894,6 +18113,7 @@
       "title": "SHACL 1.2 Core",
       "source": "w3c",
       "shortTitle": "SHACL 1.2 Core",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/shacl12-core/",
@@ -17926,7 +18146,6 @@
         "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-sparql/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -17950,6 +18169,7 @@
       "title": "SHACL 1.2 SPARQL Extensions",
       "source": "w3c",
       "shortTitle": "SHACL 1.2 SPARQL Extensions",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/shacl12-sparql/",
@@ -17982,7 +18202,6 @@
         "nightlyUrl": "https://w3c.github.io/sparql-entailment/spec/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -18006,6 +18225,7 @@
       "title": "SPARQL 1.2 Entailment Regimes",
       "source": "w3c",
       "shortTitle": "SPARQL 1.2 Entailment Regimes",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/sparql12-entailment/",
@@ -18038,7 +18258,6 @@
         "nightlyUrl": "https://w3c.github.io/sparql-federated-query/spec/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -18062,6 +18281,7 @@
       "title": "SPARQL 1.2 Federated Query",
       "source": "w3c",
       "shortTitle": "SPARQL 1.2 Federated Query",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/sparql12-federated-query/",
@@ -18093,7 +18313,6 @@
         "nightlyUrl": "https://w3c.github.io/sparql-graph-store-protocol/spec/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -18117,6 +18336,7 @@
       "title": "SPARQL 1.2 Graph Store Protocol",
       "source": "w3c",
       "shortTitle": "SPARQL 1.2 Graph Store Protocol",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/sparql12-graph-store-protocol/",
@@ -18148,7 +18368,6 @@
         "nightlyUrl": "https://w3c.github.io/sparql-protocol/spec/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -18172,6 +18391,7 @@
       "title": "SPARQL 1.2 Protocol",
       "source": "w3c",
       "shortTitle": "SPARQL 1.2 Protocol",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/sparql12-protocol/",
@@ -18204,7 +18424,6 @@
         "nightlyUrl": "https://w3c.github.io/sparql-query/spec/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -18228,6 +18447,7 @@
       "title": "SPARQL 1.2 Query Language",
       "source": "w3c",
       "shortTitle": "SPARQL 1.2 Query Language",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/sparql12-query/",
@@ -18261,7 +18481,6 @@
         "nightlyUrl": "https://w3c.github.io/sparql-results-csv-tsv/spec/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -18285,6 +18504,7 @@
       "title": "SPARQL 1.2 Query Results CSV and TSV Formats",
       "source": "w3c",
       "shortTitle": "SPARQL 1.2 Query Results CSV and TSV Formats",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/sparql12-results-csv-tsv/",
@@ -18316,7 +18536,6 @@
         "nightlyUrl": "https://w3c.github.io/sparql-results-json/spec/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -18340,6 +18559,7 @@
       "title": "SPARQL 1.2 Query Results JSON Format",
       "source": "w3c",
       "shortTitle": "SPARQL 1.2 Query Results JSON Format",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/sparql12-results-json/",
@@ -18371,7 +18591,6 @@
         "nightlyUrl": "https://w3c.github.io/sparql-results-xml/spec/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -18395,6 +18614,7 @@
       "title": "SPARQL 1.2 Query Results XML Format",
       "source": "w3c",
       "shortTitle": "SPARQL 1.2 Query Results XML Format",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/sparql12-results-xml/",
@@ -18426,7 +18646,6 @@
         "nightlyUrl": "https://w3c.github.io/sparql-service-description/spec/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -18450,6 +18669,7 @@
       "title": "SPARQL 1.2 Service Description",
       "source": "w3c",
       "shortTitle": "SPARQL 1.2 Service Description",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/sparql12-service-description/",
@@ -18481,7 +18701,6 @@
         "nightlyUrl": "https://w3c.github.io/sparql-update/spec/"
       },
       "seriesVersion": "1.2",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
@@ -18505,6 +18724,7 @@
       "title": "SPARQL 1.2 Update",
       "source": "w3c",
       "shortTitle": "SPARQL 1.2 Update",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/sparql12-update/",
@@ -18524,23 +18744,27 @@
       "cddl": []
     },
     {
-      "url": "https://www.w3.org/TR/SRI/",
+      "url": "https://www.w3.org/TR/sri-2/",
       "seriesComposition": "full",
-      "shortname": "SRI",
+      "shortname": "sri-2",
       "series": {
-        "shortname": "SRI",
-        "currentSpecification": "SRI",
+        "shortname": "sri",
+        "currentSpecification": "sri-2",
         "title": "Subresource Integrity",
         "shortTitle": "SRI",
-        "releaseUrl": "https://www.w3.org/TR/SRI/",
+        "releaseUrl": "https://www.w3.org/TR/sri/",
         "nightlyUrl": "https://w3c.github.io/webappsec-subresource-integrity/"
       },
+      "seriesVersion": "2",
       "shortTitle": "SRI",
       "release": {
-        "url": "https://www.w3.org/TR/SRI/",
-        "status": "Recommendation",
+        "url": "https://www.w3.org/TR/sri-2/",
+        "status": "First Public Working Draft",
         "filename": "index.html"
       },
+      "formerNames": [
+        "SRI"
+      ],
       "organization": "W3C",
       "groups": [
         {
@@ -18569,22 +18793,22 @@
         ]
       },
       "versions": [
-        "https://www.w3.org/TR/SRI/",
+        "https://www.w3.org/TR/sri-2/",
         "https://w3c.github.io/webappsec-subresource-integrity/"
       ],
-      "crawled": "https://www.w3.org/TR/SRI/",
+      "crawled": "https://www.w3.org/TR/sri-2/",
       "crawlCacheInfo": {
         "lastModified": "Tue, 22 Apr 2025 05:37:29 GMT"
       },
       "generator": "bikeshed",
       "date": "22 April 2025",
       "revision": "68399a2ca4190c4024938fcd4e780482488c4bb7",
-      "algorithms": "algorithms/SRI.json",
-      "links": "links/SRI.json",
-      "refs": "refs/SRI.json",
-      "dfns": "dfns/SRI.json",
-      "headings": "headings/SRI.json",
-      "ids": "ids/SRI.json",
+      "algorithms": "algorithms/sri-2.json",
+      "links": "links/sri-2.json",
+      "refs": "refs/sri-2.json",
+      "dfns": "dfns/sri-2.json",
+      "headings": "headings/sri-2.json",
+      "ids": "ids/sri-2.json",
       "cddl": []
     },
     {
@@ -19358,7 +19582,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/uievents-code/",
-        "status": "Proposed Recommendation",
+        "status": "Recommendation",
         "filename": "Overview.html"
       },
       "title": "UI Events KeyboardEvent code Values",
@@ -19414,7 +19638,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/uievents-key/",
-        "status": "Proposed Recommendation",
+        "status": "Recommendation",
         "filename": "Overview.html"
       },
       "title": "UI Events KeyboardEvent key Values",
@@ -19649,12 +19873,11 @@
         "releaseUrl": "https://www.w3.org/TR/vc-data-integrity/",
         "nightlyUrl": "https://w3c.github.io/vc-data-integrity/"
       },
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
           "name": "Verifiable Credentials Working Group",
-          "url": "https://www.w3.org/2017/vc/"
+          "url": "https://www.w3.org/groups/wg/vc/"
         }
       ],
       "release": {
@@ -19673,6 +19896,7 @@
       "title": "Verifiable Credential Data Integrity 1.0",
       "source": "w3c",
       "shortTitle": "Verifiable Credential Data Integrity 1.0",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/vc-data-integrity/",
@@ -19705,12 +19929,11 @@
         "nightlyUrl": "https://w3c.github.io/vc-data-model/"
       },
       "seriesVersion": "2.0",
-      "categories": [],
       "organization": "W3C",
       "groups": [
         {
           "name": "Verifiable Credentials Working Group",
-          "url": "https://www.w3.org/2017/vc/"
+          "url": "https://www.w3.org/groups/wg/vc/"
         }
       ],
       "release": {
@@ -19729,6 +19952,7 @@
       "title": "Verifiable Credentials Data Model v2.0",
       "source": "w3c",
       "shortTitle": "Verifiable Credentials Data Model v2.0",
+      "categories": [],
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/vc-data-model-2.0/",
@@ -21616,27 +21840,31 @@
       "cddl": []
     },
     {
-      "url": "https://www.w3.org/TR/WebCryptoAPI/",
+      "url": "https://www.w3.org/TR/webcrypto-2/",
       "seriesComposition": "full",
-      "shortname": "WebCryptoAPI",
+      "shortname": "webcrypto-2",
       "series": {
-        "shortname": "WebCryptoAPI",
-        "currentSpecification": "WebCryptoAPI",
-        "title": "Web Cryptography API",
-        "shortTitle": "Web Cryptography API",
-        "releaseUrl": "https://www.w3.org/TR/WebCryptoAPI/",
+        "shortname": "webcrypto",
+        "currentSpecification": "webcrypto-2",
+        "title": "Web Cryptography",
+        "shortTitle": "Web Cryptography",
+        "releaseUrl": "https://www.w3.org/TR/webcrypto/",
         "nightlyUrl": "https://w3c.github.io/webcrypto/"
       },
+      "seriesVersion": "2",
+      "formerNames": [
+        "WebCryptoAPI"
+      ],
       "organization": "W3C",
       "groups": [
         {
-          "name": "Web Cryptography Working Group",
-          "url": "https://www.w3.org/2012/webcrypto/"
+          "name": "Web Application Security Working Group",
+          "url": "https://www.w3.org/groups/wg/webappsec/"
         }
       ],
       "release": {
-        "url": "https://www.w3.org/TR/WebCryptoAPI/",
-        "status": "Recommendation",
+        "url": "https://www.w3.org/TR/webcrypto-2/",
+        "status": "First Public Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -21649,7 +21877,7 @@
       },
       "title": "Web Cryptography Level 2",
       "source": "w3c",
-      "shortTitle": "Web Cryptography API",
+      "shortTitle": "Web Cryptography 2",
       "categories": [
         "browser"
       ],
@@ -21661,22 +21889,22 @@
         ]
       },
       "versions": [
-        "https://www.w3.org/TR/WebCryptoAPI/",
+        "https://www.w3.org/TR/webcrypto-2/",
         "https://w3c.github.io/webcrypto/"
       ],
-      "crawled": "https://www.w3.org/TR/WebCryptoAPI/",
+      "crawled": "https://www.w3.org/TR/webcrypto-2/",
       "crawlCacheInfo": {
         "lastModified": "Tue, 22 Apr 2025 09:08:38 GMT"
       },
       "generator": "respec",
       "date": "22 April 2025",
-      "algorithms": "algorithms/WebCryptoAPI.json",
-      "links": "links/WebCryptoAPI.json",
-      "refs": "refs/WebCryptoAPI.json",
-      "idl": "idl/WebCryptoAPI.idl",
-      "dfns": "dfns/WebCryptoAPI.json",
-      "headings": "headings/WebCryptoAPI.json",
-      "ids": "ids/WebCryptoAPI.json",
+      "algorithms": "algorithms/webcrypto-2.json",
+      "links": "links/webcrypto-2.json",
+      "refs": "refs/webcrypto-2.json",
+      "idl": "idl/webcrypto.idl",
+      "dfns": "dfns/webcrypto-2.json",
+      "headings": "headings/webcrypto-2.json",
+      "ids": "ids/webcrypto-2.json",
       "cddl": []
     },
     {
@@ -21993,11 +22221,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 26 Apr 2025 01:18:58 GMT"
+        "lastModified": "Tue, 29 Apr 2025 01:20:10 GMT"
       },
       "generator": "bikeshed",
-      "date": "26 April 2025",
-      "revision": "24a8097400f07d756e263c444bb1bf0902779fc1",
+      "date": "29 April 2025",
+      "revision": "b152d467509c83f8e071a0c231c95b85e241bc25",
       "algorithms": "algorithms/webnn.json",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
