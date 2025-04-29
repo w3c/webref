@@ -9,7 +9,7 @@
       "rationale": "compute",
       "steps": [
         {
-          "html": "<p>Compute a luminance value from the color channel values.</p>\n     <ul>\n      <li data-md=\"\">\n       <p>If the computed value of <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/SVG2/painting.html#ColorInterpolationProperty\" id=\"ref-for-ColorInterpolationProperty①\">color-interpolation</a> on the <a data-link-type=\"element\" href=\"https://drafts.fxtf.org/css-masking-1/#elementdef-mask\" id=\"ref-for-elementdef-mask①②\">mask</a> element is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/filter-effects-1/#valdef-color-interpolation-filters-linearrgb\" id=\"ref-for-valdef-color-interpolation-filters-linearrgb\">linearRGB</a>, convert the original image color values (potentially in the sRGB color space) to the linearRGB color space.</p>\n      </li><li data-md=\"\">\n       <p>Then, using non-premultiplied RGB color values, apply the luminance-to-alpha coefficients (as defined in the <a data-link-type=\"element\" href=\"https://www.w3.org/TR/filter-effects-1/#elementdef-fecolormatrix\" id=\"ref-for-elementdef-fecolormatrix\">feColorMatrix</a> filter primitive <a data-link-type=\"biblio\" href=\"https://drafts.fxtf.org/css-masking-1/#biblio-svg11\" title=\"Scalable Vector Graphics (SVG) 1.1 (Second Edition)\">[SVG11]</a>) to convert the RGB color values to luminance values.</p>\n     </li></ul>"
+          "html": "<p>Compute a luminance value from the color channel values.</p>\n     <ul>\n      <li data-md=\"\">\n       <p>If the computed value of <a class=\"property css\" data-link-type=\"property\" href=\"https://svgwg.org/svg2-draft/painting.html#ColorInterpolationProperty\" id=\"ref-for-ColorInterpolationProperty①\">color-interpolation</a> on the <a data-link-type=\"element\" href=\"https://drafts.fxtf.org/css-masking-1/#elementdef-mask\" id=\"ref-for-elementdef-mask①②\">mask</a> element is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.fxtf.org/filter-effects-1/#valdef-color-interpolation-filters-linearrgb\" id=\"ref-for-valdef-color-interpolation-filters-linearrgb\">linearRGB</a>, convert the original image color values (potentially in the sRGB color space) to the linearRGB color space.</p>\n      </li><li data-md=\"\">\n       <p>Then, using non-premultiplied RGB color values, apply the luminance-to-alpha coefficients (as defined in the <a data-link-type=\"element\" href=\"https://www.w3.org/TR/filter-effects-1/#elementdef-fecolormatrix\" id=\"ref-for-elementdef-fecolormatrix\">feColorMatrix</a> filter primitive <a data-link-type=\"biblio\" href=\"https://drafts.fxtf.org/css-masking-1/#biblio-svg11\" title=\"Scalable Vector Graphics (SVG) 1.1 (Second Edition)\">[SVG11]</a>) to convert the RGB color values to luminance values.</p>\n     </li></ul>"
         },
         {
           "html": "<p>Multiply the computed luminance value by the corresponding alpha value to produce the mask value.</p>"
@@ -31,16 +31,16 @@
               "rationale": ".algorithm",
               "steps": [
                 {
-                  "html": "<p>Let <var>box</var> be a rectangle initialized to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/SVG2/coords.html#TermObjectBoundingBox\" id=\"ref-for-TermObjectBoundingBox⑤\">object bounding box</a> of <var>element</var>.</p>"
+                  "html": "<p>Let <var>box</var> be a rectangle initialized to the <a data-link-type=\"dfn\" href=\"https://svgwg.org/svg2-draft/coords.html#TermObjectBoundingBox\" id=\"ref-for-TermObjectBoundingBox⑤\">object bounding box</a> of <var>element</var>.</p>"
                 },
                 {
-                  "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#used-value\" id=\"ref-for-used-value⑥\">used value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/SVG2/painting.html#StrokeWidthProperty\" id=\"ref-for-StrokeWidthProperty③\">stroke-width</a> &lt;= 0 or the used value of <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/SVG2/painting.html#StrokeProperty\" id=\"ref-for-StrokeProperty③\">stroke</a> is <span class=\"css\">none</span> return <var>box</var>.</p>"
+                  "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value⑥\">used value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://svgwg.org/svg2-draft/painting.html#StrokeWidthProperty\" id=\"ref-for-StrokeWidthProperty③\">stroke-width</a> &lt;= 0 or the used value of <a class=\"property css\" data-link-type=\"property\" href=\"https://svgwg.org/svg2-draft/painting.html#StrokeProperty\" id=\"ref-for-StrokeProperty③\">stroke</a> is <span class=\"css\">none</span> return <var>box</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>delta</var> be the inflation value initialized to the half of the <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/SVG2/painting.html#StrokeWidthProperty\" id=\"ref-for-StrokeWidthProperty④\">stroke-width</a>.</p>"
+                  "html": "<p>Let <var>delta</var> be the inflation value initialized to the half of the <a class=\"property css\" data-link-type=\"property\" href=\"https://svgwg.org/svg2-draft/painting.html#StrokeWidthProperty\" id=\"ref-for-StrokeWidthProperty④\">stroke-width</a>.</p>"
                 },
                 {
-                  "html": "If <var>element</var> is not <a data-link-type=\"element\" href=\"https://www.w3.org/TR/SVG2/shapes.html#elementdef-rect\" id=\"ref-for-elementdef-rect②\">rect</a>, <a data-link-type=\"element\" href=\"https://www.w3.org/TR/SVG2/shapes.html#elementdef-ellipse\" id=\"ref-for-elementdef-ellipse②\">ellipse</a>, <a data-link-type=\"element\" href=\"https://www.w3.org/TR/SVG2/shapes.html#elementdef-circle\" id=\"ref-for-elementdef-circle④\">circle</a> or <a data-link-type=\"element\" href=\"https://www.w3.org/TR/SVG2/embedded.html#elementdef-image\" id=\"ref-for-elementdef-image②\">image</a> just follow one of the following conditions in the order they apply:",
+                  "html": "If <var>element</var> is not <a data-link-type=\"element\" href=\"https://svgwg.org/svg2-draft/shapes.html#elementdef-rect\" id=\"ref-for-elementdef-rect②\">rect</a>, <a data-link-type=\"element\" href=\"https://svgwg.org/svg2-draft/shapes.html#elementdef-ellipse\" id=\"ref-for-elementdef-ellipse②\">ellipse</a>, <a data-link-type=\"element\" href=\"https://svgwg.org/svg2-draft/shapes.html#elementdef-circle\" id=\"ref-for-elementdef-circle④\">circle</a> or <a data-link-type=\"element\" href=\"https://svgwg.org/svg2-draft/embedded.html#elementdef-image\" id=\"ref-for-elementdef-image②\">image</a> just follow one of the following conditions in the order they apply:",
                   "rationale": ".switch",
                   "steps": [
                     {
@@ -52,10 +52,10 @@
                           "rationale": "let",
                           "steps": [
                             {
-                              "html": "<p>Let <var>miter</var> be the used value of <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/SVG2/painting.html#StrokeMiterlimitProperty\" id=\"ref-for-StrokeMiterlimitProperty②\">stroke-miterlimit</a>.</p>"
+                              "html": "<p>Let <var>miter</var> be the used value of <a class=\"property css\" data-link-type=\"property\" href=\"https://svgwg.org/svg2-draft/painting.html#StrokeMiterlimitProperty\" id=\"ref-for-StrokeMiterlimitProperty②\">stroke-miterlimit</a>.</p>"
                             },
                             {
-                              "html": "<p>If <var>miter</var> is smaller than the square root of 2 and if the used value for <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/SVG2/painting.html#StrokeLinecapProperty\" id=\"ref-for-StrokeLinecapProperty②\">stroke-linecap</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/fill-stroke-3/#valdef-stroke-linecap-square\" id=\"ref-for-valdef-stroke-linecap-square\">square</a>, multiply <var>delta</var> with the square root of 2. Otherwise, multiply <var>delta</var> with <var>miter</var>.</p>"
+                              "html": "<p>If <var>miter</var> is smaller than the square root of 2 and if the used value for <a class=\"property css\" data-link-type=\"property\" href=\"https://svgwg.org/svg2-draft/painting.html#StrokeLinecapProperty\" id=\"ref-for-StrokeLinecapProperty②\">stroke-linecap</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.fxtf.org/fill-stroke-3/#valdef-stroke-linecap-square\" id=\"ref-for-valdef-stroke-linecap-square\">square</a>, multiply <var>delta</var> with the square root of 2. Otherwise, multiply <var>delta</var> with <var>miter</var>.</p>"
                             }
                           ]
                         },
@@ -87,16 +87,16 @@
               "rationale": ".algorithm",
               "steps": [
                 {
-                  "html": "<p>Let <var>box</var> be a rectangle initialized to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/SVG2/coords.html#TermObjectBoundingBox\" id=\"ref-for-TermObjectBoundingBox⑤\">object bounding box</a> of <var>element</var>.</p>"
+                  "html": "<p>Let <var>box</var> be a rectangle initialized to the <a data-link-type=\"dfn\" href=\"https://svgwg.org/svg2-draft/coords.html#TermObjectBoundingBox\" id=\"ref-for-TermObjectBoundingBox⑤\">object bounding box</a> of <var>element</var>.</p>"
                 },
                 {
-                  "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#used-value\" id=\"ref-for-used-value⑥\">used value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/SVG2/painting.html#StrokeWidthProperty\" id=\"ref-for-StrokeWidthProperty③\">stroke-width</a> &lt;= 0 or the used value of <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/SVG2/painting.html#StrokeProperty\" id=\"ref-for-StrokeProperty③\">stroke</a> is <span class=\"css\">none</span> return <var>box</var>.</p>"
+                  "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value⑥\">used value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://svgwg.org/svg2-draft/painting.html#StrokeWidthProperty\" id=\"ref-for-StrokeWidthProperty③\">stroke-width</a> &lt;= 0 or the used value of <a class=\"property css\" data-link-type=\"property\" href=\"https://svgwg.org/svg2-draft/painting.html#StrokeProperty\" id=\"ref-for-StrokeProperty③\">stroke</a> is <span class=\"css\">none</span> return <var>box</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>delta</var> be the inflation value initialized to the half of the <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/SVG2/painting.html#StrokeWidthProperty\" id=\"ref-for-StrokeWidthProperty④\">stroke-width</a>.</p>"
+                  "html": "<p>Let <var>delta</var> be the inflation value initialized to the half of the <a class=\"property css\" data-link-type=\"property\" href=\"https://svgwg.org/svg2-draft/painting.html#StrokeWidthProperty\" id=\"ref-for-StrokeWidthProperty④\">stroke-width</a>.</p>"
                 },
                 {
-                  "html": "If <var>element</var> is not <a data-link-type=\"element\" href=\"https://www.w3.org/TR/SVG2/shapes.html#elementdef-rect\" id=\"ref-for-elementdef-rect②\">rect</a>, <a data-link-type=\"element\" href=\"https://www.w3.org/TR/SVG2/shapes.html#elementdef-ellipse\" id=\"ref-for-elementdef-ellipse②\">ellipse</a>, <a data-link-type=\"element\" href=\"https://www.w3.org/TR/SVG2/shapes.html#elementdef-circle\" id=\"ref-for-elementdef-circle④\">circle</a> or <a data-link-type=\"element\" href=\"https://www.w3.org/TR/SVG2/embedded.html#elementdef-image\" id=\"ref-for-elementdef-image②\">image</a> just follow one of the following conditions in the order they apply:",
+                  "html": "If <var>element</var> is not <a data-link-type=\"element\" href=\"https://svgwg.org/svg2-draft/shapes.html#elementdef-rect\" id=\"ref-for-elementdef-rect②\">rect</a>, <a data-link-type=\"element\" href=\"https://svgwg.org/svg2-draft/shapes.html#elementdef-ellipse\" id=\"ref-for-elementdef-ellipse②\">ellipse</a>, <a data-link-type=\"element\" href=\"https://svgwg.org/svg2-draft/shapes.html#elementdef-circle\" id=\"ref-for-elementdef-circle④\">circle</a> or <a data-link-type=\"element\" href=\"https://svgwg.org/svg2-draft/embedded.html#elementdef-image\" id=\"ref-for-elementdef-image②\">image</a> just follow one of the following conditions in the order they apply:",
                   "rationale": ".switch",
                   "steps": [
                     {
@@ -108,10 +108,10 @@
                           "rationale": "let",
                           "steps": [
                             {
-                              "html": "<p>Let <var>miter</var> be the used value of <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/SVG2/painting.html#StrokeMiterlimitProperty\" id=\"ref-for-StrokeMiterlimitProperty②\">stroke-miterlimit</a>.</p>"
+                              "html": "<p>Let <var>miter</var> be the used value of <a class=\"property css\" data-link-type=\"property\" href=\"https://svgwg.org/svg2-draft/painting.html#StrokeMiterlimitProperty\" id=\"ref-for-StrokeMiterlimitProperty②\">stroke-miterlimit</a>.</p>"
                             },
                             {
-                              "html": "<p>If <var>miter</var> is smaller than the square root of 2 and if the used value for <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/SVG2/painting.html#StrokeLinecapProperty\" id=\"ref-for-StrokeLinecapProperty②\">stroke-linecap</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/fill-stroke-3/#valdef-stroke-linecap-square\" id=\"ref-for-valdef-stroke-linecap-square\">square</a>, multiply <var>delta</var> with the square root of 2. Otherwise, multiply <var>delta</var> with <var>miter</var>.</p>"
+                              "html": "<p>If <var>miter</var> is smaller than the square root of 2 and if the used value for <a class=\"property css\" data-link-type=\"property\" href=\"https://svgwg.org/svg2-draft/painting.html#StrokeLinecapProperty\" id=\"ref-for-StrokeLinecapProperty②\">stroke-linecap</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.fxtf.org/fill-stroke-3/#valdef-stroke-linecap-square\" id=\"ref-for-valdef-stroke-linecap-square\">square</a>, multiply <var>delta</var> with the square root of 2. Otherwise, multiply <var>delta</var> with <var>miter</var>.</p>"
                             }
                           ]
                         },
@@ -143,7 +143,7 @@
               "rationale": ".algorithm",
               "steps": [
                 {
-                  "html": "<p>Let <var>parent</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/SVG2/struct.html#container-element\" id=\"ref-for-container-element①⑨\">container element</a> if it is one, or the root of the <a data-link-type=\"element\" href=\"https://www.w3.org/TR/SVG2/struct.html#elementdef-use\" id=\"ref-for-elementdef-use②②\">use</a> element’s shadow tree otherwise.</p>"
+                  "html": "<p>Let <var>parent</var> be the <a data-link-type=\"dfn\" href=\"https://svgwg.org/svg2-draft/struct.html#container-element\" id=\"ref-for-container-element①⑨\">container element</a> if it is one, or the root of the <a data-link-type=\"element\" href=\"https://svgwg.org/svg2-draft/struct.html#elementdef-use\" id=\"ref-for-elementdef-use②②\">use</a> element’s shadow tree otherwise.</p>"
                 },
                 {
                   "html": "For each child <var>child</var> of <var>parent</var>",
@@ -174,7 +174,7 @@
               "rationale": ".algorithm",
               "steps": [
                 {
-                  "html": "<p>Let <var>parent</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/SVG2/struct.html#container-element\" id=\"ref-for-container-element①⑨\">container element</a> if it is one, or the root of the <a data-link-type=\"element\" href=\"https://www.w3.org/TR/SVG2/struct.html#elementdef-use\" id=\"ref-for-elementdef-use②②\">use</a> element’s shadow tree otherwise.</p>"
+                  "html": "<p>Let <var>parent</var> be the <a data-link-type=\"dfn\" href=\"https://svgwg.org/svg2-draft/struct.html#container-element\" id=\"ref-for-container-element①⑨\">container element</a> if it is one, or the root of the <a data-link-type=\"element\" href=\"https://svgwg.org/svg2-draft/struct.html#elementdef-use\" id=\"ref-for-elementdef-use②②\">use</a> element’s shadow tree otherwise.</p>"
                 },
                 {
                   "html": "For each child <var>child</var> of <var>parent</var>",
@@ -205,7 +205,7 @@
               "rationale": ".algorithm",
               "steps": [
                 {
-                  "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/SVG2/coords.html#TermObjectBoundingBox\" id=\"ref-for-TermObjectBoundingBox⑥\">object bounding box</a> of <var>element</var>.</p>"
+                  "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://svgwg.org/svg2-draft/coords.html#TermObjectBoundingBox\" id=\"ref-for-TermObjectBoundingBox⑥\">object bounding box</a> of <var>element</var>.</p>"
                 }
               ]
             }
