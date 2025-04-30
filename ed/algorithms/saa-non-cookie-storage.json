@@ -18,7 +18,7 @@
     {
       "name": "Document/requestStorageAccess(types)",
       "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-document-requeststorageaccess",
-      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document④\">Document</a></code> <var>doc</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-document-requeststorageaccess\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestStorageAccess(types)</code></dfn> method must run these steps:",
+      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document④\">Document</a></code> <var>doc</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestStorageAccess(types)|requestStorageAccess()\" id=\"dom-document-requeststorageaccess\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestStorageAccess(types)</code></dfn> method must run these steps:",
       "rationale": "let",
       "steps": [
         {
@@ -56,7 +56,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>handle</var> be a new object of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle\" id=\"ref-for-storageaccesshandle②\">StorageAccessHandle</a></code>.</p>"
+              "html": "<p>Let <var>handle</var> be a new object of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle\" id=\"ref-for-storageaccesshandle③\">StorageAccessHandle</a></code>.</p>"
             },
             {
               "html": "<p>Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle-types\" id=\"ref-for-storageaccesshandle-types\">types</a> to <var>types</var>.</p>"
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "html": "Redefine <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dom-document-requeststorageaccess\" id=\"ref-for-dom-document-requeststorageaccess⑤\">requestStorageAccess()</a></code> to:",
+      "html": "Redefine <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dom-document-requeststorageaccess\" id=\"ref-for-dom-document-requeststorageaccess⑧\">requestStorageAccess()</a></code> to:",
       "rationale": "return",
       "steps": [
         {
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "html": "Modify <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dom-document-requeststorageaccess\" id=\"ref-for-dom-document-requeststorageaccess⑦\">requestStorageAccess()</a></code> at step 14.1.1.1.1 to read:",
+      "html": "Modify <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dom-document-requeststorageaccess\" id=\"ref-for-dom-document-requeststorageaccess①⓪\">requestStorageAccess()</a></code> at step 14.1.1.1.1 to read:",
       "rationale": "if",
       "steps": [
         {
@@ -192,7 +192,7 @@
     {
       "name": "StorageAccessHandle/getDirectory()",
       "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-getdirectory",
-      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle\" id=\"ref-for-storageaccesshandle③\">StorageAccessHandle</a></code> <var>handle</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dictdef-storageaccesstypes\" id=\"ref-for-dictdef-storageaccesstypes②\">StorageAccessTypes</a></code> <var>types</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storageaccesshandle-getdirectory\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getDirectory()</code></dfn> method must run these steps:",
+      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle\" id=\"ref-for-storageaccesshandle④\">StorageAccessHandle</a></code> <var>handle</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dictdef-storageaccesstypes\" id=\"ref-for-dictdef-storageaccesstypes②\">StorageAccessTypes</a></code> <var>types</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storageaccesshandle-getdirectory\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getDirectory()</code></dfn> method must run these steps:",
       "rationale": "let",
       "steps": [
         {
@@ -236,7 +236,7 @@
     {
       "name": "StorageAccessHandle/estimate()",
       "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-estimate",
-      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle\" id=\"ref-for-storageaccesshandle④\">StorageAccessHandle</a></code> <var>handle</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dictdef-storageaccesstypes\" id=\"ref-for-dictdef-storageaccesstypes③\">StorageAccessTypes</a></code> <var>types</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storageaccesshandle-estimate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>estimate()</code></dfn> method must run these steps:",
+      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle\" id=\"ref-for-storageaccesshandle⑤\">StorageAccessHandle</a></code> <var>handle</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dictdef-storageaccesstypes\" id=\"ref-for-dictdef-storageaccesstypes③\">StorageAccessTypes</a></code> <var>types</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storageaccesshandle-estimate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>estimate()</code></dfn> method must run these steps:",
       "rationale": "let",
       "steps": [
         {
@@ -280,7 +280,7 @@
     {
       "name": "StorageAccessHandle/createObjectURL(obj)",
       "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-createobjecturl",
-      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle\" id=\"ref-for-storageaccesshandle⑤\">StorageAccessHandle</a></code> <var>handle</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dictdef-storageaccesstypes\" id=\"ref-for-dictdef-storageaccesstypes④\">StorageAccessTypes</a></code> <var>types</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①\">Blob</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/media-source/#dom-mediasource\" id=\"ref-for-dom-mediasource①\">MediaSource</a></code> <var>obj</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storageaccesshandle-createobjecturl\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>createObjectURL(obj)</code></dfn> method must run these steps:",
+      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle\" id=\"ref-for-storageaccesshandle⑥\">StorageAccessHandle</a></code> <var>handle</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dictdef-storageaccesstypes\" id=\"ref-for-dictdef-storageaccesstypes④\">StorageAccessTypes</a></code> <var>types</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①\">Blob</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/media-source/#dom-mediasource\" id=\"ref-for-dom-mediasource①\">MediaSource</a></code> <var>obj</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storageaccesshandle-createobjecturl\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>createObjectURL(obj)</code></dfn> method must run these steps:",
       "rationale": "if",
       "steps": [
         {
@@ -300,7 +300,7 @@
     {
       "name": "StorageAccessHandle/revokeObjectURL(url)",
       "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-revokeobjecturl",
-      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle\" id=\"ref-for-storageaccesshandle⑥\">StorageAccessHandle</a></code> <var>handle</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dictdef-storageaccesstypes\" id=\"ref-for-dictdef-storageaccesstypes⑤\">StorageAccessTypes</a></code> <var>types</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString④\">DOMString</a></code> <var>url</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storageaccesshandle-revokeobjecturl\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>revokeObjectURL(url)</code></dfn> method must run these steps:",
+      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle\" id=\"ref-for-storageaccesshandle⑦\">StorageAccessHandle</a></code> <var>handle</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dictdef-storageaccesstypes\" id=\"ref-for-dictdef-storageaccesstypes⑤\">StorageAccessTypes</a></code> <var>types</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString④\">DOMString</a></code> <var>url</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storageaccesshandle-revokeobjecturl\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>revokeObjectURL(url)</code></dfn> method must run these steps:",
       "rationale": "if",
       "steps": [
         {
@@ -320,7 +320,7 @@
     {
       "name": "StorageAccessHandle/BroadcastChannel(name)",
       "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-broadcastchannel",
-      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle\" id=\"ref-for-storageaccesshandle⑦\">StorageAccessHandle</a></code> <var>handle</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dictdef-storageaccesstypes\" id=\"ref-for-dictdef-storageaccesstypes⑥\">StorageAccessTypes</a></code> <var>types</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString⑤\">DOMString</a></code> <var>name</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storageaccesshandle-broadcastchannel\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>BroadcastChannel(name)</code></dfn> method must run these steps:",
+      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle\" id=\"ref-for-storageaccesshandle⑧\">StorageAccessHandle</a></code> <var>handle</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dictdef-storageaccesstypes\" id=\"ref-for-dictdef-storageaccesstypes⑥\">StorageAccessTypes</a></code> <var>types</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString⑤\">DOMString</a></code> <var>name</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storageaccesshandle-broadcastchannel\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>BroadcastChannel(name)</code></dfn> method must run these steps:",
       "rationale": "if",
       "steps": [
         {
@@ -342,7 +342,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dom-sharedworkeroptions-samesitecookies\" id=\"ref-for-dom-sharedworkeroptions-samesitecookies①\">sameSiteCookies</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dom-samesitecookiestype-all\" id=\"ref-for-dom-samesitecookiestype-all①\">all</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated document</a> is not <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#first-party-site-context\" id=\"ref-for-first-party-site-context③\">first-party-site context</a>, then:",
+          "html": "If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dom-sharedworkeroptions-samesitecookies\" id=\"ref-for-dom-sharedworkeroptions-samesitecookies①\">sameSiteCookies</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dom-samesitecookiestype-all\" id=\"ref-for-dom-samesitecookiestype-all①\">all</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated document</a> is not <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#first-party-site-context\" id=\"ref-for-first-party-site-context③\">first-party-site context</a>, then:",
           "rationale": "throw",
           "steps": [
             {
@@ -364,7 +364,7 @@
     {
       "name": "StorageAccessHandle/SharedWorker(scriptURL, options)",
       "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-sharedworker",
-      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle\" id=\"ref-for-storageaccesshandle⑧\">StorageAccessHandle</a></code> <var>handle</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dictdef-storageaccesstypes\" id=\"ref-for-dictdef-storageaccesstypes⑦\">StorageAccessTypes</a></code> <var>types</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString①\">USVString</a></code> <var>scriptURL</var>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString⑥\">DOMString</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dictdef-sharedworkeroptions\" id=\"ref-for-dictdef-sharedworkeroptions②\">SharedWorkerOptions</a></code> <var>options</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageAccessHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"SharedWorker(scriptURL, options)|SharedWorker(scriptURL)\" id=\"dom-storageaccesshandle-sharedworker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>SharedWorker(scriptURL, options)</code></dfn> method must run these steps:",
+      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle\" id=\"ref-for-storageaccesshandle⑨\">StorageAccessHandle</a></code> <var>handle</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dictdef-storageaccesstypes\" id=\"ref-for-dictdef-storageaccesstypes⑦\">StorageAccessTypes</a></code> <var>types</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString①\">USVString</a></code> <var>scriptURL</var>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString⑥\">DOMString</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/saa-non-cookie-storage/#dictdef-sharedworkeroptions\" id=\"ref-for-dictdef-sharedworkeroptions②\">SharedWorkerOptions</a></code> <var>options</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageAccessHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"SharedWorker(scriptURL, options)|SharedWorker(scriptURL)\" id=\"dom-storageaccesshandle-sharedworker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>SharedWorker(scriptURL, options)</code></dfn> method must run these steps:",
       "rationale": "if",
       "steps": [
         {
