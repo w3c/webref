@@ -16,7 +16,7 @@ index 45330025c..6cc0a7887 100644
  
  partial interface Document {
    Promise<boolean> hasUnpartitionedCookieAccess();
--  Promise<StorageAccessHandle> requestStorageAccess(StorageAccessTypes types);
+-  Promise<StorageAccessHandle> requestStorageAccess(optional StorageAccessTypes types = {});
  };
  
  enum SameSiteCookiesType { "all", "none" };
