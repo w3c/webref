@@ -1,0 +1,30 @@
+From 69295b1696d56cc302c1aba4e910808bff490440 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Wed, 30 Apr 2025 12:35:45 +0200
+Subject: [PATCH] Drop IDL enum from css-color-adjust
+
+Pending resolution of https://github.com/w3c/csswg-drafts/issues/12135
+---
+ ed/idl/css-color-adjust.idl | 10 ----------
+ 1 file changed, 10 deletions(-)
+ delete mode 100644 ed/idl/css-color-adjust.idl
+
+diff --git a/ed/idl/css-color-adjust.idl b/ed/idl/css-color-adjust.idl
+deleted file mode 100644
+index beabbb70d..000000000
+--- a/ed/idl/css-color-adjust.idl
++++ /dev/null
+@@ -1,10 +0,0 @@
+-// GENERATED CONTENT - DO NOT EDIT
+-// Content was automatically extracted by Reffy into webref
+-// (https://github.com/w3c/webref)
+-// Source: CSS Color Adjustment Module Level 1 (https://drafts.csswg.org/css-color-adjust-1/)
+-
+-enum ForcedColorsModeAutomationTheme {
+-  "none",
+-  "light",
+-  "dark"
+-};
+-- 
+2.37.1.windows.1
+
