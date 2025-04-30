@@ -36,7 +36,7 @@ interface StorageAccessHandle {
 
 partial interface Document {
   Promise<boolean> hasUnpartitionedCookieAccess();
-  Promise<StorageAccessHandle> requestStorageAccess(StorageAccessTypes types);
+  Promise<StorageAccessHandle> requestStorageAccess(optional StorageAccessTypes types = {});
 };
 
 enum SameSiteCookiesType { "all", "none" };
