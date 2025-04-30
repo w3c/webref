@@ -489,7 +489,10 @@ emulation.SetGeolocationOverride = (
 )
 
 emulation.SetGeolocationOverrideParameters = {
-  coordinates: emulation.GeolocationCoordinates / null,
+  (
+    (coordinates: emulation.GeolocationCoordinates / null) //
+    (error: emulation.GeolocationPositionError)
+  ),
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
 }
@@ -502,6 +505,10 @@ emulation.GeolocationCoordinates = {
    ? altitudeAccuracy: (float .ge 0.0) / null .default null,
    ? heading: (0.0...360.0) / null .default null,
    ? speed: (float .ge 0.0) / null .default null,
+}
+
+emulation.GeolocationPositionError = {
+   type: "positionUnavailable"
 }
 
 NetworkCommand = (

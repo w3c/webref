@@ -20,14 +20,14 @@
           "html": "Update the media metadata presented to the platform to match the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediasession-metadata\" id=\"ref-for-dom-mediasession-metadata②\">metadata</a></code> for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#active-media-session\" id=\"ref-for-active-media-session①②\">active media session</a>."
         },
         {
-          "html": "If the user agent wants to display an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-artwork-images\" id=\"ref-for-mediametadata-artwork-images\">artwork image</a>,\n        it is RECOMMENDED to run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#fetch-image-algorithm\" id=\"ref-for-fetch-image-algorithm\">fetch image algorithm</a>."
+          "html": "If the user agent wants to display an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-artwork-images\" id=\"ref-for-mediametadata-artwork-images\">artwork image</a>,\n        the user agent MUST run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#fetch-image-algorithm\" id=\"ref-for-fetch-image-algorithm\">fetch image algorithm</a>."
         }
       ]
     },
     {
       "name": "fetch image algorithm",
       "href": "https://w3c.github.io/mediasession/#fetch-image-algorithm",
-      "html": "The RECOMMENDED <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-image-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch image algorithm</dfn> is as follows:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-image-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch image algorithm</dfn> is as follows:",
       "rationale": "if",
       "steps": [
         {
@@ -40,14 +40,17 @@
           "html": "If the platform supports displaying media artwork, select a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"preferred-artwork-image\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">preferred artwork image</dfn> from <var>metadata</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediametadata-artwork\" id=\"ref-for-dom-mediametadata-artwork①\">artwork</a></code> of the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#active-media-session\" id=\"ref-for-active-media-session①④\">active media session</a>."
         },
         {
-          "html": "Then, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
-          "rationale": "wait",
+          "html": "Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch-record-request\" id=\"ref-for-concept-fetch-record-request\">request</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a> is the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#preferred-artwork-image\" id=\"ref-for-preferred-artwork-image\">preferred artwork image</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediaimage-src\" id=\"ref-for-dom-mediaimage-src\">src</a></code>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination\">destination</a> is \"image\", <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a> is \"no-cors\", <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a> is \"include\",\n        and whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-use-url-credentials-flag\" id=\"ref-for-concept-request-use-url-credentials-flag\">use-URL-credentials flag</a> is set."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch\">Fetch</a> <var>request</var> with  the following steps executed\n        as the fetch’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-response\" id=\"ref-for-process-response\">processResponse</a> algorithm.",
+          "rationale": "let",
           "steps": [
             {
-              "html": "Wait for the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a>."
+              "html": "Let <var>response</var> be the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> given to the fetch’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-response\" id=\"ref-for-process-response①\">processResponse</a> algorithm."
             },
             {
-              "html": "If the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-type\" id=\"ref-for-concept-response-type\">type</a> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#dom-responsetype-default\" id=\"ref-for-dom-responsetype-default\">\"default\"</a></code>, attempt to decode the resource as an\n            image."
+              "html": "If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-type\" id=\"ref-for-concept-response-type\">type</a> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#dom-responsetype-error\" id=\"ref-for-dom-responsetype-error\">\"error\"</a></code>, attempt to decode <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#body-with-type-body\" id=\"ref-for-body-with-type-body\">body</a> as an\n            image."
             },
             {
               "html": "If the image format is supported, use the image as the artwork for\n            display in platform UI. Otherwise the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#fetch-image-algorithm\" id=\"ref-for-fetch-image-algorithm②\">fetch image algorithm</a> fails and terminates."
@@ -180,7 +183,7 @@
           "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediasession\" id=\"ref-for-mediasession①⑦\">MediaSession</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediasession-metadata\" id=\"ref-for-dom-mediasession-metadata⑧\">metadata</a></code> is not <code>null</code>, set its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-media-session\" id=\"ref-for-mediametadata-media-session①\">media session</a> to the current <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#mediasession\" id=\"ref-for-mediasession①⑧\">MediaSession</a></code>."
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">In parallel</a>, run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#update-metadata-algorithm\" id=\"ref-for-update-metadata-algorithm①\">update metadata algorithm</a>."
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">In parallel</a>, run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#update-metadata-algorithm\" id=\"ref-for-update-metadata-algorithm①\">update metadata algorithm</a>."
         }
       ]
     },
@@ -251,7 +254,7 @@
           "html": "Let <var>p</var> be a new promise."
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">In parallel</a>, run the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">In parallel</a>, run the following steps:",
           "rationale": "let",
           "steps": [
             {
@@ -444,7 +447,7 @@
               "html": "If the instance no longer has an associated <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-media-session\" id=\"ref-for-mediametadata-media-session④\">media\n        session</a>, abort these steps."
             },
             {
-              "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>, run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#update-metadata-algorithm\" id=\"ref-for-update-metadata-algorithm②\">update metadata\n        algorithm</a>."
+              "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>, run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#update-metadata-algorithm\" id=\"ref-for-update-metadata-algorithm②\">update metadata\n        algorithm</a>."
             }
           ]
         }
