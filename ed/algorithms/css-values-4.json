@@ -23,6 +23,9 @@
           "html": "<p>Let <var>req</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">url</a> is <var>parsedUrl</var>,\nwhose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination\">destination</a> is <var>destination</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a> is <var>corsMode</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a> is <var>environmentSettings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a> is \"same-origin\", <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-use-url-credentials-flag\" id=\"ref-for-concept-request-use-url-credentials-flag\">use-url-credentials flag</a> is set, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a> is <var>environmentSettings</var>,\nand whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer\">referrer</a> is <var>environmentSettings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#api-base-url\" id=\"ref-for-api-base-url①\">API base URL</a>.</p>"
         },
         {
+          "html": "<p>If <var>corsMode</var> is \"no-cors\", set <var>req</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode①\">credentials mode</a> to \"include\".</p>"
+        },
+        {
           "html": "<p>Apply any <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"url-request-modifier-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">URL request modifier steps</dfn> that apply to this request.</p>"
         },
         {
@@ -344,6 +347,9 @@
               "html": "<p>Return <var>root</var>.</p>"
             }
           ]
+        },
+        {
+          "html": "<p>Return <var>root</var>.</p>"
         }
       ]
     },
