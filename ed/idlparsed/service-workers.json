@@ -270,7 +270,7 @@
         "href": "https://w3c.github.io/ServiceWorker/#enumdef-serviceworkerstate"
       },
       "ServiceWorkerRegistration": {
-        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorkerRegistration : EventTarget {\n  readonly attribute ServiceWorker? installing;\n  readonly attribute ServiceWorker? waiting;\n  readonly attribute ServiceWorker? active;\n  [SameObject] readonly attribute NavigationPreloadManager navigationPreload;\n\n  readonly attribute USVString scope;\n  readonly attribute ServiceWorkerUpdateViaCache updateViaCache;\n\n  [NewObject] Promise<undefined> update();\n  [NewObject] Promise<boolean> unregister();\n\n  // event\n  attribute EventHandler onupdatefound;\n};",
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorkerRegistration : EventTarget {\n  readonly attribute ServiceWorker? installing;\n  readonly attribute ServiceWorker? waiting;\n  readonly attribute ServiceWorker? active;\n  [SameObject] readonly attribute NavigationPreloadManager navigationPreload;\n\n  readonly attribute USVString scope;\n  readonly attribute ServiceWorkerUpdateViaCache updateViaCache;\n\n  [NewObject] Promise<ServiceWorkerRegistration> update();\n  [NewObject] Promise<boolean> unregister();\n\n  // event\n  attribute EventHandler onupdatefound;\n};",
         "type": "interface",
         "name": "ServiceWorkerRegistration",
         "inheritance": "EventTarget",
@@ -394,7 +394,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "undefined"
+                  "idlType": "ServiceWorkerRegistration"
                 }
               ]
             },
@@ -4322,6 +4322,7 @@
         "ServiceWorker",
         "NavigationPreloadManager",
         "ServiceWorkerUpdateViaCache",
+        "ServiceWorkerRegistration",
         "EventHandler"
       ],
       "Navigator": [

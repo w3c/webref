@@ -159,7 +159,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>registrationObject</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#serviceworkerregistration\" id=\"ref-for-serviceworkerregistration⑤\">ServiceWorkerRegistration</a></code> in <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object's-realm\" id=\"ref-for-environment-settings-object's-realm①\">Realm</a>.</p>"
+              "html": "<p>Let <var>registrationObject</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#serviceworkerregistration\" id=\"ref-for-serviceworkerregistration⑥\">ServiceWorkerRegistration</a></code> in <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object's-realm\" id=\"ref-for-environment-settings-object's-realm①\">Realm</a>.</p>"
             },
             {
               "html": "<p>Set <var>registrationObject</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#serviceworkerregistration-service-worker-registration\" id=\"ref-for-serviceworkerregistration-service-worker-registration\">service worker registration</a> to <var>registration</var>.</p>"
@@ -3143,7 +3143,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>registrationObjects</var> be every <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#serviceworkerregistration\" id=\"ref-for-serviceworkerregistration①④\">ServiceWorkerRegistration</a></code> object in <var>settingsObject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object's-realm\" id=\"ref-for-environment-settings-object's-realm⑨\">realm</a>, whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#serviceworkerregistration-service-worker-registration\" id=\"ref-for-serviceworkerregistration-service-worker-registration⑦\">service worker registration</a> is <var>registration</var>.</p>"
+              "html": "<p>Let <var>registrationObjects</var> be every <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#serviceworkerregistration\" id=\"ref-for-serviceworkerregistration①⑤\">ServiceWorkerRegistration</a></code> object in <var>settingsObject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object's-realm\" id=\"ref-for-environment-settings-object's-realm⑨\">realm</a>, whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#serviceworkerregistration-service-worker-registration\" id=\"ref-for-serviceworkerregistration-service-worker-registration⑦\">service worker registration</a> is <var>registration</var>.</p>"
             },
             {
               "html": "<p>For each <var>registrationObject</var> of <var>registrationObjects</var>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire①\">fire an event</a> on <var>registrationObject</var> named <code>updatefound</code>.</p>"
@@ -4913,7 +4913,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>registrationObjects</var> be an array containing all the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#serviceworkerregistration\" id=\"ref-for-serviceworkerregistration①⑤\">ServiceWorkerRegistration</a></code> objects associated with <var>registration</var>.</p>"
+          "html": "<p>Let <var>registrationObjects</var> be an array containing all the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#serviceworkerregistration\" id=\"ref-for-serviceworkerregistration①⑥\">ServiceWorkerRegistration</a></code> objects associated with <var>registration</var>.</p>"
         },
         {
           "html": "If <var>target</var> is \"<code>installing</code>\", then:",
