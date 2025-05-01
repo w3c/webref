@@ -49,7 +49,6 @@
     "autolinks": {
       "https://datatracker.ietf.org/doc/html/rfc9651": {
         "anchors": [
-          "text-parse",
           "string",
           "inner-list",
           "token",
@@ -59,17 +58,19 @@
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
-          "concept-request-request",
+          "concept-request",
           "concept-request-header-list",
-          "concept-response-response",
+          "concept-response",
           "concept-header-list-get-structured-header",
           "concept-response-header-list",
+          "concept-response-url",
           "concept-request-url",
           "concept-request-method",
           "concept-header-list-append",
           "concept-request-initiator",
           "concept-network-error",
           "concept-response-status",
+          "redirect-status",
           "concept-response-body",
           "header-name",
           "concept-header-list-set-structured-header"
@@ -79,7 +80,8 @@
         "anchors": [
           "concept-origin",
           "same-site",
-          "same-origin"
+          "same-origin",
+          "concept-origin-domain"
         ]
       },
       "https://infra.spec.whatwg.org/": {
@@ -88,8 +90,8 @@
           "struct",
           "struct-item",
           "string",
-          "boolean",
           "list",
+          "boolean",
           "list-iterate",
           "iteration-continue",
           "tuple"
