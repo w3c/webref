@@ -2775,6 +2775,49 @@
         "partial": false,
         "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsprfvalues"
       },
+      "AuthenticationExtensionsPRFValuesJSON": {
+        "fragment": "dictionary AuthenticationExtensionsPRFValuesJSON {\n    required Base64URLString first;\n    Base64URLString second;\n};",
+        "type": "dictionary",
+        "name": "AuthenticationExtensionsPRFValuesJSON",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "first",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Base64URLString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvaluesjson-first"
+          },
+          {
+            "type": "field",
+            "name": "second",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Base64URLString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvaluesjson-second"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsprfvaluesjson"
+      },
       "AuthenticationExtensionsPRFInputs": {
         "fragment": "dictionary AuthenticationExtensionsPRFInputs {\n    AuthenticationExtensionsPRFValues eval;\n    record<DOMString, AuthenticationExtensionsPRFValues> evalByCredential;\n};",
         "type": "dictionary",
@@ -2835,6 +2878,66 @@
         "partial": false,
         "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsprfinputs"
       },
+      "AuthenticationExtensionsPRFInputsJSON": {
+        "fragment": "dictionary AuthenticationExtensionsPRFInputsJSON {\n    AuthenticationExtensionsPRFValuesJSON eval;\n    record<DOMString, AuthenticationExtensionsPRFValuesJSON> evalByCredential;\n};",
+        "type": "dictionary",
+        "name": "AuthenticationExtensionsPRFInputsJSON",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "eval",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AuthenticationExtensionsPRFValuesJSON"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputsjson-eval"
+          },
+          {
+            "type": "field",
+            "name": "evalByCredential",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "record",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AuthenticationExtensionsPRFValuesJSON"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputsjson-evalbycredential"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsprfinputsjson"
+      },
       "AuthenticationExtensionsPRFOutputs": {
         "fragment": "dictionary AuthenticationExtensionsPRFOutputs {\n    boolean enabled;\n    AuthenticationExtensionsPRFValues results;\n};",
         "type": "dictionary",
@@ -2877,6 +2980,49 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsprfoutputs"
+      },
+      "AuthenticationExtensionsPRFOutputsJSON": {
+        "fragment": "dictionary AuthenticationExtensionsPRFOutputsJSON {\n    boolean enabled;\n    AuthenticationExtensionsPRFValuesJSON results;\n};",
+        "type": "dictionary",
+        "name": "AuthenticationExtensionsPRFOutputsJSON",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "enabled",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfoutputsjson-enabled"
+          },
+          {
+            "type": "field",
+            "name": "results",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AuthenticationExtensionsPRFValuesJSON"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfoutputsjson-results"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsprfoutputsjson"
       },
       "LargeBlobSupport": {
         "fragment": "enum LargeBlobSupport {\n  \"required\",\n  \"preferred\",\n};",
@@ -2956,6 +3102,65 @@
         "partial": false,
         "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionslargeblobinputs"
       },
+      "AuthenticationExtensionsLargeBlobInputsJSON": {
+        "fragment": "dictionary AuthenticationExtensionsLargeBlobInputsJSON {\n    DOMString support;\n    boolean read;\n    Base64URLString write;\n};",
+        "type": "dictionary",
+        "name": "AuthenticationExtensionsLargeBlobInputsJSON",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "support",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionslargeblobinputsjson-support"
+          },
+          {
+            "type": "field",
+            "name": "read",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionslargeblobinputsjson-read"
+          },
+          {
+            "type": "field",
+            "name": "write",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Base64URLString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionslargeblobinputsjson-write"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionslargeblobinputsjson"
+      },
       "AuthenticationExtensionsLargeBlobOutputs": {
         "fragment": "dictionary AuthenticationExtensionsLargeBlobOutputs {\n    boolean supported;\n    ArrayBuffer blob;\n    boolean written;\n};",
         "type": "dictionary",
@@ -3014,6 +3219,65 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionslargebloboutputs"
+      },
+      "AuthenticationExtensionsLargeBlobOutputsJSON": {
+        "fragment": "dictionary AuthenticationExtensionsLargeBlobOutputsJSON {\n    boolean supported;\n    Base64URLString blob;\n    boolean written;\n};",
+        "type": "dictionary",
+        "name": "AuthenticationExtensionsLargeBlobOutputsJSON",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "supported",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionslargebloboutputsjson-supported"
+          },
+          {
+            "type": "field",
+            "name": "blob",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Base64URLString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionslargebloboutputsjson-blob"
+          },
+          {
+            "type": "field",
+            "name": "written",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionslargebloboutputsjson-written"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionslargebloboutputsjson"
       }
     },
     "idlExtendedNames": {
@@ -3499,6 +3763,138 @@
           "partial": true
         }
       ],
+      "AuthenticationExtensionsClientInputsJSON": [
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputsJSON {\n  DOMString appid;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientInputsJSON",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "appid",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputsjson-appid"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputsJSON {\n  DOMString appidExclude;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientInputsJSON",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "appidExclude",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputsjson-appidexclude"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputsJSON {\n    boolean credProps;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientInputsJSON",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "credProps",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputsjson-credprops"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputsJSON {\n    AuthenticationExtensionsPRFInputsJSON prf;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientInputsJSON",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "prf",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AuthenticationExtensionsPRFInputsJSON"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputsjson-prf"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputsJSON {\n    AuthenticationExtensionsLargeBlobInputsJSON largeBlob;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientInputsJSON",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "largeBlob",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AuthenticationExtensionsLargeBlobInputsJSON"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputsjson-largeblob"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
       "AuthenticationExtensionsClientOutputs": [
         {
           "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n  boolean appid;\n};",
@@ -3630,6 +4026,138 @@
           "extAttrs": [],
           "partial": true
         }
+      ],
+      "AuthenticationExtensionsClientOutputsJSON": [
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientOutputsJSON {\n  boolean appid;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientOutputsJSON",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "appid",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputsjson-appid"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientOutputsJSON {\n  boolean appidExclude;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientOutputsJSON",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "appidExclude",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputsjson-appidexclude"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientOutputsJSON {\n    CredentialPropertiesOutput credProps;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientOutputsJSON",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "credProps",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CredentialPropertiesOutput"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputsjson-credprops"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientOutputsJSON {\n    AuthenticationExtensionsPRFOutputsJSON prf;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientOutputsJSON",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "prf",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AuthenticationExtensionsPRFOutputsJSON"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputsjson-prf"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientOutputsJSON {\n    AuthenticationExtensionsLargeBlobOutputsJSON largeBlob;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientOutputsJSON",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "largeBlob",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AuthenticationExtensionsLargeBlobOutputsJSON"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputsjson-largeblob"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
       ]
     },
     "globals": {},
@@ -3674,7 +4202,11 @@
       "AuthenticatorAssertionResponseJSON": [
         "Base64URLString"
       ],
-      "AuthenticationExtensionsClientOutputsJSON": [],
+      "AuthenticationExtensionsClientOutputsJSON": [
+        "CredentialPropertiesOutput",
+        "AuthenticationExtensionsPRFOutputsJSON",
+        "AuthenticationExtensionsLargeBlobOutputsJSON"
+      ],
       "CredentialCreationOptions": [
         "PublicKeyCredentialCreationOptions"
       ],
@@ -3696,7 +4228,10 @@
       "PublicKeyCredentialDescriptorJSON": [
         "Base64URLString"
       ],
-      "AuthenticationExtensionsClientInputsJSON": [],
+      "AuthenticationExtensionsClientInputsJSON": [
+        "AuthenticationExtensionsPRFInputsJSON",
+        "AuthenticationExtensionsLargeBlobInputsJSON"
+      ],
       "PublicKeyCredentialRequestOptionsJSON": [
         "Base64URLString",
         "PublicKeyCredentialDescriptorJSON",
@@ -3767,17 +4302,32 @@
       "AuthenticationExtensionsPRFValues": [
         "BufferSource"
       ],
+      "AuthenticationExtensionsPRFValuesJSON": [
+        "Base64URLString"
+      ],
       "AuthenticationExtensionsPRFInputs": [
         "AuthenticationExtensionsPRFValues"
+      ],
+      "AuthenticationExtensionsPRFInputsJSON": [
+        "AuthenticationExtensionsPRFValuesJSON"
       ],
       "AuthenticationExtensionsPRFOutputs": [
         "AuthenticationExtensionsPRFValues"
       ],
+      "AuthenticationExtensionsPRFOutputsJSON": [
+        "AuthenticationExtensionsPRFValuesJSON"
+      ],
       "AuthenticationExtensionsLargeBlobInputs": [
         "BufferSource"
       ],
+      "AuthenticationExtensionsLargeBlobInputsJSON": [
+        "Base64URLString"
+      ],
       "AuthenticationExtensionsLargeBlobOutputs": [
         "ArrayBuffer"
+      ],
+      "AuthenticationExtensionsLargeBlobOutputsJSON": [
+        "Base64URLString"
       ]
     },
     "externalDependencies": [

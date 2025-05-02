@@ -1,3 +1,28 @@
 // Source: Web Authentication: An API for accessing Public Key Credentials - Level 3 (https://www.w3.org/TR/webauthn-3/)
 dictionary AuthenticationExtensionsClientOutputsJSON {
 };
+
+// Source: Web Authentication: An API for accessing Public Key Credentials - Level 3 (https://www.w3.org/TR/webauthn-3/)
+partial dictionary AuthenticationExtensionsClientOutputsJSON {
+  boolean appid;
+};
+
+// Source: Web Authentication: An API for accessing Public Key Credentials - Level 3 (https://www.w3.org/TR/webauthn-3/)
+partial dictionary AuthenticationExtensionsClientOutputsJSON {
+  boolean appidExclude;
+};
+
+// Source: Web Authentication: An API for accessing Public Key Credentials - Level 3 (https://www.w3.org/TR/webauthn-3/)
+partial dictionary AuthenticationExtensionsClientOutputsJSON {
+    CredentialPropertiesOutput credProps;
+};
+
+// Source: Web Authentication: An API for accessing Public Key Credentials - Level 3 (https://www.w3.org/TR/webauthn-3/)
+partial dictionary AuthenticationExtensionsClientOutputsJSON {
+    AuthenticationExtensionsPRFOutputsJSON prf;
+};
+
+// Source: Web Authentication: An API for accessing Public Key Credentials - Level 3 (https://www.w3.org/TR/webauthn-3/)
+partial dictionary AuthenticationExtensionsClientOutputsJSON {
+    AuthenticationExtensionsLargeBlobOutputsJSON largeBlob;
+};
