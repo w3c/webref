@@ -39,6 +39,8 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/CSSNamespaceRule/namespaceURI": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/CSSNamespaceRule/prefix": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/CSSPageRule": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSPageRule/selectorText": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSPageRule/style": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/CSSRule": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/CSSRule/cssText": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/CSSRule/parentRule": {},
@@ -47,6 +49,7 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/CSSRuleList/item": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/CSSRuleList/length": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssFloat": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssText": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/getPropertyPriority": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/getPropertyValue": {},
@@ -96,7 +99,6 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/Alternative_style_sheets": {},
       "https://dom.spec.whatwg.org/": {},
-      "https://drafts.csswg.org/css-anchor-position-1/": {},
       "https://drafts.csswg.org/css-animations/": {},
       "https://drafts.csswg.org/css-backgrounds/": {},
       "https://drafts.csswg.org/css-borders-4/": {},
@@ -117,6 +119,7 @@
       "https://drafts.csswg.org/css-display/": {},
       "https://drafts.csswg.org/css-fonts-4/": {},
       "https://drafts.csswg.org/css-fonts-5/": {},
+      "https://drafts.csswg.org/css-inline-3/": {},
       "https://drafts.csswg.org/css-lists-3/": {},
       "https://drafts.csswg.org/css-logical-1/": {},
       "https://drafts.csswg.org/css-namespaces/": {},
@@ -158,6 +161,7 @@
       "https://lists.w3.org/Archives/Public/www-style/": {},
       "https://svgwg.org/svg2-draft/": {},
       "https://url.spec.whatwg.org/": {},
+      "https://w3c.github.io/i18n-glossary/": {},
       "https://w3c.github.io/mathml-core/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://www.w3.org/TR/CSS/": {},
@@ -189,7 +193,6 @@
           "concept-node-document",
           "concept-document-quirks",
           "concept-node",
-          "clone-a-node-document",
           "concept-tree-following",
           "boundary-point-node",
           "concept-cd-data",
@@ -200,11 +203,6 @@
           "concept-element-attributes-set-value",
           "connected",
           "concept-shadow-including-root"
-        ]
-      },
-      "https://drafts.csswg.org/css-anchor-position-1/": {
-        "anchors": [
-          "valdef-anchor-name-none"
         ]
       },
       "https://drafts.csswg.org/css-animations-1/": {
@@ -218,20 +216,20 @@
       },
       "https://drafts.csswg.org/css-backgrounds-3/": {
         "anchors": [
-          "propdef-background-color",
-          "propdef-border-bottom-color",
-          "propdef-border-left-color",
-          "propdef-border-right-color",
-          "propdef-border-top-color",
-          "propdef-box-shadow"
+          "propdef-background-color"
         ]
       },
       "https://drafts.csswg.org/css-borders-4/": {
         "anchors": [
           "propdef-border-block-end-color",
           "propdef-border-block-start-color",
+          "propdef-border-bottom-color",
           "propdef-border-inline-end-color",
-          "propdef-border-inline-start-color"
+          "propdef-border-inline-start-color",
+          "propdef-border-left-color",
+          "propdef-border-right-color",
+          "propdef-border-top-color",
+          "propdef-box-shadow"
         ]
       },
       "https://drafts.csswg.org/css-box-4/": {
@@ -249,6 +247,7 @@
       "https://drafts.csswg.org/css-cascade-5/": {
         "anchors": [
           "at-ruledef-import",
+          "layer-name",
           "computed-value",
           "used-value"
         ]
@@ -285,6 +284,7 @@
       },
       "https://drafts.csswg.org/css-fonts-4/": {
         "anchors": [
+          "descdef-font-face-unicode-range",
           "propdef-font-variant",
           "propdef-font-feature-settings",
           "propdef-font-stretch",
@@ -298,6 +298,11 @@
       "https://drafts.csswg.org/css-fonts-5/": {
         "anchors": [
           "cssfontfacerule"
+        ]
+      },
+      "https://drafts.csswg.org/css-inline-3/": {
+        "anchors": [
+          "valdef-line-height-normal"
         ]
       },
       "https://drafts.csswg.org/css-lists-3/": {
@@ -380,7 +385,6 @@
       },
       "https://drafts.csswg.org/css-ui-4/": {
         "anchors": [
-          "valdef-cursor-default",
           "propdef-caret-color",
           "propdef-outline-color"
         ]
@@ -422,24 +426,7 @@
       },
       "https://drafts.csswg.org/cssom-1/": {
         "anchors": [
-          "concept-css-style-sheet-location",
-          "concept-css-rule-parent-css-style-sheet",
-          "concept-css-style-sheet-owner-node",
-          "concept-css-style-sheet-owner-css-rule",
-          "concept-css-style-sheet-title",
-          "concept-css-style-sheet-alternate-flag",
-          "concept-css-style-sheet-origin-clean-flag",
-          "concept-css-style-sheet-media",
-          "concept-css-style-sheet-disabled-flag"
-        ]
-      },
-      "https://drafts.csswg.org/mediaqueries-4/": {
-        "anchors": [
-          "valdef-media-orientation-portrait",
-          "valdef-media-orientation-landscape",
-          "descdef-media-color",
-          "valdef-media-scan-progressive",
-          "valdef-media-scan-interlace"
+          "concept-css-style-sheet-location"
         ]
       },
       "https://drafts.csswg.org/mediaqueries-5/": {
@@ -447,7 +434,20 @@
           "media-query",
           "media-query-list",
           "media-type",
-          "media-feature"
+          "media-feature",
+          "descdef-media-width",
+          "descdef-media-height",
+          "descdef-media-device-width",
+          "descdef-media-device-height",
+          "descdef-media-orientation",
+          "descdef-media-aspect-ratio",
+          "descdef-media-device-aspect-ratio",
+          "descdef-media-color",
+          "descdef-media-color-index",
+          "descdef-media-monochrome",
+          "descdef-media-resolution",
+          "descdef-media-scan",
+          "descdef-media-grid"
         ]
       },
       "https://drafts.csswg.org/selectors-3/": {
@@ -461,6 +461,7 @@
           "simple",
           "compound",
           "universal-selector",
+          "selector-list",
           "typedef-pseudo-element-selector"
         ]
       },
@@ -536,10 +537,12 @@
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
+          "string",
           "surrogate",
           "code-unit",
           "ascii-lowercase",
           "list-append",
+          "ascii-case-insensitive",
           "list-iterate",
           "iteration-continue",
           "iteration-break",
@@ -558,6 +561,11 @@
           "concept-url-parser",
           "concept-url-serializer",
           "concept-url"
+        ]
+      },
+      "https://w3c.github.io/i18n-glossary/": {
+        "anchors": [
+          "dfn-case-sensitive"
         ]
       },
       "https://w3c.github.io/mathml-core/": {
@@ -589,6 +597,7 @@
           "hierarchyrequesterror",
           "invalidstateerror",
           "idl-unsigned-short",
+          "this",
           "nomodificationallowederror",
           "NewObject",
           "exceptiondef-typeerror"
