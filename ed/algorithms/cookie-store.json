@@ -11,7 +11,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>.</p>"
+          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>.</p>"
         },
         {
           "html": "<p>Let <var>origin</var> be <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>.</p>"
@@ -55,7 +55,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>.</p>"
+          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>.</p>"
         },
         {
           "html": "<p>Let <var>origin</var> be <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>.</p>"
@@ -77,7 +77,7 @@
               "html": "<p>Let <var>parsed</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser\">parsing</a> <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/cookie-store/#dom-cookiestoregetoptions-url\" id=\"ref-for-dom-cookiestoregetoptions-url②\">url</a></code>\"] with <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#api-base-url\" id=\"ref-for-api-base-url\">API base URL</a>.</p>"
             },
             {
-              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> object and <var>parsed</var> does not <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-equals\" id=\"ref-for-concept-url-equals\">equal</a> <var>url</var>,\nthen return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with③\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> object and <var>parsed</var> does not <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-equals\" id=\"ref-for-concept-url-equals\">equal</a> <var>url</var>,\nthen return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with③\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
             },
             {
               "html": "<p>If <var>parsed</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a> and <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①\">origin</a> are not the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a>,\nthen return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with④\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code>.</p>"
@@ -120,7 +120,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>.</p>"
+          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>.</p>"
         },
         {
           "html": "<p>Let <var>origin</var> be <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin②\">origin</a>.</p>"
@@ -161,7 +161,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object③\">relevant settings object</a>.</p>"
+          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object③\">relevant settings object</a>.</p>"
         },
         {
           "html": "<p>Let <var>origin</var> be <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin③\">origin</a>.</p>"
@@ -180,7 +180,7 @@
               "html": "<p>Let <var>parsed</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①\">parsing</a> <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/cookie-store/#dom-cookiestoregetoptions-url\" id=\"ref-for-dom-cookiestoregetoptions-url④\">url</a></code>\"] with <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#api-base-url\" id=\"ref-for-api-base-url①\">API base URL</a>.</p>"
             },
             {
-              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window②\">Window</a></code> object and <var>parsed</var> does not <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-equals\" id=\"ref-for-concept-url-equals①\">equal</a> <var>url</var>,\nthen return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑥\">TypeError</a></code>.</p>"
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window②\">Window</a></code> object and <var>parsed</var> does not <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-equals\" id=\"ref-for-concept-url-equals①\">equal</a> <var>url</var>,\nthen return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑥\">TypeError</a></code>.</p>"
             },
             {
               "html": "<p>If <var>parsed</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin②\">origin</a> and <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin③\">origin</a> are not the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin①\">same origin</a>,\nthen return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑧\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑦\">TypeError</a></code>.</p>"
@@ -220,7 +220,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object④\">relevant settings object</a>.</p>"
+          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object④\">relevant settings object</a>.</p>"
         },
         {
           "html": "<p>Let <var>origin</var> be <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin④\">origin</a>.</p>"
@@ -273,7 +273,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object⑤\">relevant settings object</a>.</p>"
+          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object⑤\">relevant settings object</a>.</p>"
         },
         {
           "html": "<p>Let <var>origin</var> be <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin⑤\">origin</a>.</p>"
@@ -314,7 +314,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object⑥\">relevant settings object</a>.</p>"
+          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object⑥\">relevant settings object</a>.</p>"
         },
         {
           "html": "<p>Let <var>origin</var> be <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin⑥\">origin</a>.</p>"
@@ -355,7 +355,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object⑦\">relevant settings object</a>.</p>"
+          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object⑦\">relevant settings object</a>.</p>"
         },
         {
           "html": "<p>Let <var>origin</var> be <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin⑦\">origin</a>.</p>"
@@ -396,10 +396,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object⑧\">relevant settings object</a>.</p>"
+          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object⑧\">relevant settings object</a>.</p>"
         },
         {
-          "html": "<p>Let <var>registration</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cookie-store/#cookiestoremanager-registration\" id=\"ref-for-cookiestoremanager-registration\">registration</a>.</p>"
+          "html": "<p>Let <var>registration</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cookie-store/#cookiestoremanager-registration\" id=\"ref-for-cookiestoremanager-registration\">registration</a>.</p>"
         },
         {
           "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑧\">a new promise</a>.</p>"
@@ -449,7 +449,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>registration</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cookie-store/#cookiestoremanager-registration\" id=\"ref-for-cookiestoremanager-registration①\">registration</a>.</p>"
+          "html": "<p>Let <var>registration</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cookie-store/#cookiestoremanager-registration\" id=\"ref-for-cookiestoremanager-registration①\">registration</a>.</p>"
         },
         {
           "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑨\">a new promise</a>.</p>"
@@ -490,10 +490,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object⑨\">relevant settings object</a>.</p>"
+          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object⑨\">relevant settings object</a>.</p>"
         },
         {
-          "html": "<p>Let <var>registration</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cookie-store/#cookiestoremanager-registration\" id=\"ref-for-cookiestoremanager-registration②\">registration</a>.</p>"
+          "html": "<p>Let <var>registration</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cookie-store/#cookiestoremanager-registration\" id=\"ref-for-cookiestoremanager-registration②\">registration</a>.</p>"
         },
         {
           "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①⓪\">a new promise</a>.</p>"
@@ -784,7 +784,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>url</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①⓪\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-creation-url\" id=\"ref-for-concept-environment-creation-url⑧\">creation URL</a>.</p>"
+              "html": "<p>Let <var>url</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①⓪\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-creation-url\" id=\"ref-for-concept-environment-creation-url⑧\">creation URL</a>.</p>"
             },
             {
               "html": "<p>Let <var>changes</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cookie-store/#observable-changes\" id=\"ref-for-observable-changes\">observable changes</a> for <var>url</var>.</p>"

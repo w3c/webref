@@ -17,9 +17,35 @@
       "rationale": "To <dfn>"
     },
     {
+      "name": "CSS/serialize a function",
+      "href": "https://drafts.csswg.org/cssom-1/#css-serialize-a-function",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"CSS\" data-dfn-type=\"dfn\" data-export=\"\" id=\"css-serialize-a-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a function</dfn> <var>func</var>,\n    returning a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>s</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier\">Serialize an identifier</a> from <var>func</var>’s name,\nASCII lowercased,\nand append the result to <var>s</var>.</p>"
+        },
+        {
+          "html": "<p>Append \"(\" (U+0028) to <var>s</var>.</p>"
+        },
+        {
+          "html": "<p>Serialize <var>func</var>’s contents,\neither as specified by the definition of <var>func</var>,\nor in the shortest form possible\n(akin to the principles captured by <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value\">serialize a CSS value</a>).\nAppend the result to <var>s</var>.</p>"
+        },
+        {
+          "html": "<p>Append \")\" (U+0029) to <var>s</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>s</var>.</p>"
+        }
+      ]
+    },
+    {
       "name": "serialize a string",
       "href": "https://drafts.csswg.org/cssom-1/#serialize-a-string",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a string</dfn> means to create a string represented\nby '\"' (U+0022), followed by the result of applying the rules\nbelow to each character of the given string, followed by\n'\"' (U+0022):",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"serialize a string|serialize as a string\" id=\"serialize-a-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a string</dfn> means to create a string represented\nby '\"' (U+0022), followed by the result of applying the rules\nbelow to each character of the given string, followed by\n'\"' (U+0022):",
       "rationale": "To <dfn>"
     },
     {
@@ -82,7 +108,7 @@
           "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-query\" id=\"ref-for-media-query②\">media query</a> is negated append \"<code>not</code>\", followed\n by a single SPACE (U+0020), to <var>s</var>."
         },
         {
-          "html": "Let <var>type</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier\">serialization\n as an identifier</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-type\" id=\"ref-for-media-type\">media type</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-query\" id=\"ref-for-media-query③\">media query</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase\">converted to ASCII lowercase</a>."
+          "html": "Let <var>type</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier①\">serialization\n as an identifier</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-type\" id=\"ref-for-media-type\">media type</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-query\" id=\"ref-for-media-query③\">media query</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase\">converted to ASCII lowercase</a>."
         },
         {
           "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-query\" id=\"ref-for-media-query④\">media query</a> does not contain <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-feature\" id=\"ref-for-media-feature\">media features</a> append <var>type</var>, to <var>s</var>,\n then return <var>s</var>."
@@ -122,7 +148,7 @@
     {
       "name": "compare media queries",
       "href": "https://drafts.csswg.org/cssom-1/#compare-media-queries",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"compare-media-queries\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compare media queries</dfn> <var>m1</var> and <var>m2</var> means to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-media-query\" id=\"ref-for-serialize-a-media-query①\">serialize</a> them both and\nreturn true if they are a <a data-link-type=\"dfn\">case-sensitive</a> match and false if they\nare not.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"compare-media-queries\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compare media queries</dfn> <var>m1</var> and <var>m2</var> means to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-media-query\" id=\"ref-for-serialize-a-media-query①\">serialize</a> them both and\nreturn true if they are a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive①\">case-sensitive</a> match and false if they\nare not.",
       "rationale": "To <dfn>"
     },
     {
@@ -243,13 +269,13 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-namespaces-3/#namespace-prefix\" id=\"ref-for-namespace-prefix①\">namespace prefix</a> maps to a namespace that is\n   not the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-namespaces-3/#default-namespace\" id=\"ref-for-default-namespace①\">default namespace</a> and is not the\n   null namespace (not in a namespace) append the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier①\">serialization</a> of the <span id=\"ref-for-namespace-prefix②\">namespace prefix</span> as an identifier, followed by a\n   \"<code>|</code>\" (U+007C) to <var>s</var>."
+                  "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-namespaces-3/#namespace-prefix\" id=\"ref-for-namespace-prefix①\">namespace prefix</a> maps to a namespace that is\n   not the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-namespaces-3/#default-namespace\" id=\"ref-for-default-namespace①\">default namespace</a> and is not the\n   null namespace (not in a namespace) append the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier②\">serialization</a> of the <span id=\"ref-for-namespace-prefix②\">namespace prefix</span> as an identifier, followed by a\n   \"<code>|</code>\" (U+007C) to <var>s</var>."
                 },
                 {
                   "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-namespaces-3/#namespace-prefix\" id=\"ref-for-namespace-prefix③\">namespace prefix</a> maps to a namespace that is\n   the null namespace (not in a namespace) append\n   \"<code>|</code>\" (U+007C) to <var>s</var>."
                 },
                 {
-                  "html": "If this is a type selector append the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier②\">serialization</a> of the element name\n   as an identifier to <var>s</var>."
+                  "html": "If this is a type selector append the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier③\">serialization</a> of the element name\n   as an identifier to <var>s</var>."
                 },
                 {
                   "html": "If this is a universal selector append \"<code>*</code>\" (U+002A)\n   to <var>s</var>."
@@ -262,13 +288,13 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-namespaces-3/#namespace-prefix\" id=\"ref-for-namespace-prefix①\">namespace prefix</a> maps to a namespace that is\n   not the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-namespaces-3/#default-namespace\" id=\"ref-for-default-namespace①\">default namespace</a> and is not the\n   null namespace (not in a namespace) append the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier①\">serialization</a> of the <span id=\"ref-for-namespace-prefix②\">namespace prefix</span> as an identifier, followed by a\n   \"<code>|</code>\" (U+007C) to <var>s</var>."
+                  "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-namespaces-3/#namespace-prefix\" id=\"ref-for-namespace-prefix①\">namespace prefix</a> maps to a namespace that is\n   not the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-namespaces-3/#default-namespace\" id=\"ref-for-default-namespace①\">default namespace</a> and is not the\n   null namespace (not in a namespace) append the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier②\">serialization</a> of the <span id=\"ref-for-namespace-prefix②\">namespace prefix</span> as an identifier, followed by a\n   \"<code>|</code>\" (U+007C) to <var>s</var>."
                 },
                 {
                   "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-namespaces-3/#namespace-prefix\" id=\"ref-for-namespace-prefix③\">namespace prefix</a> maps to a namespace that is\n   the null namespace (not in a namespace) append\n   \"<code>|</code>\" (U+007C) to <var>s</var>."
                 },
                 {
-                  "html": "If this is a type selector append the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier②\">serialization</a> of the element name\n   as an identifier to <var>s</var>."
+                  "html": "If this is a type selector append the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier③\">serialization</a> of the element name\n   as an identifier to <var>s</var>."
                 },
                 {
                   "html": "If this is a universal selector append \"<code>*</code>\" (U+002A)\n   to <var>s</var>."
@@ -284,10 +310,10 @@
                   "html": "Append \"<code>[</code>\" (U+005B) to <var>s</var>."
                 },
                 {
-                  "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-namespaces-3/#namespace-prefix\" id=\"ref-for-namespace-prefix④\">namespace prefix</a> maps to a namespace that is\n   not the null namespace (not in a namespace) append the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier③\">serialization</a> of the <span id=\"ref-for-namespace-prefix⑤\">namespace prefix</span> as an identifier, followed by a\n   \"<code>|</code>\" (U+007C) to <var>s</var>."
+                  "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-namespaces-3/#namespace-prefix\" id=\"ref-for-namespace-prefix④\">namespace prefix</a> maps to a namespace that is\n   not the null namespace (not in a namespace) append the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier④\">serialization</a> of the <span id=\"ref-for-namespace-prefix⑤\">namespace prefix</span> as an identifier, followed by a\n   \"<code>|</code>\" (U+007C) to <var>s</var>."
                 },
                 {
-                  "html": "Append the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier④\">serialization</a> of the attribute name as an identifier to <var>s</var>."
+                  "html": "Append the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier⑤\">serialization</a> of the attribute name as an identifier to <var>s</var>."
                 },
                 {
                   "html": "If there is an attribute value specified, append\n   \"<code>=</code>\",\n   \"<code>~=</code>\",\n   \"<code>|=</code>\",\n   \"<code>^=</code>\",\n   \"<code>$=</code>\", or\n   \"<code>*=</code>\"\n   as appropriate (depending on the type of attribute selector), followed\n   by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-string\" id=\"ref-for-serialize-a-string②\">serialization</a> of the\n   attribute value as a string, to <var>s</var>."
@@ -302,11 +328,11 @@
             },
             {
               "case": "class selector",
-              "html": "Append a \"<code>.</code>\" (U+002E), followed by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier⑤\">serialization</a> of the class name\n as an identifier to <var>s</var>."
+              "html": "Append a \"<code>.</code>\" (U+002E), followed by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier⑥\">serialization</a> of the class name\n as an identifier to <var>s</var>."
             },
             {
               "case": "ID selector",
-              "html": "Append a \"<code>#</code>\" (U+0023), followed by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier⑥\">serialization</a> of the ID\n as an identifier to <var>s</var>."
+              "html": "Append a \"<code>#</code>\" (U+0023), followed by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier⑦\">serialization</a> of the ID\n as an identifier to <var>s</var>."
             },
             {
               "case": "pseudo-class",
@@ -364,7 +390,7 @@
           "html": "Set <var>sheet</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-stylesheet-base-url\" id=\"ref-for-concept-css-style-sheet-stylesheet-base-url\">stylesheet base URL</a> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#dom-cssstylesheetinit-baseurl\" id=\"ref-for-dom-cssstylesheetinit-baseurl\">baseURL</a></code> attribute value from <var>options</var>."
         },
         {
-          "html": "Set <var>sheet</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-rule-parent-css-style-sheet\" id=\"ref-for-concept-css-rule-parent-css-style-sheet\">parent CSS style sheet</a> to null."
+          "html": "Set <var>sheet</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-parent-css-style-sheet\" id=\"ref-for-concept-css-style-sheet-parent-css-style-sheet\">parent CSS style sheet</a> to null."
         },
         {
           "html": "Set <var>sheet</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-node\" id=\"ref-for-concept-css-style-sheet-owner-node\">owner node</a> to null."
@@ -581,7 +607,7 @@
           "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-title\" id=\"ref-for-concept-css-style-sheet-title⑦\">title</a> is not the empty string, the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-alternate-flag\" id=\"ref-for-concept-css-style-sheet-alternate-flag②\">alternate flag</a> is unset, and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#preferred-css-style-sheet-set-name\" id=\"ref-for-preferred-css-style-sheet-set-name\">preferred CSS style sheet set name</a> is the empty string <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#change-the-preferred-css-style-sheet-set-name\" id=\"ref-for-change-the-preferred-css-style-sheet-set-name\">change the preferred CSS style sheet set name</a> to the <span id=\"ref-for-concept-css-style-sheet-title⑧\">title</span>."
         },
         {
-          "html": "If any of the following is true, then unset the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-disabled-flag\" id=\"ref-for-concept-css-style-sheet-disabled-flag⑥\">disabled flag</a> and return: \n     <ul>\n      <li>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-title\" id=\"ref-for-concept-css-style-sheet-title⑨\">title</a> is the empty string. \n      </li><li>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#last-css-style-sheet-set-name\" id=\"ref-for-last-css-style-sheet-set-name\">last CSS style sheet set name</a> is null and the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-title\" id=\"ref-for-concept-css-style-sheet-title①⓪\">title</a> is a <a data-link-type=\"dfn\">case-sensitive</a> match\n   for the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#preferred-css-style-sheet-set-name\" id=\"ref-for-preferred-css-style-sheet-set-name①\">preferred CSS style sheet set name</a>. \n      </li><li>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-title\" id=\"ref-for-concept-css-style-sheet-title①①\">title</a> is a <a data-link-type=\"dfn\">case-sensitive</a> match for the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#last-css-style-sheet-set-name\" id=\"ref-for-last-css-style-sheet-set-name①\">last CSS style sheet set name</a>. \n     </li></ul>"
+          "html": "If any of the following is true, then unset the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-disabled-flag\" id=\"ref-for-concept-css-style-sheet-disabled-flag⑥\">disabled flag</a> and return: \n     <ul>\n      <li>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-title\" id=\"ref-for-concept-css-style-sheet-title⑨\">title</a> is the empty string. \n      </li><li>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#last-css-style-sheet-set-name\" id=\"ref-for-last-css-style-sheet-set-name\">last CSS style sheet set name</a> is null and the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-title\" id=\"ref-for-concept-css-style-sheet-title①⓪\">title</a> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive②\">case-sensitive</a> match\n   for the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#preferred-css-style-sheet-set-name\" id=\"ref-for-preferred-css-style-sheet-set-name①\">preferred CSS style sheet set name</a>. \n      </li><li>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-title\" id=\"ref-for-concept-css-style-sheet-title①①\">title</a> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive③\">case-sensitive</a> match for the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#last-css-style-sheet-set-name\" id=\"ref-for-last-css-style-sheet-set-name①\">last CSS style sheet set name</a>. \n     </li></ul>"
         },
         {
           "html": "Set the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-disabled-flag\" id=\"ref-for-concept-css-style-sheet-disabled-flag⑦\">disabled flag</a>."
@@ -598,7 +624,7 @@
           "html": "Remove the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-style-sheet\" id=\"ref-for-css-style-sheet②⑥\">CSS style sheet</a> from the list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#documentorshadowroot-document-or-shadow-root-css-style-sheets\" id=\"ref-for-documentorshadowroot-document-or-shadow-root-css-style-sheets②\">document or shadow root CSS style sheets</a>."
         },
         {
-          "html": "Set the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-style-sheet\" id=\"ref-for-css-style-sheet②⑦\">CSS style sheet</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-parent-css-style-sheet\" id=\"ref-for-concept-css-style-sheet-parent-css-style-sheet②\">parent CSS style sheet</a>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-node\" id=\"ref-for-concept-css-style-sheet-owner-node⑨\">owner node</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-css-rule\" id=\"ref-for-concept-css-style-sheet-owner-css-rule②\">owner CSS rule</a> to null."
+          "html": "Set the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-style-sheet\" id=\"ref-for-css-style-sheet②⑦\">CSS style sheet</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-parent-css-style-sheet\" id=\"ref-for-concept-css-style-sheet-parent-css-style-sheet③\">parent CSS style sheet</a>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-node\" id=\"ref-for-concept-css-style-sheet-owner-node⑨\">owner node</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-css-rule\" id=\"ref-for-concept-css-style-sheet-owner-css-rule②\">owner CSS rule</a> to null."
         }
       ]
     },
@@ -612,7 +638,7 @@
           "html": "If <var>name</var> is the empty string, set the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-disabled-flag\" id=\"ref-for-concept-css-style-sheet-disabled-flag⑨\">disabled flag</a> for each <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-style-sheet\" id=\"ref-for-css-style-sheet③①\">CSS style sheet</a> that is in a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-style-sheet-set\" id=\"ref-for-css-style-sheet-set②\">CSS style sheet set</a> and return."
         },
         {
-          "html": "Unset the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-disabled-flag\" id=\"ref-for-concept-css-style-sheet-disabled-flag①⓪\">disabled flag</a> for each <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-style-sheet\" id=\"ref-for-css-style-sheet③②\">CSS style sheet</a> in a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-style-sheet-set\" id=\"ref-for-css-style-sheet-set③\">CSS style sheet set</a> whose <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-style-sheet-set-name\" id=\"ref-for-css-style-sheet-set-name\">CSS style sheet set name</a> is a <a data-link-type=\"dfn\">case-sensitive</a> match for <var>name</var> and set it for all other <span id=\"ref-for-css-style-sheet③③\">CSS style sheets</span> in a <span id=\"ref-for-css-style-sheet-set④\">CSS style sheet set</span>."
+          "html": "Unset the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-disabled-flag\" id=\"ref-for-concept-css-style-sheet-disabled-flag①⓪\">disabled flag</a> for each <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-style-sheet\" id=\"ref-for-css-style-sheet③②\">CSS style sheet</a> in a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-style-sheet-set\" id=\"ref-for-css-style-sheet-set③\">CSS style sheet set</a> whose <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-style-sheet-set-name\" id=\"ref-for-css-style-sheet-set-name\">CSS style sheet set name</a> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive④\">case-sensitive</a> match for <var>name</var> and set it for all other <span id=\"ref-for-css-style-sheet③③\">CSS style sheets</span> in a <span id=\"ref-for-css-style-sheet-set④\">CSS style sheet set</span>."
         }
       ]
     },
@@ -643,7 +669,7 @@
           "html": "Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#preferred-css-style-sheet-set-name\" id=\"ref-for-preferred-css-style-sheet-set-name③\">preferred CSS style sheet set name</a> to <var>name</var>."
         },
         {
-          "html": "If <var>name</var> is not a <a data-link-type=\"dfn\">case-sensitive</a> match for <var>current</var> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#last-css-style-sheet-set-name\" id=\"ref-for-last-css-style-sheet-set-name③\">last CSS style sheet set name</a> is null <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#enable-a-css-style-sheet-set\" id=\"ref-for-enable-a-css-style-sheet-set①\">enable a CSS style sheet set</a> with name <var>name</var>."
+          "html": "If <var>name</var> is not a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive⑤\">case-sensitive</a> match for <var>current</var> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#last-css-style-sheet-set-name\" id=\"ref-for-last-css-style-sheet-set-name③\">last CSS style sheet set name</a> is null <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#enable-a-css-style-sheet-set\" id=\"ref-for-enable-a-css-style-sheet-set①\">enable a CSS style sheet set</a> with name <var>name</var>."
         }
       ]
     },
@@ -692,7 +718,7 @@
     },
     {
       "name": "handle a PI stylesheet",
-      "html": "",
+      "html": "When a <code>ProcessingInstruction</code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#boundary-point-node\" id=\"ref-for-boundary-point-node\">node</a> <var>node</var> becomes part of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#prolog\" id=\"ref-for-prolog\">prolog</a>, is no longer part of the <span id=\"ref-for-prolog①\">prolog</span>, or has its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data\">data</a> changed, these steps\n must be run:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -711,7 +737,7 @@
           "html": "Let <var>title</var> be the value of the <code>title</code> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/xml-stylesheet/#dt-pseudo-attribute\" id=\"ref-for-dt-pseudo-attribute①\">pseudo-attribute</a> or the empty string if the <code>title</code> <span id=\"ref-for-dt-pseudo-attribute②\">pseudo-attribute</span> is not specified."
         },
         {
-          "html": "If there is an <code>alternate</code> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/xml-stylesheet/#dt-pseudo-attribute\" id=\"ref-for-dt-pseudo-attribute③\">pseudo-attribute</a> whose value is a <a data-link-type=\"dfn\">case-sensitive</a> match\n  for \"<code>yes</code>\" and <var>title</var> is the\n  empty string, then return."
+          "html": "If there is an <code>alternate</code> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/xml-stylesheet/#dt-pseudo-attribute\" id=\"ref-for-dt-pseudo-attribute③\">pseudo-attribute</a> whose value is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive⑥\">case-sensitive</a> match\n  for \"<code>yes</code>\" and <var>title</var> is the\n  empty string, then return."
         },
         {
           "html": "If there is a <code>type</code> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/xml-stylesheet/#dt-pseudo-attribute\" id=\"ref-for-dt-pseudo-attribute④\">pseudo-attribute</a> whose\n  value is not a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#supported-styling-language\" id=\"ref-for-supported-styling-language②\">supported styling language</a> the user agent\n  may return."
@@ -763,7 +789,7 @@
           "html": "Let <var>title</var> be the value of the first of all the <code>title</code> parameters.\n  If there are no such parameters it is the empty string."
         },
         {
-          "html": "If one of the (other) link relation types is an <a data-link-type=\"dfn\">ASCII case-insensitive</a> match for\n  \"<code>alternate</code>\" and <var>title</var> is the\n  empty string, then return."
+          "html": "If one of the (other) link relation types is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②\">ASCII case-insensitive</a> match for\n  \"<code>alternate</code>\" and <var>title</var> is the\n  empty string, then return."
         },
         {
           "html": "Let <var>input URL</var> be the value specified."
@@ -773,9 +799,6 @@
         },
         {
           "html": "Let <var>referrer</var> be the document’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-url\" id=\"ref-for-concept-document-url①\">address</a>."
-        },
-        {
-          "html": "Let <var>origin</var> be the document’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①\">origin</a>."
         },
         {
           "html": "Let <var>parsed URL</var> be the return value of invoking the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser①\">URL parser</a> with the\n  string <var>input URL</var> and the base URL <var>base URL</var>."
@@ -788,7 +811,7 @@
           "rationale": "create",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#create-a-css-style-sheet\" id=\"ref-for-create-a-css-style-sheet②\">Create a CSS style sheet</a> with the following properties: \n        <dl>\n         <dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-location\" id=\"ref-for-concept-css-style-sheet-location③\">location</a> \n         </dt><dd>The result of invoking the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer①\">URL serializer</a> with <var>parsed URL</var>. \n         </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-node\" id=\"ref-for-concept-css-style-sheet-owner-node①③\">owner node</a> \n         </dt><dd>null. \n         </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-parent-css-style-sheet\" id=\"ref-for-concept-css-style-sheet-parent-css-style-sheet④\">parent CSS style sheet</a> \n         </dt><dd>null. \n         </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-css-rule\" id=\"ref-for-concept-css-style-sheet-owner-css-rule④\">owner CSS rule</a> \n         </dt><dd>null. \n         </dd><dt><a data-link-type=\"dfn\">media</a> \n         </dt><dd>The value of the first <code>media</code> parameter. \n         </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-title\" id=\"ref-for-concept-css-style-sheet-title①⑥\">title</a> \n         </dt><dd><var>title</var>. \n         </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-alternate-flag\" id=\"ref-for-concept-css-style-sheet-alternate-flag⑤\">alternate flag</a> \n         </dt><dd>Set if one of the specified link relation type for this HTTP <code>Link</code> header is an <a data-link-type=\"dfn\">ASCII case-insensitive</a> match for\n       \"<code>alternate</code>\", or false otherwise. \n         </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-origin-clean-flag\" id=\"ref-for-concept-css-style-sheet-origin-clean-flag⑥\">origin-clean flag</a> \n         </dt><dd>Set if <var>response</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#cors-same-origin\" id=\"ref-for-cors-same-origin②\">CORS-same-origin</a>, or unset otherwise. \n        </dd></dl>"
+              "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#create-a-css-style-sheet\" id=\"ref-for-create-a-css-style-sheet②\">Create a CSS style sheet</a> with the following properties: \n        <dl>\n         <dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-location\" id=\"ref-for-concept-css-style-sheet-location③\">location</a> \n         </dt><dd>The result of invoking the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer①\">URL serializer</a> with <var>parsed URL</var>. \n         </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-node\" id=\"ref-for-concept-css-style-sheet-owner-node①③\">owner node</a> \n         </dt><dd>null. \n         </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-parent-css-style-sheet\" id=\"ref-for-concept-css-style-sheet-parent-css-style-sheet⑤\">parent CSS style sheet</a> \n         </dt><dd>null. \n         </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-css-rule\" id=\"ref-for-concept-css-style-sheet-owner-css-rule④\">owner CSS rule</a> \n         </dt><dd>null. \n         </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-media\" id=\"ref-for-concept-css-style-sheet-media⑧\">media</a> \n         </dt><dd>The value of the first <code>media</code> parameter. \n         </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-title\" id=\"ref-for-concept-css-style-sheet-title①⑥\">title</a> \n         </dt><dd><var>title</var>. \n         </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-alternate-flag\" id=\"ref-for-concept-css-style-sheet-alternate-flag⑤\">alternate flag</a> \n         </dt><dd>Set if one of the specified link relation type for this HTTP <code>Link</code> header is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive③\">ASCII case-insensitive</a> match for\n       \"<code>alternate</code>\", or false otherwise. \n         </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-origin-clean-flag\" id=\"ref-for-concept-css-style-sheet-origin-clean-flag⑥\">origin-clean flag</a> \n         </dt><dd>Set if <var>response</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#cors-same-origin\" id=\"ref-for-cors-same-origin②\">CORS-same-origin</a>, or unset otherwise. \n        </dd></dl>"
             }
           ]
         }
@@ -937,7 +960,7 @@
                   ]
                 },
                 {
-                  "html": "If rule’s associated <a class=\"property css\" data-link-type=\"property\">unicode-range</a> descriptor is present, a single\n   SPACE (U+0020), followed by the string \"<code>unicode-range:</code>\", followed by a single SPACE\n   (U+0020), followed by the result of performing serialize a <span class=\"production\">&lt;'unicode-range'&gt;</span>, followed by the\n   string \"<code>;</code>\", i.e., SEMICOLON (U+003B)."
+                  "html": "If rule’s associated <a class=\"property\" data-link-type=\"propdesc\" href=\"https://drafts.csswg.org/css-fonts-4/#descdef-font-face-unicode-range\" id=\"ref-for-descdef-font-face-unicode-range\">unicode-range</a> descriptor is present, a single\n   SPACE (U+0020), followed by the string \"<code>unicode-range:</code>\", followed by a single SPACE\n   (U+0020), followed by the result of performing serialize a <span class=\"production\" id=\"ref-for-descdef-font-face-unicode-range①\">&lt;'unicode-range'&gt;</span>, followed by the\n   string \"<code>;</code>\", i.e., SEMICOLON (U+003B)."
                 },
                 {
                   "html": "If rule’s associated <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-variant\" id=\"ref-for-propdef-font-variant\">font-variant</a> descriptor is present, a single\n   SPACE (U+0020), followed by the string \"<code>font-variant:</code>\", followed by a single SPACE\n   (U+0020), followed by the result of performing serialize a <span class=\"production\" id=\"ref-for-propdef-font-variant①\">&lt;'font-variant'&gt;</span>, followed by the\n   string \"<code>;</code>\", i.e., SEMICOLON (U+003B)."
@@ -965,7 +988,7 @@
             },
             {
               "case": "CSSNamespaceRule",
-              "html": "The literal string \"<code>@namespace</code>\", followed by a single SPACE\n (U+0020), followed by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier⑦\">serialization as an identifier</a> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#dom-cssnamespacerule-prefix\" id=\"ref-for-dom-cssnamespacerule-prefix\">prefix</a></code> attribute (if\n any), followed by a single SPACE (U+0020) if there is a prefix, followed by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-url\" id=\"ref-for-serialize-a-url②\">serialization as URL</a> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#dom-cssnamespacerule-namespaceuri\" id=\"ref-for-dom-cssnamespacerule-namespaceuri\">namespaceURI</a></code> attribute, followed the character \"<code>;</code>\" (U+003B)."
+              "html": "The literal string \"<code>@namespace</code>\", followed by a single SPACE\n (U+0020), followed by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier⑧\">serialization as an identifier</a> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#dom-cssnamespacerule-prefix\" id=\"ref-for-dom-cssnamespacerule-prefix\">prefix</a></code> attribute (if\n any), followed by a single SPACE (U+0020) if there is a prefix, followed by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-url\" id=\"ref-for-serialize-a-url②\">serialization as URL</a> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#dom-cssnamespacerule-namespaceuri\" id=\"ref-for-dom-cssnamespacerule-namespaceuri\">namespaceURI</a></code> attribute, followed the character \"<code>;</code>\" (U+003B)."
             },
             {
               "case": "CSSKeyframesRule",
@@ -1057,7 +1080,7 @@
           "html": "Remove rule <var>old rule</var> from <var>list</var> at the zero-indexed position <var>index</var>."
         },
         {
-          "html": "Set <var>old rule</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-rule-parent-css-rule\" id=\"ref-for-concept-css-rule-parent-css-rule\">parent CSS rule</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-rule-parent-css-style-sheet\" id=\"ref-for-concept-css-rule-parent-css-style-sheet①\">parent CSS style sheet</a> to null."
+          "html": "Set <var>old rule</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-rule-parent-css-rule\" id=\"ref-for-concept-css-rule-parent-css-rule\">parent CSS rule</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-rule-parent-css-style-sheet\" id=\"ref-for-concept-css-rule-parent-css-style-sheet\">parent CSS style sheet</a> to null."
         }
       ]
     },
@@ -1129,14 +1152,14 @@
     {
       "name": "CSSStyleRule/selectorText",
       "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylerule-selectortext",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"CSSStyleRule\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-cssstylerule-selectortext\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>selectorText</code></dfn> attribute, on getting, must return the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-group-of-selectors\" id=\"ref-for-serialize-a-group-of-selectors②\">serializing</a> the associated <a data-link-type=\"dfn\">group of selectors</a>.\nOn setting the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#dom-cssstylerule-selectortext\" id=\"ref-for-dom-cssstylerule-selectortext①\">selectorText</a></code> attribute these steps must be run:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"CSSStyleRule\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-cssstylerule-selectortext\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>selectorText</code></dfn> attribute, on getting, must return the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-group-of-selectors\" id=\"ref-for-serialize-a-group-of-selectors②\">serializing</a> the rule’s associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#selector-list\" id=\"ref-for-selector-list\">selector list</a>.\nOn setting the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#dom-cssstylerule-selectortext\" id=\"ref-for-dom-cssstylerule-selectortext①\">selectorText</a></code> attribute these steps must be run:",
       "rationale": "run",
       "steps": [
         {
           "html": "Run the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#parse-a-group-of-selectors\" id=\"ref-for-parse-a-group-of-selectors\">parse a group of selectors</a> algorithm on the given value."
         },
         {
-          "html": "If the algorithm returns a non-null value replace the associated <a data-link-type=\"dfn\">group of selectors</a> with the returned value."
+          "html": "If the algorithm returns a non-null value replace the associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#selector-list\" id=\"ref-for-selector-list①\">selector list</a> with the returned value."
         },
         {
           "html": "Otherwise, if the algorithm returns a null value, do nothing."
@@ -1146,14 +1169,14 @@
     {
       "name": "CSSPageRule/selectorText",
       "href": "https://drafts.csswg.org/cssom-1/#dom-csspagerule-selectortext",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"CSSPageRule\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-csspagerule-selectortext\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>selectorText</code></dfn> attribute, on getting, must return the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-list-of-css-page-selectors\" id=\"ref-for-serialize-a-list-of-css-page-selectors\">serializing</a> the associated <a data-link-type=\"dfn\">list of CSS page selectors</a>.\nOn setting the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#dom-csspagerule-selectortext\" id=\"ref-for-dom-csspagerule-selectortext①\">selectorText</a></code> attribute  these steps must be run:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"CSSPageRule\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-csspagerule-selectortext\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>selectorText</code></dfn> attribute, on getting, must return the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-list-of-css-page-selectors\" id=\"ref-for-serialize-a-list-of-css-page-selectors\">serializing</a> the associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#selector-list\" id=\"ref-for-selector-list②\">selector list</a>.\nOn setting the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#dom-csspagerule-selectortext\" id=\"ref-for-dom-csspagerule-selectortext①\">selectorText</a></code> attribute  these steps must be run:",
       "rationale": "run",
       "steps": [
         {
           "html": "Run the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#parse-a-list-of-css-page-selectors\" id=\"ref-for-parse-a-list-of-css-page-selectors\">parse a list of CSS page selectors</a> algorithm on the given value."
         },
         {
-          "html": "If the algorithm returns a non-null value replace the associated <a data-link-type=\"dfn\">list of CSS page selectors</a> with the returned value."
+          "html": "If the algorithm returns a non-null value replace the associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#selector-list\" id=\"ref-for-selector-list③\">selector list</a> with the returned value."
         },
         {
           "html": "Otherwise, if the algorithm returns a null value, do nothing."
@@ -1266,7 +1289,7 @@
                   "html": "If there’s any declaration in <var>declaration block</var> in between the first and the last longhand in <var>current longhands</var> which belongs to the same <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-logical-1/#logical-property-group\" id=\"ref-for-logical-property-group\">logical property group</a>, but has a different <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-logical-1/#mapping-logic\" id=\"ref-for-mapping-logic\">mapping logic</a> as any of the longhands in <var>current longhands</var>,\n     and is not in <var>current longhands</var>, continue with the steps labeled <i>shorthand loop</i>."
                 },
                 {
-                  "html": "Let <var>value</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value\">serialize a CSS value</a> of <var>current longhands</var>."
+                  "html": "Let <var>value</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value①\">serialize a CSS value</a> of <var>current longhands</var>."
                 },
                 {
                   "html": "If <var>value</var> is the empty string, continue with the steps labeled <i>shorthand loop</i>."
@@ -1286,7 +1309,7 @@
               ]
             },
             {
-              "html": "Let <var>value</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value①\">serialize a CSS value</a> of <var>declaration</var>."
+              "html": "Let <var>value</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value②\">serialize a CSS value</a> of <var>declaration</var>."
             },
             {
               "html": "Let <var>serialized declaration</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration\" id=\"ref-for-serialize-a-css-declaration①\">serialize a CSS declaration</a> with property name <var>property</var>, value <var>value</var>, and the <i>important</i> flag set if <var>declaration</var> has its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-important-flag\" id=\"ref-for-css-declaration-important-flag②\">important\n   flag</a> set."
@@ -1446,7 +1469,7 @@
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "If <var>longhand</var> is a <a data-link-type=\"dfn\">case-sensitive</a> match for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name⑤\">property\n       name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration①②\">CSS declaration</a> in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①③\">declarations</a>, let <var>declaration</var> be that <span id=\"ref-for-css-declaration①③\">CSS declaration</span>, or null otherwise."
+                      "html": "If <var>longhand</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive⑧\">case-sensitive</a> match for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name⑤\">property\n       name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration①②\">CSS declaration</a> in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①③\">declarations</a>, let <var>declaration</var> be that <span id=\"ref-for-css-declaration①③\">CSS declaration</span>, or null otherwise."
                     },
                     {
                       "html": "If <var>declaration</var> is null, then return the empty string."
@@ -1457,7 +1480,7 @@
                   ]
                 },
                 {
-                  "html": "If <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-important-flag\" id=\"ref-for-css-declaration-important-flag③\">important flags</a> of all declarations in <var>list</var> are same,\n     then return the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value②\">serialization</a> of <var>list</var>."
+                  "html": "If <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-important-flag\" id=\"ref-for-css-declaration-important-flag③\">important flags</a> of all declarations in <var>list</var> are same,\n     then return the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value③\">serialization</a> of <var>list</var>."
                 },
                 {
                   "html": "Return the empty string."
@@ -1467,7 +1490,7 @@
           ]
         },
         {
-          "html": "If <var>property</var> is a <a data-link-type=\"dfn\">case-sensitive</a> match for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name⑥\">property name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration①④\">CSS declaration</a> in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①④\">declarations</a>, then return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value③\">serialize a CSS value</a> of that declaration."
+          "html": "If <var>property</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive⑨\">case-sensitive</a> match for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name⑥\">property name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration①④\">CSS declaration</a> in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①④\">declarations</a>, then return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value④\">serialize a CSS value</a> of that declaration."
         },
         {
           "html": "Return the empty string."
@@ -1505,7 +1528,7 @@
           ]
         },
         {
-          "html": "If <var>property</var> is a <a data-link-type=\"dfn\">case-sensitive</a> match for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name⑦\">property name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration①⑤\">CSS\n declaration</a> in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①⑤\">declarations</a> that has the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-important-flag\" id=\"ref-for-css-declaration-important-flag④\">important flag</a> set, return the string \"<code>important</code>\"."
+          "html": "If <var>property</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive①⓪\">case-sensitive</a> match for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name⑦\">property name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration①⑤\">CSS\n declaration</a> in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①⑤\">declarations</a> that has the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-important-flag\" id=\"ref-for-css-declaration-important-flag④\">important flag</a> set, return the string \"<code>important</code>\"."
         },
         {
           "html": "Return the empty string."
@@ -1529,7 +1552,7 @@
               "html": "Let <var>property</var> be <var>property</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase④\">converted to ASCII lowercase</a>."
             },
             {
-              "html": "If <var>property</var> is not a <a data-link-type=\"dfn\">case-sensitive</a> match for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#supported-css-property\" id=\"ref-for-supported-css-property①\">supported CSS property</a>, then return."
+              "html": "If <var>property</var> is not a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive①①\">case-sensitive</a> match for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#supported-css-property\" id=\"ref-for-supported-css-property①\">supported CSS property</a>, then return."
             }
           ]
         },
@@ -1537,7 +1560,7 @@
           "html": "If <var>value</var> is the empty string, invoke <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-removeproperty\" id=\"ref-for-dom-cssstyledeclaration-removeproperty①\">removeProperty()</a></code> with <var>property</var> as argument and return."
         },
         {
-          "html": "If <var>priority</var> is not the empty string and is not an <a data-link-type=\"dfn\">ASCII case-insensitive</a> match for the string\n \"<code>important</code>\", then return."
+          "html": "If <var>priority</var> is not the empty string and is not an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive④\">ASCII case-insensitive</a> match for the string\n \"<code>important</code>\", then return."
         },
         {
           "html": "Let <var>component value list</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#parse-a-css-value\" id=\"ref-for-parse-a-css-value\">parsing</a> <var>value</var> for property <var>property</var>."
@@ -1605,7 +1628,7 @@
           ]
         },
         {
-          "html": "Otherwise, if <var>property</var> is a <a data-link-type=\"dfn\">case-sensitive</a> match for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name①⑤\">property name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration②⑤\">CSS declaration</a> in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①⑨\">declarations</a>, remove that <span id=\"ref-for-css-declaration②⑥\">CSS declaration</span> and let <var>removed</var> be true."
+          "html": "Otherwise, if <var>property</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive①④\">case-sensitive</a> match for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name①⑤\">property name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration②⑤\">CSS declaration</a> in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①⑨\">declarations</a>, remove that <span id=\"ref-for-css-declaration②⑥\">CSS declaration</span> and let <var>removed</var> be true."
         },
         {
           "html": "If <var>removed</var> is true, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#update-style-attribute-for\" id=\"ref-for-update-style-attribute-for②\">Update style attribute for</a> the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-block\" id=\"ref-for-css-declaration-block①⓪\">CSS declaration block</a>."
@@ -1716,7 +1739,7 @@
               "html": "<p>If there is no such shorthand or <var>shorthand</var> cannot exactly represent the values of all the properties in <var>list</var>,\nreturn the empty string.</p>"
             },
             {
-              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value④\">serialize a CSS value</a> from a hypothetical declaration of the property <var>shorthand</var> with its value representing the combined values of the declarations in <var>list</var>.</p>"
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value⑤\">serialize a CSS value</a> from a hypothetical declaration of the property <var>shorthand</var> with its value representing the combined values of the declarations in <var>list</var>.</p>"
             }
           ]
         },
@@ -1796,7 +1819,7 @@
             },
             {
               "case": "<identifier>",
-              "html": "The identifier <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier⑨\">serialized as an identifier</a>."
+              "html": "The identifier <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier①⓪\">serialized as an identifier</a>."
             },
             {
               "case": "<integer>",
@@ -1856,10 +1879,6 @@
               "html": "The string <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-string\" id=\"ref-for-serialize-a-string⑥\">serialized as a string</a>."
             },
             {
-              "case": "<specific-voice>",
-              "html": "The string <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-string\" id=\"ref-for-serialize-a-string⑥\">serialized as a string</a>."
-            },
-            {
               "case": "<time>",
               "html": "The time in seconds serialized as per &lt;number&gt; followed by\n the literal string \"<code>s</code>\"."
             },
@@ -1905,7 +1924,7 @@
           "html": "If <var>obj</var> is not null, and <var>elt</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected\">connected</a>,\n  part of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scoping-1/#flat-tree\" id=\"ref-for-flat-tree\">flat tree</a>,\n  and its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-root\" id=\"ref-for-concept-shadow-including-root\">shadow-including root</a> has a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context\" id=\"ref-for-browsing-context\">browsing context</a> which either\n  doesn’t have a <a data-link-type=\"dfn\">browsing context container</a>, or whose <span>browsing context container</span> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/rendering.html#being-rendered\" id=\"ref-for-being-rendered\">being rendered</a>,\n  set <var>decls</var> to a list of all longhand properties that are <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#supported-css-property\" id=\"ref-for-supported-css-property⑤\">supported CSS properties</a>, in lexicographical order,\n  with the value being the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#resolved-value\" id=\"ref-for-resolved-value\">resolved value</a> computed for <var>obj</var> using the style rules associated with <var>doc</var>. Additionally, append to <var>decls</var> all the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-1/#custom-property\" id=\"ref-for-custom-property⑤\">custom properties</a> whose <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value\">computed value</a> for <var>obj</var> is not the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-2/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value\">guaranteed-invalid value</a>."
         },
         {
-          "html": "Return a live <a data-link-type=\"dfn\">CSSStyleProperties</a> object with the following properties: \n     <dl>\n      <dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-computed-flag\" id=\"ref-for-cssstyledeclaration-computed-flag⑦\">computed flag</a> \n      </dt><dd>Set. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-readonly-flag\" id=\"ref-for-cssstyledeclaration-readonly-flag⑦\">readonly flag</a> \n      </dt><dd>Set. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations②⓪\">declarations</a> \n      </dt><dd><var>decls</var>. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-parent-css-rule\" id=\"ref-for-cssstyledeclaration-parent-css-rule⑤\">parent CSS rule</a> \n      </dt><dd>Null. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-owner-node\" id=\"ref-for-cssstyledeclaration-owner-node⑧\">owner node</a> \n      </dt><dd><var>obj</var>. \n     </dd></dl>"
+          "html": "Return a live <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#cssstyleproperties\" id=\"ref-for-cssstyleproperties④\">CSSStyleProperties</a></code> object with the following properties: \n     <dl>\n      <dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-computed-flag\" id=\"ref-for-cssstyledeclaration-computed-flag⑦\">computed flag</a> \n      </dt><dd>Set. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-readonly-flag\" id=\"ref-for-cssstyledeclaration-readonly-flag⑦\">readonly flag</a> \n      </dt><dd>Set. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations②⓪\">declarations</a> \n      </dt><dd><var>decls</var>. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-parent-css-rule\" id=\"ref-for-cssstyledeclaration-parent-css-rule⑤\">parent CSS rule</a> \n      </dt><dd>Null. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-owner-node\" id=\"ref-for-cssstyledeclaration-owner-node⑧\">owner node</a> \n      </dt><dd><var>obj</var>. \n     </dd></dl>"
         }
       ]
     },
@@ -1974,7 +1993,7 @@
             },
             {
               "case": "line-height",
-              "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#resolved-value\" id=\"ref-for-resolved-value③\">resolved value</a> is <a class=\"property css\" data-link-type=\"property\">normal</a> if the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①\">computed value</a> is <span class=\"property\">normal</span>, or the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value①\">used value</a> otherwise."
+              "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#resolved-value\" id=\"ref-for-resolved-value③\">resolved value</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-inline-3/#valdef-line-height-normal\" id=\"ref-for-valdef-line-height-normal\">normal</a> if the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①\">computed value</a> is <span class=\"css\" id=\"ref-for-valdef-line-height-normal①\">normal</span>, or the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value①\">used value</a> otherwise."
             },
             {
               "case": "block-size",
