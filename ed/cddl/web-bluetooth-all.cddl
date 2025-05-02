@@ -3,8 +3,18 @@
 ; (https://github.com/w3c/webref)
 ; Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
 
-bluetooth.BluetoothServiceUuid = text;
+bluetooth.BluetoothUuid = text;
 bluetooth.BluetoothManufacturerData = { key: uint, data: tstr };
+bluetooth.CharacteristicProperties = {
+  ? broadcast: bool,
+  ? read: bool,
+  ? writeWithoutResponse: bool,
+  ? write: bool,
+  ? notify: bool,
+  ? indicate: bool,
+  ? authenticatedSignedWrites: bool,
+  ? extendedProperties: bool
+}
 
 bluetooth.RequestDevice = text
 
@@ -17,7 +27,7 @@ bluetooth.RequestDevicePrompt = text
 
 bluetooth.ScanRecord = {
   ? name: text,
-  ? uuids: [ * bluetooth.BluetoothServiceUuid ],
+  ? uuids: [ * bluetooth.BluetoothUuid ],
   ? appearance: number,
   ? manufacturerData: [ * bluetooth.BluetoothManufacturerData ],
 }
@@ -30,6 +40,11 @@ BluetoothCommand = (
   bluetooth.SimulateAdvertisement //
   bluetooth.SimulateGattConnectionResponse //
   bluetooth.SimulateGattDisconnection //
+  bluetooth.SimulateService //
+  bluetooth.SimulateCharacteristic //
+  bluetooth.simulateCharacteristicResponse //
+  bluetooth.SimulateDescriptor //
+  bluetooth.simulateDescriptorResponse //
 )
 
 bluetooth.HandleRequestDevicePrompt = (
@@ -85,7 +100,7 @@ bluetooth.SimulatePreconnectedPeripheralParameters = {
    address: text,
    name: text,
    manufacturerData: [ * bluetooth.BluetoothManufacturerData ],
-   knownServiceUuids: [ * bluetooth.BluetoothServiceUuid ]
+   knownServiceUuids: [ * bluetooth.BluetoothUuid ]
 }
 
 bluetooth.SimulateAdvertisement = (
@@ -125,6 +140,75 @@ bluetooth.SimulateGattDisconnectionParameters = {
    address: text,
 }
 
+bluetooth.SimulateService = (
+   method: "bluetooth.simulateService",
+   params: bluetooth.SimulateServiceParameters,
+)
+
+bluetooth.SimulateServiceParameters = {
+   context: text,
+   address: text,
+   uuid: bluetooth.BluetoothUuid,
+   type: "add" / "remove",
+}
+
+bluetooth.SimulateCharacteristic = (
+   method: "bluetooth.simulateCharacteristic",
+   params: bluetooth.SimulateCharacteristicParameters,
+)
+
+bluetooth.SimulateCharacteristicParameters = {
+   context: text,
+   address: text,
+   serviceUuid: bluetooth.BluetoothUuid,
+   characteristicUuid: bluetooth.BluetoothUuid,
+   ? characteristicProperties: bluetooth.CharacteristicProperties,
+   type: "add" / "remove"
+}
+
+bluetooth.SimulateCharacteristicResponse = (
+   method: "bluetooth.simulateCharacteristicResponse",
+   params: bluetooth.SimulateCharacteristicResponseParameters,
+)
+
+bluetooth.SimulateCharacteristicResponseParameters = {
+   context: text,
+   address: text,
+   serviceUuid: bluetooth.BluetoothUuid,
+   characteristicUuid: bluetooth.BluetoothUuid,
+   type: "read" / "write" / "subscribe-to-notifications" / "unsubscribe-from-notifications",
+   code: uint
+}
+
+bluetooth.SimulateDescriptor = (
+   method: "bluetooth.simulateDescriptor",
+   params: bluetooth.SimulateDescriptorParameters,
+)
+
+bluetooth.SimulateDescriptorParameters = {
+   context: text,
+   address: text,
+   serviceUuid: bluetooth.BluetoothUuid,
+   characteristicUuid: bluetooth.BluetoothUuid,
+   descriptorUuid: bluetooth.BluetoothUuid,
+   type: "add" / "remove"
+}
+
+bluetooth.SimulateDescriptorResponse = (
+   method: "bluetooth.simulateDescriptorResponse",
+   params: bluetooth.SimulateDescriptorResponseParameters,
+)
+
+bluetooth.SimulateDescriptorResponseParameters = {
+   context: text,
+   address: text,
+   serviceUuid: bluetooth.BluetoothUuid,
+   characteristicUuid: bluetooth.BluetoothUuid,
+   descriptorUuid: bluetooth.BluetoothUuid,
+   type: "read" / "write",
+   code: uint
+}
+
 bluetooth.RequestDevicePromptUpdated = (
    method: "bluetooth.requestDevicePromptUpdated",
    params: bluetooth.RequestDevicePromptUpdatedParameters
@@ -144,4 +228,33 @@ bluetooth.GattConnectionAttempted = (
 bluetooth.GattConnectionAttemptedParameters = {
    context: text,
    address: text
+}
+
+bluetooth.CharacteristicEventGenerated = (
+   method: "bluetooth.characteristicEventGenerated",
+   params: bluetooth.CharacteristicEventGeneratedParameters
+)
+
+bluetooth.CharacteristicEventGeneratedParameters = {
+  context: text,
+  address: text,
+  serviceUuid: bluetooth.BluetoothUuid,
+  characteristicUuid: bluetooth.BluetoothUuid,
+  type: "read" / "write-with-response" / "write-without-response" / "subscribe-to-notifications" / "unsubscribe-from-notifications",
+  ? data: [ * uint ]
+}
+
+bluetooth.DescriptorEventGenerated = (
+   method: "bluetooth.descriptorEventGenerated",
+   params: bluetooth.DescriptorEventGeneratedParameters
+)
+
+bluetooth.DescriptorEventGeneratedParameters = {
+  context: text,
+  address: text,
+  serviceUuid: bluetooth.BluetoothUuid,
+  characteristicUuid: bluetooth.BluetoothUuid,
+  descriptorUuid: bluetooth.BluetoothUuid,
+  type: "read" / "write",
+  ? data: [ * uint ]
 }

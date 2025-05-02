@@ -834,9 +834,10 @@
       ]
     },
     {
-      "name": "clear prefetch cache for origin patch",
-      "html": "Modify <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-clear-site-data/#abstract-opdef-clear-cache-for-origin\" id=\"ref-for-abstract-opdef-clear-cache-for-origin\">clear cache for origin</a> to add the following step at the end.",
-      "rationale": ".algorithm",
+      "name": "clear prefetch cache",
+      "href": "https://wicg.github.io/nav-speculation/prefetch.html#clear-prefetch-cache",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clear-prefetch-cache\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">clear prefetch cache</dfn> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②\">origin</a> <var>origin</var>:",
+      "rationale": "for",
       "steps": [
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top\">top-level traversable</a> <var>traversable</var> of the user agent’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable-set\" id=\"ref-for-top-level-traversable-set\">top-level traversable set</a>:",
@@ -851,6 +852,9 @@
               "steps": [
                 {
                   "html": "<p>Let <var>activeDocument</var> be the <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document⑦\">active document</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>activeDocument</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin③\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin③\">same origin</a> with <var>origin</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑤\">continue</a>.</p>"
                 },
                 {
                   "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>prefetchRecord</var> in <var>activeDocument</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#document-prefetch-records\" id=\"ref-for-document-prefetch-records⑦\">prefetch records</a>:",
@@ -901,7 +905,7 @@
           "html": "<p>Let <var>referrerPolicy</var> be <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-referrer-policy\" id=\"ref-for-prefetch-record-referrer-policy\">referrer policy</a> if <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-referrer-policy\" id=\"ref-for-prefetch-record-referrer-policy①\">referrer policy</a> is not the empty string, and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-policy-container\" id=\"ref-for-concept-document-policy-container\">policy container</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-referrer-policy\" id=\"ref-for-policy-container-referrer-policy\">referrer policy</a> otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>documentState</var> be a new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#document-state-2\" id=\"ref-for-document-state-2②\">document state</a> with</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#document-state-request-referrer-policy\" id=\"ref-for-document-state-request-referrer-policy③\">request referrer policy</a>\n       </dt><dd data-md=\"\">\n        <p><var>referrerPolicy</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#document-state-initiator-origin\" id=\"ref-for-document-state-initiator-origin④\">initiator origin</a>\n       </dt><dd data-md=\"\">\n        <p><var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin③\">origin</a></p>\n      </dd></dl>"
+          "html": "<p>Let <var>documentState</var> be a new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#document-state-2\" id=\"ref-for-document-state-2②\">document state</a> with</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#document-state-request-referrer-policy\" id=\"ref-for-document-state-request-referrer-policy③\">request referrer policy</a>\n       </dt><dd data-md=\"\">\n        <p><var>referrerPolicy</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#document-state-initiator-origin\" id=\"ref-for-document-state-initiator-origin④\">initiator origin</a>\n       </dt><dd data-md=\"\">\n        <p><var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin④\">origin</a></p>\n      </dd></dl>"
         },
         {
           "html": "<p>Let <var>entry</var> be a new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#session-history-entry\" id=\"ref-for-session-history-entry②\">session history entry</a> with</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#she-url\" id=\"ref-for-she-url⑤\">URL</a>\n       </dt><dd data-md=\"\">\n        <p><var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url①②\">URL</a></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#she-document-state\" id=\"ref-for-she-document-state①④\">document state</a>\n       </dt><dd data-md=\"\">\n        <p><var>documentState</var></p>\n      </dd></dl>"
@@ -910,7 +914,7 @@
           "html": "<p>Let <var>request</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#create-a-navigation-request\" id=\"ref-for-create-a-navigation-request①\">creating a navigation request</a> given <var>entry</var>, <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object④\">relevant settings object</a>, <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable②\">node navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-container\" id=\"ref-for-nav-container②\">container</a>, and false.</p>"
         },
         {
-          "html": "<p>Let <var>coopEnforcementResult</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#create-a-cross-origin-opener-policy-enforcement-result-for-navigation\" id=\"ref-for-create-a-cross-origin-opener-policy-enforcement-result-for-navigation②\">creating a cross-origin opener policy enforcement result for navigation</a> given <var>document</var> and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin④\">origin</a>.</p>"
+          "html": "<p>Let <var>coopEnforcementResult</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#create-a-cross-origin-opener-policy-enforcement-result-for-navigation\" id=\"ref-for-create-a-cross-origin-opener-policy-enforcement-result-for-navigation②\">creating a cross-origin opener policy enforcement result for navigation</a> given <var>document</var> and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin⑤\">origin</a>.</p>"
         },
         {
           "html": "<p>Let <var>global</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>.</p>"
@@ -950,7 +954,7 @@
     {
       "name": "supports prefetch",
       "href": "https://wicg.github.io/nav-speculation/prefetch.html#supports-prefetch",
-      "html": "A <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑤\">response</a> <var>response</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"supports-prefetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">supports prefetch</dfn> if the following steps return true:",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑥\">response</a> <var>response</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"supports-prefetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">supports prefetch</dfn> if the following steps return true:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1006,10 +1010,10 @@
                   "html": "<p>Let <var>topLevelOrigin</var> be <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin②\">top-level origin</a>.</p>"
                 },
                 {
-                  "html": "<p>If <var>topLevelOrigin</var> is null, then set <var>topLevelOrigin</var> to <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-creation-url\" id=\"ref-for-concept-environment-top-level-creation-url②\">top-level creation URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin⑥\">origin</a>.</p>"
+                  "html": "<p>If <var>topLevelOrigin</var> is null, then set <var>topLevelOrigin</var> to <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-creation-url\" id=\"ref-for-concept-environment-top-level-creation-url②\">top-level creation URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin⑦\">origin</a>.</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑧\">Assert</a>: <var>topLevelOrigin</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②\">origin</a>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑧\">Assert</a>: <var>topLevelOrigin</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin③\">origin</a>.</p>"
                 },
                 {
                   "html": "<p>Set <var>topLevelSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site①\">obtaining a site</a> given <var>topLevelOrigin</var>.</p>"

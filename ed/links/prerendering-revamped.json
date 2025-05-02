@@ -63,7 +63,11 @@
       "https://w3c.github.io/web-locks/": {},
       "https://w3c.github.io/web-nfc/": {},
       "https://w3c.github.io/web-share/": {},
-      "https://w3c.github.io/webappsec-clear-site-data/": {},
+      "https://w3c.github.io/webappsec-clear-site-data/": {
+        "anchors": [
+          "header"
+        ]
+      },
       "https://w3c.github.io/webappsec-credential-management/": {},
       "https://w3c.github.io/webappsec-secure-contexts/": {},
       "https://w3c.github.io/webcrypto/": {},
@@ -102,8 +106,9 @@
           "http-scheme",
           "concept-request-current-url",
           "concept-response-status",
-          "credentials",
           "concept-response",
+          "concept-response-url",
+          "credentials",
           "concept-network-error",
           "concept-header-list-get-structured-header",
           "concept-response-header-list"
@@ -475,7 +480,8 @@
       },
       "https://w3c.github.io/webappsec-clear-site-data/": {
         "anchors": [
-          "abstract-opdef-clear-cache-for-origin"
+          "abstract-opdef-parse-responses-clear-site-data-header",
+          "abstract-opdef-clear-site-data-for-response"
         ]
       },
       "https://w3c.github.io/webappsec-credential-management/": {
