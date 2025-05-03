@@ -33,10 +33,10 @@
           "html": "<p>If <var>topLevelTraversable</var>.<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#top-level-traversable-displayfeaturesoverride\" id=\"ref-for-top-level-traversable-displayfeaturesoverride\">[[DisplayFeaturesOverride]]</a> is non-null, return <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#viewport%E2%91%A0\" id=\"ref-for-viewport①③\">Viewport</a></code>’s <a href=\"https://drafts.csswg.org/css-env-1/#viewport-segments\">segments</a> array calculated from <var>topLevelTraversable</var>.<span id=\"ref-for-top-level-traversable-displayfeaturesoverride①\">[[DisplayFeaturesOverride]]</span>.</p>"
         },
         {
-          "html": "<p>Returns null if there is only a single viewport segment and abort these steps.</p>"
+          "html": "<p>If there is only a single viewport segment (typically the size of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#viewport%E2%91%A0\" id=\"ref-for-viewport①④\">Viewport</a></code>) return an array with that single segment.</p>"
         },
         {
-          "html": "<p>Otherwise, return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#viewport%E2%91%A0\" id=\"ref-for-viewport①④\">Viewport</a></code>’s <a href=\"https://drafts.csswg.org/css-env-1/#viewport-segments\">segments</a> array calculated from the hardware features.</p>"
+          "html": "<p>Otherwise, return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#viewport%E2%91%A0\" id=\"ref-for-viewport①⑤\">Viewport</a></code>’s <a href=\"https://drafts.csswg.org/css-env-1/#viewport-segments\">segments</a> array calculated from the hardware features.</p>"
         }
       ]
     },
