@@ -5,10 +5,10 @@
   },
   "dfns": [
     {
-      "id": "sessions-by-registrable-domain",
-      "href": "https://w3c.github.io/webappsec-dbsc/#sessions-by-registrable-domain",
+      "id": "session-store",
+      "href": "https://w3c.github.io/webappsec-dbsc/#session-store",
       "linkingText": [
-        "sessions by registrable domain"
+        "session store"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -16,9 +16,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "framework-sessions-origin",
-        "href": "https://w3c.github.io/webappsec-dbsc/#framework-sessions-origin",
-        "title": "Sessions by registrable domain",
+        "id": "framework-session-store",
+        "href": "https://w3c.github.io/webappsec-dbsc/#framework-session-store",
+        "title": "Session store",
         "number": "6.1"
       },
       "definedIn": "prose"
@@ -150,6 +150,27 @@
       "href": "https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-key",
       "linkingText": [
         "session key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "device bound session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "framework-session",
+        "href": "https://w3c.github.io/webappsec-dbsc/#framework-session",
+        "title": "Device bound session",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "device-bound-session-allowed-refresh-initiators",
+      "href": "https://w3c.github.io/webappsec-dbsc/#device-bound-session-allowed-refresh-initiators",
+      "linkingText": [
+        "allowed refresh initiators"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -429,7 +450,7 @@
         "id": "algo-process-challenge",
         "href": "https://w3c.github.io/webappsec-dbsc/#algo-process-challenge",
         "title": "Cache challenge",
-        "number": "7.6"
+        "number": "7.7"
       },
       "definedIn": "prose"
     },
@@ -450,7 +471,7 @@
         "id": "algo-session-request",
         "href": "https://w3c.github.io/webappsec-dbsc/#algo-session-request",
         "title": "Send request",
-        "number": "7.7"
+        "number": "7.8"
       },
       "definedIn": "prose"
     },
@@ -469,7 +490,7 @@
         "id": "algo-create-session",
         "href": "https://w3c.github.io/webappsec-dbsc/#algo-create-session",
         "title": "Create session",
-        "number": "7.8"
+        "number": "7.9"
       },
       "definedIn": "prose"
     },
@@ -488,15 +509,15 @@
         "id": "algo-add-debug-header",
         "href": "https://w3c.github.io/webappsec-dbsc/#algo-add-debug-header",
         "title": "Add debug header",
-        "number": "7.9"
+        "number": "7.10"
       },
       "definedIn": "prose"
     },
     {
-      "id": "sec-session-registration-header",
-      "href": "https://w3c.github.io/webappsec-dbsc/#sec-session-registration-header",
+      "id": "secure-session-registration-header",
+      "href": "https://w3c.github.io/webappsec-dbsc/#secure-session-registration-header",
       "linkingText": [
-        "Sec-Session-Registration"
+        "Secure-Session-Registration"
       ],
       "localLinkingText": [],
       "type": "http-header",
@@ -504,18 +525,18 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "header-sec-session-registration",
-        "href": "https://w3c.github.io/webappsec-dbsc/#header-sec-session-registration",
-        "title": "`Sec-Session-Registration` HTTP header field",
+        "id": "header-secure-session-registration",
+        "href": "https://w3c.github.io/webappsec-dbsc/#header-secure-session-registration",
+        "title": "`Secure-Session-Registration` HTTP header field",
         "number": "8.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "sec-session-challenge-header",
-      "href": "https://w3c.github.io/webappsec-dbsc/#sec-session-challenge-header",
+      "id": "secure-session-challenge-header",
+      "href": "https://w3c.github.io/webappsec-dbsc/#secure-session-challenge-header",
       "linkingText": [
-        "Sec-Session-Challenge"
+        "Secure-Session-Challenge"
       ],
       "localLinkingText": [],
       "type": "http-header",
@@ -523,18 +544,18 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "header-sec-session-challenge",
-        "href": "https://w3c.github.io/webappsec-dbsc/#header-sec-session-challenge",
-        "title": "`Sec-Session-Challenge` HTTP Header Field",
+        "id": "header-secure-session-challenge",
+        "href": "https://w3c.github.io/webappsec-dbsc/#header-secure-session-challenge",
+        "title": "`Secure-Session-Challenge` HTTP Header Field",
         "number": "8.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "sec-session-response-header",
-      "href": "https://w3c.github.io/webappsec-dbsc/#sec-session-response-header",
+      "id": "secure-session-response-header",
+      "href": "https://w3c.github.io/webappsec-dbsc/#secure-session-response-header",
       "linkingText": [
-        "Sec-Session-Response"
+        "Secure-Session-Response"
       ],
       "localLinkingText": [],
       "type": "http-header",
@@ -542,18 +563,18 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "header-sec-session-response",
-        "href": "https://w3c.github.io/webappsec-dbsc/#header-sec-session-response",
-        "title": "Sec-Session-Response HTTP Header Field",
+        "id": "header-secure-session-response",
+        "href": "https://w3c.github.io/webappsec-dbsc/#header-secure-session-response",
+        "title": "Secure-Session-Response HTTP Header Field",
         "number": "8.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "sec-session-id-header",
-      "href": "https://w3c.github.io/webappsec-dbsc/#sec-session-id-header",
+      "id": "sec-secure-session-id-header",
+      "href": "https://w3c.github.io/webappsec-dbsc/#sec-secure-session-id-header",
       "linkingText": [
-        "Sec-Session-Id"
+        "Sec-Secure-Session-Id"
       ],
       "localLinkingText": [],
       "type": "http-header",
@@ -561,9 +582,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "header-sec-session-id",
-        "href": "https://w3c.github.io/webappsec-dbsc/#header-sec-session-id",
-        "title": "Sec-Session-Id HTTP Header Field",
+        "id": "header-sec-secure-session-id",
+        "href": "https://w3c.github.io/webappsec-dbsc/#header-sec-secure-session-id",
+        "title": "Sec-Secure-Session-Id HTTP Header Field",
         "number": "8.4"
       },
       "definedIn": "prose"
@@ -607,132 +628,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "session-instructions-session-identifier",
-      "href": "https://w3c.github.io/webappsec-dbsc/#session-instructions-session-identifier",
-      "linkingText": [
-        "session identifier"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session instructions"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-session-instructions",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-session-instructions",
-        "title": "DBSC Session Instruction Format",
-        "number": "8.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "session-instructions-refresh_url",
-      "href": "https://w3c.github.io/webappsec-dbsc/#session-instructions-refresh_url",
-      "linkingText": [
-        "refresh_url"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session instructions"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-session-instructions",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-session-instructions",
-        "title": "DBSC Session Instruction Format",
-        "number": "8.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "session-instructions-defer_requests",
-      "href": "https://w3c.github.io/webappsec-dbsc/#session-instructions-defer_requests",
-      "linkingText": [
-        "defer_requests"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session instructions"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-session-instructions",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-session-instructions",
-        "title": "DBSC Session Instruction Format",
-        "number": "8.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "session-instructions-continue",
-      "href": "https://w3c.github.io/webappsec-dbsc/#session-instructions-continue",
-      "linkingText": [
-        "continue"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session instructions"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-session-instructions",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-session-instructions",
-        "title": "DBSC Session Instruction Format",
-        "number": "8.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "session-instructions-scope",
-      "href": "https://w3c.github.io/webappsec-dbsc/#session-instructions-scope",
-      "linkingText": [
-        "scope"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session instructions"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-session-instructions",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-session-instructions",
-        "title": "DBSC Session Instruction Format",
-        "number": "8.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "session-instructions-credentials",
-      "href": "https://w3c.github.io/webappsec-dbsc/#session-instructions-credentials",
-      "linkingText": [
-        "credentials"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session instructions"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-session-instructions",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-session-instructions",
-        "title": "DBSC Session Instruction Format",
-        "number": "8.6"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "session-scope-instructions",
       "href": "https://w3c.github.io/webappsec-dbsc/#session-scope-instructions",
       "linkingText": [
@@ -750,69 +645,6 @@
         "number": "8.7"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "session-scope-instructions-origin",
-      "href": "https://w3c.github.io/webappsec-dbsc/#session-scope-instructions-origin",
-      "linkingText": [
-        "origin"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session scope instructions"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-session-scope-instructions",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-session-scope-instructions",
-        "title": "DBSC Session Scope Instruction Format",
-        "number": "8.7"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "session-scope-instructions-include_site",
-      "href": "https://w3c.github.io/webappsec-dbsc/#session-scope-instructions-include_site",
-      "linkingText": [
-        "include_site"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session scope instructions"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-session-scope-instructions",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-session-scope-instructions",
-        "title": "DBSC Session Scope Instruction Format",
-        "number": "8.7"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "session-scope-instructions-scope_specification",
-      "href": "https://w3c.github.io/webappsec-dbsc/#session-scope-instructions-scope_specification",
-      "linkingText": [
-        "scope_specification"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session scope instructions"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-session-scope-instructions",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-session-scope-instructions",
-        "title": "DBSC Session Scope Instruction Format",
-        "number": "8.7"
-      },
-      "definedIn": "dt"
     },
     {
       "id": "session-scope-rule",
@@ -834,69 +666,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "session-scope-rule-type",
-      "href": "https://w3c.github.io/webappsec-dbsc/#session-scope-rule-type",
-      "linkingText": [
-        "type"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session scope rule"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-session-scope-rule",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-session-scope-rule",
-        "title": "DBSC Session Scope Rule Format",
-        "number": "8.8"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "session-scope-rule-domain",
-      "href": "https://w3c.github.io/webappsec-dbsc/#session-scope-rule-domain",
-      "linkingText": [
-        "domain"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session scope rule"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-session-scope-rule",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-session-scope-rule",
-        "title": "DBSC Session Scope Rule Format",
-        "number": "8.8"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "session-scope-rule-path",
-      "href": "https://w3c.github.io/webappsec-dbsc/#session-scope-rule-path",
-      "linkingText": [
-        "path"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session scope rule"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-session-scope-rule",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-session-scope-rule",
-        "title": "DBSC Session Scope Rule Format",
-        "number": "8.8"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "session-credentials",
       "href": "https://w3c.github.io/webappsec-dbsc/#session-credentials",
       "linkingText": [
@@ -916,69 +685,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "session-scope-instructions-type",
-      "href": "https://w3c.github.io/webappsec-dbsc/#session-scope-instructions-type",
-      "linkingText": [
-        "type"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session scope instructions"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-session-credentials",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-session-credentials",
-        "title": "DBSC Session Credentials Format",
-        "number": "8.9"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "session-scope-instructions-name",
-      "href": "https://w3c.github.io/webappsec-dbsc/#session-scope-instructions-name",
-      "linkingText": [
-        "name"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session scope instructions"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-session-credentials",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-session-credentials",
-        "title": "DBSC Session Credentials Format",
-        "number": "8.9"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "session-scope-instructions-attributes",
-      "href": "https://w3c.github.io/webappsec-dbsc/#session-scope-instructions-attributes",
-      "linkingText": [
-        "attributes"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session scope instructions"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-session-credentials",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-session-credentials",
-        "title": "DBSC Session Credentials Format",
-        "number": "8.9"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dbsc-proof",
       "href": "https://w3c.github.io/webappsec-dbsc/#dbsc-proof",
       "linkingText": [
@@ -996,174 +702,6 @@
         "number": "8.10"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "dbsc-proof-typ",
-      "href": "https://w3c.github.io/webappsec-dbsc/#dbsc-proof-typ",
-      "linkingText": [
-        "typ"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "DBSC proof"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-jwt",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-jwt",
-        "title": "DBSC Proof JWT Syntax",
-        "number": "8.10"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dbsc-proof-alg",
-      "href": "https://w3c.github.io/webappsec-dbsc/#dbsc-proof-alg",
-      "linkingText": [
-        "alg"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "DBSC proof"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-jwt",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-jwt",
-        "title": "DBSC Proof JWT Syntax",
-        "number": "8.10"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dbsc-proof-aud",
-      "href": "https://w3c.github.io/webappsec-dbsc/#dbsc-proof-aud",
-      "linkingText": [
-        "aud"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "DBSC proof"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-jwt",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-jwt",
-        "title": "DBSC Proof JWT Syntax",
-        "number": "8.10"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dbsc-proof-jti",
-      "href": "https://w3c.github.io/webappsec-dbsc/#dbsc-proof-jti",
-      "linkingText": [
-        "jti"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "DBSC proof"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-jwt",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-jwt",
-        "title": "DBSC Proof JWT Syntax",
-        "number": "8.10"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dbsc-proof-iat",
-      "href": "https://w3c.github.io/webappsec-dbsc/#dbsc-proof-iat",
-      "linkingText": [
-        "iat"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "DBSC proof"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-jwt",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-jwt",
-        "title": "DBSC Proof JWT Syntax",
-        "number": "8.10"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dbsc-proof-key",
-      "href": "https://w3c.github.io/webappsec-dbsc/#dbsc-proof-key",
-      "linkingText": [
-        "key"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "DBSC proof"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-jwt",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-jwt",
-        "title": "DBSC Proof JWT Syntax",
-        "number": "8.10"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dbsc-proof-authorization",
-      "href": "https://w3c.github.io/webappsec-dbsc/#dbsc-proof-authorization",
-      "linkingText": [
-        "authorization"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "DBSC proof"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-jwt",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-jwt",
-        "title": "DBSC Proof JWT Syntax",
-        "number": "8.10"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dbsc-proof-sub",
-      "href": "https://w3c.github.io/webappsec-dbsc/#dbsc-proof-sub",
-      "linkingText": [
-        "sub"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "DBSC proof"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "format-jwt",
-        "href": "https://w3c.github.io/webappsec-dbsc/#format-jwt",
-        "title": "DBSC Proof JWT Syntax",
-        "number": "8.10"
-      },
-      "definedIn": "dt"
     },
     {
       "id": "request-deferred-device-bound-session-ids",

@@ -2661,7 +2661,7 @@
           "html": "<p>Let <var>name</var> be <var>device</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-name\" id=\"ref-for-dom-bluetoothdevice-name①\">name</a></code>.</p>"
         },
         {
-          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②\">map</a> matching the <code>bluetooth.RequestDeviceInfo</code> production, with <code>\"id\"</code> set to <var>id</var> and <code>\"name\"</code> set to <var>name</var>.</p>"
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a> matching the <code>bluetooth.RequestDeviceInfo</code> production, with <code>\"id\"</code> set to <var>id</var> and <code>\"name\"</code> set to <var>name</var>.</p>"
         }
       ]
     },
@@ -3114,10 +3114,10 @@
               "html": "<p>If <var>serviceMapping</var>[<var>uuid</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">exists</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①⑧\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-element-state\" id=\"ref-for-dfn-invalid-element-state①\">invalid element state</a>.</p>"
             },
             {
-              "html": "<p>Let <var>simulatedGattService</var> be a new <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#simulated-gatt-service\" id=\"ref-for-simulated-gatt-service①\">simulated GATT service</a>.</p>"
+              "html": "<p>Let <var>simulatedGattService</var> be a new <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#simulated-gatt-service\" id=\"ref-for-simulated-gatt-service②\">simulated GATT service</a>.</p>"
             },
             {
-              "html": "<p>Set <var>simulatedGattService</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#uuid\" id=\"ref-for-uuid①②\">UUID</a> to <var>uuid</var>.</p>"
+              "html": "<p>Set <var>simulatedGattService</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#uuid\" id=\"ref-for-uuid①④\">UUID</a> to <var>uuid</var>.</p>"
             },
             {
               "html": "<p>Set <var>serviceMapping</var>[<var>uuid</var>] to <var>simulatedGattService</var>.</p>"
@@ -3157,6 +3157,106 @@
       ]
     },
     {
+      "name": "remote end steps for bluetooth.simulateCharacteristic",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps⑧\">remote end steps</a> with command parameters <var>params</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>contextId</var> be <var>params</var>[<code>\"context\"</code>].</p>"
+        },
+        {
+          "html": "<p>Let <var>navigable</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑨\">trying</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#get-a-navigable\" id=\"ref-for-get-a-navigable⑦\">get a navigable</a> with <var>contextId</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>deviceAddress</var> be <var>params</var>[<code>\"address\"</code>].</p>"
+        },
+        {
+          "html": "<p>Let <var>simulatedBluetoothAdapter</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#simulated-bluetooth-adapter\" id=\"ref-for-simulated-bluetooth-adapter①⑥\">simulated Bluetooth adapter</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>simulatedBluetoothAdapter</var> is empty, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②②\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⑤\">invalid argument</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>deviceMapping</var> be <var>simulatedBluetoothAdapter</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#simulated-bluetooth-device-mapping\" id=\"ref-for-simulated-bluetooth-device-mapping⑥\">simulated Bluetooth device mapping</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>deviceMapping</var>[<var>deviceAddress</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⓪\">exists</a>, let <var>simulatedDevice</var> be <var>deviceMapping</var>[<var>deviceAddress</var>].</p>"
+        },
+        {
+          "html": "<p>Otherwise, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②③\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⑥\">invalid argument</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>simulatedDeviceInstance</var> be the result of <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#get-the-bluetoothdevice-representing\" id=\"ref-for-get-the-bluetoothdevice-representing⑧\">get the <code>BluetoothDevice</code> representing</a> <var>simulatedDevice</var> inside <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window④\">active window</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/system-state.html#associated-navigator\" id=\"ref-for-associated-navigator⑦\">associated <code>Navigator</code></a>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#associated-bluetooth\" id=\"ref-for-associated-bluetooth⑨\">associated Bluetooth</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>serviceMapping</var> be <var>simulatedDevice</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#simulated-gatt-service-mapping\" id=\"ref-for-simulated-gatt-service-mapping①\">simulated GATT service mapping</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>serviceUuid</var> be <var>params</var>[<code>\"serviceUuid\"</code>].</p>"
+        },
+        {
+          "html": "<p>If <var>serviceMapping</var>[<var>serviceUuid</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①\">exists</a>, let <var>simulatedService</var> be <var>serviceMapping</var>[<var>serviceUuid</var>].</p>"
+        },
+        {
+          "html": "<p>Otherwise, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②③\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②④\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⑦\">invalid argument</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>characteristicMapping</var> be <var>simulatedService</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#simulated-gatt-characteristic-mapping\" id=\"ref-for-simulated-gatt-characteristic-mapping\">simulated GATT characteristic mapping</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>characteristicUuid</var> be <var>params</var>[<code>\"characteristicUuid\"</code>].</p>"
+        },
+        {
+          "html": "If <var>params</var>[<code>\"type\"</code>] is <code>\"add\"</code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>characteristicMapping</var>[<var>characteristicUuid</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">exists</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-element-state\" id=\"ref-for-dfn-invalid-element-state③\">invalid element state</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>simulatedGattCharacteristic</var> be a new <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#simulated-gatt-characteristic\" id=\"ref-for-simulated-gatt-characteristic①\">simulated GATT characteristic</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>simulatedGattCharacteristic</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#uuid\" id=\"ref-for-uuid①⑤\">UUID</a> to <var>characteristicUuid</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>characteristicMapping</var>[<var>characteristicUuid</var>] to <var>simulatedGattCharacteristic</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#create-a-bluetoothremotegattcharacteristic-representing\" id=\"ref-for-create-a-bluetoothremotegattcharacteristic-representing①\">Create a <code>BluetoothRemoteGATTCharacteristic</code> representing</a> <var>simulatedGattCharacteristic</var> and add a mapping from <var>simulatedGattCharacteristic</var> to the resulting <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-promise-objects\" id=\"ref-for-sec-promise-objects①②\">Promise</a></code> in <var>simulatedDeviceInstance</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-context-slot\" id=\"ref-for-dom-bluetoothdevice-context-slot⑤\">[[context]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetooth-attributeinstancemap-slot\" id=\"ref-for-dom-bluetooth-attributeinstancemap-slot⑦\">[[attributeInstanceMap]]</a></code>.</p>"
+            },
+            {
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success①⓪\">success</a> with data <code>null</code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Else if <var>params</var>[<code>\"type\"</code>] is <code>\"remove\"</code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>characteristicMapping</var>[<var>characteristicUuid</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">exists</a>, let <var>simulatedGattCharacteristic</var> be <var>characteristicMapping</var>[<var>characteristicUuid</var>].</p>"
+            },
+            {
+              "html": "<p>Otherwise, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⑤\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-element-state\" id=\"ref-for-dfn-invalid-element-state④\">invalid element state</a>.</p>"
+            },
+            {
+              "html": "<p>Remove <var>simulatedGattCharacteristic</var> from <var>simulatedDeviceInstance</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-context-slot\" id=\"ref-for-dom-bluetoothdevice-context-slot⑥\">[[context]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetooth-attributeinstancemap-slot\" id=\"ref-for-dom-bluetooth-attributeinstancemap-slot⑧\">[[attributeInstanceMap]]</a></code>.</p>"
+            },
+            {
+              "html": "<p>Remove <var>characteristicUuid</var> from <var>characteristicMapping</var>.</p>"
+            },
+            {
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success①①\">success</a> with data <code>null</code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑦\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⑧\">invalid argument</a>.</p>"
+        }
+      ]
+    },
+    {
       "name": "remote end event trigger for bluetooth.requestDevicePromptUpdated",
       "href": "https://webbluetoothcg.github.io/web-bluetooth/#trigger-a-prompt-updated-event",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"trigger-a-prompt-updated-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">trigger a prompt updated event</dfn> given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable①\">navigable</a> <var>navigable</var>, a string <var>promptId</var>, and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">set</a> of <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-device\" id=\"ref-for-bluetooth-device②④\">Bluetooth devices</a> <var>devices</var>:",
@@ -3175,10 +3275,10 @@
           "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#map-of-navigables-to-device-prompts\" id=\"ref-for-map-of-navigables-to-device-prompts③\">map of navigables to device prompts</a>[<var>navigableId</var>] to <var>prompt</var>.</p>"
         },
         {
-          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④\">map</a> matching the <code>bluetooth.RequestDevicePromptUpdatedParameters</code> production with the <code>context</code> field set to <var>navigableId</var>, the <code>prompt</code> field set to <var>promptId</var>, and the <code>devices</code> field set to <var>serialized devices</var>.</p>"
+          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤\">map</a> matching the <code>bluetooth.RequestDevicePromptUpdatedParameters</code> production with the <code>context</code> field set to <var>navigableId</var>, the <code>prompt</code> field set to <var>promptId</var>, and the <code>devices</code> field set to <var>serialized devices</var>.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤\">map</a> matching the <code>bluetooth.RequestDevicePromptUpdated</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥\">map</a> matching the <code>bluetooth.RequestDevicePromptUpdated</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
         },
         {
           "html": "<p>Let <var>relatedNavigables</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a> containing <var>navigable</var>.</p>"
@@ -3204,10 +3304,10 @@
           "html": "<p>Let <var>navigableId</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id③\">navigable id</a>.</p>"
         },
         {
-          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥\">map</a> matching the <code>bluetooth.GattConnectionAttemptedParameters</code> production with the <code>context</code> field set to <var>navigableId</var> and the <code>address</code> field set to <var>device</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-representeddevice-slot\" id=\"ref-for-dom-bluetoothdevice-representeddevice-slot①⑥\">[[representedDevice]]</a></code>’s address.</p>"
+          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦\">map</a> matching the <code>bluetooth.GattConnectionAttemptedParameters</code> production with the <code>context</code> field set to <var>navigableId</var> and the <code>address</code> field set to <var>device</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-representeddevice-slot\" id=\"ref-for-dom-bluetoothdevice-representeddevice-slot①⑥\">[[representedDevice]]</a></code>’s address.</p>"
         },
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦\">map</a> matching the <code>bluetooth.GattConnectionAttempted</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧\">map</a> matching the <code>bluetooth.GattConnectionAttempted</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
         },
         {
           "html": "<p>Let <var>relatedNavigables</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③\">set</a> containing <var>navigable</var>.</p>"
