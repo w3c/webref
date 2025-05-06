@@ -127,10 +127,10 @@
       "number": "6"
     },
     {
-      "id": "framework-sessions-origin",
-      "href": "https://w3c.github.io/webappsec-dbsc/#framework-sessions-origin",
+      "id": "framework-session-store",
+      "href": "https://w3c.github.io/webappsec-dbsc/#framework-session-store",
       "level": 3,
-      "title": "Sessions by registrable domain",
+      "title": "Session store",
       "number": "6.1"
     },
     {
@@ -190,53 +190,60 @@
       "number": "7.2"
     },
     {
+      "id": "algo-request-allows-refresh",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algo-request-allows-refresh",
+      "level": 3,
+      "title": "Identify if a request is allowed to refresh",
+      "number": "7.3"
+    },
+    {
       "id": "algo-host-pattern-matches",
       "href": "https://w3c.github.io/webappsec-dbsc/#algo-host-pattern-matches",
       "level": 3,
       "title": "Identify if a host matches a pattern",
-      "number": "7.3"
+      "number": "7.4"
     },
     {
       "id": "algo-identify-session-needing-refresh",
       "href": "https://w3c.github.io/webappsec-dbsc/#algo-identify-session-needing-refresh",
       "level": 3,
       "title": "Identify session needing refresh",
-      "number": "7.4"
+      "number": "7.5"
     },
     {
       "id": "algo-identify-missing-session-credential",
       "href": "https://w3c.github.io/webappsec-dbsc/#algo-identify-missing-session-credential",
       "level": 3,
       "title": "Identify missing session credential",
-      "number": "7.5"
+      "number": "7.6"
     },
     {
       "id": "algo-process-challenge",
       "href": "https://w3c.github.io/webappsec-dbsc/#algo-process-challenge",
       "level": 3,
       "title": "Cache challenge",
-      "number": "7.6"
+      "number": "7.7"
     },
     {
       "id": "algo-session-request",
       "href": "https://w3c.github.io/webappsec-dbsc/#algo-session-request",
       "level": 3,
       "title": "Send request",
-      "number": "7.7"
+      "number": "7.8"
     },
     {
       "id": "algo-create-session",
       "href": "https://w3c.github.io/webappsec-dbsc/#algo-create-session",
       "level": 3,
       "title": "Create session",
-      "number": "7.8"
+      "number": "7.9"
     },
     {
       "id": "algo-add-debug-header",
       "href": "https://w3c.github.io/webappsec-dbsc/#algo-add-debug-header",
       "level": 3,
       "title": "Add debug header",
-      "number": "7.9"
+      "number": "7.10"
     },
     {
       "id": "format",
@@ -246,38 +253,38 @@
       "number": "8"
     },
     {
-      "id": "header-sec-session-registration",
-      "href": "https://w3c.github.io/webappsec-dbsc/#header-sec-session-registration",
+      "id": "header-secure-session-registration",
+      "href": "https://w3c.github.io/webappsec-dbsc/#header-secure-session-registration",
       "level": 3,
-      "title": "`Sec-Session-Registration` HTTP header field",
+      "title": "`Secure-Session-Registration` HTTP header field",
       "number": "8.1"
     },
     {
-      "id": "header-sec-session-challenge",
-      "href": "https://w3c.github.io/webappsec-dbsc/#header-sec-session-challenge",
+      "id": "header-secure-session-challenge",
+      "href": "https://w3c.github.io/webappsec-dbsc/#header-secure-session-challenge",
       "level": 3,
-      "title": "`Sec-Session-Challenge` HTTP Header Field",
+      "title": "`Secure-Session-Challenge` HTTP Header Field",
       "number": "8.2"
     },
     {
       "id": "challenge-structured-header-serialization",
       "href": "https://w3c.github.io/webappsec-dbsc/#challenge-structured-header-serialization",
       "level": 4,
-      "title": "Sec-Session-Challenge structured header serialization",
+      "title": "Secure-Session-Challenge structured header serialization",
       "number": "8.2.1"
     },
     {
-      "id": "header-sec-session-response",
-      "href": "https://w3c.github.io/webappsec-dbsc/#header-sec-session-response",
+      "id": "header-secure-session-response",
+      "href": "https://w3c.github.io/webappsec-dbsc/#header-secure-session-response",
       "level": 3,
-      "title": "Sec-Session-Response HTTP Header Field",
+      "title": "Secure-Session-Response HTTP Header Field",
       "number": "8.3"
     },
     {
-      "id": "header-sec-session-id",
-      "href": "https://w3c.github.io/webappsec-dbsc/#header-sec-session-id",
+      "id": "header-sec-secure-session-id",
+      "href": "https://w3c.github.io/webappsec-dbsc/#header-sec-secure-session-id",
       "level": 3,
-      "title": "Sec-Session-Id HTTP Header Field",
+      "title": "Sec-Secure-Session-Id HTTP Header Field",
       "number": "8.4"
     },
     {
@@ -353,28 +360,28 @@
       "id": "iana-ses-session-challenge",
       "href": "https://w3c.github.io/webappsec-dbsc/#iana-ses-session-challenge",
       "level": 3,
-      "title": "Sec-Session-Challenge",
+      "title": "Secure-Session-Challenge",
       "number": "10.1"
     },
     {
-      "id": "iana-ses-session-id",
-      "href": "https://w3c.github.io/webappsec-dbsc/#iana-ses-session-id",
+      "id": "iana-sec-secure-session-id",
+      "href": "https://w3c.github.io/webappsec-dbsc/#iana-sec-secure-session-id",
       "level": 3,
-      "title": "Sec-Session-Id",
+      "title": "Sec-Secure-Session-Id",
       "number": "10.2"
     },
     {
-      "id": "iana-sec-session-registration",
-      "href": "https://w3c.github.io/webappsec-dbsc/#iana-sec-session-registration",
+      "id": "iana-secure-session-registration",
+      "href": "https://w3c.github.io/webappsec-dbsc/#iana-secure-session-registration",
       "level": 3,
-      "title": "Sec-Session-Registration",
+      "title": "Secure-Session-Registration",
       "number": "10.3"
     },
     {
-      "id": "iana-sec-session-response",
-      "href": "https://w3c.github.io/webappsec-dbsc/#iana-sec-session-response",
+      "id": "iana-secure-session-response",
+      "href": "https://w3c.github.io/webappsec-dbsc/#iana-secure-session-response",
       "level": 3,
-      "title": "Sec-Session-Response",
+      "title": "Secure-Session-Response",
       "number": "10.4"
     },
     {
