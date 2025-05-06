@@ -5,7 +5,6 @@
   },
   "links": {
     "rawlinks": {
-      "https://datatracker.ietf.org/doc/html/bcp14": {},
       "https://datatracker.ietf.org/doc/html/draft-reschke-http-jfv": {
         "anchors": [
           "json-field-value"
@@ -35,9 +34,11 @@
           "persistent.connections"
         ]
       },
+      "https://infra.spec.whatwg.org/": {},
       "https://tc39.es/ecma262/multipage/": {},
       "https://url.spec.whatwg.org/": {},
       "https://w3c.github.io/reporting/network-reporting.html": {},
+      "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/rfc/rfc1034": {
         "anchors": [
           "section-3.1",
@@ -48,6 +49,7 @@
       "https://www.rfc-editor.org/rfc/rfc2119": {},
       "https://www.rfc-editor.org/rfc/rfc3864": {},
       "https://www.rfc-editor.org/rfc/rfc4291": {},
+      "https://www.rfc-editor.org/rfc/rfc5234": {},
       "https://www.rfc-editor.org/rfc/rfc6797": {
         "anchors": [
           "section-8.2"
@@ -58,6 +60,7 @@
       "https://www.w3.org/TR/CSP3/": {},
       "https://www.w3.org/TR/capability-urls/": {},
       "https://www.w3.org/TR/hr-time-3/": {},
+      "https://www.w3.org/TR/mixed-content/": {},
       "https://www.w3.org/TR/referrer-policy/": {},
       "https://www.w3.org/TR/reporting-1/": {},
       "https://www.w3.org/TR/resource-timing/": {
@@ -83,13 +86,15 @@
     "autolinks": {
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
-          "redirect-status",
+          "concept-request",
+          "cors-protocol",
           "cors-preflight-request",
-          "header-name",
-          "network-partition-key",
-          "header-value",
           "concept-response",
+          "network-partition-key",
+          "header-name",
+          "header-value",
           "determine-the-network-partition-key",
+          "concept-request-reserved-client",
           "concept-request-header-list",
           "header-list-contains",
           "concept-response-header-list",
@@ -99,11 +104,6 @@
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
           "concept-origin"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-        "anchors": [
-          "navigate"
         ]
       },
       "https://html.spec.whatwg.org/multipage/system-state.html": {
@@ -121,8 +121,14 @@
           "field.etag"
         ]
       },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "user-agent"
+        ]
+      },
       "https://url.spec.whatwg.org/": {
         "anchors": [
+          "ip-address",
           "concept-url-fragment",
           "concept-url-path",
           "concept-url-query",
@@ -145,6 +151,11 @@
           "dfn-duration-from",
           "dfn-wall-clock",
           "wall-clock-unsafe-current-time"
+        ]
+      },
+      "https://www.w3.org/TR/mixed-content/": {
+        "anchors": [
+          "mixed-content"
         ]
       },
       "https://www.w3.org/TR/referrer-policy/": {
