@@ -5,34 +5,90 @@
   },
   "algorithms": [
     {
-      "name": "superellipse-exponent-to-interpolation-value",
-      "html": "To interpolate a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value②\">&lt;number [0,∞]&gt;</a> <var>exponent</var> to an interpolation value between 0 and 1:",
-      "rationale": ".algorithm",
+      "name": "superellipse-param-to-interpolation-value",
+      "html": "To interpolate a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value②\">&lt;number [-∞,∞]&gt;</a> <var>s</var> to an interpolation value between 0 and 1, return the first matching statement, switch on <var>s</var>:",
+      "rationale": ".switch",
       "steps": [
         {
-          "html": "<p>If <var>exponent</var> is 0, return 0.</p>"
-        },
-        {
-          "html": "<p>If <var>exponent</var> is ∞, return 1.</p>"
-        },
-        {
-          "html": "<p>Return <code>1/(2^(1/<var>exponent</var>))</code>.</p>"
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "-∞",
+              "html": "<p>Return 0.</p>"
+            },
+            {
+              "case": "∞",
+              "html": "<p>Return 1.</p>"
+            },
+            {
+              "case": "Otherwise",
+              "html": "",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>k</var> be <code>0.5<sup>abs(<var>s</var>)</sup></code>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>convexHalfCorner</var> be <code>0.5<sup><var>k</var></sup></code>.</p>"
+                },
+                {
+                  "html": "<p>If <var>param</var> is less than 0, return <code>1 - <var>convexHalfCorner</var></code>.</p>"
+                },
+                {
+                  "html": "<p>Return <var>convexHalfCorner</var>.</p>"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "name": "superellipse-exponent-to-interpolation-value",
-      "html": "To convert a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value③\">&lt;number [0,1]&gt;</a> <var>interpolationValue</var> back to a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-exponent\" id=\"ref-for-superellipse-exponent⑤\">superellipse exponent</a>:",
-      "rationale": "if",
+      "name": "superellipse-param-to-interpolation-value",
+      "html": "To convert a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value③\">&lt;number [0,1]&gt;</a> <var>interpolationValue</var> back to a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑥\">superellipse parameter</a>, switch on <var>interpolationValue</var>:",
+      "rationale": ".switch",
       "steps": [
         {
-          "html": "<p>If <var>interpolationValue</var> is 0, return 0.</p>"
-        },
-        {
-          "html": "<p>If <var>interpolationValue</var> is 1, return ∞.</p>"
-        },
-        {
-          "html": "<p>Return <code>ln(0.5)/ln(<var>interpolationValue</var>)</code>.</p>"
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "0",
+              "html": "<p>Return -∞.</p>"
+            },
+            {
+              "case": "0.5",
+              "html": "<p>Return 0.</p>"
+            },
+            {
+              "case": "1",
+              "html": "<p>Return ∞.</p>"
+            },
+            {
+              "case": "Otherwise",
+              "html": "",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>convexHalfCorner</var> be <var>interpolationValue</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>interpolationValue</var> is less than 0.5, set <var>convexHalfCorner</var> to 1 - <var>interpolationValue</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>k</var> be <code>ln(0.5) / ln(<var>convexHalfCorner</var>)</code>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>s</var> be <code>log2(<var>k</var>)</code>.</p>"
+                },
+                {
+                  "html": "<p>If <var>interpolationValue</var> is less than 0.5, return -<var>s</var>.</p>"
+                },
+                {
+                  "html": "<p>Return <var>s</var>.</p>"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
