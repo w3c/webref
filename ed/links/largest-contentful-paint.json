@@ -9,21 +9,26 @@
       "https://dom.spec.whatwg.org/": {},
       "https://drafts.csswg.org/css-backgrounds/": {},
       "https://drafts.csswg.org/css-box-4/": {},
+      "https://drafts.csswg.org/css-color-3/": {},
+      "https://drafts.csswg.org/css-color-4/": {},
       "https://drafts.csswg.org/css-images-3/": {},
+      "https://drafts.csswg.org/css-text-decor-4/": {},
       "https://drafts.csswg.org/cssom-view/": {},
+      "https://drafts.fxtf.org/fill-stroke/": {},
       "https://drafts.fxtf.org/geometry/": {},
       "https://fetch.spec.whatwg.org/": {},
       "https://github.com/w3c/largest-contentful-paint/issues": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://infra.spec.whatwg.org/": {},
       "https://streams.spec.whatwg.org/": {},
+      "https://w3c.github.io/element-timing/": {},
       "https://w3c.github.io/event-timing/": {},
       "https://w3c.github.io/hr-time/": {},
+      "https://w3c.github.io/largest-contentful-paint/": {},
       "https://w3c.github.io/paint-timing/": {},
       "https://w3c.github.io/performance-timeline/": {},
       "https://webidl.spec.whatwg.org/": {},
-      "https://wicg.github.io/element-timing/": {},
-      "https://www.w3.org/2023/Process-20231103/": {}
+      "https://www.w3.org/policies/process/20231103/": {}
     },
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
@@ -51,12 +56,28 @@
           "content-box"
         ]
       },
+      "https://drafts.csswg.org/css-color-3/": {
+        "anchors": [
+          "opacity",
+          "transparent"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-4/": {
+        "anchors": [
+          "alpha-channel"
+        ]
+      },
       "https://drafts.csswg.org/css-images-3/": {
         "anchors": [
           "concrete-object-size",
           "propdef-object-position",
           "natural-width",
           "natural-height"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-decor-4/": {
+        "anchors": [
+          "propdef-text-shadow"
         ]
       },
       "https://drafts.csswg.org/cssom-view-1/": {
@@ -67,6 +88,12 @@
       "https://drafts.csswg.org/cssom-view/": {
         "anchors": [
           "visual-viewport"
+        ]
+      },
+      "https://drafts.fxtf.org/fill-stroke-3/": {
+        "anchors": [
+          "propdef-stroke-color",
+          "propdef-stroke-image"
         ]
       },
       "https://drafts.fxtf.org/geometry-1/": {
@@ -123,9 +150,17 @@
           "dom-domhighrestimestamp"
         ]
       },
+      "https://w3c.github.io/largest-contentful-paint/": {
+        "anchors": [
+          "dom-largestcontentfulpaint-rendertime"
+        ]
+      },
       "https://w3c.github.io/paint-timing/": {
         "anchors": [
           "timing-eligible",
+          "painttimingmixin",
+          "default-paint-timestamp",
+          "paint-timing-info",
           "exposed-for-paint-timing",
           "pending-image-record",
           "pending-image-record-element",

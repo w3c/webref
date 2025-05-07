@@ -7,7 +7,7 @@
     {
       "name": "dynamic-range-limit",
       "href": "https://drafts.csswg.org/css-color-hdr-1/#propdef-dynamic-range-limit",
-      "value": "standard | no-limit | constrained-high | <dynamic-range-limit-mix()>",
+      "value": "standard | no-limit | constrained | <dynamic-range-limit-mix()>",
       "initial": "no-limit",
       "appliesTo": "all elements",
       "inherited": "yes",
@@ -31,11 +31,11 @@
           "value": "no-limit"
         },
         {
-          "name": "constrained-high",
+          "name": "constrained",
           "prose": "The highest peak luminance that is displayed is somewhat greater than HDR reference white, i.e. the CSS color white, such that a mix of SDR and HDR content can be comfortably viewed together.",
-          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-dynamic-range-limit-constrained-high",
+          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-dynamic-range-limit-constrained",
           "type": "value",
-          "value": "constrained-high"
+          "value": "constrained"
         }
       ],
       "styleDeclaration": [
