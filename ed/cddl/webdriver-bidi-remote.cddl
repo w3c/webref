@@ -190,8 +190,12 @@ browser.Close = (
 
 browser.CreateUserContext = (
   method: "browser.createUserContext",
-  params: EmptyParams,
+  params: browser.CreateUserContextParameters,
 )
+
+browser.CreateUserContextParameters = {
+  ? acceptInsecureCerts: bool
+}
 
 browser.GetClientWindows = (
   method: "browser.getClientWindows",

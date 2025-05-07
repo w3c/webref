@@ -14,27 +14,11 @@
     },
     "idlNames": {
       "LargestContentfulPaint": {
-        "fragment": "[Exposed=Window]\ninterface LargestContentfulPaint : PerformanceEntry {\n    readonly attribute DOMHighResTimeStamp renderTime;\n    readonly attribute DOMHighResTimeStamp loadTime;\n    readonly attribute unsigned long size;\n    readonly attribute DOMString id;\n    readonly attribute DOMString url;\n    readonly attribute Element? element;\n    [Default] object toJSON();\n};",
+        "fragment": "[Exposed=Window]\ninterface LargestContentfulPaint : PerformanceEntry {\n    readonly attribute DOMHighResTimeStamp loadTime;\n    readonly attribute unsigned long size;\n    readonly attribute DOMString id;\n    readonly attribute DOMString url;\n    readonly attribute Element? element;\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "LargestContentfulPaint",
         "inheritance": "PerformanceEntry",
         "members": [
-          {
-            "type": "attribute",
-            "name": "renderTime",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMHighResTimeStamp"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/largest-contentful-paint/#dom-largestcontentfulpaint-rendertime"
-          },
           {
             "type": "attribute",
             "name": "loadTime",
@@ -154,7 +138,17 @@
         "href": "https://w3c.github.io/largest-contentful-paint/#largestcontentfulpaint"
       }
     },
-    "idlExtendedNames": {},
+    "idlExtendedNames": {
+      "LargestContentfulPaint": [
+        {
+          "fragment": "LargestContentfulPaint includes PaintTimingMixin;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "LargestContentfulPaint",
+          "includes": "PaintTimingMixin"
+        }
+      ]
+    },
     "globals": {},
     "exposed": {
       "Window": [
@@ -165,7 +159,8 @@
       "LargestContentfulPaint": [
         "PerformanceEntry",
         "DOMHighResTimeStamp",
-        "Element"
+        "Element",
+        "PaintTimingMixin"
       ]
     },
     "externalDependencies": [

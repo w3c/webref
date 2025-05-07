@@ -6,10 +6,18 @@
       "title": "Largest Contentful Paint",
       "url": "https://www.w3.org/TR/largest-contentful-paint/"
     },
-    "fragment": "[Exposed=Window]\ninterface LargestContentfulPaint : PerformanceEntry {\n    readonly attribute DOMHighResTimeStamp renderTime;\n    readonly attribute DOMHighResTimeStamp loadTime;\n    readonly attribute unsigned long size;\n    readonly attribute DOMString id;\n    readonly attribute DOMString url;\n    readonly attribute Element? element;\n    [Default] object toJSON();\n};",
+    "fragment": "[Exposed=Window]\ninterface LargestContentfulPaint : PerformanceEntry {\n    readonly attribute DOMHighResTimeStamp loadTime;\n    readonly attribute unsigned long size;\n    readonly attribute DOMString id;\n    readonly attribute DOMString url;\n    readonly attribute Element? element;\n    [Default] object toJSON();\n};",
     "href": "https://w3c.github.io/largest-contentful-paint/#largestcontentfulpaint"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Largest Contentful Paint",
+        "url": "https://www.w3.org/TR/largest-contentful-paint/"
+      },
+      "fragment": "LargestContentfulPaint includes PaintTimingMixin;"
+    }
+  ],
   "inheritance": {
     "name": "PerformanceEntry",
     "type": "interface",
@@ -25,5 +33,21 @@
     "inheritance": null,
     "includes": []
   },
-  "includes": []
+  "includes": [
+    {
+      "name": "PaintTimingMixin",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Paint Timing",
+          "url": "https://www.w3.org/TR/paint-timing/"
+        },
+        "fragment": "[Exposed=Window]\ninterface mixin PaintTimingMixin {\n    readonly attribute DOMHighResTimeStamp paintTime;\n    readonly attribute DOMHighResTimeStamp? presentationTime;\n};",
+        "href": "https://w3c.github.io/paint-timing/#painttimingmixin"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
 }
