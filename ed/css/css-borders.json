@@ -1574,46 +1574,46 @@
       "name": "<corner-shape-value>",
       "href": "https://drafts.csswg.org/css-borders-4/#typedef-corner-shape-value",
       "type": "type",
-      "value": "round | scoop | bevel | notch | straight | squircle | superellipse(<number [0,∞]> | infinity)",
+      "value": "round | scoop | bevel | notch | square | squircle | superellipse(<number [-∞,∞]> | infinity | -infinity)",
       "values": [
         {
           "name": "round",
-          "prose": "Border radii define a convex elliptical curve at the corner. Equivalent to superellipse(2).",
+          "prose": "Border radii define a convex elliptical curve at the corner. Equivalent to superellipse(1).",
           "href": "https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-value-round",
           "type": "value",
           "value": "round"
         },
         {
           "name": "scoop",
-          "prose": "Border radii define a concave elliptical curve at the corner. Equivalent to superellipse(0.5).",
+          "prose": "Border radii define a concave elliptical curve at the corner. Equivalent to superellipse(-1).",
           "href": "https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-value-scoop",
           "type": "value",
           "value": "scoop"
         },
         {
           "name": "bevel",
-          "prose": "Border radii define a diagonal slice at the corner. Equivalent to superellipse(1).",
+          "prose": "Border radii define a diagonal slice at the corner. Equivalent to superellipse(0).",
           "href": "https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-value-bevel",
           "type": "value",
           "value": "bevel"
         },
         {
           "name": "notch",
-          "prose": "Border radii define a concave 90deg angle at the corner. Equivalent to superellipse(0).",
+          "prose": "Border radii define a concave 90deg angle at the corner. Equivalent to superellipse(-infinity).",
           "href": "https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-value-notch",
           "type": "value",
           "value": "notch"
         },
         {
-          "name": "straight",
+          "name": "square",
           "prose": "Border radii define a convex 90deg angle at the corner. This would have the same visual effect as a border-radius of 0. This is different from having a border-radius of 0 when animating. Equivalent to superellipse(infinity).",
-          "href": "https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-value-straight",
+          "href": "https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-value-square",
           "type": "value",
-          "value": "straight"
+          "value": "square"
         },
         {
           "name": "squircle",
-          "prose": "Border radii define a convex curve between an ellipse and an convex angle, equivalent to superellipse(4).",
+          "prose": "Border radii define a convex curve between an ellipse and an convex angle, equivalent to superellipse(2).",
           "href": "https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-value-squircle",
           "type": "value",
           "value": "squircle"
@@ -1622,7 +1622,7 @@
     },
     {
       "name": "superellipse()",
-      "value": "superellipse( <number> | infinity )",
+      "value": "superellipse( <number> | infinity | -infinity )",
       "href": "https://drafts.csswg.org/css-borders-4/#funcdef-superellipse",
       "type": "function"
     },
