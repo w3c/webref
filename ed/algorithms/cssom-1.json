@@ -75,7 +75,7 @@
     {
       "name": "parse a media query list",
       "href": "https://drafts.csswg.org/cssom-1/#parse-a-media-query-list",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-media-query-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a media query list</dfn> for a\ngiven string <var>s</var> into a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-query-list\" id=\"ref-for-media-query-list\">media query list</a> is defined in\nthe Media Queries specification. Return the list of media\nqueries that the algorithm defined there gives.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-media-query-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a media query list</dfn> for a\ngiven string <var>s</var> into a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-4/#media-query-list\" id=\"ref-for-media-query-list\">media query list</a> is defined in\nthe Media Queries specification. Return the list of media\nqueries that the algorithm defined there gives.",
       "rationale": "To <dfn>"
     },
     {
@@ -91,10 +91,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-query-list\" id=\"ref-for-media-query-list①\">media query list</a> is empty, then return the empty string."
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-4/#media-query-list\" id=\"ref-for-media-query-list①\">media query list</a> is empty, then return the empty string."
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-media-query\" id=\"ref-for-serialize-a-media-query\">Serialize</a> each media query in the list of media queries, in the same order as they appear in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-query-list\" id=\"ref-for-media-query-list②\">media query list</a>, and then <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-comma-separated-list\" id=\"ref-for-serialize-a-comma-separated-list\">serialize</a> the list."
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-media-query\" id=\"ref-for-serialize-a-media-query\">Serialize</a> each media query in the list of media queries, in the same order as they appear in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-4/#media-query-list\" id=\"ref-for-media-query-list②\">media query list</a>, and then <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-comma-separated-list\" id=\"ref-for-serialize-a-comma-separated-list\">serialize</a> the list."
         }
       ]
     },
@@ -105,23 +105,23 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-query\" id=\"ref-for-media-query②\">media query</a> is negated append \"<code>not</code>\", followed\n by a single SPACE (U+0020), to <var>s</var>."
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-4/#media-query\" id=\"ref-for-media-query②\">media query</a> is negated append \"<code>not</code>\", followed\n by a single SPACE (U+0020), to <var>s</var>."
         },
         {
-          "html": "Let <var>type</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier①\">serialization\n as an identifier</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-type\" id=\"ref-for-media-type\">media type</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-query\" id=\"ref-for-media-query③\">media query</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase\">converted to ASCII lowercase</a>."
+          "html": "Let <var>type</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier①\">serialization\n as an identifier</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-4/#media-type\" id=\"ref-for-media-type\">media type</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-4/#media-query\" id=\"ref-for-media-query③\">media query</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase\">converted to ASCII lowercase</a>."
         },
         {
-          "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-query\" id=\"ref-for-media-query④\">media query</a> does not contain <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-feature\" id=\"ref-for-media-feature\">media features</a> append <var>type</var>, to <var>s</var>,\n then return <var>s</var>."
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-4/#media-query\" id=\"ref-for-media-query④\">media query</a> does not contain <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-4/#media-feature\" id=\"ref-for-media-feature\">media features</a> append <var>type</var>, to <var>s</var>,\n then return <var>s</var>."
         },
         {
           "html": "If <var>type</var> is not \"<code>all</code>\" or if the\n media query is negated append <var>type</var>, followed by a\n single SPACE (U+0020), followed by \"<code>and</code>\", followed by a single SPACE\n (U+0020), to <var>s</var>."
         },
         {
-          "html": "Then, for each <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-feature\" id=\"ref-for-media-feature①\">media feature</a>:",
+          "html": "Then, for each <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-4/#media-feature\" id=\"ref-for-media-feature①\">media feature</a>:",
           "rationale": "append",
           "steps": [
             {
-              "html": "Append a \"<code>(</code>\" (U+0028), followed by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-feature\" id=\"ref-for-media-feature②\">media feature</a> name, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase①\">converted to ASCII lowercase</a>,\n   to <var>s</var>."
+              "html": "Append a \"<code>(</code>\" (U+0028), followed by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-4/#media-feature\" id=\"ref-for-media-feature②\">media feature</a> name, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase①\">converted to ASCII lowercase</a>,\n   to <var>s</var>."
             },
             {
               "html": "If a value is given append a \"<code>:</code>\" (U+003A), followed\n   by a single SPACE (U+0020), followed by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-media-feature-value\" id=\"ref-for-serialize-a-media-feature-value\">serialized media feature value</a>,\n   to <var>s</var>."
@@ -130,7 +130,7 @@
               "html": "Append a \"<code>)</code>\" (U+0029) to <var>s</var>."
             },
             {
-              "html": "If this is not the last <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-feature\" id=\"ref-for-media-feature③\">media feature</a> append a single SPACE (U+0020),\n   followed by \"<code>and</code>\", followed by a single SPACE (U+0020), to <var>s</var>."
+              "html": "If this is not the last <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-4/#media-feature\" id=\"ref-for-media-feature③\">media feature</a> append a single SPACE (U+0020),\n   followed by \"<code>and</code>\", followed by a single SPACE (U+0020), to <var>s</var>."
             }
           ]
         },
