@@ -10,11 +10,24 @@
       "https://drafts.csswg.org/css-env-1/": {},
       "https://drafts.csswg.org/css-position-4/": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://github.com/w3c/csswg-drafts/issues/10182": {},
+      "https://github.com/w3c/csswg-drafts/issues/10525": {},
+      "https://github.com/w3c/csswg-drafts/issues/10526": {},
+      "https://github.com/w3c/csswg-drafts/issues/10955": {},
+      "https://github.com/w3c/csswg-drafts/issues/10999": {},
+      "https://github.com/w3c/csswg-drafts/issues/11030": {},
+      "https://github.com/w3c/csswg-drafts/issues/11170": {},
+      "https://github.com/w3c/csswg-drafts/issues/11371": {},
+      "https://github.com/w3c/csswg-drafts/issues/11372": {},
+      "https://github.com/w3c/csswg-drafts/issues/11792": {},
+      "https://github.com/w3c/csswg-drafts/issues/11803": {},
+      "https://github.com/w3c/csswg-drafts/issues/11828": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
+      "https://streams.spec.whatwg.org/": {},
       "https://w3c.github.io/aria/": {
         "anchors": [
           "aria-details",
@@ -24,7 +37,11 @@
       "https://webidl.spec.whatwg.org/": {},
       "https://www.w3.org/Style/CSS/Test/": {},
       "https://www.w3.org/TR/": {},
-      "https://www.w3.org/TR/2024/WD-css-anchor-position-1-20240326/": {},
+      "https://www.w3.org/TR/2024/WD-css-anchor-position-1-20241004/": {
+        "anchors": [
+          "changes"
+        ]
+      },
       "https://www.w3.org/TR/CSS/": {
         "anchors": [
           "future-proofing",
@@ -32,12 +49,12 @@
           "proprietary-extension"
         ]
       },
+      "https://www.w3.org/TR/CSS2/": {},
       "https://www.w3.org/TR/CSS2/about.html": {
         "anchors": [
           "property-defs"
         ]
       },
-      "https://www.w3.org/TR/CSS21/": {},
       "https://www.w3.org/TR/CSS21/conform.html": {
         "anchors": [
           "style-sheet",
@@ -65,6 +82,7 @@
       "https://www.w3.org/TR/css-conditional-5/": {},
       "https://www.w3.org/TR/css-contain-2/": {},
       "https://www.w3.org/TR/css-display-3/": {},
+      "https://www.w3.org/TR/css-display-4/": {},
       "https://www.w3.org/TR/css-logical-1/": {},
       "https://www.w3.org/TR/css-overflow-3/": {},
       "https://www.w3.org/TR/css-overflow-4/": {},
@@ -88,6 +106,7 @@
         ]
       },
       "https://www.w3.org/TR/css-values-4/": {},
+      "https://www.w3.org/TR/css-values-5/": {},
       "https://www.w3.org/TR/css-values/": {
         "anchors": [
           "value-defs",
@@ -157,11 +176,6 @@
           "css-tree-scoped-reference"
         ]
       },
-      "https://drafts.csswg.org/css-variables-1/": {
-        "anchors": [
-          "arbitrary-substitution-function"
-        ]
-      },
       "https://drafts.csswg.org/cssom-1/": {
         "anchors": [
           "cssstyledeclaration-readonly-flag"
@@ -183,6 +197,11 @@
           "iteration-continue"
         ]
       },
+      "https://streams.spec.whatwg.org/": {
+        "anchors": [
+          "generictransformstream-transform"
+        ]
+      },
       "https://w3c.github.io/aria/": {
         "anchors": [
           "host_general_role"
@@ -195,7 +214,7 @@
           "PutForwards"
         ]
       },
-      "https://www.w3.org/TR/CSS21/selector.html": {
+      "https://www.w3.org/TR/CSS2/selector.html": {
         "anchors": [
           "x22"
         ]
@@ -204,14 +223,13 @@
         "anchors": [
           "valdef-align-self-normal",
           "self-alignment-properties",
-          "valdef-self-position-start",
-          "valdef-self-position-end",
           "self-align",
+          "valdef-self-position-center",
+          "valdef-self-position-end",
           "propdef-align-self",
           "propdef-justify-self",
           "propdef-justify-items",
           "propdef-align-items",
-          "valdef-self-position-center",
           "typedef-self-position",
           "typedef-baseline-position"
         ]
@@ -271,11 +289,17 @@
       },
       "https://www.w3.org/TR/css-display-3/": {
         "anchors": [
-          "principal-box",
           "elements",
+          "invisible"
+        ]
+      },
+      "https://www.w3.org/TR/css-display-4/": {
+        "anchors": [
+          "principal-box",
           "containing-block",
           "containing-block-chain",
           "initial-containing-block",
+          "propdef-display",
           "propdef-visibility"
         ]
       },
@@ -290,6 +314,7 @@
         "anchors": [
           "scroll-container",
           "scroll-offset",
+          "initial-scroll-position",
           "ink-overflow-rectangle",
           "propdef-overflow"
         ]
@@ -347,8 +372,7 @@
       },
       "https://www.w3.org/TR/css-transforms-1/": {
         "anchors": [
-          "propdef-transform",
-          "funcdef-transform-translate"
+          "propdef-transform"
         ]
       },
       "https://www.w3.org/TR/css-values-4/": {
@@ -369,17 +393,25 @@
           "computed-length"
         ]
       },
-      "https://www.w3.org/TR/css-variables-1/": {
+      "https://www.w3.org/TR/css-values-5/": {
         "anchors": [
           "invalid-at-computed-value-time",
+          "arbitrary-substitution-function"
+        ]
+      },
+      "https://www.w3.org/TR/css-variables-1/": {
+        "anchors": [
           "substitute-a-var"
         ]
       },
       "https://www.w3.org/TR/css-writing-modes-4/": {
         "anchors": [
+          "valdef-writing-mode-horizontal-tb",
           "writing-mode",
           "start",
           "end",
+          "flow-relative",
+          "physical",
           "block-axis",
           "inline-axis",
           "block-start",
@@ -407,6 +439,7 @@
       },
       "https://www.w3.org/TR/selectors-4/": {
         "anchors": [
+          "pseudo-element",
           "originating-element"
         ]
       },

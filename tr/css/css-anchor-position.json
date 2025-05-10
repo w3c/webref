@@ -57,14 +57,14 @@
         },
         {
           "name": "all",
-          "prose": "Specifies that all anchor names defined by this element or its descendants—​whose scope is not already limited by a descendant using anchor-scope—​to be in scope only for this element’s descendants; and limits descendants to only match anchor names to anchor elements within this subtree.",
+          "prose": "Specifies that all anchor names defined by this element or its descendants—​whose scope is not already limited by a descendant using anchor-scope—​to be in scope only for this element’s descendants; and limits descendants to only match anchor names to anchor elements within this subtree. This value only affects anchor names in the same tree scope, as if it were a tree-scoped name. (That is, anchor-scope: all acts identically to anchor-scope: --foo, --bar, ..., listing all relevant anchor names.)",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-anchor-scope-all",
           "type": "value",
           "value": "all"
         },
         {
           "name": "<dashed-ident>",
-          "prose": "Specifies that a matching anchor name defined by this element or its descendants—​whose scope is not already limited by a descendant using anchor-scope—​to be in scope only for this element’s descendants; and limits descendants to only match these anchor names to anchor elements within this subtree.",
+          "prose": "Specifies that a matching anchor name defined by this element or its descendants—​whose scope is not already limited by a descendant using anchor-scope—​to be in scope only for this element’s descendants; and limits descendants to only match these anchor names to anchor elements within this subtree. The <dashed-ident> is a tree-scoped name.",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-anchor-scope-dashed-ident",
           "type": "value",
           "value": "<dashed-ident>"
@@ -115,7 +115,7 @@
       "appliesTo": "positioned boxes with a default anchor box",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "the keyword none or a pair of keywords, see § 3.1.3 Computed Value and Serialization of <position-area>",
       "canonicalOrder": "per grammar",
       "animationType": "TBD",
       "values": [
@@ -128,7 +128,7 @@
         },
         {
           "name": "<position-area>",
-          "prose": "If the box does not have a default anchor box, or is not an absolutely positioned box, this value has no effect. Otherwise, it has the following effects: The property selects a region of the position-area grid, and makes that the box’s containing block. See § 3.1.1 Resolving <position-area>s for details. Note: This means that the inset properties specify offsets from the position-area, and some property values, like max-height: 100%, will be relative to the position-area as well. The normal value for the self-alignment properties behaves as either start, end, or anchor-center, depending on the positioning of the region, to give a good default alignment for the positioned box. Again, see § 3.1.1 Resolving <position-area>s for details. Any auto inset properties resolve to 0. The box is not considered to be in a legacy alignment mode in either axis.",
+          "prose": "If the box does not have a default anchor box, or is not an absolutely positioned box, this value has no effect. Otherwise, selects a region of the position-area grid, and makes that the box’s containing block.",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-position-area",
           "type": "value",
           "value": "<position-area>"
@@ -137,34 +137,6 @@
       "styleDeclaration": [
         "position-area",
         "positionArea"
-      ]
-    },
-    {
-      "name": "top",
-      "newValues": "<anchor()> | <anchor-size()>",
-      "styleDeclaration": [
-        "top"
-      ]
-    },
-    {
-      "name": "left",
-      "newValues": "<anchor()> | <anchor-size()>",
-      "styleDeclaration": [
-        "left"
-      ]
-    },
-    {
-      "name": "right",
-      "newValues": "<anchor()> | <anchor-size()>",
-      "styleDeclaration": [
-        "right"
-      ]
-    },
-    {
-      "name": "bottom",
-      "newValues": "<anchor()> | <anchor-size()>",
-      "styleDeclaration": [
-        "bottom"
       ]
     },
     {
@@ -236,6 +208,34 @@
       ]
     },
     {
+      "name": "top",
+      "newValues": "<anchor()> | <anchor-size()>",
+      "styleDeclaration": [
+        "top"
+      ]
+    },
+    {
+      "name": "left",
+      "newValues": "<anchor()> | <anchor-size()>",
+      "styleDeclaration": [
+        "left"
+      ]
+    },
+    {
+      "name": "right",
+      "newValues": "<anchor()> | <anchor-size()>",
+      "styleDeclaration": [
+        "right"
+      ]
+    },
+    {
+      "name": "bottom",
+      "newValues": "<anchor()> | <anchor-size()>",
+      "styleDeclaration": [
+        "bottom"
+      ]
+    },
+    {
       "name": "position-visibility",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#propdef-position-visibility",
       "value": "always | [ anchors-valid || anchors-visible || no-overflow ]",
@@ -256,21 +256,21 @@
         },
         {
           "name": "anchors-valid",
-          "prose": "If any of the box’s required anchor references do not resolve to a target anchor element, the box is strongly hidden. What is a required anchor reference? anchor() functions that don’t have a fallback value; the default anchor *sometimes*? Need more detail here. Any anchors are missing, or all anchors are missing? I can see use-cases for either, potentially. Do we want to make a decision here, or make it controllable somehow?",
+          "prose": "If any of the box’s required anchor references do not resolve to a target anchor element, the box’s visibility property computes to force-hidden. What is a required anchor reference? anchor() functions that don’t have a fallback value; the default anchor *sometimes*? Need more detail here. Any anchors are missing, or all anchors are missing? I can see use-cases for either, potentially. Do we want to make a decision here, or make it controllable somehow?",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-visibility-anchors-valid",
           "type": "value",
           "value": "anchors-valid"
         },
         {
           "name": "anchors-visible",
-          "prose": "If the box has a default anchor box but that anchor box is clipped by intervening boxes, this box is also strongly hidden.",
+          "prose": "If the box has a default anchor box but that anchor box is invisible or clipped by intervening boxes, the box’s visibility property computes to force-hidden.",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-visibility-anchors-visible",
           "type": "value",
           "value": "anchors-visible"
         },
         {
           "name": "no-overflow",
-          "prose": "If the box overflows its inset-modified containing block even after applying position-try, then the box is strongly hidden.",
+          "prose": "If the box overflows its inset-modified containing block even after applying position-try, the box’s visibility property computes to force-hidden.",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-visibility-no-overflow",
           "type": "value",
           "value": "no-overflow"
@@ -652,18 +652,18 @@
           "value": "block-end"
         },
         {
-          "name": "block-self-start",
+          "name": "self-block-start",
           "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
-          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-block-self-start",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-self-block-start",
           "type": "value",
-          "value": "block-self-start"
+          "value": "self-block-start"
         },
         {
-          "name": "block-self-end",
+          "name": "self-block-end",
           "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
-          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-block-self-end",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-self-block-end",
           "type": "value",
-          "value": "block-self-end"
+          "value": "self-block-end"
         },
         {
           "name": "inline-start",
@@ -680,18 +680,18 @@
           "value": "inline-end"
         },
         {
-          "name": "inline-self-start",
+          "name": "self-inline-start",
           "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
-          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-inline-self-start",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-self-inline-start",
           "type": "value",
-          "value": "inline-self-start"
+          "value": "self-inline-start"
         },
         {
-          "name": "inline-self-end",
+          "name": "self-inline-end",
           "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
-          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-inline-self-end",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-self-inline-end",
           "type": "value",
-          "value": "inline-self-end"
+          "value": "self-inline-end"
         },
         {
           "name": "center",
@@ -702,87 +702,157 @@
         },
         {
           "name": "span-start",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-start",
           "type": "value",
           "value": "span-start"
         },
         {
           "name": "span-end",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-end",
           "type": "value",
           "value": "span-end"
         },
         {
+          "name": "span-self-start",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-self-start",
+          "type": "value",
+          "value": "span-self-start"
+        },
+        {
+          "name": "span-self-end",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-self-end",
+          "type": "value",
+          "value": "span-self-end"
+        },
+        {
           "name": "span-top",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-top",
           "type": "value",
           "value": "span-top"
         },
         {
           "name": "span-bottom",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-bottom",
           "type": "value",
           "value": "span-bottom"
         },
         {
           "name": "span-y-start",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-y-start",
           "type": "value",
           "value": "span-y-start"
         },
         {
           "name": "span-y-end",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-y-end",
           "type": "value",
           "value": "span-y-end"
         },
         {
+          "name": "span-y-self-start",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-y-self-start",
+          "type": "value",
+          "value": "span-y-self-start"
+        },
+        {
+          "name": "span-y-self-end",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-y-self-end",
+          "type": "value",
+          "value": "span-y-self-end"
+        },
+        {
           "name": "span-x-start",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-x-start",
           "type": "value",
           "value": "span-x-start"
         },
         {
           "name": "span-x-end",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-x-end",
           "type": "value",
           "value": "span-x-end"
         },
         {
+          "name": "span-x-self-start",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-x-self-start",
+          "type": "value",
+          "value": "span-x-self-start"
+        },
+        {
+          "name": "span-x-self-end",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-x-self-end",
+          "type": "value",
+          "value": "span-x-self-end"
+        },
+        {
           "name": "span-block-start",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-block-start",
           "type": "value",
           "value": "span-block-start"
         },
         {
           "name": "span-block-end",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-block-end",
           "type": "value",
           "value": "span-block-end"
         },
         {
+          "name": "span-self-block-start",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-self-block-start",
+          "type": "value",
+          "value": "span-self-block-start"
+        },
+        {
+          "name": "span-self-block-end",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-self-block-end",
+          "type": "value",
+          "value": "span-self-block-end"
+        },
+        {
           "name": "span-inline-start",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-inline-start",
           "type": "value",
           "value": "span-inline-start"
         },
         {
           "name": "span-inline-end",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-inline-end",
           "type": "value",
           "value": "span-inline-end"
+        },
+        {
+          "name": "span-self-inline-start",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-self-inline-start",
+          "type": "value",
+          "value": "span-self-inline-start"
+        },
+        {
+          "name": "span-self-inline-end",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-area-span-self-inline-end",
+          "type": "value",
+          "value": "span-self-inline-end"
         },
         {
           "name": "span-all",
@@ -795,7 +865,7 @@
     },
     {
       "name": "anchor()",
-      "prose": "An absolutely positioned box can use the anchor() function as a value in its inset properties to refer to the position of one or more anchor boxes. The anchor() function resolves to a <length>. It is only valid to be used in the inset properties.",
+      "prose": "An absolutely positioned box can use the anchor() function as a value in its inset properties to refer to the position of one or more anchor boxes. The anchor() function resolves to a <length>. It is only allowed in the inset properties (and is otherwise invalid).",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#funcdef-anchor",
       "type": "function",
       "value": "anchor( <anchor-name>? && <anchor-side>, <length-percentage>? )",
@@ -907,7 +977,7 @@
     },
     {
       "name": "anchor-size()",
-      "prose": "An absolutely positioned box can use the anchor-size() function in its sizing properties to refer to the size of one or more anchor boxes. The anchor-size() function resolves to a <length>. It is only valid to be used in the accepted @position-try properties.",
+      "prose": "An absolutely positioned box can use the anchor-size() function in its sizing properties to refer to the size of one or more anchor boxes. The anchor-size() function resolves to a <length>. It is only allowed in the accepted @position-try properties (and is otherwise invalid).",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#funcdef-anchor-size",
       "type": "function",
       "value": "anchor-size( [ <anchor-name> || <anchor-size> ]? , <length-percentage>? )",
