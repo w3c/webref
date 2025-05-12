@@ -43,6 +43,18 @@
           "html": "Otherwise, use one of the values of <code>sh:validator</code>."
         }
       ]
+    },
+    {
+      "html": "For each <a href=\"https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-solutions\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-solutions-11\">solution</a> of a <code>SELECT</code> result set, a SHACL processor that supports annotations\n\t\t\t\twalks through the declared result annotations.\n\t\t\t\tThe mapping from result annotations to SPARQL variables uses the following rules:",
+      "rationale": "use",
+      "steps": [
+        {
+          "html": "Use the <a data-cite=\"shacl12-core#dfn-value\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-value\">value</a> of the property <code>sh:annotationVarName</code>"
+        },
+        {
+          "html": "If no such <a data-cite=\"shacl12-core#dfn-value\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-value\">value</a> exists, use the <a href=\"https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-local-names\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-names-2\">local name</a> of the <a data-cite=\"shacl12-core#dfn-value\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-value\">value</a> of <code>sh:annotationProperty</code> \n\t\t\t\tas the variable name."
+        }
+      ]
     }
   ]
 }
