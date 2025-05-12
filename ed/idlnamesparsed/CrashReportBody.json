@@ -6,7 +6,7 @@
       "title": "Crash Reporting",
       "url": "https://wicg.github.io/crash-reporting/"
     },
-    "fragment": "[Exposed=(Window,Worker)]\ninterface CrashReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString? reason;\n  readonly attribute DOMString? stack;\n};"
+    "fragment": "[Exposed=(Window,Worker)]\ninterface CrashReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString? reason;\n  readonly attribute DOMString? stack;\n  readonly attribute DOMString? is_top_level;\n  readonly attribute DocumentVisibilityState? page_visibility;\n};"
   },
   "extended": [],
   "inheritance": {
