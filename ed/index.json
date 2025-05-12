@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-05-12T12:49:33.785Z",
+  "date": "2025-05-12T15:05:13.611Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -148,6 +148,7 @@
       "testutils",
       "url",
       "urlpattern",
+      "digital-credentials",
       "login-status",
       "at-driver",
       "execCommand",
@@ -188,6 +189,7 @@
       "web-bluetooth",
       "web-bluetooth-scanning",
       "webidl",
+      "translation-api",
       "writing-assistance-apis",
       "websockets",
       "anonymous-iframe",
@@ -204,13 +206,13 @@
       "css-parser-api",
       "datacue",
       "deprecation-reporting",
-      "digital-credentials",
       "digital-goods",
       "direct-sockets",
       "document-isolation-policy",
       "document-picture-in-picture",
       "document-policy",
       "entries-api",
+      "explicit-javascript-compile-hints-file-based",
       "eyedropper-api",
       "fenced-frame",
       "file-system-access",
@@ -264,7 +266,6 @@
       "video-rvfc",
       "web-app-launch",
       "web-otp",
-      "web-preferences-api",
       "web-smart-card",
       "device-attributes",
       "managed-configuration",
@@ -455,6 +456,7 @@
       "DOM-Parsing",
       "dpub-aam-1.1",
       "dpub-aria-1.1",
+      "dx-prof-conneg",
       "edit-context",
       "eme-hdcp-version-registry",
       "eme-initdata-cenc",
@@ -613,6 +615,7 @@
       "vc-data-model-2.0",
       "vibration",
       "virtual-keyboard",
+      "vocab-dcat-3",
       "wai-aria-1.2",
       "wai-aria-1.3",
       "wasm-core-2",
@@ -703,10 +706,10 @@
     ]
   },
   "stats": {
-    "crawled": 672,
-    "errors": 2
+    "crawled": 675,
+    "errors": 1
   },
-  "crawler": "reffy-18.6.1",
+  "crawler": "reffy-18.6.2",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -932,7 +935,7 @@
         "status": "Draft Deliverable",
         "alternateUrls": [],
         "repository": "https://github.com/AOMediaCodec/av1-mpeg2-ts",
-        "sourcePath": "index.html",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "Carriage of AV1 in MPEG-2 TS",
@@ -2835,6 +2838,7 @@
         ],
         "excludePaths": [
           "fetch/fetch-later",
+          "fetch/local-network-access",
           "fetch/metadata",
           "fetch/private-network-access"
         ]
@@ -3269,7 +3273,7 @@
       ],
       "crawled": "https://immersive-web.github.io/model-element/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 02 May 2025 23:43:20 GMT"
+        "lastModified": "Fri, 02 May 2025 23:43:19 GMT"
       },
       "generator": "respec",
       "date": "02 May 2025",
@@ -3942,7 +3946,7 @@
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/privacycg/saa-non-cookie-storage",
-        "sourcePath": "spec.html",
+        "sourcePath": "spec.bs",
         "filename": "index.html"
       },
       "title": "Extending Storage Access API (SAA) to non-cookie storage",
@@ -7967,7 +7971,7 @@
       ],
       "crawled": "https://tc39.es/proposal-set-methods/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 06 Jul 2024 03:17:20 GMT"
+        "lastModified": "Sat, 06 Jul 2024 03:17:19 GMT"
       },
       "date": "6 July 2024",
       "links": "links/tc39-set-methods.json",
@@ -8282,6 +8286,60 @@
       "dfns": "dfns/urlpattern.json",
       "headings": "headings/urlpattern.json",
       "ids": "ids/urlpattern.json",
+      "cddl": []
+    },
+    {
+      "url": "https://w3c-fedid.github.io/digital-credentials/",
+      "seriesComposition": "full",
+      "shortname": "digital-credentials",
+      "series": {
+        "shortname": "digital-credentials",
+        "currentSpecification": "digital-credentials",
+        "title": "Digital Credentials",
+        "shortTitle": "Digital Credentials",
+        "nightlyUrl": "https://w3c-fedid.github.io/digital-credentials/"
+      },
+      "formerNames": [
+        "digital-identities"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Federated Identity Working Group",
+          "url": "https://www.w3.org/groups/wg/fedid/"
+        }
+      ],
+      "nightly": {
+        "url": "https://w3c-fedid.github.io/digital-credentials/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c-fedid/digital-credentials",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Digital Credentials",
+      "source": "spec",
+      "shortTitle": "Digital Credentials",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://w3c-fedid.github.io/digital-credentials/"
+      ],
+      "crawled": "https://w3c-fedid.github.io/digital-credentials/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 05 May 2025 16:58:36 GMT"
+      },
+      "generator": "respec",
+      "date": "05 May 2025",
+      "algorithms": "algorithms/digital-credentials.json",
+      "links": "links/digital-credentials.json",
+      "refs": "refs/digital-credentials.json",
+      "idl": "idl/digital-credentials.idl",
+      "dfns": "dfns/digital-credentials.json",
+      "headings": "headings/digital-credentials.json",
+      "ids": "ids/digital-credentials.json",
       "cddl": []
     },
     {
@@ -9037,7 +9095,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -10224,7 +10282,7 @@
       ],
       "crawled": "https://webaudio.github.io/web-speech-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 23 Apr 2025 07:37:40 GMT"
+        "lastModified": "Wed, 23 Apr 2025 07:37:33 GMT"
       },
       "generator": "bikeshed",
       "date": "23 April 2025",
@@ -10419,6 +10477,58 @@
       "dfns": "dfns/webidl.json",
       "headings": "headings/webidl.json",
       "ids": "ids/webidl.json",
+      "cddl": []
+    },
+    {
+      "url": "https://webmachinelearning.github.io/translation-api/",
+      "seriesComposition": "full",
+      "shortname": "translation-api",
+      "series": {
+        "shortname": "translation-api",
+        "currentSpecification": "translation-api",
+        "title": "Translator and Language Detector APIs",
+        "shortTitle": "Translator and Language Detector APIs",
+        "nightlyUrl": "https://webmachinelearning.github.io/translation-api/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Machine Learning Community Group",
+          "url": "https://www.w3.org/community/webmachinelearning/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webmachinelearning.github.io/translation-api/",
+        "status": "Draft Community Group Report",
+        "alternateUrls": [],
+        "repository": "https://github.com/webmachinelearning/translation-api",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Translator and Language Detector APIs",
+      "source": "spec",
+      "shortTitle": "Translator and Language Detector APIs",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://webmachinelearning.github.io/translation-api/"
+      ],
+      "crawled": "https://webmachinelearning.github.io/translation-api/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 09 May 2025 01:54:46 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "9 May 2025",
+      "revision": "520712ad08adaf76efeec32c83a710c41ee8513c",
+      "algorithms": "algorithms/translation-api.json",
+      "links": "links/translation-api.json",
+      "refs": "refs/translation-api.json",
+      "idl": "idl/translation-api.idl",
+      "dfns": "dfns/translation-api.json",
+      "headings": "headings/translation-api.json",
+      "ids": "ids/translation-api.json",
       "cddl": []
     },
     {
@@ -11297,61 +11407,6 @@
       "cddl": []
     },
     {
-      "url": "https://wicg.github.io/digital-credentials/",
-      "seriesComposition": "full",
-      "shortname": "digital-credentials",
-      "series": {
-        "shortname": "digital-credentials",
-        "currentSpecification": "digital-credentials",
-        "title": "Digital Credentials",
-        "shortTitle": "Digital Credentials",
-        "nightlyUrl": "https://wicg.github.io/digital-credentials/"
-      },
-      "formerNames": [
-        "digital-identities"
-      ],
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Web Platform Incubator Community Group",
-          "url": "https://www.w3.org/community/wicg/"
-        }
-      ],
-      "nightly": {
-        "url": "https://wicg.github.io/digital-credentials/",
-        "status": "Draft Community Group Report",
-        "alternateUrls": [],
-        "repository": "https://github.com/WICG/digital-credentials",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "title": "Digital Credentials",
-      "source": "spec",
-      "shortTitle": "Digital Credentials",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://wicg.github.io/digital-credentials/"
-      ],
-      "crawled": "https://wicg.github.io/digital-credentials/",
-      "crawlCacheInfo": {
-        "lastModified": "Thu, 20 Feb 2025 00:49:45 GMT"
-      },
-      "generator": "respec",
-      "date": "20 February 2025",
-      "algorithms": "algorithms/digital-credentials.json",
-      "links": "links/digital-credentials.json",
-      "refs": "refs/digital-credentials.json",
-      "idl": "idl/digital-credentials.idl",
-      "dfns": "dfns/digital-credentials.json",
-      "headings": "headings/digital-credentials.json",
-      "ids": "ids/digital-credentials.json",
-      "cddl": [],
-      "error": "Error: Loading https://wicg.github.io/digital-credentials/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 198)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
-    },
-    {
       "url": "https://wicg.github.io/digital-goods/",
       "seriesComposition": "full",
       "shortname": "digital-goods",
@@ -11674,6 +11729,56 @@
       "dfns": "dfns/entries-api.json",
       "headings": "headings/entries-api.json",
       "ids": "ids/entries-api.json",
+      "cddl": []
+    },
+    {
+      "url": "https://wicg.github.io/explicit-javascript-compile-hints-file-based/",
+      "seriesComposition": "full",
+      "shortname": "explicit-javascript-compile-hints-file-based",
+      "series": {
+        "shortname": "explicit-javascript-compile-hints-file-based",
+        "currentSpecification": "explicit-javascript-compile-hints-file-based",
+        "title": "Explicit JavaScript Compile Hints (File-based)",
+        "shortTitle": "File-based",
+        "nightlyUrl": "https://wicg.github.io/explicit-javascript-compile-hints-file-based/"
+      },
+      "nightly": {
+        "url": "https://wicg.github.io/explicit-javascript-compile-hints-file-based/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WICG/explicit-javascript-compile-hints-file-based",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "shortTitle": "Explicit JavaScript Compile Hints (File-based)",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "title": "Explicit JavaScript Compile Hints (File-based)",
+      "source": "spec",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://wicg.github.io/explicit-javascript-compile-hints-file-based/"
+      ],
+      "crawled": "https://wicg.github.io/explicit-javascript-compile-hints-file-based/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 09 May 2025 07:56:02 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "9 May 2025",
+      "revision": "79c7fb5192c5e31b81ee8dcf0e3c5b062847402a",
+      "algorithms": "algorithms/explicit-javascript-compile-hints-file-based.json",
+      "links": "links/explicit-javascript-compile-hints-file-based.json",
+      "refs": "refs/explicit-javascript-compile-hints-file-based.json",
+      "headings": "headings/explicit-javascript-compile-hints-file-based.json",
+      "ids": "ids/explicit-javascript-compile-hints-file-based.json",
       "cddl": []
     },
     {
@@ -12096,7 +12201,7 @@
       ],
       "crawled": "https://wicg.github.io/ink-enhancement/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Sep 2024 07:54:59 GMT"
+        "lastModified": "Mon, 16 Sep 2024 07:54:58 GMT"
       },
       "generator": "bikeshed",
       "date": "16 September 2024",
@@ -14567,57 +14672,6 @@
       "dfns": "dfns/web-otp.json",
       "headings": "headings/web-otp.json",
       "ids": "ids/web-otp.json",
-      "cddl": []
-    },
-    {
-      "url": "https://wicg.github.io/web-preferences-api/",
-      "seriesComposition": "full",
-      "shortname": "web-preferences-api",
-      "series": {
-        "shortname": "web-preferences-api",
-        "currentSpecification": "web-preferences-api",
-        "title": "Web Preferences API",
-        "shortTitle": "Web Preferences API",
-        "nightlyUrl": "https://wicg.github.io/web-preferences-api/"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Web Platform Incubator Community Group",
-          "url": "https://www.w3.org/community/wicg/"
-        }
-      ],
-      "nightly": {
-        "url": "https://wicg.github.io/web-preferences-api/",
-        "status": "Unofficial Proposal Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/WICG/web-preferences-api",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
-      "title": "Media Queries Level 5",
-      "source": "spec",
-      "shortTitle": "Web Preferences API",
-      "categories": [
-        "browser"
-      ],
-      "standing": "pending",
-      "versions": [
-        "https://wicg.github.io/web-preferences-api/"
-      ],
-      "crawled": "https://drafts.csswg.org/mediaqueries-5/#auto-pref%E2%91%A0",
-      "generator": "bikeshed",
-      "date": "15 November 2024",
-      "revision": "3c22b7759e068058993e346b92c65c505f282ee8",
-      "algorithms": "algorithms/web-preferences-api.json",
-      "links": "links/web-preferences-api.json",
-      "refs": "refs/web-preferences-api.json",
-      "events": "events/web-preferences-api.json",
-      "idl": "idl/web-preferences-api.idl",
-      "css": "css/web-preferences-api.json",
-      "dfns": "dfns/web-preferences-api.json",
-      "headings": "headings/web-preferences-api.json",
-      "ids": "ids/web-preferences-api.json",
       "cddl": []
     },
     {
@@ -17463,8 +17517,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "Audiobooks Working Group",
-          "url": "https://www.w3.org/publishing/groups/publ-wg/"
+          "name": "Publishing Maintenance Working Group",
+          "url": "https://www.w3.org/groups/wg/pm/"
         }
       ],
       "release": {
@@ -26473,6 +26527,60 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/dx-prof-conneg/",
+      "seriesComposition": "full",
+      "shortname": "dx-prof-conneg",
+      "series": {
+        "shortname": "dx-prof-conneg",
+        "currentSpecification": "dx-prof-conneg",
+        "title": "Content Negotiation by Profile",
+        "shortTitle": "Content Negotiation by Profile",
+        "releaseUrl": "https://www.w3.org/TR/dx-prof-conneg/",
+        "nightlyUrl": "https://w3c.github.io/dx-connegp/connegp/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/dx-connegp/connegp/",
+        "status": "Editor's Draft",
+        "sourcePath": "connegp/index.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/dx-connegp",
+        "filename": "index.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Dataset Exchange Working Group",
+          "url": "https://www.w3.org/2017/dxwg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/dx-prof-conneg/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "title": "Content Negotiation by Profile",
+      "source": "w3c",
+      "shortTitle": "Content Negotiation by Profile",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/dx-prof-conneg/",
+        "https://w3c.github.io/dx-connegp/connegp/"
+      ],
+      "crawled": "https://w3c.github.io/dx-connegp/connegp/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Apr 2024 11:06:07 GMT"
+      },
+      "generator": "respec",
+      "date": "03 April 2024",
+      "links": "links/dx-prof-conneg.json",
+      "refs": "refs/dx-prof-conneg.json",
+      "dfns": "dfns/dx-prof-conneg.json",
+      "headings": "headings/dx-prof-conneg.json",
+      "ids": "ids/dx-prof-conneg.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/edit-context/",
       "seriesComposition": "full",
       "shortname": "edit-context",
@@ -27204,7 +27312,7 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub34/a11y/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 02 May 2025 16:39:52 GMT"
+        "lastModified": "Fri, 02 May 2025 16:39:51 GMT"
       },
       "generator": "respec",
       "date": "02 May 2025",
@@ -27317,7 +27425,7 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub34/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 02 May 2025 16:39:52 GMT"
+        "lastModified": "Fri, 02 May 2025 16:39:51 GMT"
       },
       "generator": "respec",
       "date": "02 May 2025",
@@ -27986,10 +28094,6 @@
         {
           "name": "Devices and Sensors Working Group",
           "url": "https://www.w3.org/das/"
-        },
-        {
-          "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/groups/wg/webapps/"
         }
       ],
       "release": {
@@ -28494,8 +28598,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/groups/wg/webapps/"
+          "name": "Accessible Rich Internet Applications Working Group",
+          "url": "https://www.w3.org/WAI/ARIA/"
         }
       ],
       "release": {
@@ -28945,7 +29049,7 @@
       ],
       "crawled": "https://w3c.github.io/IndexedDB/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 05 May 2025 23:04:47 GMT"
+        "lastModified": "Mon, 05 May 2025 23:04:46 GMT"
       },
       "generator": "bikeshed",
       "date": "5 May 2025",
@@ -32159,7 +32263,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/pointerevents3/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -32536,8 +32640,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "Audiobooks Working Group",
-          "url": "https://www.w3.org/publishing/groups/publ-wg/"
+          "name": "Publishing Maintenance Working Group",
+          "url": "https://www.w3.org/groups/wg/pm/"
         }
       ],
       "release": {
@@ -32712,7 +32816,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -32769,7 +32873,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -32824,7 +32928,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -32879,7 +32983,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -32933,7 +33037,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -32989,7 +33093,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -33044,7 +33148,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -33072,7 +33176,7 @@
       ],
       "crawled": "https://w3c.github.io/rdf-turtle/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 05 May 2025 06:39:07 GMT"
+        "lastModified": "Mon, 05 May 2025 06:39:04 GMT"
       },
       "generator": "respec",
       "date": "05 May 2025",
@@ -33099,7 +33203,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -33320,7 +33424,7 @@
       ],
       "crawled": "https://w3c.github.io/reporting/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Aug 2024 15:00:02 GMT"
+        "lastModified": "Tue, 13 Aug 2024 15:00:01 GMT"
       },
       "generator": "bikeshed",
       "date": "13 August 2024",
@@ -33679,10 +33783,6 @@
         {
           "name": "Devices and Sensors Working Group",
           "url": "https://www.w3.org/das/"
-        },
-        {
-          "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/groups/wg/webapps/"
         }
       ],
       "release": {
@@ -34389,7 +34489,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -34444,7 +34544,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -34498,7 +34598,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -34552,7 +34652,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -34607,7 +34707,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -34663,7 +34763,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -34717,7 +34817,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -34771,7 +34871,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -34825,7 +34925,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -34879,7 +34979,7 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "RDF-star Working Group",
+          "name": "RDF & SPARQL Working Group",
           "url": "https://www.w3.org/groups/wg/rdf-star/"
         }
       ],
@@ -36201,7 +36301,7 @@
       ],
       "crawled": "https://w3c.github.io/vibration/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 18:39:30 GMT"
+        "lastModified": "Wed, 12 Feb 2025 18:39:29 GMT"
       },
       "generator": "respec",
       "date": "12 February 2025",
@@ -36271,6 +36371,61 @@
       "dfns": "dfns/virtual-keyboard.json",
       "headings": "headings/virtual-keyboard.json",
       "ids": "ids/virtual-keyboard.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/vocab-dcat-3/",
+      "seriesComposition": "full",
+      "shortname": "vocab-dcat-3",
+      "series": {
+        "shortname": "vocab-dcat",
+        "currentSpecification": "vocab-dcat-3",
+        "title": "Data Catalog Vocabulary (DCAT)",
+        "shortTitle": "DCAT",
+        "releaseUrl": "https://www.w3.org/TR/vocab-dcat/",
+        "nightlyUrl": "https://w3c.github.io/dxwg/dcat/"
+      },
+      "seriesVersion": "3",
+      "nightly": {
+        "url": "https://w3c.github.io/dxwg/dcat/",
+        "status": "Editor's Draft",
+        "sourcePath": "dcat/index.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/dxwg",
+        "filename": "index.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Dataset Exchange Working Group",
+          "url": "https://www.w3.org/2017/dxwg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vocab-dcat-3/",
+        "status": "Recommendation",
+        "filename": "Overview.html"
+      },
+      "title": "Data Catalog Vocabulary (DCAT) - Version 3",
+      "source": "w3c",
+      "shortTitle": "DCAT 3",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vocab-dcat-3/",
+        "https://w3c.github.io/dxwg/dcat/"
+      ],
+      "crawled": "https://w3c.github.io/dxwg/dcat/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 07 Oct 2024 15:57:33 GMT"
+      },
+      "generator": "respec",
+      "date": "07 October 2024",
+      "algorithms": "algorithms/vocab-dcat-3.json",
+      "links": "links/vocab-dcat-3.json",
+      "refs": "refs/vocab-dcat-3.json",
+      "headings": "headings/vocab-dcat-3.json",
+      "ids": "ids/vocab-dcat-3.json",
       "cddl": []
     },
     {
@@ -37484,7 +37639,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/hevc_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 17 Apr 2025 19:00:44 GMT"
+        "lastModified": "Thu, 17 Apr 2025 19:00:43 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2025",
@@ -37542,7 +37697,7 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/mp3_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 17 Apr 2025 19:00:44 GMT"
+        "lastModified": "Thu, 17 Apr 2025 19:00:43 GMT"
       },
       "generator": "bikeshed",
       "date": "9 September 2024",

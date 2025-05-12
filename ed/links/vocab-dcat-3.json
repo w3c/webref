@@ -1,0 +1,614 @@
+{
+  "spec": {
+    "title": "Data Catalog Vocabulary (DCAT) - Version 3",
+    "url": "https://w3c.github.io/dxwg/dcat/"
+  },
+  "links": {
+    "rawlinks": {
+      "http://data.europa.eu/eli/reg/2014/1312/oj": {},
+      "http://dbpedia.org/ontology/": {},
+      "http://dcat.be/": {},
+      "http://dublincore.org/documents/dces/": {},
+      "http://dublincore.org/documents/profile-guidelines/": {},
+      "http://id.loc.gov/vocabulary/iso639-1.html": {},
+      "http://id.loc.gov/vocabulary/iso639-2.html": {},
+      "http://id.loc.gov/vocabulary/marcgt.html": {},
+      "http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/": {},
+      "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/": {},
+      "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/discovery": {},
+      "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download": {},
+      "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view": {},
+      "http://iso25000.com/index.php/en/iso-25000-standards/iso-25012": {},
+      "http://patterns.dataincubator.org/book/": {},
+      "http://patterns.dataincubator.org/book/qualified-relation.html": {},
+      "http://purl.org/dc/dcmitype/Dataset": {},
+      "http://purl.org/dc/dcmitype/Service": {},
+      "http://purl.org/dc/elements/1.1/type": {},
+      "http://purl.org/dc/terms/Frequency": {},
+      "http://purl.org/dc/terms/LicenseDocument": {},
+      "http://purl.org/dc/terms/LinguisticSystem": {},
+      "http://purl.org/dc/terms/Location": {},
+      "http://purl.org/dc/terms/MediaType": {},
+      "http://purl.org/dc/terms/MediaTypeOrExtent": {},
+      "http://purl.org/dc/terms/PeriodOfTime": {},
+      "http://purl.org/dc/terms/RightsStatement": {},
+      "http://purl.org/dc/terms/Standard": {},
+      "http://purl.org/dc/terms/accessRights": {},
+      "http://purl.org/dc/terms/accrualPeriodicity": {},
+      "http://purl.org/dc/terms/conformsTo": {},
+      "http://purl.org/dc/terms/contributor": {},
+      "http://purl.org/dc/terms/creator": {},
+      "http://purl.org/dc/terms/description": {},
+      "http://purl.org/dc/terms/format": {},
+      "http://purl.org/dc/terms/hasFormat": {},
+      "http://purl.org/dc/terms/hasPart": {},
+      "http://purl.org/dc/terms/hasVersion": {},
+      "http://purl.org/dc/terms/identifier": {},
+      "http://purl.org/dc/terms/isFormatOf": {},
+      "http://purl.org/dc/terms/isPartOf": {},
+      "http://purl.org/dc/terms/isReferencedBy": {},
+      "http://purl.org/dc/terms/isReplacedBy": {},
+      "http://purl.org/dc/terms/isRequiredBy": {},
+      "http://purl.org/dc/terms/isVersionOf": {},
+      "http://purl.org/dc/terms/issued": {},
+      "http://purl.org/dc/terms/language": {},
+      "http://purl.org/dc/terms/license": {},
+      "http://purl.org/dc/terms/modified": {},
+      "http://purl.org/dc/terms/publisher": {},
+      "http://purl.org/dc/terms/references": {},
+      "http://purl.org/dc/terms/relation": {},
+      "http://purl.org/dc/terms/replaces": {},
+      "http://purl.org/dc/terms/requires": {},
+      "http://purl.org/dc/terms/rights": {},
+      "http://purl.org/dc/terms/spatial": {},
+      "http://purl.org/dc/terms/subject": {},
+      "http://purl.org/dc/terms/temporal": {},
+      "http://purl.org/dc/terms/title": {},
+      "http://purl.org/dc/terms/type": {},
+      "http://purl.org/eprint/accessRights/": {},
+      "http://schema.theodi.org/odrs": {},
+      "http://shex.io/shex-semantics/": {},
+      "http://www.dublincore.org/specifications/dublin-core/collection-description/frequency/": {},
+      "http://www.geonames.org/": {},
+      "http://www.isni.org/": {},
+      "http://www.opengeospatial.org/standards/cat": {},
+      "http://www.opengeospatial.org/standards/wfs": {},
+      "http://www.opengeospatial.org/standards/wms": {},
+      "http://www.opengis.net/ont/geosparql": {
+        "anchors": [
+          "wktLiteral",
+          "Geometry"
+        ]
+      },
+      "http://www.w3.org/2000/01/rdf-schema": {
+        "anchors": [
+          "Resource",
+          "Literal",
+          "Class"
+        ]
+      },
+      "http://www.w3.org/2002/07/owl": {
+        "anchors": [
+          "Ontology",
+          "ObjectProperty"
+        ]
+      },
+      "http://www.w3.org/2004/02/skos/core": {
+        "anchors": [
+          "ConceptScheme",
+          "Collection",
+          "Concept"
+        ]
+      },
+      "http://www.w3.org/2011/gld/": {},
+      "http://www.w3.org/TR/prov-o/": {
+        "anchors": [
+          "Activity",
+          "wasDerivedFrom",
+          "wasQuotedFrom"
+        ]
+      },
+      "http://www.w3.org/egov/": {},
+      "http://www.w3.org/ns/dcat": {
+        "anchors": [
+          "Catalog",
+          "themeTaxonomy",
+          "resource",
+          "dataset",
+          "service",
+          "catalog",
+          "record",
+          "Resource",
+          "contactPoint",
+          "theme",
+          "qualifiedRelation",
+          "keyword",
+          "landingPage",
+          "previousVersion",
+          "hasVersion",
+          "hasCurrentVersion",
+          "version",
+          "first",
+          "last",
+          "prev",
+          "CatalogRecord",
+          "Dataset",
+          "distribution",
+          "inSeries",
+          "spatialResolutionInMeters",
+          "temporalResolution",
+          "DatasetSeries",
+          "Distribution",
+          "accessURL",
+          "accessService",
+          "downloadURL",
+          "byteSize",
+          "mediaType",
+          "compressFormat",
+          "packageFormat",
+          "DataService",
+          "endpointURL",
+          "endpointDescription",
+          "servesDataset",
+          "Relationship",
+          "hadRole",
+          "Role",
+          "startDate",
+          "endDate",
+          "bbox",
+          "centroid"
+        ]
+      },
+      "http://www.w3.org/ns/locn": {
+        "anchors": [
+          "locn:geometry",
+          "locn:Geometry"
+        ]
+      },
+      "http://xmlns.com/foaf/0.1/Agent": {},
+      "http://xmlns.com/foaf/0.1/Document": {},
+      "http://xmlns.com/foaf/0.1/Organization": {},
+      "http://xmlns.com/foaf/0.1/Person": {},
+      "http://xmlns.com/foaf/0.1/homepage": {},
+      "http://xmlns.com/foaf/0.1/page": {},
+      "http://xmlns.com/foaf/0.1/primaryTopic": {},
+      "http://xmlns.com/foaf/spec": {
+        "anchors": [
+          "term_isPrimaryTopicOf"
+        ]
+      },
+      "https://arxiv.org/": {},
+      "https://arxiv.org/help/arxiv_identifier.html": {},
+      "https://creativecommons.org/share-your-work/licensing-types-examples/": {},
+      "https://data.gov.uk/": {},
+      "https://data.norge.no/specification/dcat-ap-no/": {},
+      "https://datadryad.org/": {},
+      "https://datatagsuite.github.io/docs/html/": {},
+      "https://datatracker.ietf.org/doc/html/draft-kunze-bagit-14": {},
+      "https://dcat-ap.de/def/": {},
+      "https://developers.google.com/search/docs/data-types/dataset": {},
+      "https://docs.dataportal.se/dcat/en/": {},
+      "https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/dcat-ap_it.html": {},
+      "https://docs.ogc.org/is/22-047r1/22-047r1.html": {},
+      "https://doi.org/10.1038/sdata.2016.18": {},
+      "https://doi.org/10.1038/sdata.2018.22": {},
+      "https://doi.org/10.2312/re3.008": {},
+      "https://doi.org/10.3233/SW-150175": {},
+      "https://en.wikipedia.org/wiki/Tar_(computing)": {},
+      "https://en.wikipedia.org/wiki/World_Geodetic_System": {
+        "anchors": [
+          "WGS84"
+        ]
+      },
+      "https://en.wikipedia.org/wiki/ZIP_(file_format)": {},
+      "https://epsg.io/28992": {},
+      "https://eur-lex.europa.eu/eli-register/about.html": {},
+      "https://fairsharing.org/standards/?q=&selected_facets=type_exact:identifier%20schema": {},
+      "https://g.co/datasetsearch": {},
+      "https://github.com/UKGovLD/registry-core/wiki/Principles-and-concepts": {},
+      "https://github.com/dewitt/opensearch/blob/master/opensearch-1-1-draft-6.md": {},
+      "https://github.com/ewilderj/doap/wiki": {},
+      "https://github.com/vivo-isf/vivo-isf": {},
+      "https://github.com/w3c/dxwg/commits/gh-pages/dcat": {},
+      "https://github.com/w3c/dxwg/issues/1153": {},
+      "https://github.com/w3c/dxwg/issues/1155": {},
+      "https://github.com/w3c/dxwg/issues/1156": {},
+      "https://github.com/w3c/dxwg/issues/116": {},
+      "https://github.com/w3c/dxwg/issues/121": {},
+      "https://github.com/w3c/dxwg/issues/122": {},
+      "https://github.com/w3c/dxwg/issues/123": {},
+      "https://github.com/w3c/dxwg/issues/1238": {},
+      "https://github.com/w3c/dxwg/issues/1252": {},
+      "https://github.com/w3c/dxwg/issues/1258": {},
+      "https://github.com/w3c/dxwg/issues/1272": {},
+      "https://github.com/w3c/dxwg/issues/1287": {},
+      "https://github.com/w3c/dxwg/issues/1293": {},
+      "https://github.com/w3c/dxwg/issues/1294": {},
+      "https://github.com/w3c/dxwg/issues/1307": {},
+      "https://github.com/w3c/dxwg/issues/1308": {},
+      "https://github.com/w3c/dxwg/issues/1314": {},
+      "https://github.com/w3c/dxwg/issues/1333": {},
+      "https://github.com/w3c/dxwg/issues/1335": {},
+      "https://github.com/w3c/dxwg/issues/1336": {},
+      "https://github.com/w3c/dxwg/issues/1341": {},
+      "https://github.com/w3c/dxwg/issues/1347": {},
+      "https://github.com/w3c/dxwg/issues/1349": {},
+      "https://github.com/w3c/dxwg/issues/1350": {},
+      "https://github.com/w3c/dxwg/issues/1358": {},
+      "https://github.com/w3c/dxwg/issues/1359": {},
+      "https://github.com/w3c/dxwg/issues/1364": {},
+      "https://github.com/w3c/dxwg/issues/1383": {},
+      "https://github.com/w3c/dxwg/issues/1388": {},
+      "https://github.com/w3c/dxwg/issues/1409": {},
+      "https://github.com/w3c/dxwg/issues/1410": {},
+      "https://github.com/w3c/dxwg/issues/1413": {},
+      "https://github.com/w3c/dxwg/issues/1429": {},
+      "https://github.com/w3c/dxwg/issues/1437": {},
+      "https://github.com/w3c/dxwg/issues/1438": {},
+      "https://github.com/w3c/dxwg/issues/1440": {},
+      "https://github.com/w3c/dxwg/issues/1442": {},
+      "https://github.com/w3c/dxwg/issues/1459": {},
+      "https://github.com/w3c/dxwg/issues/1465": {},
+      "https://github.com/w3c/dxwg/issues/1469": {},
+      "https://github.com/w3c/dxwg/issues/1484": {},
+      "https://github.com/w3c/dxwg/issues/1489": {},
+      "https://github.com/w3c/dxwg/issues/1490": {},
+      "https://github.com/w3c/dxwg/issues/1526": {},
+      "https://github.com/w3c/dxwg/issues/1532": {},
+      "https://github.com/w3c/dxwg/issues/1536": {},
+      "https://github.com/w3c/dxwg/issues/1581": {},
+      "https://github.com/w3c/dxwg/issues/1583": {},
+      "https://github.com/w3c/dxwg/issues/1591": {},
+      "https://github.com/w3c/dxwg/issues/1592": {},
+      "https://github.com/w3c/dxwg/issues/172": {},
+      "https://github.com/w3c/dxwg/issues/253": {},
+      "https://github.com/w3c/dxwg/issues/64": {},
+      "https://github.com/w3c/dxwg/issues/676": {},
+      "https://github.com/w3c/dxwg/issues/771": {},
+      "https://github.com/w3c/dxwg/issues/806": {},
+      "https://github.com/w3c/dxwg/issues/868": {},
+      "https://github.com/w3c/dxwg/issues/89": {},
+      "https://github.com/w3c/dxwg/issues/91": {},
+      "https://github.com/w3c/dxwg/issues/92": {},
+      "https://github.com/w3c/dxwg/issues/95": {},
+      "https://github.com/w3c/dxwg/issues/959": {},
+      "https://github.com/w3c/dxwg/issues/98": {},
+      "https://github.com/w3c/dxwg/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Adcat+": {},
+      "https://github.com/w3c/dxwg/labels/alignment": {},
+      "https://github.com/w3c/dxwg/milestone/31": {},
+      "https://github.com/w3c/dxwg/tree/gh-pages/dcat/examples": {},
+      "https://github.com/w3c/dxwg/tree/gh-pages/dcat/examples/vocab-dcat-3": {},
+      "https://github.com/w3c/dxwg/tree/gh-pages/dcat/rdf": {},
+      "https://github.com/w3c/dxwg/tree/gh-pages/dcat/rdf/dcat3.jsonld": {},
+      "https://github.com/w3c/dxwg/tree/gh-pages/dcat/rdf/dcat3.rdf": {},
+      "https://github.com/w3c/dxwg/tree/gh-pages/dcat/rdf/dcat3.ttl": {},
+      "https://github.com/w3c/dxwg/wiki/DCAT-implementation-evidence": {},
+      "https://id.loc.gov/vocabulary/marcgt.html": {},
+      "https://id.loc.gov/vocabulary/relators": {},
+      "https://joinup.ec.europa.eu/release/dcat-ap-how-manage-duplicates": {},
+      "https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe": {},
+      "https://joinup.ec.europa.eu/solution/statdcat-application-profile-data-portals-europe": {},
+      "https://orcid.org/": {},
+      "https://pav-ontology.github.io/pav/": {
+        "anchors": [
+          "d4e459",
+          "d4e395",
+          "d4e359",
+          "d4e869"
+        ]
+      },
+      "https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/access-right": {},
+      "https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/concept-status": {},
+      "https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-status": {},
+      "https://schema.datacite.org/": {},
+      "https://schema.datacite.org/meta/kernel-4.1/include/datacite-resourceType-v4.1.xsd": {},
+      "https://schema.datacite.org/meta/kernel-4.4/include/datacite-relatedIdentifierType-v4.xsd": {},
+      "https://schema.datacite.org/meta/kernel-4.4/include/datacite-resourceType-v4.xsd": {},
+      "https://schema.org/": {},
+      "https://schema.org/Dataset": {},
+      "https://semiceu.github.io/GeoDCAT-AP/releases/": {},
+      "https://spdx.org/rdf/spdx-terms-v2.2/": {
+        "anchors": [
+          "d4e1930",
+          "d4e52",
+          "d4e1968",
+          "d4e3691",
+          "d4e3704",
+          "d4e3717",
+          "d4e3731",
+          "d4e3744",
+          "d4e3757",
+          "d4e3771",
+          "d4e3784",
+          "d4e3797",
+          "d4e1111"
+        ]
+      },
+      "https://specs.frictionlessdata.io/data-package/": {},
+      "https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml": {},
+      "https://standards.iso.org/iso/19115/resources/Codelists/gml/DS_AssociationTypeCode.xml": {},
+      "https://standards.iso.org/iso/19115/resources/Codelists/gml/MD_ScopeCode.xml": {},
+      "https://support.datacite.org/docs/datacite-doi-display-guidelines": {},
+      "https://viaf.org/": {},
+      "https://w3c.github.io/dxwg/dcat/examples/vocab-dcat-3/compress-and-package.ttl": {},
+      "https://w3c.github.io/dxwg/dcat/examples/vocab-dcat-3/csiro-dap-examples.ttl": {},
+      "https://w3c.github.io/dxwg/dcat/examples/vocab-dcat-3/csiro-stratchart.ttl": {},
+      "https://w3c.github.io/dxwg/dcat/examples/vocab-dcat-3/csiro-stratchart_dcat3.ttl": {},
+      "https://w3c.github.io/dxwg/dcat/examples/vocab-dcat-3/dryad-globtherm-sdata.ttl": {},
+      "https://w3c.github.io/dxwg/dcat/examples/vocab-dcat-3/eea-csw.ttl": {},
+      "https://w3c.github.io/dxwg/dcat/examples/vocab-dcat-3/ga-courts.ttl": {},
+      "https://w3c.github.io/dxwg/dcat/rdf/dcat-schema.ttl": {},
+      "https://w3c.github.io/dxwg/dcat3-implementation-report/": {},
+      "https://web.archive.org/web/20141224031914/http://www.deri.ie/": {},
+      "https://web.archive.org/web/20200506120557/https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/news/geodcat-apit": {},
+      "https://web.archive.org/web/20210521035614/https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.html": {},
+      "https://web.archive.org/web/20211206184420/http://registry.it.csiro.au/def/isotc211/DS_AssociationTypeCode": {},
+      "https://www.crossref.org/display-guidelines/": {},
+      "https://www.data.gov/": {},
+      "https://www.doi.org/": {},
+      "https://www.doi.org/faq.html": {},
+      "https://www.dublincore.org/resources/userguide/publishing_metadata/": {},
+      "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/": {
+        "anchors": [
+          "section-7",
+          "http://purl.org/dc/terms/relation",
+          "http://purl.org/dc/terms/hasVersion",
+          "http://purl.org/dc/terms/isPartOf",
+          "http://purl.org/dc/terms/isReplacedBy",
+          "http://purl.org/dc/terms/references",
+          "http://purl.org/dc/terms/creator",
+          "http://purl.org/dc/terms/license",
+          "http://purl.org/dc/terms/accessRights",
+          "http://purl.org/dc/terms/rights",
+          "http://purl.org/dc/terms/isVersionOf",
+          "http://purl.org/dc/terms/conformsTo",
+          "http://purl.org/dc/terms/Standard",
+          "http://purl.org/dc/terms/type"
+        ]
+      },
+      "https://www.hydra-cg.com/spec/latest/core/": {},
+      "https://www.iana.org/assignments/link-relations/": {},
+      "https://www.iana.org/assignments/media-types/": {},
+      "https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml": {},
+      "https://www.iso.org/obp/ui": {},
+      "https://www.iso.org/standard/26020.html": {},
+      "https://www.iso.org/standard/32546.html": {},
+      "https://www.iso.org/standard/32553.html": {},
+      "https://www.iso.org/standard/42136.html": {},
+      "https://www.iso.org/standard/43506.html": {},
+      "https://www.iso.org/standard/53798.html": {},
+      "https://www.ogc.org/def-server": {},
+      "https://www.openapis.org/": {},
+      "https://www.re3data.org/": {},
+      "https://www.rfc-editor.org/info/bcp14": {},
+      "https://www.rfc-editor.org/rfc/rfc2119": {},
+      "https://www.rfc-editor.org/rfc/rfc3986": {
+        "anchors": [
+          "section-3.1"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc3987": {},
+      "https://www.rfc-editor.org/rfc/rfc5646": {},
+      "https://www.rfc-editor.org/rfc/rfc8174": {},
+      "https://www.unidata.ucar.edu/software/netcdf/": {},
+      "https://www.w3.org/1999/xhtml/vocab": {
+        "anchors": [
+          "first",
+          "last",
+          "prev"
+        ]
+      },
+      "https://www.w3.org/2002/07/owl": {
+        "anchors": [
+          "Ontology"
+        ]
+      },
+      "https://www.w3.org/2003/01/geo/": {},
+      "https://www.w3.org/2009/08/skos-reference/skos.html": {
+        "anchors": [
+          "Collection"
+        ]
+      },
+      "https://www.w3.org/2015/spatial/wiki/ISO_19115_-_DCAT_-_Schema": {},
+      "https://www.w3.org/2016/05/ldqd": {},
+      "https://www.w3.org/2017/dxwg/": {},
+      "https://www.w3.org/2022/03/08-dxwgdcat-minutes": {
+        "anchors": [
+          "r03"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/": {},
+      "https://www.w3.org/TR/2020/WD-vocab-dcat-3-20201217/": {
+        "anchors": [
+          "version-types"
+        ]
+      },
+      "https://www.w3.org/TR/2021/WD-vocab-dcat-3-20210504/": {},
+      "https://www.w3.org/TR/2022/WD-vocab-dcat-3-20220111/": {},
+      "https://www.w3.org/TR/2022/WD-vocab-dcat-3-20220510/": {},
+      "https://www.w3.org/TR/2024/CR-vocab-dcat-3-20240118/": {},
+      "https://www.w3.org/TR/EARL10-Schema/": {},
+      "https://www.w3.org/TR/NOTE-datetime": {},
+      "https://www.w3.org/TR/UNDERSTANDING-WCAG20/": {},
+      "https://www.w3.org/TR/annotation-vocab/": {},
+      "https://www.w3.org/TR/dcat-ucr/": {
+        "anchors": [
+          "ID6",
+          "ID18",
+          "RDSC"
+        ]
+      },
+      "https://www.w3.org/TR/dwbp/": {
+        "anchors": [
+          "VersioningInfo",
+          "DataIdentifiers",
+          "licenses",
+          "DataUnavailabilityReference",
+          "dataVersioning"
+        ]
+      },
+      "https://www.w3.org/TR/hcls-dataset/": {},
+      "https://www.w3.org/TR/html-rdfa/": {},
+      "https://www.w3.org/TR/json-ld/": {},
+      "https://www.w3.org/TR/odrl-model/": {
+        "anchors": [
+          "policy-has",
+          "composition-compact"
+        ]
+      },
+      "https://www.w3.org/TR/odrl-vocab/": {
+        "anchors": [
+          "term-hasPolicy",
+          "term-Policy"
+        ]
+      },
+      "https://www.w3.org/TR/owl-time/": {
+        "anchors": [
+          "time:hasBeginning",
+          "time:Instant",
+          "time:ProperInterval",
+          "time:hasEnd"
+        ]
+      },
+      "https://www.w3.org/TR/owl2-overview/": {},
+      "https://www.w3.org/TR/owl2-syntax/": {
+        "anchors": [
+          "Datatype_Definitions"
+        ]
+      },
+      "https://www.w3.org/TR/prov-o/": {
+        "anchors": [
+          "qualifiedInfluence",
+          "wasDerivedFrom",
+          "wasInfluencedBy",
+          "wasQuotedFrom",
+          "wasRevisionOf",
+          "hadPrimarySource",
+          "alternateOf",
+          "specializationOf",
+          "Entity",
+          "qualifiedAttribution",
+          "Attribution",
+          "inverse-names-table",
+          "wasGeneratedBy",
+          "Activity",
+          "qualifiedGeneration",
+          "EntityInfluence",
+          "hadRole",
+          "Role",
+          "generated",
+          "description-qualified-terms",
+          "qualified-terms-figure",
+          "wasAttributedTo",
+          "Association"
+        ]
+      },
+      "https://www.w3.org/TR/rdf-schema/": {
+        "anchors": [
+          "ch_literal"
+        ]
+      },
+      "https://www.w3.org/TR/rdf-syntax-grammar/": {},
+      "https://www.w3.org/TR/rdf11-concepts/": {
+        "anchors": [
+          "dfn-recognized-datatype-iris"
+        ]
+      },
+      "https://www.w3.org/TR/rdf11-primer/": {},
+      "https://www.w3.org/TR/sdw-bp/": {
+        "anchors": [
+          "geometry-and-crs",
+          "CRS-background",
+          "ex-geodcat-ap-dataset-conformance-with-specification",
+          "bp-crs"
+        ]
+      },
+      "https://www.w3.org/TR/shacl/": {},
+      "https://www.w3.org/TR/skos-reference/": {
+        "anchors": [
+          "concepts"
+        ]
+      },
+      "https://www.w3.org/TR/sparql11-protocol/": {},
+      "https://www.w3.org/TR/sparql11-query/": {},
+      "https://www.w3.org/TR/sparql11-service-description/": {},
+      "https://www.w3.org/TR/turtle/": {},
+      "https://www.w3.org/TR/vcard-rdf/": {
+        "anchors": [
+          "d4e1819"
+        ]
+      },
+      "https://www.w3.org/TR/vocab-adms/": {
+        "anchors": [
+          "adms-versionnotes",
+          "adms-status",
+          "adms-identifier",
+          "adms-schemaagency"
+        ]
+      },
+      "https://www.w3.org/TR/vocab-data-cube/": {
+        "anchors": [
+          "dsd-cog"
+        ]
+      },
+      "https://www.w3.org/TR/vocab-dcat-1/": {},
+      "https://www.w3.org/TR/vocab-dcat-2/": {},
+      "https://www.w3.org/TR/vocab-dcat/": {},
+      "https://www.w3.org/TR/vocab-dqv/": {
+        "anchors": [
+          "dqv:QualityAnnotation",
+          "dqv:QualityPolicy",
+          "dqv:QualityMeasurement",
+          "ExpressDatasetAccuracyPrecision"
+        ]
+      },
+      "https://www.w3.org/TR/vocab-org/": {},
+      "https://www.w3.org/TR/vocab-ssn/": {
+        "anchors": [
+          "Sample_Relations"
+        ]
+      },
+      "https://www.w3.org/TR/void/": {},
+      "https://www.w3.org/TR/wsdl20/": {},
+      "https://www.w3.org/TR/xmlschema11-2/": {
+        "anchors": [
+          "gYear",
+          "gYearMonth",
+          "date",
+          "dateTime",
+          "decimal",
+          "double",
+          "integer",
+          "duration",
+          "nonNegativeInteger",
+          "hexBinary"
+        ]
+      },
+      "https://www.w3.org/TeamSubmission/2008/SUBM-n3-20080114/": {},
+      "https://www.w3.org/groups/wg/dx": {},
+      "https://www.w3.org/groups/wg/dx/ipr": {},
+      "https://www.w3.org/groups/wg/dx/participants": {},
+      "https://www.w3.org/ns/dcat": {},
+      "https://www.w3.org/ns/dcat-external.jsonld": {},
+      "https://www.w3.org/ns/dcat-external.rdf": {},
+      "https://www.w3.org/ns/dcat-external.ttl": {},
+      "https://www.w3.org/ns/dcat.ttl": {},
+      "https://www.w3.org/ns/dcat2.jsonld": {},
+      "https://www.w3.org/ns/dcat2.rdf": {},
+      "https://www.w3.org/ns/dcat2.ttl": {},
+      "https://www.w3.org/ns/dcat2014.rdf": {},
+      "https://www.w3.org/ns/dcat2014.ttl": {},
+      "https://www.w3.org/policies/patent-policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/policies/process/20231103/": {},
+      "https://www.w3.org/wiki/WebSchemas/Datasets": {},
+      "https://zenodo.org/": {}
+    },
+    "autolinks": {}
+  }
+}

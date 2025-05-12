@@ -1,0 +1,462 @@
+{
+  "spec": {
+    "title": "Content Negotiation by Profile",
+    "url": "https://w3c.github.io/dx-connegp/connegp/"
+  },
+  "headings": [
+    {
+      "id": "respecDocument",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#respecDocument",
+      "level": 1,
+      "title": "Content Negotiation by Profile"
+    },
+    {
+      "id": "FamilyOfDocs",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#FamilyOfDocs",
+      "level": 3,
+      "title": "Overview of DXWG documents on profiles"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "2"
+    },
+    {
+      "id": "definitions",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#definitions",
+      "level": 2,
+      "title": "Definitions",
+      "number": "3"
+    },
+    {
+      "id": "namespaces",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#namespaces",
+      "level": 2,
+      "title": "Namespaces",
+      "number": "4"
+    },
+    {
+      "id": "motivation",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#motivation",
+      "level": 2,
+      "title": "Motivation",
+      "number": "5"
+    },
+    {
+      "id": "relatedwork",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#relatedwork",
+      "level": 2,
+      "title": "Related Work",
+      "number": "6"
+    },
+    {
+      "id": "related-http",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#related-http",
+      "level": 3,
+      "title": "Existing standards for transporting profile information in HTTP headers",
+      "number": "6.1"
+    },
+    {
+      "id": "using-accept-content-type-together-with-the-profile-parameter",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#using-accept-content-type-together-with-the-profile-parameter",
+      "level": 4,
+      "title": "Using Accept/Content Type together with the profile parameter",
+      "number": "6.1.1"
+    },
+    {
+      "id": "using-a-link-header-with-rel-profile-rfc-6906",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#using-a-link-header-with-rel-profile-rfc-6906",
+      "level": 4,
+      "title": "Using a Link header with rel=\"profile\" (RFC 6906)",
+      "number": "6.1.2"
+    },
+    {
+      "id": "using-the-prefer-preference-applied-header-fields-rfc-7240",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#using-the-prefer-preference-applied-header-fields-rfc-7240",
+      "level": 4,
+      "title": "Using the Prefer/Preference-Applied header fields (RFC 7240)",
+      "number": "6.1.3"
+    },
+    {
+      "id": "related-ark",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#related-ark",
+      "level": 3,
+      "title": "Archival Resource Key (ARK)",
+      "number": "6.2"
+    },
+    {
+      "id": "related-altviews",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#related-altviews",
+      "level": 3,
+      "title": "Linked Data APIs",
+      "number": "6.3"
+    },
+    {
+      "id": "related-oai-pmh",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#related-oai-pmh",
+      "level": 3,
+      "title": "OAI-PMH",
+      "number": "6.4"
+    },
+    {
+      "id": "related-csw",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#related-csw",
+      "level": 3,
+      "title": "Catalogue Service for the Web (CSW)",
+      "number": "6.5"
+    },
+    {
+      "id": "abstractmodel",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#abstractmodel",
+      "level": 2,
+      "title": "Abstract Model",
+      "number": "7"
+    },
+    {
+      "id": "connegbackground",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#connegbackground",
+      "level": 3,
+      "title": "Content Negotiation Background",
+      "number": "7.1"
+    },
+    {
+      "id": "profileid",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#profileid",
+      "level": 3,
+      "title": "Profile Identification",
+      "number": "7.2"
+    },
+    {
+      "id": "requestsandresonses",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#requestsandresonses",
+      "level": 3,
+      "title": "Requests and Responses",
+      "number": "7.3"
+    },
+    {
+      "id": "listprofiles",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#listprofiles",
+      "level": 4,
+      "title": "List Profiles",
+      "number": "7.3.1"
+    },
+    {
+      "id": "getresourcebyprofile",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#getresourcebyprofile",
+      "level": 4,
+      "title": "Get Resource by Profile",
+      "number": "7.3.2"
+    },
+    {
+      "id": "altr",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#altr",
+      "level": 3,
+      "title": "Alternate Representations Data Model",
+      "number": "7.4"
+    },
+    {
+      "id": "precedence",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#precedence",
+      "level": 3,
+      "title": "Order of Precedence for Implementation Profiles",
+      "number": "7.5"
+    },
+    {
+      "id": "functional-profiles",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#functional-profiles",
+      "level": 2,
+      "title": "Functional Profiles",
+      "number": "8"
+    },
+    {
+      "id": "functional-profiles-definition",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#functional-profiles-definition",
+      "level": 3,
+      "title": "Functional Profiles of this specification",
+      "number": "8.1"
+    },
+    {
+      "id": "http",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#http",
+      "level": 3,
+      "title": "Hypertext Transfer Protocol Headers",
+      "number": "8.2"
+    },
+    {
+      "id": "http-listprofiles",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#http-listprofiles",
+      "level": 4,
+      "title": "List Profiles",
+      "number": "8.2.1"
+    },
+    {
+      "id": "http-altp",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#http-altp",
+      "level": 5,
+      "title": "HTTP Alternate Representations Data Model Implementation",
+      "number": "8.2.1.1"
+    },
+    {
+      "id": "http-tokens",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#http-tokens",
+      "level": 5,
+      "title": "Token mappings",
+      "number": "8.2.1.2"
+    },
+    {
+      "id": "http-getresourcebyprofile",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#http-getresourcebyprofile",
+      "level": 4,
+      "title": "Get Resource by Profile",
+      "number": "8.2.2"
+    },
+    {
+      "id": "qsa",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#qsa",
+      "level": 3,
+      "title": "URL Query String Arguments",
+      "number": "8.3"
+    },
+    {
+      "id": "qsa-description",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#qsa-description",
+      "level": 4,
+      "title": "QSA Functional Profile description",
+      "number": "8.3.1"
+    },
+    {
+      "id": "qsa-uri",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#qsa-uri",
+      "level": 5,
+      "title": "QSA URI description",
+      "number": "8.3.1.1"
+    },
+    {
+      "id": "qsa-key-naming",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#qsa-key-naming",
+      "level": 5,
+      "title": "Key naming",
+      "number": "8.3.1.2"
+    },
+    {
+      "id": "qsa-listprofiles",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#qsa-listprofiles",
+      "level": 4,
+      "title": "List Profiles",
+      "number": "8.3.2"
+    },
+    {
+      "id": "qsa-altp",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#qsa-altp",
+      "level": 5,
+      "title": "QSA Alternate Representations Data Model Implementation",
+      "number": "8.3.2.1"
+    },
+    {
+      "id": "qsa-tokens",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#qsa-tokens",
+      "level": 5,
+      "title": "Token mappings",
+      "number": "8.3.2.2"
+    },
+    {
+      "id": "qsa-resource-url",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#qsa-resource-url",
+      "level": 5,
+      "title": "Resource URL",
+      "number": "8.3.2.3"
+    },
+    {
+      "id": "qsa-getresourcebyprofile",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#qsa-getresourcebyprofile",
+      "level": 4,
+      "title": "Get Resource by Profile",
+      "number": "8.3.3"
+    },
+    {
+      "id": "qsa-keydiscovery",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#qsa-keydiscovery",
+      "level": 4,
+      "title": "QSA key discovery",
+      "number": "8.3.4"
+    },
+    {
+      "id": "link-attributes",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#link-attributes",
+      "level": 2,
+      "title": "Link Attributes",
+      "number": "9"
+    },
+    {
+      "id": "link-attributes-token",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#link-attributes-token",
+      "level": 3,
+      "title": "Token",
+      "number": "9.1"
+    },
+    {
+      "id": "testsuites",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#testsuites",
+      "level": 2,
+      "title": "10. Test Suites"
+    },
+    {
+      "id": "implementations",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#implementations",
+      "level": 2,
+      "title": "11. Implementations"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#acknowledgements",
+      "level": 2,
+      "title": "12. Acknowledgements"
+    },
+    {
+      "id": "changes",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#changes",
+      "level": 2,
+      "title": "13. Changes"
+    },
+    {
+      "id": "changes-since-20190430",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#changes-since-20190430",
+      "level": 3,
+      "title": "Changes since previous draft",
+      "number": "13.1"
+    },
+    {
+      "id": "features-at-risk",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#features-at-risk",
+      "level": 3,
+      "title": "Features at Risk",
+      "number": "13.2"
+    },
+    {
+      "id": "security_and_privacy",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#security_and_privacy",
+      "level": 2,
+      "title": "14. Security and Privacy"
+    },
+    {
+      "id": "appendices",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#appendices",
+      "level": 2,
+      "title": "Appendices",
+      "number": "A"
+    },
+    {
+      "id": "reqlist",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#reqlist",
+      "level": 3,
+      "title": "Itemized Requirements",
+      "number": "A.1"
+    },
+    {
+      "id": "http-headers-functional-profile",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#http-headers-functional-profile",
+      "level": 4,
+      "title": "HTTP Headers Functional Profile",
+      "number": "A.1.1"
+    },
+    {
+      "id": "query-string-arguments-functional-profile",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#query-string-arguments-functional-profile",
+      "level": 4,
+      "title": "Query String Arguments Functional Profile",
+      "number": "A.1.2"
+    },
+    {
+      "id": "query-string-arguments-alternate-keywords-functional-profile",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#query-string-arguments-alternate-keywords-functional-profile",
+      "level": 4,
+      "title": "Query String Arguments Alternate Keywords Functional Profile",
+      "number": "A.1.3"
+    },
+    {
+      "id": "profilesinprof",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#profilesinprof",
+      "level": 3,
+      "title": "Profiles Vocabulary descriptions of this specification's Functional Profiles",
+      "number": "A.2"
+    },
+    {
+      "id": "conformancetofunctionalprofiles",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#conformancetofunctionalprofiles",
+      "level": 3,
+      "title": "Demonstrating system conformance to Functional Profiles",
+      "number": "A.3"
+    },
+    {
+      "id": "altr-detail",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#altr-detail",
+      "level": 3,
+      "title": "Alternate Representations Data Model - Details",
+      "number": "A.4"
+    },
+    {
+      "id": "altr-implementations",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#altr-implementations",
+      "level": 4,
+      "title": "Implementations",
+      "number": "A.4.1"
+    },
+    {
+      "id": "altr-extensions",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#altr-extensions",
+      "level": 4,
+      "title": "Extensions",
+      "number": "A.4.2"
+    },
+    {
+      "id": "examples-of-model-use",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#examples-of-model-use",
+      "level": 4,
+      "title": "Examples of model use",
+      "number": "A.4.3"
+    },
+    {
+      "id": "dcat-usage-example",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#dcat-usage-example",
+      "level": 3,
+      "title": "Describing DCAT Distributions support of Content Negotiation by Profile",
+      "number": "A.5"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#references",
+      "level": 2,
+      "title": "References",
+      "number": "B"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "B.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/dx-connegp/connegp/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "B.2"
+    }
+  ]
+}

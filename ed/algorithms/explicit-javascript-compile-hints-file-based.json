@@ -1,0 +1,83 @@
+{
+  "spec": {
+    "title": "Explicit JavaScript Compile Hints (File-based)",
+    "url": "https://wicg.github.io/explicit-javascript-compile-hints-file-based/"
+  },
+  "algorithms": [
+    {
+      "html": "<a href=\"https://tc39.es/ecma262/#sec-parse-script\">ParseScript</a> is modified as follows:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <em>compileHintAnnotation</em> be <strong>true</strong> if <em>sourceText</em> <a href=\"https://wicg.github.io/explicit-javascript-compile-hints-file-based/#check-string-contains\">contains the Compile Hint Annotation</a>, <strong>false</strong> otherwise.</p>"
+        },
+        {
+          "html": "<p>If <em>compileHintAnnotation</em> is <strong>true</strong>, return <a href=\"https://tc39.es/ecma262/#sec-script-records\">Script Record</a> { existing Script Record fields, [[CompileHintAnnotation]]: <strong>\"all\"</strong> } .</p>"
+        },
+        {
+          "html": "<p>Otherwise, return <a href=\"https://tc39.es/ecma262/#sec-script-records\">Script Record</a> { existing Script Record fields } .</p>"
+        }
+      ]
+    },
+    {
+      "html": "<a href=\"https://tc39.es/ecma262/#sec-parsemodule\">ParseModule</a> is modified as follows:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <em>compileHintAnnotation</em> be <strong>true</strong> if <em>sourceText</em> <a href=\"https://wicg.github.io/explicit-javascript-compile-hints-file-based/#check-string-contains\">contains the Compile Hint Annotation</a>, <strong>false</strong> otherwise.</p>"
+        },
+        {
+          "html": "<p>If <em>compileHintAnnotation</em> is <strong>true</strong>, return <a href=\"https://tc39.es/ecma262/#sec-source-text-module-records\">Source Text Module Record</a> { existing Source Text Module Record fields, [[CompileHintAnnotation]]: <strong>\"all\"</strong> }.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return <a href=\"https://tc39.es/ecma262/#sec-source-text-module-records\">Source Text Module Record</a> { existing Source Text Module Record fields }.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To check whether a JavaScript source string <em>source</em> contains the Compile Hint Annotation, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <em>tokens</em> be the <a href=\"https://tc39.es/ecma262/#sec-list-and-record-specification-type\">List</a> of tokens obtained from parsing <em>source</em> according to <a data-link-type=\"biblio\" href=\"https://wicg.github.io/explicit-javascript-compile-hints-file-based/#biblio-ecmascript\" title=\"ECMAScript Language Specification\">[ECMASCRIPT]</a>.</p>"
+        },
+        {
+          "html": "For each <em>token</em> in <em>tokens</em>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <em>token</em> is not a <a href=\"https://tc39.es/ecma262/#prod-SingleLineComment\">single line comment</a> or a <a href=\"https://tc39.es/ecma262/#prod-MultiLineComment\">multi-line comment</a>, return <strong>false</strong>.</p>"
+            },
+            {
+              "html": "<p>Let <em>comment</em> be the content of <em>token</em>.</p>"
+            },
+            {
+              "html": "<p>If <a href=\"https://wicg.github.io/explicit-javascript-compile-hints-file-based/#matching-compile-hint-annotation\">matching a Compile Hint Annotation</a> in <em>comment</em> returns <strong>true</strong>, return <strong>true</strong>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <strong>false</strong>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To match a Compile Hint Annotation in a String <em>comment</em>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <em>pattern</em> be the regular expression <strong>/^#\\s*allFunctionsCalledOnLoad\\s*$/</strong>.</p>"
+        },
+        {
+          "html": "<p>Let <em>match</em> be ! <a href=\"https://tc39.es/ecma262/#sec-regexpbuiltinexec\">RegExpBuiltinExec</a>(<em>pattern</em>, <em>comment</em>).</p>"
+        },
+        {
+          "html": "<p>Is <em>match</em> is not <strong>null</strong>, return <strong>true</strong>.</p>"
+        },
+        {
+          "html": "<p>Return <strong>false</strong>.</p>"
+        }
+      ]
+    }
+  ]
+}
