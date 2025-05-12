@@ -1,0 +1,228 @@
+{
+  "spec": {
+    "title": "Translator and Language Detector APIs",
+    "url": "https://webmachinelearning.github.io/translation-api/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://webmachinelearning.github.io/translation-api/#title",
+      "level": 1,
+      "title": "Translator and Language Detector APIs"
+    },
+    {
+      "id": "abstract",
+      "href": "https://webmachinelearning.github.io/translation-api/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://webmachinelearning.github.io/translation-api/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://webmachinelearning.github.io/translation-api/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://webmachinelearning.github.io/translation-api/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "dependencies",
+      "href": "https://webmachinelearning.github.io/translation-api/#dependencies",
+      "level": 2,
+      "title": "Dependencies",
+      "number": "2"
+    },
+    {
+      "id": "translator-api",
+      "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+      "level": 2,
+      "title": "The translator API",
+      "number": "3"
+    },
+    {
+      "id": "translator-creation",
+      "href": "https://webmachinelearning.github.io/translation-api/#translator-creation",
+      "level": 3,
+      "title": "Creation",
+      "number": "3.1"
+    },
+    {
+      "id": "translator-availability",
+      "href": "https://webmachinelearning.github.io/translation-api/#translator-availability",
+      "level": 3,
+      "title": "Availability",
+      "number": "3.2"
+    },
+    {
+      "id": "the-Translator-class",
+      "href": "https://webmachinelearning.github.io/translation-api/#the-Translator-class",
+      "level": 3,
+      "title": "The Translator class",
+      "number": "3.3"
+    },
+    {
+      "id": "translator-translation",
+      "href": "https://webmachinelearning.github.io/translation-api/#translator-translation",
+      "level": 3,
+      "title": "Translation",
+      "number": "3.4"
+    },
+    {
+      "id": "translator-algorithm",
+      "href": "https://webmachinelearning.github.io/translation-api/#translator-algorithm",
+      "level": 4,
+      "title": "The algorithm",
+      "number": "3.4.1"
+    },
+    {
+      "id": "translator-usage",
+      "href": "https://webmachinelearning.github.io/translation-api/#translator-usage",
+      "level": 4,
+      "title": "Usage",
+      "number": "3.4.2"
+    },
+    {
+      "id": "translator-errors",
+      "href": "https://webmachinelearning.github.io/translation-api/#translator-errors",
+      "level": 4,
+      "title": "Errors",
+      "number": "3.4.3"
+    },
+    {
+      "id": "translator-permissions-policy",
+      "href": "https://webmachinelearning.github.io/translation-api/#translator-permissions-policy",
+      "level": 3,
+      "title": "Permissions policy integration",
+      "number": "3.5"
+    },
+    {
+      "id": "language-detector-api",
+      "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+      "level": 2,
+      "title": "The language detector API",
+      "number": "4"
+    },
+    {
+      "id": "language-detector-creation",
+      "href": "https://webmachinelearning.github.io/translation-api/#language-detector-creation",
+      "level": 3,
+      "title": "Creation",
+      "number": "4.1"
+    },
+    {
+      "id": "language-detector-availability",
+      "href": "https://webmachinelearning.github.io/translation-api/#language-detector-availability",
+      "level": 3,
+      "title": "Availability",
+      "number": "4.2"
+    },
+    {
+      "id": "the-LanguageDetector-class",
+      "href": "https://webmachinelearning.github.io/translation-api/#the-LanguageDetector-class",
+      "level": 3,
+      "title": "The LanguageDetector class",
+      "number": "4.3"
+    },
+    {
+      "id": "language-detector-language-detection",
+      "href": "https://webmachinelearning.github.io/translation-api/#language-detector-language-detection",
+      "level": 3,
+      "title": "Language detection",
+      "number": "4.4"
+    },
+    {
+      "id": "language-detector-algorithm",
+      "href": "https://webmachinelearning.github.io/translation-api/#language-detector-algorithm",
+      "level": 4,
+      "title": "The algorithm",
+      "number": "4.4.1"
+    },
+    {
+      "id": "language-detector-usage",
+      "href": "https://webmachinelearning.github.io/translation-api/#language-detector-usage",
+      "level": 4,
+      "title": "Usage",
+      "number": "4.4.2"
+    },
+    {
+      "id": "language-detector-errors",
+      "href": "https://webmachinelearning.github.io/translation-api/#language-detector-errors",
+      "level": 4,
+      "title": "Errors",
+      "number": "4.4.3"
+    },
+    {
+      "id": "language-detector-permissions-policy",
+      "href": "https://webmachinelearning.github.io/translation-api/#language-detector-permissions-policy",
+      "level": 3,
+      "title": "Permissions policy integration",
+      "number": "4.5"
+    },
+    {
+      "id": "privacy",
+      "href": "https://webmachinelearning.github.io/translation-api/#privacy",
+      "level": 2,
+      "title": "Privacy considerations",
+      "number": "5"
+    },
+    {
+      "id": "security",
+      "href": "https://webmachinelearning.github.io/translation-api/#security",
+      "level": 2,
+      "title": "Security considerations",
+      "number": "6"
+    },
+    {
+      "id": "index",
+      "href": "https://webmachinelearning.github.io/translation-api/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://webmachinelearning.github.io/translation-api/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://webmachinelearning.github.io/translation-api/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://webmachinelearning.github.io/translation-api/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://webmachinelearning.github.io/translation-api/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://webmachinelearning.github.io/translation-api/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://webmachinelearning.github.io/translation-api/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

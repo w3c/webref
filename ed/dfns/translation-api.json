@@ -1,0 +1,1548 @@
+{
+  "spec": {
+    "title": "Translator and Language Detector APIs",
+    "url": "https://webmachinelearning.github.io/translation-api/"
+  },
+  "dfns": [
+    {
+      "id": "translator",
+      "href": "https://webmachinelearning.github.io/translation-api/#translator",
+      "linkingText": [
+        "Translator"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+        "title": "The translator API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-translator-create-options-options",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-create-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Translator/create(options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+        "title": "The translator API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-translator-availability-options-options",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-availability-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Translator/availability(options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+        "title": "The translator API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-translator-translate-input-options-input",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-translate-input-options-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Translator/translate(input, options)",
+        "Translator/translate(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+        "title": "The translator API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-translator-translate-input-options-options",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-translate-input-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Translator/translate(input, options)",
+        "Translator/translate(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+        "title": "The translator API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-translator-translatestreaming-input-options-input",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-translatestreaming-input-options-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Translator/translateStreaming(input, options)",
+        "Translator/translateStreaming(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+        "title": "The translator API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-translator-translatestreaming-input-options-options",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-translatestreaming-input-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Translator/translateStreaming(input, options)",
+        "Translator/translateStreaming(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+        "title": "The translator API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-translator-measureinputusage-input-options-input",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-measureinputusage-input-options-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Translator/measureInputUsage(input, options)",
+        "Translator/measureInputUsage(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+        "title": "The translator API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-translator-measureinputusage-input-options-options",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-measureinputusage-input-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Translator/measureInputUsage(input, options)",
+        "Translator/measureInputUsage(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+        "title": "The translator API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-translatorcreatecoreoptions",
+      "href": "https://webmachinelearning.github.io/translation-api/#dictdef-translatorcreatecoreoptions",
+      "linkingText": [
+        "TranslatorCreateCoreOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+        "title": "The translator API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-translatorcreatecoreoptions-sourcelanguage",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translatorcreatecoreoptions-sourcelanguage",
+      "linkingText": [
+        "sourceLanguage"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TranslatorCreateCoreOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+        "title": "The translator API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-translatorcreatecoreoptions-targetlanguage",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translatorcreatecoreoptions-targetlanguage",
+      "linkingText": [
+        "targetLanguage"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TranslatorCreateCoreOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+        "title": "The translator API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-translatorcreateoptions",
+      "href": "https://webmachinelearning.github.io/translation-api/#dictdef-translatorcreateoptions",
+      "linkingText": [
+        "TranslatorCreateOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+        "title": "The translator API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-translatorcreateoptions-signal",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translatorcreateoptions-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TranslatorCreateOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+        "title": "The translator API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-translatorcreateoptions-monitor",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translatorcreateoptions-monitor",
+      "linkingText": [
+        "monitor"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TranslatorCreateOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+        "title": "The translator API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-translatortranslateoptions",
+      "href": "https://webmachinelearning.github.io/translation-api/#dictdef-translatortranslateoptions",
+      "linkingText": [
+        "TranslatorTranslateOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+        "title": "The translator API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-translatortranslateoptions-signal",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translatortranslateoptions-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TranslatorTranslateOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-api",
+        "title": "The translator API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-translator-create",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-create",
+      "linkingText": [
+        "create(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Translator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-creation",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-creation",
+        "title": "Creation",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "validate-and-canonicalize-translator-options",
+      "href": "https://webmachinelearning.github.io/translation-api/#validate-and-canonicalize-translator-options",
+      "linkingText": [
+        "validate and canonicalize translator options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "translator-creation",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-creation",
+        "title": "Creation",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "download-the-translation-model",
+      "href": "https://webmachinelearning.github.io/translation-api/#download-the-translation-model",
+      "linkingText": [
+        "download the translation model"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "translator-creation",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-creation",
+        "title": "Creation",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initialize-the-translation-model",
+      "href": "https://webmachinelearning.github.io/translation-api/#initialize-the-translation-model",
+      "linkingText": [
+        "initialize the translation model"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "translator-creation",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-creation",
+        "title": "Creation",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-the-translator-object",
+      "href": "https://webmachinelearning.github.io/translation-api/#create-the-translator-object",
+      "linkingText": [
+        "create the translator object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "translator-creation",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-creation",
+        "title": "Creation",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-translator-availability",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-availability",
+      "linkingText": [
+        "availability(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Translator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-availability",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-availability",
+        "title": "Availability",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-translator-options-availability",
+      "href": "https://webmachinelearning.github.io/translation-api/#compute-translator-options-availability",
+      "linkingText": [
+        "compute translator options availability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "translator-availability",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-availability",
+        "title": "Availability",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "language-arc",
+      "href": "https://webmachinelearning.github.io/translation-api/#language-arc",
+      "linkingText": [
+        "language arc"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "translator-availability",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-availability",
+        "title": "Availability",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "language-arc-source-language",
+      "href": "https://webmachinelearning.github.io/translation-api/#language-arc-source-language",
+      "linkingText": [
+        "source language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "language arc"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "translator-availability",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-availability",
+        "title": "Availability",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "language-arc-target-language",
+      "href": "https://webmachinelearning.github.io/translation-api/#language-arc-target-language",
+      "linkingText": [
+        "target language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "language arc"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "translator-availability",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-availability",
+        "title": "Availability",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "translator-language-arc-availabilities",
+      "href": "https://webmachinelearning.github.io/translation-api/#translator-language-arc-availabilities",
+      "linkingText": [
+        "translator language arc availabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "translator-availability",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-availability",
+        "title": "Availability",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "language-arc-overlaps",
+      "href": "https://webmachinelearning.github.io/translation-api/#language-arc-overlaps",
+      "linkingText": [
+        "overlaps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "language arc"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "translator-availability",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-availability",
+        "title": "Availability",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "language-arc-can-be-fulfilled-by-the-identity-translation",
+      "href": "https://webmachinelearning.github.io/translation-api/#language-arc-can-be-fulfilled-by-the-identity-translation",
+      "linkingText": [
+        "can be fulfilled by the identity translation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "language arc"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "translator-availability",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-availability",
+        "title": "Availability",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "translator-source-language",
+      "href": "https://webmachinelearning.github.io/translation-api/#translator-source-language",
+      "linkingText": [
+        "source language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Translator"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-Translator-class",
+        "href": "https://webmachinelearning.github.io/translation-api/#the-Translator-class",
+        "title": "The Translator class",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "translator-target-language",
+      "href": "https://webmachinelearning.github.io/translation-api/#translator-target-language",
+      "linkingText": [
+        "target language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Translator"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-Translator-class",
+        "href": "https://webmachinelearning.github.io/translation-api/#the-Translator-class",
+        "title": "The Translator class",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "translator-input-quota",
+      "href": "https://webmachinelearning.github.io/translation-api/#translator-input-quota",
+      "linkingText": [
+        "input quota"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Translator"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-Translator-class",
+        "href": "https://webmachinelearning.github.io/translation-api/#the-Translator-class",
+        "title": "The Translator class",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-translator-sourcelanguage",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-sourcelanguage",
+      "linkingText": [
+        "sourceLanguage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Translator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-Translator-class",
+        "href": "https://webmachinelearning.github.io/translation-api/#the-Translator-class",
+        "title": "The Translator class",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-translator-targetlanguage",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-targetlanguage",
+      "linkingText": [
+        "targetLanguage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Translator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-Translator-class",
+        "href": "https://webmachinelearning.github.io/translation-api/#the-Translator-class",
+        "title": "The Translator class",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-translator-inputquota",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-inputquota",
+      "linkingText": [
+        "inputQuota"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Translator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-Translator-class",
+        "href": "https://webmachinelearning.github.io/translation-api/#the-Translator-class",
+        "title": "The Translator class",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-translator-translate",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-translate",
+      "linkingText": [
+        "translate(input, options)",
+        "translate(input)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Translator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-Translator-class",
+        "href": "https://webmachinelearning.github.io/translation-api/#the-Translator-class",
+        "title": "The Translator class",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-translator-translatestreaming",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-translatestreaming",
+      "linkingText": [
+        "translateStreaming(input, options)",
+        "translateStreaming(input)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Translator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-Translator-class",
+        "href": "https://webmachinelearning.github.io/translation-api/#the-Translator-class",
+        "title": "The Translator class",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-translator-measureinputusage",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-measureinputusage",
+      "linkingText": [
+        "measureInputUsage(input, options)",
+        "measureInputUsage(input)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Translator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-Translator-class",
+        "href": "https://webmachinelearning.github.io/translation-api/#the-Translator-class",
+        "title": "The Translator class",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "translate",
+      "href": "https://webmachinelearning.github.io/translation-api/#translate",
+      "linkingText": [
+        "translate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "translator-algorithm",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-algorithm",
+        "title": "The algorithm",
+        "number": "3.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "measure-translator-input-usage",
+      "href": "https://webmachinelearning.github.io/translation-api/#measure-translator-input-usage",
+      "linkingText": [
+        "measure translator input usage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "translator-usage",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-usage",
+        "title": "Usage",
+        "number": "3.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "permissiondef-translator",
+      "href": "https://webmachinelearning.github.io/translation-api/#permissiondef-translator",
+      "linkingText": [
+        "translator"
+      ],
+      "localLinkingText": [],
+      "type": "permission",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "translator-permissions-policy",
+        "href": "https://webmachinelearning.github.io/translation-api/#translator-permissions-policy",
+        "title": "Permissions policy integration",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "languagedetector",
+      "href": "https://webmachinelearning.github.io/translation-api/#languagedetector",
+      "linkingText": [
+        "LanguageDetector"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+        "title": "The language detector API",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-languagedetector-create-options-options",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetector-create-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LanguageDetector/create(options)",
+        "LanguageDetector/create()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+        "title": "The language detector API",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-languagedetector-availability-options-options",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetector-availability-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LanguageDetector/availability(options)",
+        "LanguageDetector/availability()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+        "title": "The language detector API",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-languagedetector-detect-input-options-input",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetector-detect-input-options-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LanguageDetector/detect(input, options)",
+        "LanguageDetector/detect(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+        "title": "The language detector API",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-languagedetector-detect-input-options-options",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetector-detect-input-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LanguageDetector/detect(input, options)",
+        "LanguageDetector/detect(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+        "title": "The language detector API",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-languagedetector-measureinputusage-input-options-input",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetector-measureinputusage-input-options-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LanguageDetector/measureInputUsage(input, options)",
+        "LanguageDetector/measureInputUsage(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+        "title": "The language detector API",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-languagedetector-measureinputusage-input-options-options",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetector-measureinputusage-input-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LanguageDetector/measureInputUsage(input, options)",
+        "LanguageDetector/measureInputUsage(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+        "title": "The language detector API",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-languagedetectorcreatecoreoptions",
+      "href": "https://webmachinelearning.github.io/translation-api/#dictdef-languagedetectorcreatecoreoptions",
+      "linkingText": [
+        "LanguageDetectorCreateCoreOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+        "title": "The language detector API",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-languagedetectorcreatecoreoptions-expectedinputlanguages",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetectorcreatecoreoptions-expectedinputlanguages",
+      "linkingText": [
+        "expectedInputLanguages"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LanguageDetectorCreateCoreOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+        "title": "The language detector API",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-languagedetectorcreateoptions",
+      "href": "https://webmachinelearning.github.io/translation-api/#dictdef-languagedetectorcreateoptions",
+      "linkingText": [
+        "LanguageDetectorCreateOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+        "title": "The language detector API",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-languagedetectorcreateoptions-signal",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetectorcreateoptions-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LanguageDetectorCreateOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+        "title": "The language detector API",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-languagedetectorcreateoptions-monitor",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetectorcreateoptions-monitor",
+      "linkingText": [
+        "monitor"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LanguageDetectorCreateOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+        "title": "The language detector API",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-languagedetectordetectoptions",
+      "href": "https://webmachinelearning.github.io/translation-api/#dictdef-languagedetectordetectoptions",
+      "linkingText": [
+        "LanguageDetectorDetectOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+        "title": "The language detector API",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-languagedetectordetectoptions-signal",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetectordetectoptions-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LanguageDetectorDetectOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+        "title": "The language detector API",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-languagedetectionresult",
+      "href": "https://webmachinelearning.github.io/translation-api/#dictdef-languagedetectionresult",
+      "linkingText": [
+        "LanguageDetectionResult"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+        "title": "The language detector API",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-languagedetectionresult-detectedlanguage",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetectionresult-detectedlanguage",
+      "linkingText": [
+        "detectedLanguage"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LanguageDetectionResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+        "title": "The language detector API",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-languagedetectionresult-confidence",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetectionresult-confidence",
+      "linkingText": [
+        "confidence"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LanguageDetectionResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-api",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+        "title": "The language detector API",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-languagedetector-create",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetector-create",
+      "linkingText": [
+        "create(options)",
+        "create()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "LanguageDetector"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-creation",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-creation",
+        "title": "Creation",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "validate-and-canonicalize-language-detector-options",
+      "href": "https://webmachinelearning.github.io/translation-api/#validate-and-canonicalize-language-detector-options",
+      "linkingText": [
+        "validate and canonicalize language detector options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-creation",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-creation",
+        "title": "Creation",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "download-the-language-detector-model",
+      "href": "https://webmachinelearning.github.io/translation-api/#download-the-language-detector-model",
+      "linkingText": [
+        "download the language detector model"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-creation",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-creation",
+        "title": "Creation",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initialize-the-language-detector-model",
+      "href": "https://webmachinelearning.github.io/translation-api/#initialize-the-language-detector-model",
+      "linkingText": [
+        "initialize the language detector model"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-creation",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-creation",
+        "title": "Creation",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-the-language-detector-object",
+      "href": "https://webmachinelearning.github.io/translation-api/#create-the-language-detector-object",
+      "linkingText": [
+        "create the language detector object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-creation",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-creation",
+        "title": "Creation",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-languagedetector-availability",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetector-availability",
+      "linkingText": [
+        "availability(options)",
+        "availability()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "LanguageDetector"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-availability",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-availability",
+        "title": "Availability",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-language-detector-options-availability",
+      "href": "https://webmachinelearning.github.io/translation-api/#compute-language-detector-options-availability",
+      "linkingText": [
+        "compute language detector options availability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-availability",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-availability",
+        "title": "Availability",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "languagedetector-expected-input-languages",
+      "href": "https://webmachinelearning.github.io/translation-api/#languagedetector-expected-input-languages",
+      "linkingText": [
+        "expected input languages"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "LanguageDetector"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-LanguageDetector-class",
+        "href": "https://webmachinelearning.github.io/translation-api/#the-LanguageDetector-class",
+        "title": "The LanguageDetector class",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "languagedetector-input-quota",
+      "href": "https://webmachinelearning.github.io/translation-api/#languagedetector-input-quota",
+      "linkingText": [
+        "input quota"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "LanguageDetector"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-LanguageDetector-class",
+        "href": "https://webmachinelearning.github.io/translation-api/#the-LanguageDetector-class",
+        "title": "The LanguageDetector class",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-languagedetector-expectedinputlanguages",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetector-expectedinputlanguages",
+      "linkingText": [
+        "expectedInputLanguages"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LanguageDetector"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-LanguageDetector-class",
+        "href": "https://webmachinelearning.github.io/translation-api/#the-LanguageDetector-class",
+        "title": "The LanguageDetector class",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-languagedetector-inputquota",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetector-inputquota",
+      "linkingText": [
+        "inputQuota"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LanguageDetector"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-LanguageDetector-class",
+        "href": "https://webmachinelearning.github.io/translation-api/#the-LanguageDetector-class",
+        "title": "The LanguageDetector class",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-languagedetector-detect",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetector-detect",
+      "linkingText": [
+        "detect(input, options)",
+        "detect(input)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "LanguageDetector"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-LanguageDetector-class",
+        "href": "https://webmachinelearning.github.io/translation-api/#the-LanguageDetector-class",
+        "title": "The LanguageDetector class",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-languagedetector-measureinputusage",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetector-measureinputusage",
+      "linkingText": [
+        "measureInputUsage(input, options)",
+        "measureInputUsage(input)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "LanguageDetector"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-LanguageDetector-class",
+        "href": "https://webmachinelearning.github.io/translation-api/#the-LanguageDetector-class",
+        "title": "The LanguageDetector class",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "detect-languages",
+      "href": "https://webmachinelearning.github.io/translation-api/#detect-languages",
+      "linkingText": [
+        "detect languages"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-algorithm",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-algorithm",
+        "title": "The algorithm",
+        "number": "4.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "measure-language-detector-input-usage",
+      "href": "https://webmachinelearning.github.io/translation-api/#measure-language-detector-input-usage",
+      "linkingText": [
+        "measure language detector input usage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-usage",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-usage",
+        "title": "Usage",
+        "number": "4.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "permissiondef-language-detector",
+      "href": "https://webmachinelearning.github.io/translation-api/#permissiondef-language-detector",
+      "linkingText": [
+        "language-detector"
+      ],
+      "localLinkingText": [],
+      "type": "permission",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "language-detector-permissions-policy",
+        "href": "https://webmachinelearning.github.io/translation-api/#language-detector-permissions-policy",
+        "title": "Permissions policy integration",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

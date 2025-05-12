@@ -1,0 +1,26 @@
+// Source: Translator and Language Detector APIs (https://webmachinelearning.github.io/translation-api/)
+[Exposed=Window, SecureContext]
+interface LanguageDetector {
+  static Promise<LanguageDetector> create(
+    optional LanguageDetectorCreateOptions options = {}
+  );
+  static Promise<Availability> availability(
+    optional LanguageDetectorCreateCoreOptions options = {}
+  );
+
+  Promise<sequence<LanguageDetectionResult>> detect(
+    DOMString input,
+    optional LanguageDetectorDetectOptions options = {}
+  );
+
+  readonly attribute FrozenArray<DOMString>? expectedInputLanguages;
+
+  Promise<double> measureInputUsage(
+    DOMString input,
+    optional LanguageDetectorDetectOptions options = {}
+  );
+  readonly attribute unrestricted double inputQuota;
+};
+
+// Source: Translator and Language Detector APIs (https://webmachinelearning.github.io/translation-api/)
+LanguageDetector includes DestroyableModel;

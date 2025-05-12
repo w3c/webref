@@ -1,0 +1,683 @@
+{
+  "spec": {
+    "title": "Translator and Language Detector APIs",
+    "url": "https://webmachinelearning.github.io/translation-api/"
+  },
+  "algorithms": [
+    {
+      "name": "Translator/create(options)",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-create",
+      "html": "The static <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Translator\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-translator-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>create(<var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#create-an-ai-model-object\" id=\"ref-for-create-an-ai-model-object\">creating an AI model object</a> given <var>options</var>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#permissiondef-translator\" id=\"ref-for-permissiondef-translator\">translator</a></code>\", <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#validate-and-canonicalize-translator-options\" id=\"ref-for-validate-and-canonicalize-translator-options\">validate and canonicalize translator options</a>, <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#compute-translator-options-availability\" id=\"ref-for-compute-translator-options-availability\">compute translator options availability</a>, <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#download-the-translation-model\" id=\"ref-for-download-the-translation-model\">download the translation model</a>, <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#initialize-the-translation-model\" id=\"ref-for-initialize-the-translation-model\">initialize the translation model</a>, and <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#create-the-translator-object\" id=\"ref-for-create-the-translator-object\">create the translator object</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "validate and canonicalize translator options",
+      "href": "https://webmachinelearning.github.io/translation-api/#validate-and-canonicalize-translator-options",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"validate-and-canonicalize-translator-options\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">validate and canonicalize translator options</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dictdef-translatorcreatecoreoptions\" id=\"ref-for-dictdef-translatorcreatecoreoptions②\">TranslatorCreateCoreOptions</a></code> <var>options</var>, perform the following steps. They mutate <var>options</var> in place to canonicalize language tags, and throw an exception if any are invalid.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#validate-and-canonicalize-language-tags\" id=\"ref-for-validate-and-canonicalize-language-tags\">Validate and canonicalize language tags</a> given <var>options</var> and \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-translatorcreatecoreoptions-sourcelanguage\" id=\"ref-for-dom-translatorcreatecoreoptions-sourcelanguage\">sourceLanguage</a></code>\".</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#validate-and-canonicalize-language-tags\" id=\"ref-for-validate-and-canonicalize-language-tags①\">Validate and canonicalize language tags</a> given <var>options</var> and \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-translatorcreatecoreoptions-targetlanguage\" id=\"ref-for-dom-translatorcreatecoreoptions-targetlanguage\">targetLanguage</a></code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "download the translation model",
+      "href": "https://webmachinelearning.github.io/translation-api/#download-the-translation-model",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"download-the-translation-model\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">download the translation model</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dictdef-translatorcreatecoreoptions\" id=\"ref-for-dictdef-translatorcreatecoreoptions③\">TranslatorCreateCoreOptions</a></code> <var>options</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Initiate the download process for everything the user agent needs to translate text from <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-translatorcreatecoreoptions-sourcelanguage\" id=\"ref-for-dom-translatorcreatecoreoptions-sourcelanguage①\">sourceLanguage</a></code>\"] to <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-translatorcreatecoreoptions-targetlanguage\" id=\"ref-for-dom-translatorcreatecoreoptions-targetlanguage①\">targetLanguage</a></code>\"].</p>\n      <p>This could include both a base translation model and specific language arc material, or perhaps material for multiple language arcs if an intermediate language is used.</p>"
+        },
+        {
+          "html": "<p>If the download process cannot be started for any reason, then return false.</p>"
+        },
+        {
+          "html": "<p>Return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "initialize the translation model",
+      "href": "https://webmachinelearning.github.io/translation-api/#initialize-the-translation-model",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-the-translation-model\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize the translation model</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dictdef-translatorcreatecoreoptions\" id=\"ref-for-dictdef-translatorcreatecoreoptions④\">TranslatorCreateCoreOptions</a></code> <var>options</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Perform any necessary initialization operations for the AI model backing the user agent’s capabilities for translating from <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-translatorcreatecoreoptions-sourcelanguage\" id=\"ref-for-dom-translatorcreatecoreoptions-sourcelanguage②\">sourceLanguage</a></code>\"] to <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-translatorcreatecoreoptions-targetlanguage\" id=\"ref-for-dom-translatorcreatecoreoptions-targetlanguage②\">targetLanguage</a></code>\"].</p>\n      <p>This could include loading the model into memory, or loading any fine-tunings necessary to support the specific options in question.</p>"
+        },
+        {
+          "html": "<p>If initialization failed for any reason, then return a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information\" id=\"ref-for-domexception-error-information\">DOMException error information</a> whose <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information-name\" id=\"ref-for-domexception-error-information-name\">name</a> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#operationerror\" id=\"ref-for-operationerror\">OperationError</a></code>\" and whose <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information-details\" id=\"ref-for-domexception-error-information-details\">details</a> contain appropriate detail.</p>"
+        },
+        {
+          "html": "<p>Return null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create the translator object",
+      "href": "https://webmachinelearning.github.io/translation-api/#create-the-translator-object",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-the-translator-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create the translator object</dfn>, given a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm\">realm</a> <var>realm</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dictdef-translatorcreatecoreoptions\" id=\"ref-for-dictdef-translatorcreatecoreoptions⑤\">TranslatorCreateCoreOptions</a></code> <var>options</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: these steps are running on <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop\" id=\"ref-for-concept-agent-event-loop\">event loop</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputQuota</var> be the amount of input quota that is available to the user agent for future <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#translate\" id=\"ref-for-translate\">translation</a> operations. (This value is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a>, and may be +∞ if there are no specific limits beyond, e.g., the user’s memory, or the limits of JavaScript strings.)</p>"
+        },
+        {
+          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#translator\" id=\"ref-for-translator②\">Translator</a></code> object, created in <var>realm</var>, with</p>\n      <dl class=\"props\">\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#translator-source-language\" id=\"ref-for-translator-source-language\">source language</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-translatorcreatecoreoptions-sourcelanguage\" id=\"ref-for-dom-translatorcreatecoreoptions-sourcelanguage③\">sourceLanguage</a></code>\"]</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#translator-target-language\" id=\"ref-for-translator-target-language\">target language</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-translatorcreatecoreoptions-targetlanguage\" id=\"ref-for-dom-translatorcreatecoreoptions-targetlanguage③\">targetLanguage</a></code>\"]</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#translator-input-quota\" id=\"ref-for-translator-input-quota\">input quota</a>\n       </dt><dd data-md=\"\">\n        <p><var>inputQuota</var></p>\n      </dd></dl>"
+        }
+      ]
+    },
+    {
+      "name": "Translator/availability(options)",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-availability",
+      "html": "The static <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Translator\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-translator-availability\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>availability(<var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#compute-ai-model-availability\" id=\"ref-for-compute-ai-model-availability\">computing AI model availability</a> given <var>options</var>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#permissiondef-translator\" id=\"ref-for-permissiondef-translator①\">translator</a></code>\", <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#validate-and-canonicalize-translator-options\" id=\"ref-for-validate-and-canonicalize-translator-options①\">validate and canonicalize translator options</a>, and <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#compute-translator-options-availability\" id=\"ref-for-compute-translator-options-availability①\">compute translator options availability</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "compute translator options availability",
+      "href": "https://webmachinelearning.github.io/translation-api/#compute-translator-options-availability",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-translator-options-availability\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute translator options availability</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dictdef-translatorcreatecoreoptions\" id=\"ref-for-dictdef-translatorcreatecoreoptions⑥\">TranslatorCreateCoreOptions</a></code> <var>options</var>, perform the following steps. They return either an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#enumdef-availability\" id=\"ref-for-enumdef-availability①\">Availability</a></code> value or null, and they mutate <var>options</var> in place to update language tags to their best-fit matches.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>availabilities</var> be the user agent’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#translator-language-arc-availabilities\" id=\"ref-for-translator-language-arc-availabilities\">translator language arc availabilities</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>availabilities</var> is null, then return null.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>languageArc</var> → <var>availability</var> in <var>availabilities</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>sourceLanguageBestFit</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma402/#sec-lookupmatchinglocalebybestfit\" id=\"ref-for-sec-lookupmatchinglocalebybestfit\">LookupMatchingLocaleByBestFit</a>(« <var>languageArc</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-source-language\" id=\"ref-for-language-arc-source-language\">source language</a> », « <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-translatorcreatecoreoptions-sourcelanguage\" id=\"ref-for-dom-translatorcreatecoreoptions-sourcelanguage④\">sourceLanguage</a></code>\"] »).</p>"
+            },
+            {
+              "html": "<p>Let <var>targetLanguageBestFit</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma402/#sec-lookupmatchinglocalebybestfit\" id=\"ref-for-sec-lookupmatchinglocalebybestfit①\">LookupMatchingLocaleByBestFit</a>(« <var>languageArc</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-target-language\" id=\"ref-for-language-arc-target-language\">target language</a> », « <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-translatorcreatecoreoptions-targetlanguage\" id=\"ref-for-dom-translatorcreatecoreoptions-targetlanguage④\">targetLanguage</a></code>\"] »).</p>"
+            },
+            {
+              "html": "If <var>sourceLanguageBestFit</var> and <var>targetLanguageBestFit</var> are both not undefined, then:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-translatorcreatecoreoptions-sourcelanguage\" id=\"ref-for-dom-translatorcreatecoreoptions-sourcelanguage⑤\">sourceLanguage</a></code>\"] to <var>sourceLanguageBestFit</var>.[[locale]].</p>"
+                },
+                {
+                  "html": "<p>Set <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-translatorcreatecoreoptions-targetlanguage\" id=\"ref-for-dom-translatorcreatecoreoptions-targetlanguage⑤\">targetLanguage</a></code>\"] to <var>targetLanguageBestFit</var>.[[locale]].</p>"
+                },
+                {
+                  "html": "<p>Return <var>availability</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>If (<var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-translatorcreatecoreoptions-sourcelanguage\" id=\"ref-for-dom-translatorcreatecoreoptions-sourcelanguage⑥\">sourceLanguage</a></code>\"], <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-translatorcreatecoreoptions-targetlanguage\" id=\"ref-for-dom-translatorcreatecoreoptions-targetlanguage⑥\">targetLanguage</a></code>\"]) <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-can-be-fulfilled-by-the-identity-translation\" id=\"ref-for-language-arc-can-be-fulfilled-by-the-identity-translation\">can be fulfilled by the identity translation</a>, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-available\" id=\"ref-for-dom-availability-available\">available</a></code>\".</p>"
+        },
+        {
+          "html": "<p>Return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-unavailable\" id=\"ref-for-dom-availability-unavailable①\">unavailable</a></code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "translator language arc availabilities",
+      "href": "https://webmachinelearning.github.io/translation-api/#translator-language-arc-availabilities",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"translator-language-arc-availabilities\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">translator language arc availabilities</dfn> are given by the following steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> from <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc\" id=\"ref-for-language-arc②\">language arcs</a> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#enumdef-availability\" id=\"ref-for-enumdef-availability②\">Availability</a></code> values, or null.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>If there is some error attempting to determine what language arcs the user agent <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports\">can support</a> translating text between, which the user agent believes to be transient (such that re-querying could stop producing such an error), then return null.</p>"
+        },
+        {
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①\">map</a> from <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc\" id=\"ref-for-language-arc③\">language arcs</a> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#enumdef-availability\" id=\"ref-for-enumdef-availability③\">Availability</a></code> values, where each key is a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc\" id=\"ref-for-language-arc④\">language arc</a> that the user agent supports translating text between, filled according to the following constraints:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>If the user agent <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports①\">currently supports</a> translating text from the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-source-language\" id=\"ref-for-language-arc-source-language①\">source language</a> to the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-target-language\" id=\"ref-for-language-arc-target-language①\">target language</a> of the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc\" id=\"ref-for-language-arc⑤\">language arc</a>, then the map must contain an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry\">entry</a> whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key\">key</a> is that <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc\" id=\"ref-for-language-arc⑥\">language arc</a> and whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value\">value</a> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-available\" id=\"ref-for-dom-availability-available②\">available</a></code>\".</p>\n       </li><li data-md=\"\">\n        <p>If the user agent believes it will be able to <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports②\">support</a> translating text from the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-source-language\" id=\"ref-for-language-arc-source-language②\">source language</a> to the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-target-language\" id=\"ref-for-language-arc-target-language②\">target language</a> of the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc\" id=\"ref-for-language-arc⑦\">language arc</a>, but only after finishing a download that is already ongoing, then the map must contain an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry①\">entry</a> whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key①\">key</a> is that <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc\" id=\"ref-for-language-arc⑧\">language arc</a> and whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value①\">value</a> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloading\" id=\"ref-for-dom-availability-downloading①\">downloading</a></code>\".</p>\n       </li><li data-md=\"\">\n        <p>If the user agent believes it will be able to <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports③\">support</a> translating text from the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-source-language\" id=\"ref-for-language-arc-source-language③\">source language</a> to the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-target-language\" id=\"ref-for-language-arc-target-language③\">target language</a> of the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc\" id=\"ref-for-language-arc⑨\">language arc</a>, but only after performing a not-currently ongoing download, then the map must contain an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry②\">entry</a> whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key②\">key</a> is that <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc\" id=\"ref-for-language-arc①⓪\">language arc</a> and whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value②\">value</a> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloadable\" id=\"ref-for-dom-availability-downloadable①\">downloadable</a></code>\".</p>\n       </li><li data-md=\"\">\n        <p>The <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-keys\" id=\"ref-for-map-getting-the-keys\">keys</a> must not include any <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc\" id=\"ref-for-language-arc①①\">language arcs</a> that <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-overlaps\" id=\"ref-for-language-arc-overlaps\">overlap</a> with the other <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-keys\" id=\"ref-for-map-getting-the-keys①\">keys</a>.</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "language arc/overlaps",
+      "href": "https://webmachinelearning.github.io/translation-api/#language-arc-overlaps",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc\" id=\"ref-for-language-arc①②\">language arc</a> <var>arc</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"language arc\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"language-arc-overlaps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">overlaps</dfn> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set\">set</a> of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc\" id=\"ref-for-language-arc①③\">language arcs</a> <var>otherArcs</var> if the following steps return true:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>sourceLanguages</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">set</a> composed of the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-source-language\" id=\"ref-for-language-arc-source-language④\">source languages</a> of each <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">item</a> in <var>otherArcs</var>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma402/#sec-lookupmatchinglocalebybestfit\" id=\"ref-for-sec-lookupmatchinglocalebybestfit③\">LookupMatchingLocaleByBestFit</a>(<var>sourceLanguages</var>, « <var>arc</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-source-language\" id=\"ref-for-language-arc-source-language⑤\">source language</a> ») is not undefined, then return true.</p>"
+        },
+        {
+          "html": "<p>Let <var>targetLanguages</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a> composed of the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-target-language\" id=\"ref-for-language-arc-target-language④\">target languages</a> of each <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①\">item</a> in <var>otherArcs</var>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma402/#sec-lookupmatchinglocalebybestfit\" id=\"ref-for-sec-lookupmatchinglocalebybestfit④\">LookupMatchingLocaleByBestFit</a>(<var>targetLanguages</var>, « <var>arc</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-target-language\" id=\"ref-for-language-arc-target-language⑤\">target language</a> ») is not undefined, then return true.</p>"
+        },
+        {
+          "html": "<p>Return false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "language arc/can be fulfilled by the identity translation",
+      "href": "https://webmachinelearning.github.io/translation-api/#language-arc-can-be-fulfilled-by-the-identity-translation",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc\" id=\"ref-for-language-arc①⑥\">language arc</a> <var>arc</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"language arc\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"language-arc-can-be-fulfilled-by-the-identity-translation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">can be fulfilled by the identity translation</dfn> if the following steps return true:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma402/#sec-lookupmatchinglocalebybestfit\" id=\"ref-for-sec-lookupmatchinglocalebybestfit⑥\">LookupMatchingLocaleByBestFit</a>(« <var>arc</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-source-language\" id=\"ref-for-language-arc-source-language⑥\">source language</a> », « <var>arc</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-target-language\" id=\"ref-for-language-arc-target-language⑥\">target language</a> ») is not undefined, then return true.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma402/#sec-lookupmatchinglocalebybestfit\" id=\"ref-for-sec-lookupmatchinglocalebybestfit⑦\">LookupMatchingLocaleByBestFit</a>(« <var>arc</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-target-language\" id=\"ref-for-language-arc-target-language⑦\">target language</a> », « <var>arc</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-source-language\" id=\"ref-for-language-arc-source-language⑦\">source language</a> ») is not undefined, then return true.</p>"
+        },
+        {
+          "html": "<p>Return false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Translator/translate(input, options)",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-translate",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Translator\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"translate(input, options)|translate(input)\" id=\"dom-translator-translate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>translate(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>operation</var> be an algorithm step which takes arguments <var>chunkProduced</var>, <var>done</var>, <var>error</var>, and <var>stopProducing</var>, and <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#translate\" id=\"ref-for-translate②\">translates</a> <var>input</var> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#translator-source-language\" id=\"ref-for-translator-source-language②\">source language</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#translator-target-language\" id=\"ref-for-translator-target-language②\">target language</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#translator-input-quota\" id=\"ref-for-translator-input-quota②\">input quota</a>, <var>chunkProduced</var>, <var>done</var>, <var>error</var>, and <var>stopProducing</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#get-an-aggregated-ai-model-result\" id=\"ref-for-get-an-aggregated-ai-model-result\">getting an aggregated AI model result</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>, <var>options</var>, and <var>operation</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Translator/translateStreaming(input, options)",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-translatestreaming",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Translator\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"translateStreaming(input, options)|translateStreaming(input)\" id=\"dom-translator-translatestreaming\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>translateStreaming(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>operation</var> be an algorithm step which takes arguments <var>chunkProduced</var>, <var>done</var>, <var>error</var>, and <var>stopProducing</var>, and <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#translate\" id=\"ref-for-translate③\">translates</a> <var>input</var> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#translator-source-language\" id=\"ref-for-translator-source-language③\">source language</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#translator-target-language\" id=\"ref-for-translator-target-language③\">target language</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#translator-input-quota\" id=\"ref-for-translator-input-quota③\">input quota</a>, <var>chunkProduced</var>, <var>done</var>, <var>error</var>, and <var>stopProducing</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#get-a-streaming-ai-model-result\" id=\"ref-for-get-a-streaming-ai-model-result\">getting a streaming AI model result</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>, <var>options</var>, and <var>operation</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Translator/measureInputUsage(input, options)",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-translator-measureinputusage",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Translator\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"measureInputUsage(input, options)|measureInputUsage(input)\" id=\"dom-translator-measureinputusage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>measureInputUsage(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>measureUsage</var> be an algorithm step which takes argument <var>stopMeasuring</var>, and returns the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#measure-translator-input-usage\" id=\"ref-for-measure-translator-input-usage\">measuring translator input usage</a> given <var>input</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#translator-source-language\" id=\"ref-for-translator-source-language④\">source language</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#translator-target-language\" id=\"ref-for-translator-target-language④\">target language</a>, and <var>stopMeasuring</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#measure-ai-model-input-usage\" id=\"ref-for-measure-ai-model-input-usage\">measuring AI model input usage</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>, <var>options</var>, and <var>measureUsage</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "translate",
+      "href": "https://webmachinelearning.github.io/translation-api/#translate",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"translate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">translate</dfn> given: \n    <ul>\n     <li data-md=\"\">\n      <p>a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> <var>input</var>,</p>\n     </li><li data-md=\"\">\n      <p>a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma402/#sec-language-tags\" id=\"ref-for-sec-language-tags①\">Unicode canonicalized locale identifier</a> <var>sourceLanguage</var>,</p>\n     </li><li data-md=\"\">\n      <p>a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma402/#sec-language-tags\" id=\"ref-for-sec-language-tags②\">Unicode canonicalized locale identifier</a> <var>targetLanguage</var>,</p>\n     </li><li data-md=\"\">\n      <p>a number <var>inputQuota</var>,</p>\n     </li><li data-md=\"\">\n      <p>an algorithm <var>chunkProduced</var> that takes a string and returns nothing,</p>\n     </li><li data-md=\"\">\n      <p>an algorithm <var>done</var> that takes no arguments and returns nothing,</p>\n     </li><li data-md=\"\">\n      <p>an algorithm <var>error</var> that takes <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#error-information\" id=\"ref-for-error-information\">error information</a> and returns nothing, and</p>\n     </li><li data-md=\"\">\n      <p>an algorithm <var>stopProducing</var> that takes no arguments and returns a boolean,</p>\n    </li></ul>\n    <p>perform the following steps:</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>requested</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#measure-translator-input-usage\" id=\"ref-for-measure-translator-input-usage①\">measuring translator input usage</a> given <var>input</var>, <var>sourceLanguage</var>, <var>targetLanguage</var>, and <var>stopProducing</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>requested</var> is null, then return.</p>"
+        },
+        {
+          "html": "If <var>requested</var> is an <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#error-information\" id=\"ref-for-error-information①\">error information</a>, then:",
+          "rationale": "perform",
+          "steps": [
+            {
+              "html": "<p>Perform <var>error</var> given <var>requested</var>.</p>"
+            },
+            {
+              "html": "<p>Return.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: <var>requested</var> is a number.</p>"
+        },
+        {
+          "html": "If <var>requested</var> is greater than <var>inputQuota</var>, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>errorInfo</var> be a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#quota-exceeded-error-information\" id=\"ref-for-quota-exceeded-error-information\">quota exceeded error information</a> with a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#quota-exceeded-error-information-requested\" id=\"ref-for-quota-exceeded-error-information-requested\">requested</a> of <var>requested</var> and a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#quota-exceeded-error-information-quota\" id=\"ref-for-quota-exceeded-error-information-quota\">quota</a> of <var>inputQuota</var>.</p>"
+            },
+            {
+              "html": "<p>Perform <var>error</var> given <var>errorInfo</var>.</p>"
+            },
+            {
+              "html": "<p>Return.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>In an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> manner, subject to the following guidelines, begin the processs of translating <var>input</var> from <var>sourceLanguage</var> into <var>targetLanguage</var>.</p>\n      <p>If <var>input</var> is the empty string, or otherwise consists of no translatable content (e.g., only contains whitespace, or control characters), then the resulting translation should be <var>input</var>. In such cases, <var>sourceLanguage</var> and <var>targetLanguage</var> should be ignored.</p>\n      <p>If (<var>sourceLanguage</var>, <var>targetLanguage</var>) <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#language-arc-can-be-fulfilled-by-the-identity-translation\" id=\"ref-for-language-arc-can-be-fulfilled-by-the-identity-translation②\">can be fulfilled by the identity translation</a>, then the resulting translation should be <var>input</var>.</p>\n      <p>The translation process must conform to the guidance given in <a href=\"https://webmachinelearning.github.io/writing-assistance-apis/#privacy\"><cite>Writing Assistance APIs</cite> § 6 Privacy considerations</a> and <a href=\"https://webmachinelearning.github.io/writing-assistance-apis/#security\"><cite>Writing Assistance APIs</cite> § 7 Security considerations</a>, notably including (but not limited to) <a href=\"https://webmachinelearning.github.io/writing-assistance-apis/#privacy-user-input\"><cite>Writing Assistance APIs</cite> § 6.4 User input</a> and <a href=\"https://webmachinelearning.github.io/writing-assistance-apis/#security-runtime\"><cite>Writing Assistance APIs</cite> § 7.2 Runtime shared resources</a>.</p>"
+        },
+        {
+          "html": "While true:",
+          "rationale": "wait",
+          "steps": [
+            {
+              "html": "<p>Wait for the next chunk of translated text to be produced, for the translation process to finish, or for the result of calling <var>stopProducing</var> to become true.</p>"
+            },
+            {
+              "html": "If such a chunk is successfully produced:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let it be represented as a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a> <var>chunk</var>.</p>"
+                },
+                {
+                  "html": "<p>Perform <var>chunkProduced</var> given <var>chunk</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, if the translation process has finished:",
+              "rationale": "perform",
+              "steps": [
+                {
+                  "html": "<p>Perform <var>done</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">Break</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Otherwise, if <var>stopProducing</var> returns true, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break①\">break</a>.</p>"
+            },
+            {
+              "html": "Otherwise, if an error occurred during translation:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let the error be represented as a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information\" id=\"ref-for-domexception-error-information①\">DOMException error information</a> <var>errorInfo</var> according to the guidance in <a href=\"https://webmachinelearning.github.io/translation-api/#translator-errors\">§ 3.4.3 Errors</a>.</p>"
+                },
+                {
+                  "html": "<p>Perform <var>error</var> given <var>errorInfo</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break②\">Break</a>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "measure translator input usage",
+      "href": "https://webmachinelearning.github.io/translation-api/#measure-translator-input-usage",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"measure-translator-input-usage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">measure translator input usage</dfn>, given: \n    <ul>\n     <li data-md=\"\">\n      <p>a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④\">string</a> <var>input</var>,</p>\n     </li><li data-md=\"\">\n      <p>a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma402/#sec-language-tags\" id=\"ref-for-sec-language-tags③\">Unicode canonicalized locale identifier</a> <var>sourceLanguage</var>,</p>\n     </li><li data-md=\"\">\n      <p>a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma402/#sec-language-tags\" id=\"ref-for-sec-language-tags④\">Unicode canonicalized locale identifier</a> <var>targetLanguage</var>, and</p>\n     </li><li data-md=\"\">\n      <p>an algorithm <var>stopMeasuring</var> that takes no arguments and returns a boolean,</p>\n    </li></ul>\n    <p>perform the following steps:</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑤\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputToModel</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined②\">implementation-defined</a> string that would be sent to the underlying model in order to <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#translate\" id=\"ref-for-translate④\">translate</a> <var>input</var> from <var>sourceLanguage</var> to <var>targetLanguage</var>.</p>\n      \n      <p>If during this process <var>stopMeasuring</var> starts returning true, then return null.</p>\n      <p>If an error occurs during this process, then return an appropriate <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information\" id=\"ref-for-domexception-error-information②\">DOMException error information</a> according to the guidance in <a href=\"https://webmachinelearning.github.io/translation-api/#translator-errors\">§ 3.4.3 Errors</a>.</p>"
+        },
+        {
+          "html": "<p>Return the amount of input usage needed to represent <var>inputToModel</var> when given to the underlying model. The exact calculation procedure is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined③\">implementation-defined</a>, subject to the following constraints.</p>\n      <p>The returned input usage must be nonnegative and finite. It must be 0, if there are no usage quotas for the translation process (i.e., if the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#translator-input-quota\" id=\"ref-for-translator-input-quota④\">input quota</a> is +∞). Otherwise, it must be positive and should be roughly proportional to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length\">length</a> of <var>inputToModel</var>.</p>\n      \n      <p>If during this process <var>stopMeasuring</var> starts returning true, then instead return null.</p>\n      <p>If an error occurs during this process, then instead return an appropriate <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information\" id=\"ref-for-domexception-error-information③\">DOMException error information</a> according to the guidance in <a href=\"https://webmachinelearning.github.io/translation-api/#translator-errors\">§ 3.4.3 Errors</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "LanguageDetector/create(options)",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetector-create",
+      "html": "The static <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LanguageDetector\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"create(options)|create()\" id=\"dom-languagedetector-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>create(<var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#create-an-ai-model-object\" id=\"ref-for-create-an-ai-model-object①\">creating an AI model object</a> given <var>options</var>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#permissiondef-language-detector\" id=\"ref-for-permissiondef-language-detector\">language-detector</a></code>\", <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#validate-and-canonicalize-language-detector-options\" id=\"ref-for-validate-and-canonicalize-language-detector-options\">validate and canonicalize language detector options</a>, <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#compute-language-detector-options-availability\" id=\"ref-for-compute-language-detector-options-availability\">compute language detector options availability</a>, <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#download-the-language-detector-model\" id=\"ref-for-download-the-language-detector-model\">download the language detector model</a>, <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#initialize-the-language-detector-model\" id=\"ref-for-initialize-the-language-detector-model\">initialize the language detector model</a>, and <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#create-the-language-detector-object\" id=\"ref-for-create-the-language-detector-object\">create the language detector object</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "validate and canonicalize language detector options",
+      "href": "https://webmachinelearning.github.io/translation-api/#validate-and-canonicalize-language-detector-options",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"validate-and-canonicalize-language-detector-options\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">validate and canonicalize language detector options</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dictdef-languagedetectorcreatecoreoptions\" id=\"ref-for-dictdef-languagedetectorcreatecoreoptions②\">LanguageDetectorCreateCoreOptions</a></code> <var>options</var>, perform the following steps. They mutate <var>options</var> in place to canonicalize language tags, and throw an exception if any are invalid.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#validate-and-canonicalize-language-tags\" id=\"ref-for-validate-and-canonicalize-language-tags②\">Validate and canonicalize language tags</a> given <var>options</var> and \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-languagedetectorcreatecoreoptions-expectedinputlanguages\" id=\"ref-for-dom-languagedetectorcreatecoreoptions-expectedinputlanguages\">expectedInputLanguages</a></code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "download the language detector model",
+      "href": "https://webmachinelearning.github.io/translation-api/#download-the-language-detector-model",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"download-the-language-detector-model\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">download the language detector model</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dictdef-languagedetectorcreatecoreoptions\" id=\"ref-for-dictdef-languagedetectorcreatecoreoptions③\">LanguageDetectorCreateCoreOptions</a></code> <var>options</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑥\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Initiate the download process for everything the user agent needs to detect the languages of input text, including all the languages in <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-languagedetectorcreatecoreoptions-expectedinputlanguages\" id=\"ref-for-dom-languagedetectorcreatecoreoptions-expectedinputlanguages①\">expectedInputLanguages</a></code>\"].</p>\n      <p>This could include both a base language detection model, and specific fine-tunings or other material to help with the languages identified in <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-languagedetectorcreatecoreoptions-expectedinputlanguages\" id=\"ref-for-dom-languagedetectorcreatecoreoptions-expectedinputlanguages②\">expectedInputLanguages</a></code>\"].</p>"
+        },
+        {
+          "html": "<p>If the download process cannot be started for any reason, then return false.</p>"
+        },
+        {
+          "html": "<p>Return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "initialize the language detector model",
+      "href": "https://webmachinelearning.github.io/translation-api/#initialize-the-language-detector-model",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-the-language-detector-model\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize the language detector model</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dictdef-languagedetectorcreatecoreoptions\" id=\"ref-for-dictdef-languagedetectorcreatecoreoptions④\">LanguageDetectorCreateCoreOptions</a></code> <var>options</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑨\">Assert</a>: these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑦\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Perform any necessary initialization operations for the AI model backing the user agent’s capabilities for detecting the languages of input text.</p>\n      <p>This could include loading the model into memory, or loading any fine-tunings necessary to support the languages identified in <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-languagedetectorcreatecoreoptions-expectedinputlanguages\" id=\"ref-for-dom-languagedetectorcreatecoreoptions-expectedinputlanguages③\">expectedInputLanguages</a></code>\"].</p>"
+        },
+        {
+          "html": "<p>If initialization failed for any reason, then return a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information\" id=\"ref-for-domexception-error-information④\">DOMException error information</a> whose <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information-name\" id=\"ref-for-domexception-error-information-name①\">name</a> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#operationerror\" id=\"ref-for-operationerror①\">OperationError</a></code>\" and whose <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information-details\" id=\"ref-for-domexception-error-information-details①\">details</a> contain appropriate detail.</p>"
+        },
+        {
+          "html": "<p>Return null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create the language detector object",
+      "href": "https://webmachinelearning.github.io/translation-api/#create-the-language-detector-object",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-the-language-detector-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create the language detector object</dfn>, given a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm①\">realm</a> <var>realm</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dictdef-languagedetectorcreatecoreoptions\" id=\"ref-for-dictdef-languagedetectorcreatecoreoptions⑤\">LanguageDetectorCreateCoreOptions</a></code> <var>options</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⓪\">Assert</a>: these steps are running on <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent①\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop\" id=\"ref-for-concept-agent-event-loop①\">event loop</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputQuota</var> be the amount of input quota that is available to the user agent for future <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#detect-languages\" id=\"ref-for-detect-languages\">language detection</a> operations. (This value is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑤\">implementation-defined</a>, and may be +∞ if there are no specific limits beyond, e.g., the user’s memory, or the limits of JavaScript strings.)</p>"
+        },
+        {
+          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#languagedetector\" id=\"ref-for-languagedetector②\">LanguageDetector</a></code> object, created in <var>realm</var>, with</p>\n      <dl class=\"props\">\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#languagedetector-expected-input-languages\" id=\"ref-for-languagedetector-expected-input-languages\">expected input languages</a>\n       </dt><dd data-md=\"\">\n        <p>the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-frozen-array\" id=\"ref-for-dfn-create-frozen-array\">creating a frozen array</a> given <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-languagedetectorcreatecoreoptions-expectedinputlanguages\" id=\"ref-for-dom-languagedetectorcreatecoreoptions-expectedinputlanguages④\">expectedInputLanguages</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is not empty</a>; otherwise null</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#languagedetector-input-quota\" id=\"ref-for-languagedetector-input-quota\">input quota</a>\n       </dt><dd data-md=\"\">\n        <p><var>inputQuota</var></p>\n      </dd></dl>"
+        }
+      ]
+    },
+    {
+      "name": "LanguageDetector/availability(options)",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetector-availability",
+      "html": "The static <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LanguageDetector\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"availability(options)|availability()\" id=\"dom-languagedetector-availability\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>availability(<var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#compute-ai-model-availability\" id=\"ref-for-compute-ai-model-availability①\">computing AI model availability</a> given <var>options</var>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#permissiondef-language-detector\" id=\"ref-for-permissiondef-language-detector①\">language-detector</a></code>\", <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#validate-and-canonicalize-language-detector-options\" id=\"ref-for-validate-and-canonicalize-language-detector-options①\">validate and canonicalize language detector options</a>, and <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#compute-language-detector-options-availability\" id=\"ref-for-compute-language-detector-options-availability①\">compute language detector options availability</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "compute language detector options availability",
+      "href": "https://webmachinelearning.github.io/translation-api/#compute-language-detector-options-availability",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-language-detector-options-availability\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute language detector options availability</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dictdef-languagedetectorcreatecoreoptions\" id=\"ref-for-dictdef-languagedetectorcreatecoreoptions⑥\">LanguageDetectorCreateCoreOptions</a></code> <var>options</var>, perform the following steps. They return either an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#enumdef-availability\" id=\"ref-for-enumdef-availability⑤\">Availability</a></code> value or null, and they mutate <var>options</var> in place to update language tags to their best-fit matches.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①①\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑧\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>If there is some error attempting to determine what language detection capabilities the user agent <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports④\">can support</a>, which the user agent believes to be transient (such that re-querying could stop producing such an error), then return null.</p>"
+        },
+        {
+          "html": "<p>Let <var>partition</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#get-the-language-availabilities-partition\" id=\"ref-for-get-the-language-availabilities-partition\">getting the language availabilities partition</a> given the purpose of detecting text written in that language.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#compute-language-availability\" id=\"ref-for-compute-language-availability\">computing language availability</a> given <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-languagedetectorcreatecoreoptions-expectedinputlanguages\" id=\"ref-for-dom-languagedetectorcreatecoreoptions-expectedinputlanguages⑤\">expectedInputLanguages</a></code>\"] and <var>partition</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "LanguageDetector/detect(input, options)",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetector-detect",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LanguageDetector\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"detect(input, options)|detect(input)\" id=\"dom-languagedetector-detect\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>detect(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "LanguageDetector/detect(input, options)",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetector-detect",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LanguageDetector\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"detect(input, options)|detect(input)\" id=\"dom-languagedetector-detect\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>detect(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①②\">Assert</a>: <var>global</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code> object.</p>"
+        },
+        {
+          "html": "<p>If <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>signals</var> be « <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#destroyablemodel-destruction-abort-controller\" id=\"ref-for-destroyablemodel-destruction-abort-controller\">destruction abort controller</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal\">signal</a> ».</p>"
+        },
+        {
+          "html": "<p>If <var>options</var>[\"<code>signal</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">append</a> it to <var>signals</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>compositeSignal</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-dependent-abort-signal\" id=\"ref-for-create-a-dependent-abort-signal\">creating a dependent abort signal</a> given <var>signals</var> using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal④\">AbortSignal</a></code> and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>compositeSignal</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted\">aborted</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> <var>compositeSignal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason\">abort reason</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> created in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant realm</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>abortedDuringOperation</var> be false.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add\">Add the following abort steps</a> to <var>compositeSignal</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>abortedDuringOperation</var> to true.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">Reject</a> <var>promise</var> with <var>compositeSignal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①\">abort reason</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>inputQuota</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#languagedetector-input-quota\" id=\"ref-for-languagedetector-input-quota②\">input quota</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⓪\">In parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>stopProducing</var> be the following steps:",
+              "rationale": "return",
+              "steps": [
+                {
+                  "html": "<p>Return <var>abortedDuringOperation</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#detect-languages\" id=\"ref-for-detect-languages①\">detecting languages</a> given <var>input</var>, <var>inputQuota</var>, and <var>stopProducing</var>.</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source\">AI task source</a> given <var>global</var> to perform the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>abortedDuringOperation</var> is true, then abort these steps.</p>"
+                },
+                {
+                  "html": "<p>Otherwise, if <var>result</var> is an <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#error-information\" id=\"ref-for-error-information②\">error information</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#convert-error-information-into-an-exception-object\" id=\"ref-for-convert-error-information-into-an-exception-object\">converting error information into an exception object</a> given <var>result</var>.</p>"
+                },
+                {
+                  "html": "Otherwise:",
+                  "rationale": "assert",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①③\">Assert</a>: <var>result</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dictdef-languagedetectionresult\" id=\"ref-for-dictdef-languagedetectionresult①\">LanguageDetectionResult</a></code> dictionaries. (It is not null, since in that case <var>abortedDuringOperation</var> would have been true.)</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">Resolve</a> <var>promise</var> with <var>result</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LanguageDetector/measureInputUsage(input, options)",
+      "href": "https://webmachinelearning.github.io/translation-api/#dom-languagedetector-measureinputusage",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LanguageDetector\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"measureInputUsage(input, options)|measureInputUsage(input)\" id=\"dom-languagedetector-measureinputusage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>measureInputUsage(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>measureUsage</var> be an algorithm step which takes argument <var>stopMeasuring</var>, and returns the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#measure-language-detector-input-usage\" id=\"ref-for-measure-language-detector-input-usage\">measuring language detector input usage</a> given <var>input</var> and <var>stopMeasuring</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#measure-ai-model-input-usage\" id=\"ref-for-measure-ai-model-input-usage①\">measuring AI model input usage</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②①\">this</a>, <var>options</var>, and <var>measureUsage</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "detect languages",
+      "href": "https://webmachinelearning.github.io/translation-api/#detect-languages",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"detect-languages\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">detect languages</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> <var>input</var>, a number <var>inputQuota</var>, and an algorithm <var>stopProducing</var> that takes no arguments and returns a boolean, perform the following steps. They will return either null, an <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#error-information\" id=\"ref-for-error-information③\">error information</a>, or a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dictdef-languagedetectionresult\" id=\"ref-for-dictdef-languagedetectionresult②\">LanguageDetectionResult</a></code> dictionaries. \n    \n    \n    <p class=\"advisement\" id=\"warning-language-detection-sum\">Because of such omitted low-probability results, the sum of all confidence values returned to the web developer could be less than 1. </p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①④\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①①\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>requested</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#measure-language-detector-input-usage\" id=\"ref-for-measure-language-detector-input-usage①\">measuring language detector input usage</a> given <var>input</var> and <var>stopProducing</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>requested</var> is null or an <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#error-information\" id=\"ref-for-error-information④\">error information</a>, then return <var>requested</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑤\">Assert</a>: <var>requested</var> is a number.</p>"
+        },
+        {
+          "html": "<p>If <var>requested</var> is greater than <var>inputQuota</var>, then return a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#quota-exceeded-error-information\" id=\"ref-for-quota-exceeded-error-information①\">quota exceeded error information</a> with a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#quota-exceeded-error-information-requested\" id=\"ref-for-quota-exceeded-error-information-requested①\">requested</a> of <var>requested</var> and a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#quota-exceeded-error-information-quota\" id=\"ref-for-quota-exceeded-error-information-quota①\">quota</a> of <var>inputQuota</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>partition</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#get-the-language-availabilities-partition\" id=\"ref-for-get-the-language-availabilities-partition①\">getting the language availabilities partition</a> given the purpose of detecting text written in that language.</p>"
+        },
+        {
+          "html": "<p>Let <var>currentlyAvailableLanguages</var> be <var>partition</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-available\" id=\"ref-for-dom-availability-available④\">available</a></code>\"].</p>"
+        },
+        {
+          "html": "<p>In an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑥\">implementation-defined</a> manner, subject to the following guidelines, let <var>rawResult</var> and <var>unknown</var> be the result of detecting the languages of <var>input</var>.</p>\n      <p><var>rawResult</var> must be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②\">map</a> which has a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key③\">key</a> for each language in <var>currentlyAvailableLanguages</var>. The <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value③\">value</a> for each such key must be a number between 0 and 1. This value must represent the implementation’s confidence that <var>input</var> is written in that language.</p>\n      <p><var>unknown</var> must be a number between 0 and 1 that represents the implementation’s confidence that <var>input</var> is not written in any of the languages in <var>currentlyAvailableLanguages</var>.</p>\n      <p>The <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values\">values</a> of <var>rawResult</var>, plus <var>unknown</var>, must sum to 1. Each such value, or <var>unknown</var>, may be 0.</p>\n      <p>If the implementation believes <var>input</var> to be written in multiple languages, then it should attempt to apportion the values of <var>rawResult</var> and <var>unknown</var> such that they are proportionate to the amount of <var>input</var> written in each detected language. The exact scheme for apportioning <var>input</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑦\">implementation-defined</a>.</p>\n      \n      <p>If <var>stopProducing</var> returns true at any point during this process, then return null.</p>\n      <p>If an error occurred during language detection, then return an <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#error-information\" id=\"ref-for-error-information⑤\">error information</a> according to the guidance in <a href=\"https://webmachinelearning.github.io/translation-api/#language-detector-errors\">§ 4.4.3 Errors</a>.</p>\n      <p>The detection process must conform to the guidance given in <a href=\"https://webmachinelearning.github.io/writing-assistance-apis/#privacy\"><cite>Writing Assistance APIs</cite> § 6 Privacy considerations</a> and <a href=\"https://webmachinelearning.github.io/writing-assistance-apis/#security\"><cite>Writing Assistance APIs</cite> § 7 Security considerations</a>, notably including (but not limited to) <a href=\"https://webmachinelearning.github.io/writing-assistance-apis/#privacy-user-input\"><cite>Writing Assistance APIs</cite> § 6.4 User input</a> and <a href=\"https://webmachinelearning.github.io/writing-assistance-apis/#security-runtime\"><cite>Writing Assistance APIs</cite> § 7.2 Runtime shared resources</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-sort-in-descending-order\" id=\"ref-for-map-sort-in-descending-order\">Sort in descending order</a> <var>rawResult</var> with a less than algorithm which given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry③\">entries</a> <var>a</var> and <var>b</var>, returns true if <var>a</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value④\">value</a> is less than <var>b</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value⑤\">value</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>results</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>cumulativeConfidence</var> be 0.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate①\">For each</a> <var>key</var> → <var>value</var> of <var>rawResult</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>value</var> is 0, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break③\">break</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>value</var> is less than <var>unknown</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break④\">break</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> «[ \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-languagedetectionresult-detectedlanguage\" id=\"ref-for-dom-languagedetectionresult-detectedlanguage\">detectedLanguage</a></code>\" → <var>key</var>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-languagedetectionresult-confidence\" id=\"ref-for-dom-languagedetectionresult-confidence\">confidence</a></code>\" → <var>value</var> ]» to <var>results</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>cumulativeConfidence</var> to <var>cumulativeConfidence</var> + <var>value</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>cumulativeConfidence</var> is greater than or equal to 0.99, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break⑤\">break</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑥\">Assert</a>: 1 − <var>cumulativeConfidence</var> is greater than or equal to <var>unknown</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑦\">Assert</a>: If <var>results</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is greater than 0, then <var>results</var>[<var>results</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> - 1][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-languagedetectionresult-confidence\" id=\"ref-for-dom-languagedetectionresult-confidence①\">confidence</a></code>\"] is greater than or equal to <var>unknown</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> «[ \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-languagedetectionresult-detectedlanguage\" id=\"ref-for-dom-languagedetectionresult-detectedlanguage①\">detectedLanguage</a></code>\" → \"<code>und</code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/translation-api/#dom-languagedetectionresult-confidence\" id=\"ref-for-dom-languagedetectionresult-confidence②\">confidence</a></code>\" → <var>unknown</var> ]» to <var>results</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>results</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "measure language detector input usage",
+      "href": "https://webmachinelearning.github.io/translation-api/#measure-language-detector-input-usage",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"measure-language-detector-input-usage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">measure language detector input usage</dfn>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑥\">string</a> <var>input</var> and an algorithm <var>stopMeasuring</var> that takes no arguments and returns a boolean, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑧\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①②\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputToModel</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①⓪\">implementation-defined</a> string that would be sent to the underlying model in order to <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#detect-languages\" id=\"ref-for-detect-languages②\">detect languages</a> given <var>input</var>.</p>\n      \n      <p>If during this process <var>stopMeasuring</var> starts returning true, then return null.</p>\n      <p>If an error occurs during this process, then return an appropriate <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information\" id=\"ref-for-domexception-error-information⑤\">DOMException error information</a> according to the guidance in <a href=\"https://webmachinelearning.github.io/translation-api/#language-detector-errors\">§ 4.4.3 Errors</a>.</p>"
+        },
+        {
+          "html": "<p>Return the amount of input usage needed to represent <var>inputToModel</var> when given to the underlying model. The exact calculation procedure is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①①\">implementation-defined</a>, subject to the following constraints.</p>\n      <p>The returned input usage must be nonnegative and finite. It must be 0, if there are no usage quotas for the translation process (i.e., if the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/translation-api/#languagedetector-input-quota\" id=\"ref-for-languagedetector-input-quota③\">input quota</a> is +∞). Otherwise, it must be positive and should be roughly proportional to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length②\">length</a> of <var>inputToModel</var>.</p>\n      \n      <p>If during this process <var>stopMeasuring</var> starts returning true, then instead return null.</p>\n      <p>If an error occurs during this process, then instead return an appropriate <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information\" id=\"ref-for-domexception-error-information⑥\">DOMException error information</a> according to the guidance in <a href=\"https://webmachinelearning.github.io/translation-api/#language-detector-errors\">§ 4.4.3 Errors</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

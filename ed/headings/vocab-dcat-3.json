@@ -1,0 +1,1240 @@
+{
+  "spec": {
+    "title": "Data Catalog Vocabulary (DCAT) - Version 3",
+    "url": "https://w3c.github.io/dxwg/dcat/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/dxwg/dcat/#title",
+      "level": 1,
+      "title": "Data Catalog Vocabulary (DCAT) - Version 3"
+    },
+    {
+      "id": "dcat_history",
+      "href": "https://w3c.github.io/dxwg/dcat/#dcat_history",
+      "level": 3,
+      "title": "DCAT history"
+    },
+    {
+      "id": "external_terms",
+      "href": "https://w3c.github.io/dxwg/dcat/#external_terms",
+      "level": 3,
+      "title": "External terms"
+    },
+    {
+      "id": "please_send_comments",
+      "href": "https://w3c.github.io/dxwg/dcat/#please_send_comments",
+      "level": 3,
+      "title": "Please send comments"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/dxwg/dcat/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/dxwg/dcat/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "motivation",
+      "href": "https://w3c.github.io/dxwg/dcat/#motivation",
+      "level": 2,
+      "title": "Motivation for change",
+      "number": "2"
+    },
+    {
+      "id": "namespaces",
+      "href": "https://w3c.github.io/dxwg/dcat/#namespaces",
+      "level": 2,
+      "title": "Namespaces",
+      "number": "3"
+    },
+    {
+      "id": "normative-namespaces",
+      "href": "https://w3c.github.io/dxwg/dcat/#normative-namespaces",
+      "level": 3,
+      "title": "Normative namespaces",
+      "number": "3.1"
+    },
+    {
+      "id": "non-normative-namespaces",
+      "href": "https://w3c.github.io/dxwg/dcat/#non-normative-namespaces",
+      "level": 3,
+      "title": "Non-normative namespaces",
+      "number": "3.2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/dxwg/dcat/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "4"
+    },
+    {
+      "id": "vocabulary-overview",
+      "href": "https://w3c.github.io/dxwg/dcat/#vocabulary-overview",
+      "level": 2,
+      "title": "Vocabulary overview",
+      "number": "5"
+    },
+    {
+      "id": "dcat-scope",
+      "href": "https://w3c.github.io/dxwg/dcat/#dcat-scope",
+      "level": 3,
+      "title": "DCAT scope",
+      "number": "5.1"
+    },
+    {
+      "id": "dcat-rdf",
+      "href": "https://w3c.github.io/dxwg/dcat/#dcat-rdf",
+      "level": 3,
+      "title": "RDF considerations",
+      "number": "5.2"
+    },
+    {
+      "id": "basic-example",
+      "href": "https://w3c.github.io/dxwg/dcat/#basic-example",
+      "level": 3,
+      "title": "Basic example",
+      "number": "5.3"
+    },
+    {
+      "id": "classifying-datasets",
+      "href": "https://w3c.github.io/dxwg/dcat/#classifying-datasets",
+      "level": 3,
+      "title": "Classifying datasets thematically",
+      "number": "5.4"
+    },
+    {
+      "id": "classifying-dataset-types",
+      "href": "https://w3c.github.io/dxwg/dcat/#classifying-dataset-types",
+      "level": 3,
+      "title": "Classifying dataset types",
+      "number": "5.5"
+    },
+    {
+      "id": "describing-catalog-records-metadata",
+      "href": "https://w3c.github.io/dxwg/dcat/#describing-catalog-records-metadata",
+      "level": 3,
+      "title": "Describing catalog records metadata",
+      "number": "5.6"
+    },
+    {
+      "id": "example-landing-page",
+      "href": "https://w3c.github.io/dxwg/dcat/#example-landing-page",
+      "level": 3,
+      "title": "Dataset available only behind some Web page",
+      "number": "5.7"
+    },
+    {
+      "id": "a-dataset-available-as-download-and-behind-some-web-page",
+      "href": "https://w3c.github.io/dxwg/dcat/#a-dataset-available-as-download-and-behind-some-web-page",
+      "level": 3,
+      "title": "A dataset available as a download and behind some Web page",
+      "number": "5.8"
+    },
+    {
+      "id": "a-dataset-available-from-a-service",
+      "href": "https://w3c.github.io/dxwg/dcat/#a-dataset-available-from-a-service",
+      "level": 3,
+      "title": "A dataset available through a service",
+      "number": "5.9"
+    },
+    {
+      "id": "vocabulary-specification",
+      "href": "https://w3c.github.io/dxwg/dcat/#vocabulary-specification",
+      "level": 2,
+      "title": "Vocabulary specification",
+      "number": "6"
+    },
+    {
+      "id": "RDF-representation",
+      "href": "https://w3c.github.io/dxwg/dcat/#RDF-representation",
+      "level": 3,
+      "title": "RDF representation",
+      "number": "6.1"
+    },
+    {
+      "id": "external-vocab",
+      "href": "https://w3c.github.io/dxwg/dcat/#external-vocab",
+      "level": 3,
+      "title": "Elements from other vocabularies",
+      "number": "6.2"
+    },
+    {
+      "id": "complements",
+      "href": "https://w3c.github.io/dxwg/dcat/#complements",
+      "level": 4,
+      "title": "Complementary vocabularies",
+      "number": "6.2.1"
+    },
+    {
+      "id": "dependencies",
+      "href": "https://w3c.github.io/dxwg/dcat/#dependencies",
+      "level": 4,
+      "title": "Element definitions",
+      "number": "6.2.2"
+    },
+    {
+      "id": "Class:Catalog",
+      "href": "https://w3c.github.io/dxwg/dcat/#Class%3ACatalog",
+      "level": 3,
+      "title": "Class: Catalog",
+      "number": "6.3"
+    },
+    {
+      "id": "Property:catalog_homepage",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Acatalog_homepage",
+      "level": 4,
+      "title": "Property: homepage",
+      "number": "6.3.1"
+    },
+    {
+      "id": "Property:catalog_themes",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Acatalog_themes",
+      "level": 4,
+      "title": "Property: themes",
+      "number": "6.3.2"
+    },
+    {
+      "id": "Property:catalog_resource",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Acatalog_resource",
+      "level": 4,
+      "title": "Property: resource",
+      "number": "6.3.3"
+    },
+    {
+      "id": "Property:catalog_dataset",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Acatalog_dataset",
+      "level": 4,
+      "title": "Property: dataset",
+      "number": "6.3.4"
+    },
+    {
+      "id": "Property:catalog_service",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Acatalog_service",
+      "level": 4,
+      "title": "Property: service",
+      "number": "6.3.5"
+    },
+    {
+      "id": "Property:catalog_catalog",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Acatalog_catalog",
+      "level": 4,
+      "title": "Property: catalog",
+      "number": "6.3.6"
+    },
+    {
+      "id": "Property:catalog_catalog_record",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Acatalog_catalog_record",
+      "level": 4,
+      "title": "Property: catalog record",
+      "number": "6.3.7"
+    },
+    {
+      "id": "Class:Resource",
+      "href": "https://w3c.github.io/dxwg/dcat/#Class%3AResource",
+      "level": 3,
+      "title": "Class: Cataloged Resource",
+      "number": "6.4"
+    },
+    {
+      "id": "Property:resource_access_rights",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_access_rights",
+      "level": 4,
+      "title": "Property: access rights",
+      "number": "6.4.1"
+    },
+    {
+      "id": "Property:resource_conforms_to",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_conforms_to",
+      "level": 4,
+      "title": "Property: conforms to",
+      "number": "6.4.2"
+    },
+    {
+      "id": "Property:resource_contact_point",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_contact_point",
+      "level": 4,
+      "title": "Property: contact point",
+      "number": "6.4.3"
+    },
+    {
+      "id": "Property:resource_creator",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_creator",
+      "level": 4,
+      "title": "Property: creator",
+      "number": "6.4.4"
+    },
+    {
+      "id": "Property:resource_description",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_description",
+      "level": 4,
+      "title": "Property: description",
+      "number": "6.4.5"
+    },
+    {
+      "id": "Property:resource_title",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_title",
+      "level": 4,
+      "title": "Property: title",
+      "number": "6.4.6"
+    },
+    {
+      "id": "Property:resource_release_date",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_release_date",
+      "level": 4,
+      "title": "Property: release date",
+      "number": "6.4.7"
+    },
+    {
+      "id": "Property:resource_update_date",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_update_date",
+      "level": 4,
+      "title": "Property: update/modification date",
+      "number": "6.4.8"
+    },
+    {
+      "id": "Property:resource_language",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_language",
+      "level": 4,
+      "title": "Property: language",
+      "number": "6.4.9"
+    },
+    {
+      "id": "Property:resource_publisher",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_publisher",
+      "level": 4,
+      "title": "Property: publisher",
+      "number": "6.4.10"
+    },
+    {
+      "id": "Property:resource_identifier",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_identifier",
+      "level": 4,
+      "title": "Property: identifier",
+      "number": "6.4.11"
+    },
+    {
+      "id": "Property:resource_theme",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_theme",
+      "level": 4,
+      "title": "Property: theme/category",
+      "number": "6.4.12"
+    },
+    {
+      "id": "Property:resource_type",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_type",
+      "level": 4,
+      "title": "Property: type/genre",
+      "number": "6.4.13"
+    },
+    {
+      "id": "Property:resource_relation",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_relation",
+      "level": 4,
+      "title": "Property: relation",
+      "number": "6.4.14"
+    },
+    {
+      "id": "Property:resource_qualified_relation",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_qualified_relation",
+      "level": 4,
+      "title": "Property: qualified relation",
+      "number": "6.4.15"
+    },
+    {
+      "id": "Property:resource_keyword",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_keyword",
+      "level": 4,
+      "title": "Property: keyword/tag",
+      "number": "6.4.16"
+    },
+    {
+      "id": "Property:resource_landing_page",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_landing_page",
+      "level": 4,
+      "title": "Property: landing page",
+      "number": "6.4.17"
+    },
+    {
+      "id": "Property:resource_qualified_attribution",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_qualified_attribution",
+      "level": 4,
+      "title": "Property: qualified attribution",
+      "number": "6.4.18"
+    },
+    {
+      "id": "Property:resource_license",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_license",
+      "level": 4,
+      "title": "Property: license",
+      "number": "6.4.19"
+    },
+    {
+      "id": "Property:resource_rights",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_rights",
+      "level": 4,
+      "title": "Property: rights",
+      "number": "6.4.20"
+    },
+    {
+      "id": "Property:resource_has_part",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_has_part",
+      "level": 4,
+      "title": "Property: has part",
+      "number": "6.4.21"
+    },
+    {
+      "id": "Property:resource_has_policy",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_has_policy",
+      "level": 4,
+      "title": "Property: has policy",
+      "number": "6.4.22"
+    },
+    {
+      "id": "Property:resource_is_referenced_by",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_is_referenced_by",
+      "level": 4,
+      "title": "Property: is referenced by",
+      "number": "6.4.23"
+    },
+    {
+      "id": "Property:resource_previous_version",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_previous_version",
+      "level": 4,
+      "title": "Property: previous version",
+      "number": "6.4.24"
+    },
+    {
+      "id": "Property:resource_has_version",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_has_version",
+      "level": 4,
+      "title": "Property: has version",
+      "number": "6.4.25"
+    },
+    {
+      "id": "Property:resource_has_current_version",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_has_current_version",
+      "level": 4,
+      "title": "Property: current version",
+      "number": "6.4.26"
+    },
+    {
+      "id": "Property:resource_replaces",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_replaces",
+      "level": 4,
+      "title": "Property: replaces",
+      "number": "6.4.27"
+    },
+    {
+      "id": "Property:resource_version",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_version",
+      "level": 4,
+      "title": "Property: version",
+      "number": "6.4.28"
+    },
+    {
+      "id": "Property:resource_version_notes",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_version_notes",
+      "level": 4,
+      "title": "Property: version notes",
+      "number": "6.4.29"
+    },
+    {
+      "id": "Property:resource_status",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_status",
+      "level": 4,
+      "title": "Property: status",
+      "number": "6.4.30"
+    },
+    {
+      "id": "Property:resource_first",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_first",
+      "level": 4,
+      "title": "Property: first",
+      "number": "6.4.31"
+    },
+    {
+      "id": "Property:resource_last",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_last",
+      "level": 4,
+      "title": "Property: last",
+      "number": "6.4.32"
+    },
+    {
+      "id": "Property:resource_previous",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aresource_previous",
+      "level": 4,
+      "title": "Property: previous",
+      "number": "6.4.33"
+    },
+    {
+      "id": "Class:Catalog_Record",
+      "href": "https://w3c.github.io/dxwg/dcat/#Class%3ACatalog_Record",
+      "level": 3,
+      "title": "Class: Catalog Record",
+      "number": "6.5"
+    },
+    {
+      "id": "Property:record_title",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Arecord_title",
+      "level": 4,
+      "title": "Property: title",
+      "number": "6.5.1"
+    },
+    {
+      "id": "Property:record_description",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Arecord_description",
+      "level": 4,
+      "title": "Property: description",
+      "number": "6.5.2"
+    },
+    {
+      "id": "Property:record_listing_date",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Arecord_listing_date",
+      "level": 4,
+      "title": "Property: listing date",
+      "number": "6.5.3"
+    },
+    {
+      "id": "Property:record_update_date",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Arecord_update_date",
+      "level": 4,
+      "title": "Property: update/modification date",
+      "number": "6.5.4"
+    },
+    {
+      "id": "Property:record_primary_topic",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Arecord_primary_topic",
+      "level": 4,
+      "title": "Property: primary topic",
+      "number": "6.5.5"
+    },
+    {
+      "id": "Property:record_conforms_to",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Arecord_conforms_to",
+      "level": 4,
+      "title": "Property: conforms to",
+      "number": "6.5.6"
+    },
+    {
+      "id": "Class:Dataset",
+      "href": "https://w3c.github.io/dxwg/dcat/#Class%3ADataset",
+      "level": 3,
+      "title": "Class: Dataset",
+      "number": "6.6"
+    },
+    {
+      "id": "Property:dataset_distribution",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adataset_distribution",
+      "level": 4,
+      "title": "Property: distribution",
+      "number": "6.6.1"
+    },
+    {
+      "id": "Property:dataset_frequency",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adataset_frequency",
+      "level": 4,
+      "title": "Property: frequency",
+      "number": "6.6.2"
+    },
+    {
+      "id": "Property:dataset_in_series",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adataset_in_series",
+      "level": 4,
+      "title": "Property: in series",
+      "number": "6.6.3"
+    },
+    {
+      "id": "Property:dataset_spatial",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adataset_spatial",
+      "level": 4,
+      "title": "Property: spatial/geographical coverage",
+      "number": "6.6.4"
+    },
+    {
+      "id": "Property:dataset_spatial_resolution",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adataset_spatial_resolution",
+      "level": 4,
+      "title": "Property: spatial resolution",
+      "number": "6.6.5"
+    },
+    {
+      "id": "Property:dataset_temporal",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adataset_temporal",
+      "level": 4,
+      "title": "Property: temporal coverage",
+      "number": "6.6.6"
+    },
+    {
+      "id": "Property:dataset_temporal_resolution",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adataset_temporal_resolution",
+      "level": 4,
+      "title": "Property: temporal resolution",
+      "number": "6.6.7"
+    },
+    {
+      "id": "Property:dataset_was_generated_by",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adataset_was_generated_by",
+      "level": 4,
+      "title": "Property: was generated by",
+      "number": "6.6.8"
+    },
+    {
+      "id": "Class:Dataset_Series",
+      "href": "https://w3c.github.io/dxwg/dcat/#Class%3ADataset_Series",
+      "level": 3,
+      "title": "Class: Dataset Series",
+      "number": "6.7"
+    },
+    {
+      "id": "Class:Distribution",
+      "href": "https://w3c.github.io/dxwg/dcat/#Class%3ADistribution",
+      "level": 3,
+      "title": "Class: Distribution",
+      "number": "6.8"
+    },
+    {
+      "id": "Property:distribution_title",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_title",
+      "level": 4,
+      "title": "Property: title",
+      "number": "6.8.1"
+    },
+    {
+      "id": "Property:distribution_description",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_description",
+      "level": 4,
+      "title": "Property: description",
+      "number": "6.8.2"
+    },
+    {
+      "id": "Property:distribution_release_date",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_release_date",
+      "level": 4,
+      "title": "Property: release date",
+      "number": "6.8.3"
+    },
+    {
+      "id": "Property:distribution_update_date",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_update_date",
+      "level": 4,
+      "title": "Property: update/modification date",
+      "number": "6.8.4"
+    },
+    {
+      "id": "Property:distribution_license",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_license",
+      "level": 4,
+      "title": "Property: license",
+      "number": "6.8.5"
+    },
+    {
+      "id": "Property:distribution_access_rights",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_access_rights",
+      "level": 4,
+      "title": "Property: access rights",
+      "number": "6.8.6"
+    },
+    {
+      "id": "Property:distribution_rights",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_rights",
+      "level": 4,
+      "title": "Property: rights",
+      "number": "6.8.7"
+    },
+    {
+      "id": "Property:distribution_has_policy",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_has_policy",
+      "level": 4,
+      "title": "Property: has policy",
+      "number": "6.8.8"
+    },
+    {
+      "id": "Property:distribution_access_url",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_access_url",
+      "level": 4,
+      "title": "Property: access URL",
+      "number": "6.8.9"
+    },
+    {
+      "id": "Property:distribution_access_service",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_access_service",
+      "level": 4,
+      "title": "Property: access service",
+      "number": "6.8.10"
+    },
+    {
+      "id": "Property:distribution_download_url",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_download_url",
+      "level": 4,
+      "title": "Property: download URL",
+      "number": "6.8.11"
+    },
+    {
+      "id": "Property:distribution_size",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_size",
+      "level": 4,
+      "title": "Property: byte size",
+      "number": "6.8.12"
+    },
+    {
+      "id": "Property:distribution_spatial_resolution",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_spatial_resolution",
+      "level": 4,
+      "title": "Property: spatial resolution",
+      "number": "6.8.13"
+    },
+    {
+      "id": "Property:distribution_temporal_resolution",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_temporal_resolution",
+      "level": 4,
+      "title": "Property: temporal resolution",
+      "number": "6.8.14"
+    },
+    {
+      "id": "Property:distribution_conforms_to",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_conforms_to",
+      "level": 4,
+      "title": "Property: conforms to",
+      "number": "6.8.15"
+    },
+    {
+      "id": "Property:distribution_media_type",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_media_type",
+      "level": 4,
+      "title": "Property: media type",
+      "number": "6.8.16"
+    },
+    {
+      "id": "Property:distribution_format",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_format",
+      "level": 4,
+      "title": "Property: format",
+      "number": "6.8.17"
+    },
+    {
+      "id": "Property:distribution_compression_format",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_compression_format",
+      "level": 4,
+      "title": "Property: compression format",
+      "number": "6.8.18"
+    },
+    {
+      "id": "Property:distribution_packaging_format",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_packaging_format",
+      "level": 4,
+      "title": "Property: packaging format",
+      "number": "6.8.19"
+    },
+    {
+      "id": "Property:distribution_checksum",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adistribution_checksum",
+      "level": 4,
+      "title": "Property: checksum",
+      "number": "6.8.20"
+    },
+    {
+      "id": "Class:Data_Service",
+      "href": "https://w3c.github.io/dxwg/dcat/#Class%3AData_Service",
+      "level": 3,
+      "title": "Class: Data Service",
+      "number": "6.9"
+    },
+    {
+      "id": "Property:data_service_endpoint_url",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adata_service_endpoint_url",
+      "level": 4,
+      "title": "Property: endpoint URL",
+      "number": "6.9.1"
+    },
+    {
+      "id": "Property:data_service_endpoint_description",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adata_service_endpoint_description",
+      "level": 4,
+      "title": "Property: endpoint description",
+      "number": "6.9.2"
+    },
+    {
+      "id": "Property:data_service_serves_dataset",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Adata_service_serves_dataset",
+      "level": 4,
+      "title": "Property: serves dataset",
+      "number": "6.9.3"
+    },
+    {
+      "id": "Class:Concept_Scheme",
+      "href": "https://w3c.github.io/dxwg/dcat/#Class%3AConcept_Scheme",
+      "level": 3,
+      "title": "Class: Concept Scheme",
+      "number": "6.10"
+    },
+    {
+      "id": "Class:Concept",
+      "href": "https://w3c.github.io/dxwg/dcat/#Class%3AConcept",
+      "level": 3,
+      "title": "Class: Concept",
+      "number": "6.11"
+    },
+    {
+      "id": "Class:Organization_Person",
+      "href": "https://w3c.github.io/dxwg/dcat/#Class%3AOrganization_Person",
+      "level": 3,
+      "title": "Class: Organization/Person",
+      "number": "6.12"
+    },
+    {
+      "id": "Class:Relationship",
+      "href": "https://w3c.github.io/dxwg/dcat/#Class%3ARelationship",
+      "level": 3,
+      "title": "Class: Relationship",
+      "number": "6.13"
+    },
+    {
+      "id": "Property:relationship_relation",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Arelationship_relation",
+      "level": 4,
+      "title": "Property: relation",
+      "number": "6.13.1"
+    },
+    {
+      "id": "Property:relationship_hadRole",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Arelationship_hadRole",
+      "level": 4,
+      "title": "Property: had role",
+      "number": "6.13.2"
+    },
+    {
+      "id": "Class:Role",
+      "href": "https://w3c.github.io/dxwg/dcat/#Class%3ARole",
+      "level": 3,
+      "title": "Class: Role",
+      "number": "6.14"
+    },
+    {
+      "id": "Class:Period_of_Time",
+      "href": "https://w3c.github.io/dxwg/dcat/#Class%3APeriod_of_Time",
+      "level": 3,
+      "title": "Class: Period of Time",
+      "number": "6.15"
+    },
+    {
+      "id": "Property:period_start_date",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aperiod_start_date",
+      "level": 4,
+      "title": "Property: start date",
+      "number": "6.15.1"
+    },
+    {
+      "id": "Property:period_end_date",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aperiod_end_date",
+      "level": 4,
+      "title": "Property: end date",
+      "number": "6.15.2"
+    },
+    {
+      "id": "Property:period_has_beginning",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aperiod_has_beginning",
+      "level": 4,
+      "title": "Property: beginning",
+      "number": "6.15.3"
+    },
+    {
+      "id": "Property:period_has_end",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Aperiod_has_end",
+      "level": 4,
+      "title": "Property: end",
+      "number": "6.15.4"
+    },
+    {
+      "id": "Class:Location",
+      "href": "https://w3c.github.io/dxwg/dcat/#Class%3ALocation",
+      "level": 3,
+      "title": "Class: Location",
+      "number": "6.16"
+    },
+    {
+      "id": "Property:location_geometry",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Alocation_geometry",
+      "level": 4,
+      "title": "Property: geometry",
+      "number": "6.16.1"
+    },
+    {
+      "id": "Property:location_bbox",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Alocation_bbox",
+      "level": 4,
+      "title": "Property: bounding box",
+      "number": "6.16.2"
+    },
+    {
+      "id": "Property:location_centroid",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Alocation_centroid",
+      "level": 4,
+      "title": "Property: centroid",
+      "number": "6.16.3"
+    },
+    {
+      "id": "Class:Checksum",
+      "href": "https://w3c.github.io/dxwg/dcat/#Class%3AChecksum",
+      "level": 3,
+      "title": "Class: Checksum",
+      "number": "6.17"
+    },
+    {
+      "id": "Property:checksum_algorithm",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Achecksum_algorithm",
+      "level": 4,
+      "title": "Property: algorithm",
+      "number": "6.17.1"
+    },
+    {
+      "id": "Property:checksum_checksum_value",
+      "href": "https://w3c.github.io/dxwg/dcat/#Property%3Achecksum_checksum_value",
+      "level": 4,
+      "title": "Property: checksum value",
+      "number": "6.17.2"
+    },
+    {
+      "id": "inverse-properties",
+      "href": "https://w3c.github.io/dxwg/dcat/#inverse-properties",
+      "level": 2,
+      "title": "Use of inverse properties",
+      "number": "7"
+    },
+    {
+      "id": "dereferenceable-identifiers",
+      "href": "https://w3c.github.io/dxwg/dcat/#dereferenceable-identifiers",
+      "level": 2,
+      "title": "Dereferenceable identifiers",
+      "number": "8"
+    },
+    {
+      "id": "identifiers-type",
+      "href": "https://w3c.github.io/dxwg/dcat/#identifiers-type",
+      "level": 3,
+      "title": "Indicating common identifier types",
+      "number": "8.1"
+    },
+    {
+      "id": "license-rights",
+      "href": "https://w3c.github.io/dxwg/dcat/#license-rights",
+      "level": 2,
+      "title": "License and rights statements",
+      "number": "9"
+    },
+    {
+      "id": "time-and-space",
+      "href": "https://w3c.github.io/dxwg/dcat/#time-and-space",
+      "level": 2,
+      "title": "10. Time and space"
+    },
+    {
+      "id": "temporal-properties",
+      "href": "https://w3c.github.io/dxwg/dcat/#temporal-properties",
+      "level": 3,
+      "title": "Temporal properties",
+      "number": "10.1"
+    },
+    {
+      "id": "spatial-properties",
+      "href": "https://w3c.github.io/dxwg/dcat/#spatial-properties",
+      "level": 3,
+      "title": "Spatial properties",
+      "number": "10.2"
+    },
+    {
+      "id": "dataset-versions",
+      "href": "https://w3c.github.io/dxwg/dcat/#dataset-versions",
+      "level": 2,
+      "title": "11. Versioning"
+    },
+    {
+      "id": "version-relationships",
+      "href": "https://w3c.github.io/dxwg/dcat/#version-relationships",
+      "level": 3,
+      "title": "Relationships between versions",
+      "number": "11.1"
+    },
+    {
+      "id": "version-history",
+      "href": "https://w3c.github.io/dxwg/dcat/#version-history",
+      "level": 4,
+      "title": "Version chains and hierarchies",
+      "number": "11.1.1"
+    },
+    {
+      "id": "version-replace",
+      "href": "https://w3c.github.io/dxwg/dcat/#version-replace",
+      "level": 4,
+      "title": "Versions replaced by other ones",
+      "number": "11.1.2"
+    },
+    {
+      "id": "version-info",
+      "href": "https://w3c.github.io/dxwg/dcat/#version-info",
+      "level": 3,
+      "title": "Version information",
+      "number": "11.2"
+    },
+    {
+      "id": "life-cycle",
+      "href": "https://w3c.github.io/dxwg/dcat/#life-cycle",
+      "level": 3,
+      "title": "Resource life-cycle",
+      "number": "11.3"
+    },
+    {
+      "id": "versioning-complementary-approaches",
+      "href": "https://w3c.github.io/dxwg/dcat/#versioning-complementary-approaches",
+      "level": 3,
+      "title": "Complementary approaches to versioning",
+      "number": "11.4"
+    },
+    {
+      "id": "dataset-series",
+      "href": "https://w3c.github.io/dxwg/dcat/#dataset-series",
+      "level": 2,
+      "title": "12. Dataset series"
+    },
+    {
+      "id": "dataset-series-specification",
+      "href": "https://w3c.github.io/dxwg/dcat/#dataset-series-specification",
+      "level": 3,
+      "title": "How to specify dataset series",
+      "number": "12.1"
+    },
+    {
+      "id": "dataset-series-properties",
+      "href": "https://w3c.github.io/dxwg/dcat/#dataset-series-properties",
+      "level": 3,
+      "title": "Dataset series metadata",
+      "number": "12.2"
+    },
+    {
+      "id": "dataset-series-before-dcat3",
+      "href": "https://w3c.github.io/dxwg/dcat/#dataset-series-before-dcat3",
+      "level": 3,
+      "title": "Dataset series in existing DCAT implementations",
+      "number": "12.3"
+    },
+    {
+      "id": "data-citation",
+      "href": "https://w3c.github.io/dxwg/dcat/#data-citation",
+      "level": 2,
+      "title": "13. Data citation"
+    },
+    {
+      "id": "quality-information",
+      "href": "https://w3c.github.io/dxwg/dcat/#quality-information",
+      "level": 2,
+      "title": "14. Quality information"
+    },
+    {
+      "id": "quality-example1",
+      "href": "https://w3c.github.io/dxwg/dcat/#quality-example1",
+      "level": 3,
+      "title": "Providing quality information",
+      "number": "14.1"
+    },
+    {
+      "id": "quality-conformance",
+      "href": "https://w3c.github.io/dxwg/dcat/#quality-conformance",
+      "level": 3,
+      "title": "Documenting conformance to standards",
+      "number": "14.2"
+    },
+    {
+      "id": "quality-conformance-statement",
+      "href": "https://w3c.github.io/dxwg/dcat/#quality-conformance-statement",
+      "level": 4,
+      "title": "Conformance to a standard",
+      "number": "14.2.1"
+    },
+    {
+      "id": "quality-conformance-degree",
+      "href": "https://w3c.github.io/dxwg/dcat/#quality-conformance-degree",
+      "level": 4,
+      "title": "Degree of conformance",
+      "number": "14.2.2"
+    },
+    {
+      "id": "quality-conformance-test-results",
+      "href": "https://w3c.github.io/dxwg/dcat/#quality-conformance-test-results",
+      "level": 4,
+      "title": "Conformance test results",
+      "number": "14.2.3"
+    },
+    {
+      "id": "qualified-forms",
+      "href": "https://w3c.github.io/dxwg/dcat/#qualified-forms",
+      "level": 2,
+      "title": "15. Qualified relations"
+    },
+    {
+      "id": "qualified-attribution",
+      "href": "https://w3c.github.io/dxwg/dcat/#qualified-attribution",
+      "level": 3,
+      "title": "Relationships between datasets and agents",
+      "number": "15.1"
+    },
+    {
+      "id": "qualified-relationship",
+      "href": "https://w3c.github.io/dxwg/dcat/#qualified-relationship",
+      "level": 3,
+      "title": "Relationships between datasets and other resources",
+      "number": "15.2"
+    },
+    {
+      "id": "profiles",
+      "href": "https://w3c.github.io/dxwg/dcat/#profiles",
+      "level": 2,
+      "title": "16. DCAT Profiles"
+    },
+    {
+      "id": "security_and_privacy",
+      "href": "https://w3c.github.io/dxwg/dcat/#security_and_privacy",
+      "level": 2,
+      "title": "17. Security and Privacy Considerations"
+    },
+    {
+      "id": "accessibility",
+      "href": "https://w3c.github.io/dxwg/dcat/#accessibility",
+      "level": 2,
+      "title": "18. Accessibility Considerations"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://w3c.github.io/dxwg/dcat/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "A"
+    },
+    {
+      "id": "dcat-sdo",
+      "href": "https://w3c.github.io/dxwg/dcat/#dcat-sdo",
+      "level": 2,
+      "title": "Alignment with Schema.org",
+      "number": "B"
+    },
+    {
+      "id": "collection-of-examples",
+      "href": "https://w3c.github.io/dxwg/dcat/#collection-of-examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "C"
+    },
+    {
+      "id": "examples-bag-of-files",
+      "href": "https://w3c.github.io/dxwg/dcat/#examples-bag-of-files",
+      "level": 3,
+      "title": "Loosely structured catalog",
+      "number": "C.1"
+    },
+    {
+      "id": "examples-dataset-provenance",
+      "href": "https://w3c.github.io/dxwg/dcat/#examples-dataset-provenance",
+      "level": 3,
+      "title": "Dataset provenance",
+      "number": "C.2"
+    },
+    {
+      "id": "examples-dataset-publication",
+      "href": "https://w3c.github.io/dxwg/dcat/#examples-dataset-publication",
+      "level": 3,
+      "title": "Link datasets and publications",
+      "number": "C.3"
+    },
+    {
+      "id": "examples-data-service",
+      "href": "https://w3c.github.io/dxwg/dcat/#examples-data-service",
+      "level": 3,
+      "title": "Data services",
+      "number": "C.4"
+    },
+    {
+      "id": "examples-compressed-and-packaged-distributions",
+      "href": "https://w3c.github.io/dxwg/dcat/#examples-compressed-and-packaged-distributions",
+      "level": 3,
+      "title": "Compressed and packaged distributions",
+      "number": "C.5"
+    },
+    {
+      "id": "changes",
+      "href": "https://w3c.github.io/dxwg/dcat/#changes",
+      "level": 2,
+      "title": "Change history",
+      "number": "D"
+    },
+    {
+      "id": "changes-since-20240118",
+      "href": "https://w3c.github.io/dxwg/dcat/#changes-since-20240118",
+      "level": 2,
+      "title": "Changes since the Candidate Recommendation Snapshot 18 January 2024",
+      "number": "E"
+    },
+    {
+      "id": "changes-since-20220510",
+      "href": "https://w3c.github.io/dxwg/dcat/#changes-since-20220510",
+      "level": 2,
+      "title": "Changes since the fourth public working draft of 10 May 2022",
+      "number": "F"
+    },
+    {
+      "id": "changes-since-20220111",
+      "href": "https://w3c.github.io/dxwg/dcat/#changes-since-20220111",
+      "level": 2,
+      "title": "Changes since the third public working draft of 11 January 2022",
+      "number": "G"
+    },
+    {
+      "id": "changes-since-20210504",
+      "href": "https://w3c.github.io/dxwg/dcat/#changes-since-20210504",
+      "level": 2,
+      "title": "Changes since the second public working draft of 4 May 2021",
+      "number": "H"
+    },
+    {
+      "id": "changes-since-20201217",
+      "href": "https://w3c.github.io/dxwg/dcat/#changes-since-20201217",
+      "level": 2,
+      "title": "Changes since the first public working draft of 17 December 2020",
+      "number": "I"
+    },
+    {
+      "id": "changes-since-20200204",
+      "href": "https://w3c.github.io/dxwg/dcat/#changes-since-20200204",
+      "level": 2,
+      "title": "Changes since the W3C Recommendation of 4 February 2020",
+      "number": "J"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/dxwg/dcat/#references",
+      "level": 2,
+      "title": "References",
+      "number": "K"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/dxwg/dcat/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "K.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/dxwg/dcat/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "K.2"
+    }
+  ]
+}

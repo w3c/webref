@@ -1,0 +1,39 @@
+{
+  "name": "LanguageDetector",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Translator and Language Detector APIs",
+      "url": "https://webmachinelearning.github.io/translation-api/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface LanguageDetector {\n  static Promise<LanguageDetector> create(\n    optional LanguageDetectorCreateOptions options = {}\n  );\n  static Promise<Availability> availability(\n    optional LanguageDetectorCreateCoreOptions options = {}\n  );\n\n  Promise<sequence<LanguageDetectionResult>> detect(\n    DOMString input,\n    optional LanguageDetectorDetectOptions options = {}\n  );\n\n  readonly attribute FrozenArray<DOMString>? expectedInputLanguages;\n\n  Promise<double> measureInputUsage(\n    DOMString input,\n    optional LanguageDetectorDetectOptions options = {}\n  );\n  readonly attribute unrestricted double inputQuota;\n};",
+    "href": "https://webmachinelearning.github.io/translation-api/#languagedetector"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Translator and Language Detector APIs",
+        "url": "https://webmachinelearning.github.io/translation-api/"
+      },
+      "fragment": "LanguageDetector includes DestroyableModel;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "DestroyableModel",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        "fragment": "interface mixin DestroyableModel {\n  undefined destroy();\n};",
+        "href": "https://webmachinelearning.github.io/writing-assistance-apis/#destroyablemodel"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

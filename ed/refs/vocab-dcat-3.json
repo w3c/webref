@@ -1,0 +1,432 @@
+{
+  "spec": {
+    "title": "Data Catalog Vocabulary (DCAT) - Version 3",
+    "url": "https://w3c.github.io/dxwg/dcat/"
+  },
+  "refs": {
+    "normative": [
+      {
+        "name": "DC11",
+        "url": "http://dublincore.org/documents/dces/"
+      },
+      {
+        "name": "DCTERMS",
+        "url": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"
+      },
+      {
+        "name": "DWBP",
+        "url": "https://www.w3.org/TR/dwbp/"
+      },
+      {
+        "name": "FOAF",
+        "url": "http://xmlns.com/foaf/spec"
+      },
+      {
+        "name": "GeoSPARQL",
+        "url": "https://docs.ogc.org/is/22-047r1/22-047r1.html"
+      },
+      {
+        "name": "IANA-MEDIA-TYPES",
+        "url": "https://www.iana.org/assignments/media-types/"
+      },
+      {
+        "name": "LOCN",
+        "url": "http://www.w3.org/ns/locn"
+      },
+      {
+        "name": "ODRL-MODEL",
+        "url": "https://www.w3.org/TR/odrl-model/"
+      },
+      {
+        "name": "ODRL-VOCAB",
+        "url": "https://www.w3.org/TR/odrl-vocab/"
+      },
+      {
+        "name": "OWL-TIME",
+        "url": "https://www.w3.org/TR/owl-time/"
+      },
+      {
+        "name": "OWL2-OVERVIEW",
+        "url": "https://www.w3.org/TR/owl2-overview/"
+      },
+      {
+        "name": "OWL2-SYNTAX",
+        "url": "https://www.w3.org/TR/owl2-syntax/"
+      },
+      {
+        "name": "PAV",
+        "url": "https://pav-ontology.github.io/pav/"
+      },
+      {
+        "name": "PROV-O",
+        "url": "https://www.w3.org/TR/prov-o/"
+      },
+      {
+        "name": "RDF-SCHEMA",
+        "url": "https://www.w3.org/TR/rdf-schema/"
+      },
+      {
+        "name": "RDF-SYNTAX-GRAMMAR",
+        "url": "https://www.w3.org/TR/rdf-syntax-grammar/"
+      },
+      {
+        "name": "RFC2119",
+        "url": "https://www.rfc-editor.org/rfc/rfc2119"
+      },
+      {
+        "name": "RFC8174",
+        "url": "https://www.rfc-editor.org/rfc/rfc8174"
+      },
+      {
+        "name": "SKOS-REFERENCE",
+        "url": "https://www.w3.org/TR/skos-reference/"
+      },
+      {
+        "name": "SPDX",
+        "url": "https://spdx.org/rdf/spdx-terms-v2.2/"
+      },
+      {
+        "name": "UNDERSTANDING-WCAG20",
+        "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/"
+      },
+      {
+        "name": "VCARD-RDF",
+        "url": "https://www.w3.org/TR/vcard-rdf/"
+      },
+      {
+        "name": "VOCAB-ADMS",
+        "url": "https://www.w3.org/TR/vocab-adms/"
+      },
+      {
+        "name": "VOCAB-DCAT",
+        "url": "https://www.w3.org/TR/vocab-dcat/"
+      },
+      {
+        "name": "XMLSCHEMA11-2",
+        "url": "https://www.w3.org/TR/xmlschema11-2/"
+      }
+    ],
+    "informative": [
+      {
+        "name": "ADMS-SKOS",
+        "url": "https://web.archive.org/web/20210521035614/https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.html"
+      },
+      {
+        "name": "ANNOTATION-VOCAB",
+        "url": "https://www.w3.org/TR/annotation-vocab/"
+      },
+      {
+        "name": "BCP47",
+        "url": "https://www.rfc-editor.org/rfc/rfc5646"
+      },
+      {
+        "name": "CSW",
+        "url": "http://www.opengeospatial.org/standards/cat"
+      },
+      {
+        "name": "DataCite",
+        "url": "https://schema.datacite.org/"
+      },
+      {
+        "name": "DATETIME",
+        "url": "https://www.w3.org/TR/NOTE-datetime"
+      },
+      {
+        "name": "DATS",
+        "url": "https://datatagsuite.github.io/docs/html/"
+      },
+      {
+        "name": "DBPEDIA-ONT",
+        "url": "http://dbpedia.org/ontology/"
+      },
+      {
+        "name": "DCAP",
+        "url": "http://dublincore.org/documents/profile-guidelines/"
+      },
+      {
+        "name": "DCAT-AP",
+        "url": "https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe"
+      },
+      {
+        "name": "DCAT-AP-IT",
+        "url": "https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/dcat-ap_it.html"
+      },
+      {
+        "name": "DCAT-AP-NO",
+        "url": "https://data.norge.no/specification/dcat-ap-no/"
+      },
+      {
+        "name": "DCAT-AP-SE",
+        "url": "https://docs.dataportal.se/dcat/en/"
+      },
+      {
+        "name": "DCAT-AP.de",
+        "url": "https://dcat-ap.de/def/"
+      },
+      {
+        "name": "DCAT-BE",
+        "url": "http://dcat.be/"
+      },
+      {
+        "name": "DCAT-UCR",
+        "url": "https://www.w3.org/TR/dcat-ucr/"
+      },
+      {
+        "name": "DOAP",
+        "url": "https://github.com/ewilderj/doap/wiki"
+      },
+      {
+        "name": "EARL10-Schema",
+        "url": "https://www.w3.org/TR/EARL10-Schema/"
+      },
+      {
+        "name": "EUV-AR",
+        "url": "https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/access-right"
+      },
+      {
+        "name": "EUV-CS",
+        "url": "https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/concept-status"
+      },
+      {
+        "name": "EUV-DS",
+        "url": "https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-status"
+      },
+      {
+        "name": "FAIR",
+        "url": "https://doi.org/10.1038/sdata.2016.18"
+      },
+      {
+        "name": "GeoDCAT-AP",
+        "url": "https://semiceu.github.io/GeoDCAT-AP/releases/"
+      },
+      {
+        "name": "GeoDCAT-AP-IT",
+        "url": "https://web.archive.org/web/20200506120557/https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/news/geodcat-apit"
+      },
+      {
+        "name": "HCLS-Dataset",
+        "url": "https://www.w3.org/TR/hcls-dataset/"
+      },
+      {
+        "name": "HTML-RDFa",
+        "url": "https://www.w3.org/TR/html-rdfa/"
+      },
+      {
+        "name": "HYDRA",
+        "url": "https://www.hydra-cg.com/spec/latest/core/"
+      },
+      {
+        "name": "IANA-RELATIONS",
+        "url": "https://www.iana.org/assignments/link-relations/"
+      },
+      {
+        "name": "IANA-URI-SCHEMES",
+        "url": "https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml"
+      },
+      {
+        "name": "INSPIRE-DoC",
+        "url": "http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/"
+      },
+      {
+        "name": "INSPIRE-SDST",
+        "url": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/"
+      },
+      {
+        "name": "ISO-19115",
+        "url": "https://www.iso.org/standard/26020.html"
+      },
+      {
+        "name": "ISO-19115-1",
+        "url": "https://www.iso.org/standard/53798.html"
+      },
+      {
+        "name": "ISO-19128",
+        "url": "https://www.iso.org/standard/32546.html"
+      },
+      {
+        "name": "ISO-19135",
+        "url": "https://www.iso.org/standard/32553.html"
+      },
+      {
+        "name": "ISO-19142",
+        "url": "https://www.iso.org/standard/42136.html"
+      },
+      {
+        "name": "ISO-26324",
+        "url": "https://www.iso.org/standard/43506.html"
+      },
+      {
+        "name": "ISO-IEC-25012",
+        "url": "http://iso25000.com/index.php/en/iso-25000-standards/iso-25012"
+      },
+      {
+        "name": "JSON-LD",
+        "url": "https://www.w3.org/TR/json-ld/"
+      },
+      {
+        "name": "LinkedDataPatterns",
+        "url": "http://patterns.dataincubator.org/book/"
+      },
+      {
+        "name": "N3",
+        "url": "https://www.w3.org/TeamSubmission/2008/SUBM-n3-20080114/"
+      },
+      {
+        "name": "netCDF",
+        "url": "https://www.unidata.ucar.edu/software/netcdf/"
+      },
+      {
+        "name": "ODRS",
+        "url": "http://schema.theodi.org/odrs"
+      },
+      {
+        "name": "OpenAPI",
+        "url": "https://www.openapis.org/"
+      },
+      {
+        "name": "OpenSearch",
+        "url": "https://github.com/dewitt/opensearch/blob/master/opensearch-1-1-draft-6.md"
+      },
+      {
+        "name": "RDF11-CONCEPTS",
+        "url": "https://www.w3.org/TR/rdf11-concepts/"
+      },
+      {
+        "name": "RDF11-PRIMER",
+        "url": "https://www.w3.org/TR/rdf11-primer/"
+      },
+      {
+        "name": "RE3DATA-SCHEMA",
+        "url": "https://doi.org/10.2312/re3.008"
+      },
+      {
+        "name": "RFC3986",
+        "url": "https://www.rfc-editor.org/rfc/rfc3986"
+      },
+      {
+        "name": "RFC3987",
+        "url": "https://www.rfc-editor.org/rfc/rfc3987"
+      },
+      {
+        "name": "SCHEMA-ORG",
+        "url": "https://schema.org/"
+      },
+      {
+        "name": "SDW-BP",
+        "url": "https://www.w3.org/TR/sdw-bp/"
+      },
+      {
+        "name": "SHACL",
+        "url": "https://www.w3.org/TR/shacl/"
+      },
+      {
+        "name": "ShEx",
+        "url": "http://shex.io/shex-semantics/"
+      },
+      {
+        "name": "SPARQL11-PROTOCOL",
+        "url": "https://www.w3.org/TR/sparql11-protocol/"
+      },
+      {
+        "name": "SPARQL11-QUERY",
+        "url": "https://www.w3.org/TR/sparql11-query/"
+      },
+      {
+        "name": "SPARQL11-SERVICE-DESCRIPTION",
+        "url": "https://www.w3.org/TR/sparql11-service-description/"
+      },
+      {
+        "name": "StatDCAT-AP",
+        "url": "https://joinup.ec.europa.eu/solution/statdcat-application-profile-data-portals-europe"
+      },
+      {
+        "name": "Turtle",
+        "url": "https://www.w3.org/TR/turtle/"
+      },
+      {
+        "name": "UKGOVLD-REG",
+        "url": "https://github.com/UKGovLD/registry-core/wiki/Principles-and-concepts"
+      },
+      {
+        "name": "VIVO-ISF",
+        "url": "https://github.com/vivo-isf/vivo-isf"
+      },
+      {
+        "name": "VOCAB-DATA-CUBE",
+        "url": "https://www.w3.org/TR/vocab-data-cube/"
+      },
+      {
+        "name": "VOCAB-DCAT-1",
+        "url": "https://www.w3.org/TR/vocab-dcat-1/"
+      },
+      {
+        "name": "VOCAB-DCAT-2",
+        "url": "https://www.w3.org/TR/vocab-dcat-2/"
+      },
+      {
+        "name": "VOCAB-DCAT-2-20200204",
+        "url": "https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/"
+      },
+      {
+        "name": "VOCAB-DCAT-3-20201217",
+        "url": "https://www.w3.org/TR/2020/WD-vocab-dcat-3-20201217/"
+      },
+      {
+        "name": "VOCAB-DCAT-3-20210504",
+        "url": "https://www.w3.org/TR/2021/WD-vocab-dcat-3-20210504/"
+      },
+      {
+        "name": "VOCAB-DCAT-3-20220111",
+        "url": "https://www.w3.org/TR/2022/WD-vocab-dcat-3-20220111/"
+      },
+      {
+        "name": "VOCAB-DCAT-3-20220510",
+        "url": "https://www.w3.org/TR/2022/WD-vocab-dcat-3-20220510/"
+      },
+      {
+        "name": "VOCAB-DCAT-3-20240118",
+        "url": "https://www.w3.org/TR/2024/CR-vocab-dcat-3-20240118/"
+      },
+      {
+        "name": "VOCAB-DQV",
+        "url": "https://www.w3.org/TR/vocab-dqv/"
+      },
+      {
+        "name": "VOCAB-ORG",
+        "url": "https://www.w3.org/TR/vocab-org/"
+      },
+      {
+        "name": "VOCAB-SSN",
+        "url": "https://www.w3.org/TR/vocab-ssn/"
+      },
+      {
+        "name": "VOID",
+        "url": "https://www.w3.org/TR/void/"
+      },
+      {
+        "name": "W3C-BASIC-GEO",
+        "url": "https://www.w3.org/2003/01/geo/"
+      },
+      {
+        "name": "WFS",
+        "url": "http://www.opengeospatial.org/standards/wfs"
+      },
+      {
+        "name": "WMS",
+        "url": "http://www.opengeospatial.org/standards/wms"
+      },
+      {
+        "name": "WSDL20",
+        "url": "https://www.w3.org/TR/wsdl20/"
+      },
+      {
+        "name": "XHTML-VOCAB",
+        "url": "https://www.w3.org/1999/xhtml/vocab"
+      },
+      {
+        "name": "ZaveriEtAl",
+        "url": "https://doi.org/10.3233/SW-150175"
+      }
+    ]
+  }
+}

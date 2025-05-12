@@ -1,0 +1,29 @@
+{
+  "name": "LanguageDetectorCreateOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Translator and Language Detector APIs",
+      "url": "https://webmachinelearning.github.io/translation-api/"
+    },
+    "fragment": "dictionary LanguageDetectorCreateOptions : LanguageDetectorCreateCoreOptions {\n  AbortSignal signal;\n  CreateMonitorCallback monitor;\n};",
+    "href": "https://webmachinelearning.github.io/translation-api/#dictdef-languagedetectorcreateoptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "LanguageDetectorCreateCoreOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Translator and Language Detector APIs",
+        "url": "https://webmachinelearning.github.io/translation-api/"
+      },
+      "fragment": "dictionary LanguageDetectorCreateCoreOptions {\n  sequence<DOMString> expectedInputLanguages;\n};",
+      "href": "https://webmachinelearning.github.io/translation-api/#dictdef-languagedetectorcreatecoreoptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}
