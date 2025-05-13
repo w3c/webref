@@ -1,0 +1,456 @@
+{
+  "spec": {
+    "title": "Content Negotiation by Profile",
+    "url": "https://www.w3.org/TR/dx-prof-conneg/"
+  },
+  "headings": [
+    {
+      "id": "respecDocument",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#respecDocument",
+      "level": 1,
+      "title": "Content Negotiation by Profile"
+    },
+    {
+      "id": "FamilyOfDocs",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#FamilyOfDocs",
+      "level": 3,
+      "title": "Overview of DXWG documents on profiles"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "2"
+    },
+    {
+      "id": "definitions",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#definitions",
+      "level": 2,
+      "title": "Definitions",
+      "number": "3"
+    },
+    {
+      "id": "motivation",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#motivation",
+      "level": 2,
+      "title": "Motivation",
+      "number": "4"
+    },
+    {
+      "id": "relatedwork",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#relatedwork",
+      "level": 2,
+      "title": "Related Work",
+      "number": "5"
+    },
+    {
+      "id": "related-http",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#related-http",
+      "level": 3,
+      "title": "Existing standards for transporting profile information in HTTP headers",
+      "number": "5.1"
+    },
+    {
+      "id": "using-accept-content-type-together-with-the-profile-parameter",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#using-accept-content-type-together-with-the-profile-parameter",
+      "level": 4,
+      "title": "Using Accept/Content Type together with the profile parameter",
+      "number": "5.1.1"
+    },
+    {
+      "id": "using-a-link-header-with-rel-profile-rfc-6906",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#using-a-link-header-with-rel-profile-rfc-6906",
+      "level": 4,
+      "title": "Using a Link header with rel=\"profile\" (RFC 6906)",
+      "number": "5.1.2"
+    },
+    {
+      "id": "using-the-prefer-preference-applied-header-fields-rfc-7240",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#using-the-prefer-preference-applied-header-fields-rfc-7240",
+      "level": 4,
+      "title": "Using the Prefer/Preference-Applied header fields (RFC 7240)",
+      "number": "5.1.3"
+    },
+    {
+      "id": "related-ark",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#related-ark",
+      "level": 3,
+      "title": "Archival Resource Key (ARK)",
+      "number": "5.2"
+    },
+    {
+      "id": "related-altviews",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#related-altviews",
+      "level": 3,
+      "title": "Linked Data APIs",
+      "number": "5.3"
+    },
+    {
+      "id": "related-oai-pmh",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#related-oai-pmh",
+      "level": 3,
+      "title": "OAI-PMH",
+      "number": "5.4"
+    },
+    {
+      "id": "related-csw",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#related-csw",
+      "level": 3,
+      "title": "Catalogue Service for the Web (CSW)",
+      "number": "5.5"
+    },
+    {
+      "id": "abstractmodel",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#abstractmodel",
+      "level": 2,
+      "title": "Abstract Model",
+      "number": "6"
+    },
+    {
+      "id": "connegbackground",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#connegbackground",
+      "level": 3,
+      "title": "Content Negotiation Background",
+      "number": "6.1"
+    },
+    {
+      "id": "profileid",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#profileid",
+      "level": 3,
+      "title": "Profile Identification",
+      "number": "6.2"
+    },
+    {
+      "id": "requestsandresonses",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#requestsandresonses",
+      "level": 3,
+      "title": "Requests and Responses",
+      "number": "6.3"
+    },
+    {
+      "id": "listprofiles",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#listprofiles",
+      "level": 4,
+      "title": "List Profiles",
+      "number": "6.3.1"
+    },
+    {
+      "id": "getresourcebyprofile",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#getresourcebyprofile",
+      "level": 4,
+      "title": "Get Resource by Profile",
+      "number": "6.3.2"
+    },
+    {
+      "id": "altr",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#altr",
+      "level": 3,
+      "title": "Alternate Representations Data Model",
+      "number": "6.4"
+    },
+    {
+      "id": "precedence",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#precedence",
+      "level": 3,
+      "title": "Order of Precedence for Implementation Profiles",
+      "number": "6.5"
+    },
+    {
+      "id": "functional-profiles",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#functional-profiles",
+      "level": 2,
+      "title": "Functional Profiles",
+      "number": "7"
+    },
+    {
+      "id": "functional-profiles-definition",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#functional-profiles-definition",
+      "level": 3,
+      "title": "Functional Profiles of this specification",
+      "number": "7.1"
+    },
+    {
+      "id": "http",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#http",
+      "level": 3,
+      "title": "Hypertext Transfer Protocol Headers",
+      "number": "7.2"
+    },
+    {
+      "id": "http-listprofiles",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#http-listprofiles",
+      "level": 4,
+      "title": "List Profiles",
+      "number": "7.2.1"
+    },
+    {
+      "id": "http-altp",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#http-altp",
+      "level": 5,
+      "title": "HTTP Alternate Representations Data Model Implementation",
+      "number": "7.2.1.1"
+    },
+    {
+      "id": "http-tokens",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#http-tokens",
+      "level": 5,
+      "title": "Token mappings",
+      "number": "7.2.1.2"
+    },
+    {
+      "id": "http-getresourcebyprofile",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#http-getresourcebyprofile",
+      "level": 4,
+      "title": "Get Resource by Profile",
+      "number": "7.2.2"
+    },
+    {
+      "id": "qsa",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#qsa",
+      "level": 3,
+      "title": "URL Query String Arguments",
+      "number": "7.3"
+    },
+    {
+      "id": "qsa-description",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#qsa-description",
+      "level": 4,
+      "title": "QSA Functional Profile description",
+      "number": "7.3.1"
+    },
+    {
+      "id": "qsa-uri",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#qsa-uri",
+      "level": 5,
+      "title": "QSA URI description",
+      "number": "7.3.1.1"
+    },
+    {
+      "id": "qsa-key-naming",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#qsa-key-naming",
+      "level": 5,
+      "title": "Key naming",
+      "number": "7.3.1.2"
+    },
+    {
+      "id": "qsa-listprofiles",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#qsa-listprofiles",
+      "level": 4,
+      "title": "List Profiles",
+      "number": "7.3.2"
+    },
+    {
+      "id": "qsa-altp",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#qsa-altp",
+      "level": 5,
+      "title": "QSA Alternate Representations Data Model Implementation",
+      "number": "7.3.2.1"
+    },
+    {
+      "id": "qsa-tokens",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#qsa-tokens",
+      "level": 5,
+      "title": "Token mappings",
+      "number": "7.3.2.2"
+    },
+    {
+      "id": "qsa-resource-url",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#qsa-resource-url",
+      "level": 5,
+      "title": "Resource URL",
+      "number": "7.3.2.3"
+    },
+    {
+      "id": "qsa-getresourcebyprofile",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#qsa-getresourcebyprofile",
+      "level": 4,
+      "title": "Get Resource by Profile",
+      "number": "7.3.3"
+    },
+    {
+      "id": "qsa-keydiscovery",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#qsa-keydiscovery",
+      "level": 4,
+      "title": "QSA key discovery",
+      "number": "7.3.4"
+    },
+    {
+      "id": "link-attributes",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#link-attributes",
+      "level": 2,
+      "title": "Link Attributes",
+      "number": "8"
+    },
+    {
+      "id": "link-attributes-token",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#link-attributes-token",
+      "level": 3,
+      "title": "Token",
+      "number": "8.1"
+    },
+    {
+      "id": "testsuites",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#testsuites",
+      "level": 2,
+      "title": "Test Suites",
+      "number": "9"
+    },
+    {
+      "id": "implementations",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#implementations",
+      "level": 2,
+      "title": "10. Implementations"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#acknowledgements",
+      "level": 2,
+      "title": "11. Acknowledgements"
+    },
+    {
+      "id": "changes",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#changes",
+      "level": 2,
+      "title": "12. Changes"
+    },
+    {
+      "id": "changes-since-20190430",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#changes-since-20190430",
+      "level": 3,
+      "title": "Changes since previous draft",
+      "number": "12.1"
+    },
+    {
+      "id": "features-at-risk",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#features-at-risk",
+      "level": 3,
+      "title": "Features at Risk",
+      "number": "12.2"
+    },
+    {
+      "id": "security_and_privacy",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#security_and_privacy",
+      "level": 2,
+      "title": "13. Security and Privacy"
+    },
+    {
+      "id": "appendices",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#appendices",
+      "level": 2,
+      "title": "Appendices",
+      "number": "A"
+    },
+    {
+      "id": "reqlist",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#reqlist",
+      "level": 3,
+      "title": "Itemized Requirements",
+      "number": "A.1"
+    },
+    {
+      "id": "http-headers-functional-profile",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#http-headers-functional-profile",
+      "level": 4,
+      "title": "HTTP Headers Functional Profile",
+      "number": "A.1.1"
+    },
+    {
+      "id": "query-string-arguments-functional-profile",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#query-string-arguments-functional-profile",
+      "level": 4,
+      "title": "Query String Arguments Functional Profile",
+      "number": "A.1.2"
+    },
+    {
+      "id": "query-string-arguments-alternate-keywords-functional-profile",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#query-string-arguments-alternate-keywords-functional-profile",
+      "level": 4,
+      "title": "Query String Arguments Alternate Keywords Functional Profile",
+      "number": "A.1.3"
+    },
+    {
+      "id": "profilesinprof",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#profilesinprof",
+      "level": 3,
+      "title": "Profiles Vocabulary descriptions of this specification's Functional Profiles",
+      "number": "A.2"
+    },
+    {
+      "id": "conformancetofunctionalprofiles",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#conformancetofunctionalprofiles",
+      "level": 3,
+      "title": "Demonstrating system conformance to Functional Profiles",
+      "number": "A.3"
+    },
+    {
+      "id": "altr-detail",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#altr-detail",
+      "level": 3,
+      "title": "Alternate Representations Data Model - Details",
+      "number": "A.4"
+    },
+    {
+      "id": "altr-implementations",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#altr-implementations",
+      "level": 4,
+      "title": "Implementations",
+      "number": "A.4.1"
+    },
+    {
+      "id": "altr-extensions",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#altr-extensions",
+      "level": 4,
+      "title": "Extensions",
+      "number": "A.4.2"
+    },
+    {
+      "id": "examples-of-model-use",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#examples-of-model-use",
+      "level": 4,
+      "title": "Examples of model use",
+      "number": "A.4.3"
+    },
+    {
+      "id": "dcat-usage-example",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#dcat-usage-example",
+      "level": 3,
+      "title": "Describing DCAT Distributions support of Content Negotiation by Profile",
+      "number": "A.5"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#references",
+      "level": 2,
+      "title": "References",
+      "number": "B"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "B.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/dx-prof-conneg/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "B.2"
+    }
+  ]
+}
