@@ -1271,10 +1271,10 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "Let <var>longhands</var> be an array consisting of all <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration④\">CSS declarations</a> in <var>declaration block</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations④\">declarations</a> that that are not in <var>already serialized</var> and have a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name②\">property name</a> that\n     maps to one of the shorthand properties in <var>shorthands</var>."
+                  "html": "Let <var>longhands</var> be an array consisting of all <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration④\">CSS declarations</a> in <var>declaration block</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations④\">declarations</a> that are not in <var>already serialized</var> and have a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name②\">property name</a> that\n     maps to one of the shorthand properties in <var>shorthands</var>."
                 },
                 {
-                  "html": "If all properties that map to <var>shorthand</var> are not present in <var>longhands</var>, continue with the steps labeled <i>shorthand loop</i>."
+                  "html": "If not all properties that map to <var>shorthand</var> are present in <var>longhands</var>, continue with the steps labeled <i>shorthand loop</i>."
                 },
                 {
                   "html": "Let <var>current longhands</var> be an empty array."
@@ -1283,13 +1283,13 @@
                   "html": "Append all <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration⑤\">CSS declarations</a> in <var>longhands</var> that have a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name③\">property name</a> that maps to <var>shorthand</var> to <var>current longhands</var>."
                 },
                 {
-                  "html": "If there is one or more <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration⑥\">CSS declarations</a> in <var>current longhands</var> have their <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-important-flag\" id=\"ref-for-css-declaration-important-flag\">important flag</a> set and one or more with it unset, continue with\n     the steps labeled <i>shorthand loop</i>."
+                  "html": "If there are one or more <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration⑥\">CSS declarations</a> in <var>current longhands</var> that have their <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-important-flag\" id=\"ref-for-css-declaration-important-flag\">important flag</a> set and one or more with it unset, continue with\n     the steps labeled <i>shorthand loop</i>."
                 },
                 {
-                  "html": "If there’s any declaration in <var>declaration block</var> in between the first and the last longhand in <var>current longhands</var> which belongs to the same <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-logical-1/#logical-property-group\" id=\"ref-for-logical-property-group\">logical property group</a>, but has a different <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-logical-1/#mapping-logic\" id=\"ref-for-mapping-logic\">mapping logic</a> as any of the longhands in <var>current longhands</var>,\n     and is not in <var>current longhands</var>, continue with the steps labeled <i>shorthand loop</i>."
+                  "html": "If there is any declaration in <var>declaration block</var> in between the first and the last longhand in <var>current longhands</var> which belongs to the same <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-logical-1/#logical-property-group\" id=\"ref-for-logical-property-group\">logical property group</a>, but has a different <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-logical-1/#mapping-logic\" id=\"ref-for-mapping-logic\">mapping logic</a> as any of the longhands in <var>current longhands</var>,\n     and is not in <var>current longhands</var>, continue with the steps labeled <i>shorthand loop</i>."
                 },
                 {
-                  "html": "Let <var>value</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value①\">serialize a CSS value</a> of <var>current longhands</var>."
+                  "html": "Let <var>value</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value①\">serialize a CSS value</a> with <var>current longhands</var>."
                 },
                 {
                   "html": "If <var>value</var> is the empty string, continue with the steps labeled <i>shorthand loop</i>."
