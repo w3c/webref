@@ -31,8 +31,8 @@
       },
       "https://url.spec.whatwg.org/": {},
       "https://w3c.github.io/hr-time/": {},
+      "https://w3c.github.io/webappsec-dbsc/": {},
       "https://w3c.github.io/webdriver-bidi/": {},
-      "https://webidl.spec.whatwg.org/": {},
       "https://www.rfc-editor.org/rfc/rfc3864": {},
       "https://www.rfc-editor.org/rfc/rfc5234": {},
       "https://www.rfc-editor.org/rfc/rfc7405": {},
@@ -106,8 +106,12 @@
         "anchors": [
           "host-registrable-domain",
           "concept-url",
+          "concept-domain",
+          "domain-label",
+          "host-public-suffix",
           "concept-url-host",
-          "concept-url-path"
+          "concept-url-path",
+          "concept-url-origin"
         ]
       },
       "https://w3c.github.io/hr-time/": {
@@ -115,14 +119,18 @@
           "dfn-moment"
         ]
       },
+      "https://w3c.github.io/webappsec-dbsc/": {
+        "anchors": [
+          "secure-session-registration-header",
+          "secure-session-response-header",
+          "sec-secure-session-id-header",
+          "secure-session-challenge-header",
+          "secure-session-skipped-header"
+        ]
+      },
       "https://w3c.github.io/webdriver-bidi/": {
         "anchors": [
           "modules-session"
-        ]
-      },
-      "https://webidl.spec.whatwg.org/": {
-        "anchors": [
-          "dfn-dictionary"
         ]
       }
     }
