@@ -25,14 +25,14 @@
         },
         {
           "name": "before",
-          "prose": "The scroll container generates a ::scroll-marker-group pseudo-element whose box is an immediate preceding sibling to its originating element.",
+          "prose": "The scroll container generates a ::scroll-marker-group pseudo-element. When originating from the root element, the generated pseudo-element’s box is the first child of the originating element. Otherwise, its box is an immediate preceding sibling to its originating element.",
           "href": "https://drafts.csswg.org/css-overflow-5/#valdef-scroll-marker-group-before",
           "type": "value",
           "value": "before"
         },
         {
           "name": "after",
-          "prose": "The scroll container generates a ::scroll-marker-group pseudo-element whose box is an immediate following sibling to its originating element.",
+          "prose": "The scroll container generates a ::scroll-marker-group pseudo-element. When originating from the root element, the generated pseudo-element’s box is the last child of the originating element. Otherwise, its box is an immediate following sibling to its originating element.",
           "href": "https://drafts.csswg.org/css-overflow-5/#valdef-scroll-marker-group-after",
           "type": "value",
           "value": "after"
