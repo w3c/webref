@@ -1,6 +1,6 @@
 // Source: Web Speech API (https://webaudio.github.io/web-speech-api/)
 // A collection of responses (used in continuous mode)
-[Exposed=Window]
+[SecureContext, Exposed=Window]
 interface SpeechRecognitionResultList {
     readonly attribute unsigned long length;
     getter SpeechRecognitionResult item(unsigned long index);

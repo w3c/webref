@@ -6,7 +6,7 @@
       "title": "Web Speech API",
       "url": "https://webaudio.github.io/web-speech-api/"
     },
-    "fragment": "// Item in N-best list\n[Exposed=Window]\ninterface SpeechRecognitionAlternative {\n    readonly attribute DOMString transcript;\n    readonly attribute float confidence;\n};",
+    "fragment": "// Item in N-best list\n[SecureContext, Exposed=Window]\ninterface SpeechRecognitionAlternative {\n    readonly attribute DOMString transcript;\n    readonly attribute float confidence;\n};",
     "href": "https://webaudio.github.io/web-speech-api/#speechrecognitionalternative"
   },
   "extended": [],

@@ -1,6 +1,6 @@
 // Source: Web Speech API (https://webaudio.github.io/web-speech-api/)
 // Item in N-best list
-[Exposed=Window]
+[SecureContext, Exposed=Window]
 interface SpeechRecognitionAlternative {
     readonly attribute DOMString transcript;
     readonly attribute float confidence;

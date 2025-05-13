@@ -6,7 +6,7 @@
       "title": "Web Speech API",
       "url": "https://webaudio.github.io/web-speech-api/"
     },
-    "fragment": "[Exposed=Window]\ninterface SpeechRecognitionErrorEvent : Event {\n    constructor(DOMString type, SpeechRecognitionErrorEventInit eventInitDict);\n    readonly attribute SpeechRecognitionErrorCode error;\n    readonly attribute DOMString message;\n};",
+    "fragment": "[SecureContext, Exposed=Window]\ninterface SpeechRecognitionErrorEvent : Event {\n    constructor(DOMString type, SpeechRecognitionErrorEventInit eventInitDict);\n    readonly attribute SpeechRecognitionErrorCode error;\n    readonly attribute DOMString message;\n};",
     "href": "https://webaudio.github.io/web-speech-api/#speechrecognitionerrorevent"
   },
   "extended": [],

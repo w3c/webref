@@ -29,7 +29,7 @@
     },
     "idlNames": {
       "SpeechRecognition": {
-        "fragment": "[Exposed=Window]\ninterface SpeechRecognition : EventTarget {\n    constructor();\n\n    // recognition parameters\n    attribute DOMString lang;\n    attribute boolean continuous;\n    attribute boolean interimResults;\n    attribute unsigned long maxAlternatives;\n    attribute SpeechRecognitionMode mode;\n    attribute SpeechRecognitionPhraseList phrases;\n\n    // methods to drive the speech interaction\n    undefined start();\n    undefined start(MediaStreamTrack audioTrack);\n    undefined stop();\n    undefined abort();\n    static Promise<AvailabilityStatus> availableOnDevice(DOMString lang);\n    static Promise<boolean> installOnDevice(DOMString lang);\n\n    // event methods\n    attribute EventHandler onaudiostart;\n    attribute EventHandler onsoundstart;\n    attribute EventHandler onspeechstart;\n    attribute EventHandler onspeechend;\n    attribute EventHandler onsoundend;\n    attribute EventHandler onaudioend;\n    attribute EventHandler onresult;\n    attribute EventHandler onnomatch;\n    attribute EventHandler onerror;\n    attribute EventHandler onstart;\n    attribute EventHandler onend;\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface SpeechRecognition : EventTarget {\n    constructor();\n\n    // recognition parameters\n    attribute DOMString lang;\n    attribute boolean continuous;\n    attribute boolean interimResults;\n    attribute unsigned long maxAlternatives;\n    attribute SpeechRecognitionMode mode;\n    attribute SpeechRecognitionPhraseList phrases;\n\n    // methods to drive the speech interaction\n    undefined start();\n    undefined start(MediaStreamTrack audioTrack);\n    undefined stop();\n    undefined abort();\n    static Promise<AvailabilityStatus> availableOnDevice(DOMString lang);\n    static Promise<boolean> installOnDevice(DOMString lang);\n\n    // event methods\n    attribute EventHandler onaudiostart;\n    attribute EventHandler onsoundstart;\n    attribute EventHandler onspeechstart;\n    attribute EventHandler onspeechend;\n    attribute EventHandler onsoundend;\n    attribute EventHandler onaudioend;\n    attribute EventHandler onresult;\n    attribute EventHandler onnomatch;\n    attribute EventHandler onerror;\n    attribute EventHandler onstart;\n    attribute EventHandler onend;\n};",
         "type": "interface",
         "name": "SpeechRecognition",
         "inheritance": "EventTarget",
@@ -481,6 +481,12 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
@@ -595,7 +601,7 @@
         "href": "https://webaudio.github.io/web-speech-api/#enumdef-availabilitystatus"
       },
       "SpeechRecognitionErrorEvent": {
-        "fragment": "[Exposed=Window]\ninterface SpeechRecognitionErrorEvent : Event {\n    constructor(DOMString type, SpeechRecognitionErrorEventInit eventInitDict);\n    readonly attribute SpeechRecognitionErrorCode error;\n    readonly attribute DOMString message;\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface SpeechRecognitionErrorEvent : Event {\n    constructor(DOMString type, SpeechRecognitionErrorEventInit eventInitDict);\n    readonly attribute SpeechRecognitionErrorCode error;\n    readonly attribute DOMString message;\n};",
         "type": "interface",
         "name": "SpeechRecognitionErrorEvent",
         "inheritance": "Event",
@@ -675,6 +681,12 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
@@ -733,7 +745,7 @@
         "href": "https://webaudio.github.io/web-speech-api/#dictdef-speechrecognitionerroreventinit"
       },
       "SpeechRecognitionAlternative": {
-        "fragment": "// Item in N-best list\n[Exposed=Window]\ninterface SpeechRecognitionAlternative {\n    readonly attribute DOMString transcript;\n    readonly attribute float confidence;\n};",
+        "fragment": "// Item in N-best list\n[SecureContext, Exposed=Window]\ninterface SpeechRecognitionAlternative {\n    readonly attribute DOMString transcript;\n    readonly attribute float confidence;\n};",
         "type": "interface",
         "name": "SpeechRecognitionAlternative",
         "inheritance": null,
@@ -774,6 +786,12 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
@@ -786,7 +804,7 @@
         "href": "https://webaudio.github.io/web-speech-api/#speechrecognitionalternative"
       },
       "SpeechRecognitionResult": {
-        "fragment": "// A complete one-shot simple response\n[Exposed=Window]\ninterface SpeechRecognitionResult {\n    readonly attribute unsigned long length;\n    getter SpeechRecognitionAlternative item(unsigned long index);\n    readonly attribute boolean isFinal;\n};",
+        "fragment": "// A complete one-shot simple response\n[SecureContext, Exposed=Window]\ninterface SpeechRecognitionResult {\n    readonly attribute unsigned long length;\n    getter SpeechRecognitionAlternative item(unsigned long index);\n    readonly attribute boolean isFinal;\n};",
         "type": "interface",
         "name": "SpeechRecognitionResult",
         "inheritance": null,
@@ -859,6 +877,12 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
@@ -871,7 +895,7 @@
         "href": "https://webaudio.github.io/web-speech-api/#speechrecognitionresult"
       },
       "SpeechRecognitionResultList": {
-        "fragment": "// A collection of responses (used in continuous mode)\n[Exposed=Window]\ninterface SpeechRecognitionResultList {\n    readonly attribute unsigned long length;\n    getter SpeechRecognitionResult item(unsigned long index);\n};",
+        "fragment": "// A collection of responses (used in continuous mode)\n[SecureContext, Exposed=Window]\ninterface SpeechRecognitionResultList {\n    readonly attribute unsigned long length;\n    getter SpeechRecognitionResult item(unsigned long index);\n};",
         "type": "interface",
         "name": "SpeechRecognitionResultList",
         "inheritance": null,
@@ -928,6 +952,12 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
@@ -940,7 +970,7 @@
         "href": "https://webaudio.github.io/web-speech-api/#speechrecognitionresultlist"
       },
       "SpeechRecognitionEvent": {
-        "fragment": "// A full response, which could be interim or final, part of a continuous response or not\n[Exposed=Window]\ninterface SpeechRecognitionEvent : Event {\n    constructor(DOMString type, SpeechRecognitionEventInit eventInitDict);\n    readonly attribute unsigned long resultIndex;\n    readonly attribute SpeechRecognitionResultList results;\n};",
+        "fragment": "// A full response, which could be interim or final, part of a continuous response or not\n[SecureContext, Exposed=Window]\ninterface SpeechRecognitionEvent : Event {\n    constructor(DOMString type, SpeechRecognitionEventInit eventInitDict);\n    readonly attribute unsigned long resultIndex;\n    readonly attribute SpeechRecognitionResultList results;\n};",
         "type": "interface",
         "name": "SpeechRecognitionEvent",
         "inheritance": "Event",
@@ -1020,6 +1050,12 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
@@ -1078,7 +1114,7 @@
         "href": "https://webaudio.github.io/web-speech-api/#dictdef-speechrecognitioneventinit"
       },
       "SpeechRecognitionPhrase": {
-        "fragment": "// The object representing a phrase for contextual biasing.\n[Exposed=Window]\ninterface SpeechRecognitionPhrase {\n    constructor(DOMString phrase, optional float boost = 1.0);\n    readonly attribute DOMString phrase;\n    readonly attribute float boost;\n};",
+        "fragment": "// The object representing a phrase for contextual biasing.\n[SecureContext, Exposed=Window]\ninterface SpeechRecognitionPhrase {\n    constructor(DOMString phrase, optional float boost = 1.0);\n    readonly attribute DOMString phrase;\n    readonly attribute float boost;\n};",
         "type": "interface",
         "name": "SpeechRecognitionPhrase",
         "inheritance": null,
@@ -1161,6 +1197,12 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
@@ -1173,7 +1215,7 @@
         "href": "https://webaudio.github.io/web-speech-api/#speechrecognitionphrase"
       },
       "SpeechRecognitionPhraseList": {
-        "fragment": "// The object representing a list of phrases for contextual biasing.\n[Exposed=Window]\ninterface SpeechRecognitionPhraseList {\n    constructor(sequence<SpeechRecognitionPhrase> phrases);\n    readonly attribute unsigned long length;\n    SpeechRecognitionPhrase item(unsigned long index);\n    undefined addItem(SpeechRecognitionPhrase item);\n    undefined removeItem(unsigned long index);\n};",
+        "fragment": "// The object representing a list of phrases for contextual biasing.\n[SecureContext, Exposed=Window]\ninterface SpeechRecognitionPhraseList {\n    constructor(sequence<SpeechRecognitionPhrase> phrases);\n    readonly attribute unsigned long length;\n    SpeechRecognitionPhrase item(unsigned long index);\n    undefined addItem(SpeechRecognitionPhrase item);\n    undefined removeItem(unsigned long index);\n};",
         "type": "interface",
         "name": "SpeechRecognitionPhraseList",
         "inheritance": null,
@@ -1327,6 +1369,12 @@
           }
         ],
         "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
           {
             "type": "extended-attribute",
             "name": "Exposed",

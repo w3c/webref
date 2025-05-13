@@ -6,7 +6,7 @@
       "title": "Web Speech API",
       "url": "https://webaudio.github.io/web-speech-api/"
     },
-    "fragment": "// The object representing a list of phrases for contextual biasing.\n[Exposed=Window]\ninterface SpeechRecognitionPhraseList {\n    constructor(sequence<SpeechRecognitionPhrase> phrases);\n    readonly attribute unsigned long length;\n    SpeechRecognitionPhrase item(unsigned long index);\n    undefined addItem(SpeechRecognitionPhrase item);\n    undefined removeItem(unsigned long index);\n};",
+    "fragment": "// The object representing a list of phrases for contextual biasing.\n[SecureContext, Exposed=Window]\ninterface SpeechRecognitionPhraseList {\n    constructor(sequence<SpeechRecognitionPhrase> phrases);\n    readonly attribute unsigned long length;\n    SpeechRecognitionPhrase item(unsigned long index);\n    undefined addItem(SpeechRecognitionPhrase item);\n    undefined removeItem(unsigned long index);\n};",
     "href": "https://webaudio.github.io/web-speech-api/#speechrecognitionphraselist"
   },
   "extended": [],

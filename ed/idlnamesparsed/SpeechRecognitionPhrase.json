@@ -6,7 +6,7 @@
       "title": "Web Speech API",
       "url": "https://webaudio.github.io/web-speech-api/"
     },
-    "fragment": "// The object representing a phrase for contextual biasing.\n[Exposed=Window]\ninterface SpeechRecognitionPhrase {\n    constructor(DOMString phrase, optional float boost = 1.0);\n    readonly attribute DOMString phrase;\n    readonly attribute float boost;\n};",
+    "fragment": "// The object representing a phrase for contextual biasing.\n[SecureContext, Exposed=Window]\ninterface SpeechRecognitionPhrase {\n    constructor(DOMString phrase, optional float boost = 1.0);\n    readonly attribute DOMString phrase;\n    readonly attribute float boost;\n};",
     "href": "https://webaudio.github.io/web-speech-api/#speechrecognitionphrase"
   },
   "extended": [],

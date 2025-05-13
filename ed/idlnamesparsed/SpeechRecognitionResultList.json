@@ -6,7 +6,7 @@
       "title": "Web Speech API",
       "url": "https://webaudio.github.io/web-speech-api/"
     },
-    "fragment": "// A collection of responses (used in continuous mode)\n[Exposed=Window]\ninterface SpeechRecognitionResultList {\n    readonly attribute unsigned long length;\n    getter SpeechRecognitionResult item(unsigned long index);\n};",
+    "fragment": "// A collection of responses (used in continuous mode)\n[SecureContext, Exposed=Window]\ninterface SpeechRecognitionResultList {\n    readonly attribute unsigned long length;\n    getter SpeechRecognitionResult item(unsigned long index);\n};",
     "href": "https://webaudio.github.io/web-speech-api/#speechrecognitionresultlist"
   },
   "extended": [],
