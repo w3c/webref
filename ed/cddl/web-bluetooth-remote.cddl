@@ -177,7 +177,8 @@ bluetooth.SimulateCharacteristicResponseParameters = {
    serviceUuid: bluetooth.BluetoothUuid,
    characteristicUuid: bluetooth.BluetoothUuid,
    type: "read" / "write" / "subscribe-to-notifications" / "unsubscribe-from-notifications",
-   code: uint
+   code: uint,
+   ? data: [ * uint ]
 }
 
 bluetooth.SimulateDescriptor = (
@@ -206,5 +207,6 @@ bluetooth.SimulateDescriptorResponseParameters = {
    characteristicUuid: bluetooth.BluetoothUuid,
    descriptorUuid: bluetooth.BluetoothUuid,
    type: "read" / "write",
-   code: uint
+   code: uint,
+   ? data: [ * uint ]
 }
