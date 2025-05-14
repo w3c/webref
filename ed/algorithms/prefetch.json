@@ -532,22 +532,34 @@
               "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-replaces-client-id\" id=\"ref-for-concept-request-replaces-client-id\">replaces client id</a> to <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document④\">active document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-id\" id=\"ref-for-concept-environment-id①\">id</a>.</p>"
             },
             {
-              "html": "<p>Let <var>prefetchRecord</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#wait-for-a-matching-prefetch-record\" id=\"ref-for-wait-for-a-matching-prefetch-record①\">waiting for a matching prefetch record</a> given <var>navigable</var>, <var>sourceSnapshotParams</var>, <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#she-url\" id=\"ref-for-she-url②\">URL</a>, and <var>targetSnapshotParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#target-snapshot-params-sandbox\" id=\"ref-for-target-snapshot-params-sandbox①\">sandboxing flags</a>.</p>"
+              "html": "<p>Let <var>prefetched</var> be false.</p>"
             },
             {
-              "html": "If <var>documentResource</var> is null and <var>prefetchRecord</var> is not null:",
-              "rationale": "set",
+              "html": "If <var>documentResource</var> is null:",
+              "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Set <var>navigationParams</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#create-navigation-params-from-a-prefetch-record\" id=\"ref-for-create-navigation-params-from-a-prefetch-record①\">creating navigation params from a prefetch record</a> given <var>navigable</var>, <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#she-document-state\" id=\"ref-for-she-document-state⑥\">document state</a>, <var>navigationId</var>, <var>navTimingType</var>, <var>request</var>, <var>prefetchRecord</var>, <var>targetSnapshotParams</var>, and <var>sourceSnapshotParams</var>.</p>"
+                  "html": "<p>Let <var>prefetchRecord</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#find-a-matching-complete-prefetch-record\" id=\"ref-for-find-a-matching-complete-prefetch-record①\">finding a matching complete prefetch record</a> given <var>navigable</var>, <var>sourceSnapshotParams</var>, <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#she-url\" id=\"ref-for-she-url②\">URL</a>, and <var>sourceSnapshotParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#source-snapshot-params-sandbox\" id=\"ref-for-source-snapshot-params-sandbox\">sandboxing flags</a>.</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#copy-prefetch-cookies\" id=\"ref-for-copy-prefetch-cookies\">Copy prefetch cookies</a> given <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-isolated-partition-key\" id=\"ref-for-prefetch-record-isolated-partition-key\">isolated partition key</a> and <var>navigationParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-reserved-environment\" id=\"ref-for-navigation-params-reserved-environment①\">reserved environment</a>.</p>"
+                  "html": "If <var>prefetchRecord</var> is not null:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>navigationParams</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#create-navigation-params-from-a-prefetch-record\" id=\"ref-for-create-navigation-params-from-a-prefetch-record①\">creating navigation params from a prefetch record</a> given <var>navigable</var>, <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#she-document-state\" id=\"ref-for-she-document-state⑥\">document state</a>, <var>navigationId</var>, <var>navTimingType</var>, <var>request</var>, <var>prefetchRecord</var>, <var>targetSnapshotParams</var>, and <var>sourceSnapshotParams</var>.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#copy-prefetch-cookies\" id=\"ref-for-copy-prefetch-cookies\">Copy prefetch cookies</a> given <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-isolated-partition-key\" id=\"ref-for-prefetch-record-isolated-partition-key\">isolated partition key</a> and <var>navigationParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-reserved-environment\" id=\"ref-for-navigation-params-reserved-environment①\">reserved environment</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>prefetched</var> to true.</p>"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "html": "Otherwise:",
+              "html": "If <var>prefetched</var> is false:",
               "rationale": "let",
               "steps": [
                 {
@@ -743,7 +755,7 @@
               "html": "<p>Set <var>responsePolicyContainer</var> to the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#creating-a-policy-container-from-a-fetch-response\" id=\"ref-for-creating-a-policy-container-from-a-fetch-response①\">creating a policy container from a fetch response</a> given <var>response</var> and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-reserved-client\" id=\"ref-for-concept-request-reserved-client①②\">reserved client</a>.</p>"
             },
             {
-              "html": "<p>Set <var>finalSandboxFlags</var> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-union\" id=\"ref-for-set-union①\">union</a> of <var>targetSnapshotParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#target-snapshot-params-sandbox\" id=\"ref-for-target-snapshot-params-sandbox②\">sandboxing flags</a> and <var>responsePolicyContainer</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list①\">CSP list</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#csp-derived-sandboxing-flags\" id=\"ref-for-csp-derived-sandboxing-flags①\">CSP-derived sandboxing flags</a>.</p>"
+              "html": "<p>Set <var>finalSandboxFlags</var> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-union\" id=\"ref-for-set-union①\">union</a> of <var>targetSnapshotParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#target-snapshot-params-sandbox\" id=\"ref-for-target-snapshot-params-sandbox①\">sandboxing flags</a> and <var>responsePolicyContainer</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list①\">CSP list</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#csp-derived-sandboxing-flags\" id=\"ref-for-csp-derived-sandboxing-flags①\">CSP-derived sandboxing flags</a>.</p>"
             },
             {
               "html": "<p>Set <var>responseOrigin</var> to the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#determining-the-origin\" id=\"ref-for-determining-the-origin①\">determining the origin</a> given <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url⑥\">URL</a>, <var>finalSandboxFlags</var>, <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#she-document-state\" id=\"ref-for-she-document-state⑨\">document state</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#document-state-initiator-origin\" id=\"ref-for-document-state-initiator-origin③\">initiator origin</a>, and null.</p>"
