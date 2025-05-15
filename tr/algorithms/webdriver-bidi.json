@@ -4348,14 +4348,14 @@
           "html": "<p>Let <var>top-level navigable id</var> be null.</p>"
         },
         {
-          "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-window\" id=\"ref-for-concept-request-window\">window</a> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①\">environment settings object</a>:",
+          "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①\">environment settings object</a>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>environment settings</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-window\" id=\"ref-for-concept-request-window①\">window</a></p>"
+              "html": "<p>Let <var>environment settings</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①\">client</a>.</p>"
             },
             {
-              "html": "<p>If there is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables①⑤\">navigable</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window①\">active window</a> is <var>environment\n settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a>, set <var>navigable id</var> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①⑥\">navigable id</a> for that navigable, and set <var>top-level navigable id</var> to be <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable④③\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①⑦\">navigable id</a> for that\n context.</p>"
+              "html": "<p>If there is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables①⑤\">navigable</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window①\">active window</a> is <var>environment\n settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a>, set <var>navigable id</var> to that navigable’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①⑥\">navigable id</a>, and set <var>top-level navigable id</var> to\n that navigable’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top⑦\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①⑦\">navigable id</a>.</p>"
             }
           ]
         },
@@ -4478,7 +4478,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>global</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①\">client</a>.</p>"
+          "html": "<p>Let <var>global</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client③\">client</a>.</p>"
         },
         {
           "html": "<p>If <var>global</var> is null, return a map matching the <code>network.FetchTimingInfo</code> production, with all fields set to 0.</p>"
@@ -5449,7 +5449,7 @@
                   "html": "<p>Let <var>navigable</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try④③\">trying</a> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-a-navigable\" id=\"ref-for-get-a-navigable①⑤\">get a navigable</a> with <var>navigable id</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable④④\">top-level traversable</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑦⑤\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑦⓪\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument③⑤\">invalid argument</a>.</p>"
+                  "html": "<p>If <var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable④③\">top-level traversable</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑦⑤\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑦⓪\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument③⑤\">invalid argument</a>.</p>"
                 },
                 {
                   "html": "<p>Append <var>navigable</var> to <var>navigables</var>.</p>"
@@ -5810,14 +5810,14 @@
           "html": "<p>Let <var>navigable</var> be null.</p>"
         },
         {
-          "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-window\" id=\"ref-for-concept-request-window②\">window</a> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object②\">environment settings object</a>:",
+          "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client④\">client</a> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object②\">environment settings object</a>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>environment settings</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-window\" id=\"ref-for-concept-request-window③\">window</a></p>"
+              "html": "<p>Let <var>environment settings</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client⑤\">client</a>.</p>"
             },
             {
-              "html": "<p>If there is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables①⑥\">navigable</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window②\">active window</a> is <var>environment\n settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global①\">global object</a>, set <var>navigable</var> to\n the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context\">top-level browsing context</a> for that browsing context.</p>"
+              "html": "<p>If there is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables①⑥\">navigable</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window②\">active window</a> is <var>environment\n settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global①\">global object</a>, set <var>navigable</var> to that navigable’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top⑧\">top-level traversable</a>.</p>"
             }
           ]
         },
@@ -5836,7 +5836,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>top-level navigable</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top⑦\">top-level traversable</a>.</p>"
+          "html": "<p>Let <var>top-level navigable</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top⑨\">top-level traversable</a>.</p>"
         },
         {
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map\" id=\"ref-for-navigable-cache-behavior-map③\">navigable cache behavior map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥④\">contains</a> <var>top-level navigable</var>, return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map\" id=\"ref-for-navigable-cache-behavior-map④\">navigable cache behavior map</a>[<var>top-level navigable</var>].</p>"
@@ -5883,7 +5883,7 @@
               "html": "<p>Let <var>context</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try④⑦\">trying</a> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-a-navigable\" id=\"ref-for-get-a-navigable①⑥\">get a navigable</a> with <var>navigable id</var>.</p>"
             },
             {
-              "html": "<p>If <var>context</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context①\">top-level browsing context</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑧⑧\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧③\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument④①\">invalid argument</a>.</p>"
+              "html": "<p>If <var>context</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context\">top-level browsing context</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑧⑧\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧③\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument④①\">invalid argument</a>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③⓪\">Append</a> <var>context</var> to <var>navigables</var>.</p>"
@@ -5898,7 +5898,7 @@
               "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map\" id=\"ref-for-navigable-cache-behavior-map⑥\">navigable cache behavior map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥⑥\">contains</a> <var>navigable</var>, and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map\" id=\"ref-for-navigable-cache-behavior-map⑦\">navigable cache behavior map</a>[<var>navigable</var>] is equal to <var>behavior</var> then\n continue.</p>"
             },
             {
-              "html": "<p>Switch on the value of behavior:</p>\n        <dl>\n         <dt>\"<code>bypass</code>\" \n         </dt><dd>Perform implementation-defined steps to disable any implementation-specific\n    resource caches for network requests originating from any browsing\n    context for which <var>navigable</var> is the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context②\">top-level browsing context</a>. \n         </dd><dt>\"<code>default</code>\" \n         </dt><dd>Perform implementation-defined steps to enable any\n    implementation-specific resource caches that are usually enabled in the\n    current <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-ends\" id=\"ref-for-dfn-remote-ends③⓪\">remote end</a> configuration for network requests\n    originating from any browsing context for which <var>navigable</var> is the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context③\">top-level browsing context</a>. \n        </dd></dl>"
+              "html": "<p>Switch on the value of behavior:</p>\n        <dl>\n         <dt>\"<code>bypass</code>\" \n         </dt><dd>Perform implementation-defined steps to disable any implementation-specific\n    resource caches for network requests originating from any browsing\n    context for which <var>navigable</var> is the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context①\">top-level browsing context</a>. \n         </dd><dt>\"<code>default</code>\" \n         </dt><dd>Perform implementation-defined steps to enable any\n    implementation-specific resource caches that are usually enabled in the\n    current <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-ends\" id=\"ref-for-dfn-remote-ends③⓪\">remote end</a> configuration for network requests\n    originating from any browsing context for which <var>navigable</var> is the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context②\">top-level browsing context</a>. \n        </dd></dl>"
             },
             {
               "html": "If <var>behavior</var> is equal to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#default-cache-behavior\" id=\"ref-for-default-cache-behavior④\">default cache behavior</a>:",
@@ -5938,7 +5938,7 @@
           "html": "<p class=\"assertion\">Assert: <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#before-request-sent-map\" id=\"ref-for-before-request-sent-map①\">before request sent map</a>[<var>request</var>] is equal to <var>redirect count</var>.</p>"
         },
         {
-          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client②\">client</a> is not null, let <var>related navigables</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-related-navigables\" id=\"ref-for-get-related-navigables\">get related navigables</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client③\">client</a>. Otherwise let <var>related navigables</var> be an empty\n set.</p>"
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client⑥\">client</a> is not null, let <var>related navigables</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-related-navigables\" id=\"ref-for-get-related-navigables\">get related navigables</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client⑦\">client</a>. Otherwise let <var>related navigables</var> be an empty\n set.</p>"
         },
         {
           "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled①③\">set of sessions for which an event is enabled</a> given \"<code>network.authRequired</code>\" and <var>related navigables</var>:",
@@ -5997,7 +5997,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>settings</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client④\">client</a>.</p>"
+          "html": "<p>Let <var>settings</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client⑧\">client</a>.</p>"
         },
         {
           "html": "<p>Let <var>related navigables</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-related-navigables\" id=\"ref-for-get-related-navigables①\">get related navigables</a> with <var>settings</var>.</p>"
@@ -6074,7 +6074,7 @@
           "html": "<p>Add <var>redirect count</var> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#before-request-sent-map\" id=\"ref-for-before-request-sent-map④\">before request sent map</a>[<var>request</var>].</p>"
         },
         {
-          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client⑤\">client</a> is not null, let <var>related navigables</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-related-navigables\" id=\"ref-for-get-related-navigables②\">get related navigables</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client⑥\">client</a>. Otherwise let <var>related navigables</var> be an empty\n set.</p>"
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client⑨\">client</a> is not null, let <var>related navigables</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-related-navigables\" id=\"ref-for-get-related-navigables②\">get related navigables</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①⓪\">client</a>. Otherwise let <var>related navigables</var> be an empty\n set.</p>"
         },
         {
           "html": "<p>Let <var>response</var> be null.</p>"
@@ -6148,7 +6148,7 @@
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#before-request-sent-map\" id=\"ref-for-before-request-sent-map⑤\">before request sent map</a>[<var>request</var>] does not contain <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-count\" id=\"ref-for-concept-request-redirect-count③\">redirect count</a>, then run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-before-request-sent\" id=\"ref-for-webdriver-bidi-before-request-sent①\">WebDriver BiDi before request sent</a> steps\n with <var>request</var>.</p>"
         },
         {
-          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client⑦\">client</a> is not null, let <var>related navigables</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-related-navigables\" id=\"ref-for-get-related-navigables③\">get related navigables</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client⑧\">client</a>. Otherwise let <var>related navigables</var> be an empty\n set.</p>"
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①①\">client</a> is not null, let <var>related navigables</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-related-navigables\" id=\"ref-for-get-related-navigables③\">get related navigables</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①②\">client</a>. Otherwise let <var>related navigables</var> be an empty\n set.</p>"
         },
         {
           "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled①⑤\">set of sessions for which an event is enabled</a> given \"<code>network.fetchError</code>\" and <var>related navigables</var>:",
@@ -6186,7 +6186,7 @@
           "html": "<p class=\"assertion\">Assert: <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#before-request-sent-map\" id=\"ref-for-before-request-sent-map⑥\">before request sent map</a>[<var>request</var>] contains <var>redirect count</var>.</p>"
         },
         {
-          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client⑨\">client</a> is not null, let <var>related navigables</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-related-navigables\" id=\"ref-for-get-related-navigables④\">get related navigables</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①⓪\">client</a>. Otherwise let <var>related navigables</var> be an empty\n set.</p>"
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①③\">client</a> is not null, let <var>related navigables</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-related-navigables\" id=\"ref-for-get-related-navigables④\">get related navigables</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①④\">client</a>. Otherwise let <var>related navigables</var> be an empty\n set.</p>"
         },
         {
           "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled①⑥\">set of sessions for which an event is enabled</a> given \"<code>network.responseCompleted</code>\" and <var>related navigables</var>:",
@@ -6230,7 +6230,7 @@
           "html": "<p class=\"assertion\">Assert: <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#before-request-sent-map\" id=\"ref-for-before-request-sent-map⑦\">before request sent map</a>[<var>request</var>] is equal to <var>redirect count</var>.</p>"
         },
         {
-          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①①\">client</a> is not null, let <var>related navigables</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-related-navigables\" id=\"ref-for-get-related-navigables⑤\">get related navigables</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①②\">client</a>. Otherwise let <var>related navigables</var> be an empty\n set.</p>"
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①⑤\">client</a> is not null, let <var>related navigables</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-related-navigables\" id=\"ref-for-get-related-navigables⑤\">get related navigables</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①⑥\">client</a>. Otherwise let <var>related navigables</var> be an empty\n set.</p>"
         },
         {
           "html": "<p>Let <var>response status</var> be \"<code>incomplete</code>\".</p>"
@@ -6328,7 +6328,7 @@
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Let <var>navigable id</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top⑧\">top-level traversable</a>’s id.</p>"
+                      "html": "<p>Let <var>navigable id</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①⓪\">top-level traversable</a>’s id.</p>"
                     },
                     {
                       "html": "<p>If <var>preload script</var>’s <code>contexts</code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①⑨\">contain</a> <var>navigable id</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑧\">continue</a>.</p>"
@@ -7729,7 +7729,7 @@
                   "html": "<p>Let <var>navigable</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑤⑧\">trying</a> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-a-navigable\" id=\"ref-for-get-a-navigable①⑧\">get a navigable</a> with <var>navigable id</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable④⑤\">top-level traversable</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①⓪②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨⑦\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤⓪\">invalid argument</a>.</p>"
+                  "html": "<p>If <var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable④④\">top-level traversable</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①⓪②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨⑦\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤⓪\">invalid argument</a>.</p>"
                 },
                 {
                   "html": "<p>Append <var>navigable</var> to <var>navigables</var>.</p>"
@@ -8237,7 +8237,7 @@
                   "html": "<p>If <var>navigable</var> is null, continue.</p>"
                 },
                 {
-                  "html": "<p>Let <var>top-level traversible</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top⑨\">top-level traversable</a>.</p>"
+                  "html": "<p>Let <var>top-level traversible</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①①\">top-level traversable</a>.</p>"
                 },
                 {
                   "html": "<p>If <var>top-level traversible</var> is not in <var>navigables</var>, continue.</p>"
@@ -8835,7 +8835,7 @@
               "html": "<p>Let <var>navigable</var> be <var>maybe context</var>’s data</p>"
             },
             {
-              "html": "<p>Let <var>top level navigable</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①⓪\">top-level traversable</a>.</p>"
+              "html": "<p>Let <var>top level navigable</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①②\">top-level traversable</a>.</p>"
             },
             {
               "html": "If <var>include global</var> is true and <var>top level navigable</var> is not in <var>navigables</var>,\n or if <var>include global</var> is false and <var>top level navigable</var> is in <var>navigables</var>:",
@@ -8929,7 +8929,7 @@
           "html": "<p>Let <var>navigable</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑦④\">trying</a> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-a-navigable\" id=\"ref-for-get-a-navigable②②\">get a navigable</a> with <var>navigable id</var>.</p>"
         },
         {
-          "html": "<p>Let <var>input state</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-get-the-input-state\" id=\"ref-for-dfn-get-the-input-state\">get the input state</a> with <var>session</var> and <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①①\">top-level traversable</a>.</p>"
+          "html": "<p>Let <var>input state</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-get-the-input-state\" id=\"ref-for-dfn-get-the-input-state\">get the input state</a> with <var>session</var> and <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①③\">top-level traversable</a>.</p>"
         },
         {
           "html": "<p>Let <var>actions options</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-actions-options\" id=\"ref-for-dfn-actions-options\">actions options</a> with the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-is-element-origin\" id=\"ref-for-dfn-is-element-origin\">is element origin</a> steps set to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#is-inputelementorigin\" id=\"ref-for-is-inputelementorigin\">is input.ElementOrigin</a>, and the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-get-element-origin\" id=\"ref-for-dfn-get-element-origin\">get element origin</a> steps set to the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-element-from-inputelementorigin-steps\" id=\"ref-for-get-element-from-inputelementorigin-steps\">get Element from input.ElementOrigin steps</a> given <var>session</var>.</p>"
@@ -8957,7 +8957,7 @@
           "html": "<p>Let <var>navigable</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑦⑥\">trying</a> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-a-navigable\" id=\"ref-for-get-a-navigable②③\">get a navigable</a> with <var>navigable id</var>.</p>"
         },
         {
-          "html": "<p>Let <var>top-level traversable</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①②\">top-level traversable</a>.</p>"
+          "html": "<p>Let <var>top-level traversable</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①④\">top-level traversable</a>.</p>"
         },
         {
           "html": "<p>Let <var>input state</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-get-the-input-state\" id=\"ref-for-dfn-get-the-input-state①\">get the input state</a> with <var>session</var> and <var>top-level traversable</var>.</p>"
