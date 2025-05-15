@@ -1,18 +1,10 @@
 // Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
-dictionary RTCEncodedVideoFrameMetadata {
+dictionary RTCEncodedVideoFrameMetadata : RTCEncodedFrameMetadata {
     unsigned long long frameId;
     sequence<unsigned long long> dependencies;
     unsigned short width;
     unsigned short height;
     unsigned long spatialIndex;
     unsigned long temporalIndex;
-    unsigned long synchronizationSource;
-    octet payloadType;
-    sequence<unsigned long> contributingSources;
     long long timestamp;    // microseconds
-    unsigned long rtpTimestamp;
-    DOMHighResTimeStamp receiveTime;
-    DOMHighResTimeStamp captureTime;
-    DOMHighResTimeStamp senderCaptureTimeOffset;
-    DOMString mimeType;
 };

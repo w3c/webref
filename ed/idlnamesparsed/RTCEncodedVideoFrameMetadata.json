@@ -6,10 +6,24 @@
       "title": "WebRTC Encoded Transform",
       "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
     },
-    "fragment": "dictionary RTCEncodedVideoFrameMetadata {\n    unsigned long long frameId;\n    sequence<unsigned long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    unsigned long spatialIndex;\n    unsigned long temporalIndex;\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n    long long timestamp;    // microseconds\n    unsigned long rtpTimestamp;\n    DOMHighResTimeStamp receiveTime;\n    DOMHighResTimeStamp captureTime;\n    DOMHighResTimeStamp senderCaptureTimeOffset;\n    DOMString mimeType;\n};",
+    "fragment": "dictionary RTCEncodedVideoFrameMetadata : RTCEncodedFrameMetadata {\n    unsigned long long frameId;\n    sequence<unsigned long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    unsigned long spatialIndex;\n    unsigned long temporalIndex;\n    long long timestamp;    // microseconds\n};",
     "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcencodedvideoframemetadata"
   },
   "extended": [],
-  "inheritance": null,
+  "inheritance": {
+    "name": "RTCEncodedFrameMetadata",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebRTC Encoded Transform",
+        "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
+      },
+      "fragment": "dictionary RTCEncodedFrameMetadata {\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n    unsigned long rtpTimestamp;\n    DOMHighResTimeStamp receiveTime;\n    DOMHighResTimeStamp captureTime;\n    DOMHighResTimeStamp senderCaptureTimeOffset;\n    DOMString mimeType;\n};",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcencodedframemetadata"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
   "includes": []
 }
