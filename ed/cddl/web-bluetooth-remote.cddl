@@ -210,3 +210,8 @@ bluetooth.SimulateDescriptorResponseParameters = {
    code: uint,
    ? data: [ * uint ]
 }
+
+BluetoothEvent = (
+  bluetooth.RequestDevicePromptUpdated //
+  bluetooth.GattConnectionAttempted //
+)
