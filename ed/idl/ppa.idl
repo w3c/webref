@@ -26,7 +26,7 @@ interface PrivateAttribution {
 dictionary PrivateAttributionImpressionOptions {
   required unsigned long histogramIndex;
   unsigned long filterData = 0;
-  required USVString conversionSite;
+  sequence<USVString> conversionSites = [];
   unsigned long lifetimeDays = 30;
 };
 
@@ -42,7 +42,7 @@ dictionary PrivateAttributionConversionOptions {
   required unsigned long histogramSize;
 
   unsigned long lookbackDays;
-  unsigned long filterData;
+  sequence<unsigned long> filterData = [];
   sequence<USVString> impressionSites = [];
   sequence<USVString> intermediarySites = [];
 
