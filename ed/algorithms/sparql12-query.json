@@ -38,20 +38,20 @@
       ]
     },
     {
-      "html": "with Dedup(M(Ψ)) being an order-preserving, duplicate-free version of the sequence M(Ψ); that is, Dedup(M(Ψ)) is a sequence of lists that has the following four properties\n              (where each such list in this sequence may contain RDF terms and\n              errors, as it is produced by the <a href=\"https://w3c.github.io/sparql-query/spec/#defn_ListEval\">ListEval</a> function).",
+      "html": "with Dedup(M(<var>Ψ</var>)) being an order-preserving, duplicate-free version of the sequence M(<var>Ψ</var>); that is, Dedup(M(<var>Ψ</var>)) is a sequence of lists that has the following four properties\n              (where each such list in this sequence may contain RDF terms and\n              errors, as it is produced by the <a href=\"https://w3c.github.io/sparql-query/spec/#defn_ListEval\">ListEval</a> function).",
       "rationale": "for",
       "steps": [
         {
-          "html": "For every list&nbsp;<var>L</var> in M(Ψ) there exists a\n                list&nbsp;<var>L'</var> in Dedup(M(Ψ)) such that <var>L</var>\n                and <var>L'</var> are the same,\n                where two lists <var>L</var> and <var>L'</var> from M(Ψ) are\n                considered the same as specified in the definition of the\n                <a href=\"https://w3c.github.io/sparql-query/spec/#defn_algGroup\">Group operator</a>."
+          "html": "For every list&nbsp;<var>L</var> in M(<var>Ψ</var>) there exists a\n                list&nbsp;<var>L'</var> in Dedup(M(<var>Ψ</var>)) such that <var>L</var>\n                and <var>L'</var> are the same,\n                where two lists <var>L</var> and <var>L'</var> from M(<var>Ψ</var>) are\n                considered the same as specified in the definition of the\n                <a href=\"https://w3c.github.io/sparql-query/spec/#defn_algGroup\">Group operator</a>."
         },
         {
-          "html": "For every list&nbsp;<var>L</var> in Dedup(M(Ψ)) there exists\n                a list&nbsp;<var>L'</var> in M(Ψ) such that <var>L</var> and\n                <var>L'</var> are the same."
+          "html": "For every list&nbsp;<var>L</var> in Dedup(M(<var>Ψ</var>)) there exists\n                a list&nbsp;<var>L'</var> in M(<var>Ψ</var>) such that <var>L</var> and\n                <var>L'</var> are the same."
         },
         {
-          "html": "Dedup(M(Ψ)) is free of duplicates. That is, the list at the <var>i</var>-th position in Dedup(M(Ψ)) is not the same list as the list at the <var>j</var>-th position in Dedup(M(Ψ)) for every two natural numbers <var>i</var> and <var>j</var> such that <var>i</var> ≠ <var>j</var>."
+          "html": "Dedup(M(<var>Ψ</var>)) is free of duplicates. That is, the list at the <var>i</var>-th position in Dedup(M(<var>Ψ</var>)) is not the same list as the list at the <var>j</var>-th position in Dedup(M(<var>Ψ</var>)) for every two natural numbers <var>i</var> and <var>j</var> such that <var>i</var> ≠ <var>j</var>."
         },
         {
-          "html": "For any two lists <var>L<sub>1</sub></var> and <var>L<sub>2</sub></var> in Dedup(M(Ψ)), the relative order of their first occurrences in M(Ψ) is preserved in Dedup(M(Ψ)). That is, if <var>i<sub>1</sub></var>&nbsp;&lt;&nbsp;<var>i<sub>2</sub></var>, then <var>j<sub>1</sub></var>&nbsp;&lt;&nbsp;<var>j<sub>2</sub></var>, where\n                <ul>\n                  <li><var>i<sub>1</sub></var> is the smallest natural number such that <var>L<sub>1</sub></var> is at the <var>i<sub>1</sub></var>-th position in M(Ψ),</li>\n                  <li><var>i<sub>2</sub></var> is the smallest natural number such that <var>L<sub>2</sub></var> is at the <var>i<sub>2</sub></var>-th position in M(Ψ),</li>\n                  <li><var>j<sub>1</sub></var> is the position of <var>L<sub>1</sub></var> in Dedup(M(Ψ)), and</li>\n                  <li><var>j<sub>2</sub></var> is the position of <var>L<sub>2</sub></var> in Dedup(M(Ψ)).</li>\n                </ul>"
+          "html": "For any two lists <var>L<sub>1</sub></var> and <var>L<sub>2</sub></var> in Dedup(M(<var>Ψ</var>)), the relative order of their first occurrences in M(<var>Ψ</var>) is preserved in Dedup(M(<var>Ψ</var>)). That is, if <var>i<sub>1</sub></var>&nbsp;&lt;&nbsp;<var>i<sub>2</sub></var>, then <var>j<sub>1</sub></var>&nbsp;&lt;&nbsp;<var>j<sub>2</sub></var>, where\n                <ul>\n                  <li><var>i<sub>1</sub></var> is the smallest natural number such that <var>L<sub>1</sub></var> is at the <var>i<sub>1</sub></var>-th position in M(<var>Ψ</var>),</li>\n                  <li><var>i<sub>2</sub></var> is the smallest natural number such that <var>L<sub>2</sub></var> is at the <var>i<sub>2</sub></var>-th position in M(<var>Ψ</var>),</li>\n                  <li><var>j<sub>1</sub></var> is the position of <var>L<sub>1</sub></var> in Dedup(M(<var>Ψ</var>)), and</li>\n                  <li><var>j<sub>2</sub></var> is the position of <var>L<sub>2</sub></var> in Dedup(M(<var>Ψ</var>)).</li>\n                </ul>"
         }
       ]
     },
