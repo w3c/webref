@@ -28,18 +28,16 @@
       "https://infra.spec.whatwg.org/": {},
       "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4430334": {},
       "https://storage.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {},
       "https://w3c-fedid.github.io/FedCM/": {},
       "https://w3c.github.io/hr-time/": {},
+      "https://w3c.github.io/ppa/": {},
       "https://w3c.github.io/webappsec-permissions-policy/": {},
-      "https://w3ctag.github.io/privacy-principles/": {
-        "anchors": [
-          "dfn-cross-context-recognition",
-          "collective-privacy"
-        ]
-      },
       "https://webidl.spec.whatwg.org/": {},
       "https://www.bea.gov/research/papers/2017/measuring-free-digital-economy-within-gdp-and-productivity-accounts": {},
-      "https://www.europarl.europa.eu/thinktank/en/document/IPOL_STU(2021)662913": {}
+      "https://www.europarl.europa.eu/thinktank/en/document/IPOL_STU(2021)662913": {},
+      "https://www.rfc-editor.org/rfc/rfc3492": {},
+      "https://www.rfc-editor.org/rfc/rfc5890": {}
     },
     "autolinks": {
       "https://drafts.csswg.org/css-2024/": {
@@ -60,6 +58,9 @@
           "child-navigable",
           "concept-origin",
           "same-site",
+          "scheme-and-host",
+          "concept-origin-scheme",
+          "concept-origin-host",
           "obtain-a-site"
         ]
       },
@@ -75,7 +76,15 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
-          "environment-settings-object"
+          "environment-settings-object",
+          "concept-settings-object-origin"
+        ]
+      },
+      "https://httpwg.org/specs/rfc9651": {
+        "anchors": [
+          "dictionary",
+          "string",
+          "integer"
         ]
       },
       "https://infra.spec.whatwg.org/": {
@@ -83,6 +92,7 @@
           "user-agent",
           "implementation-defined",
           "sets",
+          "string",
           "ordered-map",
           "tuple",
           "map-exists",
@@ -105,6 +115,13 @@
           "storage-key"
         ]
       },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-host-parser",
+          "host-registrable-domain",
+          "domain-label"
+        ]
+      },
       "https://w3c.github.io/hr-time/": {
         "anchors": [
           "dfn-moment",
@@ -113,6 +130,11 @@
           "dfn-current-wall-time",
           "dfn-eso-current-wall-time",
           "dfn-monotonic-clock"
+        ]
+      },
+      "https://w3c.github.io/ppa/": {
+        "anchors": [
+          "dom-privateattributionimpressionoptions-conversionsite"
         ]
       },
       "https://w3c.github.io/webappsec-permissions-policy/": {
@@ -124,6 +146,8 @@
       },
       "https://w3ctag.github.io/privacy-principles/": {
         "anchors": [
+          "cross-context-recognition",
+          "collective-privacy",
           "cross-site-recognition",
           "same-site-recognition"
         ]
@@ -136,13 +160,14 @@
           "Exposed",
           "idl-USVString",
           "idl-unsigned-long",
+          "idl-sequence",
           "idl-undefined",
           "this",
           "idl-double",
-          "idl-sequence",
           "idl-Uint8Array",
           "idl-promise",
-          "exceptiondef-rangeerror"
+          "exceptiondef-rangeerror",
+          "syntaxerror"
         ]
       }
     }

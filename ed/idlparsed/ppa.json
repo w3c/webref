@@ -158,7 +158,7 @@
         "href": "https://w3c.github.io/ppa/#privateattribution"
       },
       "PrivateAttributionImpressionOptions": {
-        "fragment": "dictionary PrivateAttributionImpressionOptions {\n  required unsigned long histogramIndex;\n  unsigned long filterData = 0;\n  required USVString conversionSite;\n  unsigned long lifetimeDays = 30;\n};",
+        "fragment": "dictionary PrivateAttributionImpressionOptions {\n  required unsigned long histogramIndex;\n  unsigned long filterData = 0;\n  sequence<USVString> conversionSites = [];\n  unsigned long lifetimeDays = 30;\n};",
         "type": "dictionary",
         "name": "PrivateAttributionImpressionOptions",
         "inheritance": null,
@@ -200,19 +200,31 @@
           },
           {
             "type": "field",
-            "name": "conversionSite",
+            "name": "conversionSites",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
-              "idlType": "USVString"
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                }
+              ]
             },
-            "default": null,
-            "required": true,
-            "href": "https://w3c.github.io/ppa/#dom-privateattributionimpressionoptions-conversionsite"
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionimpressionoptions-conversionsites"
           },
           {
             "type": "field",
@@ -239,7 +251,7 @@
         "href": "https://w3c.github.io/ppa/#dictdef-privateattributionimpressionoptions"
       },
       "PrivateAttributionConversionOptions": {
-        "fragment": "dictionary PrivateAttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  unsigned long lookbackDays;\n  unsigned long filterData;\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> intermediarySites = [];\n\n  PrivateAttributionLogic logic = \"last-touch\";\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n};",
+        "fragment": "dictionary PrivateAttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  unsigned long lookbackDays;\n  sequence<unsigned long> filterData = [];\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> intermediarySites = [];\n\n  PrivateAttributionLogic logic = \"last-touch\";\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n};",
         "type": "dictionary",
         "name": "PrivateAttributionConversionOptions",
         "inheritance": null,
@@ -318,12 +330,24 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long"
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                }
+              ]
             },
-            "default": null,
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
             "required": false,
             "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-filterdata"
           },

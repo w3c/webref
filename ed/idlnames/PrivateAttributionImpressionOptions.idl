@@ -2,6 +2,6 @@
 dictionary PrivateAttributionImpressionOptions {
   required unsigned long histogramIndex;
   unsigned long filterData = 0;
-  required USVString conversionSite;
+  sequence<USVString> conversionSites = [];
   unsigned long lifetimeDays = 30;
 };

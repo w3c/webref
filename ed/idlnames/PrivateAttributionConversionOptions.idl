@@ -6,7 +6,7 @@ dictionary PrivateAttributionConversionOptions {
   required unsigned long histogramSize;
 
   unsigned long lookbackDays;
-  unsigned long filterData;
+  sequence<unsigned long> filterData = [];
   sequence<USVString> impressionSites = [];
   sequence<USVString> intermediarySites = [];
 
