@@ -67,11 +67,35 @@
         "href": "https://w3c.github.io/paint-timing/#painttimingmixin"
       },
       "PerformancePaintTiming": {
-        "fragment": "[Exposed=Window]\ninterface PerformancePaintTiming : PerformanceEntry {};",
+        "fragment": "[Exposed=Window]\ninterface PerformancePaintTiming : PerformanceEntry {\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "PerformancePaintTiming",
         "inheritance": "PerformanceEntry",
-        "members": [],
+        "members": [
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "href": "https://w3c.github.io/paint-timing/#dom-performancepainttiming-tojson"
+          }
+        ],
         "extAttrs": [
           {
             "type": "extended-attribute",

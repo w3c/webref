@@ -6,7 +6,7 @@
       "title": "Paint Timing",
       "url": "https://www.w3.org/TR/paint-timing/"
     },
-    "fragment": "[Exposed=Window]\ninterface PerformancePaintTiming : PerformanceEntry {};",
+    "fragment": "[Exposed=Window]\ninterface PerformancePaintTiming : PerformanceEntry {\n    [Default] object toJSON();\n};",
     "href": "https://w3c.github.io/paint-timing/#performancepainttiming"
   },
   "extended": [

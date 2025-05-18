@@ -1,6 +1,8 @@
 // Source: Paint Timing (https://www.w3.org/TR/paint-timing/)
 [Exposed=Window]
-interface PerformancePaintTiming : PerformanceEntry {};
+interface PerformancePaintTiming : PerformanceEntry {
+    [Default] object toJSON();
+};
 
 // Source: Paint Timing (https://www.w3.org/TR/paint-timing/)
 PerformancePaintTiming includes PaintTimingMixin;
