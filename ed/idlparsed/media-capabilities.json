@@ -773,7 +773,7 @@
         "href": "https://w3c.github.io/media-capabilities/#dictdef-mediacapabilitiesinfo"
       },
       "MediaCapabilitiesDecodingInfo": {
-        "fragment": "dictionary MediaCapabilitiesDecodingInfo : MediaCapabilitiesInfo {\n  required MediaKeySystemAccess? keySystemAccess;\n  MediaDecodingConfiguration configuration;\n};",
+        "fragment": "dictionary MediaCapabilitiesDecodingInfo : MediaCapabilitiesInfo {\n  required MediaKeySystemAccess? keySystemAccess;\n  required MediaDecodingConfiguration configuration;\n};",
         "type": "dictionary",
         "name": "MediaCapabilitiesDecodingInfo",
         "inheritance": "MediaCapabilitiesInfo",
@@ -807,7 +807,7 @@
               "idlType": "MediaDecodingConfiguration"
             },
             "default": null,
-            "required": false,
+            "required": true,
             "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitiesdecodinginfo-configuration"
           }
         ],
@@ -816,7 +816,7 @@
         "href": "https://w3c.github.io/media-capabilities/#dictdef-mediacapabilitiesdecodinginfo"
       },
       "MediaCapabilitiesEncodingInfo": {
-        "fragment": "dictionary MediaCapabilitiesEncodingInfo : MediaCapabilitiesInfo {\n  MediaEncodingConfiguration configuration;\n};",
+        "fragment": "dictionary MediaCapabilitiesEncodingInfo : MediaCapabilitiesInfo {\n  required MediaEncodingConfiguration configuration;\n};",
         "type": "dictionary",
         "name": "MediaCapabilitiesEncodingInfo",
         "inheritance": "MediaCapabilitiesInfo",
@@ -834,7 +834,7 @@
               "idlType": "MediaEncodingConfiguration"
             },
             "default": null,
-            "required": false,
+            "required": true,
             "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitiesencodinginfo-configuration"
           }
         ],

@@ -1879,7 +1879,7 @@
       "rationale": "return",
       "steps": [
         {
-          "html": "<p>Return <var>states</var> / (<var>states</var> - 1 + e<sup><var>epsilon</var></sup>).</p>"
+          "html": "<p>Return <var>states</var> / (<var>states</var> − 1 + e<sup><var>epsilon</var></sup>).</p>"
         }
       ]
     },
@@ -1913,10 +1913,10 @@
           "html": "<p>Let <var>pickRate</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-a-randomized-source-response-pick-rate\" id=\"ref-for-obtain-a-randomized-source-response-pick-rate①\">randomized response pick rate</a> with <var>states</var> and <var>epsilon</var>.</p>"
         },
         {
-          "html": "<p>Let <var>p</var> be <var>pickRate</var> * (<var>states</var> - 1) / <var>states</var>.</p>"
+          "html": "<p>Let <var>p</var> be <var>pickRate</var> × (<var>states</var> − 1) / <var>states</var>.</p>"
         },
         {
-          "html": "<p>Return log2(<var>states</var>) - h(<var>p</var>) - <var>p</var> * log2(<var>states</var> - 1) where h is the binary entropy function <a data-link-type=\"biblio\" href=\"https://wicg.github.io/attribution-reporting-api/#biblio-bin-ent\" title=\"Binary entropy function\">[BIN-ENT]</a>.</p>"
+          "html": "<p>Return log2(<var>states</var>) − h(<var>p</var>) − <var>p</var> × log2(<var>states</var> − 1) where h is the binary entropy function <a data-link-type=\"biblio\" href=\"https://wicg.github.io/attribution-reporting-api/#biblio-bin-ent\" title=\"Binary entropy function\">[BIN-ENT]</a>.</p>"
         }
       ]
     },
@@ -1927,7 +1927,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>totalStates</var> be <var>numTriggerStates</var> + <var>maxEventStates</var> * (<var>attributionScopeLimit</var> - 1).</p>"
+          "html": "<p>Let <var>totalStates</var> be <var>numTriggerStates</var> + <var>maxEventStates</var> × (<var>attributionScopeLimit</var> − 1).</p>"
         },
         {
           "html": "<p>Return log2(<var>totalStates</var>).</p>"
@@ -2678,7 +2678,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>aggregatableAttributionBudget</var> be <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#allowed-aggregatable-budget-per-source\" id=\"ref-for-allowed-aggregatable-budget-per-source④\">allowed aggregatable budget per source</a> - <var>aggregatableDebugBudget</var>.</p>"
+          "html": "<p>Let <var>aggregatableAttributionBudget</var> be <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#allowed-aggregatable-budget-per-source\" id=\"ref-for-allowed-aggregatable-budget-per-source④\">allowed aggregatable budget per source</a> − <var>aggregatableDebugBudget</var>.</p>"
         },
         {
           "html": "<p>Let <var>namedBudgets</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#parse-named-budgets-for-source\" id=\"ref-for-parse-named-budgets-for-source\">parsing named budgets for source</a> with <var>value</var>.</p>"
@@ -3554,6 +3554,18 @@
           ]
         },
         {
+          "html": "If the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#check-if-an-attribution-source-should-be-blocked-by-reporting-origin-per-site-limit\" id=\"ref-for-check-if-an-attribution-source-should-be-blocked-by-reporting-origin-per-site-limit\">check if an attribution source should be blocked by reporting-origin per site limit</a> with <var>source</var> is <strong>blocked</strong>:",
+          "rationale": "run",
+          "steps": [
+            {
+              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-debug-reports-on-source-registration\" id=\"ref-for-obtain-and-deliver-debug-reports-on-source-registration⑤\">obtain and deliver debug reports on source registration</a> with\n\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-reporting-origin-per-site-limit\" id=\"ref-for-source-debug-data-type-source-reporting-origin-per-site-limit①\">source-reporting-origin-per-site-limit</a></code>\" and <var>source</var>.</p>"
+            },
+            {
+              "html": "<p>Return.</p>"
+            }
+          ]
+        },
+        {
           "html": "<p>Let <var>destinationRateLimitResult</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#check-if-an-attribution-source-exceeds-the-time-based-destination-limits\" id=\"ref-for-check-if-an-attribution-source-exceeds-the-time-based-destination-limits\">check if an attribution source exceeds the time-based destination limit</a> with <var>source</var>.</p>"
         },
         {
@@ -3561,7 +3573,7 @@
           "rationale": "run",
           "steps": [
             {
-              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-debug-reports-on-source-registration\" id=\"ref-for-obtain-and-deliver-debug-reports-on-source-registration⑤\">obtain and deliver debug reports on source registration</a> with\n\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-destination-rate-limit\" id=\"ref-for-source-debug-data-type-source-destination-rate-limit①\">source-destination-rate-limit</a></code>\" and <var>source</var>.</p>"
+              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-debug-reports-on-source-registration\" id=\"ref-for-obtain-and-deliver-debug-reports-on-source-registration⑥\">obtain and deliver debug reports on source registration</a> with\n\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-destination-rate-limit\" id=\"ref-for-source-debug-data-type-source-destination-rate-limit①\">source-destination-rate-limit</a></code>\" and <var>source</var>.</p>"
             },
             {
               "html": "<p>Return.</p>"
@@ -3573,7 +3585,7 @@
           "rationale": "run",
           "steps": [
             {
-              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-debug-reports-on-source-registration\" id=\"ref-for-obtain-and-deliver-debug-reports-on-source-registration⑥\">obtain and deliver debug reports on source registration</a> with\n\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-destination-per-day-rate-limit\" id=\"ref-for-source-debug-data-type-source-destination-per-day-rate-limit①\">source-destination-per-day-rate-limit</a></code>\" and <var>source</var>.</p>"
+              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-debug-reports-on-source-registration\" id=\"ref-for-obtain-and-deliver-debug-reports-on-source-registration⑦\">obtain and deliver debug reports on source registration</a> with\n\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-destination-per-day-rate-limit\" id=\"ref-for-source-debug-data-type-source-destination-per-day-rate-limit①\">source-destination-per-day-rate-limit</a></code>\" and <var>source</var>.</p>"
             },
             {
               "html": "<p>Return.</p>"
@@ -3588,7 +3600,7 @@
           "rationale": "run",
           "steps": [
             {
-              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-debug-reports-on-source-registration\" id=\"ref-for-obtain-and-deliver-debug-reports-on-source-registration⑦\">obtain and deliver debug reports on source registration</a> with\n\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-destination-limit\" id=\"ref-for-source-debug-data-type-source-destination-limit②\">source-destination-limit</a></code>\" and <var>source</var>.</p>"
+              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-debug-reports-on-source-registration\" id=\"ref-for-obtain-and-deliver-debug-reports-on-source-registration⑧\">obtain and deliver debug reports on source registration</a> with\n\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-destination-limit\" id=\"ref-for-source-debug-data-type-source-destination-limit②\">source-destination-limit</a></code>\" and <var>source</var>.</p>"
             },
             {
               "html": "<p>Return.</p>"
@@ -3612,7 +3624,7 @@
           "rationale": "run",
           "steps": [
             {
-              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-debug-reports-on-source-registration\" id=\"ref-for-obtain-and-deliver-debug-reports-on-source-registration⑧\">obtain and deliver debug reports on source registration</a> with \"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-destination-global-rate-limit\" id=\"ref-for-source-debug-data-type-source-destination-global-rate-limit①\">source-destination-global-rate-limit</a></code>\", <var>source</var>, <var>isNoised</var>, and <var>destinationLimitReplaced</var>.</p>"
+              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-debug-reports-on-source-registration\" id=\"ref-for-obtain-and-deliver-debug-reports-on-source-registration⑨\">obtain and deliver debug reports on source registration</a> with \"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-destination-global-rate-limit\" id=\"ref-for-source-debug-data-type-source-destination-global-rate-limit①\">source-destination-global-rate-limit</a></code>\", <var>source</var>, <var>isNoised</var>, and <var>destinationLimitReplaced</var>.</p>"
             },
             {
               "html": "<p>Return.</p>"
@@ -3634,7 +3646,7 @@
               "rationale": "run",
               "steps": [
                 {
-                  "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-debug-reports-on-source-registration\" id=\"ref-for-obtain-and-deliver-debug-reports-on-source-registration⑨\">obtain and deliver debug reports on source registration</a> with \"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-reporting-origin-limit\" id=\"ref-for-source-debug-data-type-source-reporting-origin-limit①\">source-reporting-origin-limit</a></code>\", <var>source</var>, <var>isNoised</var>, and <var>destinationLimitReplaced</var>.</p>"
+                  "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-debug-reports-on-source-registration\" id=\"ref-for-obtain-and-deliver-debug-reports-on-source-registration①⓪\">obtain and deliver debug reports on source registration</a> with \"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-reporting-origin-limit\" id=\"ref-for-source-debug-data-type-source-reporting-origin-limit①\">source-reporting-origin-limit</a></code>\", <var>source</var>, <var>isNoised</var>, and <var>destinationLimitReplaced</var>.</p>"
                 },
                 {
                   "html": "<p>Return.</p>"
@@ -3686,7 +3698,7 @@
           ]
         },
         {
-          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-debug-reports-on-source-registration\" id=\"ref-for-obtain-and-deliver-debug-reports-on-source-registration①⓪\">obtain and deliver debug reports on source registration</a> with\n\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-success\" id=\"ref-for-source-debug-data-type-source-success③\">source-success</a></code>\", <var>source</var>, <var>isNoised</var>, and <var>destinationLimitReplaced</var>.</p>"
+          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-debug-reports-on-source-registration\" id=\"ref-for-obtain-and-deliver-debug-reports-on-source-registration①①\">obtain and deliver debug reports on source registration</a> with\n\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-success\" id=\"ref-for-source-debug-data-type-source-success③\">source-success</a></code>\", <var>source</var>, <var>isNoised</var>, and <var>destinationLimitReplaced</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append②②\">Append</a> <var>source</var> to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-cache\" id=\"ref-for-attribution-source-cache①②\">attribution source cache</a>.</p>"
@@ -4377,7 +4389,7 @@
     {
       "name": "match an attribution source against a filter config",
       "href": "https://wicg.github.io/attribution-reporting-api/#match-an-attribution-source-against-a-filter-config",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"match-an-attribution-source-against-a-filter-config\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">match an attribution source against a filter config</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑥⑧\">attribution source</a> <var>source</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#filter-config\" id=\"ref-for-filter-config①⑤\">filter config</a> <var>filter</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment②②\">moment</a> <var>moment</var>, and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean②⑦\">boolean</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"match an attribution source against a filter config\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"match-an-attribution-source-against-a-filter-config-isnegated\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>isNegated</var></dfn>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"match-an-attribution-source-against-a-filter-config\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">match an attribution source against a filter config</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑥⑧\">attribution source</a> <var>source</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#filter-config\" id=\"ref-for-filter-config①⑤\">filter config</a> <var>filter</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment②②\">moment</a> <var>moment</var>, and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean②⑦\">boolean</a> <var>isNegated</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -5613,7 +5625,7 @@
           "html": "<p>Let <var>r</var> be a random double between 0 (inclusive) and 1 (exclusive) with uniform probability.</p>"
         },
         {
-          "html": "<p>Return <var>triggerTime</var> + <var>r</var> * <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#randomized-aggregatable-attribution-report-delay\" id=\"ref-for-randomized-aggregatable-attribution-report-delay\">randomized aggregatable attribution report delay</a>.</p>"
+          "html": "<p>Return <var>triggerTime</var> + <var>r</var> × <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#randomized-aggregatable-attribution-report-delay\" id=\"ref-for-randomized-aggregatable-attribution-report-delay\">randomized aggregatable attribution report delay</a>.</p>"
         }
       ]
     },
@@ -5748,7 +5760,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>fakeSourceTime</var> be <var>trigger</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger-trigger-time\" id=\"ref-for-attribution-trigger-trigger-time①⑤\">trigger time</a> - <var>day</var> days.</p>"
+                  "html": "<p>Let <var>fakeSourceTime</var> be <var>trigger</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger-trigger-time\" id=\"ref-for-attribution-trigger-trigger-time①⑤\">trigger time</a> − <var>day</var> days.</p>"
                 },
                 {
                   "html": "If <var>roundedAttributedSourceTime</var> is not null and equals the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-rounded-source-time\" id=\"ref-for-obtain-rounded-source-time①\">obtaining rounded source time</a> with <var>fakeSourceTime</var>:",
