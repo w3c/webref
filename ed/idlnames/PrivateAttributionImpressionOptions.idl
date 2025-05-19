@@ -1,7 +1,7 @@
 // Source: Privacy-Preserving Attribution: Level 1 (https://w3c.github.io/ppa/)
 dictionary PrivateAttributionImpressionOptions {
   required unsigned long histogramIndex;
-  unsigned long filterData = 0;
+  unsigned long matchValue = 0;
   sequence<USVString> conversionSites = [];
   unsigned long lifetimeDays = 30;
 };

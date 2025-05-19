@@ -158,7 +158,7 @@
         "href": "https://w3c.github.io/ppa/#privateattribution"
       },
       "PrivateAttributionImpressionOptions": {
-        "fragment": "dictionary PrivateAttributionImpressionOptions {\n  required unsigned long histogramIndex;\n  unsigned long filterData = 0;\n  sequence<USVString> conversionSites = [];\n  unsigned long lifetimeDays = 30;\n};",
+        "fragment": "dictionary PrivateAttributionImpressionOptions {\n  required unsigned long histogramIndex;\n  unsigned long matchValue = 0;\n  sequence<USVString> conversionSites = [];\n  unsigned long lifetimeDays = 30;\n};",
         "type": "dictionary",
         "name": "PrivateAttributionImpressionOptions",
         "inheritance": null,
@@ -181,7 +181,7 @@
           },
           {
             "type": "field",
-            "name": "filterData",
+            "name": "matchValue",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -196,7 +196,7 @@
               "value": "0"
             },
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-privateattributionimpressionoptions-filterdata"
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionimpressionoptions-matchvalue"
           },
           {
             "type": "field",
@@ -251,7 +251,7 @@
         "href": "https://w3c.github.io/ppa/#dictdef-privateattributionimpressionoptions"
       },
       "PrivateAttributionConversionOptions": {
-        "fragment": "dictionary PrivateAttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  unsigned long lookbackDays;\n  sequence<unsigned long> filterData = [];\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> intermediarySites = [];\n\n  PrivateAttributionLogic logic = \"last-touch\";\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n};",
+        "fragment": "dictionary PrivateAttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  unsigned long lookbackDays;\n  sequence<unsigned long> matchValue = [];\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> intermediarySites = [];\n\n  PrivateAttributionLogic logic = \"last-touch\";\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n};",
         "type": "dictionary",
         "name": "PrivateAttributionConversionOptions",
         "inheritance": null,
@@ -325,7 +325,7 @@
           },
           {
             "type": "field",
-            "name": "filterData",
+            "name": "matchValue",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -349,7 +349,7 @@
               "value": []
             },
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-filterdata"
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-matchvalue"
           },
           {
             "type": "field",
