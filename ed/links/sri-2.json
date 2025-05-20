@@ -16,6 +16,7 @@
         ]
       },
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://dom.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {},
       "https://github.com/w3c/webappsec": {},
       "https://github.com/web-platform-tests/wpt/blob/master/subresource-integrity/subresource-integrity.html": {},
@@ -34,7 +35,10 @@
           "appendix-B.1"
         ]
       },
+      "https://url.spec.whatwg.org/": {},
+      "https://w3c.github.io/reporting/": {},
       "https://w3c.github.io/webappsec-csp/": {},
+      "https://webidl.spec.whatwg.org/": {},
       "https://wiki.whatwg.org/wiki/Link_Hashes": {},
       "https://wpt.fyi/results/subresource-integrity/subresource-integrity.html": {},
       "https://www.eff.org/https-everywhere": {},
@@ -46,6 +50,7 @@
       "https://www.rfc-editor.org/rfc/rfc6797": {},
       "https://www.rfc-editor.org/rfc/rfc7469": {},
       "https://www.rfc-editor.org/rfc/rfc8446": {},
+      "https://www.rfc-editor.org/rfc/rfc9651": {},
       "https://www.w3.org/Mail/Request": {},
       "https://www.w3.org/groups/wg/webappsec": {},
       "https://www.w3.org/groups/wg/webappsec/ipr": {},
@@ -59,21 +64,55 @@
     },
     "autolinks": {
       "https://csrc.nist.gov/publications/fips/fips180-4/fips-180-4.pdf": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "dom-document-url"
+        ]
+      },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "concept-request",
+          "concept-request-destination",
+          "concept-header-list",
+          "header-name",
+          "concept-header-list-get-structured-header",
+          "concept-response",
+          "concept-response-header-list",
+          "header-list-contains",
+          "header-value",
+          "concept-request-policy-container",
+          "concept-request-mode",
+          "concept-request-client",
+          "concept-request-url",
+          "main-fetch",
+          "concept-network-error",
           "cors-protocol"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
           "concept-origin",
-          "same-origin"
+          "same-origin",
+          "policy-container",
+          "creating-a-policy-container-from-a-fetch-response"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "concept-document-window"
         ]
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
+          "concept-settings-object-global",
           "secure-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "workerglobalscope",
+          "concept-workerglobalscope-url"
         ]
       },
       "https://infra.spec.whatwg.org/": {
@@ -85,7 +124,12 @@
           "iteration-continue",
           "list-append",
           "set-append",
-          "list-is-empty"
+          "list-is-empty",
+          "struct",
+          "list",
+          "map-exists",
+          "assert",
+          "list-iterate"
         ]
       },
       "https://tools.ietf.org/html/rfc5234": {
@@ -104,10 +148,46 @@
           "link"
         ]
       },
+      "https://tools.ietf.org/html/rfc9651": {
+        "anchors": [
+          "name-dictionaries",
+          "name-inner-lists",
+          "name-tokens"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url"
+        ]
+      },
+      "https://w3c.github.io/reporting/": {
+        "anchors": [
+          "reportbody",
+          "generate-and-queue-a-report",
+          "generate-and-queue-a-report-context",
+          "generate-and-queue-a-report-type",
+          "generate-and-queue-a-report-destination",
+          "generate-and-queue-a-report-data"
+        ]
+      },
       "https://w3c.github.io/webappsec-csp/": {
         "anchors": [
           "grammardef-base64-value",
           "grammardef-hash-algorithm"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "Default",
+          "idl-object",
+          "idl-USVString",
+          "idl-boolean"
+        ]
+      },
+      "https://www.w3.org/TR/CSP3/": {
+        "anchors": [
+          "strip-url-for-use-in-reports"
         ]
       }
     }

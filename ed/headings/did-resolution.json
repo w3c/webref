@@ -1,0 +1,462 @@
+{
+  "spec": {
+    "title": "Decentralized Identifier Resolution (DID Resolution) v0.3",
+    "url": "https://w3c.github.io/did-resolution/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/did-resolution/#title",
+      "level": 1,
+      "title": "Decentralized Identifier Resolution (DID Resolution) v0.3"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://w3c.github.io/did-resolution/#subtitle",
+      "level": 2,
+      "title": "Algorithms and guidelines for resolving DIDs and dereferencing DID URLs"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/did-resolution/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/did-resolution/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/did-resolution/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "number": "1.1"
+    },
+    {
+      "id": "audience",
+      "href": "https://w3c.github.io/did-resolution/#audience",
+      "level": 3,
+      "title": "Audience",
+      "number": "1.2"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/did-resolution/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "number": "2"
+    },
+    {
+      "id": "did-parameters",
+      "href": "https://w3c.github.io/did-resolution/#did-parameters",
+      "level": 2,
+      "title": "DID Parameters",
+      "number": "3"
+    },
+    {
+      "id": "resolving",
+      "href": "https://w3c.github.io/did-resolution/#resolving",
+      "level": 2,
+      "title": "DID Resolution",
+      "number": "4"
+    },
+    {
+      "id": "did-resolution-options",
+      "href": "https://w3c.github.io/did-resolution/#did-resolution-options",
+      "level": 3,
+      "title": "DID Resolution Options",
+      "number": "4.1"
+    },
+    {
+      "id": "did-resolution-metadata",
+      "href": "https://w3c.github.io/did-resolution/#did-resolution-metadata",
+      "level": 3,
+      "title": "DID Resolution Metadata",
+      "number": "4.2"
+    },
+    {
+      "id": "did-document-metadata",
+      "href": "https://w3c.github.io/did-resolution/#did-document-metadata",
+      "level": 3,
+      "title": "DID Document Metadata",
+      "number": "4.3"
+    },
+    {
+      "id": "resolving-algorithm",
+      "href": "https://w3c.github.io/did-resolution/#resolving-algorithm",
+      "level": 3,
+      "title": "Algorithm",
+      "number": "4.4"
+    },
+    {
+      "id": "dereferencing",
+      "href": "https://w3c.github.io/did-resolution/#dereferencing",
+      "level": 2,
+      "title": "DID URL Dereferencing",
+      "number": "5"
+    },
+    {
+      "id": "did-url-dereferencing-options",
+      "href": "https://w3c.github.io/did-resolution/#did-url-dereferencing-options",
+      "level": 3,
+      "title": "DID URL Dereferencing Options",
+      "number": "5.1"
+    },
+    {
+      "id": "did-url-dereferencing-metadata",
+      "href": "https://w3c.github.io/did-resolution/#did-url-dereferencing-metadata",
+      "level": 3,
+      "title": "DID URL Dereferencing Metadata",
+      "number": "5.2"
+    },
+    {
+      "id": "dereferencing-algorithm",
+      "href": "https://w3c.github.io/did-resolution/#dereferencing-algorithm",
+      "level": 3,
+      "title": "Algorithm",
+      "number": "5.3"
+    },
+    {
+      "id": "dereferencing-algorithm-resource",
+      "href": "https://w3c.github.io/did-resolution/#dereferencing-algorithm-resource",
+      "level": 4,
+      "title": "Dereferencing the Resource",
+      "number": "5.3.1"
+    },
+    {
+      "id": "dereferencing-algorithm-fragment",
+      "href": "https://w3c.github.io/did-resolution/#dereferencing-algorithm-fragment",
+      "level": 4,
+      "title": "Dereferencing the Fragment",
+      "number": "5.3.2"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/did-resolution/#examples",
+      "level": 3,
+      "title": "Examples",
+      "number": "5.4"
+    },
+    {
+      "id": "metadata-structure",
+      "href": "https://w3c.github.io/did-resolution/#metadata-structure",
+      "level": 2,
+      "title": "Metadata Structure",
+      "number": "6"
+    },
+    {
+      "id": "architectures",
+      "href": "https://w3c.github.io/did-resolution/#architectures",
+      "level": 2,
+      "title": "DID Resolution Architectures",
+      "number": "7"
+    },
+    {
+      "id": "method-architectures",
+      "href": "https://w3c.github.io/did-resolution/#method-architectures",
+      "level": 3,
+      "title": "Method Architectures",
+      "number": "7.1"
+    },
+    {
+      "id": "resolver-architectures",
+      "href": "https://w3c.github.io/did-resolution/#resolver-architectures",
+      "level": 3,
+      "title": "Resolver Architectures",
+      "number": "7.2"
+    },
+    {
+      "id": "resolver-architectures-proxied",
+      "href": "https://w3c.github.io/did-resolution/#resolver-architectures-proxied",
+      "level": 4,
+      "title": "Proxied Resolution",
+      "number": "7.2.1"
+    },
+    {
+      "id": "resolver-architectures-client-side",
+      "href": "https://w3c.github.io/did-resolution/#resolver-architectures-client-side",
+      "level": 4,
+      "title": "Client-Side Dereferencing",
+      "number": "7.2.2"
+    },
+    {
+      "id": "did-resolution-result",
+      "href": "https://w3c.github.io/did-resolution/#did-resolution-result",
+      "level": 2,
+      "title": "DID Resolution Result",
+      "number": "8"
+    },
+    {
+      "id": "example",
+      "href": "https://w3c.github.io/did-resolution/#example",
+      "level": 3,
+      "title": "Example",
+      "number": "8.1"
+    },
+    {
+      "id": "output-diddocument",
+      "href": "https://w3c.github.io/did-resolution/#output-diddocument",
+      "level": 3,
+      "title": "DID Document",
+      "number": "8.2"
+    },
+    {
+      "id": "output-resolutionmetadata",
+      "href": "https://w3c.github.io/did-resolution/#output-resolutionmetadata",
+      "level": 3,
+      "title": "DID Resolution Metadata",
+      "number": "8.3"
+    },
+    {
+      "id": "output-documentmetadata",
+      "href": "https://w3c.github.io/did-resolution/#output-documentmetadata",
+      "level": 3,
+      "title": "DID Document Metadata",
+      "number": "8.4"
+    },
+    {
+      "id": "did-url-dereferencing-result",
+      "href": "https://w3c.github.io/did-resolution/#did-url-dereferencing-result",
+      "level": 2,
+      "title": "DID URL Dereferencing Result",
+      "number": "9"
+    },
+    {
+      "id": "example-0",
+      "href": "https://w3c.github.io/did-resolution/#example-0",
+      "level": 3,
+      "title": "Example",
+      "number": "9.1"
+    },
+    {
+      "id": "output-content",
+      "href": "https://w3c.github.io/did-resolution/#output-content",
+      "level": 3,
+      "title": "Content",
+      "number": "9.2"
+    },
+    {
+      "id": "output-dereferencingmetadata",
+      "href": "https://w3c.github.io/did-resolution/#output-dereferencingmetadata",
+      "level": 3,
+      "title": "DID URL Dereferencing Metadata",
+      "number": "9.3"
+    },
+    {
+      "id": "output-contentmetadata",
+      "href": "https://w3c.github.io/did-resolution/#output-contentmetadata",
+      "level": 3,
+      "title": "Content Metadata",
+      "number": "9.4"
+    },
+    {
+      "id": "errors",
+      "href": "https://w3c.github.io/did-resolution/#errors",
+      "level": 2,
+      "title": "10. Errors"
+    },
+    {
+      "id": "invaliddid",
+      "href": "https://w3c.github.io/did-resolution/#invaliddid",
+      "level": 3,
+      "title": "invalidDid",
+      "number": "10.1"
+    },
+    {
+      "id": "invaliddidurl",
+      "href": "https://w3c.github.io/did-resolution/#invaliddidurl",
+      "level": 3,
+      "title": "invalidDidUrl",
+      "number": "10.2"
+    },
+    {
+      "id": "notfound",
+      "href": "https://w3c.github.io/did-resolution/#notfound",
+      "level": 3,
+      "title": "notFound",
+      "number": "10.3"
+    },
+    {
+      "id": "representationnotsupported",
+      "href": "https://w3c.github.io/did-resolution/#representationnotsupported",
+      "level": 3,
+      "title": "representationNotSupported",
+      "number": "10.4"
+    },
+    {
+      "id": "methodnotsupported",
+      "href": "https://w3c.github.io/did-resolution/#methodnotsupported",
+      "level": 3,
+      "title": "methodNotSupported",
+      "number": "10.5"
+    },
+    {
+      "id": "internalerror",
+      "href": "https://w3c.github.io/did-resolution/#internalerror",
+      "level": 3,
+      "title": "internalError",
+      "number": "10.6"
+    },
+    {
+      "id": "invalidpublickey",
+      "href": "https://w3c.github.io/did-resolution/#invalidpublickey",
+      "level": 3,
+      "title": "invalidPublicKey",
+      "number": "10.7"
+    },
+    {
+      "id": "invalidpublickeylength",
+      "href": "https://w3c.github.io/did-resolution/#invalidpublickeylength",
+      "level": 3,
+      "title": "invalidPublicKeyLength",
+      "number": "10.8"
+    },
+    {
+      "id": "invalidpublickeytype",
+      "href": "https://w3c.github.io/did-resolution/#invalidpublickeytype",
+      "level": 3,
+      "title": "invalidPublicKeyType",
+      "number": "10.9"
+    },
+    {
+      "id": "unsupportedpublickeytype",
+      "href": "https://w3c.github.io/did-resolution/#unsupportedpublickeytype",
+      "level": 3,
+      "title": "unsupportedPublicKeyType",
+      "number": "10.10"
+    },
+    {
+      "id": "bindings",
+      "href": "https://w3c.github.io/did-resolution/#bindings",
+      "level": 2,
+      "title": "11. Bindings"
+    },
+    {
+      "id": "bindings-https",
+      "href": "https://w3c.github.io/did-resolution/#bindings-https",
+      "level": 3,
+      "title": "HTTP(S) Binding",
+      "number": "11.1"
+    },
+    {
+      "id": "did-resolution-examples",
+      "href": "https://w3c.github.io/did-resolution/#did-resolution-examples",
+      "level": 3,
+      "title": "DID Resolution Examples",
+      "number": "11.2"
+    },
+    {
+      "id": "did-url-dereferencing-examples",
+      "href": "https://w3c.github.io/did-resolution/#did-url-dereferencing-examples",
+      "level": 3,
+      "title": "DID URL Dereferencing Examples",
+      "number": "11.3"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/did-resolution/#security-considerations",
+      "level": 2,
+      "title": "12. Security Considerations"
+    },
+    {
+      "id": "authentication",
+      "href": "https://w3c.github.io/did-resolution/#authentication",
+      "level": 3,
+      "title": "Authentication/Authorization",
+      "number": "12.1"
+    },
+    {
+      "id": "caching",
+      "href": "https://w3c.github.io/did-resolution/#caching",
+      "level": 3,
+      "title": "Caching",
+      "number": "12.2"
+    },
+    {
+      "id": "versioning",
+      "href": "https://w3c.github.io/did-resolution/#versioning",
+      "level": 3,
+      "title": "Versioning",
+      "number": "12.3"
+    },
+    {
+      "id": "non-did-identifiers",
+      "href": "https://w3c.github.io/did-resolution/#non-did-identifiers",
+      "level": 3,
+      "title": "Non-DID Identifiers",
+      "number": "12.4"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://w3c.github.io/did-resolution/#privacy-considerations",
+      "level": 2,
+      "title": "13. Privacy Considerations"
+    },
+    {
+      "id": "profiling-requesters",
+      "href": "https://w3c.github.io/did-resolution/#profiling-requesters",
+      "level": 3,
+      "title": "Non-DID Identifiers",
+      "number": "13.1"
+    },
+    {
+      "id": "future-work",
+      "href": "https://w3c.github.io/did-resolution/#future-work",
+      "level": 2,
+      "title": "14. Future Work"
+    },
+    {
+      "id": "redirect",
+      "href": "https://w3c.github.io/did-resolution/#redirect",
+      "level": 3,
+      "title": "Redirect",
+      "number": "14.1"
+    },
+    {
+      "id": "proxy",
+      "href": "https://w3c.github.io/did-resolution/#proxy",
+      "level": 3,
+      "title": "Proxy",
+      "number": "14.2"
+    },
+    {
+      "id": "json-pointer",
+      "href": "https://w3c.github.io/did-resolution/#json-pointer",
+      "level": 3,
+      "title": "JSON Pointer",
+      "number": "14.3"
+    },
+    {
+      "id": "did-resolution-resources",
+      "href": "https://w3c.github.io/did-resolution/#did-resolution-resources",
+      "level": 2,
+      "title": "DID Resolution Resources",
+      "number": "A"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/did-resolution/#references",
+      "level": 2,
+      "title": "References",
+      "number": "B"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/did-resolution/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "B.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/did-resolution/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "B.2"
+    }
+  ]
+}
