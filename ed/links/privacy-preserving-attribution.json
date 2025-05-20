@@ -22,7 +22,6 @@
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://doi.org/10.1561/0400000042": {},
       "https://drafts.csswg.org/css-2024/": {},
-      "https://drafts.csswg.org/css-page-floats/": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://httpwg.org/specs/rfc6265.html": {},
       "https://infra.spec.whatwg.org/": {},
@@ -31,9 +30,18 @@
       "https://url.spec.whatwg.org/": {},
       "https://w3c-fedid.github.io/FedCM/": {},
       "https://w3c.github.io/hr-time/": {},
-      "https://w3c.github.io/webappsec-clear-site-data/": {},
+      "https://w3c.github.io/webappsec-clear-site-data/": {
+        "anchors": [
+          "header",
+          "clear-response"
+        ]
+      },
       "https://w3c.github.io/webappsec-permissions-policy/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-double"
+        ]
+      },
       "https://www.bea.gov/research/papers/2017/measuring-free-digital-economy-within-gdp-and-productivity-accounts": {},
       "https://www.europarl.europa.eu/thinktank/en/document/IPOL_STU(2021)662913": {},
       "https://www.rfc-editor.org/rfc/rfc3492": {},
@@ -45,11 +53,6 @@
           "user"
         ]
       },
-      "https://drafts.csswg.org/css-page-floats-3/": {
-        "anchors": [
-          "float"
-        ]
-      },
       "https://html.spec.whatwg.org/": {
         "anchors": [
           "site",
@@ -58,10 +61,15 @@
           "child-navigable",
           "concept-origin",
           "same-site",
-          "scheme-and-host",
           "concept-origin-scheme",
           "concept-origin-host",
+          "scheme-and-host",
           "obtain-a-site"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "concept-origin-tuple"
         ]
       },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
@@ -93,20 +101,24 @@
           "user-agent",
           "implementation-defined",
           "sets",
+          "list-contain",
+          "list-iterate",
+          "list-remove",
+          "iteration-continue",
+          "list-size",
           "string",
           "ordered-map",
+          "32-bit-unsigned-integer",
           "tuple",
           "map-exists",
           "map-set",
           "map-get",
+          "map-entry",
+          "map-key",
           "list-is-empty",
           "set-extend",
           "list",
-          "list-size",
           "list-item",
-          "list-iterate",
-          "iteration-continue",
-          "list-contain",
           "set-append",
           "assert"
         ]
@@ -118,8 +130,8 @@
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
-          "concept-host-parser",
           "host-registrable-domain",
+          "concept-host-parser",
           "domain-label"
         ]
       },
@@ -168,7 +180,8 @@
           "idl-Uint8Array",
           "idl-promise",
           "exceptiondef-rangeerror",
-          "syntaxerror"
+          "syntaxerror",
+          "exceptiondef-referenceerror"
         ]
       },
       "https://www.w3.org/TR/fingerprinting-guidance/": {

@@ -330,24 +330,10 @@
     },
     {
       "name": "progress()",
-      "prose": "The progress() functional notation returns a <number> value representing the position of one calculation (the progress value) between two other calculations (the progress start value and progress end value). progress() is a math function.",
+      "prose": "The progress() functional notation represents the proportional distance of a given value (the progress value) from one value (the progress start value) to another value (the progress end value), each represented as a calculation. It is a math function, and can be input into other calculations such as a math function or a mix notation.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-progress",
       "type": "function",
       "value": "progress(<calc-sum>, <calc-sum>, <calc-sum>)"
-    },
-    {
-      "name": "media-progress()",
-      "prose": "Similar to the progress() notation, the media-progress() functional notation returns a <number> value representing current value of the specified media query [MEDIAQUERIES-4] as a progress value between two explicit values of the media query (as the progress start value and progress end value).",
-      "href": "https://drafts.csswg.org/css-values-5/#funcdef-media-progress",
-      "type": "function",
-      "value": "media-progress(<mf-name>, <calc-sum>, <calc-sum>)"
-    },
-    {
-      "name": "container-progress()",
-      "prose": "The container-progress() functional notation is identical to the media-progress() functional notation, except that it accepts container features [CSS-CONTAIN-3] in place of media features.",
-      "href": "https://drafts.csswg.org/css-values-5/#funcdef-container-progress",
-      "type": "function",
-      "value": "container-progress(<mf-name> [ of <container-name> ]?, <calc-sum>, <calc-sum>)"
     },
     {
       "name": "<progress>",
@@ -626,12 +612,12 @@
       "name": "<calc-size-basis>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-size-basis",
       "type": "type",
-      "value": "[ <intrinsic-size-keyword> | <calc-size()> | any | <calc-sum> ]"
+      "value": "[ <size-keyword> | <calc-size()> | any | <calc-sum> ]"
     },
     {
-      "name": "<intrinsic-size-keyword>",
-      "prose": "The <intrinsic-size-keyword> production matches any intrinsic size keywords allowed in the context. For example, in width, it matches auto, min-content, stretch, etc.",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-intrinsic-size-keyword",
+      "name": "<size-keyword>",
+      "prose": "The <size-keyword> production matches any sizing keywords allowed in the context. For example, in width, it matches auto, min-content, stretch, etc.",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-size-keyword",
       "type": "type"
     }
   ],
@@ -645,11 +631,6 @@
       "msg": "Missing definition",
       "name": "<boolean-expr-group>",
       "value": "<test> | ( <boolean-expr[ <test> ]> ) | <general-enclosed>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "progress-function()",
-      "value": "progress-function( progress value, start value, end value )"
     },
     {
       "msg": "Missing definition",
