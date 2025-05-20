@@ -1,0 +1,29 @@
+{
+  "name": "IntegrityPolicyViolationReportBody",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Subresource Integrity",
+      "url": "https://www.w3.org/TR/sri-2/"
+    },
+    "fragment": "[Exposed=Window]\ninterface IntegrityPolicyViolationReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute USVString documentURL;\n  readonly attribute USVString blockedURL;\n  readonly attribute USVString destination;\n  readonly attribute boolean   reportOnly;\n};",
+    "href": "https://w3c.github.io/webappsec-subresource-integrity/#integritypolicyviolationreportbody"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "ReportBody",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Reporting API",
+        "url": "https://www.w3.org/TR/reporting-1/"
+      },
+      "fragment": "[Exposed=(Window,Worker)]\ninterface ReportBody {\n  [Default] object toJSON();\n};",
+      "href": "https://w3c.github.io/reporting/#reportbody"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

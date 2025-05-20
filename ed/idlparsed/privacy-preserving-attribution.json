@@ -1,0 +1,723 @@
+{
+  "spec": {
+    "title": "Privacy-Preserving Attribution: Level 1",
+    "url": "https://w3c.github.io/ppa/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "PrivateAttributionAggregationServices",
+          "PrivateAttribution",
+          "PrivateAttribution",
+          "PrivateAttribution"
+        ]
+      }
+    },
+    "idlNames": {
+      "PrivateAttributionProtocol": {
+        "fragment": "enum PrivateAttributionProtocol { \"dap-12-histogram\", \"tee-00\" };",
+        "type": "enum",
+        "name": "PrivateAttributionProtocol",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "dap-12-histogram",
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionprotocol-dap-12-histogram"
+          },
+          {
+            "type": "enum-value",
+            "value": "tee-00",
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionprotocol-tee-00"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/ppa/#enumdef-privateattributionprotocol"
+      },
+      "PrivateAttributionAggregationService": {
+        "fragment": "dictionary PrivateAttributionAggregationService {\n  required DOMString protocol;\n};",
+        "type": "dictionary",
+        "name": "PrivateAttributionAggregationService",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "protocol",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionaggregationservice-protocol"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/ppa/#dictdef-privateattributionaggregationservice"
+      },
+      "PrivateAttributionAggregationServices": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PrivateAttributionAggregationServices {\n  readonly maplike<USVString, PrivateAttributionAggregationService>;\n};",
+        "type": "interface",
+        "name": "PrivateAttributionAggregationServices",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "maplike",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "USVString"
+              },
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "PrivateAttributionAggregationService"
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": true,
+            "async": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://w3c.github.io/ppa/#privateattributionaggregationservices"
+      },
+      "PrivateAttribution": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PrivateAttribution {\n  readonly attribute PrivateAttributionAggregationServices aggregationServices;\n};",
+        "type": "interface",
+        "name": "PrivateAttribution",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "aggregationServices",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PrivateAttributionAggregationServices"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/ppa/#dom-privateattribution-aggregationservices"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://w3c.github.io/ppa/#privateattribution"
+      },
+      "PrivateAttributionImpressionOptions": {
+        "fragment": "dictionary PrivateAttributionImpressionOptions {\n  required unsigned long histogramIndex;\n  unsigned long matchValue = 0;\n  sequence<USVString> conversionSites = [];\n  unsigned long lifetimeDays = 30;\n};",
+        "type": "dictionary",
+        "name": "PrivateAttributionImpressionOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "histogramIndex",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionimpressionoptions-histogramindex"
+          },
+          {
+            "type": "field",
+            "name": "matchValue",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionimpressionoptions-matchvalue"
+          },
+          {
+            "type": "field",
+            "name": "conversionSites",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionimpressionoptions-conversionsites"
+          },
+          {
+            "type": "field",
+            "name": "lifetimeDays",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "30"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionimpressionoptions-lifetimedays"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/ppa/#dictdef-privateattributionimpressionoptions"
+      },
+      "PrivateAttributionConversionOptions": {
+        "fragment": "dictionary PrivateAttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  unsigned long lookbackDays;\n  sequence<unsigned long> matchValue = [];\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> intermediarySites = [];\n\n  PrivateAttributionLogic logic = \"last-touch\";\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n};",
+        "type": "dictionary",
+        "name": "PrivateAttributionConversionOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "aggregationService",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-aggregationservice"
+          },
+          {
+            "type": "field",
+            "name": "epsilon",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "1.0"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-epsilon"
+          },
+          {
+            "type": "field",
+            "name": "histogramSize",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-histogramsize"
+          },
+          {
+            "type": "field",
+            "name": "lookbackDays",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-lookbackdays"
+          },
+          {
+            "type": "field",
+            "name": "matchValue",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-matchvalue"
+          },
+          {
+            "type": "field",
+            "name": "impressionSites",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-impressionsites"
+          },
+          {
+            "type": "field",
+            "name": "intermediarySites",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-intermediarysites"
+          },
+          {
+            "type": "field",
+            "name": "logic",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PrivateAttributionLogic"
+            },
+            "default": {
+              "type": "string",
+              "value": "last-touch"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-logic"
+          },
+          {
+            "type": "field",
+            "name": "value",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "1"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-value"
+          },
+          {
+            "type": "field",
+            "name": "maxValue",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "1"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-maxvalue"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/ppa/#dictdef-privateattributionconversionoptions"
+      },
+      "PrivateAttributionLogic": {
+        "fragment": "enum PrivateAttributionLogic {\n  \"last-touch\",\n};",
+        "type": "enum",
+        "name": "PrivateAttributionLogic",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "last-touch",
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionlogic-last-touch"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/ppa/#enumdef-privateattributionlogic"
+      },
+      "PrivateAttributionConversionResult": {
+        "fragment": "dictionary PrivateAttributionConversionResult {\n  required Uint8Array report;\n};",
+        "type": "dictionary",
+        "name": "PrivateAttributionConversionResult",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "report",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Uint8Array"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionresult-report"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/ppa/#dictdef-privateattributionconversionresult"
+      }
+    },
+    "idlExtendedNames": {
+      "Navigator": [
+        {
+          "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute PrivateAttribution privateAttribution;\n};",
+          "type": "interface",
+          "name": "Navigator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "privateAttribution",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "PrivateAttribution"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SecureContext",
+                  "rhs": null,
+                  "arguments": []
+                },
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true,
+              "href": "https://w3c.github.io/ppa/#dom-navigator-privateattribution"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "PrivateAttribution": [
+        {
+          "fragment": "[SecureContext, Exposed=Window]\npartial interface PrivateAttribution {\n  undefined saveImpression(PrivateAttributionImpressionOptions options);\n};",
+          "type": "interface",
+          "name": "PrivateAttribution",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "saveImpression",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "PrivateAttributionImpressionOptions"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://w3c.github.io/ppa/#dom-privateattribution-saveimpression-options"
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "SecureContext",
+              "rhs": null,
+              "arguments": []
+            },
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
+          "partial": true
+        },
+        {
+          "fragment": "[SecureContext, Exposed=Window]\npartial interface PrivateAttribution {\n  Promise<PrivateAttributionConversionResult> measureConversion(PrivateAttributionConversionOptions options);\n};",
+          "type": "interface",
+          "name": "PrivateAttribution",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "measureConversion",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "PrivateAttributionConversionResult"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "PrivateAttributionConversionOptions"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://w3c.github.io/ppa/#dom-privateattribution-measureconversion-options"
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "SecureContext",
+              "rhs": null,
+              "arguments": []
+            },
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "PrivateAttributionAggregationServices",
+        "PrivateAttribution",
+        "PrivateAttribution",
+        "PrivateAttribution"
+      ]
+    },
+    "dependencies": {
+      "Navigator": [
+        "PrivateAttribution"
+      ],
+      "PrivateAttributionAggregationService": [],
+      "PrivateAttributionAggregationServices": [
+        "PrivateAttributionAggregationService"
+      ],
+      "PrivateAttribution": [
+        "PrivateAttributionAggregationServices",
+        "PrivateAttributionImpressionOptions",
+        "PrivateAttributionConversionResult",
+        "PrivateAttributionConversionOptions"
+      ],
+      "PrivateAttributionImpressionOptions": [],
+      "PrivateAttributionConversionOptions": [
+        "PrivateAttributionLogic"
+      ],
+      "PrivateAttributionConversionResult": [
+        "Uint8Array"
+      ]
+    },
+    "externalDependencies": [
+      "Navigator",
+      "Uint8Array"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

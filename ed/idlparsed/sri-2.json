@@ -1,0 +1,142 @@
+{
+  "spec": {
+    "title": "Subresource Integrity",
+    "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "IntegrityPolicyViolationReportBody"
+        ]
+      }
+    },
+    "idlNames": {
+      "IntegrityPolicyViolationReportBody": {
+        "fragment": "[Exposed=Window]\ninterface IntegrityPolicyViolationReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute USVString documentURL;\n  readonly attribute USVString blockedURL;\n  readonly attribute USVString destination;\n  readonly attribute boolean   reportOnly;\n};",
+        "type": "interface",
+        "name": "IntegrityPolicyViolationReportBody",
+        "inheritance": "ReportBody",
+        "members": [
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "href": "https://w3c.github.io/webappsec-subresource-integrity/#dom-integritypolicyviolationreportbody-tojson"
+          },
+          {
+            "type": "attribute",
+            "name": "documentURL",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-subresource-integrity/#dom-integritypolicyviolationreportbody-documenturl"
+          },
+          {
+            "type": "attribute",
+            "name": "blockedURL",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-subresource-integrity/#dom-integritypolicyviolationreportbody-blockedurl"
+          },
+          {
+            "type": "attribute",
+            "name": "destination",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-subresource-integrity/#dom-integritypolicyviolationreportbody-destination"
+          },
+          {
+            "type": "attribute",
+            "name": "reportOnly",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-subresource-integrity/#dom-integritypolicyviolationreportbody-reportonly"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://w3c.github.io/webappsec-subresource-integrity/#integritypolicyviolationreportbody"
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "IntegrityPolicyViolationReportBody"
+      ]
+    },
+    "dependencies": {
+      "IntegrityPolicyViolationReportBody": [
+        "ReportBody"
+      ]
+    },
+    "externalDependencies": [
+      "ReportBody"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

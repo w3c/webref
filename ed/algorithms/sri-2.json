@@ -156,6 +156,170 @@
           "html": "<p>Return <code>false</code>.</p>"
         }
       ]
+    },
+    {
+      "name": "processing an integrity policy",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#processing-an-integrity-policy",
+      "html": "When <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"processing-an-integrity-policy\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">processing an integrity policy</dfn>, with a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list\">header list</a> <var>headers</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-name\" id=\"ref-for-header-name\">header name</a> <var>headerName</var>, do the following:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>integrityPolicy</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#integrity-policy-struct\" id=\"ref-for-integrity-policy-struct\">integrity policy struct</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>dictionary</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header\">getting a structured field value</a> from <var>headers</var> given <var>headerName</var> and \"<code>dictionary</code>\".</p>"
+        },
+        {
+          "html": "<p>If <var>dictionary</var>[\"<code>sources</code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②\">exist</a> or if its value <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain③\">contains</a> \"<code>inline</code>\", <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">append</a> \"<code>inline</code>\" to <var>integrityPolicy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#sources\" id=\"ref-for-sources\">sources</a>.</p>"
+        },
+        {
+          "html": "If <var>dictionary</var>[\"<code>blocked-destinations</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain④\">exists</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If its value <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑤\">contains</a> \"<code>script</code>\", <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">append</a> \"<code>script</code>\" to <var>integrityPolicy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#blocked-destinations\" id=\"ref-for-blocked-destinations\">blocked destinations</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>dictionary</var>[\"<code>endpoints</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>integrityPolicy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#endpoints\" id=\"ref-for-endpoints\">endpoints</a> to <var>dictionary</var>['endpoints'].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>integrityPolicy</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "processing an integrity policy",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#processing-an-integrity-policy",
+      "html": "When <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"processing-an-integrity-policy\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">processing an integrity policy</dfn>, with a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list\">header list</a> <var>headers</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-name\" id=\"ref-for-header-name\">header name</a> <var>headerName</var>, do the following:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>headers</var> be <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>headers</var> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-contains\" id=\"ref-for-header-list-contains\">contains</a> <code>integrity-policy</code>,\n set <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#integrity-policy\" id=\"ref-for-integrity-policy\">integrity policy</a> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#processing-an-integrity-policy\" id=\"ref-for-processing-an-integrity-policy\">processing an integrity policy</a> with the corresponding <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value\">header value</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>headers</var> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-contains\" id=\"ref-for-header-list-contains①\">contains</a> <code>integrity-policy-report-only</code>,\n set <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#report-only-integrity-policy\" id=\"ref-for-report-only-integrity-policy\">report only integrity policy</a> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#processing-an-integrity-policy\" id=\"ref-for-processing-an-integrity-policy①\">processing an integrity policy</a> with the corresponding <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value①\">header value</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "processing an integrity policy",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#processing-an-integrity-policy",
+      "html": "When <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"processing-an-integrity-policy\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">processing an integrity policy</dfn>, with a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list\">header list</a> <var>headers</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-name\" id=\"ref-for-header-name\">header name</a> <var>headerName</var>, do the following:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>policyContainer</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container\">policy container</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#integrity-metadata\" id=\"ref-for-integrity-metadata⑦\">integrity metadata</a> is not the empty string\n and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a> is either \"<code>cors</code>\" or \"<code>same-origin</code>\",\n return \"Allowed\".</p>"
+        },
+        {
+          "html": "<p>Let <var>policy</var> be <var>policyContainer</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#integrity-policy\" id=\"ref-for-integrity-policy①\">integrity policy</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>reportPolicy</var> be <var>policyContainer</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#report-only-integrity-policy\" id=\"ref-for-report-only-integrity-policy①\">report only integrity policy</a>.</p>"
+        },
+        {
+          "html": "<p>If both <var>policy</var> and <var>reportPolicy</var> are empty <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#integrity-policy-struct\" id=\"ref-for-integrity-policy-struct①\">integrity policy struct</a>s, return \"Allowed\".</p>"
+        },
+        {
+          "html": "<p>Let <var>global</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>global</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code> nor a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-workerglobalscope\">WorkerGlobalScope</a></code>, return \"<code>Allowed</code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>block</var> be a boolean, initially false.</p>"
+        },
+        {
+          "html": "<p>Let <var>reportBlock</var> be a boolean, initially false.</p>"
+        },
+        {
+          "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#sources\" id=\"ref-for-sources①\">sources</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑥\">contains</a> \"<code>inline</code>\"\n and <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#blocked-destinations\" id=\"ref-for-blocked-destinations①\">blocked destinations</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑦\">contains</a> <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination①\">destination</a>,\n set <var>block</var> to true.</p>"
+        },
+        {
+          "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#sources\" id=\"ref-for-sources②\">sources</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑧\">contains</a> \"<code>inline</code>\"\n and <var>reportPolicy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#blocked-destinations\" id=\"ref-for-blocked-destinations②\">blocked destinations</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑨\">contains</a> <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination②\">destination</a>,\n set <var>reportBlock</var> to true.</p>"
+        },
+        {
+          "html": "<p>If <var>block</var> is true or <var>reportBlock</var> is true, then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#report-violation\" id=\"ref-for-report-violation\">report violation</a> with <var>request</var>, <var>block</var>, <var>reportBlock</var>, <var>policy</var> and <var>reportPolicy</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>block</var> is true, then return \"<code>Blocked</code>\"; otherwise \"<code>Allowed</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "report violation",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#report-violation",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"report-violation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">report violation</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②\">Request</a> <var>request</var>, a boolean <var>block</var>,\n  a boolean <var>reportBlock</var>, an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#integrity-policy-struct\" id=\"ref-for-integrity-policy-struct②\">integrity policy struct</a> <var>policy</var>,\n  and an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#integrity-policy-struct\" id=\"ref-for-integrity-policy-struct③\">integrity policy struct</a> <var>reportPolicy</var>, do the following:",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①\">client</a> is not null.</p>"
+        },
+        {
+          "html": "<p>Let <var>settingsObject</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client②\">client</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>global</var> be <var>settingsObject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global①\">global object</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>global</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> or a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-workerglobalscope①\">WorkerGlobalScope</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>url</var> be null.</p>"
+        },
+        {
+          "html": "<p>If <var>global</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window②\">Window</a></code>, set <var>url</var> to <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-document-url\" id=\"ref-for-dom-document-url\">URL</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>global</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-workerglobalscope②\">WorkerGlobalScope</a></code>, set <var>url</var> to <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/workers.html#concept-workerglobalscope-url\" id=\"ref-for-concept-workerglobalscope-url\">URL</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>url</var> is a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>documentURL</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#strip-url-for-use-in-reports\" id=\"ref-for-strip-url-for-use-in-reports\">strip URL for use in reports</a> on <var>url</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>blockedURL</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#strip-url-for-use-in-reports\" id=\"ref-for-strip-url-for-use-in-reports①\">strip URL for use in reports</a> on <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a>.</p>"
+        },
+        {
+          "html": "If <var>block</var> is true, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">for each</a> <var>endpoint</var> in <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#endpoints\" id=\"ref-for-endpoints①\">endpoints</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>body</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#integritypolicyviolationreportbody\" id=\"ref-for-integritypolicyviolationreportbody\">IntegrityPolicyViolationReportBody</a></code>, initialized as follows:</p>\n       <dl>\n        <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#dom-integritypolicyviolationreportbody-documenturl\" id=\"ref-for-dom-integritypolicyviolationreportbody-documenturl\">documentURL</a></code>\n        </dt><dd data-md=\"\">\n         <p><var>documentURL</var></p>\n        </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#dom-integritypolicyviolationreportbody-blockedurl\" id=\"ref-for-dom-integritypolicyviolationreportbody-blockedurl\">blockedURL</a></code>\n        </dt><dd data-md=\"\">\n         <p><var>blockedURL</var></p>\n        </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#dom-integritypolicyviolationreportbody-destination\" id=\"ref-for-dom-integritypolicyviolationreportbody-destination\">destination</a></code>\n        </dt><dd data-md=\"\">\n         <p><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination③\">destination</a></p>\n        </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#dom-integritypolicyviolationreportbody-reportonly\" id=\"ref-for-dom-integritypolicyviolationreportbody-reportonly\">reportOnly</a></code>\n        </dt><dd data-md=\"\">\n         <p>false</p>\n       </dd></dl>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#generate-and-queue-a-report\" id=\"ref-for-generate-and-queue-a-report\">Generate and queue a report</a> with the following arguments:</p>\n       <dl>\n        <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#generate-and-queue-a-report-context\" id=\"ref-for-generate-and-queue-a-report-context\"><i>context</i></a>\n        </dt><dd data-md=\"\">\n         <p><var>settingsObject</var></p>\n        </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#generate-and-queue-a-report-type\" id=\"ref-for-generate-and-queue-a-report-type\"><i>type</i></a>\n        </dt><dd data-md=\"\">\n         <p>\"<code>integrity-policy-violation</code>\"</p>\n        </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#generate-and-queue-a-report-destination\" id=\"ref-for-generate-and-queue-a-report-destination\"><i>destination</i></a>\n        </dt><dd data-md=\"\">\n         <p><var>endpoint</var></p>\n        </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#generate-and-queue-a-report-data\" id=\"ref-for-generate-and-queue-a-report-data\"><i>data</i></a>\n        </dt><dd data-md=\"\">\n         <p><var>body</var></p>\n       </dd></dl>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>reportBlock</var> is true, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">for each</a> <var>endpoint</var> in <var>reportPolicy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#endpoints\" id=\"ref-for-endpoints②\">endpoints</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>reportBody</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#integritypolicyviolationreportbody\" id=\"ref-for-integritypolicyviolationreportbody①\">IntegrityPolicyViolationReportBody</a></code>, initialized as follows:</p>\n       <dl>\n        <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#dom-integritypolicyviolationreportbody-documenturl\" id=\"ref-for-dom-integritypolicyviolationreportbody-documenturl①\">documentURL</a></code>\n        </dt><dd data-md=\"\">\n         <p><var>documentURL</var></p>\n        </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#dom-integritypolicyviolationreportbody-blockedurl\" id=\"ref-for-dom-integritypolicyviolationreportbody-blockedurl①\">blockedURL</a></code>\n        </dt><dd data-md=\"\">\n         <p><var>blockedURL</var></p>\n        </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#dom-integritypolicyviolationreportbody-destination\" id=\"ref-for-dom-integritypolicyviolationreportbody-destination①\">destination</a></code>\n        </dt><dd data-md=\"\">\n         <p><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination④\">destination</a></p>\n        </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#dom-integritypolicyviolationreportbody-reportonly\" id=\"ref-for-dom-integritypolicyviolationreportbody-reportonly①\">reportOnly</a></code>\n        </dt><dd data-md=\"\">\n         <p>true</p>\n       </dd></dl>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#generate-and-queue-a-report\" id=\"ref-for-generate-and-queue-a-report①\">Generate and queue a report</a> with the following arguments:</p>\n       <dl>\n        <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#generate-and-queue-a-report-context\" id=\"ref-for-generate-and-queue-a-report-context①\"><i>context</i></a>\n        </dt><dd data-md=\"\">\n         <p><var>settingsObject</var></p>\n        </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#generate-and-queue-a-report-type\" id=\"ref-for-generate-and-queue-a-report-type①\"><i>type</i></a>\n        </dt><dd data-md=\"\">\n         <p>\"<code>integrity-policy-violation</code>\"</p>\n        </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#generate-and-queue-a-report-destination\" id=\"ref-for-generate-and-queue-a-report-destination①\"><i>destination</i></a>\n        </dt><dd data-md=\"\">\n         <p><var>endpoint</var></p>\n        </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#generate-and-queue-a-report-data\" id=\"ref-for-generate-and-queue-a-report-data①\"><i>data</i></a>\n        </dt><dd data-md=\"\">\n         <p><var>reportBody</var></p>\n       </dd></dl>"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

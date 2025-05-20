@@ -1,0 +1,938 @@
+{
+  "spec": {
+    "title": "Timed Text Markup Language 2 (TTML2) (2nd Edition)",
+    "url": "https://w3c.github.io/ttml2/index.html"
+  },
+  "algorithms": [
+    {
+      "html": "A TTML2 <a href=\"https://w3c.github.io/ttml2/index.html#terms-content-processor\">content processor</a> conforms to this specification if the following\ngeneric processor criteria are\nsatisfied:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The processor provides at least one mechanism for notionally\ninstantiating a <a href=\"https://w3c.github.io/ttml2/index.html#terms-reduced-xml-infoset\">reduced xml infoset</a>\nrepresentation of a conformant <a href=\"https://w3c.github.io/ttml2/index.html#terms-document-instance\">document instance</a>.</p>"
+        },
+        {
+          "html": "<p>The processor performs <a href=\"https://w3c.github.io/ttml2/index.html#terms-profile-processing\">profile processing</a>.</p>"
+        },
+        {
+          "html": "<p>If a processor is a <a href=\"https://w3c.github.io/ttml2/index.html#terms-validating-content-processor\">validating content processor</a>, then it</p>",
+          "ignored": [
+            "provides at least one mechanism to implicitly or explicitly associate the reduced xml infoset representation of a candidate document instance with one of the Abstract Document Types defined by 4 Document Types; andperforms the [validate document] procedure."
+          ]
+        },
+        {
+          "html": "<p>The processor does not <em>a priori</em> reject or abort the\nprocessing of a conformant <a href=\"https://w3c.github.io/ttml2/index.html#terms-document-instance\">document instance</a>\nunless:</p>",
+          "ignored": [
+            "the processor does not support some required (mandatory) feature specified or implied by a TTML profile declared to apply to the document instance; ora validation error occurs when performing the [validate document] procedure."
+          ]
+        },
+        {
+          "html": "<p>The processor supports all mandatory processing semantics defined by this specification.</p>"
+        },
+        {
+          "html": "<p>If the processor supports some optional processing semantics defined by this specification,\nthen it does so in a manner consistent with the defined semantics.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Every TTML <a href=\"https://w3c.github.io/ttml2/index.html#terms-document-instance\">document instance</a> is associated with a (possibly null)\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-content-profile\">effective content profile</a> which may be used by\na <a href=\"https://w3c.github.io/ttml2/index.html#terms-content-processor\">content processor</a> to perform any (or all) of the following:",
+      "rationale": "perform",
+      "steps": [
+        {
+          "html": "<p>infer an effective processor profile;</p>"
+        },
+        {
+          "html": "<p>perform <a href=\"https://w3c.github.io/ttml2/index.html#terms-validation-processing\">validation processing</a> on the <a href=\"https://w3c.github.io/ttml2/index.html#terms-document-instance\">document instance</a>;</p>"
+        },
+        {
+          "html": "<p>constrain transformation processing on the <a href=\"https://w3c.github.io/ttml2/index.html#terms-document-instance\">document instance</a>\nin order to maintain content profile invariants.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-content-profile\">effective content profile</a> is constructed according to the\nfollowing procedure:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if the <a href=\"https://w3c.github.io/ttml2/index.html#terms-document-processing-context\">document processing context</a> determines that a specific\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-override-content-profile\">override content profile</a> <em>P<sub>O</sub></em> is to override all other determinations, then the\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-content-profile\">effective content profile</a> is <em>P<sub>O</sub></em>;</p>"
+        },
+        {
+          "html": "<p>otherwise, if a <code>ttp:contentProfiles</code> attribute is specified on the root <code>tt</code> element, then the\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-content-profile\">effective content profile</a> is a <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-instance\">profile instance</a> for which its <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification set</a>\nis constructed by combining the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification sets</a> of the designated profiles, where the\ncontent profile combination method specified by (or the default value of) the <code>ttp:contentProfileCombination</code>\nattribute on the root <code>tt</code> element applies;</p>"
+        },
+        {
+          "html": "<p>otherwise, if one or more <a href=\"https://w3c.github.io/ttml2/index.html#terms-top-level-profile\">top-level</a> <a href=\"https://w3c.github.io/ttml2/index.html#terms-content-profile\">content profiles</a>\nare defined, then the\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-content-profile\">effective content profile</a> is a <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-instance\">profile instance</a> for which its <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification set</a> is\nconstructed by combining the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification sets</a> of all such\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-top-level-profile\">top-level</a> <a href=\"https://w3c.github.io/ttml2/index.html#terms-content-profile\">content profiles</a>, where the\ncontent profile combination method specified by (or the default value of) the <code>ttp:contentProfileCombination</code>\nattribute on the root <code>tt</code> element applies;\n</p>"
+        },
+        {
+          "html": "<p>otherwise, the <a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-content-profile\">effective content profile</a> is <code>null</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>set <em>EPP</em> to the <a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-processor-profile\">effective processor profile</a> obtained by performing the\n<a href=\"https://w3c.github.io/ttml2/index.html#semantics-procedure-construct-effective-processor-profile\"><span class=\"strong\">construct effective processor profile</span></a> procedure;</p>"
+        },
+        {
+          "html": "for each <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-specification\">profile specification</a> <em>S</em> in the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification set</a> of <em>EPP</em>, perform the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>if the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-specification-value\">value</a> <a href=\"https://w3c.github.io/ttml2/index.html#terms-component\">component</a> of <em>S</em> is <code>required</code>, and the <a href=\"https://w3c.github.io/ttml2/index.html#terms-content-processor\">content processor</a>\ndoes not support <em>S</em>, then abort processing of the <a href=\"https://w3c.github.io/ttml2/index.html#terms-document-instance\">document instance</a> unless overridden\nby the end-user or some implementation specific parameter traceable to an end-user or to a user or system configuration setting;</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The <a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-processor-profile\">effective processor profile</a> is constructed according to the\nfollowing procedure:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if the <a href=\"https://w3c.github.io/ttml2/index.html#terms-document-processing-context\">document processing context</a> determines that a specific\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-override-processor-profile\">override processor profile</a> <em>P<sub>O</sub></em> is to override all other determinations, then the\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-processor-profile\">effective processor profile</a> is <em>P<sub>O</sub></em>;</p>"
+        },
+        {
+          "html": "otherwise, if a <code>ttp:processorProfiles</code> attribute is specified on the root <code>tt</code> element, then",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>if the <code>ttp:processorProfiles</code> attribute is specified using the <code>all(...)</code> function syntax or\nusing no function syntax, i.e., as only a list of designators, then the\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-processor-profile\">effective processor profile</a> is a <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-instance\">profile instance</a> for which its <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification set</a>\nis constructed by combining the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification sets</a> of the designated profiles, where the\ncontent profile combination method specified by (or the default value of) the <code>ttp:processorProfileCombination</code>\nattribute on the root <code>tt</code> element applies;</p>"
+            },
+            {
+              "html": "<p>otherwise, if the <code>ttp:processorProfiles</code> attribute is specified using the <code>any(...)</code> function syntax,\nthen, for each designated profile, the \n<a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-processor-profile\">effective processor profile</a> is a <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-instance\">profile instance</a> for which its <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification set</a>\nis a copy of the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification set</a> of the first profile in the list of designated profiles that is supported by the\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-content-processor\">content processor</a>;</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>otherwise, if one or more <a href=\"https://w3c.github.io/ttml2/index.html#terms-top-level-profile\">top-level</a> <a href=\"https://w3c.github.io/ttml2/index.html#terms-processor-profile\">processor profiles</a>\nare defined, then the\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-processor-profile\">effective processor profile</a> is a <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-instance\">profile instance</a> for which its <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification set</a>\nis constructed by combining the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification sets</a> of all such\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-top-level-profile\">top-level</a> <a href=\"https://w3c.github.io/ttml2/index.html#terms-processor-profile\">processor profiles</a>, where the\nprocessor profile combination method specified by (or the default value of) the <code>ttp:processorProfileCombination</code>\nattribute on the root <code>tt</code> element applies;\n</p>"
+        },
+        {
+          "html": "<p>otherwise, if a <code>ttp:profile</code> attribute is specified on the root <code>tt</code> element, then the\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-processor-profile\">effective processor profile</a> is a <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-instance\">profile instance</a> for which its <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification set</a> is a copy of the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification set</a>\nof the profile designated by this attribute;\n</p>"
+        },
+        {
+          "html": "<p>otherwise, the <a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-processor-profile\">effective processor profile</a> is the\nresult of performing the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-procedure-construct-inferred-processor-profile\"><span class=\"strong\">construct inferred processor profile</span></a>\nprocedure;</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>set <em>ECP</em> to the <a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-content-profile\">effective content profile</a>;</p>"
+        },
+        {
+          "html": "if <em>ECP</em> is not <code>null</code>, then perform the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>if the computed value of the <code>ttp:inferProcessorProfileSource</code> parameter is <code>combine</code>, then\nthe <a href=\"https://w3c.github.io/ttml2/index.html#terms-inferred-processor-profile\">inferred processor profile</a> is the result of applying the\n<a href=\"https://w3c.github.io/ttml2/index.html#semantics-procedure-infer-processor-profile\"><span class=\"strong\">infer processor profile</span></a> function\nto the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification set</a> of <em>ECP</em>;</p>"
+            },
+            {
+              "html": "<p>otherwise, if the computed value of the <code>ttp:inferProcessorProfileSource</code> parameter is <code>first</code>, then\nthe <a href=\"https://w3c.github.io/ttml2/index.html#terms-inferred-processor-profile\">inferred processor profile</a> is the first inferred processor profile, <em>IPP</em>,\nproduced by applying the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-procedure-infer-processor-profile\"><span class=\"strong\">infer processor profile</span></a> function\nto the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification set</a> of the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-instance\">profile instance</a>\nassociated with each constituent of the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification set</a> of <em>ECP</em> such that <em>IPP</em> is supported by the\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-content-processor\">content processor</a>;</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>otherwise, the <a href=\"https://w3c.github.io/ttml2/index.html#terms-inferred-processor-profile\">inferred processor profile</a> is the\nresult of performing the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-procedure-construct-default-processor-profile\"><span class=\"strong\">construct default processor profile</span></a>\nprocedure;</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "initialize",
+      "steps": [
+        {
+          "html": "<p>initialize inferred processor profile <em>IPP</em> to a <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-instance\">profile instance</a> for which its <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification set</a> is a copy of the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-empty-profile-specification-set\">empty profile specification set</a>;</p>"
+        },
+        {
+          "html": "for each profile specification, <em>S</em>, in the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-combined-profile-specification-set\">combined profile specification set</a> <em>CPSS</em>:",
+          "rationale": "add",
+          "steps": [
+            {
+              "html": "<p>map content profile specification <em>S</em> to processor profile specification <em>S'&nbsp;</em> according to the computed\nvalue of the <code>ttp:inferPresentationProfileMethod</code> parameter and <a href=\"https://w3c.github.io/ttml2/index.html#infer-processor-profile-method-table\"><b>Table 6-2 – Infer Processor Profile Method</b></a>;</p>"
+            },
+            {
+              "html": "<p>add <em>S'&nbsp;</em> to the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification set</a> of <em>IPP</em>;</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>return <em>IPP</em> as the inferred processor profile;</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if the <a href=\"https://w3c.github.io/ttml2/index.html#terms-document-interchange-context\">document interchange context</a> is associated with a\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-processor-profile\">processor profile</a> or with a <a href=\"https://w3c.github.io/ttml2/index.html#terms-content-profile\">content profile</a>\nfrom which a <a href=\"https://w3c.github.io/ttml2/index.html#terms-processor-profile\">processor profile</a> can be inferred, then the\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-default-processor-profile\">default processor profile</a> is that <a href=\"https://w3c.github.io/ttml2/index.html#terms-processor-profile\">processor profile</a>;</p>"
+        },
+        {
+          "html": "<p>otherwise, if the <a href=\"https://w3c.github.io/ttml2/index.html#terms-content-processor\">content processor</a> is primarily characterized as a\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-presentation-processor\">presentation processor</a>, then\nthe <a href=\"https://w3c.github.io/ttml2/index.html#terms-default-processor-profile\">default processor profile</a> is\nthe <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-instance\">profile instance</a> constructed by interning the TTML2 Presentation profile\n(<code>http://www.w3.org/ns/ttml/profile/ttml2-presentation</code>);\n</p>"
+        },
+        {
+          "html": "<p>otherwise, if the <a href=\"https://w3c.github.io/ttml2/index.html#terms-content-processor\">content processor</a> is primarily characterized as a\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-transformation-processor\">transformation processor</a>, then\nthe <a href=\"https://w3c.github.io/ttml2/index.html#terms-default-processor-profile\">default processor profile</a> is\nthe <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-instance\">profile instance</a> constructed by interning the TTML2 Transformation profile\n(<code>http://www.w3.org/ns/ttml/profile/ttml2-transformation</code>).</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if a document's <a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-content-profile\">effective content profile</a> is not <code>null</code>, then the\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-validation-profile\">effective validation profile</a> is the\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-content-profile\">effective content profile</a>;</p>"
+        },
+        {
+          "html": "<p>otherwise, the <a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-validation-profile\">effective validation profile</a> is the\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-processor-profile\">effective processor profile</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if a document's <a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-validation-profile\">effective validation profile</a> is associated with one or more\nschemas, then the set of <a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-validation-schemas\">effective validation schemas</a> is an appropriate subset\nof these associated schemas based upon the requirements of the <a href=\"https://w3c.github.io/ttml2/index.html#terms-document-processing-context\">document processing context</a>;</p>"
+        },
+        {
+          "html": "<p>otherwise, the <a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-validation-schemas\">effective validation schemas</a> is a default set of schemas selected by the\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-document-processing-context\">document processing context</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if validation is disabled by a <a href=\"https://w3c.github.io/ttml2/index.html#terms-higher-level-protocol\">higher level protocol</a>\nor if the computed value of the <a href=\"https://w3c.github.io/ttml2/index.html#profile-attribute-validation\"><code>ttp:validation</code></a> parameter is <code>prohibited</code>,\nthen exit this procedure unless the end-user or application overrides this prohibition;</p>"
+        },
+        {
+          "html": "<p>if the computed value of the <a href=\"https://w3c.github.io/ttml2/index.html#profile-attribute-validation\"><code>ttp:validation</code></a> parameter is <code>optional</code> and the\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-document-processing-context\">document processing context</a> determines that optional validation is not to be performed,\nthen exit this procedure;</p>"
+        },
+        {
+          "html": "<p>otherwise, using the <a href=\"https://w3c.github.io/ttml2/index.html#terms-effective-validation-schemas\">effective validation schemas</a> and other\nvalidation tools as required, validate document conformance such that</p><ul><li><p>if a <a title=\"validation error\" href=\"https://w3c.github.io/ttml2/index.html#defs-validation-error\">validation error</a> condition is detected, then perform the semantics that apply\nto the computed value of the <a href=\"https://w3c.github.io/ttml2/index.html#profile-attribute-validationAction\"><code>ttp:validationAction</code></a> parameter property;</p></li><li><p>if a <a title=\"validation warning\" href=\"https://w3c.github.io/ttml2/index.html#defs-validation-warning\">validation warning</a> condition is detected, then perform the semantics that apply\nto the computed value of the <a href=\"https://w3c.github.io/ttml2/index.html#profile-attribute-validationAction\"><code>ttp:validationAction</code></a> parameter property.</p></li></ul>"
+        }
+      ]
+    },
+    {
+      "html": "The <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-combined-profile-specification-set\">combined profile specification set</a> <em>CPSS</em> of features and extensions of a profile <em>P</em>\nis determined according to the following ordered rules, where merging a specification <em>S</em>\ninto <em>CPSS</em> entails applying a combination method in accordance with the specified\n(or default) value of the <code>combine</code> attribute, and where merging a <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-combined-profile-specification-set\">combined profile specification set</a> <em>CPSS'&nbsp;</em> into\n<em>CPSS</em> entails merging each ordered specification of <em>CPSS'&nbsp;</em> into <em>CPSS</em>:",
+      "rationale": "initialize",
+      "steps": [
+        {
+          "html": "<p>initialize <em>CPSS</em> to the empty set;</p>"
+        },
+        {
+          "html": "<p>if a <code>use</code> attribute is present, then merge\nthe <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification set</a> of the referenced <a href=\"https://w3c.github.io/ttml2/index.html#terms-baseline-profile\">baseline profile</a> into <em>CPSS</em>;</p>"
+        },
+        {
+          "html": "<p>for each <code>ttp:profile</code> child of the <em>P</em>,\nusing a post-order traversal, merge the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-profile-state-profile-combined-specification-set\">combined specification set</a> of the child profile\ninto <em>CPSS</em>;</p>"
+        },
+        {
+          "html": "<p>for each <code>ttp:feature</code> and <code>ttp:extension</code> child of the <code>ttp:profile</code> element,\nusing a post-order traversal, merge the feature or extension specification\ninto <em>CPSS</em>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "if the value is <code>required</code>, then perform the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if the feature is implemented or otherwise supported by a processor, then continue processing\nthe document;</p>"
+        },
+        {
+          "html": "<p>otherwise, if\n(1) the <code>extends</code> attribute is specified on this <code>ttp:feature</code> element,\n(2) the value of the <code>extends</code> attribute designates a feature that is implemented or otherwise supported by\na processor, and\n(3) the computed value of the <a href=\"https://w3c.github.io/ttml2/index.html#profile-attribute-permitFeatureNarrowing\"><code>ttp:permitFeatureNarrowing</code></a>\nproperty of the root <code>tt</code> element is not <code>false</code>,\nthen continue processing the document;</p>"
+        },
+        {
+          "html": "<p>otherwise, if\n(1) the <code>restricts</code> attribute is specified on this <code>ttp:feature</code> element,\n(2) the value of the <code>restricts</code> attribute designates a feature that is implemented or otherwise supported by\na processor, and\n(3) the computed value of the <a href=\"https://w3c.github.io/ttml2/index.html#profile-attribute-permitFeatureWidening\"><code>ttp:permitFeatureWidening</code></a>\nproperty of the root <code>tt</code> element is not <code>false</code>,\nthen continue processing the document;</p>"
+        },
+        {
+          "html": "<p>otherwise, abort processing the document unless overridden by the end-user or some implementation specific parameter\ntraceable to an end-user or to a user or system configuration setting.</p>"
+        }
+      ]
+    },
+    {
+      "html": "if the value is <code>required</code>, then perform the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if the extension is implemented or otherwise supported by a processor, then continue processing\nthe document;</p>"
+        },
+        {
+          "html": "<p>otherwise, if\n(1) the <code>extends</code> attribute is specified on this <code>ttp:extension</code> element,\n(2) the value of the <code>extends</code> attribute designates an extension that is implemented or otherwise supported by\na processor, and\n(3) the computed value of the <a href=\"https://w3c.github.io/ttml2/index.html#profile-attribute-permitFeatureNarrowing\"><code>ttp:permitFeatureNarrowing</code></a>\nproperty of the root <code>tt</code> element is not <code>false</code>,\nthen continue processing the document;</p>"
+        },
+        {
+          "html": "<p>otherwise, if\n(1) the <code>restricts</code> attribute is specified on this <code>ttp:extension</code> element,\n(2) the value of the <code>restricts</code> attribute designates an extension that is implemented or otherwise supported by\na processor, and\n(3) the computed value of the <a href=\"https://w3c.github.io/ttml2/index.html#profile-attribute-permitFeatureWidening\"><code>ttp:permitFeatureWidening</code></a>\nproperty of the root <code>tt</code> element is not <code>false</code>,\nthen continue processing the document;</p>"
+        },
+        {
+          "html": "<p>otherwise, abort processing the document unless overridden by the end-user or some implementation specific parameter\ntraceable to an end-user or to a user or system configuration setting.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When performing style resolution processing (see <a href=\"https://w3c.github.io/ttml2/index.html#semantics-style-resolution-processing\"><b>10.4.4 Style Resolution Processing</b></a>),\nthe resolution of the computed value of <code>tts:direction</code> on a <a href=\"https://w3c.github.io/ttml2/index.html#layout-vocabulary-region\"><code>region</code></a> element\n<em><code>R</code></em> is determined according to the following ordered rules, where the first applicable rule applies:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if a <code>tts:direction</code> attribute is specified on <em><code>R</code></em>, then the computed value\n  <code>tts:direction</code> is the specified value;</p>"
+        },
+        {
+          "html": "<p>if a <code>tts:writingMode</code> attribute is specified on <em><code>R</code></em>, then the computed value\n  <code>tts:direction</code> is the\n  <a href=\"https://w3c.github.io/ttml2/index.html#terms-inline-progression-dimension\">inline progression direction</a> determined by the computed value of\n  <code>tts:writingMode</code> on <em><code>R</code></em>;</p>"
+        },
+        {
+          "html": "<p>otherwise, the computed value of <code>tts:direction</code> is the initial value.</p>"
+        }
+      ]
+    },
+    {
+      "html": "If the value of this attribute is <code>auto</code>, then the computed value of its associated property is determined as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if the property applies to the <a href=\"https://w3c.github.io/ttml2/index.html#document-structure-vocabulary-tt\"><code>tt</code></a> element, then <code>auto</code> is interpreted as if the value <code>contain</code>\n  were specified;</p>"
+        },
+        {
+          "html": "<p>if the property applies to a <a href=\"https://w3c.github.io/ttml2/index.html#layout-vocabulary-region\"><code>region</code></a> element, either directly or indirectly, then <code>auto</code> is interpreted as if\n  the value \"<code>100%</code> <code>100%</code>\" were specified;</p>"
+        },
+        {
+          "html": "<p>if the property applies to an <a href=\"https://w3c.github.io/ttml2/index.html#embedded-content-vocabulary-image\"><code>image</code></a> element, then <code>auto</code>\n  is interpreted as if a value equal to the image's intrinsic extent were specified using two pixel-based <a href=\"https://w3c.github.io/ttml2/index.html#style-value-length\">&lt;length&gt;</a> <a href=\"https://w3c.github.io/ttml2/index.html#terms-component\">components</a>, for example, \"<code>200px</code> <code>100px</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "html": "If the value of this attribute is <code>contain</code>, then the computed value of its associated property is determined as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if the property applies to the <a href=\"https://w3c.github.io/ttml2/index.html#document-structure-vocabulary-tt\"><code>tt</code></a> element, then <code>contain</code> is interpreted as specified in\n  <a href=\"https://w3c.github.io/ttml2/index.html#root-container-region-semantics\"><b>H Root Container Region Semantics</b></a>;</p>"
+        },
+        {
+          "html": "<p>if the property applies to a <a href=\"https://w3c.github.io/ttml2/index.html#layout-vocabulary-region\"><code>region</code></a> element,\n  then the computed value is determined by performing the\n  <a href=\"https://w3c.github.io/ttml2/index.html#semantics-style-procedures-contain\"><span class=\"strong\">[compute containment scaling]</span></a> procedure,\n  where the target rectangle <em>TR</em> is initialized to the\n  <a href=\"https://w3c.github.io/ttml2/index.html#terms-intrinsic-block-content-extent\">intrinsic block content extent</a> of the region's content,\n  the reference rectangle <em>RR</em> is set to the extent of the <a href=\"https://w3c.github.io/ttml2/index.html#terms-root-container-region\">root container region</a>,\n  and the resulting output value of the target rectangle <em>TR</em> is the computed value;</p>"
+        },
+        {
+          "html": "<p>if the property applies to an <a href=\"https://w3c.github.io/ttml2/index.html#embedded-content-vocabulary-image\"><code>image</code></a> element,\n  then the computed value is determined by performing the\n  <a href=\"https://w3c.github.io/ttml2/index.html#semantics-style-procedures-contain\"><span class=\"strong\">[compute containment scaling]</span></a> procedure,\n  where the target rectangle <em>TR</em> is initialized to the\n  <a href=\"https://w3c.github.io/ttml2/index.html#terms-intrinsic-image-extent\">intrinsic image extent</a> of the image,\n  the reference rectangle <em>RR</em> is set to the available content space in the containing block area or line area\n  in accordance to whether the current formatting context is a block or inline formatting context, respectively,\n  and the resulting output value of the target rectangle <em>TR</em> is the computed value.</p>"
+        }
+      ]
+    },
+    {
+      "html": "If the value of this attribute is <code>cover</code>, then the computed value of its associated property is determined as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if the property applies to a <a href=\"https://w3c.github.io/ttml2/index.html#layout-vocabulary-region\"><code>region</code></a> element,\n  then the computed value is determined by performing the\n  <a href=\"https://w3c.github.io/ttml2/index.html#semantics-style-procedures-cover\"><span class=\"strong\">[compute cover scaling]</span></a> procedure,\n  where the target rectangle <em>TR</em> is initialized to the\n  <a href=\"https://w3c.github.io/ttml2/index.html#terms-intrinsic-block-content-extent\">intrinsic block content extent</a> of the region's content,\n  the reference rectangle <em>RR</em> is set to the extent of the <a href=\"https://w3c.github.io/ttml2/index.html#terms-root-container-region\">root container region</a>,\n  and the resulting output value of the target rectangle <em>TR</em> is the computed value;</p>"
+        },
+        {
+          "html": "<p>if the property applies to an <a href=\"https://w3c.github.io/ttml2/index.html#embedded-content-vocabulary-image\"><code>image</code></a> element,\n  then the computed value is determined by performing the\n  <a href=\"https://w3c.github.io/ttml2/index.html#semantics-style-procedures-cover\"><span class=\"strong\">[compute cover scaling]</span></a> procedure,\n  where the target rectangle <em>TR</em> is initialized to the\n  <a href=\"https://w3c.github.io/ttml2/index.html#terms-intrinsic-image-extent\">intrinsic image extent</a> of the image,\n  the reference rectangle <em>RR</em> is set to the available content space in the containing block area or line area\n  in accordance to whether the current formatting context is a block or inline formatting context, respectively,\n  and the resulting output value of the target rectangle <em>TR</em> is the computed value.</p>"
+        }
+      ]
+    },
+    {
+      "html": "If the value of this attribute is <code>normal</code>, then the\n<a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-used-value\">used value</a> of this style property is determined as follows:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>\nLet <em>P</em> be the <a href=\"https://w3c.github.io/ttml2/index.html#content-vocabulary-p\"><code>p</code></a> element to which this style property applies.\n</p>"
+        },
+        {
+          "html": "<p>\nLet <em>FF</em> be the computed value of the <a href=\"https://w3c.github.io/ttml2/index.html#style-attribute-fontFamily\"><code>tts:fontFamily</code></a>\nstyle property of <em>P</em>.\n</p>"
+        },
+        {
+          "html": "<p>\nLet <em>FS</em> be the computed value of the <a href=\"https://w3c.github.io/ttml2/index.html#style-attribute-fontSize\"><code>tts:fontSize</code></a> style property of <em>P</em>.\n</p>"
+        },
+        {
+          "html": "<p>\nLet <em>F0</em> be the first font obtained when sequentially mapping each font family in <em>FF</em> to a set of available fonts,\nwhere this set of available fonts is constrained as needed to satisfy the computed values of the\n<a href=\"https://w3c.github.io/ttml2/index.html#style-attribute-fontSelectionStrategy\"><code>tts:fontSelectionStrategy</code></a>,\n<a href=\"https://w3c.github.io/ttml2/index.html#style-attribute-fontStyle\"><code>tts:fontStyle</code></a>,\n<a href=\"https://w3c.github.io/ttml2/index.html#style-attribute-fontWeight\"><code>tts:fontWeight</code></a>, and\n<a href=\"https://w3c.github.io/ttml2/index.html#style-attribute-fontVariant\"><code>tts:fontVariant</code></a>,\nstyle properties of <em>P</em>.\n</p>"
+        },
+        {
+          "html": "<p>\nIf <em>F0</em> is associated with font metrics that specify altitude <em>A</em>, depth <em>D</em>, and line gap <em>G</em>,\nthen set <em>LH</em> to the sum of scaled(<em>A</em>), scaled(<em>D</em>), and scaled(<em>G</em>),\nwhere scaled(<em>X</em>) denotes font metric <em>X</em> scaled according to font size <em>FS</em>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, <em>LH</em> is considered to be implementation dependent; however, in the absence of implementation specific requirements,\n<em>LH</em> is recommended to be set to 125% of <em>FS</em>.\n</p>"
+        },
+        {
+          "html": "<p>\nSet the <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-used-value\">used value</a> of this style property to <em>LH</em>.\n</p>"
+        }
+      ]
+    },
+    {
+      "html": "If a region is not <a href=\"https://w3c.github.io/ttml2/index.html#terms-temporally-active\">temporally active</a>, then its background is not rendered; however, if it is\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-temporally-active\">temporally active</a>, then",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if the value of this attribute is <code>whenActive</code>, then the region's background is rendered only when\n  content is selected into the region, where that content is also <a href=\"https://w3c.github.io/ttml2/index.html#terms-temporally-active\">temporally active</a>;</p>"
+        },
+        {
+          "html": "<p>otherwise, if the value of this attribute is <code>always</code>, then the region's background is rendered irrespective of\n  whether content is selected into the region.</p>"
+        }
+      ]
+    },
+    {
+      "html": "If the computed value of <code>tta:speak</code> on some <a href=\"https://w3c.github.io/ttml2/index.html#content-vocabulary-span\"><code>span</code></a> element or\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous span</a> <em>S</em> is not <code>none</code>, then",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if <em>S</em> has a child <a href=\"https://w3c.github.io/ttml2/index.html#embedded-content-vocabulary-audio\"><code>audio</code></a> element <em>A</em>\nand <em>A</em> does not reference any source <a href=\"https://w3c.github.io/ttml2/index.html#terms-audio-resource\">audio resource</a> by means of either\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-reference-data-embedding\">reference data embedding</a> or <a href=\"https://w3c.github.io/ttml2/index.html#terms-sourced-data-embedding\">sourced data embedding</a>,\nthen a reference to the <a href=\"https://w3c.github.io/ttml2/index.html#terms-speech-data-resource\">speech data resource</a> with a\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-reference-data-embedding\">reference data embedding</a> is implied;</p>"
+        },
+        {
+          "html": "<p>if no child of <em>S</em> is an <a href=\"https://w3c.github.io/ttml2/index.html#embedded-content-vocabulary-audio\"><code>audio</code></a> element and\nno ancestor of <em>S</em> is an <a href=\"https://w3c.github.io/ttml2/index.html#terms-audio-generating-element\">audio generating element</a> for which a referenced\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-audio-resource\">audio resource</a> source is the <a href=\"https://w3c.github.io/ttml2/index.html#terms-speech-data-resource\">speech data resource</a>,\nthen a child <a href=\"https://w3c.github.io/ttml2/index.html#embedded-content-vocabulary-audio\"><code>audio</code></a> element that references the\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-speech-data-resource\">speech data resource</a> with a <a href=\"https://w3c.github.io/ttml2/index.html#terms-reference-data-embedding\">reference data embedding</a>\nis implied.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Style properties are inherited from a <a href=\"https://w3c.github.io/ttml2/index.html#layout-vocabulary-region\">region</a> element in the following case:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if an inheritable <a href=\"https://w3c.github.io/ttml2/index.html#semantics-style-property\">style property</a> <em>P</em> is not associated with\na <a href=\"https://w3c.github.io/ttml2/index.html#terms-content-element\">content element</a>\nor an <a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous span</a> <em>E</em>, and</p>"
+        },
+        {
+          "html": "<p>if that <a href=\"https://w3c.github.io/ttml2/index.html#semantics-style-property\">style property</a> <em>P</em> is in the computed style\nset of region <em>R</em>, and</p>"
+        },
+        {
+          "html": "<p>if that element <em>E</em> is flowed into (presented within) region\n<em>R</em>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The specified style set <em>SSS</em> of an element or\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous span</a> <em>E</em>,\n<em>SSS(E)</em>, is determined according to the following ordered\nrules:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p><span class=\"strong\">[initialization]</span> initialize\nthe specified style set <em>SSS</em> of <em>E</em> to the\nempty set;</p>"
+        },
+        {
+          "html": "<p><span class=\"strong\">[referential and chained referential\nstyling]</span> for each <code>style</code> element <em>S<sub>REF</sub></em>\nreferenced by a <code>style</code> attribute specified on\n<em>E</em>, and in the order specified in the <code>style</code>\nattribute, then, if <em>S<sub>REF</sub></em> is a descendant\nof a <code>styling</code> element,\nmerge the specified style set of\n<em>S<sub>REF</sub></em> , <em>SSS(S<sub>REF</sub>)</em>, into\nthe specified style set of <em>E</em>,\n<em>SSS(E)</em>;</p>"
+        },
+        {
+          "html": "<p><span class=\"strong\">[nested styling]</span>\nif <em>E</em> is not <a href=\"https://w3c.github.io/ttml2/index.html#terms-conditionally-excluded\">conditionally excluded</a>, then\nfor each nested <a href=\"https://w3c.github.io/ttml2/index.html#terms-conditionally-excluded\">conditionally included</a> <code>style</code> element child <em>S<sub>NEST</sub></em> of\n<em>E</em>, and in the specified order of child elements, merge\nthe specified style set of <em>S<sub>NEST</sub></em> ,\n<em>SSS(S<sub>NEST</sub>)</em>, into the specified style set of\n<em>E</em>, <em>SSS(E)</em>;</p>"
+        },
+        {
+          "html": "<p><span class=\"strong\">[inline styling]</span>\nif <em>E</em> is not <a href=\"https://w3c.github.io/ttml2/index.html#terms-conditionally-excluded\">conditionally excluded</a>, then\nfor each <a href=\"https://w3c.github.io/ttml2/index.html#semantics-style-property\">style property</a> <em>P</em> interned (instantiated)\nfrom a specified <a href=\"https://w3c.github.io/ttml2/index.html#terms-styling-attribute\">styling attribute</a> of <em>E</em>,\nmerge <em>P</em> into the specified style\nset of <em>E</em>, <em>SSS(E)</em>;</p>"
+        },
+        {
+          "html": "<p><span class=\"strong\">[animation styling]</span> if the\nelement type of <em>E</em> is not an <a href=\"https://w3c.github.io/ttml2/index.html#terms-inline-animation\">inline animation</a> element,\nthen for each <a href=\"https://w3c.github.io/ttml2/index.html#terms-conditionally-excluded\">conditionally included</a>\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-inline-animation\">inline animation</a> element child <em>A</em> of element <em>E</em>,\nmerge the <a href=\"https://w3c.github.io/ttml2/index.html#terms-animatable-style\">animatable styles</a> of the specified style set of <em>A</em>,\n<em>SSS(A)</em>, into the specified style set of <em>E</em>, <em>SSS(E)</em>;</p>"
+        },
+        {
+          "html": "<span class=\"strong\">[implicit inheritance and initial value fallback]</span> if the\nelement type of <em>E</em> is not in the <a href=\"https://w3c.github.io/ttml2/index.html#element-vocab-group-animation\"><code>Animation.class</code></a> element group\nand is not styling element type <code>style</code>,\nthen for each <a href=\"https://w3c.github.io/ttml2/index.html#semantics-style-property\">style property</a> <em>P</em> interned (instantiated) from a \n<a href=\"https://w3c.github.io/ttml2/index.html#terms-styling-attribute\">styling attribute</a>, perform the following ordered sub-steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>if <em>P</em> is present in the specified\nstyle set of <em>E</em>, <em>SSS(E)</em>, then continue to the\nnext <a href=\"https://w3c.github.io/ttml2/index.html#semantics-style-property\">style property</a>;</p>"
+            },
+            {
+              "html": "<p>if <em>P</em> is inheritable and <em>E</em> is\nnot a <a href=\"https://w3c.github.io/ttml2/index.html#layout-vocabulary-region\"><code>region</code></a> element, then perform the following:</p><ul><li><p>set <em>P′</em> to the result of\nlooking up the value of <em>P</em> in the computed style set of\nthe nearest ancestor element of <em>E</em>, <em>NEAREST-ANCESTOR(E)</em>, such that\n<em>CSS(NEAREST-ANCESTOR(E))</em> contains a definition of <em>P</em>;</p></li></ul>"
+            },
+            {
+              "html": "set <em>P′</em> to the initial value of\nproperty <em>P</em>, where the initial value of a property is\ndetermined as follows:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>if an <a href=\"https://w3c.github.io/ttml2/index.html#styling-vocabulary-initial\"><code>initial</code></a>\nelement defines the initial value for <em>P</em>, then use that value;</p>"
+                },
+                {
+                  "html": "<p>otherwise, use the initial value specified by the property definition of <em>P</em>;</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>if the value of <em>P′</em> is not undefined, then merge\n<em>P′</em> into the specified style set of <em>E</em>,\n<em>SSS(E)</em>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The computed style set <em>CSS</em> of an element or\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous span</a> <em>E</em>,\n<em>CSS(E)</em>, is determined according to the following ordered\nrules:",
+      "rationale": "resolve",
+      "steps": [
+        {
+          "html": "<p><span class=\"strong\">[resolve specified styles]</span>\ndetermine (obtain) the specified style set <em>SSS</em> of\n<em>E</em>, namely, <em>SSS(E)</em>, in accordance with\n<a href=\"https://w3c.github.io/ttml2/index.html#semantics-style-resolution-processing-sss\"><b>10.4.4.2 Specified Style Set Processing</b></a>;</p>"
+        },
+        {
+          "html": "<p><span class=\"strong\">[initialization]</span>\ninitialize <em>CSS(E)</em> to a (deep) copy of\n<em>SSS(E)</em>;</p>"
+        },
+        {
+          "html": "<p><span class=\"strong\">[filter]</span> if\n<em>E</em> is an <code>animate</code>, <code>set</code>, or <code>style</code> element, then return\n<em>CSS(E)</em> as the resulting computed style set without\nfurther resolution; otherwise, continue with the next rule;</p>"
+        },
+        {
+          "html": "<span class=\"strong\">[relative value resolution]</span> for each\n<a href=\"https://w3c.github.io/ttml2/index.html#semantics-style-property\">style property</a> <em>P</em> in <em>CSS(E)</em>, where the value\ntype of <em>P</em> is relative, perform the following ordered\nsub-steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>if possible, replace the relative value of <em>P</em> with an\nequivalent, non-relative (computed) value;</p>"
+            },
+            {
+              "html": "<p>set the category of <em>P</em> to \"computed\".</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The top-level style resolution process is defined as follows: using\na preorder traversal of each element and <a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous span</a>,\n<em>E</em>, of an intermediate synchronic document,\n<em>DOC<sub>inter</sub></em> , perform the following ordered\nsub-steps:",
+      "rationale": "resolve",
+      "steps": [
+        {
+          "html": "<p><span class=\"strong\">[filter]</span> if <em>E</em>\nis not one of the following, then continue to the next element in the preorder traversal, i.e.,\ndo not perform the subsequent step below on <em>E</em>:</p><ul><li><p><a href=\"https://w3c.github.io/ttml2/index.html#animation-vocabulary-animate\"><code>animate</code></a></p></li><li><p><a href=\"https://w3c.github.io/ttml2/index.html#embedded-content-vocabulary-audio\"><code>audio</code></a></p></li><li><p><a href=\"https://w3c.github.io/ttml2/index.html#document-structure-vocabulary-body\"><code>body</code></a></p></li><li><p><a href=\"https://w3c.github.io/ttml2/index.html#content-vocabulary-br\"><code>br</code></a></p></li><li><p><a href=\"https://w3c.github.io/ttml2/index.html#content-vocabulary-div\"><code>div</code></a></p></li><li><p><a href=\"https://w3c.github.io/ttml2/index.html#embedded-content-vocabulary-image\"><code>image</code></a></p></li><li><p><a href=\"https://w3c.github.io/ttml2/index.html#content-vocabulary-p\"><code>p</code></a></p></li><li><p><a href=\"https://w3c.github.io/ttml2/index.html#layout-vocabulary-region\"><code>region</code></a></p></li><li><p><a href=\"https://w3c.github.io/ttml2/index.html#content-vocabulary-span\"><code>span</code></a></p></li><li><p><a href=\"https://w3c.github.io/ttml2/index.html#animation-vocabulary-set\"><code>set</code></a></p></li><li><p><a href=\"https://w3c.github.io/ttml2/index.html#styling-vocabulary-style\"><code>style</code></a></p></li><li><p><a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous span</a></p></li></ul><p>or a <a href=\"https://w3c.github.io/ttml2/index.html#terms-styled-element\">styled element</a> defined in a supported <a href=\"https://w3c.github.io/ttml2/index.html#terms-extension-module\">extension module</a>;</p>"
+        },
+        {
+          "html": "<p> <span class=\"strong\">[resolve computed styles]</span>\ndetermine (obtain) the computed style set <em>CSS</em> of\n<em>E</em>, namely, <em>CSS(E)</em>, in accordance with\n<a href=\"https://w3c.github.io/ttml2/index.html#semantics-style-resolution-processing-css\"><b>10.4.4.3 Computed Style Set Processing</b></a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-units\">units</a> of either target rectangle TR or reference rectangle RR are not expressed in\n  <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-logical-pixel\">logical pixels</a>  (i.e., <code>px</code> units), then convert the units as required to\n  <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-logical-pixel\">logical pixels</a>.</p>"
+        },
+        {
+          "html": "<p>If the width of the target rectangle TR, <em>W<sub>t</sub></em> , is zero, then set <em>W<sub>t</sub></em> to one;\n  likewise, if the height of the target rectangle TR, <em>H<sub>t</sub></em> , is zero, then set <em>H<sub>t</sub></em> to one.</p>"
+        },
+        {
+          "html": "<p>Let <em>SAR<sub>r</sub></em> be the storage aspect ratio of the reference rectangle <em>RR</em>.</p>"
+        },
+        {
+          "html": "<p>Let <em>SAR<sub>t</sub></em> be the storage aspect ratio of the target rectangle <em>TR</em>.</p>"
+        },
+        {
+          "html": "Determine scaling factor <em>SF</em> as follows:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <em>SAR<sub>r</sub></em> is less than or equal to <em>SAR<sub>t</sub></em> , then <em>SF</em>\n      is <em>W<sub>r</sub></em> / <em>W<sub>t</sub></em> , where <em>W<sub>r</sub></em> and <em>W<sub>t</sub></em>\n      are the widths of the reference and target rectangles, respectively.</p>"
+            },
+            {
+              "html": "<p>Otherwise, <em>SAR<sub>r</sub></em> is greater than <em>SAR<sub>t</sub></em> , then <em>SF</em>\n      is <em>H<sub>r</sub></em> / <em>H<sub>t</sub></em> , where <em>H<sub>r</sub></em> and <em>H<sub>t</sub></em>\n      are the heights of the reference and target rectangles, respectively.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>\n  If <em>SF</em> is not equal to <em>1.0</em>, then\n  set <em>W<sub>t</sub></em> to <em>SF</em> * <em>W<sub>t</sub></em>\n  and <em>H<sub>t</sub></em> to <em>SF</em> * <em>H<sub>t</sub></em> ,\n  i.e., scale target rectangle <em>TR</em> in place by scale factor <em>SF</em>.\n  </p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-units\">units</a> of either target rectangle TR or reference rectangle RR are not expressed in\n  <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-logical-pixel\">logical pixels</a>  (i.e., <code>px</code> units), then convert the units as required to\n  <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-logical-pixel\">logical pixels</a>.</p>"
+        },
+        {
+          "html": "<p>If the width of the target rectangle TR, <em>W<sub>t</sub></em> , is zero, then set <em>W<sub>t</sub></em> to one;\n  likewise, if the height of the target rectangle TR, <em>H<sub>t</sub></em> , is zero, then set <em>H<sub>t</sub></em> to one.</p>"
+        },
+        {
+          "html": "<p>Let <em>SF<sub>W </sub> </em> be <em>W<sub>R</sub> </em>/<em>W<sub>T</sub> </em>, where\n  <em>W<sub>R</sub> </em> and <em>W<sub>T</sub> </em> are the widths of the reference rectangle RR\n  and the target rectangle TR, respectively.</p>"
+        },
+        {
+          "html": "<p>Let <em>SF<sub>H </sub> </em> be <em>H<sub>R</sub> </em>/<em>H<sub>T</sub> </em>, where\n  <em>H<sub>R</sub> </em> and <em>H<sub>T</sub> </em> be the heights of the reference rectangle RR\n  and the target rectangle TR, respectively.</p>"
+        },
+        {
+          "html": "<p>If <em>SF<sub>W</sub> </em> and <em>SF<sub>H</sub> </em> are greater than one, let <em>SF</em> be\n  the lesser of <em>SF<sub>W</sub> </em> and <em>SF<sub>H</sub> </em>;\n  otherwise, let  <em>SF</em> be the greater of <em>SF<sub>W</sub> </em> and <em>SF<sub>H</sub> </em>.</p>"
+        },
+        {
+          "html": "<p>\n  If <em>SF</em> is not equal to <em>1.0</em>, then\n  set <em>W<sub>t</sub></em> to <em>SF</em> * <em>W<sub>t</sub></em>\n  and <em>H<sub>t</sub></em> to <em>SF</em> * <em>H<sub>t</sub></em> ,\n  i.e., scale target rectangle <em>TR</em> in place by scale factor <em>SF</em>.\n  </p>"
+        }
+      ]
+    },
+    {
+      "html": "For each <a href=\"https://w3c.github.io/ttml2/index.html#terms-content-element\">content element</a> <em>B</em>\nin the <a href=\"https://w3c.github.io/ttml2/index.html#element-vocab-group-block\">Block.class</a> element group,\nperform the following ordered steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if the <code>[attributes]</code> information item property of <em>B</em> contains a\n<a href=\"https://w3c.github.io/ttml2/index.html#layout-attribute-region\"><code>region</code></a> attribute, then exit this procedure</p>"
+        },
+        {
+          "html": "<p>if the <code>[children]</code> information item property of <em>B</em> does not contain\na <a href=\"https://w3c.github.io/ttml2/index.html#layout-vocabulary-region\"><code>region</code></a> element <em>R</em>, then exit this procedure;</p>"
+        },
+        {
+          "html": "add <code>begin</code> and <code>end</code> attributes to the <code>[attributes]</code> information item property of <em>R'&nbsp;</em>\n  as follows:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>if not operating in smpte time base and discontinuous marker mode, then set the values of these <code>begin</code> and <code>end</code>\n    attributes to values equivalent to the respective active begin and end times of <em>B</em> within the \n    <a href=\"https://w3c.github.io/ttml2/index.html#terms-document-temporal-coordinate-space\">document temporal coordinate space</a>;</p>"
+            },
+            {
+              "html": "<p>otherwise (smpte discontinuous mode), set the values of these <code>begin</code> and <code>end</code>\n    attributes to values that correspond to the labeled synchronization events (markers) that apply to the respective begin and end times of\n    <em>B</em> within the <a href=\"https://w3c.github.io/ttml2/index.html#terms-document-temporal-coordinate-space\">document temporal coordinate space</a>;</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>if the TTML <a href=\"https://w3c.github.io/ttml2/index.html#terms-document-instance\">document instance</a> does not have a\n<a href=\"https://w3c.github.io/ttml2/index.html#document-structure-vocabulary-head\"><code>head</code></a> element, then insert an empty\n<a href=\"https://w3c.github.io/ttml2/index.html#document-structure-vocabulary-head\"><code>head</code></a> element as the first child of\nthe <a href=\"https://w3c.github.io/ttml2/index.html#document-structure-vocabulary-tt\"><code>tt</code></a> element;</p>"
+        },
+        {
+          "html": "<p>if the <a href=\"https://w3c.github.io/ttml2/index.html#document-structure-vocabulary-head\"><code>head</code></a> element does not have\na <a href=\"https://w3c.github.io/ttml2/index.html#layout-vocabulary-layout\"><code>layout</code></a> child element, then insert an empty\n<a href=\"https://w3c.github.io/ttml2/index.html#layout-vocabulary-layout\"><code>layout</code></a> element immediately after a\n<a href=\"https://w3c.github.io/ttml2/index.html#styling-vocabulary-styling\"><code>styling</code></a> element, if present, and immediately before an\n<a href=\"https://w3c.github.io/ttml2/index.html#animation-vocabulary-animation\"><code>animation</code></a> element, if present, or as the last child of\nthe <a href=\"https://w3c.github.io/ttml2/index.html#document-structure-vocabulary-head\"><code>head</code></a> element if neither are present;</p>"
+        },
+        {
+          "html": "<p>append <em>R'&nbsp;</em> to the <code>[children]</code> information item property of the\n<a href=\"https://w3c.github.io/ttml2/index.html#layout-vocabulary-layout\"><code>layout</code></a> element child of the \n<a href=\"https://w3c.github.io/ttml2/index.html#document-structure-vocabulary-head\"><code>head</code></a> element;</p>"
+        },
+        {
+          "html": "<p>add a <a href=\"https://w3c.github.io/ttml2/index.html#layout-attribute-region\"><code>region</code></a> attribute with value <em>ID</em> to the <code>[attributes]</code> information\nitem property of <em>B</em>;</p>"
+        },
+        {
+          "html": "<p>remove <em>R</em> from the <code>[children]</code> information item property of <em>B</em>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "resolve",
+      "steps": [
+        {
+          "html": "<p>optionally, invoke procedure <span class=\"strong\"><a href=\"https://w3c.github.io/ttml2/index.html#procedure-construct-anonymous-spans\">[construct anonymous spans]</a></span>;\notherwise, if not invoked at this time, then resolve the implicit duration for each <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-text-node\">text node</a> that would have had its\nimplicit duration resolved had this procedure been invoked;</p>"
+        },
+        {
+          "html": "<p>divide the <a href=\"https://w3c.github.io/ttml2/index.html#terms-root-temporal-extent\">root temporal extent</a>\ninto an ordered sequence\nof time coordinates <code>{T<sub>0</sub>, T<sub>1</sub>, T<sub>2</sub>, ...}</code> where, at each time coordinate <code>T<sub>i</sub></code>,\nsome element becomes temporally active or inactive.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Perform the following ordered steps:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<p>for each <a href=\"https://w3c.github.io/ttml2/index.html#terms-significant-text-node\">significant text node</a> child of a <a href=\"https://w3c.github.io/ttml2/index.html#terms-content-element\">content element</a>,\nsynthesize an <a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous span</a> to enclose the <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-text-node\">text node</a>, substituting\nthe new <a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous span</a> for the original <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-text-node\">text node</a> child in its sibling\nand parent hierarchy;</p>"
+        },
+        {
+          "html": "<p>for each contiguous sequence of <a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous spans</a>, replace the\nsequence with a single <a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous span</a> which contains a sequence of\n<a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-text-node\">text nodes</a> representing the individual <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-text-node\">text node</a> children of the\noriginal sequence of <a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous spans</a>;</p>"
+        },
+        {
+          "html": "<p>for each span element whose child is a single <a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous span</a>,\nreplace the <a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous span</a> with its sequence of child <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-text-node\">text nodes</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "For each time interval obtained from the <span class=\"strong\"><a href=\"https://w3c.github.io/ttml2/index.html#procedure-resolve-timing\">[resolve timing]</a></span> procedure,\nwhere each such interval consists of a sequential pair of the time coordinates <code>(T<sub>i</sub>,T<sub>i+1</sub>)</code>,\nthat is, <code>(T<sub>0</sub>,T<sub>1</sub>)</code>, <code>(T<sub>1</sub>,T<sub>2</sub>)</code>, …, map the current\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-document-instance\">document instance</a> from its original, source form,\n<em>DOC<sub>source</sub></em> , to an intermediate synchronic document form, <em>DOC<sub>inter</sub></em> , according to the\nfollowing ordered steps:",
+      "rationale": "invoke",
+      "steps": [
+        {
+          "html": "<p>invoke procedure <span class=\"strong\"><a href=\"https://w3c.github.io/ttml2/index.html#procedure-process-inline-regions\">[process inline regions]</a></span>;</p>"
+        },
+        {
+          "html": "<p>for each <a href=\"https://w3c.github.io/ttml2/index.html#terms-temporally-active-region\">temporally active region</a> <em>R</em>, replicate the\nsub-tree\n of <em>DOC<sub>source</sub></em>\nheaded by the <code>body</code> element;</p>"
+        },
+        {
+          "html": "<p>evaluating this sub-tree in a postorder traversal, prune elements if any of the following conditions is true:</p>",
+          "ignored": [
+            "they are not a presentation related element ; orthey are temporally inactive; orthey are empty and neither Animation elements nor br elements; orthey aren't associated with region R according to the [associate region] procedure."
+          ]
+        },
+        {
+          "html": "<p>if the pruned sub-tree is non-empty, then reparent it to the <em>R</em>\nelement;</p>"
+        },
+        {
+          "html": "<p>finally, after completing the above steps, prune the original <code>body</code>\nelement from the intermediate document, then prune all <code>region</code>,\n<code>begin</code>, <code>end</code>, and <code>dur</code> attributes, which are no\nlonger semantically relevant.</p>"
+        }
+      ]
+    },
+    {
+      "html": "A <a href=\"https://w3c.github.io/ttml2/index.html#terms-content-element\">content element</a> is associated with a region according\nto the following ordered rules, where the first rule satisfied\nis used and remaining rules are skipped:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if the element specifies a <a href=\"https://w3c.github.io/ttml2/index.html#layout-attribute-region\"><code>region</code></a> attribute\nand that region is not <a href=\"https://w3c.github.io/ttml2/index.html#terms-conditionally-excluded\">conditionally excluded</a>,\nthen the element is associated with the region referenced by that\nattribute;</p>"
+        },
+        {
+          "html": "<p>if some ancestor of that element specifies a <a href=\"https://w3c.github.io/ttml2/index.html#layout-attribute-region\"><code>region</code></a> attribute\nand that region is not <a href=\"https://w3c.github.io/ttml2/index.html#terms-conditionally-excluded\">conditionally excluded</a>,\nthen the element is associated with the region referenced by the most\nimmediate ancestor that specifies this attribute;</p>"
+        },
+        {
+          "html": "<p> if the element contains a descendant element that\nspecifies a <a href=\"https://w3c.github.io/ttml2/index.html#layout-attribute-region\"><code>region</code></a> attribute\nand that region is not <a href=\"https://w3c.github.io/ttml2/index.html#terms-conditionally-excluded\">conditionally excluded</a>,\nthen the element is associated with the region referenced by that\nattribute;</p>"
+        },
+        {
+          "html": "<p>if a default region was implied (due to the absence of any\n<a href=\"https://w3c.github.io/ttml2/index.html#layout-vocabulary-region\"><code>region</code></a> element),\nthen the element is associated with the default region;</p>"
+        },
+        {
+          "html": "<p>the element is not associated with any region.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if not previously invoked, perform procedure\n<span class=\"strong\"><a href=\"https://w3c.github.io/ttml2/index.html#procedure-construct-anonymous-spans\">[construct anonymous spans]</a></span>;</p>"
+        },
+        {
+          "html": "<p>resolve styles according to <a href=\"https://w3c.github.io/ttml2/index.html#semantics-style-resolution-process-overall\"><b>10.4.4.4 Style Resolution Process</b></a>;</p>"
+        },
+        {
+          "html": "<p>map the <code>tt</code> element to an <code>fo:root</code> element, populated\ninitially with an <code>fo:layout-master-set</code> element that contains a valid\n<code>fo:simple-page-master</code> that, in turn, contains an\n<code>fo:region-body</code> child, where the extent of the <a href=\"https://w3c.github.io/ttml2/index.html#terms-root-container-region\">root container region</a> expressed on the\n<code>tt</code> element is mapped to <code>page-width</code> and\n<code>page-height</code> attributes on the <code>fo:simple-page-master</code>\nelement;</p>"
+        },
+        {
+          "html": "<p>map the <code>layout</code> element to an <code>fo:page-sequence</code> element and a\nchild <code>fo:flow</code> element that reference the page master and page region\ndefined by the simple page master produced above;</p>"
+        },
+        {
+          "html": "<p>map each non-empty <code>region</code> element to an <code>fo:block-container</code>\nelement with an <code>absolute-position</code> attribute with value\n<code>absolute</code>, with <code>top</code>, <code>left</code>, <code>bottom</code>, and <code>right</code>\nattributes that express a rectangle equivalent to the region's origin and\nextent (including padding), and with a <code>line-stacking-strategy</code> attribute with value <code>line-height</code>;</p>"
+        },
+        {
+          "html": "for each (1) <code>body</code>, <code>div</code>, and <code>p</code> element or (2) <code>image</code> element\nin a block level context, i.e., an <code>image</code> child of an element\nin the <a href=\"https://w3c.github.io/ttml2/index.html#element-vocab-group-block\">Block.class</a> element group,\nthen, if the element is not associated with a <code>tts:display</code> style property with the value\n<code>none</code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>if the element is not an <code>image</code> element, then map the element to a distinct <code>fo:block</code> element,\npopulating the style properties of <code>fo:block</code> by using the computed\nstyle set associated with each original TTML <a href=\"https://w3c.github.io/ttml2/index.html#terms-content-element\">content element</a>;</p>"
+            },
+            {
+              "html": "<p>otherwise (the element is an <code>image</code> element), map the element to a distinct <code>fo:block</code> element\ncontaining a single <code>fo:external-graphic</code> child element, \npopulating the style properties of <code>fo:block</code> and <code>fo:external-graphic</code> by using the computed\nstyle set associated with each original TTML <a href=\"https://w3c.github.io/ttml2/index.html#terms-content-element\">content element</a>\nand populating the <code>src</code> property of the <code>fo:external-graphic</code> element by using an appropriate\nreference to the related <a href=\"https://w3c.github.io/ttml2/index.html#terms-image-resource\">image resource</a>;</p>"
+            }
+          ]
+        },
+        {
+          "html": "for the resulting <code>fo:block</code> formatting object\nproduced in the previous step that corresponds to the <code>body</code>\nelement, invoke the following ordered sub-steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>if the <code>display-align</code> style property of this <code>fo:block</code>\nhas the value <code>center</code> or <code>after</code>,\nthen synthesize and insert as the first child of this <code>fo:block</code>\nan empty <code>fo:block</code> with the following attributes:\n<code>space-after.optimum</code>, <code>space-after.maximum</code>, and\n<code>space-after.conditionality</code>, where the value of the former\ntwo attributes is the height or width of the containing\n<code>fo:block-container</code> element, whichever of these is designated\nas the block progression dimension, and where the value of the last is\n<code>retain</code>;</p>"
+            },
+            {
+              "html": "<p>if the <code>display-align</code> style property of this <code>fo:block</code>\nhas the value <code>center</code> or <code>before</code>,\nthen synthesize and insert as the last child of this <code>fo:block</code>\nan empty <code>fo:block</code> with the following attributes:\n<code>space-after.optimum</code>, <code>space-after.maximum</code>, and\n<code>space-after.conditionality</code>, where the value of the former\ntwo attributes is the height or width of the containing\n<code>fo:block-container</code> element, whichever of these is designated\nas the block progression dimension, and where the value of the last is\n<code>retain</code>;</p>"
+            }
+          ]
+        },
+        {
+          "html": "for each (1) <code>span</code> element and <a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous span</a>\n or (2) <code>image</code> element in an inline level context,\ni.e., an <code>image</code> child of a <code>p</code> or <code>span</code> element, then,\nif the element or the <a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous span</a> is not associated\nwith a <code>tts:display</code> style property with the value <code>none</code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>if the object is an <a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous span</a>, then map the sequence of character items\nof the <a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous span</a> to a distinct <code>fo:inline</code> element,\npopulating the style properties of <code>fo:inline</code> by using the computed\nstyle set associated with the <a href=\"https://w3c.github.io/ttml2/index.html#terms-anonymous-span\">anonymous span</a>;</p>"
+            },
+            {
+              "html": "<p>if the object is a <code>span</code> element, then map the element\nto a distinct <code>fo:inline</code> element, populating the style properties of <code>fo:inline</code> by using the computed\nstyle set associated with the <code>span</code>;</p>"
+            },
+            {
+              "html": "<p>otherwise (the object is an <code>image</code> element), map the element to a distinct <code>fo:inline</code> element\ncontaining a single <code>fo:external-graphic</code> child element, \npopulating the style properties of <code>fo:inline</code> and <code>fo:external-graphic</code> by using the computed\nstyle set associated with the <code>image</code> element\nand populating the <code>src</code> property of the <code>fo:external-graphic</code> element by using an appropriate\nreference to the related <a href=\"https://w3c.github.io/ttml2/index.html#terms-image-resource\">image resource</a>;</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>for each <code>br</code> element that is not\nassociated with a <code>tts:display</code> style property with the value\n<code>none</code>, map the element to\na distinct <code>fo:character</code> element having the following\nproperties:</p><ul><li><p><code>character=\"&amp;#x000A;\"</code></p></li><li><p><code>suppress-at-line-break=\"retain\"</code></p></li></ul>"
+        },
+        {
+          "html": "<p>for each <a href=\"https://w3c.github.io/ttml2/index.html#semantics-style-property\">style property</a> in some computed\nstyle set that\nhas no counterpart in <a href=\"https://w3c.github.io/ttml2/index.html#xslfo11\">[XSL-FO 1.1]</a>, map that property directly through\nto the relevant formatting object produced by the input TTML <a href=\"https://w3c.github.io/ttml2/index.html#terms-content-element\">content element</a> to\nwhich the <a href=\"https://w3c.github.io/ttml2/index.html#semantics-style-property\">style property</a> applies;</p>"
+        },
+        {
+          "html": "<p>optionally, synthesize a unique <code>id</code> attribute on each resulting\nformatting object element that relates that element to the input element that\nresulted in that formatting object element;</p>"
+        }
+      ]
+    },
+    {
+      "html": "The semantics of the <code>animate</code> element and its attributes\nenumerated above are defined to be those specified by <a href=\"https://w3c.github.io/ttml2/index.html#svg11\">[SVG 1.1]</a>, §19.2, as constrained or further clarified below:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The attributes targeted by an <code>animate</code> element and the values to be applied to these attributes are\nspecified by direct use of <a href=\"https://w3c.github.io/ttml2/index.html#terms-styling-attribute\">styling attributes</a>;\ntherefore, the <code>attributeName</code>, <code>from</code>,  <code>to</code>, <code>by</code>, and <code>values</code> attributes defined by\n<a href=\"https://w3c.github.io/ttml2/index.html#svg11\">[SVG 1.1]</a> are not supported by this version of TTML.</p>"
+        },
+        {
+          "html": "<p>If no <code>calcMode</code> attribute is specified, then a <em>calcMode</em> value of <code>linear</code> applies.</p>"
+        },
+        {
+          "html": "<p>If a targeted <a href=\"https://w3c.github.io/ttml2/index.html#terms-animatable-style\">animatable style</a> is <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-discrete\">discretely</a> animatable\nbut not <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-continuous\">continuously</a> animatable, then it is <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-considered-an-error\">considered an error</a>\nif the applied value of the <code>calcMode</code> attribute is not <code>discrete</code>, in which case\nthe targeted <a href=\"https://w3c.github.io/ttml2/index.html#terms-animatable-style\">animatable style</a> must be ignored for the purpose of presentation processing.</p>"
+        },
+        {
+          "html": "<p>If no <code>fill</code> attribute is specified, then a <em>fill</em> value of <code>remove</code> applies.</p>"
+        },
+        {
+          "html": "<p>If a <code>keyTimes</code> attribute is specified and the computed value of <em>calcMode</em> is \"paced\",\nthen this usage must be <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-considered-an-error\">considered an error</a> and the animation must be ignored for the purpose of\npresentation processing.</p>"
+        },
+        {
+          "html": "<p>If a <code>keyTimes</code> attribute is specified and the computed value of <em>calcMode</em> is not \"paced\",\nthen the number of time <a href=\"https://w3c.github.io/ttml2/index.html#terms-component\">components</a> specified in the <code>keyTimes</code> attribute must match the number of animation values specified\nby each animated attribute.</p>"
+        },
+        {
+          "html": "<p>If no <code>keyTimes</code> attribute is specified and the computed value of <em>calcMode</em> is not \"paced\",\nthen a <em>keyTimes</em> value applies that corresponds to an even (linear) spacing of specified animation values over the simple duration of\nthe animation.</p>"
+        },
+        {
+          "html": "<p>If a <code>keySplines</code> attribute is specified and the computed value of <em>calcMode</em> is not \"spline\",\nthen this usage must be <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-considered-an-error\">considered an error</a> and the animation must be ignored for the purpose of\npresentation processing.</p>"
+        },
+        {
+          "html": "<p>If a <code>keySplines</code> attribute is specified and the computed value of <em>calcMode</em> is \"spline\",\nthen the number of control <a href=\"https://w3c.github.io/ttml2/index.html#terms-component\">components</a> specified in the <code>keySplines</code> attribute must be one less than the number\nof time <a href=\"https://w3c.github.io/ttml2/index.html#terms-component\">components</a> in the computed value of the <em>keyTimes</em> attribute.</p>"
+        },
+        {
+          "html": "<p>If no <code>keySplines</code> attribute is specified and the computed value of <em>calcMode</em> is \"spline\",\nthen this usage must be <a title=\"\" href=\"https://w3c.github.io/ttml2/index.html#defs-considered-an-error\">considered an error</a> and the animation must be ignored for the purpose of\npresentation processing.</p>"
+        },
+        {
+          "html": "<p>If no <code>repeatCount</code> attribute is specified, then a <em>repeatCount</em> value of <code>1</code> applies.</p>"
+        },
+        {
+          "html": "<p>The <code>additive</code> attribute defined by <a href=\"https://w3c.github.io/ttml2/index.html#svg11\">[SVG 1.1]</a>, §19.2.10, is not supported by this\nversion of TTML; therefore, in its absence, the semantics of the \"replace\" value of this attribute apply.</p>"
+        },
+        {
+          "html": "<p>The <code>accumulate</code> attribute defined by <a href=\"https://w3c.github.io/ttml2/index.html#svg11\">[SVG 1.1]</a>, §19.2.10, is not supported by this\nversion of TTML; therefore, in its absence, the semantics of the \"none\" value of this attribute apply.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Except for the constraints or variations enumerated below, the semantics of the <code>set</code> element and its attributes\nenumerated above are defined to be those specified by <a href=\"https://w3c.github.io/ttml2/index.html#svg11\">[SVG 1.1]</a>, §19.2.13:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The attributes targeted by a <code>set</code> element and the discrete values to be applied to these attributes are\nspecified by direct use of <a href=\"https://w3c.github.io/ttml2/index.html#terms-styling-attribute\">styling attributes</a> (as opposed to using SVG's\n<code>attributeName</code> and <code>to</code> attributes).</p>"
+        },
+        {
+          "html": "<p>If no <code>fill</code> attribute is specified, then a <em>fill</em> value of <code>remove</code> applies.</p>"
+        }
+      ]
+    },
+    {
+      "html": "For each <a href=\"https://w3c.github.io/ttml2/index.html#terms-out-of-line-animation\">out-of-line animation</a> element <em>A</em> referenced by the <code>animate</code>\nattribute of an element <em>E</em>, perform the following steps (in order of specified IDREFs):",
+      "rationale": "create",
+      "steps": [
+        {
+          "html": "<p>create a deep copy, <em>A'</em>, of <em>A</em>;</p>"
+        },
+        {
+          "html": "<p>remove the <a href=\"https://w3c.github.io/ttml2/index.html#content-attribute-xml-id\"><code>xml:id</code></a> attribute from <em>A'</em>&nbsp;;</p>"
+        },
+        {
+          "html": "<p>insert <em>A'</em> into the <code>[children]</code> information item property of <em>E</em> such that <em>A'</em> appears\nas the last element in the subsequence of child elements that corresponds to the\n<code><a href=\"https://w3c.github.io/ttml2/index.html#element-vocab-group-animation\">Animation.class</a>*</code> wildcard of the content model of <em>E</em>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When the <a href=\"https://w3c.github.io/ttml2/index.html#style-attribute-extent\">tts:extent</a> attribute is specified on the\n    <a href=\"https://w3c.github.io/ttml2/index.html#document-structure-vocabulary-tt\"><code>tt</code></a> element, then",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if the value of the <a href=\"https://w3c.github.io/ttml2/index.html#style-attribute-extent\">tts:extent</a> attribute consists of\n      two pixel-valued <a href=\"https://w3c.github.io/ttml2/index.html#style-value-length\">&lt;length&gt;</a> expressions, the storage aspect ratio is considered\n      to be specified and having a numeric value equal to the\n      <a href=\"https://w3c.github.io/ttml2/index.html#terms-width\">width</a> of the extent divided by its <a href=\"https://w3c.github.io/ttml2/index.html#terms-height\">height</a>;</p>"
+        },
+        {
+          "html": "<p>otherwise (the computed value is <code>contain</code>),\n      the storage aspect ratio is considered to be unspecified and is inferred using other information described below.</p>"
+        }
+      ]
+    },
+    {
+      "html": "If none of the three aspect ratios is specified, then the three aspect ratios are determined according to the following ordered steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>if a <a href=\"https://w3c.github.io/ttml2/index.html#terms-related-media-object\">related media object</a> exists and has a defined <code>DAR</code>,\nthen the resolved value of <code>DAR</code> is the display aspect ratio of the <a href=\"https://w3c.github.io/ttml2/index.html#terms-related-media-object\">related media object</a>;\notherwise, the value of <code>DAR</code> is determined (arbitrarily) by the\n<a href=\"https://w3c.github.io/ttml2/index.html#terms-document-processing-context\">document processing context</a>;</p>"
+        },
+        {
+          "html": "<p>the values of <code>SAR</code> and <code>PAR</code> are then resolved according to\n<a href=\"https://w3c.github.io/ttml2/index.html#root-container-region-semantics-1-aspect-ratio\"><b>H.1.2 One Aspect Ratio</b></a> below.</p>"
+        }
+      ]
+    },
+    {
+      "html": "If only one of the three aspect ratios is specified, then the resolved values of the other two aspect ratios are determined as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "if <code>DAR</code> is specified or was resolved by <a href=\"https://w3c.github.io/ttml2/index.html#root-container-region-semantics-0-aspect-ratio\"><b>H.1.1 No Aspect Ratio</b></a> above,\n    then its resolved value is its specified or resolved value, and the values of <code>SAR</code> and <code>PAR</code> are determined as follows:",
+          "rationale": "resolve",
+          "steps": [
+            {
+              "html": "<p>the resolved value of <code>SAR</code> is the resolved value of <code>DAR</code>;</p>"
+            },
+            {
+              "html": "<p>the resolved value of <code>PAR</code> is <code>1</code> (one).</p>"
+            }
+          ]
+        },
+        {
+          "html": "if <code>SAR</code> is specified, then its resolved value is its specified value, and the values of <code>DAR</code> and <code>PAR</code>\n    are determined as follows:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>if a <a href=\"https://w3c.github.io/ttml2/index.html#terms-related-media-object\">related media object</a> exists and has a defined <code>DAR</code>,\n      then the resolved value of <code>DAR</code> is the display aspect ratio of the\n      <a href=\"https://w3c.github.io/ttml2/index.html#terms-related-media-object\">related media object</a> and the value of <code>PAR</code>\n      is then resolved according to <a href=\"https://w3c.github.io/ttml2/index.html#root-container-region-semantics-2-aspect-ratio\"><b>H.1.3 Two Aspect Ratios</b></a> below;</p>"
+            },
+            {
+              "html": "<p>otherwise, the resolved value of <code>DAR</code>\n      is determined by the <a href=\"https://w3c.github.io/ttml2/index.html#terms-document-processing-context\">document processing context</a> and the value of <code>PAR</code>\n      is then resolved according to <a href=\"https://w3c.github.io/ttml2/index.html#root-container-region-semantics-2-aspect-ratio\"><b>H.1.3 Two Aspect Ratios</b></a> below;</p>"
+            }
+          ]
+        },
+        {
+          "html": "if <code>PAR</code> is specified,\n    then its resolved value is its specified value, and the values of <code>DAR</code> and <code>SAR</code> are determined as follows:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>if a <a href=\"https://w3c.github.io/ttml2/index.html#terms-related-media-object\">related media object</a> exists and has a defined <code>DAR</code>,\n      then the resolved value of <code>DAR</code> is the display aspect ratio of the\n      <a href=\"https://w3c.github.io/ttml2/index.html#terms-related-media-object\">related media object</a> and the value of <code>SAR</code>\n      is then resolved according to <a href=\"https://w3c.github.io/ttml2/index.html#root-container-region-semantics-2-aspect-ratio\"><b>H.1.3 Two Aspect Ratios</b></a> below;</p>"
+            },
+            {
+              "html": "<p>otherwise, the resolved value of <code>SAR</code>\n      is determined by the <a href=\"https://w3c.github.io/ttml2/index.html#terms-document-processing-context\">document processing context</a> and the value of <code>DAR</code>\n      is then resolved according to <a href=\"https://w3c.github.io/ttml2/index.html#root-container-region-semantics-2-aspect-ratio\"><b>H.1.3 Two Aspect Ratios</b></a> below.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The following illustrates the use of <a href=\"https://w3c.github.io/ttml2/index.html#style-attribute-luminanceGain\"><code>tts:luminanceGain</code></a> to composite <a href=\"https://w3c.github.io/ttml2/index.html#srgb\">[SRGB]</a> pixels onto HDR pixels\nthat conform to the system colorimetry specified in <a href=\"https://w3c.github.io/ttml2/index.html#bt2100_1\">[ITU BT.2100-1]</a> using perceptual quantizer (PQ) EOTF and full-range quantization.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>\nLet <code>(r, g, b)</code> be a full-range 8-bit <a href=\"https://w3c.github.io/ttml2/index.html#srgb\">[SRGB]</a> pixel with opacity between 0 and 1.\n</p>"
+        },
+        {
+          "html": "<p>\nLet <code>(R, G, B)</code> and <code>(R<sub>c</sub>, G<sub>c</sub>, B<sub>c</sub>)</code> be full-range 10-bit pixels in the system colorimetry specified in <a href=\"https://w3c.github.io/ttml2/index.html#bt2100_1\">[ITU BT.2100-1]</a> using PQ EOTF and full-range quantization, with opacity <code>A</code> and <code>A<sub>c</sub></code> between 0 and 1.\n</p>"
+        },
+        {
+          "html": "<p>\nInvert the 8-bit full-range quantization:\n</p><p>\n<code>(r, g, b) / 255 → (r, g, b)</code>\n</p>"
+        },
+        {
+          "html": "<p>\nLinearize using the <a href=\"https://w3c.github.io/ttml2/index.html#srgb\">[SRGB]</a> reference display EOTF:\n</p><p>\n<code>(r<sup>2.2</sup>, g<sup>2.2</sup>, b<sup>2.2</sup>) → (r, g, b)</code>\n</p>"
+        },
+        {
+          "html": "<p>\nCompute HDR absolute luminance using the <code>tts:luminanceGain</code> attribute and the <a href=\"https://w3c.github.io/ttml2/index.html#srgb\">[SRGB]</a> illuminant:\n</p><p>\n<code>80 ∙ </code><code>tts:luminanceGain</code><code> ∙ (r, g, b) → (r, g, b)</code>\n</p>"
+        },
+        {
+          "html": "<p>\nConvert from <a href=\"https://w3c.github.io/ttml2/index.html#srgb\">[SRGB]</a> color space to <a href=\"https://w3c.github.io/ttml2/index.html#bt2100_1\">[ITU BT.2100-1]</a> color space:\n</p><p>\n<code> [(0.62740389593470, 0.32928303837789, 0.04331306568741),\n (0.06909728935823, 0.91954039507545, 0.01136231556630),\n (0.01639143887515, 0.08801330787723, 0.89559525324763)] ∙ (r, g, b) → (r, g, b)</code>\n</p>"
+        },
+        {
+          "html": "<p>\nNormalize to 10,000 cd∙m<sup>-2</sup>:\n</p><p>\n<code>(r, g, b) / 10000 → (r, g, b)</code>\n</p>"
+        },
+        {
+          "html": "<p>\nApply inverse PQ EOTF specified in <a href=\"https://w3c.github.io/ttml2/index.html#bt2100_1\">[ITU BT.2100-1]</a>:\n</p><p>\n<code>(PQ(r), PQ(g), PQ(b)) → (r, g, b)</code>\n</p><p>\nwith <code>PQ(L) = [(c1 + c2 ∙ L<sup>m1</sup>) / (1 + c3 ∙ L<sup>m1</sup>)]<sup>m2</sup></code> and <code>m1 = 0.1593017578125</code>, <code>m2 = 78.84375</code>, <code>c1 = 0.8359375</code>, <code>c2 = 18.8515625</code>, and <code>c3 = 18.6875</code>.\n</p>"
+        },
+        {
+          "html": "<p>\nApply opacity:\n</p><p>\n<code>(1-a) ∙ (r, g, b) → (r, g, b)</code>\n</p>"
+        },
+        {
+          "html": "<p>\nApply 10-bit full-range quantization:\n</p><p>\n<code>(Q(r), Q(g), Q(b)) → (r, g, b)</code>\n</p><p>\nwhere <code>Q(N) = floor(1023 ∙ N + 0.5)</code>\n</p>"
+        },
+        {
+          "html": "<p>\nApply composition to yield <code>(R<sub>c</sub>, G<sub>c</sub>, B<sub>c</sub>)</code>:\n</p><p>\n<code>(clamp(r + R), clamp(g + G), clamp(b + B)) → (R<sub>c</sub>, G<sub>c</sub>, B<sub>c</sub>)</code>\n</p><p>\n<code>1 + (1 - a) ∙ (A - 1) → A<sub>c</sub></code>\n</p><p>where</p><p><code>clamp(x) = 0</code> for <code>x &lt; 0</code></p><p>and</p><p><code>clamp(x) = x</code> for <code>0 ≤ x ≤ 1023</code></p><p>and</p><p><code>clamp(x) = 1023</code> for <code>x &gt; 1023</code></p>"
+        }
+      ]
+    },
+    {
+      "html": "The following illustrates compositing of <a href=\"https://w3c.github.io/ttml2/index.html#srgb\">[SRGB]</a> pixels onto Hybrid Log-Gamma (HLG) HDR pixels.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <code>(r, g, b)</code> be a full-range 8-bit <a href=\"https://w3c.github.io/ttml2/index.html#srgb\">[SRGB]</a> pixel with opacity of A between 0 and 255.</p>"
+        },
+        {
+          "html": "<p>Let <code>(R,G,B)</code> and <code>(R<sub>c</sub>,G<sub>c</sub>,B<sub>c</sub>)</code> be narrow-range 10-bit pixels in the system colorimetry specified in <a href=\"https://w3c.github.io/ttml2/index.html#bt2100_1\">[ITU BT.2100-1]</a> using HLG EOTF and narrow-range quantization. Subscript <sub>c</sub> denoting the video signal post-compositing.</p>"
+        },
+        {
+          "html": "<p>Let <code>(X,Y,Z)</code> be pixels in the system colorimetry specified in the CIE 1931 XYZ colour space <a href=\"https://w3c.github.io/ttml2/index.html#cie-xyz\">[XYZ]</a> .</p>"
+        },
+        {
+          "html": "<p>Invert the 8-bit full-range quantization:</p><p><code>(r, g, b)/255 → (r, g, b)</code></p><p><code>A/255 → A</code></p>"
+        },
+        {
+          "html": "<p>Linearize using the <a href=\"https://w3c.github.io/ttml2/index.html#srgb\">[SRGB]</a> EOTF:</p><p><code>(r<sup>2.0</sup>,g<sup>2.0</sup>,b<sup>2.0</sup>) → (r,g,b)</code></p>"
+        },
+        {
+          "html": "<p>Convert from <a href=\"https://w3c.github.io/ttml2/index.html#srgb\">[SRGB]</a> color space to <a href=\"https://w3c.github.io/ttml2/index.html#bt2100_1\">[ITU BT.2100-1]</a> color space:</p><p><code>[(0.4124, 0.3576, 0.1805),\n(0.2126, 0.7152, 0.0722), (0.0193,0.1192,0.9505)]•(r,g,b)→(X,Y,Z)</code></p><p><code>[(1.7167, −0.3557, −0.2534),\n(−0.6667, 1.6165, 0.0158), (0.0176,−0.04277,0.9421)]•(X,Y,Z)→(r,g,b)</code></p>"
+        },
+        {
+          "html": "<p>Apply simplified inverse HLG OOTF:</p><p><code>((0.265r),(0.265g),(0.265b)) → (r,g,b)</code></p>"
+        },
+        {
+          "html": "<p>Apply HLG OETF specified in <a href=\"https://w3c.github.io/ttml2/index.html#bt2100_1\">[ITU BT.2100-1]</a>:</p><p><code>(HLG(r),HLG(g),HLG(b)) → (r,g,b)</code></p><p>where</p><p><code>HLG(x) = (3x)<sup>0.5</sup></code> for <code>0 ≤ x ≤ 1/12</code></p><p>and</p><p><code>HLG(x) = a•ln(12x−b)+c</code> for <code>x &gt; 1/12</code>,</p><p>and <code>a = 0.17883277</code> and <code>b = 1−4a</code> and <code>c = 0.5−a•ln(4a)</code></p>"
+        },
+        {
+          "html": "<p>Apply 10-bit narrow-range quantization:</p><p><code>(Q(r),Q(g),Q(b)) → (r,g,b)</code></p><p>where <code>Q(x) = floor((940 − 64) • x + 64.5)</code></p>"
+        },
+        {
+          "html": "<p>Composite foreground graphic (r,g,b) over background video <code>(R,G,B)</code> with opacity <code>A</code> to yield <code>(R<sub>c</sub>,G<sub>c</sub>,B<sub>c</sub>)</code>:</p><p><code>((A•r+(1−A)R),(A•g+(1−A)G),(A•b+(1−A)B)) → (R<sub>c</sub>,G<sub>c</sub>,B<sub>c</sub>)</code></p>"
+        },
+        {
+          "html": "<p>Clamp output to 10-bit signal range:</p><p><code>(clamp(R<sub>c</sub>),clamp(G<sub>c</sub>),clamp(B<sub>c</sub>)) → (R<sub>c</sub>,G<sub>c</sub>,B<sub>c</sub>)</code></p><p>where</p><p><code>clamp(x) = 0</code> for <code>x &lt; 0</code></p><p>and</p><p><code>clamp(x) = x</code> for <code>0 ≤ x ≤ 1023</code></p><p>and</p><p><code>clamp(x) = 1023</code> for <code>x &gt; 1023</code></p>"
+        }
+      ]
+    }
+  ]
+}

@@ -38,11 +38,6 @@ partial interface Navigator {
   [SecureContext] readonly attribute NavigatorLogin login;
 };
 
-// Source: Privacy-Preserving Attribution: Level 1 (https://w3c.github.io/ppa/)
-partial interface Navigator {
-  [SecureContext, SameObject] readonly attribute PrivateAttribution privateAttribution;
-};
-
 // Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
 [SecureContext]
 partial interface Navigator {
@@ -309,6 +304,11 @@ partial interface Navigator {
 // Source: Presentation API (https://www.w3.org/TR/presentation-api/)
 partial interface Navigator {
   [SecureContext, SameObject] readonly attribute Presentation presentation;
+};
+
+// Source: Privacy-Preserving Attribution: Level 1 (https://www.w3.org/TR/privacy-preserving-attribution/)
+partial interface Navigator {
+  [SecureContext, SameObject] readonly attribute PrivateAttribution privateAttribution;
 };
 
 // Source: Screen Wake Lock API (https://www.w3.org/TR/screen-wake-lock/)

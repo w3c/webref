@@ -1,0 +1,558 @@
+{
+  "spec": {
+    "title": "Privacy-Preserving Attribution: Level 1",
+    "url": "https://w3c.github.io/ppa/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/ppa/#title",
+      "level": 1,
+      "title": "Privacy-Preserving Attribution: Level 1"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/ppa/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/ppa/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/ppa/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/ppa/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "s-attribution",
+      "href": "https://w3c.github.io/ppa/#s-attribution",
+      "level": 3,
+      "title": "Attribution",
+      "number": "1.1"
+    },
+    {
+      "id": "background",
+      "href": "https://w3c.github.io/ppa/#background",
+      "level": 3,
+      "title": "Background",
+      "number": "1.2"
+    },
+    {
+      "id": "goals",
+      "href": "https://w3c.github.io/ppa/#goals",
+      "level": 3,
+      "title": "Goals",
+      "number": "1.3"
+    },
+    {
+      "id": "user-benefit",
+      "href": "https://w3c.github.io/ppa/#user-benefit",
+      "level": 3,
+      "title": "End-User Benefit",
+      "number": "1.4"
+    },
+    {
+      "id": "collective",
+      "href": "https://w3c.github.io/ppa/#collective",
+      "level": 3,
+      "title": "Collective Privacy Effect",
+      "number": "1.5"
+    },
+    {
+      "id": "histograms",
+      "href": "https://w3c.github.io/ppa/#histograms",
+      "level": 3,
+      "title": "Attribution Using Histograms",
+      "number": "1.6"
+    },
+    {
+      "id": "overview",
+      "href": "https://w3c.github.io/ppa/#overview",
+      "level": 2,
+      "title": "Overview of Operation",
+      "number": "2"
+    },
+    {
+      "id": "api",
+      "href": "https://w3c.github.io/ppa/#api",
+      "level": 2,
+      "title": "API Usage",
+      "number": "3"
+    },
+    {
+      "id": "sites",
+      "href": "https://w3c.github.io/ppa/#sites",
+      "level": 3,
+      "title": "Site Identities",
+      "number": "3.1"
+    },
+    {
+      "id": "navigator-interface",
+      "href": "https://w3c.github.io/ppa/#navigator-interface",
+      "level": 3,
+      "title": "Navigator Interface",
+      "number": "3.2"
+    },
+    {
+      "id": "find-aggregation-service",
+      "href": "https://w3c.github.io/ppa/#find-aggregation-service",
+      "level": 3,
+      "title": "Finding a Supported Aggregation Service",
+      "number": "3.3"
+    },
+    {
+      "id": "save-impression-api",
+      "href": "https://w3c.github.io/ppa/#save-impression-api",
+      "level": 3,
+      "title": "Saving Impressions",
+      "number": "3.4"
+    },
+    {
+      "id": "measure-conversion-api",
+      "href": "https://w3c.github.io/ppa/#measure-conversion-api",
+      "level": 3,
+      "title": "Requesting Attribution for a Conversion",
+      "number": "3.5"
+    },
+    {
+      "id": "permission-policy",
+      "href": "https://w3c.github.io/ppa/#permission-policy",
+      "level": 3,
+      "title": "Permissions Policy Integration",
+      "number": "3.6"
+    },
+    {
+      "id": "api-internals",
+      "href": "https://w3c.github.io/ppa/#api-internals",
+      "level": 2,
+      "title": "API Internals",
+      "number": "4"
+    },
+    {
+      "id": "s-impression-store",
+      "href": "https://w3c.github.io/ppa/#s-impression-store",
+      "level": 3,
+      "title": "Impression Store",
+      "number": "4.1"
+    },
+    {
+      "id": "impression-store-contents",
+      "href": "https://w3c.github.io/ppa/#impression-store-contents",
+      "level": 4,
+      "title": "Contents",
+      "number": "4.1.1"
+    },
+    {
+      "id": "impression-store-maintenance",
+      "href": "https://w3c.github.io/ppa/#impression-store-maintenance",
+      "level": 4,
+      "title": "Maintenance",
+      "number": "4.1.2"
+    },
+    {
+      "id": "site-name-algorithm",
+      "href": "https://w3c.github.io/ppa/#site-name-algorithm",
+      "level": 4,
+      "title": "Site Names",
+      "number": "4.1.3"
+    },
+    {
+      "id": "privacy-state",
+      "href": "https://w3c.github.io/ppa/#privacy-state",
+      "level": 3,
+      "title": "State For Privacy Budget Management",
+      "number": "4.2"
+    },
+    {
+      "id": "s-privacy-budget-store",
+      "href": "https://w3c.github.io/ppa/#s-privacy-budget-store",
+      "level": 4,
+      "title": "Privacy Budget Store",
+      "number": "4.2.1"
+    },
+    {
+      "id": "s-epoch-start",
+      "href": "https://w3c.github.io/ppa/#s-epoch-start",
+      "level": 4,
+      "title": "Epoch Start Store",
+      "number": "4.2.2"
+    },
+    {
+      "id": "last-clear",
+      "href": "https://w3c.github.io/ppa/#last-clear",
+      "level": 4,
+      "title": "Last Browsing History Clear Time",
+      "number": "4.2.3"
+    },
+    {
+      "id": "save-impression-api-operation",
+      "href": "https://w3c.github.io/ppa/#save-impression-api-operation",
+      "level": 3,
+      "title": "Save Impression Algorithm",
+      "number": "4.3"
+    },
+    {
+      "id": "measure-conversion-api-operation",
+      "href": "https://w3c.github.io/ppa/#measure-conversion-api-operation",
+      "level": 3,
+      "title": "Measure Conversion Algorithm",
+      "number": "4.4"
+    },
+    {
+      "id": "s-logic",
+      "href": "https://w3c.github.io/ppa/#s-logic",
+      "level": 4,
+      "title": "Attribution Logic",
+      "number": "4.4.1"
+    },
+    {
+      "id": "logic-matching",
+      "href": "https://w3c.github.io/ppa/#logic-matching",
+      "level": 4,
+      "title": "Common Impression Matching Logic",
+      "number": "4.4.2"
+    },
+    {
+      "id": "last-touch-attribution",
+      "href": "https://w3c.github.io/ppa/#last-touch-attribution",
+      "level": 5,
+      "title": "Last-Touch Attribution",
+      "number": "4.4.2.1"
+    },
+    {
+      "id": "user-control",
+      "href": "https://w3c.github.io/ppa/#user-control",
+      "level": 3,
+      "title": "User Control and Visibility",
+      "number": "4.5"
+    },
+    {
+      "id": "opt-out",
+      "href": "https://w3c.github.io/ppa/#opt-out",
+      "level": 4,
+      "title": "Optional Participation",
+      "number": "4.5.1"
+    },
+    {
+      "id": "visibility",
+      "href": "https://w3c.github.io/ppa/#visibility",
+      "level": 4,
+      "title": "Visibility",
+      "number": "4.5.2"
+    },
+    {
+      "id": "http-api",
+      "href": "https://w3c.github.io/ppa/#http-api",
+      "level": 2,
+      "title": "HTTP API",
+      "number": "5"
+    },
+    {
+      "id": "implementation-considerations",
+      "href": "https://w3c.github.io/ppa/#implementation-considerations",
+      "level": 2,
+      "title": "Implementation Considerations",
+      "number": "6"
+    },
+    {
+      "id": "aggregation",
+      "href": "https://w3c.github.io/ppa/#aggregation",
+      "level": 2,
+      "title": "Aggregation",
+      "number": "7"
+    },
+    {
+      "id": "s-mpc",
+      "href": "https://w3c.github.io/ppa/#s-mpc",
+      "level": 3,
+      "title": "Multi-Party Computation Aggregation",
+      "number": "7.1"
+    },
+    {
+      "id": "prio",
+      "href": "https://w3c.github.io/ppa/#prio",
+      "level": 4,
+      "title": "Prio and DAP",
+      "number": "7.1.1"
+    },
+    {
+      "id": "s-tee",
+      "href": "https://w3c.github.io/ppa/#s-tee",
+      "level": 3,
+      "title": "Trusted Execution Environments",
+      "number": "7.2"
+    },
+    {
+      "id": "anti-replay",
+      "href": "https://w3c.github.io/ppa/#anti-replay",
+      "level": 3,
+      "title": "Anti-Replay Requirements",
+      "number": "7.3"
+    },
+    {
+      "id": "dp",
+      "href": "https://w3c.github.io/ppa/#dp",
+      "level": 2,
+      "title": "Differential Privacy",
+      "number": "8"
+    },
+    {
+      "id": "dp-unit",
+      "href": "https://w3c.github.io/ppa/#dp-unit",
+      "level": 3,
+      "title": "Privacy Unit",
+      "number": "8.1"
+    },
+    {
+      "id": "dp-instance",
+      "href": "https://w3c.github.io/ppa/#dp-instance",
+      "level": 4,
+      "title": "Browser Instances",
+      "number": "8.1.1"
+    },
+    {
+      "id": "dp-site",
+      "href": "https://w3c.github.io/ppa/#dp-site",
+      "level": 4,
+      "title": "Per-Site Limits",
+      "number": "8.1.2"
+    },
+    {
+      "id": "dp-refresh",
+      "href": "https://w3c.github.io/ppa/#dp-refresh",
+      "level": 4,
+      "title": "Privacy Budget Epochs",
+      "number": "8.1.3"
+    },
+    {
+      "id": "dp-budget",
+      "href": "https://w3c.github.io/ppa/#dp-budget",
+      "level": 3,
+      "title": "Privacy Budgets",
+      "number": "8.2"
+    },
+    {
+      "id": "dp-deduction",
+      "href": "https://w3c.github.io/ppa/#dp-deduction",
+      "level": 4,
+      "title": "Privacy Budget Deduction",
+      "number": "8.2.1"
+    },
+    {
+      "id": "dp-safety",
+      "href": "https://w3c.github.io/ppa/#dp-safety",
+      "level": 4,
+      "title": "Safety Limits",
+      "number": "8.2.2"
+    },
+    {
+      "id": "dp-mechanism",
+      "href": "https://w3c.github.io/ppa/#dp-mechanism",
+      "level": 3,
+      "title": "Differential Privacy Mechanisms",
+      "number": "8.3"
+    },
+    {
+      "id": "security",
+      "href": "https://w3c.github.io/ppa/#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "9"
+    },
+    {
+      "id": "security-impression-store",
+      "href": "https://w3c.github.io/ppa/#security-impression-store",
+      "level": 3,
+      "title": "Impression Store",
+      "number": "9.1"
+    },
+    {
+      "id": "security-api-implementation",
+      "href": "https://w3c.github.io/ppa/#security-api-implementation",
+      "level": 3,
+      "title": "API Implementation",
+      "number": "9.2"
+    },
+    {
+      "id": "security-aggregation-services",
+      "href": "https://w3c.github.io/ppa/#security-aggregation-services",
+      "level": 3,
+      "title": "Aggregation Services",
+      "number": "9.3"
+    },
+    {
+      "id": "security-multiple-sites",
+      "href": "https://w3c.github.io/ppa/#security-multiple-sites",
+      "level": 3,
+      "title": "Combining Reports from Multiple Sites",
+      "number": "9.4"
+    },
+    {
+      "id": "security-ad-fraud",
+      "href": "https://w3c.github.io/ppa/#security-ad-fraud",
+      "level": 3,
+      "title": "Ad Fraud",
+      "number": "9.5"
+    },
+    {
+      "id": "privacy",
+      "href": "https://w3c.github.io/ppa/#privacy",
+      "level": 2,
+      "title": "10. Privacy Considerations"
+    },
+    {
+      "id": "privacy-exposure",
+      "href": "https://w3c.github.io/ppa/#privacy-exposure",
+      "level": 3,
+      "title": "Information Exposed by the Private Attribution API",
+      "number": "10.1"
+    },
+    {
+      "id": "privacy-opt-out",
+      "href": "https://w3c.github.io/ppa/#privacy-opt-out",
+      "level": 3,
+      "title": "Disabling the Private Attribution API",
+      "number": "10.2"
+    },
+    {
+      "id": "unconfigured",
+      "href": "https://w3c.github.io/ppa/#unconfigured",
+      "level": 3,
+      "title": "Unconfigured Browsers",
+      "number": "10.3"
+    },
+    {
+      "id": "privacy-impression-store",
+      "href": "https://w3c.github.io/ppa/#privacy-impression-store",
+      "level": 3,
+      "title": "Including Identifying Information with Saved Impressions",
+      "number": "10.4"
+    },
+    {
+      "id": "privacy-third-party-contexts",
+      "href": "https://w3c.github.io/ppa/#privacy-third-party-contexts",
+      "level": 3,
+      "title": "Use in Third-party Contexts",
+      "number": "10.5"
+    },
+    {
+      "id": "clear-budget-store",
+      "href": "https://w3c.github.io/ppa/#clear-budget-store",
+      "level": 3,
+      "title": "Clearing API State",
+      "number": "10.6"
+    },
+    {
+      "id": "clear-site-data",
+      "href": "https://w3c.github.io/ppa/#clear-site-data",
+      "level": 4,
+      "title": "Clearing Site Data",
+      "number": "10.6.1"
+    },
+    {
+      "id": "clear-browsing-history",
+      "href": "https://w3c.github.io/ppa/#clear-browsing-history",
+      "level": 4,
+      "title": "Clearing Browsing History",
+      "number": "10.6.2"
+    },
+    {
+      "id": "removing-impressions",
+      "href": "https://w3c.github.io/ppa/#removing-impressions",
+      "level": 4,
+      "title": "Clearing Impressions",
+      "number": "10.6.3"
+    },
+    {
+      "id": "why-wall-clock",
+      "href": "https://w3c.github.io/ppa/#why-wall-clock",
+      "level": 3,
+      "title": "Choice of Clock",
+      "number": "10.7"
+    },
+    {
+      "id": "ack",
+      "href": "https://w3c.github.io/ppa/#ack",
+      "level": 2,
+      "title": "11. Acknowledgements"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://w3c.github.io/ppa/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://w3c.github.io/ppa/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://w3c.github.io/ppa/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/ppa/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/ppa/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/ppa/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/ppa/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/ppa/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/ppa/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://w3c.github.io/ppa/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://w3c.github.io/ppa/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

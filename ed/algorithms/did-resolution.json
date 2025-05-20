@@ -1,0 +1,546 @@
+{
+  "spec": {
+    "title": "Decentralized Identifier Resolution (DID Resolution) v0.3",
+    "url": "https://w3c.github.io/did-resolution/"
+  },
+  "algorithms": [
+    {
+      "html": "The following <a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-14\">DID resolution</a> algorithm <em class=\"rfc2119\">MUST</em> be implemented by a conformant <a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-24\">DID resolver</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Validate that the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-35\">DID</a></var> conforms to the <code>did</code> rule of the\n\t\t\t<a href=\"https://www.w3.org/TR/did-core/#did-syntax\">DID Syntax</a>.\n\t\t\tIf not, the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-25\">DID resolver</a> <em class=\"rfc2119\">MUST</em> return the following result:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "<b>didResolutionMetadata</b>: <code>«[ \"error\" → \"invalidDid\", ... ]»</code>"
+            },
+            {
+              "html": "<b>didDocument</b>: <code>null</code>"
+            },
+            {
+              "html": "<b>didDocumentMetadata</b>: <code>«[ ]»</code>"
+            }
+          ]
+        },
+        {
+          "html": "Determine whether the DID method of the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-36\">DID</a></var> is supported by the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-26\">DID resolver</a>\n\t\t\tthat implements this algorithm. If not, the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-27\">DID resolver</a> <em class=\"rfc2119\">MUST</em> return the following result:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "<b>didResolutionMetadata</b>: <code>«[ \"error\" → \"methodNotSupported\", ... ]»</code>"
+            },
+            {
+              "html": "<b>didDocument</b>: <code>null</code>"
+            },
+            {
+              "html": "<b>didDocumentMetadata</b>: <code>«[ ]»</code>"
+            }
+          ]
+        },
+        {
+          "html": "Obtain the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-55\">DID document</a> for the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-37\">DID</a></var> by executing the\n\t\t\t<a href=\"https://www.w3.org/TR/did-core/#method-operations\">Read</a> operation against the\n\t\t\t<var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-38\">DID</a>'s</var> <a href=\"https://w3c.github.io/did-resolution/#dfn-verifiable-data-registry\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-verifiable-data-registry-5\">verifiable data registry</a>, as defined by the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-method-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-method-s-26\">DID method</a></var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Besides the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-39\">DID</a></var>, all additional <var>resolution options</var> of\n\t\t\t\tthis algorithm <em class=\"rfc2119\">MUST</em> be passed to the\n\t\t\t\t<a href=\"https://www.w3.org/TR/did-core/#method-operations\">Read</a> operation of the\n\t\t\t\t<var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-method-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-method-s-27\">DID method</a></var>."
+            },
+            {
+              "html": "If the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-40\">DID</a></var> does not exist, return the following result:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "<b>didResolutionMetadata</b>: <code>«[ \"error\" → \"notFound\", ... ]»</code>"
+                },
+                {
+                  "html": "<b>didDocument</b>: <code>null</code>"
+                },
+                {
+                  "html": "<b>didDocumentMetadata</b>: <code>«[ ]»</code>"
+                }
+              ]
+            },
+            {
+              "html": "If the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-41\">DID</a></var> has been deactivated, return the following result:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "<b>didResolutionMetadata</b>: <code>«[ ... ]»</code>"
+                },
+                {
+                  "html": "<b>didDocument</b>: <code>null</code>"
+                },
+                {
+                  "html": "<b>didDocumentMetadata</b>: <code>«[ \"deactivated\" → true, ... ]»</code>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, the result of the <a href=\"https://www.w3.org/TR/did-core/#method-operations\">Read</a> operation\n\t\t\t\t\tis called the <var>output <a href=\"https://w3c.github.io/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-56\">DID document</a></var>. This result <em class=\"rfc2119\">MUST</em> be represented in a\n\t\t\t\t\t<a href=\"https://www.w3.org/TR/did-core/#representations\">conformant representation</a> that\n\t\t\t\t\tcorresponds to the <b>accept</b> <var>input <a href=\"https://w3c.github.io/did-resolution/#did-resolution-options\">DID resolution option</a></var>."
+            }
+          ]
+        },
+        {
+          "html": "If the <var>input <a href=\"https://w3c.github.io/did-resolution/#did-resolution-options\">DID resolution options</a></var> contain the <code>expandRelativeUrls</code> option with a value of <code>true</code>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Iterate over all <a data-cite=\"did-core#services\" href=\"https://www.w3.org/TR/did-core/#services\">services</a>,\n\t\t\t\t\t\t<a data-cite=\"did-core#verification-methods\" href=\"https://www.w3.org/TR/did-core/#verification-methods\">verification methods</a>, and\n\t\t\t\t\t\t<a data-cite=\"did-core#verification-relationships\" href=\"https://www.w3.org/TR/did-core/#verification-relationships\">verification relationships</a>\n\t\t\t\t\t\tin the <var>output <a href=\"https://w3c.github.io/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-57\">DID document</a></var>."
+            },
+            {
+              "html": "If the value of the <code>id</code> property of a <a data-cite=\"did-core#services\" href=\"https://www.w3.org/TR/did-core/#services\">service</a> or\n\t\t\t\t\t\t<a data-cite=\"did-core#verification-methods\" href=\"https://www.w3.org/TR/did-core/#verification-methods\">verification method</a> \n\t\t\t\t\t\t(including those embedded in <a data-cite=\"did-core#verification-relationships\" href=\"https://www.w3.org/TR/did-core/#verification-relationships\">verification relationships</a>) is a\n\t\t\t\t\t\t<a data-cite=\"did-core#relative-did-urls\" href=\"https://www.w3.org/TR/did-core/#relative-did-urls\">relative DID URL</a>, or if a\n\t\t\t\t\t\t<a data-cite=\"did-core#verification-relationships\" href=\"https://www.w3.org/TR/did-core/#verification-relationships\">verification relationship</a> is a\n\t\t\t\t\t\t<a data-cite=\"did-core#relative-did-urls\" href=\"https://www.w3.org/TR/did-core/#relative-did-urls\">relative DID URL</a>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "Resolve the <a data-cite=\"did-core#relative-did-urls\" href=\"https://www.w3.org/TR/did-core/#relative-did-urls\">relative DID URL</a> to\n\t\t\t\t\t\t\t\tan absolute <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-16\">DID URL</a> conformant with <a data-cite=\"did-core#did-url-syntax\" href=\"https://www.w3.org/TR/did-core/#did-url-syntax\">DID URL Syntax</a>, according\n\t\t\t\t\t\t\t\tto the rules of section <a data-cite=\"did-core#relative-did-urls\" href=\"https://www.w3.org/TR/did-core/#relative-did-urls\">Relative DID URLs</a> in <cite><a data-cite=\"DID-CORE\" data-matched-text=\"[[[DID-CORE]]]\" href=\"https://www.w3.org/TR/did-core/\">Decentralized Identifiers (DIDs) v1.0</a></cite>."
+                }
+              ]
+            },
+            {
+              "html": "Update the <var>output <a href=\"https://w3c.github.io/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-58\">DID document</a></var> by replacing\n\t\t\t\t\t\tthe <a data-cite=\"did-core#relative-did-urls\" href=\"https://www.w3.org/TR/did-core/#relative-did-urls\">relative DID URLs</a> with the resolved absolute <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-17\">DID URLs</a>."
+            }
+          ]
+        },
+        {
+          "html": "Return the following result:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "<b>didResolutionMetadata</b>: <code>«[ ... ]»</code>"
+            },
+            {
+              "html": "<b>didDocument</b>: <var>output DID document</var>"
+            },
+            {
+              "html": "<b>didDocumentMetadata</b>: <code>«[ \"contentType\" → </code><var>output DID document media type</var><code>, ... ]»</code>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Validate that the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-28\">DID URL</a></var> conforms to the <code>did-url</code> rule of the\n\t\t\t\t\t<a href=\"https://www.w3.org/TR/did-core/#did-url-syntax\">DID URL Syntax</a>.\n\t\t\t\t\tIf not, the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-url-dereferencers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencers-2\">DID URL dereferencer</a> <em class=\"rfc2119\">MUST</em> return the following result:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "<b>dereferencingMetadata</b>: <code>«[ \"error\" → \"invalidDidUrl\" ]»</code>"
+            },
+            {
+              "html": "<b>contentStream</b>: <code>null</code>"
+            },
+            {
+              "html": "<b>contentMetadata</b>: <code>«[ ]»</code>"
+            }
+          ]
+        },
+        {
+          "html": "Obtain the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-61\">DID document</a> for the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-43\">DID</a></var> by executing the\n\t\t\t\t\t<a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-18\">DID resolution</a> algorithm as defined in <a href=\"https://w3c.github.io/did-resolution/#resolving\" class=\"sec-ref\"><bdi class=\"secno\">4. </bdi>DID Resolution</a>. All\n\t\t\t\t\t<var>dereferencing options</var> and all\n\t\t\t\t\t<a href=\"https://www.w3.org/TR/did-core/#did-parameters\">\n\t\t\t\t\t\tDID parameters</a> of the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-29\">DID URL</a></var> <em class=\"rfc2119\">MUST</em> be passed as <var>resolution options</var> to the\n\t\t\t\t\t\t<a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-19\">DID Resolution</a> algorithm."
+        },
+        {
+          "html": "If the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-44\">DID</a></var> does not exist in the VDR, the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-url-dereferencers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencers-3\">DID URL dereferencer</a>\n\t\t\t\t\t\t<em class=\"rfc2119\">MUST</em> return the following result:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "<b>dereferencingMetadata</b>: <code>«[ \"error\" → \"notFound\", ... ]»</code>"
+            },
+            {
+              "html": "<b>contentStream</b>: <code>null</code>"
+            },
+            {
+              "html": "<b>contentMetadata</b>: <code>«[ ]»</code>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, the <b>didDocument</b> result of the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-20\">DID resolution</a> algorithm is called the <var>resolved <a href=\"https://w3c.github.io/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-62\">DID document</a></var>."
+        },
+        {
+          "html": "If present, separate the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-fragments\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-fragments-5\">DID fragment</a> from the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-30\">DID URL</a></var> and continue\n\t\t\t\t\twith the adjusted <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-31\">DID URL</a></var>."
+        },
+        {
+          "html": "If the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-32\">DID URL</a></var> contains no <a href=\"https://w3c.github.io/did-resolution/#dfn-did-paths\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-paths-2\">DID path</a> and no <a href=\"https://w3c.github.io/did-resolution/#dfn-did-queries\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-queries-2\">DID query</a>:\n\t\t\t\t\t\n\t\t\t\t\tThe <a href=\"https://w3c.github.io/did-resolution/#dfn-did-url-dereferencers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencers-4\">DID URL dereferencer</a> <em class=\"rfc2119\">MUST</em> return the <var>resolved <a href=\"https://w3c.github.io/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-63\">DID document</a></var> and\n\t\t\t\t\t<var>resolved <a href=\"https://w3c.github.io/did-resolution/#did-document-metadata\" class=\"sec-ref\"><bdi class=\"secno\">4.3 </bdi>DID Document Metadata</a></var> as follows:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "<b>dereferencingMetadata</b>: <code>«[ ... ]»</code>"
+            },
+            {
+              "html": "<b>contentStream</b>: <code>resolved DID document</code>"
+            },
+            {
+              "html": "<b>contentMetadata</b>: <code>«[ <code>resolved DID document metadata</code> ]»</code>"
+            }
+          ]
+        },
+        {
+          "html": "If the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-33\">DID URL</a></var> contains the\n\t\t\t\t\t<a href=\"https://www.w3.org/TR/did-core/#did-parameters\">DID parameter</a> <code>hl</code>:"
+        },
+        {
+          "html": "If the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-34\">DID URL</a></var> contains the\n\t\t\t\t<a href=\"https://www.w3.org/TR/did-core/#did-parameters\">\n\t\t\t\t\tDID parameter</a> <code>service</code> and/or the <a href=\"https://www.w3.org/TR/did-core/#did-parameters\">\n\t\t\t\t\tDID parameter</a> <code>serviceType</code>, and optionally the\n\t\t\t\t\t<a data-cite=\"did-core#did-parameters\" href=\"https://www.w3.org/TR/did-core/#did-parameters\">DID parameter</a> <code>relativeRef</code>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "From the <var>resolved <a href=\"https://w3c.github.io/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-64\">DID document</a></var>, select all\n\t\t\t\t\t\t\t<a data-cite=\"did-core#services\" href=\"https://www.w3.org/TR/did-core/#services\">services</a> which fulfill the following conditions:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "If the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-35\">DID URL</a></var> contains the\n\t\t\t\t\t\t\t\t\t<a data-cite=\"did-core#did-parameters\" href=\"https://www.w3.org/TR/did-core/#did-parameters\">DID parameter</a> <code>service</code>:\n\t\t\t\t\t\t\t\t\tSelect the <a data-cite=\"did-core#services\" href=\"https://www.w3.org/TR/did-core/#services\">service</a> if its <code>id</code>\n\t\t\t\t\t\t\t\t\tproperty matches the value of the <code>service</code> DID parameter. If the <code>id</code>\n\t\t\t\t\t\t\t\t\tproperty or the <code>service</code> DID parameter or both contain relative\n\t\t\t\t\t\t\t\t\treferences, the corresponding absolute URIs <em class=\"rfc2119\">MUST</em> be resolved and used for determining\n\t\t\t\t\t\t\t\t\tthe match, using the rules specified in <a data-cite=\"RFC3986#section-5\" href=\"https://www.rfc-editor.org/rfc/rfc3986#section-5\">RFC3986 Section 5: Reference Resolution</a>\n\t\t\t\t\t\t\t\t\tand in section <a data-cite=\"did-core#relative-did-urls\" href=\"https://www.w3.org/TR/did-core/#relative-did-urls\">Relative DID URLs</a> in <cite><a data-cite=\"DID-CORE\" data-matched-text=\"[[[DID-CORE]]]\" href=\"https://www.w3.org/TR/did-core/\">Decentralized Identifiers (DIDs) v1.0</a></cite>."
+                },
+                {
+                  "html": "If the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-36\">DID URL</a></var> contains the\n\t\t\t\t\t\t\t\t\t<a data-cite=\"did-core#did-parameters\" href=\"https://www.w3.org/TR/did-core/#did-parameters\">DID parameter</a> <code>serviceType</code>:\n\t\t\t\t\t\t\t\t\tSelect the <a data-cite=\"did-core#services\" href=\"https://www.w3.org/TR/did-core/#services\">service</a> if its <code>type</code>\n\t\t\t\t\t\t\t\t\tproperty matches the value of the <code>serviceType</code> DID parameter."
+                }
+              ]
+            },
+            {
+              "html": "If the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-37\">DID URL</a></var> contains the\n\t\t\t\t\t\t\t<a data-cite=\"did-core#did-parameters\" href=\"https://www.w3.org/TR/did-core/#did-parameters\">DID parameter</a> <code>relativeRef</code>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "For each <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-4\">service</a></var>:",
+                  "rationale": ".algorithm",
+                  "steps": [
+                    {
+                      "html": "If the value of the <code>serviceEndpoint</code> property of the <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-5\">service</a></var>\n\t\t\t\t\t\t\t\t\t\tis a <a data-cite=\"INFRA#maps\" href=\"https://infra.spec.whatwg.org/#maps\">map</a>, skip this <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-6\">service</a></var>."
+                    },
+                    {
+                      "html": "If the value of the <code>serviceEndpoint</code> property of the <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-7\">service</a></var>\n\t\t\t\t\t\t\t\t\t\t\tis a <a data-cite=\"INFRA#string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, add this value to a list of\n\t\t\t\t\t\t\t\t\t\t\t<var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-3\">service endpoint</a> URLs</var>."
+                    },
+                    {
+                      "html": "If the value of the <code>serviceEndpoint</code> property of the <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-8\">service</a></var>\n\t\t\t\t\t\t\t\t\t\t\tis a <a data-cite=\"INFRA#ordered-set\" href=\"https://infra.spec.whatwg.org/#ordered-set\">set</a>, add all its items that are <a data-cite=\"INFRA#string\" href=\"https://infra.spec.whatwg.org/#string\">strings</a>\n\t\t\t\t\t\t\t\t\t\t\tto a list of <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-4\">service endpoint</a> URLs</var>."
+                    }
+                  ]
+                },
+                {
+                  "html": "For each <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-5\">service endpoint</a> URL</var>, execute the algorithm specified in\n\t\t\t\t\t\t\t\t\t<a data-cite=\"RFC3986#section-5\" href=\"https://www.rfc-editor.org/rfc/rfc3986#section-5\">RFC3986 Section 5: Reference Resolution</a> as follows:",
+                  "rationale": ".algorithm",
+                  "steps": [
+                    {
+                      "html": "The <strong>base URI</strong> value is the <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-6\">service endpoint</a> URL</var>."
+                    },
+                    {
+                      "html": "The <strong>relative reference</strong> is the value of the\n\t\t\t\t\t\t\t\t\t\t\t<a data-cite=\"did-core#did-parameters\" href=\"https://www.w3.org/TR/did-core/#did-parameters\">DID parameter</a> <code>relativeRef</code>."
+                    },
+                    {
+                      "html": "Update the <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-7\">service endpoint</a> URL</var> to\n\t\t\t\t\t\t\t\t\t\tthe result of the \"Reference Resolution\" algorithm."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "If the <b>accept</b> <var>input <a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-options\">DID dereferencing option</a></var>\n\t\t\t\t\t\t\tis missing, or if its value is the Media Type of a <a href=\"https://w3c.github.io/did-resolution/#dfn-representations\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-representations-11\">representation</a> of a <a href=\"https://w3c.github.io/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-65\">DID document</a>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "Update the <a href=\"https://w3c.github.io/did-resolution/#dfn-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-9\">services</a> in the <var>resolved <a href=\"https://w3c.github.io/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-66\">DID document</a></var> to contain only the\n\t\t\t\t\t\t\t\t\t<var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-10\">services</a></var>."
+                },
+                {
+                  "html": "Return the following result:",
+                  "rationale": ".algorithm",
+                  "steps": [
+                    {
+                      "html": "<b>dereferencingMetadata</b>: <code>«[ ... ]»</code>"
+                    },
+                    {
+                      "html": "<b>content</b>: <code>resolved DID document with selected services</code>"
+                    },
+                    {
+                      "html": "<b>contentMetadata</b>: <code>«[ <code>resolved DID document metadata</code> ]»</code>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "If the value of the <b>accept</b> <var>input <a href=\"https://w3c.github.io/did-resolution/#did-resolution-options\">DID resolution option</a></var>\n\t\t\t\t\t\t\tis <b>text/uri-list</b>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "Return the following result:",
+                  "rationale": ".algorithm",
+                  "steps": [
+                    {
+                      "html": "<b>dereferencingMetadata</b>: <code>«[ ... ]»</code>"
+                    },
+                    {
+                      "html": "<b>content</b>: <code>« selected service endpoint URLs »</code>"
+                    },
+                    {
+                      "html": "<b>contentMetadata</b>: <code>«[ \"contentType\" → \"text/uri-list\", ... ]»</code>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, return the following result:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "<b>dereferencingMetadata</b>: <code>«[ \"error\" → \"representationNotSupported\", ... ]»</code>"
+                },
+                {
+                  "html": "<b>content</b>: <code>null</code>"
+                },
+                {
+                  "html": "<b>contentMetadata</b>: <code>«[ ]»</code>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, if the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-38\">DID URL</a></var> contains a <a href=\"https://w3c.github.io/did-resolution/#dfn-did-paths\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-paths-3\">DID path</a> and/or <a href=\"https://w3c.github.io/did-resolution/#dfn-did-queries\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-queries-3\">DID query</a>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "The applicable <a href=\"https://w3c.github.io/did-resolution/#dfn-did-method-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-method-s-30\">DID method</a> <em class=\"rfc2119\">MAY</em> specify how to dereference\n\t\t\t\t\t\tthe <a href=\"https://w3c.github.io/did-resolution/#dfn-did-paths\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-paths-4\">DID path</a> and/or <a href=\"https://w3c.github.io/did-resolution/#dfn-did-queries\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-queries-4\">DID query</a> of the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-39\">DID URL</a></var>."
+            },
+            {
+              "html": "An extension specification <em class=\"rfc2119\">MAY</em> specify how to dereference\n\t\t\t\t\t\tthe <a href=\"https://w3c.github.io/did-resolution/#dfn-did-paths\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-paths-5\">DID path</a> of the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-40\">DID URL</a></var>."
+            },
+            {
+              "html": "An extension specification <em class=\"rfc2119\">MAY</em> specify how to dereference\n\t\t\t\t\t\tthe <a href=\"https://w3c.github.io/did-resolution/#dfn-did-queries\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-queries-5\">DID query</a> of the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-41\">DID URL</a></var>."
+            },
+            {
+              "html": "The client <em class=\"rfc2119\">MAY</em> be able to dereference the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-42\">DID URL</a></var>\n\t\t\t\t\t\tin an application-specific way."
+            }
+          ]
+        },
+        {
+          "html": "If neither this algorithm, nor the applicable <a href=\"https://w3c.github.io/did-resolution/#dfn-did-method-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-method-s-31\">DID method</a>, nor an extension, nor the client\n\t\t\t\tis able to dereference the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-43\">DID URL</a></var>, return the following result:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "<b>dereferencingMetadata</b>: <code>«[ \"error\" → \"notFound\" ]»</code>"
+            },
+            {
+              "html": "<b>contentStream</b>: <code>null</code>"
+            },
+            {
+              "html": "<b>contentMetadata</b>: <code>«[ ]»</code>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "If the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-44\">DID URL</a></var> contains a <a href=\"https://w3c.github.io/did-resolution/#dfn-did-fragments\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-fragments-6\">DID fragment</a>,\n\t\t\tthen dereferencing of the fragment is dependent\n\t\t\ton the media type ([<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/did-resolution/#bib-rfc2046\" title=\"Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types\">RFC2046</a></cite>]) of the resource, i.e., on the result of\n\t\t\t<a href=\"https://w3c.github.io/did-resolution/#dereferencing-algorithm-resource\" class=\"sec-ref\"><bdi class=\"secno\">5.3.1 </bdi>Dereferencing the Resource</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the result of <a href=\"https://w3c.github.io/did-resolution/#dereferencing-algorithm-resource\" class=\"sec-ref\"><bdi class=\"secno\">5.3.1 </bdi>Dereferencing the Resource</a> is an <var>output <a href=\"https://w3c.github.io/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-67\">DID document</a></var>,\n\t\t\t\tand the <var>input <a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-options\">DID URL dereferencing options</a></var> contain the\n\t\t\t\t<code>verificationRelationship</code> option:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Let <var>verificationRelationship</var> be the value of the <code>verificationRelationship</code> \n\t\t\t\t\toption."
+            },
+            {
+              "html": "Let <var>verificationMethod</var> be the result of dereferencing the\n\t\t\t\t\t<a href=\"https://w3c.github.io/did-resolution/#dfn-did-fragments\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-fragments-7\">DID fragment</a> from the <var>output <a href=\"https://w3c.github.io/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-68\">DID document</a></var> according to the\n\t\t\t\t\trules of the media type of the <var>DID document</var>."
+            },
+            {
+              "html": "If <var>verificationMethod</var> is not a <a data-cite=\"cid#dfn-conforming-verification-method\" href=\"https://www.w3.org/TR/cid-1.0/#dfn-conforming-verification-method\">conforming verification method</a>,\n\t\t\t\t\tan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n\t\t\t\t\t<a data-cite=\"cid#INVALID_VERIFICATION_METHOD\" href=\"https://www.w3.org/TR/cid-1.0/#INVALID_VERIFICATION_METHOD\">INVALID_VERIFICATION_METHOD</a>."
+            },
+            {
+              "html": "If <var>verificationMethod</var> is not associated, either by reference\n\t\t\t\t\t(URL) or by value (object), with the <a data-cite=\"cid#dfn-verification-relationship\" href=\"https://www.w3.org/TR/cid-1.0/#dfn-verification-relationship\">verification relationship</a> array in the\n\t\t\t\t\t<var>output <a href=\"https://w3c.github.io/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-69\">DID document</a></var> identified by <var>verificationRelationship</var>,\n\t\t\t\t\tan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n\t\t\t\t\t<a data-cite=\"cid#INVALID_RELATIONSHIP_FOR_VERIFICATION_METHOD\" href=\"https://www.w3.org/TR/cid-1.0/#INVALID_RELATIONSHIP_FOR_VERIFICATION_METHOD\">\n\t\t\t\t\tINVALID_RELATIONSHIP_FOR_VERIFICATION_METHOD</a>."
+            },
+            {
+              "html": "Return the <var>verificationMethod</var>."
+            }
+          ]
+        },
+        {
+          "html": "If the result of <a href=\"https://w3c.github.io/did-resolution/#dereferencing-algorithm-resource\" class=\"sec-ref\"><bdi class=\"secno\">5.3.1 </bdi>Dereferencing the Resource</a> is a <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-8\">service endpoint</a> URL</var>,\n\t\t\t\tand the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-45\">DID URL</a></var> contains a <a href=\"https://w3c.github.io/did-resolution/#dfn-did-fragments\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-fragments-8\">DID fragment</a>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If the <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-9\">service endpoint</a> URL</var>\n\t\t\t\t\tcontains a <code>fragment</code> component, raise an error."
+            },
+            {
+              "html": "Append the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-fragments\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-fragments-9\">DID fragment</a> to the <var>select <a href=\"https://w3c.github.io/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-10\">service endpoint</a> URL</var>. In other words,\n\t\t\t\t\tthe <var>select <a href=\"https://w3c.github.io/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-11\">service endpoint</a> URL</var> \"inherits\" the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-fragments\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-fragments-10\">DID fragment</a> of the\n\t\t\t\t\t<var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-46\">DID URL</a></var>."
+            },
+            {
+              "html": "Return the <var>select <a href=\"https://w3c.github.io/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-12\">service endpoint</a> URL</var>."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, dereference the DID fragment as defined by the media type ([<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/did-resolution/#bib-rfc2046\" title=\"Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types\">RFC2046</a></cite>]) of the resource.\n\t\t\t\tFor example, if the resource is a representation of a DID document with media type <code>application/did</code>, then\n\t\t\t\tthe fragment is treated according to the rules associated with the\n\t\t\t\t<a href=\"https://www.w3.org/TR/json-ld11/#iana-considerations\">JSON-LD 1.1: application/ld+json media type</a>\n\t\t\t\t[JSON-LD11]."
+        }
+      ]
+    },
+    {
+      "html": "Using this binding, the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-40\">DID resolution</a> function (see\n\t\t\t<a href=\"https://w3c.github.io/did-resolution/#resolving\" class=\"sec-ref\"><bdi class=\"secno\">4. </bdi>DID Resolution</a>) and/or <a href=\"https://w3c.github.io/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-35\">DID URL dereferencing</a> function (see <a href=\"https://w3c.github.io/did-resolution/#dereferencing\" class=\"sec-ref\"><bdi class=\"secno\">5. </bdi>DID URL Dereferencing</a>)\n\t\t\tcan be executed as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize a <var>request HTTP(S) URL</var> with the <var><a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-63\">DID resolver</a> HTTP(S) endpoint</var>."
+        },
+        {
+          "html": "For the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-41\">DID resolution</a> function:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Append the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-48\">DID</a></var> to the <var>request HTTP(S) URL</var>."
+            },
+            {
+              "html": "Set the <code>Accept</code> <var>HTTP request header</var> to <code>application/ld+json;profile=\"https://w3id.org/did-resolution\"</code>\n\t\t\t\t\t\tin order to request a complete <a href=\"https://w3c.github.io/did-resolution/#did-resolution-result\" class=\"sec-ref\"><bdi class=\"secno\">8. </bdi>DID Resolution Result</a>, OR"
+            },
+            {
+              "html": "set the <code>Accept</code> <var>HTTP request header</var> to the value of the <b>accept</b> <var>resolution option</var>."
+            },
+            {
+              "html": "If any other <var>resolution options</var> are provided:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "The <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-49\">DID</a></var> <em class=\"rfc2119\">MUST</em> be URL-encoded (as specified in <a data-cite=\"RFC3986#section-2.1\" href=\"https://www.rfc-editor.org/rfc/rfc3986#section-2.1\">RFC3986 Section 2.1</a>)."
+                },
+                {
+                  "html": "Encode all <var>resolution options</var> except <b>accept</b> as\n\t\t\t\t\t\t\t\tquery parameters in the <var>request HTTP(S) URL</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "For the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-36\">DID URL dereferencing</a> function:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Append the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-57\">DID URL</a></var> to the <var>request HTTP(S) URL</var>."
+            },
+            {
+              "html": "Set the <code>Accept</code> <var>HTTP request header</var> to <code>application/ld+json;profile=\"https://w3id.org/did-url-dereferencing\"</code>\n\t\t\t\t\t\tin order to request a complete <a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-result\" class=\"sec-ref\"><bdi class=\"secno\">9. </bdi>DID URL Dereferencing Result</a>, OR"
+            },
+            {
+              "html": "set the <code>Accept</code> <var>HTTP request header</var> to the value of the <b>accept</b> <var>dereferencing option</var>."
+            },
+            {
+              "html": "If any other <var>dereferencing options</var> are provided:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "The <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-58\">DID URL</a></var> <em class=\"rfc2119\">MUST</em> be URL-encoded (as specified in <a data-cite=\"RFC3986#section-2.1\" href=\"https://www.rfc-editor.org/rfc/rfc3986#section-2.1\">RFC3986 Section 2.1</a>)."
+                },
+                {
+                  "html": "Encode all <var>dereferencing options</var> except <b>accept</b> as\n\t\t\t\t\t\t\t\tquery parameters in the <var>request HTTP(S) URL</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Execute an HTTP <code>GET</code> request on the <var>request HTTP(S) URL</var>. This invokes the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-42\">DID resolution</a> or\n\t\t\t\t<a href=\"https://w3c.github.io/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-37\">DID URL dereferencing</a> function at the remote <a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-64\">DID resolver</a>."
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-43\">DID resolution</a> or <a href=\"https://w3c.github.io/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-38\">DID URL dereferencing</a> function returns an <b>error</b> metadata property in the\n\t\t\t\t<b>didResolutionMetadata</b> or <b>dereferencingMetadata</b>,\n\t\t\t\tthen the HTTP response status code <em class=\"rfc2119\">MUST</em> correspond to the value of the <b>error</b> metadata property,\n\t\t\t\taccording to the following table:\n\t\t\t\t<table class=\"simple\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<th>\n\t\t\t\t\t\t\terror\n\t\t\t\t\t\t</th>\n\t\t\t\t\t\t<th>\n\t\t\t\t\t\t\tHTTP status code\n\t\t\t\t\t\t</th>\n\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>invalidDid</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>400</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>invalidDidUrl</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>400</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>notFound</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>404</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>representationNotSupported</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>406</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>methodNotSupported</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>501</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>internalError</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>500</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t(any other value)\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>500</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>"
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-44\">DID resolution</a> or <a href=\"https://w3c.github.io/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-39\">DID URL dereferencing</a> function returns a <b>deactivated</b> metadata property with\n\t\t\t\tthe value <code>true</code> in the <b>didDocumentMetadata</b> or <b>contentMetadata</b>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "The HTTP response status code <em class=\"rfc2119\">MUST</em> be <code>410</code>."
+            }
+          ]
+        },
+        {
+          "html": "For the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-45\">DID resolution</a> function:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If the value of the <code>Content-Type</code> <var>HTTP response header</var> is <code>application/ld+json;profile=\"https://w3id.org/did-resolution\"</code>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "The <var>HTTP body</var> <em class=\"rfc2119\">MUST</em> contain a <a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution-result\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-result-3\">DID resolution result</a> (see <a href=\"https://w3c.github.io/did-resolution/#did-resolution-result\" class=\"sec-ref\"><bdi class=\"secno\">8. </bdi>DID Resolution Result</a>) that\n\t\t\t\t\t\t\t\tis the result of the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-46\">DID resolution</a> function."
+                }
+              ]
+            },
+            {
+              "html": "If the function is successful and returns a <b>didDocument</b>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "The HTTP response status code <em class=\"rfc2119\">MUST</em> be <code>200</code>."
+                },
+                {
+                  "html": "The HTTP response <em class=\"rfc2119\">MUST</em> contain a <code>Content-Type</code> <var>HTTP response header</var>. Its value <em class=\"rfc2119\">MUST</em> be the value of the\n\t\t\t\t\t\t\t\t<b>contentType</b> metadata property in the <b>didResolutionMetadata</b> (see <a href=\"https://w3c.github.io/did-resolution/#did-resolution-metadata\" class=\"sec-ref\"><bdi class=\"secno\">4.2 </bdi>DID Resolution Metadata</a>)."
+                },
+                {
+                  "html": "The HTTP response body <em class=\"rfc2119\">MUST</em> contain the <b>didDocument</b> that is the result of the\n\t\t\t\t\t\t\t\t<a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-47\">DID resolution</a> function, in the representation corresponding to the <code>Content-Type</code> <var>HTTP response header</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "For the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-40\">DID URL dereferencing</a> function:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If the value of the <code>Content-Type</code> <var>HTTP response header</var> is <code>application/ld+json;profile=\"https://w3id.org/did-url-dereferencing\"</code>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "The <var>HTTP body</var> <em class=\"rfc2119\">MUST</em> contain a <a href=\"https://w3c.github.io/did-resolution/#dfn-did-url-dereferencing-result\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-result-2\">DID URL dereferencing result</a> (see <a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-result\" class=\"sec-ref\"><bdi class=\"secno\">9. </bdi>DID URL Dereferencing Result</a>) that\n\t\t\t\t\t\t\t\tis the result of the <a href=\"https://w3c.github.io/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-41\">DID URL dereferencing</a> function."
+                }
+              ]
+            },
+            {
+              "html": "If the function is successful and returns a <b>contentStream</b> and a <b>contentType</b> metadata property with the value <code>text/uri-list</code> in the <b>dereferencingMetadata</b>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "The HTTP response status code <em class=\"rfc2119\">MUST</em> be <code>303</code>."
+                },
+                {
+                  "html": "The HTTP response <em class=\"rfc2119\">MUST</em> contain an <code>Location</code> header. The value of this header\n\t\t\t\t\t\t\t\t<em class=\"rfc2119\">MUST</em> be the <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-16\">service endpoint</a> URL</var>."
+                },
+                {
+                  "html": "the HTTP response body <em class=\"rfc2119\">MUST</em> be empty."
+                }
+              ]
+            },
+            {
+              "html": "If the function is successful and returns a <b>contentStream</b> with any other <b>contentType</b>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "The HTTP response status code <em class=\"rfc2119\">MUST</em> be <code>200</code>."
+                },
+                {
+                  "html": "The HTTP response <em class=\"rfc2119\">MUST</em> contain a <code>Content-Type</code> <var>HTTP response header</var>. Its value <em class=\"rfc2119\">MUST</em> be the value of the\n\t\t\t\t\t\t\t\t<b>contentType</b> metadata property in the <b>dereferencingMetadata</b> (see <a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-metadata\" class=\"sec-ref\"><bdi class=\"secno\">5.2 </bdi>DID URL Dereferencing Metadata</a>)."
+                },
+                {
+                  "html": "The HTTP response body <em class=\"rfc2119\">MUST</em> contain the <b>contentStream</b> that is the result of the\n\t\t\t\t\t\t\t\t<a href=\"https://w3c.github.io/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-42\">DID URL dereferencing</a> function, in the representation corresponding to the <code>Content-Type</code> <var>HTTP response header</var>."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rationale": "resolve",
+      "steps": [
+        {
+          "html": "<a href=\"https://www.w3.org/TR/did-core/#resolution\">DID resolvers in DID Core specification</a>"
+        },
+        {
+          "html": "<a href=\"https://github.com/decentralized-identity/universal-resolver/\">Universal Resolver</a>"
+        },
+        {
+          "html": "<a href=\"https://github.com/digitalbazaar/did-client\">did-client</a>"
+        },
+        {
+          "html": "<a href=\"https://github.com/uport-project/did-resolver\">uPort DID resolver</a>"
+        }
+      ]
+    }
+  ]
+}
