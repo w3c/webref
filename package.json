@@ -43,9 +43,9 @@
   "scripts": {
     "create-patch": "node tools/create-patch.js",
     "curate": "node tools/prepare-curated.js ed curated && node tools/prepare-packages.js curated packages",
-    "test": "mocha --recursive",
-    "test-css": "mocha --recursive test/css",
-    "test-elements": "mocha --recursive test/elements",
-    "test-idl": "mocha --recursive test/idl"
+    "test": "node --test",
+    "test-css": "node --test \"test/css/*.js\"",
+    "test-elements": "node --test \"test/elements/*.js\"",
+    "test-idl": "node --test \"test/idl/*.js\""
   }
 }

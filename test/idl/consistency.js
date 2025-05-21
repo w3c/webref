@@ -10,6 +10,7 @@
  * view because of some missing IDL definition in that view.
  */
 
+import { describe, it } from 'node:test';
 import { strict as assert } from 'node:assert';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';

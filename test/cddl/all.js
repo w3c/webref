@@ -4,6 +4,7 @@
  * The tests run against the curated view of the extracts.
  */
 
+import { describe, it } from 'node:test';
 import { strict as assert } from 'node:assert';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -19,9 +20,8 @@ function writeAnomalies(report) {
     report.map(anomaly => anomaly.content).join('\n');
 }
 
-describe('The curated view of CDDL extracts', function () {
-  // First run may download micropip and cddlparser packages from the net
-  this.timeout(30000);
+describe('The curated view of CDDL extracts', {timeout: 30000}, function () {
+  // Long timeout as first run may download micropip and cddlparser packages
 
   it('passes Strudy\'s scrutiny', async function () {
     const crawlFile = path.join(curatedFolder, 'index.json');
