@@ -7,6 +7,7 @@
  * the data because that view is a strict subset of the curated view.
  */
 
+import { describe, it } from 'node:test';
 import { strict as assert } from 'node:assert';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -17,7 +18,6 @@ const curatedFolder = path.join(scriptPath, '..', '..', 'curated', 'elements');
 
 describe('The curated view of elements extracts', function () {
   it('contains valid JSON and expected properties', async function () {
-    this.slow(5000);
 
     const all = await elements.listAll({ folder: curatedFolder });
     assert(Object.keys(all).length > 0);

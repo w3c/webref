@@ -7,6 +7,7 @@
  * the data because that view is a strict subset of the curated view.
  */
 
+import { describe, it, before } from 'node:test';
 import { strict as assert } from 'node:assert';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';

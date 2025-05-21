@@ -7,6 +7,7 @@
  * data because that view is a strict subset of the curated view.
  */
 
+import { describe, it } from 'node:test';
 import { strict as assert } from 'node:assert';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -16,7 +17,6 @@ const scriptPath = path.dirname(fileURLToPath(import.meta.url));
 const curatedFolder = path.join(scriptPath, '..', '..', 'curated', 'idl');
 
 describe('The curated view of Web IDL extracts', function () {
-  this.slow(5000);
 
   it('contains valid JSON and expected properties', async function () {
     const files = await idl.listAll({ folder: curatedFolder });

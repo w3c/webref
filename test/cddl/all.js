@@ -4,6 +4,7 @@
  * The tests run against the curated view of the extracts.
  */
 
+import { describe, it } from 'node:test';
 import { strict as assert } from 'node:assert';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';

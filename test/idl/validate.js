@@ -9,6 +9,7 @@
  * the package view, e.g. due to missing base interfaces.
  */
 
+import { describe, it, before } from 'node:test';
 import { strict as assert } from 'node:assert';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -41,28 +42,25 @@ function validate(ast) {
 }
 
 describe(`The ${curatedView.name} view of Web IDL extracts`, function () {
+  let all;
   before(async () => {
-    const all = await idl.parseAll(curatedView.folder);
+    all = await idl.parseAll(curatedView.folder);
+  });
 
-    describe(`The ${curatedView.name} view of Web IDL extracts`, function () {
-      for (const [spec, ast] of Object.entries(all)) {
-        it(`contains valid Web IDL for ${spec}`, function () {
-          validate(ast);
-        });
-      }
-    });
-
-    describe(`The combined Web IDL in the ${curatedView.name} view`, function () {
-      it('is valid Web IDL', function () {
-        this.slow(1000);
-        validate(Object.values(all).flat());
+  it(`The ${curatedView.name} view of Web IDL extracts`, function () {
+    for (const [spec, ast] of Object.entries(all)) {
+      it(`contains valid Web IDL for ${spec}`, function () {
+        validate(ast);
       });
+    }
+  });
+
+  it(`The combined Web IDL in the ${curatedView.name} view`, function () {
+    it('is valid Web IDL', function () {
+      validate(Object.values(all).flat());
     });
   });
 
-  // Dummy test needed for "before" to run and register late tests
-  // (test will fail if before function throws, e.g. because data is invalid)
-  it('contains data that can be parsed with webidl2.js', () => {});
 });
 
 
@@ -72,7 +70,6 @@ describe(`The ${packageView.name} view of Web IDL extracts`, async () => {
 
     describe(`The combined Web IDL in the ${packageView.name} view`, function () {
       it('is valid Web IDL', function () {
-        this.slow(1000);
         validate(Object.values(all).flat());
       });
     });
