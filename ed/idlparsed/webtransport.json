@@ -276,7 +276,7 @@
         "href": "https://w3c.github.io/webtransport/#webtransportdatagramduplexstream"
       },
       "WebTransport": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportConnectionStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute WebTransportReliabilityMode reliability;\n  readonly attribute WebTransportCongestionControl congestionControl;\n  [EnforceRange] attribute unsigned short? anticipatedConcurrentIncomingUnidirectionalStreams;\n  [EnforceRange] attribute unsigned short? anticipatedConcurrentIncomingBidirectionalStreams;\n  readonly attribute DOMString protocol;\n\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  readonly attribute Promise<undefined> draining;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WebTransportSendStream> createUnidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n  WebTransportSendGroup createSendGroup();\n\n  static readonly attribute boolean supportsReliableOnly;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportConnectionStats> getStats();\n  [NewObject] Promise<ArrayBuffer> exportKeyingMaterial(BufferSource label, optional BufferSource context);\n  readonly attribute Promise<undefined> ready;\n  readonly attribute WebTransportReliabilityMode reliability;\n  readonly attribute WebTransportCongestionControl congestionControl;\n  [EnforceRange] attribute unsigned short? anticipatedConcurrentIncomingUnidirectionalStreams;\n  [EnforceRange] attribute unsigned short? anticipatedConcurrentIncomingBidirectionalStreams;\n  readonly attribute DOMString protocol;\n\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  readonly attribute Promise<undefined> draining;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WebTransportSendStream> createUnidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n  WebTransportSendGroup createSendGroup();\n\n  static readonly attribute boolean supportsReliableOnly;\n};",
         "type": "interface",
         "name": "WebTransport",
         "inheritance": null,
@@ -346,6 +346,71 @@
             "extAttrs": [],
             "special": "",
             "href": "https://w3c.github.io/webtransport/#dom-webtransport-getstats"
+          },
+          {
+            "type": "operation",
+            "name": "exportKeyingMaterial",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ArrayBuffer"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "label",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "context",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BufferSource"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "href": "https://w3c.github.io/webtransport/#dom-webtransport-exportkeyingmaterial"
           },
           {
             "type": "attribute",
@@ -2169,6 +2234,8 @@
       "WebTransport": [
         "WebTransportOptions",
         "WebTransportConnectionStats",
+        "ArrayBuffer",
+        "BufferSource",
         "WebTransportReliabilityMode",
         "WebTransportCongestionControl",
         "WebTransportCloseInfo",
@@ -2232,6 +2299,7 @@
     "externalDependencies": [
       "WritableStream",
       "ReadableStream",
+      "ArrayBuffer",
       "BufferSource",
       "DOMHighResTimeStamp",
       "WritableStreamDefaultWriter",

@@ -5,44 +5,52 @@
   },
   "algorithms": [
     {
-      "html": "Percentages are required to be in the range 0% to 100%. Negative percentages are specifically disallowed. The percentages are normalized as follows:",
-      "rationale": "let",
+      "name": "calculate a color-mix()",
+      "href": "https://drafts.csswg.org/css-color-5/#calculate-a-color-mix",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"calculate-a-color-mix\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate a color-mix()</dfn>:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>p1</var> be the first percentage and <var>p2</var> the second one.</p>"
+          "html": "<p><a data-link-type=\"dfn\">Normalize mix percentages</a> from the list of <span>mix items</span> passed to the function,\nwith the \"forced normalization\" flag set to true,\nletting <var>items</var> and <var>leftover</var> be the result.</p>"
         },
         {
-          "html": "<p>If both percentages are omitted, they each default to 50%\n(an equal mix of the two colors).</p>"
+          "html": "<p>If <var>leftover</var> is 100%,\nreturn <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#transparent-black\" id=\"ref-for-transparent-black\">transparent black</a>,\nconverted to the specified interpolation <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-5/#typedef-color-space\" id=\"ref-for-typedef-color-space①\">&lt;color-space&gt;</a>.</p>"
         },
         {
-          "html": "<p>Otherwise, if <var>p2</var> is omitted, it becomes 100% - <var>p1</var></p>"
+          "html": "<p>Let <var>alpha mult</var> be <code>1 - <var>leftover</var></code>,\ninterpreting <var>leftover</var> as a number between 0 and 1.</p>"
         },
         {
-          "html": "<p>Otherwise, if <var>p1</var> is omitted, it becomes 100% - <var>p2</var></p>"
+          "html": "Otherwise:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>item stack</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack\" id=\"ref-for-stack\">stack</a> made by reversing <var>items</var>.\n(Thus, with the first item at the top of the stack.)</p>"
+            },
+            {
+              "html": "While <var>item stack</var> has length 2 or greater:",
+              "rationale": "pop",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack-pop\" id=\"ref-for-stack-pop\">Pop</a> from <var>item stack</var> twice,\nletting <var>a</var> and <var>b</var> be the two results in order.\nLet <var>combined percentage</var> be the sum of <var>a</var> and <var>b</var>’s percentages.</p>"
+                },
+                {
+                  "html": "<p>Interpolate <var>a</var> and <var>b</var>’s colors\nas described in <a href=\"https://drafts.csswg.org/css-color-4/#interpolation\"><cite>CSS Color 4</cite> §  12. Color Interpolation</a>,\nwith a progress percentage equal to <code>(<var>b</var>’s percentage) / <var>combined percentage</var>)</code>.\nIf the specified color space is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color①\">cylindrical polar color</a> space,\nthen the <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-5/#typedef-hue-interpolation-method\" id=\"ref-for-typedef-hue-interpolation-method\">&lt;hue-interpolation-method&gt;</a> controls the\ninterpolation of hue, as described in <a href=\"https://drafts.csswg.org/css-color-4/#hue-interpolation\"><cite>CSS Color 4</cite> § 12.4 Hue Interpolation</a>.\nIf no <span class=\"production\" id=\"ref-for-typedef-hue-interpolation-method①\">&lt;hue-interpolation-method&gt;</span> is specified,\nassume <span class=\"css\">shorter</span>.</p>"
+                },
+                {
+                  "html": "<p>Create a new <a data-link-type=\"dfn\">mix item</a> with the resulting color\nand a percentage of <var>combined percentage</var>,\nand <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack-push\" id=\"ref-for-stack-push\">push</a> it onto <var>item stack</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Set <var>color</var> to the color of the sole remaining item in <var>item stack</var>.</p>"
+            }
+          ]
         },
         {
-          "html": "<p>Otherwise, if both are provided and add up to greater than 100%,\nthey are scaled accordingly so that they add up to 100%.</p>"
+          "html": "<p>Multiply the alpha component of <var>color</var> by <var>alpha mult</var>.</p>"
         },
         {
-          "html": "<p>Otherwise, if both are provided and add up to less than 100%,\nthe sum is saved as an alpha multiplier.\nIf the sum is greater than zero,\nthey are then scaled accordingly so that they add up to 100%.</p>"
-        }
-      ]
-    },
-    {
-      "html": "After normalizing both percentages, the result is produced via the following algorithm:",
-      "rationale": "if",
-      "steps": [
-        {
-          "html": "<p>If the alpha multiplier is zero, the result is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-4/#valdef-color-transparent\" id=\"ref-for-valdef-color-transparent\">transparent</a>, converted to the specified interpolation <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-5/#typedef-color-space\" id=\"ref-for-typedef-color-space①\">&lt;color-space&gt;</a></p>"
-        },
-        {
-          "html": "<p>Otherwise, as described in <a href=\"https://drafts.csswg.org/css-color-4/#interpolation\"><cite>CSS Color 4</cite> §  12. Color Interpolation</a>,\nboth colors are converted to the specified interpolation <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-5/#typedef-color-space\" id=\"ref-for-typedef-color-space②\">&lt;color-space&gt;</a>,\ntaking into account any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#analogous-components\" id=\"ref-for-analogous-components\">analogous components</a>.</p>"
-        },
-        {
-          "html": "<p>Colors are then interpolated in the \tspecified color space,\nas described in <a href=\"https://drafts.csswg.org/css-color-4/#interpolation\"><cite>CSS Color 4</cite> §  12. Color Interpolation</a>.\nIf the specified color space is a <span class=\"css\">cylindrical-polar-color</span> space,\nthen the <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-5/#typedef-hue-interpolation-method\" id=\"ref-for-typedef-hue-interpolation-method\">&lt;hue-interpolation-method&gt;</a> controls the\ninterpolation of hue, as described in <a href=\"https://drafts.csswg.org/css-color-4/#hue-interpolation\"><cite>CSS Color 4</cite> § 12.4 Hue Interpolation</a>.\nIf no <span class=\"production\" id=\"ref-for-typedef-hue-interpolation-method①\">&lt;hue-interpolation-method&gt;</span> is specified, it is as if <span class=\"css\">shorter</span> had been specified.</p>"
-        },
-        {
-          "html": "<p>If an alpha multiplier was produced during percentage normalization,\nthe alpha component of the interpolated result is multiplied\nby the alpha multiplier.</p>"
+          "html": "<p>Return <var>color</var>.</p>"
         }
       ]
     },

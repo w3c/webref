@@ -38,17 +38,26 @@
       "rationale": ".algorithm",
       "steps": [
         {
+          "html": "<p><a data-link-type=\"dfn\">Normalize mix percentages</a> from the function’s arguments,\nand let <var>args</var> and <var>leftover</var> be the result.</p>"
+        },
+        {
+          "html": "<p>If <var>leftover</var> is 100%,\nreturn no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-dimensions\" id=\"ref-for-natural-dimensions⑤\">natural dimensions</a>.</p>"
+        },
+        {
           "html": "<p>Let <var>images</var> be an empty list.</p>"
         },
         {
-          "html": "For each <var>argument</var> of the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-images-4/#funcdef-cross-fade\" id=\"ref-for-funcdef-cross-fade⑦\">cross-fade()</a> function with an <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-images-4/#typedef-image\" id=\"ref-for-typedef-image①④\">&lt;image&gt;</a> value:",
-          "rationale": "let",
+          "html": "For each <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-images-4/#typedef-cf-image\" id=\"ref-for-typedef-cf-image①\">&lt;cf-image&gt;</a> <var>argument</var> of the function’s arguments:",
+          "rationale": "if",
           "steps": [
+            {
+              "html": "<p>If <var>argument</var> is not an <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-images-4/#typedef-image\" id=\"ref-for-typedef-image①④\">&lt;image&gt;</a>,\nor is an <span class=\"production\" id=\"ref-for-typedef-image①⑤\">&lt;image&gt;</span> with no natural dimensions, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
             {
               "html": "<p>Let <var>item</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple\">tuple</a> consisting of a width, a height, and a percentage.</p>"
             },
             {
-              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#object-size-negotiation\" id=\"ref-for-object-size-negotiation\">object size negotiation</a> algorithm for the <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-images-4/#typedef-image\" id=\"ref-for-typedef-image①⑤\">&lt;image&gt;</a>,\nas appropriate for the context in which the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-images-4/#funcdef-cross-fade\" id=\"ref-for-funcdef-cross-fade⑧\">cross-fade()</a> appears,\nand set <var>item</var>’s width and height\nto the width and height of the resulting <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#concrete-object-size\" id=\"ref-for-concrete-object-size\">concrete object size</a>.</p>"
+              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#object-size-negotiation\" id=\"ref-for-object-size-negotiation\">object size negotiation</a> algorithm for the <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-images-4/#typedef-image\" id=\"ref-for-typedef-image①⑥\">&lt;image&gt;</a>,\nas appropriate for the context in which the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-images-4/#funcdef-cross-fade\" id=\"ref-for-funcdef-cross-fade⑦\">cross-fade()</a> appears,\nand set <var>item</var>’s width and height\nto the width and height of the resulting <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#concrete-object-size\" id=\"ref-for-concrete-object-size\">concrete object size</a>.</p>"
             },
             {
               "html": "<p>Set <var>item</var>’s percentage to the <var>argument</var>’s percentage.</p>"
@@ -56,22 +65,10 @@
           ]
         },
         {
-          "html": "<p>If <var>images</var> is empty,\nreturn no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-dimensions\" id=\"ref-for-natural-dimensions⑤\">natural dimensions</a>.</p>"
+          "html": "<p>If <var>images</var> is empty,\nreturn no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-dimensions\" id=\"ref-for-natural-dimensions⑥\">natural dimensions</a>.</p>"
         },
         {
-          "html": "<p>Let <var>percentage sum</var> be the sum of all the percentages of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">items</a> in <var>images</var>.</p>"
-        },
-        {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>item</var> in <var>images</var>,\ndivide <var>item</var>’s percentage by <var>percentage sum</var>,\nand set <var>item</var>’s percentage to the result.</p>\n      <p class=\"assertion\">Assert: The percentages in <var>images</var> now sum to <span class=\"css\">100%</span>.</p>"
-        },
-        {
-          "html": "<p>Let <var>final width</var> and <var>final height</var> be <span class=\"css\">0px</span>.</p>"
-        },
-        {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>item</var> in <var>images</var>,\nmultiply <var>item</var>’s width by <var>item</var>’s percentage\nand add the result to <var>final width</var>,\nand multiply <var>item</var>’s height by <var>item</var>’s percentage\nand add the result to <var>final height</var>.</p>"
-        },
-        {
-          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-width\" id=\"ref-for-natural-width\">natural width</a> of <var>final width</var> and a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-height\" id=\"ref-for-natural-height\">natural height</a> of <var>final height</var>.</p>"
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-width\" id=\"ref-for-natural-width\">natural width</a> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-height\" id=\"ref-for-natural-height\">natural height</a> that are weighted averages of the width and height\nof each item in <var>images</var>,\naccording to their corresponding percentages.</p>"
         }
       ]
     },
@@ -82,20 +79,23 @@
       "rationale": ".algorithm",
       "steps": [
         {
+          "html": "<p><a data-link-type=\"dfn\">Normalize mix percentages</a> from the function’s arguments,\nand let <var>args</var> and <var>leftover</var> be the result.</p>"
+        },
+        {
           "html": "<p>Let <var>images</var> be an empty list.</p>"
         },
         {
-          "html": "<p>Let <var>size</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple①\">tuple</a> of width and height,\ninitialized to the result of finding the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#concrete-object-size\" id=\"ref-for-concrete-object-size①\">concrete object size</a> of the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-images-4/#funcdef-cross-fade\" id=\"ref-for-funcdef-cross-fade①①\">cross-fade()</a> function\n(using the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#natural-dimensions-of-a-cross-fade\" id=\"ref-for-natural-dimensions-of-a-cross-fade\">natural dimensions of a cross-fade()</a>).</p>"
+          "html": "<p>Let <var>size</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple①\">tuple</a> of width and height,\ninitialized to the result of finding the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#concrete-object-size\" id=\"ref-for-concrete-object-size①\">concrete object size</a> of the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-images-4/#funcdef-cross-fade\" id=\"ref-for-funcdef-cross-fade①⓪\">cross-fade()</a> function\n(using the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#natural-dimensions-of-a-cross-fade\" id=\"ref-for-natural-dimensions-of-a-cross-fade\">natural dimensions of a cross-fade()</a>).</p>"
         },
         {
-          "html": "For each <var>argument</var> of the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-images-4/#funcdef-cross-fade\" id=\"ref-for-funcdef-cross-fade①②\">cross-fade()</a> function:",
+          "html": "For each <var>argument</var> of the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-images-4/#funcdef-cross-fade\" id=\"ref-for-funcdef-cross-fade①①\">cross-fade()</a> function:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>item</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple②\">tuple</a> consisting of an image and a percentage.</p>"
             },
             {
-              "html": "<p>If <var>argument</var> has an <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-images-4/#typedef-image\" id=\"ref-for-typedef-image①⑥\">&lt;image&gt;</a>,\nrescale it to <var>size</var>’s width and height\nand set <var>item</var>’s image to the result.\nOtherwise, <var>argument</var> has a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-color-5/#typedef-color\" id=\"ref-for-typedef-color⑧\" title=\"Expands to: &lt;alpha-value&gt; | aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | none | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen\">&lt;color&gt;</a>;\nset <var>item</var>’s image to a solid-color image of the <span class=\"production\" id=\"ref-for-typedef-color⑨\">&lt;color&gt;</span>,\nwith <var>size</var>’s dimensions.</p>"
+              "html": "<p>If <var>argument</var> has an <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-images-4/#typedef-image\" id=\"ref-for-typedef-image①⑦\">&lt;image&gt;</a>,\nrescale it to <var>size</var>’s width and height\nand set <var>item</var>’s image to the result.\nOtherwise, <var>argument</var> has a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-color-5/#typedef-color\" id=\"ref-for-typedef-color⑧\" title=\"Expands to: &lt;alpha-value&gt; | aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | none | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen\">&lt;color&gt;</a>;\nset <var>item</var>’s image to a solid-color image of the <span class=\"production\" id=\"ref-for-typedef-color⑨\">&lt;color&gt;</span>,\nwith <var>size</var>’s dimensions.</p>"
             },
             {
               "html": "<p>Set <var>item</var>’s percentage to the <var>argument</var>’s percentage.</p>"
@@ -103,13 +103,10 @@
           ]
         },
         {
-          "html": "<p>Let <var>percentage sum</var> be the sum of all the percentages of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①\">items</a> in <var>images</var>.</p>"
+          "html": "<p>If <var>leftover</var> is greater than <span class=\"css\">0%</span>,\nappend a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple③\">tuple</a> to <var>images</var> consisting of a solid-color transparent-black image\nwith <var>size</var>’s dimensions,\nand a percentage equal to <var>leftover</var>.</p>"
         },
         {
-          "html": "<p>If <var>percentage sum</var> is less than <span class=\"css\">100%</span>,\nappend a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple③\">tuple</a> to <var>images</var> consisting of a solid-color transparent-black image\nwith <var>size</var>’s dimensions,\nand a percentage equal to <span class=\"css\">100%</span> minus <var>percentage sum</var>.</p>\n      <p>Otherwise,\nif <var>percentage sum</var> is greater than <span class=\"css\">100%</span>,\nthen <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">for each</a> <var>item</var> in <var>images</var>,\ndivide <var>item</var>’s percentage by <var>percentage sum</var>,\nand set <var>item</var>’s percentage to the result.</p>"
-        },
-        {
-          "html": "<p>Let <var>final image</var> be an image\nwith <var>size</var>’s dimensions,\nand every pixel being the weighted linear average of the corresponding pixels of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">each</a> <var>item</var>’s image in <var>images</var>,\nweighted according to the <var>item</var>’s percentage.\n(Average both the color channels and the alpha channel of the pixels.)\nFor the purpose of this calculation,\neach pixel’s color must be in pre-multiplied sRGB.</p>"
+          "html": "<p>Let <var>final image</var> be an image\nwith <var>size</var>’s dimensions,\nand every pixel being the weighted linear average of the corresponding pixels of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">each</a> <var>item</var>’s image in <var>images</var>,\nweighted according to the <var>item</var>’s percentage.\n(Average both the color channels and the alpha channel of the pixels.)\nFor the purpose of this calculation,\neach pixel’s color must be in pre-multiplied sRGB.</p>"
         },
         {
           "html": "<p>Return <var>final image</var>.</p>"
@@ -154,7 +151,7 @@
       ]
     },
     {
-      "html": "If the two gradients satisfy all of those constraints,\n\tthey must be interpolated as described below.\n\tIf they fail the third one only,\n\tthey must be abruptly transitioned at 50%\n\t(unless otherwise specified by a future specification).\n\tIf they fail either of the first two constraints,\n\tthey must be interpolated using <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-images-4/#funcdef-cross-fade\" id=\"ref-for-funcdef-cross-fade①⑦\">cross-fade()</a> as for generic images.",
+      "html": "If the two gradients satisfy all of those constraints,\n\tthey must be interpolated as described below.\n\tIf they fail the third one only,\n\tthey must be abruptly transitioned at 50%\n\t(unless otherwise specified by a future specification).\n\tIf they fail either of the first two constraints,\n\tthey must be interpolated using <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-images-4/#funcdef-cross-fade\" id=\"ref-for-funcdef-cross-fade①⑥\">cross-fade()</a> as for generic images.",
       "rationale": "convert",
       "steps": [
         {
