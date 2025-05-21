@@ -75,6 +75,6 @@ describe(`The ${packageView.name} view of Web IDL extracts`, async () => {
       validate(Object.values(all).flat());
     });
   });
-  
+
 });
 
