@@ -1,13 +1,13 @@
 /**
  * Test individual events extracts.
- * 
+ *
  * The tests run against the curated view of the extracts.
- * 
+ *
  * Note: the tests are not run against the `@webref/events` package view of
  * the data because that view is a strict subset of the curated view.
  */
 
-import { describe, it, before } from 'node:test';
+import { describe, it } from 'node:test';
 import { strict as assert } from 'node:assert';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -30,9 +30,14 @@ function report(msg, event) {
     (event.href ? ` href=${event.href}` : '');
 }
 
-before(async () => {
+describe("the events data", async () => {
   // Create a set of well-known interfaces and an inheritance chain
-  const allIdl = await idl.parseAll({ folder: path.join(curatedFolder, 'idl') });
+  let allIdl;
+  try {
+    allIdl = await idl.parseAll({ folder: path.join(curatedFolder, 'idl') });
+  } catch (err) {
+      it('contains data that can be parsed with webidl2.js', () => {throw err;});
+  }
   const parsedInterfaces = [];
   const mixins = new Set();
   for (const [shortname, ast] of Object.entries(allIdl)) {
