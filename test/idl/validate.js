@@ -9,7 +9,7 @@
  * the package view, e.g. due to missing base interfaces.
  */
 
-import { describe, it, before } from 'node:test';
+import { describe, it } from 'node:test';
 import { strict as assert } from 'node:assert';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -21,6 +21,7 @@ const curatedView = {
   name: 'curated',
   folder: path.join(scriptPath, '..', '..', 'curated', 'idl')
 };
+
 const packageView = {
   name: '@webref/idl package',
   folder: path.join(scriptPath, '..', '..', 'packages', 'idl')
@@ -41,40 +42,39 @@ function validate(ast) {
   assert.fail(message);
 }
 
-describe(`The ${curatedView.name} view of Web IDL extracts`, function () {
+describe(`The ${curatedView.name} view of Web IDL extracts`, async function () {
   let all;
-  before(async () => {
-    all = await idl.parseAll(curatedView.folder);
-  });
+  try {
+    all = await idl.parseAll({folder: curatedView.folder});
+  } catch (err) {
+    it('contains data that can be parsed with webidl2.js', () => {throw err ;});
+  };
 
-  it(`The ${curatedView.name} view of Web IDL extracts`, function () {
-    for (const [spec, ast] of Object.entries(all)) {
-      it(`contains valid Web IDL for ${spec}`, function () {
-        validate(ast);
-      });
-    }
-  });
-
-  it(`The combined Web IDL in the ${curatedView.name} view`, function () {
+  for (const [spec, ast] of Object.entries(all)) {
+    it(`contains valid Web IDL for ${spec}`, function () {
+      validate(ast);
+    });
+  }
+  describe(`The combined Web IDL in the ${curatedView.name} view`, function () {
     it('is valid Web IDL', function () {
       validate(Object.values(all).flat());
     });
   });
-
 });
 
-
 describe(`The ${packageView.name} view of Web IDL extracts`, async () => {
-  before(async () => {
-    const all = await idl.parseAll(packageView.folder);
+  let all;
+  try {
+    all = await idl.parseAll({folder: packageView.folder});
+  } catch (err) {
+    it('contains data that can be parsed with webidl2.js', () => {throw err;});
+  }
 
-    describe(`The combined Web IDL in the ${packageView.name} view`, function () {
-      it('is valid Web IDL', function () {
-        validate(Object.values(all).flat());
-      });
+  describe(`The combined Web IDL in the ${packageView.name} view`, function () {
+    it('is valid Web IDL', function () {
+      validate(Object.values(all).flat());
     });
   });
-
-  it('contains data that can be parsed with webidl2.js', () => {});
+  
 });
 

@@ -38,12 +38,12 @@
     "reffy": "18.6.3",
     "rimraf": "6.0.1",
     "strudy": "^3.1.1",
-    "webidl2": "24.4.1"
+    "webidl2": "^24.4.1"
   },
   "scripts": {
     "create-patch": "node tools/create-patch.js",
     "curate": "node tools/prepare-curated.js ed curated && node tools/prepare-packages.js curated packages",
-    "test": "mocha --recursive",
+    "test": "node --test",
     "test-css": "mocha --recursive test/css",
     "test-elements": "mocha --recursive test/elements",
     "test-idl": "mocha --recursive test/idl"
