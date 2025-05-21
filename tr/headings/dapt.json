@@ -1,0 +1,881 @@
+{
+  "spec": {
+    "title": "Dubbing and Audio description Profiles of TTML2",
+    "url": "https://www.w3.org/TR/dapt/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/dapt/#title",
+      "level": 1,
+      "title": "Dubbing and Audio description Profiles of TTML2"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/dapt/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "scope",
+      "href": "https://www.w3.org/TR/dapt/#scope",
+      "level": 2,
+      "title": "Scope",
+      "number": "1"
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/dapt/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "2"
+    },
+    {
+      "id": "transcripts-and-scripts",
+      "href": "https://www.w3.org/TR/dapt/#transcripts-and-scripts",
+      "level": 3,
+      "title": "Transcripts and Scripts",
+      "number": "2.1"
+    },
+    {
+      "id": "dubbing-scripts",
+      "href": "https://www.w3.org/TR/dapt/#dubbing-scripts",
+      "level": 4,
+      "title": "Dubbing scripts",
+      "number": "2.1.1"
+    },
+    {
+      "id": "audio-description-scripts",
+      "href": "https://www.w3.org/TR/dapt/#audio-description-scripts",
+      "level": 4,
+      "title": "Audio Description scripts",
+      "number": "2.1.2"
+    },
+    {
+      "id": "other-uses",
+      "href": "https://www.w3.org/TR/dapt/#other-uses",
+      "level": 4,
+      "title": "Other uses",
+      "number": "2.1.3"
+    },
+    {
+      "id": "example-documents",
+      "href": "https://www.w3.org/TR/dapt/#example-documents",
+      "level": 3,
+      "title": "Example documents",
+      "number": "2.2"
+    },
+    {
+      "id": "basic-document-structure",
+      "href": "https://www.w3.org/TR/dapt/#basic-document-structure",
+      "level": 4,
+      "title": "Basic document structure",
+      "number": "2.2.1"
+    },
+    {
+      "id": "audio-description-examples",
+      "href": "https://www.w3.org/TR/dapt/#audio-description-examples",
+      "level": 4,
+      "title": "Audio Description Examples",
+      "number": "2.2.2"
+    },
+    {
+      "id": "dubbing-examples",
+      "href": "https://www.w3.org/TR/dapt/#dubbing-examples",
+      "level": 4,
+      "title": "Dubbing Examples",
+      "number": "2.2.3"
+    },
+    {
+      "id": "documentation-conventions",
+      "href": "https://www.w3.org/TR/dapt/#documentation-conventions",
+      "level": 2,
+      "title": "Documentation Conventions",
+      "number": "3"
+    },
+    {
+      "id": "data-model",
+      "href": "https://www.w3.org/TR/dapt/#data-model",
+      "level": 2,
+      "title": "DAPT Data Model and corresponding TTML syntax",
+      "number": "4"
+    },
+    {
+      "id": "dapt-script",
+      "href": "https://www.w3.org/TR/dapt/#dapt-script",
+      "level": 3,
+      "title": "DAPT Script",
+      "number": "4.1"
+    },
+    {
+      "id": "script-represents",
+      "href": "https://www.w3.org/TR/dapt/#script-represents",
+      "level": 4,
+      "title": "Script Represents",
+      "number": "4.1.1"
+    },
+    {
+      "id": "default-language",
+      "href": "https://www.w3.org/TR/dapt/#default-language",
+      "level": 4,
+      "title": "Default Language",
+      "number": "4.1.2"
+    },
+    {
+      "id": "script-type",
+      "href": "https://www.w3.org/TR/dapt/#script-type",
+      "level": 4,
+      "title": "Script Type",
+      "number": "4.1.3"
+    },
+    {
+      "id": "script-events",
+      "href": "https://www.w3.org/TR/dapt/#script-events",
+      "level": 4,
+      "title": "Script Events",
+      "number": "4.1.4"
+    },
+    {
+      "id": "characters",
+      "href": "https://www.w3.org/TR/dapt/#characters",
+      "level": 4,
+      "title": "Characters",
+      "number": "4.1.5"
+    },
+    {
+      "id": "shared-properties-and-value-sets",
+      "href": "https://www.w3.org/TR/dapt/#shared-properties-and-value-sets",
+      "level": 4,
+      "title": "Shared properties and Value Sets",
+      "number": "4.1.6"
+    },
+    {
+      "id": "timing-properties",
+      "href": "https://www.w3.org/TR/dapt/#timing-properties",
+      "level": 5,
+      "title": "Timing Properties",
+      "number": "4.1.6.1"
+    },
+    {
+      "id": "contentDescriptor",
+      "href": "https://www.w3.org/TR/dapt/#contentDescriptor",
+      "level": 5,
+      "title": "<content-descriptor> values",
+      "number": "4.1.6.2"
+    },
+    {
+      "id": "unique-identifiers",
+      "href": "https://www.w3.org/TR/dapt/#unique-identifiers",
+      "level": 5,
+      "title": "Unique identifiers",
+      "number": "4.1.6.3"
+    },
+    {
+      "id": "character",
+      "href": "https://www.w3.org/TR/dapt/#character",
+      "level": 3,
+      "title": "Character",
+      "number": "4.2"
+    },
+    {
+      "id": "script-event",
+      "href": "https://www.w3.org/TR/dapt/#script-event",
+      "level": 3,
+      "title": "Script Event",
+      "number": "4.3"
+    },
+    {
+      "id": "text",
+      "href": "https://www.w3.org/TR/dapt/#text",
+      "level": 3,
+      "title": "Text",
+      "number": "4.4"
+    },
+    {
+      "id": "text-language-source",
+      "href": "https://www.w3.org/TR/dapt/#text-language-source",
+      "level": 3,
+      "title": "Text Language Source",
+      "number": "4.5"
+    },
+    {
+      "id": "on-screen",
+      "href": "https://www.w3.org/TR/dapt/#on-screen",
+      "level": 3,
+      "title": "On Screen",
+      "number": "4.6"
+    },
+    {
+      "id": "represents",
+      "href": "https://www.w3.org/TR/dapt/#represents",
+      "level": 3,
+      "title": "Represents",
+      "number": "4.7"
+    },
+    {
+      "id": "script-event-description",
+      "href": "https://www.w3.org/TR/dapt/#script-event-description",
+      "level": 3,
+      "title": "Script Event Description",
+      "number": "4.8"
+    },
+    {
+      "id": "audio",
+      "href": "https://www.w3.org/TR/dapt/#audio",
+      "level": 3,
+      "title": "Audio",
+      "number": "4.9"
+    },
+    {
+      "id": "audio-recording",
+      "href": "https://www.w3.org/TR/dapt/#audio-recording",
+      "level": 4,
+      "title": "Audio Recording",
+      "number": "4.9.1"
+    },
+    {
+      "id": "synthesized-audio",
+      "href": "https://www.w3.org/TR/dapt/#synthesized-audio",
+      "level": 4,
+      "title": "Synthesized Audio",
+      "number": "4.9.2"
+    },
+    {
+      "id": "mixing-instruction",
+      "href": "https://www.w3.org/TR/dapt/#mixing-instruction",
+      "level": 3,
+      "title": "Mixing Instruction",
+      "number": "4.10"
+    },
+    {
+      "id": "profile-constraints",
+      "href": "https://www.w3.org/TR/dapt/#profile-constraints",
+      "level": 2,
+      "title": "Constraints",
+      "number": "5"
+    },
+    {
+      "id": "document-encoding",
+      "href": "https://www.w3.org/TR/dapt/#document-encoding",
+      "level": 3,
+      "title": "Document Encoding",
+      "number": "5.1"
+    },
+    {
+      "id": "processing-of-unrecognised-or-foreign-elements-and-attributes",
+      "href": "https://www.w3.org/TR/dapt/#processing-of-unrecognised-or-foreign-elements-and-attributes",
+      "level": 3,
+      "title": "Processing of unrecognised or foreign elements and attributes",
+      "number": "5.2"
+    },
+    {
+      "id": "unrecognised-elements-and-attributes",
+      "href": "https://www.w3.org/TR/dapt/#unrecognised-elements-and-attributes",
+      "level": 4,
+      "title": "Unrecognised vocabulary",
+      "number": "5.2.1"
+    },
+    {
+      "id": "special-considerations-for-foreign-vocabulary",
+      "href": "https://www.w3.org/TR/dapt/#special-considerations-for-foreign-vocabulary",
+      "level": 4,
+      "title": "Special considerations for foreign vocabulary",
+      "number": "5.2.2"
+    },
+    {
+      "id": "proprietary-metadata-and-foreign-vocabulary",
+      "href": "https://www.w3.org/TR/dapt/#proprietary-metadata-and-foreign-vocabulary",
+      "level": 4,
+      "title": "Proprietary Metadata and Foreign Vocabulary",
+      "number": "5.2.3"
+    },
+    {
+      "id": "defining-and-using-foreign-vocabulary-that-is-not-metadata",
+      "href": "https://www.w3.org/TR/dapt/#defining-and-using-foreign-vocabulary-that-is-not-metadata",
+      "level": 5,
+      "title": "Defining and using foreign vocabulary that is not metadata",
+      "number": "5.2.3.1"
+    },
+    {
+      "id": "namespaces",
+      "href": "https://www.w3.org/TR/dapt/#namespaces",
+      "level": 3,
+      "title": "Namespaces",
+      "number": "5.3"
+    },
+    {
+      "id": "related-media-object",
+      "href": "https://www.w3.org/TR/dapt/#related-media-object",
+      "level": 3,
+      "title": "Related Media Object",
+      "number": "5.4"
+    },
+    {
+      "id": "synchronization",
+      "href": "https://www.w3.org/TR/dapt/#synchronization",
+      "level": 3,
+      "title": "Synchronization",
+      "number": "5.5"
+    },
+    {
+      "id": "profile-signaling",
+      "href": "https://www.w3.org/TR/dapt/#profile-signaling",
+      "level": 3,
+      "title": "Profile Signaling",
+      "number": "5.6"
+    },
+    {
+      "id": "profile-designators",
+      "href": "https://www.w3.org/TR/dapt/#profile-designators",
+      "level": 4,
+      "title": "Profile Designators",
+      "number": "5.6.1"
+    },
+    {
+      "id": "ttp-contentprofiles",
+      "href": "https://www.w3.org/TR/dapt/#ttp-contentprofiles",
+      "level": 4,
+      "title": "ttp:contentProfiles",
+      "number": "5.6.2"
+    },
+    {
+      "id": "ttp-profile",
+      "href": "https://www.w3.org/TR/dapt/#ttp-profile",
+      "level": 4,
+      "title": "ttp:profile",
+      "number": "5.6.3"
+    },
+    {
+      "id": "ttp-processorprofiles",
+      "href": "https://www.w3.org/TR/dapt/#ttp-processorprofiles",
+      "level": 4,
+      "title": "ttp:processorProfiles",
+      "number": "5.6.4"
+    },
+    {
+      "id": "other-ttml2-profile-vocabulary",
+      "href": "https://www.w3.org/TR/dapt/#other-ttml2-profile-vocabulary",
+      "level": 4,
+      "title": "Other TTML2 Profile Vocabulary",
+      "number": "5.6.5"
+    },
+    {
+      "id": "timing-constraints",
+      "href": "https://www.w3.org/TR/dapt/#timing-constraints",
+      "level": 3,
+      "title": "Timing constraints",
+      "number": "5.7"
+    },
+    {
+      "id": "ttp-timebase",
+      "href": "https://www.w3.org/TR/dapt/#ttp-timebase",
+      "level": 4,
+      "title": "ttp:timeBase",
+      "number": "5.7.1"
+    },
+    {
+      "id": "timecontainer",
+      "href": "https://www.w3.org/TR/dapt/#timecontainer",
+      "level": 4,
+      "title": "timeContainer",
+      "number": "5.7.2"
+    },
+    {
+      "id": "ttp-framerate",
+      "href": "https://www.w3.org/TR/dapt/#ttp-framerate",
+      "level": 4,
+      "title": "ttp:frameRate",
+      "number": "5.7.3"
+    },
+    {
+      "id": "ttp-tickrate",
+      "href": "https://www.w3.org/TR/dapt/#ttp-tickrate",
+      "level": 4,
+      "title": "ttp:tickRate",
+      "number": "5.7.4"
+    },
+    {
+      "id": "time-expressions",
+      "href": "https://www.w3.org/TR/dapt/#time-expressions",
+      "level": 4,
+      "title": "Time expressions",
+      "number": "5.7.5"
+    },
+    {
+      "id": "layout-and-styles",
+      "href": "https://www.w3.org/TR/dapt/#layout-and-styles",
+      "level": 3,
+      "title": "Layout and styles",
+      "number": "5.8"
+    },
+    {
+      "id": "bidirectional-text",
+      "href": "https://www.w3.org/TR/dapt/#bidirectional-text",
+      "level": 3,
+      "title": "Bidirectional text",
+      "number": "5.9"
+    },
+    {
+      "id": "ttml-to-data-model",
+      "href": "https://www.w3.org/TR/dapt/#ttml-to-data-model",
+      "level": 2,
+      "title": "Mapping from TTML to the DAPT Data Model",
+      "number": "6"
+    },
+    {
+      "id": "early-identification-of-non-conformant-documents",
+      "href": "https://www.w3.org/TR/dapt/#early-identification-of-non-conformant-documents",
+      "level": 3,
+      "title": "Early identification of non-conformant documents",
+      "number": "6.1"
+    },
+    {
+      "id": "not-supporting-features-excluded-by-the-content-profile",
+      "href": "https://www.w3.org/TR/dapt/#not-supporting-features-excluded-by-the-content-profile",
+      "level": 3,
+      "title": "Not supporting features excluded by the content profile",
+      "number": "6.2"
+    },
+    {
+      "id": "handling-div-and-p-elements",
+      "href": "https://www.w3.org/TR/dapt/#handling-div-and-p-elements",
+      "level": 3,
+      "title": "Handling <div> and <p> elements",
+      "number": "6.3"
+    },
+    {
+      "id": "using-computed-attribute-values",
+      "href": "https://www.w3.org/TR/dapt/#using-computed-attribute-values",
+      "level": 3,
+      "title": "Using computed attribute values",
+      "number": "6.4"
+    },
+    {
+      "id": "considerations-for-transformation-and-validation-processors",
+      "href": "https://www.w3.org/TR/dapt/#considerations-for-transformation-and-validation-processors",
+      "level": 3,
+      "title": "Considerations for transformation and validation processors",
+      "number": "6.5"
+    },
+    {
+      "id": "retaining-unrecognised-vocabulary",
+      "href": "https://www.w3.org/TR/dapt/#retaining-unrecognised-vocabulary",
+      "level": 4,
+      "title": "Retaining unrecognised vocabulary",
+      "number": "6.5.1"
+    },
+    {
+      "id": "validation-warnings-and-errors",
+      "href": "https://www.w3.org/TR/dapt/#validation-warnings-and-errors",
+      "level": 4,
+      "title": "Validation warnings and errors",
+      "number": "6.5.2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/dapt/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "7"
+    },
+    {
+      "id": "conformance-of-dapt-documents",
+      "href": "https://www.w3.org/TR/dapt/#conformance-of-dapt-documents",
+      "level": 3,
+      "title": "Conformance of DAPT Documents",
+      "number": "7.1"
+    },
+    {
+      "id": "conformance-of-dapt-processors",
+      "href": "https://www.w3.org/TR/dapt/#conformance-of-dapt-processors",
+      "level": 3,
+      "title": "Conformance of DAPT Processors",
+      "number": "7.2"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/dapt/#index",
+      "level": 2,
+      "title": "Index",
+      "number": "A"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/dapt/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "number": "A.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/dapt/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "number": "A.2"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/dapt/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "B"
+    },
+    {
+      "id": "personal-information",
+      "href": "https://www.w3.org/TR/dapt/#personal-information",
+      "level": 3,
+      "title": "Personal Information",
+      "number": "B.1"
+    },
+    {
+      "id": "audio-format-preference",
+      "href": "https://www.w3.org/TR/dapt/#audio-format-preference",
+      "level": 3,
+      "title": "Audio format preference",
+      "number": "B.2"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://www.w3.org/TR/dapt/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "C"
+    },
+    {
+      "id": "timecode-related-metadata",
+      "href": "https://www.w3.org/TR/dapt/#timecode-related-metadata",
+      "level": 2,
+      "title": "Timecode-related metadata",
+      "number": "D"
+    },
+    {
+      "id": "dapt-origin-timecode",
+      "href": "https://www.w3.org/TR/dapt/#dapt-origin-timecode",
+      "level": 3,
+      "title": "DAPT Origin Timecode",
+      "number": "D.1"
+    },
+    {
+      "id": "start-of-programme-timecode",
+      "href": "https://www.w3.org/TR/dapt/#start-of-programme-timecode",
+      "level": 3,
+      "title": "Start of Programme Timecode",
+      "number": "D.2"
+    },
+    {
+      "id": "audio-mixing",
+      "href": "https://www.w3.org/TR/dapt/#audio-mixing",
+      "level": 2,
+      "title": "Audio Mixing",
+      "number": "E"
+    },
+    {
+      "id": "profiles",
+      "href": "https://www.w3.org/TR/dapt/#profiles",
+      "level": 2,
+      "title": "Profiles",
+      "number": "F"
+    },
+    {
+      "id": "disposition-of-features-and-extensions",
+      "href": "https://www.w3.org/TR/dapt/#disposition-of-features-and-extensions",
+      "level": 3,
+      "title": "Disposition of Features and Extensions",
+      "number": "F.1"
+    },
+    {
+      "id": "dapt-content-profile",
+      "href": "https://www.w3.org/TR/dapt/#dapt-content-profile",
+      "level": 3,
+      "title": "DAPT Content Profile",
+      "number": "F.2"
+    },
+    {
+      "id": "dapt-processor-profile",
+      "href": "https://www.w3.org/TR/dapt/#dapt-processor-profile",
+      "level": 3,
+      "title": "DAPT Processor Profile",
+      "number": "F.3"
+    },
+    {
+      "id": "extensions",
+      "href": "https://www.w3.org/TR/dapt/#extensions",
+      "level": 2,
+      "title": "Extensions",
+      "number": "G"
+    },
+    {
+      "id": "general",
+      "href": "https://www.w3.org/TR/dapt/#general",
+      "level": 3,
+      "title": "General",
+      "number": "G.1"
+    },
+    {
+      "id": "agent",
+      "href": "https://www.w3.org/TR/dapt/#agent",
+      "level": 3,
+      "title": "#agent",
+      "number": "G.2"
+    },
+    {
+      "id": "contentprofiles-root",
+      "href": "https://www.w3.org/TR/dapt/#contentprofiles-root",
+      "level": 3,
+      "title": "#contentProfiles-root",
+      "number": "G.3"
+    },
+    {
+      "id": "daptorigintimecode",
+      "href": "https://www.w3.org/TR/dapt/#daptorigintimecode",
+      "level": 3,
+      "title": "#daptOriginTimecode",
+      "number": "G.4"
+    },
+    {
+      "id": "desctype",
+      "href": "https://www.w3.org/TR/dapt/#desctype",
+      "level": 3,
+      "title": "#descType",
+      "number": "G.5"
+    },
+    {
+      "id": "onscreen",
+      "href": "https://www.w3.org/TR/dapt/#onscreen",
+      "level": 3,
+      "title": "#onScreen",
+      "number": "G.6"
+    },
+    {
+      "id": "profile-root",
+      "href": "https://www.w3.org/TR/dapt/#profile-root",
+      "level": 3,
+      "title": "#profile-root",
+      "number": "G.7"
+    },
+    {
+      "id": "represents-0",
+      "href": "https://www.w3.org/TR/dapt/#represents-0",
+      "level": 3,
+      "title": "#represents",
+      "number": "G.8"
+    },
+    {
+      "id": "scripteventgrouping",
+      "href": "https://www.w3.org/TR/dapt/#scripteventgrouping",
+      "level": 3,
+      "title": "#scriptEventGrouping",
+      "number": "G.9"
+    },
+    {
+      "id": "scripteventmapping",
+      "href": "https://www.w3.org/TR/dapt/#scripteventmapping",
+      "level": 3,
+      "title": "#scriptEventMapping",
+      "number": "G.10"
+    },
+    {
+      "id": "scriptrepresents",
+      "href": "https://www.w3.org/TR/dapt/#scriptrepresents",
+      "level": 3,
+      "title": "#scriptRepresents",
+      "number": "G.11"
+    },
+    {
+      "id": "scripttype-root",
+      "href": "https://www.w3.org/TR/dapt/#scripttype-root",
+      "level": 3,
+      "title": "#scriptType-root",
+      "number": "G.12"
+    },
+    {
+      "id": "serialization",
+      "href": "https://www.w3.org/TR/dapt/#serialization",
+      "level": 3,
+      "title": "#serialization",
+      "number": "G.13"
+    },
+    {
+      "id": "source-data",
+      "href": "https://www.w3.org/TR/dapt/#source-data",
+      "level": 3,
+      "title": "#source-data",
+      "number": "G.14"
+    },
+    {
+      "id": "textlanguagesource",
+      "href": "https://www.w3.org/TR/dapt/#textlanguagesource",
+      "level": 3,
+      "title": "#textLanguageSource",
+      "number": "G.15"
+    },
+    {
+      "id": "xmlid-div",
+      "href": "https://www.w3.org/TR/dapt/#xmlid-div",
+      "level": 3,
+      "title": "#xmlId-div",
+      "number": "G.16"
+    },
+    {
+      "id": "xmllang-audio-nonmatching",
+      "href": "https://www.w3.org/TR/dapt/#xmllang-audio-nonmatching",
+      "level": 3,
+      "title": "#xmlLang-audio-nonMatching",
+      "number": "G.17"
+    },
+    {
+      "id": "xmllang-root",
+      "href": "https://www.w3.org/TR/dapt/#xmllang-root",
+      "level": 3,
+      "title": "#xmlLang-root",
+      "number": "G.18"
+    },
+    {
+      "id": "registry-section",
+      "href": "https://www.w3.org/TR/dapt/#registry-section",
+      "level": 2,
+      "title": "Registry Section",
+      "number": "H"
+    },
+    {
+      "id": "registry-definition",
+      "href": "https://www.w3.org/TR/dapt/#registry-definition",
+      "level": 3,
+      "title": "Registry Definition",
+      "number": "H.1"
+    },
+    {
+      "id": "custodianship",
+      "href": "https://www.w3.org/TR/dapt/#custodianship",
+      "level": 4,
+      "title": "Custodianship",
+      "number": "H.1.1"
+    },
+    {
+      "id": "change-process",
+      "href": "https://www.w3.org/TR/dapt/#change-process",
+      "level": 4,
+      "title": "Change Process",
+      "number": "H.1.2"
+    },
+    {
+      "id": "requesting-a-change",
+      "href": "https://www.w3.org/TR/dapt/#requesting-a-change",
+      "level": 5,
+      "title": "Requesting a change",
+      "number": "H.1.2.1"
+    },
+    {
+      "id": "change-request-assessment",
+      "href": "https://www.w3.org/TR/dapt/#change-request-assessment",
+      "level": 5,
+      "title": "Change request assessment process",
+      "number": "H.1.2.2"
+    },
+    {
+      "id": "ttwg-change-request-assessment",
+      "href": "https://www.w3.org/TR/dapt/#ttwg-change-request-assessment",
+      "level": 6,
+      "title": "Custodian is TTWG",
+      "number": "H.1.2.2.1"
+    },
+    {
+      "id": "team-change-request-assessment",
+      "href": "https://www.w3.org/TR/dapt/#team-change-request-assessment",
+      "level": 6,
+      "title": "Custodian is the W3C Team",
+      "number": "H.1.2.2.2"
+    },
+    {
+      "id": "registry-table-constraints",
+      "href": "https://www.w3.org/TR/dapt/#registry-table-constraints",
+      "level": 4,
+      "title": "Registry Table Constraints",
+      "number": "H.1.3"
+    },
+    {
+      "id": "registry-entries",
+      "href": "https://www.w3.org/TR/dapt/#registry-entries",
+      "level": 5,
+      "title": "Registry Entries",
+      "number": "H.1.3.1"
+    },
+    {
+      "id": "registry-entry-status",
+      "href": "https://www.w3.org/TR/dapt/#registry-entry-status",
+      "level": 6,
+      "title": "Status",
+      "number": "H.1.3.1.1"
+    },
+    {
+      "id": "provisional-entry",
+      "href": "https://www.w3.org/TR/dapt/#provisional-entry",
+      "level": 6,
+      "title": "Provisional",
+      "number": "H.1.3.1.1.1"
+    },
+    {
+      "id": "final-entry",
+      "href": "https://www.w3.org/TR/dapt/#final-entry",
+      "level": 6,
+      "title": "Final",
+      "number": "H.1.3.1.1.2"
+    },
+    {
+      "id": "deprecated-entry",
+      "href": "https://www.w3.org/TR/dapt/#deprecated-entry",
+      "level": 6,
+      "title": "Deprecated",
+      "number": "H.1.3.1.1.3"
+    },
+    {
+      "id": "registry-table-definitions",
+      "href": "https://www.w3.org/TR/dapt/#registry-table-definitions",
+      "level": 3,
+      "title": "Registry Table Definitions",
+      "number": "H.2"
+    },
+    {
+      "id": "registry-table-descType",
+      "href": "https://www.w3.org/TR/dapt/#registry-table-descType",
+      "level": 4,
+      "title": "daptm:descType registry table definition",
+      "number": "H.2.1"
+    },
+    {
+      "id": "registry-table-content-descriptor",
+      "href": "https://www.w3.org/TR/dapt/#registry-table-content-descriptor",
+      "level": 4,
+      "title": "<content-descriptor> registry table definition",
+      "number": "H.2.2"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://www.w3.org/TR/dapt/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "I"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/dapt/#references",
+      "level": 2,
+      "title": "References",
+      "number": "J"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/dapt/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "J.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/dapt/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "J.2"
+    }
+  ]
+}

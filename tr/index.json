@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-05-20T01:36:39.236Z",
+  "date": "2025-05-21T01:52:55.308Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -34,7 +34,6 @@
       "css-gcpm-4",
       "css-images-5",
       "css-link-params-1",
-      "css-mixins-1",
       "css-page-4",
       "css-position-4",
       "css-shapes-2",
@@ -162,7 +161,6 @@
       "mediacapture-handle-actions",
       "mediacapture-surface-control",
       "permissions-registry",
-      "ppa",
       "network-reporting",
       "sparql12-concepts",
       "web-nfc",
@@ -394,6 +392,7 @@
       "css-lists-3",
       "css-logical-1",
       "css-masking-1",
+      "css-mixins-1",
       "css-multicol-1",
       "css-multicol-2",
       "css-namespaces-3",
@@ -451,9 +450,11 @@
       "css3-exclusions",
       "cssom-1",
       "cssom-view-1",
+      "dapt",
       "device-memory-1",
       "device-posture",
       "did-1.1",
+      "did-resolution",
       "DOM-Parsing",
       "dpub-aam-1.1",
       "dpub-aria-1.1",
@@ -554,6 +555,7 @@
       "pointerevents4",
       "pointerlock-2",
       "presentation-api",
+      "privacy-preserving-attribution",
       "privacy-principles",
       "proximity",
       "pub-manifest",
@@ -607,6 +609,7 @@
       "timing-entrytypes-registry",
       "touch-events",
       "trusted-types",
+      "ttml2",
       "uievents-code",
       "uievents-key",
       "uievents",
@@ -698,10 +701,10 @@
     ]
   },
   "stats": {
-    "crawled": 358,
+    "crawled": 363,
     "errors": 0
   },
-  "crawler": "reffy-18.6.2",
+  "crawler": "reffy-18.6.3",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -747,7 +750,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "20 May 2025",
+      "date": "21 May 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -1745,7 +1748,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/cid-1.0/",
-        "status": "Proposed Recommendation",
+        "status": "Recommendation",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -5961,6 +5964,70 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/css-mixins-1/",
+      "seriesComposition": "full",
+      "shortname": "css-mixins-1",
+      "series": {
+        "shortname": "css-mixins",
+        "currentSpecification": "css-mixins-1",
+        "title": "CSS Functions and Mixins Module",
+        "shortTitle": "CSS Functions and Mixins",
+        "releaseUrl": "https://www.w3.org/TR/css-mixins/",
+        "nightlyUrl": "https://drafts.csswg.org/css-mixins/"
+      },
+      "seriesVersion": "1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-mixins-1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-mixins-1/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-mixins-1/",
+          "https://w3c.github.io/csswg-drafts/css-mixins/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-mixins-1/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Functions and Mixins Module",
+      "source": "w3c",
+      "shortTitle": "CSS Functions and Mixins",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/css-mixins-1/",
+        "https://drafts.csswg.org/css-mixins-1/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-mixins-1/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 12 May 2025 21:13:18 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "15 May 2025",
+      "revision": "5a1a528cd839d0ce4285b3f9a4e88b5773f4655a",
+      "algorithms": "algorithms/css-mixins-1.json",
+      "links": "links/css-mixins-1.json",
+      "refs": "refs/css-mixins-1.json",
+      "idl": "idl/css-mixins.idl",
+      "css": "css/css-mixins.json",
+      "dfns": "dfns/css-mixins-1.json",
+      "headings": "headings/css-mixins-1.json",
+      "ids": "ids/css-mixins-1.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/css-multicol-1/",
       "seriesComposition": "full",
       "shortname": "css-multicol-1",
@@ -9875,6 +9942,62 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/dapt/",
+      "seriesComposition": "full",
+      "shortname": "dapt",
+      "series": {
+        "shortname": "dapt",
+        "currentSpecification": "dapt",
+        "title": "Dubbing and Audio description Profiles of TTML2",
+        "shortTitle": "Dubbing and Audio description Profiles of TTML2",
+        "releaseUrl": "https://www.w3.org/TR/dapt/",
+        "nightlyUrl": "https://w3c.github.io/dapt/"
+      },
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Timed Text Working Group",
+          "url": "https://www.w3.org/AudioVideo/TT/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/dapt/",
+        "status": "Candidate Recommendation Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/dapt/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/dapt",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Dubbing and Audio description Profiles of TTML2",
+      "source": "w3c",
+      "shortTitle": "Dubbing and Audio description Profiles of TTML2",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/dapt/",
+        "https://w3c.github.io/dapt/"
+      ],
+      "crawled": "https://www.w3.org/TR/dapt/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 06 May 2025 16:49:52 GMT"
+      },
+      "generator": "respec",
+      "date": "06 May 2025",
+      "revision": "1e2c72a62da1c71db352e586d3d3210d8e63c886",
+      "algorithms": "algorithms/dapt.json",
+      "links": "links/dapt.json",
+      "refs": "refs/dapt.json",
+      "dfns": "dfns/dapt.json",
+      "headings": "headings/dapt.json",
+      "ids": "ids/dapt.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/device-memory-1/",
       "seriesComposition": "full",
       "shortname": "device-memory-1",
@@ -10059,6 +10182,62 @@
       "dfns": "dfns/did-1.1.json",
       "headings": "headings/did-1.1.json",
       "ids": "ids/did-1.1.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/did-resolution/",
+      "seriesComposition": "full",
+      "shortname": "did-resolution",
+      "series": {
+        "shortname": "did-resolution",
+        "currentSpecification": "did-resolution",
+        "title": "Decentralized Identifier Resolution (DID Resolution)",
+        "shortTitle": "DID Resolution",
+        "releaseUrl": "https://www.w3.org/TR/did-resolution/",
+        "nightlyUrl": "https://w3c.github.io/did-resolution/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Decentralized Identifier Working Group",
+          "url": "https://www.w3.org/groups/wg/did/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/did-resolution/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/did-resolution/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/did-resolution",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Decentralized Identifier Resolution (DID Resolution) v0.3",
+      "source": "w3c",
+      "shortTitle": "DID Resolution",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/did-resolution/",
+        "https://w3c.github.io/did-resolution/"
+      ],
+      "crawled": "https://www.w3.org/TR/did-resolution/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 23 Apr 2025 19:19:54 GMT"
+      },
+      "generator": "respec",
+      "date": "23 April 2025",
+      "revision": "150835921ebad55c8e9a0e1610dd188d72213281",
+      "algorithms": "algorithms/did-resolution.json",
+      "links": "links/did-resolution.json",
+      "refs": "refs/did-resolution.json",
+      "dfns": "dfns/did-resolution.json",
+      "headings": "headings/did-resolution.json",
+      "ids": "ids/did-resolution.json",
       "cddl": []
     },
     {
@@ -15954,7 +16133,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/png-3/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Proposed Recommendation",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -16260,6 +16439,67 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/privacy-preserving-attribution/",
+      "seriesComposition": "full",
+      "shortname": "privacy-preserving-attribution",
+      "series": {
+        "shortname": "privacy-preserving-attribution",
+        "currentSpecification": "privacy-preserving-attribution",
+        "title": "Privacy-Preserving Attribution",
+        "shortTitle": "Privacy-Preserving Attribution",
+        "releaseUrl": "https://www.w3.org/TR/privacy-preserving-attribution/",
+        "nightlyUrl": "https://w3c.github.io/ppa/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/ppa/",
+        "status": "Editor's Draft",
+        "sourcePath": "api.bs",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/ppa",
+        "filename": "index.html"
+      },
+      "formerNames": [
+        "ppa"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Private Advertising Technology Working Group",
+          "url": "https://www.w3.org/groups/wg/pat/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/privacy-preserving-attribution/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "title": "Privacy-Preserving Attribution: Level 1",
+      "source": "w3c",
+      "shortTitle": "Privacy-Preserving Attribution 1",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/privacy-preserving-attribution/",
+        "https://w3c.github.io/ppa/"
+      ],
+      "crawled": "https://www.w3.org/TR/privacy-preserving-attribution/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 22 Apr 2025 06:04:03 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "22 April 2025",
+      "algorithms": "algorithms/privacy-preserving-attribution.json",
+      "links": "links/privacy-preserving-attribution.json",
+      "refs": "refs/privacy-preserving-attribution.json",
+      "idl": "idl/privacy-preserving-attribution.idl",
+      "dfns": "dfns/privacy-preserving-attribution.json",
+      "headings": "headings/privacy-preserving-attribution.json",
+      "ids": "ids/privacy-preserving-attribution.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/privacy-principles/",
       "seriesComposition": "full",
       "shortname": "privacy-principles",
@@ -16280,7 +16520,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/privacy-principles/",
-        "status": "Note",
+        "status": "Statement",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -19604,6 +19844,60 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/ttml2/",
+      "seriesComposition": "full",
+      "shortname": "ttml2",
+      "series": {
+        "shortname": "ttml",
+        "currentSpecification": "ttml2",
+        "title": "Timed Text Markup Language (TTML)",
+        "shortTitle": "TTML",
+        "releaseUrl": "https://www.w3.org/TR/ttml/",
+        "nightlyUrl": "https://w3c.github.io/ttml/index.html"
+      },
+      "seriesVersion": "2",
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Timed Text Working Group",
+          "url": "https://www.w3.org/AudioVideo/TT/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/ttml2/",
+        "status": "Candidate Recommendation Snapshot",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/ttml2/index.html",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/ttml2",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Timed Text Markup Language 2 (TTML2)",
+      "source": "w3c",
+      "shortTitle": "TTML2",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/ttml2/",
+        "https://w3c.github.io/ttml2/index.html"
+      ],
+      "crawled": "https://www.w3.org/TR/ttml2/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 05 Nov 2018 15:50:06 GMT"
+      },
+      "date": "08 November 2018",
+      "algorithms": "algorithms/ttml2.json",
+      "links": "links/ttml2.json",
+      "refs": "refs/ttml2.json",
+      "headings": "headings/ttml2.json",
+      "ids": "ids/ttml2.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/uievents-code/",
       "seriesComposition": "full",
       "shortname": "uievents-code",
@@ -19932,7 +20226,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vc-data-integrity/",
-        "status": "Proposed Recommendation",
+        "status": "Recommendation",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -19988,7 +20282,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vc-data-model-2.0/",
-        "status": "Proposed Recommendation",
+        "status": "Recommendation",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -22057,11 +22351,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webdriver-bidi/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 May 2025 07:55:13 GMT"
+        "lastModified": "Tue, 20 May 2025 16:23:05 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 May 2025",
-      "revision": "d1ed41979b7e78e114cf929fcda607e926037105",
+      "date": "20 May 2025",
+      "revision": "13ec5abca2cbc9db6129919405368ae561097883",
       "algorithms": "algorithms/webdriver-bidi.json",
       "links": "links/webdriver-bidi.json",
       "refs": "refs/webdriver-bidi.json",

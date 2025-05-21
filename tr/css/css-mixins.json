@@ -1,0 +1,52 @@
+{
+  "spec": {
+    "title": "CSS Functions and Mixins Module",
+    "url": "https://www.w3.org/TR/css-mixins-1/"
+  },
+  "properties": [],
+  "atrules": [
+    {
+      "name": "@function",
+      "href": "https://www.w3.org/TR/css-mixins-1/#at-ruledef-function",
+      "descriptors": [
+        {
+          "name": "result",
+          "href": "https://www.w3.org/TR/css-mixins-1/#descdef-function-result",
+          "for": "@function",
+          "value": "<declaration-value>?",
+          "initial": "n/a (see prose)"
+        }
+      ],
+      "value": "@function <function-token> <function-parameter>#? ) [ returns <css-type> ]? { <declaration-rule-list> }",
+      "values": [
+        {
+          "name": "type()",
+          "href": "https://www.w3.org/TR/css-mixins-1/#funcdef-function-type",
+          "type": "function",
+          "value": "type( <syntax> )"
+        }
+      ]
+    }
+  ],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<function-parameter>",
+      "href": "https://www.w3.org/TR/css-mixins-1/#typedef-function-parameter",
+      "type": "type",
+      "value": "<custom-property-name> <css-type>? [ : <declaration-value> ]?"
+    },
+    {
+      "name": "<css-type>",
+      "href": "https://www.w3.org/TR/css-mixins-1/#typedef-css-type",
+      "type": "type",
+      "value": "<syntax-component> | <type()>"
+    },
+    {
+      "name": "<dashed-function>",
+      "prose": "A <dashed-function> is a functional notation whose function name starts with two dashes (U+002D HYPHEN-MINUS). Its argument grammar is:",
+      "href": "https://www.w3.org/TR/css-mixins-1/#typedef-dashed-function",
+      "type": "type"
+    }
+  ]
+}
