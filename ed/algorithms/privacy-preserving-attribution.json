@@ -141,11 +141,14 @@
       ]
     },
     {
-      "name": "save an impression",
-      "href": "https://w3c.github.io/ppa/#save-an-impression",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"save-an-impression\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">save an impression</dfn>,\ngiven an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>settings</var> and given <a class=\"idl-code\" data-link-type=\"dictionary\" href=\"https://w3c.github.io/ppa/#dictdef-privateattributionimpressionoptions\" id=\"ref-for-dictdef-privateattributionimpressionoptions①\"><var>options</var></a>:",
-      "rationale": "collect",
+      "name": "PrivateAttribution/saveImpression(options)",
+      "href": "https://w3c.github.io/ppa/#dom-privateattribution-saveimpression",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PrivateAttribution\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-privateattribution-saveimpression\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>saveImpression(<var>options</var>)</code></dfn> method steps are:",
+      "rationale": "let",
       "steps": [
+        {
+          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#relevant-settings-object\" id=\"ref-for-relevant-settings-object③\">relevant settings object</a>.</p>"
+        },
         {
           "html": "Collect the implicit API inputs from <var>settings</var>:",
           "rationale": "let",
@@ -200,11 +203,14 @@
       ]
     },
     {
-      "name": "measure a conversion",
-      "href": "https://w3c.github.io/ppa/#measure-a-conversion",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"measure-a-conversion\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">measure a conversion</dfn>,\ngiven a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①\">environment settings object</a> <var>settings</var> and <a class=\"idl-code\" data-link-type=\"dictionary\" href=\"https://w3c.github.io/ppa/#dictdef-privateattributionconversionoptions\" id=\"ref-for-dictdef-privateattributionconversionoptions②\"><var>options</var></a>:",
-      "rationale": "collect",
+      "name": "PrivateAttribution/measureConversion(options)",
+      "href": "https://w3c.github.io/ppa/#dom-privateattribution-measureconversion",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PrivateAttribution\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-privateattribution-measureconversion\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>measureConversion(<var>options</var>)</code></dfn> method steps are:",
+      "rationale": "let",
       "steps": [
+        {
+          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#relevant-settings-object\" id=\"ref-for-relevant-settings-object④\">relevant settings object</a>.</p>"
+        },
         {
           "html": "Collect the implicit API inputs from <var>settings</var>:",
           "rationale": "let",
@@ -288,7 +294,7 @@
     {
       "name": "do attribution and fill a histogram",
       "href": "https://w3c.github.io/ppa/#do-attribution-and-fill-a-histogram",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"do-attribution-and-fill-a-histogram\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">do attribution and fill a histogram</dfn>, given <a class=\"idl-code\" data-link-type=\"dictionary\" href=\"https://w3c.github.io/ppa/#dictdef-privateattributionconversionoptions\" id=\"ref-for-dictdef-privateattributionconversionoptions③\"><var>options</var></a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site②⑤\">site</a> <var>topLevelSite</var>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment⑦\">moment</a> <var>now</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"do-attribution-and-fill-a-histogram\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">do attribution and fill a histogram</dfn>, given <a class=\"idl-code\" data-link-type=\"dictionary\" href=\"https://w3c.github.io/ppa/#dictdef-privateattributionconversionoptions\" id=\"ref-for-dictdef-privateattributionconversionoptions②\"><var>options</var></a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site②⑤\">site</a> <var>topLevelSite</var>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment⑦\">moment</a> <var>now</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -358,7 +364,7 @@
     {
       "name": "common matching logic",
       "href": "https://w3c.github.io/ppa/#common-matching-logic",
-      "html": "To perform <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"common-matching-logic\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">common matching logic</dfn>, given <a class=\"idl-code\" data-link-type=\"dictionary\" href=\"https://w3c.github.io/ppa/#dictdef-privateattributionconversionoptions\" id=\"ref-for-dictdef-privateattributionconversionoptions④\"><var>options</var></a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site②⑥\">site</a> <var>topLevelSite</var>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#epoch-index\" id=\"ref-for-epoch-index①①\">epoch index</a> <var>epoch</var>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment⑧\">moment</a> <var>now</var>:",
+      "html": "To perform <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"common-matching-logic\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">common matching logic</dfn>, given <a class=\"idl-code\" data-link-type=\"dictionary\" href=\"https://w3c.github.io/ppa/#dictdef-privateattributionconversionoptions\" id=\"ref-for-dictdef-privateattributionconversionoptions③\"><var>options</var></a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site②⑥\">site</a> <var>topLevelSite</var>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#epoch-index\" id=\"ref-for-epoch-index①①\">epoch index</a> <var>epoch</var>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment⑧\">moment</a> <var>now</var>:",
       "rationale": "let",
       "steps": [
         {
