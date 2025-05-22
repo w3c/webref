@@ -36,7 +36,7 @@
                       "html": "<span id=\"step2B.ii.a\"></span>Set the <code>current node</code> to the node referenced by the IDREF."
                     },
                     {
-                      "html": "<span id=\"step2B.ii.b\"></span><em>LabelledBy Recursion:</em> Compute the text alternative of the\n                          <code>current node</code> beginning with the overall <a href=\"https://w3c.github.io/accname/#comp_computation\">Computation</a> step. Set the <code>result</code> to that text alternative."
+                      "html": "<span id=\"step2B.ii.b\"></span><em>LabelledBy Traversal:</em> Compute the text alternative of the\n                          <code>current node</code> beginning with the overall <a href=\"https://w3c.github.io/accname/#comp_computation\">Computation</a> step. Set the <code>result</code> to that text alternative."
                     },
                     {
                       "html": "<span id=\"step2B.ii.c\"></span>Append a space character and the <code>result</code> to the <code>accumulated text</code>."
@@ -80,7 +80,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If traversal of the <code>current node</code> is due to recursion <strong>and</strong> the <code>current node</code> is an embedded control, ignore <code>aria-label</code> and\n                      skip to rule <a href=\"https://w3c.github.io/accname/#comp_embedded_control\">Embedded Control</a>."
+                  "html": "If traversal of the <code>current node</code> is due to <a href=\"https://w3c.github.io/accname/#comp_name_from_content_for_each_child\">Name From Content descendant node recursion</a> <strong>and</strong> the\n                      <code>current node</code> is an embedded control, ignore <code>aria-label</code> and skip to rule <a href=\"https://w3c.github.io/accname/#comp_embedded_control\">Embedded Control</a>."
                 },
                 {
                   "html": "Otherwise, return the value of <code>aria-label</code>."
@@ -98,9 +98,12 @@
                   "html": "<span id=\"step2F.i\"></span><em>Name From Content Reset:</em> Set the <code>accumulated text</code> to the empty string."
                 },
                 {
-                  "html": "<span id=\"step2F.ii\"></span><em>Name From Generated Content:</em> Check for\n                      <abbr title=\"Cascading Style Sheets\">CSS</abbr> generated textual content associated with the <code>current node</code> and include it in the <code>accumulated text</code>. The\n                      <abbr title=\"Cascading Style Sheets\">CSS</abbr> <a href=\"https://www.w3.org/TR/selectors-3/#gen-content\"><code>::before</code> and <code>::after</code></a> pseudo elements\n                      [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/accname/#bib-css2\" title=\"Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification\">CSS2</a></cite>] can provide textual content for <a data-link-type=\"dfn\" data-lt=\"element\" href=\"https://dom.spec.whatwg.org/#concept-element\">elements</a> that have a content model.",
+                  "html": "<span id=\"step2F.ii\"></span><em>Name From Generated Content:</em> Check for\n                      <abbr title=\"Cascading Style Sheets\">CSS</abbr> generated textual content associated with the <code>current node</code> and include it in the <code>accumulated text</code>. The\n                      <abbr title=\"Cascading Style Sheets\">CSS</abbr> <a href=\"https://www.w3.org/TR/selectors-3/#gen-content\"><code>::before</code> and <code>::after</code></a> pseudo elements\n                      [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/accname/#bib-css2\" title=\"Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification\">CSS2</a></cite>] can provide textual content for <a data-link-type=\"dfn\" data-lt=\"element\" href=\"https://dom.spec.whatwg.org/#concept-element\">elements</a> that have a content model, in addition to the\n                      <a href=\"https://www.w3.org/TR/css-pseudo-4/#selectordef-marker\"><code>::marker</code></a> pseudo element.",
                   "rationale": "for",
                   "steps": [
+                    {
+                      "html": "For <code>::marker</code> pseudo elements,  <em class=\"rfc2119\">MUST</em> append <abbr title=\"Cascading Style Sheets\">CSS</abbr> textual content, without a space, to\n                          the textual content of the <code>current node</code> if the <code>current node</code> supports <code>::marker</code>."
+                    },
                     {
                       "html": "For <code>::before</code> pseudo elements,  <em class=\"rfc2119\">MUST</em> prepend <abbr title=\"Cascading Style Sheets\">CSS</abbr> textual content, without a space,\n                          to the textual content of the <code>current node</code>."
                     },
