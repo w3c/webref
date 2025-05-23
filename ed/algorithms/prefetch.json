@@ -118,6 +118,9 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-abort\" id=\"ref-for-fetch-controller-abort\">Abort</a> <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-fetch-controller\" id=\"ref-for-prefetch-record-fetch-controller①\">fetch controller</a>. </p>"
         },
         {
+          "html": "<p>If <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-prerendering-traversable\" id=\"ref-for-prefetch-record-prerendering-traversable\">prerendering traversable</a> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#traversable-navigable\" id=\"ref-for-traversable-navigable\">traversable navigable</a>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#destroy-a-top-level-traversable\" id=\"ref-for-destroy-a-top-level-traversable\">destroy</a> it.</p>"
+        },
+        {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">Remove</a> <var>prefetchRecord</var> from <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#document-prefetch-records\" id=\"ref-for-document-prefetch-records②\">prefetch records</a>.</p>"
         }
       ]
@@ -283,7 +286,7 @@
               "html": "<p>If <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-state\" id=\"ref-for-prefetch-record-state⑧\">state</a> is \"<code>canceled</code>\", then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
             },
             {
-              "html": "<p>If <var>checkPrerender</var> is true and <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-prerendering-traversable\" id=\"ref-for-prefetch-record-prerendering-traversable\">prerendering traversable</a> is null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
+              "html": "<p>If <var>checkPrerender</var> is true and <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-prerendering-traversable\" id=\"ref-for-prefetch-record-prerendering-traversable①\">prerendering traversable</a> is null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
             },
             {
               "html": "<p>Let <var>recordNVS</var> be null.</p>"
@@ -685,7 +688,7 @@
                   ]
                 },
                 {
-                  "html": "<p>If <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-prerendering-traversable\" id=\"ref-for-prefetch-record-prerendering-traversable①\">prerendering traversable</a> is not null, then add a parameter whose key is \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#sec-purpose-prefetch-prerender\" id=\"ref-for-sec-purpose-prefetch-prerender\"><code>prerender</code></a>\" and whose value is true to the <code>prefetch</code> token in <var>purpose</var>.</p>"
+                  "html": "<p>If <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-prerendering-traversable\" id=\"ref-for-prefetch-record-prerendering-traversable②\">prerendering traversable</a> is not null, then add a parameter whose key is \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#sec-purpose-prefetch-prerender\" id=\"ref-for-sec-purpose-prefetch-prerender\"><code>prerender</code></a>\" and whose value is true to the <code>prefetch</code> token in <var>purpose</var>.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header\">Set a structured field value</a> given (`<code><a data-link-type=\"http-header\" href=\"https://fetch.spec.whatwg.org/#http-sec-purpose\" id=\"ref-for-http-sec-purpose\">Sec-Purpose</a></code>`, <var>purpose</var>) in <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list①\">header list</a>.</p>"
@@ -870,8 +873,11 @@
                 },
                 {
                   "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>prefetchRecord</var> in <var>activeDocument</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#document-prefetch-records\" id=\"ref-for-document-prefetch-records⑦\">prefetch records</a>:",
-                  "rationale": "cancel",
+                  "rationale": "if",
                   "steps": [
+                    {
+                      "html": "<p>If <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-prerendering-traversable\" id=\"ref-for-prefetch-record-prerendering-traversable③\">prerendering traversable</a> is not null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑥\">continue</a>.</p>"
+                    },
                     {
                       "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-cancel-and-discard\" id=\"ref-for-prefetch-record-cancel-and-discard①\">Cancel and discard</a> <var>prefetchRecord</var> given <var>activeDocument</var>.</p>"
                     }
