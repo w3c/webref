@@ -129,7 +129,7 @@
           "html": "<p>Let <var>type</var> be <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-type\" id=\"ref-for-dom-event-type⑥\">type</a></code> attribute value.</p>"
         },
         {
-          "html": "<p>If <var>type</var> is not one among <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-keyup\" id=\"ref-for-event-type-keyup②\">keyup</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-compositionstart\" id=\"ref-for-event-type-compositionstart①\">compositionstart</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-input\" id=\"ref-for-event-type-input①\">input</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointercancel-event\" id=\"ref-for-the-pointercancel-event①\">pointercancel</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerup-event\" id=\"ref-for-the-pointerup-event③\">pointerup</a></code>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-click\" id=\"ref-for-event-type-click③\">click</a></code>, return 0.</p>"
+          "html": "<p>If <var>type</var> is not one among <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-keyup\" id=\"ref-for-event-type-keyup②\">keyup</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-compositionstart\" id=\"ref-for-event-type-compositionstart①\">compositionstart</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-input\" id=\"ref-for-event-type-input①\">input</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointercancel-event\" id=\"ref-for-the-pointercancel-event①\">pointercancel</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerup-event\" id=\"ref-for-the-pointerup-event③\">pointerup</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-click\" id=\"ref-for-event-type-click③\">click</a></code>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-contextmenu\" id=\"ref-for-event-type-contextmenu①\">contextmenu</a></code>, return 0.</p>"
         },
         {
           "html": "<p>Let <var>window</var> be <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object</a>.</p>"
@@ -219,7 +219,7 @@
           ]
         },
         {
-          "html": "Otherwise (<var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointercancel-event\" id=\"ref-for-the-pointercancel-event②\">pointercancel</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerup-event\" id=\"ref-for-the-pointerup-event⑤\">pointerup</a></code>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-click\" id=\"ref-for-event-type-click④\">click</a></code>):",
+          "html": "Otherwise (<var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointercancel-event\" id=\"ref-for-the-pointercancel-event②\">pointercancel</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerup-event\" id=\"ref-for-the-pointerup-event⑤\">pointerup</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-click\" id=\"ref-for-event-type-click④\">click</a></code>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-contextmenu\" id=\"ref-for-event-type-contextmenu②\">contextmenu</a></code>):",
           "rationale": "let",
           "steps": [
             {
@@ -244,10 +244,31 @@
               ]
             },
             {
-              "html": "<p>Assert that <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerup-event\" id=\"ref-for-the-pointerup-event⑥\">pointerup</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointercancel-event\" id=\"ref-for-the-pointercancel-event③\">pointercancel</a></code>.</p>"
+              "html": "<p>Assert that <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerup-event\" id=\"ref-for-the-pointerup-event⑥\">pointerup</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointercancel-event\" id=\"ref-for-the-pointercancel-event③\">pointercancel</a></code>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-contextmenu\" id=\"ref-for-event-type-contextmenu③\">contextmenu</a></code>.</p>"
             },
             {
-              "html": "<p>If <var>pendingPointerDowns</var>[<var>pointerId</var>] does not exist, return 0.</p>"
+              "html": "If <var>pendingPointerDowns</var>[<var>pointerId</var>] does not exist:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-contextmenu\" id=\"ref-for-event-type-contextmenu④\">contextmenu</a></code>, return <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value⑦\">user interaction value</a>.</p>"
+                },
+                {
+                  "html": "If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerup-event\" id=\"ref-for-the-pointerup-event⑦\">pointerup</a></code> and <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#is-contextmenu-triggered\" id=\"ref-for-is-contextmenu-triggered\">is contextmenu triggered</a> flag is true:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#is-contextmenu-triggered\" id=\"ref-for-is-contextmenu-triggered①\">is contextmenu triggered</a> flag to false.</p>"
+                    },
+                    {
+                      "html": "<p>Return <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value⑧\">user interaction value</a>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Otherwise, return 0.</p>"
+                }
+              ]
             },
             {
               "html": "<p>Let <var>pointerDownEntry</var> be <var>pendingPointerDowns</var>[<var>pointerId</var>].</p>"
@@ -256,14 +277,14 @@
               "html": "<p>Assert that <var>pointerDownEntry</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#performanceeventtiming\" id=\"ref-for-performanceeventtiming①⑧\">PerformanceEventTiming</a></code> entry.</p>"
             },
             {
-              "html": "If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerup-event\" id=\"ref-for-the-pointerup-event⑦\">pointerup</a></code>:",
+              "html": "If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerup-event\" id=\"ref-for-the-pointerup-event⑧\">pointerup</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-contextmenu\" id=\"ref-for-event-type-contextmenu⑤\">contextmenu</a></code>:",
               "rationale": "increase",
               "steps": [
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#increase-interaction-count\" id=\"ref-for-increase-interaction-count②\">Increase interaction count</a> on <var>window</var>.</p>"
                 },
                 {
-                  "html": "<p>Set <var>pointerMap</var>[<var>pointerId</var>] to <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value⑦\">user interaction value</a>.</p>"
+                  "html": "<p>Set <var>pointerMap</var>[<var>pointerId</var>] to <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value⑨\">user interaction value</a>.</p>"
                 },
                 {
                   "html": "<p>Set <var>pointerDownEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#dom-performanceeventtiming-interactionid\" id=\"ref-for-dom-performanceeventtiming-interactionid⑦\">interactionId</a></code> to <var>pointerMap</var>[<var>pointerId</var>].</p>"
@@ -275,6 +296,9 @@
             },
             {
               "html": "<p>Remove <var>pendingPointerDowns</var>[<var>pointerId</var>].</p>"
+            },
+            {
+              "html": "<p>If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-contextmenu\" id=\"ref-for-event-type-contextmenu⑥\">contextmenu</a></code>, set <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#is-contextmenu-triggered\" id=\"ref-for-is-contextmenu-triggered②\">is contextmenu triggered</a> to true.</p>"
             },
             {
               "html": "<p>If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointercancel-event\" id=\"ref-for-the-pointercancel-event④\">pointercancel</a></code>, return 0.</p>"
@@ -369,6 +393,9 @@
             },
             {
               "html": "<p>Set <var>pendingPointerDowns</var>[<var>pointerId</var>] to <var>timingEntry</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#is-contextmenu-triggered\" id=\"ref-for-is-contextmenu-triggered③\">is contextmenu triggered</a> to false.</p>"
             }
           ]
         },
@@ -406,10 +433,10 @@
                   "rationale": "increase",
                   "steps": [
                     {
-                      "html": "<p>Increase <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value⑧\">user interaction value</a> value by a small number chosen by the user agent.</p>"
+                      "html": "<p>Increase <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value①⓪\">user interaction value</a> value by a small number chosen by the user agent.</p>"
                     },
                     {
-                      "html": "<p>Set <var>previousKeyDownEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#dom-performanceeventtiming-interactionid\" id=\"ref-for-dom-performanceeventtiming-interactionid①①\">interactionId</a></code> to <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value⑨\">user interaction value</a>.</p>"
+                      "html": "<p>Set <var>previousKeyDownEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#dom-performanceeventtiming-interactionid\" id=\"ref-for-dom-performanceeventtiming-interactionid①①\">interactionId</a></code> to <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value①①\">user interaction value</a>.</p>"
                     }
                   ]
                 },

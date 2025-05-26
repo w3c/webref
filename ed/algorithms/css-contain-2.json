@@ -61,6 +61,79 @@
       ]
     },
     {
+      "name": "update currently relevant to the user",
+      "href": "https://drafts.csswg.org/css-contain-2/#update-currently-relevant-to-the-user",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-currently-relevant-to-the-user\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update currently relevant to the user</dfn> given an element <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>currentlyRelevant</var> be true if <var>element</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#relevant-to-the-user\" id=\"ref-for-relevant-to-the-user①\">relevant to the user</a>, otherwise false.</p>"
+        },
+        {
+          "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#currently-relevant-to-the-user\" id=\"ref-for-currently-relevant-to-the-user\">currently relevant to the user</a> flag is equal to <var>currentlyRelevant</var>, then return false.</p>"
+        },
+        {
+          "html": "<p>Set <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#currently-relevant-to-the-user\" id=\"ref-for-currently-relevant-to-the-user①\">currently relevant to the user</a> flag to <var>currentlyRelevant</var>.</p>"
+        },
+        {
+          "html": "<p>return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "update content relevancy for a document",
+      "href": "https://drafts.csswg.org/css-contain-2/#update-content-relevancy-for-a-document",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"update-content-relevancy-for-a-document\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update content relevancy for a document</dfn> given a document <var>doc</var>, and a boolean <var>updateNonInitial</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>changed</var> be false.</p>"
+        },
+        {
+          "html": "For each <var>element</var> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected\">connected</a> to doc with <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-contain-2/#valdef-content-visibility-auto\" id=\"ref-for-valdef-content-visibility-auto\">auto</a> used value of <span class=\"css\">content-visibility</span>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>updateNonInitial</var> is true:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#update-currently-relevant-to-the-user\" id=\"ref-for-update-currently-relevant-to-the-user\">update currently relevant to the user</a> for <var>element</var> returns true.",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>changed</var> to true.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>isInitialDetermination</var> be true if <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#proximity-to-the-viewport\" id=\"ref-for-proximity-to-the-viewport⑤\">proximity to the viewport</a> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#not-determined\" id=\"ref-for-not-determined②\">not determined</a>, otherwise false.</p>"
+            },
+            {
+              "html": "<p>Determine <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#proximity-to-the-viewport\" id=\"ref-for-proximity-to-the-viewport⑥\">proximity to the viewport</a> for <var>element</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>isInitialDetermination</var> is false, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "If <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#update-currently-relevant-to-the-user\" id=\"ref-for-update-currently-relevant-to-the-user①\">update currently relevant to the user</a> for <var>element</var> returns true.",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>changed</var> to true.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>return <var>changed</var>.</p>"
+        }
+      ]
+    },
+    {
       "html": "<a class=\"css\" data-link-type=\"propdesc\" href=\"https://drafts.csswg.org/css-contain-2/#propdef-content-visibility\" id=\"ref-for-propdef-content-visibility①③\">content-visibility: hidden</a> lays powerful restrictions onto an element,\n\tand so should be used with caution.\n\tIt also enables some very useful scenarios,\n\toften improving on existing techniques,\n\ta few of which are outlined here.",
       "rationale": "if",
       "steps": [
@@ -86,19 +159,19 @@
           "html": "<p>From the perspective of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#resizeobserver\" id=\"ref-for-resizeobserver\">ResizeObserver</a></code>,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#skips-its-contents\" id=\"ref-for-skips-its-contents②⑥\">skipped contents</a> of an element\nnever change their size.\nIf these elements become non-skipped later,\nthe resize observation will be delivered\nif the new size differs from the last size used to notify the resize observer.</p>"
         },
         {
-          "html": "<p>If an element starts or stops <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#skips-its-contents\" id=\"ref-for-skips-its-contents②⑦\">skipping its contents</a>,\nthis change happens\nafter the requestAnimationFrame callbacks\nof the frame that renders the effects of the change\nhave run.\nSpecifically, such changes will take effect between steps 13 and 14\nof <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#update-the-rendering\" id=\"ref-for-update-the-rendering\">update the rendering</a> step of the Processing Model\n(between “run the animation frame callbacks”\nand “run the update intersection observations steps”).</p>"
+          "html": "<p>If an element starts or stops <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#skips-its-contents\" id=\"ref-for-skips-its-contents②⑦\">skipping its contents</a>,\nthis change happens when <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#update-content-relevancy-for-a-document\" id=\"ref-for-update-content-relevancy-for-a-document\">update content relevancy for a document</a> runs.</p>"
         },
         {
-          "html": "<p>Elements with <a class=\"css\" data-link-type=\"propdesc\" href=\"https://drafts.csswg.org/css-contain-2/#propdef-content-visibility\" id=\"ref-for-propdef-content-visibility②⑨\">content-visibility: auto</a> that have not determined <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#proximity-to-the-viewport\" id=\"ref-for-proximity-to-the-viewport⑤\">proximity to the viewport</a> must determine their proximity to the viewport\nin the next <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#update-the-rendering\" id=\"ref-for-update-the-rendering②\">update the rendering</a> cycle.\nThe effect of this determination must be reflected in the visual update which results from this <span id=\"ref-for-update-the-rendering③\">update the rendering</span> cycle.\nSee <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model:content-visibility-auto\">the event loop process model</a> for the concrete algorithm description.</p>"
+          "html": "<p>Elements with <a class=\"css\" data-link-type=\"propdesc\" href=\"https://drafts.csswg.org/css-contain-2/#propdef-content-visibility\" id=\"ref-for-propdef-content-visibility②⑨\">content-visibility: auto</a> that have not determined <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#proximity-to-the-viewport\" id=\"ref-for-proximity-to-the-viewport⑦\">proximity to the viewport</a> must determine their proximity to the viewport\nin the next <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#update-the-rendering\" id=\"ref-for-update-the-rendering①\">update the rendering</a> cycle.\nThe effect of this determination must be reflected in the visual update which results from this <span id=\"ref-for-update-the-rendering②\">update the rendering</span> cycle.\nSee <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model:content-visibility-auto\">the event loop process model</a> for the concrete algorithm description.</p>"
         },
         {
           "html": "<p>For the purposes of scrolling operations,\nsuch as <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-element-scrollintoview\" id=\"ref-for-dom-element-scrollintoview\">scrollIntoView()</a></code>,\nan element with <a class=\"css\" data-link-type=\"propdesc\" href=\"https://drafts.csswg.org/css-contain-2/#propdef-content-visibility\" id=\"ref-for-propdef-content-visibility③①\">content-visibility: auto</a> that is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#skips-its-contents\" id=\"ref-for-skips-its-contents③③\">skipping its contents</a> has its size and location determined <em>with</em> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#size-containment\" id=\"ref-for-size-containment①②\">size containment</a> still active.</p>\n     \n     \n     <p>If an element is not available to user-agent features\n(for example, if it is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#skips-its-contents\" id=\"ref-for-skips-its-contents③⑤\">skipped</a> due to a <a class=\"css\" data-link-type=\"propdesc\" href=\"https://drafts.csswg.org/css-contain-2/#propdef-content-visibility\" id=\"ref-for-propdef-content-visibility③②\">content-visibility: hidden</a> ancestor),\nthen scrolling operations\nmust not scroll to it at all,\nas if it did not have a layout box.</p>"
         },
         {
-          "html": "<p>If an element with <a class=\"css\" data-link-type=\"propdesc\" href=\"https://drafts.csswg.org/css-contain-2/#propdef-content-visibility\" id=\"ref-for-propdef-content-visibility③③\">content-visibility: auto</a> that is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#skips-its-contents\" id=\"ref-for-skips-its-contents③⑥\">skipping its contents</a> is focused\n(or its contents are),\nit becomes <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#relevant-to-the-user\" id=\"ref-for-relevant-to-the-user④\">relevant to the user</a> (and thus stops <span id=\"ref-for-skips-its-contents③⑦\">skipping its contents</span>) <em>before</em> it is scrolled into view due to the focusing.</p>"
+          "html": "<p>If an element with <a class=\"css\" data-link-type=\"propdesc\" href=\"https://drafts.csswg.org/css-contain-2/#propdef-content-visibility\" id=\"ref-for-propdef-content-visibility③③\">content-visibility: auto</a> that is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#skips-its-contents\" id=\"ref-for-skips-its-contents③⑥\">skipping its contents</a> is focused\n(or its contents are),\nit becomes <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#relevant-to-the-user\" id=\"ref-for-relevant-to-the-user⑤\">relevant to the user</a> (and thus stops <span id=\"ref-for-skips-its-contents③⑦\">skipping its contents</span>) <em>before</em> it is scrolled into view due to the focusing.</p>"
         },
         {
-          "html": "<p>If an <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element\" id=\"ref-for-the-iframe-element\">iframe</a></code> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#skips-its-contents\" id=\"ref-for-skips-its-contents③⑧\">skips its contents</a> or is part of an element’s <span id=\"ref-for-skips-its-contents③⑨\">skipped contents</span>,\nthe user agent should entirely skip the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#update-the-rendering\" id=\"ref-for-update-the-rendering④\">Update The Rendering</a> step in the iframe’s event loop,\nif possible.</p>"
+          "html": "<p>If an <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element\" id=\"ref-for-the-iframe-element\">iframe</a></code> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#skips-its-contents\" id=\"ref-for-skips-its-contents③⑧\">skips its contents</a> or is part of an element’s <span id=\"ref-for-skips-its-contents③⑨\">skipped contents</span>,\nthe user agent should entirely skip the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#update-the-rendering\" id=\"ref-for-update-the-rendering③\">Update The Rendering</a> step in the iframe’s event loop,\nif possible.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#skips-its-contents\" id=\"ref-for-skips-its-contents④①\">Skipped contents</a> do not contribute to the result of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/dom.html#dom-innertext\" id=\"ref-for-dom-innertext\">innerText</a></code>.</p>"
