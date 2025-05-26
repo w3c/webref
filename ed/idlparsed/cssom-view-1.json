@@ -3069,11 +3069,27 @@
       ],
       "HTMLElement": [
         {
-          "fragment": "partial interface HTMLElement {\n  readonly attribute Element? offsetParent;\n  readonly attribute long offsetTop;\n  readonly attribute long offsetLeft;\n  readonly attribute long offsetWidth;\n  readonly attribute long offsetHeight;\n};",
+          "fragment": "partial interface HTMLElement {\n  readonly attribute Element? scrollParent;\n  readonly attribute Element? offsetParent;\n  readonly attribute long offsetTop;\n  readonly attribute long offsetLeft;\n  readonly attribute long offsetWidth;\n  readonly attribute long offsetHeight;\n};",
           "type": "interface",
           "name": "HTMLElement",
           "inheritance": null,
           "members": [
+            {
+              "type": "attribute",
+              "name": "scrollParent",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "Element"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-htmlelement-scrollparent"
+            },
             {
               "type": "attribute",
               "name": "offsetParent",

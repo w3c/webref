@@ -141,6 +141,30 @@
         "extAttrs": [],
         "href": "https://w3c.github.io/mediacapture-screen-share/#dom-systemaudiopreferenceenum"
       },
+      "WindowAudioPreferenceEnum": {
+        "fragment": "enum WindowAudioPreferenceEnum {\n  \"system\",\n  \"window\",\n  \"exclude\"\n};",
+        "type": "enum",
+        "name": "WindowAudioPreferenceEnum",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "system",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-WindowAudioPreferenceEnum.system"
+          },
+          {
+            "type": "enum-value",
+            "value": "window",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-WindowAudioPreferenceEnum.window"
+          },
+          {
+            "type": "enum-value",
+            "value": "exclude",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-WindowAudioPreferenceEnum.exclude"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-screen-share/#dom-windowaudiopreferenceenum"
+      },
       "SurfaceSwitchingPreferenceEnum": {
         "fragment": "enum SurfaceSwitchingPreferenceEnum {\n  \"include\",\n  \"exclude\"\n};",
         "type": "enum",
@@ -180,7 +204,7 @@
         "href": "https://w3c.github.io/mediacapture-screen-share/#dom-monitortypesurfacesenum"
       },
       "DisplayMediaStreamOptions": {
-        "fragment": "dictionary DisplayMediaStreamOptions {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  CaptureController controller;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n  SystemAudioPreferenceEnum systemAudio;\n  SurfaceSwitchingPreferenceEnum surfaceSwitching;\n  MonitorTypeSurfacesEnum monitorTypeSurfaces;\n};",
+        "fragment": "dictionary DisplayMediaStreamOptions {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  CaptureController controller;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n  SystemAudioPreferenceEnum systemAudio;\n  WindowAudioPreferenceEnum windowAudio;\n  SurfaceSwitchingPreferenceEnum surfaceSwitching;\n  MonitorTypeSurfacesEnum monitorTypeSurfaces;\n};",
         "type": "dictionary",
         "name": "DisplayMediaStreamOptions",
         "inheritance": null,
@@ -304,6 +328,22 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-systemaudio"
+          },
+          {
+            "type": "field",
+            "name": "windowAudio",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WindowAudioPreferenceEnum"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-windowaudio"
           },
           {
             "type": "field",
@@ -845,6 +885,7 @@
         "CaptureController",
         "SelfCapturePreferenceEnum",
         "SystemAudioPreferenceEnum",
+        "WindowAudioPreferenceEnum",
         "SurfaceSwitchingPreferenceEnum",
         "MonitorTypeSurfacesEnum"
       ],

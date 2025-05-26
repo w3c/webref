@@ -642,10 +642,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>name</var> or <var>value</var> contain U+003B (<code>;</code>), any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#c0-control\" id=\"ref-for-c0-control\">C0 control</a> character except U+0009 (the horizontal tab character), or U+007F, then return failure.</p>"
+          "html": "<p>If <var>name</var> or <var>value</var> contain U+003B (;), any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#c0-control\" id=\"ref-for-c0-control\">C0 control</a> character except U+0009 TAB, or U+007F DELETE, then return failure.</p>"
         },
         {
-          "html": "<p>If <var>name</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length\">length</a> is 0 and <var>value</var> contains U+003D (<code>=</code>), then return failure.</p>"
+          "html": "<p>If <var>name</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length\">length</a> is 0 and <var>value</var> contains U+003D (=), then return failure.</p>"
         },
         {
           "html": "<p>If <var>name</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length①\">length</a> is 0 and <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length②\">length</a> is 0, then return failure.</p>"
@@ -670,10 +670,10 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>domain</var> starts with U+002E (<code>.</code>), then return failure.</p>"
+              "html": "<p>If <var>domain</var> starts with U+002E (.), then return failure.</p>"
             },
             {
-              "html": "<p>If <var>host</var> does not equal <var>domain</var> and <var>host</var> does not end with U+002E (<code>.</code>) followed by <var>domain</var>,\nthen return failure.</p>"
+              "html": "<p>If <var>host</var> does not equal <var>domain</var> and <var>host</var> does not end with U+002E (.) followed by <var>domain</var>,\nthen return failure.</p>"
             },
             {
               "html": "<p>Let <var>encodedDomain</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode②\">UTF-8 encoding</a> <var>domain</var>.</p>"
@@ -694,7 +694,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>path</var> does not start with U+002F (<code>/</code>), then return failure.</p>"
+              "html": "<p>If <var>path</var> does not start with U+002F (/), then return failure.</p>"
             },
             {
               "html": "<p>Let <var>encodedPath</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode③\">UTF-8 encoding</a> <var>path</var>.</p>"
@@ -708,7 +708,7 @@
           ]
         },
         {
-          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑥\">append</a> `<code>Path</code>`/ U+002F (<code>/</code>) to <var>attributes</var>.</p>"
+          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑥\">append</a> `<code>Path</code>`/ U+002F (/) to <var>attributes</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑦\">Append</a> `<code>Secure</code>`/`` to <var>attributes</var>.</p>"

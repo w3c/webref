@@ -5,6 +5,38 @@
   },
   "properties": [
     {
+      "name": "scroll-target-group",
+      "href": "https://drafts.csswg.org/css-overflow-5/#propdef-scroll-target-group",
+      "value": "none | auto",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The element does not establish a scroll marker group container.",
+          "href": "https://drafts.csswg.org/css-overflow-5/#valdef-scroll-target-group-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "auto",
+          "prose": "The element establishes a scroll marker group container forming a scroll marker group containing all of the scroll marker elements for which this is the nearest ancestor scroll marker group container.",
+          "href": "https://drafts.csswg.org/css-overflow-5/#valdef-scroll-target-group-auto",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
+      "styleDeclaration": [
+        "scroll-target-group",
+        "scrollTargetGroup"
+      ]
+    },
+    {
       "name": "scroll-marker-group",
       "href": "https://drafts.csswg.org/css-overflow-5/#propdef-scroll-marker-group",
       "value": "none | before | after",

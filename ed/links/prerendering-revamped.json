@@ -78,6 +78,7 @@
       "https://webbluetoothcg.github.io/web-bluetooth/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://wicg.github.io/background-fetch/": {},
+      "https://wicg.github.io/background-sync/spec/": {},
       "https://wicg.github.io/client-hints-infrastructure/": {},
       "https://wicg.github.io/file-system-access/": {},
       "https://wicg.github.io/idle-detection/": {},
@@ -570,6 +571,11 @@
           "dom-backgroundfetchmanager-fetch"
         ]
       },
+      "https://wicg.github.io/background-sync/spec/": {
+        "anchors": [
+          "dom-syncmanager-register"
+        ]
+      },
       "https://wicg.github.io/client-hints-infrastructure": {
         "anchors": [
           "accept-ch-cache",
@@ -609,7 +615,8 @@
           "prefetch-record-matches-a-url",
           "document-prefetch-records",
           "prefetch-record-is-expected-to-match-a-url",
-          "prefetch-record-start-time"
+          "prefetch-record-start-time",
+          "prefetch-record-cancel-and-discard"
         ]
       },
       "https://wicg.github.io/serial/": {

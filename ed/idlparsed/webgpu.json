@@ -1443,7 +1443,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#gpudevicedescriptor"
       },
       "GPUFeatureName": {
-        "fragment": "enum GPUFeatureName {\n    \"core-features-and-limits\",\n    \"depth-clip-control\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-bc-sliced-3d\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"texture-compression-astc-sliced-3d\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n    \"shader-f16\",\n    \"rg11b10ufloat-renderable\",\n    \"bgra8unorm-storage\",\n    \"float32-filterable\",\n    \"float32-blendable\",\n    \"clip-distances\",\n    \"dual-source-blending\",\n    \"subgroups\",\n};",
+        "fragment": "enum GPUFeatureName {\n    \"core-features-and-limits\",\n    \"depth-clip-control\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-bc-sliced-3d\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"texture-compression-astc-sliced-3d\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n    \"shader-f16\",\n    \"rg11b10ufloat-renderable\",\n    \"bgra8unorm-storage\",\n    \"float32-filterable\",\n    \"float32-blendable\",\n    \"clip-distances\",\n    \"dual-source-blending\",\n    \"subgroups\",\n    \"texture-formats-tier1\",\n};",
         "type": "enum",
         "name": "GPUFeatureName",
         "values": [
@@ -1536,6 +1536,11 @@
             "type": "enum-value",
             "value": "subgroups",
             "href": "https://gpuweb.github.io/gpuweb/#subgroups"
+          },
+          {
+            "type": "enum-value",
+            "value": "texture-formats-tier1",
+            "href": "https://gpuweb.github.io/gpuweb/#texture-formats-tier1"
           }
         ],
         "extAttrs": [],
@@ -3632,7 +3637,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#enumdef-gputextureaspect"
       },
       "GPUTextureFormat": {
-        "fragment": "enum GPUTextureFormat {\n    // 8-bit formats\n    \"r8unorm\",\n    \"r8snorm\",\n    \"r8uint\",\n    \"r8sint\",\n\n    // 16-bit formats\n    \"r16uint\",\n    \"r16sint\",\n    \"r16float\",\n    \"rg8unorm\",\n    \"rg8snorm\",\n    \"rg8uint\",\n    \"rg8sint\",\n\n    // 32-bit formats\n    \"r32uint\",\n    \"r32sint\",\n    \"r32float\",\n    \"rg16uint\",\n    \"rg16sint\",\n    \"rg16float\",\n    \"rgba8unorm\",\n    \"rgba8unorm-srgb\",\n    \"rgba8snorm\",\n    \"rgba8uint\",\n    \"rgba8sint\",\n    \"bgra8unorm\",\n    \"bgra8unorm-srgb\",\n    // Packed 32-bit formats\n    \"rgb9e5ufloat\",\n    \"rgb10a2uint\",\n    \"rgb10a2unorm\",\n    \"rg11b10ufloat\",\n\n    // 64-bit formats\n    \"rg32uint\",\n    \"rg32sint\",\n    \"rg32float\",\n    \"rgba16uint\",\n    \"rgba16sint\",\n    \"rgba16float\",\n\n    // 128-bit formats\n    \"rgba32uint\",\n    \"rgba32sint\",\n    \"rgba32float\",\n\n    // Depth/stencil formats\n    \"stencil8\",\n    \"depth16unorm\",\n    \"depth24plus\",\n    \"depth24plus-stencil8\",\n    \"depth32float\",\n\n    // \"depth32float-stencil8\" feature\n    \"depth32float-stencil8\",\n\n    // BC compressed formats usable if \"texture-compression-bc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"bc1-rgba-unorm\",\n    \"bc1-rgba-unorm-srgb\",\n    \"bc2-rgba-unorm\",\n    \"bc2-rgba-unorm-srgb\",\n    \"bc3-rgba-unorm\",\n    \"bc3-rgba-unorm-srgb\",\n    \"bc4-r-unorm\",\n    \"bc4-r-snorm\",\n    \"bc5-rg-unorm\",\n    \"bc5-rg-snorm\",\n    \"bc6h-rgb-ufloat\",\n    \"bc6h-rgb-float\",\n    \"bc7-rgba-unorm\",\n    \"bc7-rgba-unorm-srgb\",\n\n    // ETC2 compressed formats usable if \"texture-compression-etc2\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"etc2-rgb8unorm\",\n    \"etc2-rgb8unorm-srgb\",\n    \"etc2-rgb8a1unorm\",\n    \"etc2-rgb8a1unorm-srgb\",\n    \"etc2-rgba8unorm\",\n    \"etc2-rgba8unorm-srgb\",\n    \"eac-r11unorm\",\n    \"eac-r11snorm\",\n    \"eac-rg11unorm\",\n    \"eac-rg11snorm\",\n\n    // ASTC compressed formats usable if \"texture-compression-astc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"astc-4x4-unorm\",\n    \"astc-4x4-unorm-srgb\",\n    \"astc-5x4-unorm\",\n    \"astc-5x4-unorm-srgb\",\n    \"astc-5x5-unorm\",\n    \"astc-5x5-unorm-srgb\",\n    \"astc-6x5-unorm\",\n    \"astc-6x5-unorm-srgb\",\n    \"astc-6x6-unorm\",\n    \"astc-6x6-unorm-srgb\",\n    \"astc-8x5-unorm\",\n    \"astc-8x5-unorm-srgb\",\n    \"astc-8x6-unorm\",\n    \"astc-8x6-unorm-srgb\",\n    \"astc-8x8-unorm\",\n    \"astc-8x8-unorm-srgb\",\n    \"astc-10x5-unorm\",\n    \"astc-10x5-unorm-srgb\",\n    \"astc-10x6-unorm\",\n    \"astc-10x6-unorm-srgb\",\n    \"astc-10x8-unorm\",\n    \"astc-10x8-unorm-srgb\",\n    \"astc-10x10-unorm\",\n    \"astc-10x10-unorm-srgb\",\n    \"astc-12x10-unorm\",\n    \"astc-12x10-unorm-srgb\",\n    \"astc-12x12-unorm\",\n    \"astc-12x12-unorm-srgb\",\n};",
+        "fragment": "enum GPUTextureFormat {\n    // 8-bit formats\n    \"r8unorm\",\n    \"r8snorm\",\n    \"r8uint\",\n    \"r8sint\",\n\n    // 16-bit formats\n    \"r16unorm\",\n    \"r16snorm\",\n    \"r16uint\",\n    \"r16sint\",\n    \"r16float\",\n    \"rg8unorm\",\n    \"rg8snorm\",\n    \"rg8uint\",\n    \"rg8sint\",\n\n    // 32-bit formats\n    \"r32uint\",\n    \"r32sint\",\n    \"r32float\",\n    \"rg16unorm\",\n    \"rg16snorm\",\n    \"rg16uint\",\n    \"rg16sint\",\n    \"rg16float\",\n    \"rgba8unorm\",\n    \"rgba8unorm-srgb\",\n    \"rgba8snorm\",\n    \"rgba8uint\",\n    \"rgba8sint\",\n    \"bgra8unorm\",\n    \"bgra8unorm-srgb\",\n    // Packed 32-bit formats\n    \"rgb9e5ufloat\",\n    \"rgb10a2uint\",\n    \"rgb10a2unorm\",\n    \"rg11b10ufloat\",\n\n    // 64-bit formats\n    \"rg32uint\",\n    \"rg32sint\",\n    \"rg32float\",\n    \"rgba16unorm\",\n    \"rgba16snorm\",\n    \"rgba16uint\",\n    \"rgba16sint\",\n    \"rgba16float\",\n\n    // 128-bit formats\n    \"rgba32uint\",\n    \"rgba32sint\",\n    \"rgba32float\",\n\n    // Depth/stencil formats\n    \"stencil8\",\n    \"depth16unorm\",\n    \"depth24plus\",\n    \"depth24plus-stencil8\",\n    \"depth32float\",\n\n    // \"depth32float-stencil8\" feature\n    \"depth32float-stencil8\",\n\n    // BC compressed formats usable if \"texture-compression-bc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"bc1-rgba-unorm\",\n    \"bc1-rgba-unorm-srgb\",\n    \"bc2-rgba-unorm\",\n    \"bc2-rgba-unorm-srgb\",\n    \"bc3-rgba-unorm\",\n    \"bc3-rgba-unorm-srgb\",\n    \"bc4-r-unorm\",\n    \"bc4-r-snorm\",\n    \"bc5-rg-unorm\",\n    \"bc5-rg-snorm\",\n    \"bc6h-rgb-ufloat\",\n    \"bc6h-rgb-float\",\n    \"bc7-rgba-unorm\",\n    \"bc7-rgba-unorm-srgb\",\n\n    // ETC2 compressed formats usable if \"texture-compression-etc2\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"etc2-rgb8unorm\",\n    \"etc2-rgb8unorm-srgb\",\n    \"etc2-rgb8a1unorm\",\n    \"etc2-rgb8a1unorm-srgb\",\n    \"etc2-rgba8unorm\",\n    \"etc2-rgba8unorm-srgb\",\n    \"eac-r11unorm\",\n    \"eac-r11snorm\",\n    \"eac-rg11unorm\",\n    \"eac-rg11snorm\",\n\n    // ASTC compressed formats usable if \"texture-compression-astc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"astc-4x4-unorm\",\n    \"astc-4x4-unorm-srgb\",\n    \"astc-5x4-unorm\",\n    \"astc-5x4-unorm-srgb\",\n    \"astc-5x5-unorm\",\n    \"astc-5x5-unorm-srgb\",\n    \"astc-6x5-unorm\",\n    \"astc-6x5-unorm-srgb\",\n    \"astc-6x6-unorm\",\n    \"astc-6x6-unorm-srgb\",\n    \"astc-8x5-unorm\",\n    \"astc-8x5-unorm-srgb\",\n    \"astc-8x6-unorm\",\n    \"astc-8x6-unorm-srgb\",\n    \"astc-8x8-unorm\",\n    \"astc-8x8-unorm-srgb\",\n    \"astc-10x5-unorm\",\n    \"astc-10x5-unorm-srgb\",\n    \"astc-10x6-unorm\",\n    \"astc-10x6-unorm-srgb\",\n    \"astc-10x8-unorm\",\n    \"astc-10x8-unorm-srgb\",\n    \"astc-10x10-unorm\",\n    \"astc-10x10-unorm-srgb\",\n    \"astc-12x10-unorm\",\n    \"astc-12x10-unorm-srgb\",\n    \"astc-12x12-unorm\",\n    \"astc-12x12-unorm-srgb\",\n};",
         "type": "enum",
         "name": "GPUTextureFormat",
         "values": [
@@ -3655,6 +3660,16 @@
             "type": "enum-value",
             "value": "r8sint",
             "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-r8sint"
+          },
+          {
+            "type": "enum-value",
+            "value": "r16unorm",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-r16unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "r16snorm",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-r16snorm"
           },
           {
             "type": "enum-value",
@@ -3705,6 +3720,16 @@
             "type": "enum-value",
             "value": "r32float",
             "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-r32float"
+          },
+          {
+            "type": "enum-value",
+            "value": "rg16unorm",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rg16unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "rg16snorm",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rg16snorm"
           },
           {
             "type": "enum-value",
@@ -3790,6 +3815,16 @@
             "type": "enum-value",
             "value": "rg32float",
             "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rg32float"
+          },
+          {
+            "type": "enum-value",
+            "value": "rgba16unorm",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgba16unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "rgba16snorm",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgba16snorm"
           },
           {
             "type": "enum-value",
@@ -5295,7 +5330,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpubindgroupdescriptor"
       },
       "GPUBindingResource": {
-        "fragment": "typedef (GPUSampler or GPUTextureView or GPUBufferBinding or GPUExternalTexture) GPUBindingResource;",
+        "fragment": "typedef (GPUSampler or\n         GPUTextureView or\n         GPUBuffer or\n         GPUBufferBinding or\n         GPUExternalTexture) GPUBindingResource;",
         "type": "typedef",
         "name": "GPUBindingResource",
         "idlType": {
@@ -5320,6 +5355,14 @@
               "nullable": false,
               "union": false,
               "idlType": "GPUTextureView"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUBuffer"
             },
             {
               "type": "typedef-type",
