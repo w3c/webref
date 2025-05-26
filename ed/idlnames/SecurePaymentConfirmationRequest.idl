@@ -7,6 +7,7 @@ dictionary SecurePaymentConfirmationRequest {
     unsigned long timeout;
     USVString payeeName;
     USVString payeeOrigin;
+    sequence<PaymentEntityLogo> paymentEntitiesLogos;
     AuthenticationExtensionsClientInputs extensions;
     sequence<USVString> locale;
     boolean showOptOut;

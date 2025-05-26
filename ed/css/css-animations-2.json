@@ -69,9 +69,9 @@
       ]
     },
     {
-      "name": "animation-trigger-type",
-      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-type",
-      "value": "<single-animation-trigger-type>#",
+      "name": "animation-trigger-behavior",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-behavior",
+      "value": "<single-animation-trigger-behavior>#",
       "initial": "once",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -83,35 +83,35 @@
         {
           "name": "once",
           "prose": "The animation is triggered and played once and only once.",
-          "href": "https://drafts.csswg.org/css-animations-2/#valdef-animation-trigger-type-once",
+          "href": "https://drafts.csswg.org/css-animations-2/#valdef-animation-trigger-behavior-once",
           "type": "value",
           "value": "once"
         },
         {
           "name": "repeat",
           "prose": "The animation is played from the beginning each time it is triggered. When the trigger’s active interval is exited the animation is reset.",
-          "href": "https://drafts.csswg.org/css-animations-2/#valdef-animation-trigger-type-repeat",
+          "href": "https://drafts.csswg.org/css-animations-2/#valdef-animation-trigger-behavior-repeat",
           "type": "value",
           "value": "repeat"
         },
         {
           "name": "alternate",
           "prose": "The animation is played forwards, according to its playback direction, each time it is triggered. When the trigger’s active interval is exited the animation is reversed.",
-          "href": "https://drafts.csswg.org/css-animations-2/#valdef-animation-trigger-type-alternate",
+          "href": "https://drafts.csswg.org/css-animations-2/#valdef-animation-trigger-behavior-alternate",
           "type": "value",
           "value": "alternate"
         },
         {
           "name": "state",
           "prose": "The animation is triggered and played once. When the trigger’s active interval is exited the animation is paused. When the trigger’s active interval is re-entered the animation is resumed.",
-          "href": "https://drafts.csswg.org/css-animations-2/#valdef-animation-trigger-type-state",
+          "href": "https://drafts.csswg.org/css-animations-2/#valdef-animation-trigger-behavior-state",
           "type": "value",
           "value": "state"
         }
       ],
       "styleDeclaration": [
-        "animation-trigger-type",
-        "animationTriggerType"
+        "animation-trigger-behavior",
+        "animationTriggerBehavior"
       ]
     },
     {
@@ -362,16 +362,16 @@
       "type": "type"
     },
     {
-      "name": "<single-animation-trigger-type>",
+      "name": "<single-animation-trigger-behavior>",
       "value": "once | repeat | alternate | state",
-      "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger-type",
+      "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger-behavior",
       "type": "type"
     },
     {
       "name": "<single-animation-trigger>",
       "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger",
       "type": "type",
-      "value": "<single-animation-trigger-type> || [ none | auto | [ [ <dashed-ident> | <scroll()> | <view()> ] [ normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]{0,4} ] ]"
+      "value": "<single-animation-trigger-behavior> || [ none | auto | [ [ <dashed-ident> | <scroll()> | <view()> ] [ normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]{0,4} ] ]"
     }
   ]
 }

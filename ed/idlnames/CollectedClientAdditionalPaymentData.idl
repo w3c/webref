@@ -4,6 +4,7 @@ dictionary CollectedClientAdditionalPaymentData {
     required USVString topOrigin;
     USVString payeeName;
     USVString payeeOrigin;
+    sequence<PaymentEntityLogo> paymentEntitiesLogos;
     required PaymentCurrencyAmount total;
     required PaymentCredentialInstrument instrument;
 };

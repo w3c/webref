@@ -6,7 +6,7 @@
       "title": "Secure Payment Confirmation",
       "url": "https://www.w3.org/TR/secure-payment-confirmation/"
     },
-    "fragment": "dictionary AuthenticationExtensionsPaymentInputs {\n  boolean isPayment;\n\n  // Only used for authentication.\n  USVString rpId;\n  USVString topOrigin;\n  USVString payeeName;\n  USVString payeeOrigin;\n  PaymentCurrencyAmount total;\n  PaymentCredentialInstrument instrument;\n};",
+    "fragment": "dictionary AuthenticationExtensionsPaymentInputs {\n  boolean isPayment;\n\n  // Only used for authentication.\n  USVString rpId;\n  USVString topOrigin;\n  USVString payeeName;\n  USVString payeeOrigin;\n  sequence<PaymentEntityLogo> paymentEntitiesLogos;\n  PaymentCurrencyAmount total;\n  PaymentCredentialInstrument instrument;\n};",
     "href": "https://w3c.github.io/secure-payment-confirmation/#dictdef-authenticationextensionspaymentinputs"
   },
   "extended": [],

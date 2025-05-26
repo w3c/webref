@@ -1,7 +1,7 @@
 // Source: Web Animations Level 2 (https://www.w3.org/TR/web-animations-2/)
 dictionary AnimationTriggerOptions {
   AnimationTimeline? timeline;
-  AnimationTriggerType? type = "once";
+  AnimationTriggerBehavior? behavior = "once";
   (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeStart = "normal";
   (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeEnd = "normal";
   (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) exitRangeStart = "auto";

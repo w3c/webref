@@ -3,7 +3,7 @@
 interface AnimationTrigger {
   constructor(optional AnimationTriggerOptions options = {});
   attribute AnimationTimeline timeline;
-  attribute AnimationTriggerType type;
+  attribute AnimationTriggerBehavior behavior;
   attribute any rangeStart;
   attribute any rangeEnd;
   attribute any exitRangeStart;

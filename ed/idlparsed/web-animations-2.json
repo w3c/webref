@@ -700,7 +700,7 @@
         "href": "https://drafts.csswg.org/web-animations-2/#dictdef-animationplaybackeventinit"
       },
       "AnimationTrigger": {
-        "fragment": "[Exposed=Window]\ninterface AnimationTrigger {\n  constructor(optional AnimationTriggerOptions options = {});\n  attribute AnimationTimeline timeline;\n  attribute AnimationTriggerType type;\n  attribute any rangeStart;\n  attribute any rangeEnd;\n  attribute any exitRangeStart;\n  attribute any exitRangeEnd;\n};",
+        "fragment": "[Exposed=Window]\ninterface AnimationTrigger {\n  constructor(optional AnimationTriggerOptions options = {});\n  attribute AnimationTimeline timeline;\n  attribute AnimationTriggerBehavior behavior;\n  attribute any rangeStart;\n  attribute any rangeEnd;\n  attribute any exitRangeStart;\n  attribute any exitRangeEnd;\n};",
         "type": "interface",
         "name": "AnimationTrigger",
         "inheritance": null,
@@ -748,19 +748,19 @@
           },
           {
             "type": "attribute",
-            "name": "type",
+            "name": "behavior",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AnimationTriggerType"
+              "idlType": "AnimationTriggerBehavior"
             },
             "extAttrs": [],
             "special": "",
             "readonly": false,
-            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtrigger-type"
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtrigger-behavior"
           },
           {
             "type": "attribute",
@@ -842,7 +842,7 @@
         "href": "https://drafts.csswg.org/web-animations-2/#animationtrigger"
       },
       "AnimationTriggerOptions": {
-        "fragment": "dictionary AnimationTriggerOptions {\n  AnimationTimeline? timeline;\n  AnimationTriggerType? type = \"once\";\n  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeStart = \"normal\";\n  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeEnd = \"normal\";\n  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) exitRangeStart = \"auto\";\n  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) exitRangeEnd = \"auto\";\n};",
+        "fragment": "dictionary AnimationTriggerOptions {\n  AnimationTimeline? timeline;\n  AnimationTriggerBehavior? behavior = \"once\";\n  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeStart = \"normal\";\n  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeEnd = \"normal\";\n  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) exitRangeStart = \"auto\";\n  (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) exitRangeEnd = \"auto\";\n};",
         "type": "dictionary",
         "name": "AnimationTriggerOptions",
         "inheritance": null,
@@ -865,7 +865,7 @@
           },
           {
             "type": "field",
-            "name": "type",
+            "name": "behavior",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -873,14 +873,14 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "AnimationTriggerType"
+              "idlType": "AnimationTriggerBehavior"
             },
             "default": {
               "type": "string",
               "value": "once"
             },
             "required": false,
-            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-type"
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-behavior"
           },
           {
             "type": "field",
@@ -1095,34 +1095,34 @@
         "partial": false,
         "href": "https://drafts.csswg.org/web-animations-2/#dictdef-animationtriggeroptions"
       },
-      "AnimationTriggerType": {
-        "fragment": "enum AnimationTriggerType { \"once\", \"repeat\", \"alternate\", \"state\" };",
+      "AnimationTriggerBehavior": {
+        "fragment": "enum AnimationTriggerBehavior { \"once\", \"repeat\", \"alternate\", \"state\" };",
         "type": "enum",
-        "name": "AnimationTriggerType",
+        "name": "AnimationTriggerBehavior",
         "values": [
           {
             "type": "enum-value",
             "value": "once",
-            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggertype-once"
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggerbehavior-once"
           },
           {
             "type": "enum-value",
             "value": "repeat",
-            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggertype-repeat"
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggerbehavior-repeat"
           },
           {
             "type": "enum-value",
             "value": "alternate",
-            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggertype-alternate"
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggerbehavior-alternate"
           },
           {
             "type": "enum-value",
             "value": "state",
-            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggertype-state"
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggerbehavior-state"
           }
         ],
         "extAttrs": [],
-        "href": "https://drafts.csswg.org/web-animations-2/#enumdef-animationtriggertype"
+        "href": "https://drafts.csswg.org/web-animations-2/#enumdef-animationtriggerbehavior"
       }
     },
     "idlExtendedNames": {
@@ -1966,11 +1966,11 @@
       "AnimationTrigger": [
         "AnimationTriggerOptions",
         "AnimationTimeline",
-        "AnimationTriggerType"
+        "AnimationTriggerBehavior"
       ],
       "AnimationTriggerOptions": [
         "AnimationTimeline",
-        "AnimationTriggerType",
+        "AnimationTriggerBehavior",
         "TimelineRangeOffset",
         "CSSNumericValue",
         "CSSKeywordValue"

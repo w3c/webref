@@ -756,10 +756,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "animation-trigger-type",
-      "href": "https://drafts.csswg.org/web-animations-2/#animation-trigger-type",
+      "id": "did-trigger",
+      "href": "https://drafts.csswg.org/web-animations-2/#did-trigger",
       "linkingText": [
-        "animation trigger type"
+        "did trigger"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -767,9 +767,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "trigger-types",
-        "href": "https://drafts.csswg.org/web-animations-2/#trigger-types",
-        "title": "Animation Trigger Types",
+        "id": "trigger-state",
+        "href": "https://drafts.csswg.org/web-animations-2/#trigger-state",
+        "title": "Animation Trigger Internal State",
         "number": "4.6.2"
       },
       "definedIn": "prose"
@@ -788,8 +788,8 @@
       "heading": {
         "id": "trigger-state",
         "href": "https://drafts.csswg.org/web-animations-2/#trigger-state",
-        "title": "Animation Trigger State",
-        "number": "4.6.3"
+        "title": "Animation Trigger Internal State",
+        "number": "4.6.2"
       },
       "definedIn": "prose"
     },
@@ -809,8 +809,8 @@
       "heading": {
         "id": "trigger-state",
         "href": "https://drafts.csswg.org/web-animations-2/#trigger-state",
-        "title": "Animation Trigger State",
-        "number": "4.6.3"
+        "title": "Animation Trigger Internal State",
+        "number": "4.6.2"
       },
       "definedIn": "dt"
     },
@@ -830,8 +830,8 @@
       "heading": {
         "id": "trigger-state",
         "href": "https://drafts.csswg.org/web-animations-2/#trigger-state",
-        "title": "Animation Trigger State",
-        "number": "4.6.3"
+        "title": "Animation Trigger Internal State",
+        "number": "4.6.2"
       },
       "definedIn": "dt"
     },
@@ -851,10 +851,29 @@
       "heading": {
         "id": "trigger-state",
         "href": "https://drafts.csswg.org/web-animations-2/#trigger-state",
-        "title": "Animation Trigger State",
-        "number": "4.6.3"
+        "title": "Animation Trigger Internal State",
+        "number": "4.6.2"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "animation-trigger-behavior",
+      "href": "https://drafts.csswg.org/web-animations-2/#animation-trigger-behavior",
+      "linkingText": [
+        "animation trigger behavior"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "trigger-behaviors",
+        "href": "https://drafts.csswg.org/web-animations-2/#trigger-behaviors",
+        "title": "Animation Trigger Behavior",
+        "number": "4.6.3"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "animation-trigger-active-interval",
@@ -3072,10 +3091,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-animationtrigger-type",
-      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtrigger-type",
+      "id": "dom-animationtrigger-behavior",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtrigger-behavior",
       "linkingText": [
-        "type"
+        "behavior"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -3217,10 +3236,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-animationtriggeroptions-type",
-      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-type",
+      "id": "dom-animationtriggeroptions-behavior",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-behavior",
       "linkingText": [
-        "type"
+        "behavior"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -3322,10 +3341,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "enumdef-animationtriggertype",
-      "href": "https://drafts.csswg.org/web-animations-2/#enumdef-animationtriggertype",
+      "id": "enumdef-animationtriggerbehavior",
+      "href": "https://drafts.csswg.org/web-animations-2/#enumdef-animationtriggerbehavior",
       "linkingText": [
-        "AnimationTriggerType"
+        "AnimationTriggerBehavior"
       ],
       "localLinkingText": [],
       "type": "enum",
@@ -3333,16 +3352,16 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-animationtriggertype-enumeration",
-        "href": "https://drafts.csswg.org/web-animations-2/#the-animationtriggertype-enumeration",
-        "title": "The AnimationTriggerType enumeration",
+        "id": "the-animationtriggerbehavior-enumeration",
+        "href": "https://drafts.csswg.org/web-animations-2/#the-animationtriggerbehavior-enumeration",
+        "title": "The AnimationTriggerBehavior enumeration",
         "number": "5.18"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-animationtriggertype-once",
-      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggertype-once",
+      "id": "dom-animationtriggerbehavior-once",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggerbehavior-once",
       "linkingText": [
         "\"once\"",
         "once"
@@ -3350,21 +3369,21 @@
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "AnimationTriggerType"
+        "AnimationTriggerBehavior"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-animationtriggertype-enumeration",
-        "href": "https://drafts.csswg.org/web-animations-2/#the-animationtriggertype-enumeration",
-        "title": "The AnimationTriggerType enumeration",
+        "id": "the-animationtriggerbehavior-enumeration",
+        "href": "https://drafts.csswg.org/web-animations-2/#the-animationtriggerbehavior-enumeration",
+        "title": "The AnimationTriggerBehavior enumeration",
         "number": "5.18"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-animationtriggertype-repeat",
-      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggertype-repeat",
+      "id": "dom-animationtriggerbehavior-repeat",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggerbehavior-repeat",
       "linkingText": [
         "\"repeat\"",
         "repeat"
@@ -3372,21 +3391,21 @@
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "AnimationTriggerType"
+        "AnimationTriggerBehavior"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-animationtriggertype-enumeration",
-        "href": "https://drafts.csswg.org/web-animations-2/#the-animationtriggertype-enumeration",
-        "title": "The AnimationTriggerType enumeration",
+        "id": "the-animationtriggerbehavior-enumeration",
+        "href": "https://drafts.csswg.org/web-animations-2/#the-animationtriggerbehavior-enumeration",
+        "title": "The AnimationTriggerBehavior enumeration",
         "number": "5.18"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-animationtriggertype-alternate",
-      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggertype-alternate",
+      "id": "dom-animationtriggerbehavior-alternate",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggerbehavior-alternate",
       "linkingText": [
         "\"alternate\"",
         "alternate"
@@ -3394,21 +3413,21 @@
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "AnimationTriggerType"
+        "AnimationTriggerBehavior"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-animationtriggertype-enumeration",
-        "href": "https://drafts.csswg.org/web-animations-2/#the-animationtriggertype-enumeration",
-        "title": "The AnimationTriggerType enumeration",
+        "id": "the-animationtriggerbehavior-enumeration",
+        "href": "https://drafts.csswg.org/web-animations-2/#the-animationtriggerbehavior-enumeration",
+        "title": "The AnimationTriggerBehavior enumeration",
         "number": "5.18"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-animationtriggertype-state",
-      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggertype-state",
+      "id": "dom-animationtriggerbehavior-state",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtriggerbehavior-state",
       "linkingText": [
         "\"state\"",
         "state"
@@ -3416,14 +3435,14 @@
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "AnimationTriggerType"
+        "AnimationTriggerBehavior"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-animationtriggertype-enumeration",
-        "href": "https://drafts.csswg.org/web-animations-2/#the-animationtriggertype-enumeration",
-        "title": "The AnimationTriggerType enumeration",
+        "id": "the-animationtriggerbehavior-enumeration",
+        "href": "https://drafts.csswg.org/web-animations-2/#the-animationtriggerbehavior-enumeration",
+        "title": "The AnimationTriggerBehavior enumeration",
         "number": "5.18"
       },
       "definedIn": "dt"
