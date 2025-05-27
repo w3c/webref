@@ -17,7 +17,9 @@
       ]
     },
     {
-      "html": "This algorithm accepts a string, and returns a set of hash expressions whose\n  hash functions are understood by the user agent.",
+      "name": "parse metadata",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#parse-metadata",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-metadata\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse metadata</dfn> given a string <var>metadata</var>, run the following steps:",
       "rationale": "let",
       "steps": [
         {
@@ -62,7 +64,9 @@
       ]
     },
     {
-      "html": "This algorithm accepts a string, and returns a set of hash expressions whose\n  hash functions are understood by the user agent.",
+      "name": "parse metadata",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#parse-metadata",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-metadata\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse metadata</dfn> given a string <var>metadata</var>, run the following steps:",
       "rationale": "let",
       "steps": [
         {
@@ -122,11 +126,13 @@
       ]
     },
     {
-      "html": "This algorithm accepts a string, and returns a set of hash expressions whose\n  hash functions are understood by the user agent.",
+      "name": "parse metadata",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#parse-metadata",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-metadata\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse metadata</dfn> given a string <var>metadata</var>, run the following steps:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>parsedMetadata</var> be the result of <a href=\"https://w3c.github.io/webappsec-subresource-integrity/#parse-metadata\">parsing <var>metadataList</var></a>.</p>"
+          "html": "<p>Let <var>parsedMetadata</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#parse-metadata\" id=\"ref-for-parse-metadata\">parsing <var>metadataList</var></a>.</p>"
         },
         {
           "html": "<p>If <var>parsedMetadata</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is empty</a> set, return <code>true</code>.</p>"
@@ -222,7 +228,10 @@
           "html": "<p>Let <var>policyContainer</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container\">policy container</a>.</p>"
         },
         {
-          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#integrity-metadata\" id=\"ref-for-integrity-metadata⑦\">integrity metadata</a> is not the empty string\n and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a> is either \"<code>cors</code>\" or \"<code>same-origin</code>\",\n return \"Allowed\".</p>"
+          "html": "<p>Let <var>parsedMetadata</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#parse-metadata\" id=\"ref-for-parse-metadata①\">parse metadata</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-integrity-metadata\" id=\"ref-for-concept-request-integrity-metadata\">integrity metadata</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>parsedMetadata</var> is not the empty set and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a> is either \"<code>cors</code>\" or \"<code>same-origin</code>\",\n return \"Allowed\".</p>"
         },
         {
           "html": "<p>Let <var>policy</var> be <var>policyContainer</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#integrity-policy\" id=\"ref-for-integrity-policy①\">integrity policy</a>.</p>"
