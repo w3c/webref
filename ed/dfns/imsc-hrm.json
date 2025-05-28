@@ -1,0 +1,586 @@
+{
+  "spec": {
+    "title": "IMSC Hypothetical Render Model",
+    "url": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html"
+  },
+  "dfns": [
+    {
+      "id": "dfn-character",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-character",
+      "linkingText": [
+        "character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#terms",
+        "title": "Terms and Definitions",
+        "alternateIds": [
+          "x3-terms-and-definitions"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-code-point",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-code-point",
+      "linkingText": [
+        "code point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#terms",
+        "title": "Terms and Definitions",
+        "alternateIds": [
+          "x3-terms-and-definitions"
+        ],
+        "number": "3"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-empty-isd",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-empty-isd",
+      "linkingText": [
+        "empty ISD"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#terms",
+        "title": "Terms and Definitions",
+        "alternateIds": [
+          "x3-terms-and-definitions"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-non-empty-isd",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-non-empty-isd",
+      "linkingText": [
+        "non-empty ISD"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#terms",
+        "title": "Terms and Definitions",
+        "alternateIds": [
+          "x3-terms-and-definitions"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-error",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#terms",
+        "title": "Terms and Definitions",
+        "alternateIds": [
+          "x3-terms-and-definitions"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-grapheme",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-grapheme",
+      "linkingText": [
+        "grapheme"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#terms",
+        "title": "Terms and Definitions",
+        "alternateIds": [
+          "x3-terms-and-definitions"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-intermediate-synchronic-document",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-intermediate-synchronic-document",
+      "linkingText": [
+        "Intermediate Synchronic Document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#terms",
+        "title": "Terms and Definitions",
+        "alternateIds": [
+          "x3-terms-and-definitions"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-imsc-document-instance",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-imsc-document-instance",
+      "linkingText": [
+        "IMSC Document Instance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#terms",
+        "title": "Terms and Definitions",
+        "alternateIds": [
+          "x3-terms-and-definitions"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-presentation-processor",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-presentation-processor",
+      "linkingText": [
+        "presentation processor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#terms",
+        "title": "Terms and Definitions",
+        "alternateIds": [
+          "x3-terms-and-definitions"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-presented-region",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-presented-region",
+      "linkingText": [
+        "presented region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#terms",
+        "title": "Terms and Definitions",
+        "alternateIds": [
+          "x3-terms-and-definitions"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-related-video-object",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-related-video-object",
+      "linkingText": [
+        "Related Video Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#terms",
+        "title": "Terms and Definitions",
+        "alternateIds": [
+          "x3-terms-and-definitions"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-root-container-region",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-root-container-region",
+      "linkingText": [
+        "Root Container Region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#terms",
+        "title": "Terms and Definitions",
+        "alternateIds": [
+          "x3-terms-and-definitions"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-presentation-compositor",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-presentation-compositor",
+      "linkingText": [
+        "Presentation Compositor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "sec-architecture",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#sec-architecture",
+        "title": "Architecture",
+        "alternateIds": [
+          "x6-architecture"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-ipd",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-ipd",
+      "linkingText": [
+        "IPD",
+        "Initial Painting Delay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hypothetical-render-model-general",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#hypothetical-render-model-general",
+        "title": "Algorithm",
+        "alternateIds": [
+          "x7-algorithm"
+        ],
+        "number": "7"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-bdraw",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-bdraw",
+      "linkingText": [
+        "BDraw",
+        "Normalized background drawing performance factor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hypothetical-render-model-general",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#hypothetical-render-model-general",
+        "title": "Algorithm",
+        "alternateIds": [
+          "x7-algorithm"
+        ],
+        "number": "7"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-s",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-s",
+      "linkingText": [
+        "S"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "paint-regions",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#paint-regions",
+        "title": "Paint Regions",
+        "alternateIds": [
+          "x8-paint-regions"
+        ],
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-clear",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-clear",
+      "linkingText": [
+        "CLEAR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "paint-regions",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#paint-regions",
+        "title": "Paint Regions",
+        "alternateIds": [
+          "x8-paint-regions"
+        ],
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-paint",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-paint",
+      "linkingText": [
+        "PAINT"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "paint-regions",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#paint-regions",
+        "title": "Paint Regions",
+        "alternateIds": [
+          "x8-paint-regions"
+        ],
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-nsize",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-nsize",
+      "linkingText": [
+        "NSIZE"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "paint-regions",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#paint-regions",
+        "title": "Paint Regions",
+        "alternateIds": [
+          "x8-paint-regions"
+        ],
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-nbg",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-nbg",
+      "linkingText": [
+        "NBG"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "paint-regions",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#paint-regions",
+        "title": "Paint Regions",
+        "alternateIds": [
+          "x8-paint-regions"
+        ],
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-glyph",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-glyph",
+      "linkingText": [
+        "glyph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "paint-text",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#paint-text",
+        "title": "Paint Text",
+        "alternateIds": [
+          "x9-paint-text"
+        ],
+        "number": "9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-durt",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-durt",
+      "linkingText": [
+        "DURT"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "paint-text",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#paint-text",
+        "title": "Paint Text",
+        "alternateIds": [
+          "x9-paint-text"
+        ],
+        "number": "9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-nrga-gj",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-nrga-gj",
+      "linkingText": [
+        "NRGA(gj)",
+        "NRGA(gi)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "paint-text",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#paint-text",
+        "title": "Paint Text",
+        "alternateIds": [
+          "x9-paint-text"
+        ],
+        "number": "9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-gcpy",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-gcpy",
+      "linkingText": [
+        "GCpy",
+        "Normalized glyph copy performance factor (GCpy)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "paint-text",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#paint-text",
+        "title": "Paint Text",
+        "alternateIds": [
+          "x9-paint-text"
+        ],
+        "number": "9"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-ren",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-ren",
+      "linkingText": [
+        "Ren",
+        "Text rendering performance factor Ren(Gi)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "paint-text",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#paint-text",
+        "title": "Paint Text",
+        "alternateIds": [
+          "x9-paint-text"
+        ],
+        "number": "9"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-ngbs",
+      "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-ngbs",
+      "linkingText": [
+        "NGBS",
+        "Normalized Glyph Cache Size (NGBS)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "paint-text",
+        "href": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#paint-text",
+        "title": "Paint Text",
+        "alternateIds": [
+          "x9-paint-text"
+        ],
+        "number": "9"
+      },
+      "definedIn": "table"
+    }
+  ]
+}
