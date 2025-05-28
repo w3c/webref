@@ -9,6 +9,19 @@
         "format": "fire an event phrasing",
         "href": "https://webaudio.github.io/web-speech-api/#ref-for-concept-event-fire"
       },
+      "href": "https://webaudio.github.io/web-speech-api/#ref-for-concept-event-fire",
+      "type": "error",
+      "targets": [
+        "SpeechRecognition",
+        "SpeechSynthesisUtterance"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://webaudio.github.io/web-speech-api/#ref-for-concept-event-fire%E2%91%A0"
+      },
       "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-start",
       "type": "start",
       "targets": [
@@ -97,26 +110,6 @@
       "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-nomatch"
     },
     {
-      "type": "error",
-      "targets": [
-        "SpeechRecognition"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      },
-      "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-error"
-    },
-    {
-      "type": "error",
-      "targets": [
-        "SpeechSynthesisUtterance"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      },
-      "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-error"
-    },
-    {
       "type": "end",
       "targets": [
         "SpeechRecognition"
@@ -187,6 +180,17 @@
       "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-boundary"
     },
     {
+      "type": "error",
+      "targets": [
+        "SpeechRecognition"
+      ],
+      "src": {
+        "format": "dfn",
+        "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-error"
+      },
+      "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-error"
+    },
+    {
       "type": "start",
       "targets": [
         "SpeechSynthesisUtterance"
@@ -196,6 +200,17 @@
         "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-start"
       },
       "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-start"
+    },
+    {
+      "type": "error",
+      "targets": [
+        "SpeechSynthesisUtterance"
+      ],
+      "src": {
+        "format": "dfn",
+        "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-error"
+      },
+      "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-error"
     }
   ]
 }
