@@ -9,6 +9,19 @@
         "format": "fire an event phrasing",
         "href": "https://webaudio.github.io/web-speech-api/#ref-for-concept-event-fire"
       },
+      "href": "https://webaudio.github.io/web-speech-api/#ref-for-concept-event-fire",
+      "type": "error",
+      "targets": [
+        "SpeechRecognition",
+        "SpeechSynthesisUtterance"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://webaudio.github.io/web-speech-api/#ref-for-concept-event-fire%E2%91%A0"
+      },
       "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-start",
       "type": "start",
       "targets": [
@@ -105,28 +118,6 @@
       "interface": "SpeechRecognitionEvent"
     },
     {
-      "type": "error",
-      "targets": [
-        "SpeechRecognition"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      },
-      "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-error",
-      "interface": "SpeechRecognitionErrorEvent"
-    },
-    {
-      "type": "error",
-      "targets": [
-        "SpeechSynthesisUtterance"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      },
-      "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-error",
-      "interface": "SpeechSynthesisErrorEvent"
-    },
-    {
       "type": "end",
       "targets": [
         "SpeechRecognition"
@@ -204,6 +195,18 @@
       "interface": "SpeechSynthesisEvent"
     },
     {
+      "type": "error",
+      "targets": [
+        "SpeechRecognition"
+      ],
+      "src": {
+        "format": "dfn",
+        "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-error"
+      },
+      "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-error",
+      "interface": "SpeechRecognitionErrorEvent"
+    },
+    {
       "type": "start",
       "targets": [
         "SpeechSynthesisUtterance"
@@ -214,6 +217,18 @@
       },
       "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-start",
       "interface": "SpeechSynthesisEvent"
+    },
+    {
+      "type": "error",
+      "targets": [
+        "SpeechSynthesisUtterance"
+      ],
+      "src": {
+        "format": "dfn",
+        "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-error"
+      },
+      "href": "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-error",
+      "interface": "SpeechSynthesisErrorEvent"
     }
   ]
 }

@@ -9050,7 +9050,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucommandencoderdescriptor"
       },
       "GPUBindingCommandsMixin": {
-        "fragment": "interface mixin GPUBindingCommandsMixin {\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup? bindGroup,\n        optional sequence<GPUBufferDynamicOffset> dynamicOffsets = []);\n\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup? bindGroup,\n        Uint32Array dynamicOffsetsData,\n        GPUSize64 dynamicOffsetsDataStart,\n        GPUSize32 dynamicOffsetsDataLength);\n};",
+        "fragment": "interface mixin GPUBindingCommandsMixin {\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup? bindGroup,\n        optional sequence<GPUBufferDynamicOffset> dynamicOffsets = []);\n\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup? bindGroup,\n        [AllowShared] Uint32Array dynamicOffsetsData,\n        GPUSize64 dynamicOffsetsDataStart,\n        GPUSize32 dynamicOffsetsDataLength);\n};",
         "type": "interface mixin",
         "name": "GPUBindingCommandsMixin",
         "inheritance": null,
@@ -9179,7 +9179,14 @@
               {
                 "type": "argument",
                 "name": "dynamicOffsetsData",
-                "extAttrs": [],
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "AllowShared",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],

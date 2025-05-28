@@ -8,7 +8,7 @@ interface SpeechRecognition : EventTarget {
     attribute boolean continuous;
     attribute boolean interimResults;
     attribute unsigned long maxAlternatives;
-    attribute SpeechRecognitionMode mode;
+    attribute boolean processLocally;
     attribute SpeechRecognitionPhraseList phrases;
 
     // methods to drive the speech interaction
@@ -16,8 +16,8 @@ interface SpeechRecognition : EventTarget {
     undefined start(MediaStreamTrack audioTrack);
     undefined stop();
     undefined abort();
-    static Promise<AvailabilityStatus> availableOnDevice(DOMString lang);
-    static Promise<boolean> installOnDevice(DOMString lang);
+    static Promise<AvailabilityStatus> available(SpeechRecognitionOptions options);
+    static Promise<boolean> install(SpeechRecognitionOptions options);
 
     // event methods
     attribute EventHandler onaudiostart;
