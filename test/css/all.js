@@ -14,6 +14,7 @@ import { fileURLToPath } from 'node:url';
 import css from '@webref/css';
 import index from '../../curated/index.json' with { type: 'json' };
 import { definitionSyntax } from 'css-tree';
+import { study } from 'strudy';
 
 const scriptPath = path.dirname(fileURLToPath(import.meta.url));
 const curatedFolder = path.join(scriptPath, '..', '..', 'curated', 'css');
@@ -28,6 +29,19 @@ const cssValues = [
   { type: 'value space', prop: 'values', value: 'value' }
 ];
 
+// CSS anomalies that are not currently enforced
+const ignorableAnomalies = [
+  // Some of the anomalies reported are (at least temporarily) false positives,
+  // e.g., when the unscoped dfn is in a spec that has not yet been published
+  // to /TR. Ignoring for now.
+  'cssScoped'
+];
+
+function writeAnomalies(report) {
+  return 'CSS anomalies found:\n' +
+    report.map(anomaly => anomaly.content).join('\n');
+}
+
 describe(`The curated view of CSS extracts`, async () => {
   let all;
   try {
@@ -35,11 +49,27 @@ describe(`The curated view of CSS extracts`, async () => {
   } catch (err) {
     it('contains valid JSON data', () => {throw err;});
   }
-  const baseProperties = {};
-  const basePropertiesInDeltaSpecs = {};
-  const extendedProperties = {};
-  const selectors = {};
-  const valuespaces = {};
+
+  it('passes Strudy\'s scrutiny', async function () {
+    const crawl = [];
+    for (const [shortname, css] of Object.entries(all)) {
+      const spec = index.results.find(s =>
+        s.shortname === shortname ||
+        s.series.shortname === shortname);
+      crawl.push({
+        shortname,
+        series: spec.series,
+        title: shortname,
+        crawled: '',
+        css
+      });
+    }
+    const studyOptions = { what: ['css'], structure: 'flat' };
+    const report = await study(crawl, studyOptions);
+    const results = report.results
+      .filter(anomaly => !ignorableAnomalies.includes(anomaly.name));
+    assert.equal(results.length, 0, writeAnomalies(results));
+  });
 
   for (const [shortname, data] of Object.entries(all)) {
     describe(`The CSS extract for ${shortname} in the curated view`, () => {
@@ -53,36 +83,6 @@ describe(`The curated view of CSS extracts`, async () => {
       for (const { type, prop, value } of cssValues) {
         for (const desc of data[prop]) {
           const name = desc.name;
-          if ((type === 'property') && (spec.seriesComposition !== 'delta') && !desc.newValues) {
-            if (!baseProperties[name]) {
-              baseProperties[name] = [];
-            }
-            baseProperties[name].push({ spec: data.spec, dfn: desc });
-          }
-          else if ((type === 'property') && (spec.seriesComposition === 'delta') && !desc.newValues) {
-            if (!basePropertiesInDeltaSpecs[name]) {
-              basePropertiesInDeltaSpecs[name] = [];
-            }
-            basePropertiesInDeltaSpecs[name].push({ spec: data.spec, dfn: desc });
-          }
-          else if ((type === 'extended property') && desc[value]) {
-            if (!extendedProperties[name]) {
-              extendedProperties[name] = [];
-            }
-            extendedProperties[name].push({ spec: data.spec, dfn: desc });
-          }
-          else if ((type === 'selector') && (spec.seriesComposition !== 'delta')) {
-            if (!selectors[name]) {
-              selectors[name] = [];
-            }
-            selectors[name].push({ spec: data.spec, dfn: desc });
-          }
-          else if ((type === 'value space') && (spec.seriesComposition !== 'delta')) {
-            if (!valuespaces[name]) {
-              valuespaces[name] = [];
-            }
-            valuespaces[name].push({ spec: data.spec, dfn: desc });
-          }
           if (!desc[value]) {
             continue;
           }
@@ -106,23 +106,6 @@ describe(`The curated view of CSS extracts`, async () => {
             });
           };
 
-          // All CSS values should link back to the spec, except:
-          // - properties that extend a base property
-          // - at-rulesdefined elsewhere (and present only because the spec
-          // defines new descriptors for them)
-          // - properties in delta specs that completely override the base
-          // definition - currently enforced more restrictively as
-          // "the 'contain' property in css-contain-3", to better track such
-          // occurrences that should remain an exception to the exception rule!
-          if (!desc.newValues &&
-              (prop !== 'atrules' || desc.value || desc.prose) &&
-              !(prop === 'properties' && name === 'contain' && spec.shortname === 'css-contain-3')) {
-            it(`has a link back to the spec for ${type} "${name}"`, () => {
-              assert(desc.href);
-              assert(desc.href.includes('#'));
-            });
-          }
-
           if (desc.values) {
             for (const value of desc.values) {
               if (!value.value) {
@@ -134,52 +117,10 @@ describe(`The curated view of CSS extracts`, async () => {
                   assert(ast.type);
                 }, `Invalid definition value: ${value.value}`);
               });
-
-              it(`has a link back to the spec for value "${value.name}" for ${type} "${name}"`, () => {
-                assert(value.href);
-                assert(value.href.includes('#'));
-              });
             }
           }
         }
       }
     });
   }
-
-  describe(`Looking at CSS properties, the curated view`, () => {
-    for (const [name, dfns] of Object.entries(baseProperties)) {
-      it(`contains only one "${name}" property definition`, () => {
-        assert.strictEqual(dfns.length, 1,
-			   `defined in ${dfns.map(d => d.spec.title).join(', ')} (${dfns.map(d => d.spec.url).join(', ')})`);
-      });
-    }
-  });
-
-  describe(`Looking at CSS selectors, the curated view`, () => {
-    for (const [name, dfns] of Object.entries(selectors)) {
-      it(`contains only one "${name}" selector definition`, () => {
-        assert.strictEqual(dfns.length, 1,
-			   `defined in ${dfns.map(d => d.spec.title).join(', ')} (${dfns.map(d => d.spec.url).join(', ')})`);
-      });
-    }
-  });
-
-
-  describe(`Looking at extended CSS properties, the curated view`, () => {
-    for (const [name, dfns] of Object.entries(extendedProperties)) {
-      it(`contains a base definition for the "${name}" property`, () => {
-        assert(baseProperties[name] || basePropertiesInDeltaSpecs[name], 'no base definition found');
-      });
-    }
-  });
-
-  describe(`Looking at CSS valuespaces, the curated view`, () => {
-    for (const [name, dfns] of Object.entries(valuespaces)) {
-      it(`contains only one "${name}" valuespace definition`, () => {
-        assert.strictEqual(dfns.length, 1,
-			   `defined in ${dfns.map(d => d.spec.title).join(', ')} (${dfns.map(d => d.spec.url).join(', ')})`);
-      });
-    }
-  });
-
 });

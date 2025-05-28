@@ -164,13 +164,6 @@ async function dropCSSPropertyDuplicates(folder) {
 
   function filterSuperseded(spec, specs, type, name) {
     const shortname = spec.series.shortname;
-    if ((spec.seriesComposition === 'delta') &&
-        specs.find(s => s !== spec && s.series.shortname === shortname)) {
-      // Property name both defined in delta spec and in base full spec,
-      // let's ignore the duplication.
-      return false;
-    }
-
     const superseding = [supersededBy[shortname]].flat();
     if (superseding[0] === '*' ||
         specs.find(s => superseding.includes(s.series.shortname))) {
@@ -178,6 +171,13 @@ async function dropCSSPropertyDuplicates(folder) {
       // drop the property definition from the current spec
       spec.css[type] = spec.css[type].filter(dfn => dfn.name !== name);
       spec.needsSaving = true;
+      return false;
+    }
+
+    if ((spec.seriesComposition === 'delta') &&
+        specs.find(s => s !== spec && s.series.shortname === shortname)) {
+      // Property name both defined in delta spec and in base full spec,
+      // let's ignore the duplication
       return false;
     }
     return true;
