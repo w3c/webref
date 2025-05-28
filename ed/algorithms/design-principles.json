@@ -1,0 +1,38 @@
+{
+  "spec": {
+    "title": "Web Platform Design Principles",
+    "url": "https://w3ctag.github.io/design-principles/"
+  },
+  "algorithms": [
+    {
+      "html": "Wikipedia also describes some <a href=\"https://en.wikipedia.org/wiki/Monkey_patch#Pitfalls\">additional pitfalls of monkey patching</a>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>In your spec, clearly mark the monkey patch as a proposed change to another specification that is only temporarily in this specification, using language like:</p>"
+        },
+        {
+          "html": "<p>Identify the place you want to change using a quote from its text or by linking to a defined term if you’re replacing that term’s whole definition. Include the current step numbers if you’re changing something that’s numbered, but remember that numbers aren’t sufficient by themselves because they change when other steps are added or removed. If you’re changing several places within a definition, it can be helpful to paste the entire definition into a <code>&lt;blockquote&gt;</code> and use <code>&lt;ins&gt;</code> and <code>&lt;del&gt;</code> to describe what’s changing.</p>"
+        },
+        {
+          "html": "<p>Keep monkey patches short. If you’re modifying an algorithm by adding more than a couple of steps, define a separate, self-contained algorithm in your specification, and have the monkey patch call the new algorithm.</p>"
+        },
+        {
+          "html": "<p>If you’re replacing or adding steps in an algorithm, write the new steps so an editor can paste them verbatim into the upstream algorithm. This implies that control flow like \"return\" or \"abort\" will return or abort from the whole upstream algorithm, not just the monkey patched section.</p>"
+        },
+        {
+          "html": "<p>Once your feature has been reviewed within your own community, and there seems to be consensus that it’s a good idea, file an issue against the existing specification that asks the upstream community to review your monkey patch. This community may suggest better ways to accomplish your goals. Take them seriously. They might also be able to tell you how to hook into an existing extension point or quickly create one so that you can remove your monkey patch sooner than you expected.</p>"
+        },
+        {
+          "html": "<p>Update the <code>&lt;p class=\"issue\"&gt;</code> block mentioned above to point to the issue you filed against the upstream specification.</p>"
+        },
+        {
+          "html": "<p>When your work has enough support to merge into the upstream specification, work with that specification’s maintainers to do so.</p>"
+        },
+        {
+          "html": "<p>Once the existing specification has integrated your monkey patch, remove the monkey patch from your specification.</p>"
+        }
+      ]
+    }
+  ]
+}

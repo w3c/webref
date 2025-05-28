@@ -1,0 +1,38 @@
+{
+  "spec": {
+    "title": "IMSC Hypothetical Render Model",
+    "url": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html"
+  },
+  "algorithms": [
+    {
+      "html": "Each successive <a href=\"https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-non-empty-isd\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-non-empty-isd-7\">non-empty ISD</a> E<sub>n</sub> is rendered by the <a href=\"https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-presentation-compositor\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-compositor-2\">Presentation Compositor</a> using the\n      following steps in order:",
+      "rationale": "clear",
+      "steps": [
+        {
+          "html": "clear the pixels of the entire <a href=\"https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-root-container-region\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-root-container-region-2\">Root Container Region</a>;"
+        },
+        {
+          "html": "paint, according to stacking order, all background pixels for each region;"
+        },
+        {
+          "html": "paint all pixels for background colors associated with the text subtitle content; and"
+        },
+        {
+          "html": "paint the text subtitle content."
+        }
+      ]
+    },
+    {
+      "html": "At the presentation time of <a href=\"https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-intermediate-synchronic-document\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-intermediate-synchronic-document-28\">Intermediate Synchronic Document</a> E<sub>n</sub>, perform the following steps in\n      order:",
+      "rationale": "remove",
+      "steps": [
+        {
+          "html": "purge from the Glyph Cache all <a href=\"https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-glyph\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-glyph-12\">glyphs</a> not flagged <i>retain</i>; and"
+        },
+        {
+          "html": "remove the <i>retain</i> flag from all remaining <a href=\"https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html#dfn-glyph\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-glyph-13\">glyphs</a> in the Glyph Cache."
+        }
+      ]
+    }
+  ]
+}

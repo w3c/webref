@@ -1,0 +1,1322 @@
+{
+  "spec": {
+    "title": "TTML Profiles for Internet Media Subtitles and Captions 1.3",
+    "url": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#title",
+      "level": 1,
+      "title": "TTML Profiles for Internet Media Subtitles and Captions 1.3"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "scope",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#scope",
+      "level": 2,
+      "title": "Scope",
+      "alternateIds": [
+        "x1-scope"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x2-introduction"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "conventions",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#conventions",
+      "level": 2,
+      "title": "Documentation Conventions",
+      "alternateIds": [
+        "x3-documentation-conventions"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "terms",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#terms",
+      "level": 2,
+      "title": "Terms and Definitions",
+      "alternateIds": [
+        "x4-terms-and-definitions"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "alternateIds": [
+        "x5-conformance"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "profiles",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#profiles",
+      "level": 2,
+      "title": "Profiles",
+      "alternateIds": [
+        "x6-profiles"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "general",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#general",
+      "level": 3,
+      "title": "General",
+      "alternateIds": [
+        "x6-1-general"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "text-profile",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-profile",
+      "level": 3,
+      "title": "Text Profile",
+      "alternateIds": [
+        "x6-2-text-profile"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "image-profile",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#image-profile",
+      "level": 3,
+      "title": "Image Profile",
+      "alternateIds": [
+        "x6-3-image-profile"
+      ],
+      "number": "6.3"
+    },
+    {
+      "id": "profile-resolution",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#profile-resolution",
+      "level": 3,
+      "title": "Profile Resolution Semantics",
+      "alternateIds": [
+        "x6-4-profile-resolution-semantics"
+      ],
+      "number": "6.4"
+    },
+    {
+      "id": "general-0",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#general-0",
+      "level": 4,
+      "title": "General",
+      "alternateIds": [
+        "x6-4-1-general"
+      ],
+      "number": "6.4.1"
+    },
+    {
+      "id": "override",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#override",
+      "level": 4,
+      "title": "Override",
+      "alternateIds": [
+        "x6-4-2-override"
+      ],
+      "number": "6.4.2"
+    },
+    {
+      "id": "supported-features-and-extensions",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#supported-features-and-extensions",
+      "level": 2,
+      "title": "Supported Features and Extensions",
+      "alternateIds": [
+        "x7-supported-features-and-extensions"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "common-constraints",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#common-constraints",
+      "level": 2,
+      "title": "Common Provisions",
+      "alternateIds": [
+        "x8-common-provisions"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "document-encoding",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#document-encoding",
+      "level": 3,
+      "title": "Document Encoding",
+      "alternateIds": [
+        "x8-1-document-encoding"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "foreign-elements",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#foreign-elements",
+      "level": 3,
+      "title": "Foreign Element and Attributes",
+      "alternateIds": [
+        "x8-2-foreign-element-and-attributes"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "namespaces",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#namespaces",
+      "level": 3,
+      "title": "Namespaces",
+      "alternateIds": [
+        "x8-3-namespaces"
+      ],
+      "number": "8.3"
+    },
+    {
+      "id": "overflow",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#overflow",
+      "level": 3,
+      "title": "Overflow",
+      "alternateIds": [
+        "x8-4-overflow"
+      ],
+      "number": "8.4"
+    },
+    {
+      "id": "related-video-object",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#related-video-object",
+      "level": 3,
+      "title": "Related Video Object",
+      "alternateIds": [
+        "x8-5-related-video-object"
+      ],
+      "number": "8.5"
+    },
+    {
+      "id": "synchronization",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#synchronization",
+      "level": 3,
+      "title": "Synchronization",
+      "alternateIds": [
+        "x8-6-synchronization"
+      ],
+      "number": "8.6"
+    },
+    {
+      "id": "mapping-the-root-container-region-to-the-related-video-object",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#mapping-the-root-container-region-to-the-related-video-object",
+      "level": 3,
+      "title": "Mapping the Root Container Region to the Related Video Object",
+      "alternateIds": [
+        "x8-7-mapping-the-root-container-region-to-the-related-video-object"
+      ],
+      "number": "8.7"
+    },
+    {
+      "id": "imsc-extensions",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#imsc-extensions",
+      "level": 3,
+      "title": "Extension Vocabulary",
+      "alternateIds": [
+        "x8-8-extension-vocabulary"
+      ],
+      "number": "8.8"
+    },
+    {
+      "id": "ittp-aspectRatio",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#ittp-aspectRatio",
+      "level": 4,
+      "title": "ittp:aspectRatio",
+      "alternateIds": [
+        "x8-8-1-ittp-aspectratio"
+      ],
+      "number": "8.8.1"
+    },
+    {
+      "id": "ittp-progressivelyDecodable",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#ittp-progressivelyDecodable",
+      "level": 4,
+      "title": "ittp:progressivelyDecodable",
+      "alternateIds": [
+        "x8-8-2-ittp-progressivelydecodable"
+      ],
+      "number": "8.8.2"
+    },
+    {
+      "id": "itts-forcedDisplay",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#itts-forcedDisplay",
+      "level": 4,
+      "title": "itts:forcedDisplay",
+      "alternateIds": [
+        "x8-8-3-itts-forceddisplay"
+      ],
+      "number": "8.8.3"
+    },
+    {
+      "id": "ittm-altText",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#ittm-altText",
+      "level": 4,
+      "title": "ittm:altText",
+      "alternateIds": [
+        "x8-8-4-ittm-alttext"
+      ],
+      "number": "8.8.4"
+    },
+    {
+      "id": "ittp-activeArea",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#ittp-activeArea",
+      "level": 4,
+      "title": "ittp:activeArea",
+      "alternateIds": [
+        "x8-8-5-ittp-activearea"
+      ],
+      "number": "8.8.5"
+    },
+    {
+      "id": "itts-fillLineGap",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#itts-fillLineGap",
+      "level": 4,
+      "title": "itts:fillLineGap",
+      "alternateIds": [
+        "x8-8-6-itts-filllinegap"
+      ],
+      "number": "8.8.6"
+    },
+    {
+      "id": "profile-signaling",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#profile-signaling",
+      "level": 3,
+      "title": "Profile Signaling",
+      "alternateIds": [
+        "x8-9-profile-signaling"
+      ],
+      "number": "8.9"
+    },
+    {
+      "id": "general-1",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#general-1",
+      "level": 4,
+      "title": "General",
+      "alternateIds": [
+        "x8-9-1-general"
+      ],
+      "number": "8.9.1"
+    },
+    {
+      "id": "ebu-tt-signaling",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#ebu-tt-signaling",
+      "level": 4,
+      "title": "Signaling conformance using EBU-TT metadata",
+      "alternateIds": [
+        "x8-9-2-signaling-conformance-using-ebu-tt-metadata"
+      ],
+      "number": "8.9.2"
+    },
+    {
+      "id": "style-resolution-procedure",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#style-resolution-procedure",
+      "level": 3,
+      "title": "Style Resolution",
+      "alternateIds": [
+        "x8-10-style-resolution"
+      ],
+      "number": "8.10"
+    },
+    {
+      "id": "constraints",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#constraints",
+      "level": 3,
+      "title": "Constraints",
+      "alternateIds": [
+        "x8-11-constraints"
+      ],
+      "number": "8.11"
+    },
+    {
+      "id": "region",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#region",
+      "level": 4,
+      "title": "Region",
+      "alternateIds": [
+        "x8-11-1-region"
+      ],
+      "number": "8.11.1"
+    },
+    {
+      "id": "presented-region",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#presented-region",
+      "level": 5,
+      "title": "Presented Region",
+      "alternateIds": [
+        "x8-11-1-1-presented-region"
+      ],
+      "number": "8.11.1.1"
+    },
+    {
+      "id": "dimensions-and-position",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#dimensions-and-position",
+      "level": 5,
+      "title": "Dimensions and Position",
+      "alternateIds": [
+        "region-dim-pos"
+      ],
+      "number": "8.11.1.2"
+    },
+    {
+      "id": "maximum-number",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#maximum-number",
+      "level": 5,
+      "title": "Maximum number",
+      "alternateIds": [
+        "x8-11-1-3-maximum-number"
+      ],
+      "number": "8.11.1.3"
+    },
+    {
+      "id": "altText",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#altText",
+      "level": 4,
+      "title": "altText named metadata item",
+      "alternateIds": [
+        "x8-11-2-alttext-named-metadata-item"
+      ],
+      "number": "8.11.2"
+    },
+    {
+      "id": "itm-altText",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#itm-altText",
+      "level": 4,
+      "title": "#altText",
+      "alternateIds": [
+        "x8-11-3-alttext"
+      ],
+      "number": "8.11.3"
+    },
+    {
+      "id": "aspectRatio",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#aspectRatio",
+      "level": 4,
+      "title": "#aspectRatio",
+      "alternateIds": [
+        "x8-11-4-aspectratio"
+      ],
+      "number": "8.11.4"
+    },
+    {
+      "id": "displayAspectRatio",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#displayAspectRatio",
+      "level": 4,
+      "title": "#displayAspectRatio",
+      "alternateIds": [
+        "x8-11-5-displayaspectratio"
+      ],
+      "number": "8.11.5"
+    },
+    {
+      "id": "extent-root",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#extent-root",
+      "level": 4,
+      "title": "#extent-root",
+      "alternateIds": [
+        "x8-11-6-extent-root"
+      ],
+      "number": "8.11.6"
+    },
+    {
+      "id": "frame-rate-constraints",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#frame-rate-constraints",
+      "level": 4,
+      "title": "#frameRate",
+      "alternateIds": [
+        "x8-11-7-framerate"
+      ],
+      "number": "8.11.7"
+    },
+    {
+      "id": "length-cell",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#length-cell",
+      "level": 4,
+      "title": "#length-cell",
+      "alternateIds": [
+        "x8-11-8-length-cell"
+      ],
+      "number": "8.11.8"
+    },
+    {
+      "id": "length-root-container-relative",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#length-root-container-relative",
+      "level": 4,
+      "title": "#length-root-container-relative",
+      "alternateIds": [
+        "x8-11-9-length-root-container-relative"
+      ],
+      "number": "8.11.9"
+    },
+    {
+      "id": "tickRate",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#tickRate",
+      "level": 4,
+      "title": "#tickRate",
+      "alternateIds": [
+        "x8-11-10-tickrate"
+      ],
+      "number": "8.11.10"
+    },
+    {
+      "id": "timebase-media",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#timebase-media",
+      "level": 4,
+      "title": "#timeBase-media",
+      "alternateIds": [
+        "x8-11-11-timebase-media"
+      ],
+      "number": "8.11.11"
+    },
+    {
+      "id": "time-clock-with-frames",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#time-clock-with-frames",
+      "level": 4,
+      "title": "#time-clock-with-frames",
+      "alternateIds": [
+        "x8-11-12-time-clock-with-frames"
+      ],
+      "number": "8.11.12"
+    },
+    {
+      "id": "timing",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#timing",
+      "level": 4,
+      "title": "#timing",
+      "alternateIds": [
+        "x8-11-13-timing"
+      ],
+      "number": "8.11.13"
+    },
+    {
+      "id": "usesforced-named-metadata-item",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#usesforced-named-metadata-item",
+      "level": 4,
+      "title": "usesForced named metadata item",
+      "alternateIds": [
+        "x8-11-14-usesforced-named-metadata-item"
+      ],
+      "number": "8.11.14"
+    },
+    {
+      "id": "zindex-constraints",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#zindex-constraints",
+      "level": 4,
+      "title": "#zIndex",
+      "alternateIds": [
+        "x8-11-15-zindex"
+      ],
+      "number": "8.11.15"
+    },
+    {
+      "id": "text-profile-constraints",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-profile-constraints",
+      "level": 2,
+      "title": "Text Profile Provisions",
+      "alternateIds": [
+        "x9-text-profile-provisions"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "text-profile-designator",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-profile-designator",
+      "level": 3,
+      "title": "Profile Designator",
+      "alternateIds": [
+        "x9-1-profile-designator"
+      ],
+      "number": "9.1"
+    },
+    {
+      "id": "recommended-char-sets",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#recommended-char-sets",
+      "level": 3,
+      "title": "Recommended Character Sets",
+      "alternateIds": [
+        "x9-2-recommended-character-sets"
+      ],
+      "number": "9.2"
+    },
+    {
+      "id": "reference-fonts-0",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#reference-fonts-0",
+      "level": 3,
+      "title": "Reference Fonts",
+      "alternateIds": [
+        "x9-3-reference-fonts"
+      ],
+      "number": "9.3"
+    },
+    {
+      "id": "section-font-resources",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#section-font-resources",
+      "level": 3,
+      "title": "Font Resources",
+      "alternateIds": [
+        "x9-4-font-resources"
+      ],
+      "number": "9.4"
+    },
+    {
+      "id": "constraints-0",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#constraints-0",
+      "level": 3,
+      "title": "Constraints",
+      "alternateIds": [
+        "x9-5-constraints"
+      ],
+      "number": "9.5"
+    },
+    {
+      "id": "text-color",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-color",
+      "level": 4,
+      "title": "#color",
+      "alternateIds": [
+        "x9-5-1-color"
+      ],
+      "number": "9.5.1"
+    },
+    {
+      "id": "text-extent-region",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-extent-region",
+      "level": 4,
+      "title": "#extent-region",
+      "alternateIds": [
+        "x9-5-2-extent-region"
+      ],
+      "number": "9.5.2"
+    },
+    {
+      "id": "text-font-source",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-font-source",
+      "level": 4,
+      "title": "#font and #source",
+      "alternateIds": [
+        "x9-5-3-font-and-source"
+      ],
+      "number": "9.5.3"
+    },
+    {
+      "id": "text-fontFamily-generic",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-fontFamily-generic",
+      "level": 4,
+      "title": "#fontFamily-generic",
+      "alternateIds": [
+        "x9-5-4-fontfamily-generic"
+      ],
+      "number": "9.5.4"
+    },
+    {
+      "id": "text-fontFamily",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-fontFamily",
+      "level": 4,
+      "title": "#fontFamily",
+      "alternateIds": [
+        "x9-5-5-fontfamily"
+      ],
+      "number": "9.5.5"
+    },
+    {
+      "id": "text-length-negative",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-length-negative",
+      "level": 4,
+      "title": "#length-negative",
+      "alternateIds": [
+        "x9-5-6-length-negative"
+      ],
+      "number": "9.5.6"
+    },
+    {
+      "id": "text-lineHeight",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-lineHeight",
+      "level": 4,
+      "title": "#lineHeight",
+      "alternateIds": [
+        "x9-5-7-lineheight"
+      ],
+      "number": "9.5.7"
+    },
+    {
+      "id": "text-origin",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-origin",
+      "level": 4,
+      "title": "#origin",
+      "alternateIds": [
+        "x9-5-8-origin"
+      ],
+      "number": "9.5.8"
+    },
+    {
+      "id": "text-position",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-position",
+      "level": 4,
+      "title": "#position",
+      "alternateIds": [
+        "x9-5-9-position"
+      ],
+      "number": "9.5.9"
+    },
+    {
+      "id": "resources-constraints",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#resources-constraints",
+      "level": 4,
+      "title": "#resources",
+      "alternateIds": [
+        "x9-5-10-resources"
+      ],
+      "number": "9.5.10"
+    },
+    {
+      "id": "text-rubyAlign",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-rubyAlign",
+      "level": 4,
+      "title": "#rubyAlign",
+      "alternateIds": [
+        "x9-5-11-rubyalign"
+      ],
+      "number": "9.5.11"
+    },
+    {
+      "id": "text-textOutline-unblurred",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-textOutline-unblurred",
+      "level": 4,
+      "title": "#textOutline-unblurred",
+      "alternateIds": [
+        "x9-5-12-textoutline-unblurred"
+      ],
+      "number": "9.5.12"
+    },
+    {
+      "id": "text-textShadow",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-textShadow",
+      "level": 4,
+      "title": "#textShadow",
+      "alternateIds": [
+        "x9-5-13-textshadow"
+      ],
+      "number": "9.5.13"
+    },
+    {
+      "id": "text-linePadding",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-linePadding",
+      "level": 4,
+      "title": "ebutts:linePadding",
+      "alternateIds": [
+        "x9-5-14-ebutts-linepadding"
+      ],
+      "number": "9.5.14"
+    },
+    {
+      "id": "text-multiRowAlign",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-multiRowAlign",
+      "level": 4,
+      "title": "ebutts:multiRowAlign",
+      "alternateIds": [
+        "x9-5-15-ebutts-multirowalign"
+      ],
+      "number": "9.5.15"
+    },
+    {
+      "id": "text-italic-shear-oblique",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#text-italic-shear-oblique",
+      "level": 4,
+      "title": "Slanted Japanese-language text",
+      "alternateIds": [
+        "x9-5-16-slanted-japanese-language-text"
+      ],
+      "number": "9.5.16"
+    },
+    {
+      "id": "font-variant-constraints",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#font-variant-constraints",
+      "level": 4,
+      "title": "#fontVariant",
+      "alternateIds": [
+        "x9-5-17-fontvariant"
+      ],
+      "number": "9.5.17"
+    },
+    {
+      "id": "document-complexity",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#document-complexity",
+      "level": 4,
+      "title": "Document complexity",
+      "alternateIds": [
+        "x9-5-18-document-complexity"
+      ],
+      "number": "9.5.18"
+    },
+    {
+      "id": "image-profile-constraints",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#image-profile-constraints",
+      "level": 2,
+      "title": "10. Image Profile Provisions",
+      "alternateIds": [
+        "x10-image-profile-provisions"
+      ]
+    },
+    {
+      "id": "image-profile-designator",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#image-profile-designator",
+      "level": 3,
+      "title": "Profile Designator",
+      "alternateIds": [
+        "x10-1-profile-designator"
+      ],
+      "number": "10.1"
+    },
+    {
+      "id": "presented-image",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#presented-image",
+      "level": 3,
+      "title": "Presented Image",
+      "alternateIds": [
+        "x10-2-presented-image"
+      ],
+      "number": "10.2"
+    },
+    {
+      "id": "definition",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#definition",
+      "level": 4,
+      "title": "Definition",
+      "alternateIds": [
+        "x10-2-1-definition"
+      ],
+      "number": "10.2.1"
+    },
+    {
+      "id": "constraints-1",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#constraints-1",
+      "level": 4,
+      "title": "Constraints",
+      "alternateIds": [
+        "presented-image-constraints"
+      ],
+      "number": "10.2.2"
+    },
+    {
+      "id": "intermediate-synchronic-document-construction",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#intermediate-synchronic-document-construction",
+      "level": 4,
+      "title": "Intermediate Synchronic Document Construction",
+      "alternateIds": [
+        "x10-2-3-intermediate-synchronic-document-construction"
+      ],
+      "number": "10.2.3"
+    },
+    {
+      "id": "image-resource",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#image-resource",
+      "level": 3,
+      "title": "Image Resources",
+      "alternateIds": [
+        "x10-3-image-resources"
+      ],
+      "number": "10.3"
+    },
+    {
+      "id": "constraints-2",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#constraints-2",
+      "level": 3,
+      "title": "Constraints",
+      "alternateIds": [
+        "x10-4-constraints"
+      ],
+      "number": "10.4"
+    },
+    {
+      "id": "image-profile-content-constraints",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#image-profile-content-constraints",
+      "level": 4,
+      "title": "#content",
+      "alternateIds": [
+        "x10-4-1-content"
+      ],
+      "number": "10.4.1"
+    },
+    {
+      "id": "image-extent-region",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#image-extent-region",
+      "level": 4,
+      "title": "#extent-region",
+      "alternateIds": [
+        "x10-4-2-extent-region"
+      ],
+      "number": "10.4.2"
+    },
+    {
+      "id": "image-length-negative",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#image-length-negative",
+      "level": 4,
+      "title": "#length-negative",
+      "alternateIds": [
+        "x10-4-3-length-negative"
+      ],
+      "number": "10.4.3"
+    },
+    {
+      "id": "image-ttml-image",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#image-ttml-image",
+      "level": 4,
+      "title": "TTML #image Feature",
+      "alternateIds": [
+        "x10-4-4-ttml-image-feature"
+      ],
+      "number": "10.4.4"
+    },
+    {
+      "id": "image-smpte-image",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#image-smpte-image",
+      "level": 4,
+      "title": "SMPTE #image Extension",
+      "alternateIds": [
+        "x10-4-5-smpte-image-extension"
+      ],
+      "number": "10.4.5"
+    },
+    {
+      "id": "smpte-backgroundimage",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#smpte-backgroundimage",
+      "level": 5,
+      "title": "smpte:backgroundImage",
+      "alternateIds": [
+        "smpte-bg-constraints"
+      ],
+      "number": "10.4.5.1"
+    },
+    {
+      "id": "smpte-backgroundimagehorizontal-and-smpte-backgroundimagevertical",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#smpte-backgroundimagehorizontal-and-smpte-backgroundimagevertical",
+      "level": 5,
+      "title": "smpte:backgroundImageHorizontal and smpte:backgroundImageVertical",
+      "alternateIds": [
+        "x10-4-5-2-smpte-backgroundimagehorizontal-and-smpte-backgroundimagevertical"
+      ],
+      "number": "10.4.5.2"
+    },
+    {
+      "id": "smpte-image",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#smpte-image",
+      "level": 5,
+      "title": "smpte:image",
+      "alternateIds": [
+        "x10-4-5-3-smpte-image"
+      ],
+      "number": "10.4.5.3"
+    },
+    {
+      "id": "reference-fonts",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#reference-fonts",
+      "level": 2,
+      "title": "Reference Fonts",
+      "alternateIds": [
+        "a-reference-fonts"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "recommended-unicode-code-points-per-language",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#recommended-unicode-code-points-per-language",
+      "level": 2,
+      "title": "Common Character Sets",
+      "alternateIds": [
+        "b-common-character-sets"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "forced-content",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#forced-content",
+      "level": 2,
+      "title": "Forced content",
+      "alternateIds": [
+        "c-forced-content"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "wcag-maur-applications",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#wcag-maur-applications",
+      "level": 2,
+      "title": "WCAG and MAUR Considerations",
+      "alternateIds": [
+        "d-wcag-and-maur-considerations"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "wcag-applications",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#wcag-applications",
+      "level": 3,
+      "title": "WCAG Considerations",
+      "alternateIds": [
+        "d-1-wcag-considerations"
+      ],
+      "number": "D.1"
+    },
+    {
+      "id": "wcag-criterion-1-1-1",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#wcag-criterion-1-1-1",
+      "level": 4,
+      "title": "Success Criterion 1.1.1 Non-text Content",
+      "alternateIds": [
+        "d-1-1-success-criterion-1-1-1-non-text-content"
+      ],
+      "number": "D.1.1"
+    },
+    {
+      "id": "wcag-criterion-contrast",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#wcag-criterion-contrast",
+      "level": 4,
+      "title": "Success Criterion 1.4.3 Contrast (Minimum)",
+      "alternateIds": [
+        "d-1-2-success-criterion-1-4-3-contrast-minimum"
+      ],
+      "number": "D.1.2"
+    },
+    {
+      "id": "wcag-criterion-text=spacing",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#wcag-criterion-text%3Dspacing",
+      "level": 4,
+      "title": "Success Criterion 1.4.12 Text Spacing",
+      "alternateIds": [
+        "d-1-3-success-criterion-1-4-12-text-spacing"
+      ],
+      "number": "D.1.3"
+    },
+    {
+      "id": "wcag-criterion-language",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#wcag-criterion-language",
+      "level": 4,
+      "title": "Success Criteria 3.1.1 Language of Page and 3.1.2 Language of Parts",
+      "alternateIds": [
+        "d-1-4-success-criteria-3-1-1-language-of-page-and-3-1-2-language-of-parts"
+      ],
+      "number": "D.1.4"
+    },
+    {
+      "id": "maur-applications",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#maur-applications",
+      "level": 3,
+      "title": "MAUR Considerations",
+      "alternateIds": [
+        "d-2-maur-considerations"
+      ],
+      "number": "D.2"
+    },
+    {
+      "id": "sample-instance",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#sample-instance",
+      "level": 2,
+      "title": "Sample Document Instance",
+      "alternateIds": [
+        "e-sample-document-instance"
+      ],
+      "number": "E"
+    },
+    {
+      "id": "features-and-extensions",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#features-and-extensions",
+      "level": 2,
+      "title": "Extensions",
+      "alternateIds": [
+        "f-extensions"
+      ],
+      "number": "F"
+    },
+    {
+      "id": "general-2",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#general-2",
+      "level": 3,
+      "title": "General",
+      "alternateIds": [
+        "f-1-general"
+      ],
+      "number": "F.1"
+    },
+    {
+      "id": "feature-progressivelyDecodable",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#feature-progressivelyDecodable",
+      "level": 3,
+      "title": "#progressivelyDecodable",
+      "alternateIds": [
+        "f-2-progressivelydecodable"
+      ],
+      "number": "F.2"
+    },
+    {
+      "id": "feature-aspectRatio",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#feature-aspectRatio",
+      "level": 3,
+      "title": "#aspectRatio",
+      "alternateIds": [
+        "f-3-aspectratio"
+      ],
+      "number": "F.3"
+    },
+    {
+      "id": "feature-forcedDisplay",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#feature-forcedDisplay",
+      "level": 3,
+      "title": "#forcedDisplay",
+      "alternateIds": [
+        "f-4-forceddisplay"
+      ],
+      "number": "F.4"
+    },
+    {
+      "id": "feature-altText",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#feature-altText",
+      "level": 3,
+      "title": "#altText",
+      "alternateIds": [
+        "f-5-alttext"
+      ],
+      "number": "F.5"
+    },
+    {
+      "id": "feature-linePadding",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#feature-linePadding",
+      "level": 3,
+      "title": "#linePadding",
+      "alternateIds": [
+        "f-6-linepadding"
+      ],
+      "number": "F.6"
+    },
+    {
+      "id": "feature-multiRowAlign",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#feature-multiRowAlign",
+      "level": 3,
+      "title": "#multiRowAlign",
+      "alternateIds": [
+        "f-7-multirowalign"
+      ],
+      "number": "F.7"
+    },
+    {
+      "id": "feature-activeArea",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#feature-activeArea",
+      "level": 3,
+      "title": "#activeArea",
+      "alternateIds": [
+        "f-8-activearea"
+      ],
+      "number": "F.8"
+    },
+    {
+      "id": "feature-fillLineGap",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#feature-fillLineGap",
+      "level": 3,
+      "title": "#fillLineGap",
+      "alternateIds": [
+        "f-9-filllinegap"
+      ],
+      "number": "F.9"
+    },
+    {
+      "id": "xml-schemas",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#xml-schemas",
+      "level": 2,
+      "title": "XML Schema Definitions",
+      "alternateIds": [
+        "g-xml-schema-definitions"
+      ],
+      "number": "G"
+    },
+    {
+      "id": "extensibility-objectives",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#extensibility-objectives",
+      "level": 2,
+      "title": "Extensibility Objectives",
+      "alternateIds": [
+        "h-extensibility-objectives"
+      ],
+      "number": "H"
+    },
+    {
+      "id": "interop-examples",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#interop-examples",
+      "level": 2,
+      "title": "Compatibility with other TTML-based specifications",
+      "alternateIds": [
+        "i-compatibility-with-other-ttml-based-specifications"
+      ],
+      "number": "I"
+    },
+    {
+      "id": "overview",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#overview",
+      "level": 3,
+      "title": "Overview",
+      "alternateIds": [
+        "i-1-overview"
+      ],
+      "number": "I.1"
+    },
+    {
+      "id": "ebu-tt-d-interop",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#ebu-tt-d-interop",
+      "level": 3,
+      "title": "EBU-TT-D",
+      "alternateIds": [
+        "i-2-ebu-tt-d"
+      ],
+      "number": "I.2"
+    },
+    {
+      "id": "sdp-us-interop",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#sdp-us-interop",
+      "level": 3,
+      "title": "SDP-US",
+      "alternateIds": [
+        "i-3-sdp-us"
+      ],
+      "number": "I.3"
+    },
+    {
+      "id": "smpte-tt-smpte-st-2052-1",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#smpte-tt-smpte-st-2052-1",
+      "level": 3,
+      "title": "SMPTE-TT (SMPTE ST 2052-1)",
+      "alternateIds": [
+        "i-4-smpte-tt-smpte-st-2052-1"
+      ],
+      "number": "I.4"
+    },
+    {
+      "id": "cff-tt",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#cff-tt",
+      "level": 3,
+      "title": "CFF-TT",
+      "alternateIds": [
+        "i-5-cff-tt"
+      ],
+      "number": "I.5"
+    },
+    {
+      "id": "imsc-interop",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#imsc-interop",
+      "level": 3,
+      "title": "Previous versions of IMSC",
+      "alternateIds": [
+        "i-6-previous-versions-of-imsc"
+      ],
+      "number": "I.6"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "j-acknowledgements"
+      ],
+      "number": "J"
+    },
+    {
+      "id": "privacy-and-security-considerations",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#privacy-and-security-considerations",
+      "level": 2,
+      "title": "Privacy and Security Considerations",
+      "alternateIds": [
+        "k-privacy-and-security-considerations"
+      ],
+      "number": "K"
+    },
+    {
+      "id": "substantive-changes-summary",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#substantive-changes-summary",
+      "level": 2,
+      "title": "Summary of substantive changes",
+      "alternateIds": [
+        "l-summary-of-substantive-changes"
+      ],
+      "number": "L"
+    },
+    {
+      "id": "overview-0",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#overview-0",
+      "level": 3,
+      "title": "Overview",
+      "alternateIds": [
+        "l-1-overview"
+      ],
+      "number": "L.1"
+    },
+    {
+      "id": "changes",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#changes",
+      "level": 3,
+      "title": "Changes",
+      "alternateIds": [
+        "l-2-changes"
+      ],
+      "number": "L.2"
+    },
+    {
+      "id": "japanese-character-set",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#japanese-character-set",
+      "level": 4,
+      "title": "Japanese character set",
+      "alternateIds": [
+        "l-2-1-japanese-character-set"
+      ],
+      "number": "L.2.1"
+    },
+    {
+      "id": "hypothetical-render-model",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#hypothetical-render-model",
+      "level": 4,
+      "title": "Hypothetical Render Model",
+      "alternateIds": [
+        "l-2-2-hypothetical-render-model"
+      ],
+      "number": "L.2.2"
+    },
+    {
+      "id": "added-features",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#added-features",
+      "level": 4,
+      "title": "Added Features",
+      "alternateIds": [
+        "l-2-3-added-features"
+      ],
+      "number": "L.2.3"
+    },
+    {
+      "id": "deprecated-features",
+      "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html#deprecated-features",
+      "level": 4,
+      "title": "Deprecated Features",
+      "alternateIds": [
+        "l-2-4-deprecated-features"
+      ],
+      "number": "L.2.4"
+    }
+  ]
+}
