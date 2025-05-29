@@ -15652,7 +15652,7 @@
         "href": "https://html.spec.whatwg.org/multipage/interactive-elements.html#htmldialogelement"
       },
       "HTMLScriptElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLScriptElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute boolean noModule;\n  [CEReactions] attribute boolean async;\n  [CEReactions] attribute boolean defer;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString text;\n  [CEReactions] attribute DOMString integrity;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList blocking;\n  [CEReactions] attribute DOMString fetchPriority;\n\n  static boolean supports(DOMString type);\n\n  // also has obsolete members\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLScriptElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute boolean noModule;\n  [CEReactions] attribute boolean async;\n  [CEReactions] attribute boolean defer;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList blocking;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute DOMString integrity;\n  [CEReactions] attribute DOMString fetchPriority;\n\n  [CEReactions] attribute DOMString text;\n\n  static boolean supports(DOMString type);\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLScriptElement",
         "inheritance": "HTMLElement",
@@ -15668,29 +15668,6 @@
                 "arguments": []
               }
             ]
-          },
-          {
-            "type": "attribute",
-            "name": "src",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "CEReactions",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": false,
-            "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-script-src"
           },
           {
             "type": "attribute",
@@ -15714,6 +15691,29 @@
             "special": "",
             "readonly": false,
             "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-script-type"
+          },
+          {
+            "type": "attribute",
+            "name": "src",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false,
+            "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-script-src"
           },
           {
             "type": "attribute",
@@ -15786,98 +15786,6 @@
           },
           {
             "type": "attribute",
-            "name": "crossOrigin",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "CEReactions",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": false,
-            "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-script-crossorigin"
-          },
-          {
-            "type": "attribute",
-            "name": "text",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "CEReactions",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": false,
-            "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-script-text"
-          },
-          {
-            "type": "attribute",
-            "name": "integrity",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "CEReactions",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": false,
-            "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-script-integrity"
-          },
-          {
-            "type": "attribute",
-            "name": "referrerPolicy",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "CEReactions",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": false,
-            "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-script-referrerpolicy"
-          },
-          {
-            "type": "attribute",
             "name": "blocking",
             "idlType": {
               "type": "attribute-type",
@@ -15910,6 +15818,75 @@
           },
           {
             "type": "attribute",
+            "name": "crossOrigin",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false,
+            "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-script-crossorigin"
+          },
+          {
+            "type": "attribute",
+            "name": "referrerPolicy",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false,
+            "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-script-referrerpolicy"
+          },
+          {
+            "type": "attribute",
+            "name": "integrity",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false,
+            "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-script-integrity"
+          },
+          {
+            "type": "attribute",
             "name": "fetchPriority",
             "idlType": {
               "type": "attribute-type",
@@ -15930,6 +15907,29 @@
             "special": "",
             "readonly": false,
             "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-script-fetchpriority"
+          },
+          {
+            "type": "attribute",
+            "name": "text",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false,
+            "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-script-text"
           },
           {
             "type": "operation",
