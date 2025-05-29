@@ -1,0 +1,353 @@
+{
+  "spec": {
+    "title": "IMSC Hypothetical Render Model",
+    "url": "https://www.w3.org/TR/imsc-hrm/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/imsc-hrm/#title",
+      "level": 1,
+      "title": "IMSC Hypothetical Render Model"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/imsc-hrm/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "scope",
+      "href": "https://www.w3.org/TR/imsc-hrm/#scope",
+      "level": 2,
+      "title": "Scope",
+      "alternateIds": [
+        "x1-scope"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "conventions",
+      "href": "https://www.w3.org/TR/imsc-hrm/#conventions",
+      "level": 2,
+      "title": "Documentation Conventions",
+      "alternateIds": [
+        "x2-documentation-conventions"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "terms",
+      "href": "https://www.w3.org/TR/imsc-hrm/#terms",
+      "level": 2,
+      "title": "Terms and Definitions",
+      "alternateIds": [
+        "x3-terms-and-definitions"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/imsc-hrm/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "alternateIds": [
+        "x4-conformance"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/imsc-hrm/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x5-introduction"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "objective",
+      "href": "https://www.w3.org/TR/imsc-hrm/#objective",
+      "level": 3,
+      "title": "Objective",
+      "alternateIds": [
+        "x5-1-objective"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "why-limit-the-complexity-of-imsc-document-instances",
+      "href": "https://www.w3.org/TR/imsc-hrm/#why-limit-the-complexity-of-imsc-document-instances",
+      "level": 3,
+      "title": "Why limit the complexity of IMSC Document Instances?",
+      "alternateIds": [
+        "x5-2-why-limit-the-complexity-of-imsc-document-instances"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "why-is-the-hrm-needed-to-limit-complexity",
+      "href": "https://www.w3.org/TR/imsc-hrm/#why-is-the-hrm-needed-to-limit-complexity",
+      "level": 3,
+      "title": "Why is the HRM needed to limit complexity?",
+      "alternateIds": [
+        "x5-3-why-is-the-hrm-needed-to-limit-complexity"
+      ],
+      "number": "5.3"
+    },
+    {
+      "id": "how-does-the-hrm-measure-and-limit-complexity",
+      "href": "https://www.w3.org/TR/imsc-hrm/#how-does-the-hrm-measure-and-limit-complexity",
+      "level": 3,
+      "title": "How does the HRM measure and limit complexity?",
+      "alternateIds": [
+        "x5-4-how-does-the-hrm-measure-and-limit-complexity"
+      ],
+      "number": "5.4"
+    },
+    {
+      "id": "where-is-the-hrm-used",
+      "href": "https://www.w3.org/TR/imsc-hrm/#where-is-the-hrm-used",
+      "level": 3,
+      "title": "Where is the HRM used?",
+      "alternateIds": [
+        "x5-5-where-is-the-hrm-used"
+      ],
+      "number": "5.5"
+    },
+    {
+      "id": "sec-architecture",
+      "href": "https://www.w3.org/TR/imsc-hrm/#sec-architecture",
+      "level": 2,
+      "title": "Architecture",
+      "alternateIds": [
+        "x6-architecture"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "hypothetical-render-model-general",
+      "href": "https://www.w3.org/TR/imsc-hrm/#hypothetical-render-model-general",
+      "level": 2,
+      "title": "Algorithm",
+      "alternateIds": [
+        "x7-algorithm"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "paint-regions",
+      "href": "https://www.w3.org/TR/imsc-hrm/#paint-regions",
+      "level": 2,
+      "title": "Paint Regions",
+      "alternateIds": [
+        "x8-paint-regions"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "paint-text",
+      "href": "https://www.w3.org/TR/imsc-hrm/#paint-text",
+      "level": 2,
+      "title": "Paint Text",
+      "alternateIds": [
+        "x9-paint-text"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/imsc-hrm/#index",
+      "level": 2,
+      "title": "Index",
+      "alternateIds": [
+        "a-index"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/imsc-hrm/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "alternateIds": [
+        "a-1-terms-defined-by-this-specification"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/imsc-hrm/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "alternateIds": [
+        "a-2-terms-defined-by-reference"
+      ],
+      "number": "A.2"
+    },
+    {
+      "id": "accessibility-considerations",
+      "href": "https://www.w3.org/TR/imsc-hrm/#accessibility-considerations",
+      "level": 2,
+      "title": "Accessibility Considerations",
+      "alternateIds": [
+        "b-accessibility-considerations"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "impact-of-non-conformance",
+      "href": "https://www.w3.org/TR/imsc-hrm/#impact-of-non-conformance",
+      "level": 3,
+      "title": "Impact of non-conformance",
+      "alternateIds": [
+        "b-1-impact-of-non-conformance"
+      ],
+      "number": "B.1"
+    },
+    {
+      "id": "user-customisation-of-presentation",
+      "href": "https://www.w3.org/TR/imsc-hrm/#user-customisation-of-presentation",
+      "level": 3,
+      "title": "User customisation of presentation",
+      "alternateIds": [
+        "b-2-user-customisation-of-presentation"
+      ],
+      "number": "B.2"
+    },
+    {
+      "id": "privacy-and-security-considerations",
+      "href": "https://www.w3.org/TR/imsc-hrm/#privacy-and-security-considerations",
+      "level": 2,
+      "title": "Privacy and Security Considerations",
+      "alternateIds": [
+        "c-privacy-and-security-considerations"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "general",
+      "href": "https://www.w3.org/TR/imsc-hrm/#general",
+      "level": 3,
+      "title": "General",
+      "alternateIds": [
+        "c-1-general"
+      ],
+      "number": "C.1"
+    },
+    {
+      "id": "implementation-considerations",
+      "href": "https://www.w3.org/TR/imsc-hrm/#implementation-considerations",
+      "level": 3,
+      "title": "Implementation considerations",
+      "alternateIds": [
+        "c-2-implementation-considerations"
+      ],
+      "number": "C.2"
+    },
+    {
+      "id": "error-reporting-and-exception-handling",
+      "href": "https://www.w3.org/TR/imsc-hrm/#error-reporting-and-exception-handling",
+      "level": 2,
+      "title": "Error Reporting and Exception Handling",
+      "alternateIds": [
+        "d-error-reporting-and-exception-handling"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "error-reporting",
+      "href": "https://www.w3.org/TR/imsc-hrm/#error-reporting",
+      "level": 3,
+      "title": "Error Reporting",
+      "alternateIds": [
+        "d-1-error-reporting"
+      ],
+      "number": "D.1"
+    },
+    {
+      "id": "exception-handling",
+      "href": "https://www.w3.org/TR/imsc-hrm/#exception-handling",
+      "level": 3,
+      "title": "Exception Handling",
+      "alternateIds": [
+        "d-2-exception-handling"
+      ],
+      "number": "D.2"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/imsc-hrm/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "e-acknowledgements"
+      ],
+      "number": "E"
+    },
+    {
+      "id": "substantive-changes-summary",
+      "href": "https://www.w3.org/TR/imsc-hrm/#substantive-changes-summary",
+      "level": 2,
+      "title": "Summary of substantive changes",
+      "alternateIds": [
+        "f-summary-of-substantive-changes"
+      ],
+      "number": "F"
+    },
+    {
+      "id": "changes-since-the-first-public-working-draft",
+      "href": "https://www.w3.org/TR/imsc-hrm/#changes-since-the-first-public-working-draft",
+      "level": 3,
+      "title": "Changes since the First Public Working Draft",
+      "alternateIds": [
+        "f-1-changes-since-the-first-public-working-draft"
+      ],
+      "number": "F.1"
+    },
+    {
+      "id": "changes-since-the-first-candidate-recommendation",
+      "href": "https://www.w3.org/TR/imsc-hrm/#changes-since-the-first-candidate-recommendation",
+      "level": 3,
+      "title": "Changes since the first Candidate Recommendation",
+      "alternateIds": [
+        "f-2-changes-since-the-first-candidate-recommendation"
+      ],
+      "number": "F.2"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/imsc-hrm/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "g-references"
+      ],
+      "number": "G"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/imsc-hrm/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "g-1-normative-references"
+      ],
+      "number": "G.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/imsc-hrm/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "g-2-informative-references"
+      ],
+      "number": "G.2"
+    }
+  ]
+}

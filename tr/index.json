@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-05-28T01:36:24.509Z",
+  "date": "2025-05-29T01:53:44.725Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -451,6 +451,7 @@
       "cssom-1",
       "cssom-view-1",
       "dapt",
+      "design-principles",
       "device-memory-1",
       "device-posture",
       "did-1.1",
@@ -474,6 +475,7 @@
       "epub-a11y-111",
       "epub-rs-33",
       "epub-rs-34",
+      "ethical-web-principles",
       "event-timing",
       "fedcm-1",
       "fetch-metadata",
@@ -499,6 +501,7 @@
       "IFT",
       "image-capture",
       "image-resource",
+      "imsc-hrm",
       "IndexedDB-3",
       "input-events-2",
       "intersection-observer",
@@ -609,6 +612,7 @@
       "timing-entrytypes-registry",
       "touch-events",
       "trusted-types",
+      "ttml-imsc1.2",
       "ttml2",
       "uievents-code",
       "uievents-key",
@@ -701,10 +705,10 @@
     ]
   },
   "stats": {
-    "crawled": 363,
+    "crawled": 367,
     "errors": 0
   },
-  "crawler": "reffy-18.7.1",
+  "crawler": "reffy-18.7.3",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -750,7 +754,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "28 May 2025",
+      "date": "29 May 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -2000,7 +2004,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/compute-pressure/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -9999,6 +10003,62 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/design-principles/",
+      "seriesComposition": "full",
+      "shortname": "design-principles",
+      "series": {
+        "shortname": "design-principles",
+        "currentSpecification": "design-principles",
+        "title": "Web Platform Design Principles",
+        "shortTitle": "Web Platform Design Principles",
+        "releaseUrl": "https://www.w3.org/TR/design-principles/",
+        "nightlyUrl": "https://w3ctag.github.io/design-principles/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Technical Architecture Group",
+          "url": "https://www.w3.org/2001/tag/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/design-principles/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3ctag.github.io/design-principles/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3ctag/design-principles",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Web Platform Design Principles",
+      "source": "w3c",
+      "shortTitle": "Web Platform Design Principles",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/design-principles/",
+        "https://w3ctag.github.io/design-principles/"
+      ],
+      "crawled": "https://www.w3.org/TR/design-principles/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 22 May 2025 18:47:54 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "22 May 2025",
+      "revision": "636ff69ccc6db8f37a95ef136776f864e7f7e2c0",
+      "algorithms": "algorithms/design-principles.json",
+      "links": "links/design-principles.json",
+      "refs": "refs/design-principles.json",
+      "dfns": "dfns/design-principles.json",
+      "headings": "headings/design-principles.json",
+      "ids": "ids/design-principles.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/device-memory-1/",
       "seriesComposition": "full",
       "shortname": "device-memory-1",
@@ -11339,6 +11399,60 @@
       "dfns": "dfns/epub-rs-34.json",
       "headings": "headings/epub-rs-34.json",
       "ids": "ids/epub-rs-34.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/ethical-web-principles/",
+      "seriesComposition": "full",
+      "shortname": "ethical-web-principles",
+      "series": {
+        "shortname": "ethical-web-principles",
+        "currentSpecification": "ethical-web-principles",
+        "title": "Ethical Web Principles",
+        "shortTitle": "Ethical Web Principles",
+        "releaseUrl": "https://www.w3.org/TR/ethical-web-principles/",
+        "nightlyUrl": "https://w3ctag.github.io/ethical-web-principles/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Technical Architecture Group",
+          "url": "https://www.w3.org/2001/tag/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/ethical-web-principles/",
+        "status": "Statement",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3ctag.github.io/ethical-web-principles/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3ctag/ethical-web-principles",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Ethical Web Principles",
+      "source": "w3c",
+      "shortTitle": "Ethical Web Principles",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/ethical-web-principles/",
+        "https://w3ctag.github.io/ethical-web-principles/"
+      ],
+      "crawled": "https://www.w3.org/TR/ethical-web-principles/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 17 Apr 2025 04:59:08 GMT"
+      },
+      "generator": "respec",
+      "date": "12 December 2024",
+      "links": "links/ethical-web-principles.json",
+      "refs": "refs/ethical-web-principles.json",
+      "dfns": "dfns/ethical-web-principles.json",
+      "headings": "headings/ethical-web-principles.json",
+      "ids": "ids/ethical-web-principles.json",
       "cddl": []
     },
     {
@@ -12907,6 +13021,61 @@
       "dfns": "dfns/image-resource.json",
       "headings": "headings/image-resource.json",
       "ids": "ids/image-resource.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/imsc-hrm/",
+      "seriesComposition": "full",
+      "shortname": "imsc-hrm",
+      "series": {
+        "shortname": "imsc-hrm",
+        "currentSpecification": "imsc-hrm",
+        "title": "IMSC Hypothetical Render Model",
+        "shortTitle": "IMSC Hypothetical Render Model",
+        "releaseUrl": "https://www.w3.org/TR/imsc-hrm/",
+        "nightlyUrl": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html",
+        "status": "Editor's Draft",
+        "sourcePath": "spec/imsc-hrm.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/imsc-hrm",
+        "filename": "imsc-hrm.html"
+      },
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Timed Text Working Group",
+          "url": "https://www.w3.org/AudioVideo/TT/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/imsc-hrm/",
+        "status": "Recommendation",
+        "filename": "Overview.html"
+      },
+      "title": "IMSC Hypothetical Render Model",
+      "source": "w3c",
+      "shortTitle": "IMSC Hypothetical Render Model",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/imsc-hrm/",
+        "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html"
+      ],
+      "crawled": "https://www.w3.org/TR/imsc-hrm/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 22 Apr 2024 06:00:57 GMT"
+      },
+      "generator": "respec",
+      "date": "25 April 2024",
+      "algorithms": "algorithms/imsc-hrm.json",
+      "links": "links/imsc-hrm.json",
+      "refs": "refs/imsc-hrm.json",
+      "dfns": "dfns/imsc-hrm.json",
+      "headings": "headings/imsc-hrm.json",
+      "ids": "ids/imsc-hrm.json",
       "cddl": []
     },
     {
@@ -19846,6 +20015,62 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/ttml-imsc1.2/",
+      "seriesComposition": "full",
+      "shortname": "ttml-imsc1.2",
+      "series": {
+        "shortname": "ttml-imsc",
+        "currentSpecification": "ttml-imsc1.2",
+        "title": "TTML Profiles for Internet Media Subtitles and Captions",
+        "shortTitle": "TTML Profiles for Internet Media Subtitles and Captions",
+        "releaseUrl": "https://www.w3.org/TR/ttml-imsc/",
+        "nightlyUrl": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html"
+      },
+      "seriesVersion": "1.2",
+      "nightly": {
+        "url": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html",
+        "status": "Editor's Draft",
+        "sourcePath": "imsc1/spec/ttml-ww-profiles.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/imsc",
+        "filename": "ttml-ww-profiles.html"
+      },
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Timed Text Working Group",
+          "url": "https://www.w3.org/AudioVideo/TT/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/ttml-imsc1.2/",
+        "status": "Recommendation",
+        "filename": "Overview.html"
+      },
+      "title": "TTML Profiles for Internet Media Subtitles and Captions 1.2",
+      "source": "w3c",
+      "shortTitle": "TTML Profiles for Internet Media Subtitles and Captions 1.2",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/ttml-imsc1.2/",
+        "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html"
+      ],
+      "crawled": "https://www.w3.org/TR/ttml-imsc1.2/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 03 Aug 2020 06:26:03 GMT"
+      },
+      "generator": "respec",
+      "date": "04 August 2020",
+      "algorithms": "algorithms/ttml-imsc1.2.json",
+      "links": "links/ttml-imsc1.2.json",
+      "refs": "refs/ttml-imsc1.2.json",
+      "dfns": "dfns/ttml-imsc1.2.json",
+      "headings": "headings/ttml-imsc1.2.json",
+      "ids": "ids/ttml-imsc1.2.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/ttml2/",
       "seriesComposition": "full",
       "shortname": "ttml2",
@@ -23794,11 +24019,11 @@
       ],
       "crawled": "https://www.w3.org/TR/WGSL/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 22 May 2025 20:07:55 GMT"
+        "lastModified": "Wed, 28 May 2025 16:43:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 May 2025",
-      "revision": "20b5f626e2da1c87bce12823e6c92f3302634a6d",
+      "date": "28 May 2025",
+      "revision": "1db6f82896c0f1f1d723bd28109fc90ca540754c",
       "algorithms": "algorithms/WGSL.json",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",

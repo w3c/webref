@@ -1,0 +1,897 @@
+{
+  "spec": {
+    "title": "Web Platform Design Principles",
+    "url": "https://www.w3.org/TR/design-principles/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/design-principles/#title",
+      "level": 1,
+      "title": "Web Platform Design Principles"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/design-principles/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/design-principles/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/design-principles/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "contents"
+      ]
+    },
+    {
+      "id": "basic-principles",
+      "href": "https://www.w3.org/TR/design-principles/#basic-principles",
+      "level": 2,
+      "title": "Principles behind design of Web APIs",
+      "number": "1"
+    },
+    {
+      "id": "priority-of-constituencies",
+      "href": "https://www.w3.org/TR/design-principles/#priority-of-constituencies",
+      "level": 3,
+      "title": "Put user needs first (Priority of Constituencies)",
+      "number": "1.1"
+    },
+    {
+      "id": "safe-to-browse",
+      "href": "https://www.w3.org/TR/design-principles/#safe-to-browse",
+      "level": 3,
+      "title": "It should be safe to visit a web page",
+      "number": "1.2"
+    },
+    {
+      "id": "trusted-ui",
+      "href": "https://www.w3.org/TR/design-principles/#trusted-ui",
+      "level": 3,
+      "title": "Trusted user interface should be trustworthy",
+      "number": "1.3"
+    },
+    {
+      "id": "consent",
+      "href": "https://www.w3.org/TR/design-principles/#consent",
+      "level": 3,
+      "title": "Ask users for meaningful consent",
+      "number": "1.4"
+    },
+    {
+      "id": "identity",
+      "href": "https://www.w3.org/TR/design-principles/#identity",
+      "level": 3,
+      "title": "Use identity appropriately in context",
+      "number": "1.5"
+    },
+    {
+      "id": "devices-platforms",
+      "href": "https://www.w3.org/TR/design-principles/#devices-platforms",
+      "level": 3,
+      "title": "Support the full range of devices and platforms (Media Independence)",
+      "number": "1.6"
+    },
+    {
+      "id": "new-features",
+      "href": "https://www.w3.org/TR/design-principles/#new-features",
+      "level": 3,
+      "title": "Add new capabilities with care",
+      "number": "1.7"
+    },
+    {
+      "id": "removing-features",
+      "href": "https://www.w3.org/TR/design-principles/#removing-features",
+      "level": 3,
+      "title": "Remove or change capabilities only once you understand existing usage",
+      "number": "1.8"
+    },
+    {
+      "id": "leave-the-web-better",
+      "href": "https://www.w3.org/TR/design-principles/#leave-the-web-better",
+      "level": 3,
+      "title": "Leave the web better than you found it",
+      "number": "1.9"
+    },
+    {
+      "id": "data-minimization",
+      "href": "https://www.w3.org/TR/design-principles/#data-minimization",
+      "level": 3,
+      "title": "Minimize user data",
+      "number": "1.10"
+    },
+    {
+      "id": "api-across-languages",
+      "href": "https://www.w3.org/TR/design-principles/#api-across-languages",
+      "level": 2,
+      "title": "API Design Across Languages",
+      "number": "2"
+    },
+    {
+      "id": "simplicity",
+      "href": "https://www.w3.org/TR/design-principles/#simplicity",
+      "level": 3,
+      "title": "Prefer simple solutions",
+      "number": "2.1"
+    },
+    {
+      "id": "high-level-low-level",
+      "href": "https://www.w3.org/TR/design-principles/#high-level-low-level",
+      "level": 3,
+      "title": "Consider tradeoffs between high level and low level APIs",
+      "number": "2.2"
+    },
+    {
+      "id": "name-thoughtfully",
+      "href": "https://www.w3.org/TR/design-principles/#name-thoughtfully",
+      "level": 3,
+      "title": "Name things thoughtfully",
+      "number": "2.3"
+    },
+    {
+      "id": "consistency",
+      "href": "https://www.w3.org/TR/design-principles/#consistency",
+      "level": 3,
+      "title": "Be consistent",
+      "number": "2.4"
+    },
+    {
+      "id": "specs-include-guidance",
+      "href": "https://www.w3.org/TR/design-principles/#specs-include-guidance",
+      "level": 3,
+      "title": "Follow guidance from feature specifications",
+      "number": "2.5"
+    },
+    {
+      "id": "feature-detect",
+      "href": "https://www.w3.org/TR/design-principles/#feature-detect",
+      "level": 3,
+      "title": "New features should be detectable",
+      "number": "2.6"
+    },
+    {
+      "id": "text-formats",
+      "href": "https://www.w3.org/TR/design-principles/#text-formats",
+      "level": 3,
+      "title": "Design textual formats for humans",
+      "number": "2.7"
+    },
+    {
+      "id": "secure-context",
+      "href": "https://www.w3.org/TR/design-principles/#secure-context",
+      "level": 3,
+      "title": "Consider limiting new features to secure contexts",
+      "number": "2.8"
+    },
+    {
+      "id": "do-not-expose-use-of-private-browsing-mode",
+      "href": "https://www.w3.org/TR/design-principles/#do-not-expose-use-of-private-browsing-mode",
+      "level": 3,
+      "title": "Don’t reveal that private browsing mode is engaged",
+      "number": "2.9"
+    },
+    {
+      "id": "private-browsing-mode",
+      "href": "https://www.w3.org/TR/design-principles/#private-browsing-mode",
+      "level": 3,
+      "title": "Consider how your API should behave in private browsing mode",
+      "number": "2.10"
+    },
+    {
+      "id": "do-not-expose-use-of-assistive-tech",
+      "href": "https://www.w3.org/TR/design-principles/#do-not-expose-use-of-assistive-tech",
+      "level": 3,
+      "title": "Don’t reveal that assistive technologies are being used",
+      "number": "2.11"
+    },
+    {
+      "id": "require-user-activation",
+      "href": "https://www.w3.org/TR/design-principles/#require-user-activation",
+      "level": 3,
+      "title": "Require user activation for powerful APIs",
+      "number": "2.12"
+    },
+    {
+      "id": "support-non-fully-active",
+      "href": "https://www.w3.org/TR/design-principles/#support-non-fully-active",
+      "level": 3,
+      "title": "Support non-fully active BFCached documents",
+      "number": "2.13"
+    },
+    {
+      "id": "third-party-tools",
+      "href": "https://www.w3.org/TR/design-principles/#third-party-tools",
+      "level": 3,
+      "title": "Prioritize usability over compatibility with third-party tools",
+      "number": "2.14"
+    },
+    {
+      "id": "prefer-composition",
+      "href": "https://www.w3.org/TR/design-principles/#prefer-composition",
+      "level": 3,
+      "title": "Build complex types by composing simpler types",
+      "number": "2.15"
+    },
+    {
+      "id": "html",
+      "href": "https://www.w3.org/TR/design-principles/#html",
+      "level": 2,
+      "title": "HTML",
+      "number": "3"
+    },
+    {
+      "id": "attribute-reuse",
+      "href": "https://www.w3.org/TR/design-principles/#attribute-reuse",
+      "level": 3,
+      "title": "Re-use HTML attribute names (only) for similar functionality",
+      "number": "3.1"
+    },
+    {
+      "id": "html-lists",
+      "href": "https://www.w3.org/TR/design-principles/#html-lists",
+      "level": 3,
+      "title": "Use space-separated attributes for short lists of values, separate elements for longer lists",
+      "number": "3.2"
+    },
+    {
+      "id": "avoid-html-parser-blocking",
+      "href": "https://www.w3.org/TR/design-principles/#avoid-html-parser-blocking",
+      "level": 3,
+      "title": "Do not pause the HTML parser",
+      "number": "3.3"
+    },
+    {
+      "id": "avoid-render-blocking",
+      "href": "https://www.w3.org/TR/design-principles/#avoid-render-blocking",
+      "level": 3,
+      "title": "Avoid features that block rendering",
+      "number": "3.4"
+    },
+    {
+      "id": "html-idl-must-by-synced",
+      "href": "https://www.w3.org/TR/design-principles/#html-idl-must-by-synced",
+      "level": 3,
+      "title": "Keep attributes in sync",
+      "number": "3.5"
+    },
+    {
+      "id": "naming-of-url-attributes",
+      "href": "https://www.w3.org/TR/design-principles/#naming-of-url-attributes",
+      "level": 3,
+      "title": "Name URL-containing attributes based on their primary purpose",
+      "number": "3.6"
+    },
+    {
+      "id": "html-overloading",
+      "href": "https://www.w3.org/TR/design-principles/#html-overloading",
+      "level": 3,
+      "title": "Give each HTML element a single purpose",
+      "number": "3.7"
+    },
+    {
+      "id": "css",
+      "href": "https://www.w3.org/TR/design-principles/#css",
+      "level": 2,
+      "title": "Cascading Style Sheets (CSS)",
+      "number": "4"
+    },
+    {
+      "id": "css-property-separation",
+      "href": "https://www.w3.org/TR/design-principles/#css-property-separation",
+      "level": 3,
+      "title": "Separate CSS properties based on what should cascade separately",
+      "number": "4.1"
+    },
+    {
+      "id": "css-inherited-or-not",
+      "href": "https://www.w3.org/TR/design-principles/#css-inherited-or-not",
+      "level": 3,
+      "title": "Make appropriate choices for whether CSS properties are inherited",
+      "number": "4.2"
+    },
+    {
+      "id": "css-computed-value",
+      "href": "https://www.w3.org/TR/design-principles/#css-computed-value",
+      "level": 3,
+      "title": "Choose the computed value type based on how the property should inherit",
+      "number": "4.3"
+    },
+    {
+      "id": "css-naming",
+      "href": "https://www.w3.org/TR/design-principles/#css-naming",
+      "level": 3,
+      "title": "Name CSS properties and values appropriately",
+      "number": "4.4"
+    },
+    {
+      "id": "css-content-should-be-visible",
+      "href": "https://www.w3.org/TR/design-principles/#css-content-should-be-visible",
+      "level": 3,
+      "title": "Content should be viewable and accessible by default",
+      "number": "4.5"
+    },
+    {
+      "id": "js",
+      "href": "https://www.w3.org/TR/design-principles/#js",
+      "level": 2,
+      "title": "JavaScript Language",
+      "number": "5"
+    },
+    {
+      "id": "js-only",
+      "href": "https://www.w3.org/TR/design-principles/#js-only",
+      "level": 3,
+      "title": "Use JavaScript for Web APIs",
+      "number": "5.1"
+    },
+    {
+      "id": "js-rtc",
+      "href": "https://www.w3.org/TR/design-principles/#js-rtc",
+      "level": 3,
+      "title": "Preserve run-to-completion semantics",
+      "number": "5.2"
+    },
+    {
+      "id": "js-gc",
+      "href": "https://www.w3.org/TR/design-principles/#js-gc",
+      "level": 3,
+      "title": "Don’t expose garbage collection",
+      "number": "5.3"
+    },
+    {
+      "id": "api-surface",
+      "href": "https://www.w3.org/TR/design-principles/#api-surface",
+      "level": 2,
+      "title": "JavaScript API Surface Concerns",
+      "number": "6"
+    },
+    {
+      "id": "attributes-like-data",
+      "href": "https://www.w3.org/TR/design-principles/#attributes-like-data",
+      "level": 3,
+      "title": "Attributes should behave like data properties",
+      "number": "6.1"
+    },
+    {
+      "id": "live-vs-static",
+      "href": "https://www.w3.org/TR/design-principles/#live-vs-static",
+      "level": 3,
+      "title": "Consider whether objects should be live or static",
+      "number": "6.2"
+    },
+    {
+      "id": "live-objects",
+      "href": "https://www.w3.org/TR/design-principles/#live-objects",
+      "level": 4,
+      "title": "Live objects"
+    },
+    {
+      "id": "static-objects",
+      "href": "https://www.w3.org/TR/design-principles/#static-objects",
+      "level": 4,
+      "title": "Static objects"
+    },
+    {
+      "id": "attributes-vs-methods",
+      "href": "https://www.w3.org/TR/design-principles/#attributes-vs-methods",
+      "level": 3,
+      "title": "Accessors should behave like properties, not methods",
+      "number": "6.3"
+    },
+    {
+      "id": "prefer-dictionaries",
+      "href": "https://www.w3.org/TR/design-principles/#prefer-dictionaries",
+      "level": 3,
+      "title": "Accept optional and/or primitive arguments through dictionaries",
+      "number": "6.4"
+    },
+    {
+      "id": "optional-parameters",
+      "href": "https://www.w3.org/TR/design-principles/#optional-parameters",
+      "level": 3,
+      "title": "Make method arguments optional if possible",
+      "number": "6.5"
+    },
+    {
+      "id": "naming-optional-parameters",
+      "href": "https://www.w3.org/TR/design-principles/#naming-optional-parameters",
+      "level": 3,
+      "title": "Name optional arguments appropriately",
+      "number": "6.6"
+    },
+    {
+      "id": "overloading",
+      "href": "https://www.w3.org/TR/design-principles/#overloading",
+      "level": 3,
+      "title": "Use overloading wisely",
+      "number": "6.7"
+    },
+    {
+      "id": "constructors",
+      "href": "https://www.w3.org/TR/design-principles/#constructors",
+      "level": 3,
+      "title": "Classes should have constructors when possible",
+      "number": "6.8"
+    },
+    {
+      "id": "synchronous",
+      "href": "https://www.w3.org/TR/design-principles/#synchronous",
+      "level": 3,
+      "title": "Be synchronous when appropriate",
+      "number": "6.9"
+    },
+    {
+      "id": "promises",
+      "href": "https://www.w3.org/TR/design-principles/#promises",
+      "level": 3,
+      "title": "Design asynchronous APIs using Promises",
+      "number": "6.10"
+    },
+    {
+      "id": "sync-callbacks",
+      "href": "https://www.w3.org/TR/design-principles/#sync-callbacks",
+      "level": 4,
+      "title": "When to use callback functions"
+    },
+    {
+      "id": "aborting",
+      "href": "https://www.w3.org/TR/design-principles/#aborting",
+      "level": 3,
+      "title": "Cancel asynchronous APIs/operations using AbortSignal",
+      "number": "6.11"
+    },
+    {
+      "id": "string-constants",
+      "href": "https://www.w3.org/TR/design-principles/#string-constants",
+      "level": 3,
+      "title": "Use strings for constants and enums",
+      "number": "6.12"
+    },
+    {
+      "id": "async-by-default",
+      "href": "https://www.w3.org/TR/design-principles/#async-by-default",
+      "level": 3,
+      "title": "If you need both asynchronous and synchronous methods, synchronous is the exception",
+      "number": "6.13"
+    },
+    {
+      "id": "uint8array",
+      "href": "https://www.w3.org/TR/design-principles/#uint8array",
+      "level": 3,
+      "title": "Output an array of bytes with Uint8Array",
+      "number": "6.14"
+    },
+    {
+      "id": "void-functions",
+      "href": "https://www.w3.org/TR/design-principles/#void-functions",
+      "level": 3,
+      "title": "Return undefined from side-effect-causing functions",
+      "number": "6.15"
+    },
+    {
+      "id": "event-design",
+      "href": "https://www.w3.org/TR/design-principles/#event-design",
+      "level": 2,
+      "title": "Event Design",
+      "number": "7"
+    },
+    {
+      "id": "one-time-events",
+      "href": "https://www.w3.org/TR/design-principles/#one-time-events",
+      "level": 3,
+      "title": "Use promises for one time events",
+      "number": "7.1"
+    },
+    {
+      "id": "promises-and-reaction",
+      "href": "https://www.w3.org/TR/design-principles/#promises-and-reaction",
+      "level": 3,
+      "title": "Don’t use promises for cancelable events",
+      "number": "7.2"
+    },
+    {
+      "id": "promises-and-events",
+      "href": "https://www.w3.org/TR/design-principles/#promises-and-events",
+      "level": 3,
+      "title": "Events should fire before related Promises resolve",
+      "number": "7.3"
+    },
+    {
+      "id": "dont-invent-event-like",
+      "href": "https://www.w3.org/TR/design-principles/#dont-invent-event-like",
+      "level": 3,
+      "title": "Don’t invent your own event listener-like infrastructure",
+      "number": "7.4"
+    },
+    {
+      "id": "always-add-event-handlers",
+      "href": "https://www.w3.org/TR/design-principles/#always-add-event-handlers",
+      "level": 3,
+      "title": "Always add event handler attributes",
+      "number": "7.5"
+    },
+    {
+      "id": "events-are-for-notification",
+      "href": "https://www.w3.org/TR/design-principles/#events-are-for-notification",
+      "level": 3,
+      "title": "Use events for notification",
+      "number": "7.6"
+    },
+    {
+      "id": "guard-against-recursion",
+      "href": "https://www.w3.org/TR/design-principles/#guard-against-recursion",
+      "level": 3,
+      "title": "Guard against potential recursion",
+      "number": "7.7"
+    },
+    {
+      "id": "state-and-subclassing",
+      "href": "https://www.w3.org/TR/design-principles/#state-and-subclassing",
+      "level": 3,
+      "title": "Use plain Events for state",
+      "number": "7.8"
+    },
+    {
+      "id": "events-vs-observers",
+      "href": "https://www.w3.org/TR/design-principles/#events-vs-observers",
+      "level": 3,
+      "title": "Use Events and Observers appropriately",
+      "number": "7.9"
+    },
+    {
+      "id": "types-and-units",
+      "href": "https://www.w3.org/TR/design-principles/#types-and-units",
+      "level": 2,
+      "title": "Web IDL, Types, and Units",
+      "number": "8"
+    },
+    {
+      "id": "numeric-types",
+      "href": "https://www.w3.org/TR/design-principles/#numeric-types",
+      "level": 3,
+      "title": "Use numeric types appropriately",
+      "number": "8.1"
+    },
+    {
+      "id": "idl-string-types",
+      "href": "https://www.w3.org/TR/design-principles/#idl-string-types",
+      "level": 3,
+      "title": "Represent strings appropriately",
+      "number": "8.2"
+    },
+    {
+      "id": "milliseconds",
+      "href": "https://www.w3.org/TR/design-principles/#milliseconds",
+      "level": 3,
+      "title": "Use milliseconds for time measurement",
+      "number": "8.3"
+    },
+    {
+      "id": "times-and-dates",
+      "href": "https://www.w3.org/TR/design-principles/#times-and-dates",
+      "level": 3,
+      "title": "Use the appropriate type to represent times and dates",
+      "number": "8.4"
+    },
+    {
+      "id": "error-types",
+      "href": "https://www.w3.org/TR/design-principles/#error-types",
+      "level": 3,
+      "title": "Use Error or DOMException for errors",
+      "number": "8.5"
+    },
+    {
+      "id": "device-apis",
+      "href": "https://www.w3.org/TR/design-principles/#device-apis",
+      "level": 2,
+      "title": "APIs that wrap access to device or browser capabilities",
+      "number": "9"
+    },
+    {
+      "id": "device-ids",
+      "href": "https://www.w3.org/TR/design-principles/#device-ids",
+      "level": 3,
+      "title": "Don’t expose unnecessary information about capabilities",
+      "number": "9.1"
+    },
+    {
+      "id": "device-enumeration",
+      "href": "https://www.w3.org/TR/design-principles/#device-enumeration",
+      "level": 3,
+      "title": "Use care when exposing APIs for selecting or enumerating devices",
+      "number": "9.2"
+    },
+    {
+      "id": "usecase-oriented-apis",
+      "href": "https://www.w3.org/TR/design-principles/#usecase-oriented-apis",
+      "level": 3,
+      "title": "Design based on user needs, not the underlying capability",
+      "number": "9.3"
+    },
+    {
+      "id": "hardware-is-scary",
+      "href": "https://www.w3.org/TR/design-principles/#hardware-is-scary",
+      "level": 3,
+      "title": "Be proactive about safety",
+      "number": "9.4"
+    },
+    {
+      "id": "wrapper-apis",
+      "href": "https://www.w3.org/TR/design-principles/#wrapper-apis",
+      "level": 3,
+      "title": "Adapt native APIs using web platform principles",
+      "number": "9.5"
+    },
+    {
+      "id": "other-considerations",
+      "href": "https://www.w3.org/TR/design-principles/#other-considerations",
+      "level": 2,
+      "title": "10. Other API Design Considerations"
+    },
+    {
+      "id": "polyfills",
+      "href": "https://www.w3.org/TR/design-principles/#polyfills",
+      "level": 3,
+      "title": "Enable polyfills for new features",
+      "number": "10.1"
+    },
+    {
+      "id": "consider-dedicatedworker-support",
+      "href": "https://www.w3.org/TR/design-principles/#consider-dedicatedworker-support",
+      "level": 3,
+      "title": "Where possible APIs should be made available to dedicated workers",
+      "number": "10.2"
+    },
+    {
+      "id": "worker-only",
+      "href": "https://www.w3.org/TR/design-principles/#worker-only",
+      "level": 4,
+      "title": "Some APIs should only be exposed to dedicated workers",
+      "number": "10.2.1"
+    },
+    {
+      "id": "expose-everywhere",
+      "href": "https://www.w3.org/TR/design-principles/#expose-everywhere",
+      "level": 3,
+      "title": "Only purely computational features should be exposed everywhere",
+      "number": "10.3"
+    },
+    {
+      "id": "new-data-formats",
+      "href": "https://www.w3.org/TR/design-principles/#new-data-formats",
+      "level": 3,
+      "title": "Add new data formats properly",
+      "number": "10.4"
+    },
+    {
+      "id": "extend-manifests",
+      "href": "https://www.w3.org/TR/design-principles/#extend-manifests",
+      "level": 3,
+      "title": "Extend existing manifest files rather than creating new ones",
+      "number": "10.5"
+    },
+    {
+      "id": "serialization",
+      "href": "https://www.w3.org/TR/design-principles/#serialization",
+      "level": 3,
+      "title": "Consider consumers when serializing",
+      "number": "10.6"
+    },
+    {
+      "id": "debuggability",
+      "href": "https://www.w3.org/TR/design-principles/#debuggability",
+      "level": 3,
+      "title": "Ensure features are developer-friendly",
+      "number": "10.7"
+    },
+    {
+      "id": "crypto",
+      "href": "https://www.w3.org/TR/design-principles/#crypto",
+      "level": 3,
+      "title": "Use the best crypto, and expect it to evolve",
+      "number": "10.8"
+    },
+    {
+      "id": "client-hints",
+      "href": "https://www.w3.org/TR/design-principles/#client-hints",
+      "level": 3,
+      "title": "Do not expose new information through Client Hints",
+      "number": "10.9"
+    },
+    {
+      "id": "spec-writing",
+      "href": "https://www.w3.org/TR/design-principles/#spec-writing",
+      "level": 2,
+      "title": "11. Writing good specifications"
+    },
+    {
+      "id": "requirements-on-authors-and-implementers",
+      "href": "https://www.w3.org/TR/design-principles/#requirements-on-authors-and-implementers",
+      "level": 3,
+      "title": "Identify the audience of each requirement in your specification",
+      "number": "11.1"
+    },
+    {
+      "id": "avoid-ambiguity",
+      "href": "https://www.w3.org/TR/design-principles/#avoid-ambiguity",
+      "level": 3,
+      "title": "Specify completely and avoid ambiguity",
+      "number": "11.2"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://www.w3.org/TR/design-principles/#algorithms",
+      "level": 4,
+      "title": "Define algorithms clearly",
+      "number": "11.2.1"
+    },
+    {
+      "id": "use-flags-for-states",
+      "href": "https://www.w3.org/TR/design-principles/#use-flags-for-states",
+      "level": 4,
+      "title": "Use explicit flags for state",
+      "number": "11.2.2"
+    },
+    {
+      "id": "implementability",
+      "href": "https://www.w3.org/TR/design-principles/#implementability",
+      "level": 3,
+      "title": "Resolving tension between interoperability and implementability",
+      "number": "11.3"
+    },
+    {
+      "id": "monkey-patching",
+      "href": "https://www.w3.org/TR/design-principles/#monkey-patching",
+      "level": 3,
+      "title": "Avoid monkey patching",
+      "number": "11.4"
+    },
+    {
+      "id": "cant-avoid-monkey-patching",
+      "href": "https://www.w3.org/TR/design-principles/#cant-avoid-monkey-patching",
+      "level": 4,
+      "title": "If you need to monkey patch",
+      "number": "11.4.1"
+    },
+    {
+      "id": "naming-is-hard",
+      "href": "https://www.w3.org/TR/design-principles/#naming-is-hard",
+      "level": 2,
+      "title": "12. Naming principles"
+    },
+    {
+      "id": "naming-common-words",
+      "href": "https://www.w3.org/TR/design-principles/#naming-common-words",
+      "level": 3,
+      "title": "Use common words",
+      "number": "12.1"
+    },
+    {
+      "id": "naming-charset",
+      "href": "https://www.w3.org/TR/design-principles/#naming-charset",
+      "level": 3,
+      "title": "Use ASCII names",
+      "number": "12.2"
+    },
+    {
+      "id": "naming-consultation",
+      "href": "https://www.w3.org/TR/design-principles/#naming-consultation",
+      "level": 3,
+      "title": "Consult others on naming",
+      "number": "12.3"
+    },
+    {
+      "id": "naming-web-consistency",
+      "href": "https://www.w3.org/TR/design-principles/#naming-web-consistency",
+      "level": 4,
+      "title": "Use Web consistent names"
+    },
+    {
+      "id": "naming-inclusive",
+      "href": "https://www.w3.org/TR/design-principles/#naming-inclusive",
+      "level": 4,
+      "title": "Use Inclusive Language"
+    },
+    {
+      "id": "naming-future-proofing",
+      "href": "https://www.w3.org/TR/design-principles/#naming-future-proofing",
+      "level": 3,
+      "title": "Use names that describe a purpose",
+      "number": "12.4"
+    },
+    {
+      "id": "naming-consistency",
+      "href": "https://www.w3.org/TR/design-principles/#naming-consistency",
+      "level": 3,
+      "title": "Name things consistently",
+      "number": "12.5"
+    },
+    {
+      "id": "naming-booleans",
+      "href": "https://www.w3.org/TR/design-principles/#naming-booleans",
+      "level": 4,
+      "title": "Boolean properties vs. boolean-returning methods"
+    },
+    {
+      "id": "casing-rules",
+      "href": "https://www.w3.org/TR/design-principles/#casing-rules",
+      "level": 4,
+      "title": "Use casing rules consistent with existing APIs"
+    },
+    {
+      "id": "factory-naming",
+      "href": "https://www.w3.org/TR/design-principles/#factory-naming",
+      "level": 4,
+      "title": "Start factory method names with create or from"
+    },
+    {
+      "id": "naming-unsafe",
+      "href": "https://www.w3.org/TR/design-principles/#naming-unsafe",
+      "level": 3,
+      "title": "Warn about dangerous features",
+      "number": "12.6"
+    },
+    {
+      "id": "writing-resources",
+      "href": "https://www.w3.org/TR/design-principles/#writing-resources",
+      "level": 2,
+      "title": "13. Other resources"
+    },
+    {
+      "id": "acks",
+      "href": "https://www.w3.org/TR/design-principles/#acks",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/design-principles/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/design-principles/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/design-principles/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/design-principles/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://www.w3.org/TR/design-principles/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://www.w3.org/TR/design-principles/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://www.w3.org/TR/design-principles/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    }
+  ]
+}
