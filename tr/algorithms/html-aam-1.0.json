@@ -34,16 +34,16 @@
           "html": "If the control has an <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-label\"><code>aria-label</code></a> or an <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-labelledby\"><code>aria-labelledby</code></a> attribute the\n              <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is to be calculated using the algorithm defined in\n              <a href=\"https://www.w3.org/TR/accname-1.2/\" class=\"accname\">Accessible Name and Description: Computation and <abbr title=\"application programming interface\">API</abbr> Mappings</a>."
         },
         {
-          "html": "Otherwise use the associated <code>label</code> element(s) <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a>(s) - if more than one <code>label</code> is associated; concatenate by DOM order,\n              delimited by spaces."
+          "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty: use the <a href=\"https://www.w3.org/TR/accname-1.2/#mapping_additional_nd_te\">text equivalent computation</a> of\n              the associated <code>label</code> element's subtree - if more than one <code>label</code> is associated; concatenate their subtrees by DOM order, delimited by spaces.\n              <p>\n                If the control is encapsulated by its <code>label</code> element, and the control has an author specified <code>value</code> or the lack of a <code>value</code> has produced an\n                <a href=\"https://infra.spec.whatwg.org/#implementation-defined\">implementation defined</a> string to render, then exclude either from the control's computed\n                <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a>.\n              </p>"
         },
         {
-          "html": "Otherwise use the <code>value</code> attribute."
+          "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty: use the value of the control's <code>value</code> attribute."
         },
         {
-          "html": "For <code>input type=submit</code> and <code>type=reset</code>: if the prior steps do not yield a usable text string, and the <code>value</code> attribute is unspecified use the\n              <a href=\"https://infra.spec.whatwg.org/#implementation-defined\">implementation defined</a> string respective to the input type."
+          "html": "For <code>input type=submit</code> and <code>type=reset</code>: if the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty, and the <code>value</code> attribute is unspecified, use the\n              <a href=\"https://infra.spec.whatwg.org/#implementation-defined\">implementation defined</a> string respective to the input type. For instance, a localized string of the word \"submit\" or\n              \"reset\" respective to the type of <code>input</code>."
         },
         {
-          "html": "Otherwise, if the control still has no <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> use <code>title</code> attribute."
+          "html": "Otherwise: use the value of the control's <code>title</code> attribute."
         },
         {
           "html": "If none of the above yield a usable text string there is no <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a>."
@@ -57,16 +57,16 @@
           "html": "If the control has an <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-label\"><code>aria-label</code></a> or an <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-labelledby\"><code>aria-labelledby</code></a> attribute the\n              <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is to be calculated using the algorithm defined in\n              <a href=\"https://www.w3.org/TR/accname-1.2/\" class=\"accname\">Accessible Name and Description: Computation and <abbr title=\"application programming interface\">API</abbr> Mappings</a>."
         },
         {
-          "html": "Otherwise use the associated <code>label</code> element(s) <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a>(s) - if more than one <code>label</code> is associated; concatenate by DOM order,\n              delimited by spaces."
+          "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty: use the <a href=\"https://www.w3.org/TR/accname-1.2/#mapping_additional_nd_te\">text equivalent computation</a> of\n              the associated <code>label</code> element's subtree - if more than one <code>label</code> is associated; concatenate their subtrees by DOM order, delimited by spaces.\n              <p>\n                If the control is encapsulated by its <code>label</code> element, and the control has an <code>alt</code> attribute, then exclude the attribute's value from the control's computed\n                <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a>.\n              </p>"
         },
         {
-          "html": "Otherwise use <code>alt</code> attribute if present and its value is not the empty string."
+          "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty: use the value of the control's <code>alt</code> attribute if present and its value is not the empty\n              string."
         },
         {
-          "html": "Otherwise use <code>title</code> attribute if present and its value is not the empty string."
+          "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty: use the value of the control's <code>title</code> attribute if present and its value is not the empty\n              string."
         },
         {
-          "html": "Otherwise if the previous steps do not yield a usable text string, use the\n              <a href=\"https://infra.spec.whatwg.org/#implementation-defined\">implementation defined</a> string respective to the input type (an <code>input</code> in the <code>image</code> state represents a\n              <a href=\"https://html.spec.whatwg.org/multipage/forms.html#concept-submit-button\">submit button</a>). For instance, a localized string of the word \"submit\" or the words \"Submit Query\"."
+          "html": "Otherwise, if the previous steps do not yield a usable text string: use the <a href=\"https://infra.spec.whatwg.org/#implementation-defined\">implementation defined</a> string respective\n              to the input type (an <code>input</code> in the <code>image</code> state represents a <a href=\"https://html.spec.whatwg.org/multipage/forms.html#concept-submit-button\">submit button</a>). For instance, a localized string of the word\n              \"submit\" or the words \"Submit Query\"."
         },
         {
           "html": "If none of the above yield a usable text string there is no <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a>."
@@ -80,13 +80,13 @@
           "html": "If the <code>button</code> element has an <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-label\"><code>aria-label</code></a> or an <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-labelledby\"><code>aria-labelledby</code></a> attribute the\n              <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is to be calculated using the algorithm defined in\n              <a href=\"https://www.w3.org/TR/accname-1.2/\" class=\"accname\">Accessible Name and Description: Computation and <abbr title=\"application programming interface\">API</abbr> Mappings</a>."
         },
         {
-          "html": "Otherwise use the associated <code>label</code> element(s) <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a>(s) - if more than one <code>label</code> is associated; concatenate by DOM order,\n              delimited by spaces."
+          "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty: use the <a href=\"https://www.w3.org/TR/accname-1.2/#mapping_additional_nd_te\">text equivalent computation</a> of\n              the associated <code>label</code> element's subtree - if more than one <code>label</code> is associated; concatenate their subtrees by DOM order, delimited by spaces.\n              <p>\n                If the <code>button</code> element is encapsulated by its <code>label</code> element, ignore the <code>button</code> element's subtree from its computed\n                <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a>.\n              </p>"
         },
         {
-          "html": "Otherwise use the <code>button</code> element subtree."
+          "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty: use the <a href=\"https://www.w3.org/TR/accname-1.2/#mapping_additional_nd_te\">text equivalent computation</a> of\n              the element's subtree."
         },
         {
-          "html": "Otherwise use <code>title</code> attribute."
+          "html": "Otherwise: use the value of the element's <code>title</code> attribute."
         },
         {
           "html": "If none of the above yield a usable text string there is no <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a>."
