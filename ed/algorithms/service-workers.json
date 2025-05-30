@@ -3974,13 +3974,22 @@
                       "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#queue-dequeue\" id=\"ref-for-queue-dequeue①\">dequeue</a> <var>queue</var>.</p>"
                     },
                     {
-                      "html": "<p>Set <var>timingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-timing-info-worker-final-router-source\" id=\"ref-for-service-worker-timing-info-worker-final-router-source②\">worker final router source</a> be set to <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-result-used-route\" id=\"ref-for-race-result-used-route③\">used route</a>.</p>"
+                      "html": "<p>Let <var>routedResponse</var> be <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-result-routed-response\" id=\"ref-for-race-result-routed-response③\">routed response</a>.</p>"
                     },
                     {
-                      "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-timing-info\" id=\"ref-for-service-worker-timing-info③\">service worker timing info</a> be set to <var>timingInfo</var>.</p>"
+                      "html": "If <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-result-used-route\" id=\"ref-for-race-result-used-route③\">used route</a> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routersourceenum-network\" id=\"ref-for-dom-routersourceenum-network③\">\"network\"</a></code>, then:",
+                      "rationale": "set",
+                      "steps": [
+                        {
+                          "html": "<p>Set <var>routedResponse</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-timing-info\" id=\"ref-for-service-worker-timing-info③\">service worker timing info</a> be set to <var>timingInfo</var>.</p>"
+                        }
+                      ]
                     },
                     {
-                      "html": "<p>Return <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-race-response\" id=\"ref-for-dfn-race-response③\">race response</a>.</p>"
+                      "html": "<p>Set <var>routedResponse</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-timing-info\" id=\"ref-for-service-worker-timing-info④\">service worker timing info</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-timing-info-worker-final-router-source\" id=\"ref-for-service-worker-timing-info-worker-final-router-source②\">worker final router source</a> be set to <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-result-used-route\" id=\"ref-for-race-result-used-route④\">used route</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Return <var>routedResponse</var>.</p>"
                     }
                   ]
                 },
@@ -4055,11 +4064,26 @@
           "html": "<p>Let <var>fetchResult</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#create-fetch-event-and-dispatch\" id=\"ref-for-create-fetch-event-and-dispatch①\">Create Fetch Event and Dispatch</a> with <var>request</var>, <var>registration</var>, <var>useHighResPerformanceTimers</var>, <var>timingInfo</var>, <var>workerRealm</var>, <var>reservedClient</var>, <var>preloadResponse</var>, and null.</p>"
         },
         {
-          "html": "If <var>fetchResult</var> is not null and <var>fetchResult</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-service-worker-timing-info\" id=\"ref-for-response-service-worker-timing-info\">service worker timing info</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-timing-info-worker-final-router-source\" id=\"ref-for-service-worker-timing-info-worker-final-router-source③\">worker final router source</a> is set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routersourceenum-network\" id=\"ref-for-dom-routersourceenum-network③\">\"network\"</a></code>:",
-          "rationale": "set",
+          "html": "If <var>timingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-timing-info-worker-final-router-source\" id=\"ref-for-service-worker-timing-info-worker-final-router-source③\">worker final router source</a> is not an empty string:",
+          "rationale": "assert",
           "steps": [
             {
-              "html": "<p>Set <var>fetchResult</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-service-worker-timing-info\" id=\"ref-for-response-service-worker-timing-info①\">service worker timing info</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-timing-info-worker-final-router-source\" id=\"ref-for-service-worker-timing-info-worker-final-router-source④\">worker final router source</a> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routersourceenum-fetch-event\" id=\"ref-for-dom-routersourceenum-fetch-event③\">\"fetch-event\"</a></code>.</p>"
+              "html": "<p>Assert <var>timingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-timing-info-worker-final-router-source\" id=\"ref-for-service-worker-timing-info-worker-final-router-source④\">worker final router source</a> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routersourceenum-network\" id=\"ref-for-dom-routersourceenum-network④\">\"network\"</a></code>.</p>"
+            },
+            {
+              "html": "<p>If <var>fetchResult</var> is null, then return <var>timingInfo</var>.</p>"
+            },
+            {
+              "html": "Else:",
+              "rationale": "assert",
+              "steps": [
+                {
+                  "html": "<p>Assert <var>fetchResult</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-service-worker-timing-info\" id=\"ref-for-response-service-worker-timing-info\">service worker timing info</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-timing-info-worker-final-router-source\" id=\"ref-for-service-worker-timing-info-worker-final-router-source⑤\">worker final router source</a> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routersourceenum-network\" id=\"ref-for-dom-routersourceenum-network⑤\">\"network\"</a></code>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>fetchResult</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-service-worker-timing-info\" id=\"ref-for-response-service-worker-timing-info①\">service worker timing info</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-timing-info-worker-final-router-source\" id=\"ref-for-service-worker-timing-info-worker-final-router-source⑥\">worker final router source</a> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routersourceenum-fetch-event\" id=\"ref-for-dom-routersourceenum-fetch-event③\">\"fetch-event\"</a></code>.</p>"
+                }
+              ]
             }
           ]
         },
