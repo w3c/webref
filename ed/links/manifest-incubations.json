@@ -6,6 +6,7 @@
   "links": {
     "rawlinks": {
       "https://dom.spec.whatwg.org/": {},
+      "https://fetch.spec.whatwg.org/": {},
       "https://fs.spec.whatwg.org/": {},
       "https://github.com/WICG/manifest-incubations/issues/": {},
       "https://github.com/WICG/manifest-incubations/issues/97": {},
@@ -83,9 +84,19 @@
           "dom-event-istrusted"
         ]
       },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-fetch"
+        ]
+      },
       "https://fs.spec.whatwg.org/": {
         "anchors": [
           "filesystemhandle"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "concept-origin"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
@@ -96,7 +107,8 @@
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
           "top-level-traversable",
-          "top-level-browsing-context"
+          "top-level-browsing-context",
+          "nav-document"
         ]
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -170,7 +182,9 @@
           "concept-url-fragment",
           "concept-url-query",
           "concept-url-parser",
-          "concept-url-path"
+          "concept-url-path",
+          "concept-url-scheme",
+          "concept-url-origin"
         ]
       },
       "https://urlpattern.spec.whatwg.org/": {
@@ -222,7 +236,9 @@
           "dfn-launching-a-web-application",
           "dfn-installed-web-application",
           "dfn-start_url",
-          "dfn-scope"
+          "dfn-scope",
+          "dfn-navigation-scope",
+          "dfn-id"
         ]
       }
     }

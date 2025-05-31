@@ -43,6 +43,9 @@
         },
         {
           "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/manifest-incubations/#dfn-process-the-related_applications-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-related_applications-member-1\">Process the <code>related_applications</code> member</a>, passing <var data-type=\"ordered map\">json</var> and\n        <var data-type=\"ordered map\">manifest</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/manifest-incubations/#dfn-process-the-scope_extensions-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-scope_extensions-member-1\">Process the <code>scope_extensions</code> member</a>, passing <var data-type=\"ordered map\">json</var> and\n        <var data-type=\"ordered map\">manifest</var>."
         }
       ]
     },
@@ -532,6 +535,120 @@
         },
         {
           "html": "Set <var data-type=\"list\">relatedApplications</var>."
+        }
+      ]
+    },
+    {
+      "name": "matches a validated scope extension",
+      "href": "https://wicg.github.io/manifest-incubations/#dfn-matches-a-validated-scope-extension",
+      "html": "A <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">target</var> <dfn id=\"dfn-matches-a-validated-scope-extension\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">matches a validated scope extension</dfn> if\n        the following algorithm returns <code>true</code>, given <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">target</var> and\n        <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" href=\"https://infra.spec.whatwg.org/#list\">list</a> <var data-type=\"list\">validated_scope_extensions</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-iterate\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"ordered map\">entry</var> of\n          <var data-type=\"list\">validated_scope_extensions</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"ordered map\">entry</var> is not an <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>, or <var data-type=\"ordered map\">entry</var>[\"scope\"] does not\n              <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a> or is not a <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a>, continue."
+            },
+            {
+              "html": "Let <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">resolved_scope</var> be <var data-type=\"ordered\n              map\">entry</var>[\"scope\"]."
+            },
+            {
+              "html": "If <var data-type=\"URL\">target</var> is <a data-link-type=\"dfn\" data-link-for=\"URL\" data-xref-for=\"URL\" data-cite=\"appmanifest\" data-cite-path=\"\" data-cite-frag=\"dfn-within-scope\" href=\"https://www.w3.org/TR/appmanifest/#dfn-within-scope\">within scope</a> of <var data-type=\"URL\">resolved_scope</var>, return\n              <code>true</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <code>false</code>."
+        }
+      ]
+    },
+    {
+      "name": "process the scope_extensions member",
+      "href": "https://wicg.github.io/manifest-incubations/#dfn-process-the-scope_extensions-member",
+      "html": "To <dfn id=\"dfn-process-the-scope_extensions-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>scope_extensions</code> member</dfn>, given <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var>, <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>, and\n        <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">manifest_id</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"list\">processedScopeExtensions</var> be a new <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+        },
+        {
+          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"scope_extensions\"] to <var data-type=\"list\">processedScopeExtensions</var>."
+        },
+        {
+          "html": "If <var data-type=\"ordered map\">json</var>[\"scope_extensions\"] does not <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a> or is not a \n          <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" href=\"https://infra.spec.whatwg.org/#list\">list</a>, return."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-iterate\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"ordered map\">entry</var> of <var data-type=\"ordered map\">json</var>[\"scope_extensions\"]:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"ordered map\">entry</var>[\"type\"] or <var data-type=\"ordered map\">entry</var>[\"origin\"] do not <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>,\n              <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
+            },
+            {
+              "html": "If <var data-type=\"ordered map\">entry</var>[\"type\"] is not \"origin\", <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
+            },
+            {
+              "html": "If <var data-type=\"ordered map\">entry</var>[\"origin\"] is not a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>,\n              <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
+            },
+            {
+              "html": "Let <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">origin_url</var> be the result of <a data-link-type=\"dfn\" data-lt=\"URL Parser\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a> <var data-type=\"ordered map\">entry</var>[\"origin\"]."
+            },
+            {
+              "html": "If <var data-type=\"URL\">origin_url</var> is a valid <var>URL</var> with <a data-link-type=\"dfn\" data-link-for=\"url\" data-xref-for=\"URL\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-scheme\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\">scheme</a> \"https\",\n              set <var data-type=\"ordered map\">entry</var>[\"origin\"] to the <a data-link-type=\"dfn\" data-link-for=\"url\" data-xref-for=\"URL\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-origin\" href=\"https://url.spec.whatwg.org/#concept-url-origin\">origin</a> of <var data-type=\"URL\">origin_url</var>."
+            },
+            {
+              "html": "Else <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
+            },
+            {
+              "html": "Validate <var data-type=\"ordered map\">entry</var> using the algorithm from <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/manifest-incubations/#dfn-validate-scope-extensions\" class=\"internalDFN\" id=\"ref-for-dfn-validate-scope-extensions-2\">validate scope extensions</a>, given <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">entry</var> and \n              <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">manifest_id</var>."
+            },
+            {
+              "html": "If the previous step returned an error, <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
+            },
+            {
+              "html": "Else, set <var data-type=\"ordered map\">entry</var>[\"scope\"] to the returned <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-append\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"ordered map\">entry</var> to <var data-type=\"list\">processedScopeExtensions</var>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "validate scope extensions",
+      "href": "https://wicg.github.io/manifest-incubations/#dfn-validate-scope-extensions",
+      "html": "To <dfn id=\"dfn-validate-scope-extensions\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">validate scope extensions</dfn>, given <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> \n        <var data-type=\"ordered map\">extension</var> and <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">manifest_id</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">origin_url</var> be the <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> of the <a data-link-type=\"dfn\" data-link-for=\"url\" data-xref-for=\"URL\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-origin\" href=\"https://url.spec.whatwg.org/#concept-url-origin\">origin</a>\n          <var data-type=\"ordered map\">extension</var>[\"origin\"]."
+        },
+        {
+          "html": "Let <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">download_url</var> be the result of <a data-link-type=\"dfn\" data-lt=\"URL Parser\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a> \"/.well-known/web-app-origin-association\" using \n          <var data-type=\"URL\">origin_url</var> as the base <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a>."
+        },
+        {
+          "html": "Let <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> be the result of a <a data-link-type=\"dfn\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-fetch\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\">fetch</a> \n          given <var data-type=\"URL\">download_url</var>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-fetch\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\">fetch</a> failed, return an error."
+        },
+        {
+          "html": "If <var data-type=\"ordered map\">json</var>[<var data-type=\"URL\">manifest_id</var>] does not <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a> or is not an \n          <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>, return an error."
+        },
+        {
+          "html": "Let <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a> <var data-type=\"string\">scope</var> be \"/\"."
+        },
+        {
+          "html": "If <var data-type=\"ordered map\">json</var>[<var data-type=\"URL\">manifest_id</var>][\"scope\"] <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a\n          <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, set <var data-type=\"string\">scope</var> to <var data-type=\"ordered map\">json</var>[<var data-type=\"URL\">manifest_id</var>][\"scope\"]."
+        },
+        {
+          "html": "Let <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">resolved_scope</var> be the result of <a data-link-type=\"dfn\" data-lt=\"URL Parser\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a> <var data-type=\"string\">scope</var> with <var data-type=\"ordered map\">extension</var>[\"origin\"] as the base \n          <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a>."
+        },
+        {
+          "html": "Return <var data-type=\"URL\">resolved_scope</var>."
         }
       ]
     },

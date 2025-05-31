@@ -581,6 +581,46 @@
       "definedIn": "dt"
     },
     {
+      "id": "continuation-state",
+      "href": "https://wicg.github.io/scheduling-apis/#continuation-state",
+      "linkingText": [
+        "continuation state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduling-tasks-definitions",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-definitions",
+        "title": "Definitions",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "continuation-state-state-map",
+      "href": "https://wicg.github.io/scheduling-apis/#continuation-state-state-map",
+      "linkingText": [
+        "state map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "continuation state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduling-tasks-definitions",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-definitions",
+        "title": "Definitions",
+        "number": "2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "task-handle",
       "href": "https://wicg.github.io/scheduling-apis/#task-handle",
       "linkingText": [
@@ -842,6 +882,44 @@
         "href": "https://wicg.github.io/scheduling-apis/#sec-queuing-scheduler-tasks",
         "title": "Queueing and Removing Scheduler Tasks",
         "number": "2.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-the-current-scheduling-state",
+      "href": "https://wicg.github.io/scheduling-apis/#set-the-current-scheduling-state",
+      "linkingText": [
+        "set the current scheduling state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduler-alg-scheduling-tasks-and-continuations",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler-alg-scheduling-tasks-and-continuations",
+        "title": "Scheduling Tasks and Continuations",
+        "number": "2.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-current-scheduling-state",
+      "href": "https://wicg.github.io/scheduling-apis/#get-the-current-scheduling-state",
+      "linkingText": [
+        "get the current scheduling state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduler-alg-scheduling-tasks-and-continuations",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler-alg-scheduling-tasks-and-continuations",
+        "title": "Scheduling Tasks and Continuations",
+        "number": "2.4.2"
       },
       "definedIn": "prose"
     },
@@ -1754,16 +1832,54 @@
       "definedIn": "prose"
     },
     {
-      "id": "event-loop-current-scheduling-state",
-      "href": "https://wicg.github.io/scheduling-apis/#event-loop-current-scheduling-state",
+      "id": "event-loop-current-continuation-state",
+      "href": "https://wicg.github.io/scheduling-apis/#event-loop-current-continuation-state",
       "linkingText": [
-        "current scheduling state"
+        "current continuation state"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
         "event loop"
       ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-patches-html-event-loop-definitions",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-patches-html-event-loop-definitions",
+        "title": "Event loop: definitions",
+        "number": "4.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-the-continuation-state-value",
+      "href": "https://wicg.github.io/scheduling-apis/#set-the-continuation-state-value",
+      "linkingText": [
+        "set the continuation state value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-patches-html-event-loop-definitions",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-patches-html-event-loop-definitions",
+        "title": "Event loop: definitions",
+        "number": "4.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-continuation-state-value",
+      "href": "https://wicg.github.io/scheduling-apis/#get-the-continuation-state-value",
+      "linkingText": [
+        "get the continuation state value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
