@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-05-31T01:36:29.415Z",
+  "date": "2025-06-01T01:37:05.040Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -706,7 +706,7 @@
   },
   "stats": {
     "crawled": 367,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-18.7.3",
   "results": [
@@ -754,7 +754,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "31 May 2025",
+      "date": "1 June 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -10232,11 +10232,11 @@
       ],
       "crawled": "https://www.w3.org/TR/did-1.1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 08 Apr 2025 07:26:14 GMT"
+        "lastModified": "Sat, 31 May 2025 20:04:24 GMT"
       },
       "generator": "respec",
-      "date": "08 April 2025",
-      "revision": "20229606b687dfe98d66b9c0a43e272d7e6cf6d2",
+      "date": "31 May 2025",
+      "revision": "d0be1f3f231978cfbc75547dc3746f7312fe1e68",
       "algorithms": "algorithms/did-1.1.json",
       "links": "links/did-1.1.json",
       "refs": "refs/did-1.1.json",
@@ -23183,7 +23183,8 @@
       "dfns": "dfns/webrtc-svc.json",
       "headings": "headings/webrtc-svc.json",
       "ids": "ids/webrtc-svc.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/webrtc-svc/ triggered HTTP status 520\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 350)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/webrtc/",
