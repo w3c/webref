@@ -17,7 +17,7 @@
           "html": "<p>If <var>url</var> was not provided by the caller, let <var>url</var> be <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#creation-url\" id=\"ref-for-creation-url\">creation URL</a>.</p>"
         },
         {
-          "html": "<p>Set <var>url</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#concept-url-username\" id=\"ref-for-concept-url-username\">username</a></code> to the empty string, and its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#concept-url-password\" id=\"ref-for-concept-url-password\">password</a></code> to <code>null</code>.</p>"
+          "html": "<p>Set <var>url</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#dom-url-username\" id=\"ref-for-dom-url-username\">username</a></code> to the empty string, and its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#dom-url-password\" id=\"ref-for-dom-url-password\">password</a></code> to <code>null</code>.</p>"
         },
         {
           "html": "<p>Set <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#report-url\" id=\"ref-for-report-url\">url</a> to the result of executing the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer\">URL\n  serializer</a> on <var>url</var> with the <em>exclude fragment flag</em> set.</p>"
@@ -235,6 +235,27 @@
         },
         {
           "html": "<p>Return \"<code>Failure</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "html": "Given an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#endpoint\" id=\"ref-for-endpoint①③\">endpoint</a> (<var>endpoint</var>), an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#origin\" id=\"ref-for-origin④\">origin</a> (<var>origin</var>), and a list of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#windoworworkerglobalscope-reports\" id=\"ref-for-windoworworkerglobalscope-reports⑤\">reports</a> (<var>reports</var>), this algorithm will\n  construct a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">request</a>, and attempt to deliver it to <var>endpoint</var>. It\n  returns \"<code>Success</code>\" if that delivery succeeds, \"<code>Remove Endpoint</code>\" if the\n  endpoint explicitly removes itself as a reporting endpoint by sending a 410\n  response, and \"<code>Failure</code>\" otherwise.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is not an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#http-scheme\" id=\"ref-for-http-scheme\">HTTP(S) scheme</a>,\n then return <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment\">fragment</a> to the empty string.</p>"
+        },
+        {
+          "html": "<p>Set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-username\" id=\"ref-for-concept-url-username\">username</a> to the empty string.</p>"
+        },
+        {
+          "html": "<p>Set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-password\" id=\"ref-for-concept-url-password\">password</a> to the empty string.</p>"
+        },
+        {
+          "html": "<p>Return the result of executing the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer①\">URL serializer</a> on <var>url</var>.</p>"
         }
       ]
     },
