@@ -17,10 +17,7 @@
           "html": "<p>If <var>rule</var> has a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-conditional-3/#typedef-supports-condition\" id=\"ref-for-typedef-supports-condition⑥\">&lt;supports-condition&gt;</a>,\nand that condition is not true,\nreturn.</p>"
         },
         {
-          "html": "<p>Let <var>parsedUrl</var> be the result of the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">URL parser</a> steps with <var>rule</var>’s URL and <var>parentStylesheet</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-location\" id=\"ref-for-concept-css-style-sheet-location\">location</a>.\nIf the algorithm returns an error,\nreturn. <a data-link-type=\"biblio\" href=\"https://drafts.csswg.org/css-cascade-4/#biblio-cssom\" title=\"CSS Object Model (CSSOM)\">[CSSOM]</a></p>"
-        },
-        {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#fetch-a-style-resource\" id=\"ref-for-fetch-a-style-resource\">Fetch a style resource</a> from <var>parsedUrl</var>,\nwith stylesheet <var>parentStylesheet</var>,\ndestination \"style\",\nCORS mode \"no-cors\",\nand processResponse being the following steps given <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>response</var> and\nbyte stream, null or failure <var>byteStream</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#fetch-a-style-resource\" id=\"ref-for-fetch-a-style-resource\">Fetch a style resource</a> from <var>rule</var>’s URL,\nwith ruleOrDeclaration <var>rule</var>,\ndestination \"style\",\nCORS mode \"no-cors\",\nand processResponse being the following steps given <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>response</var> and\nbyte stream, null or failure <var>byteStream</var>:",
           "rationale": "if",
           "steps": [
             {
