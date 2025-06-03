@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "PerformanceElementTiming": {
-        "fragment": "[Exposed=Window]\ninterface PerformanceElementTiming : PerformanceEntry {\n    readonly attribute DOMHighResTimeStamp renderTime;\n    readonly attribute DOMHighResTimeStamp loadTime;\n    readonly attribute DOMRectReadOnly intersectionRect;\n    readonly attribute DOMString identifier;\n    readonly attribute unsigned long naturalWidth;\n    readonly attribute unsigned long naturalHeight;\n    readonly attribute DOMString id;\n    readonly attribute Element? element;\n    readonly attribute DOMString url;\n    [Default] object toJSON();\n};",
+        "fragment": "[Exposed=Window]\ninterface PerformanceElementTiming : PerformanceEntry {\n    readonly attribute DOMHighResTimeStamp renderTime;\n    readonly attribute DOMHighResTimeStamp loadTime;\n    readonly attribute DOMRectReadOnly intersectionRect;\n    readonly attribute DOMString identifier;\n    readonly attribute unsigned long naturalWidth;\n    readonly attribute unsigned long naturalHeight;\n    readonly attribute DOMString id;\n    readonly attribute Element? element;\n    readonly attribute USVString url;\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "PerformanceElementTiming",
         "inheritance": "PerformanceEntry",
@@ -156,7 +156,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "USVString"
             },
             "extAttrs": [],
             "special": "",

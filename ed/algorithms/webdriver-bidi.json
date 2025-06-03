@@ -3684,7 +3684,10 @@
           "html": "<p>Let <var>url</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer④\">URL serializer</a>,\n given <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-bc\" id=\"ref-for-nav-bc\">active browsing context</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①⑤\">active document</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-url\" id=\"ref-for-concept-document-url②\">URL</a>.</p>"
         },
         {
-          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⑦\">map</a> matching the <code>browsingContext.HistoryUpdatedParameters</code> production,\n with the <code>url</code> field set to <var>url</var> and\n the <code>context</code> field set to <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①③\">navigable id</a>.</p>"
+          "html": "<p>Let <var>timestamp</var> be a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-time-values-and-time-range\" id=\"ref-for-sec-time-values-and-time-range①\">time value</a> representing the current date and time in UTC.</p>"
+        },
+        {
+          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⑦\">map</a> matching the <code>browsingContext.HistoryUpdatedParameters</code> production,\n with the <code>url</code> field set to <var>url</var>,\n the <code>timestamp</code> field set to <var>timestamp</var> and\n the <code>context</code> field set to <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①③\">navigable id</a>.</p>"
         },
         {
           "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⑧\">map</a> matching the <code>browsingContext.HistoryUpdated</code> production, with the <code>params</code> field set to <var>params</var>.</p>"
@@ -4419,7 +4422,7 @@
           "html": "<p>Let <var>redirect count</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-count\" id=\"ref-for-concept-request-redirect-count\">redirect count</a>.</p>"
         },
         {
-          "html": "<p>Let <var>timestamp</var> be a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-time-values-and-time-range\" id=\"ref-for-sec-time-values-and-time-range①\">time value</a> representing the current date and time in UTC.</p>"
+          "html": "<p>Let <var>timestamp</var> be a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-time-values-and-time-range\" id=\"ref-for-sec-time-values-and-time-range②\">time value</a> representing the current date and time in UTC.</p>"
         },
         {
           "html": "<p>If <var>intercepts</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty⑨\">empty</a>, let <var>is blocked</var> be true, otherwise\n let <var>is blocked</var> be false.</p>"
@@ -8783,7 +8786,7 @@
               "html": "<p>If <var>method</var> is \"<code>error</code>\" or \"<code>assert</code>\", let <var>level</var> be\n \"<code>error</code>\". If <var>method</var> is \"<code>debug</code>\" or \"<code>trace</code>\"\n let <var>level</var> be \"<code>debug</code>\". If <var>method</var> is \"<code>warn</code>\", let <var>level</var> be \"<code>warn</code>\". Otherwise let <var>level</var> be \"<code>info</code>\".</p>"
             },
             {
-              "html": "<p>Let <var>timestamp</var> be a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-time-values-and-time-range\" id=\"ref-for-sec-time-values-and-time-range②\">time value</a> representing the current date and time in UTC.</p>"
+              "html": "<p>Let <var>timestamp</var> be a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-time-values-and-time-range\" id=\"ref-for-sec-time-values-and-time-range③\">time value</a> representing the current date and time in UTC.</p>"
             },
             {
               "html": "<p>Let <var>text</var> be an empty string.</p>"
@@ -8861,7 +8864,7 @@
           "html": "<p>Let <var>settings</var> be <var>script</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#settings-object\" id=\"ref-for-settings-object①\">settings object</a>.</p>"
         },
         {
-          "html": "<p>Let <var>timestamp</var> be a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-time-values-and-time-range\" id=\"ref-for-sec-time-values-and-time-range③\">time value</a> representing the current date and time in UTC.</p>"
+          "html": "<p>Let <var>timestamp</var> be a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-time-values-and-time-range\" id=\"ref-for-sec-time-values-and-time-range④\">time value</a> representing the current date and time in UTC.</p>"
         },
         {
           "html": "<p>Let <var>stack</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#stack-trace-for-an-exception\" id=\"ref-for-stack-trace-for-an-exception①\">stack trace for an exception</a> with the exception\n corresponding to the error being reported.</p>"
