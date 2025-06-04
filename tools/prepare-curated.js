@@ -4,7 +4,7 @@
  * Curation means copying raw data to the given folder, applying patches (CSS,
  * elements, events, IDL) when needed and running post-processing modules that
  * need to run on curated data to generate the `idlparsed`, `idlnames` and
- * `idlnamesparsed` folders, and the merged `events.json` file
+ * `idlnamesparsed` folders, and the merged `events.json` and `css.json` files.
  *
  * The output folder gets created if it does not exist yet. Output folder
  * contents get deleted to start with if folder is not empty.
@@ -125,7 +125,7 @@ async function prepareCurated(rawFolder, curatedFolder) {
   await crawlSpecs({
     useCrawl: curatedFolder,
     output: curatedFolder,
-    post: ['idlparsed', 'idlnames', 'events'],
+    post: ['idlparsed', 'idlnames', 'events', 'cssmerge'],
     quiet: true
   });
   console.log('- done');
