@@ -291,7 +291,7 @@
     {
       "name": "line-clamp",
       "href": "https://drafts.csswg.org/css-overflow-4/#propdef-line-clamp",
-      "value": "none | <integer [1,∞]> || <'block-ellipsis'>",
+      "value": "none | [<integer [1,∞]> || <'block-ellipsis'>] -webkit-legacy?",
       "initial": "none",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -309,17 +309,24 @@
         },
         {
           "name": "<integer [1,∞]>",
-          "prose": "Sets continue to discard if either or both values ares specified. Sets max-lines to the specified <integer> or to none if omitted, and block-ellipsis to other component of the value if specified or to auto if omitted.",
+          "prose": "Whether this should imply discard or collapse is an unresolved question. [Issue #7708] Sets continue to collapse if either or both values are specified, unless the -webkit-legacy keyword is also specified. Sets max-lines to the specified <integer> or to none if omitted, and block-ellipsis to other component of the value if specified or to auto if omitted.",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-integer-1",
           "type": "value",
           "value": "<integer [1,∞]>"
         },
         {
           "name": "<block-ellipsis>",
-          "prose": "Sets continue to discard if either or both values ares specified. Sets max-lines to the specified <integer> or to none if omitted, and block-ellipsis to other component of the value if specified or to auto if omitted.",
+          "prose": "Whether this should imply discard or collapse is an unresolved question. [Issue #7708] Sets continue to collapse if either or both values are specified, unless the -webkit-legacy keyword is also specified. Sets max-lines to the specified <integer> or to none if omitted, and block-ellipsis to other component of the value if specified or to auto if omitted.",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-block-ellipsis",
           "type": "value",
           "value": "<block-ellipsis>"
+        },
+        {
+          "name": "-webkit-legacy",
+          "prose": "Sets continue to -webkit-legacy.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp--webkit-legacy",
+          "type": "value",
+          "value": "-webkit-legacy"
         }
       ],
       "styleDeclaration": [
@@ -347,7 +354,7 @@
     {
       "name": "continue",
       "href": "https://drafts.csswg.org/css-overflow-4/#propdef-continue",
-      "value": "auto | discard | -webkit-discard",
+      "value": "auto | discard | collapse | -webkit-legacy",
       "initial": "auto",
       "appliesTo": "block containers and multicol containers",
       "inherited": "no",
@@ -357,11 +364,11 @@
       "animationType": "discrete",
       "values": [
         {
-          "name": "-webkit-discard",
-          "prose": "The -webkit-discard value behaves identically to discard, except that it only takes effect if the specified value of the display property is -webkit-box or -webkit-inline-box and the value of the -webkit-box-orient property is vertical.",
-          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue--webkit-discard",
+          "name": "-webkit-legacy",
+          "prose": "The -webkit-legacy value behaves identically to collapse, except that it only takes effect if the specified value of the display property is -webkit-box or -webkit-inline-box and the value of the -webkit-box-orient property is vertical.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue--webkit-legacy",
           "type": "value",
-          "value": "-webkit-discard"
+          "value": "-webkit-legacy"
         },
         {
           "name": "auto",
@@ -376,6 +383,13 @@
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue-discard",
           "type": "value",
           "value": "discard"
+        },
+        {
+          "name": "collapse",
+          "prose": "If the box is a block container, then it must establish an independent formatting context that also becomes a line-clamp container. This causes all content after the clamp point to be visually hidden, and to not be taken into account for the box’s automatic block size. This keyword has no effect on multicol containers.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue-collapse",
+          "type": "value",
+          "value": "collapse"
         }
       ],
       "styleDeclaration": [
@@ -387,7 +401,7 @@
       "href": "https://drafts.csswg.org/css-overflow-4/#propdef-max-lines",
       "value": "none | <integer [1,∞]>",
       "initial": "none",
-      "appliesTo": "block containers which are also fragmentation containers that capture region breaks",
+      "appliesTo": "block containers which are also either fragmentation containers that capture region breaks or line-clamp containers",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "the keyword none or an integer",
@@ -396,7 +410,7 @@
       "values": [
         {
           "name": "none",
-          "prose": "Also, if the value of max-lines is not none, a region break is forced after its Nth descendant in-flow line box, where N is the specified value of max-lines. Only lines boxes in the same Block Formatting Context are counted: the contents of descendants that establish independent formatting contexts are skipped over while counting line boxes.",
+          "prose": "If the value of max-lines is not none, then, given a computed value of N:",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-max-lines-none",
           "type": "value",
           "value": "none"
