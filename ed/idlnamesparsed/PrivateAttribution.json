@@ -15,7 +15,7 @@
         "title": "Privacy-Preserving Attribution: Level 1",
         "url": "https://www.w3.org/TR/privacy-preserving-attribution/"
       },
-      "fragment": "[SecureContext, Exposed=Window]\npartial interface PrivateAttribution {\n  undefined saveImpression(PrivateAttributionImpressionOptions options);\n};"
+      "fragment": "[SecureContext, Exposed=Window]\npartial interface PrivateAttribution {\n  Promise<PrivateAttributionImpressionResult> saveImpression(PrivateAttributionImpressionOptions options);\n};"
     },
     {
       "spec": {

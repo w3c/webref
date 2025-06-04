@@ -22,6 +22,7 @@
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://doi.org/10.1561/0400000042": {},
       "https://drafts.csswg.org/css-2024/": {},
+      "https://fetch.spec.whatwg.org/": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://httpwg.org/specs/rfc6265.html": {},
       "https://infra.spec.whatwg.org/": {},
@@ -51,6 +52,11 @@
       "https://drafts.csswg.org/css-2024/": {
         "anchors": [
           "user"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "header-value"
         ]
       },
       "https://html.spec.whatwg.org/": {
@@ -99,10 +105,10 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
+          "concept-relevant-realm",
           "concept-relevant-global",
           "concept-settings-object-origin",
           "task-source",
-          "concept-relevant-realm",
           "queue-a-task"
         ]
       },
@@ -111,7 +117,8 @@
           "dictionary",
           "inner-list",
           "string",
-          "integer"
+          "integer",
+          "text-parse"
         ]
       },
       "https://infra.spec.whatwg.org/": {
@@ -138,7 +145,8 @@
           "list",
           "list-item",
           "set-append",
-          "assert"
+          "assert",
+          "map-with-default"
         ]
       },
       "https://storage.spec.whatwg.org/": {
@@ -192,16 +200,16 @@
           "idl-USVString",
           "idl-unsigned-long",
           "idl-sequence",
-          "idl-undefined",
+          "idl-promise",
           "idl-double",
           "idl-Uint8Array",
-          "idl-promise",
           "this",
+          "a-promise-rejected-with",
           "notallowederror",
           "idl-DOMException",
           "exceptiondef-rangeerror",
           "syntaxerror",
-          "a-promise-rejected-with",
+          "a-promise-resolved-with",
           "exceptiondef-referenceerror",
           "a-new-promise",
           "resolve"

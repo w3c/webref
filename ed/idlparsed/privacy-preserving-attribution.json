@@ -250,6 +250,16 @@
         "partial": false,
         "href": "https://w3c.github.io/ppa/#dictdef-privateattributionimpressionoptions"
       },
+      "PrivateAttributionImpressionResult": {
+        "fragment": "dictionary PrivateAttributionImpressionResult {\n};",
+        "type": "dictionary",
+        "name": "PrivateAttributionImpressionResult",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/ppa/#dictdef-privateattributionimpressionresult"
+      },
       "PrivateAttributionConversionOptions": {
         "fragment": "dictionary PrivateAttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  unsigned long lookbackDays;\n  sequence<unsigned long> matchValue = [];\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> intermediarySites = [];\n\n  PrivateAttributionLogic logic = \"last-touch\";\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n};",
         "type": "dictionary",
@@ -555,7 +565,7 @@
       ],
       "PrivateAttribution": [
         {
-          "fragment": "[SecureContext, Exposed=Window]\npartial interface PrivateAttribution {\n  undefined saveImpression(PrivateAttributionImpressionOptions options);\n};",
+          "fragment": "[SecureContext, Exposed=Window]\npartial interface PrivateAttribution {\n  Promise<PrivateAttributionImpressionResult> saveImpression(PrivateAttributionImpressionOptions options);\n};",
           "type": "interface",
           "name": "PrivateAttribution",
           "inheritance": null,
@@ -566,10 +576,19 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "",
+                "generic": "Promise",
                 "nullable": false,
                 "union": false,
-                "idlType": "undefined"
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "PrivateAttributionImpressionResult"
+                  }
+                ]
               },
               "arguments": [
                 {
@@ -702,11 +721,13 @@
       ],
       "PrivateAttribution": [
         "PrivateAttributionAggregationServices",
+        "PrivateAttributionImpressionResult",
         "PrivateAttributionImpressionOptions",
         "PrivateAttributionConversionResult",
         "PrivateAttributionConversionOptions"
       ],
       "PrivateAttributionImpressionOptions": [],
+      "PrivateAttributionImpressionResult": [],
       "PrivateAttributionConversionOptions": [
         "PrivateAttributionLogic"
       ],
