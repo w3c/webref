@@ -234,6 +234,9 @@
           "html": "<p>If <var>parsedMetadata</var> is not the empty set and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a> is either \"<code>cors</code>\" or \"<code>same-origin</code>\",\n return \"Allowed\".</p>"
         },
         {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">url</a> is <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#is-local\" id=\"ref-for-is-local\">local</a>,\n return \"Allowed\".</p>"
+        },
+        {
           "html": "<p>Let <var>policy</var> be <var>policyContainer</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#policy-container-integrity-policy\" id=\"ref-for-policy-container-integrity-policy①\">integrity policy</a>.</p>"
         },
         {
@@ -302,7 +305,7 @@
           "html": "<p>Let <var>documentURL</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#strip-url-for-use-in-reports\" id=\"ref-for-strip-url-for-use-in-reports\">strip URL for use in reports</a> on <var>url</var>.</p>"
         },
         {
-          "html": "<p>Let <var>blockedURL</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#strip-url-for-use-in-reports\" id=\"ref-for-strip-url-for-use-in-reports①\">strip URL for use in reports</a> on <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a>.</p>"
+          "html": "<p>Let <var>blockedURL</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#strip-url-for-use-in-reports\" id=\"ref-for-strip-url-for-use-in-reports①\">strip URL for use in reports</a> on <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url①\">URL</a>.</p>"
         },
         {
           "html": "If <var>block</var> is true, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">for each</a> <var>endpoint</var> in <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#endpoints\" id=\"ref-for-endpoints①\">endpoints</a>:",

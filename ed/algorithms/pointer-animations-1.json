@@ -1,0 +1,41 @@
+{
+  "spec": {
+    "title": "Pointer-driven Animations",
+    "url": "https://drafts.csswg.org/pointer-animations-1/"
+  },
+  "algorithms": [
+    {
+      "name": "PointerTimeline/PointerTimeline(options)",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#dom-pointertimeline-pointertimeline",
+      "html": "Creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/pointer-animations-1/#pointertimeline\" id=\"ref-for-pointertimeline④\">PointerTimeline</a></code> object using the following procedure:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>timeline</var> be the new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/pointer-animations-1/#pointertimeline\" id=\"ref-for-pointertimeline⑤\">PointerTimeline</a></code> object.</p>"
+        },
+        {
+          "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/pointer-animations-1/#dom-pointertimeline-source\" id=\"ref-for-dom-pointertimeline-source①\">source</a></code> of <var>timeline</var> to:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If the source member of options is present,",
+                  "html": "<p>The <code>source</code> member of <var>options</var>.</p>"
+                },
+                {
+                  "case": "Otherwise,",
+                  "html": "<p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#root-element\" id=\"ref-for-root-element\">root element</a>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/pointer-animations-1/#dom-pointertimeline-axis\" id=\"ref-for-dom-pointertimeline-axis①\">axis</a></code> property of <var>timeline</var> to the corresponding value from <var>options</var>.</p>"
+        }
+      ]
+    }
+  ]
+}
