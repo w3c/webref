@@ -9,23 +9,33 @@ import { definitionSyntax } from 'css-tree';
 
 // Expected categories in the consolidated file
 const categories = {
-  atrules: { singular: 'at-rule', plural: 'at-rules' },
-  functions: { singular: 'function', plural: 'functions' },
-  properties: { singular: 'property', plural: 'properties' },
-  selectors: { singular: 'selector', plural: 'selectors' },
-  types: { singular: 'type', plural: 'types' }
+  atrules: 'at-rule',
+  functions: 'function',
+  properties: 'property',
+  selectors: 'selector',
+  types: 'type'
 };
 
+// Quick and dirty function to pluralize category labels
+function pluralize(word) {
+  if (word === 'property') {
+    return 'properties';
+  }
+  else {
+    return word + 's';
+  }
+}
+
 describe(`The consolidated CSS file`, async () => {
-  for (const [category, { singular, plural }] of Object.entries(categories)) {
+  for (const [category, label] of Object.entries(categories)) {
     const list = consolidated[category];
 
-    it(`contains ${plural}`, () => {
+    it(`contains ${pluralize(label)}`, () => {
       assert(list);
       assert(list.length > 0);
     });
 
-    it(`does not contain duplicated ${plural}`, () => {
+    it(`does not contain duplicated ${pluralize(label)}`, () => {
       const keys = list.map(entry => entry.name +
         (entry.for ? ` for ${entry.for}` : ''));
       const duplicates = keys.filter((key, idx) =>
@@ -33,7 +43,7 @@ describe(`The consolidated CSS file`, async () => {
       assert.deepEqual(duplicates, []);
     });
 
-    it(`contains valid ${singular} syntaxes`, () => {
+    it(`contains valid ${label} syntaxes`, () => {
       const invalid = list
         .filter(entry => entry.value)
         .filter(entry => {
