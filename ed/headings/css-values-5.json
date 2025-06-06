@@ -154,210 +154,293 @@
       "id": "mixing",
       "href": "https://drafts.csswg.org/css-values-5/#mixing",
       "level": 2,
-      "title": "Mixing and Interpolation Notations: the *-mix() family",
+      "title": "Weighted Average Notations: the *-mix() family",
       "number": "6"
     },
     {
-      "id": "progress-type",
-      "href": "https://drafts.csswg.org/css-values-5/#progress-type",
+      "id": "mix-percentage-normalization",
+      "href": "https://drafts.csswg.org/css-values-5/#mix-percentage-normalization",
       "level": 3,
-      "title": "Representing Interpolation Progress: the <progress> type",
+      "title": "Normalizing Mix Percentages",
       "number": "6.1"
     },
     {
       "id": "calc-mix",
       "href": "https://drafts.csswg.org/css-values-5/#calc-mix",
       "level": 3,
-      "title": "Interpolated Numeric and Dimensional Values: the calc-mix() notation",
+      "title": "Weighted Average of Numeric and Dimensional Values: the calc-mix() notation",
       "number": "6.2"
-    },
-    {
-      "id": "color-mix",
-      "href": "https://drafts.csswg.org/css-values-5/#color-mix",
-      "level": 3,
-      "title": "Interpolated Color Values: the color-mix() notation",
-      "number": "6.3"
-    },
-    {
-      "id": "cross-fade",
-      "href": "https://drafts.csswg.org/css-values-5/#cross-fade",
-      "level": 3,
-      "title": "Interpolated Image Values: the cross-fade() notation",
-      "number": "6.4"
     },
     {
       "id": "transform-mix",
       "href": "https://drafts.csswg.org/css-values-5/#transform-mix",
       "level": 3,
-      "title": "Interpolated Transform Values: the transform-mix() notation",
-      "number": "6.5"
+      "title": "Weighted Average of Transform Values: the transform-mix() notation",
+      "number": "6.3"
+    },
+    {
+      "id": "interpolation-notation",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-notation",
+      "level": 2,
+      "title": "Interpolation Mapping Notations: the *-interpolate() family",
+      "number": "7"
+    },
+    {
+      "id": "interpolation-syntax",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-syntax",
+      "level": 3,
+      "title": "Global Syntax of the *-interpolate() family",
+      "number": "7.1"
+    },
+    {
+      "id": "interpolation-progress-arguments",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-progress-arguments",
+      "level": 4,
+      "title": "Specifying the Interpolation Progress",
+      "number": "7.1.1"
+    },
+    {
+      "id": "interpolation-progress-easing",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-progress-easing",
+      "level": 5,
+      "title": "Easing Interpolation Progress: the by <easing-function> argument",
+      "number": "7.1.1.1"
+    },
+    {
+      "id": "interpolation-map-arguments",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-map-arguments",
+      "level": 4,
+      "title": "Defining the Interpolation Map",
+      "number": "7.1.2"
+    },
+    {
+      "id": "interpolation-normalization",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-normalization",
+      "level": 3,
+      "title": "Validation and Normalization",
+      "number": "7.2"
+    },
+    {
+      "id": "interpolation-validity",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-validity",
+      "level": 4,
+      "title": "Type Checking",
+      "number": "7.2.1"
+    },
+    {
+      "id": "interpolation-range-calculation",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-range-calculation",
+      "level": 4,
+      "title": "Calculating the Absolute Interpolation Range",
+      "number": "7.2.2"
+    },
+    {
+      "id": "interpolation-dimension-normaolization",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-dimension-normaolization",
+      "level": 4,
+      "title": "Normalizing Absolute Positions and Progress",
+      "number": "7.2.3"
+    },
+    {
+      "id": "interpolation-stop-fixup",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-stop-fixup",
+      "level": 4,
+      "title": "Interpolation Stop Fixup",
+      "number": "7.2.4"
+    },
+    {
+      "id": "interpolation-resolution",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-resolution",
+      "level": 3,
+      "title": "Interpolation Resolution",
+      "number": "7.3"
+    },
+    {
+      "id": "calc-interpolate",
+      "href": "https://drafts.csswg.org/css-values-5/#calc-interpolate",
+      "level": 3,
+      "title": "Interpolated Numeric and Dimensional Values: the calc-interpolate() notation",
+      "number": "7.4"
+    },
+    {
+      "id": "color-interpolate",
+      "href": "https://drafts.csswg.org/css-values-5/#color-interpolate",
+      "level": 3,
+      "title": "Interpolated Color Values: the color-interpolate() notation",
+      "number": "7.5"
+    },
+    {
+      "id": "transform-interpolate",
+      "href": "https://drafts.csswg.org/css-values-5/#transform-interpolate",
+      "level": 3,
+      "title": "Interpolated Transform Values: the transform-interpolate() notation",
+      "number": "7.6"
     },
     {
       "id": "mix",
       "href": "https://drafts.csswg.org/css-values-5/#mix",
       "level": 3,
-      "title": "Interpolated Property Values: the mix() notation",
-      "number": "6.6"
+      "title": "Interpolated Property Values: the interpolate() notation",
+      "number": "7.7"
     },
     {
       "id": "value-insert",
       "href": "https://drafts.csswg.org/css-values-5/#value-insert",
       "level": 2,
       "title": "Miscellaneous Value Substituting Functions",
-      "number": "7"
+      "number": "8"
     },
     {
       "id": "whole-value",
       "href": "https://drafts.csswg.org/css-values-5/#whole-value",
       "level": 3,
       "title": "Representing An Entire Property Value: the <whole-value> type",
-      "number": "7.1"
+      "number": "8.1"
     },
     {
       "id": "first-valid",
       "href": "https://drafts.csswg.org/css-values-5/#first-valid",
       "level": 3,
       "title": "Selecting the First Supported Value: the first-valid() notation",
-      "number": "7.2"
+      "number": "8.2"
     },
     {
       "id": "if-notation",
       "href": "https://drafts.csswg.org/css-values-5/#if-notation",
       "level": 3,
       "title": "Conditional Value Selection: the if() notation",
-      "number": "7.3"
+      "number": "8.3"
     },
     {
       "id": "toggle-notation",
       "href": "https://drafts.csswg.org/css-values-5/#toggle-notation",
       "level": 3,
       "title": "Toggling Between Values: the toggle() notation",
-      "number": "7.4"
+      "number": "8.4"
     },
     {
       "id": "var-notation",
       "href": "https://drafts.csswg.org/css-values-5/#var-notation",
       "level": 3,
       "title": "Custom Property References: the var() notation",
-      "number": "7.5"
+      "number": "8.5"
     },
     {
       "id": "inherit-notation",
       "href": "https://drafts.csswg.org/css-values-5/#inherit-notation",
       "level": 3,
       "title": "Inherited Value References: the inherit() notation",
-      "number": "7.6"
+      "number": "8.6"
     },
     {
       "id": "attr-notation",
       "href": "https://drafts.csswg.org/css-values-5/#attr-notation",
       "level": 3,
       "title": "Attribute References: the attr() notation",
-      "number": "7.7"
+      "number": "8.7"
     },
     {
       "id": "attr-substitution",
       "href": "https://drafts.csswg.org/css-values-5/#attr-substitution",
       "level": 4,
       "title": "Substitution",
-      "number": "7.7.1"
+      "number": "8.7.1"
     },
     {
       "id": "attr-security",
       "href": "https://drafts.csswg.org/css-values-5/#attr-security",
       "level": 4,
       "title": "Security",
-      "number": "7.7.2"
+      "number": "8.7.2"
     },
     {
       "id": "ident",
       "href": "https://drafts.csswg.org/css-values-5/#ident",
       "level": 3,
       "title": "Constructing <custom-ident> values: the ident() function",
-      "number": "7.8"
+      "number": "8.8"
     },
     {
       "id": "randomness",
       "href": "https://drafts.csswg.org/css-values-5/#randomness",
       "level": 2,
       "title": "Generating Random Values",
-      "number": "8"
+      "number": "9"
     },
     {
       "id": "random",
       "href": "https://drafts.csswg.org/css-values-5/#random",
       "level": 3,
       "title": "Generating a Random Numeric Value: the random() function",
-      "number": "8.1"
+      "number": "9.1"
     },
     {
       "id": "random-infinities",
       "href": "https://drafts.csswg.org/css-values-5/#random-infinities",
       "level": 4,
       "title": "Argument Ranges",
-      "number": "8.1.1"
+      "number": "9.1.1"
     },
     {
       "id": "random-item",
       "href": "https://drafts.csswg.org/css-values-5/#random-item",
       "level": 3,
       "title": "Picking a Random Item From a List: the random-item() function",
-      "number": "8.2"
+      "number": "9.2"
     },
     {
       "id": "random-evaluation",
       "href": "https://drafts.csswg.org/css-values-5/#random-evaluation",
       "level": 3,
       "title": "Evaluating Random Values",
-      "number": "8.3"
+      "number": "9.3"
     },
     {
       "id": "random-caching",
       "href": "https://drafts.csswg.org/css-values-5/#random-caching",
       "level": 3,
       "title": "Caching Random Values: the <random-value-sharing> value",
-      "number": "8.4"
+      "number": "9.4"
     },
     {
       "id": "tree-counting",
       "href": "https://drafts.csswg.org/css-values-5/#tree-counting",
       "level": 2,
-      "title": "Tree Counting Functions: the sibling-count() and sibling-index() notations",
-      "number": "9"
+      "title": "10. Tree Counting Functions: the sibling-count() and sibling-index() notations"
     },
     {
       "id": "calc-size",
       "href": "https://drafts.csswg.org/css-values-5/#calc-size",
       "level": 2,
-      "title": "10. Calculating With Intrinsic Sizes: the calc-size() function"
+      "title": "11. Calculating With Intrinsic Sizes: the calc-size() function"
     },
     {
       "id": "simplifying-calc-size",
       "href": "https://drafts.csswg.org/css-values-5/#simplifying-calc-size",
       "level": 3,
       "title": "Simplifying calc-size()",
-      "number": "10.1"
+      "number": "11.1"
     },
     {
       "id": "resolving-calc-size",
       "href": "https://drafts.csswg.org/css-values-5/#resolving-calc-size",
       "level": 3,
       "title": "Resolving calc-size()",
-      "number": "10.2"
+      "number": "11.2"
     },
     {
       "id": "interp-calc-size",
       "href": "https://drafts.csswg.org/css-values-5/#interp-calc-size",
       "level": 3,
       "title": "Interpolating calc-size()",
-      "number": "10.3"
+      "number": "11.3"
     },
     {
       "id": "interpolate-size",
       "href": "https://drafts.csswg.org/css-values-5/#interpolate-size",
       "level": 3,
       "title": "Interpolating sizing keywords: the interpolate-size property",
-      "number": "10.4"
+      "number": "11.4"
     },
     {
       "id": "arbitrary-substitution",

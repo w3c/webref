@@ -1045,16 +1045,16 @@
       "heading": {
         "id": "mixing",
         "href": "https://drafts.csswg.org/css-values-5/#mixing",
-        "title": "Mixing and Interpolation Notations: the *-mix() family",
+        "title": "Weighted Average Notations: the *-mix() family",
         "number": "6"
       },
       "definedIn": "prose"
     },
     {
-      "id": "mix-start-value",
-      "href": "https://drafts.csswg.org/css-values-5/#mix-start-value",
+      "id": "mix-item",
+      "href": "https://drafts.csswg.org/css-values-5/#mix-item",
       "linkingText": [
-        "mix start value"
+        "mix item"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1064,16 +1064,16 @@
       "heading": {
         "id": "mixing",
         "href": "https://drafts.csswg.org/css-values-5/#mixing",
-        "title": "Mixing and Interpolation Notations: the *-mix() family",
+        "title": "Weighted Average Notations: the *-mix() family",
         "number": "6"
       },
       "definedIn": "prose"
     },
     {
-      "id": "mix-end-value",
-      "href": "https://drafts.csswg.org/css-values-5/#mix-end-value",
+      "id": "normalize-mix-percentages",
+      "href": "https://drafts.csswg.org/css-values-5/#normalize-mix-percentages",
       "linkingText": [
-        "mix end value"
+        "normalize mix percentages"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1081,47 +1081,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "mixing",
-        "href": "https://drafts.csswg.org/css-values-5/#mixing",
-        "title": "Mixing and Interpolation Notations: the *-mix() family",
-        "number": "6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "mix-progress-value",
-      "href": "https://drafts.csswg.org/css-values-5/#mix-progress-value",
-      "linkingText": [
-        "mix progress value"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "mixing",
-        "href": "https://drafts.csswg.org/css-values-5/#mixing",
-        "title": "Mixing and Interpolation Notations: the *-mix() family",
-        "number": "6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "typedef-progress",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-progress",
-      "linkingText": [
-        "<progress>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "progress-type",
-        "href": "https://drafts.csswg.org/css-values-5/#progress-type",
-        "title": "Representing Interpolation Progress: the <progress> type",
+        "id": "mix-percentage-normalization",
+        "href": "https://drafts.csswg.org/css-values-5/#mix-percentage-normalization",
+        "title": "Normalizing Mix Percentages",
         "number": "6.1"
       },
       "definedIn": "prose"
@@ -1140,7 +1102,7 @@
       "heading": {
         "id": "calc-mix",
         "href": "https://drafts.csswg.org/css-values-5/#calc-mix",
-        "title": "Interpolated Numeric and Dimensional Values: the calc-mix() notation",
+        "title": "Weighted Average of Numeric and Dimensional Values: the calc-mix() notation",
         "number": "6.2"
       },
       "definedIn": "prose"
@@ -1159,16 +1121,381 @@
       "heading": {
         "id": "transform-mix",
         "href": "https://drafts.csswg.org/css-values-5/#transform-mix",
-        "title": "Interpolated Transform Values: the transform-mix() notation",
-        "number": "6.5"
+        "title": "Weighted Average of Transform Values: the transform-mix() notation",
+        "number": "6.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "funcdef-mix",
-      "href": "https://drafts.csswg.org/css-values-5/#funcdef-mix",
+      "id": "interpolation-notations",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-notations",
       "linkingText": [
-        "mix()"
+        "interpolation notations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interpolation-notation",
+        "href": "https://drafts.csswg.org/css-values-5/#interpolation-notation",
+        "title": "Interpolation Mapping Notations: the *-interpolate() family",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "interpolation-progress",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-progress",
+      "linkingText": [
+        "interpolation progress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interpolation-notation",
+        "href": "https://drafts.csswg.org/css-values-5/#interpolation-notation",
+        "title": "Interpolation Mapping Notations: the *-interpolate() family",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "interpolation-map",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-map",
+      "linkingText": [
+        "interpolation map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interpolation-notation",
+        "href": "https://drafts.csswg.org/css-values-5/#interpolation-notation",
+        "title": "Interpolation Mapping Notations: the *-interpolate() family",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-progress-source",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-progress-source",
+      "linkingText": [
+        "<progress-source>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interpolation-progress-arguments",
+        "href": "https://drafts.csswg.org/css-values-5/#interpolation-progress-arguments",
+        "title": "Specifying the Interpolation Progress",
+        "number": "7.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-calc-interpolate-by",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-interpolate-by",
+      "linkingText": [
+        "by"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "calc-interpolate()",
+        "transform-interpolate()",
+        "color-interpolate()",
+        "palette-interpolate()",
+        "interpolate()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interpolation-progress-easing",
+        "href": "https://drafts.csswg.org/css-values-5/#interpolation-progress-easing",
+        "title": "Easing Interpolation Progress: the by <easing-function> argument",
+        "number": "7.1.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "input-positions",
+      "href": "https://drafts.csswg.org/css-values-5/#input-positions",
+      "linkingText": [
+        "input positions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interpolation-map-arguments",
+        "href": "https://drafts.csswg.org/css-values-5/#interpolation-map-arguments",
+        "title": "Defining the Interpolation Map",
+        "number": "7.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "output-values",
+      "href": "https://drafts.csswg.org/css-values-5/#output-values",
+      "linkingText": [
+        "output values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interpolation-map-arguments",
+        "href": "https://drafts.csswg.org/css-values-5/#interpolation-map-arguments",
+        "title": "Defining the Interpolation Map",
+        "number": "7.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "interpolation-stop",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-stop",
+      "linkingText": [
+        "interpolation stop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interpolation-map-arguments",
+        "href": "https://drafts.csswg.org/css-values-5/#interpolation-map-arguments",
+        "title": "Defining the Interpolation Map",
+        "number": "7.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-calc-interpolate-input-position",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
+      "linkingText": [
+        "<input-position>",
+        "<output-value>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "calc-interpolate()",
+        "transform-interpolate()",
+        "color-interpolate()",
+        "palette-interpolate()",
+        "interpolate()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interpolation-map-arguments",
+        "href": "https://drafts.csswg.org/css-values-5/#interpolation-map-arguments",
+        "title": "Defining the Interpolation Map",
+        "number": "7.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "segment-interpolation-progress",
+      "href": "https://drafts.csswg.org/css-values-5/#segment-interpolation-progress",
+      "linkingText": [
+        "segment interpolation progress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interpolation-map-arguments",
+        "href": "https://drafts.csswg.org/css-values-5/#interpolation-map-arguments",
+        "title": "Defining the Interpolation Map",
+        "number": "7.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-calc-interpolate-segment-options",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options",
+      "linkingText": [
+        "<segment-options>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "calc-interpolate()",
+        "transform-interpolate()",
+        "color-interpolate()",
+        "palette-interpolate()",
+        "interpolate()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interpolation-map-arguments",
+        "href": "https://drafts.csswg.org/css-values-5/#interpolation-map-arguments",
+        "title": "Defining the Interpolation Map",
+        "number": "7.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "interpolation-input-type",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-input-type",
+      "linkingText": [
+        "interpolation input type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interpolation-validity",
+        "href": "https://drafts.csswg.org/css-values-5/#interpolation-validity",
+        "title": "Type Checking",
+        "number": "7.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "interpolation-input-type-proportional",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-input-type-proportional",
+      "linkingText": [
+        "proportional"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "interpolation input type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interpolation-validity",
+        "href": "https://drafts.csswg.org/css-values-5/#interpolation-validity",
+        "title": "Type Checking",
+        "number": "7.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "interpolation-input-type-absolute",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-input-type-absolute",
+      "linkingText": [
+        "absolute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "interpolation input type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interpolation-validity",
+        "href": "https://drafts.csswg.org/css-values-5/#interpolation-validity",
+        "title": "Type Checking",
+        "number": "7.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "interpolation-range",
+      "href": "https://drafts.csswg.org/css-values-5/#interpolation-range",
+      "linkingText": [
+        "interpolation range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interpolation-range-calculation",
+        "href": "https://drafts.csswg.org/css-values-5/#interpolation-range-calculation",
+        "title": "Calculating the Absolute Interpolation Range",
+        "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-calc-interpolate",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-calc-interpolate",
+      "linkingText": [
+        "calc-interpolate()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "calc-interpolate",
+        "href": "https://drafts.csswg.org/css-values-5/#calc-interpolate",
+        "title": "Interpolated Numeric and Dimensional Values: the calc-interpolate() notation",
+        "number": "7.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-color-interpolate",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-color-interpolate",
+      "linkingText": [
+        "color-interpolate()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-interpolate",
+        "href": "https://drafts.csswg.org/css-values-5/#color-interpolate",
+        "title": "Interpolated Color Values: the color-interpolate() notation",
+        "number": "7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-transform-interpolate",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-transform-interpolate",
+      "linkingText": [
+        "transform-interpolate()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-interpolate",
+        "href": "https://drafts.csswg.org/css-values-5/#transform-interpolate",
+        "title": "Interpolated Transform Values: the transform-interpolate() notation",
+        "number": "7.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-interpolate",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-interpolate",
+      "linkingText": [
+        "interpolate()"
       ],
       "localLinkingText": [],
       "type": "function",
@@ -1178,8 +1505,8 @@
       "heading": {
         "id": "mix",
         "href": "https://drafts.csswg.org/css-values-5/#mix",
-        "title": "Interpolated Property Values: the mix() notation",
-        "number": "6.6"
+        "title": "Interpolated Property Values: the interpolate() notation",
+        "number": "7.7"
       },
       "definedIn": "prose"
     },
@@ -1198,7 +1525,7 @@
         "id": "whole-value",
         "href": "https://drafts.csswg.org/css-values-5/#whole-value",
         "title": "Representing An Entire Property Value: the <whole-value> type",
-        "number": "7.1"
+        "number": "8.1"
       },
       "definedIn": "heading"
     },
@@ -1217,7 +1544,7 @@
         "id": "first-valid",
         "href": "https://drafts.csswg.org/css-values-5/#first-valid",
         "title": "Selecting the First Supported Value: the first-valid() notation",
-        "number": "7.2"
+        "number": "8.2"
       },
       "definedIn": "prose"
     },
@@ -1236,7 +1563,7 @@
         "id": "if-notation",
         "href": "https://drafts.csswg.org/css-values-5/#if-notation",
         "title": "Conditional Value Selection: the if() notation",
-        "number": "7.3"
+        "number": "8.3"
       },
       "definedIn": "prose"
     },
@@ -1255,7 +1582,7 @@
         "id": "if-notation",
         "href": "https://drafts.csswg.org/css-values-5/#if-notation",
         "title": "Conditional Value Selection: the if() notation",
-        "number": "7.3"
+        "number": "8.3"
       },
       "definedIn": "pre"
     },
@@ -1274,7 +1601,7 @@
         "id": "if-notation",
         "href": "https://drafts.csswg.org/css-values-5/#if-notation",
         "title": "Conditional Value Selection: the if() notation",
-        "number": "7.3"
+        "number": "8.3"
       },
       "definedIn": "pre"
     },
@@ -1293,7 +1620,7 @@
         "id": "if-notation",
         "href": "https://drafts.csswg.org/css-values-5/#if-notation",
         "title": "Conditional Value Selection: the if() notation",
-        "number": "7.3"
+        "number": "8.3"
       },
       "definedIn": "pre"
     },
@@ -1314,7 +1641,7 @@
         "id": "if-notation",
         "href": "https://drafts.csswg.org/css-values-5/#if-notation",
         "title": "Conditional Value Selection: the if() notation",
-        "number": "7.3"
+        "number": "8.3"
       },
       "definedIn": "prose"
     },
@@ -1333,7 +1660,7 @@
         "id": "if-notation",
         "href": "https://drafts.csswg.org/css-values-5/#if-notation",
         "title": "Conditional Value Selection: the if() notation",
-        "number": "7.3"
+        "number": "8.3"
       },
       "definedIn": "pre"
     },
@@ -1352,7 +1679,7 @@
         "id": "if-notation",
         "href": "https://drafts.csswg.org/css-values-5/#if-notation",
         "title": "Conditional Value Selection: the if() notation",
-        "number": "7.3"
+        "number": "8.3"
       },
       "definedIn": "pre"
     },
@@ -1371,7 +1698,7 @@
         "id": "if-notation",
         "href": "https://drafts.csswg.org/css-values-5/#if-notation",
         "title": "Conditional Value Selection: the if() notation",
-        "number": "7.3"
+        "number": "8.3"
       },
       "definedIn": "prose"
     },
@@ -1390,7 +1717,7 @@
         "id": "toggle-notation",
         "href": "https://drafts.csswg.org/css-values-5/#toggle-notation",
         "title": "Toggling Between Values: the toggle() notation",
-        "number": "7.4"
+        "number": "8.4"
       },
       "definedIn": "prose"
     },
@@ -1409,7 +1736,7 @@
         "id": "inherit-notation",
         "href": "https://drafts.csswg.org/css-values-5/#inherit-notation",
         "title": "Inherited Value References: the inherit() notation",
-        "number": "7.6"
+        "number": "8.6"
       },
       "definedIn": "prose"
     },
@@ -1428,7 +1755,7 @@
         "id": "inherit-notation",
         "href": "https://drafts.csswg.org/css-values-5/#inherit-notation",
         "title": "Inherited Value References: the inherit() notation",
-        "number": "7.6"
+        "number": "8.6"
       },
       "definedIn": "pre"
     },
@@ -1447,7 +1774,7 @@
         "id": "inherit-notation",
         "href": "https://drafts.csswg.org/css-values-5/#inherit-notation",
         "title": "Inherited Value References: the inherit() notation",
-        "number": "7.6"
+        "number": "8.6"
       },
       "definedIn": "prose"
     },
@@ -1466,7 +1793,7 @@
         "id": "attr-notation",
         "href": "https://drafts.csswg.org/css-values-5/#attr-notation",
         "title": "Attribute References: the attr() notation",
-        "number": "7.7"
+        "number": "8.7"
       },
       "definedIn": "prose"
     },
@@ -1485,7 +1812,7 @@
         "id": "attr-notation",
         "href": "https://drafts.csswg.org/css-values-5/#attr-notation",
         "title": "Attribute References: the attr() notation",
-        "number": "7.7"
+        "number": "8.7"
       },
       "definedIn": "pre"
     },
@@ -1504,7 +1831,7 @@
         "id": "attr-notation",
         "href": "https://drafts.csswg.org/css-values-5/#attr-notation",
         "title": "Attribute References: the attr() notation",
-        "number": "7.7"
+        "number": "8.7"
       },
       "definedIn": "pre"
     },
@@ -1525,7 +1852,7 @@
         "id": "attr-notation",
         "href": "https://drafts.csswg.org/css-values-5/#attr-notation",
         "title": "Attribute References: the attr() notation",
-        "number": "7.7"
+        "number": "8.7"
       },
       "definedIn": "pre"
     },
@@ -1544,7 +1871,7 @@
         "id": "attr-notation",
         "href": "https://drafts.csswg.org/css-values-5/#attr-notation",
         "title": "Attribute References: the attr() notation",
-        "number": "7.7"
+        "number": "8.7"
       },
       "definedIn": "pre"
     },
@@ -1563,7 +1890,7 @@
         "id": "attr-notation",
         "href": "https://drafts.csswg.org/css-values-5/#attr-notation",
         "title": "Attribute References: the attr() notation",
-        "number": "7.7"
+        "number": "8.7"
       },
       "definedIn": "prose"
     },
@@ -1582,7 +1909,7 @@
         "id": "attr-substitution",
         "href": "https://drafts.csswg.org/css-values-5/#attr-substitution",
         "title": "Substitution",
-        "number": "7.7.1"
+        "number": "8.7.1"
       },
       "definedIn": "prose"
     },
@@ -1601,7 +1928,7 @@
         "id": "attr-security",
         "href": "https://drafts.csswg.org/css-values-5/#attr-security",
         "title": "Security",
-        "number": "7.7.2"
+        "number": "8.7.2"
       },
       "definedIn": "prose"
     },
@@ -1620,7 +1947,7 @@
         "id": "ident",
         "href": "https://drafts.csswg.org/css-values-5/#ident",
         "title": "Constructing <custom-ident> values: the ident() function",
-        "number": "7.8"
+        "number": "8.8"
       },
       "definedIn": "prose"
     },
@@ -1639,7 +1966,7 @@
         "id": "ident",
         "href": "https://drafts.csswg.org/css-values-5/#ident",
         "title": "Constructing <custom-ident> values: the ident() function",
-        "number": "7.8"
+        "number": "8.8"
       },
       "definedIn": "pre"
     },
@@ -1660,7 +1987,7 @@
         "id": "randomness",
         "href": "https://drafts.csswg.org/css-values-5/#randomness",
         "title": "Generating Random Values",
-        "number": "8"
+        "number": "9"
       },
       "definedIn": "prose"
     },
@@ -1679,7 +2006,7 @@
         "id": "random",
         "href": "https://drafts.csswg.org/css-values-5/#random",
         "title": "Generating a Random Numeric Value: the random() function",
-        "number": "8.1"
+        "number": "9.1"
       },
       "definedIn": "prose"
     },
@@ -1698,7 +2025,7 @@
         "id": "random",
         "href": "https://drafts.csswg.org/css-values-5/#random",
         "title": "Generating a Random Numeric Value: the random() function",
-        "number": "8.1"
+        "number": "9.1"
       },
       "definedIn": "pre"
     },
@@ -1720,7 +2047,7 @@
         "id": "random",
         "href": "https://drafts.csswg.org/css-values-5/#random",
         "title": "Generating a Random Numeric Value: the random() function",
-        "number": "8.1"
+        "number": "9.1"
       },
       "definedIn": "dt"
     },
@@ -1742,7 +2069,7 @@
         "id": "random",
         "href": "https://drafts.csswg.org/css-values-5/#random",
         "title": "Generating a Random Numeric Value: the random() function",
-        "number": "8.1"
+        "number": "9.1"
       },
       "definedIn": "dt"
     },
@@ -1765,7 +2092,7 @@
         "id": "random",
         "href": "https://drafts.csswg.org/css-values-5/#random",
         "title": "Generating a Random Numeric Value: the random() function",
-        "number": "8.1"
+        "number": "9.1"
       },
       "definedIn": "dt"
     },
@@ -1784,7 +2111,7 @@
         "id": "random-item",
         "href": "https://drafts.csswg.org/css-values-5/#random-item",
         "title": "Picking a Random Item From a List: the random-item() function",
-        "number": "8.2"
+        "number": "9.2"
       },
       "definedIn": "prose"
     },
@@ -1803,7 +2130,7 @@
         "id": "random-item",
         "href": "https://drafts.csswg.org/css-values-5/#random-item",
         "title": "Picking a Random Item From a List: the random-item() function",
-        "number": "8.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -1822,7 +2149,7 @@
         "id": "random-item",
         "href": "https://drafts.csswg.org/css-values-5/#random-item",
         "title": "Picking a Random Item From a List: the random-item() function",
-        "number": "8.2"
+        "number": "9.2"
       },
       "definedIn": "prose"
     },
@@ -1843,7 +2170,7 @@
         "id": "random-evaluation",
         "href": "https://drafts.csswg.org/css-values-5/#random-evaluation",
         "title": "Evaluating Random Values",
-        "number": "8.3"
+        "number": "9.3"
       },
       "definedIn": "prose"
     },
@@ -1862,7 +2189,7 @@
         "id": "random-caching",
         "href": "https://drafts.csswg.org/css-values-5/#random-caching",
         "title": "Caching Random Values: the <random-value-sharing> value",
-        "number": "8.4"
+        "number": "9.4"
       },
       "definedIn": "prose"
     },
@@ -1881,7 +2208,7 @@
         "id": "random-caching",
         "href": "https://drafts.csswg.org/css-values-5/#random-caching",
         "title": "Caching Random Values: the <random-value-sharing> value",
-        "number": "8.4"
+        "number": "9.4"
       },
       "definedIn": "prose"
     },
@@ -1899,8 +2226,7 @@
       "heading": {
         "id": "tree-counting",
         "href": "https://drafts.csswg.org/css-values-5/#tree-counting",
-        "title": "Tree Counting Functions: the sibling-count() and sibling-index() notations",
-        "number": "9"
+        "title": "10. Tree Counting Functions: the sibling-count() and sibling-index() notations"
       },
       "definedIn": "prose"
     },
@@ -1918,8 +2244,7 @@
       "heading": {
         "id": "tree-counting",
         "href": "https://drafts.csswg.org/css-values-5/#tree-counting",
-        "title": "Tree Counting Functions: the sibling-count() and sibling-index() notations",
-        "number": "9"
+        "title": "10. Tree Counting Functions: the sibling-count() and sibling-index() notations"
       },
       "definedIn": "prose"
     },
@@ -1937,7 +2262,7 @@
       "heading": {
         "id": "calc-size",
         "href": "https://drafts.csswg.org/css-values-5/#calc-size",
-        "title": "10. Calculating With Intrinsic Sizes: the calc-size() function"
+        "title": "11. Calculating With Intrinsic Sizes: the calc-size() function"
       },
       "definedIn": "pre"
     },
@@ -1955,7 +2280,7 @@
       "heading": {
         "id": "calc-size",
         "href": "https://drafts.csswg.org/css-values-5/#calc-size",
-        "title": "10. Calculating With Intrinsic Sizes: the calc-size() function"
+        "title": "11. Calculating With Intrinsic Sizes: the calc-size() function"
       },
       "definedIn": "pre"
     },
@@ -1973,7 +2298,7 @@
       "heading": {
         "id": "calc-size",
         "href": "https://drafts.csswg.org/css-values-5/#calc-size",
-        "title": "10. Calculating With Intrinsic Sizes: the calc-size() function"
+        "title": "11. Calculating With Intrinsic Sizes: the calc-size() function"
       },
       "definedIn": "prose"
     },
@@ -1991,7 +2316,7 @@
       "heading": {
         "id": "calc-size",
         "href": "https://drafts.csswg.org/css-values-5/#calc-size",
-        "title": "10. Calculating With Intrinsic Sizes: the calc-size() function"
+        "title": "11. Calculating With Intrinsic Sizes: the calc-size() function"
       },
       "definedIn": "prose"
     },
@@ -2009,7 +2334,7 @@
       "heading": {
         "id": "calc-size",
         "href": "https://drafts.csswg.org/css-values-5/#calc-size",
-        "title": "10. Calculating With Intrinsic Sizes: the calc-size() function"
+        "title": "11. Calculating With Intrinsic Sizes: the calc-size() function"
       },
       "definedIn": "prose"
     },
@@ -2029,7 +2354,7 @@
       "heading": {
         "id": "calc-size",
         "href": "https://drafts.csswg.org/css-values-5/#calc-size",
-        "title": "10. Calculating With Intrinsic Sizes: the calc-size() function"
+        "title": "11. Calculating With Intrinsic Sizes: the calc-size() function"
       },
       "definedIn": "prose"
     },
@@ -2050,7 +2375,7 @@
         "id": "simplifying-calc-size",
         "href": "https://drafts.csswg.org/css-values-5/#simplifying-calc-size",
         "title": "Simplifying calc-size()",
-        "number": "10.1"
+        "number": "11.1"
       },
       "definedIn": "prose"
     },
@@ -2069,7 +2394,7 @@
         "id": "simplifying-calc-size",
         "href": "https://drafts.csswg.org/css-values-5/#simplifying-calc-size",
         "title": "Simplifying calc-size()",
-        "number": "10.1"
+        "number": "11.1"
       },
       "definedIn": "prose"
     },
@@ -2088,7 +2413,7 @@
         "id": "simplifying-calc-size",
         "href": "https://drafts.csswg.org/css-values-5/#simplifying-calc-size",
         "title": "Simplifying calc-size()",
-        "number": "10.1"
+        "number": "11.1"
       },
       "definedIn": "prose"
     },
@@ -2109,7 +2434,7 @@
         "id": "resolving-calc-size",
         "href": "https://drafts.csswg.org/css-values-5/#resolving-calc-size",
         "title": "Resolving calc-size()",
-        "number": "10.2"
+        "number": "11.2"
       },
       "definedIn": "prose"
     },
@@ -2128,7 +2453,7 @@
         "id": "interpolate-size",
         "href": "https://drafts.csswg.org/css-values-5/#interpolate-size",
         "title": "Interpolating sizing keywords: the interpolate-size property",
-        "number": "10.4"
+        "number": "11.4"
       },
       "definedIn": "table"
     },
@@ -2149,7 +2474,7 @@
         "id": "interpolate-size",
         "href": "https://drafts.csswg.org/css-values-5/#interpolate-size",
         "title": "Interpolating sizing keywords: the interpolate-size property",
-        "number": "10.4"
+        "number": "11.4"
       },
       "definedIn": "dt"
     },
@@ -2170,7 +2495,7 @@
         "id": "interpolate-size",
         "href": "https://drafts.csswg.org/css-values-5/#interpolate-size",
         "title": "Interpolating sizing keywords: the interpolate-size property",
-        "number": "10.4"
+        "number": "11.4"
       },
       "definedIn": "dt"
     },
