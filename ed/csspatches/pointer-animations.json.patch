@@ -1,0 +1,42 @@
+From f4329c4abe9420747094df127fce0cf67133ccc1 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Fri, 6 Jun 2025 07:17:30 +0200
+Subject: [PATCH] Prefix a couple of type definitions to avoid duplication
+
+Pending https://github.com/w3c/csswg-drafts/pull/12283
+---
+ ed/css/pointer-animations.json | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/ed/css/pointer-animations.json b/ed/css/pointer-animations.json
+index 75c0942caa..1030dd6dbf 100644
+--- a/ed/css/pointer-animations.json
++++ b/ed/css/pointer-animations.json
+@@ -151,7 +151,7 @@
+       "prose": "The pointer() functional notation can be used as a <single-animation-timeline> value in animation-timeline and specifies a pointer progress timeline. Its syntax is",
+       "href": "https://drafts.csswg.org/pointer-animations-1/#funcdef-pointer",
+       "type": "function",
+-      "value": "pointer( [ <source> || <axis> ]? )",
++      "value": "pointer( [ <pointer-source> || <pointer-axis> ]? )",
+       "values": [
+         {
+           "name": "block",
+@@ -205,13 +205,13 @@
+       ]
+     },
+     {
+-      "name": "<axis>",
++      "name": "<pointer-axis>",
+       "href": "https://drafts.csswg.org/pointer-animations-1/#typedef-axis",
+       "type": "type",
+       "value": "block | inline | x | y"
+     },
+     {
+-      "name": "<source>",
++      "name": "<pointer-source>",
+       "href": "https://drafts.csswg.org/pointer-animations-1/#typedef-source",
+       "type": "type",
+       "value": "root | nearest | self"
+-- 
+2.37.1.windows.1
+
