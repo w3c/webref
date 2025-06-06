@@ -4,8 +4,14 @@
 
 import { describe, it } from 'node:test';
 import { strict as assert } from 'node:assert';
-import consolidated from '../../curated/css.json' with { type: 'json' };
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import css from '@webref/css';
 import { definitionSyntax } from 'css-tree';
+
+const scriptPath = path.dirname(fileURLToPath(import.meta.url));
+const curatedFolder = path.join(scriptPath, '..', '..', 'curated');
+
 
 // Expected categories in the consolidated file
 const categories = {
@@ -27,6 +33,15 @@ function pluralize(word) {
 }
 
 describe(`The consolidated CSS file`, async () => {
+  // Create a set of well-known interfaces and an inheritance chain
+  let consolidated;
+  try {
+    consolidated = await css.listAll({ folder: curatedFolder });
+  }
+  catch (err) {
+      it('contains valid JSON', () => { throw err; });
+  }
+
   for (const [category, label] of Object.entries(categories)) {
     const list = consolidated[category];
 

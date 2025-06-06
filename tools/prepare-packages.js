@@ -27,7 +27,8 @@ async function preparePackages(curatedFolder, packagesFolder) {
   console.log(`- ${crawlIndex.results.length} curated specs in index file`);
 
   const packages = [
-    { name: 'css', fileExt: 'json' },
+    { name: 'css', fileExt: 'json', index: 'css.json', folder: null },
+    { name: 'css6', fileExt: 'json', folder: 'css' },
     { name: 'elements', fileExt: 'json' },
     { name: 'events', fileExt: 'json', index: 'events.json', folder: null },
     { name: 'idl', fileExt: 'idl' }
