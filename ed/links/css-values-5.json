@@ -80,7 +80,6 @@
         ]
       },
       "http://www.w3.org/TR/css-values-4/": {},
-      "https://css.typetura.com/ruleset-interpolation/explainer/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/attr": {},
       "https://dom.spec.whatwg.org/": {},
@@ -104,22 +103,14 @@
       "https://drafts.csswg.org/css-cascade-5/": {},
       "https://drafts.csswg.org/css-cascade-6/": {},
       "https://drafts.csswg.org/css-color-4/": {},
-      "https://drafts.csswg.org/css-color-5/": {
-        "anchors": [
-          "color-mix"
-        ]
-      },
+      "https://drafts.csswg.org/css-color-5/": {},
       "https://drafts.csswg.org/css-conditional-3/": {},
       "https://drafts.csswg.org/css-conditional-5/": {},
       "https://drafts.csswg.org/css-display/": {},
       "https://drafts.csswg.org/css-easing/": {},
       "https://drafts.csswg.org/css-fonts-4/": {},
       "https://drafts.csswg.org/css-images-3/": {},
-      "https://drafts.csswg.org/css-images-4/": {
-        "anchors": [
-          "cross-fade-function"
-        ]
-      },
+      "https://drafts.csswg.org/css-images-4/": {},
       "https://drafts.csswg.org/css-lists-3/": {},
       "https://drafts.csswg.org/css-mixins/": {},
       "https://drafts.csswg.org/css-pseudo-4/": {},
@@ -166,11 +157,7 @@
           "issuecomment-1823607623"
         ]
       },
-      "https://github.com/w3c/csswg-drafts/issues/6245": {
-        "anchors": [
-          "issuecomment-2469190377"
-        ]
-      },
+      "https://github.com/w3c/csswg-drafts/issues/6245": {},
       "https://github.com/w3c/csswg-drafts/issues/9690": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-variables/css-variable-change-style-001.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-variables/css-variable-change-style-002.html": {},
@@ -398,6 +385,7 @@
       "https://drafts.csswg.org/css-animations-1/": {
         "anchors": [
           "at-ruledef-keyframes",
+          "propdef-animation-timing-function",
           "typedef-keyframes-name"
         ]
       },
@@ -448,6 +436,8 @@
       },
       "https://drafts.csswg.org/css-color-4/": {
         "anchors": [
+          "valdef-color-red",
+          "valdef-color-green",
           "propdef-opacity",
           "valdef-color-blue",
           "valdef-color-transparent",
@@ -486,8 +476,9 @@
       },
       "https://drafts.csswg.org/css-easing-2/": {
         "anchors": [
+          "typedef-easing-function",
           "easing-function",
-          "typedef-easing-function"
+          "easing-function-input-progress-value"
         ]
       },
       "https://drafts.csswg.org/css-fonts-4/": {
@@ -507,7 +498,7 @@
       "https://drafts.csswg.org/css-images-4/": {
         "anchors": [
           "funcdef-cross-fade",
-          "typedef-cf-image"
+          "gradient-function"
         ]
       },
       "https://drafts.csswg.org/css-lists-3/": {
@@ -534,8 +525,8 @@
       },
       "https://drafts.csswg.org/css-sizing-3/": {
         "anchors": [
-          "propdef-width",
           "valdef-width-auto",
+          "propdef-width",
           "propdef-height",
           "definite",
           "intrinsic-size",
@@ -558,14 +549,15 @@
           "whitespace",
           "component-value",
           "parse-a-list-of-component-values",
-          "typedef-percentage-token",
-          "typedef-ident-token"
+          "typedef-ident-token",
+          "typedef-percentage-token"
         ]
       },
       "https://drafts.csswg.org/css-transforms-1/": {
         "anchors": [
           "propdef-transform-origin",
-          "typedef-transform-list"
+          "typedef-transform-list",
+          "identity-transform-function"
         ]
       },
       "https://drafts.csswg.org/css-transforms-2/": {
@@ -607,16 +599,17 @@
           "typedef-dimension",
           "css-consistent-type",
           "funcdef-calc",
+          "mult-comma",
           "time-value",
           "css-make-a-type-consistent",
-          "mult-comma",
+          "mult-num-range",
+          "comb-any",
           "css-wide-keywords",
           "px",
           "identifier-value",
           "mult-one-plus",
           "integer-value",
           "typedef-dashed-ident",
-          "comb-any",
           "funcdef-round",
           "simplify-a-calculation-tree",
           "top-level-calculation"
@@ -746,9 +739,11 @@
       "https://www.w3.org/TR/css-values-5/": {
         "anchors": [
           "typedef-boolean-expr",
-          "funcdef-media-progress",
+          "funcdef-mix",
+          "typedef-progress",
+          "typedef-intrinsic-size-keyword",
           "funcdef-container-progress",
-          "typedef-intrinsic-size-keyword"
+          "funcdef-media-progress"
         ]
       },
       "https://www.w3.org/TR/css-variables-1/": {

@@ -1,0 +1,866 @@
+{
+  "spec": {
+    "title": "Pointer-driven Animations",
+    "url": "https://drafts.csswg.org/pointer-animations-1/"
+  },
+  "dfns": [
+    {
+      "id": "pointer-driven-animations",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-driven-animations",
+      "linkingText": [
+        "pointer-driven animations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "intro",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#intro",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pointer-progress-timelines",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-progress-timelines",
+      "linkingText": [
+        "Pointer progress timelines"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-timelines",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-timelines",
+        "title": "Pointer Progress Timelines",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pointer-range",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-range",
+      "linkingText": [
+        "pointer range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-timelines",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-timelines",
+        "title": "Pointer Progress Timelines",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pointer-offset",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-offset",
+      "linkingText": [
+        "pointer offset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-timelines",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-timelines",
+        "title": "Pointer Progress Timelines",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-animation-timeline-range-fill",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-animation-timeline-range-fill",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-timeline-range"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-timelines-ranges",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-timelines-ranges",
+        "title": "Pointer Progress Timeline Ranges",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-animation-timeline-range-fit",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-animation-timeline-range-fit",
+      "linkingText": [
+        "fit"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-timeline-range"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-timelines-ranges",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-timelines-ranges",
+        "title": "Pointer Progress Timeline Ranges",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-animation-timeline-range-cover",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-animation-timeline-range-cover",
+      "linkingText": [
+        "cover"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-timeline-range"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-timelines-ranges",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-timelines-ranges",
+        "title": "Pointer Progress Timeline Ranges",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-animation-timeline-range-contain",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-animation-timeline-range-contain",
+      "linkingText": [
+        "contain"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-timeline-range"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-timelines-ranges",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-timelines-ranges",
+        "title": "Pointer Progress Timeline Ranges",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "funcdef-pointer",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#funcdef-pointer",
+      "linkingText": [
+        "pointer()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-notation",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-notation",
+        "title": "The pointer() notation",
+        "number": "2.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-axis",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#typedef-axis",
+      "linkingText": [
+        "<axis>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pointer-notation",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-notation",
+        "title": "The pointer() notation",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-source",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#typedef-source",
+      "linkingText": [
+        "<source>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pointer-notation",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-notation",
+        "title": "The pointer() notation",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-pointer-block",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-pointer-block",
+      "linkingText": [
+        "block"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "pointer()",
+        "pointer-timeline-axis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-notation",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-notation",
+        "title": "The pointer() notation",
+        "number": "2.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-pointer-inline",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-pointer-inline",
+      "linkingText": [
+        "inline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "pointer()",
+        "pointer-timeline-axis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-notation",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-notation",
+        "title": "The pointer() notation",
+        "number": "2.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-pointer-x",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-pointer-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "pointer()",
+        "pointer-timeline-axis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-notation",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-notation",
+        "title": "The pointer() notation",
+        "number": "2.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-pointer-y",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-pointer-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "pointer()",
+        "pointer-timeline-axis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-notation",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-notation",
+        "title": "The pointer() notation",
+        "number": "2.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-pointer-self",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-pointer-self",
+      "linkingText": [
+        "self"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "pointer()",
+        "pointer-timeline-axis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-notation",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-notation",
+        "title": "The pointer() notation",
+        "number": "2.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-pointer-nearest",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-pointer-nearest",
+      "linkingText": [
+        "nearest"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "pointer()",
+        "pointer-timeline-axis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-notation",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-notation",
+        "title": "The pointer() notation",
+        "number": "2.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-pointer-root",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-pointer-root",
+      "linkingText": [
+        "root"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "pointer()",
+        "pointer-timeline-axis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-notation",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-notation",
+        "title": "The pointer() notation",
+        "number": "2.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-pointeraxis",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#enumdef-pointeraxis",
+      "linkingText": [
+        "PointerAxis"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointertimeline-interface",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointertimeline-interface",
+        "title": "The PointerTimeline Interface",
+        "number": "2.3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pointeraxis-block",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#dom-pointeraxis-block",
+      "linkingText": [
+        "\"block\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PointerAxis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointertimeline-interface",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointertimeline-interface",
+        "title": "The PointerTimeline Interface",
+        "number": "2.3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pointeraxis-inline",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#dom-pointeraxis-inline",
+      "linkingText": [
+        "\"inline\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PointerAxis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointertimeline-interface",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointertimeline-interface",
+        "title": "The PointerTimeline Interface",
+        "number": "2.3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pointeraxis-x",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#dom-pointeraxis-x",
+      "linkingText": [
+        "\"x\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PointerAxis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointertimeline-interface",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointertimeline-interface",
+        "title": "The PointerTimeline Interface",
+        "number": "2.3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pointeraxis-y",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#dom-pointeraxis-y",
+      "linkingText": [
+        "\"y\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PointerAxis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointertimeline-interface",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointertimeline-interface",
+        "title": "The PointerTimeline Interface",
+        "number": "2.3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-pointertimelineoptions",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#dictdef-pointertimelineoptions",
+      "linkingText": [
+        "PointerTimelineOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointertimeline-interface",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointertimeline-interface",
+        "title": "The PointerTimeline Interface",
+        "number": "2.3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pointertimelineoptions-source",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#dom-pointertimelineoptions-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerTimelineOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointertimeline-interface",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointertimeline-interface",
+        "title": "The PointerTimeline Interface",
+        "number": "2.3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pointertimelineoptions-axis",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#dom-pointertimelineoptions-axis",
+      "linkingText": [
+        "axis"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerTimelineOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointertimeline-interface",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointertimeline-interface",
+        "title": "The PointerTimeline Interface",
+        "number": "2.3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "pointertimeline",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#pointertimeline",
+      "linkingText": [
+        "PointerTimeline"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointertimeline-interface",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointertimeline-interface",
+        "title": "The PointerTimeline Interface",
+        "number": "2.3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pointertimeline-pointertimeline-options-options",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#dom-pointertimeline-pointertimeline-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PointerTimeline/PointerTimeline(options)",
+        "PointerTimeline/constructor(options)",
+        "PointerTimeline/PointerTimeline()",
+        "PointerTimeline/constructor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointertimeline-interface",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointertimeline-interface",
+        "title": "The PointerTimeline Interface",
+        "number": "2.3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pointertimeline-source",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#dom-pointertimeline-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PointerTimeline"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointertimeline-interface",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointertimeline-interface",
+        "title": "The PointerTimeline Interface",
+        "number": "2.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-pointertimeline-axis",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#dom-pointertimeline-axis",
+      "linkingText": [
+        "axis"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PointerTimeline"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointertimeline-interface",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointertimeline-interface",
+        "title": "The PointerTimeline Interface",
+        "number": "2.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-pointertimeline-pointertimeline",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#dom-pointertimeline-pointertimeline",
+      "linkingText": [
+        "PointerTimeline(options)",
+        "constructor(options)",
+        "PointerTimeline()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "PointerTimeline"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointertimeline-interface",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointertimeline-interface",
+        "title": "The PointerTimeline Interface",
+        "number": "2.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "named-pointer-progress-timelines",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#named-pointer-progress-timelines",
+      "linkingText": [
+        "named pointer progress timelines"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pointer-timelines-named",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-timelines-named",
+        "title": "Named Pointer Progress Timelines",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-pointer-timeline-name",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#propdef-pointer-timeline-name",
+      "linkingText": [
+        "pointer-timeline-name"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-timeline-name",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-timeline-name",
+        "title": "Naming a Pointer Progress Timeline: the pointer-timeline-name property",
+        "number": "2.4.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-pointer-timeline-axis",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#propdef-pointer-timeline-axis",
+      "linkingText": [
+        "pointer-timeline-axis"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-timeline-axis",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-timeline-axis",
+        "title": "Axis of a Pointer Progress Timeline: the pointer-timeline-axis property",
+        "number": "2.4.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-pointer-timeline",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#propdef-pointer-timeline",
+      "linkingText": [
+        "pointer-timeline"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pointer-timeline-shorthand",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#pointer-timeline-shorthand",
+        "title": "Pointer Timeline Shorthand: the pointer-timeline shorthand",
+        "number": "2.4.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "animation-range-center-subject",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#animation-range-center-subject",
+      "linkingText": [
+        "animation range center subject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "animation-range-centering",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#animation-range-centering",
+        "title": "Animation Range Centering",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-timeline-range-center-subject",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#typedef-timeline-range-center-subject",
+      "linkingText": [
+        "<timeline-range-center-subject>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "animation-range-centering",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#animation-range-centering",
+        "title": "Animation Range Centering",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-timeline-range-center-subject-source",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-timeline-range-center-subject-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "timeline-range-center-subject"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "animation-range-centering",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#animation-range-centering",
+        "title": "Animation Range Centering",
+        "number": "A"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-timeline-range-center-subject-target",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-timeline-range-center-subject-target",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "timeline-range-center-subject"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "animation-range-centering",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#animation-range-centering",
+        "title": "Animation Range Centering",
+        "number": "A"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-animation-range-center",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#propdef-animation-range-center",
+      "linkingText": [
+        "animation-range-center"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "animation-range-center",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#animation-range-center",
+        "title": "Specifying an Animation’s Timeline Range Center: the animation-range-center property"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-animation-range-center-normal",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-animation-range-center-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-range-center"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "animation-range-center",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#animation-range-center",
+        "title": "Specifying an Animation’s Timeline Range Center: the animation-range-center property"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-animation-range-center-timeline-range-name-length-percentage",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-animation-range-center-timeline-range-name-length-percentage",
+      "linkingText": [
+        "<timeline-range-name> <length-percentage>?"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-range-center"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "animation-range-center",
+        "href": "https://drafts.csswg.org/pointer-animations-1/#animation-range-center",
+        "title": "Specifying an Animation’s Timeline Range Center: the animation-range-center property"
+      },
+      "definedIn": "dt"
+    }
+  ]
+}

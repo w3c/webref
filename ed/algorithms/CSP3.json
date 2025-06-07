@@ -1759,17 +1759,17 @@
               "html": "<p>Call <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#potentially-report-hash\" id=\"ref-for-potentially-report-hash①\">potentially report hash</a> with <var>response</var>, <var>request</var>, <var>directive</var> and <var>policy</var>.</p>"
             },
             {
-              "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-nonce-to-source-list\">§ 6.7.2.3 Does nonce match source list?</a> on <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-nonce-metadata\" id=\"ref-for-concept-request-nonce-metadata⑥\">cryptographic nonce metadata</a> and this\n  directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑥⓪\">value</a> is \"<code>Matches</code>\", return\n  \"<code>Allowed</code>\".</p>"
+              "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-nonce-to-source-list\">§ 6.7.2.3 Does nonce match source list?</a> on <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-nonce-metadata\" id=\"ref-for-concept-request-nonce-metadata⑦\">cryptographic nonce metadata</a> and this\n  directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑥⓪\">value</a> is \"<code>Matches</code>\", return\n  \"<code>Allowed</code>\".</p>"
             },
             {
-              "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-integrity-metadata-to-source-list\">§ 6.7.2.4 Does integrity metadata match source list?</a> on <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-integrity-metadata\" id=\"ref-for-concept-request-integrity-metadata①\">integrity metadata</a> and this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑥①\">value</a> is \"<code>Matches</code>\", return \"<code>Allowed</code>\".</p>"
+              "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-integrity-metadata-to-source-list\">§ 6.7.2.4 Does integrity metadata match source list?</a> on <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-integrity-metadata\" id=\"ref-for-concept-request-integrity-metadata②\">integrity metadata</a> and this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑥①\">value</a> is \"<code>Matches</code>\", return \"<code>Allowed</code>\".</p>"
             },
             {
-              "html": "If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑥②\">value</a> contains\n  \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-strict-dynamic\" id=\"ref-for-grammardef-strict-dynamic②\"><code>'strict-dynamic'</code></a>\":",
+              "html": "If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑥②\">value</a> contains a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression⑦\">source\n  expression</a> that is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive⑦\">ASCII case-insensitive</a> match for\n  the \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-strict-dynamic\" id=\"ref-for-grammardef-strict-dynamic②\"><code>'strict-dynamic'</code></a>\" <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source②\">keyword-source</a>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-parser-metadata\" id=\"ref-for-concept-request-parser-metadata②\">parser metadata</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#parser-inserted\" id=\"ref-for-parser-inserted②\">\"parser-inserted\"</a>, return \"<code>Allowed</code>\".</p>\n          <p>Otherwise, return \"<code>Blocked</code>\".</p>"
+                  "html": "<p>If the <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-parser-metadata\" id=\"ref-for-concept-request-parser-metadata②\">parser metadata</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#parser-inserted\" id=\"ref-for-parser-inserted②\">\"parser-inserted\"</a>, return \"<code>Blocked</code>\".</p>\n          <p>Otherwise, return \"<code>Allowed</code>\".</p>"
                 }
               ]
             },
@@ -1844,7 +1844,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤⑧\">request</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-nonce-metadata\" id=\"ref-for-concept-request-nonce-metadata⑦\">cryptographic nonce metadata</a> <var>nonce</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-lists\" id=\"ref-for-source-lists①③\">source list</a> <var>source list</var>, this algorithm returns\n  \"<code>Matches</code>\" if the nonce matches one or more source expressions in the list,\n  and \"<code>Does Not Match</code>\" otherwise:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤⑧\">request</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-nonce-metadata\" id=\"ref-for-concept-request-nonce-metadata⑧\">cryptographic nonce metadata</a> <var>nonce</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-lists\" id=\"ref-for-source-lists①③\">source list</a> <var>source list</var>, this algorithm returns\n  \"<code>Matches</code>\" if the nonce matches one or more source expressions in the list,\n  and \"<code>Does Not Match</code>\" otherwise:",
       "rationale": "assert",
       "steps": [
         {
@@ -1868,14 +1868,14 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤⑨\">request</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-integrity-metadata\" id=\"ref-for-concept-request-integrity-metadata②\">integrity metadata</a> <var>integrity metadata</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-lists\" id=\"ref-for-source-lists①④\">source list</a> <var>source list</var>, this algorithm\n  returns \"<code>Matches</code>\" if the integrity metadata matches one or more source\n  expressions in the list, and \"<code>Does Not Match</code>\" otherwise:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤⑨\">request</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-integrity-metadata\" id=\"ref-for-concept-request-integrity-metadata③\">integrity metadata</a> <var>integrity metadata</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-lists\" id=\"ref-for-source-lists①④\">source list</a> <var>source list</var>, this algorithm\n  returns \"<code>Matches</code>\" if the integrity metadata matches one or more source\n  expressions in the list, and \"<code>Does Not Match</code>\" otherwise:",
       "rationale": "assert",
       "steps": [
         {
           "html": "<p class=\"assertion\">Assert: <var>source list</var> is not null.</p>"
         },
         {
-          "html": "<p>Let <var>integrity expressions</var> be the set of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression⑦\">source expressions</a> in <var>source list</var> that match the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-source\" id=\"ref-for-grammardef-hash-source④\">hash-source</a> grammar.</p>"
+          "html": "<p>Let <var>integrity expressions</var> be the set of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression⑧\">source expressions</a> in <var>source list</var> that match the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-source\" id=\"ref-for-grammardef-hash-source④\">hash-source</a> grammar.</p>"
         },
         {
           "html": "<p>If <var>integrity expressions</var> is empty, return \"<code>Does Not Match</code>\".</p>"
@@ -1891,7 +1891,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>integrity expressions</var> does not contain a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression⑧\">source expression</a> whose <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-algorithm\" id=\"ref-for-grammardef-hash-algorithm①\">hash-algorithm</a> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive⑦\">ASCII\n  case-insensitive</a> match for <var>source</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-algorithm\" id=\"ref-for-grammardef-hash-algorithm②\">hash-algorithm</a>, and whose <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-base64-value\" id=\"ref-for-grammardef-base64-value⑤\">base64-value</a> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is①\">identical to</a> <var>source</var>’s <code>base64-value</code>,\n  return \"<code>Does Not Match</code>\".</p>"
+              "html": "<p>If <var>integrity expressions</var> does not contain a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression⑨\">source expression</a> whose <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-algorithm\" id=\"ref-for-grammardef-hash-algorithm①\">hash-algorithm</a> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive⑧\">ASCII\n  case-insensitive</a> match for <var>source</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-algorithm\" id=\"ref-for-grammardef-hash-algorithm②\">hash-algorithm</a>, and whose <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-base64-value\" id=\"ref-for-grammardef-base64-value⑤\">base64-value</a> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is①\">identical to</a> <var>source</var>’s <code>base64-value</code>,\n  return \"<code>Does Not Match</code>\".</p>"
             }
           ]
         },
@@ -1911,7 +1911,7 @@
           "html": "<p>If <var>source list</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①\">is empty</a>, return \"<code>Does Not Match</code>\".</p>"
         },
         {
-          "html": "<p>If <var>source list</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> is 1, and <var>source list</var>[0] is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive⑧\">ASCII\n  case-insensitive</a> match for the string \"<code>'none'</code>\", return \"<code>Does Not       Match</code>\".</p>"
+          "html": "<p>If <var>source list</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> is 1, and <var>source list</var>[0] is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive⑨\">ASCII\n  case-insensitive</a> match for the string \"<code>'none'</code>\", return \"<code>Does Not       Match</code>\".</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③③\">For each</a> <var>expression</var> of <var>source list</var>:",
@@ -1928,7 +1928,7 @@
       ]
     },
     {
-      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#url\" id=\"ref-for-url①⓪\">URL</a></code> <var>url</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression⑨\">source expression</a> <var>expression</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin②\">origin</a> <var>origin</var>, and a number <var>redirect count</var>, this algorithm\n  returns \"<code>Matches</code>\" if <var>url</var> matches <var>expression</var>, and \"<code>Does Not Match</code>\"\n  otherwise.",
+      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#url\" id=\"ref-for-url①⓪\">URL</a></code> <var>url</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression①⓪\">source expression</a> <var>expression</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin②\">origin</a> <var>origin</var>, and a number <var>redirect count</var>, this algorithm\n  returns \"<code>Matches</code>\" if <var>url</var> matches <var>expression</var>, and \"<code>Does Not Match</code>\"\n  otherwise.",
       "rationale": "if",
       "steps": [
         {
@@ -1986,7 +1986,7 @@
           ]
         },
         {
-          "html": "<p>If <var>expression</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive⑨\">ASCII case-insensitive</a> match for \"<code>'self'</code>\",\n  return \"<code>Matches</code>\" if one or more of the following conditions is met:</p>",
+          "html": "<p>If <var>expression</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive①⓪\">ASCII case-insensitive</a> match for \"<code>'self'</code>\",\n  return \"<code>Matches</code>\" if one or more of the following conditions is met:</p>",
           "ignored": [
             "origin is the same as url’s origin origin’s host is the same as url’s host, origin’s port and url’s port are either the same or the default ports for their respective schemes, and one or more of the following conditions is met: url’s scheme is \"https\" or \"wss\" origin’s scheme is \"http\" and url’s scheme is \"http\" or \"ws\""
           ]
@@ -2037,7 +2037,7 @@
           ]
         },
         {
-          "html": "<p>If <var>pattern</var> is not an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive①⑦\">ASCII case-insensitive</a> match for <var>host</var>, return\n  \"<code>Does Not Match</code>\".</p>"
+          "html": "<p>If <var>pattern</var> is not an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive①⑧\">ASCII case-insensitive</a> match for <var>host</var>, return\n  \"<code>Does Not Match</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Matches</code>\".</p>"
@@ -2150,10 +2150,10 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>attribute</var>’s name contains an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive①⑧\">ASCII case-insensitive</a> match for\n  \"<code>&lt;script</code>\" or \"<code>&lt;style</code>\", return \"<code>Not Nonceable</code>\".</p>"
+              "html": "<p>If <var>attribute</var>’s name contains an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive①⑨\">ASCII case-insensitive</a> match for\n  \"<code>&lt;script</code>\" or \"<code>&lt;style</code>\", return \"<code>Not Nonceable</code>\".</p>"
             },
             {
-              "html": "<p>If <var>attribute</var>’s value contains an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive①⑨\">ASCII case-insensitive</a> match for\n  \"<code>&lt;script</code>\" or \"<code>&lt;style</code>\", return \"<code>Not Nonceable</code>\".</p>"
+              "html": "<p>If <var>attribute</var>’s value contains an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②⓪\">ASCII case-insensitive</a> match for\n  \"<code>&lt;script</code>\" or \"<code>&lt;style</code>\", return \"<code>Not Nonceable</code>\".</p>"
             }
           ]
         },
@@ -2180,10 +2180,10 @@
               "html": "<p>If <var>expression</var> matches the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-nonce-source\" id=\"ref-for-grammardef-nonce-source⑥\"><code>nonce-source</code></a> or <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-source\" id=\"ref-for-grammardef-hash-source⑥\"><code>hash-source</code></a> grammar, return \"<code>Does Not Allow</code>\".</p>"
             },
             {
-              "html": "<p>If <var>type</var> is \"<code>script</code>\", \"<code>script attribute</code>\" or \"<code>navigation</code>\"\n  and <var>expression</var> matches the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source③\">keyword-source</a> \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-strict-dynamic\" id=\"ref-for-grammardef-strict-dynamic③\"><code>'strict-dynamic'</code></a>\", return \"<code>Does Not Allow</code>\".</p>"
+              "html": "<p>If <var>type</var> is \"<code>script</code>\", \"<code>script attribute</code>\" or \"<code>navigation</code>\"\n  and <var>expression</var> matches the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source④\">keyword-source</a> \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-strict-dynamic\" id=\"ref-for-grammardef-strict-dynamic④\"><code>'strict-dynamic'</code></a>\", return \"<code>Does Not Allow</code>\".</p>"
             },
             {
-              "html": "<p>If <var>expression</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②⓪\">ASCII case-insensitive</a> match for the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source④\"><code>keyword-source</code></a> \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-unsafe-inline\" id=\"ref-for-grammardef-unsafe-inline②\"><code>'unsafe-inline'</code></a>\",\n  set <var>allow all inline</var> to <code>true</code>.</p>"
+              "html": "<p>If <var>expression</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②①\">ASCII case-insensitive</a> match for the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source⑤\"><code>keyword-source</code></a> \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-unsafe-inline\" id=\"ref-for-grammardef-unsafe-inline②\"><code>'unsafe-inline'</code></a>\",\n  set <var>allow all inline</var> to <code>true</code>.</p>"
             }
           ]
         },
@@ -2222,7 +2222,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>expression</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②①\">ASCII case-insensitive</a> match for the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source⑤\"><code>keyword-source</code></a> \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-unsafe-hashes\" id=\"ref-for-grammardef-unsafe-hashes\"><code>'unsafe-hashes'</code></a>\",\n  set <var>unsafe-hashes flag</var> to <code>true</code>. Break out of the loop.</p>"
+              "html": "<p>If <var>expression</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②②\">ASCII case-insensitive</a> match for the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source⑥\"><code>keyword-source</code></a> \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-unsafe-hashes\" id=\"ref-for-grammardef-unsafe-hashes\"><code>'unsafe-hashes'</code></a>\",\n  set <var>unsafe-hashes flag</var> to <code>true</code>. Break out of the loop.</p>"
             }
           ]
         },
@@ -2245,13 +2245,13 @@
                       "html": "<p>Let <var>algorithm</var> be null.</p>"
                     },
                     {
-                      "html": "<p>If <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-algorithm\" id=\"ref-for-grammardef-hash-algorithm③\"><code>hash-algorithm</code></a> part is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②②\">ASCII case-insensitive</a> match for \"sha256\", set <var>algorithm</var> to <a data-link-type=\"dfn\" href=\"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf#\" id=\"ref-for-something①\">SHA-256</a>.</p>"
+                      "html": "<p>If <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-algorithm\" id=\"ref-for-grammardef-hash-algorithm③\"><code>hash-algorithm</code></a> part is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②③\">ASCII case-insensitive</a> match for \"sha256\", set <var>algorithm</var> to <a data-link-type=\"dfn\" href=\"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf#\" id=\"ref-for-something①\">SHA-256</a>.</p>"
                     },
                     {
-                      "html": "<p>If <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-algorithm\" id=\"ref-for-grammardef-hash-algorithm④\"><code>hash-algorithm</code></a> part is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②③\">ASCII case-insensitive</a> match for \"sha384\", set <var>algorithm</var> to <a data-link-type=\"dfn\" data-refhint-key=\"fe0b17c4\" href=\"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf#\" id=\"ref-for-something②\">SHA-384</a>.</p>"
+                      "html": "<p>If <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-algorithm\" id=\"ref-for-grammardef-hash-algorithm④\"><code>hash-algorithm</code></a> part is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②④\">ASCII case-insensitive</a> match for \"sha384\", set <var>algorithm</var> to <a data-link-type=\"dfn\" data-refhint-key=\"fe0b17c4\" href=\"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf#\" id=\"ref-for-something②\">SHA-384</a>.</p>"
                     },
                     {
-                      "html": "<p>If <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-algorithm\" id=\"ref-for-grammardef-hash-algorithm⑤\"><code>hash-algorithm</code></a> part is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②④\">ASCII case-insensitive</a> match for \"sha512\", set <var>algorithm</var> to <a data-link-type=\"dfn\" data-refhint-key=\"6a5840b7\" href=\"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf#\" id=\"ref-for-something③\">SHA-512</a>.</p>"
+                      "html": "<p>If <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-algorithm\" id=\"ref-for-grammardef-hash-algorithm⑤\"><code>hash-algorithm</code></a> part is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②⑤\">ASCII case-insensitive</a> match for \"sha512\", set <var>algorithm</var> to <a data-link-type=\"dfn\" data-refhint-key=\"6a5840b7\" href=\"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf#\" id=\"ref-for-something③\">SHA-512</a>.</p>"
                     },
                     {
                       "html": "If <var>algorithm</var> is not null:",

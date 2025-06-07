@@ -7,14 +7,14 @@
     {
       "name": "adjust-border-inner-path-for-corner-shape",
       "href": "https://drafts.csswg.org/css-borders-4/#border-contour-path",
-      "html": "To compute an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑥\">element</a> <var>element</var>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"border-contour-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">border contour path</dfn> given an an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#box-box-edge\" id=\"ref-for-box-box-edge\">edge</a> <var>targetEdge</var> and an optional number <var>spread</var> (default 0): \n    \n    <p>To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"corner-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">corner path</dfn> given a rectangle <var>cornerRect</var>, a rectangle <var>trimRect</var>, and numbers <var>startThickness</var>, <var>endThickness</var>, <var>orientation</var>, and <var>curvature</var>:</p>",
+      "html": "To compute an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑦\">element</a> <var>element</var>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"border-contour-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">border contour path</dfn> given an an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#box-box-edge\" id=\"ref-for-box-box-edge\">edge</a> <var>targetEdge</var> and an optional number <var>spread</var> (default 0): \n    \n    <p>To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"corner-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">corner path</dfn> given a rectangle <var>cornerRect</var>, a rectangle <var>trimRect</var>, and numbers <var>startThickness</var>, <var>endThickness</var>, <var>orientation</var>, and <var>curvature</var>:</p>",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>outerLeft</var>, <var>outerTop</var>, <var>outerRight</var>, <var>outerBottom</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#unshaped-edge\" id=\"ref-for-unshaped-edge\">unshaped</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-edge\" id=\"ref-for-border-edge②\">border edge</a>.</p>"
         },
         {
-          "html": "<p>Let <var>topLeftHorizontalRadius</var>, <var>topLeftVericalRadius</var>, <var>topRightHorizontalRadius</var>, <var>topRightVerticalRadius</var>, <var>bottomRightHorizontalRadius</var>, <var>bottomRightVerticalRadius</var>, <var>bottomLeftHorizontalRadius</var>, and <var>bottomLeftVerticalRadius</var> be <var>element</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-edge\" id=\"ref-for-border-edge③\">border edge</a>’s radii.</p>"
+          "html": "<p>Let <var>topLeftHorizontalRadius</var>, <var>topLeftVericalRadius</var>, <var>topRightHorizontalRadius</var>, <var>topRightVerticalRadius</var>, <var>bottomRightHorizontalRadius</var>, <var>bottomRightVerticalRadius</var>, <var>bottomLeftHorizontalRadius</var>, and <var>bottomLeftVerticalRadius</var> be <var>element</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-edge\" id=\"ref-for-border-edge③\">border edge</a>’s radii,\nscaled by <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#opposite-corner-scale-factor\" id=\"ref-for-opposite-corner-scale-factor\">opposite corner scale factor</a>.</p>"
         },
         {
           "html": "<p>Let <var>topLeftShape</var>, <var>topRightShape</var>, <var>bottomRightShape</var>, and <var>bottomLeftShape</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value\">computed</a> <span class=\"css\">corner-*-shape</span> values.</p>"
@@ -51,7 +51,7 @@
     {
       "name": "adjust-border-inner-path-for-corner-shape",
       "href": "https://drafts.csswg.org/css-borders-4/#border-contour-path",
-      "html": "To compute an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑥\">element</a> <var>element</var>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"border-contour-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">border contour path</dfn> given an an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#box-box-edge\" id=\"ref-for-box-box-edge\">edge</a> <var>targetEdge</var> and an optional number <var>spread</var> (default 0): \n    \n    <p>To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"corner-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">corner path</dfn> given a rectangle <var>cornerRect</var>, a rectangle <var>trimRect</var>, and numbers <var>startThickness</var>, <var>endThickness</var>, <var>orientation</var>, and <var>curvature</var>:</p>",
+      "html": "To compute an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑦\">element</a> <var>element</var>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"border-contour-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">border contour path</dfn> given an an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#box-box-edge\" id=\"ref-for-box-box-edge\">edge</a> <var>targetEdge</var> and an optional number <var>spread</var> (default 0): \n    \n    <p>To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"corner-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">corner path</dfn> given a rectangle <var>cornerRect</var>, a rectangle <var>trimRect</var>, and numbers <var>startThickness</var>, <var>endThickness</var>, <var>orientation</var>, and <var>curvature</var>:</p>",
       "rationale": "assert",
       "steps": [
         {
@@ -133,7 +133,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>tangentUnitVector</var> be <code>(1, 0)</code>.</p>\n        \n        <figure>\n          <img alt=\"Tangent unit vector with round (s=1)\" src=\"https://drafts.csswg.org/css-borders-4/images/corner-shape-target-unit-vector-round.svg\" style=\"background: white; padding: 8px;\"> \n         <figcaption>When the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-shape\" id=\"ref-for-propdef-corner-shape⑦\">corner-shape</a> is <span class=\"css\">round</span> or more convex (<code>&gt;= 1</code>), the unit vector is <code>1, 0</code>. </figcaption>\n        </figure>"
+              "html": "<p>Let <var>tangentUnitVector</var> be <code>(1, 0)</code>.</p>\n        \n        <figure>\n          <img alt=\"Tangent unit vector with round (s=1)\" src=\"https://drafts.csswg.org/css-borders-4/images/corner-shape-target-unit-vector-round.svg\" style=\"background: white; padding: 8px;\"> \n         <figcaption>When the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-shape\" id=\"ref-for-propdef-corner-shape①⑥\">corner-shape</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-value-round\" id=\"ref-for-valdef-corner-shape-value-round②\">round</a> or more convex (<code>&gt;= 1</code>), the unit vector is <code>1, 0</code>. </figcaption>\n        </figure>"
             },
             {
               "html": "If <var>curvature</var> is less than 1:",
@@ -152,7 +152,7 @@
                   "html": "<p>Let <var>length</var> be <code>hypot(<var>offsetX</var>, <var>offsetY</var>)</code>.</p>"
                 },
                 {
-                  "html": "<p>Set <var>tangentUnitVector</var> to <code>(<var>offsetX</var> / <var>length</var>, <var>offsetY</var> / <var>length</var>)</code>.</p>\n          <p>At this point <var>curvature</var> is guaranteed to be convex (&gt;=1), so ther resulting <var>tangentUnitVector</var> would be in the range between <code>(1, 0)</code> and <code>(√2/2, √2/2)</code>.</p>\n          <figure>\n            <img alt=\"Tangent unit vector with bevel (s=0)\" src=\"https://drafts.csswg.org/css-borders-4/images/corner-shape-target-unit-vector-bevel.svg\" style=\"background: white; padding: 8px;\"> \n           <figcaption>When the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-shape\" id=\"ref-for-propdef-corner-shape⑧\">corner-shape</a> is <span class=\"css\">bevel</span> (<code>0</code>), the unit vector is <code>√2/2, √2/2</code>. </figcaption>\n          </figure>"
+                  "html": "<p>Set <var>tangentUnitVector</var> to <code>(<var>offsetX</var> / <var>length</var>, <var>offsetY</var> / <var>length</var>)</code>.</p>\n          <p>At this point <var>curvature</var> is guaranteed to be convex (&gt;=1), so ther resulting <var>tangentUnitVector</var> would be in the range between <code>(1, 0)</code> and <code>(√2/2, √2/2)</code>.</p>\n          <figure>\n            <img alt=\"Tangent unit vector with bevel (s=0)\" src=\"https://drafts.csswg.org/css-borders-4/images/corner-shape-target-unit-vector-bevel.svg\" style=\"background: white; padding: 8px;\"> \n           <figcaption>When the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-shape\" id=\"ref-for-propdef-corner-shape①⑦\">corner-shape</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-value-bevel\" id=\"ref-for-valdef-corner-shape-value-bevel①\">bevel</a> (<code>0</code>), the unit vector is <code>√2/2, √2/2</code>. </figcaption>\n          </figure>"
                 }
               ]
             },
@@ -191,9 +191,41 @@
       ]
     },
     {
+      "name": "constrain-radii-for-concave-corner-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#opposite-corner-scale-factor",
+      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"opposite-corner-scale-factor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">opposite corner scale factor</dfn> given an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑧\">element</a> <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>rect</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-box\" id=\"ref-for-border-box②\">border box</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>topRightHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①\">computed</a> <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-top-right-shape\" id=\"ref-for-propdef-corner-top-right-shape\">corner-top-right-shape</a>,\nmapped to the rectangle (<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension③\">width dimension</a> - <var>element</var>’s <span id=\"ref-for-computed-value②\">computed</span> horizontal <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-top-right-radius\" id=\"ref-for-propdef-border-top-right-radius①\">border-top-right-radius</a>, 0, <var>rect</var>’s <span id=\"ref-for-computed-value③\">computed</span> <span class=\"property\" id=\"ref-for-propdef-border-top-right-radius②\">border-top-right-radius</span>).</p>"
+        },
+        {
+          "html": "<p>Let <var>bottomRightHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull①\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value④\">computed</a> <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-right-shape\" id=\"ref-for-propdef-corner-bottom-right-shape\">corner-bottom-right-shape</a>,\nrotated by 90deg with (0.5, 0.5) as an origin,\nand mapped to the rectangle (<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension④\">width dimension</a> - <var>element</var>’s <span id=\"ref-for-computed-value⑤\">computed</span> horizontal <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-right-radius\" id=\"ref-for-propdef-border-bottom-right-radius①\">border-bottom-right-radius</a>, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension①\">height dimension</a> - <var>element</var>’s <span id=\"ref-for-computed-value⑥\">computed</span> vertical <span class=\"property\" id=\"ref-for-propdef-border-bottom-right-radius②\">border-bottom-right-radius</span>, <var>element</var>’s <span id=\"ref-for-computed-value⑦\">computed</span> <span class=\"property\" id=\"ref-for-propdef-border-bottom-right-radius③\">border-bottom-right-radius</span>).</p>"
+        },
+        {
+          "html": "<p>Let <var>bottomLeftHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull②\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑧\">computed</a> <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-right-shape\" id=\"ref-for-propdef-corner-bottom-right-shape①\">corner-bottom-right-shape</a>,\nrotated by 180deg with (0.5, 0.5) as an origin,\nand mapped to the rectangle (0, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension②\">height dimension</a> - <var>element</var>’s <span id=\"ref-for-computed-value⑨\">computed</span> vertical <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-left-radius\" id=\"ref-for-propdef-border-bottom-left-radius①\">border-bottom-left-radius</a>, <var>element</var>’s <span id=\"ref-for-computed-value①⓪\">computed</span> <span class=\"property\" id=\"ref-for-propdef-border-bottom-left-radius②\">border-bottom-left-radius</span>).</p>"
+        },
+        {
+          "html": "<p>Let <var>topLeftHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull③\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①①\">computed</a> <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-top-left-shape\" id=\"ref-for-propdef-corner-top-left-shape②\">corner-top-left-shape</a>,\nrotated by 270deg with (0.5, 0.5) as an origin,\nmapped to (0, 0, <var>element</var>’s <span id=\"ref-for-computed-value①②\">computed</span> <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-top-left-radius\" id=\"ref-for-propdef-border-top-left-radius①\">border-top-left-radius</a>).</p>"
+        },
+        {
+          "html": "<p>Let <var>scaleFactorA</var> be the highest number which, if both <var>topLeftHull</var> and <var>bottomRightHull</var> were scaled by, using their first point as the origin, those polygons would not intersect.</p>"
+        },
+        {
+          "html": "<p>Let <var>scaleFactorB</var> be the highest number which, if both <var>topRightHull</var> and <var>bottomLeftHull</var> were scaled by, using their first point as the origin, those polygons would not intersect.</p>"
+        },
+        {
+          "html": "<p>Return <code>min(1, <var>scaleFactorA</var>, <var>scaleFactorB</var>)</code>.</p>"
+        }
+      ]
+    },
+    {
       "name": "superellipse-param-to-interpolation-value",
       "href": "https://drafts.csswg.org/css-borders-4/#normalized-superellipse-half-corner",
-      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-superellipse-half-corner\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized superellipse half corner</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑦\">superellipse parameter</a> <var>s</var>, return the first matching statement, switching on <var>s</var>: \n    <dl class=\"switch\">\n     <dt data-md=\"\">-∞\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">∞\n     </dt><dd data-md=\"\">\n      <p>Return 1.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>\n    <p>To interpolate a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑧\">superellipse parameter</a> <var>s</var> to an interpolation value between 0 and 1, return the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-superellipse-half-corner\" id=\"ref-for-normalized-superellipse-half-corner①\">normalized superellipse half corner</a> given <var>s</var>.</p>\n    <p>To convert a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value②\">&lt;number [0,1]&gt;</a> <var>interpolationValue</var> back to a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑨\">superellipse parameter</a>, switch on <var>interpolationValue</var>:</p>\n    <dl class=\"switch\">\n     <dt data-md=\"\">0\n     </dt><dd data-md=\"\">\n      <p>Return -∞.</p>\n     </dd><dt data-md=\"\">0.5\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">1\n     </dt><dd data-md=\"\">\n      <p>Return ∞.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>",
+      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-superellipse-half-corner\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized superellipse half corner</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑧\">superellipse parameter</a> <var>s</var>, return the first matching statement, switching on <var>s</var>: \n    <dl class=\"switch\">\n     <dt data-md=\"\">-∞\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">∞\n     </dt><dd data-md=\"\">\n      <p>Return 1.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>",
       "rationale": ".switch",
       "steps": [
         {
@@ -209,7 +241,7 @@
             },
             {
               "case": "Otherwise",
-              "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-superellipse-half-corner\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized superellipse half corner</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑦\">superellipse parameter</a> <var>s</var>, return the first matching statement, switching on <var>s</var>: \n    <dl class=\"switch\">\n     <dt data-md=\"\">-∞\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">∞\n     </dt><dd data-md=\"\">\n      <p>Return 1.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>\n    <p>To interpolate a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑧\">superellipse parameter</a> <var>s</var> to an interpolation value between 0 and 1, return the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-superellipse-half-corner\" id=\"ref-for-normalized-superellipse-half-corner①\">normalized superellipse half corner</a> given <var>s</var>.</p>\n    <p>To convert a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value②\">&lt;number [0,1]&gt;</a> <var>interpolationValue</var> back to a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑨\">superellipse parameter</a>, switch on <var>interpolationValue</var>:</p>\n    <dl class=\"switch\">\n     <dt data-md=\"\">0\n     </dt><dd data-md=\"\">\n      <p>Return -∞.</p>\n     </dd><dt data-md=\"\">0.5\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">1\n     </dt><dd data-md=\"\">\n      <p>Return ∞.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>",
+              "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-superellipse-half-corner\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized superellipse half corner</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑧\">superellipse parameter</a> <var>s</var>, return the first matching statement, switching on <var>s</var>: \n    <dl class=\"switch\">\n     <dt data-md=\"\">-∞\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">∞\n     </dt><dd data-md=\"\">\n      <p>Return 1.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>",
               "rationale": "let",
               "steps": [
                 {
@@ -231,9 +263,46 @@
       ]
     },
     {
-      "name": "superellipse-param-to-interpolation-value",
-      "href": "https://drafts.csswg.org/css-borders-4/#normalized-superellipse-half-corner",
-      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-superellipse-half-corner\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized superellipse half corner</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑦\">superellipse parameter</a> <var>s</var>, return the first matching statement, switching on <var>s</var>: \n    <dl class=\"switch\">\n     <dt data-md=\"\">-∞\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">∞\n     </dt><dd data-md=\"\">\n      <p>Return 1.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>\n    <p>To interpolate a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑧\">superellipse parameter</a> <var>s</var> to an interpolation value between 0 and 1, return the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-superellipse-half-corner\" id=\"ref-for-normalized-superellipse-half-corner①\">normalized superellipse half corner</a> given <var>s</var>.</p>\n    <p>To convert a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value②\">&lt;number [0,1]&gt;</a> <var>interpolationValue</var> back to a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑨\">superellipse parameter</a>, switch on <var>interpolationValue</var>:</p>\n    <dl class=\"switch\">\n     <dt data-md=\"\">0\n     </dt><dd data-md=\"\">\n      <p>Return -∞.</p>\n     </dd><dt data-md=\"\">0.5\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">1\n     </dt><dd data-md=\"\">\n      <p>Return ∞.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>",
+      "name": "superellipse-param-to-hull",
+      "href": "https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull",
+      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-inner-corner-hull\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized inner corner hull</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑨\">superellipse parameter</a> <var>curvature</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>curvature</var> is greater than or equal to zero, return a triangle betwen « (1, 1), (1, 0), (0, 1) ».</p>"
+        },
+        {
+          "html": "<p>Let <var>axisLineA</var> be a line between <code>(1, 0)</code> and <code>(1, 1)</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>axisLineB</var> be a line between <code>(0, 1)</code> and <code>(1, 1)</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>normalizedHalfCorner</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-superellipse-half-corner\" id=\"ref-for-normalized-superellipse-half-corner①\">normalized superellipse half corner</a> given <var>curvature</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>halfCornerPoint</var> be <code>(<var>normalizedHalfCorner</var>, 1 - <var>normalizedHalfCorner</var>)</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>lineFromCenterToHalfCorner</var> be a line between <code>(0, 0)</code> and <var>halfCornerPoint</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>tangentLine</var> be the line perpendicular to <var>lineFromCenterToHalfCorner</var>, at <var>halfCornerPoint</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>intersectionA</var> be the intersection between <var>axisLineA</var> and <var>tangentLine</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>intersectionB</var> be the intersection between <var>axisLineB</var> and <var>tangentLine</var>.</p>"
+        },
+        {
+          "html": "<p>Return a pentagon between the points « (1, 1), (1, 0), <var>intersectionA</var>, <var>intersectionB</var>, (0, 1), (1, 1) ».</p>"
+        }
+      ]
+    },
+    {
+      "name": "convert interpolation value to superellipse parameter",
+      "html": "To convert a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value①\">&lt;number [0,1]&gt;</a> <var>interpolationValue</var> back to a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter①①\">superellipse parameter</a>, switch on <var>interpolationValue</var>:",
       "rationale": ".switch",
       "steps": [
         {
@@ -253,7 +322,7 @@
             },
             {
               "case": "Otherwise",
-              "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-superellipse-half-corner\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized superellipse half corner</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑦\">superellipse parameter</a> <var>s</var>, return the first matching statement, switching on <var>s</var>: \n    <dl class=\"switch\">\n     <dt data-md=\"\">-∞\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">∞\n     </dt><dd data-md=\"\">\n      <p>Return 1.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>\n    <p>To interpolate a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑧\">superellipse parameter</a> <var>s</var> to an interpolation value between 0 and 1, return the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-superellipse-half-corner\" id=\"ref-for-normalized-superellipse-half-corner①\">normalized superellipse half corner</a> given <var>s</var>.</p>\n    <p>To convert a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value②\">&lt;number [0,1]&gt;</a> <var>interpolationValue</var> back to a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑨\">superellipse parameter</a>, switch on <var>interpolationValue</var>:</p>\n    <dl class=\"switch\">\n     <dt data-md=\"\">0\n     </dt><dd data-md=\"\">\n      <p>Return -∞.</p>\n     </dd><dt data-md=\"\">0.5\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">1\n     </dt><dd data-md=\"\">\n      <p>Return ∞.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>",
+              "html": "",
               "rationale": "let",
               "steps": [
                 {

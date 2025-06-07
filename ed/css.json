@@ -1091,11 +1091,18 @@
       "value": "brightness( [ <number> | <percentage> ]? )"
     },
     {
+      "name": "calc-interpolate()",
+      "prose": "The calc-interpolate() interpolation notation represents an interpolated numeric or dimensional value. Like calc(), it is a math function, with the following syntax:",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-calc-interpolate",
+      "type": "function",
+      "value": "calc-interpolate( <progress-source> && [ by <easing-function> ]? && <easing-function>?, <input-position>{1,2} : <calc-sum> , [ <easing-function>? , <input-position>{1,2} : <calc-sum> ]# )"
+    },
+    {
       "name": "calc-mix()",
-      "prose": "The calc-mix() mix notation represents an interpolated numeric or dimensional value. Like calc(), it is a math function, with the following syntactic form:",
+      "prose": "The calc-mix() mix notation represents a weighted average of numeric or dimensional value. Like calc(), it is a math function, with the following syntactic form:",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-calc-mix",
       "type": "function",
-      "value": "calc-mix( <progress>, <calc-sum>, <calc-sum> )"
+      "value": "calc-mix( [ <calc-sum> <percentage [0,100]>? ]# )"
     },
     {
       "name": "calc-size()",
@@ -1124,6 +1131,13 @@
       "href": "https://drafts.csswg.org/css-values-4/#funcdef-clamp",
       "type": "function",
       "value": "clamp( [ <calc-sum> | none ], <calc-sum>, [ <calc-sum> | none ] )"
+    },
+    {
+      "name": "color-interpolate()",
+      "prose": "The color-interpolate() interpolation notation represents an interpolated <color> value, with the following syntax:",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-color-interpolate",
+      "type": "function",
+      "value": "color-interpolate( <progress-source> && [ by <easing-function> ]? && <easing-function>? && <color-interpolation-method>?, <input-position>{1,2} : <color>, [ [ <easing-function> || <color-interpolation-method> ], <input-position>{1,2} : <color> ]# )"
     },
     {
       "name": "color-layers()",
@@ -1437,6 +1451,13 @@
       "type": "function"
     },
     {
+      "name": "interpolate()",
+      "prose": "The interpolate() interpolation notation represents the interpolation of entire property values, which supports two alternative syntax patterns:",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-interpolate",
+      "type": "function",
+      "value": "interpolate( <progress-source> && [ by <easing-function> ]? && <easing-function>?, <input-position>{1,2} : <whole-value>, [ <easing-function>?, <input-position>{1,2} : <whole-value> ]# ) | interpolate( <progress-source> && [ by <easing-function> ]? && <easing-function>? of <keyframes-name> )"
+    },
+    {
       "for": "filter",
       "name": "invert()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-invert",
@@ -1546,13 +1567,6 @@
       "type": "function"
     },
     {
-      "name": "mix()",
-      "prose": "Interpolation of any two property values can be represented by the mix() mix notation, which supports two alternative syntax patterns:",
-      "href": "https://drafts.csswg.org/css-values-5/#funcdef-mix",
-      "type": "function",
-      "value": "mix( <progress> , <whole-value> , <whole-value> ) | mix( <progress> && of <keyframes-name> )"
-    },
-    {
       "name": "mod()",
       "value": "mod( <calc-sum>, <calc-sum> )",
       "href": "https://drafts.csswg.org/css-values-4/#funcdef-mod",
@@ -1603,6 +1617,13 @@
       "value": "perspective( [ <length [0,∞]> | none ] )",
       "href": "https://drafts.csswg.org/css-transforms-2/#funcdef-perspective",
       "type": "function"
+    },
+    {
+      "name": "pointer()",
+      "prose": "The pointer() functional notation can be used as a <single-animation-timeline> value in animation-timeline and specifies a pointer progress timeline. Its syntax is",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#funcdef-pointer",
+      "type": "function",
+      "value": "pointer( [ <pointer-source> || <pointer-axis> ]? )"
     },
     {
       "for": "<basic-shape>",
@@ -1892,10 +1913,12 @@
       "value": "sepia( [ <number> | <percentage> ]? )"
     },
     {
+      "for": "<basic-shape>",
       "name": "shape()",
-      "href": "https://drafts.csswg.org/css-shapes-2/#funcdef-shape",
+      "prose": "See The shape() function.",
+      "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-shape",
       "type": "function",
-      "value": "shape( <'fill-rule'>? from <position>, <shape-command>#)"
+      "value": "shape( <'fill-rule'>? from <position> <shape-command># )"
     },
     {
       "name": "sibling-count()",
@@ -1990,9 +2013,9 @@
     },
     {
       "name": "superellipse()",
-      "value": "superellipse( <number> | infinity | -infinity )",
       "href": "https://drafts.csswg.org/css-borders-4/#funcdef-superellipse",
-      "type": "function"
+      "type": "function",
+      "value": "superellipse(<number [-∞,∞]> | infinity | -infinity)"
     },
     {
       "name": "supports()",
@@ -2038,11 +2061,18 @@
       "value": "toggle( <whole-value># )"
     },
     {
+      "name": "transform-interpolate()",
+      "prose": "The transform-interpolate() interpolation notation represents an interpolated <transform-list>, with the following syntax:",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-transform-interpolate",
+      "type": "function",
+      "value": "transform-interpolate( <progress-source> && [ by <easing-function> ]? && <easing-function>?, <input-position>{1,2} : <transform-list>, [ <easing-function>?, <input-position>{1,2} : <transform-list> ]# )"
+    },
+    {
       "name": "transform-mix()",
-      "prose": "The transform-mix() mix notation represents an interpolated <transform-list>, with the following syntactic form:",
+      "prose": "The transform-mix() mix notation represents a weighted average of <transform-list>, with the following syntactic form:",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-transform-mix",
       "type": "function",
-      "value": "transform-mix( <progress>, <transform-list>, <transform-list> )"
+      "value": "transform-mix( [ <transform-list> && <percentage [0,100]> ]# )"
     },
     {
       "for": "transform",
@@ -3211,6 +3241,22 @@
       "styleDeclaration": [
         "animation-range",
         "animationRange"
+      ]
+    },
+    {
+      "name": "animation-range-center",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#propdef-animation-range-center",
+      "value": "[ normal | [ <length-percentage> | <timeline-range-center-subject> <length-percentage>? ] ]#",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "relative to the corresponding dimension of the specified timeline range center subject, else relative to the start of the animation attachment range",
+      "computedValue": "list, each item either the keyword normal or a timeline range center subject and a length-percentage value",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "animation-range-center",
+        "animationRangeCenter"
       ]
     },
     {
@@ -6119,14 +6165,14 @@
     {
       "name": "corner-block-end-shape",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-block-end-shape",
-      "value": "<corner-shape-value>",
-      "initial": "round",
-      "appliesTo": "all elements where border-radius can apply",
-      "inherited": "no",
-      "percentages": "n/a",
+      "value": "<corner-shape-value>{1,2}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
       "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "corner-block-end-shape",
         "cornerBlockEndShape"
@@ -6135,14 +6181,14 @@
     {
       "name": "corner-block-start-shape",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-block-start-shape",
-      "value": "<corner-shape-value>",
-      "initial": "round",
-      "appliesTo": "all elements where border-radius can apply",
-      "inherited": "no",
-      "percentages": "n/a",
+      "value": "<corner-shape-value>{1,2}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
       "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "corner-block-start-shape",
         "cornerBlockStartShape"
@@ -6185,14 +6231,14 @@
     {
       "name": "corner-bottom-shape",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-shape",
-      "value": "<corner-shape-value>",
-      "initial": "round",
-      "appliesTo": "all elements where border-radius can apply",
-      "inherited": "no",
-      "percentages": "n/a",
+      "value": "<corner-shape-value>{1,2}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
       "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "corner-bottom-shape",
         "cornerBottomShape"
@@ -6235,14 +6281,14 @@
     {
       "name": "corner-inline-end-shape",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-inline-end-shape",
-      "value": "<corner-shape-value>",
-      "initial": "round",
-      "appliesTo": "all elements where border-radius can apply",
-      "inherited": "no",
-      "percentages": "n/a",
+      "value": "<corner-shape-value>{1,2}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
       "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "corner-inline-end-shape",
         "cornerInlineEndShape"
@@ -6251,14 +6297,14 @@
     {
       "name": "corner-inline-start-shape",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-inline-start-shape",
-      "value": "<corner-shape-value>",
-      "initial": "round",
-      "appliesTo": "all elements where border-radius can apply",
-      "inherited": "no",
-      "percentages": "n/a",
+      "value": "<corner-shape-value>{1,2}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
       "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "corner-inline-start-shape",
         "cornerInlineStartShape"
@@ -6267,14 +6313,14 @@
     {
       "name": "corner-left-shape",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-left-shape",
-      "value": "<corner-shape-value>",
-      "initial": "round",
-      "appliesTo": "all elements where border-radius can apply",
-      "inherited": "no",
-      "percentages": "n/a",
+      "value": "<corner-shape-value>{1,2}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
       "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "corner-left-shape",
         "cornerLeftShape"
@@ -6283,14 +6329,14 @@
     {
       "name": "corner-right-shape",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-right-shape",
-      "value": "<corner-shape-value>",
-      "initial": "round",
-      "appliesTo": "all elements where border-radius can apply",
-      "inherited": "no",
-      "percentages": "n/a",
+      "value": "<corner-shape-value>{1,2}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
       "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "corner-right-shape",
         "cornerRightShape"
@@ -6303,10 +6349,10 @@
       "initial": "round",
       "appliesTo": "all elements where border-radius can apply",
       "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "as specified",
-      "canonicalOrder": "per grammar",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
       "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "corner-shape",
         "cornerShape"
@@ -6383,14 +6429,14 @@
     {
       "name": "corner-top-shape",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-corner-top-shape",
-      "value": "<corner-shape-value>",
-      "initial": "round",
-      "appliesTo": "all elements where border-radius can apply",
-      "inherited": "no",
-      "percentages": "n/a",
+      "value": "<corner-shape-value>{1,2}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
       "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "corner-top-shape",
         "cornerTopShape"
@@ -10651,6 +10697,54 @@
       ]
     },
     {
+      "name": "pointer-timeline",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#propdef-pointer-timeline",
+      "value": "[ <'pointer-timeline-name'> <'pointer-timeline-axis'>? ]#",
+      "initial": "see individual properties",
+      "appliesTo": "all elements",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "pointer-timeline",
+        "pointerTimeline"
+      ]
+    },
+    {
+      "name": "pointer-timeline-axis",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#propdef-pointer-timeline-axis",
+      "value": "[ block | inline | x | y ]#",
+      "initial": "block",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "a list of the keywords specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "pointer-timeline-axis",
+        "pointerTimelineAxis"
+      ]
+    },
+    {
+      "name": "pointer-timeline-name",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#propdef-pointer-timeline-name",
+      "value": "[ none | <dashed-ident> ]#",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the keyword none or a list of CSS identifiers",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "pointer-timeline-name",
+        "pointerTimelineName"
+      ]
+    },
+    {
       "name": "position",
       "href": "https://drafts.csswg.org/css-position-3/#propdef-position",
       "value": "static | relative | absolute | sticky | fixed | <running()>",
@@ -13985,47 +14079,56 @@
     {
       "name": "::after",
       "prose": "Represents a styleable child pseudo-element immediately after the originating element’s actual content.",
-      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-after"
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-after",
+      "value": "::after"
     },
     {
       "name": "::backdrop",
       "prose": "Each element rendered in the top layer has a ::backdrop pseudo-element, for which it is the originating element.",
-      "href": "https://drafts.csswg.org/css-position-4/#selectordef-backdrop"
+      "href": "https://drafts.csswg.org/css-position-4/#selectordef-backdrop",
+      "value": "::backdrop"
     },
     {
       "name": "::before",
       "prose": "Represents a styleable child pseudo-element immediately before the originating element’s actual content.",
-      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-before"
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-before",
+      "value": "::before"
     },
     {
       "name": "::checkmark",
       "prose": "The ::checkmark pseudo-element represents an indicator of whether the item is checked, and is present on checkboxes, radios, and option elements.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-checkmark"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-checkmark",
+      "value": "::checkmark"
     },
     {
       "name": "::clear-icon",
       "prose": "The ::clear-icon pseudo-element represents the portion of the input that allows the user to clear the input when clicked if provided by the user agent. With appearance: textfield, the user agent must not generate this part.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-clear-icon"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-clear-icon",
+      "value": "::clear-icon"
     },
     {
       "name": "::color-swatch",
       "prose": "The ::color-swatch pseudo-element represents the portion of the control that displays the chosen color value.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-color-swatch"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-color-swatch",
+      "value": "::color-swatch"
     },
     {
       "name": "::column",
       "prose": "The ::column pseudo-element represents the individual columns in a multi-column container. It only exists on multi-column containers.",
-      "href": "https://drafts.csswg.org/css-multicol-2/#selectordef-column"
+      "href": "https://drafts.csswg.org/css-multicol-2/#selectordef-column",
+      "value": "::column"
     },
     {
       "name": "::cue",
       "prose": "The ::cue pseudo-element (with no argument) matches any list of WebVTT Node Objects constructed for the matched element, with the exception that the properties corresponding to the background shorthand must be applied to the WebVTT cue background box rather than the list of WebVTT Node Objects.",
-      "href": "https://w3c.github.io/webvtt/#selectordef-cue"
+      "href": "https://w3c.github.io/webvtt/#selectordef-cue",
+      "value": "::cue"
     },
     {
       "name": "::cue-region",
       "prose": "The ::cue-region pseudo-element (with no argument) matches any list of WebVTT region objects constructed for the matched element.",
-      "href": "https://w3c.github.io/webvtt/#selectordef-cue-region"
+      "href": "https://w3c.github.io/webvtt/#selectordef-cue-region",
+      "value": "::cue-region"
     },
     {
       "name": "::cue-region()",
@@ -14040,42 +14143,50 @@
     {
       "name": "::details-content",
       "prose": "The ::details-content pseudo-element targets the additional information in a a details element that can be expanded or collapsed. It is an element-backed pseudo-element.",
-      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-details-content"
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-details-content",
+      "value": "::details-content"
     },
     {
       "name": "::field-component",
       "prose": "The ::field-component pseudo-element represents the portions of the control that contain the date/time component values.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-field-component"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-field-component",
+      "value": "::field-component"
     },
     {
       "name": "::field-separator",
       "prose": "The ::field-separator pseudo-element represents the portions of the control that separate the date/time component values if the user agent provides those portions.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-field-separator"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-field-separator",
+      "value": "::field-separator"
     },
     {
       "name": "::field-text",
       "prose": "The ::field-text pseudo-element represents the portion of the input that contains the editable text.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-field-text"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-field-text",
+      "value": "::field-text"
     },
     {
       "name": "::file-selector-button",
       "prose": "The ::file-selector-button pseudo-element represents the button used to open a file picker, if the UA renders such a button.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-file-selector-button"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-file-selector-button",
+      "value": "::file-selector-button"
     },
     {
       "name": "::first-letter",
       "prose": "The ::first-letter pseudo-element represents the first Letter, Number, or Symbol (Unicode category L*, N*, or S*) typographic character unit on the first formatted line of its originating element (the first letter) as well as its associated punctuation. Collectively, this text is the first-letter text. The ::first-letter pseudo-element can be used to create “initial caps” and “drop caps”, which are common typographic effects.",
-      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-first-letter"
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-first-letter",
+      "value": "::first-letter"
     },
     {
       "name": "::first-line",
       "prose": "The ::first-line pseudo-element represents the contents of the first formatted line of its originating element.",
-      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-first-line"
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-first-line",
+      "value": "::first-line"
     },
     {
       "name": "::grammar-error",
       "prose": "The ::grammar-error pseudo-element represents a portion of text that has been flagged by the user agent as grammatically incorrect.",
-      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-grammar-error"
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-grammar-error",
+      "value": "::grammar-error"
     },
     {
       "name": "::highlight()",
@@ -14085,12 +14196,14 @@
     {
       "name": "::marker",
       "prose": "The ::marker pseudo-element represents the automatically generated marker box of a list item. (See [CSS-DISPLAY-3] and [CSS-LISTS-3].)",
-      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-marker"
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-marker",
+      "value": "::marker"
     },
     {
       "name": "::nth-fragment()",
       "prose": "The ::nth-fragment() pseudo-element is a pseudo-element that describes some of the fragment boxes generated by an element. The argument to the pseudo-element takes the same syntax as the argument to the :nth-child() pseudo-class defined in [SELECT], and has the same meaning except that the number is relative to fragment boxes generated by the element instead of siblings of the element.",
-      "href": "https://drafts.csswg.org/css-overflow-5/#selectordef-nth-fragment"
+      "href": "https://drafts.csswg.org/css-overflow-5/#selectordef-nth-fragment",
+      "value": "::nth-fragment()"
     },
     {
       "name": "::part()",
@@ -14101,7 +14214,8 @@
     {
       "name": "::picker-icon",
       "prose": "The ::picker-icon pseudo-element represents the part of the control that represents the icon denoting the presence of the picker. It is only generated when the originating element has basic appearance and if it opens a picker. It is a fully styleable pseudo-element and inherits from its originating element.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-picker-icon"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-picker-icon",
+      "value": "::picker-icon"
     },
     {
       "name": "::picker()",
@@ -14112,7 +14226,8 @@
     {
       "name": "::placeholder",
       "prose": "The ::placeholder pseudo-element represents the portion of the input that contains the placeholder text.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-placeholder"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-placeholder",
+      "value": "::placeholder"
     },
     {
       "name": "::scroll-button()",
@@ -14122,352 +14237,423 @@
     {
       "name": "::scroll-marker",
       "prose": "When the computed content value of a ::scroll-marker pseudo-element is not none and its nearest ancestor scroll container scroll container has a computed scroll-marker-group property that is not none, the pseudo-element generates a box attached as a child of the ::scroll-marker-group pseudo-element’s generated box on its nearest ancestor scroll container. These boxes are added in the tree order of their originating element.",
-      "href": "https://drafts.csswg.org/css-overflow-5/#selectordef-scroll-marker"
+      "href": "https://drafts.csswg.org/css-overflow-5/#selectordef-scroll-marker",
+      "value": "::scroll-marker"
     },
     {
       "name": "::scroll-marker-group",
       "prose": "The ::scroll-marker-group fully styleable pseudo-element is generated by a scroll container element having a computed scroll-marker-group property that is not none.",
-      "href": "https://drafts.csswg.org/css-overflow-5/#selectordef-scroll-marker-group"
+      "href": "https://drafts.csswg.org/css-overflow-5/#selectordef-scroll-marker-group",
+      "value": "::scroll-marker-group"
     },
     {
       "name": "::search-text",
       "prose": "The ::search-text pseudo-element represents text identified by the user agent’s find-in-page feature. Since not all UAs style matched text in ways expressible with the highlight pseudo-elements, this pseudo-element is optional to implement. The :current pseudo-class (but not ::current()) may be combined with ::search-text to represent the currently focused match instance. The :past and :future pseudo-classes are reserved for analogous use in the future. Any unsupported combination of these pseudo-classes with ::search-text must be treated as invalid.",
-      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-search-text"
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-search-text",
+      "value": "::search-text"
     },
     {
       "name": "::selection",
       "prose": "The ::selection pseudo-element represents the portion of a document that has been selected as the target or object of some possible future user-agent operation(s). It applies, for example, to selected text within an editable text field, which would be copied by a copy operation or replaced by a paste operation.",
-      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-selection"
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-selection",
+      "value": "::selection"
     },
     {
       "name": "::slider-fill",
       "prose": "The ::slider-fill pseudo-element represents the portion containing the progressed portion of the control. When the progress of control is indeterminate (like with <progress>), the user agent must give this portion an inline-size of zero.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-slider-fill"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-slider-fill",
+      "value": "::slider-fill"
     },
     {
       "name": "::slider-thumb",
       "prose": "The ::slider-thumb pseudo-element represents the portion that allows the user to adjust the progress of the control.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-slider-thumb"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-slider-thumb",
+      "value": "::slider-thumb"
     },
     {
       "name": "::slider-track",
       "prose": "The ::slider-track pseudo-element represents the portion containing both the progressed and unprogressed portions of the control.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-slider-track"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-slider-track",
+      "value": "::slider-track"
     },
     {
       "name": "::slotted()",
       "prose": "The ::slotted() pseudo-element represents the elements assigned, after flattening, to a slot. This pseudo-element only exists on slots.",
-      "href": "https://drafts.csswg.org/css-scoping-1/#selectordef-slotted"
+      "href": "https://drafts.csswg.org/css-scoping-1/#selectordef-slotted",
+      "value": "::slotted()"
     },
     {
       "name": "::spelling-error",
       "prose": "The ::spelling-error pseudo-element represents a portion of text that has been flagged by the user agent as misspelled.",
-      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-spelling-error"
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-spelling-error",
+      "value": "::spelling-error"
     },
     {
       "name": "::step-control",
       "prose": "The ::step-control pseudo-element represents the portion of a number input that contains the up and down buttons.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-step-control"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-step-control",
+      "value": "::step-control"
     },
     {
       "name": "::step-down",
       "prose": "The ::step-down pseudo-element represents the button that decrements the value inside a number input when activated.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-step-down"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-step-down",
+      "value": "::step-down"
     },
     {
       "name": "::step-up",
       "prose": "The ::step-up pseudo-element represents the button that increments the value inside a number input when activated.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-step-up"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-step-up",
+      "value": "::step-up"
     },
     {
       "name": "::target-text",
       "prose": "The ::target-text pseudo-element represents text directly targeted by the document URL’s fragment, if any.",
-      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-target-text"
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-target-text",
+      "value": "::target-text"
     },
     {
       "name": "::view-transition",
       "prose": "The ::view-transition pseudo-element is a tree-abiding pseudo-element that is also a pseudo-element root. Its originating element is the document’s document element, and its containing block is the snapshot containing block.",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition"
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition",
+      "value": "::view-transition"
     },
     {
       "name": "::view-transition-group()",
       "prose": "The ::view-transition-group() pseudo-element is a named view transition pseudo-element that represents a matching named view transition capture. A ::view-transition-group() pseudo-element is generated for each view transition name as a child of the ::view-transition pseudo-element, and contains a corresponding ::view-transition-image-pair().",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-group"
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-group",
+      "value": "::view-transition-group()"
     },
     {
       "name": "::view-transition-image-pair()",
       "prose": "The ::view-transition-image-pair() pseudo-element is a named view transition pseudo-element that represents a pair of corresponding old/new view transition captures. This pseudo-element is a child of the corresponding ::view-transition-group() pseudo-element and contains a corresponding ::view-transition-old() pseudo-element and/or a corresponding ::view-transition-new() pseudo-element (in that order).",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-image-pair"
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-image-pair",
+      "value": "::view-transition-image-pair()"
     },
     {
       "name": "::view-transition-new()",
       "prose": "The ::view-transition-new() pseudo-element (like the analogous ::view-transition-old() pseudo-element) is an empty named view transition pseudo-element that represents a visual snapshot of the “new” state as a replaced element; it is omitted if there’s no “new” state to represent. Each ::view-transition-new() pseudo-element is a child of the corresponding ::view-transition-image-pair() pseudo-element.",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-new"
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-new",
+      "value": "::view-transition-new()"
     },
     {
       "name": "::view-transition-old()",
       "prose": "The ::view-transition-old() pseudo-element is an empty named view transition pseudo-element that represents a visual snapshot of the “old” state as a replaced element; it is omitted if there’s no “old” state to represent. Each ::view-transition-old() pseudo-element is a child of the corresponding ::view-transition-image-pair() pseudo-element.",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-old"
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-old",
+      "value": "::view-transition-old()"
     },
     {
       "name": ":active",
       "prose": "The :active pseudo-class applies while an element is being “activated” by the user, as defined by the host language; for example, while a hyperlink is being triggered.",
-      "href": "https://drafts.csswg.org/selectors-4/#active-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#active-pseudo",
+      "value": ":active"
     },
     {
       "name": ":active-view-transition",
       "prose": "The :active-view-transition pseudo-class applies to the root element of the document, if it has an active view transition.",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#active-view-transition-pseudo"
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#active-view-transition-pseudo",
+      "value": ":active-view-transition"
     },
     {
       "name": ":active-view-transition-type()",
       "prose": "The :active-view-transition-type() pseudo-class applies to the root element of the document, if it has a matching active view transition. It has the following syntax definition:",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#active-view-transition-type-pseudo"
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#active-view-transition-type-pseudo",
+      "value": ":active-view-transition-type()"
     },
     {
       "name": ":after",
-      "href": "https://drafts.csswg.org/css2/#selectordef-after"
+      "href": "https://drafts.csswg.org/css2/#selectordef-after",
+      "value": ":after"
     },
     {
       "name": ":any-link",
       "prose": "The :any-link pseudo-class represents an element that acts as the source anchor of a hyperlink. For example, in [HTML5], any a or area elements with an href attribute are hyperlinks, and thus match :any-link. It matches an element if the element would match either :link or :visited, and is equivalent to :is(:link, :visited).",
-      "href": "https://drafts.csswg.org/selectors-4/#any-link-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#any-link-pseudo",
+      "value": ":any-link"
     },
     {
       "name": ":autofill",
       "prose": "The :autofill pseudo-class represents input elements that have been automatically filled by the user agent, and have not been subsequently altered by the user.",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-autofill"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-autofill",
+      "value": ":autofill"
     },
     {
       "name": ":before",
-      "href": "https://drafts.csswg.org/css2/#selectordef-before"
+      "href": "https://drafts.csswg.org/css2/#selectordef-before",
+      "value": ":before"
     },
     {
       "name": ":blank",
       "prose": "The :blank pseudo-class applies to user-input elements whose input value is empty (consists of the empty string or otherwise null input).",
-      "href": "https://drafts.csswg.org/selectors-4/#blank-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#blank-pseudo",
+      "value": ":blank"
     },
     {
       "name": ":buffering",
       "prose": "The :buffering pseudo-class represents an element that is capable of being “played” or “paused”, when that element cannot continue playing because it is actively attempting to obtain media data but has not yet obtained enough data to resume playback. (Note that the element is still considered to be “playing” when it is “buffering”. Whenever :buffering matches an element, :playing also matches the element.)",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-buffering"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-buffering",
+      "value": ":buffering"
     },
     {
       "name": ":checked",
       "prose": "Radio and checkbox elements can be toggled by the user. Some menu items are “checked” when the user selects them. When such elements are toggled “on” the :checked pseudo-class applies. For example, [HTML5] defines that checked checkboxes, radio buttons, and selected <option> elements match :checked.",
-      "href": "https://drafts.csswg.org/selectors-4/#checked-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#checked-pseudo",
+      "value": ":checked"
     },
     {
       "name": ":current",
       "prose": "The :current pseudo-class represents the element, or an ancestor of the element, that is currently being displayed.",
-      "href": "https://drafts.csswg.org/selectors-4/#current-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#current-pseudo",
+      "value": ":current"
     },
     {
       "name": ":current()",
       "prose": "Its alternate form :current() takes a list of compound selectors as its argument: it represents the :current element that matches the argument or, if that does not match, the innermost ancestor of the :current element that does. (If neither the :current element nor its ancestors match the argument, then the selector does not represent anything.)",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-current"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-current",
+      "value": ":current()"
     },
     {
       "name": ":default",
       "prose": "The :default pseudo-class applies to the one or more UI elements that are the default among a set of similar elements. Typically applies to context menu items, buttons and select lists/menus.",
-      "href": "https://drafts.csswg.org/selectors-4/#default-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#default-pseudo",
+      "value": ":default"
     },
     {
       "name": ":defined",
       "prose": "In some host languages, elements can have a distinction between being “defined”/“constructed” or not. The :defined pseudo-class matches elements that are fully defined, as dictated by the host language.",
-      "href": "https://drafts.csswg.org/selectors-4/#defined-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#defined-pseudo",
+      "value": ":defined"
     },
     {
       "name": ":dir()",
       "prose": "The :dir() pseudo-class allows the author to write selectors that represent an element based on its directionality as determined by the document language. For example, [HTML5] defines how to determine the directionality of an element, based on a combination of the dir attribute, the surrounding text, and other factors. As another example, the its:dir and dirRule element of the Internationalization Tag Set [ITS20] are able to define the directionality of an element in [XML10].",
-      "href": "https://drafts.csswg.org/selectors-4/#dir-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#dir-pseudo",
+      "value": ":dir()"
     },
     {
       "name": ":disabled",
       "prose": "Conversely, the :disabled pseudo-class represents user interface elements that are in a disabled state; such elements must have a corresponding enabled state.",
-      "href": "https://drafts.csswg.org/selectors-4/#disabled-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#disabled-pseudo",
+      "value": ":disabled"
     },
     {
       "name": ":empty",
       "prose": "The :empty pseudo-class represents an element that has no children except, optionally, document white space characters. In terms of the document tree, only element nodes and content nodes (such as [DOM] text nodes, and entity references) whose data has a non-zero length must be considered as affecting emptiness; comments, processing instructions, and other nodes must not affect whether an element is considered empty or not.",
-      "href": "https://drafts.csswg.org/selectors-4/#empty-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#empty-pseudo",
+      "value": ":empty"
     },
     {
       "name": ":enabled",
       "prose": "The :enabled pseudo-class represents user interface elements that are in an enabled state; such elements must have a corresponding disabled state.",
-      "href": "https://drafts.csswg.org/selectors-4/#enabled-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#enabled-pseudo",
+      "value": ":enabled"
     },
     {
       "name": ":first",
       "prose": "Authors may also specify style for the first page of a document with the :first pseudo-class:",
-      "href": "https://drafts.csswg.org/css2/#selectordef-first"
+      "href": "https://drafts.csswg.org/css2/#selectordef-first",
+      "value": ":first"
     },
     {
       "name": ":first-child",
       "prose": "The :first-child pseudo-class represents an element that if first among its inclusive siblings. Same as :nth-child(1).",
-      "href": "https://drafts.csswg.org/selectors-4/#first-child-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#first-child-pseudo",
+      "value": ":first-child"
     },
     {
       "name": ":first-letter",
-      "href": "https://drafts.csswg.org/css2/#selectordef-first-letter"
+      "href": "https://drafts.csswg.org/css2/#selectordef-first-letter",
+      "value": ":first-letter"
     },
     {
       "name": ":first-line",
-      "href": "https://drafts.csswg.org/css2/#selectordef-first-line"
+      "href": "https://drafts.csswg.org/css2/#selectordef-first-line",
+      "value": ":first-line"
     },
     {
       "name": ":first-of-page",
       "prose": "Same as :nth-of-page(n), but where n = 1 (it is the first matched element on the page).",
-      "href": "https://drafts.csswg.org/css-gcpm-4/#selectordef-first-of-page"
+      "href": "https://drafts.csswg.org/css-gcpm-4/#selectordef-first-of-page",
+      "value": ":first-of-page"
     },
     {
       "name": ":first-of-type",
       "prose": "The :first-of-type pseudo-class represents the same element as :nth-of-type(1).",
-      "href": "https://drafts.csswg.org/selectors-4/#first-of-type-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#first-of-type-pseudo",
+      "value": ":first-of-type"
     },
     {
       "name": ":focus",
       "prose": "The :focus pseudo-class applies while an element (or pseudo-element) has the focus (accepts keyboard or other forms of input).",
-      "href": "https://drafts.csswg.org/selectors-4/#focus-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#focus-pseudo",
+      "value": ":focus"
     },
     {
       "name": ":focus-visible",
       "prose": "While the :focus pseudo-class always matches the currently-focused element, UAs only sometimes visibly indicate focus (such as by drawing a “focus ring”), instead using a variety of heuristics to visibly indicate the focus only when it would be most helpful to the user. The :focus-visible pseudo-class matches a focused element (or pseudo-element) in these situations only, allowing authors to change the appearance of the focus indicator without changing when a focus indicator appears.",
-      "href": "https://drafts.csswg.org/selectors-4/#focus-visible-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#focus-visible-pseudo",
+      "value": ":focus-visible"
     },
     {
       "name": ":focus-within",
       "prose": "The :focus-within pseudo-class applies to any element (or pseudo-element) for which the :focus pseudo-class applies, as well as to an element (or pseudo-element) whose descendant in the flat tree (including non-element nodes, such as text nodes) matches the conditions for matching :focus.",
-      "href": "https://drafts.csswg.org/selectors-4/#focus-within-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#focus-within-pseudo",
+      "value": ":focus-within"
     },
     {
       "name": ":fullscreen",
       "prose": "The :fullscreen pseudo-class represents an element which is displayed in a mode that takes up most (usually all) of the screen, such as that defined by the Fullscreen API. [FULLSCREEN]",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-fullscreen"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-fullscreen",
+      "value": ":fullscreen"
     },
     {
       "name": ":future",
       "prose": "The :future pseudo-class represents any element that is defined to occur entirely after a :current element. For example, the WebVTT spec defines the :future pseudo-class relative to the current playback position of a media element. If a time-based order of elements is not defined by the document language, then this represents any element that is a (possibly indirect) next sibling of a :current element.",
-      "href": "https://drafts.csswg.org/selectors-4/#future-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#future-pseudo",
+      "value": ":future"
     },
     {
       "name": ":has-slotted",
       "prose": "The :has-slotted pseudo-class matches slot elements which have a non-empty list of flattened slotted nodes.",
-      "href": "https://drafts.csswg.org/css-scoping-1/#selectordef-has-slotted"
+      "href": "https://drafts.csswg.org/css-scoping-1/#selectordef-has-slotted",
+      "value": ":has-slotted"
     },
     {
       "name": ":has()",
       "prose": "The relational pseudo-class, :has(), is a functional pseudo-class taking a <relative-selector-list> as an argument. It represents an element if any of the relative selectors would match at least one element when anchored against this element.",
-      "href": "https://drafts.csswg.org/selectors-4/#has-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#has-pseudo",
+      "value": ":has()"
     },
     {
       "name": ":high-value",
       "prose": "The :high-value pseudo-class matches on a meter element when its value is over the value specified by the high HTML attribute.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-high-value"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-high-value",
+      "value": ":high-value"
     },
     {
       "name": ":host",
       "prose": "The :host pseudo-class, when evaluated in the context of a shadow tree, matches the shadow tree’s shadow host. In any other context, it matches nothing.",
-      "href": "https://drafts.csswg.org/css-scoping-1/#selectordef-host"
+      "href": "https://drafts.csswg.org/css-scoping-1/#selectordef-host",
+      "value": ":host"
     },
     {
       "name": ":host-context()",
       "prose": "The :host-context() functional pseudo-class tests whether there is an ancestor, outside the shadow tree, which matches a particular selector. Its syntax is:",
-      "href": "https://drafts.csswg.org/css-scoping-1/#selectordef-host-context"
+      "href": "https://drafts.csswg.org/css-scoping-1/#selectordef-host-context",
+      "value": ":host-context()"
     },
     {
       "name": ":host()",
       "prose": "The :host() function pseudo-class has the syntax:",
-      "href": "https://drafts.csswg.org/css-scoping-1/#selectordef-host-function"
+      "href": "https://drafts.csswg.org/css-scoping-1/#selectordef-host-function",
+      "value": ":host()"
     },
     {
       "name": ":hover",
       "prose": "The :hover pseudo-class applies while the user designates an element (or pseudo-element) with a pointing device, but does not necessarily activate it. For example, a visual user agent could apply this pseudo-class when the cursor (mouse pointer) hovers over a box generated by the element. Interactive user agents that cannot detect hovering due to hardware limitations (e.g., a pen device that does not detect hovering) are still conforming; the selector will simply never match in such a UA.",
-      "href": "https://drafts.csswg.org/selectors-4/#hover-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#hover-pseudo",
+      "value": ":hover"
     },
     {
       "name": ":in-range",
       "prose": "The :in-range and :out-of-range pseudo-classes apply only to elements that have range limitations. An element is :in-range or :out-of-range when the value that the element is bound to is in range or out of range with respect to its range limits as defined by the document language. An element that lacks data range limits or is not a form control is neither :in-range nor :out-of-range. E.g. a slider element with a value of 11 presented as a slider control that only represents the values from 1-10 is :out-of-range. Another example is a menu element with a value of \"E\" that happens to be presented in a popup menu that only has choices \"A\", \"B\" and \"C\".",
-      "href": "https://drafts.csswg.org/selectors-4/#in-range-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#in-range-pseudo",
+      "value": ":in-range"
     },
     {
       "name": ":indeterminate",
       "prose": "The :indeterminate pseudo-class applies to UI elements whose value is in an indeterminate state. For example, radio and checkbox elements can be toggled between checked and unchecked states, but are sometimes in an indeterminate state, neither checked nor unchecked. Similarly a progress meter can be in an indeterminate state when the percent completion is unknown. For example, [HTML5] defines how checkboxes can be made to match :indeterminate.",
-      "href": "https://drafts.csswg.org/selectors-4/#indeterminate-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#indeterminate-pseudo",
+      "value": ":indeterminate"
     },
     {
       "name": ":invalid",
       "prose": "An element is :valid or :invalid when its contents or value is, respectively, valid or invalid with respect to data validity semantics defined by the document language (e.g. [XFORMS11] or [HTML5]). An element which lacks data validity semantics is neither :valid nor :invalid.",
-      "href": "https://drafts.csswg.org/selectors-4/#invalid-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#invalid-pseudo",
+      "value": ":invalid"
     },
     {
       "name": ":is()",
       "prose": "The matches-any pseudo-class, :is(), is a functional pseudo-class taking a <forgiving-selector-list> as its sole argument.",
-      "href": "https://drafts.csswg.org/selectors-4/#matches-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#matches-pseudo",
+      "value": ":is()"
     },
     {
       "name": ":lang",
-      "href": "https://drafts.csswg.org/css2/#selectordef-lang"
+      "href": "https://drafts.csswg.org/css2/#selectordef-lang",
+      "value": ":lang"
     },
     {
       "name": ":lang()",
       "prose": "If the document language specifies how the (human) content language of an element is determined, it is possible to write selectors that represent an element based on its content language. The :lang() pseudo-class, which accepts a comma-separated list of one or more language ranges, represents an element whose content language is one of the languages listed in its argument. Each language range in :lang() must be a valid CSS <ident> or <string>. (Thus language ranges containing asterisks, for example, must be either correctly escaped or quoted as strings, e.g. :lang(\\*-Latn) or :lang(\"*-Latn\").)",
-      "href": "https://drafts.csswg.org/selectors-4/#lang-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#lang-pseudo",
+      "value": ":lang()"
     },
     {
       "name": ":last-child",
       "prose": "The :last-child pseudo-class represents an element that is last among its inclusive siblings. Same as :nth-last-child(1).",
-      "href": "https://drafts.csswg.org/selectors-4/#last-child-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#last-child-pseudo",
+      "value": ":last-child"
     },
     {
       "name": ":last-of-page",
       "prose": "The element is the last matched element on the page.",
-      "href": "https://drafts.csswg.org/css-gcpm-4/#selectordef-last-of-page"
+      "href": "https://drafts.csswg.org/css-gcpm-4/#selectordef-last-of-page",
+      "value": ":last-of-page"
     },
     {
       "name": ":last-of-type",
       "prose": "The :last-of-type pseudo-class represents the same element as :nth-last-of-type(1).",
-      "href": "https://drafts.csswg.org/selectors-4/#last-of-type-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#last-of-type-pseudo",
+      "value": ":last-of-type"
     },
     {
       "name": ":left",
       "prose": "All pages are automatically classified by user agents into either the :left or :right pseudo-class. Whether the first page of a document is :left or :right depends on the major writing direction of the root element. For example, the first page of a document with a left-to-right major writing direction would be a :right page, and the first page of a document with a right-to-left major writing direction would be a :left page. To explicitly force a document to begin printing on a left or right page, authors can insert a page break before the first generated box.",
-      "href": "https://drafts.csswg.org/css2/#selectordef-left"
+      "href": "https://drafts.csswg.org/css2/#selectordef-left",
+      "value": ":left"
     },
     {
       "name": ":link",
       "prose": "User agents commonly display unvisited hyperlinks differently from previously visited ones. Selectors provides the pseudo-classes :link and :visited to distinguish them:",
-      "href": "https://drafts.csswg.org/selectors-4/#link-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#link-pseudo",
+      "value": ":link"
     },
     {
       "name": ":local-link",
       "prose": "The :local-link pseudo-class allows authors to style hyperlinks based on the users current location within a site and to differentiate site-internal versus site-external links.",
-      "href": "https://drafts.csswg.org/selectors-5/#local-link-pseudo"
+      "href": "https://drafts.csswg.org/selectors-5/#local-link-pseudo",
+      "value": ":local-link"
     },
     {
       "name": ":low-value",
       "prose": "The :low-value pseudo-class matches on a meter element when its value is under the value specified by the low HTML attribute.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-low-value"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-low-value",
+      "value": ":low-value"
     },
     {
       "name": ":matches()",
       "prose": "As previous drafts of this specification used the name :matches() for this pseudo-class, UAs may additionally implement this obsolete name as a legacy selector alias for :is() if needed for backwards-compatibility.",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-matches"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-matches",
+      "value": ":matches()"
     },
     {
       "name": ":modal",
       "prose": "The :modal pseudo-class represents an element which is in a state that excludes all interaction with elements outside it until it has been dismissed. Multiple elements can be :modal simultaneously, with only one of them active (able to receive input).",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-modal"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-modal",
+      "value": ":modal"
     },
     {
       "name": ":muted",
       "prose": "The :muted pseudo-class represents an element that is capable of making sound, but is currently “muted“ (forced silent). (For the audio and video elements of HTML, see muted. [HTML])",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-muted"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-muted",
+      "value": ":muted"
     },
     {
       "name": ":not()",
       "prose": "The negation pseudo-class, :not(), is a functional pseudo-class taking a <complex-real-selector-list> as an argument. It represents an element that is not represented by its argument.",
-      "href": "https://drafts.csswg.org/selectors-4/#negation-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#negation-pseudo",
+      "value": ":not()"
     },
     {
       "name": ":nth-child()",
@@ -14512,132 +14698,158 @@
     {
       "name": ":only-child",
       "prose": "The :only-child pseudo-class represents an element that has no siblings. Same as :first-child:last-child or :nth-child(1):nth-last-child(1), but with a lower specificity.",
-      "href": "https://drafts.csswg.org/selectors-4/#only-child-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#only-child-pseudo",
+      "value": ":only-child"
     },
     {
       "name": ":only-of-type",
       "prose": "The :only-of-type pseudo-class represents the same element as :first-of-type:last-of-type.",
-      "href": "https://drafts.csswg.org/selectors-4/#only-of-type-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#only-of-type-pseudo",
+      "value": ":only-of-type"
     },
     {
       "name": ":open",
       "prose": "The :open pseudo-class represents an element that has both “open” and “closed” states, and which is currently in the “open” state.",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-open"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-open",
+      "value": ":open"
     },
     {
       "name": ":optimal-value",
       "prose": "The :optimal-value pseudo-class matches on a meter element when its value is in the range determined by the optimum / low / high HTML attributes.",
-      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-optimal-value"
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-optimal-value",
+      "value": ":optimal-value"
     },
     {
       "name": ":optional",
       "prose": "A form element is :required or :optional if a value for it is, respectively, required or optional before the form it belongs to can be validly submitted. Elements that are not form elements are neither required nor optional.",
-      "href": "https://drafts.csswg.org/selectors-4/#optional-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#optional-pseudo",
+      "value": ":optional"
     },
     {
       "name": ":out-of-range",
       "prose": "The :in-range and :out-of-range pseudo-classes apply only to elements that have range limitations. An element is :in-range or :out-of-range when the value that the element is bound to is in range or out of range with respect to its range limits as defined by the document language. An element that lacks data range limits or is not a form control is neither :in-range nor :out-of-range. E.g. a slider element with a value of 11 presented as a slider control that only represents the values from 1-10 is :out-of-range. Another example is a menu element with a value of \"E\" that happens to be presented in a popup menu that only has choices \"A\", \"B\" and \"C\".",
-      "href": "https://drafts.csswg.org/selectors-4/#out-of-range-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#out-of-range-pseudo",
+      "value": ":out-of-range"
     },
     {
       "name": ":past",
       "prose": "The :past pseudo-class represents any element that is defined to occur entirely prior to a :current element. For example, the WebVTT spec defines the :past pseudo-class relative to the current playback position of a media element. If a time-based order of elements is not defined by the document language, then this represents any element that is a (possibly indirect) previous sibling of a :current element.",
-      "href": "https://drafts.csswg.org/selectors-4/#past-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#past-pseudo",
+      "value": ":past"
     },
     {
       "name": ":paused",
       "prose": "The :paused pseudo-class represents an element that is capable of being “played” or “paused”, when that element is “paused” (i.e. not ”playing”). (This includes both an explicit “paused” state, and other non-playing states like “loaded, hasn’t been activated yet”, etc.)",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-paused"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-paused",
+      "value": ":paused"
     },
     {
       "name": ":picture-in-picture",
       "prose": "The :picture-in-picture pseudo-class represents an element which is displayed in a mode that takes up most (usually all) of the viewport, and whose viewport is confined to part of the screen while being displayed over other content, for example when using the Picture-in-Picture API. [picture-in-picture]",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-picture-in-picture"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-picture-in-picture",
+      "value": ":picture-in-picture"
     },
     {
       "name": ":placeholder-shown",
       "prose": "Input elements can sometimes show placeholder text as a hint to the user on what to type in. See, for example, the placeholder attribute in [HTML5]. The :placeholder-shown pseudo-class matches an input element that is showing such placeholder text, whether that text is given by an attribute or a real element, or is otherwise implied by the UA.",
-      "href": "https://drafts.csswg.org/selectors-4/#placeholder-shown-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#placeholder-shown-pseudo",
+      "value": ":placeholder-shown"
     },
     {
       "name": ":playing",
       "prose": "The :playing pseudo-class represents an element that is capable of being “played” or “paused”, when that element is “playing”. (This includes both when the element is explicitly playing, and when it’s temporarily stopped for some reason not connected to user intent, but will automatically resume when that reason is resolved, such as a “buffering” or “stalled” state.)",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-playing"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-playing",
+      "value": ":playing"
     },
     {
       "name": ":popover-open",
       "prose": "The :popover-open pseudo-class represents an element that has both “popover-showing” and “popover-hidden” states and which is currently in the “popover-showing” state.",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-popover-open"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-popover-open",
+      "value": ":popover-open"
     },
     {
       "name": ":read-only",
       "prose": "An element matches :read-write if it is user-alterable, as defined by the document language. Otherwise, it is :read-only.",
-      "href": "https://drafts.csswg.org/selectors-4/#read-only-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#read-only-pseudo",
+      "value": ":read-only"
     },
     {
       "name": ":read-write",
       "prose": "An element matches :read-write if it is user-alterable, as defined by the document language. Otherwise, it is :read-only.",
-      "href": "https://drafts.csswg.org/selectors-4/#read-write-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#read-write-pseudo",
+      "value": ":read-write"
     },
     {
       "name": ":required",
       "prose": "A form element is :required or :optional if a value for it is, respectively, required or optional before the form it belongs to can be validly submitted. Elements that are not form elements are neither required nor optional.",
-      "href": "https://drafts.csswg.org/selectors-4/#required-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#required-pseudo",
+      "value": ":required"
     },
     {
       "name": ":right",
       "prose": "All pages are automatically classified by user agents into either the :left or :right pseudo-class. Whether the first page of a document is :left or :right depends on the major writing direction of the root element. For example, the first page of a document with a left-to-right major writing direction would be a :right page, and the first page of a document with a right-to-left major writing direction would be a :left page. To explicitly force a document to begin printing on a left or right page, authors can insert a page break before the first generated box.",
-      "href": "https://drafts.csswg.org/css2/#selectordef-right"
+      "href": "https://drafts.csswg.org/css2/#selectordef-right",
+      "value": ":right"
     },
     {
       "name": ":root",
       "prose": "The :root pseudo-class represents an element that is the root of the document.",
-      "href": "https://drafts.csswg.org/selectors-4/#root-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#root-pseudo",
+      "value": ":root"
     },
     {
       "name": ":scope",
       "prose": "In some contexts, selectors are matched with respect to one or more scoping roots, such as when calling the querySelector() method in [DOM]. The :scope pseudo-class represents this scoping root, and may be either a true element or a virtual one (such as a DocumentFragment).",
-      "href": "https://drafts.csswg.org/selectors-4/#scope-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#scope-pseudo",
+      "value": ":scope"
     },
     {
       "name": ":seeking",
       "prose": "The :seeking pseudo-class represents an element that is capable of ”seeking” when that element is ”seeking”. (For the audio and video elements of HTML, see HTML § 4.8.11.9 Seeking.)",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-seeking"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-seeking",
+      "value": ":seeking"
     },
     {
       "name": ":snapped",
       "prose": "The :snapped pseudo-class matches any scroll snap targets, regardless of axis. The longform physical and logical pseudo-class selectors allow for more finite snapped children styling as they can target an individual axis.",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#selectordef-snapped"
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#selectordef-snapped",
+      "value": ":snapped"
     },
     {
       "name": ":snapped-block",
       "prose": "Matches the child snapped on the block axis.",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#selectordef-snapped-block"
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#selectordef-snapped-block",
+      "value": ":snapped-block"
     },
     {
       "name": ":snapped-inline",
       "prose": "Matches the child snapped on the inline axis.",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#selectordef-snapped-inline"
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#selectordef-snapped-inline",
+      "value": ":snapped-inline"
     },
     {
       "name": ":snapped-x",
       "prose": "Matches the child snapped on the horizontal axis.",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#selectordef-snapped-x"
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#selectordef-snapped-x",
+      "value": ":snapped-x"
     },
     {
       "name": ":snapped-y",
       "prose": "Matches the child snapped on the vertical axis.",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#selectordef-snapped-y"
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#selectordef-snapped-y",
+      "value": ":snapped-y"
     },
     {
       "name": ":stalled",
       "prose": "The :stalled pseudo-class represents an element when that element cannot continue playing because it is actively attempting to obtain media data but it has failed to receive any data for some amount of time. For the audio and video elements of HTML, this amount of time is the media element stall timeout. [HTML] (Note that, like with the :buffering pseudo-class, the element is still considered to be “playing” when it is “stalled”. Whenever :stalled matches an element, :playing also matches the element.)",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-stalled"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-stalled",
+      "value": ":stalled"
     },
     {
       "name": ":start-of-page",
       "prose": "The element is the first matched element on the page, and neither it nor its ancestors have any previous siblings that appear on the page.",
-      "href": "https://drafts.csswg.org/css-gcpm-4/#selectordef-start-of-page"
+      "href": "https://drafts.csswg.org/css-gcpm-4/#selectordef-start-of-page",
+      "value": ":start-of-page"
     },
     {
       "name": ":state()",
@@ -14647,77 +14859,92 @@
     {
       "name": ":target",
       "prose": "The :target pseudo-class matches the document’s target elements. If the document’s URL has no fragment identifier, then the document has no target elements.",
-      "href": "https://drafts.csswg.org/selectors-4/#target-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#target-pseudo",
+      "value": ":target"
     },
     {
       "name": ":target-current",
       "prose": "Exactly one scroll marker within each scroll marker group is determined to be active at a time. Such \"active\" scroll markers match the :target-current pseudo-class.",
-      "href": "https://drafts.csswg.org/css-overflow-5/#selectordef-target-current"
+      "href": "https://drafts.csswg.org/css-overflow-5/#selectordef-target-current",
+      "value": ":target-current"
     },
     {
       "name": ":target-within",
       "prose": "The :target-within pseudo-class applies to any element to which the :target pseudo-class applies as well as to any element whose descendant in the flat tree (including non-element nodes, such as text nodes) matches the conditions for matching :target.",
-      "href": "https://drafts.csswg.org/selectors-4/#target-within-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#target-within-pseudo",
+      "value": ":target-within"
     },
     {
       "name": ":user-invalid",
       "prose": "The :user-invalid and the :user-valid pseudo-classes represent an element with incorrect or correct input, respectively, but only after the user has significantly interacted with it. Their purpose is to help the user identify mistakes in their input.",
-      "href": "https://drafts.csswg.org/selectors-4/#user-invalid-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#user-invalid-pseudo",
+      "value": ":user-invalid"
     },
     {
       "name": ":user-valid",
       "prose": "The :user-invalid and the :user-valid pseudo-classes represent an element with incorrect or correct input, respectively, but only after the user has significantly interacted with it. Their purpose is to help the user identify mistakes in their input.",
-      "href": "https://drafts.csswg.org/selectors-4/#user-valid-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#user-valid-pseudo",
+      "value": ":user-valid"
     },
     {
       "name": ":valid",
       "prose": "An element is :valid or :invalid when its contents or value is, respectively, valid or invalid with respect to data validity semantics defined by the document language (e.g. [XFORMS11] or [HTML5]). An element which lacks data validity semantics is neither :valid nor :invalid.",
-      "href": "https://drafts.csswg.org/selectors-4/#valid-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#valid-pseudo",
+      "value": ":valid"
     },
     {
       "name": ":visited",
       "prose": "User agents commonly display unvisited hyperlinks differently from previously visited ones. Selectors provides the pseudo-classes :link and :visited to distinguish them:",
-      "href": "https://drafts.csswg.org/selectors-4/#visited-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#visited-pseudo",
+      "value": ":visited"
     },
     {
       "name": ":volume-locked",
       "prose": "The :volume-locked pseudo-class represents an element that is capable of making sound, and currently has its volume \"locked\" by the UA or the user, so the page author cannot change it. (For the audio and video elements of HTML, see the algorithm for setting the element’s effective media volume. [HTML])",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-volume-locked"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-volume-locked",
+      "value": ":volume-locked"
     },
     {
       "name": ":where()",
       "prose": "The Specificity-adjustment pseudo-class, :where(), is a functional pseudo-class with the same syntax and functionality as :is(). Unlike :is(), neither the :where() pseudo-class, nor any of its arguments, contribute to the specificity of the selector—​its specificity is always zero.",
-      "href": "https://drafts.csswg.org/selectors-4/#where-pseudo"
+      "href": "https://drafts.csswg.org/selectors-4/#where-pseudo",
+      "value": ":where()"
     },
     {
       "name": ":xr-overlay",
       "prose": "The :xr-overlay pseudo-class MUST match the overlay element for the duration of an immersive session using a DOM Overlay.",
-      "href": "https://immersive-web.github.io/dom-overlays/#selectordef-xr-overlay"
+      "href": "https://immersive-web.github.io/dom-overlays/#selectordef-xr-overlay",
+      "value": ":xr-overlay"
     },
     {
       "name": "&",
       "prose": "When using a nested style rule, one must be able to refer to the elements matched by the parent rule; that is, after all, the entire point of nesting. To accomplish that, this specification defines a new selector, the nesting selector, written as & (U+0026 AMPERSAND).",
-      "href": "https://drafts.csswg.org/css-nesting-1/#selectordef-"
+      "href": "https://drafts.csswg.org/css-nesting-1/#selectordef-",
+      "value": "'&'"
     },
     {
       "name": "+",
       "prose": "The next-sibling combinator is made of the “plus sign” (U+002B, +) code point that separates two compound selectors. The elements represented by the two compound selectors share the same parent in the document tree and the element represented by the first compound selector immediately precedes the element represented by the second one. Non-element nodes (e.g. text between elements) are ignored when considering the adjacency of elements.",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-adjacent"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-adjacent",
+      "value": "'+'"
     },
     {
       "name": ">",
       "prose": "A child combinator describes a childhood relationship between two elements. A child combinator is made of the \"greater-than sign\" (U+003E, >) code point and separates two compound selectors.",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-child"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-child",
+      "value": "'>'"
     },
     {
       "name": "||",
       "prose": "The column combinator, which consists of two pipes (||) represents the relationship of a column element to a cell element belonging to the column it represents. Column membership is determined based on the semantics of the document language only: whether and how the elements are presented is not considered. If a cell element belongs to more than one column, it is represented by a selector indicating membership in any of those columns.",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-column"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-column",
+      "value": "'|' '|'"
     },
     {
       "name": "~",
       "prose": "The subsequent-sibling combinator is made of the \"tilde\" (U+007E, ~) code point that separates two compound selectors. The elements represented by the two compound selectors share the same parent in the document tree and the element represented by the first compound selector precedes (not necessarily immediately) the element represented by the second one.",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-sibling"
+      "href": "https://drafts.csswg.org/selectors-4/#selectordef-sibling",
+      "value": "'~'"
     }
   ],
   "types": [
@@ -14841,29 +15068,6 @@
       "prose": "The <any-value> production is identical to <declaration-value>, but also allows top-level <semicolon-token> tokens and <delim-token> tokens with a value of \"!\". It represents the entirety of what valid CSS can be in any context.",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-any-value",
       "type": "type"
-    },
-    {
-      "for": "shape()",
-      "name": "<arc-command>",
-      "value": "arc <command-end-point> [ [ of <length-percentage>{1,2} ] && <arc-sweep>? && <arc-size>? && [rotate <angle>]? ]",
-      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-command",
-      "type": "type"
-    },
-    {
-      "for": "shape()",
-      "name": "<arc-size>",
-      "prose": "<arc-size> can be large or small, indicating that the larger or smaller, respectively, of the two possible arcs must be chosen. If omitted, this defaults to small.",
-      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-size",
-      "type": "type",
-      "value": "large | small"
-    },
-    {
-      "for": "shape()",
-      "name": "<arc-sweep>",
-      "prose": "<arc-sweep> can be cw or ccw, indicating that the arc that is traced around the ellipse clockwise or counter-clockwise from the center, respectively, must be chosen. If omitted, this defaults to ccw.",
-      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-sweep",
-      "type": "type",
-      "value": "cw | ccw"
     },
     {
       "name": "<at-keyword-token>",
@@ -15247,13 +15451,6 @@
       "type": "type"
     },
     {
-      "for": "shape()",
-      "name": "<command-end-point>",
-      "value": "[ to <position> | by <coordinate-pair> ]",
-      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-command-end-point",
-      "type": "type"
-    },
-    {
       "name": "<common-lig-values>",
       "href": "https://drafts.csswg.org/css-fonts-4/#common-lig-values",
       "type": "type",
@@ -15397,30 +15594,16 @@
       "value": "[ contextual | no-contextual ]"
     },
     {
-      "for": "shape()",
-      "name": "<control-point>",
-      "value": "[ <position> | <relative-control-point> ]",
-      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-control-point",
-      "type": "type"
-    },
-    {
       "name": "<coord-box>",
       "href": "https://drafts.csswg.org/css-box-4/#typedef-coord-box",
       "type": "type",
       "value": "<paint-box> | view-box"
     },
     {
-      "for": "shape()",
-      "name": "<coordinate-pair>",
-      "value": "<length-percentage>{2}",
-      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-coordinate-pair",
-      "type": "type"
-    },
-    {
       "name": "<corner-shape-value>",
       "href": "https://drafts.csswg.org/css-borders-4/#typedef-corner-shape-value",
       "type": "type",
-      "value": "round | scoop | bevel | notch | square | squircle | superellipse(<number [-∞,∞]> | infinity | -infinity)"
+      "value": "round | scoop | bevel | notch | square | squircle | <superellipse()>"
     },
     {
       "name": "<counter-name>",
@@ -15464,13 +15647,6 @@
       "href": "https://drafts.csswg.org/css-easing-2/#typedef-cubic-bezier-easing-function",
       "type": "type",
       "value": "ease | ease-in | ease-out | ease-in-out | <cubic-bezier()>"
-    },
-    {
-      "for": "shape()",
-      "name": "<curve-command>",
-      "value": "curve [ [ to <position> with <control-point> [ / <control-point> ]? ] | [ by <coordinate-pair> with <relative-control-point> [ / <relative-control-point> ]? ] ]",
-      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-curve-command",
-      "type": "type"
     },
     {
       "name": "<custom-arg>",
@@ -15555,6 +15731,12 @@
       "prose": "The <declaration-value> production matches any sequence of one or more tokens, so long as the sequence does not contain <bad-string-token>, <bad-url-token>, unmatched <)-token>, <]-token>, or <}-token>, or top-level <semicolon-token> tokens or <delim-token> tokens with a value of \"!\". It represents the entirety of what a valid declaration can have as its value.",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-declaration-value",
       "type": "type"
+    },
+    {
+      "name": "<default-value>",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-default-value",
+      "type": "type",
+      "value": "<declaration-value>"
     },
     {
       "name": "<delim-token>",
@@ -15790,7 +15972,7 @@
       "name": "<function-parameter>",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-function-parameter",
       "type": "type",
-      "value": "<custom-property-name> <css-type>? [ : <declaration-value> ]?"
+      "value": "<custom-property-name> <css-type>? [ : <default-value> ]?"
     },
     {
       "name": "<function-token>",
@@ -15936,13 +16118,6 @@
       "value": "[ historical-ligatures | no-historical-ligatures ]"
     },
     {
-      "for": "shape()",
-      "name": "<horizontal-line-command>",
-      "value": "hline [ to [ <length-percentage> | left | center | right | x-start | x-end ] | by <length-percentage> ]",
-      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-horizontal-line-command",
-      "type": "type"
-    },
-    {
       "name": "<hue-interpolation-method>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-hue-interpolation-method",
       "type": "type",
@@ -16069,6 +16244,34 @@
       "value": "inherit( <declaration-value>, <declaration-value>? )"
     },
     {
+      "for": "calc-interpolate()",
+      "name": "<input-position>",
+      "prose": "Represents an interpolation stop associating the specified input position(s) with the specified output values. As with the gradient functions, if two <input-position>s are specified, it is treated the same as two stops with the same <output-value>.",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
+      "type": "type"
+    },
+    {
+      "for": "color-interpolate()",
+      "name": "<input-position>",
+      "prose": "Represents an interpolation stop associating the specified input position(s) with the specified output values. As with the gradient functions, if two <input-position>s are specified, it is treated the same as two stops with the same <output-value>.",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
+      "type": "type"
+    },
+    {
+      "for": "interpolate()",
+      "name": "<input-position>",
+      "prose": "Represents an interpolation stop associating the specified input position(s) with the specified output values. As with the gradient functions, if two <input-position>s are specified, it is treated the same as two stops with the same <output-value>.",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
+      "type": "type"
+    },
+    {
+      "for": "transform-interpolate()",
+      "name": "<input-position>",
+      "prose": "Represents an interpolation stop associating the specified input position(s) with the specified output values. As with the gradient functions, if two <input-position>s are specified, it is treated the same as two stops with the same <output-value>.",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
+      "type": "type"
+    },
+    {
       "name": "<integer>",
       "prose": "Integer values are denoted by <integer>.",
       "href": "https://drafts.csswg.org/css-values-4/#integer-value",
@@ -16188,13 +16391,6 @@
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-color-or-repeat",
       "type": "type",
       "value": "[ <color> | <repeat-line-color> ]"
-    },
-    {
-      "for": "shape()",
-      "name": "<line-command>",
-      "value": "line <command-end-point>",
-      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-line-command",
-      "type": "type"
     },
     {
       "name": "<line-name-list>",
@@ -16455,13 +16651,6 @@
       "value": "rgba( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
     },
     {
-      "for": "shape()",
-      "name": "<move-command>",
-      "value": "move <command-end-point>",
-      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-move-command",
-      "type": "type"
-    },
-    {
       "name": "<mq-boolean>",
       "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mq-boolean",
       "type": "type",
@@ -16636,6 +16825,18 @@
       "type": "type"
     },
     {
+      "name": "<pointer-axis>",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#typedef-axis",
+      "type": "type",
+      "value": "block | inline | x | y"
+    },
+    {
+      "name": "<pointer-source>",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#typedef-source",
+      "type": "type",
+      "value": "root | nearest | self"
+    },
+    {
       "name": "<points>",
       "value": "[ <number>+ ]#",
       "href": "https://svgwg.org/svg2-draft/shapes.html#DataTypePoints",
@@ -16697,11 +16898,11 @@
       "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | rec2100-pq | rec2100-hlg | rec2100-linear"
     },
     {
-      "name": "<progress>",
-      "prose": "The <progress> value type represents the mix progress value in a mix notation, and ultimately resolves to a percentage. It can, however, draw that percentage value from sources such as media queries and animation timelines, and can also convert it through an easing function before using it for interpolation.",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-progress",
+      "name": "<progress-source>",
+      "prose": "The <progress-source> value type represents the interpolation progress in an interpolation notation. Its syntax is:",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-progress-source",
       "type": "type",
-      "value": "[ <percentage-token> | <number> | <'animation-timeline'> ] && [ by <easing-function> ]?"
+      "value": "<percentage> | <number> | <dimension> | <'animation-timeline'>"
     },
     {
       "name": "<pseudo-class-selector>",
@@ -16835,13 +17036,6 @@
       "name": "<referrerpolicy-modifier>",
       "value": "referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrerpolicy-modifier",
-      "type": "type"
-    },
-    {
-      "for": "shape()",
-      "name": "<relative-control-point>",
-      "value": "<coordinate-pair> [ from [ start | end | origin ] ]?",
-      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-relative-control-point",
       "type": "type"
     },
     {
@@ -16984,6 +17178,34 @@
       "value": "root | nearest | self"
     },
     {
+      "for": "calc-interpolate()",
+      "name": "<segment-options>",
+      "prose": "When appearing in the first argument, provides any type-specific interpolation options that apply to every segment in the interpolation map. When appearing between stops, provides any type-specific interpolation options that apply to the interpolation segment between the stops on either side of this argument, overriding any default provided by a corresponding global <segment-options> argument.",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options",
+      "type": "type"
+    },
+    {
+      "for": "color-interpolate()",
+      "name": "<segment-options>",
+      "prose": "When appearing in the first argument, provides any type-specific interpolation options that apply to every segment in the interpolation map. When appearing between stops, provides any type-specific interpolation options that apply to the interpolation segment between the stops on either side of this argument, overriding any default provided by a corresponding global <segment-options> argument.",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options",
+      "type": "type"
+    },
+    {
+      "for": "interpolate()",
+      "name": "<segment-options>",
+      "prose": "When appearing in the first argument, provides any type-specific interpolation options that apply to every segment in the interpolation map. When appearing between stops, provides any type-specific interpolation options that apply to the interpolation segment between the stops on either side of this argument, overriding any default provided by a corresponding global <segment-options> argument.",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options",
+      "type": "type"
+    },
+    {
+      "for": "transform-interpolate()",
+      "name": "<segment-options>",
+      "prose": "When appearing in the first argument, provides any type-specific interpolation options that apply to every segment in the interpolation map. When appearing between stops, provides any type-specific interpolation options that apply to the interpolation segment between the stops on either side of this argument, overriding any default provided by a corresponding global <segment-options> argument.",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options",
+      "type": "type"
+    },
+    {
       "name": "<selector-list>",
       "href": "https://drafts.csswg.org/selectors-4/#typedef-selector-list",
       "type": "type",
@@ -17022,7 +17244,7 @@
     {
       "name": "<shape-command>",
       "prose": "The sequence of <shape-command>s represent further path data commands. Each command’s starting point is the previous command’s ending point.",
-      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-command",
+      "href": "https://drafts.csswg.org/css-shapes-1/#typedef-shape-command",
       "type": "type",
       "value": "<move-command> | <line-command> | close | <horizontal-line-command> | <vertical-line-command> | <curve-command> | <smooth-command> | <arc-command>"
     },
@@ -17136,13 +17358,6 @@
       "name": "<size-keyword>",
       "prose": "The <size-keyword> production matches any sizing keywords allowed in the context. For example, in width, it matches auto, min-content, stretch, etc.",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-size-keyword",
-      "type": "type"
-    },
-    {
-      "for": "shape()",
-      "name": "<smooth-command>",
-      "value": "smooth [ [ to <position> [ with <control-point> ]? ] | [ by <coordinate-pair> [ with <relative-control-point> ]? ] ]",
-      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-smooth-command",
       "type": "type"
     },
     {
@@ -17377,6 +17592,12 @@
       "type": "type"
     },
     {
+      "name": "<timeline-range-center-subject>",
+      "prose": "The animation range center subject is the element whose principal box is the range relative to which the center of the active range is calculated, and is represented by the <timeline-range-center-subject> value type, which indicates a CSS identifier representing one of the following:",
+      "href": "https://drafts.csswg.org/pointer-animations-1/#typedef-timeline-range-center-subject",
+      "type": "type"
+    },
+    {
       "name": "<timeline-range-name>",
       "prose": "A named timeline range is a named segment of an animation timeline. The start of the segment is represented as 0% progress through the range; the end of the segment is represented as 100% progress through the range. Multiple named timeline ranges can be associated with a given timeline, and multiple such ranges can overlap. For example, the contain range of a view progress timeline overlaps with its cover range. Named timeline ranges are represented by the <timeline-range-name> value type, which indicates a CSS identifier representing one of the predefined named timeline ranges.",
       "href": "https://drafts.csswg.org/scroll-animations-1/#typedef-timeline-range-name",
@@ -17497,13 +17718,6 @@
       "href": "https://drafts.csswg.org/css-variables-2/#typedef-var-args",
       "type": "type",
       "value": "var( <declaration-value> , <declaration-value>? )"
-    },
-    {
-      "for": "shape()",
-      "name": "<vertical-line-command>",
-      "value": "vline [ to [ <length-percentage> | top | center | bottom | y-start | y-end ] | by <length-percentage> ]",
-      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-vertical-line-command",
-      "type": "type"
     },
     {
       "name": "<visual-box>",

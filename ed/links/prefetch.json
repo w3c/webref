@@ -24,6 +24,7 @@
       "https://infra.spec.whatwg.org/": {},
       "https://privacycg.github.io/storage-partitioning/": {},
       "https://url.spec.whatwg.org/": {},
+      "https://w3c.github.io/ServiceWorker/": {},
       "https://w3c.github.io/hr-time/": {},
       "https://w3c.github.io/navigation-timing/": {},
       "https://w3c.github.io/resource-timing/": {},
@@ -68,11 +69,11 @@
           "fetch-controller",
           "fetch-controller-abort",
           "concept-network-error",
+          "concept-request-url",
           "concept-request-reserved-client",
           "concept-request-referrer",
           "concept-request-url-list",
           "concept-response-clone",
-          "concept-request-url",
           "concept-request-policy-container",
           "concept-request-client",
           "concept-request-destination",
@@ -105,6 +106,8 @@
           "cross-origin-resource-policy-check",
           "concept-response-location-url",
           "http-scheme",
+          "non-subresource-request",
+          "dom-requestdestination-report",
           "concept-response-status",
           "redirect-status",
           "ok-status"
@@ -147,9 +150,9 @@
           "target-snapshot-params",
           "document-state-initiator-origin",
           "target-snapshot-params-sandbox",
+          "navigation-params",
           "document-state-history-policy-container",
           "source-snapshot-params-policy-container",
-          "navigation-params",
           "navigation-params-id",
           "navigation-params-request",
           "navigation-params-response",
@@ -244,14 +247,15 @@
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "concept-relevant-global",
+          "concept-environment-active-service-worker",
+          "environment",
+          "environment-settings-object",
+          "concept-environment-id",
           "relevant-settings-object",
           "concept-environment-top-level-creation-url",
           "concept-environment-top-level-origin",
-          "environment",
-          "concept-environment-id",
           "concept-environment-target-browsing-context",
           "concept-environment-creation-url",
-          "environment-settings-object",
           "environment-discarding-steps",
           "queue-a-global-task",
           "networking-task-source"
@@ -299,6 +303,15 @@
           "concept-url-origin",
           "concept-url-scheme",
           "concept-url-fragment"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "dom-clients-get",
+          "create-fetch-event-and-dispatch",
+          "dom-fetchevent-resultingclientid",
+          "dom-clients-matchall",
+          "fetchevent"
         ]
       },
       "https://w3c.github.io/hr-time/": {

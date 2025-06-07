@@ -9,6 +9,7 @@ dictionary SecurePaymentConfirmationRequest {
     USVString payeeOrigin;
     sequence<PaymentEntityLogo> paymentEntitiesLogos;
     AuthenticationExtensionsClientInputs extensions;
+    sequence<PublicKeyCredentialParameters> browserBoundPubKeyCredParams;
     sequence<USVString> locale;
     boolean showOptOut;
 };

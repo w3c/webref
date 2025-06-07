@@ -1,4 +1,4 @@
 // Source: Secure Payment Confirmation (https://www.w3.org/TR/secure-payment-confirmation/)
 dictionary CollectedClientPaymentData : CollectedClientData {
-    required CollectedClientAdditionalPaymentData payment;
+    required (CollectedClientAdditionalPaymentData or CollectedClientAdditionalPaymentRegistrationData) payment;
 };

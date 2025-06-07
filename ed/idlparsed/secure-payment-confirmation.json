@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "SecurePaymentConfirmationRequest": {
-        "fragment": "dictionary SecurePaymentConfirmationRequest {\n    required BufferSource challenge;\n    required USVString rpId;\n    required sequence<BufferSource> credentialIds;\n    required PaymentCredentialInstrument instrument;\n    unsigned long timeout;\n    USVString payeeName;\n    USVString payeeOrigin;\n    sequence<PaymentEntityLogo> paymentEntitiesLogos;\n    AuthenticationExtensionsClientInputs extensions;\n    sequence<USVString> locale;\n    boolean showOptOut;\n};",
+        "fragment": "dictionary SecurePaymentConfirmationRequest {\n    required BufferSource challenge;\n    required USVString rpId;\n    required sequence<BufferSource> credentialIds;\n    required PaymentCredentialInstrument instrument;\n    unsigned long timeout;\n    USVString payeeName;\n    USVString payeeOrigin;\n    sequence<PaymentEntityLogo> paymentEntitiesLogos;\n    AuthenticationExtensionsClientInputs extensions;\n    sequence<PublicKeyCredentialParameters> browserBoundPubKeyCredParams;\n    sequence<USVString> locale;\n    boolean showOptOut;\n};",
         "type": "dictionary",
         "name": "SecurePaymentConfirmationRequest",
         "inheritance": null,
@@ -179,6 +179,31 @@
           },
           {
             "type": "field",
+            "name": "browserBoundPubKeyCredParams",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PublicKeyCredentialParameters"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-browserboundpubkeycredparams"
+          },
+          {
+            "type": "field",
             "name": "locale",
             "extAttrs": [],
             "idlType": {
@@ -258,7 +283,7 @@
         "href": "https://w3c.github.io/secure-payment-confirmation/#enumdef-securepaymentconfirmationavailability"
       },
       "AuthenticationExtensionsPaymentInputs": {
-        "fragment": "dictionary AuthenticationExtensionsPaymentInputs {\n  boolean isPayment;\n\n  // Only used for authentication.\n  USVString rpId;\n  USVString topOrigin;\n  USVString payeeName;\n  USVString payeeOrigin;\n  sequence<PaymentEntityLogo> paymentEntitiesLogos;\n  PaymentCurrencyAmount total;\n  PaymentCredentialInstrument instrument;\n};",
+        "fragment": "dictionary AuthenticationExtensionsPaymentInputs {\n  boolean isPayment;\n  sequence<PublicKeyCredentialParameters> browserBoundPubKeyCredParams;\n\n  // Only used for authentication.\n  USVString rpId;\n  USVString topOrigin;\n  USVString payeeName;\n  USVString payeeOrigin;\n  sequence<PaymentEntityLogo> paymentEntitiesLogos;\n  PaymentCurrencyAmount total;\n  PaymentCredentialInstrument instrument;\n};",
         "type": "dictionary",
         "name": "AuthenticationExtensionsPaymentInputs",
         "inheritance": null,
@@ -278,6 +303,31 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-ispayment"
+          },
+          {
+            "type": "field",
+            "name": "browserBoundPubKeyCredParams",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PublicKeyCredentialParameters"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-browserboundpubkeycredparams"
           },
           {
             "type": "field",
@@ -405,8 +455,62 @@
         "partial": false,
         "href": "https://w3c.github.io/secure-payment-confirmation/#dictdef-authenticationextensionspaymentinputs"
       },
+      "AuthenticationExtensionsPaymentOutputs": {
+        "fragment": "dictionary AuthenticationExtensionsPaymentOutputs {\n  BrowserBoundSignature browserBoundSignature;\n};",
+        "type": "dictionary",
+        "name": "AuthenticationExtensionsPaymentOutputs",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "browserBoundSignature",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BrowserBoundSignature"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-authenticationextensionspaymentoutputs-browserboundsignature"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/secure-payment-confirmation/#dictdef-authenticationextensionspaymentoutputs"
+      },
+      "BrowserBoundSignature": {
+        "fragment": "dictionary BrowserBoundSignature {\n  required ArrayBuffer signature;\n};",
+        "type": "dictionary",
+        "name": "BrowserBoundSignature",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "signature",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ArrayBuffer"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-browserboundsignature-signature"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/secure-payment-confirmation/#dictdef-browserboundsignature"
+      },
       "CollectedClientPaymentData": {
-        "fragment": "dictionary CollectedClientPaymentData : CollectedClientData {\n    required CollectedClientAdditionalPaymentData payment;\n};",
+        "fragment": "dictionary CollectedClientPaymentData : CollectedClientData {\n    required (CollectedClientAdditionalPaymentData or CollectedClientAdditionalPaymentRegistrationData) payment;\n};",
         "type": "dictionary",
         "name": "CollectedClientPaymentData",
         "inheritance": "CollectedClientData",
@@ -420,8 +524,25 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "CollectedClientAdditionalPaymentData"
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CollectedClientAdditionalPaymentData"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CollectedClientAdditionalPaymentRegistrationData"
+                }
+              ]
             },
             "default": null,
             "required": true,
@@ -433,7 +554,7 @@
         "href": "https://w3c.github.io/secure-payment-confirmation/#dictdef-collectedclientpaymentdata"
       },
       "CollectedClientAdditionalPaymentData": {
-        "fragment": "dictionary CollectedClientAdditionalPaymentData {\n    required USVString rpId;\n    required USVString topOrigin;\n    USVString payeeName;\n    USVString payeeOrigin;\n    sequence<PaymentEntityLogo> paymentEntitiesLogos;\n    required PaymentCurrencyAmount total;\n    required PaymentCredentialInstrument instrument;\n};",
+        "fragment": "dictionary CollectedClientAdditionalPaymentData {\n    required USVString rpId;\n    required USVString topOrigin;\n    USVString payeeName;\n    USVString payeeOrigin;\n    sequence<PaymentEntityLogo> paymentEntitiesLogos;\n    required PaymentCurrencyAmount total;\n    required PaymentCredentialInstrument instrument;\n    USVString browserBoundPublicKey;\n};",
         "type": "dictionary",
         "name": "CollectedClientAdditionalPaymentData",
         "inheritance": null,
@@ -558,11 +679,54 @@
             "default": null,
             "required": true,
             "href": "https://w3c.github.io/secure-payment-confirmation/#dom-collectedclientadditionalpaymentdata-instrument"
+          },
+          {
+            "type": "field",
+            "name": "browserBoundPublicKey",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-collectedclientadditionalpaymentdata-browserboundpublickey"
           }
         ],
         "extAttrs": [],
         "partial": false,
         "href": "https://w3c.github.io/secure-payment-confirmation/#dictdef-collectedclientadditionalpaymentdata"
+      },
+      "CollectedClientAdditionalPaymentRegistrationData": {
+        "fragment": "dictionary CollectedClientAdditionalPaymentRegistrationData {\n    USVString browserBoundPublicKey;\n};",
+        "type": "dictionary",
+        "name": "CollectedClientAdditionalPaymentRegistrationData",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "browserBoundPublicKey",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-collectedclientadditionalpaymentregistrationdata-browserboundpublickey"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/secure-payment-confirmation/#dictdef-collectedclientadditionalpaymentregistrationdata"
       },
       "PaymentCredentialInstrument": {
         "fragment": "dictionary PaymentCredentialInstrument {\n    required USVString displayName;\n    required USVString icon;\n    boolean iconMustBeShown = true;\n};",
@@ -735,6 +899,34 @@
           "extAttrs": [],
           "partial": true
         }
+      ],
+      "AuthenticationExtensionsClientOutputs": [
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n  AuthenticationExtensionsPaymentOutputs payment;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientOutputs",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "payment",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AuthenticationExtensionsPaymentOutputs"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://w3c.github.io/secure-payment-confirmation/#dom-authenticationextensionsclientoutputs-payment"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
       ]
     },
     "globals": {},
@@ -744,7 +936,8 @@
         "BufferSource",
         "PaymentCredentialInstrument",
         "PaymentEntityLogo",
-        "AuthenticationExtensionsClientInputs"
+        "AuthenticationExtensionsClientInputs",
+        "PublicKeyCredentialParameters"
       ],
       "PaymentRequest": [
         "SecurePaymentConfirmationAvailability"
@@ -753,27 +946,42 @@
         "AuthenticationExtensionsPaymentInputs"
       ],
       "AuthenticationExtensionsPaymentInputs": [
+        "PublicKeyCredentialParameters",
         "PaymentEntityLogo",
         "PaymentCurrencyAmount",
         "PaymentCredentialInstrument"
       ],
+      "AuthenticationExtensionsClientOutputs": [
+        "AuthenticationExtensionsPaymentOutputs"
+      ],
+      "AuthenticationExtensionsPaymentOutputs": [
+        "BrowserBoundSignature"
+      ],
+      "BrowserBoundSignature": [
+        "ArrayBuffer"
+      ],
       "CollectedClientPaymentData": [
         "CollectedClientData",
-        "CollectedClientAdditionalPaymentData"
+        "CollectedClientAdditionalPaymentData",
+        "CollectedClientAdditionalPaymentRegistrationData"
       ],
       "CollectedClientAdditionalPaymentData": [
         "PaymentEntityLogo",
         "PaymentCurrencyAmount",
         "PaymentCredentialInstrument"
       ],
+      "CollectedClientAdditionalPaymentRegistrationData": [],
       "PaymentCredentialInstrument": [],
       "PaymentEntityLogo": []
     },
     "externalDependencies": [
       "BufferSource",
       "AuthenticationExtensionsClientInputs",
+      "PublicKeyCredentialParameters",
       "PaymentRequest",
       "PaymentCurrencyAmount",
+      "AuthenticationExtensionsClientOutputs",
+      "ArrayBuffer",
       "CollectedClientData"
     ],
     "hasObsoleteIdl": false

@@ -1,0 +1,7 @@
+// Source: Pointer-driven Animations (https://drafts.csswg.org/pointer-animations-1/)
+[Exposed=Window]
+interface PointerTimeline : AnimationTimeline {
+  constructor(optional PointerTimelineOptions options = {});
+  readonly attribute Element? source;
+  readonly attribute PointerAxis axis;
+};
