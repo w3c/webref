@@ -2,7 +2,7 @@
 
 This package contains a consolidated list of CSS features defined across specs, scraped from the latest versions of web platform specifications in [webref](https://github.com/w3c/webref). Fixes are applied to ensure that [guarantees](#guarantees) hold, including the ability to parse syntaxes associated with CSS features with [CSSTree](https://github.com/csstree/csstree).
 
-**Important:** If you're migrating from version 6, see the [change log](CHANGELOG.md) for "How to upgrade" considerations.
+**Important:** If you're migrating from version 6, see the [changelog](CHANGELOG.md) for "How to upgrade" considerations.
 
 # API
 
@@ -52,6 +52,7 @@ Additional notes:
 
 The following guarantees are provided by this package:
 - All syntax values (the `value` keys) can be parsed by the version of [CSSTree](https://github.com/csstree/csstree) set in `peerDependencies` in `package.json`.
-- Feature names are unique per type provided that the `for` key is taken into account for functions and types.
+- Feature names (the `name` keys) are unique per type provided that the `for` key is also taken into account for functions and types.
+- All features have an `href` key that targets the CSS spec that defines the feature. When the feature is extended across CSS specs, this URL targets the base definition.
 
-Note: there is no guarantee that functions, properties and types referenced by other constructs actually exist. The grammar is known to be incomplete.
+*Note:* there is no guarantee that functions, properties and types referenced by other constructs actually exist. The grammar is known to be incomplete.

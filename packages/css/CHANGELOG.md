@@ -9,11 +9,11 @@ made to the data structure.
 
 ## v7.0.0 - 2025-06
 
-Package used to contain CSS extracts per spec. The extracts are now consolidated into a single file.
+CSS extracts are now consolidated into a single file.
 
 ### Breaking changes
 
-- CSS extracts per spec are replaced by a single consolidated `css.json` file.
+- A single consolidated `css.json` file replaces CSS extracts per spec.
 
 ### How to upgrade
 
