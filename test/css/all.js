@@ -11,7 +11,7 @@ import { describe, it } from 'node:test';
 import { strict as assert } from 'node:assert';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import css from '@webref/css';
+import css from '@webref/css6';
 import index from '../../curated/index.json' with { type: 'json' };
 import { definitionSyntax } from 'css-tree';
 import { study } from 'strudy';

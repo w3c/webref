@@ -62,15 +62,19 @@ MissingPackageError.prototype = Error.prototype;
  *   match.
  */
 async function computeDiff(type) {
+  const packageName = type.replace(/\d+$/, '');
+  const majorVersionMatch = type.match(/(\d+)$/);
+  const majorVersion = majorVersionMatch ? '@' + majorVersionMatch[1] : '';
+
   // Install @webref package in tmp folder
   const tmpFolder = fs.mkdtempSync(path.join(os.tmpdir(), "webref-"));
   try {
-    execSync(`npm install @webref/${type}`, {
+    execSync(`npm install @webref/${packageName}${majorVersion}`, {
       cwd: tmpFolder
     });
   }
   catch (err) {
-    throw new MissingPackageError(`Package @webref/${type} does not exist or could not be installed.`);
+    throw new MissingPackageError(`Package @webref/${packageName}${majorVersion} does not exist or could not be installed.`);
   }
 
   // Extract released version (will be used in the body of the pre-release PR)
@@ -161,7 +165,8 @@ async function computeDiff(type) {
  *
  * @function
  * @param {String} type Package name. Must match one of the existing folder
- *  names under "packages" (e.g. "css", "elements", "events", "idl")
+ *  names under "packages" (e.g. "css", "elements", "events", "idl"), possibly
+ *  pinned to a major version.
  */
 async function prepareRelease(type) {
   // Compute a reasonably unique ID

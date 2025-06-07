@@ -30,11 +30,12 @@ async function checkPackage(type) {
   // Loosely adapted from semver:
   // https://github.com/npm/node-semver/blob/cb1ca1d5480a6c07c12ac31ba5f2071ed530c4ed/internal/re.js#L37
   // (not using semver directly to avoid having to install dependencies in job)
-  const reVersion = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$/;
+  const reVersion = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(-.+)?$/;
   const versionTokens = version.match(reVersion);
   const major = parseInt(versionTokens[1], 10);
   const minor = parseInt(versionTokens[2], 10);
   const patch = parseInt(versionTokens[3], 10);
+  const alpha = versionTokens[4] ?? '';
 
   if (patch === 0) {
     console.log('- No bump needed, minor bump already pending');
@@ -46,7 +47,7 @@ async function checkPackage(type) {
     { encoding: 'utf8' }).trim();
   if (res) {
     console.log('- new/deleted files found');
-    const newVersion = `${major}.${minor+1}.0`;
+    const newVersion = `${major}.${minor+1}.0${alpha}`;
     packageContents.version = newVersion;
     fs.writeFile(packageFile, JSON.stringify(packageContents, null, 2), 'utf8');
     console.log(`- Version bumped to ${newVersion}`);

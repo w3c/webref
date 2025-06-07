@@ -64,6 +64,11 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Prepare a pre-release PR for the @webref/css6 package if needed
+      run: node tools/prepare-release.js css6
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Prepare a pre-release PR for the @webref/elements package if needed
       run: node tools/prepare-release.js elements
       env:
