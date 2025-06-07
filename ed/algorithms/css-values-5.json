@@ -83,10 +83,10 @@
           "html": "<p>For each omitted percentage in <var>items</var>,\nset it to <code class=\"highlight\"><c- p=\"\">(</c-><c- m=\"\">100</c-><c- k=\"\">%</c-> - <var>specified sum</var><c- p=\"\">)</c-> / <c- p=\"\">(</c->number of omitted percentages<c- p=\"\">)</c-></code>.</p>"
         },
         {
-          "html": "<p>Let <var>total</var> be the sum of the percentages of all the items,\nclamped to 100%.</p>"
+          "html": "<p>Let <var>total</var> be the sum of the percentages of all the items.</p>"
         },
         {
-          "html": "<p>If <var>total</var> is greater than 0%,\nor if <var>total</var> is greater than 0% and the <var>force normalization</var> flag is true,\nmultiply every percentage in <var>items</var> by <code class=\"highlight\"><c- p=\"\">(</c-><c- m=\"\">100</c-><c- k=\"\">%</c-> / <var>total</var><c- p=\"\">)</c-></code>.</p>"
+          "html": "<p>If <var>total</var> is greater than 100%,\nor if <var>total</var> is greater than 0% and the <var>force normalization</var> flag is true,\nmultiply every percentage in <var>items</var> by <code class=\"highlight\"><c- p=\"\">(</c-><c- m=\"\">100</c-><c- k=\"\">%</c-> / <var>total</var><c- p=\"\">)</c-></code>.</p>"
         },
         {
           "html": "<p>If <var>total</var> is less than 100%,\nlet <var>leftover</var> be <code class=\"highlight\"><c- p=\"\">(</c-><c- m=\"\">100</c-><c- k=\"\">%</c-> - <var>total</var><c- p=\"\">)</c-></code>.\nOtherwise, let <var>leftover</var> be 0%.</p>"
