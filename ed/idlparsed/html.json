@@ -23734,7 +23734,7 @@
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#useractivation"
       },
       "ToggleEvent": {
-        "fragment": "[Exposed=Window]\ninterface ToggleEvent : Event {\n  constructor(DOMString type, optional ToggleEventInit eventInitDict = {});\n  readonly attribute DOMString oldState;\n  readonly attribute DOMString newState;\n  readonly attribute Element source;\n};",
+        "fragment": "[Exposed=Window]\ninterface ToggleEvent : Event {\n  constructor(DOMString type, optional ToggleEventInit eventInitDict = {});\n  readonly attribute DOMString oldState;\n  readonly attribute DOMString newState;\n  readonly attribute Element? source;\n};",
         "type": "interface",
         "name": "ToggleEvent",
         "inheritance": "Event",
@@ -23818,7 +23818,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "Element"
             },
