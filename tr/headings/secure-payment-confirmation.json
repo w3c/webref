@@ -60,6 +60,13 @@
       "number": "1.1.2"
     },
     {
+      "id": "sctn-use-case-device-binding",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-use-case-device-binding",
+      "level": 4,
+      "title": "Cryptographic evidence of device binding",
+      "number": "1.1.3"
+    },
+    {
       "id": "sctn-sample-scenarios",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-sample-scenarios",
       "level": 3,
@@ -214,160 +221,208 @@
       "number": "5.2"
     },
     {
+      "id": "sctn-collectedclientadditionalpaymentregistrationdata-dictionary",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-collectedclientadditionalpaymentregistrationdata-dictionary",
+      "level": 3,
+      "title": "CollectedClientAdditionalPaymentRegistrationData Dictionary",
+      "number": "5.3"
+    },
+    {
+      "id": "sctn-browser-bound-key-store",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-browser-bound-key-store",
+      "level": 2,
+      "title": "Browser Bound Key Store",
+      "number": "6"
+    },
+    {
+      "id": "sctn-creating-a-keypair",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-creating-a-keypair",
+      "level": 3,
+      "title": "Creating a key pair",
+      "number": "6.1"
+    },
+    {
+      "id": "sctn-binding-a-keypair",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-binding-a-keypair",
+      "level": 3,
+      "title": "Binding a key pair",
+      "number": "6.2"
+    },
+    {
+      "id": "sctn-retrieving-a-browser-bound-key",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-retrieving-a-browser-bound-key",
+      "level": 3,
+      "title": "Retrieving a key pair",
+      "number": "6.3"
+    },
+    {
+      "id": "sctn-getting-the-bbk-public-key",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-getting-the-bbk-public-key",
+      "level": 3,
+      "title": "Getting the browser bound public key",
+      "number": "6.4"
+    },
+    {
+      "id": "sctn-signing-client-data",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-signing-client-data",
+      "level": 3,
+      "title": "Signing client data",
+      "number": "6.5"
+    },
+    {
       "id": "sctn-common-data-structures",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-common-data-structures",
       "level": 2,
       "title": "Common Data Structures",
-      "number": "6"
+      "number": "7"
     },
     {
       "id": "sctn-paymentcredentialinstrument-dictionary",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-paymentcredentialinstrument-dictionary",
       "level": 3,
       "title": "PaymentCredentialInstrument Dictionary",
-      "number": "6.1"
+      "number": "7.1"
     },
     {
       "id": "sctn-paymententitylogo-dictionary",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-paymententitylogo-dictionary",
       "level": 3,
       "title": "PaymentEntityLogo Dictionary",
-      "number": "6.2"
+      "number": "7.2"
     },
     {
       "id": "sctn-permissions-policy",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-permissions-policy",
       "level": 2,
       "title": "Permissions Policy integration",
-      "number": "7"
+      "number": "8"
     },
     {
       "id": "sctn-relying-party-operations",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-relying-party-operations",
       "level": 2,
       "title": "SPC Relying Party Operations",
-      "number": "8"
+      "number": "9"
     },
     {
       "id": "sctn-verifying-assertion",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-verifying-assertion",
       "level": 3,
       "title": "Verifying an Authentication Assertion",
-      "number": "8.1"
+      "number": "9.1"
     },
     {
       "id": "sctn-automation",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-automation",
       "level": 2,
-      "title": "User Agent Automation",
-      "number": "9"
+      "title": "10. User Agent Automation"
     },
     {
       "id": "sctn-automation-set-spc-transaction-mode",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-automation-set-spc-transaction-mode",
       "level": 3,
       "title": "Set SPC Transaction Mode",
-      "number": "9.1"
+      "number": "10.1"
     },
     {
       "id": "sctn-security-considerations",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-security-considerations",
       "level": 2,
-      "title": "10. Security Considerations"
+      "title": "11. Security Considerations"
     },
     {
       "id": "sctn-security-cross-origin-auth",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-security-cross-origin-auth",
       "level": 3,
       "title": "Cross-origin authentication ceremony",
-      "number": "10.1"
+      "number": "11.1"
     },
     {
       "id": "sctn-security-login-attack",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-security-login-attack",
       "level": 4,
       "title": "Login Attack",
-      "number": "10.1.1"
+      "number": "11.1.1"
     },
     {
       "id": "sctn-security-payment-attack",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-security-payment-attack",
       "level": 4,
       "title": "Payment Attack",
-      "number": "10.1.2"
+      "number": "11.1.2"
     },
     {
       "id": "sctn-security-merchant-data",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-security-merchant-data",
       "level": 3,
       "title": "Merchant-supplied authentication data",
-      "number": "10.2"
+      "number": "11.2"
     },
     {
       "id": "sctn-security-user-activation-requirement",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-security-user-activation-requirement",
       "level": 3,
       "title": "Lack of user activation requirement",
-      "number": "10.3"
+      "number": "11.3"
     },
     {
       "id": "sctn-privacy-considerations",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-privacy-considerations",
       "level": 2,
-      "title": "11. Privacy Considerations"
+      "title": "12. Privacy Considerations"
     },
     {
       "id": "sctn-privacy-probing-credential-ids",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-privacy-probing-credential-ids",
       "level": 3,
       "title": "Probing for credential ids",
-      "number": "11.1"
+      "number": "12.1"
     },
     {
       "id": "sctn-privacy-joining-payment-instruments",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-privacy-joining-payment-instruments",
       "level": 3,
       "title": "Joining different payment instruments",
-      "number": "11.2"
+      "number": "12.2"
     },
     {
       "id": "sctn-privacy-credential-id-tracking-vector",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-privacy-credential-id-tracking-vector",
       "level": 3,
       "title": "Credential ID(s) as a tracking vector",
-      "number": "11.3"
+      "number": "12.3"
     },
     {
       "id": "sctn-fingerprinting-via-is-secure-payment-confirmation-available",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-fingerprinting-via-is-secure-payment-confirmation-available",
       "level": 3,
       "title": "Fingerprinting via securePaymentConfirmationAvailability",
-      "number": "11.4"
+      "number": "12.4"
     },
     {
       "id": "sctn-user-opt-out",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-user-opt-out",
       "level": 3,
       "title": "User opt out",
-      "number": "11.5"
+      "number": "12.5"
     },
     {
       "id": "sctn-accessibility-considerations",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-accessibility-considerations",
       "level": 2,
-      "title": "12. Accessibility Considerations"
+      "title": "13. Accessibility Considerations"
     },
     {
       "id": "sctn-i18n-considerations",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-i18n-considerations",
       "level": 2,
-      "title": "13. Internationalization Considerations"
+      "title": "14. Internationalization Considerations"
     },
     {
       "id": "sctn-iana-considerations",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-iana-considerations",
       "level": 2,
-      "title": "14. IANA Considerations"
+      "title": "15. IANA Considerations"
     },
     {
       "id": "w3c-conformance",

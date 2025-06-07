@@ -9,27 +9,32 @@
     {
       "name": ":is()",
       "prose": "The matches-any pseudo-class, :is(), is a functional pseudo-class taking a <forgiving-selector-list> as its sole argument.",
-      "href": "https://www.w3.org/TR/selectors-4/#matches-pseudo"
+      "href": "https://www.w3.org/TR/selectors-4/#matches-pseudo",
+      "value": ":is()"
     },
     {
       "name": ":matches()",
       "prose": "As previous drafts of this specification used the name :matches() for this pseudo-class, UAs may additionally implement this obsolete name as a legacy selector alias for :is() if needed for backwards-compatibility.",
-      "href": "https://www.w3.org/TR/selectors-4/#selectordef-matches"
+      "href": "https://www.w3.org/TR/selectors-4/#selectordef-matches",
+      "value": ":matches()"
     },
     {
       "name": ":not()",
       "prose": "The negation pseudo-class, :not(), is a functional pseudo-class taking a selector list as an argument. It represents an element that is not represented by its argument.",
-      "href": "https://www.w3.org/TR/selectors-4/#negation-pseudo"
+      "href": "https://www.w3.org/TR/selectors-4/#negation-pseudo",
+      "value": ":not()"
     },
     {
       "name": ":where()",
       "prose": "The Specificity-adjustment pseudo-class, :where(), is a functional pseudo-class with the same syntax and functionality as :is(). Unlike :is(), neither the :where() pseudo-class, nor any of its arguments, contribute to the specificity of the selector—its specificity is always zero.",
-      "href": "https://www.w3.org/TR/selectors-4/#where-pseudo"
+      "href": "https://www.w3.org/TR/selectors-4/#where-pseudo",
+      "value": ":where()"
     },
     {
       "name": ":has()",
       "prose": "The relational pseudo-class, :has(), is a functional pseudo-class taking a <forgiving-relative-selector-list> as an argument. It represents an element if any of the relative selectors would match at least one element when anchored against this element.",
-      "href": "https://www.w3.org/TR/selectors-4/#has-pseudo"
+      "href": "https://www.w3.org/TR/selectors-4/#has-pseudo",
+      "value": ":has()"
     },
     {
       "name": ":defined",
@@ -40,12 +45,14 @@
     {
       "name": ":dir()",
       "prose": "The :dir() pseudo-class allows the author to write selectors that represent an element based on its directionality as determined by the document language. For example, [HTML5] defines how to determine the directionality of an element, based on a combination of the dir attribute, the surrounding text, and other factors. As another example, the its:dir and dirRule element of the Internationalization Tag Set [ITS20] are able to define the directionality of an element in [XML10].",
-      "href": "https://www.w3.org/TR/selectors-4/#dir-pseudo"
+      "href": "https://www.w3.org/TR/selectors-4/#dir-pseudo",
+      "value": ":dir()"
     },
     {
       "name": ":lang()",
       "prose": "If the document language specifies how the (human) content language of an element is determined, it is possible to write selectors that represent an element based on its content language. The :lang() pseudo-class, which accepts a comma-separated list of one or more language ranges, represents an element whose content language is one of the languages listed in its argument. Each language range in :lang() must be a valid CSS <ident> or <string>. (Thus language ranges containing asterisks, for example, must be either correctly escaped or quoted as strings, e.g. :lang(\\*-Latn) or :lang(\"*-Latn\").)",
-      "href": "https://www.w3.org/TR/selectors-4/#lang-pseudo"
+      "href": "https://www.w3.org/TR/selectors-4/#lang-pseudo",
+      "value": ":lang()"
     },
     {
       "name": ":any-link",
@@ -128,7 +135,8 @@
     {
       "name": ":current()",
       "prose": "Its alternate form :current(), like :is(), takes a list of compound selectors as its argument: it represents the :current element that matches the argument or, if that does not match, the innermost ancestor of the :current element that does. (If neither the :current element nor its ancestors match the argument, then the selector does not represent anything.)",
-      "href": "https://www.w3.org/TR/selectors-4/#selectordef-current"
+      "href": "https://www.w3.org/TR/selectors-4/#selectordef-current",
+      "value": ":current()"
     },
     {
       "name": ":past",
@@ -394,25 +402,25 @@
       "name": ">",
       "prose": "A child combinator describes a childhood relationship between two elements. A child combinator is made of the \"greater-than sign\" (U+003E, >) code point and separates two compound selectors.",
       "href": "https://www.w3.org/TR/selectors-4/#selectordef-child",
-      "value": ">"
+      "value": "'>'"
     },
     {
       "name": "+",
       "prose": "The next-sibling combinator is made of the “plus sign” (U+002B, +) code point that separates two compound selectors. The elements represented by the two compound selectors share the same parent in the document tree and the element represented by the first compound selector immediately precedes the element represented by the second one. Non-element nodes (e.g. text between elements) are ignored when considering the adjacency of elements.",
       "href": "https://www.w3.org/TR/selectors-4/#selectordef-adjacent",
-      "value": "+"
+      "value": "'+'"
     },
     {
       "name": "~",
       "prose": "The subsequent-sibling combinator is made of the \"tilde\" (U+007E, ~) code point that separates two compound selectors. The elements represented by the two compound selectors share the same parent in the document tree and the element represented by the first compound selector precedes (not necessarily immediately) the element represented by the second one.",
       "href": "https://www.w3.org/TR/selectors-4/#selectordef-sibling",
-      "value": "~"
+      "value": "'~'"
     },
     {
       "name": "||",
       "prose": "The column combinator, which consists of two pipes (||) represents the relationship of a column element to a cell element belonging to the column it represents. Column membership is determined based on the semantics of the document language only: whether and how the elements are presented is not considered. If a cell element belongs to more than one column, it is represented by a selector indicating membership in any of those columns.",
       "href": "https://www.w3.org/TR/selectors-4/#selectordef-column",
-      "value": "||"
+      "value": "'|' '|'"
     },
     {
       "name": ":nth-col()",
