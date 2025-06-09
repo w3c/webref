@@ -479,20 +479,77 @@
       "definedIn": "prose"
     },
     {
-      "id": "validate",
-      "href": "https://dom.spec.whatwg.org/#validate",
+      "id": "valid-namespace-prefix",
+      "href": "https://dom.spec.whatwg.org/#valid-namespace-prefix",
       "linkingText": [
-        "validate"
+        "valid namespace prefix"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "namespaces",
         "href": "https://dom.spec.whatwg.org/#namespaces",
-        "title": "Namespaces",
+        "title": "Name validation",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valid-attribute-local-name",
+      "href": "https://dom.spec.whatwg.org/#valid-attribute-local-name",
+      "linkingText": [
+        "valid attribute local name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "namespaces",
+        "href": "https://dom.spec.whatwg.org/#namespaces",
+        "title": "Name validation",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valid-element-local-name",
+      "href": "https://dom.spec.whatwg.org/#valid-element-local-name",
+      "linkingText": [
+        "valid element local name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "namespaces",
+        "href": "https://dom.spec.whatwg.org/#namespaces",
+        "title": "Name validation",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valid-doctype-name",
+      "href": "https://dom.spec.whatwg.org/#valid-doctype-name",
+      "linkingText": [
+        "valid doctype name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "namespaces",
+        "href": "https://dom.spec.whatwg.org/#namespaces",
+        "title": "Name validation",
         "number": "1.4"
       },
       "definedIn": "prose"
@@ -506,12 +563,12 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "namespaces",
         "href": "https://dom.spec.whatwg.org/#namespaces",
-        "title": "Namespaces",
+        "title": "Name validation",
         "number": "1.4"
       },
       "definedIn": "prose"
@@ -9930,15 +9987,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-domimplementation-createdocumenttype-qualifiedname-publicid-systemid-qualifiedname",
-      "href": "https://dom.spec.whatwg.org/#dom-domimplementation-createdocumenttype-qualifiedname-publicid-systemid-qualifiedname",
+      "id": "dom-domimplementation-createdocumenttype-name-publicid-systemid-name",
+      "href": "https://dom.spec.whatwg.org/#dom-domimplementation-createdocumenttype-name-publicid-systemid-name",
       "linkingText": [
-        "qualifiedName"
+        "name"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "DOMImplementation/createDocumentType(qualifiedName, publicId, systemId)"
+        "DOMImplementation/createDocumentType(name, publicId, systemId)"
       ],
       "access": "public",
       "informative": false,
@@ -9951,15 +10008,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-domimplementation-createdocumenttype-qualifiedname-publicid-systemid-publicid",
-      "href": "https://dom.spec.whatwg.org/#dom-domimplementation-createdocumenttype-qualifiedname-publicid-systemid-publicid",
+      "id": "dom-domimplementation-createdocumenttype-name-publicid-systemid-publicid",
+      "href": "https://dom.spec.whatwg.org/#dom-domimplementation-createdocumenttype-name-publicid-systemid-publicid",
       "linkingText": [
         "publicId"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "DOMImplementation/createDocumentType(qualifiedName, publicId, systemId)"
+        "DOMImplementation/createDocumentType(name, publicId, systemId)"
       ],
       "access": "public",
       "informative": false,
@@ -9972,15 +10029,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-domimplementation-createdocumenttype-qualifiedname-publicid-systemid-systemid",
-      "href": "https://dom.spec.whatwg.org/#dom-domimplementation-createdocumenttype-qualifiedname-publicid-systemid-systemid",
+      "id": "dom-domimplementation-createdocumenttype-name-publicid-systemid-systemid",
+      "href": "https://dom.spec.whatwg.org/#dom-domimplementation-createdocumenttype-name-publicid-systemid-systemid",
       "linkingText": [
         "systemId"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "DOMImplementation/createDocumentType(qualifiedName, publicId, systemId)"
+        "DOMImplementation/createDocumentType(name, publicId, systemId)"
       ],
       "access": "public",
       "informative": false,
@@ -10084,7 +10141,7 @@
       "id": "dom-domimplementation-createdocumenttype",
       "href": "https://dom.spec.whatwg.org/#dom-domimplementation-createdocumenttype",
       "linkingText": [
-        "createDocumentType(qualifiedName, publicId, systemId)"
+        "createDocumentType(name, publicId, systemId)"
       ],
       "localLinkingText": [],
       "type": "method",
