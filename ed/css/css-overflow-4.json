@@ -386,7 +386,7 @@
         },
         {
           "name": "collapse",
-          "prose": "If the box is a block container, then it must establish an independent formatting context that also becomes a line-clamp container. This causes all content after the clamp point to be visually hidden, and to not be taken into account for the box’s automatic block size. This keyword has no effect on multicol containers.",
+          "prose": "If the box is a block container, then it must establish an independent formatting context that also becomes a line-clamp container. This causes all content after the clamp point to be visually hidden, and to not be taken into account for the box’s automatic block size. If the box is a multicol container, the behavior is the same as 'continue/auto'.",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue-collapse",
           "type": "value",
           "value": "collapse"
