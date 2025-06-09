@@ -6,7 +6,7 @@
       "title": "DOM Standard",
       "url": "https://dom.spec.whatwg.org/"
     },
-    "fragment": "[Exposed=Window]\ninterface DOMImplementation {\n  [NewObject] DocumentType createDocumentType(DOMString qualifiedName, DOMString publicId, DOMString systemId);\n  [NewObject] XMLDocument createDocument(DOMString? namespace, [LegacyNullToEmptyString] DOMString qualifiedName, optional DocumentType? doctype = null);\n  [NewObject] Document createHTMLDocument(optional DOMString title);\n\n  boolean hasFeature(); // useless; always returns true\n};",
+    "fragment": "[Exposed=Window]\ninterface DOMImplementation {\n  [NewObject] DocumentType createDocumentType(DOMString name, DOMString publicId, DOMString systemId);\n  [NewObject] XMLDocument createDocument(DOMString? namespace, [LegacyNullToEmptyString] DOMString qualifiedName, optional DocumentType? doctype = null);\n  [NewObject] Document createHTMLDocument(optional DOMString title);\n\n  boolean hasFeature(); // useless; always returns true\n};",
     "href": "https://dom.spec.whatwg.org/#domimplementation"
   },
   "extended": [],
