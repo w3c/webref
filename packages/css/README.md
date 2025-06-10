@@ -30,6 +30,9 @@ const { definitionSyntax } = require('css-tree');
 
 const { properties } = await css.listAll();
 for (const property of properties) {
+  if (!property.value) {
+    continue;
+  }
   const ast = definitionSyntax.parse(property.value);
   // do something with the abstract syntax tree
 }
