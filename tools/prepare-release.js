@@ -249,7 +249,7 @@ ${diff.substring(0, 60000)}`;
   const packageFilename = path.resolve(scriptPath, '..', 'packages', type, 'package.json');
   const packageFile = await loadJSON(packageFilename);
   const fullVersion = packageFile.version;
-  const versionTokens = version.match(/^([\d\.]+)(-.+)?$/);
+  const versionTokens = fullVersion.match(/^([\d\.]+)(-.+)?$/);
   const version = versionTokens[1];
   const alpha = versionTokens[2] ?? '';
   const bumpedVersion = version
