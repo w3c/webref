@@ -248,11 +248,14 @@ ${diff.substring(0, 60000)}`;
   console.log("Extract and bump version number");
   const packageFilename = path.resolve(scriptPath, '..', 'packages', type, 'package.json');
   const packageFile = await loadJSON(packageFilename);
-  const version = packageFile.version;
+  const fullVersion = packageFile.version;
+  const versionTokens = version.match(/^([\d\.]+)(-.+)?$/);
+  const version = versionTokens[1];
+  const alpha = versionTokens[2] ?? '';
   const bumpedVersion = version
     .split(".")
     .map((nb, idx) => parseInt(nb, 10) + ((idx === 2) ? 1 : 0))
-    .join(".");
+    .join(".") + alpha;
   packageFile.version = bumpedVersion;
   const bumpedPackageFileContents = btoa(JSON.stringify(packageFile, null, 2));
   console.log(`- Version to release: ${version}`);
