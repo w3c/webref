@@ -78,7 +78,7 @@ async function computeDiff(type) {
   }
 
   // Extract released version (will be used in the body of the pre-release PR)
-  latestReleasedVersion = (await loadJSON(path.join(tmpFolder, "node_modules", "@webref", type, "package.json"))).version;
+  latestReleasedVersion = (await loadJSON(path.join(tmpFolder, "node_modules", "@webref", packageName, "package.json"))).version;
 
   // Diff does not take the package.json file into account because "npm install"
   // adds properties that start with "_" to that file which do not exist in the
@@ -88,7 +88,7 @@ async function computeDiff(type) {
   // code to 0 to avoid the exception.
   // Note diff can be very large when the structure of all extracts are changed,
   // hence the need to enlarge the size of the stdout/stderr buffer.
-  const installedFiles = path.join(tmpFolder, "node_modules", "@webref", type);
+  const installedFiles = path.join(tmpFolder, "node_modules", "@webref", packageName);
   let diff = execSync(
     `diff ${installedFiles} packages/${type} --ignore-trailing-space --exclude=package.json --exclude=README.md --exclude=CHANGELOG.md --unified=3 || echo -n`,
     { encoding: "utf8", maxBuffer: 100 * 1024 * 1024 });
@@ -248,11 +248,11 @@ ${diff.substring(0, 60000)}`;
   console.log("Extract and bump version number");
   const packageFilename = path.resolve(scriptPath, '..', 'packages', type, 'package.json');
   const packageFile = await loadJSON(packageFilename);
-  const fullVersion = packageFile.version;
-  const versionTokens = fullVersion.match(/^([\d\.]+)(-.+)?$/);
-  const version = versionTokens[1];
+  const version = packageFile.version;
+  const versionTokens = version.match(/^([\d\.]+)(-.+)?$/);
+  const versionNoAlpha = versionTokens[1];
   const alpha = versionTokens[2] ?? '';
-  const bumpedVersion = version
+  const bumpedVersion = versionNoAlpha
     .split(".")
     .map((nb, idx) => parseInt(nb, 10) + ((idx === 2) ? 1 : 0))
     .join(".") + alpha;
@@ -263,7 +263,7 @@ ${diff.substring(0, 60000)}`;
 
   console.log();
   console.log("Prepare pre-release PR title and body");
-  const title = `📦 Release @webref/${type}@${version}`;
+  const title = `📦 Release @webref/${packageName}@${version}`;
   const body = `
 **⚠ NEVER add commits to this pull request.**
 
