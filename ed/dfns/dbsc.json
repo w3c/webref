@@ -188,10 +188,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "device-bound-session-session-key",
-      "href": "https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-key",
+      "id": "device-bound-session-session-key-pair",
+      "href": "https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-key-pair",
       "linkingText": [
-        "session key"
+        "session key pair"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -495,6 +495,111 @@
       "definedIn": "prose"
     },
     {
+      "id": "algorithms-determine-if-a-url-is-in-scope",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algorithms-determine-if-a-url-is-in-scope",
+      "linkingText": [
+        "determine if a URL is in scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "algorithms"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algo-url-in-scope",
+        "href": "https://w3c.github.io/webappsec-dbsc/#algo-url-in-scope",
+        "title": "Identify if a URL is in scope of a session",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "algorithms-determine-if-a-request-is-allowed-to-trigger-refresh",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algorithms-determine-if-a-request-is-allowed-to-trigger-refresh",
+      "linkingText": [
+        "determine if a request is allowed to trigger refresh"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "algorithms"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algo-request-allows-refresh",
+        "href": "https://w3c.github.io/webappsec-dbsc/#algo-request-allows-refresh",
+        "title": "Identify if a request is allowed to refresh",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "algorithms-determine-if-a-host-matches-a-pattern",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algorithms-determine-if-a-host-matches-a-pattern",
+      "linkingText": [
+        "determine if a host matches a pattern"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "algorithms"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algo-host-pattern-matches",
+        "href": "https://w3c.github.io/webappsec-dbsc/#algo-host-pattern-matches",
+        "title": "Identify if a host matches a pattern",
+        "number": "8.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "algorithms-identify-a-session-needing-refresh",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algorithms-identify-a-session-needing-refresh",
+      "linkingText": [
+        "identify a session needing refresh"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "algorithms"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algo-identify-session-needing-refresh",
+        "href": "https://w3c.github.io/webappsec-dbsc/#algo-identify-session-needing-refresh",
+        "title": "Identify session needing refresh",
+        "number": "8.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "algorithms-identify-if-a-request-is-missing-a-session-credential",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algorithms-identify-if-a-request-is-missing-a-session-credential",
+      "linkingText": [
+        "identify if a request is missing a session credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "algorithms"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algo-identify-if-missing-session-credential",
+        "href": "https://w3c.github.io/webappsec-dbsc/#algo-identify-if-missing-session-credential",
+        "title": "Identify if missing session credential",
+        "number": "8.6"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "algorithms-process-a-challenge",
       "href": "https://w3c.github.io/webappsec-dbsc/#algorithms-process-a-challenge",
       "linkingText": [
@@ -540,7 +645,7 @@
       "id": "create-session",
       "href": "https://w3c.github.io/webappsec-dbsc/#create-session",
       "linkingText": [
-        "create a new session"
+        "create a session"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -556,10 +661,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "create-session-key",
-      "href": "https://w3c.github.io/webappsec-dbsc/#create-session-key",
+      "id": "process-session-registration",
+      "href": "https://w3c.github.io/webappsec-dbsc/#process-session-registration",
       "linkingText": [
-        "create a session key"
+        "process a session registration"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -567,10 +672,29 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "algo-create-session-key",
-        "href": "https://w3c.github.io/webappsec-dbsc/#algo-create-session-key",
-        "title": "Create session key",
+        "id": "algo-process-session-registration",
+        "href": "https://w3c.github.io/webappsec-dbsc/#algo-process-session-registration",
+        "title": "Process session registration",
         "number": "8.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-session-key-pair",
+      "href": "https://w3c.github.io/webappsec-dbsc/#create-session-key-pair",
+      "linkingText": [
+        "create a session key pair"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algo-create-session-key-pair",
+        "href": "https://w3c.github.io/webappsec-dbsc/#algo-create-session-key-pair",
+        "title": "Create session key pair",
+        "number": "8.11"
       },
       "definedIn": "prose"
     },
@@ -589,7 +713,7 @@
         "id": "algo-add-debug-header",
         "href": "https://w3c.github.io/webappsec-dbsc/#algo-add-debug-header",
         "title": "Add debug header",
-        "number": "8.11"
+        "number": "8.12"
       },
       "definedIn": "prose"
     },
@@ -597,7 +721,7 @@
       "id": "secure-session-registration-header",
       "href": "https://w3c.github.io/webappsec-dbsc/#secure-session-registration-header",
       "linkingText": [
-        "`Secure-Session-Registration`"
+        "Secure-Session-Registration"
       ],
       "localLinkingText": [],
       "type": "http-header",
@@ -616,7 +740,7 @@
       "id": "secure-session-challenge-header",
       "href": "https://w3c.github.io/webappsec-dbsc/#secure-session-challenge-header",
       "linkingText": [
-        "`Secure-Session-Challenge`"
+        "Secure-Session-Challenge"
       ],
       "localLinkingText": [],
       "type": "http-header",
@@ -635,7 +759,7 @@
       "id": "secure-session-response-header",
       "href": "https://w3c.github.io/webappsec-dbsc/#secure-session-response-header",
       "linkingText": [
-        "`Secure-Session-Response`"
+        "Secure-Session-Response"
       ],
       "localLinkingText": [],
       "type": "http-header",
@@ -654,7 +778,7 @@
       "id": "sec-secure-session-id-header",
       "href": "https://w3c.github.io/webappsec-dbsc/#sec-secure-session-id-header",
       "linkingText": [
-        "`Sec-Secure-Session-Id`"
+        "Sec-Secure-Session-Id"
       ],
       "localLinkingText": [],
       "type": "http-header",
@@ -673,7 +797,7 @@
       "id": "secure-session-skipped-header",
       "href": "https://w3c.github.io/webappsec-dbsc/#secure-session-skipped-header",
       "linkingText": [
-        "`Secure-Session-Skipped`"
+        "Secure-Session-Skipped"
       ],
       "localLinkingText": [],
       "type": "http-header",
