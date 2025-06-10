@@ -192,9 +192,9 @@
       "id": "section-Syntax-ID-xml-base",
       "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-ID-xml-base",
       "level": 3,
-      "title": "Abbreviating URIs: rdf:ID and xml:base",
+      "title": "Abbreviating IRIs: rdf:ID and xml:base",
       "alternateIds": [
-        "x2-15-abbreviating-uris-rdf-id-and-xml-base"
+        "x2-15-abbreviating-iris-rdf-id-and-xml-base"
       ],
       "number": "2.15"
     },
@@ -227,6 +227,26 @@
         "x2-18-reifying-statements-rdf-id"
       ],
       "number": "2.18"
+    },
+    {
+      "id": "section-Syntax-triple-terms",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-triple-terms",
+      "level": 3,
+      "title": "Triple Terms: rdf:parseType=\"Triple\"",
+      "alternateIds": [
+        "x2-19-triple-terms-rdf-parsetype-triple"
+      ],
+      "number": "2.19"
+    },
+    {
+      "id": "section-Syntax-annotations",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-annotations",
+      "level": 3,
+      "title": "Annotating Triples: rdf:annotation or rdf:annotationNodeID",
+      "alternateIds": [
+        "x2-20-annotating-triples-rdf-annotation-or-rdf-annotationnodeid"
+      ],
+      "number": "2.20"
     },
     {
       "id": "conformance",
@@ -299,8 +319,8 @@
       "number": "4.2"
     },
     {
-      "id": "section-baseURIs",
-      "href": "https://www.w3.org/TR/rdf12-xml/#section-baseURIs",
+      "id": "section-baseIRIs",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-baseIRIs",
       "level": 3,
       "title": "Resolving IRIs",
       "alternateIds": [
@@ -399,14 +419,24 @@
       "number": "5.1.6"
     },
     {
+      "id": "section-triple-term-node",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-triple-term-node",
+      "level": 4,
+      "title": "Triple Term Event",
+      "alternateIds": [
+        "x5-1-7-triple-term-event"
+      ],
+      "number": "5.1.7"
+    },
+    {
       "id": "section-blank-nodeid-event",
       "href": "https://www.w3.org/TR/rdf12-xml/#section-blank-nodeid-event",
       "level": 4,
       "title": "Blank Node Identifier Event",
       "alternateIds": [
-        "x5-1-7-blank-node-identifier-event"
+        "x5-1-8-blank-node-identifier-event"
       ],
-      "number": "5.1.7"
+      "number": "5.1.8"
     },
     {
       "id": "section-literal-node",
@@ -414,9 +444,9 @@
       "level": 4,
       "title": "Literal Without Datatype Event",
       "alternateIds": [
-        "x5-1-8-literal-without-datatype-event"
+        "x5-1-9-literal-without-datatype-event"
       ],
-      "number": "5.1.8"
+      "number": "5.1.9"
     },
     {
       "id": "section-typed-literal-node",
@@ -424,9 +454,9 @@
       "level": 4,
       "title": "Typed Literal Event",
       "alternateIds": [
-        "x5-1-9-typed-literal-event"
+        "x5-1-10-typed-literal-event"
       ],
-      "number": "5.1.9"
+      "number": "5.1.10"
     },
     {
       "id": "section-Infoset-Mapping",
@@ -552,9 +582,9 @@
       "id": "nodeElementURIs",
       "href": "https://www.w3.org/TR/rdf12-xml/#nodeElementURIs",
       "level": 4,
-      "title": "Production nodeElementURIs",
+      "title": "Production nodeElementIRIs",
       "alternateIds": [
-        "x6-2-5-production-nodeelementuris"
+        "x6-2-5-production-nodeelementiris"
       ],
       "number": "6.2.5"
     },
@@ -572,9 +602,9 @@
       "id": "propertyAttributeURIs",
       "href": "https://www.w3.org/TR/rdf12-xml/#propertyAttributeURIs",
       "level": 4,
-      "title": "Production propertyAttributeURIs",
+      "title": "Production propertyAttributeIRIs",
       "alternateIds": [
-        "x6-2-7-production-propertyattributeuris"
+        "x6-2-7-production-propertyattributeiris"
       ],
       "number": "6.2.7"
     },
@@ -689,14 +719,24 @@
       "number": "6.2.18"
     },
     {
+      "id": "parseTypeTriplePropertyElt",
+      "href": "https://www.w3.org/TR/rdf12-xml/#parseTypeTriplePropertyElt",
+      "level": 4,
+      "title": "Production parseTypeTriplePropertyElt",
+      "alternateIds": [
+        "x6-2-19-production-parsetypetriplepropertyelt"
+      ],
+      "number": "6.2.19"
+    },
+    {
       "id": "parseTypeCollectionPropertyElt",
       "href": "https://www.w3.org/TR/rdf12-xml/#parseTypeCollectionPropertyElt",
       "level": 4,
       "title": "Production parseTypeCollectionPropertyElt",
       "alternateIds": [
-        "x6-2-19-production-parsetypecollectionpropertyelt"
+        "x6-2-20-production-parsetypecollectionpropertyelt"
       ],
-      "number": "6.2.19"
+      "number": "6.2.20"
     },
     {
       "id": "parseTypeOtherPropertyElt",
@@ -704,9 +744,9 @@
       "level": 4,
       "title": "Production parseTypeOtherPropertyElt",
       "alternateIds": [
-        "x6-2-20-production-parsetypeotherpropertyelt"
+        "x6-2-21-production-parsetypeotherpropertyelt"
       ],
-      "number": "6.2.20"
+      "number": "6.2.21"
     },
     {
       "id": "emptyPropertyElt",
@@ -714,9 +754,9 @@
       "level": 4,
       "title": "Production emptyPropertyElt",
       "alternateIds": [
-        "x6-2-21-production-emptypropertyelt"
+        "x6-2-22-production-emptypropertyelt"
       ],
-      "number": "6.2.21"
+      "number": "6.2.22"
     },
     {
       "id": "idAttr",
@@ -726,7 +766,7 @@
       "alternateIds": [
         "idAboutAttr"
       ],
-      "number": "6.2.22"
+      "number": "6.2.23"
     },
     {
       "id": "nodeIdAttr",
@@ -734,9 +774,9 @@
       "level": 4,
       "title": "Production nodeIdAttr",
       "alternateIds": [
-        "x6-2-23-production-nodeidattr"
+        "x6-2-24-production-nodeidattr"
       ],
-      "number": "6.2.23"
+      "number": "6.2.24"
     },
     {
       "id": "aboutAttr",
@@ -744,9 +784,29 @@
       "level": 4,
       "title": "Production aboutAttr",
       "alternateIds": [
-        "x6-2-24-production-aboutattr"
+        "x6-2-25-production-aboutattr"
       ],
-      "number": "6.2.24"
+      "number": "6.2.25"
+    },
+    {
+      "id": "annotationAttr",
+      "href": "https://www.w3.org/TR/rdf12-xml/#annotationAttr",
+      "level": 4,
+      "title": "Production annotationAttr",
+      "alternateIds": [
+        "x6-2-26-production-annotationattr"
+      ],
+      "number": "6.2.26"
+    },
+    {
+      "id": "annotationNodeIDAttr",
+      "href": "https://www.w3.org/TR/rdf12-xml/#annotationNodeIDAttr",
+      "level": 4,
+      "title": "Production annotationNodeIDAttr",
+      "alternateIds": [
+        "x6-2-27-production-annotationnodeidattr"
+      ],
+      "number": "6.2.27"
     },
     {
       "id": "propertyAttr",
@@ -756,7 +816,7 @@
       "alternateIds": [
         "propAttr"
       ],
-      "number": "6.2.25"
+      "number": "6.2.28"
     },
     {
       "id": "resourceAttr",
@@ -764,9 +824,9 @@
       "level": 4,
       "title": "Production resourceAttr",
       "alternateIds": [
-        "x6-2-26-production-resourceattr"
+        "x6-2-29-production-resourceattr"
       ],
-      "number": "6.2.26"
+      "number": "6.2.29"
     },
     {
       "id": "datatypeAttr",
@@ -774,9 +834,9 @@
       "level": 4,
       "title": "Production datatypeAttr",
       "alternateIds": [
-        "x6-2-27-production-datatypeattr"
+        "x6-2-30-production-datatypeattr"
       ],
-      "number": "6.2.27"
+      "number": "6.2.30"
     },
     {
       "id": "parseLiteral",
@@ -784,9 +844,9 @@
       "level": 4,
       "title": "Production parseLiteral",
       "alternateIds": [
-        "x6-2-28-production-parseliteral"
+        "x6-2-31-production-parseliteral"
       ],
-      "number": "6.2.28"
+      "number": "6.2.31"
     },
     {
       "id": "parseResource",
@@ -794,9 +854,19 @@
       "level": 4,
       "title": "Production parseResource",
       "alternateIds": [
-        "x6-2-29-production-parseresource"
+        "x6-2-32-production-parseresource"
       ],
-      "number": "6.2.29"
+      "number": "6.2.32"
+    },
+    {
+      "id": "parseTriple",
+      "href": "https://www.w3.org/TR/rdf12-xml/#parseTriple",
+      "level": 4,
+      "title": "Production parseTriple",
+      "alternateIds": [
+        "x6-2-33-production-parsetriple"
+      ],
+      "number": "6.2.33"
     },
     {
       "id": "parseCollection",
@@ -804,9 +874,9 @@
       "level": 4,
       "title": "Production parseCollection",
       "alternateIds": [
-        "x6-2-30-production-parsecollection"
+        "x6-2-34-production-parsecollection"
       ],
-      "number": "6.2.30"
+      "number": "6.2.34"
     },
     {
       "id": "parseOther",
@@ -814,9 +884,9 @@
       "level": 4,
       "title": "Production parseOther",
       "alternateIds": [
-        "x6-2-31-production-parseother"
+        "x6-2-35-production-parseother"
       ],
-      "number": "6.2.31"
+      "number": "6.2.35"
     },
     {
       "id": "URI-reference",
@@ -824,9 +894,9 @@
       "level": 4,
       "title": "Production IRI",
       "alternateIds": [
-        "x6-2-32-production-iri"
+        "x6-2-36-production-iri"
       ],
-      "number": "6.2.32"
+      "number": "6.2.36"
     },
     {
       "id": "literal",
@@ -834,9 +904,9 @@
       "level": 4,
       "title": "Production literal",
       "alternateIds": [
-        "x6-2-33-production-literal"
+        "x6-2-37-production-literal"
       ],
-      "number": "6.2.33"
+      "number": "6.2.37"
     },
     {
       "id": "rdf-id",
@@ -844,9 +914,9 @@
       "level": 4,
       "title": "Production rdf-id",
       "alternateIds": [
-        "x6-2-34-production-rdf-id"
+        "x6-2-38-production-rdf-id"
       ],
-      "number": "6.2.34"
+      "number": "6.2.38"
     },
     {
       "id": "section-Reification",

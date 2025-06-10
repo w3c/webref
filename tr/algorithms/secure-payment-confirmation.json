@@ -237,7 +237,7 @@
             },
             {
               "case": "The user wishes to opt out of the process for the given relying party,",
-              "html": "<p>Reject the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest-show\" id=\"ref-for-dom-paymentrequest-show④\">PaymentRequest.show()</a></code> with an\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#optouterror\" id=\"ref-for-optouterror\">OptOutError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>. See <a href=\"https://www.w3.org/TR/secure-payment-confirmation/#sctn-user-opt-out\">§ 12.5 User opt out</a>.</p>"
+              "html": "<p>Reject the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest-show\" id=\"ref-for-dom-paymentrequest-show④\">PaymentRequest.show()</a></code> with an\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#optouterror\" id=\"ref-for-optouterror\">OptOutError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>. See <a href=\"https://www.w3.org/TR/secure-payment-confirmation/#sctn-user-opt-out\">§ 12.6 User opt out</a>.</p>"
             }
           ]
         }
@@ -592,6 +592,18 @@
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success\">success</a> with data <code>null</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "However, this attack is not feasible:",
+      "rationale": "reject",
+      "steps": [
+        {
+          "html": "<p>When the attacker is substituting the BBK: The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party④⑦\">Relying Party</a> will detect\nan incorrect signature when verifying the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dictdef-collectedclientdata\" id=\"ref-for-dictdef-collectedclientdata①④\">CollectedClientData</a></code> (that\ncontains the BBK public key) using the passkey public key. The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party④⑧\">Relying Party</a> should reject this transaction and treat this BBK public key as\nuntrusted.</p>"
+        },
+        {
+          "html": "<p>When the attacker attempts to impersonate the user: The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party④⑨\">Relying Party</a> will detect an incorrect signature when verifying using the passkey public\nkey. The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party⑤⓪\">Relying Party</a> should continue to treat this BBK public key as\nuntrusted.</p>"
         }
       ]
     }
