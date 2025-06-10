@@ -60,7 +60,7 @@
       "rationale": "set",
       "steps": [
         {
-          "html": "<p>Set <var>hexSerialNumber</var> to the <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/openscreen-network/#biblio-rfc4648\" title=\"The Base16, Base32, and Base64 Data Encodings\">base64</a> encoded <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/openscreen-network/#certificate-serial-number\" id=\"ref-for-certificate-serial-number①\">certificate serial number</a>.</p>"
+          "html": "<p>Set <var>base64SerialNumber</var> to the <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/openscreen-network/#biblio-rfc4648\" title=\"The Base16, Base32, and Base64 Data Encodings\">base64</a> encoded <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/openscreen-network/#certificate-serial-number\" id=\"ref-for-certificate-serial-number①\">certificate serial number</a>.</p>"
         },
         {
           "html": "Set <var>encodedInstanceName</var> to the result of the following:",
@@ -81,7 +81,7 @@
           ]
         },
         {
-          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/openscreen-network/#agent-hostname\" id=\"ref-for-agent-hostname\">agent hostname</a> to the string <var>hexSerialNumber</var> + <code>.</code> + <var>encodedInstanceName</var> + <code>.</code> + <var>encodedDomain</var></p>"
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/openscreen-network/#agent-hostname\" id=\"ref-for-agent-hostname\">agent hostname</a> to the string <var>base64SerialNumber</var> + <code>.</code> + <var>encodedInstanceName</var> + <code>.</code> + <var>encodedDomain</var></p>"
         }
       ]
     },
