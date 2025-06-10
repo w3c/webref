@@ -169,8 +169,6 @@ async function computeDiff(type) {
  *  pinned to a major version.
  */
 async function prepareRelease(type) {
-  const packageName = type.replace(/\d+$/, '');
-
   // Compute a reasonably unique ID
   const uid = (new Date()).toISOString().replace(/[\-T:\.Z]/g, "");
 
@@ -265,7 +263,7 @@ ${diff.substring(0, 60000)}`;
 
   console.log();
   console.log("Prepare pre-release PR title and body");
-  const title = `📦 Release @webref/${packageName}@${version}`;
+  const title = `📦 Release @webref/${type}@${version}`;
   const body = `
 **⚠ NEVER add commits to this pull request.**
 
