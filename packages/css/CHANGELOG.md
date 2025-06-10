@@ -7,7 +7,7 @@ Webref adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html),
 applied to data. A new major version is released whenever a breaking change is
 made to the data structure.
 
-## v7.0.0 - 2025-06
+## v7.0.0-alpha - 2025-06-10
 
 CSS extracts are now consolidated into a single file.
 
