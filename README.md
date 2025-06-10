@@ -12,9 +12,9 @@ The `curated` branch contains **curated extracts**. Curated extracts are generat
 
 Additionally, subsets of the curated content get manually reviewed and published as **NPM [packages](https://github.com/w3c/webref/tree/main/packages)** on a weekly basis:
 - [`@webref/idl`](https://www.npmjs.com/package/@webref/idl) contains a [curated](packages/idl#guarantees) version of the [`ed/idl`](ed/idl) folder.
-- [`@webref/css`](https://www.npmjs.com/package/@webref/css) contains a [curated](packages/css#guarantees) version of the [`ed/css`](ed/css) folder.
+- [`@webref/css`](https://www.npmjs.com/package/@webref/css) contains a [consolidated and curated](packages/css#guarantees) version of the [`ed/css`](ed/css) folder.
 - [`@webref/elements`](https://www.npmjs.com/package/@webref/elements) contains a [curated](packages/elements#guarantees) version of the [`ed/elements`](ed/elements) folder.
-- [`@webref/events`](https://www.npmjs.com/package/@webref/events) contains a [curated](packages/events#guarantees) version of the [`ed/events`](ed/events) folder.
+- [`@webref/events`](https://www.npmjs.com/package/@webref/events) contains a [consolidated and curated](packages/events#guarantees) version of the [`ed/events`](ed/events) folder.
 
 **Important:** The curated extracts only contain data for specifications that are in [good standing](https://github.com/w3c/browser-specs/#standing) (to keep the number of manually-maintained patches minimal and manageable). The NPM packages only contain curated extracts of specifications that are in good standing and that [target web browsers](https://github.com/w3c/browser-specs/#categories).
 
@@ -69,6 +69,16 @@ Data curation brings the following guarantees.
 
 ### CSS extracts
 
+**Important:** Starting with `@webref/css` version 7, the package contains the consolidated `ed/css.json` file, and no longer contains CSS extracts per spec. See the [changelog](packages/css/CHANGELOG.md) for "How to upgrade" considerations.
+
+The consolidated `ed/css.json` file, released in the `@webref/css` package, comes with the following guarantees:
+
+- All syntax values (the `value` keys) can be parsed by the version of [CSSTree](https://github.com/csstree/csstree) set in `peerDependencies` in `package.json`.
+- Feature names (the `name` keys) are unique per type provided that the `for` key is also taken into account for functions and types.
+- All features have an `href` key that targets the CSS spec that defines the feature. When the feature is extended across CSS specs, this URL targets the base definition.
+
+The consolidated file is generated from curated extracts in the `ed/css` folder. These extracts, released in the `@webref/css` package until version 7, come with the following guarantees:
+
 - All values in CSS files can be parsed by the version of [CSSTree](https://github.com/csstree/csstree) used in `peerDependencies` in `package.json`.
 - No duplicate definitions of entries in CSS files provided that CSS extracts of [delta specs](https://github.com/w3c/browser-specs/#seriescomposition) are not taken into account (such extracts end with `-n.json`, where `n` is a level number). The term "entries" includes CSS properties, at-rules, selectors, types and functions. Please note that specs may still extend entries defined elsewhere (to define new values for CSS properties, or new selectors for at-rules).
 - CSS extracts contain a base definition of all CSS properties that get extended by other CSS property definitions (those for which `newValues` is set).
@@ -80,6 +90,8 @@ Data curation brings the following guarantees.
 - All elements link back to their definition in the spec.
 
 ### Events extracts
+
+The consolidated `ed/events.json` file, released in the `@webref/events` package, comes with the following guarantees:
 
 - All events have a `type` attribute that match the name of the event
 - All events have a `interface` attribute to describe the interface used by the Event. The Web IDL interface exists in the latest version of the [`@webref/idl` package](https://www.npmjs.com/package/@webref/idl) at the time the `@webref/events` package is released, and represents an actual interface (i.e. not a mixin).

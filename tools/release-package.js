@@ -43,7 +43,7 @@ async function releasePackage(prNumber) {
   }
   const type = match[1];
 
-  if (!["css", "elements", "events", "idl"].includes(type)) {
+  if (!["css", "css6", "elements", "events", "idl"].includes(type)) {
     console.log(`- Unknown package type "${type}", nothing to release`);
     return;
   }
