@@ -169,6 +169,8 @@ async function computeDiff(type) {
  *  pinned to a major version.
  */
 async function prepareRelease(type) {
+  const packageName = type.replace(/\d+$/, '');
+
   // Compute a reasonably unique ID
   const uid = (new Date()).toISOString().replace(/[\-T:\.Z]/g, "");
 
