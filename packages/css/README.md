@@ -2,7 +2,7 @@
 
 This package contains a consolidated list of CSS features defined across specs, scraped from the latest versions of web platform specifications in [webref](https://github.com/w3c/webref). Fixes are applied to ensure that [guarantees](#guarantees) hold, including the ability to parse syntaxes associated with CSS features with [CSSTree](https://github.com/csstree/csstree).
 
-**Important:** If you're migrating from version 6, see the [changelog](CHANGELOG.md) for "How to upgrade" considerations.
+**Important:** If you're migrating from version 6, see the [changelog](https://github.com/w3c/webref/blob/main/packages/css/CHANGELOG.md) for "How to upgrade" considerations.
 
 # API
 
