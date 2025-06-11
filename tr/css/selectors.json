@@ -9,32 +9,27 @@
     {
       "name": ":is()",
       "prose": "The matches-any pseudo-class, :is(), is a functional pseudo-class taking a <forgiving-selector-list> as its sole argument.",
-      "href": "https://www.w3.org/TR/selectors-4/#matches-pseudo",
-      "value": ":is()"
+      "href": "https://www.w3.org/TR/selectors-4/#matches-pseudo"
     },
     {
       "name": ":matches()",
       "prose": "As previous drafts of this specification used the name :matches() for this pseudo-class, UAs may additionally implement this obsolete name as a legacy selector alias for :is() if needed for backwards-compatibility.",
-      "href": "https://www.w3.org/TR/selectors-4/#selectordef-matches",
-      "value": ":matches()"
+      "href": "https://www.w3.org/TR/selectors-4/#selectordef-matches"
     },
     {
       "name": ":not()",
       "prose": "The negation pseudo-class, :not(), is a functional pseudo-class taking a selector list as an argument. It represents an element that is not represented by its argument.",
-      "href": "https://www.w3.org/TR/selectors-4/#negation-pseudo",
-      "value": ":not()"
+      "href": "https://www.w3.org/TR/selectors-4/#negation-pseudo"
     },
     {
       "name": ":where()",
       "prose": "The Specificity-adjustment pseudo-class, :where(), is a functional pseudo-class with the same syntax and functionality as :is(). Unlike :is(), neither the :where() pseudo-class, nor any of its arguments, contribute to the specificity of the selector—its specificity is always zero.",
-      "href": "https://www.w3.org/TR/selectors-4/#where-pseudo",
-      "value": ":where()"
+      "href": "https://www.w3.org/TR/selectors-4/#where-pseudo"
     },
     {
       "name": ":has()",
       "prose": "The relational pseudo-class, :has(), is a functional pseudo-class taking a <forgiving-relative-selector-list> as an argument. It represents an element if any of the relative selectors would match at least one element when anchored against this element.",
-      "href": "https://www.w3.org/TR/selectors-4/#has-pseudo",
-      "value": ":has()"
+      "href": "https://www.w3.org/TR/selectors-4/#has-pseudo"
     },
     {
       "name": ":defined",
@@ -45,14 +40,12 @@
     {
       "name": ":dir()",
       "prose": "The :dir() pseudo-class allows the author to write selectors that represent an element based on its directionality as determined by the document language. For example, [HTML5] defines how to determine the directionality of an element, based on a combination of the dir attribute, the surrounding text, and other factors. As another example, the its:dir and dirRule element of the Internationalization Tag Set [ITS20] are able to define the directionality of an element in [XML10].",
-      "href": "https://www.w3.org/TR/selectors-4/#dir-pseudo",
-      "value": ":dir()"
+      "href": "https://www.w3.org/TR/selectors-4/#dir-pseudo"
     },
     {
       "name": ":lang()",
       "prose": "If the document language specifies how the (human) content language of an element is determined, it is possible to write selectors that represent an element based on its content language. The :lang() pseudo-class, which accepts a comma-separated list of one or more language ranges, represents an element whose content language is one of the languages listed in its argument. Each language range in :lang() must be a valid CSS <ident> or <string>. (Thus language ranges containing asterisks, for example, must be either correctly escaped or quoted as strings, e.g. :lang(\\*-Latn) or :lang(\"*-Latn\").)",
-      "href": "https://www.w3.org/TR/selectors-4/#lang-pseudo",
-      "value": ":lang()"
+      "href": "https://www.w3.org/TR/selectors-4/#lang-pseudo"
     },
     {
       "name": ":any-link",
@@ -135,8 +128,7 @@
     {
       "name": ":current()",
       "prose": "Its alternate form :current(), like :is(), takes a list of compound selectors as its argument: it represents the :current element that matches the argument or, if that does not match, the innermost ancestor of the :current element that does. (If neither the :current element nor its ancestors match the argument, then the selector does not represent anything.)",
-      "href": "https://www.w3.org/TR/selectors-4/#selectordef-current",
-      "value": ":current()"
+      "href": "https://www.w3.org/TR/selectors-4/#selectordef-current"
     },
     {
       "name": ":past",
