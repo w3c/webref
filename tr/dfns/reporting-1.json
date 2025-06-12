@@ -630,34 +630,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "reportbody",
-      "href": "https://www.w3.org/TR/reporting-1/#reportbody",
+      "id": "dom-report-type",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-report-type",
       "linkingText": [
-        "ReportBody"
+        "type"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "interface-reporting-observer",
-        "href": "https://www.w3.org/TR/reporting-1/#interface-reporting-observer",
-        "title": "Interface ReportingObserver",
-        "number": "4.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-reportbody-tojson",
-      "href": "https://www.w3.org/TR/reporting-1/#dom-reportbody-tojson",
-      "linkingText": [
-        "toJSON()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
+      "type": "dict-member",
       "for": [
-        "ReportBody"
+        "Report"
       ],
       "access": "public",
       "informative": false,
@@ -670,13 +651,34 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-report-tojson",
-      "href": "https://www.w3.org/TR/reporting-1/#dom-report-tojson",
+      "id": "dom-report-url",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-report-url",
       "linkingText": [
-        "toJSON()"
+        "url"
       ],
       "localLinkingText": [],
-      "type": "method",
+      "type": "dict-member",
+      "for": [
+        "Report"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-reporting-observer",
+        "href": "https://www.w3.org/TR/reporting-1/#interface-reporting-observer",
+        "title": "Interface ReportingObserver",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-report-body",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-report-body",
+      "linkingText": [
+        "body"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
       "for": [
         "Report"
       ],
@@ -905,7 +907,7 @@
         "Report"
       ],
       "localLinkingText": [],
-      "type": "interface",
+      "type": "dictionary",
       "for": [],
       "access": "public",
       "informative": false,
@@ -918,58 +920,14 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-report-type",
-      "href": "https://www.w3.org/TR/reporting-1/#dom-report-type",
+      "id": "reportbody",
+      "href": "https://www.w3.org/TR/reporting-1/#reportbody",
       "linkingText": [
-        "type"
+        "ReportBody"
       ],
       "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "Report"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "interface-reporting-observer",
-        "href": "https://www.w3.org/TR/reporting-1/#interface-reporting-observer",
-        "title": "Interface ReportingObserver",
-        "number": "4.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-report-url",
-      "href": "https://www.w3.org/TR/reporting-1/#dom-report-url",
-      "linkingText": [
-        "url"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "Report"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "interface-reporting-observer",
-        "href": "https://www.w3.org/TR/reporting-1/#interface-reporting-observer",
-        "title": "Interface ReportingObserver",
-        "number": "4.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-report-body",
-      "href": "https://www.w3.org/TR/reporting-1/#dom-report-body",
-      "linkingText": [
-        "body"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "Report"
-      ],
+      "type": "dictionary",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
