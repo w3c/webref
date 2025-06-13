@@ -20,7 +20,7 @@
         "id": "terminology",
         "href": "https://www.w3.org/TR/css-shapes-1/#terminology",
         "title": "Terminology",
-        "number": "1.4"
+        "number": "1.3"
       },
       "definedIn": "prose"
     },
@@ -39,7 +39,26 @@
         "id": "terminology",
         "href": "https://www.w3.org/TR/css-shapes-1/#terminology",
         "title": "Terminology",
-        "number": "1.4"
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "direction-agnostic-size",
+      "href": "https://www.w3.org/TR/css-shapes-1/#direction-agnostic-size",
+      "linkingText": [
+        "direction-agnostic size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/css-shapes-1/#terminology",
+        "title": "Terminology",
+        "number": "1.3"
       },
       "definedIn": "prose"
     },
@@ -82,6 +101,25 @@
         "number": "3"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "typedef-basic-shape-rect",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-basic-shape-rect",
+      "linkingText": [
+        "<basic-shape-rect>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "supported-basic-shapes",
+        "href": "https://www.w3.org/TR/css-shapes-1/#supported-basic-shapes",
+        "title": "Supported Shapes",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "funcdef-basic-shape-inset",
@@ -231,14 +269,16 @@
       "definedIn": "dt"
     },
     {
-      "id": "typedef-shape-radius",
-      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-shape-radius",
+      "id": "funcdef-basic-shape-shape",
+      "href": "https://www.w3.org/TR/css-shapes-1/#funcdef-basic-shape-shape",
       "linkingText": [
-        "<shape-radius>"
+        "shape()"
       ],
       "localLinkingText": [],
-      "type": "type",
-      "for": [],
+      "type": "function",
+      "for": [
+        "<basic-shape>"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -250,48 +290,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "closest-side",
-      "href": "https://www.w3.org/TR/css-shapes-1/#closest-side",
+      "id": "typedef-shape-command",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-shape-command",
       "linkingText": [
-        "closest-side"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "supported-basic-shapes",
-        "href": "https://www.w3.org/TR/css-shapes-1/#supported-basic-shapes",
-        "title": "Supported Shapes",
-        "number": "3.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "farthest-side",
-      "href": "https://www.w3.org/TR/css-shapes-1/#farthest-side",
-      "linkingText": [
-        "farthest-side"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "supported-basic-shapes",
-        "href": "https://www.w3.org/TR/css-shapes-1/#supported-basic-shapes",
-        "title": "Supported Shapes",
-        "number": "3.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "typedef-basic-shape-rect",
-      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-basic-shape-rect",
-      "linkingText": [
-        "<basic-shape-rect>"
+        "<shape-command>"
       ],
       "localLinkingText": [],
       "type": "type",
@@ -299,12 +301,543 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "supported-basic-shapes",
-        "href": "https://www.w3.org/TR/css-shapes-1/#supported-basic-shapes",
-        "title": "Supported Shapes",
-        "number": "3.1"
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-shape-coordinate-pair",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-shape-coordinate-pair",
+      "linkingText": [
+        "<coordinate-pair>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-shape-command-end-point",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-shape-command-end-point",
+      "linkingText": [
+        "<command-end-point>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-shape-to",
+      "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-to",
+      "linkingText": [
+        "to"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "shape()",
+        "<command-end-point>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-shape-by",
+      "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-by",
+      "linkingText": [
+        "by"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "shape()",
+        "<command-end-point>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-shape-move-command",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-shape-move-command",
+      "linkingText": [
+        "<move-command>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-shape-move",
+      "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-move",
+      "linkingText": [
+        "move"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-shape-line-command",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-shape-line-command",
+      "linkingText": [
+        "<line-command>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-shape-line",
+      "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-line",
+      "linkingText": [
+        "line"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-shape-horizontal-line-command",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-shape-horizontal-line-command",
+      "linkingText": [
+        "<horizontal-line-command>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-shape-vertical-line-command",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-shape-vertical-line-command",
+      "linkingText": [
+        "<vertical-line-command>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-shape-curve-command",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-shape-curve-command",
+      "linkingText": [
+        "<curve-command>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-shape-curve",
+      "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-curve",
+      "linkingText": [
+        "curve"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-shape-smooth-command",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-shape-smooth-command",
+      "linkingText": [
+        "<smooth-command>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-shape-smooth",
+      "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-smooth",
+      "linkingText": [
+        "smooth"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-shape-control-point",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-shape-control-point",
+      "linkingText": [
+        "<control-point>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-shape-relative-control-point",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-shape-relative-control-point",
+      "linkingText": [
+        "<relative-control-point>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-shape-arc-command",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-shape-arc-command",
+      "linkingText": [
+        "<arc-command>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-shape-arc",
+      "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-arc",
+      "linkingText": [
+        "arc"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-shape-arc-sweep",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-shape-arc-sweep",
+      "linkingText": [
+        "<arc-sweep>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-shape-cw",
+      "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-cw",
+      "linkingText": [
+        "cw"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "shape()",
+        "arc"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-shape-ccw",
+      "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-ccw",
+      "linkingText": [
+        "ccw"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "shape()",
+        "arc"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-shape-arc-size",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-shape-arc-size",
+      "linkingText": [
+        "<arc-size>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-shape-large",
+      "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-large",
+      "linkingText": [
+        "large"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "shape()",
+        "arc"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-shape-small",
+      "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-small",
+      "linkingText": [
+        "small"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "shape()",
+        "arc"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-shape-close",
+      "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-close",
+      "linkingText": [
+        "close"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "shape()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shape-function",
+        "href": "https://www.w3.org/TR/css-shapes-1/#shape-function",
+        "title": "The shape() Function",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "typedef-shape-box",
