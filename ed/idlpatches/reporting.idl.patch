@@ -1,0 +1,33 @@
+From 4d6dbe215a4f5369f322d71c7ddd1b1425f52981 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Fri, 13 Jun 2025 16:51:15 +0200
+Subject: [PATCH] Rollback interface definition of `ReportBody`
+
+Pending complete resolution of
+https://github.com/w3c/reporting/issues/216
+
+... and in particular updates of the 6 specs that currently inherit from
+`ReportBody`. The hope is that all 6 specs will be updated at about the same
+time to avoid having to create individual patches.
+---
+ ed/idl/reporting.idl | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/ed/idl/reporting.idl b/ed/idl/reporting.idl
+index 4511e4dca6..fd6b1375ce 100644
+--- a/ed/idl/reporting.idl
++++ b/ed/idl/reporting.idl
+@@ -3,7 +3,9 @@
+ // (https://github.com/w3c/webref)
+ // Source: Reporting API (https://w3c.github.io/reporting/)
+ 
+-dictionary ReportBody {
++[Exposed=(Window,Worker)]
++interface ReportBody {
++  [Default] object toJSON();
+ };
+ 
+ dictionary Report {
+-- 
+2.37.1.windows.1
+
