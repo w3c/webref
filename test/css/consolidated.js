@@ -68,4 +68,15 @@ describe(`The consolidated CSS file`, async () => {
       assert.deepEqual(invalid, []);
     });
   }
+
+  it('can be indexed', async () => {
+    const indexed = await css.index({ folder: curatedFolder });
+    for (const [category, label] of Object.entries(categories)) {
+      assert(indexed[category], `No ${pluralize(label)} in index`);
+      assert.equal(
+        Object.keys(indexed[category]).length,
+        consolidated[category].length,
+        `Not the right amount of ${pluralize(label)} in index`);
+    }
+  });
 });
