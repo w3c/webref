@@ -1,0 +1,37 @@
+From cea604220649684e3a39a34687544304cecc4fcf Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Mon, 16 Jun 2025 12:08:49 +0200
+Subject: [PATCH] Turn interface into dictionary
+
+Pending complete resolution of:
+https://github.com/w3c/reporting/issues/216
+---
+ ed/idl/csp-next.idl | 14 ++++++--------
+ 1 file changed, 6 insertions(+), 8 deletions(-)
+
+diff --git a/ed/idl/csp-next.idl b/ed/idl/csp-next.idl
+index d94b36cf88..f17c4b3a5f 100644
+--- a/ed/idl/csp-next.idl
++++ b/ed/idl/csp-next.idl
+@@ -10,12 +10,10 @@ enum ScriptingPolicyViolationType {
+   "eval"
+ };
+ 
+-[Exposed=(Window,Worker), SecureContext]
+-interface ScriptingPolicyReportBody : ReportBody {
+-  [Default] object toJSON();
+-  readonly attribute DOMString     violationType;
+-  readonly attribute USVString?    violationURL;
+-  readonly attribute USVString?    violationSample;
+-  readonly attribute unsigned long lineno;
+-  readonly attribute unsigned long colno;
++dictionary ScriptingPolicyReportBody : ReportBody {
++  DOMString     violationType;
++  USVString?    violationURL;
++  USVString?    violationSample;
++  unsigned long lineno;
++  unsigned long colno;
+ };
+-- 
+2.37.1.windows.1
+

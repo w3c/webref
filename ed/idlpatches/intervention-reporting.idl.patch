@@ -1,0 +1,37 @@
+From 7b1e4bfdc8e0bb7390e6ba1f0a16eb2c5bb0f422 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Mon, 16 Jun 2025 12:10:46 +0200
+Subject: [PATCH] Turn interface into dictionary
+
+Pending complete resolution of:
+https://github.com/w3c/reporting/issues/216
+---
+ ed/idl/intervention-reporting.idl | 14 ++++++--------
+ 1 file changed, 6 insertions(+), 8 deletions(-)
+
+diff --git a/ed/idl/intervention-reporting.idl b/ed/idl/intervention-reporting.idl
+index 3c3b8001e7..e1fabd8bf2 100644
+--- a/ed/idl/intervention-reporting.idl
++++ b/ed/idl/intervention-reporting.idl
+@@ -3,12 +3,10 @@
+ // (https://github.com/w3c/webref)
+ // Source: Intervention Reporting (https://wicg.github.io/intervention-reporting/)
+ 
+-[Exposed=(Window,Worker)]
+-interface InterventionReportBody : ReportBody {
+-  [Default] object toJSON();
+-  readonly attribute DOMString id;
+-  readonly attribute DOMString message;
+-  readonly attribute DOMString? sourceFile;
+-  readonly attribute unsigned long? lineNumber;
+-  readonly attribute unsigned long? columnNumber;
++dictionary InterventionReportBody : ReportBody {
++  DOMString id;
++  DOMString message;
++  DOMString? sourceFile;
++  unsigned long? lineNumber;
++  unsigned long? columnNumber;
+ };
+-- 
+2.37.1.windows.1
+
