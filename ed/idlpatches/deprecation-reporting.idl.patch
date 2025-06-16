@@ -1,0 +1,39 @@
+From cb1c6ea2a6b172c3eb6df15a92a2c39ffb103f16 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Mon, 16 Jun 2025 12:10:09 +0200
+Subject: [PATCH] Turn interface into dictionary
+
+Pending complete resolution of:
+https://github.com/w3c/reporting/issues/216
+---
+ ed/idl/deprecation-reporting.idl | 16 +++++++---------
+ 1 file changed, 7 insertions(+), 9 deletions(-)
+
+diff --git a/ed/idl/deprecation-reporting.idl b/ed/idl/deprecation-reporting.idl
+index 4cf76ba811..8f6e963918 100644
+--- a/ed/idl/deprecation-reporting.idl
++++ b/ed/idl/deprecation-reporting.idl
+@@ -3,13 +3,11 @@
+ // (https://github.com/w3c/webref)
+ // Source: Deprecation Reporting (https://wicg.github.io/deprecation-reporting/)
+ 
+-[Exposed=(Window,Worker)]
+-interface DeprecationReportBody : ReportBody {
+-  [Default] object toJSON();
+-  readonly attribute DOMString id;
+-  readonly attribute object? anticipatedRemoval;
+-  readonly attribute DOMString message;
+-  readonly attribute DOMString? sourceFile;
+-  readonly attribute unsigned long? lineNumber;
+-  readonly attribute unsigned long? columnNumber;
++dictionary DeprecationReportBody : ReportBody {
++  DOMString id;
++  object? anticipatedRemoval;
++  DOMString message;
++  DOMString? sourceFile;
++  unsigned long? lineNumber;
++  unsigned long? columnNumber;
+ };
+-- 
+2.37.1.windows.1
+
