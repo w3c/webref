@@ -729,7 +729,7 @@
         "href": "https://w3c.github.io/secure-payment-confirmation/#dictdef-collectedclientadditionalpaymentregistrationdata"
       },
       "PaymentCredentialInstrument": {
-        "fragment": "dictionary PaymentCredentialInstrument {\n    required USVString displayName;\n    required USVString icon;\n    boolean iconMustBeShown = true;\n};",
+        "fragment": "dictionary PaymentCredentialInstrument {\n    required USVString displayName;\n    required USVString icon;\n    boolean iconMustBeShown = true;\n    USVString details;\n};",
         "type": "dictionary",
         "name": "PaymentCredentialInstrument",
         "inheritance": null,
@@ -784,6 +784,22 @@
             },
             "required": false,
             "href": "https://w3c.github.io/secure-payment-confirmation/#dom-paymentcredentialinstrument-iconmustbeshown"
+          },
+          {
+            "type": "field",
+            "name": "details",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-paymentcredentialinstrument-details"
           }
         ],
         "extAttrs": [],

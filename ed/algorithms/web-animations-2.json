@@ -18,13 +18,13 @@
               "html": "<p>Let <var>total time</var> be equal to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#end-time\" id=\"ref-for-end-time\">end time</a></p>"
             },
             {
-              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#start-delay\" id=\"ref-for-start-delay①\">start delay</a> to be the result of evaluating <code><var>specified start delay</var> / <var>total time</var> * <var>timeline duration</var></code>.</p>"
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#start-delay\" id=\"ref-for-start-delay①\">start delay</a> to be the result of evaluating\n<code><var>specified start delay</var> / <var>total time</var> *\n<var>timeline duration</var></code>.</p>"
             },
             {
-              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-duration\" id=\"ref-for-iteration-duration②\">iteration duration</a> to be the result of evaluating <code><var>specified iteration duration</var> / <var>total time</var> * <var>timeline duration</var></code>.</p>"
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-duration\" id=\"ref-for-iteration-duration②\">iteration duration</a> to be the result of evaluating\n<code><var>specified iteration duration</var> / <var>total time</var> *\n<var>timeline duration</var></code>.</p>"
             },
             {
-              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#end-delay\" id=\"ref-for-end-delay①\">end delay</a> to be the result of evaluating <code><var>specified end delay</var> / <var>total time</var> * <var>timeline duration</var></code>.</p>"
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#end-delay\" id=\"ref-for-end-delay①\">end delay</a> to be the result of evaluating\n<code><var>specified end delay</var> / <var>total time</var> *\n<var>timeline duration</var></code>.</p>"
             }
           ]
         }
@@ -41,18 +41,18 @@
           "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#end-delay\" id=\"ref-for-end-delay②\">end delay</a> = <var>specified end delay</var></p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-duration\" id=\"ref-for-iteration-duration③\">iteration duration</a> is auto:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-duration\" id=\"ref-for-iteration-duration④\">iteration duration</a> = <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#intrinsic-iteration-duration\" id=\"ref-for-intrinsic-iteration-duration①\">intrinsic iteration duration</a></p>\n      </li></ul>\n       Otherwise: \n      <ul>\n       <li data-md=\"\">\n        <p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-duration\" id=\"ref-for-iteration-duration⑤\">iteration duration</a> = <var>specified iteration duration</var></p>\n      </li></ul>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-duration\" id=\"ref-for-iteration-duration③\">iteration duration</a> is auto:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-duration\" id=\"ref-for-iteration-duration④\">iteration duration</a> = <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#intrinsic-iteration-duration\" id=\"ref-for-intrinsic-iteration-duration①\">intrinsic iteration duration</a></p>\n      </li></ul>\n       Otherwise:\n\n      <ul>\n       <li data-md=\"\">\n        <p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-duration\" id=\"ref-for-iteration-duration⑤\">iteration duration</a> = <var>specified iteration duration</var></p>\n      </li></ul>"
         }
       ]
     },
     {
       "name": "animation/set the timeline of an animation",
       "href": "https://drafts.csswg.org/web-animations-2/#animation-set-the-timeline-of-an-animation",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"animation\" data-dfn-type=\"dfn\" data-export=\"\" id=\"animation-set-the-timeline-of-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the timeline of an animation</dfn>, <var>animation</var>, to <var>new timeline</var> which may be null, is as\nfollows:",
+      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"animation\" data-dfn-type=\"dfn\" data-export=\"\" id=\"animation-set-the-timeline-of-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the timeline of an animation</dfn>,\n<var>animation</var>, to <var>new timeline</var> which may be null, is as\nfollows:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>old timeline</var> be the current <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline\">timeline</a> of <var>animation</var>, if any.</p>"
+          "html": "<p>Let <var>old timeline</var> be the current <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline\">timeline</a> of\n<var>animation</var>, if any.</p>"
         },
         {
           "html": "<p>If <var>new timeline</var> is the same object as <var>old timeline</var>,\nabort this procedure.</p>"
@@ -80,7 +80,7 @@
                 },
                 {
                   "case": "Otherwise",
-                  "html": "<p>Set <var>previous progress</var> = <code><var>previous current time</var> / <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#end-time\" id=\"ref-for-end-time②\">end time</a></code></p>"
+                  "html": "<p>Set <var>previous progress</var> = <code><var>previous current time</var> /\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#end-time\" id=\"ref-for-end-time②\">end time</a></code></p>"
                 }
               ]
             }
@@ -90,7 +90,7 @@
           "html": "<p>Let <var>from finite timeline</var> be true if <var>old timeline</var> is not null and\nnot <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#monotonically-increasing-timeline\" id=\"ref-for-monotonically-increasing-timeline\">monotonically increasing</a>.</p>"
         },
         {
-          "html": "<p>Let <var>to finite timeline</var> be true if <var>timeline</var> is not null and not <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#monotonically-increasing-timeline\" id=\"ref-for-monotonically-increasing-timeline①\">monotonically increasing</a>.</p>"
+          "html": "<p>Let <var>to finite timeline</var> be true if <var>timeline</var> is not null and not\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#monotonically-increasing-timeline\" id=\"ref-for-monotonically-increasing-timeline①\">monotonically increasing</a>.</p>"
         },
         {
           "html": "<p>Let the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline①\">timeline</a> of <var>animation</var> be <var>new timeline</var>.</p>"
@@ -126,7 +126,7 @@
                       ]
                     },
                     {
-                      "html": "If <var>previous play state</var> is \"paused\" and <var>previous progress</var> is resolved:",
+                      "html": "If <var>previous play state</var> is \"paused\" and\n<var>previous progress</var> is resolved:",
                       "rationale": "set",
                       "steps": [
                         {
@@ -138,17 +138,17 @@
                 },
                 {
                   "case": "If from finite timeline and previous progress is resolved,",
-                  "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#set-the-current-time\" id=\"ref-for-set-the-current-time\">set the current time</a> to <var>previous progress</var> * <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#end-time\" id=\"ref-for-end-time④\">end time</a>.</p>"
+                  "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#set-the-current-time\" id=\"ref-for-set-the-current-time\">set the current time</a> to\n<var>previous progress</var> * <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#end-time\" id=\"ref-for-end-time④\">end time</a>.</p>"
                 }
               ]
             }
           ]
         },
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time②\">start time</a> of <var>animation</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved\">resolved</a>, make <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time②\">hold time</a> <span id=\"ref-for-unresolved①\">unresolved</span>.</p>\n     \n     <p></p>"
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time②\">start time</a> of <var>animation</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved\">resolved</a>, make <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time②\">hold time</a>\n<span id=\"ref-for-unresolved①\">unresolved</span>.</p>\n     \n     <p></p>"
         },
         {
-          "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state\" id=\"ref-for-update-an-animations-finished-state\">update an animation’s finished state</a> for <var>animation</var> with the <var>did seek</var> flag set to false, and\nthe <var>synchronously notify</var> flag set to false.</p>"
+          "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state\" id=\"ref-for-update-an-animations-finished-state\">update an animation’s finished state</a> for\n<var>animation</var> with the <var>did seek</var> flag set to false, and\nthe <var>synchronously notify</var> flag set to false.</p>"
         }
       ]
     },
@@ -156,7 +156,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>new effect</var> is not <code>null</code> and\nif <var>new effect</var> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group\">parent group</a>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#remove-an-animation-effect\" id=\"ref-for-remove-an-animation-effect\">remove</a> <var>new effect</var> from\nits <span id=\"ref-for-parent-group①\">parent group</span>.</p>"
+          "html": "<p>If <var>new effect</var> is not <code>null</code> and\nif <var>new effect</var> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group\">parent group</a>,\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#remove-an-animation-effect\" id=\"ref-for-remove-an-animation-effect\">remove</a> <var>new effect</var> from\nits <span id=\"ref-for-parent-group①\">parent group</span>.</p>"
         }
       ]
     },
@@ -164,7 +164,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>old effect</var> is not <code>null</code>, queue a task to call\nany <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#custom-effect\" id=\"ref-for-custom-effect①\">custom effects</a> associated with <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-descendant\" id=\"ref-for-inclusive-descendant\">inclusive descendants</a> of <var>old effect</var> with an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved③\">unresolved</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-progress\" id=\"ref-for-iteration-progress①\">iteration progress</a>.</p>"
+          "html": "<p>If <var>old effect</var> is not <code>null</code>, queue a task to call\nany <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#custom-effect\" id=\"ref-for-custom-effect①\">custom effects</a> associated with <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-descendant\" id=\"ref-for-inclusive-descendant\">inclusive descendants</a> of\n<var>old effect</var> with an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved③\">unresolved</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-progress\" id=\"ref-for-iteration-progress①\">iteration progress</a>.</p>"
         }
       ]
     },
@@ -204,7 +204,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time③\">current time</a> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved⑥\">resolved</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> a <span class=\"exceptionname\">TypeError</span>.</p>"
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time③\">current time</a> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved⑥\">resolved</a>, then\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> a <span class=\"exceptionname\">TypeError</span>.</p>"
             },
             {
               "html": "<p>Abort these steps.</p>"
@@ -212,7 +212,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>valid seek time</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#validate-a-cssnumberish-time\" id=\"ref-for-validate-a-cssnumberish-time\">validate a CSSNumberish time</a> procedure with <var>seek time</var> as the input.</p>"
+          "html": "<p>Let <var>valid seek time</var> be the result of running the\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#validate-a-cssnumberish-time\" id=\"ref-for-validate-a-cssnumberish-time\">validate a CSSNumberish time</a> procedure with <var>seek time</var>\nas the input.</p>"
         },
         {
           "html": "<p>If <var>valid seek time</var> is false, abort this procedure.</p>"
@@ -221,7 +221,7 @@
           "html": "<p>Set <var>auto align start time</var> to false.</p>"
         },
         {
-          "html": "Update either <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time⑤\">hold time</a> or <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time⑤\">start time</a> as follows:",
+          "html": "Update either <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time⑤\">hold time</a> or\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time⑤\">start time</a> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -233,20 +233,20 @@
                   "rationale": "set",
                   "steps": [
                     {
-                      "html": "<p>Set <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time⑦\">hold time</a> to <var>seek time</var>.</p>"
+                      "html": "<p>Set <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time⑦\">hold time</a> to\n<var>seek time</var>.</p>"
                     }
                   ]
                 },
                 {
                   "case": "Otherwise,",
-                  "html": "<p>Set <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time⑦\">start time</a> to the result of\nevaluating <code><var>timeline time</var> - (<var>seek time</var> / <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate②\">playback rate</a>)</code> where <var>timeline time</var> is the current <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#time-value\" id=\"ref-for-time-value①\">time value</a> of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline⑥\">timeline</a> associated with <var>animation</var>.</p>"
+                  "html": "<p>Set <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time⑦\">start time</a> to the result of\nevaluating\n<code><var>timeline time</var> - (<var>seek time</var> / <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate②\">playback rate</a>)</code>\nwhere <var>timeline time</var> is the current <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#time-value\" id=\"ref-for-time-value①\">time value</a>\nof <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline⑥\">timeline</a> associated with <var>animation</var>.</p>"
                 }
               ]
             }
           ]
         },
         {
-          "html": "<p>If <var>animation</var> has no associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline⑦\">timeline</a> or the associated <span id=\"ref-for-timeline⑧\">timeline</span> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#inactive-timeline\" id=\"ref-for-inactive-timeline③\">inactive</a>,\nmake <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time⑧\">start time</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved⑨\">unresolved</a>.</p>"
+          "html": "<p>If <var>animation</var> has no associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline⑦\">timeline</a> or the associated\n<span id=\"ref-for-timeline⑧\">timeline</span> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#inactive-timeline\" id=\"ref-for-inactive-timeline③\">inactive</a>,\nmake <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time⑧\">start time</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved⑨\">unresolved</a>.</p>"
         },
         {
           "html": "<p>Make <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation\">animation</a>’s <var>previous current time</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved①⓪\">unresolved</a>.</p>"
@@ -256,11 +256,11 @@
     {
       "name": "set the current time",
       "href": "https://drafts.csswg.org/web-animations-2/#set-the-current-time",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-the-current-time\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the current time</dfn> of an animation, <var>animation</var>, to <var>seek time</var> is as follows:",
+      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-the-current-time\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the current time</dfn> of an animation,\n<var>animation</var>, to <var>seek time</var> is as follows:",
       "rationale": "run",
       "steps": [
         {
-          "html": "<p>Run the steps to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#silently-set-the-current-time\" id=\"ref-for-silently-set-the-current-time\">silently set the current time</a> of <var>animation</var> to <var>seek time</var>.</p>"
+          "html": "<p>Run the steps to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#silently-set-the-current-time\" id=\"ref-for-silently-set-the-current-time\">silently set the current time</a> of\n<var>animation</var> to <var>seek time</var>.</p>"
         },
         {
           "html": "If <var>animation</var> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#pending-pause-task\" id=\"ref-for-pending-pause-task\">pending pause task</a>, synchronously\ncomplete the pause operation by performing the following steps:",
@@ -279,23 +279,23 @@
               "html": "<p>Cancel the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#pending-pause-task\" id=\"ref-for-pending-pause-task①\">pending pause task</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">Resolve</a> <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#current-ready-promise\" id=\"ref-for-current-ready-promise\">current ready promise</a> with <var>animation</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">Resolve</a> <var>animation</var>’s\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#current-ready-promise\" id=\"ref-for-current-ready-promise\">current ready promise</a> with <var>animation</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state\" id=\"ref-for-update-an-animations-finished-state①\">update an animation’s finished state</a> for <var>animation</var> with the <var>did seek</var> flag set to true, and\nthe <var>synchronously notify</var> flag set to false.</p>"
+          "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state\" id=\"ref-for-update-an-animations-finished-state①\">update an animation’s finished state</a> for\n<var>animation</var> with the <var>did seek</var> flag set to true, and\nthe <var>synchronously notify</var> flag set to false.</p>"
         }
       ]
     },
     {
       "name": "set the start time",
       "href": "https://drafts.csswg.org/web-animations-2/#set-the-start-time",
-      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-the-start-time\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the start time</dfn> of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation①\">animation</a>, <var>animation</var>, to <var>new start time</var>,\nis as follows:",
+      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-the-start-time\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the start time</dfn>\nof <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation①\">animation</a>, <var>animation</var>, to <var>new start time</var>,\nis as follows:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>valid start time</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#validate-a-cssnumberish-time\" id=\"ref-for-validate-a-cssnumberish-time①\">validate a CSSNumberish time</a> procedure with <var>new start time</var> as the input.</p>"
+          "html": "<p>Let <var>valid start time</var> be the result of running the\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#validate-a-cssnumberish-time\" id=\"ref-for-validate-a-cssnumberish-time①\">validate a CSSNumberish time</a> procedure with\n<var>new start time</var> as the input.</p>"
         },
         {
           "html": "<p>If <var>valid start time</var> is false, abort this procedure.</p>"
@@ -304,19 +304,19 @@
           "html": "<p>Set <var>auto align start time</var> to false.</p>"
         },
         {
-          "html": "<p>Let <var>timeline time</var> be the current <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#time-value\" id=\"ref-for-time-value②\">time value</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline⑨\">timeline</a> that <var>animation</var> is associated with.\nIf there is no <span id=\"ref-for-timeline①⓪\">timeline</span> associated with <var>animation</var> or the\nassociated timeline is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#inactive-timeline\" id=\"ref-for-inactive-timeline④\">inactive</a>,\nlet the <var>timeline time</var> be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved①②\">unresolved</a>.</p>"
+          "html": "<p>Let <var>timeline time</var> be the current <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#time-value\" id=\"ref-for-time-value②\">time value</a> of the\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline⑨\">timeline</a> that <var>animation</var> is associated with.\nIf there is no <span id=\"ref-for-timeline①⓪\">timeline</span> associated with <var>animation</var> or the\nassociated timeline is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#inactive-timeline\" id=\"ref-for-inactive-timeline④\">inactive</a>,\nlet the <var>timeline time</var> be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved①②\">unresolved</a>.</p>"
         },
         {
-          "html": "<p>If <var>timeline time</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved①③\">unresolved</a> and <var>new start\ntime</var> is <span id=\"ref-for-unresolved①④\">resolved</span>, make <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time⑨\">hold time</a> <span id=\"ref-for-unresolved①⑤\">unresolved</span>.</p>"
+          "html": "<p>If <var>timeline time</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved①③\">unresolved</a> and <var>new start\ntime</var> is <span id=\"ref-for-unresolved①④\">resolved</span>, make <var>animation</var>’s\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time⑨\">hold time</a> <span id=\"ref-for-unresolved①⑤\">unresolved</span>.</p>"
         },
         {
-          "html": "<p>Let <var>previous current time</var> be <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time⑥\">current time</a>.</p>"
+          "html": "<p>Let <var>previous current time</var> be <var>animation</var>’s\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time⑥\">current time</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#apply-any-pending-playback-rate\" id=\"ref-for-apply-any-pending-playback-rate②\">Apply any pending playback rate</a> on <var>animation</var>.</p>"
         },
         {
-          "html": "<p>Set <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time①②\">start time</a> to <var>new start time</var>.</p>"
+          "html": "<p>Set <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time①②\">start time</a> to\n<var>new start time</var>.</p>"
         },
         {
           "html": "Update <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time①⓪\">hold time</a> based\non the first matching condition from the following,",
@@ -335,7 +335,7 @@
                   "rationale": "set",
                   "steps": [
                     {
-                      "html": "<p>Set <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time①②\">hold time</a> to <var>previous current time</var> even if <var>previous current time</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved②⓪\">unresolved</a>.</p>"
+                      "html": "<p>Set <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time①②\">hold time</a> to\n<var>previous current time</var> even if\n<var>previous current time</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved②⓪\">unresolved</a>.</p>"
                     }
                   ]
                 }
@@ -344,10 +344,10 @@
           ]
         },
         {
-          "html": "<p>If <var>animation</var> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#pending-play-task\" id=\"ref-for-pending-play-task②\">pending play task</a> or\na <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#pending-pause-task\" id=\"ref-for-pending-pause-task②\">pending pause task</a>, cancel that task and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#current-ready-promise\" id=\"ref-for-current-ready-promise①\">current ready promise</a> with <var>animation</var>.</p>"
+          "html": "<p>If <var>animation</var> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#pending-play-task\" id=\"ref-for-pending-play-task②\">pending play task</a> or\na <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#pending-pause-task\" id=\"ref-for-pending-pause-task②\">pending pause task</a>, cancel that task and\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>animation</var>’s\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#current-ready-promise\" id=\"ref-for-current-ready-promise①\">current ready promise</a> with <var>animation</var>.</p>"
         },
         {
-          "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state\" id=\"ref-for-update-an-animations-finished-state②\">update an animation’s finished state</a> for <var>animation</var> with the <var>did seek</var> flag set to true, and\nthe <var>synchronously notify</var> flag set to false.</p>"
+          "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state\" id=\"ref-for-update-an-animations-finished-state②\">update an animation’s finished state</a> for\n<var>animation</var> with the <var>did seek</var> flag set to true, and\nthe <var>synchronously notify</var> flag set to false.</p>"
         }
       ]
     },
@@ -358,16 +358,16 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>aborted pause</var> be a boolean flag that is true if <var>animation</var> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#pending-pause-task\" id=\"ref-for-pending-pause-task③\">pending pause task</a>, and false otherwise.</p>"
+          "html": "<p>Let <var>aborted pause</var> be a boolean flag that is true if\n<var>animation</var> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#pending-pause-task\" id=\"ref-for-pending-pause-task③\">pending pause task</a>, and false otherwise.</p>"
         },
         {
           "html": "<p>Let <var>has pending ready promise</var> be a boolean flag that is\ninitially false.</p>"
         },
         {
-          "html": "<p>Let <var>has finite timeline</var> be true if <var>animation</var> has an associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline①①\">timeline</a> that is not <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#monotonically-increasing-timeline\" id=\"ref-for-monotonically-increasing-timeline②\">monotonically increasing</a>.</p>"
+          "html": "<p>Let <var>has finite timeline</var> be true if <var>animation</var> has an associated\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline①①\">timeline</a> that is not\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#monotonically-increasing-timeline\" id=\"ref-for-monotonically-increasing-timeline②\">monotonically increasing</a>.</p>"
         },
         {
-          "html": "<p>Let <var>previous current time</var> be the <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time⑨\">current time</a></p>"
+          "html": "<p>Let <var>previous current time</var> be the <var>animation</var>’s\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time⑨\">current time</a></p>"
         },
         {
           "html": "<p>Let <var>enable seek</var> be true if the <var>auto-rewind</var> flag is\ntrue and <var>has finite timeline</var> is false.\nOtherwise, initialize to false.</p>"
@@ -385,7 +385,7 @@
                 },
                 {
                   "case": "If animation’s effective playback rate < 0, enable seek is true and either animation’s: previous current time is unresolved, or previous current time ≤ zero, or previous current time > associated effect end,",
-                  "html": "<dl class=\"switch\">\n        <dt data-md=\"\">If <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end②\">associated effect end</a> is positive infinity,\n        </dt><dd data-md=\"\">\n         <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> and\nabort these steps.</p>\n        </dd><dt data-md=\"\">Otherwise,\n        </dt><dd data-md=\"\">\n         <p>Set the <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time①④\">hold time</a> to the <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end③\">associated effect end</a>.</p>\n       </dd></dl>",
+                  "html": "<dl class=\"switch\">\n        <dt data-md=\"\">If <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end②\">associated effect end</a> is positive infinity,\n        </dt><dd data-md=\"\">\n         <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> and\nabort these steps.</p>\n        </dd><dt data-md=\"\">Otherwise,\n        </dt><dd data-md=\"\">\n         <p>Set the <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time①④\">hold time</a> to the\n<var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end③\">associated effect end</a>.</p>\n       </dd></dl>",
                   "rationale": ".switch",
                   "steps": [
                     {
@@ -397,7 +397,7 @@
                         },
                         {
                           "case": "Otherwise,",
-                          "html": "<p>Set the <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time①④\">hold time</a> to the <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end③\">associated effect end</a>.</p>"
+                          "html": "<p>Set the <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time①④\">hold time</a> to the\n<var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end③\">associated effect end</a>.</p>"
                         }
                       ]
                     }
@@ -418,7 +418,7 @@
           "html": "<p>If <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time①⑥\">hold time</a> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved②④\">resolved</a>,\nlet its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time①④\">start time</a> be <span id=\"ref-for-unresolved②⑤\">unresolved</span>.</p>"
         },
         {
-          "html": "If <var>animation</var> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#pending-play-task\" id=\"ref-for-pending-play-task③\">pending play task</a> or a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#pending-pause-task\" id=\"ref-for-pending-pause-task④\">pending pause task</a>,",
+          "html": "If <var>animation</var> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#pending-play-task\" id=\"ref-for-pending-play-task③\">pending play task</a> or a\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#pending-pause-task\" id=\"ref-for-pending-pause-task④\">pending pause task</a>,",
           "rationale": "cancel",
           "steps": [
             {
@@ -433,14 +433,14 @@
           "html": "<p>If the following three conditions are <em>all</em> satisfied:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time①⑦\">hold time</a> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved②⑥\">unresolved</a>, and</p>\n      </li><li data-md=\"\">\n       <p><var>aborted pause</var> is false, and</p>\n      </li><li data-md=\"\">\n       <p><var>animation</var> does <em>not</em> have a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#pending-playback-rate\" id=\"ref-for-pending-playback-rate\">pending playback rate</a>,</p>\n     </li></ul>\n     <p>abort this procedure.</p>"
         },
         {
-          "html": "<p>If <var>has pending ready promise</var> is false,\nlet <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#current-ready-promise\" id=\"ref-for-current-ready-promise②\">current ready promise</a> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant Realm</a> of <var>animation</var>.</p>"
+          "html": "<p>If <var>has pending ready promise</var> is false,\nlet <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#current-ready-promise\" id=\"ref-for-current-ready-promise②\">current ready promise</a> be\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant Realm</a> of <var>animation</var>.</p>"
         },
         {
-          "html": "So long as the above task is scheduled but has yet to run, <var>animation</var> is described as having a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pending-play-task\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pending play task</dfn>.\nWhile the task is running, however, <var>animation</var> does <em>not</em> have\na <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#pending-play-task\" id=\"ref-for-pending-play-task④\">pending play task</a>.",
+          "html": "So long as the above task is scheduled but has yet to run,\n<var>animation</var> is described as having a\n<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pending-play-task\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pending play task</dfn>.\nWhile the task is running, however, <var>animation</var> does <em>not</em> have\na <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#pending-play-task\" id=\"ref-for-pending-play-task④\">pending play task</a>.",
           "rationale": "assert",
           "steps": [
             {
-              "html": "<p>Assert that at least one of <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time①⑤\">start time</a> or <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time①⑧\">hold time</a> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved②⑦\">resolved</a>.</p>"
+              "html": "<p>Assert that at least one of <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time①⑤\">start time</a> or\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time①⑧\">hold time</a> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved②⑦\">resolved</a>.</p>"
             },
             {
               "html": "<p>Let <var>ready time</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#time-value\" id=\"ref-for-time-value③\">time value</a> of\nthe <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline①②\">timeline</a> associated with <var>animation</var> at the moment\nwhen <var>animation</var> became <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#ready\" id=\"ref-for-ready②\">ready</a>.</p>"
@@ -461,13 +461,13 @@
                           "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#apply-any-pending-playback-rate\" id=\"ref-for-apply-any-pending-playback-rate③\">Apply any pending playback rate</a> on <var>animation</var>.</p>"
                         },
                         {
-                          "html": "<p>Let <var>new start time</var> be the result of evaluating <code><var>ready time</var> - <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time②⓪\">hold time</a> / <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate⑤\">playback rate</a></code> for <var>animation</var>.\nIf the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate⑥\">playback rate</a> is zero, let <var>new start time</var> be simply <var>ready time</var>.</p>"
+                          "html": "<p>Let <var>new start time</var> be the result of evaluating\n<code><var>ready time</var> - <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time②⓪\">hold time</a> / <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate⑤\">playback rate</a></code>\nfor <var>animation</var>.\nIf the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate⑥\">playback rate</a> is zero, let\n<var>new start time</var> be simply <var>ready time</var>.</p>"
                         },
                         {
-                          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time①⑥\">start time</a> of <var>animation</var> to <var>new start time</var>.</p>"
+                          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time①⑥\">start time</a> of <var>animation</var> to\n<var>new start time</var>.</p>"
                         },
                         {
-                          "html": "<p>If <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate⑦\">playback rate</a> is not 0, make <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time②①\">hold time</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved②⑨\">unresolved</a>.</p>"
+                          "html": "<p>If <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate⑦\">playback rate</a> is not 0, make\n<var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time②①\">hold time</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved②⑨\">unresolved</a>.</p>"
                         }
                       ]
                     },
@@ -477,19 +477,19 @@
                       "rationale": "let",
                       "steps": [
                         {
-                          "html": "<p>Let <var>current time to match</var> be the result of evaluating <code>(<var>ready time</var> - <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time①⑧\">start time</a>) × <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate⑧\">playback rate</a></code> for <var>animation</var>.</p>"
+                          "html": "<p>Let <var>current time to match</var> be the result of evaluating\n<code>(<var>ready time</var> - <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time①⑧\">start time</a>) ×\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate⑧\">playback rate</a></code> for <var>animation</var>.</p>"
                         },
                         {
                           "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#apply-any-pending-playback-rate\" id=\"ref-for-apply-any-pending-playback-rate④\">Apply any pending playback rate</a> on <var>animation</var>.</p>"
                         },
                         {
-                          "html": "<p>If <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate⑨\">playback rate</a> is zero, let <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time②②\">hold time</a> be <var>current time to match</var>.</p>"
+                          "html": "<p>If <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate⑨\">playback rate</a> is zero, let\n<var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time②②\">hold time</a> be <var>current time to match</var>.</p>"
                         },
                         {
-                          "html": "<p>Let <var>new start time</var> be the result of evaluating <code><var>ready time</var> - <var>current time to match</var> / <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate①⓪\">playback rate</a></code> for <var>animation</var>.\nIf the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate①①\">playback rate</a> is zero, let <var>new start time</var> be simply <var>ready time</var>.</p>"
+                          "html": "<p>Let <var>new start time</var> be the result of evaluating\n<code><var>ready time</var> - <var>current time to match</var> /\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate①⓪\">playback rate</a></code> for <var>animation</var>.\nIf the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate①①\">playback rate</a> is zero, let <var>new start time</var> be simply\n<var>ready time</var>.</p>"
                         },
                         {
-                          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time①⑨\">start time</a> of <var>animation</var> to <var>new start time</var>.</p>"
+                          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time①⑨\">start time</a> of <var>animation</var> to\n<var>new start time</var>.</p>"
                         }
                       ]
                     }
@@ -501,12 +501,12 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">Resolve</a> <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#current-ready-promise\" id=\"ref-for-current-ready-promise③\">current\nready promise</a> with <var>animation</var>.</p>"
             },
             {
-              "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state\" id=\"ref-for-update-an-animations-finished-state③\">update an animation’s finished state</a> for <var>animation</var> with the <var>did seek</var> flag set to false,\nand the <var>synchronously notify</var> flag set to false.</p>"
+              "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state\" id=\"ref-for-update-an-animations-finished-state③\">update an animation’s finished state</a> for\n<var>animation</var> with the <var>did seek</var> flag set to false,\nand the <var>synchronously notify</var> flag set to false.</p>"
             }
           ]
         },
         {
-          "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state\" id=\"ref-for-update-an-animations-finished-state④\">update an animation’s finished state</a> for <var>animation</var> with the <var>did seek</var> flag set to false, and\nthe <var>synchronously notify</var> flag set to false.</p>"
+          "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state\" id=\"ref-for-update-an-animations-finished-state④\">update an animation’s finished state</a> for\n<var>animation</var> with the <var>did seek</var> flag set to false, and\nthe <var>synchronously notify</var> flag set to false.</p>"
         }
       ]
     },
@@ -549,7 +549,7 @@
           "html": "<p>Let <var>seek time</var> be\n   a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#time-value\" id=\"ref-for-time-value④\">time value</a> that is initially <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved③⓪\">unresolved</a>.</p>"
         },
         {
-          "html": "<p>Let <var>has finite timeline</var> be true\n   if <var>animation</var> has an associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline①③\">timeline</a> that is not <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#monotonically-increasing\" id=\"ref-for-monotonically-increasing\">monotonically increasing</a>.</p>"
+          "html": "<p>Let <var>has finite timeline</var> be true\n   if <var>animation</var> has an associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline①③\">timeline</a>\n   that is not <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#monotonically-increasing\" id=\"ref-for-monotonically-increasing\">monotonically increasing</a>.</p>"
         },
         {
           "html": "If the <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time①①\">current time</a> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved③①\">unresolved</a>,\n   perform the steps according to the first matching condition below:",
@@ -564,7 +564,7 @@
                 },
                 {
                   "case": "Otherwise,",
-                  "html": "<dl class=\"switch\">\n         <dt data-md=\"\">If <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end④\">associated effect end</a> for <var>animation</var> is positive infinity,\n         </dt><dd data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> and abort these steps.</p>\n         </dd><dt data-md=\"\">Otherwise,\n         </dt><dd data-md=\"\">\n          <p>Set <var>seek time</var> to <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end⑤\">associated effect end</a>.</p>\n        </dd></dl>",
+                  "html": "<dl class=\"switch\">\n         <dt data-md=\"\">If <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end④\">associated effect end</a> for <var>animation</var> is positive infinity,\n         </dt><dd data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>\n   and abort these steps.</p>\n         </dd><dt data-md=\"\">Otherwise,\n         </dt><dd data-md=\"\">\n          <p>Set <var>seek time</var> to <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end⑤\">associated effect end</a>.</p>\n        </dd></dl>",
                   "rationale": ".switch",
                   "steps": [
                     {
@@ -572,7 +572,7 @@
                       "steps": [
                         {
                           "case": "If associated effect end for animation is positive infinity,",
-                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> and abort these steps.</p>"
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>\n   and abort these steps.</p>"
                         },
                         {
                           "case": "Otherwise,",
@@ -595,10 +595,10 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>has finite timeline</var> be true\n   if <var>animation</var> has an associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline①④\">timeline</a> that is not <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#monotonically-increasing\" id=\"ref-for-monotonically-increasing①\">monotonically increasing</a>.</p>"
+          "html": "<p>Let <var>has finite timeline</var> be true\n   if <var>animation</var> has an associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline①④\">timeline</a>\n   that is not <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#monotonically-increasing\" id=\"ref-for-monotonically-increasing①\">monotonically increasing</a>.</p>"
         },
         {
-          "html": "If the <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time①②\">current time</a> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved③③\">unresolved</a> and <var>has finite timeline</var> is false,\n   perform the steps according to the first matching condition below:",
+          "html": "If the <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time①②\">current time</a> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved③③\">unresolved</a> and\n  <var>has finite timeline</var> is false,\n   perform the steps according to the first matching condition below:",
           "rationale": ".switch",
           "steps": [
             {
@@ -610,7 +610,7 @@
                 },
                 {
                   "case": "Otherwise,",
-                  "html": "<dl class=\"switch\">\n         <dt data-md=\"\">If <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end⑥\">associated effect end</a> for <var>animation</var> is positive infinity,\n         </dt><dd data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code> and abort these steps.</p>\n         </dd><dt data-md=\"\">Otherwise,\n         </dt><dd data-md=\"\">\n          <p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time②⑦\">hold time</a> to <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end⑦\">associated effect end</a>.</p>\n        </dd></dl>",
+                  "html": "<dl class=\"switch\">\n         <dt data-md=\"\">If <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end⑥\">associated effect end</a> for <var>animation</var> is positive infinity,\n         </dt><dd data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>\n   and abort these steps.</p>\n         </dd><dt data-md=\"\">Otherwise,\n         </dt><dd data-md=\"\">\n          <p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-hold-time\" id=\"ref-for-animation-hold-time②⑦\">hold time</a> to <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end⑦\">associated effect end</a>.</p>\n        </dd></dl>",
                   "rationale": ".switch",
                   "steps": [
                     {
@@ -618,7 +618,7 @@
                       "steps": [
                         {
                           "case": "If associated effect end for animation is positive infinity,",
-                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code> and abort these steps.</p>"
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>\n   and abort these steps.</p>"
                         },
                         {
                           "case": "Otherwise,",
@@ -641,7 +641,7 @@
       "rationale": "queue",
       "steps": [
         {
-          "html": "<p>Queue a task to call any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#custom-effect\" id=\"ref-for-custom-effect⑥\">custom effects</a> associated with <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-descendant\" id=\"ref-for-inclusive-descendant②\">inclusive descendants</a> of <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-associated-effect\" id=\"ref-for-animation-associated-effect⑥\">associated effect</a> with an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved③⑤\">unresolved</a> iteration progress.</p>"
+          "html": "<p>Queue a task to call any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#custom-effect\" id=\"ref-for-custom-effect⑥\">custom effects</a> associated with\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-descendant\" id=\"ref-for-inclusive-descendant②\">inclusive descendants</a> of\n<var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-associated-effect\" id=\"ref-for-animation-associated-effect⑥\">associated effect</a>\nwith an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved③⑤\">unresolved</a> iteration progress.</p>"
         }
       ]
     },
@@ -667,7 +667,7 @@
             },
             {
               "case": "Otherwise,",
-              "html": "<blockquote> <code><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-overallprogress\" id=\"ref-for-animation-overallprogress⑤\">overallProgress</a> = min(max(<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time①⑦\">current time</a> / <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end①①\">associated effect end</a>, 0), 1) </code> </blockquote>"
+              "html": "<blockquote>\n  <code><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-overallprogress\" id=\"ref-for-animation-overallprogress⑤\">overallProgress</a> = min(max(<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time①⑦\">current time</a> / <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#associated-effect-end\" id=\"ref-for-associated-effect-end①①\">associated effect end</a>, 0), 1)\n  </code>\n</blockquote>"
             }
           ]
         }
@@ -684,11 +684,11 @@
           "steps": [
             {
               "case": "If the animation effect has a parent group,",
-              "html": "<p>the inherited time is the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group⑨\">parent group</a>’s current <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#transformed-time\" id=\"ref-for-transformed-time\">transformed time</a>.</p>"
+              "html": "<p>the inherited time is the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group⑨\">parent group</a>’s current\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#transformed-time\" id=\"ref-for-transformed-time\">transformed time</a>.</p>"
             },
             {
               "case": "If the animation effect is directly associated with an animation,",
-              "html": "<p>the inherited time is the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time①⑧\">current time</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation⑦\">animation</a>.</p>"
+              "html": "<p>the inherited time is the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time①⑧\">current time</a> of the\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation⑦\">animation</a>.</p>"
             },
             {
               "case": "Otherwise,",
@@ -705,19 +705,19 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <em>any</em> of the following conditions are true:</p>\n       <ul>\n        <li data-md=\"\">\n         <p>the associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation⑧\">animation</a>’s timeline is not a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#progress-based-timeline\" id=\"ref-for-progress-based-timeline③\">progress-based timeline</a>, or</p>\n        </li><li data-md=\"\">\n         <p>the associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation⑨\">animation</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#timeline-duration\" id=\"ref-for-timeline-duration③\">timeline duration</a> is\nunresolved or zero, or</p>\n        </li><li data-md=\"\">\n         <p>the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation①⓪\">animation</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate①⑤\">playback rate</a> is zero</p>\n       </li></ul>\n       <p>return false</p>"
+          "html": "<p>If <em>any</em> of the following conditions are true:</p>\n       <ul>\n        <li data-md=\"\">\n         <p>the associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation⑧\">animation</a>’s timeline is not a\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#progress-based-timeline\" id=\"ref-for-progress-based-timeline③\">progress-based timeline</a>, or</p>\n        </li><li data-md=\"\">\n         <p>the associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation⑨\">animation</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#timeline-duration\" id=\"ref-for-timeline-duration③\">timeline duration</a> is\nunresolved or zero, or</p>\n        </li><li data-md=\"\">\n         <p>the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation①⓪\">animation</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate①⑤\">playback rate</a> is zero</p>\n       </li></ul>\n       <p>return false</p>"
         },
         {
-          "html": "<p>Let <var>effective start time</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation①①\">animation</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time②⑥\">start time</a> if resolved, or zero otherwise.</p>"
+          "html": "<p>Let <var>effective start time</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation①①\">animation</a>’s\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time②⑥\">start time</a> if resolved, or zero otherwise.</p>"
         },
         {
           "html": "<p>Set <var>unlimited current time</var> based on the first matching\ncondition:</p>\n       <dl>\n        <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time②⑦\">start time</a> is resolved:\n        </dt><dd data-md=\"\">\n         <p><code>(<var>timeline time</var> - <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time②⑧\">start time</a>)\n× <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate①⑥\">playback rate</a></code></p>\n        </dd><dt data-md=\"\">Otherwise\n        </dt><dd data-md=\"\">\n         <p><code>animation’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-current-time\" id=\"ref-for-animation-current-time①⑨\">current time</a></code></p>\n       </dd></dl>"
         },
         {
-          "html": "<p>Let <var>effective timeline time</var> be <code><var>unlimited current time</var> / <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation①②\">animation</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate①⑦\">playback rate</a> + <var>effective start time</var></code></p>"
+          "html": "<p>Let <var>effective timeline time</var> be\n<code><var>unlimited current time</var> / <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation①②\">animation</a>’s\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate①⑦\">playback rate</a> + <var>effective start time</var></code></p>"
         },
         {
-          "html": "<p>Let <var>effective timeline progress</var> be <code><var>effective timeline time</var> / <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#timeline-duration\" id=\"ref-for-timeline-duration④\">timeline duration</a></code></p>"
+          "html": "<p>Let <var>effective timeline progress</var> be\n<code><var>effective timeline time</var> / <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#timeline-duration\" id=\"ref-for-timeline-duration④\">timeline duration</a></code></p>"
         },
         {
           "html": "<p>If <var>effective timeline progress</var> is 0 or 1, return true,\notherwise false.</p>"
@@ -727,7 +727,7 @@
     {
       "name": "intrinsic iteration duration",
       "href": "https://drafts.csswg.org/web-animations-2/#intrinsic-iteration-duration",
-      "html": "The initial <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-duration\" id=\"ref-for-iteration-duration⑥\">iteration duration</a> of an animation effect is simply its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#intrinsic-iteration-duration\" id=\"ref-for-intrinsic-iteration-duration②\">intrinsic iteration duration</a>.\n    The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"intrinsic-iteration-duration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">intrinsic iteration duration</dfn> is calculated from the first\n    matching condition from below:",
+      "html": "The initial <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-duration\" id=\"ref-for-iteration-duration⑥\">iteration duration</a> of an animation effect is simply its\n    <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#intrinsic-iteration-duration\" id=\"ref-for-intrinsic-iteration-duration②\">intrinsic iteration duration</a>.\n    The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"intrinsic-iteration-duration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">intrinsic iteration duration</dfn> is calculated from the first\n    matching condition from below:",
       "rationale": ".switch",
       "steps": [
         {
@@ -735,11 +735,11 @@
           "steps": [
             {
               "case": "If the animation effect is a group effect,",
-              "html": "<p>Follow the procedure in <a href=\"https://drafts.csswg.org/web-animations-2/#the-intrinsic-iteration-duration-of-a-group-effect\">§ 3.10.3 The intrinsic\n  iteration duration of a group effect</a></p>"
+              "html": "<p>Follow the procedure in\n<a href=\"https://drafts.csswg.org/web-animations-2/#the-intrinsic-iteration-duration-of-a-group-effect\">§ 3.10.3 The intrinsic\n  iteration duration of a group effect</a></p>"
             },
             {
               "case": "If the animation effect is a sequence effect,",
-              "html": "<p>Follow the procedure in <a href=\"https://drafts.csswg.org/web-animations-2/#the-intrinsic-iteration-duration-of-a-sequence-effect\">§ 3.10.4.2 The intrinsic\n  iteration duration of a sequence effect</a></p>"
+              "html": "<p>Follow the procedure in\n<a href=\"https://drafts.csswg.org/web-animations-2/#the-intrinsic-iteration-duration-of-a-sequence-effect\">§ 3.10.4.2 The intrinsic\n  iteration duration of a sequence effect</a></p>"
             },
             {
               "case": "If timeline duration is unresolved or iteration count is zero,",
@@ -747,7 +747,7 @@
             },
             {
               "case": "Otherwise",
-              "html": "<p>Return <code>(100% - <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#start-delay\" id=\"ref-for-start-delay①⓪\">start delay</a> - <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#end-delay\" id=\"ref-for-end-delay⑥\">end delay</a>) / <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-count\" id=\"ref-for-iteration-count①\">iteration count</a></code></p>"
+              "html": "<p>Return <code>(100% - <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#start-delay\" id=\"ref-for-start-delay①⓪\">start delay</a> - <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#end-delay\" id=\"ref-for-end-delay⑥\">end delay</a>) /\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-count\" id=\"ref-for-iteration-count①\">iteration count</a></code></p>"
             }
           ]
         }
@@ -807,7 +807,7 @@
                     },
                     {
                       "case": "Otherwise,",
-                      "html": "<p>Return the result of evaluating <code><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#local-time\" id=\"ref-for-local-time②⑦\">local time</a> - <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#start-delay\" id=\"ref-for-start-delay①③\">start delay</a></code>.</p>"
+                      "html": "<p>Return the result of evaluating\n<code><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#local-time\" id=\"ref-for-local-time②⑦\">local time</a> - <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#start-delay\" id=\"ref-for-start-delay①③\">start delay</a></code>.</p>"
                     }
                   ]
                 }
@@ -846,7 +846,7 @@
           "steps": [
             {
               "case": "If the playback rate is less than zero,",
-              "html": "<p>Let <var>overall progress</var> be <code>(<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#active-time\" id=\"ref-for-active-time④\">active time</a> - <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#active-duration\" id=\"ref-for-active-duration⑧\">active duration</a>)\n× <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate③⑤\">playback rate</a> / <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-duration\" id=\"ref-for-iteration-duration①②\">iteration duration</a></code>.</p>"
+              "html": "<p>Let <var>overall progress</var> be\n<code>(<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#active-time\" id=\"ref-for-active-time④\">active time</a> - <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#active-duration\" id=\"ref-for-active-duration⑧\">active duration</a>)\n× <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate③⑤\">playback rate</a>\n/ <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-duration\" id=\"ref-for-iteration-duration①②\">iteration duration</a></code>.</p>"
             },
             {
               "case": "If the playback rate is zero,",
@@ -854,7 +854,7 @@
             },
             {
               "case": "Otherwise,",
-              "html": "<p>Let <var>overall progress</var> be <code>(<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#active-time\" id=\"ref-for-active-time⑤\">active time</a> × <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate③⑦\">playback rate</a>) / <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-duration\" id=\"ref-for-iteration-duration①③\">iteration duration</a></code>.</p>"
+              "html": "<p>Let <var>overall progress</var> be\n<code>(<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#active-time\" id=\"ref-for-active-time⑤\">active time</a> ×\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate③⑦\">playback rate</a>) /\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-duration\" id=\"ref-for-iteration-duration①③\">iteration duration</a></code>.</p>"
             }
           ]
         }
@@ -864,7 +864,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <em>either</em> the <var>current direction</var> is <span class=\"prop-value\">forwards</span> or the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate③⑧\">playback rate</a> ≥ 0\n(but <em>not</em> when both conditions are true),\nlet <var>going forwards</var> be true, otherwise it is false.</p>"
+          "html": "<p>If <em>either</em> the <var>current direction</var> is <span class=\"prop-value\">forwards</span> or the\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-effect-playback-rate\" id=\"ref-for-animation-effect-playback-rate③⑧\">playback rate</a> ≥ 0\n(but <em>not</em> when both conditions are true),\nlet <var>going forwards</var> be true, otherwise it is false.</p>"
         }
       ]
     },
@@ -885,7 +885,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>maximum end time</var> be the maximum value\nafter calculating the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#end-time\" id=\"ref-for-end-time⑥\">end time</a> of each <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#child-effect\" id=\"ref-for-child-effect⑦\">child\neffect</a> in the group. The <span id=\"ref-for-end-time⑦\">end time</span> may be\nexpressed as a time or a percentage (in the case of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#progress-based-timeline\" id=\"ref-for-progress-based-timeline④\">progress-based timeline</a>). In the event of mixed time and\npercentage <span id=\"ref-for-end-time⑧\">end time</span>s, the largest time based value\nequates to 100% for the purpose of time scaling.</p>"
+                  "html": "<p>Let <var>maximum end time</var> be the maximum value\nafter calculating the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#end-time\" id=\"ref-for-end-time⑥\">end time</a> of each <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#child-effect\" id=\"ref-for-child-effect⑦\">child\neffect</a> in the group. The <span id=\"ref-for-end-time⑦\">end time</span> may be\nexpressed as a time or a percentage (in the case of a\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#progress-based-timeline\" id=\"ref-for-progress-based-timeline④\">progress-based timeline</a>). In the event of mixed time and\npercentage <span id=\"ref-for-end-time⑧\">end time</span>s, the largest time based value\nequates to 100% for the purpose of time scaling.</p>"
                 },
                 {
                   "html": "<p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#intrinsic-iteration-duration\" id=\"ref-for-intrinsic-iteration-duration⑥\">intrinsic iteration duration</a> is the result of\nevaluating <code>max(0, <var>maximum end\ntime</var>)</code>.</p>"
@@ -897,7 +897,7 @@
       ]
     },
     {
-      "html": "The procedure for computing the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#effect-value\" id=\"ref-for-effect-value\">effect value</a> of a single property\nreferenced by a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#keyframe-effect\" id=\"ref-for-keyframe-effect③\">keyframe effect</a> as one of its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#target-property\" id=\"ref-for-target-property\">target properties</a>,\nfor a given <var>iteration progress</var>, <var>current iteration</var> and <var>underlying value</var> is amended by inserting the following step\nafter the step to apply the keyframe effect composite mode.",
+      "html": "The procedure for computing the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#effect-value\" id=\"ref-for-effect-value\">effect value</a> of a single property\nreferenced by a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#keyframe-effect\" id=\"ref-for-keyframe-effect③\">keyframe effect</a> as one of its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#target-property\" id=\"ref-for-target-property\">target properties</a>,\nfor a given <var>iteration progress</var>, <var>current iteration</var> and\n<var>underlying value</var> is amended by inserting the following step\nafter the step to apply the keyframe effect composite mode.",
       "rationale": "for",
       "steps": [
         {
@@ -908,7 +908,7 @@
               "html": "<p>(As in web-animations-1).</p>"
             },
             {
-              "html": "<p>If this <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#keyframe-effect\" id=\"ref-for-keyframe-effect④\">keyframe effect</a> has an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#iteration-composite-operation\" id=\"ref-for-iteration-composite-operation\">iteration\ncomposite operation</a> of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#iteration-composite-operation-accumulate\" id=\"ref-for-iteration-composite-operation-accumulate\">accumulate</a>,\napply the following step <var>current iteration</var> times:</p>\n       <ul>\n        <li data-md=\"\">\n         <p>replace the property value of <var>target property</var> on <var>keyframe</var> with the result of combining the\nproperty value on the final keyframe in <var>property-specific\nkeyframes</var> (<var>V</var><sub>a</sub>) with the\nproperty value on <var>keyframe</var> (<var>V</var><sub>b</sub>) using the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#accumulation\" id=\"ref-for-accumulation\">accumulation procedure</a> defined for <var>target property</var>.</p>\n       </li></ul>"
+              "html": "<p>If this <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#keyframe-effect\" id=\"ref-for-keyframe-effect④\">keyframe effect</a> has an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#iteration-composite-operation\" id=\"ref-for-iteration-composite-operation\">iteration\ncomposite operation</a> of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#iteration-composite-operation-accumulate\" id=\"ref-for-iteration-composite-operation-accumulate\">accumulate</a>,\napply the following step <var>current iteration</var> times:</p>\n       <ul>\n        <li data-md=\"\">\n         <p>replace the property value of <var>target property</var>\non <var>keyframe</var> with the result of combining the\nproperty value on the final keyframe in <var>property-specific\nkeyframes</var> (<var>V</var><sub>a</sub>) with the\nproperty value on <var>keyframe</var>\n(<var>V</var><sub>b</sub>) using the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#accumulation\" id=\"ref-for-accumulation\">accumulation procedure</a>\ndefined for <var>target property</var>.</p>\n       </li></ul>"
             }
           ]
         }
@@ -923,11 +923,11 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#custom-effect\" id=\"ref-for-custom-effect⑨\">Custom effects</a> are called for each referencing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect⑧②\">animation effect</a> when the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-animations-and-send-events\" id=\"ref-for-update-animations-and-send-events①\">update animations and send events</a> procedure is performed\n(henceforth referred to simple as an <em>update</em>) based on\nthe following criteria.",
+      "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#custom-effect\" id=\"ref-for-custom-effect⑨\">Custom effects</a> are called for each referencing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect⑧②\">animation effect</a>\nwhen the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-animations-and-send-events\" id=\"ref-for-update-animations-and-send-events①\">update animations and send events</a> procedure is performed\n(henceforth referred to simple as an <em>update</em>) based on\nthe following criteria.",
       "rationale": "resolve",
       "steps": [
         {
-          "html": "<p>If, on the previous update, the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect⑧③\">animation effect</a> referencing the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#custom-effect\" id=\"ref-for-custom-effect①⓪\">custom effect</a>:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>was <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#in-effect\" id=\"ref-for-in-effect\">in effect</a>, and</p>\n       </li><li data-md=\"\">\n        <p>referenced this same <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#custom-effect\" id=\"ref-for-custom-effect①①\">custom effect</a>, and</p>\n       </li><li data-md=\"\">\n        <p>had a different <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#effect-target-target-element\" id=\"ref-for-effect-target-target-element\">target element</a></p>\n      </li></ul>\n      <p>Call the callback passing an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved⑤②\">unresolved</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-progress\" id=\"ref-for-iteration-progress⑦\">iteration progress</a> and the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#effect-target-target-element\" id=\"ref-for-effect-target-target-element①\">target element</a> from the previous update as\nparameters to the callback.</p>"
+          "html": "<p>If, on the previous update, the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect⑧③\">animation effect</a>\nreferencing the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#custom-effect\" id=\"ref-for-custom-effect①⓪\">custom effect</a>:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>was <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#in-effect\" id=\"ref-for-in-effect\">in effect</a>, and</p>\n       </li><li data-md=\"\">\n        <p>referenced this same <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#custom-effect\" id=\"ref-for-custom-effect①①\">custom effect</a>, and</p>\n       </li><li data-md=\"\">\n        <p>had a different <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#effect-target-target-element\" id=\"ref-for-effect-target-target-element\">target element</a></p>\n      </li></ul>\n      <p>Call the callback passing an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved⑤②\">unresolved</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-progress\" id=\"ref-for-iteration-progress⑦\">iteration progress</a>\nand the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#effect-target-target-element\" id=\"ref-for-effect-target-target-element①\">target element</a> from the previous update as\nparameters to the callback.</p>"
         },
         {
           "html": "Call the callback for the current <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#effect-target-target-element\" id=\"ref-for-effect-target-target-element②\">target element</a> based on\nthe first matching condition from the following:",
@@ -938,7 +938,7 @@
               "steps": [
                 {
                   "case": "If the animation effect referencing the custom effect is not in effect but was in effect in the previous update,",
-                  "html": "<p>Call the callback passing an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved⑤③\">unresolved</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-progress\" id=\"ref-for-iteration-progress⑧\">iteration progress</a> and the current <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#effect-target-target-element\" id=\"ref-for-effect-target-target-element③\">target element</a> as parameters to\nthe callback.</p>"
+                  "html": "<p>Call the callback passing an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#unresolved\" id=\"ref-for-unresolved⑤③\">unresolved</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-progress\" id=\"ref-for-iteration-progress⑧\">iteration progress</a>\nand the current <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#effect-target-target-element\" id=\"ref-for-effect-target-target-element③\">target element</a> as parameters to\nthe callback.</p>"
                 },
                 {
                   "case": "Otherwise, if the animation effect referencing the custom effect:",
@@ -982,7 +982,7 @@
             },
             {
               "case": "If state is inverse,",
-              "html": "<p>the effect is to reset the associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect⑨②\">animation effect</a> back to\n its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect-before-phase\" id=\"ref-for-animation-effect-before-phase⑧\">before phase</a> and its associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation②⑥\">animation</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time②⑨\">start time</a> to zero.</p>"
+              "html": "<p>the effect is to reset the associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect⑨②\">animation effect</a> back to\n its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect-before-phase\" id=\"ref-for-animation-effect-before-phase⑧\">before phase</a> and its associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation②⑥\">animation</a>’s\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-start-time\" id=\"ref-for-animation-start-time②⑨\">start time</a> to zero.</p>"
             }
           ]
         }
@@ -1031,7 +1031,7 @@
       ]
     },
     {
-      "html": "Depending on its most recent <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-trigger-state\" id=\"ref-for-animation-trigger-state①③\">state</a> <var>state</var>, the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-trigger-active-interval\" id=\"ref-for-animation-trigger-active-interval①⑧\">active interval</a> is defined as follows:",
+      "html": "Depending on its most recent <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-trigger-state\" id=\"ref-for-animation-trigger-state①③\">state</a> <var>state</var>, the\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-trigger-active-interval\" id=\"ref-for-animation-trigger-active-interval①⑧\">active interval</a> is defined as follows:",
       "rationale": ".switch",
       "steps": [
         {
@@ -1092,7 +1092,7 @@
     {
       "name": "updating animation trigger state",
       "href": "https://drafts.csswg.org/web-animations-2/#updating-animation-trigger-state",
-      "html": "The procedure of <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"updating-animation-trigger-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">updating animation trigger state</dfn> of an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-trigger\" id=\"ref-for-animation-trigger①⓪\">animation trigger</a> <var>trigger</var> is as follows:",
+      "html": "The procedure of <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"updating-animation-trigger-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">updating animation trigger state</dfn>\n  of an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#animation-trigger\" id=\"ref-for-animation-trigger①⓪\">animation trigger</a> <var>trigger</var> is as follows:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1185,7 +1185,7 @@
           "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group②⑤\">parent group</a>, abort these steps.</p>"
         },
         {
-          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect⑨⑧\">animation effects</a> in <var>effects</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect⑨⑨\">animation effect</span>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span> exception and abort these steps.</p>"
+          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect⑨⑧\">animation effects</a> in <var>effects</var> is an\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect⑨⑨\">animation effect</span>,\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span>\nexception and abort these steps.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children\">Insert</a> <var>effects</var> before\nthis <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①⓪⓪\">animation effect</a>.</p>"
@@ -1202,36 +1202,36 @@
           "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group②⑥\">parent group</a>, abort these steps.</p>"
         },
         {
-          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①⓪②\">animation effects</a> in <var>effects</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor②\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect①⓪③\">animation effect</span>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span> exception and abort these steps.</p>"
+          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①⓪②\">animation effects</a> in <var>effects</var> is an\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor②\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect①⓪③\">animation effect</span>,\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span>\nexception and abort these steps.</p>"
         },
         {
           "html": "<p>Let <var>reference child</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#next-sibling-not-included\" id=\"ref-for-next-sibling-not-included\">next sibling of\nthis animation effect not in <var>effects</var></a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children①\">Insert</a> <var>effects</var> before <var>reference child</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children①\">Insert</a> <var>effects</var> before\n<var>reference child</var>.</p>"
         }
       ]
     },
     {
       "name": "AnimationEffect/replace(...effects)",
       "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-replace",
-      "html": "Replaces this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#animationeffect\" id=\"ref-for-animationeffect⑨\">AnimationEffect</a></code> with the passed in <var>effects</var>.",
+      "html": "Replaces this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#animationeffect\" id=\"ref-for-animationeffect⑨\">AnimationEffect</a></code> with the passed in\n<var>effects</var>.",
       "rationale": "if",
       "steps": [
         {
           "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group②⑦\">parent group</a>, abort these steps.</p>"
         },
         {
-          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①⓪④\">animation effects</a> in <var>effects</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor③\">inclusive ancestor</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group②⑧\">parent group</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span> exception and abort these steps.</p>"
+          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①⓪④\">animation effects</a> in <var>effects</var> is an\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor③\">inclusive ancestor</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group②⑧\">parent group</a>\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span>\nexception and abort these steps.</p>"
         },
         {
           "html": "<p>Let <var>reference child</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#next-sibling-not-included\" id=\"ref-for-next-sibling-not-included①\">next sibling of\nthis animation effect not in <var>effects</var></a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#remove-an-animation-effect\" id=\"ref-for-remove-an-animation-effect①\">Remove</a> this <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①⓪⑤\">animation effect</a> from its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group②⑨\">parent group</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#remove-an-animation-effect\" id=\"ref-for-remove-an-animation-effect①\">Remove</a> this\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①⓪⑤\">animation effect</a> from its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group②⑨\">parent group</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children②\">Insert</a> <var>effects</var> before <var>reference child</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children②\">Insert</a> <var>effects</var> before\n<var>reference child</var>.</p>"
         }
       ]
     },
@@ -1245,16 +1245,16 @@
           "html": "<p>Create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#groupeffect\" id=\"ref-for-groupeffect⑥\">GroupEffect</a></code> object, <var>group</var>.</p>"
         },
         {
-          "html": "<p>Let <var>timing input</var> be the result of applying the\nprocedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#process-a-timing-argument\" id=\"ref-for-process-a-timing-argument\">process a timing argument</a> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-groupeffect-groupeffect-children-timing-timing\" id=\"ref-for-dom-groupeffect-groupeffect-children-timing-timing①\">timing</a></code>.</p>"
+          "html": "<p>Let <var>timing input</var> be the result of applying the\nprocedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#process-a-timing-argument\" id=\"ref-for-process-a-timing-argument\">process a timing argument</a> to\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-groupeffect-groupeffect-children-timing-timing\" id=\"ref-for-dom-groupeffect-groupeffect-children-timing-timing①\">timing</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>timing input</var> be the result corresponding to the first\nmatching condition from below.</p>\n        <dl>\n         <dt data-md=\"\">If <var>options</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-effecttiming\" id=\"ref-for-dictdef-effecttiming②\">EffectTiming</a></code> object,\n         </dt><dd data-md=\"\">\n          <p>Let <var>timing input</var> be <var>options</var>.</p>\n         </dd><dt data-md=\"\">Otherwise (if <var>options</var> is a <code>double</code>),\n         </dt><dd data-md=\"\">\n          <p>Let <var>timing input</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-effecttiming\" id=\"ref-for-dictdef-effecttiming③\">EffectTiming</a></code> object with all members set to their default values\nand <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-effecttiming-duration\" id=\"ref-for-dom-effecttiming-duration③\">duration</a></code> set to <var>options</var>.</p>\n        </dd></dl>"
+          "html": "<p>Let <var>timing input</var> be the result corresponding to the first\nmatching condition from below.</p>\n        <dl>\n         <dt data-md=\"\">If <var>options</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-effecttiming\" id=\"ref-for-dictdef-effecttiming②\">EffectTiming</a></code> object,\n         </dt><dd data-md=\"\">\n          <p>Let <var>timing input</var> be <var>options</var>.</p>\n         </dd><dt data-md=\"\">Otherwise (if <var>options</var> is a <code>double</code>),\n         </dt><dd data-md=\"\">\n          <p>Let <var>timing input</var> be a new\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-effecttiming\" id=\"ref-for-dictdef-effecttiming③\">EffectTiming</a></code> object with all members set to their default values\nand <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-effecttiming-duration\" id=\"ref-for-dom-effecttiming-duration③\">duration</a></code> set to <var>options</var>.</p>\n        </dd></dl>"
         },
         {
           "html": "<p>Call the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-the-timing-properties-of-an-animation-effect\" id=\"ref-for-update-the-timing-properties-of-an-animation-effect\">update the timing properties of an animation effect</a> of <var>group</var> from <var>timing input</var>.</p>\n        <p>If that procedure causes an exception to be thrown, propagate the\nexception and abort this procedure.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children③\">Insert</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-groupeffect-groupeffect-children-timing-children\" id=\"ref-for-dom-groupeffect-groupeffect-children-timing-children①\">children</a></code> before <code>null</code>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children③\">Insert</a>\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-groupeffect-groupeffect-children-timing-children\" id=\"ref-for-dom-groupeffect-groupeffect-children-timing-children①\">children</a></code>\nbefore <code>null</code>.</p>"
         }
       ]
     },
@@ -1263,7 +1263,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①①⑧\">animation effects</a> in <var>effects</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor④\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect①①⑨\">animation effect</span>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span> exception and abort these steps.</p>"
+          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①①⑧\">animation effects</a> in <var>effects</var> is an\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor④\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect①①⑨\">animation effect</span>,\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span>\nexception and abort these steps.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children④\">Insert</a> <var>effects</var> before\nthe <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#first-child\" id=\"ref-for-first-child①\">first child</a>.</p>"
@@ -1277,10 +1277,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①②⓪\">animation effects</a> in <var>effects</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor⑤\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect①②①\">animation effect</span>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⓪\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span> exception and abort these steps.</p>"
+          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①②⓪\">animation effects</a> in <var>effects</var> is an\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor⑤\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect①②①\">animation effect</span>,\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⓪\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span>\nexception and abort these steps.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children⑤\">Insert</a> <var>effects</var> before <code>null</code>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children⑤\">Insert</a> <var>effects</var> before\n<code>null</code>.</p>"
         }
       ]
     },
@@ -1294,37 +1294,37 @@
           "html": "<p>Let <var>source</var> be this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#groupeffect\" id=\"ref-for-groupeffect⑨\">GroupEffect</a></code> object,\nthe object to be cloned.</p>"
         },
         {
-          "html": "<p>Let <var>cloned timing</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-effecttiming\" id=\"ref-for-dictdef-effecttiming④\">EffectTiming</a></code> object whose members are assigned\nthe value of the attribute with the same name on <code><var>source</var>.getTiming()</code>.</p>"
+          "html": "<p>Let <var>cloned timing</var> be a new\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-effecttiming\" id=\"ref-for-dictdef-effecttiming④\">EffectTiming</a></code> object whose members are assigned\nthe value of the attribute with the same name on\n<code><var>source</var>.getTiming()</code>.</p>"
         },
         {
-          "html": "<p>Let <var>cloned children</var> be an empty sequence of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#animationeffect\" id=\"ref-for-animationeffect①⑦\">AnimationEffect</a></code> objects.</p>"
+          "html": "<p>Let <var>cloned children</var> be an empty sequence of\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#animationeffect\" id=\"ref-for-animationeffect①⑦\">AnimationEffect</a></code> objects.</p>"
         },
         {
-          "html": "<p>For each <var>child</var> in <code><var>source</var>.children</code>, append the result\nof calling <code><var>child</var>.clone()</code> to <var>cloned children</var>.</p>"
+          "html": "<p>For each <var>child</var> in\n<code><var>source</var>.children</code>, append the result\nof calling <code><var>child</var>.clone()</code>\nto <var>cloned children</var>.</p>"
         },
         {
-          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#groupeffect\" id=\"ref-for-groupeffect①⓪\">GroupEffect</a></code> object created by\ncalling the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-groupeffect-groupeffect\" id=\"ref-for-dom-groupeffect-groupeffect①\">GroupEffect()</a></code> constructor with parameters <code>GroupEffect(<var>cloned children</var>, <var>cloned timing</var>)</code>.</p>"
+          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#groupeffect\" id=\"ref-for-groupeffect①⓪\">GroupEffect</a></code> object created by\ncalling the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-groupeffect-groupeffect\" id=\"ref-for-dom-groupeffect-groupeffect①\">GroupEffect()</a></code> constructor with parameters\n<code>GroupEffect(<var>cloned children</var>,\n<var>cloned timing</var>)</code>.</p>"
         }
       ]
     },
     {
       "name": "next sibling not included",
       "href": "https://drafts.csswg.org/web-animations-2/#next-sibling-not-included",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"next sibling not included\" data-noexport=\"\" id=\"next-sibling-not-included\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">next sibling of <var>effect</var> not included</dfn> in a set of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①②③\">animation\neffects</a>, <var>effects</var> is determined using the following\nsteps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"next sibling not included\" data-noexport=\"\" id=\"next-sibling-not-included\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">next sibling of\n<var>effect</var> not included</dfn> in a set of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①②③\">animation\neffects</a>, <var>effects</var> is determined using the following\nsteps:",
       "rationale": "let",
       "steps": [
         {
           "html": "<p>Let <var>context effect</var> be <var>effect</var>.</p>"
         },
         {
-          "html": "While the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#next-sibling\" id=\"ref-for-next-sibling①\">next sibling</a> of <var>context effect</var> is not <code>null</code> perform the following steps:",
+          "html": "While the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#next-sibling\" id=\"ref-for-next-sibling①\">next sibling</a> of <var>context effect</var> is not\n<code>null</code> perform the following steps:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>context effect</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#next-sibling\" id=\"ref-for-next-sibling②\">next sibling</a> of <var>context effect</var>.</p>"
+              "html": "<p>Let <var>context effect</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#next-sibling\" id=\"ref-for-next-sibling②\">next sibling</a> of\n<var>context effect</var>.</p>"
             },
             {
-              "html": "<p>If <var>context effect</var> is not in <var>effects</var> return <var>context effect</var> and abort these steps.</p>"
+              "html": "<p>If <var>context effect</var> is not in <var>effects</var> return\n<var>context effect</var> and abort these steps.</p>"
             }
           ]
         },
@@ -1336,7 +1336,7 @@
     {
       "name": "remove an animation effect",
       "href": "https://drafts.csswg.org/web-animations-2/#remove-an-animation-effect",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"remove an animation effect\" data-noexport=\"\" id=\"remove-an-animation-effect\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove</dfn> a <var>effect</var> from its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group③③\">parent group</a> or <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation③⑧\">animation</a>, perform the steps corresponding to the first\nmatching condition from below, if any:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"remove an animation effect\" data-noexport=\"\" id=\"remove-an-animation-effect\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove</dfn> a\n<var>effect</var> from its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#parent-group\" id=\"ref-for-parent-group③③\">parent group</a> or\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation\" id=\"ref-for-animation③⑧\">animation</a>, perform the steps corresponding to the first\nmatching condition from below, if any:",
       "rationale": ".switch",
       "steps": [
         {
@@ -1357,11 +1357,11 @@
     {
       "name": "insert children",
       "href": "https://drafts.csswg.org/web-animations-2/#insert-children",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"insert children\" data-noexport=\"\" id=\"insert-children\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">insert</dfn> a series of zero or\nmore <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①②④\">animation effects</a>, <var>effects</var>, to <var>parent</var>’s list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#child-effect\" id=\"ref-for-child-effect①⑤\">child effects</a> before <var>reference child</var> perform the following steps for each <var>effect</var> in <var>effects</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"insert children\" data-noexport=\"\" id=\"insert-children\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">insert</dfn> a series of zero or\nmore <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①②④\">animation effects</a>, <var>effects</var>, to\n<var>parent</var>’s list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#child-effect\" id=\"ref-for-child-effect①⑤\">child effects</a> before\n<var>reference child</var> perform the following steps for each\n<var>effect</var> in <var>effects</var>:",
       "rationale": "remove",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#remove-an-animation-effect\" id=\"ref-for-remove-an-animation-effect③\">Remove</a> <var>effect</var> from its parent.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#remove-an-animation-effect\" id=\"ref-for-remove-an-animation-effect③\">Remove</a> <var>effect</var>\nfrom its parent.</p>"
         },
         {
           "html": "<p>Insert <var>effect</var> to <var>parent</var>’s list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#child-effect\" id=\"ref-for-child-effect①⑥\">child\neffects</a> before <var>reference child</var></p>"
@@ -1375,7 +1375,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>options</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-keyframeeffectoptions\" id=\"ref-for-dictdef-keyframeeffectoptions\">KeyframeEffectOptions</a></code> object,\nassign the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-iterationcomposite\" id=\"ref-for-dom-keyframeeffect-iterationcomposite①\">iterationComposite</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-composite\" id=\"ref-for-dom-keyframeeffect-composite\">composite</a></code>, properties of <var>effect</var> to the\ncorresponding value from <var>options</var>.</p>\n        <p>When assigning these properties, the error-handling defined for the\ncorresponding setters on the <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"interface\" href=\"https://drafts.csswg.org/web-animations-1/#keyframeeffect\" id=\"ref-for-keyframeeffect④\">KeyframeEffect</a></code> interface is applied.\nIf any of those setters require an exception to be thrown\nfor the values specified by <var>options</var>, this procedure must <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①①\">throw</a> the same exception and abort all further steps.</p>"
+          "html": "<p>If <var>options</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-keyframeeffectoptions\" id=\"ref-for-dictdef-keyframeeffectoptions\">KeyframeEffectOptions</a></code> object,\nassign the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-iterationcomposite\" id=\"ref-for-dom-keyframeeffect-iterationcomposite①\">iterationComposite</a></code>, and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-composite\" id=\"ref-for-dom-keyframeeffect-composite\">composite</a></code>, properties of <var>effect</var> to the\ncorresponding value from <var>options</var>.</p>\n        <p>When assigning these properties, the error-handling defined for the\ncorresponding setters on the <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"interface\" href=\"https://drafts.csswg.org/web-animations-1/#keyframeeffect\" id=\"ref-for-keyframeeffect④\">KeyframeEffect</a></code> interface is applied.\nIf any of those setters require an exception to be thrown\nfor the values specified by <var>options</var>, this procedure must\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①①\">throw</a> the same exception and abort all further steps.</p>"
         }
       ]
     },
@@ -1386,10 +1386,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>options</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-keyframeanimationoptions\" id=\"ref-for-dictdef-keyframeanimationoptions\">KeyframeAnimationOptions</a></code> object,\nlet <var>trigger</var> be the <code>trigger</code> member of <var>options</var> or, if <code>trigger</code> member of <var>options</var> is missing,\na newly created <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#animationtrigger\" id=\"ref-for-animationtrigger②\">AnimationTrigger</a></code> with an empty <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dictdef-animationtriggeroptions\" id=\"ref-for-dictdef-animationtriggeroptions\">AnimationTriggerOptions</a></code> dictionary as its options.</p>"
+          "html": "<p>If <var>options</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-keyframeanimationoptions\" id=\"ref-for-dictdef-keyframeanimationoptions\">KeyframeAnimationOptions</a></code> object,\nlet <var>trigger</var> be the <code>trigger</code> member of <var>options</var>\nor, if <code>trigger</code> member of <var>options</var> is missing,\na newly created <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#animationtrigger\" id=\"ref-for-animationtrigger②\">AnimationTrigger</a></code> with an empty\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dictdef-animationtriggeroptions\" id=\"ref-for-dictdef-animationtriggeroptions\">AnimationTriggerOptions</a></code> dictionary as its options.</p>"
         },
         {
-          "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#setting-a-trigger-of-an-animation\" id=\"ref-for-setting-a-trigger-of-an-animation\">setting a trigger of an animation</a> for <var>animation</var> with the <var>auto-rewind</var> flag set to true.</p>"
+          "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#setting-a-trigger-of-an-animation\" id=\"ref-for-setting-a-trigger-of-an-animation\">setting a trigger of an animation</a> for <var>animation</var>\nwith the <var>auto-rewind</var> flag set to true.</p>"
         }
       ]
     },
@@ -1412,13 +1412,13 @@
           "html": "<p>Set <var>trigger</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-animationtrigger-behavior\" id=\"ref-for-dom-animationtrigger-behavior①\">behavior</a></code> to <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-behavior\" id=\"ref-for-dom-animationtriggeroptions-behavior\">behavior</a></code>.</p>"
         },
         {
-          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#default-range\" id=\"ref-for-default-range②\">default range</a> of <var>trigger</var> using <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-rangestart\" id=\"ref-for-dom-animationtriggeroptions-rangestart\">rangeStart</a></code> and <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-rangeend\" id=\"ref-for-dom-animationtriggeroptions-rangeend\">rangeEnd</a></code>,\n  following the same rules as the KeyframeAnimationOption <a href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeanimationoptions-rangestart\" id=\"ref-for-dom-keyframeanimationoptions-rangestart④\">rangeStart</a> and <a href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeanimationoptions-rangeend\" id=\"ref-for-dom-keyframeanimationoptions-rangeend④\">rangeEnd</a> respectively.</p>"
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#default-range\" id=\"ref-for-default-range②\">default range</a> of <var>trigger</var> using <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-rangestart\" id=\"ref-for-dom-animationtriggeroptions-rangestart\">rangeStart</a></code> and <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-rangeend\" id=\"ref-for-dom-animationtriggeroptions-rangeend\">rangeEnd</a></code>,\n  following the same rules as the KeyframeAnimationOption\n  <a href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeanimationoptions-rangestart\" id=\"ref-for-dom-keyframeanimationoptions-rangestart④\">rangeStart</a> and\n  <a href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeanimationoptions-rangeend\" id=\"ref-for-dom-keyframeanimationoptions-rangeend④\">rangeEnd</a> respectively.</p>"
         },
         {
           "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#exit-range\" id=\"ref-for-exit-range②\">exit range</a> of <var>trigger</var> using <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-exitrangestart\" id=\"ref-for-dom-animationtriggeroptions-exitrangestart\">exitRangeStart</a></code> and <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-exitrangeend\" id=\"ref-for-dom-animationtriggeroptions-exitrangeend\">exitRangeEnd</a></code>,\n  following the same rules above for <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#default-range\" id=\"ref-for-default-range③\">default range</a>, unless they are set to\n  \"auto\", in which case they are set to their corresponding side\n  of the <span id=\"ref-for-default-range④\">default range</span>.</p>"
         },
         {
-          "html": "<p>Run the procedure for <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#setting-timeline-of-animation-trigger\" id=\"ref-for-setting-timeline-of-animation-trigger\">setting timeline of animation trigger</a> on <var>trigger</var> passing <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-timeline\" id=\"ref-for-dom-animationtriggeroptions-timeline\">timeline</a></code> as the <var>new timeline</var>.</p>"
+          "html": "<p>Run the procedure for <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#setting-timeline-of-animation-trigger\" id=\"ref-for-setting-timeline-of-animation-trigger\">setting timeline of animation trigger</a>\n  on <var>trigger</var> passing <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-animationtriggeroptions-timeline\" id=\"ref-for-dom-animationtriggeroptions-timeline\">timeline</a></code> as the <var>new timeline</var>.</p>"
         }
       ]
     }

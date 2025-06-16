@@ -26,7 +26,7 @@
           "html": "Remove the first item from <var>endpoints</var>.\n\t\t\t\tLet <var>end</var> be equal to that item."
         },
         {
-          "html": "If <var>endpoints</var> is non-empty, and any of the following conditions are true... \n      \n       ...then go back to step 5.",
+          "html": "If <var>endpoints</var> is non-empty, and any of the following conditions are true...\n\t\t\t\t\n      \n      \n\t\t\t\t...then go back to step 5.",
           "ignored": [
             "break is none. break is spanning-item, and start is not discontiguous with the first item in endpoints. break is intersection, and start is not discontiguous with the first item in endpoints, and the intersection is flanked by spanning items on opposing sides."
           ]
@@ -100,18 +100,18 @@
               "html": "Let <var>trailing gaps</var> contain the last <var>trailing count</var> items in <var>gaps</var>,\n\t\t\t\t\t\texcluding any items in <var>leading gaps</var>."
             },
             {
-              "html": "Let <var>auto gaps</var> contain any items in <var>gaps</var> that are not in either <var>leading gaps</var> or <var>trailing gaps</var>."
+              "html": "Let <var>auto gaps</var> contain any items in <var>gaps</var>\n\t\t\t\t\t\tthat are not in either <var>leading gaps</var> or <var>trailing gaps</var>."
             }
           ]
         },
         {
-          "html": "If <var>leading gaps</var> is non-empty, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#assign-gap-decoration-values\" id=\"ref-for-assign-gap-decoration-values\">assign gap decoration values</a> to <var>leading gaps</var> using the first <var>leading count</var> items in <var>values</var>."
+          "html": "If <var>leading gaps</var> is non-empty,\n\t\t\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#assign-gap-decoration-values\" id=\"ref-for-assign-gap-decoration-values\">assign gap decoration values</a> to <var>leading gaps</var>\n\t\t\t\tusing the first <var>leading count</var> items in <var>values</var>."
         },
         {
-          "html": "If <var>trailing gaps</var> is non-empty, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#assign-gap-decoration-values-in-reverse\" id=\"ref-for-assign-gap-decoration-values-in-reverse\">assign gap decoration values in reverse</a> to <var>trailing gaps</var> using the last <var>trailing count</var> items in <var>values</var>."
+          "html": "If <var>trailing gaps</var> is non-empty,\n\t\t\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#assign-gap-decoration-values-in-reverse\" id=\"ref-for-assign-gap-decoration-values-in-reverse\">assign gap decoration values in reverse</a> to <var>trailing gaps</var>\n\t\t\t\tusing the last <var>trailing count</var> items in <var>values</var>."
         },
         {
-          "html": "If <var>auto gaps</var> is non-empty, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#assign-gap-decoration-values\" id=\"ref-for-assign-gap-decoration-values①\">assign gap decoration values</a> to <var>auto gaps</var> using the list of values in the second argument of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#auto-repeater\" id=\"ref-for-auto-repeater⑥\">auto repeater</a>."
+          "html": "If <var>auto gaps</var> is non-empty,\n\t\t\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#assign-gap-decoration-values\" id=\"ref-for-assign-gap-decoration-values①\">assign gap decoration values</a> to <var>auto gaps</var>\n\t\t\t\tusing the list of values in the second argument of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#auto-repeater\" id=\"ref-for-auto-repeater⑥\">auto repeater</a>."
         }
       ]
     }

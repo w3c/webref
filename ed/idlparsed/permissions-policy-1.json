@@ -8,8 +8,7 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "PermissionsPolicy",
-          "PermissionsPolicyViolationReportBody"
+          "PermissionsPolicy"
         ]
       }
     },
@@ -177,160 +176,119 @@
         "href": "https://w3c.github.io/webappsec-permissions-policy/#permissionspolicy"
       },
       "PermissionsPolicyViolationReportBody": {
-        "fragment": "[Exposed=Window]\ninterface PermissionsPolicyViolationReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString featureId;\n  readonly attribute DOMString? sourceFile;\n  readonly attribute long? lineNumber;\n  readonly attribute long? columnNumber;\n  readonly attribute DOMString disposition;\n  readonly attribute DOMString? allowAttribute;\n  readonly attribute DOMString? srcAttribute;\n};",
-        "type": "interface",
+        "fragment": "dictionary PermissionsPolicyViolationReportBody : ReportBody {\n  DOMString featureId;\n  DOMString? sourceFile;\n  long? lineNumber;\n  long? columnNumber;\n  DOMString disposition;\n  DOMString? allowAttribute;\n  DOMString? srcAttribute;\n};",
+        "type": "dictionary",
         "name": "PermissionsPolicyViolationReportBody",
         "inheritance": "ReportBody",
         "members": [
           {
-            "type": "operation",
-            "name": "toJSON",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "object"
-            },
-            "arguments": [],
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "Default",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "href": "https://w3c.github.io/webappsec-permissions-policy/#dom-permissionspolicyviolationreportbody-tojson"
-          },
-          {
-            "type": "attribute",
+            "type": "field",
             "name": "featureId",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-permissions-policy/#dom-permissionspolicyviolationreportbody-featureid"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "sourceFile",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-permissions-policy/#dom-permissionspolicyviolationreportbody-sourcefile"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "lineNumber",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "long"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-permissions-policy/#dom-permissionspolicyviolationreportbody-linenumber"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "columnNumber",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "long"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-permissions-policy/#dom-permissionspolicyviolationreportbody-columnnumber"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "disposition",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-permissions-policy/#dom-permissionspolicyviolationreportbody-disposition"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "allowAttribute",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-permissions-policy/#dom-permissionspolicyviolationreportbody-allowattribute"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "srcAttribute",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-permissions-policy/#dom-permissionspolicyviolationreportbody-srcattribute"
+            "default": null,
+            "required": false
           }
         ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody"
+        "extAttrs": [],
+        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -408,8 +366,7 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "PermissionsPolicy",
-        "PermissionsPolicyViolationReportBody"
+        "PermissionsPolicy"
       ]
     },
     "dependencies": {

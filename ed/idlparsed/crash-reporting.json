@@ -6,136 +6,83 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {
-        "Window": [
-          "CrashReportBody"
-        ],
-        "Worker": [
-          "CrashReportBody"
-        ]
-      }
+      "functions": {}
     },
     "idlNames": {
       "CrashReportBody": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface CrashReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString? reason;\n  readonly attribute DOMString? stack;\n  readonly attribute boolean? is_top_level;\n  readonly attribute DocumentVisibilityState? page_visibility;\n};",
-        "type": "interface",
+        "fragment": "dictionary CrashReportBody : ReportBody {\n  DOMString? reason;\n  DOMString? stack;\n  boolean? is_top_level;\n  DocumentVisibilityState? page_visibility;\n};",
+        "type": "dictionary",
         "name": "CrashReportBody",
         "inheritance": "ReportBody",
         "members": [
           {
-            "type": "operation",
-            "name": "toJSON",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "object"
-            },
-            "arguments": [],
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "Default",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": ""
-          },
-          {
-            "type": "attribute",
+            "type": "field",
             "name": "reason",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "stack",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "is_top_level",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "boolean"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "page_visibility",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "DocumentVisibilityState"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
+            "default": null,
+            "required": false
           }
         ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
+        "extAttrs": [],
         "partial": false
       }
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {
-      "Window": [
-        "CrashReportBody"
-      ],
-      "Worker": [
-        "CrashReportBody"
-      ]
-    },
+    "exposed": {},
     "dependencies": {
       "CrashReportBody": [
         "ReportBody",

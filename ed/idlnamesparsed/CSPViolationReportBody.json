@@ -1,24 +1,23 @@
 {
   "name": "CSPViolationReportBody",
-  "type": "interface",
+  "type": "dictionary",
   "defined": {
     "spec": {
       "title": "Content Security Policy Level 3",
       "url": "https://www.w3.org/TR/CSP3/"
     },
-    "fragment": "[Exposed=Window]\ninterface CSPViolationReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute USVString documentURL;\n  readonly attribute USVString? referrer;\n  readonly attribute USVString? blockedURL;\n  readonly attribute DOMString effectiveDirective;\n  readonly attribute DOMString originalPolicy;\n  readonly attribute USVString? sourceFile;\n  readonly attribute DOMString? sample;\n  readonly attribute SecurityPolicyViolationEventDisposition disposition;\n  readonly attribute unsigned short statusCode;\n  readonly attribute unsigned long? lineNumber;\n  readonly attribute unsigned long? columnNumber;\n};",
-    "href": "https://w3c.github.io/webappsec-csp/#cspviolationreportbody"
+    "fragment": "dictionary CSPViolationReportBody : ReportBody {\n  USVString documentURL;\n  USVString? referrer;\n  USVString? blockedURL;\n  DOMString effectiveDirective;\n  DOMString originalPolicy;\n  USVString? sourceFile;\n  DOMString? sample;\n  SecurityPolicyViolationEventDisposition disposition;\n  unsigned short statusCode;\n  unsigned long? lineNumber;\n  unsigned long? columnNumber;\n};"
   },
   "extended": [],
   "inheritance": {
     "name": "ReportBody",
-    "type": "interface",
+    "type": "dictionary",
     "defined": {
       "spec": {
         "title": "Reporting API",
         "url": "https://www.w3.org/TR/reporting-1/"
       },
-      "fragment": "[Exposed=(Window,Worker)]\ninterface ReportBody {\n  [Default] object toJSON();\n};",
+      "fragment": "dictionary ReportBody {\n};",
       "href": "https://w3c.github.io/reporting/#reportbody"
     },
     "extended": [],

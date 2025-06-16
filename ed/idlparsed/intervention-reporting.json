@@ -6,158 +6,98 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {
-        "Window": [
-          "InterventionReportBody"
-        ],
-        "Worker": [
-          "InterventionReportBody"
-        ]
-      }
+      "functions": {}
     },
     "idlNames": {
       "InterventionReportBody": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface InterventionReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString id;\n  readonly attribute DOMString message;\n  readonly attribute DOMString? sourceFile;\n  readonly attribute unsigned long? lineNumber;\n  readonly attribute unsigned long? columnNumber;\n};",
-        "type": "interface",
+        "fragment": "dictionary InterventionReportBody : ReportBody {\n  DOMString id;\n  DOMString message;\n  DOMString? sourceFile;\n  unsigned long? lineNumber;\n  unsigned long? columnNumber;\n};",
+        "type": "dictionary",
         "name": "InterventionReportBody",
         "inheritance": "ReportBody",
         "members": [
           {
-            "type": "operation",
-            "name": "toJSON",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "object"
-            },
-            "arguments": [],
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "Default",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "href": "https://wicg.github.io/intervention-reporting/#dom-interventionreportbody-tojson"
-          },
-          {
-            "type": "attribute",
+            "type": "field",
             "name": "id",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://wicg.github.io/intervention-reporting/#dom-interventionreportbody-id"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "message",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://wicg.github.io/intervention-reporting/#dom-interventionreportbody-message"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "sourceFile",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://wicg.github.io/intervention-reporting/#dom-interventionreportbody-sourcefile"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "lineNumber",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "unsigned long"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://wicg.github.io/intervention-reporting/#dom-interventionreportbody-linenumber"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "columnNumber",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "unsigned long"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://wicg.github.io/intervention-reporting/#dom-interventionreportbody-columnnumber"
+            "default": null,
+            "required": false
           }
         ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://wicg.github.io/intervention-reporting/#interventionreportbody"
+        "extAttrs": [],
+        "partial": false
       }
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {
-      "Window": [
-        "InterventionReportBody"
-      ],
-      "Worker": [
-        "InterventionReportBody"
-      ]
-    },
+    "exposed": {},
     "dependencies": {
       "InterventionReportBody": [
         "ReportBody"

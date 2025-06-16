@@ -1,12 +1,13 @@
 {
-  "name": "PermissionsPolicyViolationReportBody",
+  "name": "IntegrityViolationReportBody",
   "type": "dictionary",
   "defined": {
     "spec": {
-      "title": "Permissions Policy",
-      "url": "https://www.w3.org/TR/permissions-policy-1/"
+      "title": "Subresource Integrity",
+      "url": "https://www.w3.org/TR/sri-2/"
     },
-    "fragment": "dictionary PermissionsPolicyViolationReportBody : ReportBody {\n  DOMString featureId;\n  DOMString? sourceFile;\n  long? lineNumber;\n  long? columnNumber;\n  DOMString disposition;\n  DOMString? allowAttribute;\n  DOMString? srcAttribute;\n};"
+    "fragment": "dictionary IntegrityViolationReportBody : ReportBody {\n  USVString documentURL;\n  USVString blockedURL;\n  USVString destination;\n  boolean   reportOnly;\n};",
+    "href": "https://w3c.github.io/webappsec-subresource-integrity/#dictdef-integrityviolationreportbody"
   },
   "extended": [],
   "inheritance": {

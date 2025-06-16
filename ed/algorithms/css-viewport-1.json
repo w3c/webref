@@ -5,14 +5,14 @@
   },
   "algorithms": [
     {
-      "html": "<span class=\"method-name\">Set-Property</span> matches the <a href=\"https://drafts.csswg.org/css-viewport/#meta-properties\">listed property names</a> case-insensitively.\nThe <code class=\"variable\">property-value</code> strings are interpreted\nas follows:",
+      "html": "<span class=\"method-name\">Set-Property</span> matches the\n<a href=\"https://drafts.csswg.org/css-viewport/#meta-properties\">listed property names</a> case-insensitively.\nThe <code class=\"variable\">property-value</code> strings are interpreted\nas follows:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If a prefix of <code class=\"variable\">property-value</code> can be converted to a number using <code>strtod</code>, the\n\t\tvalue will be that number. The remainder of the string is\n\t\tignored."
+          "html": "If a prefix of <code class=\"variable\">property-value</code>\n\t\tcan be converted to a number using <code>strtod</code>, the\n\t\tvalue will be that number. The remainder of the string is\n\t\tignored."
         },
         {
-          "html": "If the value can not be converted to a number as described above,\n\t\tthe whole <code class=\"variable\">property-value</code> string\n\t\twill be matched with the following strings\n\t\tcase-insensitively: <code class=\"index\">yes</code>, <code class=\"index\">no</code>, <code class=\"index\" data-lt=\"device-width!!viewport meta\">device-width</code>, <code class=\"index\" data-lt=\"device-height!!viewport meta\">device-height</code>"
+          "html": "If the value can not be converted to a number as described above,\n\t\tthe whole <code class=\"variable\">property-value</code> string\n\t\twill be matched with the following strings\n\t\tcase-insensitively: <code class=\"index\">yes</code>,\n\t\t<code class=\"index\">no</code>, <code class=\"index\" data-lt=\"device-width!!viewport meta\">device-width</code>,\n\t\t<code class=\"index\" data-lt=\"device-height!!viewport meta\">device-height</code>"
         },
         {
           "html": "If the string did not match any of the known strings, the\n\t\tvalue is unknown."
@@ -45,7 +45,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>features</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-getting-properties\" id=\"ref-for-dfn-getting-properties\">getting a property</a> \"features\" from <var>parameters</var>."
+          "html": "Let <var>features</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-getting-properties\" id=\"ref-for-dfn-getting-properties\">getting a property</a> \"features\" from\n\t<var>parameters</var>."
         },
         {
           "html": "If <var>features</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array-objects\" id=\"ref-for-sec-array-objects\">Array</a></code>, return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" id=\"ref-for-dfn-error\">error</a> with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" id=\"ref-for-dfn-error-code\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument\">invalid argument</a>."
@@ -105,7 +105,7 @@
           ]
         },
         {
-          "html": "Let <var>topLevelTraversable</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context①\">current browsing context</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable②\">top-level traversable</a>."
+          "html": "Let <var>topLevelTraversable</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context①\">current browsing context</a>’s\n\t<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable②\">top-level traversable</a>."
         },
         {
           "html": "Set <var>topLevelTraversable</var>.<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#top-level-traversable-displayfeaturesoverride\" id=\"ref-for-top-level-traversable-displayfeaturesoverride③\">[[DisplayFeaturesOverride]]</a> to <var>parsedFeatures</var>."
@@ -120,7 +120,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>topLevelTraversable</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context②\">current browsing context</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable③\">top-level traversable</a>."
+          "html": "Let <var>topLevelTraversable</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context②\">current browsing context</a>’s \n\t<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable③\">top-level traversable</a>."
         },
         {
           "html": "Set <var>topLevelTraversable</var>. <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#top-level-traversable-displayfeaturesoverride\" id=\"ref-for-top-level-traversable-displayfeaturesoverride④\">[[DisplayFeaturesOverride]]</a> to <code>null</code>."

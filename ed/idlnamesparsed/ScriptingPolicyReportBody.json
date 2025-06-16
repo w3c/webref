@@ -1,24 +1,23 @@
 {
   "name": "ScriptingPolicyReportBody",
-  "type": "interface",
+  "type": "dictionary",
   "defined": {
     "spec": {
       "title": "Scripting Policy",
       "url": "https://wicg.github.io/csp-next/scripting-policy.html"
     },
-    "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface ScriptingPolicyReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString     violationType;\n  readonly attribute USVString?    violationURL;\n  readonly attribute USVString?    violationSample;\n  readonly attribute unsigned long lineno;\n  readonly attribute unsigned long colno;\n};",
-    "href": "https://wicg.github.io/csp-next/scripting-policy.html#scriptingpolicyreportbody"
+    "fragment": "dictionary ScriptingPolicyReportBody : ReportBody {\n  DOMString     violationType;\n  USVString?    violationURL;\n  USVString?    violationSample;\n  unsigned long lineno;\n  unsigned long colno;\n};"
   },
   "extended": [],
   "inheritance": {
     "name": "ReportBody",
-    "type": "interface",
+    "type": "dictionary",
     "defined": {
       "spec": {
         "title": "Reporting API",
         "url": "https://www.w3.org/TR/reporting-1/"
       },
-      "fragment": "[Exposed=(Window,Worker)]\ninterface ReportBody {\n  [Default] object toJSON();\n};",
+      "fragment": "dictionary ReportBody {\n};",
       "href": "https://w3c.github.io/reporting/#reportbody"
     },
     "extended": [],

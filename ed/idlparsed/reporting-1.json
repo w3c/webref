@@ -13,165 +13,75 @@
           "ReportingObserver"
         ]
       },
-      "functions": {
-        "Window": [
-          "ReportBody",
-          "Report"
-        ],
-        "Worker": [
-          "ReportBody",
-          "Report"
-        ]
-      }
+      "functions": {}
     },
     "idlNames": {
       "ReportBody": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface ReportBody {\n  [Default] object toJSON();\n};",
-        "type": "interface",
+        "fragment": "dictionary ReportBody {\n};",
+        "type": "dictionary",
         "name": "ReportBody",
         "inheritance": null,
-        "members": [
-          {
-            "type": "operation",
-            "name": "toJSON",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "object"
-            },
-            "arguments": [],
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "Default",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "href": "https://w3c.github.io/reporting/#dom-reportbody-tojson"
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
+        "members": [],
+        "extAttrs": [],
         "partial": false,
         "href": "https://w3c.github.io/reporting/#reportbody"
       },
       "Report": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface Report {\n  [Default] object toJSON();\n  readonly attribute DOMString type;\n  readonly attribute DOMString url;\n  readonly attribute ReportBody? body;\n};",
-        "type": "interface",
+        "fragment": "dictionary Report {\n  DOMString type;\n  DOMString url;\n  ReportBody? body;\n};",
+        "type": "dictionary",
         "name": "Report",
         "inheritance": null,
         "members": [
           {
-            "type": "operation",
-            "name": "toJSON",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "object"
-            },
-            "arguments": [],
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "Default",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "href": "https://w3c.github.io/reporting/#dom-report-tojson"
-          },
-          {
-            "type": "attribute",
+            "type": "field",
             "name": "type",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
+            "default": null,
+            "required": false,
             "href": "https://w3c.github.io/reporting/#dom-report-type"
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "url",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
+            "default": null,
+            "required": false,
             "href": "https://w3c.github.io/reporting/#dom-report-url"
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "body",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "ReportBody"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
+            "default": null,
+            "required": false,
             "href": "https://w3c.github.io/reporting/#dom-report-body"
           }
         ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
+        "extAttrs": [],
         "partial": false,
         "href": "https://w3c.github.io/reporting/#dom-report"
       },
@@ -480,13 +390,9 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "ReportBody",
-        "Report",
         "ReportingObserver"
       ],
       "Worker": [
-        "ReportBody",
-        "Report",
         "ReportingObserver"
       ]
     },

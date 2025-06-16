@@ -1,12 +1,12 @@
 {
   "name": "Report",
-  "type": "interface",
+  "type": "dictionary",
   "defined": {
     "spec": {
       "title": "Reporting API",
       "url": "https://www.w3.org/TR/reporting-1/"
     },
-    "fragment": "[Exposed=(Window,Worker)]\ninterface Report {\n  [Default] object toJSON();\n  readonly attribute DOMString type;\n  readonly attribute DOMString url;\n  readonly attribute ReportBody? body;\n};",
+    "fragment": "dictionary Report {\n  DOMString type;\n  DOMString url;\n  ReportBody? body;\n};",
     "href": "https://w3c.github.io/reporting/#dom-report"
   },
   "extended": [],

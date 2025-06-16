@@ -7,14 +7,14 @@
     {
       "name": "adjust-border-inner-path-for-corner-shape",
       "href": "https://drafts.csswg.org/css-borders-4/#border-contour-path",
-      "html": "To compute an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑦\">element</a> <var>element</var>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"border-contour-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">border contour path</dfn> given an an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#box-box-edge\" id=\"ref-for-box-box-edge\">edge</a> <var>targetEdge</var> and an optional number <var>spread</var> (default 0): \n    \n    <p>To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"corner-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">corner path</dfn> given a rectangle <var>cornerRect</var>, a rectangle <var>trimRect</var>, and numbers <var>startThickness</var>, <var>endThickness</var>, <var>orientation</var>, and <var>curvature</var>:</p>",
+      "html": "To compute an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑦\">element</a> <var>element</var>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"border-contour-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">border contour path</dfn> given an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#box-box-edge\" id=\"ref-for-box-box-edge\">edge</a> <var>targetEdge</var> and an optional number <var>spread</var> (default 0):\n\n    \n    <p>To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"add-corner-to-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add corner to path</dfn> given a path <var>path</var>, a rectangle <var>cornerRect</var>, a rectangle <var>trimRect</var>,\n\tand numbers <var>orientation</var>, <var>startThickness</var>, <var>endThickness</var>, <var>curvature</var>:</p>\n    \n    <p>To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"aligned-corner-point\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">aligned corner point</dfn> given a point <var>originalPoint</var>, a two-component vector <var>offsetFromControlPoint</var>, a number <var>thickness</var>, and a number <var>orientation</var>:</p>\n    \n    <p>The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clockwise-quad\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">clockwise quad</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle\" id=\"ref-for-rectangle⑤\">rectangle</a> <var>rect</var>, is a <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral\" id=\"ref-for-quadrilateral\">quadrilateral</a> with the points\n\t(<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate①\">x coordinate</a>, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate①\">y coordinate</a>),\n\t(<var>rect</var>’s <span id=\"ref-for-rectangle-x-coordinate②\">x coordinate</span> + <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension②\">width dimension</a>, <var>rect</var>’s <span id=\"ref-for-rectangle-y-coordinate②\">y coordinate</span>),\n\t(<var>rect</var>’s <span id=\"ref-for-rectangle-x-coordinate③\">x coordinate</span> + <var>rect</var>’s <span id=\"ref-for-rectangle-width-dimension③\">width dimension</span>, <var>rect</var>’s <span id=\"ref-for-rectangle-y-coordinate③\">y coordinate</span> + <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension②\">height dimension</a>),\n\t(<var>rect</var>’s <span id=\"ref-for-rectangle-x-coordinate④\">x coordinate</span>, <var>rect</var>’s <span id=\"ref-for-rectangle-y-coordinate④\">y coordinate</span> + <var>rect</var>’s <span id=\"ref-for-rectangle-height-dimension③\">height dimension</span>).</p>",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>outerLeft</var>, <var>outerTop</var>, <var>outerRight</var>, <var>outerBottom</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#unshaped-edge\" id=\"ref-for-unshaped-edge\">unshaped</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-edge\" id=\"ref-for-border-edge②\">border edge</a>.</p>"
         },
         {
-          "html": "<p>Let <var>topLeftHorizontalRadius</var>, <var>topLeftVericalRadius</var>, <var>topRightHorizontalRadius</var>, <var>topRightVerticalRadius</var>, <var>bottomRightHorizontalRadius</var>, <var>bottomRightVerticalRadius</var>, <var>bottomLeftHorizontalRadius</var>, and <var>bottomLeftVerticalRadius</var> be <var>element</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-edge\" id=\"ref-for-border-edge③\">border edge</a>’s radii,\nscaled by <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#opposite-corner-scale-factor\" id=\"ref-for-opposite-corner-scale-factor\">opposite corner scale factor</a>.</p>"
+          "html": "<p>Let <var>topLeftHorizontalRadius</var>, <var>topLeftVericalRadius</var>, <var>topRightHorizontalRadius</var>, <var>topRightVerticalRadius</var>, <var>bottomRightHorizontalRadius</var>,\n<var>bottomRightVerticalRadius</var>, <var>bottomLeftHorizontalRadius</var>, and <var>bottomLeftVerticalRadius</var> be <var>element</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-edge\" id=\"ref-for-border-edge③\">border edge</a>’s radii,\nscaled by <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#opposite-corner-scale-factor\" id=\"ref-for-opposite-corner-scale-factor\">opposite corner scale factor</a>.</p>"
         },
         {
           "html": "<p>Let <var>topLeftShape</var>, <var>topRightShape</var>, <var>bottomRightShape</var>, and <var>bottomLeftShape</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value\">computed</a> <span class=\"css\">corner-*-shape</span> values.</p>"
@@ -26,21 +26,21 @@
           "html": "<p>Let <var>path</var> be a new path <a data-link-type=\"biblio\" href=\"https://drafts.csswg.org/css-borders-4/#biblio-svg2\" title=\"Scalable Vector Graphics (SVG) 2\">[SVG2]</a>.</p>"
         },
         {
-          "html": "<p>Compute a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#corner-path\" id=\"ref-for-corner-path\">corner path</a> given\nthe <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle\" id=\"ref-for-rectangle\">rectangle</a> <code>(<var>outerRight</var> - <var>topRightHorizontalRadius</var>, <var>outerTop</var>, <var>topRightHorizontalRadius</var>, <var>topRightVerticalRadius</var>)</code>,\n0, <var>targetTop</var> - <var>outerTop</var>, <var>outerRight</var> - <var>targetRight</var>, and <var>topRightShape</var>,\nand append it to <var>path</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#add-corner-to-path\" id=\"ref-for-add-corner-to-path\">Add corner to path</a> given <var>path</var>,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle\" id=\"ref-for-rectangle\">rectangle</a> <code>(<var>outerRight</var> - <var>topRightHorizontalRadius</var>, <var>outerTop</var>, <var>topRightHorizontalRadius</var>, <var>topRightVerticalRadius</var>)</code>, <var>targetEdge</var>,\n0, <var>targetTop</var> - <var>outerTop</var>, <var>outerRight</var> - <var>targetRight</var>, and <var>topRightShape</var>.</p>"
         },
         {
-          "html": "<p>Compute a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#corner-path\" id=\"ref-for-corner-path①\">corner path</a> given\nthe rectangle <code>(<var>outerRight</var> - <var>bottomRightHorizontalRadius</var>, <var>outerBottom</var> - <var>bottomRightVerticalRadius</var>, <var>bottomRightHorizontalRadius</var>, <var>bottomRightVerticalRadius</var>)</code>, <var>targetEdge</var>,\n1, <var>outerRight</var> - <var>targetRight</var>, <var>outerBottom</var> - <var>targetBottom</var>, and <var>bottomRightShape</var>,\nand append it to <var>path</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#add-corner-to-path\" id=\"ref-for-add-corner-to-path①\">Add corner to path</a> given <var>path</var>,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle\" id=\"ref-for-rectangle①\">rectangle</a> <code>(<var>outerRight</var> - <var>bottomRightHorizontalRadius</var>, <var>outerBottom</var> - <var>bottomRightVerticalRadius</var>, <var>bottomRightHorizontalRadius</var>, <var>bottomRightVerticalRadius</var>)</code>, <var>targetEdge</var>,\n1, <var>outerRight</var> - <var>targetRight</var>, <var>outerBottom</var> - <var>targetBottom</var>, and <var>bottomRightShape</var>.</p>"
         },
         {
-          "html": "<p>Compute a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#corner-path\" id=\"ref-for-corner-path②\">corner path</a> given\nthe rectangle <code>(<var>outerLeft</var>, <var>outerBottom</var> - <var>bottomLeftVerticalRadius</var>, <var>bottomLeftHorizontalRadius</var>, <var>bottomLeftVerticalRadius</var>)</code>, <var>targetEdge</var>,\n2, <var>outerBottom</var> - <var>targetBottom</var>, <var>targetLeft</var> - <var>outerLeft</var>, and <var>bottomLeftShape</var>,\nand append it to <var>path</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#add-corner-to-path\" id=\"ref-for-add-corner-to-path②\">Add corner to path</a> given <var>path</var>,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle\" id=\"ref-for-rectangle②\">rectangle</a> <code>(<var>outerLeft</var>, <var>outerBottom</var> - <var>bottomLeftVerticalRadius</var>, <var>bottomLeftHorizontalRadius</var>, <var>bottomLeftVerticalRadius</var>)</code>, <var>targetEdge</var>,\n2, <var>outerBottom</var> - <var>targetBottom</var>, <var>targetLeft</var> - <var>outerLeft</var>, and <var>bottomLeftShape</var>.</p>"
         },
         {
-          "html": "<p>Compute a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#corner-path\" id=\"ref-for-corner-path③\">corner path</a> given\nthe rectangle <code>(<var>outerLeft</var>, <var>outerTop</var>, <var>topLeftHorizontalRadius</var>, <var>topLeftVericalRadius</var>)</code>, <var>targetEdge</var>,\n3, <var>targetLeft</var> - <var>outerLeft</var>, <var>targetTop</var> - <var>outerTop</var>, and <var>topLeftShape</var>,\nand append it to <var>path</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#add-corner-to-path\" id=\"ref-for-add-corner-to-path③\">Add corner to path</a> given <var>path</var>,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle\" id=\"ref-for-rectangle③\">rectangle</a> <code>(<var>outerLeft</var>, <var>outerTop</var>, <var>topLeftHorizontalRadius</var>, <var>topLeftVericalRadius</var>)</code>, <var>targetEdge</var>,\n3, <var>targetLeft</var> - <var>outerLeft</var>, <var>targetTop</var> - <var>outerTop</var>, and <var>topLeftShape</var>.</p>"
         },
         {
           "html": "<p>If <var>spread</var> is not 0, then:</p>",
           "ignored": [
-            "Scale path by 1 + (spread * 2) / (targetRect’s width), 1 + (spread * 2) / (targetEdge’s height). Translate path by -spread, -spread."
+            "Scale path by 1 + (spread * 2) / (targetEdge’s width), 1 + (spread * 2) / (targetEdge’s height). Translate path by -spread, -spread."
           ]
         },
         {
@@ -51,142 +51,100 @@
     {
       "name": "adjust-border-inner-path-for-corner-shape",
       "href": "https://drafts.csswg.org/css-borders-4/#border-contour-path",
-      "html": "To compute an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑦\">element</a> <var>element</var>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"border-contour-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">border contour path</dfn> given an an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#box-box-edge\" id=\"ref-for-box-box-edge\">edge</a> <var>targetEdge</var> and an optional number <var>spread</var> (default 0): \n    \n    <p>To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"corner-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">corner path</dfn> given a rectangle <var>cornerRect</var>, a rectangle <var>trimRect</var>, and numbers <var>startThickness</var>, <var>endThickness</var>, <var>orientation</var>, and <var>curvature</var>:</p>",
-      "rationale": "assert",
+      "html": "To compute an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑦\">element</a> <var>element</var>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"border-contour-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">border contour path</dfn> given an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#box-box-edge\" id=\"ref-for-box-box-edge\">edge</a> <var>targetEdge</var> and an optional number <var>spread</var> (default 0):\n\n    \n    <p>To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"add-corner-to-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add corner to path</dfn> given a path <var>path</var>, a rectangle <var>cornerRect</var>, a rectangle <var>trimRect</var>,\n\tand numbers <var>orientation</var>, <var>startThickness</var>, <var>endThickness</var>, <var>curvature</var>:</p>\n    \n    <p>To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"aligned-corner-point\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">aligned corner point</dfn> given a point <var>originalPoint</var>, a two-component vector <var>offsetFromControlPoint</var>, a number <var>thickness</var>, and a number <var>orientation</var>:</p>\n    \n    <p>The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clockwise-quad\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">clockwise quad</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle\" id=\"ref-for-rectangle⑤\">rectangle</a> <var>rect</var>, is a <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral\" id=\"ref-for-quadrilateral\">quadrilateral</a> with the points\n\t(<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate①\">x coordinate</a>, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate①\">y coordinate</a>),\n\t(<var>rect</var>’s <span id=\"ref-for-rectangle-x-coordinate②\">x coordinate</span> + <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension②\">width dimension</a>, <var>rect</var>’s <span id=\"ref-for-rectangle-y-coordinate②\">y coordinate</span>),\n\t(<var>rect</var>’s <span id=\"ref-for-rectangle-x-coordinate③\">x coordinate</span> + <var>rect</var>’s <span id=\"ref-for-rectangle-width-dimension③\">width dimension</span>, <var>rect</var>’s <span id=\"ref-for-rectangle-y-coordinate③\">y coordinate</span> + <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension②\">height dimension</a>),\n\t(<var>rect</var>’s <span id=\"ref-for-rectangle-x-coordinate④\">x coordinate</span>, <var>rect</var>’s <span id=\"ref-for-rectangle-y-coordinate④\">y coordinate</span> + <var>rect</var>’s <span id=\"ref-for-rectangle-height-dimension③\">height dimension</span>).</p>",
+      "rationale": "if",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>orientation</var> is 0, 1, 2, or 3.</p>"
-        },
-        {
-          "html": "If <var>curvature</var> is less than zero, then:",
-          "rationale": "set",
-          "steps": [
-            {
-              "html": "<p>Set <var>curvature</var> to <code>-<var>curvature</var></code>.</p>"
-            },
-            {
-              "html": "<p>Swap between <var>startThickness</var> and <var>endThickness</var>.</p>"
-            },
-            {
-              "html": "<p>Set <var>orientation</var> to (<var>orientation</var> + 2) % 4.</p>"
-            }
-          ]
-        },
-        {
-          "html": "<p>Let <var>cornerPath</var> be a path that begins at <code>(0, 1)</code>.</p>"
-        },
-        {
-          "html": "Switch on <var>curvature</var>:",
-          "rationale": ".switch",
-          "steps": [
-            {
-              "operation": "switch",
-              "steps": [
-                {
-                  "case": "0",
-                  "html": "<p>Extend <var>cornerPath</var> by adding a straight line to <code>(1, 0)</code>.</p>"
-                },
-                {
-                  "case": "∞",
-                  "html": "",
-                  "rationale": "extend",
-                  "steps": [
-                    {
-                      "html": "<p>Extend <var>cornerPath</var> by adding a straight line to <code>(1, 1)</code>.</p>"
-                    },
-                    {
-                      "html": "<p>Extend <var>cornerPath</var> by adding a straight line to <code>(1, 0)</code>.</p>"
-                    }
-                  ]
-                },
-                {
-                  "case": "Otherwise",
-                  "html": "<p>User agents may approximate this path, for instance, by using concatenated Bezier curves, to balance between performance and rendering accuracy.</p>",
-                  "rationale": "let",
-                  "steps": [
-                    {
-                      "html": "<p>Let <var>K</var> be <code>0.5<sup><var>curvature</var></sup></code>.</p>"
-                    },
-                    {
-                      "html": "<p>For each <var>T</var> between 0 and 1, extend <var>cornerPath</var> through <code>(<var>T</var><sup><var>K</var></sup>, (1−<var>T</var>)<sup><var>K</var></sup>)</code>.</p>"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "html": "<p>Let (<var>x</var>, <var>y</var>, <var>width</var>, <var>height</var>) be <var>targetRect</var>.</p>"
-        },
-        {
-          "html": "<p>Let <var>clockwiseRectQuad</var> be « (<var>x</var>, <var>y</var>), (<var>x</var> + <var>width</var>, <var>y</var>), (<var>x</var> + <var>width</var>, <var>y</var> + <var>height</var>), (<var>x</var>, <var>y</var> + height|) ».</p>"
-        },
-        {
-          "html": "<p>Let <var>curveStartPoint</var> be <var>clockwiseRectQuad</var>[<var>orientation</var>].</p>"
-        },
-        {
-          "html": "<p>Let <var>curveEndPoint</var> be <var>clockwiseRectQuad</var>[(<var>orientation</var> + 2) % 4].</p>"
-        },
-        {
-          "html": "If either <var>startThickness</var> or <var>endThickness</var> is greater than 0, then:",
+          "html": "If <var>cornerRect</var> is empty, or if <var>curvature</var> is ∞:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>tangentUnitVector</var> be <code>(1, 0)</code>.</p>\n        \n        <figure>\n          <img alt=\"Tangent unit vector with round (s=1)\" src=\"https://drafts.csswg.org/css-borders-4/images/corner-shape-target-unit-vector-round.svg\" style=\"background: white; padding: 8px;\"> \n         <figcaption>When the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-shape\" id=\"ref-for-propdef-corner-shape①⑥\">corner-shape</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-value-round\" id=\"ref-for-valdef-corner-shape-value-round②\">round</a> or more convex (<code>&gt;= 1</code>), the unit vector is <code>1, 0</code>. </figcaption>\n        </figure>"
+              "html": "<p>Let <var>innerQuad</var> be <var>trimRect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#clockwise-quad\" id=\"ref-for-clockwise-quad\">clockwise quad</a> .</p>"
             },
             {
-              "html": "If <var>curvature</var> is less than 1:",
-              "rationale": "let",
-              "steps": [
-                {
-                  "html": "<p>Let <var>halfCorner</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-superellipse-half-corner\" id=\"ref-for-normalized-superellipse-half-corner\">normalized superellipse half corner</a> given <var>curvature</var>.</p>"
-                },
-                {
-                  "html": "<p>Let <var>offsetX</var> be <code>max(0, (<var>halfCorner</var> - 1) * 2 + √2)</code>.</p>"
-                },
-                {
-                  "html": "<p>Let <var>offsetY</var> be <code>max(0, √2 - <var>halfCorner</var> * 2)</code>.</p>"
-                },
-                {
-                  "html": "<p>Let <var>length</var> be <code>hypot(<var>offsetX</var>, <var>offsetY</var>)</code>.</p>"
-                },
-                {
-                  "html": "<p>Set <var>tangentUnitVector</var> to <code>(<var>offsetX</var> / <var>length</var>, <var>offsetY</var> / <var>length</var>)</code>.</p>\n          <p>At this point <var>curvature</var> is guaranteed to be convex (&gt;=1), so ther resulting <var>tangentUnitVector</var> would be in the range between <code>(1, 0)</code> and <code>(√2/2, √2/2)</code>.</p>\n          <figure>\n            <img alt=\"Tangent unit vector with bevel (s=0)\" src=\"https://drafts.csswg.org/css-borders-4/images/corner-shape-target-unit-vector-bevel.svg\" style=\"background: white; padding: 8px;\"> \n           <figcaption>When the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-shape\" id=\"ref-for-propdef-corner-shape①⑦\">corner-shape</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-borders-4/#valdef-corner-shape-value-bevel\" id=\"ref-for-valdef-corner-shape-value-bevel①\">bevel</a> (<code>0</code>), the unit vector is <code>√2/2, √2/2</code>. </figcaption>\n          </figure>"
-                }
-              ]
+              "html": "<p>Extend <var>path</var> by drawing a line to <var>innerQuad</var>[<code>(<var>orienation</var> + 1) % 4</code>].</p>"
             },
             {
-              "html": "<p>Let <var>startOffset</var> be <var>tangentUnitVector</var>, scaled by <var>startThickness</var> and rotated <code>90° * ((<var>orientation</var> + 1) % 4)</code> clockwise.</p>"
-            },
-            {
-              "html": "<p>Let <var>endOffset</var> be <var>tangentUnitVector</var>, scaled by <var>endThickness</var> and rotated by <code>90° * ((<var>orientation</var> + 2) % 4)</code> clockwise.</p>"
-            },
-            {
-              "html": "<p>Translate <var>curveStartPoint</var> by <var>startOffset</var>.</p>"
-            },
-            {
-              "html": "<p>Translate <var>curveEndPoint</var> by <var>endOffset</var>.</p>"
-            },
-            {
-              "html": "<p>Set <var>cornerRect</var> to a rectangle that contains <var>curveStartPoint</var> and <var>curveEndPoint</var>.</p>"
+              "html": "<p>Return.</p>"
             }
           ]
         },
         {
-          "html": "<p>Rotate <var>cornerPath</var> by <code>90° * <var>orientation</var></code>, with <code>(0.5, 0.5)</code> as the origin, as described <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-transforms-1/#transformation-matrix\" id=\"ref-for-transformation-matrix\">here</a>.</p>"
+          "html": "<p>Let <var>cornerQuad</var> be <var>cornerRect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#clockwise-quad\" id=\"ref-for-clockwise-quad①\">clockwise quad</a>.</p>"
         },
         {
-          "html": "<p>Scale <var>cornerPath</var> by <code><var>cornerRect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension①\">width</a>, <var>cornerRect</var>’s <span id=\"ref-for-rectangle-width-dimension②\">height</span></code>.</p>"
+          "html": "If <var>curvature</var> is  -∞:",
+          "rationale": "extend",
+          "steps": [
+            {
+              "html": "<p>Extend <var>path</var> by drawing a line from <var>cornerQuad</var>[0] to <var>cornerQuad</var>[3], trimmed by <var>trimRect</var>.</p>"
+            },
+            {
+              "html": "<p>Extend <var>path</var> by drawing a line from <var>cornerQuad</var>[3] to <var>cornerQuad</var>[2], trimmed by <var>trimRect</var>.</p>"
+            },
+            {
+              "html": "<p>Return.</p>"
+            }
+          ]
         },
         {
-          "html": "<p>translate <var>cornerPath</var> by<code> <var>cornerRect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate\">x</a>, <var>cornerRect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate\">y</a></code>.</p>"
+          "html": "<p>Let <var>clampedNormalizedHalfCorner</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-superellipse-half-corner\" id=\"ref-for-normalized-superellipse-half-corner\">normalized superellipse half corner</a> given <code>clamp(<var>curvature</var>, -1, 1)</code>.</p>"
         },
         {
-          "html": "<p>Trim <var>cornerPath</var> to <var>trimRect</var>.</p>"
+          "html": "<p>Let <var>equivalentQuadraticControlPointX</var> be <code><var>clampedNormalizedHalfCorner</var> * 2 - 0.5</code>.</p>"
         },
         {
-          "html": "<p>Return <var>cornerPath</var>.</p>"
+          "html": "<p>Let <var>curveStartPoint</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#aligned-corner-point\" id=\"ref-for-aligned-corner-point\">aligned corner point</a> given <var>cornerQuad</var>[<var>orienation</var>], the vector (<var>equivalentQuadraticControlPointX</var>, <code>1 - <var>equivalentQuadraticControlPointX</var></code>), <var>startThickness</var>, and <var>orientation</var> + 1.</p>"
+        },
+        {
+          "html": "<p>Let <var>curveEndPoint</var> by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#aligned-corner-point\" id=\"ref-for-aligned-corner-point①\">aligned corner point</a> given <var>cornerQuad</var>[(<var>orientation</var> + 2) % 4], the vector (<code><var>equivalentQuadraticControlPointX</var> - 1</code>, <code>-<var>equivalentQuadraticControlPointX</var></code>), <var>endThickness</var>, and <var>orientation</var> + 3.</p>"
+        },
+        {
+          "html": "<p>Let <var>alignedCornerRect</var> be a <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle\" id=\"ref-for-rectangle④\">rectangle</a> that includes the points <var>curveStartPoint</var> and <var>curveEndPoint</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>projectionToCornerRect</var> be a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-transforms-1/#transformation-matrix\" id=\"ref-for-transformation-matrix\">transformation matrix</a>,\ntranslated by <code>(<var>alignedCornerRect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate\">x coordinate</a>, <var>alignedCornerRect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate\">y coordinate</a>)</code>,\nscaled by <code>(<var>alignedCornerRect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension①\">width dimension</a>, <var>alignedCornerRect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension①\">height dimension</a>)</code>,\ntranslated by <code>(0.5, 0.5)</code>,\nrotated by <code>90deg * orientation</code>,\nand translated by <code>(-0.5, -0.5)</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>K</var> be <code>0.5<sup>abs(<var>curvature</var>)</sup></code>.</p>"
+        },
+        {
+          "html": "For each <var>T</var> between 0 and 1:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>A</var> be <code><var>T</var><sup><var>K</var></sup></code>.</p>"
+            },
+            {
+              "html": "<p>Let <var>B</var> be <code>1 - (1 - <var>T</var>)<sup><var>K</var></sup></code>.</p>"
+            },
+            {
+              "html": "<p>Let <var>normalizedPoint</var> be <code>(<var>A</var>, <var>B</var>)</code> if <var>curvature</var> is positive, otherwise <code>(<var>B</var>, <var>A</var>)</code>.</p>"
+            },
+            {
+              "html": "<p>Let <var>absolutePoint</var> be <var>normalizedPoint</var>, transformed by <var>projectionToCornerRect</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>absolutePoint</var> is within <var>trimRect</var>, extend <var>path</var> through <var>absolutePoint</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "adjust-border-inner-path-for-corner-shape",
+      "href": "https://drafts.csswg.org/css-borders-4/#border-contour-path",
+      "html": "To compute an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑦\">element</a> <var>element</var>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"border-contour-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">border contour path</dfn> given an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#box-box-edge\" id=\"ref-for-box-box-edge\">edge</a> <var>targetEdge</var> and an optional number <var>spread</var> (default 0):\n\n    \n    <p>To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"add-corner-to-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add corner to path</dfn> given a path <var>path</var>, a rectangle <var>cornerRect</var>, a rectangle <var>trimRect</var>,\n\tand numbers <var>orientation</var>, <var>startThickness</var>, <var>endThickness</var>, <var>curvature</var>:</p>\n    \n    <p>To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"aligned-corner-point\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">aligned corner point</dfn> given a point <var>originalPoint</var>, a two-component vector <var>offsetFromControlPoint</var>, a number <var>thickness</var>, and a number <var>orientation</var>:</p>\n    \n    <p>The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clockwise-quad\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">clockwise quad</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle\" id=\"ref-for-rectangle⑤\">rectangle</a> <var>rect</var>, is a <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral\" id=\"ref-for-quadrilateral\">quadrilateral</a> with the points\n\t(<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate①\">x coordinate</a>, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate①\">y coordinate</a>),\n\t(<var>rect</var>’s <span id=\"ref-for-rectangle-x-coordinate②\">x coordinate</span> + <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension②\">width dimension</a>, <var>rect</var>’s <span id=\"ref-for-rectangle-y-coordinate②\">y coordinate</span>),\n\t(<var>rect</var>’s <span id=\"ref-for-rectangle-x-coordinate③\">x coordinate</span> + <var>rect</var>’s <span id=\"ref-for-rectangle-width-dimension③\">width dimension</span>, <var>rect</var>’s <span id=\"ref-for-rectangle-y-coordinate③\">y coordinate</span> + <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension②\">height dimension</a>),\n\t(<var>rect</var>’s <span id=\"ref-for-rectangle-x-coordinate④\">x coordinate</span>, <var>rect</var>’s <span id=\"ref-for-rectangle-y-coordinate④\">y coordinate</span> + <var>rect</var>’s <span id=\"ref-for-rectangle-height-dimension③\">height dimension</span>).</p>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>length</var> be <code>hypot(<var>offsetFromControlPoint</var>.x, <var>offsetFromControlPoint</var>.y)</code>.</p>"
+        },
+        {
+          "html": "<p>Rotate <var>offsetFromControlPoint</var> by <code>90deg * <var>orientation</var></code>, and scale by <var>thickness</var>.</p>"
+        },
+        {
+          "html": "<p>Translate <var>originalPoint</var> by <code><var>offsetFromControlPoint</var>.x / <var>length</var>, <var>offsetFromControlPoint</var>.y / <var>length</var></code>, and return the result.</p>"
         }
       ]
     },
@@ -200,13 +158,13 @@
           "html": "<p>Let <var>rect</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-box\" id=\"ref-for-border-box②\">border box</a>.</p>"
         },
         {
-          "html": "<p>Let <var>topRightHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①\">computed</a> <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-top-right-shape\" id=\"ref-for-propdef-corner-top-right-shape\">corner-top-right-shape</a>,\nmapped to the rectangle (<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension③\">width dimension</a> - <var>element</var>’s <span id=\"ref-for-computed-value②\">computed</span> horizontal <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-top-right-radius\" id=\"ref-for-propdef-border-top-right-radius①\">border-top-right-radius</a>, 0, <var>rect</var>’s <span id=\"ref-for-computed-value③\">computed</span> <span class=\"property\" id=\"ref-for-propdef-border-top-right-radius②\">border-top-right-radius</span>).</p>"
+          "html": "<p>Let <var>topRightHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①\">computed</a> <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-top-right-shape\" id=\"ref-for-propdef-corner-top-right-shape\">corner-top-right-shape</a>,\nmapped to the rectangle (<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension④\">width dimension</a> - <var>element</var>’s <span id=\"ref-for-computed-value②\">computed</span> horizontal <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-top-right-radius\" id=\"ref-for-propdef-border-top-right-radius①\">border-top-right-radius</a>, 0, <var>rect</var>’s <span id=\"ref-for-computed-value③\">computed</span> <span class=\"property\" id=\"ref-for-propdef-border-top-right-radius②\">border-top-right-radius</span>).</p>"
         },
         {
-          "html": "<p>Let <var>bottomRightHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull①\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value④\">computed</a> <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-right-shape\" id=\"ref-for-propdef-corner-bottom-right-shape\">corner-bottom-right-shape</a>,\nrotated by 90deg with (0.5, 0.5) as an origin,\nand mapped to the rectangle (<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension④\">width dimension</a> - <var>element</var>’s <span id=\"ref-for-computed-value⑤\">computed</span> horizontal <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-right-radius\" id=\"ref-for-propdef-border-bottom-right-radius①\">border-bottom-right-radius</a>, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension①\">height dimension</a> - <var>element</var>’s <span id=\"ref-for-computed-value⑥\">computed</span> vertical <span class=\"property\" id=\"ref-for-propdef-border-bottom-right-radius②\">border-bottom-right-radius</span>, <var>element</var>’s <span id=\"ref-for-computed-value⑦\">computed</span> <span class=\"property\" id=\"ref-for-propdef-border-bottom-right-radius③\">border-bottom-right-radius</span>).</p>"
+          "html": "<p>Let <var>bottomRightHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull①\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value④\">computed</a> <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-right-shape\" id=\"ref-for-propdef-corner-bottom-right-shape\">corner-bottom-right-shape</a>,\nrotated by 90deg with (0.5, 0.5) as an origin,\nand mapped to the rectangle (<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension⑤\">width dimension</a> - <var>element</var>’s <span id=\"ref-for-computed-value⑤\">computed</span> horizontal <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-right-radius\" id=\"ref-for-propdef-border-bottom-right-radius①\">border-bottom-right-radius</a>, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension④\">height dimension</a> - <var>element</var>’s <span id=\"ref-for-computed-value⑥\">computed</span> vertical <span class=\"property\" id=\"ref-for-propdef-border-bottom-right-radius②\">border-bottom-right-radius</span>,\n<var>element</var>’s <span id=\"ref-for-computed-value⑦\">computed</span> <span class=\"property\" id=\"ref-for-propdef-border-bottom-right-radius③\">border-bottom-right-radius</span>).</p>"
         },
         {
-          "html": "<p>Let <var>bottomLeftHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull②\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑧\">computed</a> <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-right-shape\" id=\"ref-for-propdef-corner-bottom-right-shape①\">corner-bottom-right-shape</a>,\nrotated by 180deg with (0.5, 0.5) as an origin,\nand mapped to the rectangle (0, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension②\">height dimension</a> - <var>element</var>’s <span id=\"ref-for-computed-value⑨\">computed</span> vertical <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-left-radius\" id=\"ref-for-propdef-border-bottom-left-radius①\">border-bottom-left-radius</a>, <var>element</var>’s <span id=\"ref-for-computed-value①⓪\">computed</span> <span class=\"property\" id=\"ref-for-propdef-border-bottom-left-radius②\">border-bottom-left-radius</span>).</p>"
+          "html": "<p>Let <var>bottomLeftHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull②\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑧\">computed</a> <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-right-shape\" id=\"ref-for-propdef-corner-bottom-right-shape①\">corner-bottom-right-shape</a>,\nrotated by 180deg with (0.5, 0.5) as an origin,\nand mapped to the rectangle (0, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension⑤\">height dimension</a> - <var>element</var>’s <span id=\"ref-for-computed-value⑨\">computed</span> vertical <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-left-radius\" id=\"ref-for-propdef-border-bottom-left-radius①\">border-bottom-left-radius</a>,\n<var>element</var>’s <span id=\"ref-for-computed-value①⓪\">computed</span> <span class=\"property\" id=\"ref-for-propdef-border-bottom-left-radius②\">border-bottom-left-radius</span>).</p>"
         },
         {
           "html": "<p>Let <var>topLeftHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull③\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①①\">computed</a> <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-top-left-shape\" id=\"ref-for-propdef-corner-top-left-shape②\">corner-top-left-shape</a>,\nrotated by 270deg with (0.5, 0.5) as an origin,\nmapped to (0, 0, <var>element</var>’s <span id=\"ref-for-computed-value①②\">computed</span> <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-top-left-radius\" id=\"ref-for-propdef-border-top-left-radius①\">border-top-left-radius</a>).</p>"
@@ -225,7 +183,7 @@
     {
       "name": "superellipse-param-to-interpolation-value",
       "href": "https://drafts.csswg.org/css-borders-4/#normalized-superellipse-half-corner",
-      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-superellipse-half-corner\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized superellipse half corner</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑧\">superellipse parameter</a> <var>s</var>, return the first matching statement, switching on <var>s</var>: \n    <dl class=\"switch\">\n     <dt data-md=\"\">-∞\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">∞\n     </dt><dd data-md=\"\">\n      <p>Return 1.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>",
+      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-superellipse-half-corner\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized superellipse half corner</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter④\">superellipse parameter</a> <var>s</var>, return the first matching statement, switching on <var>s</var>:\n\n\t\n    <dl class=\"switch\">\n     <dt data-md=\"\">-∞\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">∞\n     </dt><dd data-md=\"\">\n      <p>Return 1.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>",
       "rationale": ".switch",
       "steps": [
         {
@@ -241,7 +199,7 @@
             },
             {
               "case": "Otherwise",
-              "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-superellipse-half-corner\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized superellipse half corner</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑧\">superellipse parameter</a> <var>s</var>, return the first matching statement, switching on <var>s</var>: \n    <dl class=\"switch\">\n     <dt data-md=\"\">-∞\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">∞\n     </dt><dd data-md=\"\">\n      <p>Return 1.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>",
+              "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-superellipse-half-corner\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized superellipse half corner</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter④\">superellipse parameter</a> <var>s</var>, return the first matching statement, switching on <var>s</var>:\n\n\t\n    <dl class=\"switch\">\n     <dt data-md=\"\">-∞\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">∞\n     </dt><dd data-md=\"\">\n      <p>Return 1.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>",
               "rationale": "let",
               "steps": [
                 {
@@ -251,7 +209,7 @@
                   "html": "<p>Let <var>convexHalfCorner</var> be <code>0.5<sup><var>k</var></sup></code>.</p>"
                 },
                 {
-                  "html": "<p>If <var>param</var> is less than 0, return <code>1 - <var>convexHalfCorner</var></code>.</p>"
+                  "html": "<p>If <var>s</var> is less than 0, return <code>1 - <var>convexHalfCorner</var></code>.</p>"
                 },
                 {
                   "html": "<p>Return <var>convexHalfCorner</var>.</p>"
@@ -265,7 +223,7 @@
     {
       "name": "superellipse-param-to-hull",
       "href": "https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull",
-      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-inner-corner-hull\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized inner corner hull</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑨\">superellipse parameter</a> <var>curvature</var>:",
+      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-inner-corner-hull\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized inner corner hull</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑤\">superellipse parameter</a> <var>curvature</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -302,7 +260,7 @@
     },
     {
       "name": "convert interpolation value to superellipse parameter",
-      "html": "To convert a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value①\">&lt;number [0,1]&gt;</a> <var>interpolationValue</var> back to a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter①①\">superellipse parameter</a>, switch on <var>interpolationValue</var>:",
+      "html": "To convert a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value①\">&lt;number [0,1]&gt;</a> <var>interpolationValue</var> back to a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑦\">superellipse parameter</a>, switch on <var>interpolationValue</var>:",
       "rationale": ".switch",
       "steps": [
         {

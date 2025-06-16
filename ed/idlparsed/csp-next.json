@@ -6,14 +6,7 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {
-        "Window": [
-          "ScriptingPolicyReportBody"
-        ],
-        "Worker": [
-          "ScriptingPolicyReportBody"
-        ]
-      }
+      "functions": {}
     },
     "idlNames": {
       "ScriptingPolicyViolationType": {
@@ -46,153 +39,94 @@
         "href": "https://wicg.github.io/csp-next/scripting-policy.html#enumdef-scriptingpolicyviolationtype"
       },
       "ScriptingPolicyReportBody": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface ScriptingPolicyReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString     violationType;\n  readonly attribute USVString?    violationURL;\n  readonly attribute USVString?    violationSample;\n  readonly attribute unsigned long lineno;\n  readonly attribute unsigned long colno;\n};",
-        "type": "interface",
+        "fragment": "dictionary ScriptingPolicyReportBody : ReportBody {\n  DOMString     violationType;\n  USVString?    violationURL;\n  USVString?    violationSample;\n  unsigned long lineno;\n  unsigned long colno;\n};",
+        "type": "dictionary",
         "name": "ScriptingPolicyReportBody",
         "inheritance": "ReportBody",
         "members": [
           {
-            "type": "operation",
-            "name": "toJSON",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "object"
-            },
-            "arguments": [],
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "Default",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "href": "https://wicg.github.io/csp-next/scripting-policy.html#dom-scriptingpolicyreportbody-tojson"
-          },
-          {
-            "type": "attribute",
+            "type": "field",
             "name": "violationType",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://wicg.github.io/csp-next/scripting-policy.html#dom-scriptingpolicyreportbody-violationtype"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "violationURL",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "USVString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://wicg.github.io/csp-next/scripting-policy.html#dom-scriptingpolicyreportbody-violationurl"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "violationSample",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "USVString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://wicg.github.io/csp-next/scripting-policy.html#dom-scriptingpolicyreportbody-violationsample"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "lineno",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "unsigned long"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://wicg.github.io/csp-next/scripting-policy.html#dom-scriptingpolicyreportbody-lineno"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "colno",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "unsigned long"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://wicg.github.io/csp-next/scripting-policy.html#dom-scriptingpolicyreportbody-colno"
+            "default": null,
+            "required": false
           }
         ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://wicg.github.io/csp-next/scripting-policy.html#scriptingpolicyreportbody"
+        "extAttrs": [],
+        "partial": false
       }
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {
-      "Window": [
-        "ScriptingPolicyReportBody"
-      ],
-      "Worker": [
-        "ScriptingPolicyReportBody"
-      ]
-    },
+    "exposed": {},
     "dependencies": {
       "ScriptingPolicyReportBody": [
         "ReportBody"

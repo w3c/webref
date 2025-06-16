@@ -7,7 +7,7 @@
     {
       "name": "anchor node selection algorithm",
       "href": "https://drafts.csswg.org/css-scroll-anchoring-1/#anchoring-algorithm",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"anchoring-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">anchor node selection algorithm</dfn> for a scrolling box <var>S</var> is as follows:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"anchoring-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">anchor node selection algorithm</dfn>\n\tfor a scrolling box <var>S</var> is as follows:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -24,7 +24,7 @@
     {
       "name": "candidate examination algorithm",
       "href": "https://drafts.csswg.org/css-scroll-anchoring-1/#candidate-examination",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"candidate-examination\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">candidate examination algorithm</dfn> for a candidate DOM node <var>N</var> in a scrolling box <var>S</var> is as follows:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"candidate-examination\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">candidate examination algorithm</dfn>\n\tfor a candidate DOM node <var>N</var> in a scrolling box <var>S</var> is as follows:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -41,7 +41,7 @@
               "html": "<p>For each DOM child <var>C</var> of <var>N</var>,\nperform the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-anchoring-1/#candidate-examination\" id=\"ref-for-candidate-examination①\">candidate examination algorithm</a> for <var>C</var> in <var>S</var>,\nand terminate if it selects an anchor node.</p>"
             },
             {
-              "html": "<p>For each absolutely-positioned element <var>A</var> whose <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block\">containing block</a> is <var>N</var>,\nbut whose DOM parent is not <var>N</var>,\nperform the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-anchoring-1/#candidate-examination\" id=\"ref-for-candidate-examination②\">candidate examination algorithm</a> for <var>A</var> in <var>S</var>,\nand terminate if it selects an anchor node.</p>"
+              "html": "<p>For each absolutely-positioned element <var>A</var>\nwhose <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block\">containing block</a> is <var>N</var>,\nbut whose DOM parent is not <var>N</var>,\nperform the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-anchoring-1/#candidate-examination\" id=\"ref-for-candidate-examination②\">candidate examination algorithm</a> for <var>A</var> in <var>S</var>,\nand terminate if it selects an anchor node.</p>"
             },
             {
               "html": "<p>Select <var>N</var> as the anchor node.\n(If this step is reached,\nno suitable anchor node was found among <var>N</var>’s descendants.)</p>"

@@ -13,232 +13,183 @@
           "SecurityPolicyViolationEvent"
         ]
       },
-      "functions": {
-        "Window": [
-          "CSPViolationReportBody"
-        ]
-      }
+      "functions": {}
     },
     "idlNames": {
       "CSPViolationReportBody": {
-        "fragment": "[Exposed=Window]\ninterface CSPViolationReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute USVString documentURL;\n  readonly attribute USVString? referrer;\n  readonly attribute USVString? blockedURL;\n  readonly attribute DOMString effectiveDirective;\n  readonly attribute DOMString originalPolicy;\n  readonly attribute USVString? sourceFile;\n  readonly attribute DOMString? sample;\n  readonly attribute SecurityPolicyViolationEventDisposition disposition;\n  readonly attribute unsigned short statusCode;\n  readonly attribute unsigned long? lineNumber;\n  readonly attribute unsigned long? columnNumber;\n};",
-        "type": "interface",
+        "fragment": "dictionary CSPViolationReportBody : ReportBody {\n  USVString documentURL;\n  USVString? referrer;\n  USVString? blockedURL;\n  DOMString effectiveDirective;\n  DOMString originalPolicy;\n  USVString? sourceFile;\n  DOMString? sample;\n  SecurityPolicyViolationEventDisposition disposition;\n  unsigned short statusCode;\n  unsigned long? lineNumber;\n  unsigned long? columnNumber;\n};",
+        "type": "dictionary",
         "name": "CSPViolationReportBody",
         "inheritance": "ReportBody",
         "members": [
           {
-            "type": "operation",
-            "name": "toJSON",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "object"
-            },
-            "arguments": [],
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "Default",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-tojson"
-          },
-          {
-            "type": "attribute",
+            "type": "field",
             "name": "documentURL",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "USVString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-documenturl"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "referrer",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "USVString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-referrer"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "blockedURL",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "USVString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-blockedurl"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "effectiveDirective",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-effectivedirective"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "originalPolicy",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-originalpolicy"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "sourceFile",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "USVString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-sourcefile"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "sample",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-sample"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "disposition",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "SecurityPolicyViolationEventDisposition"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-disposition"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "statusCode",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "unsigned short"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-statuscode"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "lineNumber",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "unsigned long"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-linenumber"
+            "default": null,
+            "required": false
           },
           {
-            "type": "attribute",
+            "type": "field",
             "name": "columnNumber",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
               "idlType": "unsigned long"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-columnnumber"
+            "default": null,
+            "required": false
           }
         ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://w3c.github.io/webappsec-csp/#cspviolationreportbody"
+        "extAttrs": [],
+        "partial": false
       },
       "SecurityPolicyViolationEventDisposition": {
         "fragment": "enum SecurityPolicyViolationEventDisposition {\n  \"enforce\", \"report\"\n};",
@@ -764,7 +715,6 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "CSPViolationReportBody",
         "SecurityPolicyViolationEvent"
       ],
       "Worker": [

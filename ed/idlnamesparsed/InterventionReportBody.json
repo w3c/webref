@@ -1,24 +1,23 @@
 {
   "name": "InterventionReportBody",
-  "type": "interface",
+  "type": "dictionary",
   "defined": {
     "spec": {
       "title": "Intervention Reporting",
       "url": "https://wicg.github.io/intervention-reporting/"
     },
-    "fragment": "[Exposed=(Window,Worker)]\ninterface InterventionReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString id;\n  readonly attribute DOMString message;\n  readonly attribute DOMString? sourceFile;\n  readonly attribute unsigned long? lineNumber;\n  readonly attribute unsigned long? columnNumber;\n};",
-    "href": "https://wicg.github.io/intervention-reporting/#interventionreportbody"
+    "fragment": "dictionary InterventionReportBody : ReportBody {\n  DOMString id;\n  DOMString message;\n  DOMString? sourceFile;\n  unsigned long? lineNumber;\n  unsigned long? columnNumber;\n};"
   },
   "extended": [],
   "inheritance": {
     "name": "ReportBody",
-    "type": "interface",
+    "type": "dictionary",
     "defined": {
       "spec": {
         "title": "Reporting API",
         "url": "https://www.w3.org/TR/reporting-1/"
       },
-      "fragment": "[Exposed=(Window,Worker)]\ninterface ReportBody {\n  [Default] object toJSON();\n};",
+      "fragment": "dictionary ReportBody {\n};",
       "href": "https://w3c.github.io/reporting/#reportbody"
     },
     "extended": [],
