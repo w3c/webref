@@ -1,0 +1,35 @@
+From db6d1eb54b5bc6ebf5096fbcdb75feaa3158649b Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Mon, 16 Jun 2025 12:07:43 +0200
+Subject: [PATCH] Turn interface into dictionary
+
+Pending complete resolution of:
+https://github.com/w3c/reporting/issues/216
+---
+ ed/idl/crash-reporting.idl | 12 +++++-------
+ 1 file changed, 5 insertions(+), 7 deletions(-)
+
+diff --git a/ed/idl/crash-reporting.idl b/ed/idl/crash-reporting.idl
+index ba21afcf39..d10f357379 100644
+--- a/ed/idl/crash-reporting.idl
++++ b/ed/idl/crash-reporting.idl
+@@ -3,11 +3,9 @@
+ // (https://github.com/w3c/webref)
+ // Source: Crash Reporting (https://wicg.github.io/crash-reporting/)
+ 
+-[Exposed=(Window,Worker)]
+-interface CrashReportBody : ReportBody {
+-  [Default] object toJSON();
+-  readonly attribute DOMString? reason;
+-  readonly attribute DOMString? stack;
+-  readonly attribute boolean? is_top_level;
+-  readonly attribute DocumentVisibilityState? page_visibility;
++dictionary CrashReportBody : ReportBody {
++  DOMString? reason;
++  DOMString? stack;
++  boolean? is_top_level;
++  DocumentVisibilityState? page_visibility;
+ };
+-- 
+2.37.1.windows.1
+
