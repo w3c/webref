@@ -43,9 +43,9 @@
   "scripts": {
     "create-patch": "node tools/create-patch.js",
     "curate": "node tools/prepare-curated.js ed curated && node tools/prepare-packages.js curated packages",
-    "test": "node --test",
-    "test-css": "node --test \"test/css/*.js\"",
-    "test-elements": "node --test \"test/elements/*.js\"",
-    "test-idl": "node --test \"test/idl/*.js\""
+    "test": "node --test --test-reporter=spec",
+    "test-css": "node --test --test-reporter=spec \"test/css/*.js\"",
+    "test-elements": "node --test --test-reporter=spec \"test/elements/*.js\"",
+    "test-idl": "node --test --test-reporter=spec \"test/idl/*.js\""
   }
 }
