@@ -1,0 +1,41 @@
+From 4e1302e1192564ceeaf443e0b044ca9f559afeb0 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Mon, 16 Jun 2025 12:11:25 +0200
+Subject: [PATCH] Turn interface into dictionary
+
+Pending complete resolution of:
+https://github.com/w3c/reporting/issues/216
+---
+ ed/idl/permissions-policy.idl | 18 ++++++++----------
+ 1 file changed, 8 insertions(+), 10 deletions(-)
+
+diff --git a/ed/idl/permissions-policy.idl b/ed/idl/permissions-policy.idl
+index b17304de8d..46eb6914a3 100644
+--- a/ed/idl/permissions-policy.idl
++++ b/ed/idl/permissions-policy.idl
+@@ -19,14 +19,12 @@ partial interface HTMLIFrameElement {
+     [SameObject] readonly attribute PermissionsPolicy permissionsPolicy;
+ };
+ 
+-[Exposed=Window]
+-interface PermissionsPolicyViolationReportBody : ReportBody {
+-  [Default] object toJSON();
+-  readonly attribute DOMString featureId;
+-  readonly attribute DOMString? sourceFile;
+-  readonly attribute long? lineNumber;
+-  readonly attribute long? columnNumber;
+-  readonly attribute DOMString disposition;
+-  readonly attribute DOMString? allowAttribute;
+-  readonly attribute DOMString? srcAttribute;
++dictionary PermissionsPolicyViolationReportBody : ReportBody {
++  DOMString featureId;
++  DOMString? sourceFile;
++  long? lineNumber;
++  long? columnNumber;
++  DOMString disposition;
++  DOMString? allowAttribute;
++  DOMString? srcAttribute;
+ };
+-- 
+2.37.1.windows.1
+
