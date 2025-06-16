@@ -983,7 +983,7 @@
         "href": "https://w3c.github.io/mediacapture-main/#dom-mediatracksupportedconstraints"
       },
       "MediaTrackCapabilities": {
-        "fragment": "dictionary MediaTrackCapabilities {\n  ULongRange width;\n  ULongRange height;\n  DoubleRange aspectRatio;\n  DoubleRange frameRate;\n  sequence<DOMString> facingMode;\n  sequence<DOMString> resizeMode;\n  ULongRange sampleRate;\n  ULongRange sampleSize;\n  sequence<boolean> echoCancellation;\n  sequence<boolean> autoGainControl;\n  sequence<boolean> noiseSuppression;\n  DoubleRange latency;\n  ULongRange channelCount;\n  DOMString deviceId;\n  DOMString groupId;\n  sequence<boolean> backgroundBlur;\n};",
+        "fragment": "dictionary MediaTrackCapabilities {\n  ULongRange width;\n  ULongRange height;\n  DoubleRange aspectRatio;\n  DoubleRange frameRate;\n  sequence<DOMString> facingMode;\n  sequence<DOMString> resizeMode;\n  ULongRange sampleRate;\n  ULongRange sampleSize;\n  sequence<(boolean or DOMString)> echoCancellation;\n  sequence<boolean> autoGainControl;\n  sequence<boolean> noiseSuppression;\n  DoubleRange latency;\n  ULongRange channelCount;\n  DOMString deviceId;\n  DOMString groupId;\n  sequence<boolean> backgroundBlur;\n};",
         "type": "dictionary",
         "name": "MediaTrackCapabilities",
         "inheritance": null,
@@ -1150,8 +1150,25 @@
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "boolean"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": "dictionary-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "boolean"
+                    },
+                    {
+                      "type": "dictionary-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    }
+                  ]
                 }
               ]
             },
@@ -1340,7 +1357,7 @@
         "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraints"
       },
       "MediaTrackConstraintSet": {
-        "fragment": "dictionary MediaTrackConstraintSet {\n  ConstrainULong width;\n  ConstrainULong height;\n  ConstrainDouble aspectRatio;\n  ConstrainDouble frameRate;\n  ConstrainDOMString facingMode;\n  ConstrainDOMString resizeMode;\n  ConstrainULong sampleRate;\n  ConstrainULong sampleSize;\n  ConstrainBoolean echoCancellation;\n  ConstrainBoolean autoGainControl;\n  ConstrainBoolean noiseSuppression;\n  ConstrainDouble latency;\n  ConstrainULong channelCount;\n  ConstrainDOMString deviceId;\n  ConstrainDOMString groupId;\n  ConstrainBoolean backgroundBlur;\n};",
+        "fragment": "dictionary MediaTrackConstraintSet {\n  ConstrainULong width;\n  ConstrainULong height;\n  ConstrainDouble aspectRatio;\n  ConstrainDouble frameRate;\n  ConstrainDOMString facingMode;\n  ConstrainDOMString resizeMode;\n  ConstrainULong sampleRate;\n  ConstrainULong sampleSize;\n  ConstrainBooleanOrDOMString echoCancellation;\n  ConstrainBoolean autoGainControl;\n  ConstrainBoolean noiseSuppression;\n  ConstrainDouble latency;\n  ConstrainULong channelCount;\n  ConstrainDOMString deviceId;\n  ConstrainDOMString groupId;\n  ConstrainBoolean backgroundBlur;\n};",
         "type": "dictionary",
         "name": "MediaTrackConstraintSet",
         "inheritance": null,
@@ -1483,7 +1500,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "ConstrainBoolean"
+              "idlType": "ConstrainBooleanOrDOMString"
             },
             "default": null,
             "required": false,
@@ -1607,7 +1624,7 @@
         "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset"
       },
       "MediaTrackSettings": {
-        "fragment": "dictionary MediaTrackSettings {\n  unsigned long width;\n  unsigned long height;\n  double aspectRatio;\n  double frameRate;\n  DOMString facingMode;\n  DOMString resizeMode;\n  unsigned long sampleRate;\n  unsigned long sampleSize;\n  boolean echoCancellation;\n  boolean autoGainControl;\n  boolean noiseSuppression;\n  double latency;\n  unsigned long channelCount;\n  DOMString deviceId;\n  DOMString groupId;\n  boolean backgroundBlur;\n};",
+        "fragment": "dictionary MediaTrackSettings {\n  unsigned long width;\n  unsigned long height;\n  double aspectRatio;\n  double frameRate;\n  DOMString facingMode;\n  DOMString resizeMode;\n  unsigned long sampleRate;\n  unsigned long sampleSize;\n  (boolean or DOMString) echoCancellation;\n  boolean autoGainControl;\n  boolean noiseSuppression;\n  double latency;\n  unsigned long channelCount;\n  DOMString deviceId;\n  DOMString groupId;\n  boolean backgroundBlur;\n};",
         "type": "dictionary",
         "name": "MediaTrackSettings",
         "inheritance": null,
@@ -1749,8 +1766,25 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "boolean"
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
             },
             "default": null,
             "required": false,
@@ -1920,6 +1954,25 @@
         ],
         "extAttrs": [],
         "href": "https://w3c.github.io/mediacapture-main/#dom-videoresizemodeenum"
+      },
+      "EchoCancellationModeEnum": {
+        "fragment": "enum EchoCancellationModeEnum {\n  \"all\",\n  \"remote-only\"\n};",
+        "type": "enum",
+        "name": "EchoCancellationModeEnum",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "all",
+            "href": "https://w3c.github.io/mediacapture-main/#dom-echocancellationmodeenum-all"
+          },
+          {
+            "type": "enum-value",
+            "value": "remote-only",
+            "href": "https://w3c.github.io/mediacapture-main/#dom-echocancellationmodeenum-remote-only"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-main/#dom-echocancellationmodeenum"
       },
       "MediaStreamTrackEvent": {
         "fragment": "[Exposed=Window]\ninterface MediaStreamTrackEvent : Event {\n  constructor(DOMString type, MediaStreamTrackEventInit eventInitDict);\n  [SameObject] readonly attribute MediaStreamTrack track;\n};",
@@ -2954,6 +3007,83 @@
         "partial": false,
         "href": "https://w3c.github.io/mediacapture-main/#dom-constraindomstringparameters"
       },
+      "ConstrainBooleanOrDOMStringParameters": {
+        "fragment": "dictionary ConstrainBooleanOrDOMStringParameters {\n  (boolean or DOMString) exact;\n  (boolean or DOMString) ideal;\n};",
+        "type": "dictionary",
+        "name": "ConstrainBooleanOrDOMStringParameters",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "exact",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-main/#dom-constrainbooleanordomstringparameters-exact"
+          },
+          {
+            "type": "field",
+            "name": "ideal",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-main/#dom-constrainbooleanordomstringparameters-ideal"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-main/#dom-constrainbooleanordomstringparameters"
+      },
       "ConstrainULong": {
         "fragment": "typedef ([Clamp] unsigned long or ConstrainULongRange) ConstrainULong;",
         "type": "typedef",
@@ -3105,6 +3235,46 @@
         },
         "extAttrs": [],
         "href": "https://w3c.github.io/mediacapture-main/#dom-constraindomstring"
+      },
+      "ConstrainBooleanOrDOMString": {
+        "fragment": "typedef (boolean or DOMString or ConstrainBooleanOrDOMStringParameters) ConstrainBooleanOrDOMString;",
+        "type": "typedef",
+        "name": "ConstrainBooleanOrDOMString",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ConstrainBooleanOrDOMStringParameters"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-main/#dom-constrainbooleanordomstring"
       },
       "CameraDevicePermissionDescriptor": {
         "fragment": "dictionary CameraDevicePermissionDescriptor : PermissionDescriptor {\n  boolean panTiltZoom = false;\n};",
@@ -3293,6 +3463,7 @@
         "ConstrainULong",
         "ConstrainDouble",
         "ConstrainDOMString",
+        "ConstrainBooleanOrDOMString",
         "ConstrainBoolean"
       ],
       "MediaTrackSettings": [],
@@ -3348,6 +3519,7 @@
       ],
       "ConstrainBooleanParameters": [],
       "ConstrainDOMStringParameters": [],
+      "ConstrainBooleanOrDOMStringParameters": [],
       "CameraDevicePermissionDescriptor": [
         "PermissionDescriptor"
       ]

@@ -8,7 +8,7 @@ dictionary MediaTrackCapabilities {
   sequence<DOMString> resizeMode;
   ULongRange sampleRate;
   ULongRange sampleSize;
-  sequence<boolean> echoCancellation;
+  sequence<(boolean or DOMString)> echoCancellation;
   sequence<boolean> autoGainControl;
   sequence<boolean> noiseSuppression;
   DoubleRange latency;
