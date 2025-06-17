@@ -122,6 +122,6 @@ dictionary IdentityResolveOptions {
 
 [Exposed=Window, SecureContext] interface IdentityProvider {
     static undefined close();
-    static undefined resolve(DOMString token, optional IdentityResolveOptions options = {});
+    static Promise<undefined> resolve(DOMString token, optional IdentityResolveOptions options = {});
     static Promise<sequence<IdentityUserInfo>> getUserInfo(IdentityProviderConfig config);
 };
