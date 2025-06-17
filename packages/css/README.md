@@ -8,7 +8,7 @@ This package contains a consolidated list of CSS features defined across specs, 
 
 Two async methods are exposed: `listAll()` and `index()`. They both resolve with an object that lists CSS features by feature type: `atrules`, `functions`, `properties`, `selectors` and `types`.
 
-The difference between the two functions is that, under each feature type, `listAll()` returns an array of features, whereas `index()` returns an object indexed by feature name to ease direct lookups (and [transition from `mdn/data`](migrating from , see below). Both functions return the same features.
+The difference between the two functions is that, under each feature type, `listAll()` returns an array of features, whereas `index()` returns an object indexed by feature name to ease direct lookups (and [transition from `mdn/data`](#transition-from-mdndata). Both functions return the same features.
 
 Example using `listAll()`:
 
