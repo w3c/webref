@@ -116,6 +116,8 @@ async function applyFreezePatches(rawFolder, outputFolder) {
   const outputIndex = await loadJSON(path.join(outputFolder, 'index.json'));
   let patchApplied = false;
 
+  const startingRef = await getCurrentRef();
+
   for (const file of patchFiles) {
     if (!file.endsWith('.json')) {
       continue;
@@ -147,7 +149,7 @@ async function applyFreezePatches(rawFolder, outputFolder) {
       outputIndex.results.splice(outputSpecPos, 1, crawlSpec);
     }
 
-    await execFile('git', ['checkout', 'main']);
+    await execFile('git', ['checkout', startingRef]);
     patchApplied = true;
   }
 
@@ -159,6 +161,24 @@ async function applyFreezePatches(rawFolder, outputFolder) {
       'utf8'
     );
   }
+}
+
+
+/**
+ * Retrieve a meaningful name for the current position in Git,
+ * either a branch name if possible (that is typically possible when curation
+ * runs locally from a branch), or a commit ID (which is typically what happens
+ * when curation runs in "detached HEAD" mode as in GitHub jobs).
+ */
+async function getCurrentRef() {
+  const { stdout } = await execFile('git', ['branch', '--show-current']);
+  let currentRef = stdout.trim();
+  if (!currentRef) {
+    // The code runs in detached HEAD mode
+    const { stdout: commitOut } = await execFile('git', ['rev-parse', 'HEAD']);
+    currentRef = commitOut.trim();
+  }
+  return currentRef;
 }
 
 
