@@ -91,308 +91,419 @@
       "id": "api",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#api",
       "level": 2,
-      "title": "API Details",
+      "title": "API Usage",
       "number": "3"
+    },
+    {
+      "id": "sites",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#sites",
+      "level": 3,
+      "title": "Site Identities",
+      "number": "3.1"
     },
     {
       "id": "navigator-interface",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#navigator-interface",
       "level": 3,
       "title": "Navigator Interface",
-      "number": "3.1"
+      "number": "3.2"
     },
     {
       "id": "find-aggregation-service",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#find-aggregation-service",
       "level": 3,
       "title": "Finding a Supported Aggregation Service",
-      "number": "3.2"
+      "number": "3.3"
     },
     {
       "id": "save-impression-api",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#save-impression-api",
       "level": 3,
       "title": "Saving Impressions",
-      "number": "3.3"
-    },
-    {
-      "id": "save-impression-api-operation",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#save-impression-api-operation",
-      "level": 4,
-      "title": "Operation",
-      "number": "3.3.1"
-    },
-    {
-      "id": "measure-conversion",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion",
-      "level": 3,
-      "title": "Requesting Attribution for a Conversion",
       "number": "3.4"
     },
     {
-      "id": "measure-conversion-api-operation",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-api-operation",
-      "level": 4,
-      "title": "Operation",
-      "number": "3.4.1"
+      "id": "measure-conversion-api",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-api",
+      "level": 3,
+      "title": "Requesting Attribution for a Conversion",
+      "number": "3.5"
+    },
+    {
+      "id": "permission-policy",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#permission-policy",
+      "level": 3,
+      "title": "Permissions Policy Integration",
+      "number": "3.6"
+    },
+    {
+      "id": "api-internals",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#api-internals",
+      "level": 2,
+      "title": "API Internals",
+      "number": "4"
     },
     {
       "id": "s-impression-store",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#s-impression-store",
       "level": 3,
       "title": "Impression Store",
-      "number": "3.5"
+      "number": "4.1"
     },
     {
       "id": "impression-store-contents",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#impression-store-contents",
       "level": 4,
       "title": "Contents",
-      "number": "3.5.1"
+      "number": "4.1.1"
     },
     {
       "id": "impression-store-maintenance",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#impression-store-maintenance",
       "level": 4,
       "title": "Maintenance",
-      "number": "3.5.2"
+      "number": "4.1.2"
     },
     {
-      "id": "impression-store-clearing",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#impression-store-clearing",
+      "id": "impression-store-clear",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#impression-store-clear",
       "level": 4,
-      "title": "Clearing",
-      "number": "3.5.3"
+      "title": "Clear-Site-Data Integration",
+      "number": "4.1.3"
+    },
+    {
+      "id": "site-name-algorithm",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#site-name-algorithm",
+      "level": 4,
+      "title": "Site Names",
+      "number": "4.1.4"
+    },
+    {
+      "id": "privacy-state",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#privacy-state",
+      "level": 3,
+      "title": "State For Privacy Budget Management",
+      "number": "4.2"
     },
     {
       "id": "s-privacy-budget-store",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#s-privacy-budget-store",
-      "level": 3,
+      "level": 4,
       "title": "Privacy Budget Store",
-      "number": "3.6"
+      "number": "4.2.1"
+    },
+    {
+      "id": "s-epoch-start",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#s-epoch-start",
+      "level": 4,
+      "title": "Epoch Start Store",
+      "number": "4.2.2"
+    },
+    {
+      "id": "last-clear",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#last-clear",
+      "level": 4,
+      "title": "Last Browsing History Clear Time",
+      "number": "4.2.3"
+    },
+    {
+      "id": "save-impression-api-operation",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#save-impression-api-operation",
+      "level": 3,
+      "title": "Save Impression Algorithm",
+      "number": "4.3"
+    },
+    {
+      "id": "measure-conversion-api-operation",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-api-operation",
+      "level": 3,
+      "title": "Measure Conversion Algorithm",
+      "number": "4.4"
     },
     {
       "id": "s-logic",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#s-logic",
-      "level": 3,
+      "level": 4,
       "title": "Attribution Logic",
-      "number": "3.7"
+      "number": "4.4.1"
     },
     {
       "id": "logic-matching",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#logic-matching",
       "level": 4,
       "title": "Common Impression Matching Logic",
-      "number": "3.7.1"
+      "number": "4.4.2"
+    },
+    {
+      "id": "last-touch-attribution",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#last-touch-attribution",
+      "level": 5,
+      "title": "Last-Touch Attribution",
+      "number": "4.4.2.1"
     },
     {
       "id": "user-control",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#user-control",
       "level": 3,
       "title": "User Control and Visibility",
-      "number": "3.8"
+      "number": "4.5"
     },
     {
       "id": "opt-out",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#opt-out",
       "level": 4,
       "title": "Optional Participation",
-      "number": "3.8.1"
+      "number": "4.5.1"
     },
     {
       "id": "visibility",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#visibility",
       "level": 4,
       "title": "Visibility",
-      "number": "3.8.2"
+      "number": "4.5.2"
     },
     {
-      "id": "permission-policy",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#permission-policy",
+      "id": "http-api",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api",
       "level": 2,
-      "title": "Permissions Policy Integration",
-      "number": "4"
+      "title": "HTTP API",
+      "number": "5"
     },
     {
       "id": "implementation-considerations",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#implementation-considerations",
       "level": 2,
       "title": "Implementation Considerations",
-      "number": "5"
+      "number": "6"
     },
     {
       "id": "aggregation",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#aggregation",
       "level": 2,
       "title": "Aggregation",
-      "number": "6"
+      "number": "7"
     },
     {
       "id": "s-mpc",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#s-mpc",
       "level": 3,
       "title": "Multi-Party Computation Aggregation",
-      "number": "6.1"
+      "number": "7.1"
     },
     {
       "id": "prio",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#prio",
       "level": 4,
       "title": "Prio and DAP",
-      "number": "6.1.1"
+      "number": "7.1.1"
+    },
+    {
+      "id": "dap-extensions",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dap-extensions",
+      "level": 4,
+      "title": "DAP Extensions",
+      "number": "7.1.2"
     },
     {
       "id": "s-tee",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#s-tee",
       "level": 3,
       "title": "Trusted Execution Environments",
-      "number": "6.2"
+      "number": "7.2"
     },
     {
       "id": "anti-replay",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#anti-replay",
       "level": 3,
       "title": "Anti-Replay Requirements",
-      "number": "6.3"
+      "number": "7.3"
     },
     {
       "id": "dp",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dp",
       "level": 2,
       "title": "Differential Privacy",
-      "number": "7"
+      "number": "8"
     },
     {
       "id": "dp-unit",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dp-unit",
       "level": 3,
       "title": "Privacy Unit",
-      "number": "7.1"
+      "number": "8.1"
     },
     {
       "id": "dp-instance",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dp-instance",
       "level": 4,
       "title": "Browser Instances",
-      "number": "7.1.1"
+      "number": "8.1.1"
     },
     {
       "id": "dp-site",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dp-site",
       "level": 4,
       "title": "Per-Site Limits",
-      "number": "7.1.2"
+      "number": "8.1.2"
     },
     {
       "id": "dp-refresh",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dp-refresh",
       "level": 4,
       "title": "Privacy Budget Epochs",
-      "number": "7.1.3"
+      "number": "8.1.3"
     },
     {
       "id": "dp-budget",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dp-budget",
       "level": 3,
       "title": "Privacy Budgets",
-      "number": "7.2"
+      "number": "8.2"
     },
     {
       "id": "dp-deduction",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dp-deduction",
       "level": 4,
       "title": "Privacy Budget Deduction",
-      "number": "7.2.1"
+      "number": "8.2.1"
     },
     {
       "id": "dp-safety",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dp-safety",
       "level": 4,
       "title": "Safety Limits",
-      "number": "7.2.2"
+      "number": "8.2.2"
     },
     {
       "id": "dp-mechanism",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dp-mechanism",
       "level": 3,
       "title": "Differential Privacy Mechanisms",
-      "number": "7.3"
+      "number": "8.3"
     },
     {
       "id": "security",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#security",
       "level": 2,
       "title": "Security Considerations",
-      "number": "8"
+      "number": "9"
     },
     {
       "id": "security-impression-store",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#security-impression-store",
       "level": 3,
       "title": "Impression Store",
-      "number": "8.1"
+      "number": "9.1"
     },
     {
       "id": "security-api-implementation",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#security-api-implementation",
       "level": 3,
       "title": "API Implementation",
-      "number": "8.2"
+      "number": "9.2"
     },
     {
       "id": "security-aggregation-services",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#security-aggregation-services",
       "level": 3,
       "title": "Aggregation Services",
-      "number": "8.3"
+      "number": "9.3"
     },
     {
       "id": "security-multiple-sites",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#security-multiple-sites",
       "level": 3,
       "title": "Combining Reports from Multiple Sites",
-      "number": "8.4"
+      "number": "9.4"
     },
     {
       "id": "security-ad-fraud",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#security-ad-fraud",
       "level": 3,
       "title": "Ad Fraud",
-      "number": "8.5"
+      "number": "9.5"
     },
     {
       "id": "privacy",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#privacy",
       "level": 2,
-      "title": "Privacy Considerations",
-      "number": "9"
+      "title": "10. Privacy Considerations"
     },
     {
       "id": "privacy-exposure",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#privacy-exposure",
       "level": 3,
       "title": "Information Exposed by the Private Attribution API",
-      "number": "9.1"
+      "number": "10.1"
     },
     {
       "id": "privacy-opt-out",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#privacy-opt-out",
       "level": 3,
       "title": "Disabling the Private Attribution API",
-      "number": "9.2"
+      "number": "10.2"
+    },
+    {
+      "id": "unconfigured",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#unconfigured",
+      "level": 3,
+      "title": "Unconfigured Browsers",
+      "number": "10.3"
+    },
+    {
+      "id": "privacy-impression-store",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#privacy-impression-store",
+      "level": 3,
+      "title": "Including Identifying Information with Saved Impressions",
+      "number": "10.4"
     },
     {
       "id": "privacy-third-party-contexts",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#privacy-third-party-contexts",
       "level": 3,
       "title": "Use in Third-party Contexts",
-      "number": "9.3"
+      "number": "10.5"
+    },
+    {
+      "id": "clear-budget-store",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#clear-budget-store",
+      "level": 3,
+      "title": "Clearing API State",
+      "number": "10.6"
+    },
+    {
+      "id": "clear-site-data",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#clear-site-data",
+      "level": 4,
+      "title": "Clearing Site Data",
+      "number": "10.6.1"
+    },
+    {
+      "id": "clear-browsing-history",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#clear-browsing-history",
+      "level": 4,
+      "title": "Clearing Browsing History",
+      "number": "10.6.2"
+    },
+    {
+      "id": "removing-impressions",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#removing-impressions",
+      "level": 4,
+      "title": "Clearing Impressions",
+      "number": "10.6.3"
+    },
+    {
+      "id": "why-wall-clock",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#why-wall-clock",
+      "level": 3,
+      "title": "Choice of Clock",
+      "number": "10.7"
     },
     {
       "id": "ack",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#ack",
       "level": 2,
-      "title": "10. Acknowledgements"
+      "title": "11. Acknowledgements"
     },
     {
       "id": "w3c-conformance",

@@ -20,29 +20,38 @@
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://doi.org/10.1016/B978-0-12-385514-5.00006-9": {},
       "https://doi.org/10.1561/0400000042": {},
+      "https://fetch.spec.whatwg.org/": {},
+      "https://github.com/w3c/ppa/issues": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://httpwg.org/specs/rfc6265.html": {},
       "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-patwg/": {},
       "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4430334": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://storage.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-double"
+        ]
+      },
       "https://www.bea.gov/research/papers/2017/measuring-free-digital-economy-within-gdp-and-productivity-accounts": {},
       "https://www.europarl.europa.eu/thinktank/en/document/IPOL_STU(2021)662913": {},
+      "https://www.rfc-editor.org/rfc/rfc3492": {},
+      "https://www.rfc-editor.org/rfc/rfc5890": {},
       "https://www.w3.org/2001/tag/doc/unsanctioned-tracking/": {},
-      "https://www.w3.org/Mail/Request": {},
       "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/clear-site-data/": {
+        "anchors": [
+          "header",
+          "clear-response"
+        ]
+      },
+      "https://www.w3.org/TR/css-2024/": {},
       "https://www.w3.org/TR/fedcm-1/": {},
       "https://www.w3.org/TR/hr-time-3/": {},
       "https://www.w3.org/TR/permissions-policy-1/": {},
-      "https://www.w3.org/TR/privacy-principles/": {
-        "anchors": [
-          "dfn-cross-context-recognition",
-          "collective-privacy"
-        ]
-      },
       "https://www.w3.org/groups/wg/pat": {},
-      "https://www.w3.org/groups/wg/pat/": {},
-      "https://www.w3.org/groups/wg/pat/ipr": {},
+      "https://www.w3.org/groups/wg/pat/ipr/": {},
       "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
           "def-essential",
@@ -56,10 +65,48 @@
       }
     },
     "autolinks": {
-      "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "header-value"
+        ]
+      },
+      "https://html.spec.whatwg.org/": {
         "anchors": [
           "site",
-          "concept-origin"
+          "concept-environment-top-level-origin",
+          "relevant-settings-object",
+          "child-navigable",
+          "concept-origin",
+          "same-site",
+          "concept-origin-scheme",
+          "concept-origin-host",
+          "scheme-and-host",
+          "obtain-a-site"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "concept-origin-tuple"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "child-navigable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window"
         ]
       },
       "https://html.spec.whatwg.org/multipage/system-state.html": {
@@ -67,13 +114,73 @@
           "navigator"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-realm",
+          "concept-relevant-global",
+          "concept-settings-object-origin",
+          "task-source",
+          "queue-a-task"
+        ]
+      },
+      "https://httpwg.org/specs/rfc9651": {
+        "anchors": [
+          "dictionary",
+          "inner-list",
+          "string",
+          "integer",
+          "text-parse"
+        ]
+      },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "user-agent",
-          "ordered-set",
+          "implementation-defined",
+          "sets",
+          "list-contain",
+          "list-iterate",
+          "list-remove",
+          "iteration-continue",
+          "list-size",
+          "string",
+          "ordered-map",
+          "32-bit-unsigned-integer",
+          "tuple",
+          "map-exists",
+          "map-set",
+          "map-get",
+          "struct",
+          "map-entry",
+          "map-key",
+          "set-create",
+          "list-is-empty",
           "set-extend",
-          "list-empty",
-          "assert"
+          "list",
+          "list-item",
+          "set-append",
+          "assert",
+          "map-with-default"
+        ]
+      },
+      "https://storage.spec.whatwg.org/": {
+        "anchors": [
+          "storage-key"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "host-registrable-domain",
+          "concept-host-parser",
+          "domain-label",
+          "concept-url"
+        ]
+      },
+      "https://w3ctag.github.io/privacy-principles/": {
+        "anchors": [
+          "cross-context-recognition",
+          "collective-privacy",
+          "cross-site-recognition",
+          "same-site-recognition"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -82,17 +189,47 @@
           "SameObject",
           "idl-DOMString",
           "Exposed",
+          "idl-USVString",
           "idl-unsigned-long",
-          "idl-undefined",
-          "idl-double",
           "idl-sequence",
           "idl-promise",
-          "idl-Uint8Array"
+          "idl-double",
+          "idl-Uint8Array",
+          "this",
+          "a-promise-rejected-with",
+          "notallowederror",
+          "idl-DOMException",
+          "exceptiondef-rangeerror",
+          "syntaxerror",
+          "a-promise-resolved-with",
+          "a-new-promise",
+          "resolve",
+          "exceptiondef-referenceerror"
+        ]
+      },
+      "https://www.w3.org/TR/clear-site-data/": {
+        "anchors": [
+          "http-headerdef-clear-site-data"
+        ]
+      },
+      "https://www.w3.org/TR/css-2024/": {
+        "anchors": [
+          "user"
+        ]
+      },
+      "https://www.w3.org/TR/fingerprinting-guidance/": {
+        "anchors": [
+          "dfn-browser-fingerprinting"
         ]
       },
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
-          "dfn-moment"
+          "dfn-duration",
+          "dfn-moment",
+          "dfn-wall-clock",
+          "dfn-current-wall-time",
+          "dfn-eso-current-wall-time",
+          "dfn-monotonic-clock"
         ]
       },
       "https://www.w3.org/TR/permissions-policy-1/": {
@@ -101,7 +238,8 @@
           "policy-controlled-feature-default-allowlist",
           "default-allowlist"
         ]
-      }
+      },
+      "https://www.w3.org/policies/patent-policy/": {}
     }
   }
 }
