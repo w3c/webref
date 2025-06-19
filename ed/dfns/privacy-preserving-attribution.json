@@ -1,12 +1,12 @@
 {
   "spec": {
-    "title": "Privacy-Preserving Attribution: Level 1",
+    "title": "Attribution: Level 1",
     "url": "https://w3c.github.io/ppa/"
   },
   "dfns": [
     {
-      "id": "attribution",
-      "href": "https://w3c.github.io/ppa/#attribution",
+      "id": "concept-attribution",
+      "href": "https://w3c.github.io/ppa/#concept-attribution",
       "linkingText": [
         "attribution",
         "attributed"
@@ -196,10 +196,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-navigator-privateattribution",
-      "href": "https://w3c.github.io/ppa/#dom-navigator-privateattribution",
+      "id": "dom-navigator-attribution",
+      "href": "https://w3c.github.io/ppa/#dom-navigator-attribution",
       "linkingText": [
-        "privateAttribution"
+        "attribution"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -217,15 +217,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-privateattribution-aggregationservices",
-      "href": "https://w3c.github.io/ppa/#dom-privateattribution-aggregationservices",
+      "id": "dom-attribution-aggregationservices",
+      "href": "https://w3c.github.io/ppa/#dom-attribution-aggregationservices",
       "linkingText": [
         "aggregationServices"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "PrivateAttribution"
+        "Attribution"
       ],
       "access": "public",
       "informative": false,
@@ -238,10 +238,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dictdef-privateattributionaggregationservice",
-      "href": "https://w3c.github.io/ppa/#dictdef-privateattributionaggregationservice",
+      "id": "dictdef-attributionaggregationservice",
+      "href": "https://w3c.github.io/ppa/#dictdef-attributionaggregationservice",
       "linkingText": [
-        "PrivateAttributionAggregationService"
+        "AttributionAggregationService"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -257,10 +257,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "privateattributionaggregationservices",
-      "href": "https://w3c.github.io/ppa/#privateattributionaggregationservices",
+      "id": "attributionaggregationservices",
+      "href": "https://w3c.github.io/ppa/#attributionaggregationservices",
       "linkingText": [
-        "PrivateAttributionAggregationServices"
+        "AttributionAggregationServices"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -276,10 +276,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "privateattribution",
-      "href": "https://w3c.github.io/ppa/#privateattribution",
+      "id": "attribution",
+      "href": "https://w3c.github.io/ppa/#attribution",
       "linkingText": [
-        "PrivateAttribution"
+        "Attribution"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -295,15 +295,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-privateattributionaggregationservice-protocol",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionaggregationservice-protocol",
+      "id": "dom-attributionaggregationservice-protocol",
+      "href": "https://w3c.github.io/ppa/#dom-attributionaggregationservice-protocol",
       "linkingText": [
         "protocol"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionAggregationService"
+        "AttributionAggregationService"
       ],
       "access": "public",
       "informative": false,
@@ -316,10 +316,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "enumdef-privateattributionprotocol",
-      "href": "https://w3c.github.io/ppa/#enumdef-privateattributionprotocol",
+      "id": "enumdef-privateattributionaggregationprotocol",
+      "href": "https://w3c.github.io/ppa/#enumdef-privateattributionaggregationprotocol",
       "linkingText": [
-        "PrivateAttributionProtocol"
+        "PrivateAttributionAggregationProtocol"
       ],
       "localLinkingText": [],
       "type": "enum",
@@ -335,8 +335,8 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-privateattributionprotocol-dap-12-histogram",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionprotocol-dap-12-histogram",
+      "id": "dom-privateattributionaggregationprotocol-dap-12-histogram",
+      "href": "https://w3c.github.io/ppa/#dom-privateattributionaggregationprotocol-dap-12-histogram",
       "linkingText": [
         "\"dap-12-histogram\"",
         "dap-12-histogram"
@@ -344,7 +344,7 @@
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "PrivateAttributionProtocol"
+        "PrivateAttributionAggregationProtocol"
       ],
       "access": "public",
       "informative": false,
@@ -357,8 +357,8 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-privateattributionprotocol-tee-00",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionprotocol-tee-00",
+      "id": "dom-privateattributionaggregationprotocol-tee-00",
+      "href": "https://w3c.github.io/ppa/#dom-privateattributionaggregationprotocol-tee-00",
       "linkingText": [
         "\"tee-00\"",
         "tee-00"
@@ -366,7 +366,7 @@
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "PrivateAttributionProtocol"
+        "PrivateAttributionAggregationProtocol"
       ],
       "access": "public",
       "informative": false,
@@ -379,10 +379,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dictdef-privateattributionimpressionoptions",
-      "href": "https://w3c.github.io/ppa/#dictdef-privateattributionimpressionoptions",
+      "id": "dictdef-attributionimpressionoptions",
+      "href": "https://w3c.github.io/ppa/#dictdef-attributionimpressionoptions",
       "linkingText": [
-        "PrivateAttributionImpressionOptions"
+        "AttributionImpressionOptions"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -398,10 +398,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-privateattributionimpressionresult",
-      "href": "https://w3c.github.io/ppa/#dictdef-privateattributionimpressionresult",
+      "id": "dictdef-attributionimpressionresult",
+      "href": "https://w3c.github.io/ppa/#dictdef-attributionimpressionresult",
       "linkingText": [
-        "PrivateAttributionImpressionResult"
+        "AttributionImpressionResult"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -417,15 +417,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-privateattribution-saveimpression-options-options",
-      "href": "https://w3c.github.io/ppa/#dom-privateattribution-saveimpression-options-options",
+      "id": "dom-attribution-saveimpression-options-options",
+      "href": "https://w3c.github.io/ppa/#dom-attribution-saveimpression-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "PrivateAttribution/saveImpression(options)"
+        "Attribution/saveImpression(options)"
       ],
       "access": "public",
       "informative": false,
@@ -438,15 +438,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-privateattributionimpressionoptions-histogramindex",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionimpressionoptions-histogramindex",
+      "id": "dom-attributionimpressionoptions-histogramindex",
+      "href": "https://w3c.github.io/ppa/#dom-attributionimpressionoptions-histogramindex",
       "linkingText": [
         "histogramIndex"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionImpressionOptions"
+        "AttributionImpressionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -459,15 +459,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-privateattributionimpressionoptions-matchvalue",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionimpressionoptions-matchvalue",
+      "id": "dom-attributionimpressionoptions-matchvalue",
+      "href": "https://w3c.github.io/ppa/#dom-attributionimpressionoptions-matchvalue",
       "linkingText": [
         "matchValue"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionImpressionOptions"
+        "AttributionImpressionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -480,15 +480,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-privateattributionimpressionoptions-conversionsites",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionimpressionoptions-conversionsites",
+      "id": "dom-attributionimpressionoptions-conversionsites",
+      "href": "https://w3c.github.io/ppa/#dom-attributionimpressionoptions-conversionsites",
       "linkingText": [
         "conversionSites"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionImpressionOptions"
+        "AttributionImpressionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -501,15 +501,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-privateattributionimpressionoptions-lifetimedays",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionimpressionoptions-lifetimedays",
+      "id": "dom-attributionimpressionoptions-lifetimedays",
+      "href": "https://w3c.github.io/ppa/#dom-attributionimpressionoptions-lifetimedays",
       "linkingText": [
         "lifetimeDays"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionImpressionOptions"
+        "AttributionImpressionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -522,10 +522,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dictdef-privateattributionconversionoptions",
-      "href": "https://w3c.github.io/ppa/#dictdef-privateattributionconversionoptions",
+      "id": "dictdef-attributionconversionoptions",
+      "href": "https://w3c.github.io/ppa/#dictdef-attributionconversionoptions",
       "linkingText": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -541,10 +541,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "enumdef-privateattributionlogic",
-      "href": "https://w3c.github.io/ppa/#enumdef-privateattributionlogic",
+      "id": "enumdef-attributionlogic",
+      "href": "https://w3c.github.io/ppa/#enumdef-attributionlogic",
       "linkingText": [
-        "PrivateAttributionLogic"
+        "AttributionLogic"
       ],
       "localLinkingText": [],
       "type": "enum",
@@ -560,15 +560,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-privateattributionlogic-last-touch",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionlogic-last-touch",
+      "id": "dom-attributionlogic-last-touch",
+      "href": "https://w3c.github.io/ppa/#dom-attributionlogic-last-touch",
       "linkingText": [
         "\"last-touch\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "PrivateAttributionLogic"
+        "AttributionLogic"
       ],
       "access": "public",
       "informative": false,
@@ -581,10 +581,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-privateattributionconversionresult",
-      "href": "https://w3c.github.io/ppa/#dictdef-privateattributionconversionresult",
+      "id": "dictdef-attributionconversionresult",
+      "href": "https://w3c.github.io/ppa/#dictdef-attributionconversionresult",
       "linkingText": [
-        "PrivateAttributionConversionResult"
+        "AttributionConversionResult"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -600,15 +600,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-privateattributionconversionresult-report",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionresult-report",
+      "id": "dom-attributionconversionresult-report",
+      "href": "https://w3c.github.io/ppa/#dom-attributionconversionresult-report",
       "linkingText": [
         "report"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionResult"
+        "AttributionConversionResult"
       ],
       "access": "public",
       "informative": false,
@@ -621,15 +621,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-privateattribution-measureconversion-options-options",
-      "href": "https://w3c.github.io/ppa/#dom-privateattribution-measureconversion-options-options",
+      "id": "dom-attribution-measureconversion-options-options",
+      "href": "https://w3c.github.io/ppa/#dom-attribution-measureconversion-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "PrivateAttribution/measureConversion(options)"
+        "Attribution/measureConversion(options)"
       ],
       "access": "public",
       "informative": false,
@@ -642,15 +642,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-privateattributionconversionoptions-aggregationservice",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-aggregationservice",
+      "id": "dom-attributionconversionoptions-aggregationservice",
+      "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-aggregationservice",
       "linkingText": [
         "aggregationService"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -663,15 +663,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-privateattributionconversionoptions-epsilon",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-epsilon",
+      "id": "dom-attributionconversionoptions-epsilon",
+      "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-epsilon",
       "linkingText": [
         "epsilon"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -684,15 +684,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-privateattributionconversionoptions-histogramsize",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-histogramsize",
+      "id": "dom-attributionconversionoptions-histogramsize",
+      "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-histogramsize",
       "linkingText": [
         "histogramSize"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -705,15 +705,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-privateattributionconversionoptions-lookbackdays",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-lookbackdays",
+      "id": "dom-attributionconversionoptions-lookbackdays",
+      "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-lookbackdays",
       "linkingText": [
         "lookbackDays"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -726,15 +726,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-privateattributionconversionoptions-matchvalue",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-matchvalue",
+      "id": "dom-attributionconversionoptions-matchvalue",
+      "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-matchvalue",
       "linkingText": [
         "matchValue"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -747,15 +747,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-privateattributionconversionoptions-impressionsites",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-impressionsites",
+      "id": "dom-attributionconversionoptions-impressionsites",
+      "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-impressionsites",
       "linkingText": [
         "impressionSites"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -768,15 +768,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-privateattributionconversionoptions-intermediarysites",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-intermediarysites",
+      "id": "dom-attributionconversionoptions-intermediarysites",
+      "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-intermediarysites",
       "linkingText": [
         "intermediarySites"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -789,15 +789,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-privateattributionconversionoptions-logic",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-logic",
+      "id": "dom-attributionconversionoptions-logic",
+      "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-logic",
       "linkingText": [
         "logic"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -810,15 +810,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-privateattributionconversionoptions-value",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-value",
+      "id": "dom-attributionconversionoptions-value",
+      "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-value",
       "linkingText": [
         "value"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -831,15 +831,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-privateattributionconversionoptions-maxvalue",
-      "href": "https://w3c.github.io/ppa/#dom-privateattributionconversionoptions-maxvalue",
+      "id": "dom-attributionconversionoptions-maxvalue",
+      "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-maxvalue",
       "linkingText": [
         "maxValue"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -1311,15 +1311,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-privateattribution-saveimpression",
-      "href": "https://w3c.github.io/ppa/#dom-privateattribution-saveimpression",
+      "id": "dom-attribution-saveimpression",
+      "href": "https://w3c.github.io/ppa/#dom-attribution-saveimpression",
       "linkingText": [
         "saveImpression(options)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "PrivateAttribution"
+        "Attribution"
       ],
       "access": "public",
       "informative": false,
@@ -1332,10 +1332,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "private-attribution-task-source",
-      "href": "https://w3c.github.io/ppa/#private-attribution-task-source",
+      "id": "attribution-task-source",
+      "href": "https://w3c.github.io/ppa/#attribution-task-source",
       "linkingText": [
-        "Private Attribution task source"
+        "Attribution task source"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1351,15 +1351,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-privateattribution-measureconversion",
-      "href": "https://w3c.github.io/ppa/#dom-privateattribution-measureconversion",
+      "id": "dom-attribution-measureconversion",
+      "href": "https://w3c.github.io/ppa/#dom-attribution-measureconversion",
       "linkingText": [
         "measureConversion(options)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "PrivateAttribution"
+        "Attribution"
       ],
       "access": "public",
       "informative": false,
@@ -1601,10 +1601,10 @@
       "definedIn": "table"
     },
     {
-      "id": "validate-privateattributionconversionoptions",
-      "href": "https://w3c.github.io/ppa/#validate-privateattributionconversionoptions",
+      "id": "validate-attributionconversionoptions",
+      "href": "https://w3c.github.io/ppa/#validate-attributionconversionoptions",
       "linkingText": [
-        "validate PrivateAttributionConversionOptions"
+        "validate AttributionConversionOptions"
       ],
       "localLinkingText": [],
       "type": "dfn",
