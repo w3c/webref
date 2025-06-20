@@ -1,0 +1,28 @@
+From 08e6dfc7c8867571f0036f0ed0f1c199defc92ca Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Fri, 20 Jun 2025 16:27:04 +0200
+Subject: [PATCH] Add grouping to please CSS parser
+
+Syntax in the spec is valid, but CSSTree does not like it. This adds grouping
+to make the syntax valid for the parser, pending resolution of:
+https://github.com/csstree/csstree/issues/345
+---
+ ed/css/css-mixins.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/css/css-mixins.json b/ed/css/css-mixins.json
+index 5f542d6253..5208a76d77 100644
+--- a/ed/css/css-mixins.json
++++ b/ed/css/css-mixins.json
+@@ -31,7 +31,7 @@
+       "name": "@mixin",
+       "href": "https://drafts.csswg.org/css-mixins-1/#at-ruledef-mixin",
+       "descriptors": [],
+-      "value": "@mixin <function-token> <function-parameter>#? , @contents? ) { <declaration-rule-list> }"
++      "value": "@mixin <function-token> <function-parameter>#? , [@contents]? ) { <declaration-rule-list> }"
+     },
+     {
+       "name": "@contents",
+-- 
+2.37.1.windows.1
+
