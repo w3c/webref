@@ -1,5 +1,5 @@
-// Source: Privacy-Preserving Attribution: Level 1 (https://www.w3.org/TR/privacy-preserving-attribution/)
-dictionary PrivateAttributionConversionOptions {
+// Source: Attribution: Level 1 (https://www.w3.org/TR/privacy-preserving-attribution/)
+dictionary AttributionConversionOptions {
   required USVString aggregationService;
   double epsilon = 1.0;
 
@@ -10,7 +10,7 @@ dictionary PrivateAttributionConversionOptions {
   sequence<USVString> impressionSites = [];
   sequence<USVString> intermediarySites = [];
 
-  PrivateAttributionLogic logic = "last-touch";
+  AttributionLogic logic = "last-touch";
   unsigned long value = 1;
   unsigned long maxValue = 1;
 };

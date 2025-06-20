@@ -2213,16 +2213,40 @@
           "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-evalbycredential\" id=\"ref-for-dom-authenticationextensionsprfinputs-evalbycredential①\">evalByCredential</a></code> is present, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③③\">DOMException</a></code> whose name is “<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror④\">NotSupportedError</a></code>”.</p>"
         },
         {
-          "html": "<p>Set <code>hmac-secret</code> to <code>true</code> in the authenticator extensions input.</p>"
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-eval\" id=\"ref-for-dom-authenticationextensionsprfinputs-eval①\">eval</a></code> is present:</p>\n       <ul>\n        <li data-md=\"\">\n         <p>Let <var>salt1</var> be the value of <code>SHA-256(UTF8Encode(\"WebAuthn PRF\") || 0x00 || <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-eval\" id=\"ref-for-dom-authenticationextensionsprfinputs-eval②\">eval</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-first\" id=\"ref-for-dom-authenticationextensionsprfvalues-first\">first</a></code>)</code>.</p>\n        </li><li data-md=\"\">\n         <p>If <code><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-eval\" id=\"ref-for-dom-authenticationextensionsprfinputs-eval③\">eval</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-second\" id=\"ref-for-dom-authenticationextensionsprfvalues-second\">second</a></code></code> is present,\nlet <var>salt2</var> be the value of <code>SHA-256(UTF8Encode(\"WebAuthn PRF\") || 0x00 || <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-eval\" id=\"ref-for-dom-authenticationextensionsprfinputs-eval④\">eval</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-second\" id=\"ref-for-dom-authenticationextensionsprfvalues-second①\">second</a></code>)</code>.</p>\n       </li></ul>"
         },
         {
-          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-eval\" id=\"ref-for-dom-authenticationextensionsprfinputs-eval①\">eval</a></code> is present and a future extension to <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webauthn/#biblio-fido-ctap\" title=\"Client to Authenticator Protocol (CTAP)\">[FIDO-CTAP]</a> permits evaluation of the PRF at creation time, configure <code>hmac-secret</code> inputs accordingly:</p>\n       <ul>\n        <li data-md=\"\">\n         <p>Let <code>salt1</code> be the value of <code>SHA-256(UTF8Encode(\"WebAuthn PRF\") || 0x00 || <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-eval\" id=\"ref-for-dom-authenticationextensionsprfinputs-eval②\">eval</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-first\" id=\"ref-for-dom-authenticationextensionsprfvalues-first\">first</a></code>)</code>.</p>\n        </li><li data-md=\"\">\n         <p>If <code><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-eval\" id=\"ref-for-dom-authenticationextensionsprfinputs-eval③\">eval</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-second\" id=\"ref-for-dom-authenticationextensionsprfvalues-second\">second</a></code></code> is present, let <code>salt2</code> be the value of <code>SHA-256(UTF8Encode(\"WebAuthn PRF\") || 0x00 || <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-eval\" id=\"ref-for-dom-authenticationextensionsprfinputs-eval④\">eval</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-second\" id=\"ref-for-dom-authenticationextensionsprfvalues-second①\">second</a></code>)</code>.</p>\n       </li></ul>"
+          "html": "If the authenticator supports the CTAP2 <code>hmac-secret</code> extension <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webauthn/#biblio-fido-ctap\" title=\"Client to Authenticator Protocol (CTAP)\">[FIDO-CTAP]</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <code>hmac-secret</code> to <code>true</code> in the authenticator extensions input.</p>"
+            },
+            {
+              "html": "<p>If <var>salt1</var> is defined and a future extension to <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webauthn/#biblio-fido-ctap\" title=\"Client to Authenticator Protocol (CTAP)\">[FIDO-CTAP]</a> permits evaluation of the PRF at creation time,\n  configure <code>hmac-secret</code> inputs accordingly using the values of <var>salt1</var> and, if defined, <var>salt2</var>.</p>"
+            },
+            {
+              "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfoutputs-enabled\" id=\"ref-for-dom-authenticationextensionsprfoutputs-enabled\">enabled</a></code> to the value of <code>hmac-secret</code> in the authenticator extensions output. If not present, set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfoutputs-enabled\" id=\"ref-for-dom-authenticationextensionsprfoutputs-enabled①\">enabled</a></code> to <code>false</code>.</p>"
+            },
+            {
+              "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfoutputs-results\" id=\"ref-for-dom-authenticationextensionsprfoutputs-results\">results</a></code> to the decrypted PRF result(s), if any.</p>"
+            }
+          ]
         },
         {
-          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfoutputs-enabled\" id=\"ref-for-dom-authenticationextensionsprfoutputs-enabled\">enabled</a></code> to the value of <code>hmac-secret</code> in the authenticator extensions output. If not present, set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfoutputs-enabled\" id=\"ref-for-dom-authenticationextensionsprfoutputs-enabled①\">enabled</a></code> to <code>false</code>.</p>"
-        },
-        {
-          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfoutputs-results\" id=\"ref-for-dom-authenticationextensionsprfoutputs-results\">results</a></code> to the decrypted PRF result(s), if any.</p>"
+          "html": "If the authenticator does not support the CTAP2 <code>hmac-secret</code> extension <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webauthn/#biblio-fido-ctap\" title=\"Client to Authenticator Protocol (CTAP)\">[FIDO-CTAP]</a>,\n    but does support some other implementation compatible with the abstract authenticator processing defined below:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfoutputs-enabled\" id=\"ref-for-dom-authenticationextensionsprfoutputs-enabled②\">enabled</a></code> to <code>true</code>.</p>"
+            },
+            {
+              "html": "<p>If <var>salt1</var> is defined, use some unspecified mechanism to convey <var>salt1</var> and,\n  if defined, <var>salt2</var> to the authenticator as PRF inputs, in that order.</p>"
+            },
+            {
+              "html": "<p>Use some unspecified mechanism to receive the PRF outputs from the authenticator.\n  Set <code><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfoutputs-results\" id=\"ref-for-dom-authenticationextensionsprfoutputs-results①\">results</a></code></code> to the evaluation results, if any.</p>"
+            }
+          ]
         }
       ]
     },
@@ -2256,16 +2280,58 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <code>salt1</code> be the value of <code>SHA-256(UTF8Encode(\"WebAuthn PRF\") || 0x00 || <var>ev</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-first\" id=\"ref-for-dom-authenticationextensionsprfvalues-first①\">first</a></code>)</code>.</p>"
+              "html": "<p>Let <var>salt1</var> be the value of <code>SHA-256(UTF8Encode(\"WebAuthn PRF\") || 0x00 || <var>ev</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-first\" id=\"ref-for-dom-authenticationextensionsprfvalues-first①\">first</a></code>)</code>.</p>"
             },
             {
-              "html": "<p>If <code><var>ev</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-second\" id=\"ref-for-dom-authenticationextensionsprfvalues-second②\">second</a></code></code> is present, let <code>salt2</code> be the value of <code>SHA-256(UTF8Encode(\"WebAuthn PRF\") || 0x00 || <var>ev</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-second\" id=\"ref-for-dom-authenticationextensionsprfvalues-second③\">second</a></code>)</code>.</p>"
+              "html": "<p>If <code><var>ev</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-second\" id=\"ref-for-dom-authenticationextensionsprfvalues-second②\">second</a></code></code> is present, let <var>salt2</var> be the value of <code>SHA-256(UTF8Encode(\"WebAuthn PRF\") || 0x00 || <var>ev</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-second\" id=\"ref-for-dom-authenticationextensionsprfvalues-second③\">second</a></code>)</code>.</p>"
             },
             {
-              "html": "<p>Send an <code>hmac-secret</code> extension to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authenticator\" id=\"ref-for-authenticator②⑥⓪\">authenticator</a> using the values of <code>salt1</code> and, if set, <code>salt2</code> as the parameters of the same name in that process.</p>"
+              "html": "If the authenticator supports the CTAP2 <code>hmac-secret</code> extension <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webauthn/#biblio-fido-ctap\" title=\"Client to Authenticator Protocol (CTAP)\">[FIDO-CTAP]</a>:",
+              "rationale": "send",
+              "steps": [
+                {
+                  "html": "<p>Send an <code>hmac-secret</code> extension to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authenticator\" id=\"ref-for-authenticator②⑥①\">authenticator</a> using the values of <var>salt1</var> and, if set, <var>salt2</var> as the parameters of the same name in that process.</p>"
+                },
+                {
+                  "html": "<p>Decrypt the extension result and set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfoutputs-results\" id=\"ref-for-dom-authenticationextensionsprfoutputs-results②\">results</a></code> to the PRF result(s), if any.</p>"
+                }
+              ]
             },
             {
-              "html": "<p>Decrypt the extension result and set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfoutputs-results\" id=\"ref-for-dom-authenticationextensionsprfoutputs-results①\">results</a></code> to the PRF result(s), if any.</p>"
+              "html": "If the authenticator does not support the CTAP2 <code>hmac-secret</code> extension <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webauthn/#biblio-fido-ctap\" title=\"Client to Authenticator Protocol (CTAP)\">[FIDO-CTAP]</a>,\n  but does support some other implementation compatible with the abstract authenticator processing defined below:",
+              "rationale": "use",
+              "steps": [
+                {
+                  "html": "<p>Use some unspecified mechanism to convey <var>salt1</var> and, if defined, <var>salt2</var> to the authenticator as PRF inputs, in that order.</p>"
+                },
+                {
+                  "html": "<p>Use some unspecified mechanism to receive the PRF outputs from the authenticator as an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dictdef-authenticationextensionsprfvalues\" id=\"ref-for-dictdef-authenticationextensionsprfvalues④\">AuthenticationExtensionsPRFValues</a></code> value <var>results</var>.\n  Set <code><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfoutputs-results\" id=\"ref-for-dom-authenticationextensionsprfoutputs-results③\">results</a></code></code> to <var>results</var>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authenticator\" id=\"ref-for-authenticator②⑥③\">Authenticators</a> that do not support the <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webauthn/#biblio-fido-ctap\" title=\"Client to Authenticator Protocol (CTAP)\">[FIDO-CTAP]</a> <code>hmac-secret</code> extension\nMAY instead implement the following abstract procedure:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>PRF</var> be the pseudo-random function associated with the current <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-credential-management/#concept-credential\" id=\"ref-for-concept-credential②⑧\">credential</a>,\nor initialize the association if uninitialized:</p>\n       <p>Let <var>PRF</var> be a pseudo-random function whose outputs are exactly 32 bytes long,\nselected uniformly at random from a set of at least 2<sup>256</sup> such functions.\nThe choice of <var>PRF</var> MUST be independent of the state of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#user-verification\" id=\"ref-for-user-verification⑤④\">user verification</a>.\nThe selected <var>PRF</var> SHOULD NOT be used for other purposes than implementing this extension.\nAssociate <var>PRF</var> with the current <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-credential-management/#concept-credential\" id=\"ref-for-concept-credential②⑨\">credential</a> for the lifetime of the credential.</p>"
+        },
+        {
+          "html": "<p>Use some unspecified mechanism to receive PRF inputs <var>salt1</var> and, optionally, <var>salt2</var> from the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#client\" id=\"ref-for-client①⓪⑧\">client</a>, in that order.\nIf none are received, let <var>salt1</var> and <var>salt2</var> be undefined.</p>"
+        },
+        {
+          "html": "If <var>salt1</var> is defined:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>results</var> be an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dictdef-authenticationextensionsprfvalues\" id=\"ref-for-dictdef-authenticationextensionsprfvalues⑤\">AuthenticationExtensionsPRFValues</a></code> structure containing the evaluations of <var>PRF</var> at the given inputs:</p>\n         <ul>\n          <li data-md=\"\">\n           <p>Set <code><var>results</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-first\" id=\"ref-for-dom-authenticationextensionsprfvalues-first②\">first</a></code></code> to <code>PRF(<var>salt1</var>)</code>.</p>\n          </li><li data-md=\"\">\n           <p>If <var>salt2</var> is defined,\nset <code><var>results</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-second\" id=\"ref-for-dom-authenticationextensionsprfvalues-second④\">second</a></code></code> to <code>PRF(<var>salt2</var>)</code>.</p>\n         </li></ul>"
+            },
+            {
+              "html": "<p>Use some unspecified mechanism to convey <var>results</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#client\" id=\"ref-for-client①⓪⑨\">client</a> as the PRF outputs.</p>"
             }
           ]
         }
@@ -2358,7 +2424,7 @@
               ]
             },
             {
-              "html": "<p>If the <a href=\"https://w3c.github.io/webauthn/#sctn-getAssertion\">assertion</a> operation is successful, attempt to store the contents of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionslargeblobinputs-write\" id=\"ref-for-dom-authenticationextensionslargeblobinputs-write④\">write</a></code> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authenticator\" id=\"ref-for-authenticator②⑥③\">authenticator</a>, associated with the indicated credential.</p>"
+              "html": "<p>If the <a href=\"https://w3c.github.io/webauthn/#sctn-getAssertion\">assertion</a> operation is successful, attempt to store the contents of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionslargeblobinputs-write\" id=\"ref-for-dom-authenticationextensionslargeblobinputs-write④\">write</a></code> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authenticator\" id=\"ref-for-authenticator②⑥⑥\">authenticator</a>, associated with the indicated credential.</p>"
             },
             {
               "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-authenticationextensionslargebloboutputs-written\" id=\"ref-for-dom-authenticationextensionslargebloboutputs-written\">written</a></code> to <code>true</code> if successful and <code>false</code> otherwise.</p>"

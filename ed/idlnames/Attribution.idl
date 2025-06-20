@@ -1,0 +1,17 @@
+// Source: Attribution: Level 1 (https://www.w3.org/TR/privacy-preserving-attribution/)
+[SecureContext, Exposed=Window]
+interface Attribution {
+  readonly attribute AttributionAggregationServices aggregationServices;
+};
+
+// Source: Attribution: Level 1 (https://www.w3.org/TR/privacy-preserving-attribution/)
+[SecureContext, Exposed=Window]
+partial interface Attribution {
+  Promise<AttributionImpressionResult> saveImpression(AttributionImpressionOptions options);
+};
+
+// Source: Attribution: Level 1 (https://www.w3.org/TR/privacy-preserving-attribution/)
+[SecureContext, Exposed=Window]
+partial interface Attribution {
+  Promise<AttributionConversionResult> measureConversion(AttributionConversionOptions options);
+};

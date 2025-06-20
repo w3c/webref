@@ -6,5 +6,6 @@ dictionary IdentityProviderAPIConfig {
   required USVString login_url;
   USVString disconnect_endpoint;
   IdentityProviderBranding branding;
+  boolean supports_use_other_account = false;
   USVString account_label;
 };

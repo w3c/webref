@@ -26,6 +26,30 @@
           "value": "type( <syntax> )"
         }
       ]
+    },
+    {
+      "name": "@mixin",
+      "href": "https://drafts.csswg.org/css-mixins-1/#at-ruledef-mixin",
+      "descriptors": [],
+      "value": "@mixin <function-token> <function-parameter>#? , [@contents]? ) { <declaration-rule-list> }"
+    },
+    {
+      "name": "@contents",
+      "href": "https://drafts.csswg.org/css-mixins-1/#at-ruledef-contents",
+      "descriptors": [],
+      "value": "@contents [ { <declaration-list> } ]?"
+    },
+    {
+      "name": "@apply",
+      "href": "https://drafts.csswg.org/css-mixins-1/#at-ruledef-apply",
+      "descriptors": [],
+      "value": "@apply [ <dashed-ident> | <dashed-function> ] [ { <declaration-list> } ]?;"
+    },
+    {
+      "name": "@env",
+      "href": "https://drafts.csswg.org/css-mixins-1/#at-ruledef-env",
+      "descriptors": [],
+      "value": "@env <custom-property-name> : <declaration-value>? ;"
     }
   ],
   "selectors": [],

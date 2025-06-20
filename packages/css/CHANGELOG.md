@@ -7,7 +7,7 @@ Webref adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html),
 applied to data. A new major version is released whenever a breaking change is
 made to the data structure.
 
-## v7.0.0-alpha - 2025-06-10
+## v7.0.x - 2025-TBD
 
 CSS extracts are now consolidated into a single file.
 
@@ -19,11 +19,13 @@ CSS extracts are now consolidated into a single file.
 
 In version 6, `listAll()` resolved with an object where the keys were spec shortnames, and the values mostly matched the structure of the consolidated object that the function now returns. On top of the consolidation itself, main differences are:
 - Functions and types were merged in a `values` category in version 6, they now appear in separate `functions` and `types` categories.
-- Functions and types that were scoped to another CSS feature appeared nested under that CSS feature in version 6. They now appear directly under `functions` and `types` with a `for` key that contains the name of the scoping feature.
+- Functions and types that were scoped to another CSS feature appeared nested under that CSS feature in version 6. They now appear directly under `functions` and `types` with a `for` key that contains the list of scoping features for that feature. A scoping feature may be a property, a function or a type. When the scoping feature is a type, its name in the `for` key is enclosed between `<` and `>`.
+- Feature syntaxes were stored in a `value` key. That key is now named `syntax`. Actual syntax values are the same as before and can be parsed with CSSTree.
 - The shortname of the spec (or specs) that defines a feature is no longer readily available (but note the `href` key targets the defining spec). If you need the specs' shortnames, please [raise an issue](https://github.com/w3c/webref/issues) to describe your use case.
 - The consolidation removes duplicates, merging extended definitions into a single feature. The definition from the latest spec level is used when a feature is defined in more than one level. If you need the definition from earlier levels, please [raise an issue](https://github.com/w3c/webref/issues) to describe your needs!
-- Some of the possible values that a CSS feature could take appeared nested under that feature definition in a `values` key in version 6. Such values are no longer reported in the new version: they were confusing in any case because they did not cover the whole range of values that a feature could take, and could contain values that were not atomic keyword values. Values could be re-introduced when CSS specs are more systematic about them. In the meantime, you will need to parse the feature's syntax (the `value` key) to extract keyword values.
+- Some of the possible values that a CSS feature could take appeared nested under that feature definition in a `values` key in version 6. Such values are no longer reported in the new version: they were confusing in any case because they did not cover the whole range of values that a feature could take, and could contain values that were not atomic keyword values. Values could be re-introduced when CSS specs are more systematic about them. In the meantime, you will need to parse the feature's syntax (the `syntax` key) to extract keyword values.
 
+Additionally, the package now also exposes a new `index()` async method that resolves with an object similar to that returned by `listAll()`, except that lists of features under each category are indexed by feature names. For scoped features, the feature name is used as identifier when it is unambiguous. If a  feature is defined differently for different scopes, the feature name is completed with the name of the first scoping feature to disambiguate. For example, `type() for @function`, `type() for attr()`.
 
 ## v6.0.0 - 2022-11-28
 

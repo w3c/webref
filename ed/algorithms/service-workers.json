@@ -3905,41 +3905,50 @@
                       "html": "<p>Let <var>raceResponse</var> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-race-response\" id=\"ref-for-dfn-race-response①\">race response</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value\">value</a> is \"<code>pending</code>\".</p>"
                     },
                     {
-                      "html": "Run the following substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③⑥\">in parallel</a>, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when\">abort when</a> <var>fetchController</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-state\" id=\"ref-for-fetch-controller-state\">state</a> is \"<code>terminated</code>\" or \"<code>aborted</code>\":",
-                      "rationale": "set",
+                      "html": "Run the following substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③⑥\">in parallel</a>:",
+                      "rationale": "if",
                       "steps": [
                         {
+                          "html": "<p>If <var>fetchController</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-state\" id=\"ref-for-fetch-controller-state\">state</a> is \"<code>terminated</code>\" or \"<code>aborted</code>\", then set <var>raceResponse</var> to a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-race-response\" id=\"ref-for-dfn-race-response②\">race response</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value①\">value</a> is null, and abort these steps.</p>"
+                        },
+                        {
                           "html": "Set <var>raceFetchController</var> to the result of calling <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch①④\">fetch</a> given <var>request</var>, with <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-response\" id=\"ref-for-process-response②\">processResponse</a> set to the following steps given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①②\">response</a> <var>raceNetworkRequestResponse</var>:",
-                          "rationale": "set",
+                          "rationale": "run",
                           "steps": [
                             {
-                              "html": "<p>Set <var>raceResponse</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value①\">value</a> to <var>raceNetworkRequestResponse</var>.</p>"
-                            },
-                            {
-                              "html": "If <var>raceNetworkRequestResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status③\">status</a> is <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#ok-status\" id=\"ref-for-ok-status②\">ok status</a>, then:",
-                              "rationale": "let",
+                              "html": "Run these steps, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when\">abort when</a> <var>fetchController</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-state\" id=\"ref-for-fetch-controller-state①\">state</a> is \"<code>terminated</code>\" or \"<code>aborted</code>\".",
+                              "rationale": "set",
                               "steps": [
                                 {
-                                  "html": "<p>Let <var>raceNetworkResult</var> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-race-result\" id=\"ref-for-dfn-race-result③\">race result</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-result-routed-response\" id=\"ref-for-race-result-routed-response①\">routed response</a> is <var>raceNetworkRequestResponse</var> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-result-used-route\" id=\"ref-for-race-result-used-route①\">used route</a> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routersourceenum-network\" id=\"ref-for-dom-routersourceenum-network②\">\"network\"</a></code>.</p>"
+                                  "html": "<p>Set <var>raceResponse</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value②\">value</a> to <var>raceNetworkRequestResponse</var>.</p>"
                                 },
                                 {
-                                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#queue-enqueue\" id=\"ref-for-queue-enqueue③\">Enqueue</a> <var>raceNetworkResult</var> to <var>queue</var>.</p>"
+                                  "html": "If <var>raceNetworkRequestResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status③\">status</a> is <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#ok-status\" id=\"ref-for-ok-status②\">ok status</a>, then:",
+                                  "rationale": "let",
+                                  "steps": [
+                                    {
+                                      "html": "<p>Let <var>raceNetworkResult</var> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-race-result\" id=\"ref-for-dfn-race-result③\">race result</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-result-routed-response\" id=\"ref-for-race-result-routed-response①\">routed response</a> is <var>raceNetworkRequestResponse</var> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-result-used-route\" id=\"ref-for-race-result-used-route①\">used route</a> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-routersourceenum-network\" id=\"ref-for-dom-routersourceenum-network②\">\"network\"</a></code>.</p>"
+                                    },
+                                    {
+                                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#queue-enqueue\" id=\"ref-for-queue-enqueue③\">Enqueue</a> <var>raceNetworkResult</var> to <var>queue</var>.</p>"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#if-aborted\" id=\"ref-for-if-aborted\">If aborted</a> and <var>raceFetchController</var> is not null, then:",
+                              "rationale": "abort",
+                              "steps": [
+                                {
+                                  "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-abort\" id=\"ref-for-fetch-controller-abort②\">Abort</a> <var>raceFetchController</var>.</p>"
+                                },
+                                {
+                                  "html": "<p>Set <var>raceResponse</var> to a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-race-response\" id=\"ref-for-dfn-race-response③\">race response</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value③\">value</a> is null.</p>"
                                 }
                               ]
                             }
                           ]
-                        }
-                      ]
-                    },
-                    {
-                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#if-aborted\" id=\"ref-for-if-aborted\">If aborted</a> and <var>raceFetchController</var> is not null, then:",
-                      "rationale": "abort",
-                      "steps": [
-                        {
-                          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-abort\" id=\"ref-for-fetch-controller-abort②\">Abort</a> <var>raceFetchController</var>.</p>"
-                        },
-                        {
-                          "html": "<p>Set <var>raceResponse</var> to a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-race-response\" id=\"ref-for-dfn-race-response②\">race response</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value②\">value</a> is null.</p>"
                         }
                       ]
                     },
@@ -4029,7 +4038,7 @@
               "html": "<p>Let <var>preloadFetchController</var> be null.</p>"
             },
             {
-              "html": "Run the following substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③⑧\">in parallel</a>, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when①\">abort when</a> <var>fetchController</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-state\" id=\"ref-for-fetch-controller-state①\">state</a> is \"<code>terminated</code>\" or \"<code>aborted</code>\":",
+              "html": "Run the following substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③⑧\">in parallel</a>, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when①\">abort when</a> <var>fetchController</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-state\" id=\"ref-for-fetch-controller-state②\">state</a> is \"<code>terminated</code>\" or \"<code>aborted</code>\":",
               "rationale": "set",
               "steps": [
                 {
@@ -4283,7 +4292,7 @@
                   "html": "<p>If <var>e</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#canceled-flag\" id=\"ref-for-canceled-flag\">canceled flag</a> is set, set <var>eventCanceled</var> to true.</p>"
                 },
                 {
-                  "html": "If <var>fetchController</var> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-state\" id=\"ref-for-fetch-controller-state②\">state</a> is \"<code>terminated</code>\" or \"<code>aborted</code>\", then:",
+                  "html": "If <var>fetchController</var> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-state\" id=\"ref-for-fetch-controller-state③\">state</a> is \"<code>terminated</code>\" or \"<code>aborted</code>\", then:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -4327,14 +4336,14 @@
               "html": "<p>If <var>eventHandled</var> is not null, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>eventHandled</var>.</p>"
             },
             {
-              "html": "If <var>raceResponse</var> is not null, and <var>raceResponse</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value③\">value</a> is not null, then:",
+              "html": "If <var>raceResponse</var> is not null, and <var>raceResponse</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value④\">value</a> is not null, then:",
               "rationale": "wait",
               "steps": [
                 {
-                  "html": "<p>Wait until <var>raceResponse</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value④\">value</a> is not \"<code>pending</code>\".</p>"
+                  "html": "<p>Wait until <var>raceResponse</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value⑤\">value</a> is not \"<code>pending</code>\".</p>"
                 },
                 {
-                  "html": "<p>If <var>raceResponse</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value⑤\">value</a> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①④\">response</a>, return <var>raceResponse</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value⑥\">value</a>.</p>"
+                  "html": "<p>If <var>raceResponse</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value⑥\">value</a> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①④\">response</a>, return <var>raceResponse</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value⑦\">value</a>.</p>"
                 }
               ]
             },
@@ -5736,10 +5745,10 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove⑦\">Remove</a> <var>map</var>[<var>request</var>].</p>"
             },
             {
-              "html": "<p>Wait until <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value⑦\">value</a> is not \"<code>pending</code>\"</p>"
+              "html": "<p>Wait until <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value⑧\">value</a> is not \"<code>pending</code>\"</p>"
             },
             {
-              "html": "<p>If <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value⑧\">value</a> is <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①⑦\">response</a>, return <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value⑨\">value</a>.</p>"
+              "html": "<p>If <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value⑨\">value</a> is <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①⑦\">response</a>, return <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#race-response-value\" id=\"ref-for-race-response-value①⓪\">value</a>.</p>"
             }
           ]
         },

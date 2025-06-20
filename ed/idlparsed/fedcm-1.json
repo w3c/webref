@@ -646,7 +646,7 @@
         "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderbranding"
       },
       "IdentityProviderAPIConfig": {
-        "fragment": "dictionary IdentityProviderAPIConfig {\n  required USVString accounts_endpoint;\n  USVString client_metadata_endpoint;\n  required USVString id_assertion_endpoint;\n  required USVString login_url;\n  USVString disconnect_endpoint;\n  IdentityProviderBranding branding;\n  USVString account_label;\n};",
+        "fragment": "dictionary IdentityProviderAPIConfig {\n  required USVString accounts_endpoint;\n  USVString client_metadata_endpoint;\n  required USVString id_assertion_endpoint;\n  required USVString login_url;\n  USVString disconnect_endpoint;\n  IdentityProviderBranding branding;\n  boolean supports_use_other_account = false;\n  USVString account_label;\n};",
         "type": "dictionary",
         "name": "IdentityProviderAPIConfig",
         "inheritance": null,
@@ -746,6 +746,25 @@
             "default": null,
             "required": false,
             "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-branding"
+          },
+          {
+            "type": "field",
+            "name": "supports_use_other_account",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-supports_use_other_account"
           },
           {
             "type": "field",
@@ -1216,7 +1235,7 @@
         "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identityresolveoptions"
       },
       "IdentityProvider": {
-        "fragment": "[Exposed=Window, SecureContext] interface IdentityProvider {\n    static undefined close();\n    static undefined resolve(DOMString token, optional IdentityResolveOptions options = {});\n    static Promise<sequence<IdentityUserInfo>> getUserInfo(IdentityProviderConfig config);\n};",
+        "fragment": "[Exposed=Window, SecureContext] interface IdentityProvider {\n    static undefined close();\n    static Promise<undefined> resolve(DOMString token, optional IdentityResolveOptions options = {});\n    static Promise<sequence<IdentityUserInfo>> getUserInfo(IdentityProviderConfig config);\n};",
         "type": "interface",
         "name": "IdentityProvider",
         "inheritance": null,
@@ -1243,10 +1262,19 @@
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "Promise",
               "nullable": false,
               "union": false,
-              "idlType": "undefined"
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
             },
             "arguments": [
               {

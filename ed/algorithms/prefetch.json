@@ -286,7 +286,16 @@
               "html": "<p>If <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-state\" id=\"ref-for-prefetch-record-state⑧\">state</a> is \"<code>canceled</code>\", then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
             },
             {
-              "html": "<p>If <var>checkPrerender</var> is true and <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-prerendering-traversable\" id=\"ref-for-prefetch-record-prerendering-traversable①\">prerendering traversable</a> is null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
+              "html": "If <var>checkPrerender</var> is true:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-prerendering-traversable\" id=\"ref-for-prefetch-record-prerendering-traversable①\">prerendering traversable</a> is null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-prerendering-target-navigable-name-hint\" id=\"ref-for-prefetch-record-prerendering-target-navigable-name-hint\">prerendering target navigable name hint</a> is not equal to <var>recordUnderConsideration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-prerendering-target-navigable-name-hint\" id=\"ref-for-prefetch-record-prerendering-target-navigable-name-hint①\">prerendering target navigable name hint</a>, then the user agent may <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue④\">continue</a>.</p>"
+                }
+              ]
             },
             {
               "html": "<p>Let <var>recordNVS</var> be null.</p>"
@@ -298,7 +307,7 @@
               "html": "<p>Otherwise, set <var>recordNVS</var> to <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-no-vary-search-hint\" id=\"ref-for-prefetch-record-no-vary-search-hint①\">No-Vary-Search hint</a>.</p>"
             },
             {
-              "html": "<p>If <var>recordUnderConsideration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-no-vary-search-hint\" id=\"ref-for-prefetch-record-no-vary-search-hint②\">No-Vary-Search hint</a> is not equal to <var>recordNVS</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue④\">continue</a>.</p>"
+              "html": "<p>If <var>recordUnderConsideration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-no-vary-search-hint\" id=\"ref-for-prefetch-record-no-vary-search-hint②\">No-Vary-Search hint</a> is not equal to <var>recordNVS</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑤\">continue</a>.</p>"
             },
             {
               "html": "<p>If <var>recordUnderConsideration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url⑤\">URL</a> and <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url⑥\">URL</a> are <a data-link-type=\"dfn\" href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#name-comparing\" id=\"ref-for-name-comparing②\">equivalent modulo search variance</a> given <var>recordUnderConsideration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-no-vary-search-hint\" id=\"ref-for-prefetch-record-no-vary-search-hint③\">No-Vary-Search hint</a>, then return true.</p>"
@@ -557,7 +566,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>prefetchRecord</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#find-a-matching-complete-prefetch-record\" id=\"ref-for-find-a-matching-complete-prefetch-record①\">finding a matching complete prefetch record</a> given <var>navigable</var>, <var>sourceSnapshotParams</var>, <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#she-url\" id=\"ref-for-she-url②\">URL</a>, and <var>sourceSnapshotParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#source-snapshot-params-sandbox\" id=\"ref-for-source-snapshot-params-sandbox\">sandboxing flags</a>.</p>"
+                  "html": "<p>Let <var>prefetchRecord</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#wait-for-a-matching-prefetch-record\" id=\"ref-for-wait-for-a-matching-prefetch-record①\">waiting for a matching prefetch record</a> given <var>navigable</var>, <var>sourceSnapshotParams</var>, <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#she-url\" id=\"ref-for-she-url②\">URL</a>, and <var>sourceSnapshotParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#source-snapshot-params-sandbox\" id=\"ref-for-source-snapshot-params-sandbox\">sandboxing flags</a>.</p>"
                 },
                 {
                   "html": "If <var>prefetchRecord</var> is not null:",
@@ -893,14 +902,14 @@
                   "html": "<p>Let <var>activeDocument</var> be the <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document⑦\">active document</a>.</p>"
                 },
                 {
-                  "html": "<p>If <var>activeDocument</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin③\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin③\">same origin</a> with <var>origin</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑤\">continue</a>.</p>"
+                  "html": "<p>If <var>activeDocument</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin③\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin③\">same origin</a> with <var>origin</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑥\">continue</a>.</p>"
                 },
                 {
                   "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>prefetchRecord</var> in <var>activeDocument</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#document-prefetch-records\" id=\"ref-for-document-prefetch-records⑦\">prefetch records</a>:",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "<p>If <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-prerendering-traversable\" id=\"ref-for-prefetch-record-prerendering-traversable③\">prerendering traversable</a> is not null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑥\">continue</a>.</p>"
+                      "html": "<p>If <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-prerendering-traversable\" id=\"ref-for-prefetch-record-prerendering-traversable③\">prerendering traversable</a> is not null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑦\">continue</a>.</p>"
                     },
                     {
                       "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-cancel-and-discard\" id=\"ref-for-prefetch-record-cancel-and-discard①\">Cancel and discard</a> <var>prefetchRecord</var> given <var>activeDocument</var>.</p>"

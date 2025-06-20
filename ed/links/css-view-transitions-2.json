@@ -24,6 +24,7 @@
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/Document/startViewTransition": {},
       "https://dom.spec.whatwg.org/": {},
+      "https://drafts.csswg.org/css-backgrounds/": {},
       "https://drafts.csswg.org/css-borders-4/": {},
       "https://drafts.csswg.org/css-cascade-5/": {},
       "https://drafts.csswg.org/css-color-4/": {},
@@ -119,10 +120,16 @@
           "concept-class",
           "concept-id",
           "concept-tree-root",
+          "concept-tree-child",
           "concept-document-origin",
           "clone-a-node-document",
           "element",
           "concept-tree-ancestor"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-border-width"
         ]
       },
       "https://drafts.csswg.org/css-borders-4/": {
@@ -217,6 +224,8 @@
           "selectordef-view-transition",
           "snapshot-containing-block",
           "valdef-view-transition-name-none",
+          "view-transitions",
+          "global-view-transition-user-agent-style-sheet",
           "view-transition-page-visibility-change-steps",
           "perform-pending-transition-operations",
           "viewtransition-phase",
@@ -225,8 +234,8 @@
           "viewtransition-update-callback-done-promise",
           "document-scoped-view-transition-name",
           "view-transition-name",
-          "captured-element-old-transform",
-          "captured-element-group-styles-rule"
+          "captured-element-group-styles-rule",
+          "captured-element-old-transform"
         ]
       },
       "https://drafts.csswg.org/cssom-1/": {
@@ -245,7 +254,8 @@
           "specificity",
           "class-selector",
           "selector",
-          "type-selector"
+          "type-selector",
+          "pseudo-element"
         ]
       },
       "https://drafts.fxtf.org/css-masking-1/": {
@@ -261,8 +271,7 @@
       },
       "https://drafts.fxtf.org/geometry-1/": {
         "anchors": [
-          "matrix",
-          "multiply"
+          "matrix"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {

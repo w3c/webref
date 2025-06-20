@@ -14,10 +14,10 @@
           "html": "<p>If <var>S</var> is associated with an element\nwhose computed value of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-scroll-anchoring-1/#propdef-overflow-anchor\" id=\"ref-for-propdef-overflow-anchor\">overflow-anchor</a> property is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-scroll-anchoring-1/#valdef-overflow-anchor-none\" id=\"ref-for-valdef-overflow-anchor-none\">none</a>,\nthen do not select an anchor node for <var>S</var>.</p>"
         },
         {
-          "html": "<p>Otherwise, for each <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-anchoring-1/#anchor-priority-candidates\" id=\"ref-for-anchor-priority-candidates①\">priority candidate</a> <var>PC</var> in order specified,\ncheck if <var>PC</var> is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-anchoring-1/#anchor-viable-candidate\" id=\"ref-for-anchor-viable-candidate\">viable candidate</a> in <var>S</var>. If so, select it as an\nanchor node and terminate.</p>"
+          "html": "<p>Otherwise, for each <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-anchoring-1/#anchor-priority-candidates\" id=\"ref-for-anchor-priority-candidates①\">priority candidate</a> <var>PC</var> in order specified,\ncheck if <var>PC</var> is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-anchoring-1/#anchor-viable-candidate\" id=\"ref-for-anchor-viable-candidate\">viable candidate</a> in <var>S</var>.\nIf so, perform the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-anchoring-1/#candidate-examination\" id=\"ref-for-candidate-examination\">candidate examination algorithm</a> for <var>PC</var> in <var>S</var> and terminate.</p>"
         },
         {
-          "html": "<p>Otherwise, for each DOM child <var>N</var> of the element or document associated with <var>S</var>,\nperform the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-anchoring-1/#candidate-examination\" id=\"ref-for-candidate-examination\">candidate examination algorithm</a> for <var>N</var> in <var>S</var>,\nand terminate if it selects an anchor node.</p>"
+          "html": "<p>Otherwise, for each DOM child <var>N</var> of the element or document associated with <var>S</var>,\nperform the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-anchoring-1/#candidate-examination\" id=\"ref-for-candidate-examination②\">candidate examination algorithm</a> for <var>N</var> in <var>S</var>,\nand terminate if it selects an anchor node.</p>"
         }
       ]
     },
@@ -38,10 +38,10 @@
           "rationale": "for",
           "steps": [
             {
-              "html": "<p>For each DOM child <var>C</var> of <var>N</var>,\nperform the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-anchoring-1/#candidate-examination\" id=\"ref-for-candidate-examination①\">candidate examination algorithm</a> for <var>C</var> in <var>S</var>,\nand terminate if it selects an anchor node.</p>"
+              "html": "<p>For each DOM child <var>C</var> of <var>N</var>,\nperform the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-anchoring-1/#candidate-examination\" id=\"ref-for-candidate-examination③\">candidate examination algorithm</a> for <var>C</var> in <var>S</var>,\nand terminate if it selects an anchor node.</p>"
             },
             {
-              "html": "<p>For each absolutely-positioned element <var>A</var>\nwhose <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block\">containing block</a> is <var>N</var>,\nbut whose DOM parent is not <var>N</var>,\nperform the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-anchoring-1/#candidate-examination\" id=\"ref-for-candidate-examination②\">candidate examination algorithm</a> for <var>A</var> in <var>S</var>,\nand terminate if it selects an anchor node.</p>"
+              "html": "<p>For each absolutely-positioned element <var>A</var>\nwhose <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block\">containing block</a> is <var>N</var>,\nbut whose DOM parent is not <var>N</var>,\nperform the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-anchoring-1/#candidate-examination\" id=\"ref-for-candidate-examination④\">candidate examination algorithm</a> for <var>A</var> in <var>S</var>,\nand terminate if it selects an anchor node.</p>"
             },
             {
               "html": "<p>Select <var>N</var> as the anchor node.\n(If this step is reached,\nno suitable anchor node was found among <var>N</var>’s descendants.)</p>"

@@ -1,0 +1,7 @@
+// Source: Attribution: Level 1 (https://www.w3.org/TR/privacy-preserving-attribution/)
+dictionary AttributionImpressionOptions {
+  required unsigned long histogramIndex;
+  unsigned long matchValue = 0;
+  sequence<USVString> conversionSites = [];
+  unsigned long lifetimeDays = 30;
+};
