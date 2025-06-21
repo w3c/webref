@@ -120,16 +120,25 @@
           "html": "<p>Let <var>features</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a> of values in <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpudevicedescriptor-requiredfeatures\" id=\"ref-for-dom-gpudevicedescriptor-requiredfeatures\">requiredFeatures</a></code>.</p>"
         },
         {
-          "html": "If <var>features</var> contains <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#texture-formats-tier1\" id=\"ref-for-texture-formats-tier1\">\"texture-formats-tier1\"</a></code>:",
+          "html": "If <var>features</var> contains <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#texture-formats-tier2\" id=\"ref-for-texture-formats-tier2\">\"texture-formats-tier2\"</a></code>:",
           "rationale": "append",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#rg11b10ufloat-renderable\" id=\"ref-for-rg11b10ufloat-renderable\">\"rg11b10ufloat-renderable\"</a></code> to <var>features</var></p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#texture-formats-tier1\" id=\"ref-for-texture-formats-tier1\">\"texture-formats-tier1\"</a></code> to <var>features</var></p>"
             }
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#core-features-and-limits\" id=\"ref-for-core-features-and-limits\">\"core-features-and-limits\"</a></code> to <var>features</var>.</p>"
+          "html": "If <var>features</var> contains <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#texture-formats-tier1\" id=\"ref-for-texture-formats-tier1①\">\"texture-formats-tier1\"</a></code>:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#rg11b10ufloat-renderable\" id=\"ref-for-rg11b10ufloat-renderable\">\"rg11b10ufloat-renderable\"</a></code> to <var>features</var></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append②\">Append</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#core-features-and-limits\" id=\"ref-for-core-features-and-limits\">\"core-features-and-limits\"</a></code> to <var>features</var>.</p>"
         },
         {
           "html": "<p>Let <var>limits</var> be a <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#supported-limits\" id=\"ref-for-supported-limits③\">supported limits</a> object with all values set to their defaults.</p>"
@@ -1877,7 +1886,7 @@
               ]
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append②\">Append</a> (<var>bindGroupLayoutEntry</var>, <var>bound</var>) to <var>result</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append③\">Append</a> (<var>bindGroupLayoutEntry</var>, <var>bound</var>) to <var>result</var>.</p>"
             }
           ]
         },
