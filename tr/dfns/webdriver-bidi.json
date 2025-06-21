@@ -978,10 +978,52 @@
       "definedIn": "dt"
     },
     {
+      "id": "errors-no-such-network-collector",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#errors-no-such-network-collector",
+      "linkingText": [
+        "no such network collector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "errors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "errors-no-such-intercept",
       "href": "https://www.w3.org/TR/webdriver-bidi/#errors-no-such-intercept",
       "linkingText": [
         "no such intercept"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "errors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "errors-no-such-network-data",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#errors-no-such-network-data",
+      "linkingText": [
+        "no such network data"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1209,6 +1251,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "errors-unavailable-network-data",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#errors-unavailable-network-data",
+      "linkingText": [
+        "unavailable network data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "errors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "cddl-type-errorcode",
       "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-type-errorcode",
       "linkingText": [
@@ -1360,6 +1423,28 @@
       "definedIn": "pre"
     },
     {
+      "id": "cddl-value-errorcode-no-such-network-collector",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-value-errorcode-no-such-network-collector",
+      "linkingText": [
+        "no such network collector",
+        "\"no such network collector\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-value",
+      "for": [
+        "ErrorCode"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "cddl-value-errorcode-no-such-element",
       "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-value-errorcode-no-such-element",
       "linkingText": [
@@ -1453,6 +1538,28 @@
       "linkingText": [
         "no such intercept",
         "\"no such intercept\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-value",
+      "for": [
+        "ErrorCode"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-value-errorcode-no-such-network-data",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-value-errorcode-no-such-network-data",
+      "linkingText": [
+        "no such network data",
+        "\"no such network data\""
       ],
       "localLinkingText": [],
       "type": "cddl-value",
@@ -1695,6 +1802,28 @@
       "linkingText": [
         "unable to set file input",
         "\"unable to set file input\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-value",
+      "for": [
+        "ErrorCode"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#errors",
+        "title": "Errors",
+        "number": "3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-value-errorcode-unavailable-network-data",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-value-errorcode-unavailable-network-data",
+      "linkingText": [
+        "unavailable network data",
+        "\"unavailable network data\""
       ],
       "localLinkingText": [],
       "type": "cddl-value",
@@ -15347,6 +15476,257 @@
       "definedIn": "prose"
     },
     {
+      "id": "network-data",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#network-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "network"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-data-collection",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-data-collection",
+        "title": "Network Data Collection",
+        "number": "7.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "network-collector",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#network-collector",
+      "linkingText": [
+        "collector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "network"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-data-collection",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-data-collection",
+        "title": "Network Data Collection",
+        "number": "7.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "network-collectors",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#network-collectors",
+      "linkingText": [
+        "network collectors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-data-collection",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-data-collection",
+        "title": "Network Data Collection",
+        "number": "7.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "collected-network-data",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#collected-network-data",
+      "linkingText": [
+        "collected network data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-data-collection",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-data-collection",
+        "title": "Network Data Collection",
+        "number": "7.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-total-data-size",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#max-total-data-size",
+      "linkingText": [
+        "max total data size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-data-collection",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-data-collection",
+        "title": "Network Data Collection",
+        "number": "7.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-navigable-for-request",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-navigable-for-request",
+      "linkingText": [
+        "get navigable for request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-data-collection",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-data-collection",
+        "title": "Network Data Collection",
+        "number": "7.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "match-collector-for-navigable",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#match-collector-for-navigable",
+      "linkingText": [
+        "match collector for navigable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-data-collection",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-data-collection",
+        "title": "Network Data Collection",
+        "number": "7.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "clone-network-response-body",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#clone-network-response-body",
+      "linkingText": [
+        "clone network response body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "network-data-collection",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-data-collection",
+        "title": "Network Data Collection",
+        "number": "7.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-collected-data",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-collected-data",
+      "linkingText": [
+        "get collected data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-data-collection",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-data-collection",
+        "title": "Network Data Collection",
+        "number": "7.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "maybe-abort-network-response-body-collection",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#maybe-abort-network-response-body-collection",
+      "linkingText": [
+        "maybe abort network response body collection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-data-collection",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-data-collection",
+        "title": "Network Data Collection",
+        "number": "7.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "maybe-collect-network-response-body",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#maybe-collect-network-response-body",
+      "linkingText": [
+        "maybe collect network response body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-data-collection",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-data-collection",
+        "title": "Network Data Collection",
+        "number": "7.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "allocate-size-to-record-data",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#allocate-size-to-record-data",
+      "linkingText": [
+        "allocate size to record data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-data-collection",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-data-collection",
+        "title": "Network Data Collection",
+        "number": "7.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remove-collector-from-data",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#remove-collector-from-data",
+      "linkingText": [
+        "remove collector from data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-data-collection",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#network-data-collection",
+        "title": "Network Data Collection",
+        "number": "7.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "network-intercept",
       "href": "https://www.w3.org/TR/webdriver-bidi/#network-intercept",
       "linkingText": [
@@ -15361,7 +15741,7 @@
         "id": "network-intercepts",
         "href": "https://www.w3.org/TR/webdriver-bidi/#network-intercepts",
         "title": "Network Intercepts",
-        "number": "7.5.2"
+        "number": "7.5.3"
       },
       "definedIn": "prose"
     },
@@ -15380,7 +15760,7 @@
         "id": "network-intercepts",
         "href": "https://www.w3.org/TR/webdriver-bidi/#network-intercepts",
         "title": "Network Intercepts",
-        "number": "7.5.2"
+        "number": "7.5.3"
       },
       "definedIn": "prose"
     },
@@ -15399,7 +15779,7 @@
         "id": "network-intercepts",
         "href": "https://www.w3.org/TR/webdriver-bidi/#network-intercepts",
         "title": "Network Intercepts",
-        "number": "7.5.2"
+        "number": "7.5.3"
       },
       "definedIn": "prose"
     },
@@ -15418,7 +15798,7 @@
         "id": "network-intercepts",
         "href": "https://www.w3.org/TR/webdriver-bidi/#network-intercepts",
         "title": "Network Intercepts",
-        "number": "7.5.2"
+        "number": "7.5.3"
       },
       "definedIn": "prose"
     },
@@ -15437,7 +15817,7 @@
         "id": "network-intercepts",
         "href": "https://www.w3.org/TR/webdriver-bidi/#network-intercepts",
         "title": "Network Intercepts",
-        "number": "7.5.2"
+        "number": "7.5.3"
       },
       "definedIn": "prose"
     },
@@ -15456,7 +15836,7 @@
         "id": "type-network-AuthChallenge",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-AuthChallenge",
         "title": "The network.AuthChallenge Type",
-        "number": "7.5.3.1"
+        "number": "7.5.4.1"
       },
       "definedIn": "pre"
     },
@@ -15478,7 +15858,7 @@
         "id": "type-network-AuthChallenge",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-AuthChallenge",
         "title": "The network.AuthChallenge Type",
-        "number": "7.5.3.1"
+        "number": "7.5.4.1"
       },
       "definedIn": "pre"
     },
@@ -15500,7 +15880,7 @@
         "id": "type-network-AuthChallenge",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-AuthChallenge",
         "title": "The network.AuthChallenge Type",
-        "number": "7.5.3.1"
+        "number": "7.5.4.1"
       },
       "definedIn": "pre"
     },
@@ -15519,7 +15899,7 @@
         "id": "type-network-AuthChallenge",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-AuthChallenge",
         "title": "The network.AuthChallenge Type",
-        "number": "7.5.3.1"
+        "number": "7.5.4.1"
       },
       "definedIn": "prose"
     },
@@ -15538,7 +15918,7 @@
         "id": "type-network-AuthCredentials",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-AuthCredentials",
         "title": "The network.AuthCredentials Type",
-        "number": "7.5.3.2"
+        "number": "7.5.4.2"
       },
       "definedIn": "pre"
     },
@@ -15560,7 +15940,7 @@
         "id": "type-network-AuthCredentials",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-AuthCredentials",
         "title": "The network.AuthCredentials Type",
-        "number": "7.5.3.2"
+        "number": "7.5.4.2"
       },
       "definedIn": "pre"
     },
@@ -15582,7 +15962,7 @@
         "id": "type-network-AuthCredentials",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-AuthCredentials",
         "title": "The network.AuthCredentials Type",
-        "number": "7.5.3.2"
+        "number": "7.5.4.2"
       },
       "definedIn": "pre"
     },
@@ -15604,7 +15984,7 @@
         "id": "type-network-AuthCredentials",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-AuthCredentials",
         "title": "The network.AuthCredentials Type",
-        "number": "7.5.3.2"
+        "number": "7.5.4.2"
       },
       "definedIn": "pre"
     },
@@ -15626,7 +16006,7 @@
         "id": "type-network-AuthCredentials",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-AuthCredentials",
         "title": "The network.AuthCredentials Type",
-        "number": "7.5.3.2"
+        "number": "7.5.4.2"
       },
       "definedIn": "pre"
     },
@@ -15645,7 +16025,7 @@
         "id": "type-network-BaseParameters",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BaseParameters",
         "title": "The network.BaseParameters Type",
-        "number": "7.5.3.3"
+        "number": "7.5.4.3"
       },
       "definedIn": "pre"
     },
@@ -15667,7 +16047,7 @@
         "id": "type-network-BaseParameters",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BaseParameters",
         "title": "The network.BaseParameters Type",
-        "number": "7.5.3.3"
+        "number": "7.5.4.3"
       },
       "definedIn": "pre"
     },
@@ -15689,7 +16069,7 @@
         "id": "type-network-BaseParameters",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BaseParameters",
         "title": "The network.BaseParameters Type",
-        "number": "7.5.3.3"
+        "number": "7.5.4.3"
       },
       "definedIn": "pre"
     },
@@ -15711,7 +16091,7 @@
         "id": "type-network-BaseParameters",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BaseParameters",
         "title": "The network.BaseParameters Type",
-        "number": "7.5.3.3"
+        "number": "7.5.4.3"
       },
       "definedIn": "pre"
     },
@@ -15733,7 +16113,7 @@
         "id": "type-network-BaseParameters",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BaseParameters",
         "title": "The network.BaseParameters Type",
-        "number": "7.5.3.3"
+        "number": "7.5.4.3"
       },
       "definedIn": "pre"
     },
@@ -15755,7 +16135,7 @@
         "id": "type-network-BaseParameters",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BaseParameters",
         "title": "The network.BaseParameters Type",
-        "number": "7.5.3.3"
+        "number": "7.5.4.3"
       },
       "definedIn": "pre"
     },
@@ -15777,7 +16157,7 @@
         "id": "type-network-BaseParameters",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BaseParameters",
         "title": "The network.BaseParameters Type",
-        "number": "7.5.3.3"
+        "number": "7.5.4.3"
       },
       "definedIn": "pre"
     },
@@ -15799,7 +16179,7 @@
         "id": "type-network-BaseParameters",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BaseParameters",
         "title": "The network.BaseParameters Type",
-        "number": "7.5.3.3"
+        "number": "7.5.4.3"
       },
       "definedIn": "pre"
     },
@@ -15818,9 +16198,50 @@
         "id": "type-network-BaseParameters",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BaseParameters",
         "title": "The network.BaseParameters Type",
-        "number": "7.5.3.3"
+        "number": "7.5.4.3"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "cddl-type-networkdatatype",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-type-networkdatatype",
+      "linkingText": [
+        "network.DataType"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-dataType",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-dataType",
+        "title": "The network.DataType Type",
+        "number": "7.5.4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-value-networkdatatype-response",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-value-networkdatatype-response",
+      "linkingText": [
+        "response",
+        "\"response\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-value",
+      "for": [
+        "network.DataType"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-dataType",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-dataType",
+        "title": "The network.DataType Type",
+        "number": "7.5.4.4"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "cddl-type-networkbytesvalue",
@@ -15837,7 +16258,7 @@
         "id": "type-network-BytesValue",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BytesValue",
         "title": "The network.BytesValue Type",
-        "number": "7.5.3.4"
+        "number": "7.5.4.5"
       },
       "definedIn": "pre"
     },
@@ -15856,7 +16277,7 @@
         "id": "type-network-BytesValue",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BytesValue",
         "title": "The network.BytesValue Type",
-        "number": "7.5.3.4"
+        "number": "7.5.4.5"
       },
       "definedIn": "pre"
     },
@@ -15878,7 +16299,7 @@
         "id": "type-network-BytesValue",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BytesValue",
         "title": "The network.BytesValue Type",
-        "number": "7.5.3.4"
+        "number": "7.5.4.5"
       },
       "definedIn": "pre"
     },
@@ -15900,7 +16321,7 @@
         "id": "type-network-BytesValue",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BytesValue",
         "title": "The network.BytesValue Type",
-        "number": "7.5.3.4"
+        "number": "7.5.4.5"
       },
       "definedIn": "pre"
     },
@@ -15922,7 +16343,7 @@
         "id": "type-network-BytesValue",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BytesValue",
         "title": "The network.BytesValue Type",
-        "number": "7.5.3.4"
+        "number": "7.5.4.5"
       },
       "definedIn": "pre"
     },
@@ -15941,7 +16362,7 @@
         "id": "type-network-BytesValue",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BytesValue",
         "title": "The network.BytesValue Type",
-        "number": "7.5.3.4"
+        "number": "7.5.4.5"
       },
       "definedIn": "pre"
     },
@@ -15963,7 +16384,7 @@
         "id": "type-network-BytesValue",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BytesValue",
         "title": "The network.BytesValue Type",
-        "number": "7.5.3.4"
+        "number": "7.5.4.5"
       },
       "definedIn": "pre"
     },
@@ -15985,7 +16406,7 @@
         "id": "type-network-BytesValue",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BytesValue",
         "title": "The network.BytesValue Type",
-        "number": "7.5.3.4"
+        "number": "7.5.4.5"
       },
       "definedIn": "pre"
     },
@@ -16007,7 +16428,7 @@
         "id": "type-network-BytesValue",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BytesValue",
         "title": "The network.BytesValue Type",
-        "number": "7.5.3.4"
+        "number": "7.5.4.5"
       },
       "definedIn": "pre"
     },
@@ -16026,7 +16447,7 @@
         "id": "type-network-BytesValue",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BytesValue",
         "title": "The network.BytesValue Type",
-        "number": "7.5.3.4"
+        "number": "7.5.4.5"
       },
       "definedIn": "prose"
     },
@@ -16045,9 +16466,69 @@
         "id": "type-network-BytesValue",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-BytesValue",
         "title": "The network.BytesValue Type",
-        "number": "7.5.3.4"
+        "number": "7.5.4.5"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "cddl-type-networkcollector",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-type-networkcollector",
+      "linkingText": [
+        "network.Collector"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-Collector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Collector",
+        "title": "The network.Collector Type",
+        "number": "7.5.4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-type-networkcollectortype",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-type-networkcollectortype",
+      "linkingText": [
+        "network.CollectorType"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-CollectorType",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-CollectorType",
+        "title": "The network.CollectorType Type",
+        "number": "7.5.4.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-value-networkcollectortype-blob",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-value-networkcollectortype-blob",
+      "linkingText": [
+        "blob",
+        "\"blob\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-value",
+      "for": [
+        "network.CollectorType"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-CollectorType",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-CollectorType",
+        "title": "The network.CollectorType Type",
+        "number": "7.5.4.7"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "cddl-type-networksamesite",
@@ -16064,7 +16545,7 @@
         "id": "type-network-Cookie",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Cookie",
         "title": "The network.Cookie Type",
-        "number": "7.5.3.5"
+        "number": "7.5.4.8"
       },
       "definedIn": "pre"
     },
@@ -16086,7 +16567,7 @@
         "id": "type-network-Cookie",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Cookie",
         "title": "The network.Cookie Type",
-        "number": "7.5.3.5"
+        "number": "7.5.4.8"
       },
       "definedIn": "pre"
     },
@@ -16108,7 +16589,7 @@
         "id": "type-network-Cookie",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Cookie",
         "title": "The network.Cookie Type",
-        "number": "7.5.3.5"
+        "number": "7.5.4.8"
       },
       "definedIn": "pre"
     },
@@ -16130,7 +16611,7 @@
         "id": "type-network-Cookie",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Cookie",
         "title": "The network.Cookie Type",
-        "number": "7.5.3.5"
+        "number": "7.5.4.8"
       },
       "definedIn": "pre"
     },
@@ -16149,7 +16630,7 @@
         "id": "type-network-Cookie",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Cookie",
         "title": "The network.Cookie Type",
-        "number": "7.5.3.5"
+        "number": "7.5.4.8"
       },
       "definedIn": "pre"
     },
@@ -16171,7 +16652,7 @@
         "id": "type-network-Cookie",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Cookie",
         "title": "The network.Cookie Type",
-        "number": "7.5.3.5"
+        "number": "7.5.4.8"
       },
       "definedIn": "pre"
     },
@@ -16193,7 +16674,7 @@
         "id": "type-network-Cookie",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Cookie",
         "title": "The network.Cookie Type",
-        "number": "7.5.3.5"
+        "number": "7.5.4.8"
       },
       "definedIn": "pre"
     },
@@ -16215,7 +16696,7 @@
         "id": "type-network-Cookie",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Cookie",
         "title": "The network.Cookie Type",
-        "number": "7.5.3.5"
+        "number": "7.5.4.8"
       },
       "definedIn": "pre"
     },
@@ -16237,7 +16718,7 @@
         "id": "type-network-Cookie",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Cookie",
         "title": "The network.Cookie Type",
-        "number": "7.5.3.5"
+        "number": "7.5.4.8"
       },
       "definedIn": "pre"
     },
@@ -16259,7 +16740,7 @@
         "id": "type-network-Cookie",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Cookie",
         "title": "The network.Cookie Type",
-        "number": "7.5.3.5"
+        "number": "7.5.4.8"
       },
       "definedIn": "pre"
     },
@@ -16281,7 +16762,7 @@
         "id": "type-network-Cookie",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Cookie",
         "title": "The network.Cookie Type",
-        "number": "7.5.3.5"
+        "number": "7.5.4.8"
       },
       "definedIn": "pre"
     },
@@ -16303,7 +16784,7 @@
         "id": "type-network-Cookie",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Cookie",
         "title": "The network.Cookie Type",
-        "number": "7.5.3.5"
+        "number": "7.5.4.8"
       },
       "definedIn": "pre"
     },
@@ -16325,7 +16806,7 @@
         "id": "type-network-Cookie",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Cookie",
         "title": "The network.Cookie Type",
-        "number": "7.5.3.5"
+        "number": "7.5.4.8"
       },
       "definedIn": "pre"
     },
@@ -16347,7 +16828,7 @@
         "id": "type-network-Cookie",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Cookie",
         "title": "The network.Cookie Type",
-        "number": "7.5.3.5"
+        "number": "7.5.4.8"
       },
       "definedIn": "pre"
     },
@@ -16366,7 +16847,7 @@
         "id": "type-network-Cookie",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Cookie",
         "title": "The network.Cookie Type",
-        "number": "7.5.3.5"
+        "number": "7.5.4.8"
       },
       "definedIn": "prose"
     },
@@ -16385,7 +16866,7 @@
         "id": "type-network-CookieHeader",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-CookieHeader",
         "title": "The network.CookieHeader Type",
-        "number": "7.5.3.6"
+        "number": "7.5.4.9"
       },
       "definedIn": "pre"
     },
@@ -16407,7 +16888,7 @@
         "id": "type-network-CookieHeader",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-CookieHeader",
         "title": "The network.CookieHeader Type",
-        "number": "7.5.3.6"
+        "number": "7.5.4.9"
       },
       "definedIn": "pre"
     },
@@ -16429,7 +16910,7 @@
         "id": "type-network-CookieHeader",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-CookieHeader",
         "title": "The network.CookieHeader Type",
-        "number": "7.5.3.6"
+        "number": "7.5.4.9"
       },
       "definedIn": "pre"
     },
@@ -16448,7 +16929,7 @@
         "id": "type-network-CookieHeader",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-CookieHeader",
         "title": "The network.CookieHeader Type",
-        "number": "7.5.3.6"
+        "number": "7.5.4.9"
       },
       "definedIn": "prose"
     },
@@ -16467,7 +16948,7 @@
         "id": "type-network-FetchTimingInfo",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-FetchTimingInfo",
         "title": "The network.FetchTimingInfo Type",
-        "number": "7.5.3.7"
+        "number": "7.5.4.10"
       },
       "definedIn": "pre"
     },
@@ -16489,7 +16970,7 @@
         "id": "type-network-FetchTimingInfo",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-FetchTimingInfo",
         "title": "The network.FetchTimingInfo Type",
-        "number": "7.5.3.7"
+        "number": "7.5.4.10"
       },
       "definedIn": "pre"
     },
@@ -16511,7 +16992,7 @@
         "id": "type-network-FetchTimingInfo",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-FetchTimingInfo",
         "title": "The network.FetchTimingInfo Type",
-        "number": "7.5.3.7"
+        "number": "7.5.4.10"
       },
       "definedIn": "pre"
     },
@@ -16533,7 +17014,7 @@
         "id": "type-network-FetchTimingInfo",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-FetchTimingInfo",
         "title": "The network.FetchTimingInfo Type",
-        "number": "7.5.3.7"
+        "number": "7.5.4.10"
       },
       "definedIn": "pre"
     },
@@ -16555,7 +17036,7 @@
         "id": "type-network-FetchTimingInfo",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-FetchTimingInfo",
         "title": "The network.FetchTimingInfo Type",
-        "number": "7.5.3.7"
+        "number": "7.5.4.10"
       },
       "definedIn": "pre"
     },
@@ -16577,7 +17058,7 @@
         "id": "type-network-FetchTimingInfo",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-FetchTimingInfo",
         "title": "The network.FetchTimingInfo Type",
-        "number": "7.5.3.7"
+        "number": "7.5.4.10"
       },
       "definedIn": "pre"
     },
@@ -16599,7 +17080,7 @@
         "id": "type-network-FetchTimingInfo",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-FetchTimingInfo",
         "title": "The network.FetchTimingInfo Type",
-        "number": "7.5.3.7"
+        "number": "7.5.4.10"
       },
       "definedIn": "pre"
     },
@@ -16621,7 +17102,7 @@
         "id": "type-network-FetchTimingInfo",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-FetchTimingInfo",
         "title": "The network.FetchTimingInfo Type",
-        "number": "7.5.3.7"
+        "number": "7.5.4.10"
       },
       "definedIn": "pre"
     },
@@ -16643,7 +17124,7 @@
         "id": "type-network-FetchTimingInfo",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-FetchTimingInfo",
         "title": "The network.FetchTimingInfo Type",
-        "number": "7.5.3.7"
+        "number": "7.5.4.10"
       },
       "definedIn": "pre"
     },
@@ -16665,7 +17146,7 @@
         "id": "type-network-FetchTimingInfo",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-FetchTimingInfo",
         "title": "The network.FetchTimingInfo Type",
-        "number": "7.5.3.7"
+        "number": "7.5.4.10"
       },
       "definedIn": "pre"
     },
@@ -16687,7 +17168,7 @@
         "id": "type-network-FetchTimingInfo",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-FetchTimingInfo",
         "title": "The network.FetchTimingInfo Type",
-        "number": "7.5.3.7"
+        "number": "7.5.4.10"
       },
       "definedIn": "pre"
     },
@@ -16709,7 +17190,7 @@
         "id": "type-network-FetchTimingInfo",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-FetchTimingInfo",
         "title": "The network.FetchTimingInfo Type",
-        "number": "7.5.3.7"
+        "number": "7.5.4.10"
       },
       "definedIn": "pre"
     },
@@ -16731,7 +17212,7 @@
         "id": "type-network-FetchTimingInfo",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-FetchTimingInfo",
         "title": "The network.FetchTimingInfo Type",
-        "number": "7.5.3.7"
+        "number": "7.5.4.10"
       },
       "definedIn": "pre"
     },
@@ -16753,7 +17234,7 @@
         "id": "type-network-FetchTimingInfo",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-FetchTimingInfo",
         "title": "The network.FetchTimingInfo Type",
-        "number": "7.5.3.7"
+        "number": "7.5.4.10"
       },
       "definedIn": "pre"
     },
@@ -16772,7 +17253,7 @@
         "id": "type-network-FetchTimingInfo",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-FetchTimingInfo",
         "title": "The network.FetchTimingInfo Type",
-        "number": "7.5.3.7"
+        "number": "7.5.4.10"
       },
       "definedIn": "prose"
     },
@@ -16791,7 +17272,7 @@
         "id": "type-network-Header",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Header",
         "title": "The network.Header Type",
-        "number": "7.5.3.8"
+        "number": "7.5.4.11"
       },
       "definedIn": "pre"
     },
@@ -16813,7 +17294,7 @@
         "id": "type-network-Header",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Header",
         "title": "The network.Header Type",
-        "number": "7.5.3.8"
+        "number": "7.5.4.11"
       },
       "definedIn": "pre"
     },
@@ -16835,7 +17316,7 @@
         "id": "type-network-Header",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Header",
         "title": "The network.Header Type",
-        "number": "7.5.3.8"
+        "number": "7.5.4.11"
       },
       "definedIn": "pre"
     },
@@ -16854,7 +17335,7 @@
         "id": "type-network-Header",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Header",
         "title": "The network.Header Type",
-        "number": "7.5.3.8"
+        "number": "7.5.4.11"
       },
       "definedIn": "prose"
     },
@@ -16873,7 +17354,7 @@
         "id": "type-network-Header",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Header",
         "title": "The network.Header Type",
-        "number": "7.5.3.8"
+        "number": "7.5.4.11"
       },
       "definedIn": "prose"
     },
@@ -16892,7 +17373,7 @@
         "id": "type-network-Initiator",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Initiator",
         "title": "The network.Initiator Type",
-        "number": "7.5.3.9"
+        "number": "7.5.4.12"
       },
       "definedIn": "pre"
     },
@@ -16914,7 +17395,7 @@
         "id": "type-network-Initiator",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Initiator",
         "title": "The network.Initiator Type",
-        "number": "7.5.3.9"
+        "number": "7.5.4.12"
       },
       "definedIn": "pre"
     },
@@ -16936,7 +17417,7 @@
         "id": "type-network-Initiator",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Initiator",
         "title": "The network.Initiator Type",
-        "number": "7.5.3.9"
+        "number": "7.5.4.12"
       },
       "definedIn": "pre"
     },
@@ -16958,7 +17439,7 @@
         "id": "type-network-Initiator",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Initiator",
         "title": "The network.Initiator Type",
-        "number": "7.5.3.9"
+        "number": "7.5.4.12"
       },
       "definedIn": "pre"
     },
@@ -16980,7 +17461,7 @@
         "id": "type-network-Initiator",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Initiator",
         "title": "The network.Initiator Type",
-        "number": "7.5.3.9"
+        "number": "7.5.4.12"
       },
       "definedIn": "pre"
     },
@@ -17002,7 +17483,7 @@
         "id": "type-network-Initiator",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Initiator",
         "title": "The network.Initiator Type",
-        "number": "7.5.3.9"
+        "number": "7.5.4.12"
       },
       "definedIn": "pre"
     },
@@ -17024,7 +17505,7 @@
         "id": "type-network-Initiator",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Initiator",
         "title": "The network.Initiator Type",
-        "number": "7.5.3.9"
+        "number": "7.5.4.12"
       },
       "definedIn": "pre"
     },
@@ -17046,7 +17527,7 @@
         "id": "type-network-Initiator",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Initiator",
         "title": "The network.Initiator Type",
-        "number": "7.5.3.9"
+        "number": "7.5.4.12"
       },
       "definedIn": "pre"
     },
@@ -17068,7 +17549,7 @@
         "id": "type-network-Initiator",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Initiator",
         "title": "The network.Initiator Type",
-        "number": "7.5.3.9"
+        "number": "7.5.4.12"
       },
       "definedIn": "pre"
     },
@@ -17090,7 +17571,7 @@
         "id": "type-network-Initiator",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Initiator",
         "title": "The network.Initiator Type",
-        "number": "7.5.3.9"
+        "number": "7.5.4.12"
       },
       "definedIn": "pre"
     },
@@ -17109,7 +17590,7 @@
         "id": "type-network-Initiator",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Initiator",
         "title": "The network.Initiator Type",
-        "number": "7.5.3.9"
+        "number": "7.5.4.12"
       },
       "definedIn": "prose"
     },
@@ -17128,7 +17609,7 @@
         "id": "type-network-Intercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Intercept",
         "title": "The network.Intercept Type",
-        "number": "7.5.3.10"
+        "number": "7.5.4.13"
       },
       "definedIn": "pre"
     },
@@ -17147,7 +17628,7 @@
         "id": "type-network-Request",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Request",
         "title": "The network.Request Type",
-        "number": "7.5.3.11"
+        "number": "7.5.4.14"
       },
       "definedIn": "pre"
     },
@@ -17166,7 +17647,7 @@
         "id": "type-network-Request",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-Request",
         "title": "The network.Request Type",
-        "number": "7.5.3.11"
+        "number": "7.5.4.14"
       },
       "definedIn": "prose"
     },
@@ -17185,7 +17666,7 @@
         "id": "type-network-RequestData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-RequestData",
         "title": "The network.RequestData Type",
-        "number": "7.5.3.12"
+        "number": "7.5.4.15"
       },
       "definedIn": "pre"
     },
@@ -17207,7 +17688,7 @@
         "id": "type-network-RequestData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-RequestData",
         "title": "The network.RequestData Type",
-        "number": "7.5.3.12"
+        "number": "7.5.4.15"
       },
       "definedIn": "pre"
     },
@@ -17229,7 +17710,7 @@
         "id": "type-network-RequestData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-RequestData",
         "title": "The network.RequestData Type",
-        "number": "7.5.3.12"
+        "number": "7.5.4.15"
       },
       "definedIn": "pre"
     },
@@ -17251,7 +17732,7 @@
         "id": "type-network-RequestData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-RequestData",
         "title": "The network.RequestData Type",
-        "number": "7.5.3.12"
+        "number": "7.5.4.15"
       },
       "definedIn": "pre"
     },
@@ -17273,7 +17754,7 @@
         "id": "type-network-RequestData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-RequestData",
         "title": "The network.RequestData Type",
-        "number": "7.5.3.12"
+        "number": "7.5.4.15"
       },
       "definedIn": "pre"
     },
@@ -17295,7 +17776,7 @@
         "id": "type-network-RequestData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-RequestData",
         "title": "The network.RequestData Type",
-        "number": "7.5.3.12"
+        "number": "7.5.4.15"
       },
       "definedIn": "pre"
     },
@@ -17317,7 +17798,7 @@
         "id": "type-network-RequestData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-RequestData",
         "title": "The network.RequestData Type",
-        "number": "7.5.3.12"
+        "number": "7.5.4.15"
       },
       "definedIn": "pre"
     },
@@ -17339,7 +17820,7 @@
         "id": "type-network-RequestData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-RequestData",
         "title": "The network.RequestData Type",
-        "number": "7.5.3.12"
+        "number": "7.5.4.15"
       },
       "definedIn": "pre"
     },
@@ -17361,7 +17842,7 @@
         "id": "type-network-RequestData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-RequestData",
         "title": "The network.RequestData Type",
-        "number": "7.5.3.12"
+        "number": "7.5.4.15"
       },
       "definedIn": "pre"
     },
@@ -17383,7 +17864,7 @@
         "id": "type-network-RequestData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-RequestData",
         "title": "The network.RequestData Type",
-        "number": "7.5.3.12"
+        "number": "7.5.4.15"
       },
       "definedIn": "pre"
     },
@@ -17405,7 +17886,7 @@
         "id": "type-network-RequestData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-RequestData",
         "title": "The network.RequestData Type",
-        "number": "7.5.3.12"
+        "number": "7.5.4.15"
       },
       "definedIn": "pre"
     },
@@ -17424,7 +17905,7 @@
         "id": "type-network-RequestData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-RequestData",
         "title": "The network.RequestData Type",
-        "number": "7.5.3.12"
+        "number": "7.5.4.15"
       },
       "definedIn": "prose"
     },
@@ -17443,7 +17924,7 @@
         "id": "type-network-ResponseContent",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseContent",
         "title": "The network.ResponseContent Type",
-        "number": "7.5.3.13"
+        "number": "7.5.4.16"
       },
       "definedIn": "pre"
     },
@@ -17465,7 +17946,7 @@
         "id": "type-network-ResponseContent",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseContent",
         "title": "The network.ResponseContent Type",
-        "number": "7.5.3.13"
+        "number": "7.5.4.16"
       },
       "definedIn": "pre"
     },
@@ -17484,7 +17965,7 @@
         "id": "type-network-ResponseContent",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseContent",
         "title": "The network.ResponseContent Type",
-        "number": "7.5.3.13"
+        "number": "7.5.4.16"
       },
       "definedIn": "prose"
     },
@@ -17503,7 +17984,7 @@
         "id": "type-network-ResponseData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseData",
         "title": "The network.ResponseData Type",
-        "number": "7.5.3.14"
+        "number": "7.5.4.17"
       },
       "definedIn": "pre"
     },
@@ -17525,7 +18006,7 @@
         "id": "type-network-ResponseData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseData",
         "title": "The network.ResponseData Type",
-        "number": "7.5.3.14"
+        "number": "7.5.4.17"
       },
       "definedIn": "pre"
     },
@@ -17547,7 +18028,7 @@
         "id": "type-network-ResponseData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseData",
         "title": "The network.ResponseData Type",
-        "number": "7.5.3.14"
+        "number": "7.5.4.17"
       },
       "definedIn": "pre"
     },
@@ -17569,7 +18050,7 @@
         "id": "type-network-ResponseData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseData",
         "title": "The network.ResponseData Type",
-        "number": "7.5.3.14"
+        "number": "7.5.4.17"
       },
       "definedIn": "pre"
     },
@@ -17591,7 +18072,7 @@
         "id": "type-network-ResponseData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseData",
         "title": "The network.ResponseData Type",
-        "number": "7.5.3.14"
+        "number": "7.5.4.17"
       },
       "definedIn": "pre"
     },
@@ -17613,7 +18094,7 @@
         "id": "type-network-ResponseData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseData",
         "title": "The network.ResponseData Type",
-        "number": "7.5.3.14"
+        "number": "7.5.4.17"
       },
       "definedIn": "pre"
     },
@@ -17635,7 +18116,7 @@
         "id": "type-network-ResponseData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseData",
         "title": "The network.ResponseData Type",
-        "number": "7.5.3.14"
+        "number": "7.5.4.17"
       },
       "definedIn": "pre"
     },
@@ -17657,7 +18138,7 @@
         "id": "type-network-ResponseData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseData",
         "title": "The network.ResponseData Type",
-        "number": "7.5.3.14"
+        "number": "7.5.4.17"
       },
       "definedIn": "pre"
     },
@@ -17679,7 +18160,7 @@
         "id": "type-network-ResponseData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseData",
         "title": "The network.ResponseData Type",
-        "number": "7.5.3.14"
+        "number": "7.5.4.17"
       },
       "definedIn": "pre"
     },
@@ -17701,7 +18182,7 @@
         "id": "type-network-ResponseData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseData",
         "title": "The network.ResponseData Type",
-        "number": "7.5.3.14"
+        "number": "7.5.4.17"
       },
       "definedIn": "pre"
     },
@@ -17723,7 +18204,7 @@
         "id": "type-network-ResponseData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseData",
         "title": "The network.ResponseData Type",
-        "number": "7.5.3.14"
+        "number": "7.5.4.17"
       },
       "definedIn": "pre"
     },
@@ -17745,7 +18226,7 @@
         "id": "type-network-ResponseData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseData",
         "title": "The network.ResponseData Type",
-        "number": "7.5.3.14"
+        "number": "7.5.4.17"
       },
       "definedIn": "pre"
     },
@@ -17767,7 +18248,7 @@
         "id": "type-network-ResponseData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseData",
         "title": "The network.ResponseData Type",
-        "number": "7.5.3.14"
+        "number": "7.5.4.17"
       },
       "definedIn": "pre"
     },
@@ -17786,7 +18267,7 @@
         "id": "type-network-ResponseData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseData",
         "title": "The network.ResponseData Type",
-        "number": "7.5.3.14"
+        "number": "7.5.4.17"
       },
       "definedIn": "prose"
     },
@@ -17805,7 +18286,7 @@
         "id": "type-network-ResponseData",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-ResponseData",
         "title": "The network.ResponseData Type",
-        "number": "7.5.3.14"
+        "number": "7.5.4.17"
       },
       "definedIn": "prose"
     },
@@ -17824,7 +18305,7 @@
         "id": "type-network-SetCookieHeader",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-SetCookieHeader",
         "title": "The network.SetCookieHeader Type",
-        "number": "7.5.3.15"
+        "number": "7.5.4.18"
       },
       "definedIn": "pre"
     },
@@ -17846,7 +18327,7 @@
         "id": "type-network-SetCookieHeader",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-SetCookieHeader",
         "title": "The network.SetCookieHeader Type",
-        "number": "7.5.3.15"
+        "number": "7.5.4.18"
       },
       "definedIn": "pre"
     },
@@ -17868,7 +18349,7 @@
         "id": "type-network-SetCookieHeader",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-SetCookieHeader",
         "title": "The network.SetCookieHeader Type",
-        "number": "7.5.3.15"
+        "number": "7.5.4.18"
       },
       "definedIn": "pre"
     },
@@ -17890,7 +18371,7 @@
         "id": "type-network-SetCookieHeader",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-SetCookieHeader",
         "title": "The network.SetCookieHeader Type",
-        "number": "7.5.3.15"
+        "number": "7.5.4.18"
       },
       "definedIn": "pre"
     },
@@ -17912,7 +18393,7 @@
         "id": "type-network-SetCookieHeader",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-SetCookieHeader",
         "title": "The network.SetCookieHeader Type",
-        "number": "7.5.3.15"
+        "number": "7.5.4.18"
       },
       "definedIn": "pre"
     },
@@ -17934,7 +18415,7 @@
         "id": "type-network-SetCookieHeader",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-SetCookieHeader",
         "title": "The network.SetCookieHeader Type",
-        "number": "7.5.3.15"
+        "number": "7.5.4.18"
       },
       "definedIn": "pre"
     },
@@ -17956,7 +18437,7 @@
         "id": "type-network-SetCookieHeader",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-SetCookieHeader",
         "title": "The network.SetCookieHeader Type",
-        "number": "7.5.3.15"
+        "number": "7.5.4.18"
       },
       "definedIn": "pre"
     },
@@ -17978,7 +18459,7 @@
         "id": "type-network-SetCookieHeader",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-SetCookieHeader",
         "title": "The network.SetCookieHeader Type",
-        "number": "7.5.3.15"
+        "number": "7.5.4.18"
       },
       "definedIn": "pre"
     },
@@ -18000,7 +18481,7 @@
         "id": "type-network-SetCookieHeader",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-SetCookieHeader",
         "title": "The network.SetCookieHeader Type",
-        "number": "7.5.3.15"
+        "number": "7.5.4.18"
       },
       "definedIn": "pre"
     },
@@ -18022,7 +18503,7 @@
         "id": "type-network-SetCookieHeader",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-SetCookieHeader",
         "title": "The network.SetCookieHeader Type",
-        "number": "7.5.3.15"
+        "number": "7.5.4.18"
       },
       "definedIn": "pre"
     },
@@ -18041,7 +18522,7 @@
         "id": "type-network-SetCookieHeader",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-SetCookieHeader",
         "title": "The network.SetCookieHeader Type",
-        "number": "7.5.3.15"
+        "number": "7.5.4.18"
       },
       "definedIn": "prose"
     },
@@ -18060,7 +18541,7 @@
         "id": "type-network-SetCookieHeader",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-SetCookieHeader",
         "title": "The network.SetCookieHeader Type",
-        "number": "7.5.3.15"
+        "number": "7.5.4.18"
       },
       "definedIn": "prose"
     },
@@ -18079,7 +18560,7 @@
         "id": "type-network-UrlPattern",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
         "title": "The network.UrlPattern Type",
-        "number": "7.5.3.16"
+        "number": "7.5.4.19"
       },
       "definedIn": "pre"
     },
@@ -18098,7 +18579,7 @@
         "id": "type-network-UrlPattern",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
         "title": "The network.UrlPattern Type",
-        "number": "7.5.3.16"
+        "number": "7.5.4.19"
       },
       "definedIn": "pre"
     },
@@ -18120,7 +18601,7 @@
         "id": "type-network-UrlPattern",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
         "title": "The network.UrlPattern Type",
-        "number": "7.5.3.16"
+        "number": "7.5.4.19"
       },
       "definedIn": "pre"
     },
@@ -18142,7 +18623,7 @@
         "id": "type-network-UrlPattern",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
         "title": "The network.UrlPattern Type",
-        "number": "7.5.3.16"
+        "number": "7.5.4.19"
       },
       "definedIn": "pre"
     },
@@ -18164,7 +18645,7 @@
         "id": "type-network-UrlPattern",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
         "title": "The network.UrlPattern Type",
-        "number": "7.5.3.16"
+        "number": "7.5.4.19"
       },
       "definedIn": "pre"
     },
@@ -18186,7 +18667,7 @@
         "id": "type-network-UrlPattern",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
         "title": "The network.UrlPattern Type",
-        "number": "7.5.3.16"
+        "number": "7.5.4.19"
       },
       "definedIn": "pre"
     },
@@ -18208,7 +18689,7 @@
         "id": "type-network-UrlPattern",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
         "title": "The network.UrlPattern Type",
-        "number": "7.5.3.16"
+        "number": "7.5.4.19"
       },
       "definedIn": "pre"
     },
@@ -18230,7 +18711,7 @@
         "id": "type-network-UrlPattern",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
         "title": "The network.UrlPattern Type",
-        "number": "7.5.3.16"
+        "number": "7.5.4.19"
       },
       "definedIn": "pre"
     },
@@ -18252,7 +18733,7 @@
         "id": "type-network-UrlPattern",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
         "title": "The network.UrlPattern Type",
-        "number": "7.5.3.16"
+        "number": "7.5.4.19"
       },
       "definedIn": "pre"
     },
@@ -18271,7 +18752,7 @@
         "id": "type-network-UrlPattern",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
         "title": "The network.UrlPattern Type",
-        "number": "7.5.3.16"
+        "number": "7.5.4.19"
       },
       "definedIn": "pre"
     },
@@ -18293,7 +18774,7 @@
         "id": "type-network-UrlPattern",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
         "title": "The network.UrlPattern Type",
-        "number": "7.5.3.16"
+        "number": "7.5.4.19"
       },
       "definedIn": "pre"
     },
@@ -18315,7 +18796,7 @@
         "id": "type-network-UrlPattern",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
         "title": "The network.UrlPattern Type",
-        "number": "7.5.3.16"
+        "number": "7.5.4.19"
       },
       "definedIn": "pre"
     },
@@ -18337,7 +18818,7 @@
         "id": "type-network-UrlPattern",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
         "title": "The network.UrlPattern Type",
-        "number": "7.5.3.16"
+        "number": "7.5.4.19"
       },
       "definedIn": "pre"
     },
@@ -18356,7 +18837,7 @@
         "id": "type-network-UrlPattern",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
         "title": "The network.UrlPattern Type",
-        "number": "7.5.3.16"
+        "number": "7.5.4.19"
       },
       "definedIn": "prose"
     },
@@ -18375,7 +18856,7 @@
         "id": "type-network-UrlPattern",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
         "title": "The network.UrlPattern Type",
-        "number": "7.5.3.16"
+        "number": "7.5.4.19"
       },
       "definedIn": "prose"
     },
@@ -18394,9 +18875,285 @@
         "id": "type-network-UrlPattern",
         "href": "https://www.w3.org/TR/webdriver-bidi/#type-network-UrlPattern",
         "title": "The network.UrlPattern Type",
-        "number": "7.5.3.16"
+        "number": "7.5.4.19"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "commands-networkadddatacollector",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-networkadddatacollector",
+      "linkingText": [
+        "network.addDataCollector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-addDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addDataCollector",
+        "title": "The network.addDataCollector Command",
+        "number": "7.5.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cddl-type-networkadddatacollector",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-type-networkadddatacollector",
+      "linkingText": [
+        "network.AddDataCollector"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-addDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addDataCollector",
+        "title": "The network.addDataCollector Command",
+        "number": "7.5.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkadddatacollector-method",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkadddatacollector-method",
+      "linkingText": [
+        "method",
+        "\"method\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.AddDataCollector"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-addDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addDataCollector",
+        "title": "The network.addDataCollector Command",
+        "number": "7.5.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-value-networkadddatacollector-method-networkadddatacollector",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-value-networkadddatacollector-method-networkadddatacollector",
+      "linkingText": [
+        "network.addDataCollector",
+        "\"network.addDataCollector\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-value",
+      "for": [
+        "network.AddDataCollector/method"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-addDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addDataCollector",
+        "title": "The network.addDataCollector Command",
+        "number": "7.5.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkadddatacollector-params",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkadddatacollector-params",
+      "linkingText": [
+        "params",
+        "\"params\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.AddDataCollector"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-addDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addDataCollector",
+        "title": "The network.addDataCollector Command",
+        "number": "7.5.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-type-networkadddatacollectorparameters",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-type-networkadddatacollectorparameters",
+      "linkingText": [
+        "network.AddDataCollectorParameters"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-addDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addDataCollector",
+        "title": "The network.addDataCollector Command",
+        "number": "7.5.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkadddatacollectorparameters-datatypes",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkadddatacollectorparameters-datatypes",
+      "linkingText": [
+        "dataTypes",
+        "\"dataTypes\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.AddDataCollectorParameters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-addDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addDataCollector",
+        "title": "The network.addDataCollector Command",
+        "number": "7.5.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkadddatacollectorparameters-maxencodeddatasize",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkadddatacollectorparameters-maxencodeddatasize",
+      "linkingText": [
+        "maxEncodedDataSize",
+        "\"maxEncodedDataSize\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.AddDataCollectorParameters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-addDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addDataCollector",
+        "title": "The network.addDataCollector Command",
+        "number": "7.5.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkadddatacollectorparameters-collectortype",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkadddatacollectorparameters-collectortype",
+      "linkingText": [
+        "collectorType",
+        "\"collectorType\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.AddDataCollectorParameters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-addDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addDataCollector",
+        "title": "The network.addDataCollector Command",
+        "number": "7.5.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkadddatacollectorparameters-contexts",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkadddatacollectorparameters-contexts",
+      "linkingText": [
+        "contexts",
+        "\"contexts\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.AddDataCollectorParameters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-addDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addDataCollector",
+        "title": "The network.addDataCollector Command",
+        "number": "7.5.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkadddatacollectorparameters-usercontexts",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkadddatacollectorparameters-usercontexts",
+      "linkingText": [
+        "userContexts",
+        "\"userContexts\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.AddDataCollectorParameters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-addDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addDataCollector",
+        "title": "The network.addDataCollector Command",
+        "number": "7.5.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-type-networkadddatacollectorresult",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-type-networkadddatacollectorresult",
+      "linkingText": [
+        "network.AddDataCollectorResult"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-addDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addDataCollector",
+        "title": "The network.addDataCollector Command",
+        "number": "7.5.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkadddatacollectorresult-collector",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkadddatacollectorresult-collector",
+      "linkingText": [
+        "collector",
+        "\"collector\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.AddDataCollectorResult"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-addDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addDataCollector",
+        "title": "The network.addDataCollector Command",
+        "number": "7.5.5.1"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "commands-networkaddintercept",
@@ -18415,7 +19172,7 @@
         "id": "command-network-addIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addIntercept",
         "title": "The network.addIntercept Command",
-        "number": "7.5.4.1"
+        "number": "7.5.5.2"
       },
       "definedIn": "prose"
     },
@@ -18434,7 +19191,7 @@
         "id": "command-network-addIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addIntercept",
         "title": "The network.addIntercept Command",
-        "number": "7.5.4.1"
+        "number": "7.5.5.2"
       },
       "definedIn": "pre"
     },
@@ -18456,7 +19213,7 @@
         "id": "command-network-addIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addIntercept",
         "title": "The network.addIntercept Command",
-        "number": "7.5.4.1"
+        "number": "7.5.5.2"
       },
       "definedIn": "pre"
     },
@@ -18478,7 +19235,7 @@
         "id": "command-network-addIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addIntercept",
         "title": "The network.addIntercept Command",
-        "number": "7.5.4.1"
+        "number": "7.5.5.2"
       },
       "definedIn": "pre"
     },
@@ -18500,7 +19257,7 @@
         "id": "command-network-addIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addIntercept",
         "title": "The network.addIntercept Command",
-        "number": "7.5.4.1"
+        "number": "7.5.5.2"
       },
       "definedIn": "pre"
     },
@@ -18519,7 +19276,7 @@
         "id": "command-network-addIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addIntercept",
         "title": "The network.addIntercept Command",
-        "number": "7.5.4.1"
+        "number": "7.5.5.2"
       },
       "definedIn": "pre"
     },
@@ -18541,7 +19298,7 @@
         "id": "command-network-addIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addIntercept",
         "title": "The network.addIntercept Command",
-        "number": "7.5.4.1"
+        "number": "7.5.5.2"
       },
       "definedIn": "pre"
     },
@@ -18563,7 +19320,7 @@
         "id": "command-network-addIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addIntercept",
         "title": "The network.addIntercept Command",
-        "number": "7.5.4.1"
+        "number": "7.5.5.2"
       },
       "definedIn": "pre"
     },
@@ -18585,7 +19342,7 @@
         "id": "command-network-addIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addIntercept",
         "title": "The network.addIntercept Command",
-        "number": "7.5.4.1"
+        "number": "7.5.5.2"
       },
       "definedIn": "pre"
     },
@@ -18604,7 +19361,7 @@
         "id": "command-network-addIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addIntercept",
         "title": "The network.addIntercept Command",
-        "number": "7.5.4.1"
+        "number": "7.5.5.2"
       },
       "definedIn": "pre"
     },
@@ -18626,7 +19383,7 @@
         "id": "command-network-addIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addIntercept",
         "title": "The network.addIntercept Command",
-        "number": "7.5.4.1"
+        "number": "7.5.5.2"
       },
       "definedIn": "pre"
     },
@@ -18648,7 +19405,7 @@
         "id": "command-network-addIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addIntercept",
         "title": "The network.addIntercept Command",
-        "number": "7.5.4.1"
+        "number": "7.5.5.2"
       },
       "definedIn": "pre"
     },
@@ -18670,7 +19427,7 @@
         "id": "command-network-addIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addIntercept",
         "title": "The network.addIntercept Command",
-        "number": "7.5.4.1"
+        "number": "7.5.5.2"
       },
       "definedIn": "pre"
     },
@@ -18689,7 +19446,7 @@
         "id": "command-network-addIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addIntercept",
         "title": "The network.addIntercept Command",
-        "number": "7.5.4.1"
+        "number": "7.5.5.2"
       },
       "definedIn": "pre"
     },
@@ -18711,7 +19468,7 @@
         "id": "command-network-addIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-addIntercept",
         "title": "The network.addIntercept Command",
-        "number": "7.5.4.1"
+        "number": "7.5.5.2"
       },
       "definedIn": "pre"
     },
@@ -18732,7 +19489,7 @@
         "id": "command-network-continueRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueRequest",
         "title": "The network.continueRequest Command",
-        "number": "7.5.4.2"
+        "number": "7.5.5.3"
       },
       "definedIn": "prose"
     },
@@ -18751,7 +19508,7 @@
         "id": "command-network-continueRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueRequest",
         "title": "The network.continueRequest Command",
-        "number": "7.5.4.2"
+        "number": "7.5.5.3"
       },
       "definedIn": "pre"
     },
@@ -18773,7 +19530,7 @@
         "id": "command-network-continueRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueRequest",
         "title": "The network.continueRequest Command",
-        "number": "7.5.4.2"
+        "number": "7.5.5.3"
       },
       "definedIn": "pre"
     },
@@ -18795,7 +19552,7 @@
         "id": "command-network-continueRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueRequest",
         "title": "The network.continueRequest Command",
-        "number": "7.5.4.2"
+        "number": "7.5.5.3"
       },
       "definedIn": "pre"
     },
@@ -18817,7 +19574,7 @@
         "id": "command-network-continueRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueRequest",
         "title": "The network.continueRequest Command",
-        "number": "7.5.4.2"
+        "number": "7.5.5.3"
       },
       "definedIn": "pre"
     },
@@ -18836,7 +19593,7 @@
         "id": "command-network-continueRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueRequest",
         "title": "The network.continueRequest Command",
-        "number": "7.5.4.2"
+        "number": "7.5.5.3"
       },
       "definedIn": "pre"
     },
@@ -18858,7 +19615,7 @@
         "id": "command-network-continueRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueRequest",
         "title": "The network.continueRequest Command",
-        "number": "7.5.4.2"
+        "number": "7.5.5.3"
       },
       "definedIn": "pre"
     },
@@ -18880,7 +19637,7 @@
         "id": "command-network-continueRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueRequest",
         "title": "The network.continueRequest Command",
-        "number": "7.5.4.2"
+        "number": "7.5.5.3"
       },
       "definedIn": "pre"
     },
@@ -18902,7 +19659,7 @@
         "id": "command-network-continueRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueRequest",
         "title": "The network.continueRequest Command",
-        "number": "7.5.4.2"
+        "number": "7.5.5.3"
       },
       "definedIn": "pre"
     },
@@ -18924,7 +19681,7 @@
         "id": "command-network-continueRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueRequest",
         "title": "The network.continueRequest Command",
-        "number": "7.5.4.2"
+        "number": "7.5.5.3"
       },
       "definedIn": "pre"
     },
@@ -18946,7 +19703,7 @@
         "id": "command-network-continueRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueRequest",
         "title": "The network.continueRequest Command",
-        "number": "7.5.4.2"
+        "number": "7.5.5.3"
       },
       "definedIn": "pre"
     },
@@ -18968,7 +19725,7 @@
         "id": "command-network-continueRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueRequest",
         "title": "The network.continueRequest Command",
-        "number": "7.5.4.2"
+        "number": "7.5.5.3"
       },
       "definedIn": "pre"
     },
@@ -18989,7 +19746,7 @@
         "id": "command-network-continueResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueResponse",
         "title": "The network.continueResponse Command",
-        "number": "7.5.4.3"
+        "number": "7.5.5.4"
       },
       "definedIn": "prose"
     },
@@ -19008,7 +19765,7 @@
         "id": "command-network-continueResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueResponse",
         "title": "The network.continueResponse Command",
-        "number": "7.5.4.3"
+        "number": "7.5.5.4"
       },
       "definedIn": "pre"
     },
@@ -19030,7 +19787,7 @@
         "id": "command-network-continueResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueResponse",
         "title": "The network.continueResponse Command",
-        "number": "7.5.4.3"
+        "number": "7.5.5.4"
       },
       "definedIn": "pre"
     },
@@ -19052,7 +19809,7 @@
         "id": "command-network-continueResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueResponse",
         "title": "The network.continueResponse Command",
-        "number": "7.5.4.3"
+        "number": "7.5.5.4"
       },
       "definedIn": "pre"
     },
@@ -19074,7 +19831,7 @@
         "id": "command-network-continueResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueResponse",
         "title": "The network.continueResponse Command",
-        "number": "7.5.4.3"
+        "number": "7.5.5.4"
       },
       "definedIn": "pre"
     },
@@ -19093,7 +19850,7 @@
         "id": "command-network-continueResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueResponse",
         "title": "The network.continueResponse Command",
-        "number": "7.5.4.3"
+        "number": "7.5.5.4"
       },
       "definedIn": "pre"
     },
@@ -19115,7 +19872,7 @@
         "id": "command-network-continueResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueResponse",
         "title": "The network.continueResponse Command",
-        "number": "7.5.4.3"
+        "number": "7.5.5.4"
       },
       "definedIn": "pre"
     },
@@ -19137,7 +19894,7 @@
         "id": "command-network-continueResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueResponse",
         "title": "The network.continueResponse Command",
-        "number": "7.5.4.3"
+        "number": "7.5.5.4"
       },
       "definedIn": "pre"
     },
@@ -19159,7 +19916,7 @@
         "id": "command-network-continueResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueResponse",
         "title": "The network.continueResponse Command",
-        "number": "7.5.4.3"
+        "number": "7.5.5.4"
       },
       "definedIn": "pre"
     },
@@ -19181,7 +19938,7 @@
         "id": "command-network-continueResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueResponse",
         "title": "The network.continueResponse Command",
-        "number": "7.5.4.3"
+        "number": "7.5.5.4"
       },
       "definedIn": "pre"
     },
@@ -19203,7 +19960,7 @@
         "id": "command-network-continueResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueResponse",
         "title": "The network.continueResponse Command",
-        "number": "7.5.4.3"
+        "number": "7.5.5.4"
       },
       "definedIn": "pre"
     },
@@ -19225,7 +19982,7 @@
         "id": "command-network-continueResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueResponse",
         "title": "The network.continueResponse Command",
-        "number": "7.5.4.3"
+        "number": "7.5.5.4"
       },
       "definedIn": "pre"
     },
@@ -19246,7 +20003,7 @@
         "id": "command-network-continueWithAuth",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueWithAuth",
         "title": "The network.continueWithAuth Command",
-        "number": "7.5.4.4"
+        "number": "7.5.5.5"
       },
       "definedIn": "prose"
     },
@@ -19265,7 +20022,7 @@
         "id": "command-network-continueWithAuth",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueWithAuth",
         "title": "The network.continueWithAuth Command",
-        "number": "7.5.4.4"
+        "number": "7.5.5.5"
       },
       "definedIn": "pre"
     },
@@ -19287,7 +20044,7 @@
         "id": "command-network-continueWithAuth",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueWithAuth",
         "title": "The network.continueWithAuth Command",
-        "number": "7.5.4.4"
+        "number": "7.5.5.5"
       },
       "definedIn": "pre"
     },
@@ -19309,7 +20066,7 @@
         "id": "command-network-continueWithAuth",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueWithAuth",
         "title": "The network.continueWithAuth Command",
-        "number": "7.5.4.4"
+        "number": "7.5.5.5"
       },
       "definedIn": "pre"
     },
@@ -19331,7 +20088,7 @@
         "id": "command-network-continueWithAuth",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueWithAuth",
         "title": "The network.continueWithAuth Command",
-        "number": "7.5.4.4"
+        "number": "7.5.5.5"
       },
       "definedIn": "pre"
     },
@@ -19350,7 +20107,7 @@
         "id": "command-network-continueWithAuth",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueWithAuth",
         "title": "The network.continueWithAuth Command",
-        "number": "7.5.4.4"
+        "number": "7.5.5.5"
       },
       "definedIn": "pre"
     },
@@ -19372,7 +20129,7 @@
         "id": "command-network-continueWithAuth",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueWithAuth",
         "title": "The network.continueWithAuth Command",
-        "number": "7.5.4.4"
+        "number": "7.5.5.5"
       },
       "definedIn": "pre"
     },
@@ -19391,7 +20148,7 @@
         "id": "command-network-continueWithAuth",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueWithAuth",
         "title": "The network.continueWithAuth Command",
-        "number": "7.5.4.4"
+        "number": "7.5.5.5"
       },
       "definedIn": "pre"
     },
@@ -19413,7 +20170,7 @@
         "id": "command-network-continueWithAuth",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueWithAuth",
         "title": "The network.continueWithAuth Command",
-        "number": "7.5.4.4"
+        "number": "7.5.5.5"
       },
       "definedIn": "pre"
     },
@@ -19435,7 +20192,7 @@
         "id": "command-network-continueWithAuth",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueWithAuth",
         "title": "The network.continueWithAuth Command",
-        "number": "7.5.4.4"
+        "number": "7.5.5.5"
       },
       "definedIn": "pre"
     },
@@ -19457,7 +20214,7 @@
         "id": "command-network-continueWithAuth",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueWithAuth",
         "title": "The network.continueWithAuth Command",
-        "number": "7.5.4.4"
+        "number": "7.5.5.5"
       },
       "definedIn": "pre"
     },
@@ -19476,7 +20233,7 @@
         "id": "command-network-continueWithAuth",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueWithAuth",
         "title": "The network.continueWithAuth Command",
-        "number": "7.5.4.4"
+        "number": "7.5.5.5"
       },
       "definedIn": "pre"
     },
@@ -19498,7 +20255,7 @@
         "id": "command-network-continueWithAuth",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueWithAuth",
         "title": "The network.continueWithAuth Command",
-        "number": "7.5.4.4"
+        "number": "7.5.5.5"
       },
       "definedIn": "pre"
     },
@@ -19520,7 +20277,7 @@
         "id": "command-network-continueWithAuth",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueWithAuth",
         "title": "The network.continueWithAuth Command",
-        "number": "7.5.4.4"
+        "number": "7.5.5.5"
       },
       "definedIn": "pre"
     },
@@ -19542,7 +20299,198 @@
         "id": "command-network-continueWithAuth",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-continueWithAuth",
         "title": "The network.continueWithAuth Command",
-        "number": "7.5.4.4"
+        "number": "7.5.5.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "commands-networkdisowndata",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-networkdisowndata",
+      "linkingText": [
+        "network.disownData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-disownData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-disownData",
+        "title": "The network.disownData Command",
+        "number": "7.5.5.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cddl-type-networkdisowndata",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-type-networkdisowndata",
+      "linkingText": [
+        "network.DisownData"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-disownData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-disownData",
+        "title": "The network.disownData Command",
+        "number": "7.5.5.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkdisowndata-method",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkdisowndata-method",
+      "linkingText": [
+        "method",
+        "\"method\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.DisownData"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-disownData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-disownData",
+        "title": "The network.disownData Command",
+        "number": "7.5.5.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-value-networkdisowndata-method-networkdisowndata",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-value-networkdisowndata-method-networkdisowndata",
+      "linkingText": [
+        "network.disownData",
+        "\"network.disownData\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-value",
+      "for": [
+        "network.DisownData/method"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-disownData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-disownData",
+        "title": "The network.disownData Command",
+        "number": "7.5.5.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkdisowndata-params",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkdisowndata-params",
+      "linkingText": [
+        "params",
+        "\"params\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.DisownData"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-disownData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-disownData",
+        "title": "The network.disownData Command",
+        "number": "7.5.5.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-type-networkdisowndataparameters",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-type-networkdisowndataparameters",
+      "linkingText": [
+        "network.disownDataParameters"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-disownData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-disownData",
+        "title": "The network.disownData Command",
+        "number": "7.5.5.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkdisowndataparameters-datatype",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkdisowndataparameters-datatype",
+      "linkingText": [
+        "dataType",
+        "\"dataType\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.disownDataParameters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-disownData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-disownData",
+        "title": "The network.disownData Command",
+        "number": "7.5.5.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkdisowndataparameters-collector",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkdisowndataparameters-collector",
+      "linkingText": [
+        "collector",
+        "\"collector\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.disownDataParameters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-disownData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-disownData",
+        "title": "The network.disownData Command",
+        "number": "7.5.5.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkdisowndataparameters-request",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkdisowndataparameters-request",
+      "linkingText": [
+        "request",
+        "\"request\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.disownDataParameters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-disownData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-disownData",
+        "title": "The network.disownData Command",
+        "number": "7.5.5.6"
       },
       "definedIn": "pre"
     },
@@ -19563,7 +20511,7 @@
         "id": "command-network-failRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-failRequest",
         "title": "The network.failRequest Command",
-        "number": "7.5.4.5"
+        "number": "7.5.5.7"
       },
       "definedIn": "prose"
     },
@@ -19582,7 +20530,7 @@
         "id": "command-network-failRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-failRequest",
         "title": "The network.failRequest Command",
-        "number": "7.5.4.5"
+        "number": "7.5.5.7"
       },
       "definedIn": "pre"
     },
@@ -19604,7 +20552,7 @@
         "id": "command-network-failRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-failRequest",
         "title": "The network.failRequest Command",
-        "number": "7.5.4.5"
+        "number": "7.5.5.7"
       },
       "definedIn": "pre"
     },
@@ -19626,7 +20574,7 @@
         "id": "command-network-failRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-failRequest",
         "title": "The network.failRequest Command",
-        "number": "7.5.4.5"
+        "number": "7.5.5.7"
       },
       "definedIn": "pre"
     },
@@ -19648,7 +20596,7 @@
         "id": "command-network-failRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-failRequest",
         "title": "The network.failRequest Command",
-        "number": "7.5.4.5"
+        "number": "7.5.5.7"
       },
       "definedIn": "pre"
     },
@@ -19667,7 +20615,7 @@
         "id": "command-network-failRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-failRequest",
         "title": "The network.failRequest Command",
-        "number": "7.5.4.5"
+        "number": "7.5.5.7"
       },
       "definedIn": "pre"
     },
@@ -19689,7 +20637,261 @@
         "id": "command-network-failRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-failRequest",
         "title": "The network.failRequest Command",
-        "number": "7.5.4.5"
+        "number": "7.5.5.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "commands-networkgetdata",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-networkgetdata",
+      "linkingText": [
+        "network.getData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-getData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-getData",
+        "title": "The network.getData Command",
+        "number": "7.5.5.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cddl-type-networkgetdata",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-type-networkgetdata",
+      "linkingText": [
+        "network.GetData"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-getData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-getData",
+        "title": "The network.getData Command",
+        "number": "7.5.5.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkgetdata-method",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkgetdata-method",
+      "linkingText": [
+        "method",
+        "\"method\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.GetData"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-getData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-getData",
+        "title": "The network.getData Command",
+        "number": "7.5.5.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-value-networkgetdata-method-networkgetdata",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-value-networkgetdata-method-networkgetdata",
+      "linkingText": [
+        "network.getData",
+        "\"network.getData\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-value",
+      "for": [
+        "network.GetData/method"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-getData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-getData",
+        "title": "The network.getData Command",
+        "number": "7.5.5.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkgetdata-params",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkgetdata-params",
+      "linkingText": [
+        "params",
+        "\"params\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.GetData"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-getData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-getData",
+        "title": "The network.getData Command",
+        "number": "7.5.5.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-type-networkgetdataparameters",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-type-networkgetdataparameters",
+      "linkingText": [
+        "network.GetDataParameters"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-getData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-getData",
+        "title": "The network.getData Command",
+        "number": "7.5.5.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkgetdataparameters-datatype",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkgetdataparameters-datatype",
+      "linkingText": [
+        "dataType",
+        "\"dataType\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.GetDataParameters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-getData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-getData",
+        "title": "The network.getData Command",
+        "number": "7.5.5.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkgetdataparameters-collector",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkgetdataparameters-collector",
+      "linkingText": [
+        "collector",
+        "\"collector\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.GetDataParameters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-getData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-getData",
+        "title": "The network.getData Command",
+        "number": "7.5.5.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkgetdataparameters-disown",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkgetdataparameters-disown",
+      "linkingText": [
+        "disown",
+        "\"disown\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.GetDataParameters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-getData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-getData",
+        "title": "The network.getData Command",
+        "number": "7.5.5.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkgetdataparameters-request",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkgetdataparameters-request",
+      "linkingText": [
+        "request",
+        "\"request\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.GetDataParameters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-getData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-getData",
+        "title": "The network.getData Command",
+        "number": "7.5.5.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-type-scriptgetdataresult",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-type-scriptgetdataresult",
+      "linkingText": [
+        "script.GetDataResult"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-getData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-getData",
+        "title": "The network.getData Command",
+        "number": "7.5.5.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-scriptgetdataresult-bytes",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-scriptgetdataresult-bytes",
+      "linkingText": [
+        "bytes",
+        "\"bytes\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "script.GetDataResult"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-getData",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-getData",
+        "title": "The network.getData Command",
+        "number": "7.5.5.8"
       },
       "definedIn": "pre"
     },
@@ -19710,7 +20912,7 @@
         "id": "command-network-provideResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-provideResponse",
         "title": "The network.provideResponse Command",
-        "number": "7.5.4.6"
+        "number": "7.5.5.9"
       },
       "definedIn": "prose"
     },
@@ -19729,7 +20931,7 @@
         "id": "command-network-provideResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-provideResponse",
         "title": "The network.provideResponse Command",
-        "number": "7.5.4.6"
+        "number": "7.5.5.9"
       },
       "definedIn": "pre"
     },
@@ -19751,7 +20953,7 @@
         "id": "command-network-provideResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-provideResponse",
         "title": "The network.provideResponse Command",
-        "number": "7.5.4.6"
+        "number": "7.5.5.9"
       },
       "definedIn": "pre"
     },
@@ -19773,7 +20975,7 @@
         "id": "command-network-provideResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-provideResponse",
         "title": "The network.provideResponse Command",
-        "number": "7.5.4.6"
+        "number": "7.5.5.9"
       },
       "definedIn": "pre"
     },
@@ -19795,7 +20997,7 @@
         "id": "command-network-provideResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-provideResponse",
         "title": "The network.provideResponse Command",
-        "number": "7.5.4.6"
+        "number": "7.5.5.9"
       },
       "definedIn": "pre"
     },
@@ -19814,7 +21016,7 @@
         "id": "command-network-provideResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-provideResponse",
         "title": "The network.provideResponse Command",
-        "number": "7.5.4.6"
+        "number": "7.5.5.9"
       },
       "definedIn": "pre"
     },
@@ -19836,7 +21038,7 @@
         "id": "command-network-provideResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-provideResponse",
         "title": "The network.provideResponse Command",
-        "number": "7.5.4.6"
+        "number": "7.5.5.9"
       },
       "definedIn": "pre"
     },
@@ -19858,7 +21060,7 @@
         "id": "command-network-provideResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-provideResponse",
         "title": "The network.provideResponse Command",
-        "number": "7.5.4.6"
+        "number": "7.5.5.9"
       },
       "definedIn": "pre"
     },
@@ -19880,7 +21082,7 @@
         "id": "command-network-provideResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-provideResponse",
         "title": "The network.provideResponse Command",
-        "number": "7.5.4.6"
+        "number": "7.5.5.9"
       },
       "definedIn": "pre"
     },
@@ -19902,7 +21104,7 @@
         "id": "command-network-provideResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-provideResponse",
         "title": "The network.provideResponse Command",
-        "number": "7.5.4.6"
+        "number": "7.5.5.9"
       },
       "definedIn": "pre"
     },
@@ -19924,7 +21126,7 @@
         "id": "command-network-provideResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-provideResponse",
         "title": "The network.provideResponse Command",
-        "number": "7.5.4.6"
+        "number": "7.5.5.9"
       },
       "definedIn": "pre"
     },
@@ -19946,7 +21148,154 @@
         "id": "command-network-provideResponse",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-provideResponse",
         "title": "The network.provideResponse Command",
-        "number": "7.5.4.6"
+        "number": "7.5.5.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "commands-networkremovedatacollector",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#commands-networkremovedatacollector",
+      "linkingText": [
+        "network.removeDataCollector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-removeDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-removeDataCollector",
+        "title": "The network.removeDataCollector Command",
+        "number": "7.5.5.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cddl-type-networkremovedatacollector",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-type-networkremovedatacollector",
+      "linkingText": [
+        "network.RemoveDataCollector"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-removeDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-removeDataCollector",
+        "title": "The network.removeDataCollector Command",
+        "number": "7.5.5.10"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkremovedatacollector-method",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkremovedatacollector-method",
+      "linkingText": [
+        "method",
+        "\"method\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.RemoveDataCollector"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-removeDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-removeDataCollector",
+        "title": "The network.removeDataCollector Command",
+        "number": "7.5.5.10"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-value-networkremovedatacollector-method-networkremovedatacollector",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-value-networkremovedatacollector-method-networkremovedatacollector",
+      "linkingText": [
+        "network.removeDataCollector",
+        "\"network.removeDataCollector\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-value",
+      "for": [
+        "network.RemoveDataCollector/method"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-removeDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-removeDataCollector",
+        "title": "The network.removeDataCollector Command",
+        "number": "7.5.5.10"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkremovedatacollector-params",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkremovedatacollector-params",
+      "linkingText": [
+        "params",
+        "\"params\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.RemoveDataCollector"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-removeDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-removeDataCollector",
+        "title": "The network.removeDataCollector Command",
+        "number": "7.5.5.10"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-type-networkremovedatacollectorparameters",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-type-networkremovedatacollectorparameters",
+      "linkingText": [
+        "network.RemoveDataCollectorParameters"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-removeDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-removeDataCollector",
+        "title": "The network.removeDataCollector Command",
+        "number": "7.5.5.10"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-networkremovedatacollectorparameters-collector",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#cddl-key-networkremovedatacollectorparameters-collector",
+      "linkingText": [
+        "collector",
+        "\"collector\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "network.RemoveDataCollectorParameters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-removeDataCollector",
+        "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-removeDataCollector",
+        "title": "The network.removeDataCollector Command",
+        "number": "7.5.5.10"
       },
       "definedIn": "pre"
     },
@@ -19967,7 +21316,7 @@
         "id": "command-network-removeIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-removeIntercept",
         "title": "The network.removeIntercept Command",
-        "number": "7.5.4.7"
+        "number": "7.5.5.11"
       },
       "definedIn": "prose"
     },
@@ -19986,7 +21335,7 @@
         "id": "command-network-removeIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-removeIntercept",
         "title": "The network.removeIntercept Command",
-        "number": "7.5.4.7"
+        "number": "7.5.5.11"
       },
       "definedIn": "pre"
     },
@@ -20008,7 +21357,7 @@
         "id": "command-network-removeIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-removeIntercept",
         "title": "The network.removeIntercept Command",
-        "number": "7.5.4.7"
+        "number": "7.5.5.11"
       },
       "definedIn": "pre"
     },
@@ -20030,7 +21379,7 @@
         "id": "command-network-removeIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-removeIntercept",
         "title": "The network.removeIntercept Command",
-        "number": "7.5.4.7"
+        "number": "7.5.5.11"
       },
       "definedIn": "pre"
     },
@@ -20052,7 +21401,7 @@
         "id": "command-network-removeIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-removeIntercept",
         "title": "The network.removeIntercept Command",
-        "number": "7.5.4.7"
+        "number": "7.5.5.11"
       },
       "definedIn": "pre"
     },
@@ -20071,7 +21420,7 @@
         "id": "command-network-removeIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-removeIntercept",
         "title": "The network.removeIntercept Command",
-        "number": "7.5.4.7"
+        "number": "7.5.5.11"
       },
       "definedIn": "pre"
     },
@@ -20093,7 +21442,7 @@
         "id": "command-network-removeIntercept",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-removeIntercept",
         "title": "The network.removeIntercept Command",
-        "number": "7.5.4.7"
+        "number": "7.5.5.11"
       },
       "definedIn": "pre"
     },
@@ -20114,7 +21463,7 @@
         "id": "command-network-setCacheBehavior",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-setCacheBehavior",
         "title": "The network.setCacheBehavior Command",
-        "number": "7.5.4.8"
+        "number": "7.5.5.12"
       },
       "definedIn": "prose"
     },
@@ -20133,7 +21482,7 @@
         "id": "command-network-setCacheBehavior",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-setCacheBehavior",
         "title": "The network.setCacheBehavior Command",
-        "number": "7.5.4.8"
+        "number": "7.5.5.12"
       },
       "definedIn": "pre"
     },
@@ -20155,7 +21504,7 @@
         "id": "command-network-setCacheBehavior",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-setCacheBehavior",
         "title": "The network.setCacheBehavior Command",
-        "number": "7.5.4.8"
+        "number": "7.5.5.12"
       },
       "definedIn": "pre"
     },
@@ -20177,7 +21526,7 @@
         "id": "command-network-setCacheBehavior",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-setCacheBehavior",
         "title": "The network.setCacheBehavior Command",
-        "number": "7.5.4.8"
+        "number": "7.5.5.12"
       },
       "definedIn": "pre"
     },
@@ -20199,7 +21548,7 @@
         "id": "command-network-setCacheBehavior",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-setCacheBehavior",
         "title": "The network.setCacheBehavior Command",
-        "number": "7.5.4.8"
+        "number": "7.5.5.12"
       },
       "definedIn": "pre"
     },
@@ -20218,7 +21567,7 @@
         "id": "command-network-setCacheBehavior",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-setCacheBehavior",
         "title": "The network.setCacheBehavior Command",
-        "number": "7.5.4.8"
+        "number": "7.5.5.12"
       },
       "definedIn": "pre"
     },
@@ -20240,7 +21589,7 @@
         "id": "command-network-setCacheBehavior",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-setCacheBehavior",
         "title": "The network.setCacheBehavior Command",
-        "number": "7.5.4.8"
+        "number": "7.5.5.12"
       },
       "definedIn": "pre"
     },
@@ -20262,7 +21611,7 @@
         "id": "command-network-setCacheBehavior",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-setCacheBehavior",
         "title": "The network.setCacheBehavior Command",
-        "number": "7.5.4.8"
+        "number": "7.5.5.12"
       },
       "definedIn": "pre"
     },
@@ -20284,7 +21633,7 @@
         "id": "command-network-setCacheBehavior",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-setCacheBehavior",
         "title": "The network.setCacheBehavior Command",
-        "number": "7.5.4.8"
+        "number": "7.5.5.12"
       },
       "definedIn": "pre"
     },
@@ -20306,7 +21655,7 @@
         "id": "command-network-setCacheBehavior",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-setCacheBehavior",
         "title": "The network.setCacheBehavior Command",
-        "number": "7.5.4.8"
+        "number": "7.5.5.12"
       },
       "definedIn": "pre"
     },
@@ -20325,7 +21674,7 @@
         "id": "command-network-setCacheBehavior",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-setCacheBehavior",
         "title": "The network.setCacheBehavior Command",
-        "number": "7.5.4.8"
+        "number": "7.5.5.12"
       },
       "definedIn": "prose"
     },
@@ -20344,7 +21693,7 @@
         "id": "command-network-setCacheBehavior",
         "href": "https://www.w3.org/TR/webdriver-bidi/#command-network-setCacheBehavior",
         "title": "The network.setCacheBehavior Command",
-        "number": "7.5.4.8"
+        "number": "7.5.5.12"
       },
       "definedIn": "prose"
     },
@@ -20363,7 +21712,7 @@
         "id": "event-network-authRequired",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-authRequired",
         "title": "The network.authRequired Event",
-        "number": "7.5.5.1"
+        "number": "7.5.6.1"
       },
       "definedIn": "pre"
     },
@@ -20385,7 +21734,7 @@
         "id": "event-network-authRequired",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-authRequired",
         "title": "The network.authRequired Event",
-        "number": "7.5.5.1"
+        "number": "7.5.6.1"
       },
       "definedIn": "pre"
     },
@@ -20407,7 +21756,7 @@
         "id": "event-network-authRequired",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-authRequired",
         "title": "The network.authRequired Event",
-        "number": "7.5.5.1"
+        "number": "7.5.6.1"
       },
       "definedIn": "pre"
     },
@@ -20429,7 +21778,7 @@
         "id": "event-network-authRequired",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-authRequired",
         "title": "The network.authRequired Event",
-        "number": "7.5.5.1"
+        "number": "7.5.6.1"
       },
       "definedIn": "pre"
     },
@@ -20448,7 +21797,7 @@
         "id": "event-network-authRequired",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-authRequired",
         "title": "The network.authRequired Event",
-        "number": "7.5.5.1"
+        "number": "7.5.6.1"
       },
       "definedIn": "pre"
     },
@@ -20470,7 +21819,7 @@
         "id": "event-network-authRequired",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-authRequired",
         "title": "The network.authRequired Event",
-        "number": "7.5.5.1"
+        "number": "7.5.6.1"
       },
       "definedIn": "pre"
     },
@@ -20489,7 +21838,7 @@
         "id": "event-network-authRequired",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-authRequired",
         "title": "The network.authRequired Event",
-        "number": "7.5.5.1"
+        "number": "7.5.6.1"
       },
       "definedIn": "prose"
     },
@@ -20508,7 +21857,7 @@
         "id": "event-network-beforeSendRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-beforeSendRequest",
         "title": "The network.beforeRequestSent Event",
-        "number": "7.5.5.2"
+        "number": "7.5.6.2"
       },
       "definedIn": "pre"
     },
@@ -20530,7 +21879,7 @@
         "id": "event-network-beforeSendRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-beforeSendRequest",
         "title": "The network.beforeRequestSent Event",
-        "number": "7.5.5.2"
+        "number": "7.5.6.2"
       },
       "definedIn": "pre"
     },
@@ -20552,7 +21901,7 @@
         "id": "event-network-beforeSendRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-beforeSendRequest",
         "title": "The network.beforeRequestSent Event",
-        "number": "7.5.5.2"
+        "number": "7.5.6.2"
       },
       "definedIn": "pre"
     },
@@ -20574,7 +21923,7 @@
         "id": "event-network-beforeSendRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-beforeSendRequest",
         "title": "The network.beforeRequestSent Event",
-        "number": "7.5.5.2"
+        "number": "7.5.6.2"
       },
       "definedIn": "pre"
     },
@@ -20593,7 +21942,7 @@
         "id": "event-network-beforeSendRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-beforeSendRequest",
         "title": "The network.beforeRequestSent Event",
-        "number": "7.5.5.2"
+        "number": "7.5.6.2"
       },
       "definedIn": "pre"
     },
@@ -20615,7 +21964,7 @@
         "id": "event-network-beforeSendRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-beforeSendRequest",
         "title": "The network.beforeRequestSent Event",
-        "number": "7.5.5.2"
+        "number": "7.5.6.2"
       },
       "definedIn": "pre"
     },
@@ -20634,7 +21983,7 @@
         "id": "event-network-beforeSendRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-beforeSendRequest",
         "title": "The network.beforeRequestSent Event",
-        "number": "7.5.5.2"
+        "number": "7.5.6.2"
       },
       "definedIn": "prose"
     },
@@ -20653,7 +22002,7 @@
         "id": "event-network-beforeSendRequest",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-beforeSendRequest",
         "title": "The network.beforeRequestSent Event",
-        "number": "7.5.5.2"
+        "number": "7.5.6.2"
       },
       "definedIn": "prose"
     },
@@ -20672,7 +22021,7 @@
         "id": "event-network-fetchError",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-fetchError",
         "title": "The network.fetchError Event",
-        "number": "7.5.5.3"
+        "number": "7.5.6.3"
       },
       "definedIn": "pre"
     },
@@ -20694,7 +22043,7 @@
         "id": "event-network-fetchError",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-fetchError",
         "title": "The network.fetchError Event",
-        "number": "7.5.5.3"
+        "number": "7.5.6.3"
       },
       "definedIn": "pre"
     },
@@ -20716,7 +22065,7 @@
         "id": "event-network-fetchError",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-fetchError",
         "title": "The network.fetchError Event",
-        "number": "7.5.5.3"
+        "number": "7.5.6.3"
       },
       "definedIn": "pre"
     },
@@ -20738,7 +22087,7 @@
         "id": "event-network-fetchError",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-fetchError",
         "title": "The network.fetchError Event",
-        "number": "7.5.5.3"
+        "number": "7.5.6.3"
       },
       "definedIn": "pre"
     },
@@ -20757,7 +22106,7 @@
         "id": "event-network-fetchError",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-fetchError",
         "title": "The network.fetchError Event",
-        "number": "7.5.5.3"
+        "number": "7.5.6.3"
       },
       "definedIn": "pre"
     },
@@ -20779,7 +22128,7 @@
         "id": "event-network-fetchError",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-fetchError",
         "title": "The network.fetchError Event",
-        "number": "7.5.5.3"
+        "number": "7.5.6.3"
       },
       "definedIn": "pre"
     },
@@ -20798,7 +22147,7 @@
         "id": "event-network-fetchError",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-fetchError",
         "title": "The network.fetchError Event",
-        "number": "7.5.5.3"
+        "number": "7.5.6.3"
       },
       "definedIn": "prose"
     },
@@ -20817,7 +22166,7 @@
         "id": "event-network-responseCompleted",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-responseCompleted",
         "title": "The network.responseCompleted Event",
-        "number": "7.5.5.4"
+        "number": "7.5.6.4"
       },
       "definedIn": "pre"
     },
@@ -20839,7 +22188,7 @@
         "id": "event-network-responseCompleted",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-responseCompleted",
         "title": "The network.responseCompleted Event",
-        "number": "7.5.5.4"
+        "number": "7.5.6.4"
       },
       "definedIn": "pre"
     },
@@ -20861,7 +22210,7 @@
         "id": "event-network-responseCompleted",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-responseCompleted",
         "title": "The network.responseCompleted Event",
-        "number": "7.5.5.4"
+        "number": "7.5.6.4"
       },
       "definedIn": "pre"
     },
@@ -20883,7 +22232,7 @@
         "id": "event-network-responseCompleted",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-responseCompleted",
         "title": "The network.responseCompleted Event",
-        "number": "7.5.5.4"
+        "number": "7.5.6.4"
       },
       "definedIn": "pre"
     },
@@ -20902,7 +22251,7 @@
         "id": "event-network-responseCompleted",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-responseCompleted",
         "title": "The network.responseCompleted Event",
-        "number": "7.5.5.4"
+        "number": "7.5.6.4"
       },
       "definedIn": "pre"
     },
@@ -20924,7 +22273,7 @@
         "id": "event-network-responseCompleted",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-responseCompleted",
         "title": "The network.responseCompleted Event",
-        "number": "7.5.5.4"
+        "number": "7.5.6.4"
       },
       "definedIn": "pre"
     },
@@ -20943,7 +22292,7 @@
         "id": "event-network-responseCompleted",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-responseCompleted",
         "title": "The network.responseCompleted Event",
-        "number": "7.5.5.4"
+        "number": "7.5.6.4"
       },
       "definedIn": "prose"
     },
@@ -20962,7 +22311,7 @@
         "id": "event-network-responseStarted",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-responseStarted",
         "title": "The network.responseStarted Event",
-        "number": "7.5.5.5"
+        "number": "7.5.6.5"
       },
       "definedIn": "pre"
     },
@@ -20984,7 +22333,7 @@
         "id": "event-network-responseStarted",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-responseStarted",
         "title": "The network.responseStarted Event",
-        "number": "7.5.5.5"
+        "number": "7.5.6.5"
       },
       "definedIn": "pre"
     },
@@ -21006,7 +22355,7 @@
         "id": "event-network-responseStarted",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-responseStarted",
         "title": "The network.responseStarted Event",
-        "number": "7.5.5.5"
+        "number": "7.5.6.5"
       },
       "definedIn": "pre"
     },
@@ -21028,7 +22377,7 @@
         "id": "event-network-responseStarted",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-responseStarted",
         "title": "The network.responseStarted Event",
-        "number": "7.5.5.5"
+        "number": "7.5.6.5"
       },
       "definedIn": "pre"
     },
@@ -21047,7 +22396,7 @@
         "id": "event-network-responseStarted",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-responseStarted",
         "title": "The network.responseStarted Event",
-        "number": "7.5.5.5"
+        "number": "7.5.6.5"
       },
       "definedIn": "pre"
     },
@@ -21069,7 +22418,7 @@
         "id": "event-network-responseStarted",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-responseStarted",
         "title": "The network.responseStarted Event",
-        "number": "7.5.5.5"
+        "number": "7.5.6.5"
       },
       "definedIn": "pre"
     },
@@ -21088,7 +22437,7 @@
         "id": "event-network-responseStarted",
         "href": "https://www.w3.org/TR/webdriver-bidi/#event-network-responseStarted",
         "title": "The network.responseStarted Event",
-        "number": "7.5.5.5"
+        "number": "7.5.6.5"
       },
       "definedIn": "prose"
     },

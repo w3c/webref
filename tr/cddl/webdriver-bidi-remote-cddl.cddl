@@ -516,12 +516,15 @@ emulation.GeolocationPositionError = {
 }
 
 NetworkCommand = (
+  network.AddDataCollector //
   network.AddIntercept //
   network.ContinueRequest //
   network.ContinueResponse //
   network.ContinueWithAuth //
   network.FailRequest //
+  network.GetData //
   network.ProvideResponse //
+  network.RemoveDataCollector //
   network.RemoveIntercept //
   network.SetCacheBehavior
 )
@@ -531,6 +534,8 @@ network.AuthCredentials = {
   username: text,
   password: text,
 }
+
+network.DataType = "response"
 
 network.BytesValue = network.StringValue / network.Base64Value;
 
@@ -543,6 +548,10 @@ network.Base64Value = {
   type: "base64",
   value: text,
 }
+
+network.Collector = text
+
+network.CollectorType = "blob"
 
 network.SameSite = "strict" / "lax" / "none"
 
@@ -602,6 +611,19 @@ network.UrlPatternPattern = {
 network.UrlPatternString = {
     type: "string",
     pattern: text,
+}
+
+network.AddDataCollector = (
+  method: "network.addDataCollector",
+  params: network.AddDataCollectorParameters
+)
+
+network.AddDataCollectorParameters = {
+  dataTypes: [+network.DataType],
+  maxEncodedDataSize: js-uint,
+  ? collectorType: network.CollectorType .default "blob",
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
 }
 
 network.AddIntercept = (
@@ -665,12 +687,35 @@ network.ContinueWithAuthNoCredentials = (
   action: "default" / "cancel"
 )
 
+network.DisownData = (
+  method: "network.disownData",
+  params: network.disownDataParameters
+)
+
+network.disownDataParameters = {
+  dataType: network.DataType,
+  collector: network.Collector,
+  request: network.Request,
+}
+
 network.FailRequest = (
   method: "network.failRequest",
   params: network.FailRequestParameters
 )
 
 network.FailRequestParameters = {
+  request: network.Request,
+}
+
+network.GetData = (
+  method: "network.getData",
+  params: network.GetDataParameters
+)
+
+network.GetDataParameters = {
+  dataType: network.DataType,
+  ? collector: network.Collector,
+  ? disown: bool .default false,
   request: network.Request,
 }
 
@@ -686,6 +731,15 @@ network.ProvideResponseParameters = {
   ?headers: [*network.Header],
   ?reasonPhrase: text,
   ?statusCode: js-uint,
+}
+
+network.RemoveDataCollector = (
+  method: "network.removeDataCollector",
+  params: network.RemoveDataCollectorParameters
+)
+
+network.RemoveDataCollectorParameters = {
+  collector: network.Collector
 }
 
 network.RemoveIntercept = (
@@ -1964,12 +2018,15 @@ emulation.GeolocationPositionError = {
 }
 
 NetworkCommand = (
+  network.AddDataCollector //
   network.AddIntercept //
   network.ContinueRequest //
   network.ContinueResponse //
   network.ContinueWithAuth //
   network.FailRequest //
+  network.GetData //
   network.ProvideResponse //
+  network.RemoveDataCollector //
   network.RemoveIntercept //
   network.SetCacheBehavior
 )
@@ -1979,6 +2036,8 @@ network.AuthCredentials = {
   username: text,
   password: text,
 }
+
+network.DataType = "response"
 
 network.BytesValue = network.StringValue / network.Base64Value;
 
@@ -1991,6 +2050,10 @@ network.Base64Value = {
   type: "base64",
   value: text,
 }
+
+network.Collector = text
+
+network.CollectorType = "blob"
 
 network.SameSite = "strict" / "lax" / "none"
 
@@ -2050,6 +2113,19 @@ network.UrlPatternPattern = {
 network.UrlPatternString = {
     type: "string",
     pattern: text,
+}
+
+network.AddDataCollector = (
+  method: "network.addDataCollector",
+  params: network.AddDataCollectorParameters
+)
+
+network.AddDataCollectorParameters = {
+  dataTypes: [+network.DataType],
+  maxEncodedDataSize: js-uint,
+  ? collectorType: network.CollectorType .default "blob",
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
 }
 
 network.AddIntercept = (
@@ -2113,12 +2189,35 @@ network.ContinueWithAuthNoCredentials = (
   action: "default" / "cancel"
 )
 
+network.DisownData = (
+  method: "network.disownData",
+  params: network.disownDataParameters
+)
+
+network.disownDataParameters = {
+  dataType: network.DataType,
+  collector: network.Collector,
+  request: network.Request,
+}
+
 network.FailRequest = (
   method: "network.failRequest",
   params: network.FailRequestParameters
 )
 
 network.FailRequestParameters = {
+  request: network.Request,
+}
+
+network.GetData = (
+  method: "network.getData",
+  params: network.GetDataParameters
+)
+
+network.GetDataParameters = {
+  dataType: network.DataType,
+  ? collector: network.Collector,
+  ? disown: bool .default false,
   request: network.Request,
 }
 
@@ -2134,6 +2233,15 @@ network.ProvideResponseParameters = {
   ?headers: [*network.Header],
   ?reasonPhrase: text,
   ?statusCode: js-uint,
+}
+
+network.RemoveDataCollector = (
+  method: "network.removeDataCollector",
+  params: network.RemoveDataCollectorParameters
+)
+
+network.RemoveDataCollectorParameters = {
+  collector: network.Collector
 }
 
 network.RemoveIntercept = (
@@ -2960,11 +3068,13 @@ ErrorCode = "invalid argument" /
             "invalid web extension" /
             "move target out of bounds" /
             "no such alert" /
+            "no such network collector" /
             "no such element" /
             "no such frame" /
             "no such handle" /
             "no such history entry" /
             "no such intercept" /
+            "no such network data" /
             "no such node" /
             "no such request" /
             "no such script" /
@@ -2976,6 +3086,7 @@ ErrorCode = "invalid argument" /
             "unable to close browser" /
             "unable to set cookie" /
             "unable to set file input" /
+            "unavailable network data" /
             "underspecified storage partition" /
             "unknown command" /
             "unknown error" /
@@ -3382,6 +3493,8 @@ network.BaseParameters = (
     ? intercepts: [+network.Intercept]
 )
 
+network.DataType = "response"
+
 network.BytesValue = network.StringValue / network.Base64Value;
 
 network.StringValue = {
@@ -3393,6 +3506,10 @@ network.Base64Value = {
   type: "base64",
   value: text,
 }
+
+network.Collector = text
+
+network.CollectorType = "blob"
 
 network.SameSite = "strict" / "lax" / "none"
 
@@ -3474,8 +3591,16 @@ network.ResponseData = {
     ?authChallenges: [*network.AuthChallenge],
 }
 
+network.AddDataCollectorResult = {
+  collector: network.Collector
+}
+
 network.AddInterceptResult = {
   intercept: network.Intercept
+}
+
+script.GetDataResult = {
+  bytes: network.BytesValue,
 }
 
 network.AuthRequired = (
