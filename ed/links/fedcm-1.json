@@ -8,6 +8,11 @@
       "https://blog.google/products/chrome/privacy-sustainability-and-the-importance-of-and/": {},
       "https://blog.mozilla.org/blog/2019/09/03/todays-firefox-blocks-third-party-tracking-cookies-and-cryptomining-by-default/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://datatracker.ietf.org/doc/html/rfc6749": {
+        "anchors": [
+          "section-4.1.2.1"
+        ]
+      },
       "https://datatracker.ietf.org/doc/html/rfc7258": {},
       "https://dom.spec.whatwg.org/": {},
       "https://drafts.csswg.org/css-color-4/": {},
@@ -186,11 +191,11 @@
           "concept-request-mode",
           "concept-response",
           "concept-request-referrer-policy",
+          "concept-response-status",
+          "ok-status",
           "concept-fetch",
           "process-response-end-of-body",
           "concept-network-error",
-          "concept-response-status",
-          "ok-status",
           "concept-header-extract-mime-type",
           "concept-response-header-list",
           "http-origin",
@@ -244,6 +249,7 @@
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "current-global-object",
+          "concept-relevant-realm",
           "relevant-settings-object",
           "concept-settings-object-origin",
           "environment-settings-object",
@@ -251,7 +257,6 @@
           "dom-manipulation-task-source",
           "concept-global-object-realm",
           "networking-task-source",
-          "concept-relevant-realm",
           "concept-relevant-global",
           "current-settings-object"
         ]
@@ -309,8 +314,8 @@
           "get-the-login-status",
           "unknown",
           "logged-out",
-          "set-the-login-status",
-          "logged-in"
+          "logged-in",
+          "set-the-login-status"
         ]
       },
       "https://w3c.github.io/webappsec-credential-management/": {
@@ -328,8 +333,8 @@
           "same-origin-with-its-ancestors",
           "dom-credentialrequestoptions-signal",
           "dom-credentialrequestoptions-mediation",
-          "origin-requires-user-mediation",
           "dom-credentialmediationrequirement-silent",
+          "origin-requires-user-mediation",
           "dom-credentialmediationrequirement-required"
         ]
       },
@@ -383,11 +388,14 @@
           "networkerror",
           "resolve",
           "dfn-convert-ecmascript-to-idl-value",
-          "idl-sequence",
           "idl-DOMString",
+          "new",
+          "dom-domexception-message",
+          "dom-domexception-domexception",
+          "this",
+          "idl-sequence",
           "idl-any",
           "idl-unsigned-long",
-          "new",
           "a-promise-rejected-with",
           "dfn-dictionary"
         ]

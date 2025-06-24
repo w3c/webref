@@ -301,16 +301,55 @@
       ]
     },
     {
+      "name": "create an IdentityCredentialError",
+      "href": "https://w3c-fedid.github.io/FedCM/#create-an-identitycredentialerror",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-an-identitycredentialerror\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an IdentityCredentialError</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identitycredentialerrorinit\" id=\"ref-for-dictdef-identitycredentialerrorinit①\">IdentityCredentialErrorInit</a></code> <var>options</var>\nand a <var>globalObject</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>error</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#identitycredentialerror\" id=\"ref-for-identitycredentialerror①\">IdentityCredentialError</a></code> with <var>globalObject</var>’s\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>error</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dom-domexception-message\" id=\"ref-for-dom-domexception-message\">message</a></code> to \"IdentityCredentialError\".</p>"
+        },
+        {
+          "html": "<p>Set <var>error</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerror-error\" id=\"ref-for-dom-identitycredentialerror-error\">error</a></code> to <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerror-error\" id=\"ref-for-dom-identitycredentialerror-error①\">error</a></code>\nif it is present in <var>options</var>, or to \"\" otherwise.</p>"
+        },
+        {
+          "html": "<p>Set <var>error</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerror-url\" id=\"ref-for-dom-identitycredentialerror-url\">url</a></code> to <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerror-url\" id=\"ref-for-dom-identitycredentialerror-url①\">url</a></code>\nif it is present in <var>options</var>, or to \"\" otherwise.</p>"
+        },
+        {
+          "html": "<p>Return <var>error</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "IdentityCredentialError constructor",
+      "html": "Given a <var>realm</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString⑤\">DOMString</a></code> <var>message</var>, and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identitycredentialerrorinit\" id=\"ref-for-dictdef-identitycredentialerrorinit②\">IdentityCredentialErrorInit</a></code> <var>options</var>, the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerror-identitycredentialerror\" id=\"ref-for-dom-identitycredentialerror-identitycredentialerror\">IdentityCredentialError()</a></code> must run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Invoke the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①②\">DOMException</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dom-domexception-domexception\" id=\"ref-for-dom-domexception-domexception\">DOMException()</a></code>, passing <var>realm</var> and <var>message</var>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerror-error\" id=\"ref-for-dom-identitycredentialerror-error②\">error</a></code> to <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerror-error\" id=\"ref-for-dom-identitycredentialerror-error③\">error</a></code>\nif it is present in <var>options</var>, or to \"\" otherwise.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerror-url\" id=\"ref-for-dom-identitycredentialerror-url②\">url</a></code> to <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerror-url\" id=\"ref-for-dom-identitycredentialerror-url③\">url</a></code>\nif it is present in <var>options</var>, or to \"\" otherwise.</p>"
+        }
+      ]
+    },
+    {
       "name": "[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)",
       "href": "https://w3c-fedid.github.io/FedCM/#dom-identitycredential-discoverfromexternalsource-slot",
-      "html": "When the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#identitycredential\" id=\"ref-for-identitycredential⑥\">IdentityCredential</a></code>’s\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"IdentityCredential\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-identitycredential-discoverfromexternalsource-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)</code></dfn>\nalgorithm is invoked, the user agent MUST execute the following steps. This returns an\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#identitycredential\" id=\"ref-for-identitycredential⑦\">IdentityCredential</a></code> (or throws an error to the caller).",
+      "html": "When the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#identitycredential\" id=\"ref-for-identitycredential⑦\">IdentityCredential</a></code>’s\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"IdentityCredential\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-identitycredential-discoverfromexternalsource-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)</code></dfn>\nalgorithm is invoked, the user agent MUST execute the following steps. This returns an\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#identitycredential\" id=\"ref-for-identitycredential⑧\">IdentityCredential</a></code> or throws an error to the caller.",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p class=\"assertion\">Assert: These steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>.</p>"
         },
         {
-          "html": "<p>If\n<var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-credentialrequestoptions-identity\" id=\"ref-for-dom-credentialrequestoptions-identity①\">identity</a></code>\"][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialrequestoptions-providers\" id=\"ref-for-dom-identitycredentialrequestoptions-providers\">providers</a></code>\"]\nis <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source\">DOM manipulation task source</a> given\n<var>globalObject</var> to throw a new \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror⑧\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪\">DOMException</a></code>.</p>"
+          "html": "<p>If\n<var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-credentialrequestoptions-identity\" id=\"ref-for-dom-credentialrequestoptions-identity①\">identity</a></code>\"][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialrequestoptions-providers\" id=\"ref-for-dom-identitycredentialrequestoptions-providers\">providers</a></code>\"]\nis <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source\">DOM manipulation task source</a> given\n<var>globalObject</var> to throw a new \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror⑧\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①③\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>providerList</var> be <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-credentialrequestoptions-identity\" id=\"ref-for-dom-credentialrequestoptions-identity②\">identity</a></code>\"][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialrequestoptions-providers\" id=\"ref-for-dom-identitycredentialrequestoptions-providers①\">providers</a></code>\"].</p>"
@@ -329,19 +368,19 @@
               "html": "<p>The user agent SHOULD wait a random amount of time\nbefore the next step if all of the following conditions hold:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><var>throwImmediately</var> is false</p>\n         </li><li data-md=\"\">\n          <p>The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"promise-rejection-delay\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">promise rejection delay</dfn> was not disabled by\n<a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#setdelayenabled\" id=\"ref-for-setdelayenabled\">user agent automation</a></p>\n         </li><li data-md=\"\">\n          <p>The user agent has not implemented another way to prevent\nexposing to the RP whether the user has an account logged\nin to the RP</p>\n        </li></ul>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source①\">DOM manipulation task source</a>\nto throw a new \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror⑨\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①①\">DOMException</a></code>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source①\">DOM manipulation task source</a>\nto throw a new \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror⑨\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①④\">DOMException</a></code>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Otherwise, return <var>credential</var>.</p>"
+          "html": "<p>Otherwise, return <var>credential</var> (this may throw, since it may be an\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#identitycredentialerror\" id=\"ref-for-identitycredentialerror②\">IdentityCredentialError</a></code>).</p>"
         }
       ]
     },
     {
       "name": "create an IdentityCredential",
       "href": "https://w3c-fedid.github.io/FedCM/#create-an-identitycredential",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-an-identitycredential\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an IdentityCredential</dfn> given a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence②\">sequence</a> of  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderrequestoptions\" id=\"ref-for-dictdef-identityproviderrequestoptions①\">IdentityProviderRequestOptions</a></code>\n<var>providerList</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-credential-management/#dictdef-credentialrequestoptions\" id=\"ref-for-dictdef-credentialrequestoptions③\">CredentialRequestOptions</a></code> <var>options</var>, and a\n<var>globalObject</var>, run the following steps. This returns an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#identitycredential\" id=\"ref-for-identitycredential⑨\">IdentityCredential</a></code>\nor a pair (failure, bool), where the bool indicates whether to skip delaying\nthe exception thrown.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-an-identitycredential\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an IdentityCredential</dfn> given a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence②\">sequence</a> of\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderrequestoptions\" id=\"ref-for-dictdef-identityproviderrequestoptions①\">IdentityProviderRequestOptions</a></code> <var>providerList</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-credential-management/#dictdef-credentialrequestoptions\" id=\"ref-for-dictdef-credentialrequestoptions③\">CredentialRequestOptions</a></code> <var>options</var>, and a\n<var>globalObject</var>, run the following steps. This returns an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#identitycredential\" id=\"ref-for-identitycredential①⓪\">IdentityCredential</a></code>, an\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#identitycredentialerror\" id=\"ref-for-identitycredentialerror③\">IdentityCredentialError</a></code>, or a pair (failure, bool), where the bool indicates whether to throw\nthe exception immediately.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -364,7 +403,7 @@
               "html": "<p>If <var>globalObject</var> does not have <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation\">transient activation</a>, return (failure, true).</p>"
             },
             {
-              "html": "<p>Otherwise, if there is a pending request where <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#enumdef-identitycredentialrequestoptionsmode\" id=\"ref-for-enumdef-identitycredentialrequestoptionsmode②\">IdentityCredentialRequestOptionsMode</a></code> is\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialrequestoptionsmode-passive\" id=\"ref-for-dom-identitycredentialrequestoptionsmode-passive\">passive</a></code> on <var>globalObject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable③\">navigable</a>’s\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top⑤\">top-level traversable</a> or on any of its descendants, reject the pending\nrequest with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror①⓪\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①②\">DOMException</a></code>.</p>"
+              "html": "<p>Otherwise, if there is a pending request where <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#enumdef-identitycredentialrequestoptionsmode\" id=\"ref-for-enumdef-identitycredentialrequestoptionsmode②\">IdentityCredentialRequestOptionsMode</a></code> is\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialrequestoptionsmode-passive\" id=\"ref-for-dom-identitycredentialrequestoptionsmode-passive\">passive</a></code> on <var>globalObject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable③\">navigable</a>’s\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top⑤\">top-level traversable</a> or on any of its descendants, reject the pending\nrequest with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror①⓪\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑤\">DOMException</a></code>.</p>"
             }
           ]
         },
@@ -378,7 +417,7 @@
           "html": "<p>Let <var>providerMap</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a>.</p>"
         },
         {
-          "html": "For each <var>provider</var> in <var>providerList</var>:\nNote: The fetches performed in these steps to populate <var>providerMap</var> can be performed at the\n    same time, e.g., the second <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#idp\" id=\"ref-for-idp①②\">IDP</a>’s fetches can be started before the first ones finish,\n    since these are indepedent.",
+          "html": "For each <var>provider</var> in <var>providerList</var>:\nNote: The fetches performed in these steps to populate <var>providerMap</var> can be performed at the\n    same time, e.g., the second <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#idp\" id=\"ref-for-idp①③\">IDP</a>’s fetches can be started before the first ones finish,\n    since these are indepedent.",
           "rationale": "let",
           "steps": [
             {
@@ -386,6 +425,9 @@
             },
             {
               "html": "<p>If <var>providerMap</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">contains</a> <var>providerOrigin</var>, return (failure, true).</p>"
+            },
+            {
+              "html": "<p>If <var>mediation</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-credential-management/#dom-credentialmediationrequirement-silent\" id=\"ref-for-dom-credentialmediationrequirement-silent\">silent</a></code>\" and there does not exist an\naccount <var>account</var> such that <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#connected-accounts-set\" id=\"ref-for-connected-accounts-set①⓪\">connected accounts set</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑥\">contains</a> the result of\n<a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#compute-the-connected-account-key\" id=\"ref-for-compute-the-connected-account-key③\">compute the connected account key</a> given <var>account</var>, <var>provider</var>, and <var>globalObject</var>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>. Note that this check can be performed by iterating over the\n<a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#connected-accounts-set\" id=\"ref-for-connected-accounts-set①①\">connected accounts set</a> or by keeping a separate data structure to make this lookup\nfast.</p>"
             },
             {
               "html": "<p>Let <var>loginStatus</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#get-the-login-status\" id=\"ref-for-get-the-login-status\">get the login status</a> with <var>providerOrigin</var>.</p>"
@@ -398,7 +440,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <var>mode</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialrequestoptionsmode-active\" id=\"ref-for-dom-identitycredentialrequestoptionsmode-active①\">active</a></code>:",
+                  "html": "If <var>mode</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialrequestoptionsmode-active\" id=\"ref-for-dom-identitycredentialrequestoptionsmode-active①\">active</a></code> and <var>mediation</var> is not\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-credential-management/#dom-credentialmediationrequirement-silent\" id=\"ref-for-dom-credentialmediationrequirement-silent①\">silent</a></code>\":",
                   "rationale": "let",
                   "steps": [
                     {
@@ -406,11 +448,14 @@
                     },
                     {
                       "html": "<p>If <var>result</var> is failure, return (failure, true).</p>"
+                    },
+                    {
+                      "html": "<p>Otherwise, set <var>loginStatus</var> to <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#logged-in\" id=\"ref-for-logged-in\">logged-in</a>.</p>"
                     }
                   ]
                 },
                 {
-                  "html": "<p>Otherwise, set <var>providerMap</var>[<var>providerOrigin</var>] to \"logged-out\" and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+                  "html": "<p>Otherwise, set <var>providerMap</var>[<var>providerOrigin</var>] to \"logged-out\" and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
                 }
               ]
             },
@@ -418,97 +463,31 @@
               "html": "<p>Let <var>requiresUserMediation</var> be <var>providerOrigin</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-credential-management/#origin-requires-user-mediation\" id=\"ref-for-origin-requires-user-mediation\">requires user mediation</a>.</p>"
             },
             {
-              "html": "<p>If <var>requiresUserMediation</var> is true and <var>mediation</var> is\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-credential-management/#dom-credentialmediationrequirement-silent\" id=\"ref-for-dom-credentialmediationrequirement-silent\">silent</a></code>\", <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+              "html": "<p>If <var>requiresUserMediation</var> is true and <var>mediation</var> is\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-credential-management/#dom-credentialmediationrequirement-silent\" id=\"ref-for-dom-credentialmediationrequirement-silent②\">silent</a></code>\", <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
             },
             {
               "html": "<p>Let <var>config</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#fetch-the-config-file\" id=\"ref-for-fetch-the-config-file①\">fetch the config file</a> with\n<var>provider</var> and <var>globalObject</var>.</p>"
             },
             {
-              "html": "<p>If <var>config</var> is failure, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+              "html": "<p>If <var>config</var> is failure, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
             },
             {
-              "html": "<p><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-accounts-step\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Fetch accounts step</dfn>: Let <var>accountsList</var> be the result of\n<a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#fetch-the-accounts\" id=\"ref-for-fetch-the-accounts\">fetch the accounts</a> with <var>config</var>, <var>provider</var>, and <var>globalObject</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#create-identity-credential-fetch-accounts\" id=\"ref-for-create-identity-credential-fetch-accounts\">Fetch accounts</a> given <var>config</var>, <var>provider</var>, and <var>globalObject</var>, and let <var>accountsList</var>\nbe the result.</p>"
             },
             {
-              "html": "If <var>accountsList</var> is failure, or the size of <var>accountsList</var> is 0:",
-              "rationale": "set",
-              "steps": [
-                {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#set-the-login-status\" id=\"ref-for-set-the-login-status\">Set the login status</a> of <var>providerOrigin</var> to <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#logged-out\" id=\"ref-for-logged-out②\">logged-out</a>.\nA user agent may decide to skip this step if no credentials were\nsent to server.</p>"
-                },
-                {
-                  "html": "<p>If <var>loginStatus</var> is <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#logged-in\" id=\"ref-for-logged-in\">logged-in</a>, set <var>providerMap</var>[<var>providerOrigin</var>] to \"mismatch\"\nand <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
-                }
-              ]
-            },
-            {
-              "html": "<p class=\"assertion\">Assert: <var>accountsList</var> is not failure and the size of <var>accountsList</var> is not 0.</p>"
-            },
-            {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#set-the-login-status\" id=\"ref-for-set-the-login-status①\">Set the login status</a> for <var>providerOrigin</var> to <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#logged-in\" id=\"ref-for-logged-in①\">logged-in</a>.</p>"
-            },
-            {
-              "html": "For each <var>acc</var> in <var>accountsList</var>:",
+              "html": "If <var>accountsList</var> is empty:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>acc</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-picture\" id=\"ref-for-dom-identityprovideraccount-picture\">picture</a></code>\"] is present, <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#fetch-the-account-picture\" id=\"ref-for-fetch-the-account-picture\">fetch the account picture</a>\nwith <var>acc</var> and <var>globalObject</var>. If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent③\">user agent</a> displays this picture to\nthe user at any point, it MUST reuse the result of this fetch instead of redownloading\nthe picture.</p>"
-                }
-              ]
-            },
-            {
-              "html": "If <var>provider</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderrequestoptions-loginhint\" id=\"ref-for-dom-identityproviderrequestoptions-loginhint①\">loginHint</a></code> is not empty:",
-              "rationale": "for",
-              "steps": [
-                {
-                  "html": "<p>For every <var>account</var> in <var>accountList</var>, remove <var>account</var> from <var>accountList</var> if <var>account</var>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-login_hints\" id=\"ref-for-dom-identityprovideraccount-login_hints\">login_hints</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑥\">contain</a> <var>provider</var>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderrequestoptions-loginhint\" id=\"ref-for-dom-identityproviderrequestoptions-loginhint②\">loginHint</a></code>.</p>"
+                  "html": "<p>If <var>loginStatus</var> is <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#logged-in\" id=\"ref-for-logged-in①\">logged-in</a> and <var>mediation</var> is not\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-credential-management/#dom-credentialmediationrequirement-silent\" id=\"ref-for-dom-credentialmediationrequirement-silent③\">silent</a></code>, set <var>providerMap</var>[<var>providerOrigin</var>] to\n\"mismatch\".</p>"
                 },
                 {
-                  "html": "<p>If <var>accountList</var> is now empty, set <var>providerMap</var>[<var>providerOrigin</var>] to \"mismatch\" and\ncontinue.</p>"
+                  "html": "<p>Otherwise, set <var>providerMap</var>[<var>providerOrigin</var>] to \"logged-out\".</p>"
                 }
               ]
             },
             {
-              "html": "If <var>provider</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderrequestoptions-domainhint\" id=\"ref-for-dom-identityproviderrequestoptions-domainhint①\">domainHint</a></code> is not empty:",
-              "rationale": "for",
-              "steps": [
-                {
-                  "html": "For every <var>account</var> in <var>accountList</var>:",
-                  "rationale": "if",
-                  "steps": [
-                    {
-                      "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderrequestoptions-domainhint\" id=\"ref-for-dom-identityproviderrequestoptions-domainhint②\">domainHint</a></code> is \"any\":",
-                      "rationale": "if",
-                      "steps": [
-                        {
-                          "html": "<p>If <var>account</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-domain_hints\" id=\"ref-for-dom-identityprovideraccount-domain_hints\">domain_hints</a></code> is empty, remove\n<var>account</var> from <var>accountList</var>.</p>"
-                        }
-                      ]
-                    },
-                    {
-                      "html": "<p>Otherwise, remove <var>account</var> from <var>accountList</var> if <var>account</var>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-domain_hints\" id=\"ref-for-dom-identityprovideraccount-domain_hints①\">domain_hints</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑦\">contain</a> <var>provider</var>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderrequestoptions-domainhint\" id=\"ref-for-dom-identityproviderrequestoptions-domainhint③\">domainHint</a></code>.</p>"
-                    }
-                  ]
-                },
-                {
-                  "html": "<p>If <var>accountList</var> is now empty, set <var>providerMap</var>[<var>providerOrigin</var>] to \"mismatch\" and\ncontinue.</p>"
-                }
-              ]
-            },
-            {
-              "html": "If <var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-account_label\" id=\"ref-for-dom-identityproviderapiconfig-account_label\">account_label</a></code> is present:",
-              "rationale": "for",
-              "steps": [
-                {
-                  "html": "<p>For every <var>account</var> in <var>accountList</var>, remove <var>account</var> from <var>accountList</var> if <var>account</var>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-label_hints\" id=\"ref-for-dom-identityprovideraccount-label_hints\">label_hints</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑧\">contain</a>\n<var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-account_label\" id=\"ref-for-dom-identityproviderapiconfig-account_label①\">account_label</a></code>.</p>"
-                },
-                {
-                  "html": "<p>If <var>accountList</var> is now empty, set <var>providerMap</var>[<var>providerOrigin</var>] to \"mismatch\" and\ncontinue.</p>"
-                }
-              ]
-            },
-            {
-              "html": "<p>Set <var>providerMap</var>[<var>providerOrigin</var>] to <var>accountsList</var>.</p>"
+              "html": "<p>Otherwise, set <var>providerMap</var>[<var>providerOrigin</var>] to <var>accountsList</var>.</p>"
             }
           ]
         },
@@ -540,22 +519,28 @@
           ]
         },
         {
+          "html": "<p>Let <var>permission</var>, <var>permissionRequested</var>, and <var>isAutoSelected</var> be set to false.</p>"
+        },
+        {
           "html": "If <var>mediation</var> is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-credential-management/#dom-credentialmediationrequirement-required\" id=\"ref-for-dom-credentialmediationrequirement-required\">required</a></code>\", <var>requiresUserMediation</var>\nis false, <var>numRegisteredAccounts</var> is equal to 1, and <var>providerMap</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values\">values</a> do not\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">contain</a> \"mismatch\":",
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>selectedAccount</var> to <var>registeredAccount</var> and <var>permission</var> to true. When doing this, the user\nagent MAY show some UI to the user indicating that they are being\n<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"auto-reauthenticated\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">auto-reauthenticated</dfn>.</p>"
-            },
-            {
-              "html": "<p>Set <var>isAutoSelected</var> to true.</p>"
+              "html": "<p>Set <var>selectedAccount</var> to <var>registeredAccount</var>, and set <var>permission</var> and <var>isAutoSelected</var> to\ntrue. When doing this, the user agent MAY show some UI to the user indicating that they\nare being <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"auto-reauthenticated\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">auto-reauthenticated</dfn>. Go to the <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#create-identity-credential-wait-for-user-step\" id=\"ref-for-create-identity-credential-wait-for-user-step\">wait for user step</a>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Otherwise, if <var>mediation</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-credential-management/#dom-credentialmediationrequirement-silent\" id=\"ref-for-dom-credentialmediationrequirement-silent①\">silent</a></code>\" and <var>providerMap</var>’s\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values①\">values</a> do not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">contain</a> \"mismatch\", return (failure, true).</p>"
-        },
-        {
-          "html": "<p>Let <var>permission</var>, <var>permissionRequested</var>, and <var>isAutoSelected</var> be set to false.</p>"
+          "html": "Otherwise, if <var>mediation</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-credential-management/#dom-credentialmediationrequirement-silent\" id=\"ref-for-dom-credentialmediationrequirement-silent④\">silent</a></code>\":",
+          "rationale": "assert",
+          "steps": [
+            {
+              "html": "<p>Assert that <var>providerMap</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values①\">values</a> do not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">contain</a> \"mismatch\".</p>"
+            },
+            {
+              "html": "<p>Return (failure, false).</p>"
+            }
+          ]
         },
         {
           "html": "<p>Let <var>allAccounts</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
@@ -565,11 +550,11 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If the user triggers this affordance:",
+              "html": "Prompt the user whether to continue with this <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#idp\" id=\"ref-for-idp①⑤\">IDP</a>. If the user continues:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>result</var> be the result of running\n<a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#fetch-the-config-file-and-show-an-idp-login-dialog\" id=\"ref-for-fetch-the-config-file-and-show-an-idp-login-dialog①\">fetch the config file and show an IDP login dialog</a>\nwith the relevant <var>provider</var> and <var>globalObject</var>.</p>"
+                  "html": "<p>Let <var>result</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#show-an-idp-login-dialog\" id=\"ref-for-show-an-idp-login-dialog\">show an IDP login dialog</a> with the\nrelevant <var>config</var>, <var>provider</var>, and <var>globalObject</var>.</p>"
                 },
                 {
                   "html": "<p>If <var>result</var> is failure, return (failure, true).</p>"
@@ -587,12 +572,18 @@
                   "html": "<p>If <var>result</var> is failure, return (failure, true). The user\nagent MAY show a dialog to the user before or after\nreturning failure indicating this failure.</p>"
                 },
                 {
-                  "html": "<p>Otherwise, go back to the <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#fetch-accounts-step\" id=\"ref-for-fetch-accounts-step\">fetch accounts step</a> to get an updated\nvalue of <var>providerMap</var> for this <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#idp\" id=\"ref-for-idp①⑥\">IDP</a>.</p>"
+                  "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#create-identity-credential-fetch-accounts\" id=\"ref-for-create-identity-credential-fetch-accounts①\">fetch accounts</a> with the relevant <var>config</var>, <var>provider</var>, and\n<var>globalObject</var>, and let <var>accountsList</var> be the result.</p>"
+                },
+                {
+                  "html": "<p>If <var>accountsList</var> is empty, show the <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#confirm-idp-login-dialog\" id=\"ref-for-confirm-idp-login-dialog\">confirm IDP login dialog</a> again.</p>"
+                },
+                {
+                  "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend\">Extend</a> <var>allAccounts</var> with <var>accountsList</var> and\n<a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#create-identity-credential-show-accounts\" id=\"ref-for-create-identity-credential-show-accounts\">show accounts</a>.</p>"
                 }
               ]
             },
             {
-              "html": "<p>Otherwise, <var>value</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> of accounts. <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend\">Extend</a> <var>allAccounts</var> with <var>value</var>.</p>"
+              "html": "<p>Otherwise, <var>value</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> of accounts. <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend①\">Extend</a> <var>allAccounts</var> with <var>value</var>.</p>"
             },
             {
               "html": "If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialrequestoptions-mode\" id=\"ref-for-dom-identitycredentialrequestoptions-mode①\">mode</a></code> is <code>\"active\"</code> and the provider’s\n<var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-supports_use_other_account\" id=\"ref-for-dom-identityproviderapiconfig-supports_use_other_account\">supports_use_other_account</a></code> is true, add an\naffordance to trigger <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#show-an-idp-login-dialog\" id=\"ref-for-show-an-idp-login-dialog③\">show an IDP login dialog</a> to let the user sign in to another\naccount. If that affordance is triggered:",
@@ -602,24 +593,36 @@
                   "html": "<p>Let <var>result</var> be the result of that algorithm.</p>"
                 },
                 {
-                  "html": "<p>If <var>result</var> is failure, go to <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#create-identity-credential-show-accounts\" id=\"ref-for-create-identity-credential-show-accounts\">show accounts</a>.</p>"
+                  "html": "<p>If <var>result</var> is failure, <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#create-identity-credential-show-accounts\" id=\"ref-for-create-identity-credential-show-accounts①\">show accounts</a>.</p>"
                 },
                 {
-                  "html": "<p>Otherwise, go back to the <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#fetch-accounts-step\" id=\"ref-for-fetch-accounts-step①\">fetch accounts step</a> to get an updated\nvalue of <var>providerMap</var> for this <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#idp\" id=\"ref-for-idp①⑦\">IDP</a>.</p>"
+                  "html": "Otherwise:",
+                  "rationale": "fetch",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#create-identity-credential-fetch-accounts\" id=\"ref-for-create-identity-credential-fetch-accounts②\">Fetch accounts</a> given <var>config</var>, <var>provider</var>, and <var>globalObject</var>, and let\n<var>accountsList</var> be the result.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>accountsList</var> is empty, show the <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#confirm-idp-login-dialog\" id=\"ref-for-confirm-idp-login-dialog①\">confirm IDP login dialog</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend②\">extend</a> <var>allAccounts</var> with <var>accountsList</var> and\n<a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#create-identity-credential-show-accounts\" id=\"ref-for-create-identity-credential-show-accounts②\">show accounts</a>.</p>"
+                    }
+                  ]
                 }
               ]
             }
           ]
         },
         {
-          "html": "<p>Also include a UI affordance to close the dialog. If the user closes this dialog, return (failure,\ntrue).</p>"
+          "html": "<p>Also include a UI affordance to close the dialog. If the user closes this dialog, return\n(failure, true).</p>"
         },
         {
-          "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"create identity credential\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-identity-credential-show-accounts\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Show accounts</dfn> step: if <var>allAccounts</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①\">empty</a>, also add UI to present the account options to the user.\nIf the user selects an account, perform the following steps:",
+          "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"create identity credential\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-identity-credential-show-accounts\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Show accounts</dfn> step: if <var>allAccounts</var> is not\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①\">empty</a>, also add UI to present the account options to the user. If the user selects\nan account, perform the following steps:",
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>selectedAccount</var> to the chosen <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityprovideraccount\" id=\"ref-for-dictdef-identityprovideraccount⑤\">IdentityProviderAccount</a></code>.</p>"
+              "html": "<p>Set <var>selectedAccount</var> to the chosen <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityprovideraccount\" id=\"ref-for-dictdef-identityprovideraccount⑤\">IdentityProviderAccount</a></code> and <var>permission</var> to\ntrue.</p>"
             },
             {
               "html": "<p>Close the dialog.</p>"
@@ -627,7 +630,7 @@
           ]
         },
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent④\">user agent</a> created any dialogs requesting user choice or permission in the previous\nsteps, wait until they are closed.</p>"
+          "html": "<p><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"create identity credential\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-identity-credential-wait-for-user-step\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Wait for user step</dfn>: if the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent④\">user agent</a> created\nany dialogs requesting user choice or permission in the previous steps, wait until they are\nclosed.</p>"
         },
         {
           "html": "<p>If <var>permission</var> is false, then return (failure, true).</p>"
@@ -639,14 +642,115 @@
           "html": "<p>Let <var>credential</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#fetch-an-identity-assertion\" id=\"ref-for-fetch-an-identity-assertion\">fetch an identity assertion</a> algorithm with\n<var>selectedAccount</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-id\" id=\"ref-for-dom-identityprovideraccount-id②\">id</a></code>, <var>permissionRequested</var>, <var>isAutoSelected</var>,\n<var>provider</var>, <var>config</var>, and <var>globalObject</var>.</p>"
         },
         {
+          "html": "If <var>credential</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#identitycredentialerror\" id=\"ref-for-identitycredentialerror④\">IdentityCredentialError</a></code>:",
+          "rationale": "wait",
+          "steps": [
+            {
+              "html": "<p>The <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑤\">user agent</a> MUST show UI to the user indicating that the identity assertion fetch\nhas failed.</p>"
+            },
+            {
+              "html": "<p>The <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑥\">user agent</a> SHOULD use the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerror-error\" id=\"ref-for-dom-identitycredentialerror-error⑥\">error</a></code> in its UI to provide\na more specific error message to the user. For instance, if the value is one of\n\"invalid_request\", \"unauthorized_client\", \"access_denied\", \"server_error\", and\n\"temporarily_unavailable\", the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑦\">user agent</a> may note the reason in a user-friendly\nmanner. See <a href=\"https://datatracker.ietf.org/doc/html/rfc6749#section-4.1.2.1\">here</a> for\nmore details about these.</p>"
+            },
+            {
+              "html": "<p>The <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑧\">user agent</a> MAY use the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerror-url\" id=\"ref-for-dom-identitycredentialerror-url⑥\">url</a></code> to display a hyperlink\nin its UI so the user can click on it to learn more information about the error message.</p>"
+            },
+            {
+              "html": "<p>Wait until the UI is acknowledged or dismissed by the user.</p>"
+            }
+          ]
+        },
+        {
           "html": "<p>Return <var>credential</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "fetch accounts",
+      "href": "https://w3c-fedid.github.io/FedCM/#create-identity-credential-fetch-accounts",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"create identity credential\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-identity-credential-fetch-accounts\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch accounts</dfn> given an\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderapiconfig\" id=\"ref-for-dictdef-identityproviderapiconfig\">IdentityProviderAPIConfig</a></code> <var>config</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderrequestoptions\" id=\"ref-for-dictdef-identityproviderrequestoptions②\">IdentityProviderRequestOptions</a></code> <var>provider</var>, and a\n<var>globalObject</var>, run the following steps. This returns a possibly empty list of accounts.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>accountsList</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#fetch-the-accounts\" id=\"ref-for-fetch-the-accounts\">fetch the accounts</a> with <var>config</var>, <var>provider</var>, and\n  <var>globalObject</var>.</p>"
+        },
+        {
+          "html": "If <var>accountsList</var> is failure, or the size of <var>accountsList</var> is 0:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#set-the-login-status\" id=\"ref-for-set-the-login-status\">Set the login status</a> of <var>providerOrigin</var> to <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#logged-out\" id=\"ref-for-logged-out②\">logged-out</a>.\n  A user agent may decide to skip this step if no credentials were\n  sent to server.</p>"
+            },
+            {
+              "html": "<p>Return an empty list.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>accountsList</var> is not failure and the size of <var>accountsList</var> is not 0.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#set-the-login-status\" id=\"ref-for-set-the-login-status①\">Set the login status</a> for <var>providerOrigin</var> to <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#logged-in\" id=\"ref-for-logged-in②\">logged-in</a>.</p>"
+        },
+        {
+          "html": "For each <var>acc</var> in <var>accountsList</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>acc</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-picture\" id=\"ref-for-dom-identityprovideraccount-picture\">picture</a></code>\"] is present, <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#fetch-the-account-picture\" id=\"ref-for-fetch-the-account-picture\">fetch the account picture</a>\n  with <var>acc</var> and <var>globalObject</var>. If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent①⓪\">user agent</a> displays this picture to\n  the user at any point, it MUST reuse the result of this fetch instead of redownloading\n  the picture.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>provider</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderrequestoptions-loginhint\" id=\"ref-for-dom-identityproviderrequestoptions-loginhint①\">loginHint</a></code> is not empty:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<p>For every <var>account</var> in <var>accountList</var>, if <var>account</var>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-login_hints\" id=\"ref-for-dom-identityprovideraccount-login_hints\">login_hints</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑦\">contain</a> <var>provider</var>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderrequestoptions-loginhint\" id=\"ref-for-dom-identityproviderrequestoptions-loginhint②\">loginHint</a></code>, remove <var>account</var> from <var>accountList</var> .</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>provider</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderrequestoptions-domainhint\" id=\"ref-for-dom-identityproviderrequestoptions-domainhint①\">domainHint</a></code> is not empty:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "For every <var>account</var> in <var>accountList</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderrequestoptions-domainhint\" id=\"ref-for-dom-identityproviderrequestoptions-domainhint②\">domainHint</a></code> is \"any\":",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>account</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-domain_hints\" id=\"ref-for-dom-identityprovideraccount-domain_hints\">domain_hints</a></code> is empty, remove\n  <var>account</var> from <var>accountList</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Otherwise, if <var>account</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-domain_hints\" id=\"ref-for-dom-identityprovideraccount-domain_hints①\">domain_hints</a></code> does not\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑧\">contain</a> <var>provider</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderrequestoptions-domainhint\" id=\"ref-for-dom-identityproviderrequestoptions-domainhint③\">domainHint</a></code>, remove\n  <var>account</var> from <var>accountList</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "If <var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-account_label\" id=\"ref-for-dom-identityproviderapiconfig-account_label\">account_label</a></code> is present:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<p>For every <var>account</var> in <var>accountList</var>, if <var>account</var>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-label_hints\" id=\"ref-for-dom-identityprovideraccount-label_hints\">label_hints</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑨\">contain</a>\n  <var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-account_label\" id=\"ref-for-dom-identityproviderapiconfig-account_label①\">account_label</a></code>, remove <var>account</var> from <var>accountList</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>accountsList</var>.</p>"
         }
       ]
     },
     {
       "name": "fetch the config file",
       "href": "https://w3c-fedid.github.io/FedCM/#fetch-the-config-file",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-the-config-file\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch the config file</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderrequestoptions\" id=\"ref-for-dictdef-identityproviderrequestoptions②\">IdentityProviderRequestOptions</a></code> <var>provider</var> and\n<var>globalObject</var>, run the following steps. This returns an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderapiconfig\" id=\"ref-for-dictdef-identityproviderapiconfig\">IdentityProviderAPIConfig</a></code>\nor failure.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-the-config-file\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch the config file</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderrequestoptions\" id=\"ref-for-dictdef-identityproviderrequestoptions③\">IdentityProviderRequestOptions</a></code> <var>provider</var> and\n<var>globalObject</var>, run the following steps. This returns an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderapiconfig\" id=\"ref-for-dictdef-identityproviderapiconfig①\">IdentityProviderAPIConfig</a></code>\nor failure.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -720,7 +824,7 @@
               "html": "<p>Let <var>json</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#extract-the-json-fetch-response\" id=\"ref-for-extract-the-json-fetch-response②\">extract the JSON fetch response</a> from <var>response</var> and\n<var>responseBody</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value②\">Convert</a> <var>json</var> to an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderapiconfig\" id=\"ref-for-dictdef-identityproviderapiconfig①\">IdentityProviderAPIConfig</a></code> stored\nin <var>config</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value②\">Convert</a> <var>json</var> to an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderapiconfig\" id=\"ref-for-dictdef-identityproviderapiconfig②\">IdentityProviderAPIConfig</a></code> stored\nin <var>config</var>.</p>"
             },
             {
               "html": "<p>If one of the previous two steps threw an exception, set <var>config</var> to failure.</p>"
@@ -756,7 +860,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>well_known_accounts_url</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#computing-the-manifest-url\" id=\"ref-for-computing-the-manifest-url③\">computing the manifest URL</a> with\n<var>provider</var>, <var>wellKnown</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-accounts_endpoint\" id=\"ref-for-dom-identityproviderwellknown-accounts_endpoint①\">accounts_endpoint</a></code>,\nand <var>globalObject</var>.</p>"
+              "html": "<p>Let <var>well_known_accounts_url</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#computing-the-manifest-url\" id=\"ref-for-computing-the-manifest-url③\">computing the manifest URL</a> with\n<var>provider</var>, <var>wellKnown</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-accounts_endpoint\" id=\"ref-for-dom-identityproviderwellknown-accounts_endpoint①\">accounts_endpoint</a></code>, and\n<var>globalObject</var>.</p>"
             },
             {
               "html": "<p>Let <var>well_known_login_url</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#computing-the-manifest-url\" id=\"ref-for-computing-the-manifest-url④\">computing the manifest URL</a> with <var>provider</var>,\n<var>wellKnown</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-login_url\" id=\"ref-for-dom-identityproviderwellknown-login_url①\">login_url</a></code>, and <var>globalObject</var>.</p>"
@@ -789,7 +893,7 @@
     {
       "name": "fetch the accounts",
       "href": "https://w3c-fedid.github.io/FedCM/#fetch-the-accounts",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-the-accounts\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch the accounts</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderapiconfig\" id=\"ref-for-dictdef-identityproviderapiconfig②\">IdentityProviderAPIConfig</a></code> <var>config</var>, an\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderrequestoptions\" id=\"ref-for-dictdef-identityproviderrequestoptions③\">IdentityProviderRequestOptions</a></code> <var>provider</var>, and <var>globalObject</var>, run the following steps. This\nreturns an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityprovideraccountlist\" id=\"ref-for-dictdef-identityprovideraccountlist\">IdentityProviderAccountList</a></code>.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-the-accounts\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch the accounts</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderapiconfig\" id=\"ref-for-dictdef-identityproviderapiconfig③\">IdentityProviderAPIConfig</a></code> <var>config</var>, an\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderrequestoptions\" id=\"ref-for-dictdef-identityproviderrequestoptions④\">IdentityProviderRequestOptions</a></code> <var>provider</var>, and <var>globalObject</var>, run the following steps. This\nreturns an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityprovideraccountlist\" id=\"ref-for-dictdef-identityprovideraccountlist\">IdentityProviderAccountList</a></code>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -859,17 +963,26 @@
     {
       "name": "fetch an identity assertion",
       "href": "https://w3c-fedid.github.io/FedCM/#fetch-an-identity-assertion",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-an-identity-assertion\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch an identity assertion</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString③⓪\">USVString</a></code>\n    <var>accountId</var>, a boolean <var>permissionRequested</var>, a boolean <var>isAutoSelected</var>, an\n    <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderrequestoptions\" id=\"ref-for-dictdef-identityproviderrequestoptions④\">IdentityProviderRequestOptions</a></code> <var>provider</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderapiconfig\" id=\"ref-for-dictdef-identityproviderapiconfig③\">IdentityProviderAPIConfig</a></code> <var>config</var>,\n    and <var>globalObject</var>, run the following steps. This returns an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#identitycredential\" id=\"ref-for-identitycredential①⓪\">IdentityCredential</a></code> or failure.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-an-identity-assertion\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch an identity assertion</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString③⓪\">USVString</a></code>\n    <var>accountId</var>, a boolean <var>permissionRequested</var>, a boolean <var>isAutoSelected</var>, an\n    <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderrequestoptions\" id=\"ref-for-dictdef-identityproviderrequestoptions⑤\">IdentityProviderRequestOptions</a></code> <var>provider</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderapiconfig\" id=\"ref-for-dictdef-identityproviderapiconfig④\">IdentityProviderAPIConfig</a></code> <var>config</var>,\n    and <var>globalObject</var>, run the following steps. This returns an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#identitycredential\" id=\"ref-for-identitycredential①①\">IdentityCredential</a></code> or an\n    <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#identitycredentialerror\" id=\"ref-for-identitycredentialerror⑤\">IdentityCredentialError</a></code>.",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>tokenUrl</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#computing-the-manifest-url\" id=\"ref-for-computing-the-manifest-url⑦\">computing the manifest URL</a> given <var>provider</var>,\n<var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-id_assertion_endpoint\" id=\"ref-for-dom-identityproviderapiconfig-id_assertion_endpoint①\">id_assertion_endpoint</a></code>\"], and <var>globalObject</var>.</p>"
         },
         {
-          "html": "<p>If <var>tokenUrl</var> is failure, return failure.</p>"
+          "html": "If <var>tokenUrl</var> is failure:",
+          "rationale": "queue",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task②\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source②\">DOM manipulation task source</a> given <var>globalObject</var> to\nlet <var>error</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#create-an-identitycredentialerror\" id=\"ref-for-create-an-identitycredentialerror\">create an IdentityCredentialError</a> given {} and\n<var>globalObject</var>.</p>"
+            },
+            {
+              "html": "<p>Wait for <var>error</var> to be set, and return it.</p>"
+            }
+          ]
         },
         {
-          "html": "<p><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch identity assertion\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-identity-assertion-create-a-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Create a list</dfn>: let <var>list</var> be a list with the following entries:</p>",
+          "html": "<p><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch identity assertion\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-identity-assertion-create-a-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Create a list</dfn>: let <var>list</var> be a list with the\nfollowing entries:</p>",
           "ignored": [
             "(\"client_id\", provider’s clientId) (\"nonce\", provider’s nonce) (\"account_id\", accountId) (\"is_auto_selected\", isAutoSelected)"
           ]
@@ -900,8 +1013,11 @@
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#fetch-request\" id=\"ref-for-fetch-request⑤\">Fetch request</a> with <var>request</var> and <var>globalObject</var>, and with <var>processResponseConsumeBody</var>\nset to the following steps given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④\">response</a> <var>response</var> and <var>responseBody</var>:",
-          "rationale": "let",
+          "rationale": "if",
           "steps": [
+            {
+              "html": "<p>If <var>responseBody</var> is null or failure, set <var>credential</var> to the result of\n<a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#create-an-identitycredentialerror\" id=\"ref-for-create-an-identitycredentialerror①\">create an IdentityCredentialError</a> with {} and <var>globalObject</var>, and return.</p>"
+            },
             {
               "html": "<p>Let <var>json</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#extract-the-json-fetch-response\" id=\"ref-for-extract-the-json-fetch-response④\">extract the JSON fetch response</a> from <var>response</var> and\n<var>responseBody</var>.</p>"
             },
@@ -909,20 +1025,56 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value④\">Convert</a> <var>json</var> to an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityassertionresponse\" id=\"ref-for-dictdef-identityassertionresponse\">IdentityAssertionResponse</a></code>, <var>token</var>.</p>"
             },
             {
-              "html": "<p>If one of the previous two steps threw an exception, set <var>credential</var> to failure\nand return.</p>"
+              "html": "<p>If one of the previous two steps threw an exception, set <var>credential</var> to the result of\n<a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#create-an-identitycredentialerror\" id=\"ref-for-create-an-identitycredentialerror②\">create an IdentityCredentialError</a> with {} and <var>globalObject</var>, and return.</p>"
             },
             {
-              "html": "<p>If neither <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityassertionresponse-token\" id=\"ref-for-dom-identityassertionresponse-token②\">token</a></code> nor\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityassertionresponse-continue_on\" id=\"ref-for-dom-identityassertionresponse-continue_on\">continue_on</a></code> was specified, set <var>credential</var> to failure\nand return.</p>"
+              "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityassertionresponse-error\" id=\"ref-for-dom-identityassertionresponse-error\">error</a></code> was specified, let <var>errorInit</var> be the value and:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>errorInit</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerrorinit-url\" id=\"ref-for-dom-identitycredentialerrorinit-url\">url</a></code> is present:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>errorUrl</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#parse-url\" id=\"ref-for-parse-url⑤\">parse url</a> given\n<var>errorInit</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerrorinit-url\" id=\"ref-for-dom-identitycredentialerrorinit-url①\">url</a></code> (the relative URL),\n<var>globalObject</var>, and <var>tokenUrl</var> (the base URL).</p>"
+                    },
+                    {
+                      "html": "<p>If <var>errorUrl</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host③\">host</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-registrable-domain\" id=\"ref-for-host-registrable-domain②\">registrable domain</a>\nis not equal to <var>tokenUrl</var>’s, set <var>errorUrl</var> to failure.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>errorUrl</var> is not a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url①\">potentially trustworthy URL</a>, set set <var>errorUrl</var> to\nfailure.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>errorUrl</var> is failure, set <var>errorInit</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerrorinit-url\" id=\"ref-for-dom-identitycredentialerrorinit-url②\">url</a></code>\nto \"\". Otherwise, set <var>errorInit</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerrorinit-url\" id=\"ref-for-dom-identitycredentialerrorinit-url③\">url</a></code> to\n<var>errorUrl</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Set <var>credential</var> to the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#create-an-identitycredentialerror\" id=\"ref-for-create-an-identitycredentialerror③\">create an IdentityCredentialError</a> with\n<var>errorInit</var>, and <var>globalObject</var>.</p>"
+                }
+              ]
             },
             {
-              "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityassertionresponse-token\" id=\"ref-for-dom-identityassertionresponse-token③\">token</a></code> was specified, let <var>tokenString</var>\nbe <var>token</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityassertionresponse-token\" id=\"ref-for-dom-identityassertionresponse-token④\">token</a></code>.</p>"
+              "html": "Otherwise, if <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status\">status</a> is not an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#ok-status\" id=\"ref-for-ok-status\">ok status</a>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>credential</var> to the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#create-an-identitycredentialerror\" id=\"ref-for-create-an-identitycredentialerror④\">create an IdentityCredentialError</a> with {} and\n<var>globalObject</var>.</p>"
+                },
+                {
+                  "html": "<p>The user agent MAY set <var>credential</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerror-error\" id=\"ref-for-dom-identitycredentialerror-error⑦\">error</a></code> based on\n<var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status①\">status</a>. For example, if the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status②\">status</a> is 500, it\ncould set it to \"server_error\", and if the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status③\">status</a> is 503, it could set\nit to \"temporarily_unavailable\".</p>"
+                }
+              ]
             },
             {
-              "html": "Otherwise, run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>:",
+              "html": "<p>Otherwise, if <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityassertionresponse-token\" id=\"ref-for-dom-identityassertionresponse-token②\">token</a></code> was specified, let <var>tokenString</var>\nbe <var>token</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityassertionresponse-token\" id=\"ref-for-dom-identityassertionresponse-token③\">token</a></code>.</p>"
+            },
+            {
+              "html": "Otherwise, if <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityassertionresponse-continue_on\" id=\"ref-for-dom-identityassertionresponse-continue_on\">continue_on</a></code> was specified, run these steps\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>continueOnUrl</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#parse-url\" id=\"ref-for-parse-url⑤\">parse url</a> with <var>token</var>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityassertionresponse-continue_on\" id=\"ref-for-dom-identityassertionresponse-continue_on①\">continue_on</a></code> and <var>globalObject</var>.</p>"
+                  "html": "<p>Let <var>continueOnUrl</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#parse-url\" id=\"ref-for-parse-url⑥\">parse url</a> with <var>token</var>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityassertionresponse-continue_on\" id=\"ref-for-dom-identityassertionresponse-continue_on①\">continue_on</a></code> and <var>globalObject</var>.</p>"
                 },
                 {
                   "html": "<p>If <var>continueOnUrl</var> is failure, set <var>credential</var> to failure and return.</p>"
@@ -945,6 +1097,9 @@
               ]
             },
             {
+              "html": "<p>Otherwise, set <var>credential</var> to a the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#create-an-identitycredentialerror\" id=\"ref-for-create-an-identitycredentialerror⑤\">create an IdentityCredentialError</a> with\n{} and <var>globalObject</var>,</p>"
+            },
+            {
               "html": "<p>Wait for <var>tokenString</var> or <var>credential</var> to be set.</p>"
             },
             {
@@ -963,7 +1118,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#create-a-connection-between-the-rp-and-the-idp-account\" id=\"ref-for-create-a-connection-between-the-rp-and-the-idp-account①\">Create a connection between the RP and the IdP account</a> with <var>provider</var>, <var>accountId</var>, and\n<var>globalObject</var>.</p>"
             },
             {
-              "html": "<p>Let <var>credential</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#identitycredential\" id=\"ref-for-identitycredential①①\">IdentityCredential</a></code> given <var>globalObject</var>’s\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm\" id=\"ref-for-concept-global-object-realm\">realm</a>.</p>"
+              "html": "<p>Let <var>credential</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#identitycredential\" id=\"ref-for-identitycredential①②\">IdentityCredential</a></code> given <var>globalObject</var>’s\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm\" id=\"ref-for-concept-global-object-realm\">realm</a>.</p>"
             },
             {
               "html": "<p>Set <var>credential</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identitycredential-token\" id=\"ref-for-dom-identitycredential-token②\">token</a></code> to <var>tokenString</var>.</p>"
@@ -994,7 +1149,7 @@
           "html": "<p>Let <var>configUrl</var> be null.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task②\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source②\">DOM manipulation task source</a> given <var>globalObject</var> to set\n<var>configUrl</var> to the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">url parser</a> with <var>stringUrl</var> and <var>baseUrl</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task③\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source③\">DOM manipulation task source</a> given <var>globalObject</var> to set\n<var>configUrl</var> to the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">url parser</a> with <var>stringUrl</var> and <var>baseUrl</var>.</p>"
         },
         {
           "html": "<p>Wait for <var>configUrl</var> to be set.</p>"
@@ -1011,7 +1166,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task③\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\" id=\"ref-for-networking-task-source\">network task source</a> given <var>globalObject</var> to:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task④\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\" id=\"ref-for-networking-task-source\">network task source</a> given <var>globalObject</var> to:",
           "rationale": "fetch",
           "steps": [
             {
@@ -1024,14 +1179,14 @@
     {
       "name": "computing the manifest URL",
       "href": "https://w3c-fedid.github.io/FedCM/#computing-the-manifest-url",
-      "html": "When <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"computing-the-manifest-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">computing the manifest URL</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderrequestoptions\" id=\"ref-for-dictdef-identityproviderrequestoptions⑦\">IdentityProviderRequestOptions</a></code> <var>provider</var>, a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a> <var>manifestString</var>, and <var>globalObject</var>, perform the following steps. This returns a\n<a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> or failure.",
+      "html": "When <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"computing-the-manifest-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">computing the manifest URL</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderconfig\" id=\"ref-for-dictdef-identityproviderconfig⑧\">IdentityProviderConfig</a></code> <var>provider</var>, a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a> <var>manifestString</var>, and <var>globalObject</var>, perform the following steps. This returns a\n<a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> or failure.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>configUrl</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#parse-url\" id=\"ref-for-parse-url⑥\">parse url</a> with <var>provider</var>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderconfig-configurl\" id=\"ref-for-dom-identityproviderconfig-configurl⑦\">configURL</a></code> and <var>globalObject</var>.</p>"
+          "html": "<p>Let <var>configUrl</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#parse-url\" id=\"ref-for-parse-url⑦\">parse url</a> with <var>provider</var>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderconfig-configurl\" id=\"ref-for-dom-identityproviderconfig-configurl⑦\">configURL</a></code> and <var>globalObject</var>.</p>"
         },
         {
-          "html": "<p>Let <var>manifestUrl</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#parse-url\" id=\"ref-for-parse-url⑦\">parse url</a> given <var>manifestString</var> (the relative\nURL), <var>globalObject</var>, and <var>configUrl</var> (the base URL).</p>"
+          "html": "<p>Let <var>manifestUrl</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#parse-url\" id=\"ref-for-parse-url⑧\">parse url</a> given <var>manifestString</var> (the relative\nURL), <var>globalObject</var>, and <var>configUrl</var> (the base URL).</p>"
         },
         {
           "html": "<p>Wait until <var>manifestUrl</var> is set.</p>"
@@ -1043,7 +1198,7 @@
           "html": "<p>If <var>manifestUrl</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin②\">same origin</a> with <var>configUrl</var>, return failure.</p>"
         },
         {
-          "html": "<p>If <var>manifestUrl</var> is not a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url①\">potentially trustworthy URL</a>, return failure.</p>"
+          "html": "<p>If <var>manifestUrl</var> is not a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url②\">potentially trustworthy URL</a>, return failure.</p>"
         },
         {
           "html": "<p>Return <var>manifestUrl</var>.</p>"
@@ -1060,19 +1215,19 @@
           "html": "<p class=\"assertion\">Assert: These steps are running on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\" id=\"ref-for-networking-task-source①\">networking task source</a>.</p>"
         },
         {
-          "html": "<p>If <var>response</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error\">network error</a> or its <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status\">status</a> is not an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#ok-status\" id=\"ref-for-ok-status\">ok status</a>,\nthrow a new \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror①①\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①③\">DOMException</a></code>.</p>"
+          "html": "<p>If <var>response</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error\">network error</a> or its <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status④\">status</a> is not an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#ok-status\" id=\"ref-for-ok-status①\">ok status</a>,\nthrow a new \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror①①\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑥\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>mimeType</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-extract-mime-type\" id=\"ref-for-concept-header-extract-mime-type\">extracting a MIME TYPE</a> from <var>response</var>’s\n<a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
         },
         {
-          "html": "<p>If <var>mimeType</var> is failure or is not a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#json-mime-type\" id=\"ref-for-json-mime-type\">JSON MIME Type</a>, throw a new \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror①②\">NetworkError</a></code>\"\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①④\">DOMException</a></code>.</p>"
+          "html": "<p>If <var>mimeType</var> is failure or is not a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#json-mime-type\" id=\"ref-for-json-mime-type\">JSON MIME Type</a>, throw a new \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror①②\">NetworkError</a></code>\"\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑦\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>json</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#parse-json-bytes-to-a-javascript-value\" id=\"ref-for-parse-json-bytes-to-a-javascript-value\">parse JSON bytes to a JavaScript value</a> passing <var>responseBody</var>.</p>"
         },
         {
-          "html": "<p>If <var>json</var> is a parsing exception, throw a new \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror①③\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑤\">DOMException</a></code>.</p>"
+          "html": "<p>If <var>json</var> is a parsing exception, throw a new \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror①③\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑧\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>Return <var>json</var>.</p>"
@@ -1082,7 +1237,7 @@
     {
       "name": "show an IDP login dialog",
       "href": "https://w3c-fedid.github.io/FedCM/#show-an-idp-login-dialog",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"show-an-idp-login-dialog\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">show an IDP login dialog</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderapiconfig\" id=\"ref-for-dictdef-identityproviderapiconfig⑥\">IdentityProviderAPIConfig</a></code> <var>config</var>, an\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderconfig\" id=\"ref-for-dictdef-identityproviderconfig⑧\">IdentityProviderConfig</a></code> <var>provider</var>, and a <var>globalObject</var>, run the following steps. This returns\nsuccess or failure.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"show-an-idp-login-dialog\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">show an IDP login dialog</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderapiconfig\" id=\"ref-for-dictdef-identityproviderapiconfig⑦\">IdentityProviderAPIConfig</a></code> <var>config</var>, an\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderconfig\" id=\"ref-for-dictdef-identityproviderconfig⑨\">IdentityProviderConfig</a></code> <var>provider</var>, and a <var>globalObject</var>, run the following steps. This returns\nsuccess or failure.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1092,13 +1247,13 @@
           "html": "<p>Let <var>loginUrl</var> be null.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task④\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source③\">DOM manipulation task source</a> given <var>globalObject</var> to set\n<var>loginUrl</var> to the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser②\">url parser</a> with\n<var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-login_url\" id=\"ref-for-dom-identityproviderapiconfig-login_url②\">login_url</a></code>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑤\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source④\">DOM manipulation task source</a> given <var>globalObject</var> to set\n<var>loginUrl</var> to the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser②\">url parser</a> with\n<var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-login_url\" id=\"ref-for-dom-identityproviderapiconfig-login_url②\">login_url</a></code>.</p>"
         },
         {
           "html": "<p>Wait until <var>loginUrl</var> is not null.</p>"
         },
         {
-          "html": "<p class=\"assertion\">Assert: <var>loginUrl</var> is not failure (the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑤\">user agent</a> has previously checked that\n<var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-login_url\" id=\"ref-for-dom-identityproviderapiconfig-login_url③\">login_url</a></code> is a valid URL).</p>"
+          "html": "<p class=\"assertion\">Assert: <var>loginUrl</var> is not failure (the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent①①\">user agent</a> has previously checked that\n<var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-login_url\" id=\"ref-for-dom-identityproviderapiconfig-login_url③\">login_url</a></code> is a valid URL).</p>"
         },
         {
           "html": "<p>Let <var>queryList</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a>.</p>"
@@ -1141,7 +1296,7 @@
               "html": "<p>Let <var>loginStatus</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#get-the-login-status\" id=\"ref-for-get-the-login-status①\">get the login status</a>\nwith the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin④\">origin</a> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-login_url\" id=\"ref-for-dom-identityproviderapiconfig-login_url④\">login_url</a></code>.</p>"
             },
             {
-              "html": "<p>If <var>loginStatus</var> is <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#logged-in\" id=\"ref-for-logged-in②\">logged-in</a>, return success.</p>"
+              "html": "<p>If <var>loginStatus</var> is <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/login-status#logged-in\" id=\"ref-for-logged-in③\">logged-in</a>, return success.</p>"
             },
             {
               "html": "<p>Otherwise, return failure.</p>"
@@ -1205,7 +1360,7 @@
     {
       "name": "fetch the config file and show an IDP login dialog",
       "href": "https://w3c-fedid.github.io/FedCM/#fetch-the-config-file-and-show-an-idp-login-dialog",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-the-config-file-and-show-an-idp-login-dialog\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch the config file and show an IDP login dialog</dfn> given an\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderconfig\" id=\"ref-for-dictdef-identityproviderconfig⑨\">IdentityProviderConfig</a></code> <var>provider</var>, and a <var>globalObject</var>, run the following\nsteps. This returns success or failure.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-the-config-file-and-show-an-idp-login-dialog\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch the config file and show an IDP login dialog</dfn> given an\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderconfig\" id=\"ref-for-dictdef-identityproviderconfig①⓪\">IdentityProviderConfig</a></code> <var>provider</var>, and a <var>globalObject</var>, run the following\nsteps. This returns success or failure.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1230,11 +1385,11 @@
     },
     {
       "name": "getUserInfo",
-      "html": "When invoking the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityprovider-getuserinfo\" id=\"ref-for-dom-identityprovider-getuserinfo②\">getUserInfo()</a></code> method given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderconfig\" id=\"ref-for-dictdef-identityproviderconfig①①\">IdentityProviderConfig</a></code>\n<var>provider</var>, perform the following steps:",
+      "html": "When invoking the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityprovider-getuserinfo\" id=\"ref-for-dom-identityprovider-getuserinfo②\">getUserInfo()</a></code> method given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderconfig\" id=\"ref-for-dictdef-identityproviderconfig①②\">IdentityProviderConfig</a></code>\n<var>provider</var>, perform the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>promise</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise⑥\">Promise</a></code> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object①\">current global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>.</p>"
+          "html": "<p>Let <var>promise</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise⑥\">Promise</a></code> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object①\">current global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant realm</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①①\">In parallel</a>, run the <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#in-parallel-steps-for-getuserinfo\" id=\"ref-for-in-parallel-steps-for-getuserinfo\">in parallel steps for getUserInfo</a> with <var>promise</var> and <var>provider</var>.</p>"
@@ -1247,7 +1402,7 @@
     {
       "name": "in parallel steps for getUserInfo",
       "href": "https://w3c-fedid.github.io/FedCM/#in-parallel-steps-for-getuserinfo",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"in-parallel-steps-for-getuserinfo\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">in parallel steps for getUserInfo</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise⑦\">Promise</a></code> <var>promise</var> and an\n    <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderconfig\" id=\"ref-for-dictdef-identityproviderconfig①②\">IdentityProviderConfig</a></code> <var>provider</var> are:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"in-parallel-steps-for-getuserinfo\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">in parallel steps for getUserInfo</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise⑦\">Promise</a></code> <var>promise</var> and an\n    <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderconfig\" id=\"ref-for-dictdef-identityproviderconfig①③\">IdentityProviderConfig</a></code> <var>provider</var> are:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1257,10 +1412,10 @@
           "html": "<p>If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use①\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#identity-credentials-get\" id=\"ref-for-identity-credentials-get①\">identity-credentials-get</a>\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①\">policy-controlled feature</a>, <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#queue-to-reject\" id=\"ref-for-queue-to-reject\">queue to reject</a> <var>promise</var> with \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror②\">NotAllowedError</a></code>\"\nand return.</p>"
         },
         {
-          "html": "<p>If there does not exist an account <var>account</var> such that <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#connected-accounts-set\" id=\"ref-for-connected-accounts-set①①\">connected accounts set</a>\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①⓪\">contains</a> the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#compute-the-connected-account-key\" id=\"ref-for-compute-the-connected-account-key③\">compute the connected account key</a> given <var>account</var>,\n<var>provider</var>, and <var>globalObject</var>, then <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#queue-to-reject\" id=\"ref-for-queue-to-reject①\">queue to reject</a> <var>promise</var> with \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror①④\">NetworkError</a></code>\"\nand return. This check can be performed by iterating over the <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#connected-accounts-set\" id=\"ref-for-connected-accounts-set①②\">connected accounts set</a> or\nby keeping a separate data structure to make this lookup fast.</p>"
+          "html": "<p>If there does not exist an account <var>account</var> such that <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#connected-accounts-set\" id=\"ref-for-connected-accounts-set①③\">connected accounts set</a>\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①①\">contains</a> the result of <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#compute-the-connected-account-key\" id=\"ref-for-compute-the-connected-account-key④\">compute the connected account key</a> given <var>account</var>,\n<var>provider</var>, and <var>globalObject</var>, then <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#queue-to-reject\" id=\"ref-for-queue-to-reject①\">queue to reject</a> <var>promise</var> with \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror①④\">NetworkError</a></code>\"\nand return. This check can be performed by iterating over the <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#connected-accounts-set\" id=\"ref-for-connected-accounts-set①④\">connected accounts set</a> or\nby keeping a separate data structure to make this lookup fast.</p>"
         },
         {
-          "html": "<p>Let <var>configUrl</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#parse-url\" id=\"ref-for-parse-url⑧\">parse url</a> with <var>provider</var>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderconfig-configurl\" id=\"ref-for-dom-identityproviderconfig-configurl⑨\">configURL</a></code> and <var>globalObject</var>.</p>"
+          "html": "<p>Let <var>configUrl</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#parse-url\" id=\"ref-for-parse-url⑨\">parse url</a> with <var>provider</var>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderconfig-configurl\" id=\"ref-for-dom-identityproviderconfig-configurl⑨\">configURL</a></code> and <var>globalObject</var>.</p>"
         },
         {
           "html": "<p>If <var>configUrl</var> is failure, <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#queue-to-reject\" id=\"ref-for-queue-to-reject②\">queue to reject</a> <var>promise</var> with \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\"\nand return.</p>"
@@ -1294,7 +1449,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>account</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-approved_clients\" id=\"ref-for-dom-identityprovideraccount-approved_clients⑦\">approved_clients</a></code>\"] is not empty and it does not\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①①\">contain</a> <var>provider</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderconfig-clientid\" id=\"ref-for-dom-identityproviderconfig-clientid⑦\">clientId</a></code>, continue.</p>"
+              "html": "<p>If <var>account</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityprovideraccount-approved_clients\" id=\"ref-for-dom-identityprovideraccount-approved_clients⑦\">approved_clients</a></code>\"] is not empty and it does not\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①②\">contain</a> <var>provider</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c-fedid.github.io/FedCM/#dom-identityproviderconfig-clientid\" id=\"ref-for-dom-identityproviderconfig-clientid⑦\">clientId</a></code>, continue.</p>"
             },
             {
               "html": "<p>If <var>account</var> is <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#eligible-for-auto-reauthentication\" id=\"ref-for-eligible-for-auto-reauthentication①\">eligible for auto reauthentication</a> given <var>provider</var> and\n<var>globalObject</var>, set <var>hasAccountEligibleForAutoReauthentication</var> to true.</p>"
@@ -1317,7 +1472,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑤\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source④\">DOM manipulation task source</a> given <var>globalObject</var> to\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>promise</var> with <var>userInfoList</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑥\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source⑤\">DOM manipulation task source</a> given <var>globalObject</var> to\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>promise</var> with <var>userInfoList</var>.</p>"
         }
       ]
     },
@@ -1334,7 +1489,7 @@
           "html": "<p>Let <var>globalObject</var> be <var>promise</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑥\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source⑤\">DOM manipulation task source</a> given <var>globalObject</var> to\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑨\">reject</a> <var>promise</var> with a new <var>exceptionName</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑦\">DOMException</a></code>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑦\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source⑥\">DOM manipulation task source</a> given <var>globalObject</var> to\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑨\">reject</a> <var>promise</var> with a new <var>exceptionName</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⓪\">DOMException</a></code>.</p>"
         }
       ]
     },
@@ -1415,10 +1570,10 @@
           "html": "<p>If <var>dialogButton</var> is not a string that is \"<code>ConfirmIdpLoginContinue</code>\", return\na <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error⑥\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument④\">invalid argument</a>.</p>"
         },
         {
-          "html": "<p>If no FedCM dialog is currently open or the dialog is not a <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#confirm-idp-login-dialog\" id=\"ref-for-confirm-idp-login-dialog\">confirm IDP login dialog</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error⑦\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑦\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-no-such-alert\" id=\"ref-for-dfn-no-such-alert②\">no such alert</a>.</p>"
+          "html": "<p>If no FedCM dialog is currently open or the dialog is not a <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#confirm-idp-login-dialog\" id=\"ref-for-confirm-idp-login-dialog③\">confirm IDP login dialog</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error⑦\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑦\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-no-such-alert\" id=\"ref-for-dfn-no-such-alert②\">no such alert</a>.</p>"
         },
         {
-          "html": "<p>Act as if the user had clicked the \"continue\" button in the <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#confirm-idp-login-dialog\" id=\"ref-for-confirm-idp-login-dialog①\">confirm IDP login dialog</a> and initiate the login flow.</p>"
+          "html": "<p>Act as if the user had clicked the \"continue\" button in the <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#confirm-idp-login-dialog\" id=\"ref-for-confirm-idp-login-dialog④\">confirm IDP login dialog</a> and initiate the login flow.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success②\">success</a> with data <code>null</code>.</p>"
@@ -1484,7 +1639,7 @@
           "html": "<p>If no FedCM dialog is currently open, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①⓪\">WebDriver error</a> with\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⓪\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-no-such-alert\" id=\"ref-for-dfn-no-such-alert⑤\">no such alert</a>.</p>"
         },
         {
-          "html": "<p>Let <var>type</var> be a string that is \"<code>AutoReauthn</code>\" if the user is being <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#auto-reauthenticated\" id=\"ref-for-auto-reauthenticated\">auto-reauthenticated</a>,\nor \"<code>AccountChooser</code>\" if the dialog is an account chooser, or \"<code>ConfirmIdpLogin</code>\" if the\ndialog is a <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#confirm-idp-login-dialog\" id=\"ref-for-confirm-idp-login-dialog②\">confirm IDP login dialog</a>.</p>"
+          "html": "<p>Let <var>type</var> be a string that is \"<code>AutoReauthn</code>\" if the user is being <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#auto-reauthenticated\" id=\"ref-for-auto-reauthenticated\">auto-reauthenticated</a>,\nor \"<code>AccountChooser</code>\" if the dialog is an account chooser, or \"<code>ConfirmIdpLogin</code>\" if the\ndialog is a <a data-link-type=\"dfn\" href=\"https://w3c-fedid.github.io/FedCM/#confirm-idp-login-dialog\" id=\"ref-for-confirm-idp-login-dialog⑤\">confirm IDP login dialog</a>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑤\">success</a> with data <var>type</var>.</p>"
