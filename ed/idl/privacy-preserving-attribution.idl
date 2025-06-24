@@ -27,6 +27,7 @@ dictionary AttributionImpressionOptions {
   required unsigned long histogramIndex;
   unsigned long matchValue = 0;
   sequence<USVString> conversionSites = [];
+  sequence<USVString> conversionCallers = [];
   unsigned long lifetimeDays = 30;
 };
 
@@ -47,7 +48,7 @@ dictionary AttributionConversionOptions {
   unsigned long lookbackDays;
   sequence<unsigned long> matchValue = [];
   sequence<USVString> impressionSites = [];
-  sequence<USVString> intermediarySites = [];
+  sequence<USVString> impressionCallers = [];
 
   AttributionLogic logic = "last-touch";
   unsigned long value = 1;
