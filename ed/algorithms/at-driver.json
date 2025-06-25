@@ -187,7 +187,7 @@
           "html": "<p>Let <var>parsed</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#parse-a-json-string-to-an-infra-value\" id=\"ref-for-parse-a-json-string-to-an-infra-value\">parsing JSON into Infra values</a> given <var>data</var>. If this throws an exception, then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#send-an-error-response\" id=\"ref-for-send-an-error-response①\">send an error response</a> given <var>connection</var>, null, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code-invalid-argument\" id=\"ref-for-error-code-invalid-argument①\">invalid argument</a>, and finally return.</p>"
         },
         {
-          "html": "Match <var>parsed</var> against the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-definition\" id=\"ref-for-remote-end-definition⑤\">remote end definition</a>. If this results in a match:",
+          "html": "Match <var>parsed</var> against the <code class=\"cddl\"><a data-link-type=\"cddl\" href=\"https://w3c.github.io/at-driver/#cddl-module-remote-end-definition\" id=\"ref-for-cddl-module-remote-end-definition⑤\">remote end definition</a></code>. If this results in a match:",
           "rationale": "let",
           "steps": [
             {
@@ -258,7 +258,7 @@
                   ]
                 },
                 {
-                  "html": "<p>Let <var>response</var> be a new map matching the <code>CommandResponse</code> production in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#local-end-definition\" id=\"ref-for-local-end-definition⑤\">local end definition</a> with the <code>id</code> field set to <var>command id</var> and the <code>value</code> field set to <var>value</var>.</p>"
+                  "html": "<p>Let <var>response</var> be a new map matching the <code>CommandResponse</code> production in the <code class=\"cddl\"><a data-link-type=\"cddl\" href=\"https://w3c.github.io/at-driver/#cddl-module-local-end-definition\" id=\"ref-for-cddl-module-local-end-definition⑤\">local end definition</a></code> with the <code>id</code> field set to <var>command id</var> and the <code>value</code> field set to <var>value</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>serialized</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#serialize-an-infra-value-to-json-bytes\" id=\"ref-for-serialize-an-infra-value-to-json-bytes\">serialize an infra value to JSON bytes</a> given <var>response</var>.</p>"
@@ -323,7 +323,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>error data</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④\">map</a> matching the <code>ErrorResponse</code> production in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#local-end-definition\" id=\"ref-for-local-end-definition⑥\">local end definition</a>, with the <code>id</code> field set to <var>command id</var>, the <code>error</code> field set to <var>error code</var>, the <code>message</code> field set to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑥\">implementation-defined</a> string containing a human-readable definition of the error that occurred and the <code>stacktrace</code> field optionally set to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑦\">implementation-defined</a> string containing a stack trace report of the active stack frames at the time when the error occurred.</p>"
+          "html": "<p>Let <var>error data</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④\">map</a> matching the <code>ErrorResponse</code> production in the <code class=\"cddl\"><a data-link-type=\"cddl\" href=\"https://w3c.github.io/at-driver/#cddl-module-local-end-definition\" id=\"ref-for-cddl-module-local-end-definition⑥\">local end definition</a></code>, with the <code>id</code> field set to <var>command id</var>, the <code>error</code> field set to <var>error code</var>, the <code>message</code> field set to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑥\">implementation-defined</a> string containing a human-readable definition of the error that occurred and the <code>stacktrace</code> field optionally set to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑦\">implementation-defined</a> string containing a stack trace report of the active stack frames at the time when the error occurred.</p>"
         },
         {
           "html": "<p>Let <var>response</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#serialize-an-infra-value-to-json-bytes\" id=\"ref-for-serialize-an-infra-value-to-json-bytes②\">serialize an infra value to JSON bytes</a> given <var>error data</var>.</p>"
@@ -469,7 +469,7 @@
               "html": "<p>Let <var>value</var> be the value of the setting named <var>name</var>.</p>"
             },
             {
-              "html": "<p>Let <var>item</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥\">map</a> matching the <code>SettingsGetSettingsResultItem</code> production in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#local-end-definition\" id=\"ref-for-local-end-definition⑨\">local end definition</a> with the <code>name</code> field set to <var>name</var> and the <code>value</code> field set to <var>value</var>.</p>"
+              "html": "<p>Let <var>item</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥\">map</a> matching the <code>SettingsGetSettingsResultItem</code> production in the <code class=\"cddl\"><a data-link-type=\"cddl\" href=\"https://w3c.github.io/at-driver/#cddl-module-local-end-definition\" id=\"ref-for-cddl-module-local-end-definition⑨\">local end definition</a></code> with the <code>name</code> field set to <var>name</var> and the <code>value</code> field set to <var>value</var>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>item</var> to <var>items</var>.</p>"

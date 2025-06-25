@@ -17,50 +17,11 @@ CommandData = (
 
 EmptyParams = { Extensible }
 
-Message = (
-  CommandResponse //
-  ErrorResponse //
-  Event
-)
-
-CommandResponse = {
-  id: uint,
-  result: ResultData,
-  Extensible,
-}
-
-ErrorResponse = {
-  id: uint / null,
-  error: "unknown error" / "unknown command" / "invalid argument" / "session not created",
-  message: text,
-  ?stacktrace: text,
-  Extensible,
-}
-
-ResultData = (
-  EmptyResult /
-  SessionResult /
-  SettingsResult
-)
-
-EmptyResult = {}
-
-Event = {
-  EventData,
-  Extensible,
-}
-
-EventData = (
-  InteractionEvent
-)
-
 Extensible = {
   *text => any
 }
 
 SessionCommand = (SessionNewCommand)
-
-SessionResult = (SessionNewResult)
 
 CapabilitiesRequest = {
   ?atName: text,
@@ -78,34 +39,10 @@ CapabilitiesRequestParameters = {
   ?alwaysMatch: CapabilitiesRequest,
 }
 
-SessionNewResult = {
-  sessionId: text,
-  capabilities: {
-    atName: text,
-    atVersion: text,
-    platformName: text,
-    Extensible,
-  }
-}
-
 SettingsCommand = {
   SettingsSetSettingsCommand //
   SettingsGetSettingsCommand //
   SettingsGetSupportedSettingsCommand
-}
-
-SettingsResult = {
-  SettingsGetSettingsResult
-}
-
-SettingsGetSettingsResult = {
-  settings: [1* SettingsGetSettingsResultItem ],
-}
-
-SettingsGetSettingsResultItem = {
-  name: text,
-  value: any,
-  Extensible,
 }
 
 SettingsSetSettingsCommand = {
@@ -144,13 +81,6 @@ SettingsGetSupportedSettingsCommand = {
 
 InteractionCommand = (InteractionUserIntentCommand)
 
-InteractionEvent = (InteractionCapturedOutputEvent)
-
-InteractionCapturedOutputParameters = {
-  data: text,
-  Extensible,
-}
-
 InteractionUserIntentCommand = {
   method: "interaction.userIntent",
   params: InteractionUserIntentParameters
@@ -173,11 +103,6 @@ KeyCombination = [
 ExtensionIntentParameters = {
   "name" => text,
   Extensible,
-}
-
-InteractionCapturedOutputEvent = {
-  method: "interaction.capturedOutput",
-  params: InteractionCapturedOutputParameters
 }
 
 Command = {

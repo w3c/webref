@@ -3,20 +3,6 @@
 ; (https://github.com/w3c/webref)
 ; Source: AT Driver (https://w3c.github.io/at-driver/)
 
-Command = {
-  id: uint,
-  CommandData,
-  Extensible,
-}
-
-CommandData = (
-  SessionCommand //
-  SettingsCommand //
-  InteractionCommand
-)
-
-EmptyParams = { Extensible }
-
 Message = (
   CommandResponse //
   ErrorResponse //
@@ -58,8 +44,6 @@ Extensible = {
   *text => any
 }
 
-SessionCommand = (SessionNewCommand)
-
 SessionResult = (SessionNewResult)
 
 CapabilitiesRequest = {
@@ -67,15 +51,6 @@ CapabilitiesRequest = {
   ?atVersion: text,
   ?platformName: text,
   Extensible,
-}
-
-SessionNewCommand = {
-  method: "session.new",
-  params: {capabilities: CapabilitiesRequestParameters},
-}
-
-CapabilitiesRequestParameters = {
-  ?alwaysMatch: CapabilitiesRequest,
 }
 
 SessionNewResult = {
@@ -86,12 +61,6 @@ SessionNewResult = {
     platformName: text,
     Extensible,
   }
-}
-
-SettingsCommand = {
-  SettingsSetSettingsCommand //
-  SettingsGetSettingsCommand //
-  SettingsGetSupportedSettingsCommand
 }
 
 SettingsResult = {
@@ -108,70 +77,10 @@ SettingsGetSettingsResultItem = {
   Extensible,
 }
 
-SettingsSetSettingsCommand = {
-  method: "settings.setSettings",
-  params: SettingsSetSettingsParameters
-}
-
-SettingsSetSettingsParameters = {
-  settings: [1* SettingsSetSettingsParametersItem ],
-}
-
-SettingsSetSettingsParametersItem = {
-  name: text,
-  value: any,
-  Extensible,
-}
-
-SettingsGetSettingsCommand = {
-  method: "settings.getSettings",
-  params: SettingsGetSettingsParameters
-}
-
-SettingsGetSettingsParameters = {
-  settings: [1* SettingsGetSettingsParametersItem ],
-}
-
-SettingsGetSettingsParametersItem = {
-  name: text,
-  Extensible,
-}
-
-SettingsGetSupportedSettingsCommand = {
-  method: "settings.getSupportedSettings",
-  params: EmptyParams
-}
-
-InteractionCommand = (InteractionUserIntentCommand)
-
 InteractionEvent = (InteractionCapturedOutputEvent)
 
 InteractionCapturedOutputParameters = {
   data: text,
-  Extensible,
-}
-
-InteractionUserIntentCommand = {
-  method: "interaction.userIntent",
-  params: InteractionUserIntentParameters
-}
-
-InteractionUserIntentParameters = (
-  PressKeysIntentParameters /
-  ExtensionIntentParameters
-)
-
-PressKeysIntentParameters = {
-  "name" => "pressKeys",
-  "keys" => KeyCombination,
-}
-
-KeyCombination = [
-  1* text
-]
-
-ExtensionIntentParameters = {
-  "name" => text,
   Extensible,
 }
 
