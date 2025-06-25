@@ -1,0 +1,267 @@
+; GENERATED CONTENT - DO NOT EDIT
+; Content was automatically extracted by Reffy into webref
+; (https://github.com/w3c/webref)
+; Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
+
+bluetooth.BluetoothUuid = text;
+bluetooth.BluetoothManufacturerData = { key: uint, data: tstr };
+bluetooth.CharacteristicProperties = {
+  ? broadcast: bool,
+  ? read: bool,
+  ? writeWithoutResponse: bool,
+  ? write: bool,
+  ? notify: bool,
+  ? indicate: bool,
+  ? authenticatedSignedWrites: bool,
+  ? extendedProperties: bool
+}
+
+bluetooth.RequestDevice = text
+
+bluetooth.RequestDeviceInfo = {
+   id: bluetooth.RequestDevice,
+   name: text / null,
+}
+
+bluetooth.RequestDevicePrompt = text
+
+bluetooth.ScanRecord = {
+  ? name: text,
+  ? uuids: [ * bluetooth.BluetoothUuid ],
+  ? appearance: number,
+  ? manufacturerData: [ * bluetooth.BluetoothManufacturerData ],
+}
+
+BluetoothCommand = (
+  bluetooth.HandleRequestDevicePrompt //
+  bluetooth.SimulateAdapter //
+  bluetooth.DisableSimulation //
+  bluetooth.SimulatePreconnectedPeripheral //
+  bluetooth.SimulateAdvertisement //
+  bluetooth.SimulateGattConnectionResponse //
+  bluetooth.SimulateGattDisconnection //
+  bluetooth.SimulateService //
+  bluetooth.SimulateCharacteristic //
+  bluetooth.SimulateCharacteristicResponse //
+  bluetooth.SimulateDescriptor //
+  bluetooth.SimulateDescriptorResponse //
+)
+
+bluetooth.HandleRequestDevicePrompt = (
+   method: "bluetooth.handleRequestDevicePrompt",
+   params: bluetooth.HandleRequestDevicePromptParameters,
+)
+
+bluetooth.HandleRequestDevicePromptParameters = {
+   context: text,
+   prompt: bluetooth.RequestDevicePrompt,
+   (
+       bluetooth.HandleRequestDevicePromptAcceptParameters //
+       bluetooth.HandleRequestDevicePromptCancelParameters
+   )
+}
+
+bluetooth.HandleRequestDevicePromptAcceptParameters = (
+   accept: true,
+   device: bluetooth.RequestDevice,
+)
+
+bluetooth.HandleRequestDevicePromptCancelParameters = (
+   accept: false,
+)
+
+bluetooth.SimulateAdapter = (
+   method: "bluetooth.simulateAdapter",
+   params: bluetooth.SimulateAdapterParameters,
+)
+
+bluetooth.SimulateAdapterParameters = {
+   context: text,
+   ? leSupported: bool,
+   state: "absent" / "powered-off" / "powered-on"
+}
+
+bluetooth.DisableSimulation = (
+   method: "bluetooth.disableSimulation",
+   params: bluetooth.DisableSimulationParameters,
+)
+
+bluetooth.DisableSimulationParameters = {
+   context: text
+}
+
+bluetooth.SimulatePreconnectedPeripheral = (
+   method: "bluetooth.simulatePreconnectedPeripheral",
+   params: bluetooth.SimulatePreconnectedPeripheralParameters,
+)
+
+bluetooth.SimulatePreconnectedPeripheralParameters = {
+   context: text,
+   address: text,
+   name: text,
+   manufacturerData: [ * bluetooth.BluetoothManufacturerData ],
+   knownServiceUuids: [ * bluetooth.BluetoothUuid ]
+}
+
+bluetooth.SimulateAdvertisement = (
+   method: "bluetooth.simulateAdvertisement",
+   params: bluetooth.SimulateAdvertisementParameters,
+)
+
+bluetooth.SimulateAdvertisementParameters = {
+   context: text,
+   scanEntry: bluetooth.SimulateAdvertisementScanEntryParameters
+}
+
+bluetooth.SimulateAdvertisementScanEntryParameters = {
+   deviceAddress: text,
+   rssi: number,
+   scanRecord: bluetooth.ScanRecord
+}
+
+bluetooth.SimulateGattConnectionResponse = (
+   method: "bluetooth.simulateGattConnectionResponse",
+   params: bluetooth.SimulateGattConnectionResponseParameters,
+)
+
+bluetooth.SimulateGattConnectionResponseParameters = {
+   context: text,
+   address: text,
+   code: uint
+}
+
+bluetooth.SimulateGattDisconnection = (
+   method: "bluetooth.simulateGattDisconnection",
+   params: bluetooth.SimulateGattDisconnectionParameters,
+)
+
+bluetooth.SimulateGattDisconnectionParameters = {
+   context: text,
+   address: text,
+}
+
+bluetooth.SimulateService = (
+   method: "bluetooth.simulateService",
+   params: bluetooth.SimulateServiceParameters,
+)
+
+bluetooth.SimulateServiceParameters = {
+   context: text,
+   address: text,
+   uuid: bluetooth.BluetoothUuid,
+   type: "add" / "remove",
+}
+
+bluetooth.SimulateCharacteristic = (
+   method: "bluetooth.simulateCharacteristic",
+   params: bluetooth.SimulateCharacteristicParameters,
+)
+
+bluetooth.SimulateCharacteristicParameters = {
+   context: text,
+   address: text,
+   serviceUuid: bluetooth.BluetoothUuid,
+   characteristicUuid: bluetooth.BluetoothUuid,
+   ? characteristicProperties: bluetooth.CharacteristicProperties,
+   type: "add" / "remove"
+}
+
+bluetooth.SimulateCharacteristicResponse = (
+   method: "bluetooth.simulateCharacteristicResponse",
+   params: bluetooth.SimulateCharacteristicResponseParameters,
+)
+
+bluetooth.SimulateCharacteristicResponseParameters = {
+   context: text,
+   address: text,
+   serviceUuid: bluetooth.BluetoothUuid,
+   characteristicUuid: bluetooth.BluetoothUuid,
+   type: "read" / "write" / "subscribe-to-notifications" / "unsubscribe-from-notifications",
+   code: uint,
+   ? data: [ * uint ]
+}
+
+bluetooth.SimulateDescriptor = (
+   method: "bluetooth.simulateDescriptor",
+   params: bluetooth.SimulateDescriptorParameters,
+)
+
+bluetooth.SimulateDescriptorParameters = {
+   context: text,
+   address: text,
+   serviceUuid: bluetooth.BluetoothUuid,
+   characteristicUuid: bluetooth.BluetoothUuid,
+   descriptorUuid: bluetooth.BluetoothUuid,
+   type: "add" / "remove"
+}
+
+bluetooth.SimulateDescriptorResponse = (
+   method: "bluetooth.simulateDescriptorResponse",
+   params: bluetooth.SimulateDescriptorResponseParameters,
+)
+
+bluetooth.SimulateDescriptorResponseParameters = {
+   context: text,
+   address: text,
+   serviceUuid: bluetooth.BluetoothUuid,
+   characteristicUuid: bluetooth.BluetoothUuid,
+   descriptorUuid: bluetooth.BluetoothUuid,
+   type: "read" / "write",
+   code: uint,
+   ? data: [ * uint ]
+}
+
+BluetoothEvent = (
+  bluetooth.RequestDevicePromptUpdated //
+  bluetooth.GattConnectionAttempted
+)
+
+bluetooth.RequestDevicePromptUpdated = (
+   method: "bluetooth.requestDevicePromptUpdated",
+   params: bluetooth.RequestDevicePromptUpdatedParameters
+)
+
+bluetooth.RequestDevicePromptUpdatedParameters = {
+   context: text,
+   prompt: bluetooth.RequestDevicePrompt,
+   devices: [* bluetooth.RequestDeviceInfo],
+}
+
+bluetooth.GattConnectionAttempted = (
+   method: "bluetooth.gattConnectionAttempted",
+   params: bluetooth.GattConnectionAttemptedParameters
+)
+
+bluetooth.GattConnectionAttemptedParameters = {
+   context: text,
+   address: text
+}
+
+bluetooth.CharacteristicEventGenerated = (
+   method: "bluetooth.characteristicEventGenerated",
+   params: bluetooth.CharacteristicEventGeneratedParameters
+)
+
+bluetooth.CharacteristicEventGeneratedParameters = {
+  context: text,
+  address: text,
+  serviceUuid: bluetooth.BluetoothUuid,
+  characteristicUuid: bluetooth.BluetoothUuid,
+  type: "read" / "write-with-response" / "write-without-response" / "subscribe-to-notifications" / "unsubscribe-from-notifications",
+  ? data: [ * uint ]
+}
+
+bluetooth.DescriptorEventGenerated = (
+   method: "bluetooth.descriptorEventGenerated",
+   params: bluetooth.DescriptorEventGeneratedParameters
+)
+
+bluetooth.DescriptorEventGeneratedParameters = {
+  context: text,
+  address: text,
+  serviceUuid: bluetooth.BluetoothUuid,
+  characteristicUuid: bluetooth.BluetoothUuid,
+  descriptorUuid: bluetooth.BluetoothUuid,
+  type: "read" / "write",
+  ? data: [ * uint ]
+}
