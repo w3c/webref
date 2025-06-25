@@ -928,7 +928,7 @@
           ]
         },
         {
-          "html": "For each <var>collector</var> in |session’s| <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collectors\" id=\"ref-for-network-collectors\">network collectors</a>:",
+          "html": "For each <var>collector</var> in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collectors\" id=\"ref-for-network-collectors\">network collectors</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -2327,7 +2327,7 @@
                   "html": "<p>Let <var>element rect</var> be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#element-get-the-bounding-box\" id=\"ref-for-element-get-the-bounding-box\">get the bounding box</a> for <var>element</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>clip rect</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#domrectreadonly\" id=\"ref-for-domrectreadonly④\">DOMRectReadOnly</a></code> with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate①①\">x coordinate</a>\n  <var>element rect</var>[\"<code>x</code>\"] + <var>viewport rect</var>[\"<code>x</code>\"]|,\n  <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate①①\">y coordinate</a> <var>element rect</var>[\"<code>y</code>\"] + <var>viewport\n  rect</var>[\"<code>y</code>\"], width <var>element rect</var>[\"<code>width</code>\"],\n  and height <var>element rect</var>[\"<code>height</code>\"].</p>"
+                  "html": "<p>Let <var>clip rect</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#domrectreadonly\" id=\"ref-for-domrectreadonly④\">DOMRectReadOnly</a></code> with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate①①\">x coordinate</a>\n  <var>element rect</var>[\"<code>x</code>\"] + <var>viewport rect</var>[\"<code>x</code>\"],\n  <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate①①\">y coordinate</a> <var>element rect</var>[\"<code>y</code>\"] + <var>viewport\n  rect</var>[\"<code>y</code>\"], width <var>element rect</var>[\"<code>width</code>\"],\n  and height <var>element rect</var>[\"<code>height</code>\"].</p>"
                 }
               ],
               "additional": [
@@ -8093,7 +8093,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#set-internal-ids-if-needed\" id=\"ref-for-set-internal-ids-if-needed④\">Set internal ids if needed</a> with <var>serialization internal map</var>,\n <var>remote value</var> and <var>value</var>.</p>"
         },
         {
-          "html": "If <var>known object</var> is <code>false</code>, and <var>serialization\n options</var>[\"<code>maxObjectDepth</code>\"]| is not 0:",
+          "html": "If <var>known object</var> is <code>false</code>, and <var>serialization\n options</var>[\"<code>maxObjectDepth</code>\"] is not 0:",
           "rationale": "let",
           "steps": [
             {

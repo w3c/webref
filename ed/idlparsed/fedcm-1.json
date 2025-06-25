@@ -5,7 +5,11 @@
   },
   "idlparsed": {
     "jsNames": {
-      "constructors": {},
+      "constructors": {
+        "Window": [
+          "IdentityCredentialError"
+        ]
+      },
       "functions": {
         "Window": [
           "IdentityCredential",
@@ -184,6 +188,152 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://w3c-fedid.github.io/FedCM/#dictdef-disconnectedaccount"
+      },
+      "IdentityCredentialErrorInit": {
+        "fragment": "dictionary IdentityCredentialErrorInit {\n  DOMString error;\n  DOMString url;\n};",
+        "type": "dictionary",
+        "name": "IdentityCredentialErrorInit",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "error",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerrorinit-error"
+          },
+          {
+            "type": "field",
+            "name": "url",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerrorinit-url"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identitycredentialerrorinit"
+      },
+      "IdentityCredentialError": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredentialError : DOMException {\n  constructor(optional DOMString message = \"\", optional IdentityCredentialErrorInit options = {});\n  readonly attribute DOMString error;\n  readonly attribute DOMString url;\n};",
+        "type": "interface",
+        "name": "IdentityCredentialError",
+        "inheritance": "DOMException",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "message",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": {
+                  "type": "string",
+                  "value": ""
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "IdentityCredentialErrorInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerror-identitycredentialerror"
+          },
+          {
+            "type": "attribute",
+            "name": "error",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerror-error"
+          },
+          {
+            "type": "attribute",
+            "name": "url",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identitycredentialerror-url"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://w3c-fedid.github.io/FedCM/#identitycredentialerror"
       },
       "IdentityCredentialRequestOptionsContext": {
         "fragment": "enum IdentityCredentialRequestOptionsContext {\n  \"signin\",\n  \"signup\",\n  \"use\",\n  \"continue\"\n};",
@@ -1047,7 +1197,7 @@
         "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identityprovideraccountlist"
       },
       "IdentityAssertionResponse": {
-        "fragment": "dictionary IdentityAssertionResponse {\n  USVString token;\n  USVString continue_on;\n};",
+        "fragment": "dictionary IdentityAssertionResponse {\n  USVString token;\n  USVString continue_on;\n  IdentityCredentialErrorInit error;\n};",
         "type": "dictionary",
         "name": "IdentityAssertionResponse",
         "inheritance": null,
@@ -1083,6 +1233,22 @@
             "default": null,
             "required": false,
             "href": "https://w3c-fedid.github.io/FedCM/#dom-identityassertionresponse-continue_on"
+          },
+          {
+            "type": "field",
+            "name": "error",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "IdentityCredentialErrorInit"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identityassertionresponse-error"
           }
         ],
         "extAttrs": [],
@@ -1423,6 +1589,7 @@
     "exposed": {
       "Window": [
         "IdentityCredential",
+        "IdentityCredentialError",
         "IdentityProvider"
       ]
     },
@@ -1435,6 +1602,11 @@
         "IdentityCredentialDisconnectOptions"
       ],
       "DisconnectedAccount": [],
+      "IdentityCredentialErrorInit": [],
+      "IdentityCredentialError": [
+        "DOMException",
+        "IdentityCredentialErrorInit"
+      ],
       "CredentialRequestOptions": [
         "IdentityCredentialRequestOptions"
       ],
@@ -1459,7 +1631,9 @@
       "IdentityProviderAccountList": [
         "IdentityProviderAccount"
       ],
-      "IdentityAssertionResponse": [],
+      "IdentityAssertionResponse": [
+        "IdentityCredentialErrorInit"
+      ],
       "IdentityProviderClientMetadata": [],
       "IdentityUserInfo": [],
       "IdentityResolveOptions": [],
@@ -1471,6 +1645,7 @@
     },
     "externalDependencies": [
       "Credential",
+      "DOMException",
       "CredentialRequestOptions"
     ],
     "hasObsoleteIdl": false

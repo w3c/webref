@@ -3,5 +3,6 @@ dictionary AttributionImpressionOptions {
   required unsigned long histogramIndex;
   unsigned long matchValue = 0;
   sequence<USVString> conversionSites = [];
+  sequence<USVString> conversionCallers = [];
   unsigned long lifetimeDays = 30;
 };

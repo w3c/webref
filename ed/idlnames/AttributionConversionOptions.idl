@@ -8,7 +8,7 @@ dictionary AttributionConversionOptions {
   unsigned long lookbackDays;
   sequence<unsigned long> matchValue = [];
   sequence<USVString> impressionSites = [];
-  sequence<USVString> intermediarySites = [];
+  sequence<USVString> impressionCallers = [];
 
   AttributionLogic logic = "last-touch";
   unsigned long value = 1;

@@ -158,7 +158,7 @@
         "href": "https://w3c.github.io/ppa/#attribution"
       },
       "AttributionImpressionOptions": {
-        "fragment": "dictionary AttributionImpressionOptions {\n  required unsigned long histogramIndex;\n  unsigned long matchValue = 0;\n  sequence<USVString> conversionSites = [];\n  unsigned long lifetimeDays = 30;\n};",
+        "fragment": "dictionary AttributionImpressionOptions {\n  required unsigned long histogramIndex;\n  unsigned long matchValue = 0;\n  sequence<USVString> conversionSites = [];\n  sequence<USVString> conversionCallers = [];\n  unsigned long lifetimeDays = 30;\n};",
         "type": "dictionary",
         "name": "AttributionImpressionOptions",
         "inheritance": null,
@@ -228,6 +228,34 @@
           },
           {
             "type": "field",
+            "name": "conversionCallers",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-attributionimpressionoptions-conversioncallers"
+          },
+          {
+            "type": "field",
             "name": "lifetimeDays",
             "extAttrs": [],
             "idlType": {
@@ -261,7 +289,7 @@
         "href": "https://w3c.github.io/ppa/#dictdef-attributionimpressionresult"
       },
       "AttributionConversionOptions": {
-        "fragment": "dictionary AttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  unsigned long lookbackDays;\n  sequence<unsigned long> matchValue = [];\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> intermediarySites = [];\n\n  AttributionLogic logic = \"last-touch\";\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n};",
+        "fragment": "dictionary AttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  unsigned long lookbackDays;\n  sequence<unsigned long> matchValue = [];\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> impressionCallers = [];\n\n  AttributionLogic logic = \"last-touch\";\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n};",
         "type": "dictionary",
         "name": "AttributionConversionOptions",
         "inheritance": null,
@@ -391,7 +419,7 @@
           },
           {
             "type": "field",
-            "name": "intermediarySites",
+            "name": "impressionCallers",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -415,7 +443,7 @@
               "value": []
             },
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-intermediarysites"
+            "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-impressioncallers"
           },
           {
             "type": "field",

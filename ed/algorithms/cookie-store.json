@@ -655,9 +655,12 @@
               "html": "<p>If <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length①\">length</a> is 0, then return failure.</p>"
             },
             {
-              "html": "<p>If <var>value</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-lowercase\" id=\"ref-for-byte-lowercase\">byte-lowercased</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with\">starts with</a> `<code>__host-</code>` or `<code>__secure-</code>`, then return failure.</p>"
+              "html": "<p>If <var>value</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-lowercase\" id=\"ref-for-byte-lowercase\">byte-lowercased</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with\">starts with</a> `<code>__host-</code>`, `<code>__http-</code>`, or `<code>__secure-</code>`, then return failure.</p>"
             }
           ]
+        },
+        {
+          "html": "<p>If <var>name</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-lowercase\" id=\"ref-for-byte-lowercase①\">byte-lowercased</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with①\">starts with</a> `<code>__http-</code>`, then return failure.</p>"
         },
         {
           "html": "<p>Let <var>encodedName</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode\">UTF-8 encoding</a> <var>name</var>.</p>"
@@ -682,7 +685,7 @@
               "html": "<p>If <var>domain</var> starts with U+002E (.), then return failure.</p>"
             },
             {
-              "html": "<p>If <var>name</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-lowercase\" id=\"ref-for-byte-lowercase①\">byte-lowercased</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with①\">starts with</a> `<code>__host-</code>`, then return failure.</p>"
+              "html": "<p>If <var>name</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-lowercase\" id=\"ref-for-byte-lowercase②\">byte-lowercased</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with②\">starts with</a> `<code>__host-</code>`, then return failure.</p>"
             },
             {
               "html": "<p>If <var>domain</var> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#is-a-registrable-domain-suffix-of-or-is-equal-to\" id=\"ref-for-is-a-registrable-domain-suffix-of-or-is-equal-to\">is not a registrable domain suffix of and is not equal to</a> <var>host</var>, then return failure.</p>"
@@ -715,7 +718,7 @@
               "html": "<p>If <var>path</var> does not start with U+002F (/), then return failure.</p>"
             },
             {
-              "html": "<p>If <var>path</var> is not U+002F (/), and <var>name</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-lowercase\" id=\"ref-for-byte-lowercase②\">byte-lowercased</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with②\">starts with</a> `<code>__host-</code>`, then return failure.</p>"
+              "html": "<p>If <var>path</var> is not U+002F (/), and <var>name</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-lowercase\" id=\"ref-for-byte-lowercase③\">byte-lowercased</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with③\">starts with</a> `<code>__host-</code>`, then return failure.</p>"
             },
             {
               "html": "<p>Let <var>encodedPath</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode③\">UTF-8 encoding</a> <var>path</var>.</p>"

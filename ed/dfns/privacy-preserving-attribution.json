@@ -182,7 +182,10 @@
       "linkingText": [
         "intermediary site"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "intermediary",
+        "intermediaries"
+      ],
       "type": "dfn",
       "for": [],
       "access": "private",
@@ -501,6 +504,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-attributionimpressionoptions-conversioncallers",
+      "href": "https://w3c.github.io/ppa/#dom-attributionimpressionoptions-conversioncallers",
+      "linkingText": [
+        "conversionCallers"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AttributionImpressionOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "save-impression-api",
+        "href": "https://w3c.github.io/ppa/#save-impression-api",
+        "title": "Saving Impressions",
+        "number": "3.4"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-attributionimpressionoptions-lifetimedays",
       "href": "https://w3c.github.io/ppa/#dom-attributionimpressionoptions-lifetimedays",
       "linkingText": [
@@ -768,10 +792,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-attributionconversionoptions-intermediarysites",
-      "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-intermediarysites",
+      "id": "dom-attributionconversionoptions-impressioncallers",
+      "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-impressioncallers",
       "linkingText": [
-        "intermediarySites"
+        "impressionCallers"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -868,7 +892,7 @@
         "id": "permission-policy",
         "href": "https://w3c.github.io/ppa/#permission-policy",
         "title": "Permissions Policy Integration",
-        "number": "3.6"
+        "number": "3.8"
       },
       "definedIn": "prose"
     },
@@ -889,7 +913,7 @@
         "id": "permission-policy",
         "href": "https://w3c.github.io/ppa/#permission-policy",
         "title": "Permissions Policy Integration",
-        "number": "3.6"
+        "number": "3.8"
       },
       "definedIn": "prose"
     },
@@ -980,6 +1004,27 @@
       "href": "https://w3c.github.io/ppa/#impression-conversion-sites",
       "linkingText": [
         "Conversion Sites"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "impression"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "impression-store-contents",
+        "href": "https://w3c.github.io/ppa/#impression-store-contents",
+        "title": "Contents",
+        "number": "4.1.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "impression-conversion-callers",
+      "href": "https://w3c.github.io/ppa/#impression-conversion-callers",
+      "linkingText": [
+        "Conversion Callers"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1517,10 +1562,10 @@
       "definedIn": "table"
     },
     {
-      "id": "validated-conversion-options-intermediary-sites",
-      "href": "https://w3c.github.io/ppa/#validated-conversion-options-intermediary-sites",
+      "id": "validated-conversion-options-impression-callers",
+      "href": "https://w3c.github.io/ppa/#validated-conversion-options-impression-callers",
       "linkingText": [
-        "Intermediary Sites"
+        "Impression Callers"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1605,6 +1650,25 @@
       "href": "https://w3c.github.io/ppa/#validate-attributionconversionoptions",
       "linkingText": [
         "validate AttributionConversionOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "measure-conversion-api-operation",
+        "href": "https://w3c.github.io/ppa/#measure-conversion-api-operation",
+        "title": "Measure Conversion Algorithm",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "maximum-histogram-size",
+      "href": "https://w3c.github.io/ppa/#maximum-histogram-size",
+      "linkingText": [
+        "maximum histogram size"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1738,6 +1802,27 @@
       "href": "https://w3c.github.io/ppa/#save-impression-conversion-sites",
       "linkingText": [
         "conversion-sites"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "save-impression"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api",
+        "href": "https://w3c.github.io/ppa/#http-api",
+        "title": "HTTP API",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "save-impression-conversion-callers",
+      "href": "https://w3c.github.io/ppa/#save-impression-conversion-callers",
+      "linkingText": [
+        "conversion-callers"
       ],
       "localLinkingText": [],
       "type": "dfn",

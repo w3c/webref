@@ -180,6 +180,58 @@
         "partial": false,
         "href": "https://drafts.csswg.org/css-highlight-api-1/#highlightregistry"
       },
+      "HighlightHitResult": {
+        "fragment": "dictionary HighlightHitResult {\n  Highlight highlight;\n  sequence<AbstractRange> ranges;\n};",
+        "type": "dictionary",
+        "name": "HighlightHitResult",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "highlight",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Highlight"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://drafts.csswg.org/css-highlight-api-1/#dom-highlighthitresult-highlight"
+          },
+          {
+            "type": "field",
+            "name": "ranges",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AbstractRange"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://drafts.csswg.org/css-highlight-api-1/#dom-highlighthitresult-ranges"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-highlight-api-1/#dictdef-highlighthitresult"
+      },
       "HighlightsFromPointOptions": {
         "fragment": "dictionary HighlightsFromPointOptions {\n  sequence<ShadowRoot> shadowRoots = [];\n};",
         "type": "dictionary",
@@ -251,7 +303,7 @@
       ],
       "HighlightRegistry": [
         {
-          "fragment": "partial interface HighlightRegistry {\n  sequence<Highlight> highlightsFromPoint(float x, float y, optional HighlightsFromPointOptions options = {});\n};",
+          "fragment": "partial interface HighlightRegistry {\n  sequence<HighlightHitResult> highlightsFromPoint(float x, float y, optional HighlightsFromPointOptions options = {});\n};",
           "type": "interface",
           "name": "HighlightRegistry",
           "inheritance": null,
@@ -272,7 +324,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "Highlight"
+                    "idlType": "HighlightHitResult"
                   }
                 ]
               },
@@ -355,7 +407,12 @@
       ],
       "HighlightRegistry": [
         "Highlight",
+        "HighlightHitResult",
         "HighlightsFromPointOptions"
+      ],
+      "HighlightHitResult": [
+        "Highlight",
+        "AbstractRange"
       ],
       "HighlightsFromPointOptions": [
         "ShadowRoot"
