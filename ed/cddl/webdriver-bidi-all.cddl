@@ -803,6 +803,7 @@ browsingContext.UserPromptOpenedParameters = {
 
 EmulationCommand = (
   emulation.SetGeolocationOverride //
+  emulation.SetLocaleOverride //
   emulation.SetScreenOrientationOverride
 )
 
@@ -832,6 +833,17 @@ emulation.GeolocationCoordinates = {
 
 emulation.GeolocationPositionError = {
    type: "positionUnavailable"
+}
+
+emulation.SetLocaleOverride = (
+  method: "emulation.setLocaleOverride",
+  params: emulation.SetLocaleOverrideParameters
+)
+
+emulation.SetLocaleOverrideParameters = {
+  locale: text / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
 }
 
 emulation.SetScreenOrientationOverride = (
@@ -2652,6 +2664,7 @@ browsingContext.TraverseHistoryParameters = {
 
 EmulationCommand = (
   emulation.SetGeolocationOverride //
+  emulation.SetLocaleOverride //
   emulation.SetScreenOrientationOverride
 )
 
@@ -2681,6 +2694,17 @@ emulation.GeolocationCoordinates = {
 
 emulation.GeolocationPositionError = {
    type: "positionUnavailable"
+}
+
+emulation.SetLocaleOverride = (
+  method: "emulation.setLocaleOverride",
+  params: emulation.SetLocaleOverrideParameters
+)
+
+emulation.SetLocaleOverrideParameters = {
+  locale: text / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
 }
 
 emulation.SetScreenOrientationOverride = (
