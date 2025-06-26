@@ -14892,6 +14892,86 @@
       "definedIn": "prose"
     },
     {
+      "id": "screen-orientation-override",
+      "href": "https://w3c.github.io/webdriver-bidi/#screen-orientation-override",
+      "linkingText": [
+        "screen orientation override"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-emulation-definition",
+        "href": "https://w3c.github.io/webdriver-bidi/#module-emulation-definition",
+        "title": "Definition",
+        "number": "7.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-screen-orientation-override-natural",
+      "href": "https://w3c.github.io/webdriver-bidi/#dom-screen-orientation-override-natural",
+      "linkingText": [
+        "natural"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "screen orientation override"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-emulation-definition",
+        "href": "https://w3c.github.io/webdriver-bidi/#module-emulation-definition",
+        "title": "Definition",
+        "number": "7.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-screen-orientation-override-type",
+      "href": "https://w3c.github.io/webdriver-bidi/#dom-screen-orientation-override-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "screen orientation override"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-emulation-definition",
+        "href": "https://w3c.github.io/webdriver-bidi/#module-emulation-definition",
+        "title": "Definition",
+        "number": "7.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "screen-orientation-overrides-map",
+      "href": "https://w3c.github.io/webdriver-bidi/#screen-orientation-overrides-map",
+      "linkingText": [
+        "screen orientation overrides map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-emulation-definition",
+        "href": "https://w3c.github.io/webdriver-bidi/#module-emulation-definition",
+        "title": "Definition",
+        "number": "7.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "commands-emulationsetgeolocationoverride",
       "href": "https://w3c.github.io/webdriver-bidi/#commands-emulationsetgeolocationoverride",
       "linkingText": [
@@ -15339,6 +15419,449 @@
         "number": "7.4.2.1"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "commands-emulationsetscreenorientationoverride",
+      "href": "https://w3c.github.io/webdriver-bidi/#commands-emulationsetscreenorientationoverride",
+      "linkingText": [
+        "emulation.setScreenOrientationOverride"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cddl-type-emulationsetscreenorientationoverride",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-type-emulationsetscreenorientationoverride",
+      "linkingText": [
+        "emulation.SetScreenOrientationOverride"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-emulationsetscreenorientationoverride-method",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-emulationsetscreenorientationoverride-method",
+      "linkingText": [
+        "method",
+        "\"method\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "emulation.SetScreenOrientationOverride"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-value-emulationsetscreenorientationoverride-method-emulationsetscreenorientationoverride",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-value-emulationsetscreenorientationoverride-method-emulationsetscreenorientationoverride",
+      "linkingText": [
+        "emulation.setScreenOrientationOverride",
+        "\"emulation.setScreenOrientationOverride\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-value",
+      "for": [
+        "emulation.SetScreenOrientationOverride/method"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-emulationsetscreenorientationoverride-params",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-emulationsetscreenorientationoverride-params",
+      "linkingText": [
+        "params",
+        "\"params\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "emulation.SetScreenOrientationOverride"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-type-emulationscreenorientationnatural",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-type-emulationscreenorientationnatural",
+      "linkingText": [
+        "emulation.ScreenOrientationNatural"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-value-emulationscreenorientationnatural-portrait",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-value-emulationscreenorientationnatural-portrait",
+      "linkingText": [
+        "portrait",
+        "\"portrait\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-value",
+      "for": [
+        "emulation.ScreenOrientationNatural"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-value-emulationscreenorientationnatural-landscape",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-value-emulationscreenorientationnatural-landscape",
+      "linkingText": [
+        "landscape",
+        "\"landscape\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-value",
+      "for": [
+        "emulation.ScreenOrientationNatural"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-type-emulationscreenorientationtype",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-type-emulationscreenorientationtype",
+      "linkingText": [
+        "emulation.ScreenOrientationType"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-value-emulationscreenorientationtype-portrait-primary",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-value-emulationscreenorientationtype-portrait-primary",
+      "linkingText": [
+        "portrait-primary",
+        "\"portrait-primary\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-value",
+      "for": [
+        "emulation.ScreenOrientationType"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-value-emulationscreenorientationtype-portrait-secondary",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-value-emulationscreenorientationtype-portrait-secondary",
+      "linkingText": [
+        "portrait-secondary",
+        "\"portrait-secondary\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-value",
+      "for": [
+        "emulation.ScreenOrientationType"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-value-emulationscreenorientationtype-landscape-primary",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-value-emulationscreenorientationtype-landscape-primary",
+      "linkingText": [
+        "landscape-primary",
+        "\"landscape-primary\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-value",
+      "for": [
+        "emulation.ScreenOrientationType"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-value-emulationscreenorientationtype-landscape-secondary",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-value-emulationscreenorientationtype-landscape-secondary",
+      "linkingText": [
+        "landscape-secondary",
+        "\"landscape-secondary\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-value",
+      "for": [
+        "emulation.ScreenOrientationType"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-type-emulationscreenorientation",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-type-emulationscreenorientation",
+      "linkingText": [
+        "emulation.ScreenOrientation"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-emulationscreenorientation-natural",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-emulationscreenorientation-natural",
+      "linkingText": [
+        "natural",
+        "\"natural\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "emulation.ScreenOrientation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-emulationscreenorientation-type",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-emulationscreenorientation-type",
+      "linkingText": [
+        "type",
+        "\"type\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "emulation.ScreenOrientation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-type-emulationsetscreenorientationoverrideparameters",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-type-emulationsetscreenorientationoverrideparameters",
+      "linkingText": [
+        "emulation.SetScreenOrientationOverrideParameters"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-emulationsetscreenorientationoverrideparameters-screenorientation",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-emulationsetscreenorientationoverrideparameters-screenorientation",
+      "linkingText": [
+        "screenOrientation",
+        "\"screenOrientation\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "emulation.SetScreenOrientationOverrideParameters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-emulationsetscreenorientationoverrideparameters-contexts",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-emulationsetscreenorientationoverrideparameters-contexts",
+      "linkingText": [
+        "contexts",
+        "\"contexts\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "emulation.SetScreenOrientationOverrideParameters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cddl-key-emulationsetscreenorientationoverrideparameters-usercontexts",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-emulationsetscreenorientationoverrideparameters-usercontexts",
+      "linkingText": [
+        "userContexts",
+        "\"userContexts\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "emulation.SetScreenOrientationOverrideParameters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "set-emulated-screen-orientation",
+      "href": "https://w3c.github.io/webdriver-bidi/#set-emulated-screen-orientation",
+      "linkingText": [
+        "set emulated screen orientation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-emulation-setScreenOrientationOverride",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-emulation-setScreenOrientationOverride",
+        "title": "The emulation.setScreenOrientationOverride Command",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "modules-network",

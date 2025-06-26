@@ -802,7 +802,8 @@ browsingContext.UserPromptOpenedParameters = {
 }
 
 EmulationCommand = (
-  emulation.SetGeolocationOverride
+  emulation.SetGeolocationOverride //
+  emulation.SetScreenOrientationOverride
 )
 
 emulation.SetGeolocationOverride = (
@@ -831,6 +832,25 @@ emulation.GeolocationCoordinates = {
 
 emulation.GeolocationPositionError = {
    type: "positionUnavailable"
+}
+
+emulation.SetScreenOrientationOverride = (
+  method: "emulation.setScreenOrientationOverride",
+  params: emulation.SetScreenOrientationOverrideParameters
+)
+
+emulation.ScreenOrientationNatural = "portrait" / "landscape"
+emulation.ScreenOrientationType = "portrait-primary" / "portrait-secondary" / "landscape-primary" / "landscape-secondary"
+
+emulation.ScreenOrientation = {
+  natural: emulation.ScreenOrientationNatural,
+  type: emulation.ScreenOrientationType
+}
+
+emulation.SetScreenOrientationOverrideParameters = {
+  screenOrientation: emulation.ScreenOrientation / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
 }
 
 NetworkCommand = (
@@ -2631,7 +2651,8 @@ browsingContext.TraverseHistoryParameters = {
 }
 
 EmulationCommand = (
-  emulation.SetGeolocationOverride
+  emulation.SetGeolocationOverride //
+  emulation.SetScreenOrientationOverride
 )
 
 emulation.SetGeolocationOverride = (
@@ -2660,6 +2681,25 @@ emulation.GeolocationCoordinates = {
 
 emulation.GeolocationPositionError = {
    type: "positionUnavailable"
+}
+
+emulation.SetScreenOrientationOverride = (
+  method: "emulation.setScreenOrientationOverride",
+  params: emulation.SetScreenOrientationOverrideParameters
+)
+
+emulation.ScreenOrientationNatural = "portrait" / "landscape"
+emulation.ScreenOrientationType = "portrait-primary" / "portrait-secondary" / "landscape-primary" / "landscape-secondary"
+
+emulation.ScreenOrientation = {
+  natural: emulation.ScreenOrientationNatural,
+  type: emulation.ScreenOrientationType
+}
+
+emulation.SetScreenOrientationOverrideParameters = {
+  screenOrientation: emulation.ScreenOrientation / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
 }
 
 NetworkCommand = (
