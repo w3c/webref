@@ -5,16 +5,17 @@
   },
   "links": {
     "rawlinks": {
-      "http://ieeexplore.ieee.org/servlet/opac?punumber=4610933": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://encoding.spec.whatwg.org/": {},
       "https://github.com/WebAssembly/spec/issues": {},
       "https://github.com/WebAssembly/spec/issues/879": {},
       "https://github.com/WebAssembly/spec/issues?utf8=%E2%9C%93&q=is%3Aissue++": {},
       "https://html.spec.whatwg.org/multipage/": {},
+      "https://ieeexplore.ieee.org/document/8766229": {},
       "https://infra.spec.whatwg.org/": {},
       "https://tc39.es/ecma262/multipage/": {},
       "https://webassembly.github.io/spec/core/": {},
+      "https://webassembly.github.io/spec/js-api/": {},
       "https://webassembly.github.io/spec/web-api/index.html": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://www.w3.org/2004/01/pp-impl/101196/status": {},
@@ -38,6 +39,9 @@
       },
       "https://heycam.github.io/webidl/": {
         "anchors": [
+          "EnforceRange",
+          "idl-unsigned-long",
+          "js-unsigned-long",
           "create-a-namespace-object"
         ]
       },
@@ -88,7 +92,8 @@
           "sec-getiteratorfrommethod",
           "sec-tobigint64",
           "sec-toint32",
-          "sec-tonumber"
+          "sec-tonumber",
+          "sec-tobigint"
         ]
       },
       "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
@@ -127,18 +132,21 @@
         "anchors": [
           "sec-returnifabrupt-shorthands",
           "sec-native-error-types-used-in-this-standard-typeerror",
-          "sec-ecmascript-data-types-and-values",
+          "sec-object-type",
+          "sec-ecmascript-language-types-bigint-type",
+          "sec-ecmascript-language-types-number-type",
           "sec-arraybuffer-objects",
           "sec-native-error-types-used-in-this-standard-rangeerror",
           "sec-samevalue",
           "sec-built-in-function-objects",
           "current-realm",
           "%E2%84%A4",
+          "mathematical-value",
           "%F0%9D%94%BD",
-          "sec-ecmascript-language-types-number-type",
           "%E2%84%9D",
           "sec-makebasicobject",
           "sec-nativeerror-object-structure",
+          "sec-ecmascript-language-types-string-type",
           "sec-string.fromcharcode",
           "sec-string.prototype.charcodeat",
           "sec-string.fromcodepoint",
@@ -146,7 +154,13 @@
           "sec-string.prototype.concat",
           "sec-string.prototype.substring",
           "sec-isstrictlyequal",
-          "sec-islessthan"
+          "sec-islessthan",
+          "sec-array-exotic-objects"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/": {
+        "anchors": [
+          "appending/embedding.html"
         ]
       },
       "https://webassembly.github.io/spec/core/appendix/embedding.html": {
@@ -234,6 +248,11 @@
           "syntax-trap"
         ]
       },
+      "https://webassembly.github.io/spec/core/intro/introduction.html": {
+        "anchors": [
+          "scope"
+        ]
+      },
       "https://webassembly.github.io/spec/core/syntax/conventions.html": {
         "anchors": [
           "grammar-notation"
@@ -252,19 +271,29 @@
           "vector-types",
           "syntax-mut",
           "syntax-tagtype",
+          "syntax-memtype",
+          "syntax-addrtype",
           "syntax-reftype",
           "syntax-tabletype",
+          "syntax-limits",
           "heap-types"
         ]
       },
       "https://webassembly.github.io/spec/core/syntax/values.html": {
         "anchors": [
-          "syntax-float"
+          "syntax-float",
+          "syntax-int"
         ]
       },
       "https://webassembly.github.io/spec/core/valid/modules.html": {
         "anchors": [
           "valid-module"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/valid/types.html": {
+        "anchors": [
+          "valid-memtype",
+          "valid-tabletype"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -283,15 +312,16 @@
           "new",
           "upon-fulfillment",
           "upon-rejection",
+          "idl-any",
           "LegacyNamespace",
           "idl-DOMString",
-          "EnforceRange",
-          "idl-unsigned-long",
-          "idl-any",
           "idl-undefined",
           "dfn-throw",
           "dfn-associated-realm",
+          "abstract-opdef-converttoint",
           "Exposed",
+          "EnforceRange",
+          "idl-unsigned-long",
           "dfn-namespace-object"
         ]
       }
