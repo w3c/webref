@@ -218,10 +218,19 @@
           "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognition-started-slot\" id=\"ref-for-dom-speechrecognition-started-slot①\">[[started]]</a></code> to <code>true</code>.</p>"
         },
         {
-          "html": "<p>If <var>requestMicrophonePermission</var> is <code>true</code> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-request-permission-to-use\" id=\"ref-for-dfn-request-permission-to-use\">request permission to use</a> \"<code>microphone</code>\" is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-denied\" id=\"ref-for-dfn-denied\">\"denied\"</a>, abort\nthese steps.</p>"
+          "html": "If <var>requestMicrophonePermission</var> is <code>true</code> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-request-permission-to-use\" id=\"ref-for-dfn-request-permission-to-use\">request permission to use</a> \"<code>microphone</code>\" is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-denied\" id=\"ref-for-dfn-denied\">\"denied\"</a>:",
+          "rationale": "queue",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire①\">fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-error\" id=\"ref-for-eventdef-speechrecognition-error④\">error</a> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a> using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#speechrecognitionerrorevent\" id=\"ref-for-speechrecognitionerrorevent②\">SpeechRecognitionErrorEvent</a></code> with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionerrorevent-error\" id=\"ref-for-dom-speechrecognitionerrorevent-error②\">error</a></code> attribute initialized to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionerrorcode-not-allowed\" id=\"ref-for-dom-speechrecognitionerrorcode-not-allowed①\">not-allowed</a></code> and its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionerrorevent-message\" id=\"ref-for-dom-speechrecognitionerrorevent-message②\">message</a></code> attribute set to an implementation-defined string detailing the reason.</p>"
+            },
+            {
+              "html": "<p>Abort these steps.</p>"
+            }
+          ]
         },
         {
-          "html": "<p>Once the system is successfully listening to the recognition, queue a task to\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire①\">fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-start\" id=\"ref-for-eventdef-speechrecognition-start\">start</a> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>.</p>"
+          "html": "<p>Once the system is successfully listening to the recognition, queue a task to\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire②\">fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-start\" id=\"ref-for-eventdef-speechrecognition-start\">start</a> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>.</p>"
         }
       ]
     },
