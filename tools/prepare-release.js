@@ -67,14 +67,33 @@ async function computeDiff(type) {
   const majorVersion = majorVersionMatch ? '@' + majorVersionMatch[1] : '';
 
   // Install @webref package in tmp folder
+  // If package is pinned to a major version, we'll use that one.
+  // If not, what we want is to install the latest version of the package,
+  // where "latest" includes pre-releases. The `npm install` command skips
+  // pre-releases, so we need to retrieve the latest published version first
+  // through a call to `npm view`.
   const tmpFolder = fs.mkdtempSync(path.join(os.tmpdir(), "webref-"));
+  let versionToInstall = null;
+  if (majorVersion) {
+    versionToInstall = majorVersion;
+  }
+  else {
+    try {
+      const versionsStr = execSync(`npm view --json @webref/${packageName} versions`);
+      const versions = JSON.parse(versionsStr);
+      versionToInstall = versions.pop();
+    }
+    catch (err) {
+      throw new MissingPackageError(`No version found for package @webref/${packageName}.`);
+    }
+  }
   try {
-    execSync(`npm install @webref/${packageName}${majorVersion}`, {
+    execSync(`npm install @webref/${packageName}${versionToInstall}`, {
       cwd: tmpFolder
     });
   }
   catch (err) {
-    throw new MissingPackageError(`Package @webref/${packageName}${majorVersion} does not exist or could not be installed.`);
+    throw new MissingPackageError(`Package @webref/${packageName}${versionToInstall} does not exist or could not be installed.`);
   }
 
   // Extract released version (will be used in the body of the pre-release PR)
