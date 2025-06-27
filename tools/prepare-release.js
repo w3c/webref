@@ -64,7 +64,7 @@ MissingPackageError.prototype = Error.prototype;
 async function computeDiff(type) {
   const packageName = type.replace(/\d+$/, '');
   const majorVersionMatch = type.match(/(\d+)$/);
-  const majorVersion = majorVersionMatch ? '@' + majorVersionMatch[1] : '';
+  const majorVersion = majorVersionMatch ? majorVersionMatch[1] : '';
 
   // Install @webref package in tmp folder
   // If package is pinned to a major version, we'll use that one.
@@ -88,12 +88,12 @@ async function computeDiff(type) {
     }
   }
   try {
-    execSync(`npm install @webref/${packageName}${versionToInstall}`, {
+    execSync(`npm install @webref/${packageName}@${versionToInstall}`, {
       cwd: tmpFolder
     });
   }
   catch (err) {
-    throw new MissingPackageError(`Package @webref/${packageName}${versionToInstall} does not exist or could not be installed.`);
+    throw new MissingPackageError(`Package @webref/${packageName}@${versionToInstall} does not exist or could not be installed.`);
   }
 
   // Extract released version (will be used in the body of the pre-release PR)
