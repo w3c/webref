@@ -472,6 +472,36 @@
       "value": "( <style-query> ) | ( <style-feature> ) | <general-enclosed>"
     },
     {
+      "name": "<style-feature>",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-feature",
+      "type": "type",
+      "value": "<style-feature-plain> | <style-feature-boolean> | <style-range>"
+    },
+    {
+      "name": "<style-feature-plain>",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-feature-plain",
+      "type": "type",
+      "value": "<style-feature-name> : <style-feature-value>"
+    },
+    {
+      "name": "<style-feature-boolean>",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-feature-boolean",
+      "type": "type",
+      "value": "<style-feature-name>"
+    },
+    {
+      "name": "<style-range>",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-range",
+      "type": "type",
+      "value": "<style-range-value> <mf-comparison> <style-range-value> | <style-range-value> <mf-lt> <style-range-value> <mf-lt> <style-range-value> | <style-range-value> <mf-gt> <style-range-value> <mf-gt> <style-range-value>"
+    },
+    {
+      "name": "<style-range-value>",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-range-value",
+      "type": "type",
+      "value": "<custom-property-name> | <style-feature-value>"
+    },
+    {
       "name": "<scroll-state-query>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-scroll-state-query",
       "type": "type",
@@ -490,9 +520,15 @@
       "type": "type"
     },
     {
-      "name": "<style-feature>",
-      "prose": "A container style query allows querying the computed values of the query container. It is a boolean combination of individual style features (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is either the same as for a valid declaration [CSS-SYNTAX-3], a supported CSS property, or a <custom-property-name>.",
-      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-feature",
+      "name": "<style-feature-name>",
+      "prose": "A container style query allows querying the computed values of the query container. It is a boolean combination of individual style features (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is either the same as for a valid declaration[CSS-SYNTAX-3], a <style-feature-name> or a valid style range(<style-range>). The <style-feature-name> can be either a supported CSS property or a valid <custom-property-name>. The <style-feature-value> production matches any valid <declaration-value> as long as it doesn’t contain <mf-lt>, <mf-gt> and <mf-eq> tokens.",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-feature-name",
+      "type": "type"
+    },
+    {
+      "name": "<style-feature-value>",
+      "prose": "A container style query allows querying the computed values of the query container. It is a boolean combination of individual style features (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is either the same as for a valid declaration[CSS-SYNTAX-3], a <style-feature-name> or a valid style range(<style-range>). The <style-feature-name> can be either a supported CSS property or a valid <custom-property-name>. The <style-feature-value> production matches any valid <declaration-value> as long as it doesn’t contain <mf-lt>, <mf-gt> and <mf-eq> tokens.",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-feature-value",
       "type": "type"
     },
     {
