@@ -928,6 +928,12 @@
           ]
         },
         {
+          "html": "<p>For each <var>request id</var> → (<var>request</var>, <var>phase</var>, <var>response</var>)\n in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map\">blocked request map</a>:</p>",
+          "ignored": [
+            "Resume with \"continue request\", request id and (response, \"incomplete\")."
+          ]
+        },
+        {
           "html": "For each <var>collector</var> in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collectors\" id=\"ref-for-network-collectors\">network collectors</a>:",
           "rationale": "let",
           "steps": [
@@ -3444,7 +3450,7 @@
               "html": "<p>Let <var>valid entry</var> be false if <var>all steps</var>[<var>target index</var>] does not exist,\n or true otherwise.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume\">Resume</a> with \"<code>check history</code>\", <var>resume id</var>, and\n <var>valid entry</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①\">Resume</a> with \"<code>check history</code>\", <var>resume id</var>, and\n <var>valid entry</var>.</p>"
             }
           ]
         },
@@ -3478,7 +3484,7 @@
           "html": "<p>Let <var>navigation id</var> be <var>navigation status</var>’s id.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①\">Resume</a> with \"<code>page show</code>\", <var>navigation id</var>, and\n  <var>navigation status</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume②\">Resume</a> with \"<code>page show</code>\", <var>navigation id</var>, and\n  <var>navigation status</var>.</p>"
         }
       ]
     },
@@ -3492,7 +3498,7 @@
           "html": "<p>Let <var>navigation id</var> be <var>navigation status</var>’s id.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume②\">Resume</a> with \"<code>pop state</code>\", <var>navigation id</var>, and\n  <var>navigation status</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume③\">Resume</a> with \"<code>pop state</code>\", <var>navigation id</var>, and\n  <var>navigation status</var>.</p>"
         }
       ]
     },
@@ -3644,7 +3650,7 @@
           "html": "<p>Let <var>related navigables</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④①\">set</a> containing <var>navigable</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume③\">Resume</a> with \"<code>navigation started</code>\", <var>navigation id</var>, and\n <var>navigation status</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume④\">Resume</a> with \"<code>navigation started</code>\", <var>navigation id</var>, and\n <var>navigation status</var>.</p>"
         },
         {
           "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled②\">set of sessions for which an event is enabled</a>\n given \"<code>browsingContext.navigationStarted</code>\" and <var>related navigables</var>:",
@@ -3676,7 +3682,7 @@
           "html": "<p>Let <var>related navigable</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④②\">set</a> containing <var>navigable</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume④\">Resume</a> with \"<code>fragment navigated</code>\", <var>navigation id</var>, and\n <var>navigation status</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume⑤\">Resume</a> with \"<code>fragment navigated</code>\", <var>navigation id</var>, and\n <var>navigation status</var>.</p>"
         },
         {
           "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled③\">set of sessions for which an event is enabled</a>\n given \"<code>browsingContext.fragmentNavigated</code>\" and <var>related navigable</var>:",
@@ -3740,7 +3746,7 @@
           "html": "<p>Let <var>navigation id</var> be <var>navigation status</var>’s id.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume⑤\">Resume</a> with \"<code>domContentLoaded</code>\", <var>navigation id</var>, and\n <var>navigation status</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume⑥\">Resume</a> with \"<code>domContentLoaded</code>\", <var>navigation id</var>, and\n <var>navigation status</var>.</p>"
         },
         {
           "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled⑤\">set of sessions for which an event is enabled</a>\n given \"<code>browsingContext.domContentLoaded</code>\" and <var>related navigables</var>:",
@@ -3772,7 +3778,7 @@
           "html": "<p>Let <var>navigation id</var> be <var>navigation status</var>’s id.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume⑥\">Resume</a> with \"<code>load</code>\", <var>navigation id</var> and\n <var>navigation status</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume⑦\">Resume</a> with \"<code>load</code>\", <var>navigation id</var> and\n <var>navigation status</var>.</p>"
         },
         {
           "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled⑥\">set of sessions for which an event is enabled</a>\n given \"<code>browsingContext.load</code>\" and <var>related navigables</var>:",
@@ -3807,7 +3813,7 @@
           "html": "<p>Let <var>related navigables</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④⑥\">set</a> containing <var>navigable</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume⑦\">Resume</a> with \"<code>download started</code>\", <var>navigation id</var>, and <var>navigation status</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume⑧\">Resume</a> with \"<code>download started</code>\", <var>navigation id</var>, and <var>navigation status</var>.</p>"
         },
         {
           "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled⑦\">set of sessions for which an event is enabled</a>\n  given \"<code>browsingContext.downloadWillBegin</code>\" and <var>related navigables</var>:",
@@ -3874,7 +3880,7 @@
           "html": "<p>Let <var>related navigables</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④⑧\">set</a> containing <var>navigable</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume⑧\">Resume</a> with \"<code>navigation aborted</code>\", <var>navigation id</var>, and <var>navigation status</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume⑨\">Resume</a> with \"<code>navigation aborted</code>\", <var>navigation id</var>, and <var>navigation status</var>.</p>"
         },
         {
           "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled⑨\">set of sessions for which an event is enabled</a>\n given \"<code>browsingContext.navigationAborted</code>\" and <var>related navigables</var>:",
@@ -3906,7 +3912,7 @@
           "html": "<p>Let <var>navigation id</var> be <var>navigation status</var>’s id.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume⑨\">Resume</a> with \"<code>navigation committed</code>\", <var>navigation id</var>, and <var>navigation status</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⓪\">Resume</a> with \"<code>navigation committed</code>\", <var>navigation id</var>, and <var>navigation status</var>.</p>"
         },
         {
           "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled①⓪\">set of sessions for which an event is enabled</a>\n given \"<code>browsingContext.navigationCommitted</code>\" and <var>related navigables</var>:",
@@ -3938,7 +3944,7 @@
           "html": "<p>Let <var>related navigables</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑤⓪\">set</a> containing <var>navigable</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⓪\">Resume</a> with \"<code>navigation failed</code>\", <var>navigation id</var>, and <var>navigation status</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①①\">Resume</a> with \"<code>navigation failed</code>\", <var>navigation id</var>, and <var>navigation status</var>.</p>"
         },
         {
           "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled①①\">set of sessions for which an event is enabled</a>\n given \"<code>browsingContext.navigationFailed</code>\" and <var>related navigables</var>:",
@@ -4477,7 +4483,7 @@
           "html": "<p>Set <var>collected data</var>’s <code>pending</code> to false.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①①\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id②\">request id</a>, \"response\").</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①②\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id②\">request id</a>, \"response\").</p>"
         }
       ]
     },
@@ -4593,7 +4599,7 @@
           "html": "<p>Set <var>collected data</var>’s <code>size</code> to <var>size</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①②\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id④\">request id</a>, \"response\").</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①③\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id④\">request id</a>, \"response\").</p>"
         }
       ]
     },
@@ -4769,7 +4775,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map\">blocked request map</a>.</p>"
+          "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map①\">blocked request map</a>.</p>"
         },
         {
           "html": "<p>Let <var>request id</var> be <var>command parameters</var>[\"<code>request</code>\"].</p>"
@@ -6216,7 +6222,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map①\">blocked request map</a>.</p>"
+          "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map②\">blocked request map</a>.</p>"
         },
         {
           "html": "<p>Let <var>request id</var> be <var>command parameters</var>[\"<code>request</code>\"].</p>"
@@ -6360,7 +6366,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①③\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and (null,\n \"<code>incomplete</code>\").</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①④\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and (null,\n \"<code>incomplete</code>\").</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success④⑦\">success</a> with data null.</p>"
@@ -6379,7 +6385,7 @@
           "html": "<p>Let <var>response</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑤⓪\">trying</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#update-the-response\" id=\"ref-for-update-the-response\">update the response</a> with\n <var>session</var>, \"<code>continueResponse</code>\" and <var>command parameters</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①④\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and\n (<var>response</var>, \"<code>incomplete</code>\").</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⑤\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and\n (<var>response</var>, \"<code>incomplete</code>\").</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success④⑧\">success</a> with data null.</p>"
@@ -6392,7 +6398,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map②\">blocked request map</a>.</p>"
+          "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map③\">blocked request map</a>.</p>"
         },
         {
           "html": "<p>Let <var>request id</var> be <var>command parameters</var>[\"<code>request</code>\"].</p>"
@@ -6425,7 +6431,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⑤\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and\n (<var>response</var>, \"<code>incomplete</code>\").</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⑥\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and\n (<var>response</var>, \"<code>incomplete</code>\").</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success④⑨\">success</a> with data null.</p>"
@@ -6472,7 +6478,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map③\">blocked request map</a>.</p>"
+          "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map④\">blocked request map</a>.</p>"
         },
         {
           "html": "<p>Let <var>request id</var> be <var>command parameters</var>[\"<code>request</code>\"].</p>"
@@ -6490,7 +6496,7 @@
           "html": "<p>Let <var>response</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error\">network error</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⑥\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and\n (<var>response</var>, \"<code>complete</code>\").</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⑦\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and\n (<var>response</var>, \"<code>complete</code>\").</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑤①\">success</a> with data null.</p>"
@@ -6606,7 +6612,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⑦\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and\n (<var>response</var>,\"<code>complete</code>\").</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⑧\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and\n (<var>response</var>,\"<code>complete</code>\").</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑤③\">success</a> with data null.</p>"
@@ -6837,7 +6843,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map④\">blocked request map</a>.</p>"
+                  "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map⑤\">blocked request map</a>.</p>"
                 },
                 {
                   "html": "<p>Let <var>request id</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑦\">request id</a>.</p>"
@@ -6999,7 +7005,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map⑤\">blocked request map</a>.</p>"
+                  "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map⑥\">blocked request map</a>.</p>"
                 },
                 {
                   "html": "<p>Let <var>request id</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑧\">request id</a>.</p>"
@@ -7164,7 +7170,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map⑥\">blocked request map</a>.</p>"
+                  "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map⑦\">blocked request map</a>.</p>"
                 },
                 {
                   "html": "<p>Let <var>request id</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id①⓪\">request id</a>.</p>"

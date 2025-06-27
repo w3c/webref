@@ -16,7 +16,25 @@
       "name": ":state()",
       "value": ":state( <ident> )",
       "href": "https://drafts.csswg.org/selectors-5/#state-pseudo"
+    },
+    {
+      "name": ":heading",
+      "prose": "The (non-functional) :heading pseudo-class matches an element which has a heading level, with respect to the semantics defined by the document language (e.g. [HTML5]).",
+      "href": "https://drafts.csswg.org/selectors-5/#heading-pseudo",
+      "value": ":heading"
+    },
+    {
+      "name": ":heading()",
+      "prose": "As a functional pseudo-class, :heading() notation represents elements that have a heading level among An+B. The syntax is:",
+      "href": "https://drafts.csswg.org/selectors-5/#heading-functional-pseudo"
     }
   ],
-  "values": []
+  "values": [],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "::heading()",
+      "value": "::heading( <An+B># )"
+    }
+  ]
 }
