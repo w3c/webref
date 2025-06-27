@@ -28,6 +28,27 @@
           ]
         }
       ]
+    },
+    {
+      "name": "appearance/base-select",
+      "href": "https://drafts.csswg.org/css-ui-4/#valdef-appearance-base-select",
+      "html": "The effect of <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-ui-4/#valdef-appearance-base-select\" id=\"ref-for-valdef-appearance-base-select①\">base-select</a> depends on the element it is applied to:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "The select element or ::picker(select)",
+              "html": "<p>The element is rendered as for <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-ui-4/#valdef-appearance-base\" id=\"ref-for-valdef-appearance-base②\">base</a>.</p>"
+            },
+            {
+              "case": "Everything else",
+              "html": "<p>The element is rendered as for <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-ui-4/#valdef-appearance-auto\" id=\"ref-for-valdef-appearance-auto②\">auto</a>.</p>"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

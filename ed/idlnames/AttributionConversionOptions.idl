@@ -1,4 +1,4 @@
-// Source: Attribution: Level 1 (https://www.w3.org/TR/privacy-preserving-attribution/)
+// Source: Attribution Level 1 (https://www.w3.org/TR/privacy-preserving-attribution/)
 dictionary AttributionConversionOptions {
   required USVString aggregationService;
   double epsilon = 1.0;
@@ -6,7 +6,7 @@ dictionary AttributionConversionOptions {
   required unsigned long histogramSize;
 
   unsigned long lookbackDays;
-  sequence<unsigned long> matchValue = [];
+  sequence<unsigned long> matchValues = [];
   sequence<USVString> impressionSites = [];
   sequence<USVString> impressionCallers = [];
 

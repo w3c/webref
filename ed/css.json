@@ -2336,7 +2336,7 @@
         "WebkitAppearance",
         "webkitAppearance"
       ],
-      "syntax": "none | auto | base | <compat-auto> | <compat-special> | base"
+      "syntax": "none | auto | base | base-select | <compat-auto> | <compat-special> | base"
     },
     {
       "name": "-webkit-backface-visibility",
@@ -3510,7 +3510,7 @@
       "styleDeclaration": [
         "appearance"
       ],
-      "syntax": "none | auto | base | <compat-auto> | <compat-special> | base"
+      "syntax": "none | auto | base | base-select | <compat-auto> | <compat-special> | base"
     },
     {
       "name": "aspect-ratio",
@@ -17418,8 +17418,32 @@
     },
     {
       "name": "style-feature",
-      "prose": "A container style query allows querying the computed values of the query container. It is a boolean combination of individual style features (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is either the same as for a valid declaration [CSS-SYNTAX-3], a supported CSS property, or a <custom-property-name>.",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-feature",
+      "type": "type",
+      "syntax": "<style-feature-plain> | <style-feature-boolean> | <style-range>"
+    },
+    {
+      "name": "style-feature-boolean",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-feature-boolean",
+      "type": "type",
+      "syntax": "<style-feature-name>"
+    },
+    {
+      "name": "style-feature-name",
+      "prose": "A container style query allows querying the computed values of the query container. It is a boolean combination of individual style features (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is either the same as for a valid declaration[CSS-SYNTAX-3], a <style-feature-name> or a valid style range(<style-range>). The <style-feature-name> can be either a supported CSS property or a valid <custom-property-name>. The <style-feature-value> production matches any valid <declaration-value> as long as it doesn’t contain <mf-lt>, <mf-gt> and <mf-eq> tokens.",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-feature-name",
+      "type": "type"
+    },
+    {
+      "name": "style-feature-plain",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-feature-plain",
+      "type": "type",
+      "syntax": "<style-feature-name> : <style-feature-value>"
+    },
+    {
+      "name": "style-feature-value",
+      "prose": "A container style query allows querying the computed values of the query container. It is a boolean combination of individual style features (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is either the same as for a valid declaration[CSS-SYNTAX-3], a <style-feature-name> or a valid style range(<style-range>). The <style-feature-name> can be either a supported CSS property or a valid <custom-property-name>. The <style-feature-value> production matches any valid <declaration-value> as long as it doesn’t contain <mf-lt>, <mf-gt> and <mf-eq> tokens.",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-feature-value",
       "type": "type"
     },
     {
@@ -17433,6 +17457,18 @@
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-query",
       "type": "type",
       "syntax": "not <style-in-parens> | <style-in-parens> [ [ and <style-in-parens> ]* | [ or <style-in-parens> ]* ] | <style-feature>"
+    },
+    {
+      "name": "style-range",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-range",
+      "type": "type",
+      "syntax": "<style-range-value> <mf-comparison> <style-range-value> | <style-range-value> <mf-lt> <style-range-value> <mf-lt> <style-range-value> | <style-range-value> <mf-gt> <style-range-value> <mf-gt> <style-range-value>"
+    },
+    {
+      "name": "style-range-value",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-range-value",
+      "type": "type",
+      "syntax": "<custom-property-name> | <style-feature-value>"
     },
     {
       "name": "subclass-selector",
