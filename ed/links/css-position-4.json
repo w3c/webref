@@ -32,7 +32,11 @@
       "https://drafts.csswg.org/css-content-3/": {},
       "https://drafts.csswg.org/css-display/": {},
       "https://drafts.csswg.org/css-easing/": {},
-      "https://drafts.csswg.org/css-overflow-3/": {},
+      "https://drafts.csswg.org/css-overflow-3/": {
+        "anchors": [
+          "scrollable"
+        ]
+      },
       "https://drafts.csswg.org/css-position-3/": {},
       "https://drafts.csswg.org/css-pseudo-4/": {},
       "https://drafts.csswg.org/css-tables-3/": {},
@@ -87,22 +91,26 @@
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
-          "concept-tree-order",
-          "concept-element",
           "document",
+          "concept-element",
           "concept-shadow-including-inclusive-ancestor",
           "concept-node-document",
-          "element"
+          "element",
+          "concept-tree-order"
         ]
       },
       "https://drafts.csswg.org/css-anchor-position-1/": {
         "anchors": [
-          "propdef-position-area"
+          "propdef-position-area",
+          "valdef-position-area-none"
         ]
       },
       "https://drafts.csswg.org/css-box-4/": {
         "anchors": [
-          "padding-box"
+          "padding-box",
+          "padding-edge",
+          "padding",
+          "margin-box"
         ]
       },
       "https://drafts.csswg.org/css-break-4/": {
@@ -128,10 +136,14 @@
       },
       "https://drafts.csswg.org/css-display-4/": {
         "anchors": [
-          "box-tree",
-          "initial-containing-block",
           "containing-block",
+          "initial-containing-block",
           "box",
+          "propdef-display",
+          "valdef-display-contents",
+          "valdef-display-block",
+          "propdef-visibility",
+          "box-tree",
           "principal-box",
           "root-element",
           "block-level-box",
@@ -140,12 +152,7 @@
           "replaced-element",
           "inline-box",
           "css-text-sequence",
-          "block-box",
-          "containing-block-chain",
-          "propdef-display",
-          "valdef-display-contents",
-          "valdef-display-block",
-          "propdef-visibility"
+          "block-box"
         ]
       },
       "https://drafts.csswg.org/css-easing-2/": {
@@ -160,7 +167,8 @@
         "anchors": [
           "scroll-container",
           "scrollport",
-          "scrollable-overflow-rectangle",
+          "scrollable-overflow-region",
+          "scrollable-overflow",
           "propdef-overflow"
         ]
       },
@@ -170,9 +178,15 @@
           "absolute-position",
           "fixed-position",
           "absolute-positioning-containing-block",
+          "fixed-positioning-containing-block",
           "propdef-position",
           "valdef-position-fixed",
           "valdef-position-absolute"
+        ]
+      },
+      "https://drafts.csswg.org/css-pseudo-4/": {
+        "anchors": [
+          "fully-styleable"
         ]
       },
       "https://drafts.csswg.org/css-tables-3/": {
@@ -182,7 +196,8 @@
       },
       "https://drafts.csswg.org/css-transitions-1/": {
         "anchors": [
-          "propdef-transition"
+          "propdef-transition",
+          "transitions"
         ]
       },
       "https://drafts.csswg.org/css-ui-4/": {
@@ -203,8 +218,8 @@
       },
       "https://drafts.csswg.org/selectors-4/": {
         "anchors": [
-          "pseudo-element",
-          "originating-element"
+          "originating-element",
+          "pseudo-element"
         ]
       },
       "https://drafts.fxtf.org/css-masking-1/": {
@@ -225,11 +240,6 @@
         "anchors": [
           "x34",
           "x43"
-        ]
-      },
-      "https://www.w3.org/TR/css-pseudo-4/": {
-        "anchors": [
-          "tree-abiding"
         ]
       }
     }
