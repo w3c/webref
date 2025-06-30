@@ -5091,7 +5091,7 @@
           "html": "<p>Let <var>secure</var> be true if <var>stored cookie</var>’s secure-only-flag is true, or false\n otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>same site</var> be \"<code>none</code>\" if <var>stored cookie</var>’s samesite-flag is\n \"<code>None</code>\", \"<code>lax</code>\" if it is \"<code>Lax</code>\", or\n \"<code>strict</code>\" if it is \"<code>Strict</code>\".</p>"
+          "html": "<p>Let <var>same site</var> be \"<code>none</code>\" if <var>stored cookie</var>’s same-site-flag is\n \"<code>None</code>\", \"<code>lax</code>\" if it is \"<code>Lax</code>\",\n \"<code>strict</code>\" if it is \"<code>Strict</code>\", or\n \"<code>default</code>\" if it is \"<code>Default</code>\"</p>"
         },
         {
           "html": "<p>Return a map matching the <code>network.Cookie</code> production,\n with the <code>name</code> field set to <var>name</var>, the <code>value</code> field\n set to <var>value</var>, the <code>domain</code> field set to <var>domain</var>, the\n <code>path</code> field set to <var>path</var>, the <code>expiry</code> field set to\n <var>expiry</var> if it’s not null, or omitted otherwise, the <code>size</code> field\n set to <var>size</var>, the <code>httpOnly</code> field set to <var>http only</var>, the\n <code>secure</code> field set to <var>secure</var>, and the <code>sameSite</code>\n field set to <var>same site</var>.</p>"
