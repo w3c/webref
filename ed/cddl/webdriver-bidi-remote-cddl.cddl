@@ -585,7 +585,7 @@ network.Collector = text
 
 network.CollectorType = "blob"
 
-network.SameSite = "strict" / "lax" / "none"
+network.SameSite = "strict" / "lax" / "none" / "default"
 
 network.Cookie = {
     name: text,
@@ -595,8 +595,8 @@ network.Cookie = {
     size: js-uint,
     httpOnly: bool,
     secure: bool,
-    sameSite: network.SameSite,
     ? expiry: js-uint,
+    sameSite: network.SameSite,
     Extensible,
 }
 
@@ -2119,7 +2119,7 @@ network.Collector = text
 
 network.CollectorType = "blob"
 
-network.SameSite = "strict" / "lax" / "none"
+network.SameSite = "strict" / "lax" / "none" / "default"
 
 network.Cookie = {
     name: text,
@@ -2129,8 +2129,8 @@ network.Cookie = {
     size: js-uint,
     httpOnly: bool,
     secure: bool,
-    sameSite: network.SameSite,
     ? expiry: js-uint,
+    sameSite: network.SameSite,
     Extensible,
 }
 
@@ -3575,7 +3575,7 @@ network.Collector = text
 
 network.CollectorType = "blob"
 
-network.SameSite = "strict" / "lax" / "none"
+network.SameSite = "strict" / "lax" / "none" / "default"
 
 network.Cookie = {
     name: text,
@@ -3585,8 +3585,8 @@ network.Cookie = {
     size: js-uint,
     httpOnly: bool,
     secure: bool,
-    sameSite: network.SameSite,
     ? expiry: js-uint,
+    sameSite: network.SameSite,
     Extensible,
 }
 
