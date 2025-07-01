@@ -6,7 +6,7 @@
       "title": "WebTransport",
       "url": "https://www.w3.org/TR/webtransport/"
     },
-    "fragment": "[Exposed=*, SecureContext]\ninterface WebTransportWriter : WritableStreamDefaultWriter {\n  Promise<undefined> atomicWrite(optional any chunk);\n};",
+    "fragment": "[Exposed=*, SecureContext]\ninterface WebTransportWriter : WritableStreamDefaultWriter {\n  Promise<undefined> atomicWrite(optional any chunk);\n  undefined commit();\n};",
     "href": "https://w3c.github.io/webtransport/#webtransportwriter"
   },
   "extended": [],

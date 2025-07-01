@@ -7155,7 +7155,7 @@
         "href": "https://dom.spec.whatwg.org/#element"
       },
       "ShadowRootInit": {
-        "fragment": "dictionary ShadowRootInit {\n  required ShadowRootMode mode;\n  boolean delegatesFocus = false;\n  SlotAssignmentMode slotAssignment = \"named\";\n  boolean clonable = false;\n  boolean serializable = false;\n  CustomElementRegistry customElementRegistry;\n};",
+        "fragment": "dictionary ShadowRootInit {\n  required ShadowRootMode mode;\n  boolean delegatesFocus = false;\n  SlotAssignmentMode slotAssignment = \"named\";\n  boolean clonable = false;\n  boolean serializable = false;\n  CustomElementRegistry? customElementRegistry = null;\n};",
         "type": "dictionary",
         "name": "ShadowRootInit",
         "inheritance": null,
@@ -7260,11 +7260,13 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "CustomElementRegistry"
             },
-            "default": null,
+            "default": {
+              "type": "null"
+            },
             "required": false,
             "href": "https://dom.spec.whatwg.org/#dom-shadowrootinit-customelementregistry"
           }

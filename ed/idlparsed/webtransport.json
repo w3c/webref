@@ -1935,7 +1935,7 @@
         "href": "https://w3c.github.io/webtransport/#webtransportbidirectionalstream"
       },
       "WebTransportWriter": {
-        "fragment": "[Exposed=*, SecureContext]\ninterface WebTransportWriter : WritableStreamDefaultWriter {\n  Promise<undefined> atomicWrite(optional any chunk);\n};",
+        "fragment": "[Exposed=*, SecureContext]\ninterface WebTransportWriter : WritableStreamDefaultWriter {\n  Promise<undefined> atomicWrite(optional any chunk);\n  undefined commit();\n};",
         "type": "interface",
         "name": "WebTransportWriter",
         "inheritance": "WritableStreamDefaultWriter",
@@ -1981,6 +1981,22 @@
             "extAttrs": [],
             "special": "",
             "href": "https://w3c.github.io/webtransport/#dom-webtransportwriter-atomicwrite"
+          },
+          {
+            "type": "operation",
+            "name": "commit",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://w3c.github.io/webtransport/#dom-webtransportwriter-commit"
           }
         ],
         "extAttrs": [

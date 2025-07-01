@@ -2,4 +2,5 @@
 [Exposed=*, SecureContext]
 interface WebTransportWriter : WritableStreamDefaultWriter {
   Promise<undefined> atomicWrite(optional any chunk);
+  undefined commit();
 };
