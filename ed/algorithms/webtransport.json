@@ -1500,7 +1500,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>stream</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new⑥\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream①③\">WebTransportSendStream</a></code>, with:</p>\n      <dl>\n       <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-internalstream-slot\" id=\"ref-for-dom-webtransportsendstream-internalstream-slot\">[[InternalStream]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>internalStream</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-pendingoperation-slot\" id=\"ref-for-dom-webtransportsendstream-pendingoperation-slot②\">[[PendingOperation]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>null</p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-transport-slot\" id=\"ref-for-dom-webtransportsendstream-transport-slot①\">[[Transport]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>transport</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-sendgroup-slot\" id=\"ref-for-dom-webtransportsendstream-sendgroup-slot②\">[[SendGroup]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>sendGroup</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-sendorder-slot\" id=\"ref-for-dom-webtransportsendstream-sendorder-slot②\">[[SendOrder]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>sendOrder</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-atomicwriterequests-slot\" id=\"ref-for-dom-webtransportsendstream-atomicwriterequests-slot\">[[AtomicWriteRequests]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>An empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑨\">ordered set</a> of promises.</p>\n      </dd></dl>"
+          "html": "<p>Let <var>stream</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new⑥\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream①③\">WebTransportSendStream</a></code>, with:</p>\n      <dl>\n       <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-internalstream-slot\" id=\"ref-for-dom-webtransportsendstream-internalstream-slot\">[[InternalStream]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>internalStream</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-pendingoperation-slot\" id=\"ref-for-dom-webtransportsendstream-pendingoperation-slot②\">[[PendingOperation]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>null</p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-transport-slot\" id=\"ref-for-dom-webtransportsendstream-transport-slot①\">[[Transport]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>transport</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-sendgroup-slot\" id=\"ref-for-dom-webtransportsendstream-sendgroup-slot②\">[[SendGroup]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>sendGroup</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-sendorder-slot\" id=\"ref-for-dom-webtransportsendstream-sendorder-slot②\">[[SendOrder]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>sendOrder</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-atomicwriterequests-slot\" id=\"ref-for-dom-webtransportsendstream-atomicwriterequests-slot\">[[AtomicWriteRequests]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>An empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑨\">ordered set</a> of promises.</p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-byteswritten-slot\" id=\"ref-for-dom-webtransportsendstream-byteswritten-slot\">[[BytesWritten]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>0</p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-committedoffset-slot\" id=\"ref-for-dom-webtransportsendstream-committedoffset-slot\">[[CommittedOffset]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>0</p>\n      </dd></dl>"
         },
         {
           "html": "<p>Let <var>writeAlgorithm</var> be an action that <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransportsendstream-write\" id=\"ref-for-webtransportsendstream-write\">writes</a> <var>chunk</var> to <var>stream</var>, given <var>chunk</var>.</p>"
@@ -1606,6 +1606,9 @@
                   "html": "<p>Set <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-pendingoperation-slot\" id=\"ref-for-dom-webtransportsendstream-pendingoperation-slot⑧\">[[PendingOperation]]</a></code> to null.</p>"
                 },
                 {
+                  "html": "<p>Add the length of <var>bytes</var> to <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-byteswritten-slot\" id=\"ref-for-dom-webtransportsendstream-byteswritten-slot①\">[[BytesWritten]]</a></code>.</p>"
+                },
+                {
                   "html": "<p>If <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-atomicwriterequests-slot\" id=\"ref-for-dom-webtransportsendstream-atomicwriterequests-slot②\">[[AtomicWriteRequests]]</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contains</a> <var>inFlightWriteRequest</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">remove</a> <var>inFlightWriteRequest</var>.</p>"
                 },
                 {
@@ -1695,11 +1698,14 @@
           "html": "<p>If <var>code</var> &gt; 4294967295, then set <var>code</var> to 4294967295.</p>"
         },
         {
+          "html": "<p>Let <var>committedOffset</var> be <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-committedoffset-slot\" id=\"ref-for-dom-webtransportsendstream-committedoffset-slot①\">[[CommittedOffset]]</a></code>.</p>"
+        },
+        {
           "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①④\">in parallel</a>:",
           "rationale": "reset",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-reset\" id=\"ref-for-stream-reset①\">Reset</a> <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-internalstream-slot\" id=\"ref-for-dom-webtransportsendstream-internalstream-slot④\">[[InternalStream]]</a></code> with <var>code</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-reset\" id=\"ref-for-stream-reset②\">Reset</a> <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-internalstream-slot\" id=\"ref-for-dom-webtransportsendstream-internalstream-slot④\">[[InternalStream]]</a></code>\n  with <var>code</var> and <var>committedOffset</var>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②⑧\">Queue a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects③⑥\">resolve</a> <var>promise</var> with undefined.</p>"
@@ -2047,7 +2053,7 @@
           "html": "<p>Let <var>transport</var> be <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportreceivestream-transport-slot\" id=\"ref-for-dom-webtransportreceivestream-transport-slot③\">[[Transport]]</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>code</var> be the application protocol error code attached to the RESET_STREAM frame. <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webtransport/#biblio-quic\" title=\"QUIC: A UDP-Based Multiplexed and Secure Transport\">[QUIC]</a></p>"
+          "html": "<p>Let <var>code</var> be the application protocol error code attached to the RESET_STREAM_AT or WT_RESET_STREAM frame.\n <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webtransport/#biblio-reliable-reset\" title=\"QUIC Stream Resets with Partial Delivery\">[RELIABLE-RESET]</a> <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webtransport/#biblio-web-transport-http2\" title=\"WebTransport over HTTP/2\">[WEB-TRANSPORT-HTTP2]</a></p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task③④\">Queue a network task</a> with <var>transport</var> to run these steps:",
@@ -2115,6 +2121,20 @@
               "html": "<p>Return undefined.</p>"
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "WebTransportWriter/commit()",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportwriter-commit",
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportwriter-commit\" id=\"ref-for-dom-webtransportwriter-commit②\">commit</a></code> is called for <var>stream</var>, the user agent MUST run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>transport</var> be <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-transport-slot\" id=\"ref-for-dom-webtransportsendstream-transport-slot⑥\">[[Transport]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-committedoffset-slot\" id=\"ref-for-dom-webtransportsendstream-committedoffset-slot③\">[[CommittedOffset]]</a></code>\n  to the value of <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-byteswritten-slot\" id=\"ref-for-dom-webtransportsendstream-byteswritten-slot③\">[[BytesWritten]]</a></code>.</p>"
         }
       ]
     },
