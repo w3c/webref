@@ -350,22 +350,59 @@
       "id": "api-surface",
       "href": "https://www.w3.org/TR/design-principles/#api-surface",
       "level": 2,
-      "title": "JavaScript API Surface Concerns",
+      "title": "Designing JavaScript APIs",
       "number": "6"
+    },
+    {
+      "id": "webidl-dictionaries-interfaces-namespaces",
+      "href": "https://www.w3.org/TR/design-principles/#webidl-dictionaries-interfaces-namespaces",
+      "level": 3,
+      "title": "Use WebIDL dictionaries, interfaces, and namespaces appropriately",
+      "number": "6.1"
+    },
+    {
+      "id": "dictionaries-for-configuration",
+      "href": "https://www.w3.org/TR/design-principles/#dictionaries-for-configuration",
+      "level": 4,
+      "title": "Use Dictionaries for “Configuration” or “Input-Only” Data"
+    },
+    {
+      "id": "interface-for-functionality-state-identity",
+      "href": "https://www.w3.org/TR/design-principles/#interface-for-functionality-state-identity",
+      "level": 4,
+      "title": "Choose an Interface for Functionality, State, and Identity"
+    },
+    {
+      "id": "interface-serializer",
+      "href": "https://www.w3.org/TR/design-principles/#interface-serializer",
+      "level": 4,
+      "title": "Provide a serializer to make interface data more accessible"
+    },
+    {
+      "id": "namespace-to-avoid-fake-classes",
+      "href": "https://www.w3.org/TR/design-principles/#namespace-to-avoid-fake-classes",
+      "level": 4,
+      "title": "Choose a namespace to Avoid “Fake Classes” for Behavior-Only Utilities"
+    },
+    {
+      "id": "pseudo-namespaces",
+      "href": "https://www.w3.org/TR/design-principles/#pseudo-namespaces",
+      "level": 4,
+      "title": "\"Pseudo-namespaces\""
     },
     {
       "id": "attributes-like-data",
       "href": "https://www.w3.org/TR/design-principles/#attributes-like-data",
       "level": 3,
       "title": "Attributes should behave like data properties",
-      "number": "6.1"
+      "number": "6.2"
     },
     {
       "id": "live-vs-static",
       "href": "https://www.w3.org/TR/design-principles/#live-vs-static",
       "level": 3,
       "title": "Consider whether objects should be live or static",
-      "number": "6.2"
+      "number": "6.3"
     },
     {
       "id": "live-objects",
@@ -384,56 +421,56 @@
       "href": "https://www.w3.org/TR/design-principles/#attributes-vs-methods",
       "level": 3,
       "title": "Accessors should behave like properties, not methods",
-      "number": "6.3"
+      "number": "6.4"
     },
     {
       "id": "prefer-dictionaries",
       "href": "https://www.w3.org/TR/design-principles/#prefer-dictionaries",
       "level": 3,
       "title": "Accept optional and/or primitive arguments through dictionaries",
-      "number": "6.4"
+      "number": "6.5"
     },
     {
       "id": "optional-parameters",
       "href": "https://www.w3.org/TR/design-principles/#optional-parameters",
       "level": 3,
       "title": "Make method arguments optional if possible",
-      "number": "6.5"
+      "number": "6.6"
     },
     {
       "id": "naming-optional-parameters",
       "href": "https://www.w3.org/TR/design-principles/#naming-optional-parameters",
       "level": 3,
       "title": "Name optional arguments appropriately",
-      "number": "6.6"
+      "number": "6.7"
     },
     {
       "id": "overloading",
       "href": "https://www.w3.org/TR/design-principles/#overloading",
       "level": 3,
       "title": "Use overloading wisely",
-      "number": "6.7"
+      "number": "6.8"
     },
     {
       "id": "constructors",
       "href": "https://www.w3.org/TR/design-principles/#constructors",
       "level": 3,
       "title": "Classes should have constructors when possible",
-      "number": "6.8"
+      "number": "6.9"
     },
     {
       "id": "synchronous",
       "href": "https://www.w3.org/TR/design-principles/#synchronous",
       "level": 3,
       "title": "Be synchronous when appropriate",
-      "number": "6.9"
+      "number": "6.10"
     },
     {
       "id": "promises",
       "href": "https://www.w3.org/TR/design-principles/#promises",
       "level": 3,
       "title": "Design asynchronous APIs using Promises",
-      "number": "6.10"
+      "number": "6.11"
     },
     {
       "id": "sync-callbacks",
@@ -446,35 +483,35 @@
       "href": "https://www.w3.org/TR/design-principles/#aborting",
       "level": 3,
       "title": "Cancel asynchronous APIs/operations using AbortSignal",
-      "number": "6.11"
+      "number": "6.12"
     },
     {
       "id": "string-constants",
       "href": "https://www.w3.org/TR/design-principles/#string-constants",
       "level": 3,
       "title": "Use strings for constants and enums",
-      "number": "6.12"
+      "number": "6.13"
     },
     {
       "id": "async-by-default",
       "href": "https://www.w3.org/TR/design-principles/#async-by-default",
       "level": 3,
       "title": "If you need both asynchronous and synchronous methods, synchronous is the exception",
-      "number": "6.13"
+      "number": "6.14"
     },
     {
       "id": "uint8array",
       "href": "https://www.w3.org/TR/design-principles/#uint8array",
       "level": 3,
       "title": "Output an array of bytes with Uint8Array",
-      "number": "6.14"
+      "number": "6.15"
     },
     {
       "id": "void-functions",
       "href": "https://www.w3.org/TR/design-principles/#void-functions",
       "level": 3,
       "title": "Return undefined from side-effect-causing functions",
-      "number": "6.15"
+      "number": "6.16"
     },
     {
       "id": "event-design",
