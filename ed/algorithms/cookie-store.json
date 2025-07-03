@@ -645,6 +645,9 @@
           "html": "<p>If <var>name</var> or <var>value</var> contain U+003B (;), any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#c0-control\" id=\"ref-for-c0-control\">C0 control</a> character except U+0009 TAB, or U+007F DELETE, then return failure.</p>"
         },
         {
+          "html": "<p>If <var>name</var> contains U+003D (=), then return failure.</p>"
+        },
+        {
           "html": "If <var>name</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length\">length</a> is 0:",
           "rationale": "if",
           "steps": [
