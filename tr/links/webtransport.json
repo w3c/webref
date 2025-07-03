@@ -6,11 +6,17 @@
   "links": {
     "rawlinks": {
       "http://www.ecma-international.org/ecma-262/6.0/index.html": {},
-      "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-http2/": {},
+      "https://datatracker.ietf.org/doc/html/draft-ietf-quic-reliable-stream-reset": {},
+      "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-http2": {},
+      "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-http3": {
+        "anchors": [
+          "section-4.1",
+          "section-4.2"
+        ]
+      },
       "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-http3/": {
         "anchors": [
-          "section-3.4",
-          "section-4.6",
+          "section-4.7",
           "section-4.3"
         ]
       },
@@ -34,6 +40,18 @@
           "section-4.3-5"
         ]
       },
+      "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview-09": {
+        "anchors": [
+          "section-4.1-2.2.1",
+          "section-3.1"
+        ]
+      },
+      "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview-09/": {
+        "anchors": [
+          "section-4.1",
+          "section-3.1"
+        ]
+      },
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://datatracker.ietf.org/doc/html/rfc9221": {
         "anchors": [
@@ -52,7 +70,6 @@
           "network-partition-keys"
         ]
       },
-      "https://github.com/ietf-wg-webtrans/draft-ietf-webtrans-overview/issues/15": {},
       "https://github.com/w3c/webtransport/": {},
       "https://github.com/w3c/webtransport/issues": {},
       "https://html.spec.whatwg.org/multipage/": {},
@@ -100,10 +117,15 @@
       "https://www.rfc-editor.org/rfc/rfc7301": {},
       "https://www.rfc-editor.org/rfc/rfc8174": {},
       "https://www.rfc-editor.org/rfc/rfc8422": {},
-      "https://www.rfc-editor.org/rfc/rfc8446": {},
+      "https://www.rfc-editor.org/rfc/rfc8446": {
+        "anchors": [
+          "section-7.3"
+        ]
+      },
       "https://www.rfc-editor.org/rfc/rfc9000": {
         "anchors": [
-          "section-19.11"
+          "section-19.11",
+          "section-3.2"
         ]
       },
       "https://www.rfc-editor.org/rfc/rfc9002": {
@@ -121,17 +143,13 @@
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/CSP3/": {},
       "https://www.w3.org/TR/hr-time-3/": {},
-      "https://www.w3.org/TR/privacy-principles/": {
-        "anchors": [
-          "dfn-cross-site-recognition"
-        ]
-      },
       "https://www.w3.org/TR/string-meta/": {
         "anchors": [
           "firststrong"
         ]
       },
       "https://www.w3.org/TR/webrtc/": {},
+      "https://www.w3.org/TR/webtransport/": {},
       "https://www.w3.org/community/ortc/": {},
       "https://www.w3.org/groups/wg/webtransport": {},
       "https://www.w3.org/policies/patent-policy/": {
@@ -149,8 +167,8 @@
     "autolinks": {
       "http://www.ecma-international.org/ecma-262/6.0/index.html": {
         "anchors": [
-          "table-49",
-          "sec-promise-objects"
+          "sec-promise-objects",
+          "table-49"
         ]
       },
       "https://dom.spec.whatwg.org/": {
@@ -232,10 +250,10 @@
           "isomorphic-encode",
           "byte-sequence",
           "implementation-defined",
+          "ordered-set",
           "queue-dequeue",
           "queue-enqueue",
           "iteration-break",
-          "ordered-set",
           "abort-when",
           "code-unit-prefix",
           "byte-sequence-length",
@@ -251,21 +269,21 @@
       },
       "https://streams.spec.whatwg.org/": {
         "anchors": [
-          "readablestream",
           "writablestream",
+          "writablestream-set-up",
+          "writablestream-set-up-writealgorithm",
+          "default-writer-ready",
+          "writablestream-error",
+          "readablestream",
           "high-water-mark",
           "readablestream-current-byob-request-view",
           "readablestream-pull-from-bytes",
           "readablestream-enqueue",
-          "default-writer-ready",
           "readablestream-set-up-with-byte-reading-support",
           "readablestream-set-up-with-byte-reading-support-pullalgorithm",
           "readablestream-set-up-highwatermark",
-          "writablestream-set-up",
-          "writablestream-set-up-writealgorithm",
           "readablestream-set-up",
           "readablestream-set-up-pullalgorithm",
-          "writablestream-error",
           "readablestream-error",
           "readablestream-close",
           "writablestream-close",
@@ -296,25 +314,34 @@
           "concept-url-fragment"
         ]
       },
+      "https://w3ctag.github.io/privacy-principles/": {
+        "anchors": [
+          "dfn-cross-site-recognition"
+        ]
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "Exposed",
           "SecureContext",
-          "idl-unsigned-long",
-          "idl-unrestricted-double",
+          "idl-long-long",
           "new",
           "this",
           "dfn-throw",
-          "exceptiondef-rangeerror",
-          "buffersource-byte-length",
+          "invalidstateerror",
+          "BufferSource",
           "a-promise-rejected-with",
-          "idl-DataView",
           "exceptiondef-typeerror",
           "a-promise-resolved-with",
+          "idl-unsigned-long",
+          "idl-unrestricted-double",
+          "exceptiondef-rangeerror",
+          "buffersource-byte-length",
+          "idl-DataView",
           "idl-Uint8Array",
-          "BufferSource",
           "idl-USVString",
           "idl-promise",
+          "NewObject",
+          "idl-ArrayBuffer",
           "idl-undefined",
           "EnforceRange",
           "idl-unsigned-short",
@@ -323,14 +350,11 @@
           "syntaxerror",
           "notsupportederror",
           "upon-fulfillment",
-          "invalidstateerror",
           "aborterror",
           "quotaexceedederror",
           "idl-sequence",
-          "idl-long-long",
           "idl-unsigned-long-long",
           "buffersource-underlying-buffer",
-          "idl-ArrayBuffer",
           "arraybuffer-write",
           "idl-any",
           "dfn-perform-steps-once-promise-is-settled",
@@ -349,6 +373,11 @@
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
           "dom-domhighrestimestamp"
+        ]
+      },
+      "https://www.w3.org/TR/webtransport/": {
+        "anchors": [
+          "dom-webtransportdatagramduplexstream-outgoingdatagramsqueue-slot"
         ]
       }
     }
