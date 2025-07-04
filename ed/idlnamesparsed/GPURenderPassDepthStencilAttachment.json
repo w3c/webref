@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "dictionary GPURenderPassDepthStencilAttachment {\n    required GPUTextureView view;\n\n    float depthClearValue;\n    GPULoadOp depthLoadOp;\n    GPUStoreOp depthStoreOp;\n    boolean depthReadOnly = false;\n\n    GPUStencilValue stencilClearValue = 0;\n    GPULoadOp stencilLoadOp;\n    GPUStoreOp stencilStoreOp;\n    boolean stencilReadOnly = false;\n};",
+    "fragment": "dictionary GPURenderPassDepthStencilAttachment {\n    required (GPUTexture or GPUTextureView) view;\n\n    float depthClearValue;\n    GPULoadOp depthLoadOp;\n    GPUStoreOp depthStoreOp;\n    boolean depthReadOnly = false;\n\n    GPUStencilValue stencilClearValue = 0;\n    GPULoadOp stencilLoadOp;\n    GPUStoreOp stencilStoreOp;\n    boolean stencilReadOnly = false;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpassdepthstencilattachment"
   },
   "extended": [],

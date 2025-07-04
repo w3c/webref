@@ -5335,7 +5335,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpubindgroupdescriptor"
       },
       "GPUBindingResource": {
-        "fragment": "typedef (GPUSampler or\n         GPUTextureView or\n         GPUBuffer or\n         GPUBufferBinding or\n         GPUExternalTexture) GPUBindingResource;",
+        "fragment": "typedef (GPUSampler or\n         GPUTexture or\n         GPUTextureView or\n         GPUBuffer or\n         GPUBufferBinding or\n         GPUExternalTexture) GPUBindingResource;",
         "type": "typedef",
         "name": "GPUBindingResource",
         "idlType": {
@@ -5352,6 +5352,14 @@
               "nullable": false,
               "union": false,
               "idlType": "GPUSampler"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTexture"
             },
             {
               "type": "typedef-type",
@@ -10192,7 +10200,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpassdescriptor"
       },
       "GPURenderPassColorAttachment": {
-        "fragment": "dictionary GPURenderPassColorAttachment {\n    required GPUTextureView view;\n    GPUIntegerCoordinate depthSlice;\n    GPUTextureView resolveTarget;\n\n    GPUColor clearValue;\n    required GPULoadOp loadOp;\n    required GPUStoreOp storeOp;\n};",
+        "fragment": "dictionary GPURenderPassColorAttachment {\n    required (GPUTexture or GPUTextureView) view;\n    GPUIntegerCoordinate depthSlice;\n    (GPUTexture or GPUTextureView) resolveTarget;\n\n    GPUColor clearValue;\n    required GPULoadOp loadOp;\n    required GPUStoreOp storeOp;\n};",
         "type": "dictionary",
         "name": "GPURenderPassColorAttachment",
         "inheritance": null,
@@ -10206,8 +10214,25 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "GPUTextureView"
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUTexture"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUTextureView"
+                }
+              ]
             },
             "default": null,
             "required": true,
@@ -10238,8 +10263,25 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "GPUTextureView"
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUTexture"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUTextureView"
+                }
+              ]
             },
             "default": null,
             "required": false,
@@ -10299,7 +10341,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpasscolorattachment"
       },
       "GPURenderPassDepthStencilAttachment": {
-        "fragment": "dictionary GPURenderPassDepthStencilAttachment {\n    required GPUTextureView view;\n\n    float depthClearValue;\n    GPULoadOp depthLoadOp;\n    GPUStoreOp depthStoreOp;\n    boolean depthReadOnly = false;\n\n    GPUStencilValue stencilClearValue = 0;\n    GPULoadOp stencilLoadOp;\n    GPUStoreOp stencilStoreOp;\n    boolean stencilReadOnly = false;\n};",
+        "fragment": "dictionary GPURenderPassDepthStencilAttachment {\n    required (GPUTexture or GPUTextureView) view;\n\n    float depthClearValue;\n    GPULoadOp depthLoadOp;\n    GPUStoreOp depthStoreOp;\n    boolean depthReadOnly = false;\n\n    GPUStencilValue stencilClearValue = 0;\n    GPULoadOp stencilLoadOp;\n    GPUStoreOp stencilStoreOp;\n    boolean stencilReadOnly = false;\n};",
         "type": "dictionary",
         "name": "GPURenderPassDepthStencilAttachment",
         "inheritance": null,
@@ -10313,8 +10355,25 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "GPUTextureView"
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUTexture"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUTextureView"
+                }
+              ]
             },
             "default": null,
             "required": true,
@@ -14171,6 +14230,7 @@
         "GPUSize64"
       ],
       "GPURenderPassColorAttachment": [
+        "GPUTexture",
         "GPUTextureView",
         "GPUIntegerCoordinate",
         "GPUColor",
@@ -14178,6 +14238,7 @@
         "GPUStoreOp"
       ],
       "GPURenderPassDepthStencilAttachment": [
+        "GPUTexture",
         "GPUTextureView",
         "GPULoadOp",
         "GPUStoreOp",

@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "dictionary GPURenderPassColorAttachment {\n    required GPUTextureView view;\n    GPUIntegerCoordinate depthSlice;\n    GPUTextureView resolveTarget;\n\n    GPUColor clearValue;\n    required GPULoadOp loadOp;\n    required GPUStoreOp storeOp;\n};",
+    "fragment": "dictionary GPURenderPassColorAttachment {\n    required (GPUTexture or GPUTextureView) view;\n    GPUIntegerCoordinate depthSlice;\n    (GPUTexture or GPUTextureView) resolveTarget;\n\n    GPUColor clearValue;\n    required GPULoadOp loadOp;\n    required GPUStoreOp storeOp;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpasscolorattachment"
   },
   "extended": [],
