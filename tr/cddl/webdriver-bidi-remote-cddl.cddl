@@ -553,6 +553,7 @@ NetworkCommand = (
   network.ContinueRequest //
   network.ContinueResponse //
   network.ContinueWithAuth //
+  network.DisownData //
   network.FailRequest //
   network.GetData //
   network.ProvideResponse //
@@ -2087,6 +2088,7 @@ NetworkCommand = (
   network.ContinueRequest //
   network.ContinueResponse //
   network.ContinueWithAuth //
+  network.DisownData //
   network.FailRequest //
   network.GetData //
   network.ProvideResponse //
@@ -3663,7 +3665,7 @@ network.AddInterceptResult = {
   intercept: network.Intercept
 }
 
-script.GetDataResult = {
+network.GetDataResult = {
   bytes: network.BytesValue,
 }
 

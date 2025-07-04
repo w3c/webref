@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-07-03T01:36:39.004Z",
+  "date": "2025-07-04T01:36:45.248Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -708,7 +708,7 @@
   },
   "stats": {
     "crawled": 367,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-19.0.1",
   "results": [
@@ -756,7 +756,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "3 July 2025",
+      "date": "4 July 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -13132,11 +13132,11 @@
       ],
       "crawled": "https://www.w3.org/TR/IndexedDB-3/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 15 May 2025 20:34:18 GMT"
+        "lastModified": "Thu, 03 Jul 2025 05:41:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "15 May 2025",
-      "revision": "95f98c0c0f8e046542c3f3c7c62cf34a8f0ffc62",
+      "date": "3 July 2025",
+      "revision": "cd7c444c76591887fafe0558202e8d40ac5ba6ae",
       "algorithms": "algorithms/IndexedDB-3.json",
       "links": "links/IndexedDB-3.json",
       "refs": "refs/IndexedDB-3.json",
@@ -16965,7 +16965,8 @@
       "dfns": "dfns/rdf-canon.json",
       "headings": "headings/rdf-canon.json",
       "ids": "ids/rdf-canon.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/rdf-canon/ triggered HTTP status 520\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 251)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/rdf12-concepts/",
@@ -17011,11 +17012,11 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf12-concepts/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 23 Jun 2025 09:24:50 GMT"
+        "lastModified": "Thu, 03 Jul 2025 17:16:57 GMT"
       },
       "generator": "respec",
-      "date": "23 June 2025",
-      "revision": "ee331e4122a31ebc4f582868575d8d2d615599b0",
+      "date": "03 July 2025",
+      "revision": "6d2d31cf4081013dc3608de8ec1c9b35e15bdbaa",
       "algorithms": "algorithms/rdf12-concepts.json",
       "links": "links/rdf12-concepts.json",
       "refs": "refs/rdf12-concepts.json",
@@ -17236,11 +17237,11 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf12-semantics/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 27 Jun 2025 15:44:13 GMT"
+        "lastModified": "Thu, 03 Jul 2025 16:38:17 GMT"
       },
       "generator": "respec",
-      "date": "27 June 2025",
-      "revision": "1d65aeb76f2f20e3d9055a6e1f27f1283938b5d7",
+      "date": "03 July 2025",
+      "revision": "48cc696197687e913ffcf66cfe303bfbcddd143f",
       "algorithms": "algorithms/rdf12-semantics.json",
       "links": "links/rdf12-semantics.json",
       "refs": "refs/rdf12-semantics.json",
@@ -18918,11 +18919,11 @@
       ],
       "crawled": "https://www.w3.org/TR/sparql12-query/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 02 Jul 2025 14:49:01 GMT"
+        "lastModified": "Thu, 03 Jul 2025 16:39:30 GMT"
       },
       "generator": "respec",
-      "date": "02 July 2025",
-      "revision": "9efcb0011349b999075d5e64ca8c2396b14655d0",
+      "date": "03 July 2025",
+      "revision": "b5336faf8c2f9a37c5cb37bc9229ff6a00b5a2da",
       "algorithms": "algorithms/sparql12-query.json",
       "links": "links/sparql12-query.json",
       "refs": "refs/sparql12-query.json",
@@ -20002,11 +20003,11 @@
       ],
       "crawled": "https://www.w3.org/TR/trusted-types/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 26 Jun 2025 08:57:24 GMT"
+        "lastModified": "Thu, 03 Jul 2025 09:13:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "26 June 2025",
-      "revision": "a63d3cd7a344001ee98e10bec52483bf419f3194",
+      "date": "3 July 2025",
+      "revision": "fbd1144e4c1978b7927d93b763b16fe8a569a657",
       "algorithms": "algorithms/trusted-types.json",
       "links": "links/trusted-types.json",
       "refs": "refs/trusted-types.json",
@@ -22580,11 +22581,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webdriver-bidi/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 02 Jul 2025 08:00:15 GMT"
+        "lastModified": "Thu, 03 Jul 2025 11:33:19 GMT"
       },
       "generator": "bikeshed",
-      "date": "2 July 2025",
-      "revision": "3702c513ebacfa6b0779165d49e94d07fa81c344",
+      "date": "3 July 2025",
+      "revision": "f89d8e9b2af23edcdfde954ddce1268bc7190b34",
       "algorithms": "algorithms/webdriver-bidi.json",
       "links": "links/webdriver-bidi.json",
       "refs": "refs/webdriver-bidi.json",
@@ -22723,11 +22724,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webgpu/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 02 Jul 2025 07:30:39 GMT"
+        "lastModified": "Thu, 03 Jul 2025 18:52:26 GMT"
       },
       "generator": "bikeshed",
-      "date": "2 July 2025",
-      "revision": "a6e36ce2215c8cbd8c41a0390c4aa5e82513f543",
+      "date": "3 July 2025",
+      "revision": "e93276a5b3b3fbfcd77e392779c03baa2adda061",
       "algorithms": "algorithms/webgpu.json",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
@@ -24021,11 +24022,11 @@
       ],
       "crawled": "https://www.w3.org/TR/WGSL/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 02 Jul 2025 05:43:37 GMT"
+        "lastModified": "Thu, 03 Jul 2025 18:52:13 GMT"
       },
       "generator": "bikeshed",
-      "date": "2 July 2025",
-      "revision": "fd217473312f79d8e7457edd978916f1a703dfba",
+      "date": "3 July 2025",
+      "revision": "e93276a5b3b3fbfcd77e392779c03baa2adda061",
       "algorithms": "algorithms/WGSL.json",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",

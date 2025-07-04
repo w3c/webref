@@ -871,6 +871,7 @@ NetworkCommand = (
   network.ContinueRequest //
   network.ContinueResponse //
   network.ContinueWithAuth //
+  network.DisownData //
   network.FailRequest //
   network.GetData //
   network.ProvideResponse //
@@ -1160,7 +1161,7 @@ network.GetDataParameters = {
   request: network.Request,
 }
 
-script.GetDataResult = {
+network.GetDataResult = {
   bytes: network.BytesValue,
 }
 
@@ -2732,6 +2733,7 @@ NetworkCommand = (
   network.ContinueRequest //
   network.ContinueResponse //
   network.ContinueWithAuth //
+  network.DisownData //
   network.FailRequest //
   network.GetData //
   network.ProvideResponse //
@@ -4308,7 +4310,7 @@ network.AddInterceptResult = {
   intercept: network.Intercept
 }
 
-script.GetDataResult = {
+network.GetDataResult = {
   bytes: network.BytesValue,
 }
 
