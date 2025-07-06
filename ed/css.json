@@ -17055,7 +17055,7 @@
       "name": "rectangular-color-space",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-rectangular-color-space",
       "type": "type",
-      "syntax": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | xyz | xyz-d50 | xyz-d65"
+      "syntax": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | <xyz-space>"
     },
     {
       "for": [
@@ -17798,16 +17798,10 @@
       "syntax": "<ns-prefix>? <ident-token>"
     },
     {
-      "name": "xyz",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-xyz",
-      "type": "type",
-      "syntax": "xyz | xyz-d50 | xyz-d65"
-    },
-    {
       "name": "xyz-params",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-xyz-params",
       "type": "type",
-      "syntax": "<xyz> [ <number> | <percentage> | none ]{3}"
+      "syntax": "<xyz-space> [ <number> | <percentage> | none ]{3}"
     },
     {
       "name": "xyz-space",
