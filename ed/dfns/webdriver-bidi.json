@@ -6343,6 +6343,28 @@
       "definedIn": "pre"
     },
     {
+      "id": "cddl-key-browsercreateusercontextparameters-unhandledpromptbehavior",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsercreateusercontextparameters-unhandledpromptbehavior",
+      "linkingText": [
+        "unhandledPromptBehavior",
+        "\"unhandledPromptBehavior\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "browser.CreateUserContextParameters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-browser-createUserContext",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-browser-createUserContext",
+        "title": "The browser.createUserContext Command",
+        "number": "7.2.4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "cddl-type-browsercreateusercontextresult",
       "href": "https://w3c.github.io/webdriver-bidi/#cddl-type-browsercreateusercontextresult",
       "linkingText": [
@@ -7610,6 +7632,151 @@
       "definedIn": "prose"
     },
     {
+      "id": "unhandled-prompt-behavior-struct",
+      "href": "https://w3c.github.io/webdriver-bidi/#unhandled-prompt-behavior-struct",
+      "linkingText": [
+        "unhandled prompt behavior struct"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext-definition",
+        "href": "https://w3c.github.io/webdriver-bidi/#module-browsingContext-definition",
+        "title": "Definition",
+        "number": "7.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-unhandled-prompt-behavior-alert-alert",
+      "href": "https://w3c.github.io/webdriver-bidi/#dom-unhandled-prompt-behavior-alert-alert",
+      "linkingText": [
+        "alert"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "unhandled-prompt-behavior-alert"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext-definition",
+        "href": "https://w3c.github.io/webdriver-bidi/#module-browsingContext-definition",
+        "title": "Definition",
+        "number": "7.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-unhandled-prompt-behavior-beforeunload-beforeunload",
+      "href": "https://w3c.github.io/webdriver-bidi/#dom-unhandled-prompt-behavior-beforeunload-beforeunload",
+      "linkingText": [
+        "beforeUnload"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "unhandled-prompt-behavior-beforeUnload"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext-definition",
+        "href": "https://w3c.github.io/webdriver-bidi/#module-browsingContext-definition",
+        "title": "Definition",
+        "number": "7.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-unhandled-prompt-behavior-confirm-confirm",
+      "href": "https://w3c.github.io/webdriver-bidi/#dom-unhandled-prompt-behavior-confirm-confirm",
+      "linkingText": [
+        "confirm"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "unhandled-prompt-behavior-confirm"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext-definition",
+        "href": "https://w3c.github.io/webdriver-bidi/#module-browsingContext-definition",
+        "title": "Definition",
+        "number": "7.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-unhandled-prompt-behavior-default-default",
+      "href": "https://w3c.github.io/webdriver-bidi/#dom-unhandled-prompt-behavior-default-default",
+      "linkingText": [
+        "default"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "unhandled-prompt-behavior-default"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext-definition",
+        "href": "https://w3c.github.io/webdriver-bidi/#module-browsingContext-definition",
+        "title": "Definition",
+        "number": "7.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-unhandled-prompt-behavior-file-file",
+      "href": "https://w3c.github.io/webdriver-bidi/#dom-unhandled-prompt-behavior-file-file",
+      "linkingText": [
+        "file"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "unhandled-prompt-behavior-file"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext-definition",
+        "href": "https://w3c.github.io/webdriver-bidi/#module-browsingContext-definition",
+        "title": "Definition",
+        "number": "7.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-unhandled-prompt-behavior-prompt-prompt",
+      "href": "https://w3c.github.io/webdriver-bidi/#dom-unhandled-prompt-behavior-prompt-prompt",
+      "linkingText": [
+        "prompt"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "unhandled-prompt-behavior-prompt"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext-definition",
+        "href": "https://w3c.github.io/webdriver-bidi/#module-browsingContext-definition",
+        "title": "Definition",
+        "number": "7.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "viewport-overrides-map",
       "href": "https://w3c.github.io/webdriver-bidi/#viewport-overrides-map",
       "linkingText": [
@@ -7633,6 +7800,25 @@
       "href": "https://w3c.github.io/webdriver-bidi/#locale-overrides-map",
       "linkingText": [
         "locale overrides map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext-definition",
+        "href": "https://w3c.github.io/webdriver-bidi/#module-browsingContext-definition",
+        "title": "Definition",
+        "number": "7.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "unhandled-prompt-behavior-overrides-map",
+      "href": "https://w3c.github.io/webdriver-bidi/#unhandled-prompt-behavior-overrides-map",
+      "linkingText": [
+        "unhandled prompt behavior overrides map"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -14665,6 +14851,25 @@
         "number": "7.3.4.14"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "get-navigables-user-prompt-handler",
+      "href": "https://w3c.github.io/webdriver-bidi/#get-navigables-user-prompt-handler",
+      "linkingText": [
+        "get navigable’s user prompt handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-browsingContext-userPromptOpened",
+        "href": "https://w3c.github.io/webdriver-bidi/#event-browsingContext-userPromptOpened",
+        "title": "The browsingContext.userPromptOpened Event",
+        "number": "7.3.4.14"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "webdriver-bidi-user-prompt-opened",
