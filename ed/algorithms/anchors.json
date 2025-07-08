@@ -7,7 +7,7 @@
     {
       "name": "create-anchor-object",
       "href": "https://immersive-web.github.io/anchors/#create-new-anchor-object",
-      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-new-anchor-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create new anchor object</dfn><span style=\"position: relative; height: 0px;\"></span> from <var>native origin</var> and <var>session</var>, the user agent MUST run the following steps:",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-new-anchor-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create new anchor object</dfn> from <var>native origin</var> and <var>session</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -66,7 +66,7 @@
           "html": "<p>Let <var>uuid</var> be the empty string.</p>"
         },
         {
-          "html": "<p>Generate a UUID <a data-link-type=\"biblio\" href=\"https://immersive-web.github.io/anchors/#biblio-rfc4122\" title=\"A Universally Unique IDentifier (UUID) URN Namespace\">[RFC4122]</a> as a string and append it to <var>uuid</var>.</p>"
+          "html": "<p>Generate a UUID <a data-link-type=\"biblio\" href=\"https://immersive-web.github.io/anchors/#biblio-rfc4122\" title=\"Universally Unique IDentifiers (UUIDs)\">[RFC4122]</a> as a string and append it to <var>uuid</var>.</p>"
         },
         {
           "html": "<p>Add <var>uuid</var> and <var>anchor</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors②\">map of persistent anchors</a>.</p>"
@@ -131,7 +131,7 @@
           "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors④\">map of persistent anchors</a> does not contain a mapping from <var>uuid</var> to an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#xranchor\" id=\"ref-for-xranchor①②\">XRAnchor</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediacapture-main/#track-ended\" id=\"ref-for-track-ended\">ended</a> value is `true`, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
+          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#css-end\" id=\"ref-for-css-end\">ended</a> value is `true`, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
         },
         {
           "html": "<p>Let <var>anchor</var> be the value of mapping from <var>uuid</var> on <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors⑤\">map of persistent anchors</a>.</p>"
@@ -168,7 +168,7 @@
           "html": "<p>Remove the mapping from <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors⑧\">map of persistent anchors</a>.</p>"
         },
         {
-          "html": "<p>Invoke {{XRAnchor/delete()} on <var>anchor</var>.</p>"
+          "html": "<p>Invoke <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#dom-xranchor-delete\" id=\"ref-for-dom-xranchor-delete\">delete()</a></code> on <var>anchor</var>.</p>"
         },
         {
           "html": "<p>Return <var>promise</var>.</p>"
@@ -221,7 +221,7 @@
     {
       "name": "update-anchors",
       "href": "https://immersive-web.github.io/anchors/#update-anchors",
-      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-anchors\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update anchors</dfn><span style=\"position: relative; height: 0px;\"></span> for <var>frame</var>, the user agent MUST run the following steps:",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-anchors\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update anchors</dfn> for <var>frame</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -265,7 +265,7 @@
     {
       "name": "detach-anchor",
       "href": "https://immersive-web.github.io/anchors/#delete-an-anchor",
-      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#dom-xranchor-delete\" id=\"ref-for-dom-xranchor-delete①\">delete()</a></code> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#xranchor\" id=\"ref-for-xranchor①④\">XRAnchor</a></code> <var>anchor</var>, MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"delete-an-anchor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">delete an anchor</dfn><span style=\"position: relative; height: 0px;\"></span> by running the following steps:",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#dom-xranchor-delete\" id=\"ref-for-dom-xranchor-delete②\">delete()</a></code> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#xranchor\" id=\"ref-for-xranchor①④\">XRAnchor</a></code> <var>anchor</var>, MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"delete-an-anchor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">delete an anchor</dfn> by running the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
