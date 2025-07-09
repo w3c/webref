@@ -45,10 +45,10 @@
               "html": "<p>Let <var>algorithm</var> be <var>algorithm-and-value</var>[0].</p>"
             },
             {
-              "html": "<p>If <var>algorithm-and-value</var>[1] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">exists</a>, set\n  <var>base64-value</var> to <var>algorithm-and-value</var>[1].</p>"
+              "html": "<p>If <var>algorithm</var> is not a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#valid-sri-hash-algorithm-token\" id=\"ref-for-valid-sri-hash-algorithm-token\">valid SRI hash algorithm token</a>, then\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
             },
             {
-              "html": "<p>If <var>algorithm</var> is not a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-subresource-integrity/#valid-sri-hash-algorithm-token\" id=\"ref-for-valid-sri-hash-algorithm-token\">valid SRI hash algorithm token</a>, then\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+              "html": "<p>If <var>algorithm-and-value</var>[1] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">exists</a>, set\n  <var>base64-value</var> to <var>algorithm-and-value</var>[1].</p>"
             },
             {
               "html": "<p>Let <var>metadata</var> be the ordered map  «[\"alg\" → <var>algorithm</var>,\n  \"val\" → <var>base64-value</var>]».</p>"
