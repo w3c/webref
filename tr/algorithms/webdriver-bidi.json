@@ -1695,7 +1695,10 @@
           ]
         },
         {
-          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">contains</a> \"<code>proxy</code>\":",
+          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">contains</a> \"<code>unhandledPromptBehavior</code>\",\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">set</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#unhandled-prompt-behavior-overrides-map\" id=\"ref-for-unhandled-prompt-behavior-overrides-map\">unhandled prompt behavior overrides map</a>[<var>user context</var>] to\n <var>command parameters</var>[\"<code>unhandledPromptBehavior</code>\"].</p>"
+        },
+        {
+          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">contains</a> \"<code>proxy</code>\":",
           "rationale": "let",
           "steps": [
             {
@@ -1705,7 +1708,7 @@
               "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-ends\" id=\"ref-for-dfn-remote-ends②③\">remote end</a> is unable to configure proxy settings per <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context\" id=\"ref-for-user-context②①\">user context</a>,\n   or is unable to configure the proxy with <var>proxy configuration</var>, return  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors②①\">error</a> with\n   <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⓪\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation⑤\">unsupported operation</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">Set</a> <var>session</var>’s\n  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context-to-proxy-configuration-map\" id=\"ref-for-user-context-to-proxy-configuration-map①\">user context to proxy configuration map</a>[<var>user context</var>]\n  to <var>proxy configuration</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">Set</a> <var>session</var>’s\n  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context-to-proxy-configuration-map\" id=\"ref-for-user-context-to-proxy-configuration-map①\">user context to proxy configuration map</a>[<var>user context</var>]\n  to <var>proxy configuration</var>.</p>"
             }
           ]
         },
@@ -1850,16 +1853,16 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">contains</a> \"<code>x</code>\" and the\n implementation supports positioning <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window\" id=\"ref-for-client-window①⑥\">client windows</a>, set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window-x-coordinate\" id=\"ref-for-client-window-x-coordinate②\">x-coordinate</a> of <var>client window</var> to a value that is as close as\n possible <var>command parameters</var>[\"<code>x</code>\"].</p>"
+              "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">contains</a> \"<code>x</code>\" and the\n implementation supports positioning <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window\" id=\"ref-for-client-window①⑥\">client windows</a>, set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window-x-coordinate\" id=\"ref-for-client-window-x-coordinate②\">x-coordinate</a> of <var>client window</var> to a value that is as close as\n possible <var>command parameters</var>[\"<code>x</code>\"].</p>"
             },
             {
-              "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">contains</a> \"<code>y</code>\" and the\n implementation supports positioning <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window\" id=\"ref-for-client-window①⑦\">client windows</a>, set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window-y-coordinate\" id=\"ref-for-client-window-y-coordinate②\">y-coordinate</a> of <var>client window</var> to a value that is as close as\n possible <var>command parameters</var>[\"<code>y</code>\"].</p>"
+              "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">contains</a> \"<code>y</code>\" and the\n implementation supports positioning <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window\" id=\"ref-for-client-window①⑦\">client windows</a>, set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window-y-coordinate\" id=\"ref-for-client-window-y-coordinate②\">y-coordinate</a> of <var>client window</var> to a value that is as close as\n possible <var>command parameters</var>[\"<code>y</code>\"].</p>"
             },
             {
-              "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">contains</a> \"<code>width</code>\" and the\n implementation supports resizing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window\" id=\"ref-for-client-window①⑧\">client windows</a>, set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window-width\" id=\"ref-for-client-window-width⑤\">width</a> of <var>client window</var> to a value that is as close as possible\n <var>command parameters</var>[\"<code>width</code>\"].</p>"
+              "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">contains</a> \"<code>width</code>\" and the\n implementation supports resizing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window\" id=\"ref-for-client-window①⑧\">client windows</a>, set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window-width\" id=\"ref-for-client-window-width⑤\">width</a> of <var>client window</var> to a value that is as close as possible\n <var>command parameters</var>[\"<code>width</code>\"].</p>"
             },
             {
-              "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">contains</a> \"<code>width</code>\" and the\n implementation supports resizing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window\" id=\"ref-for-client-window①⑨\">client windows</a>, set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window-width\" id=\"ref-for-client-window-width⑥\">width</a> of <var>client window</var> to a value that is as close as possible\n <var>command parameters</var>[\"<code>width</code>\"].</p>"
+              "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">contains</a> \"<code>width</code>\" and the\n implementation supports resizing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window\" id=\"ref-for-client-window①⑨\">client windows</a>, set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#client-window-width\" id=\"ref-for-client-window-width⑥\">width</a> of <var>client window</var> to a value that is as close as possible\n <var>command parameters</var>[\"<code>width</code>\"].</p>"
             }
           ]
         },
@@ -2781,7 +2784,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <var>selector</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">contains</a> \"<code>role</code>\":",
+                  "html": "If <var>selector</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">contains</a> \"<code>role</code>\":",
                   "rationale": "let",
                   "steps": [
                     {
@@ -2799,7 +2802,7 @@
                   ]
                 },
                 {
-                  "html": "If <var>selector</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">contains</a> \"<code>name</code>\":",
+                  "html": "If <var>selector</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⓪\">contains</a> \"<code>name</code>\":",
                   "rationale": "let",
                   "steps": [
                     {
@@ -2859,7 +2862,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>selector</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⓪\">contain</a> \"<code>role</code>\" and\n <var>selector</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①\">contain</a> \"<code>name</code>\", return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors④⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code④②\">error code</a>\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-selector\" id=\"ref-for-dfn-invalid-selector③\">invalid selector</a>.</p>"
+          "html": "<p>If <var>selector</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①\">contain</a> \"<code>role</code>\" and\n <var>selector</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">contain</a> \"<code>name</code>\", return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors④⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code④②\">error code</a>\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-selector\" id=\"ref-for-dfn-invalid-selector③\">invalid selector</a>.</p>"
         },
         {
           "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#collect-nodes-using-accessibility-attributes\" id=\"ref-for-collect-nodes-using-accessibility-attributes①\">collect nodes using accessibility attributes</a> with <var>context nodes</var>,\n  <var>selector</var>, <var>maximum returned node count</var>, and null.</p>"
@@ -2887,10 +2890,10 @@
           "html": "<p>Let <var>locator</var> be <var>command parameters</var>[\"<code>locator</code>\"].</p>"
         },
         {
-          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">contains</a> \"<code>startNodes</code>\", let\n <var>start nodes parameter</var> be <var>command parameters</var>[\"<code>startNodes</code>\"].\n Otherwise let <var>start nodes parameter</var> be null.</p>"
+          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">contains</a> \"<code>startNodes</code>\", let\n <var>start nodes parameter</var> be <var>command parameters</var>[\"<code>startNodes</code>\"].\n Otherwise let <var>start nodes parameter</var> be null.</p>"
         },
         {
-          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">contains</a> \"<code>maxNodeCount</code>\", let\n <var>maximum returned node count</var> be <var>command parameters</var>[\"<code>maxNodeCount</code>\"].\n Otherwise, let <var>maximum returned node count</var> be null.</p>"
+          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">contains</a> \"<code>maxNodeCount</code>\", let\n <var>maximum returned node count</var> be <var>command parameters</var>[\"<code>maxNodeCount</code>\"].\n Otherwise, let <var>maximum returned node count</var> be null.</p>"
         },
         {
           "html": "<p>Let <var>context nodes</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②③\">list</a>.</p>"
@@ -2945,13 +2948,13 @@
                   "html": "<p>Let <var>selector</var> be <var>locator</var>[\"<code>value</code>\"].</p>"
                 },
                 {
-                  "html": "<p>If <var>locator</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">contains</a> <code>maxDepth</code>, let <var>max depth</var> be\n  <var>locator</var>[\"<code>maxDepth</code>\"]. Otherwise, let <var>max depth</var> be null.</p>"
+                  "html": "<p>If <var>locator</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">contains</a> <code>maxDepth</code>, let <var>max depth</var> be\n  <var>locator</var>[\"<code>maxDepth</code>\"]. Otherwise, let <var>max depth</var> be null.</p>"
                 },
                 {
-                  "html": "<p>If <var>locator</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">contains</a> <code>ignoreCase</code>, let <var>ignore case</var> be\n  <var>locator</var>[\"<code>ignoreCase</code>\"]. Otherwise, let <var>ignore case</var> be false.</p>"
+                  "html": "<p>If <var>locator</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑥\">contains</a> <code>ignoreCase</code>, let <var>ignore case</var> be\n  <var>locator</var>[\"<code>ignoreCase</code>\"]. Otherwise, let <var>ignore case</var> be false.</p>"
                 },
                 {
-                  "html": "<p>If <var>locator</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑥\">contains</a> <code>matchType</code>, let <var>match type</var> be\n  <var>locator</var>[\"<code>matchType</code>\"]. Otherwise, let <var>match type</var> be \"full\".</p>"
+                  "html": "<p>If <var>locator</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑦\">contains</a> <code>matchType</code>, let <var>match type</var> be\n  <var>locator</var>[\"<code>matchType</code>\"]. Otherwise, let <var>match type</var> be \"full\".</p>"
                 },
                 {
                   "html": "<p>Let <var>result nodes</var> be a result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try②⑥\">trying</a> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#locate-nodes-using-inner-text\" id=\"ref-for-locate-nodes-using-inner-text②\">locate nodes using inner text</a>\n  given <var>context nodes</var>, <var>selector</var>, <var>max depth</var>, <var>match type</var>,\n  <var>ignore case</var> and <var>maximum returned node count</var>.</p>"
@@ -3003,7 +3006,7 @@
           "html": "<p class=\"assertion\">Assert: <var>maximum returned node count</var> is null or <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑥\">size</a> of <var>result nodes</var> is less\n than or equal to <var>maximum returned node count</var>.</p>"
         },
         {
-          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑦\">contains</a> \"<code>serializationOptions</code>\",\n let <var>serialization options</var> be <var>command parameters</var>[\"<code>serializationOptions</code>\"].\n Otherwise, let <var>serialization options</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑥\">map</a> matching the\n <code>script.SerializationOptions</code> production with the fields\n set to their default values.</p>"
+          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑧\">contains</a> \"<code>serializationOptions</code>\",\n let <var>serialization options</var> be <var>command parameters</var>[\"<code>serializationOptions</code>\"].\n Otherwise, let <var>serialization options</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑥\">map</a> matching the\n <code>script.SerializationOptions</code> production with the fields\n set to their default values.</p>"
         },
         {
           "html": "<p>Let <var>result ownership</var> be \"none\".</p>"
@@ -3049,7 +3052,7 @@
           "html": "<p>Let <var>wait condition</var> be \"<code>committed</code>\".</p>"
         },
         {
-          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑧\">contains</a> <code>wait</code>\n and <var>command parameters</var>[<code>wait</code>] is not \"<code>none</code>\",\n set <var>wait condition</var> to <var>command parameters</var>[<code>wait</code>].</p>"
+          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑨\">contains</a> <code>wait</code>\n and <var>command parameters</var>[<code>wait</code>] is not \"<code>none</code>\",\n set <var>wait condition</var> to <var>command parameters</var>[<code>wait</code>].</p>"
         },
         {
           "html": "<p>Let <var>url</var> be the value of the <code>url</code> field of <var>command\n parameters</var>.</p>"
@@ -3154,7 +3157,7 @@
           "html": "<p>Let <var>wait condition</var> be \"<code>committed</code>\".</p>"
         },
         {
-          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑨\">contains</a> <code>wait</code>\n and <var>command parameters</var>[<code>wait</code>] is not \"<code>none</code>\",\n set <var>wait condition</var> to <var>command parameters</var>[<code>wait</code>].</p>"
+          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⓪\">contains</a> <code>wait</code>\n and <var>command parameters</var>[<code>wait</code>] is not \"<code>none</code>\",\n set <var>wait condition</var> to <var>command parameters</var>[<code>wait</code>].</p>"
         },
         {
           "html": "<p>Let <var>document</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①③\">active document</a>.</p>"
@@ -3193,7 +3196,7 @@
               ]
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">Set</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#device-pixel-ratio-overrides\" id=\"ref-for-device-pixel-ratio-overrides\">device pixel ratio overrides</a>[<var>navigable</var>] to <var>device pixel ratio</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set③\">Set</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#device-pixel-ratio-overrides\" id=\"ref-for-device-pixel-ratio-overrides\">device pixel ratio overrides</a>[<var>navigable</var>] to <var>device pixel ratio</var>.</p>"
             }
           ]
         },
@@ -3250,15 +3253,15 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#geolocation-overrides-map\" id=\"ref-for-geolocation-overrides-map\">geolocation overrides map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⓪\">contains</a> <var>user context</var>,\n  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geolocation/#dfn-set-emulated-position-data\" id=\"ref-for-dfn-set-emulated-position-data\">set emulated position data</a> with <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#geolocation-overrides-map\" id=\"ref-for-geolocation-overrides-map①\">geolocation overrides map</a>[<var>user context</var>].</p>"
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#geolocation-overrides-map\" id=\"ref-for-geolocation-overrides-map\">geolocation overrides map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②①\">contains</a> <var>user context</var>,\n  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geolocation/#dfn-set-emulated-position-data\" id=\"ref-for-dfn-set-emulated-position-data\">set emulated position data</a> with <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#geolocation-overrides-map\" id=\"ref-for-geolocation-overrides-map①\">geolocation overrides map</a>[<var>user context</var>].</p>"
             },
             {
-              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#screen-orientation-overrides-map\" id=\"ref-for-screen-orientation-overrides-map\">screen orientation overrides map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②①\">contains</a> <var>user context</var>,\n  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-emulated-screen-orientation\" id=\"ref-for-set-emulated-screen-orientation\">set emulated screen orientation</a> with <var>navigable</var> and\n  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#screen-orientation-overrides-map\" id=\"ref-for-screen-orientation-overrides-map①\">screen orientation overrides map</a>[<var>user context</var>].</p>"
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#screen-orientation-overrides-map\" id=\"ref-for-screen-orientation-overrides-map\">screen orientation overrides map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②②\">contains</a> <var>user context</var>,\n  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-emulated-screen-orientation\" id=\"ref-for-set-emulated-screen-orientation\">set emulated screen orientation</a> with <var>navigable</var> and\n  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#screen-orientation-overrides-map\" id=\"ref-for-screen-orientation-overrides-map①\">screen orientation overrides map</a>[<var>user context</var>].</p>"
             }
           ]
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-overrides-map\" id=\"ref-for-viewport-overrides-map\">viewport overrides map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②②\">contains</a> <var>user context</var>:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-overrides-map\" id=\"ref-for-viewport-overrides-map\">viewport overrides map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②③\">contains</a> <var>user context</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -3292,7 +3295,7 @@
           "html": "<p>If the implementation is unable to adjust the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#layout-viewport\" id=\"ref-for-layout-viewport③\">layout viewport</a>\n parameters with the given <var>command parameters</var> for any reason, return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑤①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code④⑦\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation①②\">unsupported operation</a>.</p>"
         },
         {
-          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②③\">contains</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②④\">contains</a> \"<code>context</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑤②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code④⑧\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⑦\">invalid argument</a>.</p>"
+          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②④\">contains</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑤\">contains</a> \"<code>context</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑤②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code④⑧\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⑦\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>navigables</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③⑥\">set</a>.</p>"
@@ -3327,10 +3330,10 @@
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set③\">Set</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-overrides-map\" id=\"ref-for-viewport-overrides-map⑤\">viewport overrides map</a>[<var>user context</var>] to a struct.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set④\">Set</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-overrides-map\" id=\"ref-for-viewport-overrides-map⑤\">viewport overrides map</a>[<var>user context</var>] to a struct.</p>"
                 },
                 {
-                  "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑤\">contains</a> \"<code>viewport</code>\":",
+                  "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑥\">contains</a> \"<code>viewport</code>\":",
                   "rationale": "set",
                   "steps": [
                     {
@@ -3339,7 +3342,7 @@
                   ]
                 },
                 {
-                  "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑥\">contains</a> \"<code>devicePixelRatio</code>\":",
+                  "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑦\">contains</a> \"<code>devicePixelRatio</code>\":",
                   "rationale": "set",
                   "steps": [
                     {
@@ -3364,7 +3367,7 @@
           "html": "<p>Otherwise, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑤④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑤⓪\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⑨\">invalid argument</a>.</p>"
         },
         {
-          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑦\">contains</a> the <code>viewport</code> field:",
+          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑧\">contains</a> the <code>viewport</code> field:",
           "rationale": "let",
           "steps": [
             {
@@ -3385,7 +3388,7 @@
           ]
         },
         {
-          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑧\">contains</a> the <code>devicePixelRatio</code> field:",
+          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑨\">contains</a> the <code>devicePixelRatio</code> field:",
           "rationale": "let",
           "steps": [
             {
@@ -3990,6 +3993,38 @@
       ]
     },
     {
+      "name": "get navigable’s user prompt handler",
+      "href": "https://www.w3.org/TR/webdriver-bidi/#get-navigables-user-prompt-handler",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-navigables-user-prompt-handler\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get navigable’s user prompt handler</dfn> given <var>type</var> and <var>navigable</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>user context</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context①⑧\">associated user context</a>.</p>"
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#unhandled-prompt-behavior-overrides-map\" id=\"ref-for-unhandled-prompt-behavior-overrides-map①\">unhandled prompt behavior overrides map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③⓪\">contains</a> <var>user context</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>unhandled prompt behavior override</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#unhandled-prompt-behavior-overrides-map\" id=\"ref-for-unhandled-prompt-behavior-overrides-map②\">unhandled prompt behavior overrides map</a>[<var>user context</var>].</p>"
+            },
+            {
+              "html": "<p>If <var>unhandled prompt behavior override</var>[<var>type</var>] is not null, return\n <var>unhandled prompt behavior override</var>[<var>type</var>].</p>"
+            },
+            {
+              "html": "<p>If <var>unhandled prompt behavior override</var>[<code>\"default\"</code>] is not null,\n return <var>unhandled prompt behavior override</var>[<code>\"default\"</code>].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>handler configuration</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-get-the-prompt-handler\" id=\"ref-for-dfn-get-the-prompt-handler\">get the prompt handler</a> with <var>type</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>handler configuration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-handler\" id=\"ref-for-dfn-handler\">handler</a>.</p>"
+        }
+      ]
+    },
+    {
       "name": "WebDriver BiDi user prompt opened",
       "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-user-prompt-opened",
       "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger①④\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"WebDriver BiDi user prompt opened\" id=\"webdriver-bidi-user-prompt-opened\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi user prompt\nopened</dfn> steps given <var>window</var>, <var>type</var>, <var>message</var>, and optional <var>default value</var>\n(default: null).",
@@ -4002,10 +4037,7 @@
           "html": "<p>Let <var>navigable id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①⑤\">navigable id</a> for <var>navigable</var>.</p>"
         },
         {
-          "html": "<p>Let <var>handler configuration</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-get-the-prompt-handler\" id=\"ref-for-dfn-get-the-prompt-handler\">get the prompt handler</a> with <var>type</var>.</p>"
-        },
-        {
-          "html": "<p>Let <var>handler</var> be <var>handler configuration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-handler\" id=\"ref-for-dfn-handler\">handler</a>.</p>"
+          "html": "<p>Let <var>handler</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-navigables-user-prompt-handler\" id=\"ref-for-get-navigables-user-prompt-handler\">get navigable’s user prompt handler</a> with <var>type</var> and\n <var>navigable</var>.</p>"
         },
         {
           "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤①\">map</a> matching the\n <code>browsingContext.UserPromptOpenedParameters</code> production with the\n <code>context</code> field set to <var>navigable id</var>, the <code>type</code> field\n set to <var>type</var>, the <code>message</code> field set to <var>message</var>, the\n <code>defaultValue</code> field set to <var>default value</var> if <var>default value</var> is\n not null or omitted otherwise, and the <code>handler</code> field set to\n <var>handler</var>.</p>"
@@ -4039,10 +4071,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑨\">contains</a> \"<code>coordinates</code>\" and\n <var>command parameters</var>[\"<code>coordinates</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③⓪\">contains</a>\n \"<code>altitudeAccuracy</code>\" and\n <var>command parameters</var>[\"<code>coordinates</code>\"] doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③①\">contain</a>\n \"<code>altitude</code>\", return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑤⑦\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑤②\">error code</a>\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②①\">invalid argument</a>.</p>"
+          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③①\">contains</a> \"<code>coordinates</code>\" and\n <var>command parameters</var>[\"<code>coordinates</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③②\">contains</a>\n \"<code>altitudeAccuracy</code>\" and\n <var>command parameters</var>[\"<code>coordinates</code>\"] doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③③\">contain</a>\n \"<code>altitude</code>\", return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑤⑦\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑤②\">error code</a>\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②①\">invalid argument</a>.</p>"
         },
         {
-          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③②\">contains</a> \"<code>error</code>\":",
+          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③④\">contains</a> \"<code>error</code>\":",
           "rationale": "assert",
           "steps": [
             {
@@ -4057,10 +4089,10 @@
           "html": "<p>Otherwise, let <var>emulated position data</var> be\n <var>command parameters</var>[\"<code>coordinates</code>\"].</p>"
         },
         {
-          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③③\">contains</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③④\">contains</a> \"<code>context</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑤⑧\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑤③\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②②\">invalid argument</a>.</p>"
+          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③⑤\">contains</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③⑥\">contains</a> \"<code>context</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑤⑧\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑤③\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②②\">invalid argument</a>.</p>"
         },
         {
-          "html": "<p>If <var>command parameters</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③⑤\">contain</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③⑥\">contain</a> \"<code>context</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑤⑨\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑤④\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②③\">invalid argument</a>.</p>"
+          "html": "<p>If <var>command parameters</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③⑦\">contain</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③⑧\">contain</a> \"<code>context</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑤⑨\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑤④\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②③\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>navigables</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑤③\">set</a>.</p>"
@@ -4086,10 +4118,10 @@
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set④\">Set</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#geolocation-overrides-map\" id=\"ref-for-geolocation-overrides-map②\">geolocation overrides map</a>[<var>user context</var>] to <var>emulated position data</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑤\">Set</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#geolocation-overrides-map\" id=\"ref-for-geolocation-overrides-map②\">geolocation overrides map</a>[<var>user context</var>] to <var>emulated position data</var>.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>top-level traversable</var> of the list of all <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable④①\">top-level traversables</a>\n whose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context①⑧\">associated user context</a> is <var>user context</var>:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>top-level traversable</var> of the list of all <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable④①\">top-level traversables</a>\n whose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context①⑨\">associated user context</a> is <var>user context</var>:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -4117,7 +4149,7 @@
     },
     {
       "name": "updated DefaultLocale steps",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma402/#sec-defaultlocale\" id=\"ref-for-sec-defaultlocale\">DefaultLocale</a> algorithm is implementation defined. A WebDriver-BiDi\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-ends\" id=\"ref-for-dfn-remote-ends②⑨\">remote end</a> must have an implementation that runs the following steps:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma402/#sec-defaultlocale\" id=\"ref-for-sec-defaultlocale\">DefaultLocale</a> algorithm is implementation defined. A WebDriver-BiDi\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-ends\" id=\"ref-for-dfn-remote-ends③⓪\">remote end</a> must have an implementation that runs the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -4143,13 +4175,13 @@
               "html": "<p>Let <var>top-level traversable</var> be <var>navigable</var>’s\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top⑦\">top-level traversable</a>.</p>"
             },
             {
-              "html": "<p>Let <var>user context</var> be <var>top-level traversable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context①⑨\">associated user context</a>.</p>"
+              "html": "<p>Let <var>user context</var> be <var>top-level traversable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context②⓪\">associated user context</a>.</p>"
             },
             {
-              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#locale-overrides-map\" id=\"ref-for-locale-overrides-map\">locale overrides map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③⑦\">contains</a> <var>top-level traversable</var>, set\n <var>emulated locale</var> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#locale-overrides-map\" id=\"ref-for-locale-overrides-map①\">locale overrides map</a>[<var>top-level traversable</var>].</p>"
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#locale-overrides-map\" id=\"ref-for-locale-overrides-map\">locale overrides map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③⑨\">contains</a> <var>top-level traversable</var>, set\n <var>emulated locale</var> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#locale-overrides-map\" id=\"ref-for-locale-overrides-map①\">locale overrides map</a>[<var>top-level traversable</var>].</p>"
             },
             {
-              "html": "<p>Otherwise, if <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#locale-overrides-map\" id=\"ref-for-locale-overrides-map②\">locale overrides map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③⑧\">contains</a>\n <var>user context</var>, set <var>emulated locale</var> to\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#locale-overrides-map\" id=\"ref-for-locale-overrides-map③\">locale overrides map</a>[<var>user context</var>].</p>"
+              "html": "<p>Otherwise, if <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#locale-overrides-map\" id=\"ref-for-locale-overrides-map②\">locale overrides map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④⓪\">contains</a>\n <var>user context</var>, set <var>emulated locale</var> to\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#locale-overrides-map\" id=\"ref-for-locale-overrides-map③\">locale overrides map</a>[<var>user context</var>].</p>"
             }
           ]
         },
@@ -4167,16 +4199,16 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③⑨\">contains</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④⓪\">contains</a> \"<code>context</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑥⓪\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑤⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②④\">invalid argument</a>.</p>"
+          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④①\">contains</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④②\">contains</a> \"<code>context</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑥⓪\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑤⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②④\">invalid argument</a>.</p>"
         },
         {
-          "html": "<p>If <var>command parameters</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④①\">contain</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④②\">contain</a> \"<code>context</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑥①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑤⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②⑤\">invalid argument</a>.</p>"
+          "html": "<p>If <var>command parameters</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④③\">contain</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④④\">contain</a> \"<code>context</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑥①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑤⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②⑤\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>emulated locale</var> be null.</p>"
         },
         {
-          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④③\">contains</a> \"<code>locale</code>\":",
+          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④⑤\">contains</a> \"<code>locale</code>\":",
           "rationale": "set",
           "steps": [
             {
@@ -4214,10 +4246,10 @@
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑤\">Set</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#locale-overrides-map\" id=\"ref-for-locale-overrides-map④\">locale overrides map</a>[<var>user context</var>] to <var>emulated locale</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑥\">Set</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#locale-overrides-map\" id=\"ref-for-locale-overrides-map④\">locale overrides map</a>[<var>user context</var>] to <var>emulated locale</var>.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>top-level traversable</var> of the list of all\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable④②\">top-level traversables</a> whose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context②⓪\">associated user context</a> is\n <var>user context</var>:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>top-level traversable</var> of the list of all\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable④②\">top-level traversables</a> whose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context②①\">associated user context</a> is\n <var>user context</var>:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -4234,7 +4266,7 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑥\">Set</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#locale-overrides-map\" id=\"ref-for-locale-overrides-map⑤\">locale overrides map</a>[<var>navigable</var>] to <var>emulated locale</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑦\">Set</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#locale-overrides-map\" id=\"ref-for-locale-overrides-map⑤\">locale overrides map</a>[<var>navigable</var>] to <var>emulated locale</var>.</p>"
             }
           ]
         },
@@ -4293,10 +4325,10 @@
           "html": "<p>If the implementation is unable to adjust the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/screen-orientation#dom-screenorientation\" id=\"ref-for-dom-screenorientation①\">screen orientations</a>\n parameters with the given <var>command parameters</var> for any reason, return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑥③\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑤⑧\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation①③\">unsupported operation</a>.</p>"
         },
         {
-          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④④\">contains</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④⑤\">contains</a> \"<code>contexts</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑥④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑤⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②⑦\">invalid argument</a>.</p>"
+          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④⑥\">contains</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④⑦\">contains</a> \"<code>contexts</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑥④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑤⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②⑦\">invalid argument</a>.</p>"
         },
         {
-          "html": "<p>If <var>command parameters</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④⑥\">contain</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④⑦\">contain</a> \"<code>contexts</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑥⑤\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑥⓪\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②⑧\">invalid argument</a>.</p>"
+          "html": "<p>If <var>command parameters</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④⑧\">contain</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④⑨\">contain</a> \"<code>contexts</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑥⑤\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑥⓪\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②⑧\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>emulated screen orientation</var> be\n <var>command parameters</var>[\"<code>screenOrientation</code>\"].</p>"
@@ -4325,10 +4357,10 @@
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑦\">Set</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#screen-orientation-overrides-map\" id=\"ref-for-screen-orientation-overrides-map②\">screen orientation overrides map</a>[<var>user context</var>] to\n <var>emulated screen orientation</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑧\">Set</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#screen-orientation-overrides-map\" id=\"ref-for-screen-orientation-overrides-map②\">screen orientation overrides map</a>[<var>user context</var>] to\n <var>emulated screen orientation</var>.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>top-level traversable</var> of the list of all\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable④③\">top-level traversables</a> whose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context②①\">associated user context</a> is\n <var>user context</var>:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>top-level traversable</var> of the list of all\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable④③\">top-level traversables</a> whose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context②②\">associated user context</a> is\n <var>user context</var>:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -4403,7 +4435,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>user context</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context②②\">associated user context</a>.</p>"
+              "html": "<p>Let <var>user context</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context②③\">associated user context</a>.</p>"
             },
             {
               "html": "<p>If <var>collector</var>’s <code>user contexts</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①②\">contains</a> <var>user context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context-user-context-id\" id=\"ref-for-user-context-user-context-id⑨\">user context id</a>, return true.</p>"
@@ -4781,7 +4813,7 @@
           "html": "<p>Let <var>request id</var> be <var>command parameters</var>[\"<code>request</code>\"].</p>"
         },
         {
-          "html": "<p>If <var>blocked requests</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④⑧\">contain</a> <var>request id</var> then return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑥⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑥①\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-request\" id=\"ref-for-errors-no-such-request\">no such request</a>.</p>"
+          "html": "<p>If <var>blocked requests</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤⓪\">contain</a> <var>request id</var> then return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑥⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑥①\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-request\" id=\"ref-for-errors-no-such-request\">no such request</a>.</p>"
         },
         {
           "html": "<p>Let (<var>request</var>, <var>phase</var>, <var>response</var>) be <var>blocked requests</var>[<var>request id</var>].</p>"
@@ -4802,7 +4834,7 @@
           ]
         },
         {
-          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④⑨\">contains</a> \"<code>statusCode</code>\":",
+          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤①\">contains</a> \"<code>statusCode</code>\":",
           "rationale": "set",
           "steps": [
             {
@@ -4811,7 +4843,7 @@
           ]
         },
         {
-          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤⓪\">contains</a> \"<code>reasonPhrase</code>\":",
+          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤②\">contains</a> \"<code>reasonPhrase</code>\":",
           "rationale": "set",
           "steps": [
             {
@@ -4820,7 +4852,7 @@
           ]
         },
         {
-          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤①\">contains</a> \"<code>headers</code>\":",
+          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤③\">contains</a> \"<code>headers</code>\":",
           "rationale": "let",
           "steps": [
             {
@@ -4850,7 +4882,7 @@
           ]
         },
         {
-          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤②\">contains</a> \"<code>cookies</code>\":",
+          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤④\">contains</a> \"<code>cookies</code>\":",
           "rationale": "if",
           "steps": [
             {
@@ -4898,7 +4930,7 @@
           ]
         },
         {
-          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤④\">contains</a> \"<code>credentials</code>\":",
+          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤⑥\">contains</a> \"<code>credentials</code>\":",
           "rationale": "let",
           "steps": [
             {
@@ -5485,7 +5517,7 @@
           "html": "<p>Let <var>header value</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence④\">byte sequence</a> formed by concatenating <var>name</var>,\n `<code>=</code>`, and <var>value</var>.</p>"
         },
         {
-          "html": "If <var>protocol cookie</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤⑤\">contains</a> \"<code>expiry</code>\":",
+          "html": "If <var>protocol cookie</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤⑦\">contains</a> \"<code>expiry</code>\":",
           "rationale": "let",
           "steps": [
             {
@@ -5500,7 +5532,7 @@
           ]
         },
         {
-          "html": "If <var>protocol cookie</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤⑥\">contains</a> \"<code>maxAge</code>\":",
+          "html": "If <var>protocol cookie</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤⑧\">contains</a> \"<code>maxAge</code>\":",
           "rationale": "let",
           "steps": [
             {
@@ -5518,7 +5550,7 @@
           ]
         },
         {
-          "html": "If <var>protocol cookie</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤⑦\">contains</a> \"<code>domain</code>\":",
+          "html": "If <var>protocol cookie</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤⑨\">contains</a> \"<code>domain</code>\":",
           "rationale": "let",
           "steps": [
             {
@@ -5533,7 +5565,7 @@
           ]
         },
         {
-          "html": "If <var>protocol cookie</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤⑧\">contains</a> \"<code>path</code>\":",
+          "html": "If <var>protocol cookie</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥⓪\">contains</a> \"<code>path</code>\":",
           "rationale": "let",
           "steps": [
             {
@@ -5548,7 +5580,7 @@
           ]
         },
         {
-          "html": "If <var>protocol cookie</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤⑨\">contains</a> \"<code>secure</code>\" and <var>protocol\n cookie</var>[\"<code>secure</code>\"] is true:",
+          "html": "If <var>protocol cookie</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥①\">contains</a> \"<code>secure</code>\" and <var>protocol\n cookie</var>[\"<code>secure</code>\"] is true:",
           "rationale": "append",
           "steps": [
             {
@@ -5557,7 +5589,7 @@
           ]
         },
         {
-          "html": "If <var>protocol cookie</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥⓪\">contains</a> \"<code>httpOnly</code>\" and <var>protocol\n cookie</var>[\"<code>httpOnly</code>\"] is true:",
+          "html": "If <var>protocol cookie</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥②\">contains</a> \"<code>httpOnly</code>\" and <var>protocol\n cookie</var>[\"<code>httpOnly</code>\"] is true:",
           "rationale": "append",
           "steps": [
             {
@@ -5566,7 +5598,7 @@
           ]
         },
         {
-          "html": "If <var>protocol cookie</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥①\">contains</a> \"<code>sameSite</code>\":",
+          "html": "If <var>protocol cookie</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥③\">contains</a> \"<code>sameSite</code>\":",
           "rationale": "let",
           "steps": [
             {
@@ -5667,7 +5699,7 @@
               "html": "<p>Let <var>pattern url</var> be the empty string.</p>"
             },
             {
-              "html": "If <var>pattern</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥②\">contains</a> \"<code>protocol</code>\":",
+              "html": "If <var>pattern</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥④\">contains</a> \"<code>protocol</code>\":",
               "rationale": "if",
               "steps": [
                 {
@@ -5718,7 +5750,7 @@
               "html": "<p>If <var>scheme</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special\">is special</a>, append \"<code>//</code>\" to <var>pattern url</var>.</p>"
             },
             {
-              "html": "If <var>pattern</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥③\">contains</a> \"<code>hostname</code>\":",
+              "html": "If <var>pattern</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥⑤\">contains</a> \"<code>hostname</code>\":",
               "rationale": "if",
               "steps": [
                 {
@@ -5781,7 +5813,7 @@
               ]
             },
             {
-              "html": "If <var>pattern</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥④\">contains</a> \"<code>port</code>\":",
+              "html": "If <var>pattern</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥⑥\">contains</a> \"<code>port</code>\":",
               "rationale": "if",
               "steps": [
                 {
@@ -5823,7 +5855,7 @@
               ]
             },
             {
-              "html": "If <var>pattern</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥⑤\">contains</a> \"<code>pathname</code>\":",
+              "html": "If <var>pattern</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥⑦\">contains</a> \"<code>pathname</code>\":",
               "rationale": "let",
               "steps": [
                 {
@@ -5862,7 +5894,7 @@
               ]
             },
             {
-              "html": "If <var>pattern</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥⑥\">contains</a> \"<code>search</code>\":",
+              "html": "If <var>pattern</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥⑧\">contains</a> \"<code>search</code>\":",
               "rationale": "let",
               "steps": [
                 {
@@ -6228,7 +6260,7 @@
           "html": "<p>Let <var>request id</var> be <var>command parameters</var>[\"<code>request</code>\"].</p>"
         },
         {
-          "html": "<p>If <var>blocked requests</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥⑦\">contain</a> <var>request id</var> then return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑧⑧\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧③\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-request\" id=\"ref-for-errors-no-such-request①\">no such request</a>.</p>"
+          "html": "<p>If <var>blocked requests</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥⑨\">contain</a> <var>request id</var> then return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑧⑧\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧③\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-request\" id=\"ref-for-errors-no-such-request①\">no such request</a>.</p>"
         },
         {
           "html": "<p>Let (<var>request</var>, <var>phase</var>, <var>response</var>) be <var>blocked requests</var>[<var>request id</var>].</p>"
@@ -6237,7 +6269,7 @@
           "html": "<p>If <var>phase</var> is not \"<code>beforeRequestSent</code>\", then return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑧⑨\">error</a>\n with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧④\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument④⑥\">invalid argument</a>.</p>"
         },
         {
-          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥⑧\">contains</a> \"<code>url</code>\":",
+          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦⓪\">contains</a> \"<code>url</code>\":",
           "rationale": "let",
           "steps": [
             {
@@ -6252,7 +6284,7 @@
           ]
         },
         {
-          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥⑨\">contains</a> \"<code>method</code>\":",
+          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦①\">contains</a> \"<code>method</code>\":",
           "rationale": "let",
           "steps": [
             {
@@ -6267,7 +6299,7 @@
           ]
         },
         {
-          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦⓪\">contains</a> \"<code>headers</code>\":",
+          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦②\">contains</a> \"<code>headers</code>\":",
           "rationale": "let",
           "steps": [
             {
@@ -6297,7 +6329,7 @@
           ]
         },
         {
-          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦①\">contains</a> \"<code>cookies</code>\":",
+          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦③\">contains</a> \"<code>cookies</code>\":",
           "rationale": "let",
           "steps": [
             {
@@ -6354,7 +6386,7 @@
           ]
         },
         {
-          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦②\">contains</a> \"<code>body</code>\":",
+          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦④\">contains</a> \"<code>body</code>\":",
           "rationale": "let",
           "steps": [
             {
@@ -6404,7 +6436,7 @@
           "html": "<p>Let <var>request id</var> be <var>command parameters</var>[\"<code>request</code>\"].</p>"
         },
         {
-          "html": "<p>If <var>blocked requests</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦③\">contain</a> <var>request id</var> then return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-request\" id=\"ref-for-errors-no-such-request②\">no such request</a>.</p>"
+          "html": "<p>If <var>blocked requests</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦⑤\">contain</a> <var>request id</var> then return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-request\" id=\"ref-for-errors-no-such-request②\">no such request</a>.</p>"
         },
         {
           "html": "<p>Let (<var>request</var>, <var>phase</var>, <var>response</var>) be <var>blocked requests</var>[<var>request id</var>].</p>"
@@ -6456,7 +6488,7 @@
           "html": "<p>Let <var>collectors</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collectors\" id=\"ref-for-network-collectors④\">network collectors</a>.</p>"
         },
         {
-          "html": "<p>If <var>collectors</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦④\">contain</a> <var>collector id</var>, return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨①\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-network-collector\" id=\"ref-for-errors-no-such-network-collector\">no such network collector</a>.</p>"
+          "html": "<p>If <var>collectors</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦⑥\">contain</a> <var>collector id</var>, return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨①\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-network-collector\" id=\"ref-for-errors-no-such-network-collector\">no such network collector</a>.</p>"
         },
         {
           "html": "<p>Let <var>collected data</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-collected-data\" id=\"ref-for-get-collected-data②\">get collected data</a> with <var>request id</var> and <var>data type</var>.</p>"
@@ -6484,7 +6516,7 @@
           "html": "<p>Let <var>request id</var> be <var>command parameters</var>[\"<code>request</code>\"].</p>"
         },
         {
-          "html": "<p>If <var>blocked requests</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦⑤\">contain</a> <var>request id</var> then return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨⑧\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨③\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-request\" id=\"ref-for-errors-no-such-request③\">no such request</a>.</p>"
+          "html": "<p>If <var>blocked requests</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦⑦\">contain</a> <var>request id</var> then return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨⑧\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨③\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-request\" id=\"ref-for-errors-no-such-request③\">no such request</a>.</p>"
         },
         {
           "html": "<p>Let (<var>request</var>, <var>phase</var>, <var>response</var>) be\n <var>blocked requests</var>[<var>request id</var>].</p>"
@@ -6518,14 +6550,14 @@
           "html": "<p>Let <var>collector id</var> be null.</p>"
         },
         {
-          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦⑥\">contains</a> \"<code>collector</code>\":",
+          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦⑧\">contains</a> \"<code>collector</code>\":",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>collectors</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collectors\" id=\"ref-for-network-collectors⑤\">network collectors</a>.</p>"
             },
             {
-              "html": "<p>If <var>collectors</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦⑦\">contain</a> <var>collector id</var>, return\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①⓪⓪\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-network-collector\" id=\"ref-for-errors-no-such-network-collector①\">no such network collector</a>.</p>"
+              "html": "<p>If <var>collectors</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦⑨\">contain</a> <var>collector id</var>, return\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①⓪⓪\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-network-collector\" id=\"ref-for-errors-no-such-network-collector①\">no such network collector</a>.</p>"
             },
             {
               "html": "<p>Set <var>collector id</var> to <var>command parameters</var>[\"<code>collector</code>\"].</p>"
@@ -6600,7 +6632,7 @@
           "html": "<p>Let <var>response</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑤①\">trying</a> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#update-the-response\" id=\"ref-for-update-the-response①\">update the response</a> with\n <var>session</var>, \"<code>provideResponse</code>\", and <var>command parameters</var>.</p>"
         },
         {
-          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦⑧\">contains</a> \"<code>body</code>\":",
+          "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⓪\">contains</a> \"<code>body</code>\":",
           "rationale": "let",
           "steps": [
             {
@@ -6631,7 +6663,7 @@
           "html": "<p>Let <var>collectors</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collectors\" id=\"ref-for-network-collectors⑥\">network collectors</a>.</p>"
         },
         {
-          "html": "<p>If <var>collectors</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦⑨\">contain</a> <var>collector id</var>, return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①⓪⑤\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⓪⓪\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-network-collector\" id=\"ref-for-errors-no-such-network-collector②\">no such network collector</a>.</p>"
+          "html": "<p>If <var>collectors</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧①\">contain</a> <var>collector id</var>, return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①⓪⑤\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⓪⓪\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-network-collector\" id=\"ref-for-errors-no-such-network-collector②\">no such network collector</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove④\">Remove</a> <var>collector id</var> from <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collectors\" id=\"ref-for-network-collectors⑦\">network collectors</a>.</p>"
@@ -6656,7 +6688,7 @@
           "html": "<p>Let <var>intercept map</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#intercept-map\" id=\"ref-for-intercept-map②\">intercept map</a>.</p>"
         },
         {
-          "html": "<p>If <var>intercept map</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⓪\">contain</a> <var>intercept</var>, return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①⓪⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⓪①\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-intercept\" id=\"ref-for-errors-no-such-intercept\">no such intercept</a>.</p>"
+          "html": "<p>If <var>intercept map</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧②\">contain</a> <var>intercept</var>, return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①⓪⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⓪①\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-intercept\" id=\"ref-for-errors-no-such-intercept\">no such intercept</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove⑤\">Remove</a> <var>intercept</var> from <var>intercept map</var>.</p>"
@@ -6712,7 +6744,7 @@
           "html": "<p>Let <var>top-level navigable</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①①\">top-level traversable</a>.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map\" id=\"ref-for-navigable-cache-behavior-map③\">navigable cache behavior map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧①\">contains</a> <var>top-level navigable</var>, return\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map\" id=\"ref-for-navigable-cache-behavior-map④\">navigable cache behavior map</a>[<var>top-level navigable</var>].</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map\" id=\"ref-for-navigable-cache-behavior-map③\">navigable cache behavior map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧③\">contains</a> <var>top-level navigable</var>, return\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map\" id=\"ref-for-navigable-cache-behavior-map④\">navigable cache behavior map</a>[<var>top-level navigable</var>].</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#default-cache-behavior\" id=\"ref-for-default-cache-behavior②\">default cache behavior</a>.</p>"
@@ -6728,7 +6760,7 @@
           "html": "<p>Let <var>behavior</var> be <var>command parameters</var>[\"<code>cacheBehavior</code>\"].</p>"
         },
         {
-          "html": "If <var>command parameters</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧②\">contain</a> \"<code>contexts</code>\":",
+          "html": "If <var>command parameters</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧④\">contain</a> \"<code>contexts</code>\":",
           "rationale": "set",
           "steps": [
             {
@@ -6738,7 +6770,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-clear\" id=\"ref-for-map-clear②\">Clear</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map\" id=\"ref-for-navigable-cache-behavior-map⑤\">navigable cache behavior map</a>.</p>"
             },
             {
-              "html": "<p>Switch on the value of behavior:</p>\n        <dl>\n         <dt>\"<code>bypass</code>\"\n  \n         </dt><dd>Perform implementation-defined steps to disable any\n    implementation-specific resource caches.\n  \n         </dd><dt>\"<code>default</code>\"\n  \n         </dt><dd>Perform implementation-defined steps to enable any\n    implementation-specific resource caches that are usually enabled in the\n    current <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-ends\" id=\"ref-for-dfn-remote-ends③⑤\">remote end</a> configuration.\n\n        </dd></dl>"
+              "html": "<p>Switch on the value of behavior:</p>\n        <dl>\n         <dt>\"<code>bypass</code>\"\n  \n         </dt><dd>Perform implementation-defined steps to disable any\n    implementation-specific resource caches.\n  \n         </dd><dt>\"<code>default</code>\"\n  \n         </dt><dd>Perform implementation-defined steps to enable any\n    implementation-specific resource caches that are usually enabled in the\n    current <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-ends\" id=\"ref-for-dfn-remote-ends③⑥\">remote end</a> configuration.\n\n        </dd></dl>"
             },
             {
               "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑤⑥\">success</a> with data null.</p>"
@@ -6768,17 +6800,17 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map\" id=\"ref-for-navigable-cache-behavior-map⑥\">navigable cache behavior map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧③\">contains</a> <var>navigable</var>, and\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map\" id=\"ref-for-navigable-cache-behavior-map⑦\">navigable cache behavior map</a>[<var>navigable</var>] is equal to <var>behavior</var> then\n continue.</p>"
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map\" id=\"ref-for-navigable-cache-behavior-map⑥\">navigable cache behavior map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⑤\">contains</a> <var>navigable</var>, and\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map\" id=\"ref-for-navigable-cache-behavior-map⑦\">navigable cache behavior map</a>[<var>navigable</var>] is equal to <var>behavior</var> then\n continue.</p>"
             },
             {
-              "html": "<p>Switch on the value of behavior:</p>\n        <dl>\n         <dt>\"<code>bypass</code>\"\n  \n         </dt><dd>Perform implementation-defined steps to disable any implementation-specific\n    resource caches for network requests originating from any browsing\n    context for which <var>navigable</var> is the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context①\">top-level browsing context</a>.\n  \n         </dd><dt>\"<code>default</code>\"\n  \n         </dt><dd>Perform implementation-defined steps to enable any\n    implementation-specific resource caches that are usually enabled in the\n    current <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-ends\" id=\"ref-for-dfn-remote-ends③⑥\">remote end</a> configuration for network requests\n    originating from any browsing context for which <var>navigable</var> is the\n    <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context②\">top-level browsing context</a>.\n\n        </dd></dl>"
+              "html": "<p>Switch on the value of behavior:</p>\n        <dl>\n         <dt>\"<code>bypass</code>\"\n  \n         </dt><dd>Perform implementation-defined steps to disable any implementation-specific\n    resource caches for network requests originating from any browsing\n    context for which <var>navigable</var> is the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context①\">top-level browsing context</a>.\n  \n         </dd><dt>\"<code>default</code>\"\n  \n         </dt><dd>Perform implementation-defined steps to enable any\n    implementation-specific resource caches that are usually enabled in the\n    current <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-ends\" id=\"ref-for-dfn-remote-ends③⑦\">remote end</a> configuration for network requests\n    originating from any browsing context for which <var>navigable</var> is the\n    <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context②\">top-level browsing context</a>.\n\n        </dd></dl>"
             },
             {
               "html": "If <var>behavior</var> is equal to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#default-cache-behavior\" id=\"ref-for-default-cache-behavior④\">default cache behavior</a>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map\" id=\"ref-for-navigable-cache-behavior-map⑧\">navigable cache behavior map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧④\">contains</a> <var>navigable</var>,\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove⑥\">remove</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map\" id=\"ref-for-navigable-cache-behavior-map⑨\">navigable cache behavior map</a>[<var>navigable</var>].</p>"
+                  "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map\" id=\"ref-for-navigable-cache-behavior-map⑧\">navigable cache behavior map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⑥\">contains</a> <var>navigable</var>,\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove⑥\">remove</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-cache-behavior-map\" id=\"ref-for-navigable-cache-behavior-map⑨\">navigable cache behavior map</a>[<var>navigable</var>].</p>"
                 }
               ]
             },
@@ -6824,7 +6856,7 @@
               "html": "<p>Let <var>response data</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-the-response-data\" id=\"ref-for-get-the-response-data\">get the response data</a> with <var>response</var>.</p>"
             },
             {
-              "html": "<p class=\"assertion\">Assert: <var>response data</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⑤\">contains</a> \"<code>authChallenge</code>\".</p>"
+              "html": "<p class=\"assertion\">Assert: <var>response data</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⑦\">contains</a> \"<code>authChallenge</code>\".</p>"
             },
             {
               "html": "<p>Set the <code>response</code> field of <var>params</var> to <var>response data</var>.</p>"
@@ -6880,7 +6912,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context②③\">associated user context</a> is <var>user context</var> return true.</p>"
+              "html": "<p>If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context②④\">associated user context</a> is <var>user context</var> return true.</p>"
             }
           ]
         },
@@ -6908,7 +6940,7 @@
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context-to-accept-insecure-certificates-override-map\" id=\"ref-for-user-context-to-accept-insecure-certificates-override-map③\">user context to accept insecure certificates override map</a>\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⑥\">contains</a> <var>user context</var>:",
+                      "html": "If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context-to-accept-insecure-certificates-override-map\" id=\"ref-for-user-context-to-accept-insecure-certificates-override-map③\">user context to accept insecure certificates override map</a>\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⑧\">contains</a> <var>user context</var>:",
                       "rationale": "let",
                       "steps": [
                         {
@@ -7209,7 +7241,7 @@
           "html": "<p>Let <var>navigable</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables①⑨\">navigable</a>.</p>"
         },
         {
-          "html": "<p>Let <var>user context</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context②④\">associated user context</a>.</p>"
+          "html": "<p>Let <var>user context</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context②⑤\">associated user context</a>.</p>"
         },
         {
           "html": "<p>Let <var>user context id</var> be <var>user context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context-user-context-id\" id=\"ref-for-user-context-user-context-id①⓪\">user context id</a>.</p>"
@@ -8575,7 +8607,7 @@
               "html": "<p>Let <var>sandbox</var> be null.</p>"
             },
             {
-              "html": "<p>If <var>target</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⑦\">contains</a> \"<code>sandbox</code>\", set <var>sandbox</var> to\n <var>target</var>[\"<code>sandbox</code>\"].</p>"
+              "html": "<p>If <var>target</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⑨\">contains</a> \"<code>sandbox</code>\", set <var>sandbox</var> to\n <var>target</var>[\"<code>sandbox</code>\"].</p>"
             },
             {
               "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-a-realm-from-a-navigable\" id=\"ref-for-get-a-realm-from-a-navigable①\">get a realm from a navigable</a> with\n <var>target</var>[\"<code>context</code>\"] and <var>sandbox</var>.</p>"
@@ -8608,7 +8640,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⑧\">contains</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⑨\">contains</a> \"<code>contexts</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②⓪\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤⑨\">invalid argument</a>.</p>"
+          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⓪\">contains</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨①\">contains</a> \"<code>contexts</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②⓪\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤⑨\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>function declaration</var> be the <code>functionDeclaration</code> field of <var>command\n parameters</var>.</p>"
@@ -8647,7 +8679,7 @@
           ]
         },
         {
-          "html": "Otherwise, if <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⓪\">contains</a> <code>userContexts</code>:",
+          "html": "Otherwise, if <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨②\">contains</a> <code>userContexts</code>:",
           "rationale": "set",
           "steps": [
             {
@@ -9037,7 +9069,7 @@
           "html": "<p>Let <var>preload script map</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#preload-script-map\" id=\"ref-for-preload-script-map②\">preload script map</a>.</p>"
         },
         {
-          "html": "<p>If <var>preload script map</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨①\">contain</a> <var>script</var>, return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-script\" id=\"ref-for-errors-no-such-script\">no such script</a>.</p>"
+          "html": "<p>If <var>preload script map</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨③\">contain</a> <var>script</var>, return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-script\" id=\"ref-for-errors-no-such-script\">no such script</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①④\">Remove</a> <var>script</var> from <var>preload script map</var>.</p>"
@@ -9064,10 +9096,10 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>channel properties</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨②\">contains</a>\n \"<code>serializationOptions</code>\", let <var>serialization options</var> be the\n value of the <code>serializationOptions</code> field of <var>channel\n properties</var>. Otherwise let <var>serialization options</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②④\">map</a>\n matching the <code>script.SerializationOptions</code> production with the\n fields set to their default values.</p>"
+              "html": "<p>If <var>channel properties</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨④\">contains</a>\n \"<code>serializationOptions</code>\", let <var>serialization options</var> be the\n value of the <code>serializationOptions</code> field of <var>channel\n properties</var>. Otherwise let <var>serialization options</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②④\">map</a>\n matching the <code>script.SerializationOptions</code> production with the\n fields set to their default values.</p>"
             },
             {
-              "html": "<p>Let if <var>channel properties</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨③\">contains</a> \"<code>ownership</code>\", let\n <var>ownership type</var> be <var>channel properties</var>[\"<code>ownership</code>\"]. Otherwise let\n <var>ownership type</var> be \"<code>none</code>\".</p>"
+              "html": "<p>Let if <var>channel properties</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⑤\">contains</a> \"<code>ownership</code>\", let\n <var>ownership type</var> be <var>channel properties</var>[\"<code>ownership</code>\"]. Otherwise let\n <var>ownership type</var> be \"<code>none</code>\".</p>"
             },
             {
               "html": "<p>Let <var>data</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-remote-value\" id=\"ref-for-serialize-as-a-remote-value①⓪\">serialize as a remote value</a> given\n <var>message</var>, <var>serialization options</var>, <var>ownership type</var>, a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②⑤\">map</a> as serialization\n internal map and <var>realm</var>.</p>"
@@ -9286,7 +9318,7 @@
               "html": "<p>If <var>name</var> is \"<code>value</code>\", set <var>deserialized value</var> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#deserialize-protocol-bytes\" id=\"ref-for-deserialize-protocol-bytes⑤\">deserialize protocol bytes</a> with <var>value</var>,\n otherwise let <var>deserialized value</var> be <var>value</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑧\">Set</a> <var>deserialized filter</var>[<var>deserialized name</var>] to <var>deserialized value</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑨\">Set</a> <var>deserialized filter</var>[<var>deserialized name</var>] to <var>deserialized value</var>.</p>"
             }
           ]
         },
@@ -9333,10 +9365,10 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>value</var> be <var>partition spec</var>[<var>name</var>] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨④\">exists</a> or <var>default value</var> otherwise.</p>"
+              "html": "<p>Let <var>value</var> be <var>partition spec</var>[<var>name</var>] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⑥\">exists</a> or <var>default value</var> otherwise.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑨\">Set</a> <var>partition key</var>[<var>name</var>] to <var>value</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①⓪\">Set</a> <var>partition key</var>[<var>name</var>] to <var>value</var>.</p>"
             }
           ]
         },
@@ -9345,11 +9377,11 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>partition spec</var>[<var>name</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⑤\">exists</a>:",
+              "html": "If <var>partition spec</var>[<var>name</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⑦\">exists</a>:",
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①⓪\">Set</a> <var>partition key</var>][<var>name</var>] to <var>partition spec</var>[<var>name</var>].</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①①\">Set</a> <var>partition key</var>][<var>name</var>] to <var>partition spec</var>[<var>name</var>].</p>"
                 }
               ]
             },
@@ -10013,7 +10045,7 @@
               "html": "<p>Assert <var>user prompt handler</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑤⑥\">map</a>.</p>"
             },
             {
-              "html": "If <var>user prompt handler</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⑥\">contains</a> \"<code>file</code>\":",
+              "html": "If <var>user prompt handler</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⑧\">contains</a> \"<code>file</code>\":",
               "rationale": "if",
               "steps": [
                 {
@@ -10022,7 +10054,7 @@
               ]
             },
             {
-              "html": "<p>Otherwise if <var>user prompt handler</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⑦\">contains</a> \"<code>default</code>\" and\n  <var>user prompt handler</var>[\"<code>default</code>\"] is not equal to\n  \"<code>ignore</code>\", set <var>dismissed</var> to true.</p>"
+              "html": "<p>Otherwise if <var>user prompt handler</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⑨\">contains</a> \"<code>default</code>\" and\n  <var>user prompt handler</var>[\"<code>default</code>\"] is not equal to\n  \"<code>ignore</code>\", set <var>dismissed</var> to true.</p>"
             }
           ]
         },
@@ -10158,10 +10190,10 @@
           "html": "<p>Let <var>extension</var> be <var>command parameters</var>[\"<code>extension</code>\"].</p>"
         },
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-ends\" id=\"ref-for-dfn-remote-ends④⑥\">remote end</a> has no web extension with id equal to <var>extension</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①③⑧\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①③①\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-web-extension\" id=\"ref-for-errors-no-such-web-extension\">no such web extension</a>.</p>"
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-ends\" id=\"ref-for-dfn-remote-ends④⑦\">remote end</a> has no web extension with id equal to <var>extension</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①③⑧\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①③①\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-web-extension\" id=\"ref-for-errors-no-such-web-extension\">no such web extension</a>.</p>"
         },
         {
-          "html": "<p>Perform any implementation-defined steps to remove the web extension from the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-ends\" id=\"ref-for-dfn-remote-ends④⑦\">remote end</a>. If this fails, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①③⑨\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①③②\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unknown-error\" id=\"ref-for-dfn-unknown-error③\">unknown error</a>.</p>"
+          "html": "<p>Perform any implementation-defined steps to remove the web extension from the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-ends\" id=\"ref-for-dfn-remote-ends④⑧\">remote end</a>. If this fails, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①③⑨\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①③②\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unknown-error\" id=\"ref-for-dfn-unknown-error③\">unknown error</a>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑨④\">success</a> with data null.</p>"
@@ -10184,7 +10216,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#device-pixel-ratio-overrides\" id=\"ref-for-device-pixel-ratio-overrides②\">device pixel ratio overrides</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⑧\">contains</a> <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable④\">navigable</a>, return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#device-pixel-ratio-overrides\" id=\"ref-for-device-pixel-ratio-overrides③\">device pixel ratio overrides</a>[<var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable⑤\">navigable</a>].</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#device-pixel-ratio-overrides\" id=\"ref-for-device-pixel-ratio-overrides②\">device pixel ratio overrides</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⓪⓪\">contains</a> <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable④\">navigable</a>, return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#device-pixel-ratio-overrides\" id=\"ref-for-device-pixel-ratio-overrides③\">device pixel ratio overrides</a>[<var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable⑤\">navigable</a>].</p>"
         }
       ]
     }

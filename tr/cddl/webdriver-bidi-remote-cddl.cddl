@@ -194,7 +194,8 @@ browser.CreateUserContext = (
 
 browser.CreateUserContextParameters = {
   ? acceptInsecureCerts: bool,
-  ? proxy: session.ProxyConfiguration
+  ? proxy: session.ProxyConfiguration,
+  ? unhandledPromptBehavior: session.UserPromptHandler
 }
 
 browser.GetClientWindows = (
@@ -1729,7 +1730,8 @@ browser.CreateUserContext = (
 
 browser.CreateUserContextParameters = {
   ? acceptInsecureCerts: bool,
-  ? proxy: session.ProxyConfiguration
+  ? proxy: session.ProxyConfiguration,
+  ? unhandledPromptBehavior: session.UserPromptHandler
 }
 
 browser.GetClientWindows = (

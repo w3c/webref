@@ -192,9 +192,9 @@
       "id": "severity",
       "href": "https://www.w3.org/TR/shacl12-core/#severity",
       "level": 4,
-      "title": "Declaring the Severity of a Shape",
+      "title": "Declaring the Severity of a Shape or Constraint",
       "alternateIds": [
-        "x2-1-4-declaring-the-severity-of-a-shape"
+        "x2-1-4-declaring-the-severity-of-a-shape-or-constraint"
       ],
       "number": "2.1.4"
     },
@@ -202,9 +202,9 @@
       "id": "message",
       "href": "https://www.w3.org/TR/shacl12-core/#message",
       "level": 4,
-      "title": "Declaring Messages for a Shape",
+      "title": "Declaring Messages for a Shape or Constraint",
       "alternateIds": [
-        "x2-1-5-declaring-messages-for-a-shape"
+        "x2-1-5-declaring-messages-for-a-shape-or-constraint"
       ],
       "number": "2.1.5"
     },
@@ -212,9 +212,9 @@
       "id": "deactivated",
       "href": "https://www.w3.org/TR/shacl12-core/#deactivated",
       "level": 4,
-      "title": "Deactivating a Shape",
+      "title": "Deactivating Shapes and Constraints",
       "alternateIds": [
-        "x2-1-6-deactivating-a-shape"
+        "x2-1-6-deactivating-shapes-and-constraints"
       ],
       "number": "2.1.6"
     },
@@ -239,124 +239,114 @@
       "number": "2.3"
     },
     {
-      "id": "expressions",
-      "href": "https://www.w3.org/TR/shacl12-core/#expressions",
+      "id": "property-paths",
+      "href": "https://www.w3.org/TR/shacl12-core/#property-paths",
       "level": 2,
-      "title": "SHACL Expressions",
+      "title": "SHACL Property Paths",
       "alternateIds": [
-        "x3-shacl-expressions"
+        "x3-shacl-property-paths"
       ],
       "number": "3"
     },
     {
-      "id": "property-paths",
-      "href": "https://www.w3.org/TR/shacl12-core/#property-paths",
+      "id": "property-path-predicate",
+      "href": "https://www.w3.org/TR/shacl12-core/#property-path-predicate",
       "level": 3,
-      "title": "SHACL Property Paths",
+      "title": "Predicate Paths",
       "alternateIds": [
-        "x3-1-shacl-property-paths"
+        "x3-1-predicate-paths"
       ],
       "number": "3.1"
     },
     {
-      "id": "property-path-predicate",
-      "href": "https://www.w3.org/TR/shacl12-core/#property-path-predicate",
-      "level": 4,
-      "title": "Predicate Paths",
-      "alternateIds": [
-        "x3-1-1-predicate-paths"
-      ],
-      "number": "3.1.1"
-    },
-    {
       "id": "property-path-sequence",
       "href": "https://www.w3.org/TR/shacl12-core/#property-path-sequence",
-      "level": 4,
+      "level": 3,
       "title": "Sequence Paths",
       "alternateIds": [
-        "x3-1-2-sequence-paths"
-      ],
-      "number": "3.1.2"
-    },
-    {
-      "id": "property-path-alternative",
-      "href": "https://www.w3.org/TR/shacl12-core/#property-path-alternative",
-      "level": 4,
-      "title": "Alternative Paths",
-      "alternateIds": [
-        "x3-1-3-alternative-paths"
-      ],
-      "number": "3.1.3"
-    },
-    {
-      "id": "property-path-inverse",
-      "href": "https://www.w3.org/TR/shacl12-core/#property-path-inverse",
-      "level": 4,
-      "title": "Inverse Paths",
-      "alternateIds": [
-        "x3-1-4-inverse-paths"
-      ],
-      "number": "3.1.4"
-    },
-    {
-      "id": "property-path-zero-or-more",
-      "href": "https://www.w3.org/TR/shacl12-core/#property-path-zero-or-more",
-      "level": 4,
-      "title": "Zero-Or-More Paths",
-      "alternateIds": [
-        "x3-1-5-zero-or-more-paths"
-      ],
-      "number": "3.1.5"
-    },
-    {
-      "id": "property-path-one-or-more",
-      "href": "https://www.w3.org/TR/shacl12-core/#property-path-one-or-more",
-      "level": 4,
-      "title": "One-Or-More Paths",
-      "alternateIds": [
-        "x3-1-6-one-or-more-paths"
-      ],
-      "number": "3.1.6"
-    },
-    {
-      "id": "property-path-zero-or-one",
-      "href": "https://www.w3.org/TR/shacl12-core/#property-path-zero-or-one",
-      "level": 4,
-      "title": "Zero-Or-One Paths",
-      "alternateIds": [
-        "x3-1-7-zero-or-one-paths"
-      ],
-      "number": "3.1.7"
-    },
-    {
-      "id": "node-expressions",
-      "href": "https://www.w3.org/TR/shacl12-core/#node-expressions",
-      "level": 3,
-      "title": "Node Expressions",
-      "alternateIds": [
-        "x3-2-node-expressions"
+        "x3-2-sequence-paths"
       ],
       "number": "3.2"
     },
     {
+      "id": "property-path-alternative",
+      "href": "https://www.w3.org/TR/shacl12-core/#property-path-alternative",
+      "level": 3,
+      "title": "Alternative Paths",
+      "alternateIds": [
+        "x3-3-alternative-paths"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "property-path-inverse",
+      "href": "https://www.w3.org/TR/shacl12-core/#property-path-inverse",
+      "level": 3,
+      "title": "Inverse Paths",
+      "alternateIds": [
+        "x3-4-inverse-paths"
+      ],
+      "number": "3.4"
+    },
+    {
+      "id": "property-path-zero-or-more",
+      "href": "https://www.w3.org/TR/shacl12-core/#property-path-zero-or-more",
+      "level": 3,
+      "title": "Zero-Or-More Paths",
+      "alternateIds": [
+        "x3-5-zero-or-more-paths"
+      ],
+      "number": "3.5"
+    },
+    {
+      "id": "property-path-one-or-more",
+      "href": "https://www.w3.org/TR/shacl12-core/#property-path-one-or-more",
+      "level": 3,
+      "title": "One-Or-More Paths",
+      "alternateIds": [
+        "x3-6-one-or-more-paths"
+      ],
+      "number": "3.6"
+    },
+    {
+      "id": "property-path-zero-or-one",
+      "href": "https://www.w3.org/TR/shacl12-core/#property-path-zero-or-one",
+      "level": 3,
+      "title": "Zero-Or-One Paths",
+      "alternateIds": [
+        "x3-7-zero-or-one-paths"
+      ],
+      "number": "3.7"
+    },
+    {
+      "id": "node-expressions",
+      "href": "https://www.w3.org/TR/shacl12-core/#node-expressions",
+      "level": 2,
+      "title": "Node Expressions",
+      "alternateIds": [
+        "x4-node-expressions"
+      ],
+      "number": "4"
+    },
+    {
       "id": "IRIExpression",
       "href": "https://www.w3.org/TR/shacl12-core/#IRIExpression",
-      "level": 4,
+      "level": 3,
       "title": "IRI Expressions",
       "alternateIds": [
-        "x3-2-1-iri-expressions"
+        "x4-1-iri-expressions"
       ],
-      "number": "3.2.1"
+      "number": "4.1"
     },
     {
       "id": "LiteralExpression",
       "href": "https://www.w3.org/TR/shacl12-core/#LiteralExpression",
-      "level": 4,
+      "level": 3,
       "title": "Literal Expressions",
       "alternateIds": [
-        "x3-2-2-literal-expressions"
+        "x4-2-literal-expressions"
       ],
-      "number": "3.2.2"
+      "number": "4.2"
     },
     {
       "id": "validation",
@@ -364,9 +354,9 @@
       "level": 2,
       "title": "Validation and Graphs",
       "alternateIds": [
-        "x4-validation-and-graphs"
+        "x5-validation-and-graphs"
       ],
-      "number": "4"
+      "number": "5"
     },
     {
       "id": "shapes-graph",
@@ -374,9 +364,9 @@
       "level": 3,
       "title": "Shapes Graph",
       "alternateIds": [
-        "x4-1-shapes-graph"
+        "x5-1-shapes-graph"
       ],
-      "number": "4.1"
+      "number": "5.1"
     },
     {
       "id": "data-graph",
@@ -384,9 +374,9 @@
       "level": 3,
       "title": "Data Graph",
       "alternateIds": [
-        "x4-2-data-graph"
+        "x5-2-data-graph"
       ],
-      "number": "4.2"
+      "number": "5.2"
     },
     {
       "id": "sh-shapes-graph",
@@ -394,9 +384,9 @@
       "level": 3,
       "title": "Linking to shapes graphs (sh:shapesGraph)",
       "alternateIds": [
-        "x4-3-linking-to-shapes-graphs-sh-shapesgraph"
+        "x5-3-linking-to-shapes-graphs-sh-shapesgraph"
       ],
-      "number": "4.3"
+      "number": "5.3"
     },
     {
       "id": "validation-definition",
@@ -404,9 +394,9 @@
       "level": 3,
       "title": "Validation",
       "alternateIds": [
-        "x4-4-validation"
+        "x5-4-validation"
       ],
-      "number": "4.4"
+      "number": "5.4"
     },
     {
       "id": "failures",
@@ -414,9 +404,9 @@
       "level": 4,
       "title": "Failures",
       "alternateIds": [
-        "x4-4-1-failures"
+        "x5-4-1-failures"
       ],
-      "number": "4.4.1"
+      "number": "5.4.1"
     },
     {
       "id": "ill-formed-shape-graphs",
@@ -424,9 +414,9 @@
       "level": 4,
       "title": "Handling of Ill-formed Shapes Graphs",
       "alternateIds": [
-        "x4-4-2-handling-of-ill-formed-shapes-graphs"
+        "x5-4-2-handling-of-ill-formed-shapes-graphs"
       ],
-      "number": "4.4.2"
+      "number": "5.4.2"
     },
     {
       "id": "shapes-recursion",
@@ -434,9 +424,9 @@
       "level": 4,
       "title": "Handling of Recursive Shapes",
       "alternateIds": [
-        "x4-4-3-handling-of-recursive-shapes"
+        "x5-4-3-handling-of-recursive-shapes"
       ],
-      "number": "4.4.3"
+      "number": "5.4.3"
     },
     {
       "id": "conformance-definition",
@@ -444,9 +434,9 @@
       "level": 3,
       "title": "Conformance Checking",
       "alternateIds": [
-        "x4-5-conformance-checking"
+        "x5-5-conformance-checking"
       ],
-      "number": "4.5"
+      "number": "5.5"
     },
     {
       "id": "validation-report",
@@ -454,9 +444,9 @@
       "level": 3,
       "title": "Validation Report",
       "alternateIds": [
-        "x4-6-validation-report"
+        "x5-6-validation-report"
       ],
-      "number": "4.6"
+      "number": "5.6"
     },
     {
       "id": "results-validation-report",
@@ -464,9 +454,9 @@
       "level": 4,
       "title": "Validation Report (sh:ValidationReport)",
       "alternateIds": [
-        "x4-6-1-validation-report-sh-validationreport"
+        "x5-6-1-validation-report-sh-validationreport"
       ],
-      "number": "4.6.1"
+      "number": "5.6.1"
     },
     {
       "id": "conforms",
@@ -474,9 +464,9 @@
       "level": 5,
       "title": "Conforms (sh:conforms)",
       "alternateIds": [
-        "x4-6-1-1-conforms-sh-conforms"
+        "x5-6-1-1-conforms-sh-conforms"
       ],
-      "number": "4.6.1.1"
+      "number": "5.6.1.1"
     },
     {
       "id": "result",
@@ -484,9 +474,9 @@
       "level": 5,
       "title": "Result (sh:result)",
       "alternateIds": [
-        "x4-6-1-2-result-sh-result"
+        "x5-6-1-2-result-sh-result"
       ],
-      "number": "4.6.1.2"
+      "number": "5.6.1.2"
     },
     {
       "id": "shapesGraphWellFormed",
@@ -494,9 +484,9 @@
       "level": 5,
       "title": "Syntax Checking of Shapes Graph (sh:shapesGraphWellFormed)",
       "alternateIds": [
-        "x4-6-1-3-syntax-checking-of-shapes-graph-sh-shapesgraphwellformed"
+        "x5-6-1-3-syntax-checking-of-shapes-graph-sh-shapesgraphwellformed"
       ],
-      "number": "4.6.1.3"
+      "number": "5.6.1.3"
     },
     {
       "id": "results-validation-result",
@@ -504,9 +494,9 @@
       "level": 4,
       "title": "Validation Result (sh:ValidationResult)",
       "alternateIds": [
-        "x4-6-2-validation-result-sh-validationresult"
+        "x5-6-2-validation-result-sh-validationresult"
       ],
-      "number": "4.6.2"
+      "number": "5.6.2"
     },
     {
       "id": "results-focus-node",
@@ -514,9 +504,9 @@
       "level": 5,
       "title": "Focus node (sh:focusNode)",
       "alternateIds": [
-        "x4-6-2-1-focus-node-sh-focusnode"
+        "x5-6-2-1-focus-node-sh-focusnode"
       ],
-      "number": "4.6.2.1"
+      "number": "5.6.2.1"
     },
     {
       "id": "results-path",
@@ -524,9 +514,9 @@
       "level": 5,
       "title": "Path (sh:resultPath)",
       "alternateIds": [
-        "x4-6-2-2-path-sh-resultpath"
+        "x5-6-2-2-path-sh-resultpath"
       ],
-      "number": "4.6.2.2"
+      "number": "5.6.2.2"
     },
     {
       "id": "results-value",
@@ -534,9 +524,9 @@
       "level": 5,
       "title": "Value (sh:value)",
       "alternateIds": [
-        "x4-6-2-3-value-sh-value"
+        "x5-6-2-3-value-sh-value"
       ],
-      "number": "4.6.2.3"
+      "number": "5.6.2.3"
     },
     {
       "id": "results-source-shape",
@@ -544,9 +534,9 @@
       "level": 5,
       "title": "Source (sh:sourceShape)",
       "alternateIds": [
-        "x4-6-2-4-source-sh-sourceshape"
+        "x5-6-2-4-source-sh-sourceshape"
       ],
-      "number": "4.6.2.4"
+      "number": "5.6.2.4"
     },
     {
       "id": "results-source-constraint-component",
@@ -554,9 +544,9 @@
       "level": 5,
       "title": "Constraint Component (sh:sourceConstraintComponent)",
       "alternateIds": [
-        "x4-6-2-5-constraint-component-sh-sourceconstraintcomponent"
+        "x5-6-2-5-constraint-component-sh-sourceconstraintcomponent"
       ],
-      "number": "4.6.2.5"
+      "number": "5.6.2.5"
     },
     {
       "id": "results-detail",
@@ -564,9 +554,9 @@
       "level": 5,
       "title": "Details (sh:detail)",
       "alternateIds": [
-        "x4-6-2-6-details-sh-detail"
+        "x5-6-2-6-details-sh-detail"
       ],
-      "number": "4.6.2.6"
+      "number": "5.6.2.6"
     },
     {
       "id": "results-message",
@@ -574,9 +564,9 @@
       "level": 5,
       "title": "Message (sh:resultMessage)",
       "alternateIds": [
-        "x4-6-2-7-message-sh-resultmessage"
+        "x5-6-2-7-message-sh-resultmessage"
       ],
-      "number": "4.6.2.7"
+      "number": "5.6.2.7"
     },
     {
       "id": "results-severity",
@@ -584,9 +574,9 @@
       "level": 5,
       "title": "Severity (sh:resultSeverity)",
       "alternateIds": [
-        "x4-6-2-8-severity-sh-resultseverity"
+        "x5-6-2-8-severity-sh-resultseverity"
       ],
-      "number": "4.6.2.8"
+      "number": "5.6.2.8"
     },
     {
       "id": "value-nodes",
@@ -594,9 +584,9 @@
       "level": 3,
       "title": "Value Nodes",
       "alternateIds": [
-        "x4-7-value-nodes"
+        "x5-7-value-nodes"
       ],
-      "number": "4.7"
+      "number": "5.7"
     },
     {
       "id": "value-nodes-node-shapes",
@@ -604,9 +594,9 @@
       "level": 4,
       "title": "Value Nodes of Node Shapes",
       "alternateIds": [
-        "x4-7-1-value-nodes-of-node-shapes"
+        "x5-7-1-value-nodes-of-node-shapes"
       ],
-      "number": "4.7.1"
+      "number": "5.7.1"
     },
     {
       "id": "value-nodes-property-shapes",
@@ -614,9 +604,9 @@
       "level": 4,
       "title": "Value Nodes of Property Shapes",
       "alternateIds": [
-        "x4-7-2-value-nodes-of-property-shapes"
+        "x5-7-2-value-nodes-of-property-shapes"
       ],
-      "number": "4.7.2"
+      "number": "5.7.2"
     },
     {
       "id": "core-components",
@@ -624,9 +614,9 @@
       "level": 2,
       "title": "Core Constraint Components",
       "alternateIds": [
-        "x5-core-constraint-components"
+        "x6-core-constraint-components"
       ],
-      "number": "5"
+      "number": "6"
     },
     {
       "id": "core-components-value-type",
@@ -634,9 +624,9 @@
       "level": 3,
       "title": "Value Type Constraint Components",
       "alternateIds": [
-        "x5-1-value-type-constraint-components"
+        "x6-1-value-type-constraint-components"
       ],
-      "number": "5.1"
+      "number": "6.1"
     },
     {
       "id": "ClassConstraintComponent",
@@ -644,9 +634,9 @@
       "level": 4,
       "title": "sh:class",
       "alternateIds": [
-        "x5-1-1-sh-class"
+        "x6-1-1-sh-class"
       ],
-      "number": "5.1.1"
+      "number": "6.1.1"
     },
     {
       "id": "DatatypeConstraintComponent",
@@ -654,9 +644,9 @@
       "level": 4,
       "title": "sh:datatype",
       "alternateIds": [
-        "x5-1-2-sh-datatype"
+        "x6-1-2-sh-datatype"
       ],
-      "number": "5.1.2"
+      "number": "6.1.2"
     },
     {
       "id": "NodeKindConstraintComponent",
@@ -664,9 +654,9 @@
       "level": 4,
       "title": "sh:nodeKind",
       "alternateIds": [
-        "x5-1-3-sh-nodekind"
+        "x6-1-3-sh-nodekind"
       ],
-      "number": "5.1.3"
+      "number": "6.1.3"
     },
     {
       "id": "core-components-count",
@@ -674,9 +664,9 @@
       "level": 3,
       "title": "Cardinality Constraint Components",
       "alternateIds": [
-        "x5-2-cardinality-constraint-components"
+        "x6-2-cardinality-constraint-components"
       ],
-      "number": "5.2"
+      "number": "6.2"
     },
     {
       "id": "MinCountConstraintComponent",
@@ -684,9 +674,9 @@
       "level": 4,
       "title": "sh:minCount",
       "alternateIds": [
-        "x5-2-1-sh-mincount"
+        "x6-2-1-sh-mincount"
       ],
-      "number": "5.2.1"
+      "number": "6.2.1"
     },
     {
       "id": "MaxCountConstraintComponent",
@@ -694,9 +684,9 @@
       "level": 4,
       "title": "sh:maxCount",
       "alternateIds": [
-        "x5-2-2-sh-maxcount"
+        "x6-2-2-sh-maxcount"
       ],
-      "number": "5.2.2"
+      "number": "6.2.2"
     },
     {
       "id": "core-components-range",
@@ -704,9 +694,9 @@
       "level": 3,
       "title": "Value Range Constraint Components",
       "alternateIds": [
-        "x5-3-value-range-constraint-components"
+        "x6-3-value-range-constraint-components"
       ],
-      "number": "5.3"
+      "number": "6.3"
     },
     {
       "id": "MinExclusiveConstraintComponent",
@@ -714,9 +704,9 @@
       "level": 4,
       "title": "sh:minExclusive",
       "alternateIds": [
-        "x5-3-1-sh-minexclusive"
+        "x6-3-1-sh-minexclusive"
       ],
-      "number": "5.3.1"
+      "number": "6.3.1"
     },
     {
       "id": "MinInclusiveConstraintComponent",
@@ -724,9 +714,9 @@
       "level": 4,
       "title": "sh:minInclusive",
       "alternateIds": [
-        "x5-3-2-sh-mininclusive"
+        "x6-3-2-sh-mininclusive"
       ],
-      "number": "5.3.2"
+      "number": "6.3.2"
     },
     {
       "id": "MaxExclusiveConstraintComponent",
@@ -734,9 +724,9 @@
       "level": 4,
       "title": "sh:maxExclusive",
       "alternateIds": [
-        "x5-3-3-sh-maxexclusive"
+        "x6-3-3-sh-maxexclusive"
       ],
-      "number": "5.3.3"
+      "number": "6.3.3"
     },
     {
       "id": "MaxInclusiveConstraintComponent",
@@ -744,9 +734,9 @@
       "level": 4,
       "title": "sh:maxInclusive",
       "alternateIds": [
-        "x5-3-4-sh-maxinclusive"
+        "x6-3-4-sh-maxinclusive"
       ],
-      "number": "5.3.4"
+      "number": "6.3.4"
     },
     {
       "id": "core-components-string",
@@ -754,9 +744,9 @@
       "level": 3,
       "title": "String-based Constraint Components",
       "alternateIds": [
-        "x5-4-string-based-constraint-components"
+        "x6-4-string-based-constraint-components"
       ],
-      "number": "5.4"
+      "number": "6.4"
     },
     {
       "id": "MinLengthConstraintComponent",
@@ -764,9 +754,9 @@
       "level": 4,
       "title": "sh:minLength",
       "alternateIds": [
-        "x5-4-1-sh-minlength"
+        "x6-4-1-sh-minlength"
       ],
-      "number": "5.4.1"
+      "number": "6.4.1"
     },
     {
       "id": "MaxLengthConstraintComponent",
@@ -774,9 +764,9 @@
       "level": 4,
       "title": "sh:maxLength",
       "alternateIds": [
-        "x5-4-2-sh-maxlength"
+        "x6-4-2-sh-maxlength"
       ],
-      "number": "5.4.2"
+      "number": "6.4.2"
     },
     {
       "id": "PatternConstraintComponent",
@@ -784,9 +774,9 @@
       "level": 4,
       "title": "sh:pattern",
       "alternateIds": [
-        "x5-4-3-sh-pattern"
+        "x6-4-3-sh-pattern"
       ],
-      "number": "5.4.3"
+      "number": "6.4.3"
     },
     {
       "id": "SingleLineConstraintComponent",
@@ -794,9 +784,9 @@
       "level": 4,
       "title": "sh:singleLine",
       "alternateIds": [
-        "x5-4-4-sh-singleline"
+        "x6-4-4-sh-singleline"
       ],
-      "number": "5.4.4"
+      "number": "6.4.4"
     },
     {
       "id": "LanguageInConstraintComponent",
@@ -804,9 +794,9 @@
       "level": 4,
       "title": "sh:languageIn",
       "alternateIds": [
-        "x5-4-5-sh-languagein"
+        "x6-4-5-sh-languagein"
       ],
-      "number": "5.4.5"
+      "number": "6.4.5"
     },
     {
       "id": "UniqueLangConstraintComponent",
@@ -814,9 +804,59 @@
       "level": 4,
       "title": "sh:uniqueLang",
       "alternateIds": [
-        "x5-4-6-sh-uniquelang"
+        "x6-4-6-sh-uniquelang"
       ],
-      "number": "5.4.6"
+      "number": "6.4.6"
+    },
+    {
+      "id": "core-components-list",
+      "href": "https://www.w3.org/TR/shacl12-core/#core-components-list",
+      "level": 3,
+      "title": "List Constraint Components",
+      "alternateIds": [
+        "x6-5-list-constraint-components"
+      ],
+      "number": "6.5"
+    },
+    {
+      "id": "MemberShapeConstraintComponent",
+      "href": "https://www.w3.org/TR/shacl12-core/#MemberShapeConstraintComponent",
+      "level": 4,
+      "title": "sh:memberShape",
+      "alternateIds": [
+        "x6-5-1-sh-membershape"
+      ],
+      "number": "6.5.1"
+    },
+    {
+      "id": "MinListLengthConstraintComponent",
+      "href": "https://www.w3.org/TR/shacl12-core/#MinListLengthConstraintComponent",
+      "level": 4,
+      "title": "sh:minListLength",
+      "alternateIds": [
+        "x6-5-2-sh-minlistlength"
+      ],
+      "number": "6.5.2"
+    },
+    {
+      "id": "MaxListLengthConstraintComponent",
+      "href": "https://www.w3.org/TR/shacl12-core/#MaxListLengthConstraintComponent",
+      "level": 4,
+      "title": "sh:maxListLength",
+      "alternateIds": [
+        "x6-5-3-sh-maxlistlength"
+      ],
+      "number": "6.5.3"
+    },
+    {
+      "id": "UniqueMembersConstraintComponent",
+      "href": "https://www.w3.org/TR/shacl12-core/#UniqueMembersConstraintComponent",
+      "level": 4,
+      "title": "sh:uniqueMembers",
+      "alternateIds": [
+        "x6-5-4-sh-uniquemembers"
+      ],
+      "number": "6.5.4"
     },
     {
       "id": "core-components-property-pairs",
@@ -824,9 +864,9 @@
       "level": 3,
       "title": "Property Pair Constraint Components",
       "alternateIds": [
-        "x5-5-property-pair-constraint-components"
+        "x6-6-property-pair-constraint-components"
       ],
-      "number": "5.5"
+      "number": "6.6"
     },
     {
       "id": "EqualsConstraintComponent",
@@ -834,9 +874,9 @@
       "level": 4,
       "title": "sh:equals",
       "alternateIds": [
-        "x5-5-1-sh-equals"
+        "x6-6-1-sh-equals"
       ],
-      "number": "5.5.1"
+      "number": "6.6.1"
     },
     {
       "id": "DisjointConstraintComponent",
@@ -844,9 +884,9 @@
       "level": 4,
       "title": "sh:disjoint",
       "alternateIds": [
-        "x5-5-2-sh-disjoint"
+        "x6-6-2-sh-disjoint"
       ],
-      "number": "5.5.2"
+      "number": "6.6.2"
     },
     {
       "id": "LessThanConstraintComponent",
@@ -854,9 +894,9 @@
       "level": 4,
       "title": "sh:lessThan",
       "alternateIds": [
-        "x5-5-3-sh-lessthan"
+        "x6-6-3-sh-lessthan"
       ],
-      "number": "5.5.3"
+      "number": "6.6.3"
     },
     {
       "id": "LessThanOrEqualsConstraintComponent",
@@ -864,9 +904,9 @@
       "level": 4,
       "title": "sh:lessThanOrEquals",
       "alternateIds": [
-        "x5-5-4-sh-lessthanorequals"
+        "x6-6-4-sh-lessthanorequals"
       ],
-      "number": "5.5.4"
+      "number": "6.6.4"
     },
     {
       "id": "core-components-logical",
@@ -874,9 +914,9 @@
       "level": 3,
       "title": "Logical Constraint Components",
       "alternateIds": [
-        "x5-6-logical-constraint-components"
+        "x6-7-logical-constraint-components"
       ],
-      "number": "5.6"
+      "number": "6.7"
     },
     {
       "id": "NotConstraintComponent",
@@ -884,9 +924,9 @@
       "level": 4,
       "title": "sh:not",
       "alternateIds": [
-        "x5-6-1-sh-not"
+        "x6-7-1-sh-not"
       ],
-      "number": "5.6.1"
+      "number": "6.7.1"
     },
     {
       "id": "AndConstraintComponent",
@@ -894,9 +934,9 @@
       "level": 4,
       "title": "sh:and",
       "alternateIds": [
-        "x5-6-2-sh-and"
+        "x6-7-2-sh-and"
       ],
-      "number": "5.6.2"
+      "number": "6.7.2"
     },
     {
       "id": "OrConstraintComponent",
@@ -904,9 +944,9 @@
       "level": 4,
       "title": "sh:or",
       "alternateIds": [
-        "x5-6-3-sh-or"
+        "x6-7-3-sh-or"
       ],
-      "number": "5.6.3"
+      "number": "6.7.3"
     },
     {
       "id": "XoneConstraintComponent",
@@ -914,9 +954,9 @@
       "level": 4,
       "title": "sh:xone",
       "alternateIds": [
-        "x5-6-4-sh-xone"
+        "x6-7-4-sh-xone"
       ],
-      "number": "5.6.4"
+      "number": "6.7.4"
     },
     {
       "id": "core-components-shape",
@@ -924,9 +964,9 @@
       "level": 3,
       "title": "Shape-based Constraint Components",
       "alternateIds": [
-        "x5-7-shape-based-constraint-components"
+        "x6-8-shape-based-constraint-components"
       ],
-      "number": "5.7"
+      "number": "6.8"
     },
     {
       "id": "NodeConstraintComponent",
@@ -934,9 +974,9 @@
       "level": 4,
       "title": "sh:node",
       "alternateIds": [
-        "x5-7-1-sh-node"
+        "x6-8-1-sh-node"
       ],
-      "number": "5.7.1"
+      "number": "6.8.1"
     },
     {
       "id": "PropertyConstraintComponent",
@@ -944,9 +984,9 @@
       "level": 4,
       "title": "sh:property",
       "alternateIds": [
-        "x5-7-2-sh-property"
+        "x6-8-2-sh-property"
       ],
-      "number": "5.7.2"
+      "number": "6.8.2"
     },
     {
       "id": "QualifiedValueShapeConstraintComponent",
@@ -954,9 +994,19 @@
       "level": 4,
       "title": "sh:qualifiedValueShape, sh:qualifiedMinCount, sh:qualifiedMaxCount",
       "alternateIds": [
-        "x5-7-3-sh-qualifiedvalueshape-sh-qualifiedmincount-sh-qualifiedmaxcount"
+        "x6-8-3-sh-qualifiedvalueshape-sh-qualifiedmincount-sh-qualifiedmaxcount"
       ],
-      "number": "5.7.3"
+      "number": "6.8.3"
+    },
+    {
+      "id": "ReifierShapeShapeConstraintComponent",
+      "href": "https://www.w3.org/TR/shacl12-core/#ReifierShapeShapeConstraintComponent",
+      "level": 4,
+      "title": "sh:reifierShape, sh:reificationRequired",
+      "alternateIds": [
+        "x6-8-4-sh-reifiershape-sh-reificationrequired"
+      ],
+      "number": "6.8.4"
     },
     {
       "id": "core-components-others",
@@ -964,9 +1014,9 @@
       "level": 3,
       "title": "Other Constraint Components",
       "alternateIds": [
-        "x5-8-other-constraint-components"
+        "x6-9-other-constraint-components"
       ],
-      "number": "5.8"
+      "number": "6.9"
     },
     {
       "id": "ClosedConstraintComponent",
@@ -974,9 +1024,9 @@
       "level": 4,
       "title": "sh:closed, sh:ignoredProperties",
       "alternateIds": [
-        "x5-8-1-sh-closed-sh-ignoredproperties"
+        "x6-9-1-sh-closed-sh-ignoredproperties"
       ],
-      "number": "5.8.1"
+      "number": "6.9.1"
     },
     {
       "id": "HasValueConstraintComponent",
@@ -984,9 +1034,9 @@
       "level": 4,
       "title": "sh:hasValue",
       "alternateIds": [
-        "x5-8-2-sh-hasvalue"
+        "x6-9-2-sh-hasvalue"
       ],
-      "number": "5.8.2"
+      "number": "6.9.2"
     },
     {
       "id": "InConstraintComponent",
@@ -994,9 +1044,19 @@
       "level": 4,
       "title": "sh:in",
       "alternateIds": [
-        "x5-8-3-sh-in"
+        "x6-9-3-sh-in"
       ],
-      "number": "5.8.3"
+      "number": "6.9.3"
+    },
+    {
+      "id": "ExpressionConstraintComponent",
+      "href": "https://www.w3.org/TR/shacl12-core/#ExpressionConstraintComponent",
+      "level": 4,
+      "title": "sh:expression",
+      "alternateIds": [
+        "x6-9-4-sh-expression"
+      ],
+      "number": "6.9.4"
     },
     {
       "id": "nonValidation",
@@ -1004,9 +1064,9 @@
       "level": 2,
       "title": "Non-Validating Property Shape Characteristics",
       "alternateIds": [
-        "x6-non-validating-property-shape-characteristics"
+        "x7-non-validating-property-shape-characteristics"
       ],
-      "number": "6"
+      "number": "7"
     },
     {
       "id": "name",
@@ -1014,9 +1074,9 @@
       "level": 3,
       "title": "sh:name and sh:description",
       "alternateIds": [
-        "x6-1-sh-name-and-sh-description"
+        "x7-1-sh-name-and-sh-description"
       ],
-      "number": "6.1"
+      "number": "7.1"
     },
     {
       "id": "order",
@@ -1024,9 +1084,9 @@
       "level": 3,
       "title": "sh:order",
       "alternateIds": [
-        "x6-2-sh-order"
+        "x7-2-sh-order"
       ],
-      "number": "6.2"
+      "number": "7.2"
     },
     {
       "id": "group",
@@ -1034,9 +1094,9 @@
       "level": 3,
       "title": "sh:group",
       "alternateIds": [
-        "x6-3-sh-group"
+        "x7-3-sh-group"
       ],
-      "number": "6.3"
+      "number": "7.3"
     },
     {
       "id": "appendix",
