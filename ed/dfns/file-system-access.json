@@ -21,7 +21,8 @@
         "title": "Concepts",
         "number": "2.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dom-permissionname-file-system",
@@ -42,7 +43,33 @@
         "title": "Permissions",
         "number": "2.2"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-permissionname-file-system③",
+          "name": "status = (await navigator.permissions.query({ name : \"file-system\", handle : handle })).state",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-permissionname-file-system%E2%91%A2",
+          "heading": {
+            "id": "api-filesystemhandle-querypermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission",
+            "title": "The queryPermission() method",
+            "number": "2.3.1"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-permissionname-file-system④",
+          "name": "status = (await navigator.permissions.query({ name : \"file-system\", handle : handle, mode : \"readwrite\" }).state",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-permissionname-file-system%E2%91%A3",
+          "heading": {
+            "id": "api-filesystemhandle-querypermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission",
+            "title": "The queryPermission() method",
+            "number": "2.3.1"
+          }
+        }
+      ]
     },
     {
       "id": "enumdef-filesystempermissionmode",
@@ -61,7 +88,8 @@
         "title": "Permissions",
         "number": "2.2"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-filesystempermissionmode-read",
@@ -82,7 +110,33 @@
         "title": "Permissions",
         "number": "2.2"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystempermissionmode-read②",
+          "name": "status = await handle . queryPermission({ mode : \"read\" })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystempermissionmode-read%E2%91%A1",
+          "heading": {
+            "id": "api-filesystemhandle-querypermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission",
+            "title": "The queryPermission() method",
+            "number": "2.3.1"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystempermissionmode-read③",
+          "name": "status = await handle . requestPermission({ mode : \"read\" })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystempermissionmode-read%E2%91%A2",
+          "heading": {
+            "id": "api-filesystemhandle-requestpermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-requestpermission",
+            "title": "The requestPermission() method",
+            "number": "2.3.2"
+          }
+        }
+      ]
     },
     {
       "id": "dom-filesystempermissionmode-readwrite",
@@ -103,7 +157,45 @@
         "title": "Permissions",
         "number": "2.2"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystempermissionmode-readwrite②",
+          "name": "status = await handle . queryPermission({ mode : \"readwrite\" })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystempermissionmode-readwrite%E2%91%A1",
+          "heading": {
+            "id": "api-filesystemhandle-querypermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission",
+            "title": "The queryPermission() method",
+            "number": "2.3.1"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystempermissionmode-readwrite③",
+          "name": "status = (await navigator.permissions.query({ name : \"file-system\", handle : handle, mode : \"readwrite\" }).state",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystempermissionmode-readwrite%E2%91%A2",
+          "heading": {
+            "id": "api-filesystemhandle-querypermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission",
+            "title": "The queryPermission() method",
+            "number": "2.3.1"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystempermissionmode-readwrite④",
+          "name": "status = await handle . requestPermission({ mode : \"readwrite\" })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystempermissionmode-readwrite%E2%91%A3",
+          "heading": {
+            "id": "api-filesystemhandle-requestpermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-requestpermission",
+            "title": "The requestPermission() method",
+            "number": "2.3.2"
+          }
+        }
+      ]
     },
     {
       "id": "dictdef-filesystempermissiondescriptor",
@@ -122,7 +214,8 @@
         "title": "Permissions",
         "number": "2.2"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-filesystempermissiondescriptor-handle",
@@ -143,7 +236,33 @@
         "title": "Permissions",
         "number": "2.2"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystempermissiondescriptor-handle⑥",
+          "name": "status = (await navigator.permissions.query({ name : \"file-system\", handle : handle })).state",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystempermissiondescriptor-handle%E2%91%A5",
+          "heading": {
+            "id": "api-filesystemhandle-querypermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission",
+            "title": "The queryPermission() method",
+            "number": "2.3.1"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystempermissiondescriptor-handle⑦",
+          "name": "status = (await navigator.permissions.query({ name : \"file-system\", handle : handle, mode : \"readwrite\" }).state",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystempermissiondescriptor-handle%E2%91%A6",
+          "heading": {
+            "id": "api-filesystemhandle-querypermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission",
+            "title": "The queryPermission() method",
+            "number": "2.3.1"
+          }
+        }
+      ]
     },
     {
       "id": "dom-filesystempermissiondescriptor-mode",
@@ -164,7 +283,21 @@
         "title": "Permissions",
         "number": "2.2"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystempermissiondescriptor-mode⑤",
+          "name": "status = (await navigator.permissions.query({ name : \"file-system\", handle : handle, mode : \"readwrite\" }).state",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystempermissiondescriptor-mode%E2%91%A4",
+          "heading": {
+            "id": "api-filesystemhandle-querypermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission",
+            "title": "The queryPermission() method",
+            "number": "2.3.1"
+          }
+        }
+      ]
     },
     {
       "id": "querying-file-system-permission",
@@ -184,7 +317,8 @@
         "title": "Permissions",
         "number": "2.2"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "requesting-file-system-permission",
@@ -204,7 +338,8 @@
         "title": "Permissions",
         "number": "2.2"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dictdef-filesystemhandlepermissiondescriptor",
@@ -223,7 +358,8 @@
         "title": "The FileSystemHandle interface",
         "number": "2.3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-filesystemhandlepermissiondescriptor-mode",
@@ -244,7 +380,57 @@
         "title": "The FileSystemHandle interface",
         "number": "2.3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystemhandlepermissiondescriptor-mode",
+          "name": "status = await handle . queryPermission({ mode : \"read\" })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystemhandlepermissiondescriptor-mode",
+          "heading": {
+            "id": "api-filesystemhandle-querypermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission",
+            "title": "The queryPermission() method",
+            "number": "2.3.1"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystemhandlepermissiondescriptor-mode①",
+          "name": "status = await handle . queryPermission({ mode : \"readwrite\" })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystemhandlepermissiondescriptor-mode%E2%91%A0",
+          "heading": {
+            "id": "api-filesystemhandle-querypermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission",
+            "title": "The queryPermission() method",
+            "number": "2.3.1"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystemhandlepermissiondescriptor-mode③",
+          "name": "status = await handle . requestPermission({ mode : \"read\" })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystemhandlepermissiondescriptor-mode%E2%91%A2",
+          "heading": {
+            "id": "api-filesystemhandle-requestpermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-requestpermission",
+            "title": "The requestPermission() method",
+            "number": "2.3.2"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystemhandlepermissiondescriptor-mode④",
+          "name": "status = await handle . requestPermission({ mode : \"readwrite\" })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystemhandlepermissiondescriptor-mode%E2%91%A3",
+          "heading": {
+            "id": "api-filesystemhandle-requestpermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-requestpermission",
+            "title": "The requestPermission() method",
+            "number": "2.3.2"
+          }
+        }
+      ]
     },
     {
       "id": "dom-filesystemhandle-querypermission-descriptor-descriptor",
@@ -266,7 +452,8 @@
         "title": "The FileSystemHandle interface",
         "number": "2.3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-filesystemhandle-requestpermission-descriptor-descriptor",
@@ -288,7 +475,8 @@
         "title": "The FileSystemHandle interface",
         "number": "2.3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-filesystemhandle-querypermission",
@@ -310,7 +498,45 @@
         "title": "The queryPermission() method",
         "number": "2.3.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystemhandle-querypermission②",
+          "name": "status = await handle . queryPermission({ mode : \"read\" })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystemhandle-querypermission%E2%91%A1",
+          "heading": {
+            "id": "api-filesystemhandle-querypermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission",
+            "title": "The queryPermission() method",
+            "number": "2.3.1"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystemhandle-querypermission③",
+          "name": "status = await handle . queryPermission()",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystemhandle-querypermission%E2%91%A2",
+          "heading": {
+            "id": "api-filesystemhandle-querypermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission",
+            "title": "The queryPermission() method",
+            "number": "2.3.1"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystemhandle-querypermission④",
+          "name": "status = await handle . queryPermission({ mode : \"readwrite\" })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystemhandle-querypermission%E2%91%A3",
+          "heading": {
+            "id": "api-filesystemhandle-querypermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission",
+            "title": "The queryPermission() method",
+            "number": "2.3.1"
+          }
+        }
+      ]
     },
     {
       "id": "dom-filesystemhandle-requestpermission",
@@ -332,7 +558,45 @@
         "title": "The requestPermission() method",
         "number": "2.3.2"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystemhandle-requestpermission④",
+          "name": "status = await handle . requestPermission({ mode : \"read\" })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystemhandle-requestpermission%E2%91%A3",
+          "heading": {
+            "id": "api-filesystemhandle-requestpermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-requestpermission",
+            "title": "The requestPermission() method",
+            "number": "2.3.2"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystemhandle-requestpermission⑤",
+          "name": "status = await handle . requestPermission()",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystemhandle-requestpermission%E2%91%A4",
+          "heading": {
+            "id": "api-filesystemhandle-requestpermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-requestpermission",
+            "title": "The requestPermission() method",
+            "number": "2.3.2"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-filesystemhandle-requestpermission⑥",
+          "name": "status = await handle . requestPermission({ mode : \"readwrite\" })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-filesystemhandle-requestpermission%E2%91%A5",
+          "heading": {
+            "id": "api-filesystemhandle-requestpermission",
+            "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-requestpermission",
+            "title": "The requestPermission() method",
+            "number": "2.3.2"
+          }
+        }
+      ]
     },
     {
       "id": "typedefdef-startindirectory",
@@ -351,7 +615,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dictdef-filepickeraccepttype",
@@ -370,7 +635,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-filepickeraccepttype-description",
@@ -391,7 +657,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-filepickeraccepttype-accept",
@@ -412,7 +679,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dictdef-filepickeroptions",
@@ -431,7 +699,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-filepickeroptions-types",
@@ -452,7 +721,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-filepickeroptions-excludeacceptalloption",
@@ -473,7 +743,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-filepickeroptions-id",
@@ -494,7 +765,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-filepickeroptions-startin",
@@ -515,7 +787,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dictdef-openfilepickeroptions",
@@ -534,7 +807,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-openfilepickeroptions-multiple",
@@ -555,7 +829,33 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-openfilepickeroptions-multiple",
+          "name": "[ handle ] = await window . showOpenFilePicker({ multiple: false })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-openfilepickeroptions-multiple",
+          "heading": {
+            "id": "api-showopenfilepicker",
+            "href": "https://wicg.github.io/file-system-access/#api-showopenfilepicker",
+            "title": "The showOpenFilePicker() method",
+            "number": "3.3"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-openfilepickeroptions-multiple①",
+          "name": "handles = await window . showOpenFilePicker({ multiple: true })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-openfilepickeroptions-multiple%E2%91%A0",
+          "heading": {
+            "id": "api-showopenfilepicker",
+            "href": "https://wicg.github.io/file-system-access/#api-showopenfilepicker",
+            "title": "The showOpenFilePicker() method",
+            "number": "3.3"
+          }
+        }
+      ]
     },
     {
       "id": "dictdef-savefilepickeroptions",
@@ -574,7 +874,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-savefilepickeroptions-suggestedname",
@@ -595,7 +896,21 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-savefilepickeroptions-suggestedname",
+          "name": "handle = await window . showSaveFilePicker({ suggestedName: \"README.md\" })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-savefilepickeroptions-suggestedname",
+          "heading": {
+            "id": "api-showsavefilepicker",
+            "href": "https://wicg.github.io/file-system-access/#api-showsavefilepicker",
+            "title": "The showSaveFilePicker() method",
+            "number": "3.4"
+          }
+        }
+      ]
     },
     {
       "id": "dictdef-directorypickeroptions",
@@ -614,7 +929,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-directorypickeroptions-id",
@@ -635,7 +951,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-directorypickeroptions-startin",
@@ -656,7 +973,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-directorypickeroptions-mode",
@@ -677,7 +995,33 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-directorypickeroptions-mode",
+          "name": "handle = await window . showDirectoryPicker()({ mode: 'read' })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-directorypickeroptions-mode",
+          "heading": {
+            "id": "api-showdirectorypicker",
+            "href": "https://wicg.github.io/file-system-access/#api-showdirectorypicker",
+            "title": "The showDirectoryPicker() method",
+            "number": "3.5"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-directorypickeroptions-mode①",
+          "name": "handle = await window . showDirectoryPicker()({ mode: 'readwrite' })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-directorypickeroptions-mode%E2%91%A0",
+          "heading": {
+            "id": "api-showdirectorypicker",
+            "href": "https://wicg.github.io/file-system-access/#api-showdirectorypicker",
+            "title": "The showDirectoryPicker() method",
+            "number": "3.5"
+          }
+        }
+      ]
     },
     {
       "id": "dom-window-showopenfilepicker-options-options",
@@ -699,7 +1043,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-window-showsavefilepicker-options-options",
@@ -721,7 +1066,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "dom-window-showdirectorypicker-options-options",
@@ -743,7 +1089,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "pre"
+      "definedIn": "pre",
+      "links": []
     },
     {
       "id": "local-file-system-handle-factories",
@@ -762,7 +1109,8 @@
         "title": "Accessing Local File System",
         "number": "3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "is-allowed-to-show-a-file-picker",
@@ -781,7 +1129,8 @@
         "title": "Local File System Permissions",
         "number": "3.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "process-accept-types",
@@ -800,7 +1149,8 @@
         "title": "Accepted file types",
         "number": "3.2.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "validate-a-suffix",
@@ -819,7 +1169,8 @@
         "title": "Accepted file types",
         "number": "3.2.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "recently-picked-directory-map",
@@ -838,7 +1189,8 @@
         "title": "Starting Directory",
         "number": "3.2.2"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "path-id-map",
@@ -857,7 +1209,8 @@
         "title": "Starting Directory",
         "number": "3.2.2"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "valid-path-id",
@@ -876,7 +1229,8 @@
         "title": "Starting Directory",
         "number": "3.2.2"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "enumdef-wellknowndirectory",
@@ -895,7 +1249,8 @@
         "title": "Starting Directory",
         "number": "3.2.2"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dom-wellknowndirectory-desktop",
@@ -916,7 +1271,8 @@
         "title": "Starting Directory",
         "number": "3.2.2"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dom-wellknowndirectory-documents",
@@ -937,7 +1293,8 @@
         "title": "Starting Directory",
         "number": "3.2.2"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dom-wellknowndirectory-downloads",
@@ -958,7 +1315,8 @@
         "title": "Starting Directory",
         "number": "3.2.2"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dom-wellknowndirectory-music",
@@ -979,7 +1337,8 @@
         "title": "Starting Directory",
         "number": "3.2.2"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dom-wellknowndirectory-pictures",
@@ -1000,7 +1359,8 @@
         "title": "Starting Directory",
         "number": "3.2.2"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dom-wellknowndirectory-videos",
@@ -1021,7 +1381,8 @@
         "title": "Starting Directory",
         "number": "3.2.2"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "wellknowndirectory-determine-the-directory-the-picker-will-start-in",
@@ -1042,7 +1403,8 @@
         "title": "Starting Directory",
         "number": "3.2.2"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "wellknowndirectory-remember-a-picked-directory",
@@ -1063,7 +1425,8 @@
         "title": "Starting Directory",
         "number": "3.2.2"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dom-window-showopenfilepicker",
@@ -1085,7 +1448,45 @@
         "title": "The showOpenFilePicker() method",
         "number": "3.3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-window-showopenfilepicker④",
+          "name": "[ handle ] = await window . showOpenFilePicker()",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-window-showopenfilepicker%E2%91%A3",
+          "heading": {
+            "id": "api-showopenfilepicker",
+            "href": "https://wicg.github.io/file-system-access/#api-showopenfilepicker",
+            "title": "The showOpenFilePicker() method",
+            "number": "3.3"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-window-showopenfilepicker⑤",
+          "name": "[ handle ] = await window . showOpenFilePicker({ multiple: false })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-window-showopenfilepicker%E2%91%A4",
+          "heading": {
+            "id": "api-showopenfilepicker",
+            "href": "https://wicg.github.io/file-system-access/#api-showopenfilepicker",
+            "title": "The showOpenFilePicker() method",
+            "number": "3.3"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-window-showopenfilepicker⑥",
+          "name": "handles = await window . showOpenFilePicker({ multiple: true })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-window-showopenfilepicker%E2%91%A5",
+          "heading": {
+            "id": "api-showopenfilepicker",
+            "href": "https://wicg.github.io/file-system-access/#api-showopenfilepicker",
+            "title": "The showOpenFilePicker() method",
+            "number": "3.3"
+          }
+        }
+      ]
     },
     {
       "id": "dom-window-showsavefilepicker",
@@ -1107,7 +1508,33 @@
         "title": "The showSaveFilePicker() method",
         "number": "3.4"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-window-showsavefilepicker⑤",
+          "name": "handle = await window . showSaveFilePicker( options )",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-window-showsavefilepicker%E2%91%A4",
+          "heading": {
+            "id": "api-showsavefilepicker",
+            "href": "https://wicg.github.io/file-system-access/#api-showsavefilepicker",
+            "title": "The showSaveFilePicker() method",
+            "number": "3.4"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-window-showsavefilepicker⑥",
+          "name": "handle = await window . showSaveFilePicker({ suggestedName: \"README.md\" })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-window-showsavefilepicker%E2%91%A5",
+          "heading": {
+            "id": "api-showsavefilepicker",
+            "href": "https://wicg.github.io/file-system-access/#api-showsavefilepicker",
+            "title": "The showSaveFilePicker() method",
+            "number": "3.4"
+          }
+        }
+      ]
     },
     {
       "id": "dom-window-showdirectorypicker",
@@ -1129,7 +1556,45 @@
         "title": "The showDirectoryPicker() method",
         "number": "3.5"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-window-showdirectorypicker③",
+          "name": "handle = await window . showDirectoryPicker()",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-window-showdirectorypicker%E2%91%A2",
+          "heading": {
+            "id": "api-showdirectorypicker",
+            "href": "https://wicg.github.io/file-system-access/#api-showdirectorypicker",
+            "title": "The showDirectoryPicker() method",
+            "number": "3.5"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-window-showdirectorypicker④",
+          "name": "handle = await window . showDirectoryPicker()({ mode: 'read' })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-window-showdirectorypicker%E2%91%A3",
+          "heading": {
+            "id": "api-showdirectorypicker",
+            "href": "https://wicg.github.io/file-system-access/#api-showdirectorypicker",
+            "title": "The showDirectoryPicker() method",
+            "number": "3.5"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-window-showdirectorypicker⑤",
+          "name": "handle = await window . showDirectoryPicker()({ mode: 'readwrite' })",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-window-showdirectorypicker%E2%91%A4",
+          "heading": {
+            "id": "api-showdirectorypicker",
+            "href": "https://wicg.github.io/file-system-access/#api-showdirectorypicker",
+            "title": "The showDirectoryPicker() method",
+            "number": "3.5"
+          }
+        }
+      ]
     },
     {
       "id": "dom-datatransferitem-getasfilesystemhandle",
@@ -1150,7 +1615,21 @@
         "title": "Drag and Drop",
         "number": "3.6"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-datatransferitem-getasfilesystemhandle①",
+          "name": "handle = await item . getAsFileSystemHandle()",
+          "href": "https://wicg.github.io/file-system-access/#ref-for-dom-datatransferitem-getasfilesystemhandle%E2%91%A0",
+          "heading": {
+            "id": "drag-and-drop",
+            "href": "https://wicg.github.io/file-system-access/#drag-and-drop",
+            "title": "Drag and Drop",
+            "number": "3.6"
+          }
+        }
+      ]
     },
     {
       "id": "wellknowndirectory-too-sensitive-or-dangerous",
@@ -1171,7 +1650,8 @@
         "title": "Users giving access to more, or more sensitive files than they intended.",
         "number": "5.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     }
   ]
 }

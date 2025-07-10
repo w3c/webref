@@ -288,7 +288,35 @@
               "html": "<p>If the Attribution API is <a href=\"https://w3c.github.io/ppa/#opt-out\">enabled</a>, set <var>report</var> to the\n result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#do-attribution-and-fill-a-histogram\" id=\"ref-for-do-attribution-and-fill-a-histogram\">do attribution and fill a histogram</a> with <var>validatedOptions</var>,\n <var>topLevelSite</var>, <var>intermediarySite</var>, and <var>now</var>.</p>"
             },
             {
-              "html": "<p>Let <var>encryptedReport</var> be the result of encrypting <var>report</var>.</p>"
+              "html": "<p>Let <var>aggregationService</var> be <var>validatedOptions</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-aggregation-service\" id=\"ref-for-validated-conversion-options-aggregation-service\">aggregation service</a>.</p>"
+            },
+            {
+              "html": "Switch on the value of <var>aggregationService</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionaggregationservice-protocol\" id=\"ref-for-dom-attributionaggregationservice-protocol①\">protocol</a></code>:",
+              "rationale": ".switch",
+              "steps": [
+                {
+                  "operation": "switch",
+                  "steps": [
+                    {
+                      "case": "dap-15-histogram",
+                      "html": "Perform the following steps:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "<p>Let <var>encryptedReport</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#construct-a-dap-report\" id=\"ref-for-construct-a-dap-report\">construct a DAP report</a>,\ngiven <var>validatedOptions</var>, <var>topLevelSite</var>, <var>now</var>, and <var>report</var>.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "case": "tee-00",
+                      "html": "<p>Perform the following steps:</p>",
+                      "ignored": [
+                        "TODO: see #130"
+                      ]
+                    }
+                  ]
+                }
+              ]
             },
             {
               "html": "<p>Let <var>result</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dictdef-attributionconversionresult\" id=\"ref-for-dictdef-attributionconversionresult①\">AttributionConversionResult</a></code> with the following items:</p>\n        <dl>\n         <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionresult-report\" id=\"ref-for-dom-attributionconversionresult-report\">report</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>encryptedReport</var></p>\n        </dd></dl>"
@@ -313,10 +341,13 @@
           "html": "<p>If <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://w3c.github.io/ppa/#dom-attribution-aggregationservices\" id=\"ref-for-dom-attribution-aggregationservices⑤\">aggregationServices</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">contain</a>\nan <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry\">entry</a> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key\">key</a> of <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-aggregationservice\" id=\"ref-for-dom-attributionconversionoptions-aggregationservice③\">aggregationService</a></code>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-referenceerror\" id=\"ref-for-exceptiondef-referenceerror\">ReferenceError</a></code>.</p>"
         },
         {
+          "html": "<p>Let <var>aggregationService</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get②\">getting the value</a>\nfrom <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#attributionaggregationservices\" id=\"ref-for-attributionaggregationservices①\">AttributionAggregationServices</a></code>,\ngiven <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-aggregationservice\" id=\"ref-for-dom-attributionconversionoptions-aggregationservice④\">aggregationService</a></code>.</p>"
+        },
+        {
           "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-epsilon\" id=\"ref-for-dom-attributionconversionoptions-epsilon①\">epsilon</a></code>\nis less than or equal to 0 or is greater than 4294,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror④\">RangeError</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-histogramsize\" id=\"ref-for-dom-attributionconversionoptions-histogramsize①\">histogramSize</a></code>\nis 0 or greater than the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined④\">implementation-defined</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"maximum-histogram-size\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">maximum histogram size</dfn>,\nor is greater than the <dfn data-var-ignore=\"\">maximum aggregation-service histogram size</dfn>,\nif any, for <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-aggregationservice\" id=\"ref-for-dom-attributionconversionoptions-aggregationservice④\">aggregationService</a></code>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror⑤\">RangeError</a></code>.</p>"
+          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-histogramsize\" id=\"ref-for-dom-attributionconversionoptions-histogramsize①\">histogramSize</a></code>\nis 0 or greater than the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined④\">implementation-defined</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"maximum-histogram-size\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">maximum histogram size</dfn>,\nor is greater than the <dfn data-var-ignore=\"\">maximum aggregation-service histogram size</dfn>,\nif any, for <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-aggregationservice\" id=\"ref-for-dom-attributionconversionoptions-aggregationservice⑤\">aggregationService</a></code>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror⑤\">RangeError</a></code>.</p>"
         },
         {
           "html": "Switch on the value of <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-logic\" id=\"ref-for-dom-attributionconversionoptions-logic①\">logic</a></code>:",
@@ -373,7 +404,7 @@
           "html": "<p>If any result in <var>impressionCallers</var> is failure, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror③\">\"SyntaxError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options\" id=\"ref-for-validated-conversion-options\">validated conversion options</a> with the following fields:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-aggregation-service\" id=\"ref-for-validated-conversion-options-aggregation-service\">Aggregation Service</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-aggregationservice\" id=\"ref-for-dom-attributionconversionoptions-aggregationservice⑤\">aggregationService</a></code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-epsilon\" id=\"ref-for-validated-conversion-options-epsilon\">Epsilon</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-epsilon\" id=\"ref-for-dom-attributionconversionoptions-epsilon②\">epsilon</a></code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-histogram-size\" id=\"ref-for-validated-conversion-options-histogram-size①\">Histogram Size</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-histogramsize\" id=\"ref-for-dom-attributionconversionoptions-histogramsize②\">histogramSize</a></code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-lookback\" id=\"ref-for-validated-conversion-options-lookback\">Lookback</a>\n       </dt><dd data-md=\"\">\n        <p><var>lookback</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-match-values\" id=\"ref-for-validated-conversion-options-match-values①\">Match Values</a>\n       </dt><dd data-md=\"\">\n        <p><var>matchValues</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-impression-sites\" id=\"ref-for-validated-conversion-options-impression-sites①\">Impression Sites</a>\n       </dt><dd data-md=\"\">\n        <p><var>impressionSites</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-impression-callers\" id=\"ref-for-validated-conversion-options-impression-callers①\">Impression Callers</a>\n       </dt><dd data-md=\"\">\n        <p><var>impressionCallers</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-logic\" id=\"ref-for-validated-conversion-options-logic\">Logic</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-logic\" id=\"ref-for-dom-attributionconversionoptions-logic②\">logic</a></code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-value\" id=\"ref-for-validated-conversion-options-value①\">Value</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-value\" id=\"ref-for-dom-attributionconversionoptions-value③\">value</a></code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-max-value\" id=\"ref-for-validated-conversion-options-max-value\">Max Value</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-maxvalue\" id=\"ref-for-dom-attributionconversionoptions-maxvalue②\">maxValue</a></code></p>\n      </dd></dl>"
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options\" id=\"ref-for-validated-conversion-options\">validated conversion options</a> with the following fields:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-aggregation-service\" id=\"ref-for-validated-conversion-options-aggregation-service①\">Aggregation Service</a>\n       </dt><dd data-md=\"\">\n        <p><var>aggregationService</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-epsilon\" id=\"ref-for-validated-conversion-options-epsilon\">Epsilon</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-epsilon\" id=\"ref-for-dom-attributionconversionoptions-epsilon②\">epsilon</a></code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-histogram-size\" id=\"ref-for-validated-conversion-options-histogram-size①\">Histogram Size</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-histogramsize\" id=\"ref-for-dom-attributionconversionoptions-histogramsize②\">histogramSize</a></code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-lookback\" id=\"ref-for-validated-conversion-options-lookback\">Lookback</a>\n       </dt><dd data-md=\"\">\n        <p><var>lookback</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-match-values\" id=\"ref-for-validated-conversion-options-match-values①\">Match Values</a>\n       </dt><dd data-md=\"\">\n        <p><var>matchValues</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-impression-sites\" id=\"ref-for-validated-conversion-options-impression-sites①\">Impression Sites</a>\n       </dt><dd data-md=\"\">\n        <p><var>impressionSites</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-impression-callers\" id=\"ref-for-validated-conversion-options-impression-callers①\">Impression Callers</a>\n       </dt><dd data-md=\"\">\n        <p><var>impressionCallers</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-logic\" id=\"ref-for-validated-conversion-options-logic\">Logic</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-logic\" id=\"ref-for-dom-attributionconversionoptions-logic②\">logic</a></code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-value\" id=\"ref-for-validated-conversion-options-value①\">Value</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-value\" id=\"ref-for-dom-attributionconversionoptions-value③\">value</a></code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-max-value\" id=\"ref-for-validated-conversion-options-max-value\">Max Value</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-maxvalue\" id=\"ref-for-dom-attributionconversionoptions-maxvalue②\">maxValue</a></code></p>\n      </dd></dl>"
         }
       ]
     },
@@ -573,6 +604,98 @@
         },
         {
           "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dictdef-attributionimpressionoptions\" id=\"ref-for-dictdef-attributionimpressionoptions②\">AttributionImpressionOptions</a></code> with the following items:</p>\n      <dl>\n       <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionimpressionoptions-histogramindex\" id=\"ref-for-dom-attributionimpressionoptions-histogramindex⑤\">histogramIndex</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>histogramIndex</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionimpressionoptions-matchvalue\" id=\"ref-for-dom-attributionimpressionoptions-matchvalue⑤\">matchValue</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>matchValue</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionimpressionoptions-conversionsites\" id=\"ref-for-dom-attributionimpressionoptions-conversionsites④\">conversionSites</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>conversionSites</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionimpressionoptions-conversioncallers\" id=\"ref-for-dom-attributionimpressionoptions-conversioncallers④\">conversionCallers</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>conversionCallers</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionimpressionoptions-lifetimedays\" id=\"ref-for-dom-attributionimpressionoptions-lifetimedays⑥\">lifetimeDays</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>lifetimeDays</var></p>\n      </dd></dl>"
+        }
+      ]
+    },
+    {
+      "name": "construct a DAP report",
+      "href": "https://w3c.github.io/ppa/#construct-a-dap-report",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"construct-a-dap-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">construct a DAP report</dfn>,\nproducing a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence\">byte sequence</a> <var>report</var>,\ngiven <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options\" id=\"ref-for-validated-conversion-options③\">validated conversion options</a> <var>options</var>,\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site③①\">site</a> <var>topLevelSite</var>,\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-moment\" id=\"ref-for-dfn-moment⑨\">moment</a> <var>now</var>,\nand a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#integer\" id=\"ref-for-integer⑥\">integers</a> <var>histogram</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>field</var> be Field128,\nas defined in <a href=\"https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-vdaf-15#section-6.1.3\">Section 6.1.3</a>\nof <a data-link-type=\"biblio\" href=\"https://w3c.github.io/ppa/#biblio-vdaf\" title=\"Verifiable Distributed Aggregation Functions\">[VDAF]</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>length</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑧\">size</a> of <var>histogram</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>bits</var> be the base-2 logarithm\nof <var>options</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-max-value\" id=\"ref-for-validated-conversion-options-max-value②\">max value</a>,\nrounded toward positive Infinity.</p>"
+        },
+        {
+          "html": "<p>Let <var>chunkLength</var> be the square root of (<var>bits</var> + 1) * <var>length</var>,\nrounded to the nearest integer.</p>"
+        },
+        {
+          "html": "<p>Let <var>vdaf</var> be a new PrioL1BoundSum VDAF <a data-link-type=\"biblio\" href=\"https://w3c.github.io/ppa/#biblio-prio-l1\" title=\"A Prio Instantiation for Vector Sums with an L1 Norm Bound on Contributions\">[PRIO-L1]</a> instance,\npassing <var>field</var>, <var>length</var>, <var>bits</var>, and <var>chunkLength</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>taskID</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①\">byte sequence</a>\nfrom the hex string <code>b13e8440f1cdb4da51eed3967e0a2652d27f5005bc35f751daf188b4b746708b</code>\n<a data-link-type=\"biblio\" href=\"https://w3c.github.io/ppa/#biblio-dap-ext\" title=\"Distributed Aggregation Protocol (DAP) Report Binding Extensions\">[DAP-EXT]</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>ctx</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②\">byte sequence</a> formed by concatenating\nthe <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-encode\" id=\"ref-for-isomorphic-encode\">encoded</a> string <code>dap-15</code>\nand <var>taskID</var>,\nas defined in <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\">Section 4.5.2</a>\nof <a data-link-type=\"biblio\" href=\"https://w3c.github.io/ppa/#biblio-dap\" title=\"Distributed Aggregation Protocol for Privacy Preserving Measurement\">[DAP]</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>reportID</var> be 16 bytes sampled from a cryptographically-secure random source <a data-link-type=\"biblio\" href=\"https://w3c.github.io/ppa/#biblio-rfc4086\" title=\"Randomness Requirements for Security\">[RFC4086]</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>rand</var> be 128 bytes sampled from a cryptographically-secure random source <a data-link-type=\"biblio\" href=\"https://w3c.github.io/ppa/#biblio-rfc4086\" title=\"Randomness Requirements for Security\">[RFC4086]</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>publicShare</var>, <var>inputShares</var> be the result of invoking <var>vdaf</var>.<a href=\"https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-vdaf#section-4.1\"><code>shard()</code></a>,\nas defined in <a href=\"https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-vdaf-15#section-4.1\">Section 4.1</a>\nof <a data-link-type=\"biblio\" href=\"https://w3c.github.io/ppa/#biblio-vdaf\" title=\"Verifiable Distributed Aggregation Functions\">[VDAF]</a>,\nwith <var>ctx</var>, <var>histogram</var>, <var>reportID</var> (as the VDAF \"nonce\" parameter), and <var>rand</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>time</var> be <var>now</var> as a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" id=\"ref-for-dfn-duration⑥\">duration</a> since the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-unix-epoch\" id=\"ref-for-dfn-unix-epoch\">Unix epoch</a>,\ndivided by a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" id=\"ref-for-dfn-duration⑦\">duration</a> of 5 seconds.</p>"
+        },
+        {
+          "html": "The extension codepoint for <a href=\"https://datatracker.ietf.org/doc/html/draft-thomson-ppm-dap-dp-ext-02#name-privacy-budget-consumption\">privacy budget</a>,\nmapped to the value of <var>encodedEpsilon</var>, derived as follows:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>scaledEpsilon</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\" id=\"ref-for-32-bit-unsigned-integer⑥\">32-bit unsigned integer</a>\nthat is <var>options</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-epsilon\" id=\"ref-for-validated-conversion-options-epsilon②\">epsilon</a>,\nmultiplied by 1,000,000, then rounded toward positive Infinity.</p>"
+            },
+            {
+              "html": "<p>Let <var>encodedEpsilon</var> be the result of invoking\n<a href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-numerictorawbytes\"><code>NumericToRawBytes</code></a>\nwith <a href=\"https://tc39.es/ecma262/multipage/indexed-collections.html#table-the-typedarray-constructors\">UINT32</a>, <var>scaledEpsilon</var>, and <code>false</code> (for <code>isLittleEndian</code>).</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>reportMetadata</var> be encoded DAP <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\"><code>ReportMetadata</code></a>\ngenerated from <var>reportID</var>, <var>time</var>, and <var>extensions</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>encryptedInputShares</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①①\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>share</var> of <var>inputShares</var>,\nfollow the method for encrypting shares\ndescribed in <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\">Section 4.5.2</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>pkR</var> be the public key of the corresponding role from\nthe <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#aggregation-service\" id=\"ref-for-aggregation-service①⓪\">aggregation service</a> <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.1\">HPKE configuration</a>\nobtained for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#aggregation-service\" id=\"ref-for-aggregation-service①①\">aggregation service</a>\nindicated by <var>options</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options-aggregation-service\" id=\"ref-for-validated-conversion-options-aggregation-service②\">Aggregation Service</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>serverRole</var> be 2 for the first item (the Leader)\nand 3 for the second (the Helper role).</p>"
+            },
+            {
+              "html": "<p>Let <var>info</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑤\">byte sequence</a> formed by concatenating:\nthe <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-encode\" id=\"ref-for-isomorphic-encode②\">encoded</a> value of the string <code>dap-15 input share</code>,\na byte with the value 0x01, and <var>serverRole</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>inputShareAAD</var> be constructed from\n<var>taskID</var>, <var>reportMetadata</var>, and <var>publicShare</var>,\nfollowing the structure for <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\"><code>InputShareAad</code></a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>hpke</var> be an HPKE <a data-link-type=\"biblio\" href=\"https://w3c.github.io/ppa/#biblio-rfc9180\" title=\"Hybrid Public Key Encryption\">[RFC9180]</a> configuration\nthat is based on the same <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.1\">HPKE configuration</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>encryptedShare</var> be the result of invoking <var>hpke</var>.<a href=\"https://hpkewg.github.io/hpke/draft-ietf-hpke-hpke.html#section-6.1\"><code>Seal&lt;mode_base&gt;()</code></a>,\npassing <var>pkR</var>, <var>info</var>, <var>inputShareAAD</var>, and <var>share</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>encryptedShare</var> to <var>encryptedInputShares</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>report</var> be an encoded DAP <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\"><code>Report</code></a>\ngenerated from <var>reportMetadata</var>, <var>publicShare</var>, <var>encryptedInputShares</var>\n(the two values being the leader and helper encrypted input shares respectively),\nand <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#aggregation-service\" id=\"ref-for-aggregation-service①②\">aggregation service</a> <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.1\">HPKE configuration</a>\nobtained from the DAP aggregators.</p>"
+        },
+        {
+          "html": "<p>Return <var>report</var>.</p>"
         }
       ]
     }

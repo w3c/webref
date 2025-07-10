@@ -1,0 +1,270 @@
+{
+  "spec": {
+    "title": "Signature-based Integrity",
+    "url": "https://wicg.github.io/signature-based-sri/"
+  },
+  "dfns": [
+    {
+      "id": "verification-requirements-for-sri",
+      "href": "https://wicg.github.io/signature-based-sri/#verification-requirements-for-sri",
+      "linkingText": [
+        "verification requirements for SRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "profile",
+        "href": "https://wicg.github.io/signature-based-sri/#profile",
+        "title": "The SRI HTTP Message Signature Profile",
+        "number": "2.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "unencoded-digest-valid-for-sri",
+      "href": "https://wicg.github.io/signature-based-sri/#unencoded-digest-valid-for-sri",
+      "linkingText": [
+        "valid for SRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Unencoded-Digest"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "unencoded-digest-validation-for-sri",
+        "href": "https://wicg.github.io/signature-based-sri/#unencoded-digest-validation-for-sri",
+        "title": "Unencoded-Digest Validation for SRI",
+        "number": "2.1.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valid-sri-signature-algorithm-token-set",
+      "href": "https://wicg.github.io/signature-based-sri/#valid-sri-signature-algorithm-token-set",
+      "linkingText": [
+        "valid SRI signature algorithm token set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parsing",
+        "href": "https://wicg.github.io/signature-based-sri/#parsing",
+        "title": "Parse metadata.",
+        "number": "2.1.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valid-sri-signature-algorithm-token",
+      "href": "https://wicg.github.io/signature-based-sri/#valid-sri-signature-algorithm-token",
+      "linkingText": [
+        "valid SRI signature algorithm token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parsing",
+        "href": "https://wicg.github.io/signature-based-sri/#parsing",
+        "title": "Parse metadata.",
+        "number": "2.1.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "abstract-opdef-parse-metadata",
+      "href": "https://wicg.github.io/signature-based-sri/#abstract-opdef-parse-metadata",
+      "linkingText": [
+        "Parse metadata"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parsing",
+        "href": "https://wicg.github.io/signature-based-sri/#parsing",
+        "title": "Parse metadata.",
+        "number": "2.1.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "abstract-opdef-perform-client-initiated-integrity-checks",
+      "href": "https://wicg.github.io/signature-based-sri/#abstract-opdef-perform-client-initiated-integrity-checks",
+      "linkingText": [
+        "perform client-initiated integrity checks"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "matching",
+        "href": "https://wicg.github.io/signature-based-sri/#matching",
+        "title": "Do bytes and response match metadataList?",
+        "number": "2.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "abstract-opdef-validating-an-integrity-signature",
+      "href": "https://wicg.github.io/signature-based-sri/#abstract-opdef-validating-an-integrity-signature",
+      "linkingText": [
+        "validating an integrity signature"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "validation",
+        "href": "https://wicg.github.io/signature-based-sri/#validation",
+        "title": "Validate a signature over response using algorithm and public key",
+        "number": "2.1.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "abstract-opdef-append-the-accept-signature-header",
+      "href": "https://wicg.github.io/signature-based-sri/#abstract-opdef-append-the-accept-signature-header",
+      "linkingText": [
+        "append the Accept-Signature header"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "append-accept-signature",
+        "href": "https://wicg.github.io/signature-based-sri/#append-accept-signature",
+        "title": "Append Accept-Signature",
+        "number": "2.2.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "grammardef-public-key-source",
+      "href": "https://wicg.github.io/signature-based-sri/#grammardef-public-key-source",
+      "linkingText": [
+        "public-key-source"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "csp-grammar",
+        "href": "https://wicg.github.io/signature-based-sri/#csp-grammar",
+        "title": "Grammar",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "grammardef-public-key-algorithm",
+      "href": "https://wicg.github.io/signature-based-sri/#grammardef-public-key-algorithm",
+      "linkingText": [
+        "public-key-algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "csp-grammar",
+        "href": "https://wicg.github.io/signature-based-sri/#csp-grammar",
+        "title": "Grammar",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "abstract-opdef-perform-server-initiated-integrity-checks",
+      "href": "https://wicg.github.io/signature-based-sri/#abstract-opdef-perform-server-initiated-integrity-checks",
+      "linkingText": [
+        "perform server-initiated integrity checks"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "server-initiated",
+        "href": "https://wicg.github.io/signature-based-sri/#server-initiated",
+        "title": "Server-Initiated Integrity Checks",
+        "number": "2.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "abstract-opdef-verify-unencoded-digest-assertions",
+      "href": "https://wicg.github.io/signature-based-sri/#abstract-opdef-verify-unencoded-digest-assertions",
+      "linkingText": [
+        "verify Unencoded-Digest assertions"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "unencoded-digest-validation",
+        "href": "https://wicg.github.io/signature-based-sri/#unencoded-digest-validation",
+        "title": "Unencoded-Digest Validation",
+        "number": "2.4.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "abstract-opdef-verify-sri-message-signature-assertions",
+      "href": "https://wicg.github.io/signature-based-sri/#abstract-opdef-verify-sri-message-signature-assertions",
+      "linkingText": [
+        "verify SRI Message Signature assertions"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "signature-enforcement",
+        "href": "https://wicg.github.io/signature-based-sri/#signature-enforcement",
+        "title": "Signature and Signature-Input Enforcement",
+        "number": "2.4.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    }
+  ]
+}

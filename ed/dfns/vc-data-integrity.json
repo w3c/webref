@@ -24,7 +24,8 @@
         ],
         "number": "1.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-transformation-algorithm",
@@ -46,7 +47,8 @@
         ],
         "number": "1.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-hashing",
@@ -68,7 +70,8 @@
         ],
         "number": "1.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-hashing-algorithm",
@@ -90,7 +93,8 @@
         ],
         "number": "1.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-proof-generation",
@@ -112,7 +116,8 @@
         ],
         "number": "1.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-proof-serialization-algorithm",
@@ -134,7 +139,8 @@
         ],
         "number": "1.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-proof-verification",
@@ -156,7 +162,8 @@
         ],
         "number": "1.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-proof-verification-algorithm",
@@ -178,7 +185,8 @@
         ],
         "number": "1.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-conforming-secured-document",
@@ -200,7 +208,8 @@
         ],
         "number": "1.3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-conforming-cryptographic-suite-specification",
@@ -222,7 +231,8 @@
         ],
         "number": "1.3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-conforming-processor",
@@ -244,7 +254,8 @@
         ],
         "number": "1.3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-controlled-identifier-document",
@@ -267,6 +278,7 @@
         "number": "1.4"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "A document that contains public cryptographic material as defined in the\n<cite><a href=\"https://www.w3.org/TR/cid-1.0/\">Controlled Identifiers v1.0</a></cite> specification."
     },
     {
@@ -291,6 +303,7 @@
         "number": "1.4"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "A specification defining the usage of specific cryptographic primitives in\norder to achieve a particular security goal. These documents are often used\nto specify <a href=\"https://w3c.github.io/vc-data-integrity/#dfn-verification-method\">verification methods</a>, digital signature types,\ntheir identifiers, and other related properties. See Section\n<a href=\"https://w3c.github.io/vc-data-integrity/#cryptographic-suites\"><bdi>3. </bdi>Cryptographic Suites</a> for further detail."
     },
     {
@@ -314,6 +327,7 @@
         "number": "1.4"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "A set of attributes that represent a digital proof and the parameters required\nto verify it. A <strong>digital signature</strong> is a type of data integrity\nproof."
     },
     {
@@ -337,6 +351,7 @@
         "number": "1.4"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "The specific intent for the proof; the reason why an entity created it. The\nprotected declaration acts as a safeguard to prevent the proof from being\nmisused for a purpose other than the one it was intended for."
     },
     {
@@ -360,6 +375,7 @@
         "number": "1.4"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "Cryptographic material that can be used to verify digital proofs created with a\ncorresponding <a href=\"https://w3c.github.io/vc-data-integrity/#dfn-secret-key\">secret key</a>."
     },
     {
@@ -383,6 +399,7 @@
         "number": "1.4"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "Cryptographic material, sometimes referred to as a\n<strong>private key</strong>, that is not to be shared with anyone, and is used\nto generate digital proofs and/or digital signatures."
     },
     {
@@ -406,6 +423,7 @@
         "number": "1.4"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "<p>\nA set of parameters that can be used together with a process to independently\nverify a proof. For example, a cryptographic <a href=\"https://w3c.github.io/vc-data-integrity/#dfn-public-key\">public key</a> can be used as a\nverification method with respect to a digital signature; in such usage, it\nverifies that the signer possessed the associated cryptographic <a href=\"https://w3c.github.io/vc-data-integrity/#dfn-secret-key\">secret key</a>.\n            </p>\n            <p>\n\"Verification\" and \"proof\" in this definition are intended to apply broadly. For\nexample, a cryptographic public key might be used during Diffie-Hellman key\nexchange to negotiate a shared symmetric key for encryption. This guarantees the\nintegrity of the key agreement process. It is thus another type of verification\nmethod, even though descriptions of the process might not use the words\n\"verification\" or \"proof.\"\n            </p>"
     },
     {
@@ -431,6 +449,7 @@
         "number": "1.4"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "A role an entity performs by receiving data containing one or more\n<a href=\"https://w3c.github.io/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proofs</a> and then determining whether or not the proof\nis legitimate."
     },
     {
@@ -453,7 +472,8 @@
         ],
         "number": "2.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-proofpurpose",
@@ -475,7 +495,8 @@
         ],
         "number": "2.1"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-created",
@@ -497,7 +518,8 @@
         ],
         "number": "2.1"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-challenge",
@@ -519,7 +541,8 @@
         ],
         "number": "2.1"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-proofvalue",
@@ -541,7 +564,8 @@
         ],
         "number": "2.1"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-previousproof",
@@ -563,7 +587,8 @@
         ],
         "number": "2.1"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-nonce",
@@ -585,7 +610,8 @@
         ],
         "number": "2.1"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-proof-set",
@@ -607,7 +633,8 @@
         ],
         "number": "2.1.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-proof-chain",
@@ -629,7 +656,8 @@
         ],
         "number": "2.1.2"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-proof-graph",
@@ -651,7 +679,8 @@
         ],
         "number": "2.1.3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-named-graph",
@@ -673,7 +702,8 @@
         ],
         "number": "2.1.3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-proofgraph",
@@ -695,7 +725,8 @@
         ],
         "number": "2.1.3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-authentication",
@@ -717,7 +748,8 @@
         ],
         "number": "2.2"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-assertionmethod",
@@ -739,7 +771,8 @@
         ],
         "number": "2.2"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-keyagreement",
@@ -761,7 +794,8 @@
         ],
         "number": "2.2"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-capabilitydelegation",
@@ -783,7 +817,8 @@
         ],
         "number": "2.2"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-capabilityinvocation",
@@ -805,7 +840,8 @@
         ],
         "number": "2.2"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-digestmultibase",
@@ -827,7 +863,8 @@
         ],
         "number": "2.3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-cryptosuite-instantiation-algorithm",
@@ -850,7 +887,8 @@
         ],
         "number": "3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-data-integrity-cryptographic-suite-instance",
@@ -875,7 +913,8 @@
         ],
         "number": "3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-createproof",
@@ -897,7 +936,8 @@
         ],
         "number": "3"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-verifyproof",
@@ -919,7 +959,8 @@
         ],
         "number": "3"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-cryptosuite-verification-result",
@@ -941,7 +982,8 @@
         ],
         "number": "3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-verified",
@@ -963,7 +1005,8 @@
         ],
         "number": "3"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-verifieddocument",
@@ -985,7 +1028,8 @@
         ],
         "number": "3"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-unsecured-data-document",
@@ -1007,7 +1051,8 @@
         ],
         "number": "4"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-input-document",
@@ -1029,7 +1074,8 @@
         ],
         "number": "4"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-secured-data-document",
@@ -1051,7 +1097,8 @@
         ],
         "number": "4"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-verification-result",
@@ -1073,7 +1120,8 @@
         ],
         "number": "4.4"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-verified-0",
@@ -1097,7 +1145,8 @@
         ],
         "number": "4.4"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-verifieddocument-0",
@@ -1121,7 +1170,8 @@
         ],
         "number": "4.4"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-mediatype",
@@ -1145,7 +1195,8 @@
         ],
         "number": "4.4"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-warnings",
@@ -1169,7 +1220,8 @@
         ],
         "number": "4.4"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-errors",
@@ -1193,7 +1245,8 @@
         ],
         "number": "4.4"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-context-validation-result",
@@ -1215,7 +1268,8 @@
         ],
         "number": "4.6"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-validated",
@@ -1239,7 +1293,8 @@
         ],
         "number": "4.6"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-validateddocument",
@@ -1263,7 +1318,8 @@
         ],
         "number": "4.6"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-warnings-0",
@@ -1287,7 +1343,8 @@
         ],
         "number": "4.6"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-errors-0",
@@ -1311,7 +1368,8 @@
         ],
         "number": "4.6"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-problemdetails",
@@ -1333,7 +1391,8 @@
         ],
         "number": "4.7"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-cryptographic-agility",
@@ -1355,7 +1414,8 @@
         ],
         "number": "5.4"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-cryptographic-layering",
@@ -1377,7 +1437,8 @@
         ],
         "number": "5.4"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-unlinkability",
@@ -1399,7 +1460,8 @@
         ],
         "number": "6.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     }
   ]
 }

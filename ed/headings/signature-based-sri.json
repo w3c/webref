@@ -1,0 +1,348 @@
+{
+  "spec": {
+    "title": "Signature-based Integrity",
+    "url": "https://wicg.github.io/signature-based-sri/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/signature-based-sri/#title",
+      "level": 1,
+      "title": "Signature-based Integrity"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/signature-based-sri/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/signature-based-sri/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/signature-based-sri/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "contents"
+      ]
+    },
+    {
+      "id": "intro",
+      "href": "https://wicg.github.io/signature-based-sri/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "signatures-vs-hashes",
+      "href": "https://wicg.github.io/signature-based-sri/#signatures-vs-hashes",
+      "level": 3,
+      "title": "Signatures are not Hashes",
+      "number": "1.1"
+    },
+    {
+      "id": "threat-model",
+      "href": "https://wicg.github.io/signature-based-sri/#threat-model",
+      "level": 3,
+      "title": "Overview and Threat Model",
+      "number": "1.2"
+    },
+    {
+      "id": "monkey-patches",
+      "href": "https://wicg.github.io/signature-based-sri/#monkey-patches",
+      "level": 2,
+      "title": "Monkey Patches",
+      "number": "2"
+    },
+    {
+      "id": "monkey-patch-sri",
+      "href": "https://wicg.github.io/signature-based-sri/#monkey-patch-sri",
+      "level": 3,
+      "title": "Patches to SRI",
+      "number": "2.1"
+    },
+    {
+      "id": "profile",
+      "href": "https://wicg.github.io/signature-based-sri/#profile",
+      "level": 4,
+      "title": "The SRI HTTP Message Signature Profile",
+      "number": "2.1.1"
+    },
+    {
+      "id": "unencoded-digest-validation-for-sri",
+      "href": "https://wicg.github.io/signature-based-sri/#unencoded-digest-validation-for-sri",
+      "level": 5,
+      "title": "Unencoded-Digest Validation for SRI",
+      "number": "2.1.1.1"
+    },
+    {
+      "id": "parsing",
+      "href": "https://wicg.github.io/signature-based-sri/#parsing",
+      "level": 4,
+      "title": "Parse metadata.",
+      "number": "2.1.2"
+    },
+    {
+      "id": "matching",
+      "href": "https://wicg.github.io/signature-based-sri/#matching",
+      "level": 4,
+      "title": "Do bytes and response match metadataList?",
+      "number": "2.1.3"
+    },
+    {
+      "id": "validation",
+      "href": "https://wicg.github.io/signature-based-sri/#validation",
+      "level": 4,
+      "title": "Validate a signature over response using algorithm and public key",
+      "number": "2.1.4"
+    },
+    {
+      "id": "monkey-patch-fetch",
+      "href": "https://wicg.github.io/signature-based-sri/#monkey-patch-fetch",
+      "level": 3,
+      "title": "Patches to Fetch",
+      "number": "2.2"
+    },
+    {
+      "id": "monkey-patch-main-fetch",
+      "href": "https://wicg.github.io/signature-based-sri/#monkey-patch-main-fetch",
+      "level": 4,
+      "title": "Main Fetch",
+      "number": "2.2.1"
+    },
+    {
+      "id": "monkey-patch-http-network-or-cache-fetch",
+      "href": "https://wicg.github.io/signature-based-sri/#monkey-patch-http-network-or-cache-fetch",
+      "level": 4,
+      "title": "HTTP-network-or-cache Fetch",
+      "number": "2.2.2"
+    },
+    {
+      "id": "append-accept-signature",
+      "href": "https://wicg.github.io/signature-based-sri/#append-accept-signature",
+      "level": 5,
+      "title": "Append Accept-Signature",
+      "number": "2.2.2.1"
+    },
+    {
+      "id": "monkey-patch-csp",
+      "href": "https://wicg.github.io/signature-based-sri/#monkey-patch-csp",
+      "level": 3,
+      "title": "Patches to CSP",
+      "number": "2.3"
+    },
+    {
+      "id": "csp-grammar",
+      "href": "https://wicg.github.io/signature-based-sri/#csp-grammar",
+      "level": 4,
+      "title": "Grammar",
+      "number": "2.3.1"
+    },
+    {
+      "id": "csp-integrity-check",
+      "href": "https://wicg.github.io/signature-based-sri/#csp-integrity-check",
+      "level": 4,
+      "title": "Matching Integrity Metadata",
+      "number": "2.3.2"
+    },
+    {
+      "id": "server-initiated",
+      "href": "https://wicg.github.io/signature-based-sri/#server-initiated",
+      "level": 3,
+      "title": "Server-Initiated Integrity Checks",
+      "number": "2.4"
+    },
+    {
+      "id": "unencoded-digest-validation",
+      "href": "https://wicg.github.io/signature-based-sri/#unencoded-digest-validation",
+      "level": 4,
+      "title": "Unencoded-Digest Validation",
+      "number": "2.4.1"
+    },
+    {
+      "id": "signature-enforcement",
+      "href": "https://wicg.github.io/signature-based-sri/#signature-enforcement",
+      "level": 4,
+      "title": "Signature and Signature-Input Enforcement",
+      "number": "2.4.2"
+    },
+    {
+      "id": "deployment-scenarios",
+      "href": "https://wicg.github.io/signature-based-sri/#deployment-scenarios",
+      "level": 2,
+      "title": "Deployment Scenarios",
+      "number": "3"
+    },
+    {
+      "id": "deployment-scenario-3p",
+      "href": "https://wicg.github.io/signature-based-sri/#deployment-scenario-3p",
+      "level": 3,
+      "title": "Non-versioned third-party libraries",
+      "number": "3.1"
+    },
+    {
+      "id": "deployment-scenario-3p-notes",
+      "href": "https://wicg.github.io/signature-based-sri/#deployment-scenario-3p-notes",
+      "level": 4,
+      "title": "Architectural Notes",
+      "number": "3.1.1"
+    },
+    {
+      "id": "deployment-scenario-1p",
+      "href": "https://wicg.github.io/signature-based-sri/#deployment-scenario-1p",
+      "level": 3,
+      "title": "Protecting first-party libraries",
+      "number": "3.2"
+    },
+    {
+      "id": "deployment",
+      "href": "https://wicg.github.io/signature-based-sri/#deployment",
+      "level": 2,
+      "title": "Deployment Considerations",
+      "number": "4"
+    },
+    {
+      "id": "deployment-key-management",
+      "href": "https://wicg.github.io/signature-based-sri/#deployment-key-management",
+      "level": 3,
+      "title": "Key Management",
+      "number": "4.1"
+    },
+    {
+      "id": "deployment-key-rotation",
+      "href": "https://wicg.github.io/signature-based-sri/#deployment-key-rotation",
+      "level": 3,
+      "title": "Key Rotation",
+      "number": "4.2"
+    },
+    {
+      "id": "deployment-key-discovery",
+      "href": "https://wicg.github.io/signature-based-sri/#deployment-key-discovery",
+      "level": 3,
+      "title": "Key Discovery",
+      "number": "4.3"
+    },
+    {
+      "id": "security",
+      "href": "https://wicg.github.io/signature-based-sri/#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "5"
+    },
+    {
+      "id": "security-secure-context",
+      "href": "https://wicg.github.io/signature-based-sri/#security-secure-context",
+      "level": 3,
+      "title": "Secure Contexts",
+      "number": "5.1"
+    },
+    {
+      "id": "security-provenance-not-content",
+      "href": "https://wicg.github.io/signature-based-sri/#security-provenance-not-content",
+      "level": 3,
+      "title": "Provenance, not Content",
+      "number": "5.2"
+    },
+    {
+      "id": "security-substitution",
+      "href": "https://wicg.github.io/signature-based-sri/#security-substitution",
+      "level": 3,
+      "title": "Substitution Attacks",
+      "number": "5.3"
+    },
+    {
+      "id": "security-replacement",
+      "href": "https://wicg.github.io/signature-based-sri/#security-replacement",
+      "level": 4,
+      "title": "Content Replacement",
+      "number": "5.3.1"
+    },
+    {
+      "id": "security-rollback",
+      "href": "https://wicg.github.io/signature-based-sri/#security-rollback",
+      "level": 4,
+      "title": "Rollback Attacks",
+      "number": "5.3.2"
+    },
+    {
+      "id": "security-redirection",
+      "href": "https://wicg.github.io/signature-based-sri/#security-redirection",
+      "level": 4,
+      "title": "Redirection",
+      "number": "5.3.3"
+    },
+    {
+      "id": "privacy",
+      "href": "https://wicg.github.io/signature-based-sri/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "6"
+    },
+    {
+      "id": "examples",
+      "href": "https://wicg.github.io/signature-based-sri/#examples",
+      "level": 2,
+      "title": "An End-to-End Example",
+      "number": "7"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://wicg.github.io/signature-based-sri/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://wicg.github.io/signature-based-sri/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/signature-based-sri/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/signature-based-sri/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/signature-based-sri/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/signature-based-sri/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/signature-based-sri/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://wicg.github.io/signature-based-sri/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://wicg.github.io/signature-based-sri/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}
