@@ -1,20 +1,45 @@
-From 513373e2297722960f8abcfe501883961965084a Mon Sep 17 00:00:00 2001
+From 758207db2a489415f00c4241cd08897d47a9c4ae Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Wed, 29 Jan 2025 08:41:24 +0100
-Subject: [PATCH] Drop pointer-events dfn from CSS UI
+Date: Thu, 10 Jul 2025 11:54:01 +0200
+Subject: [PATCH] Drop pointer-events dfn, adjust cursor-image syntax
 
 The definition of `pointer-events` is not yet as complete as that in the SVG
 spec. Tracking issue at:
 https://github.com/w3c/csswg-drafts/issues/4438
+
+Syntax of `<cursor-image>` is valid but stacking of `{2}` and `?` is not
+supported by the CSSTree parser. Tracking issue at:
+https://github.com/csstree/csstree/issues/346
+
+(Why the spec defines the type both as a `value` and a `type`, I do not know,
+but this should not have any impact though, so left for another day...)
 ---
- ed/css/css-ui.json | 32 --------------------------------
- 1 file changed, 32 deletions(-)
+ ed/css/css-ui.json | 36 ++----------------------------------
+ 1 file changed, 2 insertions(+), 34 deletions(-)
 
 diff --git a/ed/css/css-ui.json b/ed/css/css-ui.json
-index 42f18de79..1ae14241c 100644
+index e65d3cfd00..1aa20eb8b1 100644
 --- a/ed/css/css-ui.json
 +++ b/ed/css/css-ui.json
-@@ -594,38 +594,6 @@
+@@ -121,7 +121,7 @@
+       "values": [
+         {
+           "name": "<cursor-image>",
+-          "value": "[ <url> | <url-set> ] <number>{2}?",
++          "value": "[ <url> | <url-set> ] [<number>{2}]?",
+           "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-cursor-image",
+           "type": "value"
+         },
+@@ -129,7 +129,7 @@
+           "name": "<cursor-image>",
+           "href": "https://drafts.csswg.org/css-ui-4/#typedef-cursor-cursor-image",
+           "type": "type",
+-          "value": "[ <url> | <url-set> ] <number>{2}?"
++          "value": "[ <url> | <url-set> ] [<number>{2}]?"
+         },
+         {
+           "name": "<url-set>",
+@@ -627,38 +627,6 @@
          "userSelect"
        ]
      },
