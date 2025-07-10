@@ -99,12 +99,15 @@
               "html": "<p>Set <var>prefix</var> to <var>splitResult</var>[0].\n\n   </p>"
             },
             {
-              "html": "<p>Set <var>localName</var> to <var>splitResult</var>[1].\n  </p>"
+              "html": "<p>Set <var>localName</var> to <var>splitResult</var>[1].\n\n   </p>"
+            },
+            {
+              "html": "<p>If <var>prefix</var> is not a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#valid-namespace-prefix\" id=\"ref-for-valid-namespace-prefix\">valid namespace prefix</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> an\n   \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidcharactererror\" id=\"ref-for-invalidcharactererror\">InvalidCharacterError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.\n  </p>"
             }
           ]
         },
         {
-          "html": "<p>If <var>prefix</var> is not a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#valid-namespace-prefix\" id=\"ref-for-valid-namespace-prefix\">valid namespace prefix</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> an\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidcharactererror\" id=\"ref-for-invalidcharactererror\">InvalidCharacterError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>prefix</var> is either null or a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#valid-namespace-prefix\" id=\"ref-for-valid-namespace-prefix①\">valid namespace prefix</a>.\n\n </p>"
         },
         {
           "html": "<p>If <var>context</var> is \"<code>attribute</code>\" and <var>localName</var> is not a\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#valid-attribute-local-name\" id=\"ref-for-valid-attribute-local-name\">valid attribute local name</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidcharactererror\" id=\"ref-for-invalidcharactererror①\">InvalidCharacterError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>.\n\n </p>"
@@ -148,7 +151,7 @@
           "html": "<p>Let <var>currentTarget</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-currenttarget\" id=\"ref-for-dom-event-currenttarget④\">currentTarget</a></code> attribute value.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>currentTarget</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#eventtarget\" id=\"ref-for-eventtarget⑦\">EventTarget</a></code> object.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>currentTarget</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#eventtarget\" id=\"ref-for-eventtarget⑦\">EventTarget</a></code> object.\n\n </p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>currentTarget</var> to <var>composedPath</var>.\n\n </p>"
@@ -1612,7 +1615,7 @@
           "html": "<p>Let <var>oldParent</var> be <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent①③\">parent</a>.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>oldParent</var> is non-null.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>oldParent</var> is non-null.\n\n </p>"
         },
         {
           "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#live-range-pre-remove-steps\" id=\"ref-for-live-range-pre-remove-steps\">live range pre-remove steps</a>, given <var>node</var>.\n\n </p>"
@@ -1918,7 +1921,7 @@
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③\">this</a> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①⑥\">document</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#document-custom-element-registry\" id=\"ref-for-document-custom-element-registry\">custom element registry</a>.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#shadowroot\" id=\"ref-for-shadowroot④\">ShadowRoot</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node⑥⑥\">node</a>.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#shadowroot\" id=\"ref-for-shadowroot④\">ShadowRoot</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node⑥⑥\">node</a>.\n\n </p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-custom-element-registry\" id=\"ref-for-shadowroot-custom-element-registry⑤\">custom element registry</a>.\n</p>"
@@ -2635,7 +2638,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>node</var> is not a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②④\">document</a> or <var>node</var> is\n <var>document</var>.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>node</var> is not a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②④\">document</a> or <var>node</var> is\n <var>document</var>.\n\n </p>"
         },
         {
           "html": "<p>Let <var>copy</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#clone-a-single-node\" id=\"ref-for-clone-a-single-node\">cloning a single node</a> given <var>node</var>,\n <var>document</var>, and <var>fallbackRegistry</var>.\n\n </p>"
@@ -2654,7 +2657,7 @@
           "rationale": "assert",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>copy</var> is not a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#element-shadow-host\" id=\"ref-for-element-shadow-host③\">shadow host</a>.\n\n   </p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>copy</var> is not a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#element-shadow-host\" id=\"ref-for-element-shadow-host③\">shadow host</a>.\n\n   </p>"
             },
             {
               "html": "<p>Let <var>shadowRootRegistry</var> be <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-shadow-root\" id=\"ref-for-concept-element-shadow-root②\">shadow root</a>’s\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-custom-element-registry\" id=\"ref-for-shadowroot-custom-element-registry⑥\">custom element registry</a>.\n\n   </p>"
@@ -2751,7 +2754,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>copy</var> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node①①⑨\">node</a>.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: <var>copy</var> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node①①⑨\">node</a>.\n\n </p>"
         },
         {
           "html": "<p>If <var>node</var> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②⑥\">document</a>, then set <var>document</var> to\n <var>copy</var>.\n\n </p>"
@@ -3781,7 +3784,7 @@
           "html": "<p>Let <var>element</var> be a new <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑧④\">element</a> that implements <var>interface</var>,\n with <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-namespace\" id=\"ref-for-concept-element-namespace①⑤\">namespace</a> set to <var>namespace</var>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-namespace-prefix\" id=\"ref-for-concept-element-namespace-prefix①③\">namespace prefix</a>\n set to <var>prefix</var>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-local-name\" id=\"ref-for-concept-element-local-name①③\">local name</a> set to <var>localName</var>,\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#element-custom-element-registry\" id=\"ref-for-element-custom-element-registry⑥\">custom element registry</a> set to <var>registry</var>,\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-custom-element-state\" id=\"ref-for-concept-element-custom-element-state⑤\">custom element state</a> set to <var>state</var>,\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-custom-element-definition\" id=\"ref-for-concept-element-custom-element-definition①\">custom element definition</a> set to null, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-is-value\" id=\"ref-for-concept-element-is-value②\"><code>is</code> value</a>\n set to <var>is</var>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document④⑨\">node document</a> set to <var>document</var>.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute⑦\">attribute list</a>\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑦\">is empty</a>.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute⑦\">attribute list</a>\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑦\">is empty</a>.\n\n </p>"
         },
         {
           "html": "<p>Return <var>element</var>.\n</p>"
@@ -4639,7 +4642,7 @@
           "html": "<p>Let <var>parent</var> be <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent④②\">parent</a>.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: <var>parent</var> is not null.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: <var>parent</var> is not null.\n\n </p>"
         },
         {
           "html": "<p>Let <var>index</var> be <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-index\" id=\"ref-for-concept-tree-index①②\">index</a>.\n\n </p>"

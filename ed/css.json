@@ -245,7 +245,7 @@
     },
     {
       "name": "@else",
-      "prose": "The @else rule is a conditional group rule used to form conditional rule chains, which associate multiple conditional rules and guarantee that only the first one that matches will evaluate its condition as true. It is defined as:",
+      "prose": "The @else rule is a conditional group rule used to form conditional rule chains, which associate multiple conditional group rules and guarantee that only the first one that matches will evaluate its condition as true. It is defined as:",
       "href": "https://drafts.csswg.org/css-conditional-5/#at-ruledef-else",
       "descriptors": [],
       "syntax": "@else <boolean-condition>? { <rule-list> }"
@@ -6577,7 +6577,7 @@
       "styleDeclaration": [
         "cursor"
       ],
-      "syntax": "[ [ <url> | <url-set> ] [<x> <y>]? ]#? [ auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | grab | grabbing | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out ]"
+      "syntax": "<cursor-image>#? <cursor-predefined>"
     },
     {
       "name": "cx",
@@ -8318,6 +8318,54 @@
         "interactivity"
       ],
       "syntax": "auto | inert"
+    },
+    {
+      "name": "interest-delay",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-interest-delay",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "interest-delay",
+        "interestDelay"
+      ],
+      "syntax": "<'interest-delay-start'>"
+    },
+    {
+      "name": "interest-delay-end",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-interest-delay-end",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "the keyword normal or a computed time",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "interest-delay-end",
+        "interestDelayEnd"
+      ],
+      "syntax": "normal | <time>"
+    },
+    {
+      "name": "interest-delay-start",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-interest-delay-start",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "the keyword normal or a computed time",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "interest-delay-start",
+        "interestDelayStart"
+      ],
+      "syntax": "normal | <time>"
     },
     {
       "name": "interpolate-size",
@@ -15691,6 +15739,21 @@
       "href": "https://drafts.csswg.org/css-easing-2/#typedef-cubic-bezier-easing-function",
       "type": "type",
       "syntax": "ease | ease-in | ease-out | ease-in-out | <cubic-bezier()>"
+    },
+    {
+      "for": [
+        "cursor"
+      ],
+      "name": "cursor-image",
+      "href": "https://drafts.csswg.org/css-ui-4/#typedef-cursor-cursor-image",
+      "type": "type",
+      "syntax": "[ <url> | <url-set> ] [<number>{2}]?"
+    },
+    {
+      "name": "cursor-predefined",
+      "href": "https://drafts.csswg.org/css-ui-4/#typedef-cursor-predefined",
+      "type": "type",
+      "syntax": "auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | grab | grabbing | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out"
     },
     {
       "name": "custom-arg",

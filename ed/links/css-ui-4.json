@@ -113,7 +113,6 @@
       "https://drafts.csswg.org/css-writing-modes-3/": {},
       "https://drafts.csswg.org/css-writing-modes-4/": {},
       "https://drafts.csswg.org/css2/": {},
-      "https://drafts.csswg.org/pointer-animations-1/": {},
       "https://drafts.csswg.org/selectors-3/": {},
       "https://drafts.csswg.org/selectors/": {},
       "https://drafts.fxtf.org/filter-effects-1/": {},
@@ -133,17 +132,13 @@
           "image-maps-2"
         ]
       },
+      "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
       "https://svgwg.org/svg2-draft/": {},
       "https://svgwg.org/svg2-draft/interact.html": {
         "anchors": [
           "PointerEventsProp"
-        ]
-      },
-      "https://svgwg.org/svg2-draft/text.html": {
-        "anchors": [
-          "TextLayoutPath"
         ]
       },
       "https://w3c.github.io/contentEditable/": {
@@ -251,7 +246,7 @@
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
-          "concept-attribute-element"
+          "concept-element"
         ]
       },
       "https://drafts.csswg.org/css-backgrounds-3/": {
@@ -264,8 +259,23 @@
           "propdef-border-color",
           "propdef-background-image",
           "propdef-background-color",
-          "propdef-box-shadow",
           "propdef-border",
+          "propdef-background-attachment",
+          "propdef-background-position",
+          "propdef-background-clip",
+          "propdef-background-origin",
+          "propdef-background-size",
+          "propdef-border-image-source",
+          "propdef-border-image-slice",
+          "propdef-border-image-width",
+          "propdef-border-image-outset",
+          "propdef-border-image-repeat"
+        ]
+      },
+      "https://drafts.csswg.org/css-borders-4/": {
+        "anchors": [
+          "propdef-corner-shape",
+          "propdef-box-shadow",
           "propdef-border-top-color",
           "propdef-border-top-style",
           "propdef-border-top-width",
@@ -278,25 +288,6 @@
           "propdef-border-left-color",
           "propdef-border-left-style",
           "propdef-border-left-width",
-          "propdef-background-attachment",
-          "propdef-background-position",
-          "propdef-background-clip",
-          "propdef-background-origin",
-          "propdef-background-size",
-          "propdef-border-image-source",
-          "propdef-border-image-slice",
-          "propdef-border-image-width",
-          "propdef-border-image-outset",
-          "propdef-border-image-repeat",
-          "propdef-border-top-left-radius",
-          "propdef-border-top-right-radius",
-          "propdef-border-bottom-right-radius",
-          "propdef-border-bottom-left-radius"
-        ]
-      },
-      "https://drafts.csswg.org/css-borders-4/": {
-        "anchors": [
-          "propdef-corner-shape",
           "propdef-border-block-start-color",
           "propdef-border-block-end-color",
           "propdef-border-inline-start-color",
@@ -309,6 +300,10 @@
           "propdef-border-block-end-width",
           "propdef-border-inline-start-width",
           "propdef-border-inline-end-width",
+          "propdef-border-top-left-radius",
+          "propdef-border-top-right-radius",
+          "propdef-border-bottom-right-radius",
+          "propdef-border-bottom-left-radius",
           "propdef-border-start-start-radius",
           "propdef-border-start-end-radius",
           "propdef-border-end-start-radius",
@@ -326,7 +321,6 @@
       },
       "https://drafts.csswg.org/css-cascade-5/": {
         "anchors": [
-          "cascade-origin-ua",
           "used-value",
           "computed-value",
           "apply",
@@ -364,6 +358,7 @@
       },
       "https://drafts.csswg.org/css-display-4/": {
         "anchors": [
+          "text-nodes",
           "replaced-element"
         ]
       },
@@ -447,11 +442,13 @@
           "snap-a-length-as-a-border-width",
           "comb-one",
           "length-value",
-          "url-value",
-          "mult-opt",
           "mult-comma",
+          "mult-opt",
+          "url-value",
           "number-value",
-          "string-value"
+          "mult-num",
+          "string-value",
+          "time-value"
         ]
       },
       "https://drafts.csswg.org/css-writing-modes-4/": {
@@ -460,8 +457,8 @@
           "block-size",
           "inline-axis",
           "inline-size",
-          "writing-mode",
-          "under"
+          "under",
+          "writing-mode"
         ]
       },
       "https://drafts.csswg.org/css2/": {
@@ -475,15 +472,11 @@
           "propdef-visibility"
         ]
       },
-      "https://drafts.csswg.org/pointer-animations-1/": {
-        "anchors": [
-          "valdef-pointer-root"
-        ]
-      },
       "https://drafts.csswg.org/selectors-4/": {
         "anchors": [
           "focus-visible-pseudo",
           "focus-pseudo",
+          "host-language",
           "checked-pseudo",
           "enabled-pseudo",
           "disabled-pseudo"
@@ -543,6 +536,11 @@
       "https://html.spec.whatwg.org/multipage/media.html": {
         "anchors": [
           "video"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "user-agent"
         ]
       },
       "https://svgwg.org/svg2-draft/struct.html": {
