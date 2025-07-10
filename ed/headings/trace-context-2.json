@@ -1,0 +1,762 @@
+{
+  "spec": {
+    "title": "Trace Context Level 3",
+    "url": "https://w3c.github.io/trace-context/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/trace-context/#title",
+      "level": 1,
+      "title": "Trace Context Level 3"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/trace-context/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/trace-context/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "alternateIds": [
+        "x1-conformance"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "overview",
+      "href": "https://w3c.github.io/trace-context/#overview",
+      "level": 2,
+      "title": "Overview",
+      "alternateIds": [
+        "x2-overview"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "problem-statement",
+      "href": "https://w3c.github.io/trace-context/#problem-statement",
+      "level": 3,
+      "title": "Problem Statement",
+      "alternateIds": [
+        "x2-1-problem-statement"
+      ],
+      "number": "2.1"
+    },
+    {
+      "id": "solution",
+      "href": "https://w3c.github.io/trace-context/#solution",
+      "level": 3,
+      "title": "Solution",
+      "alternateIds": [
+        "x2-2-solution"
+      ],
+      "number": "2.2"
+    },
+    {
+      "id": "design-overview",
+      "href": "https://w3c.github.io/trace-context/#design-overview",
+      "level": 3,
+      "title": "Design Overview",
+      "alternateIds": [
+        "x2-3-design-overview"
+      ],
+      "number": "2.3"
+    },
+    {
+      "id": "trace-context-http-request-headers-format",
+      "href": "https://w3c.github.io/trace-context/#trace-context-http-request-headers-format",
+      "level": 2,
+      "title": "Trace Context HTTP Request Headers Format",
+      "alternateIds": [
+        "x3-trace-context-http-request-headers-format"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "relationship-between-the-headers",
+      "href": "https://w3c.github.io/trace-context/#relationship-between-the-headers",
+      "level": 3,
+      "title": "Relationship Between the Headers",
+      "alternateIds": [
+        "x3-1-relationship-between-the-headers"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "traceparent-header",
+      "href": "https://w3c.github.io/trace-context/#traceparent-header",
+      "level": 3,
+      "title": "Traceparent Header",
+      "alternateIds": [
+        "x3-2-traceparent-header"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "header-name",
+      "href": "https://w3c.github.io/trace-context/#header-name",
+      "level": 4,
+      "title": "Header Name",
+      "alternateIds": [
+        "x3-2-1-header-name"
+      ],
+      "number": "3.2.1"
+    },
+    {
+      "id": "traceparent-header-field-values",
+      "href": "https://w3c.github.io/trace-context/#traceparent-header-field-values",
+      "level": 4,
+      "title": "traceparent Header Field Values",
+      "alternateIds": [
+        "x3-2-2-traceparent-header-field-values"
+      ],
+      "number": "3.2.2"
+    },
+    {
+      "id": "version",
+      "href": "https://w3c.github.io/trace-context/#version",
+      "level": 5,
+      "title": "version",
+      "alternateIds": [
+        "x3-2-2-1-version"
+      ],
+      "number": "3.2.2.1"
+    },
+    {
+      "id": "version-format",
+      "href": "https://w3c.github.io/trace-context/#version-format",
+      "level": 5,
+      "title": "version-format",
+      "alternateIds": [
+        "x3-2-2-2-version-format"
+      ],
+      "number": "3.2.2.2"
+    },
+    {
+      "id": "trace-id",
+      "href": "https://w3c.github.io/trace-context/#trace-id",
+      "level": 5,
+      "title": "trace-id",
+      "alternateIds": [
+        "x3-2-2-3-trace-id"
+      ],
+      "number": "3.2.2.3"
+    },
+    {
+      "id": "parent-id",
+      "href": "https://w3c.github.io/trace-context/#parent-id",
+      "level": 5,
+      "title": "parent-id",
+      "alternateIds": [
+        "x3-2-2-4-parent-id"
+      ],
+      "number": "3.2.2.4"
+    },
+    {
+      "id": "trace-flags",
+      "href": "https://w3c.github.io/trace-context/#trace-flags",
+      "level": 5,
+      "title": "trace-flags",
+      "alternateIds": [
+        "x3-2-2-5-trace-flags"
+      ],
+      "number": "3.2.2.5"
+    },
+    {
+      "id": "sampled-flag",
+      "href": "https://w3c.github.io/trace-context/#sampled-flag",
+      "level": 6,
+      "title": "Sampled flag",
+      "alternateIds": [
+        "x3-2-2-5-1-sampled-flag"
+      ],
+      "number": "3.2.2.5.1"
+    },
+    {
+      "id": "random-trace-id-flag",
+      "href": "https://w3c.github.io/trace-context/#random-trace-id-flag",
+      "level": 6,
+      "title": "Random Trace ID Flag",
+      "alternateIds": [
+        "x3-2-2-5-2-random-trace-id-flag"
+      ],
+      "number": "3.2.2.5.2"
+    },
+    {
+      "id": "other-flags",
+      "href": "https://w3c.github.io/trace-context/#other-flags",
+      "level": 6,
+      "title": "Other Flags",
+      "alternateIds": [
+        "x3-2-2-5-3-other-flags"
+      ],
+      "number": "3.2.2.5.3"
+    },
+    {
+      "id": "examples-of-http-traceparent-headers",
+      "href": "https://w3c.github.io/trace-context/#examples-of-http-traceparent-headers",
+      "level": 4,
+      "title": "Examples of HTTP traceparent Headers",
+      "alternateIds": [
+        "x3-2-3-examples-of-http-traceparent-headers"
+      ],
+      "number": "3.2.3"
+    },
+    {
+      "id": "versioning-of-traceparent",
+      "href": "https://w3c.github.io/trace-context/#versioning-of-traceparent",
+      "level": 4,
+      "title": "Versioning of traceparent",
+      "alternateIds": [
+        "x3-2-4-versioning-of-traceparent"
+      ],
+      "number": "3.2.4"
+    },
+    {
+      "id": "tracestate-header",
+      "href": "https://w3c.github.io/trace-context/#tracestate-header",
+      "level": 3,
+      "title": "Tracestate Header",
+      "alternateIds": [
+        "x3-3-tracestate-header"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "header-name-0",
+      "href": "https://w3c.github.io/trace-context/#header-name-0",
+      "level": 4,
+      "title": "Header Name",
+      "alternateIds": [
+        "x3-3-1-header-name"
+      ],
+      "number": "3.3.1"
+    },
+    {
+      "id": "tracestate-header-field-values",
+      "href": "https://w3c.github.io/trace-context/#tracestate-header-field-values",
+      "level": 4,
+      "title": "tracestate Header Field Values",
+      "alternateIds": [
+        "x3-3-2-tracestate-header-field-values"
+      ],
+      "number": "3.3.2"
+    },
+    {
+      "id": "list",
+      "href": "https://w3c.github.io/trace-context/#list",
+      "level": 5,
+      "title": "list",
+      "alternateIds": [
+        "x3-3-2-1-list"
+      ],
+      "number": "3.3.2.1"
+    },
+    {
+      "id": "list-members",
+      "href": "https://w3c.github.io/trace-context/#list-members",
+      "level": 5,
+      "title": "list-members",
+      "alternateIds": [
+        "x3-3-2-2-list-members"
+      ],
+      "number": "3.3.2.2"
+    },
+    {
+      "id": "key",
+      "href": "https://w3c.github.io/trace-context/#key",
+      "level": 6,
+      "title": "Key",
+      "alternateIds": [
+        "x3-3-2-2-1-key"
+      ],
+      "number": "3.3.2.2.1"
+    },
+    {
+      "id": "value",
+      "href": "https://w3c.github.io/trace-context/#value",
+      "level": 6,
+      "title": "Value",
+      "alternateIds": [
+        "x3-3-2-2-2-value"
+      ],
+      "number": "3.3.2.2.2"
+    },
+    {
+      "id": "combined-header-value",
+      "href": "https://w3c.github.io/trace-context/#combined-header-value",
+      "level": 4,
+      "title": "Combined Header Value",
+      "alternateIds": [
+        "x3-3-3-combined-header-value"
+      ],
+      "number": "3.3.3"
+    },
+    {
+      "id": "tracestate-limits",
+      "href": "https://w3c.github.io/trace-context/#tracestate-limits",
+      "level": 5,
+      "title": "tracestate Limits:",
+      "alternateIds": [
+        "x3-3-3-1-tracestate-limits"
+      ],
+      "number": "3.3.3.1"
+    },
+    {
+      "id": "examples-of-tracestate-http-headers",
+      "href": "https://w3c.github.io/trace-context/#examples-of-tracestate-http-headers",
+      "level": 4,
+      "title": "Examples of tracestate HTTP Headers",
+      "alternateIds": [
+        "x3-3-4-examples-of-tracestate-http-headers"
+      ],
+      "number": "3.3.4"
+    },
+    {
+      "id": "versioning-of-tracestate",
+      "href": "https://w3c.github.io/trace-context/#versioning-of-tracestate",
+      "level": 4,
+      "title": "Versioning of tracestate",
+      "alternateIds": [
+        "x3-3-5-versioning-of-tracestate"
+      ],
+      "number": "3.3.5"
+    },
+    {
+      "id": "mutating-the-traceparent-field",
+      "href": "https://w3c.github.io/trace-context/#mutating-the-traceparent-field",
+      "level": 3,
+      "title": "Mutating the traceparent Field",
+      "alternateIds": [
+        "x3-4-mutating-the-traceparent-field"
+      ],
+      "number": "3.4"
+    },
+    {
+      "id": "mutating-the-tracestate-field",
+      "href": "https://w3c.github.io/trace-context/#mutating-the-tracestate-field",
+      "level": 3,
+      "title": "Mutating the tracestate Field",
+      "alternateIds": [
+        "x3-5-mutating-the-tracestate-field"
+      ],
+      "number": "3.5"
+    },
+    {
+      "id": "trace-context-http-response-headers-format",
+      "href": "https://w3c.github.io/trace-context/#trace-context-http-response-headers-format",
+      "level": 2,
+      "title": "Trace Context HTTP Response Headers Format",
+      "alternateIds": [
+        "x4-trace-context-http-response-headers-format"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "traceresponse-header",
+      "href": "https://w3c.github.io/trace-context/#traceresponse-header",
+      "level": 3,
+      "title": "Traceresponse Header",
+      "alternateIds": [
+        "x4-1-traceresponse-header"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "header-name-1",
+      "href": "https://w3c.github.io/trace-context/#header-name-1",
+      "level": 4,
+      "title": "Header Name",
+      "alternateIds": [
+        "x4-1-1-header-name"
+      ],
+      "number": "4.1.1"
+    },
+    {
+      "id": "traceresponse-header-field-values",
+      "href": "https://w3c.github.io/trace-context/#traceresponse-header-field-values",
+      "level": 4,
+      "title": "traceresponse Header Field Values",
+      "alternateIds": [
+        "x4-1-2-traceresponse-header-field-values"
+      ],
+      "number": "4.1.2"
+    },
+    {
+      "id": "version-0",
+      "href": "https://w3c.github.io/trace-context/#version-0",
+      "level": 5,
+      "title": "version",
+      "alternateIds": [
+        "x4-1-2-1-version"
+      ],
+      "number": "4.1.2.1"
+    },
+    {
+      "id": "version-format-0",
+      "href": "https://w3c.github.io/trace-context/#version-format-0",
+      "level": 5,
+      "title": "version-format",
+      "alternateIds": [
+        "x4-1-2-2-version-format"
+      ],
+      "number": "4.1.2.2"
+    },
+    {
+      "id": "trace-id-0",
+      "href": "https://w3c.github.io/trace-context/#trace-id-0",
+      "level": 5,
+      "title": "trace-id",
+      "alternateIds": [
+        "x4-1-2-3-trace-id"
+      ],
+      "number": "4.1.2.3"
+    },
+    {
+      "id": "child-id",
+      "href": "https://w3c.github.io/trace-context/#child-id",
+      "level": 5,
+      "title": "child-id",
+      "alternateIds": [
+        "x4-1-2-4-child-id"
+      ],
+      "number": "4.1.2.4"
+    },
+    {
+      "id": "trace-flags-0",
+      "href": "https://w3c.github.io/trace-context/#trace-flags-0",
+      "level": 5,
+      "title": "trace-flags",
+      "alternateIds": [
+        "x4-1-2-5-trace-flags"
+      ],
+      "number": "4.1.2.5"
+    },
+    {
+      "id": "sampled-flag-0",
+      "href": "https://w3c.github.io/trace-context/#sampled-flag-0",
+      "level": 6,
+      "title": "Sampled flag",
+      "alternateIds": [
+        "x4-1-2-5-1-sampled-flag"
+      ],
+      "number": "4.1.2.5.1"
+    },
+    {
+      "id": "random-trace-id-flag-0",
+      "href": "https://w3c.github.io/trace-context/#random-trace-id-flag-0",
+      "level": 6,
+      "title": "Random Trace ID Flag",
+      "alternateIds": [
+        "x4-1-2-5-2-random-trace-id-flag"
+      ],
+      "number": "4.1.2.5.2"
+    },
+    {
+      "id": "other-flags-0",
+      "href": "https://w3c.github.io/trace-context/#other-flags-0",
+      "level": 6,
+      "title": "Other Flags",
+      "alternateIds": [
+        "x4-1-2-5-3-other-flags"
+      ],
+      "number": "4.1.2.5.3"
+    },
+    {
+      "id": "processing-model",
+      "href": "https://w3c.github.io/trace-context/#processing-model",
+      "level": 2,
+      "title": "Processing Model",
+      "alternateIds": [
+        "x5-processing-model"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "processing-model-for-working-with-trace-context-request-header",
+      "href": "https://w3c.github.io/trace-context/#processing-model-for-working-with-trace-context-request-header",
+      "level": 3,
+      "title": "Processing Model for Working with Trace Context Request Header",
+      "alternateIds": [
+        "x5-1-processing-model-for-working-with-trace-context-request-header"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "no-traceparent-received",
+      "href": "https://w3c.github.io/trace-context/#no-traceparent-received",
+      "level": 4,
+      "title": "No traceparent Received",
+      "alternateIds": [
+        "x5-1-1-no-traceparent-received"
+      ],
+      "number": "5.1.1"
+    },
+    {
+      "id": "a-traceparent-is-received",
+      "href": "https://w3c.github.io/trace-context/#a-traceparent-is-received",
+      "level": 4,
+      "title": "A traceparent is Received",
+      "alternateIds": [
+        "x5-1-2-a-traceparent-is-received"
+      ],
+      "number": "5.1.2"
+    },
+    {
+      "id": "alternative-processing",
+      "href": "https://w3c.github.io/trace-context/#alternative-processing",
+      "level": 4,
+      "title": "Alternative Processing",
+      "alternateIds": [
+        "x5-1-3-alternative-processing"
+      ],
+      "number": "5.1.3"
+    },
+    {
+      "id": "processing-model-for-working-with-trace-context-response-header",
+      "href": "https://w3c.github.io/trace-context/#processing-model-for-working-with-trace-context-response-header",
+      "level": 3,
+      "title": "Processing Model for Working with Trace Context Response Header",
+      "alternateIds": [
+        "x5-2-processing-model-for-working-with-trace-context-response-header"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "restarted-trace",
+      "href": "https://w3c.github.io/trace-context/#restarted-trace",
+      "level": 4,
+      "title": "Restarted Trace",
+      "alternateIds": [
+        "x5-2-1-restarted-trace"
+      ],
+      "number": "5.2.1"
+    },
+    {
+      "id": "load-balancer-deferred-sampling",
+      "href": "https://w3c.github.io/trace-context/#load-balancer-deferred-sampling",
+      "level": 4,
+      "title": "Load Balancer Deferred Sampling",
+      "alternateIds": [
+        "x5-2-2-load-balancer-deferred-sampling"
+      ],
+      "number": "5.2.2"
+    },
+    {
+      "id": "other-communication-protocols",
+      "href": "https://w3c.github.io/trace-context/#other-communication-protocols",
+      "level": 2,
+      "title": "Other Communication Protocols",
+      "alternateIds": [
+        "x6-other-communication-protocols"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://w3c.github.io/trace-context/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "x7-privacy-considerations"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "privacy-of-traceparent-field",
+      "href": "https://w3c.github.io/trace-context/#privacy-of-traceparent-field",
+      "level": 3,
+      "title": "Privacy of traceparent field",
+      "alternateIds": [
+        "x7-1-privacy-of-traceparent-field"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "privacy-of-tracestate-field",
+      "href": "https://w3c.github.io/trace-context/#privacy-of-tracestate-field",
+      "level": 3,
+      "title": "Privacy of tracestate field",
+      "alternateIds": [
+        "x7-2-privacy-of-tracestate-field"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "other-risks",
+      "href": "https://w3c.github.io/trace-context/#other-risks",
+      "level": 3,
+      "title": "Other risks",
+      "alternateIds": [
+        "x7-3-other-risks"
+      ],
+      "number": "7.3"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/trace-context/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "x8-security-considerations"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "information-exposure",
+      "href": "https://w3c.github.io/trace-context/#information-exposure",
+      "level": 3,
+      "title": "Information Exposure",
+      "alternateIds": [
+        "x8-1-information-exposure"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "denial-of-service",
+      "href": "https://w3c.github.io/trace-context/#denial-of-service",
+      "level": 3,
+      "title": "Denial of Service",
+      "alternateIds": [
+        "x8-2-denial-of-service"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "other-risks-0",
+      "href": "https://w3c.github.io/trace-context/#other-risks-0",
+      "level": 3,
+      "title": "Other Risks",
+      "alternateIds": [
+        "x8-3-other-risks"
+      ],
+      "number": "8.3"
+    },
+    {
+      "id": "considerations-for-trace-id-field-generation",
+      "href": "https://w3c.github.io/trace-context/#considerations-for-trace-id-field-generation",
+      "level": 2,
+      "title": "Considerations for trace-id field generation",
+      "alternateIds": [
+        "x9-considerations-for-trace-id-field-generation"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "uniqueness-of-trace-id",
+      "href": "https://w3c.github.io/trace-context/#uniqueness-of-trace-id",
+      "level": 3,
+      "title": "Uniqueness of trace-id",
+      "alternateIds": [
+        "x9-1-uniqueness-of-trace-id"
+      ],
+      "number": "9.1"
+    },
+    {
+      "id": "randomness-of-trace-id",
+      "href": "https://w3c.github.io/trace-context/#randomness-of-trace-id",
+      "level": 3,
+      "title": "Randomness of trace-id",
+      "alternateIds": [
+        "x9-2-randomness-of-trace-id"
+      ],
+      "number": "9.2"
+    },
+    {
+      "id": "handling-trace-id-for-compliant-platforms-with-shorter-internal-identifiers",
+      "href": "https://w3c.github.io/trace-context/#handling-trace-id-for-compliant-platforms-with-shorter-internal-identifiers",
+      "level": 3,
+      "title": "Handling trace-id for compliant platforms with shorter internal identifiers",
+      "alternateIds": [
+        "x9-3-handling-trace-id-for-compliant-platforms-with-shorter-internal-identifiers"
+      ],
+      "number": "9.3"
+    },
+    {
+      "id": "interoperating-with-existing-systems-which-use-shorter-identifiers",
+      "href": "https://w3c.github.io/trace-context/#interoperating-with-existing-systems-which-use-shorter-identifiers",
+      "level": 3,
+      "title": "Interoperating with existing systems which use shorter identifiers",
+      "alternateIds": [
+        "x9-4-interoperating-with-existing-systems-which-use-shorter-identifiers"
+      ],
+      "number": "9.4"
+    },
+    {
+      "id": "considerations-for-span-id-field-generation",
+      "href": "https://w3c.github.io/trace-context/#considerations-for-span-id-field-generation",
+      "level": 2,
+      "title": "10. Considerations for span-id field generation",
+      "alternateIds": [
+        "x10-considerations-for-span-id-field-generation"
+      ]
+    },
+    {
+      "id": "uniqueness-of-span-id",
+      "href": "https://w3c.github.io/trace-context/#uniqueness-of-span-id",
+      "level": 3,
+      "title": "Uniqueness of span-id",
+      "alternateIds": [
+        "x10-1-uniqueness-of-span-id"
+      ],
+      "number": "10.1"
+    },
+    {
+      "id": "randomness-of-span-id",
+      "href": "https://w3c.github.io/trace-context/#randomness-of-span-id",
+      "level": 3,
+      "title": "Randomness of span-id",
+      "alternateIds": [
+        "x10-2-randomness-of-span-id"
+      ],
+      "number": "10.2"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://w3c.github.io/trace-context/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "alternateIds": [
+        "a-acknowledgments"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "glossary",
+      "href": "https://w3c.github.io/trace-context/#glossary",
+      "level": 2,
+      "title": "Glossary",
+      "alternateIds": [
+        "b-glossary"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/trace-context/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "c-references"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/trace-context/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "c-1-normative-references"
+      ],
+      "number": "C.1"
+    }
+  ]
+}

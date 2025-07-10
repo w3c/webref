@@ -1,0 +1,217 @@
+{
+  "spec": {
+    "title": "Signature-based Integrity",
+    "url": "https://wicg.github.io/signature-based-sri/"
+  },
+  "links": {
+    "rawlinks": {
+      "http://www.w3.org/community/": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://docs.google.com/document/d/1RcUpbpWPxXTyW0Qwczs9GCTLPD3-LcbbhL4ooBUevTM/edit?usp=sharing": {},
+      "https://en.wikipedia.org/wiki/Real_user_monitoring": {},
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "main-fetch",
+          "http-network-or-cache-fetch"
+        ]
+      },
+      "https://github.com/WICG/signature-based-sri/issues/38": {},
+      "https://github.com/WICG/signature-based-sri/issues/41": {},
+      "https://github.com/WICG/signature-based-sri/issues/45": {},
+      "https://github.com/wicg/signature-based-sri/issues/21": {},
+      "https://github.com/wicg/signature-based-sri/issues/34": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://infra.spec.whatwg.org/": {},
+      "https://lpardue.github.io/draft-pardue-http-identity-digest/draft-pardue-httpbis-identity-digest.html": {},
+      "https://rfc-editor.org/rfc/rfc8032": {
+        "anchors": [
+          "section-5.1.7"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {},
+      "https://w3c.github.io/webappsec-csp/": {
+        "anchors": [
+          "external-hash",
+          "multiple-policies",
+          "match-integrity-metadata-to-source-list"
+        ]
+      },
+      "https://w3c.github.io/webappsec-fetch-metadata/": {},
+      "https://w3c.github.io/webappsec-subresource-integrity/": {
+        "anchors": [
+          "get-the-strongest-metadata",
+          "apply-algorithm-to-response",
+          "does-response-match-metadatalist"
+        ]
+      },
+      "https://www.iana.org/assignments/http-message-signature/http-message-signature.xhtml": {
+        "anchors": [
+          "signature-metadata-parameters"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc5234": {},
+      "https://www.rfc-editor.org/rfc/rfc8023": {},
+      "https://www.rfc-editor.org/rfc/rfc8032": {},
+      "https://www.rfc-editor.org/rfc/rfc9421": {},
+      "https://www.rfc-editor.org/rfc/rfc9421.html": {
+        "anchors": [
+          "section-7.3.6",
+          "section-3.3.6",
+          "name-verifying-a-signature",
+          "signature-params",
+          "create-sig-input"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc9651": {},
+      "https://www.w3.org/2001/tag/doc/web-https": {},
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
+    },
+    "autolinks": {
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request-integrity-metadata",
+          "concept-network-error",
+          "concept-header",
+          "concept-header-value",
+          "concept-response",
+          "concept-request",
+          "concept-response-header-list",
+          "fetch-finale",
+          "concept-response-body",
+          "byte-sequence-as-a-body",
+          "concept-request-initiator",
+          "concept-header-list-set-structured-header",
+          "concept-request-header-list",
+          "header-list-contains",
+          "cors-preflight-request",
+          "concept-header-list-append",
+          "cors-safelisted-request-header",
+          "concept-header-list-get-structured-header"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/scripting.html": {
+        "anchors": [
+          "script",
+          "attr-script-integrity"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "the-link-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "secure-context"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "forgiving-base64-encode",
+          "map-is-empty",
+          "map-iterate",
+          "byte-sequence",
+          "list-contain",
+          "list",
+          "byte-sequence-length",
+          "ordered-set",
+          "ascii-lowercase",
+          "ordered-map",
+          "strictly-split",
+          "set-append",
+          "list-empty",
+          "iteration-break",
+          "string",
+          "string-is",
+          "forgiving-base64-decode",
+          "string-concatenate",
+          "iteration-continue",
+          "map-exists",
+          "list-size"
+        ]
+      },
+      "https://lpardue.github.io/draft-pardue-http-identity-digest/draft-pardue-httpbis-identity-digest.html": {
+        "anchors": [
+          "name-the-unencoded-digest-field"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "dfn-unix-epoch",
+          "wall-clock-unsafe-current-time"
+        ]
+      },
+      "https://w3c.github.io/webappsec-csp/": {
+        "anchors": [
+          "grammardef-source-expression",
+          "grammardef-scheme-source",
+          "grammardef-host-source",
+          "grammardef-keyword-source",
+          "grammardef-nonce-source",
+          "grammardef-hash-source",
+          "grammardef-base64-value",
+          "source-lists",
+          "source-expression"
+        ]
+      },
+      "https://w3c.github.io/webappsec-fetch-metadata/": {
+        "anchors": [
+          "abstract-opdef-append-the-fetch-metadata-headers-for-a-request"
+        ]
+      },
+      "https://w3c.github.io/webappsec-subresource-integrity/": {
+        "anchors": [
+          "valid-sri-hash-algorithm-token"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc9110.html": {
+        "anchors": [
+          "name-content-codings",
+          "name-location"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc9421.html": {
+        "anchors": [
+          "name-the-signature-field",
+          "name-the-signature-input-field",
+          "covered-components",
+          "http-field-structured",
+          "signature-params",
+          "section-2.3-4.10",
+          "section-2.3-4.12",
+          "section-2.3-4.8",
+          "name-derived-components",
+          "section-2.4-2.2.1",
+          "name-authority",
+          "name-method",
+          "name-path",
+          "name-query-parameters",
+          "name-query",
+          "name-request-target",
+          "name-scheme",
+          "name-target-uri",
+          "name-status-code",
+          "section-2.3-4.2",
+          "section-2.3-4.4",
+          "name-creating-the-signature-base",
+          "name-the-accept-signature-field"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc9651": {
+        "anchors": [
+          "name-dictionary",
+          "name-introduction",
+          "name-inner-list",
+          "name-parameters",
+          "name-string"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc9651.html": {
+        "anchors": [
+          "text-parse"
+        ]
+      }
+    }
+  }
+}
