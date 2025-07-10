@@ -80,8 +80,42 @@
         "extAttrs": [],
         "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-sframetransformrole"
       },
+      "SFrameCipherSuite": {
+        "fragment": "// List of supported cipher suites, as defined in [[RFC9605]] section 4.5.\nenum SFrameCipherSuite {\n     \"AES_128_CTR_HMAC_SHA256_80\",\n     \"AES_128_CTR_HMAC_SHA256_64\",\n     \"AES_128_CTR_HMAC_SHA256_32\",\n     \"AES_128_GCM_SHA256_128\",\n     \"AES_256_GCM_SHA512_128\"\n};",
+        "type": "enum",
+        "name": "SFrameCipherSuite",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "AES_128_CTR_HMAC_SHA256_80",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeciphersuite-aes_128_ctr_hmac_sha256_80"
+          },
+          {
+            "type": "enum-value",
+            "value": "AES_128_CTR_HMAC_SHA256_64",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeciphersuite-aes_128_ctr_hmac_sha256_64"
+          },
+          {
+            "type": "enum-value",
+            "value": "AES_128_CTR_HMAC_SHA256_32",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeciphersuite-aes_128_ctr_hmac_sha256_32"
+          },
+          {
+            "type": "enum-value",
+            "value": "AES_128_GCM_SHA256_128",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeciphersuite-aes_128_gcm_sha256_128"
+          },
+          {
+            "type": "enum-value",
+            "value": "AES_256_GCM_SHA512_128",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeciphersuite-aes_256_gcm_sha512_128"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-sframeciphersuite"
+      },
       "SFrameTransformOptions": {
-        "fragment": "dictionary SFrameTransformOptions {\n    SFrameTransformRole role = \"encrypt\";\n};",
+        "fragment": "dictionary SFrameTransformOptions {\n    SFrameTransformRole role = \"encrypt\";\n    required SFrameCipherSuite cipherSuite;\n};",
         "type": "dictionary",
         "name": "SFrameTransformOptions",
         "inheritance": null,
@@ -104,6 +138,22 @@
             },
             "required": false,
             "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformoptions-role"
+          },
+          {
+            "type": "field",
+            "name": "cipherSuite",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SFrameCipherSuite"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformoptions-ciphersuite"
           }
         ],
         "extAttrs": [],
@@ -1654,7 +1704,8 @@
         "RTCRtpTransform"
       ],
       "SFrameTransformOptions": [
-        "SFrameTransformRole"
+        "SFrameTransformRole",
+        "SFrameCipherSuite"
       ],
       "SFrameTransform": [
         "EventTarget",

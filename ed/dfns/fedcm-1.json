@@ -1390,48 +1390,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-identityproviderwellknown-accounts_endpoint",
-      "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-accounts_endpoint",
-      "linkingText": [
-        "accounts_endpoint"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "IdentityProviderWellKnown"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "fetch-config-file",
-        "href": "https://w3c-fedid.github.io/FedCM/#fetch-config-file",
-        "title": "Fetch the config file",
-        "number": "2.5.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-identityproviderwellknown-login_url",
-      "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-login_url",
-      "linkingText": [
-        "login_url"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "IdentityProviderWellKnown"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "fetch-config-file",
-        "href": "https://w3c-fedid.github.io/FedCM/#fetch-config-file",
-        "title": "Fetch the config file",
-        "number": "2.5.2"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dictdef-identityprovidericon",
       "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identityprovidericon",
       "linkingText": [
@@ -1489,10 +1447,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-identityproviderapiconfig-supports_use_other_account",
-      "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-supports_use_other_account",
+      "id": "dom-identityproviderapiconfig-client_metadata_endpoint",
+      "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-client_metadata_endpoint",
       "linkingText": [
-        "supports_use_other_account"
+        "client_metadata_endpoint"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -2263,6 +2221,48 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-identityproviderwellknown-accounts_endpoint",
+      "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-accounts_endpoint",
+      "linkingText": [
+        "accounts_endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderWellKnown"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-well-known",
+        "href": "https://w3c-fedid.github.io/FedCM/#idp-api-well-known",
+        "title": "The Well-Known File",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityproviderwellknown-login_url",
+      "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderwellknown-login_url",
+      "linkingText": [
+        "login_url"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderWellKnown"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-well-known",
+        "href": "https://w3c-fedid.github.io/FedCM/#idp-api-well-known",
+        "title": "The Well-Known File",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "config-file",
       "href": "https://w3c-fedid.github.io/FedCM/#config-file",
       "linkingText": [
@@ -2303,52 +2303,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-identityproviderapiconfig-client_metadata_endpoint",
-      "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-client_metadata_endpoint",
-      "linkingText": [
-        "client_metadata_endpoint"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "IdentityProviderAPIConfig"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "idp-api-config-file",
-        "href": "https://w3c-fedid.github.io/FedCM/#idp-api-config-file",
-        "title": "The config file",
-        "number": "3.2"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-identityproviderapiconfig-id_assertion_endpoint",
       "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-id_assertion_endpoint",
       "linkingText": [
         "id_assertion_endpoint"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "IdentityProviderAPIConfig"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "idp-api-config-file",
-        "href": "https://w3c-fedid.github.io/FedCM/#idp-api-config-file",
-        "title": "The config file",
-        "number": "3.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-identityproviderapiconfig-disconnect_endpoint",
-      "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-disconnect_endpoint",
-      "linkingText": [
-        "disconnect_endpoint"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -2387,10 +2345,52 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-identityproviderapiconfig-disconnect_endpoint",
+      "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-disconnect_endpoint",
+      "linkingText": [
+        "disconnect_endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAPIConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-config-file",
+        "href": "https://w3c-fedid.github.io/FedCM/#idp-api-config-file",
+        "title": "The config file",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-identityproviderapiconfig-branding",
       "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-branding",
       "linkingText": [
         "branding"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAPIConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-config-file",
+        "href": "https://w3c-fedid.github.io/FedCM/#idp-api-config-file",
+        "title": "The config file",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityproviderapiconfig-supports_use_other_account",
+      "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderapiconfig-supports_use_other_account",
+      "linkingText": [
+        "supports_use_other_account"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -2420,6 +2420,27 @@
       ],
       "access": "public",
       "informative": false,
+      "heading": {
+        "id": "idp-api-config-file",
+        "href": "https://w3c-fedid.github.io/FedCM/#idp-api-config-file",
+        "title": "The config file",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-id_assertion_endpoint_request-client_metadata_endpoint",
+      "href": "https://w3c-fedid.github.io/FedCM/#dom-id_assertion_endpoint_request-client_metadata_endpoint",
+      "linkingText": [
+        "client_metadata_endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "id_assertion_endpoint_request"
+      ],
+      "access": "public",
+      "informative": true,
       "heading": {
         "id": "idp-api-config-file",
         "href": "https://w3c-fedid.github.io/FedCM/#idp-api-config-file",
@@ -2948,6 +2969,48 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-id_assertion_endpoint_request-is_auto_selected",
+      "href": "https://w3c-fedid.github.io/FedCM/#dom-id_assertion_endpoint_request-is_auto_selected",
+      "linkingText": [
+        "is_auto_selected"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "id_assertion_endpoint_request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-id-assertion-endpoint",
+        "href": "https://w3c-fedid.github.io/FedCM/#idp-api-id-assertion-endpoint",
+        "title": "Identity assertion endpoint",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-id_assertion_endpoint_request-params",
+      "href": "https://w3c-fedid.github.io/FedCM/#dom-id_assertion_endpoint_request-params",
+      "linkingText": [
+        "params"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "id_assertion_endpoint_request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-id-assertion-endpoint",
+        "href": "https://w3c-fedid.github.io/FedCM/#idp-api-id-assertion-endpoint",
+        "title": "Identity assertion endpoint",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-id_assertion_endpoint_request-fields",
       "href": "https://w3c-fedid.github.io/FedCM/#dom-id_assertion_endpoint_request-fields",
       "linkingText": [
@@ -2959,7 +3022,7 @@
         "id_assertion_endpoint_request"
       ],
       "access": "public",
-      "informative": false,
+      "informative": true,
       "heading": {
         "id": "idp-api-id-assertion-endpoint",
         "href": "https://w3c-fedid.github.io/FedCM/#idp-api-id-assertion-endpoint",

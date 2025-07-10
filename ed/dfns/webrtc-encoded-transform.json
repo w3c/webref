@@ -185,6 +185,130 @@
       "definedIn": "pre"
     },
     {
+      "id": "enumdef-sframeciphersuite",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-sframeciphersuite",
+      "linkingText": [
+        "SFrameCipherSuite"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrameTransform",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sframeciphersuite-aes_128_ctr_hmac_sha256_80",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeciphersuite-aes_128_ctr_hmac_sha256_80",
+      "linkingText": [
+        "\"AES_128_CTR_HMAC_SHA256_80\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SFrameCipherSuite"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrameTransform",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sframeciphersuite-aes_128_ctr_hmac_sha256_64",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeciphersuite-aes_128_ctr_hmac_sha256_64",
+      "linkingText": [
+        "\"AES_128_CTR_HMAC_SHA256_64\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SFrameCipherSuite"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrameTransform",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sframeciphersuite-aes_128_ctr_hmac_sha256_32",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeciphersuite-aes_128_ctr_hmac_sha256_32",
+      "linkingText": [
+        "\"AES_128_CTR_HMAC_SHA256_32\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SFrameCipherSuite"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrameTransform",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sframeciphersuite-aes_128_gcm_sha256_128",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeciphersuite-aes_128_gcm_sha256_128",
+      "linkingText": [
+        "\"AES_128_GCM_SHA256_128\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SFrameCipherSuite"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrameTransform",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sframeciphersuite-aes_256_gcm_sha512_128",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeciphersuite-aes_256_gcm_sha512_128",
+      "linkingText": [
+        "\"AES_256_GCM_SHA512_128\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SFrameCipherSuite"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrameTransform",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-sframetransformoptions",
       "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-sframetransformoptions",
       "linkingText": [
@@ -208,6 +332,27 @@
       "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformoptions-role",
       "linkingText": [
         "role"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SFrameTransformOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrameTransform",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sframetransformoptions-ciphersuite",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformoptions-ciphersuite",
+      "linkingText": [
+        "cipherSuite"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1717,49 +1862,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-rtcrtpscripttransformer-readable",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-readable",
-      "linkingText": [
-        "readable"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "RTCRtpScriptTransformer"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "RTCRtpScriptTransformer-interfaces",
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#RTCRtpScriptTransformer-interfaces",
-        "title": "Interfaces",
-        "number": "4.7"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-rtcrtpscripttransformer-generatekeyframe",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-generatekeyframe",
-      "linkingText": [
-        "generateKeyFrame(rid)",
-        "generateKeyFrame()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "RTCRtpScriptTransformer"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "RTCRtpScriptTransformer-interfaces",
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#RTCRtpScriptTransformer-interfaces",
-        "title": "Interfaces",
-        "number": "4.7"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-rtcrtpscripttransformer-generatekeyframe-rid-rid",
       "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-generatekeyframe-rid-rid",
       "linkingText": [
@@ -1770,69 +1872,6 @@
       "for": [
         "RTCRtpScriptTransformer/generateKeyFrame(rid)",
         "RTCRtpScriptTransformer/generateKeyFrame()"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "RTCRtpScriptTransformer-interfaces",
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#RTCRtpScriptTransformer-interfaces",
-        "title": "Interfaces",
-        "number": "4.7"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-rtcrtpscripttransformer-sendkeyframerequest",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-sendkeyframerequest",
-      "linkingText": [
-        "sendKeyFrameRequest()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "RTCRtpScriptTransformer"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "RTCRtpScriptTransformer-interfaces",
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#RTCRtpScriptTransformer-interfaces",
-        "title": "Interfaces",
-        "number": "4.7"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-rtcrtpscripttransformer-writable",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-writable",
-      "linkingText": [
-        "writable"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "RTCRtpScriptTransformer"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "RTCRtpScriptTransformer-interfaces",
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#RTCRtpScriptTransformer-interfaces",
-        "title": "Interfaces",
-        "number": "4.7"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-rtcrtpscripttransformer-onkeyframerequest",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-onkeyframerequest",
-      "linkingText": [
-        "onkeyframerequest"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "RTCRtpScriptTransformer"
       ],
       "access": "public",
       "informative": false,
@@ -2101,15 +2140,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-rtcrtpscripttransform-generatekeyframe",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-generatekeyframe",
+      "id": "dom-rtcrtpscripttransformer-generatekeyframe",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-generatekeyframe",
       "linkingText": [
-        "generateKeyFrame(rid)"
+        "generateKeyFrame(rid)",
+        "generateKeyFrame()"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "RTCRtpScriptTransform"
+        "RTCRtpScriptTransformer"
       ],
       "access": "public",
       "informative": false,
@@ -2122,15 +2162,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-rtcrtpscripttransform-sendkeyframerequest",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-sendkeyframerequest",
+      "id": "dom-rtcrtpscripttransformer-sendkeyframerequest",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-sendkeyframerequest",
       "linkingText": [
         "sendKeyFrameRequest()"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "RTCRtpScriptTransform"
+        "RTCRtpScriptTransformer"
       ],
       "access": "public",
       "informative": false,
@@ -2164,15 +2204,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-rtcrtpscripttransform-readable",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-readable",
+      "id": "dom-rtcrtpscripttransformer-readable",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-readable",
       "linkingText": [
         "readable"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "RTCRtpScriptTransform"
+        "RTCRtpScriptTransformer"
       ],
       "access": "public",
       "informative": false,
@@ -2185,15 +2225,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-rtcrtpscripttransform-writable",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-writable",
+      "id": "dom-rtcrtpscripttransformer-writable",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-writable",
       "linkingText": [
         "writable"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "RTCRtpScriptTransform"
+        "RTCRtpScriptTransformer"
       ],
       "access": "public",
       "informative": false,
@@ -2206,15 +2246,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-rtcrtpscripttransform-onbandwidthestimate",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-onbandwidthestimate",
+      "id": "dom-rtcrtpscripttransformer-onbandwidthestimate",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-onbandwidthestimate",
       "linkingText": [
         "onbandwidthestimate"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "RTCRtpScriptTransform"
+        "RTCRtpScriptTransformer"
       ],
       "access": "public",
       "informative": false,
@@ -2227,15 +2267,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-rtcrtpscripttransform-onkeyframerequest",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-onkeyframerequest",
+      "id": "dom-rtcrtpscripttransformer-onkeyframerequest",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-onkeyframerequest",
       "linkingText": [
         "onkeyframerequest"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "RTCRtpScriptTransform"
+        "RTCRtpScriptTransformer"
       ],
       "access": "public",
       "informative": false,
