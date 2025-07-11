@@ -580,10 +580,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>namespace</var> is a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-module-namespace-exotic-objects\" id=\"ref-for-sec-module-namespace-exotic-objects\">Module Namespace exotic object</a>.</p>"
+          "html": "<p>If <var>namespace</var> is not a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-module-namespace-exotic-objects\" id=\"ref-for-sec-module-namespace-exotic-objects\">Module Namespace exotic object</a> with a [[Module]] internal slot, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②\">TypeError</a></code> exception.</p>"
         },
         {
-          "html": "<p>If <var>namespace</var>.[[Module]] is not a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#webassembly-module-record\" id=\"ref-for-webassembly-module-record①\">WebAssembly Module Record</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②\">TypeError</a></code> exception.</p>"
+          "html": "<p>If <var>namespace</var>.[[Module]] is not a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#webassembly-module-record\" id=\"ref-for-webassembly-module-record①\">WebAssembly Module Record</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror③\">TypeError</a></code> exception.</p>"
         },
         {
           "html": "<p>Let <var>module</var> be <var>namespace</var>.[[Module]].</p>"
@@ -1214,7 +1214,7 @@
           "rationale": "throw",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">Throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror③\">TypeError</a></code> exception.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">Throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror④\">TypeError</a></code> exception.</p>"
             }
           ]
         },
@@ -1523,7 +1523,7 @@
           "rationale": "throw",
           "steps": [
             {
-              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror④\">TypeError</a></code> exception.</p>"
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror⑤\">TypeError</a></code> exception.</p>"
             }
           ]
         },
@@ -1578,7 +1578,7 @@
           "html": "<p>Let <var>globaltype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-type\" id=\"ref-for-embed-global-type\">global_type</a>(<var>store</var>, <var>globaladdr</var>).</p>"
         },
         {
-          "html": "<p>If <var>globaltype</var> is of the form <var>mut</var> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types③\">v128</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror⑤\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>globaltype</var> is of the form <var>mut</var> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types③\">v128</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror⑥\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-read\" id=\"ref-for-embed-global-read\">global_read</a>(<var>store</var>, <var>globaladdr</var>).</p>"
@@ -1615,10 +1615,10 @@
           "html": "<p>Let <var>mut</var> <var>valuetype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-type\" id=\"ref-for-embed-global-type①\">global_type</a>(<var>store</var>, <var>globaladdr</var>).</p>"
         },
         {
-          "html": "<p>If <var>valuetype</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types④\">v128</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror⑥\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>valuetype</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types④\">v128</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror⑦\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>mut</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-mut\" id=\"ref-for-syntax-mut③\">const</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror⑦\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>mut</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-mut\" id=\"ref-for-syntax-mut③\">const</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror⑧\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑥\">ToWebAssemblyValue</a>(<strong>the given value</strong>, <var>valuetype</var>).</p>"
@@ -1758,7 +1758,7 @@
           "html": "<p>Let [<var>parameters</var>] → [<var>results</var>] be <var>functype</var>.</p>"
         },
         {
-          "html": "<p>If <var>parameters</var> or <var>results</var> contain <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types⑤\">v128</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror⑧\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>parameters</var> or <var>results</var> contain <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types⑤\">v128</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror⑨\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>args</var> be « ».</p>"
@@ -1835,7 +1835,7 @@
           "html": "<p>Let [<var>parameters</var>] → [<var>results</var>] be <var>functype</var>.</p>"
         },
         {
-          "html": "<p>If <var>parameters</var> or <var>results</var> contain <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types⑥\">v128</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror⑨\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>parameters</var> or <var>results</var> contain <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types⑥\">v128</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①⓪\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>jsArguments</var> be « ».</p>"
@@ -1869,7 +1869,7 @@
               "html": "<p>Let <var>method</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑥\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getmethod\" id=\"ref-for-sec-getmethod\">GetMethod</a>(<var>ret</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-well-known-symbols\" id=\"ref-for-sec-well-known-symbols\">%Symbol.iterator%</a></code>).</p>"
             },
             {
-              "html": "<p>If <var>method</var> is undefined, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①⓪\">TypeError</a></code>.</p>"
+              "html": "<p>If <var>method</var> is undefined, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①①\">TypeError</a></code>.</p>"
             },
             {
               "html": "<p>Let <var>values</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑦\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratortolist\" id=\"ref-for-sec-iteratortolist\">IteratorToList</a>(<a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑧\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiteratorfrommethod\" id=\"ref-for-sec-getiteratorfrommethod\">GetIteratorFromMethod</a>(<var>ret</var>, <var>method</var>)).</p>"
@@ -1878,7 +1878,7 @@
               "html": "<p>Let <var>wasmValues</var> be a new, empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a>.</p>"
             },
             {
-              "html": "<p>If <var>values</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size④\">size</a> is not <var>resultsSize</var>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①①\">TypeError</a></code> exception.</p>"
+              "html": "<p>If <var>values</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size④\">size</a> is not <var>resultsSize</var>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①②\">TypeError</a></code> exception.</p>"
             },
             {
               "html": "For each <var>value</var> and <var>resultType</var> in <var>values</var> and <var>results</var>, paired linearly,",
@@ -2165,7 +2165,7 @@
               ]
             },
             {
-              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①②\">TypeError</a></code>.</p>"
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①③\">TypeError</a></code>.</p>"
             }
           ]
         },

@@ -33,10 +33,10 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>c1xyz</var> be <var>c1</var> converted to D65 CIE XYZ</p>"
+          "html": "<p>Let <var>c1xyz</var> be <var>c1</var> converted to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-hdr-1/#absolute-d65-cie-xyz\" id=\"ref-for-absolute-d65-cie-xyz\">Absolute D65 CIE XYZ</a></p>"
         },
         {
-          "html": "<p>Let <var>c2xyz</var> be <var>c2</var> converted to D65 CIE XYZ</p>"
+          "html": "<p>Let <var>c2xyz</var> be <var>c2</var> converted to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-hdr-1/#absolute-d65-cie-xyz\" id=\"ref-for-absolute-d65-cie-xyz①\">Absolute D65 CIE XYZ</a></p>"
         },
         {
           "html": "<p>Let <var> w1</var> = clamp((<var>H</var> - <var>H2</var>) / (<var>H1</var> - <var>H2</var>), 0, 1)</p>"
@@ -48,7 +48,10 @@
           "html": "<p>Let <var>eps</var> = 0.001 (one JND in linear-light space)</p>"
         },
         {
-          "html": "<p>Let <var>cxyz</var> = pow(<var>c1xyz</var> + <var>eps</var>, <var>w1</var>) * pow(<var>c2xyz</var> + <var>eps</var>, <var>w2</var>) - <var>eps</var></p>"
+          "html": "<p>Let <var>cxyz</var> = Array(3)</p>"
+        },
+        {
+          "html": "<p>For i from 0 to 2:\nLet <var>cxyz</var>[i] = pow(<var>c1xyz</var>[i] + <var>eps</var>, <var>w1</var> ) * pow(<var>c2xyz</var>[i] + <var>eps</var>, <var>w2</var> ) - <var>eps</var></p>"
         }
       ]
     }

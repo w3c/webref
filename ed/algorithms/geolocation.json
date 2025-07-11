@@ -230,7 +230,7 @@
                           "rationale": "call",
                           "steps": [
                             {
-                              "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-call-back-with-error\" class=\"internalDFN\" id=\"ref-for-dfn-call-back-with-error-6\">Call back with error</a> passing <var data-type=\"PositionErrorCallback?\">errorCallback</var> and\n                                  <var>emulatedPositionData</var>."
+                              "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-call-back-with-error\" class=\"internalDFN\" id=\"ref-for-dfn-call-back-with-error-6\">Call back with error</a> passing <var data-type=\"PositionErrorCallback?\">errorCallback</var> and\n                                  <var>emulatedPositionData</var>.<a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-geolocationpositionerror-code\" class=\"internalDFN\" id=\"ref-for-dom-geolocationpositionerror-code-1\"><code>code</code></a>."
                             },
                             {
                               "html": "Terminate this algorithm."
@@ -380,7 +380,7 @@
           "html": "If <var data-type=\"PositionErrorCallback?\">callback</var> is null, return."
         },
         {
-          "html": "Let <var data-type=\"GeolocationPositionError\">error</var> be a newly created\n          <a data-link-type=\"idl\" data-lt=\"GeolocationPositionError\" href=\"https://w3c.github.io/geolocation/#dom-geolocationpositionerror\" class=\"internalDFN\" id=\"ref-for-dom-geolocationpositionerror-5\"><code>GeolocationPositionError</code></a> instance whose\n          <a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-geolocationpositionerror-code\" class=\"internalDFN\" id=\"ref-for-dom-geolocationpositionerror-code-1\"><code>code</code></a> attribute is initialized to <var data-type=\"unsigned short\">code</var>."
+          "html": "Let <var data-type=\"GeolocationPositionError\">error</var> be a newly created\n          <a data-link-type=\"idl\" data-lt=\"GeolocationPositionError\" href=\"https://w3c.github.io/geolocation/#dom-geolocationpositionerror\" class=\"internalDFN\" id=\"ref-for-dom-geolocationpositionerror-5\"><code>GeolocationPositionError</code></a> instance whose\n          <a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-geolocationpositionerror-code\" class=\"internalDFN\" id=\"ref-for-dom-geolocationpositionerror-code-2\"><code>code</code></a> attribute is initialized to <var data-type=\"unsigned short\">code</var>."
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-index-term-queue-a-task-4\">Queue a task</a> on the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-geolocation-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-geolocation-task-source-4\">geolocation task source</a> with a step\n          that <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-index-term-invokes-4\">invokes</a> <var data-type=\"PositionErrorCallback?\">callback</var> with « <var data-type=\"GeolocationPositionError\">error</var> » and \"<code>report</code>\"."
