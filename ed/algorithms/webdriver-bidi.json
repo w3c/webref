@@ -7086,7 +7086,7 @@
               "html": "<p>Let <var>params</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#process-a-network-event\" id=\"ref-for-process-a-network-event②\">process a network event</a> with <var>session</var>\n \"<code>network.fetchError</code>\", and <var>request</var>.</p>"
             },
             {
-              "html": "<p>TODO: Set the <code>errorText</code> field of <var>params</var>.</p>"
+              "html": "<p>Set the <code>errorText</code> field of <var>params</var> to an implementation-defined string\n describing the error which caused the request to be aborted.</p>"
             },
             {
               "html": "<p class=\"assertion\">Assert: <var>params</var> matches the <code>network.FetchErrorParameters</code>\n production.</p>"
