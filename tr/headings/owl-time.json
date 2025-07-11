@@ -1,0 +1,1323 @@
+{
+  "spec": {
+    "title": "Time Ontology in OWL",
+    "url": "https://www.w3.org/TR/owl-time/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/owl-time/#title",
+      "level": 1,
+      "title": "Time Ontology in OWL"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/owl-time/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "motivation",
+      "href": "https://www.w3.org/TR/owl-time/#motivation",
+      "level": 2,
+      "title": "Motivation and background",
+      "alternateIds": [
+        "x1-motivation-and-background"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "namespaces",
+      "href": "https://www.w3.org/TR/owl-time/#namespaces",
+      "level": 2,
+      "title": "Notation and namespaces",
+      "alternateIds": [
+        "x2-notation-and-namespaces"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "overview",
+      "href": "https://www.w3.org/TR/owl-time/#overview",
+      "level": 2,
+      "title": "Principles and vocabulary overview",
+      "alternateIds": [
+        "x3-principles-and-vocabulary-overview"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "topology",
+      "href": "https://www.w3.org/TR/owl-time/#topology",
+      "level": 3,
+      "title": "Topological Temporal Relations",
+      "alternateIds": [
+        "x3-1-topological-temporal-relations"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "trs-clock-calendar",
+      "href": "https://www.w3.org/TR/owl-time/#trs-clock-calendar",
+      "level": 3,
+      "title": "Temporal reference systems, clocks, calendars",
+      "alternateIds": [
+        "x3-2-temporal-reference-systems-clocks-calendars"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "time-position",
+      "href": "https://www.w3.org/TR/owl-time/#time-position",
+      "level": 3,
+      "title": "Time position",
+      "alternateIds": [
+        "x3-3-time-position"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "duration",
+      "href": "https://www.w3.org/TR/owl-time/#duration",
+      "level": 3,
+      "title": "Duration",
+      "alternateIds": [
+        "x3-4-duration"
+      ],
+      "number": "3.4"
+    },
+    {
+      "id": "vocabulary",
+      "href": "https://www.w3.org/TR/owl-time/#vocabulary",
+      "level": 2,
+      "title": "Vocabulary specification",
+      "alternateIds": [
+        "x4-vocabulary-specification"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "classes",
+      "href": "https://www.w3.org/TR/owl-time/#classes",
+      "level": 3,
+      "title": "Classes",
+      "alternateIds": [
+        "x4-1-classes"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "date-time-description",
+      "href": "https://www.w3.org/TR/owl-time/#date-time-description",
+      "level": 4,
+      "title": "Date-time description",
+      "alternateIds": [
+        "time:DateTimeDescription"
+      ],
+      "number": "4.1.1"
+    },
+    {
+      "id": "date-time-interval",
+      "href": "https://www.w3.org/TR/owl-time/#date-time-interval",
+      "level": 4,
+      "title": "Date-time interval",
+      "alternateIds": [
+        "time:DateTimeInterval"
+      ],
+      "number": "4.1.2"
+    },
+    {
+      "id": "day-of-week",
+      "href": "https://www.w3.org/TR/owl-time/#day-of-week",
+      "level": 4,
+      "title": "Day of week",
+      "alternateIds": [
+        "time:DayOfWeek"
+      ],
+      "number": "4.1.3"
+    },
+    {
+      "id": "duration-0",
+      "href": "https://www.w3.org/TR/owl-time/#duration-0",
+      "level": 4,
+      "title": "Duration",
+      "alternateIds": [
+        "time:Duration"
+      ],
+      "number": "4.1.4"
+    },
+    {
+      "id": "duration-description",
+      "href": "https://www.w3.org/TR/owl-time/#duration-description",
+      "level": 4,
+      "title": "Duration description",
+      "alternateIds": [
+        "time:DurationDescription"
+      ],
+      "number": "4.1.5"
+    },
+    {
+      "id": "generalized-date-time-description",
+      "href": "https://www.w3.org/TR/owl-time/#generalized-date-time-description",
+      "level": 4,
+      "title": "Generalized date-time description",
+      "alternateIds": [
+        "time:GeneralDateTimeDescription"
+      ],
+      "number": "4.1.6"
+    },
+    {
+      "id": "generalized-duration-description",
+      "href": "https://www.w3.org/TR/owl-time/#generalized-duration-description",
+      "level": 4,
+      "title": "Generalized duration description",
+      "alternateIds": [
+        "time:GeneralDurationDescription"
+      ],
+      "number": "4.1.7"
+    },
+    {
+      "id": "time-instant",
+      "href": "https://www.w3.org/TR/owl-time/#time-instant",
+      "level": 4,
+      "title": "Time instant",
+      "alternateIds": [
+        "time:Instant"
+      ],
+      "number": "4.1.8"
+    },
+    {
+      "id": "time-interval",
+      "href": "https://www.w3.org/TR/owl-time/#time-interval",
+      "level": 4,
+      "title": "Time interval",
+      "alternateIds": [
+        "time:Interval"
+      ],
+      "number": "4.1.9"
+    },
+    {
+      "id": "month-of-year",
+      "href": "https://www.w3.org/TR/owl-time/#month-of-year",
+      "level": 4,
+      "title": "Month of year",
+      "alternateIds": [
+        "time:MonthOfYear"
+      ],
+      "number": "4.1.10"
+    },
+    {
+      "id": "proper-interval",
+      "href": "https://www.w3.org/TR/owl-time/#proper-interval",
+      "level": 4,
+      "title": "Proper interval",
+      "alternateIds": [
+        "time:ProperInterval"
+      ],
+      "number": "4.1.11"
+    },
+    {
+      "id": "temporal-duration",
+      "href": "https://www.w3.org/TR/owl-time/#temporal-duration",
+      "level": 4,
+      "title": "Temporal duration",
+      "alternateIds": [
+        "time:TemporalDuration"
+      ],
+      "number": "4.1.12"
+    },
+    {
+      "id": "temporal-entity",
+      "href": "https://www.w3.org/TR/owl-time/#temporal-entity",
+      "level": 4,
+      "title": "Temporal entity",
+      "alternateIds": [
+        "time:TemporalEntity"
+      ],
+      "number": "4.1.13"
+    },
+    {
+      "id": "temporal-position",
+      "href": "https://www.w3.org/TR/owl-time/#temporal-position",
+      "level": 4,
+      "title": "Temporal position",
+      "alternateIds": [
+        "time:TemporalPosition"
+      ],
+      "number": "4.1.14"
+    },
+    {
+      "id": "temporal-unit",
+      "href": "https://www.w3.org/TR/owl-time/#temporal-unit",
+      "level": 4,
+      "title": "Temporal unit",
+      "alternateIds": [
+        "time:TemporalUnit"
+      ],
+      "number": "4.1.15"
+    },
+    {
+      "id": "time-position-0",
+      "href": "https://www.w3.org/TR/owl-time/#time-position-0",
+      "level": 4,
+      "title": "Time position",
+      "alternateIds": [
+        "time:TimePosition"
+      ],
+      "number": "4.1.16"
+    },
+    {
+      "id": "time-zone",
+      "href": "https://www.w3.org/TR/owl-time/#time-zone",
+      "level": 4,
+      "title": "Time-zone",
+      "alternateIds": [
+        "time:TimeZone"
+      ],
+      "number": "4.1.17"
+    },
+    {
+      "id": "temporal-reference-system",
+      "href": "https://www.w3.org/TR/owl-time/#temporal-reference-system",
+      "level": 4,
+      "title": "Temporal reference system",
+      "alternateIds": [
+        "time:TRS"
+      ],
+      "number": "4.1.18"
+    },
+    {
+      "id": "properties",
+      "href": "https://www.w3.org/TR/owl-time/#properties",
+      "level": 3,
+      "title": "Properties",
+      "alternateIds": [
+        "x4-2-properties"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "is-after",
+      "href": "https://www.w3.org/TR/owl-time/#is-after",
+      "level": 4,
+      "title": "is after",
+      "alternateIds": [
+        "time:after"
+      ],
+      "number": "4.2.1"
+    },
+    {
+      "id": "is-before",
+      "href": "https://www.w3.org/TR/owl-time/#is-before",
+      "level": 4,
+      "title": "is before",
+      "alternateIds": [
+        "time:before"
+      ],
+      "number": "4.2.2"
+    },
+    {
+      "id": "day",
+      "href": "https://www.w3.org/TR/owl-time/#day",
+      "level": 4,
+      "title": "day",
+      "alternateIds": [
+        "time:day"
+      ],
+      "number": "4.2.3"
+    },
+    {
+      "id": "day-of-week-0",
+      "href": "https://www.w3.org/TR/owl-time/#day-of-week-0",
+      "level": 4,
+      "title": "day of week",
+      "alternateIds": [
+        "time:dayOfWeek"
+      ],
+      "number": "4.2.4"
+    },
+    {
+      "id": "day-of-year",
+      "href": "https://www.w3.org/TR/owl-time/#day-of-year",
+      "level": 4,
+      "title": "day of year",
+      "alternateIds": [
+        "time:dayOfYear"
+      ],
+      "number": "4.2.5"
+    },
+    {
+      "id": "days-duration",
+      "href": "https://www.w3.org/TR/owl-time/#days-duration",
+      "level": 4,
+      "title": "days duration",
+      "alternateIds": [
+        "time:days"
+      ],
+      "number": "4.2.6"
+    },
+    {
+      "id": "has-beginning",
+      "href": "https://www.w3.org/TR/owl-time/#has-beginning",
+      "level": 4,
+      "title": "has beginning",
+      "alternateIds": [
+        "time:hasBeginning"
+      ],
+      "number": "4.2.7"
+    },
+    {
+      "id": "has-date-time-description",
+      "href": "https://www.w3.org/TR/owl-time/#has-date-time-description",
+      "level": 4,
+      "title": "has date-time description",
+      "alternateIds": [
+        "time:hasDateTimeDescription"
+      ],
+      "number": "4.2.8"
+    },
+    {
+      "id": "has-duration",
+      "href": "https://www.w3.org/TR/owl-time/#has-duration",
+      "level": 4,
+      "title": "has duration",
+      "alternateIds": [
+        "time:hasDuration"
+      ],
+      "number": "4.2.9"
+    },
+    {
+      "id": "has-duration-description",
+      "href": "https://www.w3.org/TR/owl-time/#has-duration-description",
+      "level": 4,
+      "title": "has duration description",
+      "alternateIds": [
+        "time:hasDurationDescription"
+      ],
+      "number": "4.2.10"
+    },
+    {
+      "id": "has-end",
+      "href": "https://www.w3.org/TR/owl-time/#has-end",
+      "level": 4,
+      "title": "has end",
+      "alternateIds": [
+        "time:hasEnd"
+      ],
+      "number": "4.2.11"
+    },
+    {
+      "id": "has-temporal-duration",
+      "href": "https://www.w3.org/TR/owl-time/#has-temporal-duration",
+      "level": 4,
+      "title": "has temporal duration",
+      "alternateIds": [
+        "time:hasTemporalDuration"
+      ],
+      "number": "4.2.12"
+    },
+    {
+      "id": "has-time",
+      "href": "https://www.w3.org/TR/owl-time/#has-time",
+      "level": 4,
+      "title": "has time",
+      "alternateIds": [
+        "time:hasTime"
+      ],
+      "number": "4.2.13"
+    },
+    {
+      "id": "temporal-reference-system-used",
+      "href": "https://www.w3.org/TR/owl-time/#temporal-reference-system-used",
+      "level": 4,
+      "title": "temporal reference system used",
+      "alternateIds": [
+        "time:hasTRS"
+      ],
+      "number": "4.2.14"
+    },
+    {
+      "id": "has-xsd-duration",
+      "href": "https://www.w3.org/TR/owl-time/#has-xsd-duration",
+      "level": 4,
+      "title": "has XSD duration",
+      "alternateIds": [
+        "time:hasXSDDuration"
+      ],
+      "number": "4.2.15"
+    },
+    {
+      "id": "hour",
+      "href": "https://www.w3.org/TR/owl-time/#hour",
+      "level": 4,
+      "title": "hour",
+      "alternateIds": [
+        "time:hour"
+      ],
+      "number": "4.2.16"
+    },
+    {
+      "id": "hours-duration",
+      "href": "https://www.w3.org/TR/owl-time/#hours-duration",
+      "level": 4,
+      "title": "hours duration",
+      "alternateIds": [
+        "time:hours"
+      ],
+      "number": "4.2.17"
+    },
+    {
+      "id": "in-date-time-description",
+      "href": "https://www.w3.org/TR/owl-time/#in-date-time-description",
+      "level": 4,
+      "title": "in date-time description",
+      "alternateIds": [
+        "time:inDateTime"
+      ],
+      "number": "4.2.18"
+    },
+    {
+      "id": "has-time-instant-inside",
+      "href": "https://www.w3.org/TR/owl-time/#has-time-instant-inside",
+      "level": 4,
+      "title": "has time instant inside",
+      "alternateIds": [
+        "time:inside"
+      ],
+      "number": "4.2.19"
+    },
+    {
+      "id": "temporal-position-0",
+      "href": "https://www.w3.org/TR/owl-time/#temporal-position-0",
+      "level": 4,
+      "title": "temporal position",
+      "alternateIds": [
+        "time:inTemporalPosition"
+      ],
+      "number": "4.2.20"
+    },
+    {
+      "id": "interval-after",
+      "href": "https://www.w3.org/TR/owl-time/#interval-after",
+      "level": 4,
+      "title": "interval after",
+      "alternateIds": [
+        "time:intervalAfter"
+      ],
+      "number": "4.2.21"
+    },
+    {
+      "id": "interval-before",
+      "href": "https://www.w3.org/TR/owl-time/#interval-before",
+      "level": 4,
+      "title": "interval before",
+      "alternateIds": [
+        "time:intervalBefore"
+      ],
+      "number": "4.2.22"
+    },
+    {
+      "id": "interval-contains",
+      "href": "https://www.w3.org/TR/owl-time/#interval-contains",
+      "level": 4,
+      "title": "interval contains",
+      "alternateIds": [
+        "time:intervalContains"
+      ],
+      "number": "4.2.23"
+    },
+    {
+      "id": "interval-disjoint",
+      "href": "https://www.w3.org/TR/owl-time/#interval-disjoint",
+      "level": 4,
+      "title": "interval disjoint",
+      "alternateIds": [
+        "time:intervalDisjoint"
+      ],
+      "number": "4.2.24"
+    },
+    {
+      "id": "interval-during",
+      "href": "https://www.w3.org/TR/owl-time/#interval-during",
+      "level": 4,
+      "title": "interval during",
+      "alternateIds": [
+        "time:intervalDuring"
+      ],
+      "number": "4.2.25"
+    },
+    {
+      "id": "interval-equals",
+      "href": "https://www.w3.org/TR/owl-time/#interval-equals",
+      "level": 4,
+      "title": "interval equals",
+      "alternateIds": [
+        "time:intervalEquals"
+      ],
+      "number": "4.2.26"
+    },
+    {
+      "id": "interval-finished-by",
+      "href": "https://www.w3.org/TR/owl-time/#interval-finished-by",
+      "level": 4,
+      "title": "interval finished by",
+      "alternateIds": [
+        "time:intervalFinishedBy"
+      ],
+      "number": "4.2.27"
+    },
+    {
+      "id": "interval-finishes",
+      "href": "https://www.w3.org/TR/owl-time/#interval-finishes",
+      "level": 4,
+      "title": "interval finishes",
+      "alternateIds": [
+        "time:intervalFinishes"
+      ],
+      "number": "4.2.28"
+    },
+    {
+      "id": "interval-in",
+      "href": "https://www.w3.org/TR/owl-time/#interval-in",
+      "level": 4,
+      "title": "interval in",
+      "alternateIds": [
+        "time:intervalIn"
+      ],
+      "number": "4.2.29"
+    },
+    {
+      "id": "interval-meets",
+      "href": "https://www.w3.org/TR/owl-time/#interval-meets",
+      "level": 4,
+      "title": "interval meets",
+      "alternateIds": [
+        "time:intervalMeets"
+      ],
+      "number": "4.2.30"
+    },
+    {
+      "id": "interval-met-by",
+      "href": "https://www.w3.org/TR/owl-time/#interval-met-by",
+      "level": 4,
+      "title": "interval met by",
+      "alternateIds": [
+        "time:intervalMetBy"
+      ],
+      "number": "4.2.31"
+    },
+    {
+      "id": "interval-overlapped-by",
+      "href": "https://www.w3.org/TR/owl-time/#interval-overlapped-by",
+      "level": 4,
+      "title": "interval overlapped by",
+      "alternateIds": [
+        "time:intervalOverlappedBy"
+      ],
+      "number": "4.2.32"
+    },
+    {
+      "id": "interval-overlaps",
+      "href": "https://www.w3.org/TR/owl-time/#interval-overlaps",
+      "level": 4,
+      "title": "interval overlaps",
+      "alternateIds": [
+        "time:intervalOverlaps"
+      ],
+      "number": "4.2.33"
+    },
+    {
+      "id": "interval-started-by",
+      "href": "https://www.w3.org/TR/owl-time/#interval-started-by",
+      "level": 4,
+      "title": "interval started by",
+      "alternateIds": [
+        "time:intervalStartedBy"
+      ],
+      "number": "4.2.34"
+    },
+    {
+      "id": "interval-starts",
+      "href": "https://www.w3.org/TR/owl-time/#interval-starts",
+      "level": 4,
+      "title": "interval starts",
+      "alternateIds": [
+        "time:intervalStarts"
+      ],
+      "number": "4.2.35"
+    },
+    {
+      "id": "time-position-1",
+      "href": "https://www.w3.org/TR/owl-time/#time-position-1",
+      "level": 4,
+      "title": "time position",
+      "alternateIds": [
+        "time:inTimePosition"
+      ],
+      "number": "4.2.36"
+    },
+    {
+      "id": "in-xsd-date",
+      "href": "https://www.w3.org/TR/owl-time/#in-xsd-date",
+      "level": 4,
+      "title": "in XSD date",
+      "alternateIds": [
+        "time:inXSDDate"
+      ],
+      "number": "4.2.37"
+    },
+    {
+      "id": "in-xsd-date-time",
+      "href": "https://www.w3.org/TR/owl-time/#in-xsd-date-time",
+      "level": 4,
+      "title": "in XSD date-time",
+      "alternateIds": [
+        "time:inXSDDateTime"
+      ],
+      "number": "4.2.38"
+    },
+    {
+      "id": "in-xsd-date-time-stamp",
+      "href": "https://www.w3.org/TR/owl-time/#in-xsd-date-time-stamp",
+      "level": 4,
+      "title": "in XSD date-time-stamp",
+      "alternateIds": [
+        "time:inXSDDateTimeStamp"
+      ],
+      "number": "4.2.39"
+    },
+    {
+      "id": "in-xsd-gyear",
+      "href": "https://www.w3.org/TR/owl-time/#in-xsd-gyear",
+      "level": 4,
+      "title": "in XSD gYear",
+      "alternateIds": [
+        "time:inXSDgYear"
+      ],
+      "number": "4.2.40"
+    },
+    {
+      "id": "in-xsd-gyearmonth",
+      "href": "https://www.w3.org/TR/owl-time/#in-xsd-gyearmonth",
+      "level": 4,
+      "title": "in XSD gYearMonth",
+      "alternateIds": [
+        "time:inXSDgYearMonth"
+      ],
+      "number": "4.2.41"
+    },
+    {
+      "id": "minute",
+      "href": "https://www.w3.org/TR/owl-time/#minute",
+      "level": 4,
+      "title": "minute",
+      "alternateIds": [
+        "time:minute"
+      ],
+      "number": "4.2.42"
+    },
+    {
+      "id": "minutes-duration",
+      "href": "https://www.w3.org/TR/owl-time/#minutes-duration",
+      "level": 4,
+      "title": "minutes duration",
+      "alternateIds": [
+        "time:minutes"
+      ],
+      "number": "4.2.43"
+    },
+    {
+      "id": "month",
+      "href": "https://www.w3.org/TR/owl-time/#month",
+      "level": 4,
+      "title": "month",
+      "alternateIds": [
+        "time:month"
+      ],
+      "number": "4.2.44"
+    },
+    {
+      "id": "month-of-year-0",
+      "href": "https://www.w3.org/TR/owl-time/#month-of-year-0",
+      "level": 4,
+      "title": "month of year",
+      "alternateIds": [
+        "time:monthOfYear"
+      ],
+      "number": "4.2.45"
+    },
+    {
+      "id": "months-duration",
+      "href": "https://www.w3.org/TR/owl-time/#months-duration",
+      "level": 4,
+      "title": "months duration",
+      "alternateIds": [
+        "time:months"
+      ],
+      "number": "4.2.46"
+    },
+    {
+      "id": "name-of-temporal-position",
+      "href": "https://www.w3.org/TR/owl-time/#name-of-temporal-position",
+      "level": 4,
+      "title": "name of temporal position",
+      "alternateIds": [
+        "time:nominalPosition"
+      ],
+      "number": "4.2.47"
+    },
+    {
+      "id": "numeric-value-of-temporal-duration",
+      "href": "https://www.w3.org/TR/owl-time/#numeric-value-of-temporal-duration",
+      "level": 4,
+      "title": "numeric value of temporal duration",
+      "alternateIds": [
+        "time:numericDuration"
+      ],
+      "number": "4.2.48"
+    },
+    {
+      "id": "numeric-value-of-temporal-position",
+      "href": "https://www.w3.org/TR/owl-time/#numeric-value-of-temporal-position",
+      "level": 4,
+      "title": "numeric value of temporal position",
+      "alternateIds": [
+        "time:numericPosition"
+      ],
+      "number": "4.2.49"
+    },
+    {
+      "id": "second",
+      "href": "https://www.w3.org/TR/owl-time/#second",
+      "level": 4,
+      "title": "second",
+      "alternateIds": [
+        "time:second"
+      ],
+      "number": "4.2.50"
+    },
+    {
+      "id": "seconds-duration",
+      "href": "https://www.w3.org/TR/owl-time/#seconds-duration",
+      "level": 4,
+      "title": "seconds duration",
+      "alternateIds": [
+        "time:seconds"
+      ],
+      "number": "4.2.51"
+    },
+    {
+      "id": "in-time-zone",
+      "href": "https://www.w3.org/TR/owl-time/#in-time-zone",
+      "level": 4,
+      "title": "in time zone",
+      "alternateIds": [
+        "time:timeZone"
+      ],
+      "number": "4.2.52"
+    },
+    {
+      "id": "temporal-unit-type",
+      "href": "https://www.w3.org/TR/owl-time/#temporal-unit-type",
+      "level": 4,
+      "title": "temporal unit type",
+      "alternateIds": [
+        "time:unitType"
+      ],
+      "number": "4.2.53"
+    },
+    {
+      "id": "week",
+      "href": "https://www.w3.org/TR/owl-time/#week",
+      "level": 4,
+      "title": "week",
+      "alternateIds": [
+        "time:week"
+      ],
+      "number": "4.2.54"
+    },
+    {
+      "id": "weeks-duration",
+      "href": "https://www.w3.org/TR/owl-time/#weeks-duration",
+      "level": 4,
+      "title": "weeks duration",
+      "alternateIds": [
+        "time:weeks"
+      ],
+      "number": "4.2.55"
+    },
+    {
+      "id": "has-xsd-date-time",
+      "href": "https://www.w3.org/TR/owl-time/#has-xsd-date-time",
+      "level": 4,
+      "title": "has XSD date-time",
+      "alternateIds": [
+        "time:xsdDateTime"
+      ],
+      "number": "4.2.56"
+    },
+    {
+      "id": "year",
+      "href": "https://www.w3.org/TR/owl-time/#year",
+      "level": 4,
+      "title": "year",
+      "alternateIds": [
+        "time:year"
+      ],
+      "number": "4.2.57"
+    },
+    {
+      "id": "years-duration",
+      "href": "https://www.w3.org/TR/owl-time/#years-duration",
+      "level": 4,
+      "title": "years duration",
+      "alternateIds": [
+        "time:years"
+      ],
+      "number": "4.2.58"
+    },
+    {
+      "id": "Datatypes",
+      "href": "https://www.w3.org/TR/owl-time/#Datatypes",
+      "level": 3,
+      "title": "Datatypes",
+      "alternateIds": [
+        "x4-3-datatypes"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "generalday",
+      "href": "https://www.w3.org/TR/owl-time/#generalday",
+      "level": 4,
+      "title": "generalDay",
+      "alternateIds": [
+        "time:generalDay"
+      ],
+      "number": "4.3.1"
+    },
+    {
+      "id": "generalmonth",
+      "href": "https://www.w3.org/TR/owl-time/#generalmonth",
+      "level": 4,
+      "title": "generalMonth",
+      "alternateIds": [
+        "time:generalMonth"
+      ],
+      "number": "4.3.2"
+    },
+    {
+      "id": "generalyear",
+      "href": "https://www.w3.org/TR/owl-time/#generalyear",
+      "level": 4,
+      "title": "generalYear",
+      "alternateIds": [
+        "time:generalYear"
+      ],
+      "number": "4.3.3"
+    },
+    {
+      "id": "Individuals",
+      "href": "https://www.w3.org/TR/owl-time/#Individuals",
+      "level": 3,
+      "title": "Individuals",
+      "alternateIds": [
+        "x4-4-individuals"
+      ],
+      "number": "4.4"
+    },
+    {
+      "id": "examples",
+      "href": "https://www.w3.org/TR/owl-time/#examples",
+      "level": 2,
+      "title": "Examples",
+      "alternateIds": [
+        "x5-examples"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "dtd-vs-dt",
+      "href": "https://www.w3.org/TR/owl-time/#dtd-vs-dt",
+      "level": 3,
+      "title": "DateTimeDescription vs dateTime",
+      "alternateIds": [
+        "x5-1-datetimedescription-vs-datetime"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "different-TRS",
+      "href": "https://www.w3.org/TR/owl-time/#different-TRS",
+      "level": 3,
+      "title": "Use of temporal reference systems",
+      "alternateIds": [
+        "x5-2-use-of-temporal-reference-systems"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "temporal-precision",
+      "href": "https://www.w3.org/TR/owl-time/#temporal-precision",
+      "level": 3,
+      "title": "Temporal precision",
+      "alternateIds": [
+        "x5-3-temporal-precision"
+      ],
+      "number": "5.3"
+    },
+    {
+      "id": "iCal",
+      "href": "https://www.w3.org/TR/owl-time/#iCal",
+      "level": 3,
+      "title": "iCalendar",
+      "alternateIds": [
+        "x5-4-icalendar"
+      ],
+      "number": "5.4"
+    },
+    {
+      "id": "geologictimescale",
+      "href": "https://www.w3.org/TR/owl-time/#geologictimescale",
+      "level": 3,
+      "title": "Geologic timescale",
+      "alternateIds": [
+        "x5-5-geologic-timescale"
+      ],
+      "number": "5.5"
+    },
+    {
+      "id": "scheduling",
+      "href": "https://www.w3.org/TR/owl-time/#scheduling",
+      "level": 3,
+      "title": "A Use Case for Scheduling",
+      "alternateIds": [
+        "x5-6-a-use-case-for-scheduling"
+      ],
+      "number": "5.6"
+    },
+    {
+      "id": "time-prov",
+      "href": "https://www.w3.org/TR/owl-time/#time-prov",
+      "level": 3,
+      "title": "Alignment of PROV-O with OWL-Time",
+      "alternateIds": [
+        "x5-7-alignment-of-prov-o-with-owl-time"
+      ],
+      "number": "5.7"
+    },
+    {
+      "id": "iana-links",
+      "href": "https://www.w3.org/TR/owl-time/#iana-links",
+      "level": 2,
+      "title": "IANA Considerations",
+      "alternateIds": [
+        "x6-iana-considerations"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "link-interval-after",
+      "href": "https://www.w3.org/TR/owl-time/#link-interval-after",
+      "level": 3,
+      "title": "intervalAfter Link Relation Type",
+      "alternateIds": [
+        "x6-1-intervalafter-link-relation-type"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "link-interval-before",
+      "href": "https://www.w3.org/TR/owl-time/#link-interval-before",
+      "level": 3,
+      "title": "intervalBefore Link Relation Type",
+      "alternateIds": [
+        "x6-2-intervalbefore-link-relation-type"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "link-interval-contains",
+      "href": "https://www.w3.org/TR/owl-time/#link-interval-contains",
+      "level": 3,
+      "title": "intervalContains Link Relation Type",
+      "alternateIds": [
+        "x6-3-intervalcontains-link-relation-type"
+      ],
+      "number": "6.3"
+    },
+    {
+      "id": "link-interval-disjoint",
+      "href": "https://www.w3.org/TR/owl-time/#link-interval-disjoint",
+      "level": 3,
+      "title": "intervalDisjoint Link Relation Type",
+      "alternateIds": [
+        "x6-4-intervaldisjoint-link-relation-type"
+      ],
+      "number": "6.4"
+    },
+    {
+      "id": "link-interval-during",
+      "href": "https://www.w3.org/TR/owl-time/#link-interval-during",
+      "level": 3,
+      "title": "intervalDuring Link Relation Type",
+      "alternateIds": [
+        "x6-5-intervalduring-link-relation-type"
+      ],
+      "number": "6.5"
+    },
+    {
+      "id": "link-interval-equals",
+      "href": "https://www.w3.org/TR/owl-time/#link-interval-equals",
+      "level": 3,
+      "title": "intervalEquals Link Relation Type",
+      "alternateIds": [
+        "x6-6-intervalequals-link-relation-type"
+      ],
+      "number": "6.6"
+    },
+    {
+      "id": "link-interval-finishedBy",
+      "href": "https://www.w3.org/TR/owl-time/#link-interval-finishedBy",
+      "level": 3,
+      "title": "intervalFinishedBy Link Relation Type",
+      "alternateIds": [
+        "x6-7-intervalfinishedby-link-relation-type"
+      ],
+      "number": "6.7"
+    },
+    {
+      "id": "link-interval-finishes",
+      "href": "https://www.w3.org/TR/owl-time/#link-interval-finishes",
+      "level": 3,
+      "title": "intervalFinishes Link Relation Type",
+      "alternateIds": [
+        "x6-8-intervalfinishes-link-relation-type"
+      ],
+      "number": "6.8"
+    },
+    {
+      "id": "link-interval-in",
+      "href": "https://www.w3.org/TR/owl-time/#link-interval-in",
+      "level": 3,
+      "title": "intervalIn Link Relation Type",
+      "alternateIds": [
+        "x6-9-intervalin-link-relation-type"
+      ],
+      "number": "6.9"
+    },
+    {
+      "id": "link-interval-meets",
+      "href": "https://www.w3.org/TR/owl-time/#link-interval-meets",
+      "level": 3,
+      "title": "intervalMeets Link Relation Type",
+      "alternateIds": [
+        "x6-10-intervalmeets-link-relation-type"
+      ],
+      "number": "6.10"
+    },
+    {
+      "id": "link-interval-metBy",
+      "href": "https://www.w3.org/TR/owl-time/#link-interval-metBy",
+      "level": 3,
+      "title": "intervalMetBy Link Relation Type",
+      "alternateIds": [
+        "x6-11-intervalmetby-link-relation-type"
+      ],
+      "number": "6.11"
+    },
+    {
+      "id": "link-interval-overlappedBy",
+      "href": "https://www.w3.org/TR/owl-time/#link-interval-overlappedBy",
+      "level": 3,
+      "title": "intervalOverlappedBy Link Relation Type",
+      "alternateIds": [
+        "x6-12-intervaloverlappedby-link-relation-type"
+      ],
+      "number": "6.12"
+    },
+    {
+      "id": "link-interval-overlaps",
+      "href": "https://www.w3.org/TR/owl-time/#link-interval-overlaps",
+      "level": 3,
+      "title": "intervalOverlaps Link Relation Type",
+      "alternateIds": [
+        "x6-13-intervaloverlaps-link-relation-type"
+      ],
+      "number": "6.13"
+    },
+    {
+      "id": "link-interval-startedBy",
+      "href": "https://www.w3.org/TR/owl-time/#link-interval-startedBy",
+      "level": 3,
+      "title": "intervalStartedBy Link Relation Type",
+      "alternateIds": [
+        "x6-14-intervalstartedby-link-relation-type"
+      ],
+      "number": "6.14"
+    },
+    {
+      "id": "link-interval-starts",
+      "href": "https://www.w3.org/TR/owl-time/#link-interval-starts",
+      "level": 3,
+      "title": "intervalStarts Link Relation Type",
+      "alternateIds": [
+        "x6-15-intervalstarts-link-relation-type"
+      ],
+      "number": "6.15"
+    },
+    {
+      "id": "security_and_privacy",
+      "href": "https://www.w3.org/TR/owl-time/#security_and_privacy",
+      "level": 2,
+      "title": "Security and Privacy",
+      "alternateIds": [
+        "x7-security-and-privacy"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "summary",
+      "href": "https://www.w3.org/TR/owl-time/#summary",
+      "level": 2,
+      "title": "Summary of Classes and Properties in the Time Ontology",
+      "alternateIds": [
+        "a-summary-of-classes-and-properties-in-the-time-ontology"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "summary-classes",
+      "href": "https://www.w3.org/TR/owl-time/#summary-classes",
+      "level": 3,
+      "title": "Classes (subclass relations)",
+      "alternateIds": [
+        "a-1-classes-subclass-relations"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "summary-properties",
+      "href": "https://www.w3.org/TR/owl-time/#summary-properties",
+      "level": 3,
+      "title": "Properties (sorted by domain value)",
+      "alternateIds": [
+        "a-2-properties-sorted-by-domain-value"
+      ],
+      "number": "A.2"
+    },
+    {
+      "id": "summary-datatypes",
+      "href": "https://www.w3.org/TR/owl-time/#summary-datatypes",
+      "level": 3,
+      "title": "Datatypes",
+      "alternateIds": [
+        "a-3-datatypes"
+      ],
+      "number": "A.3"
+    },
+    {
+      "id": "implementation",
+      "href": "https://www.w3.org/TR/owl-time/#implementation",
+      "level": 2,
+      "title": "Implementation report",
+      "alternateIds": [
+        "b-implementation-report"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "changes",
+      "href": "https://www.w3.org/TR/owl-time/#changes",
+      "level": 2,
+      "title": "Changes from previous versions",
+      "alternateIds": [
+        "c-changes-from-previous-versions"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "x2021-update",
+      "href": "https://www.w3.org/TR/owl-time/#x2021-update",
+      "level": 3,
+      "title": "2021 update",
+      "alternateIds": [
+        "c-1-2021-update"
+      ],
+      "number": "C.1"
+    },
+    {
+      "id": "x2017-version",
+      "href": "https://www.w3.org/TR/owl-time/#x2017-version",
+      "level": 3,
+      "title": "2017 version",
+      "alternateIds": [
+        "c-2-2017-version"
+      ],
+      "number": "C.2"
+    },
+    {
+      "id": "wide-review",
+      "href": "https://www.w3.org/TR/owl-time/#wide-review",
+      "level": 2,
+      "title": "Wide review",
+      "alternateIds": [
+        "d-wide-review"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "requirements",
+      "href": "https://www.w3.org/TR/owl-time/#requirements",
+      "level": 2,
+      "title": "Response to Requirements identified in working group analysis",
+      "alternateIds": [
+        "e-response-to-requirements-identified-in-working-group-analysis"
+      ],
+      "number": "E"
+    },
+    {
+      "id": "ack",
+      "href": "https://www.w3.org/TR/owl-time/#ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "f-acknowledgements"
+      ],
+      "number": "F"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/owl-time/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "g-references"
+      ],
+      "number": "G"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/owl-time/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "g-1-normative-references"
+      ],
+      "number": "G.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/owl-time/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "g-2-informative-references"
+      ],
+      "number": "G.2"
+    }
+  ]
+}

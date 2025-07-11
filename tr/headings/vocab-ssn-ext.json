@@ -1,0 +1,283 @@
+{
+  "spec": {
+    "title": "Extensions to the Semantic Sensor Network Ontology",
+    "url": "https://www.w3.org/TR/vocab-ssn-ext/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#title",
+      "level": 1,
+      "title": "Extensions to the Semantic Sensor Network Ontology"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "motivation",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#motivation",
+      "level": 2,
+      "title": "Motivation and background",
+      "alternateIds": [
+        "x1-motivation-and-background"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "namespaces",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#namespaces",
+      "level": 2,
+      "title": "Notation and namespaces",
+      "alternateIds": [
+        "x2-notation-and-namespaces"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "overview",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#overview",
+      "level": 2,
+      "title": "Principles and vocabulary overview",
+      "alternateIds": [
+        "x3-principles-and-vocabulary-overview"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "ultimate-feature-of-interest",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#ultimate-feature-of-interest",
+      "level": 3,
+      "title": "Ultimate feature of interest",
+      "alternateIds": [
+        "x3-1-ultimate-feature-of-interest"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "sample-chains",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#sample-chains",
+      "level": 3,
+      "title": "Basis of a chain of samples",
+      "alternateIds": [
+        "x3-2-basis-of-a-chain-of-samples"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "observation-collection",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#observation-collection",
+      "level": 3,
+      "title": "Homogeneous collection of observations",
+      "alternateIds": [
+        "x3-3-homogeneous-collection-of-observations"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "vocabulary",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#vocabulary",
+      "level": 2,
+      "title": "Vocabulary specification",
+      "alternateIds": [
+        "x4-vocabulary-specification"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "classes",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#classes",
+      "level": 3,
+      "title": "Classes",
+      "alternateIds": [
+        "x4-1-classes"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "collection-of-observations",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#collection-of-observations",
+      "level": 4,
+      "title": "Collection of observations",
+      "alternateIds": [
+        "sosa:ObservationCollection"
+      ],
+      "number": "4.1.1"
+    },
+    {
+      "id": "properties",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#properties",
+      "level": 3,
+      "title": "Properties",
+      "alternateIds": [
+        "x4-2-properties"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "member-observation-or-collection",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#member-observation-or-collection",
+      "level": 4,
+      "title": "member observation or collection",
+      "alternateIds": [
+        "sosa:hasMember"
+      ],
+      "number": "4.2.1"
+    },
+    {
+      "id": "has-original-sample",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#has-original-sample",
+      "level": 4,
+      "title": "has original sample",
+      "alternateIds": [
+        "sosa:hasOriginalSample"
+      ],
+      "number": "4.2.2"
+    },
+    {
+      "id": "has-ultimate-feature-of-interest",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#has-ultimate-feature-of-interest",
+      "level": 4,
+      "title": "has ultimate feature of interest",
+      "alternateIds": [
+        "sosa:hasUltimateFeatureOfInterest"
+      ],
+      "number": "4.2.3"
+    },
+    {
+      "id": "has-sampled-feature",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#has-sampled-feature",
+      "level": 4,
+      "title": "has sampled feature",
+      "alternateIds": [
+        "sosa:hasSampledFeature"
+      ],
+      "number": "4.2.4"
+    },
+    {
+      "id": "rules-0",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#rules-0",
+      "level": 3,
+      "title": "Rules",
+      "alternateIds": [
+        "rules"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "finding-ultimate-feature-of-interest-of-an-observation-or-sampling-from-a-sampling-chain",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#finding-ultimate-feature-of-interest-of-an-observation-or-sampling-from-a-sampling-chain",
+      "level": 4,
+      "title": "Finding ultimate feature of interest of an Observation or Sampling from a sampling chain",
+      "alternateIds": [
+        "ufoi-sampling-chain-rule"
+      ],
+      "number": "4.3.1"
+    },
+    {
+      "id": "finding-the-ultimate-feature-of-interest-that-a-sample-represents-from-a-sampling-chain",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#finding-the-ultimate-feature-of-interest-that-a-sample-represents-from-a-sampling-chain",
+      "level": 4,
+      "title": "Finding the ultimate feature of interest that a Sample represents from a sampling chain",
+      "alternateIds": [
+        "uso-sampling-chain-rule"
+      ],
+      "number": "4.3.2"
+    },
+    {
+      "id": "finding-the-original-sample-from-a-sampling-chain",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#finding-the-original-sample-from-a-sampling-chain",
+      "level": 4,
+      "title": "Finding the original Sample from a sampling chain",
+      "alternateIds": [
+        "os-sampling-chain-rule"
+      ],
+      "number": "4.3.3"
+    },
+    {
+      "id": "inheriting-observation-properties-from-a-collection",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#inheriting-observation-properties-from-a-collection",
+      "level": 4,
+      "title": "Inheriting observation properties from a collection",
+      "alternateIds": [
+        "container-property-rule"
+      ],
+      "number": "4.3.4"
+    },
+    {
+      "id": "alignments",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#alignments",
+      "level": 2,
+      "title": "Alignments",
+      "alternateIds": [
+        "x5-alignments"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "rdf-data-cube-vocabulary",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#rdf-data-cube-vocabulary",
+      "level": 3,
+      "title": "RDF Data Cube vocabulary",
+      "alternateIds": [
+        "x5-1-rdf-data-cube-vocabulary"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "oboe",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#oboe",
+      "level": 3,
+      "title": "OBOE",
+      "alternateIds": [
+        "x5-2-oboe"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "ack",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "a-acknowledgements"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "b-references"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "b-1-normative-references"
+      ],
+      "number": "B.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/vocab-ssn-ext/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "b-2-informative-references"
+      ],
+      "number": "B.2"
+    }
+  ]
+}

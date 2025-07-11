@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-07-10T01:36:25.623Z",
+  "date": "2025-07-11T01:53:52.806Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -130,26 +130,16 @@
       "tc39-defer-import-eval",
       "tc39-dynamic-code-brand-checks",
       "tc39-explicit-resource-management",
-      "tc39-float16array",
-      "tc39-import-attributes",
       "tc39-intl-duration-format",
       "tc39-intl-locale-info",
-      "tc39-is-error",
-      "tc39-iterator-helpers",
-      "tc39-json-modules",
       "tc39-json-parse-with-source",
       "tc39-math-sum",
-      "tc39-promise-try",
-      "tc39-regex-escaping",
-      "tc39-regexp-modifiers",
-      "tc39-set-methods",
       "tc39-shadowrealm",
       "tc39-source-phase-imports",
       "tc39-temporal",
       "testutils",
       "url",
       "urlpattern",
-      "digital-credentials",
       "login-status",
       "at-driver",
       "execCommand",
@@ -164,6 +154,9 @@
       "permissions-registry",
       "network-reporting",
       "sparql12-concepts",
+      "trace-context-amqp",
+      "trace-context-binary",
+      "trace-context-mqtt",
       "web-nfc",
       "web-share-target",
       "dbsc",
@@ -256,6 +249,7 @@
       "shape-detection-api",
       "text-detection-api",
       "shared-storage",
+      "signature-based-sri",
       "sms-one-time-codes",
       "soft-navigations",
       "storage-buckets",
@@ -458,6 +452,7 @@
       "device-posture",
       "did-1.1",
       "did-resolution",
+      "digital-credentials",
       "DOM-Parsing",
       "dpub-aam-1.1",
       "dpub-aria-1.1",
@@ -546,6 +541,7 @@
       "openscreen-network",
       "orientation-event",
       "orientation-sensor",
+      "owl-time",
       "paint-timing",
       "payment-handler",
       "payment-method-id",
@@ -565,6 +561,7 @@
       "proximity",
       "pub-manifest",
       "push-api",
+      "qb4st",
       "rdf-canon",
       "rdf12-concepts",
       "rdf12-n-quads",
@@ -613,6 +610,8 @@
       "test-methodology",
       "timing-entrytypes-registry",
       "touch-events",
+      "trace-context-2",
+      "trace-context-protocols-registry",
       "trusted-types",
       "ttml-imsc1.2",
       "ttml2",
@@ -626,6 +625,10 @@
       "vibration",
       "virtual-keyboard",
       "vocab-dcat-3",
+      "vocab-owl-time-agg",
+      "vocab-owl-time-rel",
+      "vocab-ssn-ext",
+      "vocab-ssn",
       "wai-aria-1.2",
       "wai-aria-1.3",
       "wasm-core-2",
@@ -707,10 +710,10 @@
     ]
   },
   "stats": {
-    "crawled": 367,
+    "crawled": 376,
     "errors": 0
   },
-  "crawler": "reffy-19.0.1",
+  "crawler": "reffy-19.1.0",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -756,7 +759,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "10 July 2025",
+      "date": "11 July 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -2356,11 +2359,11 @@
       ],
       "crawled": "https://www.w3.org/TR/CSP3/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 30 Jun 2025 12:10:45 GMT"
+        "lastModified": "Thu, 10 Jul 2025 06:31:35 GMT"
       },
       "generator": "bikeshed",
-      "date": "30 June 2025",
-      "revision": "97e4a821c6d61de8c3ec417c8808f809608251d7",
+      "date": "10 July 2025",
+      "revision": "1137e96ef04505473d5a2cb457c6afd54795041f",
       "algorithms": "algorithms/CSP3.json",
       "links": "links/CSP3.json",
       "refs": "refs/CSP3.json",
@@ -10234,11 +10237,11 @@
       ],
       "crawled": "https://www.w3.org/TR/did-1.1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 31 May 2025 20:04:24 GMT"
+        "lastModified": "Thu, 10 Jul 2025 13:46:18 GMT"
       },
       "generator": "respec",
-      "date": "31 May 2025",
-      "revision": "d0be1f3f231978cfbc75547dc3746f7312fe1e68",
+      "date": "10 July 2025",
+      "revision": "3e5e5ab70e3a964f96cb5190574f36cf4bee4276",
       "algorithms": "algorithms/did-1.1.json",
       "links": "links/did-1.1.json",
       "refs": "refs/did-1.1.json",
@@ -10290,17 +10293,79 @@
       ],
       "crawled": "https://www.w3.org/TR/did-resolution/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 19 Jun 2025 14:31:56 GMT"
+        "lastModified": "Thu, 10 Jul 2025 13:13:36 GMT"
       },
       "generator": "respec",
-      "date": "19 June 2025",
-      "revision": "e07b68566e8d6387cdbfd45693d873f5dfc18505",
+      "date": "10 July 2025",
+      "revision": "c6475a2c385103ba21fe33a42677e6f69c18917b",
       "algorithms": "algorithms/did-resolution.json",
       "links": "links/did-resolution.json",
       "refs": "refs/did-resolution.json",
       "dfns": "dfns/did-resolution.json",
       "headings": "headings/did-resolution.json",
       "ids": "ids/did-resolution.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/digital-credentials/",
+      "seriesComposition": "full",
+      "shortname": "digital-credentials",
+      "series": {
+        "shortname": "digital-credentials",
+        "currentSpecification": "digital-credentials",
+        "title": "Digital Credentials",
+        "shortTitle": "Digital Credentials",
+        "releaseUrl": "https://www.w3.org/TR/digital-credentials/",
+        "nightlyUrl": "https://w3c-fedid.github.io/digital-credentials/"
+      },
+      "formerNames": [
+        "digital-identities"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Federated Identity Working Group",
+          "url": "https://www.w3.org/groups/wg/fedid/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/digital-credentials/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c-fedid.github.io/digital-credentials/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c-fedid/digital-credentials",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Digital Credentials",
+      "source": "w3c",
+      "shortTitle": "Digital Credentials",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/digital-credentials/",
+        "https://w3c-fedid.github.io/digital-credentials/"
+      ],
+      "crawled": "https://www.w3.org/TR/digital-credentials/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 10 Jul 2025 17:22:06 GMT"
+      },
+      "generator": "respec",
+      "date": "10 July 2025",
+      "revision": "385ee13a2216455e98f26a38ffd3caeb61aae448",
+      "algorithms": "algorithms/digital-credentials.json",
+      "links": "links/digital-credentials.json",
+      "refs": "refs/digital-credentials.json",
+      "idl": "idl/digital-credentials.idl",
+      "dfns": "dfns/digital-credentials.json",
+      "headings": "headings/digital-credentials.json",
+      "ids": "ids/digital-credentials.json",
       "cddl": []
     },
     {
@@ -10390,7 +10455,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/dpub-aam-1.1/",
-        "status": "Proposed Recommendation",
+        "status": "Recommendation",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -10450,7 +10515,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/dpub-aria-1.1/",
-        "status": "Proposed Recommendation",
+        "status": "Recommendation",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -11954,11 +12019,11 @@
       ],
       "crawled": "https://www.w3.org/TR/gamepad/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 12 Jun 2025 23:40:04 GMT"
+        "lastModified": "Thu, 10 Jul 2025 23:50:44 GMT"
       },
       "generator": "respec",
-      "date": "12 June 2025",
-      "revision": "c430e7379d09e819dae4f1674ffbaa88ac0ab472",
+      "date": "10 July 2025",
+      "revision": "0186e68103b2e61678a7d05373489f79f0f415d4",
       "algorithms": "algorithms/gamepad.json",
       "links": "links/gamepad.json",
       "refs": "refs/gamepad.json",
@@ -12273,11 +12338,11 @@
       ],
       "crawled": "https://www.w3.org/TR/gpc/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 16 Apr 2025 15:18:48 GMT"
+        "lastModified": "Thu, 10 Jul 2025 18:11:17 GMT"
       },
       "generator": "respec",
-      "date": "16 April 2025",
-      "revision": "ab59f1193f53328591dccb0d992c0a64ce49cde8",
+      "date": "10 July 2025",
+      "revision": "fbbeccede51ebfb675e79c2ba92c4fade1ca99ba",
       "links": "links/gpc.json",
       "refs": "refs/gpc.json",
       "idl": "idl/gpc.idl",
@@ -13721,7 +13786,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/mathml-core/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -15454,7 +15519,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/openscreen-application/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -15512,7 +15577,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/openscreen-network/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -15682,6 +15747,59 @@
       "dfns": "dfns/orientation-sensor.json",
       "headings": "headings/orientation-sensor.json",
       "ids": "ids/orientation-sensor.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/owl-time/",
+      "seriesComposition": "full",
+      "shortname": "owl-time",
+      "series": {
+        "shortname": "owl-time",
+        "currentSpecification": "owl-time",
+        "title": "Time Ontology in OWL",
+        "shortTitle": "Time Ontology in OWL",
+        "releaseUrl": "https://www.w3.org/TR/owl-time/",
+        "nightlyUrl": "https://w3c.github.io/sdw/time/"
+      },
+      "organization": "W3C/OGC",
+      "nightly": {
+        "url": "https://w3c.github.io/sdw/time/",
+        "status": "Editor's Draft",
+        "sourcePath": "time/index.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/sdw",
+        "filename": "index.html"
+      },
+      "groups": [
+        {
+          "name": "Spatio-temporal Data on the Web Working Group",
+          "url": "https://www.w3.org/2021/sdw"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/owl-time/",
+        "status": "Candidate Recommendation Draft",
+        "filename": "Overview.html"
+      },
+      "title": "Time Ontology in OWL",
+      "source": "w3c",
+      "shortTitle": "Time Ontology in OWL",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/owl-time/",
+        "https://w3c.github.io/sdw/time/"
+      ],
+      "crawled": "https://www.w3.org/TR/owl-time/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 09 Nov 2022 15:30:49 GMT"
+      },
+      "generator": "respec",
+      "date": "15 November 2022",
+      "links": "links/owl-time.json",
+      "refs": "refs/owl-time.json",
+      "headings": "headings/owl-time.json",
+      "ids": "ids/owl-time.json",
       "cddl": []
     },
     {
@@ -16305,7 +16423,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/png-3/",
-        "status": "Proposed Recommendation",
+        "status": "Recommendation",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -16642,7 +16760,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/privacy-preserving-attribution/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "title": "Privacy-Preserving Attribution: Level 1",
@@ -16913,6 +17031,59 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/qb4st/",
+      "seriesComposition": "full",
+      "shortname": "qb4st",
+      "series": {
+        "shortname": "qb4st",
+        "currentSpecification": "qb4st",
+        "title": "QB4ST: RDF Data Cube extensions for spatio-temporal components",
+        "shortTitle": "QB4ST: RDF Data Cube extensions for spatio-temporal components",
+        "releaseUrl": "https://www.w3.org/TR/qb4st/",
+        "nightlyUrl": "https://w3c.github.io/sdw/qb4st/"
+      },
+      "organization": "W3C/OGC",
+      "nightly": {
+        "url": "https://w3c.github.io/sdw/qb4st/",
+        "status": "Editor's Draft",
+        "sourcePath": "qb4st/index.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/sdw",
+        "filename": "index.html"
+      },
+      "groups": [
+        {
+          "name": "Spatio-temporal Data on the Web Working Group",
+          "url": "https://www.w3.org/2021/sdw"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/qb4st/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "QB4ST: RDF Data Cube extensions for spatio-temporal components",
+      "source": "w3c",
+      "shortTitle": "QB4ST: RDF Data Cube extensions for spatio-temporal components",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/qb4st/",
+        "https://w3c.github.io/sdw/qb4st/"
+      ],
+      "crawled": "https://www.w3.org/TR/qb4st/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 25 Sep 2017 09:37:56 GMT"
+      },
+      "generator": "respec",
+      "date": "28 September 2017",
+      "links": "links/qb4st.json",
+      "refs": "refs/qb4st.json",
+      "headings": "headings/qb4st.json",
+      "ids": "ids/qb4st.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/rdf-canon/",
       "seriesComposition": "full",
       "shortname": "rdf-canon",
@@ -17069,11 +17240,11 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf12-n-quads/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Jul 2025 18:29:54 GMT"
+        "lastModified": "Thu, 10 Jul 2025 22:46:51 GMT"
       },
       "generator": "respec",
-      "date": "01 July 2025",
-      "revision": "15c5364a3822abbc6cecf5b78b3630a5edd8c24e",
+      "date": "10 July 2025",
+      "revision": "487d0cc7cc07ef33915f0328254c1b7b266c2c7e",
       "links": "links/rdf12-n-quads.json",
       "refs": "refs/rdf12-n-quads.json",
       "dfns": "dfns/rdf12-n-quads.json",
@@ -19224,7 +19395,7 @@
       "shortTitle": "SRI",
       "release": {
         "url": "https://www.w3.org/TR/sri-2/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "index.html"
       },
       "formerNames": [
@@ -19263,11 +19434,11 @@
       ],
       "crawled": "https://www.w3.org/TR/sri-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 09 Jul 2025 14:16:59 GMT"
+        "lastModified": "Thu, 10 Jul 2025 11:27:05 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 July 2025",
-      "revision": "38603d64013fc987ff233c197fddda7b639dd3e2",
+      "date": "10 July 2025",
+      "revision": "f7029a47215628e91d97cf30def3db3c1adf5575",
       "algorithms": "algorithms/sri-2.json",
       "links": "links/sri-2.json",
       "refs": "refs/sri-2.json",
@@ -19952,6 +20123,115 @@
       "dfns": "dfns/touch-events.json",
       "headings": "headings/touch-events.json",
       "ids": "ids/touch-events.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/trace-context-2/",
+      "seriesComposition": "full",
+      "shortname": "trace-context-2",
+      "series": {
+        "shortname": "trace-context",
+        "currentSpecification": "trace-context-2",
+        "title": "Trace Context",
+        "shortTitle": "Trace Context",
+        "releaseUrl": "https://www.w3.org/TR/trace-context/",
+        "nightlyUrl": "https://w3c.github.io/trace-context/"
+      },
+      "seriesVersion": "2",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Distributed Tracing Working Group",
+          "url": "https://www.w3.org/groups/wg/distributed-tracing/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/trace-context-2/",
+        "status": "Candidate Recommendation Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/trace-context/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/trace-context",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Trace Context Level 2",
+      "source": "w3c",
+      "shortTitle": "Trace Context 2",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/trace-context-2/",
+        "https://w3c.github.io/trace-context/"
+      ],
+      "crawled": "https://www.w3.org/TR/trace-context-2/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 28 Mar 2024 18:24:39 GMT"
+      },
+      "generator": "respec",
+      "date": "28 March 2024",
+      "revision": "82c5ffd3779383fc12eb712a1c62296ce106a1e7",
+      "links": "links/trace-context-2.json",
+      "refs": "refs/trace-context-2.json",
+      "dfns": "dfns/trace-context-2.json",
+      "headings": "headings/trace-context-2.json",
+      "ids": "ids/trace-context-2.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/trace-context-protocols-registry/",
+      "seriesComposition": "full",
+      "shortname": "trace-context-protocols-registry",
+      "series": {
+        "shortname": "trace-context-protocols-registry",
+        "currentSpecification": "trace-context-protocols-registry",
+        "title": "Trace Context Protocols Registry",
+        "shortTitle": "Trace Context Protocols Registry",
+        "releaseUrl": "https://www.w3.org/TR/trace-context-protocols-registry/",
+        "nightlyUrl": "https://w3c.github.io/trace-context-protocols-registry/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Distributed Tracing Working Group",
+          "url": "https://www.w3.org/groups/wg/distributed-tracing/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/trace-context-protocols-registry/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/trace-context-protocols-registry/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/trace-context-protocols-registry",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Trace Context Protocols Registry",
+      "source": "w3c",
+      "shortTitle": "Trace Context Protocols Registry",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/trace-context-protocols-registry/",
+        "https://w3c.github.io/trace-context-protocols-registry/"
+      ],
+      "crawled": "https://www.w3.org/TR/trace-context-protocols-registry/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 19 Nov 2019 15:26:48 GMT"
+      },
+      "generator": "respec",
+      "date": "19 November 2019",
+      "links": "links/trace-context-protocols-registry.json",
+      "refs": "refs/trace-context-protocols-registry.json",
+      "headings": "headings/trace-context-protocols-registry.json",
+      "ids": "ids/trace-context-protocols-registry.json",
       "cddl": []
     },
     {
@@ -20726,6 +21006,221 @@
       "refs": "refs/vocab-dcat-3.json",
       "headings": "headings/vocab-dcat-3.json",
       "ids": "ids/vocab-dcat-3.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/vocab-owl-time-agg/",
+      "seriesComposition": "full",
+      "shortname": "vocab-owl-time-agg",
+      "series": {
+        "shortname": "vocab-owl-time-agg",
+        "currentSpecification": "vocab-owl-time-agg",
+        "title": "Extensions to the OWL-Time Ontology - temporal aggregates",
+        "shortTitle": "Extensions to the OWL-Time Ontology - temporal aggregates",
+        "releaseUrl": "https://www.w3.org/TR/vocab-owl-time-agg/",
+        "nightlyUrl": "https://w3c.github.io/sdw/time-aggregates/"
+      },
+      "organization": "W3C/OGC",
+      "nightly": {
+        "url": "https://w3c.github.io/sdw/time-aggregates/",
+        "status": "Editor's Draft",
+        "sourcePath": "time-aggregates/index.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/sdw",
+        "filename": "index.html"
+      },
+      "categories": [],
+      "groups": [
+        {
+          "name": "Spatial Data on the Web Interest Group",
+          "url": "https://www.w3.org/2017/sdwig/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vocab-owl-time-agg/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "Extensions to the OWL-Time Ontology - temporal aggregates",
+      "source": "w3c",
+      "shortTitle": "Extensions to the OWL-Time Ontology - temporal aggregates",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vocab-owl-time-agg/",
+        "https://w3c.github.io/sdw/time-aggregates/"
+      ],
+      "crawled": "https://www.w3.org/TR/vocab-owl-time-agg/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 27 Jul 2020 06:58:55 GMT"
+      },
+      "generator": "respec",
+      "date": "7 July 2020",
+      "links": "links/vocab-owl-time-agg.json",
+      "refs": "refs/vocab-owl-time-agg.json",
+      "headings": "headings/vocab-owl-time-agg.json",
+      "ids": "ids/vocab-owl-time-agg.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/vocab-owl-time-rel/",
+      "seriesComposition": "full",
+      "shortname": "vocab-owl-time-rel",
+      "series": {
+        "shortname": "vocab-owl-time-rel",
+        "currentSpecification": "vocab-owl-time-rel",
+        "title": "Extensions to the OWL-Time Ontology - entity relations",
+        "shortTitle": "Extensions to the OWL-Time Ontology - entity relations",
+        "releaseUrl": "https://www.w3.org/TR/vocab-owl-time-rel/",
+        "nightlyUrl": "https://w3c.github.io/sdw/time-entity-relations/"
+      },
+      "organization": "W3C/OGC",
+      "nightly": {
+        "url": "https://w3c.github.io/sdw/time-entity-relations/",
+        "status": "Editor's Draft",
+        "sourcePath": "time-entity-relations/index.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/sdw",
+        "filename": "index.html"
+      },
+      "categories": [],
+      "groups": [
+        {
+          "name": "Spatial Data on the Web Interest Group",
+          "url": "https://www.w3.org/2017/sdwig/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vocab-owl-time-rel/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "Extensions to the OWL-Time Ontology - entity relations",
+      "source": "w3c",
+      "shortTitle": "Extensions to the OWL-Time Ontology - entity relations",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vocab-owl-time-rel/",
+        "https://w3c.github.io/sdw/time-entity-relations/"
+      ],
+      "crawled": "https://www.w3.org/TR/vocab-owl-time-rel/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 27 Jul 2020 07:53:38 GMT"
+      },
+      "generator": "respec",
+      "date": "7 July 2020",
+      "links": "links/vocab-owl-time-rel.json",
+      "refs": "refs/vocab-owl-time-rel.json",
+      "headings": "headings/vocab-owl-time-rel.json",
+      "ids": "ids/vocab-owl-time-rel.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/vocab-ssn-ext/",
+      "seriesComposition": "full",
+      "shortname": "vocab-ssn-ext",
+      "series": {
+        "shortname": "vocab-ssn-ext",
+        "currentSpecification": "vocab-ssn-ext",
+        "title": "Extensions to the Semantic Sensor Network Ontology",
+        "shortTitle": "Extensions to the Semantic Sensor Network Ontology",
+        "releaseUrl": "https://www.w3.org/TR/vocab-ssn-ext/",
+        "nightlyUrl": "https://w3c.github.io/sdw-sosa-ssn/ssn-extensions/"
+      },
+      "organization": "W3C/OGC",
+      "nightly": {
+        "url": "https://w3c.github.io/sdw-sosa-ssn/ssn-extensions/",
+        "status": "Editor's Draft",
+        "sourcePath": "ssn-extensions/index.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/sdw-sosa-ssn",
+        "filename": "index.html"
+      },
+      "groups": [
+        {
+          "name": "Spatial Data on the Web Interest Group",
+          "url": "https://www.w3.org/2017/sdwig/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vocab-ssn-ext/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "title": "Extensions to the Semantic Sensor Network Ontology",
+      "source": "w3c",
+      "shortTitle": "Extensions to the Semantic Sensor Network Ontology",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vocab-ssn-ext/",
+        "https://w3c.github.io/sdw-sosa-ssn/ssn-extensions/"
+      ],
+      "crawled": "https://www.w3.org/TR/vocab-ssn-ext/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 16 Jan 2020 13:41:35 GMT"
+      },
+      "generator": "respec",
+      "date": "16 January 2020",
+      "links": "links/vocab-ssn-ext.json",
+      "refs": "refs/vocab-ssn-ext.json",
+      "headings": "headings/vocab-ssn-ext.json",
+      "ids": "ids/vocab-ssn-ext.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/vocab-ssn/",
+      "seriesComposition": "full",
+      "shortname": "vocab-ssn",
+      "series": {
+        "shortname": "vocab-ssn",
+        "currentSpecification": "vocab-ssn",
+        "title": "Semantic Sensor Network Ontology",
+        "shortTitle": "Semantic Sensor Network Ontology",
+        "releaseUrl": "https://www.w3.org/TR/vocab-ssn/",
+        "nightlyUrl": "https://w3c.github.io/sdw-sosa-ssn/ssn/"
+      },
+      "organization": "W3C/OGC",
+      "nightly": {
+        "url": "https://w3c.github.io/sdw-sosa-ssn/ssn/",
+        "status": "Editor's Draft",
+        "sourcePath": "ssn/index.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/sdw-sosa-ssn",
+        "filename": "index.html"
+      },
+      "groups": [
+        {
+          "name": "Spatio-temporal Data on the Web Working Group",
+          "url": "https://www.w3.org/2021/sdw"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vocab-ssn/",
+        "status": "Recommendation",
+        "filename": "Overview.html"
+      },
+      "title": "Semantic Sensor Network Ontology",
+      "source": "w3c",
+      "shortTitle": "Semantic Sensor Network Ontology",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vocab-ssn/",
+        "https://w3c.github.io/sdw-sosa-ssn/ssn/"
+      ],
+      "crawled": "https://www.w3.org/TR/vocab-ssn/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 08 Dec 2017 09:34:34 GMT"
+      },
+      "generator": "respec",
+      "date": "19 October 2017",
+      "algorithms": "algorithms/vocab-ssn.json",
+      "links": "links/vocab-ssn.json",
+      "refs": "refs/vocab-ssn.json",
+      "headings": "headings/vocab-ssn.json",
+      "ids": "ids/vocab-ssn.json",
       "cddl": []
     },
     {
@@ -22726,11 +23221,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webgpu/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 03 Jul 2025 18:52:26 GMT"
+        "lastModified": "Fri, 11 Jul 2025 00:06:41 GMT"
       },
       "generator": "bikeshed",
-      "date": "3 July 2025",
-      "revision": "e93276a5b3b3fbfcd77e392779c03baa2adda061",
+      "date": "11 July 2025",
+      "revision": "26f2bbaa62059212a2168f3e1fa4d0d9c892dc3e",
       "algorithms": "algorithms/webgpu.json",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
@@ -22917,11 +23412,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webrtc-encoded-transform/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 22 May 2025 14:30:25 GMT"
+        "lastModified": "Thu, 10 Jul 2025 14:59:18 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 May 2025",
-      "revision": "cf0e77a7e4f372ef8e6e4cb1f1cdfb2d2bcb3d71",
+      "date": "10 July 2025",
+      "revision": "9cf200fc0b97c48a1a2e694bbb41eca29634ff0b",
       "algorithms": "algorithms/webrtc-encoded-transform.json",
       "links": "links/webrtc-encoded-transform.json",
       "refs": "refs/webrtc-encoded-transform.json",
@@ -23111,11 +23606,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webrtc-stats/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 28 Mar 2025 10:02:32 GMT"
+        "lastModified": "Thu, 10 Jul 2025 14:48:43 GMT"
       },
       "generator": "respec",
-      "date": "28 March 2025",
-      "revision": "64e79953086c57333e742ed0a5a7b6b57a3c6dc0",
+      "date": "10 July 2025",
+      "revision": "66c44ecf63e9816c3101741bd0a247e4259baa5a",
       "algorithms": "algorithms/webrtc-stats.json",
       "links": "links/webrtc-stats.json",
       "refs": "refs/webrtc-stats.json",

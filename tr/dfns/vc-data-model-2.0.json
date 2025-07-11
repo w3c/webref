@@ -24,7 +24,8 @@
         ],
         "number": "1.3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-conforming-issuer-implementation",
@@ -46,7 +47,8 @@
         ],
         "number": "1.3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-conforming-verifier-implementation",
@@ -68,7 +70,8 @@
         ],
         "number": "1.3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-claims",
@@ -92,6 +95,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "An assertion made about a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-subjects\">subject</a>."
     },
     {
@@ -116,6 +120,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "A set of one or more <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims\">claims</a> made by an <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a>. The <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims\">claims</a>\nin a credential can be about different <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-subjects\">subjects</a>. The definition of\ncredential used in this specification differs from,\n<a href=\"https://csrc.nist.gov/glossary/term/credential\">NIST's definitions of\ncredential</a>."
     },
     {
@@ -142,6 +147,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "A portable URL-based identifier, also known as a <strong><em>DID</em></strong>,\nis associated with an <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-entities\">entity</a>. These identifiers are most often used in a\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> and are associated with <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-subjects\">subjects</a> such that a\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> can be easily ported from one\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-credential-repositories\">credential repository</a> to another without reissuing the <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-credential\">credential</a>.\nAn example of a DID is <code>did:example:123456abcdef</code>. See the\n<cite><a href=\"https://www.w3.org/TR/did-core/\">Decentralized Identifiers (DIDs) v1.0</a></cite> specification for further details."
     },
     {
@@ -165,6 +171,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "The <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-graphs\">graph</a> containing all <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims\">claims</a> that are not explicitly part of\na <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-named-graphs\">named graph</a>."
     },
     {
@@ -190,6 +197,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "Anything that can be referenced in statements as an abstract or concrete noun.\nEntities include but are not limited to people, organizations, physical things,\ndocuments, abstract concepts, fictional characters, and arbitrary text. Any\nentity might perform roles in the ecosystem, if it can do so. Note\nthat some entities fundamentally cannot take actions, for example, the string \"abc\"\ncannot issue credentials."
     },
     {
@@ -214,6 +222,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "A set of claims, forming a network of information composed of <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-subjects\">subjects</a>\nand their relationship to other <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-subjects\">subjects</a> or data. Each <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims\">claim</a> is\npart of a graph; either explicit in the case of <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-named-graphs\">named graphs</a>, or\nimplicit for the <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-default-graph\">default graph</a>."
     },
     {
@@ -240,6 +249,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "A role an <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-entities\">entity</a> might perform by possessing one or more\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a> and generating <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-presentation\">verifiable presentations</a>\nfrom them. A holder is often, but not always, a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-subjects\">subject</a> of the\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a> they are holding. Holders store their\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-credential\">credentials</a> in <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-credential-repositories\">credential repositories</a>."
     },
     {
@@ -265,6 +275,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "A role an <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-entities\">entity</a> can perform by asserting <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims\">claims</a> about one or\nmore <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-subjects\">subjects</a>, creating a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> from these\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims\">claims</a>, and transmitting the <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> to a\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-holders\">holder</a>."
     },
     {
@@ -289,6 +300,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "A <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-graphs\">graph</a> associated with specific properties, such as\n<code>verifiableCredential</code>. These properties\nresult in separate <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-graphs\">graphs</a> that contain all <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims\">claims</a> defined in the\ncorresponding JSON objects."
     },
     {
@@ -313,6 +325,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "Data derived from one or more <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a> issued by one or\nmore <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuers</a> that is shared with a specific <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a>."
     },
     {
@@ -337,6 +350,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "Software, such as a file system, storage vault, or personal <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> wallet, that stores and protects access to <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-holders\">holders'</a>\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a>."
     },
     {
@@ -360,6 +374,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "The ability of a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-holders\">holder</a> to make fine-grained decisions about what\ninformation to share."
     },
     {
@@ -383,6 +398,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "A type of <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-selective-disclosure\">selective disclosure</a> where <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-presentation\">presentations</a> cannot be correlated\nbetween <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifiers</a>."
     },
     {
@@ -408,6 +424,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "A thing about which <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims\">claims</a> are made."
     },
     {
@@ -433,6 +450,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "The assurance that a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims\">claim</a> from a specific <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a> satisfies the business\nrequirements of a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a> for a particular use. This specification defines\nhow verifiers verify <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a> and <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-presentation\">verifiable presentations</a>. It also specifies that <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifiers</a> validate claims in\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a> before relying on them. However, the means for such\nvalidation vary widely and are outside the scope of this specification.\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">Verifiers</a> trust certain <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuers</a> for certain claims and apply their own\nrules to determine which claims in which <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-credential\">credentials</a> are suitable for use by\ntheir systems."
     },
     {
@@ -456,6 +474,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "A tamper-evident <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-credential\">credential</a> whose authorship can be cryptographically\nverified. Verifiable credentials can be used to build\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-presentation\">verifiable presentations</a>, which can also be cryptographically verifiable."
     },
     {
@@ -480,6 +499,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "A role a system might perform by mediating the creation and <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verify\">verification</a>\nof identifiers, <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verification-material\">verification material</a>, and other relevant data, such as\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> schemas, revocation registries,\nand so on, which might require using <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a>. Some\nconfigurations might require correlatable identifiers for <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-subjects\">subjects</a>. Some\nregistries, such as ones for UUIDs and <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verification-material\">verification material</a>, might act\nas namespaces for identifiers."
     },
     {
@@ -503,6 +523,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "A tamper-evident presentation of information encoded in such a way that\nauthorship of the data can be trusted after a process of cryptographic\nverification. Certain types of verifiable presentations might contain data that\nis synthesized from, but does not contain, the original <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a>\n(for example, zero-knowledge proofs)."
     },
     {
@@ -531,6 +552,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "The evaluation of whether a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> or <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-presentation\">verifiable presentation</a> is an authentic and current statement of the issuer or presenter,\nrespectively. This includes checking that the credential or presentation\nconforms to the specification, the securing mechanism is satisfied, and, if\npresent, the status check succeeds. Verification of a credential does not imply\nevaluation of the truth of <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims\">claims</a> encoded in the credential."
     },
     {
@@ -558,6 +580,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "A role an <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-entities\">entity</a> performs by receiving one or more\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a>, optionally inside a\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-presentation\">verifiable presentation</a> for processing. Other specifications might refer\nto this concept as a <dfn>relying party</dfn>."
     },
     {
@@ -581,7 +604,8 @@
         ],
         "number": "2"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-verification-material",
@@ -604,6 +628,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "Information that is used to verify the security of cryptographically\nprotected information. For example, a cryptographic public key is used to verify\na digital signature associated with a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>."
     },
     {
@@ -628,6 +653,7 @@
         "number": "2"
       },
       "definedIn": "dt",
+      "links": [],
       "htmlProse": "A Uniform Resource Locator, as defined by the <cite><a href=\"https://url.spec.whatwg.org/\">URL Standard</a></cite>. URLs can be\ndereferenced to result in a resource, such as a document. The rules\nfor dereferencing, or fetching, a URL are defined by the URL <a href=\"https://url.spec.whatwg.org/#concept-url-scheme\">scheme</a>.\nThis specification does not use the term URI or IRI because those terms have\nbeen deemed to be confusing to Web developers."
     },
     {
@@ -651,7 +677,8 @@
         ],
         "number": "3.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-value",
@@ -673,7 +700,8 @@
         ],
         "number": "3.1"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-proof-graph",
@@ -695,7 +723,8 @@
         ],
         "number": "3.2"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-created",
@@ -717,7 +746,8 @@
         ],
         "number": "3.3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-context",
@@ -739,7 +769,8 @@
         ],
         "number": "4.3"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-id",
@@ -761,7 +792,8 @@
         ],
         "number": "4.4"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-type",
@@ -784,7 +816,8 @@
         ],
         "number": "4.5"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-name",
@@ -806,7 +839,8 @@
         ],
         "number": "4.6"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-description",
@@ -828,7 +862,8 @@
         ],
         "number": "4.6"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "defn-credentialSubject",
@@ -850,7 +885,8 @@
         ],
         "number": "4.8"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-securing-mechanism",
@@ -873,7 +909,8 @@
         ],
         "number": "4.12"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-enveloping-proof",
@@ -895,7 +932,8 @@
         ],
         "number": "4.12"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-embedded-proof",
@@ -917,7 +955,8 @@
         ],
         "number": "4.12"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-verifiable-presentation-graph",
@@ -939,7 +978,8 @@
         ],
         "number": "4.13"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "defn-evidence",
@@ -961,7 +1001,8 @@
         ],
         "number": "5.6"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "links": []
     },
     {
       "id": "dfn-verifiable-credential-graph",
@@ -983,7 +1024,8 @@
         ],
         "number": "5.12"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-verifiablecredentialgraph",
@@ -1005,7 +1047,8 @@
         ],
         "number": "5.12"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-general-json-ld-processing",
@@ -1027,7 +1070,8 @@
         ],
         "number": "6.3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-type-specific-credential-processing",
@@ -1049,7 +1093,8 @@
         ],
         "number": "6.3"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-problemdetails",
@@ -1071,7 +1116,8 @@
         ],
         "number": "7.2"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dfn-bearer-credentials",
@@ -1094,7 +1140,8 @@
         ],
         "number": "8.10"
       },
-      "definedIn": "prose"
+      "definedIn": "prose",
+      "links": []
     }
   ]
 }

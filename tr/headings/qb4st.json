@@ -1,0 +1,366 @@
+{
+  "spec": {
+    "title": "QB4ST: RDF Data Cube extensions for spatio-temporal components",
+    "url": "https://www.w3.org/TR/qb4st/"
+  },
+  "headings": [
+    {
+      "id": "respecDocument",
+      "href": "https://www.w3.org/TR/qb4st/#respecDocument",
+      "level": 1,
+      "title": "QB4ST: RDF Data Cube extensions for spatio-temporal components",
+      "alternateIds": [
+        "title"
+      ]
+    },
+    {
+      "id": "w3c-working-group-note-28-september-2017",
+      "href": "https://www.w3.org/TR/qb4st/#w3c-working-group-note-28-september-2017",
+      "level": 2,
+      "title": "W3C Working Group Note 28 September 2017"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/qb4st/#abstract",
+      "level": 2,
+      "title": "Abstract",
+      "alternateIds": [
+        "abstract-0"
+      ]
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/qb4st/#sotd",
+      "level": 2,
+      "title": "Status of This Document",
+      "alternateIds": [
+        "status-of-this-document"
+      ]
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/qb4st/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "Introduction",
+      "href": "https://www.w3.org/TR/qb4st/#Introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1.-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "motivation",
+      "href": "https://www.w3.org/TR/qb4st/#motivation",
+      "level": 3,
+      "title": "Motivation",
+      "alternateIds": [
+        "x1.1-motivation"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "namespaces",
+      "href": "https://www.w3.org/TR/qb4st/#namespaces",
+      "level": 2,
+      "title": "Namespaces and Document Conventions",
+      "alternateIds": [
+        "x2.-namespaces-and-document-conventions"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/qb4st/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "alternateIds": [
+        "x3.-conformance"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "h2_conformance",
+      "href": "https://www.w3.org/TR/qb4st/#h2_conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "Background",
+      "href": "https://www.w3.org/TR/qb4st/#Background",
+      "level": 2,
+      "title": "Background",
+      "alternateIds": [
+        "x4.-background"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "Datacube",
+      "href": "https://www.w3.org/TR/qb4st/#Datacube",
+      "level": 3,
+      "title": "The RDF Data Cube",
+      "alternateIds": [
+        "x4.1-the-rdf-data-cube"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "SDMX",
+      "href": "https://www.w3.org/TR/qb4st/#SDMX",
+      "level": 3,
+      "title": "SDMX Dimensions",
+      "alternateIds": [
+        "x4.2-sdmx-dimensions"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "OWL-Time",
+      "href": "https://www.w3.org/TR/qb4st/#OWL-Time",
+      "level": 3,
+      "title": "OWL Time",
+      "alternateIds": [
+        "x4.3-owl-time"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "Spatial",
+      "href": "https://www.w3.org/TR/qb4st/#Spatial",
+      "level": 3,
+      "title": "Spatial Concepts",
+      "alternateIds": [
+        "x4.4-spatial-concepts"
+      ],
+      "number": "4.4"
+    },
+    {
+      "id": "OLAP",
+      "href": "https://www.w3.org/TR/qb4st/#OLAP",
+      "level": 3,
+      "title": "OLAP Concepts - Dimension Levels, functions",
+      "alternateIds": [
+        "x4.5-olap-concepts-dimension-levels,-functions"
+      ],
+      "number": "4.5"
+    },
+    {
+      "id": "Requirements",
+      "href": "https://www.w3.org/TR/qb4st/#Requirements",
+      "level": 2,
+      "title": "Requirements",
+      "alternateIds": [
+        "x5.-requirements"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "ReuseQB",
+      "href": "https://www.w3.org/TR/qb4st/#ReuseQB",
+      "level": 3,
+      "title": "Reuse of stable ontologies",
+      "alternateIds": [
+        "x5.1-reuse-of-stable-ontologies"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "ExtendQB",
+      "href": "https://www.w3.org/TR/qb4st/#ExtendQB",
+      "level": 3,
+      "title": "Attaching attributes to specific components",
+      "alternateIds": [
+        "x5.2-attaching-attributes-to-specific-components"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "codedProperties",
+      "href": "https://www.w3.org/TR/qb4st/#codedProperties",
+      "level": 3,
+      "title": "Refining the range of CodedProperties",
+      "alternateIds": [
+        "x5.3-refining-the-range-of-codedproperties"
+      ],
+      "number": "5.3"
+    },
+    {
+      "id": "specialisationHierarchies",
+      "href": "https://www.w3.org/TR/qb4st/#specialisationHierarchies",
+      "level": 3,
+      "title": "Specialization Hierarchies of qb:ComponentProperty instances",
+      "alternateIds": [
+        "x5.4-specialization-hierarchies-of-qb:componentproperty-instances"
+      ],
+      "number": "5.4"
+    },
+    {
+      "id": "boundingEnvelopes",
+      "href": "https://www.w3.org/TR/qb4st/#boundingEnvelopes",
+      "level": 3,
+      "title": "Defining the bounding envelopes of spatial and temporal properties",
+      "alternateIds": [
+        "x5.5-defining-the-bounding-envelopes-of-spatial-and-temporal-properties"
+      ],
+      "number": "5.5"
+    },
+    {
+      "id": "nested",
+      "href": "https://www.w3.org/TR/qb4st/#nested",
+      "level": 3,
+      "title": "Identification of nested spatial elements",
+      "alternateIds": [
+        "x5.6-identification-of-nested-spatial-elements"
+      ],
+      "number": "5.6"
+    },
+    {
+      "id": "QB4ST",
+      "href": "https://www.w3.org/TR/qb4st/#QB4ST",
+      "level": 2,
+      "title": "Vocabulary Reference",
+      "alternateIds": [
+        "x6.-vocabulary-reference"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "SpatialConcepts",
+      "href": "https://www.w3.org/TR/qb4st/#SpatialConcepts",
+      "level": 3,
+      "title": "Spatial Concepts",
+      "alternateIds": [
+        "x6.1-spatial-concepts"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "DefiningProperties",
+      "href": "https://www.w3.org/TR/qb4st/#DefiningProperties",
+      "level": 3,
+      "title": "Spatio-Temporal attributes of dataset properties",
+      "alternateIds": [
+        "x6.2-spatio-temporal-attributes-of-dataset-properties"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "GeoMeasureExample",
+      "href": "https://www.w3.org/TR/qb4st/#GeoMeasureExample",
+      "level": 3,
+      "title": "Example: W3C Basic Geo described using QB4ST",
+      "alternateIds": [
+        "x6.3-example:-w3c-basic-geo-described-using-qb4st"
+      ],
+      "number": "6.3"
+    },
+    {
+      "id": "GridCoverageExample",
+      "href": "https://www.w3.org/TR/qb4st/#GridCoverageExample",
+      "level": 3,
+      "title": "Example: Gridded coverage described using QB4ST",
+      "alternateIds": [
+        "x6.4-example:-gridded-coverage-described-using-qb4st"
+      ],
+      "number": "6.4"
+    },
+    {
+      "id": "NestedFeaturesExample",
+      "href": "https://www.w3.org/TR/qb4st/#NestedFeaturesExample",
+      "level": 3,
+      "title": "Example: Nested Spatial Reference Features using QB4ST",
+      "alternateIds": [
+        "x6.5-example:-nested-spatial-reference-features-using-qb4st"
+      ],
+      "number": "6.5"
+    },
+    {
+      "id": "qb4st-specializations-of-rdf-data-cube-properties",
+      "href": "https://www.w3.org/TR/qb4st/#qb4st-specializations-of-rdf-data-cube-properties",
+      "level": 3,
+      "title": "QB4ST specializations of RDF Data Cube Properties",
+      "alternateIds": [
+        "x6.6-qb4st-specializations-of-rdf-data-cube-properties"
+      ],
+      "number": "6.6"
+    },
+    {
+      "id": "DefiningDSD",
+      "href": "https://www.w3.org/TR/qb4st/#DefiningDSD",
+      "level": 3,
+      "title": "Classification of datasets as spatial, temporal or spatio-temporal.",
+      "alternateIds": [
+        "x6.7-classification-of-datasets-as-spatial,-temporal-or-spatio-temporal."
+      ],
+      "number": "6.7"
+    },
+    {
+      "id": "componentSpecifications",
+      "href": "https://www.w3.org/TR/qb4st/#componentSpecifications",
+      "level": 3,
+      "title": "Defining Spatio-Temporal properties of Datasets",
+      "alternateIds": [
+        "x6.8-defining-spatio-temporal-properties-of-datasets"
+      ],
+      "number": "6.8"
+    },
+    {
+      "id": "hierarchies",
+      "href": "https://www.w3.org/TR/qb4st/#hierarchies",
+      "level": 3,
+      "title": "Defining Hierarchies of component specialisations",
+      "alternateIds": [
+        "x6.9-defining-hierarchies-of-component-specialisations"
+      ],
+      "number": "6.9"
+    },
+    {
+      "id": "SDMXextensions",
+      "href": "https://www.w3.org/TR/qb4st/#SDMXextensions",
+      "level": 2,
+      "title": "SDMX extensions to QB",
+      "alternateIds": [
+        "a.-sdmx-extensions-to-qb"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/qb4st/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "b.-references"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/qb4st/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "b.1-normative-references"
+      ],
+      "number": "B.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/qb4st/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "b.2-informative-references"
+      ],
+      "number": "B.2"
+    }
+  ]
+}
