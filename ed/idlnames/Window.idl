@@ -176,7 +176,7 @@ partial interface Window {
 
 // Source: CSS Object Model (CSSOM) (https://www.w3.org/TR/cssom-1/)
 partial interface Window {
-  [NewObject] CSSStyleDeclaration getComputedStyle(Element elt, optional CSSOMString? pseudoElt);
+  [NewObject] CSSStyleProperties getComputedStyle(Element elt, optional CSSOMString? pseudoElt);
 };
 
 // Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)

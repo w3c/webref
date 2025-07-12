@@ -2287,7 +2287,7 @@
         "href": "https://drafts.csswg.org/cssom-1/#cssstyleproperties"
       },
       "ElementCSSInlineStyle": {
-        "fragment": "interface mixin ElementCSSInlineStyle {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
+        "fragment": "interface mixin ElementCSSInlineStyle {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleProperties style;\n};",
         "type": "interface mixin",
         "name": "ElementCSSInlineStyle",
         "inheritance": null,
@@ -2301,7 +2301,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "CSSStyleDeclaration"
+              "idlType": "CSSStyleProperties"
             },
             "extAttrs": [
               {
@@ -2625,7 +2625,7 @@
       ],
       "Window": [
         {
-          "fragment": "partial interface Window {\n  [NewObject] CSSStyleDeclaration getComputedStyle(Element elt, optional CSSOMString? pseudoElt);\n};",
+          "fragment": "partial interface Window {\n  [NewObject] CSSStyleProperties getComputedStyle(Element elt, optional CSSOMString? pseudoElt);\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
@@ -2639,7 +2639,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "CSSStyleDeclaration"
+                "idlType": "CSSStyleProperties"
               },
               "arguments": [
                 {
@@ -2799,7 +2799,7 @@
         "CSSOMString"
       ],
       "ElementCSSInlineStyle": [
-        "CSSStyleDeclaration"
+        "CSSStyleProperties"
       ],
       "HTMLElement": [
         "ElementCSSInlineStyle"
@@ -2811,7 +2811,7 @@
         "ElementCSSInlineStyle"
       ],
       "Window": [
-        "CSSStyleDeclaration",
+        "CSSStyleProperties",
         "Element",
         "CSSOMString"
       ],
