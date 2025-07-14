@@ -573,6 +573,28 @@
       "links": []
     },
     {
+      "id": "dom-attributionimpressionoptions-priority",
+      "href": "https://w3c.github.io/ppa/#dom-attributionimpressionoptions-priority",
+      "linkingText": [
+        "priority"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AttributionImpressionOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "save-impression-api",
+        "href": "https://w3c.github.io/ppa/#save-impression-api",
+        "title": "Saving Impressions",
+        "number": "3.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "dictdef-attributionconversionoptions",
       "href": "https://w3c.github.io/ppa/#dictdef-attributionconversionoptions",
       "linkingText": [
@@ -581,6 +603,28 @@
       "localLinkingText": [],
       "type": "dictionary",
       "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "measure-conversion-api",
+        "href": "https://w3c.github.io/ppa/#measure-conversion-api",
+        "title": "Requesting Attribution for a Conversion",
+        "number": "3.5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-attributionconversionoptions-logicoptions",
+      "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-logicoptions",
+      "linkingText": [
+        "logicOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AttributionConversionOptions"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -613,15 +657,57 @@
       "links": []
     },
     {
-      "id": "dom-attributionlogic-last-touch",
-      "href": "https://w3c.github.io/ppa/#dom-attributionlogic-last-touch",
+      "id": "dom-attributionlogic-last-n-touch",
+      "href": "https://w3c.github.io/ppa/#dom-attributionlogic-last-n-touch",
       "linkingText": [
-        "\"last-touch\""
+        "\"last-n-touch\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
         "AttributionLogic"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "measure-conversion-api",
+        "href": "https://w3c.github.io/ppa/#measure-conversion-api",
+        "title": "Requesting Attribution for a Conversion",
+        "number": "3.5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dictdef-attributionlogicoptions",
+      "href": "https://w3c.github.io/ppa/#dictdef-attributionlogicoptions",
+      "linkingText": [
+        "AttributionLogicOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "measure-conversion-api",
+        "href": "https://w3c.github.io/ppa/#measure-conversion-api",
+        "title": "Requesting Attribution for a Conversion",
+        "number": "3.5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-attributionlogicoptions-credit",
+      "href": "https://w3c.github.io/ppa/#dom-attributionlogicoptions-credit",
+      "linkingText": [
+        "credit"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AttributionLogicOptions"
       ],
       "access": "public",
       "informative": false,
@@ -1141,6 +1227,28 @@
       "href": "https://w3c.github.io/ppa/#impression-histogram-index",
       "linkingText": [
         "Histogram Index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "impression"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "impression-store-contents",
+        "href": "https://w3c.github.io/ppa/#impression-store-contents",
+        "title": "Contents",
+        "number": "4.1.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "impression-priority",
+      "href": "https://w3c.github.io/ppa/#impression-priority",
+      "linkingText": [
+        "Priority"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1683,6 +1791,28 @@
       "links": []
     },
     {
+      "id": "validated-conversion-options-logic-options",
+      "href": "https://w3c.github.io/ppa/#validated-conversion-options-logic-options",
+      "linkingText": [
+        "Logic Options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "validated conversion options"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "measure-conversion-api-operation",
+        "href": "https://w3c.github.io/ppa/#measure-conversion-api-operation",
+        "title": "Measure Conversion Algorithm",
+        "number": "4.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
       "id": "validated-conversion-options-value",
       "href": "https://w3c.github.io/ppa/#validated-conversion-options-value",
       "linkingText": [
@@ -1847,10 +1977,10 @@
       "links": []
     },
     {
-      "id": "fill-a-histogram-with-last-touch-attribution",
-      "href": "https://w3c.github.io/ppa/#fill-a-histogram-with-last-touch-attribution",
+      "id": "fairly-allocate-credit",
+      "href": "https://w3c.github.io/ppa/#fairly-allocate-credit",
       "linkingText": [
-        "fill a histogram with last-touch attribution"
+        "fairly allocate credit"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1858,9 +1988,29 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "last-touch-attribution",
-        "href": "https://w3c.github.io/ppa/#last-touch-attribution",
-        "title": "Last-Touch Attribution",
+        "id": "last-n-touch-attribution",
+        "href": "https://w3c.github.io/ppa/#last-n-touch-attribution",
+        "title": "Last-N-Touch Attribution",
+        "number": "4.4.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "fill-a-histogram-with-last-n-touch-attribution",
+      "href": "https://w3c.github.io/ppa/#fill-a-histogram-with-last-n-touch-attribution",
+      "linkingText": [
+        "fill a histogram with last-n-touch attribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "last-n-touch-attribution",
+        "href": "https://w3c.github.io/ppa/#last-n-touch-attribution",
+        "title": "Last-N-Touch Attribution",
         "number": "4.4.2.1"
       },
       "definedIn": "prose",
@@ -1935,6 +2085,28 @@
       "href": "https://w3c.github.io/ppa/#save-impression-histogram-index",
       "linkingText": [
         "histogram-index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "save-impression"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api",
+        "href": "https://w3c.github.io/ppa/#http-api",
+        "title": "HTTP API",
+        "number": "5"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "save-impression-priority",
+      "href": "https://w3c.github.io/ppa/#save-impression-priority",
+      "linkingText": [
+        "priority"
       ],
       "localLinkingText": [],
       "type": "dfn",
