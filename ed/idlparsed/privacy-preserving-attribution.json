@@ -158,7 +158,7 @@
         "href": "https://w3c.github.io/ppa/#attribution"
       },
       "AttributionImpressionOptions": {
-        "fragment": "dictionary AttributionImpressionOptions {\n  required unsigned long histogramIndex;\n  unsigned long matchValue = 0;\n  sequence<USVString> conversionSites = [];\n  sequence<USVString> conversionCallers = [];\n  unsigned long lifetimeDays = 30;\n};",
+        "fragment": "dictionary AttributionImpressionOptions {\n  required unsigned long histogramIndex;\n  unsigned long matchValue = 0;\n  sequence<USVString> conversionSites = [];\n  sequence<USVString> conversionCallers = [];\n  unsigned long lifetimeDays = 30;\n  long priority = 0;\n};",
         "type": "dictionary",
         "name": "AttributionImpressionOptions",
         "inheritance": null,
@@ -272,6 +272,25 @@
             },
             "required": false,
             "href": "https://w3c.github.io/ppa/#dom-attributionimpressionoptions-lifetimedays"
+          },
+          {
+            "type": "field",
+            "name": "priority",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-attributionimpressionoptions-priority"
           }
         ],
         "extAttrs": [],
@@ -289,7 +308,7 @@
         "href": "https://w3c.github.io/ppa/#dictdef-attributionimpressionresult"
       },
       "AttributionConversionOptions": {
-        "fragment": "dictionary AttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  unsigned long lookbackDays;\n  sequence<unsigned long> matchValues = [];\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> impressionCallers = [];\n\n  AttributionLogic logic = \"last-touch\";\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n};",
+        "fragment": "dictionary AttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  unsigned long lookbackDays;\n  sequence<unsigned long> matchValues = [];\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> impressionCallers = [];\n\n  AttributionLogic logic = \"last-n-touch\";\n  AttributionLogicOptions logicOptions;\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n};",
         "type": "dictionary",
         "name": "AttributionConversionOptions",
         "inheritance": null,
@@ -459,10 +478,26 @@
             },
             "default": {
               "type": "string",
-              "value": "last-touch"
+              "value": "last-n-touch"
             },
             "required": false,
             "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-logic"
+          },
+          {
+            "type": "field",
+            "name": "logicOptions",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AttributionLogicOptions"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-logicoptions"
           },
           {
             "type": "field",
@@ -508,18 +543,54 @@
         "href": "https://w3c.github.io/ppa/#dictdef-attributionconversionoptions"
       },
       "AttributionLogic": {
-        "fragment": "enum AttributionLogic {\n  \"last-touch\",\n};",
+        "fragment": "enum AttributionLogic {\n  \"last-n-touch\",\n};",
         "type": "enum",
         "name": "AttributionLogic",
         "values": [
           {
             "type": "enum-value",
-            "value": "last-touch",
-            "href": "https://w3c.github.io/ppa/#dom-attributionlogic-last-touch"
+            "value": "last-n-touch",
+            "href": "https://w3c.github.io/ppa/#dom-attributionlogic-last-n-touch"
           }
         ],
         "extAttrs": [],
         "href": "https://w3c.github.io/ppa/#enumdef-attributionlogic"
+      },
+      "AttributionLogicOptions": {
+        "fragment": "dictionary AttributionLogicOptions {\n  sequence<double> credit;\n};",
+        "type": "dictionary",
+        "name": "AttributionLogicOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "credit",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/ppa/#dom-attributionlogicoptions-credit"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/ppa/#dictdef-attributionlogicoptions"
       },
       "AttributionConversionResult": {
         "fragment": "dictionary AttributionConversionResult {\n  required Uint8Array report;\n};",
@@ -757,8 +828,10 @@
       "AttributionImpressionOptions": [],
       "AttributionImpressionResult": [],
       "AttributionConversionOptions": [
-        "AttributionLogic"
+        "AttributionLogic",
+        "AttributionLogicOptions"
       ],
+      "AttributionLogicOptions": [],
       "AttributionConversionResult": [
         "Uint8Array"
       ]
