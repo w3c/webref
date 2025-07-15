@@ -371,11 +371,11 @@
                       "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-value\" id=\"ref-for-dom-attributionconversionoptions-value②\">value</a></code>\nis greater than <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-maxvalue\" id=\"ref-for-dom-attributionconversionoptions-maxvalue①\">maxValue</a></code>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror⑦\">RangeError</a></code>.</p>"
                     },
                     {
-                      "html": "If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dictdef-attributionconversionoptions\" id=\"ref-for-dictdef-attributionconversionoptions③\">AttributionConversionOptions</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionlogicoptions-credit\" id=\"ref-for-dom-attributionlogicoptions-credit\">credit</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exists</a>:",
+                      "html": "If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-logicoptions\" id=\"ref-for-dom-attributionconversionoptions-logicoptions\">logicOptions</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionlogicoptions-credit\" id=\"ref-for-dom-attributionlogicoptions-credit\">credit</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exists</a>:",
                       "rationale": "set",
                       "steps": [
                         {
-                          "html": "<p>Set <var>credit</var> to <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dictdef-attributionconversionoptions\" id=\"ref-for-dictdef-attributionconversionoptions④\">AttributionConversionOptions</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionlogicoptions-credit\" id=\"ref-for-dom-attributionlogicoptions-credit①\">credit</a></code>.</p>"
+                          "html": "<p>Set <var>credit</var> to <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionconversionoptions-logicoptions\" id=\"ref-for-dom-attributionconversionoptions-logicoptions①\">logicOptions</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ppa/#dom-attributionlogicoptions-credit\" id=\"ref-for-dom-attributionlogicoptions-credit①\">credit</a></code>.</p>"
                         },
                         {
                           "html": "<p>If <var>credit</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> or <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is empty</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror⑧\">RangeError</a></code>.</p>"
@@ -583,7 +583,7 @@
           "html": "<p>Let <var>shuffledFractionalIndices</var> be <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-get-the-indices\" id=\"ref-for-list-get-the-indices\">the indices</a> of <var>credit</var>, ordered randomly.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove③\">Remove</a> any index <var>i</var> from <var>shuffledFractionalIndices</var> where <var>rawNormalizedCredit</var>[<var>i</var>] has no fractional part.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove③\">Remove</a> all indices <var>i</var> from <var>shuffledFractionalIndices</var> where <var>rawNormalizedCredit</var>[<var>i</var>] has no fractional part.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>index</var> of <var>shuffledFractionalIndices</var>:",
