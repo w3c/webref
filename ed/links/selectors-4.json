@@ -99,6 +99,7 @@
       "https://drafts.csswg.org/css-display/": {},
       "https://drafts.csswg.org/css-multicol-2/": {},
       "https://drafts.csswg.org/css-namespaces/": {},
+      "https://drafts.csswg.org/css-position-4/": {},
       "https://drafts.csswg.org/css-pseudo-4/": {},
       "https://drafts.csswg.org/css-scoping/": {},
       "https://drafts.csswg.org/css-style-attr/": {},
@@ -178,8 +179,7 @@
           "selector-enabled",
           "selector-read-only",
           "selector-default",
-          "selector-checked",
-          "selector-indeterminate"
+          "selector-checked"
         ]
       },
       "https://infra.spec.whatwg.org/": {},
@@ -242,10 +242,10 @@
           "concept-document-quirks",
           "documentfragment",
           "dom-node-parentnode",
+          "concept-tree-root",
           "document-element",
           "concept-tree-inclusive-sibling",
           "concept-tree",
-          "concept-tree-root",
           "concept-shadow-including-tree-order",
           "concept-tree-descendant"
         ]
@@ -280,14 +280,19 @@
           "default-namespace"
         ]
       },
+      "https://drafts.csswg.org/css-position-4/": {
+        "anchors": [
+          "document-top-layer"
+        ]
+      },
       "https://drafts.csswg.org/css-pseudo-4/": {
         "anchors": [
+          "tree-abiding",
           "selectordef-before",
           "selectordef-marker",
           "selectordef-first-line",
           "selectordef-first-letter",
-          "selectordef-after",
-          "tree-abiding"
+          "selectordef-after"
         ]
       },
       "https://drafts.csswg.org/css-scoping-1/": {
@@ -348,6 +353,11 @@
           "x"
         ]
       },
+      "https://drafts.csswg.org/selectors-4/": {
+        "anchors": [
+          "target-within-pseudo"
+        ]
+      },
       "https://fullscreen.spec.whatwg.org/": {
         "anchors": [
           "dom-element-requestfullscreen"
@@ -374,7 +384,10 @@
         "anchors": [
           "the-button-element",
           "the-select-element",
-          "the-textarea-element"
+          "the-textarea-element",
+          "the-option-element",
+          "dom-option-selected",
+          "the-progress-element"
         ]
       },
       "https://html.spec.whatwg.org/multipage/forms.html": {
@@ -404,7 +417,9 @@
       "https://html.spec.whatwg.org/multipage/input.html": {
         "anchors": [
           "the-input-element",
-          "attr-input-placeholder"
+          "attr-input-placeholder",
+          "dom-input-indeterminate",
+          "dom-input-checked"
         ]
       },
       "https://html.spec.whatwg.org/multipage/interactive-elements.html": {

@@ -78,12 +78,6 @@
       "value": ":target"
     },
     {
-      "name": ":target-within",
-      "prose": "The :target-within pseudo-class applies to any element to which the :target pseudo-class applies as well as to any element whose descendant in the flat tree (including non-element nodes, such as text nodes) matches the conditions for matching :target.",
-      "href": "https://drafts.csswg.org/selectors-4/#target-within-pseudo",
-      "value": ":target-within"
-    },
-    {
       "name": ":scope",
       "prose": "In some contexts, selectors are matched with respect to one or more scoping roots, such as when calling the querySelector() method in [DOM]. The :scope pseudo-class represents this scoping root, and may be either a true element or a virtual one (such as a DocumentFragment).",
       "href": "https://drafts.csswg.org/selectors-4/#scope-pseudo",
@@ -258,13 +252,19 @@
     },
     {
       "name": ":checked",
-      "prose": "Radio and checkbox elements can be toggled by the user. Some menu items are “checked” when the user selects them. When such elements are toggled “on” the :checked pseudo-class applies. For example, [HTML5] defines that checked checkboxes, radio buttons, and selected <option> elements match :checked.",
+      "prose": "When such elements are toggled “on” the :checked pseudo-class applies. For example, [HTML5] defines that checked checkboxes, radio buttons, and selected <option> elements match :checked. Similarly, when such elements are toggled “off”, the :unchecked pseudo-class applies.",
       "href": "https://drafts.csswg.org/selectors-4/#checked-pseudo",
       "value": ":checked"
     },
     {
+      "name": ":unchecked",
+      "prose": "When such elements are toggled “on” the :checked pseudo-class applies. For example, [HTML5] defines that checked checkboxes, radio buttons, and selected <option> elements match :checked. Similarly, when such elements are toggled “off”, the :unchecked pseudo-class applies.",
+      "href": "https://drafts.csswg.org/selectors-4/#unchecked-pseudo",
+      "value": ":unchecked"
+    },
+    {
       "name": ":indeterminate",
-      "prose": "The :indeterminate pseudo-class applies to UI elements whose value is in an indeterminate state. For example, radio and checkbox elements can be toggled between checked and unchecked states, but are sometimes in an indeterminate state, neither checked nor unchecked. Similarly a progress meter can be in an indeterminate state when the percent completion is unknown. For example, [HTML5] defines how checkboxes can be made to match :indeterminate.",
+      "prose": "If an element that could match :checked or :unchecked is neither \"on\" nor \"off\", the :indeterminate pseudo-class applies. :indeterminate also matches elements which do not have a notion of being \"checked\", but whose \"value\" is still in an indeterminate state, such as a progress meter whose progress percentage is unknown.",
       "href": "https://drafts.csswg.org/selectors-4/#indeterminate-pseudo",
       "value": ":indeterminate"
     },
