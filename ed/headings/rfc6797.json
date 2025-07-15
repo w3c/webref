@@ -1,0 +1,554 @@
+{
+  "spec": {
+    "title": "RFC 6797: HTTP Strict Transport Security (HSTS)",
+    "url": "https://www.rfc-editor.org/rfc/rfc6797"
+  },
+  "headings": [
+    {
+      "id": "section-1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-1",
+      "title": "Introduction",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "section-1.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-1.1",
+      "title": "Organization of This Specification",
+      "level": 2,
+      "number": "1.1"
+    },
+    {
+      "id": "section-1.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-1.2",
+      "title": "Document Conventions",
+      "level": 2,
+      "number": "1.2"
+    },
+    {
+      "id": "section-2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-2",
+      "title": "Overview",
+      "level": 1,
+      "number": "2"
+    },
+    {
+      "id": "section-2.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-2.1",
+      "title": "Use Cases",
+      "level": 2,
+      "number": "2.1"
+    },
+    {
+      "id": "section-2.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-2.2",
+      "title": "HTTP Strict Transport Security Policy Effects",
+      "level": 2,
+      "number": "2.2"
+    },
+    {
+      "id": "section-2.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-2.3",
+      "title": "Threat Model",
+      "level": 2,
+      "number": "2.3"
+    },
+    {
+      "id": "section-2.3.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-2.3.1",
+      "title": "Threats Addressed",
+      "level": 3,
+      "number": "2.3.1"
+    },
+    {
+      "id": "section-2.3.1.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-2.3.1.1",
+      "title": "Passive Network Attackers",
+      "level": 4,
+      "number": "2.3.1.1"
+    },
+    {
+      "id": "section-2.3.1.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-2.3.1.2",
+      "title": "Active Network Attackers",
+      "level": 4,
+      "number": "2.3.1.2"
+    },
+    {
+      "id": "section-2.3.1.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-2.3.1.3",
+      "title": "Web Site Development and Deployment Bugs",
+      "level": 4,
+      "number": "2.3.1.3"
+    },
+    {
+      "id": "section-2.3.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-2.3.2",
+      "title": "Threats Not Addressed",
+      "level": 3,
+      "number": "2.3.2"
+    },
+    {
+      "id": "section-2.3.2.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-2.3.2.1",
+      "title": "Phishing",
+      "level": 4,
+      "number": "2.3.2.1"
+    },
+    {
+      "id": "section-2.3.2.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-2.3.2.2",
+      "title": "Malware and Browser Vulnerabilities",
+      "level": 4,
+      "number": "2.3.2.2"
+    },
+    {
+      "id": "section-2.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-2.4",
+      "title": "Requirements",
+      "level": 2,
+      "number": "2.4"
+    },
+    {
+      "id": "section-2.4.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-2.4.1",
+      "title": "Overall Requirement",
+      "level": 3,
+      "number": "2.4.1"
+    },
+    {
+      "id": "section-2.4.1.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-2.4.1.1",
+      "title": "Detailed Core Requirements",
+      "level": 4,
+      "number": "2.4.1.1"
+    },
+    {
+      "id": "section-2.4.1.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-2.4.1.2",
+      "title": "Detailed Ancillary Requirements",
+      "level": 4,
+      "number": "2.4.1.2"
+    },
+    {
+      "id": "section-3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-3",
+      "title": "Conformance Criteria",
+      "level": 1,
+      "number": "3"
+    },
+    {
+      "id": "section-4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-4",
+      "title": "Terminology",
+      "level": 1,
+      "number": "4"
+    },
+    {
+      "id": "section-5",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-5",
+      "title": "HSTS Mechanism Overview",
+      "level": 1,
+      "number": "5"
+    },
+    {
+      "id": "section-5.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-5.1",
+      "title": "HSTS Host Declaration",
+      "level": 2,
+      "number": "5.1"
+    },
+    {
+      "id": "section-5.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-5.2",
+      "title": "HSTS Policy",
+      "level": 2,
+      "number": "5.2"
+    },
+    {
+      "id": "section-5.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-5.3",
+      "title": "HSTS Policy Storage and Maintenance by User Agents",
+      "level": 2,
+      "number": "5.3"
+    },
+    {
+      "id": "section-5.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-5.4",
+      "title": "User Agent HSTS Policy Enforcement",
+      "level": 2,
+      "number": "5.4"
+    },
+    {
+      "id": "section-6",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-6",
+      "title": "Syntax",
+      "level": 1,
+      "number": "6"
+    },
+    {
+      "id": "section-6.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-6.1",
+      "title": "Strict-Transport-Security HTTP Response Header Field",
+      "level": 2,
+      "number": "6.1"
+    },
+    {
+      "id": "section-6.1.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-6.1.1",
+      "title": "The max-age Directive",
+      "level": 3,
+      "number": "6.1.1"
+    },
+    {
+      "id": "section-6.1.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-6.1.2",
+      "title": "The includeSubDomains Directive",
+      "level": 3,
+      "number": "6.1.2"
+    },
+    {
+      "id": "section-6.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-6.2",
+      "title": "Examples",
+      "level": 2,
+      "number": "6.2"
+    },
+    {
+      "id": "section-7",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-7",
+      "title": "Server Processing Model",
+      "level": 1,
+      "number": "7"
+    },
+    {
+      "id": "section-7.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-7.1",
+      "title": "HTTP-over-Secure-Transport Request Type",
+      "level": 2,
+      "number": "7.1"
+    },
+    {
+      "id": "section-7.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-7.2",
+      "title": "HTTP Request Type",
+      "level": 2,
+      "number": "7.2"
+    },
+    {
+      "id": "section-8",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-8",
+      "title": "User Agent Processing Model",
+      "level": 1,
+      "number": "8"
+    },
+    {
+      "id": "section-8.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-8.1",
+      "title": "Strict-Transport-Security Response Header Field Processing",
+      "level": 2,
+      "number": "8.1"
+    },
+    {
+      "id": "section-8.1.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-8.1.1",
+      "title": "Noting an HSTS Host - Storage Model",
+      "level": 3,
+      "number": "8.1.1"
+    },
+    {
+      "id": "section-8.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-8.2",
+      "title": "Known HSTS Host Domain Name Matching",
+      "level": 2,
+      "number": "8.2"
+    },
+    {
+      "id": "section-8.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-8.3",
+      "title": "URI Loading and Port Mapping",
+      "level": 2,
+      "number": "8.3"
+    },
+    {
+      "id": "section-8.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-8.4",
+      "title": "Errors in Secure Transport Establishment",
+      "level": 2,
+      "number": "8.4"
+    },
+    {
+      "id": "section-8.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-8.5",
+      "title": "HTTP-Equiv <Meta> Element Attribute",
+      "level": 2,
+      "number": "8.5"
+    },
+    {
+      "id": "section-8.6",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-8.6",
+      "title": "Missing Strict-Transport-Security Response Header Field",
+      "level": 2,
+      "number": "8.6"
+    },
+    {
+      "id": "section-9",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-9",
+      "title": "Constructing an Effective Request URI",
+      "level": 1,
+      "number": "9"
+    },
+    {
+      "id": "section-9.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-9.1",
+      "title": "ERU Fundamental Definitions",
+      "level": 2,
+      "number": "9.1"
+    },
+    {
+      "id": "section-9.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-9.2",
+      "title": "Determining the Effective Request URI",
+      "level": 2,
+      "number": "9.2"
+    },
+    {
+      "id": "section-9.2.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-9.2.1",
+      "title": "Effective Request URI Examples",
+      "level": 3,
+      "number": "9.2.1"
+    },
+    {
+      "id": "section-10",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-10",
+      "title": "Domain Name IDNA-Canonicalization",
+      "level": 1,
+      "number": "10"
+    },
+    {
+      "id": "section-11",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-11",
+      "title": "Server Implementation and Deployment Advice",
+      "level": 1,
+      "number": "11"
+    },
+    {
+      "id": "section-11.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-11.1",
+      "title": "Non-Conformant User Agent Considerations",
+      "level": 2,
+      "number": "11.1"
+    },
+    {
+      "id": "section-11.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-11.2",
+      "title": "HSTS Policy Expiration Time Considerations",
+      "level": 2,
+      "number": "11.2"
+    },
+    {
+      "id": "section-11.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-11.3",
+      "title": "Using HSTS in Conjunction with Self-Signed Public-Key",
+      "level": 2,
+      "number": "11.3"
+    },
+    {
+      "id": "section-11.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-11.4",
+      "title": "Implications of includeSubDomains",
+      "level": 2,
+      "number": "11.4"
+    },
+    {
+      "id": "section-11.4.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-11.4.1",
+      "title": "Considerations for Offering Unsecured HTTP Services at",
+      "level": 3,
+      "number": "11.4.1"
+    },
+    {
+      "id": "section-11.4.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-11.4.2",
+      "title": "Considerations for Offering Web Applications at Subdomains of",
+      "level": 3,
+      "number": "11.4.2"
+    },
+    {
+      "id": "section-12",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-12",
+      "title": "User Agent Implementation Advice",
+      "level": 1,
+      "number": "12"
+    },
+    {
+      "id": "section-12.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-12.1",
+      "title": "No User Recourse",
+      "level": 2,
+      "number": "12.1"
+    },
+    {
+      "id": "section-12.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-12.2",
+      "title": "User-Declared HSTS Policy",
+      "level": 2,
+      "number": "12.2"
+    },
+    {
+      "id": "section-12.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-12.3",
+      "title": "HSTS Pre-Loaded List",
+      "level": 2,
+      "number": "12.3"
+    },
+    {
+      "id": "section-12.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-12.4",
+      "title": "Disallow Mixed Security Context Loads",
+      "level": 2,
+      "number": "12.4"
+    },
+    {
+      "id": "section-12.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-12.5",
+      "title": "HSTS Policy Deletion",
+      "level": 2,
+      "number": "12.5"
+    },
+    {
+      "id": "section-13",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-13",
+      "title": "Internationalized Domain Names for Applications (IDNA): Dependency",
+      "level": 1,
+      "number": "13"
+    },
+    {
+      "id": "section-14",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-14",
+      "title": "Security Considerations",
+      "level": 1,
+      "number": "14"
+    },
+    {
+      "id": "section-14.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-14.1",
+      "title": "Underlying Secure Transport Considerations",
+      "level": 2,
+      "number": "14.1"
+    },
+    {
+      "id": "section-14.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-14.2",
+      "title": "Non-Conformant User Agent Implications",
+      "level": 2,
+      "number": "14.2"
+    },
+    {
+      "id": "section-14.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-14.3",
+      "title": "Ramifications of HSTS Policy Establishment Only over Error-Free",
+      "level": 2,
+      "number": "14.3"
+    },
+    {
+      "id": "section-14.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-14.4",
+      "title": "The Need for includeSubDomains",
+      "level": 2,
+      "number": "14.4"
+    },
+    {
+      "id": "section-14.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-14.5",
+      "title": "Denial of Service",
+      "level": 2,
+      "number": "14.5"
+    },
+    {
+      "id": "section-14.6",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-14.6",
+      "title": "Bootstrap MITM Vulnerability",
+      "level": 2,
+      "number": "14.6"
+    },
+    {
+      "id": "section-14.7",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-14.7",
+      "title": "Network Time Attacks",
+      "level": 2,
+      "number": "14.7"
+    },
+    {
+      "id": "section-14.8",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-14.8",
+      "title": "Bogus Root CA Certificate Phish plus DNS Cache Poisoning Attack",
+      "level": 2,
+      "number": "14.8"
+    },
+    {
+      "id": "section-14.9",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-14.9",
+      "title": "Creative Manipulation of HSTS Policy Store",
+      "level": 2,
+      "number": "14.9"
+    },
+    {
+      "id": "section-14.10",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-14.10",
+      "title": "Internationalized Domain Names",
+      "level": 2,
+      "number": "14.10"
+    },
+    {
+      "id": "section-15",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-15",
+      "title": "IANA Considerations",
+      "level": 1,
+      "number": "15"
+    },
+    {
+      "id": "section-16",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-16",
+      "title": "References",
+      "level": 1,
+      "number": "16"
+    },
+    {
+      "id": "section-16.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-16.1",
+      "title": "Normative References",
+      "level": 2,
+      "number": "16.1"
+    },
+    {
+      "id": "section-16.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#section-16.2",
+      "title": "Informative References",
+      "level": 2,
+      "number": "16.2"
+    },
+    {
+      "id": "appendix-A",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#appendix-A",
+      "title": "Design Decision Notes",
+      "level": 1,
+      "number": "Appendix A"
+    },
+    {
+      "id": "appendix-B",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#appendix-B",
+      "title": "Differences between HSTS Policy and Same-Origin Policy",
+      "level": 1,
+      "number": "Appendix B"
+    },
+    {
+      "id": "appendix-C",
+      "href": "https://www.rfc-editor.org/rfc/rfc6797#appendix-C",
+      "title": "Acknowledgments",
+      "level": 1,
+      "number": "Appendix C"
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+{
+  "spec": {
+    "title": "RFC 8610: Concise Data Definition Language (CDDL): A Notational Convention to Express Concise Binary Object Representation (CBOR) and JSON Data Structures",
+    "url": "https://www.rfc-editor.org/rfc/rfc8610"
+  },
+  "headings": [
+    {
+      "id": "section-1",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-1",
+      "title": "Introduction",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "section-1.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-1.1",
+      "title": "Requirements Notation",
+      "level": 2,
+      "number": "1.1"
+    },
+    {
+      "id": "section-1.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-1.2",
+      "title": "Terminology",
+      "level": 2,
+      "number": "1.2"
+    },
+    {
+      "id": "section-2",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-2",
+      "title": "The Style of Data Structure Specification",
+      "level": 1,
+      "number": "2"
+    },
+    {
+      "id": "section-2.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-2.1",
+      "title": "Groups and Composition in CDDL",
+      "level": 2,
+      "number": "2.1"
+    },
+    {
+      "id": "section-2.1.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-2.1.1",
+      "title": "Usage",
+      "level": 3,
+      "number": "2.1.1"
+    },
+    {
+      "id": "section-2.1.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-2.1.2",
+      "title": "Syntax",
+      "level": 3,
+      "number": "2.1.2"
+    },
+    {
+      "id": "section-2.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-2.2",
+      "title": "Types",
+      "level": 2,
+      "number": "2.2"
+    },
+    {
+      "id": "section-2.2.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-2.2.1",
+      "title": "Values",
+      "level": 3,
+      "number": "2.2.1"
+    },
+    {
+      "id": "section-2.2.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-2.2.2",
+      "title": "Choices",
+      "level": 3,
+      "number": "2.2.2"
+    },
+    {
+      "id": "section-2.2.2.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-2.2.2.1",
+      "title": "Ranges",
+      "level": 4,
+      "number": "2.2.2.1"
+    },
+    {
+      "id": "section-2.2.2.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-2.2.2.2",
+      "title": "Turning a Group into a Choice",
+      "level": 4,
+      "number": "2.2.2.2"
+    },
+    {
+      "id": "section-2.2.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-2.2.3",
+      "title": "Representation Types",
+      "level": 3,
+      "number": "2.2.3"
+    },
+    {
+      "id": "section-2.2.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-2.2.4",
+      "title": "Root Type",
+      "level": 3,
+      "number": "2.2.4"
+    },
+    {
+      "id": "section-3",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3",
+      "title": "Syntax",
+      "level": 1,
+      "number": "3"
+    },
+    {
+      "id": "section-3.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.1",
+      "title": "General Conventions",
+      "level": 2,
+      "number": "3.1"
+    },
+    {
+      "id": "section-3.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.2",
+      "title": "Occurrence",
+      "level": 2,
+      "number": "3.2"
+    },
+    {
+      "id": "section-3.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.3",
+      "title": "Predefined Names for Types",
+      "level": 2,
+      "number": "3.3"
+    },
+    {
+      "id": "section-3.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.4",
+      "title": "Arrays",
+      "level": 2,
+      "number": "3.4"
+    },
+    {
+      "id": "section-3.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.5",
+      "title": "Maps",
+      "level": 2,
+      "number": "3.5"
+    },
+    {
+      "id": "section-3.5.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.5.1",
+      "title": "Structs",
+      "level": 3,
+      "number": "3.5.1"
+    },
+    {
+      "id": "section-3.5.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.5.2",
+      "title": "Tables",
+      "level": 3,
+      "number": "3.5.2"
+    },
+    {
+      "id": "section-3.5.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.5.3",
+      "title": "Non-deterministic Order",
+      "level": 3,
+      "number": "3.5.3"
+    },
+    {
+      "id": "section-3.5.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.5.4",
+      "title": "Cuts in Maps",
+      "level": 3,
+      "number": "3.5.4"
+    },
+    {
+      "id": "section-3.6",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.6",
+      "title": "Tags",
+      "level": 2,
+      "number": "3.6"
+    },
+    {
+      "id": "section-3.7",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.7",
+      "title": "Unwrapping",
+      "level": 2,
+      "number": "3.7"
+    },
+    {
+      "id": "section-3.8",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8",
+      "title": "Controls",
+      "level": 2,
+      "number": "3.8"
+    },
+    {
+      "id": "section-3.8.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8.1",
+      "title": "Control Operator .size",
+      "level": 3,
+      "number": "3.8.1"
+    },
+    {
+      "id": "section-3.8.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8.2",
+      "title": "Control Operator .bits",
+      "level": 3,
+      "number": "3.8.2"
+    },
+    {
+      "id": "section-3.8.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8.3",
+      "title": "Control Operator .regexp",
+      "level": 3,
+      "number": "3.8.3"
+    },
+    {
+      "id": "section-3.8.3.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8.3.1",
+      "title": "Usage Considerations",
+      "level": 4,
+      "number": "3.8.3.1"
+    },
+    {
+      "id": "section-3.8.3.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8.3.2",
+      "title": "Discussion",
+      "level": 4,
+      "number": "3.8.3.2"
+    },
+    {
+      "id": "section-3.8.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8.4",
+      "title": "Control Operators .cbor and .cborseq",
+      "level": 3,
+      "number": "3.8.4"
+    },
+    {
+      "id": "section-3.8.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8.5",
+      "title": "Control Operators .within and .and",
+      "level": 3,
+      "number": "3.8.5"
+    },
+    {
+      "id": "section-3.8.6",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8.6",
+      "title": "Control Operators .lt, .le, .gt, .ge, .eq, .ne, and .default",
+      "level": 3,
+      "number": "3.8.6"
+    },
+    {
+      "id": "section-3.9",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.9",
+      "title": "Socket/Plug",
+      "level": 2,
+      "number": "3.9"
+    },
+    {
+      "id": "section-3.10",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.10",
+      "title": "Generics",
+      "level": 2,
+      "number": "3.10"
+    },
+    {
+      "id": "section-3.11",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-3.11",
+      "title": "Operator Precedence",
+      "level": 2,
+      "number": "3.11"
+    },
+    {
+      "id": "section-4",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-4",
+      "title": "Making Use of CDDL",
+      "level": 1,
+      "number": "4"
+    },
+    {
+      "id": "section-4.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-4.1",
+      "title": "As a Guide for a Human User",
+      "level": 2,
+      "number": "4.1"
+    },
+    {
+      "id": "section-4.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-4.2",
+      "title": "For Automated Checking of CBOR Data Structures",
+      "level": 2,
+      "number": "4.2"
+    },
+    {
+      "id": "section-4.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-4.3",
+      "title": "For Data Analysis Tools",
+      "level": 2,
+      "number": "4.3"
+    },
+    {
+      "id": "section-5",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-5",
+      "title": "Security Considerations",
+      "level": 1,
+      "number": "5"
+    },
+    {
+      "id": "section-6",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-6",
+      "title": "IANA Considerations",
+      "level": 1,
+      "number": "6"
+    },
+    {
+      "id": "section-6.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-6.1",
+      "title": "CDDL Control Operators Registry",
+      "level": 2,
+      "number": "6.1"
+    },
+    {
+      "id": "section-7",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-7",
+      "title": "References",
+      "level": 1,
+      "number": "7"
+    },
+    {
+      "id": "section-7.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-7.1",
+      "title": "Normative References",
+      "level": 2,
+      "number": "7.1"
+    },
+    {
+      "id": "section-7.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#section-7.2",
+      "title": "Informative References",
+      "level": 2,
+      "number": "7.2"
+    },
+    {
+      "id": "appendix-A",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#appendix-A",
+      "title": "Parsing Expression Grammars (PEGs)",
+      "level": 1,
+      "number": "Appendix A"
+    },
+    {
+      "id": "appendix-B",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#appendix-B",
+      "title": "ABNF Grammar",
+      "level": 1,
+      "number": "Appendix B"
+    },
+    {
+      "id": "appendix-C",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#appendix-C",
+      "title": "Matching Rules",
+      "level": 1,
+      "number": "Appendix C"
+    },
+    {
+      "id": "appendix-E",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#appendix-E",
+      "title": "Use with JSON",
+      "level": 1,
+      "number": "Appendix E"
+    },
+    {
+      "id": "appendix-F",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#appendix-F",
+      "title": "A CDDL Tool",
+      "level": 1,
+      "number": "Appendix F"
+    },
+    {
+      "id": "appendix-G",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#appendix-G",
+      "title": "Extended Diagnostic Notation",
+      "level": 1,
+      "number": "Appendix G"
+    },
+    {
+      "id": "appendix-G.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#appendix-G.1",
+      "title": "Whitespace in Byte String Notation",
+      "level": 2,
+      "number": "G.1"
+    },
+    {
+      "id": "appendix-G.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#appendix-G.2",
+      "title": "Text in Byte String Notation",
+      "level": 2,
+      "number": "G.2"
+    },
+    {
+      "id": "appendix-G.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#appendix-G.3",
+      "title": "Embedded CBOR and CBOR Sequences in Byte Strings",
+      "level": 2,
+      "number": "G.3"
+    },
+    {
+      "id": "appendix-G.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#appendix-G.4",
+      "title": "Concatenated Strings",
+      "level": 2,
+      "number": "G.4"
+    },
+    {
+      "id": "appendix-G.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#appendix-G.5",
+      "title": "Hexadecimal, Octal, and Binary Numbers",
+      "level": 2,
+      "number": "G.5"
+    },
+    {
+      "id": "appendix-G.6",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#appendix-G.6",
+      "title": "Comments",
+      "level": 2,
+      "number": "G.6"
+    },
+    {
+      "id": "appendix-H",
+      "href": "https://www.rfc-editor.org/rfc/rfc8610#appendix-H",
+      "title": "Examples",
+      "level": 1,
+      "number": "Appendix H"
+    }
+  ]
+}

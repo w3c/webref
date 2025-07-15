@@ -1,0 +1,190 @@
+{
+  "spec": {
+    "title": "RFC 7034: HTTP Header Field X-Frame-Options",
+    "url": "https://www.rfc-editor.org/rfc/rfc7034"
+  },
+  "headings": [
+    {
+      "id": "section-1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-1",
+      "title": "Introduction",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "section-1.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-1.1",
+      "title": "Requirements Language",
+      "level": 2,
+      "number": "1.1"
+    },
+    {
+      "id": "section-2",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-2",
+      "title": "X-Frame-Options Header",
+      "level": 1,
+      "number": "2"
+    },
+    {
+      "id": "section-2.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-2.1",
+      "title": "Syntax",
+      "level": 2,
+      "number": "2.1"
+    },
+    {
+      "id": "section-2.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-2.2",
+      "title": "Augmented Backus-Naur Form (ABNF)",
+      "level": 2,
+      "number": "2.2"
+    },
+    {
+      "id": "section-2.2.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-2.2.1",
+      "title": "Examples of X-Frame-Options",
+      "level": 3,
+      "number": "2.2.1"
+    },
+    {
+      "id": "section-2.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-2.3",
+      "title": "Design Issues",
+      "level": 2,
+      "number": "2.3"
+    },
+    {
+      "id": "section-2.3.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-2.3.1",
+      "title": "Enable HTML Content from Other Domains",
+      "level": 3,
+      "number": "2.3.1"
+    },
+    {
+      "id": "section-2.3.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-2.3.2",
+      "title": "Browser Behavior and Processing",
+      "level": 3,
+      "number": "2.3.2"
+    },
+    {
+      "id": "section-2.3.2.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-2.3.2.1",
+      "title": "Violation of X-Frame-Options",
+      "level": 4,
+      "number": "2.3.2.1"
+    },
+    {
+      "id": "section-2.3.2.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-2.3.2.2",
+      "title": "Variation in Current Browser Behavior",
+      "level": 4,
+      "number": "2.3.2.2"
+    },
+    {
+      "id": "section-2.3.2.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-2.3.2.3",
+      "title": "Usage Design Pattern and Example Scenario for the ALLOW-FROM",
+      "level": 4,
+      "number": "2.3.2.3"
+    },
+    {
+      "id": "section-2.3.2.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-2.3.2.4",
+      "title": "No Caching of the X-Frame-Options Header",
+      "level": 4,
+      "number": "2.3.2.4"
+    },
+    {
+      "id": "section-3",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-3",
+      "title": "IANA Considerations",
+      "level": 1,
+      "number": "3"
+    },
+    {
+      "id": "section-3.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-3.1",
+      "title": "Registration Template",
+      "level": 2,
+      "number": "3.1"
+    },
+    {
+      "id": "section-4",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-4",
+      "title": "Security Considerations",
+      "level": 1,
+      "number": "4"
+    },
+    {
+      "id": "section-4.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-4.1",
+      "title": "Privacy Considerations",
+      "level": 2,
+      "number": "4.1"
+    },
+    {
+      "id": "section-5",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-5",
+      "title": "References",
+      "level": 1,
+      "number": "5"
+    },
+    {
+      "id": "section-5.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-5.1",
+      "title": "Normative References",
+      "level": 2,
+      "number": "5.1"
+    },
+    {
+      "id": "section-5.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#section-5.2",
+      "title": "Informative References",
+      "level": 2,
+      "number": "5.2"
+    },
+    {
+      "id": "appendix-A",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#appendix-A",
+      "title": "Browsers That Support X-Frame-Options",
+      "level": 1,
+      "number": "Appendix A"
+    },
+    {
+      "id": "appendix-B",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#appendix-B",
+      "title": "Description of a Clickjacking Attack",
+      "level": 1,
+      "number": "Appendix B"
+    },
+    {
+      "id": "appendix-B.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#appendix-B.1",
+      "title": "Shop",
+      "level": 2,
+      "number": "B.1"
+    },
+    {
+      "id": "appendix-B.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#appendix-B.2",
+      "title": "Online Shop Confirm Purchase Page",
+      "level": 2,
+      "number": "B.2"
+    },
+    {
+      "id": "appendix-B.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#appendix-B.3",
+      "title": "Flash Configuration",
+      "level": 2,
+      "number": "B.3"
+    },
+    {
+      "id": "appendix-C",
+      "href": "https://www.rfc-editor.org/rfc/rfc7034#appendix-C",
+      "title": "Acknowledgements",
+      "level": 1,
+      "number": "Appendix C"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "spec": {
+    "title": "RFC 7239: Forwarded HTTP Extension",
+    "url": "https://www.rfc-editor.org/rfc/rfc7239"
+  },
+  "headings": [
+    {
+      "id": "section-1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-1",
+      "title": "Introduction",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "section-2",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-2",
+      "title": "Notational Conventions",
+      "level": 1,
+      "number": "2"
+    },
+    {
+      "id": "section-3",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-3",
+      "title": "Syntax Notations",
+      "level": 1,
+      "number": "3"
+    },
+    {
+      "id": "section-4",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-4",
+      "title": "Forwarded HTTP Header Field",
+      "level": 1,
+      "number": "4"
+    },
+    {
+      "id": "section-5",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-5",
+      "title": "Parameters",
+      "level": 1,
+      "number": "5"
+    },
+    {
+      "id": "section-5.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-5.1",
+      "title": "Forwarded By",
+      "level": 2,
+      "number": "5.1"
+    },
+    {
+      "id": "section-5.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-5.2",
+      "title": "Forwarded For",
+      "level": 2,
+      "number": "5.2"
+    },
+    {
+      "id": "section-5.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-5.3",
+      "title": "Forwarded Host",
+      "level": 2,
+      "number": "5.3"
+    },
+    {
+      "id": "section-5.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-5.4",
+      "title": "Forwarded Proto",
+      "level": 2,
+      "number": "5.4"
+    },
+    {
+      "id": "section-5.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-5.5",
+      "title": "Extensions",
+      "level": 2,
+      "number": "5.5"
+    },
+    {
+      "id": "section-6",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-6",
+      "title": "Node Identifiers",
+      "level": 1,
+      "number": "6"
+    },
+    {
+      "id": "section-6.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-6.1",
+      "title": "IPv4 and IPv6 Identifiers",
+      "level": 2,
+      "number": "6.1"
+    },
+    {
+      "id": "section-6.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-6.2",
+      "title": "The \"unknown\" Identifier",
+      "level": 2,
+      "number": "6.2"
+    },
+    {
+      "id": "section-6.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-6.3",
+      "title": "Obfuscated Identifier",
+      "level": 2,
+      "number": "6.3"
+    },
+    {
+      "id": "section-7",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-7",
+      "title": "Implementation Considerations",
+      "level": 1,
+      "number": "7"
+    },
+    {
+      "id": "section-7.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-7.1",
+      "title": "HTTP Lists",
+      "level": 2,
+      "number": "7.1"
+    },
+    {
+      "id": "section-7.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-7.2",
+      "title": "Header Field Preservation",
+      "level": 2,
+      "number": "7.2"
+    },
+    {
+      "id": "section-7.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-7.3",
+      "title": "Relation to Via",
+      "level": 2,
+      "number": "7.3"
+    },
+    {
+      "id": "section-7.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-7.4",
+      "title": "Transition",
+      "level": 2,
+      "number": "7.4"
+    },
+    {
+      "id": "section-7.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-7.5",
+      "title": "Example Usage",
+      "level": 2,
+      "number": "7.5"
+    },
+    {
+      "id": "section-8",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-8",
+      "title": "Security Considerations",
+      "level": 1,
+      "number": "8"
+    },
+    {
+      "id": "section-8.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-8.1",
+      "title": "Header Validity and Integrity",
+      "level": 2,
+      "number": "8.1"
+    },
+    {
+      "id": "section-8.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-8.2",
+      "title": "Information Leak",
+      "level": 2,
+      "number": "8.2"
+    },
+    {
+      "id": "section-8.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-8.3",
+      "title": "Privacy Considerations",
+      "level": 2,
+      "number": "8.3"
+    },
+    {
+      "id": "section-9",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-9",
+      "title": "IANA Considerations",
+      "level": 1,
+      "number": "9"
+    },
+    {
+      "id": "section-10",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-10",
+      "title": "References",
+      "level": 1,
+      "number": "10"
+    },
+    {
+      "id": "section-10.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-10.1",
+      "title": "Normative References",
+      "level": 2,
+      "number": "10.1"
+    },
+    {
+      "id": "section-10.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#section-10.2",
+      "title": "Informative References",
+      "level": 2,
+      "number": "10.2"
+    },
+    {
+      "id": "appendix-A",
+      "href": "https://www.rfc-editor.org/rfc/rfc7239#appendix-A",
+      "title": "Acknowledgments",
+      "level": 1,
+      "number": "Appendix A"
+    }
+  ]
+}

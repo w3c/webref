@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-07-15T06:48:21.481Z",
+  "date": "2025-07-15T13:00:40.420Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -34,7 +34,6 @@
       "css-images-5",
       "css-link-params-1",
       "css-page-4",
-      "css-position-4",
       "css-shapes-2",
       "css-size-adjust-1",
       "css-variables-2",
@@ -156,6 +155,7 @@
       "trace-context-amqp",
       "trace-context-binary",
       "trace-context-mqtt",
+      "tracestate-ids-registry",
       "web-nfc",
       "web-share-target",
       "dbsc",
@@ -401,6 +401,7 @@
       "css-page-floats-3",
       "css-paint-api-1",
       "css-position-3",
+      "css-position-4",
       "css-properties-values-api-1",
       "css-pseudo-4",
       "css-regions-1",
@@ -718,10 +719,10 @@
     ]
   },
   "stats": {
-    "crawled": 687,
+    "crawled": 688,
     "errors": 1
   },
-  "crawler": "reffy-19.1.0",
+  "crawler": "reffy-19.1.1",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -2260,69 +2261,6 @@
       "dfns": "dfns/css-page-4.json",
       "headings": "headings/css-page-4.json",
       "ids": "ids/css-page-4.json",
-      "cddl": []
-    },
-    {
-      "url": "https://drafts.csswg.org/css-position-4/",
-      "seriesComposition": "delta",
-      "shortname": "css-position-4",
-      "series": {
-        "shortname": "css-position",
-        "currentSpecification": "css-position-3",
-        "title": "CSS Positioned Layout",
-        "shortTitle": "CSS Positioned Layout",
-        "releaseUrl": "https://www.w3.org/TR/css-position/",
-        "nightlyUrl": "https://drafts.csswg.org/css-position/"
-      },
-      "seriesVersion": "4",
-      "seriesPrevious": "css-position-3",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
-        }
-      ],
-      "nightly": {
-        "url": "https://drafts.csswg.org/css-position-4/",
-        "status": "Editor's Draft",
-        "alternateUrls": [
-          "https://w3c.github.io/csswg-drafts/css-position-4/"
-        ],
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-position-4/Overview.bs",
-        "filename": "index.html"
-      },
-      "title": "CSS Positioned Layout Module Level 4",
-      "source": "spec",
-      "shortTitle": "CSS Positioned Layout 4",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "css/css-position"
-        ]
-      },
-      "versions": [
-        "https://drafts.csswg.org/css-position-4/"
-      ],
-      "crawled": "https://drafts.csswg.org/css-position-4/",
-      "crawlCacheInfo": {
-        "lastModified": "Mon, 14 Jul 2025 22:34:43 GMT"
-      },
-      "generator": "bikeshed",
-      "date": "7 July 2025",
-      "revision": "1d71bf702efe9d408dbf8bf90ba250afeef730e3",
-      "algorithms": "algorithms/css-position-4.json",
-      "links": "links/css-position-4.json",
-      "refs": "refs/css-position-4.json",
-      "css": "css/css-position-4.json",
-      "dfns": "dfns/css-position-4.json",
-      "headings": "headings/css-position-4.json",
-      "ids": "ids/css-position-4.json",
       "cddl": []
     },
     {
@@ -8749,6 +8687,52 @@
       "cddl": []
     },
     {
+      "url": "https://w3c.github.io/tracestate-ids-registry/",
+      "seriesComposition": "full",
+      "shortname": "tracestate-ids-registry",
+      "series": {
+        "shortname": "tracestate-ids-registry",
+        "currentSpecification": "tracestate-ids-registry",
+        "title": "Tracestate Ids Registry",
+        "shortTitle": "Tracestate Ids Registry",
+        "nightlyUrl": "https://w3c.github.io/tracestate-ids-registry/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Distributed Tracing Working Group",
+          "url": "https://www.w3.org/groups/wg/distributed-tracing/"
+        }
+      ],
+      "nightly": {
+        "url": "https://w3c.github.io/tracestate-ids-registry/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/tracestate-ids-registry",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Tracestate Ids Registry",
+      "source": "spec",
+      "shortTitle": "Tracestate Ids Registry",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://w3c.github.io/tracestate-ids-registry/"
+      ],
+      "crawled": "https://w3c.github.io/tracestate-ids-registry/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 07 Feb 2024 20:14:35 GMT"
+      },
+      "generator": "respec",
+      "date": "07 February 2024",
+      "links": "links/tracestate-ids-registry.json",
+      "refs": "refs/tracestate-ids-registry.json",
+      "headings": "headings/tracestate-ids-registry.json",
+      "ids": "ids/tracestate-ids-registry.json",
+      "cddl": []
+    },
+    {
       "url": "https://w3c.github.io/web-nfc/",
       "seriesComposition": "full",
       "shortname": "web-nfc",
@@ -9163,7 +9147,7 @@
       ],
       "crawled": "https://webassembly.github.io/esm-integration/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 11 Jul 2025 14:44:47 GMT"
+        "lastModified": "Fri, 11 Jul 2025 14:44:46 GMT"
       },
       "generator": "bikeshed",
       "date": "11 July 2025",
@@ -10752,11 +10736,11 @@
       ],
       "crawled": "https://wicg.github.io/cookie-store/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 02 Jul 2025 19:25:47 GMT"
+        "lastModified": "Tue, 15 Jul 2025 12:45:22 GMT"
       },
       "generator": "bikeshed",
-      "date": "2 July 2025",
-      "revision": "a6b7cfe817be7b851b9e338f70b3cb172a453a4a",
+      "date": "15 July 2025",
+      "revision": "e18725d45a62860eacf2decfffc1c85531e0d367",
       "algorithms": "algorithms/cookie-store.json",
       "links": "links/cookie-store.json",
       "refs": "refs/cookie-store.json",
@@ -14914,6 +14898,7 @@
       },
       "date": "11 July 2025",
       "links": "links/rfc2397.json",
+      "headings": "headings/rfc2397.json",
       "ids": "ids/rfc2397.json",
       "cddl": []
     },
@@ -14960,6 +14945,7 @@
       },
       "date": "11 July 2025",
       "links": "links/rfc4120.json",
+      "headings": "headings/rfc4120.json",
       "ids": "ids/rfc4120.json",
       "cddl": []
     },
@@ -15160,6 +15146,7 @@
       },
       "date": "11 July 2025",
       "links": "links/rfc6386.json",
+      "headings": "headings/rfc6386.json",
       "ids": "ids/rfc6386.json",
       "cddl": []
     },
@@ -15202,10 +15189,11 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6454",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 11 Jul 2025 13:36:55 GMT"
+        "lastModified": "Fri, 11 Jul 2025 05:04:00 GMT"
       },
       "date": "11 July 2025",
       "links": "links/rfc6454.json",
+      "headings": "headings/rfc6454.json",
       "ids": "ids/rfc6454.json",
       "cddl": []
     },
@@ -15252,6 +15240,7 @@
       },
       "date": "11 July 2025",
       "links": "links/rfc6455.json",
+      "headings": "headings/rfc6455.json",
       "ids": "ids/rfc6455.json",
       "cddl": []
     },
@@ -15294,10 +15283,11 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 12 Jul 2025 04:47:43 GMT"
+        "lastModified": "Fri, 11 Jul 2025 03:28:26 GMT"
       },
-      "date": "12 July 2025",
+      "date": "11 July 2025",
       "links": "links/rfc6797.json",
+      "headings": "headings/rfc6797.json",
       "ids": "ids/rfc6797.json",
       "cddl": []
     },
@@ -15344,6 +15334,7 @@
       },
       "date": "11 July 2025",
       "links": "links/rfc7034.json",
+      "headings": "headings/rfc7034.json",
       "ids": "ids/rfc7034.json",
       "cddl": []
     },
@@ -15386,10 +15377,11 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 12 Jul 2025 18:39:08 GMT"
+        "lastModified": "Fri, 11 Jul 2025 04:03:02 GMT"
       },
-      "date": "12 July 2025",
+      "date": "11 July 2025",
       "links": "links/rfc7239.json",
+      "headings": "headings/rfc7239.json",
       "ids": "ids/rfc7239.json",
       "cddl": []
     },
@@ -15432,10 +15424,11 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 12 Jul 2025 10:11:13 GMT"
+        "lastModified": "Fri, 11 Jul 2025 03:22:15 GMT"
       },
-      "date": "12 July 2025",
+      "date": "11 July 2025",
       "links": "links/rfc7469.json",
+      "headings": "headings/rfc7469.json",
       "ids": "ids/rfc7469.json",
       "cddl": []
     },
@@ -15482,6 +15475,7 @@
       },
       "date": "11 July 2025",
       "links": "links/rfc7578.json",
+      "headings": "headings/rfc7578.json",
       "ids": "ids/rfc7578.json",
       "cddl": []
     },
@@ -15732,6 +15726,7 @@
       },
       "date": "12 July 2025",
       "links": "links/rfc7932.json",
+      "headings": "headings/rfc7932.json",
       "ids": "ids/rfc7932.json",
       "cddl": []
     },
@@ -15985,6 +15980,7 @@
       "date": "11 July 2025",
       "links": "links/rfc8610.json",
       "dfns": "dfns/rfc8610.json",
+      "headings": "headings/rfc8610.json",
       "ids": "ids/rfc8610.json",
       "cddl": []
     },
@@ -16027,9 +16023,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8878",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 12 Jul 2025 09:26:16 GMT"
+        "lastModified": "Fri, 11 Jul 2025 06:42:02 GMT"
       },
-      "date": "12 July 2025",
+      "date": "11 July 2025",
       "links": "links/rfc8878.json",
       "refs": "refs/rfc8878.json",
       "headings": "headings/rfc8878.json",
@@ -16974,7 +16970,7 @@
       ],
       "crawled": "https://w3c.github.io/wcag-act/act-rules-format.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 14 Jul 2025 15:47:55 GMT"
+        "lastModified": "Mon, 14 Jul 2025 15:47:54 GMT"
       },
       "generator": "bikeshed",
       "date": "14 July 2025",
@@ -17520,7 +17516,7 @@
       ],
       "crawled": "https://w3c.github.io/battery/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 24 Oct 2024 09:46:13 GMT"
+        "lastModified": "Thu, 24 Oct 2024 09:46:12 GMT"
       },
       "generator": "respec",
       "date": "24 October 2024",
@@ -22897,6 +22893,75 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/css-position-4/",
+      "seriesComposition": "delta",
+      "shortname": "css-position-4",
+      "series": {
+        "shortname": "css-position",
+        "currentSpecification": "css-position-3",
+        "title": "CSS Positioned Layout",
+        "shortTitle": "CSS Positioned Layout",
+        "releaseUrl": "https://www.w3.org/TR/css-position/",
+        "nightlyUrl": "https://drafts.csswg.org/css-position/"
+      },
+      "seriesVersion": "4",
+      "seriesPrevious": "css-position-3",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-position-4/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-position-4/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-position-4/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-position-4/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Positioned Layout Module Level 4",
+      "source": "w3c",
+      "shortTitle": "CSS Positioned Layout 4",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-position"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/css-position-4/",
+        "https://drafts.csswg.org/css-position-4/"
+      ],
+      "crawled": "https://drafts.csswg.org/css-position-4/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 14 Jul 2025 22:34:43 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "7 July 2025",
+      "revision": "1d71bf702efe9d408dbf8bf90ba250afeef730e3",
+      "algorithms": "algorithms/css-position-4.json",
+      "links": "links/css-position-4.json",
+      "refs": "refs/css-position-4.json",
+      "css": "css/css-position-4.json",
+      "dfns": "dfns/css-position-4.json",
+      "headings": "headings/css-position-4.json",
+      "ids": "ids/css-position-4.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/css-properties-values-api-1/",
       "seriesComposition": "full",
       "shortname": "css-properties-values-api-1",
@@ -26331,7 +26396,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/digital-credentials/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -31101,7 +31166,7 @@
       ],
       "crawled": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 23 Jul 2024 08:09:25 GMT"
+        "lastModified": "Tue, 23 Jul 2024 08:09:24 GMT"
       },
       "generator": "respec",
       "date": "23 July 2024",
@@ -31274,7 +31339,7 @@
       ],
       "crawled": "https://w3c.github.io/mst-content-hint/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Feb 2025 16:10:05 GMT"
+        "lastModified": "Thu, 13 Feb 2025 16:10:04 GMT"
       },
       "generator": "respec",
       "date": "13 February 2025",
@@ -31765,10 +31830,10 @@
       ],
       "crawled": "https://w3c.github.io/sdw/time/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 25 Mar 2025 15:06:18 GMT"
+        "lastModified": "Tue, 15 Jul 2025 07:30:32 GMT"
       },
       "generator": "respec",
-      "date": "25 March 2025",
+      "date": "15 July 2025",
       "links": "links/owl-time.json",
       "refs": "refs/owl-time.json",
       "headings": "headings/owl-time.json",
@@ -33039,10 +33104,10 @@
       ],
       "crawled": "https://w3c.github.io/sdw/qb4st/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 25 Mar 2025 15:06:18 GMT"
+        "lastModified": "Tue, 15 Jul 2025 07:30:32 GMT"
       },
       "generator": "respec",
-      "date": "25 March 2025",
+      "date": "15 July 2025",
       "links": "links/qb4st.json",
       "refs": "refs/qb4st.json",
       "headings": "headings/qb4st.json",
@@ -34687,7 +34752,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/shacl12-core/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -34743,7 +34808,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/shacl12-sparql/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -36822,7 +36887,7 @@
       ],
       "crawled": "https://w3c.github.io/vibration/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Feb 2025 18:39:30 GMT"
+        "lastModified": "Wed, 12 Feb 2025 18:39:29 GMT"
       },
       "generator": "respec",
       "date": "12 February 2025",
@@ -36992,10 +37057,10 @@
       ],
       "crawled": "https://w3c.github.io/sdw/time-aggregates/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 25 Mar 2025 15:06:18 GMT"
+        "lastModified": "Tue, 15 Jul 2025 07:30:32 GMT"
       },
       "generator": "respec",
-      "date": "25 March 2025",
+      "date": "15 July 2025",
       "links": "links/vocab-owl-time-agg.json",
       "refs": "refs/vocab-owl-time-agg.json",
       "headings": "headings/vocab-owl-time-agg.json",
@@ -37045,10 +37110,10 @@
       ],
       "crawled": "https://w3c.github.io/sdw/time-entity-relations/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 25 Mar 2025 15:06:18 GMT"
+        "lastModified": "Tue, 15 Jul 2025 07:30:32 GMT"
       },
       "generator": "respec",
-      "date": "25 March 2025",
+      "date": "15 July 2025",
       "links": "links/vocab-owl-time-rel.json",
       "refs": "refs/vocab-owl-time-rel.json",
       "headings": "headings/vocab-owl-time-rel.json",
@@ -37701,7 +37766,7 @@
       ],
       "crawled": "https://w3c.github.io/web-locks/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 02 May 2025 18:23:47 GMT"
+        "lastModified": "Fri, 02 May 2025 18:23:46 GMT"
       },
       "generator": "bikeshed",
       "date": "2 May 2025",

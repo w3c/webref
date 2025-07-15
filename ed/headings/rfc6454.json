@@ -1,0 +1,260 @@
+{
+  "spec": {
+    "title": "RFC 6454: The Web Origin Concept",
+    "url": "https://www.rfc-editor.org/rfc/rfc6454"
+  },
+  "headings": [
+    {
+      "id": "section-1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-1",
+      "title": "Introduction",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "section-2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-2",
+      "title": "Conventions",
+      "level": 1,
+      "number": "2"
+    },
+    {
+      "id": "section-2.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-2.1",
+      "title": "Conformance Criteria",
+      "level": 2,
+      "number": "2.1"
+    },
+    {
+      "id": "section-2.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-2.2",
+      "title": "Syntax Notation",
+      "level": 2,
+      "number": "2.2"
+    },
+    {
+      "id": "section-2.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-2.3",
+      "title": "Terminology",
+      "level": 2,
+      "number": "2.3"
+    },
+    {
+      "id": "section-3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-3",
+      "title": "Principles of the Same-Origin Policy",
+      "level": 1,
+      "number": "3"
+    },
+    {
+      "id": "section-3.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-3.1",
+      "title": "Trust",
+      "level": 2,
+      "number": "3.1"
+    },
+    {
+      "id": "section-3.1.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-3.1.1",
+      "title": "Pitfalls",
+      "level": 3,
+      "number": "3.1.1"
+    },
+    {
+      "id": "section-3.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-3.2",
+      "title": "Origin",
+      "level": 2,
+      "number": "3.2"
+    },
+    {
+      "id": "section-3.2.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-3.2.1",
+      "title": "Examples",
+      "level": 3,
+      "number": "3.2.1"
+    },
+    {
+      "id": "section-3.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-3.3",
+      "title": "Authority",
+      "level": 2,
+      "number": "3.3"
+    },
+    {
+      "id": "section-3.3.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-3.3.1",
+      "title": "Pitfalls",
+      "level": 3,
+      "number": "3.3.1"
+    },
+    {
+      "id": "section-3.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-3.4",
+      "title": "Policy",
+      "level": 2,
+      "number": "3.4"
+    },
+    {
+      "id": "section-3.4.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-3.4.1",
+      "title": "Object Access",
+      "level": 3,
+      "number": "3.4.1"
+    },
+    {
+      "id": "section-3.4.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-3.4.2",
+      "title": "Network Access",
+      "level": 3,
+      "number": "3.4.2"
+    },
+    {
+      "id": "section-3.4.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-3.4.3",
+      "title": "Pitfalls",
+      "level": 3,
+      "number": "3.4.3"
+    },
+    {
+      "id": "section-3.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-3.5",
+      "title": "Conclusion",
+      "level": 2,
+      "number": "3.5"
+    },
+    {
+      "id": "section-4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-4",
+      "title": "Origin of a URI",
+      "level": 1,
+      "number": "4"
+    },
+    {
+      "id": "section-5",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-5",
+      "title": "Comparing Origins",
+      "level": 1,
+      "number": "5"
+    },
+    {
+      "id": "section-6",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-6",
+      "title": "Serializing Origins",
+      "level": 1,
+      "number": "6"
+    },
+    {
+      "id": "section-6.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-6.1",
+      "title": "Unicode Serialization of an Origin",
+      "level": 2,
+      "number": "6.1"
+    },
+    {
+      "id": "section-6.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-6.2",
+      "title": "ASCII Serialization of an Origin",
+      "level": 2,
+      "number": "6.2"
+    },
+    {
+      "id": "section-7",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-7",
+      "title": "The HTTP Origin Header Field",
+      "level": 1,
+      "number": "7"
+    },
+    {
+      "id": "section-7.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-7.1",
+      "title": "Syntax",
+      "level": 2,
+      "number": "7.1"
+    },
+    {
+      "id": "section-7.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-7.2",
+      "title": "Semantics",
+      "level": 2,
+      "number": "7.2"
+    },
+    {
+      "id": "section-7.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-7.3",
+      "title": "User Agent Requirements",
+      "level": 2,
+      "number": "7.3"
+    },
+    {
+      "id": "section-8",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-8",
+      "title": "Security Considerations",
+      "level": 1,
+      "number": "8"
+    },
+    {
+      "id": "section-8.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-8.1",
+      "title": "Reliance on DNS",
+      "level": 2,
+      "number": "8.1"
+    },
+    {
+      "id": "section-8.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-8.2",
+      "title": "Divergent Units of Isolation",
+      "level": 2,
+      "number": "8.2"
+    },
+    {
+      "id": "section-8.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-8.3",
+      "title": "Ambient Authority",
+      "level": 2,
+      "number": "8.3"
+    },
+    {
+      "id": "section-8.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-8.4",
+      "title": "IDNA Dependency and Migration",
+      "level": 2,
+      "number": "8.4"
+    },
+    {
+      "id": "section-9",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-9",
+      "title": "IANA Considerations",
+      "level": 1,
+      "number": "9"
+    },
+    {
+      "id": "section-10",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-10",
+      "title": "References",
+      "level": 1,
+      "number": "10"
+    },
+    {
+      "id": "section-10.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-10.1",
+      "title": "Normative References",
+      "level": 2,
+      "number": "10.1"
+    },
+    {
+      "id": "section-10.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#section-10.2",
+      "title": "Informative References",
+      "level": 2,
+      "number": "10.2"
+    },
+    {
+      "id": "appendix-A",
+      "href": "https://www.rfc-editor.org/rfc/rfc6454#appendix-A",
+      "title": "Acknowledgements",
+      "level": 1,
+      "number": "Appendix A"
+    }
+  ]
+}

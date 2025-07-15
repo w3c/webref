@@ -1,0 +1,204 @@
+{
+  "spec": {
+    "title": "RFC 7578: Returning Values from Forms: multipart/form-data",
+    "url": "https://www.rfc-editor.org/rfc/rfc7578"
+  },
+  "headings": [
+    {
+      "id": "section-1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-1",
+      "title": "Introduction",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "section-2",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-2",
+      "title": "Percent-Encoding Option",
+      "level": 1,
+      "number": "2"
+    },
+    {
+      "id": "section-3",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-3",
+      "title": "Advice for Forms and Form Processing",
+      "level": 1,
+      "number": "3"
+    },
+    {
+      "id": "section-4",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-4",
+      "title": "Definition of multipart/form-data",
+      "level": 1,
+      "number": "4"
+    },
+    {
+      "id": "section-4.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-4.1",
+      "title": "\"Boundary\" Parameter of multipart/form-data",
+      "level": 2,
+      "number": "4.1"
+    },
+    {
+      "id": "section-4.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-4.2",
+      "title": "Content-Disposition Header Field for Each Part",
+      "level": 2,
+      "number": "4.2"
+    },
+    {
+      "id": "section-4.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-4.3",
+      "title": "Multiple Files for One Form Field",
+      "level": 2,
+      "number": "4.3"
+    },
+    {
+      "id": "section-4.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-4.4",
+      "title": "Content-Type Header Field for Each Part",
+      "level": 2,
+      "number": "4.4"
+    },
+    {
+      "id": "section-4.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-4.5",
+      "title": "The Charset Parameter for \"text/plain\" Form Data",
+      "level": 2,
+      "number": "4.5"
+    },
+    {
+      "id": "section-4.6",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-4.6",
+      "title": "The _charset_ Field for Default Charset",
+      "level": 2,
+      "number": "4.6"
+    },
+    {
+      "id": "section-4.7",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-4.7",
+      "title": "Content-Transfer-Encoding Deprecated",
+      "level": 2,
+      "number": "4.7"
+    },
+    {
+      "id": "section-4.8",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-4.8",
+      "title": "Other \"Content-\" Header Fields",
+      "level": 2,
+      "number": "4.8"
+    },
+    {
+      "id": "section-5",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-5",
+      "title": "Operability Considerations",
+      "level": 1,
+      "number": "5"
+    },
+    {
+      "id": "section-5.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-5.1",
+      "title": "Non-ASCII Field Names and Values",
+      "level": 2,
+      "number": "5.1"
+    },
+    {
+      "id": "section-5.1.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-5.1.1",
+      "title": "Avoid Non-ASCII Field Names",
+      "level": 3,
+      "number": "5.1.1"
+    },
+    {
+      "id": "section-5.1.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-5.1.2",
+      "title": "Interpreting Forms and Creating multipart/form-data Data",
+      "level": 3,
+      "number": "5.1.2"
+    },
+    {
+      "id": "section-5.1.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-5.1.3",
+      "title": "Parsing and Interpreting Form Data",
+      "level": 3,
+      "number": "5.1.3"
+    },
+    {
+      "id": "section-5.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-5.2",
+      "title": "Ordered Fields and Duplicated Field Names",
+      "level": 2,
+      "number": "5.2"
+    },
+    {
+      "id": "section-5.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-5.3",
+      "title": "Interoperability with Web Applications",
+      "level": 2,
+      "number": "5.3"
+    },
+    {
+      "id": "section-5.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-5.4",
+      "title": "Correlating Form Data with the Original Form",
+      "level": 2,
+      "number": "5.4"
+    },
+    {
+      "id": "section-6",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-6",
+      "title": "IANA Considerations",
+      "level": 1,
+      "number": "6"
+    },
+    {
+      "id": "section-7",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-7",
+      "title": "Security Considerations",
+      "level": 1,
+      "number": "7"
+    },
+    {
+      "id": "section-8",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-8",
+      "title": "Media Type Registration for multipart/form-data",
+      "level": 1,
+      "number": "8"
+    },
+    {
+      "id": "section-9",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-9",
+      "title": "References",
+      "level": 1,
+      "number": "9"
+    },
+    {
+      "id": "section-9.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-9.1",
+      "title": "Normative References",
+      "level": 2,
+      "number": "9.1"
+    },
+    {
+      "id": "section-9.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#section-9.2",
+      "title": "Informative References",
+      "level": 2,
+      "number": "9.2"
+    },
+    {
+      "id": "appendix-A",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#appendix-A",
+      "title": "Changes from RFC 2388",
+      "level": 1,
+      "number": "Appendix A"
+    },
+    {
+      "id": "appendix-B",
+      "href": "https://www.rfc-editor.org/rfc/rfc7578#appendix-B",
+      "title": "Alternatives",
+      "level": 1,
+      "number": "Appendix B"
+    }
+  ]
+}
