@@ -568,16 +568,31 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Multiply each entry in <var>credit</var> by <var>value</var>.</p>"
-        },
-        {
           "html": "<p>Let <var>sumCredit</var> be the sum of <var>credit</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item②\">items</a>.</p>"
         },
         {
-          "html": "<p>Let <var>rawNormalizedCredit</var> be the result of element-wise dividing each <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item③\">item</a> in <var>credit</var> by <var>sumCredit</var>.</p>"
+          "html": "<p>Let <var>rawNormalizedCredit</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a>.</p>"
         },
         {
-          "html": "<p>Let <var>normalizedCredit</var> be <var>rawNormalizedCredit</var>, with each <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item④\">item</a> rounded towards positive Infinity and converted to an integer.</p>"
+          "html": "<p>Let <var>normalizedCredit</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>item</var> of <var>credit</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>rawNormalized</var> be <var>value</var> * <var>item</var> / <var>sumCredit</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>rawNormalized</var> to <var>rawNormalizedCredit</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>normalized</var> be <var>rawNormalized</var> rounded towards positive Infinity and converted to an integer.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>normalized</var> to <var>normalizedCredit</var>.</p>"
+            }
+          ]
         },
         {
           "html": "<p>Let <var>shuffledFractionalIndices</var> be <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-get-the-indices\" id=\"ref-for-list-get-the-indices\">the indices</a> of <var>credit</var>, ordered randomly.</p>"
@@ -586,11 +601,11 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove③\">Remove</a> all indices <var>i</var> from <var>shuffledFractionalIndices</var> where <var>rawNormalizedCredit</var>[<var>i</var>] has no fractional part.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>index</var> of <var>shuffledFractionalIndices</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>index</var> of <var>shuffledFractionalIndices</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If the sum of <var>normalizedCredit</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑤\">items</a> is equal to <var>value</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">break</a>.</p>"
+              "html": "<p>If the sum of <var>normalizedCredit</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item③\">items</a> is equal to <var>value</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">break</a>.</p>"
             },
             {
               "html": "<p>Decrement <var>normalizedCredit</var>[<var>index</var>] by 1.</p>"
@@ -605,7 +620,7 @@
     {
       "name": "fill a histogram with last-n-touch attribution",
       "href": "https://w3c.github.io/ppa/#fill-a-histogram-with-last-n-touch-attribution",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fill-a-histogram-with-last-n-touch-attribution\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fill a histogram with last-n-touch attribution</dfn>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets①⑧\">set</a> of\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression\" id=\"ref-for-impression④⑥\">impressions</a> <var>matchedImpressions</var>, an integer <var>histogramSize</var>, an integer <var>value</var>, and\n  a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> of doubles <var>credit</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fill-a-histogram-with-last-n-touch-attribution\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fill a histogram with last-n-touch attribution</dfn>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets①⑧\">set</a> of\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#impression\" id=\"ref-for-impression④⑥\">impressions</a> <var>matchedImpressions</var>, an integer <var>histogramSize</var>, an integer <var>value</var>, and\n  a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a> of doubles <var>credit</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -630,7 +645,7 @@
           "html": "<p>Let <var>histogram</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#create-an-all-zero-histogram\" id=\"ref-for-create-an-all-zero-histogram②\">create an all-zero histogram</a>\nwith <var>histogramSize</var>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>i</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-get-the-indices\" id=\"ref-for-list-get-the-indices①\">the indices</a> of <var>lastNImpressions</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>i</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-get-the-indices\" id=\"ref-for-list-get-the-indices①\">the indices</a> of <var>lastNImpressions</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -677,7 +692,7 @@
           "html": "<p>Let <var>conversionCallers</var> be <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#save-impression-conversion-callers\" id=\"ref-for-save-impression-conversion-callers\">conversion-callers</a></code>\"]\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-with-default\" id=\"ref-for-map-with-default①\">with default</a> an empty <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#inner-list\" id=\"ref-for-inner-list③\">inner list</a>.</p>"
         },
         {
-          "html": "<p>If any of <var>conversionSites</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑥\">items</a> is not a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#string\" id=\"ref-for-string④\">string</a>, return an error.</p>"
+          "html": "<p>If any of <var>conversionSites</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item④\">items</a> is not a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#string\" id=\"ref-for-string④\">string</a>, return an error.</p>"
         },
         {
           "html": "<p>Let <var>matchValue</var> be <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#save-impression-match-value\" id=\"ref-for-save-impression-match-value\">match-value</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-with-default\" id=\"ref-for-map-with-default②\">with default</a> 0.</p>"
@@ -705,7 +720,7 @@
     {
       "name": "construct a DAP report",
       "href": "https://w3c.github.io/ppa/#construct-a-dap-report",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"construct-a-dap-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">construct a DAP report</dfn>,\nproducing a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence\">byte sequence</a> <var>report</var>,\ngiven <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options\" id=\"ref-for-validated-conversion-options③\">validated conversion options</a> <var>options</var>,\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site③①\">site</a> <var>topLevelSite</var>,\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-moment\" id=\"ref-for-dfn-moment⑨\">moment</a> <var>now</var>,\nand a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a> of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#integer\" id=\"ref-for-integer⑧\">integers</a> <var>histogram</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"construct-a-dap-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">construct a DAP report</dfn>,\nproducing a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence\">byte sequence</a> <var>report</var>,\ngiven <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ppa/#validated-conversion-options\" id=\"ref-for-validated-conversion-options③\">validated conversion options</a> <var>options</var>,\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site③①\">site</a> <var>topLevelSite</var>,\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-moment\" id=\"ref-for-dfn-moment⑨\">moment</a> <var>now</var>,\nand a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a> of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#integer\" id=\"ref-for-integer⑧\">integers</a> <var>histogram</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -757,10 +772,10 @@
           "html": "<p>Let <var>reportMetadata</var> be encoded DAP <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\"><code>ReportMetadata</code></a>\ngenerated from <var>reportID</var>, <var>time</var>, and <var>extensions</var>.</p>"
         },
         {
-          "html": "<p>Let <var>encryptedInputShares</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①②\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a>.</p>"
+          "html": "<p>Let <var>encryptedInputShares</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①②\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>share</var> of <var>inputShares</var>,\nfollow the method for encrypting shares\ndescribed in <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\">Section 4.5.2</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>share</var> of <var>inputShares</var>,\nfollow the method for encrypting shares\ndescribed in <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\">Section 4.5.2</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -782,7 +797,7 @@
               "html": "<p>Let <var>encryptedShare</var> be the result of invoking <var>hpke</var>.<a href=\"https://hpkewg.github.io/hpke/draft-ietf-hpke-hpke.html#section-6.1\"><code>Seal&lt;mode_base&gt;()</code></a>,\npassing <var>pkR</var>, <var>info</var>, <var>inputShareAAD</var>, and <var>share</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>encryptedShare</var> to <var>encryptedInputShares</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> <var>encryptedShare</var> to <var>encryptedInputShares</var>.</p>"
             }
           ]
         },
