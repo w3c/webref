@@ -1,0 +1,722 @@
+{
+  "spec": {
+    "title": "RFC 6386: VP8 Data Format and Decoding Guide",
+    "url": "https://www.rfc-editor.org/rfc/rfc6386"
+  },
+  "headings": [
+    {
+      "id": "section-1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-1",
+      "title": "Introduction",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "section-2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-2",
+      "title": "Format Overview",
+      "level": 1,
+      "number": "2"
+    },
+    {
+      "id": "section-3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-3",
+      "title": "Compressed Frame Types",
+      "level": 1,
+      "number": "3"
+    },
+    {
+      "id": "section-4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-4",
+      "title": "Overview of Compressed Data Format",
+      "level": 1,
+      "number": "4"
+    },
+    {
+      "id": "section-5",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-5",
+      "title": "Overview of the Decoding Process",
+      "level": 1,
+      "number": "5"
+    },
+    {
+      "id": "section-6",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-6",
+      "title": "Description of Algorithms",
+      "level": 1,
+      "number": "6"
+    },
+    {
+      "id": "section-7",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-7",
+      "title": "Boolean Entropy Decoder",
+      "level": 1,
+      "number": "7"
+    },
+    {
+      "id": "section-7.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-7.1",
+      "title": "Underlying Theory of Coding",
+      "level": 2,
+      "number": "7.1"
+    },
+    {
+      "id": "section-7.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-7.2",
+      "title": "Practical Algorithm Description",
+      "level": 2,
+      "number": "7.2"
+    },
+    {
+      "id": "section-7.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-7.3",
+      "title": "Actual Implementation",
+      "level": 2,
+      "number": "7.3"
+    },
+    {
+      "id": "section-8",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-8",
+      "title": "Compressed Data Components",
+      "level": 1,
+      "number": "8"
+    },
+    {
+      "id": "section-8.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-8.1",
+      "title": "Tree Coding Implementation",
+      "level": 2,
+      "number": "8.1"
+    },
+    {
+      "id": "section-8.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-8.2",
+      "title": "Tree Coding Example",
+      "level": 2,
+      "number": "8.2"
+    },
+    {
+      "id": "section-9",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-9",
+      "title": "Frame Header",
+      "level": 1,
+      "number": "9"
+    },
+    {
+      "id": "section-9.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-9.1",
+      "title": "Uncompressed Data Chunk",
+      "level": 2,
+      "number": "9.1"
+    },
+    {
+      "id": "section-9.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-9.2",
+      "title": "Color Space and Pixel Type (Key Frames Only)",
+      "level": 2,
+      "number": "9.2"
+    },
+    {
+      "id": "section-9.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-9.3",
+      "title": "Segment-Based Adjustments",
+      "level": 2,
+      "number": "9.3"
+    },
+    {
+      "id": "section-9.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-9.4",
+      "title": "Loop Filter Type and Levels",
+      "level": 2,
+      "number": "9.4"
+    },
+    {
+      "id": "section-9.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-9.5",
+      "title": "Token Partition and Partition Data Offsets",
+      "level": 2,
+      "number": "9.5"
+    },
+    {
+      "id": "section-9.6",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-9.6",
+      "title": "Dequantization Indices",
+      "level": 2,
+      "number": "9.6"
+    },
+    {
+      "id": "section-9.7",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-9.7",
+      "title": "Refresh Golden Frame and Altref Frame",
+      "level": 2,
+      "number": "9.7"
+    },
+    {
+      "id": "section-9.8",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-9.8",
+      "title": "Refresh Last Frame Buffer",
+      "level": 2,
+      "number": "9.8"
+    },
+    {
+      "id": "section-9.9",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-9.9",
+      "title": "DCT Coefficient Probability Update",
+      "level": 2,
+      "number": "9.9"
+    },
+    {
+      "id": "section-9.10",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-9.10",
+      "title": "Remaining Frame Header Data (Non-Key Frame)",
+      "level": 2,
+      "number": "9.10"
+    },
+    {
+      "id": "section-9.11",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-9.11",
+      "title": "Remaining Frame Header Data (Key Frame)",
+      "level": 2,
+      "number": "9.11"
+    },
+    {
+      "id": "section-10",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-10",
+      "title": "Segment-Based Feature Adjustments",
+      "level": 1,
+      "number": "10"
+    },
+    {
+      "id": "section-11",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-11",
+      "title": "Key Frame Macroblock Prediction Records",
+      "level": 1,
+      "number": "11"
+    },
+    {
+      "id": "section-11.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-11.1",
+      "title": "mb_skip_coeff",
+      "level": 2,
+      "number": "11.1"
+    },
+    {
+      "id": "section-11.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-11.2",
+      "title": "Luma Modes",
+      "level": 2,
+      "number": "11.2"
+    },
+    {
+      "id": "section-11.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-11.3",
+      "title": "Subblock Mode Contexts",
+      "level": 2,
+      "number": "11.3"
+    },
+    {
+      "id": "section-11.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-11.4",
+      "title": "Chroma Modes",
+      "level": 2,
+      "number": "11.4"
+    },
+    {
+      "id": "section-11.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-11.5",
+      "title": "Subblock Mode Probability Table",
+      "level": 2,
+      "number": "11.5"
+    },
+    {
+      "id": "section-12",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-12",
+      "title": "Intraframe Prediction",
+      "level": 1,
+      "number": "12"
+    },
+    {
+      "id": "section-12.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-12.1",
+      "title": "mb_skip_coeff",
+      "level": 2,
+      "number": "12.1"
+    },
+    {
+      "id": "section-12.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-12.2",
+      "title": "Chroma Prediction",
+      "level": 2,
+      "number": "12.2"
+    },
+    {
+      "id": "section-12.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-12.3",
+      "title": "Luma Prediction",
+      "level": 2,
+      "number": "12.3"
+    },
+    {
+      "id": "section-13",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-13",
+      "title": "DCT Coefficient Decoding",
+      "level": 1,
+      "number": "13"
+    },
+    {
+      "id": "section-13.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-13.1",
+      "title": "Macroblock without Non-Zero Coefficient Values",
+      "level": 2,
+      "number": "13.1"
+    },
+    {
+      "id": "section-13.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-13.2",
+      "title": "Coding of Individual Coefficient Values",
+      "level": 2,
+      "number": "13.2"
+    },
+    {
+      "id": "section-13.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-13.3",
+      "title": "Token Probabilities",
+      "level": 2,
+      "number": "13.3"
+    },
+    {
+      "id": "section-13.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-13.4",
+      "title": "Token Probability Updates",
+      "level": 2,
+      "number": "13.4"
+    },
+    {
+      "id": "section-13.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-13.5",
+      "title": "Default Token Probability Table",
+      "level": 2,
+      "number": "13.5"
+    },
+    {
+      "id": "section-14",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-14",
+      "title": "DCT and WHT Inversion and Macroblock Reconstruction",
+      "level": 1,
+      "number": "14"
+    },
+    {
+      "id": "section-14.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-14.1",
+      "title": "Dequantization",
+      "level": 2,
+      "number": "14.1"
+    },
+    {
+      "id": "section-14.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-14.2",
+      "title": "Inverse Transforms",
+      "level": 2,
+      "number": "14.2"
+    },
+    {
+      "id": "section-14.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-14.3",
+      "title": "Implementation of the WHT Inversion",
+      "level": 2,
+      "number": "14.3"
+    },
+    {
+      "id": "section-14.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-14.4",
+      "title": "Implementation of the DCT Inversion",
+      "level": 2,
+      "number": "14.4"
+    },
+    {
+      "id": "section-14.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-14.5",
+      "title": "Summation of Predictor and Residue",
+      "level": 2,
+      "number": "14.5"
+    },
+    {
+      "id": "section-15",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-15",
+      "title": "Loop Filter",
+      "level": 1,
+      "number": "15"
+    },
+    {
+      "id": "section-15.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-15.1",
+      "title": "Filter Geometry and Overall Procedure",
+      "level": 2,
+      "number": "15.1"
+    },
+    {
+      "id": "section-15.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-15.2",
+      "title": "Simple Filter",
+      "level": 2,
+      "number": "15.2"
+    },
+    {
+      "id": "section-15.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-15.3",
+      "title": "Normal Filter",
+      "level": 2,
+      "number": "15.3"
+    },
+    {
+      "id": "section-15.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-15.4",
+      "title": "Calculation of Control Parameters",
+      "level": 2,
+      "number": "15.4"
+    },
+    {
+      "id": "section-16",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-16",
+      "title": "Interframe Macroblock Prediction Records",
+      "level": 1,
+      "number": "16"
+    },
+    {
+      "id": "section-16.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-16.1",
+      "title": "Intra-Predicted Macroblocks",
+      "level": 2,
+      "number": "16.1"
+    },
+    {
+      "id": "section-16.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-16.2",
+      "title": "Inter-Predicted Macroblocks",
+      "level": 2,
+      "number": "16.2"
+    },
+    {
+      "id": "section-16.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-16.3",
+      "title": "Mode and Motion Vector Contexts",
+      "level": 2,
+      "number": "16.3"
+    },
+    {
+      "id": "section-16.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-16.4",
+      "title": "Split Prediction",
+      "level": 2,
+      "number": "16.4"
+    },
+    {
+      "id": "section-17",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-17",
+      "title": "Motion Vector Decoding",
+      "level": 1,
+      "number": "17"
+    },
+    {
+      "id": "section-17.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-17.1",
+      "title": "Coding of Each Component",
+      "level": 2,
+      "number": "17.1"
+    },
+    {
+      "id": "section-17.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-17.2",
+      "title": "Probability Updates",
+      "level": 2,
+      "number": "17.2"
+    },
+    {
+      "id": "section-18",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-18",
+      "title": "Interframe Prediction",
+      "level": 1,
+      "number": "18"
+    },
+    {
+      "id": "section-18.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-18.1",
+      "title": "Bounds on, and Adjustment of, Motion Vectors",
+      "level": 2,
+      "number": "18.1"
+    },
+    {
+      "id": "section-18.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-18.2",
+      "title": "Prediction Subblocks",
+      "level": 2,
+      "number": "18.2"
+    },
+    {
+      "id": "section-18.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-18.3",
+      "title": "Sub-Pixel Interpolation",
+      "level": 2,
+      "number": "18.3"
+    },
+    {
+      "id": "section-18.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-18.4",
+      "title": "Filter Properties",
+      "level": 2,
+      "number": "18.4"
+    },
+    {
+      "id": "section-19",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-19",
+      "title": "Annex A: Bitstream Syntax",
+      "level": 1,
+      "number": "19"
+    },
+    {
+      "id": "section-19.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-19.1",
+      "title": "Uncompressed Data Chunk",
+      "level": 2,
+      "number": "19.1"
+    },
+    {
+      "id": "section-19.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-19.2",
+      "title": "Frame Header",
+      "level": 2,
+      "number": "19.2"
+    },
+    {
+      "id": "section-19.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-19.3",
+      "title": "Macroblock Data",
+      "level": 2,
+      "number": "19.3"
+    },
+    {
+      "id": "section-20",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20",
+      "title": "Attachment One: Reference Decoder Source Code",
+      "level": 1,
+      "number": "20"
+    },
+    {
+      "id": "section-20.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.1",
+      "title": "bit_ops.h",
+      "level": 2,
+      "number": "20.1"
+    },
+    {
+      "id": "section-20.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.2",
+      "title": "bool_decoder.h",
+      "level": 2,
+      "number": "20.2"
+    },
+    {
+      "id": "section-20.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.3",
+      "title": "dequant_data.h",
+      "level": 2,
+      "number": "20.3"
+    },
+    {
+      "id": "section-20.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.4",
+      "title": "dixie.c",
+      "level": 2,
+      "number": "20.4"
+    },
+    {
+      "id": "section-20.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.5",
+      "title": "dixie.h",
+      "level": 2,
+      "number": "20.5"
+    },
+    {
+      "id": "section-20.6",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.6",
+      "title": "dixie_loopfilter.c",
+      "level": 2,
+      "number": "20.6"
+    },
+    {
+      "id": "section-20.7",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.7",
+      "title": "dixie_loopfilter.h",
+      "level": 2,
+      "number": "20.7"
+    },
+    {
+      "id": "section-20.8",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.8",
+      "title": "idct_add.c",
+      "level": 2,
+      "number": "20.8"
+    },
+    {
+      "id": "section-20.9",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.9",
+      "title": "idct_add.h",
+      "level": 2,
+      "number": "20.9"
+    },
+    {
+      "id": "section-20.10",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.10",
+      "title": "mem.h",
+      "level": 2,
+      "number": "20.10"
+    },
+    {
+      "id": "section-20.11",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.11",
+      "title": "modemv.c",
+      "level": 2,
+      "number": "20.11"
+    },
+    {
+      "id": "section-20.12",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.12",
+      "title": "modemv.h",
+      "level": 2,
+      "number": "20.12"
+    },
+    {
+      "id": "section-20.13",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.13",
+      "title": "modemv_data.h",
+      "level": 2,
+      "number": "20.13"
+    },
+    {
+      "id": "section-20.14",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.14",
+      "title": "predict.c",
+      "level": 2,
+      "number": "20.14"
+    },
+    {
+      "id": "section-20.15",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.15",
+      "title": "predict.h",
+      "level": 2,
+      "number": "20.15"
+    },
+    {
+      "id": "section-20.16",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.16",
+      "title": "tokens.c",
+      "level": 2,
+      "number": "20.16"
+    },
+    {
+      "id": "section-20.17",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.17",
+      "title": "tokens.h",
+      "level": 2,
+      "number": "20.17"
+    },
+    {
+      "id": "section-20.18",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.18",
+      "title": "vp8_prob_data.h",
+      "level": 2,
+      "number": "20.18"
+    },
+    {
+      "id": "section-20.19",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.19",
+      "title": "vpx_codec_internal.h",
+      "level": 2,
+      "number": "20.19"
+    },
+    {
+      "id": "section-20.20",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.20",
+      "title": "vpx_decoder.h",
+      "level": 2,
+      "number": "20.20"
+    },
+    {
+      "id": "section-20.21",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.21",
+      "title": "vpx_decoder_compat.h",
+      "level": 2,
+      "number": "20.21"
+    },
+    {
+      "id": "section-20.22",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.22",
+      "title": "vpx_image.c",
+      "level": 2,
+      "number": "20.22"
+    },
+    {
+      "id": "section-20.23",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.23",
+      "title": "vpx_image.h",
+      "level": 2,
+      "number": "20.23"
+    },
+    {
+      "id": "section-20.24",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.24",
+      "title": "vpx_integer.h",
+      "level": 2,
+      "number": "20.24"
+    },
+    {
+      "id": "section-20.25",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.25",
+      "title": "AUTHORS File",
+      "level": 2,
+      "number": "20.25"
+    },
+    {
+      "id": "section-20.26",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.26",
+      "title": "LICENSE",
+      "level": 2,
+      "number": "20.26"
+    },
+    {
+      "id": "section-20.27",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-20.27",
+      "title": "PATENTS",
+      "level": 2,
+      "number": "20.27"
+    },
+    {
+      "id": "section-21",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-21",
+      "title": "Security Considerations",
+      "level": 1,
+      "number": "21"
+    },
+    {
+      "id": "section-22",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-22",
+      "title": "References",
+      "level": 1,
+      "number": "22"
+    },
+    {
+      "id": "section-22.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-22.1",
+      "title": "Normative Reference",
+      "level": 2,
+      "number": "22.1"
+    },
+    {
+      "id": "section-22.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc6386#section-22.2",
+      "title": "Informative References",
+      "level": 2,
+      "number": "22.2"
+    }
+  ]
+}

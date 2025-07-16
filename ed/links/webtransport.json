@@ -103,7 +103,6 @@
       "https://w3c.github.io/hr-time/": {},
       "https://w3c.github.io/webappsec-csp/": {},
       "https://w3c.github.io/webrtc-pc/": {},
-      "https://w3c.github.io/webtransport/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://websockets.spec.whatwg.org/": {
         "anchors": [
@@ -212,6 +211,11 @@
           "ascii-serialisation-of-an-origin"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+        "anchors": [
+          "unloading-document-cleanup-steps"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/infrastructure.html": {
         "anchors": [
           "in-parallel"
@@ -276,20 +280,22 @@
           "readablestream-enqueue",
           "readablestream-set-up-with-byte-reading-support",
           "readablestream-set-up-with-byte-reading-support-pullalgorithm",
-          "readablestream-set-up-highwatermark",
+          "readablestream-set-up-with-byte-reading-support-highwatermark",
           "readablestream-set-up",
           "readablestream-set-up-pullalgorithm",
+          "readablestream-set-up-highwatermark",
           "readablestream-error",
           "readablestream-close",
           "writablestream-close",
           "readablestream-locked",
+          "readable-byte-stream",
+          "readable-stream",
+          "byob-reader",
           "ws-get-writer",
           "writablestreamdefaultwriter",
           "writablestream-set-up-closealgorithm",
           "writablestream-set-up-abortalgorithm",
           "default-writer-write",
-          "readable-byte-stream",
-          "byob-reader",
           "default-reader",
           "readablestream-set-up-with-byte-reading-support-cancelalgorithm",
           "ws-abort",
@@ -368,11 +374,6 @@
           "idl-DOMException",
           "Clamp",
           "dom-domexception-code"
-        ]
-      },
-      "https://www.w3.org/TR/webtransport/": {
-        "anchors": [
-          "dom-webtransportdatagramduplexstream-outgoingdatagramsqueue-slot"
         ]
       }
     }

@@ -880,7 +880,7 @@
         "href": "https://w3c.github.io/webtransport/#dictdef-webtransporthash"
       },
       "WebTransportOptions": {
-        "fragment": "dictionary WebTransportOptions {\n  boolean allowPooling = false;\n  boolean requireUnreliable = false;\n  sequence<WebTransportHash> serverCertificateHashes;\n  WebTransportCongestionControl congestionControl = \"default\";\n  [EnforceRange] unsigned short? anticipatedConcurrentIncomingUnidirectionalStreams = null;\n  [EnforceRange] unsigned short? anticipatedConcurrentIncomingBidirectionalStreams = null;\n  sequence<DOMString> protocols = [];\n};",
+        "fragment": "dictionary WebTransportOptions {\n  boolean allowPooling = false;\n  boolean requireUnreliable = false;\n  sequence<WebTransportHash> serverCertificateHashes;\n  WebTransportCongestionControl congestionControl = \"default\";\n  [EnforceRange] unsigned short? anticipatedConcurrentIncomingUnidirectionalStreams = null;\n  [EnforceRange] unsigned short? anticipatedConcurrentIncomingBidirectionalStreams = null;\n  sequence<DOMString> protocols = [];\n  DatagramsReadableMode datagramsReadableMode;\n};",
         "type": "dictionary",
         "name": "WebTransportOptions",
         "inheritance": null,
@@ -1044,6 +1044,22 @@
             },
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportoptions-protocols"
+          },
+          {
+            "type": "field",
+            "name": "datagramsReadableMode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DatagramsReadableMode"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webtransport/#dom-webtransportoptions-datagramsreadablemode"
           }
         ],
         "extAttrs": [],
@@ -1073,6 +1089,20 @@
         ],
         "extAttrs": [],
         "href": "https://w3c.github.io/webtransport/#enumdef-webtransportcongestioncontrol"
+      },
+      "DatagramsReadableMode": {
+        "fragment": "enum DatagramsReadableMode { \"bytes\" };",
+        "type": "enum",
+        "name": "DatagramsReadableMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "bytes",
+            "href": "https://w3c.github.io/webtransport/#dom-datagramsreadablemode-bytes"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webtransport/#enumdef-datagramsreadablemode"
       },
       "WebTransportCloseInfo": {
         "fragment": "dictionary WebTransportCloseInfo {\n  unsigned long closeCode = 0;\n  USVString reason = \"\";\n};",
@@ -2267,7 +2297,8 @@
       ],
       "WebTransportOptions": [
         "WebTransportHash",
-        "WebTransportCongestionControl"
+        "WebTransportCongestionControl",
+        "DatagramsReadableMode"
       ],
       "WebTransportCloseInfo": [],
       "WebTransportSendOptions": [

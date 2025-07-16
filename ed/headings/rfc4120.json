@@ -1,0 +1,932 @@
+{
+  "spec": {
+    "title": "RFC 4120: The Kerberos Network Authentication Service (V5)",
+    "url": "https://www.rfc-editor.org/rfc/rfc4120"
+  },
+  "headings": [
+    {
+      "id": "section-1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-1",
+      "title": "Introduction",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "section-1.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-1.1",
+      "title": "The Kerberos Protocol",
+      "level": 2,
+      "number": "1.1"
+    },
+    {
+      "id": "section-1.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-1.2",
+      "title": "Cross-Realm Operation",
+      "level": 2,
+      "number": "1.2"
+    },
+    {
+      "id": "section-1.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-1.3",
+      "title": "Choosing a Principal with Which to Communicate",
+      "level": 2,
+      "number": "1.3"
+    },
+    {
+      "id": "section-1.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-1.4",
+      "title": "Authorization",
+      "level": 2,
+      "number": "1.4"
+    },
+    {
+      "id": "section-1.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-1.5",
+      "title": "Extending Kerberos without Breaking Interoperability",
+      "level": 2,
+      "number": "1.5"
+    },
+    {
+      "id": "section-1.5.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-1.5.1",
+      "title": "Compatibility with RFC 1510",
+      "level": 3,
+      "number": "1.5.1"
+    },
+    {
+      "id": "section-1.5.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-1.5.2",
+      "title": "Sending Extensible Messages",
+      "level": 3,
+      "number": "1.5.2"
+    },
+    {
+      "id": "section-1.6",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-1.6",
+      "title": "Environmental Assumptions",
+      "level": 2,
+      "number": "1.6"
+    },
+    {
+      "id": "section-1.7",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-1.7",
+      "title": "Glossary of Terms",
+      "level": 2,
+      "number": "1.7"
+    },
+    {
+      "id": "section-2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-2",
+      "title": "Ticket Flag Uses and Requests",
+      "level": 1,
+      "number": "2"
+    },
+    {
+      "id": "section-2.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-2.1",
+      "title": "Initial, Pre-authenticated, and Hardware-Authenticated Tickets",
+      "level": 2,
+      "number": "2.1"
+    },
+    {
+      "id": "section-2.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-2.2",
+      "title": "Invalid Tickets",
+      "level": 2,
+      "number": "2.2"
+    },
+    {
+      "id": "section-2.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-2.3",
+      "title": "Renewable Tickets",
+      "level": 2,
+      "number": "2.3"
+    },
+    {
+      "id": "section-2.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-2.4",
+      "title": "Postdated Tickets",
+      "level": 2,
+      "number": "2.4"
+    },
+    {
+      "id": "section-2.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-2.5",
+      "title": "Proxiable and Proxy Tickets",
+      "level": 2,
+      "number": "2.5"
+    },
+    {
+      "id": "section-2.6",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-2.6",
+      "title": "Forwardable Tickets",
+      "level": 2,
+      "number": "2.6"
+    },
+    {
+      "id": "section-2.7",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-2.7",
+      "title": "Transited Policy Checking",
+      "level": 2,
+      "number": "2.7"
+    },
+    {
+      "id": "section-2.8",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-2.8",
+      "title": "OK as Delegate",
+      "level": 2,
+      "number": "2.8"
+    },
+    {
+      "id": "section-2.9",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-2.9",
+      "title": "Other KDC Options",
+      "level": 2,
+      "number": "2.9"
+    },
+    {
+      "id": "section-2.9.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-2.9.1",
+      "title": "Renewable-OK",
+      "level": 3,
+      "number": "2.9.1"
+    },
+    {
+      "id": "section-2.9.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-2.9.2",
+      "title": "ENC-TKT-IN-SKEY",
+      "level": 3,
+      "number": "2.9.2"
+    },
+    {
+      "id": "section-2.9.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-2.9.3",
+      "title": "Passwordless Hardware Authentication",
+      "level": 3,
+      "number": "2.9.3"
+    },
+    {
+      "id": "section-3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3",
+      "title": "Message Exchanges",
+      "level": 1,
+      "number": "3"
+    },
+    {
+      "id": "section-3.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.1",
+      "title": "The Authentication Service Exchange",
+      "level": 2,
+      "number": "3.1"
+    },
+    {
+      "id": "section-3.1.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.1.1",
+      "title": "Generation of KRB_AS_REQ Message",
+      "level": 3,
+      "number": "3.1.1"
+    },
+    {
+      "id": "section-3.1.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.1.2",
+      "title": "Receipt of KRB_AS_REQ Message",
+      "level": 3,
+      "number": "3.1.2"
+    },
+    {
+      "id": "section-3.1.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.1.3",
+      "title": "Generation of KRB_AS_REP Message",
+      "level": 3,
+      "number": "3.1.3"
+    },
+    {
+      "id": "section-3.1.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.1.4",
+      "title": "Generation of KRB_ERROR Message",
+      "level": 3,
+      "number": "3.1.4"
+    },
+    {
+      "id": "section-3.1.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.1.5",
+      "title": "Receipt of KRB_AS_REP Message",
+      "level": 3,
+      "number": "3.1.5"
+    },
+    {
+      "id": "section-3.1.6",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.1.6",
+      "title": "Receipt of KRB_ERROR Message",
+      "level": 3,
+      "number": "3.1.6"
+    },
+    {
+      "id": "section-3.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.2",
+      "title": "The Client/Server Authentication Exchange",
+      "level": 2,
+      "number": "3.2"
+    },
+    {
+      "id": "section-3.2.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.2.1",
+      "title": "The KRB_AP_REQ Message",
+      "level": 3,
+      "number": "3.2.1"
+    },
+    {
+      "id": "section-3.2.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.2.2",
+      "title": "Generation of a KRB_AP_REQ Message",
+      "level": 3,
+      "number": "3.2.2"
+    },
+    {
+      "id": "section-3.2.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.2.3",
+      "title": "Receipt of KRB_AP_REQ Message",
+      "level": 3,
+      "number": "3.2.3"
+    },
+    {
+      "id": "section-3.2.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.2.4",
+      "title": "Generation of a KRB_AP_REP Message",
+      "level": 3,
+      "number": "3.2.4"
+    },
+    {
+      "id": "section-3.2.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.2.5",
+      "title": "Receipt of KRB_AP_REP Message",
+      "level": 3,
+      "number": "3.2.5"
+    },
+    {
+      "id": "section-3.2.6",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.2.6",
+      "title": "Using the Encryption Key",
+      "level": 3,
+      "number": "3.2.6"
+    },
+    {
+      "id": "section-3.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.3",
+      "title": "The Ticket-Granting Service (TGS) Exchange",
+      "level": 2,
+      "number": "3.3"
+    },
+    {
+      "id": "section-3.3.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.3.1",
+      "title": "Generation of KRB_TGS_REQ Message",
+      "level": 3,
+      "number": "3.3.1"
+    },
+    {
+      "id": "section-3.3.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.3.2",
+      "title": "Receipt of KRB_TGS_REQ Message",
+      "level": 3,
+      "number": "3.3.2"
+    },
+    {
+      "id": "section-3.3.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.3.3",
+      "title": "Generation of KRB_TGS_REP Message",
+      "level": 3,
+      "number": "3.3.3"
+    },
+    {
+      "id": "section-3.3.3.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.3.3.1",
+      "title": "Checking for Revoked Tickets",
+      "level": 4,
+      "number": "3.3.3.1"
+    },
+    {
+      "id": "section-3.3.3.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.3.3.2",
+      "title": "Encoding the Transited Field",
+      "level": 4,
+      "number": "3.3.3.2"
+    },
+    {
+      "id": "section-3.3.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.3.4",
+      "title": "Receipt of KRB_TGS_REP Message",
+      "level": 3,
+      "number": "3.3.4"
+    },
+    {
+      "id": "section-3.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.4",
+      "title": "The KRB_SAFE Exchange",
+      "level": 2,
+      "number": "3.4"
+    },
+    {
+      "id": "section-3.4.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.4.1",
+      "title": "Generation of a KRB_SAFE Message",
+      "level": 3,
+      "number": "3.4.1"
+    },
+    {
+      "id": "section-3.4.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.4.2",
+      "title": "Receipt of KRB_SAFE Message",
+      "level": 3,
+      "number": "3.4.2"
+    },
+    {
+      "id": "section-3.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.5",
+      "title": "The KRB_PRIV Exchange",
+      "level": 2,
+      "number": "3.5"
+    },
+    {
+      "id": "section-3.5.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.5.1",
+      "title": "Generation of a KRB_PRIV Message",
+      "level": 3,
+      "number": "3.5.1"
+    },
+    {
+      "id": "section-3.5.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.5.2",
+      "title": "Receipt of KRB_PRIV Message",
+      "level": 3,
+      "number": "3.5.2"
+    },
+    {
+      "id": "section-3.6",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.6",
+      "title": "The KRB_CRED Exchange",
+      "level": 2,
+      "number": "3.6"
+    },
+    {
+      "id": "section-3.6.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.6.1",
+      "title": "Generation of a KRB_CRED Message",
+      "level": 3,
+      "number": "3.6.1"
+    },
+    {
+      "id": "section-3.6.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.6.2",
+      "title": "Receipt of KRB_CRED Message",
+      "level": 3,
+      "number": "3.6.2"
+    },
+    {
+      "id": "section-3.7",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-3.7",
+      "title": "User-to-User Authentication Exchanges",
+      "level": 2,
+      "number": "3.7"
+    },
+    {
+      "id": "section-4",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-4",
+      "title": "Encryption and Checksum Specifications",
+      "level": 1,
+      "number": "4"
+    },
+    {
+      "id": "section-5",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5",
+      "title": "Message Specifications",
+      "level": 1,
+      "number": "5"
+    },
+    {
+      "id": "section-5.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.1",
+      "title": "Specific Compatibility Notes on ASN.1",
+      "level": 2,
+      "number": "5.1"
+    },
+    {
+      "id": "section-5.1.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.1.1",
+      "title": "ASN.1 Distinguished Encoding Rules",
+      "level": 3,
+      "number": "5.1.1"
+    },
+    {
+      "id": "section-5.1.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.1.2",
+      "title": "Optional Integer Fields",
+      "level": 3,
+      "number": "5.1.2"
+    },
+    {
+      "id": "section-5.1.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.1.3",
+      "title": "Empty SEQUENCE OF Types",
+      "level": 3,
+      "number": "5.1.3"
+    },
+    {
+      "id": "section-5.1.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.1.4",
+      "title": "Unrecognized Tag Numbers",
+      "level": 3,
+      "number": "5.1.4"
+    },
+    {
+      "id": "section-5.1.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.1.5",
+      "title": "Tag Numbers Greater Than 30",
+      "level": 3,
+      "number": "5.1.5"
+    },
+    {
+      "id": "section-5.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2",
+      "title": "Basic Kerberos Types",
+      "level": 2,
+      "number": "5.2"
+    },
+    {
+      "id": "section-5.2.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.1",
+      "title": "KerberosString",
+      "level": 3,
+      "number": "5.2.1"
+    },
+    {
+      "id": "section-5.2.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.2",
+      "title": "Realm and PrincipalName",
+      "level": 3,
+      "number": "5.2.2"
+    },
+    {
+      "id": "section-5.2.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.3",
+      "title": "KerberosTime",
+      "level": 3,
+      "number": "5.2.3"
+    },
+    {
+      "id": "section-5.2.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.4",
+      "title": "Constrained Integer Types",
+      "level": 3,
+      "number": "5.2.4"
+    },
+    {
+      "id": "section-5.2.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.5",
+      "title": "HostAddress and HostAddresses",
+      "level": 3,
+      "number": "5.2.5"
+    },
+    {
+      "id": "section-5.2.6",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.6",
+      "title": "AuthorizationData",
+      "level": 3,
+      "number": "5.2.6"
+    },
+    {
+      "id": "section-5.2.6.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.6.1",
+      "title": "IF-RELEVANT",
+      "level": 4,
+      "number": "5.2.6.1"
+    },
+    {
+      "id": "section-5.2.6.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.6.2",
+      "title": "KDCIssued",
+      "level": 4,
+      "number": "5.2.6.2"
+    },
+    {
+      "id": "section-5.2.6.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.6.3",
+      "title": "AND-OR",
+      "level": 4,
+      "number": "5.2.6.3"
+    },
+    {
+      "id": "section-5.2.6.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.6.4",
+      "title": "MANDATORY-FOR-KDC",
+      "level": 4,
+      "number": "5.2.6.4"
+    },
+    {
+      "id": "section-5.2.7",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.7",
+      "title": "PA-DATA",
+      "level": 3,
+      "number": "5.2.7"
+    },
+    {
+      "id": "section-5.2.7.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.7.1",
+      "title": "PA-TGS-REQ",
+      "level": 4,
+      "number": "5.2.7.1"
+    },
+    {
+      "id": "section-5.2.7.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.7.2",
+      "title": "Encrypted Timestamp Pre-authentication",
+      "level": 4,
+      "number": "5.2.7.2"
+    },
+    {
+      "id": "section-5.2.7.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.7.3",
+      "title": "PA-PW-SALT",
+      "level": 4,
+      "number": "5.2.7.3"
+    },
+    {
+      "id": "section-5.2.7.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.7.4",
+      "title": "PA-ETYPE-INFO",
+      "level": 4,
+      "number": "5.2.7.4"
+    },
+    {
+      "id": "section-5.2.7.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.7.5",
+      "title": "PA-ETYPE-INFO2",
+      "level": 4,
+      "number": "5.2.7.5"
+    },
+    {
+      "id": "section-5.2.8",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.8",
+      "title": "KerberosFlags",
+      "level": 3,
+      "number": "5.2.8"
+    },
+    {
+      "id": "section-5.2.9",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.9",
+      "title": "Cryptosystem-Related Types",
+      "level": 3,
+      "number": "5.2.9"
+    },
+    {
+      "id": "section-5.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.3",
+      "title": "Tickets",
+      "level": 2,
+      "number": "5.3"
+    },
+    {
+      "id": "section-5.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.4",
+      "title": "Specifications for the AS and TGS Exchanges",
+      "level": 2,
+      "number": "5.4"
+    },
+    {
+      "id": "section-5.4.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.4.1",
+      "title": "KRB_KDC_REQ Definition",
+      "level": 3,
+      "number": "5.4.1"
+    },
+    {
+      "id": "section-5.4.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.4.2",
+      "title": "KRB_KDC_REP Definition",
+      "level": 3,
+      "number": "5.4.2"
+    },
+    {
+      "id": "section-5.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.5",
+      "title": "Client/Server (CS) Message Specifications",
+      "level": 2,
+      "number": "5.5"
+    },
+    {
+      "id": "section-5.5.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.5.1",
+      "title": "KRB_AP_REQ Definition",
+      "level": 3,
+      "number": "5.5.1"
+    },
+    {
+      "id": "section-5.5.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.5.2",
+      "title": "KRB_AP_REP Definition",
+      "level": 3,
+      "number": "5.5.2"
+    },
+    {
+      "id": "section-5.5.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.5.3",
+      "title": "Error Message Reply",
+      "level": 3,
+      "number": "5.5.3"
+    },
+    {
+      "id": "section-5.6",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.6",
+      "title": "KRB_SAFE Message Specification",
+      "level": 2,
+      "number": "5.6"
+    },
+    {
+      "id": "section-5.6.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.6.1",
+      "title": "KRB_SAFE definition",
+      "level": 3,
+      "number": "5.6.1"
+    },
+    {
+      "id": "section-5.7",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.7",
+      "title": "KRB_PRIV Message Specification",
+      "level": 2,
+      "number": "5.7"
+    },
+    {
+      "id": "section-5.7.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.7.1",
+      "title": "KRB_PRIV Definition",
+      "level": 3,
+      "number": "5.7.1"
+    },
+    {
+      "id": "section-5.8",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.8",
+      "title": "KRB_CRED Message Specification",
+      "level": 2,
+      "number": "5.8"
+    },
+    {
+      "id": "section-5.8.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.8.1",
+      "title": "KRB_CRED Definition",
+      "level": 3,
+      "number": "5.8.1"
+    },
+    {
+      "id": "section-5.9",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.9",
+      "title": "Error Message Specification",
+      "level": 2,
+      "number": "5.9"
+    },
+    {
+      "id": "section-5.9.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.9.1",
+      "title": "KRB_ERROR Definition",
+      "level": 3,
+      "number": "5.9.1"
+    },
+    {
+      "id": "section-5.10",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-5.10",
+      "title": "Application Tag Numbers",
+      "level": 2,
+      "number": "5.10"
+    },
+    {
+      "id": "section-6",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-6",
+      "title": "Naming Constraints",
+      "level": 1,
+      "number": "6"
+    },
+    {
+      "id": "section-6.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-6.1",
+      "title": "Realm Names",
+      "level": 2,
+      "number": "6.1"
+    },
+    {
+      "id": "section-6.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-6.2",
+      "title": "Principal Names",
+      "level": 2,
+      "number": "6.2"
+    },
+    {
+      "id": "section-6.2.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-6.2.1",
+      "title": "Name of Server Principals",
+      "level": 3,
+      "number": "6.2.1"
+    },
+    {
+      "id": "section-7",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7",
+      "title": "Constants and Other Defined Values",
+      "level": 1,
+      "number": "7"
+    },
+    {
+      "id": "section-7.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.1",
+      "title": "Host Address Types",
+      "level": 2,
+      "number": "7.1"
+    },
+    {
+      "id": "section-7.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.2",
+      "title": "KDC Messaging: IP Transports",
+      "level": 2,
+      "number": "7.2"
+    },
+    {
+      "id": "section-7.2.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.2.1",
+      "title": "UDP/IP transport",
+      "level": 3,
+      "number": "7.2.1"
+    },
+    {
+      "id": "section-7.2.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.2.2",
+      "title": "TCP/IP Transport",
+      "level": 3,
+      "number": "7.2.2"
+    },
+    {
+      "id": "section-7.2.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.2.3",
+      "title": "KDC Discovery on IP Networks",
+      "level": 3,
+      "number": "7.2.3"
+    },
+    {
+      "id": "section-7.2.3.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.2.3.1",
+      "title": "DNS vs. Kerberos: Case Sensitivity of Realm Names",
+      "level": 4,
+      "number": "7.2.3.1"
+    },
+    {
+      "id": "section-7.2.3.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.2.3.2",
+      "title": "Specifying KDC Location Information with DNS SRV records",
+      "level": 4,
+      "number": "7.2.3.2"
+    },
+    {
+      "id": "section-7.2.3.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.2.3.3",
+      "title": "KDC Discovery for Domain Style Realm Names on IP Networks",
+      "level": 4,
+      "number": "7.2.3.3"
+    },
+    {
+      "id": "section-7.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.3",
+      "title": "Name of the TGS",
+      "level": 2,
+      "number": "7.3"
+    },
+    {
+      "id": "section-7.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.4",
+      "title": "OID Arc for KerberosV5",
+      "level": 2,
+      "number": "7.4"
+    },
+    {
+      "id": "section-7.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5",
+      "title": "Protocol Constants and Associated Values",
+      "level": 2,
+      "number": "7.5"
+    },
+    {
+      "id": "section-7.5.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.1",
+      "title": "Key Usage Numbers",
+      "level": 3,
+      "number": "7.5.1"
+    },
+    {
+      "id": "section-7.5.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.2",
+      "title": "PreAuthentication Data Types",
+      "level": 3,
+      "number": "7.5.2"
+    },
+    {
+      "id": "section-7.5.3",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.3",
+      "title": "Address Types",
+      "level": 3,
+      "number": "7.5.3"
+    },
+    {
+      "id": "section-7.5.4",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.4",
+      "title": "Authorization Data Types",
+      "level": 3,
+      "number": "7.5.4"
+    },
+    {
+      "id": "section-7.5.5",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.5",
+      "title": "Transited Encoding Types",
+      "level": 3,
+      "number": "7.5.5"
+    },
+    {
+      "id": "section-7.5.6",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.6",
+      "title": "Protocol Version Number",
+      "level": 3,
+      "number": "7.5.6"
+    },
+    {
+      "id": "section-7.5.7",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.7",
+      "title": "Kerberos Message Types",
+      "level": 3,
+      "number": "7.5.7"
+    },
+    {
+      "id": "section-7.5.8",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.8",
+      "title": "Name Types",
+      "level": 3,
+      "number": "7.5.8"
+    },
+    {
+      "id": "section-7.5.9",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.9",
+      "title": "Error Codes",
+      "level": 3,
+      "number": "7.5.9"
+    },
+    {
+      "id": "section-8",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-8",
+      "title": "Interoperability Requirements",
+      "level": 1,
+      "number": "8"
+    },
+    {
+      "id": "section-8.1",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-8.1",
+      "title": "Specification 2",
+      "level": 2,
+      "number": "8.1"
+    },
+    {
+      "id": "section-8.2",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-8.2",
+      "title": "Recommended KDC Values",
+      "level": 2,
+      "number": "8.2"
+    },
+    {
+      "id": "section-9",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-9",
+      "title": "IANA Considerations",
+      "level": 1,
+      "number": "9"
+    },
+    {
+      "id": "section-10",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-10",
+      "title": "Security Considerations",
+      "level": 1,
+      "number": "10"
+    },
+    {
+      "id": "section-11",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#section-11",
+      "title": "Acknowledgements",
+      "level": 1,
+      "number": "11"
+    },
+    {
+      "id": "appendix-A",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#appendix-A",
+      "title": "ASN.1 module",
+      "level": 1,
+      "number": "A"
+    },
+    {
+      "id": "appendix-B",
+      "href": "https://www.rfc-editor.org/rfc/rfc4120#appendix-B",
+      "title": "Changes since RFC 1510",
+      "level": 1,
+      "number": "B"
+    }
+  ]
+}
