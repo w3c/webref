@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-07-15T01:36:53.879Z",
+  "date": "2025-07-16T01:54:18.612Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -35,7 +35,6 @@
       "css-images-5",
       "css-link-params-1",
       "css-page-4",
-      "css-position-4",
       "css-shapes-2",
       "css-size-adjust-1",
       "css-variables-2",
@@ -157,6 +156,7 @@
       "trace-context-amqp",
       "trace-context-binary",
       "trace-context-mqtt",
+      "tracestate-ids-registry",
       "web-nfc",
       "web-share-target",
       "dbsc",
@@ -402,6 +402,7 @@
       "css-page-floats-3",
       "css-paint-api-1",
       "css-position-3",
+      "css-position-4",
       "css-properties-values-api-1",
       "css-pseudo-4",
       "css-regions-1",
@@ -710,10 +711,10 @@
     ]
   },
   "stats": {
-    "crawled": 376,
+    "crawled": 377,
     "errors": 0
   },
-  "crawler": "reffy-19.1.0",
+  "crawler": "reffy-19.1.2",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -759,7 +760,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "15 July 2025",
+      "date": "16 July 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -2162,11 +2163,11 @@
       ],
       "crawled": "https://www.w3.org/TR/core-aam-1.2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 17 Jun 2025 16:50:25 GMT"
+        "lastModified": "Tue, 15 Jul 2025 17:14:33 GMT"
       },
       "generator": "respec",
-      "date": "17 June 2025",
-      "revision": "0df37d0e5ed60c488b88064f7af3dad3d9ffc2d3",
+      "date": "15 July 2025",
+      "revision": "638e8c5a07221c95e78f7a4ac2072ead5f8843c6",
       "links": "links/core-aam-1.2.json",
       "refs": "refs/core-aam-1.2.json",
       "dfns": "dfns/core-aam-1.2.json",
@@ -6909,6 +6910,75 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/css-position-4/",
+      "seriesComposition": "delta",
+      "shortname": "css-position-4",
+      "series": {
+        "shortname": "css-position",
+        "currentSpecification": "css-position-3",
+        "title": "CSS Positioned Layout",
+        "shortTitle": "CSS Positioned Layout",
+        "releaseUrl": "https://www.w3.org/TR/css-position/",
+        "nightlyUrl": "https://drafts.csswg.org/css-position/"
+      },
+      "seriesVersion": "4",
+      "seriesPrevious": "css-position-3",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-position-4/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-position-4/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-position-4/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-position-4/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Positioned Layout Module Level 4",
+      "source": "w3c",
+      "shortTitle": "CSS Positioned Layout 4",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-position"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/css-position-4/",
+        "https://drafts.csswg.org/css-position-4/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-position-4/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 07 Jul 2025 10:40:28 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "8 July 2025",
+      "revision": "1b4ea44fc81d003576c096a03e8e3970cc6dcc4e",
+      "algorithms": "algorithms/css-position-4.json",
+      "links": "links/css-position-4.json",
+      "refs": "refs/css-position-4.json",
+      "css": "css/css-position-4.json",
+      "dfns": "dfns/css-position-4.json",
+      "headings": "headings/css-position-4.json",
+      "ids": "ids/css-position-4.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/css-properties-values-api-1/",
       "seriesComposition": "full",
       "shortname": "css-properties-values-api-1",
@@ -9994,11 +10064,11 @@
       ],
       "crawled": "https://www.w3.org/TR/dapt/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 09 Jul 2025 14:37:15 GMT"
+        "lastModified": "Tue, 15 Jul 2025 16:15:49 GMT"
       },
       "generator": "respec",
-      "date": "09 July 2025",
-      "revision": "3befb22bbbdc6a11db9415732148dd4f379e7861",
+      "date": "15 July 2025",
+      "revision": "05c4c0a8b3cbdab472d28337527375d476053701",
       "algorithms": "algorithms/dapt.json",
       "links": "links/dapt.json",
       "refs": "refs/dapt.json",
@@ -10330,7 +10400,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/digital-credentials/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -12954,11 +13024,11 @@
       ],
       "crawled": "https://www.w3.org/TR/IFT/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 17 Feb 2025 15:32:15 GMT"
+        "lastModified": "Fri, 11 Jul 2025 16:53:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "20 February 2025",
-      "revision": "78512794fb4555ffa39ad9549dddca07126bfe89",
+      "date": "15 July 2025",
+      "revision": "629889f902342d28c78b5b70ef66b8bfbed1bdbd",
       "algorithms": "algorithms/IFT.json",
       "links": "links/IFT.json",
       "refs": "refs/IFT.json",
@@ -17296,11 +17366,11 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf12-n-triples/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 04 Jul 2025 18:44:21 GMT"
+        "lastModified": "Tue, 15 Jul 2025 21:28:49 GMT"
       },
       "generator": "respec",
-      "date": "04 July 2025",
-      "revision": "13a53920c7a4601d084d59ddc6b7018977a36d85",
+      "date": "15 July 2025",
+      "revision": "f2d6aca1196e7468f17ac741f04a211a0abf509d",
       "links": "links/rdf12-n-triples.json",
       "refs": "refs/rdf12-n-triples.json",
       "dfns": "dfns/rdf12-n-triples.json",
@@ -17520,11 +17590,11 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf12-turtle/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 02 Jul 2025 14:33:35 GMT"
+        "lastModified": "Tue, 15 Jul 2025 21:24:47 GMT"
       },
       "generator": "respec",
-      "date": "02 July 2025",
-      "revision": "ba75310eebc05d9edc904a3c585e8193beac3418",
+      "date": "15 July 2025",
+      "revision": "2e46d380030f96142ac9ed0e55e9fc4b927148f3",
       "links": "links/rdf12-turtle.json",
       "refs": "refs/rdf12-turtle.json",
       "dfns": "dfns/rdf12-turtle.json",
@@ -18733,7 +18803,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/shacl12-core/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -18790,7 +18860,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/shacl12-sparql/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
