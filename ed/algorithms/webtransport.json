@@ -1518,7 +1518,7 @@
     {
       "name": "create a SendStream",
       "href": "https://w3c.github.io/webtransport/#webtransportsendstream-create",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportSendStream\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"create|creating\" id=\"webtransportsendstream-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create</dfn> a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream①②\">WebTransportSendStream</a></code>, with an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-outgoing-unidirectional\" id=\"ref-for-stream-outgoing-unidirectional⑤\">outgoing unidirectional</a> or <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-bidirectional\" id=\"ref-for-stream-bidirectional①⓪\">bidirectional</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#protocol-webtransport-stream\" id=\"ref-for-protocol-webtransport-stream⑧\">WebTransport stream</a>\n<var>internalStream</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransport\" id=\"ref-for-webtransport③③\">WebTransport</a></code> <var>transport</var>, <var>sendGroup</var>, and a\n<var>sendOrder</var>, run these steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportSendStream\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"create|creating\" id=\"webtransportsendstream-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create</dfn> a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream①②\">WebTransportSendStream</a></code>, with an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-outgoing-unidirectional\" id=\"ref-for-stream-outgoing-unidirectional⑤\">outgoing unidirectional</a> or <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-bidirectional\" id=\"ref-for-stream-bidirectional①⓪\">bidirectional</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#protocol-webtransport-stream\" id=\"ref-for-protocol-webtransport-stream⑨\">WebTransport stream</a>\n<var>internalStream</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransport\" id=\"ref-for-webtransport③②\">WebTransport</a></code> <var>transport</var>, <var>sendGroup</var>, and a\n<var>sendOrder</var>, run these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1724,10 +1724,10 @@
         },
         {
           "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑤\">in parallel</a>:",
-          "rationale": "reset",
+          "rationale": "abort",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-reset\" id=\"ref-for-stream-reset②\">Reset</a> <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-internalstream-slot\" id=\"ref-for-dom-webtransportsendstream-internalstream-slot④\">[[InternalStream]]</a></code>\n  with <var>code</var> and <var>committedOffset</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-abort-sending\" id=\"ref-for-stream-abort-sending②\">Abort sending</a> on <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-internalstream-slot\" id=\"ref-for-dom-webtransportsendstream-internalstream-slot④\">[[InternalStream]]</a></code> with <var>code</var> and <var>committedOffset</var>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②⑨\">Queue a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects③⑥\">resolve</a> <var>promise</var> with undefined.</p>"
@@ -1766,15 +1766,15 @@
       ]
     },
     {
-      "name": "STOP_SENDING signal",
-      "html": "Whenever a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#protocol-webtransport-stream\" id=\"ref-for-protocol-webtransport-stream⑨\">WebTransport stream</a> associated with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream①⑨\">WebTransportSendStream</a></code> <var>stream</var> gets a\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-signal-stop_sending\" id=\"ref-for-stream-signal-stop_sending\">STOP_SENDING</a> signal from the server, run these steps:",
+      "name": "receiving aborted signal",
+      "html": "Whenever a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#protocol-webtransport-stream\" id=\"ref-for-protocol-webtransport-stream①⓪\">WebTransport stream</a> associated with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream①⑨\">WebTransportSendStream</a></code> <var>stream</var> gets a\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-signal-receiving-aborted\" id=\"ref-for-stream-signal-receiving-aborted\">receiving aborted</a> signal from the server, run these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>transport</var> be <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-transport-slot\" id=\"ref-for-dom-webtransportsendstream-transport-slot⑤\">[[Transport]]</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>code</var> be the application protocol error code attached to the STOP_SENDING frame. <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webtransport/#biblio-quic\" title=\"QUIC: A UDP-Based Multiplexed and Secure Transport\">[QUIC]</a></p>"
+          "html": "<p>Let <var>code</var> be the application protocol error code attached to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-signal-receiving-aborted\" id=\"ref-for-stream-signal-receiving-aborted①\">receiving aborted</a> signal.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task③⓪\">Queue a network task</a> with <var>transport</var> to run these steps:",
@@ -1840,7 +1840,7 @@
     {
       "name": "create a SendGroup",
       "href": "https://w3c.github.io/webtransport/#webtransportsendgroup-create",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportSendGroup\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"create|creating\" id=\"webtransportsendgroup-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create</dfn> a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportsendgroup\" id=\"ref-for-webtransportsendgroup①⑨\">WebTransportSendGroup</a></code>, with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransport\" id=\"ref-for-webtransport③⑤\">WebTransport</a></code> <var>transport</var>, run these steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportSendGroup\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"create|creating\" id=\"webtransportsendgroup-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create</dfn> a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportsendgroup\" id=\"ref-for-webtransportsendgroup①⑨\">WebTransportSendGroup</a></code>, with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransport\" id=\"ref-for-webtransport③④\">WebTransport</a></code> <var>transport</var>, run these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1889,7 +1889,7 @@
     {
       "name": "WebTransportReceiveStream/create",
       "href": "https://w3c.github.io/webtransport/#webtransportreceivestream-create",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportReceiveStream\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"create|creating\" id=\"webtransportreceivestream-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create</dfn> a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportreceivestream\" id=\"ref-for-webtransportreceivestream①⑤\">WebTransportReceiveStream</a></code>, with an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-incoming-unidirectional\" id=\"ref-for-stream-incoming-unidirectional⑨\">incoming unidirectional</a> or <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-bidirectional\" id=\"ref-for-stream-bidirectional①③\">bidirectional</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#protocol-webtransport-stream\" id=\"ref-for-protocol-webtransport-stream①②\">WebTransport stream</a>\n<var>internalStream</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransport\" id=\"ref-for-webtransport③⑦\">WebTransport</a></code> <var>transport</var>, run these steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportReceiveStream\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"create|creating\" id=\"webtransportreceivestream-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create</dfn> a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportreceivestream\" id=\"ref-for-webtransportreceivestream①⑤\">WebTransportReceiveStream</a></code>, with an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-incoming-unidirectional\" id=\"ref-for-stream-incoming-unidirectional⑨\">incoming unidirectional</a> or <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-bidirectional\" id=\"ref-for-stream-bidirectional①③\">bidirectional</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#protocol-webtransport-stream\" id=\"ref-for-protocol-webtransport-stream①③\">WebTransport stream</a>\n<var>internalStream</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransport\" id=\"ref-for-webtransport③⑥\">WebTransport</a></code> <var>transport</var>, run these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -2042,10 +2042,10 @@
         },
         {
           "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②⓪\">in parallel</a>:",
-          "rationale": "send",
+          "rationale": "abort",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-send-stop_sending\" id=\"ref-for-stream-send-stop_sending①\">Send STOP_SENDING</a> with <var>internalStream</var> and <var>code</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-abort-receiving\" id=\"ref-for-stream-abort-receiving①\">Abort receiving</a> on <var>internalStream</var> with <var>code</var>.</p>"
             },
             {
               "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task③④\">Queue a network task</a> with <var>transport</var> to run these steps:",
@@ -2067,15 +2067,15 @@
       ]
     },
     {
-      "name": "reset signal",
-      "html": "Whenever a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#protocol-webtransport-stream\" id=\"ref-for-protocol-webtransport-stream①③\">WebTransport stream</a> associated with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportreceivestream\" id=\"ref-for-webtransportreceivestream①⑨\">WebTransportReceiveStream</a></code> <var>stream</var> gets a\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-signal-reset_stream\" id=\"ref-for-stream-signal-reset_stream\">RESET_STREAM</a> signal from the server, run these steps:",
+      "name": "sending aborted signal",
+      "html": "Whenever a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#protocol-webtransport-stream\" id=\"ref-for-protocol-webtransport-stream①④\">WebTransport stream</a> associated with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportreceivestream\" id=\"ref-for-webtransportreceivestream①⑨\">WebTransportReceiveStream</a></code> <var>stream</var> gets a\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-signal-sending-aborted\" id=\"ref-for-stream-signal-sending-aborted\">sending aborted</a> signal from the server, run these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>transport</var> be <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportreceivestream-transport-slot\" id=\"ref-for-dom-webtransportreceivestream-transport-slot③\">[[Transport]]</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>code</var> be the application protocol error code attached to the RESET_STREAM_AT or WT_RESET_STREAM frame.\n <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webtransport/#biblio-reliable-reset\" title=\"QUIC Stream Resets with Partial Delivery\">[RELIABLE-RESET]</a> <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webtransport/#biblio-web-transport-http2\" title=\"WebTransport over HTTP/2\">[WEB-TRANSPORT-HTTP2]</a></p>"
+          "html": "<p>Let <var>code</var> be the application protocol error code attached to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-signal-sending-aborted\" id=\"ref-for-stream-signal-sending-aborted①\">sending aborted</a> signal.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task③⑤\">Queue a network task</a> with <var>transport</var> to run these steps:",
@@ -2100,7 +2100,7 @@
     {
       "name": "create a BidirectionalStream",
       "href": "https://w3c.github.io/webtransport/#bidirectionalstream-create",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"BidirectionalStream\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"bidirectionalstream-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create</dfn> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportbidirectionalstream\" id=\"ref-for-webtransportbidirectionalstream⑧\">WebTransportBidirectionalStream</a></code> with a\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-bidirectional\" id=\"ref-for-stream-bidirectional①④\">bidirectional</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#protocol-webtransport-stream\" id=\"ref-for-protocol-webtransport-stream①④\">WebTransport stream</a> <var>internalStream</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransport\" id=\"ref-for-webtransport③⑨\">WebTransport</a></code>\nobject <var>transport</var>, and a <var>sendOrder</var>, run these steps.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"BidirectionalStream\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"bidirectionalstream-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create</dfn> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportbidirectionalstream\" id=\"ref-for-webtransportbidirectionalstream⑧\">WebTransportBidirectionalStream</a></code> with a\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-bidirectional\" id=\"ref-for-stream-bidirectional①④\">bidirectional</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#protocol-webtransport-stream\" id=\"ref-for-protocol-webtransport-stream①⑤\">WebTransport stream</a> <var>internalStream</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransport\" id=\"ref-for-webtransport③⑧\">WebTransport</a></code>\nobject <var>transport</var>, and a <var>sendOrder</var>, run these steps.",
       "rationale": ".algorithm",
       "steps": [
         {
