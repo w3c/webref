@@ -914,8 +914,6 @@ network.BaseParameters = (
     ? intercepts: [+network.Intercept]
 )
 
-network.DataType = "response"
-
 network.BytesValue = network.StringValue / network.Base64Value;
 
 network.StringValue = {
@@ -951,6 +949,8 @@ network.CookieHeader = {
     name: text,
     value: network.BytesValue,
 }
+
+network.DataType = "response"
 
 network.FetchTimingInfo = {
     timeOrigin: float,
@@ -2750,8 +2750,6 @@ network.AuthCredentials = {
   password: text,
 }
 
-network.DataType = "response"
-
 network.BytesValue = network.StringValue / network.Base64Value;
 
 network.StringValue = {
@@ -2787,6 +2785,8 @@ network.CookieHeader = {
     name: text,
     value: network.BytesValue,
 }
+
+network.DataType = "response"
 
 network.Header = {
   name: text,
@@ -4206,8 +4206,6 @@ network.BaseParameters = (
     ? intercepts: [+network.Intercept]
 )
 
-network.DataType = "response"
-
 network.BytesValue = network.StringValue / network.Base64Value;
 
 network.StringValue = {
@@ -4238,6 +4236,8 @@ network.Cookie = {
     ? expiry: js-uint,
     Extensible,
 }
+
+network.DataType = "response"
 
 network.FetchTimingInfo = {
     timeOrigin: float,
