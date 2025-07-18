@@ -805,7 +805,8 @@ browsingContext.UserPromptOpenedParameters = {
 EmulationCommand = (
   emulation.SetGeolocationOverride //
   emulation.SetLocaleOverride //
-  emulation.SetScreenOrientationOverride
+  emulation.SetScreenOrientationOverride //
+  emulation.SetTimezoneOverride
 )
 
 emulation.SetGeolocationOverride = (
@@ -862,6 +863,17 @@ emulation.ScreenOrientation = {
 
 emulation.SetScreenOrientationOverrideParameters = {
   screenOrientation: emulation.ScreenOrientation / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.SetTimezoneOverride = (
+  method: "emulation.setTimezoneOverride",
+  params: emulation.SetTimezoneOverrideParameters
+)
+
+emulation.SetTimezoneOverrideParameters = {
+  timezone: text / null,
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
 }
@@ -2668,7 +2680,8 @@ browsingContext.TraverseHistoryParameters = {
 EmulationCommand = (
   emulation.SetGeolocationOverride //
   emulation.SetLocaleOverride //
-  emulation.SetScreenOrientationOverride
+  emulation.SetScreenOrientationOverride //
+  emulation.SetTimezoneOverride
 )
 
 emulation.SetGeolocationOverride = (
@@ -2725,6 +2738,17 @@ emulation.ScreenOrientation = {
 
 emulation.SetScreenOrientationOverrideParameters = {
   screenOrientation: emulation.ScreenOrientation / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.SetTimezoneOverride = (
+  method: "emulation.setTimezoneOverride",
+  params: emulation.SetTimezoneOverrideParameters
+)
+
+emulation.SetTimezoneOverrideParameters = {
+  timezone: text / null,
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
 }
