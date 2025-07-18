@@ -7,7 +7,7 @@
     {
       "name": "link-parameters",
       "href": "https://drafts.csswg.org/css-link-params-1/#propdef-link-parameters",
-      "value": "none | <link-param>+",
+      "value": "none | <param()>#",
       "initial": "none",
       "appliesTo": "all elements and pseudo-elements",
       "inherited": "no",
@@ -25,10 +25,11 @@
   "selectors": [],
   "values": [
     {
-      "name": "<link-param>",
-      "href": "https://drafts.csswg.org/css-link-params-1/#typedef-link-param",
-      "type": "type",
-      "value": "param( <custom-property-name> <declaration-value>? )"
+      "name": "param()",
+      "prose": "The param() function specifies a link parameter, with a key of the <dashed-ident>, and a value of the <declaration-value>?. (If the <declaration-value> is omitted, it represents an empty value.) It has the syntax:",
+      "href": "https://drafts.csswg.org/css-link-params-1/#funcdef-param",
+      "type": "function",
+      "value": "param( <dashed-ident> , <declaration-value>? )"
     }
   ]
 }

@@ -254,7 +254,7 @@
       "name": "@env",
       "href": "https://drafts.csswg.org/css-mixins-1/#at-ruledef-env",
       "descriptors": [],
-      "syntax": "@env <custom-property-name> : <declaration-value>? ;"
+      "syntax": "@env <custom-property-name> <css-type>? : <declaration-value>? ;"
     },
     {
       "name": "@font-face",
@@ -1621,6 +1621,13 @@
       "href": "https://drafts.csswg.org/css-fonts-4/#funcdef-palette-mix",
       "type": "function",
       "syntax": "palette-mix(<color-interpolation-method> , [ [normal | light | dark | <palette-identifier> | <palette-mix()> ] && <percentage [0,100]>? ]#{2})"
+    },
+    {
+      "name": "param()",
+      "prose": "The param() function specifies a link parameter, with a key of the <dashed-ident>, and a value of the <declaration-value>?. (If the <declaration-value> is omitted, it represents an empty value.) It has the syntax:",
+      "href": "https://drafts.csswg.org/css-link-params-1/#funcdef-param",
+      "type": "function",
+      "syntax": "param( <dashed-ident> , <declaration-value>? )"
     },
     {
       "for": [
@@ -8750,7 +8757,7 @@
         "link-parameters",
         "linkParameters"
       ],
-      "syntax": "none | <link-param>+"
+      "syntax": "none | <param()>#"
     },
     {
       "name": "list-style",
@@ -16546,12 +16553,6 @@
       "href": "https://drafts.csswg.org/css-images-4/#typedef-linear-gradient-syntax",
       "type": "type",
       "syntax": "[ [ <angle> | <zero> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list>"
-    },
-    {
-      "name": "link-param",
-      "href": "https://drafts.csswg.org/css-link-params-1/#typedef-link-param",
-      "type": "type",
-      "syntax": "param( <custom-property-name> <declaration-value>? )"
     },
     {
       "name": "margin-width",
