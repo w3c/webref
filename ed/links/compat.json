@@ -15,16 +15,16 @@
       "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/-webkit-transform-3d": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action": {},
       "https://dom.spec.whatwg.org/": {},
+      "https://drafts.csswg.org/css-2024/": {},
       "https://drafts.csswg.org/css-align/": {},
       "https://drafts.csswg.org/css-animations-2/": {},
       "https://drafts.csswg.org/css-animations/": {},
       "https://drafts.csswg.org/css-backgrounds/": {},
       "https://drafts.csswg.org/css-borders-4/": {},
       "https://drafts.csswg.org/css-cascade-5/": {},
+      "https://drafts.csswg.org/css-color-4/": {},
       "https://drafts.csswg.org/css-color-5/": {},
-      "https://drafts.csswg.org/css-color/": {},
       "https://drafts.csswg.org/css-conditional-3/": {},
-      "https://drafts.csswg.org/css-display-4/": {},
       "https://drafts.csswg.org/css-display/": {},
       "https://drafts.csswg.org/css-flexbox-1/": {},
       "https://drafts.csswg.org/css-images-4/": {},
@@ -41,8 +41,11 @@
         ]
       },
       "https://drafts.csswg.org/css-values-4/": {},
-      "https://drafts.csswg.org/css2/": {},
-      "https://drafts.csswg.org/mediaqueries-4/": {},
+      "https://drafts.csswg.org/mediaqueries-4/": {
+        "anchors": [
+          "mq-min-max"
+        ]
+      },
       "https://drafts.csswg.org/mediaqueries-5/": {},
       "https://drafts.fxtf.org/css-masking-1/": {},
       "https://drafts.fxtf.org/filter-effects-1/": {},
@@ -55,6 +58,7 @@
       },
       "https://github.com/whatwg/compat/issues/28": {},
       "https://github.com/whatwg/compat/issues/68": {},
+      "https://github.com/whatwg/compat/issues/87": {},
       "https://google.com/": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://httpwg.org/http-core/draft-ietf-httpbis-semantics-latest.html": {},
@@ -109,6 +113,11 @@
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "concept-event-fire"
+        ]
+      },
+      "https://drafts.csswg.org/css-2024/": {
+        "anchors": [
+          "vendor-prefix"
         ]
       },
       "https://drafts.csswg.org/css-align-3/": {
@@ -246,27 +255,18 @@
           "propdef--webkit-appearance"
         ]
       },
-      "https://drafts.csswg.org/css-values-3/": {
-        "anchors": [
-          "dppx"
-        ]
-      },
       "https://drafts.csswg.org/css-values-4/": {
         "anchors": [
           "number-value",
+          "dppx",
           "comb-any",
           "comb-one"
         ]
       },
-      "https://drafts.csswg.org/mediaqueries-4/": {
+      "https://drafts.csswg.org/mediaqueries-5/": {
         "anchors": [
           "descdef-media-resolution",
           "media-feature",
-          "mq-min-max"
-        ]
-      },
-      "https://drafts.csswg.org/mediaqueries-5/": {
-        "anchors": [
           "typedef-mq-boolean"
         ]
       },
@@ -343,7 +343,7 @@
       "https://w3c.github.io/screen-orientation/": {
         "anchors": [
           "dfn-current-orientation-angle",
-          "screenorientation-interface"
+          "dom-screenorientation"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -358,11 +358,6 @@
           "ltradial-gradient",
           "ltrepeating-linear-gradient",
           "ltrepeating-radial-gradient"
-        ]
-      },
-      "https://www.w3.org/TR/CSS/": {
-        "anchors": [
-          "vendor-prefix"
         ]
       }
     }
