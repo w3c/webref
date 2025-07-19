@@ -134,23 +134,53 @@
       ]
     },
     {
-      "html": "The Chinese longhand styles are defined by almost identical algorithms\n\t(specified as a single algorithm here, with the differences called out when relevant),\n\tbut use different sets of characters,\n\tas specified by the table following the algorithm.",
+      "html": "The Chinese longhand styles are defined by almost identical algorithms\n\t(specified as a single algorithm here,\n\twith the differences called out when relevant),\n\tbut use different sets of characters,\n\tas specified by the table following the algorithm.",
       "rationale": "if",
       "steps": [
         {
-          "html": "If the counter value is 0, the representation is the character for 0\n\t\tspecified for the given counter style.  Skip the rest of this algorithm."
+          "html": "If the counter value is 0,\n\t\tthe representation is the character for 0 specified for the given counter style.\n\t\tSkip the rest of this algorithm."
         },
         {
-          "html": "Initially represent the counter value as a decimal number.  For each\n\t\tdigit that is not 0, append the appropriate digit marker to the digit.\n\t\tThe ones digit has no marker."
+          "html": "Initially represent the counter value as a decimal number.\n\t\tFor each digit that is not 0,\n\t\tappend the appropriate digit marker to the digit.\n\t\tThe ones digit has no marker."
         },
         {
-          "html": "For the informal styles, if the counter value is between ten and\n\t\tnineteen, remove the tens digit (leave the digit marker)."
+          "html": "For the informal styles,\n\t\tif the counter value is between ten and nineteen,\n\t\tremove the tens digit (leave the digit marker)."
         },
         {
-          "html": "Drop any trailing zeros and collapse any remaining zeros into a single\n\t\tzero digit."
+          "html": "Drop any trailing zeros\n\t\tand collapse any remaining zeros into a single zero digit."
         },
         {
-          "html": "Replace the digits 0-9 with the appropriate character for the given\n\t\tcounter style.  Return the resultant string as the representation of the\n\t\tcounter value."
+          "html": "Replace the digits 0-9 with the appropriate character\n\t\tfor the given counter style.\n\t\tReturn the resultant string as the representation of the counter value."
+        }
+      ]
+    },
+    {
+      "html": "All of the Chinese, Japanese, and Korean styles are defined here\n\tfor all numbers between -10<sup>16</sup> and 10<sup>16</sup>, exclusive.\n\tFor numbers outside this range, the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-counter-styles-3/#cjk-decimal\" id=\"ref-for-cjk-decimal③\">cjk-decimal</a> style is used.\n\tAll of the styles are defined by almost identical algorithms\n\t(specified as a single algorithm here,\n\twith the differences called out when relevant),\n\tbut use different sets of characters.\n\tThe list following the algorithm gives the name of each counter style using this algorithm,\n\tand the individual character sets used by each style.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the counter value is 0,\n\t\tthe representation is the character for 0 specified for the given counter style.\n\t\tSkip the rest of this algorithm."
+        },
+        {
+          "html": "Initially represent the counter value as a decimal number.\n\t\tStarting from the right (ones place),\n\t\tsplit the decimal number into groups of four digits."
+        },
+        {
+          "html": "For each group with a non-zero value,\n\t\tappend the appropriate group marker to the group.\n\t\tThe ones group has no marker."
+        },
+        {
+          "html": "Within each group,\n\t\tfor each digit that is not 0,\n\t\tappend the appropriate digit marker to the digit.\n\t\tThe ones digit of each group has no marker."
+        },
+        {
+          "html": "Drop ones:\n\t\t\t\n     <ul>\n      <li>For the Chinese informal styles,\n\t\t\t\tfor any group with a value between ten and nineteen,\n\t\t\t\tremove the tens digit (leave the digit marker).\n\n\t\t\t\t\n      </li><li>For the Japanese informal and Korean informal styles,\n\t\t\t\tif any of the digit markers are preceded by the digit 1,\n\t\t\t\tand that digit is not the first digit of the group,\n\t\t\t\tremove the digit (leave the digit marker).\n\n\t\t\t\t\n      </li><li>For Korean informal styles,\n\t\t\t\tif the value of the ten-thousands group is 1,\n\t\t\t\tdrop the digit (leave the digit marker).\n\t\t\t\n     </li></ul>"
+        },
+        {
+          "html": "Drop zeros:\n\t\t\t\n     <ul>\n      <li>For the Japanese and Korean styles,\n\t\t\t\tdrop all zero digits.\n\n\t\t\t\t\n      </li><li>For the Chinese styles,\n\t\t\t\tdrop any trailing zeros for all non-zero groups\n\t\t\t\tand collapse (across groups) each remaining consecutive group of zeros\n\t\t\t\tinto a single zero digit.\n\t\t\t\n     </li></ul>"
+        },
+        {
+          "html": "For the Korean styles,\n\t\tinsert a space (\" \" U+0020) between each group."
+        },
+        {
+          "html": "Replace the digits 0-9 with the appropriate character\n\t\tfor the given counter style.\n\t\tReturn the resultant string as the representation of the counter value."
         }
       ]
     },
@@ -213,7 +243,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar\">parse</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#the-given-value\" id=\"ref-for-the-given-value\">the given value</a> as the descriptor associated with the attribute.</p>"
         },
         {
-          "html": "<p>If the result is invalid according to the given descriptor’s grammar,\nor would cause the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-counter-styles-3/#at-ruledef-counter-style\" id=\"ref-for-at-ruledef-counter-style④①\">@counter-style</a> rule to not define a counter style,\ndo nothing and abort these steps.\n(For example, some systems require the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-symbols\" id=\"ref-for-descdef-counter-style-symbols①⑦\">symbols</a> descriptor to contain two values.)</p>"
+          "html": "<p>If the result is invalid according to the given descriptor’s grammar,\nor would cause the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-counter-styles-3/#at-ruledef-counter-style\" id=\"ref-for-at-ruledef-counter-style④②\">@counter-style</a> rule to not define a counter style,\ndo nothing and abort these steps.\n(For example, some systems require the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-symbols\" id=\"ref-for-descdef-counter-style-symbols①⑦\">symbols</a> descriptor to contain two values.)</p>"
         },
         {
           "html": "<p>If the attribute being set is <a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-counter-styles-3/#dom-csscounterstylerule-system\" id=\"ref-for-dom-csscounterstylerule-system①\">system</a>,\nand the new value would change the algorithm used,\ndo nothing and abort these steps.\n</p>"
