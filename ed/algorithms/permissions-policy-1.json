@@ -7,7 +7,7 @@
     {
       "name": "matches",
       "href": "https://w3c.github.io/webappsec-permissions-policy/#matches",
-      "html": "To determine whether an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist⑤\">allowlist</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn> an origin <var>origin</var>, run these steps:",
+      "html": "To determine whether an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist⑤\">allowlist</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn> an origin\n      <var>origin</var>, run these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -18,27 +18,27 @@
     {
       "name": "matches",
       "href": "https://w3c.github.io/webappsec-permissions-policy/#matches",
-      "html": "To determine whether an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist⑤\">allowlist</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn> an origin <var>origin</var>, run these steps:",
+      "html": "To determine whether an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist⑤\">allowlist</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn> an origin\n      <var>origin</var>, run these steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist⑦\">allowlist</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#self-origin\" id=\"ref-for-self-origin\">self-origin</a> is not null and it is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin-domain\" id=\"ref-for-same-origin-domain\">same origin-domain</a> with <var>origin</var>, then return true.</p>"
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist⑦\">allowlist</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#self-origin\" id=\"ref-for-self-origin\">self-origin</a> is not null and it is\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin-domain\" id=\"ref-for-same-origin-domain\">same origin-domain</a> with <var>origin</var>, then return true.</p>"
         },
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist⑧\">allowlist</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#src-origin\" id=\"ref-for-src-origin\">src-origin</a> is not null and it is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin-domain\" id=\"ref-for-same-origin-domain①\">same origin-domain</a> with <var>origin</var>, then return true.</p>"
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist⑧\">allowlist</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#src-origin\" id=\"ref-for-src-origin\">src-origin</a> is not null and it is\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin-domain\" id=\"ref-for-same-origin-domain①\">same origin-domain</a> with <var>origin</var>, then return true.</p>"
         },
         {
           "html": "<p>If <var>origin</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque\">opaque origin</a>, return false.</p>"
         },
         {
-          "html": "<p>Let <var>url</var> be the result of calling the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">url parser</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin\">serialization</a> of <var>origin</var>.</p>"
+          "html": "<p>Let <var>url</var> be the result of calling the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">url parser</a> on the\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin\">serialization</a> of <var>origin</var>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-source-expression\" id=\"ref-for-permissions-source-expression①\">permissions-source-expression</a> <var>item</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist⑨\">allowlist</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#expressions\" id=\"ref-for-expressions\">expressions</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#match-url-to-source-expression\" id=\"ref-for-match-url-to-source-expression\">Does url match expression in origin with redirect count?</a> on <var>url</var>, <var>item</var>, <var>origin</var>, and 0 is true then return true.</p>"
+              "html": "<p>If the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#match-url-to-source-expression\" id=\"ref-for-match-url-to-source-expression\">Does url match expression in origin with redirect count?</a>\n on <var>url</var>, <var>item</var>, <var>origin</var>, and 0 is true then return true.</p>"
             }
           ]
         },
@@ -52,10 +52,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>origin</var> is omitted, set <var>origin</var> to this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicy\" id=\"ref-for-permissionspolicy①②\">PermissionsPolicy</a></code> object’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#default-origin\" id=\"ref-for-default-origin②\">default origin</a>.</p>"
+          "html": "<p>If <var>origin</var> is omitted, set <var>origin</var> to this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicy\" id=\"ref-for-permissionspolicy①②\">PermissionsPolicy</a></code>\n  object’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#default-origin\" id=\"ref-for-default-origin②\">default origin</a>.</p>"
         },
         {
-          "html": "<p>Let <var>policy</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#observable-policy\" id=\"ref-for-observable-policy②\">observable policy</a> for this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicy\" id=\"ref-for-permissionspolicy①③\">PermissionsPolicy</a></code> object’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#associated-node\" id=\"ref-for-associated-node⑥\">associated node</a>.</p>"
+          "html": "<p>Let <var>policy</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#observable-policy\" id=\"ref-for-observable-policy②\">observable policy</a> for this\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicy\" id=\"ref-for-permissionspolicy①③\">PermissionsPolicy</a></code> object’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#associated-node\" id=\"ref-for-associated-node⑥\">associated node</a>.</p>"
         },
         {
           "html": "<p>If <var>feature</var> is allowed by <var>policy</var> for <var>origin</var>, return true.</p>"
@@ -97,14 +97,14 @@
           "html": "<p>Let <var>origin</var> be this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicy\" id=\"ref-for-permissionspolicy①④\">PermissionsPolicy</a></code> object’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#default-origin\" id=\"ref-for-default-origin③\">default\n  origin</a>.</p>"
         },
         {
-          "html": "<p>Let <var>policy</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#observable-policy\" id=\"ref-for-observable-policy③\">observable policy</a> for this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicy\" id=\"ref-for-permissionspolicy①⑤\">PermissionsPolicy</a></code> object’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#associated-node\" id=\"ref-for-associated-node⑦\">associated node</a>.</p>"
+          "html": "<p>Let <var>policy</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#observable-policy\" id=\"ref-for-observable-policy③\">observable policy</a> for this\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicy\" id=\"ref-for-permissionspolicy①⑤\">PermissionsPolicy</a></code> object’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#associated-node\" id=\"ref-for-associated-node⑦\">associated node</a>.</p>"
         },
         {
           "html": "For each <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#supported-features\" id=\"ref-for-supported-features④\">supported feature</a> <var>feature</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>feature</var> is allowed by <var>policy</var> for <var>origin</var>, append <var>feature</var> to <var>result</var>.</p>"
+              "html": "<p>If <var>feature</var> is allowed by <var>policy</var> for <var>origin</var>, append <var>feature</var> to\n  <var>result</var>.</p>"
             }
           ]
         },
@@ -124,13 +124,13 @@
           "html": "<p>Let <var>origin</var> be this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicy\" id=\"ref-for-permissionspolicy①⑥\">PermissionsPolicy</a></code> object’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#default-origin\" id=\"ref-for-default-origin④\">default\n origin</a>.</p>"
         },
         {
-          "html": "<p>Let <var>policy</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#observable-policy\" id=\"ref-for-observable-policy④\">observable policy</a> for this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicy\" id=\"ref-for-permissionspolicy①⑦\">PermissionsPolicy</a></code> object’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#associated-node\" id=\"ref-for-associated-node⑧\">associated node</a>.</p>"
+          "html": "<p>Let <var>policy</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#observable-policy\" id=\"ref-for-observable-policy④\">observable policy</a> for this\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicy\" id=\"ref-for-permissionspolicy①⑦\">PermissionsPolicy</a></code> object’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#associated-node\" id=\"ref-for-associated-node⑧\">associated node</a>.</p>"
         },
         {
           "html": "<p>If <var>feature</var> is not allowed in <var>policy</var> for <var>origin</var>, return <var>result</var></p>"
         },
         {
-          "html": "<p>Let <var>allowlist</var> be <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy\" id=\"ref-for-declared-policy①\">declared policy</a>[<var>feature</var>]'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy-declarations\" id=\"ref-for-declared-policy-declarations①\">declarations</a>.</p>"
+          "html": "<p>Let <var>allowlist</var> be <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy\" id=\"ref-for-declared-policy①\">declared policy</a>[<var>feature</var>]'s\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy-declarations\" id=\"ref-for-declared-policy-declarations①\">declarations</a>.</p>"
         },
         {
           "html": "If <var>allowlist</var> is the special value <code>*</code>:",
@@ -145,13 +145,13 @@
           ]
         },
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist①⑥\">allowlist</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#self-origin\" id=\"ref-for-self-origin①\">self-origin</a> is not null,\n append the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin①\">serialization</a> of it to <var>result</var>.</p>"
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist①⑥\">allowlist</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#self-origin\" id=\"ref-for-self-origin①\">self-origin</a> is not null,\n append the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin①\">serialization</a> of it to\n <var>result</var>.</p>"
         },
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist①⑦\">allowlist</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#src-origin\" id=\"ref-for-src-origin①\">src-origin</a> is not null,\n append the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin②\">serialization</a> of it to <var>result</var>.</p>"
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist①⑦\">allowlist</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#src-origin\" id=\"ref-for-src-origin①\">src-origin</a> is not null,\n append the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin②\">serialization</a> of it to\n <var>result</var>.</p>"
         },
         {
-          "html": "Otherwise, for each <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-source-expression\" id=\"ref-for-permissions-source-expression④\">permissions-source-expression</a> <var>item</var> in <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#expressions\" id=\"ref-for-expressions①\">expressions</a>:",
+          "html": "Otherwise, for each <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-source-expression\" id=\"ref-for-permissions-source-expression④\">permissions-source-expression</a> <var>item</var> in\n <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#expressions\" id=\"ref-for-expressions①\">expressions</a>:",
           "rationale": "append",
           "steps": [
             {
@@ -176,7 +176,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>isInherited</var> be the result of running <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#define-inherited-policy-in-container\" id=\"ref-for-define-inherited-policy-in-container\">Define\n  an inherited policy for feature in container at origin</a> on <var>feature</var>, <var>node</var> and <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-origin\" id=\"ref-for-declared-origin①\">declared origin</a>.</p>"
+              "html": "<p>Let <var>isInherited</var> be the result of running <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#define-inherited-policy-in-container\" id=\"ref-for-define-inherited-policy-in-container\">Define\n  an inherited policy for feature in container at origin</a> on\n  <var>feature</var>, <var>node</var> and <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-origin\" id=\"ref-for-declared-origin①\">declared origin</a>.</p>"
             },
             {
               "html": "<p>Set <var>inherited policy</var>[<var>feature</var>] to <var>isInherited</var>.</p>"
@@ -184,7 +184,7 @@
           ]
         },
         {
-          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy\" id=\"ref-for-permissions-policy⑦\">permissions policy</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-inherited-policy\" id=\"ref-for-permissions-policy-inherited-policy④\">inherited policy</a> <var>inherited policy</var>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy④\">declared policy</a> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\" id=\"ref-for-struct②\">struct</a> with both <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy-declarations\" id=\"ref-for-declared-policy-declarations②\">declarations</a> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy-reporting-configuration\" id=\"ref-for-declared-policy-reporting-configuration①\">reporting configuration</a> new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥\">ordered maps</a>.</p>"
+          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy\" id=\"ref-for-permissions-policy⑦\">permissions policy</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-inherited-policy\" id=\"ref-for-permissions-policy-inherited-policy④\">inherited policy</a> <var>inherited policy</var>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy④\">declared policy</a> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\" id=\"ref-for-struct②\">struct</a> with both\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy-declarations\" id=\"ref-for-declared-policy-declarations②\">declarations</a> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy-reporting-configuration\" id=\"ref-for-declared-policy-reporting-configuration①\">reporting configuration</a> new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥\">ordered maps</a>.</p>"
         }
       ]
     },
@@ -198,10 +198,10 @@
           "html": "<p>If <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#sandboxed-origin-browsing-context-flag\" id=\"ref-for-sandboxed-origin-browsing-context-flag\">sandboxed origin browsing\n  context flag</a> is set, then return a new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque①\">opaque origin</a>.</p>"
         },
         {
-          "html": "<p>If <var>node</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox\" id=\"ref-for-attr-iframe-sandbox①\">sandbox</a></code> attribute is set, and does not contain\n  the <code>allow-same-origin</code> keyword, then return a new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque②\">opaque origin</a>.</p>"
+          "html": "<p>If <var>node</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox\" id=\"ref-for-attr-iframe-sandbox①\">sandbox</a></code> attribute is set, and does not contain\n  the <code>allow-same-origin</code> keyword, then return a new\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque②\">opaque origin</a>.</p>"
         },
         {
-          "html": "<p>If <var>node</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-srcdoc\" id=\"ref-for-attr-iframe-srcdoc\">srcdoc</a></code> attribute is set, then return <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①\">node document</a>’s origin.</p>"
+          "html": "<p>If <var>node</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-srcdoc\" id=\"ref-for-attr-iframe-srcdoc\">srcdoc</a></code> attribute is set, then return <var>node</var>’s\n  <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①\">node document</a>’s origin.</p>"
         },
         {
           "html": "If <var>node</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-src\" id=\"ref-for-attr-iframe-src①\">src</a></code> attribute is set:",
@@ -226,10 +226,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>header name</var> be \"<code>Permissions-Policy-Report-Only</code>\" if <var>report-only</var> is True, or \"<code>Permissions-Policy</code>\" otherwise.</p>"
+          "html": "<p>Let <var>header name</var> be \"<code>Permissions-Policy-Report-Only</code>\" if\n<var>report-only</var> is True, or \"<code>Permissions-Policy</code>\" otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>parsed header</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header\">get a structured\nfield value</a> given <var>header name</var> and \"dictionary\" from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
+          "html": "<p>Let <var>parsed header</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header\">get a structured\nfield value</a> given <var>header name</var> and \"dictionary\" from <var>response</var>’s\n<a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
         },
         {
           "html": "<p>If <var>parsed header</var> is null, return an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦\">ordered map</a>.</p>"
@@ -258,19 +258,19 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>feature-name</var> does not identify any recognized <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①⑦\">policy-controlled feature</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+              "html": "<p>If <var>feature-name</var> does not identify any recognized\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①⑦\">policy-controlled feature</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
             },
             {
-              "html": "<p>Let <var>feature</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①⑧\">policy-controlled feature</a> identified by <var>feature-name</var>.</p>"
+              "html": "<p>Let <var>feature</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①⑧\">policy-controlled feature</a> identified by\n<var>feature-name</var>.</p>"
             },
             {
-              "html": "<p>If <var>params</var>[\"report-to\"] exists, and is a string, then set <var>reporting-config</var>[<var>feature</var>] to <var>params</var>[\"report-to\"].</p>"
+              "html": "<p>If <var>params</var>[\"report-to\"] exists, and is a string, then set\n<var>reporting-config</var>[<var>feature</var>] to <var>params</var>[\"report-to\"].</p>"
             },
             {
               "html": "<p>Let <var>allowlist</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist①⑧\">allowlist</a>.</p>"
             },
             {
-              "html": "<p>If <var>value</var> is the token <code>*</code>, or if <var>value</var> is a list which contains\nthe token <code>*</code>, set <var>allowlist</var> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#the-special-value\" id=\"ref-for-the-special-value①\">the special value <code>*</code></a>.</p>"
+              "html": "<p>If <var>value</var> is the token <code>*</code>, or if <var>value</var> is a list which contains\nthe token <code>*</code>, set <var>allowlist</var> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#the-special-value\" id=\"ref-for-the-special-value①\">the special value\n<code>*</code></a>.</p>"
             },
             {
               "html": "Otherwise:",
@@ -280,7 +280,7 @@
                   "html": "<p>If <var>value</var> is the token <code>self</code>, let <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#self-origin\" id=\"ref-for-self-origin②\">self-origin</a> be <var>origin</var>.</p>"
                 },
                 {
-                  "html": "Otherwise if <var>value</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">for each</a> <var>element</var> in <var>value</var>:",
+                  "html": "Otherwise if <var>value</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">for each</a>\n <var>element</var> in <var>value</var>:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -325,10 +325,10 @@
               "html": "<p>Let <var>feature-name</var> be the first element of <var>tokens</var>.</p>"
             },
             {
-              "html": "<p>If <var>feature-name</var> does not identify any recognized <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①⑨\">policy-controlled feature</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+              "html": "<p>If <var>feature-name</var> does not identify any recognized\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①⑨\">policy-controlled feature</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
             },
             {
-              "html": "<p>Let <var>feature</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②⓪\">policy-controlled feature</a> identified by <var>feature-name</var>.</p>"
+              "html": "<p>Let <var>feature</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②⓪\">policy-controlled feature</a> identified by\n<var>feature-name</var>.</p>"
             },
             {
               "html": "<p>Let <var>targetlist</var> be the remaining elements, if any, of <var>tokens</var>.</p>"
@@ -337,7 +337,7 @@
               "html": "<p>Let <var>allowlist</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist①⑨\">allowlist</a>.</p>"
             },
             {
-              "html": "<p>If any element of <var>targetlist</var> is the string \"<code>*</code>\", set <var>allowlist</var> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#the-special-value\" id=\"ref-for-the-special-value②\">the special value <code>*</code></a>.</p>"
+              "html": "<p>If any element of <var>targetlist</var> is the string \"<code>*</code>\", set\n<var>allowlist</var> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#the-special-value\" id=\"ref-for-the-special-value②\">the special value <code>*</code></a>.</p>"
             },
             {
               "html": "Otherwise:",
@@ -385,7 +385,7 @@
                           "html": "<p>Let <var>target</var> be the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin⑨\">origin</a> of <var>result</var>.</p>"
                         },
                         {
-                          "html": "<p>If <var>target</var> is not an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque③\">opaque origin</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">append</a> the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin③\">serialization</a> of <var>target</var> to <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#expressions\" id=\"ref-for-expressions③\">expressions</a>.</p>"
+                          "html": "<p>If <var>target</var> is not an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque③\">opaque origin</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">append</a>\n the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin③\">serialization</a>\n of <var>target</var> to <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#expressions\" id=\"ref-for-expressions③\">expressions</a>.</p>"
                         }
                       ]
                     }
@@ -412,10 +412,10 @@
           "html": "<p>If <var>element</var> is not an <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element\" id=\"ref-for-the-iframe-element①④\">iframe</a></code> element, then return an empty <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-directive\" id=\"ref-for-policy-directive⑧\">policy directive</a>.</p>"
         },
         {
-          "html": "<p>Let <var>container policy</var> be the result of running <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#parse-policy-directive\" id=\"ref-for-parse-policy-directive\">Parse policy\ndirective</a> given the value of <var>element</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allow\" id=\"ref-for-attr-iframe-allow⑦\">allow</a></code> attribute,\nthe <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin①\">origin</a> of <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document④\">node document</a>, and <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-origin\" id=\"ref-for-declared-origin③\">declared origin</a>.</p>"
+          "html": "<p>Let <var>container policy</var> be the result of running <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#parse-policy-directive\" id=\"ref-for-parse-policy-directive\">Parse policy\ndirective</a> given the value of <var>element</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allow\" id=\"ref-for-attr-iframe-allow⑦\">allow</a></code> attribute,\nthe <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin①\">origin</a> of <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document④\">node document</a>, and <var>element</var>’s\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-origin\" id=\"ref-for-declared-origin③\">declared origin</a>.</p>"
         },
         {
-          "html": "If <var>element</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allowfullscreen\" id=\"ref-for-attr-iframe-allowfullscreen④\">allowfullscreen</a></code> attribute is specified, and <var>container policy</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">contain</a> an entry for the <code>fullscreen</code> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②①\">feature</a>.",
+          "html": "If <var>element</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allowfullscreen\" id=\"ref-for-attr-iframe-allowfullscreen④\">allowfullscreen</a></code> attribute is specified, and\n <var>container policy</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">contain</a> an entry for the\n <code>fullscreen</code> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②①\">feature</a>.",
           "rationale": "set",
           "steps": [
             {
@@ -430,7 +430,7 @@
     },
     {
       "name": "create-for-navigable",
-      "html": "Given null or an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element\">element</a> (<var>container</var>) and an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①⓪\">origin</a> (<var>origin</var>) this algorithm returns a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy\" id=\"ref-for-permissions-policy⑨\">Permissions Policy</a>.",
+      "html": "Given null or an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element\">element</a> (<var>container</var>) and an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①⓪\">origin</a>\n    (<var>origin</var>) this algorithm returns a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy\" id=\"ref-for-permissions-policy⑨\">Permissions Policy</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -444,7 +444,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>isInherited</var> be the result of running <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#define-inherited-policy-in-container\" id=\"ref-for-define-inherited-policy-in-container①\">Define an\ninherited policy for feature in container at origin</a> on <var>feature</var>, <var>container</var> and <var>origin</var>.</p>"
+              "html": "<p>Let <var>isInherited</var> be the result of running <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#define-inherited-policy-in-container\" id=\"ref-for-define-inherited-policy-in-container①\">Define an\ninherited policy for feature in container at origin</a> on <var>feature</var>,\n<var>container</var> and <var>origin</var>.</p>"
             },
             {
               "html": "<p>Set <var>inherited policy</var>[<var>feature</var>] to <var>isInherited</var>.</p>"
@@ -461,7 +461,7 @@
     },
     {
       "name": "create-from-response",
-      "html": "Given null or a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable-container\" id=\"ref-for-navigable-container③\">navigable container</a> (<var>container</var>), an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①①\">origin</a> (<var>origin</var>), a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-response\" id=\"ref-for-concept-response-response③\">response</a> (<var>response</var>), and an optional boolean\n    (<var>report-only</var>), with a default value of False, this algorithm returns a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy\" id=\"ref-for-permissions-policy①①\">permissions policy</a>.",
+      "html": "Given null or a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable-container\" id=\"ref-for-navigable-container③\">navigable container</a> (<var>container</var>), an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①①\">origin</a>\n    (<var>origin</var>), a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-response\" id=\"ref-for-concept-response-response③\">response</a> (<var>response</var>), and an optional boolean\n    (<var>report-only</var>), with a default value of False, this algorithm returns a new\n    <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy\" id=\"ref-for-permissions-policy①①\">permissions policy</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -480,7 +480,7 @@
           ]
         },
         {
-          "html": "<p>Set <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy⑦\">declared\n policy</a>[<var>feature</var>]'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy-reporting-configuration\" id=\"ref-for-declared-policy-reporting-configuration②\">reporting configuration</a> to <var>d</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy-reporting-configuration\" id=\"ref-for-declared-policy-reporting-configuration③\">reporting configuration</a>.</p>"
+          "html": "<p>Set <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy⑦\">declared\n policy</a>[<var>feature</var>]'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy-reporting-configuration\" id=\"ref-for-declared-policy-reporting-configuration②\">reporting configuration</a> to\n <var>d</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy-reporting-configuration\" id=\"ref-for-declared-policy-reporting-configuration③\">reporting configuration</a>.</p>"
         },
         {
           "html": "<p>Return <var>policy</var>.</p>"
@@ -489,14 +489,14 @@
     },
     {
       "name": "define-inherited-policy-in-container",
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②②\">feature</a> (<var>feature</var>), null or a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable-container\" id=\"ref-for-navigable-container④\">navigable container</a> (<var>container</var>), an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin②\">origin</a> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑧\">Document</a></code> in\n    that container (<var>origin</var>), and an optional boolean (<var>report-only</var>), with\n    a default value of False, this algorithm returns the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#inherited-policy-for-a-feature\" id=\"ref-for-inherited-policy-for-a-feature\">inherited policy value</a> for <var>feature</var>.",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②②\">feature</a> (<var>feature</var>), null or a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable-container\" id=\"ref-for-navigable-container④\">navigable container</a>\n    (<var>container</var>), an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin②\">origin</a> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑧\">Document</a></code> in\n    that container (<var>origin</var>), and an optional boolean (<var>report-only</var>), with\n    a default value of False, this algorithm returns the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#inherited-policy-for-a-feature\" id=\"ref-for-inherited-policy-for-a-feature\">inherited policy value</a> for <var>feature</var>.",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>If <var>container</var> is null, return \"<code>Enabled</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#get-feature-value-for-origin\" id=\"ref-for-get-feature-value-for-origin\">Get feature value for\norigin</a> on <var>feature</var>, <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑤\">node document</a>, <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑥\">node document</a>’s origin, and <var>report-only</var> is\n\"<code>Disabled</code>\", return \"<code>Disabled</code>\".</p>"
+          "html": "<p>If the result of executing <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#get-feature-value-for-origin\" id=\"ref-for-get-feature-value-for-origin\">Get feature value for\norigin</a> on <var>feature</var>, <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑤\">node document</a>,\n<var>container</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑥\">node document</a>’s origin, and <var>report-only</var> is\n\"<code>Disabled</code>\", return \"<code>Disabled</code>\".</p>"
         },
         {
           "html": "<p>If the result of executing <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#get-feature-value-for-origin\" id=\"ref-for-get-feature-value-for-origin①\">Get feature value for\norigin</a> on <var>feature</var>, <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑦\">node document</a>, <var>origin</var>,\nand <var>report-only</var> is \"<code>Disabled</code>\", return\n\"<code>Disabled</code>\".</p>"
@@ -509,7 +509,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist②⓪\">allowlist</a> for <var>feature</var> in <var>container policy</var> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#matches\" id=\"ref-for-matches\">matches</a> <var>origin</var>, return \"<code>Enabled</code>\".</p>"
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist②⓪\">allowlist</a> for <var>feature</var> in <var>container policy</var>\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#matches\" id=\"ref-for-matches\">matches</a> <var>origin</var>, return \"<code>Enabled</code>\".</p>"
             },
             {
               "html": "<p>Otherwise return \"<code>Disabled</code>\".</p>"
@@ -520,7 +520,7 @@
           "html": "<p>If <var>feature</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature-default-allowlist\" id=\"ref-for-policy-controlled-feature-default-allowlist③\">default allowlist</a> is <code>*</code>, return\n\"<code>Enabled</code>\".</p>"
         },
         {
-          "html": "<p>If <var>feature</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature-default-allowlist\" id=\"ref-for-policy-controlled-feature-default-allowlist④\">default allowlist</a> is <code>'self'</code>, and <var>origin</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin②\">same origin</a> with <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑧\">node document</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin③\">origin</a>, return \"<code>Enabled</code>\".</p>"
+          "html": "<p>If <var>feature</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature-default-allowlist\" id=\"ref-for-policy-controlled-feature-default-allowlist④\">default allowlist</a> is <code>'self'</code>, and\n<var>origin</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin②\">same origin</a> with <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑧\">node document</a>’s\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin③\">origin</a>, return \"<code>Enabled</code>\".</p>"
         },
         {
           "html": "<p>Otherwise return \"<code>Disabled</code>\".</p>"
@@ -533,17 +533,17 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>policy</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#document-report-only-permissions-policy\" id=\"ref-for-document-report-only-permissions-policy\">report-only permissions policy</a> if <var>report-only</var> is True, or <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-permissions-policy\" id=\"ref-for-concept-document-permissions-policy\">permissions policy</a> otherwise.</p>"
+          "html": "<p>Let <var>policy</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#document-report-only-permissions-policy\" id=\"ref-for-document-report-only-permissions-policy\">report-only permissions policy</a> if <var>report-only</var> is True, or <var>document</var>’s\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-permissions-policy\" id=\"ref-for-concept-document-permissions-policy\">permissions policy</a> otherwise.</p>"
         },
         {
-          "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-inherited-policy\" id=\"ref-for-permissions-policy-inherited-policy⑦\">inherited policy</a> for <var>feature</var> is \"<code>Disabled</code>\", return \"<code>Disabled</code>\".</p>"
+          "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-inherited-policy\" id=\"ref-for-permissions-policy-inherited-policy⑦\">inherited policy</a> for\n <var>feature</var> is \"<code>Disabled</code>\", return \"<code>Disabled</code>\".</p>"
         },
         {
           "html": "If <var>feature</var> is present in <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy⑧\">declared\n policy</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy⑨\">declared\n policy</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy-declarations\" id=\"ref-for-declared-policy-declarations⑤\">declarations</a>[<var>feature</var>] <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#matches\" id=\"ref-for-matches①\">matches</a> <var>origin</var>, then return \"<code>Enabled</code>\".</p>"
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy⑨\">declared\n policy</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy-declarations\" id=\"ref-for-declared-policy-declarations⑤\">declarations</a>[<var>feature</var>]\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#matches\" id=\"ref-for-matches①\">matches</a> <var>origin</var>, then return \"<code>Enabled</code>\".</p>"
             },
             {
               "html": "<p>Otherwise return \"<code>Disabled</code>\".</p>"
@@ -557,18 +557,18 @@
     },
     {
       "name": "check-permissions-policy",
-      "html": "To check a permissions policy, given <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy\" id=\"ref-for-permissions-policy①②\">permissions policy</a> (<var>policy</var>), a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②④\">feature</a> (<var>feature</var>), an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①③\">origin</a> (<var>origin</var>) and another <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①④\">origin</a> (<var>document origin</var>), this algorithm returns \"<code>Disabled</code>\" if <var>feature</var> should be considered disabled, and \"<code>Enabled</code>\"\n    otherwise.",
+      "html": "To check a permissions policy, given <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy\" id=\"ref-for-permissions-policy①②\">permissions policy</a> (<var>policy</var>), a\n    <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②④\">feature</a> (<var>feature</var>), an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①③\">origin</a> (<var>origin</var>) and another <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①④\">origin</a>\n    (<var>document origin</var>), this algorithm returns \"<code>Disabled</code>\" if\n    <var>feature</var> should be considered disabled, and \"<code>Enabled</code>\"\n    otherwise.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-inherited-policy\" id=\"ref-for-permissions-policy-inherited-policy⑧\">inherited policy</a> for <var>feature</var> is \"<code>Disabled</code>\", return \"<code>Disabled</code>\".</p>"
+          "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-inherited-policy\" id=\"ref-for-permissions-policy-inherited-policy⑧\">inherited policy</a> for\n <var>feature</var> is \"<code>Disabled</code>\", return \"<code>Disabled</code>\".</p>"
         },
         {
           "html": "If <var>feature</var> is present in <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy①⓪\">declared policy</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy①①\">declared\n policy</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy-declarations\" id=\"ref-for-declared-policy-declarations⑥\">declarations</a>[<var>feature</var>] <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#matches\" id=\"ref-for-matches②\">matches</a> <var>origin</var>, then return \"<code>Enabled</code>\".</p>"
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy①①\">declared\n policy</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy-declarations\" id=\"ref-for-declared-policy-declarations⑥\">declarations</a>[<var>feature</var>]\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#matches\" id=\"ref-for-matches②\">matches</a> <var>origin</var>, then return \"<code>Enabled</code>\".</p>"
             },
             {
               "html": "<p>Otherwise return \"<code>Disabled</code>\".</p>"
@@ -579,7 +579,7 @@
           "html": "<p>If <var>feature</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature-default-allowlist\" id=\"ref-for-policy-controlled-feature-default-allowlist⑤\">default allowlist</a> is <code>*</code>, return\n\"<code>Enabled</code>\".</p>"
         },
         {
-          "html": "<p>If <var>feature</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature-default-allowlist\" id=\"ref-for-policy-controlled-feature-default-allowlist⑥\">default allowlist</a> is <code>'self'</code>, and <var>origin</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin③\">same origin</a> with <var>document origin</var>, return\n\"<code>Enabled</code>\".</p>"
+          "html": "<p>If <var>feature</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature-default-allowlist\" id=\"ref-for-policy-controlled-feature-default-allowlist⑥\">default allowlist</a> is <code>'self'</code>, and\n<var>origin</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin③\">same origin</a> with <var>document origin</var>, return\n\"<code>Enabled</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Disabled</code>\".</p>"
@@ -588,7 +588,7 @@
     },
     {
       "name": "is-feature-enabled",
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②⑤\">feature</a> (<var>feature</var>), a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②⓪\">Document</a></code> object\n    (<var>document</var>), an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①⑤\">origin</a> (<var>origin</var>), and an optional boolean (<var>report</var>),\n    with a default value of True, this algorithm returns \"<code>Disabled</code>\"\n    if <var>feature</var> should be considered disabled, and \"<code>Enabled</code>\"\n    otherwise. If <var>report</var> is True, then it will also <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#generate-and-queue-a-report\" id=\"ref-for-generate-and-queue-a-report\">generate and queue a report</a> if the feature is not enabled in either <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-permissions-policy\" id=\"ref-for-concept-document-permissions-policy①\">permissions policy</a> or <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#document-report-only-permissions-policy\" id=\"ref-for-document-report-only-permissions-policy①\">report-only permissions policy</a>.",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②⑤\">feature</a> (<var>feature</var>), a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②⓪\">Document</a></code> object\n    (<var>document</var>), an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①⑤\">origin</a> (<var>origin</var>), and an optional boolean (<var>report</var>),\n    with a default value of True, this algorithm returns \"<code>Disabled</code>\"\n    if <var>feature</var> should be considered disabled, and \"<code>Enabled</code>\"\n    otherwise. If <var>report</var> is True, then it will also <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#generate-and-queue-a-report\" id=\"ref-for-generate-and-queue-a-report\">generate and queue a report</a> if the feature is not enabled in either <var>document</var>’s\n    <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-permissions-policy\" id=\"ref-for-concept-document-permissions-policy①\">permissions policy</a> or <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#document-report-only-permissions-policy\" id=\"ref-for-document-report-only-permissions-policy①\">report-only permissions policy</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -598,7 +598,7 @@
           "html": "<p>Let <var>report-only policy</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#document-report-only-permissions-policy\" id=\"ref-for-document-report-only-permissions-policy②\">report-only permissions policy</a>.</p>"
         },
         {
-          "html": "<p>Let <var>result</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#check-permissions-policy\" id=\"ref-for-check-permissions-policy\">Check permissions\n policy</a>, given <var>policy</var>, <var>feature</var>, <var>origin</var>, and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin④\">origin</a>.</p>"
+          "html": "<p>Let <var>result</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#check-permissions-policy\" id=\"ref-for-check-permissions-policy\">Check permissions\n policy</a>, given <var>policy</var>,\n <var>feature</var>, <var>origin</var>, and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin④\">origin</a>.</p>"
         },
         {
           "html": "<p>Let <var>report-only result</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#check-permissions-policy\" id=\"ref-for-check-permissions-policy①\">Check\n permissions policy</a>, given <var>report-only policy</var>, <var>feature</var>, <var>origin</var>,\n and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin⑤\">origin</a>.</p>"
@@ -615,7 +615,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>endpoint</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#get-reporting-endpoint\" id=\"ref-for-get-reporting-endpoint\">Get the\n  reporting endpoint for a feature</a> given <var>feature</var> and <var>policy</var>.</p>"
+                  "html": "<p>Let <var>endpoint</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#get-reporting-endpoint\" id=\"ref-for-get-reporting-endpoint\">Get the\n  reporting endpoint for a feature</a> given <var>feature</var> and\n  <var>policy</var>.</p>"
                 },
                 {
                   "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#report-permissions-policy-violation\" id=\"ref-for-report-permissions-policy-violation\">Generate report for violation of permissions\n  policy on settings</a> given <var>feature</var>, <var>settings</var>,\n  \"<code>Enforce</code>\", and <var>endpoint</var>.</p>"
@@ -627,7 +627,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>report-only endpoint</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#get-reporting-endpoint\" id=\"ref-for-get-reporting-endpoint①\">Get the reporting endpoint for a feature</a> given <var>feature</var> and <var>report-only policy</var>.</p>"
+                  "html": "<p>Let <var>report-only endpoint</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#get-reporting-endpoint\" id=\"ref-for-get-reporting-endpoint①\">Get the reporting endpoint for a feature</a> given\n <var>feature</var> and <var>report-only policy</var>.</p>"
                 },
                 {
                   "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#report-permissions-policy-violation\" id=\"ref-for-report-permissions-policy-violation①\">Generate report for violation of permissions\n  policy on settings</a> given <var>feature</var>, <var>settings</var>,\n  \"<code>Report</code>\", and <var>report-only endpoint</var>.</p>"
@@ -647,7 +647,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>config</var> be <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy①②\">declared policy</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy-reporting-configuration\" id=\"ref-for-declared-policy-reporting-configuration④\">reporting configuration</a>.</p>"
+          "html": "<p>Let <var>config</var> be <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy①②\">declared policy</a>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-policy-reporting-configuration\" id=\"ref-for-declared-policy-reporting-configuration④\">reporting configuration</a>.</p>"
         },
         {
           "html": "<p>If <var>config</var>[<var>feature</var>] exists, return <var>config</var>[<var>feature</var>].</p>"
@@ -673,26 +673,26 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If the result of running <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#define-inherited-policy-in-container\" id=\"ref-for-define-inherited-policy-in-container②\">Define an inherited\n policy for feature in container at origin</a> on <var>feature</var>, <var>container</var> and <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-origin\" id=\"ref-for-declared-origin④\">declared origin</a> is\n \"<code>Disabled</code>\":",
+              "html": "If the result of running <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#define-inherited-policy-in-container\" id=\"ref-for-define-inherited-policy-in-container②\">Define an inherited\n policy for feature in container at origin</a> on <var>feature</var>,\n <var>container</var> and <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-origin\" id=\"ref-for-declared-origin④\">declared origin</a> is\n \"<code>Disabled</code>\":",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>endpoint</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#get-reporting-endpoint\" id=\"ref-for-get-reporting-endpoint②\">Get\n the reporting endpoint for a feature</a> given <var>feature</var> and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-permissions-policy\" id=\"ref-for-concept-document-permissions-policy③\">permissions policy</a>.</p>"
+                  "html": "<p>Let <var>endpoint</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#get-reporting-endpoint\" id=\"ref-for-get-reporting-endpoint②\">Get\n the reporting endpoint for a feature</a> given <var>feature</var> and\n <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-permissions-policy\" id=\"ref-for-concept-document-permissions-policy③\">permissions policy</a>.</p>"
                 },
                 {
-                  "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#report-potential-permissions-policy-violation\" id=\"ref-for-report-potential-permissions-policy-violation\">Generate report for potential violation\n of permissions policy on settings</a> given <var>feature</var>, <var>settings</var>, \"<code>Enforce</code>\", <var>endpoint</var>, <var>allowAttribute</var>,\n and <var>srcAttribute</var>.</p>"
+                  "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#report-potential-permissions-policy-violation\" id=\"ref-for-report-potential-permissions-policy-violation\">Generate report for potential violation\n of permissions policy on settings</a> given <var>feature</var>,\n <var>settings</var>, \"<code>Enforce</code>\", <var>endpoint</var>, <var>allowAttribute</var>,\n and <var>srcAttribute</var>.</p>"
                 }
               ]
             },
             {
-              "html": "Else, if the result of running <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#define-inherited-policy-in-container\" id=\"ref-for-define-inherited-policy-in-container③\">Define an inherited\n policy for feature in container at origin</a> on <var>feature</var>, <var>container</var>, <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-origin\" id=\"ref-for-declared-origin⑤\">declared origin</a> and True is\n \"<code>Disabled</code>\":",
+              "html": "Else, if the result of running <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#define-inherited-policy-in-container\" id=\"ref-for-define-inherited-policy-in-container③\">Define an inherited\n policy for feature in container at origin</a> on <var>feature</var>,\n <var>container</var>, <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#declared-origin\" id=\"ref-for-declared-origin⑤\">declared origin</a> and True is\n \"<code>Disabled</code>\":",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>report-only endpoint</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#get-reporting-endpoint\" id=\"ref-for-get-reporting-endpoint③\">Get the reporting endpoint for a feature</a> given <var>feature</var> and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#document-report-only-permissions-policy\" id=\"ref-for-document-report-only-permissions-policy③\">report-only permissions policy</a>.</p>"
+                  "html": "<p>Let <var>report-only endpoint</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#get-reporting-endpoint\" id=\"ref-for-get-reporting-endpoint③\">Get the reporting endpoint for a feature</a>\n given <var>feature</var> and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#document-report-only-permissions-policy\" id=\"ref-for-document-report-only-permissions-policy③\">report-only permissions policy</a>.</p>"
                 },
                 {
-                  "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#report-potential-permissions-policy-violation\" id=\"ref-for-report-potential-permissions-policy-violation①\">Generate report for potential violation\n of permissions policy on settings</a> given <var>feature</var>, <var>settings</var>, \"<code>Report</code>\", <var>report-only endpoint</var>, <var>allowAttribute</var>, and <var>srcAttribute</var>.</p>"
+                  "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#report-potential-permissions-policy-violation\" id=\"ref-for-report-potential-permissions-policy-violation①\">Generate report for potential violation\n of permissions policy on settings</a> given <var>feature</var>,\n <var>settings</var>, \"<code>Report</code>\", <var>report-only endpoint</var>,\n <var>allowAttribute</var>, and <var>srcAttribute</var>.</p>"
                 }
               ]
             }
@@ -702,14 +702,14 @@
     },
     {
       "name": "report-permissions-policy-violation",
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②⑦\">feature</a> (<var>feature</var>), an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object②\">environment settings object</a> (<var>settings</var>), a string (<var>disposition</var>), and a string-or-null (<var>endpoint</var>),\n    this algorithm generates a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#report\" id=\"ref-for-report\">report</a> about the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#violate\" id=\"ref-for-violate⑦\">violation</a> of the\n    policy for <var>feature</var>.",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②⑦\">feature</a> (<var>feature</var>), an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object②\">environment settings object</a>\n    (<var>settings</var>), a string (<var>disposition</var>), and a string-or-null (<var>endpoint</var>),\n    this algorithm generates a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#report\" id=\"ref-for-report\">report</a> about the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#violate\" id=\"ref-for-violate⑦\">violation</a> of the\n    policy for <var>feature</var>.",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>body</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody\" id=\"ref-for-permissionspolicyviolationreportbody①\">PermissionsPolicyViolationReportBody</a></code>, initialized\nas follows:</p>\n        <dl>\n         <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-featureid\" id=\"ref-for-permissionspolicyviolationreportbody-featureid\">featureId</a>\n         </dt><dd data-md=\"\">\n          <p><var>feature</var>’s string representation.</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-sourcefile\" id=\"ref-for-permissionspolicyviolationreportbody-sourcefile②\">sourceFile</a>\n         </dt><dd data-md=\"\">\n          <p>null</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-linenumber\" id=\"ref-for-permissionspolicyviolationreportbody-linenumber\">lineNumber</a>\n         </dt><dd data-md=\"\">\n          <p>null</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-columnnumber\" id=\"ref-for-permissionspolicyviolationreportbody-columnnumber\">columnNumber</a>\n         </dt><dd data-md=\"\">\n          <p>null</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-disposition\" id=\"ref-for-permissionspolicyviolationreportbody-disposition①\">disposition</a>\n         </dt><dd data-md=\"\">\n          <p><var>disposition</var></p>\n        </dd></dl>"
         },
         {
-          "html": "<p>If the user agent is currently executing script, and can extract the\nsource file’s URL, line number, and column number from <var>settings</var>, then\nset <var>body</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-sourcefile\" id=\"ref-for-permissionspolicyviolationreportbody-sourcefile③\">sourceFile</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-linenumber\" id=\"ref-for-permissionspolicyviolationreportbody-linenumber①\">lineNumber</a>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-columnnumber\" id=\"ref-for-permissionspolicyviolationreportbody-columnnumber①\">columnNumber</a> accordingly.</p>"
+          "html": "<p>If the user agent is currently executing script, and can extract the\nsource file’s URL, line number, and column number from <var>settings</var>, then\nset <var>body</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-sourcefile\" id=\"ref-for-permissionspolicyviolationreportbody-sourcefile③\">sourceFile</a>,\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-linenumber\" id=\"ref-for-permissionspolicyviolationreportbody-linenumber①\">lineNumber</a>, and\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-columnnumber\" id=\"ref-for-permissionspolicyviolationreportbody-columnnumber①\">columnNumber</a> accordingly.</p>"
         },
         {
           "html": "<p>Execute <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#generate-and-queue-a-report\" id=\"ref-for-generate-and-queue-a-report①\">generate and queue a report</a> with <var>body</var>,\n\"permissions-policy-violation\", <var>endpoint</var>, and <var>settings</var>.</p>"
@@ -718,14 +718,14 @@
     },
     {
       "name": "report-potential-permissions-policy-violation",
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②⑧\">feature</a> (<var>feature</var>), an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object③\">environment settings object</a> (<var>settings</var>), a string (<var>disposition</var>), a string-or-null (<var>endpoint</var>), a string-or-null\n    (<var>allowAttribute</var>), and a string-or-null (<var>srcAttribute</var>), this algorithm generates a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#report\" id=\"ref-for-report①\">report</a> about the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#violate\" id=\"ref-for-violate⑧\">violation</a> of the policy for <var>feature</var>.",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②⑧\">feature</a> (<var>feature</var>), an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object③\">environment settings object</a>\n    (<var>settings</var>), a string (<var>disposition</var>), a string-or-null (<var>endpoint</var>), a string-or-null\n    (<var>allowAttribute</var>), and a string-or-null (<var>srcAttribute</var>), this algorithm generates a\n    <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#report\" id=\"ref-for-report①\">report</a> about the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#violate\" id=\"ref-for-violate⑧\">violation</a> of the policy for <var>feature</var>.",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>body</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody\" id=\"ref-for-permissionspolicyviolationreportbody②\">PermissionsPolicyViolationReportBody</a></code>, initialized\nas follows:</p>\n        <dl>\n         <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-featureid\" id=\"ref-for-permissionspolicyviolationreportbody-featureid①\">featureId</a>\n         </dt><dd data-md=\"\">\n          <p><var>feature</var>’s string representation.</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-sourcefile\" id=\"ref-for-permissionspolicyviolationreportbody-sourcefile④\">sourceFile</a>\n         </dt><dd data-md=\"\">\n          <p>null</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-linenumber\" id=\"ref-for-permissionspolicyviolationreportbody-linenumber②\">lineNumber</a>\n         </dt><dd data-md=\"\">\n          <p>null</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-columnnumber\" id=\"ref-for-permissionspolicyviolationreportbody-columnnumber②\">columnNumber</a>\n         </dt><dd data-md=\"\">\n          <p>null</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-disposition\" id=\"ref-for-permissionspolicyviolationreportbody-disposition②\">disposition</a>\n         </dt><dd data-md=\"\">\n          <p><var>disposition</var></p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-allowattribute\" id=\"ref-for-permissionspolicyviolationreportbody-allowattribute\">allowAttribute</a>\n         </dt><dd data-md=\"\">\n          <p><var>allowAttribute</var></p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-srcattribute\" id=\"ref-for-permissionspolicyviolationreportbody-srcattribute\">srcAttribute</a>\n         </dt><dd data-md=\"\">\n          <p><var>srcAttribute</var></p>\n        </dd></dl>"
         },
         {
-          "html": "<p>If the user agent is currently executing script, and can extract the\nsource file’s URL, line number, and column number from <var>settings</var>, then\nset <var>body</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-sourcefile\" id=\"ref-for-permissionspolicyviolationreportbody-sourcefile⑤\">sourceFile</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-linenumber\" id=\"ref-for-permissionspolicyviolationreportbody-linenumber③\">lineNumber</a>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-columnnumber\" id=\"ref-for-permissionspolicyviolationreportbody-columnnumber③\">columnNumber</a> accordingly.</p>"
+          "html": "<p>If the user agent is currently executing script, and can extract the\nsource file’s URL, line number, and column number from <var>settings</var>, then\nset <var>body</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-sourcefile\" id=\"ref-for-permissionspolicyviolationreportbody-sourcefile⑤\">sourceFile</a>,\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-linenumber\" id=\"ref-for-permissionspolicyviolationreportbody-linenumber③\">lineNumber</a>, and\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#permissionspolicyviolationreportbody-columnnumber\" id=\"ref-for-permissionspolicyviolationreportbody-columnnumber③\">columnNumber</a> accordingly.</p>"
         },
         {
           "html": "<p>Execute <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#generate-and-queue-a-report\" id=\"ref-for-generate-and-queue-a-report②\">generate and queue a report</a> with <var>body</var>,\n\"potential-permissions-policy-violation\", <var>endpoint</var>, and <var>settings</var>.</p>"
@@ -734,17 +734,20 @@
     },
     {
       "name": "should-request-be-allowed-to-use-feature",
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②⑨\">feature</a> (<var>feature</var>) and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> (<var>request</var>),\n    this algorithm returns <code>true</code> if the request should be allowed to\n    use <var>feature</var>, and <code>false</code> otherwise.",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②⑨\">feature</a> (<var>feature</var>) and a  <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> (<var>request</var>),\n    this algorithm returns <code>true</code> if the request should be allowed to\n    use <var>feature</var>, and <code>false</code> otherwise.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Set <var>window</var> to <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-window\" id=\"ref-for-concept-request-window\">window</a>.</p>"
+          "html": "<p>Let <var>client</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a>.</p>"
         },
         {
-          "html": "<p>If <var>window</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code>, return <code>false</code>.</p>"
+          "html": "<p>If <var>client</var> is null, return <code>false</code>.</p>"
         },
         {
-          "html": "<p>Set <var>document</var> to <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated <code>Document</code></a>.</p>"
+          "html": "<p>If <var>client</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code>, return\n <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>document</var> to <var>client</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global①\">global object</a>’s\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated <code>Document</code></a>.</p>"
         },
         {
           "html": "<p>Let <var>origin</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a>.</p>"
@@ -774,7 +777,7 @@
       "rationale": "call",
       "steps": [
         {
-          "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#check-potential-violation-in-container\" id=\"ref-for-check-potential-violation-in-container\">Check potential violation of permissions policy in\n container</a> given <var>element</var>, <var>element</var>’s allow attribute, and <var>element</var>’s src attribute.</p>"
+          "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#check-potential-violation-in-container\" id=\"ref-for-check-potential-violation-in-container\">Check potential violation of permissions policy in\n container</a> given <var>element</var>, <var>element</var>’s allow attribute, and\n <var>element</var>’s src attribute.</p>"
         }
       ]
     }
