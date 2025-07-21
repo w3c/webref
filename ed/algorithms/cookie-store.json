@@ -658,12 +658,12 @@
               "html": "<p>If <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length①\">length</a> is 0, then return failure.</p>"
             },
             {
-              "html": "<p>If <var>value</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-lowercase\" id=\"ref-for-byte-lowercase\">byte-lowercased</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with\">starts with</a> `<code>__host-</code>`, `<code>__http-</code>`, or `<code>__secure-</code>`, then return failure.</p>"
+              "html": "<p>If <var>value</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-lowercase\" id=\"ref-for-byte-lowercase\">byte-lowercased</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with\">starts with</a> `<code>__host-</code>`, `<code>__hosthttp-</code>`, `<code>__http-</code>`, or `<code>__secure-</code>`, then return failure.</p>"
             }
           ]
         },
         {
-          "html": "<p>If <var>name</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-lowercase\" id=\"ref-for-byte-lowercase①\">byte-lowercased</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with①\">starts with</a> `<code>__http-</code>`, then return failure.</p>"
+          "html": "<p>If <var>name</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-lowercase\" id=\"ref-for-byte-lowercase①\">byte-lowercased</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with①\">starts with</a> `<code>__http-</code>` or `<code>__hosthttp-</code>`, then return failure.</p>"
         },
         {
           "html": "<p>Let <var>encodedName</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode\">UTF-8 encoding</a> <var>name</var>.</p>"
