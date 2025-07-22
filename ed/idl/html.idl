@@ -1166,6 +1166,11 @@ interface HTMLLegendElement : HTMLElement {
   // also has obsolete members
 };
 
+[Exposed=Window]
+interface HTMLSelectedContentElement : HTMLElement {
+  [HTMLConstructor] constructor();
+};
+
 enum SelectionMode {
   "select",
   "start",
