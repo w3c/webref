@@ -65,6 +65,7 @@
           "HTMLMeterElement",
           "HTMLFieldSetElement",
           "HTMLLegendElement",
+          "HTMLSelectedContentElement",
           "SubmitEvent",
           "FormDataEvent",
           "HTMLDetailsElement",
@@ -14918,6 +14919,39 @@
         ],
         "partial": false,
         "href": "https://html.spec.whatwg.org/multipage/form-elements.html#htmllegendelement"
+      },
+      "HTMLSelectedContentElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLSelectedContentElement : HTMLElement {\n  [HTMLConstructor] constructor();\n};",
+        "type": "interface",
+        "name": "HTMLSelectedContentElement",
+        "inheritance": "HTMLElement",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "HTMLConstructor",
+                "rhs": null,
+                "arguments": []
+              }
+            ]
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/form-elements.html#htmlselectedcontentelement"
       },
       "SelectionMode": {
         "fragment": "enum SelectionMode {\n  \"select\",\n  \"start\",\n  \"end\",\n  \"preserve\" // default\n};",
@@ -44057,6 +44091,7 @@
         "HTMLMeterElement",
         "HTMLFieldSetElement",
         "HTMLLegendElement",
+        "HTMLSelectedContentElement",
         "ValidityState",
         "SubmitEvent",
         "FormDataEvent",
@@ -44530,6 +44565,9 @@
       "HTMLLegendElement": [
         "HTMLElement",
         "HTMLFormElement"
+      ],
+      "HTMLSelectedContentElement": [
+        "HTMLElement"
       ],
       "ValidityState": [],
       "SubmitEvent": [
