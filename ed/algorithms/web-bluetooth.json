@@ -3214,10 +3214,49 @@
               "html": "<p>If <var>characteristicMapping</var>[<var>characteristicUuid</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">exists</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②④\">error</a> with\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-element-state\" id=\"ref-for-dfn-invalid-element-state③\">invalid element state</a>.</p>"
             },
             {
-              "html": "<p>Let <var>simulatedGattCharacteristic</var> be a new <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#simulated-gatt-characteristic\" id=\"ref-for-simulated-gatt-characteristic①\">simulated GATT characteristic</a>.</p>"
+              "html": "<p>If <var>params</var>[<code>\"characteristicProperties\"</code>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">exist</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⑤\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⑧\">invalid argument</a>.</p>"
+            },
+            {
+              "html": "Let <var>simulatedGattCharacteristicProperties</var> be new <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#simulated-gatt-characteristic-properties\" id=\"ref-for-simulated-gatt-characteristic-properties\">simulated GATT characteristic properties</a> and run the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>properties</var> be <var>params</var>[<code>\"characteristicProperties\"</code>].</p>"
+                },
+                {
+                  "html": "<p>If <var>properties</var>[<code>\"broadcast\"</code>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exists</a>, set <var>simulatedGattCharacteristicProperties</var>’s <code>Broadcast</code> bit if\n<var>properties</var>[<code>\"broadcast\"</code>] is <code>true</code>.</p>"
+                },
+                {
+                  "html": "<p>If <var>properties</var>[<code>\"read\"</code>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">exists</a>, set <var>simulatedGattCharacteristicProperties</var>’s <code>Read</code> bit if\n<var>properties</var>[<code>\"read\"</code>] is <code>true</code>.</p>"
+                },
+                {
+                  "html": "<p>If <var>properties</var>[<code>\"writeWithoutResponse\"</code>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑥\">exists</a>, set <var>simulatedGattCharacteristicProperties</var>’s <code>Write Without Response</code> bit if\n<var>properties</var>[<code>\"writeWithoutResponse\"</code>] is <code>true</code>.</p>"
+                },
+                {
+                  "html": "<p>If <var>properties</var>[<code>\"write\"</code>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑦\">exists</a>, set <var>simulatedGattCharacteristicProperties</var>’s <code>Write</code> bit if\n<var>properties</var>[<code>\"write\"</code>] is <code>true</code>.</p>"
+                },
+                {
+                  "html": "<p>If <var>properties</var>[<code>\"notify\"</code>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑧\">exists</a>, set <var>simulatedGattCharacteristicProperties</var>’s <code>Notify</code> bit if\n<var>properties</var>[<code>\"notify\"</code>] is <code>true</code>.</p>"
+                },
+                {
+                  "html": "<p>If <var>properties</var>[<code>\"indicate\"</code>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑨\">exists</a>, set <var>simulatedGattCharacteristicProperties</var>’s <code>Indicate</code> bit if\n<var>properties</var>[<code>\"indicate\"</code>] is <code>true</code>.</p>"
+                },
+                {
+                  "html": "<p>If <var>properties</var>[<code>\"authenticatedSignedWrites\"</code>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⓪\">exists</a>, set <var>simulatedGattCharacteristicProperties</var>’s <code>Authenticated Signed Writes</code> bit if\n<var>properties</var>[<code>\"authenticatedSignedWrites\"</code>] is <code>true</code>.</p>"
+                },
+                {
+                  "html": "<p>If <var>properties</var>[<code>\"extendedProperties\"</code>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②①\">exists</a>, set <var>simulatedGattCharacteristicProperties</var>’s <code>Extended Properties</code> bit if\n<var>properties</var>[<code>\"extendedProperties\"</code>] is <code>true</code>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>simulatedGattCharacteristic</var> be a new <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#simulated-gatt-characteristic\" id=\"ref-for-simulated-gatt-characteristic②\">simulated GATT characteristic</a>.</p>"
             },
             {
               "html": "<p>Set <var>simulatedGattCharacteristic</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#uuid\" id=\"ref-for-uuid①⑤\">UUID</a> to <var>characteristicUuid</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>simulatedGattCharacteristic</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#characteristic-properties\" id=\"ref-for-characteristic-properties⑧\">Characteristic Properties</a> to <var>simulatedGattCharacteristicProperties</var>.</p>"
             },
             {
               "html": "<p>Set <var>characteristicMapping</var>[<var>characteristicUuid</var>] to <var>simulatedGattCharacteristic</var>.</p>"
@@ -3235,10 +3274,13 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>characteristicMapping</var>[<var>characteristicUuid</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">exists</a>, let <var>simulatedGattCharacteristic</var>\nbe <var>characteristicMapping</var>[<var>characteristicUuid</var>].</p>"
+              "html": "<p>If <var>params</var>[<code>\"characteristicProperties\"</code>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②②\">exists</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑦\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⑨\">invalid argument</a>.</p>"
             },
             {
-              "html": "<p>Otherwise, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⑤\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-element-state\" id=\"ref-for-dfn-invalid-element-state④\">invalid element state</a>.</p>"
+              "html": "<p>If <var>characteristicMapping</var>[<var>characteristicUuid</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②③\">exists</a>, let <var>simulatedGattCharacteristic</var>\nbe <var>characteristicMapping</var>[<var>characteristicUuid</var>].</p>"
+            },
+            {
+              "html": "<p>Otherwise, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⑦\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑧\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-element-state\" id=\"ref-for-dfn-invalid-element-state④\">invalid element state</a>.</p>"
             },
             {
               "html": "<p>Remove <var>simulatedGattCharacteristic</var> from <var>simulatedDeviceInstance</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-context-slot\" id=\"ref-for-dom-bluetoothdevice-context-slot⑥\">[[context]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetooth-attributeinstancemap-slot\" id=\"ref-for-dom-bluetooth-attributeinstancemap-slot⑧\">[[attributeInstanceMap]]</a></code>.</p>"
@@ -3252,7 +3294,7 @@
           ]
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑦\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⑧\">invalid argument</a>.</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⑧\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②⓪\">invalid argument</a>.</p>"
         }
       ]
     },
