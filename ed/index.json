@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-07-22T06:48:36.597Z",
+  "date": "2025-07-22T12:50:08.148Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -720,7 +720,7 @@
   },
   "stats": {
     "crawled": 688,
-    "errors": 1
+    "errors": 2
   },
   "crawler": "reffy-19.1.2",
   "results": [
@@ -1384,7 +1384,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Jul 2025 01:07:28 GMT"
+        "lastModified": "Tue, 22 Jul 2025 10:26:06 GMT"
       },
       "date": "22 July 2025",
       "algorithms": "algorithms/compression-dictionary.json",
@@ -1433,7 +1433,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Jul 2025 01:07:28 GMT"
+        "lastModified": "Tue, 22 Jul 2025 10:26:06 GMT"
       },
       "date": "22 July 2025",
       "algorithms": "algorithms/no-vary-search.json",
@@ -1482,7 +1482,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Jul 2025 01:07:28 GMT"
+        "lastModified": "Tue, 22 Jul 2025 10:26:06 GMT"
       },
       "date": "22 July 2025",
       "algorithms": "algorithms/rfc6265bis.json",
@@ -2906,11 +2906,11 @@
       ],
       "crawled": "https://fs.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 28 Jun 2024 23:01:56 GMT"
+        "lastModified": "Tue, 22 Jul 2025 07:16:04 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 June 2024",
-      "revision": "db5f3bad6cece0986cea5ba8367facaabb81e587",
+      "date": "22 July 2025",
+      "revision": "1ffcc32c902a82e22cf14d83b40faa630d762307",
       "algorithms": "algorithms/fs.json",
       "links": "links/fs.json",
       "refs": "refs/fs.json",
@@ -2964,11 +2964,11 @@
       ],
       "crawled": "https://fullscreen.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Feb 2025 12:22:57 GMT"
+        "lastModified": "Tue, 22 Jul 2025 09:56:49 GMT"
       },
       "generator": "bikeshed",
-      "date": "11 February 2025",
-      "revision": "1c324eeafe81ace8fc3e3b1c9c04776787a01f90",
+      "date": "22 July 2025",
+      "revision": "e47576922e089e2355cf8cc92df4bf3d996c9dec",
       "algorithms": "algorithms/fullscreen.json",
       "links": "links/fullscreen.json",
       "refs": "refs/fullscreen.json",
@@ -6648,11 +6648,11 @@
       ],
       "crawled": "https://streams.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 03 Apr 2025 07:13:07 GMT"
+        "lastModified": "Tue, 22 Jul 2025 07:09:20 GMT"
       },
       "generator": "bikeshed",
-      "date": "3 April 2025",
-      "revision": "080852ccd709e063cc6af239ae07fc040e365179",
+      "date": "22 July 2025",
+      "revision": "3c1c395edd4874a5caf1cd28080da14a08e50df1",
       "algorithms": "algorithms/streams.json",
       "links": "links/streams.json",
       "refs": "refs/streams.json",
@@ -10078,11 +10078,11 @@
       ],
       "crawled": "https://webidl.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 17 Jul 2025 05:07:49 GMT"
+        "lastModified": "Tue, 22 Jul 2025 08:30:30 GMT"
       },
       "generator": "bikeshed",
-      "date": "17 July 2025",
-      "revision": "0b5f9dc2369aeaff917cb8a81ba3c17bf63a2b19",
+      "date": "22 July 2025",
+      "revision": "909c3fea93b4b6a546afe69e053d17805cba9c45",
       "algorithms": "algorithms/webidl.json",
       "links": "links/webidl.json",
       "refs": "refs/webidl.json",
@@ -35222,7 +35222,8 @@
       "refs": "refs/sparql12-results-json.json",
       "headings": "headings/sparql12-results-json.json",
       "ids": "ids/sparql12-results-json.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://w3c.github.io/sparql-results-json/spec/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 590)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/sparql12-results-xml/",
