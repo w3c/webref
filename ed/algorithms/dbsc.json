@@ -101,19 +101,22 @@
           "html": "<p>If <var>pattern</var> equals '*', return true.</p>"
         },
         {
-          "html": "If <var>pattern</var> starts with '*':",
+          "html": "<p>Let <var>host string</var> be the serialized <var>host</var>.</p>"
+        },
+        {
+          "html": "If <var>pattern</var> starts with '*' and <var>host</var> is a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain\" id=\"ref-for-concept-domain②\">domain</a>:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If <var>pattern</var> does not start with '*.', return false.</p>"
             },
             {
-              "html": "<p>Return true if <var>host</var> ends with all but the first character\n of <var>pattern</var>.</p>"
+              "html": "<p>Return true if <var>host string</var> ends with all but the first character\n of <var>pattern</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return true if <var>host</var> is equal to <var>pattern</var>.</p>"
+          "html": "<p>Return true if <var>host string</var> is equal to <var>pattern</var>.</p>"
         }
       ]
     },
@@ -647,7 +650,7 @@
               "html": "<p>If <var>provider session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-scope\" id=\"ref-for-device-bound-session-session-scope⑦\">session scope</a>\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#session-scope-origin\" id=\"ref-for-session-scope-origin⑤\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin②\">same origin</a> with <var>provider\n origin</var>, return null.</p>"
             },
             {
-              "html": "<p>If <var>provider session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-key-pair\" id=\"ref-for-device-bound-session-session-key-pair①\">session key pair</a> does not match\n <var>params</var>[\"provider_key\"], return null.</p>"
+              "html": "<p>If <var>provider session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-key-pair\" id=\"ref-for-device-bound-session-session-key-pair①\">session key pair</a>’s JWK thumbprint (see\n <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webappsec-dbsc/#biblio-rfc7638\" title=\"JSON Web Key (JWK) Thumbprint\">[RFC7638]</a>) does not match <var>params</var>[\"provider_key\"]\n when encoded in base64 (see <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webappsec-dbsc/#biblio-rfc4648\" title=\"The Base16, Base32, and Base64 Data Encodings\">[RFC4648]</a>), return null.</p>"
             },
             {
               "html": "<p>Let <var>provider well known URL</var> be a copy of <var>provider URL</var>, with the\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path④\">path</a> replaced with \"/.well-known/device-bound-sessions\".</p>"
