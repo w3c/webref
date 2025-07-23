@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Semantic Sensor Network Ontology",
+    "title": "Semantic Sensor Network Ontology - 2023 Edition",
     "url": "https://w3c.github.io/sdw-sosa-ssn/ssn/"
   },
   "headings": [
@@ -8,7 +8,7 @@
       "id": "title",
       "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#title",
       "level": 1,
-      "title": "Semantic Sensor Network Ontology"
+      "title": "Semantic Sensor Network Ontology - 2023 Edition"
     },
     {
       "id": "toc",
@@ -80,16 +80,6 @@
       "number": "2.2.2"
     },
     {
-      "id": "JSON-LD",
-      "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#JSON-LD",
-      "level": 3,
-      "title": "JSON-LD serialization",
-      "alternateIds": [
-        "x2-3-json-ld-serialization"
-      ],
-      "number": "2.3"
-    },
-    {
       "id": "conformance",
       "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#conformance",
       "level": 2,
@@ -110,8 +100,8 @@
       "number": "4"
     },
     {
-      "id": "SSNModules",
-      "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#SSNModules",
+      "id": "SSNcoreModules",
+      "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#SSNcoreModules",
       "level": 3,
       "title": "Core modules",
       "alternateIds": [
@@ -940,24 +930,14 @@
       "number": "5.3.6.1"
     },
     {
-      "id": "SSN-Collections",
-      "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#SSN-Collections",
-      "level": 5,
-      "title": "SSN collections",
-      "alternateIds": [
-        "x5-3-6-2-ssn-collections"
-      ],
-      "number": "5.3.6.2"
-    },
-    {
       "id": "Collections-overview",
       "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#Collections-overview",
       "level": 5,
       "title": "Overview",
       "alternateIds": [
-        "x5-3-6-3-overview"
+        "x5-3-6-2-overview"
       ],
-      "number": "5.3.6.3"
+      "number": "5.3.6.2"
     },
     {
       "id": "Collections-specification",
@@ -965,9 +945,9 @@
       "level": 5,
       "title": "Specification",
       "alternateIds": [
-        "x5-3-6-4-specification"
+        "x5-3-6-3-specification"
       ],
-      "number": "5.3.6.4"
+      "number": "5.3.6.3"
     },
     {
       "id": "SOSAhasMember",
@@ -975,19 +955,19 @@
       "level": 6,
       "title": "sosa:hasMember",
       "alternateIds": [
-        "x5-3-6-4-1-sosa-hasmember"
+        "x5-3-6-3-1-sosa-hasmember"
       ],
-      "number": "5.3.6.4.1"
+      "number": "5.3.6.3.1"
     },
     {
-      "id": "SOSAisMemberOf",
-      "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#SOSAisMemberOf",
+      "id": "SOSAmemberOf",
+      "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#SOSAmemberOf",
       "level": 6,
       "title": "sosa:isMemberOf",
       "alternateIds": [
-        "x5-3-6-4-2-sosa-ismemberof"
+        "x5-3-6-3-2-sosa-ismemberof"
       ],
-      "number": "5.3.6.4.2"
+      "number": "5.3.6.3.2"
     },
     {
       "id": "Collections-extensions",
@@ -995,9 +975,9 @@
       "level": 5,
       "title": "Other collections",
       "alternateIds": [
-        "x5-3-6-5-other-collections"
+        "x5-3-6-4-other-collections"
       ],
-      "number": "5.3.6.5"
+      "number": "5.3.6.4"
     },
     {
       "id": "Actuation",
@@ -1630,34 +1610,54 @@
       "number": "6.1"
     },
     {
-      "id": "sosa-oms",
-      "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#sosa-oms",
+      "id": "OMS-req",
+      "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#OMS-req",
       "level": 4,
-      "title": "SOSA-OMS",
+      "title": "OMS Requirement",
       "alternateIds": [
-        "x6-1-1-sosa-oms"
+        "x6-1-1-oms-requirement"
       ],
       "number": "6.1.1"
     },
     {
-      "id": "ssn-oms",
-      "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#ssn-oms",
+      "id": "OMS-modules",
+      "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#OMS-modules",
       "level": 4,
-      "title": "SSN-OMS",
+      "title": "OMS modules",
       "alternateIds": [
-        "x6-1-2-ssn-oms"
+        "x6-1-2-oms-modules"
       ],
       "number": "6.1.2"
     },
     {
-      "id": "OMS-namespaces",
-      "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#OMS-namespaces",
-      "level": 4,
+      "id": "sosa-oms",
+      "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#sosa-oms",
+      "level": 5,
+      "title": "SOSA-OMS",
+      "alternateIds": [
+        "x6-1-2-1-sosa-oms"
+      ],
+      "number": "6.1.2.1"
+    },
+    {
+      "id": "ssn-oms",
+      "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#ssn-oms",
+      "level": 5,
+      "title": "SSN-OMS",
+      "alternateIds": [
+        "x6-1-2-2-ssn-oms"
+      ],
+      "number": "6.1.2.2"
+    },
+    {
+      "id": "namespaces-0",
+      "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#namespaces-0",
+      "level": 5,
       "title": "Namespaces",
       "alternateIds": [
-        "x6-1-3-namespaces"
+        "x6-1-2-3-namespaces"
       ],
-      "number": "6.1.3"
+      "number": "6.1.2.3"
     },
     {
       "id": "OMS-New-Terms",
@@ -1665,9 +1665,9 @@
       "level": 4,
       "title": "New terms",
       "alternateIds": [
-        "x6-1-4-new-terms"
+        "x6-1-3-new-terms"
       ],
-      "number": "6.1.4"
+      "number": "6.1.3"
     },
     {
       "id": "OMSPreparationProcedure",
@@ -1675,9 +1675,9 @@
       "level": 5,
       "title": "sosa-oms:PreparationProcedure",
       "alternateIds": [
-        "x6-1-4-1-sosa-oms-preparationprocedure"
+        "x6-1-3-1-sosa-oms-preparationprocedure"
       ],
-      "number": "6.1.4.1"
+      "number": "6.1.3.1"
     },
     {
       "id": "OMSPreparationStep",
@@ -1685,9 +1685,9 @@
       "level": 5,
       "title": "sosa-oms:PreparationStep",
       "alternateIds": [
-        "x6-1-4-2-sosa-oms-preparationstep"
+        "x6-1-3-2-sosa-oms-preparationstep"
       ],
-      "number": "6.1.4.2"
+      "number": "6.1.3.2"
     },
     {
       "id": "OMShasPreparationStep",
@@ -1695,9 +1695,9 @@
       "level": 5,
       "title": "sosa-oms:hasPreparationStep",
       "alternateIds": [
-        "x6-1-4-3-sosa-oms-haspreparationstep"
+        "x6-1-3-3-sosa-oms-haspreparationstep"
       ],
-      "number": "6.1.4.3"
+      "number": "6.1.3.3"
     },
     {
       "id": "OMSmadeOnPlatform",
@@ -1705,9 +1705,9 @@
       "level": 5,
       "title": "sosa-oms:madeOnPlatform",
       "alternateIds": [
-        "x6-1-4-4-sosa-oms-madeonplatform"
+        "x6-1-3-4-sosa-oms-madeonplatform"
       ],
-      "number": "6.1.4.4"
+      "number": "6.1.3.4"
     },
     {
       "id": "OMSmetadata",
@@ -1715,9 +1715,9 @@
       "level": 5,
       "title": "sosa-oms:metadata",
       "alternateIds": [
-        "x6-1-4-5-sosa-oms-metadata"
+        "x6-1-3-5-sosa-oms-metadata"
       ],
-      "number": "6.1.4.5"
+      "number": "6.1.3.5"
     },
     {
       "id": "OMSobservationType",
@@ -1725,9 +1725,9 @@
       "level": 5,
       "title": "sosa-oms:observationType",
       "alternateIds": [
-        "x6-1-4-6-sosa-oms-observationtype"
+        "x6-1-3-6-sosa-oms-observationtype"
       ],
-      "number": "6.1.4.6"
+      "number": "6.1.3.6"
     },
     {
       "id": "OMSpreparedSample",
@@ -1735,9 +1735,9 @@
       "level": 5,
       "title": "sosa-oms:preparedSample",
       "alternateIds": [
-        "x6-1-4-7-sosa-oms-preparedsample"
+        "x6-1-3-7-sosa-oms-preparedsample"
       ],
-      "number": "6.1.4.7"
+      "number": "6.1.3.7"
     },
     {
       "id": "OMSprocessingDetails",
@@ -1745,9 +1745,9 @@
       "level": 5,
       "title": "sosa-oms:processingDetails",
       "alternateIds": [
-        "x6-1-4-8-sosa-oms-processingdetails"
+        "x6-1-3-8-sosa-oms-processingdetails"
       ],
-      "number": "6.1.4.8"
+      "number": "6.1.3.8"
     },
     {
       "id": "OMSrelatedSampling",
@@ -1755,9 +1755,9 @@
       "level": 5,
       "title": "sosa-oms:relatedSampling",
       "alternateIds": [
-        "x6-1-4-9-sosa-oms-relatedsampling"
+        "x6-1-3-9-sosa-oms-relatedsampling"
       ],
-      "number": "6.1.4.9"
+      "number": "6.1.3.9"
     },
     {
       "id": "OMSsamplePreparationStep",
@@ -1765,9 +1765,9 @@
       "level": 5,
       "title": "sosa-oms:samplePreparationStep",
       "alternateIds": [
-        "x6-1-4-10-sosa-oms-samplepreparationstep"
+        "x6-1-3-10-sosa-oms-samplepreparationstep"
       ],
-      "number": "6.1.4.10"
+      "number": "6.1.3.10"
     },
     {
       "id": "OMSvalidTime",
@@ -1775,9 +1775,9 @@
       "level": 5,
       "title": "sosa-oms:validTime",
       "alternateIds": [
-        "x6-1-4-11-sosa-oms-validtime"
+        "x6-1-3-11-sosa-oms-validtime"
       ],
-      "number": "6.1.4.11"
+      "number": "6.1.3.11"
     },
     {
       "id": "OMS-Class-SOSA",
@@ -1785,9 +1785,9 @@
       "level": 4,
       "title": "Class Alignments — SOSA focus",
       "alternateIds": [
-        "x6-1-5-class-alignments-sosa-focus"
+        "x6-1-4-class-alignments-sosa-focus"
       ],
-      "number": "6.1.5"
+      "number": "6.1.4"
     },
     {
       "id": "OMS-Class-OMS",
@@ -1795,9 +1795,9 @@
       "level": 4,
       "title": "Class Alignments — OMS focus",
       "alternateIds": [
-        "x6-1-6-class-alignments-oms-focus"
+        "x6-1-5-class-alignments-oms-focus"
       ],
-      "number": "6.1.6"
+      "number": "6.1.5"
     },
     {
       "id": "OMS-Property-SOSA",
@@ -1805,9 +1805,9 @@
       "level": 4,
       "title": "Property Alignments — SOSA focus",
       "alternateIds": [
-        "x6-1-7-property-alignments-sosa-focus"
+        "x6-1-6-property-alignments-sosa-focus"
       ],
-      "number": "6.1.7"
+      "number": "6.1.6"
     },
     {
       "id": "OMS-Property-OMS",
@@ -1815,9 +1815,9 @@
       "level": 4,
       "title": "Property Alignments — OMS focus",
       "alternateIds": [
-        "x6-1-8-property-alignments-oms-focus"
+        "x6-1-7-property-alignments-oms-focus"
       ],
-      "number": "6.1.8"
+      "number": "6.1.7"
     },
     {
       "id": "Sample-Relations",
@@ -1830,6 +1830,16 @@
       "number": "6.2"
     },
     {
+      "id": "sample_relationships_req",
+      "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#sample_relationships_req",
+      "level": 4,
+      "title": "Sample Relations requirement",
+      "alternateIds": [
+        "x6-2-1-sample-relations-requirement"
+      ],
+      "number": "6.2.1"
+    },
+    {
       "id": "sample_relationships_def",
       "href": "https://w3c.github.io/sdw-sosa-ssn/ssn/#sample_relationships_def",
       "level": 4,
@@ -1837,7 +1847,7 @@
       "alternateIds": [
         "SAMRglance"
       ],
-      "number": "6.2.1"
+      "number": "6.2.2"
     },
     {
       "id": "SAMRRelationshipNature",
@@ -1845,9 +1855,9 @@
       "level": 5,
       "title": "sosa-rel:RelationshipNature",
       "alternateIds": [
-        "x6-2-1-1-sosa-rel-relationshipnature"
+        "x6-2-2-1-sosa-rel-relationshipnature"
       ],
-      "number": "6.2.1.1"
+      "number": "6.2.2.1"
     },
     {
       "id": "SAMRSampleRelationship",
@@ -1855,9 +1865,9 @@
       "level": 5,
       "title": "sosa-rel:SampleRelationship",
       "alternateIds": [
-        "x6-2-1-2-sosa-rel-samplerelationship"
+        "x6-2-2-2-sosa-rel-samplerelationship"
       ],
-      "number": "6.2.1.2"
+      "number": "6.2.2.2"
     },
     {
       "id": "SAMRhasSampleRelationship",
@@ -1865,9 +1875,9 @@
       "level": 5,
       "title": "sosa-rel:hasSampleRelationship",
       "alternateIds": [
-        "x6-2-1-3-sosa-rel-hassamplerelationship"
+        "x6-2-2-3-sosa-rel-hassamplerelationship"
       ],
-      "number": "6.2.1.3"
+      "number": "6.2.2.3"
     },
     {
       "id": "SAMRnatureOfRelationship",
@@ -1875,9 +1885,9 @@
       "level": 5,
       "title": "sosa-rel:natureOfRelationship",
       "alternateIds": [
-        "x6-2-1-4-sosa-rel-natureofrelationship"
+        "x6-2-2-4-sosa-rel-natureofrelationship"
       ],
-      "number": "6.2.1.4"
+      "number": "6.2.2.4"
     },
     {
       "id": "SAMRrelatedSample",
@@ -1885,9 +1895,9 @@
       "level": 5,
       "title": "sosa-rel:relatedSample",
       "alternateIds": [
-        "x6-2-1-5-sosa-rel-relatedsample"
+        "x6-2-2-5-sosa-rel-relatedsample"
       ],
-      "number": "6.2.1.5"
+      "number": "6.2.2.5"
     },
     {
       "id": "Alignments",
