@@ -24,6 +24,15 @@ async function index({folder = __dirname} = {}) {
         id += ' for ' + feature.for[0];
       }
       indexed[category][id] = feature;
+
+      // For at-rules, convert descriptors array into an indexed object too
+      if (feature.descriptors) {
+        const descriptors = feature.descriptors;
+        feature.descriptors = {};
+        for (const descriptor of descriptors) {
+          feature.descriptors[descriptor.name] = descriptor;
+        }
+      }
     }
   }
   return indexed;
