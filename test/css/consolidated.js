@@ -79,7 +79,16 @@ describe(`The consolidated CSS file`, async () => {
         `Not the right amount of ${pluralize(label)} in index`);
     }
 
-    assert(indexed.atrules['@import'], `No flex property in index`);
+    for (const [name, atrule] of Object.entries(indexed.atrules)) {
+      const initial = consolidated.atrules.find(a => a.name === name);
+      assert(initial, `No ${name} at-rule in index`);
+      assert.equal(
+        Object.keys(atrule.descriptors).length,
+        initial.descriptors.length,
+        `Not the right amount of descriptors for ${name} in index`);
+    }
+
+    assert(indexed.atrules['@import'], `No @import at-rule in index`);
     assert(indexed.functions['abs()'], `No abs() function in index`);
     assert(indexed.properties['flex'], `No flex property in index`);
     assert(indexed.selectors[':first-child'], `No :first-child selector in index`);
