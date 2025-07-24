@@ -1,0 +1,683 @@
+{
+  "spec": {
+    "title": "Data Integrity BBS Cryptosuites v1.0",
+    "url": "https://w3c.github.io/vc-di-bbs/"
+  },
+  "algorithms": [
+    {
+      "html": "This algorithm is used to configure a cryptographic suite to be used by the\n<a data-cite=\"VC-DATA-INTEGRITY#add-proof\" href=\"https://www.w3.org/TR/vc-data-integrity/#add-proof\">Add Proof</a> and\n<a data-cite=\"VC-DATA-INTEGRITY#verify-proof\" href=\"https://www.w3.org/TR/vc-data-integrity/#verify-proof\">Verify Proof</a>\nfunctions in <cite><a data-cite=\"VC-DATA-INTEGRITY\" data-matched-text=\"[[[VC-DATA-INTEGRITY]]]\" href=\"https://www.w3.org/TR/vc-data-integrity/\">Verifiable Credential Data Integrity 1.0</a></cite>. The algorithm takes an options object\n(<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>options</var>) as input and returns a <a data-link-type=\"dfn\" data-lt=\"data integrity cryptographic suite instance\" data-cite=\"vc-data-integrity\" data-cite-path=\"\" data-cite-frag=\"dfn-data-integrity-cryptographic-suite-instance\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-cryptographic-suite-instance\">cryptosuite instance</a> (<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"struct\" href=\"https://infra.spec.whatwg.org/#struct\">struct</a> <var>cryptosuite</var>).",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>cryptosuite</var> to an empty <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"struct\" href=\"https://infra.spec.whatwg.org/#struct\">struct</a>."
+        },
+        {
+          "html": "If <var>options</var>.<var>type</var> does not equal <code>DataIntegrityProof</code>, return <var>cryptosuite</var>."
+        },
+        {
+          "html": "If <var>options</var>.<var>cryptosuite</var> is <code>bbs-2023</code> then:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Set <var>cryptosuite</var>.<var>createProof</var> to the algorithm in Section\n<a href=\"https://w3c.github.io/vc-di-bbs/#create-base-proof-bbs-2023\" data-matched-text=\"[[[#create-base-proof-bbs-2023]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.4.1 </bdi>Create Base Proof (bbs-2023)</a>."
+            },
+            {
+              "html": "Set <var>cryptosuite</var>.<var>verifyProof</var> to the algorithm in Section\n<a href=\"https://w3c.github.io/vc-di-bbs/#verify-derived-proof-bbs-2023\" data-matched-text=\"[[[#verify-derived-proof-bbs-2023]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.4.7 </bdi>Verify Derived Proof (bbs-2023)</a>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>cryptosuite</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm creates a label map factory function that uses an\nHMAC to shuffle canonical blank node identifiers. The required input is an HMAC\n(previously initialized with a secret key), <var>HMAC</var>. A function,\n<em>labelMapFactoryFunction</em>, is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Create a function, <var>labelMapFactoryFunction</var>, with one required input\n(a canonical node identifier map, <var>canonicalIdMap</var>), that will\nreturn a blank node identifier map, <em>bnodeIdMap</em>, as output. Set the\nfunction's implementation to:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Generate a new empty bnode identifier map, <em>bnodeIdMap</em>."
+            },
+            {
+              "html": "For each map entry, <em>entry</em>, in <var>canonicalIdMap</var>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "Perform an HMAC operation on the canonical identifier from the value in <em>entry</em> to get an HMAC\ndigest, <em>digest</em>."
+                },
+                {
+                  "html": "Generate a new string value, <em>b64urlDigest</em>, and initialize it to \"u\"\nfollowed by appending a base64url-no-pad encoded version of the <em>digest</em>\nvalue."
+                },
+                {
+                  "html": "Add a new entry, <var>newEntry</var>, to <em>bnodeIdMap</em> using the key\nfrom <em>entry</em> and <em>b64urlDigest</em> as the value."
+                }
+              ]
+            },
+            {
+              "html": "Derive the shuffled mapping from the <code>bnodeIdMap</code> as follows:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "Set <code>hmacIds</code> to be the sorted array of values from the <code>bnodeIdMap</code>, and set\n<code>bnodeKeys</code> to be the ordered array of keys from the <code>bnodeIdMap</code>."
+                },
+                {
+                  "html": "For each key in <code>bnodeKeys</code>, replace the <code>bnodeIdMap</code> value for that key with the\nindex position of the value in the <code>hmacIds</code> array prefixed by \"b\", i.e.,\n<code>bnodeIdMap.set(bkey, 'b' + hmacIds.indexOf(bnodeIdMap.get(bkey)))</code>."
+                }
+              ]
+            },
+            {
+              "html": "Return <em>bnodeIdMap</em>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>labelMapFactoryFunction</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm serializes the base proof value, including the\nBBS signature, HMAC key, and mandatory pointers.\nThe required inputs are a base signature <var>bbsSignature</var>, <var>bbsHeader</var>,\n<var>publicKey</var>, an HMAC key <var>hmacKey</var>, an array of\n<var>mandatoryPointers</var>, <var>featureOption</var>, and, depending on\nthe <var>featureOption</var> value, possibly a <var>signer_nym_entropy</var> value.\nA single <em>base proof</em> string value is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Depending upon the value of the <var>featureOption</var>, set up the <var>proofValue</var> as\nfollows."
+        },
+        {
+          "html": "If <var>featureOption</var> equals <code>\"baseline\"</code>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Initialize a byte array, <var>proofValue</var>, that starts with the BBS base proof\nheader bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x02</code>."
+            },
+            {
+              "html": "Initialize <var>components</var> to an array with five elements containing the values of:\n<var>bbsSignature</var>, <var>bbsHeader</var>, <var>publicKey</var>, <var>hmacKey</var>, and <var>mandatoryPointers</var>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>featureOption</var> equals <code>\"anonymous_holder_binding\"</code>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Initialize a byte array, <var>proofValue</var>, that starts with the BBS base proof\nheader bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x04</code>."
+            },
+            {
+              "html": "Initialize <var>components</var> to an array with six elements containing the values of:\n<var>bbsSignature</var>, <var>bbsHeader</var>, <var>publicKey</var>, <var>hmacKey</var>, and <var>mandatoryPointers</var>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>featureOption</var> equals <code>\"pseudonym\"</code>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Initialize a byte array, <var>proofValue</var>, that starts with the BBS base proof\nheader bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x06</code>."
+            },
+            {
+              "html": "Initialize <var>components</var> to an array with six elements containing the values of:\n<var>bbsSignature</var>, <var>bbsHeader</var>, <var>publicKey</var>, <var>hmacKey</var>, <var>mandatoryPointers</var>, and\n<var>signer_nym_entropy</var>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>featureOption</var> equals <code>\"holder_binding_pseudonym\"</code>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Initialize a byte array, <var>proofValue</var>, that starts with the BBS base proof\nheader bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x08</code>."
+            },
+            {
+              "html": "Initialize <var>components</var> to an array with six elements containing the values of:\n<var>bbsSignature</var>, <var>bbsHeader</var>, <var>publicKey</var>, <var>hmacKey</var>, <var>mandatoryPointers</var>, and\n<var>signer_nym_entropy</var>."
+            }
+          ]
+        },
+        {
+          "html": "CBOR-encode <var>components</var> per [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-rfc8949\" title=\"Concise Binary Object Representation (CBOR)\">RFC8949</a></cite>] where CBOR tagging <em class=\"rfc2119\">MUST NOT</em> be used on\nany of the <var>components</var>. Append the produced encoded value to <var>proofValue</var>."
+        },
+        {
+          "html": "Initialize <var>baseProof</var> to a string with the multibase-base64url-no-pad-encoding\nof <code>proofValue</code>. That is, return a string starting with \"<code>u</code>\" and ending with the\nbase64url-no-pad-encoded value of <var>proofValue</var>."
+        },
+        {
+          "html": "Return <var>baseProof</var> as <em>base proof</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm parses the components of a <code>bbs-2023</code> selective\ndisclosure base proof value. The required input is a proof value\n(<var>proofValue</var>). A single object, <em>parsed base proof</em>, containing\nsix or seven elements, using the names \"bbsSignature\", \"bbsHeader\",\n\"publicKey\",\n\"hmacKey\", \"mandatoryPointers\", \"featureOption\", and possibly optional feature\nparameter \"signer_nym_entropy\", is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the <code>proofValue</code> string does not start with\n<span class=\"codepoint\" translate=\"no\">\n  <bdi lang=\"en\"><code title=\"LATIN SMALL LETTER U\">u</code></bdi>\n  (<code class=\"codepoint\">U+0075</code>\n  <code class=\"uname\">LATIN SMALL LETTER U</code>)</span>,\nindicating that it is a <code>multibase-base64url-no-pad-encoded</code> value,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Initialize <var>decodedProofValue</var> to the result of base64url-no-pad-decoding the\nsubstring that follows the leading <code>u</code> in <code>proofValue</code>."
+        },
+        {
+          "html": "Check that the BBS base proof starts with an allowed header value and set the\n<var>featureOption</var> variable as follows:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If the <var>decodedProofValue</var> starts with the bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x02</code>, set\n<var>featureOption</var> to <code>\"baseline\"</code>."
+            },
+            {
+              "html": "If the <var>decodedProofValue</var> starts with the bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x04</code>, set\n<var>featureOption</var> to <code>\"anonymous_holder_binding\"</code>."
+            },
+            {
+              "html": "If the <var>decodedProofValue</var> starts with the bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x06</code>, set\n<var>featureOption</var> to <code>\"pseudonym\"</code>."
+            },
+            {
+              "html": "If the <var>decodedProofValue</var> starts with the bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x08</code>, set\n<var>featureOption</var> to <code>\"holder_binding_pseudonym\"</code>."
+            },
+            {
+              "html": "If the <var>decodedProofValue</var> starts with any other three byte sequence,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+            }
+          ]
+        },
+        {
+          "html": "Initialize <code>components</code> to an array that is the result of CBOR-decoding the\nbytes that follow the three-byte BBS base proof header."
+        },
+        {
+          "html": "Based on the value of <var>featureOption</var>, return an object based on <var>components</var>,\nas follows:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If <var>featureOption</var> equals <code>\"baseline\"</code>, set the property names for the object\nbased on <var>components</var> to \"bbsSignature\", \"bbsHeader\", \"publicKey\", \"hmacKey\",\nand \"mandatoryPointers\", in that order, and add <var>featureOption</var> as a property."
+            },
+            {
+              "html": "If <var>featureOption</var> equals <code>\"anonymous_holder_binding\"</code>, set the property names\nfor the object based on <var>components</var> to \"bbsSignature\", \"bbsHeader\",\n\"publicKey\", \"hmacKey\", and \"mandatoryPointers\", in that order, and\nadd <var>featureOption</var> as a property."
+            },
+            {
+              "html": "If <var>featureOption</var> equals <code>\"pseudonym\"</code>, set the property names\nfor the object based on <var>components</var> to \"bbsSignature\", \"bbsHeader\",\n\"publicKey\", \"hmacKey\", \"mandatoryPointers\", and \"signer_nym_entropy\", in that\norder, and add <var>featureOption</var> as a property."
+            },
+            {
+              "html": "If <var>featureOption</var> equals <code>\"holder_binding_pseudonym\"</code>, set the property names\nfor the object based on <var>components</var> to \"bbsSignature\", \"bbsHeader\",\n\"publicKey\", \"hmacKey\", \"mandatoryPointers\", and \"signer_nym_entropy\", in that\norder, and add <var>featureOption</var> as a property."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm creates data to be used to generate a derived proof. The\ninputs include a JSON-LD document (<var>document</var>), a BBS base proof\n(<var>proof</var>), an array of JSON pointers to use to selectively disclose\nstatements (<var>selectivePointers</var>), an <em class=\"rfc2119\">OPTIONAL</em> BBS\n<var>presentationHeader</var> (byte array that defaults to an empty byte array if\nnot present), a <var>featureOption</var> indicator, additional inputs as required by\nthe <var>featureOption</var> (see <a href=\"https://w3c.github.io/vc-di-bbs/#add-derived-proof-bbs-2023\">Add Derived Proof</a>),\nand any custom JSON-LD API options\n(such as a document loader). A single object, <em>disclosure data</em>, is\nproduced as output, which contains the following fields: <var>bbsProof</var>,\n<var>labelMap</var>, <var>mandatoryIndexes</var>, <var>selectiveIndexes</var>, <var>presentationHeader</var>,\n<var>revealDocument</var>, and, if computed, <var>pseudonym</var>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>bbsSignature</var>, <var>bbsHeader</var>, <var>publicKey</var>, <var>hmacKey</var>,\nand <var>mandatoryPointers</var>\nto the values of the associated properties in the object\nreturned when calling the algorithm in Section\n<a href=\"https://w3c.github.io/vc-di-bbs/#parsebaseproofvalue\" class=\"sec-ref\"><bdi class=\"secno\">3.3.2 </bdi>parseBaseProofValue</a>, passing the <code>proofValue</code> from <code>proof</code>."
+        },
+        {
+          "html": "Initialize <var>hmac</var> to an HMAC API using <var>hmacKey</var>. The HMAC uses the same hash\nalgorithm used in the signature algorithm, i.e., SHA-256."
+        },
+        {
+          "html": "Initialize <var>labelMapFactoryFunction</var> to the result of calling the algorithm of\nsection <a href=\"https://w3c.github.io/vc-di-bbs/#createshuffledidlabelmapfunction\" class=\"sec-ref\"><bdi class=\"secno\">3.2.1 </bdi>createShuffledIdLabelMapFunction</a>, passing <var>hmac</var> as <var>HMAC</var>."
+        },
+        {
+          "html": "Initialize <var>combinedPointers</var> to the concatenation of <var>mandatoryPointers</var>\nand <var>selectivePointers</var>."
+        },
+        {
+          "html": "Initialize <var>groupDefinitions</var> to a map with the following entries: key of\nthe string <code>\"mandatory\"</code> and value of <var>mandatoryPointers</var>; key of the string\n<code>\"selective\"</code> and value of <var>selectivePointers</var>; and key of the string <code>\"combined\"</code>\nand value of <var>combinedPointers</var>."
+        },
+        {
+          "html": "Initialize <var>groups</var> and <var>labelMap</var> to the result of calling the algorithm in\n<a href=\"https://www.w3.org/TR/vc-di-ecdsa/#canonicalizeandgroup\">Section 3.3.16\ncanonicalizeAndGroup</a> of the [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-di-ecdsa\" title=\"The Elliptic Curve Digital Signature Algorithm Cryptosuites v1.0\">DI-ECDSA</a></cite>] specification, passing <var>document</var>\n<var>labelMapFactoryFunction</var>,\n<var>groupDefinitions</var>, and any custom JSON-LD\nAPI options. Note: This step transforms the document into an array of canonical\nN-Quads whose order has been shuffled based on 'hmac'-applied blank node\nidentifiers, and groups\nthe N-Quad strings according to selections based on JSON pointers."
+        },
+        {
+          "html": "Compute the mandatory indexes relative to their positions in the combined\nstatement list, i.e., find the position at which a mandatory statement occurs\nin the list of combined statements. One method for doing this is given below.",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Initialize <var>mandatoryIndexes</var> to an empty array. Set <var>mandatoryMatch</var> to\n|groups.mandatory.matching| map; set <var>combinedMatch</var> to\n|groups.combined.matching|; and set <var>combinedIndexes</var> to the ordered array of\njust the keys of the <var>combinedMatch</var> map."
+            },
+            {
+              "html": "For each key in the <var>mandatoryMatch</var> map, find its index in the <var>combinedIndexes</var>\narray (e.g., <code>combinedIndexes.indexOf(key)</code>), and add this value to the\n<var>mandatoryIndexes</var> array."
+            }
+          ]
+        },
+        {
+          "html": "Compute the selective indexes relative to their positions in the non-mandatory\nstatement list, i.e., find the position at which a selected statement occurs in\nthe list of non-mandatory statements. One method for doing this is given below.",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Initialize <var>selectiveIndexes</var> to an empty array. Set <var>selectiveMatch</var> to the\n|groups.selective.matching| map; set <var>mandatoryNonMatch</var> to the map\n|groups.mandatory.nonMatching|; and <var>nonMandatoryIndexes</var> to to the ordered\narray of just the keys of the <var>mandatoryNonMatch</var> map."
+            },
+            {
+              "html": "For each key in the <var>selectiveMatch</var> map, find its index in the\n<var>nonMandatoryIndexes</var> array (e.g., <code>nonMandatoryIndexes.indexOf(key)</code>), and add\nthis value to the <var>selectiveIndexes</var> array."
+            }
+          ]
+        },
+        {
+          "html": "Initialize <var>bbsMessages</var> to an array of byte arrays containing the values in the\n<var>nonMandatory</var> array of strings encoded using the UTF-8\n<a data-cite=\"i18n-glossary\" data-cite-path=\"\" data-cite-frag=\"dfn-character-encoding\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/i18n-glossary/#dfn-character-encoding\">character encoding</a>."
+        },
+        {
+          "html": "Set <var>bbsProof</var> to the value computed by the appropriate procedure given below\nbased on the value of the <var>featureOption</var> parameter.",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If <var>featureOption</var> equals <code>\"baseline\"</code>,\nset <code>bbsProof</code> to the value computed by the <code>ProofGen</code> procedure from\n[<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-cfrg-bbs-signature\" title=\"The BBS Signature Scheme\">CFRG-BBS-SIGNATURE</a></cite>], i.e.,\n<code>ProofGen(PK, signature, header, ph, messages, disclosed_indexes)</code>,\nwhere <code>PK</code> is the original issuers public key, <code>signature</code> is the\n<code>bbsSignature</code>, <code>header</code> is the <code>bbsHeader</code>, <code>ph</code> is the  <code>presentationHeader</code>\n<code>messages</code> is <code>bbsMessages</code>, and <code>disclosed_indexes</code> is <code>selectiveIndexes</code>."
+            },
+            {
+              "html": "If <var>featureOption</var> equals <code>\"anonymous_holder_binding\"</code>,\nset <code>bbsProof</code> to the value computed by the <code>BlindProofGen</code> procedure from\n[<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-cfrg-blind-bbs-signature\" title=\"Blind BBS Signatures\">CFRG-Blind-BBS-Signature</a></cite>], where <var>PK</var> is the original issuers public key,\n<var>signature</var> is the\n<var>bbsSignature</var>, <var>header</var> is the <var>bbsHeader</var>, <var>ph</var> is the <var>presentationHeader</var>,\n<var>messages</var> is <var>bbsMessages</var>, <var>disclosed_indexes</var> is <var>selectiveIndexes</var>,\nand <code>commitment_with_proof</code>. The holder will also furnish its\n<var>holder_secret</var>, and the <var>proverBlind</var> that was used to compute the\n<var>commitment_with_proof</var>. This is the\n<a href=\"https://w3c.github.io/vc-di-bbs/#anonymous-holder-binding\">Anonymous Holder Binding</a> feature option."
+            },
+            {
+              "html": "If <var>featureOption</var> equals <code>\"pseudonym\"</code>,\nuse the \"Verification and Finalization\" operation\nfrom [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-cfrg-pseudonym-bbs-signature\" title=\"BBS per Verifier Linkability\">CFRG-Pseudonym-BBS-Signature</a></cite>] with an empty <var>committed_messages</var> array\nto both verify the <var>bbsSignature</var> and compute\nthe <var>nym_secret</var> value. This operation uses the <var>prover_nym</var>,\n<var>signer_nym_entropy</var>, and <var>secret_prover_blind</var>.\n<br><br>\nDetermine the <var>nym_domain</var>. This might be specified by\nthe verifier or set by the holder, depending on the usage scenario. Use\nthe \"Proof Generation with Pseudonym\"\noperation from [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-cfrg-pseudonym-bbs-signature\" title=\"BBS per Verifier Linkability\">CFRG-Pseudonym-BBS-Signature</a></cite>] to produce the derived proof.\nThis operation takes as inputs\nthe original issuer's public key as <var>PK</var>,\nthe               <var>bbsSignature</var> as <var>signature</var>,\nthe                  <var>bbsHeader</var> as <var>header</var>,\nthe         <var>presentationHeader</var> as <var>ph</var>,\nthe                <var>bbsMessages</var> as <var>messages</var>,\nthe           <var>selectiveIndexes</var> as <var>disclosed_indexes</var>,\n                                  a <var>nym_secret</var>,\n                                  a <var>nym_domain</var>,\n                 an empty array for <var>committed_messages</var>,\nand                               a <var>secret_prover_blind</var>.\nIn addition to providing\nthe raw\ncryptographic proof value which is assigned to <var>bbsProof</var>,\nit also returns the <var>pseudonym</var>.\n<br><br>\nThis is for the\n<a href=\"https://w3c.github.io/vc-di-bbs/#credential-bound-pseudonyms\">Credential-Bound Pseudonyms</a>\nfeature option."
+            },
+            {
+              "html": "If <var>featureOption</var> equals <code>\"holder_binding_pseudonym\"</code>,\nuse the \"Verification and Finalization\" operation\nfrom [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-cfrg-pseudonym-bbs-signature\" title=\"BBS per Verifier Linkability\">CFRG-Pseudonym-BBS-Signature</a></cite>] with the <var>committed_messages</var> array\ncontaining the <var>holder_secret</var> as its only value,\nto both verify the <var>bbsSignature</var> and compute\nthe <var>nym_secret</var> value. This operation uses the <var>prover_nym</var>,\n<var>signer_nym_entropy</var>, and <var>secret_prover_blind</var>.\n<br><br>\nDetermine the <var>nym_domain</var>. This might be specified by\nthe verifier or set by the holder depending on the usage scenario. Use\nthe \"Proof Generation with Pseudonym\"\noperation from [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-cfrg-pseudonym-bbs-signature\" title=\"BBS per Verifier Linkability\">CFRG-Pseudonym-BBS-Signature</a></cite>] to produce the derived proof.\nThis operation takes as inputs\n<var>PK</var>, the original issuers public key,\n<var>signature</var>,  the <var>bbsSignature</var>, <var>header</var> is the <var>bbsHeader</var>,\n<var>ph</var> is the <var>presentationHeader</var>,\n<var>messages</var> is <var>bbsMessages</var>, <var>disclosed_indexes</var> is <var>selectiveIndexes</var>,\nThis operation takes as inputs\n   the                  original issuers public key as <var>PK</var>,\n   the                               <var>bbsSignature</var> as <var>signature</var>,\n   the                                  <var>bbsHeader</var> as <var>header</var>,\n   the                         <var>presentationHeader</var> as <var>ph</var>,\n   the                                <var>bbsMessages</var> as <var>messages</var>,\n   the                           <var>selectiveIndexes</var> as <var>disclosed_indexes</var>,\n   a                                                   <var>nym_secret</var>,\n   a                                                   <var>nym_domain</var>,\n   the only value of the <var>committed_messages</var> array as <var>holder_secret</var>,\n   and a                                               <var>secret_prover_blind</var>.\nIn addition to\nproviding the raw cryptographic proof value which is assigned to <var>bbsProof</var>,\nit also returns the <var>pseudonym</var>.\n\nThis is for the\n<a href=\"https://w3c.github.io/vc-di-bbs/#holder-binding-and-pseudonyms\">Holder Binding and Pseudonyms</a>\nfeature option."
+            }
+          ]
+        },
+        {
+          "html": "If <var>featureOption</var> equals <code>\"anonymous_holder_binding\"</code>,\n<code>\"pseudonym\"</code>, or <code>\"holder_binding_pseudonym\"</code> set the <var>lengthBBSMessages</var>\nparameter to the length of the <var>bbsMessages</var> array."
+        },
+        {
+          "html": "Initialize <var>revealDocument</var> to the result of the \"selectJsonLd\" algorithm from\n[<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-di-ecdsa\" title=\"The Elliptic Curve Digital Signature Algorithm Cryptosuites v1.0\">DI-ECDSA</a></cite>], passing <code>document</code>, and <code>combinedPointers</code> as <code>pointers</code>."
+        },
+        {
+          "html": "Run the RDF Dataset Canonicalization Algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-rdf-canon\" title=\"RDF Dataset Canonicalization\">RDF-CANON</a></cite>] on\nthe joined <var>combinedGroup</var>.<var>deskolemizedNQuads</var>, passing any custom\noptions, and get the canonical bnode identifier map, <var>canonicalIdMap</var>.\nNote: This map includes the canonical blank node identifiers that a verifier\nwill produce when they canonicalize the reveal document."
+        },
+        {
+          "html": "Initialize <var>verifierLabelMap</var> to an empty map. This map will map\nthe canonical blank node identifiers produced by the verifier when they\ncanonicalize the revealed document, to the blank node identifiers that were\noriginally signed in the base proof."
+        },
+        {
+          "html": "For each key (<code>inputLabel</code>) and value (<code>verifierLabel</code>) in `canonicalIdMap:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Add an entry to <code>verifierLabelMap</code>, using <code>verifierLabel</code> as the key, and the\nvalue associated with <code>inputLabel</code> as a key in <code>labelMap</code> as the value."
+            }
+          ]
+        },
+        {
+          "html": "Return an object with properties matching <var>bbsProof</var>, \"verifierLabelMap\" for <var>labelMap</var>,\n<var>mandatoryIndexes</var>, <var>selectiveIndexes</var>, <var>revealDocument</var>, <var>pseudonym</var>, and, if\ncomputed, <var>lengthBBSMessages</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm compresses a label map. The required input is\nlabel map (<var>labelMap</var>). The output is a <em>compressed label map</em>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <code>map</code> to an empty map."
+        },
+        {
+          "html": "For each entry (<code>k</code>, <code>v</code>) in <code>labelMap</code>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Add an entry to <code>map</code>, with a key that is a base-10 integer parsed from the\ncharacters following the \"c14n\" prefix in <code>k</code>, and a value that is a base-10\ninteger parsed from the characters following the \"b\" prefix in <code>v</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <code>map</code> as <em>compressed label map</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm decompresses a label map. The required input is a\ncompressed label map (<var>compressedLabelMap</var>). The output is a\n<em>decompressed label map</em>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <code>map</code> to an empty map."
+        },
+        {
+          "html": "For each entry (<code>k</code>, <code>v</code>) in <code>compressedLabelMap</code>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Add an entry to <code>map</code>, with a key that adds the prefix \"c14n\" to <code>k</code>, and a value\nthat adds a prefix of \"b\" to <code>v</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <code>map</code> as <em>decompressed label map</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm serializes a derived proof value. The required inputs\nare a BBS proof (<var>bbsProof</var>), a label map (<var>labelMap</var>), an\narray of mandatory indexes (<var>mandatoryIndexes</var>), an array of\nselective indexes (<var>selectiveIndexes</var>), a BBS presentation header\n(<var>presentationHeader</var>), the <var>featureOption</var> indicator, and,\ndepending on the <var>featureOption</var> value, a <var>nym_domain</var>, <var>pseudonym</var>, and/or\n<var>lengthBBSMessages</var> value.\nA single <em>derived proof</em>\nvalue, serialized as a byte string, is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <code>compressedLabelMap</code> to the result of calling the algorithm in\nSection <a href=\"https://w3c.github.io/vc-di-bbs/#compresslabelmap\" class=\"sec-ref\"><bdi class=\"secno\">3.3.4 </bdi>compressLabelMap</a>, passing <code>labelMap</code> as the parameter."
+        },
+        {
+          "html": "Depending on the value of <var>featureOption</var> do the following:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If <var>featureOption</var> equals <code>\"baseline\"</code>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "Initialize <var>proofValue</var> to start with the\ndisclosure proof header bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x03</code>."
+                },
+                {
+                  "html": "Initialize <var>components</var> to an array with elements containing the values of\n<var>bbsProof</var>, <var>compressedLabelMap</var>, <var>mandatoryIndexes</var>, <var>selectiveIndexes</var>, and\n<var>presentationHeader</var>."
+                }
+              ]
+            },
+            {
+              "html": "If <var>featureOption</var> equals <code>\"anonymous_holder_binding\"</code>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "Initialize <var>proofValue</var> to start with the\ndisclosure proof header bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x05</code>."
+                },
+                {
+                  "html": "Initialize <var>components</var> to an array with elements containing the values of\n<var>bbsProof</var>, <var>compressedLabelMap</var>, <var>mandatoryIndexes</var>, <var>selectiveIndexes</var>,\n<var>presentationHeader</var>, and <var>lengthBBSMessages</var>."
+                }
+              ]
+            },
+            {
+              "html": "If <var>featureOption</var> equals <code>\"pseudonym\"</code>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "Initialize <var>proofValue</var> to start with the\ndisclosure proof header bytes: <code>0xd9</code>, <code>0x5d</code>, and <code>0x07</code>."
+                },
+                {
+                  "html": "Initialize <var>components</var> to an array with elements containing the values of\n<var>bbsProof</var>, <var>compressedLabelMap</var>, <var>mandatoryIndexes</var>, <var>selectiveIndexes</var>,\n<var>presentationHeader</var>, <var>nym_domain</var>, <var>pseudonym</var>, and <var>lengthBBSMessages</var>."
+                }
+              ]
+            },
+            {
+              "html": "If <var>featureOption</var> equals <code>\"holder_binding_pseudonym\"</code>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "Initialize <var>proofValue</var> to start with the\ndisclosure proof header bytes: <code>0xd9</code>, <code>0x5d</code>, and <code>0x09</code>."
+                },
+                {
+                  "html": "Initialize <var>components</var> to an array with elements containing the values of\n<var>bbsProof</var>, <var>compressedLabelMap</var>, <var>mandatoryIndexes</var>, <var>selectiveIndexes</var>,\n<var>presentationHeader</var>, <var>nym_domain</var>, <var>pseudonym</var>, and <var>lengthBBSMessages</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "CBOR-encode <var>components</var> per [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-rfc8949\" title=\"Concise Binary Object Representation (CBOR)\">RFC8949</a></cite>] where CBOR tagging <em class=\"rfc2119\">MUST NOT</em> be used on\nany of the <var>components</var>. Append the produced encoded value to <var>proofValue</var>."
+        },
+        {
+          "html": "Return the <em>derived proof</em> as a string with the\nmultibase-base64url-no-pad-encoding of <var>proofValue</var>. That is, return a string\nstarting with \"<code>u</code>\" and ending with the base64url-no-pad-encoded value of\n<code>proofValue</code>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm parses the components of the derived proof value.\nThe required input is a derived proof value (<var>proofValue</var>). A\nsingle <em>derived proof value</em> object is produced as output, which\ncontains a set of six to nine elements, having the names \"bbsProof\",\n\"labelMap\", \"mandatoryIndexes\", \"selectiveIndexes\", \"presentationHeader\",\n\"featureOption\", and, depending on the value of the <var>featureOption</var> parameter,\n\"nym_domain\", \"pseudonym\", and/or \"lengthBBSMessages\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the <code>proofValue</code> string does not start with\n<span class=\"codepoint\" translate=\"no\">\n  <bdi lang=\"en\"><code title=\"LATIN SMALL LETTER U\">u</code></bdi>\n  (<code class=\"codepoint\">U+0075</code>,\n  <code class=\"uname\">LATIN SMALL LETTER U</code>)</span>, indicating that\nit is a <code>multibase-base64url-no-pad-encoded</code> value,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Initialize <var>decodedProofValue</var> to the result of base64url-no-pad-decoding the\nsubstring that follows the leading <code>u</code> in <code>proofValue</code>."
+        },
+        {
+          "html": "Check that the BBS disclosure proof starts with an allowed header value and set\nthe <var>featureOption</var> variable as follows:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If the <var>decodedProofValue</var> starts with the header bytes <code>0xd9</code>, <code>0x5d</code>, and\n<code>0x03</code>, set <var>featureOption</var> to <code>\"baseline\"</code>."
+            },
+            {
+              "html": "If the <var>decodedProofValue</var> starts with the header bytes <code>0xd9</code>, <code>0x5d</code>, and\n<code>0x05</code>, set <var>featureOption</var> to <code>\"anonymous_holder_binding\"</code>."
+            },
+            {
+              "html": "If the <var>decodedProofValue</var> starts with the header bytes <code>0xd9</code>, <code>0x5d</code>, and\n<code>0x07</code>, set <var>featureOption</var> to <code>\"pseudonym\"</code>."
+            },
+            {
+              "html": "If the <var>decodedProofValue</var> starts with the header bytes <code>0xd9</code>, <code>0x5d</code>, and\n<code>0x09</code>, set <var>featureOption</var> to <code>\"holder_binding_pseudonym\"</code>."
+            }
+          ]
+        },
+        {
+          "html": "Initialize <code>components</code> to an array that is the result of CBOR-decoding the\nbytes that follow the three-byte BBS disclosure proof header. If the result\nis not an array of five, six, seven, or eight elements,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Replace the second element in <code>components</code> using the result of calling the\nalgorithm in Section <a href=\"https://w3c.github.io/vc-di-bbs/#decompresslabelmap\" class=\"sec-ref\"><bdi class=\"secno\">3.3.5 </bdi>decompressLabelMap</a>, passing the existing\nsecond element of <code>components</code> as <code>compressedLabelMap</code>."
+        },
+        {
+          "html": "Return <em>derived proof value</em> as an object with properties set to the five,\nsix, seven, or eight elements, using the names \"bbsProof\", \"labelMap\",\n\"mandatoryIndexes\", \"selectiveIndexes\", \"presentationHeader\", and optional\n\"nym_domain\", \"pseudonym\", and/or \"lengthBBSMessages\", respectively.\nIn addition, add <var>featureOption</var> and its value to the object."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm creates the data needed to perform verification of a\nBBS-protected <a data-cite=\"vc-data-model-2.0\" data-cite-path=\"\" data-cite-frag=\"dfn-verifiable-credential\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>. The inputs include a JSON-LD\ndocument (<var>document</var>), a BBS disclosure proof (<var>proof</var>),\nand any custom JSON-LD API options (such as a document loader). A single\n<em>verify data</em> object value is produced as output containing the following\nfields: <var>bbsProof</var>, <var>proofHash</var>, <var>mandatoryHash</var>, <var>selectiveIndexes</var>,\n<var>presentationHeader</var>, <var>nonMandatory</var>, <var>featureOption</var>, and, possibly,\n<var>pseudonym</var> and/or <var>lengthBBSMessages</var>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>proofHash</var> to the result of performing RDF Dataset Canonicalization\n[<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-rdf-canon\" title=\"RDF Dataset Canonicalization\">RDF-CANON</a></cite>] on the proof options, i.e., the proof  portion of the document\nwith the <var>proofValue</var> removed. The hash used is the same as that used in\nthe signature algorithm, i.e., SHA-256. Note: This step can be\nperformed in parallel; it only needs to be completed before this algorithm needs\nto use the <var>proofHash</var> value."
+        },
+        {
+          "html": "Initialize <var>bbsProof</var>, <var>labelMap</var>, <var>mandatoryIndexes</var>, <var>selectiveIndexes</var>,\n<var>presentationHeader</var>, <var>featureOption</var>, and, possibly, <var>pseudonym</var> and/or\n<var>lengthBBSMessages</var> to the values\nassociated with their property names in the\nobject returned when calling the algorithm in Section\n<a href=\"https://w3c.github.io/vc-di-bbs/#parsederivedproofvalue\" class=\"sec-ref\"><bdi class=\"secno\">3.3.7 </bdi>parseDerivedProofValue</a>, passing <var>proofValue</var> from <var>proof</var>."
+        },
+        {
+          "html": "Initialize <var>labelMapFactoryFunction</var> to the result of calling the\n\"<code>createLabelMapFunction</code>\" algorithm of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-di-ecdsa\" title=\"The Elliptic Curve Digital Signature Algorithm Cryptosuites v1.0\">DI-ECDSA</a></cite>], passing <var>labelMap</var>."
+        },
+        {
+          "html": "Initialize <var>nquads</var> to the result of calling the \"<code>labelReplacementCanonicalize</code>\"\nalgorithm of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-di-ecdsa\" title=\"The Elliptic Curve Digital Signature Algorithm Cryptosuites v1.0\">DI-ECDSA</a></cite>], passing <var>document</var>, <var>labelMapFactoryFunction</var>, and\nany custom\nJSON-LD API options. Note: This step transforms the document into an array of\ncanonical N-Quads with pseudorandom blank node identifiers based on <var>labelMap</var>."
+        },
+        {
+          "html": "Initialize <var>mandatory</var> to an empty array."
+        },
+        {
+          "html": "Initialize <var>nonMandatory</var> to an empty array."
+        },
+        {
+          "html": "For each entry (<var>index</var>, <var>nq</var>) in <var>nquads</var>, separate the N-Quads into mandatory\nand non-mandatory categories:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If <var>mandatoryIndexes</var> includes <var>index</var>, add <var>nq</var> to <var>mandatory</var>."
+            },
+            {
+              "html": "Otherwise, add <var>nq</var> to <var>nonMandatory</var>."
+            }
+          ]
+        },
+        {
+          "html": "Initialize <var>mandatoryHash</var> to the result of calling the \"<code>hashMandatory</code>\"\nprimitive, passing <var>mandatory</var>."
+        },
+        {
+          "html": "Return an object with properties matching <var>baseSignature</var>, <var>proofHash</var>,\n<var>nonMandatory</var>, <var>mandatoryHash</var>, <var>selectiveIndexes</var>, <var>featureOption</var>, and,\npossibly, <var>pseudonym</var> and/or <var>lengthBBSMessages</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <var>featureOption</var> parameter is used to indicate which optional feature, if\nany, is being used. It can take one of the following values: <code>\"baseline\"</code>,\n<code>\"anonymous_holder_binding\"</code>, <code>\"pseudonym\"</code>, or\n<code>\"holder_binding_pseudonym\"</code>. Note that <code>\"baseline\"</code> is used to denote the case of\nno optional features. If <var>featureOption</var> is set to\n<code>\"anonymous_holder_binding\"</code>, <code>\"pseudonym\"</code>, or <code>\"holder_binding_pseudonym\"</code>, the\n<var>commitment_with_proof</var> input <em class=\"rfc2119\">MUST</em> be supplied.\nIf <var>featureOption</var> is set to\n<code>\"pseudonym\"</code> or <code>\"holder_binding_pseudonym\"</code>, the\n<var>signer_nym_entropy</var> input <em class=\"rfc2119\">MUST</em> be supplied.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>proof</var> be a clone of the proof options, <var>options</var>."
+        },
+        {
+          "html": "Let <var>proofConfig</var> be the result of running the algorithm in\nSection <a href=\"https://w3c.github.io/vc-di-bbs/#base-proof-configuration-bbs-2023\" data-matched-text=\"[[[#base-proof-configuration-bbs-2023]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.4.4 </bdi>Base Proof Configuration (bbs-2023)</a> with\n<var>options</var> passed as a parameter."
+        },
+        {
+          "html": "Let <var>transformedData</var> be the result of running the algorithm in Section\n<a href=\"https://w3c.github.io/vc-di-bbs/#base-proof-transformation-bbs-2023\" data-matched-text=\"[[[#base-proof-transformation-bbs-2023]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.4.2 </bdi>Base Proof Transformation (bbs-2023)</a> with <var>unsecuredDocument</var>,\n<var>proofConfig</var>, and <var>options</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>hashData</var> be the result of running the algorithm in Section\n<a href=\"https://w3c.github.io/vc-di-bbs/#base-proof-hashing-bbs-2023\" data-matched-text=\"[[[#base-proof-hashing-bbs-2023]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.4.3 </bdi>Base Proof Hashing (bbs-2023)</a> with <var>transformedData</var> and <var>proofConfig</var>\npassed as a parameters."
+        },
+        {
+          "html": "Let <var>proofBytes</var> be the result of running the algorithm in Section\n<a href=\"https://w3c.github.io/vc-di-bbs/#base-proof-serialization-bbs-2023\" data-matched-text=\"[[[#base-proof-serialization-bbs-2023]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.4.5 </bdi>Base Proof Serialization (bbs-2023)</a> with <var>hashData</var>,\n<var>options</var>, <var>featureOption</var>, and, if required, <var>commitment_with_proof</var> passed as\nparameters."
+        },
+        {
+          "html": "Let <var>proof</var>.<var>proofValue</var> be a <a data-cite=\"VC-DATA-INTEGRITY#multibase-0\" href=\"https://www.w3.org/TR/vc-data-integrity/#multibase-0\">\nbase64url-encoded Multibase value</a> of the <var>proofBytes</var>."
+        },
+        {
+          "html": "Return <var>proof</var> as the <a data-link-type=\"dfn\" data-cite=\"vc-data-integrity\" data-cite-path=\"\" data-cite-frag=\"dfn-data-integrity-proof\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a>."
+        }
+      ]
+    },
+    {
+      "html": "Required inputs to this algorithm are an\n<a data-cite=\"vc-data-integrity#dfn-unsecured-data-document\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-unsecured-data-document\">\nunsecured data document</a> (<var>unsecuredDocument</var>) and\ntransformation options (<var>options</var>). The\ntransformation options <em class=\"rfc2119\">MUST</em> contain a type identifier for the\n<a data-cite=\"vc-data-integrity#dfn-cryptosuite\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-cryptosuite\">\ncryptographic suite</a> (<var>type</var>), a cryptosuite\nidentifier (<var>cryptosuite</var>), and a verification method\n(<var>verificationMethod</var>). The transformation options <em class=\"rfc2119\">MUST</em> contain an\narray of mandatory JSON pointers (<var>mandatoryPointers</var>) and <em class=\"rfc2119\">MAY</em> contain\nadditional options, such as a JSON-LD document loader. A <em>transformed data\ndocument</em> is produced as output. Whenever this algorithm encodes strings, it\n<em class=\"rfc2119\">MUST</em> use UTF-8 encoding.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>hmac</var> to an HMAC API using a locally generated and exportable HMAC\nkey. The HMAC uses the same hash algorithm used in the signature algorithm,\ni.e., SHA-256. Per the recommendations of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-rfc2104\" title=\"HMAC: Keyed-Hashing for Message Authentication\">RFC2104</a></cite>], the HMAC key <em class=\"rfc2119\">MUST</em> be the\nsame length as the digest size; for SHA-256, this is 256 bits or 32 bytes."
+        },
+        {
+          "html": "Initialize <code>labelMapFactoryFunction</code> to the result of calling the\n<code>createShuffledIdLabelMapFunction</code> algorithm passing <code>hmac</code> as <code>HMAC</code>."
+        },
+        {
+          "html": "Initialize <code>groupDefinitions</code> to a map with an entry with a key of the string\n\"<code>mandatory</code>\" and a value of <var>mandatoryPointers</var>."
+        },
+        {
+          "html": "Initialize <code>groups</code> to the result of calling the algorithm in\n<a href=\"https://www.w3.org/TR/vc-di-ecdsa/#canonicalizeandgroup\">Section 3.3.16\ncanonicalizeAndGroup</a> of the [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-di-ecdsa\" title=\"The Elliptic Curve Digital Signature Algorithm Cryptosuites v1.0\">DI-ECDSA</a></cite>] specification, passing\n<code>labelMapFactoryFunction</code>,\n<code>groupDefinitions</code>, <code>unsecuredDocument</code> as <code>document</code>, and any custom JSON-LD\nAPI options. Note: This step transforms the document into an array of canonical\nN-Quads whose order has been shuffled based on 'hmac' applied blank node\nidentifiers, and groups\nthe N-Quad strings according to selections based on JSON pointers."
+        },
+        {
+          "html": "Initialize <code>mandatory</code> to the values in the <code>groups.mandatory.matching</code> map."
+        },
+        {
+          "html": "Initialize <code>nonMandatory</code> to the values in the <code>groups.mandatory.nonMatching</code>\nmap."
+        },
+        {
+          "html": "Initialize <code>hmacKey</code> to the result of exporting the HMAC key from <code>hmac</code>."
+        },
+        {
+          "html": "Return an object with \"<code>mandatoryPointers</code>\" set to <code>mandatoryPointers</code>,\n\"<code>mandatory</code>\" set to <code>mandatory</code>, \"<code>nonMandatory</code>\" set to <code>nonMandatory</code>,\nand \"<code>hmacKey</code>\" set to <code>hmacKey</code>."
+        }
+      ]
+    },
+    {
+      "html": "The required inputs to this algorithm are a <em>transformed data document</em>\n(<var>transformedDocument</var>) and <em>canonical proof configuration</em>\n(<var>canonicalProofConfig</var>). A <em>hash data</em> value represented\nas an object is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <code>proofHash</code> to the result of calling the RDF Dataset Canonicalization\nalgorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-rdf-canon\" title=\"RDF Dataset Canonicalization\">RDF-CANON</a></cite>] on <code>canonicalProofConfig</code> and then cryptographically\nhashing the result using the same hash that is used by the signature algorithm,\ni.e., SHA-256. Note: This step can be performed in parallel;\nit only needs to be completed before this algorithm terminates, as the result is\npart of the return value."
+        },
+        {
+          "html": "Initialize <code>mandatoryHash</code> to the result of calling the the algorithm in\n<a href=\"https://www.w3.org/TR/vc-di-ecdsa/#hashmandatorynquads\">Section 3.3.17\nhashMandatoryNQuads</a> of the [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-di-ecdsa\" title=\"The Elliptic Curve Digital Signature Algorithm Cryptosuites v1.0\">DI-ECDSA</a></cite>] specification, passing\n<var>transformedDocument</var>.<code>mandatory</code> and using the SHA-256\nalgorithm."
+        },
+        {
+          "html": "Initialize <code>hashData</code> as a deep copy of <var>transformedDocument</var>, and\nadd <code>proofHash</code> as \"<code>proofHash</code>\" and <code>mandatoryHash</code> as \"<code>mandatoryHash</code>\" to that\nobject."
+        },
+        {
+          "html": "Return <code>hashData</code> as <em>hash data</em>."
+        }
+      ]
+    },
+    {
+      "html": "The required inputs to this algorithm are <em>proof options</em>\n(<var>options</var>) and the\n<a data-cite=\"vc-data-integrity#dfn-unsecured-data-document\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-unsecured-data-document\">unsecured data\ndocument</a> (<var>unsecuredDocument</var>). The <em>proof options</em> <em class=\"rfc2119\">MUST</em> contain a\ntype identifier for the\n<a data-cite=\"vc-data-integrity#dfn-cryptosuite\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-cryptosuite\">\ncryptographic suite</a> (<var>type</var>) and <em class=\"rfc2119\">MUST</em> contain a cryptosuite\nidentifier (<var>cryptosuite</var>). A <em>proof configuration</em>\nobject is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>proofConfig</var> be a clone of the <var>options</var> object."
+        },
+        {
+          "html": "If <var>proofConfig</var>.<var>type</var> is not set to <code>DataIntegrityProof</code> and/or\n<var>proofConfig</var>.<var>cryptosuite</var> is not set to <code>bbs-2023</code>, an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_GENERATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_GENERATION_ERROR\">PROOF_GENERATION_ERROR</a>."
+        },
+        {
+          "html": "If <var>proofConfig</var>.<var>created</var> is set and if the value is not a\nvalid [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-xmlschema11-2\" title=\"W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes\">XMLSCHEMA11-2</a></cite>] datetime, an error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an\nerror type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_GENERATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_GENERATION_ERROR\">PROOF_GENERATION_ERROR</a>."
+        },
+        {
+          "html": "Set <var>proofConfig</var>.<var>@context</var> to\n<var>unsecuredDocument</var>.<var>@context</var>."
+        },
+        {
+          "html": "Let <var>canonicalProofConfig</var> be the result of applying the RDF Dataset\nCanonicalization Algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-rdf-canon\" title=\"RDF Dataset Canonicalization\">RDF-CANON</a></cite>] to the <var>proofConfig</var>."
+        },
+        {
+          "html": "Return <var>canonicalProofConfig</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm, to be called by an issuer of a BBS-protected Verifiable\nCredential, specifies how to create a base proof. The base proof is to be\ngiven only to the holder, who is responsible for generating a derived proof from\nit, exposing only selectively disclosed details in the proof to a verifier. This\nalgorithm is designed to be used in conjunction with the algorithms defined\nin the Data Integrity [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-vc-data-integrity\" title=\"Verifiable Credential Data Integrity 1.0\">VC-DATA-INTEGRITY</a></cite>] specification,\n<a data-cite=\"vc-data-integrity#algorithms\" href=\"https://www.w3.org/TR/vc-data-integrity/#algorithms\">\nSection 4: Algorithms</a>. Required inputs are\ncryptographic hash data (<var>hashData</var>),\n<var>featureOption</var>, and, if required,\n<var>commitment_with_proof</var>.\nIf <var>featureOption</var> is set to <code>\"anonymous_holder_binding\"</code>,\n<code>\"pseudonym\"</code>, or <code>\"holder_binding_pseudonym\"</code>, the\n<var>commitment_with_proof</var> input <em class=\"rfc2119\">MUST</em> be supplied; if not supplied,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_GENERATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_GENERATION_ERROR\">PROOF_GENERATION_ERROR</a>.\nIf <var>featureOption</var> is set to\n<code>\"pseudonym\"</code> or <code>\"holder_binding_pseudonym\"</code>, the\n<var>signer_nym_entropy</var> input <em class=\"rfc2119\">MUST</em> be supplied; if not supplied,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_GENERATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_GENERATION_ERROR\">PROOF_GENERATION_ERROR</a>.\nA single <em>digital proof</em> value represented as series of bytes is produced\nas output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <code>proofHash</code>, <code>mandatoryPointers</code>, <code>mandatoryHash</code>, <code>nonMandatory</code>,\nand <code>hmacKey</code> to the values associated with their property names in\n<var>hashData</var>."
+        },
+        {
+          "html": "Initialize <code>bbsHeader</code> to the concatenation of <code>proofHash</code> and <code>mandatoryHash</code> in\nthat order."
+        },
+        {
+          "html": "Initialize <code>bbsMessages</code> to an array of byte arrays containing the values in the\n<code>nonMandatory</code> array of strings encoded using the UTF-8 <a data-cite=\"i18n-glossary\" data-cite-path=\"\" data-cite-frag=\"dfn-character-encoding\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/i18n-glossary/#dfn-character-encoding\">character encoding</a>."
+        },
+        {
+          "html": "Compute the <code>bbsSignature</code> using the procedures below, dependent on the values\nof <var>featureOption</var>.",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If <var>featureOption</var> equals <code>\"baseline\"</code>, compute the\n<code>bbsSignature</code> using the <code>Sign</code> procedure of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-cfrg-bbs-signature\" title=\"The BBS Signature Scheme\">CFRG-BBS-Signature</a></cite>],\nwith appropriate key material, <var>bbsHeader</var> for the <code>header</code>, and <var>bbsMessages</var>\nfor the <code>messages</code>."
+            },
+            {
+              "html": "If <var>featureOption</var> equals <code>\"anonymous_holder_binding\"</code> , compute the\n<code>bbsSignature</code> using the <code>BlindSign</code> procedure of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-cfrg-blind-bbs-signature\" title=\"Blind BBS Signatures\">CFRG-Blind-BBS-Signature</a></cite>],\nwith appropriate key material, <var>commitment_with_proof</var> for the\n<code>commitment_with_proof</code>, <var>bbsHeader</var> for the <code>header</code>, and <var>bbsMessages</var>\nfor the <code>messages</code>. This provides for the\n<a href=\"https://w3c.github.io/vc-di-bbs/#anonymous-holder-binding\">Anonymous Holder Binding</a> feature."
+            },
+            {
+              "html": "If <var>featureOption</var> equals <code>\"pseudonym\"</code> or <code>\"holder_binding_pseudonym\"</code>,\nthe issuer generates a\ncryptographically random value for the <var>signer_nym_entropy</var> and computes the\n<code>bbsSignature</code> using the\n\"Blind Issuance\" operation from [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-cfrg-pseudonym-bbs-signature\" title=\"BBS per Verifier Linkability\">CFRG-Pseudonym-BBS-Signature</a></cite>]\nwith\n                                appropriate key material,\n            <var>bbsHeader</var> for the <code>header</code>,\n          <var>bbsMessages</var> for the <code>messages</code>,\n<var>commitment_with_proof</var> for the <code>commitment_with_proof</code>, and\n                                <var>signer_nym_entropy</var> values.\nIf the issuer might ever need to reissue a\ncredential to this holder that is bound to the same <var>nym_secret</var>, they should\nretain the <var>signer_nym_entropy</var> value; otherwise, this value can be discarded.\n<br><br>\nThis provides for the <a href=\"https://w3c.github.io/vc-di-bbs/#credential-bound-pseudonyms\">Credential-Bound\nPseudonyms</a>  or <a href=\"https://w3c.github.io/vc-di-bbs/#holder-binding-and-pseudonyms\">Holder Binding and\nPseudonyms</a> features."
+            }
+          ]
+        },
+        {
+          "html": "Initialize `proofValue to the result of calling the algorithm in Section\n<a href=\"https://w3c.github.io/vc-di-bbs/#serializebaseproofvalue\" class=\"sec-ref\"><bdi class=\"secno\">3.3.1 </bdi>serializeBaseProofValue</a>, passing <var>bbsSignature</var>, <var>bbsHeader</var>,\n<var>publicKey</var>, <var>hmacKey</var>, <var>mandatoryPointers</var>, <var>featureOption</var>, and, depending on\nthe <var>featureOption</var> value, <var>signer_nym_entropy</var>, as parameters.\n<br><br>\nNote: <code>publicKey</code> is a byte array of the public key, encoded according to\n[<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-cfrg-bbs-signature\" title=\"The BBS Signature Scheme\">CFRG-BBS-SIGNATURE</a></cite>]."
+        },
+        {
+          "html": "Return <code>proofValue</code> as <em>digital proof</em>."
+        }
+      ]
+    },
+    {
+      "html": "If <var>featureOption</var> equals <code>\"holder_binding_pseudonym\"</code>, the <em class=\"rfc2119\">REQUIRED</em>\nadditional inputs are <var>holder_secret</var>, <var>prover_nym</var>, and <var>proverBlind</var>, which are\nall known to the holder, and <var>nym_dofmain</var>, which is either set by the holder or\ncommunicated to the holder by the verifier.\nSee <a href=\"https://w3c.github.io/vc-di-bbs/#holder-binding-and-pseudonyms\">Holder Binding and Pseudonyms</a> for\nbackground information.",
+      "rationale": "initialize",
+      "steps": [
+        {
+          "html": "Initialize <var>bbsProof</var>,  <var>labelMap</var>, <var>mandatoryIndexes</var>, <var>selectiveIndexes</var>, and\n<var>revealDocument</var> to the values associated with their\nproperty names in the object returned when calling the algorithm in\nSection <a href=\"https://w3c.github.io/vc-di-bbs/#createdisclosuredata\" class=\"sec-ref\"><bdi class=\"secno\">3.3.3 </bdi>createDisclosureData</a>, passing the <var>document</var>, <var>proof</var>,\n<var>selectivePointers</var>, <var>presentationHeader</var>, <var>featureOption</var>, required additional\ninputs based on the <var>featureOption</var>, and any custom JSON-LD API options,\nsuch as a document loader."
+        },
+        {
+          "html": "Initialize <var>newProof</var> to a shallow copy of <var>proof</var>."
+        },
+        {
+          "html": "Replace <var>proofValue</var> in <var>newProof</var> with the result of calling the algorithm\nin Section <a href=\"https://w3c.github.io/vc-di-bbs/#serializederivedproofvalue\" class=\"sec-ref\"><bdi class=\"secno\">3.3.6 </bdi>serializeDerivedProofValue</a>, passing <var>bbsProof</var>,\n<var>labelMap</var>, <var>mandatoryIndexes</var>, <var>selectiveIndexes</var>, <var>featureOption</var>, and any\nrequired inputs indicated by the <var>featureOption</var>."
+        },
+        {
+          "html": "Set the value of the \"<code>proof</code>\" property in <var>revealDocument</var> to <var>newProof</var>."
+        },
+        {
+          "html": "Return <var>revealDocument</var> as the <em>selectively revealed document</em>."
+        }
+      ]
+    },
+    {
+      "html": "To verify a derived proof, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>publicKeyBytes</var> be the result of retrieving the\npublic key bytes associated with the\n<var>proof</var>.<var>verificationMethod</var> value as described in the\nData Integrity [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-vc-data-integrity\" title=\"Verifiable Credential Data Integrity 1.0\">VC-DATA-INTEGRITY</a></cite>] specification,\n<a data-cite=\"vc-data-integrity#algorithms\" href=\"https://www.w3.org/TR/vc-data-integrity/#algorithms\">\nSection 4: Retrieve Verification Method</a>."
+        },
+        {
+          "html": "Let <var>unsecuredDocument</var> be a copy of <var>securedDocument</var> with\nthe <code>proof</code> value removed."
+        },
+        {
+          "html": "Let <var>proof</var> be the value of <var>securedDocument</var>.<var>proof</var>."
+        },
+        {
+          "html": "Initialize <var>bbsProof</var>, <var>proofHash</var>, <var>mandatoryHash</var>, <var>selectiveIndexes</var>,\n<var>presentationHeader</var>, <var>nonMandatory</var>, <var>featureOption</var>, and, possibly,\n<var>lengthBBSMessages</var> and/or <var>pseudonym</var>, to the values associated\nwith their property names in the object returned when calling the algorithm in\nSection <a href=\"https://w3c.github.io/vc-di-bbs/#createverifydata\" class=\"sec-ref\"><bdi class=\"secno\">3.3.8 </bdi>createVerifyData</a>, passing the <var>unsecuredDocument</var>,\n<var>proof</var>, and any custom JSON-LD API options (such as a document loader)."
+        },
+        {
+          "html": "Initialize <var>bbsHeader</var> to the concatenation of <var>proofHash</var> and <var>mandatoryHash</var>\nin that order. Initialize <var>disclosedMessages</var> to an array of byte arrays\nobtained from the UTF-8 encoding of the elements of the <var>nonMandatory</var> array."
+        },
+        {
+          "html": "Initialize <var>verified</var> to the result of applying the verification\nalgorithm below, depending the <var>featureOption</var> value.",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If the <var>featureOption</var> equals <code>\"baseline\"</code>, initialize <var>verified</var> to the result of\napplying the verification algorithm <code>ProofVerify(PK, proof, header, ph,\ndisclosed_messages, disclosed_indexes)</code> of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-cfrg-bbs-signature\" title=\"The BBS Signature Scheme\">CFRG-BBS-SIGNATURE</a></cite>] with <code>PK</code> set\nas the public key of the original issuer, <code>proof</code> set as <code>bbsProof</code>, <code>header</code>\nset as <code>bbsHeader</code>, <code>disclosed_messages</code> set as <code>disclosedMessages</code>, <code>ph</code> set as\n<code>presentationHeader</code>, and <code>disclosed_indexes</code> set as <code>selectiveIndexes</code>."
+            },
+            {
+              "html": "If the <var>featureOption</var> equals <code>\"anonymous_holder_binding\"</code>,\ninitialize <var>verified</var> to the result of\napplying the <code>ProofVerify</code> verification algorithm of\n[<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-cfrg-blind-bbs-signature\" title=\"Blind BBS Signatures\">CFRG-Blind-BBS-Signature</a></cite>] using <var>lengthBBSMessages</var> for the <code>\"L\"</code> parameter."
+            },
+            {
+              "html": "If the <var>featureOption</var> equals <code>\"pseudonym\"</code> or <code>\"holder_binding_pseudonym\"</code>,\ninitialize <var>verified</var>\nto the result of applying the\n\"Proof Verification with Pseudonym\" operation from\n[<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-di-bbs/#bib-cfrg-pseudonym-bbs-signature\" title=\"BBS per Verifier Linkability\">CFRG-Pseudonym-BBS-Signature</a></cite>] using <var>lengthBBSMessages</var> for the <code>\"L\"</code>\nparameter and an empty <var>committed_messages</var> array."
+            }
+          ]
+        },
+        {
+          "html": "Return a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-di-bbs/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-1\">verification result</a> with <a data-link-type=\"dfn\" data-link-for=\"struct\" data-xref-for=\"struct\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"struct-item\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a>:\n              <dl data-link-for=\"verification result\">\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-di-bbs/#dfn-verified\" class=\"internalDFN\" id=\"ref-for-dfn-verified-2\">verified</a></dt>\n                <dd><var>verified</var></dd>\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-di-bbs/#dfn-verifieddocument\" class=\"internalDFN\" id=\"ref-for-dfn-verifieddocument-1\">verifiedDocument</a></dt>\n                <dd>\n<var>unsecuredDocument</var> if <var>verified</var> is <code>true</code>, otherwise\n<a data-cite=\"INFRA#nulls\" href=\"https://infra.spec.whatwg.org/#nulls\">Null</a>\n                </dd>\n              </dl>"
+        }
+      ]
+    }
+  ]
+}

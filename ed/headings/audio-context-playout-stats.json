@@ -1,0 +1,263 @@
+{
+  "spec": {
+    "title": "Playout Statistics API for WebAudio",
+    "url": "https://wicg.github.io/audio-context-playout-stats/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#title",
+      "level": 1,
+      "title": "Playout Statistics API for WebAudio"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "extension-of-the-audiocontext-interface",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#extension-of-the-audiocontext-interface",
+      "level": 2,
+      "title": "Extension of the AudioContext interface",
+      "alternateIds": [
+        "x2-extension-of-the-audiocontext-interface"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "attributes",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#attributes",
+      "level": 3,
+      "title": "Attributes",
+      "alternateIds": [
+        "x2-1-attributes"
+      ],
+      "number": "2.1"
+    },
+    {
+      "id": "playoutstats-attribute",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#playoutstats-attribute",
+      "level": 4,
+      "title": "playoutStats attribute",
+      "alternateIds": [
+        "x2-1-1-playoutstats-attribute"
+      ],
+      "number": "2.1.1"
+    },
+    {
+      "id": "audioplayoutstats-interface",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#audioplayoutstats-interface",
+      "level": 2,
+      "title": "AudioPlayoutStats interface",
+      "alternateIds": [
+        "x3-audioplayoutstats-interface"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "attributes-0",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#attributes-0",
+      "level": 3,
+      "title": "Attributes",
+      "alternateIds": [
+        "x3-1-attributes"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "fallbackframesduration-attribute",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#fallbackframesduration-attribute",
+      "level": 4,
+      "title": "fallbackFramesDuration attribute",
+      "alternateIds": [
+        "x3-1-1-fallbackframesduration-attribute"
+      ],
+      "number": "3.1.1"
+    },
+    {
+      "id": "fallbackframesevents-attribute",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#fallbackframesevents-attribute",
+      "level": 4,
+      "title": "fallbackFramesEvents attribute",
+      "alternateIds": [
+        "x3-1-2-fallbackframesevents-attribute"
+      ],
+      "number": "3.1.2"
+    },
+    {
+      "id": "totalframesduration-attribute",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#totalframesduration-attribute",
+      "level": 4,
+      "title": "totalFramesDuration attribute",
+      "alternateIds": [
+        "x3-1-3-totalframesduration-attribute"
+      ],
+      "number": "3.1.3"
+    },
+    {
+      "id": "averagelatency-attribute",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#averagelatency-attribute",
+      "level": 4,
+      "title": "averageLatency attribute",
+      "alternateIds": [
+        "x3-1-4-averagelatency-attribute"
+      ],
+      "number": "3.1.4"
+    },
+    {
+      "id": "minimumlatency-attribute",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#minimumlatency-attribute",
+      "level": 4,
+      "title": "minimumLatency attribute",
+      "alternateIds": [
+        "x3-1-5-minimumlatency-attribute"
+      ],
+      "number": "3.1.5"
+    },
+    {
+      "id": "maximumlatency-attribute",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#maximumlatency-attribute",
+      "level": 4,
+      "title": "maximumLatency attribute",
+      "alternateIds": [
+        "x3-1-6-maximumlatency-attribute"
+      ],
+      "number": "3.1.6"
+    },
+    {
+      "id": "methods",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#methods",
+      "level": 3,
+      "title": "Methods",
+      "alternateIds": [
+        "x3-2-methods"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "resetlatency-method",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#resetlatency-method",
+      "level": 4,
+      "title": "resetLatency method",
+      "alternateIds": [
+        "x3-2-1-resetlatency-method"
+      ],
+      "number": "3.2.1"
+    },
+    {
+      "id": "internal-algorithms",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#internal-algorithms",
+      "level": 3,
+      "title": "Internal algorithms",
+      "alternateIds": [
+        "x3-3-internal-algorithms"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "usage",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#usage",
+      "level": 2,
+      "title": "Usage Example",
+      "alternateIds": [
+        "x4-usage-example"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "security-privacy-considerations",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#security-privacy-considerations",
+      "level": 2,
+      "title": "Security & Privacy considerations",
+      "alternateIds": [
+        "x5-security-privacy-considerations"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "covert-channel",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#covert-channel",
+      "level": 3,
+      "title": "Covert channel",
+      "alternateIds": [
+        "x5-1-covert-channel"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "mitigations-0",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#mitigations-0",
+      "level": 3,
+      "title": "Mitigations",
+      "alternateIds": [
+        "mitigations"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "rate-limiting",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#rate-limiting",
+      "level": 4,
+      "title": "Rate-limiting",
+      "alternateIds": [
+        "x5-2-1-rate-limiting"
+      ],
+      "number": "5.2.1"
+    },
+    {
+      "id": "restricting-api-access",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#restricting-api-access",
+      "level": 4,
+      "title": "Restricting API access",
+      "alternateIds": [
+        "x5-2-2-restricting-api-access"
+      ],
+      "number": "5.2.2"
+    },
+    {
+      "id": "future-mitigations",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#future-mitigations",
+      "level": 4,
+      "title": "Future mitigations",
+      "alternateIds": [
+        "x5-2-3-future-mitigations"
+      ],
+      "number": "5.2.3"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "a-references"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "a-1-informative-references"
+      ],
+      "number": "A.1"
+    }
+  ]
+}

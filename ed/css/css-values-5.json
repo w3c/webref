@@ -44,7 +44,8 @@
       "name": "<boolean-expr>",
       "prose": "Several contexts (such as @media, @supports, if(), ...) specify conditions, and allow combining those conditions with boolean logic (and/or/not/grouping). Because they use the same non-trivial recursive syntax structure, the special <boolean-expr> production represents this pattern generically.",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-boolean-expr",
-      "type": "type"
+      "type": "type",
+      "value": "not <boolean-expr-group> | <boolean-expr-group> [ [ and <boolean-expr-group> ]* | [ or <boolean-expr-group> ]* ]"
     },
     {
       "name": "<syntax>",
@@ -401,8 +402,13 @@
           "value": "by"
         },
         {
-          "name": "<input-position>{1,2} : <output-value>",
-          "value": "<input-position>",
+          "name": "<input-position>",
+          "value": "<percentage> | <number> | <dimension>",
+          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
+          "type": "type"
+        },
+        {
+          "name": "<output-value>",
           "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
           "type": "type"
         },
@@ -436,8 +442,13 @@
           "value": "by"
         },
         {
-          "name": "<input-position>{1,2} : <output-value>",
-          "value": "<input-position>",
+          "name": "<input-position>",
+          "value": "<percentage> | <number> | <dimension>",
+          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
+          "type": "type"
+        },
+        {
+          "name": "<output-value>",
           "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
           "type": "type"
         },
@@ -471,8 +482,13 @@
           "value": "by"
         },
         {
-          "name": "<input-position>{1,2} : <output-value>",
-          "value": "<input-position>",
+          "name": "<input-position>",
+          "value": "<percentage> | <number> | <dimension>",
+          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
+          "type": "type"
+        },
+        {
+          "name": "<output-value>",
           "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
           "type": "type"
         },
@@ -506,8 +522,13 @@
           "value": "by"
         },
         {
-          "name": "<input-position>{1,2} : <output-value>",
-          "value": "<input-position>",
+          "name": "<input-position>",
+          "value": "<percentage> | <number> | <dimension>",
+          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
+          "type": "type"
+        },
+        {
+          "name": "<output-value>",
           "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
           "type": "type"
         },
@@ -525,6 +546,11 @@
           "type": "type"
         }
       ]
+    },
+    {
+      "name": "<whole-value>",
+      "href": "https://drafts.csswg.org/css-values-5/#whole-value",
+      "type": "type"
     },
     {
       "name": "first-valid()",
@@ -757,11 +783,6 @@
   "warnings": [
     {
       "msg": "Missing definition",
-      "name": "]>",
-      "value": "not <boolean-expr-group> | <boolean-expr-group> [ [ and <boolean-expr-group> ]* | [ or <boolean-expr-group> ]* ]"
-    },
-    {
-      "msg": "Missing definition",
       "name": "<boolean-expr-group>",
       "value": "<test> | ( <boolean-expr[ <test> ]> ) | <general-enclosed>"
     },
@@ -779,11 +800,6 @@
       "msg": "Missing definition",
       "name": "interpolate-function()",
       "value": "interpolate-function( [ <progress-source> && [ by <easing-function> ]? && <easing-function>? && <segment-options>? ] , <input-position>{1,2} : <output-value> , [ [ <easing-function> || <segment-options> ]? , <input-position>{1,2} : <output-value> ]#? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "<input-position>",
-      "value": "<percentage> | <number> | <dimension>"
     }
   ]
 }
