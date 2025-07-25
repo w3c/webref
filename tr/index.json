@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-07-24T01:37:04.578Z",
+  "date": "2025-07-25T01:54:45.553Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -26,7 +26,6 @@
       "css-typed-om-2",
       "font-metrics-api-1",
       "css-backgrounds-4",
-      "css-borders-4",
       "css-color-6",
       "css-conditional-values-1",
       "css-env-1",
@@ -188,6 +187,7 @@
       "anonymous-iframe",
       "aom",
       "attribution-reporting-api",
+      "audio-context-playout-stats",
       "background-fetch",
       "background-sync",
       "capability-delegation",
@@ -344,6 +344,7 @@
       "css-animations-1",
       "css-animations-2",
       "css-backgrounds-3",
+      "css-borders-4",
       "css-box-3",
       "css-box-4",
       "css-break-3",
@@ -621,8 +622,11 @@
       "uievents",
       "upgrade-insecure-requests",
       "user-timing",
+      "vc-bitstring-status-list",
       "vc-data-integrity",
       "vc-data-model-2.0",
+      "vc-di-bbs",
+      "vc-di-ecdsa",
       "vibration",
       "virtual-keyboard",
       "vocab-dcat-3",
@@ -711,10 +715,10 @@
     ]
   },
   "stats": {
-    "crawled": 377,
+    "crawled": 381,
     "errors": 0
   },
-  "crawler": "reffy-19.1.2",
+  "crawler": "reffy-19.1.5",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -760,7 +764,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "24 July 2025",
+      "date": "25 July 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -780,7 +784,7 @@
       "groups": [
         {
           "name": "Accessible Platform Architectures Working Group",
-          "url": "https://www.w3.org/WAI/APA/"
+          "url": "https://www.w3.org/WAI/about/groups/apawg/"
         }
       ],
       "release": {
@@ -907,7 +911,7 @@
       "groups": [
         {
           "name": "Accessible Rich Internet Applications Working Group",
-          "url": "https://www.w3.org/WAI/ARIA/"
+          "url": "https://www.w3.org/WAI/about/groups/ariawg/"
         }
       ],
       "release": {
@@ -972,7 +976,7 @@
       "groups": [
         {
           "name": "Accessibility Guidelines Working Group",
-          "url": "https://www.w3.org/WAI/GL/"
+          "url": "https://www.w3.org/WAI/about/groups/agwg/"
         }
       ],
       "release": {
@@ -2128,7 +2132,7 @@
       "groups": [
         {
           "name": "Accessible Rich Internet Applications Working Group",
-          "url": "https://www.w3.org/WAI/ARIA/"
+          "url": "https://www.w3.org/WAI/about/groups/ariawg/"
         }
       ],
       "release": {
@@ -2966,6 +2970,75 @@
       "dfns": "dfns/css-backgrounds-3.json",
       "headings": "headings/css-backgrounds-3.json",
       "ids": "ids/css-backgrounds-3.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/css-borders-4/",
+      "seriesComposition": "full",
+      "shortname": "css-borders-4",
+      "series": {
+        "shortname": "css-borders",
+        "currentSpecification": "css-borders-4",
+        "title": "CSS Borders and Box Decorations Module",
+        "shortTitle": "CSS Borders and Box Decorations",
+        "releaseUrl": "https://www.w3.org/TR/css-borders/",
+        "nightlyUrl": "https://drafts.csswg.org/css-borders/"
+      },
+      "seriesVersion": "4",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-borders-4/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-borders-4/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-borders-4/",
+          "https://w3c.github.io/csswg-drafts/css-borders/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-borders-4/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Borders and Box Decorations Module Level 4",
+      "source": "w3c",
+      "shortTitle": "CSS Borders and Box Decorations 4",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-borders"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/css-borders-4/",
+        "https://drafts.csswg.org/css-borders-4/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-borders-4/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 16 Jul 2025 18:06:23 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "22 July 2025",
+      "revision": "802af88997ac89d06d7626abf56e777b0437f1d3",
+      "algorithms": "algorithms/css-borders-4.json",
+      "links": "links/css-borders-4.json",
+      "refs": "refs/css-borders-4.json",
+      "css": "css/css-borders.json",
+      "dfns": "dfns/css-borders-4.json",
+      "headings": "headings/css-borders-4.json",
+      "ids": "ids/css-borders-4.json",
       "cddl": []
     },
     {
@@ -10520,7 +10593,7 @@
       "groups": [
         {
           "name": "Accessible Rich Internet Applications Working Group",
-          "url": "https://www.w3.org/WAI/ARIA/"
+          "url": "https://www.w3.org/WAI/about/groups/ariawg/"
         }
       ],
       "release": {
@@ -10580,7 +10653,7 @@
       "groups": [
         {
           "name": "Accessible Rich Internet Applications Working Group",
-          "url": "https://www.w3.org/WAI/ARIA/"
+          "url": "https://www.w3.org/WAI/about/groups/ariawg/"
         }
       ],
       "release": {
@@ -12438,7 +12511,7 @@
       "groups": [
         {
           "name": "Accessible Rich Internet Applications Working Group",
-          "url": "https://www.w3.org/WAI/ARIA/"
+          "url": "https://www.w3.org/WAI/about/groups/ariawg/"
         }
       ],
       "release": {
@@ -12501,7 +12574,7 @@
       "groups": [
         {
           "name": "Accessible Rich Internet Applications Working Group",
-          "url": "https://www.w3.org/WAI/ARIA/"
+          "url": "https://www.w3.org/WAI/about/groups/ariawg/"
         }
       ],
       "release": {
@@ -12697,7 +12770,7 @@
       "groups": [
         {
           "name": "Accessible Rich Internet Applications Working Group",
-          "url": "https://www.w3.org/WAI/ARIA/"
+          "url": "https://www.w3.org/WAI/about/groups/ariawg/"
         }
       ],
       "release": {
@@ -12761,7 +12834,7 @@
       "groups": [
         {
           "name": "Accessible Rich Internet Applications Working Group",
-          "url": "https://www.w3.org/WAI/ARIA/"
+          "url": "https://www.w3.org/WAI/about/groups/ariawg/"
         }
       ],
       "release": {
@@ -12942,7 +13015,7 @@
       "groups": [
         {
           "name": "Internationalization Working Group",
-          "url": "https://www.w3.org/International/core/"
+          "url": "https://www.w3.org/International/i18n-activity/i18n-wg/"
         }
       ],
       "release": {
@@ -20788,6 +20861,61 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/vc-bitstring-status-list/",
+      "seriesComposition": "full",
+      "shortname": "vc-bitstring-status-list",
+      "series": {
+        "shortname": "vc-bitstring-status-list",
+        "currentSpecification": "vc-bitstring-status-list",
+        "title": "Bitstring Status List",
+        "shortTitle": "Bitstring Status List",
+        "releaseUrl": "https://www.w3.org/TR/vc-bitstring-status-list/",
+        "nightlyUrl": "https://w3c.github.io/vc-bitstring-status-list/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-bitstring-status-list/",
+        "status": "Recommendation",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-bitstring-status-list/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-bitstring-status-list",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Bitstring Status List v1.0",
+      "source": "w3c",
+      "shortTitle": "Bitstring Status List v1.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-bitstring-status-list/",
+        "https://w3c.github.io/vc-bitstring-status-list/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-bitstring-status-list/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 05 May 2025 14:01:16 GMT"
+      },
+      "generator": "respec",
+      "date": "15 May 2025",
+      "algorithms": "algorithms/vc-bitstring-status-list.json",
+      "links": "links/vc-bitstring-status-list.json",
+      "refs": "refs/vc-bitstring-status-list.json",
+      "dfns": "dfns/vc-bitstring-status-list.json",
+      "headings": "headings/vc-bitstring-status-list.json",
+      "ids": "ids/vc-bitstring-status-list.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/vc-data-integrity/",
       "seriesComposition": "full",
       "shortname": "vc-data-integrity",
@@ -20896,6 +21024,117 @@
       "dfns": "dfns/vc-data-model-2.0.json",
       "headings": "headings/vc-data-model-2.0.json",
       "ids": "ids/vc-data-model-2.0.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/vc-di-bbs/",
+      "seriesComposition": "full",
+      "shortname": "vc-di-bbs",
+      "series": {
+        "shortname": "vc-di-bbs",
+        "currentSpecification": "vc-di-bbs",
+        "title": "BBS Cryptosuite",
+        "shortTitle": "BBS Cryptosuite",
+        "releaseUrl": "https://www.w3.org/TR/vc-di-bbs/",
+        "nightlyUrl": "https://w3c.github.io/vc-di-bbs/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-di-bbs/",
+        "status": "Candidate Recommendation Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-di-bbs/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-di-bbs",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Data Integrity BBS Cryptosuites v1.0",
+      "source": "w3c",
+      "shortTitle": "Data Integrity BBS Cryptosuites v1.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-di-bbs/",
+        "https://w3c.github.io/vc-di-bbs/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-di-bbs/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 03 Apr 2025 16:30:48 GMT"
+      },
+      "generator": "respec",
+      "date": "03 April 2025",
+      "revision": "e33bf8be5929e1f25527608f854023af467e3296",
+      "algorithms": "algorithms/vc-di-bbs.json",
+      "links": "links/vc-di-bbs.json",
+      "refs": "refs/vc-di-bbs.json",
+      "dfns": "dfns/vc-di-bbs.json",
+      "headings": "headings/vc-di-bbs.json",
+      "ids": "ids/vc-di-bbs.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/vc-di-ecdsa/",
+      "seriesComposition": "full",
+      "shortname": "vc-di-ecdsa",
+      "series": {
+        "shortname": "vc-di-ecdsa",
+        "currentSpecification": "vc-di-ecdsa",
+        "title": "ECDSA Cryptosuite",
+        "shortTitle": "ECDSA Cryptosuite",
+        "releaseUrl": "https://www.w3.org/TR/vc-di-ecdsa/",
+        "nightlyUrl": "https://w3c.github.io/vc-di-ecdsa/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-di-ecdsa/",
+        "status": "Recommendation",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-di-ecdsa/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-di-ecdsa",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Data Integrity ECDSA Cryptosuites v1.0",
+      "source": "w3c",
+      "shortTitle": "Data Integrity ECDSA Cryptosuites v1.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-di-ecdsa/",
+        "https://w3c.github.io/vc-di-ecdsa/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-di-ecdsa/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 05 May 2025 13:46:59 GMT"
+      },
+      "generator": "respec",
+      "date": "15 May 2025",
+      "algorithms": "algorithms/vc-di-ecdsa.json",
+      "links": "links/vc-di-ecdsa.json",
+      "refs": "refs/vc-di-ecdsa.json",
+      "dfns": "dfns/vc-di-ecdsa.json",
+      "headings": "headings/vc-di-ecdsa.json",
+      "ids": "ids/vc-di-ecdsa.json",
       "cddl": []
     },
     {
@@ -21312,7 +21551,7 @@
       "groups": [
         {
           "name": "Accessible Rich Internet Applications Working Group",
-          "url": "https://www.w3.org/WAI/ARIA/"
+          "url": "https://www.w3.org/WAI/about/groups/ariawg/"
         }
       ],
       "release": {
@@ -21377,7 +21616,7 @@
       "groups": [
         {
           "name": "Accessible Rich Internet Applications Working Group",
-          "url": "https://www.w3.org/WAI/ARIA/"
+          "url": "https://www.w3.org/WAI/about/groups/ariawg/"
         }
       ],
       "release": {
@@ -24589,11 +24828,11 @@
       ],
       "crawled": "https://www.w3.org/TR/WGSL/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 23 Jul 2025 19:14:32 GMT"
+        "lastModified": "Thu, 24 Jul 2025 20:11:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "23 July 2025",
-      "revision": "e5c6c0b6cb81ac9409f66d99abdb519c5a294886",
+      "date": "24 July 2025",
+      "revision": "7fb65ae44ef3cdb15a9d6ac45fd01dcafb3c7636",
       "algorithms": "algorithms/WGSL.json",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",

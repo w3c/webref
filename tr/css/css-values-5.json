@@ -438,6 +438,11 @@
       "value": "mix( <progress> , <whole-value> , <whole-value> ) | mix( <progress> && of <keyframes-name> )"
     },
     {
+      "name": "<whole-value>",
+      "href": "https://www.w3.org/TR/css-values-5/#whole-value",
+      "type": "type"
+    },
+    {
       "name": "first-valid()",
       "prose": "The first-valid() functional notation inlines the fallback behavior intrinsic to parsing declarations. Unlike most notations, it can accept any valid or invalid syntax in its arguments, and represents the first value among its arguments that is supported (parsed as valid) by the UA as the whole value of the property it’s used in.",
       "href": "https://www.w3.org/TR/css-values-5/#funcdef-first-valid",
@@ -589,7 +594,7 @@
   "warnings": [
     {
       "msg": "Missing definition",
-      "name": "]>",
+      "name": "<boolean-expr>",
       "value": "not <boolean-expr-group> | <boolean-expr-group> [ [ and <boolean-expr-group> ]* | [ or <boolean-expr-group> ]* ]"
     },
     {

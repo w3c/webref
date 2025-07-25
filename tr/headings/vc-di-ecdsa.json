@@ -1,0 +1,889 @@
+{
+  "spec": {
+    "title": "Data Integrity ECDSA Cryptosuites v1.0",
+    "url": "https://www.w3.org/TR/vc-di-ecdsa/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#title",
+      "level": 1,
+      "title": "Data Integrity ECDSA Cryptosuites v1.0"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#subtitle",
+      "level": 2,
+      "title": "Achieving Data Integrity using ECDSA with NIST-compliant curves"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "terminology",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "alternateIds": [
+        "x1-1-terminology"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "alternateIds": [
+        "x1-2-conformance"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "data-model",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#data-model",
+      "level": 2,
+      "title": "Data Model",
+      "alternateIds": [
+        "x2-data-model"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "verification-methods",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#verification-methods",
+      "level": 3,
+      "title": "Verification Methods",
+      "alternateIds": [
+        "x2-1-verification-methods"
+      ],
+      "number": "2.1"
+    },
+    {
+      "id": "multikey",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#multikey",
+      "level": 4,
+      "title": "Multikey",
+      "alternateIds": [
+        "x2-1-1-multikey"
+      ],
+      "number": "2.1.1"
+    },
+    {
+      "id": "proof-representations",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#proof-representations",
+      "level": 3,
+      "title": "Proof Representations",
+      "alternateIds": [
+        "x2-2-proof-representations"
+      ],
+      "number": "2.2"
+    },
+    {
+      "id": "dataintegrityproof",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#dataintegrityproof",
+      "level": 4,
+      "title": "DataIntegrityProof",
+      "alternateIds": [
+        "x2-2-1-dataintegrityproof"
+      ],
+      "number": "2.2.1"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "alternateIds": [
+        "x3-algorithms"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "instantiate-cryptosuite",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#instantiate-cryptosuite",
+      "level": 3,
+      "title": "Instantiate Cryptosuite",
+      "alternateIds": [
+        "x3-1-instantiate-cryptosuite"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "ecdsa-rdfc-2019",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#ecdsa-rdfc-2019",
+      "level": 3,
+      "title": "ecdsa-rdfc-2019",
+      "alternateIds": [
+        "x3-2-ecdsa-rdfc-2019"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "create-proof-ecdsa-rdfc-2019",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#create-proof-ecdsa-rdfc-2019",
+      "level": 4,
+      "title": "Create Proof (ecdsa-rdfc-2019)",
+      "alternateIds": [
+        "x3-2-1-create-proof-ecdsa-rdfc-2019"
+      ],
+      "number": "3.2.1"
+    },
+    {
+      "id": "verify-proof-ecdsa-rdfc-2019",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#verify-proof-ecdsa-rdfc-2019",
+      "level": 4,
+      "title": "Verify Proof (ecdsa-rdfc-2019)",
+      "alternateIds": [
+        "x3-2-2-verify-proof-ecdsa-rdfc-2019"
+      ],
+      "number": "3.2.2"
+    },
+    {
+      "id": "transformation-ecdsa-rdfc-2019",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#transformation-ecdsa-rdfc-2019",
+      "level": 4,
+      "title": "Transformation (ecdsa-rdfc-2019)",
+      "alternateIds": [
+        "x3-2-3-transformation-ecdsa-rdfc-2019"
+      ],
+      "number": "3.2.3"
+    },
+    {
+      "id": "hashing-ecdsa-rdfc-2019",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#hashing-ecdsa-rdfc-2019",
+      "level": 4,
+      "title": "Hashing (ecdsa-rdfc-2019)",
+      "alternateIds": [
+        "x3-2-4-hashing-ecdsa-rdfc-2019"
+      ],
+      "number": "3.2.4"
+    },
+    {
+      "id": "proof-configuration-ecdsa-rdfc-2019",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#proof-configuration-ecdsa-rdfc-2019",
+      "level": 4,
+      "title": "Proof Configuration (ecdsa-rdfc-2019)",
+      "alternateIds": [
+        "x3-2-5-proof-configuration-ecdsa-rdfc-2019"
+      ],
+      "number": "3.2.5"
+    },
+    {
+      "id": "proof-serialization-ecdsa-rdfc-2019",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#proof-serialization-ecdsa-rdfc-2019",
+      "level": 4,
+      "title": "Proof Serialization (ecdsa-rdfc-2019)",
+      "alternateIds": [
+        "x3-2-6-proof-serialization-ecdsa-rdfc-2019"
+      ],
+      "number": "3.2.6"
+    },
+    {
+      "id": "proof-verification-ecdsa-rdfc-2019",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#proof-verification-ecdsa-rdfc-2019",
+      "level": 4,
+      "title": "Proof Verification (ecdsa-rdfc-2019)",
+      "alternateIds": [
+        "x3-2-7-proof-verification-ecdsa-rdfc-2019"
+      ],
+      "number": "3.2.7"
+    },
+    {
+      "id": "ecdsa-jcs-2019",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#ecdsa-jcs-2019",
+      "level": 3,
+      "title": "ecdsa-jcs-2019",
+      "alternateIds": [
+        "x3-3-ecdsa-jcs-2019"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "create-proof-ecdsa-jcs-2019",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#create-proof-ecdsa-jcs-2019",
+      "level": 4,
+      "title": "Create Proof (ecdsa-jcs-2019)",
+      "alternateIds": [
+        "x3-3-1-create-proof-ecdsa-jcs-2019"
+      ],
+      "number": "3.3.1"
+    },
+    {
+      "id": "verify-proof-ecdsa-jcs-2019",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#verify-proof-ecdsa-jcs-2019",
+      "level": 4,
+      "title": "Verify Proof (ecdsa-jcs-2019)",
+      "alternateIds": [
+        "x3-3-2-verify-proof-ecdsa-jcs-2019"
+      ],
+      "number": "3.3.2"
+    },
+    {
+      "id": "transformation-ecdsa-jcs-2019",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#transformation-ecdsa-jcs-2019",
+      "level": 4,
+      "title": "Transformation (ecdsa-jcs-2019)",
+      "alternateIds": [
+        "x3-3-3-transformation-ecdsa-jcs-2019"
+      ],
+      "number": "3.3.3"
+    },
+    {
+      "id": "hashing-ecdsa-jcs-2019",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#hashing-ecdsa-jcs-2019",
+      "level": 4,
+      "title": "Hashing (ecdsa-jcs-2019)",
+      "alternateIds": [
+        "x3-3-4-hashing-ecdsa-jcs-2019"
+      ],
+      "number": "3.3.4"
+    },
+    {
+      "id": "proof-configuration-ecdsa-jcs-2019",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#proof-configuration-ecdsa-jcs-2019",
+      "level": 4,
+      "title": "Proof Configuration (ecdsa-jcs-2019)",
+      "alternateIds": [
+        "x3-3-5-proof-configuration-ecdsa-jcs-2019"
+      ],
+      "number": "3.3.5"
+    },
+    {
+      "id": "proof-serialization-ecdsa-jcs-2019",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#proof-serialization-ecdsa-jcs-2019",
+      "level": 4,
+      "title": "Proof Serialization (ecdsa-jcs-2019)",
+      "alternateIds": [
+        "x3-3-6-proof-serialization-ecdsa-jcs-2019"
+      ],
+      "number": "3.3.6"
+    },
+    {
+      "id": "proof-verification-ecdsa-jcs-2019",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#proof-verification-ecdsa-jcs-2019",
+      "level": 4,
+      "title": "Proof Verification (ecdsa-jcs-2019)",
+      "alternateIds": [
+        "x3-3-7-proof-verification-ecdsa-jcs-2019"
+      ],
+      "number": "3.3.7"
+    },
+    {
+      "id": "selective-disclosure-functions",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#selective-disclosure-functions",
+      "level": 3,
+      "title": "Selective Disclosure Functions",
+      "alternateIds": [
+        "x3-4-selective-disclosure-functions"
+      ],
+      "number": "3.4"
+    },
+    {
+      "id": "labelreplacementcanonicalizenquads",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#labelreplacementcanonicalizenquads",
+      "level": 4,
+      "title": "labelReplacementCanonicalizeNQuads",
+      "alternateIds": [
+        "x3-4-1-labelreplacementcanonicalizenquads"
+      ],
+      "number": "3.4.1"
+    },
+    {
+      "id": "labelreplacementcanonicalizejsonld",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#labelreplacementcanonicalizejsonld",
+      "level": 4,
+      "title": "labelReplacementCanonicalizeJsonLd",
+      "alternateIds": [
+        "x3-4-2-labelreplacementcanonicalizejsonld"
+      ],
+      "number": "3.4.2"
+    },
+    {
+      "id": "createlabelmapfunction",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#createlabelmapfunction",
+      "level": 4,
+      "title": "createLabelMapFunction",
+      "alternateIds": [
+        "x3-4-3-createlabelmapfunction"
+      ],
+      "number": "3.4.3"
+    },
+    {
+      "id": "createhmacidlabelmapfunction",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#createhmacidlabelmapfunction",
+      "level": 4,
+      "title": "createHmacIdLabelMapFunction",
+      "alternateIds": [
+        "x3-4-4-createhmacidlabelmapfunction"
+      ],
+      "number": "3.4.4"
+    },
+    {
+      "id": "skolemizenquads",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#skolemizenquads",
+      "level": 4,
+      "title": "skolemizeNQuads",
+      "alternateIds": [
+        "x3-4-5-skolemizenquads"
+      ],
+      "number": "3.4.5"
+    },
+    {
+      "id": "deskolemizenquads",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#deskolemizenquads",
+      "level": 4,
+      "title": "deskolemizeNQuads",
+      "alternateIds": [
+        "x3-4-6-deskolemizenquads"
+      ],
+      "number": "3.4.6"
+    },
+    {
+      "id": "skolemizeexpandedjsonld",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#skolemizeexpandedjsonld",
+      "level": 4,
+      "title": "skolemizeExpandedJsonLd",
+      "alternateIds": [
+        "x3-4-7-skolemizeexpandedjsonld"
+      ],
+      "number": "3.4.7"
+    },
+    {
+      "id": "skolemizecompactjsonld",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#skolemizecompactjsonld",
+      "level": 4,
+      "title": "skolemizeCompactJsonLd",
+      "alternateIds": [
+        "x3-4-8-skolemizecompactjsonld"
+      ],
+      "number": "3.4.8"
+    },
+    {
+      "id": "todeskolemizednquads",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#todeskolemizednquads",
+      "level": 4,
+      "title": "toDeskolemizedNQuads",
+      "alternateIds": [
+        "x3-4-9-todeskolemizednquads"
+      ],
+      "number": "3.4.9"
+    },
+    {
+      "id": "jsonpointertopaths",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#jsonpointertopaths",
+      "level": 4,
+      "title": "jsonPointerToPaths",
+      "alternateIds": [
+        "x3-4-10-jsonpointertopaths"
+      ],
+      "number": "3.4.10"
+    },
+    {
+      "id": "createinitialselection",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#createinitialselection",
+      "level": 4,
+      "title": "createInitialSelection",
+      "alternateIds": [
+        "x3-4-11-createinitialselection"
+      ],
+      "number": "3.4.11"
+    },
+    {
+      "id": "selectpaths",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#selectpaths",
+      "level": 4,
+      "title": "selectPaths",
+      "alternateIds": [
+        "x3-4-12-selectpaths"
+      ],
+      "number": "3.4.12"
+    },
+    {
+      "id": "selectjsonld",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#selectjsonld",
+      "level": 4,
+      "title": "selectJsonLd",
+      "alternateIds": [
+        "x3-4-13-selectjsonld"
+      ],
+      "number": "3.4.13"
+    },
+    {
+      "id": "relabelblanknodes",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#relabelblanknodes",
+      "level": 4,
+      "title": "relabelBlankNodes",
+      "alternateIds": [
+        "x3-4-14-relabelblanknodes"
+      ],
+      "number": "3.4.14"
+    },
+    {
+      "id": "selectcanonicalnquads",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#selectcanonicalnquads",
+      "level": 4,
+      "title": "selectCanonicalNQuads",
+      "alternateIds": [
+        "x3-4-15-selectcanonicalnquads"
+      ],
+      "number": "3.4.15"
+    },
+    {
+      "id": "canonicalizeandgroup",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#canonicalizeandgroup",
+      "level": 4,
+      "title": "canonicalizeAndGroup",
+      "alternateIds": [
+        "x3-4-16-canonicalizeandgroup"
+      ],
+      "number": "3.4.16"
+    },
+    {
+      "id": "hashmandatorynquads",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#hashmandatorynquads",
+      "level": 4,
+      "title": "hashMandatoryNQuads",
+      "alternateIds": [
+        "x3-4-17-hashmandatorynquads"
+      ],
+      "number": "3.4.17"
+    },
+    {
+      "id": "ecdsa-sd-2023-functions",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#ecdsa-sd-2023-functions",
+      "level": 3,
+      "title": "ecdsa-sd-2023 Functions",
+      "alternateIds": [
+        "x3-5-ecdsa-sd-2023-functions"
+      ],
+      "number": "3.5"
+    },
+    {
+      "id": "serializesigndata",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#serializesigndata",
+      "level": 4,
+      "title": "serializeSignData",
+      "alternateIds": [
+        "x3-5-1-serializesigndata"
+      ],
+      "number": "3.5.1"
+    },
+    {
+      "id": "serializebaseproofvalue",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#serializebaseproofvalue",
+      "level": 4,
+      "title": "serializeBaseProofValue",
+      "alternateIds": [
+        "x3-5-2-serializebaseproofvalue"
+      ],
+      "number": "3.5.2"
+    },
+    {
+      "id": "parsebaseproofvalue",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#parsebaseproofvalue",
+      "level": 4,
+      "title": "parseBaseProofValue",
+      "alternateIds": [
+        "x3-5-3-parsebaseproofvalue"
+      ],
+      "number": "3.5.3"
+    },
+    {
+      "id": "createdisclosuredata",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#createdisclosuredata",
+      "level": 4,
+      "title": "createDisclosureData",
+      "alternateIds": [
+        "x3-5-4-createdisclosuredata"
+      ],
+      "number": "3.5.4"
+    },
+    {
+      "id": "compresslabelmap",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#compresslabelmap",
+      "level": 4,
+      "title": "compressLabelMap",
+      "alternateIds": [
+        "x3-5-5-compresslabelmap"
+      ],
+      "number": "3.5.5"
+    },
+    {
+      "id": "decompresslabelmap",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#decompresslabelmap",
+      "level": 4,
+      "title": "decompressLabelMap",
+      "alternateIds": [
+        "x3-5-6-decompresslabelmap"
+      ],
+      "number": "3.5.6"
+    },
+    {
+      "id": "serializederivedproofvalue",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#serializederivedproofvalue",
+      "level": 4,
+      "title": "serializeDerivedProofValue",
+      "alternateIds": [
+        "x3-5-7-serializederivedproofvalue"
+      ],
+      "number": "3.5.7"
+    },
+    {
+      "id": "parsederivedproofvalue",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#parsederivedproofvalue",
+      "level": 4,
+      "title": "parseDerivedProofValue",
+      "alternateIds": [
+        "x3-5-8-parsederivedproofvalue"
+      ],
+      "number": "3.5.8"
+    },
+    {
+      "id": "createverifydata",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#createverifydata",
+      "level": 4,
+      "title": "createVerifyData",
+      "alternateIds": [
+        "x3-5-9-createverifydata"
+      ],
+      "number": "3.5.9"
+    },
+    {
+      "id": "ecdsa-sd-2023",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#ecdsa-sd-2023",
+      "level": 3,
+      "title": "ecdsa-sd-2023",
+      "alternateIds": [
+        "x3-6-ecdsa-sd-2023"
+      ],
+      "number": "3.6"
+    },
+    {
+      "id": "create-base-proof-ecdsa-sd-2023",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#create-base-proof-ecdsa-sd-2023",
+      "level": 4,
+      "title": "Create Base Proof (ecdsa-sd-2023)",
+      "alternateIds": [
+        "x3-6-1-create-base-proof-ecdsa-sd-2023"
+      ],
+      "number": "3.6.1"
+    },
+    {
+      "id": "base-proof-transformation-ecdsa-sd-2023",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#base-proof-transformation-ecdsa-sd-2023",
+      "level": 4,
+      "title": "Base Proof Transformation (ecdsa-sd-2023)",
+      "alternateIds": [
+        "x3-6-2-base-proof-transformation-ecdsa-sd-2023"
+      ],
+      "number": "3.6.2"
+    },
+    {
+      "id": "base-proof-hashing-ecdsa-sd-2023",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#base-proof-hashing-ecdsa-sd-2023",
+      "level": 4,
+      "title": "Base Proof Hashing (ecdsa-sd-2023)",
+      "alternateIds": [
+        "x3-6-3-base-proof-hashing-ecdsa-sd-2023"
+      ],
+      "number": "3.6.3"
+    },
+    {
+      "id": "base-proof-configuration-ecdsa-sd-2023",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#base-proof-configuration-ecdsa-sd-2023",
+      "level": 4,
+      "title": "Base Proof Configuration (ecdsa-sd-2023)",
+      "alternateIds": [
+        "x3-6-4-base-proof-configuration-ecdsa-sd-2023"
+      ],
+      "number": "3.6.4"
+    },
+    {
+      "id": "base-proof-serialization-ecdsa-sd-2023",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#base-proof-serialization-ecdsa-sd-2023",
+      "level": 4,
+      "title": "Base Proof Serialization (ecdsa-sd-2023)",
+      "alternateIds": [
+        "x3-6-5-base-proof-serialization-ecdsa-sd-2023"
+      ],
+      "number": "3.6.5"
+    },
+    {
+      "id": "add-derived-proof-ecdsa-sd-2023",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#add-derived-proof-ecdsa-sd-2023",
+      "level": 4,
+      "title": "Add Derived Proof (ecdsa-sd-2023)",
+      "alternateIds": [
+        "x3-6-6-add-derived-proof-ecdsa-sd-2023"
+      ],
+      "number": "3.6.6"
+    },
+    {
+      "id": "verify-derived-proof-ecdsa-sd-2023",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#verify-derived-proof-ecdsa-sd-2023",
+      "level": 4,
+      "title": "Verify Derived Proof (ecdsa-sd-2023)",
+      "alternateIds": [
+        "x3-6-7-verify-derived-proof-ecdsa-sd-2023"
+      ],
+      "number": "3.6.7"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "x4-security-considerations"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "choice-of-ecdsa-and-parameters",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#choice-of-ecdsa-and-parameters",
+      "level": 3,
+      "title": "Choice of ECDSA and Parameters",
+      "alternateIds": [
+        "x4-1-choice-of-ecdsa-and-parameters"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "implementation-considerations-for-ecdsa-algorithms",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#implementation-considerations-for-ecdsa-algorithms",
+      "level": 3,
+      "title": "Implementation Considerations for ECDSA Algorithms",
+      "alternateIds": [
+        "x4-2-implementation-considerations-for-ecdsa-algorithms"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "key-management",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#key-management",
+      "level": 3,
+      "title": "Key Management",
+      "alternateIds": [
+        "x4-3-key-management"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "x5-privacy-considerations"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "unlinkable-disclosure",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#unlinkable-disclosure",
+      "level": 3,
+      "title": "Unlinkable Disclosure",
+      "alternateIds": [
+        "x5-1-unlinkable-disclosure"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "test-vectors",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#test-vectors",
+      "level": 2,
+      "title": "Test Vectors",
+      "alternateIds": [
+        "a-test-vectors"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "representation-ecdsa-rdfc-2019-with-curve-p-256",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#representation-ecdsa-rdfc-2019-with-curve-p-256",
+      "level": 3,
+      "title": "Representation: ecdsa-rdfc-2019, with curve P-256",
+      "alternateIds": [
+        "a-1-representation-ecdsa-rdfc-2019-with-curve-p-256"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "enhanced-example-for-representation-ecdsa-rdfc-2019-with-curve-p-256",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#enhanced-example-for-representation-ecdsa-rdfc-2019-with-curve-p-256",
+      "level": 3,
+      "title": "Enhanced Example for Representation: ecdsa-rdfc-2019, with curve P-256",
+      "alternateIds": [
+        "a-2-enhanced-example-for-representation-ecdsa-rdfc-2019-with-curve-p-256"
+      ],
+      "number": "A.2"
+    },
+    {
+      "id": "representation-ecdsa-rdfc-2019-with-curve-p-384",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#representation-ecdsa-rdfc-2019-with-curve-p-384",
+      "level": 3,
+      "title": "Representation: ecdsa-rdfc-2019, with curve P-384",
+      "alternateIds": [
+        "a-3-representation-ecdsa-rdfc-2019-with-curve-p-384"
+      ],
+      "number": "A.3"
+    },
+    {
+      "id": "enhanced-example-for-representation-ecdsa-rdfc-2019-with-curve-p-384",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#enhanced-example-for-representation-ecdsa-rdfc-2019-with-curve-p-384",
+      "level": 3,
+      "title": "Enhanced Example for Representation: ecdsa-rdfc-2019, with curve P-384",
+      "alternateIds": [
+        "a-4-enhanced-example-for-representation-ecdsa-rdfc-2019-with-curve-p-384"
+      ],
+      "number": "A.4"
+    },
+    {
+      "id": "representation-ecdsa-jcs-2019-with-curve-p-256",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#representation-ecdsa-jcs-2019-with-curve-p-256",
+      "level": 3,
+      "title": "Representation: ecdsa-jcs-2019 with curve P-256",
+      "alternateIds": [
+        "a-5-representation-ecdsa-jcs-2019-with-curve-p-256"
+      ],
+      "number": "A.5"
+    },
+    {
+      "id": "representation-ecdsa-jcs-2019-with-curve-p-384",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#representation-ecdsa-jcs-2019-with-curve-p-384",
+      "level": 3,
+      "title": "Representation: ecdsa-jcs-2019 with curve P-384",
+      "alternateIds": [
+        "a-6-representation-ecdsa-jcs-2019-with-curve-p-384"
+      ],
+      "number": "A.6"
+    },
+    {
+      "id": "representation-ecdsa-sd-2023",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#representation-ecdsa-sd-2023",
+      "level": 3,
+      "title": "Representation: ecdsa-sd-2023",
+      "alternateIds": [
+        "a-7-representation-ecdsa-sd-2023"
+      ],
+      "number": "A.7"
+    },
+    {
+      "id": "base-proof",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#base-proof",
+      "level": 4,
+      "title": "Base Proof",
+      "alternateIds": [
+        "a-7-1-base-proof"
+      ],
+      "number": "A.7.1"
+    },
+    {
+      "id": "derived-proof",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#derived-proof",
+      "level": 4,
+      "title": "Derived Proof",
+      "alternateIds": [
+        "a-7-2-derived-proof"
+      ],
+      "number": "A.7.2"
+    },
+    {
+      "id": "additional-example-for-representation-ecdsa-sd-2023",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#additional-example-for-representation-ecdsa-sd-2023",
+      "level": 3,
+      "title": "Additional Example for Representation: ecdsa-sd-2023",
+      "alternateIds": [
+        "a-8-additional-example-for-representation-ecdsa-sd-2023"
+      ],
+      "number": "A.8"
+    },
+    {
+      "id": "base-proof-0",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#base-proof-0",
+      "level": 4,
+      "title": "Base Proof",
+      "alternateIds": [
+        "a-8-1-base-proof"
+      ],
+      "number": "A.8.1"
+    },
+    {
+      "id": "derived-proof-0",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#derived-proof-0",
+      "level": 4,
+      "title": "Derived Proof",
+      "alternateIds": [
+        "a-8-2-derived-proof"
+      ],
+      "number": "A.8.2"
+    },
+    {
+      "id": "revision-history",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#revision-history",
+      "level": 2,
+      "title": "Revision History",
+      "alternateIds": [
+        "b-revision-history"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "c-acknowledgements"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "d-references"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "d-1-normative-references"
+      ],
+      "number": "D.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/vc-di-ecdsa/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "d-2-informative-references"
+      ],
+      "number": "D.2"
+    }
+  ]
+}

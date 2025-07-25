@@ -1,0 +1,366 @@
+{
+  "spec": {
+    "title": "CSS Borders and Box Decorations Module Level 4",
+    "url": "https://www.w3.org/TR/css-borders-4/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/css-borders-4/#title",
+      "level": 1,
+      "title": "CSS Borders and Box Decorations Module Level 4"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/css-borders-4/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/css-borders-4/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/css-borders-4/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "contents"
+      ]
+    },
+    {
+      "id": "intro",
+      "href": "https://www.w3.org/TR/css-borders-4/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "borders",
+      "href": "https://www.w3.org/TR/css-borders-4/#borders",
+      "level": 2,
+      "title": "Borders",
+      "number": "2"
+    },
+    {
+      "id": "border-color",
+      "href": "https://www.w3.org/TR/css-borders-4/#border-color",
+      "level": 3,
+      "title": "Line Colors: the border-color properties",
+      "number": "2.1"
+    },
+    {
+      "id": "border-style",
+      "href": "https://www.w3.org/TR/css-borders-4/#border-style",
+      "level": 3,
+      "title": "Line Patterns: the border-style properties",
+      "number": "2.2"
+    },
+    {
+      "id": "border-width",
+      "href": "https://www.w3.org/TR/css-borders-4/#border-width",
+      "level": 3,
+      "title": "Line Thickness: the border-width properties",
+      "number": "2.3"
+    },
+    {
+      "id": "border-shorthands",
+      "href": "https://www.w3.org/TR/css-borders-4/#border-shorthands",
+      "level": 3,
+      "title": "Border Shorthand Properties",
+      "number": "2.4"
+    },
+    {
+      "id": "corners",
+      "href": "https://www.w3.org/TR/css-borders-4/#corners",
+      "level": 2,
+      "title": "Corners",
+      "number": "3"
+    },
+    {
+      "id": "border-radius",
+      "href": "https://www.w3.org/TR/css-borders-4/#border-radius",
+      "level": 3,
+      "title": "Corner Sizing: the border-*-*-radius properties",
+      "number": "3.1"
+    },
+    {
+      "id": "corner-sizing",
+      "href": "https://www.w3.org/TR/css-borders-4/#corner-sizing",
+      "level": 3,
+      "title": "Corner Sizing Shorthands: the border-radius and border-*-radius shorthand properties",
+      "number": "3.2"
+    },
+    {
+      "id": "corner-sizing-side-shorthands",
+      "href": "https://www.w3.org/TR/css-borders-4/#corner-sizing-side-shorthands",
+      "level": 4,
+      "title": "Sizing The Corners Of One Side: The border-top-radius, border-right-radius, border-bottom-radius, border-left-radius, border-block-start-radius, border-block-end-radius, border-inline-start-radius, border-inline-end-radius shorthands",
+      "number": "3.2.1"
+    },
+    {
+      "id": "corner-sizing-shorthand",
+      "href": "https://www.w3.org/TR/css-borders-4/#corner-sizing-shorthand",
+      "level": 4,
+      "title": "Sizing All Corners At Once: The border-radius shorthand",
+      "number": "3.2.2"
+    },
+    {
+      "id": "corner-shaping",
+      "href": "https://www.w3.org/TR/css-borders-4/#corner-shaping",
+      "level": 3,
+      "title": "Corner Shaping: the corner-shape property",
+      "number": "3.3"
+    },
+    {
+      "id": "corner-shape-shorthand",
+      "href": "https://www.w3.org/TR/css-borders-4/#corner-shape-shorthand",
+      "level": 4,
+      "title": "The corner-shape Shorthand",
+      "number": "3.3.1"
+    },
+    {
+      "id": "corner-shape-shorthands",
+      "href": "https://www.w3.org/TR/css-borders-4/#corner-shape-shorthands",
+      "level": 4,
+      "title": "The corner-*-shape Shorthands And Longhands",
+      "number": "3.3.2"
+    },
+    {
+      "id": "corner-shape-rendering",
+      "href": "https://www.w3.org/TR/css-borders-4/#corner-shape-rendering",
+      "level": 4,
+      "title": "Rendering corner-shape",
+      "number": "3.3.3"
+    },
+    {
+      "id": "corner-shape-constrain-radii",
+      "href": "https://www.w3.org/TR/css-borders-4/#corner-shape-constrain-radii",
+      "level": 4,
+      "title": "Constraining opposite radii",
+      "number": "3.3.4"
+    },
+    {
+      "id": "corner-shape-interpolation",
+      "href": "https://www.w3.org/TR/css-borders-4/#corner-shape-interpolation",
+      "level": 4,
+      "title": "Interpolating corner shapes",
+      "number": "3.3.5"
+    },
+    {
+      "id": "corners-shorthand",
+      "href": "https://www.w3.org/TR/css-borders-4/#corners-shorthand",
+      "level": 3,
+      "title": "Corner Shaping Shorthand: the corners property",
+      "number": "3.4"
+    },
+    {
+      "id": "partial-borders",
+      "href": "https://www.w3.org/TR/css-borders-4/#partial-borders",
+      "level": 2,
+      "title": "Partial borders",
+      "number": "4"
+    },
+    {
+      "id": "border-limit",
+      "href": "https://www.w3.org/TR/css-borders-4/#border-limit",
+      "level": 3,
+      "title": "Partial Borders: the border-limit property",
+      "number": "4.1"
+    },
+    {
+      "id": "border-clip",
+      "href": "https://www.w3.org/TR/css-borders-4/#border-clip",
+      "level": 3,
+      "title": "The border-clip properties",
+      "number": "4.2"
+    },
+    {
+      "id": "drop-shadows",
+      "href": "https://www.w3.org/TR/css-borders-4/#drop-shadows",
+      "level": 2,
+      "title": "Drop Shadows",
+      "number": "5"
+    },
+    {
+      "id": "box-shadow-color",
+      "href": "https://www.w3.org/TR/css-borders-4/#box-shadow-color",
+      "level": 3,
+      "title": "Coloring shadows: the box-shadow-color property",
+      "number": "5.1"
+    },
+    {
+      "id": "box-shadow-offset",
+      "href": "https://www.w3.org/TR/css-borders-4/#box-shadow-offset",
+      "level": 3,
+      "title": "Offsetting shadows: the box-shadow-offset property",
+      "number": "5.2"
+    },
+    {
+      "id": "box-shadow-blur",
+      "href": "https://www.w3.org/TR/css-borders-4/#box-shadow-blur",
+      "level": 3,
+      "title": "Blurring shadows: the box-shadow-blur property",
+      "number": "5.3"
+    },
+    {
+      "id": "box-shadow-spread",
+      "href": "https://www.w3.org/TR/css-borders-4/#box-shadow-spread",
+      "level": 3,
+      "title": "Spreading shadows: the box-shadow-spread property",
+      "number": "5.4"
+    },
+    {
+      "id": "box-shadow-position",
+      "href": "https://www.w3.org/TR/css-borders-4/#box-shadow-position",
+      "level": 3,
+      "title": "Spreading shadows: the box-shadow-position property",
+      "number": "5.5"
+    },
+    {
+      "id": "box-shadow",
+      "href": "https://www.w3.org/TR/css-borders-4/#box-shadow",
+      "level": 3,
+      "title": "Drop Shadows Shorthand: the box-shadow property",
+      "number": "5.6"
+    },
+    {
+      "id": "shadow-layers",
+      "href": "https://www.w3.org/TR/css-borders-4/#shadow-layers",
+      "level": 3,
+      "title": "Layering, Layout, and Other Details",
+      "number": "5.7"
+    },
+    {
+      "id": "border-shape",
+      "href": "https://www.w3.org/TR/css-borders-4/#border-shape",
+      "level": 2,
+      "title": "Border Shaping",
+      "number": "6"
+    },
+    {
+      "id": "border-shape-func",
+      "href": "https://www.w3.org/TR/css-borders-4/#border-shape-func",
+      "level": 3,
+      "title": "The border-shape property",
+      "number": "6.1"
+    },
+    {
+      "id": "privacy",
+      "href": "https://www.w3.org/TR/css-borders-4/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/css-borders-4/#security",
+      "level": 2,
+      "title": "Security Considerations"
+    },
+    {
+      "id": "changes",
+      "href": "https://www.w3.org/TR/css-borders-4/#changes",
+      "level": 2,
+      "title": "Changes"
+    },
+    {
+      "id": "level-changes",
+      "href": "https://www.w3.org/TR/css-borders-4/#level-changes",
+      "level": 3,
+      "title": "Additions since [CSS3BG]"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://www.w3.org/TR/css-borders-4/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/css-borders-4/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/css-borders-4/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://www.w3.org/TR/css-borders-4/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://www.w3.org/TR/css-borders-4/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://www.w3.org/TR/css-borders-4/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://www.w3.org/TR/css-borders-4/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/css-borders-4/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/css-borders-4/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/css-borders-4/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/css-borders-4/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://www.w3.org/TR/css-borders-4/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://www.w3.org/TR/css-borders-4/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://www.w3.org/TR/css-borders-4/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://www.w3.org/TR/css-borders-4/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}
