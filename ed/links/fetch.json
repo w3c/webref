@@ -92,14 +92,8 @@
       "https://github.com/whatwg/html/issues/6424": {},
       "https://github.com/whatwg/infra/issues/201": {},
       "https://html.spec.whatwg.org/multipage/": {},
+      "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html": {},
       "https://httpwg.org/specs/rfc5861.html": {},
-      "https://httpwg.org/specs/rfc6265.html": {
-        "anchors": [
-          "privacy-considerations",
-          "cookie",
-          "set-cookie"
-        ]
-      },
       "https://httpwg.org/specs/rfc8470.html": {},
       "https://httpwg.org/specs/rfc9110.html": {},
       "https://httpwg.org/specs/rfc9111.html": {},
@@ -169,6 +163,14 @@
       "https://xhr.spec.whatwg.org/": {}
     },
     "autolinks": {
+      "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-layered-cookies": {
+        "anchors": [
+          "name-retrieve-cookies",
+          "name-serialize-cookies",
+          "name-parse-and-store-a-cookie",
+          "name-garbage-collect-cookies"
+        ]
+      },
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "concept-document-origin",
@@ -201,6 +203,7 @@
         "anchors": [
           "concept-origin",
           "policy-container",
+          "same-site",
           "same-origin",
           "ascii-serialisation-of-an-origin",
           "policy-container-embedder-policy",
@@ -300,6 +303,7 @@
           "concept-settings-object-policy-container",
           "concept-environment-top-level-origin",
           "concept-environment-top-level-creation-url",
+          "concept-settings-object-has-cross-site-ancestor",
           "concept-settings-object-cross-origin-isolated-capability",
           "concept-settings-object-origin",
           "secure-context",
@@ -480,8 +484,8 @@
           "concept-host",
           "concept-ipv6",
           "concept-url-port",
-          "concept-url-path",
           "concept-url-host",
+          "concept-url-path",
           "concept-domain",
           "concept-url-blob-entry",
           "include-credentials",
