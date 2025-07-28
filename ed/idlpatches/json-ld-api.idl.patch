@@ -1,0 +1,26 @@
+From 426298ab2d9e9c1adc7acb3163c536c37c886d45 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Mon, 28 Jul 2025 08:51:59 +0200
+Subject: [PATCH] Fix optional dictionary argument in callback definition
+
+Pending https://github.com/w3c/json-ld-api/pull/664
+---
+ ed/idl/json-ld-api.idl | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/idl/json-ld-api.idl b/ed/idl/json-ld-api.idl
+index 2090fde1d6..6b137f1cc4 100644
+--- a/ed/idl/json-ld-api.idl
++++ b/ed/idl/json-ld-api.idl
+@@ -86,7 +86,7 @@ dictionary JsonLdOptions {
+ 
+ callback LoadDocumentCallback = Promise<RemoteDocument> (
+   USVString url,
+-  optional LoadDocumentOptions? options
++  optional LoadDocumentOptions options = {}
+ );
+ 
+ dictionary LoadDocumentOptions {
+-- 
+2.37.1.windows.1
+
