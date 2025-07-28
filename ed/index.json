@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-07-28T00:53:07.458Z",
+  "date": "2025-07-28T12:50:09.113Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -724,7 +724,7 @@
   },
   "stats": {
     "crawled": 692,
-    "errors": 1
+    "errors": 2
   },
   "crawler": "reffy-19.1.5",
   "results": [
@@ -3055,9 +3055,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 25 Jul 2025 09:26:38 GMT"
+        "lastModified": "Mon, 28 Jul 2025 08:00:58 GMT"
       },
-      "date": "25 July 2025",
+      "date": "28 July 2025",
       "algorithms": "algorithms/html.json",
       "links": "links/html.json",
       "refs": "refs/html.json",
@@ -3478,11 +3478,11 @@
       ],
       "crawled": "https://mimesniff.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 24 Jul 2025 08:57:24 GMT"
+        "lastModified": "Mon, 28 Jul 2025 06:14:57 GMT"
       },
       "generator": "bikeshed",
-      "date": "24 July 2025",
-      "revision": "4b489c0978ed897ef6973d6562759e2bbe0465df",
+      "date": "28 July 2025",
+      "revision": "1e18dd2c442d3fa249c80c4aaa778e9053ba1477",
       "algorithms": "algorithms/mimesniff.json",
       "links": "links/mimesniff.json",
       "refs": "refs/mimesniff.json",
@@ -6744,9 +6744,9 @@
       ],
       "crawled": "https://tc39.es/ecma262/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 24 Jul 2025 15:38:22 GMT"
+        "lastModified": "Mon, 28 Jul 2025 05:31:51 GMT"
       },
-      "date": "24 July 2025",
+      "date": "28 July 2025",
       "links": "links/ecmascript.json",
       "dfns": "dfns/ecmascript.json",
       "headings": "headings/ecmascript.json",
@@ -10021,11 +10021,11 @@
       ],
       "crawled": "https://webidl.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 23 Jul 2025 00:45:49 GMT"
+        "lastModified": "Mon, 28 Jul 2025 07:03:56 GMT"
       },
       "generator": "bikeshed",
-      "date": "23 July 2025",
-      "revision": "da6f3b3bc5562cb56aaca6df68e89b574911a641",
+      "date": "28 July 2025",
+      "revision": "48eba6dfc58f83d31ae55d20bc72da571267c3d3",
       "algorithms": "algorithms/webidl.json",
       "links": "links/webidl.json",
       "refs": "refs/webidl.json",
@@ -10741,7 +10741,8 @@
       "dfns": "dfns/cookie-store.json",
       "headings": "headings/cookie-store.json",
       "ids": "ids/cookie-store.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://wicg.github.io/cookie-store/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 186)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://wicg.github.io/crash-reporting/",
@@ -12459,10 +12460,10 @@
       ],
       "crawled": "https://wicg.github.io/nav-speculation/prefetch.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 24 Jul 2025 03:35:58 GMT"
+        "lastModified": "Mon, 28 Jul 2025 04:43:12 GMT"
       },
       "generator": "bikeshed",
-      "date": "23 July 2025",
+      "date": "27 July 2025",
       "algorithms": "algorithms/prefetch.json",
       "links": "links/prefetch.json",
       "refs": "refs/prefetch.json",
@@ -12509,10 +12510,10 @@
       ],
       "crawled": "https://wicg.github.io/nav-speculation/prerendering.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 24 Jul 2025 03:35:58 GMT"
+        "lastModified": "Mon, 28 Jul 2025 04:43:12 GMT"
       },
       "generator": "bikeshed",
-      "date": "23 July 2025",
+      "date": "27 July 2025",
       "algorithms": "algorithms/prerendering-revamped.json",
       "links": "links/prerendering-revamped.json",
       "refs": "refs/prerendering-revamped.json",
@@ -12561,10 +12562,10 @@
       ],
       "crawled": "https://wicg.github.io/nav-speculation/speculation-rules.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 24 Jul 2025 03:35:58 GMT"
+        "lastModified": "Mon, 28 Jul 2025 04:43:12 GMT"
       },
       "generator": "bikeshed",
-      "date": "23 July 2025",
+      "date": "27 July 2025",
       "algorithms": "algorithms/speculation-rules.json",
       "links": "links/speculation-rules.json",
       "refs": "refs/speculation-rules.json",
@@ -34776,11 +34777,11 @@
       ],
       "crawled": "https://w3c.github.io/ServiceWorker/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 19 Jun 2025 02:25:09 GMT"
+        "lastModified": "Mon, 28 Jul 2025 05:05:18 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 June 2025",
-      "revision": "3d83bed7bd03e453f68e47dc376b176a3926ac6c",
+      "date": "28 July 2025",
+      "revision": "991cb02e51c25b708851d73e682d0b9bb1d751c3",
       "algorithms": "algorithms/service-workers.json",
       "links": "links/service-workers.json",
       "refs": "refs/service-workers.json",
@@ -39710,10 +39711,10 @@
       ],
       "crawled": "https://w3c.github.io/webrtc-identity/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Dec 2023 13:55:48 GMT"
+        "lastModified": "Mon, 28 Jul 2025 08:36:43 GMT"
       },
       "generator": "respec",
-      "date": "12 December 2023",
+      "date": "28 July 2025",
       "algorithms": "algorithms/webrtc-identity.json",
       "links": "links/webrtc-identity.json",
       "refs": "refs/webrtc-identity.json",

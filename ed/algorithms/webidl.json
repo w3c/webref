@@ -383,6 +383,79 @@
       ]
     },
     {
+      "name": "QuotaExceededError/QuotaExceededError(message, options)",
+      "href": "https://webidl.spec.whatwg.org/#dom-quotaexceedederror-quotaexceedederror",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"QuotaExceededError\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"QuotaExceededError(message, options)|constructor(message, options)|QuotaExceededError(message)|constructor(message)|QuotaExceededError()|constructor()\" id=\"dom-quotaexceedederror-quotaexceedederror\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new QuotaExceededError(<var>message</var>, <var>options</var>)</code></dfn>\n    constructor steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#domexception-name\" id=\"ref-for-domexception-name⑨\">name</a> to \"<code>QuotaExceededError</code>\".</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#domexception-message\" id=\"ref-for-domexception-message①\">message</a> to <var>message</var>.</p>"
+        },
+        {
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dom-quotaexceedederroroptions-quota\" id=\"ref-for-dom-quotaexceedederroroptions-quota\">quota</a></code>\"] is present:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dom-quotaexceedederroroptions-quota\" id=\"ref-for-dom-quotaexceedederroroptions-quota①\">quota</a></code>\"] is less than 0, then throw a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①\">RangeError</a></code>.</p>"
+            },
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror-quota\" id=\"ref-for-quotaexceedederror-quota①\">quota</a> to\n<var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dom-quotaexceedederroroptions-quota\" id=\"ref-for-dom-quotaexceedederroroptions-quota②\">quota</a></code>\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dom-quotaexceedederroroptions-requested\" id=\"ref-for-dom-quotaexceedederroroptions-requested\">requested</a></code>\"] is present:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dom-quotaexceedederroroptions-requested\" id=\"ref-for-dom-quotaexceedederroroptions-requested①\">requested</a></code>\"] is less than 0, then throw a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror②\">RangeError</a></code>.</p>"
+            },
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror-requested\" id=\"ref-for-quotaexceedederror-requested①\">requested</a> to\n<var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dom-quotaexceedederroroptions-requested\" id=\"ref-for-dom-quotaexceedederroroptions-requested②\">requested</a></code>\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror-quota\" id=\"ref-for-quotaexceedederror-quota②\">quota</a> is not null, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror-requested\" id=\"ref-for-quotaexceedederror-requested②\">requested</a> is not null,\nand <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror-requested\" id=\"ref-for-quotaexceedederror-requested③\">requested</a> is less than <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror-quota\" id=\"ref-for-quotaexceedederror-quota③\">quota</a>, then\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror③\">RangeError</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "QuotaExceededError serialization steps",
+      "html": "Their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps①\">serialization steps</a>, given <var>value</var> and <var>serialized</var>, are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Run the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑦\">DOMException</a></code> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps②\">serialization steps</a> given <var>value</var> and <var>serialized</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[Quota]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror-quota\" id=\"ref-for-quotaexceedederror-quota⑤\">quota</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[Requested]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror-requested\" id=\"ref-for-quotaexceedederror-requested⑤\">requested</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "QuotaExceededError deserialization steps",
+      "html": "Their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#deserialization-steps\" id=\"ref-for-deserialization-steps①\">deserialization steps</a>, given <var>serialized</var> and <var>value</var>, are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Run the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑧\">DOMException</a></code> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#deserialization-steps\" id=\"ref-for-deserialization-steps②\">deserialization steps</a> given <var>serialized</var> and <var>value</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror-quota\" id=\"ref-for-quotaexceedederror-quota⑥\">quota</a> to <var>serialized</var>.[[Quota]].</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror-requested\" id=\"ref-for-quotaexceedederror-requested⑥\">requested</a> to <var>serialized</var>.[[Requested]].</p>"
+        }
+      ]
+    },
+    {
       "name": "union/flattened member types",
       "href": "https://webidl.spec.whatwg.org/#dfn-flattened-union-member-types",
       "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"union\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-flattened-union-member-types\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">flattened member types</dfn>\n    of a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-union-type\" id=\"ref-for-dfn-union-type②③\">union type</a>, possibly <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#annotated-types\" id=\"ref-for-annotated-types②\">annotated</a>, is a set of types determined as\n    follows:",
@@ -515,7 +588,7 @@
           "html": "<p>If <var>V</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-language-types-bigint-type\" id=\"ref-for-sec-ecmascript-language-types-bigint-type\">is a BigInt</a>, then\nreturn the result of <a href=\"https://webidl.spec.whatwg.org/#js-to-bigint\">converting</a> <var>V</var>\nto a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-bigint\" id=\"ref-for-idl-bigint⑥\">bigint</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>V</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-language-types-string-type\" id=\"ref-for-sec-ecmascript-language-types-string-type\">is a String</a>, then\nreturn the result of <a href=\"https://webidl.spec.whatwg.org/#js-to-DOMString\">converting</a> <var>V</var>\nto a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString③②\">DOMString</a></code>.</p>"
+          "html": "<p>If <var>V</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-language-types-string-type\" id=\"ref-for-sec-ecmascript-language-types-string-type\">is a String</a>, then\nreturn the result of <a href=\"https://webidl.spec.whatwg.org/#js-to-DOMString\">converting</a> <var>V</var>\nto a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString③③\">DOMString</a></code>.</p>"
         },
         {
           "html": "<p>If <var>V</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-language-types-symbol-type\" id=\"ref-for-sec-ecmascript-language-types-symbol-type\">is a Symbol</a>, then\nreturn the result of <a href=\"https://webidl.spec.whatwg.org/#js-symbol\">converting</a> <var>V</var>\nto a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-symbol\" id=\"ref-for-idl-symbol②\">symbol</a></code>.</p>"
@@ -847,7 +920,7 @@
     {
       "name": "convert a JavaScript value to double",
       "href": "https://webidl.spec.whatwg.org/#js-to-double",
-      "html": "A JavaScript value <var>V</var> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value①③\">converted</a>\n    to an IDL <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-idl-double①⓪\">double</a></code> value by running the following algorithm:",
+      "html": "A JavaScript value <var>V</var> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value①③\">converted</a>\n    to an IDL <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-idl-double①④\">double</a></code> value by running the following algorithm:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -857,7 +930,7 @@
           "html": "<p>If <var>x</var> is <emu-val>NaN</emu-val>, +∞, or −∞,\nthen <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#javascript-throw\" id=\"ref-for-javascript-throw④\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror④\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>Return the IDL <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-idl-double①①\">double</a></code> value\nthat represents the same numeric value as <var>x</var>.</p>"
+          "html": "<p>Return the IDL <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-idl-double①⑤\">double</a></code> value\nthat represents the same numeric value as <var>x</var>.</p>"
         }
       ]
     },
@@ -946,17 +1019,17 @@
     {
       "name": "convert a JavaScript value to DOMString",
       "href": "https://webidl.spec.whatwg.org/#js-to-DOMString",
-      "html": "A JavaScript value <var>V</var> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value①⑥\">converted</a>\n    to an IDL <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString③③\">DOMString</a></code> value by running the following algorithm:",
+      "html": "A JavaScript value <var>V</var> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value①⑥\">converted</a>\n    to an IDL <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString③④\">DOMString</a></code> value by running the following algorithm:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>V</var> is <emu-val>null</emu-val> and the conversion is to an IDL type\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-type-extended-attribute-associated-with\" id=\"ref-for-idl-type-extended-attribute-associated-with⑥\">associated with</a> the [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#LegacyNullToEmptyString\" id=\"ref-for-LegacyNullToEmptyString①\">LegacyNullToEmptyString</a></code>] extended\nattribute, then return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString③④\">DOMString</a></code> value that represents the empty string.</p>"
+          "html": "<p>If <var>V</var> is <emu-val>null</emu-val> and the conversion is to an IDL type\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-type-extended-attribute-associated-with\" id=\"ref-for-idl-type-extended-attribute-associated-with⑥\">associated with</a> the [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#LegacyNullToEmptyString\" id=\"ref-for-LegacyNullToEmptyString①\">LegacyNullToEmptyString</a></code>] extended\nattribute, then return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString③⑤\">DOMString</a></code> value that represents the empty string.</p>"
         },
         {
           "html": "<p>Let <var>x</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑥\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tostring\" id=\"ref-for-sec-tostring②\">ToString</a>(<var>V</var>).</p>"
         },
         {
-          "html": "<p>Return the IDL <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString③⑤\">DOMString</a></code> value that represents the same sequence of code units as the one the JavaScript String value <var>x</var> represents.</p>"
+          "html": "<p>Return the IDL <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString③⑥\">DOMString</a></code> value that represents the same sequence of code units as the one the JavaScript String value <var>x</var> represents.</p>"
         }
       ]
     },
@@ -984,7 +1057,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>string</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value①⑨\">converting</a> <var>V</var>\nto a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString③⑧\">DOMString</a></code>.</p>"
+          "html": "<p>Let <var>string</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value①⑨\">converting</a> <var>V</var>\nto a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString③⑨\">DOMString</a></code>.</p>"
         },
         {
           "html": "<p>Return an IDL <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString①①\">USVString</a></code> value that is the result of\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\" id=\"ref-for-javascript-string-convert\">converting</a> <var>string</var> to a sequence of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value\" id=\"ref-for-scalar-value⑨\">scalar values</a>.</p>"
@@ -3023,7 +3096,7 @@
               "html": "<p>Let <var>object</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#internally-create-a-new-object-implementing-the-interface\" id=\"ref-for-internally-create-a-new-object-implementing-the-interface\">internally creating a new object implementing</a> <var>I</var>, with <var>realm</var> and\n<code class=\"idl\"><a data-link-type=\"idl\" data-refhint-key=\"d89aa3d8\" href=\"https://tc39.es/ecma262/#sec-built-in-function-objects\" id=\"ref-for-sec-built-in-function-objects⑥\">NewTarget</a></code>.</p>"
             },
             {
-              "html": "<p>Perform the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#constructor-steps\" id=\"ref-for-constructor-steps②\">constructor steps</a> of <var>constructor</var>\nwith <var>object</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a> and <var>values</var> as the argument values.</p>"
+              "html": "<p>Perform the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#constructor-steps\" id=\"ref-for-constructor-steps②\">constructor steps</a> of <var>constructor</var>\nwith <var>object</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧\">this</a> and <var>values</var> as the argument values.</p>"
             },
             {
               "html": "<p>Let <var>O</var> be <var>object</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-idl-to-javascript-value\" id=\"ref-for-dfn-convert-idl-to-javascript-value⑤⑤\">converted to a JavaScript value</a>.</p>"
@@ -3130,7 +3203,7 @@
               "html": "<p>Let <var>object</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#internally-create-a-new-object-implementing-the-interface\" id=\"ref-for-internally-create-a-new-object-implementing-the-interface①\">internally creating a new object implementing</a> <var>I</var>, with <var>realm</var> and\n<code class=\"idl\"><a data-link-type=\"idl\" data-refhint-key=\"d89aa3d8\" href=\"https://tc39.es/ecma262/#sec-built-in-function-objects\" id=\"ref-for-sec-built-in-function-objects⑨\">NewTarget</a></code>.</p>"
             },
             {
-              "html": "<p>Perform the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#constructor-steps\" id=\"ref-for-constructor-steps③\">constructor steps</a> of <var>constructor</var>\nwith <var>object</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②③\">this</a> and <var>values</var> as the argument values.</p>"
+              "html": "<p>Perform the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#constructor-steps\" id=\"ref-for-constructor-steps③\">constructor steps</a> of <var>constructor</var>\nwith <var>object</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a> and <var>values</var> as the argument values.</p>"
             },
             {
               "html": "<p>Let <var>O</var> be <var>object</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-idl-to-javascript-value\" id=\"ref-for-dfn-convert-idl-to-javascript-value⑤⑥\">converted to a JavaScript value</a>.</p>"
@@ -3188,7 +3261,7 @@
           "html": "<p>Otherwise, if <var>interface</var> is declared to inherit from another interface,\nthen set <var>proto</var> to the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface-prototype-object\" id=\"ref-for-dfn-interface-prototype-object①②\">interface prototype object</a> in <var>realm</var>\nof that <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-inherited-interfaces\" id=\"ref-for-dfn-inherited-interfaces①⑧\">inherited interface</a>.</p>"
         },
         {
-          "html": "<p>Otherwise, if <var>interface</var> is the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④⓪\">DOMException</a></code> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑧⓪\">interface</a>,\nthen set <var>proto</var> to <var>realm</var>.[[Intrinsics]].[[<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-properties-of-the-error-prototype-object\" id=\"ref-for-sec-properties-of-the-error-prototype-object\">%Error.prototype%</a></code>]].</p>"
+          "html": "<p>Otherwise, if <var>interface</var> is the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④④\">DOMException</a></code> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑧⓪\">interface</a>,\nthen set <var>proto</var> to <var>realm</var>.[[Intrinsics]].[[<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-properties-of-the-error-prototype-object\" id=\"ref-for-sec-properties-of-the-error-prototype-object\">%Error.prototype%</a></code>]].</p>"
         },
         {
           "html": "<p>Otherwise, set <var>proto</var> to <var>realm</var>.[[Intrinsics]].[[<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-properties-of-the-object-prototype-object\" id=\"ref-for-sec-properties-of-the-object-prototype-object④\">%Object.prototype%</a></code>]].</p>"
@@ -3590,7 +3663,7 @@
                   ]
                 },
                 {
-                  "html": "<p>Let <var>R</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#getter-steps\" id=\"ref-for-getter-steps⑤\">getter steps</a> of <var>attribute</var> with\n<var>idlObject</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②④\">this</a>.</p>"
+                  "html": "<p>Let <var>R</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#getter-steps\" id=\"ref-for-getter-steps⑤\">getter steps</a> of <var>attribute</var> with\n<var>idlObject</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>.</p>"
                 },
                 {
                   "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-idl-to-javascript-value\" id=\"ref-for-dfn-convert-idl-to-javascript-value⑤⑨\">converting</a> <var>R</var> to a\nJavaScript value of the type <var>attribute</var> is declared as.</p>"
@@ -3795,7 +3868,7 @@
               ]
             },
             {
-              "html": "<p>Perform the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#setter-steps\" id=\"ref-for-setter-steps④\">setter steps</a> of <var>attribute</var>,\nwith <var>idlObject</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑤\">this</a> and <var>idlValue</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#the-given-value\" id=\"ref-for-the-given-value②\">the given value</a>.</p>"
+              "html": "<p>Perform the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#setter-steps\" id=\"ref-for-setter-steps④\">setter steps</a> of <var>attribute</var>,\nwith <var>idlObject</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①\">this</a> and <var>idlValue</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#the-given-value\" id=\"ref-for-the-given-value②\">the given value</a>.</p>"
             },
             {
               "html": "<p>Return <emu-val>undefined</emu-val></p>"
@@ -3954,12 +4027,12 @@
                       "html": "<p class=\"assertion\">Assert: <var>operation</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#has-default-method-steps\" id=\"ref-for-has-default-method-steps①\">has default method steps</a>.</p>"
                     },
                     {
-                      "html": "<p>Set <var>R</var> to the result of running the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#default-method-steps\" id=\"ref-for-default-method-steps①\">default method steps</a> for <var>operation</var>,\nwith <var>idlObject</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑦\">this</a> and <var>values</var> as the argument values.</p>"
+                      "html": "<p>Set <var>R</var> to the result of running the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#default-method-steps\" id=\"ref-for-default-method-steps①\">default method steps</a> for <var>operation</var>,\nwith <var>idlObject</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③\">this</a> and <var>values</var> as the argument values.</p>"
                     }
                   ]
                 },
                 {
-                  "html": "<p>Otherwise, set <var>R</var> to the result of running the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#method-steps\" id=\"ref-for-method-steps⑦\">method steps</a> of <var>operation</var>,\nwith <var>idlObject</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧\">this</a> and <var>values</var> as the argument values.</p>"
+                  "html": "<p>Otherwise, set <var>R</var> to the result of running the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#method-steps\" id=\"ref-for-method-steps⑦\">method steps</a> of <var>operation</var>,\nwith <var>idlObject</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a> and <var>values</var> as the argument values.</p>"
                 },
                 {
                   "html": "<p>Return <var>R</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-idl-to-javascript-value\" id=\"ref-for-dfn-convert-idl-to-javascript-value⑥⓪\">converted to a JavaScript value</a>.</p>\n          <p class=\"XXX\"> <var>R</var> is assumed to be an IDL value of the type <var>op</var> is declared to return. <a href=\"https://github.com/whatwg/webidl/issues/674\">[whatwg/webidl Issue #674]</a></p>"
@@ -4015,7 +4088,7 @@
           "html": "<p>Let <var>stack</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#create-an-inheritance-stack\" id=\"ref-for-create-an-inheritance-stack\">creating an inheritance stack</a>\nfor <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②⓪③\">interface</a> <var>I</var>.</p>"
         },
         {
-          "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#collect-attribute-values-of-an-inheritance-stack\" id=\"ref-for-collect-attribute-values-of-an-inheritance-stack\">collect attribute values of an inheritance stack</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a>, <var>stack</var>, and\n<var>map</var>.</p>"
+          "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#collect-attribute-values-of-an-inheritance-stack\" id=\"ref-for-collect-attribute-values-of-an-inheritance-stack\">collect attribute values of an inheritance stack</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a>, <var>stack</var>, and\n<var>map</var>.</p>"
         },
         {
           "html": "<p>Let <var>result</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryobjectcreate\" id=\"ref-for-sec-ordinaryobjectcreate⑥\">OrdinaryObjectCreate</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-properties-of-the-object-prototype-object\" id=\"ref-for-sec-properties-of-the-object-prototype-object⑥\">%Object.prototype%</a></code>).</p>"
@@ -4071,7 +4144,7 @@
               "html": "<p>Let <var>id</var> be the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier⑧⑥\">identifier</a> of <var>attr</var>.</p>"
             },
             {
-              "html": "<p>Let <var>value</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#getter-steps\" id=\"ref-for-getter-steps⑥\">getter steps</a> of <var>attr</var> with <var>object</var> as\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>.</p>"
+              "html": "<p>Let <var>value</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#getter-steps\" id=\"ref-for-getter-steps⑥\">getter steps</a> of <var>attr</var> with <var>object</var> as\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥\">this</a>.</p>"
             },
             {
               "html": "<p>If <var>value</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-json-types\" id=\"ref-for-dfn-json-types①③\">JSON type</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set③\">set</a> <var>map</var>[<var>id</var>] to <var>value</var>.</p>"
@@ -4142,7 +4215,7 @@
                 },
                 {
                   "case": "on an attribute",
-                  "html": "<p>Set <var>V</var> to the result of running the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#getter-steps\" id=\"ref-for-getter-steps⑦\">getter steps</a> of the attribute\n(or those listed in the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#getter-steps\" id=\"ref-for-getter-steps⑧\">getter steps</a> of the inherited attribute, if this attribute is declared to\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-inherit-getter\" id=\"ref-for-dfn-inherit-getter①\">inherit its getter</a>),\nwith <var>O</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①\">this</a>.</p>"
+                  "html": "<p>Set <var>V</var> to the result of running the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#getter-steps\" id=\"ref-for-getter-steps⑦\">getter steps</a> of the attribute\n(or those listed in the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#getter-steps\" id=\"ref-for-getter-steps⑧\">getter steps</a> of the inherited attribute, if this attribute is declared to\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-inherit-getter\" id=\"ref-for-dfn-inherit-getter①\">inherit its getter</a>),\nwith <var>O</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑦\">this</a>.</p>"
                 }
               ]
             }
@@ -5604,7 +5677,7 @@
           "html": "<p>Let <var>slots</var> be « [[Prototype]], [[Extensible]], [[Realm]], [[PrimaryInterface]] ».</p>"
         },
         {
-          "html": "<p>If <var>interface</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④①\">DOMException</a></code>, append [[ErrorData]] to <var>slots</var>.</p>"
+          "html": "<p>If <var>interface</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④⑤\">DOMException</a></code>, append [[ErrorData]] to <var>slots</var>.</p>"
         },
         {
           "html": "<p>Let <var>instance</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-makebasicobject\" id=\"ref-for-sec-makebasicobject②\">MakeBasicObject</a>(<var>slots</var>).</p>"
@@ -5970,7 +6043,7 @@
               "rationale": "perform",
               "steps": [
                 {
-                  "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#method-steps\" id=\"ref-for-method-steps⑧\">method steps</a> of <var>operation</var> with <var>O</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③\">this</a> and « <var>P</var> » as the\nargument values.</p>"
+                  "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#method-steps\" id=\"ref-for-method-steps⑧\">method steps</a> of <var>operation</var> with <var>O</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑨\">this</a> and « <var>P</var> » as the\nargument values.</p>"
                 },
                 {
                   "html": "<p>If <var>operation</var> was declared with a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-return-type\" id=\"ref-for-dfn-return-type⑦\">return type</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-boolean\" id=\"ref-for-idl-boolean②②\">boolean</a></code>\nand the steps returned <emu-val>false</emu-val>, then return <emu-val>false</emu-val>.</p>"
@@ -6138,7 +6211,7 @@
           ]
         },
         {
-          "html": "<p>Otherwise, <var>operation</var> was defined with an identifier.  Perform the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#method-steps\" id=\"ref-for-method-steps⑨\">method steps</a> of\n<var>operation</var> with <var>O</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a> and « <var>index</var>, <var>value</var> » as the argument values.</p>"
+          "html": "<p>Otherwise, <var>operation</var> was defined with an identifier.  Perform the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#method-steps\" id=\"ref-for-method-steps⑨\">method steps</a> of\n<var>operation</var> with <var>O</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⓪\">this</a> and « <var>index</var>, <var>value</var> » as the argument values.</p>"
         }
       ]
     },
@@ -6173,7 +6246,7 @@
           ]
         },
         {
-          "html": "<p>Otherwise, <var>operation</var> was defined with an identifier.  Perform the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#method-steps\" id=\"ref-for-method-steps①⓪\">method steps</a> of\n<var>operation</var> with <var>O</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a> and « <var>P</var>, <var>value</var> » as the argument values.</p>"
+          "html": "<p>Otherwise, <var>operation</var> was defined with an identifier.  Perform the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#method-steps\" id=\"ref-for-method-steps①⓪\">method steps</a> of\n<var>operation</var> with <var>O</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④①\">this</a> and « <var>P</var>, <var>value</var> » as the argument values.</p>"
         }
       ]
     },
@@ -6204,7 +6277,7 @@
                   "html": "<p>If <var>operation</var> was defined without an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier⑨⑥\">identifier</a>, then\nset <var>value</var> to the result of performing the steps listed in the interface description to\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-determine-the-value-of-an-indexed-property\" id=\"ref-for-dfn-determine-the-value-of-an-indexed-property\">determine the value of an indexed property</a>\nwith <var>index</var> as the index.</p>"
                 },
                 {
-                  "html": "<p>Otherwise, <var>operation</var> was defined with an identifier.  Set <var>value</var> to the result\nof performing the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#method-steps\" id=\"ref-for-method-steps①①\">method steps</a> of <var>operation</var> with <var>O</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥\">this</a> and «\n<var>index</var> » as the argument values.</p>"
+                  "html": "<p>Otherwise, <var>operation</var> was defined with an identifier.  Set <var>value</var> to the result\nof performing the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#method-steps\" id=\"ref-for-method-steps①①\">method steps</a> of <var>operation</var> with <var>O</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④②\">this</a> and «\n<var>index</var> » as the argument values.</p>"
                 },
                 {
                   "html": "<p>Let <var>desc</var> be a newly created <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-property-descriptor-specification-type\" id=\"ref-for-sec-property-descriptor-specification-type②\">Property Descriptor</a> with no fields.</p>"
@@ -6246,7 +6319,7 @@
                   "html": "<p>If <var>operation</var> was defined without an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier⑨⑦\">identifier</a>, then\nset <var>value</var> to the result of performing the steps listed in the interface description to\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-determine-the-value-of-a-named-property\" id=\"ref-for-dfn-determine-the-value-of-a-named-property①\">determine the value of a named property</a>\nwith <var>P</var> as the name.</p>"
                 },
                 {
-                  "html": "<p>Otherwise, <var>operation</var> was defined with an identifier.  Set <var>value</var> to the result\nof performing the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#method-steps\" id=\"ref-for-method-steps①②\">method steps</a> of <var>operation</var> with <var>O</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑦\">this</a> and « <var>P</var> »\nas the argument values.</p>"
+                  "html": "<p>Otherwise, <var>operation</var> was defined with an identifier.  Set <var>value</var> to the result\nof performing the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#method-steps\" id=\"ref-for-method-steps①②\">method steps</a> of <var>operation</var> with <var>O</var> as <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④③\">this</a> and « <var>P</var> »\nas the argument values.</p>"
                 },
                 {
                   "html": "<p>Let <var>desc</var> be a newly created <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-property-descriptor-specification-type\" id=\"ref-for-sec-property-descriptor-specification-type③\">Property Descriptor</a> with no fields.</p>"
@@ -6643,7 +6716,7 @@
           "html": "<p>Let <var>numberLen</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑤⑦\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tonumber\" id=\"ref-for-sec-tonumber⑤\">ToNumber</a>(<var>newLen</var>).</p>"
         },
         {
-          "html": "<p>If <var>uint32Len</var> ≠ <var>numberLen</var>, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror②\">RangeError</a></code> exception.</p>"
+          "html": "<p>If <var>uint32Len</var> ≠ <var>numberLen</var>, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror⑤\">RangeError</a></code> exception.</p>"
         },
         {
           "html": "<p>Let <var>oldLen</var> be <var>handler</var>.[[BackingList]]'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⑧\">size</a>.</p>"
@@ -7092,7 +7165,7 @@
     },
     {
       "name": "to create a simple exception",
-      "html": "To <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑤\">create</a> a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-simple-exception\" id=\"ref-for-dfn-simple-exception④\">simple exception</a> of type <var>T</var>:",
+      "html": "To <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑥\">create</a> a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-simple-exception\" id=\"ref-for-dfn-simple-exception④\">simple exception</a> of type <var>T</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -7111,14 +7184,14 @@
     },
     {
       "name": "to create a DOMException",
-      "html": "To <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑥\">create</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④⑦\">DOMException</a></code> given a string <var>name</var>:",
+      "html": "To <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑦\">create</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤①\">DOMException</a></code> given a string <var>name</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p class=\"assertion\">Assert: <var>name</var> appears in the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-error-names-table\" id=\"ref-for-dfn-error-names-table②\"><code>DOMException</code> names table</a>.</p>"
         },
         {
-          "html": "<p>Let <var>ex</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④⑧\">DOMException</a></code> created in the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm③\">current realm</a>.</p>"
+          "html": "<p>Let <var>ex</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤②\">DOMException</a></code> created in the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm③\">current realm</a>.</p>"
         },
         {
           "html": "<p>Set <var>ex</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#domexception-name\" id=\"ref-for-domexception-name①⓪\">name</a> to <var>name</var>.</p>"
@@ -7133,7 +7206,7 @@
     },
     {
       "name": "to create a DOMException derived interface",
-      "html": "To <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑦\">create</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④⑨\">DOMException</a></code> derived interface given the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②⑤①\">interface</a>\n    <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier①⓪④\">identifier</a> <var>type</var> and additional initialization instructions:",
+      "html": "To <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑧\">create</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤③\">DOMException</a></code> derived interface given the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②⑤①\">interface</a>\n    <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier①⓪④\">identifier</a> <var>type</var> and additional initialization instructions:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -7155,11 +7228,11 @@
     },
     {
       "name": "throw an exception",
-      "html": "To <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\" id=\"ref-for-dfn-exception\">exception</a>:",
+      "html": "To <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throw</a> an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\" id=\"ref-for-dfn-exception\">exception</a>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>O</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑧\">creating an exception</a> with the same\narguments.</p>"
+          "html": "<p>Let <var>O</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑨\">creating an exception</a> with the same\narguments.</p>"
         },
         {
           "html": "<p>Throw <var>O</var>.</p>"
@@ -7173,10 +7246,10 @@
       "rationale": "set",
       "steps": [
         {
-          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#domexception-name\" id=\"ref-for-domexception-name①②\">name</a> to <var>name</var>.</p>"
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#domexception-name\" id=\"ref-for-domexception-name①②\">name</a> to <var>name</var>.</p>"
         },
         {
-          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#domexception-message\" id=\"ref-for-domexception-message④\">message</a> to <var>message</var>.</p>"
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#domexception-message\" id=\"ref-for-domexception-message④\">message</a> to <var>message</var>.</p>"
         }
       ]
     },
