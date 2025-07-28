@@ -1,15 +1,19 @@
-From 1b5252d6e101f6889f4b80de5bcc173c770f6385 Mon Sep 17 00:00:00 2001
+From 74e86e15794ecb5a4bc09b280e86b0950e656b60 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Mon, 28 Jul 2025 08:41:35 +0200
-Subject: [PATCH] Convert `async iterable` to `async_iterable`
+Date: Mon, 28 Jul 2025 09:01:40 +0200
+Subject: [PATCH] Drop monkey patches of Web Locks and fix `async_iterable`
 
-Pending https://github.com/WICG/shared-storage/pull/237
+Pending integration in Web Locks. No specific issue but patch will fail
+once done.
+
+`async_iterable` update pending:
+https://github.com/WICG/shared-storage/pull/237
 ---
- ed/idl/shared-storage.idl | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ ed/idl/shared-storage.idl | 8 +-------
+ 1 file changed, 1 insertion(+), 7 deletions(-)
 
 diff --git a/ed/idl/shared-storage.idl b/ed/idl/shared-storage.idl
-index 0ea5fbefc2..d68cea4089 100644
+index 0ea5fbefc2..d44997faf1 100644
 --- a/ed/idl/shared-storage.idl
 +++ b/ed/idl/shared-storage.idl
 @@ -105,7 +105,7 @@ interface SharedStorage {
@@ -21,6 +25,16 @@ index 0ea5fbefc2..d68cea4089 100644
  };
  
  dictionary SharedStoragePrivateAggregationConfig {
+@@ -143,9 +143,3 @@ partial dictionary RequestInit {
+ ] interface SharedStorageWorkletNavigator {};
+ 
+ SharedStorageWorkletNavigator includes NavigatorLocks;
+-
+-[SecureContext, Exposed=(Window,Worker,SharedStorageWorklet)]
+-interface LockManager {};
+-
+-[SecureContext, Exposed=(Window,Worker,SharedStorageWorklet)]
+-interface Lock {};
 -- 
 2.37.1.windows.1
 
