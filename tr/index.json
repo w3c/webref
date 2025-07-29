@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-07-28T01:37:22.173Z",
+  "date": "2025-07-29T01:54:50.325Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -17,6 +17,7 @@
       "compat",
       "compression",
       "console",
+      "cookiestore",
       "partitioned-cookies",
       "client-hint-reliability",
       "compression-dictionary",
@@ -193,7 +194,6 @@
       "capability-delegation",
       "client-hints-infrastructure",
       "content-index",
-      "cookie-store",
       "crash-reporting",
       "csp-next",
       "css-parser-api",
@@ -616,6 +616,7 @@
       "trace-context-protocols-registry",
       "trusted-types",
       "ttml-imsc1.2",
+      "ttml-imsc1.3",
       "ttml2",
       "uievents-code",
       "uievents-key",
@@ -627,6 +628,9 @@
       "vc-data-model-2.0",
       "vc-di-bbs",
       "vc-di-ecdsa",
+      "vc-di-eddsa",
+      "vc-jose-cose",
+      "vc-json-schema",
       "vibration",
       "virtual-keyboard",
       "vocab-dcat-3",
@@ -715,10 +719,10 @@
     ]
   },
   "stats": {
-    "crawled": 381,
+    "crawled": 385,
     "errors": 0
   },
-  "crawler": "reffy-19.1.5",
+  "crawler": "reffy-19.1.6",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -764,7 +768,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "28 July 2025",
+      "date": "29 July 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -18898,11 +18902,11 @@
       ],
       "crawled": "https://www.w3.org/TR/shacl12-core/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 21 Jul 2025 13:47:31 GMT"
+        "lastModified": "Mon, 28 Jul 2025 15:07:40 GMT"
       },
       "generator": "respec",
-      "date": "21 July 2025",
-      "revision": "9087b46628d3444a7546edcf685cce8161511b66",
+      "date": "28 July 2025",
+      "revision": "0fac3077735033cf9de73d86bf90953b91c6e8e7",
       "algorithms": "algorithms/shacl12-core.json",
       "links": "links/shacl12-core.json",
       "refs": "refs/shacl12-core.json",
@@ -20452,18 +20456,18 @@
         "title": "TTML Profiles for Internet Media Subtitles and Captions",
         "shortTitle": "TTML Profiles for Internet Media Subtitles and Captions",
         "releaseUrl": "https://www.w3.org/TR/ttml-imsc/",
-        "nightlyUrl": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html"
+        "nightlyUrl": "https://www.w3.org/TR/ttml-imsc/"
       },
       "seriesVersion": "1.2",
       "nightly": {
-        "url": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html",
+        "url": "https://www.w3.org/TR/ttml-imsc1.2/",
         "status": "Editor's Draft",
         "sourcePath": "imsc1/spec/ttml-ww-profiles.html",
         "alternateUrls": [],
-        "repository": "https://github.com/w3c/imsc",
         "filename": "ttml-ww-profiles.html"
       },
       "categories": [],
+      "seriesNext": "ttml-imsc1.3",
       "organization": "W3C",
       "groups": [
         {
@@ -20481,8 +20485,7 @@
       "shortTitle": "TTML Profiles for Internet Media Subtitles and Captions 1.2",
       "standing": "good",
       "versions": [
-        "https://www.w3.org/TR/ttml-imsc1.2/",
-        "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html"
+        "https://www.w3.org/TR/ttml-imsc1.2/"
       ],
       "crawled": "https://www.w3.org/TR/ttml-imsc1.2/",
       "crawlCacheInfo": {
@@ -20496,6 +20499,62 @@
       "dfns": "dfns/ttml-imsc1.2.json",
       "headings": "headings/ttml-imsc1.2.json",
       "ids": "ids/ttml-imsc1.2.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/ttml-imsc1.3/",
+      "seriesComposition": "full",
+      "shortname": "ttml-imsc1.3",
+      "series": {
+        "shortname": "ttml-imsc",
+        "currentSpecification": "ttml-imsc1.2",
+        "title": "TTML Profiles for Internet Media Subtitles and Captions",
+        "shortTitle": "TTML Profiles for Internet Media Subtitles and Captions",
+        "releaseUrl": "https://www.w3.org/TR/ttml-imsc/",
+        "nightlyUrl": "https://www.w3.org/TR/ttml-imsc/"
+      },
+      "seriesVersion": "1.3",
+      "nightly": {
+        "url": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html",
+        "status": "Editor's Draft",
+        "sourcePath": "imsc1/spec/ttml-ww-profiles.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/imsc",
+        "filename": "ttml-ww-profiles.html"
+      },
+      "categories": [],
+      "seriesPrevious": "ttml-imsc1.2",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Timed Text Working Group",
+          "url": "https://www.w3.org/AudioVideo/TT/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/ttml-imsc1.3/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "title": "IMSC Text Profile 1.3",
+      "source": "w3c",
+      "shortTitle": "IMSC Text Profile 1.3",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/ttml-imsc1.3/",
+        "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html"
+      ],
+      "crawled": "https://www.w3.org/TR/ttml-imsc1.3/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 17 Jul 2025 02:04:40 GMT"
+      },
+      "generator": "respec",
+      "date": "22 July 2025",
+      "links": "links/ttml-imsc1.3.json",
+      "refs": "refs/ttml-imsc1.3.json",
+      "dfns": "dfns/ttml-imsc1.3.json",
+      "headings": "headings/ttml-imsc1.3.json",
+      "ids": "ids/ttml-imsc1.3.json",
       "cddl": []
     },
     {
@@ -21135,6 +21194,171 @@
       "dfns": "dfns/vc-di-ecdsa.json",
       "headings": "headings/vc-di-ecdsa.json",
       "ids": "ids/vc-di-ecdsa.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/vc-di-eddsa/",
+      "seriesComposition": "full",
+      "shortname": "vc-di-eddsa",
+      "series": {
+        "shortname": "vc-di-eddsa",
+        "currentSpecification": "vc-di-eddsa",
+        "title": "EdDSA Cryptosuite",
+        "shortTitle": "EdDSA Cryptosuite",
+        "releaseUrl": "https://www.w3.org/TR/vc-di-eddsa/",
+        "nightlyUrl": "https://w3c.github.io/vc-di-eddsa/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-di-eddsa/",
+        "status": "Recommendation",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-di-eddsa/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-di-eddsa",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Data Integrity EdDSA Cryptosuites v1.0",
+      "source": "w3c",
+      "shortTitle": "Data Integrity EdDSA Cryptosuites v1.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-di-eddsa/",
+        "https://w3c.github.io/vc-di-eddsa/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-di-eddsa/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 05 May 2025 13:40:59 GMT"
+      },
+      "generator": "respec",
+      "date": "15 May 2025",
+      "algorithms": "algorithms/vc-di-eddsa.json",
+      "links": "links/vc-di-eddsa.json",
+      "refs": "refs/vc-di-eddsa.json",
+      "dfns": "dfns/vc-di-eddsa.json",
+      "headings": "headings/vc-di-eddsa.json",
+      "ids": "ids/vc-di-eddsa.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/vc-jose-cose/",
+      "seriesComposition": "full",
+      "shortname": "vc-jose-cose",
+      "series": {
+        "shortname": "vc-jose-cose",
+        "currentSpecification": "vc-jose-cose",
+        "title": "Securing Verifiable Credentials using JOSE and COSE",
+        "shortTitle": "Securing Verifiable Credentials using JOSE and COSE",
+        "releaseUrl": "https://www.w3.org/TR/vc-jose-cose/",
+        "nightlyUrl": "https://w3c.github.io/vc-jose-cose/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-jose-cose/",
+        "status": "Recommendation",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-jose-cose/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-jose-cose",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Securing Verifiable Credentials using JOSE and COSE",
+      "source": "w3c",
+      "shortTitle": "Securing Verifiable Credentials using JOSE and COSE",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-jose-cose/",
+        "https://w3c.github.io/vc-jose-cose/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-jose-cose/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 05 May 2025 13:52:01 GMT"
+      },
+      "generator": "respec",
+      "date": "15 May 2025",
+      "algorithms": "algorithms/vc-jose-cose.json",
+      "links": "links/vc-jose-cose.json",
+      "refs": "refs/vc-jose-cose.json",
+      "dfns": "dfns/vc-jose-cose.json",
+      "headings": "headings/vc-jose-cose.json",
+      "ids": "ids/vc-jose-cose.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/vc-json-schema/",
+      "seriesComposition": "full",
+      "shortname": "vc-json-schema",
+      "series": {
+        "shortname": "vc-json-schema",
+        "currentSpecification": "vc-json-schema",
+        "title": "Verifiable Credentials JSON Schema Specification",
+        "shortTitle": "Verifiable Credentials JSON Schema",
+        "releaseUrl": "https://www.w3.org/TR/vc-json-schema/",
+        "nightlyUrl": "https://w3c.github.io/vc-json-schema/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-json-schema/",
+        "status": "Candidate Recommendation Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-json-schema/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-json-schema",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Verifiable Credentials JSON Schema Specification",
+      "source": "w3c",
+      "shortTitle": "Verifiable Credentials JSON Schema",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-json-schema/",
+        "https://w3c.github.io/vc-json-schema/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-json-schema/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 04 Feb 2025 20:33:01 GMT"
+      },
+      "generator": "respec",
+      "date": "04 February 2025",
+      "revision": "660d69c6cde4288173c71861d5fcb249673a9e5c",
+      "links": "links/vc-json-schema.json",
+      "refs": "refs/vc-json-schema.json",
+      "dfns": "dfns/vc-json-schema.json",
+      "headings": "headings/vc-json-schema.json",
+      "ids": "ids/vc-json-schema.json",
       "cddl": []
     },
     {
@@ -23387,11 +23611,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webdriver-bidi/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 18 Jul 2025 11:00:06 GMT"
+        "lastModified": "Mon, 28 Jul 2025 16:15:46 GMT"
       },
       "generator": "bikeshed",
-      "date": "18 July 2025",
-      "revision": "21c604b6b19fe7b50c69d0a2ad027479c91ac4f2",
+      "date": "28 July 2025",
+      "revision": "db0ca7beca7c6c75e5256d07f305b11e6c0e5c0e",
       "algorithms": "algorithms/webdriver-bidi.json",
       "links": "links/webdriver-bidi.json",
       "refs": "refs/webdriver-bidi.json",

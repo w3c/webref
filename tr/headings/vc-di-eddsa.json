@@ -1,0 +1,639 @@
+{
+  "spec": {
+    "title": "Data Integrity EdDSA Cryptosuites v1.0",
+    "url": "https://www.w3.org/TR/vc-di-eddsa/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#title",
+      "level": 1,
+      "title": "Data Integrity EdDSA Cryptosuites v1.0"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#subtitle",
+      "level": 2,
+      "title": "Achieving Data Integrity using EdDSA with Edwards curves"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "terminology",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "alternateIds": [
+        "x1-1-terminology"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "alternateIds": [
+        "x1-2-conformance"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "data-model",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#data-model",
+      "level": 2,
+      "title": "Data Model",
+      "alternateIds": [
+        "x2-data-model"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "verification-methods",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#verification-methods",
+      "level": 3,
+      "title": "Verification Methods",
+      "alternateIds": [
+        "x2-1-verification-methods"
+      ],
+      "number": "2.1"
+    },
+    {
+      "id": "multikey",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#multikey",
+      "level": 4,
+      "title": "Multikey",
+      "alternateIds": [
+        "x2-1-1-multikey"
+      ],
+      "number": "2.1.1"
+    },
+    {
+      "id": "proof-representations",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#proof-representations",
+      "level": 3,
+      "title": "Proof Representations",
+      "alternateIds": [
+        "x2-2-proof-representations"
+      ],
+      "number": "2.2"
+    },
+    {
+      "id": "dataintegrityproof",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#dataintegrityproof",
+      "level": 4,
+      "title": "DataIntegrityProof",
+      "alternateIds": [
+        "x2-2-1-dataintegrityproof"
+      ],
+      "number": "2.2.1"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "alternateIds": [
+        "x3-algorithms"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "instantiate-cryptosuite",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#instantiate-cryptosuite",
+      "level": 3,
+      "title": "Instantiate Cryptosuite",
+      "alternateIds": [
+        "x3-1-instantiate-cryptosuite"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "eddsa-rdfc-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#eddsa-rdfc-2022",
+      "level": 3,
+      "title": "eddsa-rdfc-2022",
+      "alternateIds": [
+        "x3-2-eddsa-rdfc-2022"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "create-proof-eddsa-rdfc-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#create-proof-eddsa-rdfc-2022",
+      "level": 4,
+      "title": "Create Proof (eddsa-rdfc-2022)",
+      "alternateIds": [
+        "x3-2-1-create-proof-eddsa-rdfc-2022"
+      ],
+      "number": "3.2.1"
+    },
+    {
+      "id": "verify-proof-eddsa-rdfc-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#verify-proof-eddsa-rdfc-2022",
+      "level": 4,
+      "title": "Verify Proof (eddsa-rdfc-2022)",
+      "alternateIds": [
+        "x3-2-2-verify-proof-eddsa-rdfc-2022"
+      ],
+      "number": "3.2.2"
+    },
+    {
+      "id": "transformation-eddsa-rdfc-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#transformation-eddsa-rdfc-2022",
+      "level": 4,
+      "title": "Transformation (eddsa-rdfc-2022)",
+      "alternateIds": [
+        "x3-2-3-transformation-eddsa-rdfc-2022"
+      ],
+      "number": "3.2.3"
+    },
+    {
+      "id": "hashing-eddsa-rdfc-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#hashing-eddsa-rdfc-2022",
+      "level": 4,
+      "title": "Hashing (eddsa-rdfc-2022)",
+      "alternateIds": [
+        "x3-2-4-hashing-eddsa-rdfc-2022"
+      ],
+      "number": "3.2.4"
+    },
+    {
+      "id": "proof-configuration-eddsa-rdfc-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#proof-configuration-eddsa-rdfc-2022",
+      "level": 4,
+      "title": "Proof Configuration (eddsa-rdfc-2022)",
+      "alternateIds": [
+        "x3-2-5-proof-configuration-eddsa-rdfc-2022"
+      ],
+      "number": "3.2.5"
+    },
+    {
+      "id": "proof-serialization-eddsa-rdfc-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#proof-serialization-eddsa-rdfc-2022",
+      "level": 4,
+      "title": "Proof Serialization (eddsa-rdfc-2022)",
+      "alternateIds": [
+        "x3-2-6-proof-serialization-eddsa-rdfc-2022"
+      ],
+      "number": "3.2.6"
+    },
+    {
+      "id": "proof-verification-eddsa-rdfc-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#proof-verification-eddsa-rdfc-2022",
+      "level": 4,
+      "title": "Proof Verification (eddsa-rdfc-2022)",
+      "alternateIds": [
+        "x3-2-7-proof-verification-eddsa-rdfc-2022"
+      ],
+      "number": "3.2.7"
+    },
+    {
+      "id": "eddsa-jcs-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#eddsa-jcs-2022",
+      "level": 3,
+      "title": "eddsa-jcs-2022",
+      "alternateIds": [
+        "x3-3-eddsa-jcs-2022"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "create-proof-eddsa-jcs-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#create-proof-eddsa-jcs-2022",
+      "level": 4,
+      "title": "Create Proof (eddsa-jcs-2022)",
+      "alternateIds": [
+        "x3-3-1-create-proof-eddsa-jcs-2022"
+      ],
+      "number": "3.3.1"
+    },
+    {
+      "id": "verify-proof-eddsa-jcs-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#verify-proof-eddsa-jcs-2022",
+      "level": 4,
+      "title": "Verify Proof (eddsa-jcs-2022)",
+      "alternateIds": [
+        "x3-3-2-verify-proof-eddsa-jcs-2022"
+      ],
+      "number": "3.3.2"
+    },
+    {
+      "id": "transformation-eddsa-jcs-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#transformation-eddsa-jcs-2022",
+      "level": 4,
+      "title": "Transformation (eddsa-jcs-2022)",
+      "alternateIds": [
+        "x3-3-3-transformation-eddsa-jcs-2022"
+      ],
+      "number": "3.3.3"
+    },
+    {
+      "id": "hashing-eddsa-jcs-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#hashing-eddsa-jcs-2022",
+      "level": 4,
+      "title": "Hashing (eddsa-jcs-2022)",
+      "alternateIds": [
+        "x3-3-4-hashing-eddsa-jcs-2022"
+      ],
+      "number": "3.3.4"
+    },
+    {
+      "id": "proof-configuration-eddsa-jcs-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#proof-configuration-eddsa-jcs-2022",
+      "level": 4,
+      "title": "Proof Configuration (eddsa-jcs-2022)",
+      "alternateIds": [
+        "x3-3-5-proof-configuration-eddsa-jcs-2022"
+      ],
+      "number": "3.3.5"
+    },
+    {
+      "id": "proof-serialization-eddsa-jcs-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#proof-serialization-eddsa-jcs-2022",
+      "level": 4,
+      "title": "Proof Serialization (eddsa-jcs-2022)",
+      "alternateIds": [
+        "x3-3-6-proof-serialization-eddsa-jcs-2022"
+      ],
+      "number": "3.3.6"
+    },
+    {
+      "id": "proof-verification-eddsa-jcs-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#proof-verification-eddsa-jcs-2022",
+      "level": 4,
+      "title": "Proof Verification (eddsa-jcs-2022)",
+      "alternateIds": [
+        "x3-3-7-proof-verification-eddsa-jcs-2022"
+      ],
+      "number": "3.3.7"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "x4-security-considerations"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "security-properties-of-ed25519-implementations",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#security-properties-of-ed25519-implementations",
+      "level": 3,
+      "title": "Security Properties of Ed25519 Implementations",
+      "alternateIds": [
+        "x4-1-security-properties-of-ed25519-implementations"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "signature-security-properties",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#signature-security-properties",
+      "level": 4,
+      "title": "Signature Security Properties",
+      "alternateIds": [
+        "x4-1-1-signature-security-properties"
+      ],
+      "number": "4.1.1"
+    },
+    {
+      "id": "achieving-ed25519-security-properties",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#achieving-ed25519-security-properties",
+      "level": 4,
+      "title": "Achieving Ed25519 Security Properties",
+      "alternateIds": [
+        "x4-1-2-achieving-ed25519-security-properties"
+      ],
+      "number": "4.1.2"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "x5-privacy-considerations"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "selective-and-unlinkable-disclosure",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#selective-and-unlinkable-disclosure",
+      "level": 3,
+      "title": "Selective and Unlinkable Disclosure",
+      "alternateIds": [
+        "x5-1-selective-and-unlinkable-disclosure"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "the-ed25519signature2020-suite",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#the-ed25519signature2020-suite",
+      "level": 2,
+      "title": "The Ed25519Signature2020 Suite",
+      "alternateIds": [
+        "a-the-ed25519signature2020-suite"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "data-model-0",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#data-model-0",
+      "level": 3,
+      "title": "Data Model",
+      "alternateIds": [
+        "a-1-data-model"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "verification-methods-0",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#verification-methods-0",
+      "level": 4,
+      "title": "Verification Methods",
+      "alternateIds": [
+        "a-1-1-verification-methods"
+      ],
+      "number": "A.1.1"
+    },
+    {
+      "id": "ed25519verificationkey2020",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#ed25519verificationkey2020",
+      "level": 5,
+      "title": "Ed25519VerificationKey2020",
+      "alternateIds": [
+        "a-1-1-1-ed25519verificationkey2020"
+      ],
+      "number": "A.1.1.1"
+    },
+    {
+      "id": "proof-representations-0",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#proof-representations-0",
+      "level": 4,
+      "title": "Proof representations",
+      "alternateIds": [
+        "a-1-2-proof-representations"
+      ],
+      "number": "A.1.2"
+    },
+    {
+      "id": "ed25519signature2020",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#ed25519signature2020",
+      "level": 5,
+      "title": "Ed25519Signature2020",
+      "alternateIds": [
+        "a-1-2-1-ed25519signature2020"
+      ],
+      "number": "A.1.2.1"
+    },
+    {
+      "id": "algorithms-0",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#algorithms-0",
+      "level": 3,
+      "title": "Algorithms",
+      "alternateIds": [
+        "a-2-algorithms"
+      ],
+      "number": "A.2"
+    },
+    {
+      "id": "ed25519signature2020-0",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#ed25519signature2020-0",
+      "level": 4,
+      "title": "Ed25519Signature2020",
+      "alternateIds": [
+        "a-2-1-ed25519signature2020"
+      ],
+      "number": "A.2.1"
+    },
+    {
+      "id": "add-proof-ed25519signature2020",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#add-proof-ed25519signature2020",
+      "level": 5,
+      "title": "Add Proof (Ed25519Signature2020)",
+      "alternateIds": [
+        "a-2-1-1-add-proof-ed25519signature2020"
+      ],
+      "number": "A.2.1.1"
+    },
+    {
+      "id": "verify-proof-ed25519signature2020",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#verify-proof-ed25519signature2020",
+      "level": 5,
+      "title": "Verify Proof (Ed25519Signature2020)",
+      "alternateIds": [
+        "a-2-1-2-verify-proof-ed25519signature2020"
+      ],
+      "number": "A.2.1.2"
+    },
+    {
+      "id": "transformation-ed25519signature2020",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#transformation-ed25519signature2020",
+      "level": 5,
+      "title": "Transformation (Ed25519Signature2020)",
+      "alternateIds": [
+        "a-2-1-3-transformation-ed25519signature2020"
+      ],
+      "number": "A.2.1.3"
+    },
+    {
+      "id": "hashing-ed25519signature2020",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#hashing-ed25519signature2020",
+      "level": 5,
+      "title": "Hashing (Ed25519Signature2020)",
+      "alternateIds": [
+        "a-2-1-4-hashing-ed25519signature2020"
+      ],
+      "number": "A.2.1.4"
+    },
+    {
+      "id": "proof-configuration-ed25519signature2020",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#proof-configuration-ed25519signature2020",
+      "level": 5,
+      "title": "Proof Configuration (Ed25519Signature2020)",
+      "alternateIds": [
+        "a-2-1-5-proof-configuration-ed25519signature2020"
+      ],
+      "number": "A.2.1.5"
+    },
+    {
+      "id": "proof-serialization-ed25519signature2020",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#proof-serialization-ed25519signature2020",
+      "level": 5,
+      "title": "Proof Serialization (Ed25519Signature2020)",
+      "alternateIds": [
+        "a-2-1-6-proof-serialization-ed25519signature2020"
+      ],
+      "number": "A.2.1.6"
+    },
+    {
+      "id": "proof-verification-ed25519signature2020",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#proof-verification-ed25519signature2020",
+      "level": 5,
+      "title": "Proof Verification (Ed25519Signature2020)",
+      "alternateIds": [
+        "a-2-1-7-proof-verification-ed25519signature2020"
+      ],
+      "number": "A.2.1.7"
+    },
+    {
+      "id": "test-vectors",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#test-vectors",
+      "level": 2,
+      "title": "Test Vectors",
+      "alternateIds": [
+        "b-test-vectors"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "representation-eddsa-rdfc-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#representation-eddsa-rdfc-2022",
+      "level": 3,
+      "title": "Representation: eddsa-rdfc-2022",
+      "alternateIds": [
+        "b-1-representation-eddsa-rdfc-2022"
+      ],
+      "number": "B.1"
+    },
+    {
+      "id": "enhanced-example-for-representation-eddsa-rdfc-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#enhanced-example-for-representation-eddsa-rdfc-2022",
+      "level": 3,
+      "title": "Enhanced Example for Representation: eddsa-rdfc-2022",
+      "alternateIds": [
+        "b-2-enhanced-example-for-representation-eddsa-rdfc-2022"
+      ],
+      "number": "B.2"
+    },
+    {
+      "id": "representation-eddsa-jcs-2022",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#representation-eddsa-jcs-2022",
+      "level": 3,
+      "title": "Representation: eddsa-jcs-2022",
+      "alternateIds": [
+        "b-3-representation-eddsa-jcs-2022"
+      ],
+      "number": "B.3"
+    },
+    {
+      "id": "representation-ed25519signature2020",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#representation-ed25519signature2020",
+      "level": 3,
+      "title": "Representation: Ed25519Signature2020",
+      "alternateIds": [
+        "b-4-representation-ed25519signature2020"
+      ],
+      "number": "B.4"
+    },
+    {
+      "id": "proof-sets-and-chains",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#proof-sets-and-chains",
+      "level": 3,
+      "title": "Proof Sets and Chains",
+      "alternateIds": [
+        "b-5-proof-sets-and-chains"
+      ],
+      "number": "B.5"
+    },
+    {
+      "id": "proof-set",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#proof-set",
+      "level": 4,
+      "title": "Proof Set",
+      "alternateIds": [
+        "b-5-1-proof-set"
+      ],
+      "number": "B.5.1"
+    },
+    {
+      "id": "proof-chain-with-multiple-dependencies",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#proof-chain-with-multiple-dependencies",
+      "level": 4,
+      "title": "Proof Chain with Multiple Dependencies",
+      "alternateIds": [
+        "b-5-2-proof-chain-with-multiple-dependencies"
+      ],
+      "number": "B.5.2"
+    },
+    {
+      "id": "extended-proof-chain",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#extended-proof-chain",
+      "level": 4,
+      "title": "Extended Proof Chain",
+      "alternateIds": [
+        "b-5-3-extended-proof-chain"
+      ],
+      "number": "B.5.3"
+    },
+    {
+      "id": "revision-history",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#revision-history",
+      "level": 2,
+      "title": "Revision History",
+      "alternateIds": [
+        "c-revision-history"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "d-acknowledgements"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "e-references"
+      ],
+      "number": "E"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "e-1-normative-references"
+      ],
+      "number": "E.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/vc-di-eddsa/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "e-2-informative-references"
+      ],
+      "number": "E.2"
+    }
+  ]
+}

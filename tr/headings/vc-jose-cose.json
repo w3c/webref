@@ -1,0 +1,763 @@
+{
+  "spec": {
+    "title": "Securing Verifiable Credentials using JOSE and COSE",
+    "url": "https://www.w3.org/TR/vc-jose-cose/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#title",
+      "level": 1,
+      "title": "Securing Verifiable Credentials using JOSE and COSE"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "section-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "alternateIds": [
+        "x1-1-conformance"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "conformance-classes-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#conformance-classes-0",
+      "level": 4,
+      "title": "Conformance Classes",
+      "alternateIds": [
+        "conformance-classes"
+      ],
+      "number": "1.1.1"
+    },
+    {
+      "id": "securing-verifiable-credentials-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#securing-verifiable-credentials-0",
+      "level": 4,
+      "title": "Securing Verifiable Credentials",
+      "alternateIds": [
+        "securing-verifiable-credentials"
+      ],
+      "number": "1.1.2"
+    },
+    {
+      "id": "jwt-format-and-requirements",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#jwt-format-and-requirements",
+      "level": 5,
+      "title": "JWT Format and Requirements",
+      "alternateIds": [
+        "x1-1-2-1-jwt-format-and-requirements"
+      ],
+      "number": "1.1.2.1"
+    },
+    {
+      "id": "sd-jwt-format-and-requirements",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-format-and-requirements",
+      "level": 5,
+      "title": "SD-JWT Format and Requirements",
+      "alternateIds": [
+        "x1-1-2-2-sd-jwt-format-and-requirements"
+      ],
+      "number": "1.1.2.2"
+    },
+    {
+      "id": "terminology-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#terminology-0",
+      "level": 2,
+      "title": "Terminology",
+      "alternateIds": [
+        "terminology"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "securing-the-vc-data-model-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#securing-the-vc-data-model-0",
+      "level": 2,
+      "title": "Securing the VC Data Model",
+      "alternateIds": [
+        "securing-the-vc-data-model"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "secure-with-jose",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#secure-with-jose",
+      "level": 3,
+      "title": "With JOSE",
+      "alternateIds": [
+        "with-jose"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "securing-json-ld-verifiable-credentials-with-jose",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#securing-json-ld-verifiable-credentials-with-jose",
+      "level": 4,
+      "title": "Securing JSON-LD Verifiable Credentials with JOSE",
+      "alternateIds": [
+        "securing-with-jose"
+      ],
+      "number": "3.1.1"
+    },
+    {
+      "id": "securing-json-ld-verifiable-presentations-with-jose",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#securing-json-ld-verifiable-presentations-with-jose",
+      "level": 4,
+      "title": "Securing JSON-LD Verifiable Presentations with JOSE",
+      "alternateIds": [
+        "securing-vps-with-jose"
+      ],
+      "number": "3.1.2"
+    },
+    {
+      "id": "jose-header-parameters-and-jwt-claims",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#jose-header-parameters-and-jwt-claims",
+      "level": 4,
+      "title": "JOSE Header Parameters and JWT Claims",
+      "alternateIds": [
+        "jose-header-parameters-jwt-claims"
+      ],
+      "number": "3.1.3"
+    },
+    {
+      "id": "secure-with-sd-jwt",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#secure-with-sd-jwt",
+      "level": 3,
+      "title": "With SD-JWT",
+      "alternateIds": [
+        "with-sd-jwt"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "securing-json-ld-verifiable-credentials-with-sd-jwt",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#securing-json-ld-verifiable-credentials-with-sd-jwt",
+      "level": 4,
+      "title": "Securing JSON-LD Verifiable Credentials with SD-JWT",
+      "alternateIds": [
+        "securing-with-sd-jwt"
+      ],
+      "number": "3.2.1"
+    },
+    {
+      "id": "sd-jwt-claim-Gag8nHrV4HlyKC-JZoJMeuMceJ5p5Sgh9Sed7d_asog",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-Gag8nHrV4HlyKC-JZoJMeuMceJ5p5Sgh9Sed7d_asog",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-piwDQm0MGR9LCfGFyPwlHPb0Ovi3NZANqyFB6_bD14c",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-piwDQm0MGR9LCfGFyPwlHPb0Ovi3NZANqyFB6_bD14c",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-QG8WcvFiqPJpOXUAOZrykaX1hSEhJDp6qQMdXb92OG4",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-QG8WcvFiqPJpOXUAOZrykaX1hSEhJDp6qQMdXb92OG4",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-GQ0vkeEFgdVZLLtHYa7OJFjBkIyTFTj7JP1_Zgoxiz8",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-GQ0vkeEFgdVZLLtHYa7OJFjBkIyTFTj7JP1_Zgoxiz8",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-q02YMzuiD_ncCAyKW8CLLmxfwdjUBoj-mmaa5RUN5eU",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-q02YMzuiD_ncCAyKW8CLLmxfwdjUBoj-mmaa5RUN5eU",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-7KiNHCEHEcGrclLNkkuMvGsIewfBiUN0BVfp5c55Lio",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-7KiNHCEHEcGrclLNkkuMvGsIewfBiUN0BVfp5c55Lio",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-Gddvot-e67xiQwBBr0aeqP8cg1t3AfLpEPu0L-JnlPE",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-Gddvot-e67xiQwBBr0aeqP8cg1t3AfLpEPu0L-JnlPE",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-yCCmNODhJGwjC2OR4WkoWG3bkU5_Aab3wp14C3cJ0hg",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-yCCmNODhJGwjC2OR4WkoWG3bkU5_Aab3wp14C3cJ0hg",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "securing-json-ld-verifiable-presentations-with-sd-jwt",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#securing-json-ld-verifiable-presentations-with-sd-jwt",
+      "level": 4,
+      "title": "Securing JSON-LD Verifiable Presentations with SD-JWT",
+      "alternateIds": [
+        "securing-vps-sd-jwt"
+      ],
+      "number": "3.2.2"
+    },
+    {
+      "id": "sd-jwt-claim-RzTr8zM0p1-0rwhLws02_I30D8G6kpDPFlOFgag0ya0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-RzTr8zM0p1-0rwhLws02_I30D8G6kpDPFlOFgag0ya0",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-agL1w9EKxK0l6qVKx79DkuyGFh2szgHG9Rf0kG_2nug",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-agL1w9EKxK0l6qVKx79DkuyGFh2szgHG9Rf0kG_2nug",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim--TVRU6yQRkVF-5q086cXufxFu8vp4AZJO-h_U8zyF_Q",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim--TVRU6yQRkVF-5q086cXufxFu8vp4AZJO-h_U8zyF_Q",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-3hRg373aTHUnR4ock2CASa3xwiiWe8eURwV5MFTP7vQ",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-3hRg373aTHUnR4ock2CASa3xwiiWe8eURwV5MFTP7vQ",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-Wobxt7GgUmEZJhBIdi2oSrh3xhKjjNWkDgskx3DI6kg",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-Wobxt7GgUmEZJhBIdi2oSrh3xhKjjNWkDgskx3DI6kg",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "secure-with-cose",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#secure-with-cose",
+      "level": 3,
+      "title": "With COSE",
+      "alternateIds": [
+        "securing-with-cose"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "securing-json-ld-verifiable-credentials-with-cose",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#securing-json-ld-verifiable-credentials-with-cose",
+      "level": 4,
+      "title": "Securing JSON-LD Verifiable Credentials with COSE",
+      "alternateIds": [
+        "securing-vcs-with-cose"
+      ],
+      "number": "3.3.1"
+    },
+    {
+      "id": "securing-json-ld-verifiable-presentations-with-cose",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#securing-json-ld-verifiable-presentations-with-cose",
+      "level": 4,
+      "title": "Securing JSON-LD Verifiable Presentations with COSE",
+      "alternateIds": [
+        "securing-vps-with-cose"
+      ],
+      "number": "3.3.2"
+    },
+    {
+      "id": "cose-header-parameters-and-cwt-claims",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#cose-header-parameters-and-cwt-claims",
+      "level": 4,
+      "title": "COSE Header Parameters and CWT Claims",
+      "alternateIds": [
+        "cose-header-param-cwt-claims"
+      ],
+      "number": "3.3.3"
+    },
+    {
+      "id": "key_discovery",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#key_discovery",
+      "level": 2,
+      "title": "Key Discovery",
+      "alternateIds": [
+        "key-discovery"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "using-header-parameters-and-claims-for-key-discovery",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#using-header-parameters-and-claims-for-key-discovery",
+      "level": 3,
+      "title": "Using Header Parameters and Claims for Key Discovery",
+      "alternateIds": [
+        "using-header-params-claims-key-discovery"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "kid-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#kid-0",
+      "level": 4,
+      "title": "kid",
+      "alternateIds": [
+        "kid"
+      ],
+      "number": "4.1.1"
+    },
+    {
+      "id": "iss-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#iss-0",
+      "level": 4,
+      "title": "iss",
+      "alternateIds": [
+        "iss"
+      ],
+      "number": "4.1.2"
+    },
+    {
+      "id": "cnf-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#cnf-0",
+      "level": 4,
+      "title": "cnf",
+      "alternateIds": [
+        "cnf"
+      ],
+      "number": "4.1.3"
+    },
+    {
+      "id": "using-controlled-identifier-documents-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#using-controlled-identifier-documents-0",
+      "level": 3,
+      "title": "Using Controlled Identifier Documents",
+      "alternateIds": [
+        "using-controlled-identifier-documents"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "algorithms-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#algorithms-0",
+      "level": 2,
+      "title": "Algorithms",
+      "alternateIds": [
+        "algorithms"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "verifying-a-credential-or-presentation-secured-with-jose",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#verifying-a-credential-or-presentation-secured-with-jose",
+      "level": 3,
+      "title": "Verifying a Credential or Presentation Secured with JOSE",
+      "alternateIds": [
+        "alg-jose"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "verifying-a-credential-or-presentation-secured-with-sd-jwt",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#verifying-a-credential-or-presentation-secured-with-sd-jwt",
+      "level": 3,
+      "title": "Verifying a Credential or Presentation Secured with SD-JWT",
+      "alternateIds": [
+        "alg-sd-jwt"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "verifying-a-credential-or-presentation-secured-with-cose",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#verifying-a-credential-or-presentation-secured-with-cose",
+      "level": 3,
+      "title": "Verifying a Credential or Presentation Secured with COSE",
+      "alternateIds": [
+        "alg-cose"
+      ],
+      "number": "5.3"
+    },
+    {
+      "id": "validation",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#validation",
+      "level": 3,
+      "title": "Validation",
+      "alternateIds": [
+        "validation-algorithm"
+      ],
+      "number": "5.4"
+    },
+    {
+      "id": "iana-considerations-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#iana-considerations-0",
+      "level": 2,
+      "title": "IANA Considerations",
+      "alternateIds": [
+        "iana-considerations"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "media-types-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#media-types-0",
+      "level": 3,
+      "title": "Media Types",
+      "alternateIds": [
+        "media-types"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "vc-jwt-media-type",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#vc-jwt-media-type",
+      "level": 4,
+      "title": "application/vc+jwt",
+      "alternateIds": [
+        "vc-json-jwt"
+      ],
+      "number": "6.1.1"
+    },
+    {
+      "id": "vp-jwt-media-type",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#vp-jwt-media-type",
+      "level": 4,
+      "title": "application/vp+jwt",
+      "alternateIds": [
+        "vp-json-jwt"
+      ],
+      "number": "6.1.2"
+    },
+    {
+      "id": "vc-sd-jwt-media-type",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#vc-sd-jwt-media-type",
+      "level": 4,
+      "title": "application/vc+sd-jwt",
+      "alternateIds": [
+        "vc-json-sd-jwt"
+      ],
+      "number": "6.1.3"
+    },
+    {
+      "id": "vp-sd-jwt-media-type",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#vp-sd-jwt-media-type",
+      "level": 4,
+      "title": "application/vp+sd-jwt",
+      "alternateIds": [
+        "vp-json-sd-jwt"
+      ],
+      "number": "6.1.4"
+    },
+    {
+      "id": "vc-json-cose-media-type",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#vc-json-cose-media-type",
+      "level": 4,
+      "title": "application/vc+cose",
+      "alternateIds": [
+        "vc-json-cose"
+      ],
+      "number": "6.1.5"
+    },
+    {
+      "id": "vp-json-cose-media-type",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#vp-json-cose-media-type",
+      "level": 4,
+      "title": "application/vp+cose",
+      "alternateIds": [
+        "vp-json-cose"
+      ],
+      "number": "6.1.6"
+    },
+    {
+      "id": "other-considerations-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#other-considerations-0",
+      "level": 2,
+      "title": "Other Considerations",
+      "alternateIds": [
+        "other-considerations"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "privacy-considerations-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#privacy-considerations-0",
+      "level": 3,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "privacy-considerations"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "security-considerations-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#security-considerations-0",
+      "level": 3,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "security-considerations"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "accessibility-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#accessibility-0",
+      "level": 3,
+      "title": "Accessibility",
+      "alternateIds": [
+        "accessibility"
+      ],
+      "number": "7.3"
+    },
+    {
+      "id": "examples-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#examples-0",
+      "level": 2,
+      "title": "Examples",
+      "alternateIds": [
+        "examples"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "controllers-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#controllers-0",
+      "level": 3,
+      "title": "Controllers",
+      "alternateIds": [
+        "controllers"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "credentials-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#credentials-0",
+      "level": 3,
+      "title": "Credentials",
+      "alternateIds": [
+        "credentials"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "sd-jwt-claim-FIWgy39UzzZ5_aOKV3po6EyjXmBN9c8oIQ2jKe_Ftb0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-FIWgy39UzzZ5_aOKV3po6EyjXmBN9c8oIQ2jKe_Ftb0",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-FmDcdemIspdmQMMeuS-4N4J5wCFobBBuiuUelGsWMvU",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-FmDcdemIspdmQMMeuS-4N4J5wCFobBBuiuUelGsWMvU",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-mSg0kZC77X6jUVHq2IIYNygSlXKKVzTSdhFWoNYyxOA",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-mSg0kZC77X6jUVHq2IIYNygSlXKKVzTSdhFWoNYyxOA",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-mv6Cexu-fwPdLVo5ZYH7ycS8mFGTQVMxThp2nwECBT4",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-mv6Cexu-fwPdLVo5ZYH7ycS8mFGTQVMxThp2nwECBT4",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-tQantX-hhSpOANOV-1xKF_GRof5Lnm6JbPKqboLt7RA",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-tQantX-hhSpOANOV-1xKF_GRof5Lnm6JbPKqboLt7RA",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-SMxFrlOcsuPyVN5LRBbVTLZ6xMQqaUBNBS67kL_Xd_w",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-SMxFrlOcsuPyVN5LRBbVTLZ6xMQqaUBNBS67kL_Xd_w",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-VGN44u5sVQgncEIfgELJeZR9bpeTGc8ZAcMmV6MQttg",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-VGN44u5sVQgncEIfgELJeZR9bpeTGc8ZAcMmV6MQttg",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-MBe_7HKj0-P2Zfttw5vYdJ0xUe3xtpi2widbSnw_ZOg",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-MBe_7HKj0-P2Zfttw5vYdJ0xUe3xtpi2widbSnw_ZOg",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-ec1yUY0C75J7pgyMzO5Dw90pDUr3fX7Z8Gt8wUAIYzI",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-ec1yUY0C75J7pgyMzO5Dw90pDUr3fX7Z8Gt8wUAIYzI",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-1ji_39ienphXEsrOKxpudg40AAB-iQ9GC8BDsPq2V1g",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-1ji_39ienphXEsrOKxpudg40AAB-iQ9GC8BDsPq2V1g",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-UE9R6ktpnWU0rkf7qpFhOVa14gc7H78we9wQ_lE1IWs",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-UE9R6ktpnWU0rkf7qpFhOVa14gc7H78we9wQ_lE1IWs",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-HiarZUG7NVHeTxMJfLFGQN-3vmfd7jUCzwmw4XbwaB4",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-HiarZUG7NVHeTxMJfLFGQN-3vmfd7jUCzwmw4XbwaB4",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-KSy9JTiccPPppo7knU4ZSqqjZno35Rz-9RNN0Y5Epng",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-KSy9JTiccPPppo7knU4ZSqqjZno35Rz-9RNN0Y5Epng",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-aeS0kUTFAjvoIPPITgB_Bp88voe3fnHqrCvx-CJrH18",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-aeS0kUTFAjvoIPPITgB_Bp88voe3fnHqrCvx-CJrH18",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-Avjemz7SrlBIOpXTokISYN4iV6EHCmKL4GJM_9OjPrg",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-Avjemz7SrlBIOpXTokISYN4iV6EHCmKL4GJM_9OjPrg",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "presentations-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#presentations-0",
+      "level": 3,
+      "title": "Presentations",
+      "alternateIds": [
+        "presentations"
+      ],
+      "number": "8.3"
+    },
+    {
+      "id": "sd-jwt-claim-x6Y6p1pZGnW1zhvzF9bWTlYyEJOrL7y5k2HeRJaXGIo",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-x6Y6p1pZGnW1zhvzF9bWTlYyEJOrL7y5k2HeRJaXGIo",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-fhZRx7eevF5oXWIu8xpQj5uCx7mUZv_mp-NKzZr73Fw",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-fhZRx7eevF5oXWIu8xpQj5uCx7mUZv_mp-NKzZr73Fw",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-CW2sXDKUu2YCe4lo7rSzZSFkXa4o1O_SCaeRpeLfPUg",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-CW2sXDKUu2YCe4lo7rSzZSFkXa4o1O_SCaeRpeLfPUg",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-OHlxR563LCa18rwLn5v9EbLLfAws7tF_ooZ3vefTpzw",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-OHlxR563LCa18rwLn5v9EbLLfAws7tF_ooZ3vefTpzw",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-0h_3c2osegluPgLPPn0TyOg4NRVEaPvt234AAe5sn6k",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-0h_3c2osegluPgLPPn0TyOg4NRVEaPvt234AAe5sn6k",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-bezi7IrI9D8g67Eikwm2Bh65iI-LeoB_S95tn6gDZyM",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-bezi7IrI9D8g67Eikwm2Bh65iI-LeoB_S95tn6gDZyM",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-hZg6ZqBX8tUj34ieLgSC7J0b5JE7sXhnS2ox9zCMFLc",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#sd-jwt-claim-hZg6ZqBX8tUj34ieLgSC7J0b5JE7sXhnS2ox9zCMFLc",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "data-uris",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#data-uris",
+      "level": 3,
+      "title": "Data URIs",
+      "alternateIds": [
+        "date-uris"
+      ],
+      "number": "8.4"
+    },
+    {
+      "id": "cose-examples-0",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#cose-examples-0",
+      "level": 3,
+      "title": "COSE Examples",
+      "alternateIds": [
+        "cose-examples"
+      ],
+      "number": "8.5"
+    },
+    {
+      "id": "revision-history",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#revision-history",
+      "level": 2,
+      "title": "Revision History",
+      "alternateIds": [
+        "a-revision-history"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "b-acknowledgements"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "c-references"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "c-1-normative-references"
+      ],
+      "number": "C.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/vc-jose-cose/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "c-2-informative-references"
+      ],
+      "number": "C.2"
+    }
+  ]
+}
