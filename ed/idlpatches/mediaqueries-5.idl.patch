@@ -1,0 +1,26 @@
+From 46bc9954bce6b2743b0f3c9cb48ef49bc8812067 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Tue, 29 Jul 2025 08:42:10 +0200
+Subject: [PATCH] Drop non standard `RuntimeEnabled` extended attribute
+
+Pending https://github.com/w3c/csswg-drafts/pull/12533
+---
+ ed/idl/mediaqueries-5.idl | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/idl/mediaqueries-5.idl b/ed/idl/mediaqueries-5.idl
+index 24f1aa6346..c951c356ca 100644
+--- a/ed/idl/mediaqueries-5.idl
++++ b/ed/idl/mediaqueries-5.idl
+@@ -5,7 +5,7 @@
+ 
+ typedef (MediaList or boolean) CustomMediaQuery;
+ 
+-[Exposed=Window, RuntimeEnabled=CSSCustomMedia]
++[Exposed=Window]
+ interface CSSCustomMediaRule : CSSRule {
+     readonly attribute CSSOMString name;
+     readonly attribute CustomMediaQuery query;
+-- 
+2.37.1.windows.1
+
