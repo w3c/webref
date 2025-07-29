@@ -4410,6 +4410,28 @@
       "links": []
     },
     {
+      "id": "environment-settings-object-fetch-group",
+      "href": "https://fetch.spec.whatwg.org/#environment-settings-object-fetch-group",
+      "linkingText": [
+        "fetch group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "environment settings object"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fetch-groups",
+        "href": "https://fetch.spec.whatwg.org/#fetch-groups",
+        "title": "Fetch groups",
+        "number": "2.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "concept-fetch-group",
       "href": "https://fetch.spec.whatwg.org/#concept-fetch-group",
       "linkingText": [
@@ -4417,10 +4439,8 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "fetch"
-      ],
-      "access": "public",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "fetch-groups",
@@ -4435,13 +4455,55 @@
       "id": "concept-fetch-record",
       "href": "https://fetch.spec.whatwg.org/#concept-fetch-record",
       "linkingText": [
-        "fetch record"
+        "fetch records"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
         "fetch group"
       ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fetch-groups",
+        "href": "https://fetch.spec.whatwg.org/#fetch-groups",
+        "title": "Fetch groups",
+        "number": "2.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "fetch-group-deferred-fetch-records",
+      "href": "https://fetch.spec.whatwg.org/#fetch-group-deferred-fetch-records",
+      "linkingText": [
+        "deferred fetch records"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch group"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fetch-groups",
+        "href": "https://fetch.spec.whatwg.org/#fetch-groups",
+        "title": "Fetch groups",
+        "number": "2.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "fetch-record",
+      "href": "https://fetch.spec.whatwg.org/#fetch-record",
+      "linkingText": [
+        "fetch record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -4472,7 +4534,7 @@
         "title": "Fetch groups",
         "number": "2.4"
       },
-      "definedIn": "prose",
+      "definedIn": "dt",
       "links": []
     },
     {
@@ -4494,7 +4556,93 @@
         "title": "Fetch groups",
         "number": "2.4"
       },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "deferred-fetch-record",
+      "href": "https://fetch.spec.whatwg.org/#deferred-fetch-record",
+      "linkingText": [
+        "deferred fetch record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fetch-groups",
+        "href": "https://fetch.spec.whatwg.org/#fetch-groups",
+        "title": "Fetch groups",
+        "number": "2.4"
+      },
       "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "deferred-fetch-record-request",
+      "href": "https://fetch.spec.whatwg.org/#deferred-fetch-record-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "deferred fetch record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fetch-groups",
+        "href": "https://fetch.spec.whatwg.org/#fetch-groups",
+        "title": "Fetch groups",
+        "number": "2.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "deferred-fetch-record-notify-invoked",
+      "href": "https://fetch.spec.whatwg.org/#deferred-fetch-record-notify-invoked",
+      "linkingText": [
+        "notify invoked"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "deferred fetch record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fetch-groups",
+        "href": "https://fetch.spec.whatwg.org/#fetch-groups",
+        "title": "Fetch groups",
+        "number": "2.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "deferred-fetch-record-invoke-state",
+      "href": "https://fetch.spec.whatwg.org/#deferred-fetch-record-invoke-state",
+      "linkingText": [
+        "invoke state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "deferred fetch record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fetch-groups",
+        "href": "https://fetch.spec.whatwg.org/#fetch-groups",
+        "title": "Fetch groups",
+        "number": "2.4"
+      },
+      "definedIn": "dt",
       "links": []
     },
     {
@@ -6379,6 +6527,314 @@
         "href": "https://fetch.spec.whatwg.org/#tao-check",
         "title": "TAO check",
         "number": "4.10"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "deferred-fetch-task-source",
+      "href": "https://fetch.spec.whatwg.org/#deferred-fetch-task-source",
+      "linkingText": [
+        "deferred fetch task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "deferred-fetch",
+        "href": "https://fetch.spec.whatwg.org/#deferred-fetch",
+        "title": "Deferred fetching",
+        "number": "4.11"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "queue-a-deferred-fetch",
+      "href": "https://fetch.spec.whatwg.org/#queue-a-deferred-fetch",
+      "linkingText": [
+        "queue a deferred fetch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "deferred-fetch",
+        "href": "https://fetch.spec.whatwg.org/#deferred-fetch",
+        "title": "Deferred fetching",
+        "number": "4.11"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "total-request-length",
+      "href": "https://fetch.spec.whatwg.org/#total-request-length",
+      "linkingText": [
+        "total request length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "deferred-fetch",
+        "href": "https://fetch.spec.whatwg.org/#deferred-fetch",
+        "title": "Deferred fetching",
+        "number": "4.11"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "process-deferred-fetches",
+      "href": "https://fetch.spec.whatwg.org/#process-deferred-fetches",
+      "linkingText": [
+        "process deferred fetches"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "deferred-fetch",
+        "href": "https://fetch.spec.whatwg.org/#deferred-fetch",
+        "title": "Deferred fetching",
+        "number": "4.11"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "process-a-deferred-fetch",
+      "href": "https://fetch.spec.whatwg.org/#process-a-deferred-fetch",
+      "linkingText": [
+        "process a deferred fetch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "deferred-fetch",
+        "href": "https://fetch.spec.whatwg.org/#deferred-fetch",
+        "title": "Deferred fetching",
+        "number": "4.11"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-permissionspolicy-deferred-fetch",
+      "href": "https://fetch.spec.whatwg.org/#dom-permissionspolicy-deferred-fetch",
+      "linkingText": [
+        "deferred-fetch"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionsPolicy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "deferred-fetch-quota",
+        "href": "https://fetch.spec.whatwg.org/#deferred-fetch-quota",
+        "title": "Deferred fetching quota",
+        "number": "4.11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-permissionspolicy-deferred-fetch-minimal",
+      "href": "https://fetch.spec.whatwg.org/#dom-permissionspolicy-deferred-fetch-minimal",
+      "linkingText": [
+        "deferred-fetch-minimal"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionsPolicy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "deferred-fetch-quota",
+        "href": "https://fetch.spec.whatwg.org/#deferred-fetch-quota",
+        "title": "Deferred fetching quota",
+        "number": "4.11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "quota-reserved-for-deferred-fetch-minimal",
+      "href": "https://fetch.spec.whatwg.org/#quota-reserved-for-deferred-fetch-minimal",
+      "linkingText": [
+        "quota reserved for deferred-fetch-minimal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "deferred-fetch-quota",
+        "href": "https://fetch.spec.whatwg.org/#deferred-fetch-quota",
+        "title": "Deferred fetching quota",
+        "number": "4.11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "reserved-deferred-fetch-quota",
+      "href": "https://fetch.spec.whatwg.org/#reserved-deferred-fetch-quota",
+      "linkingText": [
+        "reserved deferred-fetch quota"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "deferred-fetch-quota",
+        "href": "https://fetch.spec.whatwg.org/#deferred-fetch-quota",
+        "title": "Deferred fetching quota",
+        "number": "4.11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "reserved-deferred-fetch-quota-minimal-quota",
+      "href": "https://fetch.spec.whatwg.org/#reserved-deferred-fetch-quota-minimal-quota",
+      "linkingText": [
+        "minimal quota"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "reserved deferred-fetch quota"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "deferred-fetch-quota",
+        "href": "https://fetch.spec.whatwg.org/#deferred-fetch-quota",
+        "title": "Deferred fetching quota",
+        "number": "4.11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "reserved-deferred-fetch-quota-normal-quota",
+      "href": "https://fetch.spec.whatwg.org/#reserved-deferred-fetch-quota-normal-quota",
+      "linkingText": [
+        "normal quota"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "reserved deferred-fetch quota"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "deferred-fetch-quota",
+        "href": "https://fetch.spec.whatwg.org/#deferred-fetch-quota",
+        "title": "Deferred fetching quota",
+        "number": "4.11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "available-deferred-fetch-quota",
+      "href": "https://fetch.spec.whatwg.org/#available-deferred-fetch-quota",
+      "linkingText": [
+        "available deferred-fetch quota"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "deferred-fetch-quota",
+        "href": "https://fetch.spec.whatwg.org/#deferred-fetch-quota",
+        "title": "Deferred fetching quota",
+        "number": "4.11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "reserve-deferred-fetch-quota",
+      "href": "https://fetch.spec.whatwg.org/#reserve-deferred-fetch-quota",
+      "linkingText": [
+        "reserve deferred-fetch quota"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "deferred-fetch-quota",
+        "href": "https://fetch.spec.whatwg.org/#deferred-fetch-quota",
+        "title": "Deferred fetching quota",
+        "number": "4.11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "potentially-free-deferred-fetch-quota",
+      "href": "https://fetch.spec.whatwg.org/#potentially-free-deferred-fetch-quota",
+      "linkingText": [
+        "potentially free deferred-fetch quota"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "deferred-fetch-quota",
+        "href": "https://fetch.spec.whatwg.org/#deferred-fetch-quota",
+        "title": "Deferred fetching quota",
+        "number": "4.11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "deferred-fetch-control-document",
+      "href": "https://fetch.spec.whatwg.org/#deferred-fetch-control-document",
+      "linkingText": [
+        "deferred-fetch control document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "deferred-fetch-quota",
+        "href": "https://fetch.spec.whatwg.org/#deferred-fetch-quota",
+        "title": "Deferred fetching quota",
+        "number": "4.11.1"
       },
       "definedIn": "prose",
       "links": []
@@ -10867,7 +11323,7 @@
       "heading": {
         "id": "fetch-method",
         "href": "https://fetch.spec.whatwg.org/#fetch-method",
-        "title": "Fetch method",
+        "title": "Fetch methods",
         "number": "5.6"
       },
       "definedIn": "pre",
@@ -10890,7 +11346,115 @@
       "heading": {
         "id": "fetch-method",
         "href": "https://fetch.spec.whatwg.org/#fetch-method",
-        "title": "Fetch method",
+        "title": "Fetch methods",
+        "number": "5.6"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dictdef-deferredrequestinit",
+      "href": "https://fetch.spec.whatwg.org/#dictdef-deferredrequestinit",
+      "linkingText": [
+        "DeferredRequestInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetch-method",
+        "href": "https://fetch.spec.whatwg.org/#fetch-method",
+        "title": "Fetch methods",
+        "number": "5.6"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-deferredrequestinit-activateafter",
+      "href": "https://fetch.spec.whatwg.org/#dom-deferredrequestinit-activateafter",
+      "linkingText": [
+        "activateAfter"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DeferredRequestInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetch-method",
+        "href": "https://fetch.spec.whatwg.org/#fetch-method",
+        "title": "Fetch methods",
+        "number": "5.6"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "fetchlaterresult",
+      "href": "https://fetch.spec.whatwg.org/#fetchlaterresult",
+      "linkingText": [
+        "FetchLaterResult"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetch-method",
+        "href": "https://fetch.spec.whatwg.org/#fetch-method",
+        "title": "Fetch methods",
+        "number": "5.6"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-window-fetchlater-input-init-input",
+      "href": "https://fetch.spec.whatwg.org/#dom-window-fetchlater-input-init-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/fetchLater(input, init)",
+        "Window/fetchLater(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetch-method",
+        "href": "https://fetch.spec.whatwg.org/#fetch-method",
+        "title": "Fetch methods",
+        "number": "5.6"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-window-fetchlater-input-init-init",
+      "href": "https://fetch.spec.whatwg.org/#dom-window-fetchlater-input-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/fetchLater(input, init)",
+        "Window/fetchLater(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetch-method",
+        "href": "https://fetch.spec.whatwg.org/#fetch-method",
+        "title": "Fetch methods",
         "number": "5.6"
       },
       "definedIn": "pre",
@@ -10913,7 +11477,7 @@
       "heading": {
         "id": "fetch-method",
         "href": "https://fetch.spec.whatwg.org/#fetch-method",
-        "title": "Fetch method",
+        "title": "Fetch methods",
         "number": "5.6"
       },
       "definedIn": "prose",
@@ -10933,7 +11497,74 @@
       "heading": {
         "id": "fetch-method",
         "href": "https://fetch.spec.whatwg.org/#fetch-method",
-        "title": "Fetch method",
+        "title": "Fetch methods",
+        "number": "5.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "fetchlaterresult-activated-getter-steps",
+      "href": "https://fetch.spec.whatwg.org/#fetchlaterresult-activated-getter-steps",
+      "linkingText": [
+        "activated getter steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FetchLaterResult"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fetch-method",
+        "href": "https://fetch.spec.whatwg.org/#fetch-method",
+        "title": "Fetch methods",
+        "number": "5.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-fetchlaterresult-activated",
+      "href": "https://fetch.spec.whatwg.org/#dom-fetchlaterresult-activated",
+      "linkingText": [
+        "activated"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FetchLaterResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetch-method",
+        "href": "https://fetch.spec.whatwg.org/#fetch-method",
+        "title": "Fetch methods",
+        "number": "5.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-window-fetchlater",
+      "href": "https://fetch.spec.whatwg.org/#dom-window-fetchlater",
+      "linkingText": [
+        "fetchLater(input, init)",
+        "fetchLater(input)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetch-method",
+        "href": "https://fetch.spec.whatwg.org/#fetch-method",
+        "title": "Fetch methods",
         "number": "5.6"
       },
       "definedIn": "prose",

@@ -4733,10 +4733,28 @@
           "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status\">status</a> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#redirect-status\" id=\"ref-for-redirect-status\">redirect status</a>, return.</p>"
         },
         {
+          "html": "<p>Let <var>collected data</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#get-collected-data\" id=\"ref-for-get-collected-data①\">get collected data</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id③\">request id</a> and \"response\".</p>"
+        },
+        {
+          "html": "<p>If <var>collected data</var> is null, return.</p>"
+        },
+        {
+          "html": "<p>Set <var>collected data</var>’s <code>pending</code> to false.</p>"
+        },
+        {
           "html": "<p>Let <var>navigable</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#get-navigable-for-request\" id=\"ref-for-get-navigable-for-request\">get navigable for request</a> with <var>request</var>.</p>"
         },
         {
-          "html": "<p>If <var>navigable</var> is null, return.</p>"
+          "html": "If <var>navigable</var> is null:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①③\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id④\">request id</a>, \"response\").</p>"
+            },
+            {
+              "html": "<p>Return.</p>"
+            }
+          ]
         },
         {
           "html": "<p>Let <var>top-level navigable</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top⑨\">top-level traversable</a>.</p>"
@@ -4766,13 +4784,16 @@
           ]
         },
         {
-          "html": "<p>If <var>collectors</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①①\">empty</a>, return.</p>"
-        },
-        {
-          "html": "<p>Let <var>collected data</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#get-collected-data\" id=\"ref-for-get-collected-data①\">get collected data</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id③\">request id</a> and \"response\".</p>"
-        },
-        {
-          "html": "<p>If <var>collected data</var> is null, return.</p>"
+          "html": "If <var>collectors</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①①\">empty</a>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①④\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑤\">request id</a>, \"response\").</p>"
+            },
+            {
+              "html": "<p>Return.</p>"
+            }
+          ]
         },
         {
           "html": "<p>Let <var>bytes</var> be null.</p>"
@@ -4818,24 +4839,24 @@
               ]
             },
             {
-              "html": "<p>If <var>collected data</var>’s <code>collectors</code> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①②\">empty</a>:</p>",
-              "ignored": [
-                "Allocate size to record data given size."
+              "html": "If <var>collected data</var>’s <code>collectors</code> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①②\">empty</a>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#allocate-size-to-record-data\" id=\"ref-for-allocate-size-to-record-data\">Allocate size to record data</a> given <var>size</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>collected data</var>’s <code>bytes</code> to <var>bytes</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>collected data</var>’s <code>size</code> to <var>size</var>.</p>"
+                }
               ]
             }
           ]
         },
         {
-          "html": "<p>Set <var>collected data</var>’s <code>bytes</code> to <var>bytes</var>.</p>"
-        },
-        {
-          "html": "<p>Set <var>collected data</var>’s <code>pending</code> to false.</p>"
-        },
-        {
-          "html": "<p>Set <var>collected data</var>’s <code>size</code> to <var>size</var>.</p>"
-        },
-        {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①③\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id④\">request id</a>, \"response\").</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⑤\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑥\">request id</a>, \"response\").</p>"
         }
       ]
     },
@@ -5494,7 +5515,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>request id</var> be request’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑥\">request id</a>.</p>"
+          "html": "<p>Let <var>request id</var> be request’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑧\">request id</a>.</p>"
         },
         {
           "html": "<p>Let <var>url</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer⑥\">URL serializer</a> with <var>request</var>’s\n <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url①\">URL</a>.</p>"
@@ -6616,7 +6637,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①④\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and (null,\n \"<code>incomplete</code>\").</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⑥\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and (null,\n \"<code>incomplete</code>\").</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑤⓪\">success</a> with data null.</p>"
@@ -6635,7 +6656,7 @@
           "html": "<p>Let <var>response</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑤⑤\">trying</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#update-the-response\" id=\"ref-for-update-the-response\">update the response</a> with\n <var>session</var>, \"<code>continueResponse</code>\" and <var>command parameters</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⑤\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and\n (<var>response</var>, \"<code>incomplete</code>\").</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⑦\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and\n (<var>response</var>, \"<code>incomplete</code>\").</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑤①\">success</a> with data null.</p>"
@@ -6681,7 +6702,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⑥\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and\n (<var>response</var>, \"<code>incomplete</code>\").</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⑧\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and\n (<var>response</var>, \"<code>incomplete</code>\").</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑤②\">success</a> with data null.</p>"
@@ -6746,7 +6767,7 @@
           "html": "<p>Let <var>response</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error\">network error</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⑦\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and\n (<var>response</var>, \"<code>complete</code>\").</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⑨\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and\n (<var>response</var>, \"<code>complete</code>\").</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑤④\">success</a> with data null.</p>"
@@ -6862,7 +6883,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume①⑧\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and\n (<var>response</var>,\"<code>complete</code>\").</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#resume\" id=\"ref-for-resume②⓪\">Resume</a> with \"<code>continue request</code>\", <var>request id</var>, and\n (<var>response</var>,\"<code>complete</code>\").</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑤⑥\">success</a> with data null.</p>"
@@ -7242,7 +7263,7 @@
                   "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map⑤\">blocked request map</a>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>request id</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑦\">request id</a>.</p>"
+                  "html": "<p>Let <var>request id</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑨\">request id</a>.</p>"
                 },
                 {
                   "html": "<p>Set <var>blocked requests</var>[<var>request id</var>] to (<var>request</var>,\n \"<code>authRequired</code>\", <var>response</var>).</p>"
@@ -7410,13 +7431,13 @@
                   "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map⑥\">blocked request map</a>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>request id</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑧\">request id</a>.</p>"
+                  "html": "<p>Let <var>request id</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id①⓪\">request id</a>.</p>"
                 },
                 {
                   "html": "<p>Set <var>blocked requests</var>[<var>request id</var>] to (<var>request</var>,\n \"<code>beforeRequestSent</code>\", null).</p>"
                 },
                 {
-                  "html": "<p>Let (<var>response</var>, <var>status</var>) be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#awaits\" id=\"ref-for-awaits⑥\">await</a> with «\"<code>continue\n request</code>\"», and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑨\">request id</a>.</p>"
+                  "html": "<p>Let (<var>response</var>, <var>status</var>) be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#awaits\" id=\"ref-for-awaits⑥\">await</a> with «\"<code>continue\n request</code>\"», and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id①①\">request id</a>.</p>"
                 },
                 {
                   "html": "<p>If <var>status</var> is \"<code>complete</code>\" set <var>response status</var> to <var>status</var>.</p>"
@@ -7575,7 +7596,7 @@
                   "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map⑦\">blocked request map</a>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>request id</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id①⓪\">request id</a>.</p>"
+                  "html": "<p>Let <var>request id</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id①②\">request id</a>.</p>"
                 },
                 {
                   "html": "<p>Set <var>blocked requests</var>[<var>request id</var>] to (<var>request</var>,\n \"<code>beforeRequestSent</code>\", <var>response</var>).</p>"

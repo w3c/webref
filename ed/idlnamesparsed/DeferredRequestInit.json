@@ -1,0 +1,65 @@
+{
+  "name": "DeferredRequestInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Fetch Standard",
+      "url": "https://fetch.spec.whatwg.org/"
+    },
+    "fragment": "dictionary DeferredRequestInit : RequestInit {\n  DOMHighResTimeStamp activateAfter;\n};",
+    "href": "https://fetch.spec.whatwg.org/#dictdef-deferredrequestinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "RequestInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Fetch Standard",
+        "url": "https://fetch.spec.whatwg.org/"
+      },
+      "fragment": "dictionary RequestInit {\n  ByteString method;\n  HeadersInit headers;\n  BodyInit? body;\n  USVString referrer;\n  ReferrerPolicy referrerPolicy;\n  RequestMode mode;\n  RequestCredentials credentials;\n  RequestCache cache;\n  RequestRedirect redirect;\n  DOMString integrity;\n  boolean keepalive;\n  AbortSignal? signal;\n  RequestDuplex duplex;\n  RequestPriority priority;\n  any window; // can only be set to null\n};",
+      "href": "https://fetch.spec.whatwg.org/#requestinit"
+    },
+    "extended": [
+      {
+        "spec": {
+          "title": "Attribution Reporting",
+          "url": "https://wicg.github.io/attribution-reporting-api/"
+        },
+        "fragment": "partial dictionary RequestInit {\n  AttributionReportingRequestOptions attributionReporting;\n};"
+      },
+      {
+        "spec": {
+          "title": "Private Network Access",
+          "url": "https://wicg.github.io/private-network-access/"
+        },
+        "fragment": "partial dictionary RequestInit {\n  IPAddressSpace targetAddressSpace;\n};"
+      },
+      {
+        "spec": {
+          "title": "Shared Storage API",
+          "url": "https://wicg.github.io/shared-storage/"
+        },
+        "fragment": "partial dictionary RequestInit {\n  boolean sharedStorageWritable;\n};"
+      },
+      {
+        "spec": {
+          "title": "Private State Token API",
+          "url": "https://wicg.github.io/trust-token-api/"
+        },
+        "fragment": "partial dictionary RequestInit {\n  PrivateToken privateToken;\n};"
+      },
+      {
+        "spec": {
+          "title": "Protected Audience (formerly FLEDGE)",
+          "url": "https://wicg.github.io/turtledove/"
+        },
+        "fragment": "partial dictionary RequestInit {\n  boolean adAuctionHeaders;\n};"
+      }
+    ],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

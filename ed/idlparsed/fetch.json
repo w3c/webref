@@ -17,7 +17,11 @@
           "Response"
         ]
       },
-      "functions": {}
+      "functions": {
+        "Window": [
+          "FetchLaterResult"
+        ]
+      }
     },
     "idlNames": {
       "HeadersInit": {
@@ -2070,6 +2074,70 @@
         ],
         "extAttrs": [],
         "href": "https://fetch.spec.whatwg.org/#responsetype"
+      },
+      "DeferredRequestInit": {
+        "fragment": "dictionary DeferredRequestInit : RequestInit {\n  DOMHighResTimeStamp activateAfter;\n};",
+        "type": "dictionary",
+        "name": "DeferredRequestInit",
+        "inheritance": "RequestInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "activateAfter",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-deferredrequestinit-activateafter"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://fetch.spec.whatwg.org/#dictdef-deferredrequestinit"
+      },
+      "FetchLaterResult": {
+        "fragment": "[Exposed=Window]\ninterface FetchLaterResult {\n  readonly attribute boolean activated;\n};",
+        "type": "interface",
+        "name": "FetchLaterResult",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "activated",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-fetchlaterresult-activated"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://fetch.spec.whatwg.org/#fetchlaterresult"
       }
     },
     "idlExtendedNames": {
@@ -2169,6 +2237,76 @@
           "extAttrs": [],
           "partial": true
         }
+      ],
+      "Window": [
+        {
+          "fragment": "partial interface Window {\n  [NewObject] FetchLaterResult fetchLater(RequestInfo input, optional DeferredRequestInit init = {});\n};",
+          "type": "interface",
+          "name": "Window",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "fetchLater",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "FetchLaterResult"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "RequestInfo"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "init",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DeferredRequestInit"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "NewObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "href": "https://fetch.spec.whatwg.org/#dom-window-fetchlater"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
       ]
     },
     "globals": {},
@@ -2176,7 +2314,8 @@
       "Window": [
         "Headers",
         "Request",
-        "Response"
+        "Response",
+        "FetchLaterResult"
       ],
       "Worker": [
         "Headers",
@@ -2237,6 +2376,16 @@
         "Response",
         "RequestInfo",
         "RequestInit"
+      ],
+      "DeferredRequestInit": [
+        "RequestInit",
+        "DOMHighResTimeStamp"
+      ],
+      "FetchLaterResult": [],
+      "Window": [
+        "FetchLaterResult",
+        "RequestInfo",
+        "DeferredRequestInit"
       ]
     },
     "externalDependencies": [
@@ -2249,7 +2398,9 @@
       "Uint8Array",
       "ReferrerPolicy",
       "AbortSignal",
-      "WindowOrWorkerGlobalScope"
+      "WindowOrWorkerGlobalScope",
+      "DOMHighResTimeStamp",
+      "Window"
     ],
     "hasObsoleteIdl": false
   }

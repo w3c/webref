@@ -74,6 +74,11 @@ partial interface Window {
   [Replaceable] readonly attribute (Event or undefined) event; // legacy
 };
 
+// Source: Fetch Standard (https://fetch.spec.whatwg.org/)
+partial interface Window {
+  [NewObject] FetchLaterResult fetchLater(RequestInfo input, optional DeferredRequestInit init = {});
+};
+
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 Window includes GlobalEventHandlers;
 
