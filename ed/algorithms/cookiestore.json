@@ -642,6 +642,12 @@
       "rationale": ".algorithm",
       "steps": [
         {
+          "html": "<p>Remove all U+0009 TAB and U+0020 SPACE that are at the start or end of <var>name</var>.</p>"
+        },
+        {
+          "html": "<p>Remove all U+0009 TAB and U+0020 SPACE that are at the start or end of <var>value</var>.</p>"
+        },
+        {
           "html": "<p>If <var>name</var> or <var>value</var> contain U+003B (;), any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#c0-control\" id=\"ref-for-c0-control\">C0 control</a> character except U+0009 TAB, or U+007F DELETE, then return failure.</p>\n      <p class=\"XXX\"> Note that it’s up for discussion whether these character restrictions should also apply to <var>expires</var>, <var>domain</var>, <var>path</var>, and <var>sameSite</var> as well. <a href=\"https://github.com/httpwg/http-extensions/issues/1593\">[httpwg/http-extensions Issue #1593]</a></p>"
         },
         {

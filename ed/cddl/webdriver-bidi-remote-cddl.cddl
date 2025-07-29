@@ -485,11 +485,25 @@ browsingContext.TraverseHistoryParameters = {
 }
 
 EmulationCommand = (
+  emulation.SetForcedColorsModeThemeOverride //
   emulation.SetGeolocationOverride //
   emulation.SetLocaleOverride //
   emulation.SetScreenOrientationOverride //
   emulation.SetTimezoneOverride
 )
+
+emulation.SetForcedColorsModeThemeOverride = (
+  method: "emulation.setForcedColorsModeThemeOverride",
+  params: emulation.SetForcedColorsModeThemeOverrideParameters
+)
+
+emulation.SetForcedColorsModeThemeOverrideParameters = {
+  theme: emulation.ForcedColorsModeTheme / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.ForcedColorsModeTheme = "light" / "dark"
 
 emulation.SetGeolocationOverride = (
   method: "emulation.setGeolocationOverride",
@@ -2045,11 +2059,25 @@ browsingContext.TraverseHistoryParameters = {
 }
 
 EmulationCommand = (
+  emulation.SetForcedColorsModeThemeOverride //
   emulation.SetGeolocationOverride //
   emulation.SetLocaleOverride //
   emulation.SetScreenOrientationOverride //
   emulation.SetTimezoneOverride
 )
+
+emulation.SetForcedColorsModeThemeOverride = (
+  method: "emulation.setForcedColorsModeThemeOverride",
+  params: emulation.SetForcedColorsModeThemeOverrideParameters
+)
+
+emulation.SetForcedColorsModeThemeOverrideParameters = {
+  theme: emulation.ForcedColorsModeTheme / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.ForcedColorsModeTheme = "light" / "dark"
 
 emulation.SetGeolocationOverride = (
   method: "emulation.setGeolocationOverride",
