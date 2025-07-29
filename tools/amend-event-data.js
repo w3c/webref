@@ -97,7 +97,7 @@ const patches = {
       change: { targets: ['Window'] }
     }
   ],
-  'cookie-store': [
+  'cookiestore': [
     {
       pattern: { type: /^change$/ },
       matched: 1,
