@@ -19,6 +19,13 @@
     },
     {
       "spec": {
+        "title": "Cookie Store API Standard",
+        "url": "https://cookiestore.spec.whatwg.org/"
+      },
+      "fragment": "[SecureContext]\npartial interface Window {\n  [SameObject] readonly attribute CookieStore cookieStore;\n};"
+    },
+    {
+      "spec": {
         "title": "DOM Standard",
         "url": "https://dom.spec.whatwg.org/"
       },
@@ -86,13 +93,6 @@
         "url": "https://wicg.github.io/anonymous-iframe/"
       },
       "fragment": "partial interface Window {\n  readonly attribute boolean credentialless;\n};"
-    },
-    {
-      "spec": {
-        "title": "Cookie Store API",
-        "url": "https://wicg.github.io/cookie-store/"
-      },
-      "fragment": "[SecureContext]\npartial interface Window {\n  [SameObject] readonly attribute CookieStore cookieStore;\n};"
     },
     {
       "spec": {

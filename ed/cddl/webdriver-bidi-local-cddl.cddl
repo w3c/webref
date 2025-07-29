@@ -1769,7 +1769,8 @@ NetworkCommand = (
   network.ProvideResponse //
   network.RemoveDataCollector //
   network.RemoveIntercept //
-  network.SetCacheBehavior
+  network.SetCacheBehavior //
+  network.SetExtraHeaders
 )
 
 network.AuthCredentials = {
@@ -2002,6 +2003,17 @@ network.SetCacheBehavior = (
 network.SetCacheBehaviorParameters = {
   cacheBehavior: "default" / "bypass",
   ? contexts: [+browsingContext.BrowsingContext]
+}
+
+network.SetExtraHeaders = (
+  method: "network.setExtraHeaders",
+  params: network.SetExtraHeadersParameters
+)
+
+network.SetExtraHeadersParameters = {
+  headers: [+network.Header]
+  ? contexts: [+browsingContext.BrowsingContext]
+  ? userContexts: [+browser.UserContext]
 }
 
 ScriptCommand = (

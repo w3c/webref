@@ -7,12 +7,159 @@
     "jsNames": {
       "constructors": {
         "*": [
+          "QuotaExceededError",
           "DOMException"
         ]
       },
       "functions": {}
     },
     "idlNames": {
+      "QuotaExceededError": {
+        "fragment": "[Exposed=*, Serializable]\ninterface QuotaExceededError : DOMException {\n  constructor(optional DOMString message = \"\", optional QuotaExceededErrorOptions options = {});\n\n  readonly attribute double? quota;\n  readonly attribute double? requested;\n};",
+        "type": "interface",
+        "name": "QuotaExceededError",
+        "inheritance": "DOMException",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "message",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": {
+                  "type": "string",
+                  "value": ""
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "QuotaExceededErrorOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://webidl.spec.whatwg.org/#dom-quotaexceedederror-quotaexceedederror"
+          },
+          {
+            "type": "attribute",
+            "name": "quota",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webidl.spec.whatwg.org/#dom-quotaexceedederror-quota"
+          },
+          {
+            "type": "attribute",
+            "name": "requested",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webidl.spec.whatwg.org/#dom-quotaexceedederror-requested"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "*",
+              "value": null
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Serializable",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://webidl.spec.whatwg.org/#quotaexceedederror"
+      },
+      "QuotaExceededErrorOptions": {
+        "fragment": "dictionary QuotaExceededErrorOptions {\n  double quota;\n  double requested;\n};",
+        "type": "dictionary",
+        "name": "QuotaExceededErrorOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "quota",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webidl.spec.whatwg.org/#dom-quotaexceedederroroptions-quota"
+          },
+          {
+            "type": "field",
+            "name": "requested",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webidl.spec.whatwg.org/#dom-quotaexceedederroroptions-requested"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webidl.spec.whatwg.org/#dictdef-quotaexceedederroroptions"
+      },
       "ArrayBufferView": {
         "fragment": "typedef (Int8Array or Int16Array or Int32Array or\n         Uint8Array or Uint16Array or Uint32Array or Uint8ClampedArray or\n         BigInt64Array or BigUint64Array or\n         Float16Array or Float32Array or Float64Array or DataView) ArrayBufferView;",
         "type": "typedef",
@@ -836,10 +983,16 @@
     "globals": {},
     "exposed": {
       "*": [
+        "QuotaExceededError",
         "DOMException"
       ]
     },
     "dependencies": {
+      "QuotaExceededError": [
+        "DOMException",
+        "QuotaExceededErrorOptions"
+      ],
+      "QuotaExceededErrorOptions": [],
       "DOMException": []
     },
     "externalDependencies": [

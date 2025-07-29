@@ -1,0 +1,774 @@
+{
+  "spec": {
+    "title": "Verifiable Credentials JSON Schema Specification",
+    "url": "https://w3c.github.io/vc-json-schema/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-claims",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-claims",
+      "linkingText": [
+        "claims",
+        "claim"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-verifiable-credential-schema",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-verifiable-credential-schema",
+      "linkingText": [
+        "verifiable credential schema",
+        "verifiable credential schemas",
+        "credential schema",
+        "credential schemas"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-json-schema",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-json-schema",
+      "linkingText": [
+        "json schema",
+        "json schemas"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-credential",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-credential",
+      "linkingText": [
+        "credential",
+        "credentials"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-data-minimization",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-data-minimization",
+      "linkingText": [
+        "data minimization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-decentralized-identifiers",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-decentralized-identifiers",
+      "linkingText": [
+        "decentralized identifiers",
+        "DID",
+        "DIDs",
+        "decentralized identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-decentralized-identifier-documents",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-decentralized-identifier-documents",
+      "linkingText": [
+        "decentralized identifier documents",
+        "DID document",
+        "DID documents",
+        "decentralized identifier document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-digital-signature",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-digital-signature",
+      "linkingText": [
+        "digital signature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-entities",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-entities",
+      "linkingText": [
+        "entities",
+        "entity's",
+        "entity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-holders",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-holders",
+      "linkingText": [
+        "holders",
+        "holder's",
+        "holders'",
+        "holder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-identities",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-identities",
+      "linkingText": [
+        "identities",
+        "identity's",
+        "identity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-issuers",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-issuers",
+      "linkingText": [
+        "issuers",
+        "issuer's",
+        "issuer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-presentation",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-presentation",
+      "linkingText": [
+        "presentation",
+        "presentations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-credential-repository",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-credential-repository",
+      "linkingText": [
+        "credential repository",
+        "credential repositories",
+        "repositories",
+        "repository"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-selective-disclosure",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-selective-disclosure",
+      "linkingText": [
+        "selective disclosure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-subjects",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-subjects",
+      "linkingText": [
+        "subjects",
+        "subject's",
+        "subject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-credential-validation",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-credential-validation",
+      "linkingText": [
+        "credential validation",
+        "validation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-verifiable-credential",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-verifiable-credential",
+      "linkingText": [
+        "verifiable credential",
+        "verifiable credentials",
+        "vc",
+        "vcs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-verifiable-data-registries",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-verifiable-data-registries",
+      "linkingText": [
+        "verifiable data registries",
+        "verifiable data registry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-verifiable-presentation",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-verifiable-presentation",
+      "linkingText": [
+        "verifiable presentation",
+        "verifiable presentations",
+        "vp",
+        "vps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-verify",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-verify",
+      "linkingText": [
+        "verify",
+        "verified",
+        "verifying",
+        "verifiable",
+        "verifiability",
+        "verification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-verifier",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-verifier",
+      "linkingText": [
+        "verifier",
+        "verifiers",
+        "verifier's",
+        "credential verifiers",
+        "credential verifier's"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-relying-parties",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-relying-parties",
+      "linkingText": [
+        "relying parties",
+        "relying party"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-url",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-url",
+      "linkingText": [
+        "URL",
+        "URLs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-resolution",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-resolution",
+      "linkingText": [
+        "resolution",
+        "schema resolution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-json-schema/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-title",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-title",
+      "linkingText": [
+        "title"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title-0",
+        "href": "https://w3c.github.io/vc-json-schema/#title-0",
+        "title": "title",
+        "alternateIds": [
+          "x3-1-3-title"
+        ],
+        "number": "3.1.3"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dfn-description",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-description",
+      "linkingText": [
+        "description"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "description",
+        "href": "https://w3c.github.io/vc-json-schema/#description",
+        "title": "description",
+        "alternateIds": [
+          "x3-1-4-description"
+        ],
+        "number": "3.1.4"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dfn-text-directions",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-text-directions",
+      "linkingText": [
+        "text-directions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dir",
+        "href": "https://w3c.github.io/vc-json-schema/#dir",
+        "title": "dir",
+        "alternateIds": [
+          "x3-1-6-dir"
+        ],
+        "number": "3.1.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-ltr",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-ltr",
+      "linkingText": [
+        "ltr"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "text-direction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dir",
+        "href": "https://w3c.github.io/vc-json-schema/#dir",
+        "title": "dir",
+        "alternateIds": [
+          "x3-1-6-dir"
+        ],
+        "number": "3.1.6"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-rtl",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-rtl",
+      "linkingText": [
+        "rtl"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "text-direction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dir",
+        "href": "https://w3c.github.io/vc-json-schema/#dir",
+        "title": "dir",
+        "alternateIds": [
+          "x3-1-6-dir"
+        ],
+        "number": "3.1.6"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-auto",
+      "href": "https://w3c.github.io/vc-json-schema/#dfn-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "text-direction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dir",
+        "href": "https://w3c.github.io/vc-json-schema/#dir",
+        "title": "dir",
+        "alternateIds": [
+          "x3-1-6-dir"
+        ],
+        "number": "3.1.6"
+      },
+      "definedIn": "dt",
+      "links": []
+    }
+  ]
+}

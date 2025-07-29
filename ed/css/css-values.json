@@ -132,11 +132,25 @@
           "value": "em"
         },
         {
+          "name": "em unit",
+          "prose": "Equal to the computed value of the font-size property of the element on which it is used. The rule: h1 { line-height: 1.2em } means that the line height of h1 elements will be 20% greater than the font size of h1 element. On the other hand: h1 { font-size: 1.2em } means that the font size of h1 elements will be 20% greater than the computed font size inherited by h1 elements.",
+          "href": "https://drafts.csswg.org/css-values-4/#em",
+          "type": "value",
+          "value": "em unit"
+        },
+        {
           "name": "rem",
           "prose": "Equal to the computed value of the em unit on the root element.",
           "href": "https://drafts.csswg.org/css-values-4/#rem",
           "type": "value",
           "value": "rem"
+        },
+        {
+          "name": "rem unit",
+          "prose": "Equal to the computed value of the em unit on the root element.",
+          "href": "https://drafts.csswg.org/css-values-4/#rem",
+          "type": "value",
+          "value": "rem unit"
         },
         {
           "name": "ex",
@@ -146,11 +160,25 @@
           "value": "ex"
         },
         {
+          "name": "ex unit",
+          "prose": "Equal to the used x-height of the first available font [CSS3-FONTS]. The x-height is so called because it is often equal to the height of the lowercase \"x\". However, an ex is defined even for fonts that do not contain an \"x\". The x-height of a font can be found in different ways. Some fonts contain reliable metrics for the x-height. If reliable font metrics are not available, UAs may determine the x-height from the height of a lowercase glyph. One possible heuristic is to look at how far the glyph for the lowercase \"o\" extends below the baseline, and subtract that value from the top of its bounding box. In the cases where it is impossible or impractical to determine the x-height, a value of 0.5em must be assumed.",
+          "href": "https://drafts.csswg.org/css-values-4/#ex",
+          "type": "value",
+          "value": "ex unit"
+        },
+        {
           "name": "rex",
           "prose": "Equal to the value of the ex unit on the root element.",
           "href": "https://drafts.csswg.org/css-values-4/#rex",
           "type": "value",
           "value": "rex"
+        },
+        {
+          "name": "rex unit",
+          "prose": "Equal to the value of the ex unit on the root element.",
+          "href": "https://drafts.csswg.org/css-values-4/#rex",
+          "type": "value",
+          "value": "rex unit"
         },
         {
           "name": "cap",
@@ -160,11 +188,25 @@
           "value": "cap"
         },
         {
+          "name": "cap unit",
+          "prose": "Equal to the used cap-height of the first available font [CSS3-FONTS]. The cap-height is so called because it is approximately equal to the height of a capital Latin letter. However, a cap is defined even for fonts that do not contain Latin letters. The cap-height of a font can be found in different ways. Some fonts contain reliable metrics for the cap-height. If reliable font metrics are not available, UAs may determine the cap-height from the height of an uppercase glyph. One possible heuristic is to look at how far the glyph for the uppercase “O” extends below the baseline, and subtract that value from the top of its bounding box. In the cases where it is impossible or impractical to determine the cap-height, the font’s ascent must be used.",
+          "href": "https://drafts.csswg.org/css-values-4/#cap",
+          "type": "value",
+          "value": "cap unit"
+        },
+        {
           "name": "rcap",
           "prose": "Equal to the value of the cap unit on the root element.",
           "href": "https://drafts.csswg.org/css-values-4/#rcap",
           "type": "value",
           "value": "rcap"
+        },
+        {
+          "name": "rcap unit",
+          "prose": "Equal to the value of the cap unit on the root element.",
+          "href": "https://drafts.csswg.org/css-values-4/#rcap",
+          "type": "value",
+          "value": "rcap unit"
         },
         {
           "name": "ch",
@@ -174,11 +216,25 @@
           "value": "ch"
         },
         {
+          "name": "ch unit",
+          "prose": "Represents the typical advance measure of European alphanumeric characters, and measured as the used advance measure of the “0” (ZERO, U+0030) glyph in the font used to render it. (The advance measure of a glyph is its advance width or height, whichever is in the inline axis of the element.) In the cases where it is impossible or impractical to determine the measure of the “0” glyph, it must be assumed to be 0.5em wide by 1em tall. Thus, the ch unit falls back to 0.5em in the general case, and to 1em when it would be typeset upright (i.e. writing-mode is vertical-rl or vertical-lr and text-orientation is upright).",
+          "href": "https://drafts.csswg.org/css-values-4/#ch",
+          "type": "value",
+          "value": "ch unit"
+        },
+        {
           "name": "rch",
           "prose": "Equal to the value of the ch unit on the root element.",
           "href": "https://drafts.csswg.org/css-values-4/#rch",
           "type": "value",
           "value": "rch"
+        },
+        {
+          "name": "rch unit",
+          "prose": "Equal to the value of the ch unit on the root element.",
+          "href": "https://drafts.csswg.org/css-values-4/#rch",
+          "type": "value",
+          "value": "rch unit"
         },
         {
           "name": "ic",
@@ -188,11 +244,25 @@
           "value": "ic"
         },
         {
+          "name": "ic unit",
+          "prose": "Represents the typical advance measure of CJK letters, and measured as the used advance measure of the “水” (CJK water ideograph, U+6C34) glyph found in the font used to render it. In the cases where it is impossible or impractical to determine the ideographic advance measure, it must be assumed to be 1em.",
+          "href": "https://drafts.csswg.org/css-values-4/#ic",
+          "type": "value",
+          "value": "ic unit"
+        },
+        {
           "name": "ric",
           "prose": "Equal to the value of the ic unit on the root element.",
           "href": "https://drafts.csswg.org/css-values-4/#ric",
           "type": "value",
           "value": "ric"
+        },
+        {
+          "name": "ric unit",
+          "prose": "Equal to the value of the ic unit on the root element.",
+          "href": "https://drafts.csswg.org/css-values-4/#ric",
+          "type": "value",
+          "value": "ric unit"
         },
         {
           "name": "lh",
@@ -202,11 +272,25 @@
           "value": "lh"
         },
         {
+          "name": "lh unit",
+          "prose": "Equal to the computed value of the line-height property of the element on which it is used, converting normal to an absolute length by using only the metrics of the first available font.",
+          "href": "https://drafts.csswg.org/css-values-4/#lh",
+          "type": "value",
+          "value": "lh unit"
+        },
+        {
           "name": "rlh",
           "prose": "Equal to the value of the lh unit on the root element.",
           "href": "https://drafts.csswg.org/css-values-4/#rlh",
           "type": "value",
           "value": "rlh"
+        },
+        {
+          "name": "rlh unit",
+          "prose": "Equal to the value of the lh unit on the root element.",
+          "href": "https://drafts.csswg.org/css-values-4/#rlh",
+          "type": "value",
+          "value": "rlh unit"
         },
         {
           "name": "vw",

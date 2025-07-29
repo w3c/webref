@@ -1220,7 +1220,7 @@
         "href": "https://w3c.github.io/json-ld-api/#dom-jsonldoptions"
       },
       "LoadDocumentCallback": {
-        "fragment": "callback LoadDocumentCallback = Promise<RemoteDocument> (\n  USVString url,\n  optional LoadDocumentOptions? options\n);",
+        "fragment": "callback LoadDocumentCallback = Promise<RemoteDocument> (\n  USVString url,\n  optional LoadDocumentOptions options = {}\n);",
         "type": "callback",
         "name": "LoadDocumentCallback",
         "idlType": {
@@ -1265,11 +1265,13 @@
               "type": "argument-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "LoadDocumentOptions"
             },
-            "default": null,
+            "default": {
+              "type": "dictionary"
+            },
             "optional": true,
             "variadic": false
           }

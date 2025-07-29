@@ -8,6 +8,7 @@
       "constructors": {},
       "functions": {
         "Window": [
+          "CSSCustomMediaRule",
           "Navigator",
           "PreferenceManager",
           "PreferenceObject"
@@ -15,6 +16,91 @@
       }
     },
     "idlNames": {
+      "CustomMediaQuery": {
+        "fragment": "typedef (MediaList or boolean) CustomMediaQuery;",
+        "type": "typedef",
+        "name": "CustomMediaQuery",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MediaList"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/mediaqueries-5/#typedefdef-custommediaquery"
+      },
+      "CSSCustomMediaRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSCustomMediaRule : CSSRule {\n    readonly attribute CSSOMString name;\n    readonly attribute CustomMediaQuery query;\n};",
+        "type": "interface",
+        "name": "CSSCustomMediaRule",
+        "inheritance": "CSSRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/mediaqueries-5/#dom-csscustommediarule-name"
+          },
+          {
+            "type": "attribute",
+            "name": "query",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CustomMediaQuery"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/mediaqueries-5/#dom-csscustommediarule-query"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://drafts.csswg.org/mediaqueries-5/#csscustommediarule"
+      },
       "PreferenceManager": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface PreferenceManager {\n  readonly attribute PreferenceObject colorScheme;\n  readonly attribute PreferenceObject contrast;\n  readonly attribute PreferenceObject reducedMotion;\n  readonly attribute PreferenceObject reducedTransparency;\n  readonly attribute PreferenceObject reducedData;\n};",
         "type": "interface",
@@ -337,12 +423,18 @@
     "globals": {},
     "exposed": {
       "Window": [
+        "CSSCustomMediaRule",
         "Navigator",
         "PreferenceManager",
         "PreferenceObject"
       ]
     },
     "dependencies": {
+      "CSSCustomMediaRule": [
+        "CSSRule",
+        "CSSOMString",
+        "CustomMediaQuery"
+      ],
       "Navigator": [
         "PreferenceManager"
       ],
@@ -355,6 +447,9 @@
       ]
     },
     "externalDependencies": [
+      "MediaList",
+      "CSSRule",
+      "CSSOMString",
       "Navigator",
       "EventTarget",
       "EventHandler"

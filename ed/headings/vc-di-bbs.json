@@ -1,0 +1,719 @@
+{
+  "spec": {
+    "title": "Data Integrity BBS Cryptosuites v1.0",
+    "url": "https://w3c.github.io/vc-di-bbs/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/vc-di-bbs/#title",
+      "level": 1,
+      "title": "Data Integrity BBS Cryptosuites v1.0"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://w3c.github.io/vc-di-bbs/#subtitle",
+      "level": 2,
+      "title": "Achieving Unlinkable Data Integrity with Pairing-based Cryptography"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/vc-di-bbs/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/vc-di-bbs/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/vc-di-bbs/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "alternateIds": [
+        "x1-1-terminology"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/vc-di-bbs/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "alternateIds": [
+        "x1-2-conformance"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "data-model",
+      "href": "https://w3c.github.io/vc-di-bbs/#data-model",
+      "level": 2,
+      "title": "Data Model",
+      "alternateIds": [
+        "x2-data-model"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "verification-methods",
+      "href": "https://w3c.github.io/vc-di-bbs/#verification-methods",
+      "level": 3,
+      "title": "Verification Methods",
+      "alternateIds": [
+        "x2-1-verification-methods"
+      ],
+      "number": "2.1"
+    },
+    {
+      "id": "multikey",
+      "href": "https://w3c.github.io/vc-di-bbs/#multikey",
+      "level": 4,
+      "title": "Multikey",
+      "alternateIds": [
+        "x2-1-1-multikey"
+      ],
+      "number": "2.1.1"
+    },
+    {
+      "id": "proof-representations",
+      "href": "https://w3c.github.io/vc-di-bbs/#proof-representations",
+      "level": 3,
+      "title": "Proof Representations",
+      "alternateIds": [
+        "x2-2-proof-representations"
+      ],
+      "number": "2.2"
+    },
+    {
+      "id": "dataintegrityproof",
+      "href": "https://w3c.github.io/vc-di-bbs/#dataintegrityproof",
+      "level": 4,
+      "title": "DataIntegrityProof",
+      "alternateIds": [
+        "x2-2-1-dataintegrityproof"
+      ],
+      "number": "2.2.1"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://w3c.github.io/vc-di-bbs/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "alternateIds": [
+        "x3-algorithms"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "instantiate-cryptosuite",
+      "href": "https://w3c.github.io/vc-di-bbs/#instantiate-cryptosuite",
+      "level": 3,
+      "title": "Instantiate Cryptosuite",
+      "alternateIds": [
+        "x3-1-instantiate-cryptosuite"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "selective-disclosure-functions",
+      "href": "https://w3c.github.io/vc-di-bbs/#selective-disclosure-functions",
+      "level": 3,
+      "title": "Selective Disclosure Functions",
+      "alternateIds": [
+        "x3-2-selective-disclosure-functions"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "createshuffledidlabelmapfunction",
+      "href": "https://w3c.github.io/vc-di-bbs/#createshuffledidlabelmapfunction",
+      "level": 4,
+      "title": "createShuffledIdLabelMapFunction",
+      "alternateIds": [
+        "x3-2-1-createshuffledidlabelmapfunction"
+      ],
+      "number": "3.2.1"
+    },
+    {
+      "id": "bbs-2023-functions",
+      "href": "https://w3c.github.io/vc-di-bbs/#bbs-2023-functions",
+      "level": 3,
+      "title": "bbs-2023 Functions",
+      "alternateIds": [
+        "x3-3-bbs-2023-functions"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "serializebaseproofvalue",
+      "href": "https://w3c.github.io/vc-di-bbs/#serializebaseproofvalue",
+      "level": 4,
+      "title": "serializeBaseProofValue",
+      "alternateIds": [
+        "x3-3-1-serializebaseproofvalue"
+      ],
+      "number": "3.3.1"
+    },
+    {
+      "id": "parsebaseproofvalue",
+      "href": "https://w3c.github.io/vc-di-bbs/#parsebaseproofvalue",
+      "level": 4,
+      "title": "parseBaseProofValue",
+      "alternateIds": [
+        "x3-3-2-parsebaseproofvalue"
+      ],
+      "number": "3.3.2"
+    },
+    {
+      "id": "createdisclosuredata",
+      "href": "https://w3c.github.io/vc-di-bbs/#createdisclosuredata",
+      "level": 4,
+      "title": "createDisclosureData",
+      "alternateIds": [
+        "x3-3-3-createdisclosuredata"
+      ],
+      "number": "3.3.3"
+    },
+    {
+      "id": "compresslabelmap",
+      "href": "https://w3c.github.io/vc-di-bbs/#compresslabelmap",
+      "level": 4,
+      "title": "compressLabelMap",
+      "alternateIds": [
+        "x3-3-4-compresslabelmap"
+      ],
+      "number": "3.3.4"
+    },
+    {
+      "id": "decompresslabelmap",
+      "href": "https://w3c.github.io/vc-di-bbs/#decompresslabelmap",
+      "level": 4,
+      "title": "decompressLabelMap",
+      "alternateIds": [
+        "x3-3-5-decompresslabelmap"
+      ],
+      "number": "3.3.5"
+    },
+    {
+      "id": "serializederivedproofvalue",
+      "href": "https://w3c.github.io/vc-di-bbs/#serializederivedproofvalue",
+      "level": 4,
+      "title": "serializeDerivedProofValue",
+      "alternateIds": [
+        "x3-3-6-serializederivedproofvalue"
+      ],
+      "number": "3.3.6"
+    },
+    {
+      "id": "parsederivedproofvalue",
+      "href": "https://w3c.github.io/vc-di-bbs/#parsederivedproofvalue",
+      "level": 4,
+      "title": "parseDerivedProofValue",
+      "alternateIds": [
+        "x3-3-7-parsederivedproofvalue"
+      ],
+      "number": "3.3.7"
+    },
+    {
+      "id": "createverifydata",
+      "href": "https://w3c.github.io/vc-di-bbs/#createverifydata",
+      "level": 4,
+      "title": "createVerifyData",
+      "alternateIds": [
+        "x3-3-8-createverifydata"
+      ],
+      "number": "3.3.8"
+    },
+    {
+      "id": "bbs-2023",
+      "href": "https://w3c.github.io/vc-di-bbs/#bbs-2023",
+      "level": 3,
+      "title": "bbs-2023",
+      "alternateIds": [
+        "x3-4-bbs-2023"
+      ],
+      "number": "3.4"
+    },
+    {
+      "id": "create-base-proof-bbs-2023",
+      "href": "https://w3c.github.io/vc-di-bbs/#create-base-proof-bbs-2023",
+      "level": 4,
+      "title": "Create Base Proof (bbs-2023)",
+      "alternateIds": [
+        "x3-4-1-create-base-proof-bbs-2023"
+      ],
+      "number": "3.4.1"
+    },
+    {
+      "id": "base-proof-transformation-bbs-2023",
+      "href": "https://w3c.github.io/vc-di-bbs/#base-proof-transformation-bbs-2023",
+      "level": 4,
+      "title": "Base Proof Transformation (bbs-2023)",
+      "alternateIds": [
+        "x3-4-2-base-proof-transformation-bbs-2023"
+      ],
+      "number": "3.4.2"
+    },
+    {
+      "id": "base-proof-hashing-bbs-2023",
+      "href": "https://w3c.github.io/vc-di-bbs/#base-proof-hashing-bbs-2023",
+      "level": 4,
+      "title": "Base Proof Hashing (bbs-2023)",
+      "alternateIds": [
+        "x3-4-3-base-proof-hashing-bbs-2023"
+      ],
+      "number": "3.4.3"
+    },
+    {
+      "id": "base-proof-configuration-bbs-2023",
+      "href": "https://w3c.github.io/vc-di-bbs/#base-proof-configuration-bbs-2023",
+      "level": 4,
+      "title": "Base Proof Configuration (bbs-2023)",
+      "alternateIds": [
+        "x3-4-4-base-proof-configuration-bbs-2023"
+      ],
+      "number": "3.4.4"
+    },
+    {
+      "id": "base-proof-serialization-bbs-2023",
+      "href": "https://w3c.github.io/vc-di-bbs/#base-proof-serialization-bbs-2023",
+      "level": 4,
+      "title": "Base Proof Serialization (bbs-2023)",
+      "alternateIds": [
+        "x3-4-5-base-proof-serialization-bbs-2023"
+      ],
+      "number": "3.4.5"
+    },
+    {
+      "id": "add-derived-proof-bbs-2023",
+      "href": "https://w3c.github.io/vc-di-bbs/#add-derived-proof-bbs-2023",
+      "level": 4,
+      "title": "Add Derived Proof (bbs-2023)",
+      "alternateIds": [
+        "x3-4-6-add-derived-proof-bbs-2023"
+      ],
+      "number": "3.4.6"
+    },
+    {
+      "id": "verify-derived-proof-bbs-2023",
+      "href": "https://w3c.github.io/vc-di-bbs/#verify-derived-proof-bbs-2023",
+      "level": 4,
+      "title": "Verify Derived Proof (bbs-2023)",
+      "alternateIds": [
+        "x3-4-7-verify-derived-proof-bbs-2023"
+      ],
+      "number": "3.4.7"
+    },
+    {
+      "id": "optional-features",
+      "href": "https://w3c.github.io/vc-di-bbs/#optional-features",
+      "level": 2,
+      "title": "Optional Features",
+      "alternateIds": [
+        "x4-optional-features"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "anonymous-holder-binding",
+      "href": "https://w3c.github.io/vc-di-bbs/#anonymous-holder-binding",
+      "level": 3,
+      "title": "Anonymous Holder Binding",
+      "alternateIds": [
+        "x4-1-anonymous-holder-binding"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "credential-bound-pseudonyms",
+      "href": "https://w3c.github.io/vc-di-bbs/#credential-bound-pseudonyms",
+      "level": 3,
+      "title": "Credential-Bound Pseudonyms",
+      "alternateIds": [
+        "x4-2-credential-bound-pseudonyms"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "holder-binding-and-pseudonyms",
+      "href": "https://w3c.github.io/vc-di-bbs/#holder-binding-and-pseudonyms",
+      "level": 3,
+      "title": "Holder Binding and Pseudonyms",
+      "alternateIds": [
+        "x4-3-holder-binding-and-pseudonyms"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "optional-feature-summary",
+      "href": "https://w3c.github.io/vc-di-bbs/#optional-feature-summary",
+      "level": 3,
+      "title": "Optional Feature Summary",
+      "alternateIds": [
+        "x4-4-optional-feature-summary"
+      ],
+      "number": "4.4"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/vc-di-bbs/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "x5-security-considerations"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "base-proof-security-properties",
+      "href": "https://w3c.github.io/vc-di-bbs/#base-proof-security-properties",
+      "level": 3,
+      "title": "Base Proof Security Properties",
+      "alternateIds": [
+        "x5-1-base-proof-security-properties"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "derived-proof-security-properties",
+      "href": "https://w3c.github.io/vc-di-bbs/#derived-proof-security-properties",
+      "level": 3,
+      "title": "Derived Proof Security Properties",
+      "alternateIds": [
+        "x5-2-derived-proof-security-properties"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://w3c.github.io/vc-di-bbs/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "x6-privacy-considerations"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "selective-disclosure-and-data-leakage",
+      "href": "https://w3c.github.io/vc-di-bbs/#selective-disclosure-and-data-leakage",
+      "level": 3,
+      "title": "Selective Disclosure and Data Leakage",
+      "alternateIds": [
+        "x6-1-selective-disclosure-and-data-leakage"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "selective-disclosure-and-unlinkability",
+      "href": "https://w3c.github.io/vc-di-bbs/#selective-disclosure-and-unlinkability",
+      "level": 3,
+      "title": "Selective Disclosure and Unlinkability",
+      "alternateIds": [
+        "x6-2-selective-disclosure-and-unlinkability"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "linkage-via-cryptographic-artifacts",
+      "href": "https://w3c.github.io/vc-di-bbs/#linkage-via-cryptographic-artifacts",
+      "level": 4,
+      "title": "Linkage via Cryptographic Artifacts",
+      "alternateIds": [
+        "x6-2-1-linkage-via-cryptographic-artifacts"
+      ],
+      "number": "6.2.1"
+    },
+    {
+      "id": "linkage-via-vc-processing",
+      "href": "https://w3c.github.io/vc-di-bbs/#linkage-via-vc-processing",
+      "level": 4,
+      "title": "Linkage via VC Processing",
+      "alternateIds": [
+        "x6-2-2-linkage-via-vc-processing"
+      ],
+      "number": "6.2.2"
+    },
+    {
+      "id": "linkage-via-json-ld-node-identifiers",
+      "href": "https://w3c.github.io/vc-di-bbs/#linkage-via-json-ld-node-identifiers",
+      "level": 4,
+      "title": "Linkage via JSON-LD Node Identifiers",
+      "alternateIds": [
+        "x6-2-3-linkage-via-json-ld-node-identifiers"
+      ],
+      "number": "6.2.3"
+    },
+    {
+      "id": "linkage-via-proof-options-and-mandatory-reveal",
+      "href": "https://w3c.github.io/vc-di-bbs/#linkage-via-proof-options-and-mandatory-reveal",
+      "level": 4,
+      "title": "Linkage via Proof Options and Mandatory Reveal",
+      "alternateIds": [
+        "x6-2-4-linkage-via-proof-options-and-mandatory-reveal"
+      ],
+      "number": "6.2.4"
+    },
+    {
+      "id": "linkage-via-holder-selective-reveal",
+      "href": "https://w3c.github.io/vc-di-bbs/#linkage-via-holder-selective-reveal",
+      "level": 4,
+      "title": "Linkage via Holder Selective Reveal",
+      "alternateIds": [
+        "x6-2-5-linkage-via-holder-selective-reveal"
+      ],
+      "number": "6.2.5"
+    },
+    {
+      "id": "external-vc-system-based-linkage",
+      "href": "https://w3c.github.io/vc-di-bbs/#external-vc-system-based-linkage",
+      "level": 4,
+      "title": "External VC System Based Linkage",
+      "alternateIds": [
+        "x6-2-6-external-vc-system-based-linkage"
+      ],
+      "number": "6.2.6"
+    },
+    {
+      "id": "test-vectors",
+      "href": "https://w3c.github.io/vc-di-bbs/#test-vectors",
+      "level": 2,
+      "title": "Test Vectors",
+      "alternateIds": [
+        "a-test-vectors"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "baseline-basic-example",
+      "href": "https://w3c.github.io/vc-di-bbs/#baseline-basic-example",
+      "level": 3,
+      "title": "Baseline Basic Example",
+      "alternateIds": [
+        "a-1-baseline-basic-example"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "base-proof",
+      "href": "https://w3c.github.io/vc-di-bbs/#base-proof",
+      "level": 4,
+      "title": "Base Proof",
+      "alternateIds": [
+        "a-1-1-base-proof"
+      ],
+      "number": "A.1.1"
+    },
+    {
+      "id": "derived-proof",
+      "href": "https://w3c.github.io/vc-di-bbs/#derived-proof",
+      "level": 4,
+      "title": "Derived Proof",
+      "alternateIds": [
+        "a-1-2-derived-proof"
+      ],
+      "number": "A.1.2"
+    },
+    {
+      "id": "baseline-enhanced-example",
+      "href": "https://w3c.github.io/vc-di-bbs/#baseline-enhanced-example",
+      "level": 3,
+      "title": "Baseline Enhanced Example",
+      "alternateIds": [
+        "a-2-baseline-enhanced-example"
+      ],
+      "number": "A.2"
+    },
+    {
+      "id": "base-proof-0",
+      "href": "https://w3c.github.io/vc-di-bbs/#base-proof-0",
+      "level": 4,
+      "title": "Base Proof",
+      "alternateIds": [
+        "a-2-1-base-proof"
+      ],
+      "number": "A.2.1"
+    },
+    {
+      "id": "derived-proof-0",
+      "href": "https://w3c.github.io/vc-di-bbs/#derived-proof-0",
+      "level": 4,
+      "title": "Derived Proof",
+      "alternateIds": [
+        "a-2-2-derived-proof"
+      ],
+      "number": "A.2.2"
+    },
+    {
+      "id": "anonymous-holder-binding-feature",
+      "href": "https://w3c.github.io/vc-di-bbs/#anonymous-holder-binding-feature",
+      "level": 3,
+      "title": "Anonymous Holder Binding Feature",
+      "alternateIds": [
+        "a-3-anonymous-holder-binding-feature"
+      ],
+      "number": "A.3"
+    },
+    {
+      "id": "holder-binding-commitment-generation",
+      "href": "https://w3c.github.io/vc-di-bbs/#holder-binding-commitment-generation",
+      "level": 4,
+      "title": "Holder Binding Commitment Generation",
+      "alternateIds": [
+        "a-3-1-holder-binding-commitment-generation"
+      ],
+      "number": "A.3.1"
+    },
+    {
+      "id": "holder-binding-base-proof",
+      "href": "https://w3c.github.io/vc-di-bbs/#holder-binding-base-proof",
+      "level": 4,
+      "title": "Holder Binding Base Proof",
+      "alternateIds": [
+        "a-3-2-holder-binding-base-proof"
+      ],
+      "number": "A.3.2"
+    },
+    {
+      "id": "holder-binding-derived-proof",
+      "href": "https://w3c.github.io/vc-di-bbs/#holder-binding-derived-proof",
+      "level": 4,
+      "title": "Holder Binding Derived Proof",
+      "alternateIds": [
+        "a-3-3-holder-binding-derived-proof"
+      ],
+      "number": "A.3.3"
+    },
+    {
+      "id": "credential-bound-pseudonym-feature",
+      "href": "https://w3c.github.io/vc-di-bbs/#credential-bound-pseudonym-feature",
+      "level": 3,
+      "title": "Credential Bound Pseudonym Feature",
+      "alternateIds": [
+        "a-4-credential-bound-pseudonym-feature"
+      ],
+      "number": "A.4"
+    },
+    {
+      "id": "prover-nym-commitment-generation",
+      "href": "https://w3c.github.io/vc-di-bbs/#prover-nym-commitment-generation",
+      "level": 4,
+      "title": "Prover Nym Commitment Generation",
+      "alternateIds": [
+        "a-4-1-prover-nym-commitment-generation"
+      ],
+      "number": "A.4.1"
+    },
+    {
+      "id": "pseudonym-base-proof",
+      "href": "https://w3c.github.io/vc-di-bbs/#pseudonym-base-proof",
+      "level": 4,
+      "title": "Pseudonym Base Proof",
+      "alternateIds": [
+        "a-4-2-pseudonym-base-proof"
+      ],
+      "number": "A.4.2"
+    },
+    {
+      "id": "pseudonym-derived-proof",
+      "href": "https://w3c.github.io/vc-di-bbs/#pseudonym-derived-proof",
+      "level": 4,
+      "title": "Pseudonym Derived Proof",
+      "alternateIds": [
+        "a-4-3-pseudonym-derived-proof"
+      ],
+      "number": "A.4.3"
+    },
+    {
+      "id": "holder-binding-and-pseudonym-feature",
+      "href": "https://w3c.github.io/vc-di-bbs/#holder-binding-and-pseudonym-feature",
+      "level": 3,
+      "title": "Holder Binding and Pseudonym Feature",
+      "alternateIds": [
+        "a-5-holder-binding-and-pseudonym-feature"
+      ],
+      "number": "A.5"
+    },
+    {
+      "id": "holder-secret-and-prover-nym-commitment-generation",
+      "href": "https://w3c.github.io/vc-di-bbs/#holder-secret-and-prover-nym-commitment-generation",
+      "level": 4,
+      "title": "Holder Secret and Prover Nym Commitment Generation",
+      "alternateIds": [
+        "a-5-1-holder-secret-and-prover-nym-commitment-generation"
+      ],
+      "number": "A.5.1"
+    },
+    {
+      "id": "holder-binding-and-pseudonym-base-proof",
+      "href": "https://w3c.github.io/vc-di-bbs/#holder-binding-and-pseudonym-base-proof",
+      "level": 4,
+      "title": "Holder Binding and Pseudonym Base Proof",
+      "alternateIds": [
+        "a-5-2-holder-binding-and-pseudonym-base-proof"
+      ],
+      "number": "A.5.2"
+    },
+    {
+      "id": "holder-binding-and-pseudonym-derived-proof",
+      "href": "https://w3c.github.io/vc-di-bbs/#holder-binding-and-pseudonym-derived-proof",
+      "level": 4,
+      "title": "Holder Binding and Pseudonym Derived Proof",
+      "alternateIds": [
+        "a-5-3-holder-binding-and-pseudonym-derived-proof"
+      ],
+      "number": "A.5.3"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/vc-di-bbs/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "b-acknowledgements"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/vc-di-bbs/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "c-references"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/vc-di-bbs/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "c-1-normative-references"
+      ],
+      "number": "C.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/vc-di-bbs/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "c-2-informative-references"
+      ],
+      "number": "C.2"
+    }
+  ]
+}

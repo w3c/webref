@@ -6,7 +6,7 @@
       "title": "File System Standard",
       "url": "https://fs.spec.whatwg.org/"
     },
-    "fragment": "[Exposed=(Window,Worker), SecureContext, Serializable]\ninterface FileSystemDirectoryHandle : FileSystemHandle {\n  async iterable<USVString, FileSystemHandle>;\n\n  Promise<FileSystemFileHandle> getFileHandle(USVString name, optional FileSystemGetFileOptions options = {});\n  Promise<FileSystemDirectoryHandle> getDirectoryHandle(USVString name, optional FileSystemGetDirectoryOptions options = {});\n\n  Promise<undefined> removeEntry(USVString name, optional FileSystemRemoveOptions options = {});\n\n  Promise<sequence<USVString>?> resolve(FileSystemHandle possibleDescendant);\n};",
+    "fragment": "[Exposed=(Window,Worker), SecureContext, Serializable]\ninterface FileSystemDirectoryHandle : FileSystemHandle {\n  async_iterable<USVString, FileSystemHandle>;\n\n  Promise<FileSystemFileHandle> getFileHandle(USVString name, optional FileSystemGetFileOptions options = {});\n  Promise<FileSystemDirectoryHandle> getDirectoryHandle(USVString name, optional FileSystemGetDirectoryOptions options = {});\n\n  Promise<undefined> removeEntry(USVString name, optional FileSystemRemoveOptions options = {});\n\n  Promise<sequence<USVString>?> resolve(FileSystemHandle possibleDescendant);\n};",
     "href": "https://fs.spec.whatwg.org/#filesystemdirectoryhandle"
   },
   "extended": [],

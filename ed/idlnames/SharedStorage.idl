@@ -35,5 +35,5 @@ interface SharedStorage {
   Promise<double> remainingBudget();
 
   [Exposed=SharedStorageWorklet]
-  async iterable<DOMString, DOMString>;
+  async_iterable<DOMString, DOMString>;
 };

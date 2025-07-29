@@ -165,19 +165,17 @@
       ]
     },
     {
+      "html": "A <a href=\"https://w3c.github.io/html-aam/#el-figcaption\"><code>figcaption</code></a> provides additional information related to its parent <a href=\"https://w3c.github.io/html-aam/#el-figure\"><code>figure</code></a> element. A <code>figcaption</code> does not take part in the\n            <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> or <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-description\">accessible description</a>\n            computation, unless explicitly referenced by an author.",
       "rationale": "if",
       "steps": [
         {
           "html": "If the <code>figure</code> element has an <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-label\"><code>aria-label</code></a> or an <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-labelledby\"><code>aria-labelledby</code></a> attribute the\n              <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is to be calculated using the algorithm defined in\n              <a href=\"https://w3c.github.io/accname/\" class=\"accname\">Accessible Name and Description: Computation and <abbr title=\"application programming interface\">API</abbr> Mappings</a>."
         },
         {
-          "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty, then: if the <code>figure</code> element has a\n              <a href=\"https://dom.spec.whatwg.org/#concept-tree-child\">child</a> that is a <code>figcaption</code> element, then use the subtree of the first such element."
+          "html": "Otherwise, use the <code>title</code> attribute."
         },
         {
-          "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty, then: if the <code>figure</code> element has a <code>title</code> attribute, then use that attribute."
-        },
-        {
-          "html": "Otherwise, there is no <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a>."
+          "html": "If none of the above yield a usable text string there is no <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a>."
         }
       ]
     },
@@ -188,10 +186,13 @@
           "html": "If the <code>img</code> element has an <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-label\"><code>aria-label</code></a> or an <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-labelledby\"><code>aria-labelledby</code></a> attribute the\n              <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is to be calculated using the algorithm defined in\n              <a href=\"https://w3c.github.io/accname/\" class=\"accname\">Accessible Name and Description: Computation and <abbr title=\"application programming interface\">API</abbr> Mappings</a>."
         },
         {
-          "html": "Otherwise use <code>alt</code> attribute, even if its value is the empty string."
+          "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty: use <code>alt</code> attribute, even if its value is the empty string."
         },
         {
-          "html": "Otherwise, if there is no <code>alt</code> attribute use the <code>title</code> attribute."
+          "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty and there is no <code>alt</code> attribute, use the <code>title</code> attribute."
+        },
+        {
+          "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty and there are no <code>alt</code> or <code>title</code> attributes, and the <code>img</code> is a descendant of a <code>figure</code>\n              element with a child <code>figcaption</code> but no other non-<a href=\"https://html.spec.whatwg.org/multipage/dom.html#inter-element-whitespace\">whitespace</a> <a href=\"https://html.spec.whatwg.org/multipage/dom.html#flow-content-2\">flow content</a> descendants, then use the <a href=\"https://www.w3.org/TR/accname-1.2/#mapping_additional_nd_te\">text equivalent computation</a> of the\n              <code>figcaption</code> element's subtree."
         },
         {
           "html": "Otherwise there is no <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a>."

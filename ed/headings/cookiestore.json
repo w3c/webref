@@ -1,30 +1,24 @@
 {
   "spec": {
-    "title": "Cookie Store API",
-    "url": "https://wicg.github.io/cookie-store/"
+    "title": "Cookie Store API Standard",
+    "url": "https://cookiestore.spec.whatwg.org/"
   },
   "headings": [
     {
       "id": "title",
-      "href": "https://wicg.github.io/cookie-store/#title",
+      "href": "https://cookiestore.spec.whatwg.org/#title",
       "level": 1,
       "title": "Cookie Store API"
     },
     {
       "id": "abstract",
-      "href": "https://wicg.github.io/cookie-store/#abstract",
+      "href": "https://cookiestore.spec.whatwg.org/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
-      "id": "status",
-      "href": "https://wicg.github.io/cookie-store/#status",
-      "level": 2,
-      "title": "Status of this document"
-    },
-    {
       "id": "toc",
-      "href": "https://wicg.github.io/cookie-store/#toc",
+      "href": "https://cookiestore.spec.whatwg.org/#toc",
       "level": 2,
       "title": "Table of Contents",
       "alternateIds": [
@@ -33,356 +27,344 @@
     },
     {
       "id": "intro",
-      "href": "https://wicg.github.io/cookie-store/#intro",
+      "href": "https://cookiestore.spec.whatwg.org/#intro",
       "level": 2,
       "title": "Introduction",
       "number": "1"
     },
     {
       "id": "intro-proposed-change",
-      "href": "https://wicg.github.io/cookie-store/#intro-proposed-change",
+      "href": "https://cookiestore.spec.whatwg.org/#intro-proposed-change",
       "level": 3,
-      "title": "A Taste of the Proposed Change",
+      "title": "Alternative to document.cookie",
       "number": "1.1"
     },
     {
       "id": "intro-summary",
-      "href": "https://wicg.github.io/cookie-store/#intro-summary",
+      "href": "https://cookiestore.spec.whatwg.org/#intro-summary",
       "level": 3,
       "title": "Summary",
       "number": "1.2"
     },
     {
       "id": "intro-query",
-      "href": "https://wicg.github.io/cookie-store/#intro-query",
+      "href": "https://cookiestore.spec.whatwg.org/#intro-query",
       "level": 3,
-      "title": "Querying Cookies",
+      "title": "Querying cookies",
       "number": "1.3"
     },
     {
       "id": "intro-modify",
-      "href": "https://wicg.github.io/cookie-store/#intro-modify",
+      "href": "https://cookiestore.spec.whatwg.org/#intro-modify",
       "level": 3,
-      "title": "Modifying Cookies",
+      "title": "Modifying cookies",
       "number": "1.4"
     },
     {
       "id": "intro-monitor",
-      "href": "https://wicg.github.io/cookie-store/#intro-monitor",
+      "href": "https://cookiestore.spec.whatwg.org/#intro-monitor",
       "level": 3,
-      "title": "Monitoring Cookies",
+      "title": "Monitoring cookies",
       "number": "1.5"
     },
     {
       "id": "concepts",
-      "href": "https://wicg.github.io/cookie-store/#concepts",
+      "href": "https://cookiestore.spec.whatwg.org/#concepts",
       "level": 2,
       "title": "Concepts",
       "number": "2"
     },
     {
       "id": "cookie-concept",
-      "href": "https://wicg.github.io/cookie-store/#cookie-concept",
+      "href": "https://cookiestore.spec.whatwg.org/#cookie-concept",
       "level": 3,
       "title": "Cookie",
       "number": "2.1"
     },
     {
       "id": "cookie-store--concept",
-      "href": "https://wicg.github.io/cookie-store/#cookie-store--concept",
+      "href": "https://cookiestore.spec.whatwg.org/#cookie-store--concept",
       "level": 3,
-      "title": "Cookie Store",
+      "title": "Cookie store",
       "number": "2.2"
     },
     {
       "id": "service-worker-extensions",
-      "href": "https://wicg.github.io/cookie-store/#service-worker-extensions",
+      "href": "https://cookiestore.spec.whatwg.org/#service-worker-extensions",
       "level": 3,
-      "title": "Extensions to Service Worker",
+      "title": "Extensions to Service Workers",
       "number": "2.3"
     },
     {
       "id": "CookieStore",
-      "href": "https://wicg.github.io/cookie-store/#CookieStore",
+      "href": "https://cookiestore.spec.whatwg.org/#CookieStore",
       "level": 2,
-      "title": "The CookieStore Interface",
+      "title": "The CookieStore interface",
       "number": "3"
     },
     {
       "id": "CookieStore-get",
-      "href": "https://wicg.github.io/cookie-store/#CookieStore-get",
+      "href": "https://cookiestore.spec.whatwg.org/#CookieStore-get",
       "level": 3,
       "title": "The get() method",
       "number": "3.1"
     },
     {
       "id": "CookieStore-getAll",
-      "href": "https://wicg.github.io/cookie-store/#CookieStore-getAll",
+      "href": "https://cookiestore.spec.whatwg.org/#CookieStore-getAll",
       "level": 3,
       "title": "The getAll() method",
       "number": "3.2"
     },
     {
       "id": "CookieStore-set",
-      "href": "https://wicg.github.io/cookie-store/#CookieStore-set",
+      "href": "https://cookiestore.spec.whatwg.org/#CookieStore-set",
       "level": 3,
       "title": "The set() method",
       "number": "3.3"
     },
     {
       "id": "CookieStore-delete",
-      "href": "https://wicg.github.io/cookie-store/#CookieStore-delete",
+      "href": "https://cookiestore.spec.whatwg.org/#CookieStore-delete",
       "level": 3,
       "title": "The delete() method",
       "number": "3.4"
     },
     {
       "id": "CookieStoreManager",
-      "href": "https://wicg.github.io/cookie-store/#CookieStoreManager",
+      "href": "https://cookiestore.spec.whatwg.org/#CookieStoreManager",
       "level": 2,
-      "title": "The CookieStoreManager Interface",
+      "title": "The CookieStoreManager interface",
       "number": "4"
     },
     {
       "id": "CookieStoreManager-subscribe",
-      "href": "https://wicg.github.io/cookie-store/#CookieStoreManager-subscribe",
+      "href": "https://cookiestore.spec.whatwg.org/#CookieStoreManager-subscribe",
       "level": 3,
       "title": "The subscribe() method",
       "number": "4.1"
     },
     {
       "id": "CookieStoreManager-getSubscriptions",
-      "href": "https://wicg.github.io/cookie-store/#CookieStoreManager-getSubscriptions",
+      "href": "https://cookiestore.spec.whatwg.org/#CookieStoreManager-getSubscriptions",
       "level": 3,
       "title": "The getSubscriptions() method",
       "number": "4.2"
     },
     {
       "id": "CookieStoreManager-unsubscribe",
-      "href": "https://wicg.github.io/cookie-store/#CookieStoreManager-unsubscribe",
+      "href": "https://cookiestore.spec.whatwg.org/#CookieStoreManager-unsubscribe",
       "level": 3,
       "title": "The unsubscribe() method",
       "number": "4.3"
     },
     {
       "id": "ServiceWorkerRegistration",
-      "href": "https://wicg.github.io/cookie-store/#ServiceWorkerRegistration",
+      "href": "https://cookiestore.spec.whatwg.org/#ServiceWorkerRegistration",
       "level": 3,
       "title": "The ServiceWorkerRegistration interface",
       "number": "4.4"
     },
     {
       "id": "event-interfaces",
-      "href": "https://wicg.github.io/cookie-store/#event-interfaces",
+      "href": "https://cookiestore.spec.whatwg.org/#event-interfaces",
       "level": 2,
-      "title": "Event Interfaces",
+      "title": "Event interfaces",
       "number": "5"
     },
     {
       "id": "CookieChangeEvent",
-      "href": "https://wicg.github.io/cookie-store/#CookieChangeEvent",
+      "href": "https://cookiestore.spec.whatwg.org/#CookieChangeEvent",
       "level": 3,
       "title": "The CookieChangeEvent interface",
       "number": "5.1"
     },
     {
       "id": "ExtendableCookieChangeEvent",
-      "href": "https://wicg.github.io/cookie-store/#ExtendableCookieChangeEvent",
+      "href": "https://cookiestore.spec.whatwg.org/#ExtendableCookieChangeEvent",
       "level": 3,
       "title": "The ExtendableCookieChangeEvent interface",
       "number": "5.2"
     },
     {
       "id": "globals",
-      "href": "https://wicg.github.io/cookie-store/#globals",
+      "href": "https://cookiestore.spec.whatwg.org/#globals",
       "level": 2,
-      "title": "Global Interfaces",
+      "title": "Global interfaces",
       "number": "6"
     },
     {
       "id": "Window",
-      "href": "https://wicg.github.io/cookie-store/#Window",
+      "href": "https://cookiestore.spec.whatwg.org/#Window",
       "level": 3,
       "title": "The Window interface",
       "number": "6.1"
     },
     {
       "id": "ServiceWorkerGlobalScope",
-      "href": "https://wicg.github.io/cookie-store/#ServiceWorkerGlobalScope",
+      "href": "https://cookiestore.spec.whatwg.org/#ServiceWorkerGlobalScope",
       "level": 3,
       "title": "The ServiceWorkerGlobalScope interface",
       "number": "6.2"
     },
     {
       "id": "algorithms",
-      "href": "https://wicg.github.io/cookie-store/#algorithms",
+      "href": "https://cookiestore.spec.whatwg.org/#algorithms",
       "level": 2,
       "title": "Algorithms",
       "number": "7"
     },
     {
       "id": "query-cookies-algorithm",
-      "href": "https://wicg.github.io/cookie-store/#query-cookies-algorithm",
+      "href": "https://cookiestore.spec.whatwg.org/#query-cookies-algorithm",
       "level": 3,
-      "title": "Query Cookies",
+      "title": "Query cookies",
       "number": "7.1"
     },
     {
       "id": "set-cookie-algorithm",
-      "href": "https://wicg.github.io/cookie-store/#set-cookie-algorithm",
+      "href": "https://cookiestore.spec.whatwg.org/#set-cookie-algorithm",
       "level": 3,
-      "title": "Set a Cookie",
+      "title": "Set a cookie",
       "number": "7.2"
     },
     {
       "id": "delete-cookie-algorithm",
-      "href": "https://wicg.github.io/cookie-store/#delete-cookie-algorithm",
+      "href": "https://cookiestore.spec.whatwg.org/#delete-cookie-algorithm",
       "level": 3,
-      "title": "Delete a Cookie",
+      "title": "Delete a cookie",
       "number": "7.3"
     },
     {
       "id": "process-changes",
-      "href": "https://wicg.github.io/cookie-store/#process-changes",
+      "href": "https://cookiestore.spec.whatwg.org/#process-changes",
       "level": 3,
-      "title": "Process Changes",
+      "title": "Process changes",
       "number": "7.4"
     },
     {
       "id": "security",
-      "href": "https://wicg.github.io/cookie-store/#security",
+      "href": "https://cookiestore.spec.whatwg.org/#security",
       "level": 2,
-      "title": "Security Considerations",
+      "title": "Security considerations",
       "number": "8"
     },
     {
       "id": "gotcha",
-      "href": "https://wicg.github.io/cookie-store/#gotcha",
+      "href": "https://cookiestore.spec.whatwg.org/#gotcha",
       "level": 3,
       "title": "Gotcha!",
       "number": "8.1"
     },
     {
       "id": "restrict",
-      "href": "https://wicg.github.io/cookie-store/#restrict",
+      "href": "https://cookiestore.spec.whatwg.org/#restrict",
       "level": 3,
       "title": "Restrict?",
       "number": "8.2"
     },
     {
       "id": "secure-cookies",
-      "href": "https://wicg.github.io/cookie-store/#secure-cookies",
+      "href": "https://cookiestore.spec.whatwg.org/#secure-cookies",
       "level": 3,
       "title": "Secure cookies",
       "number": "8.3"
     },
     {
       "id": "surprises",
-      "href": "https://wicg.github.io/cookie-store/#surprises",
+      "href": "https://cookiestore.spec.whatwg.org/#surprises",
       "level": 3,
       "title": "Surprises",
       "number": "8.4"
     },
     {
       "id": "prefixes",
-      "href": "https://wicg.github.io/cookie-store/#prefixes",
+      "href": "https://cookiestore.spec.whatwg.org/#prefixes",
       "level": 3,
       "title": "Prefixes",
       "number": "8.5"
     },
     {
       "id": "url-scoping",
-      "href": "https://wicg.github.io/cookie-store/#url-scoping",
+      "href": "https://cookiestore.spec.whatwg.org/#url-scoping",
       "level": 3,
       "title": "URL scoping",
       "number": "8.6"
     },
     {
       "id": "aversion",
-      "href": "https://wicg.github.io/cookie-store/#aversion",
+      "href": "https://cookiestore.spec.whatwg.org/#aversion",
       "level": 3,
       "title": "Cookie aversion",
       "number": "8.7"
     },
     {
       "id": "privacy",
-      "href": "https://wicg.github.io/cookie-store/#privacy",
+      "href": "https://cookiestore.spec.whatwg.org/#privacy",
       "level": 2,
-      "title": "Privacy Considerations",
+      "title": "Privacy considerations",
       "number": "9"
     },
     {
       "id": "clear-cookies",
-      "href": "https://wicg.github.io/cookie-store/#clear-cookies",
+      "href": "https://cookiestore.spec.whatwg.org/#clear-cookies",
       "level": 3,
       "title": "Clear cookies",
       "number": "9.1"
     },
     {
       "id": "acknowledgements",
-      "href": "https://wicg.github.io/cookie-store/#acknowledgements",
+      "href": "https://cookiestore.spec.whatwg.org/#acknowledgements",
       "level": 2,
       "title": "10. Acknowledgements"
     },
     {
-      "id": "w3c-conformance",
-      "href": "https://wicg.github.io/cookie-store/#w3c-conformance",
+      "id": "ipr",
+      "href": "https://cookiestore.spec.whatwg.org/#ipr",
       "level": 2,
-      "title": "Conformance"
-    },
-    {
-      "id": "w3c-conventions",
-      "href": "https://wicg.github.io/cookie-store/#w3c-conventions",
-      "level": 3,
-      "title": "Document conventions"
+      "title": "Intellectual property rights"
     },
     {
       "id": "index",
-      "href": "https://wicg.github.io/cookie-store/#index",
+      "href": "https://cookiestore.spec.whatwg.org/#index",
       "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
-      "href": "https://wicg.github.io/cookie-store/#index-defined-here",
+      "href": "https://cookiestore.spec.whatwg.org/#index-defined-here",
       "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
-      "href": "https://wicg.github.io/cookie-store/#index-defined-elsewhere",
+      "href": "https://cookiestore.spec.whatwg.org/#index-defined-elsewhere",
       "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
-      "href": "https://wicg.github.io/cookie-store/#references",
+      "href": "https://cookiestore.spec.whatwg.org/#references",
       "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "href": "https://wicg.github.io/cookie-store/#normative",
+      "href": "https://cookiestore.spec.whatwg.org/#normative",
       "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
-      "href": "https://wicg.github.io/cookie-store/#informative",
+      "href": "https://cookiestore.spec.whatwg.org/#informative",
       "level": 3,
       "title": "Informative References"
     },
     {
       "id": "idl-index",
-      "href": "https://wicg.github.io/cookie-store/#idl-index",
+      "href": "https://cookiestore.spec.whatwg.org/#idl-index",
       "level": 2,
       "title": "IDL Index"
-    },
-    {
-      "id": "issues-index",
-      "href": "https://wicg.github.io/cookie-store/#issues-index",
-      "level": 2,
-      "title": "Issues Index"
     }
   ]
 }

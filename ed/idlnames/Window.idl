@@ -63,6 +63,12 @@ partial interface Window {
     attribute EventHandler onorientationchange;
 };
 
+// Source: Cookie Store API Standard (https://cookiestore.spec.whatwg.org/)
+[SecureContext]
+partial interface Window {
+  [SameObject] readonly attribute CookieStore cookieStore;
+};
+
 // Source: DOM Standard (https://dom.spec.whatwg.org/)
 partial interface Window {
   [Replaceable] readonly attribute (Event or undefined) event; // legacy
@@ -102,12 +108,6 @@ partial interface Window {
 // Source: Iframe credentialless (https://wicg.github.io/anonymous-iframe/)
 partial interface Window {
   readonly attribute boolean credentialless;
-};
-
-// Source: Cookie Store API (https://wicg.github.io/cookie-store/)
-[SecureContext]
-partial interface Window {
-  [SameObject] readonly attribute CookieStore cookieStore;
 };
 
 // Source: Digital Goods API (https://wicg.github.io/digital-goods/)

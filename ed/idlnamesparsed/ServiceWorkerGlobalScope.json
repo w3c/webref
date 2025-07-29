@@ -12,6 +12,13 @@
   "extended": [
     {
       "spec": {
+        "title": "Cookie Store API Standard",
+        "url": "https://cookiestore.spec.whatwg.org/"
+      },
+      "fragment": "partial interface ServiceWorkerGlobalScope {\n  [SameObject] readonly attribute CookieStore cookieStore;\n\n  attribute EventHandler oncookiechange;\n};"
+    },
+    {
+      "spec": {
         "title": "Notifications API Standard",
         "url": "https://notifications.spec.whatwg.org/"
       },
@@ -37,13 +44,6 @@
         "url": "https://wicg.github.io/content-index/spec/"
       },
       "fragment": "partial interface ServiceWorkerGlobalScope {\n  attribute EventHandler oncontentdelete;\n};"
-    },
-    {
-      "spec": {
-        "title": "Cookie Store API",
-        "url": "https://wicg.github.io/cookie-store/"
-      },
-      "fragment": "partial interface ServiceWorkerGlobalScope {\n  [SameObject] readonly attribute CookieStore cookieStore;\n\n  attribute EventHandler oncookiechange;\n};"
     },
     {
       "spec": {

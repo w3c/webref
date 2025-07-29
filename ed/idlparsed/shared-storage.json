@@ -881,7 +881,7 @@
         "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstoragesetmethodoptions"
       },
       "SharedStorage": {
-        "fragment": "[Exposed=(Window,SharedStorageWorklet)]\ninterface SharedStorage {\n  Promise<DOMString> get(DOMString key);\n  Promise<any> set(DOMString key,\n                   DOMString value,\n                   optional SharedStorageSetMethodOptions options = {});\n  Promise<any> append(DOMString key,\n                      DOMString value,\n                      optional SharedStorageModifierMethodOptions options = {});\n  Promise<any> delete(DOMString key, optional SharedStorageModifierMethodOptions options = {});\n  Promise<any> clear(optional SharedStorageModifierMethodOptions options = {});\n  Promise<any> batchUpdate(sequence<SharedStorageModifierMethod> methods,\n                           optional SharedStorageModifierMethodOptions options = {});\n\n  [Exposed=Window]\n  Promise<SharedStorageResponse> selectURL(DOMString name,\n                               sequence<SharedStorageUrlWithMetadata> urls,\n                               optional SharedStorageRunOperationMethodOptions options = {});\n\n  [Exposed=Window]\n  Promise<any> run(DOMString name,\n                   optional SharedStorageRunOperationMethodOptions options = {});\n\n  [Exposed=Window]\n  Promise<SharedStorageWorklet> createWorklet(USVString moduleURL, optional SharedStorageWorkletOptions options = {});\n\n  [Exposed=Window]\n  readonly attribute SharedStorageWorklet worklet;\n\n  [Exposed=SharedStorageWorklet]\n  Promise<unsigned long> length();\n\n  [Exposed=SharedStorageWorklet]\n  Promise<double> remainingBudget();\n\n  [Exposed=SharedStorageWorklet]\n  async iterable<DOMString, DOMString>;\n};",
+        "fragment": "[Exposed=(Window,SharedStorageWorklet)]\ninterface SharedStorage {\n  Promise<DOMString> get(DOMString key);\n  Promise<any> set(DOMString key,\n                   DOMString value,\n                   optional SharedStorageSetMethodOptions options = {});\n  Promise<any> append(DOMString key,\n                      DOMString value,\n                      optional SharedStorageModifierMethodOptions options = {});\n  Promise<any> delete(DOMString key, optional SharedStorageModifierMethodOptions options = {});\n  Promise<any> clear(optional SharedStorageModifierMethodOptions options = {});\n  Promise<any> batchUpdate(sequence<SharedStorageModifierMethod> methods,\n                           optional SharedStorageModifierMethodOptions options = {});\n\n  [Exposed=Window]\n  Promise<SharedStorageResponse> selectURL(DOMString name,\n                               sequence<SharedStorageUrlWithMetadata> urls,\n                               optional SharedStorageRunOperationMethodOptions options = {});\n\n  [Exposed=Window]\n  Promise<any> run(DOMString name,\n                   optional SharedStorageRunOperationMethodOptions options = {});\n\n  [Exposed=Window]\n  Promise<SharedStorageWorklet> createWorklet(USVString moduleURL, optional SharedStorageWorkletOptions options = {});\n\n  [Exposed=Window]\n  readonly attribute SharedStorageWorklet worklet;\n\n  [Exposed=SharedStorageWorklet]\n  Promise<unsigned long> length();\n\n  [Exposed=SharedStorageWorklet]\n  Promise<double> remainingBudget();\n\n  [Exposed=SharedStorageWorklet]\n  async_iterable<DOMString, DOMString>;\n};",
         "type": "interface",
         "name": "SharedStorage",
         "inheritance": null,
@@ -1585,7 +1585,7 @@
             "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-remainingbudget"
           },
           {
-            "type": "iterable",
+            "type": "async_iterable",
             "idlType": [
               {
                 "type": null,
@@ -1617,7 +1617,7 @@
               }
             ],
             "readonly": false,
-            "async": true
+            "async": false
           }
         ],
         "extAttrs": [

@@ -1,0 +1,143 @@
+{
+  "spec": {
+    "title": "Securing Verifiable Credentials using JOSE and COSE",
+    "url": "https://w3c.github.io/vc-jose-cose/"
+  },
+  "algorithms": [
+    {
+      "html": "Upon receipt of the verifiable credential or presentation secured as\n          a JWT [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-jose-cose/#bib-rfc7519\" title=\"JSON Web Token (JWT)\">RFC7519</a></cite>], the holder or verifier follows this algorithm:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "Follow the algorithm defined in\n            <a data-cite=\"RFC7519#section-7.2\" href=\"https://www.rfc-editor.org/rfc/rfc7519#section-7.2\">Validating a JWT</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-jose-cose/#bib-rfc7519\" title=\"JSON Web Token (JWT)\">RFC7519</a></cite>]."
+        },
+        {
+          "html": "If processing completes successfully:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>status</code> to <code>true</code>"
+            },
+            {
+              "html": "Set <code>mediaType</code> to <code>vc</code> or <code>vp</code>"
+            },
+            {
+              "html": "Set <code>document</code> to the decoded JWS payload."
+            },
+            {
+              "html": "Return"
+            }
+          ]
+        },
+        {
+          "html": "If processing aborts for any reason or the JWT is rejected:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>status</code> to <code>false</code>"
+            },
+            {
+              "html": "Set <code>document</code> to <code>null</code>"
+            },
+            {
+              "html": "Set <code>mediaType</code> to <code>null</code>"
+            },
+            {
+              "html": "Return"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "Upon receipt of the verifiable credential or presentation secured with\n          [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-jose-cose/#bib-sd-jwt\" title=\"Selective Disclosure for JWTs (SD-JWT)\">SD-JWT</a></cite>], the holder or verifier follows this algorithm:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "Follow the algorithms defined in <a data-cite=\"SD-JWT#section-8\" href=\"https://datatracker.ietf.org/doc/html/draft-ietf-oauth-selective-disclosure-jwt#section-8\">SD-JWT</a>\n            for verification of the SD-JWT."
+        },
+        {
+          "html": "If processing completes successfully:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>status</code> to <code>true</code>"
+            },
+            {
+              "html": "Set <code>mediaType</code> to <code>vc</code>"
+            },
+            {
+              "html": "Convert the SD-JWT payload back into the JWT Claims Set by\n                reversing the process in [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-jose-cose/#bib-sd-jwt\" title=\"Selective Disclosure for JWTs (SD-JWT)\">SD-JWT</a></cite>]. Set <code>document</code>\n                to the JWT Claims Set.\n                (For examples of the transition from  JWT Claims Set to SD-JWT payload,\n                please see\n                <a data-cite=\"SD-JWT#appendix-A\" href=\"https://datatracker.ietf.org/doc/html/draft-ietf-oauth-selective-disclosure-jwt#appendix-A\">SD-JWT examples</a>)."
+            },
+            {
+              "html": "Return"
+            }
+          ]
+        },
+        {
+          "html": "If processing aborts for any reason or the SD-JWT is rejected:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>status</code> to <code>false</code>"
+            },
+            {
+              "html": "Set <code>document</code> to <code>null</code>"
+            },
+            {
+              "html": "Set <code>mediaType</code> to <code>null</code>"
+            },
+            {
+              "html": "Return"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "Upon receipt of the verifiable credential or presentation secured with\n          [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-jose-cose/#bib-rfc9052\" title=\"CBOR Object Signing and Encryption (COSE): Structures and Process\">RFC9052</a></cite>], the holder or verifier follows this algorithm:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "Follow the algorithm defined in <cite><a data-cite=\"RFC9052\" data-matched-text=\"[[[RFC9052]]]\" href=\"https://www.rfc-editor.org/rfc/rfc9052\">CBOR Object Signing and Encryption (COSE): Structures and Process</a></cite> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-jose-cose/#bib-rfc9052\" title=\"CBOR Object Signing and Encryption (COSE): Structures and Process\">RFC9052</a></cite>] under the\n            Signing and Verification Process for COSE_Sign1."
+        },
+        {
+          "html": "If processing completes successfully:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>status</code> to <code>true</code>"
+            },
+            {
+              "html": "Set <code>mediaType</code> to <code>vc</code> or <code>vp</code>"
+            },
+            {
+              "html": "Set <code>document</code> to the decoded COSE_Sign1 payload."
+            },
+            {
+              "html": "Return"
+            }
+          ]
+        },
+        {
+          "html": "If processing aborts for any reason:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>status</code> to <code>false</code>"
+            },
+            {
+              "html": "Set <code>document</code> to <code>null</code>"
+            },
+            {
+              "html": "Set <code>mediaType</code> to <code>null</code>"
+            },
+            {
+              "html": "Return"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

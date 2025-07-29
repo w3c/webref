@@ -3,11 +3,11 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Cookie Store API",
-      "url": "https://wicg.github.io/cookie-store/"
+      "title": "Cookie Store API Standard",
+      "url": "https://cookiestore.spec.whatwg.org/"
     },
     "fragment": "[Exposed=(ServiceWorker,Window),\n SecureContext]\ninterface CookieStore : EventTarget {\n  Promise<CookieListItem?> get(USVString name);\n  Promise<CookieListItem?> get(optional CookieStoreGetOptions options = {});\n\n  Promise<CookieList> getAll(USVString name);\n  Promise<CookieList> getAll(optional CookieStoreGetOptions options = {});\n\n  Promise<undefined> set(USVString name, USVString value);\n  Promise<undefined> set(CookieInit options);\n\n  Promise<undefined> delete(USVString name);\n  Promise<undefined> delete(CookieStoreDeleteOptions options);\n\n  [Exposed=Window]\n  attribute EventHandler onchange;\n};",
-    "href": "https://wicg.github.io/cookie-store/#cookiestore"
+    "href": "https://cookiestore.spec.whatwg.org/#cookiestore"
   },
   "extended": [],
   "inheritance": {

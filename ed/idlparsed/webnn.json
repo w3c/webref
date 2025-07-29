@@ -7678,7 +7678,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand abs(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand ceil(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand cos(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand erf(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand exp(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand floor(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand identity(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand log(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand neg(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand reciprocal(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sin(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sign(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sqrt(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand tan(MLOperand input, optional MLOperatorOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand abs(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand ceil(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand cos(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand erf(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand exp(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand floor(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand identity(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand log(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand neg(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand reciprocal(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand roundEven(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sin(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sign(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sqrt(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand tan(MLOperand input, optional MLOperatorOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -8192,6 +8192,57 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reciprocal"
+            },
+            {
+              "type": "operation",
+              "name": "roundEven",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperatorOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-roundeven"
             },
             {
               "type": "operation",
@@ -12884,7 +12935,7 @@
           "partial": true
         },
         {
-          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits abs;\n  MLSingleInputSupportLimits ceil;\n  MLSingleInputSupportLimits cos;\n  MLSingleInputSupportLimits erf;\n  MLSingleInputSupportLimits exp;\n  MLSingleInputSupportLimits floor;\n  MLSingleInputSupportLimits identity;\n  MLSingleInputSupportLimits log;\n  MLSingleInputSupportLimits neg;\n  MLSingleInputSupportLimits reciprocal;\n  MLSingleInputSupportLimits sin;\n  MLSingleInputSupportLimits sign;\n  MLSingleInputSupportLimits sqrt;\n  MLSingleInputSupportLimits tan;\n};",
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits abs;\n  MLSingleInputSupportLimits ceil;\n  MLSingleInputSupportLimits cos;\n  MLSingleInputSupportLimits erf;\n  MLSingleInputSupportLimits exp;\n  MLSingleInputSupportLimits floor;\n  MLSingleInputSupportLimits identity;\n  MLSingleInputSupportLimits log;\n  MLSingleInputSupportLimits neg;\n  MLSingleInputSupportLimits reciprocal;\n  MLSingleInputSupportLimits roundEven;\n  MLSingleInputSupportLimits sin;\n  MLSingleInputSupportLimits sign;\n  MLSingleInputSupportLimits sqrt;\n  MLSingleInputSupportLimits tan;\n};",
           "type": "dictionary",
           "name": "MLOpSupportLimits",
           "inheritance": null,
@@ -13048,6 +13099,22 @@
               "default": null,
               "required": false,
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-reciprocal"
+            },
+            {
+              "type": "field",
+              "name": "roundEven",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-roundeven"
             },
             {
               "type": "field",

@@ -3,11 +3,11 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Cookie Store API",
-      "url": "https://wicg.github.io/cookie-store/"
+      "title": "Cookie Store API Standard",
+      "url": "https://cookiestore.spec.whatwg.org/"
     },
     "fragment": "[Exposed=ServiceWorker]\ninterface ExtendableCookieChangeEvent : ExtendableEvent {\n  constructor(DOMString type, optional ExtendableCookieChangeEventInit eventInitDict = {});\n  [SameObject] readonly attribute FrozenArray<CookieListItem> changed;\n  [SameObject] readonly attribute FrozenArray<CookieListItem> deleted;\n};",
-    "href": "https://wicg.github.io/cookie-store/#extendablecookiechangeevent"
+    "href": "https://cookiestore.spec.whatwg.org/#extendablecookiechangeevent"
   },
   "extended": [],
   "inheritance": {

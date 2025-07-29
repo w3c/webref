@@ -44,7 +44,8 @@
       "name": "<boolean-expr>",
       "prose": "Several contexts (such as @media, @supports, if(), ...) specify conditions, and allow combining those conditions with boolean logic (and/or/not/grouping). Because they use the same non-trivial recursive syntax structure, the special <boolean-expr> production represents this pattern generically.",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-boolean-expr",
-      "type": "type"
+      "type": "type",
+      "value": "not <boolean-expr-group> | <boolean-expr-group> [ [ and <boolean-expr-group> ]* | [ or <boolean-expr-group> ]* ]"
     },
     {
       "name": "<syntax>",
@@ -93,30 +94,30 @@
       "prose": "<request-url-modifier>s are <url-modifier>s that affect the <url>’s resource request by applying associated URL request modifier steps. See CSS Values 4 § 4.5.4 URL Processing Model.",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier",
       "type": "type",
-      "value": "<crossorigin-modifier> | <integrity-modifier> | <referrerpolicy-modifier>",
+      "value": "<cross-origin-modifier> | <integrity-modifier> | <referrer-policy-modifier>",
       "values": [
         {
-          "name": "<crossorigin-modifier>",
-          "value": "crossorigin(anonymous | use-credentials)",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-crossorigin-modifier",
+          "name": "<cross-origin-modifier>",
+          "value": "cross-origin(anonymous | use-credentials)",
+          "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-cross-origin-modifier",
           "type": "type"
         },
         {
-          "name": "crossorigin()",
-          "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
-          "href": "https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-crossorigin",
+          "name": "cross-origin()",
+          "prose": "<cross-origin-modifier> = cross-origin(anonymous | use-credentials)",
+          "href": "https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-cross-origin",
           "type": "function"
         },
         {
           "name": "anonymous",
-          "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
+          "prose": "<cross-origin-modifier> = cross-origin(anonymous | use-credentials)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-anonymous",
           "type": "value",
           "value": "anonymous"
         },
         {
           "name": "use-credentials",
-          "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
+          "prose": "<cross-origin-modifier> = cross-origin(anonymous | use-credentials)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-use-credentials",
           "type": "value",
           "value": "use-credentials"
@@ -134,69 +135,69 @@
           "type": "function"
         },
         {
-          "name": "<referrerpolicy-modifier>",
-          "value": "referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrerpolicy-modifier",
+          "name": "<referrer-policy-modifier>",
+          "value": "referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrer-policy-modifier",
           "type": "type"
         },
         {
-          "name": "referrerpolicy()",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
-          "href": "https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-referrerpolicy",
+          "name": "referrer-policy()",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "href": "https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-referrer-policy",
           "type": "function"
         },
         {
           "name": "no-referrer",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-no-referrer",
           "type": "value",
           "value": "no-referrer"
         },
         {
           "name": "no-referrer-when-downgrade",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-no-referrer-when-downgrade",
           "type": "value",
           "value": "no-referrer-when-downgrade"
         },
         {
           "name": "same-origin",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-same-origin",
           "type": "value",
           "value": "same-origin"
         },
         {
           "name": "origin",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-origin",
           "type": "value",
           "value": "origin"
         },
         {
           "name": "strict-origin",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-strict-origin",
           "type": "value",
           "value": "strict-origin"
         },
         {
           "name": "origin-when-cross-origin",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-origin-when-cross-origin",
           "type": "value",
           "value": "origin-when-cross-origin"
         },
         {
           "name": "strict-origin-when-cross-origin",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-strict-origin-when-cross-origin",
           "type": "value",
           "value": "strict-origin-when-cross-origin"
         },
         {
           "name": "unsafe-url",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-unsafe-url",
           "type": "value",
           "value": "unsafe-url"
@@ -407,6 +408,11 @@
           "type": "type"
         },
         {
+          "name": "<output-value>",
+          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
+          "type": "type"
+        },
+        {
           "name": "<easing-function>",
           "prose": "When appearing in the first argument, specifies the “default” easing function to be used between each stop. When appearing between stops, specifies the easing function to be used between the two surrounding stops, overriding any default provided by a global <easing-function> argument. (It is analogous to animation-timing-function.) If omitted, defaults to linear. The input progress value to this easing function is the segment interpolation progress—​how far the interpolation progress is between the input positions of the nearest stops preceding and following it. For example, in color-interpolate(20%, 0%: red, ease-in-out, 80%: green, 100%: blue), the 20% interpolation progress becomes a 25% segment interpolation progress, as 20% is 25% of the way between 0% and 80%, the surrounding input positions.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-interpolate-easing-function",
@@ -438,6 +444,11 @@
         {
           "name": "<input-position>",
           "value": "<percentage> | <number> | <dimension>",
+          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
+          "type": "type"
+        },
+        {
+          "name": "<output-value>",
           "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
           "type": "type"
         },
@@ -477,6 +488,11 @@
           "type": "type"
         },
         {
+          "name": "<output-value>",
+          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
+          "type": "type"
+        },
+        {
           "name": "<easing-function>",
           "prose": "When appearing in the first argument, specifies the “default” easing function to be used between each stop. When appearing between stops, specifies the easing function to be used between the two surrounding stops, overriding any default provided by a global <easing-function> argument. (It is analogous to animation-timing-function.) If omitted, defaults to linear. The input progress value to this easing function is the segment interpolation progress—​how far the interpolation progress is between the input positions of the nearest stops preceding and following it. For example, in color-interpolate(20%, 0%: red, ease-in-out, 80%: green, 100%: blue), the 20% interpolation progress becomes a 25% segment interpolation progress, as 20% is 25% of the way between 0% and 80%, the surrounding input positions.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-interpolate-easing-function",
@@ -512,6 +528,11 @@
           "type": "type"
         },
         {
+          "name": "<output-value>",
+          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
+          "type": "type"
+        },
+        {
           "name": "<easing-function>",
           "prose": "When appearing in the first argument, specifies the “default” easing function to be used between each stop. When appearing between stops, specifies the easing function to be used between the two surrounding stops, overriding any default provided by a global <easing-function> argument. (It is analogous to animation-timing-function.) If omitted, defaults to linear. The input progress value to this easing function is the segment interpolation progress—​how far the interpolation progress is between the input positions of the nearest stops preceding and following it. For example, in color-interpolate(20%, 0%: red, ease-in-out, 80%: green, 100%: blue), the 20% interpolation progress becomes a 25% segment interpolation progress, as 20% is 25% of the way between 0% and 80%, the surrounding input positions.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-interpolate-easing-function",
@@ -525,6 +546,11 @@
           "type": "type"
         }
       ]
+    },
+    {
+      "name": "<whole-value>",
+      "href": "https://drafts.csswg.org/css-values-5/#whole-value",
+      "type": "type"
     },
     {
       "name": "first-valid()",
@@ -757,11 +783,6 @@
   "warnings": [
     {
       "msg": "Missing definition",
-      "name": "]>",
-      "value": "not <boolean-expr-group> | <boolean-expr-group> [ [ and <boolean-expr-group> ]* | [ or <boolean-expr-group> ]* ]"
-    },
-    {
-      "msg": "Missing definition",
       "name": "<boolean-expr-group>",
       "value": "<test> | ( <boolean-expr[ <test> ]> ) | <general-enclosed>"
     },
@@ -779,11 +800,6 @@
       "msg": "Missing definition",
       "name": "interpolate-function()",
       "value": "interpolate-function( [ <progress-source> && [ by <easing-function> ]? && <easing-function>? && <segment-options>? ] , <input-position>{1,2} : <output-value> , [ [ <easing-function> || <segment-options> ]? , <input-position>{1,2} : <output-value> ]#? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "<input-position>",
-      "value": "<percentage> | <number> | <dimension>"
     }
   ]
 }

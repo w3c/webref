@@ -18,7 +18,7 @@
         "title": "Streams Standard",
         "url": "https://streams.spec.whatwg.org/"
       },
-      "fragment": "[Exposed=*, Transferable]\ninterface ReadableStream {\n  constructor(optional object underlyingSource, optional QueuingStrategy strategy = {});\n\n  static ReadableStream from(any asyncIterable);\n\n  readonly attribute boolean locked;\n\n  Promise<undefined> cancel(optional any reason);\n  ReadableStreamReader getReader(optional ReadableStreamGetReaderOptions options = {});\n  ReadableStream pipeThrough(ReadableWritablePair transform, optional StreamPipeOptions options = {});\n  Promise<undefined> pipeTo(WritableStream destination, optional StreamPipeOptions options = {});\n  sequence<ReadableStream> tee();\n\n  async iterable<any>(optional ReadableStreamIteratorOptions options = {});\n};",
+      "fragment": "[Exposed=*, Transferable]\ninterface ReadableStream {\n  constructor(optional object underlyingSource, optional QueuingStrategy strategy = {});\n\n  static ReadableStream from(any asyncIterable);\n\n  readonly attribute boolean locked;\n\n  Promise<undefined> cancel(optional any reason);\n  ReadableStreamReader getReader(optional ReadableStreamGetReaderOptions options = {});\n  ReadableStream pipeThrough(ReadableWritablePair transform, optional StreamPipeOptions options = {});\n  Promise<undefined> pipeTo(WritableStream destination, optional StreamPipeOptions options = {});\n  sequence<ReadableStream> tee();\n\n  async_iterable<any>(optional ReadableStreamIteratorOptions options = {});\n};",
       "href": "https://streams.spec.whatwg.org/#readablestream"
     },
     "extended": [],

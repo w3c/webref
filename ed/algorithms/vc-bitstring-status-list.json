@@ -1,0 +1,113 @@
+{
+  "spec": {
+    "title": "Bitstring Status List v1.1",
+    "url": "https://w3c.github.io/vc-bitstring-status-list/"
+  },
+  "algorithms": [
+    {
+      "html": "The following process, or one generating the exact output, <em class=\"rfc2119\">MUST</em> be followed\nwhen producing a\n<a href=\"https://w3c.github.io/vc-bitstring-status-list/#bitstringstatuslistcredential\">BitstringStatusListCredential</a>.\nThe algorithm takes a list of <var>issued credentials</var> as input and either throws\nan error or returns a status list credential as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>issued credentials</var> be a list of all issued\n<a data-link-type=\"dfn\" data-cite=\"vc-data-model-2.0\" data-cite-path=\"\" data-cite-frag=\"dfn-verifiable-credential\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a>."
+        },
+        {
+          "html": "Let <var>statusListCredential</var> be an unsigned\n<a href=\"https://w3c.github.io/vc-bitstring-status-list/#bitstringstatuslistcredential\">BitstringStatusListCredential</a>\nwithout the <code>encodedList</code> property set."
+        },
+        {
+          "html": "Generate a <var>compressed bitstring</var> by passing\n<var>issued credentials</var> to the\n<a href=\"https://w3c.github.io/vc-bitstring-status-list/#bitstring-generation-algorithm\">Bitstring Generation Algorithm</a>."
+        },
+        {
+          "html": "Set the <code>encodedList</code> to <var>compressed bitstring</var>."
+        },
+        {
+          "html": "Generate a proof for the <var>statusListCredential</var> and publish it to the\nendpoint listed in the <a data-link-type=\"dfn\" data-cite=\"vc-data-model-2.0\" data-cite-path=\"\" data-cite-frag=\"dfn-verifiable-credential\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>."
+        }
+      ]
+    },
+    {
+      "html": "The following process, or one generating the exact output, <em class=\"rfc2119\">MUST</em> be followed\nwhen validating a <a data-link-type=\"dfn\" data-cite=\"vc-data-model-2.0\" data-cite-path=\"\" data-cite-frag=\"dfn-verifiable-credential\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> that is contained in a\n<a href=\"https://w3c.github.io/vc-bitstring-status-list/#bitstringstatuslistcredential\">BitstringStatusListCredential</a>.\nThe algorithm takes a status list <a data-link-type=\"dfn\" data-cite=\"vc-data-model-2.0\" data-cite-path=\"\" data-cite-frag=\"dfn-verifiable-credential\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> as input\nand either throws an error or returns a status list credential as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>credentialToValidate</var> be a <a data-link-type=\"dfn\" data-cite=\"vc-data-model-2.0\" data-cite-path=\"\" data-cite-frag=\"dfn-verifiable-credential\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>\ncontaining a <code>credentialStatus</code> entry that is a\n<a href=\"https://w3c.github.io/vc-bitstring-status-list/#bitstringstatuslistentry\">BitstringStatusListEntry</a>."
+        },
+        {
+          "html": "Let <var>minimumNumberOfEntries</var> be 131,072 unless a different lower bound is\nestablished by a specific ecosystem specification."
+        },
+        {
+          "html": "Let <var>status purpose</var> be the value of <code>statusPurpose</code>\nin the <code>credentialStatus</code> entry in the\n<var>credentialToValidate</var>."
+        },
+        {
+          "html": "Dereference the <code>statusListCredential</code> URL, and ensure that all\nproofs verify successfully. If the dereference fails, raise a\n<a href=\"https://w3c.github.io/vc-bitstring-status-list/#STATUS_RETRIEVAL_ERROR\">STATUS_RETRIEVAL_ERROR</a>. If any of the\nproof verifications fail, raise a\n<a href=\"https://w3c.github.io/vc-bitstring-status-list/#STATUS_VERIFICATION_ERROR\">STATUS_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Verify that the <var>status purpose</var> is equal to a <code>statusPurpose</code> value in the\n<var>statusListCredential</var>. Note: The <var>statusListCredential</var> might contain multiple\nstatus purposes in a single list. If the values are not\nequal, raise a\n<a href=\"https://w3c.github.io/vc-bitstring-status-list/#STATUS_VERIFICATION_ERROR\">STATUS_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Let <var>compressed bitstring</var> be the value of the\n<code>encodedList</code> property of the\n<a href=\"https://w3c.github.io/vc-bitstring-status-list/#bitstringstatuslistcredential\">BitstringStatusListCredential</a>."
+        },
+        {
+          "html": "Let <var>credentialIndex</var> be the value of the\n<code>statusListIndex</code> property of the\n<a href=\"https://w3c.github.io/vc-bitstring-status-list/#bitstringstatuslistentry\">BitstringStatusListEntry</a>."
+        },
+        {
+          "html": "Generate a <var>revocation bitstring</var> by passing\n<var>compressed bitstring</var> to the\n<a href=\"https://w3c.github.io/vc-bitstring-status-list/#bitstring-expansion-algorithm\">Bitstring Expansion Algorithm</a>."
+        },
+        {
+          "html": "If the length of the <var>revocation bitstring</var> divided by\n<a href=\"https://w3c.github.io/vc-bitstring-status-list/#statusSize\"><code>statusSize</code></a> is less than <var>minimumNumberOfEntries</var>,\nraise a <a href=\"https://w3c.github.io/vc-bitstring-status-list/#STATUS_LIST_LENGTH_ERROR\">STATUS_LIST_LENGTH_ERROR</a>."
+        },
+        {
+          "html": "Let <var>status</var> be the value in the <var>bitstring</var> at the position indicated\nby the <var>credentialIndex</var> multiplied by the <var>size</var>. If the <var>credentialIndex</var>\nmultiplied by the <var>size</var> is a value outside of the range of the <var>bitstring</var>, a\n<a data-cite=\"VC-DATA-MODEL-2.0#RANGE_ERROR\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#RANGE_ERROR\">RANGE_ERROR</a> <em class=\"rfc2119\">MUST</em> be\nraised."
+        },
+        {
+          "html": "Let <var>result</var> be an empty <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>."
+        },
+        {
+          "html": "Set the <code>status</code> key in <var>result</var> to <var>status</var>, and set the <code>purpose</code> key in\n<var>result</var> to the value of <code>statusPurpose</code>."
+        },
+        {
+          "html": "If <var>status</var> is <code>0</code>, set the <code>valid</code> key in <var>result</var> to <code>true</code>; otherwise, set it\nto <code>false</code>."
+        },
+        {
+          "html": "If the <code>statusPurpose</code> is <code>message</code>, set the <code>message</code> key in <var>result</var> to the\ncorresponding <code>message</code> of the <code>value</code> as indicated in the <code>statusMessages</code>\narray."
+        },
+        {
+          "html": "Return <var>result</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following process, or one generating the exact output, <em class=\"rfc2119\">MUST</em> be followed\nwhen generating a status list bitstring. The algorithm takes an\n<var>issuedCredentials</var> list as input and either throws an error or returns a\n<var>compressed bitstring</var> as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>bitstring</var> be a list of bits with a minimum size of 16KB,\nwhere each bit is initialized to 0 (zero)."
+        },
+        {
+          "html": "For each value in <code>bitstring</code>, if there is a\ncorresponding <code>statusListIndex</code> value in\na credential in <code>issuedCredentials</code>, set the value to the\nappropriate status. The position of the value is computed as <code>statusListIndex</code>\ntimes the <code>statusSize</code>."
+        },
+        {
+          "html": "Generate a <var>compressed bitstring</var> by using the GZIP\ncompression algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-bitstring-status-list/#bib-rfc1952\" title=\"GZIP file format specification version 4.3\">RFC1952</a></cite>] on the <var>bitstring</var>\nand then <a data-cite=\"?CID#multibase-0\" href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">Multibase-encode</a> the result using base64url (with no padding)."
+        },
+        {
+          "html": "Return the <var>compressed bitstring</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following process, or one generating the exact output, <em class=\"rfc2119\">MUST</em> be followed\nwhen expanding a compressed status list bitstring. The algorithm takes a\n<var>compressed bitstring</var> as input and either throws an error or returns a\n<var>uncompressed bitstring</var> as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>compressed bitstring</var> be a compressed status list\nbitstring."
+        },
+        {
+          "html": "Generate an <var>uncompressed bitstring</var> by using the\n<a data-cite=\"?CID#multibase-0\" href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">Multibase-decode</a> algorithm on the\n<var>compressed bitstring</var> and then expanding the output using\nthe GZIP decompression algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-bitstring-status-list/#bib-rfc1952\" title=\"GZIP file format specification version 4.3\">RFC1952</a></cite>]."
+        },
+        {
+          "html": "Return the <var>uncompressed bitstring</var>."
+        }
+      ]
+    }
+  ]
+}

@@ -15,6 +15,13 @@ interface ServiceWorkerGlobalScope : WorkerGlobalScope {
   attribute EventHandler onmessageerror;
 };
 
+// Source: Cookie Store API Standard (https://cookiestore.spec.whatwg.org/)
+partial interface ServiceWorkerGlobalScope {
+  [SameObject] readonly attribute CookieStore cookieStore;
+
+  attribute EventHandler oncookiechange;
+};
+
 // Source: Notifications API Standard (https://notifications.spec.whatwg.org/)
 partial interface ServiceWorkerGlobalScope {
   attribute EventHandler onnotificationclick;
@@ -37,13 +44,6 @@ partial interface ServiceWorkerGlobalScope {
 // Source: Content Index (https://wicg.github.io/content-index/spec/)
 partial interface ServiceWorkerGlobalScope {
   attribute EventHandler oncontentdelete;
-};
-
-// Source: Cookie Store API (https://wicg.github.io/cookie-store/)
-partial interface ServiceWorkerGlobalScope {
-  [SameObject] readonly attribute CookieStore cookieStore;
-
-  attribute EventHandler oncookiechange;
 };
 
 // Source: Web Periodic Background Synchronization (https://wicg.github.io/periodic-background-sync/)

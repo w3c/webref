@@ -169,7 +169,7 @@
         "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityprovider"
       },
       "GenerateAssertionCallback": {
-        "fragment": "callback GenerateAssertionCallback = Promise<RTCIdentityAssertionResult>\n(DOMString contents, DOMString origin, RTCIdentityProviderOptions options);",
+        "fragment": "callback GenerateAssertionCallback = Promise<RTCIdentityAssertionResult>\n(DOMString contents, DOMString origin, optional RTCIdentityProviderOptions options = {});",
         "type": "callback",
         "name": "GenerateAssertionCallback",
         "idlType": {
@@ -234,8 +234,10 @@
               "union": false,
               "idlType": "RTCIdentityProviderOptions"
             },
-            "default": null,
-            "optional": false,
+            "default": {
+              "type": "dictionary"
+            },
+            "optional": true,
             "variadic": false
           }
         ],

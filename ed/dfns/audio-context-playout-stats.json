@@ -1,0 +1,589 @@
+{
+  "spec": {
+    "title": "Playout Statistics API for WebAudio",
+    "url": "https://wicg.github.io/audio-context-playout-stats/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-fallback-frame",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dfn-fallback-frame",
+      "linkingText": [
+        "fallback frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "introduction",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#introduction",
+        "title": "Introduction",
+        "alternateIds": [
+          "x1-introduction"
+        ],
+        "number": "1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-fallback-event",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dfn-fallback-event",
+      "linkingText": [
+        "fallback event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "introduction",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#introduction",
+        "title": "Introduction",
+        "alternateIds": [
+          "x1-introduction"
+        ],
+        "number": "1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-playout-stats",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dfn-playout-stats",
+      "linkingText": [
+        "[[playout stats]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "extension-of-the-audiocontext-interface",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#extension-of-the-audiocontext-interface",
+        "title": "Extension of the AudioContext interface",
+        "alternateIds": [
+          "x2-extension-of-the-audiocontext-interface"
+        ],
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-audiocontext-playoutstats",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dom-audiocontext-playoutstats",
+      "linkingText": [
+        "playoutStats"
+      ],
+      "localLinkingText": [
+        "AudioContext.playoutStats"
+      ],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "playoutstats-attribute",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#playoutstats-attribute",
+        "title": "playoutStats attribute",
+        "alternateIds": [
+          "x2-1-1-playoutstats-attribute"
+        ],
+        "number": "2.1.1"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dom-audioplayoutstats",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dom-audioplayoutstats",
+      "linkingText": [
+        "AudioPlayoutStats"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "audioplayoutstats-interface",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#audioplayoutstats-interface",
+        "title": "AudioPlayoutStats interface",
+        "alternateIds": [
+          "x3-audioplayoutstats-interface"
+        ],
+        "number": "3"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dfn-fallback-frames-duration",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dfn-fallback-frames-duration",
+      "linkingText": [
+        "[[fallback frames duration]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "audioplayoutstats-interface",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#audioplayoutstats-interface",
+        "title": "AudioPlayoutStats interface",
+        "alternateIds": [
+          "x3-audioplayoutstats-interface"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-fallback-frames-events",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dfn-fallback-frames-events",
+      "linkingText": [
+        "[[fallback frames events]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "audioplayoutstats-interface",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#audioplayoutstats-interface",
+        "title": "AudioPlayoutStats interface",
+        "alternateIds": [
+          "x3-audioplayoutstats-interface"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-total-frames-duration",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dfn-total-frames-duration",
+      "linkingText": [
+        "[[total frames duration]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "audioplayoutstats-interface",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#audioplayoutstats-interface",
+        "title": "AudioPlayoutStats interface",
+        "alternateIds": [
+          "x3-audioplayoutstats-interface"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-average-latency",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dfn-average-latency",
+      "linkingText": [
+        "[[average latency]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "audioplayoutstats-interface",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#audioplayoutstats-interface",
+        "title": "AudioPlayoutStats interface",
+        "alternateIds": [
+          "x3-audioplayoutstats-interface"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-minimum-latency",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dfn-minimum-latency",
+      "linkingText": [
+        "[[minimum latency]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "audioplayoutstats-interface",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#audioplayoutstats-interface",
+        "title": "AudioPlayoutStats interface",
+        "alternateIds": [
+          "x3-audioplayoutstats-interface"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-maximum-latency",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dfn-maximum-latency",
+      "linkingText": [
+        "[[maximum latency]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "audioplayoutstats-interface",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#audioplayoutstats-interface",
+        "title": "AudioPlayoutStats interface",
+        "alternateIds": [
+          "x3-audioplayoutstats-interface"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-latency-reset-time",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dfn-latency-reset-time",
+      "linkingText": [
+        "[[latency reset time]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "audioplayoutstats-interface",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#audioplayoutstats-interface",
+        "title": "AudioPlayoutStats interface",
+        "alternateIds": [
+          "x3-audioplayoutstats-interface"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-audio-context",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dfn-audio-context",
+      "linkingText": [
+        "[[audio context]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "audioplayoutstats-interface",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#audioplayoutstats-interface",
+        "title": "AudioPlayoutStats interface",
+        "alternateIds": [
+          "x3-audioplayoutstats-interface"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplayoutstats-fallbackframesduration",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dom-audioplayoutstats-fallbackframesduration",
+      "linkingText": [
+        "fallbackFramesDuration"
+      ],
+      "localLinkingText": [
+        "AudioPlayoutStats.fallbackFramesDuration"
+      ],
+      "type": "attribute",
+      "for": [
+        "AudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "fallbackframesduration-attribute",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#fallbackframesduration-attribute",
+        "title": "fallbackFramesDuration attribute",
+        "alternateIds": [
+          "x3-1-1-fallbackframesduration-attribute"
+        ],
+        "number": "3.1.1"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dom-audioplayoutstats-fallbackframesevents",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dom-audioplayoutstats-fallbackframesevents",
+      "linkingText": [
+        "fallbackFramesEvents"
+      ],
+      "localLinkingText": [
+        "AudioPlayoutStats.fallbackFramesEvents"
+      ],
+      "type": "attribute",
+      "for": [
+        "AudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "fallbackframesevents-attribute",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#fallbackframesevents-attribute",
+        "title": "fallbackFramesEvents attribute",
+        "alternateIds": [
+          "x3-1-2-fallbackframesevents-attribute"
+        ],
+        "number": "3.1.2"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dom-audioplayoutstats-totalframesduration",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dom-audioplayoutstats-totalframesduration",
+      "linkingText": [
+        "totalFramesDuration"
+      ],
+      "localLinkingText": [
+        "AudioPlayoutStats.totalFramesDuration"
+      ],
+      "type": "attribute",
+      "for": [
+        "AudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "totalframesduration-attribute",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#totalframesduration-attribute",
+        "title": "totalFramesDuration attribute",
+        "alternateIds": [
+          "x3-1-3-totalframesduration-attribute"
+        ],
+        "number": "3.1.3"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dom-audioplayoutstats-averagelatency",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dom-audioplayoutstats-averagelatency",
+      "linkingText": [
+        "averageLatency"
+      ],
+      "localLinkingText": [
+        "AudioPlayoutStats.averageLatency"
+      ],
+      "type": "attribute",
+      "for": [
+        "AudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "averagelatency-attribute",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#averagelatency-attribute",
+        "title": "averageLatency attribute",
+        "alternateIds": [
+          "x3-1-4-averagelatency-attribute"
+        ],
+        "number": "3.1.4"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dom-audioplayoutstats-minimumlatency",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dom-audioplayoutstats-minimumlatency",
+      "linkingText": [
+        "minimumLatency"
+      ],
+      "localLinkingText": [
+        "AudioPlayoutStats.minimumLatency"
+      ],
+      "type": "attribute",
+      "for": [
+        "AudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "minimumlatency-attribute",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#minimumlatency-attribute",
+        "title": "minimumLatency attribute",
+        "alternateIds": [
+          "x3-1-5-minimumlatency-attribute"
+        ],
+        "number": "3.1.5"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dom-audioplayoutstats-maximumlatency",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dom-audioplayoutstats-maximumlatency",
+      "linkingText": [
+        "maximumLatency"
+      ],
+      "localLinkingText": [
+        "AudioPlayoutStats.maximumLatency"
+      ],
+      "type": "attribute",
+      "for": [
+        "AudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "maximumlatency-attribute",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#maximumlatency-attribute",
+        "title": "maximumLatency attribute",
+        "alternateIds": [
+          "x3-1-6-maximumlatency-attribute"
+        ],
+        "number": "3.1.6"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dom-audioplayoutstats-resetlatency",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dom-audioplayoutstats-resetlatency",
+      "linkingText": [
+        "resetLatency()"
+      ],
+      "localLinkingText": [
+        "AudioPlayoutStats.resetLatency",
+        "AudioPlayoutStats.resetLatency()",
+        "resetLatency"
+      ],
+      "type": "method",
+      "for": [
+        "AudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "resetlatency-method",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#resetlatency-method",
+        "title": "resetLatency method",
+        "alternateIds": [
+          "x3-2-1-resetlatency-method"
+        ],
+        "number": "3.2.1"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dfn-initialize-playout-stats",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dfn-initialize-playout-stats",
+      "linkingText": [
+        "initialize playout stats"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "internal-algorithms",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#internal-algorithms",
+        "title": "Internal algorithms",
+        "alternateIds": [
+          "x3-3-internal-algorithms"
+        ],
+        "number": "3.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-reset-latency-stats",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dfn-reset-latency-stats",
+      "linkingText": [
+        "reset latency stats"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "internal-algorithms",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#internal-algorithms",
+        "title": "Internal algorithms",
+        "alternateIds": [
+          "x3-3-internal-algorithms"
+        ],
+        "number": "3.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-update-playout-stats",
+      "href": "https://wicg.github.io/audio-context-playout-stats/#dfn-update-playout-stats",
+      "linkingText": [
+        "update playout stats"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "internal-algorithms",
+        "href": "https://wicg.github.io/audio-context-playout-stats/#internal-algorithms",
+        "title": "Internal algorithms",
+        "alternateIds": [
+          "x3-3-internal-algorithms"
+        ],
+        "number": "3.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    }
+  ]
+}
