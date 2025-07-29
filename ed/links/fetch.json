@@ -82,6 +82,7 @@
       "https://en.wikipedia.org/wiki/Proxy_auto-config": {},
       "https://en.wikipedia.org/wiki/Web_Proxy_Auto-Discovery_Protocol": {},
       "https://encoding.spec.whatwg.org/": {},
+      "https://fetch.spec.whatwg.org/": {},
       "https://github.com/httpwg/http-core/issues/215": {},
       "https://github.com/whatwg/fetch/issues/1035": {},
       "https://github.com/whatwg/fetch/issues/1156": {},
@@ -124,7 +125,9 @@
       },
       "https://w3c.github.io/webappsec-fetch-metadata/": {},
       "https://w3c.github.io/webappsec-mixed-content/": {},
+      "https://w3c.github.io/webappsec-permissions-policy/": {},
       "https://w3c.github.io/webappsec-referrer-policy/": {},
+      "https://w3c.github.io/webappsec-secure-contexts/": {},
       "https://w3c.github.io/webappsec-subresource-integrity/": {},
       "https://w3c.github.io/webappsec-upgrade-insecure-requests/": {},
       "https://webidl.spec.whatwg.org/": {},
@@ -174,13 +177,15 @@
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "concept-document-origin",
+          "concept-document",
+          "concept-shadow-including-inclusive-descendant",
+          "concept-node-document",
           "abortsignal",
           "create-a-dependent-abort-signal",
           "abortsignal-aborted",
           "abortsignal-abort-reason",
           "abortsignal-add",
           "concept-element",
-          "concept-node-document",
           "document"
         ]
       },
@@ -197,6 +202,11 @@
           "utf-8-encode",
           "utf-8-decode-without-bom",
           "utf-8-decode"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-fetch-group"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
@@ -237,7 +247,15 @@
           "nav-document",
           "traversable-navigable",
           "ancestor-navigables",
-          "nav-traversable"
+          "fully-active",
+          "nav-traversable",
+          "top-level-traversable",
+          "navigable-container",
+          "node-navigable",
+          "inclusive-descendant-navigables",
+          "navigable",
+          "descendant-navigables",
+          "nav-container-document"
         ]
       },
       "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html": {
@@ -252,12 +270,22 @@
           "the-form-element"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/infrastructure.html": {
         "anchors": [
           "parallel-queue",
           "enqueue-the-following-steps",
           "starting-a-new-parallel-queue",
           "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "visibility-state"
         ]
       },
       "https://html.spec.whatwg.org/multipage/links.html": {
@@ -307,9 +335,11 @@
           "concept-settings-object-cross-origin-isolated-capability",
           "concept-settings-object-origin",
           "secure-context",
+          "task-source",
+          "dom-manipulation-task-source",
+          "relevant-settings-object",
           "concept-relevant-global",
           "concept-relevant-realm",
-          "relevant-settings-object",
           "api-base-url",
           "current-settings-object",
           "windoworworkerglobalscope",
@@ -402,6 +432,7 @@
           "abort-when",
           "if-aborted",
           "list-size",
+          "string-length",
           "map-iterate",
           "scalar-value-string",
           "parse-json-bytes-to-a-javascript-value",
@@ -560,12 +591,24 @@
           "should-block-response"
         ]
       },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "policy-controlled-feature",
+          "policy-controlled-feature-default-allowlist",
+          "algo-define-inherited-policy-in-container"
+        ]
+      },
       "https://w3c.github.io/webappsec-referrer-policy/": {
         "anchors": [
           "referrer-policy",
           "determine-requests-referrer",
           "set-requests-referrer-policy-on-redirect",
           "enumdef-referrerpolicy"
+        ]
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "anchors": [
+          "potentially-trustworthy-url"
         ]
       },
       "https://w3c.github.io/webappsec-subresource-integrity/": {
@@ -614,6 +657,7 @@
           "SameObject",
           "idl-DOMString",
           "idl-unsigned-short",
+          "quotaexceedederror",
           "dfn-interface"
         ]
       },
