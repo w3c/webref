@@ -1,0 +1,26 @@
+{
+  "spec": {
+    "title": "TTML Profiles for Internet Media Subtitles and Captions 1.2",
+    "url": "https://www.w3.org/TR/ttml-imsc1.2/"
+  },
+  "algorithms": [
+    {
+      "html": "The Presentation Compositor <em class=\"rfc2119\" title=\"SHALL\">SHALL</em> render in Presentation Buffer P<sub>n</sub> each successive <a href=\"https://www.w3.org/TR/ttml-imsc1.2/#dfn-intermediate-synchronic-document\" class=\"internalDFN\" data-link-type=\"dfn\">intermediate synchronic\n      document</a> E<sub>n</sub> using the following steps in order:",
+      "rationale": "clear",
+      "steps": [
+        {
+          "html": "clear the pixels, except for the first <a href=\"https://www.w3.org/TR/ttml-imsc1.2/#dfn-intermediate-synchronic-document\" class=\"internalDFN\" data-link-type=\"dfn\">intermediate synchronic document</a> E<sub>0</sub> for the which the pixels\n        of P<sub>0</sub> <em class=\"rfc2119\" title=\"SHALL\">SHALL</em> be assumed to have been cleared;"
+        },
+        {
+          "html": "paint, according to stacking order, all background pixels for each region;"
+        },
+        {
+          "html": "paint all pixels for background colors associated with text or image subtitle content; and"
+        },
+        {
+          "html": "paint the text or image subtitle content."
+        }
+      ]
+    }
+  ]
+}

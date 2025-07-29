@@ -94,30 +94,30 @@
       "prose": "<request-url-modifier>s are <url-modifier>s that affect the <url>’s resource request by applying associated URL request modifier steps. See CSS Values 4 § 4.5.4 URL Processing Model.",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier",
       "type": "type",
-      "value": "<crossorigin-modifier> | <integrity-modifier> | <referrerpolicy-modifier>",
+      "value": "<cross-origin-modifier> | <integrity-modifier> | <referrer-policy-modifier>",
       "values": [
         {
-          "name": "<crossorigin-modifier>",
-          "value": "crossorigin(anonymous | use-credentials)",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-crossorigin-modifier",
+          "name": "<cross-origin-modifier>",
+          "value": "cross-origin(anonymous | use-credentials)",
+          "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-cross-origin-modifier",
           "type": "type"
         },
         {
-          "name": "crossorigin()",
-          "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
-          "href": "https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-crossorigin",
+          "name": "cross-origin()",
+          "prose": "<cross-origin-modifier> = cross-origin(anonymous | use-credentials)",
+          "href": "https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-cross-origin",
           "type": "function"
         },
         {
           "name": "anonymous",
-          "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
+          "prose": "<cross-origin-modifier> = cross-origin(anonymous | use-credentials)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-anonymous",
           "type": "value",
           "value": "anonymous"
         },
         {
           "name": "use-credentials",
-          "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
+          "prose": "<cross-origin-modifier> = cross-origin(anonymous | use-credentials)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-use-credentials",
           "type": "value",
           "value": "use-credentials"
@@ -135,69 +135,69 @@
           "type": "function"
         },
         {
-          "name": "<referrerpolicy-modifier>",
-          "value": "referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrerpolicy-modifier",
+          "name": "<referrer-policy-modifier>",
+          "value": "referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrer-policy-modifier",
           "type": "type"
         },
         {
-          "name": "referrerpolicy()",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
-          "href": "https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-referrerpolicy",
+          "name": "referrer-policy()",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "href": "https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-referrer-policy",
           "type": "function"
         },
         {
           "name": "no-referrer",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-no-referrer",
           "type": "value",
           "value": "no-referrer"
         },
         {
           "name": "no-referrer-when-downgrade",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-no-referrer-when-downgrade",
           "type": "value",
           "value": "no-referrer-when-downgrade"
         },
         {
           "name": "same-origin",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-same-origin",
           "type": "value",
           "value": "same-origin"
         },
         {
           "name": "origin",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-origin",
           "type": "value",
           "value": "origin"
         },
         {
           "name": "strict-origin",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-strict-origin",
           "type": "value",
           "value": "strict-origin"
         },
         {
           "name": "origin-when-cross-origin",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-origin-when-cross-origin",
           "type": "value",
           "value": "origin-when-cross-origin"
         },
         {
           "name": "strict-origin-when-cross-origin",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-strict-origin-when-cross-origin",
           "type": "value",
           "value": "strict-origin-when-cross-origin"
         },
         {
           "name": "unsafe-url",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "prose": "<referrer-policy-modifier> = referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-unsafe-url",
           "type": "value",
           "value": "unsafe-url"
