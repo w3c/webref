@@ -223,14 +223,14 @@
           "html": "<p>Let <var>oldNotification</var> be the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification③⑤\">notification</a> in the\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#list-of-notifications\" id=\"ref-for-list-of-notifications①\">list of notifications</a> whose <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#tag\" id=\"ref-for-tag②\">tag</a> is not the empty string and is\n <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#tag\" id=\"ref-for-tag③\">tag</a>, and whose <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin③\">origin</a> is\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin④\">origin</a>, if any, and null\n otherwise.\n\n </p>"
         },
         {
-          "html": "If <var>oldNotification</var> is non-null, then:",
+          "html": "If <var>oldNotification</var> is non-null:",
           "rationale": "handle",
           "steps": [
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#handle-close-events\" id=\"ref-for-handle-close-events\">Handle close events</a> with <var>oldNotification</var>.\n\n   </p>"
             },
             {
-              "html": "If the notification platform supports replacement, then:",
+              "html": "If the notification platform supports replacement:",
               "rationale": "replace",
               "steps": [
                 {
@@ -247,7 +247,7 @@
           ]
         },
         {
-          "html": "If <var>shown</var> is false, then:",
+          "html": "If <var>shown</var> is false:",
           "rationale": "append",
           "steps": [
             {
@@ -296,7 +296,7 @@
           ]
         },
         {
-          "html": "If <var>notification</var> is a <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#persistent-notification\" id=\"ref-for-persistent-notification③\">persistent notification</a>, then:",
+          "html": "If <var>notification</var> is a <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#persistent-notification\" id=\"ref-for-persistent-notification③\">persistent notification</a>:",
           "rationale": "let",
           "steps": [
             {
