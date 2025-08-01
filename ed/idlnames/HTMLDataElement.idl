@@ -3,5 +3,5 @@
 interface HTMLDataElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute DOMString value;
+  [CEReactions, Reflect] attribute DOMString value;
 };

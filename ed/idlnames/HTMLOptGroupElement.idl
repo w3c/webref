@@ -3,6 +3,6 @@
 interface HTMLOptGroupElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute boolean disabled;
-  [CEReactions] attribute DOMString label;
+  [CEReactions, Reflect] attribute boolean disabled;
+  [CEReactions, Reflect] attribute DOMString label;
 };

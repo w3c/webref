@@ -3,13 +3,13 @@
 interface HTMLAnchorElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute DOMString target;
-  [CEReactions] attribute DOMString download;
-  [CEReactions] attribute USVString ping;
-  [CEReactions] attribute DOMString rel;
-  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;
-  [CEReactions] attribute DOMString hreflang;
-  [CEReactions] attribute DOMString type;
+  [CEReactions, Reflect] attribute DOMString target;
+  [CEReactions, Reflect] attribute DOMString download;
+  [CEReactions, Reflect] attribute USVString ping;
+  [CEReactions, Reflect] attribute DOMString rel;
+  [SameObject, PutForwards=value, Reflect="rel"] readonly attribute DOMTokenList relList;
+  [CEReactions, Reflect] attribute DOMString hreflang;
+  [CEReactions, Reflect] attribute DOMString type;
 
   [CEReactions] attribute DOMString text;
 
@@ -23,11 +23,11 @@ HTMLAnchorElement includes HTMLHyperlinkElementUtils;
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface HTMLAnchorElement {
-  [CEReactions] attribute DOMString coords;
-  [CEReactions] attribute DOMString charset;
-  [CEReactions] attribute DOMString name;
-  [CEReactions] attribute DOMString rev;
-  [CEReactions] attribute DOMString shape;
+  [CEReactions, Reflect] attribute DOMString coords;
+  [CEReactions, Reflect] attribute DOMString charset;
+  [CEReactions, Reflect] attribute DOMString name;
+  [CEReactions, Reflect] attribute DOMString rev;
+  [CEReactions, Reflect] attribute DOMString shape;
 };
 
 // Source: Private Click Measurement (https://privacycg.github.io/private-click-measurement/)

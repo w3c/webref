@@ -8,6 +8,6 @@ interface HTMLUListElement : HTMLElement {
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface HTMLUListElement {
-  [CEReactions] attribute boolean compact;
-  [CEReactions] attribute DOMString type;
+  [CEReactions, Reflect] attribute boolean compact;
+  [CEReactions, Reflect] attribute DOMString type;
 };

@@ -3,10 +3,10 @@
 interface HTMLEmbedElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute USVString src;
-  [CEReactions] attribute DOMString type;
-  [CEReactions] attribute DOMString width;
-  [CEReactions] attribute DOMString height;
+  [CEReactions, ReflectURL] attribute USVString src;
+  [CEReactions, Reflect] attribute DOMString type;
+  [CEReactions, Reflect] attribute DOMString width;
+  [CEReactions, Reflect] attribute DOMString height;
   Document? getSVGDocument();
 
   // also has obsolete members
@@ -14,6 +14,6 @@ interface HTMLEmbedElement : HTMLElement {
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface HTMLEmbedElement {
-  [CEReactions] attribute DOMString align;
-  [CEReactions] attribute DOMString name;
+  [CEReactions, Reflect] attribute DOMString align;
+  [CEReactions, Reflect] attribute DOMString name;
 };

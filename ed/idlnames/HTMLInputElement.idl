@@ -3,44 +3,44 @@
 interface HTMLInputElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute DOMString accept;
-  [CEReactions] attribute boolean alpha;
-  [CEReactions] attribute DOMString alt;
-  [CEReactions] attribute DOMString autocomplete;
-  [CEReactions] attribute boolean defaultChecked;
+  [CEReactions, Reflect] attribute DOMString accept;
+  [CEReactions, Reflect] attribute boolean alpha;
+  [CEReactions, Reflect] attribute DOMString alt;
+  [CEReactions, ReflectSetter] attribute DOMString autocomplete;
+  [CEReactions, Reflect="checked"] attribute boolean defaultChecked;
   attribute boolean checked;
   [CEReactions] attribute DOMString colorSpace;
-  [CEReactions] attribute DOMString dirName;
-  [CEReactions] attribute boolean disabled;
+  [CEReactions, Reflect] attribute DOMString dirName;
+  [CEReactions, Reflect] attribute boolean disabled;
   readonly attribute HTMLFormElement? form;
   attribute FileList? files;
-  [CEReactions] attribute USVString formAction;
+  [CEReactions, ReflectSetter] attribute USVString formAction;
   [CEReactions] attribute DOMString formEnctype;
   [CEReactions] attribute DOMString formMethod;
-  [CEReactions] attribute boolean formNoValidate;
-  [CEReactions] attribute DOMString formTarget;
-  [CEReactions] attribute unsigned long height;
+  [CEReactions, Reflect] attribute boolean formNoValidate;
+  [CEReactions, Reflect] attribute DOMString formTarget;
+  [CEReactions, ReflectSetter] attribute unsigned long height;
   attribute boolean indeterminate;
   readonly attribute HTMLDataListElement? list;
-  [CEReactions] attribute DOMString max;
-  [CEReactions] attribute long maxLength;
-  [CEReactions] attribute DOMString min;
-  [CEReactions] attribute long minLength;
-  [CEReactions] attribute boolean multiple;
-  [CEReactions] attribute DOMString name;
-  [CEReactions] attribute DOMString pattern;
-  [CEReactions] attribute DOMString placeholder;
-  [CEReactions] attribute boolean readOnly;
-  [CEReactions] attribute boolean required;
-  [CEReactions] attribute unsigned long size;
-  [CEReactions] attribute USVString src;
-  [CEReactions] attribute DOMString step;
+  [CEReactions, Reflect] attribute DOMString max;
+  [CEReactions, ReflectNonNegative] attribute long maxLength;
+  [CEReactions, Reflect] attribute DOMString min;
+  [CEReactions, ReflectNonNegative] attribute long minLength;
+  [CEReactions, Reflect] attribute boolean multiple;
+  [CEReactions, Reflect] attribute DOMString name;
+  [CEReactions, Reflect] attribute DOMString pattern;
+  [CEReactions, Reflect] attribute DOMString placeholder;
+  [CEReactions, Reflect] attribute boolean readOnly;
+  [CEReactions, Reflect] attribute boolean required;
+  [CEReactions, Reflect] attribute unsigned long size;
+  [CEReactions, ReflectURL] attribute USVString src;
+  [CEReactions, Reflect] attribute DOMString step;
   [CEReactions] attribute DOMString type;
-  [CEReactions] attribute DOMString defaultValue;
+  [CEReactions, Reflect="value"] attribute DOMString defaultValue;
   [CEReactions] attribute [LegacyNullToEmptyString] DOMString value;
   attribute object? valueAsDate;
   attribute unrestricted double valueAsNumber;
-  [CEReactions] attribute unsigned long width;
+  [CEReactions, ReflectSetter] attribute unsigned long width;
 
   undefined stepUp(optional long n = 1);
   undefined stepDown(optional long n = 1);
@@ -72,8 +72,8 @@ HTMLInputElement includes PopoverInvokerElement;
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface HTMLInputElement {
-  [CEReactions] attribute DOMString align;
-  [CEReactions] attribute DOMString useMap;
+  [CEReactions, Reflect] attribute DOMString align;
+  [CEReactions, Reflect] attribute DOMString useMap;
 };
 
 // Source: File and Directory Entries API (https://wicg.github.io/entries-api/)

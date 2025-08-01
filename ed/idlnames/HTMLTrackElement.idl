@@ -4,10 +4,10 @@ interface HTMLTrackElement : HTMLElement {
   [HTMLConstructor] constructor();
 
   [CEReactions] attribute DOMString kind;
-  [CEReactions] attribute USVString src;
-  [CEReactions] attribute DOMString srclang;
-  [CEReactions] attribute DOMString label;
-  [CEReactions] attribute boolean default;
+  [CEReactions, ReflectURL] attribute USVString src;
+  [CEReactions, Reflect] attribute DOMString srclang;
+  [CEReactions, Reflect] attribute DOMString label;
+  [CEReactions, Reflect] attribute boolean default;
 
   const unsigned short NONE = 0;
   const unsigned short LOADING = 1;

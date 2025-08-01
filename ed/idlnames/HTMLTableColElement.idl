@@ -3,16 +3,16 @@
 interface HTMLTableColElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute unsigned long span;
+  [CEReactions, Reflect, ReflectDefault=1, ReflectRange=(1, 1000)] attribute unsigned long span;
 
   // also has obsolete members
 };
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface HTMLTableColElement {
-  [CEReactions] attribute DOMString align;
-  [CEReactions] attribute DOMString ch;
-  [CEReactions] attribute DOMString chOff;
-  [CEReactions] attribute DOMString vAlign;
-  [CEReactions] attribute DOMString width;
+  [CEReactions, Reflect] attribute DOMString align;
+  [CEReactions, Reflect="char"] attribute DOMString ch;
+  [CEReactions, Reflect="charoff"] attribute DOMString chOff;
+  [CEReactions, Reflect] attribute DOMString vAlign;
+  [CEReactions, Reflect] attribute DOMString width;
 };

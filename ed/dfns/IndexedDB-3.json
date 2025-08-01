@@ -2245,6 +2245,46 @@
       "links": []
     },
     {
+      "id": "potentially-valid-key-range",
+      "href": "https://w3c.github.io/IndexedDB/#potentially-valid-key-range",
+      "linkingText": [
+        "potentially valid key range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "range-construct",
+        "href": "https://w3c.github.io/IndexedDB/#range-construct",
+        "title": "Key range",
+        "number": "2.9"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "is-a-potentially-valid-key-range",
+      "href": "https://w3c.github.io/IndexedDB/#is-a-potentially-valid-key-range",
+      "linkingText": [
+        "is a potentially valid key range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "range-construct",
+        "href": "https://w3c.github.io/IndexedDB/#range-construct",
+        "title": "Key range",
+        "number": "2.9"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "cursor",
       "href": "https://w3c.github.io/IndexedDB/#cursor",
       "linkingText": [
@@ -2650,6 +2690,92 @@
         "href": "https://w3c.github.io/IndexedDB/#key-generator-construct",
         "title": "Key generators",
         "number": "2.11"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "record-snapshot",
+      "href": "https://w3c.github.io/IndexedDB/#record-snapshot",
+      "linkingText": [
+        "record snapshot"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "record-snapshot-construct",
+        "href": "https://w3c.github.io/IndexedDB/#record-snapshot-construct",
+        "title": "Record snapshot",
+        "number": "2.12"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "record-snapshot-key",
+      "href": "https://w3c.github.io/IndexedDB/#record-snapshot-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "record snapshot"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "record-snapshot-construct",
+        "href": "https://w3c.github.io/IndexedDB/#record-snapshot-construct",
+        "title": "Record snapshot",
+        "number": "2.12"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "record-snapshot-value",
+      "href": "https://w3c.github.io/IndexedDB/#record-snapshot-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "record snapshot"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "record-snapshot-construct",
+        "href": "https://w3c.github.io/IndexedDB/#record-snapshot-construct",
+        "title": "Record snapshot",
+        "number": "2.12"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "record-snapshot-primary-key",
+      "href": "https://w3c.github.io/IndexedDB/#record-snapshot-primary-key",
+      "linkingText": [
+        "primary key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "record snapshot"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "record-snapshot-construct",
+        "href": "https://w3c.github.io/IndexedDB/#record-snapshot-construct",
+        "title": "Record snapshot",
+        "number": "2.12"
       },
       "definedIn": "prose",
       "links": []
@@ -4522,16 +4648,16 @@
       "links": []
     },
     {
-      "id": "dom-idbobjectstore-getall-query-count-query",
-      "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getall-query-count-query",
+      "id": "dom-idbobjectstore-getall-queryoroptions-count-queryoroptions",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getall-queryoroptions-count-queryoroptions",
       "linkingText": [
-        "query"
+        "queryOrOptions"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "IDBObjectStore/getAll(query, count)",
-        "IDBObjectStore/getAll(query)",
+        "IDBObjectStore/getAll(queryOrOptions, count)",
+        "IDBObjectStore/getAll(queryOrOptions)",
         "IDBObjectStore/getAll()"
       ],
       "access": "public",
@@ -4546,16 +4672,16 @@
       "links": []
     },
     {
-      "id": "dom-idbobjectstore-getall-query-count-count",
-      "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getall-query-count-count",
+      "id": "dom-idbobjectstore-getall-queryoroptions-count-count",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getall-queryoroptions-count-count",
       "linkingText": [
         "count"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "IDBObjectStore/getAll(query, count)",
-        "IDBObjectStore/getAll(query)",
+        "IDBObjectStore/getAll(queryOrOptions, count)",
+        "IDBObjectStore/getAll(queryOrOptions)",
         "IDBObjectStore/getAll()"
       ],
       "access": "public",
@@ -4570,16 +4696,16 @@
       "links": []
     },
     {
-      "id": "dom-idbobjectstore-getallkeys-query-count-query",
-      "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getallkeys-query-count-query",
+      "id": "dom-idbobjectstore-getallkeys-queryoroptions-count-queryoroptions",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getallkeys-queryoroptions-count-queryoroptions",
       "linkingText": [
-        "query"
+        "queryOrOptions"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "IDBObjectStore/getAllKeys(query, count)",
-        "IDBObjectStore/getAllKeys(query)",
+        "IDBObjectStore/getAllKeys(queryOrOptions, count)",
+        "IDBObjectStore/getAllKeys(queryOrOptions)",
         "IDBObjectStore/getAllKeys()"
       ],
       "access": "public",
@@ -4594,17 +4720,40 @@
       "links": []
     },
     {
-      "id": "dom-idbobjectstore-getallkeys-query-count-count",
-      "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getallkeys-query-count-count",
+      "id": "dom-idbobjectstore-getallkeys-queryoroptions-count-count",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getallkeys-queryoroptions-count-count",
       "linkingText": [
         "count"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "IDBObjectStore/getAllKeys(query, count)",
-        "IDBObjectStore/getAllKeys(query)",
+        "IDBObjectStore/getAllKeys(queryOrOptions, count)",
+        "IDBObjectStore/getAllKeys(queryOrOptions)",
         "IDBObjectStore/getAllKeys()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-idbobjectstore-getallrecords-options-options",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getallrecords-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/getAllRecords(options)",
+        "IDBObjectStore/getAllRecords()"
       ],
       "access": "public",
       "informative": false,
@@ -4901,6 +5050,92 @@
       "type": "dict-member",
       "for": [
         "IDBIndexParameters"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dictdef-idbgetalloptions",
+      "href": "https://w3c.github.io/IndexedDB/#dictdef-idbgetalloptions",
+      "linkingText": [
+        "IDBGetAllOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-idbgetalloptions-query",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbgetalloptions-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IDBGetAllOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-idbgetalloptions-count",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbgetalloptions-count",
+      "linkingText": [
+        "count"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IDBGetAllOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-idbgetalloptions-direction",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbgetalloptions-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IDBGetAllOptions"
       ],
       "access": "public",
       "informative": false,
@@ -5336,8 +5571,8 @@
       "id": "dom-idbobjectstore-getall",
       "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getall",
       "linkingText": [
-        "getAll(query, count)",
-        "getAll(query)",
+        "getAll(queryOrOptions, count)",
+        "getAll(queryOrOptions)",
         "getAll()"
       ],
       "localLinkingText": [],
@@ -5357,9 +5592,21 @@
       "links": [
         {
           "type": "dev",
-          "id": "ref-for-dom-idbobjectstore-getall①",
+          "id": "ref-for-dom-idbobjectstore-getall⑤",
           "name": "request = store . getAll(query [, count])",
-          "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-getall%E2%91%A0",
+          "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-getall%E2%91%A4",
+          "heading": {
+            "id": "object-store-interface",
+            "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
+            "title": "The IDBObjectStore interface",
+            "number": "4.5"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-idbobjectstore-getall⑥",
+          "name": "request = store . getAll({query, count, direction})",
+          "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-getall%E2%91%A5",
           "heading": {
             "id": "object-store-interface",
             "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
@@ -5373,8 +5620,8 @@
       "id": "dom-idbobjectstore-getallkeys",
       "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getallkeys",
       "linkingText": [
-        "getAllKeys(query, count)",
-        "getAllKeys(query)",
+        "getAllKeys(queryOrOptions, count)",
+        "getAllKeys(queryOrOptions)",
         "getAllKeys()"
       ],
       "localLinkingText": [],
@@ -5385,18 +5632,64 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "object-store-interface",
-        "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
-        "title": "The IDBObjectStore interface",
-        "number": "4.5"
+        "id": "title",
+        "href": "https://w3c.github.io/IndexedDB/#title",
+        "title": "Indexed Database API 3.0"
       },
       "definedIn": "prose",
       "links": [
         {
           "type": "dev",
-          "id": "ref-for-dom-idbobjectstore-getallkeys①",
+          "id": "ref-for-dom-idbobjectstore-getallkeys④",
           "name": "request = store . getAllKeys(query [, count])",
-          "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-getallkeys%E2%91%A0",
+          "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-getallkeys%E2%91%A3",
+          "heading": {
+            "id": "object-store-interface",
+            "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
+            "title": "The IDBObjectStore interface",
+            "number": "4.5"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-idbobjectstore-getallkeys⑤",
+          "name": "request = store . getAllKeys({query, count, direction})",
+          "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-getallkeys%E2%91%A4",
+          "heading": {
+            "id": "object-store-interface",
+            "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
+            "title": "The IDBObjectStore interface",
+            "number": "4.5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-idbobjectstore-getallrecords",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getallrecords",
+      "linkingText": [
+        "getAllRecords(options)",
+        "getAllRecords()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/IndexedDB/#title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-idbobjectstore-getallrecords①",
+          "name": "request = store . getAllRecords({query, count, direction})",
+          "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-getallrecords%E2%91%A0",
           "heading": {
             "id": "object-store-interface",
             "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
@@ -5421,10 +5714,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "object-store-interface",
-        "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
-        "title": "The IDBObjectStore interface",
-        "number": "4.5"
+        "id": "title",
+        "href": "https://w3c.github.io/IndexedDB/#title",
+        "title": "Indexed Database API 3.0"
       },
       "definedIn": "prose",
       "links": [
@@ -5458,10 +5750,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "object-store-interface",
-        "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
-        "title": "The IDBObjectStore interface",
-        "number": "4.5"
+        "id": "title",
+        "href": "https://w3c.github.io/IndexedDB/#title",
+        "title": "Indexed Database API 3.0"
       },
       "definedIn": "prose",
       "links": [
@@ -5471,10 +5762,9 @@
           "name": "request = store . openCursor([query [, direction = \"next\"]])",
           "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-opencursor%E2%91%A1",
           "heading": {
-            "id": "object-store-interface",
-            "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
-            "title": "The IDBObjectStore interface",
-            "number": "4.5"
+            "id": "title",
+            "href": "https://w3c.github.io/IndexedDB/#title",
+            "title": "Indexed Database API 3.0"
           }
         }
       ]
@@ -5495,10 +5785,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "object-store-interface",
-        "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
-        "title": "The IDBObjectStore interface",
-        "number": "4.5"
+        "id": "title",
+        "href": "https://w3c.github.io/IndexedDB/#title",
+        "title": "Indexed Database API 3.0"
       },
       "definedIn": "prose",
       "links": [
@@ -5508,10 +5797,9 @@
           "name": "request = store . openKeyCursor([query [, direction = \"next\"]])",
           "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-openkeycursor%E2%91%A0",
           "heading": {
-            "id": "object-store-interface",
-            "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
-            "title": "The IDBObjectStore interface",
-            "number": "4.5"
+            "id": "title",
+            "href": "https://w3c.github.io/IndexedDB/#title",
+            "title": "Indexed Database API 3.0"
           }
         }
       ]
@@ -5531,10 +5819,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "object-store-interface",
-        "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
-        "title": "The IDBObjectStore interface",
-        "number": "4.5"
+        "id": "title",
+        "href": "https://w3c.github.io/IndexedDB/#title",
+        "title": "Indexed Database API 3.0"
       },
       "definedIn": "prose",
       "links": [
@@ -5544,10 +5831,9 @@
           "name": "index = store . createIndex(name, keyPath [, options])",
           "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-createindex%E2%91%A0",
           "heading": {
-            "id": "object-store-interface",
-            "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
-            "title": "The IDBObjectStore interface",
-            "number": "4.5"
+            "id": "title",
+            "href": "https://w3c.github.io/IndexedDB/#title",
+            "title": "Indexed Database API 3.0"
           }
         }
       ]
@@ -5566,10 +5852,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "object-store-interface",
-        "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
-        "title": "The IDBObjectStore interface",
-        "number": "4.5"
+        "id": "title",
+        "href": "https://w3c.github.io/IndexedDB/#title",
+        "title": "Indexed Database API 3.0"
       },
       "definedIn": "prose",
       "links": []
@@ -5588,10 +5873,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "object-store-interface",
-        "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
-        "title": "The IDBObjectStore interface",
-        "number": "4.5"
+        "id": "title",
+        "href": "https://w3c.github.io/IndexedDB/#title",
+        "title": "Indexed Database API 3.0"
       },
       "definedIn": "prose",
       "links": [
@@ -5601,10 +5885,9 @@
           "name": "store . deleteIndex(name)",
           "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-deleteindex%E2%91%A0",
           "heading": {
-            "id": "object-store-interface",
-            "href": "https://w3c.github.io/IndexedDB/#object-store-interface",
-            "title": "The IDBObjectStore interface",
-            "number": "4.5"
+            "id": "title",
+            "href": "https://w3c.github.io/IndexedDB/#title",
+            "title": "Indexed Database API 3.0"
           }
         }
       ]
@@ -5674,16 +5957,16 @@
       "links": []
     },
     {
-      "id": "dom-idbindex-getall-query-count-query",
-      "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getall-query-count-query",
+      "id": "dom-idbindex-getall-queryoroptions-count-queryoroptions",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getall-queryoroptions-count-queryoroptions",
       "linkingText": [
-        "query"
+        "queryOrOptions"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "IDBIndex/getAll(query, count)",
-        "IDBIndex/getAll(query)",
+        "IDBIndex/getAll(queryOrOptions, count)",
+        "IDBIndex/getAll(queryOrOptions)",
         "IDBIndex/getAll()"
       ],
       "access": "public",
@@ -5698,16 +5981,16 @@
       "links": []
     },
     {
-      "id": "dom-idbindex-getall-query-count-count",
-      "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getall-query-count-count",
+      "id": "dom-idbindex-getall-queryoroptions-count-count",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getall-queryoroptions-count-count",
       "linkingText": [
         "count"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "IDBIndex/getAll(query, count)",
-        "IDBIndex/getAll(query)",
+        "IDBIndex/getAll(queryOrOptions, count)",
+        "IDBIndex/getAll(queryOrOptions)",
         "IDBIndex/getAll()"
       ],
       "access": "public",
@@ -5722,16 +6005,16 @@
       "links": []
     },
     {
-      "id": "dom-idbindex-getallkeys-query-count-query",
-      "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getallkeys-query-count-query",
+      "id": "dom-idbindex-getallkeys-queryoroptions-count-queryoroptions",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getallkeys-queryoroptions-count-queryoroptions",
       "linkingText": [
-        "query"
+        "queryOrOptions"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "IDBIndex/getAllKeys(query, count)",
-        "IDBIndex/getAllKeys(query)",
+        "IDBIndex/getAllKeys(queryOrOptions, count)",
+        "IDBIndex/getAllKeys(queryOrOptions)",
         "IDBIndex/getAllKeys()"
       ],
       "access": "public",
@@ -5746,17 +6029,40 @@
       "links": []
     },
     {
-      "id": "dom-idbindex-getallkeys-query-count-count",
-      "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getallkeys-query-count-count",
+      "id": "dom-idbindex-getallkeys-queryoroptions-count-count",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getallkeys-queryoroptions-count-count",
       "linkingText": [
         "count"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "IDBIndex/getAllKeys(query, count)",
-        "IDBIndex/getAllKeys(query)",
+        "IDBIndex/getAllKeys(queryOrOptions, count)",
+        "IDBIndex/getAllKeys(queryOrOptions)",
         "IDBIndex/getAllKeys()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "index-interface",
+        "href": "https://w3c.github.io/IndexedDB/#index-interface",
+        "title": "The IDBIndex interface",
+        "number": "4.6"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-idbindex-getallrecords-options-options",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getallrecords-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBIndex/getAllRecords(options)",
+        "IDBIndex/getAllRecords()"
       ],
       "access": "public",
       "informative": false,
@@ -6110,8 +6416,8 @@
       "id": "dom-idbindex-getall",
       "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getall",
       "linkingText": [
-        "getAll(query, count)",
-        "getAll(query)",
+        "getAll(queryOrOptions, count)",
+        "getAll(queryOrOptions)",
         "getAll()"
       ],
       "localLinkingText": [],
@@ -6140,6 +6446,18 @@
             "title": "The IDBIndex interface",
             "number": "4.6"
           }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-idbindex-getall②",
+          "name": "request = index . getAll({query, count, direction})",
+          "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbindex-getall%E2%91%A1",
+          "heading": {
+            "id": "index-interface",
+            "href": "https://w3c.github.io/IndexedDB/#index-interface",
+            "title": "The IDBIndex interface",
+            "number": "4.6"
+          }
         }
       ]
     },
@@ -6147,8 +6465,8 @@
       "id": "dom-idbindex-getallkeys",
       "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getallkeys",
       "linkingText": [
-        "getAllKeys(query, count)",
-        "getAllKeys(query)",
+        "getAllKeys(queryOrOptions, count)",
+        "getAllKeys(queryOrOptions)",
         "getAllKeys()"
       ],
       "localLinkingText": [],
@@ -6159,10 +6477,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "index-interface",
-        "href": "https://w3c.github.io/IndexedDB/#index-interface",
-        "title": "The IDBIndex interface",
-        "number": "4.6"
+        "id": "title",
+        "href": "https://w3c.github.io/IndexedDB/#title",
+        "title": "Indexed Database API 3.0"
       },
       "definedIn": "prose",
       "links": [
@@ -6171,6 +6488,53 @@
           "id": "ref-for-dom-idbindex-getallkeys①",
           "name": "request = index . getAllKeys(query [, count])",
           "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbindex-getallkeys%E2%91%A0",
+          "heading": {
+            "id": "index-interface",
+            "href": "https://w3c.github.io/IndexedDB/#index-interface",
+            "title": "The IDBIndex interface",
+            "number": "4.6"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-idbindex-getallkeys②",
+          "name": "request = index . getAllKeys({query, count, direction})",
+          "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbindex-getallkeys%E2%91%A1",
+          "heading": {
+            "id": "index-interface",
+            "href": "https://w3c.github.io/IndexedDB/#index-interface",
+            "title": "The IDBIndex interface",
+            "number": "4.6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-idbindex-getallrecords",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getallrecords",
+      "linkingText": [
+        "getAllRecords(options)",
+        "getAllRecords()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBIndex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/IndexedDB/#title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-idbindex-getallrecords①",
+          "name": "request = index . getAllRecords({query, count, direction})",
+          "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbindex-getallrecords%E2%91%A0",
           "heading": {
             "id": "index-interface",
             "href": "https://w3c.github.io/IndexedDB/#index-interface",
@@ -6195,10 +6559,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "index-interface",
-        "href": "https://w3c.github.io/IndexedDB/#index-interface",
-        "title": "The IDBIndex interface",
-        "number": "4.6"
+        "id": "title",
+        "href": "https://w3c.github.io/IndexedDB/#title",
+        "title": "Indexed Database API 3.0"
       },
       "definedIn": "prose",
       "links": [
@@ -6232,10 +6595,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "index-interface",
-        "href": "https://w3c.github.io/IndexedDB/#index-interface",
-        "title": "The IDBIndex interface",
-        "number": "4.6"
+        "id": "title",
+        "href": "https://w3c.github.io/IndexedDB/#title",
+        "title": "Indexed Database API 3.0"
       },
       "definedIn": "prose",
       "links": [
@@ -6245,10 +6607,9 @@
           "name": "request = index . openCursor([query [, direction = \"next\"]])",
           "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbindex-opencursor%E2%91%A1",
           "heading": {
-            "id": "index-interface",
-            "href": "https://w3c.github.io/IndexedDB/#index-interface",
-            "title": "The IDBIndex interface",
-            "number": "4.6"
+            "id": "title",
+            "href": "https://w3c.github.io/IndexedDB/#title",
+            "title": "Indexed Database API 3.0"
           }
         }
       ]
@@ -6269,10 +6630,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "index-interface",
-        "href": "https://w3c.github.io/IndexedDB/#index-interface",
-        "title": "The IDBIndex interface",
-        "number": "4.6"
+        "id": "title",
+        "href": "https://w3c.github.io/IndexedDB/#title",
+        "title": "Indexed Database API 3.0"
       },
       "definedIn": "prose",
       "links": [
@@ -6282,10 +6642,9 @@
           "name": "request = index . openKeyCursor([query [, direction = \"next\"]])",
           "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbindex-openkeycursor%E2%91%A0",
           "heading": {
-            "id": "index-interface",
-            "href": "https://w3c.github.io/IndexedDB/#index-interface",
-            "title": "The IDBIndex interface",
-            "number": "4.6"
+            "id": "title",
+            "href": "https://w3c.github.io/IndexedDB/#title",
+            "title": "Indexed Database API 3.0"
           }
         }
       ]
@@ -6311,8 +6670,32 @@
       "links": [
         {
           "type": "dev",
-          "id": "ref-for-idbkeyrange②①",
+          "id": "ref-for-idbkeyrange①⑦",
           "name": "range = IDBKeyRange . only(key)",
+          "href": "https://w3c.github.io/IndexedDB/#ref-for-idbkeyrange%E2%91%A0%E2%91%A6",
+          "heading": {
+            "id": "keyrange",
+            "href": "https://w3c.github.io/IndexedDB/#keyrange",
+            "title": "The IDBKeyRange interface",
+            "number": "4.7"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-idbkeyrange①⑨",
+          "name": "range = IDBKeyRange . lowerBound(key [, open = false])",
+          "href": "https://w3c.github.io/IndexedDB/#ref-for-idbkeyrange%E2%91%A0%E2%91%A8",
+          "heading": {
+            "id": "keyrange",
+            "href": "https://w3c.github.io/IndexedDB/#keyrange",
+            "title": "The IDBKeyRange interface",
+            "number": "4.7"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-idbkeyrange②①",
+          "name": "range = IDBKeyRange . upperBound(key [, open = false])",
           "href": "https://w3c.github.io/IndexedDB/#ref-for-idbkeyrange%E2%91%A1%E2%91%A0",
           "heading": {
             "id": "keyrange",
@@ -6324,32 +6707,8 @@
         {
           "type": "dev",
           "id": "ref-for-idbkeyrange②③",
-          "name": "range = IDBKeyRange . lowerBound(key [, open = false])",
-          "href": "https://w3c.github.io/IndexedDB/#ref-for-idbkeyrange%E2%91%A1%E2%91%A2",
-          "heading": {
-            "id": "keyrange",
-            "href": "https://w3c.github.io/IndexedDB/#keyrange",
-            "title": "The IDBKeyRange interface",
-            "number": "4.7"
-          }
-        },
-        {
-          "type": "dev",
-          "id": "ref-for-idbkeyrange②⑤",
-          "name": "range = IDBKeyRange . upperBound(key [, open = false])",
-          "href": "https://w3c.github.io/IndexedDB/#ref-for-idbkeyrange%E2%91%A1%E2%91%A4",
-          "heading": {
-            "id": "keyrange",
-            "href": "https://w3c.github.io/IndexedDB/#keyrange",
-            "title": "The IDBKeyRange interface",
-            "number": "4.7"
-          }
-        },
-        {
-          "type": "dev",
-          "id": "ref-for-idbkeyrange②⑦",
           "name": "range = IDBKeyRange . bound(lower, upper [, lowerOpen = false [, upperOpen = false]])",
-          "href": "https://w3c.github.io/IndexedDB/#ref-for-idbkeyrange%E2%91%A1%E2%91%A6",
+          "href": "https://w3c.github.io/IndexedDB/#ref-for-idbkeyrange%E2%91%A1%E2%91%A2",
           "heading": {
             "id": "keyrange",
             "href": "https://w3c.github.io/IndexedDB/#keyrange",
@@ -6911,6 +7270,131 @@
       ]
     },
     {
+      "id": "idbrecord",
+      "href": "https://w3c.github.io/IndexedDB/#idbrecord",
+      "linkingText": [
+        "IDBRecord"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "record-interface",
+        "href": "https://w3c.github.io/IndexedDB/#record-interface",
+        "title": "The IDBRecord interface",
+        "number": "4.8"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-idbrecord-key",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbrecord-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBRecord"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "record-interface",
+        "href": "https://w3c.github.io/IndexedDB/#record-interface",
+        "title": "The IDBRecord interface",
+        "number": "4.8"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-idbrecord-key②",
+          "name": "record . key",
+          "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbrecord-key%E2%91%A1",
+          "heading": {
+            "id": "record-interface",
+            "href": "https://w3c.github.io/IndexedDB/#record-interface",
+            "title": "The IDBRecord interface",
+            "number": "4.8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-idbrecord-primarykey",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbrecord-primarykey",
+      "linkingText": [
+        "primaryKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBRecord"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "record-interface",
+        "href": "https://w3c.github.io/IndexedDB/#record-interface",
+        "title": "The IDBRecord interface",
+        "number": "4.8"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-idbrecord-primarykey②",
+          "name": "record . primaryKey",
+          "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbrecord-primarykey%E2%91%A1",
+          "heading": {
+            "id": "record-interface",
+            "href": "https://w3c.github.io/IndexedDB/#record-interface",
+            "title": "The IDBRecord interface",
+            "number": "4.8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-idbrecord-value",
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbrecord-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBRecord"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "record-interface",
+        "href": "https://w3c.github.io/IndexedDB/#record-interface",
+        "title": "The IDBRecord interface",
+        "number": "4.8"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-idbrecord-value①",
+          "name": "record . value",
+          "href": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbrecord-value%E2%91%A0",
+          "heading": {
+            "id": "record-interface",
+            "href": "https://w3c.github.io/IndexedDB/#record-interface",
+            "title": "The IDBRecord interface",
+            "number": "4.8"
+          }
+        }
+      ]
+    },
+    {
       "id": "idbcursor",
       "href": "https://w3c.github.io/IndexedDB/#idbcursor",
       "linkingText": [
@@ -6925,7 +7409,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "pre",
       "links": []
@@ -6947,7 +7431,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "pre",
       "links": []
@@ -6970,7 +7454,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "pre",
       "links": []
@@ -6992,7 +7476,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "pre",
       "links": []
@@ -7014,7 +7498,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "pre",
       "links": []
@@ -7036,7 +7520,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "pre",
       "links": []
@@ -7056,7 +7540,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "pre",
       "links": []
@@ -7078,7 +7562,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "pre",
       "links": []
@@ -7100,7 +7584,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "pre",
       "links": []
@@ -7122,7 +7606,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "pre",
       "links": []
@@ -7144,7 +7628,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "pre",
       "links": []
@@ -7166,7 +7650,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose",
       "links": [
@@ -7179,7 +7663,7 @@
             "id": "cursor-interface",
             "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
             "title": "The IDBCursor interface",
-            "number": "4.8"
+            "number": "4.9"
           }
         }
       ]
@@ -7201,7 +7685,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose",
       "links": [
@@ -7214,7 +7698,7 @@
             "id": "cursor-interface",
             "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
             "title": "The IDBCursor interface",
-            "number": "4.8"
+            "number": "4.9"
           }
         }
       ]
@@ -7236,7 +7720,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose",
       "links": [
@@ -7249,7 +7733,7 @@
             "id": "cursor-interface",
             "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
             "title": "The IDBCursor interface",
-            "number": "4.8"
+            "number": "4.9"
           }
         }
       ]
@@ -7271,7 +7755,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose",
       "links": [
@@ -7284,7 +7768,7 @@
             "id": "cursor-interface",
             "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
             "title": "The IDBCursor interface",
-            "number": "4.8"
+            "number": "4.9"
           }
         }
       ]
@@ -7306,7 +7790,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose",
       "links": [
@@ -7319,7 +7803,7 @@
             "id": "cursor-interface",
             "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
             "title": "The IDBCursor interface",
-            "number": "4.8"
+            "number": "4.9"
           }
         }
       ]
@@ -7341,7 +7825,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose",
       "links": [
@@ -7354,7 +7838,7 @@
             "id": "cursor-interface",
             "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
             "title": "The IDBCursor interface",
-            "number": "4.8"
+            "number": "4.9"
           }
         }
       ]
@@ -7377,7 +7861,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose",
       "links": [
@@ -7390,7 +7874,7 @@
             "id": "cursor-interface",
             "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
             "title": "The IDBCursor interface",
-            "number": "4.8"
+            "number": "4.9"
           }
         },
         {
@@ -7402,7 +7886,7 @@
             "id": "cursor-interface",
             "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
             "title": "The IDBCursor interface",
-            "number": "4.8"
+            "number": "4.9"
           }
         }
       ]
@@ -7424,7 +7908,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose",
       "links": [
@@ -7437,7 +7921,7 @@
             "id": "cursor-interface",
             "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
             "title": "The IDBCursor interface",
-            "number": "4.8"
+            "number": "4.9"
           }
         }
       ]
@@ -7459,7 +7943,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose",
       "links": [
@@ -7472,7 +7956,7 @@
             "id": "cursor-interface",
             "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
             "title": "The IDBCursor interface",
-            "number": "4.8"
+            "number": "4.9"
           }
         }
       ]
@@ -7494,7 +7978,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose",
       "links": [
@@ -7507,7 +7991,7 @@
             "id": "cursor-interface",
             "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
             "title": "The IDBCursor interface",
-            "number": "4.8"
+            "number": "4.9"
           }
         }
       ]
@@ -7527,7 +8011,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "pre",
       "links": []
@@ -7549,7 +8033,7 @@
         "id": "cursor-interface",
         "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
         "title": "The IDBCursor interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose",
       "links": [
@@ -7562,7 +8046,7 @@
             "id": "cursor-interface",
             "href": "https://w3c.github.io/IndexedDB/#cursor-interface",
             "title": "The IDBCursor interface",
-            "number": "4.8"
+            "number": "4.9"
           }
         }
       ]
@@ -7582,7 +8066,7 @@
         "id": "transaction",
         "href": "https://w3c.github.io/IndexedDB/#transaction",
         "title": "The IDBTransaction interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "pre",
       "links": []
@@ -7604,7 +8088,7 @@
         "id": "transaction",
         "href": "https://w3c.github.io/IndexedDB/#transaction",
         "title": "The IDBTransaction interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "pre",
       "links": []
@@ -7624,7 +8108,7 @@
         "id": "transaction",
         "href": "https://w3c.github.io/IndexedDB/#transaction",
         "title": "The IDBTransaction interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "pre",
       "links": []
@@ -7646,7 +8130,7 @@
         "id": "transaction",
         "href": "https://w3c.github.io/IndexedDB/#transaction",
         "title": "The IDBTransaction interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "pre",
       "links": []
@@ -7668,7 +8152,7 @@
         "id": "transaction",
         "href": "https://w3c.github.io/IndexedDB/#transaction",
         "title": "The IDBTransaction interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "pre",
       "links": []
@@ -7690,7 +8174,7 @@
         "id": "transaction",
         "href": "https://w3c.github.io/IndexedDB/#transaction",
         "title": "The IDBTransaction interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "pre",
       "links": []
@@ -7712,7 +8196,7 @@
         "id": "transaction",
         "href": "https://w3c.github.io/IndexedDB/#transaction",
         "title": "The IDBTransaction interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose",
       "links": [
@@ -7725,7 +8209,7 @@
             "id": "transaction",
             "href": "https://w3c.github.io/IndexedDB/#transaction",
             "title": "The IDBTransaction interface",
-            "number": "4.9"
+            "number": "4.10"
           }
         }
       ]
@@ -7747,7 +8231,7 @@
         "id": "transaction",
         "href": "https://w3c.github.io/IndexedDB/#transaction",
         "title": "The IDBTransaction interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose",
       "links": [
@@ -7760,7 +8244,7 @@
             "id": "transaction",
             "href": "https://w3c.github.io/IndexedDB/#transaction",
             "title": "The IDBTransaction interface",
-            "number": "4.9"
+            "number": "4.10"
           }
         }
       ]
@@ -7782,7 +8266,7 @@
         "id": "transaction",
         "href": "https://w3c.github.io/IndexedDB/#transaction",
         "title": "The IDBTransaction interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose",
       "links": [
@@ -7795,7 +8279,7 @@
             "id": "transaction",
             "href": "https://w3c.github.io/IndexedDB/#transaction",
             "title": "The IDBTransaction interface",
-            "number": "4.9"
+            "number": "4.10"
           }
         }
       ]
@@ -7817,7 +8301,7 @@
         "id": "transaction",
         "href": "https://w3c.github.io/IndexedDB/#transaction",
         "title": "The IDBTransaction interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose",
       "links": [
@@ -7830,7 +8314,7 @@
             "id": "transaction",
             "href": "https://w3c.github.io/IndexedDB/#transaction",
             "title": "The IDBTransaction interface",
-            "number": "4.9"
+            "number": "4.10"
           }
         }
       ]
@@ -7852,7 +8336,7 @@
         "id": "transaction",
         "href": "https://w3c.github.io/IndexedDB/#transaction",
         "title": "The IDBTransaction interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose",
       "links": [
@@ -7865,7 +8349,7 @@
             "id": "transaction",
             "href": "https://w3c.github.io/IndexedDB/#transaction",
             "title": "The IDBTransaction interface",
-            "number": "4.9"
+            "number": "4.10"
           }
         }
       ]
@@ -7887,7 +8371,7 @@
         "id": "transaction",
         "href": "https://w3c.github.io/IndexedDB/#transaction",
         "title": "The IDBTransaction interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose",
       "links": [
@@ -7900,7 +8384,7 @@
             "id": "transaction",
             "href": "https://w3c.github.io/IndexedDB/#transaction",
             "title": "The IDBTransaction interface",
-            "number": "4.9"
+            "number": "4.10"
           }
         }
       ]
@@ -7922,7 +8406,7 @@
         "id": "transaction",
         "href": "https://w3c.github.io/IndexedDB/#transaction",
         "title": "The IDBTransaction interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose",
       "links": [
@@ -7935,7 +8419,7 @@
             "id": "transaction",
             "href": "https://w3c.github.io/IndexedDB/#transaction",
             "title": "The IDBTransaction interface",
-            "number": "4.9"
+            "number": "4.10"
           }
         }
       ]
@@ -7957,7 +8441,7 @@
         "id": "transaction",
         "href": "https://w3c.github.io/IndexedDB/#transaction",
         "title": "The IDBTransaction interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose",
       "links": [
@@ -7970,7 +8454,7 @@
             "id": "transaction",
             "href": "https://w3c.github.io/IndexedDB/#transaction",
             "title": "The IDBTransaction interface",
-            "number": "4.9"
+            "number": "4.10"
           }
         }
       ]
@@ -7992,7 +8476,7 @@
         "id": "transaction",
         "href": "https://w3c.github.io/IndexedDB/#transaction",
         "title": "The IDBTransaction interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose",
       "links": []
@@ -8014,7 +8498,7 @@
         "id": "transaction",
         "href": "https://w3c.github.io/IndexedDB/#transaction",
         "title": "The IDBTransaction interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose",
       "links": []
@@ -8036,7 +8520,7 @@
         "id": "transaction",
         "href": "https://w3c.github.io/IndexedDB/#transaction",
         "title": "The IDBTransaction interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose",
       "links": []
@@ -8262,6 +8746,26 @@
       "links": []
     },
     {
+      "id": "create-a-request-to-retrieve-multiple-items",
+      "href": "https://w3c.github.io/IndexedDB/#create-a-request-to-retrieve-multiple-items",
+      "linkingText": [
+        "create a request to retrieve multiple items"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "create-request-to-retrieve-multiple-items",
+        "href": "https://w3c.github.io/IndexedDB/#create-request-to-retrieve-multiple-items",
+        "title": "Creating a request to retrieve multiple items",
+        "number": "5.12"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "store-a-record-into-an-object-store",
       "href": "https://w3c.github.io/IndexedDB/#store-a-record-into-an-object-store",
       "linkingText": [
@@ -8302,26 +8806,6 @@
       "links": []
     },
     {
-      "id": "retrieve-multiple-values-from-an-object-store",
-      "href": "https://w3c.github.io/IndexedDB/#retrieve-multiple-values-from-an-object-store",
-      "linkingText": [
-        "retrieve multiple values from an object store"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "object-store-retrieval-operation",
-        "href": "https://w3c.github.io/IndexedDB/#object-store-retrieval-operation",
-        "title": "Object store retrieval operations",
-        "number": "6.2"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
       "id": "retrieve-a-key-from-an-object-store",
       "href": "https://w3c.github.io/IndexedDB/#retrieve-a-key-from-an-object-store",
       "linkingText": [
@@ -8342,10 +8826,10 @@
       "links": []
     },
     {
-      "id": "retrieve-multiple-keys-from-an-object-store",
-      "href": "https://w3c.github.io/IndexedDB/#retrieve-multiple-keys-from-an-object-store",
+      "id": "retrieve-multiple-items-from-an-object-store",
+      "href": "https://w3c.github.io/IndexedDB/#retrieve-multiple-items-from-an-object-store",
       "linkingText": [
-        "retrieve multiple keys from an object store"
+        "retrieve multiple items from an object store"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -8382,26 +8866,6 @@
       "links": []
     },
     {
-      "id": "retrieve-multiple-referenced-values-from-an-index",
-      "href": "https://w3c.github.io/IndexedDB/#retrieve-multiple-referenced-values-from-an-index",
-      "linkingText": [
-        "retrieve multiple referenced values from an index"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index-retrieval-operation",
-        "href": "https://w3c.github.io/IndexedDB/#index-retrieval-operation",
-        "title": "Index retrieval operations",
-        "number": "6.3"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
       "id": "retrieve-a-value-from-an-index",
       "href": "https://w3c.github.io/IndexedDB/#retrieve-a-value-from-an-index",
       "linkingText": [
@@ -8422,10 +8886,10 @@
       "links": []
     },
     {
-      "id": "retrieve-multiple-values-from-an-index",
-      "href": "https://w3c.github.io/IndexedDB/#retrieve-multiple-values-from-an-index",
+      "id": "retrieve-multiple-items-from-an-index",
+      "href": "https://w3c.github.io/IndexedDB/#retrieve-multiple-items-from-an-index",
       "linkingText": [
-        "retrieve multiple values from an index"
+        "retrieve multiple items from an index"
       ],
       "localLinkingText": [],
       "type": "dfn",

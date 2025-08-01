@@ -3,14 +3,14 @@
 interface HTMLAreaElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute DOMString alt;
-  [CEReactions] attribute DOMString coords;
-  [CEReactions] attribute DOMString shape;
-  [CEReactions] attribute DOMString target;
-  [CEReactions] attribute DOMString download;
-  [CEReactions] attribute USVString ping;
-  [CEReactions] attribute DOMString rel;
-  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;
+  [CEReactions, Reflect] attribute DOMString alt;
+  [CEReactions, Reflect] attribute DOMString coords;
+  [CEReactions, Reflect] attribute DOMString shape;
+  [CEReactions, Reflect] attribute DOMString target;
+  [CEReactions, Reflect] attribute DOMString download;
+  [CEReactions, Reflect] attribute USVString ping;
+  [CEReactions, Reflect] attribute DOMString rel;
+  [SameObject, PutForwards=value, Reflect="rel"] readonly attribute DOMTokenList relList;
   [CEReactions] attribute DOMString referrerPolicy;
 
   // also has obsolete members
@@ -21,7 +21,7 @@ HTMLAreaElement includes HTMLHyperlinkElementUtils;
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface HTMLAreaElement {
-  [CEReactions] attribute boolean noHref;
+  [CEReactions, Reflect] attribute boolean noHref;
 };
 
 // Source: Attribution Reporting (https://wicg.github.io/attribution-reporting-api/)

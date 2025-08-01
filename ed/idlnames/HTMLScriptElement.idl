@@ -3,15 +3,15 @@
 interface HTMLScriptElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute DOMString type;
-  [CEReactions] attribute USVString src;
-  [CEReactions] attribute boolean noModule;
+  [CEReactions, Reflect] attribute DOMString type;
+  [CEReactions, ReflectURL] attribute USVString src;
+  [CEReactions, Reflect] attribute boolean noModule;
   [CEReactions] attribute boolean async;
-  [CEReactions] attribute boolean defer;
-  [SameObject, PutForwards=value] readonly attribute DOMTokenList blocking;
+  [CEReactions, Reflect] attribute boolean defer;
+  [SameObject, PutForwards=value, Reflect] readonly attribute DOMTokenList blocking;
   [CEReactions] attribute DOMString? crossOrigin;
   [CEReactions] attribute DOMString referrerPolicy;
-  [CEReactions] attribute DOMString integrity;
+  [CEReactions, Reflect] attribute DOMString integrity;
   [CEReactions] attribute DOMString fetchPriority;
 
   [CEReactions] attribute DOMString text;
@@ -23,9 +23,9 @@ interface HTMLScriptElement : HTMLElement {
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface HTMLScriptElement {
-  [CEReactions] attribute DOMString charset;
-  [CEReactions] attribute DOMString event;
-  [CEReactions] attribute DOMString htmlFor;
+  [CEReactions, Reflect] attribute DOMString charset;
+  [CEReactions, Reflect] attribute DOMString event;
+  [CEReactions, Reflect="for"] attribute DOMString htmlFor;
 };
 
 // Source: Attribution Reporting (https://wicg.github.io/attribution-reporting-api/)

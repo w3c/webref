@@ -3,5 +3,5 @@
 interface HTMLQuoteElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute USVString cite;
+  [CEReactions, ReflectURL] attribute USVString cite;
 };

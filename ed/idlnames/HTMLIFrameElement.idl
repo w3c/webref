@@ -3,14 +3,14 @@
 interface HTMLIFrameElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute USVString src;
+  [CEReactions, ReflectURL] attribute USVString src;
   [CEReactions] attribute (TrustedHTML or DOMString) srcdoc;
-  [CEReactions] attribute DOMString name;
-  [SameObject, PutForwards=value] readonly attribute DOMTokenList sandbox;
-  [CEReactions] attribute DOMString allow;
-  [CEReactions] attribute boolean allowFullscreen;
-  [CEReactions] attribute DOMString width;
-  [CEReactions] attribute DOMString height;
+  [CEReactions, Reflect] attribute DOMString name;
+  [SameObject, PutForwards=value, Reflect] readonly attribute DOMTokenList sandbox;
+  [CEReactions, Reflect] attribute DOMString allow;
+  [CEReactions, Reflect] attribute boolean allowFullscreen;
+  [CEReactions, Reflect] attribute DOMString width;
+  [CEReactions, Reflect] attribute DOMString height;
   [CEReactions] attribute DOMString referrerPolicy;
   [CEReactions] attribute DOMString loading;
   readonly attribute Document? contentDocument;
@@ -22,13 +22,13 @@ interface HTMLIFrameElement : HTMLElement {
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface HTMLIFrameElement {
-  [CEReactions] attribute DOMString align;
-  [CEReactions] attribute DOMString scrolling;
-  [CEReactions] attribute DOMString frameBorder;
-  [CEReactions] attribute USVString longDesc;
+  [CEReactions, Reflect] attribute DOMString align;
+  [CEReactions, Reflect] attribute DOMString scrolling;
+  [CEReactions, Reflect] attribute DOMString frameBorder;
+  [CEReactions, ReflectURL] attribute USVString longDesc;
 
-  [CEReactions] attribute [LegacyNullToEmptyString] DOMString marginHeight;
-  [CEReactions] attribute [LegacyNullToEmptyString] DOMString marginWidth;
+  [CEReactions, Reflect] attribute [LegacyNullToEmptyString] DOMString marginHeight;
+  [CEReactions, Reflect] attribute [LegacyNullToEmptyString] DOMString marginWidth;
 };
 
 // Source: Iframe credentialless (https://wicg.github.io/anonymous-iframe/)

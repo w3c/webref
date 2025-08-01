@@ -5,17 +5,17 @@
 interface HTMLFormElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute DOMString acceptCharset;
-  [CEReactions] attribute USVString action;
+  [CEReactions, Reflect="accept-charset"] attribute DOMString acceptCharset;
+  [CEReactions, ReflectSetter] attribute USVString action;
   [CEReactions] attribute DOMString autocomplete;
   [CEReactions] attribute DOMString enctype;
   [CEReactions] attribute DOMString encoding;
   [CEReactions] attribute DOMString method;
-  [CEReactions] attribute DOMString name;
-  [CEReactions] attribute boolean noValidate;
-  [CEReactions] attribute DOMString target;
-  [CEReactions] attribute DOMString rel;
-  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;
+  [CEReactions, Reflect] attribute DOMString name;
+  [CEReactions, Reflect] attribute boolean noValidate;
+  [CEReactions, Reflect] attribute DOMString target;
+  [CEReactions, Reflect] attribute DOMString rel;
+  [SameObject, PutForwards=value, Reflect="rel"] readonly attribute DOMTokenList relList;
 
   [SameObject] readonly attribute HTMLFormControlsCollection elements;
   readonly attribute unsigned long length;

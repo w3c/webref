@@ -8,9 +8,9 @@ interface HTMLHRElement : HTMLElement {
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface HTMLHRElement {
-  [CEReactions] attribute DOMString align;
-  [CEReactions] attribute DOMString color;
-  [CEReactions] attribute boolean noShade;
-  [CEReactions] attribute DOMString size;
-  [CEReactions] attribute DOMString width;
+  [CEReactions, Reflect] attribute DOMString align;
+  [CEReactions, Reflect] attribute DOMString color;
+  [CEReactions, Reflect] attribute boolean noShade;
+  [CEReactions, Reflect] attribute DOMString size;
+  [CEReactions, Reflect] attribute DOMString width;
 };

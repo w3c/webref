@@ -3,11 +3,11 @@
 interface HTMLMeterElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute double value;
-  [CEReactions] attribute double min;
-  [CEReactions] attribute double max;
-  [CEReactions] attribute double low;
-  [CEReactions] attribute double high;
-  [CEReactions] attribute double optimum;
+  [CEReactions, ReflectSetter] attribute double value;
+  [CEReactions, ReflectSetter] attribute double min;
+  [CEReactions, ReflectSetter] attribute double max;
+  [CEReactions, ReflectSetter] attribute double low;
+  [CEReactions, ReflectSetter] attribute double high;
+  [CEReactions, ReflectSetter] attribute double optimum;
   readonly attribute NodeList labels;
 };

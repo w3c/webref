@@ -22,6 +22,7 @@
           "IDBObjectStore",
           "IDBIndex",
           "IDBKeyRange",
+          "IDBRecord",
           "IDBCursor",
           "IDBCursorWithValue",
           "IDBTransaction"
@@ -34,6 +35,7 @@
           "IDBObjectStore",
           "IDBIndex",
           "IDBKeyRange",
+          "IDBRecord",
           "IDBCursor",
           "IDBCursorWithValue",
           "IDBTransaction"
@@ -1170,7 +1172,7 @@
         "href": "https://w3c.github.io/IndexedDB/#dictdef-idbobjectstoreparameters"
       },
       "IDBObjectStore": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface IDBObjectStore {\n  attribute DOMString name;\n  readonly attribute any keyPath;\n  readonly attribute DOMStringList indexNames;\n  [SameObject] readonly attribute IDBTransaction transaction;\n  readonly attribute boolean autoIncrement;\n\n  [NewObject] IDBRequest put(any value, optional any key);\n  [NewObject] IDBRequest add(any value, optional any key);\n  [NewObject] IDBRequest delete(any query);\n  [NewObject] IDBRequest clear();\n  [NewObject] IDBRequest get(any query);\n  [NewObject] IDBRequest getKey(any query);\n  [NewObject] IDBRequest getAll(optional any query,\n                                optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest getAllKeys(optional any query,\n                                    optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest count(optional any query);\n\n  [NewObject] IDBRequest openCursor(optional any query,\n                                    optional IDBCursorDirection direction = \"next\");\n  [NewObject] IDBRequest openKeyCursor(optional any query,\n                                       optional IDBCursorDirection direction = \"next\");\n\n  IDBIndex index(DOMString name);\n\n  [NewObject] IDBIndex createIndex(DOMString name,\n                                   (DOMString or sequence<DOMString>) keyPath,\n                                   optional IDBIndexParameters options = {});\n  undefined deleteIndex(DOMString name);\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface IDBObjectStore {\n  attribute DOMString name;\n  readonly attribute any keyPath;\n  readonly attribute DOMStringList indexNames;\n  [SameObject] readonly attribute IDBTransaction transaction;\n  readonly attribute boolean autoIncrement;\n\n  [NewObject] IDBRequest put(any value, optional any key);\n  [NewObject] IDBRequest add(any value, optional any key);\n  [NewObject] IDBRequest delete(any query);\n  [NewObject] IDBRequest clear();\n  [NewObject] IDBRequest get(any query);\n  [NewObject] IDBRequest getKey(any query);\n  [NewObject] IDBRequest getAll(optional any queryOrOptions,\n                                optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest getAllKeys(optional any queryOrOptions,\n                                    optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest getAllRecords(optional IDBGetAllOptions options = {});\n  [NewObject] IDBRequest count(optional any query);\n\n  [NewObject] IDBRequest openCursor(optional any query,\n                                    optional IDBCursorDirection direction = \"next\");\n  [NewObject] IDBRequest openKeyCursor(optional any query,\n                                       optional IDBCursorDirection direction = \"next\");\n\n  IDBIndex index(DOMString name);\n\n  [NewObject] IDBIndex createIndex(DOMString name,\n                                   (DOMString or sequence<DOMString>) keyPath,\n                                   optional IDBIndexParameters options = {});\n  undefined deleteIndex(DOMString name);\n};",
         "type": "interface",
         "name": "IDBObjectStore",
         "inheritance": null,
@@ -1531,7 +1533,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "query",
+                "name": "queryOrOptions",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -1594,7 +1596,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "query",
+                "name": "queryOrOptions",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -1642,6 +1644,48 @@
             ],
             "special": "",
             "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getallkeys"
+          },
+          {
+            "type": "operation",
+            "name": "getAllRecords",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "IDBRequest"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "IDBGetAllOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getallrecords"
           },
           {
             "type": "operation",
@@ -2038,8 +2082,79 @@
         "partial": false,
         "href": "https://w3c.github.io/IndexedDB/#dictdef-idbindexparameters"
       },
+      "IDBGetAllOptions": {
+        "fragment": "dictionary IDBGetAllOptions {\n  any query = null;\n  [EnforceRange] unsigned long count;\n  IDBCursorDirection direction = \"next\";\n};",
+        "type": "dictionary",
+        "name": "IDBGetAllOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "query",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbgetalloptions-query"
+          },
+          {
+            "type": "field",
+            "name": "count",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbgetalloptions-count"
+          },
+          {
+            "type": "field",
+            "name": "direction",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "IDBCursorDirection"
+            },
+            "default": {
+              "type": "string",
+              "value": "next"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbgetalloptions-direction"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#dictdef-idbgetalloptions"
+      },
       "IDBIndex": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface IDBIndex {\n  attribute DOMString name;\n  [SameObject] readonly attribute IDBObjectStore objectStore;\n  readonly attribute any keyPath;\n  readonly attribute boolean multiEntry;\n  readonly attribute boolean unique;\n\n  [NewObject] IDBRequest get(any query);\n  [NewObject] IDBRequest getKey(any query);\n  [NewObject] IDBRequest getAll(optional any query,\n                                optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest getAllKeys(optional any query,\n                                    optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest count(optional any query);\n\n  [NewObject] IDBRequest openCursor(optional any query,\n                                    optional IDBCursorDirection direction = \"next\");\n  [NewObject] IDBRequest openKeyCursor(optional any query,\n                                       optional IDBCursorDirection direction = \"next\");\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface IDBIndex {\n  attribute DOMString name;\n  [SameObject] readonly attribute IDBObjectStore objectStore;\n  readonly attribute any keyPath;\n  readonly attribute boolean multiEntry;\n  readonly attribute boolean unique;\n\n  [NewObject] IDBRequest get(any query);\n  [NewObject] IDBRequest getKey(any query);\n  [NewObject] IDBRequest getAll(optional any queryOrOptions,\n                                optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest getAllKeys(optional any queryOrOptions,\n                                    optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest getAllRecords(optional IDBGetAllOptions options = {});\n  [NewObject] IDBRequest count(optional any query);\n\n  [NewObject] IDBRequest openCursor(optional any query,\n                                    optional IDBCursorDirection direction = \"next\");\n  [NewObject] IDBRequest openKeyCursor(optional any query,\n                                       optional IDBCursorDirection direction = \"next\");\n};",
         "type": "interface",
         "name": "IDBIndex",
         "inheritance": null,
@@ -2225,7 +2340,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "query",
+                "name": "queryOrOptions",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -2288,7 +2403,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "query",
+                "name": "queryOrOptions",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -2336,6 +2451,48 @@
             ],
             "special": "",
             "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getallkeys"
+          },
+          {
+            "type": "operation",
+            "name": "getAllRecords",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "IDBRequest"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "IDBGetAllOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getallrecords"
           },
           {
             "type": "operation",
@@ -2893,6 +3050,82 @@
         ],
         "partial": false,
         "href": "https://w3c.github.io/IndexedDB/#idbkeyrange"
+      },
+      "IDBRecord": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface IDBRecord {\n  readonly attribute any key;\n  readonly attribute any primaryKey;\n  readonly attribute any value;\n};",
+        "type": "interface",
+        "name": "IDBRecord",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "key",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbrecord-key"
+          },
+          {
+            "type": "attribute",
+            "name": "primaryKey",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbrecord-primarykey"
+          },
+          {
+            "type": "attribute",
+            "name": "value",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbrecord-value"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#idbrecord"
       },
       "IDBCursor": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface IDBCursor {\n  readonly attribute (IDBObjectStore or IDBIndex) source;\n  readonly attribute IDBCursorDirection direction;\n  readonly attribute any key;\n  readonly attribute any primaryKey;\n  [SameObject] readonly attribute IDBRequest request;\n\n  undefined advance([EnforceRange] unsigned long count);\n  undefined continue(optional any key);\n  undefined continuePrimaryKey(any key, any primaryKey);\n\n  [NewObject] IDBRequest update(any value);\n  [NewObject] IDBRequest delete();\n};",
@@ -3585,6 +3818,7 @@
         "IDBObjectStore",
         "IDBIndex",
         "IDBKeyRange",
+        "IDBRecord",
         "IDBCursor",
         "IDBCursorWithValue",
         "IDBTransaction"
@@ -3598,6 +3832,7 @@
         "IDBObjectStore",
         "IDBIndex",
         "IDBKeyRange",
+        "IDBRecord",
         "IDBCursor",
         "IDBCursorWithValue",
         "IDBTransaction"
@@ -3651,19 +3886,25 @@
         "DOMStringList",
         "IDBTransaction",
         "IDBRequest",
+        "IDBGetAllOptions",
         "IDBCursorDirection",
         "IDBIndex",
         "IDBIndexParameters"
       ],
       "IDBIndexParameters": [],
+      "IDBGetAllOptions": [
+        "IDBCursorDirection"
+      ],
       "IDBIndex": [
         "IDBObjectStore",
         "IDBRequest",
+        "IDBGetAllOptions",
         "IDBCursorDirection"
       ],
       "IDBKeyRange": [
         "IDBKeyRange"
       ],
+      "IDBRecord": [],
       "IDBCursor": [
         "IDBObjectStore",
         "IDBIndex",

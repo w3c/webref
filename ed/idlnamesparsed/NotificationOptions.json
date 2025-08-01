@@ -6,7 +6,7 @@
       "title": "Notifications API Standard",
       "url": "https://notifications.spec.whatwg.org/"
     },
-    "fragment": "dictionary NotificationOptions {\n  NotificationDirection dir = \"auto\";\n  DOMString lang = \"\";\n  DOMString body = \"\";\n  DOMString tag = \"\";\n  USVString image;\n  USVString icon;\n  USVString badge;\n  VibratePattern vibrate;\n  EpochTimeStamp timestamp;\n  boolean renotify = false;\n  boolean? silent = null;\n  boolean requireInteraction = false;\n  any data = null;\n  sequence<NotificationAction> actions = [];\n};",
+    "fragment": "dictionary NotificationOptions {\n  NotificationDirection dir = \"auto\";\n  DOMString lang = \"\";\n  DOMString body = \"\";\n  USVString navigate;\n  DOMString tag = \"\";\n  USVString image;\n  USVString icon;\n  USVString badge;\n  VibratePattern vibrate;\n  EpochTimeStamp timestamp;\n  boolean renotify = false;\n  boolean? silent = null;\n  boolean requireInteraction = false;\n  any data = null;\n  sequence<NotificationAction> actions = [];\n};",
     "href": "https://notifications.spec.whatwg.org/#dictdef-notificationoptions"
   },
   "extended": [],

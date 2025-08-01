@@ -17,6 +17,7 @@ interface Notification : EventTarget {
   readonly attribute NotificationDirection dir;
   readonly attribute DOMString lang;
   readonly attribute DOMString body;
+  readonly attribute USVString navigate;
   readonly attribute DOMString tag;
   readonly attribute USVString image;
   readonly attribute USVString icon;

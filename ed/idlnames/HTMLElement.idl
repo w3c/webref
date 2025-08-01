@@ -4,21 +4,21 @@ interface HTMLElement : Element {
   [HTMLConstructor] constructor();
 
   // metadata attributes
-  [CEReactions] attribute DOMString title;
-  [CEReactions] attribute DOMString lang;
+  [CEReactions, Reflect] attribute DOMString title;
+  [CEReactions, Reflect] attribute DOMString lang;
   [CEReactions] attribute boolean translate;
   [CEReactions] attribute DOMString dir;
 
   // user interaction
   [CEReactions] attribute (boolean or unrestricted double or DOMString)? hidden;
-  [CEReactions] attribute boolean inert;
+  [CEReactions, Reflect] attribute boolean inert;
   undefined click();
-  [CEReactions] attribute DOMString accessKey;
+  [CEReactions, Reflect] attribute DOMString accessKey;
   readonly attribute DOMString accessKeyLabel;
   [CEReactions] attribute boolean draggable;
   [CEReactions] attribute boolean spellcheck;
-  [CEReactions] attribute DOMString writingSuggestions;
-  [CEReactions] attribute DOMString autocapitalize;
+  [CEReactions, ReflectSetter] attribute DOMString writingSuggestions;
+  [CEReactions, ReflectSetter] attribute DOMString autocapitalize;
   [CEReactions] attribute boolean autocorrect;
 
   [CEReactions] attribute [LegacyNullToEmptyString] DOMString innerText;

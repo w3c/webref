@@ -1,6 +1,6 @@
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 interface mixin HTMLHyperlinkElementUtils {
-  [CEReactions] stringifier attribute USVString href;
+  [CEReactions, ReflectSetter] stringifier attribute USVString href;
   readonly attribute USVString origin;
   [CEReactions] attribute USVString protocol;
   [CEReactions] attribute USVString username;

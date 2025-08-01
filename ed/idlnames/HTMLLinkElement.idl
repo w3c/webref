@@ -3,21 +3,21 @@
 interface HTMLLinkElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute USVString href;
+  [CEReactions, ReflectURL] attribute USVString href;
   [CEReactions] attribute DOMString? crossOrigin;
-  [CEReactions] attribute DOMString rel;
+  [CEReactions, Reflect] attribute DOMString rel;
   [CEReactions] attribute DOMString as;
-  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;
-  [CEReactions] attribute DOMString media;
-  [CEReactions] attribute DOMString integrity;
-  [CEReactions] attribute DOMString hreflang;
-  [CEReactions] attribute DOMString type;
-  [SameObject, PutForwards=value] readonly attribute DOMTokenList sizes;
-  [CEReactions] attribute USVString imageSrcset;
-  [CEReactions] attribute DOMString imageSizes;
+  [SameObject, PutForwards=value, Reflect="rel"] readonly attribute DOMTokenList relList;
+  [CEReactions, Reflect] attribute DOMString media;
+  [CEReactions, Reflect] attribute DOMString integrity;
+  [CEReactions, Reflect] attribute DOMString hreflang;
+  [CEReactions, Reflect] attribute DOMString type;
+  [SameObject, PutForwards=value, Reflect] readonly attribute DOMTokenList sizes;
+  [CEReactions, Reflect] attribute USVString imageSrcset;
+  [CEReactions, Reflect] attribute DOMString imageSizes;
   [CEReactions] attribute DOMString referrerPolicy;
-  [SameObject, PutForwards=value] readonly attribute DOMTokenList blocking;
-  [CEReactions] attribute boolean disabled;
+  [SameObject, PutForwards=value, Reflect] readonly attribute DOMTokenList blocking;
+  [CEReactions, Reflect] attribute boolean disabled;
   [CEReactions] attribute DOMString fetchPriority;
 
   // also has obsolete members
@@ -28,7 +28,7 @@ HTMLLinkElement includes LinkStyle;
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface HTMLLinkElement {
-  [CEReactions] attribute DOMString charset;
-  [CEReactions] attribute DOMString rev;
-  [CEReactions] attribute DOMString target;
+  [CEReactions, Reflect] attribute DOMString charset;
+  [CEReactions, Reflect] attribute DOMString rev;
+  [CEReactions, Reflect] attribute DOMString target;
 };

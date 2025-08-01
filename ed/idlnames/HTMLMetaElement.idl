@@ -3,15 +3,15 @@
 interface HTMLMetaElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute DOMString name;
-  [CEReactions] attribute DOMString httpEquiv;
-  [CEReactions] attribute DOMString content;
-  [CEReactions] attribute DOMString media;
+  [CEReactions, Reflect] attribute DOMString name;
+  [CEReactions, Reflect="http-equiv"] attribute DOMString httpEquiv;
+  [CEReactions, Reflect] attribute DOMString content;
+  [CEReactions, Reflect] attribute DOMString media;
 
   // also has obsolete members
 };
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface HTMLMetaElement {
-  [CEReactions] attribute DOMString scheme;
+  [CEReactions, Reflect] attribute DOMString scheme;
 };

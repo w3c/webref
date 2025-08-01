@@ -3,8 +3,8 @@
 interface HTMLProgressElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute double value;
-  [CEReactions] attribute double max;
+  [CEReactions, ReflectSetter] attribute double value;
+  [CEReactions, ReflectPositive, ReflectDefault=1.0] attribute double max;
   readonly attribute double position;
   readonly attribute NodeList labels;
 };

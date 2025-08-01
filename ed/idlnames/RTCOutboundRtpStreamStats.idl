@@ -33,4 +33,5 @@ dictionary RTCOutboundRtpStreamStats : RTCSentRtpStreamStats {
              boolean              powerEfficientEncoder;
              boolean              active;
              DOMString            scalabilityMode;
+             unsigned long long   packetsSentWithEct1;
 };

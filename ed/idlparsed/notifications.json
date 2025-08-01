@@ -20,7 +20,7 @@
     },
     "idlNames": {
       "Notification": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface Notification : EventTarget {\n  constructor(DOMString title, optional NotificationOptions options = {});\n\n  static readonly attribute NotificationPermission permission;\n  [Exposed=Window] static Promise<NotificationPermission> requestPermission(optional NotificationPermissionCallback deprecatedCallback);\n\n  static readonly attribute unsigned long maxActions;\n\n  attribute EventHandler onclick;\n  attribute EventHandler onshow;\n  attribute EventHandler onerror;\n  attribute EventHandler onclose;\n\n  readonly attribute DOMString title;\n  readonly attribute NotificationDirection dir;\n  readonly attribute DOMString lang;\n  readonly attribute DOMString body;\n  readonly attribute DOMString tag;\n  readonly attribute USVString image;\n  readonly attribute USVString icon;\n  readonly attribute USVString badge;\n  [SameObject] readonly attribute FrozenArray<unsigned long> vibrate;\n  readonly attribute EpochTimeStamp timestamp;\n  readonly attribute boolean renotify;\n  readonly attribute boolean? silent;\n  readonly attribute boolean requireInteraction;\n  [SameObject] readonly attribute any data;\n  [SameObject] readonly attribute FrozenArray<NotificationAction> actions;\n\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Notification : EventTarget {\n  constructor(DOMString title, optional NotificationOptions options = {});\n\n  static readonly attribute NotificationPermission permission;\n  [Exposed=Window] static Promise<NotificationPermission> requestPermission(optional NotificationPermissionCallback deprecatedCallback);\n\n  static readonly attribute unsigned long maxActions;\n\n  attribute EventHandler onclick;\n  attribute EventHandler onshow;\n  attribute EventHandler onerror;\n  attribute EventHandler onclose;\n\n  readonly attribute DOMString title;\n  readonly attribute NotificationDirection dir;\n  readonly attribute DOMString lang;\n  readonly attribute DOMString body;\n  readonly attribute USVString navigate;\n  readonly attribute DOMString tag;\n  readonly attribute USVString image;\n  readonly attribute USVString icon;\n  readonly attribute USVString badge;\n  [SameObject] readonly attribute FrozenArray<unsigned long> vibrate;\n  readonly attribute EpochTimeStamp timestamp;\n  readonly attribute boolean renotify;\n  readonly attribute boolean? silent;\n  readonly attribute boolean requireInteraction;\n  [SameObject] readonly attribute any data;\n  [SameObject] readonly attribute FrozenArray<NotificationAction> actions;\n\n  undefined close();\n};",
         "type": "interface",
         "name": "Notification",
         "inheritance": "EventTarget",
@@ -280,6 +280,22 @@
           },
           {
             "type": "attribute",
+            "name": "navigate",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://notifications.spec.whatwg.org/#dom-notification-navigate"
+          },
+          {
+            "type": "attribute",
             "name": "tag",
             "idlType": {
               "type": "attribute-type",
@@ -532,7 +548,7 @@
         "href": "https://notifications.spec.whatwg.org/#notification"
       },
       "NotificationOptions": {
-        "fragment": "dictionary NotificationOptions {\n  NotificationDirection dir = \"auto\";\n  DOMString lang = \"\";\n  DOMString body = \"\";\n  DOMString tag = \"\";\n  USVString image;\n  USVString icon;\n  USVString badge;\n  VibratePattern vibrate;\n  EpochTimeStamp timestamp;\n  boolean renotify = false;\n  boolean? silent = null;\n  boolean requireInteraction = false;\n  any data = null;\n  sequence<NotificationAction> actions = [];\n};",
+        "fragment": "dictionary NotificationOptions {\n  NotificationDirection dir = \"auto\";\n  DOMString lang = \"\";\n  DOMString body = \"\";\n  USVString navigate;\n  DOMString tag = \"\";\n  USVString image;\n  USVString icon;\n  USVString badge;\n  VibratePattern vibrate;\n  EpochTimeStamp timestamp;\n  boolean renotify = false;\n  boolean? silent = null;\n  boolean requireInteraction = false;\n  any data = null;\n  sequence<NotificationAction> actions = [];\n};",
         "type": "dictionary",
         "name": "NotificationOptions",
         "inheritance": null,
@@ -593,6 +609,22 @@
             },
             "required": false,
             "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-body"
+          },
+          {
+            "type": "field",
+            "name": "navigate",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-navigate"
           },
           {
             "type": "field",
@@ -849,7 +881,7 @@
         "href": "https://notifications.spec.whatwg.org/#enumdef-notificationdirection"
       },
       "NotificationAction": {
-        "fragment": "dictionary NotificationAction {\n  required DOMString action;\n  required DOMString title;\n  USVString icon;\n};",
+        "fragment": "dictionary NotificationAction {\n  required DOMString action;\n  required DOMString title;\n  USVString navigate;\n  USVString icon;\n};",
         "type": "dictionary",
         "name": "NotificationAction",
         "inheritance": null,
@@ -885,6 +917,22 @@
             "default": null,
             "required": true,
             "href": "https://notifications.spec.whatwg.org/#dom-notificationaction-title"
+          },
+          {
+            "type": "field",
+            "name": "navigate",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://notifications.spec.whatwg.org/#dom-notificationaction-navigate"
           },
           {
             "type": "field",

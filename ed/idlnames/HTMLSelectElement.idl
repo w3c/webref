@@ -3,13 +3,13 @@
 interface HTMLSelectElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute DOMString autocomplete;
-  [CEReactions] attribute boolean disabled;
+  [CEReactions, ReflectSetter] attribute DOMString autocomplete;
+  [CEReactions, Reflect] attribute boolean disabled;
   readonly attribute HTMLFormElement? form;
-  [CEReactions] attribute boolean multiple;
-  [CEReactions] attribute DOMString name;
-  [CEReactions] attribute boolean required;
-  [CEReactions] attribute unsigned long size;
+  [CEReactions, Reflect] attribute boolean multiple;
+  [CEReactions, Reflect] attribute DOMString name;
+  [CEReactions, Reflect] attribute boolean required;
+  [CEReactions, Reflect, ReflectDefault=0] attribute unsigned long size;
 
   readonly attribute DOMString type;
 

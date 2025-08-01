@@ -1,0 +1,6 @@
+// Source: Indexed Database API 3.0 (https://www.w3.org/TR/IndexedDB-3/)
+dictionary IDBGetAllOptions {
+  any query = null;
+  [EnforceRange] unsigned long count;
+  IDBCursorDirection direction = "next";
+};

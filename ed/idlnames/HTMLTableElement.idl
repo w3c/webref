@@ -27,14 +27,14 @@ interface HTMLTableElement : HTMLElement {
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface HTMLTableElement {
-  [CEReactions] attribute DOMString align;
-  [CEReactions] attribute DOMString border;
-  [CEReactions] attribute DOMString frame;
-  [CEReactions] attribute DOMString rules;
-  [CEReactions] attribute DOMString summary;
-  [CEReactions] attribute DOMString width;
+  [CEReactions, Reflect] attribute DOMString align;
+  [CEReactions, Reflect] attribute DOMString border;
+  [CEReactions, Reflect] attribute DOMString frame;
+  [CEReactions, Reflect] attribute DOMString rules;
+  [CEReactions, Reflect] attribute DOMString summary;
+  [CEReactions, Reflect] attribute DOMString width;
 
-  [CEReactions] attribute [LegacyNullToEmptyString] DOMString bgColor;
-  [CEReactions] attribute [LegacyNullToEmptyString] DOMString cellPadding;
-  [CEReactions] attribute [LegacyNullToEmptyString] DOMString cellSpacing;
+  [CEReactions, Reflect] attribute [LegacyNullToEmptyString] DOMString bgColor;
+  [CEReactions, Reflect] attribute [LegacyNullToEmptyString] DOMString cellPadding;
+  [CEReactions, Reflect] attribute [LegacyNullToEmptyString] DOMString cellSpacing;
 };

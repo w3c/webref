@@ -3,9 +3,9 @@
 interface HTMLFieldSetElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute boolean disabled;
+  [CEReactions, Reflect] attribute boolean disabled;
   readonly attribute HTMLFormElement? form;
-  [CEReactions] attribute DOMString name;
+  [CEReactions, Reflect] attribute DOMString name;
 
   readonly attribute DOMString type;
 

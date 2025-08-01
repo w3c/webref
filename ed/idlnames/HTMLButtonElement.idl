@@ -3,18 +3,18 @@
 interface HTMLButtonElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute DOMString command;
-  [CEReactions] attribute Element? commandForElement;
-  [CEReactions] attribute boolean disabled;
+  [CEReactions, ReflectSetter] attribute DOMString command;
+  [CEReactions, Reflect] attribute Element? commandForElement;
+  [CEReactions, Reflect] attribute boolean disabled;
   readonly attribute HTMLFormElement? form;
-  [CEReactions] attribute USVString formAction;
+  [CEReactions, ReflectSetter] attribute USVString formAction;
   [CEReactions] attribute DOMString formEnctype;
   [CEReactions] attribute DOMString formMethod;
-  [CEReactions] attribute boolean formNoValidate;
-  [CEReactions] attribute DOMString formTarget;
-  [CEReactions] attribute DOMString name;
-  [CEReactions] attribute DOMString type;
-  [CEReactions] attribute DOMString value;
+  [CEReactions, Reflect] attribute boolean formNoValidate;
+  [CEReactions, Reflect] attribute DOMString formTarget;
+  [CEReactions, Reflect] attribute DOMString name;
+  [CEReactions, ReflectSetter] attribute DOMString type;
+  [CEReactions, Reflect] attribute DOMString value;
 
   readonly attribute boolean willValidate;
   readonly attribute ValidityState validity;

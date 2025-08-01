@@ -6,7 +6,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "interface mixin HTMLHyperlinkElementUtils {\n  [CEReactions] stringifier attribute USVString href;\n  readonly attribute USVString origin;\n  [CEReactions] attribute USVString protocol;\n  [CEReactions] attribute USVString username;\n  [CEReactions] attribute USVString password;\n  [CEReactions] attribute USVString host;\n  [CEReactions] attribute USVString hostname;\n  [CEReactions] attribute USVString port;\n  [CEReactions] attribute USVString pathname;\n  [CEReactions] attribute USVString search;\n  [CEReactions] attribute USVString hash;\n};",
+    "fragment": "interface mixin HTMLHyperlinkElementUtils {\n  [CEReactions, ReflectSetter] stringifier attribute USVString href;\n  readonly attribute USVString origin;\n  [CEReactions] attribute USVString protocol;\n  [CEReactions] attribute USVString username;\n  [CEReactions] attribute USVString password;\n  [CEReactions] attribute USVString host;\n  [CEReactions] attribute USVString hostname;\n  [CEReactions] attribute USVString port;\n  [CEReactions] attribute USVString pathname;\n  [CEReactions] attribute USVString search;\n  [CEReactions] attribute USVString hash;\n};",
     "href": "https://html.spec.whatwg.org/multipage/links.html#htmlhyperlinkelementutils"
   },
   "extended": [],

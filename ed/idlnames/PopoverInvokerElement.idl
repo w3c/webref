@@ -1,5 +1,5 @@
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 interface mixin PopoverInvokerElement {
-  [CEReactions] attribute Element? popoverTargetElement;
+  [CEReactions, Reflect] attribute Element? popoverTargetElement;
   [CEReactions] attribute DOMString popoverTargetAction;
 };
