@@ -3,4 +3,5 @@
 interface PushEvent : ExtendableEvent {
   constructor(DOMString type, optional PushEventInit eventInitDict = {});
   readonly attribute PushMessageData? data;
+  readonly attribute Notification? notification;
 };

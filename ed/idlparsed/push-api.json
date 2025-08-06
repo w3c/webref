@@ -744,7 +744,7 @@
         "href": "https://w3c.github.io/push-api/#dom-pushmessagedata"
       },
       "PushEvent": {
-        "fragment": "[Exposed=ServiceWorker, SecureContext]\ninterface PushEvent : ExtendableEvent {\n  constructor(DOMString type, optional PushEventInit eventInitDict = {});\n  readonly attribute PushMessageData? data;\n};",
+        "fragment": "[Exposed=ServiceWorker, SecureContext]\ninterface PushEvent : ExtendableEvent {\n  constructor(DOMString type, optional PushEventInit eventInitDict = {});\n  readonly attribute PushMessageData? data;\n  readonly attribute Notification? notification;\n};",
         "type": "interface",
         "name": "PushEvent",
         "inheritance": "ExtendableEvent",
@@ -805,6 +805,22 @@
             "special": "",
             "readonly": true,
             "href": "https://w3c.github.io/push-api/#dom-pushevent-data"
+          },
+          {
+            "type": "attribute",
+            "name": "notification",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Notification"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/push-api/#dom-pushevent-notification"
           }
         ],
         "extAttrs": [
@@ -826,6 +842,53 @@
         ],
         "partial": false,
         "href": "https://w3c.github.io/push-api/#dom-pushevent"
+      },
+      "PushEventInit": {
+        "fragment": "dictionary PushEventInit : ExtendableEventInit {\n  PushMessageDataInit? data = null;\n  Notification? notification = null;\n};",
+        "type": "dictionary",
+        "name": "PushEventInit",
+        "inheritance": "ExtendableEventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "data",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "PushMessageDataInit"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/push-api/#dom-pusheventinit-data"
+          },
+          {
+            "type": "field",
+            "name": "notification",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Notification"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/push-api/#dom-pusheventinit-notification"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/push-api/#dom-pusheventinit"
       },
       "PushMessageDataInit": {
         "fragment": "typedef (BufferSource or USVString) PushMessageDataInit;",
@@ -858,33 +921,6 @@
         },
         "extAttrs": [],
         "href": "https://w3c.github.io/push-api/#dom-pushmessagedatainit"
-      },
-      "PushEventInit": {
-        "fragment": "dictionary PushEventInit : ExtendableEventInit {\n  PushMessageDataInit data;\n};",
-        "type": "dictionary",
-        "name": "PushEventInit",
-        "inheritance": "ExtendableEventInit",
-        "members": [
-          {
-            "type": "field",
-            "name": "data",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "PushMessageDataInit"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://w3c.github.io/push-api/#dom-pusheventinit-data"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://w3c.github.io/push-api/#dom-pusheventinit"
       },
       "PushSubscriptionChangeEvent": {
         "fragment": "[Exposed=ServiceWorker, SecureContext]\ninterface PushSubscriptionChangeEvent : ExtendableEvent {\n  constructor(DOMString type, optional PushSubscriptionChangeEventInit eventInitDict = {});\n  readonly attribute PushSubscription? newSubscription;\n  readonly attribute PushSubscription? oldSubscription;\n};",
@@ -1189,11 +1225,13 @@
       "PushEvent": [
         "ExtendableEvent",
         "PushEventInit",
-        "PushMessageData"
+        "PushMessageData",
+        "Notification"
       ],
       "PushEventInit": [
         "ExtendableEventInit",
-        "PushMessageDataInit"
+        "PushMessageDataInit",
+        "Notification"
       ],
       "PushSubscriptionChangeEvent": [
         "ExtendableEvent",
@@ -1217,6 +1255,7 @@
       "ServiceWorkerGlobalScope",
       "EventHandler",
       "ExtendableEvent",
+      "Notification",
       "ExtendableEventInit"
     ],
     "hasObsoleteIdl": false

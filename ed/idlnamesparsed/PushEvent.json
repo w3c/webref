@@ -6,7 +6,7 @@
       "title": "Push API",
       "url": "https://www.w3.org/TR/push-api/"
     },
-    "fragment": "[Exposed=ServiceWorker, SecureContext]\ninterface PushEvent : ExtendableEvent {\n  constructor(DOMString type, optional PushEventInit eventInitDict = {});\n  readonly attribute PushMessageData? data;\n};",
+    "fragment": "[Exposed=ServiceWorker, SecureContext]\ninterface PushEvent : ExtendableEvent {\n  constructor(DOMString type, optional PushEventInit eventInitDict = {});\n  readonly attribute PushMessageData? data;\n  readonly attribute Notification? notification;\n};",
     "href": "https://w3c.github.io/push-api/#dom-pushevent"
   },
   "extended": [],

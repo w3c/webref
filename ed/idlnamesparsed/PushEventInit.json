@@ -6,7 +6,7 @@
       "title": "Push API",
       "url": "https://www.w3.org/TR/push-api/"
     },
-    "fragment": "dictionary PushEventInit : ExtendableEventInit {\n  PushMessageDataInit data;\n};",
+    "fragment": "dictionary PushEventInit : ExtendableEventInit {\n  PushMessageDataInit? data = null;\n  Notification? notification = null;\n};",
     "href": "https://w3c.github.io/push-api/#dom-pusheventinit"
   },
   "extended": [],

@@ -1,4 +1,5 @@
 // Source: Push API (https://www.w3.org/TR/push-api/)
 dictionary PushEventInit : ExtendableEventInit {
-  PushMessageDataInit data;
+  PushMessageDataInit? data = null;
+  Notification? notification = null;
 };
