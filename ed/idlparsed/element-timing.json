@@ -214,7 +214,7 @@
       ],
       "Element": [
         {
-          "fragment": "partial interface Element {\n    [CEReactions] attribute DOMString elementTiming;\n};",
+          "fragment": "partial interface Element {\n    [CEReactions, Reflect] attribute DOMString elementTiming;\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -234,6 +234,12 @@
                 {
                   "type": "extended-attribute",
                   "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                },
+                {
+                  "type": "extended-attribute",
+                  "name": "Reflect",
                   "rhs": null,
                   "arguments": []
                 }
