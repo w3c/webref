@@ -4746,8 +4746,11 @@
         },
         {
           "html": "If <var>navigable</var> is null:",
-          "rationale": "return",
+          "rationale": "remove",
           "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①②\">Remove</a> <var>collected data</var> from <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#collected-network-data\" id=\"ref-for-collected-network-data④\">collected network data</a>.</p>"
+            },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#resume\" id=\"ref-for-resume①③\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id④\">request id</a>, \"response\").</p>"
             },
@@ -4785,8 +4788,11 @@
         },
         {
           "html": "If <var>collectors</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①①\">empty</a>:",
-          "rationale": "return",
+          "rationale": "remove",
           "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①③\">Remove</a> <var>collected data</var> from <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#collected-network-data\" id=\"ref-for-collected-network-data⑤\">collected network data</a>.</p>"
+            },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#resume\" id=\"ref-for-resume①④\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑤\">request id</a>, \"response\").</p>"
             },
@@ -4852,6 +4858,9 @@
                   "html": "<p>Set <var>collected data</var>’s <code>size</code> to <var>size</var>.</p>"
                 }
               ]
+            },
+            {
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①④\">remove</a> <var>collected data</var> from <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#collected-network-data\" id=\"ref-for-collected-network-data⑥\">collected network data</a>.</p>"
             }
           ]
         },
@@ -4873,7 +4882,7 @@
           "html": "<p>Let <var>already collected data</var> be an empty list.</p>"
         },
         {
-          "html": "For each <var>collected data</var> in <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#collected-network-data\" id=\"ref-for-collected-network-data④\">collected network data</a>:",
+          "html": "For each <var>collected data</var> in <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#collected-network-data\" id=\"ref-for-collected-network-data⑦\">collected network data</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -4927,14 +4936,14 @@
           "rationale": "remove",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①②\">Remove</a> <var>collector id</var> from <var>collected data</var>’s <code>collectors</code>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①⑤\">Remove</a> <var>collector id</var> from <var>collected data</var>’s <code>collectors</code>.</p>"
             },
             {
               "html": "If <var>collected data</var>’s <code>collectors</code> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①③\">empty</a>:",
               "rationale": "remove",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①③\">Remove</a> <var>collected data</var> from <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#collected-network-data\" id=\"ref-for-collected-network-data⑤\">collected network data</a>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①⑥\">Remove</a> <var>collected data</var> from <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#collected-network-data\" id=\"ref-for-collected-network-data⑧\">collected network data</a>.</p>"
                 }
               ]
             }
@@ -6908,7 +6917,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove④\">Remove</a> <var>collector id</var> from <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collectors\" id=\"ref-for-network-collectors⑦\">network collectors</a>.</p>"
         },
         {
-          "html": "<p>For <var>collected data</var> in <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#collected-network-data\" id=\"ref-for-collected-network-data⑥\">collected network data</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#remove-collector-from-data\" id=\"ref-for-remove-collector-from-data③\">remove collector from data</a>\n with <var>collected data</var> and <var>collector id</var>.</p>"
+          "html": "<p>For <var>collected data</var> in <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#collected-network-data\" id=\"ref-for-collected-network-data⑨\">collected network data</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#remove-collector-from-data\" id=\"ref-for-remove-collector-from-data③\">remove collector from data</a>\n with <var>collected data</var> and <var>collector id</var>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑤⑦\">success</a> with data <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-null-value\" id=\"ref-for-sec-null-value①\">null</a>.</p>"
@@ -9463,7 +9472,7 @@
           "html": "<p>If <var>preload script map</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①⓪\">contain</a> <var>script</var>, return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①③①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①②⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-script\" id=\"ref-for-errors-no-such-script\">no such script</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①④\">Remove</a> <var>script</var> from <var>preload script map</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①⑦\">Remove</a> <var>script</var> from <var>preload script map</var>.</p>"
         },
         {
           "html": "<p>Return null</p>"
