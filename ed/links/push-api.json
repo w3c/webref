@@ -14,6 +14,7 @@
       "https://notifications.spec.whatwg.org/": {},
       "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf": {},
       "https://tc39.es/ecma262/multipage/": {},
+      "https://url.spec.whatwg.org/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://websockets.spec.whatwg.org/": {},
       "https://webstore.ansi.org/RecordDetail.aspx?sku=ANSI+X9.62%3a2005": {},
@@ -53,6 +54,11 @@
           "utf-8-encode"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "concept-origin"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/infrastructure.html": {
         "anchors": [
           "in-parallel"
@@ -72,8 +78,59 @@
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
+          "32-bit-unsigned-integer",
+          "64-bit-unsigned-integer",
+          "tuple",
           "byte-sequence",
-          "parse-json-bytes-to-a-javascript-value"
+          "parse-json-bytes-to-an-infra-value",
+          "ordered-map",
+          "map-exists",
+          "javascript-string-convert",
+          "list",
+          "list-item",
+          "convert-an-infra-value-to-a-json-compatible-javascript-value",
+          "list-iterate",
+          "iteration-continue",
+          "list-append",
+          "byte",
+          "parse-json-bytes-to-a-javascript-value",
+          "boolean",
+          "assert"
+        ]
+      },
+      "https://notifications.spec.whatwg.org/": {
+        "anchors": [
+          "dictdef-notificationoptions",
+          "dictdef-notificationaction",
+          "notification",
+          "permissiondef-notifications",
+          "dom-notificationoptions-dir",
+          "dom-notificationoptions-lang",
+          "dom-notificationoptions-body",
+          "dom-notificationoptions-navigate",
+          "dom-notificationoptions-tag",
+          "dom-notificationoptions-image",
+          "dom-notificationoptions-icon",
+          "dom-notificationoptions-badge",
+          "dom-notificationoptions-vibrate",
+          "dom-notificationoptions-timestamp",
+          "dom-notificationoptions-renotify",
+          "dom-notificationoptions-silent",
+          "dom-notificationoptions-requireinteraction",
+          "dom-notificationoptions-data",
+          "dom-notificationaction-action",
+          "dom-notificationaction-title",
+          "dom-notificationaction-navigate",
+          "dom-notificationaction-icon",
+          "dom-notificationoptions-actions",
+          "create-a-notification",
+          "notification-navigation-url",
+          "notification-action-navigation-url",
+          "action",
+          "actions",
+          "service-worker-registration",
+          "notification-show-steps",
+          "service-worker-registration-has-shownotification-been-successfully-invoked"
         ]
       },
       "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
@@ -84,6 +141,12 @@
       "https://tc39.es/ecma262/multipage/structured-data.html": {
         "anchors": [
           "sec-json.stringify"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url",
+          "concept-url-origin"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -124,7 +187,8 @@
       },
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
-          "dom-epochtimestamp"
+          "dom-epochtimestamp",
+          "dfn-current-wall-time"
         ]
       },
       "https://www.w3.org/TR/permissions/": {
@@ -151,6 +215,7 @@
           "serviceworkerglobalscope",
           "extendableevent",
           "dictdef-extendableeventinit",
+          "dfn-scope-url",
           "fire-functional-event",
           "extendableevent-extend-lifetime-promises"
         ]
