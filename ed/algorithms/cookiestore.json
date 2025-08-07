@@ -333,7 +333,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>r</var> be the result of running <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#delete-a-cookie\" id=\"ref-for-delete-a-cookie\">delete a cookie</a> with\n<var>url</var>,\n<var>name</var>,\nnull,\n\"<code>/</code>\",\ntrue, and\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://cookiestore.spec.whatwg.org/#dom-cookiesamesite-strict\" id=\"ref-for-dom-cookiesamesite-strict①\">strict</a></code>\".</p>"
+              "html": "<p>Let <var>r</var> be the result of running <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#delete-a-cookie\" id=\"ref-for-delete-a-cookie\">delete a cookie</a> with\n<var>url</var>,\n<var>name</var>,\nnull,\n\"<code>/</code>\", and\ntrue.</p>"
             },
             {
               "html": "<p>If <var>r</var> is failure, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑥\">reject</a> <var>p</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①①\">TypeError</a></code> and abort these steps.</p>"
@@ -553,7 +553,7 @@
           "rationale": "assert",
           "steps": [
             {
-              "html": "<p class=\"assertion\">Assert: <var>cookie</var>’s <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#cookie-http-only-flag\" id=\"ref-for-cookie-http-only-flag\">http-only-flag</a> is false.</p>"
+              "html": "<p class=\"assertion\">Assert: <var>cookie</var>’s <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#cookie-http-only-flag\" id=\"ref-for-cookie-http-only-flag①\">http-only-flag</a> is false.</p>"
             },
             {
               "html": "If <var>name</var> is given, then run these steps:",
@@ -583,7 +583,7 @@
     {
       "name": "create a CookieListItem",
       "href": "https://cookiestore.spec.whatwg.org/#create-a-cookielistitem",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-cookielistitem\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://cookiestore.spec.whatwg.org/#dictdef-cookielistitem\" id=\"ref-for-dictdef-cookielistitem⑦\">CookieListItem</a></code></dfn> from <var>cookie</var>, run the following steps.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-cookielistitem\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://cookiestore.spec.whatwg.org/#dictdef-cookielistitem\" id=\"ref-for-dictdef-cookielistitem⑦\">CookieListItem</a></code></dfn> from a <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#cookie\" id=\"ref-for-cookie⑤\">cookie</a> <var>cookie</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -593,45 +593,7 @@
           "html": "<p>Let <var>value</var> be the result of running <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode-without-bom\" id=\"ref-for-utf-8-decode-without-bom②\">UTF-8 decode without BOM</a> on <var>cookie</var>’s <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#cookie-value\" id=\"ref-for-cookie-value①\">value</a>.</p>"
         },
         {
-          "html": "<p>Let <var>domain</var> be the result of running <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode-without-bom\" id=\"ref-for-utf-8-decode-without-bom③\">UTF-8 decode without BOM</a> on <var>cookie</var>’s <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#cookie-domain\" id=\"ref-for-cookie-domain\">domain</a>.</p>"
-        },
-        {
-          "html": "<p>Let <var>path</var> be the result of running <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode-without-bom\" id=\"ref-for-utf-8-decode-without-bom④\">UTF-8 decode without BOM</a> on <var>cookie</var>’s <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#cookie-path\" id=\"ref-for-cookie-path\">path</a>.</p>"
-        },
-        {
-          "html": "<p>Let <var>expires</var> be <var>cookie</var>’s <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#cookie-expiry-time\" id=\"ref-for-cookie-expiry-time\">expiry-time</a> (<a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#as-a-timestamp\" id=\"ref-for-as-a-timestamp\">as a timestamp</a>).</p>"
-        },
-        {
-          "html": "<p>Let <var>secure</var> be <var>cookie</var>’s <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#cookie-secure-only-flag\" id=\"ref-for-cookie-secure-only-flag\">secure-only-flag</a>.</p>"
-        },
-        {
-          "html": "Switch on <var>cookie</var>’s <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#cookie-same-site-flag\" id=\"ref-for-cookie-same-site-flag\">same-site-flag</a>:",
-          "rationale": ".switch",
-          "steps": [
-            {
-              "operation": "switch",
-              "steps": [
-                {
-                  "case": "`None`",
-                  "html": "<p>Let <var>sameSite</var> be \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://cookiestore.spec.whatwg.org/#dom-cookiesamesite-none\" id=\"ref-for-dom-cookiesamesite-none\">none</a></code>\".</p>"
-                },
-                {
-                  "case": "`Strict`",
-                  "html": "<p>Let <var>sameSite</var> be \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://cookiestore.spec.whatwg.org/#dom-cookiesamesite-strict\" id=\"ref-for-dom-cookiesamesite-strict②\">strict</a></code>\".</p>"
-                },
-                {
-                  "case": "`Lax`",
-                  "html": "<p>Let <var>sameSite</var> be \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://cookiestore.spec.whatwg.org/#dom-cookiesamesite-lax\" id=\"ref-for-dom-cookiesamesite-lax\">lax</a></code>\".</p>"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "html": "<p>Let <var>partitioned</var> be a boolean indicating that the user agent supports <a href=\"https://github.com/privacycg/CHIPS\">cookie partitioning</a> and that that <var>cookie</var> has a partition key.</p>"
-        },
-        {
-          "html": "<p>Return «[\n\"name\" → <var>name</var>,\n\"value\" → <var>value</var>,\n\"domain\" → <var>domain</var>,\n\"path\" → <var>path</var>,\n\"expires\" → <var>expires</var>,\n\"secure\" → <var>secure</var>,\n\"sameSite\" → <var>sameSite</var>,\n\"partitioned\" → <var>partitioned</var>\n]»</p>"
+          "html": "<p>Return «[ \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://cookiestore.spec.whatwg.org/#dom-cookielistitem-name\" id=\"ref-for-dom-cookielistitem-name\">name</a></code>\" → <var>name</var>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://cookiestore.spec.whatwg.org/#dom-cookielistitem-value\" id=\"ref-for-dom-cookielistitem-value\">value</a></code>\" → <var>value</var> ]».</p>"
         }
       ]
     },
@@ -787,7 +749,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>expires</var> be the earliest representable date represented <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#as-a-timestamp\" id=\"ref-for-as-a-timestamp①\">as a timestamp</a>.</p>"
+          "html": "<p>Let <var>expires</var> be the earliest representable date represented <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#as-a-timestamp\" id=\"ref-for-as-a-timestamp\">as a timestamp</a>.</p>"
         },
         {
           "html": "<p>Let <var>value</var> be the empty string.</p>"
@@ -796,10 +758,7 @@
           "html": "<p>If <var>name</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length②\">length</a> is 0, then set <var>value</var> to any non-empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a> string.</p>"
         },
         {
-          "html": "<p>Let <var>sameSite</var> be \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://cookiestore.spec.whatwg.org/#dom-cookiesamesite-strict\" id=\"ref-for-dom-cookiesamesite-strict④\">strict</a></code>\".</p>"
-        },
-        {
-          "html": "<p>Return the results of running <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#set-a-cookie\" id=\"ref-for-set-a-cookie②\">set a cookie</a> with\n<var>url</var>,\n<var>name</var>,\n<var>value</var>,\n<var>expires</var>,\n<var>domain</var>,\n<var>path</var>,\n<var>sameSite</var>, and\n<var>partitioned</var>.</p>"
+          "html": "<p>Return the results of running <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#set-a-cookie\" id=\"ref-for-set-a-cookie②\">set a cookie</a> with\n<var>url</var>,\n<var>name</var>,\n<var>value</var>,\n<var>expires</var>,\n<var>domain</var>,\n<var>path</var>,\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://cookiestore.spec.whatwg.org/#dom-cookiesamesite-strict\" id=\"ref-for-dom-cookiesamesite-strict②\">strict</a></code>\", and\n<var>partitioned</var>.</p>"
         }
       ]
     },
@@ -849,7 +808,7 @@
                       "html": "<p>If <var>change</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">in</a> the <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#observable-changes\" id=\"ref-for-observable-changes②\">observable changes</a> for <var>subscription</var>’s <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#cookie-change-subscription-url\" id=\"ref-for-cookie-change-subscription-url①\">url</a>,\nthen <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
                     },
                     {
-                      "html": "<p>Let <var>cookieName</var> be the result of running <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode-without-bom\" id=\"ref-for-utf-8-decode-without-bom⑤\">UTF-8 decode without BOM</a> on <var>cookie</var>’s <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#cookie-name\" id=\"ref-for-cookie-name③\">name</a>.</p>"
+                      "html": "<p>Let <var>cookieName</var> be the result of running <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode-without-bom\" id=\"ref-for-utf-8-decode-without-bom③\">UTF-8 decode without BOM</a> on <var>cookie</var>’s <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#cookie-name\" id=\"ref-for-cookie-name③\">name</a>.</p>"
                     },
                     {
                       "html": "<p>If <var>cookieName</var> equals <var>subscription</var>’s <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#cookie-change-subscription-name\" id=\"ref-for-cookie-change-subscription-name①\">name</a>,\nthen <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">append</a> <var>change</var> to <var>changes</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">break</a>.</p>"
@@ -927,7 +886,7 @@
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p>Set <var>item</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://cookiestore.spec.whatwg.org/#dom-cookielistitem-value\" id=\"ref-for-dom-cookielistitem-value\">value</a></code>\"] to undefined.</p>"
+                  "html": "<p>Set <var>item</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://cookiestore.spec.whatwg.org/#dom-cookielistitem-value\" id=\"ref-for-dom-cookielistitem-value①\">value</a></code>\"] to undefined.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①③\">Append</a> <var>item</var> to <var>deletedList</var>.</p>"

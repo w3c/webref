@@ -730,7 +730,7 @@
         "href": "https://cookiestore.spec.whatwg.org/#dictdef-cookiestoredeleteoptions"
       },
       "CookieListItem": {
-        "fragment": "dictionary CookieListItem {\n  USVString name;\n  USVString value;\n  USVString? domain;\n  USVString path;\n  DOMHighResTimeStamp? expires;\n  boolean secure;\n  CookieSameSite sameSite;\n  boolean partitioned;\n};",
+        "fragment": "dictionary CookieListItem {\n  USVString name;\n  USVString value;\n};",
         "type": "dictionary",
         "name": "CookieListItem",
         "inheritance": null,
@@ -766,102 +766,6 @@
             "default": null,
             "required": false,
             "href": "https://cookiestore.spec.whatwg.org/#dom-cookielistitem-value"
-          },
-          {
-            "type": "field",
-            "name": "domain",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://cookiestore.spec.whatwg.org/#dom-cookielistitem-domain"
-          },
-          {
-            "type": "field",
-            "name": "path",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://cookiestore.spec.whatwg.org/#dom-cookielistitem-path"
-          },
-          {
-            "type": "field",
-            "name": "expires",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "DOMHighResTimeStamp"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://cookiestore.spec.whatwg.org/#dom-cookielistitem-expires"
-          },
-          {
-            "type": "field",
-            "name": "secure",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://cookiestore.spec.whatwg.org/#dom-cookielistitem-secure"
-          },
-          {
-            "type": "field",
-            "name": "sameSite",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "CookieSameSite"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://cookiestore.spec.whatwg.org/#dom-cookielistitem-samesite"
-          },
-          {
-            "type": "field",
-            "name": "partitioned",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://cookiestore.spec.whatwg.org/#dom-cookielistitem-partitioned"
           }
         ],
         "extAttrs": [],
@@ -1585,10 +1489,7 @@
         "CookieSameSite"
       ],
       "CookieStoreDeleteOptions": [],
-      "CookieListItem": [
-        "DOMHighResTimeStamp",
-        "CookieSameSite"
-      ],
+      "CookieListItem": [],
       "CookieStoreManager": [
         "CookieStoreGetOptions"
       ],
