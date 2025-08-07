@@ -5,6 +5,143 @@
   },
   "algorithms": [
     {
+      "name": "declarative push message parser",
+      "href": "https://www.w3.org/TR/push-api/#dfn-declarative-push-message-parser",
+      "html": "The <dfn id=\"dfn-declarative-push-message-parser\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">declarative push message parser</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a>\n            <var>bytes</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\">origin</a> <var>origin</var>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var>baseURL</var>, and\n            <a data-link-type=\"typedef\" data-lt=\"EpochTimeStamp\" href=\"https://www.w3.org/TR/hr-time-3/#dom-epochtimestamp\"><code>EpochTimeStamp</code></a> <var>fallbackTimestamp</var> runs these steps. They return failure\n            or a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/push-api/#dfn-declarative-push-message-parser-result\" class=\"internalDFN\" id=\"ref-for-dfn-declarative-push-message-parser-result-1\">declarative push message parser result</a>.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>\n                Let <var>message</var> be the result of <a data-link-type=\"dfn\" data-lt=\"parse JSON bytes to an Infra value\" href=\"https://infra.spec.whatwg.org/#parse-json-bytes-to-an-infra-value\">parsing JSON bytes to an Infra value</a> given <var>bytes</var>. If that throws\n                an exception, then return failure.\n              </p>"
+        },
+        {
+          "html": "<p data-cite=\"INFRA\">\n                If <var>message</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>, then return failure.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>message</var>[\"<code>web_push</code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a> or is not 8030, then\n                return failure.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>message</var>[\"<code>notification</code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, then return\n                failure.\n              </p>"
+        },
+        {
+          "html": "<p>\n                Let <var>notificationInput</var> be <var>message</var>[\"<code>notification</code>\"].\n              </p>"
+        },
+        {
+          "html": "<p data-cite=\"INFRA\">\n                If <var>notificationInput</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>, then return failure.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>notificationInput</var>[\"<code>title</code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a> or is not a\n                string, then return failure.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>notificationInput</var>[\"<code>navigate</code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a> or is not a\n                string, then return failure.\n              </p>"
+        },
+        {
+          "html": "<p>\n                Let <var>notificationTitle</var> be <var>notificationInput</var>[\"<code>title</code>\"].\n              </p>"
+        },
+        {
+          "html": "<p>\n                Let <var>notificationOptions</var> be a <a data-link-type=\"dictionary\" data-lt=\"NotificationOptions\" href=\"https://notifications.spec.whatwg.org/#dictdef-notificationoptions\"><code>NotificationOptions</code></a> dictionary.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>notificationInput</var>[\"<code>dir</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is \"<code>auto</code>\", \"<code>ltr</code>\",\n                or \"<code>rtl</code>\", then set <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-dir\"><code>dir</code></a>\"]\n                to <var>notificationInput</var>[\"<code>dir</code>\"].\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>notificationInput</var>[\"<code>lang</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a string, then set\n                <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-lang\"><code>lang</code></a>\"] to\n                <var>notificationInput</var>[\"<code>lang</code>\"].\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>notificationInput</var>[\"<code>body</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a string, then set\n                <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-body\"><code>body</code></a>\"] to\n                <var>notificationInput</var>[\"<code>body</code>\"].\n              </p>"
+        },
+        {
+          "html": "<p>\n                Set <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-navigate\"><code>navigate</code></a>\"] to\n                <var>notificationInput</var>[\"<code>navigate</code>\"], <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\">converted</a>.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>notificationInput</var>[\"<code>tag</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a string, then set\n                <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-tag\"><code>tag</code></a>\"] to\n                <var>notificationInput</var>[\"<code>tag</code>\"].\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>notificationInput</var>[\"<code>image</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a string, then set\n                <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-image\"><code>image</code></a>\"] to\n                <var>notificationInput</var>[\"<code>image</code>\"], <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\">converted</a>.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>notificationInput</var>[\"<code>icon</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a string, then set\n                <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-icon\"><code>icon</code></a>\"] to\n                <var>notificationInput</var>[\"<code>icon</code>\"], <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\">converted</a>.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>notificationInput</var>[\"<code>badge</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a string, then set\n                <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-badge\"><code>badge</code></a>\"] to\n                <var>notificationInput</var>[\"<code>badge</code>\"], <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\">converted</a>.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>notificationInput</var>[\"<code>vibrate</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> of\n                which each <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\">item</a> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\">32-bit unsigned integer</a>, then set\n                <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-vibrate\"><code>vibrate</code></a>\"] to\n                <var>notificationInput</var>[\"<code>vibrate</code>\"].\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>notificationInput</var>[\"<code>timestamp</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#64-bit-unsigned-integer\">64-bit unsigned integer</a>, then set\n                <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-timestamp\"><code>timestamp</code></a>\"] to\n                <var>notificationInput</var>[\"<code>timestamp</code>\"].\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>notificationInput</var>[\"<code>renotify</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a boolean, then\n                set <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-renotify\"><code>renotify</code></a>\"] to\n                <var>notificationInput</var>[\"<code>renotify</code>\"].\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>notificationInput</var>[\"<code>silent</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a boolean, then\n                set <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-silent\"><code>silent</code></a>\"] to\n                <var>notificationInput</var>[\"<code>silent</code>\"].\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>notificationInput</var>[\"<code>requireInteraction</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a\n                boolean, then set\n                <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-requireinteraction\"><code>requireInteraction</code></a>\"] to\n                <var>notificationInput</var>[\"<code>requireInteraction</code>\"].\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>notificationInput</var>[\"<code>data</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>, then set\n                <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-data\"><code>data</code></a>\"] to the result of\n                running <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#convert-an-infra-value-to-a-json-compatible-javascript-value\">convert an Infra value to a JSON-compatible JavaScript value</a> given\n                <var>notificationInput</var>[\"<code>data</code>\"].\n              </p>"
+        },
+        {
+          "html": "If <var>notificationInput</var>[\"<code>actions</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>\n                    Let <var>notificationActions</var> be « ».\n                  </p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var>actionInput</var> of\n                    <var>notificationInput</var>[\"<code>actions</code>\"]:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>\n                        If <var>actionInput</var>[\"<code>action</code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a> or is not a\n                        string, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>.\n                      </p>"
+                },
+                {
+                  "html": "<p>\n                        If <var>actionInput</var>[\"<code>title</code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a> or is not a\n                        string, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>.\n                      </p>"
+                },
+                {
+                  "html": "<p>\n                        If <var>actionInput</var>[\"<code>navigate</code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a> or is not a\n                        string, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>.\n                      </p>"
+                },
+                {
+                  "html": "<p>\n                        Let <var>actionNavigate</var> be <var>actionInput</var>[\"<code>navigate</code>\"],\n                        <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\">converted</a>.\n                      </p>"
+                },
+                {
+                  "html": "<p>\n                        Let <var>notificationAction</var> be the <a data-link-type=\"dictionary\" data-lt=\"NotificationAction\" href=\"https://notifications.spec.whatwg.org/#dictdef-notificationaction\"><code>NotificationAction</code></a> dictionary\n                        «[ \"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationaction-action\"><code>action</code></a>\" → <var>actionInput</var>[\"<code>action</code>\"],\n                        \"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationaction-title\"><code>title</code></a>\" → <var>actionInput</var>[\"<code>title</code>\"],\n                        \"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationaction-navigate\"><code>navigate</code></a>\" → <var>actionNavigate</var> ]».\n                      </p>"
+                },
+                {
+                  "html": "<p>\n                        If <var>actionInput</var>[\"<code>icon</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a string, then\n                        set <var>notificationAction</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationaction-icon\"><code>icon</code></a>\"] to\n                        <var>actionInput</var>[\"<code>icon</code>\"], <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\">converted</a>.\n                      </p>"
+                },
+                {
+                  "html": "<p>\n                        <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var>notificationAction</var> to\n                        <var>notificationActions</var>.\n                      </p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>\n                    Set <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-actions\"><code>actions</code></a>\"] to\n                    <var>notificationActions</var>.\n                  </p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>\n                Let <var>notification</var> be the result of <a data-lt=\"create a notification\" data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#create-a-notification\">creating a notification</a> given\n                <var>notificationTitle</var>, <var>notificationOptions</var>, <var>origin</var>,\n                <var>baseURL</var>, and <var>fallbackTimestamp</var>. If this throws an exception,\n                then return failure.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>notification</var>'s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#notification-navigation-url\">navigation URL</a> is null, then return\n                failure.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#notification-action-navigation-url\">navigation URL</a> of any <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#action\">notification action</a> of\n                <var>notification</var>'s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#actions\">actions</a> is null, then return failure.\n              </p>"
+        },
+        {
+          "html": "<p>\n                Let <var>mutable</var> be false.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var>message</var>[\"<code>mutable</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and\n                <var>message</var>[\"<code>mutable</code>\"] is a boolean, then set <var>mutable</var> to\n                <var>message</var>[\"<code>mutable</code>\"].\n              </p>"
+        },
+        {
+          "html": "<p>\n                Return (<var>notification</var>, <var>mutable</var>).\n              </p>"
+        }
+      ]
+    },
+    {
       "name": "create a push subscription",
       "href": "https://www.w3.org/TR/push-api/#dfn-create-a-push-subscription",
       "html": "To <dfn id=\"dfn-create-a-push-subscription\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">create a push subscription</dfn>, given an <a data-link-type=\"idl\" data-lt=\"PushSubscriptionOptionsInit\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscriptionoptionsinit\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscriptionoptionsinit-1\"><code>PushSubscriptionOptionsInit</code></a>\n          <var data-type=\"PushSubscriptionOptionsInit\">optionsDictionary</var>:",
@@ -26,7 +163,7 @@
           "html": "Generate a new authentication secret, which is a sequence of octets as defined in\n          [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/push-api/#bib-rfc8291\" title=\"Message Encryption for Web Push\">RFC8291</a></cite>]. Store the authentication secret in an internal slot on <var data-type=\"PushSubscription\">subscription</var>. This\n          key can be retrieved by calling the <a data-link-type=\"idl\" data-lt=\"getKey()\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscription-getkey\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscription-getkey-2\"><code>getKey</code></a><code>()</code> method of the\n          <a data-link-type=\"idl\" data-lt=\"PushSubscription\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscription\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscription-5\"><code>PushSubscription</code></a> with an argument of \"<a data-link-type=\"idl\" href=\"https://www.w3.org/TR/push-api/#dom-pushencryptionkeyname-auth\" class=\"internalDFN\" id=\"ref-for-dom-pushencryptionkeyname-auth-1\"><code>auth</code></a>\"."
         },
         {
-          "html": "Request a new <a href=\"https://www.w3.org/TR/push-api/#dfn-push-subscription\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-subscription-12\">push subscription</a>. Include the\n          <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscriptionoptions-applicationserverkey\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscriptionoptions-applicationserverkey-1\"><code>applicationServerKey</code></a> attribute of <var data-type=\"PushSubscriptionOptions\">options</var> when it has been\n          set. Rethrow any <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exceptions</a>."
+          "html": "Request a new <a href=\"https://www.w3.org/TR/push-api/#dfn-push-subscription\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-subscription-12\">push subscription</a>. Include the\n          <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscriptionoptions-applicationserverkey\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscriptionoptions-applicationserverkey-1\"><code>applicationServerKey</code></a> attribute of <var data-type=\"PushSubscriptionOptions\">options</var> when it has been\n          set. Rethrow any <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exceptions</a>."
         },
         {
           "html": "When the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-subscription\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-subscription-13\">push subscription</a> request has completed successfully:",
@@ -52,70 +189,70 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+          "html": "Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
         },
         {
-          "html": "Let <var>global</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>' <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>."
+          "html": "Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>' <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>."
         },
         {
-          "html": "Return <var>promise</var> and continue <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>."
+          "html": "Return <var>promise</var> and continue <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>."
         },
         {
-          "html": "If the <var>options</var> argument has a <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscriptionoptionsinit-uservisibleonly\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscriptionoptionsinit-uservisibleonly-3\"><code>userVisibleOnly</code></a> value\n        set to <code>false</code> and the user agent requires it to be <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using <var>global</var> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\"\n        <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>"
+          "html": "If the <var>options</var> argument has a <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscriptionoptionsinit-uservisibleonly\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscriptionoptionsinit-uservisibleonly-3\"><code>userVisibleOnly</code></a> value\n        set to <code>false</code> and the user agent requires it to be <code>true</code>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the\n        <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> \"<a data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\"\n        <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>"
         },
         {
-          "html": "If the <var>options</var> argument does not include a non-null value for the\n        <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscriptionoptionsinit-applicationserverkey\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscriptionoptionsinit-applicationserverkey-2\"><code>applicationServerKey</code></a> member, and the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-service-23\">push service</a>\n        requires one to be given, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using\n        <var>global</var> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with a \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+          "html": "If the <var>options</var> argument does not include a non-null value for the\n        <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscriptionoptionsinit-applicationserverkey\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscriptionoptionsinit-applicationserverkey-2\"><code>applicationServerKey</code></a> member, and the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-service-23\">push service</a>\n        requires one to be given, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using\n        <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with a \"<a data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
         },
         {
           "html": "If the <var>options</var> argument includes a non-null value for the\n        <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscriptionoptions-applicationserverkey\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscriptionoptions-applicationserverkey-2\"><code>applicationServerKey</code></a> attribute, run the following sub-steps:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>options</var>'s <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscriptionoptionsinit-applicationserverkey\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscriptionoptionsinit-applicationserverkey-3\"><code>applicationServerKey</code></a> is a\n            <a data-link-type=\"idl\" data-lt=\"DOMString\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\"><code>DOMString</code></a>, set its value to an <a data-link-type=\"idl\" data-lt=\"ArrayBuffer\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\"><code>ArrayBuffer</code></a> containing the sequence of octets\n            that result from decoding <var>options</var>'s\n            <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscriptionoptionsinit-applicationserverkey\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscriptionoptionsinit-applicationserverkey-4\"><code>applicationServerKey</code></a> using the base64url encoding\n            [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/push-api/#bib-rfc7515\" title=\"JSON Web Signature (JWS)\">RFC7515</a></cite>]."
+              "html": "If <var>options</var>'s <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscriptionoptionsinit-applicationserverkey\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscriptionoptionsinit-applicationserverkey-3\"><code>applicationServerKey</code></a> is a\n            <a data-link-type=\"interface\" data-lt=\"DOMString\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\"><code>DOMString</code></a>, set its value to an <a data-link-type=\"interface\" data-lt=\"ArrayBuffer\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\"><code>ArrayBuffer</code></a> containing the sequence of octets\n            that result from decoding <var>options</var>'s\n            <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscriptionoptionsinit-applicationserverkey\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscriptionoptionsinit-applicationserverkey-4\"><code>applicationServerKey</code></a> using the base64url encoding\n            [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/push-api/#bib-rfc7515\" title=\"JSON Web Signature (JWS)\">RFC7515</a></cite>]."
             },
             {
-              "html": "If decoding fails, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using\n            <var>global</var> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with an \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidcharactererror\"><code>InvalidCharacterError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>\n            and terminate these steps."
+              "html": "If decoding fails, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using\n            <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with an \"<a data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidcharactererror\"><code>InvalidCharacterError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>\n            and terminate these steps."
             },
             {
-              "html": "Ensure that <var>options</var>'s <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscriptionoptionsinit-applicationserverkey\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscriptionoptionsinit-applicationserverkey-5\"><code>applicationServerKey</code></a>\n            describes a valid point on the P-256 curve. If its value is invalid, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using <var>global</var> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with an\n            \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\"><code>InvalidAccessError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and terminate these steps."
+              "html": "Ensure that <var>options</var>'s <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscriptionoptionsinit-applicationserverkey\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscriptionoptionsinit-applicationserverkey-5\"><code>applicationServerKey</code></a>\n            describes a valid point on the P-256 curve. If its value is invalid, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with an\n            \"<a data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\"><code>InvalidAccessError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and terminate these steps."
             }
           ]
         },
         {
-          "html": "Let <var data-type=\"ServiceWorkerRegistration\">registration</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s associated <a data-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-registration\">service worker\n        registration</a>."
+          "html": "Let <var data-type=\"ServiceWorkerRegistration\">registration</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-registration\">service worker\n        registration</a>."
         },
         {
-          "html": "If <var data-type=\"ServiceWorkerRegistration\">registration</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-active-worker\">active worker</a> is null, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using <var>global</var> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with\n        an \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and terminate these steps."
+          "html": "If <var data-type=\"ServiceWorkerRegistration\">registration</var>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-active-worker\">active worker</a> is null, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with\n        an \"<a data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and terminate these steps."
         },
         {
-          "html": "Let <var>permission</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-request-permission-to-use\">request permission to use</a> \"push\"."
+          "html": "Let <var>permission</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-request-permission-to-use\">request permission to use</a> \"push\"."
         },
         {
-          "html": "If <var>permission</var> is \"<a data-link-type=\"idl\" data-type=\"enum-value\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate-denied\"><code>denied</code></a>\", <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a> using <var>global</var> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with a\n        \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and terminate these steps."
+          "html": "If <var>permission</var> is \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate-denied\"><code>denied</code></a>\", <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a> using <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with a\n        \"<a data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and terminate these steps."
         },
         {
           "html": "If <var data-type=\"ServiceWorkerRegistration\">registration</var> has a <a href=\"https://www.w3.org/TR/push-api/#dfn-push-subscription\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-subscription-49\">push subscription</a>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>subscription</var> be the result of obtaining <var data-type=\"ServiceWorkerRegistration\">registration</var>'s <a href=\"https://www.w3.org/TR/push-api/#dfn-push-subscription\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-subscription-50\">push\n            subscription</a>. If there is an error, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using <var>global</var> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with an \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\"\n            <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and terminate these steps."
+              "html": "Let <var>subscription</var> be the result of obtaining <var data-type=\"ServiceWorkerRegistration\">registration</var>'s <a href=\"https://www.w3.org/TR/push-api/#dfn-push-subscription\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-subscription-50\">push\n            subscription</a>. If there is an error, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with an \"<a data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\"\n            <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and terminate these steps."
             },
             {
-              "html": "Compare the <var>options</var> argument with the <code>options</code> attribute of <var>subscription</var>. The\n            contents of <a data-link-type=\"idl\" data-lt=\"BufferSource\" data-type=\"typedef\" href=\"https://webidl.spec.whatwg.org/#BufferSource\"><code>BufferSource</code></a> values are compared for equality rather than\n            <a data-link-type=\"dfn|abstract-op\" data-lt=\"reference record\" data-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-reference-record-specification-type\">reference</a>."
+              "html": "Compare the <var>options</var> argument with the <code>options</code> attribute of <var>subscription</var>. The\n            contents of <a data-link-type=\"typedef\" data-lt=\"BufferSource\" href=\"https://webidl.spec.whatwg.org/#BufferSource\"><code>BufferSource</code></a> values are compared for equality rather than\n            <a data-link-type=\"dfn\" data-lt=\"reference record\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-reference-record-specification-type\">reference</a>."
             },
             {
-              "html": "If any attribute on <var>options</var> contains a different value to that stored for\n            <var>subscription</var>, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using\n            <var>global</var> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with an \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and\n            terminate these steps."
+              "html": "If any attribute on <var>options</var> contains a different value to that stored for\n            <var>subscription</var>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using\n            <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with an \"<a data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and\n            terminate these steps."
             },
             {
-              "html": "When the request has been completed, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using <var>global</var> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <var>promise</var> with <var>subscription</var> and terminate\n            these steps."
+              "html": "When the request has been completed, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <var>promise</var> with <var>subscription</var> and terminate\n            these steps."
             }
           ]
         },
         {
-          "html": "Let <var>subscription</var> be the result of trying to <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/push-api/#dfn-create-a-push-subscription\" class=\"internalDFN\" id=\"ref-for-dfn-create-a-push-subscription-2\">create a push subscription</a> with\n        <var>options</var>. If creating the subscription <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throws</a> an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using <var>global</var> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with\n        a that <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a> and terminate these these steps."
+          "html": "Let <var>subscription</var> be the result of trying to <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/push-api/#dfn-create-a-push-subscription\" class=\"internalDFN\" id=\"ref-for-dfn-create-a-push-subscription-2\">create a push subscription</a> with\n        <var>options</var>. If creating the subscription <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throws</a> an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with\n        a that <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a> and terminate these these steps."
         },
         {
-          "html": "Otherwise, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using <var>global</var> to\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <var>promise</var> with a <a data-link-type=\"idl\" data-lt=\"PushSubscription\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscription\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscription-15\"><code>PushSubscription</code></a> providing the details of the new\n        <var>subscription</var>."
+          "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using <var>global</var> to\n        <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <var>promise</var> with a <a data-link-type=\"idl\" data-lt=\"PushSubscription\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscription\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscription-15\"><code>PushSubscription</code></a> providing the details of the new\n        <var>subscription</var>."
         }
       ]
     },
@@ -126,19 +263,19 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>promise</var> be <a data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+          "html": "Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
         },
         {
           "html": "Return <var>promise</var> and continue the following steps asynchronously."
         },
         {
-          "html": "If the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker\">Service Worker</a> is not subscribed, resolve <var>promise</var> with null."
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker\">Service Worker</a> is not subscribed, resolve <var>promise</var> with null."
         },
         {
-          "html": "Retrieve the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-subscription\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-subscription-51\">push subscription</a> associated with the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker\">Service Worker</a>."
+          "html": "Retrieve the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-subscription\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-subscription-51\">push subscription</a> associated with the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker\">Service Worker</a>."
         },
         {
-          "html": "If there is an error, reject <var>promise</var> with a <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> whose name is\n        \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\" and terminate these steps."
+          "html": "If there is an error, reject <var>promise</var> with a <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> whose name is\n        \"<a data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\" and terminate these steps."
         },
         {
           "html": "When the request has been completed, resolve <var>promise</var> with a <a data-link-type=\"idl\" data-lt=\"PushSubscription\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscription\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscription-16\"><code>PushSubscription</code></a>\n        providing the details of the retrieved <a href=\"https://www.w3.org/TR/push-api/#dfn-push-subscription\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-subscription-52\">push subscription</a>."
@@ -152,16 +289,16 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>promise</var> be <a data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+          "html": "Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
         },
         {
           "html": "Return <var>promise</var> and continue the following steps asynchronously."
         },
         {
-          "html": "Let <var>descriptor</var> be a new <a data-link-type=\"idl\" data-lt=\"PermissionDescriptor\" data-type=\"dictionary\" href=\"https://www.w3.org/TR/permissions/#dom-permissiondescriptor\"><code>PermissionDescriptor</code></a> with the\n        <a data-link-type=\"idl\" data-type=\"dict-member\" href=\"https://www.w3.org/TR/permissions/#dom-permissiondescriptor-name\"><code>name</code></a> initialized to \"push\"."
+          "html": "Let <var>descriptor</var> be a new <a data-link-type=\"dictionary\" data-lt=\"PermissionDescriptor\" href=\"https://www.w3.org/TR/permissions/#dom-permissiondescriptor\"><code>PermissionDescriptor</code></a> with the\n        <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/permissions/#dom-permissiondescriptor-name\"><code>name</code></a> initialized to \"push\"."
         },
         {
-          "html": "let <var>state</var> be the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-state\">permission state</a> of <var>descriptor</var> and the result."
+          "html": "let <var>state</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-state\">permission state</a> of <var>descriptor</var> and the result."
         },
         {
           "html": "Resolve <var>promise</var> with <var>state</var>."
@@ -181,13 +318,13 @@
           "html": "If a slot was not found, return <code>null</code>."
         },
         {
-          "html": "Initialize a variable <var>key</var> with a newly instantiated <a data-link-type=\"idl\" data-lt=\"ArrayBuffer\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\"><code>ArrayBuffer</code></a> instance."
+          "html": "Initialize a variable <var>key</var> with a newly instantiated <a data-link-type=\"interface\" data-lt=\"ArrayBuffer\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\"><code>ArrayBuffer</code></a> instance."
         },
         {
           "html": "If the internal slot contains an asymmetric key pair, set the contents of <var>key</var> to the\n        serialized value of the public key from the key pair. This uses the serialization format\n        described in the specification that defines the name. For example, [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/push-api/#bib-rfc8291\" title=\"Message Encryption for Web Push\">RFC8291</a></cite>] specifies\n        that the \"<a data-link-type=\"idl\" href=\"https://www.w3.org/TR/push-api/#dom-pushencryptionkeyname-p256dh\" class=\"internalDFN\" id=\"ref-for-dom-pushencryptionkeyname-p256dh-3\"><code>p256dh</code></a>\" public key is encoded using the uncompressed\n        format defined in [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/push-api/#bib-ansi-x9-62\" title=\"Public Key Cryptography for the Financial Services Industry, The Elliptic Curve Digital Signature Algorithm (ECDSA)\">ANSI-X9-62</a></cite>] Annex A (that is, a 65 octet sequence that starts with a\n        0x04 octet)."
         },
         {
-          "html": "Otherwise, if the internal slot contains a symmetric key, set the contents of <var>key</var> to\n        a copy of the value from the internal slot. For example, the <code>auth</code> parameter contains an\n        octet sequence used by the <a href=\"https://www.w3.org/TR/push-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-46\">user agent</a> to authenticate messages sent by an\n        <a href=\"https://www.w3.org/TR/push-api/#dfn-application-server\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-application-server-24\">application server</a>."
+          "html": "Otherwise, if the internal slot contains a symmetric key, set the contents of <var>key</var> to\n        a copy of the value from the internal slot. For example, the <code>auth</code> parameter contains an\n        octet sequence used by the <a href=\"https://www.w3.org/TR/push-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-46\">user agent</a> to authenticate messages sent by an\n        <a href=\"https://www.w3.org/TR/push-api/#dfn-application-server\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-application-server-25\">application server</a>."
         },
         {
           "html": "Return <var>key</var>."
@@ -201,7 +338,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>promise</var> be <a data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+          "html": "Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
         },
         {
           "html": "Return <var>promise</var> and continue the following steps asynchronously."
@@ -214,7 +351,7 @@
           "rationale": "deactivate",
           "steps": [
             {
-              "html": "<a href=\"https://www.w3.org/TR/push-api/#dfn-deactivate\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-deactivate-9\">Deactivate</a> the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-subscription\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-subscription-65\">push subscription</a>. The <a href=\"https://www.w3.org/TR/push-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-47\">user agent</a> <em class=\"rfc2119\">MUST NOT</em>\n              deliver any further <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-34\">push messages</a> for the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-subscription\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-subscription-66\">push subscription</a>.\n              <p>\n                If the <a href=\"https://www.w3.org/TR/push-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-48\">user agent</a> failed to request the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-service-27\">push service</a> to\n                <a href=\"https://www.w3.org/TR/push-api/#dfn-deactivate\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-deactivate-10\">deactivate</a> the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-subscription\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-subscription-67\">push subscription</a>, for example because of network\n                failures, it <em class=\"rfc2119\">SHOULD</em> retry the request to the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-service-28\">push service</a> for a reasonable\n                amount of time.\n              </p>"
+              "html": "<a href=\"https://www.w3.org/TR/push-api/#dfn-deactivate\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-deactivate-9\">Deactivate</a> the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-subscription\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-subscription-65\">push subscription</a>. The <a href=\"https://www.w3.org/TR/push-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-47\">user agent</a> <em class=\"rfc2119\">MUST NOT</em>\n              deliver any further <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-37\">push messages</a> for the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-subscription\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-subscription-66\">push subscription</a>.\n              <p>\n                If the <a href=\"https://www.w3.org/TR/push-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-48\">user agent</a> failed to request the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-service-27\">push service</a> to\n                <a href=\"https://www.w3.org/TR/push-api/#dfn-deactivate\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-deactivate-10\">deactivate</a> the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-subscription\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-subscription-67\">push subscription</a>, for example because of network\n                failures, it <em class=\"rfc2119\">SHOULD</em> retry the request to the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-service-28\">push service</a> for a reasonable\n                amount of time.\n              </p>"
             }
           ]
         },
@@ -233,10 +370,10 @@
           "html": "Let <var data-type=\"PushSubscriptionJSON\">json</var> be a new <a data-link-type=\"idl\" data-lt=\"PushSubscriptionJSON\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscriptionjson\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscriptionjson-3\"><code>PushSubscriptionJSON</code></a> dictionary."
         },
         {
-          "html": "Set <var data-type=\"PushSubscriptionJSON\">json</var>[\"endpoint\"] to the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/push-api/#dfn-getting-the-endpoint-attribute\" class=\"internalDFN\" id=\"ref-for-dfn-getting-the-endpoint-attribute-1\">getting the <code>endpoint</code> attribute</a> of\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+          "html": "Set <var data-type=\"PushSubscriptionJSON\">json</var>[\"endpoint\"] to the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/push-api/#dfn-getting-the-endpoint-attribute\" class=\"internalDFN\" id=\"ref-for-dfn-getting-the-endpoint-attribute-1\">getting the <code>endpoint</code> attribute</a> of\n        <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
         },
         {
-          "html": "Set <var data-type=\"PushSubscriptionJSON\">json</var>[\"expirationTime\"] to the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/push-api/#dfn-getting-the-expirationtime-attribute\" class=\"internalDFN\" id=\"ref-for-dfn-getting-the-expirationtime-attribute-1\">getting the <code>expirationTime</code> attribute</a> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+          "html": "Set <var data-type=\"PushSubscriptionJSON\">json</var>[\"expirationTime\"] to the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/push-api/#dfn-getting-the-expirationtime-attribute\" class=\"internalDFN\" id=\"ref-for-dfn-getting-the-expirationtime-attribute-1\">getting the <code>expirationTime</code> attribute</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
         },
         {
           "html": "Let <var>keys</var> be a new empty instance of <code>record&lt;DOMString, USVString&gt;</code> ."
@@ -252,7 +389,7 @@
               "html": "Otherwise, let <var>b</var> be the value as returned by <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscription-getkey\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscription-getkey-7\"><code>getKey</code></a>."
             },
             {
-              "html": "Let <var>s</var> be the URL-safe base64 encoding without padding [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/push-api/#bib-rfc4648\" title=\"The Base16, Base32, and Base64 Data Encodings\">RFC4648</a></cite>] of <var>b</var> as a\n            <a data-link-type=\"idl\" data-lt=\"USVString\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\"><code>USVString</code></a>. The <a href=\"https://www.w3.org/TR/push-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-49\">user agent</a> <em class=\"rfc2119\">MUST</em> use a serialization method that does not\n            branch based on the value of <var>b</var>."
+              "html": "Let <var>s</var> be the URL-safe base64 encoding without padding [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/push-api/#bib-rfc4648\" title=\"The Base16, Base32, and Base64 Data Encodings\">RFC4648</a></cite>] of <var>b</var> as a\n            <a data-link-type=\"interface\" data-lt=\"USVString\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\"><code>USVString</code></a>. The <a href=\"https://www.w3.org/TR/push-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-49\">user agent</a> <em class=\"rfc2119\">MUST</em> use a serialization method that does not\n            branch based on the value of <var>b</var>."
             },
             {
               "html": "Set <var>keys</var>[<var>i</var>] to <var>s</var>."
@@ -277,7 +414,7 @@
           "html": "Let <var>bytes</var> be an empty byte sequence."
         },
         {
-          "html": "Switch on <var>object</var>'s type:\n          <dl data-cite=\"WebIDL\">\n            <dt>\n              <a data-link-type=\"idl\" data-lt=\"BufferSource\" data-type=\"typedef\" href=\"https://webidl.spec.whatwg.org/#BufferSource\"><code>BufferSource</code></a>\n            </dt>\n            <dd>\n              Set <var>bytes</var> to a copy of <var>object</var>'s contents.\n            </dd>\n            <dt>\n              <a data-link-type=\"idl\" data-lt=\"USVString\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\"><code>USVString</code></a>\n            </dt>\n            <dd data-cite=\"encoding\">\n              Set <var>bytes</var> to the result of running <a data-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\">utf-8 encode</a> on <var>object</var>.\n            </dd>\n          </dl>"
+          "html": "Switch on <var>object</var>'s type:\n          <dl data-cite=\"WEBIDL\">\n            <dt>\n              <a data-link-type=\"typedef\" data-lt=\"BufferSource\" href=\"https://webidl.spec.whatwg.org/#BufferSource\"><code>BufferSource</code></a>\n            </dt>\n            <dd>\n              Set <var>bytes</var> to a copy of <var>object</var>'s contents.\n            </dd>\n            <dt>\n              <a data-link-type=\"interface\" data-lt=\"USVString\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\"><code>USVString</code></a>\n            </dt>\n            <dd data-cite=\"ENCODING\">\n              Set <var>bytes</var> to the result of running <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\">utf-8 encode</a> on <var>object</var>.\n            </dd>\n          </dl>"
         },
         {
           "html": "Return <var>bytes</var>."
@@ -287,7 +424,7 @@
     {
       "name": "PushEvent/constructor()",
       "href": "https://www.w3.org/TR/push-api/#dom-pushevent-constructor",
-      "html": "When a <dfn data-export=\"\" data-dfn-type=\"constructor\" id=\"dom-pushevent-constructor\" data-idl=\"constructor\" data-title=\"constructor\" data-dfn-for=\"PushEvent\" data-lt=\"constructor()|constructor(type)|constructor(type, eventInitDict)\" data-local-lt=\"PushEvent.constructor|PushEvent.constructor()|constructor\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>constructor</code></dfn> of the <a href=\"https://www.w3.org/TR/push-api/#dom-pushevent\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-pushevent-2\"><code>PushEvent</code></a> interface, or of an interface that\n          inherits from the <a href=\"https://www.w3.org/TR/push-api/#dom-pushevent\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-pushevent-3\"><code>PushEvent</code></a> interface, is invoked, the usual <a data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-constructor-ext\">event constructing\n          steps</a> are extended to include the following steps:",
+      "html": "When a <dfn data-export=\"\" data-dfn-type=\"constructor\" id=\"dom-pushevent-constructor\" data-idl=\"constructor\" data-title=\"constructor\" data-dfn-for=\"PushEvent\" data-lt=\"constructor()|constructor(type)|constructor(type, eventInitDict)\" data-local-lt=\"PushEvent.constructor|PushEvent.constructor()|constructor\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>constructor</code></dfn> of the <a href=\"https://www.w3.org/TR/push-api/#dom-pushevent\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-pushevent-2\"><code>PushEvent</code></a> interface, or of an interface that\n          inherits from the <a href=\"https://www.w3.org/TR/push-api/#dom-pushevent\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-pushevent-3\"><code>PushEvent</code></a> interface, is invoked, the usual <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-constructor-ext\">event constructing\n          steps</a> are extended to include the following steps:",
       "rationale": "if",
       "steps": [
         {
@@ -297,16 +434,16 @@
           "html": "Set <var>b</var> to the result of <a data-lt=\"extract a byte sequence\" href=\"https://www.w3.org/TR/push-api/#dfn-extract-a-byte-sequence\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-extract-a-byte-sequence-1\">extracting a byte\n          sequence</a> from the \"<code>data</code>\" member of <var>eventInitDict</var>."
         },
         {
-          "html": "Set the <code>data</code> attribute of the event to a new <a href=\"https://www.w3.org/TR/push-api/#dom-pushmessagedata\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-pushmessagedata-4\"><code>PushMessageData</code></a> instance with\n          <code>bytes</code> set to <var>b</var>."
+          "html": "Set the <code>data</code> attribute of the event to a new <a data-link-type=\"idl\" data-lt=\"PushMessageData\" href=\"https://www.w3.org/TR/push-api/#dom-pushmessagedata\" class=\"internalDFN\" id=\"ref-for-dom-pushmessagedata-4\"><code>PushMessageData</code></a> instance whose\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/push-api/#dfn-bytes\" class=\"internalDFN\" id=\"ref-for-dfn-bytes-1\">bytes</a> is <var>b</var>."
         }
       ]
     },
     {
-      "html": "When the <a href=\"https://www.w3.org/TR/push-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-51\">user agent</a> receives a <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-39\">push message</a> from the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-service-29\">push service</a>,\n          it <em class=\"rfc2119\">MUST</em> run the following steps.",
+      "html": "When the <a href=\"https://www.w3.org/TR/push-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-50\">user agent</a> receives a <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-41\">push message</a> from the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-service-29\">push service</a>,\n          it <em class=\"rfc2119\">MUST</em> run the following steps.",
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>registration</var> be the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-registration\">service worker registration</a> corresponding to the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-40\">\n            push message</a>."
+          "html": "Let <var>registration</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-registration\">service worker registration</a> corresponding to the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-42\">\n            push message</a>."
         },
         {
           "html": "If <var>registration</var> is not found, abort these steps."
@@ -318,40 +455,120 @@
           "html": "Let <var>bytes</var> be null."
         },
         {
-          "html": "If the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-41\">push message</a> contains a payload:",
+          "html": "If the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-43\">push message</a> contains a payload:",
           "rationale": "decrypt",
           "steps": [
             {
-              "html": "Decrypt the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-42\">push message</a> payload using the private key from the key pair\n              associated with <var>subscription</var> and the process described in [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/push-api/#bib-rfc8291\" title=\"Message Encryption for Web Push\">RFC8291</a></cite>]. Set <var>bytes</var>\n              to the resulting <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a>."
+              "html": "Decrypt the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-44\">push message</a>'s payload using the private key from the key pair\n              associated with <var>subscription</var> and the process described in [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/push-api/#bib-rfc8291\" title=\"Message Encryption for Web Push\">RFC8291</a></cite>]. Set <var>bytes</var>\n              to the resulting <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a>."
             },
             {
-              "html": "If the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-43\">push message</a> payload could not be decrypted for any reason:",
-              "rationale": "acknowledge",
+              "html": "<p>\n                  If the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-45\">push message</a> payload could not be decrypted for any reason, then\n                  <a data-link-type=\"dfn|abstract-op\" data-lt=\"acknowledge a push message\" href=\"https://www.w3.org/TR/push-api/#dfn-acknowledge-a-push-message\" class=\"internalDFN\" id=\"ref-for-dfn-acknowledge-a-push-message-1\">acknowledge</a> the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-46\">push message</a> and abort\n                  these steps.\n                </p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>bytes</var> is non-null:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>\n                  Let <var>baseURL</var> be <var>registration</var>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-scope-url\">scope URL</a>.\n                </p>"
+            },
+            {
+              "html": "<p>\n                  Let <var>origin</var> be <var>baseURL</var>'s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\">origin</a>.\n                </p>"
+            },
+            {
+              "html": "<p>\n                  Let <var>fallbackTimestamp</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-wall-time\">current coarsened wall time</a>.\n                </p>"
+            },
+            {
+              "html": "<p>\n                  Let <var>declarativeResult</var> be the result of running the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/push-api/#dfn-declarative-push-message-parser\" class=\"internalDFN\" id=\"ref-for-dfn-declarative-push-message-parser-2\">declarative push message parser</a> given <var>bytes</var>, <var>origin</var>, <var>baseURL</var>, and <var>fallbackTimestamp</var>.\n                </p>"
+            },
+            {
+              "html": "If <var>declarativeResult</var> is not failure:",
+              "rationale": "let",
               "steps": [
                 {
-                  "html": "Acknowledge the receipt of the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-44\">push message</a> according to [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/push-api/#bib-rfc8030\" title=\"Generic Event Delivery Using HTTP Push\">RFC8030</a></cite>].\n                  Though the message was not successfully received and processed, this prevents the\n                  push service from attempting to retransmit the message; a badly encrypted message\n                  is not recoverable."
+                  "html": "<p>\n                      Let <var>notification</var> be <var>declarativeResult</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/push-api/#dfn-notification\" class=\"internalDFN\" id=\"ref-for-dfn-notification-1\">notification</a>.\n                    </p>"
                 },
                 {
-                  "html": "Abort these steps."
+                  "html": "<p>\n                      Set <var>notification</var>'s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#service-worker-registration\">service worker registration</a> to\n                      <var>registration</var>.\n                    </p>"
+                },
+                {
+                  "html": "<p>\n                      Let <var>notificationShown</var> be false.\n                    </p>"
+                },
+                {
+                  "html": "If <var>declarativeResult</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/push-api/#dfn-mutable\" class=\"internalDFN\" id=\"ref-for-dfn-mutable-1\">mutable</a>\n                      is true:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>\n                          Let <var>result</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"fire a push event\" href=\"https://www.w3.org/TR/push-api/#dfn-fire-a-push-event\" class=\"internalDFN\" id=\"ref-for-dfn-fire-a-push-event-1\">firing a push event</a>\n                          given <var>registration</var>, null, and a new <a data-link-type=\"interface\" data-lt=\"Notification\" href=\"https://notifications.spec.whatwg.org/#notification\"><code>Notification</code></a> object\n                          representing <var>notification</var>.\n                        </p>"
+                    },
+                    {
+                      "html": "<p>\n                          If <var>result</var> is not failure, then set <var>notificationShown</var> to <var>result</var>'s\n                          <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/push-api/#dfn-notification-shown\" class=\"internalDFN\" id=\"ref-for-dfn-notification-shown-1\">notification shown</a>.\n                        </p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>\n                      If <var>notificationShown</var> is false, then run the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#notification-show-steps\">notification show steps</a>\n                      given <var>notification</var>.\n                    </p>"
+                },
+                {
+                  "html": "<p>\n                      <a data-link-type=\"dfn|abstract-op\" data-lt=\"acknowledge a push message\" href=\"https://www.w3.org/TR/push-api/#dfn-acknowledge-a-push-message\" class=\"internalDFN\" id=\"ref-for-dfn-acknowledge-a-push-message-2\">Acknowledge</a> the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-48\">push message</a> and abort\n                      these steps.\n                    </p>"
                 }
               ]
             }
           ]
         },
         {
+          "html": "<p>\n              Let <var>data</var> be a new <a data-link-type=\"idl\" data-lt=\"PushMessageData\" href=\"https://www.w3.org/TR/push-api/#dom-pushmessagedata\" class=\"internalDFN\" id=\"ref-for-dom-pushmessagedata-5\"><code>PushMessageData</code></a> object whose <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/push-api/#dfn-bytes\" class=\"internalDFN\" id=\"ref-for-dfn-bytes-2\">bytes</a> is\n              <var>bytes</var> if <var>bytes</var> is non-null; otherwise null.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Let <var>result</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"fire a push event\" href=\"https://www.w3.org/TR/push-api/#dfn-fire-a-push-event\" class=\"internalDFN\" id=\"ref-for-dfn-fire-a-push-event-2\">firing a push event</a> given\n              <var>registration</var>, <var>data</var>, and null.\n            </p>"
+        },
+        {
+          "html": "<p>\n              If <var>result</var> is failure and the same <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-49\">push message</a> has been delivered\n              to a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-registration\">service worker registration</a> multiple times unsuccessfully, then\n              <a data-link-type=\"dfn|abstract-op\" data-lt=\"acknowledge a push message\" href=\"https://www.w3.org/TR/push-api/#dfn-acknowledge-a-push-message\" class=\"internalDFN\" id=\"ref-for-dfn-acknowledge-a-push-message-3\">acknowledge</a> the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-50\">push message</a>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              If <var>result</var> is not failure, then <a data-link-type=\"dfn|abstract-op\" data-lt=\"acknowledge a push message\" href=\"https://www.w3.org/TR/push-api/#dfn-acknowledge-a-push-message\" class=\"internalDFN\" id=\"ref-for-dfn-acknowledge-a-push-message-4\">acknowledge</a>\n              the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-51\">push message</a>.\n            </p>"
+        }
+      ]
+    },
+    {
+      "name": "fire a push event",
+      "href": "https://www.w3.org/TR/push-api/#dfn-fire-a-push-event",
+      "html": "To <dfn id=\"dfn-fire-a-push-event\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">fire a push event</dfn> given a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-registration\">service worker registration</a> <var>registration</var>,\n          <a data-link-type=\"idl\" data-lt=\"PushMessageData\" href=\"https://www.w3.org/TR/push-api/#dom-pushmessagedata\" class=\"internalDFN\" id=\"ref-for-dom-pushmessagedata-6\"><code>PushMessageData</code></a> object or null <var>data</var>, and a <a data-link-type=\"permission\" href=\"https://notifications.spec.whatwg.org/#permissiondef-notifications\">notification</a> or null\n          <var>notification</var>, run these steps. They return failure or a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/push-api/#dfn-push-event-result\" class=\"internalDFN\" id=\"ref-for-dfn-push-event-result-1\">push event result</a>.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>\n              Let <var>notificationResult</var> be null.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set <var>registration</var>'s <a data-link-type=\"dfn\" data-lt=\"has shownotification() been successfully invoked\" href=\"https://notifications.spec.whatwg.org/#service-worker-registration-has-shownotification-been-successfully-invoked\">has <code>showNotification()</code> been successfully invoked</a> to false.\n            </p>"
+        },
+        {
           "html": "Then run the following steps in parallel, with <var>dispatchedEvent</var>:",
           "rationale": "wait",
           "steps": [
             {
-              "html": "Wait for all of the promises in the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#extendableevent-extend-lifetime-promises\">extend lifetime promises</a>\n              of <var>dispatchedEvent</var> to resolve."
+              "html": "<p>\n                  Wait for all of the promises in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#extendableevent-extend-lifetime-promises\">extend lifetime promises</a>\n                  of <var>dispatchedEvent</var> to resolve.\n                </p>"
             },
             {
-              "html": "If all the promises resolve successfully, acknowledge the receipt of the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-46\">push\n              message</a> according to [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/push-api/#bib-rfc8030\" title=\"Generic Event Delivery Using HTTP Push\">RFC8030</a></cite>] and abort these steps."
+              "html": "<p>\n                  If they do not resolve successfully, then set <var>notificationResult</var> to failure.\n                </p>"
             },
             {
-              "html": "<p>\n                  If the same <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-47\">push message</a> has been delivered to a <a data-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-registration\">service worker\n                  registration</a> multiple times unsuccessfully, acknowledge the receipt of the\n                  <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-48\">push message</a> according to [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/push-api/#bib-rfc8030\" title=\"Generic Event Delivery Using HTTP Push\">RFC8030</a></cite>].\n                </p>\n                <p>\n                  Acknowledging the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-49\">push message</a> causes the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-service-30\">push service</a> to stop\n                  delivering the message and to report success to the <a href=\"https://www.w3.org/TR/push-api/#dfn-application-server\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-application-server-25\">application server</a>.\n                  This prevents the same <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-50\">push message</a> from being retried by the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-service-31\">push\n                  service</a> indefinitely.\n                </p>\n                <p>\n                  Acknowledging also means that an <a href=\"https://www.w3.org/TR/push-api/#dfn-application-server\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-application-server-26\">application server</a> could incorrectly\n                  receive a delivery receipt indicating successful delivery of the <a href=\"https://www.w3.org/TR/push-api/#dfn-push-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-push-message-51\">push\n                  message</a>. Therefore, multiple rejections <em class=\"rfc2119\">SHOULD</em> be permitted before\n                  acknowledging; allowing at least three attempts is recommended.\n                </p>"
+              "html": "<p>\n                  Otherwise, set <var>notificationResult</var> to <var>registration</var>'s <a data-link-type=\"dfn\" data-lt=\"has shownotification() been successfully invoked\" href=\"https://notifications.spec.whatwg.org/#service-worker-registration-has-shownotification-been-successfully-invoked\">has <code>showNotification()</code> been successfully invoked</a>.\n                </p>"
             }
           ]
+        },
+        {
+          "html": "<p>\n              Wait for <var>notificationResult</var> to be non-null.\n            </p>"
+        },
+        {
+          "html": "<p>\n              If <var>notificationResult</var> is failure, then return failure.\n            </p>"
+        },
+        {
+          "html": "<p>\n              <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var>notificationResult</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\">boolean</a>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Return (<var>notificationResult</var>).\n            </p>"
         }
       ]
     }

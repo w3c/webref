@@ -5,50 +5,21 @@
   },
   "links": {
     "rawlinks": {
-      "https://datatracker.ietf.org/doc/html/bcp14": {},
-      "https://dom.spec.whatwg.org/": {
-        "anchors": [
-          "concept-event-constructor-ext"
-        ]
-      },
-      "https://encoding.spec.whatwg.org/": {
-        "anchors": [
-          "utf-8-decode",
-          "utf-8-encode"
-        ]
-      },
+      "https://dom.spec.whatwg.org/": {},
+      "https://encoding.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://html.spec.whatwg.org/multipage/webappapis.html": {
-        "anchors": [
-          "event-handler-idl-attributes",
-          "event-handler-event-type"
-        ]
-      },
       "https://httpwg.org/specs/rfc7231.html": {},
-      "https://infra.spec.whatwg.org/": {
-        "anchors": [
-          "parse-json-bytes-to-a-javascript-value"
-        ]
-      },
+      "https://infra.spec.whatwg.org/": {},
       "https://notifications.spec.whatwg.org/": {},
       "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf": {},
       "https://tc39.es/ecma262/multipage/": {},
-      "https://webidl.spec.whatwg.org/": {
-        "anchors": [
-          "SecureContext",
-          "Exposed",
-          "SameObject",
-          "idl-frozen-array",
-          "idl-promise",
-          "a-new-promise",
-          "idl-record",
-          "dfn-json-types"
-        ]
-      },
+      "https://url.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {},
       "https://websockets.spec.whatwg.org/": {},
       "https://webstore.ansi.org/RecordDetail.aspx?sku=ANSI+X9.62%3a2005": {},
       "https://wicg.github.io/background-sync/spec/": {},
+      "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/rfc/rfc2119": {},
       "https://www.rfc-editor.org/rfc/rfc4648": {},
       "https://www.rfc-editor.org/rfc/rfc7515": {},
@@ -59,18 +30,8 @@
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/FileAPI/": {},
       "https://www.w3.org/TR/hr-time-3/": {},
-      "https://www.w3.org/TR/permissions/": {
-        "anchors": [
-          "dfn-express-permission"
-        ]
-      },
-      "https://www.w3.org/TR/service-workers/": {
-        "anchors": [
-          "dfn-service-worker",
-          "dfn-service-worker-registration",
-          "fire-functional-event"
-        ]
-      },
+      "https://www.w3.org/TR/permissions/": {},
+      "https://www.w3.org/TR/service-workers/": {},
       "https://www.w3.org/groups/wg/webapps": {},
       "https://www.w3.org/groups/wg/webapps/ipr": {},
       "https://www.w3.org/policies/patent-policy/": {
@@ -86,6 +47,22 @@
       }
     },
     "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-event-constructor-ext"
+        ]
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8-decode",
+          "utf-8-encode"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "concept-origin"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/infrastructure.html": {
         "anchors": [
           "in-parallel"
@@ -98,12 +75,66 @@
           "queue-a-global-task",
           "networking-task-source",
           "user-interaction-task-source",
-          "eventhandler"
+          "eventhandler",
+          "event-handler-idl-attributes",
+          "event-handler-event-type"
         ]
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "byte-sequence"
+          "32-bit-unsigned-integer",
+          "64-bit-unsigned-integer",
+          "tuple",
+          "byte-sequence",
+          "parse-json-bytes-to-an-infra-value",
+          "ordered-map",
+          "map-exists",
+          "javascript-string-convert",
+          "list",
+          "list-item",
+          "convert-an-infra-value-to-a-json-compatible-javascript-value",
+          "list-iterate",
+          "iteration-continue",
+          "list-append",
+          "byte",
+          "parse-json-bytes-to-a-javascript-value",
+          "boolean",
+          "assert"
+        ]
+      },
+      "https://notifications.spec.whatwg.org/": {
+        "anchors": [
+          "dictdef-notificationoptions",
+          "dictdef-notificationaction",
+          "notification",
+          "permissiondef-notifications",
+          "dom-notificationoptions-dir",
+          "dom-notificationoptions-lang",
+          "dom-notificationoptions-body",
+          "dom-notificationoptions-navigate",
+          "dom-notificationoptions-tag",
+          "dom-notificationoptions-image",
+          "dom-notificationoptions-icon",
+          "dom-notificationoptions-badge",
+          "dom-notificationoptions-vibrate",
+          "dom-notificationoptions-timestamp",
+          "dom-notificationoptions-renotify",
+          "dom-notificationoptions-silent",
+          "dom-notificationoptions-requireinteraction",
+          "dom-notificationoptions-data",
+          "dom-notificationaction-action",
+          "dom-notificationaction-title",
+          "dom-notificationaction-navigate",
+          "dom-notificationaction-icon",
+          "dom-notificationoptions-actions",
+          "create-a-notification",
+          "notification-navigation-url",
+          "notification-action-navigation-url",
+          "action",
+          "actions",
+          "service-worker-registration",
+          "notification-show-steps",
+          "service-worker-registration-has-shownotification-been-successfully-invoked"
         ]
       },
       "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
@@ -116,12 +147,23 @@
           "sec-json.stringify"
         ]
       },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url",
+          "concept-url-origin"
+        ]
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "dfn-exception",
           "idl-boolean",
           "idl-ArrayBuffer",
+          "SecureContext",
+          "Exposed",
+          "SameObject",
+          "idl-frozen-array",
           "idl-DOMString",
+          "idl-promise",
           "a-new-promise",
           "this",
           "reject",
@@ -136,6 +178,8 @@
           "resolve",
           "dfn-throw",
           "idl-USVString",
+          "idl-record",
+          "dfn-json-types",
           "idl-Uint8Array",
           "idl-any"
         ]
@@ -147,7 +191,8 @@
       },
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
-          "dom-epochtimestamp"
+          "dom-epochtimestamp",
+          "dfn-current-wall-time"
         ]
       },
       "https://www.w3.org/TR/permissions/": {
@@ -157,6 +202,7 @@
           "dfn-permission-descriptor-type",
           "dom-permissiondescriptor",
           "dfn-stronger-than",
+          "dfn-express-permission",
           "dom-permissionstate",
           "dfn-request-permission-to-use",
           "dom-permissionstate-denied",
@@ -166,11 +212,15 @@
       },
       "https://www.w3.org/TR/service-workers/": {
         "anchors": [
+          "dfn-service-worker",
           "dfn-active-worker",
+          "dfn-service-worker-registration",
           "serviceworkerregistration",
           "serviceworkerglobalscope",
           "extendableevent",
           "dictdef-extendableeventinit",
+          "dfn-scope-url",
+          "fire-functional-event",
           "extendableevent-extend-lifetime-promises"
         ]
       }
