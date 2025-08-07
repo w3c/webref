@@ -430,6 +430,9 @@
               "html": "<p>If <var>destination domain</var> is equal to the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host⑦\">host</a> of\n  <var>destination</var>, skip all remaining validations within this step.</p>"
             },
             {
+              "html": "<p>If <var>session id</var> is non-null, skip all remaining validations within this\n step.</p>"
+            },
+            {
               "html": "<p>Otherwise, let <var>well known URL</var> be a copy of <var>destination</var>, with the\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host⑧\">host</a> replaced with <var>destination domain</var>, and the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path③\">path</a>\n replaced with \"/.well-known/device-bound-sessions\".</p>"
             },
             {
