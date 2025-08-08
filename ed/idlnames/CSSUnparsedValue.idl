@@ -5,5 +5,5 @@ interface CSSUnparsedValue : CSSStyleValue {
     iterable<CSSUnparsedSegment>;
     readonly attribute unsigned long length;
     getter CSSUnparsedSegment (unsigned long index);
-    setter CSSUnparsedSegment (unsigned long index, CSSUnparsedSegment val);
+    setter undefined (unsigned long index, CSSUnparsedSegment val);
 };

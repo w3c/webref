@@ -752,7 +752,7 @@
         "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylepropertymap"
       },
       "CSSUnparsedValue": {
-        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSUnparsedValue : CSSStyleValue {\n    constructor(sequence<CSSUnparsedSegment> members);\n    iterable<CSSUnparsedSegment>;\n    readonly attribute unsigned long length;\n    getter CSSUnparsedSegment (unsigned long index);\n    setter CSSUnparsedSegment (unsigned long index, CSSUnparsedSegment val);\n};",
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSUnparsedValue : CSSStyleValue {\n    constructor(sequence<CSSUnparsedSegment> members);\n    iterable<CSSUnparsedSegment>;\n    readonly attribute unsigned long length;\n    getter CSSUnparsedSegment (unsigned long index);\n    setter undefined (unsigned long index, CSSUnparsedSegment val);\n};",
         "type": "interface",
         "name": "CSSUnparsedValue",
         "inheritance": "CSSStyleValue",
@@ -863,7 +863,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "CSSUnparsedSegment"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -2653,7 +2653,7 @@
         "href": "https://drafts.css-houdini.org/css-typed-om-1/#enumdef-cssmathoperator"
       },
       "CSSTransformValue": {
-        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSTransformValue : CSSStyleValue {\n    constructor(sequence<CSSTransformComponent> transforms);\n    iterable<CSSTransformComponent>;\n    readonly attribute unsigned long length;\n    getter CSSTransformComponent (unsigned long index);\n    setter CSSTransformComponent (unsigned long index, CSSTransformComponent val);\n\n    readonly attribute boolean is2D;\n    DOMMatrix toMatrix();\n};",
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSTransformValue : CSSStyleValue {\n    constructor(sequence<CSSTransformComponent> transforms);\n    iterable<CSSTransformComponent>;\n    readonly attribute unsigned long length;\n    getter CSSTransformComponent (unsigned long index);\n    setter undefined (unsigned long index, CSSTransformComponent val);\n\n    readonly attribute boolean is2D;\n    DOMMatrix toMatrix();\n};",
         "type": "interface",
         "name": "CSSTransformValue",
         "inheritance": "CSSStyleValue",
@@ -2764,7 +2764,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "CSSTransformComponent"
+              "idlType": "undefined"
             },
             "arguments": [
               {

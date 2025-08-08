@@ -6,7 +6,7 @@
       "title": "CSS Typed OM Level 1",
       "url": "https://www.w3.org/TR/css-typed-om-1/"
     },
-    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSTransformValue : CSSStyleValue {\n    constructor(sequence<CSSTransformComponent> transforms);\n    iterable<CSSTransformComponent>;\n    readonly attribute unsigned long length;\n    getter CSSTransformComponent (unsigned long index);\n    setter CSSTransformComponent (unsigned long index, CSSTransformComponent val);\n\n    readonly attribute boolean is2D;\n    DOMMatrix toMatrix();\n};",
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSTransformValue : CSSStyleValue {\n    constructor(sequence<CSSTransformComponent> transforms);\n    iterable<CSSTransformComponent>;\n    readonly attribute unsigned long length;\n    getter CSSTransformComponent (unsigned long index);\n    setter undefined (unsigned long index, CSSTransformComponent val);\n\n    readonly attribute boolean is2D;\n    DOMMatrix toMatrix();\n};",
     "href": "https://drafts.css-houdini.org/css-typed-om-1/#csstransformvalue"
   },
   "extended": [],
