@@ -828,7 +828,7 @@ network.SetExtraHeaders = (
 )
 
 network.SetExtraHeadersParameters = {
-  headers: [+network.Header]
+  headers: [*network.Header]
   ? contexts: [+browsingContext.BrowsingContext]
   ? userContexts: [+browser.UserContext]
 }
@@ -2402,7 +2402,7 @@ network.SetExtraHeaders = (
 )
 
 network.SetExtraHeadersParameters = {
-  headers: [+network.Header]
+  headers: [*network.Header]
   ? contexts: [+browsingContext.BrowsingContext]
   ? userContexts: [+browser.UserContext]
 }
