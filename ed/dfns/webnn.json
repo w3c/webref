@@ -6441,7 +6441,9 @@
         "MLGraphBuilder/logicalNot(a, options)",
         "MLGraphBuilder/logicalAnd(a, b, options)",
         "MLGraphBuilder/logicalOr(a, b, options)",
-        "MLGraphBuilder/logicalXor(a, b, options)"
+        "MLGraphBuilder/logicalXor(a, b, options)",
+        "MLGraphBuilder/isNaN(a, options)",
+        "MLGraphBuilder/isInfinite(a, options)"
       ],
       "access": "public",
       "informative": false,
@@ -6472,7 +6474,9 @@
         "MLGraphBuilder/logicalNot(a, options)",
         "MLGraphBuilder/logicalAnd(a, b, options)",
         "MLGraphBuilder/logicalOr(a, b, options)",
-        "MLGraphBuilder/logicalXor(a, b, options)"
+        "MLGraphBuilder/logicalXor(a, b, options)",
+        "MLGraphBuilder/isNaN(a, options)",
+        "MLGraphBuilder/isInfinite(a, options)"
       ],
       "access": "public",
       "informative": false,
@@ -6503,7 +6507,9 @@
         "MLGraphBuilder/logicalNot(a, options)",
         "MLGraphBuilder/logicalAnd(a, b, options)",
         "MLGraphBuilder/logicalOr(a, b, options)",
-        "MLGraphBuilder/logicalXor(a, b, options)"
+        "MLGraphBuilder/logicalXor(a, b, options)",
+        "MLGraphBuilder/isNaN(a, options)",
+        "MLGraphBuilder/isInfinite(a, options)"
       ],
       "access": "public",
       "informative": false,
@@ -6781,6 +6787,50 @@
       "links": []
     },
     {
+      "id": "dom-mlopsupportlimits-isnan",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-isnan",
+      "linkingText": [
+        "isNaN"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLOpSupportLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-logical",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-logical",
+        "title": "Element-wise logical operations",
+        "number": "7.9.14"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mlopsupportlimits-isinfinite",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-isinfinite",
+      "linkingText": [
+        "isInfinite"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLOpSupportLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-logical",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-logical",
+        "title": "Element-wise logical operations",
+        "number": "7.9.14"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "mlgraphbuilder-element-wise-logical-op",
       "href": "https://webmachinelearning.github.io/webnn/#mlgraphbuilder-element-wise-logical-op",
       "linkingText": [
@@ -7015,6 +7065,52 @@
       "linkingText": [
         "logicalXor(a, b, options)",
         "logicalXor(a, b)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MLGraphBuilder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-logical",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-logical",
+        "title": "Element-wise logical operations",
+        "number": "7.9.14"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-mlgraphbuilder-isnan",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-isnan",
+      "linkingText": [
+        "isNaN(a, options)",
+        "isNaN(a)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MLGraphBuilder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-logical",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-logical",
+        "title": "Element-wise logical operations",
+        "number": "7.9.14"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-mlgraphbuilder-isinfinite",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-isinfinite",
+      "linkingText": [
+        "isInfinite(a, options)",
+        "isInfinite(a)"
       ],
       "localLinkingText": [],
       "type": "method",
