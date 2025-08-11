@@ -7014,7 +7014,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand equal(MLOperand a,\n                  MLOperand b,\n                  optional MLOperatorOptions options = {});\n  MLOperand notEqual(MLOperand a,\n                     MLOperand b,\n                     optional MLOperatorOptions options = {});\n  MLOperand greater(MLOperand a,\n                    MLOperand b,\n                    optional MLOperatorOptions options = {});\n  MLOperand greaterOrEqual(MLOperand a,\n                           MLOperand b,\n                           optional MLOperatorOptions options = {});\n  MLOperand lesser(MLOperand a,\n                   MLOperand b,\n                   optional MLOperatorOptions options = {});\n  MLOperand lesserOrEqual(MLOperand a,\n                          MLOperand b,\n                          optional MLOperatorOptions options = {});\n  MLOperand logicalNot(MLOperand a, optional MLOperatorOptions options = {});\n  MLOperand logicalAnd(MLOperand a,\n                       MLOperand b,\n                       optional MLOperatorOptions options = {});\n  MLOperand logicalOr(MLOperand a,\n                      MLOperand b,\n                      optional MLOperatorOptions options = {});\n  MLOperand logicalXor(MLOperand a,\n                       MLOperand b,\n                       optional MLOperatorOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand equal(MLOperand a,\n                  MLOperand b,\n                  optional MLOperatorOptions options = {});\n  MLOperand notEqual(MLOperand a,\n                     MLOperand b,\n                     optional MLOperatorOptions options = {});\n  MLOperand greater(MLOperand a,\n                    MLOperand b,\n                    optional MLOperatorOptions options = {});\n  MLOperand greaterOrEqual(MLOperand a,\n                           MLOperand b,\n                           optional MLOperatorOptions options = {});\n  MLOperand lesser(MLOperand a,\n                   MLOperand b,\n                   optional MLOperatorOptions options = {});\n  MLOperand lesserOrEqual(MLOperand a,\n                          MLOperand b,\n                          optional MLOperatorOptions options = {});\n  MLOperand logicalNot(MLOperand a, optional MLOperatorOptions options = {});\n  MLOperand logicalAnd(MLOperand a,\n                       MLOperand b,\n                       optional MLOperatorOptions options = {});\n  MLOperand logicalOr(MLOperand a,\n                      MLOperand b,\n                      optional MLOperatorOptions options = {});\n  MLOperand logicalXor(MLOperand a,\n                       MLOperand b,\n                       optional MLOperatorOptions options = {});\n  MLOperand isNaN(MLOperand a, optional MLOperatorOptions options = {});\n  MLOperand isInfinite(MLOperand a, optional MLOperatorOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -7672,6 +7672,108 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-logicalxor"
+            },
+            {
+              "type": "operation",
+              "name": "isNaN",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "a",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperatorOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-isnan"
+            },
+            {
+              "type": "operation",
+              "name": "isInfinite",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "a",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperatorOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-isinfinite"
             }
           ],
           "extAttrs": [],
@@ -12765,7 +12867,7 @@
           "partial": true
         },
         {
-          "fragment": "partial dictionary MLOpSupportLimits {\n  MLBinarySupportLimits equal;\n  MLBinarySupportLimits notEqual;\n  MLBinarySupportLimits greater;\n  MLBinarySupportLimits greaterOrEqual;\n  MLBinarySupportLimits lesser;\n  MLBinarySupportLimits lesserOrEqual;\n  MLLogicalNotSupportLimits logicalNot;\n  MLBinarySupportLimits logicalAnd;\n  MLBinarySupportLimits logicalOr;\n  MLBinarySupportLimits logicalXor;\n};",
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLBinarySupportLimits equal;\n  MLBinarySupportLimits notEqual;\n  MLBinarySupportLimits greater;\n  MLBinarySupportLimits greaterOrEqual;\n  MLBinarySupportLimits lesser;\n  MLBinarySupportLimits lesserOrEqual;\n  MLLogicalNotSupportLimits logicalNot;\n  MLBinarySupportLimits logicalAnd;\n  MLBinarySupportLimits logicalOr;\n  MLBinarySupportLimits logicalXor;\n  MLLogicalNotSupportLimits isNaN;\n  MLLogicalNotSupportLimits isInfinite;\n};",
           "type": "dictionary",
           "name": "MLOpSupportLimits",
           "inheritance": null,
@@ -12929,6 +13031,38 @@
               "default": null,
               "required": false,
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-logicalxor"
+            },
+            {
+              "type": "field",
+              "name": "isNaN",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLLogicalNotSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-isnan"
+            },
+            {
+              "type": "field",
+              "name": "isInfinite",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLLogicalNotSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-isinfinite"
             }
           ],
           "extAttrs": [],
