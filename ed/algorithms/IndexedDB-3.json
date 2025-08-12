@@ -1831,7 +1831,7 @@
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state③③\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-committing\" id=\"ref-for-transaction-committing①\">committing</a>\nor <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-finished\" id=\"ref-for-transaction-finished①⑥\">finished</a>,\nthen <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①①⑨\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤⑦\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑥⓪\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state③④\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-inactive\" id=\"ref-for-transaction-inactive③\">inactive</a> and run\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#abort-a-transaction\" id=\"ref-for-abort-a-transaction③\">abort a transaction</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥⑧\">this</a> and null.</p>"
+          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#abort-a-transaction\" id=\"ref-for-abort-a-transaction③\">abort a transaction</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥⑦\">this</a> and null.</p>"
         }
       ]
     },
@@ -1842,10 +1842,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state③⑤\">state</a> is not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active③⑥\">active</a>,\nthen <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①②⓪\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤⑧\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑥①\">DOMException</a></code>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state③④\">state</a> is not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active③⑥\">active</a>,\nthen <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①②⓪\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤⑧\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑥①\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#commit-a-transaction\" id=\"ref-for-commit-a-transaction\">commit a transaction</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦⓪\">this</a>.</p>"
+          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#commit-a-transaction\" id=\"ref-for-commit-a-transaction\">commit a transaction</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥⑨\">this</a>.</p>"
         }
       ]
     },
@@ -1908,7 +1908,7 @@
               "html": "<p>If <var>connection</var> was <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#connection-closed\" id=\"ref-for-connection-closed⑥\">closed</a>,\nreturn a newly <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception①\">created</a>\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror③\">AbortError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑥④\">DOMException</a></code> and abort these steps.</p>"
             },
             {
-              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#upgrade-transaction\" id=\"ref-for-upgrade-transaction④⑥\">upgrade transaction</a> was aborted, run the steps\nto <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#close-a-database-connection\" id=\"ref-for-close-a-database-connection④\">close a database connection</a> with <var>connection</var>,\nreturn a newly <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception②\">created</a>\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror④\">AbortError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑥⑤\">DOMException</a></code> and abort these steps.</p>"
+              "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-error\" id=\"ref-for-request-error⑦\">error</a> is set, run the steps\nto <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#close-a-database-connection\" id=\"ref-for-close-a-database-connection④\">close a database connection</a> with <var>connection</var>,\nreturn a newly <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception②\">created</a>\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror④\">AbortError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑥⑤\">DOMException</a></code> and abort these steps.</p>"
             }
           ]
         },
@@ -1988,7 +1988,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state③⑥\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-committing\" id=\"ref-for-transaction-committing②\">committing</a>.</p>"
+          "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state③⑤\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-committing\" id=\"ref-for-transaction-committing②\">committing</a>.</p>"
         },
         {
           "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>:",
@@ -1998,7 +1998,7 @@
               "html": "<p>Wait until every item in <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-request-list\" id=\"ref-for-transaction-request-list\">request list</a>\nis <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-processed\" id=\"ref-for-request-processed①\">processed</a>.</p>"
             },
             {
-              "html": "<p>If <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state③⑦\">state</a> is no longer <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-committing\" id=\"ref-for-transaction-committing③\">committing</a>,\nthen terminate these steps.</p>"
+              "html": "<p>If <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state③⑥\">state</a> is no longer <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-committing\" id=\"ref-for-transaction-committing③\">committing</a>,\nthen terminate these steps.</p>"
             },
             {
               "html": "<p>Attempt to write any outstanding changes made by <var>transaction</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#database\" id=\"ref-for-database⑥①\">database</a>, considering <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-durability-hint\" id=\"ref-for-transaction-durability-hint③\">durability hint</a>.</p>"
@@ -2011,16 +2011,16 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>transaction</var> is an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#upgrade-transaction\" id=\"ref-for-upgrade-transaction④⑦\">upgrade transaction</a>, then set <var>transaction</var>’s\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-connection\" id=\"ref-for-transaction-connection③\">connection</a>’s associated <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#database\" id=\"ref-for-database⑥③\">database</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#database-upgrade-transaction\" id=\"ref-for-database-upgrade-transaction②\">upgrade transaction</a> to null.</p>"
+                  "html": "<p>If <var>transaction</var> is an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#upgrade-transaction\" id=\"ref-for-upgrade-transaction④⑥\">upgrade transaction</a>, then set <var>transaction</var>’s\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-connection\" id=\"ref-for-transaction-connection③\">connection</a>’s associated <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#database\" id=\"ref-for-database⑥③\">database</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#database-upgrade-transaction\" id=\"ref-for-database-upgrade-transaction②\">upgrade transaction</a> to null.</p>"
                 },
                 {
-                  "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state③⑧\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-finished\" id=\"ref-for-transaction-finished①⑦\">finished</a>.</p>"
+                  "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state③⑦\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-finished\" id=\"ref-for-transaction-finished①⑦\">finished</a>.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire④\">Fire an event</a> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://w3c.github.io/IndexedDB/#eventdef-idbtransaction-complete\" id=\"ref-for-eventdef-idbtransaction-complete③\">complete</a></code> at <var>transaction</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>transaction</var> is an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#upgrade-transaction\" id=\"ref-for-upgrade-transaction④⑧\">upgrade transaction</a>, then\nlet <var>request</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request\" id=\"ref-for-request③⑥\">request</a> associated with <var>transaction</var>\nand set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-transaction\" id=\"ref-for-request-transaction③\">transaction</a> to null.</p>"
+                  "html": "<p>If <var>transaction</var> is an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#upgrade-transaction\" id=\"ref-for-upgrade-transaction④⑦\">upgrade transaction</a>, then\nlet <var>request</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request\" id=\"ref-for-request③⑥\">request</a> associated with <var>transaction</var>\nand set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-transaction\" id=\"ref-for-request-transaction③\">transaction</a> to null.</p>"
                 }
               ]
             }
@@ -2035,16 +2035,16 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state③⑨\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-finished\" id=\"ref-for-transaction-finished①⑧\">finished</a>, abort these steps.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state③⑧\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-finished\" id=\"ref-for-transaction-finished①⑧\">finished</a>, abort these steps.</p>"
         },
         {
-          "html": "<p>All the changes made to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#database\" id=\"ref-for-database⑥④\">database</a> by the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-concept\" id=\"ref-for-transaction-concept⑦⑤\">transaction</a>\nare reverted. For <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#upgrade-transaction\" id=\"ref-for-upgrade-transaction④⑨\">upgrade transactions</a> this includes changes\nto the set of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#object-store\" id=\"ref-for-object-store⑨⑤\">object stores</a> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#index-concept\" id=\"ref-for-index-concept④①\">indexes</a>, as well as the\nchange to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#database-version\" id=\"ref-for-database-version①⑨\">version</a>. Any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#object-store\" id=\"ref-for-object-store⑨⑥\">object stores</a> and\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#index-concept\" id=\"ref-for-index-concept④②\">indexes</a> which were created during the transaction are now\nconsidered deleted for the purposes of other algorithms.</p>"
+          "html": "<p>All the changes made to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#database\" id=\"ref-for-database⑥④\">database</a> by the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-concept\" id=\"ref-for-transaction-concept⑦⑤\">transaction</a>\nare reverted. For <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#upgrade-transaction\" id=\"ref-for-upgrade-transaction④⑧\">upgrade transactions</a> this includes changes\nto the set of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#object-store\" id=\"ref-for-object-store⑨⑤\">object stores</a> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#index-concept\" id=\"ref-for-index-concept④①\">indexes</a>, as well as the\nchange to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#database-version\" id=\"ref-for-database-version①⑨\">version</a>. Any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#object-store\" id=\"ref-for-object-store⑨⑥\">object stores</a> and\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#index-concept\" id=\"ref-for-index-concept④②\">indexes</a> which were created during the transaction are now\nconsidered deleted for the purposes of other algorithms.</p>"
         },
         {
-          "html": "<p>If <var>transaction</var> is an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#upgrade-transaction\" id=\"ref-for-upgrade-transaction⑤⓪\">upgrade transaction</a>, run the steps\nto <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#abort-an-upgrade-transaction\" id=\"ref-for-abort-an-upgrade-transaction①\">abort an upgrade transaction</a> with <var>transaction</var>.</p>"
+          "html": "<p>If <var>transaction</var> is an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#upgrade-transaction\" id=\"ref-for-upgrade-transaction④⑨\">upgrade transaction</a>, run the steps\nto <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#abort-an-upgrade-transaction\" id=\"ref-for-abort-an-upgrade-transaction①\">abort an upgrade transaction</a> with <var>transaction</var>.</p>"
         },
         {
-          "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④⓪\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-finished\" id=\"ref-for-transaction-finished①⑨\">finished</a>.</p>"
+          "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state③⑨\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-finished\" id=\"ref-for-transaction-finished①⑨\">finished</a>.</p>"
         },
         {
           "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-error\" id=\"ref-for-transaction-error①\">error</a> to <var>error</var>.</p>"
@@ -2060,7 +2060,7 @@
               "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-result\" id=\"ref-for-request-result⑦\">result</a> to undefined.</p>"
             },
             {
-              "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-error\" id=\"ref-for-request-error⑦\">error</a> to a newly\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception④\">created</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror⑥\">AbortError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑥⑨\">DOMException</a></code>.</p>"
+              "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-error\" id=\"ref-for-request-error⑧\">error</a> to a newly\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception④\">created</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror⑥\">AbortError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑥⑨\">DOMException</a></code>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑤\">Fire an event</a> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://w3c.github.io/IndexedDB/#eventdef-idbrequest-error\" id=\"ref-for-eventdef-idbrequest-error⑨\">error</a></code> at <var>request</var>\nwith its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\" id=\"ref-for-dom-event-bubbles③\">bubbles</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-cancelable\" id=\"ref-for-dom-event-cancelable③\">cancelable</a></code>\nattributes initialized to true.</p>"
@@ -2072,13 +2072,13 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>transaction</var> is an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#upgrade-transaction\" id=\"ref-for-upgrade-transaction⑤①\">upgrade transaction</a>, then set <var>transaction</var>’s\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-connection\" id=\"ref-for-transaction-connection④\">connection</a>’s associated <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#database\" id=\"ref-for-database⑥⑤\">database</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#database-upgrade-transaction\" id=\"ref-for-database-upgrade-transaction③\">upgrade transaction</a> to null.</p>"
+              "html": "<p>If <var>transaction</var> is an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#upgrade-transaction\" id=\"ref-for-upgrade-transaction⑤⓪\">upgrade transaction</a>, then set <var>transaction</var>’s\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-connection\" id=\"ref-for-transaction-connection④\">connection</a>’s associated <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#database\" id=\"ref-for-database⑥⑤\">database</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#database-upgrade-transaction\" id=\"ref-for-database-upgrade-transaction③\">upgrade transaction</a> to null.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑥\">Fire an event</a> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://w3c.github.io/IndexedDB/#eventdef-idbtransaction-abort\" id=\"ref-for-eventdef-idbtransaction-abort③\">abort</a></code> at <var>transaction</var>\nwith its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\" id=\"ref-for-dom-event-bubbles④\">bubbles</a></code> attribute initialized to true.</p>"
             },
             {
-              "html": "If <var>transaction</var> is an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#upgrade-transaction\" id=\"ref-for-upgrade-transaction⑤②\">upgrade transaction</a>, then:",
+              "html": "If <var>transaction</var> is an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#upgrade-transaction\" id=\"ref-for-upgrade-transaction⑤①\">upgrade transaction</a>, then:",
               "rationale": "let",
               "steps": [
                 {
@@ -2112,7 +2112,7 @@
           "html": "<p>Let <var>transaction</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-concept\" id=\"ref-for-transaction-concept⑦⑦\">transaction</a> associated with\n<var>source</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④①\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active③⑦\">active</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④⓪\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active③⑦\">active</a>.</p>"
         },
         {
           "html": "<p>If <var>request</var> was not given, let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request\" id=\"ref-for-request③⑨\">request</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-source\" id=\"ref-for-request-source③\">source</a> as <var>source</var>.</p>"
@@ -2131,7 +2131,7 @@
               "html": "<p>Let <var>result</var> be the result of performing <var>operation</var>.</p>"
             },
             {
-              "html": "<p>If <var>result</var> is an error and <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④②\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-committing\" id=\"ref-for-transaction-committing⑤\">committing</a>,\nthen run <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#abort-a-transaction\" id=\"ref-for-abort-a-transaction⑦\">abort a transaction</a> with <var>transaction</var> and <var>result</var>,\nand terminate these steps.</p>"
+              "html": "<p>If <var>result</var> is an error and <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④①\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-committing\" id=\"ref-for-transaction-committing⑤\">committing</a>,\nthen run <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#abort-a-transaction\" id=\"ref-for-abort-a-transaction⑦\">abort a transaction</a> with <var>transaction</var> and <var>result</var>,\nand terminate these steps.</p>"
             },
             {
               "html": "<p>If <var>result</var> is an error,\nthen revert all changes made by <var>operation</var>.</p>"
@@ -2157,7 +2157,7 @@
                       "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-result\" id=\"ref-for-request-result⑨\">result</a> to undefined.</p>"
                     },
                     {
-                      "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-error\" id=\"ref-for-request-error⑧\">error</a> to <var>result</var>.</p>"
+                      "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-error\" id=\"ref-for-request-error⑨\">error</a> to <var>result</var>.</p>"
                     },
                     {
                       "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#fire-an-error-event\" id=\"ref-for-fire-an-error-event②\">Fire an error event</a> at <var>request</var>.</p>"
@@ -2172,7 +2172,7 @@
                       "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-result\" id=\"ref-for-request-result①⓪\">result</a> to <var>result</var>.</p>"
                     },
                     {
-                      "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-error\" id=\"ref-for-request-error⑨\">error</a> to undefined.</p>"
+                      "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-error\" id=\"ref-for-request-error①⓪\">error</a> to undefined.</p>"
                     },
                     {
                       "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#fire-a-success-event\" id=\"ref-for-fire-a-success-event②\">Fire a success event</a> at <var>request</var>.</p>"
@@ -2198,7 +2198,7 @@
           "html": "<p>Let <var>db</var> be <var>connection</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#database\" id=\"ref-for-database⑥⑥\">database</a>.</p>"
         },
         {
-          "html": "<p>Let <var>transaction</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#upgrade-transaction\" id=\"ref-for-upgrade-transaction⑤③\">upgrade transaction</a> with\n<var>connection</var> used as <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#connection\" id=\"ref-for-connection⑥⑤\">connection</a>.</p>"
+          "html": "<p>Let <var>transaction</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#upgrade-transaction\" id=\"ref-for-upgrade-transaction⑤②\">upgrade transaction</a> with\n<var>connection</var> used as <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#connection\" id=\"ref-for-connection⑥⑤\">connection</a>.</p>"
         },
         {
           "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-scope\" id=\"ref-for-transaction-scope①③\">scope</a> to <var>connection</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#connection-object-store-set\" id=\"ref-for-connection-object-store-set②\">object store set</a>.</p>"
@@ -2207,7 +2207,7 @@
           "html": "<p>Set <var>db</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#database-upgrade-transaction\" id=\"ref-for-database-upgrade-transaction④\">upgrade transaction</a> to <var>transaction</var>.</p>"
         },
         {
-          "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④③\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-inactive\" id=\"ref-for-transaction-inactive④\">inactive</a>.</p>"
+          "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④②\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-inactive\" id=\"ref-for-transaction-inactive③\">inactive</a>.</p>"
         },
         {
           "html": "<p>Start <var>transaction</var>.</p>"
@@ -2235,17 +2235,17 @@
               "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-done-flag\" id=\"ref-for-request-done-flag①⑧\">done flag</a> to true.</p>"
             },
             {
-              "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④④\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active③⑧\">active</a>.</p>"
+              "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④③\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active③⑧\">active</a>.</p>"
             },
             {
               "html": "<p>Let <var>didThrow</var> be the result of\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#fire-a-version-change-event\" id=\"ref-for-fire-a-version-change-event⑤\">firing a version change event</a> named\n<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://w3c.github.io/IndexedDB/#eventdef-idbopendbrequest-upgradeneeded\" id=\"ref-for-eventdef-idbopendbrequest-upgradeneeded①⓪\">upgradeneeded</a></code> at <var>request</var> with <var>old\nversion</var> and <var>version</var>.</p>"
             },
             {
-              "html": "If <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④⑤\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active③⑨\">active</a>, then:",
+              "html": "If <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④④\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active③⑨\">active</a>, then:",
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④⑥\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-inactive\" id=\"ref-for-transaction-inactive⑤\">inactive</a>.</p>"
+                  "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④⑤\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-inactive\" id=\"ref-for-transaction-inactive④\">inactive</a>.</p>"
                 },
                 {
                   "html": "<p>If <var>didThrow</var> is true, run <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#abort-a-transaction\" id=\"ref-for-abort-a-transaction⑧\">abort a transaction</a> with <var>transaction</var> and a newly\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑤\">created</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror⑦\">AbortError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑦⓪\">DOMException</a></code>.</p>"
@@ -2322,17 +2322,17 @@
           "html": "<p>Let <var>legacyOutputDidListenersThrowFlag</var> be initially false.</p>"
         },
         {
-          "html": "<p>If <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④⑦\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-inactive\" id=\"ref-for-transaction-inactive⑥\">inactive</a>,\nthen set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④⑧\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active④⓪\">active</a>.</p>"
+          "html": "<p>If <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④⑥\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-inactive\" id=\"ref-for-transaction-inactive⑤\">inactive</a>,\nthen set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④⑦\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active④⓪\">active</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-dispatch\" id=\"ref-for-concept-event-dispatch②\">Dispatch</a> <var>event</var> at <var>request</var> with <var>legacyOutputDidListenersThrowFlag</var>.</p>"
         },
         {
-          "html": "If <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④⑨\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active④①\">active</a>,\nthen:",
+          "html": "If <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④⑧\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active④①\">active</a>,\nthen:",
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state⑤⓪\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-inactive\" id=\"ref-for-transaction-inactive⑦\">inactive</a>.</p>"
+              "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state④⑨\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-inactive\" id=\"ref-for-transaction-inactive⑥\">inactive</a>.</p>"
             },
             {
               "html": "<p>If <var>legacyOutputDidListenersThrowFlag</var> is true,\nthen run <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#abort-a-transaction\" id=\"ref-for-abort-a-transaction①①\">abort a transaction</a> with\n<var>transaction</var> and a newly <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑥\">created</a>\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror⑧\">AbortError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑦①\">DOMException</a></code>.</p>"
@@ -2366,23 +2366,23 @@
           "html": "<p>Let <var>legacyOutputDidListenersThrowFlag</var> be initially false.</p>"
         },
         {
-          "html": "<p>If <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state⑤①\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-inactive\" id=\"ref-for-transaction-inactive⑧\">inactive</a>,\nthen set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state⑤②\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active④②\">active</a>.</p>"
+          "html": "<p>If <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state⑤⓪\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-inactive\" id=\"ref-for-transaction-inactive⑦\">inactive</a>,\nthen set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state⑤①\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active④②\">active</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-dispatch\" id=\"ref-for-concept-event-dispatch③\">Dispatch</a> <var>event</var> at <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request\" id=\"ref-for-request④⓪\">request</a> with <var>legacyOutputDidListenersThrowFlag</var>.</p>"
         },
         {
-          "html": "If <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state⑤③\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active④③\">active</a>,\nthen:",
+          "html": "If <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state⑤②\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active④③\">active</a>,\nthen:",
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state⑤④\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-inactive\" id=\"ref-for-transaction-inactive⑨\">inactive</a>.</p>"
+              "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state⑤③\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-inactive\" id=\"ref-for-transaction-inactive⑧\">inactive</a>.</p>"
             },
             {
               "html": "<p>If <var>legacyOutputDidListenersThrowFlag</var> is true,\nthen run <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#abort-a-transaction\" id=\"ref-for-abort-a-transaction①②\">abort a transaction</a> with\n<var>transaction</var> and a newly <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑦\">created</a>\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror⑨\">AbortError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑦②\">DOMException</a></code> and terminate these steps.\nThis is done even if <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#canceled-flag\" id=\"ref-for-canceled-flag\">canceled flag</a> is false.</p>"
             },
             {
-              "html": "<p>If <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#canceled-flag\" id=\"ref-for-canceled-flag①\">canceled flag</a> is false,\nthen run <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#abort-a-transaction\" id=\"ref-for-abort-a-transaction①③\">abort a transaction</a> using\n<var>transaction</var> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request\" id=\"ref-for-request④①\">request</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-error\" id=\"ref-for-request-error①①\">error</a>, and\nterminate these steps.</p>"
+              "html": "<p>If <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#canceled-flag\" id=\"ref-for-canceled-flag①\">canceled flag</a> is false,\nthen run <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#abort-a-transaction\" id=\"ref-for-abort-a-transaction①③\">abort a transaction</a> using\n<var>transaction</var> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request\" id=\"ref-for-request④①\">request</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#request-error\" id=\"ref-for-request-error①②\">error</a>, and\nterminate these steps.</p>"
             },
             {
               "html": "<p>If <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-request-list\" id=\"ref-for-transaction-request-list⑥\">request list</a> is empty,\nthen run <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#commit-a-transaction\" id=\"ref-for-commit-a-transaction③\">commit a transaction</a> with <var>transaction</var>.</p>"
@@ -2398,10 +2398,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state⑤⑤\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active④④\">active</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state⑤④\">state</a> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active④④\">active</a>.</p>"
         },
         {
-          "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state⑤⑥\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-inactive\" id=\"ref-for-transaction-inactive①⓪\">inactive</a>.</p>"
+          "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state⑤⑤\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-inactive\" id=\"ref-for-transaction-inactive⑨\">inactive</a>.</p>"
         },
         {
           "html": "<p>Let <var>serialized</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions\">?</a> <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structuredserializeforstorage\" id=\"ref-for-structuredserializeforstorage②\">StructuredSerializeForStorage</a>(<var>value</var>).</p>"
@@ -2410,7 +2410,7 @@
           "html": "<p>Let <var>clone</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structureddeserialize\" id=\"ref-for-structureddeserialize\">StructuredDeserialize</a>(<var>serialized</var>, <var>targetRealm</var>).</p>"
         },
         {
-          "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state⑤⑦\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active④⑤\">active</a>.</p>"
+          "html": "<p>Set <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state⑤⑥\">state</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active④⑤\">active</a>.</p>"
         },
         {
           "html": "<p>Return <var>clone</var>.</p>"
@@ -2436,7 +2436,7 @@
           "html": "<p>Let <var>transaction</var> be <var>sourceHandle</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-concept\" id=\"ref-for-transaction-concept⑧⑥\">transaction</a>.</p>"
         },
         {
-          "html": "<p>If <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state⑤⑧\">state</a> is not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active④⑥\">active</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①②③\">throw</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#transactioninactiveerror\" id=\"ref-for-transactioninactiveerror③②\">TransactionInactiveError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑦⑤\">DOMException</a></code>.</p>"
+          "html": "<p>If <var>transaction</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-state\" id=\"ref-for-transaction-state⑤⑦\">state</a> is not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#transaction-active\" id=\"ref-for-transaction-active④⑥\">active</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①②③\">throw</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#transactioninactiveerror\" id=\"ref-for-transactioninactiveerror③②\">TransactionInactiveError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑦⑤\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>range</var> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#key-range\" id=\"ref-for-key-range⑤①\">key range</a>.</p>"
