@@ -7,7 +7,7 @@
       "url": "https://www.w3.org/TR/privacy-preserving-attribution/"
     },
     "fragment": "dictionary AttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  unsigned long lookbackDays;\n  sequence<unsigned long> matchValues = [];\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> impressionCallers = [];\n\n  AttributionLogic logic = \"last-n-touch\";\n  AttributionLogicOptions logicOptions;\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n};",
-    "href": "https://w3c.github.io/ppa/#dictdef-attributionconversionoptions"
+    "href": "https://w3c.github.io/attribution/#dictdef-attributionconversionoptions"
   },
   "extended": [],
   "inheritance": null,

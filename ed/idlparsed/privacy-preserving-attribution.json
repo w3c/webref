@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "Attribution Level 1",
-    "url": "https://w3c.github.io/ppa/"
+    "url": "https://w3c.github.io/attribution/"
   },
   "idlparsed": {
     "jsNames": {
@@ -24,16 +24,16 @@
           {
             "type": "enum-value",
             "value": "dap-15-histogram",
-            "href": "https://w3c.github.io/ppa/#dom-attributionaggregationprotocol-dap-15-histogram"
+            "href": "https://w3c.github.io/attribution/#dom-attributionaggregationprotocol-dap-15-histogram"
           },
           {
             "type": "enum-value",
             "value": "tee-00",
-            "href": "https://w3c.github.io/ppa/#dom-attributionaggregationprotocol-tee-00"
+            "href": "https://w3c.github.io/attribution/#dom-attributionaggregationprotocol-tee-00"
           }
         ],
         "extAttrs": [],
-        "href": "https://w3c.github.io/ppa/#enumdef-attributionaggregationprotocol"
+        "href": "https://w3c.github.io/attribution/#enumdef-attributionaggregationprotocol"
       },
       "AttributionAggregationService": {
         "fragment": "dictionary AttributionAggregationService {\n  required DOMString protocol;\n};",
@@ -55,12 +55,12 @@
             },
             "default": null,
             "required": true,
-            "href": "https://w3c.github.io/ppa/#dom-attributionaggregationservice-protocol"
+            "href": "https://w3c.github.io/attribution/#dom-attributionaggregationservice-protocol"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://w3c.github.io/ppa/#dictdef-attributionaggregationservice"
+        "href": "https://w3c.github.io/attribution/#dictdef-attributionaggregationservice"
       },
       "AttributionAggregationServices": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface AttributionAggregationServices {\n  readonly maplike<USVString, AttributionAggregationService>;\n};",
@@ -112,7 +112,7 @@
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/ppa/#attributionaggregationservices"
+        "href": "https://w3c.github.io/attribution/#attributionaggregationservices"
       },
       "Attribution": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface Attribution {\n  readonly attribute AttributionAggregationServices aggregationServices;\n};",
@@ -134,7 +134,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://w3c.github.io/ppa/#dom-attribution-aggregationservices"
+            "href": "https://w3c.github.io/attribution/#dom-attribution-aggregationservices"
           }
         ],
         "extAttrs": [
@@ -155,7 +155,7 @@
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/ppa/#attribution"
+        "href": "https://w3c.github.io/attribution/#attribution"
       },
       "AttributionImpressionOptions": {
         "fragment": "dictionary AttributionImpressionOptions {\n  required unsigned long histogramIndex;\n  unsigned long matchValue = 0;\n  sequence<USVString> conversionSites = [];\n  sequence<USVString> conversionCallers = [];\n  unsigned long lifetimeDays = 30;\n  long priority = 0;\n};",
@@ -177,7 +177,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://w3c.github.io/ppa/#dom-attributionimpressionoptions-histogramindex"
+            "href": "https://w3c.github.io/attribution/#dom-attributionimpressionoptions-histogramindex"
           },
           {
             "type": "field",
@@ -196,7 +196,7 @@
               "value": "0"
             },
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-attributionimpressionoptions-matchvalue"
+            "href": "https://w3c.github.io/attribution/#dom-attributionimpressionoptions-matchvalue"
           },
           {
             "type": "field",
@@ -224,7 +224,7 @@
               "value": []
             },
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-attributionimpressionoptions-conversionsites"
+            "href": "https://w3c.github.io/attribution/#dom-attributionimpressionoptions-conversionsites"
           },
           {
             "type": "field",
@@ -252,7 +252,7 @@
               "value": []
             },
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-attributionimpressionoptions-conversioncallers"
+            "href": "https://w3c.github.io/attribution/#dom-attributionimpressionoptions-conversioncallers"
           },
           {
             "type": "field",
@@ -271,7 +271,7 @@
               "value": "30"
             },
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-attributionimpressionoptions-lifetimedays"
+            "href": "https://w3c.github.io/attribution/#dom-attributionimpressionoptions-lifetimedays"
           },
           {
             "type": "field",
@@ -290,12 +290,12 @@
               "value": "0"
             },
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-attributionimpressionoptions-priority"
+            "href": "https://w3c.github.io/attribution/#dom-attributionimpressionoptions-priority"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://w3c.github.io/ppa/#dictdef-attributionimpressionoptions"
+        "href": "https://w3c.github.io/attribution/#dictdef-attributionimpressionoptions"
       },
       "AttributionImpressionResult": {
         "fragment": "dictionary AttributionImpressionResult {\n};",
@@ -305,7 +305,7 @@
         "members": [],
         "extAttrs": [],
         "partial": false,
-        "href": "https://w3c.github.io/ppa/#dictdef-attributionimpressionresult"
+        "href": "https://w3c.github.io/attribution/#dictdef-attributionimpressionresult"
       },
       "AttributionConversionOptions": {
         "fragment": "dictionary AttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  unsigned long lookbackDays;\n  sequence<unsigned long> matchValues = [];\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> impressionCallers = [];\n\n  AttributionLogic logic = \"last-n-touch\";\n  AttributionLogicOptions logicOptions;\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n};",
@@ -327,7 +327,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-aggregationservice"
+            "href": "https://w3c.github.io/attribution/#dom-attributionconversionoptions-aggregationservice"
           },
           {
             "type": "field",
@@ -346,7 +346,7 @@
               "value": "1.0"
             },
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-epsilon"
+            "href": "https://w3c.github.io/attribution/#dom-attributionconversionoptions-epsilon"
           },
           {
             "type": "field",
@@ -362,7 +362,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-histogramsize"
+            "href": "https://w3c.github.io/attribution/#dom-attributionconversionoptions-histogramsize"
           },
           {
             "type": "field",
@@ -378,7 +378,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-lookbackdays"
+            "href": "https://w3c.github.io/attribution/#dom-attributionconversionoptions-lookbackdays"
           },
           {
             "type": "field",
@@ -406,7 +406,7 @@
               "value": []
             },
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-matchvalues"
+            "href": "https://w3c.github.io/attribution/#dom-attributionconversionoptions-matchvalues"
           },
           {
             "type": "field",
@@ -434,7 +434,7 @@
               "value": []
             },
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-impressionsites"
+            "href": "https://w3c.github.io/attribution/#dom-attributionconversionoptions-impressionsites"
           },
           {
             "type": "field",
@@ -462,7 +462,7 @@
               "value": []
             },
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-impressioncallers"
+            "href": "https://w3c.github.io/attribution/#dom-attributionconversionoptions-impressioncallers"
           },
           {
             "type": "field",
@@ -481,7 +481,7 @@
               "value": "last-n-touch"
             },
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-logic"
+            "href": "https://w3c.github.io/attribution/#dom-attributionconversionoptions-logic"
           },
           {
             "type": "field",
@@ -497,7 +497,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-logicoptions"
+            "href": "https://w3c.github.io/attribution/#dom-attributionconversionoptions-logicoptions"
           },
           {
             "type": "field",
@@ -516,7 +516,7 @@
               "value": "1"
             },
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-value"
+            "href": "https://w3c.github.io/attribution/#dom-attributionconversionoptions-value"
           },
           {
             "type": "field",
@@ -535,12 +535,12 @@
               "value": "1"
             },
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-attributionconversionoptions-maxvalue"
+            "href": "https://w3c.github.io/attribution/#dom-attributionconversionoptions-maxvalue"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://w3c.github.io/ppa/#dictdef-attributionconversionoptions"
+        "href": "https://w3c.github.io/attribution/#dictdef-attributionconversionoptions"
       },
       "AttributionLogic": {
         "fragment": "enum AttributionLogic {\n  \"last-n-touch\",\n};",
@@ -550,11 +550,11 @@
           {
             "type": "enum-value",
             "value": "last-n-touch",
-            "href": "https://w3c.github.io/ppa/#dom-attributionlogic-last-n-touch"
+            "href": "https://w3c.github.io/attribution/#dom-attributionlogic-last-n-touch"
           }
         ],
         "extAttrs": [],
-        "href": "https://w3c.github.io/ppa/#enumdef-attributionlogic"
+        "href": "https://w3c.github.io/attribution/#enumdef-attributionlogic"
       },
       "AttributionLogicOptions": {
         "fragment": "dictionary AttributionLogicOptions {\n  sequence<double> credit;\n};",
@@ -585,12 +585,12 @@
             },
             "default": null,
             "required": false,
-            "href": "https://w3c.github.io/ppa/#dom-attributionlogicoptions-credit"
+            "href": "https://w3c.github.io/attribution/#dom-attributionlogicoptions-credit"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://w3c.github.io/ppa/#dictdef-attributionlogicoptions"
+        "href": "https://w3c.github.io/attribution/#dictdef-attributionlogicoptions"
       },
       "AttributionConversionResult": {
         "fragment": "dictionary AttributionConversionResult {\n  required Uint8Array report;\n};",
@@ -612,12 +612,12 @@
             },
             "default": null,
             "required": true,
-            "href": "https://w3c.github.io/ppa/#dom-attributionconversionresult-report"
+            "href": "https://w3c.github.io/attribution/#dom-attributionconversionresult-report"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://w3c.github.io/ppa/#dictdef-attributionconversionresult"
+        "href": "https://w3c.github.io/attribution/#dictdef-attributionconversionresult"
       }
     },
     "idlExtendedNames": {
@@ -655,7 +655,7 @@
               ],
               "special": "",
               "readonly": true,
-              "href": "https://w3c.github.io/ppa/#dom-navigator-attribution"
+              "href": "https://w3c.github.io/attribution/#dom-navigator-attribution"
             }
           ],
           "extAttrs": [],
@@ -709,7 +709,7 @@
               ],
               "extAttrs": [],
               "special": "",
-              "href": "https://w3c.github.io/ppa/#dom-attribution-saveimpression"
+              "href": "https://w3c.github.io/attribution/#dom-attribution-saveimpression"
             }
           ],
           "extAttrs": [
@@ -777,7 +777,7 @@
               ],
               "extAttrs": [],
               "special": "",
-              "href": "https://w3c.github.io/ppa/#dom-attribution-measureconversion"
+              "href": "https://w3c.github.io/attribution/#dom-attribution-measureconversion"
             }
           ],
           "extAttrs": [
