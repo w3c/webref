@@ -489,6 +489,7 @@ EmulationCommand = (
   emulation.SetGeolocationOverride //
   emulation.SetLocaleOverride //
   emulation.SetScreenOrientationOverride //
+  emulation.SetScriptingEnabled //
   emulation.SetTimezoneOverride
 )
 
@@ -559,6 +560,17 @@ emulation.ScreenOrientation = {
 
 emulation.SetScreenOrientationOverrideParameters = {
   screenOrientation: emulation.ScreenOrientation / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.SetScriptingEnabled = (
+  method: "emulation.setScriptingEnabled",
+  params: emulation.SetScriptingEnabledParameters
+)
+
+emulation.SetScriptingEnabledParameters = {
+  enabled: false / null,
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
 }
@@ -2063,6 +2075,7 @@ EmulationCommand = (
   emulation.SetGeolocationOverride //
   emulation.SetLocaleOverride //
   emulation.SetScreenOrientationOverride //
+  emulation.SetScriptingEnabled //
   emulation.SetTimezoneOverride
 )
 
@@ -2133,6 +2146,17 @@ emulation.ScreenOrientation = {
 
 emulation.SetScreenOrientationOverrideParameters = {
   screenOrientation: emulation.ScreenOrientation / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.SetScriptingEnabled = (
+  method: "emulation.setScriptingEnabled",
+  params: emulation.SetScriptingEnabledParameters
+)
+
+emulation.SetScriptingEnabledParameters = {
+  enabled: false / null,
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
 }
