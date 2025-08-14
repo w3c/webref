@@ -691,31 +691,25 @@
           "html": "<p>If <var>expires</var> is given, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append④\">append</a> `<code>Expires</code>`/<var>expires</var> (<a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#date-serialize\" id=\"ref-for-date-serialize\">date serialized</a>) to <var>attributes</var>.</p>"
         },
         {
-          "html": "If <var>path</var> is not null:",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "<p>If <var>path</var> does not start with U+002F (/), then return failure.</p>"
-            },
-            {
-              "html": "<p>If <var>path</var> is not U+002F (/), and <var>name</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-lowercase\" id=\"ref-for-byte-lowercase③\">byte-lowercased</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with③\">starts with</a> `<code>__host-</code>`, then return failure.</p>"
-            },
-            {
-              "html": "<p>Let <var>encodedPath</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode③\">UTF-8 encoding</a> <var>path</var>.</p>"
-            },
-            {
-              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑤\">byte sequence</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length③\">length</a> of <var>encodedPath</var> is greater than the <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#cookie-maximum-attribute-value-size\" id=\"ref-for-cookie-maximum-attribute-value-size①\">maximum attribute value size</a>, then return failure.</p>"
-            },
-            {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑤\">Append</a> `<code>Path</code>`/<var>encodedPath</var> to <var>attributes</var>.</p>"
-            }
-          ]
+          "html": "<p>If <var>path</var> is the empty string, then set <var>path</var> to the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#serialized-cookie-default-path\" id=\"ref-for-serialized-cookie-default-path\">serialized cookie default path</a> of <var>url</var>.</p>"
         },
         {
-          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑥\">append</a> `<code>Path</code>`/ U+002F (/) to <var>attributes</var>.</p>"
+          "html": "<p>If <var>path</var> does not start with U+002F (/), then return failure.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑦\">Append</a> `<code>Secure</code>`/`` to <var>attributes</var>.</p>"
+          "html": "<p>If <var>path</var> is not U+002F (/), and <var>name</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-lowercase\" id=\"ref-for-byte-lowercase③\">byte-lowercased</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with③\">starts with</a> `<code>__host-</code>`, then return failure.</p>"
+        },
+        {
+          "html": "<p>Let <var>encodedPath</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode③\">UTF-8 encoding</a> <var>path</var>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑤\">byte sequence</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length③\">length</a> of <var>encodedPath</var> is greater than the <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#cookie-maximum-attribute-value-size\" id=\"ref-for-cookie-maximum-attribute-value-size①\">maximum attribute value size</a>, then return failure.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑤\">Append</a> `<code>Path</code>`/<var>encodedPath</var> to <var>attributes</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑥\">Append</a> `<code>Secure</code>`/`` to <var>attributes</var>.</p>"
         },
         {
           "html": "Switch on <var>sameSite</var>:",
@@ -726,22 +720,22 @@
               "steps": [
                 {
                   "case": "\"none\"",
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑧\">Append</a> `<code>SameSite</code>`/`<code>None</code>` to <var>attributes</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑦\">Append</a> `<code>SameSite</code>`/`<code>None</code>` to <var>attributes</var>.</p>"
                 },
                 {
                   "case": "\"strict\"",
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑨\">Append</a> `<code>SameSite</code>`/`<code>Strict</code>` to <var>attributes</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑧\">Append</a> `<code>SameSite</code>`/`<code>Strict</code>` to <var>attributes</var>.</p>"
                 },
                 {
                   "case": "\"lax\"",
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⓪\">Append</a> `<code>SameSite</code>`/`<code>Lax</code>` to <var>attributes</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑨\">Append</a> `<code>SameSite</code>`/`<code>Lax</code>` to <var>attributes</var>.</p>"
                 }
               ]
             }
           ]
         },
         {
-          "html": "<p>If <var>partitioned</var> is true, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①①\">Append</a> `<code>Partitioned</code>`/`` to <var>attributes</var>.</p>"
+          "html": "<p>If <var>partitioned</var> is true, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⓪\">Append</a> `<code>Partitioned</code>`/`` to <var>attributes</var>.</p>"
         },
         {
           "html": "<p>Perform the steps defined in <a href=\"https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-14#name-storage-model\">Cookies § Storage Model</a> for when the user agent \"receives a cookie\" with\n<var>url</var> as <var>request-uri</var>,\n<var>encodedName</var> as <var>cookie-name</var>,\n<var>encodedValue</var> as <var>cookie-value</var>, and\n<var>attributes</var> as <var>cookie-attribute-list</var>.</p>\n      <p>For the purposes of the steps, the newly-created cookie was received from a \"non-HTTP\" API.</p>"
@@ -891,7 +885,7 @@
               "html": "<p>Let <var>item</var> be the result of running <a data-link-type=\"dfn\" href=\"https://cookiestore.spec.whatwg.org/#create-a-cookielistitem\" id=\"ref-for-create-a-cookielistitem①\">create a CookieListItem</a> from <var>change</var>’s cookie.</p>"
             },
             {
-              "html": "<p>If <var>change</var>’s type is <em>changed</em>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①②\">append</a> <var>item</var> to <var>changedList</var>.</p>"
+              "html": "<p>If <var>change</var>’s type is <em>changed</em>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①①\">append</a> <var>item</var> to <var>changedList</var>.</p>"
             },
             {
               "html": "Otherwise, run these steps:",
@@ -901,7 +895,7 @@
                   "html": "<p>Set <var>item</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://cookiestore.spec.whatwg.org/#dom-cookielistitem-value\" id=\"ref-for-dom-cookielistitem-value①\">value</a></code>\"] to undefined.</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①③\">Append</a> <var>item</var> to <var>deletedList</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①②\">Append</a> <var>item</var> to <var>deletedList</var>.</p>"
                 }
               ]
             }
