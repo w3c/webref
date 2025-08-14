@@ -3288,228 +3288,249 @@
       "number": "12.1.2"
     },
     {
+      "id": "sec-temporal-month-codes",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-month-codes",
+      "title": "Month Codes",
+      "level": 2,
+      "number": "12.2"
+    },
+    {
+      "id": "sec-temporal-parsemonthcode",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsemonthcode",
+      "title": "ParseMonthCode ( argument )",
+      "level": 3,
+      "number": "12.2.1"
+    },
+    {
+      "id": "sec-temporal-createmonthcode",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-createmonthcode",
+      "title": "CreateMonthCode ( monthNumber, isLeapMonth )",
+      "level": 3,
+      "number": "12.2.2"
+    },
+    {
       "id": "sec-temporal-calendar-abstract-ops",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendar-abstract-ops",
       "title": "Abstract Operations",
       "level": 2,
-      "number": "12.2"
+      "number": "12.3"
     },
     {
       "id": "sec-temporal-calendar-date-records",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendar-date-records",
       "title": "Calendar Date Records",
       "level": 3,
-      "number": "12.2.1"
+      "number": "12.3.1"
     },
     {
       "id": "sec-temporal-calendar-fields-records",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendar-fields-records",
       "title": "Calendar Fields Records",
       "level": 3,
-      "number": "12.2.2"
+      "number": "12.3.2"
     },
     {
       "id": "sec-temporal-preparecalendarfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-preparecalendarfields",
       "title": "PrepareCalendarFields ( calendar, fields, calendarFieldNames, nonCalendarFieldNames, requiredFieldNames )",
       "level": 3,
-      "number": "12.2.3"
+      "number": "12.3.3"
     },
     {
       "id": "sec-temporal-calendarfieldkeyspresent",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarfieldkeyspresent",
       "title": "CalendarFieldKeysPresent ( fields )",
       "level": 3,
-      "number": "12.2.4"
+      "number": "12.3.4"
     },
     {
       "id": "sec-temporal-calendarmergefields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmergefields",
       "title": "CalendarMergeFields ( calendar, fields, additionalFields )",
       "level": 3,
-      "number": "12.2.5"
+      "number": "12.3.5"
     },
     {
       "id": "sec-temporal-nonisodateadd",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-nonisodateadd",
       "title": "NonISODateAdd ( calendar, isoDate, duration, overflow )",
       "level": 3,
-      "number": "12.2.6"
+      "number": "12.3.6"
     },
     {
       "id": "sec-temporal-calendardateadd",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardateadd",
       "title": "CalendarDateAdd ( calendar, isoDate, duration, overflow )",
       "level": 3,
-      "number": "12.2.7"
+      "number": "12.3.7"
     },
     {
       "id": "sec-temporal-nonisodateuntil",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-nonisodateuntil",
       "title": "NonISODateUntil ( calendar, one, two, largestUnit )",
       "level": 3,
-      "number": "12.2.8"
+      "number": "12.3.8"
     },
     {
       "id": "sec-temporal-calendardateuntil",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardateuntil",
       "title": "CalendarDateUntil ( calendar, one, two, largestUnit )",
       "level": 3,
-      "number": "12.2.9"
+      "number": "12.3.9"
     },
     {
       "id": "sec-temporal-totemporalcalendaridentifier",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalcalendaridentifier",
       "title": "ToTemporalCalendarIdentifier ( temporalCalendarLike )",
       "level": 3,
-      "number": "12.2.10"
+      "number": "12.3.10"
     },
     {
       "id": "sec-temporal-gettemporalcalendarslotvaluewithisodefault",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-gettemporalcalendarslotvaluewithisodefault",
       "title": "GetTemporalCalendarIdentifierWithISODefault ( item )",
       "level": 3,
-      "number": "12.2.11"
+      "number": "12.3.11"
     },
     {
       "id": "sec-temporal-calendardatefromfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardatefromfields",
       "title": "CalendarDateFromFields ( calendar, fields, overflow )",
       "level": 3,
-      "number": "12.2.12"
+      "number": "12.3.12"
     },
     {
       "id": "sec-temporal-calendaryearmonthfromfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendaryearmonthfromfields",
       "title": "CalendarYearMonthFromFields ( calendar, fields, overflow )",
       "level": 3,
-      "number": "12.2.13"
+      "number": "12.3.13"
     },
     {
       "id": "sec-temporal-calendarmonthdayfromfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmonthdayfromfields",
       "title": "CalendarMonthDayFromFields ( calendar, fields, overflow )",
       "level": 3,
-      "number": "12.2.14"
+      "number": "12.3.14"
     },
     {
       "id": "sec-temporal-formatcalendarannotation",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-formatcalendarannotation",
       "title": "FormatCalendarAnnotation ( id, showCalendar )",
       "level": 3,
-      "number": "12.2.15"
+      "number": "12.3.15"
     },
     {
       "id": "sec-temporal-calendarequals",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarequals",
       "title": "CalendarEquals ( one, two )",
       "level": 3,
-      "number": "12.2.16"
+      "number": "12.3.16"
     },
     {
       "id": "sec-temporal-isodaysinmonth",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isodaysinmonth",
       "title": "ISODaysInMonth ( year, month )",
       "level": 3,
-      "number": "12.2.17"
+      "number": "12.3.17"
     },
     {
       "id": "sec-temporal-isoweekofyear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isoweekofyear",
       "title": "ISOWeekOfYear ( isoDate )",
       "level": 3,
-      "number": "12.2.18"
+      "number": "12.3.18"
     },
     {
       "id": "sec-temporal-isodayofyear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isodayofyear",
       "title": "ISODayOfYear ( isoDate )",
       "level": 3,
-      "number": "12.2.19"
+      "number": "12.3.19"
     },
     {
       "id": "sec-temporal-isodayofweek",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isodayofweek",
       "title": "ISODayOfWeek ( isoDate )",
       "level": 3,
-      "number": "12.2.20"
+      "number": "12.3.20"
     },
     {
       "id": "sec-temporal-nonisocalendardatetoiso",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-nonisocalendardatetoiso",
       "title": "NonISOCalendarDateToISO ( calendar, fields, overflow )",
       "level": 3,
-      "number": "12.2.21"
+      "number": "12.3.21"
     },
     {
       "id": "sec-temporal-calendardatetoiso",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardatetoiso",
       "title": "CalendarDateToISO ( calendar, fields, overflow )",
       "level": 3,
-      "number": "12.2.22"
+      "number": "12.3.22"
     },
     {
       "id": "sec-temporal-nonisomonthdaytoisoreferencedate",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-nonisomonthdaytoisoreferencedate",
       "title": "NonISOMonthDayToISOReferenceDate ( calendar, fields, overflow )",
       "level": 3,
-      "number": "12.2.23"
+      "number": "12.3.23"
     },
     {
       "id": "sec-temporal-calendarmonthdaytoisoreferencedate",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmonthdaytoisoreferencedate",
       "title": "CalendarMonthDayToISOReferenceDate ( calendar, fields, overflow )",
       "level": 3,
-      "number": "12.2.24"
+      "number": "12.3.24"
     },
     {
       "id": "sec-temporal-nonisocalendarisotodate",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-nonisocalendarisotodate",
       "title": "NonISOCalendarISOToDate ( calendar, isoDate )",
       "level": 3,
-      "number": "12.2.25"
+      "number": "12.3.25"
     },
     {
       "id": "sec-temporal-calendarisotodate",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarisotodate",
       "title": "CalendarISOToDate ( calendar, isoDate )",
       "level": 3,
-      "number": "12.2.26"
+      "number": "12.3.26"
     },
     {
       "id": "sec-temporal-calendarextrafields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarextrafields",
       "title": "CalendarExtraFields ( calendar, fields )",
       "level": 3,
-      "number": "12.2.27"
+      "number": "12.3.27"
     },
     {
       "id": "sec-temporal-nonisofieldkeystoignore",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-nonisofieldkeystoignore",
       "title": "NonISOFieldKeysToIgnore ( calendar, keys )",
       "level": 3,
-      "number": "12.2.28"
+      "number": "12.3.28"
     },
     {
       "id": "sec-temporal-calendarfieldkeystoignore",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarfieldkeystoignore",
       "title": "CalendarFieldKeysToIgnore ( calendar, keys )",
       "level": 3,
-      "number": "12.2.29"
+      "number": "12.3.29"
     },
     {
       "id": "sec-temporal-nonisoresolvefields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-nonisoresolvefields",
       "title": "NonISOResolveFields ( calendar, fields, type )",
       "level": 3,
-      "number": "12.2.30"
+      "number": "12.3.30"
     },
     {
       "id": "sec-temporal-calendarresolvefields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarresolvefields",
       "title": "CalendarResolveFields ( calendar, fields, type )",
       "level": 3,
-      "number": "12.2.31"
+      "number": "12.3.31"
     },
     {
       "id": "sec-temporal-abstract-ops",
@@ -3813,32 +3834,25 @@
       "number": "13.39"
     },
     {
-      "id": "sec-temporal-tomonthcode",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-tomonthcode",
-      "title": "ToMonthCode ( argument )",
-      "level": 2,
-      "number": "13.40"
-    },
-    {
       "id": "sec-temporal-tooffsetstring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-tooffsetstring",
       "title": "ToOffsetString ( argument )",
       "level": 2,
-      "number": "13.41"
+      "number": "13.40"
     },
     {
       "id": "sec-temporal-isodatetofields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isodatetofields",
       "title": "ISODateToFields ( calendar, isoDate, type )",
       "level": 2,
-      "number": "13.42"
+      "number": "13.41"
     },
     {
       "id": "sec-temporal-getdifferencesettings",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getdifferencesettings",
       "title": "GetDifferenceSettings ( operation, options, unitGroup, disallowedUnits, fallbackSmallestUnit, smallestLargestDefaultUnit )",
       "level": 2,
-      "number": "13.43"
+      "number": "13.42"
     },
     {
       "id": "sec-temporal-legacy-date-objects",
