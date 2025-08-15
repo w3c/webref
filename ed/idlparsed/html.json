@@ -26440,10 +26440,10 @@
         "partial": false,
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drageventinit"
       },
-      "PopoverInvokerElement": {
-        "fragment": "interface mixin PopoverInvokerElement {\n  [CEReactions, Reflect] attribute Element? popoverTargetElement;\n  [CEReactions] attribute DOMString popoverTargetAction;\n};",
+      "PopoverTargetAttributes": {
+        "fragment": "interface mixin PopoverTargetAttributes {\n  [CEReactions, Reflect] attribute Element? popoverTargetElement;\n  [CEReactions] attribute DOMString popoverTargetAction;\n};",
         "type": "interface mixin",
-        "name": "PopoverInvokerElement",
+        "name": "PopoverTargetAttributes",
         "inheritance": null,
         "members": [
           {
@@ -26499,7 +26499,7 @@
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://html.spec.whatwg.org/multipage/popover.html#popoverinvokerelement"
+        "href": "https://html.spec.whatwg.org/multipage/popover.html#popovertargetattributes"
       },
       "Window": {
         "fragment": "[Global=Window,\n Exposed=Window,\n LegacyUnenumerableNamedProperties]\ninterface Window : EventTarget {\n  // the current browsing context\n  [LegacyUnforgeable] readonly attribute WindowProxy window;\n  [Replaceable] readonly attribute WindowProxy self;\n  [LegacyUnforgeable] readonly attribute Document document;\n  attribute DOMString name;\n  [PutForwards=href, LegacyUnforgeable] readonly attribute Location location;\n  readonly attribute History history;\n  readonly attribute Navigation navigation;\n  readonly attribute CustomElementRegistry customElements;\n  [Replaceable] readonly attribute BarProp locationbar;\n  [Replaceable] readonly attribute BarProp menubar;\n  [Replaceable] readonly attribute BarProp personalbar;\n  [Replaceable] readonly attribute BarProp scrollbars;\n  [Replaceable] readonly attribute BarProp statusbar;\n  [Replaceable] readonly attribute BarProp toolbar;\n  attribute DOMString status;\n  undefined close();\n  readonly attribute boolean closed;\n  undefined stop();\n  undefined focus();\n  undefined blur();\n\n  // other browsing contexts\n  [Replaceable] readonly attribute WindowProxy frames;\n  [Replaceable] readonly attribute unsigned long length;\n  [LegacyUnforgeable] readonly attribute WindowProxy? top;\n  attribute any opener;\n  [Replaceable] readonly attribute WindowProxy? parent;\n  readonly attribute Element? frameElement;\n  WindowProxy? open(optional USVString url = \"\", optional DOMString target = \"_blank\", optional [LegacyNullToEmptyString] DOMString features = \"\");\n\n  // Since this is the global object, the IDL named getter adds a NamedPropertiesObject exotic\n  // object on the prototype chain. Indeed, this does not make the global object an exotic object.\n  // Indexed access is taken care of by the WindowProxy exotic object.\n  getter object (DOMString name);\n\n  // the user agent\n  readonly attribute Navigator navigator;\n  [Replaceable] readonly attribute Navigator clientInformation; // legacy alias of .navigator\n  readonly attribute boolean originAgentCluster;\n\n  // user prompts\n  undefined alert();\n  undefined alert(DOMString message);\n  boolean confirm(optional DOMString message = \"\");\n  DOMString? prompt(optional DOMString message = \"\", optional DOMString default = \"\");\n  undefined print();\n\n  undefined postMessage(any message, USVString targetOrigin, optional sequence<object> transfer = []);\n  undefined postMessage(any message, optional WindowPostMessageOptions options = {});\n\n  // also has obsolete members\n};",
@@ -42214,11 +42214,11 @@
       ],
       "HTMLInputElement": [
         {
-          "fragment": "HTMLInputElement includes PopoverInvokerElement;",
+          "fragment": "HTMLInputElement includes PopoverTargetAttributes;",
           "type": "includes",
           "extAttrs": [],
           "target": "HTMLInputElement",
-          "includes": "PopoverInvokerElement"
+          "includes": "PopoverTargetAttributes"
         },
         {
           "fragment": "partial interface HTMLInputElement {\n  [CEReactions, Reflect] attribute DOMString align;\n  [CEReactions, Reflect] attribute DOMString useMap;\n};",
@@ -42291,11 +42291,11 @@
       ],
       "HTMLButtonElement": [
         {
-          "fragment": "HTMLButtonElement includes PopoverInvokerElement;",
+          "fragment": "HTMLButtonElement includes PopoverTargetAttributes;",
           "type": "includes",
           "extAttrs": [],
           "target": "HTMLButtonElement",
-          "includes": "PopoverInvokerElement"
+          "includes": "PopoverTargetAttributes"
         }
       ],
       "CanvasRenderingContext2D": [
@@ -46654,7 +46654,7 @@
         "ValidityState",
         "NodeList",
         "SelectionMode",
-        "PopoverInvokerElement"
+        "PopoverTargetAttributes"
       ],
       "HTMLButtonElement": [
         "HTMLElement",
@@ -46662,7 +46662,7 @@
         "HTMLFormElement",
         "ValidityState",
         "NodeList",
-        "PopoverInvokerElement"
+        "PopoverTargetAttributes"
       ],
       "HTMLSelectElement": [
         "HTMLElement",
@@ -46974,7 +46974,7 @@
         "MouseEventInit",
         "DataTransfer"
       ],
-      "PopoverInvokerElement": [
+      "PopoverTargetAttributes": [
         "Element"
       ],
       "Window": [

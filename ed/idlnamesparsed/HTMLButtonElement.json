@@ -15,7 +15,7 @@
         "title": "HTML Standard",
         "url": "https://html.spec.whatwg.org/multipage/"
       },
-      "fragment": "HTMLButtonElement includes PopoverInvokerElement;"
+      "fragment": "HTMLButtonElement includes PopoverTargetAttributes;"
     }
   ],
   "inheritance": {
@@ -510,15 +510,15 @@
   },
   "includes": [
     {
-      "name": "PopoverInvokerElement",
+      "name": "PopoverTargetAttributes",
       "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",
           "url": "https://html.spec.whatwg.org/multipage/"
         },
-        "fragment": "interface mixin PopoverInvokerElement {\n  [CEReactions, Reflect] attribute Element? popoverTargetElement;\n  [CEReactions] attribute DOMString popoverTargetAction;\n};",
-        "href": "https://html.spec.whatwg.org/multipage/popover.html#popoverinvokerelement"
+        "fragment": "interface mixin PopoverTargetAttributes {\n  [CEReactions, Reflect] attribute Element? popoverTargetElement;\n  [CEReactions] attribute DOMString popoverTargetAction;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/popover.html#popovertargetattributes"
       },
       "extended": [],
       "inheritance": null,
