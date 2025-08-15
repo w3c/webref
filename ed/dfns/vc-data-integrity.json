@@ -258,30 +258,6 @@
       "links": []
     },
     {
-      "id": "dfn-controlled-identifier-document",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-controlled-identifier-document",
-      "linkingText": [
-        "controlled identifier document"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "alternateIds": [
-          "x1-4-terminology"
-        ],
-        "number": "1.4"
-      },
-      "definedIn": "dt",
-      "links": [],
-      "htmlProse": "A document that contains public cryptographic material as defined in the\n<cite><a href=\"https://www.w3.org/TR/cid-1.0/\">Controlled Identifiers v1.0</a></cite> specification."
-    },
-    {
       "id": "dfn-cryptosuite",
       "href": "https://w3c.github.io/vc-data-integrity/#dfn-cryptosuite",
       "linkingText": [
@@ -304,7 +280,7 @@
       },
       "definedIn": "dt",
       "links": [],
-      "htmlProse": "A specification defining the usage of specific cryptographic primitives in\norder to achieve a particular security goal. These documents are often used\nto specify <a href=\"https://w3c.github.io/vc-data-integrity/#dfn-verification-method\">verification methods</a>, digital signature types,\ntheir identifiers, and other related properties. See Section\n<a href=\"https://w3c.github.io/vc-data-integrity/#cryptographic-suites\"><bdi>3. </bdi>Cryptographic Suites</a> for further detail."
+      "htmlProse": "A specification defining the usage of specific cryptographic primitives in\norder to achieve a particular security goal. These documents are often used\nto specify <a href=\"https://www.w3.org/TR/cid-1.0/#dfn-verification-method\">verification methods</a>, digital signature types,\ntheir identifiers, and other related properties. See Section\n<a href=\"https://w3c.github.io/vc-data-integrity/#cryptographic-suites\"><bdi>3. </bdi>Cryptographic Suites</a> for further detail."
     },
     {
       "id": "dfn-data-integrity-proof",
@@ -401,56 +377,6 @@
       "definedIn": "dt",
       "links": [],
       "htmlProse": "Cryptographic material, sometimes referred to as a\n<strong>private key</strong>, that is not to be shared with anyone, and is used\nto generate digital proofs and/or digital signatures."
-    },
-    {
-      "id": "dfn-verification-method",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-verification-method",
-      "linkingText": [
-        "verification method"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "alternateIds": [
-          "x1-4-terminology"
-        ],
-        "number": "1.4"
-      },
-      "definedIn": "dt",
-      "links": [],
-      "htmlProse": "<p>\nA set of parameters that can be used together with a process to independently\nverify a proof. For example, a cryptographic <a href=\"https://w3c.github.io/vc-data-integrity/#dfn-public-key\">public key</a> can be used as a\nverification method with respect to a digital signature; in such usage, it\nverifies that the signer possessed the associated cryptographic <a href=\"https://w3c.github.io/vc-data-integrity/#dfn-secret-key\">secret key</a>.\n            </p>\n            <p>\n\"Verification\" and \"proof\" in this definition are intended to apply broadly. For\nexample, a cryptographic public key might be used during Diffie-Hellman key\nexchange to negotiate a shared symmetric key for encryption. This guarantees the\nintegrity of the key agreement process. It is thus another type of verification\nmethod, even though descriptions of the process might not use the words\n\"verification\" or \"proof.\"\n            </p>"
-    },
-    {
-      "id": "dfn-verifier",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-verifier",
-      "linkingText": [
-        "verifier",
-        "verifiers",
-        "verifier's"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "alternateIds": [
-          "x1-4-terminology"
-        ],
-        "number": "1.4"
-      },
-      "definedIn": "dt",
-      "links": [],
-      "htmlProse": "A role an entity performs by receiving data containing one or more\n<a href=\"https://w3c.github.io/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proofs</a> and then determining whether or not the proof\nis legitimate."
     },
     {
       "id": "dfn-proof",
