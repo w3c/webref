@@ -62,7 +62,7 @@
     {
       "name": "deduct privacy budget",
       "href": "https://w3c.github.io/attribution/#deduct-privacy-budget",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"deduct-privacy-budget\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">deduct privacy budget</dfn>\ngiven a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#privacy-budget-key\" id=\"ref-for-privacy-budget-key①\">privacy budget key</a> <var>key</var>,\n<a href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"a38011ce0\">double</a> <var>epsilon</var>,\ninteger <var>value</var>,\ninteger <var>maxValue</var>, and\ninteger <var>attributedValueForSingleEpochOpt</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"deduct-privacy-budget\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">deduct privacy budget</dfn>\ngiven a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#privacy-budget-key\" id=\"ref-for-privacy-budget-key①\">privacy budget key</a> <var>key</var>,\n<a href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"a38011ce0\">double</a> <var>epsilon</var>,\ninteger <var>value</var>,\ninteger <var>maxValue</var>, and\nnullable integer <var>attributedValueForSingleEpochOpt</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -88,7 +88,7 @@
     {
       "name": "deduct privacy budget",
       "href": "https://w3c.github.io/attribution/#deduct-privacy-budget",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"deduct-privacy-budget\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">deduct privacy budget</dfn>\ngiven a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#privacy-budget-key\" id=\"ref-for-privacy-budget-key①\">privacy budget key</a> <var>key</var>,\n<a href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"a38011ce0\">double</a> <var>epsilon</var>,\ninteger <var>value</var>,\ninteger <var>maxValue</var>, and\ninteger <var>attributedValueForSingleEpochOpt</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"deduct-privacy-budget\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">deduct privacy budget</dfn>\ngiven a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#privacy-budget-key\" id=\"ref-for-privacy-budget-key①\">privacy budget key</a> <var>key</var>,\n<a href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"a38011ce0\">double</a> <var>epsilon</var>,\ninteger <var>value</var>,\ninteger <var>maxValue</var>, and\nnullable integer <var>attributedValueForSingleEpochOpt</var>:",
       "rationale": "if",
       "steps": [
         {
@@ -550,7 +550,7 @@
               "html": "<p>Let <var>budgetOk</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#deduct-privacy-budget\" id=\"ref-for-deduct-privacy-budget②\">deduct privacy budget</a>\nwith <var>key</var>, <var>options</var>’ <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#validated-conversion-options-epsilon\" id=\"ref-for-validated-conversion-options-epsilon②\">epsilon</a>,\n<var>options</var>’ <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#validated-conversion-options-value\" id=\"ref-for-validated-conversion-options-value⑤\">value</a>\n<var>options</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#validated-conversion-options-max-value\" id=\"ref-for-validated-conversion-options-max-value②\">max value</a>,\nand <var>l1Norm</var>.</p>"
             },
             {
-              "html": "<p>If <var>budgetOk</var> is false, set <var>histogram</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#create-an-all-zero-histogram\" id=\"ref-for-create-an-all-zero-histogram②\">all-zero histogram</a>.</p>"
+              "html": "<p>If <var>budgetOk</var> is false, set <var>histogram</var> to the result of invoking\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#create-an-all-zero-histogram\" id=\"ref-for-create-an-all-zero-histogram②\">create an all-zero histogram</a> with <var>options</var>’ <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#validated-conversion-options-histogram-size\" id=\"ref-for-validated-conversion-options-histogram-size④\">histogram size</a>.</p>"
             }
           ]
         },
