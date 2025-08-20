@@ -84,7 +84,7 @@
       "name": "<color-function>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-color-function",
       "type": "type",
-      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>"
+      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <alpha()> | <color()>"
     },
     {
       "name": "color-mix()",
@@ -297,6 +297,21 @@
       ]
     },
     {
+      "name": "alpha()",
+      "value": "alpha([from <color>] [ / [<alpha-value> | none] ]? )",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-alpha",
+      "type": "function",
+      "values": [
+        {
+          "name": "alpha",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "href": "https://drafts.csswg.org/css-color-5/#valdef-alpha-alpha",
+          "type": "value",
+          "value": "alpha"
+        }
+      ]
+    },
+    {
       "name": "color()",
       "value": "color( [from <color>]? <colorspace-params> [ / [ <alpha-value> | none ] ]? )",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-color",
@@ -429,7 +444,7 @@
       "name": "<rectangular-color-space>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-rectangular-color-space",
       "type": "type",
-      "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | <xyz-space>"
+      "value": "srgb | srgb-linear | display-p3 | display-p3-linear | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | <xyz-space>"
     },
     {
       "name": "<polar-color-space>",
