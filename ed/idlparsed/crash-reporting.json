@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "CrashReportBody": {
-        "fragment": "dictionary CrashReportBody : ReportBody {\n  DOMString? reason;\n  DOMString? stack;\n  boolean? is_top_level;\n  DocumentVisibilityState? page_visibility;\n};",
+        "fragment": "dictionary CrashReportBody : ReportBody {\n  DOMString reason;\n  DOMString stack;\n  boolean is_top_level;\n  DocumentVisibilityState page_visibility;\n};",
         "type": "dictionary",
         "name": "CrashReportBody",
         "inheritance": "ReportBody",
@@ -23,7 +23,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -38,7 +38,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -53,7 +53,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "boolean"
             },
@@ -68,7 +68,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DocumentVisibilityState"
             },

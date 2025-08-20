@@ -101,11 +101,14 @@
     },
     {
       "name": "inner consider speculative loads steps",
-      "html": "Replace the step which performs the actual prefetching by looping over <var>prefetchCandidates</var> with the following:",
-      "rationale": "for",
+      "html": "Replace the step which performs the actual prefetching by looping over <var>prefetchCandidateGroups</var> with the following:",
+      "rationale": "let",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>candidate</var> of <var>speculativeLoadCandidates</var>:",
+          "html": "<p>Let <var>speculativeLoadCandidateGroups</var> be the union of <var>prefetchCandidateGroups</var> and <var>prerenderCandidateGroups</var>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>group</var> of <var>speculativeLoadCandidateGroups</var>:",
           "rationale": "run the following steps",
           "steps": [
             {
@@ -113,13 +116,10 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>tagCandidates</var> be <var>speculativeLoadCandidates</var>.</p>"
+                  "html": "<p>Let <var>candidate</var> be <var>group</var>[0].</p>"
                 },
                 {
-                  "html": "<p>If <var>candidate</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate\" id=\"ref-for-prerender-candidate②\">prerender candidate</a>, then set <var>tagCandidates</var> to <var>prerenderCandidates</var>.</p>"
-                },
-                {
-                  "html": "<p>Let <var>tagsToSend</var> be the result of <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#collecting-tags-for-matching-speculative-load-candidates\" id=\"ref-for-collecting-tags-for-matching-speculative-load-candidates\">collecting tags for matching speculative load candidates</a> given <var>candidate</var> and <var>tagCandidates</var>.</p>"
+                  "html": "<p>Let <var>tagsToSend</var> be the result of <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#collect-tags-from-speculative-load-candidates\" id=\"ref-for-collect-tags-from-speculative-load-candidates\">collecting tags from speculative load candidates</a> given <var>group</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>prefetchRecord</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record\" id=\"ref-for-prefetch-record①\">prefetch record</a> with</p>\n          <dl class=\"props\">\n           <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-source\" id=\"ref-for-prefetch-record-source\">source</a>\n           </dt><dd data-md=\"\">\n            <p>\"<code>speculation rules</code>\"</p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url\">URL</a>\n           </dt><dd data-md=\"\">\n            <p><var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-url\" id=\"ref-for-sl-candidate-url②\">URL</a></p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-no-vary-search-hint\" id=\"ref-for-prefetch-record-no-vary-search-hint\">No-Vary-Search hint</a>\n           </dt><dd data-md=\"\">\n            <p><var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-nvs-hint\" id=\"ref-for-sl-candidate-nvs-hint②\">No-Vary-Search hint</a></p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-referrer-policy\" id=\"ref-for-prefetch-record-referrer-policy\">referrer policy</a>\n           </dt><dd data-md=\"\">\n            <p><var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-referrer-policy\" id=\"ref-for-sl-candidate-referrer-policy②\">referrer policy</a></p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-tags\" id=\"ref-for-prefetch-record-tags\">tags</a>\n           </dt><dd data-md=\"\">\n            <p><var>tagsToSend</var></p>\n          </dd></dl>"
@@ -128,11 +128,11 @@
                   "html": "<p>If <var>candidate</var> is a <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#prefetch-candidate\" id=\"ref-for-prefetch-candidate\">prefetch candidate</a>, then set <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-anonymization-policy\" id=\"ref-for-prefetch-record-anonymization-policy\">anonymization policy</a> to <var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-anonymization-policy\" id=\"ref-for-sl-candidate-anonymization-policy\">anonymization policy</a>.</p>"
                 },
                 {
-                  "html": "If <var>candidate</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate\" id=\"ref-for-prerender-candidate③\">prerender candidate</a>, then the user agent may run the following steps:",
+                  "html": "If <var>candidate</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate\" id=\"ref-for-prerender-candidate②\">prerender candidate</a>, then the user agent may run the following steps:",
                   "rationale": "set",
                   "steps": [
                     {
-                      "html": "<p>Set <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-prerendering-traversable\" id=\"ref-for-prefetch-record-prerendering-traversable\">prerendering traversable</a> to \"<code>to be created</code>\"</p>"
+                      "html": "<p>Set <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-prerendering-traversable\" id=\"ref-for-prefetch-record-prerendering-traversable\">prerendering traversable</a> to \"<code>to be created</code>\".</p>"
                     },
                     {
                       "html": "<p>Set <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-prerendering-target-navigable-name-hint\" id=\"ref-for-prefetch-record-prerendering-target-navigable-name-hint\">prerendering target navigable name hint</a> to <var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate-target-navigable-name-hint\" id=\"ref-for-prerender-candidate-target-navigable-name-hint②\">target navigable name hint</a>.</p>"
