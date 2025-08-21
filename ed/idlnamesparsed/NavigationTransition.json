@@ -6,7 +6,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Exposed=Window]\ninterface NavigationTransition {\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationHistoryEntry from;\n  readonly attribute Promise<undefined> finished;\n};",
+    "fragment": "[Exposed=Window]\ninterface NavigationTransition {\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationHistoryEntry from;\n  readonly attribute Promise<undefined> committed;\n  readonly attribute Promise<undefined> finished;\n};",
     "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationtransition"
   },
   "extended": [],

@@ -170,6 +170,7 @@
           "NavigationHistoryEntry",
           "NavigationTransition",
           "NavigationActivation",
+          "NavigationPrecommitController",
           "NavigationDestination",
           "BeforeUnloadEvent",
           "NotRestoredReasonDetails",
@@ -6587,7 +6588,8 @@
               }
             ],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://html.spec.whatwg.org/multipage/media.html#dom-media-src"
           },
           {
             "type": "attribute",
@@ -29032,7 +29034,7 @@
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationhistoryentry"
       },
       "NavigationTransition": {
-        "fragment": "[Exposed=Window]\ninterface NavigationTransition {\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationHistoryEntry from;\n  readonly attribute Promise<undefined> finished;\n};",
+        "fragment": "[Exposed=Window]\ninterface NavigationTransition {\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationHistoryEntry from;\n  readonly attribute Promise<undefined> committed;\n  readonly attribute Promise<undefined> finished;\n};",
         "type": "interface",
         "name": "NavigationTransition",
         "inheritance": null,
@@ -29068,6 +29070,31 @@
             "special": "",
             "readonly": true,
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationtransition-from"
+          },
+          {
+            "type": "attribute",
+            "name": "committed",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationtransition-committed"
           },
           {
             "type": "attribute",
@@ -29673,11 +29700,27 @@
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigateeventinit"
       },
       "NavigationInterceptOptions": {
-        "fragment": "dictionary NavigationInterceptOptions {\n  NavigationInterceptHandler handler;\n  NavigationFocusReset focusReset;\n  NavigationScrollBehavior scroll;\n};",
+        "fragment": "dictionary NavigationInterceptOptions {\n  NavigationPrecommitHandler precommitHandler;\n  NavigationInterceptHandler handler;\n  NavigationFocusReset focusReset;\n  NavigationScrollBehavior scroll;\n};",
         "type": "dictionary",
         "name": "NavigationInterceptOptions",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "precommitHandler",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "NavigationPrecommitHandler"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationinterceptoptions-precommithandler"
+          },
           {
             "type": "field",
             "name": "handler",
@@ -29793,6 +29836,120 @@
         "arguments": [],
         "extAttrs": [],
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationintercepthandler"
+      },
+      "NavigationPrecommitController": {
+        "fragment": "[Exposed=Window]\ninterface NavigationPrecommitController {\n  undefined redirect(USVString url, optional NavigationNavigateOptions options = {});\n};",
+        "type": "interface",
+        "name": "NavigationPrecommitController",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "redirect",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "url",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "NavigationNavigateOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationprecommitcontroller-redirect"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationprecommitcontroller"
+      },
+      "NavigationPrecommitHandler": {
+        "fragment": "callback NavigationPrecommitHandler = Promise<undefined> (NavigationPrecommitController controller);",
+        "type": "callback",
+        "name": "NavigationPrecommitHandler",
+        "idlType": {
+          "type": "return-type",
+          "extAttrs": [],
+          "generic": "Promise",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            }
+          ]
+        },
+        "arguments": [
+          {
+            "type": "argument",
+            "name": "controller",
+            "extAttrs": [],
+            "idlType": {
+              "type": "argument-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "NavigationPrecommitController"
+            },
+            "default": null,
+            "optional": false,
+            "variadic": false
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationprecommithandler"
       },
       "NavigationDestination": {
         "fragment": "[Exposed=Window]\ninterface NavigationDestination {\n  readonly attribute USVString url;\n  readonly attribute DOMString key;\n  readonly attribute DOMString id;\n  readonly attribute long long index;\n  readonly attribute boolean sameDocument;\n\n  any getState();\n};",
@@ -46281,6 +46438,7 @@
         "NavigationTransition",
         "NavigationActivation",
         "NavigateEvent",
+        "NavigationPrecommitController",
         "NavigationDestination",
         "NavigationCurrentEntryChangeEvent",
         "PopStateEvent",
@@ -47062,9 +47220,13 @@
         "Element"
       ],
       "NavigationInterceptOptions": [
+        "NavigationPrecommitHandler",
         "NavigationInterceptHandler",
         "NavigationFocusReset",
         "NavigationScrollBehavior"
+      ],
+      "NavigationPrecommitController": [
+        "NavigationNavigateOptions"
       ],
       "NavigationDestination": [],
       "NavigationCurrentEntryChangeEvent": [
